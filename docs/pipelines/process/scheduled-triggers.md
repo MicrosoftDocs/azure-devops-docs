@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
-## Configure schedules
+## Define schedules
 
 #### [YAML](#tab/yaml/)
 
@@ -34,9 +34,6 @@ Azure Pipelines provides several different types of triggers to start your pipel
 
 Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
-> [!NOTE]
-> If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
-
 ```yaml
 schedules:
 - cron: string # cron syntax defining a schedule
@@ -47,13 +44,16 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-> [!NOTE]
-> - The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
-> - If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
-> - You cannot use pipeline variables when specifying schedules.
-> - If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
+If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
 
-## Scheduled triggers evaluation
+Scheduled pipelines in YAML have the following constraints:
+
+- The time zone for cron schedules is UTC.
+- If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+- You cannot use pipeline variables when specifying schedules.
+- If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
+
+### Scheduled triggers evaluation
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
@@ -120,44 +120,6 @@ schedules:
 
 Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
-## Supported cron syntax
-
-Each cron expression is a space-delimited expression with five entries in the following order.
-
-```
-mm HH DD MM DW
- \  \  \  \  \__ Days of week
-  \  \  \  \____ Months
-   \  \  \______ Days
-    \  \________ Hours
-     \__________ Minutes
-```
-
-Field        | Accepted values
--------------|----------------
-Minutes      | 0 through 59
-Hours        | 0 through 23
-Days         | 1 through 31
-Months       | 1 through 12, full English names, first three letters of English names
-Days of week | 0 through 6 (starting with Sunday), full English names, first three letters of English names
-
-Values can be in the following formats.
-
-Format          | Example          | Description
-----------------|------------------|------------
-Wildcard        | `*`              | Matches all values for this field
-Single value    | `5`              | Specifies a single value for this field
-Comma delimited | `3,5,6`          | Specifies multiple values for this field. Multiple formats can be combined, like `1,3-6`
-Ranges          | `1-3`            | The inclusive range of values for this field
-Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every 4th value or the range 1-5 with a step interval of 2
-
-Example | Cron expression
---------|----------------
-Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, or `0 18 * * 1-5/2`
-Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
-Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
-
-For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
 
 
@@ -179,24 +141,14 @@ YAML pipelines are not available on TFS.
 
 #### [Classic](#tab/classic/)
 
-Select the days and times when you want to run the build.
+Select the days and times when you want to run the build using the classic editor.
 
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 
-### Example: Nightly build of Git repo in multiple time zones
-
 ::: moniker range=">= azure-devops-2019"
 
-In this example, the classic editor scheduled trigger has two entries, producing the following builds.
-
-* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
-
-    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
-
-* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
-
-    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
+![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 ::: moniker-end
 
@@ -209,40 +161,6 @@ In this example, the classic editor scheduled trigger has two entries, producing
 ::: moniker range="<= tfs-2017"
 
 ![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
-
-## Example: Nightly build with different frequencies
-
-::: moniker range=">=azure-devops-2019"
-
-**Azure Pipelines and Azure DevOps 2019 Server**
-
-In this example, the classic editor scheduled trigger has two entries, producing the following builds.
-
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
-
-    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
-
-* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
-
-    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-**TFS 2017.3 through TFS 2018**
-
-![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-**TFS 2017.1 and older versions**
-
-![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 
@@ -361,6 +279,71 @@ In this example, the classic editor scheduled trigger has two entries, producing
 ![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
+
+* * *
+
+## Supported cron syntax
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">azure-devops-2019"
+
+Each cron expression is a space-delimited expression with five entries in the following order.
+
+```
+mm HH DD MM DW
+ \  \  \  \  \__ Days of week
+  \  \  \  \____ Months
+   \  \  \______ Days
+    \  \________ Hours
+     \__________ Minutes
+```
+
+Field        | Accepted values
+-------------|----------------
+Minutes      | 0 through 59
+Hours        | 0 through 23
+Days         | 1 through 31
+Months       | 1 through 12, full English names, first three letters of English names
+Days of week | 0 through 6 (starting with Sunday), full English names, first three letters of English names
+
+Values can be in the following formats.
+
+Format          | Example          | Description
+----------------|------------------|------------
+Wildcard        | `*`              | Matches all values for this field
+Single value    | `5`              | Specifies a single value for this field
+Comma delimited | `3,5,6`          | Specifies multiple values for this field. Multiple formats can be combined, like `1,3-6`
+Ranges          | `1-3`            | The inclusive range of values for this field
+Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as every 4th value or the range 1-5 with a step interval of 2
+
+Example | Cron expression
+--------|----------------
+Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, or `0 18 * * 1-5/2`
+Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
+Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
+
+For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Classic schedules are defined using a graphical editor instead of cron syntax.For information on defining classic scheduled, see [Examples](#examples).
 
 * * *
 
