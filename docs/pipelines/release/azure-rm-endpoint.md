@@ -218,6 +218,10 @@ To resolve this issue:
 
 1. Save the service connection.
 
+## When I try to setup a Service Connection on Azure DevOps with our Artifactory instance , it throws an error inspite of whitelisting the IP's
+
+Ensure the right IP addresses are whitelisted by referring to [this article](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking) and find the updated [list](https://docs.microsoft.com/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops#azure-artifacts) of IP's that are published on a weekly basis based on the geographical location.  
+
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
 Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or Managed Identity Authentication.
