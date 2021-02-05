@@ -23,6 +23,139 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 
 The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
 
+ 
+
+---
+:::row:::
+   :::column span="2":::
+      **Filter options** 
+   :::column-end:::
+   :::column span="1":::
+      **Work items**
+   :::column-end:::
+   :::column span="1":::
+      **Boards**
+   :::column-end:::
+   :::column span="1":::
+      **Backlogs**
+   :::column-end:::
+   :::column span="1":::
+     **Sprints (Backlogs  
+     & Taskboards)
+   :::column-end:::
+   :::column span="1":::
+     **Queries**
+   :::column-end:::
+   :::column span="1":::
+     **Plans**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Keyword** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Fields**  
+   :::column-end:::
+   :::column span="1":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+   :::column-end:::
+   :::column span="1":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      - Work Item Types
+      - Assigned To
+      - States
+      - Tags 
+   :::column-end:::
+   :::column span="1":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Iteration Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Tags** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+
+
+
+Work items - Parent field not a Column option 
+
 ::: moniker range=">= tfs-2018"
 
 ## Filter based on keywords or fields   
