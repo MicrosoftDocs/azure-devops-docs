@@ -300,7 +300,18 @@ In this example, the classic editor scheduled trigger has two entries, producing
 <a name="always"></a>
 ## Running even when there are no code changes
 
+::: moniker range="<=tfs-2018"
+
+> [!NOTE] 
+> Scheduled builds always run on schedule regardless of code changes on TFS 2018.1 and lower.
+
+::: moniker-end
+
+::: moniker range=">=tfs-2018"
+
 By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. 
+
+::: moniker-end
 
 #### [YAML](#tab/yaml/)
 
@@ -332,7 +343,27 @@ YAML pipelines are not yet available on TFS.
 
 #### [Classic](#tab/classic/)
 
-Checkbox for classis, use monikers from the previous screenshots
+::: moniker range="<=tfs-2018"
+
+> [!NOTE] 
+> Scheduled builds always run on schedule regardless of code changes on TFS 2018.1 and lower.
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+> [!NOTE]
+> The [Skip scheduled builds if nothing has changed in the repo](/azure/devops/release-notes/2017/dec-11-vsts#skip-scheduled-builds-if-nothing-has-changed-in-the-repo) support described in this section is supported in TFS 2018.2 and higher.
+
+::: moniker-end
+
+::: moniker range=">=tfs-2018"
+
+To configure the scheduled pipeline to build on if there has been a change since the last build, check **Only schedule builds if the source or pipeline has changed**.
+
+![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+::: moniker-end
 
 * * *
 
