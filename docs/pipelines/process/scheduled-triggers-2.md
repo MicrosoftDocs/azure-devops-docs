@@ -28,7 +28,7 @@ Azure Pipelines provides several different types of triggers to start your pipel
 
 ## Schedule definition
 
-Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+Scheduled triggers enable a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 ```yaml
 schedules:
@@ -74,29 +74,6 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
-## Scheduled runs view
-
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
-
-![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
-
-After you create or update your scheduled triggers, you can verify them using this view.
-
-![Scheduled runs](media/triggers/scheduled-runs.png)
-
-In this example, the scheduled runs for the following schedule are displayed.
-
-```yaml
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily midnight build
-  branches:
-    include:
-    - main
-```
-
-The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
-
 ## Scheduled triggers evaluation
 
 Scheduled triggers are evaluated for a branch when the following events occur.
@@ -111,8 +88,6 @@ After one of these events occurs in a branch, any scheduled runs for that branch
 > [!IMPORTANT]
 > Scheduled runs for a branch are added only if the branch matches the branch filters for the 
 > scheduled triggers in the YAML file **in that particular branch**.
-
-### Example of scheduled triggers for multiple branches
 
 For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `main` branch. This schedule builds the `main` branch on a daily basis.
 
@@ -219,6 +194,29 @@ schedules:
 ## Limits on the number of scheduled runs
 
 There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
+
+## Scheduled runs view
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+
+![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](media/triggers/scheduled-runs.png)
+
+In this example, the scheduled runs for the following schedule are displayed.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+```
+
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
 
 ## Migrating from the classic editor
 
