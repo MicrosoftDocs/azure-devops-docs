@@ -46,7 +46,7 @@ Below are few common scenarios where the upstream behavior is triggered to block
 
 - **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
     
-    :::image type="content" source="media\private-packages-only.png" alt-text="private packages only":::
+    :::image type="content" source="media\only-private-packages.svg" alt-text="private packages only":::
 
 - **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior will have no effect on the team's workflow in this scenario.
 
