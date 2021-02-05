@@ -47,43 +47,11 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-The following example defines two schedules: 
-
-```yaml
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily midnight build
-  branches:
-    include:
-    - main
-    - releases/*
-    exclude:
-    - releases/ancient/*
-- cron: "0 12 * * 0"
-  displayName: Weekly Sunday build
-  branches:
-    include:
-    - releases/*
-  always: true
-```
-
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `main` and all `releases/*` branches, except those under `releases/ancient/*`.
-
-The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
-
 > [!NOTE]
-> The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
-
-> [!NOTE]
-> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
-
-> [!NOTE]
-> You cannot use pipeline variables when specifying schedules.
-
-> [!NOTE]
-> If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
-
-
+> - The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
+> - If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+> - You cannot use pipeline variables when specifying schedules.
+> - If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
 
 ## Scheduled triggers evaluation
 
@@ -280,6 +248,121 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
+## Examples
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">azure-devops-2019"
+
+The following example defines two schedules: 
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+    - releases/*
+    exclude:
+    - releases/ancient/*
+- cron: "0 12 * * 0"
+  displayName: Weekly Sunday build
+  branches:
+    include:
+    - releases/*
+  always: true
+```
+
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `main` and all `releases/*` branches, except those under `releases/ancient/*`.
+
+The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
+
+> [!NOTE]
+> The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
+
+For more examples, see [Migrating from the classic editor](#migrating-from-the-classic-editor).
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+### Example: Nightly build of Git repo in multiple time zones
+
+::: moniker range=">= azure-devops-2019"
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
+
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
+
+::: moniker-end
+
+## Example: Nightly build with different frequencies
+
+::: moniker range=">=azure-devops-2019"
+
+**Azure Pipelines and Azure DevOps 2019 Server**
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
+
+    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
+
+* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+
+    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+**TFS 2017.3 through TFS 2018**
+
+![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+**TFS 2017.1 and older versions**
+
+![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
+
+::: moniker-end
+
+* * *
 
 ## Scheduled runs view
 
