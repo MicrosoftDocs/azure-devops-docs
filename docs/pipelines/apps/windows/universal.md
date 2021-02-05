@@ -52,7 +52,7 @@ https://github.com/microsoft/Windows-appsample-rssreader
 
    # [Azure Repos or TFS repo](#tab/vsts)
 
-   Under the **Build and Release** menu select **Builds** then **New** to create a new build definition.
+   Under the **Build and Release** menu, select **Builds** then **New** to create a new build definition.
 
    :::image type="content" source="../media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
 
