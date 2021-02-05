@@ -36,7 +36,7 @@ Below are few common scenarios where the upstream behavior is triggered to block
 
 - **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
 
-    :::image type="content" source="media\internal-package-made-public.png" alt-text="Internal package version made public":::
+    :::image type="content" source="media\internal-to-public.svg" alt-text="Internal package version made public":::
 
 - **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
 
