@@ -22,84 +22,11 @@ ms.date: 07/09/2020
 Depending on the size of your team and the number of stories in progress, your Kanban board can get a bit crowded. With filtering, you can selectively choose what cards display to focus on what's of interest in the moment. With parent work item filters, you can focus on one or more select features or epics.
 
 
-<a id="text-filter"></a>
-
-## Filter using keywords and tags
-
-To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.
-
-For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).
-
-
-::: moniker range=">= azure-devops-2020"
-
-> [!div class="mx-imgBorder"]  
-> ![Kanban board, customize card fields, 2020](media/filter/filter-kb-card-field-settings-services.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
-
-![Kanban board, customize card fields, on-premises](media/filter/filter-kb-card-field-settings-ts.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-![Kanban board, customize card fields, earlier versions](media/filter-kb-card-field-settings.png)
-
-::: moniker-end
-
-The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter.
-
-For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
-
-::: moniker range=">= azure-devops-2020"
-
-> [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter using keyword search](media/filter/filter-kb-text-web-services.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2020"
-
-![Kanban board, Filter using keyword search, earlier versions](media/filter/filter-options-web.png)
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-![Kanban board, Filter using keyword search, 2015](../boards/media/filter-kb-filter-text-web.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-> [!TIP]
-> Type **Ctrl** + **Shift** + **f** to move your cursor to the filter box. To move the focus up or down within a column, use the **Tab** key.
-> For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
-
-If you want to filter for a specific work item ID, you must choose to show IDs on the cards.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-The filter criteria ignores the following characters when the field value starts with the characters:<br/>
-```{ ( [ ! @ # $ % ^ & * ~ ` ' "```
-
-::: moniker-end
-
 ::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
 
-## Filter using select field values
+## Filter boards using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
