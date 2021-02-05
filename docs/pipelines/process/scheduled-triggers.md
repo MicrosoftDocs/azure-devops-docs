@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
-## Define schedules
+## Scheduled triggers
 
 #### [YAML](#tab/yaml/)
 
