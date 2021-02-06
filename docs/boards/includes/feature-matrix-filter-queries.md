@@ -203,7 +203,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs)
+      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)
    :::column-end:::
    :::column span="1":::
       Filter query results based on a key word or select fields. 

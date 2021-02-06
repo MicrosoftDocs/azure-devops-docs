@@ -1,10 +1,9 @@
 ---
-title: Filter backlogs and queries
+title: Filter backlogs, boards, queries, and plans 
 titleSuffix: Azure Boards
-description: Filter a backlog or query based on keywords, tags, or other fields   
+description: Filter backlogs, boards, queries, and plans based on keywords, tags, or other fields   
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -13,20 +12,38 @@ ms.date: 07/09/2020
 ---
 
 
-# Filter backlogs or queries based on keywords, tags, or other fields  
+# Filter backlogs, boards, queries, and plans 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="filter"></a>
 
-When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them.  With filtering, you can selectively choose what work items are listed or displayed. For example, in daily scrum meetings you can filter the Kanban board or Task board to focus on a team member's work for an iteration. 
-The filter function is available from all Azure Boards tools: work items, boards, backlogs, sprint backlogs and taskboards, queries, and plans. The set of features supported depends on the tool and Azure DevOps version. Use the content selector to view the filters available for your version. 
+When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them.  With filtering, you can selectively choose what work items are listed or displayed. 
 
+Use filters to perform these tasks: 
+- In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
+- Or, if your team uses the Taskboard, filter for a team member's completed assigned work. 
+- To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
+- Triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
  
-With parent work item filters, you can focus on one or more select features or epics. 
-
 
 ### Supported filter functions 
+
+::: moniker range=">= azure-devops-2019"
+
+Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
+
+::: moniker-end 
+
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sprint Backlogs, Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
+
+::: moniker-end 
+
+
+::: moniker range=">= tfs-2017"
 ---
 :::row:::
    :::column span="1.5":::
@@ -46,6 +63,7 @@ With parent work item filters, you can focus on one or more select features or e
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
@@ -69,6 +87,7 @@ With parent work item filters, you can focus on one or more select features or e
 :::row-end:::
 ---
 ::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
       **Boards** 
@@ -77,15 +96,35 @@ With parent work item filters, you can focus on one or more select features or e
       ✔️   
    :::column-end:::
    :::column span="2":::
-   ::: moniker range=">= tfs-2018"
       - Assigned To
       - Work Item Type
       - States
       - Area Path
    ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
+   :::column-end:::
+   :::column span="1.5":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="1.5":::
+      **Boards** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+   ::: moniker-end  
    :::column-end:::
    :::column span="1.5":::
       Not supported
@@ -95,6 +134,8 @@ With parent work item filters, you can focus on one or more select features or e
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
       **Backlogs** 
@@ -103,29 +144,45 @@ With parent work item filters, you can focus on one or more select features or e
       ✔️   
    :::column-end:::
    :::column span="2":::
-   ::: moniker range=">= tfs-2018"
       - Assigned To  
       - Work Item Type  
       - States  
       - Area Path  
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
    :::column-end:::
    :::column span="1.5":::
-   ::: moniker range=">= tfs-2018"
       ✔️   
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="1.5":::
+      **Backlogs** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To  
+      - Work Item Type  
+      - States  
+      - Area Path  
+   ::: moniker-end  
+   :::column-end:::
+   :::column span="1.5":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
      **Sprints** (Backlogs  
@@ -135,29 +192,45 @@ With parent work item filters, you can focus on one or more select features or e
       ✔️   
    :::column-end:::
    :::column span="2":::
-   ::: moniker range=">= tfs-2018"
       - Assigned To
       - Work Item Type
       - States  
       - Area Path  
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
    :::column-end:::
    :::column span="1.5":::
-   ::: moniker range=">= tfs-2018"
-      ✔️   
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
+      ✔️    
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="1.5":::
+     **Sprints** (Backlogs  
+     & Taskboards)
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States  
+      - Area Path  
+   :::column-end:::
+   :::column span="1.5":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
      **Queries**
@@ -166,22 +239,12 @@ With parent work item filters, you can focus on one or more select features or e
       ✔️   
    :::column-end:::
    :::column span="2":::
-   ::: moniker range=">= tfs-2018"
       - Work Item Types
       - Assigned To
       - States
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
-      Not supported
-   ::: moniker-end 
    :::column-end:::
    :::column span="1.5":::
-   ::: moniker range=">= tfs-2018"
-      ✔️   
-   ::: moniker-end  
-   ::: moniker range="< tfs-2018"
       Not supported
-   ::: moniker-end 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -235,9 +298,58 @@ With parent work item filters, you can focus on one or more select features or e
 ---
 ::: moniker-end 
 
-### Notes 
 
-Work items - Parent field not a Column option 
+::: moniker range="<= tfs-2015"
+
+You can use the keyword and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
+
+::: moniker-end 
+
+
+
+### Keywords and ID 
+
+The keyword filter function filters lists or cards based on the text of Column Options or the fields displayed on cards. Therefore, when filtering, consider what fields contain the keyword text you want to filter on and make sure it is displayed. To do that, see the following articles: 
+- For Backlogs and Queries, see [Change column options](set-column-options.md)
+- For Boards, see [Customize cards](../boards/customize-cards.md)
+- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+- For Plans, see [Review team delivery plans](). 
+
+
+
+#### Characters ignored by keyword filter criteria
+
+::: moniker range=">= azure-devops-2019"
+
+The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+### Fields 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+### Parent Work Item 
+
+The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the Work items tool. Also, you can add it to cards 
+
+The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
+
+::: moniker-end
+
+## Tags
+
+
+
 
 ## Open the Filter function 
 
@@ -253,18 +365,7 @@ If you want to filter for a specific work item ID, you must choose to show IDs o
 
 
 
-## Characters ignored by keyword filter criteria
 
-::: moniker range=">= azure-devops-2019"
-
-The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
-::: moniker-end
 
 
 

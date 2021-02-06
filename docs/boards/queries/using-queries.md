@@ -48,7 +48,7 @@ For quick access to all query tasks, supported operators&mdash;such as, `Contain
 ## Query filters
 
 From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
-In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs).
+In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 

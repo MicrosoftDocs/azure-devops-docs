@@ -61,6 +61,8 @@
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayName: sort, persistence
+  - name: Filter work item lists
+    href: ../backlogs/filter-backlogs-boards-plans.md 
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
 - name: Samples

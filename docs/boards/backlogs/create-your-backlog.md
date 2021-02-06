@@ -370,7 +370,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Display rollup progress bars or counts](display-rollup.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
@@ -382,7 +382,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
