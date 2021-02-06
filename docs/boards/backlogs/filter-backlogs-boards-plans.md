@@ -2,7 +2,7 @@
 title: Filter backlogs, boards, queries, and plans 
 titleSuffix: Azure Boards
 description: Filter backlogs, boards, queries, and plans based on keywords, tags, or other fields   
-ms.custom: "boards-backlogs, seodec18 contperf-fy21q3  
+ms.custom: "boards-backlogs, seodec18, contperf-fy21q3  
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
@@ -79,7 +79,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Area Path
    :::column-end:::
    :::column span="1.5":::
-        
+        Not supported
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -100,7 +100,6 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Work Item Type
       - States
       - Area Path
-   ::: moniker-end  
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -124,7 +123,6 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Work Item Type
       - States
       - Area Path
-   ::: moniker-end  
    :::column-end:::
    :::column span="1.5":::
       Not supported
@@ -171,7 +169,6 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Work Item Type  
       - States  
       - Area Path  
-   ::: moniker-end  
    :::column-end:::
    :::column span="1.5":::
       Not supported
