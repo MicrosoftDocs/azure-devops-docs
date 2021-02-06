@@ -2,16 +2,15 @@
 title: Filter backlogs, boards, queries, and plans 
 titleSuffix: Azure Boards
 description: Filter backlogs, boards, queries, and plans based on keywords, tags, or other fields   
-ms.custom: "boards-backlogs, seodec18, contperf-fy21q3  
-ms.technology: devops-agile
+ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"    
+ms.technology: devops-agile  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/06/2021
 ---
-
-
+ 
 # Filter backlogs, boards, queries, and plans 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
@@ -39,6 +38,8 @@ Filter functions are available from all Azure Boards tools: Work items, Boards, 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sprint Backlogs, Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
+
+Supported options are indicated with a ✔️ or listed. 
 
 ::: moniker-end 
 
@@ -79,7 +80,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Area Path
    :::column-end:::
    :::column span="1.5":::
-        Not supported
+          
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -125,7 +126,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Area Path
    :::column-end:::
    :::column span="1.5":::
-      Not supported
+       
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -148,7 +149,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Area Path  
    :::column-end:::
    :::column span="1.5":::
-      ✔️   
+          
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -171,7 +172,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Area Path  
    :::column-end:::
    :::column span="1.5":::
-      Not supported
+        
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -241,7 +242,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - States
    :::column-end:::
    :::column span="1.5":::
-      Not supported
+        
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -288,7 +289,7 @@ Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sp
       - Iteration Path
    :::column-end:::
    :::column span="1.5":::
-      Not supported
+        
    :::column-end:::
    :::column span="1":::
       ✔️   
