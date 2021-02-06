@@ -170,7 +170,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 **Filter backlogs and boards based on tags** 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](../boards/backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum  
 

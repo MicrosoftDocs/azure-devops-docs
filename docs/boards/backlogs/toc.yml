@@ -21,8 +21,8 @@
   - name: Display rollup progress bars or totals
     href: display-rollup.md
     displayname: In Progress items, Completed child items, Progress by, Count of, Sum of, quick list, custom rollup, column metric  
-  - name: "Filter backlogs & queries"
-    href: filter-backlogs.md
+  - name: Filter your backlogs
+    href: filter-backlogs-boards-plans.md
   - name: Select backlog levels
     href: ../../organizations/settings/select-backlog-navigation-levels.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
   - name: Show bugs on backlogs & boards

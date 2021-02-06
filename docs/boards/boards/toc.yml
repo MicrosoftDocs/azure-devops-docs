@@ -17,7 +17,7 @@
   - name: Kanban board controls
     href: kanban-board-controls.md
   - name: Filter your Kanban board
-    href: filter-kanban-board.md 
+    href: ../backlogs/filter-backlogs-boards-plans.md 
   - name: Enable live updates
     href: live-updates.md
   - name: Add or edit columns
