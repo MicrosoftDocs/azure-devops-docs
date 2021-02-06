@@ -17662,7 +17662,7 @@
     {
       "source_path": "docs/boards/boards/filter-kanban-board.md",
       "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
