@@ -17,9 +17,7 @@ ms.date: 02/06/2021
 
 <a id="filter"></a>
 
-When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them.  With filtering, you can selectively choose what work items are listed or displayed. 
-
-Use filters to perform these tasks:  
+When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them. With filtering, you can selectively choose what work items are listed or displayed. 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -314,6 +312,23 @@ Supported options are indicated with a ✔️ or listed.
 ---
 ::: moniker-end 
 
+
+
+
+### Characters ignored by keyword filter criteria
+
+::: moniker range=">= azure-devops-2019"
+
+The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+::: moniker-end
+
+
 ::: moniker range=">= tfs-2017"
 
 ### Parent Work Item 
@@ -333,6 +348,8 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 
 ## Open the Filter function 
+
+To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
 
 ::: moniker range=">= tfs-2017"
 
@@ -361,8 +378,7 @@ To add columns or fields, see the following articles:
 
 
 <a id="text-filter"></a>
-
-### Filter boards using keywords and tags
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -406,95 +422,73 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019"
-
-The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-The filter criteria ignores the following characters when the field value starts with the characters:<br/>
-```{ ( [ ! @ # $ % ^ & * ~ ` ' "```
-
-::: moniker-end
 
 
+### Filter backlogs and lists based on keywords  
 
+You can use keywords to filter your backlogs or queries. The filter function lists those work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
+::: moniker range="tfs-2018"
 
-### Characters ignored by keyword filter criteria
-
-::: moniker range=">= azure-devops-2019"
-
-The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-
-## Filter based on a field  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-<a id="parent-filter"></a>
-
-## Filter based on the Parent Work Item 
-
-You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
-
-You can use this feature only when you've created features or epics and linked them to user stories or features, respectively. A quick and easy way to create the links is to [map them using drag-and-drop](organize-backlog.md). Mapping creates parent-child links between the work items.
-
-> [!NOTE]
-> The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
-
-To start filtering, choose **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false":::. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](../boards/kanban-epics-features-stories.md) you've defined.
-
-Here, we choose two features on which to filter the board.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter on Parent field](media/filter-boards/filter-kb-parent-filters-services.png)
+> ![Filter by keyword](media/filter/filter-s144.png)  
 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-![Kanban board, Filter on parent work items](media/filter-boards/filter-kb-choose-parent-work-items.png)
+![Backlogs, turn filtering on](media/filter-backlogs-options.png)  
 
-::: moniker-end
+The filtered set is always a flat list, even if you've selected to show parents. 
 
-::: moniker range=">= tfs-2017"
-
-
-The final board displays just those stories linked as child work items to the selected features.
 
 ::: moniker-end 
 
 
+::: moniker range="<= tfs-2017"
 
 
-## Use Tags to filter 
 
+Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
 
- 
+<img src="media/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
+
+The filtered set is always a flat list, even if you've selected to show parents.  
+
+::: moniker-end
+
 
 
 ::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
+
+
+## Filter based on a field  
+
+Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
+
+- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
+- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
+- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
+- **Tags**: All tags assigned to work items on the board
+- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board  
+
+> [!NOTE]   
+> Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
+
+Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
+
+> [!div class="mx-imgBorder"]  
+> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
+
+To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
+
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2017"
 
 ## Filter boards using select field values
 
@@ -559,10 +553,10 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 
 
-
+:: moniker range=">= tfs-2017"
 <a id="filter-logic"></a>
 
-## Kanban board filter logic
+### Kanban board filter logic
 
 Cards are filtered based on the assignments made in the following order and logic:
 
@@ -578,68 +572,51 @@ Cards are filtered based on the assignments made in the following order and logi
 
 
 
-
-::: moniker range=">= tfs-2018"
-
-## Filter backlogs and lists based on keywords or fields   
-
-::: moniker-end 
-
-::: moniker range=">= azure-devops-2019"
-
-You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.
-
-To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filter by keyword](media/filter/filter-s144.png)  
-
-Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
-
-- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
-- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
-- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
-- **Tags**: All tags assigned to work items on the board
-- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board  
-
-> [!NOTE]   
-> Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
-
-Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
-
-To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
-
 ::: moniker-end
 
 
-::: moniker range="tfs-2018"
+:: moniker range=">= tfs-2017"
 
-You can filter work items by typing a keyword or using one or more of the fields provided, such as Work Item Type, Assigned To, State, and Tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including Tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
+<a id="parent-filter"></a>
 
-To show the filter toolbar, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
+## Filter based on the Parent Work Item 
 
-![Backlogs, turn filtering on](media/filter-backlogs-options.png)  
+You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
 
-The filtered set is always a flat list, even if you've selected to show parents. 
+You can use this feature only when you've created features or epics and linked them to user stories or features, respectively. A quick and easy way to create the links is to [map them using drag-and-drop](organize-backlog.md). Mapping creates parent-child links between the work items.
+
+> [!NOTE]
+> The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
+
+To start filtering, choose **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false":::. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](../boards/kanban-epics-features-stories.md) you've defined.
+
+Here, we choose two features on which to filter the board.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter on Parent field](media/filter-boards/filter-kb-parent-filters-services.png)
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+![Kanban board, Filter on parent work items](media/filter-boards/filter-kb-choose-parent-work-items.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+
+The final board displays just those stories linked as child work items to the selected features.
 
 ::: moniker-end 
 
 
 
-::: moniker range="<= tfs-2017"
-
-## Filter backlogs and lists based on keywords 
-
-You can use keywords to filter your backlogs or queries. The filter function lists those work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. Also, you can enter a value for an ID, whether or not the ID field is visible.  
-
-Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
-
-<img src="media/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
-
-The filtered set is always a flat list, even if you've selected to show parents.  
 
 ## Filter based on tags
 
@@ -647,7 +624,10 @@ If you've [added tags to your work items](../queries/add-tags-to-work-items.md),
 
 To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../queries/add-tags-to-work-items.md#filter).
  
-::: moniker-end
+
+
+
+
 
 
 ## Related articles  
