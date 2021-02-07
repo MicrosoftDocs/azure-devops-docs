@@ -41,7 +41,11 @@ Use filters to perform these tasks:
 ::: moniker-end 
 
 
+::: moniker range=">= tfs-2017"
+
 ## Supported filter functions 
+
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -252,8 +256,12 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 ::: moniker-end 
 
+::: moniker range=">= tfs-2017"
 
 ### Characters ignored by keyword filter criteria
+
+::: moniker-end 
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -261,7 +269,7 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 
@@ -328,17 +336,14 @@ To clear and dismiss filtering, choose the :::image type="icon" source="../../me
 ## Apply keyword and ID filters
 
 The keyword filter function filters lists or cards based on the text of **Column Options** or the fields displayed on cards. Therefore, when filtering, consider what fields contain the keyword text you want to filter on and make sure it is displayed. 
+
+::: moniker range="<= tfs-2015"
+
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+
+::: moniker-end
+
  
-For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
-
-
-To add columns or fields, see the following articles: 
-- For Backlogs and Queries, see [Change column options](set-column-options.md)
-- For Boards, see [Customize cards](../boards/customize-cards.md)
-- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
-
-
 <a id="text-filter"></a>
 
 <!--- 
@@ -427,6 +432,16 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 
 ## Filter based on a field  
+
+
+For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
+
+
+To add columns or fields, see the following articles: 
+- For Backlogs and Queries, see [Change column options](set-column-options.md)
+- For Boards, see [Customize cards](../boards/customize-cards.md)
+- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+- For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
