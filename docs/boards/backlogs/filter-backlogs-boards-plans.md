@@ -53,9 +53,9 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sprint Backlogs, Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
+Filter functions are available from all Azure Boards tools: Boards, Backlogs, Sprint Backlogs, Taskboards, and Queries. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
 
 Supported options are indicated with a ✔️ or listed. 
 
@@ -130,29 +130,6 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="1.5":::
-      **Boards** 
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-   :::column-end:::
-   :::column span="1.5":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
@@ -169,26 +146,6 @@ Supported options are indicated with a ✔️ or listed.
    :::column-end:::
    :::column span="1.5":::
           
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="1.5":::
-      **Backlogs** 
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-        
-   :::column-end:::
-   :::column span="1.5":::
-        
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -220,27 +177,6 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="1.5":::
-     **Sprints** (Backlogs  
-     & Taskboards)
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-        
-   :::column-end:::
-   :::column span="1.5":::
-        
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
@@ -253,26 +189,6 @@ Supported options are indicated with a ✔️ or listed.
       - Work Item Types
       - Assigned To
       - States
-   :::column-end:::
-   :::column span="1.5":::
-        
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end  
-::: moniker range="<= tfs-2015"
-:::row:::
-   :::column span="1.5":::
-     **Queries**
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-        
    :::column-end:::
    :::column span="1.5":::
         
@@ -377,11 +293,15 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 
 ## Open and clear filter functions 
 
-To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
+::: moniker range=">= tfs-2017"
+To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut.  
 
+::: moniker-end
 
-To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon.
+::: moniker range="< tfs-2017"
+To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon. If you want to filter for a specific work item ID, you must choose to show IDs on the cards.
 
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -396,7 +316,7 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 > Type **Ctrl** + **Shift** + **f** to move your cursor to the filter box. To move the focus up or down within a column, use the **Tab** key.
 > For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
-If you want to filter for a specific work item ID, you must choose to show IDs on the cards. <!--- not true anymore -->
+ <!--- not true anymore -->
 
 ::: moniker-end
 
@@ -421,7 +341,7 @@ To add columns or fields, see the following articles:
 
 <a id="text-filter"></a>
 
-
+<!--- 
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
@@ -440,6 +360,8 @@ To add columns or fields, see the following articles:
 ![Kanban board, customize card fields, earlier versions](media/filter-boards/filter-kb-card-field-settings.png)
 
 ::: moniker-end
+
+-->
 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter.
 
@@ -526,7 +448,7 @@ Here we show a filtered backlog based on the keyword "issues". Filtered pages sh
 
 ::: moniker range=">= tfs-2017"
 
-## Filter boards using select field values
+### Filter boards using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
