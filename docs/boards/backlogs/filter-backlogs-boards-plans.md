@@ -416,11 +416,11 @@ To add columns or fields, see the following articles:
 - For Backlogs and Queries, see [Change column options](set-column-options.md)
 - For Boards, see [Customize cards](../boards/customize-cards.md)
 - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- For Plans, see [Review team delivery plans](). 
+- For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
 
 
 <a id="text-filter"></a>
- 
+
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -635,7 +635,7 @@ The final board displays just those stories linked as child work items to the se
 
 ## Filter based on tags
 
-If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
+If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add **Tags** as a column option prior to filtering on tags.  
 
  
 ::: moniker range=">= tfs-2017"
@@ -643,7 +643,7 @@ If you've [added tags to your work items](../queries/add-tags-to-work-items.md),
 Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the  you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
 
 > [!div class="mx-imgBorder"]
-> ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
+> ![View with Tags column added](../queries/media/add-tags/filter-backlog-tags.png) 
 
 
 ::: moniker-end
@@ -652,11 +652,11 @@ Check the boxes of those tags that you want to filter on. Keep the **OR** select
 
 1. Turn on filtering and choose a tag.  
 
-	![Choose a tag to filter the list by that tag](media/filter-a-list-using-tags.png)  
+	![Choose a tag to filter the list by that tag](../queries/media/filter-a-list-using-tags.png)  
 
 	The list refreshes. Only those work items with the selected tag are displayed. Filtering the list disables add-a-backlog-item panel, stack ranking, and forecasting.  
 
-	![Filtered list disables other features](media/filtered-list-based-on-tags.png)  
+	![Filtered list disables other features](../queries/media/filtered-list-based-on-tags.png)  
 
 2. To apply a sub-filter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
 
@@ -669,8 +669,13 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 
 ## Related articles  
 
+- [Set column options](set-column-options.md)   
+- [Change column options](set-column-options.md)
+- [Customize cards](../boards/customize-cards.md)
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+- [Review team delivery plans]( ../plans/review-team-plans.md). 
 - [Tags](../queries/add-tags-to-work-items.md) 
-- [Set column options](set-column-options.md)  
-- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
+
+
 
 <!--- Other filter features cross-service  such as FIlter pipelines -->
