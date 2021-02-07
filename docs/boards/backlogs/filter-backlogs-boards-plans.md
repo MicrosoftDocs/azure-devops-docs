@@ -41,7 +41,7 @@ Use filters to perform these tasks:
 ::: moniker-end 
 
 
-### Supported filter functions 
+## Supported filter functions 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -103,7 +103,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
       **Boards** 
@@ -126,7 +126,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="<= tfs-2015"
 :::row:::
    :::column span="1.5":::
       **Boards** 
@@ -149,7 +149,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
       **Backlogs** 
@@ -172,7 +172,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="<= tfs-2015"
 :::row:::
    :::column span="1.5":::
       **Backlogs** 
@@ -181,10 +181,7 @@ Supported options are indicated with a ✔️ or listed.
       ✔️   
    :::column-end:::
    :::column span="2":::
-      - Assigned To  
-      - Work Item Type  
-      - States  
-      - Area Path  
+        
    :::column-end:::
    :::column span="1.5":::
         
@@ -195,7 +192,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
      **Sprints** (Backlogs  
@@ -219,7 +216,7 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="<= tfs-2015"
 :::row:::
    :::column span="1.5":::
      **Sprints** (Backlogs  
@@ -229,13 +226,10 @@ Supported options are indicated with a ✔️ or listed.
       ✔️   
    :::column-end:::
    :::column span="2":::
-      - Assigned To
-      - Work Item Type
-      - States  
-      - Area Path  
+        
    :::column-end:::
    :::column span="1.5":::
-      Not supported
+        
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -264,6 +258,26 @@ Supported options are indicated with a ✔️ or listed.
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end  
+::: moniker range="<= tfs-2015"
+:::row:::
+   :::column span="1.5":::
+     **Queries**
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+        
+   :::column-end:::
+   :::column span="1.5":::
+        
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
 ::: moniker-end 
 ::: moniker range=">= azure-devops-2020"
 :::row:::
@@ -288,7 +302,30 @@ Supported options are indicated with a ✔️ or listed.
    :::column-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1.5":::
+     **Plans (Preview)**
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Types
+      - States
+      - Area Path
+      - Iteration Path
+   :::column-end:::
+   :::column span="1.5":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+---
+::: moniker-end 
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 :::row:::
    :::column span="1.5":::
      **Plans**
@@ -297,11 +334,9 @@ Supported options are indicated with a ✔️ or listed.
       ✔️   
    :::column-end:::
    :::column span="2":::
+      - Work Item Types
       - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Iteration Path
+      - States 
    :::column-end:::
    :::column span="1.5":::
         
@@ -333,7 +368,18 @@ The filter criteria ignores the following characters when the field value starts
 
 ### Parent Work Item 
 
-The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the Work items tool. Also, you can add it to cards 
+::: moniker range="<= tfs-2018"
+
+The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
+
+::: moniker-end
+
+
+::: moniker range="azure-devops"
+
+You can also add the **Parent** field to cards on the Kanban Boards and Taskboards. 
+
+::: moniker-end
 
 The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
 
@@ -441,9 +487,6 @@ You can use keywords to filter your backlogs or queries. The filter function lis
 ![Backlogs, turn filtering on](media/filter-backlogs-options.png)  
 
 The filtered set is always a flat list, even if you've selected to show parents. 
-
-
-::: moniker-end 
 
 
 ::: moniker range="<= tfs-2017"
