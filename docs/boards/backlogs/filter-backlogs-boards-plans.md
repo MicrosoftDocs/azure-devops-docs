@@ -462,7 +462,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 ::: moniker range=">= tfs-2017"
 
-<a id="field-filter"></a>
+<a id="field-filter" />
 
 
 ## Filter based on a field  
@@ -513,18 +513,6 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 
 ::: moniker range=">= tfs-2017"
 
-Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
-
-- **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
-- **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
-- **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
-- **Tags**: All tags assigned to work items on the board
-- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
-
-
-> [!NOTE]   
-> Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
-
 For example, here we filter for all items assigned to Jamal and Raisa.
 
 ::: moniker-end
@@ -554,6 +542,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 
 :: moniker range=">= tfs-2017"
+
 <a id="filter-logic"></a>
 
 ### Kanban board filter logic
@@ -623,11 +612,6 @@ The final board displays just those stories linked as child work items to the se
 If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
 To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../queries/add-tags-to-work-items.md#filter).
- 
-
-
-
-
 
 
 ## Related articles  
