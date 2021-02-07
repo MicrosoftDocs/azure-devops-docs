@@ -635,7 +635,7 @@ The final board displays just those stories linked as child work items to the se
 
 ## Filter based on tags
 
-If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add **Tags** as a column option prior to filtering on tags.  
+If you've added tags to your work items, you can filter your work using one or more tags. For backlogs and query results, add **Tags** as a column option prior to filtering on tags.  
 
  
 ::: moniker range=">= tfs-2017"
