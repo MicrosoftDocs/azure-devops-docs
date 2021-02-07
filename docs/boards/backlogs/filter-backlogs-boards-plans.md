@@ -347,7 +347,11 @@ Supported options are indicated with a ✔️ or listed.
 ---
 ::: moniker-end 
 
+::: moniker range="<= tfs-2015"
 
+You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
+
+::: moniker-end 
 
 
 ### Characters ignored by keyword filter criteria
@@ -361,35 +365,30 @@ The filter criteria ignores the following characters: `,` (comma), `.` (period),
 ::: moniker range="<= tfs-2018"
 
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017"
 
-### Parent Work Item 
-
-::: moniker range="<= tfs-2018"
+### Parent fields and Parent Work Item filter
 
 The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops"
-
 You can also add the **Parent** field to cards on the Kanban Boards and Taskboards. 
-
 ::: moniker-end
+
+
+::: moniker range=">= tfs-2017"
 
 The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2015"
 
-You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
-
-::: moniker-end 
 
 
 
