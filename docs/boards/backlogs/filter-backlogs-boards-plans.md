@@ -567,7 +567,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 
 
-:: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"
 
 <a id="filter-logic"></a>
 
@@ -590,7 +590,7 @@ Cards are filtered based on the assignments made in the following order and logi
 ::: moniker-end
 
 
-:: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"
 
 <a id="parent-filter"></a>
 
