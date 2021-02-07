@@ -47,6 +47,9 @@ Use filters to perform these tasks:
 
 Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
 
+
+Supported options are indicated with a ✔️ or listed. 
+
 ::: moniker-end 
 
 
@@ -58,6 +61,7 @@ Supported options are indicated with a ✔️ or listed.
 
 ::: moniker-end 
 
+<br/>
 
 ::: moniker range=">= tfs-2017"
 ---
@@ -279,29 +283,6 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= azure-devops-2020"
-:::row:::
-   :::column span="1.5":::
-     **Plans**
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="2":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Iteration Path
-   :::column-end:::
-   :::column span="1.5":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
----
-::: moniker-end 
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
@@ -323,9 +304,10 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="1":::
       ✔️   
    :::column-end:::
+:::row-end:::
 ---
 ::: moniker-end 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
      **Plans**
@@ -344,6 +326,7 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="1":::
       ✔️   
    :::column-end:::
+:::row-end:::
 ---
 ::: moniker-end 
 
@@ -371,7 +354,7 @@ The filter criteria ignores the following characters when the field value starts
 
 ::: moniker range=">= tfs-2017"
 
-### Parent fields and Parent Work Item filter
+### Parent field and Parent Work Item filter
 
 The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
 
@@ -392,9 +375,20 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 
 
 
-## Open the Filter function 
+## Open and clear filter functions 
 
 To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, or enter the **Ctrl+Shift+f** keyboard shortcut. You can filter all backlogs, boards, and query results. 
+
+
+To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon.
+
+
+::: moniker range=">= azure-devops-2020"
+
+> [!div class="mx-imgBorder"]  
+> ![Enable kanban field-based filtering](media/filter-boards/filter-kb-choose-filter-services.png)
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
@@ -405,6 +399,9 @@ To show the filter toolbar, choose the :::image type="icon" source="../../media/
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. <!--- not true anymore -->
 
 ::: moniker-end
+
+
+To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
 
 
 
@@ -525,9 +522,6 @@ Here we show a filtered backlog based on the keyword "issues". Filtered pages sh
 > [!div class="mx-imgBorder"]  
 > ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
 
-To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
-
-
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
@@ -536,17 +530,7 @@ To clear and dismiss filtering, choose the :::image type="icon" source="../../me
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
-To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon.
-
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
-
-> [!div class="mx-imgBorder"]  
-> ![Enable kanban field-based filtering](media/filter-boards/filter-kb-choose-filter-services.png)
-
-::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
@@ -653,7 +637,34 @@ The final board displays just those stories linked as child work items to the se
 
 If you've [added tags to your work items](../queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../media/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../queries/add-tags-to-work-items.md#filter).
+ 
+::: moniker range=">= tfs-2017"
+
+Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the  you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
+
+> [!div class="mx-imgBorder"]
+> ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
+
+
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+
+1. Turn on filtering and choose a tag.  
+
+	![Choose a tag to filter the list by that tag](media/filter-a-list-using-tags.png)  
+
+	The list refreshes. Only those work items with the selected tag are displayed. Filtering the list disables add-a-backlog-item panel, stack ranking, and forecasting.  
+
+	![Filtered list disables other features](media/filtered-list-based-on-tags.png)  
+
+2. To apply a sub-filter, choose another tag. You filter successively by choosing from the set of tags that appear in the filter tag bar. To start your filter process over, choose All to show all tags.  
+
+3. To show all items, choose All or choose the Tag filter image on backlog and queries pages filter icon to turn filtering off.   
+
+::: moniker-end
+
+To learn more about tags, see [Add tags to work items to categorize and filter lists and boards](../queries/add-tags-to-work-items.md).
 
 
 ## Related articles  
