@@ -275,15 +275,19 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="1":::
       ✔️   
    :::column-end:::
-:::row-end::
+:::row-end:::
 ---
-::: moniker-end 
+::: moniker-end   
+
+
 
 ::: moniker range="<= tfs-2015"
 
 You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
 
 ::: moniker-end 
+
+
 
 ::: moniker range=">= tfs-2017"
 
@@ -302,13 +306,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
       **Tool** 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Filter settings**
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       **Sort**
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
       **Reorder**
    :::column-end:::
    :::column span="1":::  
@@ -322,13 +326,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
       [**Work items**](../work-items/view-add-work-items.md) 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Completed Work Items
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       ✔️   
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
           
    :::column-end:::
    :::column span="1":::
@@ -342,13 +346,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
       [**Boards**](../boards/kanban-overview.md)   
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Note 1  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
           
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
       ✔️   
    :::column-end:::
    :::column span="1":::
@@ -362,14 +366,14 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
       [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       In Progress items
       Completed Child items  
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
           
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
       Note 2 (No reorder when filter on)  
    :::column-end:::
    :::column span="1":::
@@ -383,13 +387,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       ✔️   
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
           
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
       Note 2 (No reorder when filter on)  
    :::column-end:::
    :::column span="1":::
@@ -403,13 +407,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Sprints**, **Taskboards**)](../sprints/scrum-overview.md)  
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
         
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
 
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
       ✔️    
    :::column-end:::
    :::column span="1":::
@@ -423,13 +427,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Query Results**](../queries/view-run-query.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
            
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
       ✔️   
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
         
    :::column-end:::
    :::column span="1":::
@@ -443,13 +447,13 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Plans (Preview)**](../plans/review-team-plans.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
           
    :::column-end:::
-   :::column span="2":::
+   :::column span="1":::
         
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
           
    :::column-end:::
    :::column span="1":::
@@ -463,17 +467,17 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
-   :::column span="1":::
-        
-   :::column-end:::
    :::column span="2":::
         
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="1":::
         
    :::column-end:::
    :::column span="1":::
-      Note 4 (Group is via Settings)   
+        
+   :::column-end:::
+   :::column span="1":::
+      Note 4  
    :::column-end:::
 :::row-end:::
 ---
@@ -483,22 +487,39 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1.5":::
      [**Semantic search, Work Items**](../../project/search/work-item-search.md)
    :::column-end:::
-   :::column span="1":::
-           
-   :::column-end:::
    :::column span="2":::
-      ✔️   
-   :::column-end:::
-   :::column span="1.5":::
         
    :::column-end:::
    :::column span="1":::
-           
+        
    :::column-end:::
-:::row-end::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="1":::
+      Note 4  
+   :::column-end:::
+:::row-end:::
 ---
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017"
+
+**Notes**
+1.   First note
+2.   Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
+3. Grouping is supported through portfolio backlogs, parent-child links, and tree hierarchy. 
+4. Grouping is part of Plans settings based on team selections. 
+
+
+And something about multi team backlogs
+
+
 ::: moniker-end 
 
+
+ 
 ::: moniker range=">= tfs-2017"
 
 ### Characters ignored by keyword filter criteria
