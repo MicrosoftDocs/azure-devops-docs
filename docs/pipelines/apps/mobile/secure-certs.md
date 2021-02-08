@@ -43,7 +43,7 @@ You can use the Keychain Access to generate a certificate. To learn more about t
 
    1. You can download your mobile provisioning profile from the Apple Developer portal, unless your app uses automatic signing. You can also use Xcode to access one installed on your machine.
    2. First go to the same screen you used to get the .p12 file above.
-   3. Next, right-click the provisioning profile you want and select "Show in Finder".
+   3. Next, right-click the provisioning profile you want and select **Show in Finder**.
    4. Copy the file highlighted to another location and give it a descriptive filename.
       ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
 
@@ -59,7 +59,7 @@ You can use the Keychain Access to generate a certificate. To learn more about t
 
     - **Override Using**: File Contents
     - **P12 Certificate File**: Path to the .p12 file in the repository
-    - **P12 Password**: $(P12_PWD)
+    - **P12 Password**: `$(P12_PWD)`
     - **Provisioning Profile File**: Path to the .mobileprovision file in the repository
     - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
 
@@ -96,18 +96,18 @@ You can add an extra layer of security by to your project by encrypting your .p1
    2. Under the **Build** tab in your build pipeline, add two **Decrypt File** (OpenSSL) steps and move the steps to the start of your build pipeline.
 
    3. Now, enter the proper information using the variables you created above to decrypt the two files to a static filename.
-      - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
-      - **Encrypted File**: $(P12) for one step and $(MOB_PROV) for the other
-      - **Passphrase**: $(ENC_PWD)
+      - **Cypher**: The cypher you specified while encrypting. (Ex: `des3`)
+      - **Encrypted File**: `$(P12)` for one step and $(MOB_PROV) for the other
+      - **Passphrase**: `$(ENC_PWD)`
       - **Decrypted File Path**: _build.p12 for one step and _build.mobileprovision for the other
       ![Decrypt File settings](media/secure-certs/secure-certs-4.png)
 
 4. Finally, update the Xcode Build step to reference the decrypted files.
 
     - **Override Using**: File Contents
-    - **P12 Certificate File**: _build.p12
-    - **P12 Password**: $(P12_PWD)
-    - **Provisioning Profile File**: _build.mobileprovision
+    - **P12 Certificate File**: `_build.p12`
+    - **P12 Password**: `$(P12_PWD)`
+    - **Provisioning Profile File**: `_build.mobileprovision`
     - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
       ![Update the Xcode Build step to reference the decrypted files.](media/secure-certs/secure-certs-5.png)
 
@@ -130,11 +130,11 @@ Follow these steps:
 
    2. Take note of the identity you want to use including the ID as this string is truly unique.
 
-   3. Next, find the UUID for the provisioning profile you want to use by following these steps.
+   3. Next, find the UUID for the provisioning profile you want to use.
 
-      1. Open Xcode and go to Xcode &gt; Preferences... &gt; Accounts and select your Apple Developer account.
+      1. Open Xcode and go to **Xcode** > **Preferences** > **Accounts** and select your Apple Developer account.
 
-      2. Select "View Details..." and right-click the provisioning profile you want and select "Show in Finder".
+      2. Select **View Details** and right-click the provisioning profile you want and select "Show in Finder".
       ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
 
    4. The name of the file that is highlighted is the UUID of your provisioning profile.
@@ -156,7 +156,7 @@ Follow these steps:
    2. Update the Xcode step to unlock the keychain entering the following values under the **Signing & Provisioning** category for the Xcode or Xamarin.iOS build task:
 
       - **Unlock Default Keychain**: Checked
-      - **Default Keychain Password**: $(KEYCHAIN_PWD)
+      - **Default Keychain Password**: `$(KEYCHAIN_PWD)`
 
 <a name="android"></a>
 ## Building and signing Android and Xamarin.Android projects
@@ -194,9 +194,9 @@ Follow these steps:
 5. Now, enter the proper information using the variables you created above to decrypt the file to a static filename.
 
     - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
-    - **Encrypted File**: $(KEYSTORE)
-    - **Passphrase**: $(ENC_PWD)
-    - **Decrypted File Path**: _build.keystore
+    - **Encrypted File**: `$(KEYSTORE)`
+    - **Passphrase**: `$(ENC_PWD)`
+    - **Decrypted File Path**: `_build.keystore`
 
       ![Decrypt keystore settings](media/secure-certs/secure-certs-9.png)
 
@@ -211,10 +211,10 @@ Follow these steps:
 
    2. If you are using the **Android Signing** task, add these values under **Jarsign Options**:
 
-      - **Keystore File**: _build.keystore
-      - **Keystore Password**: $(KEYSTORE_PWD)
-      - **Key Alias**: $(KEY)
-      - **KEY Password**: $(KEY_PWD)
+      - **Keystore File**: `_build.keystore`
+      - **Keystore Password**: `$(KEYSTORE_PWD)`
+      - **Key Alias**: `$(KEY)`
+      - **KEY Password**: `$(KEY_PWD)`
 
 You are now all set! Any build agent will now be able to securely build your app without any certificate management on the build machine itself.
 
