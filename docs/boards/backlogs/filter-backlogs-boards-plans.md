@@ -85,7 +85,7 @@ Supported options are indicated with a ✔️ or listed.
       <br/>**Fields**
    :::column-end:::
    :::column span="1.5":::
-      **Parent Work Item**
+      **Parent<br/>Work Item**
    :::column-end:::
    :::column span="1":::
       <br/>**Tags**
@@ -291,7 +291,7 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 ::: moniker range=">= tfs-2017"
 
-### Additional filter, sort, group, and reorder functions 
+### Additional filter, sort, group, rollup, and reorder functions 
 
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, reorder, and group functions. Some functions, such as reorder, don't work when the filter function is enabled.
 
@@ -312,11 +312,14 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1":::
       **Sort**
    :::column-end:::
+   :::column span="1":::  
+      **Group**
+   :::column-end:::
    :::column span="1":::
       **Reorder**
    :::column-end:::
-   :::column span="1":::  
-      **Group**
+   :::column span="1":::
+      **Rollup**
    :::column-end:::
 :::row-end:::
 ---
@@ -338,6 +341,9 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column span="1":::
           
    :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end 
@@ -347,16 +353,19 @@ In addition to the standard filter functions summarized in the previous table, t
       [**Boards**](../boards/kanban-overview.md)   
    :::column-end:::
    :::column span="2":::
-      Note 1  
+      ✔️ (Note 1)  
    :::column-end:::
    :::column span="1":::
           
    :::column-end:::
    :::column span="1":::
-      ✔️   
+
    :::column-end:::
    :::column span="1":::
-          
+      ✔️ 
+   :::column-end:::
+   :::column span="1":::
+       
    :::column-end:::
 :::row-end:::
 ---
@@ -367,18 +376,21 @@ In addition to the standard filter functions summarized in the previous table, t
       [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
    :::column span="2":::
+      ✔️ (Note 1)  
       In Progress items  
       Completed Child items 
-      Note 1   
    :::column-end:::
    :::column span="1":::
           
    :::column-end:::
    :::column span="1":::
-      ✔️, Note 2   
+      ✔️ (Note 3)   
    :::column-end:::
    :::column span="1":::
-      Note 3  
+      ✔️ (Note 2)   
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note R)   
    :::column-end:::
 :::row-end:::
 ---
@@ -389,13 +401,16 @@ In addition to the standard filter functions summarized in the previous table, t
      [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="2":::
-      Note 1           
+      ✔️ (Note 1)  
    :::column-end:::
    :::column span="1":::
        
    :::column-end:::
    :::column span="1":::
-      ✔️, Note 2  
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 2)  
    :::column-end:::
    :::column span="1":::
          
@@ -406,7 +421,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-     [**Sprints**, **Taskboards**)](../sprints/scrum-overview.md)  
+     [**Sprints**, **Taskboards**](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="2":::
         
@@ -415,10 +430,13 @@ In addition to the standard filter functions summarized in the previous table, t
 
    :::column-end:::
    :::column span="1":::
+      ✔️ (Note 4)   
+   :::column-end:::
+   :::column span="1":::
       ✔️    
    :::column-end:::
    :::column span="1":::
-      Group by    
+         
    :::column-end:::
 :::row-end:::
 ---
@@ -435,10 +453,13 @@ In addition to the standard filter functions summarized in the previous table, t
       ✔️   
    :::column-end:::
    :::column span="1":::
-        
+      ✔️ (Note 3)   
    :::column-end:::
    :::column span="1":::
-      ✔️, Note 3   
+         
+   :::column-end:::
+   :::column span="1":::
+         
    :::column-end:::
 :::row-end:::
 ---
@@ -455,10 +476,13 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-          
+      ✔️ (Note 5)  
    :::column-end:::
    :::column span="1":::
-      ✔️, Note 4  
+            
+   :::column-end:::
+   :::column span="1":::
+          
    :::column-end:::
 :::row-end:::
 ---
@@ -478,7 +502,7 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-      ✔️, Note 4 
+      ✔️ (Note 5)  
    :::column-end:::
 :::row-end:::
 ---
@@ -492,7 +516,7 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-      ✔️   
+      ✔️ (Note 6)  
    :::column-end:::
    :::column span="1":::
         
@@ -508,13 +532,19 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 
 **Notes**
-1.   Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). 
+1.   The Work items page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). 
 2.   Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 3. Grouping is supported through portfolio backlogs, parent-child links, and tree hierarchy. 
-4. Grouping is part of Plans settings based on team selections. 
+4. Taskboards provides a Group by function based on Assignment or 
+5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
+6. Grouping is part of Delivery Plans settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
+6. Semantic search supports sorting search results by the following fields&mdash;Assigned To, Changed Date, Created Date, ID, State, Tags, Title, and Work Item Type&mdash;and Relevance. 
 
 
+rollup 
 And something about multi team backlogs
+Parented and UnParented
+
 
 
 ::: moniker-end 

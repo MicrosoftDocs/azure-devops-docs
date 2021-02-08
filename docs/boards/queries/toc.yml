@@ -19,6 +19,7 @@
     href: triage-work-items.md
   - name: Filter your queries
     href: ../backlogs/filter-backlogs-boards-plans.md 
+    displayname: sort, reorder, group, parent, tags  
   - name: Best practices to define a query
     href: high-performing-queries.md 
   - name: Query FAQs
