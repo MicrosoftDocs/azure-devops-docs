@@ -70,7 +70,7 @@ A notification displays, showing the status and outcome of the rule. If the assi
 When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group. No other licenses are required.
 
 > [!NOTE]
-> Group rules can be used to assign both Access Level and Team Project Memberships. A user tied to more than one rule or Azure AD group can expect to have the highest access level between the two. For example, say a user's in two Azure AD groups and tied to two different group rules containing different access levels (one for Stakeholder and one for Basic): the user's access level would be Basic. 
+> Group rules can be used to assign both Access Level and Team Project Memberships. A user who's tied to more than one rule or Azure AD group can expect to have the highest access level between the two. For example, say a user's in two Azure AD groups and tied to two different group rules containing different access levels (one for Stakeholder and one for Basic): the user's access level would be Basic. 
 ## Verify group rule
 
 - Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
