@@ -709,6 +709,9 @@ an output variable by using `isOutput=true`. Then you can map it into future job
 
 To pass variables to jobs in different stages, use the [stage dependencies](expressions.md#dependencies) syntax. 
 
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file. Therefore, each stage can use output variables from the prior stage. To access further stages, you will need to alter the dependency graph, for instance, if stage 3 requires a variable from stage 1, you will need to declare an explicit dependency on stage 1.
+
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
