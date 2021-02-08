@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
+
+
 The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access.
 
 Azure DevOps stores a tremendous amount of information. This includes the following data:  
@@ -29,6 +31,8 @@ Stakeholders - semantic searches on work items, wiki, and packages, but not on c
  
 A keyword search is the most basic type of search to get started. Default search searches everything. Services - source code, need versioning content You can narrow down your results and focus on what you need by using filters. 
 ## Search features
+
+Instant search for work items.
 
 ## Filter features
 
