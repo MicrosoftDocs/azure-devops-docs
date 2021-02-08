@@ -34,8 +34,16 @@ Compare the changes between two versions of a file in your Git repo.
 #### [Browser](#tab/browser)
 
 1. In your project, click **Repos**, and then click **Files**. 
+
+    :::image type="content" source="media/review-history/repos-files.png" alt-text="Screenshot that shows the Azure DevOps menu with Repos and Files selected.":::
+ 
 2. Select a file, and then click the **Compare** tab. A diff view shows the most recent commit and the *head* commit in a side-by-side view.
+
+    :::image type="content" source="media/review-history/compare-commits-browser.png" alt-text="Screenshot that shows the Compare tab selected and commit diff view.":::
+
 3. Select the the two commits you want to compare.   
+
+    :::image type="content" source="media/review-history/select-commits-for-compare-browser.png" alt-text="Screenshot that shows the selections for the previous commits for comparison.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
@@ -95,10 +103,21 @@ your branch.
 #### [Browser](#tab/browser)
 
 1. In your project, click **Repos**, and then click **Files**.
+
+    :::image type="content" source="media/review-history/repos-files.png" alt-text="Screenshot that shows the Azure DevOps menu with the Repo menu expanded and Files selected.":::
+
 2. Select a file, and then select the **History** tab.
+
+    :::image type="content" source="media/review-history/select-file-history.png" alt-text="Screenshot that shows a the 'History' tab of a file selected.":::
+
 3. Select a commit from the list.
 4. Click the ellipses in the top-right corner, and then select **Revert** from the drop-down.
+
+    :::image type="content" source="media/review-history/select-ellipsis-file-history.png" alt-text="Screenshot that shows the ellipsis and the drop-down with 'Revert' selected."::: 
+
 5. Select your target branch, type a topic branch name if necessary, and click **Revert**.
+
+    :::image type="content" source="media/review-history/revert-commit-dialog-browser.png" alt-text="Screenshot that shows the 'Revert commit' dialog.":::
 
 #### [Visual Studio](#tab/visual-studio/)
 To retrieve a previous version of a file that exists in your Visual Studio project:
@@ -154,8 +173,16 @@ changes others have made will affect your work.
 # [Browser](#tab/browser)
 
 1. In your project, click **Repos**, and then click **Branches**.
+
+    :::image type="content" source="media/review-history/select-repos-branches.png" alt-text="Screenshot that shows selecting 'Repos' and 'Branches' from the project menu.":::
+ 
 2. On the branch you want to compare, click the ellipses on the right-side, and then select **Compare branches** from the drop-down.
+
+    :::image type="content" source="media/review-history/select-compare-branches-browser.png" alt-text="Screenshot that shows the ellipsis selected and 'Compare branches' selected from the menu.":::
+
 3. Select the other branch you want to compare with. The view displays all changes between the branches.
+
+    :::image type="content" source="media/review-history/select-branch-to-compare.png" alt-text="Screenshot that shows the 'Branch compare' dialog, with the first branch drop-down highlighted and branch 'Test1' selected."::: 
 
 # [Visual Studio](#tab/visual-studio)
 
