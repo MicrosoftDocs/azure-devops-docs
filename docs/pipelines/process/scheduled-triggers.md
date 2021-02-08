@@ -337,7 +337,7 @@ YAML pipelines are not available on TFS.
 
 #### [Classic](#tab/classic/)
 
-Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic scheduled, see [Examples](#examples).
+Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic schedules, see [Examples](#examples).
 
 * * *
 

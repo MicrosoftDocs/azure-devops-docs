@@ -72,14 +72,6 @@
     - name: Scheduled triggers
       href: process/scheduled-triggers.md
       displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
-    - name: Scheduled triggers
-      href: process/scheduled-triggers-2.md
-      displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
-    - name: Scheduled triggers (classic)
-      href: process/scheduled-triggers-classic.md
-      displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
-
-
     - name: Pipeline completion triggers
       href: process/pipeline-triggers.md
       displayName: build completion, completion trigger, pipeline resource
