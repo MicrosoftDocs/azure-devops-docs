@@ -303,8 +303,8 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 ---
 :::row:::
-   :::column span="1.5":::
-      <br/>**Tool** 
+   :::column span="2":::
+      **Tool** 
    :::column-end:::
    :::column span="2":::
       **Filter settings**
@@ -326,7 +326,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       [**Work items**](../work-items/view-add-work-items.md) 
    :::column-end:::
    :::column span="2":::
@@ -350,7 +350,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       [**Boards**](../boards/kanban-overview.md)   
    :::column-end:::
    :::column span="2":::
@@ -373,7 +373,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
    :::column span="2":::
@@ -398,7 +398,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="2":::
@@ -421,7 +421,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Sprints**, **Taskboards**](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="2":::
@@ -445,7 +445,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Query Results**](../queries/view-run-query.md)
    :::column-end:::
    :::column span="2":::
@@ -455,7 +455,7 @@ In addition to the standard filter functions summarized in the previous table, t
       ✔️   
    :::column-end:::
    :::column span="1":::
-      ✔️ (Note 3)  
+      ✔️ (Note 2)  
    :::column-end:::
    :::column span="1":::
          
@@ -468,7 +468,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Plans (Preview)**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
@@ -491,27 +491,30 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker-end 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
+          
+   :::column-end:::
+   :::column span="1":::
         
    :::column-end:::
    :::column span="1":::
       ✔️ (Note 6)  
    :::column-end:::
    :::column span="1":::
-        
+            
    :::column-end:::
    :::column span="1":::
-        
+            
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end  
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/work-item-search.md)
    :::column-end:::
    :::column span="2":::
@@ -537,21 +540,21 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 
 **Notes**
-1.   The Work items page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). 
+1. The Work items page is subject to filters based on the [view selected](../work-items/view-add-work-items.md#view-work-items). Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). 
 2. Grouping is supported through portfolio backlogs and boards, parent-child links, and tree hierarchy. 
 3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Grouping is part of Delivery Plans settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
+6. Delivery Plans define the grouping in Settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
 7. Semantic search supports sorting search results by the following fields&mdash;Assigned To, Changed Date, Created Date, ID, State, Tags, Title, and Work Item Type&mdash;and Relevance. 
 
-To learn more, see the following articles: 
+To learn more about these additional functions, see the following articles: 
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 - [Display rollup progress or totals](display-rollup.md) 
-- [Rollup of work and other fields]() 
-- 
--  
-rollup 
+- [Rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md) 
+- [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
+ 
+ 
 And something about multi team backlogs
 Parented and UnParented
 
