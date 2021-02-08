@@ -17,7 +17,7 @@ This article highlights how to manage and secure profiles for your app.
 You'll need to manage signing certificates if you're developing an app for Android or iOS. For iOS, you'll use [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). 
 
 > [!NOTE]  
-> In Microsoft Team Foundation Server (TFS) 2018 and previous versions,
+> For Microsoft Team Foundation Server (TFS) 2018 and previous versions.
 > When building on macOS, you should either set up the [agent](../../agents/agents.md) as a launchd service (`./svc.sh install`) or run it as an interactive process (`./run.sh`).
 
 
