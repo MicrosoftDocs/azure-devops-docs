@@ -57,7 +57,7 @@ Filter functions are available from all Azure Boards tools: Work items, Boards, 
 
 The following table indicates the supported options based on the tool indicated with a ✔️ or are listed. 
 
-Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog..md). Other tools have predefined filters based on the view, query filter clauses, or settings you select. 
+Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). Other tools have predefined filters based on the view, query filter clauses, or settings you select. 
 
 ::: moniker-end 
 
@@ -96,7 +96,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
-      [**Work items**](..work-items/view-add-work-items.md) 
+      [**Work items**](../work-items/view-add-work-items.md) 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -142,7 +142,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-      [**Backlogs**](backlog-overview.md) 
+      [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -320,7 +320,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
-      [**Work items**](..work-items/view-add-work-items.md) 
+      [**Work items**](../work-items/view-add-work-items.md) 
    :::column-end:::
    :::column span="1":::
       Completed Work Items
@@ -360,7 +360,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-      [**Backlogs**](backlog-overview.md) 
+      [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
    :::column span="1":::
       In Progress items
