@@ -31,9 +31,9 @@ At first, Fabrikam has no upstream sources, and users connected to Fabrikam can 
 
 :::image type="content" source="media/upstream-source-graph1.svg" alt-text="3 feeds with no upstream sources":::
 
-Next, consider what happens if Contoso adds an upstream source to AdventureWorks. Then, a user connected to Contoso can install any version of Gizmos, any version of Gadgets, or any version of Things. If Gadgets@2.0.0 is installed, that package-version is *saved* into Contoso (with a link back to AdventureWorks).
+Next, consider what happens if Contoso adds AdventureWorks as an upstream source. Then, a user connected to Contoso can install any version of Gizmos, any version of Gadgets, or any version of Things. If Gadgets@2.0.0 is installed, that package-version is saved into Contoso (with a link back to AdventureWorks).
 
-![Contoso adds an upstream to AdventureWorks](media/upstream-source-graph2.svg)
+:::image type="content" source="media/upstream-source-graph2.svg" alt-text="Contoso adds AdventureWorks as an upstream source":::
 
 Now, let's have the Fabrikam feed add an upstream source to the Contoso feed. Once that's done, a user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but only *saved* versions (2.0.0) of Gadgets. 
 
