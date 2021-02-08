@@ -11,9 +11,9 @@ ms.date: 2/6/2018
 # Constructing a complete package graph
 
 > [!NOTE]
-> Check [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
+> Check the [version table](../overview.md#versions-compatibility) to ensure compatibility. 
 
-When you release a package, it's important to ensure that any dependencies of that package are also available in your feed, either by republishing them directly (not recommended) or by consuming them from an [upstream source](upstream-sources.md). Once you consume a package from an upstream source once, a copy of it is always saved in your feed. Even if the upstream source goes down, your copy will remain available both to you and to your downstream consumers.
+When you release a package, it's important to ensure that all the package dependencies are also available. Azure Artifacts recommend using [upstream sources](upstream-sources.md) to publish and consume package dependencies. When a package is consumed from an upstream source for the first time, a copy of that package is saved in the feed, so even if the upstream source goes down, your copy will remain available to you and your customers.
 
 ## How upstream sources construct the set of available packages
 
