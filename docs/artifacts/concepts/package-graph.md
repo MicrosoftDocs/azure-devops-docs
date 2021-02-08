@@ -11,7 +11,7 @@ ms.date: 2/6/2018
 # Constructing a complete package graph
 
 > [!NOTE]
-> Check the [version table](../overview.md#versions-compatibility) to ensure compatibility. 
+> Check your [package type](../overview.md#versions-compatibility) to ensure compatibility with Azure DevOps Services or on-premises. 
 
 When you release a package, it's important to ensure that all the package dependencies are also available. Azure Artifacts recommend using [upstream sources](upstream-sources.md) to publish and consume package dependencies. When a package is consumed from an upstream source for the first time, a copy of that package is saved in the feed, so even if the upstream source goes down, your copy will remain available to you and your customers.
 
