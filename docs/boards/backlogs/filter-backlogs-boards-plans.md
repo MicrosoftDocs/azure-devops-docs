@@ -19,6 +19,7 @@ ms.date: 02/06/2021
 
 When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them. With filtering, you can selectively choose what work items are listed or displayed. 
 
+
 ::: moniker range=">= azure-devops-2020"
 
 Use filters to perform these tasks:  
@@ -41,6 +42,8 @@ Use filters to perform these tasks:
 ::: moniker-end 
 
 
+
+
 ::: moniker range=">= tfs-2017"
 
 ## Supported filter functions 
@@ -52,7 +55,9 @@ Use filters to perform these tasks:
 Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
 
 
-Supported options are indicated with a ✔️ or listed. 
+The following table indicates the supported options based on the tool indicated with a ✔️ or are listed. 
+
+Backlogs and boards are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog..md). Other tools have predefined filters based on the view, query filter clauses, or settings you select. 
 
 ::: moniker-end 
 
@@ -71,7 +76,7 @@ Supported options are indicated with a ✔️ or listed.
 ---
 :::row:::
    :::column span="1.5":::
-      **Page** 
+      **Tool** 
    :::column-end:::
    :::column span="1":::
       **Keywords** or **ID**
@@ -91,7 +96,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
-      **Work items** 
+      [**Work items**](..work-items/view-add-work-items.md) 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -114,7 +119,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-      **Boards** 
+      [**Boards**](../boards/kanban-overview.md)   
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -137,7 +142,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-      **Backlogs** 
+      [**Backlogs**](backlog-overview.md) 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -160,8 +165,8 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-     **Sprints** (Backlogs  
-     & Taskboards)
+     [**Sprints** (Backlogs  
+     & Taskboards)](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -184,7 +189,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1.5":::
-     **Queries**
+     [**Query Results**](../queries/view-run-query.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -206,7 +211,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
-     **Plans (Preview)**
+     [**Plans (Preview)**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -230,7 +235,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
-     **Plans**
+     [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -248,12 +253,250 @@ Supported options are indicated with a ✔️ or listed.
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end  
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1.5":::
+     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Projects
+      - Area Paths
+      - Assigned To  
+      - Work Item Types
+      - States 
+   :::column-end:::
+   :::column span="1.5":::
+        
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end::
+---
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2015"
 
 You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
 
+::: moniker-end 
+
+::: moniker range=">= tfs-2017"
+
+### Additional filter, sort, group, and reorder functions 
+
+In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, reorder, and group functions. Some functions, such as reorder, don't work when the filter function is enabled.
+
+::: moniker-end 
+
+
+<br/>
+
+::: moniker range=">= tfs-2017"
+---
+:::row:::
+   :::column span="1.5":::
+      **Tool** 
+   :::column-end:::
+   :::column span="1":::
+      **Filter settings**
+   :::column-end:::
+   :::column span="2":::
+      **Sort**
+   :::column-end:::
+   :::column span="1.5":::
+      **Reorder**
+   :::column-end:::
+   :::column span="1":::  
+      **Group**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1.5":::
+      [**Work items**](..work-items/view-add-work-items.md) 
+   :::column-end:::
+   :::column span="1":::
+      Completed Work Items
+   :::column-end:::
+   :::column span="2":::
+      ✔️   
+   :::column-end:::
+   :::column span="1.5":::
+          
+   :::column-end:::
+   :::column span="1":::
+          
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1.5":::
+      [**Boards**](../boards/kanban-overview.md)   
+   :::column-end:::
+   :::column span="1":::
+      Note 1  
+   :::column-end:::
+   :::column span="2":::
+          
+   :::column-end:::
+   :::column span="1.5":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+          
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1.5":::
+      [**Backlogs**](backlog-overview.md) 
+   :::column-end:::
+   :::column span="1":::
+      In Progress items
+      Completed Child items  
+   :::column-end:::
+   :::column span="2":::
+          
+   :::column-end:::
+   :::column span="1.5":::
+      Note 2 (No reorder when filter on)  
+   :::column-end:::
+   :::column span="1":::
+      Note 3 (Group is via hiearchy)  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1.5":::
+     [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+          
+   :::column-end:::
+   :::column span="1.5":::
+      Note 2 (No reorder when filter on)  
+   :::column-end:::
+   :::column span="1":::
+         
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1.5":::
+     [**Sprints**, **Taskboards**)](../sprints/scrum-overview.md)  
+   :::column-end:::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1.5":::
+      ✔️    
+   :::column-end:::
+   :::column span="1":::
+      Group by    
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1.5":::
+     [**Query Results**](../queries/view-run-query.md)
+   :::column-end:::
+   :::column span="1":::
+           
+   :::column-end:::
+   :::column span="2":::
+      ✔️   
+   :::column-end:::
+   :::column span="1.5":::
+        
+   :::column-end:::
+   :::column span="1":::
+      Note 3 (Group is via hiearchy)  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1.5":::
+     [**Plans (Preview)**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="1":::
+          
+   :::column-end:::
+   :::column span="2":::
+        
+   :::column-end:::
+   :::column span="1.5":::
+          
+   :::column-end:::
+   :::column span="1":::
+      Note 4 (Group is via Settings)  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1.5":::
+     [**Plans**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="1":::
+        
+   :::column-end:::
+   :::column span="2":::
+        
+   :::column-end:::
+   :::column span="1.5":::
+        
+   :::column-end:::
+   :::column span="1":::
+      Note 4 (Group is via Settings)   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1.5":::
+     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+   :::column-end:::
+   :::column span="1":::
+           
+   :::column-end:::
+   :::column span="2":::
+      ✔️   
+   :::column-end:::
+   :::column span="1.5":::
+        
+   :::column-end:::
+   :::column span="1":::
+           
+   :::column-end:::
+:::row-end::
+---
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
@@ -296,6 +539,9 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 ::: moniker-end 
 
 
+## Prerequisites
+
+All project members can exercise filter functions. All filter functions are set only for the current user until they clear them. 
 
 
 
@@ -328,6 +574,7 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 
 ::: moniker-end
 
+When filtering is on, backlog and query result hierarchies are flattened. 
 
 To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
 

@@ -160,7 +160,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 
 ## Filter the list of queries
 
-Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
+Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
