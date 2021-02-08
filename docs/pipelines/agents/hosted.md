@@ -312,6 +312,10 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
 <a name="mac-pick-tools"></a>
 
+### I'm getting a SAS IP authorization error from the Azure Storage accounts, since the API requests are sent from the MS Hosted agents using the private IP 
+
+In order to avoid the SAS IP auth failures, you can use you either Self-Hosted Agents or BYOS VMs. If you think having self-Hosted agent is a cost issue, then you can use the [AZ command](https://docs.microsoft.com/powershell/module/az.storage/update-azstorageaccountnetworkruleset?view=azps-5.4.0&viewFallbackFrom=azps-5.2.0) to enable all network right before the Storage activity and then switch back to the normal configuration from the pipeline.
+
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
 #### Xamarin
