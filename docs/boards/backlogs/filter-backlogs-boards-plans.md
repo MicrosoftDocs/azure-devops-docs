@@ -76,19 +76,19 @@ Supported options are indicated with a ✔️ or listed.
 ---
 :::row:::
    :::column span="1.5":::
-      **Tool** 
+      <br/>**Tool** 
    :::column-end:::
    :::column span="1":::
-      **Keywords** or **ID**
+      **Keywords**<br/>or **ID**
    :::column-end:::
    :::column span="2":::
-      **Fields**
+      <br/>**Fields**
    :::column-end:::
    :::column span="1.5":::
       **Parent Work Item**
    :::column-end:::
    :::column span="1":::
-      **Tags**
+      <br/>**Tags**
    :::column-end:::
 :::row-end:::
 ---
@@ -304,7 +304,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ---
 :::row:::
    :::column span="1.5":::
-      **Tool** 
+      <br/>**Tool** 
    :::column-end:::
    :::column span="2":::
       **Filter settings**
@@ -367,17 +367,18 @@ In addition to the standard filter functions summarized in the previous table, t
       [**Backlogs**](backlogs-overview.md) 
    :::column-end:::
    :::column span="2":::
-      In Progress items
-      Completed Child items  
+      In Progress items  
+      Completed Child items 
+      Note 1   
    :::column-end:::
    :::column span="1":::
           
    :::column-end:::
    :::column span="1":::
-      Note 2 (No reorder when filter on)  
+      ✔️, Note 2   
    :::column-end:::
    :::column span="1":::
-      Note 3 (Group is via hiearchy)  
+      Note 3  
    :::column-end:::
 :::row-end:::
 ---
@@ -388,13 +389,13 @@ In addition to the standard filter functions summarized in the previous table, t
      [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
    :::column-end:::
    :::column span="2":::
-      ✔️   
+      Note 1           
    :::column-end:::
    :::column span="1":::
-          
+       
    :::column-end:::
    :::column span="1":::
-      Note 2 (No reorder when filter on)  
+      ✔️, Note 2  
    :::column-end:::
    :::column span="1":::
          
@@ -437,7 +438,7 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-      Note 3 (Group is via hiearchy)  
+      ✔️, Note 3   
    :::column-end:::
 :::row-end:::
 ---
@@ -457,7 +458,7 @@ In addition to the standard filter functions summarized in the previous table, t
           
    :::column-end:::
    :::column span="1":::
-      Note 4 (Group is via Settings)  
+      ✔️, Note 4  
    :::column-end:::
 :::row-end:::
 ---
@@ -477,7 +478,7 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-      Note 4  
+      ✔️, Note 4 
    :::column-end:::
 :::row-end:::
 ---
@@ -491,13 +492,13 @@ In addition to the standard filter functions summarized in the previous table, t
         
    :::column-end:::
    :::column span="1":::
-        
+      ✔️   
    :::column-end:::
    :::column span="1":::
         
    :::column-end:::
    :::column span="1":::
-      Note 4  
+         
    :::column-end:::
 :::row-end:::
 ---
@@ -507,7 +508,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017"
 
 **Notes**
-1.   First note
+1.   Boards and backlogs are subject to filters defined for the team as described in [Set up your Backlogs and Boards](set-up-your-backlog.md). 
 2.   Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 3. Grouping is supported through portfolio backlogs, parent-child links, and tree hierarchy. 
 4. Grouping is part of Plans settings based on team selections. 
