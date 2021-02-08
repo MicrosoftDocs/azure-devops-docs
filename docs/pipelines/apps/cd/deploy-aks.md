@@ -218,3 +218,9 @@ You're now ready to create a release, which means to start the process of runnin
 ## Next steps
 
 * [Set up multi-stage release](../../release/define-multistage-release-process.md)
+
+## FAQs
+
+1. I'm unable to deploy the artifacts to AKS cluster after enabling the Private Links for ACR.
+
+In such cases, create new Virtual Machine Scale sets and add a load balancer IP which is public. Ensure that this public IP is mentioned in the selected networks of the Azure Container Registry. Add the Azure Container Registry and public IP details in ***/etc/hosts*** file of the Virtual Machine Scale sets. 
