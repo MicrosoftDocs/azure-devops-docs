@@ -13,9 +13,10 @@ monikerRange: 'tfs-2017'
 
 **TFS 2017.2**
 
-You'll need to manage signing certificates if you're developing an app for Android or iOS. For iOS, you'll use [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article highlights how to manage and secure profiles for your app.
+This article highlights how to manage and secure profiles for your app.
+You'll need to manage signing certificates if you're developing an app for Android or iOS. For iOS, you'll use [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). 
 
-> **Tip**: When building on macOS, you should either set up the [agent](../../agents/agents.md) as a launchd service (./svc.sh install) or run it as an interactive process (./run.sh).
+> **Tip**: When building on macOS, you should either set up the [agent](../../agents/agents.md) as a launchd service (`./svc.sh install`) or run it as an interactive process (`./run.sh`).
 
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
@@ -30,14 +31,13 @@ This article covers:
 <a name="iosfile"></a>
 ## Using a certificate and mobile provisioning file in your Xcode build
 
-1. Export your signing certificate to a .p12 file using either Keychain Access or Xcode.
-   1. To export using Xcode, first go to Xcode &gt; Preferences... &gt; Accounts and select your Apple Developer account.
-   2. Select "View Details..." and then select the signing identity you wish to export, and select "Export...".
-   3. Enter a filename and password. You'll need the password again.
+You can use the Keychain Access to generate a certificate. To learn more about this option,  [see iOS Signing](http://docs.phonegap.com/phonegap-build/signing/ios/).
 
-      ![Xcode Export Cert](media/secure-certs/secure-certs-1.png)
-
-      Another way to get a certificate is to use the "Keychain Access" app on macOS or to generate a signing certificate on Windows. To learn more about this option,  [see iOS Signing](http://docs.phonegap.com/phonegap-build/signing/ios/).
+1. Export your signing certificate to a .p12 file using Keychain Access or Xcode. A .p12 file contains the certificates Apple needs to build and publish apps.
+   1. Open **Keychain Access** on your computer. 
+   1. In the **Keychain Access** menu, open **Certification Assistant** > **Request a Certificate From a Certificate Authority**. 
+   1. Enter your email address and name. These values should match what you used for your Apple Developer account. 
+   1. Save to disk. You can leave the **CA Email Address** field empty. 
 
 2. Next, get a copy of the provisioning profile you want to use.
 
