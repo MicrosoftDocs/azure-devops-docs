@@ -112,7 +112,7 @@ The following code snippets are written for a Windows machine using the PowerShe
 1. Select **Review + Create**.
 1. Review your web app. Select **Create**.
 1. Select **Go to resource**.
-1. Select **Get publish profile**. Your publish profile downloads and is named `<yourappname>.PublishSettings`. The file contains an XML with the target values of your web app.
+1. Make note of your app name. You will add the name to the yml document that defines your pipeline in your repository.
 
 ## Create an Azure DevOps instance
 
@@ -127,7 +127,7 @@ Create a service connection. You will need the values from your SPN and the name
 1. Select **Azure Resource Manager** and select **Next**.
 2. Select **Service principal (manual)**.
 
-    ![Create a service connection for Azure Stack Hub](.\media\azure-stack\create-service-connection-for-azure-stack-hub.png)
+    ![Create a service connection for Azure Stack Hub](\media\azure-stack\create-service-connection-for-azure-stack-hub.png)
 
 1. Select **Azure Stack** for **Environment**.
 1. Add the value for `managementEndpointUrl` for the **Server URL**.
@@ -139,7 +139,7 @@ Create a service connection. You will need the values from your SPN and the name
 1. Add `clientSecret` for the **Service principal key**.
 1. Add `tenantId` for **Tenant ID**.
 1. Select **Verify**.
-1. Add the name of the connection and make a note of it. You will add the name to the yaml document that defines your pipeline in your repository.
+1. Add the name of the connection and make a note of it. You will add the name of the connection to the yaml document that defines your pipeline in your repository.
 
 ## Create your repository and add pipeline
 
