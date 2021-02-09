@@ -127,7 +127,7 @@ Create a service connection. You will need the values from your SPN and the name
 1. Select **Azure Resource Manager** and select **Next**.
 2. Select **Service principal (manual)**.
 
-    ![Create a service connection for Azure Stack Hub](\media\azure-stack\create-service-connection-for-azure-stack-hub.png)
+    ![Create a service connection for Azure Stack Hub](.\media\azure-stack\create-service-connection-for-azure-stack-hub.png)
 
 1. Select **Azure Stack** for **Environment**.
 1. Add the value for `managementEndpointUrl` for the **Server URL**.
