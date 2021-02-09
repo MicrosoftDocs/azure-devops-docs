@@ -17,11 +17,11 @@ ms.technology: devops-cicd-tasks
     #databaseName: # Optional
     sqlUsername: 
     sqlPassword: 
-    #taskNameSelector: 'SqlTaskFile' # Optional. Options: sqlTaskFile, inlineSqlTask
+    #taskNameSelector: 'SqlTaskFile' # Optional. Options: SqlTaskFile, InlineSqlTask
     #sqlFile: # Required when taskNameSelector == SqlTaskFile
     #sqlInline: # Required when taskNameSelector == InlineSqlTask
     #sqlAdditionalArguments: # Optional
-    #ipDetectionMethod: 'AutoDetect' # Options: autoDetect, iPAddressRange
+    #ipDetectionMethod: 'AutoDetect' # Options: AutoDetect, IPAddressRange
     #startIpAddress: # Required when ipDetectionMethod == IPAddressRange
     #endIpAddress: # Required when ipDetectionMethod == IPAddressRange
     #deleteFirewallRule: true # Optional
