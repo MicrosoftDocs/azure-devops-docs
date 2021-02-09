@@ -149,7 +149,7 @@ Supported options are indicated with a ✔️ or listed.
       - Area Path  
    :::column-end:::
    :::column span="1.5":::
-          
+      Note 1
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -176,7 +176,7 @@ Supported options are indicated with a ✔️ or listed.
       ✔️    
    :::column-end:::
    :::column span="1":::
-      ✔️   
+      ✔️ (Note 2)
    :::column-end:::
 :::row-end:::
 ---
@@ -195,7 +195,7 @@ Supported options are indicated with a ✔️ or listed.
       - States
    :::column-end:::
    :::column span="1.5":::
-        
+      Note 1
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -274,7 +274,14 @@ Supported options are indicated with a ✔️ or listed.
 ---
 ::: moniker-end   
 
+::: moniker range=">= azure-devops-2020"
 
+**Notes**
+
+1. While the **Parent Work Item** isn't a filter function for Backlogs or Query Results, you can add the **Parent** field as a column and then perform a keyword/phrase search on the Parent title to effectively filter on parent work items. The Parent field is supported for Azure DevOps Server 2020 and later versions. See also the [Parent field and Parent Work Item](#parent-filter) section later in this article. 
+2. The **Parent Work Item** filter is supported for Sprint Backlogs and Taskboards for Azure DevOps Server 2020 and later versions. 
+
+::: moniker-end 
 
 ::: moniker range="<= tfs-2015"
 
@@ -284,18 +291,12 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2020"
 
 ### Additional filter, sort, group, reorder, and rollup functions 
 
-In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled. 
+In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
-::: moniker-end 
-
-
-<br/>
-
-::: moniker range=">= tfs-2017"
 ---
 :::row:::
    :::column span="2":::
@@ -318,8 +319,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
       [**Work items**](../work-items/view-add-work-items.md) 
@@ -342,8 +341,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
       [**Boards**](../boards/kanban-overview.md)   
@@ -365,8 +362,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
       [**Backlogs**](backlogs-overview.md) 
@@ -390,8 +385,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
      [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
@@ -413,8 +406,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
      [**Sprints**, **Taskboards**](../sprints/scrum-overview.md)  
@@ -437,8 +428,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
      [**Query Results**](../queries/view-run-query.md)
@@ -460,8 +449,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
      [**Plans (Preview)**](../plans/review-team-plans.md)
@@ -483,8 +470,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end 
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
      [**Plans**](../plans/review-team-plans.md)
@@ -506,8 +491,6 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end  
-::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/work-item-search.md)
@@ -529,6 +512,206 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+
+
+::: moniker-end  
+
+
+
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+
+### Additional filter, sort, group, and reorder functions
+
+In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, and reorder functions. Some functions, such as reorder, don't work when the filter function is enabled. 
+
+::: moniker-end 
+
+
+
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+---
+:::row:::
+   :::column span="2":::
+      **Tool** 
+   :::column-end:::
+   :::column span="2":::
+      **Filter settings**
+   :::column-end:::
+   :::column span="1":::
+      **Sort**
+   :::column-end:::
+   :::column span="1":::  
+      **Group**
+   :::column-end:::
+   :::column span="1":::
+      **Reorder**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range="azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      [**Work items**](../work-items/view-add-work-items.md) 
+   :::column-end:::
+   :::column span="2":::
+      ✔️ (Note 1)  
+      Completed Work Items
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Boards**](../boards/kanban-overview.md)   
+   :::column-end:::
+   :::column span="2":::
+      ✔️ (Note 1)  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+      [**Backlogs**](backlogs-overview.md) 
+   :::column-end:::
+   :::column span="2":::
+      ✔️ (Note 1)  
+      In Progress items  
+      Completed Child items 
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 2)   
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 3)   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Sprints**, **Backlogs** ](../sprints/scrum-overview.md)  
+   :::column-end:::
+   :::column span="2":::
+      ✔️ (Note 1)  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 2)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 3)   
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Sprints**, **Taskboards**](../sprints/scrum-overview.md)  
+   :::column-end:::
+   :::column span="2":::
+      ✔️ (Note 1)  
+      Person  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 4)   
+   :::column-end:::
+   :::column span="1":::
+      ✔️    
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Query Results**](../queries/view-run-query.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 2)  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Plans**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 6)  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 7)  
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+:::row-end:::
+---
 ::: moniker-end  
 
 
@@ -541,12 +724,21 @@ In addition to the standard filter functions summarized in the previous table, t
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
 6. Delivery Plans define the grouping in Settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
-7. Semantic search supports sorting search results by the following fields&mdash;Assigned To, Changed Date, Created Date, ID, State, Tags, Title, and Work Item Type&mdash;and Relevance. 
+7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
+::: moniker-end  
+
+::: moniker range=">= azure-devops-2020"
 To learn more about these additional functions, see the following articles: 
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 - [Display rollup progress or totals](display-rollup.md) 
-- [Rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md) 
+- [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
+ 
+::: moniker-end 
+
+::: moniker range=">= tfs-2017 < azure-devops-2020"
+To learn more about these additional functions, see the following articles: 
+- [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
 ::: moniker-end 
@@ -554,7 +746,16 @@ To learn more about these additional functions, see the following articles:
 
 ::: moniker range=">= tfs-2017"
 
-### Parent field and Parent Work Item filter
+<a id="parent-filter" /> 
+
+### Parent Work Item filter and Parent field
+
+::: moniker range=">= tfs-2017"
+
+The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
+
+::: moniker-end 
+
 
 The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
 
@@ -565,11 +766,7 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017"
 
-The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
-
-::: moniker-end 
 
 
 ## Prerequisites
