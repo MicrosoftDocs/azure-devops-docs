@@ -52,7 +52,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
-For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.md). 
+For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.yml). 
 
 ## Prerequisites 
  
@@ -204,5 +204,6 @@ To learn more about team rooms, see [Collaborate in a team room](/previous-versi
 
 ## Related articles
 
+- [Work across projects FAQs](../work-across-projects-faqs.yml)
 - [Manage or enable features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  

@@ -7,7 +7,7 @@ ms.custom: quarterly-update
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 01/14/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -100,7 +100,7 @@ The **Statistics** section shows the most active notification subscriptions and 
 
 Manage global-level **Settings**, such as delivery preferences.   
 
-The **Settings** section allows organization-level notification settings to be managed by any member of the **Project Collection Administrators** group. All teams and groups inherit the _Default delivery option_ setting, which is why it isn't explicitly set at the team or group level.
+The **Settings** section allows organization-level management by any member of the **Project Collection Administrators** group. All teams and groups inherit the _Default delivery option_ setting. This setting, _Default delivery option_,  isn't explicitly set at the team or group level.
 
    :::image type="content" source="media/view-organization-notification-settings.png" alt-text="Screenshot of organization-level notifications page: Settings.":::                                                                                                                                       
 
@@ -111,7 +111,7 @@ For more information, see [Manage team, group, and global notifications](manage-
 There are no UI permissions associated with managing email notifications or alerts. Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
-- Members of the **Project Collection Administrators** group, or users who have **Edit collection-level information** permission can set alerts in that collection for others or for a team.
+- Members of the **Project Collection Administrators** group, or users who have **Edit collection-level information** permission, can set alerts for others or for a team, within that collection.
 - Members of the **Project Administrators** group, or users who have **Edit project-level information** permissions can set alerts in that project for others or for a team.
 
 ## Preferred email address
@@ -148,8 +148,7 @@ You can also use a third-party service like Zapier to send notifications to hund
 ## Related articles
 
 * [Default and supported notifications](oob-built-in-notifications.md)
-* [Supported event types](oob-supported-event-types.md)
+* [Query with group clauses](../boards/queries/using-queries.md#group-clauses)
 * [FAQs](faq-notifications.md)
 * [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 * [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
-* [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)

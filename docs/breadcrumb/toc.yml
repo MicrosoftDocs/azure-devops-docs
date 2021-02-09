@@ -105,10 +105,13 @@
     - name: witadmin 
       tocHref: /azure/devops/reference/witadmin/ 
       topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
-  - name: Wikis, Public Projects, work across projects
+  - name: Cross-service, Wikis, Public Projects
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
+    - name: Cross-service
+      tocHref: /azure/devops/cross-service/
+      topicHref: /azure/devops/cross-service/end-to-end-traceability
     - name: Wikis
       tocHref: /azure/devops/project/wiki/
       topicHref: /azure/devops/project/wiki/index

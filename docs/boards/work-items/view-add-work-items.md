@@ -303,12 +303,10 @@ Use the following three controls to manage your views in the web portal.
 > | ![Filter](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
-## Q & A 
-
-[!INCLUDE [temp](../includes/faq-view-all-work-items.md)] 
 
 ## Related articles
 
+- [Azure Boards FAQs](../faqs.yml) 
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)
 - [Manage or enable features](../../project/navigation/preview-features.md)

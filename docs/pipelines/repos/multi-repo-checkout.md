@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 12/18/2020
+ms.date: 01/13/2021
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -74,9 +74,12 @@ The following combinations of `checkout` steps are supported.
 
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
-* Bitbucket cloud repositories
-* GitHub and GitHub Enterprise Server repositories
-* Azure Repos Git repositories in a different organization than your pipeline
+| Repository type | Service connection |
+|-----------------|--------------------|
+| Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) | 
+| GitHub          | [GitHub](../library/service-endpoints.md#sep-github) |
+| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#sep-githubent) |
+| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#sep-tfsts) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 

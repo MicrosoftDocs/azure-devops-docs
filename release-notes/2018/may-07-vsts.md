@@ -130,11 +130,11 @@ The **Helm Tool Installer** task acquires a specific version of Helm from the in
 
 ### Follow packages
 
-[Last Update](/azure/devops/release-notes/2018/apr-16-vsts#subscribe-to-package-update-notifications) we released a new package notification type, which allows you to get updates about packages and feeds you care about by setting up a new subscription in the **Notifications** settings. Now, we’ve made it even easier to set up notifications with a new **Follow** button directly on every package. The **Follow** button is also compatible with release views. If you follow a package while looking at it through a view, you’ll only get updates for new versions that are promoted to that view.
+[Last Update](./apr-16-vsts.md#subscribe-to-package-update-notifications) we released a new package notification type, which allows you to get updates about packages and feeds you care about by setting up a new subscription in the **Notifications** settings. Now, we’ve made it even easier to set up notifications with a new **Follow** button directly on every package. The **Follow** button is also compatible with release views. If you follow a package while looking at it through a view, you’ll only get updates for new versions that are promoted to that view.
 
 ### Control who can pull packages from upstream sources
 
-With the new upstream sources feature that was released [last update](/azure/devops/release-notes/2018/apr-16-vsts#use-upstream-nuget-packages-from-elsewhere-in-vsts), you’re now able to use NuGet and npm packages from other teams’ feeds through your feed. As we listened to your feedback, we heard that the current permissions for upstream sources, which require you to be a Contributor to save packages from an upstream, weren’t granular enough in some situations.
+With the new upstream sources feature that was released [last update](./apr-16-vsts.md#use-upstream-nuget-packages-from-elsewhere-in-vsts), you’re now able to use NuGet and npm packages from other teams’ feeds through your feed. As we listened to your feedback, we heard that the current permissions for upstream sources, which require you to be a Contributor to save packages from an upstream, weren’t granular enough in some situations.
 
 This Update we’ve introduced a new role in Package Management called **Collaborator**. A Collaborator can save packages from an upstream source but cannot publish packages directly into the feed (for example, by using `nuget push`). This enables you to restrict package publish to those you trust or to the build system, while allowing your engineers to use new packages from your upstream sources.
 

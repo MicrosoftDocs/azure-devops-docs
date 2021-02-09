@@ -582,7 +582,13 @@ The path to the image file can be a relative path or the absolute path in Git or
 - Relative path: `![Image alt text](./image.png)`  
 - Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`  
 - Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`  
-- Resize image: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+- Resize image: `IMAGE_URL =WIDTHxHEIGHT`
+  > [!NOTE]
+  > Be sure to include a space before the equal sign.
+  >
+
+  - Example: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =500x250)`
+  - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 
 ::: moniker-end

@@ -91,6 +91,9 @@ For more information, see [Install an extension](../../marketplace/install-exten
 3. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list. Then, enter the criteria value.
+    
+   > [!NOTE]
+   > As of the [July 2019 update](/azure/devops/release-notes/2019/repos/sprint-155-update#improved-code-search-filtering-options), the code search filters have been reduced from 39 to 19 through deprecation and merging.
 
    ![Screenshot of search from title bar.](media/code-search-get-started/title-bar-search-functions-azure-devops.png)    
 
@@ -108,6 +111,8 @@ For more information, see [Install an extension](../../marketplace/install-exten
    * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
 
    * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+    
+   * You can use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term.
 
    * See also [full details of the search syntax](advanced-code-search-syntax.md#syntaxdetails). 
 

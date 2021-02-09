@@ -1,6 +1,6 @@
 ---
 title: Upstream sources 
-description: Upstream sources manage packages from public sources in an Azure DevOps Services or Team Foundation Server feed
+description: Use packages from internal and external sources with upstream sources
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -129,9 +129,6 @@ If you must push a package-version that already exists on one of your upstream s
 
 When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This delay depends on job timing and package data propagation.
 
-> [!NOTE]
-> To force a refresh on the cached version of your package, use the [NuGet - download package](/rest/api/azure/devops/artifactspackagetypes/nuget/download%20package) HTTP request with a `HEAD` call instead of `GET`.
-
 <a name="upstream-health-status"></a>
 
 ## Upstream sources health status
@@ -149,9 +146,10 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. For outages lasting less than 12 hours, you can continue to normally use your feeds thanks to the [Cached metadata](#upstream-metadata-cache).
 
-Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can chose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
+Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can choose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
 
-## What's next?
+## Related articles
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Manage feed permissions](..//feeds/feed-permissions.md)

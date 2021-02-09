@@ -75,7 +75,7 @@ However, these objects aren't connected to each other through link types. For de
 
 ## Delete a test case
 
-1. To delete a test case, open it from the web portal and choose the** Permanently delete** option from the actions menu. (Bulk deletion is not supported from a query results page.)     
+1. To delete a test case, open it from the web portal and choose the **Permanently delete** option from the actions menu. (Bulk deletion is not supported from a query results page.)     
  
 	![Delete a test case and associated test artifacts from the web form](media/move-change-delete/delete-test-artifacts-form.png)  
 

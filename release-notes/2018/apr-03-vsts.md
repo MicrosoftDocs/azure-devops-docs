@@ -183,7 +183,7 @@ If you published the wrong repository, simply unpublish the wiki, which leaves t
 
 You can also change the ordering of the pages from the repository or even transform a folder to look like a wiki page.
 
-See the [product documentation blog post](https://go.microsoft.com/fwlink/?linkid=866310) for more information. This feature was prioritized based on a suggestion.
+See the [product documentation blog post](/azure/devops/project/wiki/publish-repo-to-wiki) for more information. This feature was prioritized based on a suggestion.
 
 ### Retain special characters in Wiki page titles
 
@@ -211,7 +211,7 @@ Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wiki
 
 Analytics Views work with our VSTS Power BI Data Connector. Together they give an easy way to get your VSTS data into Power BI so you can start creating custom reports.
 
-When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](https://go.microsoft.com/fwlink/?linkid=870159) that you can start using in Power BI. Now you can edit your default views and [create new views](https://go.microsoft.com/fwlink/?linkid=870160) to fine-tune the records, fields, and history returned to Power BI.
+When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](/azure/devops/report/powerbi/data-connector-connect) that you can start using in Power BI. Now you can edit your default views and [create new views](/azure/devops/report/powerbi/overview) to fine-tune the records, fields, and history returned to Power BI.
 
 ## Next steps and Feedback
 

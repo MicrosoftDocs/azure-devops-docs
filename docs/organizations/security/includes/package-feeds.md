@@ -36,7 +36,7 @@ Feeds have three permission roles: Readers, Contributors, and Owners. Owners can
 | Unlist/deprecate packages                     |          | ✔️ | ✔️ |
 | Delete/unpublish package                      |          |          | ✔️ |
 | Edit feed permissions                         |          |          | ✔️ | 
-| [Rename and delete feed](/azure/devops/artifacts/index)        |          |          | ✔️ |
+| [Rename and delete feed](../../../artifacts/index.yml)        |          |          | ✔️ |
 
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.

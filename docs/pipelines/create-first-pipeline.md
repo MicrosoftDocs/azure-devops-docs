@@ -1209,11 +1209,11 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[What is Continuous Integration?](/azure/devops/what-is-continuous-integration)
+[What is Continuous Integration?](/azure/devops/learn/what-is-continuous-integration)
 
-[What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)
+[What is Continuous Delivery?](/azure/devops/learn/what-is-continuous-delivery)
 
-[What is DevOps?](/azure/devops/what-is-devops)
+[What is DevOps?](https://azure.microsoft.com/overview/what-is-devops/)
 
 <a name="version-control"></a>
 

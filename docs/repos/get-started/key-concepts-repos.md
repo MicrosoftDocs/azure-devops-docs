@@ -50,7 +50,7 @@ Learn more: [commits](../git/commits.md).
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository and then pushed to a new, empty repository. After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. When you're ready to share those changes, it's easy to use pull requests to push the changes back to the original repository.
 
-Learn more: [forks](../git/forks-overview.md)
+Learn more: [forks](../git/forks.md)
 
 ## Git
 
@@ -92,7 +92,7 @@ Create pull requests to review and merge code in a [Git project](../../organizat
 Pull requests let your team review code and give feedback on changes before
 you merge it into the main branch. Pull requests can come from either
 topic branches within the same repository or a branch in a
-[fork](../git/forks-overview.md) of the original repository.
+[fork](../git/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
 Learn more: [pull requests](../git/pull-requests-overview.md).

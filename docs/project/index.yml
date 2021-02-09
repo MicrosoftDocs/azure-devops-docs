@@ -72,7 +72,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Work across projects FAQs 
-            url: ./work-across-projects-faqs.md
+            url: ./work-across-projects-faqs.yml
   - title: Search
     linkLists:
       - linkListType: overview

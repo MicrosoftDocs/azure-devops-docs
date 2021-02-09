@@ -3,7 +3,7 @@ title: Trigger a pipeline run from a GitHub action
 description: Start a pipeline run from within a GitHub action
 ms.author: jukullam
 ms.custom: github-actions-azure
-ms.date: 09/11/2020
+ms.date: 01/25/2021
 monikerRange: azure-devops
 author: juliakm
 ms.topic: quickstart
@@ -18,7 +18,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 ## Prerequisites
 
 - A working Azure pipeline. [Create your first pipeline](../create-first-pipeline.md). 
-- A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo). 
+- A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Create a GitHub secret

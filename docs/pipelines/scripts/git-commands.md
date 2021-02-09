@@ -52,7 +52,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
     :::image type="content" source="media/modify-repo-permissions.png" alt-text="Choose Permissions to edit your repository permissions. ":::
 
-1. Search for **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
       * **Create branch:**  Allow
       * **Contribute:**  Allow

@@ -193,12 +193,12 @@ You should get a response like the following example.
 ```
 
 The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs, although there are a few exceptions,
-like [Git blobs](previous-apis/git/blobs.md).
+like [Git blobs](/previous-versions/azure/devops/integrate/previous-apis/git/blobs).
 
 ::: moniker-end
 
-Find the resources you need for [API areas](previous-apis/overview.md), like [work item tracking](previous-apis/wit/overview.md)
-or [Git](previous-apis/git/overview.md).
+Find the resources you need for [API areas](/previous-versions/azure/devops/integrate/previous-apis/overview), like [work item tracking](/previous-versions/azure/devops/integrate/previous-apis/wit/overview)
+or [Git](/previous-versions/azure/devops/integrate/previous-apis/git/overview).
 
 ## Related content
 

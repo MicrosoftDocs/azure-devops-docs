@@ -57,7 +57,7 @@ Services hooks can be found as a new hub in project administration.
 
 ### Extensibility Preview
 
-re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](https://msdn.microsoft.com/library/bb165336.aspx).
+re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](/previous-versions/visualstudio/visual-studio-2015/extensibility/visual-studio-sdk).
 
 Give it a try. We can’t wait to see what you come up with.
 

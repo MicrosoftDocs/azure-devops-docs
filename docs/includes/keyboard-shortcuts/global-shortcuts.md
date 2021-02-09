@@ -20,7 +20,7 @@ You can use the following keyboard shortcuts from the web portal.
       &nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Go to [**Projects and teams**](../../project/navigation/go-to-project-repo.md)  
       <br/>
       **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](../../project/navigation/go-to-project-repo.md)  
-      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines**](../../pipelines/overview.md)  
+      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines**](../../pipelines/get-started/what-is-azure-pipelines.md)  
       **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos**](../../repos/git/index.yml)  
       **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans**](../../test/index.yml)  
       **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](../../organizations/settings/about-settings.md)  
@@ -51,7 +51,7 @@ You can use the following keyboard shortcuts from the web portal.
       **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](../../project/navigation/go-to-project-repo.md)   
       **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](../../boards/get-started/what-is-azure-boards.md)   
       **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos** or **Code**](../../repos/git/index.yml)   
-      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](../../pipelines/overview.md)   
+      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](../../pipelines/get-started/what-is-azure-pipelines.md)   
       **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans** or **Test**](../../test/index.yml)   
       **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](../../organizations/settings/about-settings.md)   
       <br/>

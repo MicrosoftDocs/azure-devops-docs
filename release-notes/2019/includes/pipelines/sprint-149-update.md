@@ -44,7 +44,7 @@ Until now, Slack users have had limited capabilities to manage release deploymen
 > [!div class="mx-imgBorder"]
 > ![Approve Azure Pipelines deployments from Slack.](../../media/149_03.png)
 
-For more detailed on Azure Pipelines and Slack see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/integrations/slack?view=azure-devops).
+For more detailed on Azure Pipelines and Slack see the documentation [here](/azure/devops/pipelines/integrations/slack?view=azure-devops).
 
 ### All source providers included in the new build pipeline wizard
 
@@ -55,7 +55,7 @@ Until now, source providers like GitHub, Azure Repos, and Bitbucket Cloud were s
 
 ### GitHub comments trigger optimizations
 
-We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#comment-triggers). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
+We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](/azure/devops/pipelines/repos/github?view=azure-devops#comment-triggers). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
 
 > [!div class="mx-imgBorder"]
 > ![GitHub comments trigger optimizations.](../../media/149_07.png)

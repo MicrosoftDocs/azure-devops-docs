@@ -19,7 +19,7 @@ This article walks you through how to perform all of the necessary preparation w
 
 
 > [!Note]
-> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
+> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/about-azure-devops-services-tfs.md#visual-studio-team-services-is-now-azure-devops-services)
 > 
 > We recommend that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation, as needed.
 >
