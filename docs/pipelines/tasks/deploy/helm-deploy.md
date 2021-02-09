@@ -282,11 +282,11 @@ In this section you'll learn how to package and sign Helm charts in a pipeline.
 
      ![Private Keys](media/helm-provenance/private-keys.png)
 
-     - To see the list of public keys
+   - To see the list of public keys
 
-       ```cmd
-       gpg --list-keys
-       ```
+     ```cmd
+     gpg --list-keys
+     ```
 
        ![Public Keys](media/helm-provenance/public-keys.png)
 
