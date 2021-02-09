@@ -11913,7 +11913,7 @@
     {
       "source_path": "docs/pipelines/build/helm-provenance.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/java-function.md",
