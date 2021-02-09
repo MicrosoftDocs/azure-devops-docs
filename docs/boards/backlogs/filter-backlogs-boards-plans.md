@@ -65,9 +65,11 @@ Supported options are indicated with a ✔️ or listed.
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017"
+
 <br/>
----
+
+::: moniker range=">= tfs-2017"
+---  
 :::row:::
    :::column span="1.5":::
       <br/>**Tool** 
@@ -838,18 +840,18 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 ### Disabled functions
  
 When filtering is applied, the following functions are disabled or altered. 
-- For backlogs, the add-a-backlog-item panel, stack ranking, and forecasting tools are disabled. 
-- For backlogs set to Show Parents, the tree hierarchy is flattened. 
+- For backlogs, the add-a-backlog-item panel, reordering (stack ranking), and forecasting tools are disabled. 
+- For backlogs set to **Show Parents**, the tree hierarchy is flattened. 
 
 ### Clear or dismiss filtering
 
 To clear and dismiss filtering, choose **Clear and dismiss filtering** :::image type="icon" source="../../media/icons/close-filter.png" border="false":::.
 
-Filters remain in place until you explicitly clear them.  by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
+Filters remain in place until you explicitly clear them.  When you refresh your backlog, board, or other tool, or sign in from another browser, filters remain set to your previous values.
 
-Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
+Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
-::: moniker-end
+
 <a id="text-filter"></a>
 
 ## Apply keyword and ID filters
