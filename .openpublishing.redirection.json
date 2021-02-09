@@ -11907,7 +11907,7 @@
     },
     {
       "source_path": "docs/pipelines/languages/helm.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
+      "redirect_url": "/azure/devops/pipelines/build/helm-provenance",
       "redirect_document_id": true
     },
     {
