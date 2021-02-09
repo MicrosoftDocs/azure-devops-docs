@@ -29,19 +29,19 @@ Assume three feeds, Fabrikam, Contoso, and AdventureWorks. In this example, we'l
 
 At first, Fabrikam has no upstream sources, and users connected to Fabrikam can only install versions 1.0.0 and 2.0.0 of the Widgets package. Likewise, Contoso has no upstream sources, and users connected to Contoso can only install versions 1.0.0 and 3.0.0 of the Gizmos package. Ditto for the AdventureWorks feed, where connected users can only install versions 1.0.0 and 2.0.0 of the Gadgets package or version 1.0.0 of the Things package.
 
-:::image type="content" source="media/upstream-source-graph1.svg" alt-text="three different feeds with no upstream sources":::
+:::image type="content" source="media/upstream-source-graph-1.svg" alt-text="three different feeds with no upstream sources":::
 
 Next, consider what happens if Contoso adds AdventureWorks as an upstream source. A user connected to Contoso can install any version of Gizmos, any version of Gadgets, or any version of Things. If Gadgets@2.0.0 is installed, that package-version is saved to Contoso (with a link back to AdventureWorks).
 
-:::image type="content" source="media/upstream-source-graph2.svg" alt-text="Contoso adds AdventureWorks as an upstream source":::
+:::image type="content" source="media/upstream-source-graph-2.svg" alt-text="Contoso adds AdventureWorks as an upstream source":::
 
 Now, let's have the Fabrikam feed add Contoso as an upstream source. A user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but **only saved** versions (2.0.0) of Gadgets.
 
-:::image type="content" source="media/upstream-source-graph3.svg" alt-text="Fabrikam adds Contoso as an upstream source":::
+:::image type="content" source="media/upstream-source-graph-3.svg" alt-text="Fabrikam adds Contoso as an upstream source":::
 
 The user will not be able to install version 1.0.0 of Gadgets or any version of Things, because those package versions haven't been saved to Contoso by a Contoso user.
 
-:::image type="content" source="media/upstream-source-graph4.svg" alt-text="Fabrikam users unable to install Gadgets 1.0.0 and all versions of Things":::
+:::image type="content" source="media/upstream-source-graph-4.svg" alt-text="Fabrikam users unable to install Gadgets 1.0.0 and all versions of Things":::
 
 ## Related articles 
 
