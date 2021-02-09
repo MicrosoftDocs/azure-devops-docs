@@ -11912,7 +11912,7 @@
     },
     {
       "source_path": "docs/pipelines/build/helm-provenance.md",
-      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy#package-and-sign-helm-charts",
       "redirect_document_id": false
     },
     {
