@@ -1,39 +1,33 @@
 ---
-title: Collaborate more and build faster with packages
+title: Collaborate more and build faster with package componentization
 description: Using Azure Artifacts to facilitate collaboration
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.technology: devops-artifacts
-ms.date: 09/29/2016
+ms.date: 02/09/2021
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ---
 
-# Collaborate more and build faster with packages
+# Collaborate more and build faster with package componentization
 
-**Azure DevOps Services | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-*If you're familiar with componentization and composition, you can learn more about [Azure Artifacts overview](overview.md).*
-
-Your product is successful, your organization is growing, and it's time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
+Your product is successful, your organization is growing, and it's time to scale up your codebase to match this success. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 - How do my teams effectively share reusable components?
 - How do I enable my feature teams to iterate rapidly without stepping on other teams' work?
 - How do I give my teams autonomy to iterate at the pace that's right for them?
 
-These questions aren't just applicable to newly growing teams. 
-If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, ever faster. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development. 
+These questions aren't just applicable to newly growing teams. If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, faster than ever. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development. 
 
 In this article, we'll explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your OSS, and your isolated shared components.
 
 ## Components and composition
 
-Componentization is the act of separating and structuring of your product into a set of *components*: discrete parts of your codebase that provide a set of features. Most .NET projects already have some notion of components in the form of the projects in your solution. For example, a simple website might have a front-end component, a data access component, and a model/data storage component.
+Componentization is the act of separating and structuring of your product into a set of *components*. Most .NET projects already have some notion of components in the form of the projects in your solution. For example, a simple website might have a front-end component, a data access component, and a model/data storage component.
 
 ## Source componentization
 
-As your product grows, the solution + project model can become inefficient.
-Changes take longer to integrate and are harder to merge, the build gets slower, and in some cases Visual Studio becomes slower.
-And, *components* start to grow from a single project to multiple projects.
-Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions. 
+As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and *components* start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions. 
 
 Once you've outgrown a single solution, how you componentize becomes an interesting question.
 We started with *source composition*, where each component is referenced via a project reference in Visual Studio.
