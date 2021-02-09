@@ -310,7 +310,7 @@ In this section you'll learn how to package and sign Helm charts in a pipeline.
 
 In Azure DevOps, save the **privatekey.gpg** file in the library **secure files** section.
 
-## Example
+### Example
 
 ```YAML
 pool:
@@ -359,6 +359,7 @@ steps:
 ```
 
 ::: moniker-end
+
 ## Troubleshooting
 
 ### HelmDeploy task throws error 'unknown flag: --wait' while running 'helm init --wait --client-only' on Helm 3.0.2 version.
