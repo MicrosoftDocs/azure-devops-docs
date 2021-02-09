@@ -4,7 +4,7 @@ description: Deploy, configure, update your Kubernetes cluster in Azure Containe
 ms.topic: reference
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.author: atulmal
-ms.date: 09/04/2020
+ms.date: 02/09/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -250,7 +250,7 @@ This YAML example demonstrates the **save** command:
 
 ::: moniker-end
 
-::: moniker-range="azure-devops"
+::: moniker range="azure-devops"
 
 ## Package and sign Helm charts
 
@@ -280,7 +280,7 @@ In this section you'll learn how to package and sign Helm charts in a pipeline.
      gpg --list-secret-keys
      ```
 
-     ![Private Keys](media/helm-provenance/privatekeys.png)
+     ![Private Keys](media/helm-provenance/private-keys.png)
 
      - To see the list of public keys
 
@@ -288,7 +288,7 @@ In this section you'll learn how to package and sign Helm charts in a pipeline.
        gpg --list-keys
        ```
 
-       ![Public Keys](media/helm-provenance/publickeys.png)
+       ![Public Keys](media/helm-provenance/public-keys.png)
 
 5. Store the private and public keys in 2 different files with the extension **gpg** as shown below.
 
