@@ -65,9 +65,8 @@ Supported options are indicated with a ✔️ or listed.
 
 ::: moniker-end 
 
-<br/>
-
 ::: moniker range=">= tfs-2017"
+<br/>
 ---
 :::row:::
    :::column span="1.5":::
@@ -296,6 +295,8 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 ### Additional filter, sort, group, reorder, and rollup functions 
 
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
+
+<br/>
 
 ---
 :::row:::
@@ -529,6 +530,8 @@ In addition to the standard filter functions summarized in the previous table, t
 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
+
+<br/>
 ---
 :::row:::
    :::column span="2":::
@@ -750,29 +753,25 @@ To learn more about these additional functions, see the following articles:
 
 ### Parent Work Item filter and Parent field
 
-::: moniker range=">= tfs-2017"
 
 The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
-
-::: moniker-end 
-
 
 The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 You can also add the **Parent** field to cards on the Kanban Boards and Taskboards. 
 ::: moniker-end
 
-
-
-
+ 
 
 ## Prerequisites
 
 - All project members can exercise filter functions.  
 - All filter functions are set only for the current user until they clear them.  
+
+::: moniker range=">= tfs-2017"  
 - To filter using fields, first add the field as a column or to the card. For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
 
   To add columns or fields, see the following articles: 
@@ -780,6 +779,8 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
   - For Boards, see [Customize cards](../boards/customize-cards.md)
   - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
   - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
+::: moniker-end
+
 
 ## Open and clear filter functions  
 
