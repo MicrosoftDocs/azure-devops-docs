@@ -10,7 +10,7 @@
    viewBox="0 0 463 490"
    version="1.1"
    id="svg196"
-   sodipodi:docname="upstream-source-graph1.svg"
+   sodipodi:docname="upstream-source-graph-1.svg"
    width="463"
    height="490"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
@@ -40,7 +40,7 @@
     </clipPath>
   </defs>
   <sodipodi:namedview
-     pagecolor="#fffff0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -48,20 +48,28 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1258"
-     inkscape:window-height="1040"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview198"
      showgrid="false"
      inkscape:zoom="1.336478"
-     inkscape:cx="318"
+     inkscape:cx="277.96941"
      inkscape:cy="198.28235"
-     inkscape:window-x="507"
-     inkscape:window-y="41"
-     inkscape:window-maximized="0"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg196"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="false" />
   <title
      id="title2">blog-package-upstream-diagram-1</title>
+  <rect
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1"
+     id="rect105"
+     width="445.19998"
+     height="468.39529"
+     x="11.971765"
+     y="10.475294" />
   <path
      d="M 250.63333,33 H 439.11667 A 7.8833333,8.1975737 0 0 1 447,41.197574 V 229.74177 H 258.51667 a 7.8833333,8.1975737 0 0 1 -7.88334,-8.19758 z"
      fill="#cbe247"
