@@ -35,7 +35,7 @@ None
 | Argument | Description |
 |----------|-------------|
 | `versionSpec`<br/>JDK Version | (Required) Specify which JDK version to download and use. <br/>Default value: `8` |
-|`jdkArchitectureOption`<br/> JDK Architecture | Specify the bit version of the JDK. <br/>Options: `x64, x86`|
+|`jdkArchitectureOption`<br/> JDK Architecture | (Required) Specify the bit version of the JDK. <br/>Options: `x64, x86`|
 | `jdkSourceOption`<br/>JDK source | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository or use the pre-installed version of Java (available for Microsoft-hosted agents). Please see example below about how to use pre-installed version of Java |
 | `jdkFile` <br/>JDK file | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the jdk archive file that contains the compressed JDK. The path could be in your source repository or a local path on the agent. The file should be an archive (.zip, .tar.gz, .7z), containing bin folder either on the root level or inside a single directory. For macOS - there's support of .pkg and .dmg files containing only one .pkg file inside.|
 |`azureResourceManagerEndpoint`<br/> Azure Subscription | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Azure Resource Manager subscription for the JDK.|

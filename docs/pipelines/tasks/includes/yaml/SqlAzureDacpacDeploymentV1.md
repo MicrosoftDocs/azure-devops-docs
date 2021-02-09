@@ -15,9 +15,9 @@ ms.technology: devops-cicd-tasks
     #azureConnectionType: 'ConnectedServiceNameARM' # Optional. Options: connectedServiceName, connectedServiceNameARM
     #azureClassicSubscription: # Required when azureConnectionType == ConnectedServiceName
     #azureSubscription: # Required when azureConnectionType == ConnectedServiceNameARM
-    #authenticationType: 'server' # Options: server, aadAuthenticationPassword, aadAuthenticationIntegrated, connectionString
-    #serverName: # Required when authenticationType == Server || AuthenticationType == AadAuthenticationPassword || AuthenticationType == AadAuthenticationIntegrated
-    #databaseName: # Required when authenticationType == Server || AuthenticationType == AadAuthenticationPassword || AuthenticationType == AadAuthenticationIntegrated
+    #authenticationType: 'server' # Options: server, aadAuthenticationPassword, aadAuthenticationIntegrated, connectionString, servicePrincipal
+    #serverName: # Required when authenticationType == Server || AuthenticationType == AadAuthenticationPassword || AuthenticationType == AadAuthenticationIntegrated || AuthenticationType == servicePrincipal
+    #databaseName: # Required when authenticationType == Server || AuthenticationType == AadAuthenticationPassword || AuthenticationType == AadAuthenticationIntegrated || AuthenticationType == servicePrincipal
     #sqlUsername: # Required when authenticationType == Server
     #sqlPassword: # Required when authenticationType == Server
     #aadSqlUsername: # Required when authenticationType == AadAuthenticationPassword

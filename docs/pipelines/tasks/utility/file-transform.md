@@ -118,7 +118,7 @@ XML transformations are supported only for the Windows platform.
 <tr>
 <td>Transformation rules<br />xmlTransformationRules</td>
 <td>Provide a newline-separated list of transformation file rules using the syntax<br /> 
-<code>-transform &lt;path to=&quot;&quot; the transform file&gt; -xml &lt;path to the source configuration file&gt; -result &lt;path to the result file&gt;</code><br />
+<code>-transform &lt;path to the transform file&gt; -xml &lt;path to the source configuration file&gt; -result &lt;path to the result file&gt;</code><br />
 The result file path is optional and, if not specified, the source configuration file will be replaced with the transformed result file.
 </td>
 </tr>

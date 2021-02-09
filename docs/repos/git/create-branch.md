@@ -20,7 +20,9 @@ monikerRange: '<= azure-devops'
 > Users of TFS 2015 and previous will not have the **Branches** tab in the **Code** view. When using those versions, you can create a new branch in TFS from the **Code** view by selecting the drop-down next to the branch name and then selecting **New branch**.
 
 
-## Create a new branch from the web 
+## Create a new branch
+
+#### [Browser](#tab/browser) 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -34,7 +36,7 @@ monikerRange: '<= azure-devops'
 
 3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
-    ![Create a branch with the new branch dialog](media/branches/newbranch_dialog.png)
+   :::image type="content" source="media/branches/create-branch-web-2020.png" alt-text="Screenshot that shows the creation of a branch with the new branch dialog.":::
 
 4. Select **Create branch**.
 
@@ -52,7 +54,7 @@ monikerRange: '<= azure-devops'
 
 3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
-    ![Create a branch with the new branch dialog](media/branches/newbranch_dialog.png)
+   ![Create a branch with the new branch dialog](media/branches/newbranch_dialog.png)
 
 4. Select **Create branch**.
 
@@ -60,3 +62,24 @@ monikerRange: '<= azure-devops'
 
 >[!TIP]
 > You will need to [fetch](pulling.md) the branch before you can see it and swap to it in your local repo.
+
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+**Visual Studio 2015 & 2017**
+
+1. Open up Team Explorer and go to the **Branches** view.
+2. Right-click the parent branch (usually `main`) to base your changes and choose **New Local Branch From...**. 
+3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
+
+#### [Command Line](#tab/command-line)
+
+Use the `branch` command to create the branch and `checkout` to swap to that branch.
+
+```console
+git branch feature1
+git checkout feature1
+```
+
+---

@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 12/10/2020
+ms.date: 01/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -106,7 +106,7 @@ layout of the hosted agents is subject to change without warning.
 
 Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series). These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros. These agents always run in US and Europe irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in one of these geographies, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros. These agents always run in the US irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in the US, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
 
 All of these machines have 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
@@ -236,7 +236,7 @@ Microsoft-hosted agents do not offer:
 * The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
-* The ability to pre-install custom software (other than through [tool installer tasks](../process/tasks.md#tool-installers) in your pipeline).
+* The ability to pre-load custom software. You can install software during a pipeline run, such as through [tool installer tasks](../process/tasks.md#tool-installers) or in a script.
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 * The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 

@@ -6,7 +6,7 @@ ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 02/04/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -26,7 +26,7 @@ You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
 * [Install the **Azure Pipelines Agent** Azure VM extension](#azureext) on each of the VMs.
-* [Use the **Azure Resource Group Deployment** task](#deploytask) in your release pipeline.
+* [Use the **ARM Template deployment** task](#deploytask) in your release pipeline.
 
 For information about agents and pipelines, see:
 
@@ -97,14 +97,18 @@ For information about agents and pipelines, see:
 
 <a name="deploytask"></a>
 
-## Use the Azure Resource Group Deployment task
+## Use the ARM Template deployment task 
 
-You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
+> [!IMPORTANT]
+> These instructions refer to version 2 of the task. Switch your **Task version** from 3 to 2. 
+
+
+You can use the [ARM Template deployment task](https://aka.ms/argtaskreadme)
 to deploy an Azure Resource Manager (ARM) template that installs the Azure Pipelines Agent
 Azure VM extension as you create a virtual machine, or to update the resource group
 to apply the extension after the virtual machine has been created.
 Alternatively, you can use the advanced deployment options of the
-Azure Resource Group Deployment task to deploy the agent to deployment groups.
+ARM Template deployment task to deploy the agent to deployment groups.
 
 ### Install the "Azure Pipelines Agent" Azure VM extension using an ARM template
 
@@ -166,7 +170,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **ARM Template deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
    location, and template information, then save the release pipeline.
@@ -179,7 +183,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **ARM Template deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:

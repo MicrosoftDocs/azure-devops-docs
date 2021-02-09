@@ -29,6 +29,7 @@ ms.technology: devops-cicd-tasks
     #externalFeedCredentials: # Optional
     #noCache: false
     restoreDirectory:
+    #restoreArguments: # Optional
     #verbosityRestore: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg' # Required when command == Push
     #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external

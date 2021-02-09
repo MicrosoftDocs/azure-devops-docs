@@ -52,6 +52,8 @@ Before you get started using Power BI to work with Analytics, make sure you have
 
 You can pull data from Analytics into Power BI in one of three ways. It is important to understand each method, before choosing. 
 
+> [!NOTE]  
+> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
 
 <table width="90%">
 <tbody valign="top">
@@ -107,3 +109,4 @@ For specific examples, see one of the following articles:
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
 - [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)
+- [OData documentation](/odata/) 

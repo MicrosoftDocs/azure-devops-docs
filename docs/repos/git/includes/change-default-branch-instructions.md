@@ -6,7 +6,7 @@ ms.topic: include
 >This step requires [Edit Policies permissions](../../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
 
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
-You can use a branch other than `master` for new changes or change your main line of development in your repo.
+You can use a branch other than `master` for new changes or change your main line of development in your repo. To change the default branch name for new repositories, see [All repositories settings and policies](../repository-settings.md#all-repositories-settings-and-policies).
 
 ::: moniker range=">= azure-devops-2019"
 

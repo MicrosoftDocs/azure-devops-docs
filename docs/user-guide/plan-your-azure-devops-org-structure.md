@@ -188,7 +188,7 @@ The following image displays a sample of how "your company" could structure its 
 
 ### Choosing your organization administrator account type
 
-When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https:\//dev.azure.com/{YourOrganization}`.
+When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https://dev.azure.com/{YourOrganization}`.
 
 #### Using your Microsoft account
 

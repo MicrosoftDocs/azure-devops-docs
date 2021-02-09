@@ -135,7 +135,7 @@ On Linux or macOS, in Bash, you can enter:
  
 ```bash
 MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
-B64_PAT=$(printf ":$MY_PAT" | base64)
+B64_PAT=$(printf -n":$MY_PAT" | base64)
 git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 

@@ -92,8 +92,8 @@ update it automatically.
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
->If you have problems connecting to Azure DevOps or TFS, you may find
-the topic [TF31002: Unable to connect](../reference/error/tf31002-unable-connect-tfs.md) useful.
+If you have problems connecting to Azure DevOps or TFS, you may find
+the topic [TF31002: Unable to connect](../organizations/projects/tf31002-unable-connect-tfs.md) useful.
 
 ## See also
 

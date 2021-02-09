@@ -54,7 +54,7 @@ steps:
     artifact:  A1 # name of the artifact to download; optional; defaults to all artifacts
 ```
 
-For more details, see the downloading artifacts documentation [here](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
+For more details, see the downloading artifacts documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops#downloading-artifacts).
 
 ### Bitbucket integration and other improvements in getting started with pipelines
 

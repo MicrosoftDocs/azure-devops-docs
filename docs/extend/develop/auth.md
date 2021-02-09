@@ -159,6 +159,7 @@ namespace TokenSample.Core.API
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseMvc();
             app.UseStaticFiles();
         }

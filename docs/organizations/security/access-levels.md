@@ -357,7 +357,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Build**  
-      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/overview.md).
+      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
    :::column-end:::
    :::column span="1":::
        

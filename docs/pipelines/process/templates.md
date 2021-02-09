@@ -927,6 +927,7 @@ For example, to add additional dependencies:
 
 ```yaml
 # job.yml
+parameters:
 - name: 'jobs'
   type: jobList
   default: []

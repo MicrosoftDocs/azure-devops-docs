@@ -16,7 +16,7 @@ ms.date: 02/19/2020
 
 Release Management features have been integrated into **Azure Pipelines** and
 Team Foundation Server (TFS).
-For more information, see [Build and Release in Azure Pipelines and TFS](../../../overview.md).
+For more information, see [Build and Release in Azure Pipelines and TFS](../../../get-started/what-is-azure-pipelines.md).
 
 The newer web-based version is the recommended alternative 
 to the server and client version described in this topic.
@@ -29,4 +29,3 @@ version, you should be aware that no new features will
 be added to these versions.
  
 :::image type="icon" source="../media/horizontal-line.png" border="false":::
-

@@ -54,7 +54,7 @@ None
     <tr>
         <td><code>SymbolsFolder</code><br/>Path to symbols folder</td>
         <td>
-            <p>(Optional) The path to the folder that is searched for symbol files. The default is $(Build.SourcesDirectory), Otherwise specify a rooted path. <br/>For example: $(Build.BinariesDirectory)/MyProject</p>
+            <p>(Optional) The path to the folder that is searched for symbol files. The default is $(Build.SourcesDirectory), Otherwise specify a rooted path. Note that UNC paths aren't supported if you select the Azure Artifacts symbol server as the server type.<br/>For example: $(Build.BinariesDirectory)/MyProject</p>
         </td>
     </tr>
     <tr>
