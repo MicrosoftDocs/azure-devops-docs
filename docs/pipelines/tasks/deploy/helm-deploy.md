@@ -254,8 +254,6 @@ This YAML example demonstrates the **save** command:
 
 ## Package and sign Helm charts
 
-[!INCLUDE [include](../includes/version-team-services.md)]
-
 In this section you'll learn how to package and sign Helm charts in a pipeline.
 
 ### Generate a private-public key pair to sign the helm chart using GPG
