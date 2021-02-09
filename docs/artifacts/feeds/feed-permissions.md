@@ -28,7 +28,7 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Add/remove upstream sources                   |          |              |             | &#x2713; |
 | Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |
 | Edit feed permissions                         |          |              |             | &#x2713; |
-| Configure upstream behavior                   |          |              |             | &#x2713; |
+| Allow external package versions               |          |              |             | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
