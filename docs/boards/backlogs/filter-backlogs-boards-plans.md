@@ -523,17 +523,13 @@ In addition to the standard filter functions summarized in the previous table, t
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
-### Additional filter, sort, group, and reorder functions
+### Additional filter, sort, group, and reorder functions 
 
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, and reorder functions. Some functions, such as reorder, don't work when the filter function is enabled. 
 
 ::: moniker-end 
 
-
-
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
-
-<br/>
 ---
 :::row:::
    :::column span="2":::
@@ -693,7 +689,7 @@ In addition to the standard filter functions summarized in the previous table, t
       ✔️ (Note 6)  
    :::column-end:::
    :::column span="1":::
-
+        
    :::column-end:::
 :::row-end:::
 ---
@@ -710,10 +706,10 @@ In addition to the standard filter functions summarized in the previous table, t
       ✔️ (Note 7)  
    :::column-end:::
    :::column span="1":::
-
+        
    :::column-end:::
    :::column span="1":::
-
+        
    :::column-end:::
 :::row-end:::
 ---
