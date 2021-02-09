@@ -628,7 +628,13 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 	Choose  **Filter** :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false":::.
 	::: moniker-end
 
-4. Choose the filters of interest. The page refreshes to show only those work items that meet all the selected filter criteria.
+4. Choose the filters of interest. 
+
+	::: moniker range=">= azure-devops-2019"
+	The filter icon changes to a solid icon, **Filter** :::image type="icon" source="../../media/icons/filtered.png" border="false":::, to indicate filtering is applied. 
+	::: moniker-end
+
+	The page refreshes to show only those work items that meet all the selected filter criteria.
 
 
 ### Disabled functions
@@ -637,19 +643,20 @@ When filtering is applied, the following functions are disabled or altered.
 - For backlogs, the add-a-backlog-item panel, stack ranking, and forecasting tools are disabled. 
 - For backlogs set to Show Parents, the tree hierarchy is flattened. 
 
-
-
 ### Clear or dismiss filtering
-To clear and dismiss filtering, choose **Clear and dismiss filtering** the :::image type="icon" source="../../media/icons/close-filter.png" border="false":::.
+
+To clear and dismiss filtering, choose **Clear and dismiss filtering** :::image type="icon" source="../../media/icons/close-filter.png" border="false":::.
 
 
 <a id="text-filter"></a>
 
 ## Apply keyword and ID filters
 
-The keyword filter function filters lists or cards based on the fields displayed via **Column Options** or board settings. Also, you can enter a value for an ID, whether or not the ID field is visible.  
+The keyword filter function filters lists or cards based on the fields displayed via **Column Options** or board settings. Also, you can enter a value for an ID, whether or not the ID field is visible. Therefore, when filtering, consider what fields contain the keyword text or tags you want to filter on and make sure it is displayed.  
 
-Therefore, when filtering, consider what fields contain the keyword text or tags you want to filter on and make sure it is displayed.  
+Filtering is case-insensitive. 
+
+
 
 
 <a id="characters-ignore" />  
@@ -668,55 +675,45 @@ The filter criteria ignores the following characters when the field value starts
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
  
+### Filter a board using a keyword
 
-For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
 
-::: moniker range=">= azure-devops-2020"
+
+::: moniker range=">= azure-devops-2019"
+
+Here we filter the Kanban board to only show those cards that include 'web', either in the title, tag, or field.
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter using keyword search.](media/filter-boards/filter-kb-text-web-services.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 ![Kanban board, Filter using keyword search, earlier versions.](media/filter-boards/filter-options-web.png)
+Here we filter the Kanban board to only show those cards that include 'Web', either in the title, tag, or displayed field.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
+Here we filter the Kanban board to only show those cards that include 'web', either in the title or a tag.
+
 ![Kanban board, Filter using keyword search, 2015.](media/filter-boards/filter-kb-filter-text-web.png)
 
 ::: moniker-end
 
 
+### Filter a backlog using a keyword
 
+Here we filter the Backlog with **Show Parents** enabled, to only show work items that include 'web'. 
 
-### Filter backlogs flatten hierarchical lists
- 
-
-::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Filter by keyword](media/filter/filter-s144.png)  
-::: moniker-end
+> ![Backlog, Hierarchy, Filter using keyword search.](media/filter/filter-backlog-web-keyword.png)
 
-
-![Backlogs, turn filtering on](media/filter-backlogs-options.png)  
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
-
-::: moniker range="<= tfs-2017"
-
-
-
-Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
-
-<img src="media/cyb-filter-backlog.png" alt="Apply text filter" style="border: 1px solid #C3C3C3;" />  
-
-The filtered set is always a flat list, even if you've selected to show parents.  
-
-::: moniker-end
 
 
 
@@ -727,9 +724,10 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 ## Filter based on a field  
 
+With filtering turned on, choose one or more values from the multi-select drop-down menu for each field available to you. The values for these fields are populated as follows: 
 
-Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
+- **Area**: The Node Name, which specifies the last node of an Area Path, of valid Area Paths and for which there are work items assigned to that Area Path 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
 - **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
 - **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
@@ -740,34 +738,9 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
 
 
-<a id="filter-logic"></a>
-
-### Kanban board filter logic
-
-Cards are filtered based on the assignments made in the following order and logic:
-
-1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2
-	```AND```
-2. **Iteration**: Show all cards that are assigned to Iteration 1 ```OR```  Iteration 2
-	```AND```
-3. **Work Item type**: Show all cards that are work item type 1 ```OR``` work item type 2
-	```AND```
-4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
-	```AND```
-5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
-
-
-
-Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
-
-> [!div class="mx-imgBorder"]  
-> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
-
-::: moniker-end 
-
 ::: moniker range=">= tfs-2017"
 
-### Filter boards using select field values
+### Filter a Kanban board using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
@@ -805,6 +778,31 @@ Filters remain in place until you explicitly clear them by clicking **Clear filt
 Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
 
 ::: moniker-end
+
+<a id="filter-logic"></a>
+
+### Kanban board filter logic
+
+Cards are filtered based on the assignments made in the following order and logic:
+
+1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2
+	```AND```
+2. **Iteration**: Show all cards that are assigned to Iteration 1 ```OR```  Iteration 2
+	```AND```
+3. **Work Item type**: Show all cards that are work item type 1 ```OR``` work item type 2
+	```AND```
+4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
+	```AND```
+5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
+
+### Filter a backlog using fields
+
+Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
+
+> [!div class="mx-imgBorder"]  
+> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
+
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
 
