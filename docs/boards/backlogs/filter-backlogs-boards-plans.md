@@ -845,7 +845,11 @@ When filtering is applied, the following functions are disabled or altered.
 
 To clear and dismiss filtering, choose **Clear and dismiss filtering** :::image type="icon" source="../../media/icons/close-filter.png" border="false":::.
 
+Filters remain in place until you explicitly clear them.  by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
 
+Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
+
+::: moniker-end
 <a id="text-filter"></a>
 
 ## Apply keyword and ID filters
@@ -935,9 +939,6 @@ With filtering turned on, choose one or more values from the multi-select drop-d
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
 
-
-::: moniker range=">= tfs-2017"
-
 ### Filter a Kanban board using select field values
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
@@ -960,7 +961,6 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
 
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
@@ -969,13 +969,6 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
-Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
-
-Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
-
-::: moniker-end
 
 <a id="filter-logic"></a>
 
