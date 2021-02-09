@@ -554,34 +554,7 @@ To learn more about these additional functions, see the following articles:
 - [Rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md) 
 - [About backlogs, Work with multi-team ownership of backlog items](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items) 
  
- 
-And something about multi team backlogs
-Parented and UnParented
-
-
-
 ::: moniker-end 
-
-
- 
-::: moniker range=">= tfs-2017"
-
-### Characters ignored by keyword filter criteria
-
-::: moniker-end 
-
-
-::: moniker range=">= azure-devops-2019"
-
-The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
-
-::: moniker-end
 
 
 ::: moniker range=">= tfs-2017"
@@ -606,9 +579,15 @@ The **Parent Work Item** filter enables you to focus on one or more select featu
 
 ## Prerequisites
 
-All project members can exercise filter functions. All filter functions are set only for the current user until they clear them. 
+- All project members can exercise filter functions. 
+- All filter functions are set only for the current user until they clear them. 
+- To filter using fields, first add the field as a column or to the card.  For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
 
-
+  To add columns or fields, see the following articles: 
+  - For Backlogs and Queries, see [Change column options](set-column-options.md)
+  - For Boards, see [Customize cards](../boards/customize-cards.md)
+  - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+  - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
 
 ## Open and clear filter functions 
 
@@ -629,6 +608,8 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 
 ::: moniker-end
 
+When filtering is on, backlog and query result hierarchies are flattened. To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
+
 ::: moniker range=">= tfs-2017"
 
 > [!TIP]
@@ -639,9 +620,9 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 
 ::: moniker-end
 
-When filtering is on, backlog and query result hierarchies are flattened. 
 
-To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
+
+
 
 
 
@@ -649,16 +630,25 @@ To clear and dismiss filtering, choose the :::image type="icon" source="../../me
 
 The keyword filter function filters lists or cards based on the text of **Column Options** or the fields displayed on cards. Therefore, when filtering, consider what fields contain the keyword text you want to filter on and make sure it is displayed. 
 
-::: moniker range="<= tfs-2015"
 
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+<a id="characters-ignore" />  
 
+### Characters ignored by keyword filter criteria
+
+::: moniker range=">= azure-devops-2019"
+The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
 ::: moniker-end
 
- 
+::: moniker range=">= tfs-2017 <= tfs-2018"
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+::: moniker-end
+
 <a id="text-filter"></a>
 
-<!--- 
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
@@ -678,7 +668,6 @@ The filter criteria ignores the following characters when the field value starts
 
 ::: moniker-end
 
--->
 
 The filter function displays work items based on any visible/displayed column or field, including tags, based on the keyword that you enter.
 
@@ -746,15 +735,6 @@ The filtered set is always a flat list, even if you've selected to show parents.
 ## Filter based on a field  
 
 
-For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
-
-
-To add columns or fields, see the following articles: 
-- For Backlogs and Queries, see [Change column options](set-column-options.md)
-- For Boards, see [Customize cards](../boards/customize-cards.md)
-- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
-
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
 - **Assigned To**: All users who are currently assigned to work items on the board plus Unassigned
@@ -765,6 +745,25 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
+
+
+<a id="filter-logic"></a>
+
+### Kanban board filter logic
+
+Cards are filtered based on the assignments made in the following order and logic:
+
+1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2
+	```AND```
+2. **Iteration**: Show all cards that are assigned to Iteration 1 ```OR```  Iteration 2
+	```AND```
+3. **Work Item type**: Show all cards that are work item type 1 ```OR``` work item type 2
+	```AND```
+4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
+	```AND```
+5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
+
+
 
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
@@ -814,31 +813,6 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 
 ::: moniker-end
 
-
-
-::: moniker range=">= tfs-2017"
-
-<a id="filter-logic"></a>
-
-### Kanban board filter logic
-
-Cards are filtered based on the assignments made in the following order and logic:
-
-1. **Assigned to**:  Show all cards that are assigned to user 1 ```OR``` user 2
-	```AND```
-2. **Iteration**: Show all cards that are assigned to Iteration 1 ```OR```  Iteration 2
-	```AND```
-3. **Work Item type**: Show all cards that are work item type 1 ```OR``` work item type 2
-	```AND```
-4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
-	```AND```
-5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
-
-
-
-::: moniker-end
-
-
 ::: moniker range=">= tfs-2017"
 
 <a id="parent-filter"></a>
@@ -859,27 +833,19 @@ Here, we choose two features on which to filter the board.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on Parent field](media/filter-boards/filter-kb-parent-filters-services.png)
-
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
-
 ![Kanban board, Filter on parent work items](media/filter-boards/filter-kb-choose-parent-work-items.png)
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
-
 The final board displays just those stories linked as child work items to the selected features.
 
 ::: moniker-end 
-
-
 
 
 ## Filter based on tags
@@ -891,10 +857,19 @@ If you've added tags to your work items, you can filter your work using one or m
 
 Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the  you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
 
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2019"
+
 > [!div class="mx-imgBorder"]
-> ![View with Tags column added](../queries/media/add-tags/filter-backlog-tags.png) 
+> ![Screenshot of filtering board based on tags, 2019 and later versions. ](media/filter/filter-boards-tags.png) 
 
+::: moniker-end
 
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of filtering board based on tags, TFS 2017 and 2018 versions. ](../queries/media/add-tags/filter-backlog-tags.png) 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
@@ -918,13 +893,14 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 
 ## Related articles  
 
-- [Set column options](set-column-options.md)   
+- [Set up your Backlogs and Boards](set-up-your-backlog.md)
+- [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
+- [Display rollup progress or totals](display-rollup.md) 
 - [Customize cards](../boards/customize-cards.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-- [Review team delivery plans]( ../plans/review-team-plans.md). 
 - [Tags](../queries/add-tags-to-work-items.md) 
-
+- [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 
 
 <!--- Other filter features cross-service  such as FIlter pipelines -->
