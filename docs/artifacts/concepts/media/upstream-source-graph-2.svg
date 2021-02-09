@@ -10,7 +10,7 @@
    viewBox="0 0 463 490"
    version="1.1"
    id="svg288"
-   sodipodi:docname="upstream-source-graph2.svg"
+   sodipodi:docname="upstream-source-graph-2.svg"
    width="463"
    height="490"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
@@ -29,7 +29,7 @@
   <defs
      id="defs292" />
   <sodipodi:namedview
-     pagecolor="#fffff0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -44,13 +44,20 @@
      inkscape:zoom="1.336478"
      inkscape:cx="318"
      inkscape:cy="228.21176"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg288"
      inkscape:document-rotation="0" />
   <title
      id="title2">blog-package-upstream-diagram-2</title>
+  <rect
+     style="fill:#ffffff;fill-opacity:1"
+     id="rect972"
+     width="441.45883"
+     height="458.66824"
+     x="11.22353"
+     y="17.957647" />
   <line
      x1="22.016666"
      y1="387.97061"
