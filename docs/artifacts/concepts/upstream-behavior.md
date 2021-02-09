@@ -23,7 +23,7 @@ The new upstream behavior will provide another layer of security by blocking the
 
 With the new upstream behavior, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-Users will still be able to toggle off the new upstream behavior setting and consume packages from the public registries if they chose to do so.
+Users will still be able to toggle off the new upstream behavior setting and consume packages from the public registries if they choose to do so.
 
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
