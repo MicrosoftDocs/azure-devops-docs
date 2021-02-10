@@ -68,9 +68,9 @@ At a high level, we've found the most success when source composition is used fo
 
 ## Next steps
 
-- [Get started with Azure Artifacts](/start-using-azure-artifacts.md)
-- [NuGet quickstart](/get-started-nuget.md)
-- [Npm quickstart](/get-started-npm.md)
-- [Maven quickstart](/get-started-maven.md)
-- [Python quickstart](/quickstarts/python-packages.md)
-- [Universal packages quickstart](/quickstarts/universal-packages.md)
+- [Get started with Azure Artifacts](start-using-azure-artifacts.md)
+- [NuGet quickstart](get-started-nuget.md)
+- [Npm quickstart](get-started-npm.md)
+- [Maven quickstart](get-started-maven.md)
+- [Python quickstart](quickstarts/python-packages.md)
+- [Universal packages quickstart](quickstarts/universal-packages.md)
