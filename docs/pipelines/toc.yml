@@ -124,7 +124,7 @@
       href: build/variables.md
     - name: Use runtime parameters
       href: process/runtime-parameters.md
-    - name: Process parameters (classic)
+    - name: Use classic process parameters
       href: process/parameters.md
     - name: Use classic release and artifacts variables
       href: release/variables.md
