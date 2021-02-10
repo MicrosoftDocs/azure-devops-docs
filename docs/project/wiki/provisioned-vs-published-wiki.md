@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020  
+ms.date: 12/15/2020  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -37,10 +37,13 @@ With a publish code as wiki, you add, edit, and update content from **Repos** or
 
 The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
-> [!div class="mx-tdCol2BreakAll"]
-> |    Provisioned wiki    | Publish code as wiki |
-> |------|---------|
-> | ![Provisioned wiki page menu options](media/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](media/wiki/diff-menu-options.png) |
+**Provisioned wiki**
+
+:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options"::: 
+
+**Publish code as wiki**
+
+:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options":::
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
 
@@ -116,14 +119,14 @@ Deleting a project wiki isn't supported with wiki APIs, but you can delete the w
 
 1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
 
-   ![Clone the wiki repository](media/wiki/clone-wiki.png)
+   :::image type="content" source="media/wiki/clone-wiki.png" alt-text="Clone the wiki repository":::
 
 2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
    
    For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
    This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.
 
-   ![Clone the wiki repository, copy the URL](media/wiki/clone-repository.png)
+   :::image type="content" source="media/wiki/clone-repository.png" alt-text="Clone the wiki repository, copy the URL":::
 
 3. Use the following REST API to delete the git repository.
 	

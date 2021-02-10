@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Export a list of users and their access levels
@@ -38,7 +38,7 @@ You can get a list of users and groups that have access to your Team Foundation 
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users

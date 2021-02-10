@@ -26,10 +26,10 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
 
-   > [!NOTE]   
-   > Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
-
 4. Select **Create**.
+
+> [!NOTE]   
+> Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
 
 ::: moniker-end
 
@@ -52,9 +52,9 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
-   > [!NOTE]   
-   > Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
+> [!NOTE]   
+> Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
 
 ::: moniker-end
 
-See [Set feeds and views permissions ](../feeds/feed-permissions.md) to learn more about managing your feeds.
+See [Feeds and views permissions ](../feeds/feed-permissions.md) to learn more about managing feed permissions.

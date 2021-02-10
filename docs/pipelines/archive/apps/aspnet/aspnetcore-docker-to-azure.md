@@ -5,9 +5,8 @@ description: Learn how you can automatically generate a CI/CD pipeline to deploy
 ms.topic: conceptual
 ms.assetid: 88920723-19B7-4A49-96E1-9618C384F730
 ms.date: 12/20/2017
-monikerRange: '>= tfs-2015'
+# monikerRange: '>= tfs-2015'
 ---
-
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy an ASP.NET Core web app with Docker to Azure
 
@@ -85,7 +84,3 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 ### I created an Azure Container Service but it doesn't appear in Visual Studio's Configure Continuous Delivery dialog?
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
-
-::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../includes/qa-versions.md)]
-::: moniker-end

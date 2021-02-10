@@ -68,20 +68,10 @@ The following example displays all labels in the Team Foundation version control
 c:\projects> tf labels build*
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
-
-[Unlabel Command](unlabel-command.md)
-
-#### Concepts
-
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
+- [Unlabel Command](unlabel-command.md)
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

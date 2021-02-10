@@ -36,32 +36,10 @@ To undo pending changes in another user's workspace, you must have the **Adminis
 
 For more information, see [Undo Command](undo-command.md).
 
-## See Also
+## Related articles
 
-#### Concepts
+- [Create a Workspace to Work with your Project](create-work-workspaces.md)
+- [Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
+- [Working with Version Control Locks](work-version-control-locks.md)
 
-[Create a Workspace to Work with your Project](create-work-workspaces.md)
-
-[Using the Check In and Pending Changes Windows](develop-code-manage-pending-changes.md)
-
-#### Other Resources
-
-[Working with Version Control Locks](work-version-control-locks.md)
-## Change History<table>
-<thead>
-<tr>
-<th><p>Date</p></th>
-<th><p>History</p></th>
-<th><p>Reason</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p></p>
-<p>October 2011</p></td>
-<td><p>Corrected step to launch the command prompt.</p></td>
-<td><p></p>
-<p>Customer feedback.</p></td>
-</tr>
-</tbody>
-</table>
+ 

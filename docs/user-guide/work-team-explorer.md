@@ -1,19 +1,20 @@
 ---
 title: Navigate in Visual Studio Team Explorer 
 titleSuffix: Azure DevOps 
-description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
-keywords: Download TFS clients 
+description: Learn how to download Azure DevOps clients and navigate in Team Explorer 
+keywords: Download Azure DevOps clients 
 ms.technology: devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # Navigate in Visual Studio Team Explorer
 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 **Visual Studio 2019 | Visual Studio 2017 | Visual Studio 2015**
 
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
@@ -54,6 +55,8 @@ The Git and TFVC repos support different pages and functions. For a comparison o
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
+[!INCLUDE [temp](../repos/git/includes/note-new-git-tool.md)] 
+
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
 > | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page with Git as source control.](media/IC827210.png) |  
@@ -79,7 +82,7 @@ To learn more about each page, see the following articles.
 <p><strong>Builds</strong></p>
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -154,7 +157,7 @@ To learn more about each page, see the following articles.
 <p><strong>Builds</strong></p>
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -229,7 +232,7 @@ To learn more about each page, see the following articles.
 <p><strong>Builds</strong></p> 
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -349,9 +352,9 @@ To learn more about settings, see [About team, project, and organizational-level
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
-- To refresh a page that you are currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** icon in the menu bar (or choose the F5 key).
-- To refresh the project you currently have selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** icon (or choose the F5 key).
+- To refresh a page that you are currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** in the menu bar (or choose **F5**).
+- To refresh the project you currently have selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** (or choose **F5**).
+- To refresh the set of teams defined for the project that you currently have selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or choose **F5**).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 

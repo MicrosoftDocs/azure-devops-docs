@@ -58,7 +58,7 @@ The feedback tool opens to the Start page. Launch the application by following t
 
 1. From the Start page, choose the **Application** link to open, start, or install the application for which you have been requested to provide feedback.
 
-3. Follow any additional instructions provided to login or access the application.
+3. Follow any additional instructions provided to sign in or access the application.
 
 	For example, you would choose the `http://staging.fabrikamfiber.com/customer.aspx` link and then enter the user name and password provided. 
 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline.
+Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart, you learn how to define your CI pipeline.
 
 ## Prerequisites
 
@@ -28,8 +28,8 @@ Universal Windows Platform (UWP) is a common app platform available on every dev
 
 [!INCLUDE [include](../includes/get-sample-code-intro.md)]
 
-```
-https://github.com/Microsoft/UWPQuickStart
+```GitHub
+https://github.com/microsoft/Windows-appsample-rssreader
 ```
 
 # [Azure Repos or TFS repo](#tab/vsts)
@@ -52,11 +52,13 @@ https://github.com/Microsoft/UWPQuickStart
 
    # [Azure Repos or TFS repo](#tab/vsts)
 
-   Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+   Under the **Build and Release** menu, select **Builds** then **New** to create a new build definition.
 
-   ![Screenshot showing button to set up build for a repository](../media/set-up-first-build-from-code-hub.png)
+   :::image type="content" source="../media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
 
-   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+   Select a source and chose your team project, repository, and default branch then select **Continue**.
+    
+   **Select a template** or start with an **Empty process** to create your build pipeline.
 
    # [GitHub repo](#tab/github)
 

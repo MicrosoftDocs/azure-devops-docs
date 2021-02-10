@@ -23,7 +23,11 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 
 The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
 
+::: moniker range=">= tfs-2018"
+
 ## Filter based on keywords or fields   
+
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 

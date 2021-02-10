@@ -6,7 +6,7 @@ ms.assetid: b1262306-214c-4422-8eda-d03d05825241
 ms.technology: devops-code-git 
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
@@ -31,12 +31,12 @@ This is up to you and your team. An accepted practice is to make separate commit
 A popular option is to allow everyone to commit locally as much as they want, but before they push the local commits, they squash them first through [rebasing](rebase.md).
 This gives users a lot of personal flexibility to make frequent commits while keeping the commit history streamlined. 
 
-### If every branch retains its full commit history even when merged into master, doesn't that make the commit history of master hard to follow over time?
+### If every branch retains its full commit history even when merged into main, doesn't that make the commit history of main hard to follow over time?
 
-Large projects with many commits and a range of contributors can result in commit histories for the `master` branch that represent 
-the development history of the topic branches merged into `master` more than the development history of the overall project. 
+Large projects with many commits and a range of contributors can result in commit histories for the `main` branch that represent 
+the development history of the topic branches merged into `main` more than the development history of the overall project. 
 Git provides a facility for condensing commits on branches through [squashing commits and rebasing](rebase.md). 
-Squashing commits makes the commit history on a branch less verbose and makes for a simpler commit history on the master branch once merged.
+Squashing commits makes the commit history on a branch less verbose and makes for a simpler commit history on the main branch once merged.
 
 ### How can I find out who made a specific change to a file in my Git repository?
 

@@ -1,6 +1,6 @@
 ---
 title: Code, workitem, and wiki search - index of topics
-description: Search with Azure DevOps and TFS
+description: Search with Azure DevOps
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.technology: devops-collab
 ms.topic: overview
@@ -39,7 +39,7 @@ using just a web browser.
 
 ## Resources
 
-* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 * [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
 * [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)

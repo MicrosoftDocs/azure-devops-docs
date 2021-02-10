@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE
-ms.custom: contentperfq4
+ms.custom: contperf-fy20q4
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
@@ -137,7 +137,7 @@ You can open in Excel any query you've defined in Azure Boards. That includes qu
 
 ### Guide to list and query type usage
 
-In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. 
+In general, you [Use a flat list](../../queries/using-queries.md#flat-list) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. 
 
 Here is some additional guidance: 
 

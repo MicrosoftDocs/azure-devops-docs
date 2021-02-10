@@ -6,7 +6,7 @@ ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Undo changes
@@ -38,6 +38,9 @@ Restore file contents back to a known good version, removing unwanted changes.
 > These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Visual Studio 2015 &amp; 2017
 
 1. Open up the **Changes** view in Team Explorer.

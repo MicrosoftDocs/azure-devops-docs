@@ -11,8 +11,8 @@ We've added a new functionality to the Azure Pipelines extension for VSCode. Now
 
 ### New task for configuring Azure App Service app settings
 
-Azure App Service allows configuration through various [settings](https://docs.microsoft.com/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
-We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?view=azure-devops&amp;tabs=yaml), [manage](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops) and configure your Web apps, Function apps or any other containerized App Services.
+Azure App Service allows configuration through various [settings](/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
+We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](/azure/devops/pipelines/targets/webapp?amp;tabs=yaml&view=azure-devops), [manage](/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops) and configure your Web apps, Function apps or any other containerized App Services.
 
 > [!div class="mx-imgBorder"]
 > ![New task for configuring Azure App Service app settings.](../../media/157_06.png)

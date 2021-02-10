@@ -1,6 +1,6 @@
 ---
 title: Extend the work item form | Extensions for Azure DevOps
-description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps and Team Foundation Server (TFS).
+description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -162,7 +162,7 @@ See the JavaScript sample in the form group section. The name of the registered 
 
 ## Configure contributions in work item form
 
-In Azure DevOps, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
+In Azure DevOps Services, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In Azure DevOps Server, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
 

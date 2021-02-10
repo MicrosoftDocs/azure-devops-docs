@@ -11,10 +11,20 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+# Select an effective branching strategy
 
-Do you plan to adopt Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions), but will explore a few common branching strategies to help you make the right decision.
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+
+
+Creating branches for your Team Foundation Version Control (TFVC) repositories are useful to isolate risk. Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
+
+-   The group has a few (or maybe several) different feature teams, each working on a set of functionality that is reasonably discrete. But each team also depends on functionality built by other teams. You need to isolate the risk of the changes introduced by the work done in each of these teams, and yet eventually, you need to merge all their efforts together into one product.
+
+-   The test team needs a stable version of the code to test, and yet simultaneously, the developers need to continue moving forward with new features that will occasionally destabilize the product.
+
+-   The software has two previous versions and one current version in progress. Even though most of the development effort is invested in the current version, the previous versions must still be supported with occasional releases of service packs, critical fixes and security patches, and other changes.
+
+This article explores a few common branching strategies to help you make the right decision.
 
 Unlike Git branches, which are repository scoped, TFVC branches are path scoped and not as lightweight. Set your bar for creating branches high and only branch when you have a need for code or release isolation.
 
@@ -29,6 +39,7 @@ The **Main Only** strategy can be folder-based or with the **main** folder [conv
 Start with the main only branching strategy, [branch strategically](branch-strategically.md) and adopt other strategies to evolve into more complex strategies as needed.
 
 ## Development isolation
+
 When you need to maintain and protect a stable **main** branch, you can branch one or more **dev** branches from **main**. It enables isolation and concurrent development. Work can be isolated in development branches by feature, organization, or temporary collaboration.
 
 ![Developer Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-developer-isolation.png)
@@ -59,7 +70,7 @@ Never forward integrate (FI) from **main**. Lock release branches using access p
 
 > NOTE: None of the branching scenarios are immutable, which is why you notice emergency hotfixes performed on release branches. Evolve each strategy to match your requirements, without losing sight of complexity and associated cost.
 
-## Servicing and Release isolation
+## Servicing and release isolation
 
 Servicing and Release Isolation strategy introduces **servicing** branches. This strategy allows concurrent service management of service packs, and codebase snapshots at release time.
 
@@ -71,7 +82,7 @@ Like the release isolation, the **servicing** isolation and **release** branches
 
 Create new servicing and release branches for subsequent releases if you require that level of isolation.
 
-## Servicing, Hotfix, Release isolation
+## Servicing, hotfix, release isolation
 
 Although not recommended, you can continue to evolve the strategies, by introducing additional **hotfix** branches and associated release scenarios.
 

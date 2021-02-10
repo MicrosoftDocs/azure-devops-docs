@@ -2,7 +2,7 @@
 title: Plan product backlog of stories, issues, & more
 titleSuffix: Azure Boards
 description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
-ms.custom: "boards-backlogs, seodec18, contentperfq4" 
+ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
