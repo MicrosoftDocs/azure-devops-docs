@@ -27,22 +27,17 @@ Componentization is the act of separating and structuring of your product into a
 
 ## Source componentization
 
-As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and *components* start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions. 
+As your product grows, the solution and the project model can become inefficient. Changes take longer to integrate and are harder to merge, the build gets slower, and *components* start to grow from a single project to multiple projects. Generally, this is the point at which teams start breaking out these sets of related projects into separate solutions.
 
-Once you've outgrown a single solution, how you componentize becomes an interesting question.
-We started with *source composition*, where each component is referenced via a project reference in Visual Studio.
-Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
+Once you've outgrown a single solution, how you componentize becomes an interesting question. We started with *source composition*, where each component is referenced via a project reference in Visual Studio. Source composition is possible as long as your source lives in a single composition boundary: a single solution within a single source repository.
 
-Unfortunately, these project references start to break down when multiple solutions are involved. 
-At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is binary composition.
+Unfortunately, these project references start to break down when multiple solutions are involved. At this point, when solution A depends on solution B it must refer to the built binaries (i.e. DLLs) produced by solution B - this is binary composition.
 
 Accordingly, these binaries now need to be built and made available to A before A can build successfully. There are a few ways to do that:
 
-- You can check them into source control.
-Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance.
+- You can check them into source control. Depending on your source control system, binaries can quickly balloon the size of your repo, slowing check-out times and general repo performance.
 If you start to work in branches, multiple teams can end up introducing the same binary at different versions, creating nasty merge conflicts at the root of the tree.
-- You can put them on a file share somewhere. 
-File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
+- You can put them on a file share somewhere. File shares have a few limitations: there's no index for quick lookups, and there's no protection against overwriting a version later.
 
 ## Package componentization
 
