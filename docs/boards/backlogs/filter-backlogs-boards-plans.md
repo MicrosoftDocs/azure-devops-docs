@@ -897,12 +897,9 @@ Here we filter the Backlog with **Show Parents** enabled, to only show work item
 The filtered set is always a flat list, even if you've selected to show parents. 
 
 
-
-
 ::: moniker range=">= tfs-2017"
 
 <a id="field-filter" />
-
 
 ## Filter based on a field  
 
@@ -937,20 +934,19 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"
-
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](media/filter-boards/filter-kb-filters-chosen-services.png)
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 ![Kanban board, Filter on assignment field, earlier versions](media/filter-boards/filter-kb-filters-chosen.png)
-
 ::: moniker-end
 
 
 <a id="filter-logic"></a>
+
+::: moniker range=">= tfs-2017"
 
 ### Kanban board filter logic
 
@@ -965,6 +961,9 @@ Cards are filtered based on the assignments made in the following order and logi
 4.	**Tags**: Show all cards that have tag 1 ```AND``` or ```OR``` tags 2, based on your selection of ```AND | OR```.
 	```AND```
 5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ### Filter a backlog using fields
 
