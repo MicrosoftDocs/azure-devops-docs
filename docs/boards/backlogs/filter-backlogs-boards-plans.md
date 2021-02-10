@@ -17,25 +17,19 @@ ms.date: 02/06/2021
 
 <a id="filter"></a>
 
-When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them. With filtering, you can selectively choose what work items are listed or displayed. 
+When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them. You can apply one or more filter functions to Azure Board tools.  
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="<= tfs-2015"
+You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
+::: moniker-end 
+
+::: moniker range=">= tfs-2017"
 
 Use filters to perform these tasks:  
 - In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
 - Or, if your team uses the Taskboard, filter for a team member's completed assigned work. 
 - To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
-- Triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2017 < azure-devops-2020"
-
-Use filters to perform these tasks:  
-- In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
-- Or, if your team uses the Taskboard, filter for a team member's completed assigned work. 
-- To focus on a group of work items, filter based on Area Path, or Tags.  
-- Triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
+- To triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
 
 ::: moniker-end 
 
@@ -48,7 +42,6 @@ Use filters to perform these tasks:
 ::: moniker range=">= azure-devops-2019"
 
 Filter functions are available from all Azure Boards tools: Work items, Boards, Backlogs, Sprint Backlogs and Taskboards, Queries, and Delivery Plans. The set of features supported depends on the tool and Azure DevOps version. *(Use the content selector to view the filters available for your version.)* 
-
 
 The following table indicates the supported options based on the tool indicated with a ✔️ or are listed. 
 
@@ -284,11 +277,6 @@ Supported options are indicated with a ✔️ or listed.
 
 ::: moniker-end 
 
-::: moniker range="<= tfs-2015"
-
-You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
-
-::: moniker-end 
 
 
 
@@ -751,18 +739,12 @@ To learn more about these additional functions, see the following articles:
 
 ### Parent Work Item filter and Parent field
 
+The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter function was added in July 2016 and made available in Azure DevOps Server 2017 and later versions.    
 
-The **Parent Work Item** filter enables you to focus on one or more select features or epics. This filter option is supported for Azure Boards and Azure DevOps Server 2020 and later versions.   
-
-The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020.  You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. While the Parent field was added, the ability to filter based on the **Parent Work Item** was added in July 2016.  
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
+The **Parent** field was added to Azure Boards in July of 2019 and then made available with the release of Azure DevOps Server 2020. You can add the **Parent** field to a list through the **Column Options** dialog, except for the **Work items** tool. 
 You can also add the **Parent** field to cards on the Kanban Boards and Taskboards. 
-::: moniker-end
 
- 
+::: moniker-end 
 
 ## Prerequisites
 
