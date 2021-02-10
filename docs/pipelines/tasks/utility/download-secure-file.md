@@ -45,7 +45,7 @@ It is unnecessary to use this task with the [Install Apple Certificate](install-
    </tr>
    <tr>
       <td><code>retryCount</code><br/>Retry Count</td>
-      <td>(Optional) Number of times to retry downloading a secure file if the download fails.<br/>Default value: 5</td>
+      <td>(Optional) Number of times to retry downloading a secure file if the download fails.<br/>Default value: 8</td>
    </tr>
 </table>
 

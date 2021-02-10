@@ -570,11 +570,6 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 [!INCLUDE [temp](../includes/discussion-tip.md)]
 
-## Q & A 
-
-[!INCLUDE [temp](../includes/faq-milestone-marker.md)] 
-
-[!INCLUDE [temp](../includes/faq-picklists.md)] 
 
 
 ## Try this next  
@@ -585,6 +580,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 ## Related articles
 
+- [Azure Boards FAQs](../faqs.yml) 
 - [Index to field descriptions](../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
 - [Add tags to issues or tasks](../queries/add-tags-to-work-items.md)   
 

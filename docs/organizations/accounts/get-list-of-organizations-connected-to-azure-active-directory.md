@@ -39,7 +39,7 @@ Using any organization backed by your Azure AD, complete the following steps. If
 
 3. Select **Azure Active Directory**, and then **Download**.
 
-   :::image type="content" source="media/shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
+   :::image type="content" source="media/shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then Download":::
 
 ## Next steps
 

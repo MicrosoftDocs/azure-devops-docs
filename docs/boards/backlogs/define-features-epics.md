@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 02/17/2020
+ms.date: 02/03/2021
 ---
 
 # Define features and epics  
@@ -133,7 +133,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 1. Choose **Epics** to see a list of all epics defined in your team's active area paths.  
 
-   ![Hierarchical view of backlogs](media/org-backlog-epics-ts-new-nav.png) 
+   ![Epics is highlighted in the left nav pane. The Epics pane has a list of four epics, with Effort, Title, State, and Value Area columns.](media/org-backlog-epics-ts-new-nav.png) 
 
 ::: moniker-end
 
@@ -282,7 +282,7 @@ The work item always corresponds to the hierarchy of work item types that are de
 
 For Scrum projects, your hierarchy is as shown: 
 
-![Hierarchical view of backlogs](media/ALM_OB_Scrum_WIT_Hier_C.png) 
+![From top to bottom, the hierarchy shows Epic, Feature, Product Backlog Item, and Task.](media/ALM_OB_Scrum_WIT_Hier_C.png) 
 
 Because [teams can also set bugs as tasks](../../organizations/settings/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
@@ -296,14 +296,7 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
 
-
-## Q & A
-
-[!INCLUDE [temp](../includes/faq-copy-clone.md)]
-
-[!INCLUDE [temp](../includes/faq-critical-path.md)]
-
-
+ 
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 
@@ -314,6 +307,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 ## Related articles  
 
+-  [Azure Boards FAQs](../faqs.yml) 
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   

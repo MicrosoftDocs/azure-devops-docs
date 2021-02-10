@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 # Troubleshoot creating a project
 
@@ -101,7 +101,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ### Q: How do I add SharePoint portal resources?
 
-**A:** See one of these topics:
+**A:** See one of the following articles:
 
 -   To add a SharePoint web application: [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).
 

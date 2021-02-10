@@ -15,4 +15,5 @@ ms.technology: devops-cicd-tasks
     #archiveFilePatterns: '**/*.zip' 
     destinationFolder: 
     #cleanDestinationFolder: true 
+    #overwriteExistingFiles: false
 ```

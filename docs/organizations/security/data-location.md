@@ -22,7 +22,7 @@ Azure DevOps data is available in the following eight geographies across the wor
 - Australia
 - Brazil
 - Canada
-- East Asia
+- Asia Pacific
 - Europe
 - India
 - United Kingdom
@@ -65,9 +65,7 @@ Microsoft will transfer your data if it needs to do any of the following actions
 > Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
 
 > [!NOTE]
-> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to third party data centers as follows:
->- US-based users: your data is transferred to a third party US data center
->- Users from all other countries/regions: your data is transferred to either a third party US data center or European data center
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a third-party data center in the US.
 
 These two data center locations are owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 Type II report.
 

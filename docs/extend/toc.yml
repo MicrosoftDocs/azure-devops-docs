@@ -74,10 +74,6 @@
       href: publish/command-line.md
     - name: Respond to Marketplace reviews
       href: publish/manage-ratings-reviews.md
-  - name: Reporting
-    items:
-    - name: Extension statistics Power BI content pack
-      href: extension-statistics-powerbi-contentpack.md
 - name: Reference
   items:
   - name: Manifest reference

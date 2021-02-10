@@ -162,7 +162,7 @@ Select the **starter** template and copy this YAML snippet to build a general No
 ```
 For more guidance, follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
 
-- Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+- Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 - A new run is started. Wait for the run to complete.
 

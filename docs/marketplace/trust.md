@@ -55,6 +55,6 @@ As a customer, you can expect timely support and good overall experience when ac
 For more information on the Top Publisher program, see the [publisher facing requirements](../extend/publish/publicize.md).
 
 > [!NOTE]
-> Through this program, it is the publisher that is being certified. This doesn't cover the software or security of their extensions and integrations. We recommend you read the trust section above when evaluating the offerings from a publisher.
+> Through this program, it is the publisher that is being certified. This doesn't cover the software or security of their extensions and integrations. We recommend you read the previous trust section when you're evaluating the offerings from a publisher.
 
 If you acquired an offering from a Top Publisher and aren't satisfied with your experience, consider engaging with the publisher first. Afterward, if you're still unsatisfied, [contact the Marketplace team](/vsts/marketplace/marketplace-billing-qa).

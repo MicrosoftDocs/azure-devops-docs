@@ -7,7 +7,7 @@ ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/22/2020
 ---
 

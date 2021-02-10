@@ -85,7 +85,7 @@ See the [quickstart documentation for setting repository permissions](/azure/dev
 
 ### Integrate using the pull request status API and branch policy
 
-Branch policies enable teams to maintain high quality branches and follow best practices during the pull request workflow. Now, you can use the pull request status API and branch policy to integrate custom tooling into pull request workflows. Whether it’s integrating with a 3rd party CI/CD solution, or enforcing your own internal process requirements, the status API can help. Check out our [code](https://go.microsoft.com/fwlink/?linkid=854108), [samples](https://go.microsoft.com/fwlink/?linkid=866529), and [documentation](https://go.microsoft.com/fwlink/?linkid=866532) for more information.
+Branch policies enable teams to maintain high quality branches and follow best practices during the pull request workflow. Now, you can use the pull request status API and branch policy to integrate custom tooling into pull request workflows. Whether it’s integrating with a 3rd party CI/CD solution, or enforcing your own internal process requirements, the status API can help. Check out our [code](/azure/devops/repos/git/create-pr-status-server), [samples](/azure/devops/repos/git/create-pr-status-server-with-azure-functions), and [documentation](/azure/devops/repos/git/pull-request-status) for more information.
 
 ## Work
 
@@ -160,8 +160,8 @@ The unified agents approach also allows admins to manage all machines being used
 Over the course of the last several sprints, we delivered several crucial pieces to enable this capability, including:
 
 * Agents can be [configured for UI testing](/azure/devops/pipelines/agents/agents#account)
-* [Visual Studio Test Platform Installer](/azure/devops/release-notes/2017/nov-28-vsts#test) allows VSTest task to run without needing Visual Studio pre-installed
-* Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](/azure/devops/release-notes/2017/dec-11-vsts#enhancements-to-multi-phase-builds) for each phase
+* [Visual Studio Test Platform Installer](../2017/nov-28-vsts.md#test) allows VSTest task to run without needing Visual Studio pre-installed
+* Both Build and Release definitions can be created with [multiple phases and have the ability to use different agent queues](../2017/dec-11-vsts.md#enhancements-to-multi-phase-builds) for each phase
 * Automated test cases can be [run from the Test hub](/azure/devops/pipelines/test/run-automated-tests-from-test-hub) using the VSTest task
 
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.

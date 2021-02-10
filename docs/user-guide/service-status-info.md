@@ -64,9 +64,8 @@ we communicate impact of each of these services by geographic region in the serv
 
 ### Event Logs
 
-More information on active events is found in the form of an "event log" that's displayed on the top 
-of the service health matrix. Each log has additional associated information in the form of the impacted service 
-and geography, as well as the duration of a specific event. You can click through the provided hyperlink to navigate into 
+More information on active events is found in the form of an "event log" that's displayed on the upper portion of the service health matrix. Each log has additional associated information in the form of the impacted service 
+and geography, as well as the duration of a specific event. You can click through the provided hyperlink to go into 
 the event log, which provides detailed information on the event being investigated.
 
 The [Status history section](https://status.dev.azure.com/_history) provides a view into current active 
@@ -86,5 +85,5 @@ we [provide REST APIs](/rest/api/resourcehealth/) to retrieve the current health
 
 If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to take any further 
 action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
-to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
-resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
+to the resources available on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+

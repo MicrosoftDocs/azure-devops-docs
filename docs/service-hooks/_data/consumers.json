@@ -346,7 +346,7 @@
 {
 "id": "userToken",
 "name": "User token (need one? <a href='https://go.microsoft.com/fwlink/?LinkID=390580'>Get it now</a>)",
-"description": "Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.",
+"description": "Your user token provided by Trello.  Select the link in the previously mentioned action description to learn how to obtain this token.",
 "inputMode": "textBox",
 "isConfidential": true,
 "useInDefaultDescription": false,
@@ -487,8 +487,8 @@
 },
 {
 "id": "addToTop",
-"name": "Create at top of list",
-"description": "Indicates if the card should be created at the top of the Trello list, instead of the bottom.",
+"name": "Create at beginning of list",
+"description": "Indicates if the card should be created at the beginning of the Trello list, instead of the end.",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,
@@ -731,7 +731,7 @@
 {
 "id": "buildParameterized",
 "name": "Accepts parameters",
-"description": "Indicates if the build is parameterized or not (build parameters are optionally specified above)",
+"description": "Indicates if the build is parameterized or not (build parameters are optionally specified previously)",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,
@@ -820,7 +820,7 @@
 {
 "id": "notifyRoom",
 "name": "Notify room participants",
-"description": "Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc). Each recipient's notification preferences are taken into account.",
+"description": "Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, and so on). Each recipient's notification preferences are taken into account.",
 "inputMode": "checkBox",
 "isConfidential": false,
 "useInDefaultDescription": false,

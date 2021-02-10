@@ -111,7 +111,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
 
-1. Navigate to the local gallery management portal (```http://{server}/_gallery/manage```).
+1. Go to the local gallery management portal (```http://{server}/_gallery/manage```).
 
 2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
@@ -123,7 +123,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## Uninstall extensions in a collection
 
-1. Navigate to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
+1. Go to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
 
 2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 

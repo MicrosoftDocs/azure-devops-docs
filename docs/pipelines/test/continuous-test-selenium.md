@@ -161,7 +161,7 @@ from Visual Studio Test Explorer.
 ## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
-For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
+For more details, see [Build your .NET desktop app for Windows](../apps/aspnet/build-aspnet-4.md).
 
 ## Create your web app
 

@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, and personal access tokens to securely s
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -41,7 +41,7 @@ Use PATs to authenticate if you don't already have SSH keys set up on your syste
 
 ### <a name="use-credential-managers-to-generate-tokens"></a>Use Git Credential Manager to generate tokens
 
-[Git credential managers](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
+The [Git Credential Manager Core](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
 Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. 
 
 PATs are generated on demand when you have the credential manager installed. 
@@ -67,8 +67,8 @@ Learn more about [setting up SSH with Azure DevOps](use-ssh-keys-to-authenticate
 
 ## OAuth
 
-Use [OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+Use [OAuth](../../integrate/get-started/authentication/oauth.md) 
+to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
@@ -78,4 +78,3 @@ or Windows running [Git for Windows](https://www.git-scm.com/download/win)
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
- 

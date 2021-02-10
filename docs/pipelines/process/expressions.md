@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 08/28/2020
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,7 +29,7 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions.
+Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. Runtime expressions are intended as a way to compute the contents of variables and state (example: `condition`). 
 
 ```yaml
 # Two examples of expressions used to define variables
@@ -51,7 +51,7 @@ In this example, a runtime expression sets the  value of `$(isMain)`. A static v
 variables:
   staticVar: 'my value' # static variable
   compileVar: ${{ variables.staticVar }} # compile time expression
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')] # runtime expression
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')] # runtime expression
 
 steps:
   - script: |
@@ -423,7 +423,7 @@ For templates, you can use conditional insertion when adding a sequence or mappi
 ### Conditionally assign a variable
 ```yml
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # only works if you have a master branch
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}: # only works if you have a main branch
     stageName: prod
 
 pool:
@@ -442,11 +442,29 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'prod'
-    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if ne(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'dev'
     publishLocation: 'pipeline'
+```
+
+
+## Each keyword
+
+You can use the `each` keyword to loop through parameters with the object type. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
 ```
 
 ## Dependencies

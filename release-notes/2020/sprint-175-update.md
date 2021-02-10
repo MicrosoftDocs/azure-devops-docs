@@ -17,21 +17,27 @@ Check out the [Features](#features) list below for details.
 ## Features
 
 ### Azure Boards
+
 [!INCLUDE [sprint-175-update-links](includes/boards/sprint-175-update-links.md)]
 
 ### Azure Pipelines
+
 [!INCLUDE [sprint-175-update-links](includes/pipelines/sprint-175-update-links.md)]
 
 ### Azure Test Plans
+
 [!INCLUDE [sprint-175-update-links](includes/testplans/sprint-175-update-links.md)]
 
 ## Azure Boards
+
 [!INCLUDE [sprint-175-update-links](includes/boards/sprint-175-update.md)]
 
 ## Azure Pipelines
+
 [!INCLUDE [sprint-175-update](includes/pipelines/sprint-175-update.md)]
 
 ## Azure Test Plans
+
 [!INCLUDE [sprint-175-update](includes/testplans/sprint-175-update.md)]
 
 ## Next steps

@@ -58,7 +58,7 @@ You must escape the special characters `(`,  `)`, `[`, `]`, `:`, `*`, and `?`
 by enclosing them in a phrase delimited with double-quotes `"` and `"`.
 
 When you search from inside a project, the default is to search only within that 
-project. You can navigate up to higher levels to broaden your search.
+project. You can go up to higher levels to broaden your search.
 
 In a Git project, you see a list of the repositories it contains. 
 Use the project and repository checkboxes to widen your search to more or all projects, or to 
@@ -66,7 +66,7 @@ narrow your search to fewer projects and repositories. If there are more than a 
 projects or repositories, use the **Show more** link to see them all.
 
 Code Search can index multiple branches in a Git repository - by default it indexes 
-files in only the default branch of your Git repositories (usually this is the **master** branch).
+files in only the default branch of your Git repositories (usually this is the **main** branch).
 Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
@@ -299,10 +299,8 @@ Some more examples of search strings are:
 
 * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-Open the search results in a new browser tab from either search box by
-pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/shared/start-search-icon.png) icon.
-In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+Open the search results in a new browser tab from either search box and
+press _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
 

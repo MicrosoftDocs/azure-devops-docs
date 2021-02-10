@@ -33,7 +33,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 ::: moniker-end
 
 > [!NOTE] 
-> This article addresses customization of a sprint Taskboard. For information on customizing a Kanban board, see [Manage and configure team tools, Configure Kanban board](../../organizations/settings/manage-teams.md#configure-kanban-boards). 
+> This article addresses customization of a sprint Taskboard. For information on customizing a Kanban board, see [Manage and configure team tools](../../organizations/settings/manage-teams.md#configure-team-backlogs). 
 
 
 ## Prerequisites

@@ -123,7 +123,7 @@ Now you can rename your wiki in the wiki user interface and using REST APIs. Fro
 
 ### Insert a wiki table of contents from the format pane
 
-Last sprint we shipped the ability to [create table of contents](/azure/devops/release-notes/2018/aug-21-vsts#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
+Last sprint we shipped the ability to [create table of contents](./aug-21-vsts.md#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
 
 > [!div class="mx-imgBorder"]
 > ![Insert wiki TOC](media/140_04.png)

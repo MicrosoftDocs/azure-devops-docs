@@ -32,6 +32,12 @@
     href: save-project-data.md
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md 
+  - name: FAQs
+    items:
+    - name: Create a project
+      href: faq-create-project.md
+    - name: Rename a project
+      href: faq-rename-project.md
 - name: Public projects
   href: ../public/about-public-projects.md 
 

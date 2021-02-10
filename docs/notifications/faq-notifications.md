@@ -1,7 +1,7 @@
 ---
 title: Notification FAQs
 titleSuffix: Azure DevOps
-description: General questions and answers about notifications set in Azure DevOps or Team Foundation Server 
+description: General questions and answers about notifications settings in Azure DevOps.
 ms.technology: devops-collab
 toc: show
 ms.topic: conceptual
@@ -15,19 +15,20 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-## Can I receive emails in plain text?
-No. Plain text was supported in earlier versions of Azure DevOps and TFS, but all emails are now HTML formatted.
+## Q: Can I receive emails in plain text?
 
-## How can I avoid receiving any notifications for activity in an organization?
+A: No. Plain text was supported in earlier versions of Azure DevOps, but all emails are now HTML formatted.
 
-Because of custom subscriptions, there's no way to completely avoid receiving any notifications. However, you can do the following  actions to minimize the amount you receive:
+## Q: How can I avoid receiving any notifications for activity in an organization?
+
+A: Because of custom subscriptions, there's no way to completely avoid receiving any notifications. However, you can do the following  actions to minimize the amount you receive:
 
 - Unsubscribe from all default and admin-created team and group subscriptions
 - Disable or remove all custom subscriptions
 
-## Why do some emails have multiple recipients on the To line? 
+## Q: Why do some emails have multiple recipients on the To line? 
 
-A default or team or group subscription can have multiple recipients, depending on how it's configured. When all users have permission to the resource related to the event, they get combined in one email.
+A: A default or team or group subscription can have multiple recipients, depending on how it's configured. When all users have permission to the resource related to the event, they get combined in one email.
 
 Previously, each recipient received an individually addressed email, which could result in the same user getting multiple emails because of their membership in multiple groups.
 

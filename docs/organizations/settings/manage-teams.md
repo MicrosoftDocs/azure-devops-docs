@@ -7,26 +7,21 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
-ms.date: 10/22/2020
+monikerRange: '<= azure-devops'
+ms.date: 12/07/2020
 ---
 
 # Manage and configure team tools
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-Learn how to configure team tools and manage your teams in Azure DevOps.
+As a team administrator, you can customize your backlogs and board to best meet how your team works. If you need to have a team created, request a member of your Project Administrators group do so. It only takes a minute to add a new team.    Team settings are managed by the team administrator role. Users assigned as team administrator can configure and manage all team tools.  
 
-[!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
-
-Most permissions are governed by security groups or defined at the object level. Team settings are managed by the team administrator role. Users assigned as team administrator can configure and manage all team tools. 
-
-Team Administrators should do the following tasks: 
+Team administrators should do the following tasks: 
 - [Add team members](#add-users-to-a-team)
 - [Add another team administrator](#add-an-administrator) 
 - [Configure areas and iteration paths](#configure-team-areas-and-iterations)
-- [Configure backlogs and other common team settings](#configure-team-backlogs-and-other-common-settings)
-- [Configure Kanban boards](#configure-kanban-boards) 
+- [Configure backlogs, boards, and general settings](#configure-team-backlogs)
 
 Also, consider the following optional tasks: 
 - [Configure and manage team dashboards](#add-and-manage-team-dashboards)
@@ -34,8 +29,10 @@ Also, consider the following optional tasks:
 
 ## Prerequisites
 
-- To perform any of the tasks documented in this article, you need to be added as a team administrator for the team to be modified, or be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
+- To perform any team configuration task, you need to be added as a team administrator for the team to be modified, or be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
 - To add a team, you must be a member of the [Project Administrator or Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information, see [Add teams](add-teams.md).
+
+[!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -88,22 +85,18 @@ Settings include making the following associations for each team:
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
 
-## Configure team backlogs and other common settings 
+<a id="configure-team-backlogs" />
 
-::: moniker range=">= tfs-2015"  
+## Configure team backlogs, boards, and general settings 
+
 Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. Also, administrators can choose whether bugs are treated similar to user stories and requirements or as tasks. 
 
-Team Administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.  
-::: moniker-end  
+Team administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.   
 
-::: moniker range=">= tfs-2015"  
 You can configure most of your team settings from the common configuration dialog. 
-::: moniker-end  
 
-::: moniker range="tfs-2015"  
 > [!NOTE]
 > The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
-::: moniker-end  
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
@@ -172,7 +165,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Settings** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -196,120 +189,65 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-For more information on each configuration option, see the following articles:
+Team administrators can fully customize the team's Kanban boards associated with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
+For more information on each configuration option, see the following articles: 
 
-:::row:::
-   :::column span="1":::
-      **Area**
-   :::column-end:::
-   :::column span="1":::
-      **Configuration task**
-   :::column-end:::
-:::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
+      **General**
+      - [Backlogs](select-backlog-navigation-levels.md)
+      - [Working days](set-working-days.md)
+      - [Working with bugs](show-bugs-on-backlog.md)
+            
+            
       **Cards**
-   :::column-end:::
-   :::column span="1":::
+      ::: moniker range=">= tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
       - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
       - [Enable annotations](../../boards/boards/customize-cards.md#enable-annotations)
       - [Configure inline tests](../../boards/boards/customize-cards.md#configure-inline-tests)
-   :::column-end:::
-:::row-end:::
-::: moniker-end
----
-::: moniker range="< azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **Cards**
-   :::column-end:::
-   :::column span="1":::
+      ::: moniker-end
+      ::: moniker range="< tfs-2017"
       - [Add fields](../../boards/boards/customize-cards.md)
       - [Define styles](../../boards/boards/customize-cards.md#define-style-rules-to-highlight-cards)
       - [Add tag colors](../../boards/boards/customize-cards.md#color-code-tags)
+      ::: moniker-end
    :::column-end:::
-:::row-end:::
-::: moniker-end
----
-::: moniker range=">= azure-devops-2020"
-:::row:::
    :::column span="1":::
       **Boards**
-   :::column-end:::
-   :::column span="1":::
-      - [Add columns](../../boards/boards/add-columns.md)
+      ::: moniker range=">= azure-devops-2019"
+      - [Add columns](../../boards/boards/add-columns.md)  
+      - [Split columns](../../boards/boards/split-columns.md)    
+      - [WIP limits](../../boards/boards/wip-limits.md)    
+      - [Definition of Done](../../boards/boards/definition-of-done.md)   
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/reorder-cards.md)
       - [Configure status badges](../../boards/github/configure-status-badges.md)
-   :::column-end:::
-:::row-end:::
-::: moniker-end
----
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-      **Boards**
-   :::column-end:::
-   :::column span="1":::
+      ::: moniker-end
+      ::: moniker range=">= tfs-2015 <= tfs-2018"
       - [Add columns](../../boards/boards/add-columns.md)
+      - [Split columns](../../boards/boards/split-columns.md)    
+      - [WIP limits](../../boards/boards/wip-limits.md)    
+      - [Definition of Done](../../boards/boards/definition-of-done.md)  
       - [Add swimlanes](../../boards/boards/expedite-work.md)
       - [Card reordering](../../boards/boards/reorder-cards.md)
-   :::column-end:::
-:::row-end:::
-::: moniker-end
----
-::: moniker range=" tfs-2015"
-:::row:::
-   :::column span="1":::
-      **Boards**
-   :::column-end:::
-   :::column span="1":::
+      ::: moniker-end
+      ::: moniker range="tfs-2013"
       - [Add columns](../../boards/boards/add-columns.md)
-   :::column-end:::
-:::row-end:::
-::: moniker-end
----
-:::row:::
-   :::column span="1":::
+      - [WIP limits](../../boards/boards/wip-limits.md)    
+      - [Definition of Done](../../boards/boards/definition-of-done.md)   
+      ::: moniker-end
+            
+            
       **Chart**
-   :::column-end:::
-   :::column span="1":::
-      - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md#configure)
+      - [Configure cumulative flow chart](../../report/dashboards/cumulative-flow.md)
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="1":::
-      **General**
-   :::column-end:::
-   :::column span="1":::
-      - [Backlogs](select-backlog-navigation-levels.md)
-      - [Working days](set-working-days.md)
-      - [Working with bugs](show-bugs-on-backlog.md)
-   :::column-end:::
-:::row-end:::
----
-
-## Configure Kanban boards 
-
-Team administrators can fully customize the team's Kanban boards associated with the product and portfolio backlogs. You configure a Kanban board by first defining the columns and WIP limits from the common configuration dialog. For guidance, see [Kanban basics](../../boards/boards/kanban-basics.md).  
-
-* [Columns](../../boards/boards/add-columns.md)  
-* [WIP limits](../../boards/boards/wip-limits.md)    
-* [Definition of Done](../../boards/boards/definition-of-done.md)  
-
-::: moniker range=">= tfs-2015" 
-
-Additional elements you can configure include: 
-* [Split columns](../../boards/boards/split-columns.md)   
-* [Swimlanes](../../boards/boards/expedite-work.md)  
-* [Card fields, styles, tag colors, annotations, and card reordering](../../boards/boards/customize-cards.md#kanban-board)    
-
-::: moniker-end
+ 
+**Kanban board**
 
 :::image type="content" source="../../boards/boards/media/quickstart/intro-view.png" alt-text="Screenshot of Kanban.":::
 

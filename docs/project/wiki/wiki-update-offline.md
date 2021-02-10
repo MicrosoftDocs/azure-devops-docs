@@ -66,14 +66,14 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 	<img src="media/wiki/clone-wiki.png" alt="Clone wiki Git repository" style="border: 1px solid #C3C3C3;" />
 
-2. From the **Clone repo** dialog, select the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy-clone icon.  
+3. From the **Clone repo** dialog, select :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: **Copy-clone**.  
 
 	<img src="media/wiki/clone-wiki-dialog.png" alt="Copy the wiki url" style="border: 1px solid #C3C3C3;" />
 
 	Enter it in your browser to view the files defined under the wikiMaster branch.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Wiki Master files](media/wiki/work-offline-wikiMaster-files.png)
+	> ![Wiki Main files](media/wiki/work-offline-wikiMaster-files.png)
 
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)

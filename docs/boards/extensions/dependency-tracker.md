@@ -9,7 +9,7 @@ ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 12/02/2019
+ms.date: 01/21/2021
 ---
 
 # Plan and track dependencies using the Dependency Tracker
@@ -21,6 +21,8 @@ The Dependency Tracker extension provides you with the ability to plan and manag
 
 > [!NOTE]   
 > The Dependency Tracker extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) page. The Dependency Tracker extension is only available on Azure DevOps Services. 
+> 
+> Another tool that supports dependency views is the [Delivery Plans (Preview)](../plans/review-team-plans.md#dependencies).
 
 You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
 - **Consumer**: Feature team who has a need and initiates a request for work

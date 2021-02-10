@@ -6,13 +6,13 @@ ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 #  Create a new Git repo
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
@@ -32,7 +32,7 @@ The following video explains what Git repos are, and shows you how to create the
 
 <iframe src="https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-Git-repo-in-Visual-Studio-2015/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>
 
->[!TIP]
+> [!TIP]
 > Working from the command line? You can view our video overview using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
 
 ## Create a new repo
@@ -41,6 +41,9 @@ Manage any folder with source code or Visual Studio solution in Git by creating 
 Later you can connect this Git repo to a remote Git repo to share your work with others. 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 ### Create a repo 
 
 * [Create a repo from a new solution](#from-a-new-solution)

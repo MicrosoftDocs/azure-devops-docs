@@ -24,7 +24,7 @@ To trigger a pipeline upon the completion of another, specify the triggering pip
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
 
-In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the master branch or any releases branch.
+In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the main branch or any releases branch.
 
 
 ```yaml
@@ -36,7 +36,7 @@ resources:
     trigger: 
       branches:
       - releases/*
-      - master
+      - main
 ```
 
 * `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.

@@ -38,8 +38,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 Set up credentials by following these four steps:
 
-1. **Step 1**:  
-    Copy the code below to your user `.npmrc` file.
+1. Copy the code below to your user `.npmrc` file.
 
     ```
     ; begin auth token
@@ -52,11 +51,9 @@ Set up credentials by following these four steps:
     ; end auth token
     ```
 
-2. **Step 2**:  
-    Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with Packaging read & write scopes.
+2. Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with Packaging read & write scopes.
 
-3. **Step 3**:  
-    Base64 encode the personal access token from Step 2. Follow the steps below to safely encode your PAT:
+3. Base64 encode the personal access token from Step 2. Follow the steps below to safely encode your PAT:
 
     1. From a command/shell prompt run the following:
         
@@ -79,8 +76,7 @@ Set up credentials by following these four steps:
     2. Paste your personal access token value and press Enter/Return.
     3. Copy the Base64 encoded value.
 
-4. **Step 4**:  
-    Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
+4. Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
 
 ::: moniker-end
 

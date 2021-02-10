@@ -168,7 +168,7 @@ landingContent:
           - text: Set up your Backlogs & Boards
             url: ./backlogs/set-up-your-backlog.md
           - text: FAQs 
-            url: faqs.md
+            url: faqs.yml
   - title: Quick reference
     linkLists:
       - linkListType: reference

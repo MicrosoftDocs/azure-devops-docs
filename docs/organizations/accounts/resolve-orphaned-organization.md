@@ -70,7 +70,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 Complete the following steps when your Azure DevOps Administrator in Azure AD isn't a member of the target Azure DevOps organization.
 
 1.    Sign in to your organization (```https://dev.azure.com/{yourorganization}```) using the credentials granted to the Azure DevOps Administrator role in Azure AD. 
-    An error page appears with a button for claiming ownership.
+    An error page appears where you can Claim Ownership.
  
       ![Azure AD Administrator not member of organization](media/change-organization-ownership/error-message-administrator-not-member-of-organization.png)
 
