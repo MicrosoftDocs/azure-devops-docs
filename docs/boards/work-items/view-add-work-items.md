@@ -70,7 +70,7 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
-#### [Web portal](#tab/browser/)
+# [Web portal](#tab/browser/)
 
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
@@ -78,7 +78,7 @@ You can start viewing and adding work items once you connect to a project.
 > ![Open Boards>Work Items](media/view-add/open-work-items-agile.png)
 
 
-#### [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio/)
 
 Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. To switch between the **Work Items** (default) view and the legacy view, see [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
 
@@ -101,7 +101,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 ::: moniker-end
 
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+# [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
 
@@ -117,7 +117,9 @@ There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that ope
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  You can also use an Azure DevOps CLI command to view details about a work item.
 
-#### [Web portal](#tab/browser/)
+# [Web portal](#tab/browser/)
+
+
 ---  
 :::row:::
    :::column span="1":::
@@ -154,7 +156,10 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 :::row-end:::
 ---  
 
-#### [Visual Studio 2019](#tab/visual-studio/)
+
+
+# [Visual Studio 2019](#tab/visual-studio/)
+
 
 To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
 
@@ -172,7 +177,10 @@ To view a work item, double-click the title or open the context menu for the wor
 :::row-end:::
 ---  
  
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+
+# [Azure DevOps CLI](#tab/azure-devops-cli/)
+
 
 ::: moniker range=">= azure-devops-2020"  
 
@@ -216,7 +224,10 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
-#### [Web portal](#tab/browser/)
+
+# [Web portal](#tab/browser/)
+
+
 
 For example, here we choose User Story. 
 
@@ -230,7 +241,9 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-#### [Visual Studio 2019](#tab/visual-studio/)
+
+# [Visual Studio 2019](#tab/visual-studio/)
+
 
 For example, here we choose User Story. 
 
@@ -249,7 +262,9 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/) 
+
+# [Azure DevOps CLI](#tab/azure-devops-cli/) 
+
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
@@ -267,17 +282,17 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).  
 
 
-#### [Web portal](#tab/browser/)
+# [Web portal](#tab/browser/)
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Work Items, Filter to show Bugs ](media/view-add/work-items-filter-bug.png)
 
-#### [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio/)
 
 > [!div class="mx-imgBorder"]
 > ![Team Explorer>Work Items, Filter based on a key word ](media/view-add/filter-list-vs-te.png)
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+# [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
