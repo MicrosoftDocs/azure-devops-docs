@@ -41,7 +41,7 @@ steps:
 
 ### [Classic](#tab/classic)
 
-1. Add the PowerShell Script task to your pipeline. 
+1. Add the PowerShell Script task to your pipeline. The same [PowerShell task](../tasks/utility/powershell.md) works for PowerShell Core and Windows PowerShell. 
 
     :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
 
