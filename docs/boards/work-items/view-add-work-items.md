@@ -20,7 +20,9 @@ ms.date: 02/11/2021
 **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
 
 
-View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image.,  as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
+
+<br/> 
 
 ---  
 :::row:::
@@ -134,6 +136,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
+      <br/><br/><br/><br/>
       ::: moniker range="azure-devops"
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
@@ -173,7 +176,7 @@ To view a work item, double-click the title or open the context menu for the wor
    :::column span="2":::
       <br/><br/>
       - **Assign to me**: Changes the **Assigned To** field to your user name.    
-      - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive GIt developmen](../backlogs/connect-work-items-to-git-dev-ops.md).
+      - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).
       - **Complete work item**: Updates the **State** field to Completed, Done, or Closed.
       - **Relate to changes**: Links the work item to the current commit of recent changes.< 
    :::column-end:::
@@ -182,10 +185,7 @@ To view a work item, double-click the title or open the context menu for the wor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-
 ::: moniker range=">= azure-devops-2020"  
-
-### View work item
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
