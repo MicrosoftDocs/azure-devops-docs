@@ -118,7 +118,6 @@ There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that ope
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  You can also use an Azure DevOps CLI command to view details about a work item.
 
 #### [Web portal](#tab/browser/)
-
 ---  
 :::row:::
    :::column span="1":::
@@ -155,7 +154,6 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 :::row-end:::
 ---  
 
-
 #### [Visual Studio 2019](#tab/visual-studio/)
 
 To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
@@ -174,7 +172,6 @@ To view a work item, double-click the title or open the context menu for the wor
 :::row-end:::
 ---  
  
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">= azure-devops-2020"  
