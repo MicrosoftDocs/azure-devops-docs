@@ -33,7 +33,7 @@ In this article you'll learn how to:
 <!---Address how to parent unparented items --> 
 
 
-Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
+Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed, such as design, code, test, content, or sign out. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
