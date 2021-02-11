@@ -5,6 +5,9 @@
   href: view-add-work-items.md 
 - name: "Add & update a work item"    
   displayName: follow, update status, Discussion  
+- name: Filter your work items
+  href: ../backlogs/filter-backlogs-boards-plans.md  
+  displayname: sort, reorder, group, parent, tags  
   href: ../backlogs/add-work-items.md
 - name: Manage bugs
   href: ../backlogs/manage-bugs.md

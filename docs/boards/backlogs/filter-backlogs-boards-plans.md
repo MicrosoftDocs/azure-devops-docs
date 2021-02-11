@@ -8,16 +8,18 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/06/2021
+ms.date: 02/11/2021
 ---
  
-# Filter backlogs, boards, queries, and plans 
+# Interactively filter backlogs, boards, queries, and plans 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="filter"></a>
 
-When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them. You can apply one or more filter functions to Azure Board tools.  
+With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected Area Paths and Iteration Paths for the team. Query Results list work items based on the query clauses you've defined. 
+
+From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Board tools.  
 
 ::: moniker range="<= tfs-2015"
 You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   

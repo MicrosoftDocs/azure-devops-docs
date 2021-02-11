@@ -7,8 +7,8 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/11/2021
 ---
 
 # 6. Update and monitor your Taskboard
@@ -269,7 +269,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 	> [!div class="mx-imgBorder"]
 	> ![Group by people](media/taskboard/group-by-people-agile.png)
 
-1. To filter on the tasks for a specific team member, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, and then select their name from the **Assigned to** filter box.
+1. To filter on the tasks for a specific team member, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then select their name from the **Assigned to** filter box. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 	> [!div class="mx-imgBorder"]
 	> ![Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)
@@ -405,3 +405,8 @@ Requires TFS 2015.1 or later version.
 ::: moniker range="< azure-devops"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end
+
+## Related articles
+
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)

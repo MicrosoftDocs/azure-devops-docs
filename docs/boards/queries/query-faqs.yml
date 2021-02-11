@@ -9,7 +9,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/03/2021
+  ms.date: 02/11/2021
 
 title: Query FAQs 
 
@@ -163,6 +163,9 @@ sections:
           :::row-end:::
           ---
 
+      - question: Can I filter the Query Results?
+        answer: |
+          **Yes**. See [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md). 
 
       - question: Can I run several queries at the same time?
         answer: |
