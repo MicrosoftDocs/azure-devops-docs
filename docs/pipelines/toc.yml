@@ -571,6 +571,8 @@
       href: tasks/build/xamarin-ios.md
     - name: Xcode
       href: tasks/build/xcode.md
+    - name: Xcode (TFS 2018 and lower)
+      href: tasks/build/xcode-build.md
     - name: Xcode Package iOS
       href: tasks/build/xcode-package-ios.md
   - name: Utility tasks
