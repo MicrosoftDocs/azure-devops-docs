@@ -20,10 +20,7 @@ ms.date: 02/11/2021
 **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019** 
 
 
-View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
-
-> [!NOTE]     
-> The **Work Items** page is available from Azure DevOps Services, Azure DevOps Server 2019 and later versions, and Visual Studio 2019 RC1. 
+View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image.,  as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
 ---  
 :::row:::
@@ -37,6 +34,7 @@ View work items that you created or are assigned to you. The **Work Items** page
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
+      <br/><br/><br/><br/>
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
@@ -48,6 +46,7 @@ View work items that you created or are assigned to you. The **Work Items** page
       - **Recently created**: lists work items created within the last 30 days in the project.  
       ::: moniker-end
       ::: moniker range="< azure-devops"
+      <br/><br/><br/><br/>
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
@@ -61,6 +60,11 @@ View work items that you created or are assigned to you. The **Work Items** page
 :::row-end:::
 ---  
 
+
+> [!NOTE]     
+> The **Work Items** page is available from Azure DevOps Services, Azure DevOps Server 2019 and later versions, and Visual Studio 2019 RC1. 
+
+
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 
@@ -70,7 +74,7 @@ You can start viewing and adding work items once you connect to a project.
 
 <a id="browser" /> 
 
-# [Web portal](#tab/browser/)
+# [Web portal](#tab/browser)
 
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
@@ -78,7 +82,7 @@ You can start viewing and adding work items once you connect to a project.
 > ![Open Boards>Work Items](media/view-add/open-work-items-agile.png)
 
 
-# [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio)
 
 Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. To switch between the **Work Items** (default) view and the legacy view, see [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
 
@@ -101,27 +105,25 @@ If you don't see the **Work Items** option, you need to connect to a project and
 ::: moniker-end
 
 
-# [Azure DevOps CLI](#tab/azure-devops-cli/)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
 
-* * *
+***
 
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Basic](../get-started/plan-track-work.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create differ. For example, backlog items may be called user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of these processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
-
 ## View work items
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of seven pivots. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  You can also use an Azure DevOps CLI command to view details about a work item.
 
-# [Web portal](#tab/browser/)
+# [Web portal](#tab/browser)
 
 <br/>
 
----  
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -155,32 +157,30 @@ Using the drop-down menu, you can focus on relevant items inside a project using
       ::: moniker-end
    :::column-end:::
 :::row-end:::
----  
 
 <br/>
 
 
-# [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio)
 
 
 To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
 
----  
 :::row:::
    :::column span="1":::
       ![Screenshot of Boards&gt;Work Items Menu, Visual Studio 2019.](media/view-add/work-item-menu-options-vs.png)  
    :::column-end:::
    :::column span="2":::
+      <br/><br/>
       - **Assign to me**: Changes the **Assigned To** field to your user name.    
       - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive GIt developmen](../backlogs/connect-work-items-to-git-dev-ops.md).
       - **Complete work item**: Updates the **State** field to Completed, Done, or Closed.
       - **Relate to changes**: Links the work item to the current commit of recent changes.< 
    :::column-end:::
 :::row-end:::
----  
- 
 
-# [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 
 ::: moniker range=">= azure-devops-2020"  
@@ -217,7 +217,8 @@ ID    Type    Title      Assigned To          State
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+
+***
 
 <a id="add-work-item" />
 
@@ -226,9 +227,7 @@ ID    Type    Title      Assigned To          State
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
 
-# [Web portal](#tab/browser/)
-
-
+# [Web portal](#tab/browser)
 
 For example, here we choose User Story. 
 
@@ -243,7 +242,7 @@ Enter a title and then save the work item. Before you can change the State from 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 
-# [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio)
 
 
 For example, here we choose User Story. 
@@ -264,14 +263,14 @@ Enter a title and then save the work item. Before you can change the State from 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 
-# [Azure DevOps CLI](#tab/azure-devops-cli/) 
+# [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
-* * *
+***
 
 You can [add tags to any work item](../queries/add-tags-to-work-items.md) to filter backlogs, queries, and work item lists. Users with **Basic** access can create new tags by default, users with **Stakeholder** access can only add existing tags. 
 
@@ -283,21 +282,21 @@ You can [add tags to any work item](../queries/add-tags-to-work-items.md) to fil
 You can filter each work item pivot view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).  
 
 
-# [Web portal](#tab/browser/)
+# [Web portal](#tab/browser)
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Work Items, Filter to show Bugs ](media/view-add/work-items-filter-bug.png)
 
-# [Visual Studio 2019](#tab/visual-studio/)
+# [Visual Studio 2019](#tab/visual-studio)
 
 > [!div class="mx-imgBorder"]
 > ![Team Explorer>Work Items, Filter based on a key word ](media/view-add/filter-list-vs-te.png)
 
-# [Azure DevOps CLI](#tab/azure-devops-cli/)
+# [Azure DevOps CLI](#tab/azure-devops-cli)
 
 There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
-* * *
+***
 
 
 <a id="sort" />
