@@ -655,6 +655,8 @@
       href: tasks/utility/shell-script.md
     - name: Update Service Fabric Manifests
       href: tasks/utility/service-fabric-versioning.md
+    - name: Xamarin license (deprecated)
+      href: tasks/utility/xamarin-license.md
   - name: Test tasks
     items:
     - name: App Center Test
