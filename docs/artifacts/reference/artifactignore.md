@@ -37,3 +37,14 @@ To reduce the chances of publishing the *.git* folder, we automatically ignore t
 ```
 !.git
 ```
+
+## Related articles
+
+- [Package graphs](../concepts/package-graph.md)
+- [Package componentization](../collaborate-with-packages.md)
+- [Limits on package sizes and counts](limits.md)
+
+## Next steps
+- [Get started with Azure Artifacts](../start-using-azure-artifacts.md)
+- [Configure permissions](../feeds/feed-permissions.md)
+- [Follow a package for publish alerts](../how-to/follow-package-notifications.md)
