@@ -27,13 +27,7 @@ To use this API, users must provide an [Azure Active Directory (AAD) access toke
 > [!IMPORTANT]
 > "On-behalf-of application" solutions (such as the client credential flow) and any authentication flow that does not issue an AAD access token is not valid for use with this API.
 
-The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows, including
-- [Device code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#device-code)
-- [On-behalf-of user](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#on-behalf-of)
-- [Username/password](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#usernamepassword)
-- [Authorization code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#authorization-code)
-
-If multi-factor authentication is enabled in the user's AAD tenant, they must use the MSAL authorization code flow.  A complete list of MSAL flows can be found under [Microsoft Authentication Library "Authentication flows" documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows).  A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
+The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows.  If multi-factor authentication is enabled in the user's AAD tenant, they must use the MSAL authorization code flow.  A complete list of MSAL flows can be found under [Microsoft Authentication Library "Authentication flows" documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows).  A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
 
 > [!IMPORTANT]
 > To use the MSAL library to automatically acquire and refresh access tokens, users must:
@@ -42,8 +36,14 @@ If multi-factor authentication is enabled in the user's AAD tenant, they must us
 > 3. [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
 
 
-### Get started with a Quickstart application
-You can automatically generate a sample application with the necessary MSAL code, as well as a client secret required at login, using the **Quickstart** option on the registered application's page in Azure Portal.  The test application follows the authorization code flow.
+### Get started with a sample application
+
+You can download a [sample Python Flask web application for this API on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) and configure it to use your AAD tenant and Azure DevOps collection. The sample application uses the MSAL authentication code flow to acquire an AAD access token.
+
+> [!IMPORTANT]
+> We recommend getting started with the sample Python Flask web application on GitHub, but if you prefer to use a different language or application type, use the Quickstart option below to recreate an equivalent test application.
+
+Alternatively, you can automatically generate a sample application with the necessary MSAL code, as well as a client secret required at login, using the **Quickstart** option on the registered application's page in Azure Portal.  The test application follows the authorization code flow.
 Note that the test application will demonstrate the authorization code flow with a Microsoft Graph API endpoint; users will need to update the application's configuration to point to the endpoint for this API.
 
 To use application Quickstart, follow the documentation under **Quickstarts** for your application type on the [Azure Active Directory Develop documentation homepage](https://docs.microsoft.com/azure/active-directory/develop/).
@@ -182,11 +182,11 @@ Finally, users should follow instructions to secure their client secret, which i
 
 
 ### Automatically refresh an access token
-Once the application is configured and pointing to the correct API endpoint, and the user has acquired an access token, the token can be used for authentication for up to an hour.  The MSAL code provided in the Quickstart will automatically refresh the token once it expires, preventing the user from needing to log in again and acquire a new authorization code.  However, users may need to log in again after 90 days once their refresh token expires.
+Once the application is configured and pointing to the correct API endpoint, and the user has acquired an access token, the token can be used for authentication for up to an hour.  The MSAL code provided in both the GitHub sample application and the Quickstart will automatically refresh the token once it expires, preventing the user from needing to log in again and acquire a new authorization code.  However, users may need to log in again after 90 days once their refresh token expires.
 
 
 ### Sample application
-Users can view a sample Python Flask web application configured from a Quickstart application for the PAT lifecycle management API on GitHub here: TODO link to public sample repo
+Users can view a sample Python Flask web application configured from a Quickstart application for the PAT lifecycle management API on [GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample).
 
 ## Next steps
 > [!div class="nextstepaction"]
