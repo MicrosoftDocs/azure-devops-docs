@@ -11,7 +11,7 @@ monikerRange: '>=azure-devops-2019'
 
 # Xcode task
 
-**Azure Pipelines | | Azure DevOps Server 2020 | Azure DevOps Server 2019 | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
+**Azure Pipelines | | Azure DevOps Server 2020 | Azure DevOps Server 2019 | [TFS 2018](xcode-build.md?view=tfs-2018&preserve-view=true) | [TFS 2017](xcode-build.md?view=tfs-2017&preserve-view=true) | [TFS 2015](xcode-build.md?view=tfs-2015&preserve-view=true)**
 
 Use this task to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
 
