@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can use a script to customize your pipeline
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 01/25/2021
+ms.date: 02/11/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -57,12 +57,37 @@ You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-wi
 
 ::: moniker-end
 
-## Example: Version your assemblies
+## Example PowerShell script
 
-For example, to version to your assemblies, copy and upload this script to your project:
+Here's an example script to version your assemblies. For the script to run successfully, you'll need to update your run number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). 
+
+### [YAML](#tab/yaml)
+
+You can [customize your build number](../process/run-number.md) within a YAML pipeline with the `name` property. 
+
+```yaml
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- script: echo $(Build.BuildNumber) //output updated build number
+```
+#### [Classic](#tab/classic)
+
+1. To customize your build number in a classic pipeline, first add the build task to your pipeline. 
+
+    ![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
+
+2. Next, specify your build number.
+
+![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+
+
+---
 
 ```ps
-# Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
 # For example, if the 'Build number format' build pipeline parameter 
@@ -152,18 +177,6 @@ else
 }
 ```
 
-Add the build task to your build pipeline.
-
-![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
-
-Specify your build number with something like this:
-
-![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
-
-```
-$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
-```
-
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
@@ -212,13 +225,13 @@ Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 
 ### What variables are available for me to use in my scripts?
 
-[Use variables](../build/variables.md)
+You can use [predefined variables](../build/variables.md) in your scripts. For more information on available variables and how to use them, see [Use predefined variables](../build/variables.md).
 
 [!INCLUDE [include](../includes/variable-set-in-script-qa.md)]
 
 ### Which branch of the script does the build run?
 
-The build will use the active branch of your code. If your pipeline run uses the `main` branch, your script will also use `main`. 
+The build will use the active branch of your code. If your pipeline run uses the `main` branch, your script will also use the `main` branch. 
 ### What kinds of parameters can I use?
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, aren't supported. You'll see errors if you try to use switch parameters. 
