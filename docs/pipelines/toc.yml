@@ -675,6 +675,8 @@
       href: tasks/test/vstest.md
     - name: Visual Studio Test Agent Deployment
       href: tasks/test/visual-studio-test-agent-deployment.md
+    - name: Xamarin Test Cloud task (deprecated)
+      href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
     items:
     - name: CocoaPods
