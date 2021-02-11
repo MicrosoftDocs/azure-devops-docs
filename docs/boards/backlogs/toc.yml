@@ -9,6 +9,9 @@
 - name: Organize your backlog (map or reparent)
   href: organize-backlog.md
   displayname: tree hierarchy, expand, collapse, mapping, reorder, display rollup   
+- name: Filter your backlogs
+  href: filter-backlogs-boards-plans.md
+  displayname: sort, reorder, rollup, group, parent, tags
 - name: Forecast
   displayname: velocity, sprints, iterations  
   href: ../sprints/forecast.md
@@ -21,8 +24,6 @@
   - name: Display rollup progress bars or totals
     href: display-rollup.md
     displayname: In Progress items, Completed child items, Progress by, Count of, Sum of, quick list, custom rollup, column metric  
-  - name: "Filter backlogs & queries"
-    href: filter-backlogs.md
   - name: Select backlog levels
     href: ../../organizations/settings/select-backlog-navigation-levels.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
   - name: Show bugs on backlogs & boards
