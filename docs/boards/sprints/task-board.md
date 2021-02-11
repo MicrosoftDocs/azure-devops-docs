@@ -340,13 +340,15 @@ Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md
 
 ## Related articles
 
-As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
+As you can see, the Taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
-*	[Scrum best practices](best-practices-scrum.md)
-*	[Sprint planning](assign-work-sprint.md)
-*	[Schedule sprints](define-sprints.md)
-*	[Customize a sprint Taskboard](customize-taskboard.md)
-*	[Capacity planning](../sprints/set-capacity.md)
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)[Scrum best practices](best-practices-scrum.md)
+- [Sprint planning](assign-work-sprint.md)
+- [Schedule sprints](define-sprints.md)
+- [Customize a sprint Taskboard](customize-taskboard.md)
+- [Capacity planning](../sprints/set-capacity.md)
+ 
 
 <!---
 <a id="task-board-controls">  </a>
@@ -405,8 +407,3 @@ Requires TFS 2015.1 or later version.
 ::: moniker range="< azure-devops"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end
-
-## Related articles
-
-- [Assign backlog items to a sprint](assign-work-sprint.md)  
-- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
