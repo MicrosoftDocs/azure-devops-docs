@@ -19,13 +19,15 @@ monikerRange: '>= tfs-2015'
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
 ::: moniker range=">= azure-devops-2019"
+## Add a PowerShell script
+### [YAML](#tab/yaml)
 
-You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
-PowerShell Core runs on any platform.
+The syntax for including PowerShell Core is slightly different from the syntax for Windows PowerShell. You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
+PowerShell Core runs on any platform. 
 
-1. Push your script into your repo.
+1. Push your PowerShell script to your repo.
 
-2. Add a `pwsh` or `powershell` step:
+2. Add a `pwsh` or `powershell` step. The `pwsh` keyword is a shortcut for the [PowerShell task](../tasks/utility/powershell.md) for PowerShell Core. The `powershell` keyword is another shortcut for the [PowerShell task](../tasks/utility/powershell.md) but Windows PowerShell and will only work on a Windows agent.
 
 ```yaml
 # for PowerShell Core
@@ -37,6 +39,15 @@ steps:
 - powershell: .\my-script.ps1
 ```
 
+### [Classic](#tab/classic)
+
+1. Add the PowerShell Script task to your pipeline. 
+
+    :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
+
+2. Add your file to the **Script Path**. 
+
+---
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -83,7 +94,6 @@ steps:
 2. Next, specify your build number.
 
 ![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
-
 
 ---
 
