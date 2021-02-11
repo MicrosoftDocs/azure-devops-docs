@@ -119,7 +119,6 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 #### [Web portal](#tab/browser/)
 
-
 ---  
 :::row:::
    :::column span="1":::
@@ -158,25 +157,6 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
-
----  
-:::row:::
-   :::column span="1":::
-      ::: moniker range="azure-devops"
-      ![Screenshot of Boards&gt;Work Items Menu, Visual Studio 2019.](media/view-add/pivot-menu-vs-te.png)  
-
-   :::column-end:::
-   :::column span="2":::
-      ::: moniker range="azure-devops"
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
-      - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
-      - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
-      - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
-   :::column-end:::
-:::row-end:::
----  
-
- 
 
 To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
 
@@ -239,22 +219,21 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
-# [Web portal](#tab/browser)
+#### [Web portal](#tab/browser)
 
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Work Items, Add a work item ](media/view-add/work-items-hub-new.png)
 
-<!---
 > [!TIP]    
-> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). -->
+> Work items you add are automatically scoped to the currently selected team's area and iteration paths. To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json). 
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-# [Visual Studio 2019](#tab/visual-studio)
+#### [Visual Studio 2019](#tab/visual-studio)
 
 For example, here we choose User Story. 
 
@@ -273,7 +252,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-# [Azure DevOps CLI](#tab/azure-devops-cli) 
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
