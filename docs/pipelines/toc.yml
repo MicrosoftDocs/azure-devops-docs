@@ -583,6 +583,8 @@
       href: tasks/utility/bash.md
     - name: Batch script
       href: tasks/utility/batch-script.md
+    - name: Cache
+      href: tasks/utility/cache.md
     - name: Command line
       href: tasks/utility/command-line.md
     - name: Copy and Publish Build Artifacts
