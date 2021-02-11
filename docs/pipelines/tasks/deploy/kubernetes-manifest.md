@@ -272,7 +272,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>secretArguments</b><br/>Secret arguments</td>
     <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set to <b>generic</b>)<br/>
     <br/>
-    Multiline input that accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
+    Accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
     <b>--from-literal=key1=value1</b>
     <b>--from-literal=key2=&quot;top secret&quot;</b>
     </td>
