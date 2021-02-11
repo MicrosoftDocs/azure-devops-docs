@@ -419,11 +419,11 @@ Select the bolded text to see which users are affected.
 
 ### Q: What if I have over 100 users and want to connect to Azure AD?
 
-A: With more than 100 users, you can still connect, however you may need to [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html) for help with disconnected users.
+A: With more than 100 users, you can still connect, however you may need to [contact Support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
 
 ### Q: With more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
-A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 100. [Contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 100. [Contact Support](https://azure.microsoft.com/support/devops/).
 
 ### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
 
