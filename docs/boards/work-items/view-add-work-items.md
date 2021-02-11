@@ -119,6 +119,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 # [Web portal](#tab/browser/)
 
+<br/>
 
 ---  
 :::row:::
@@ -156,6 +157,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 :::row-end:::
 ---  
 
+<br/>
 
 
 # [Visual Studio 2019](#tab/visual-studio/)
@@ -177,7 +179,6 @@ To view a work item, double-click the title or open the context menu for the wor
 :::row-end:::
 ---  
  
-
 
 # [Azure DevOps CLI](#tab/azure-devops-cli/)
 
