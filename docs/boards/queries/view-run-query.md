@@ -207,6 +207,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ## Related articles
 
 - [Manage queries and query folders](organize-queries.md)
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Change column options](../backlogs/set-column-options.md)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md) 
