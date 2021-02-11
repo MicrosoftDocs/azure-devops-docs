@@ -219,7 +219,7 @@ ID    Type    Title      Assigned To          State
 
 Adding a work item is just one click away. Simply choose the work item type from the **New Work Item** drop down menu.  You can also use an Azure DevOps CLI command to add a new work item.
 
-#### [Web portal](#tab/browser)
+#### [Web portal](#tab/browser/)
 
 For example, here we choose User Story. 
 
@@ -233,7 +233,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-#### [Visual Studio 2019](#tab/visual-studio)
+#### [Visual Studio 2019](#tab/visual-studio/)
 
 For example, here we choose User Story. 
 
@@ -252,7 +252,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/) 
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
