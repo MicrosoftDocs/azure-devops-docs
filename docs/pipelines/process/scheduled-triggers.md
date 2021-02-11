@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 02/05/2021
+ms.date: 02/11/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -14,7 +14,12 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
+Azure Pipelines provides several types of triggers you can use to configure when your pipeline runs.
+
+* Scheduled triggers allow you to run your pipelines based on a schedule, such as a nightly build. This article provides guidance on configuring and using scheduled triggers to run your pipelines based on a schedule.
+* Event-based triggers run your pipeline in response to events, such as a pull request or a push to a branch. For information on configuring and using these trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
+
+You can combine multiple types of triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build for validation (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to pull requests or pushes, ensure that your pipeline does not have any other triggers enabled. In YAML pipelines, CI triggers and PR triggers are enabled by default. For information on disabling them, see [Triggers in Azure Pipelines](../build/triggers.md) adn navigate to the section that covers your repository type.
 
 ## Scheduled triggers
 
@@ -43,8 +48,6 @@ schedules:
     exclude: [ string ] # which branches to exclude from the schedule
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
-
-If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
 
 Scheduled pipelines in YAML have the following constraints.
 
