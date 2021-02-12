@@ -4,7 +4,8 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 02/11/2021
+ms.date: 02/12/2021
+ms.custom: contperf-fy21q3
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,10 +17,10 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides several types of triggers you can use to configure when your pipeline runs.
 
-* Scheduled triggers allow you to run your pipelines based on a schedule, such as a nightly build. This article provides guidance on configuring and using scheduled triggers to run your pipelines based on a schedule.
-* Event-based triggers run your pipeline in response to events, such as a pull request or a push to a branch. For information on configuring and using these trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
+* Scheduled triggers run your pipelines based on a schedule, such as a nightly build. This article provides guidance on configuring and using scheduled triggers to run your pipelines based on a schedule.
+* Event-based triggers run your pipeline in response to events, such as creating a pull request or pushing to a branch. For information on configuring and using these trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
-You can combine multiple types of triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build for validation (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to pull requests or pushes, ensure that your pipeline does not have any other triggers enabled. In YAML pipelines, CI triggers and PR triggers are enabled by default. For information on disabling them, see [Triggers in Azure Pipelines](../build/triggers.md) adn navigate to the section that covers your repository type.
+You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build for validation (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline does not have any other triggers enabled. In YAML pipelines, CI triggers and PR triggers are enabled by default. For information on disabling them, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
 
 ## Scheduled triggers
 
@@ -37,7 +38,7 @@ You can combine multiple types of triggers in your pipelines, for example to val
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start running.
 
-Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
 ```yaml
 schedules:
@@ -56,13 +57,13 @@ Scheduled pipelines in YAML have the following constraints.
 - You cannot use pipeline variables when specifying schedules.
 - If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
 
-### Scheduled triggers evaluation
+### Branch considerations for scheduled triggers
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
 * A pipeline is created.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore will only pick up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin main`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
+* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore only picks up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin main`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
 * A new branch is created. 
 
 After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
@@ -279,13 +280,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
-## Supported cron syntax
+## Cron syntax
 
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">azure-devops-2019"
 
-Each cron expression is a space-delimited expression with five entries in the following order.
+Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order.
 
 ```
 mm HH DD MM DW
