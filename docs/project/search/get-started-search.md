@@ -34,18 +34,17 @@ A keyword search is the most basic type of search to get started. Default search
 
 ## Search features
 
-| To find ...                     | Enter in search box ...                                                                  | Notes                      |
-|---------------------------------|------------------------------------------------------------------------------------------|----------------------------|
-| Text string                     | -*General:* ToDo, -*In Code comments:*  comment:ToDo, -*In Work item:*  Description:ToDo |                            |
-| Search within a specific path   | -*In Code:* Driver path:MyShuttle/Server, -*In Work item:*  Area:Fabrikam\DevOps\Web     |                            |
-| Search for a file name          |                                                                                          |                            |
-| Search for a work item by Title |                                                                                          |                            |
-| Search for two keywords         | validate OR release                                                                      |                            |
-| Exact keyword or phrase match   | "Client not found"                                                                       | Enclose with double quotes |
-| Instant search for work items   | *work item #*                                                                            |                            |
-| Row8                            |                                                                                          |                            |
-| Row9                            |                                                                                          |                            |
-| Row10                           |                                                                                          |                            |
+| To find ...                     | Enter in search box ..                                                               |                            |
+|---------------------------------|--------------------------------------------------------------------------------------|----------------------------|
+| Search within a specific path   | -*In Code:* Driver path:MyShuttle/Server, -*In Work item:*  Area:Fabrikam\DevOps\Web |                            |
+| Search for a file name          |                                                                                      |                            |
+| Search for a work item by Title |                                                                                      |                            |
+| Search for two keywords         | validate OR release                                                                  |                            |
+| Exact keyword or phrase match   | "Client not found"                                                                   | Enclose with double quotes |
+| Instant search for work items   | *work item #*                                                                        |                            |
+| Row8                            |                                                                                      |                            |
+| Row9                            |                                                                                      |                            |
+| Row10                           |                                                                                      |                            |
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -55,29 +54,29 @@ With the search box, you can quickly find a code file, work item, or wiki page.
 With the search box, you can quickly find a code file or work item.  
 ::: moniker-end  
 
-## Start searching work items
+## Start work item search
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box](media/search/work-item-search-vert.png)    
+   :::image type="content" source="../navigation/media/search/work-item-search-vert.png" alt-text="Project search box":::
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. Search results display in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../search/media/work-item-search-get-started/results-matching.png)
+   :::image type="content" source="media/work-item-search-get-started/results-matching.png" alt-text="Search results":::
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   "updating" also finds instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-2. Select a snippet of a work item to display it in the right window. 
+3. Select a snippet of a work item to display it in the window on the right side of your screen. 
   
    Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/media/shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting  
+   ![start search icon](../search/media/shared/start-search-icon.png) start search.
+
+4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
 ::: moniker-end 
@@ -88,23 +87,22 @@ With the search box, you can quickly find a code file or work item.
 
    ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
-1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search. 
+2. Enter a search string in the text box, and select _Enter_ or  
+   
+   ![start search icon](../search/media/shared/start-search-icon.png) start search. 
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+3. Search results display in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-1. Select a snippet of a work item to display it in the right window. 
+4. Select a snippet of a work item to display it in the right window. 
   
    Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
    ![start search icon](../search/media/shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
 ::: moniker-end
@@ -113,11 +111,9 @@ With the search box, you can quickly find a code file or work item.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
-   to search for all items assigned to that user.
+1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Search from the title bar](media/search/search-work-vert.png)    
+	:::image type="content" source="../navigation/media/search/search-work-vert.png" alt-text="Search from title bar":::    
 
    The quick filters you can use are:
 
@@ -128,29 +124,21 @@ With the search box, you can quickly find a code file or work item.
  
 2. Start entering the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you enter the name of a fild](../search/media/work-item-search-get-started/dyna-dropdown.png)    
+   :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter the name of a field":::
 
-   The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions that match user input thereby helping the user to complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
 
-3. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
-   **a: Chris t: Bug s: Active** finds all active bugs assigned
-   to a user named Chris.
+3. Add more filters to further narrow your search, and use Boolean operators to combine terms if required. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
-4. Narrow your search to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
+4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
-   to search for all items assigned to that user.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Search from the title bar](media/search/work-item-search-filters.png)    
+1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
+   
+   :::image type="content" source="../navigation/media/search/work-item-search-filters.png" alt-text="Search from the title bar":::   
 
    The quick filters you can use are:
 
@@ -161,19 +149,13 @@ With the search box, you can quickly find a code file or work item.
  
 2. Start entering the name of a field in your work items; for example, enter `ta`.
 
-   ![Quick filters as you enter a field name](..//search/media/work-item-search-get-started/dyna-dropdown.png)    
+   :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter a field name":::   
 
-   The dropdown list shows work item field name suggestions 
-   that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions that match user input thereby helping the user to complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
 
-3. Add more filters to further narrow your search, and use Boolean operators
-   to combine terms if required. For example, 
-   **a: Chris t: Bug s: Active** finds all active bugs assigned
-   to a user named Chris.
+3. Add more filters to further narrow your search, and use Boolean operators to combine terms if required. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
-4. Narrow your search to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
+4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
 
 ::: moniker-end
 
@@ -185,21 +167,20 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and select *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
-> [!div class="mx-imgBorder"]
-> ![Code Search box](../../organizations/public/media/search/code-search-vert.png) 
-::: moniker-end  
-
+:::image type="content" source="../../organizations/public/media/search/code-search-vert.png" alt-text="Code Search box":::
+ 
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
-   ![Switching between searching for code and work items](../search/media/code-search-get-started/title-bar-search-box-empty-outlined.png)
+   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-outlined.png" alt-text="Switching between searching for code and work items":::
 
-2. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search.
+2. Enter a search string in the text box, and select _Enter_ or choose 
+   ![start search icon](../search/media/shared/start-search-icon.png) start search.
 
 ::: moniker-end
 
@@ -235,30 +216,25 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
- 
-> [!div class="mx-imgBorder"]  
-> ![Wiki search option](../wiki/media/search/search-wiki-vert.png)   
+Choose **Overview** > **Wiki** and enter your keyword or phrase into the search box. 
+
+  :::image type="content" source="../wiki/media/search/search-wiki-vert.png" alt-text="Wiki search option":::   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
-> [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
+   :::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Wiki search results"::: 
 
 ::: moniker-end  
 
-
 ::: moniker range="tfs-2018"  
 
-Open **Wiki** and type your keyword or phrase into the search box. 
+Open **Wiki** and enter your keyword or phrase into the search box. 
 
-> [!div class="mx-imgBorder"]  
-> ![Wiki search option, previous navigation](../wiki/media/search/search-wiki-horz.png)   
+   :::image type="content" source="../wiki/media/search/search-wiki-horz.png" alt-text="Wiki search option, previous navigation"::: 
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
-> [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
+  :::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Wiki search results":::   
 
 ::: moniker-end
 
@@ -388,21 +364,15 @@ To learn more, see [Search code](../search/code-search.md).
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box](media/search/work-item-search-vert.png)    
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. Search results are displayed in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-2. Select a snippet of a work item to display it in the right window. 
+3. Select a snippet of a work item to display it in the right window. 
   
-   Open the search results in a new browser tab from a search box by
-   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting 
-   ![start search icon](../search/media/shared/start-search-icon.png) start search.
-   In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
+4. Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search icon](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 ::: moniker-end 
 
@@ -412,30 +382,21 @@ To learn more, see [Search code](../search/code-search.md).
 
    ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
-2. Enter a search string in the text box, and select _Enter_ (or choose  
-   ![start search icon](../search/media/shared/start-search-icon.png) start search. 
+2. Enter a search string in the text box, and select _Enter_ or choose ![start search icon](../search/media/shared/start-search-icon.png) start search. 
 
 3. Search results are displayed in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
 4. Select a snippet of a work item to display it in the right window. 
   
-   Open the search results in a new browser tab from a search box by
-   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting  
-   ![start search icon](../search/media/shared/start-search-icon.png) start search.
-   In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
+5. Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search icon](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 ::: moniker-end
 
 ### Fine tune your work item search results 
-
-
 
 ::: moniker range=">=tfs-2018"
 
