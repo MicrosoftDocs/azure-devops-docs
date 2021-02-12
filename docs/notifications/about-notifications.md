@@ -72,7 +72,7 @@ You can create a subscription for the following categories and select from the f
 :::moniker range=">= azure-devops-2020"
 
 > [!NOTE]
-> You can also create a custom notification subscription for pull requests that are created or updated in a **draft state**.
+> You can also create a custom notification subscription for pull requests that are created or updated in a **draft state**. For more information, see [Custom notification subscription for draft pull requests](/azure/devops/release-notes/2020/repos/sprint-165-update#custom-notification-subscription-for-draft-pull-requests).
 
 :::moniker-end
 
