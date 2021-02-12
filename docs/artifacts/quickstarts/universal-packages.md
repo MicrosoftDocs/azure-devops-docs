@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Publish and download universal packages
 
-With universal packages, users are able to store different types of packages other than the widely used ones like NuGet, npm, Maven, or Python packages. Uploaded packages can vary in size (tested up to 4TB) but should always have a name and a version number. You can publish and download universal packages from the command line using the Azure CLI. 
+With universal packages, users are able to store different types of packages other than the widely used ones like NuGet, npm, Maven, or Python packages. Uploaded packages can vary in size (tested up to 4 TB) but should always have a name and a version number. You can publish and download universal packages from the command line using the Azure CLI. 
 
 This quickstart will walk you through the steps to publish and download your first universal package to/from your feed using the command line.
 
@@ -37,13 +37,13 @@ If you already have the Azure DevOps extension but you want to update to the lat
 
 ## Create a feed
 
-A feeds is an organizational construct that allow you to store and manage your packages and control who can access them.
+A feed is an organizational construct that allows you to store and manage your packages and control who can access them.
 
 [!INCLUDE [](../includes/create-feed.md)]
 
 ## Log in to Azure DevOps
 
-After you've installed the Azure CLI, run the following command in an elevated command prompt window to login to Azure. Replace the text in the square brackets [] with the appropriate names.
+After you've installed the Azure CLI, run the following command in an elevated command prompt window to log in to Azure. Replace the text in the square brackets [] with the appropriate names.
 
 ```Command
 az login
@@ -64,7 +64,7 @@ az devops configure --defaults organization=https://dev.azure.com/[your-organiza
 
 Now we can use the `az artifacts universal` command to manage our universal packages. In the following example we will publish _my-first-package_, version _1.0.0_ to _FabrikamFiber_ feed in the _Fabrikam_ organization. FibrikamFiber is an organization-scoped feed.
 
-Package names must be lowercase and can only use letters, numbers, and dashes. Package versions must be lowercase without build metadata (+ suffix). See [Semver](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
+Package names must be lowercase and can only use letters, numbers, and dashes. Package versions must be lowercase without build metadata (+ suffix). See [SemVer](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
 ```Command
 az artifacts universal publish --organization https://dev.azure.com/Fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "My first universal package" --path .
@@ -72,7 +72,7 @@ az artifacts universal publish --organization https://dev.azure.com/Fabrikam --f
 
 ## View the package in your feed
 
-To view the package that you just published, go to your organization, select your project, select **Artifacts**, then select your feed from the drop down menu. 
+To view the package that you just published, go to your organization, select your project, select **Artifacts**, then select your feed from the drop-down menu. 
 
 > [!div class="mx-imgBorder"] 
 > ![View published universal package](media/universal-in-feed.png)
