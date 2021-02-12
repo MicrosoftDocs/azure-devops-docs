@@ -647,6 +647,6 @@ schedules:
     - features/X  
 ```
 
-For more information, see [Scheduled triggers evaluation](#scheduled-triggers-evaluation).
+For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
 
 ::: moniker-end
