@@ -70,9 +70,9 @@ You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-wi
 
 ::: moniker-end
 
-## Example PowerShell script
+## Example PowerShell script: version assemblies
 
-Here's an example script to version your assemblies. For the script to run successfully, you'll need to update your run number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). 
+Here's an example script to version your assemblies. For the script to run successfully, you'll need to update your build number to use a format with four periods (example: `$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)`). Build number can also be referred to as run number.
 
 ### [YAML](#tab/yaml)
 
@@ -190,7 +190,10 @@ else
 ```
 
 <a name="oauth"></a>
-## Use the OAuth token to access the REST API
+
+## Example PowerShell script: access REST API
+
+In this example, you'll use the `SYSTEM_ACCESSTOKEN` variable to access the [Azure Pipelines REST API](../../integrate/index.md). 
 
 #### [YAML](#tab/yaml)
 
