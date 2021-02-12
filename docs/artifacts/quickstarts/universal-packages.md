@@ -1,5 +1,5 @@
 ---
-title: Publish and download Universal Packages
+title: Publish and download universal packages
 description: How to publish and download universal packages to and from Azure Artifacts.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
@@ -8,7 +8,7 @@ ms.date: 02/12/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish and download Universal Packages
+# Publish and download universal packages
 
 With universal packages, users are able to store different types of packages other than the widely used ones like NuGet, npm, Maven, or Python packages. Uploaded packages can vary in size (tested up to 4TB) but should always have a name and a version number. You can publish and download universal packages from the command line using the Azure CLI. 
 
@@ -60,7 +60,7 @@ az devops configure --defaults organization=https://dev.azure.com/[your-organiza
 
 <a name="publish-a-package"></a>
 
-## Publish a Universal Package
+## Publish a universal package
 
 Now we can use the `az artifacts universal` command to manage our universal packages. In the following example we will publish _my-first-package_, version _1.0.0_ to _FabrikamFiber_ feed in the _Fabrikam_ organization. FibrikamFiber is an organization-scoped feed.
 
@@ -75,27 +75,24 @@ az artifacts universal publish --organization https://dev.azure.com/Fabrikam --f
 To view the package that you just published, go to your organization, select your project, select **Artifacts**, then select your feed from the drop down menu. 
 
 > [!div class="mx-imgBorder"] 
-> ![Universal Package listing in a sample feed](media/universal-in-feed.png)
+> ![View published universal package](media/universal-in-feed.png)
 
-## Download a Universal Package
+## Download a universal package
 
-Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then run the command in the example to download your package.
+Now that you've published your first universal package, let's try to download it using Azure CLI. The following example will download the package that we published earlier.
 
-You must use the Azure CLI to download the package. Azure DevOps doesn't support direct HTTP/HTTPS download links or other ways to download the package. 
-
-The following example downloads a package with the same metadata as the publish example. Update these values to match the values that you selected when you published your package.
-
-```azurecli
-az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
+```Command
+az artifacts universal download --organization https://dev.azure.com/Fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
 
-### Filtered Universal Package downloads
+> [!NOTE]
+> Azure DevOps doesn't support direct HTTP/HTTPS download links. 
 
-For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files.
+## Bulk-download universal packages
 
-The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+If you want to download a large number of universal packages, you can use the `--file-filter` wildcard filter to bulk-download a group of universal packages.
 
-The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
+The following example uses wildcards to download all *.exe* and *.dll* files from our feed.
 
 ```azurecli
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
@@ -103,18 +100,17 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 
 ### Downloading the latest version
 
-When downloading a Universal Package, you can use a wildcard expression in the `version` parameter to download the highest version of a package according to [Semantic Versioning](https://semver.org) precedence rules.  
+To download the latest version of a universal package, you can use wildcards in your `--version` parameter.
 
-#### Examples
-`*`: Highest version  
-`1.*`: Highest version with major version `1`  
-`1.2.*`: Highest patch release with major version `1` and minor version `2`  
+`--version *`: latest version  
+`--version 1.*`: latest version with major version `1`  
+`--version 1.2.*`: latest patch release with major version `1` and minor version `2`  
   
-Wildcard expressions do not currently support pre-release versions. It is not possible to get the latest pre-release version of a package.  
-  
-Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
+> [!NOTE]
+> pre-release versions does not support wildcards.  
 
-## What's next?
 
-- [Publish and download Universal Packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
-- [Universal Package task](../../pipelines/tasks/package/universal-packages.md).
+## Next steps
+
+- [Publish and download universal packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
+- [universal package task](../../pipelines/tasks/package/universal-packages.md).
