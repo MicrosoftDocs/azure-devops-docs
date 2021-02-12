@@ -4,33 +4,32 @@ description: How to publish and download universal packages to and from Azure Ar
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 02/12/2021
 monikerRange: 'azure-devops'
 ---
 
 # Publish and download Universal Packages
 
-Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest). 
+With universal packages, users are able to store different types of packages other than the widely used ones like NuGet, npm, Maven, or Python packages. Uploaded packages can vary in size (tested up to 4TB) but should always have a name and a version number. You can publish and download universal packages from the command line using the Azure CLI. 
 
-This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
+This quickstart will walk you through the steps to publish and download your first universal package to/from your feed using the command line.
 
 ## Prerequisites
 
-1. Download and install the latest [build](/cli/azure/?preserve-view=true&view=azure-cli-latest) of the Azure CLI.
-2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
-3. Version 0.14.0 or greater of the Azure DevOps extension for the Azure CLI is required. 
+1. Download and install the latest [Azure CLI](/cli/azure/install-azure-cli) version.
+2. If you're using Linux, make sure you have the appropriate [.NET on Linux](/dotnet/core/linux-prerequisites) version. 
+
+To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
+   ```cmd
+   az --version
+   ```
 
 You can install the Azure DevOps extension using the following command:
    ```cmd
    az extension add --name azure-devops
    ```
 
-To check the extension version that you currently have, run the following command: 
-   ```cmd
-   az --version
-   ```
-
-You can upgrade to the latest Azure DevOps extension with the following command:
+If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
 
    ```cmd
    az extension update --name azure-devops
