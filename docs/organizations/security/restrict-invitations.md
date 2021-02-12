@@ -47,7 +47,7 @@ You must be a Project Collection Administrator to manage this policy.
 Now, only Project Collection Administrators can invite new users to Azure DevOps.
 
 > [!NOTE]
-> Known limitation: Even with the policy turned off, Team and Project Administrators can re-invite users who were previously members of the organization. 
+> **Known limitation:** Even with the policy turned off, Team and Project Administrators can re-invite users who were previously members of the organization. 
 
 ## Related articles
 - [Default permissions and access](permissions-access.md) 
