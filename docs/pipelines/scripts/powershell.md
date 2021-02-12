@@ -46,6 +46,8 @@ steps:
     :::image type="content" source="media/powershell-script.png" alt-text="Add the PowerShell task.":::
 
 2. Add your file to the **Script Path**. 
+    
+    :::image type="content" source="media/powershell-update-script-path.png" alt-text="Add the script path.":::
 
 ---
 ::: moniker-end
