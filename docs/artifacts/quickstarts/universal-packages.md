@@ -1,6 +1,6 @@
 ---
-title: Publish and then download a Universal Package
-description: Using Universal Packages in Azure DevOps Services. How to publish and download universal packages to and from Azure Artifacts.
+title: Publish and download Universal Packages
+description: How to publish and download universal packages to and from Azure Artifacts.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 06/24/2020
 monikerRange: 'azure-devops'
 ---
 
-# Publish and then download a Universal Package
+# Publish and download Universal Packages
 
 Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest). 
 
@@ -80,10 +80,6 @@ With your feed selected, select the gear icon ![gear icon](../../media/icons/gea
 
 ## Log in to Azure DevOps
 
-The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](../../extend/develop/work-with-urls.md).
-
-# [New URLs](#tab/azuredevops)
-
 After you've installed the CLI, open your shell of choice (for example, PowerShell or cmd) and browse to the directory that you just created. Then, log in to Azure DevOps by using the following command. Replace the items in square brackets (`[]`) with appropriate values.
 
 ```azurecli
@@ -98,25 +94,6 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 ```azurecli
 az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=ContosoWebApp
 ```
-
-#  [Legacy URLs](#tab/vsts)
-
-After you've installed the CLI, open your shell of choice (for example, PowerShell or cmd) and browse to the directory that you just created. Then, log in to Azure DevOps by using the following command. Replace the items in square brackets (`[]`) with appropriate values.
-
-```azurecli
-az login
-```
-
-> [!NOTE]
-> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
-
-Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
-
-```azurecli
-az devops configure --defaults organization=https://[your-organization].visualstudio.com project=ContosoWebApp
-```
-
------
 
 <a name="publish-a-package"></a>
 ## Publish a Universal Package
