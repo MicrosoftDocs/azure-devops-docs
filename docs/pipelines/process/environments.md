@@ -3,7 +3,7 @@ title: Environment
 description: Collection of deployment targets useful for traceability and recording deployment history
 ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 02/10/2020
+ms.date: 02/12/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -108,6 +108,8 @@ You can manually control when a stage should run using approval checks. You can 
 
 Currently, manual approval checks are supported on environments. 
 For more information, see [Approvals](approvals.md).
+
+The creator, administrator, and user roles can manage approvals and checks. The reader role cannot manage approvals and checks. 
 
 <a name="deployment-history"></a>
 
