@@ -15,12 +15,12 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines provides several types of triggers you can use to configure when your pipeline runs.
+Azure Pipelines provides several types of triggers that configure how your pipeline starts.
 
-* Scheduled triggers run your pipelines based on a schedule, such as a nightly build. This article provides guidance on configuring and using scheduled triggers to run your pipelines based on a schedule.
-* Event-based triggers run your pipeline in response to events, such as creating a pull request or pushing to a branch. For information on configuring and using these trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
+* Scheduled triggers start your pipeline based on a schedule, such as a nightly build. This article provides guidance on using scheduled triggers to run your pipelines based on a schedule.
+* Event-based triggers start your pipeline in response to events, such as creating a pull request or pushing to a branch. For information on using these trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
-You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build for validation (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline does not have any other triggers enabled. In YAML pipelines, CI triggers and PR triggers are enabled by default. For information on disabling them, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
+You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build for validation (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline does not have any other triggers enabled. For example, YAML pipelines in a GitHub repository have CI triggers and PR triggers enabled by default. For information on disabling default triggers, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
 
 ## Scheduled triggers
 
@@ -37,6 +37,8 @@ You can combine scheduled and event-based triggers in your pipelines, for exampl
 > you must remove the scheduled triggers defined in the pipeline setting UI.
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start running.
+>
+> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-scheduled-triggers).
 
 Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
