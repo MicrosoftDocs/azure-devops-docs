@@ -2,7 +2,7 @@
 title: List work items with managed queries 
 titleSuffix: Azure Boards 
 description: Track work by creating queries to list work items in Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.custom: boards-queries
+ms.custom: boards-queries, contperf-fy21q3 
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview

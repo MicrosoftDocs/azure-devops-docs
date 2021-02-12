@@ -111,7 +111,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Planning a sprint](../sprints/assign-work-sprint.md) 
 - [Forecasting work](../sprints/forecast.md) 
 - [Emailing a list of backlog items](email-work-items.md)
-- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md) 
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 
