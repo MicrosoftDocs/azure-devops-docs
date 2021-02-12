@@ -166,7 +166,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 The following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 
 
