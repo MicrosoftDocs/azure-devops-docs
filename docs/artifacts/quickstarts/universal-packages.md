@@ -5,7 +5,7 @@ ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 02/12/2021
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2017'
 ---
 
 # Publish and download Universal Packages
@@ -20,18 +20,18 @@ This quickstart will walk you through the steps to publish and download your fir
 2. If you're using Linux, make sure you have the appropriate [.NET on Linux](/dotnet/core/linux-prerequisites) version. 
 
 To check the version of Azure CLI modules and extensions that you currently have, run the following command: 
-   ```cmd
+   ```Command
    az --version
    ```
 
 You can install the Azure DevOps extension using the following command:
-   ```cmd
+   ```Command
    az extension add --name azure-devops
    ```
 
 If you already have the Azure DevOps extension but you want to update to the latest version, run the following command:
 
-   ```cmd
+   ```Command
    az extension update --name azure-devops
    ```
 
@@ -43,36 +43,36 @@ A feeds is an organizational construct that allow you to store and manage your p
 
 ## Log in to Azure DevOps
 
-After you've installed the CLI, open your shell of choice (for example, PowerShell or cmd) and browse to the directory that you just created. Then, log in to Azure DevOps by using the following command. Replace the items in square brackets (`[]`) with appropriate values.
+After you've installed the Azure CLI, run the following command in an elevated command prompt window to login to Azure. Replace the text in the square brackets [] with the appropriate names.
 
-```azurecli
+```Command
 az login
 ```
 
-> [!NOTE]
-> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
+> [!TIP]
+> To access tenant without subscriptions, run `az login --allow-no-subscription`.
 
-Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
+Next, set your project and organization as the CLI's default.
 
-```azurecli
-az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=ContosoWebApp
+```Command
+az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=[your-project-name]
 ```
 
 <a name="publish-a-package"></a>
 
 ## Publish a Universal Package
 
-Publish a package with `az artifacts universal publish`. The following example publishes a package named _my-first-package_ with version _1.0.0_ to the _FabrikamFiber_ feed in the _fabrikam_ organization with a placeholder description.
+Now we can use the `az artifacts universal` command to manage our universal packages. In the following example we will publish _my-first-package_, version _1.0.0_ to _FabrikamFiber_ feed in the _Fabrikam_ organization. FibrikamFiber is an organization-scoped feed.
 
-Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer) 2.0.0](https://semver.org/spec/v2.0.0.html) without build metadata (`+` suffix).
+Package names must be lowercase and can only use letters, numbers, and dashes. Package versions must be lowercase without build metadata (+ suffix). See [Semver](https://semver.org/spec/v2.0.0.html) to learn more about semantic versioning.
 
-```azurecli
-az artifacts universal publish --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
+```Command
+az artifacts universal publish --organization https://dev.azure.com/Fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "My first universal package" --path .
 ```
 
 ## View the package in your feed
 
-To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Artifacts** icon on the left side navigation.
+To view the package that you just published, go to your organization, select your project, select **Artifacts**, then select your feed from the drop down menu. 
 
 > [!div class="mx-imgBorder"] 
 > ![Universal Package listing in a sample feed](media/universal-in-feed.png)
