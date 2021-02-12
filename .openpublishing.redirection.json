@@ -17653,6 +17653,16 @@
       "source_path": "docs/pipelines/archive/news/rm-archived.md",
       "redirect_url": "/azure/devops/release-notes/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     }
   ]
 }
