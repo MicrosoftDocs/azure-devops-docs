@@ -96,25 +96,16 @@ az devops configure --defaults organization=https://dev.azure.com/[your-organiza
 ```
 
 <a name="publish-a-package"></a>
+
 ## Publish a Universal Package
 
 Publish a package with `az artifacts universal publish`. The following example publishes a package named _my-first-package_ with version _1.0.0_ to the _FabrikamFiber_ feed in the _fabrikam_ organization with a placeholder description.
 
 Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer) 2.0.0](https://semver.org/spec/v2.0.0.html) without build metadata (`+` suffix).
 
-# [New URLs](#tab/azuredevops)
-
 ```azurecli
 az artifacts universal publish --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
-
-#  [Legacy URLs](#tab/vsts)
-
-```azurecli
-az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
-```
-
------
 
 ## View the package in your feed
 
@@ -131,19 +122,9 @@ You must use the Azure CLI to download the package. Azure DevOps doesn't support
 
 The following example downloads a package with the same metadata as the publish example. Update these values to match the values that you selected when you published your package.
 
-# [New URLs](#tab/azuredevops)
-
 ```azurecli
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
-
-#  [Legacy URLs](#tab/vsts)
-
-```azurecli
-az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
-```
-
------
 
 ### Filtered Universal Package downloads
 
@@ -153,19 +134,9 @@ The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.
 
 The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
 
-# [New URLs](#tab/azuredevops)
-
 ```azurecli
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
-
-#  [Legacy URLs](#tab/vsts)
-
-```azurecli
-az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
-```
-
------
 
 ### Downloading the latest version
 
