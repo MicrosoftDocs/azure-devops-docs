@@ -4,7 +4,8 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 02/05/2021
+ms.date: 02/12/2021
+ms.custom: contperf-fy21q3
 monikerRange: '>= tfs-2015'
 ---
 
@@ -14,7 +15,12 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
+Azure Pipelines provides several types of triggers to configure how your pipeline starts.
+
+* Scheduled triggers start your pipeline based on a schedule, such as a nightly build. This article provides guidance on using scheduled triggers to run your pipelines based on a schedule.
+* Event-based triggers start your pipeline in response to events, such as creating a pull request or pushing to a branch. For information on using event-based triggers, see [Triggers in Azure Pipelines](../build/triggers.md).
+
+You can combine scheduled and event-based triggers in your pipelines, for example to validate the build every time a push is made ([CI trigger](../build/triggers.md#ci-triggers)), when a pull request is made ([PR trigger](../build/triggers.md#pr-triggers)), and a nightly build (Scheduled trigger). If you want to build your pipeline only on a schedule, and not in response to event-based triggers, ensure that your pipeline does not have any other triggers enabled. For example, YAML pipelines in a GitHub repository have CI triggers and PR triggers enabled by default. For information on disabling default triggers, see [Triggers in Azure Pipelines](../build/triggers.md) and navigate to the section that covers your repository type.
 
 ## Scheduled triggers
 
@@ -28,11 +34,13 @@ Azure Pipelines provides several different types of triggers to start your pipel
 > If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, 
 > only the UI defined scheduled triggers are run. 
 > To run the YAML defined scheduled triggers in your YAML pipeline,
-> you must remove the scheduled triggers defined in the pipeline setting UI.
+> you must remove the scheduled triggers defined in the pipeline settings UI.
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
-> scheduled triggers to start running.
+> scheduled triggers to start being evaluated.
+>
+> To delete UI scheduled triggers from a YAML pipeline, see [UI settings override YAML scheduled triggers](../troubleshooting/troubleshooting.md#ui-settings-override-yaml-scheduled-triggers).
 
-Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#cron-syntax).
 
 ```yaml
 schedules:
@@ -44,22 +52,20 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
-
 Scheduled pipelines in YAML have the following constraints.
 
 - The time zone for cron schedules is UTC.
 - If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
 - You cannot use pipeline variables when specifying schedules.
-- If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
+- If you use [templates in your YAML file](templates.md), then the schedules must be specified in the main YAML file and not in the template files.
 
-### Scheduled triggers evaluation
+### Branch considerations for scheduled triggers
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
 * A pipeline is created.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore will only pick up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin main`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
+* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore only picks up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin main`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
 * A new branch is created. 
 
 After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
@@ -276,13 +282,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
-## Supported cron syntax
+## Cron syntax
 
 #### [YAML](#tab/yaml/)
 
 ::: moniker range=">azure-devops-2019"
 
-Each cron expression is a space-delimited expression with five entries in the following order.
+Each Azure Pipelines scheduled trigger cron expression is a space-delimited expression with five entries in the following order.
 
 ```
 mm HH DD MM DW
@@ -643,6 +649,6 @@ schedules:
     - features/X  
 ```
 
-For more information, see [Scheduled triggers evaluation](#scheduled-triggers-evaluation).
+For more information, see [Branch considerations for scheduled triggers](#branch-considerations-for-scheduled-triggers).
 
 ::: moniker-end
