@@ -50,7 +50,7 @@ az login
 ```
 
 > [!TIP]
-> To access tenant without subscriptions, run `az login --allow-no-subscription`.
+> To access tenants without subscriptions, run `az login --allow-no-subscription`.
 
 Next, set your project and organization as the CLI's default.
 
@@ -100,11 +100,11 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 
 ### Downloading the latest version
 
-To download the latest version of a universal package, you can use wildcards in your `--version` parameter.
+To download the latest version of a universal package, you can use wildcards in the string you pass to the `version` argument.
 
-`--version *`: latest version  
-`--version 1.*`: latest version with major version `1`  
-`--version 1.2.*`: latest patch release with major version `1` and minor version `2`  
+`--version *`: latest version.
+`--version 1.*`: latest version with major version 1. 
+`--version 1.2.*`: latest patch release with major version 1 and minor version 2.  
   
 > [!NOTE]
 > pre-release versions does not support wildcards.  
