@@ -95,7 +95,7 @@ steps:
 
 2. Next, specify your build number.
 
-![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+    ![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
 
 ---
 
