@@ -35,47 +35,11 @@ If you already have the Azure DevOps extension but you want to update to the lat
    az extension update --name azure-devops
    ```
 
-## Prepare files for publishing
-
-Create a new directory, and copy the files you want to publish as a package into that directory.
-
 ## Create a feed
 
-A feed is a container that host your packages. You can publish and consume your packages through a particular feed.
+A feeds is an organizational construct that allow you to store and manage your packages and control who can access them.
 
-If you don't already have an Azure Artifacts feed, create one now and note its name. If you already have a feed, just note the name and [Skip to the next step](#publish-a-package) of this article to learn how to publish your universal packages.
-
-1. Go to **Artifacts**:
-
-   > [!div class="mx-imgBorder"] 
-   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-
-1. Select **Create feed**:
-
-   > [!div class="mx-imgBorder"] 
-   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
-
-1. In the dialog box:
-
-   - Give the feed a name.
-   - Choose who can read and contribute (or update) packages in your feed.
-   - Choose the upstream sources for your feed.
-   - When you're done, select **Create**.
-
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team.
-   
-   Enabling [upstream sources](../concepts/upstream-sources.md) makes it easy to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../media/new-feed-dialog.png)
-
-You can still change these settings later from your feed settings.
-
-With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
-
-> [!div class="mx-imgBorder"] 
-> ![Edit feed button](../media/editfeed-azure-devops-newnav.png)
-
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Log in to Azure DevOps
 
