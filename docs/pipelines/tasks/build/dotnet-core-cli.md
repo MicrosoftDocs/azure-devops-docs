@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
-> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 
+> The [NuGet Authenticate](../package/nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. The restore and push commands of this task no longer take new features and only critical bugs are addressed. 
 
 **Azure Pipelines**
 
