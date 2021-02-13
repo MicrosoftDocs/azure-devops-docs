@@ -156,6 +156,12 @@ A: A user can lose access for the following reasons (although the user can conti
 *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 
    Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
+   
+<a name="groups-inheriting-membership-from-other-AAD-groups"></a>
+
+### Q: How does my user account inherit permissions from other AAD groups?
+
+A:  If a user is part of two different AAD groups, the **DENY** permission set in either of the groups will always take higher precedence. For instance, if you have a user both in the contributor group and project admin group and if ***DENY*** is set for a given permission in the contributor group, then the given permission will be denied in all the groups that the user is part of. In such scenarios, make use of the **Not set** option. The fact that permissions at the lowest possible level is set to **DENY** for the user, it affects their usage of that resource as denial always takes precedence. For more information on permissions states, [refer this document](https://docs.microsoft.com//azure/devops/organizations/security/about-permissions?view=azure-devops&tabs=preview-page#permission-states)
 
 <a name="change-app-access-policies"></a>
 
