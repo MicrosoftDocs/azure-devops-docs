@@ -157,11 +157,15 @@ A: A user can lose access for the following reasons (although the user can conti
 
    Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
    
-<a name="groups-inheriting-membership-from-other-AAD-groups"></a>
+<a name="inherit-permissions-from-other-azure-ad-groups"></a>
 
 ### Q: How does my user account inherit permissions from other Azure AD groups?
 
-A:  If a user is part of two different Azure AD groups, the **DENY** permission set in either of the groups always takes higher precedence. For instance, if you have a user both in the contributor group and Project Administrator group and if **DENY** is set for a given permission in the contributor group, then the given permission is denied in all the groups that the user is part of. In such scenarios, make use of the **Not set** option. Since the permission at the lowest possible level is set to **DENY** for the user, it affects their usage of that resource, as denial always takes precedence. For more information on permissions states, see [About permissions, permission states](https://docs.microsoft.com//azure/devops/organizations/security/about-permissions?view=azure-devops&tabs=preview-page#permission-states).
+A:  If a user is in more than one Azure AD group, a **DENY** permission set in one group applies to the user in all groups the user is in. Because the permission is set to **DENY** for the user at the lowest possible level, the user's usage of the resource is affected in all groups they are in because denial always takes precedence. 
+
+For example, if a user is in the Contributor group and in the Project Administrator group and **DENY** is set for a specific permission in the Contributor group, that permission is denied for the user in the Project Administrator group, too. In this scenario, you can use the **Not set** option.
+
+For more information about permissions states, see [Permission states](../security/about-permissions.md?view=azure-devops&tabs=preview-page#permission-states).
 
 <a name="change-app-access-policies"></a>
 
