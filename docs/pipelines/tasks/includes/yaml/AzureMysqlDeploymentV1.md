@@ -12,7 +12,7 @@ ms.technology: devops-cicd-tasks
 # Run your scripts and make changes to your Azure Database for MySQL
 - task: AzureMysqlDeployment@1
   inputs:
-    ConnectedServiceName: # Or alias AzureSubscription
+    ConnectedServiceName: # Or alias azureSubscription
     ServerName:
     #DatabaseName: # Optional
     SqlUsername:
