@@ -32,50 +32,50 @@ In this tutorial, you will learn how to:
 
 ## Create an Azure Key Vault
 
-Azure key vaults can be created and managed through the Azure portal or Azure CLI. We will use Azure CLI in this tutorial
+Azure key vaults can be created and managed through the Azure portal or Azure CLI. We will use Azure CLI in this tutorial to create our Azure Key vault.
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
 
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
-    ```azurecli
+    ```Command
     az account set --subscription <your_subscription_name_or_ID>
     ```
 
-1. Run the following command to set a default Azure region for your subscription. You can use `az account list-locations` to generate a list of available regions.
+1. Run the following command to set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
-    ```azurecli
+    ```Command
     az configure --defaults location=<your_region>
     ```
 
     For example, this command will select the westus2 region:
 
-    ```azurecli
+    ```Command
     az configure --defaults location=westus2
     ```
 
-1. Run the following command to create a new resource group.
+1. Run the following command to create a new resource group. A resource group is a container that holds related resources for an Azure solution.
 
-    ```azurecli
+    ```Command
     az group create --name <your-resource-group>
     ```
    
 1. Run the following command to create a new key vault.
 
-    ```azurecli
+    ```Command
     az keyvault create \
       --name <your-key-vault> \
       --resource-group <your-resource-group>
     ```
 
-1. Run the following command to create a new secret in your key vault. Secrets are stored as a key value pair. In the example below, `Password` is the key and `mysecretpassword` is the value. 
+1. Run the following command to create a new secret in your key vault. Secrets are stored as a key value pair. In the example below, *Password* is the key and *mysecretpassword* is the value. 
 
-    ```azurecli
+    ```Command
     az keyvault secret set \
       --name "Password" \
       --value "mysecretpassword" \
-      --vault-name <your-key-vault>
+      --vault-name <your-key-vault-name>
     ```
 
 ## Create a project
