@@ -82,6 +82,14 @@ To use the app, you must first link your Azure Boards project to your Teams chan
 
 Once the project is linked, you can create work items using `@azure boards create` command or use message actions. 
 
+## Set up Azure Boards with a Teams channel
+
+You can set up your Teams channel to link to an Azure Boards project by selecting the Azure Boards icon from the new conversation or by right clicking to display the setting option for reconfiguration. 
+
+	![Pic: Set up Azure Boards from Teams](./media/integrations-teams/setup-azureboards-teams.png)
+
+Prceed with selecting the Organization and Projection from the drop down list. Once this has completed you will be able to create work items from Teams messages.
+
 ## Set up subscriptions
 
 You can create subscriptions to monitor work items at any time using the `@azure boards subscriptions` command.  
