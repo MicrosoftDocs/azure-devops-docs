@@ -12,8 +12,6 @@ monikerRange: '>= tfs-2017'
 
 # Get started with npm packages in Azure Artifacts
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
-
 Azure Artifacts supports publishing and consuming npm packages to Azure Artifacts feeds and public registries. Use this quickstart to create your feed, set up your .npmrc files to store your feed URLs and credentials, build your project, and publish your npm package to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
