@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 01/21/2021
+ms.date: 02/08/2021
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -85,7 +85,7 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 > [!NOTE]
-> Don't copy/paste **\@mention** users from a previous comment. While the resulting formatting looka identical to a properly entered mention, it doesn't register as a true mention nor send an email notification.
+> Don't copy/paste **\@mention** users from a previous comment. While the resulting formatting looks identical to a properly entered mention, it doesn't register as a true mention nor send an email notification.
 
 
 

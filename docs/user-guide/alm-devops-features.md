@@ -142,7 +142,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
+<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs-boards-plans.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs-boards-plans.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
 <img src="media/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
 
 <p><b>Request feedback</b></p>
@@ -454,7 +454,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="../boards/backlogs/media/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
 
 <p><b>Filter</b></p>
-<p><a href="../boards/boards/filter-kanban-board.md#text-filter" data-raw-source="[Use key words to filter and find items](../boards/boards/filter-kanban-board.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
+<p><a href="../boards/boards/filter-kanban-board.md#text-filter" data-raw-source="[Use key words to filter and find items](../boards/backlogs/filter-backlogs-boards-plans.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
 
 <img src="media/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
 
