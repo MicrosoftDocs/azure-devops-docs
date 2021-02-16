@@ -139,7 +139,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, 
 
 ## Build your project
 
-At this point, your project should have a package.json file and a .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm discovers your feed in the .npmrc file in the current working directory. It then fetches the credentials from your home directory's .npmrc file that you configured in [Create a feed](#1-create-a-feed).
+At this point, your project should have a package.json file and a .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm discovers your feed in the .npmrc file in the current working directory. It then fetches the credentials from your home directory's .npmrc file that you configured in [Create a feed](create-a-feed).
 
 ## Publish the npm package
 
