@@ -1,26 +1,28 @@
 ---
-title: Using secrets from Azure Key Vault in Azure Pipelines
-description: DevOps CI CD - Use secrets from Azure Key Vault in Azure Pipelines
+title: Use Azure Key Vault secrets in Azure Pipelines
+description: How to create Azure Key vaults, store secrets, and use those secrets in your Azure Pipelines
 ms.topic: tutorial
-ms.date: 09/22/2020
+ms.date: 02/16/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Use secrets from Azure Key Vault in Azure Pipelines
+# Use Azure Key Vault secrets in Azure Pipelines
 
 [!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 > [!NOTE]
-> This tutorial will guide you through working with Azure key vault in your pipeline. Another way of working with secrets is using [Secret variables](../process/variables.md#secret-variables) in your Azure Pipeline or referencing [secrets in a variable group](../process/variables.md#reference-secret-variables-in-variable-groups).
+> This article will guide you through working with Azure key vault in your pipeline. if you want to set secret variables or reference variable groups, see [Define variables](../process/variables.md#secret-variables) for more details.
 
-[Azure Key Vault](/azure/key-vault/general/basic-concepts) helps teams to securely store and manage sensitive information such as API keys, passwords, certificates, etc.
+Azure Key Vault allows users to securely store, manage, and access sensitive information. Secrets can be API keys, credentials, certificates, etc.
+
+Azure Key Vault service supports two types of containers: vaults and managed HSM (hardware security module) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates, while managed HSM pools only support HSM-backed keys.
  
-In this tutorial, you will learn about:
+In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
-> * Creating an Azure Key Vault using the Azure CLI
-> * Adding a secret and configuring access to Azure key vault 
-> * Using secrets in your pipeline
+> * Create an Azure Key Vault using Azure CLI
+> * Add a secret and configure access to Azure key vault 
+> * Use secrets in your pipeline
 
 ## Prerequisites
 
