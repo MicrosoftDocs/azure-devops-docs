@@ -126,25 +126,17 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
     :::image type="content" border="false" source="media/azure-key-vault/azure-key-vault-task.png" alt-text="Selecting the Azure Key Vault task":::
 
-1. Select and authorize the Azure subscription you used to create your Azure key vault earlier. Select the key vault and select **Add** to insert the task at the end of the pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
+1. Select and authorize your Azure subscription then select the Azure key vault task and select **Add** to add it to your pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
 
     > [!NOTE]
-    > `Make secrets available to whole job` feature is not currently supported in Azure DevOps Server 2019 and 2020.
+    > The **Make secrets available to whole job** feature is not currently supported in Azure DevOps Server 2019 and 2020.
 
     :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Configuring the Azure Key Vault task":::
 
-1. This step is optional. To verify the retrieval and processing of our secret through the pipeline, add the script below to your YAML to write the secret to a text file and publish it for review. This is not recommended and it is for demonstration purposes only.
+> [!TIP]
+> YAML requires a specific spacing and indentation to work. Make sure your YAML file is indented properly.
 
-    ```console
-    - script: echo $(Password) > secret.txt
-
-    - publish: secret.txt
-    ```
-
-    > [!TIP]
-    > YAML is very particular about formatting and indentation. Make sure your YAML file is indented properly.
-
-1. Do not save or run the pipeline yet. It will fail because the pipeline does not have permissions to access the key vault yet. Keep this browser tab open, we will resume once we set up the key vault permissions.
+1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your working browser tab open, we will resume the remaining steps here once we set up the key vault permissions.
 
 ## Set up Azure Key Vault access policies
 
