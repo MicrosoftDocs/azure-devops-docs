@@ -152,25 +152,18 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a principal and search for yours.
-
-    A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal. The default naming convention is `[Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]` so if your account is "https://dev.azure.com/Contoso" and your team project is "AzureKeyVault", your principal would look something like this `Contoso-AzureKeyVault-[subscription ID]`.
-
-    > [!TIP]
-    > You may need to minimize the Azure CLI panel to see the **Select** button.
+1. Select the option to select a [service principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) and search for yours. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
-1. Select **Add** to create the access policy.
-
-1. Select **Save**.
+1. Select **Add** to create the access policy, then **Save**.
 
 ## Run and review the pipeline
 
-1. Return to the open pipeline tab where we left off.
+1. Return to the previous tab where we left off.
 
 1. Select **Save** then **Save** again to commit your changes and trigger the pipeline.
 
     > [!NOTE]
-    > You may be asked to allow the pipeline to access Azure resources, if prompted select **Allow**. You will only have to approve it once. 
+    > You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once. 
 
 1. Select the **CmdLine** job to view the logs. Note that the actual secret is not part of the logs. 
 
@@ -180,11 +173,11 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
     :::image type="content" border="false" source="media/azure-key-vault/pipeline-summary.png" alt-text="The pipeline summary":::
 
-1. Under **Job** select the **secret.txt** file to view it.
+1. Under **Job** select the **secret.txt** file to open it.
 
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="Viewing the secret in the artifact":::
 
-1. The text file contains our secret: `mysecretpassword`. This concludes our verification step that we mentioned earlier.
+1. The text file should contain our secret: *mysecretpassword* from earlier.
 
 ## Clean up resources
 
