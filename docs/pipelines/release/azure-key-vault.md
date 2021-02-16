@@ -167,7 +167,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. Select the **CmdLine** job to view the logs. Note that the actual secret is not part of the logs. 
 
-    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="Reviewing the command line task":::
+    :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="Reviewing the command-line task":::
 
 1. Return to pipeline summary and select the published artifact.
 
@@ -183,16 +183,17 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 Follow the steps below to delete the resources you created:
 
-1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md)).
+1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md).
 
-1. All Azure resources created during this tutorial are hosted under a single resource group `PipelinesKeyVaultResourceGroup`. Run the following command to delete the resource group and all of its resources.
+1. All Azure resources created during this tutorial are hosted under a single resource group *PipelinesKeyVaultResourceGroup*. Run the following command to delete the resource group and all of its resources.
 
-    ```azurecli
+    ```Command
     az group delete --name PipelinesKeyVaultResourceGroup
     ```
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Architect secure infrastructure in Azure](/learn/paths/architect-secure-infrastructure/)
-> [Secure your cloud data](/learn/paths/secure-your-cloud-data/)
+> [Artifacts in Azure Pipelines](../artifacts/artifacts-overview.md)
+> [Publish and download artifacts in Azure Pipelines](../artifacts/pipeline-artifacts.md)
+> [Release artifacts and artifact sources](artifacts.md)
