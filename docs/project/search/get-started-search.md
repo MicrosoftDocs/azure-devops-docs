@@ -1,5 +1,5 @@
 ---
-title: Search across all your code, wiki, packages and work items
+title: Get started - Search across all your code, wiki, packages and work items
 description: Quickly search with Azure DevOps.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
@@ -24,27 +24,23 @@ Azure DevOps stores a tremendous amount of information, which includes the follo
 
 ## Prerequisites
 
-- Everyone can use the basic Search function. 
+- Every user can use the basic Search function. 
 - You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
 - You must be an administrator to perform searches on code.
 
-## Keyboard shortcut to search box
- 
-A keyword search is the most basic type of search to get started. Default search searches everything. Services - source code, need versioning content You can narrow down your results and focus on what you need by using [filters](#filter-features). 
+## Features of Search
 
-## Search features
-
-| To find ...                     | Enter in search box ..                                                               |                            |
-|---------------------------------|--------------------------------------------------------------------------------------|----------------------------|
-| Search within a specific path   | -*In Code:* Driver path:MyShuttle/Server, -*In Work item:*  Area:Fabrikam\DevOps\Web |                            |
-| Search for a file name          |                                                                                      |                            |
-| Search for a work item by Title |                                                                                      |                            |
-| Search for two keywords         | validate OR release                                                                  |                            |
-| Exact keyword or phrase match   | "Client not found"                                                                   | Enclose with double quotes |
-| Instant search for work items   | *work item #*                                                                        |                            |
-| Row8                            |                                                                                      |                            |
-| Row9                            |                                                                                      |                            |
-| Row10                           |                                                                                      |                            |
+| | **To find** ...               | **Enter in search box** ...                                                        |  **Be sure to** ...         |
+|-------------------------------|--------------------------------------------------------------------------------------|----------------------------|
+| within a specific path        | -*In Code:* Driver path:MyShuttle/Server, -*In Work item:*  Area:Fabrikam\DevOps\Web |                            |
+| a file name                   |                                                                                      |                            |
+| a work item by Title          |                                                                                      |                            |
+| two keywords                  | validate OR release                                                                  |                            |
+| exact keyword or phrase match | "Client not found"                                                                   | Enclose with double quotes |
+| a work item by #              | *work item #*                                                                        |                            |
+| Row8                          |                                                                                      |                            |
+| Row9                          |                                                                                      |                            |
+| Row10                         |                                                                                      |                            |
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -54,30 +50,50 @@ With the search box, you can quickly find a code file, work item, or wiki page.
 With the search box, you can quickly find a code file or work item.  
 ::: moniker-end  
 
-## Start work item search
+## Start searching with a keyword
+
+A keyword search is the most basic type of search to get started. Enter a word or phrase, enclosed with double quotes, and then select _Enter_ or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search.
+
+By default, the search box searches everything. You can narrow down your results and focus on what you need by using [filters for work items](#use-filters-for-work-item-search), [for  code](#use-filters-for-code-search), or [for packages](#use-filters-for-searching-packages-or-artifacts).
+
+::: moniker range=">= azure-devops-2019"  
+
+![Search boxes in Azure DevOps](media/shared/title-bar-search-box-select-type-tfs.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
+
+![Search boxes in TFS 2018 and earlier](media/shared/title-bar-search-box-select-type.png)
+
+::: moniker-end
+
+> [!NOTE]
+> Searches aren't case-sensitive.
+
+## Start searching work items
+
+Start searching across all your work items over all your projects.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and select _Enter_ or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
 
-   :::image type="content" source="../navigation/media/search/work-item-search-vert.png" alt-text="Project search box":::
+   :::image type="content" source="media/get-started/work-item-search-vert.png" alt-text="Project search box":::
 
 2. Search results display in a snippet view where the matches found are shown in bold.
 
-   :::image type="content" source="media/work-item-search-get-started/results-matching.png" alt-text="Search results":::
+   :::image type="content" source="media/work-item-search-get-started/results-matching.png" alt-text="Search matching results":::
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
-   "updating" also finds instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+   "updating" also finds instances of the word "updated" and "update".
 
 3. Select a snippet of a work item to display it in the window on the right side of your screen. 
   
-   Open the search results in a new browser tab from a search box by
-   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting  
-   ![start search icon](../search/media/shared/start-search-icon.png) start search.
+   Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search icon](../search/media/shared/start-search-icon.png) start search.
 
-4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
+4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 ::: moniker-end 
 
@@ -85,7 +101,7 @@ With the search box, you can quickly find a code file or work item.
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work item aearch textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 2. Enter a search string in the text box, and select _Enter_ or  
    
@@ -107,20 +123,20 @@ With the search box, you can quickly find a code file or work item.
 
 ::: moniker-end
 
-### Use filters for work item search
+### Use filters for searching work items
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
 
-	:::image type="content" source="../navigation/media/search/search-work-vert.png" alt-text="Search from title bar":::    
+	:::image type="content" source="media/get-started/search-work-vert.png" alt-text="Search from title bar":::    
 
    The quick filters you can use are:
 
    * `a:` for **Assigned to:** 
    * `c:` for **Created by:** 
    * `s:` for **State** 
-   * `t:` for **Work item type**<p />
+   * `t:` for **Work item type**
  
 2. Start entering the name of a field in your work items; for example, enter `ta`.
 
@@ -138,7 +154,7 @@ With the search box, you can quickly find a code file or work item.
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
    
-   :::image type="content" source="../navigation/media/search/work-item-search-filters.png" alt-text="Search from the title bar":::   
+   :::image type="content" source="media/get-started/work-item-search-filters.png" alt-text="Search from the title bar":::   
 
    The quick filters you can use are:
 
@@ -167,7 +183,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and select *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+To start your search, choose **Repos** > **Files** or another page under **Code**, enter a keyword or phrase in the search box, and then *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
 
 :::image type="content" source="../../organizations/public/media/search/code-search-vert.png" alt-text="Code Search box":::
  
@@ -175,26 +191,23 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
+1. In the search box, check that the text displays _Search code_. If it doesn't, select it.
 
-   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-outlined.png" alt-text="Switching between searching for code and work items":::
+   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-outlined.png" alt-text="Switch between searching for code and work items":::
 
-2. Enter a search string in the text box, and select _Enter_ or choose 
+2. Enter a search string in the text box, and then select _Enter_ or  
    ![start search icon](../search/media/shared/start-search-icon.png) start search.
 
 ::: moniker-end
 
-### Use filters for code search
+### Use filters for searching code
 
  The search page shows a list of the matching code files. The selected file has all instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
+	:::image type="content" source="media/get-started/code-search-example.png" alt-text="Code search results example":::
 
-	> [!div class="mx-imgBorder"]  
-	> ![Code search results example](media/search/code-search-example.png) 
+Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type you want to include in your search string from the list, and then enter the criteria value.
 
-Try to assemble more complex search strings using the operators and functions listed in the drop-down menu. Select the filter function or code type you want to include in your search string from the list, and then enter the criteria value.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Code search bar](media/search/code-search-filters.png)     
+   :::image type="content" source="media/get-started/code-search-filters.png" alt-text="Code search bar":::
 
    * Find all instances of "ToDo" comments in your code by selecting `comment:` and entering `todo`. 
    * Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
@@ -203,11 +216,41 @@ Try to assemble more complex search strings using the operators and functions li
    * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
    * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-To learn more about searching code, see [Functional code search](../search/advanced-code-search.md).
+To learn more about searching code, see [Functional code search](advanced-code-search-syntax.md).
+
+## Start searching packages or artifacts
+
+Start searching across all your packages and artifacts inside your organization.
+
+1. Open the **Azure Artifacts** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
+
+2. Choose ![start search icon](media/shared/start-search-icon-new.png) **Search** at the top right of the window to show the search textbox.
+
+3. Enter a search string in the textbox, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search.
+
+Search results display with matches to your query shown in bold. 
+The following example shows a full text search that uses simple search strings for words or phrases. 
+
+:::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
+
+### Use filters for searching packages or artifacts
+
+1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
+   Use the filter to show the selector lists.
+
+	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::   
+
+2. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
+
+3. By switching pivots, quickly [search code](#start-searching-code) containing the same search string, or search for the same string in your [wikis](#start-searching-wiki), [work items](#start-work-item-search) or [packages](#start-searching-packages-or-artifacts).
+
+	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
 
 ## Start searching wiki
 
-With wiki search, you can search within a project wiki or across all wikis created for your organization. Select the **Search wiki** option from the search box and enter a keyword or phrase within the search box.
+Start searching within a project wiki or across all wikis created for your organization.
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
@@ -216,11 +259,11 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose **Overview** > **Wiki** and enter your keyword or phrase into the search box. 
+Select the **Search wiki** option from the search box and enter a keyword or phrase within the search box.
 
   :::image type="content" source="../wiki/media/search/search-wiki-vert.png" alt-text="Wiki search option":::   
 
-The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
+The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search returns page results containing related words, such as *requesting, requested, requests,* and so on.
 
    :::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Wiki search results"::: 
 
@@ -232,15 +275,11 @@ Open **Wiki** and enter your keyword or phrase into the search box.
 
    :::image type="content" source="../wiki/media/search/search-wiki-horz.png" alt-text="Wiki search option, previous navigation"::: 
 
-The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
+The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search returns page results containing related words such as *requesting, requested, requests,* and so on.
 
   :::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Wiki search results":::   
 
 ::: moniker-end
-
-
-
-
 
 ## Search results, sort, and view options
 
@@ -283,158 +322,10 @@ The search feature quickly returns wiki pages by title or page content. English 
 		
 
 
-::: moniker range=">= azure-devops-2019"  
-
-![Search boxes in Azure DevOps](media/shared/title-bar-search-box-select-type-tfs.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"  
-
-![Search boxes in TFS 2018 and earlier](media/shared/title-bar-search-box-select-type.png)
-
-::: moniker-end
-
-<a name="start-search"></a>
-
-## Initiate a code search 
-
-Code search requires installation of the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it hasn't yet been installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
-
-::: moniker range=">= azure-devops-2019"
-  
-To start your search, choose **Repos** > **Files** or another page under **Code**, enter a keyword or phrase in the search box, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
-
-> [!div class="mx-imgBorder"]
-> ![Code Search box](../../organizations/public/media/search/code-search-vert.png) 
-::: moniker-end  
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
-
-   ![Switching between searching for code and work items](../search/media/code-search-get-started/title-bar-search-box-empty-outlined.png)
-
-2. Enter a search string in the text box, and select _Enter_ (or choose 
-   ![start search icon](../search/media/shared/start-search-icon.png) start search.
-
-::: moniker-end
-
-### Work with code search results  
-
-1. The search page shows a list of the matching code files. The selected file has all
-   instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Code search results example](media/search/code-search-example.png) 
-
-1. Try assembling more complex search strings using the operators and functions listed in the handy 
-   drop-down list. Select the filter function or code type you want to include in your search string from the
-   list, and enter the criteria value.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Code search bar](media/search/code-search-filters.png)     
-
-   * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and entering `todo`. 
-
-   * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
-
-   * You can search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string 
-    `error ext:resx` could be useful when you want to review all error strings in your code. 
-    But even if your plain text search string (without specific file type functions) 
-    matches part of a filename, the file appears in the list of found files.
-
-   * You can combine two or more words by using Boolean operators; for example, `validate OR release`.
-
-   * You can find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
-
-   * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
-
-To learn more, see [Search code](../search/code-search.md).
 
 
 <a name="start-search"></a>
 
-## Search for a Work Item
-
-::: moniker range=">= azure-devops-2019"
-
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box](media/search/work-item-search-vert.png)    
-
-2. Search results are displayed in a snippet view where the matches found are shown in bold.
-
-   ![Search results](../search/media/work-item-search-get-started/results-matching.png)
-
-   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
-
-3. Select a snippet of a work item to display it in the right window. 
-  
-4. Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search icon](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
-
-   ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
-
-2. Enter a search string in the text box, and select _Enter_ or choose ![start search icon](../search/media/shared/start-search-icon.png) start search. 
-
-3. Search results are displayed in a snippet view where the matches found are shown in bold.
-
-   ![Search results](../search/media/work-item-search-get-started/results-matching.png)
-
-   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
-
-4. Select a snippet of a work item to display it in the right window. 
-  
-5. Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search icon](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
-
-::: moniker-end
-
-### Fine tune your work item search results 
-
-::: moniker range=">=tfs-2018"
-
-## Initiate a wiki content search 
-
-With wiki search, you can search within a project wiki or across all wikis created for the organization. Simply select the **Search wiki** option from the search box and enter a keyword or phrase within the search box. 
-::: moniker-end
-
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019" 
-
-Choose **Overview>Wiki** and enter your keyword or phrase into the search box. 
-
-> [!div class="mx-imgBorder"]  
-> ![Wiki search option](../wiki/media/search/search-wiki-vert.png)   
-
-The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
-
-> [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
-
-::: moniker-end  
-
-::: moniker range="tfs-2018"  
-
-Open **Wiki** and enter your keyword or phrase into the search box. 
-
-> [!div class="mx-imgBorder"]  
-> ![Wiki search option, previous navigation](../wiki/media/search/search-wiki-horz.png)   
-
-The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
-
-> [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
 
 ::: moniker-end
 
@@ -449,5 +340,5 @@ The search feature quickly returns wiki pages by title or page content. English 
 * [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
 * [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
-* [Work Item Search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
+* [Work item aearch blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
 * [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
