@@ -69,6 +69,13 @@ You can create a subscription for the following categories and select from the f
 |Extension management | <ul><li>an extension is modified</li></ul>   |
 |Release | <ul><li>an approval for a deployment is pending</li><li>a deployment is completed</li><li>a request for release creation failed</li><li>a manual intervention for a deployment is pending</li></ul> |
 
+:::moniker range=">= azure-devops-2020"
+
+> [!NOTE]
+> You can also create a custom notification subscription for pull requests that are created or updated in a **draft state**. For more information, see [Custom notification subscription for draft pull requests](/azure/devops/release-notes/2020/repos/sprint-165-update#custom-notification-subscription-for-draft-pull-requests).
+
+:::moniker-end
+
 For more information, see [Manage team, group, and global notifications](manage-team-group-global-organization-notifications.md).
 
 ### Global notifications
