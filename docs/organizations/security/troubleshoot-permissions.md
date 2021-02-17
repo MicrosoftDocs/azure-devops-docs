@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/02/2021
+ms.date: 02/16/2021
 --- 
 
 # Troubleshoot permissions
@@ -17,12 +17,9 @@ ms.date: 02/02/2021
 
 Troubleshoot permissions, feature access, and connection access in Azure DevOps.
 Want to include the need to:
-•	Find all groups a user belongs to.
-•	Make sure to address Cloud and ON-prem
-•	Don't include Kusto or SQL queries
+
+•	
 •	Do provide links to tfssecurity and az devops security commands to help fix permissions.
-•	Mention that the Hide Org is a limiting restriction (not exactly a permission)
-________________________________________
 
 
 ## Look up permissions
@@ -35,6 +32,70 @@ You can look up permissions based on the following levels:
 - team administrator role
 
 For more information, see [Permissions and groups](permissions.md), and the [Permissions lookup guide](permissions-lookup-guide.md).
+
+::: moniker range=" azure-devops"
+
+## Hide organization settings from users
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once this preview feature's enabled, any user or group added to the Project-Scoped Users group, are restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added to. This isn't a permission, rather it's a limiting restriction in preview features.
+
+For more information, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
+
+## Refresh permissions on-demand
+
+In the past, whenever users were added to an Azure DevOps or Azure AD group, which granted inherited access to an organization or project, they didn't get the access immediately. Users had to wait or sign out, close their browser, and then sign back in to get their permissions refreshed. 
+
+Within **User settings**, on the **Permissions** page, you can select **Reevaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
+
+:::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Reevaluate permissions control":::
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+## Find all groups a user belongs to
+
+There are two general approaches to investigating which groups a user belongs to.
+
+- Bottom up. Start with a user who's experiencing access failure and use `tbl_GroupMembership` and `tbl_SecurityAccessControlEntry` to find the unwanted *deny* or the missing *allow*.
+- Top down. Start with the Project Collection Valid Users group. This approach can be helpful when your permission isn't being enforced and everyone has access.
+
+Tables to ask for:
+`tbl_Identity`
+`tbl_Group`
+`tbl_GroupMembership`
+`tbl_IdentityMap`
+The following tables exist in both the configuration database and collection database. Make sure to ask for the correct one, based on what host level the failed permission check was done at.
+`tbl_SecurityAccessControlEntry` 
+`tbl_SecurityInheritance` 
+
+For more information about commands, see [Azure DevOps security group commands](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest)
+
+### Use tools to fix permission
+
+You can use the following tools to fix a user's permission issue.
+
+- TFSSecurity.exe - TFSSecurity is a command-line tool that can be used to view and update and delete permissions or groups. 
+
+Example usage:
+`tfssecurity /a+ Identity "81e4e4b5-bde0-4f2c-a7a5-4d25c2e8a81f\" Read "Project Collection Valid Users" ALLOW /collection:{collectionUrl}`
+`tfssecurity /a- Identity "3c7a0a47-27b4-4def-8d42-aab9b405fc8a\" Write n:"[Project1]\Contributors" DENY /collection:{collectionUrl}`
+
+- Use the public sproc
+Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
+
+For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2020).
+
+## Permission check failures
+
+Trace points:
+
+- 55555
+- 56108
+
+For more information, see [Azure DevOps security group commands](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest)
+
+::: moniker-end
 
 ## Trace a permission
 
@@ -84,7 +145,9 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
    :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into the filter box":::
 
-2. You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+   You should now have a user-specific view that shows what permissions they have.
+
+2. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
 
    ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information-2019.png)
 
@@ -101,29 +164,31 @@ The resulting trace lets you know how they're inheriting the listed permission. 
    
    ![Enter user name to view permissions](media/security-page-enter-user-name.png)
 
-3.	You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+   You should now have a user-specific view that shows what permissions they have.
+
+3.	To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
 
    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
 
-The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups they're in.
+The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions provided to the groups they're in.
 
 ::: moniker-end
 
 For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
 
-## Membership in a group which has lesser permissions
+## Membership in a group that has lesser permissions
 
 Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. Users always get the best access level between all the group rules, including Visual Studio (VS) subscription. 
 
 See the following examples, showing how the subscriber detection factors into group rules.
 
-### Example 1: group rule gives me more access
+### Example 1: Group rule gives me more access
 
 If I have a VS Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
 Expected: I get Basic + Test Plans because what the group rule gives me is greater than my subscription.
 
-### Example 2: group rule gives me the same access
+### Example 2: Group rule gives me the same access
 
 I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
@@ -132,12 +197,14 @@ Expected: I get detected as a Visual Studio Test Pro subscriber, because the acc
 For more information, see the following articles:
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+
 ## Rules applied to a work item type that restrict permissions
 
-See the following information for WIT rules that apply toward restricting permissions:
+See the following information for work item type rules that apply toward restricting permissions:
 
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
+
 ## Other areas where permissions might be applied
 
 [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
@@ -147,9 +214,9 @@ Custom controls
 
 ## Access level restriction
 
-You should know about [Supported access levels](access-levels.md#supported-access-levels) in Azure DevOps.
+For information about access level restriction, see [Supported access levels](access-levels.md#supported-access-levels) in Azure DevOps.
 
-### Feature access
+## Feature access
 
 To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the access level and security group to which a user is assigned.
 
