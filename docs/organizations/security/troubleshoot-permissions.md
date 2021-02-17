@@ -17,7 +17,7 @@ ms.date: 02/17/2021
 
 Troubleshoot permissions, feature access, and connection access in Azure DevOps.
 
-For more information and a comprehensive reference for each built-in user, group, and permission, see [Security groups, service accounts, and permissions in Azure DevOps](permissions.md).
+For more information and a comprehensive reference for each built-in user, group, and permission, see [Security groups, service accounts, and permissions in Azure DevOps](permissions.md). See also [Other areas where permissions might be applied](#other-areas-where-permissions-might-be-applied), which is listed further in this article.
 
 ## Look up permissions
 
@@ -28,7 +28,7 @@ You can look up permissions in Azure DevOps based on the following levels:
 - security role   
 - team administrator role
 
-For more information, see [Permissions and groups](permissions.md), and the [Permissions lookup guide](permissions-lookup-guide.md).
+For more information about permissions, see [Permissions and groups](permissions.md), and the [Permissions lookup guide](permissions-lookup-guide.md).
 
 ::: moniker range=" azure-devops"
 
@@ -100,11 +100,15 @@ For more information about Azure DevOps CLI commands, see [Azure DevOps security
 
 Use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
 
-If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because of one of the following scenarios:
+::: moniker range=" azure-devops"
 
-- Their permissions haven't propagated yet. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
+If a user is having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because of delayed changes. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
 
-- The user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see:
+::: moniker-end
+
+::: moniker range="<= azure-devops"
+
+If a user is having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because the user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. For more information about assigning access levels or checking the access level of a user in your organization, see [About access levels](access-levels.md) and [Change access levels](change-access-levels.md).
 
 ::: moniker range="azure-devops"
 
@@ -208,6 +212,10 @@ For more information about work item type rules that apply toward restricting pe
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
 
+For more information, see the following articles:
+
+- [Define area paths and assign to a team](../settings/set-area-paths.md)
+
 ::: moniker-end
 
 ## Access level restriction
@@ -242,6 +250,11 @@ Otherwise, on the first day of the calendar month, users who haven't signed in t
 - [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
+- [Area path permissions](set-permissions-access-work-tracking.md)
+- [Work item tags](../../boards/queries/add-tags-to-work-items.md)
+- [Moved work items out of a project](../../boards/backlogs/move-change-type.md)
+- [Deleted work items](../../boards/backlogs/remove-delete-work-items.md#delete-work-items)
+- [Azure Boards Team Administrator permissions and access](../../boards/get-started/permissions-access-boards.md)
 
 ## Related articles
 
