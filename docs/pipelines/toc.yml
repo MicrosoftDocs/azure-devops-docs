@@ -260,7 +260,7 @@
       href: test/review-code-coverage-results.md
     - name: Review pull request code coverage
       href: test/codecoverage-for-pullrequests.md
-- name: Deploy apps (YAML)
+- name: Deploy apps
   items:
   - name: Deploy apps to environments
     items:
