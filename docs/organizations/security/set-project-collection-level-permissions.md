@@ -8,11 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-<<<<<<< HEAD
 ms.date: 01/25/2021
-=======
-ms.date: 11/16/2020
->>>>>>> 6ce412000d8aa9f072c5b7149fdcdb0e3a7e2a21
 --- 
 
 
