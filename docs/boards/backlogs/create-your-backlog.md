@@ -8,17 +8,20 @@ ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 7/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/11/2021
 ---
 
 # Create your product backlog 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. 
+Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. As shown in the following image, your backlog consists of a flat list of work items. 
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of a Backlog of product backlog items.](media/create-backlog/intro-image.png)
+
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you're able to [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -370,7 +373,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Display rollup progress bars or counts](display-rollup.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
@@ -382,7 +385,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
