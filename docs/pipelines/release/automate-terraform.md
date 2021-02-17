@@ -89,7 +89,7 @@ This tutorial uses the PartsUnlimited project, which is a sample eCommerce websi
 
     **webapp.tf** is a terraform configuration file. Terraform uses its own file format, called HCL (Hashicorp Configuration Language). The structure is similar to YAML. In this example, Terraform will deploy the Azure resource group, app service plan, and app service required to deploy the website. However, since the names of those resources are not yet known, they are marked with tokens that will be replaced with real values during the release pipeline.
 
-    As an added benefit, this Infrastructure-as-Code (IaC) file can be managed as part of source control. You may learn more about working with Terraform and Azure in [this Terraform Basics lab](https://azurecitadel.com/automation/terraform/lab1/).
+    As an added benefit, this Infrastructure-as-Code (IaC) file can be managed as part of source control. You may learn more about working with Terraform and Azure in [this Terraform Basics lab](https://archive.azurecitadel.com/automation/terraform/lab1/).
 
 <a name="build-application"></a>
 

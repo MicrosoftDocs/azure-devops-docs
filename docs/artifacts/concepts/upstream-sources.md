@@ -146,9 +146,10 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. For outages lasting less than 12 hours, you can continue to normally use your feeds thanks to the [Cached metadata](#upstream-metadata-cache).
 
-Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can chose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
+Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can choose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
 
-## What's next?
+## Related articles
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
-- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Manage feed permissions](..//feeds/feed-permissions.md)
