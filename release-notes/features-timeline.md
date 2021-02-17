@@ -362,7 +362,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr> 
         <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr> 
         <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr> 
-        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>2020</td></tr>   
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>Future</td></tr>   
         <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
