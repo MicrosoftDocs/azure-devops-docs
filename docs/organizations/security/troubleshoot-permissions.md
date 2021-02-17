@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/16/2021
+ms.date: 02/17/2021
 --- 
 
 # Troubleshoot permissions
@@ -37,13 +37,17 @@ For more information, see [Permissions and groups](permissions.md), and the [Per
 
 ## Hide organization settings from users
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once this preview feature's enabled, any user or group added to the Project-Scoped Users group, are restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added to. This isn't a permission, rather it's a limiting restriction in preview features.
+To restrict users from accessing organization settings, you can enable the **Limit user visibility for projects** preview feature. Examples of restricted users include Stakeholders, Azure Active Directory (Azure AD) guest users, or members of a security group. Once enabled, any user or group added to the Project-Scoped Users group gets restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added. This preview feature isn't a permission, rather it's a limiting restriction in preview features.
 
 For more information, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
 
 ## Refresh permissions on-demand
 
-In the past, whenever users were added to an Azure DevOps or Azure AD group, which granted inherited access to an organization or project, they didn't get the access immediately. Users had to wait or sign out, close their browser, and then sign back in to get their permissions refreshed. 
+### Problem
+
+Users get added to an Azure DevOps or Azure AD group. This action grants inherited access to an organization or project. But, they don't get access immediately. Users must either wait or sign out, close their browser, and then sign back in to get their permissions refreshed. 
+
+### Solution
 
 Within **User settings**, on the **Permissions** page, you can select **Reevaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
 
@@ -82,6 +86,8 @@ Example usage:
 `tfssecurity /a- Identity "3c7a0a47-27b4-4def-8d42-aab9b405fc8a\" Write n:"[Project1]\Contributors" DENY /collection:{collectionUrl}`
 
 - Use the public sproc
+
+Example usage:
 Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
 
 For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2020).
@@ -101,7 +107,7 @@ For more information, see [Azure DevOps security group commands](https://docs.mi
 
 Use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
 
-If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be due to one of the following scenarios:
+If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because of one of the following scenarios:
 
 - Their permissions haven't propagated yet. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
 
@@ -147,7 +153,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
    You should now have a user-specific view that shows what permissions they have.
 
-2. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+2. Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
    ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information-2019.png)
 
@@ -166,7 +172,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
    You should now have a user-specific view that shows what permissions they have.
 
-3.	To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
 
@@ -192,7 +198,7 @@ Expected: I get Basic + Test Plans because what the group rule gives me is great
 
 I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
-Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
+Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule. I'm already paying for the Visual Studio Test Pro, so I don't want to pay again.
 
 For more information, see the following articles:
 - [Permissions and groups reference](permissions.md)
@@ -218,7 +224,7 @@ For information about access level restriction, see [Supported access levels](ac
 
 ## Feature access
 
-To use Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the access level and security group to which a user is assigned.
+To use Azure DevOps features, users must be added to a security group with the appropriate permissions. They must also be granted access to the web portal. Limitations to select features are based on the access level and security group to which a user is assigned.
 
 A user can lose access for the following reasons:
 
