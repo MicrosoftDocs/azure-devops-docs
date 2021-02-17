@@ -15,7 +15,7 @@ ms.date: 02/02/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Troubleshoot permissions, feature access, and connection access.
+Troubleshoot permissions, feature access, and connection access in Azure DevOps.
 Want to include the need to:
 •	Find all groups a user belongs to.
 •	Make sure to address Cloud and ON-prem
@@ -35,6 +35,7 @@ You can look up permissions based on the following levels:
 - team administrator role
 
 For more information, see [Permissions and groups](permissions.md), and the [Permissions lookup guide](permissions-lookup-guide.md).
+
 ## Trace a permission
 
 Use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.

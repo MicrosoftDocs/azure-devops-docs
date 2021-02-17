@@ -351,8 +351,13 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
 =======
 - [Web portal navigation](../../project/navigation/index.md)
 >>>>>>> b2d21646aab0a72234185786da4f096cfb72d20c
+=======
+- [Web portal navigation](../../project/navigation/index.md) 
+- [Troubleshoot permissions](troubleshoot-permissions.md)
+>>>>>>> 6ce412000d8aa9f072c5b7149fdcdb0e3a7e2a21
