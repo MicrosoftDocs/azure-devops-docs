@@ -380,7 +380,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Start using your Kanban board](../boards/boards/kanban-quickstart.md)
 - [Add columns to your Kanban board](../boards/boards/add-columns.md) 
 - [Customize cards](../boards/boards/customize-cards.md)
-- [Filter your Kanban board](../boards/boards/filter-kanban-board.md)
+- [Filter your Kanban board](../boards/backlogs/filter-backlogs-boards-plans.md)
 - [Kanban best practices](../boards/boards/best-practices-kanban.md)
 
 #### Scrum
