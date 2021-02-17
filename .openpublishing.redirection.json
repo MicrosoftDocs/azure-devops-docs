@@ -17668,6 +17668,11 @@
       "source_path": "docs/boards/boards/filter-kanban-board.md",
       "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/faq-trace-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/troubleshoot-permissions",
+      "redirect_document_id": false
     }
   ]
 }

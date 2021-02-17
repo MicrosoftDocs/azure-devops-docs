@@ -241,7 +241,7 @@ To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item
 
 ## Related articles
 
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [About permissions and inheritance](about-permissions.md)
