@@ -3531,13 +3531,6 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Troubleshoot permissions](troubleshoot-permissions.md)
  
-=======
- 
->>>>>>> b2d21646aab0a72234185786da4f096cfb72d20c
-=======
-- [Troubleshoot permissions](troubleshoot-permissions.md)
->>>>>>> 6ce412000d8aa9f072c5b7149fdcdb0e3a7e2a21
+
