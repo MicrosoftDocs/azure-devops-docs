@@ -91,15 +91,11 @@
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
   - name: Grant or restrict permissions to select tasks
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6ce412000d8aa9f072c5b7149fdcdb0e3a7e2a21
     href: restrict-access.md
   - name: Troubleshoot permissions
     href: troubleshoot-permissions.md
 - name: Set permissions for an object or role
-  items: 
+  items:
   - name: Set work tracking & plan permissions 
     href: set-permissions-access-work-tracking.md
   - name: Set permissions & access for testing
