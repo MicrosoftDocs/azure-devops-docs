@@ -16,15 +16,12 @@ ms.date: 02/17/2021
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
 Troubleshoot permissions, feature access, and connection access in Azure DevOps.
-Want to include the need to:
 
-•	
-•	Do provide links to tfssecurity and az devops security commands to help fix permissions.
-
+For more information and a comprehensive reference for each built-in user, group, and permission, see [Security groups, service accounts, and permissions in Azure DevOps](permissions.md).
 
 ## Look up permissions
 
-You can look up permissions based on the following levels:
+You can look up permissions in Azure DevOps based on the following levels:
 - object level    
 - project level
 - organization or project collection level  
@@ -39,7 +36,7 @@ For more information, see [Permissions and groups](permissions.md), and the [Per
 
 To restrict users from accessing organization settings, you can enable the **Limit user visibility for projects** preview feature. Examples of restricted users include Stakeholders, Azure Active Directory (Azure AD) guest users, or members of a security group. Once enabled, any user or group added to the Project-Scoped Users group gets restricted from accessing the Organization Settings pages, except for Overview and Projects. They're restricted to accessing only those projects to which they've been added. This preview feature isn't a permission, rather it's a limiting restriction in preview features.
 
-For more information, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
+For more information about hiding organization settings from users, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
 
 ## Refresh permissions on-demand
 
@@ -59,7 +56,7 @@ Within **User settings**, on the **Permissions** page, you can select **Reevalua
 
 ## Find all groups a user belongs to
 
-There are two general approaches to investigating which groups a user belongs to.
+There are the following two general approaches to investigating which groups a user belongs to.
 
 - Bottom up. Start with a user who's experiencing access failure and use `tbl_GroupMembership` and `tbl_SecurityAccessControlEntry` to find the unwanted *deny* or the missing *allow*.
 - Top down. Start with the Project Collection Valid Users group. This approach can be helpful when your permission isn't being enforced and everyone has access.
@@ -94,12 +91,8 @@ For more information, see [Use TFSSecurity to manage groups and permissions for 
 
 ## Permission check failures
 
-Trace points:
 
-- 55555
-- 56108
-
-For more information, see [Azure DevOps security group commands](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest)
+For more information about Azure DevOps CLI commands, see [Azure DevOps security group commands](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/security/group?view=azure-cli-latest)
 
 ::: moniker-end
 
@@ -111,23 +104,23 @@ If a user's having permissions issues and you use default security groups or cus
 
 - Their permissions haven't propagated yet. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
 
-- The user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following article.
+- The user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see:
 
 ::: moniker range="azure-devops"
 
-[Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
+   [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-[Change access levels](change-access-levels.md)
+   [Change access levels](change-access-levels.md)
 
 ::: moniker-end
 
 Users can receive their effective permissions either directly or via groups.
 
-By following these steps, administrators can understand where exactly those permissions are coming from and adjust them, as needed.
+Complete the following steps so administrators can understand where exactly those permissions are coming from and adjust them, as needed.
 
 ::: moniker range="azure-devops"
 
@@ -155,7 +148,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 2. Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
-   ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information-2019.png)
+   :::image type="content" source="media/permissions-list-view-project-level-information-2019.png" alt-text="Choose Why in permissions list view for project level information":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
 
@@ -204,21 +197,26 @@ For more information, see the following articles:
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
+::: moniker range=">= azure-devops-2019"
+
 ## Rules applied to a work item type that restrict permissions
 
-See the following information for work item type rules that apply toward restricting permissions:
+Prior to customizing a process, we recommend that you review [Configure and customize Azure Boards](../../boards/configure-customize.md), which provides guidance on how to customize Azure Boards to meet your business needs.
+
+For more information about work item type rules that apply toward restricting permissions, see:
 
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
 
-## Other areas where permissions might be applied
-
-[Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
-[Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
-Custom backlogs and boards
-Custom controls
+::: moniker-end
 
 ## Access level restriction
+
+You can assign users or groups of users to one of the following access levels:
+- Stakeholder
+- Basic
+- Basic + Test Plans
+- Visual Studio subscription
 
 For information about access level restriction, see [Supported access levels](access-levels.md#supported-access-levels) in Azure DevOps.
 
@@ -237,6 +235,13 @@ A user can lose access for the following reasons:
 *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 
 Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
+
+## Other areas where permissions might be applied
+
+- [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
+- [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
+- [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
+- [Custom controls](../settings/work/custom-controls-process.md)
 
 ## Related articles
 
