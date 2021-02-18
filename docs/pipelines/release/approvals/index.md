@@ -24,7 +24,7 @@ Teams can also take advantage of the Approvals and Gates feature to control the 
 
 The following diagram illustrates the release pipeline workflow.
 
-:::image type="content" source="media/approvals-gates.png" alt-text="The release pipeline workflow":::
+:::image type="content" source="media/release-pipeline-workflow.svg" alt-text="The release pipeline workflow":::
 
 By using gates, approvals, and manual intervention you can take full control of your releases to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention are useful include the following.
 
