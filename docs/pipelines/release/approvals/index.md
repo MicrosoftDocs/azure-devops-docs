@@ -1,5 +1,5 @@
 ---
-title: Understand realease gates, checks, and approvals
+title: Understand release gates, checks, and approvals
 ms.custom: seodec18
 description: Understand deployment gates and approvals in Azure Pipelines
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
@@ -49,7 +49,6 @@ In addition, you can install an extension that integrates with *ServiceNow* to h
 > The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
 
 ```YAML
-# Delay
 # Delay further execution of a workflow by a fixed time
 jobs:
 - job: RunsOnServer
@@ -68,3 +67,9 @@ jobs:
 - [Add stages, dependencies, & conditions](../../process/stages.md)
 - [Release triggers](../triggers.md)
 - [Releases in Azure Pipelines](../releases.md)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Define approvals and checks](../../process/approvals.md)
+> [Use approvals and gates to control your deployment](../deploy-using-approvals.md)
