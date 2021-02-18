@@ -37,6 +37,9 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
+> [!NOTE]
+> We have [temporarily disabled](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) the free grant of Microsoft-hosted parallel jobs for new public projects. Stay tuned for updates as we roll out a new process to get your free grant.
+
 ## What is a parallel job? 
 
 When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline. Each running job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
@@ -62,13 +65,11 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 # [Microsoft-hosted](#tab/ms-hosted)
 
-For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
-
-
+For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
 |           |  Number of parallel jobs |  Time limit |
 | ----------| -------------------------| ------------|
-| **Public project** | 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
+| **Public project** | Up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
 
