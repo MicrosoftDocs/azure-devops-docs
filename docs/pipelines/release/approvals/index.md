@@ -43,11 +43,10 @@ By using gates, approvals, and manual intervention you can take full control of 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
-In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
-though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
+In addition, you can install an extension that integrates with *ServiceNow* to help you control and manage your deployments through Service Management methodologies such as ITIL. For more information, see [Integrate with ServiceNow change management](servicenow.md).
 
 > [!NOTE]
-> The time delay before the pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
+> The time delay before pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
 
 ```YAML
 # Delay
@@ -63,17 +62,9 @@ jobs:
 
 ## Related articles
 
-* [Approvals](approvals.md)
-* [Gates](gates.md)
-* [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [ServiceNow release and deployment control](servicenow.md)
-* [Stages](../../process/stages.md)
-* [Triggers](../triggers.md)
-* [Release pipelines and releases](../releases.md)
-
-## Additional resources
-
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
-
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
+- [Release deployment control using approvals](approvals.md)
+- [Release deployment control using gates](gates.md)
+- [Configure a manual intervention](../deploy-using-approvals.md#configure-maninter)
+- [Add stages, dependencies, & conditions](../../process/stages.md)
+- [Release triggers](../triggers.md)
+- [Releases in Azure Pipelines](../releases.md)
