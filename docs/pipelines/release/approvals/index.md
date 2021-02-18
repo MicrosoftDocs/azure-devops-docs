@@ -1,16 +1,16 @@
 ---
-title: Understand approvals, gates, and checks
+title: Understand realease gates, checks, and approvals
 ms.custom: seodec18
-description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
+description: Understand deployment gates and approvals in Azure Pipelines
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 01/12/2021
+ms.date: 02/18/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Release approvals and gates overview
+# Release gates and approvals overview
 
 [!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
@@ -18,17 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-A release pipeline specifies the end-to-end release pipeline for an app to be deployed across a range of stages.
-Deployments to each stage are fully automated by using 
-[jobs](../../process/phases.md) and [tasks](../../process/tasks.md).
+Release pipelines enable teams to continuously deploy their application across different stages with lower risk and with faster pace. Deployments to each stage can be fully automated by using jobs and tasks.
 
-**Approvals** and **gates** give you additional control over the start and completion of the deployment pipeline.
-Each stage in a release pipeline can be configured with pre-deployment and post-deployment conditions
-that can include waiting for users to manually approve or reject deployments, and checking with other automated
-systems until specific conditions are verified. In addition, you can configure a manual intervention or validation to pause the
-deployment pipeline and prompt users to carry out manual tasks, then resume or reject the deployment.
-
-> At present, gates are available only in Azure Pipelines.
+Teams can also take advantage of the Approvals and Gates feature to control the workflow of the deployment pipeline. Each stage in a release pipeline can be configured with pre-deployment and post-deployment conditions that can include waiting for users to manually approve or reject deployments, and checking with other automated systems that specific conditions are met. In addition, teams can configure manual validations to pause the deployment pipeline and prompt users to carry out manual tasks then resume or reject the deployment.
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 
