@@ -17,9 +17,9 @@ Azure Artifacts is a service that enables teams to use feeds and upstream source
 
 ## How do I publish artifacts?
 
-Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **classic editor**.
+Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
-## Example: Publish a text file as an artifact
+### Publish a text file
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -32,11 +32,11 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     artifactName: drop
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **artifactName**: the name of your artifact.
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+> Make sure you are not using one of the reserved folder names when publishing your artifact. See [Application Folders](/previous-versions/ex526337(v=vs.140)#application-folders) for more details.
 
 ::: moniker-end
 
@@ -45,8 +45,8 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-> [!TIP]
-> If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
+
+If you don't have a Git repository yet, you can follow this article to [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 
 :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
