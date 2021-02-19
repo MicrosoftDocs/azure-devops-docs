@@ -1464,3 +1464,12 @@ To learn more about build pipeline settings, see:
 <!-- ENDSECTION -->
 
 ::: moniker-end
+
+### Is there a way to **automate** multiple deploys through the command-line so that we can ***run/deploy*** multiple pipelines with a single command using Azure CLI/Azure API’s in Azure DevOps Services?
+
+By using [Azure CLI commands](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest), you will be able to list all the pipelines and definitions and also provide a single **release/build ID** as a parameter. Currently, there is no command in Azure CLI/Azure API’s that can achieve the desired outcome. All commands are designed to work for independent runs of independent pipelines, both work with unique ID requests that allow a unique value. However, refer the documentation that explains [triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops) for more information.
+
+
+::: moniker-end
+
+::: moniker range="azure-devops"
