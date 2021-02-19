@@ -48,21 +48,17 @@ YAML is not supported in TFS.
 
 If you don't have a Git repository yet, you can follow this article to [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 
-:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
+Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields.
 
-* Path to publish:
+:::image type="icon" source="media/publish-task.png" border="false"::: 
 
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
+The text file should be at the root of your repository.
 
-* Artifact name:
+- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
 
-   ```
-   drop
-   ```
+- Artifact name: drop
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines
 
 * * *
 ## Example: Publish two sets of artifacts
