@@ -61,7 +61,7 @@ The text file should be at the root of your repository.
 - Artifact publish location: Azure Pipelines
 
 * * *
-## Example: Publish two sets of artifacts
+### Publish two sets of artifacts
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -78,11 +78,8 @@ The text file should be at the root of your repository.
     artifactName: drop2
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
-
-> [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **artifactName**: the name of your artifact.
 
 ::: moniker-end
 
@@ -91,47 +88,20 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can create multiple artifact items. For example:
 
-:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
+You can add multiple **Publish Build Artifacts** tasks to your pipelines.
 
-* Path to publish:
+:::image type="icon" source="media/multiple-publish-tasks.png" border="false"::: 
 
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
+Your package should be at the root of your repository.
 
-* Artifact name:
+- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
 
-   ```
-   drop1
-   ```
+- Artifact name: drop
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines
 
-:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
-
-* Path to publish:
-
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
-
-* Artifact name:
-
-   ```
-   drop2
-   ```
-
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
-
-The completed build delivers two sets of artifacts.
-
-> [!div class="mx-imgBorder"]
-> ![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
-
-> [!TIP]
-> You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
+In a real world scenario, you probably won't need to publish two copies of the same files. This example was an illustration to show how a user can publish multiple artifacts that can be independently managed and consumed by the deployment pipeline.
 
 * * *
 ## Example: Assemble C++ artifacts into one location and publish as an artifact
