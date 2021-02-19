@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/17/2021
+ms.date: 02/18/2021
 --- 
 
 # Troubleshoot access and permission issues
@@ -18,9 +18,9 @@ ms.date: 02/17/2021
 Because Azure DevOps security and permission structure is quite extensive, you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. This article provides step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 
 Before using this guide, we recommend that you review the following articles: 
-•	[Get started with permissions, access, and security groups](about-permissions.md)
-•	[Default permissions and access quick reference.](permissions-access.md) 
-•	[Quick reference index to Azure DevOps security](quick-reference-index-security.md)  
+- [Get started with permissions, access, and security groups](about-permissions.md)
+- [Default permissions and access quick reference.](permissions-access.md) 
+- [Quick reference index to Azure DevOps security](quick-reference-index-security.md)  
 
 > [!TIP]
 > When you're creating an Azure DevOps security group, label it in a way that is easy to discern if it is created to limit access.
@@ -199,10 +199,6 @@ To restrict users from accessing organization settings, you can enable the **Lim
 
 For more information about hiding organization settings from users, see [About projects, Project-scoped User group](../projects/about-projects.md#project-scoped-user-group).
 
-
-
-
-
 ::: moniker range="<= azure-devops-2020"
 
 ## Find all groups a user belongs to
@@ -263,6 +259,7 @@ For more information, see the following articles:
 
 ::: moniker range=">= azure-devops-2019"
 
+<!--->
 ## Other
 
 I am trying to add an AAD SG that has more than 100 members to the permissions of an Azure DevOps project and apparently only the first 100 are being recognized. I have looked for documented limits on this, but no luck. Is this a known limitation? Anybody knows how to overcome this?
@@ -272,23 +269,55 @@ A maximum of 100 users can be owners of a single group. Please refer [Azure AD s
 Which permissions in an Azure DevOps acount allow people to alter webhooks?
 
 If don't have permissions and wanted some permission then you can contact PCA(Project collection administrator) of organization, in which you are work. Follow the Link to find the PCA for permission issue :
-<!---
+
 ## .......structured section for thinking through potential issues
 
+i am trying to deploy code in Azure DevOps with GitHub. The issue is that i cannot bring the rest of my team in my Organization and Project, despite me adding them as organization & project members. they receive emails but when logging in they receive an error 401. Tried to see if anyone else has encountered the same issue but unfortunately I cannot find anything similar. This might be a basic issue but its big enough to annoy me so far.
+
+Visit in a browser in private mode, if you can access, then switch to your original browser, refresh the browser, then you should be able to access now. So the Carl Zhao`s answer should be correct, please check if works for you, let me know for freeYou can try to create a new incognito window and sign in to your organization : https://dev.azure.com/{organizationName} with the invited account in this incognito window. see: document.
+
+1.Close all browsers, including browsers that aren't running Azure DevOps.
+
+2.Open a private or incognito browsing session.
+
+3.Go to this URL: https://aka.ms/vssignout.
+
+You see a message that says, "Sign out in progress." After you sign out, you're redirected to the Azure DevOps @dev.azure.microsoft.com webpage.
+
+4.Sign in to Azure DevOps again. Select your other identity.
+
+
+Where are all the default permissions and groups? See security/permissions
+
+Add external users
+Turn on External guest access policy - link to add-external-user
+
+Dashboard
+Wiki
+Project-level
+feedback
+organization
+extension management
+
 see stackoverflow
+
+
+https://docs.microsoft.com/en-us/azure/devops/organizations/security/manage-tokens-namespaces?view=azure-devops manage permissions with command line tool
+
+
 -->
 
 ## Other areas where permissions might be applied
 
-- [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
-- [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
-- [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
-- [Custom controls](../settings/work/custom-controls-process.md)
 - [Area path permissions](set-permissions-access-work-tracking.md)
 - [Work item tags](../../boards/queries/add-tags-to-work-items.md)
 - [Moved work items out of a project](../../boards/backlogs/move-change-type.md)
 - [Deleted work items](../../boards/backlogs/remove-delete-work-items.md#delete-work-items)
 - [Azure Boards Team Administrator permissions and access](../../boards/get-started/permissions-access-boards.md)
+- [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
+- [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
+- [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
+- [Custom controls](../settings/work/custom-controls-process.md)
 
 ## Related articles
 
@@ -297,4 +326,3 @@ see stackoverflow
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
-
