@@ -58,7 +58,10 @@ We recommend this simple approach if:
    * If you're using the classic editor, select data you need. For example, the App service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
 
-> To refresh a service connection, edit the connection and select **Verify**. Once you save, the service connection will be valid for two years.  
+> [!NOTE]
+> 
+> By following this approach, Azure DevOps will **connect with Azure Active Directory and create an App Registration with a secret with two years of validity**. Once the service connection is nearing the reach of two years, the Azure AAD will show a prompt such that **A certificate or secret is expiring soon. Create a new one**. In such cases, the Service Connection will have to be refreshed.
+> To refresh a service connection, edit the connection from the Azure DevOps portal and select **Verify**. Once it is saved, the service connection will again be valid for two years.  
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
