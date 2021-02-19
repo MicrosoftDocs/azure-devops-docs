@@ -1,24 +1,19 @@
 ---
-title: Publish and consume build artifacts in builds
-titleSuffix: Azure Pipelines and TFS
+title: Publish and consume build artifacts
+description: How to use Artifacts in Azure pipelines
 ms.custom: seodec18
-description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 10/05/2020
+ms.date: 02/19/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Artifacts in Azure Pipelines
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
 > [!NOTE]
 > We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
 
-Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
+Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
 
 ## How do I publish artifacts?
 
