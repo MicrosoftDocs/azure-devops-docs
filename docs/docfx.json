@@ -9,6 +9,10 @@
         ],
         "group": "all",
         "exclude": [
+          "pipelines/archive/apps/**",
+          "pipelines/archive/release/**",
+          "pipelines/apps/aspnet/build-aspnet-cloudservice.md",
+          "pipelines/apps/aspnet/build-aspnet-dacpac.md",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
