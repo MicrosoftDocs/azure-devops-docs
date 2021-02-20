@@ -201,7 +201,7 @@ Run any other NuGet command besides the default ones: pack, push, and restore.
   displayName: 'list locals'
   inputs:
     command: custom
-    arguments: 'nuget locals all -list'
+    arguments: 'locals all -list'
 ```
 ## Open-source
 
