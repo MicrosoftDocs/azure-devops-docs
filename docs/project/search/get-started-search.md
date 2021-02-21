@@ -1,12 +1,12 @@
 ---
-title: Get started. Search across all your code, wiki, packages, and work items
-description: Quickly search with Azure DevOps.
+title: Get started searching Azure DevOps. Search 
+description: Quickly search within Azure DevOps across all your code, wiki, packages, and work items.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
-ms.topic: overview
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/16/2021
+ms.date: 02/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,15 +17,20 @@ monikerRange: '>= tfs-2017'
 The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access.
 
 ::: moniker range=">= tfs-2018"  
-With the search box, you can quickly find [code](#start-searching-code), [work item](#start-searching-work-items), [artifact](#start-searching-packages-or-artifacts), or [wiki](#start-searching-wiki) content. 
+With the search box, you can quickly find the following content:
+- [work item](#start-searching-work-items)
+- [code](#start-searching-code)
+- [artifact](#start-searching-packages-or-artifacts)
+- [wiki](#start-searching-wiki)
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
-With the search box, you can quickly find code or work items.  
+With the search box, you can quickly find [work](#start-searching-work-items) item and [code](#start-searching-code) content.  
 ::: moniker-end
 
 ## Prerequisites
 
+To use search, see the following prerequisites:
 - Every user can use the basic Search function. 
 - You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
 - You must be an administrator to perform searches on code.
@@ -34,35 +39,46 @@ With the search box, you can quickly find code or work items.
 
 |**Search feature**  |**Usage** |**Example**  |
 |---------|---------|---------|
-|Keyword searches     | Find exact matches. Search for two keywords with *OR*        |  validate OR release        |
-|Exact match    | Enclose a keyword or phrase in double-quotes        | "Client not found"        |
-|Work item ID    | enter *work item #*   | 8765921     |
-|Wildcard searches     | `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser.        | *alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox*   |
-|Use wildcards in combination    | You can use wildcard characters anywhere in your search string except as a prefix.         | You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest.        |
-|Special character searches     |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[ ]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: ( )[ ]*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     |
-|Boolean operator searches   |  Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.      | validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
+|**Keyword searches**     | Search for two keywords with *OR*        |  validate OR release        |
+|**Exact match**  | Enclose a keyword or phrase in double-quotes        | "Client not found"        |
+|**Work item ID**   | enter *work item #*   | 8765921     |
+| Search for a work item as you type | As you enter your work item, .... |    843*...*                     |
+|**Wildcard searches**    | `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser.        | *alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox*   |
+|**Use wildcards in combination**   | You can use wildcard characters anywhere in your search string except as a prefix.         | You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest.        |
+
+|**Boolean operator searches**   |  Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.      | validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
 · validate NOT revisit finds files that contain the word validate but not the word revisit.
 ·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
         |
-|Proximity search     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.        BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.      |     |
-|Search across projects    |         |         |
-|Expanded search box with filters and operators    |         |         |
-|Quick navigation     |         |         |
-|Functions to find specific types of code     |         |         |
-|Specific field search     |         |         |
-|Quick navigation     |         |         |
-|Search for boards, backlogs, queries, and sprint from the instant search box     |         |         |
-|Instant search for work items     |         |         |
-|Search for a work item as you type     |         |         |
-|Open work items from search     |         |         |
-|Search discussions     |         |         |
-|Search for commits in branches   |         |         |
-|Search for a file or folder in commit history     |         |         |
-|Scope code search using path filters |       |
+|**Search across projects**    |         |         |
+::: moniker range=" azure-devops" 
+|**Proximity search**     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.        BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.      |     |
+::: moniker-end
+::: moniker range=" >= azure-devops-2020"
+|**Quick navigation**    |  Search for boards, backlogs, queries, and sprint from the instant search box.       |         |
+|**Instant search for work items**     |         |         |
+::: moniker-end
+::: moniker range=" >= azure-devops-2019"
+|**Special character searches**    |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[ ]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: ( )[ ]*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     | 
+|**Expanded search box with filters and operators**    |         |         |
+::: moniker range=" >= tfs-2017"
+|**Specific field search**     | Search for a specific field within a work item        |         |
+|**Search discussions**     |         |         |
+|**Functions to find specific types of code**     |         |         |
+| **Search for commits in branches**
+::: moniker-end
+|**Search for boards, backlogs, queries, and sprint from the instant search box**     |         |         |
+|**Search for a work item as you type**     |         |         |
+|**Open work items from search**     |         |         |
+|**Search for a file or folder in commit history**     |         |         |
+|**Scope code search using path filters** |       |
 
+<!---
+Add BENEFIT of each search task type
 
+-->
 
-
+## Search vs. query
 
 ## Start searching with a keyword
 
@@ -87,7 +103,7 @@ By default, the search box searches everything. You can narrow down your results
 
 ## Start searching work items
 
-Start searching across all your work items over all your projects.
+Start searching across all your work items over all your projects, with a keyword or phrase.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -109,6 +125,11 @@ Start searching across all your work items over all your projects.
 
 4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
+### Search by work item ID
+
+Enter the work item ID in the search box in the Azure DevOps title bar to quickly go to it. 
+Searching for a work item ID opens the work item in a modal dialog, providing quick access to read and edit work items.
+
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -119,7 +140,7 @@ Start searching across all your work items over all your projects.
 
 2. Enter a search string in the text box, and select _Enter_ or  
    
-   ![startting search icon](../search/media/shared/start-search-icon.png) start search. 
+   ![starting search icon](../search/media/shared/start-search-icon.png) start search. 
 
 3. Search results display in a snippet view where the matches found are shown in bold.
 
@@ -296,9 +317,19 @@ The search feature quickly returns wiki pages by title or page content. English 
 ::: moniker-end
 
 
-## Other Azure DevOps search functions
+## Other search functions
 
+In the following table, you find some non-search box tasks.
 
+| **Non-search box task**                      | **Action**                                                             |
+|----------------------------------------------|------------------------------------------------------------------------|
+| Filter projects                              |                                                                        |
+| Find a setting (organization, project, user) | Start in Organization settings > Project settings > User settings page |
+| Find a user                                  | Organization settings > Users > Filter users                           |
+| Find an organization                         |                                                                        |
+| Find a project                               |                                                                        |
+| Install Code Search                          |                                                                        |
+| View file history and compare versions       |                                                                        |
 
 
 <a name="start-search"></a>
@@ -309,10 +340,14 @@ The search feature quickly returns wiki pages by title or page content. English 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [....](........md)
+> [Functional work item search](........md) or
+> [Functional code search](........md) or
+> [Functional artifact or package search](........md)
+
 
 ## Related articles
 
+* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 * [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 * [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
 * [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
