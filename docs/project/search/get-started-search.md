@@ -30,10 +30,9 @@ With the search box, you can quickly find [work](#start-searching-work-items) it
 
 ## Prerequisites
 
-To use search, see the following prerequisites:
-- Every user can use the basic Search function. 
-- You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
-- You must be an administrator to perform searches on code.
+- Every user can use the basic Search function
+- You must be a Stakeholder to perform semantic searches on work items, wiki, and packages
+- You must be a Project Collection Administrator (PCA) to perform searches on code
 
 ## Search features
 
@@ -45,18 +44,16 @@ To use search, see the following prerequisites:
 | Search for a work item as you type | As you enter your work item, .... |    843*...*                     |
 |**Wildcard searches**    | `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser.        | *alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox*   |
 |**Use wildcards in combination**   | You can use wildcard characters anywhere in your search string except as a prefix.         | You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest.        |
-
 |**Boolean operator searches**   |  Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.      | validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
 · validate NOT revisit finds files that contain the word validate but not the word revisit.
-·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
-        |
-|**Search across projects**    |         |         |
+·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed. |
+|**Search across projects**    | Search across all the projects, teams, and repositories to which you have access.        |         |
 ::: moniker range=" azure-devops" 
 |**Proximity search**     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.        BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.      |     |
 ::: moniker-end
 ::: moniker range=" >= azure-devops-2020"
 |**Quick navigation**    |  Search for boards, backlogs, queries, and sprint from the instant search box.       |         |
-|**Instant search for work items**     |         |         |
+|**Instant search for work items**     | Enter the work item ID in the search box.        |  The work item opens in a modal dialog, providing access to read and edit the work item.       |
 ::: moniker-end
 ::: moniker range=" >= azure-devops-2019"
 |**Special character searches**    |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[ ]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: ( )[ ]*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     | 
@@ -78,7 +75,13 @@ Add BENEFIT of each search task type
 
 -->
 
-## Search vs. query
+### Search vs. query
+
+Work Item queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in Excel to perform bulk additions and modifications. For more information about queries, see [Define a query](../../boards/queries/using-queries.md)
+
+### Search vs. filter
+
+Searching begins from nothing and adds to a list of results based on criteria that matches. Filtering begins from the full list of results and eliminates from that list based on which results do not match certain criteria. For more information about filters, see [Apply keyword and ID filters](../../boards/backlogs/filter-backlogs-boards-plans.md#apply-keyword-and-id-filters)
 
 ## Start searching with a keyword
 
@@ -100,6 +103,8 @@ By default, the search box searches everything. You can narrow down your results
 
 > [!TIP]
 > Searches aren't case-sensitive.
+
+
 
 ## Start searching work items
 
@@ -156,9 +161,12 @@ Searching for a work item ID opens the work item in a modal dialog, providing qu
    In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
+
+For mroe information about searching work items, see [Functional work item search](functional-work-item-search.md).
+
 ::: moniker-end
 
-### Use filters for searching work items
+### View and filter work item results
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -235,7 +243,7 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
 
 ::: moniker-end
 
-### Use filters for searching code
+### View and filter code results
 
  The search page shows a list of the matching code files. The selected file has all instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
 	:::image type="content" source="media/get-started/code-search-example.png" alt-text="Code search results example":::
@@ -268,7 +276,7 @@ The following example shows a full text search that uses simple search strings f
 
 :::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
 
-### Use filters for searching packages or artifacts
+### View and filter package results
 
 1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
    Use the filter to show the selector lists.
@@ -324,25 +332,52 @@ In the following table, you find some non-search box tasks.
 | **Non-search box task**                      | **Action**                                                             |
 |----------------------------------------------|------------------------------------------------------------------------|
 | Filter projects                              |                                                                        |
-| Find a setting (organization, project, user) | Start in Organization settings > Project settings > User settings page |
-| Find a user                                  | Organization settings > Users > Filter users                           |
+| Find a setting (organization, project, user) | Start in **Organization settings** > **Project settings** > **User settings page** |
+| Find a user                                  | **Organization settings** > **Users** > Filter users                           |
 | Find an organization                         |                                                                        |
 | Find a project                               |                                                                        |
-| Install Code Search                          |                                                                        |
+| Install Code Search                          |  Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to install Code Search.                                                                      |
 | View file history and compare versions       |                                                                        |
 
 
-<a name="start-search"></a>
+::: moniker-end
 
+## Extensions for Search
+
+The following extensions for Search are available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/):
+
+- Create Azure Search Objects
+- Azure Search Extension
+- Azure Search Extension for Azure Pipelines
+- Find similar work items
+
+::: moniker range=">= tfs-2017 < azure-devops"  
+
+Search extension for on-premises
+	• Work Item Search (built-in)
+	• Wiki Search (built-in)
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019" 
+
+- Code Search 
+- Azure Paths Search
+- GitSense
+- Wiql Editor
+- ConfigTransformation
+- TimeBox Integration Proof of Concept
+- AzDo Team Report
+- Pull Request Search 
 
 ::: moniker-end
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Functional work item search](........md) or
-> [Functional code search](........md) or
-> [Functional artifact or package search](........md)
+> [Functional work item search](functional-work-item-search.md) or
+> [Functional code search](functional-code-search.md) or
+> [Functional artifact or package search](functional-package-search.md)
 
 
 ## Related articles
