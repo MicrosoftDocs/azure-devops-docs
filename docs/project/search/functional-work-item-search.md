@@ -22,10 +22,13 @@ By using Work Item Search, you can do the following tasks:
   Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters. 
   
 * **Search across all work item fields**:
-  Quickly and easily find relevant work items by searching across all work item fields (including custom fields). Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.<p />
+  Quickly and easily find relevant work items by searching across all work item fields (including custom fields). Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.
   
 * **Search in specific fields**:
-  Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The dropdown list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris. 
+  Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The dropdown list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.
+
+* **Search across test**: 
+   Search across Test Plans, Test Suites, and other test work item types. 
 
 * **Take advantage of integration with work item tracking**:
   The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and much more.
