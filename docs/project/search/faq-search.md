@@ -1,29 +1,25 @@
 ---
 title: FAQs and problem solutions for Search   
-description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps.
+description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps Services.
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: sunar
 author: chcomley
-ms.date: 02/11/2021
+ms.date: 02/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Troubleshoot search
+# Search FAQs
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-all-versions](../../includes/version-tfs-all-versions.md)]
 
-Find troubleshooting information and learn the answers to frequently asked questions (FAQs) about the Search function and extensions available for Azure DevOps.
-
-::: moniker range=">= tfs-2017 < azure-devops"
-
-<a name="no-search-box"></a>
+Learn the answers to frequently asked questions (FAQs) about the Search function and extensions available for Azure DevOps Services.
 
 ## Q: Why isn't the Search box displayed after it's configured?
 A:
 1. The search box is shown only in the context of a project page. 
-   Navigate to a project and check if the search box is displayed at the top right. 
+   Go to a project and check if the search box is displayed at the top right. 
 
 2. If the search box isn't shown, verify that the extension is installed for the collection. 
    If not, [install](administration.md#config-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
@@ -42,6 +38,21 @@ A:
 ## Q: Why is Code search what's provided when I'm in Work Item view?
 
 A: You can toggle between Work Item and Code Search entities by using the picker next to the search box.
+
+## Q: Why isn't the wildcard search working as expected
+
+You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
+
+![Wildcard search for ge*](media/shared/faq-wildcard1.png)
+
+while ```get*``` shows **109,134** results.
+
+![Wildcard search for get*](media/shared/faq-wildcard2.png)
+
+A: Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
+
+Ensuring that you can find the most meaningful and actionable results as fast as possible, **enter more criteria in the search bar**.
+
 ## Q: How do I know if indexing was triggered for all the collections?
 A:
 * [Check indexing status](administration.md#check-index) separately for each collection.
@@ -107,64 +118,24 @@ A:
 A: If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](administration.md#upgrading-search).
 Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
 
-## Partial results in code search
-
-### Problem
-
+## Why do I only get partial results when I search code?
 I see a **Showing partial code results** banner in code search.
-
  ![Showing partial code results](media/shared/faq-partialresult.png)
 
-### Explanation
-
-Your code base might have one or more large repositories. The larger the repository, the higher number of documents that get searched. When you search large repositories, the request could take more time to process, which can cause the search request to fail. In this case, you may see partial search results along with the **Showing partial code results** banner, per the previous image.
+A: Your code base might have one or more large repositories. The larger the repository, the higher number of documents that get searched. When you search large repositories, the request could take more time to process, which can cause the search request to fail. In this case, you may see partial search results along with the **Showing partial code results** banner, per the previous image.
 
 ### Recommendation
-
 You could try the following alternatives, as applicable to your scenario:
-
 * Scope your query by using filters to narrow down to a "repo" or a "path".
 * See if you can narrow your query to avoid scenarios that require matching too many terms. 
 
 For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
 
-::: moniker-end
 
-::: moniker range=" <= azure-devops"
-
-## Q: How do I search company-wide for published internal NuGet packages?
-
-A: Go to [Discover in Azure DevOps(https://aka.ms/discover), enter your query and search, and then choose the **Packages** pivot. You can also navigate from your organization's landing page. At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.
-
-## Q: Is Azure DevOps Search extensible?
-
-A: Currently, no, but you can submit a new feature request in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html).
-
-## Wildcard search
-
-### Problem
-
-You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
-
-![Wildcard search for ge*](media/shared/faq-wildcard1.png)
-
-while ```get*``` shows **109,134** results.
-
-![Wildcard search for get*](media/shared/faq-wildcard2.png)
-
-### Explanation
-
-Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
-
-### Recommendation
-
-Ensuring that you can find the most meaningful and actionable results as fast as possible, enter more criteria in the search bar.
-::: moniker-end
 
 ## Related articles
 ::: moniker range=" azure-devops"
-- [Export access levels audit log](../../organizations/security/export-users-audit-log.md)
-::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 - [Get started with Search](get-started-search.md)
