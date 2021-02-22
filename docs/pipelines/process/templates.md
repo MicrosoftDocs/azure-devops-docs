@@ -266,6 +266,33 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
+When working with multiple jobs, remember to remove the name of the job in the template file, so as to avoid conflict
+
+```yaml
+# File: templates/jobs.yml
+jobs:
+- job: 
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - bash: echo "Hello Ubuntu"
+
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - bash: echo "Hello Windows"
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+```
+
 ### Stage reuse
 
 Stages can also be reused with templates.
