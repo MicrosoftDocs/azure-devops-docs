@@ -123,7 +123,7 @@ You can use the **Pool consumption report**, available on the **Analytics** tab 
 
 :::image type="content" source="../agents/media/pool-consumption-report/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
 
-### Check the parellel jobs setting directly
+### Check the parallel jobs setting directly
 
 Figure out how many parallel jobs you need by first seeing how many parallel jobs your organization currently uses:
 
