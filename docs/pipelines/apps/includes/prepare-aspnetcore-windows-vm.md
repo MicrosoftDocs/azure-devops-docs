@@ -20,7 +20,7 @@ Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:t
 Start-Process $env:temp\dotnet-dev-win-x64.1.0.6.exe -ArgumentList '/quiet' -Wait
 
 # Install the .NET Core Windows Server Hosting bundle
-Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
+Invoke-WebRequest https://download.visualstudio.microsoft.com/download/pr/dff39ddb-b399-43c5-9af0-04875134ce04/1c449bb9ad4cf75ec616482854751069/dotnet-hosting-5.0.3-win.exe -outfile $env:temp\DotNetCore.WindowsHosting.exe
 Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
 
 # Restart the web server so that system PATH updates take effect
