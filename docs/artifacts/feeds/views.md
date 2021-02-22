@@ -47,44 +47,44 @@ In addition to using the user interface in Azure Artifacts, you can also promote
 
     Example:
     
-    ```HTTP
+    ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request body. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 * **Promote an npm package**:
 
     Example:
     
-    ```HTTP
+    ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request body. See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 * **Promote a Python package**:
 
     Example:
     
-    ```HTTP
+    ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request body. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
 
 
 * **Promote a Universal package**:
 
     Example:
     
-    ```HTTP
+    ```Command
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request body. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
+    Use [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) to construct the body of your request. See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true) for more details.
     
-    Keep in mind that you cannot publish a package directly to a view (e.g. `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
+    Keep in mind that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
 
 ## Managing views
 
@@ -100,7 +100,7 @@ In the feed settings view:
 > [!div class="mx-imgBorder"]
 > ![Managing views](media/feed-settings-views.png)
 
-## What's next?
+## Related articles
 
 - [Understand upstream sources](../concepts/upstream-sources.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
