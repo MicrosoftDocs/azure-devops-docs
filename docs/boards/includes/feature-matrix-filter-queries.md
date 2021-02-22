@@ -13,7 +13,7 @@ The following table summarizes the query filter functions supported by each Azur
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
 ::: moniker-end
 
 ---
@@ -31,7 +31,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Text string searches](/azure/devops/boards/queries/titles-ids-descriptions) (single text, multi-line text, rich text) 
+      [Text string searches](../queries/titles-ids-descriptions.md) (single text, multi-line text, rich text) 
    :::column-end:::
    :::column span="4":::
       Searches are not case sensitive.  
@@ -43,7 +43,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Wildcard searches](/azure/devops/boards/queries/titles-ids-descriptions)
+      [Wildcard searches](../queries/titles-ids-descriptions.md)
    :::column-end:::
    :::column span="4":::
       Wild card = `*` 
@@ -55,7 +55,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Linked work item searches](/azure/devops/boards/queries/linking-attachments)   
+      [Linked work item searches](../queries/linking-attachments.md)   
    :::column-end:::
    :::column span="4":::
       Find work items based on direct links or topological/hierarchical link types. 
@@ -67,7 +67,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Logical clause groupings](/azure/devops/boards/queries/using-queries#logical-groupings)   
+      [Logical clause groupings](../queries/using-queries.md#logical-groupings)   
    :::column-end:::
    :::column span="4":::
       Group and nest clauses using AND and OR Boolean operators.  
@@ -79,7 +79,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-        [Historical String and DateTime field queries](/azure/devops/boards/queries/query-by-workflow-changes) 
+        [Historical String and DateTime field queries](../queries/query-by-workflow-changes.md) 
    :::column-end:::
    :::column span="1":::
        Find work items based on a field match with a previous value. 
@@ -92,7 +92,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query using macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      [Query using macros or variables](../queries/about-managed-queries.md#macros) 
    :::column-end:::
    :::column span="1":::
       Use macros to create queries relative to a date, other tools, such as team area path, team iteration, and more.  
@@ -104,7 +104,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
+      [Search across projects](../queries/using-queries.md#across-projects)
    :::column-end:::
    :::column span="1":::
       Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.
@@ -116,7 +116,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Field comparison searches](/azure/devops/boards/queries/query-field-value)  
+      [Field comparison searches](../queries/query-field-value.md)  
    :::column-end:::
    :::column span="1":::
       Find work items based on how two fields compare with one another.  
@@ -129,7 +129,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query on tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      [Query on tags](../queries/add-tags-to-work-items.md#query)
    :::column-end:::
    :::column span="1":::
       Find work items based on whether they contain or don't contain a tag. 
@@ -142,7 +142,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query on blank or empty fields](/azure/devops/boards/queries/titles-ids-descriptions#empty-or-not-empty-html-field-queries)
+      [Query on blank or empty fields](../queries/titles-ids-descriptions.md#empty-or-not-empty-html-field-queries)
    :::column-end:::
    :::column span="1":::
       Find work items based on empty or not empty HTML/rich text fields.  
@@ -155,7 +155,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [In and Not In Group searches](/azure/devops/boards/queries/planning-ranking-priorities) 
+      [In and Not In Group searches](../queries/planning-ranking-priorities.md) 
    :::column-end:::
    :::column span="1":::
       Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
@@ -167,7 +167,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Boolean searches](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries) 
+      [Boolean searches](../queries/query-by-workflow-changes.md#kanban-board-change-queries) 
    :::column-end:::
    :::column span="1":::
       Find work items based on boolean field value. 
@@ -179,7 +179,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query History and Discussion](/azure/devops/boards/queries/history-and-auditing) 
+      [Query History and Discussion](../queries/history-and-auditing.md) 
    :::column-end:::
    :::column span="1":::
       Find work items based on key words or phrases added through the Discussion. 
@@ -191,7 +191,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Query on Kanban board fields](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries)
+      [Query on Kanban board fields](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
    :::column-end:::
    :::column span="1":::
       Find work items based on their Kanban column, swimlane, or Doing/Done status.
@@ -203,7 +203,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs)
+      [Interactive query filters](../backlogs/filter-backlogs-boards-plans.md)
    :::column-end:::
    :::column span="1":::
       Filter query results based on a key word or select fields. 

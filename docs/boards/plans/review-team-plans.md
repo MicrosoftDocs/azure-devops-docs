@@ -520,6 +520,7 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
 
 For additional resources for working with multiple teams, see these additional topics: 
 
+- [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  

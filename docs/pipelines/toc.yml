@@ -124,6 +124,8 @@
       href: build/variables.md
     - name: Use runtime parameters
       href: process/runtime-parameters.md
+    - name: Use classic process parameters
+      href: process/parameters.md
     - name: Use classic release and artifacts variables
       href: release/variables.md
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
@@ -571,6 +573,8 @@
       href: tasks/build/xamarin-ios.md
     - name: Xcode
       href: tasks/build/xcode.md
+    - name: Xcode (TFS 2018 and lower)
+      href: tasks/build/xcode-build.md
     - name: Xcode Package iOS
       href: tasks/build/xcode-package-ios.md
   - name: Utility tasks
@@ -583,6 +587,8 @@
       href: tasks/utility/bash.md
     - name: Batch script
       href: tasks/utility/batch-script.md
+    - name: Cache
+      href: tasks/utility/cache.md
     - name: Command line
       href: tasks/utility/command-line.md
     - name: Copy and Publish Build Artifacts
@@ -653,6 +659,8 @@
       href: tasks/utility/shell-script.md
     - name: Update Service Fabric Manifests
       href: tasks/utility/service-fabric-versioning.md
+    - name: Xamarin license (deprecated)
+      href: tasks/utility/xamarin-license.md
   - name: Test tasks
     items:
     - name: App Center Test
@@ -675,6 +683,8 @@
       href: tasks/test/vstest.md
     - name: Visual Studio Test Agent Deployment
       href: tasks/test/visual-studio-test-agent-deployment.md
+    - name: Xamarin Test Cloud task (deprecated)
+      href: tasks/test/xamarin-test-cloud.md
   - name: Package tasks
     items:
     - name: CocoaPods
