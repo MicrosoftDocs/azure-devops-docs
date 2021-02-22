@@ -11907,8 +11907,13 @@
     },
     {
       "source_path": "docs/pipelines/languages/helm.md",
-      "redirect_url": "/azure/devops/pipelines/build/helm-provenance",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/build/helm-provenance.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy#package-and-sign-helm-charts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/java-function.md",
@@ -17652,6 +17657,16 @@
     {
       "source_path": "docs/pipelines/archive/news/rm-archived.md",
       "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/filter-backlogs.md",
+      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/boards/boards/filter-kanban-board.md",
+      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
       "redirect_document_id": false
     }
   ]

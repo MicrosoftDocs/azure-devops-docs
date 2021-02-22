@@ -98,7 +98,7 @@ Otherwise:
 
    [!INCLUDE [agent-pools-tab](../agent-pools-tab.md)]
 
-1. Click the pool on the left side of the page and then click **Security**.
+1. Select the pool on the right side of the page and then click **Security**.
 
 1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.md#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 

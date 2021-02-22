@@ -8,7 +8,7 @@
     href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
-  - name: Artifacts Storage (New UI)
+  - name: Artifacts Storage breakdown
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
@@ -124,6 +124,8 @@
       href: how-to/set-up-upstream-sources.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
+    - name: Configure upstream behavior
+      href: concepts/upstream-behavior.md
 - name: Work with Azure Pipelines
   items:
   - name: Artifacts in Azure Pipelines

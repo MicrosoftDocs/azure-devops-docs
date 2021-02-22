@@ -84,6 +84,6 @@ Register each agent that has the capability.
 | SpecialSoftware | C:\Program Files (x86)\SpecialSoftware |
 
 > [!TIP]
-> When you manually queue a build you can change the demands for that run.
+> For classic non-YAML build definitions, when you manually queue a build you can change the demands on that run.
 
 * * *

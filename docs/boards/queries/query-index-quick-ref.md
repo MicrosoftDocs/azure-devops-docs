@@ -153,7 +153,7 @@ You can list work items based on the following criteria...
       - [Email a query](view-run-query.md#email-query) 
       - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
       - [Favorite a query](view-run-query.md) 
-      - [Filter a query](../backlogs/filter-backlogs.md) 
+      - [Filter a query](../backlogs/filter-backlogs-boards-plans.md) 
       - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
       - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
