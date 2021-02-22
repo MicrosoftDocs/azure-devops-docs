@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Get started with npm packages in Azure Artifacts
 
-Azure Artifacts supports publishing and consuming npm packages to Azure Artifacts feeds and public registries. Use this quickstart to create your feed, set up your .npmrc files to store your feed URLs and credentials, build your project, and publish your npm package to your feed.
+Azure Artifacts supports publishing and consuming npm packages to and from Azure Artifacts feeds and public registries. Use this quickstart to create your feed, set up your .npmrc file, build your project, and publish your npm packages to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
@@ -44,7 +44,7 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 ## Create a feed
 
-A feed is a container that allows users to store packages and control who can access them by modifying the feed permissions.
+A feed is an organizational construct that allows users to store packages and control who can access them by modifying the feed permissions.
 
 Feeds aren't dependent on the type of package. Azure Artifacts currently supports storing NuGet, npm, Maven, Python, and Universal packages in a single feed.
 
@@ -52,7 +52,7 @@ To create a new feed, select **Create feed** from within your feed, and fill out
 
 * **Name**: The feed name.
 * **Visibility**: Choose who can upload or download packages to or from your feed.
-* **Upstream sources**: If you want to add both the public npm `registry.npmjs.org` and NuGet `packages.nuget.org` packages as upstream sources to your feed, select **Use packages from public sources through this feed**. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you want to create your feed without connectivity to public registries, select **Use packages published to this feed**. You can connect them later if you want.
+* **Upstream sources**: If you want to add upstream sources to your feed such as *npmjs.org* or *NuGet.org*, select **Include packages from common public sources**. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you want to create your feed without connectivity to public registries, uncheck the **Upstream sources** checkbox. You can add them later if you choose to.
 
 When you're done, select **Create**.
 
