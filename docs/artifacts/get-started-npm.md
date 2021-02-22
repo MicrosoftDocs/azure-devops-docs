@@ -132,9 +132,6 @@ If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, 
 
 [!INCLUDE [](./includes/npm/npmrc.md)]
 
-> [!NOTE]
-> If you have npmjs.com configured as an upstream source, and the package name and version exists in the public registry, you'll be blocked from publication. Don't override packages that exist in the public registry. For more information, see [packages from npmjs.com](npm/upstream-sources.md).
-
 ::: moniker-end
 
 ## Build your project
