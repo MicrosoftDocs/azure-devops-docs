@@ -23,17 +23,25 @@ Right click on your project, select *Run as* then *Maven Build*. Enter **package
 
 1. Navigate to the directory of your *pom.xml* file. By default, the *pom.xml* file is at root path of the project.
 
-3. Run the following commands to build and deploy your Maven artifact:
+1. Run the following commands to build and deploy your Maven artifact:
+
+#### [Build](#tab/build/)
 
     - **Build your package**
+     
         ```Command
         mvn build
         ``` 
+
+#### [Publish](#tab/publish/)
+
     - **Publish your package**
     
         ```Command
         mvn deploy
         ``` 
+
+* * *
 
 > [!TIP]
 > If you want to publish a 3rd party artifact, you can use the [deploy:deploy-file Mojo](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html). The deploy:deploy-file mojo can be used with or without a POM file.
