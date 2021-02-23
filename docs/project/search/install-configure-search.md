@@ -34,8 +34,6 @@ For information about managing Search indexing, see [Manage Search and indexing]
 * Work Item and Wiki search are built-in extensions that are installed by default during Search configuration.
 * Code Search is available in TFS 2017 and later versions, and is an opt-in feature. You can install Code Search later from the Local Gallery. Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator. Non-administrative users can also request the extension for Azure DevOps Server. For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Local gallery documentation.
 
-[!INCLUDE [access-note](includes/access-note.md)]
-
 ## Configure Search
 
 Configure the Search service using the dedicated pages in the Server Configuration Wizard as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)

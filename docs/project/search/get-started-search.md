@@ -1,5 +1,5 @@
 ---
-title: Get started searching Azure DevOps. Search 
+title: Get started with Search in Azure DevOps
 description: Quickly search within Azure DevOps across all your code, wiki, packages, and work items.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
@@ -30,9 +30,8 @@ With the search box, you can quickly find [work](#start-searching-work-items) it
 
 ## Prerequisites
 
-- Every user can use the basic Search function
-- You must be a Stakeholder to perform semantic searches on work items, wiki, and packages
-- You must be a Project Collection Administrator (PCA) to perform searches on code
+- Every user can use the basic Search function, which includes work item and wiki Search.
+- You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
 
 ## Search features
 
@@ -48,27 +47,31 @@ With the search box, you can quickly find [work](#start-searching-work-items) it
 · validate NOT revisit finds files that contain the word validate but not the word revisit.
 ·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed. |
 |**Search across projects**    | Search across all the projects, teams, and repositories to which you have access.        |         |
+|**Specific field search**     | Search for a specific field within a work item        |         |
+|**Search discussions**     |         |         |
+|**Functions to find specific types of code**     |         |         |
+| **Search for commits in branches** |   |     |
+::: moniker-end
+|**Search for boards, backlogs, queries, and sprint from the instant search box**     |  Access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. You can also search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box.      |  Enter board name in the search box.       |
+|**Open work items from search**     |         |         |
+|**Search for a file or folder in commit history**     |         |         |
+|**Scope code search using path filters** |       |
+| **Quick navigation in Azure Boards search** |Search and find any item within Azure Boards without having to switch tabs for your search. | Type the keyboard shortcut `/` on Azure Boards|
+|**Access recently visited wiki pages**   |Access recently visited wiki pages by clicking on the search box in Wiki hub   | invoke the search box by typing the keyboard shortcut `/` |
+|**Instant search for wiki**   | View the wiki search results as you type in the search box.  | For example: *getting started* results in all the wiki pages that contain *getting started*.  |
 ::: moniker range=" azure-devops" 
-|**Proximity search**     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.        BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.      |     |
+|**Proximity search**     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.              |  BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.   |
 ::: moniker-end
 ::: moniker range=" >= azure-devops-2020"
 |**Quick navigation**    |  Search for boards, backlogs, queries, and sprint from the instant search box.       |         |
 |**Instant search for work items**     | Enter the work item ID in the search box.        |  The work item opens in a modal dialog, providing access to read and edit the work item.       |
 ::: moniker-end
 ::: moniker range=" >= azure-devops-2019"
-|**Special character searches**    |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[ ]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: ( )[ ]*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     | 
+|**Special character searches**    |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: () []*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     | 
 |**Expanded search box with filters and operators**    |         |         |
-::: moniker range=" >= tfs-2017"
-|**Specific field search**     | Search for a specific field within a work item        |         |
-|**Search discussions**     |         |         |
-|**Functions to find specific types of code**     |         |         |
-| **Search for commits in branches**
 ::: moniker-end
-|**Search for boards, backlogs, queries, and sprint from the instant search box**     |         |         |
-|**Search for a work item as you type**     |         |         |
-|**Open work items from search**     |         |         |
-|**Search for a file or folder in commit history**     |         |         |
-|**Scope code search using path filters** |       |
+
+
 
 <!---
 Add BENEFIT of each search task type
@@ -104,11 +107,9 @@ By default, the search box searches everything. You can narrow down your results
 > [!TIP]
 > Searches aren't case-sensitive.
 
-
-
 ## Start searching work items
 
-Start searching across all your work items over all your projects, with a keyword or phrase.
+Start searching across all your work items over all your projects, Test Plans, Test Suites, and other test work item types, with a keyword or phrase.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -120,8 +121,7 @@ Start searching across all your work items over all your projects, with a keywor
 
    :::image type="content" source="media/work-item-search-get-started/results-matching.png" alt-text="Search matching results":::
 
-   This is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
+   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for
    "updating" also finds instances of the word "updated" and "update".
 
 3. Select a snippet of a work item to display it in the window on the right side of your screen. 
@@ -130,14 +130,18 @@ Start searching across all your work items over all your projects, with a keywor
 
 4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
+::: moniker-end
+
 ### Search by work item ID
 
 Enter the work item ID in the search box in the Azure DevOps title bar to quickly go to it. 
 Searching for a work item ID opens the work item in a modal dialog, providing quick access to read and edit work items.
 
+::: moniker range=">= azure-devops-2019"
+
 ::: moniker-end 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=" <= tfs-2018"
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -155,14 +159,8 @@ Searching for a work item ID opens the work item in a modal dialog, providing qu
 
 4. Select a snippet of a work item to display it in the right window. 
   
-   Open the search results in a new browser tab from a search box by
-   selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![the start search icon](../search/media/shared/start-search-icon.png) icon.
-   In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
-
-
-For mroe information about searching work items, see [Functional work item search](functional-work-item-search.md).
+   Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   ![the start search icon](../search/media/shared/start-search-icon.png) icon. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 ::: moniker-end
 
@@ -190,10 +188,25 @@ For mroe information about searching work items, see [Functional work item searc
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
 4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
+5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
+
+   ![Showing the filter lists](media/shared/show-filters.png)    
+
+6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+   ![Selector drop-down lists](media/work-item-search-get-started/area-selectors.png)    
+
+7. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
+
+8. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=" <= tfs-2018"
 
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
    
@@ -215,10 +228,25 @@ For mroe information about searching work items, see [Functional work item searc
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
 4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
+5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
+
+   ![Showing the filter lists](media/shared/show-filters.png)    
+
+6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+   ![Selector drop-down lists](media/work-item-search-get-started/area-selectors.png)    
+
+7. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
+
+8. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
 
 ::: moniker-end
 
-To learn more about searching work items, see [Functional work item search](../search/..................................work-item-search.md)
+For more examples and information about searching work items, see [Functional work item search](functional-work-item-search.md).
 
 ## Start searching code
 
@@ -232,7 +260,7 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=" <= tfs-2018"
 
 1. In the search box, check that the text displays _Search code_. If it doesn't, select it.
 
@@ -248,7 +276,7 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
  The search page shows a list of the matching code files. The selected file has all instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
 	:::image type="content" source="media/get-started/code-search-example.png" alt-text="Code search results example":::
 
-Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type you want to include in your search string from the list, and then enter the criteria value.
+1. Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type you want to include in your search string from the list, and then enter the criteria value.
 
    :::image type="content" source="media/get-started/code-search-filters.png" alt-text="Code search bar":::
 
@@ -258,8 +286,26 @@ Assemble more complex search string using the operators and functions listed in 
    * Combine two or more words by using Boolean operators; for example, `validate OR release`.
    * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
    * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+   * Use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term.
 
-To learn more about searching code, see [Functional code search](advanced-code-search-syntax.md).
+2. Widen your search to all projects or your entire organization. Or narrow it to specific areas and types of code by selecting from the drop-down lists at the top of the page.
+
+   ![Use drop-down lists to widen or narrow your search](media/code-search-get-started/select-projects.png)
+
+3. Use the tabs in the results page to view the history of the file and to compare versions of the file.
+
+   ![Use tabs to view history and compare files](media/code-search-get-started/compare-tab.png)
+
+4. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+
+   ![Open the file in Code Explorer](media/code-search-get-started/open-in-code-explorer.png)
+
+5. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
+
+
+To learn more about searching your code, see [Functional code search](advanced-code-search-syntax.md).
 
 ## Start searching packages or artifacts
 
@@ -324,21 +370,24 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ::: moniker-end
 
+### Search Wiki with REST API
 
-## Other search functions
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Wiki Search with REST API, see [Fetch Wiki Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/wiki%20search%20results/fetch%20wiki%20search%20results?view=azure-devops-rest-6.0).
 
-In the following table, you find some non-search box tasks.
+## Non-search box tasks
+
+In the following table, you find some other search functions.
 
 | **Non-search box task**                      | **Action**                                                             |
 |----------------------------------------------|------------------------------------------------------------------------|
-| Filter projects                              |                                                                        |
-| Find a setting (organization, project, user) | Start in **Organization settings** > **Project settings** > **User settings page** |
-| Find a user                                  | **Organization settings** > **Users** > Filter users                           |
-| Find an organization                         |                                                                        |
-| Find a project                               |                                                                        |
-| Install Code Search                          |  Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to install Code Search.                                                                      |
-| View file history and compare versions       |                                                                        |
-
+| Find an organization setting                 | Go to your organization and select **Organization settings**           |
+| Find a project setting                       | Go to your project and select **Project settings**                     |
+| Find a user settings                         | Go to your **User settings page**                                     |
+| Find a user                                  | Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box.   |
+| Find an organization                         | Scroll through the left side of your screen, which lists all organizations.      |
+| Find a project                               | Go to your organization, and then enter the project name in the Filter projects box   |
+| Install Code Search                          | Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to install Code Search.   |
+| View file history and compare versions       | Go to **Repos** > **Files**, highlight your file, and then select **History**.              |
 
 ::: moniker-end
 
@@ -372,6 +421,8 @@ Search extension for on-premises
 
 ::: moniker-end
 
+[!INCLUDE [search-limitations](includes/search-limitations.md)]
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -388,4 +439,3 @@ Search extension for on-premises
 * [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 * [Work item search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)

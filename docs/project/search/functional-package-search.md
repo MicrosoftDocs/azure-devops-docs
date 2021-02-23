@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/20/2021
+ms.date: 02/22/2021
 ---
 
 # Functional artifact or package search
@@ -27,6 +27,10 @@ Package Search is automatically available to users of Azure DevOps Services. By 
 
 > [!div class="mx-imgBorder"]  
 > [Web portal package search across organization feeds](media/shared/pkg-srch-u1.png)
+
+## Prerequisites
+
+You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
 
 <a name="syntaxdetails"></a>
 
@@ -74,6 +78,17 @@ You can use more than one wildcard to match more than one character.
 To find an exact match to a set of words, enclose your search terms in double-quotes to do a _phrase search_. For example, `"package for markup files"`.
 
 Within a phrase, Boolean operators are treated as literal text.
+
+
+## Search Packages with REST API
+
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?view=azure-devops-rest-6.0).
+
+[!INCLUDE [search-limitations](includes/search-limitations.md)]
+
+## Next steps
+
+> [!div class="nextstepaction"]
 
 ## Related articles
 
