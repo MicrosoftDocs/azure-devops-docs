@@ -136,7 +136,6 @@ Figure out how many parallel jobs you need by first seeing how many parallel job
 
 3. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
 
-
 ### Estimate costs
 
 A simple rule of thumb: Estimate that you'll need one parallel job for every four to five users in your organization.
