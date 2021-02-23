@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 02/20/2021
+ms.date: 02/22/2021
 ---
 
 # Functional code search  
@@ -21,7 +21,7 @@ By using Code Search, you can do the following tasks:
   - Search in your own codebase and your partner teams' code bases. 
   - Use cross-project searches over all the code in your Azure DevOps or TFS instance to search across your enterprise's entire codebase. 
   - Narrow your search by using project, repository, path, file name, and other filter operators. 
-  - Use wildcards to widen your search and Boolean operators to fine-tune it. 
+  - [Use wildcards to widen your search](#broaden-your-search-by-using-wildcards) and [Boolean operators to fine-tune it](#narrow-your-search-by-using-boolean-operators). 
 
 * **Find specific types of code**: 
   - Use code type filters to search for the following specific kinds of code:
@@ -40,11 +40,21 @@ By using Code Search, you can do the following tasks:
   - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.
 
 > [!NOTE]
-> You can't search code in forked repositories. 
+> You can't search code in forked repositories.
+
+
+
 
 <a name="syntaxdetails"></a>
 
+## Prerequisites
+
+To use Code Search, you must have at least a **Basic** access. **Stakeholders** don't have access to code, and therefore no access to Code Search. 
+
 ## Syntax for simple and compound searches
+
+> [!NOTE]
+> You can't search code in forked repositories. 
 
 Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation". However, searches are _not_ case-sensitive.
 
@@ -204,6 +214,14 @@ Instead, you can type the functions and parameters directly into the search box.
 | Typedef | **typedef:**_findThis_ ```Merged with type:```|
 | Union | **union:**_findThis_ ```Deprecated in July 2019```|
 
+## Find two or more keywords using Boolean operators
+
+	• validate AND revisit finds files that contain both the words validate and revisit. Note that AND is the default operator, and so this is equivalent to the search string validate revisit.
+	• validate OR revisit finds files that contain either of the words validate or revisit.
+	• validate NOT revisit finds files that contain the word validate but not the word revisit.
+	• (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
+
+
 <a name="locationfunctions"></a>
 
 ## Functions to select projects, repositories, paths, and files
@@ -228,6 +246,9 @@ Narrow the search to specific files using the `file` or `ext` filters:
 * A plain text search string that doesn't include file type functions 
   will also find files where the string matches part of the filename.
 
+## Find code comments
+
+
 ## Find related items or other terms
    
 One of the powerful features of Code Search is the capability to expand your search interactively, based on the results of previous searches. For example, you can easily broaden your search to related files when tracing or debugging code. 
@@ -240,18 +261,22 @@ the definition if you select an object name, or for references to a selected obj
 See the following examples of even more search functions:
 
 * Find all instances of "ToDo" comments in your code by selecting `comment:` and typing `todo`. 
-
 * Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
-
 * Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. But even if your plain text search string (without specific file type functions) matches part of a filename, the file appears in the list of found files.
-
 * Combine two or more words by using Boolean operators; for example, `validate OR release`.
-
 * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
-
 * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
-
 * Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+
+## Search Code with REST API
+
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results?view=azure-devops-rest-6.0).
+
+[!INCLUDE [search-limitations](includes/search-limitations.md)]
+
+## Next steps
+
+> [!div class="nextstepaction"]
 
 ## Related articles
 

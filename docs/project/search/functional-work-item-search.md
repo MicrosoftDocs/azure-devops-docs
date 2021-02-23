@@ -33,9 +33,10 @@ By using Work Item Search, you can do the following tasks:
 * **Take advantage of integration with work item tracking**:
   The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and much more.
 
+
 ## Prerequisites
 
-
+All users have access to work item and wiki search.
 
 <a name="acrossfield"></a>
 
@@ -149,6 +150,7 @@ To find an exact match to a set of words, enclose your search terms in double-qu
 For example, `"Client not found"`
 
 <a name="wildcards"></a>
+
 ## Broaden your search with wildcards
 
 Use the wildcard characters `*` and `?` to broaden your search criteria. For 
@@ -192,5 +194,21 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 
 Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
 
+## Find backlog comments
+
+
+## Search Work Items with REST API
+
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results?view=azure-devops-rest-6.0).
+
+
+[!INCLUDE [search-limitations](includes/search-limitations.md)]
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Supported filter functions and more for work items](../../boards/backlogs/filter-backlogs-boards-plans.md#supported-filter-functions)
+
 ## Related articles
+
 
