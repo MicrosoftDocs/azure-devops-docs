@@ -71,7 +71,6 @@ Staging lets you to selectively add files to a commit while excluding changes ma
 
 [!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
-
 #### Visual Studio 2015 (Update 2) and 2017
 
 Visual Studio keeps track of file changes to your project as you do your work. When you are ready to stage changes, open up the **Changes** view in Team Explorer. 
