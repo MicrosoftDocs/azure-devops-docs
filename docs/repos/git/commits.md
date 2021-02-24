@@ -114,6 +114,8 @@ Run the `status` command after you stage files to review your changes before mak
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Open the **Changes** view in Team Explorer.
 
 Enter a commit message describing your changes and select **Commit Staged** to create a new commit that includes the changes listed in the **Staged Changes** section.

@@ -186,6 +186,8 @@ changes others have made will affect your work.
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
 ![Web portal](media/history/vs-browse-web-portal.png) 
