@@ -2031,6 +2031,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "/docs/repos/git/branches.md",
+      "redirect_url": "/azure/devops/repos/git/create-branch",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/git/get-started.md",
       "redirect_url": "/azure/devops/repos/git/gitquickstart",
       "redirect_document_id": false
