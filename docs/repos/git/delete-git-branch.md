@@ -19,17 +19,15 @@ monikerRange: '<= azure-devops'
 
 1. View your repo's branches by selecting **Repos** > **Branches** while viewing your repo on the web.
 
-   ![View your branches](media/repos-navigation/repos-branches.png)
+   :::image type="content" source="media/repos-navigation/repos-branches.png" alt-text="Screenshot that shows how to access your branches.":::
 
-2. Select the **New branch** button in the upper right corner of the page.
+2. Select the more options button at the end of the row of the branch you want to delete.
 
-   ![Create branch button](media/branches/create-branch.png)
+   :::image type="content" source="media/delete-git-branch/more-options.png" alt-text="Screenshot that shows how to access the menu to delete a branch.":::
 
-3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
+3. In the menu, select **Delete branch**.
 
-   :::image type="content" source="media/branches/create-branch-web-2020.png" alt-text="Screenshot that shows the creation of a branch with the new branch dialog.":::
-
-4. Select **Create branch**.
+4. In the **Delete branch** dialog box, select **Delete**.
 
 
 #### [Visual Studio](#tab/visual-studio/)
