@@ -160,6 +160,10 @@ If you are currently running other pipelines, you may not have any remaining par
 
 ::: moniker range="azure-devops"
 
+### Unable to access KeyVault behind firewall from Azure DevOps.
+
+In such scenarios, the firewall may be blocking the Azure DevOps IP. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519)have to be whitelisted. Refer [this document](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking) for more information.
+
 ### You don't have enough concurrency
  
 To check how much concurrency you have:
