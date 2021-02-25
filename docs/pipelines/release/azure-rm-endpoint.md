@@ -179,6 +179,18 @@ To fix this issue you will need to modify the supported account types and who ca
 
 <a name="autoCreatedSecretExpiration"></a>
 
+###  Subscription is not listed when creating a Service Connection. All other subscriptions are showing, except one.
+
+There is a limit to the number of Azure Subscriptions we list in the various Azure Subscription pickers (billing, service connection, etc.). If the user setting up a connection to an Azure Subscriptions has access to **more than 50**, then some will not be listed. In such scenarios, follow the steps mentioned below:
+
+1. Create a new, native AAD user in the Azure AD of the Azure Subcription. 
+
+1. Set up that AAD user so it has the proper permissions in the Azure Subcription to set up Azure DevOps billing or service connection. [Refer](https://docs.microsoft.com/azure/devops/organizations/billing/add-backup-billing-managers?view=azure-devops or https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
+ 
+1. Add the AAD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing) or ensure the user has enough rights in the Team Project to create service connections.
+
+1. Log into Azure DevOps with this user and set up billing service connection. You will only see one Azure Subcription in the list.
+
 ### Automatically created service principal client secret has expired
 
 An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
