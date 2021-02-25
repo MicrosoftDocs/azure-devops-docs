@@ -532,6 +532,17 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
+### Libraries are not getting installed for the python application while executing a script 
+
+In certain cases, while deploying a python application, there are chances that CI/CD pipeline runs and the code is deployed successfully but the file **requirements.txt** which is responsible for installing all the depending libraries, is sometimes not executed. 
+
+To install these dependencies, the post deployment script has to be used in App Service deployment task.The following command must be used in the post deployment script and can be updated appropriately.
+
+```
+D:\home\python364x64\python.exe -m pip install -r requirements.txt
+```
+
+
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
