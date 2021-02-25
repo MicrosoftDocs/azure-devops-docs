@@ -264,10 +264,10 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-In your release pipeline you can implement various checks and conditions to control the deployment.
+In your release pipeline, you can implement various checks and conditions to control the deployment.
 
 > [!NOTE]
-   > In some setups, you may need to whitelist the range of IP addresses for the specific region that is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). Refer [this document](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking) for more information.
+> In some setups, you might need to allowlist the range of IP addresses for the specific region that is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). Learn about [networking Microsoft-hosted agents](../agents/hosted.md?view=azure-devops&tabs=yaml#networking).
 
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
