@@ -21,11 +21,11 @@ monikerRange: '<= azure-devops'
 
    :::image type="content" source="media/repos-navigation/repos-branches.png" alt-text="Screenshot that shows how to access your branches.":::
 
-2. Select the more options button at the end of the row of the branch you want to delete.
+2. Select the **More** options button at the end of the row of the branch you want to delete.
 
    :::image type="content" source="media/delete-git-branch/more-options.png" alt-text="Screenshot that shows how to access the menu to delete a branch.":::
 
-3. In the menu, select **Delete branch**.
+3. In the options menu, select **Delete branch**.
 
 4. In the **Delete branch** dialog box, select **Delete**.
 
@@ -36,14 +36,14 @@ monikerRange: '<= azure-devops'
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
-3. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
+3. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask if you're sure you want to delete the branch so you don't possibly lose work.
 
     ![Deleting a branch in Visual Studio](media/vsbranchdelete.gif)
 
-You can delete a remote branch using the same method - locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click and select **Delete**.
+You can delete a remote branch using the same method. Locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click, and select **Delete**.
 
 #### [Command Line](#tab/command-line/)
-Delete a local branch using `git branch -d` while checked out to a different branch.
+Delete a local branch using the `git branch -d` command while checked out to a different branch.
 
 ```
 git branch -d <branch_name>
