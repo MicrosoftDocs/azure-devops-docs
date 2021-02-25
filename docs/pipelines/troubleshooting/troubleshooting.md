@@ -536,6 +536,9 @@ However, when it sees the second line, the agent will process everything to the 
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
+### Enabling storage explorer to deploy static content such as .css and .js to a static website from Azure DevOps via Azure Pipelines
+
+You can make use of [Azure File Copy task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-file-copy?view=azure-devops) to upload content to the website. Also, any of [these](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website#uploading-content) tools can be used to upload content to the web container.
 
 ## Get logs to diagnose problems
 
