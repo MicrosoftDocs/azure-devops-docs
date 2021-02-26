@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/15/2020
+ms.date: 02/26/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -296,6 +296,9 @@ jobs:
   variables: # several syntaxes, see specific section
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories in another project
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
 ```
 
 For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).

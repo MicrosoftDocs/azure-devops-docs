@@ -5,7 +5,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 09/24/2020
+ms.date: 02/26/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -170,7 +170,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 
 In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
 
-Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
 For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
