@@ -53,25 +53,19 @@ The `artifacts-keyring` package allow your to set up authentication to publish a
    twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/upload
    ```
 
-### Option 2: Manually configure authentication
+## Manually configure authentication
 
-1. From your feed in **Azure Artifacts**, select **Connect to feed**.
+1. From within your feed, select **Connect to feed**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+   :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to feed button":::
 
-2. Choose either **pip** or **twine** under the Python header. 
+2. Select **pip** or **twine** under the Python header. 
 
-   > [!NOTE]
-   > You can use the **Get the tools** button to get **pip**, **twine** and the **artifacts keyring**.
+   :::image type="content" source="media/pip-twine-feed.png" alt-text="Select pip or twine to connect to your feed":::
 
 3. Follow the instructions under **Project setup** to set up your project.
 
-4. To publish your package, follow the steps in the **Publish packages** section.
-
-For more information, check out the following resources to:
-- Publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/).
-- How to consume and download packages by using [pip](https://pypi.org/project/pip/).
+4. Follow the steps in the next section to **Install** or **Publish** your packages.
 
 ## What's next?
 
