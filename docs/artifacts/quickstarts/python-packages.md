@@ -1,6 +1,6 @@
 ---
 title: Get started with Python packages
-description: Quickly start hosting python packages in Azure DevOps Services
+description: Quickly start hosting python packages with Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.date: 08/31/2020
@@ -12,35 +12,12 @@ ms.custom: devx-track-python
 
 **Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
-This quickstart guides you through using Azure Artifacts to publish and consume Python packages by creating and connecting to a feed.
+This quickstart will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 
 ## Create a feed
 
-1. Select **Artifacts** (in the left navigation of your Azure DevOps project).
-
-2. On the **Artifacts** page, select **Create Feed**.
-
-3. In the **Create new feed** dialog box:
-
-   - In the **Name** field, give the feed a name. 
+[!INCLUDE [](../includes/create-feed.md)]
      
-     _PyPI_ is the default repository name for `twine`, which is a tool for publishing Python packages. It's best not to name your feed _PyPI_ because if you don't use `-r` to specify a repository name when pushing, you might accidentally push to the wrong repository.
-     
-   - Under **Visibility**, select who can read, contribute, or update packages in your feed. The recommended **People in your organization setting allow all members in your organization to view and use your feed. 
-   
-   - Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstream sources to your feed. 
-     
-     > [!NOTE]
-     > After enabling these upstream sources your client will be able to fetch packages from the public registry through your private feed.
-     > Your private feed then will cache those packages for you. If you select **Only use packages published to this feed**, your feed won't be connected to the public registries. You can still connect to those public registries later if you chose to.
-   
-4. Select **Create**.
-
-   > [!div class="mx-imgBorder"]
-   > ![New feed dialog box](../media/new-feed-dialog.png)
-
-To edit your feed settings, select the gear icon ![gear icon](../../media/icons/gear-icon.png) at the upper right corner of the feed page. 
-
 ## Connect to your feed
 
 There are two primary ways to connect to a feed to push or pull Python packages:
