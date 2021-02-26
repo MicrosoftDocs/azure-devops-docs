@@ -32,24 +32,75 @@ By using Code Search, you can do the following tasks:
     - strings
     - namespaces
     - and more
-  - You can use Code Search to narrow down your results to exact code type matches. 
-  - Go quickly to a method definition to understand its implementation simply by applying the definition filter, or scope the search to references in order to view calls and maximize code reuse.
+  - Use Code Search to narrow down your results to exact code type matches. 
+  - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.
 
 * **Easily drill down or widen your search**: 
   - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. 
   - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.
 
-> [!NOTE]
-> You can't search code in forked repositories.
-
-
-
-
 <a name="syntaxdetails"></a>
 
 ## Prerequisites
 
-To use Code Search, you must have at least a **Basic** access. **Stakeholders** don't have access to code, and therefore no access to Code Search. 
+To use Code Search, you must have at least a **Basic** access. **Stakeholders** don't have access to code, and so don't have access to Code Search. 
+
+## Start searching code
+
+Code Search requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it isn't installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
+
+::: moniker range=">= azure-devops-2019"
+  
+To start your search, choose **Repos** > **Files** or another page under **Code**. Enter a keyword or phrase in the search box, and then select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
+
+:::image type="content" source="../../organizations/public/media/search/code-search-vert.png" alt-text="Code Search box":::
+ 
+::: moniker-end
+
+::: moniker range=" <= tfs-2018"
+
+1. In the search box, check that the text displays _Search code_. If it doesn't, select it.
+
+   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-outlined.png" alt-text="Switch between searching for code and work items":::
+
+2. Enter a search string in the text box, and then select _Enter_ or  
+   ![start search action icon](../search/media/shared/start-search-icon.png) start search.
+
+::: moniker-end
+
+### View and filter code results
+
+ The search page shows a list of the matching code files. The selected file has all instances of the search string highlighted. If you see a list of work items, ensure **Code** is selected in the top left.
+	
+  :::image type="content" source="media/get-started/code-search-example.png" alt-text="Code search results example":::
+
+1. Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type that you want to include in your search string from the list, and then enter the criteria value.
+
+   :::image type="content" source="media/get-started/code-search-filters.png" alt-text="Code search bar":::
+
+   * Find all instances of "ToDo" comments in your code by selecting `comment:` and entering `todo`. 
+   * Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
+   * Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files.
+   * Combine two or more words by using Boolean operators; for example, `validate OR release`.
+   * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
+   * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
+   * Use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term.
+
+2. Widen your search to all projects or your entire organization. Narrow your search to specific areas and types of code by selecting from the drop-down lists at the top of the page.
+
+   ![Use drop-down lists to widen or narrow your search](media/code-search-get-started/select-projects.png)
+
+3. Use the tabs in the results page to view the history of the file and to compare versions of the file.
+
+   ![Use tabs to view history and compare files](media/code-search-get-started/compare-tab.png)
+
+4. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+
+   ![Open the file in Code Explorer](media/code-search-get-started/open-in-code-explorer.png)
+
+5. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
 
 ## Syntax for simple and compound searches
 
@@ -67,7 +118,7 @@ When you search from inside a project, the default is to search only within that
 
 In a Git project, you see a list of the repositories that it contains. Use the project and repository checkboxes to widen your search. You can search more or all projects, or narrow your search to fewer projects and repositories. If there are more than a few projects or repositories, use the **Show more** link to see them all.
 
-Code Search can index multiple branches in a Git repository - by default it indexes files in only the default branch of your Git repositories;  usually the **main** branch. Specify the branches for each repository for Code Search indexing in the **Options** tab of the **Repositories** section, [project settings page](../navigation/go-to-service-page.md#open-project-settings).
+Code Search can index multiple branches in a Git repository. By default it indexes files in only the default branch of your Git repositories. Your default branch is usually the **main** branch. Specify the branches for each repository, indexing in the **Options** tab of the **Repositories** section, [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
 ::: moniker range=">= azure-devops-2019"
 ![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
@@ -94,7 +145,7 @@ For example:
 * `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
   but not the word **revisit** or files that contain the phrase **release delayed**.
 
-### Broaden your search by using  wildcards
+### Broaden your search by using wildcards
 
 Use the wildcard characters `*` and `?` to broaden your search criteria. 
 
@@ -249,6 +300,7 @@ Narrow the search to specific files using the `file` or `ext` filters:
 ## Find code comments
 
 
+
 ## Find related items or other terms
    
 One of the powerful features of Code Search is the capability to expand your search interactively, based on the results of previous searches. For example, you can easily broaden your search to related files when tracing or debugging code. 
@@ -262,7 +314,7 @@ See the following examples of even more search functions:
 
 * Find all instances of "ToDo" comments in your code by selecting `comment:` and typing `todo`. 
 * Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
-* Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. But even if your plain text search string (without specific file type functions) matches part of a filename, the file appears in the list of found files.
+* Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string, without specific file type functions, matches part of a filename, the file appears in the list of found files.
 * Combine two or more words by using Boolean operators; for example, `validate OR release`.
 * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
 * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
@@ -280,4 +332,9 @@ You can use APIs to extend or supplement the capabilities listed in this article
 
 ## Related articles
 
+* [Search artifacts and packages](functional-package-search.md)
+* [Search work items](functional-work-item-search.md)
+* [Search wiki](../wiki/search-wiki.md)
+* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
