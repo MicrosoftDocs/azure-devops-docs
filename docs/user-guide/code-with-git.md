@@ -18,7 +18,7 @@ monikerRange: '<= azure-devops'
 
 In this quickstart, learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo, and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo, and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 ## Install Git command-line tools
 
@@ -38,9 +38,32 @@ If you're just getting started with Azure Repos, your code might be in one of se
 - [The code is in another Git repo such as GitHub or another Azure Repos Git repo](#the-code-is-in-another-git-repo)
 - [The code is on my local computer and not yet in version control](#the-code-is-on-my-local-computer-and-not-yet-in-version-control)
 
+### I just created my organization in Azure DevOps, so I don't have any code
+
+If you just signed up for Azure DevOps Services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo, you can [clone it](#clone-the-repo-to-your-computer) and then add your code to that repo.
+
+If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then [clone](#clone-the-repo) the new repo and add your code there.
+
+### The code is in my (or my organization's) Azure Repos Git repo
+
+If the code is in your (or your organization's) Azure Repo, you can clone the Git repo to your local computer and start working with it by jumping down to [Clone the repo](#clone-the-repo-to-your-computer).
+
+### The code is in another Git repo
+
+If the code is in another Git repo, such as a GitHub repo or a different Azure Repo instance, you can import it into a new or existing empty Git repo. Follow the steps in [Import a Git repo](../repos/git/import-git-repository.md), and then return to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+
+### The code is on my local computer and not yet in version control
+
+If your code is not yet in version control, you have a couple of options:
+
+- Create a new repository and add your code there. To do this, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then come back to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+- Add your code to an existing repository. To do this, jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+
+After the repository is cloned, we'll show you how to add your existing code to the repo.
+
 ## Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../git/commits.md) and [branches](../git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -49,9 +72,9 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    ![Screenshot of project with Repos and Files highlighted.](media/clone-repo/repos-files.png)
 
 
-2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
+2. Select **Clone** in the upper-right corner of the Code window and copy the URL.
   
-   ![Screenshot of project with Copy icon highlighted](media/code-with-git-clone-repo.png)
+   ![Screenshot of project with Copy icon highlighted.](media/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
@@ -59,7 +82,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://FabrikamFiber01@dev.azure.com/FabrikamFiber01/FabrikamFiber01-01/_git/FabrikamFiber01-01
    ```
   
-   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code, including all [commits](../git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
 4. Switch your directory to the repository that you just cloned.
 
@@ -85,7 +108,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
    ```
   
-   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
 4. Switch your directory to the repository that you just cloned.
 
@@ -99,7 +122,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Work in a branch
 
-Git [branches](../git/branches.md) isolate your changes from other work being done in the project. The recommended [Git workflow](../git/gitworkflow.md) uses a new branch for every feature or fix that you work on.
+Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. The recommended [Git workflow](../git/gitworkflow.md) uses a new branch for every feature or fix that you work on.
 
 Create branches by using the `branch` command. This command creates a reference in Git for the new branch and a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
@@ -185,30 +208,30 @@ This example shows the basic steps of creating and completing a pull request.
 
 2. Select **Create a pull request** in the upper-right corner of the **Files** window. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
 
-   ![Create a pull request](media/updated-file-create-pull-request.png)
+   ![Create a pull request](../repos/get-started/media/updated-file-create-pull-request.png)
 
 3. New pull requests are configured to merge your branch into the default branch, which in this example is `main`. The title and description are pre-populated with your commit message.
 
-   ![New pull request](media/create-pull-request.png)
+   ![New pull request](../repos/get-started/media/create-pull-request.png)
 
-   You can [add reviewers](../git/pull-requests.md#add-and-remove-reviewers) and [link work items](../git/pull-requests.md#link-work-items) to your pull request.
+   You can [add reviewers](../repos/git/pull-requests.md#add-and-remove-reviewers) and [link work items](../repos/git/pull-requests.md#link-work-items) to your pull request.
 
    You can review the files included in the pull request at the bottom of the **New Pull Request** window.
 
-   ![Files in the pull request](media/create-pull-request-files.png)
+   ![Files in the pull request](../repos/get-started/media/create-pull-request-files.png)
 
    Select **Create** to create the pull request.
 
 4. You can view the details of your pull request from the **Overview** tab, and view the changed files, updates, and commits in your pull request from the other tabs. Select **Complete** to begin the process of completing the pull request.
 
-   ![Pull request](media/pull-request.png)
+   ![Pull request](../repos/get-started/media/pull-request.png)
 
 5. Select **Complete merge** to complete the pull request and merge your code into the `main` branch.
 
-   ![Complete pull request](media/complete-pull-request.png)
+   ![Complete pull request](../repos/get-started/media/complete-pull-request.png)
 
 >[!NOTE]
->This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Pull requests overview](../git/pull-requests-overview.md).
+>This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Pull requests overview](../repos/git/pull-requests-overview.md).
 
 ::: moniker-end
 
@@ -218,7 +241,7 @@ This example shows the basic steps of creating and completing a pull request.
 
 2. Select **Clone** in the upper-right corner of the **Code** page and copy the **Clone URL**.
 
-   ![Retrieve the clone URL](../../user-guide/media/code-with-git-clone-repo.png)
+   ![Retrieve the clone URL](media/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
@@ -226,7 +249,7 @@ This example shows the basic steps of creating and completing a pull request.
    git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
    ```
 
-   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
 4. Switch your directory to the repository that you just cloned.
 
@@ -281,3 +304,5 @@ Now you're ready to create a new branch, write some code, and do it again.
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json) or
 > [learn more about working with a Git repo](../git/index.yml).
+
+
