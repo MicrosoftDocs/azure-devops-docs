@@ -20,44 +20,38 @@ This quickstart will walk you through using Azure Artifacts to publish and consu
      
 ## Connect to your feed
 
-There are two primary ways to connect to a feed to push or pull Python packages:
+There are two primary ways to connect to a feed to publish or consume your Python packages:
 
-- Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
-- Manually set up credentials for `pip.ini`/`pip.conf` for pushes, or `.pypirc` for pulls, through a personal access token (PAT).
+- Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
+- Manually set up credentials for `pip.ini`/`pip.conf` for pushes, and `.pypirc` for pulls with a personal access token (PAT).
 
 > [!NOTE]
 > `artifacts-keyring` is not supported on newer versions of Ubuntu.
 
-### Option 1: Use Python Credential Provider (preview) to automate authentication
+## Use artifacts-keyring to set up authentication
 
-The Python Credential Provider is an `artifacts-keyring` package in public preview that you can install from the Python Package Index (PyPI). The Python Credential Provider lets the [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) commands authenticate by sending you through an authentication flow in your web browser. 
-
-The Python Credential Provider is a manual interaction. If you want to set up authentication in an Azure Pipelines pipeline, use the [Pip Authenticate task](../../pipelines/tasks/package/pip-authenticate.md) to install packages, or the [Twine Upload Authenticate task](../../pipelines/tasks/package/twine-authenticate.md) to push packages.
+The `artifacts-keyring` package allow your to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
 > [!IMPORTANT]
-> You must have `pip` version 19.2 and `twine` version 1.13.0 or higher installed to use the Python Credential Provider.
+> You must have pip 19.2 and twine 1.13.0 or higher to use `artifacts-keyring`.
 
-1. From your command line, install the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package:
+1. In an elevated command prompt window, run the following command to install the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package:
    
-   ```bash
-   pip install artifacts-keyring --pre
+   ```Command
+   pip install artifacts-keyring
    ```
    
-2. Install or upload packages to your feed. 
-   
-   For `pip` installs, run the following command:
-   
-   ```bash
+1. Install packages from your feed. 
+    
+   ```Command
    pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/simple
    ```
+
+1. Publish packages to your feed.
    
-   For `twine` uploads, run the following command:
-   
-   ```bash
+   ```Command
    twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/upload
    ```
-   
-3. Follow the authentication flow in your browser.
 
 ### Option 2: Manually configure authentication
 
