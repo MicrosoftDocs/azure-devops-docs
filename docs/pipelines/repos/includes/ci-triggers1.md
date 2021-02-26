@@ -16,10 +16,10 @@ You can control which branches get CI triggers with a simple syntax:
 ```yaml
 trigger:
 - master
-- releases/*
+- release/*
 ```
 
-You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
+You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `release/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 > [!NOTE]
@@ -36,12 +36,12 @@ trigger:
   branches:
     include:
     - master
-    - releases/*
+    - release/*
     exclude:
-    - releases/old*
+    - release/old*
 ```
 
-In the above example, the pipeline will be triggered if a change is pushed to master or to any releases branch. However, it won't be triggered if a change is made to a releases branch that starts with `old`. 
+In the above example, the pipeline will be triggered if a change is pushed to master or to any release branch. However, it won't be triggered if a change is made to a release branch that starts with `old`. 
 
 If you specify an `exclude` clause without an `include` clause, then it is equivalent to specifying `*` in the `include` clause.
 
@@ -97,7 +97,7 @@ trigger:
   branches:
     include:
     - master
-    - releases/*
+    - release/*
   paths:
     include:
     - docs
