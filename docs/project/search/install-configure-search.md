@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017 < azure-devops'
-ms.date: 02/20/2021
+ms.date: 02/25/2021
 ---
 
 # Install and configure Search
@@ -26,21 +26,6 @@ For information about managing Search indexing, see [Manage Search and indexing]
 
 - To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization. Non-administrative users can also request that the extension get added to their PCA.
 - See [Install and configure Azure DevOps Server](https://docs.microsoft.com/azure/devops/server/install/get-started?view=azure-devops-2020) and [Requirements and compatibility](/azure/devops/server/requirements).
-
-### Feature availability
-
-* Work Item Search is available in TFS 2017 Update 2 and later versions.
-* Wiki Search is available in TFS 2018 Update 2 and later versions.
-* Work Item and Wiki search are built-in extensions that are installed by default during Search configuration.
-* Code Search is available in TFS 2017 and later versions, and is an opt-in feature. You can install Code Search later from the Local Gallery. Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator. Non-administrative users can also request the extension for Azure DevOps Server. For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Local gallery documentation.
-
-## Configure Search
-
-Configure the Search service using the dedicated pages in the Server Configuration Wizard as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard. For configuring Search, be aware of the following information:
-- [hardware recommendations](#hardware-recommendations)
-- [software dependencies](#software-dependencies)
-- [configuration considerations](#configuration-considerations).
 
 ### Hardware recommendations
 
@@ -86,7 +71,7 @@ Search has the following dependencies, which are installed automatically as part
 
 > [!NOTE]
 > - Search uses a modified version of Elasticsearch. It works only with this modified version
-> - A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), reindexing can take some time to complete
+> - A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete
 > - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-notes) that > follow
 > - The Azul Zulu OpenJDK doesn't automatically install updates
 > - Ensure that you regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk)
@@ -129,6 +114,17 @@ For more information, see [GitHub Code-Search Java Migration](https://github.com
 > [!NOTE]
 > * If you choose to use Azul Zulu OpenJDK, ensure that you [download the latest updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk). It doesn't automatically install updates.
 
+## Feature availability
+
+* Work Item Search is available in TFS 2017 Update 2 and later versions.
+* Wiki Search is available in TFS 2018 Update 2 and later versions.
+* Work Item and Wiki search are built-in extensions that are installed by default during Search configuration.
+* Code Search is available in TFS 2017 and later versions, and is an opt-in feature. You can install Code Search later from the Local Gallery. Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator. Non-administrative users can also request the extension for Azure DevOps Server. For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) in the Local gallery documentation.
+
+## Configure Search
+
+Configure the Search service using the dedicated pages in the Server Configuration Wizard as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
+afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard. For configuring Search, be aware of the [configuration considerations].(#configuration-considerations).
 ### Configuration considerations
 
 Consider the following information when you're configuring Search:
@@ -146,7 +142,7 @@ Consider the following information when you're configuring Search:
 
 * When you're configuring Search for a server with **multiple application tiers (ATs)**, make sure it's installed on a [separate remote server](#separate-server). After you've installed Search on the remote server, use the Configuration Wizard on any one of the AT servers to link the remote Search instance with your Azure DevOps Server instance. When unconfiguring Search in the future you must use the Configuration Wizard on the same AT server where configuration was originally carried out
 
-#### Upgrading your server
+#### Upgrade your server
 
 * If you're doing a **pre-production upgrade** on a server where Search was already configured, you must fully reconfigure Search again to avoid corrupting your production instance. There's no option to configure Search as part of a pre-production upgrade. Instead, configure it after the pre-production upgrade is complete. You can uncheck **Automatically install and configure Code Search for all existing and new collections** during configuration. Instead, install the Search extension for just one or two of your collections after configuration is complete
 
@@ -241,7 +237,7 @@ However, there might be cases where you no longer want to use Search or you want
 
 <a name="unconfig-same-server"></a>
 
-### Unconfigure Search on the machine configured as your Azure DevOps Server
+### Un-configure Search on the machine configured as your Azure DevOps Server
 
 1. Uninstall the Search extension for each collection where it's installed.
    Go to the **Manage Extensions** page of each collection in your Azure DevOps Server instance:
@@ -276,7 +272,7 @@ However, there might be cases where you no longer want to use Search or you want
     
 <a name="unconfig-separate-server"></a>
 
-### Unconfigure Search when it's configured on a separate server
+### Un-configure Search when it's configured on a separate server
 
 1. Uninstall the Search extension, like for Code, Work item, or Wiki, for each collection where it's installed. Go to the **Manage Extensions** page of each collection in your Azure DevOps Server instance.
 

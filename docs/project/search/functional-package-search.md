@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/22/2021
+ms.date: 02/25/2021
 ---
 
 # Functional artifact or package search
@@ -33,6 +33,36 @@ Package Search is automatically available to users of Azure DevOps Services. By 
 You must be a Stakeholder to perform semantic searches on work items, wiki, and packages.
 
 <a name="syntaxdetails"></a>
+
+## Start searching packages or artifacts
+
+Start searching across all your packages and artifacts inside your organization.
+
+1. Open the **Azure Artifacts** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
+
+2. Choose ![start search icon](media/shared/start-search-icon-new.png) **Search** at the top right of the window to show the search textbox.
+
+3. Enter a search string in the textbox, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search.
+
+Search results display with matches to your query shown in bold. 
+The following example shows a full text search that uses simple search strings for words or phrases. 
+
+:::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
+
+### Sort and view package results
+
+1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
+   Use the filter to show the selector lists.
+
+	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::   
+
+2. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
+
+3. By switching pivots, quickly [search code](#start-searching-code) containing the same search string, or search for the same string in your [wikis](#start-searching-wiki), [work items](#start-work-item-search) or [packages](#start-searching-packages-or-artifacts).
+
+	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
 
 ## Syntax for simple and compound searches
 
@@ -79,7 +109,6 @@ To find an exact match to a set of words, enclose your search terms in double-qu
 
 Within a phrase, Boolean operators are treated as literal text.
 
-
 ## Search Packages with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?view=azure-devops-rest-6.0).
@@ -92,3 +121,8 @@ You can use APIs to extend or supplement the capabilities listed in this article
 
 ## Related articles
 
+* [Search code](functional-code-search.md)
+* [Search work items](functional-work-item-search.md)
+* [Search wiki](../wiki/search-wiki.md)
+* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
