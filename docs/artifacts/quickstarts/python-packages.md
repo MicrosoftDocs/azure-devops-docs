@@ -1,9 +1,9 @@
 ---
-title: Get started with Python packages
+title: Get started with Python packages in Azure Artifacts
 description: Quickly start hosting python packages with Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.date: 08/31/2020
+ms.date: 02/26/2021
 monikerRange: '=azure-devops'
 ms.custom: devx-track-python
 ---
@@ -30,7 +30,7 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 
 ## Use artifacts-keyring to set up authentication
 
-The `artifacts-keyring` package allow your to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
+The `artifacts-keyring` package allows your to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
 > [!IMPORTANT]
 > You must have pip 19.2 and twine 1.13.0 or higher to use `artifacts-keyring`.
@@ -53,21 +53,28 @@ The `artifacts-keyring` package allow your to set up authentication to publish a
    twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/upload
    ```
 
+> [!NOTE]
+> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](../../pipelines/tasks/package/pip-authenticate.md) task to install packages, or the [Python Twine Upload Authenticate](../../pipelines/tasks/package/twine-authenticate.md) task to push packages.
+
 ## Manually configure authentication
+
+1. Create a [Personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) to authenticate into Azure DevOps.
 
 1. From within your feed, select **Connect to feed**.
 
    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to feed button":::
 
-2. Select **pip** or **twine** under the Python header. 
+1. Select **pip** or **twine** under the Python header. 
 
    :::image type="content" source="media/pip-twine-feed.png" alt-text="Select pip or twine to connect to your feed":::
 
-3. Follow the instructions under **Project setup** to set up your project.
+1. Follow the instructions under **Project setup** to set up your project.
 
-4. Follow the steps in the next section to **Install** or **Publish** your packages.
+1. Follow the steps in the next section to **Install** or **Publish** your packages.
 
-## What's next?
+When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
+
+## Related articles
 
 - [Publish Python packages in Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
