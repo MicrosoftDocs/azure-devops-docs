@@ -1206,6 +1206,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/repos/get-started/code-with-git.md",
+      "redirect_url": "/azure/devops/user-guide/code-with-git?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/git/howto/pr-status-policy.md",
       "redirect_url": "/azure/devops/repos/git/pr-status-policy",
       "redirect_document_id": false
