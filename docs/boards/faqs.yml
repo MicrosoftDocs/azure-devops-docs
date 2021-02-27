@@ -267,7 +267,7 @@ additionalContent: |
   - [Query FAQs](queries/query-faqs.yml)
   - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
   - [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
-  - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
+  - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml)
   - [Work across projects FAQs](../project/work-across-projects-faqs.yml)
   - [Azure Boards extensions](extensions/index.md)
   - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
