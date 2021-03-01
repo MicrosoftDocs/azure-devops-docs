@@ -239,9 +239,9 @@ https://ccache.dev/manual/latest.html#_configuration_settings) for more options,
 
 ## Docker images
 
-Caching docker images will dramatically reduce the time it takes to run your pipeline.
+Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
-```YAML
+```yaml
 pool:
   vmImage: ubuntu-16.04
 
@@ -266,7 +266,7 @@ steps:
 
 ## Golang
 
-For Golang projects, the packages to be downloaded can be specified in the go.mod file. Please set your GOCACHE variable to where you want the cache to be downloaded if it's not already set.
+For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
 
 **Example**:
 
