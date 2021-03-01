@@ -142,7 +142,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 When you're ready to share your changes with the team, [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch.
 
-Once you push the changes, you can create a [pull request](pullrequest.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the main branch of the code.
+Once you push the changes, you can create a [pull request](pull-requests.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the main branch of the code.
 
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
@@ -171,7 +171,7 @@ Once you push the changes, you can create a [pull request](pullrequest.md). A pu
 
    ![Create a Pull Request in the web portal](media/gitquickstart-vs2017/create-pull-request.png)
 
-   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
+   For more information on pull requests, see the [pull request](pull-requests.md) tutorial.
 
 #### [Command Line](#tab/command-line/)
 1. Push your branch so that others can see the changes you've saved.
@@ -191,7 +191,7 @@ Once you push the changes, you can create a [pull request](pullrequest.md). A pu
 1. Once the changes are approved, complete the pull request.
    A complete pull request adds your changes from the branch into the main branch of the code.
 
-   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
+   For more information on pull requests, see the [pull request](pull-requests.md) tutorial.
 
 * * *
 <a name="pull"></a>

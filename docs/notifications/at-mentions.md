@@ -92,4 +92,4 @@ Use the **\@mention** control in pull request discussions, commit comments, chan
 ## Related articles
 
 - [Work item form controls](../boards/work-items/work-item-form-controls.md)  
-- [Pull requests](../repos/git/pullrequest.md)
+- [Pull requests](../repos/git/pull-requests.md)

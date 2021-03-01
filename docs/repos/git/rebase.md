@@ -15,7 +15,7 @@ monikerRange: '<= azure-devops'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
-Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the main branch with [pull requests](pullrequest.md).  
+Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the main branch with [pull requests](pull-requests.md).  
 This generated history can get complicated when you need to update a feature branch with changes from the main branch to catch up on work committed by others. 
 Your commit history will diverge from the main branch at multiple points, making it hard to follow.
 
@@ -49,7 +49,7 @@ Resolve any conflicts between the commits in the same way that you resolve [merg
 ### When to rebase vs. merge
 
 Using `rebase` instead of merging branches results in an easier to follow but less exact history of commits.
-Your team should agree under what circumstances you should `rebase` a branch. You should still always merge branches into the main branch through a [pull request](pullrequest.md). 
+Your team should agree under what circumstances you should `rebase` a branch. You should still always merge branches into the main branch through a [pull request](pull-requests.md). 
 A suggested approach is to allow rebasing local changes that you have made but haven't shared with others, but to merge once you are sharing changes
 with others. This avoids trouble with rewriting history while still letting you easily catch up with changes as you develop your code locally.
 

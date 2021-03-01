@@ -20,7 +20,7 @@ Create new branches to isolate changes for a feature or a bug fix from your main
 Since the branches are lightweight, switching between branches is quick and easy. 
 Git does not create multiple copies of your source when working with branches&mdash;it uses the history information stored in commits to recreate the files on a branch when you start working on it.
 Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bug fixes.
-The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pullrequest.md) all work through branches.
+The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pull-requests.md) all work through branches.
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
 In this tutorial you learn:
