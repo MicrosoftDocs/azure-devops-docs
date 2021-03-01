@@ -355,7 +355,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
       ```
     - **Linux**:
       ```bash
-      sudo waagent -deprovision+user -force`
+      sudo waagent -deprovision+user -force
       ```
 
     > [!IMPORTANT]
