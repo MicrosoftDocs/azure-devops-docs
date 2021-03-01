@@ -1,12 +1,12 @@
 ---
-title: Understand releases and deployments
+title: Understand releases and deployments in Azure Pipelines
 ms.custom: seodec18
-description: DevOps CI CD - Understand releases in Azure Pipelines and Team Foundation Server (TFS)
+description: DevOps CI/CD - Understand releases pipelines
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/14/2020
+ms.date: 03/01/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,21 +21,18 @@ monikerRange: '>= tfs-2015'
 ::: moniker range="azure-devops"
 
 > [!NOTE] 
-> This topic covers classic release pipelines. If you author your pipelines using YAML, see [runs](../process/runs.md).
+> This topic covers classic release pipelines. If you want to create your pipelines using YAML, see [Customize your pipeline](../customize-pipeline.md).
 
 ::: moniker-end
 
-A **release** is the package or container that holds a versioned set of artifacts specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
-It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as the [stages](../process/stages.md), the tasks for each one, the values of task parameters and variables, and the release policies such as triggers, approvers, and release queuing options. There can be multiple releases from one release pipeline, and information about each one is stored and displayed in Azure Pipelines for the specified [retention period](../policies/retention.md#release).  
+A **release** is a construct that holds a versioned set of artifacts specified in a CI/CD pipeline. It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as stages, tasks, policies such as triggers and approvers, and deployment options. There can be multiple releases from one release pipeline, and information about each one is stored and displayed in Azure Pipelines for the specified [retention period](../policies/retention.md#release).  
 
-A **deployment** is the action of running the [tasks](../process/tasks.md) for one stage, which results in the application [artifacts](artifacts.md) being deployed, tests being run, and whatever other actions are specified for that stage. 
-Initiating a release starts each deployment based on the settings and policies defined in the original release pipeline. There can be multiple deployments of each release even for one stage. When a deployment of a release fails for a stage, you can redeploy the same release to that stage.
-To redeploy a release, simply navigate to the release you want to deploy and select deploy.
+A **deployment** is the action of running the tasks for one stage, which can include running automated tests, deploying build artifacts, and whatever other actions are specified for that stage. 
+Initiating a release starts each deployment based on the settings and policies defined in the original release pipeline. There can be multiple deployments of each release even for one stage. When a deployment of a release fails for a stage, you can redeploy the same release to that stage. To redeploy a release, simply navigate to the release you want to deploy and select deploy.
 
-The following schematic shows the relationship between release pipelines, releases, and deployments.
+The following diagram shows the relationship between release, release pipelines, and deployments.
 
-> [!div class="mx-imgBorder"]  
-> ![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
+:::image type="content" source="media/release-deploy.png" alt-text="Relationship between releases, release pipelines, and deployments":::
 
 Releases can be created from a release pipeline in several ways:
 
