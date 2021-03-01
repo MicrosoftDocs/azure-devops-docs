@@ -34,13 +34,19 @@ The following diagram shows the relationship between release, release pipelines,
 
 :::image type="content" source="media/release-deploy.png" alt-text="Relationship between releases, release pipelines, and deployments":::
 
-Releases can be created from a release pipeline in several ways:
+## Create release pipelines
 
-* By a [continuous deployment trigger](triggers.md) that creates a release when a new version of the source build artifacts is available.
+Releases can be created in several ways:
 
-* By using the **Release** command in the UI to create a release manually from the Releases or the Builds summary.
+1. By using a [deployment trigger](triggers.md) to create a release every time a new build artifact is available.
 
-* By sending a command over the network to the [REST interface](../../integrate/index.md).
+    :::image type="content" source="media/trigger-01.png" alt-text="Continuous deployment triggers":::
+
+1. By using the **Create release** button from within your **Pipelines** > **Releases** to manually create a release pipeline.
+
+    :::image type="content" source="media/create-release-ui.png" alt-text="Create a release pipeline from the UI":::
+
+1. By sending a command over the network to the [REST interface](../../integrate/index.md).
 
 **However**, the action of creating a release **_does not_** mean it will automatically or immediately start a deployment. For example:
 
