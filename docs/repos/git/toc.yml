@@ -125,10 +125,6 @@
   items:
   - name: View and manage pull requests
     href: pull-requests.md
-  - name: Review code with pull requests
-    href: pull-requests-overview.md
-  - name: Create & complete a pull request
-    href: pullrequest.md
   - name: Squash merge pull requests 
     href: merging-with-squash.md
   - name: Pull request templates
