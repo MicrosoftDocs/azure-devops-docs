@@ -46,18 +46,18 @@ Releases can be created in several ways:
 
     :::image type="content" source="media/create-release-ui.png" alt-text="Create a release pipeline from the UI":::
 
-1. By sending a command over the network to the [REST interface](../../integrate/index.md).
+1. By using the [REST API](/rest/api/azure/devops/release/index.md) to create a release definition.
 
-**However**, the action of creating a release **_does not_** mean it will automatically or immediately start a deployment. For example:
+## Q&A
 
-* There may be [deployment triggers](triggers.md) defined for a stage, which force the deployment to wait; this could be for a manual deployment, until a scheduled day and time, or for successful deployment to another stage.
+Q: I created a release pipeline but the deployment did not get triggered?
 
-* A deployment started manually from the **[Deploy]** command in the UI, or from a network command sent to the [REST interface](../../integrate/index.md), may specify a final target stage other than the last stage in a release pipeline. For example, it may specify that the release is deployed only as far as the QA stage and not to the production stage.   
+A: Creating a release pipeline does not necessarily mean that it will automatically/immediately start a deployment. Below are few reasons why this might happen:
 
-* There may be [queuing policies](../process/stages.md#queuing-policies) defined for a stage, which specify which of multiple deployments will occur, or the order in which releases are deployed.
+- Defined [deployment triggers](triggers.md) forcing the deployment to pause.This can happen with scheduled triggers or when a delay is imposed until deployment to another stage is complete.   
 
-* There may be [pre-deployment approvers or gates](approvals/index.md) defined for a stage, and the deployment will not occur until all necessary approvals have been granted.
+- Defined [queuing policies](../process/stages.md#queuing-policies) in place to dictate the order of execution.
 
-* Approvers may defer the release to a stage until a specified date and time.
+- [Pre-deployment approvals or gates](approvals/index.md) for a specific stage preventing deployment until all the defined conditions are met.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
