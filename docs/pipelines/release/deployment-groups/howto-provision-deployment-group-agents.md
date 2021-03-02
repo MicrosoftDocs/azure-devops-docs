@@ -162,6 +162,13 @@ where:
 > [!NOTE]
 > If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
+#### Troubleshooting for the extension:
+
+Some known issues with the extension are:
+* **Status file getting too big**: The status file contains a json object describing the current status of the extension, and is a placeholder to list the operations performed so far. Azure reds this staus file and passes the status object as response to api calls. The file has a maximum allowed size; if the size exceeds the threshold, Azure cannot read it completely and gives an error for the status. On each machine reboot, some operations are performed by the extension(even though it might be installed successfully earlier), which append the status file. If the machine gets rebooted a large number of times, the status file size will exceed the threshold, which causes this error. Note that extension installation might have succeeded, but this error hides the actual state of the extension. We have fixed this issue for machine reboots(1.27.0.2 for Windows extension, and 1.21.0.1 for Linux extension onwards), so on a reboot, nothing will be added to the status file. If you had this issue with your extension before the fix was made(i.e. you were having this issue with older extension versions), and your extension got auto-upadted to the versions with the fix, the issue will still persist. This is because on extension update, the newer version of the extension still works with the older status file. So currently, you could still be facing this issue if you are using an older version of the extension with the flag to turn off minor version auto-updates, or if a large status file got carried from an older exension version to the newer versions containing the fix, or for any other reason. If that is the case, you can get past this issue in the following way:
+Uninstall and install the extension: Uninstalling the extension cleans up the entire extension directory, so a new status file will be created for fresh install. You need to install latest version of the extension. This solution is a permanemt fix, and after following this, you should not face the issue again.
+* **Issue with Custom Data**:
+
 For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 
 To use the template:
