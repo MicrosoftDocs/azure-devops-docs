@@ -49,10 +49,10 @@ Use this task to deploy a virtual machine scale set image.
 
 ## Troubleshooting
 
-### Error: Permission denied
+### Error: Permission denied: Script is not executable
 
 This issue happens when we try to run a custom script but the script isn't executable. 
-First make sure the customScript variable doesnt have './' or anything else before the script name(test.sh)
+First make sure the customScript input doesnt have './' or anything else before the script name(test.sh)
 
     customScript: 'test.sh'
 
