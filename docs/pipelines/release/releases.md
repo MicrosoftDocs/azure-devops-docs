@@ -56,8 +56,14 @@ A: Creating a release pipeline does not necessarily mean that it will automatica
 
 - Defined [deployment triggers](triggers.md) forcing the deployment to pause.This can happen with scheduled triggers or when a delay is imposed until deployment to another stage is complete.   
 
-- Defined [queuing policies](../process/stages.md#queuing-policies) in place to dictate the order of execution.
+- Defined [queuing policies](../process/stages.md#queuing-policies) dictating the order of execution and when releases are queued for deployment.
 
 - [Pre-deployment approvals or gates](approvals/index.md) for a specific stage preventing deployment until all the defined conditions are met.
 
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+## Related articles
+
+- [Release deployment control using approvals](approvals/approvals.md).
+- [Release deployment control using gates](approvals/gates.md).
+- [Release triggers](triggers.md).
+- [Release artifacts and artifact sources](artifacts.md).
+- [Add stages, dependencies, & conditions](../process/stages.md).
