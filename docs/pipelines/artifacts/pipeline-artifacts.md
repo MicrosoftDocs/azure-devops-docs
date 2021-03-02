@@ -162,11 +162,11 @@ Keep in mind:
 
 * The **Download Pipeline Artifact** task can download both build artifacts (published with the Publish Build Artifacts task) and pipeline artifacts.
 
-* By default, files are downloaded to `$(Pipeline.Workspace)/{artifact}`, where `artifact` is the name of the artifact. The folder structure of the artifact is always preserved.
+* By default, files are downloaded to **$(Pipeline.Workspace)/**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
 
 * File matching patterns can be used to limit which files from the artifact(s) are downloaded. For more information on how pattern matching works, see [artifact selection](#artifact-selection).
 
-For advanced scenarios, including downloading artifacts from other pipelines, see the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+For other scenarios, including downloading artifacts from other pipelines, see the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
 ### Artifact selection
 
