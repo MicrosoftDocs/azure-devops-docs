@@ -24,7 +24,7 @@ This article shows you how to configure and view Git settings and preferences in
 
 ## How to configure settings
 
-
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
