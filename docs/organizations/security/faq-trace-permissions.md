@@ -28,7 +28,7 @@ If a user is having permissions issues and you use default security groups or cu
 
 ::: moniker range="azure-devops"
 
-- The user has been added to the **Project-Scoped Users** group which limits access to organization information and projects when the **Project-Scoped Users well known group to hide settings** preview feature is enabled. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group).  
+- The user has been added to the **Project-Scoped Users** group which limits access to organization information and projects when the **Limit user visibility for projects** preview feature is enabled. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group).  
 
 For information on adding users to an organization and setting their access level, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md).  
 

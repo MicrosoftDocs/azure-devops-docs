@@ -434,11 +434,15 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 ## Group by Tags chart 
 
+> [!NOTE]   
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+
 To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
 
 :::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
 
 To learn more about using tags, see [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). 
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"

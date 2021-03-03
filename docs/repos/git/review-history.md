@@ -46,6 +46,9 @@ Compare the changes between two versions of a file in your Git repo.
     :::image type="content" source="media/review-history/select-commits-for-compare-browser.png" alt-text="Screenshot that shows the selections for the previous commits for comparison.":::
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
     ![View history in your repo for a file](media/history/vs-history-view.png)     
@@ -120,6 +123,9 @@ your branch.
     :::image type="content" source="media/review-history/revert-commit-dialog-browser.png" alt-text="Screenshot that shows the 'Revert commit' dialog.":::
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 To retrieve a previous version of a file that exists in your Visual Studio project:
 
 1. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
@@ -185,6 +191,8 @@ changes others have made will affect your work.
     :::image type="content" source="media/review-history/select-branch-to-compare.png" alt-text="Screenshot that shows the 'Branch compare' dialog, with the first branch drop-down highlighted and branch 'Test1' selected."::: 
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
