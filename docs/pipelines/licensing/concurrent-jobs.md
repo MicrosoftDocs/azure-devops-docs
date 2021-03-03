@@ -37,9 +37,6 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
-> [!NOTE]
-> We have [temporarily disabled](https://devblogs.microsoft.com/devops/change-in-azure-pipelines-grant-for-public-projects/) the free grant of Microsoft-hosted parallel jobs for new public projects. Stay tuned for updates as we roll out a new process to get your free grant.
-
 ## What is a parallel job? 
 
 When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline. Each running job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
@@ -65,13 +62,24 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 # [Microsoft-hosted](#tab/ms-hosted)
 
-For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
+For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default. You can request this free grant for your open-source project by sending an email to azpipelines-ossgrant@microsoft.com and providing the following information:
+
+- Your name
+- The Azure DevOps organization for which you are seeking the free grant
+- Links to public repositories that you plan to build
+- A brief description of your open-source project
+
+> [!NOTE]
+> The above grant of 10 free pipelines is only for open-source projects.
+
+For **private projects**, you get one free job that can run for up to 60 minutes each time. 
+
+There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
 |           |  Number of parallel jobs |  Time limit |
 | ----------| -------------------------| ------------|
 | **Public project** | Up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
-
 
 When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
@@ -81,7 +89,6 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 > If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
 > into multiple jobs. For more information on jobs, see 
 > [Specify jobs in your pipeline](../process/phases.md).
-
 
 # [Self-hosted](#tab/self-hosted)
 
@@ -136,7 +143,6 @@ Figure out how many parallel jobs you need by first seeing how many parallel job
 2. View the maximum number of parallel jobs that are available in your organization.
 
 3. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
-
 
 ### Estimate costs
 
@@ -322,7 +328,6 @@ Currently, there isn't a way to partition or dedicate parallel job capacity to a
 * You purchase two parallel jobs in your organization.
 * You start two runs in the first project, and both the parallel jobs are consumed.
 * You start a run in the second project. That run won't start until one of the runs in your first project is completed.
-
 
 
 ### Are there limits on who can use Azure Pipelines?
