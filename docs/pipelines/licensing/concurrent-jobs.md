@@ -321,7 +321,7 @@ You qualify for the free tier limits for public projects if you meet both of the
 * Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/about-public-projects.md). 
 * Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
 
-For information on how to apply for the grant of free parallel jobs, see [How much do parallel jobs cost?](#how-much-do-parallel-jobs-cost?view=azure-devops&branch=pr-en-us-2472&tabs=ms-hosted).
+For information on how to apply for the grant of free parallel jobs, see [How much do parallel jobs cost?](concurrent-jobs.md?view=azure-devops&tabs=ms-hosted#how-much-do-parallel-jobs-cost).
 
 ### Can I assign a parallel job to a specific project or agent pool?
 
