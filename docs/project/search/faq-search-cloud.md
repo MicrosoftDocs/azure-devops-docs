@@ -1,20 +1,20 @@
 ---
-title: FAQs and problem solutions for Search   
+title: Search FAQs and problem solutions   
 description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps.
 ms.assetid: 
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/20/2021
-monikerRange: '>= tfs-2017'
+ms.date: 03/03/2021
+monikerRange: 'azure-devops'
 ---
 
-# Search FAQs
+# FAQs for Search in Azure DevOps Services
 
 [!INCLUDE [version-azure-devops-cloud](../../report/includes/version-azure-devops-cloud.md)]
 
-
+Learn the answers to frequently asked questions (FAQs) about the Search function for Azure DevOps Services.
 
 ## Q: Why isn't the wildcard search working as expected
 

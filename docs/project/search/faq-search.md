@@ -1,6 +1,6 @@
 ---
-title: FAQs and problem solutions for Search   
-description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps Services.
+title: Problem solutions and FAQs for Search   
+description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps.
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -10,11 +10,11 @@ ms.date: 02/20/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Search FAQs
+# FAQs for Search
 
 [!INCLUDE [version-tfs-all-versions](../../includes/version-tfs-all-versions.md)]
 
-Learn the answers to frequently asked questions (FAQs) about the Search function and extensions available for Azure DevOps Services.
+Learn the answers to frequently asked questions (FAQs) about the Search function and extensions available for Azure DevOps.
 
 ## Q: Why isn't the Search box displayed after it's configured?
 A:
@@ -131,12 +131,11 @@ You could try the following alternatives, as applicable to your scenario:
 
 For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
 
-
-
 ## Related articles
-::: moniker range=" azure-devops"
 
+* [Search artifacts and packages](functional-package-search.md)
+* [Search work items](functional-work-item-search.md)
+* [Search wiki](../wiki/search-wiki.md)
+* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
-::: moniker range=">= tfs-2017 < azure-devops"
-- [Get started with Search](get-started-search.md)
-::: moniker-end

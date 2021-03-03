@@ -24,7 +24,7 @@
     href: functional-work-item-search.md
   - name: Functional package search
     href: functional-package-syntax.md
-- name: Search wiki
+  - name: Search wiki
     href: ../wiki/search-wiki.md
   - name: Install and configure search
     href: install-configure.md

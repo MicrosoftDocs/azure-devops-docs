@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: how-to
 monikerRange: '>= tfs-2018'
-ms.date: 02/25/2021
+ms.date: 03/03/2021
 ---
 
 # Search  Wiki
@@ -71,12 +71,12 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ### Search Wiki with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Wiki Search with REST API, see [Fetch Wiki Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/wiki%20search%20results/fetch%20wiki%20search%20results?view=azure-devops-rest-6.0).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Wiki Search with REST API, see [Fetch Wiki Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/wiki%20search%20results/fetch%20wiki%20search%20results?preserve-view-not-set).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get started searching across all your work items, code, and artifacts](get-started-search.md)
+> [Get started searching across all your work items, code, and artifacts](../search/get-started-search.md)
 
 ## Related articles
 

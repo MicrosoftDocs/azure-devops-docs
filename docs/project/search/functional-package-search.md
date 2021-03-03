@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 02/25/2021
+ms.date: 03/03/2021
 ---
 
 # Functional artifact or package search
@@ -60,7 +60,7 @@ The following example shows a full text search that uses simple search strings f
 
 	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
 
-3. By switching pivots, quickly [search code](#start-searching-code) containing the same search string, or search for the same string in your [wikis](#start-searching-wiki), [work items](#start-work-item-search) or [packages](#start-searching-packages-or-artifacts).
+3. By switching pivots, quickly [search code](functional-code-search.md) containing the same search string, or search for the same string in your [wikis](../wiki/search-wiki.md), [work items](functional-work-item-search.md) or [packages](#start-searching-packages-or-artifacts).
 
 	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
 
@@ -111,7 +111,7 @@ Within a phrase, Boolean operators are treated as literal text.
 
 ## Search Packages with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?view=azure-devops-rest-6.0).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?preserve-view-not-set).
 
 [!INCLUDE [search-limitations](includes/search-limitations.md)]
 

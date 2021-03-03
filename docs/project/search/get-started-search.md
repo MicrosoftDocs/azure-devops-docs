@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/25/2021
+ms.date: 03/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access. You can find an at-a-glance look at all of the [features of Search](#search-features) further in this article.
+The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access. You can find an at-a-glance look at all of the [features of Search](#features-for-search) further in this article.
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find the following content:
@@ -77,7 +77,7 @@ For more information about how to sort and view search results for code, see [Vi
 
 You can search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
 
-For more information about how to sort and view search results for packages, see [View and filter package results](functional-package-search.md#view-and-filter-package-results).
+For more information about how to sort and view search results for packages, see [View and filter package results](functional-package-search.md#sort-and-view-package-results).
 
 ## Narrow search results
 

@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/25/2021
+ms.date: 03/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -333,7 +333,7 @@ Search remembers the state of the filter pane, configuration of the work item vi
 
 ## Search Work Items with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results?view=azure-devops-rest-6.0).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results?preserve-view-not-set).
 
 
 [!INCLUDE [search-limitations](includes/search-limitations.md)]

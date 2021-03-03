@@ -177,7 +177,7 @@ Within a phrase:
 * The query language characters `:()[]*?` are treated as literal text.
 * Escape only the special characters `\` and `"`.
 
- ::: moniker range=" azure-devops
+ ::: moniker range=" azure-devops"
 
 ### Search for special characters
 
@@ -267,10 +267,10 @@ Instead, you can type the functions and parameters directly into the search box.
 
 ## Find two or more keywords using Boolean operators
 
-	• validate AND revisit finds files that contain both the words validate and revisit. Note that AND is the default operator, and so this is equivalent to the search string validate revisit.
-	• validate OR revisit finds files that contain either of the words validate or revisit.
-	• validate NOT revisit finds files that contain the word validate but not the word revisit.
-	• (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
+• validate AND revisit finds files that contain both the words validate and revisit. Note that AND is the default operator, and so this is equivalent to the search string validate revisit.
+• validate OR revisit finds files that contain either of the words validate or revisit.
+• validate NOT revisit finds files that contain the word validate but not the word revisit.
+• (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
 
 
 <a name="locationfunctions"></a>
@@ -322,7 +322,7 @@ See the following examples of even more search functions:
 
 ## Search Code with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results?view=azure-devops-rest-6.0).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results?preserve-view-not-set).
 
 [!INCLUDE [search-limitations](includes/search-limitations.md)]
 
