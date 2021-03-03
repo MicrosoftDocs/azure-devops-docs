@@ -487,8 +487,8 @@ For additional extensions that integrate with Microsoft Project, see [Azure Boar
 
 ## Related articles
 
-- [FAQs: Work in Excel connected to Azure Boards](faqs.md) 
-- [Resolve publishing errors](faqs.md#resolve-publishing-errors) 
+- [FAQs: Work in Excel connected to Azure Boards](faqs.yml) 
+- [Resolve publishing errors](faqs.yml#resolve-publishing-errors) 
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
