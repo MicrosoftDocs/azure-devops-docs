@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 03/02/2021 
 --- 
 
 # About projects and scaling your organization
@@ -19,8 +19,6 @@ ms.date: 11/16/2020
 A project provides a repository for source code and a place for users to plan, track progress, and collaborate on building software solutions. A project represents a fundamental container where data is stored when added to Azure DevOps.
 
 When you create your project, a team of the same name is automatically created. This is sufficient for small teams. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and projects. These additions can be created within the single account or collection.
-
-
 
 ---
 :::row:::
@@ -78,7 +76,7 @@ You can scale your on-premises Azure DevOps deployment in the following ways:
 
 Azure DevOps Services and Azure DevOps Server are enterprise-ready platforms. These platforms support teams of any size, from tens to thousands. Azure DevOps Services, our cloud service, provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
-## How to view projects defined for your organization or collection
+## How to view projects 
 
 You can view the projects defined for your organization by opening the **Projects** page.
 
@@ -89,7 +87,9 @@ You can view the projects defined for your organization by opening the **Project
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
 
-2. From there, you can choose a project from the set of projects listed.
+2. From there, you can choose a project from the set of projects listed. 
+
+To create or list projects, see [Create a project](create-project.md)  
 
 ::: moniker-end
 
@@ -122,17 +122,43 @@ You can view the projects defined for your organization by opening the **Project
 
 <a id="project-scoped-user-group" /> 
 
-## Project-scoped User group 
+## Limit user visibility for projects using the Project-Scoped Users group 
 
-By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
+By default, users added to an organization can view all organization and project information and settings.  
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+The **Limit user visibility for projects** preview feature for the organization limits user access in two ways:
+- Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
+- Limiting the set of people or groups that appear through people-picker search selections and the ability to @mention people. 
+
+> [!IMPORTANT]
+> The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data. 
+
+### Limit access to Organization settings 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 [!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
  
+### Limit visibility within people pickers
+
+For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+
+### Historical data remains visible 
+
+Identities that have been added to a comment, discussion, or assignment continue to be visible to all project members. For example, work items that were assigned to a user who has since left a project, the user’s name on that work item remains visible to everyone in the project, even to users with the new restriction. The same is true for @mentions in PRs, comments, discussions, and more.  
 
 ::: moniker-end
 
