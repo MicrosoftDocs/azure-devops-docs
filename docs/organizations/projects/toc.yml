@@ -12,6 +12,8 @@
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Manage projects
   items:
+  - name: Manage your project
+    href: ../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Project & team quick reference
     href: project-team-quick-reference.md
   - name: Connect a project to GitHub  

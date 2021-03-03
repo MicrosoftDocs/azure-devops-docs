@@ -18,6 +18,8 @@
     href: change-organization-ownership.md
 - name: Manage your organization 
   items:
+  - name:  Manage preview features
+    href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Rename organization
     href: rename-organization.md 
   - name: Delete organization

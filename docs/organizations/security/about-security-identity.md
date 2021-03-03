@@ -238,15 +238,19 @@ To secure your organization and code, you can set a number of policies. Specific
 
 <a id="project-scoped-user-group" /> 
 
-### Project-scoped User group 
+### Project-Scoped Users group 
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+- Can only access the **Overview** and **Projects** pages of **Organization Settings**.
+- Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
+- Can only select user and group identities that have been added explicitly to the project they are connected to. 
 
-To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+To learn more about the **Limit user visibility for projects**, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 ### Git repository and branch policies 
+
 - [Configure repository settings and policies](../../repos/git/repository-settings.md)
 - [Configure branch policies](../../repos/git/branch-policies.md)
 - [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
