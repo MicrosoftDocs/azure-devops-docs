@@ -17,23 +17,7 @@
 - name: Search
   items:
   - name: Get started with Search
-    href: get-started-search.md
-  - name: Functional code search
-    href: functional-code-search.md
-  - name: Functional work item search
-    href: functional-work-item-search.md
-  - name: Functional package search
-    href: functional-package-syntax.md
-  - name: Search wiki
-    href: ../wiki/search-wiki.md
-  - name: Install and configure search
-    href: install-configure.md
-  - name: Manage search indexing
-    href: manage-search.md
-  - name: FAQs
-    href: faq-search.md
-  - name: FAQs cloud
-    href: faq-search-cloud.md 
+    href: ../search/get-started-search.md
 - name: Manage or enable features
   href: preview-features.md
 - name: Reference
@@ -42,6 +26,3 @@
     href: mobile-work.md
   - name: Glossary
     href: glossary.md
-
- 
- 
