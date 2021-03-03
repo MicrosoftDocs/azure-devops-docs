@@ -8,7 +8,7 @@
     href: permissions-access.md
   - name: View permissions 
     href: view-permissions.md
-  - name: Troubleshoot permissions
+  - name: Troubleshoot access and permissions
     href: troubleshoot-permissions.md
   - name: Increase permission levels, find an admin
     href: lookup-organization-owner-admin.md
