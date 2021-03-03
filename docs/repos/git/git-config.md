@@ -24,7 +24,7 @@ This article shows you how to configure and view Git settings and preferences in
 
 ## How to configure settings
 
-
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
@@ -59,6 +59,9 @@ Visual Studio allows you to configure and check some of the most common Git conf
 The name and email that you provide will be used as the committer information for any commit you make. This setting is available at both global and repository scopes, and corresponds to the `git config` [user.email](https://git-scm.com/docs/git-config#git-config-useremail) and [user.name](https://git-scm.com/docs/git-config#git-config-username) settings.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, go to **Settings**. To set your user name and email at the global level, go to **Global Settings**; to set these at the repository level, go to **Repository Settings**.
 
 2. Provide your user name and email, then choose **Update** to save. 
@@ -96,6 +99,9 @@ We recommend setting this option to **True** at the global level. Valid settings
 - Unset (default)
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Requires Visual Studio 2017 Update 5 and later.
 
 In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
@@ -123,6 +129,9 @@ then applies the changes that were set aside. This setting is available at both 
 - Preserve: Rebase without flattening locally created merge commits.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Requires Visual Studio 2017 Update 5 and later.
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this option at the global level; go to **Repository Settings** to configure this option at the repo level.
 
@@ -151,6 +160,9 @@ allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Requires Visual Studio 2017 Update 7 and later.
 
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this setting.
