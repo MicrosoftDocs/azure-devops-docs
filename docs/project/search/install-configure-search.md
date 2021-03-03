@@ -25,7 +25,7 @@ For information about managing Search indexing, see [Manage Search and indexing]
 ## Prerequisites
 
 - To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization. Non-administrative users can also request that the extension get added to their PCA.
-- See [Install and configure Azure DevOps Server](https://docs.microsoft.com/azure/devops/server/install/get-started?view=azure-devops-2020) and [Requirements and compatibility](/azure/devops/server/requirements).
+- See [Install and configure Azure DevOps Server](https://docs.microsoft.com/azure/devops/server/install/get-started?preserve-view-not-set) and [Requirements and compatibility](/azure/devops/server/requirements).
 
 ### Hardware recommendations
 
@@ -40,19 +40,19 @@ For acceptable performance in multi-user scenarios, consider the following recom
   - Quad core processor, 16 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage
-* Fewer than 500 users with Search located on a [separate server](#separate-server): 
+* Fewer than 500 users with Search located on a [separate server](#install-or-update-search-on-a-separate-server): 
   - Dual core processor, 8 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) storage
-* Fewer than 1,000 users with Search located on a [separate server](#separate-server):
+* Fewer than 1,000 users with Search located on a [separate server](#install-or-update-search-on-a-separate-server):
   - Quad core processor, 16 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) storage
-* More than 1,000 users with Search located on a [separate server](#separate-server):
+* More than 1,000 users with Search located on a [separate server](#install-or-update-search-on-a-separate-server):
   - Quad core processor, 16 GB (minimum) RAM
   - Fast hard drive backed by Solid State Drive (SSD) or Storage Area Network (SAN) storage
 * Azure DevOps Server with Multiple ATs: 
-  - Install Search on a [separate server](#separate-server)
+  - Install Search on a [separate server](#install-or-update-search-on-a-separate-server)
 * Azure DevOps Server CPU utilization greater than 50% before Search installation:
-  - Install Search on a [separate server](#separate-server)
+  - Install Search on a [separate server](#install-or-update-search-on-a-separate-server)
 
 **Disk space requirement**:
 
@@ -64,7 +64,7 @@ Search has the following dependencies, which are installed automatically as part
 
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/) (see [Java installation notes](#java-notes))
+* [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/) (see [Java installation notes](#java-installation-notes))
 * [Markdowndeep](https://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](https://www.antlr.org/) language recognition parser
@@ -72,7 +72,7 @@ Search has the following dependencies, which are installed automatically as part
 > [!NOTE]
 > - Search uses a modified version of Elasticsearch. It works only with this modified version
 > - A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server. All content is reindexed after installation when you upgrade from an older version of Search results. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete
-> - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-notes) that > follow
+> - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-installation-notes) that follow
 > - The Azul Zulu OpenJDK doesn't automatically install updates
 > - Ensure that you regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk)
 
@@ -93,7 +93,7 @@ Search has the following dependencies, which are installed automatically as part
 
 - If you can't install the version of Java required by Search because of other dependencies, you can do the following tasks:
   - Install Azure DevOps Server with the Search extension on a server that doesn't have Java installed. We don't recommend this action for more than 250 users or CPU utilization greater than 50% or multiple ATs)
-  - Install Search and the JRE on a [separate server](#separate-server) from Azure DevOps Server
+  - Install Search and the JRE on a [separate server](#install-or-update-search-on-a-separate-server) from Azure DevOps Server
 
 > [!NOTE]
 > If you're using Oracle Server JRE 8, which was the default for Search in TFS (Azure DevOps Server doesn't use Oracle Server JRE 8), be aware of the following information:
@@ -123,8 +123,8 @@ For more information, see [GitHub Code-Search Java Migration](https://github.com
 
 ## Configure Search
 
-Configure the Search service using the dedicated pages in the Server Configuration Wizard as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard. For configuring Search, be aware of the [configuration considerations].(#configuration-considerations).
+Configure the Search service using the dedicated pages in the Server Configuration Wizard as you install Azure DevOps Server. You can also [un-configure Search](#uninstall-search)
+afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard. For configuring Search, be aware of the [configuration considerations](#configuration-considerations).
 ### Configuration considerations
 
 Consider the following information when you're configuring Search:
@@ -140,7 +140,7 @@ Consider the following information when you're configuring Search:
   * Unless specified, the indexing service and Elasticsearch engine use the network service account during installation to create and access the index files. If you choose a different account, it must have **Log on as a service** permission
   * Restrict the permissions for the index disk and folder to protect the index from accidental or malicious modification or deletion. Configure appropriate [security settings](#secure-search) for the service
 
-* When you're configuring Search for a server with **multiple application tiers (ATs)**, make sure it's installed on a [separate remote server](#separate-server). After you've installed Search on the remote server, use the Configuration Wizard on any one of the AT servers to link the remote Search instance with your Azure DevOps Server instance. When unconfiguring Search in the future you must use the Configuration Wizard on the same AT server where configuration was originally carried out
+* When you're configuring Search for a server with **multiple application tiers (ATs)**, make sure it's installed on a [separate server](#install-or-update-search-on-a-separate-server). After you've installed Search on the remote server, use the Configuration Wizard on any one of the AT servers to link the remote Search instance with your Azure DevOps Server instance. When un-configuring Search in the future you must use the Configuration Wizard on the same AT server where configuration was originally carried out
 
 #### Upgrade your server
 
@@ -208,21 +208,21 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 - **TFS 2017 Update 1** includes updated Search components.
   - If the Search service was configured in TFS 2017 RTM during an upgrade, the Search service components are updated automatically if the Search
 service was configured on the TFS that's getting upgraded. 
-  - If Search was configured on a remote server, follow [these instructions](#separate-server) to update it.
+  - If Search was configured on a remote server, follow [the instructions](#install-or-update-search-on-a-separate-server) to update it.
 
 - **TFS 2017 Update 2** includes Work items Search. It uses the same Search service as Code Search. 
   - If the Search service was configured in TFS 2017 RTM/Update1 during an upgrade, the Search service components get updated automatically if the Search service was configured on the TFS that's being upgraded. 
-  - If Search was configured on a remote server, follow [these instructions](#separate-server) to update it.
+  - If Search was configured on a remote server, follow [the instructions](#install-or-update-search-on-a-separate-server) to update it.
 
 - **TFS 2018 Update 2** includes updated Search components and Wiki Search. 
   - If the Search service was configured in TFS 2017 RTM, Update1, Update2, or TFS 2018 RTM during an upgrade, the Search service components get updated automatically if the Search service was configured on the TFS that's being upgraded. 
-  - If Search was configured on a remote server, follow the [instructions](#separate-server) to update it. 
+  - If Search was configured on a remote server, follow [the instructions](#install-or-update-search-on-a-separate-server) to update it. 
 
   In both cases, all existing content (code files and work items) gets automatically reindexed to support the updated components after configuration. Depending on the volume of content, this upgrade might take some time to complete.
 
 - **TFS 2018 Update 1.1 and TFS 2018 Update 3** include basic authentication for the communication between the TFS and Search service to make it more secure. Any installation or upgrade to TFS 2018 Update 1.1 or TFS 2018 Update 3, must provide credentials as part of configuring Search feature, through Server or the Search configuration wizard.
 
-- **TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1**, when search is configured on a separate server, requires a reinstallation of search. While following [the instructions for an upgrade](#separate-server), in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to reinstall search:
+- **TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1**, when search is configured on a separate server, requires a reinstallation of search. While following [the instructions for an upgrade](#install-or-update-search-on-a-separate-server), in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to reinstall search:
 
 ```
 Configure-TFSSearch.ps1 -Operation remove

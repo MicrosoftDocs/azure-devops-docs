@@ -5,11 +5,11 @@
 - name: Functional work item search
   href: functional-work-item-search.md
 - name: Functional package search
-  href: functional-package-syntax.md
+  href: functional-package-search.md
 - name: Search wiki
   href: ../wiki/search-wiki.md
 - name: Install and configure search
-  href: install-configure.md
+  href: install-configure-search.md
 - name: Manage search indexing
   href: manage-search.md
 - name: FAQs

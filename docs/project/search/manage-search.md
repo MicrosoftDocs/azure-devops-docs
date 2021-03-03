@@ -47,7 +47,7 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 
 ### Check indexing status for TFS 2017 RTM
 
-(For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#index-update1))
+(For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#check-indexing-status-for-tfs-2017-update-1-and-later).)
 
 To check the indexing status after Search is configured, or after the extension is installed for a collection, do the following steps:
 
