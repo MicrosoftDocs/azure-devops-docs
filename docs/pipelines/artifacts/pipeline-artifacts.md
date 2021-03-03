@@ -292,13 +292,41 @@ No available Azure CLI option for this action.
 If you're using pipeline artifacts to deliver artifacts into a classic release pipeline or deployment job, you do not need to add a download step --- a step is injected automatically. If you need to control over the location where files are downloaded, you can add a **Download Pipeline Artifact** task or use the `download` YAML keyword.
 
 > [!NOTE]
-> Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or  **Download Pipeline Artifact** task.
+> Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or **Download Pipeline Artifact** task.
 
 To stop artifacts from being downloaded automatically, add a `download` step and set its value to none:
 
 ```yaml
 steps:
 - download: none
+```
+
+## Use Artifacts across stages
+
+If you want to be able to access your artifact across different stages in your pipeline, you can use output variables to pass it to the next stage in your YAML. See [Dependency expressions](../process/expressions.md#dependencies) for more details.
+
+```YAML
+trigger: none
+pool:
+  vmImage: 'ubuntu-latest'
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
+       name: printvar
+- stage: B
+  dependsOn: A
+  jobs:
+  - job: B1
+    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+    steps:
+    - script: echo hello from Job B1
+  - job: B2
+    condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
+    steps:
+     - script: echo hello from Job B2
 ```
 
 ## Migrating from build artifacts
