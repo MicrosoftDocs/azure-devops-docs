@@ -304,3 +304,14 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 - [Scheduled triggers](../process/scheduled-triggers.md)
 - [Pipeline completion triggers](../process/pipeline-triggers.md)
+
+## A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
