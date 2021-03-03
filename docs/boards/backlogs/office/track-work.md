@@ -121,7 +121,7 @@ The following table indicates the Office clients that are supported for each Azu
 
 #### Notes: 
 1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplace). 
-2.  Support for linking PowerPoint files to work items from within PowerPOint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
+2.  Support for linking PowerPoint files to work items from within PowerPoint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
  
 
 ## Prerequisites 
