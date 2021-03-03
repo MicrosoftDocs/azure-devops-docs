@@ -136,7 +136,7 @@ Figure out how many parallel jobs you need by first seeing how many parallel job
 
 1. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
 
-   ![Location of parallel jobs in organization settings](media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
+   :::image type="content" source="media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png" alt-text="Location of parallel jobs in organization settings.":::
 
    URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
 
@@ -316,10 +316,12 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 ### How do I qualify for the free tier of public projects?
 
-We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
+You qualify for the free tier limits for public projects if you meet both of these conditions:
 
 * Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/about-public-projects.md). 
 * Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
+
+For information on how to apply for the grant of free parallel jobs, see [](#how-much-do-parallel-jobs-cost?view=azure-devops&branch=pr-en-us-2472&tabs=ms-hosted).
 
 ### Can I assign a parallel job to a specific project or agent pool?
 
