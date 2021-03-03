@@ -1,6 +1,6 @@
 ---
 title: Search FAQs and problem solutions   
-description: Learn the answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps.
+description: Find answers to frequently asked questions (FAQs) and troubleshooting information about Search in Azure DevOps.
 ms.assetid: 
 ms.technology: devops-collab
 ms.topic: conceptual

@@ -211,7 +211,7 @@ For example:
 > - You can combine proximity operators with other filters and operators to narrow your search.
 > - There isn't support to customize the token distance, which defaults to five. 
 
-::: monker-end
+::: moniker-end
 
 <a name="codefunctions"></a>
 
@@ -272,7 +272,6 @@ Instead, you can type the functions and parameters directly into the search box.
 • validate NOT revisit finds files that contain the word validate but not the word revisit.
 • (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
 
-
 <a name="locationfunctions"></a>
 
 ## Functions to select projects, repositories, paths, and files
@@ -299,7 +298,7 @@ Narrow the search to specific files using the `file` or `ext` filters:
 
 ## Find code comments
 
-
+......................................
 
 ## Find related items or other terms
    
@@ -335,6 +334,6 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
-* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [Adhoc vs. managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 * [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
