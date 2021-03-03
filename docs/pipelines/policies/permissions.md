@@ -23,7 +23,7 @@ You can increase the security of your pipeline by fine-tuning your pipeline's pe
 
 This article focuses on using security groups when configuring pipeline permissions. You can also set permissions for individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
 
-To learn more about how Azure DevOps permissions work overall, including the permissions hierarchy, see G[et started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+To learn more about how Azure DevOps permissions work overall, including the permissions hierarchy, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
 
 
 ## Set permissions at the organization level
