@@ -157,7 +157,7 @@ sections:
           > [!div class="mx-imgBorder"]  
           > ![Choose columns dialog](media/excel/choose-columns.png)
 
-      - question: How do I resolve publishing issues? <a name="resolve-publishing-errors"></a>
+      - question: How do I resolve publishing issues?  
         answer: |
           To resolve publishing errors that arise when working in Excel, see one of the following topics: 
           - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
