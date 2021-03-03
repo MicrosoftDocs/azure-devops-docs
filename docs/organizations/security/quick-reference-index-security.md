@@ -162,7 +162,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
       **Set organization or collection-level permissions**  
        - [Set organization-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Enable Project-scoped Users Group](../projects/about-projects.md#project-scoped-user-group)  
+       - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group)  
    :::column-end:::
    :::column span="1":::
       **Set organization policies**  
