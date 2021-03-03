@@ -6,7 +6,7 @@ description: Understand how permissions and roles are used to securely manage bu
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: jukullam
 author: juliakm
-ms.date: 02/12/2018
+ms.date: 03/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,9 +16,35 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
 
-This topic provides a description of the permissions and roles used to secure operations. To learn how to add a user or group to Azure Pipelines, see [Users](set-permissions.md).
+Pipeline permissions are the permissions associated with a set of pipelines or one pipeline in an Azure DevOps project. They are designed to be more granular than Azure DevOps security groups at the organization level. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
+
+You can increase the security of your pipeline by fine-tuning your pipeline's permissions. Defaults for pipeline permissions can be set by default for all pipelines in a project and overridden for individual pipelines. 
+
+This article focuses on using security groups when configuring pipeline permissions. You can also set permissions for individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
+
+To learn more about how Azure DevOps permissions work overall, including the permissions hierarchy, see G[et started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+
+
+## Set permissions at the organization level
+## Set permissions at the project level 
+## Set permissions at the object-level 
+
+ 
+
+
+## Best practices
+
+
+### Change your pipeline permissions
+ 
+To make changes to your pipeline permissions, select the **Manage Security** in the contextual menu for pipelines. This option is available from the pipelines overview page and for individual pipelines.  
+ 
+:::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
+
+
+
+### MOVE ME
 
 For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and inheritance](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
 
