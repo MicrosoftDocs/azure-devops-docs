@@ -142,9 +142,11 @@ For example, we use Delivery Plans internally to share the schedule of Features.
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
-::: moniker range="azure-devops"  
+
 
 ## Best practices 
+
+::: moniker range="azure-devops"  
 
 - Use a consistent sprint schedule across your project teams and organization. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
 - Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. The **Target Date** will always override the **Iteration** end date on the plan.
@@ -153,10 +155,23 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Note the following: 
 - Plan views are limited to 12 to 13 months. 
-- Plan views are limited to a maximum of ten teams/backlogs
+- Plan views are limited to a maximum of 15 teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
 -  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
 - If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
+::: moniker-end  
+
+::: moniker range="azure-devops"  
+
+- Use a consistent sprint schedule across your project teams and organization. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
+- Minimize the number of fields you choose to display on your cards.  
+- Eliminate cross-team ownership of area paths. Cross-team area path ownership isn't recommended and can lead to undesirable edge cases.  
+
+Note the following: 
+- Plan views are limited to 12 to 13 months. 
+- Plan views are limited to a maximum of ten teams/backlogs
+- Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
+
 ::: moniker-end  
 
 
@@ -458,7 +473,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 
 ::: moniker range="azure-devops"  
 
-## View rollup of features and epics 
+## View rollup of features and epics - Plans (Preview) 
 
 Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollup, open your plan settings, choose **Fields**, and select **Show child rollup data**.
 
@@ -475,7 +490,7 @@ You can also view rollup from a backlog view as described in [Display rollup pro
 
 <a id="dependencies">  </a>
 
-## View dependencies
+## View dependencies - Plans (Preview) 
 
 To view dependencies for a work item, hover over the upper-right corner and choose the dependency-links :::image type="icon" source="../media/icons/dependency-links.png" border="false"::: icon. 
 
