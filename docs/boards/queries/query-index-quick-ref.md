@@ -137,7 +137,7 @@ You can list work items based on the following criteria...
 :::row:::
    :::column span="1":::
       - [Add a query](using-queries.md) 
-      - [Add a query chart](../../report/dashboards/charts.md)" 
+      - [Add a query chart](../../report/dashboards/charts.md) 
       - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
       - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
       - [Add a query folder](organize-queries.md) 
