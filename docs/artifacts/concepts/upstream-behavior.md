@@ -30,9 +30,9 @@ Users will still be able to toggle off the upstream behavior setting and consume
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
 
-## Applicable Scenarios
+## Applicable scenarios
 
-Below are few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
+The next section shows a few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
 
 ## Public versions will be blocked
 
