@@ -362,7 +362,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Support for custom fields in Rollup columns</td><td>Reporting</td><td>2020</td></tr> 
         <tr><td>Inline sprint burndown using story points</td><td>Reporting</td><td>2020</td></tr> 
         <tr><td>Short and readable Wiki page URLs</td><td>Wiki</td><td>2020</td></tr> 
-        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>2020</td></tr>   
+        <tr><td>Mermaid diagram support in wiki</td><td>Wiki</td><td>Future</td></tr>   
         <tr>
             <td rowspan="20"><a href="2019/sprint-157-update.md" data-raw-source="[3 September 2019](2019/sprint-157-update.md)">3 September 2019</a></td>
             <td>Get personalized notifications with @mention support in Slack apps</td><td>General</td><td>N/A</td>
@@ -4372,7 +4372,7 @@ Versions in the "Server" column are linked to the appropriate download location.
           <td>17.153.29522.3</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
           <td>17.153.29207.5</td>
         </tr>
@@ -4392,7 +4392,7 @@ Versions in the "Server" column are linked to the appropriate download location.
           <td>16.131.28601.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
           <td>Jan. 15, 2019</td>
           <td>16.131.28507.4</td>
         </tr>
