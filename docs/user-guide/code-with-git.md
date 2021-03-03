@@ -29,7 +29,7 @@ Install one of the following Git command-line tools:
 
 ## Get your code
 
-To get a copy of the source code, you clone the Git repo that contains the code. Cloning creates both a local copy of the source code so you can work with it, and all the version control information so Git can manage the source code.
+To get a copy of the source code, you clone the Git repo that contains the code. Cloning creates both a local copy of the source code so you can work with it. Cloning also creates all the version control information so Git can manage the source code.
 
 If you're just getting started with Azure Repos, your code might be in one of several places:
 
@@ -42,7 +42,7 @@ If you're just getting started with Azure Repos, your code might be in one of se
 
 If you just signed up for Azure DevOps Services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo, you can [clone it](#clone-the-repo-to-your-computer) and then add your code to that repo.
 
-If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then [clone](#clone-the-repo) the new repo and add your code there.
+If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, [clone](#clone-the-repo) the new repo and add your code there.
 
 ### The code is in my (or my organization's) Azure Repos Git repo
 
@@ -50,14 +50,14 @@ If the code is in your (or your organization's) Azure Repo, you can clone the Gi
 
 ### The code is in another Git repo
 
-If the code is in another Git repo, such as a GitHub repo or a different Azure Repo instance, you can import it into a new or existing empty Git repo. Follow the steps in [Import a Git repo](../repos/git/import-git-repository.md), and then return to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+If the code is in another Git repo, such as a GitHub repo or a different Azure Repo instance, you can import it into a new or existing empty Git repo. Follow the steps in [Import a Git repo](../repos/git/import-git-repository.md). Then, return to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
 
 ### The code is on my local computer and not yet in version control
 
 If your code is not yet in version control, you have a couple of options:
 
-- Create a new repository and add your code there. To do this, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal) and then come back to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
-- Add your code to an existing repository. To do this, jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+- Create a new repository and add your code there. To create a new repository and add your code there, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, come back to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+- Add your code to an existing repository. To do add your code to an existing repository, jump down to [Clone the repo](#clone-the-repo-to-your-computer).
 
 After the repository is cloned, we'll show you how to add your existing code to the repo.
 
@@ -84,7 +84,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   
    Git downloads a copy of the code, including all [commits](../git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
-4. Switch your directory to the repository that you just cloned.
+4. Switch your directory to the repository that you cloned.
 
    ```
    cd fabrikam-web
@@ -108,9 +108,9 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
    ```
   
-   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code in a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
 
-4. Switch your directory to the repository that you just cloned.
+4. Switch your directory to the repository that you cloned.
 
    ```
    cd contoso-demo
@@ -124,7 +124,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. The recommended [Git workflow](../git/gitworkflow.md) uses a new branch for every feature or fix that you work on.
 
-Create branches by using the `branch` command. This command creates a reference in Git for the new branch and a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
+Create branches by using the `branch` command. This command creates a reference in Git for the new branch. It also creates a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
 Git always adds new commits to the current local branch. Check what branch you're working on before you commit so that you don't commit changes to the wrong branch. 
 
@@ -139,9 +139,9 @@ git branch users/jamal/feature1
 git checkout users/jamal/feature1
 ```
 
-When you create a branch from the command line, the branch is based on the currently checked-out branch. If you just cloned the repository, the default branch (typically `main`) is checked out. Because you just cloned, your local copy of `main` has the latest changes.
+When you create a branch from the command line, the branch is based on the currently checked-out branch. When you clone the repository, the default branch (typically `main`) is checked out. Because you cloned, your local copy of `main` has the latest changes.
 
-If you're working with a previously cloned repository, ensure that you have checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
+If you're working with a previously cloned repository, ensure that you've checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
 
 ```
 git checkout main
@@ -222,7 +222,7 @@ This example shows the basic steps of creating and completing a pull request.
 
    Select **Create** to create the pull request.
 
-4. You can view the details of your pull request from the **Overview** tab, and view the changed files, updates, and commits in your pull request from the other tabs. Select **Complete** to begin the process of completing the pull request.
+4. You can view the details of your pull request from the **Overview** tab. You can also view the changed files, updates, and commits in your pull request from the other tabs. Select **Complete** to begin the process of completing the pull request.
 
    ![Pull request](../repos/get-started/media/pull-request.png)
 
@@ -243,15 +243,15 @@ This example shows the basic steps of creating and completing a pull request.
 
    ![Retrieve the clone URL](media/code-with-git-clone-repo.png)
 
-3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
+3. Open the Git command window, for example Git Bash on Git for Windows, and browse to the folder where you want the code from the repo that is stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
    ```
    git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
    ```
 
-   Git downloads a copy of the code, including all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
 
-4. Switch your directory to the repository that you just cloned.
+4. Switch your directory to the repository that you cloned.
 
    ```
    cd fabrikam-web
