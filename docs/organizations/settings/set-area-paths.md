@@ -1,5 +1,5 @@
 ---
-title: Define area paths for a project
+title: Define area paths and assign to a team
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.technology: devops-agile
