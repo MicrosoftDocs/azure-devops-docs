@@ -179,7 +179,7 @@ The following image illustrates a Kanban board filtered on the *web* keyword whi
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
 
 
@@ -363,7 +363,7 @@ To review features delivered across several teams, configure a delivery plan. De
 
 - [Add columns to your Kanban board](boards/add-columns.md) 
 - [Customize cards](boards/customize-cards.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
