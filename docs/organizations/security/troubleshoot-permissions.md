@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 02/18/2021
+ms.date: 03/03/2021
 --- 
 
 # Troubleshoot access and permission issues
@@ -32,6 +32,8 @@ Before using this guide, we recommend that you review the following articles:
 -->
 
 ## Common access and permission issues
+
+Permissions get set at one of the following
 
 See the following most common reasons a project member can’t access a project, service, or feature: 
 
@@ -78,13 +80,13 @@ Use permission tracing to determine why a user's permissions aren't allowing the
 
 ::: moniker range=" azure-devops"
 
-If a user is having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because of delayed changes. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve. For more information about user and access management, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md). 
+If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because of delayed changes. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve. For more information about user and access management, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md). 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-If a user is having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because the user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. For more information about assigning access levels or checking the access level of a user in your organization, see [About access levels](access-levels.md) and [Change access levels](change-access-levels.md).
+If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be because the user doesn't have the necessary access level. Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. For more information about assigning access levels or checking the access level of a user in your organization, see [About access levels](access-levels.md) and [Change access levels](change-access-levels.md).
 
 ::: moniker-end
 
