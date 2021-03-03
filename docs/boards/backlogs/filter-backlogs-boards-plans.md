@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2021
+ms.date: 02/26/2021
 ---
  
 # Interactively filter backlogs, boards, queries, and plans 

@@ -32,7 +32,7 @@ This error occurs when Team Explorer can't display the list of projects defined 
 As an administrator, you should check the event logs for the application-tier server to try to pinpoint the problem. Also, you can use the following table to determine whether the server is misconfigured.  
   
 > [!IMPORTANT]  
-> If a TF31002 error appears in addition to one or more TF31001 errors, you should also review the information in [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md).  
+> If a TF31002 error appears in addition to one or more TF31001 errors, you should also review the information in [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](../../organizations/projects/tf31002-unable-connect-tfs.md).  
   
 |Problem|Resolution|  
 |-------------|----------------|
@@ -65,4 +65,4 @@ As an administrator, you should check the event logs for the application-tier se
 4.  Delete the contents of the Cache directory, including all subfolders.  
   
 ## Related articles 
-- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)
+- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](../../organizations/projects/tf31002-unable-connect-tfs.md)

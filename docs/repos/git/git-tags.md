@@ -78,6 +78,8 @@ To view tags for a specific branch in the **Commits** view, navigate to your rep
 
 #### [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 You can view tags in the **Tags** view and in the **History** view.
 
 ### View tags in the Tags view
@@ -178,6 +180,8 @@ To create a tag directly from the commits view, right-click the desired tag and 
 
 #### [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 You can create both annotated and lightweight tags in Visual Studio from both the **Tags** view and the **History** view. To create an annotated tag, provide both a name and a message when creating the tag. To create a lightweight tag, omit the message and supply only a name.
 
 ### Create tags from the Tags view
@@ -257,6 +261,8 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 #### [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2017 Update 6.
 
 Right-click the tag to delete and choose **Delete Locally**
@@ -306,6 +312,8 @@ Right-click the tag to delete and choose **Delete Locally**
 
 #### [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. To create a branch from a tag, right-click the tag and choose **New Local Branch From**. You can also choose **Create Branch From Tag**.
 
    ![New branch from tag, Visual Studio.](media/git-tags/branch-from-tag-vs.png)
@@ -353,6 +361,8 @@ Right-click the tag to delete and choose **Delete Locally**
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To view the history for a tag, right-click the tag and choose **View History**.
 

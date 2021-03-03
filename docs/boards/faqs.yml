@@ -153,7 +153,7 @@ sections:
 
       - question: Can I define sprints and use them with my Kanban board? 
         answer: | 
-          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md). 
 
       - question: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
         answer: | 
