@@ -33,7 +33,14 @@ Before using this guide, we recommend that you review the following articles:
 
 ## Common access and permission issues
 
-Permissions get set at one of the following
+Permissions get set at one of the following levels:
+- object level
+- project level
+- organization or project collection level
+- security role
+- team administrator role
+
+To trace a permission from the web portal, open the permission or security page for the corresponding level. To learn how, see [Change individual permissions](change-individual-permissions.md).
 
 See the following most common reasons a project member can’t access a project, service, or feature: 
 
@@ -51,7 +58,7 @@ Less common reasons for limited access occur when one of the following events ha
 - Group rules governing the user’s access level or project membership  can restrict access. To troubleshoot, see Membership in a group that has less access or permissions.
 - Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operations](#rules-applied-to-a-work-item-type-that-restrict-permissions). 
 
-## Determine user's access level and subscription status
+## Determine a user's access level and subscription status
 
 You can assign users or groups of users to one of the following access levels:
 - Stakeholder
@@ -60,8 +67,6 @@ You can assign users or groups of users to one of the following access levels:
 - Visual Studio subscription
 
 For more information about access level restriction, see [Supported access levels](access-levels.md#supported-access-levels) in Azure DevOps.
-
-
 
 To use Azure DevOps features, users must be added to a security group with the appropriate permissions. They must also be granted access to the web portal. Limitations to select features are based on the access level and security group to which a user is assigned.
 
@@ -76,7 +81,7 @@ Otherwise, on the first day of the calendar month, users who haven't signed in t
 
 ## Trace a permission
 
-Use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
+Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions.
 
 ::: moniker range=" azure-devops"
 
@@ -184,6 +189,7 @@ Prior to customizing a process, we recommend that you review [Configure and cust
 
 For more information about work item type rules that apply toward restricting permissions, see:
 
+- [Apply rules to workflow states (Inheritance process)](../settings/work/apply-rules-to-workflow-states.md)
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
 
