@@ -28,7 +28,7 @@ To determine what level a permission is defined, see the [Permissions lookup gui
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

@@ -41,7 +41,7 @@ The following table describes supported artifact types in Azure Pipelines.
 
 Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Java. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages. Refer to the earlier table for specific guidance on each kind of artifact that we support.
 
-To view the permissions involved, see [feed permissions](https://docs.microsoft.com/azure/devops/artifacts/feeds/feed-permissions).
+To view the permissions involved, see [feed permissions](../../artifacts/feeds/feed-permissions.md).
 
 ## What's next?
 

@@ -1045,7 +1045,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::
