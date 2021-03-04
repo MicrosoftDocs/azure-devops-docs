@@ -52,7 +52,7 @@ To create a new feed, select **Create feed** from within your feed, and fill out
 
 * **Name**: The feed name.
 * **Visibility**: Choose who can upload or download packages to or from your feed.
-* **Upstream sources**: If you want to add upstream sources to your feed such as *npmjs.org* or *NuGet.org*, select **Include packages from common public sources**. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you want to create your feed without connectivity to public registries, uncheck the **Upstream sources** checkbox. You can add them later if you choose to.
+* **Upstream sources**: If you want to add upstream sources to your feed such as *npmjs.org* or *NuGet.org*, select **Include packages from common public sources**. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you want to create your feed without connectivity to public registries, clear the **Upstream sources** check box. You can add them later if you choose to.
 
 When you're done, select **Create**.
 
