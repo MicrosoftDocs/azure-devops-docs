@@ -348,7 +348,7 @@ Add reviewers to your pull request:
 
 1. Select **Overview** in the pull request.
 
-   :::image type="content" source="media/pull-requests/pull-request-overview-reviewers-new-nav.png" alt-text="Pull request overview":::    
+   :::image type="content" source="media/pull-requests/pull-request-overview-reviewers-new-nav.png" alt-text="Screenshot that shows the pull request Overview tab":::    
 
 2. Select the **Add** button in the **Reviewers** area.
 
@@ -389,7 +389,7 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-   :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the link items button.":::
+   :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the work items section.":::
 
 2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
@@ -400,7 +400,7 @@ Removing a link only removes the link between a work item to a pull request. Lin
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range=">= azure-devops-2019"
 Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
