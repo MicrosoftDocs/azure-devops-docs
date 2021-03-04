@@ -1,3 +1,15 @@
+---
+title:Announcement of an upcoming change to Azure DevOps organizations located in East Asia
+titleSuffix: Azure DevOps
+description: Announcement of an upcoming change to Azure DevOps organizations located in East Asia. 
+ms.topic: reference
+ms.technology: devops-misc
+ms.reviewer: chcomley
+ms.author: rajr
+author: rajr
+ms.date: 3/4/2021
+---
+
 # Announcement of an upcoming change to Azure DevOps organizations located in East Asia
 
 We want to let you know about of an upcoming change to Azure DevOps organizations located in East Asia. We do not anticipate that this change will impact your ability to access your Azure DevOps organization. As part of operating Microsoft cloud infrastructure, including physical infrastructure and connective network components, we may periodically transfer the locations within your selected geography hosting our cloud services, within the scope as outlined in our [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Over the next several months starting March 2021, the Azure DevOps engineering team will start migrating all Azure DevOps organizations and their related service assets within your chosen Asia Pacific geography from the East Asia region (Hong Kong) to the Southeast Asia region (Singapore).
