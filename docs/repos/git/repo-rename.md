@@ -83,7 +83,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Retrieve the clone URL](../get-started/media/clone-repo/clone-repo.png)
+   ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
 
 ::: moniker-end
 

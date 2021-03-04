@@ -63,7 +63,7 @@ After the repository is cloned, we'll show you how to add your existing code to 
 
 ## Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](..repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -108,7 +108,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
    ```
   
-   Git downloads a copy of the code in a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
+   Git downloads a copy of the code in a new folder for you to work with. The download includes all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
 
 4. Switch your directory to the repository that you cloned.
 
@@ -122,7 +122,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Work in a branch
 
-Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. The recommended [Git workflow](../git/gitworkflow.md) uses a new branch for every feature or fix that you work on.
+Git [branches](../repos/git/branch-policies-overview.md) isolate your changes from other work being done in the project. The recommended [Git workflow](../repos/git/gitworkflow.md) uses a new branch for every feature or fix that you work on.
 
 Create branches by using the `branch` command. This command creates a reference in Git for the new branch. It also creates a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch.
 
@@ -249,7 +249,7 @@ This example shows the basic steps of creating and completing a pull request.
    git clone https://dev.azure.com/contoso-ltd/MyFirstProject/_git/contoso-demo
    ```
 
-   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
+   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) from the repo.
 
 4. Switch your directory to the repository that you cloned.
 
@@ -303,6 +303,6 @@ Now you're ready to create a new branch, write some code, and do it again.
 
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json) or
-> [learn more about working with a Git repo](../git/index.yml).
+> [learn more about working with a Git repo](../repos/git/index.yml).
 
 
