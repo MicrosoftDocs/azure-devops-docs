@@ -80,11 +80,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the team project for your organization in Azure DevOps and select **Repos** > **Files**. If you don't have a team project, [create one now](../get-started/sign-up-invite-teammates.md). 
 
-   ![Repos files](../get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/clone-repo/repos-files.png)
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Retrieve the clone URL](../get-started/media/clone-repo/clone-repo.png)
+   ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
