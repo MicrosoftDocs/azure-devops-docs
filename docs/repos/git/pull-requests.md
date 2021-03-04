@@ -400,7 +400,7 @@ Removing a link only removes the link between a work item to a pull request. Lin
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2020"
+:::moniker range="<= azure-devops-2020"
 
 Link work items to your pull request:
 
@@ -610,7 +610,7 @@ For most teams, nearly all pull requests target the same branch, such as `main` 
 
 ## Complete the pull request
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
@@ -654,7 +654,7 @@ In all these cases, you still have the option of rebasing your branch locally an
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
