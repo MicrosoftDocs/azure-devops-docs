@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/30/2020
+ms.date: 03/04/2021
 ---
 
 # Add a custom pipelines task extension
@@ -47,6 +47,9 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- vss-extension.json             // extension's manifest
   ```
 - The [vss-web-extension-sdk package installation](https://github.com/Microsoft/vss-web-extension-sdk).
+
+> [!IMPORTANT]
+> The dev machine needs to run Node v10.21.0 to ensure that the code written is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
 
 ### Develop in Unix vs. Windows
 
