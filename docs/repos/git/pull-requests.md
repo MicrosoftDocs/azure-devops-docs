@@ -158,7 +158,7 @@ Select **Create a pull request** to go to a page where you can [enter your pull 
 Create a pull request directly from a work item linked to the branch.
 
 1. From **Backlogs** or **Queries** in the **Work** view, open the work item with the linked branch.
-1. In the **Development** area of the work item, select **Create a pull request**.
+2. In the **Development** area of the work item, select **Create a pull request**.
 
    ![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](media/pull-requests/create-pr-from-work-item.png)
 
@@ -183,13 +183,13 @@ Initiate pull requests directly from Visual Studio.
 
 1. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
-1. Select **View** > **Team Explorer** to open Team Explorer. You can also select Ctrl+\ then Ctrl+m.
+2. Select **View** > **Team Explorer** to open Team Explorer. You can also select Ctrl+\ then Ctrl+m.
 
-1. Select **Home**, then choose **Pull Requests**.
+3. Select **Home**, then choose **Pull Requests**.
 
    ![Pull Requests](media/pull-requests/pull-requests.png)
 
-1. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
+4. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
    ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
@@ -400,7 +400,8 @@ Removing a link only removes the link between a work item to a pull request. Lin
 
 ::: moniker-end
 
-:::moniker range=">= azure-devops-2019"
+:::moniker range=">= azure-devops-2020"
+
 Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
@@ -413,6 +414,7 @@ Link work items to your pull request:
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove button](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between a work item to a pull request. Links created in the branch or from commits stay in the work item.
+
 :::moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -490,36 +492,46 @@ Select **Files** to view the changes made to the source branch next to the targe
 >[!NOTE]
 >When viewing the difference for a _single selected file_, there is a size limit of 5 MB for the file. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a _collection of files_ in the Files view, the size limit for each file is 0.5 MB for performance reasons.
 
-:::moniker range="azure-devops"
+::: moniker range="azure-devops"
 
 :::image type="content" source="media/pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a pull request.":::
 
 Review previous versions of the code from the **All changes** drop-down list.
 
-:::moniker-end
+::: moniker-end
 
-:::moniker range="<= azure-devops-2020"
+::: moniker range="<= azure-devops-2020"
 
 ![Pull request files](media/pull-requests/pull-request-files.png)
 
 Review previous versions of the code from the **All updates** drop-down list.
 
-:::moniker-end
+::: moniker-end
 
 Every time Azure Repos updates the branch, it adds a new version to the list and on the **Updates** tab.
 
 The diff view updates as you select different changes.
 It shows the differences between the files in the selected and previous version in the pull request.
 
-:::moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 View code coverage metrics for changes within the pull request view. This ensures that you have adequately tested your changes through automated tests. Coverage status appears as a comment in the pull request overview. You can view details of coverage information for every code line that is changed in the file diff view.
 
-:::moniker-end
+::: moniker-end
 
 Catch up with a pull request after being away from it by stepping through changes made since your last review.
 
+:::moniker range="= azure-devops"
+
+:::image type="content" source="media/pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
+
+:::moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
 ![Pull request updates](media/pull-requests/pull-request-file-updates.png)
+
+::: moniker-end
 
 Browse a list of changes from the author using **Updates**.
 
@@ -530,8 +542,6 @@ You can select and view changes made in commits on the branch in **Commits**.
 ![Pull request commits](media/pull-requests/pull-request-commits.png)
 
 You can see a preview of how a markdown file will look by selecting the **View** button on the file, and then selecting **Preview** from the drop-down.
-
-
 
 ### Leave comments
 
@@ -600,7 +610,7 @@ For most teams, nearly all pull requests target the same branch, such as `main` 
 
 ## Complete the pull request
 
-:::moniker range="azure-devops"
+::: moniker range="azure-devops"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
@@ -642,7 +652,7 @@ There are a few situations when rebasing during pull request completion is not p
 
 In all these cases, you still have the option of rebasing your branch locally and pushing to the server, or squash-merging your changes when completing the pull request.
 
-:::moniker-end
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -684,7 +694,7 @@ In all these cases, you still have the option of rebasing your branch locally an
 
 ::: moniker-end
 
-:::moniker range= "< azure-devops-2019"
+::: moniker range= "<= tfs-2018"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
