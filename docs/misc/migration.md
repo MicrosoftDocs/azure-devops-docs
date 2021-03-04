@@ -3,7 +3,7 @@ title: Announcement of an upcoming change to Azure DevOps organizations located 
 titleSuffix: Azure DevOps
 description: Announcement of an upcoming change to Azure DevOps organizations located in East Asia. 
 ms.topic: reference
-ms.technology: devops-misc
+ms.technology: devops
 ms.reviewer: chcomley
 ms.author: rajr
 author: rajr
