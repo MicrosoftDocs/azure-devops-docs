@@ -5,7 +5,7 @@ ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 09/25/2020
-monikerRange: '>= azure-devops-2019'
+monikerRange: '>= tfs-2017'
 ---
 
 There are two types of feeds: project scoped and organization scoped feeds. All public feeds are project-scoped and they inherit the visibility settings of the hosting project.
@@ -34,7 +34,7 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
 
