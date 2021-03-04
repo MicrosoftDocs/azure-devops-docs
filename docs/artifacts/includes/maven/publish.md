@@ -27,19 +27,19 @@ Right click on your project, select *Run as* then *Maven Build*. Enter **package
 
 #### [Build](#tab/build/)
 
-    - Build your package
+- **Build your package**
      
-        ```Command
-        mvn build
-        ``` 
+    ```Command
+    mvn build
+    ``` 
 
 #### [Publish](#tab/publish/)
 
-    - Publish your package
+- **Publish your package**
     
-        ```Command
-        mvn deploy
-        ``` 
+    ```Command
+    mvn deploy
+    ```
 
 * * *
 
