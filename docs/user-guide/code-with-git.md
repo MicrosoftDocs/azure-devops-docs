@@ -42,7 +42,7 @@ If you're just getting started with Azure Repos, your code might be in one of se
 
 If you just signed up for Azure DevOps Services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo, you can [clone it](#clone-the-repo-to-your-computer) and then add your code to that repo.
 
-If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, [clone](#clone-the-repo) the new repo and add your code there.
+If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, [clone](#clone-the-repo-to-your-computer) the new repo and add your code there.
 
 ### The code is in my (or my organization's) Azure Repos Git repo
 
@@ -63,7 +63,7 @@ After the repository is cloned, we'll show you how to add your existing code to 
 
 ## Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](..repos/git/commits.md) and [branches](../repos/git/branch-policies-overview.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -82,7 +82,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://FabrikamFiber01@dev.azure.com/FabrikamFiber01/FabrikamFiber01-01/_git/FabrikamFiber01-01
    ```
   
-   Git downloads a copy of the code, including all [commits](../git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
+   Git downloads a copy of the code, including all [commits](../repos/git/commits.md), and [branches](../repos/git/branch-policies-overview.md) from the repo, into a new folder for you to work with.
 
 4. Switch your directory to the repository that you cloned.
 
