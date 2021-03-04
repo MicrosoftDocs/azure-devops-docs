@@ -1,5 +1,5 @@
 ---
-title: Pipeline permissions and security roles
+title: Set pipeline object-level permissions
 ms.topic: conceptual
 ms.custom: seodec18
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
@@ -16,14 +16,105 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
+Permissions in Azure DevOps are hierarchical and can be set at the organization, server (for on-premises), project, and object levels. Pipeline permissions are the object-level permissions associated with a set of pipelines or one pipeline in an Azure DevOps project. 
 
-Pipeline permissions are the permissions associated with a set of pipelines or one pipeline in an Azure DevOps project. They are designed to be more granular than Azure DevOps security groups at the organization level. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
+This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** menu:
 
-You can increase the security of your pipeline by fine-tuning your pipeline's permissions. Defaults for pipeline permissions can be set by default for all pipelines in a project and overridden for individual pipelines. 
+    - pipeline permissions
+    - release permissions
+    - task group permissions
+    - library permissions
+    - service connection permissions
+    - deployment pool permissions
+    - environment permissions
 
-This article focuses on using security groups when configuring pipeline permissions. You can also set permissions for individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
+Object-level permissions are designed to be more granular than organization-level permissions. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
 
-To learn more about how Azure DevOps permissions work overall, including the permissions hierarchy, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+You can increase the security of your pipeline by fine-tuning the object-level permissions associated with your pipeline. To learn more about best practices for pipeline security, see [Security Azure Pipelines](../security/overview.md). 
+
+To learn more about how Azure DevOps permissions work overall, including how the permissions hierarchy, see [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md).
+
+
+
+## Update pipeline permissions
+
+You can update pipeline permissions with security groups or by adding individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
+
+When it comes to security, there are different best practices and levels of permissiveness. 
+
+* In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
+
+* Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
+
+* We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
+
+
+### Set pipeline permissions at the project-level
+
+To set the permissions at project level for all pipelines, choose **Manage security** from contextual menu for all pipelines.
+
+1. In your project, go to **Pipelines** > **Pipelines**.
+    
+    :::image type="content" source="media/pipelines-navigation.png" alt-text="Select Pipelines from the menu.":::
+    
+1. Select **Manage security** from the contextual menu. 
+
+    :::image type="content" source="media/manage-security-all-pipelines.png" alt-text="Manage security for all pipelines in a project. ":::
+
+1. Modify the permissions associated with a [Azure DevOps group](../../organizations/security/permissions.md) (example: Build Administrators) or [individual user](set-permissions.md). 
+
+
+
+### Set pipeline permissions for one pipeline
+
+To set or override the permissions for a specific pipeline, choose **Security** from the context menu of the individual pipeline.
+
+1. In your project, go to **Pipelines** > **Pipelines**.
+    
+    :::image type="content" source="media/pipelines-navigation.png" alt-text="Select Pipelines from the menu.":::
+
+2. Open an individual pipeline. 
+
+
+ 
+:::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
+
+
+
+
+### Pipeline permissions descriptions
+ 
+These permissions are defined for pipelines. All of these can be set for both all pipelines in a project or for an individual pipeline.
+
+> [!div class="mx-tdCol2BreakAll"]
+> | Permission | Description |
+> |------------|-------------|
+> | **Administer build permissions** | Can change any of the other permissions listed here. |
+> | **Queue builds** | Can queue new builds. |
+> | **Delete build pipeline** | Can delete build pipeline(s). |
+> | **Delete builds** | Can delete builds for a pipeline. Builds that are deleted are [retained](retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
+> | **Destroy builds** | Can delete builds from the **Deleted** tab. |
+> | **Edit build pipeline** | Can create pipelines and save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
+> | **Edit build quality** | Can add tags to a build. |
+> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../repos/tfvc.md#gated). This does not apply to PR builds. |
+> | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
+> | **Stop builds** | Can stop builds queued by other team members or by the system.  |
+> | **View build pipeline** | Can view build pipeline(s). |
+> | **View builds** | Can view builds belonging to build pipeline(s). |
+> | **Update build information** | It is recommended to leave this alone. It's intended to enable service accounts, not team members. |
+> | **Manage build qualities** | _Only applies to XAML builds_ |
+> | **Manage build queue** | _Only applies to XAML builds_ |
+
+Default values for these permissions are set for team
+project collections and project groups. For example,
+<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
+<strong>Build Administrators</strong> are given all of the above permissions by
+default.
+
+
+
+
+
 
 
 ## Set permissions at the organization level
@@ -35,12 +126,6 @@ To learn more about how Azure DevOps permissions work overall, including the per
 
 ## Best practices
 
-
-### Change your pipeline permissions
- 
-To make changes to your pipeline permissions, select the **Manage Security** in the contextual menu for pipelines. This option is available from the pipelines overview page and for individual pipelines.  
- 
-:::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
 
 
 
@@ -103,45 +188,11 @@ as at either project level or individual entity level.
 
 Build and YAML pipeline permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
 
-To set the permissions at project level for all pipelines in a project, choose **Security** from the action bar on the main page of Builds hub.
-
-To set or override the permissions for a specific pipeline, choose **Security** from the context menu of the pipeline.
-
-The following permissions are defined for pipelines. All of these can be set at both the levels.
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Permission | Description |
-> |------------|-------------|
-> | **Administer build permissions** | Can change any of the other permissions listed here. |
-> | **Queue builds** | Can queue new builds. |
-> | **Delete build pipeline** | Can delete build pipeline(s). |
-> | **Delete builds** | Can delete builds for a pipeline. Builds that are deleted are [retained](retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
-> | **Destroy builds** | Can delete builds from the **Deleted** tab. |
-> | **Edit build pipeline** | Can create pipelines and save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
-> | **Edit build quality** | Can add tags to a build. |
-> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../repos/tfvc.md#gated). This does not apply to PR builds. |
-> | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
-> | **Stop builds** | Can stop builds queued by other team members or by the system.  |
-> | **View build pipeline** | Can view build pipeline(s). |
-> | **View builds** | Can view builds belonging to build pipeline(s). |
-> | **Update build information** | It is recommended to leave this alone. It's intended to enable service accounts, not team members. |
-> | **Manage build qualities** | _Only applies to XAML builds_ |
-> | **Manage build queue** | _Only applies to XAML builds_ |
 
 
-Default values for all of these permissions are set for team
-project collections and project groups. For example,
-<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
-<strong>Build Administrators</strong> are given all of the above permissions by
-default.
+STOPPED
 
-When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
-* In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
-
-* Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
-
-* We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
 
 ## Release permissions
 
