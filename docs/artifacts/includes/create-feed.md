@@ -5,7 +5,7 @@ ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 09/25/2020
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ---
 
 There are two types of feeds: project scoped and organization scoped feeds. All public feeds are project-scoped and they inherit the visibility settings of the hosting project.
