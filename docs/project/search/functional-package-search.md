@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 03/03/2021
+ms.date: 03/04/2021
 ---
 
 # Functional artifact or package search
@@ -17,16 +17,14 @@ ms.date: 03/03/2021
 
 Package Search is automatically available to users of Azure DevOps Services. By using Package Search, you can do the following tasks:
 
-* **Search package by title and description**: Quickly and easily find relevant packages by using free text search on title and description. Narrow your search by using Boolean operators and combine search criteria. 
+- **Search package by title and description**: Quickly and easily find relevant packages by using free text search on title and description. Narrow your search by using Boolean operators and combine search criteria. 
 
-> [!div class="mx-imgBorder"]  
-> [Web portal package search](media/shared/pkg-srch-u2.png)
+  :::image type="content" source="media/shared/pkg-srch-u2.png" alt-text="Web portal package search":::
 
-* **Search across all of your organization feeds**: Search feeds across the organization. Narrow your search by using feed, view, and package type filters. Use wildcards to widen your search and 
+- **Search across all of your organization feeds**: Search feeds across the organization. Narrow your search by using feed, view, and package type filters. Use wildcards to widen your search and 
   Boolean operators to fine-tune it. 
 
-> [!div class="mx-imgBorder"]  
-> [Web portal package search across organization feeds](media/shared/pkg-srch-u1.png)
+  :::image type="content" source="media/shared/pkg-srch-u1.png" alt-text="Web portal package search across organization feeds":::
 
 ## Prerequisites
 
@@ -118,6 +116,7 @@ You can use APIs to extend or supplement the capabilities listed in this article
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [What are feeds?](../../artifacts/concepts/feeds.md)
 
 ## Related articles
 
@@ -125,4 +124,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
