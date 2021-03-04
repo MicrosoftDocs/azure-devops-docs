@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2021
+ms.date: 03/04/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -330,6 +330,7 @@ Search remembers the state of the filter pane, configuration of the work item vi
 
 ## Find backlog comments
 
+.........
 
 ## Search Work Items with REST API
 
@@ -349,5 +350,5 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search artifacts and packages](functional-package-search.md)
 * [Search wiki](../wiki/search-wiki.md)
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 

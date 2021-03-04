@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2021
+ms.date: 03/04/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -125,73 +125,328 @@ In the following table, you find some other search functions.
 | Install Code Search                          | Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) to install Code Search.   |
 | View file history and compare versions       | Go to **Repos** > **Files**, highlight your file, and then select **History**.              |
 
-::: moniker-end
-
 ## Features for Search
 
-|**Search feature**  |**Usage** |**Example**  |
-|---------|---------|---------|
-|**Keyword searches**     | Search for two keywords with *OR*        |  validate OR release        |
-|**Exact match**  | Enclose a keyword or phrase in double-quotes        | "Client not found"        |
-|**Work item ID**   | enter *work item #*   | 8765921     |
-| Search for a work item as you type | As you enter your work item, .... |    843*...*                     |
-|**Wildcard searches**    | `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser.        | *alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox*   |
-|**Use wildcards in combination**   | You can use wildcard characters anywhere in your search string except as a prefix.         | You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest.        |
-|**Boolean operator searches**   |  Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.      | validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
-· validate NOT revisit finds files that contain the word validate but not the word revisit.
-·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed. |
-|**Search across projects**    | Search across all the projects, teams, and repositories to which you have access.        |         |
-|**Specific field search**     | Search for a specific field within a work item        |         |
-|**Search discussions**     |         |         |
-|**Functions to find specific types of code**     |         |         |
-| **Search for commits in branches** |   |     |
+---  
+:::row:::
+   :::column span="1":::
+      <br/>**Search feature** 
+   :::column-end:::
+   :::column span="2":::
+      **Usage**
+   :::column-end:::
+   :::column span="2":::
+      <br/>**Example**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=" azure-devops"
+:::row:::
+   :::column span="1":::
+      <br/>**Proximity search** 
+   :::column-end:::
+   :::column span="2":::
+      You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.
+   :::column-end:::
+   :::column span="2":::
+      <br/>BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-|**Search for boards, backlogs, queries, and sprint from the instant search box**     |  Access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. You can also search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box.      |  Enter board name in the search box.       |
-|**Open work items from search**     |         |         |
-|**Search for a file or folder in commit history**     |         |         |
-|**Scope code search using path filters** |       |
-| **Quick navigation in Azure Boards search** |Search and find any item within Azure Boards without having to switch tabs for your search. | Type the keyboard shortcut `/` on Azure Boards|
-|**Access recently visited wiki pages**   |Access recently visited wiki pages by clicking on the search box in Wiki hub   | invoke the search box by typing the keyboard shortcut `/` |
-|**Instant search for wiki**   | View the wiki search results as you type in the search box.  | For example: *getting started* results in all the wiki pages that contain *getting started*.  |
-::: moniker range=" azure-devops" 
-|**Proximity search**     | You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.              |  BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.   |
-::: moniker-end
+---
 ::: moniker range=" >= azure-devops-2020"
-|**Quick navigation**    |  Search for boards, backlogs, queries, and sprint from the instant search box.       |         |
-|**Instant search for work items**     | Enter the work item ID in the search box.        |  The work item opens in a modal dialog, providing access to read and edit the work item.       |
+:::row:::
+   :::column span="1":::
+      <br/>**Quick navigation** 
+   :::column-end:::
+   :::column span="2":::
+      Search for boards, backlogs, queries, and sprint from the instant search box.
+   :::column-end:::
+   :::column span="2":::
+      <br/>...
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-::: moniker range=" >= azure-devops-2019"
-|**Special character searches**    |  You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: () []*?) by enclosing the search string within double-quotes.     |  `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux".     | 
-|**Expanded search box with filters and operators**    |         |         |
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Instant search for work items** 
+   :::column-end:::
+   :::column span="2":::
+      Enter the work item ID in the search box.
+   :::column-end:::
+   :::column span="2":::
+      <br/>The work item opens in a modal dialog, providing access to read and edit the work item.
+   :::column-end:::
+:::row-end:::
 ::: moniker-end
-
+---
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      <br/>**Keyword searches** 
+   :::column-end:::
+   :::column span="2":::
+      Search for two keywords with *OR*
+   :::column-end:::
+   :::column span="2":::
+      <br/>validate OR release
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Exact match** 
+   :::column-end:::
+   :::column span="2":::
+      Enclose a keyword or phrase in double-quotes
+   :::column-end:::
+   :::column span="2":::
+      <br/>"Client not found"
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Work item ID** 
+   :::column-end:::
+   :::column span="2":::
+      enter *work item #* 
+   :::column-end:::
+   :::column span="2":::
+      <br/>8765921 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Wildcard searches** 
+   :::column-end:::
+   :::column span="2":::
+      `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser. 
+   :::column-end:::
+   :::column span="2":::
+      <br/>*alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox* 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Use wildcards in combination** 
+   :::column-end:::
+   :::column span="2":::
+      You can use wildcard characters anywhere in your search string except as a prefix.
+   :::column-end:::
+   :::column span="2":::
+      <br/>You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Boolean operator searches** 
+   :::column-end:::
+   :::column span="2":::
+      Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.
+   :::column-end:::
+   :::column span="2":::
+      <br/>validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
+· validate NOT revisit finds files that contain the word validate but not the word revisit.
+·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Search across projects** 
+   :::column-end:::
+   :::column span="2":::
+      Search across all the projects, teams, and repositories to which you have access. 
+   :::column-end:::
+   :::column span="2":::
+      <br/>Search box search 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Specific field search** 
+   :::column-end:::
+   :::column span="2":::
+      Search for a specific field within a work item. 
+   :::column-end:::
+   :::column span="2":::
+      <br/>Search box within work item 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Search discussions** 
+   :::column-end:::
+   :::column span="2":::
+      ... 
+   :::column-end:::
+   :::column span="2":::
+      <br/>... 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Functions to find specific types of code** 
+   :::column-end:::
+   :::column span="2":::
+      ... 
+   :::column-end:::
+   :::column span="2":::
+      <br/>... 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Search for commits in branches** 
+   :::column-end:::
+   :::column span="2":::
+      ... 
+   :::column-end:::
+   :::column span="2":::
+      <br/>... 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Special character searches** 
+   :::column-end:::
+   :::column span="2":::
+      You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: () []*?) by enclosing the search string within double-quotes. 
+   :::column-end:::
+   :::column span="2":::
+      <br/> `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux". 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Expanded search box with filters and operators** 
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Search for boards, backlogs, queries, and sprint from the instant search box** 
+   :::column-end:::
+   :::column span="2":::
+      Access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. You can also search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box.
+   :::column-end:::
+   :::column span="2":::
+      Enter board name in the search box.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Open work items from search** 
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Search for a file or folder in commit history** 
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Scope code search using path filters** 
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Quick navigation in Azure Boards search** 
+   :::column-end:::
+   :::column span="2":::
+      Search and find any item within Azure Boards without having to switch tabs for your search.
+   :::column-end:::
+   :::column span="2":::
+      Type the keyboard shortcut `/` on Azure Boards
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Access recently visited wiki pages** 
+   :::column-end:::
+   :::column span="2":::
+      Access recently visited wiki pages by clicking on the search box in Wiki hub.
+   :::column-end:::
+   :::column span="2":::
+      invoke the search box by typing the keyboard shortcut `/`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      <br/>**Instant search for wiki** 
+   :::column-end:::
+   :::column span="2":::
+      View the wiki search results as you type in the search box.
+   :::column-end:::
+   :::column span="2":::
+      *getting started* results in all the wiki pages that contain *getting started*.
+   :::column-end:::
+:::row-end:::
+---
 
 ## Extensions for Search
 
 The following extensions for Search are available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/):
 
-- Create Azure Search Objects
-- Azure Search Extension
-- Azure Search Extension for Azure Pipelines
-- Find similar work items
-
+- [Create Azure Search Objects](https://marketplace.visualstudio.com/items?itemName=mikaelsnavy.azdo-azure-search): Help deploy Azure Search objects in your release pipelines. This enables definition and deployment of search objects in code.
+- [Azure Search Extension](https://marketplace.visualstudio.com/items?itemName=joalmeid.azsearch-ado-extension): Azure Cognitive Search Extension for your CI/CD related pipelnes on Azure Devops.
+- [Azure Search Extension for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ashitabh.azsearch-ado-extension-V2): Azure Cognitive Search Extension for your CI/CD related pipelines on Azure Devops.
+- [Find similar work items](https://marketplace.visualstudio.com/items?itemName=tschmiedlechner.find-similar-workitems): Adds an additional tab to the workitem edit form to search existing workitems that are semantically similar to the current one.
 ::: moniker range=">= tfs-2017 < azure-devops"  
 - Work Item Search (built-in)
 - Wiki Search (built-in)
-
 ::: moniker-end
-
 ::: moniker range=">= azure-devops-2019" 
-
-- Code Search 
-- Azure Paths Search
-- GitSense
-- Wiql Editor
-- ConfigTransformation
-- TimeBox Integration Proof of Concept
-- AzDo Team Report
-- Pull Request Search 
-
+- [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Fast, flexible, and accurate search across all your code.
+- [Azure Paths Search](https://marketplace.visualstudio.com/items?itemName=wavemotionio.ado-areapaths): Search the area paths and iteration paths in Azure DevOps.
+- [GitSense](https://marketplace.visualstudio.com/items?itemName=gitsense.gitsense): Boost productivity and work better together with always relevant searches, advanced Git browsing, smarter code reviews and more.
+- [Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor): Search work items with wiql queries.
+- [ConfigTransformation](https://marketplace.visualstudio.com/items?itemName=saeidbabaei.configtransformsaeid): Quickly and easily transform your configuration files.
+- [TimeBox Integration Proof of Concept](https://marketplace.visualstudio.com/items?itemName=NSerioVSMPublisher.timebox-prof-of-concept-integration): Tools to help you and your team do great things everyday.
+- [AzDo Team Report](https://marketplace.visualstudio.com/items?itemName=AravindMungara.vsts-extensions-myExtensions): Display test results by Area. Includes trend, search test results on various releases, view history, and view error logs.
+- [Pull Request Search](https://marketplace.visualstudio.com/items?itemName=ottostreifel.pull-request-search-onprem): Rich pull request search experience.
 ::: moniker-end
 
 [!INCLUDE [search-limitations](includes/search-limitations.md)]
@@ -212,4 +467,4 @@ The following extensions for Search are available in the [Visual Studio Marketpl
 * [Work item search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
 * [Search wiki](../wiki/search-wiki.md)
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)

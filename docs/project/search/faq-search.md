@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: sunar
 author: chcomley
-ms.date: 02/20/2021
+ms.date: 03/04/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -137,5 +137,5 @@ For example, while looking for methods like App_App1, App_App2, and so on, inste
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
 * [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 

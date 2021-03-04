@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 02/22/2021
+ms.date: 03/04/2021
 ---
 
 # Functional code search  
@@ -112,7 +112,7 @@ Use simple search strings for words or phrases. The default is a whole word sear
 Words separated by spaces, and not wrapped in double-quotes, are treated as separate search terms and the search will expect to find an occurrence of all the words (in other words, it assumes the `AND` operator between words).
 
 Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
-<!---> IS THIS TRUE?
+<!--- IS THIS TRUE?
 When you search from inside a project, the default is to search only within that project. You can go up to higher levels to broaden your search.
 -->
 
@@ -267,10 +267,10 @@ Instead, you can type the functions and parameters directly into the search box.
 
 ## Find two or more keywords using Boolean operators
 
-• validate AND revisit finds files that contain both the words validate and revisit. Note that AND is the default operator, and so this is equivalent to the search string validate revisit.
-• validate OR revisit finds files that contain either of the words validate or revisit.
-• validate NOT revisit finds files that contain the word validate but not the word revisit.
-• (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
+- validate AND revisit finds files that contain both the words validate and revisit. AND is the default operator, and so this is equivalent to the search string validate revisit.
+- validate OR revisit finds files that contain either of the words validate or revisit.
+- validate NOT revisit finds files that contain the word validate but not the word revisit.
+- (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
 
 <a name="locationfunctions"></a>
 
@@ -335,5 +335,5 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
 * [Adhoc vs. managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
