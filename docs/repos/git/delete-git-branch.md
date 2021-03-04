@@ -35,8 +35,8 @@ monikerRange: '<= azure-devops'
 **Visual Studio 2015 & 2017**
 
 1. Open up Team Explorer and go to the **Branches** view.
-2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
-3. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask if you're sure you want to delete the branch so you don't possibly lose work.
+2. Locate the branch you want to delete. Remember that you can't delete a branch you're currently working in.
+3. Right-click the branch name and select **Delete**. Visual Studio will ask if you're sure you want to delete the branch if you have unpublished changes.
 
     ![Deleting a branch in Visual Studio](media/vsbranchdelete.gif)
 
