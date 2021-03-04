@@ -172,4 +172,4 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
 ## Related articles
 
 -  [Azure Boards FAQs](../../faqs.yml) 
--  [Excel FAQs](faqs.md)  
+-  [Excel FAQs](faqs.yml)  

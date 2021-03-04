@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 02/04/2021
+ms.date: 03/03/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -16,7 +16,7 @@ hide_comments: true
 \| <a href="/azure/devops/release-notes/2020/sprint-176-update" target="blank">What's New</a>
 \| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
 \| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
-\| <a href="/azure/devops/?view=azure-devops" target="blank">Documentation</a> \|
+\| <a href="/azure/devops/?view=azure-devops&preserve-view=true" target="blank">Documentation</a> \|
 
 ---
 
@@ -36,13 +36,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
     <tr>
-<td rowspan="1"><strong>2020 Q4</strong></td>
-<td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td><a href="https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/">In Preview</a></td><td>Boards</td><td>Future</td></tr>
+<td rowspan="2"><strong>2020 Q4</strong></td>
+<td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676 data-raw-source="[Azure DevOps Service Tag Released](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676)">Azure DevOps Service Tag Released</a></td><td><a href="https://devblogs.microsoft.com/devops/azure-devops-service-tag-released/">GA</a></td><td>Admin</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td><a href="https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/">In Preview</a></td><td>Boards</td><td>Future</td></tr>
 <tr>
 <td rowspan="7"><strong>2021 Q1</strong></td>
-<td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td><td>In Progress</td><td>Admin</td><td>Future</td>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td>In Progress</td><td>Admin</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Sign-in attempts, PAT and SSH management events in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Sign-in attempts, PAT and SSH management events in the Audit Log</a></td><td>In Progress</td><td>Admin</td><td>Future</td></tr>
+<td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Sign-in attempts, PAT and SSH management events in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Sign-in attempts, PAT and SSH management events in the Audit Log</a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-182-update">GA</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>In Progress</td><td>Boards</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td>In Progress</td><td>Pipelines</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>In Progress</td><td>Pipelines</td><td>2020</td></tr>
@@ -82,8 +83,18 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="6"><a href="2021/sprint-183-update.md" data-raw-source="[24 February 2021](2021/sprint-183-update.md)">24 February 2021</a></td>
+    <td>PAT lifecycle management API (private preview)</td><td>General</td><td>Future</td>
+    </tr>
+    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>Future</td></tr>
+    <tr><td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
+    <tr><td>Hide Organization Settings</td><td>General</td><td>Future</td></tr>
+    <tr><td>Approver details available in audit logs</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Changes to Azure Artifacts upstream behavior</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
+    <tr>
     <td rowspan="5"><a href="2021/sprint-182-update.md" data-raw-source="[04 February 2021](2021/sprint-182-update.md)">04 February 2021</a></td>
-    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td>
+    <td>Limited people-picker search and tagging</td><td>General</td><td>Future</td>
     </tr>
     <tr><td>Removed items on work items hub</td><td>Boards</td><td>Future</td></tr>
     <tr><td>Delivery Plans 2.0: Increase team limit to 15</td><td>Boards</td><td>Future</td></tr>
@@ -4362,7 +4373,7 @@ Versions in the "Server" column are linked to the appropriate download location.
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true)">2020 RTW</a></td>
           <td>Oct. 6, 2020</td>
           <td>18.170.30525.1</td>
         </tr>
