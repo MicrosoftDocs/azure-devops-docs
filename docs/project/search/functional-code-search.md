@@ -298,7 +298,7 @@ Narrow the search to specific files using the `file` or `ext` filters:
 
 ## Find code comments
 
-......................................
+You can search a code file based on a comment you wrote in the file by entering "comment.:todo".
 
 ## Find related items or other terms
    
