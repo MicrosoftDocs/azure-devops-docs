@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 > [!NOTE]
 > We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
 
-Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
+Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
 
 ## How do I publish artifacts?
 
