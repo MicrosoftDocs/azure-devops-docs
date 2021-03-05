@@ -6,6 +6,7 @@ ms.topic: reference
 ms.technology: devops-accounts
 ms.reviewer: chcomley
 ms.author: rajr
+ms.custom: references_regions
 author: rajr
 ms.date: 3/4/2021
 monikerRange: 'azure-devops'
