@@ -4,7 +4,7 @@ description: Quickly start hosting python packages with Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.date: 02/26/2021
-monikerRange: '=azure-devops'
+monikerRange: '>= tfs-2017'
 ms.custom: devx-track-python
 ---
 
