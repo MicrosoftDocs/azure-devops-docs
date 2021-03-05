@@ -87,7 +87,7 @@
     },
     {
       "source_path": "docs/artifacts/maven/publish.md",
-      "redirect_url": "docs/artifacts/get-started-maven",
+      "redirect_url": "azure/artifacts/get-started-maven",
       "redirect_document_id": false
     },
     {
