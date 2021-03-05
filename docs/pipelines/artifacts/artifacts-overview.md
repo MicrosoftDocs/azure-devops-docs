@@ -1,23 +1,16 @@
 ---
 title: Artifacts in Azure Pipelines
 ms.custom: seodec18
-description: Learn how to publish and consume many different types of packages with Azure Pipelines
+description: Supported Artifacts in Azure Pipelines 
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 02/26/2020
+ms.date: 03/05/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Overview of Artifacts in Azure Pipelines
+# Artifacts in Azure Pipelines overview
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
-Azure Artifacts allow you to publish and consume different types of packages to your feed as well as to the public package managers (e.g. NuGet.org, npmjs.com). You can use Azure Pipelines to publish build artifacts, help store build outputs and integrate files between your pipeline steps. You can then add onto, build, test, or deploy those artifacts.
-
-> [!NOTE]
-> Build and Release artifacts remains available as long as that Build is retained in the system. For more information on retaining Build and Release artifacts, see the [Retention Policies](../policies/retention.md) documentation.
+Azure Artifacts enable developers to consume and publish different types of packages to Artifacts feeds and public registries such as NuGet.org and npmjs.com. You can use Azure Artifacts in conjunction with Azure Pipelines to deploy packages, publish build artifacts, or integrate files between your pipeline stages to build, test, or deploy your application.
 
 ## Supported artifact types
 
