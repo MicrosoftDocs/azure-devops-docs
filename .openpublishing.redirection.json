@@ -88,7 +88,7 @@
     {
       "source_path": "docs/artifacts/maven/publish.md",
       "redirect_url": "docs/artifacts/get-started-maven.md",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/symbols/index.md",
