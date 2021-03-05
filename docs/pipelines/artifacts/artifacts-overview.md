@@ -16,19 +16,15 @@ Azure Artifacts enable developers to consume and publish different types of pack
 
 The following table describes supported artifact types in Azure Pipelines.
 
-| Supported artifact types                              | Description                                                                                                                                                           |
-|------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------                                              |
-| [Build artifacts](build-artifacts.md)                 | Build artifacts are the files that your build produce. E.g. .dll, .exe, and .PDB symbols files.             |
-| [Pipeline artifacts](pipeline-artifacts.md) | You can use pipeline artifacts to help store build outputs and move intermediate files between jobs in your pipeline. Pipeline artifacts are tied to the pipeline that they're created in. You can use them within the pipeline and download them from the build, as long as the build is retained. Pipeline artifacts are the new generation of build artifacts. They take advantage of existing services to dramatically reduce the time it takes to store outputs in your pipelines.                                                                                                                                            |
-| [Maven](maven.md)                          | You can publish Maven artifacts to Azure Artifacts feeds or Maven repository.                                          |
-| [npm](npm.md)                              | You can publish npm packages to Azure Artifacts feeds or npm registry.                                                 |
-| [NuGet](nuget.md)                          | You can publish NuGet packages to Azure Artifacts feeds or NuGet repository.                                           |
-| [PyPI](pypi.md)                            | You can publish Python packages to Azure Artifacts feeds or PyPI repository.                                           |
-| [Symbols](symbols.md)                      | [Symbol files](../../artifacts/concepts/symbols.md) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
-| [Universal packages](universal-packages.md)| Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts.                                                                    |
-
-> [!NOTE]
-> Artifacts can be produced by different types of sources. See [Release Artifacts and Artifact sources](../release/artifacts.md) to learn about the different types of sources and how to configure your Azure pipelines to deploy from them.
+|         Supported artifact type            |                                                 Description                                                            |
+|    -------------------------------------------------------------------------------------------------------------------------------------------------------------    |
+| [Build artifacts](build-artifacts.md)      | The files produced by a build such as .dll, .exe, or .PDB files.                                                       |
+| [Maven](maven.md)                          | Publish Maven packages to Azure Artifacts feeds or Maven central repository.                                           |
+| [npm](npm.md)                              | Publish npm packages to Azure Artifacts feeds or npm registry.                                                         |
+| [NuGet](nuget.md)                          | Publish NuGet packages to Azure Artifacts feeds or NuGet public repository.                                            |
+| [PyPI](pypi.md)                            | Publish Python packages to Azure Artifacts feeds or PyPI registry.                                                     |
+| [Symbols](symbols.md)                      | Symbol files contain debugging information about the compiled executables. You can publish symbols to a symbol server in Azure Artifacts to debug your application. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
+| [Universal packages](universal-packages.md)| Publish Universal Packages to Azure Artifacts feeds.                                                                   |
 
 ## How do I publish and consume artifacts?
 
