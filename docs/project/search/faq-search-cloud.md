@@ -32,7 +32,7 @@ Ensuring that you can find the most meaningful and actionable results as fast as
 
 ## Q: How do I search backlog comments?
 
-A: 
+A: Enter in the search box, "comment:todo".
 
 ## Q: How do I search company-wide for published internal NuGet packages?
 
