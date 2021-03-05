@@ -1,13 +1,14 @@
 ---
-title: Announcement of an upcoming change to Azure DevOps organizations located in East Asia
+title: Announcement of upcoming change to Azure DevOps organizations located in East Asia
 titleSuffix: Azure DevOps
 description: Announcement of an upcoming change to Azure DevOps organizations located in East Asia. 
 ms.topic: reference
-ms.technology: devops
+ms.technology: devops-accounts
 ms.reviewer: chcomley
 ms.author: rajr
 author: rajr
 ms.date: 3/4/2021
+monikerRange: 'azure-devops'
 ---
 
 # Announcement of an upcoming change to Azure DevOps organizations located in East Asia
