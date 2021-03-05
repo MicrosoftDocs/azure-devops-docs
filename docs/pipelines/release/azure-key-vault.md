@@ -134,8 +134,8 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
     :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Configuring the Azure Key Vault task":::
 
-> [!TIP]
-> YAML requires a specific spacing and indentation to work. Make sure your YAML file is indented properly.
+    > [!TIP]
+    > YAML requires a specific spacing and indentation to work. Make sure your YAML file is indented properly.
 
 1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your working browser tab open, we will resume the remaining steps here once we set up the key vault permissions.
 
