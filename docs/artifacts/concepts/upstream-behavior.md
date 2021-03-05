@@ -23,7 +23,7 @@ Upstream behavior is a feature that enables developers to choose if they want to
 
 When the upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-This approach provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
+This approach provides another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
 
 Users will still be able to toggle off the upstream behavior setting and consume packages from the public registries if they choose to do so.
 
