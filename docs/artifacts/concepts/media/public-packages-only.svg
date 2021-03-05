@@ -682,16 +682,23 @@
        id="tspan963"
        x="98.026573"
        y="50.414135">Feed</tspan></text>
+  <rect
+     style="opacity:0.998;fill:#b4a0ff;fill-opacity:1;stroke:#00070f;stroke-width:0.74;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+     id="rect964"
+     width="159.36554"
+     height="22.438484"
+     x="160.50076"
+     y="288.82312" />
   <text
      transform="scale(0.98064606,1.0197359)"
      font-size="17.5395px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text4578-3"
-     x="180.50389"
-     y="299.39679"
+     x="172.41933"
+     y="299.8905"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
        sodipodi:role="line"
        id="tspan989"
-       x="180.50389"
-       y="299.39679">Available packages</tspan></text>
+       x="172.41933"
+       y="299.8905">Available packages</tspan></text>
 </svg>

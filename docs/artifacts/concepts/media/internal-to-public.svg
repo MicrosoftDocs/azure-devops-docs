@@ -145,7 +145,7 @@
      inkscape:zoom="1.336478"
      inkscape:cx="214.31564"
      inkscape:cy="283.85465"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5370"
@@ -154,6 +154,13 @@
      inkscape:document-rotation="0" />
   <title
      id="title4556">blog-package-upstream-diagram-4</title>
+  <rect
+     style="opacity:0.998;fill:#b4a0ff;stroke:#00070f;stroke-width:0.74;paint-order:markers stroke fill;stroke-linejoin:round;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square"
+     id="rect964"
+     width="159.36554"
+     height="22.438484"
+     x="162.37134"
+     y="288.82309" />
   <path
      d="M 250.63333,33 H 439.11667 A 7.8833333,8.1975737 0 0 1 447,41.197574 V 229.74177 H 258.51667 a 7.8833333,8.1975737 0 0 1 -7.88334,-8.19758 z"
      fill="#cbe247"
@@ -203,7 +210,7 @@
      d="M 96.661212,311.61229 H 374.33795 a 11.613855,6.3318051 0 0 1 11.61385,6.33181 V 463 H 108.27507 a 11.613855,6.3318051 0 0 1 -11.613858,-6.33181 z"
      fill="#b4a0ff"
      id="path4600"
-     style="stroke-width:0.779578" />
+     style="stroke-width:0.78;stroke-miterlimit:4;stroke-dasharray:none;fill:#b4a0ff;fill-opacity:1" />
   <path
      d="m 188.79647,355.50118 a 6.4012667,6.6564298 0 0 0 -6.41345,6.67358 v 7.21237 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21237 a 6.4019833,6.657175 0 0 0 -6.41417,-6.67358 z m -1.36167,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.98786 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.98786 z m 7.64468,6.06621 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 181.088,352.53441 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35941 2.26825,2.3586655 0 0 1 2.26825,-2.35941 z"
      fill="#004880"
