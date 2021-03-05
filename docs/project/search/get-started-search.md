@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2021
+ms.date: 03/05/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -54,9 +54,50 @@ By default, the search box searches everything. You can narrow down your results
 > [!TIP]
 > Searches aren't case-sensitive.
 
+### Starting from the Organization-Projects page
+
+When you search from the Organization-Projects page, 
+
+:::image type="content" source="media/get-started/start-search-from-org-project-page.png" alt-text="Starting search from organization projects page":::
+
+### Starting from the Project-Overview page
+
+When you search from the Project-Overview page,  
+
+:::image type="content" source="media/get-started/start-search-from-project-overview-page.png" alt-text="Start search from project overview page":::
+
+### Starting from a Boards page
+
+When you search from Boards, you find a fast and flexible search with quick inline filters.
+
+:::image type="content" source="media/get-started/start-search-from-boards.png" alt-text="Start search from Boards page":::
+
+### Starting from a Wiki page
+
+When you search from Wiki, you automatically navigate to wiki search results. Text search across the wiki is supported by the search platform.
+
+:::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Start search from wiki page":::
+
+For more information about searching wikis, see [Search Wiki](../wiki/search-wiki.md).
+
+## Best practices for Search
+
+### Work item search
+
+- You can use a text search across all fields to efficiently locate relevant work items. This is useful when you are trying to, for example, search for all work items that had similar exception trace.
+- You can also use the quick in-line search filters on any work item field to [narrow down to a list](#narrow-search-results)of work items in seconds. The dropdown list of suggestions helps complete your search faster.
+
+### Code search
+
+- You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
+- You can [narrow your search](#narrow-search-results) by using project, repository, path, file name, and other filter operators. This helps you achieve your desired results even faster. Start with a higher-level search if you don’t know where the results would be and keep filtering till you have a subset of results to browse through and work on.
+- You can [use wildcards](#broaden-search-results) to widen your search and [Boolean operators](#broaden-search-results) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
+- When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
+- Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
+
 ## Sort and view search results
 
-### Work items
+### Sort and view work item results
 
 You can use the following common inline search filters to quickly access common shortcuts:
 
@@ -67,13 +108,13 @@ You can use the following common inline search filters to quickly access common 
 
 For more information about how to sort and view search results for work items, see [View and filter work item results](functional-work-item-search.md#view-and-filter-work-item-results).
 
-### Code
+### Sort and view code results
 
 Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type that you want to include in your search string from the list, and then enter the criteria value.
 
 For more information about how to sort and view search results for code, see [View and filter code results](functional-code-search.md#view-and-filter-code-results).
 
-### Packages
+### Sort and view package results
 
 You can search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
 
