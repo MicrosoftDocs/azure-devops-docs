@@ -334,6 +334,3 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
-* [Adhoc vs. managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-* [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
-
