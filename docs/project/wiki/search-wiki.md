@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2018'
 ms.date: 03/03/2021
 ---
 
-# Search  Wiki
+# Search Wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
