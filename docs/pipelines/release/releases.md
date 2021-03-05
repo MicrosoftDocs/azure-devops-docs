@@ -50,7 +50,7 @@ Releases can be created in several ways:
 
 ## Q&A
 
-Q: I created a release pipeline but the deployment did not get triggered?
+Q: Why my deployment did not get triggered?
 
 A: Creating a release pipeline does not necessarily mean that it will automatically/immediately start a deployment. Below are few reasons why this might happen:
 
