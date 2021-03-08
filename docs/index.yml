@@ -202,7 +202,7 @@ additionalContent:
               text: Features & services
             - url: ./project/navigation/index.md
               text: Web portal navigation
-            - url: ./project/search/get-started-search.md
+            - url: ./project/search/index.md
               text: Search
             - url: ./notifications/manage-your-personal-notifications.md
               text: Manage personal notifications 
@@ -233,7 +233,7 @@ additionalContent:
         - title: Cross-service, Wikis, Public Projects
           links:
             - text: Search
-              url: ./project/search/get-started-search.md  
+              url: ./project/search/overview.md  
             - text: Work across projects
               url: ./project/navigation/work-across-projects.md  
             - text: Work across projects FAQs

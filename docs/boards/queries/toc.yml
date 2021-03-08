@@ -26,11 +26,11 @@
     href: query-faqs.yml
   - name: Set query permissions (Security) 
     href: set-query-permissions.md
-- name: Import/export queries
+- name: Additional query operations
   items:
-#   - name: Query support & cross-service, integration, & extensions
-#     href: query-support-integration-cross-service-extensions.md 
-#     displayname: OData, Power BI, WIQL
+  - name: Cross-service and enhanced query operations  
+    href: query-support-integration-cross-service-extensions.md 
+    displayname: OData, Power BI, WIQL
   - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
     displayname: import, export, csv

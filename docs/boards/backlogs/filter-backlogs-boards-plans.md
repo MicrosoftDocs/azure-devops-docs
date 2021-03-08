@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 02/11/2021
+ms.date: 03/02/2021
 ---
  
 # Interactively filter backlogs, boards, queries, and plans 
@@ -18,6 +18,12 @@ ms.date: 02/11/2021
 <a id="filter"></a>
 
 With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected Area Paths and Iteration Paths for the team. Query Results list work items based on the query clauses you've defined. 
+
+You enable the filter feature by choosing **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::.
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of choosing Filter function latest versions.](media/filter/filter-backlogs.png)
+
 
 From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Board tools.  
 
@@ -801,7 +807,7 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 	For example, here we open the filter toolbar for the Kanban board, **Backlog items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of choosing FIlter function](media/filter-boards/filter-kb-choose-filter-services.png)
+	> ![Screenshot of choosing Filter function](media/filter-boards/filter-kb-choose-filter-services.png)
 	::: moniker-end
 
 	::: moniker range="< azure-devops-2019"

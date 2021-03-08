@@ -2,7 +2,7 @@
 title: Pipeline resources
 description: Permissions and approvals on important resources.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 07/16/2020
 monikerRange: '> azure-devops-2019'
 ---
