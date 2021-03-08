@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/13/2020
+ms.date: 03/05/2021
 ---
 
 # .NET client libraries
@@ -157,7 +157,7 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [Azure DevOps .NET SDK API Reference browser](/dotnet/api/index?view=azure-devops-dotnet).
+You can find detailed, up-to-date reference documentation in [.NET SDK for Azure DevOps](https://github.com/MicrosoftDocs/azure-devops-docs-sdk-dotnet).
 
 ## Samples
 

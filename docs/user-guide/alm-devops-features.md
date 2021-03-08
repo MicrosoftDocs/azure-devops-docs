@@ -805,7 +805,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to <a href="../repos/git/merging.md" data-raw-source="[prevent and resolve merge conflicts](../repos/git/merging.md)">prevent and resolve merge conflicts</a>.   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
@@ -919,7 +919,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 
 
@@ -2023,7 +2023,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/get-started-search.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/get-started-search.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p><a href="../project/search/overview.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 <p><b>Find work items</b></p>
 <p>When in the Work hub, <a href="../boards/queries/using-queries.md" data-raw-source="[enter IDs or keywords to start a query](../boards/queries/using-queries.md)">enter IDs or keywords to start a query</a> to find  work items that you want to review, triage, or update.</p>
@@ -2081,7 +2081,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
+<p><a href="../project/search/overview.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/overview.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>

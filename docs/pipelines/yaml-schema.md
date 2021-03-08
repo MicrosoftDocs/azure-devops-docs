@@ -5,7 +5,7 @@ description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2019'
 ---

@@ -73,7 +73,9 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
 | Area Paths | 10,000 per project
+| Area Path Depth | 14
 | Iteration Paths | 10,000 per project
+| Iteration Path Depth | 14
 
 Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
