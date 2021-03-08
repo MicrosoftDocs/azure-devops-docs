@@ -28,9 +28,19 @@ The following table describes supported artifact types in Azure Pipelines.
 
 ## How do I publish and consume artifacts?
 
-Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Java. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages. Refer to the earlier table for specific guidance on each kind of artifact that we support.
+Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Maven. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages.
 
-To view the permissions involved, see [feed permissions](../../artifacts/feeds/feed-permissions.md).
+#### [NuGet](#tab/nuget/)
+
+- [Publish a NuGet package using the command line](../../artifacts/nuget/publish.md)
+- [Publish to NuGet feeds (YAML/Classic)](/nuget.md)
+- [Consume NuGet packages](../../artifacts/nuget/consume.md)
+ 
+#### [Npm](#tab/npm/)
+
+- [Publish an npm package from the command line](../../artifacts/npm/publish.md)
+- [Publish npm packages (YAML/Classic)](/npm.md)
+- [Consume NuGet packages]()
 
 ## What's next?
 
