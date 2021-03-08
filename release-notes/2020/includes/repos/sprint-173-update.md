@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Default branch name preference
 
-Azure Repos now offers a customizable default branch name for Git. In repository settings, you may choose any legal branch name to use when a repository is initialized. Azure Repos has always supported changing the default branch name for an existing repository. Visit [Manage branches](/azure/devops/repos/git/manage-your-branches?view=azure-devops) for more details.  
+Azure Repos now offers a customizable default branch name for Git. In repository settings, you may choose any legal branch name to use when a repository is initialized. Azure Repos has always supported changing the default branch name for an existing repository. Visit [Manage branches](/azure/devops/repos/git/manage-your-branches?view=azure-devops&preserve-view=true) for more details.  
 
 &nbsp;<img src="../../media/173-pipelines-1-0.png" alt='default-branch-name' width="500">
 

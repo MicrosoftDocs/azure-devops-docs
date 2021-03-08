@@ -95,7 +95,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/branches.md?amp;tabs=visual-studio&view=azure-devops&preserve-view=true#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
+<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/branches.md?amp;tabs=visual-studio&view=azure-devops&preserve-view=true#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
 </td>
 </tr>
 <tr>

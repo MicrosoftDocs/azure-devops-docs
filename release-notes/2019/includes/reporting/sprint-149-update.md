@@ -22,4 +22,4 @@ The following list includes the entity sets that will be migrated to version 3.0
 * ReleaseStages
 * BuildPipelines
 
-For more information on using the OData endpoint with the Analytics service see the documentation [here](/azure/devops/report/extend-analytics/odata-api-version?view=azure-devops).
+For more information on using the OData endpoint with the Analytics service see the documentation [here](/azure/devops/report/extend-analytics/odata-api-version?view=azure-devops&preserve-view=true).

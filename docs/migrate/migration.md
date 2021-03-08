@@ -20,11 +20,11 @@ If you would prefer to migrate your Azure DevOps organization to a different geo
 
 ## More details on how Microsoft and Azure DevOps protect and manage customer data in public regions:
 
-* [Data locations for Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/security/data-location?view=azure-devops)
+* [Data locations for Azure DevOps](/azure/devops/organizations/security/data-location?view=azure-devops&preserve-view=true)
 * [How Microsoft categorizes data](https://www.microsoft.com/trustcenter/privacy/data-management/customer-data-definitions)
 * [Data management at Microsoft](https://www.microsoft.com/trust-center/privacy/data-management)
-* [Azure customer data protection](https://docs.microsoft.com/azure/security/azure-protection-of-customer-data)
-* [Azure DevOps transferring your data details](https://docs.microsoft.com/azure/devops/organizations/security/data-location?view=azure-devops#transferring-your-data)
+* [Azure customer data protection](/azure/security/azure-protection-of-customer-data)
+* [Azure DevOps transferring your data details](/azure/devops/organizations/security/data-location?view=azure-devops&preserve-view=true #transferring-your-data)
 * [Data Residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/)
 
 ## Frequently Asked Questions
@@ -54,4 +54,4 @@ As of Feb 2020, Azure DevOps data is available in the following eight geographie
 A: Once the migration is complete, you will see that the organization region (located under Organization Settings > Overview) will show up as Southeast Asia.
 
 ### Q: Does this migration impact the IP address rules I have set up in my firewall?
-A: There is no impact if you are using Azure DevOps [service tags](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) over IP addresses. If you have set up firewall rules using IP addresses, then you can get the list of IP addresses for the Southeast Asia region by checking [here](https://docs.microsoft.com/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops). 
+A: There is no impact if you are using Azure DevOps [service tags](https://docs.microsoft.com/azure/virtual-network/service-tags-overview) over IP addresses. If you have set up firewall rules using IP addresses, then you can get the list of IP addresses for the Southeast Asia region by checking [here](/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&preserve-view=true ). 

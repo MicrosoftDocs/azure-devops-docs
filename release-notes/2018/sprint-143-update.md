@@ -155,7 +155,7 @@ We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps proje
 
 ### Exclude files in artifact uploads
 
-Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](/azure/devops/artifacts/reference/artifactignore?view=azure-devops) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
+Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](/azure/devops/artifacts/reference/artifactignore?view=azure-devops&preserve-view=true) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
 
 ### Provenance information on packages
 
