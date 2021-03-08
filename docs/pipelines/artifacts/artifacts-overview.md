@@ -56,8 +56,9 @@ Each kind of artifact has a different way of being published and consumed. Some 
 
 * * * 
 
-## What's next?
+## Next steps
 
-- [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
-- [Build Artifacts](build-artifacts.md)
-- [Releases in Azure Pipelines](../release/releases.md)
+> [!div class="nextstepaction"]
+> [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
+> [Releases in Azure Pipelines](../release/releases.md)
+> [Build Artifacts](build-artifacts.md)
