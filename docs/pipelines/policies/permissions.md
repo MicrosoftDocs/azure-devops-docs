@@ -20,13 +20,13 @@ Permissions in Azure DevOps are hierarchical and can be set at the organization,
 
 This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** menu:
 
-    - pipeline permissions
-    - release permissions
-    - task group permissions
-    - library permissions
-    - service connection permissions
-    - deployment pool permissions
-    - environment permissions
+- pipeline permissions
+- release permissions
+- task group permissions
+- library permissions
+- service connection permissions
+- deployment pool permissions
+- environment permissions
 
 Object-level permissions are designed to be more granular than organization-level permissions. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
 
