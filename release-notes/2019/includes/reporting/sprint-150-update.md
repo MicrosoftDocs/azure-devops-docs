@@ -22,22 +22,22 @@ We're excited to announce that the following Analytics features will be included
 
 1. The [Analytics Widgets](/azure/devops/report/analytics/analytics-widgets?view=azure-devops) are configurable modules that display data on a dashboard and help you monitor the progress of your work. The widgets included are the following:
 
-    * [Burndown and Burnup](/azure/devops/report/dashboards/configure-burndown-burnup-widgets?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops) charts monitor the progress of a set of scoped work over a period of time.
+    * [Burndown and Burnup](/azure/devops/report/dashboards/configure-burndown-burnup-widgets?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true) charts monitor the progress of a set of scoped work over a period of time.
 
         > [!div class="mx-imgBorder"]
         > ![Burndown and burnup charts.](../../media/150_16.png "Burndown and burnup charts")
 
-    * [Cycle Time and Lead Time](/azure/devops/report/dashboards/cycle-time-and-lead-time?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops) to visualize how work moves through your team's development cycle
+    * [Cycle Time and Lead Time](/azure/devops/report/dashboards/cycle-time-and-lead-time?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true) to visualize how work moves through your team's development cycle
 
         > [!div class="mx-imgBorder"]
         > ![Cycle Time and Lead Time.](../../media/150_17.png "Cycle Time and Lead Time")
 
-    * [Cumulative Flow Diagram (CFD)](/azure/devops/report/dashboards/cumulative-flow?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops) tracks work items as they progress through various states.
+    * [Cumulative Flow Diagram (CFD)](/azure/devops/report/dashboards/cumulative-flow?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true) tracks work items as they progress through various states.
 
         > [!div class="mx-imgBorder"]
         > ![Cumulative Flow Diagram.](../../media/150_18.png "Cumulative Flow Diagram")
 
-    * [Velocity](/azure/devops/report/dashboards/team-velocity?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops) track how a team is delivering value over multiple sprints.
+    * [Velocity](/azure/devops/report/dashboards/team-velocity?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true) track how a team is delivering value over multiple sprints.
 
         > [!div class="mx-imgBorder"]
         > ![Velocity chart.](../../media/150_19.png "Velocity chart")
@@ -47,7 +47,7 @@ We're excited to announce that the following Analytics features will be included
         > [!div class="mx-imgBorder"]
         > ![Test results trend.](../../media/150_20.png "Test results trend")
 
-2. In the product we are including the [top failing test report](/azure/devops/pipelines/test/test-analytics?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops#view-test-analytics-for-builds) to get insights about top failing tests in your pipeline to help improve pipeline reliability and reduce test debt.
+2. In the product we are including the [top failing test report](/azure/devops/pipelines/test/test-analytics?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true&preserve-view=true#view-test-analytics-for-builds) to get insights about top failing tests in your pipeline to help improve pipeline reliability and reduce test debt.
 
     > [!div class="mx-imgBorder"]
     > ![Test failure report.](../../media/150_21.png "Test failure report")
@@ -62,7 +62,7 @@ The Azure DevOps Analytics offering is the future of reporting and we will conti
 
 * [Analytics widgets](/azure/devops/report/analytics/analytics-widgets?view=azure-devops)
 
-* [Top failing test report](/azure/devops/pipelines/test/test-analytics?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops#view-test-analytics-for-builds)
+* [Top failing test report](/azure/devops/pipelines/test/test-analytics?bc=%2fazure%2fdevops%2freport%2fanalytics%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2fanalytics%2ftoc.json&view=azure-devops&preserve-view=true&preserve-view=true#view-test-analytics-for-builds)
 
 * [Power BI integration](/azure/devops/report/powerbi/index?view=azure-devops)
 

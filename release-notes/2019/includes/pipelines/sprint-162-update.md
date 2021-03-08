@@ -60,7 +60,7 @@ We've added markdown support to error messages for automated tests. Now you can 
 
 ### Collect automatic and user-specified metadata from pipeline
 
-Now you can enable automatic and user-specified metadata collection from pipeline tasks. You can use metadata to enforce artifact policy on an environment using the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops#evaluate-artifact).
+Now you can enable automatic and user-specified metadata collection from pipeline tasks. You can use metadata to enforce artifact policy on an environment using the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true#evaluate-artifact).
 
 > [!div class="mx-imgBorder"]
 > ![Collect automatic and user-specified metadata from pipeline.](../../media/162_07.png)
@@ -125,7 +125,7 @@ jobs:
 ```
 
 > [!NOTE]
-> With this update, all available artifacts from the current pipeline and from the associated pipeline resources are downloaded only in `deploy` lifecycle-hook. However, you can choose to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops#download).
+> With this update, all available artifacts from the current pipeline and from the associated pipeline resources are downloaded only in `deploy` lifecycle-hook. However, you can choose to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops&preserve-view=true#download).
 > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. We are working to close these gaps in future updates.
 
 ### Skipping stages in a YAML pipeline

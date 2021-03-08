@@ -58,6 +58,6 @@ Learn more about service connections sharing [here](/azure/devops/pipelines/libr
 
 ### Pipeline resource version picker in the create run dialogue
 
-In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
+In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops&preserve-view=true#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
 
 ![Pipeline resource version picker.](../../media/169-pipelines-2-0.png)

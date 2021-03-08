@@ -159,10 +159,10 @@ Previously, in order to exclude files from published artifacts, you would have t
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](/azure/devops/pipelines/artifacts/npm?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops
-), [NuGet](/azure/devops/pipelines/artifacts/nuget?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops
-) and .NET Core, [Twine Authenticate](/azure/devops/pipelines/artifacts/pypi?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops
-) (for Python), and [Universal Packages](/azure/devops/pipelines/artifacts/universal-packages?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops) tasks.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](/azure/devops/pipelines/artifacts/npm?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+), [NuGet](/azure/devops/pipelines/artifacts/nuget?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) and .NET Core, [Twine Authenticate](/azure/devops/pipelines/artifacts/pypi?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) (for Python), and [Universal Packages](/azure/devops/pipelines/artifacts/universal-packages?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true) tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Provenance information on packages.](media/143_10.png)
