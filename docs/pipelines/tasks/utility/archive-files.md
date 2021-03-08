@@ -4,8 +4,6 @@ description: Use an archive file to then create a source folder in Azure Pipelin
 ms.topic: reference
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 02/10/2020
 monikerRange: '>= tfs-2017'
 ---

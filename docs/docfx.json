@@ -121,8 +121,8 @@
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "v-maksim",
-        "repos/get-started/**": "macoope",
-        "repos/git/**": "macoope"
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
 
       },
       "author": {
@@ -153,8 +153,8 @@
         "pipelines/test/**": "steved0x",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/get-started/**": "vtbassmatt",
-        "repos/git/**": "vtbassmatt"
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
 
       },
       "ms.technology": {
