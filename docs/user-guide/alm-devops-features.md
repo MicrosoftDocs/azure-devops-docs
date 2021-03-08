@@ -1187,7 +1187,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-release-3.png" alt="Customize release definition process"/><br/><br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#set-release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
