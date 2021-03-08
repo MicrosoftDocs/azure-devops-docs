@@ -36,7 +36,7 @@ To learn more about how Azure DevOps permissions work overall, including how the
 
 
 
-## Update pipeline permissions
+## Set pipeline permissions
 
 You can update pipeline permissions with security groups or by adding individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
 
@@ -49,7 +49,7 @@ When it comes to security, there are different best practices and levels of perm
 * We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
 
 
-### Set pipeline permissions at the project-level
+### Update pipeline permissions at the project-level
 
 To set the permissions at project level for all pipelines, choose **Manage security** from contextual menu for all pipelines.
 
@@ -66,7 +66,7 @@ To set the permissions at project level for all pipelines, choose **Manage secur
 1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
 
 
-### Set pipeline permissions for one pipeline
+### Update pipeline permissions for one pipeline
 
 To set or override the permissions for a specific pipeline, choose **Security** from the context menu of the individual pipeline.
 
