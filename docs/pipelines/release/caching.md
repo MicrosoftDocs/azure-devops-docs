@@ -237,54 +237,6 @@ steps:
 See [ccache configuration settings](
 https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
 
-## Docker images
-
-Caching Docker images dramatically reduces the time it takes to run your pipeline.
-
-```yaml
-pool:
-  vmImage: ubuntu-16.04
-
-steps:
-  - task: Cache@2
-    inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
-      path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
-  - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
-  - script: |
-      mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
-```
-
-## Golang
-
-For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
-
-**Example**:
-
-```yaml
-variables:
-  GO_CACHE_DIR: $(Pipeline.Workspace)/.cache/go-build/
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'go | "$(Agent.OS)" | go.mod'
-    restoreKeys: | 
-      go | "$(Agent.OS)"
-    path: $(GO_CACHE_DIR)
-  displayName: Cache GO packages
-
-```
-
 ## Gradle
 
 Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
@@ -489,6 +441,33 @@ steps:
   displayName: Cache composer
 
 - script: composer install
+```
+
+## Docker images
+
+Caching docker images will dramatically reduce the time it takes to run your pipeline.
+
+```YAML
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
 ## Known issues and feedback

@@ -155,8 +155,6 @@ We recommend rebasing on `upstream`'s `main` branch (assuming `main` is the main
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 
 1. Open the **Synchronization** page in Team Explorer.

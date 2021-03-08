@@ -11,28 +11,26 @@ monikerRange: '>= tfs-2017'
 
 # Configure upstream behavior
 
-Upstream sources enables developers to use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
+Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries (e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
-:::image type="content" source="media/include-upstream-sources.png" alt-text="Include packages from common public sources checkbox":::
+Azure Artifacts is introducing a new upstream behavior that will dictate which packages will be made available from the public registries for individual packages.
 
 Previously, Artifact feeds combined a list of available package versions from the feed and all the upstream sources.
 
 :::image type="content" source="media/previous-behavior.svg" alt-text="Previous upstream sources behavior":::
 
-Upstream behavior is a feature that enables developers to choose if they want to consume externally-sourced package versions. Upstream behavior dictates which packages will be made available from the public registries for individual packages.
+The new upstream behavior will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
 
-When the upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
+With the new upstream behavior, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-This approach provides another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
-
-Users will still be able to toggle off the upstream behavior setting and consume packages from the public registries if they choose to do so.
+Users will still be able to toggle off the new upstream behavior setting and consume packages from the public registries if they choose to do so.
 
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
 
-## Applicable scenarios
+## Applicable Scenarios
 
-The next section shows a few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
+Below are few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
 
 ## Public versions will be blocked
 

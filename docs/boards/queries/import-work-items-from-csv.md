@@ -202,4 +202,4 @@ The work items results always lists the data errors found for individual work it
 ## Related articles
 
 - [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.yml)
+- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)

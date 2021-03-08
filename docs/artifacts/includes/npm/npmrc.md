@@ -6,14 +6,14 @@ author: ramiMSFT
 ms.date: 09/01/2020
 ---
 
-The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file. The token has a lifespan of 90 days.
+The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
 
 <a id="tokenpast90"></a>
 
 > [!TIP]
 > If you want to create a token that lasts longer than 90 days, make sure you change the default expiration date.
 
-Project setup:
+**Project setup:**
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -24,9 +24,9 @@ Project setup:
 1. Select **Other** in the **Project setup** section.
 
    > [!div class="mx-imgBorder"] 
-   > ![Screenshot of the connect to feed credentials.](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
+   > ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
 
-1. Add a .npmrc file to your project, in the same directory as your package.json file.
+1. Add a .npmrc to your project, in the same directory as your package.json
 
     ```JSON
     registry=https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/
@@ -34,9 +34,11 @@ Project setup:
     always-auth=true
     ```
 
-Set up credentials by following these steps:
+**Set up credentials:**
 
-1. Copy the following code to your user .npmrc file.
+Set up credentials by following these four steps:
+
+1. Copy the code below to your user `.npmrc` file.
 
     ```
     ; begin auth token
@@ -49,11 +51,11 @@ Set up credentials by following these steps:
     ; end auth token
     ```
 
-2. Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md), with packaging read and write scopes.
+2. Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with Packaging read & write scopes.
 
-3. Base64 encode the personal access token from the previous step. Then safely encode your personal access token:
+3. Base64 encode the personal access token from Step 2. Follow the steps below to safely encode your PAT:
 
-    1. From a command prompt, run the following:
+    1. From a command/shell prompt run the following:
         
         ```
         node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
@@ -61,31 +63,31 @@ Set up credentials by following these steps:
 
         Other options to convert your personal access token to Base64:
 
-        Windows:
+        # [Windows](#tab/windows)
         ```powershell
         [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
         ```
     
-        Mac:
+        # [Mac](#tab/mac)
         ```
         echo -n "YOUR_PAT_GOES_HERE" | base64
         ```
 
-    2. Paste your personal access token value, and press Enter or Return.
+    2. Paste your personal access token value and press Enter/Return.
     3. Copy the Base64 encoded value.
 
-4. Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user .npmrc file with your Base64 encoded personal access token from the previous step. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your personal access token, and email.
+4. Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. From **Packages**, select **Connect to feed**.
+1. From the **Packages** page, select **Connect to feed**.
 
 2. Select **npm**.
 
 3. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
     > [!div class="mx-imgBorder"] 
-    >![Screenshot of the connect to npm feed.](../../media/tfs2018-connect-to-npm-feed.png)
+    >![Connect to npm feed TFS2018](../../media/tfs2018-connect-to-npm-feed.png)
 
 ::: moniker-end

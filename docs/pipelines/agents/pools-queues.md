@@ -374,7 +374,7 @@ The **All agent pools** node in the Agent Pools tab is used to control the secur
 
 Roles are also defined on each project agent pool, and memberships in these roles govern what operations you can perform on an agent pool at the project level.
 
-| Role on an agent pool in project settings | Purpose |
+| Role on a agent pool in project settings | Purpose |
 |------|---------|
 | Reader | Members of this role can view the project agent pool. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
 | User | Members of this role can use the project agent pool when authoring pipelines. |

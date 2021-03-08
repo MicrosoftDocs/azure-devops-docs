@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 03/05/2021  
+ms.date: 08/18/2020  
 ---
 
 # Publish a Git repository to a wiki
@@ -104,15 +104,12 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
    - Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
    - A parent page for each subfolder defined within the published folder, even if it doesn't contain any Markdown files.
 
-     And here's an image of the contents of the azure-docs-sdk-node repository.
+     And here is an image of the contents of the azure-docs-sdk-node repository.
 
      > [!div class="mx-imgBorder"]  
      > ![Repo with Markdown files published to wiki](media/wiki/publish-wiki-sample-code-repo.png)
 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
-
-> [!NOTE]
-> You're limited to publishing 10 branches as code wikis.
 
 For the Wiki that's provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
@@ -220,7 +217,7 @@ You can add pages to your published wiki as follows:
 
 - Add a file to a root folder or subfolder from the web portal
 - Upload files to a root folder or subfolder
-- Add or update a .order file to specify the page sequence in the wiki TOC.
+- Add or update an .order file to specify the page sequence in the wiki TOC.
 
 Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 

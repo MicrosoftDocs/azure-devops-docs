@@ -1,14 +1,14 @@
 ---
-title: Default Git repository and branch permissions
+title: Git repository and branch default permissions
 titleSuffix: Azure DevOps
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
-ms.custom: freshness-review 
+ms.assetid:  
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
 ms.date: 06/28/2018
+monikerRange: '<= azure-devops'
 ---
 # Default Git repository and branch permissions
 

@@ -64,58 +64,6 @@ Work item queries only support querying of work items and work items linked to o
 - Export a cross-project query to Excel. Direct links queries export to Excel as a flat-list. 
 
 <a id="ad-hoc-v-managed" /> 
-<a id="semantic-v-managed" /> 
-
-## Managed work item queries versus semantic searches
-
-You have two ways to find and list work items: managed queries and semantic searches. If you are looking for a single work item, use the search box. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
-
-> [!NOTE]    
-> With semantic search, you search against a more fully indexed set of fields than that of managed queries.  
-
-
-
----
-:::row:::
-   :::column span="1":::
-      **Use a managed query**
-   :::column-end:::
-   :::column span="1":::
-      **Use a semantic search**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      - List items to perform bulk updates to fields  
-      - Review work that's in progress or recently closed    
-      - Triage work (set priority, review, update)  
-      - Create a chart and add it to a dashboard    
-      - Create a chart to get a count of items or sum a field    
-      - Create a chart that shows a burndown or burnup over time   
-      - View a tree of parent-child related work items   
-      - List work items with link relationships    
-      - List work items for a single project, multiple projects, or across all projects.    
-   :::column-end:::
-   :::column span="1":::
-      - Find a specific work item using its ID or a keyword   
-      - Find one or more work items across all projects in a fast, flexible manner  
-      - Perform full text search across all work item fields  
-      - Review work items assigned to a specific team member  
-      - Search against specific work item fields to quickly narrow down a list of work items  
-      - Determine what key words will support a managed search  
-      - List work items for a single project, multiple projects, or across all projects.    
-   :::column-end:::
-:::row-end:::
----
-
-To get started, see the following articles:  
-- [View and run a query](view-run-query.md)   
-- [Use semantic search](search-box-queries.md)  
-- [Define a query](using-queries.md)   
-
-For specific managed query examples, see [Query quick reference, Example queries](query-index-quick-ref.md).  
- 
 
 ## Query types (flat, direct links, tree)
 

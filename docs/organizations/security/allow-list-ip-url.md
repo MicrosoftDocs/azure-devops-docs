@@ -1,5 +1,5 @@
 ---
-title: Allowed address lists and network connections  
+title: Add IP addresses and URLs to allow list
 titleSuffix: Azure DevOps
 description: Add IP addresses and URLs to the Allow list for Azure DevOps and troubleshoot network connections. 
 ms.topic: reference

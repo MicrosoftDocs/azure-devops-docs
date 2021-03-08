@@ -115,7 +115,7 @@
      inkscape:zoom="1.336478"
      inkscape:cx="231.36035"
      inkscape:cy="203.79577"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5370"
@@ -532,23 +532,4 @@
      stroke-dasharray="3.4608, 3.4608"
      id="path13122-7"
      style="stroke-width:1.16492;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:2.32982, 2.32982;stroke-dashoffset:0;paint-order:markers stroke fill" />
-  <rect
-     style="opacity:0.998;fill:#b4a0ff;fill-opacity:1;stroke:#00070f;stroke-width:0.74;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-     id="rect964"
-     width="159.36554"
-     height="22.438484"
-     x="156.01135"
-     y="294.80899" />
-  <text
-     transform="scale(0.98064606,1.0197359)"
-     font-size="17.5395px"
-     font-family="SegoeUI, 'Segoe UI'"
-     id="text4578-3"
-     x="167.84129"
-     y="305.76056"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
-       sodipodi:role="line"
-       id="tspan989"
-       x="167.84129"
-       y="305.76056">Available packages</tspan></text>
 </svg>

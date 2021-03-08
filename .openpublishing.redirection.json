@@ -86,11 +86,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/artifacts/maven/publish.md",
-      "redirect_url": "/azure/devops/artifacts/get-started-maven",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/pipelines/symbols/index.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/symbols",
       "redirect_document_id": false
@@ -17665,13 +17660,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/backlogs/filter-backlogs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
-      "redirect_document_id": true
+      "source_path": "docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/boards/filter-kanban-board.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
+      "source_path": "docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/navigation/search-basics.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     }
   ]

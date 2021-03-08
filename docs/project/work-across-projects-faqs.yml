@@ -1,14 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Work across projects FAQ 
-  description: Get answers to common questions about working across projects in Azure DevOps.  
-  titleSuffix: Azure DevOps
-  ms.technology: devops-new-user
-  ms.author: kaelli
-  author: KathrynEE
-  ms.topic: troubleshooting
-  monikerRange: '<= azure-devops'
-  ms.date: 01/15/2021
+  description: Get answers to common questions about working across projects in Azure DevOps. 
 
 title: Work across projects FAQs 
 
