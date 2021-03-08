@@ -131,11 +131,11 @@ You have two ways to find and list work items: managed queries and semantic sear
 ---
 
 To get started, see the following articles:  
-- [View and run a query](view-run-query.md)   
-- [Use semantic search](search-box-queries.md)  
-- [Define a query](using-queries.md)   
+- [View and run a query](../../boards/queries/view-run-query.md)
+- [Use semantic search](../../boards/queries/search-box-queries.md)  
+- [Define a query](../../boards/queries/using-queries.md)   
 
-For specific managed query examples, see [Query quick reference, Example queries](query-index-quick-ref.md).  
+For specific managed query examples, see [Query quick reference, Example queries](../../boards/queries/query-index-quick-ref.md).  
 
 ### Code search
 
