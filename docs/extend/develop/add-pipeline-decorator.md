@@ -4,8 +4,6 @@ description: Inject steps before and after every pipeline job
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
-ms.author: macoope
-author: vtbassmatt
 ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---

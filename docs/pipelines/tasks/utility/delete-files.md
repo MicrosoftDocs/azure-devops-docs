@@ -4,8 +4,6 @@ description: Delete files from the agent working directory when building code in
 ms.topic: reference
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 04/14/2020
 monikerRange: '>= tfs-2015'
 ---
