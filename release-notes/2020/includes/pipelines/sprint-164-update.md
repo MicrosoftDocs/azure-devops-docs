@@ -50,7 +50,7 @@ While executing deployment strategies, you can access output variables across jo
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
-Learn more on how to [set a multi-job output variable](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops#set-a-multi-job-output-variable)
+Learn more on how to [set a multi-job output variable](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true#set-a-multi-job-output-variable)
 
 ### Avoid rollback of critical changes
 

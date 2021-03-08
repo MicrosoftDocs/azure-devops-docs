@@ -81,7 +81,7 @@ The following events are available now:
 
 ### Enhancements to evaluate artifacts checks policy in pipelines
 
-We've enhanced the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
+We've enhanced the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
 
 > [!div class="mx-imgBorder"]
 > ![Enhancement to evaluate artifacts checks policy in pipelines.](../../media/163_04.png)

@@ -62,16 +62,16 @@ The publish test results task in Azure Pipelines lets you publish test results w
 
 ### Deployments in YAML pipeline
 
-A deployment job is a special type of [job](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops#job) that is used to deploy your app to an environment. 
-With this update, we have added support for [step references](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops#step-templates) in a deployment job. For example, you can define a set of steps in one file and refer to it in a deployment job. 
+A deployment job is a special type of [job](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops&preserve-view=true#job) that is used to deploy your app to an environment. 
+With this update, we have added support for [step references](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops&preserve-view=true#step-templates) in a deployment job. For example, you can define a set of steps in one file and refer to it in a deployment job. 
 
 We have also added support for additional properties to the deployment job. For example, here are few properties of a deployment job that you can now set,
 - **timeoutInMinutes** - how long to run the job before automatically cancelling
 - **cancelTimeoutInMinutes** - how much time to give 'run always even if cancelled tasks' before terminating them
 - **condition** - run job conditionally
 - **variables** - Hardcoded values can be added directly, or [variable groups](/azure/devops/pipelines/library/variable-groups?tabs=yaml&view=azure-devops), 
-[variable group backed by an Azure key vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml&view=azure-devops#link-secrets-from-an-azure-key-vault) can be referenced 
-or you can refer to a set of [variables defined in a file](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops#variable-templates).
+[variable group backed by an Azure key vault](/azure/devops/pipelines/library/variable-groups?tabs=yaml&view=azure-devops&preserve-view=true#link-secrets-from-an-azure-key-vault) can be referenced 
+or you can refer to a set of [variables defined in a file](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops&preserve-view=true#variable-templates).
 - **continueOnError** - if future jobs should run even if this deployment job fails; defaults to 'false'
 
 For more details about deployment jobs and the full syntax to specify a deployment job, see [Deployment job](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops).
