@@ -425,7 +425,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
-   ![Repos files](../repos/get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/create-first-pipeline/repos-files.png)
 
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
