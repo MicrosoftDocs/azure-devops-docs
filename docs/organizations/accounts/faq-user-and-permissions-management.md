@@ -279,7 +279,7 @@ If you're an Azure AD guest, do one of the following steps:
 * Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
 * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
 
-1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
+1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0&preserve-view=true).
     ```
     PS Install-Module -Name AzureAD
     ```
