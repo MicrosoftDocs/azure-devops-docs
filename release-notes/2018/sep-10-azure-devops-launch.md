@@ -75,7 +75,7 @@ To get started, install the app [from the GitHub Marketplace](https://github.com
 
 Azure Pipelines provides cloud-hosted pipelines for Linux, macOS, and Windows with unlimited minutes and 10 free parallel jobs for open source.
 
-See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=azure-devops&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=azure-devops) documentation for more information.
+See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=azure-devops&preserve-view=true&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=azure-devops) documentation for more information.
 
 ### Configure builds using YAML
 

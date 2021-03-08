@@ -17,4 +17,4 @@ To decide if multi-org billing is the right choice for you, read the [multi-org 
 
 An organization can become orphaned when the Owner and all Project Collection Administrators are inactive in Azure Active Directory. Now, any Azure DevOps Administrator can claim ownership of orphaned organizations when the existing owners are inactive or they have left the company. 
 
-To learn more about how to claim ownership of orphaned organizations, see the documentation [here](/azure/devops/organizations/accounts/resolve-orphaned-organization?bc=%2fazure%2fdevops%2forganizations%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2forganizations%2ftoc.json&view=azure-devops).
+To learn more about how to claim ownership of orphaned organizations, see the documentation [here](/azure/devops/organizations/accounts/resolve-orphaned-organization?bc=%2fazure%2fdevops%2forganizations%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2forganizations%2ftoc.json&view=azure-devops&preserve-view=true).
