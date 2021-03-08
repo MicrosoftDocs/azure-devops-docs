@@ -88,10 +88,8 @@
       "monikerRange": {
         "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/powerbi/**": ">= azure-devops-2019",
         "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops",
-        "reference/mapping/**": "<= tfs-2018"
+        "reference/witadmin/**": "< azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",

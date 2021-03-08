@@ -6,7 +6,7 @@ ms.topic: include
 
 An updated version of the multi-stage pipelines UI is now available by default. The multi-stage pipelines experience brings improvements and ease of use to the pipeline's portal UI. You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu. In addition, you can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
-To learn more about the multi-stage pipelines user experience, see the documentation [here](/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
+To learn more about the multi-stage pipelines user experience, see the documentation [here](/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Updated multi-stage pipelines UI.](../../media/162_01.png)
@@ -53,7 +53,7 @@ steps:
 
 ### Markdown support in automated test error messages
 
-We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
+We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Markdown support in automated test error messages.](../../media/162_03.png)

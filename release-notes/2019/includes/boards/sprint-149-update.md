@@ -17,7 +17,7 @@ We cleaned up multiple work item transition rules that have been inconsistent ac
 
 ### Azure Boards GitHub Enterprise support
 
-Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](/azure/devops/boards/github/connect-to-github?view=azure-devops-2019) before creating a connection to your repositories.
+Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](/azure/devops/boards/github/connect-to-github?view=azure-devops-2019&preserve-view=true) before creating a connection to your repositories.
 
 ### Edit and delete comments in work item
 

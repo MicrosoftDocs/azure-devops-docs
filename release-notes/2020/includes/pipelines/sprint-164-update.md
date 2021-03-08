@@ -15,7 +15,7 @@ variables:
 
 ### Support for output variables in a deployment job
  
-You can now define output variables in a deployment job's [lifecycle hooks](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
+You can now define output variables in a deployment job's [lifecycle hooks](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#descriptions-of-life-cycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
