@@ -42,6 +42,20 @@ Each kind of artifact has a different way of being published and consumed. Some 
 - [Publish npm packages (YAML/Classic)](/npm.md)
 - [Consume NuGet packages]()
 
+#### [Python](#tab/python/)
+
+- [Publish Python packages](pypi.md)
+- [Consume Python packages]()
+
+#### [Maven](#tab/maven/)
+
+- [Maven quickstart](../../artifacts/get-started-maven.md)
+- [Install Maven Artifacts](../../artifacts/maven/install.md)
+- [Publish a Maven artifact using Gradle](../../artifacts/gradle/publish-package-gradle.md)
+- [Install a Maven artifact using Gradle](../../artifacts/gradle/pull-package-gradle.md)
+
+* * * 
+
 ## What's next?
 
 - [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
