@@ -17673,6 +17673,11 @@
       "source_path": "docs/boards/boards/filter-kanban-board.md",
       "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/misc/migration.md",
+      "redirect_url": "/azure/devops/migrate/migration",
+      "redirect_document_id": true
     }
   ]
 }
