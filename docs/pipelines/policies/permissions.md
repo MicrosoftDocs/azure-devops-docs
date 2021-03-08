@@ -63,7 +63,7 @@ To set the permissions at project level for all pipelines, choose **Manage secur
 
 1. Modify the permissions associated with a [Azure DevOps group](../../organizations/security/permissions.md) (example: Build Administrators) or [individual user](set-permissions.md). 
 
-1. set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
+1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
 
 
 ### Set pipeline permissions for one pipeline
@@ -115,29 +115,17 @@ For more information on default permissions, see [Default permissions and access
 
 
 
-## Release permissions
+## Set release permissions
 
-Permissions for release pipelines follow a hierarchical model.
-Defaults for all the permissions can be set at the project
-level and can be overridden on an individual release pipeline.
-Some of the permissions can also be overridden on a specific
-stage within a pipeline. The hierarchical model helps
-you define default permissions for all definitions at one extreme,
-and to lock down the production stage for an application at
-the other extreme.
+Permissions for release pipelines follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual release pipeline.
 
-To set permissions at project level for all release
-definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
-icon next to **All release pipelines** and choose **Security**.
+To set permissions at project level for all release definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 
-To set or override the permissions for a specific release
-pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
-icon next to that pipeline name. Then choose **Security** to open the
-**Permissions** dialog.
+To set or override the permissions for a specific release pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png) icon next to that pipeline name. Then choose **Security** to open the **Permissions** dialog.
 
-To specify security settings for individual stages in a release pipeline, open
-the **Permissions** dialog by choosing **Security** on the shortcut menu that opens
-from the ellipses (**...**) on a stage in the release pipeline editor.
+To specify security settings for individual stages in a release pipeline, open the **Permissions** dialog by choosing **Security** on the shortcut menu that opens from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: on a stage in the release pipeline editor.
+
+### Release permissions reference
 
 The following permissions are defined for releases. The scope column explains whether the permission can be set at the project, release pipeline, or stage level.
 
@@ -167,13 +155,44 @@ default. <strong>Contributors</strong> are given all permissions except
 are denied all permissions except <strong>View release pipeline</strong> and
 <strong>View releases</strong>.
 
-## Task group permissions
+## Set task group permissions
 
-Task group permissions follow a hierarchical model.
-Defaults for all the permissions can be set at the project
-level and can be overridden on an individual task group pipeline.
+You can use task groups to combine a sequence of tasks already defined in a build or a release pipeline into a single, reusable task. [Task groups](../library/task-groups.md) are defined in the **Task groups** tab for **Azure Pipelines**.
 
-You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab in **Azure Pipelines**.
+Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group pipeline.
+
+### Set task group permissions at the project-level
+
+> [!NOTE]
+> Task groups are not supported in YAML pipelines. Instead, in that case you can use templates. See [YAML schema reference](../yaml-schema.md#step-templates).
+
+
+1. Open **Pipelines** > **Task groups** in your project. 
+
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Find task group menu item.":::
+
+1. Select **Security**.
+
+    :::image type="content" source="media/task-group-security-project.png" alt-text="Select the Security option for a task group.":::
+
+
+1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
+
+
+### Set task group permissions at the pipeline-level
+
+1. Open **Pipelines** > **Task groups** in your project. 
+
+    :::image type="content" source="media/task-group-permissions.png" alt-text="Find task group menu item.":::
+
+1.  Select a task group. 
+
+1. Select **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to open the **Security** menu. 
+
+1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
+
+
+### Task group permissions reference
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | 
@@ -183,37 +202,50 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 > | **Edit task group** | Can create, modify, or delete a task group. | 
 
 
-## Set agent and library permissions
+## Set agent permissions
 
-You can use pre-defined roles and manage membership in those roles to configure [security on agent pools](../agents/pools-queues.md#security).
+You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
-Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security)
-and [service connection](../library/service-endpoints.md#security). Membership of these roles can be configured hierarchically, as well
-as at either project level or individual entity level.
+## Set Library permissions
+
+Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. 
+
+To [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), open the **Library** tab in **Azure Pipelines**.
+
+:::image type="content" source="media/pipeline-library-permissions.png" alt-text="Open the Library menu option.":::
+
+Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). Membership of these roles can be configured hierarchically, as well as at either project level or individual entity level.
+
+You can configure Library object permissions for everything in your library or for an individual variable group or secure file. Select the **Security** option in the navigation. 
+
+:::image type="content" source="media/pipelines-security-library.png" alt-text="Security option in Library.":::
 
 
-
-## Library roles and permissions
-
-Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab in **Azure Pipelines**.
+### Library permissions reference
 
 [!INCLUDE [temp](../../organizations/security/includes/library-roles.md)]
 
-## Service connection security roles
+
+## Set service connection permissions
 
 You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
 
+### Service connection permissions reference
+
 [!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
 
-## Deployment pool security roles
+## Set deployment pool permissinos
 
 You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
+
+
+### Deployment pool permissions reference
 
 [!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
 
-## Environment permissions 
+## Set environment permissions 
 
 You can use roles to control who [can create, view, and manage environments](../process/environments.md#security). When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
 
