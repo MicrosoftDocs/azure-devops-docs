@@ -150,7 +150,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 > [!Note]
 > While auditing is in a public preview, we're working hard to get more areas audited. We're adding new auditing events monthly.
 >
-> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
+> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
 
 |Area            |Description |
 |----------------|------------|
