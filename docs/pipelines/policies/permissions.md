@@ -63,6 +63,7 @@ To set the permissions at project level for all pipelines, choose **Manage secur
 
 1. Modify the permissions associated with a [Azure DevOps group](../../organizations/security/permissions.md) (example: Build Administrators) or [individual user](set-permissions.md). 
 
+1. set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
 
 
 ### Set pipeline permissions for one pipeline
@@ -80,11 +81,12 @@ To set or override the permissions for a specific pipeline, choose **Security** 
 :::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
 
 
-
-
-### Pipeline permissions descriptions
+### Pipeline permissions reference
  
 These permissions are defined for pipelines. All of these can be set for both all pipelines in a project or for an individual pipeline.
+
+To learn more about how permissions are set, including inheritance, see [About permissions and inheritance](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md)
+
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description |
@@ -105,92 +107,11 @@ These permissions are defined for pipelines. All of these can be set for both al
 > | **Manage build qualities** | _Only applies to XAML builds_ |
 > | **Manage build queue** | _Only applies to XAML builds_ |
 
-Default values for these permissions are set for team
-project collections and project groups. For example,
-<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
-<strong>Build Administrators</strong> are given all of the above permissions by
-default.
+Default values for these permissions are set for team project collections and project groups. For example, <strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and <strong>Build Administrators</strong> are given all of the above permissions by default.
 
+Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. 
 
-
-
-
-
-
-## Set permissions at the organization level
-## Set permissions at the project level 
-## Set permissions at the object-level 
-
- 
-
-
-## Best practices
-
-
-
-
-### MOVE ME
-
-For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and inheritance](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
-
-## Default permissions assigned to built-in security groups
-
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
-
-::: moniker range=">=azure-devops-2020"
-
-[!INCLUDE [temp](../../organizations/security/includes/pipelines-cloud.md)]
-
-::: moniker-end 
-
-::: moniker range="azure-devops-2019"
-
-### Build  
-
-[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
-
-### Release 
-
-[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
-
-### Task groups  
-
-[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
-
-::: moniker-end 
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-### Build  
-
-[!INCLUDE [temp](../../organizations/security/includes/build.md)]
-
-### Release  
-
-[!INCLUDE [temp](../../organizations/security/includes/release.md)]
-
-::: moniker-end    
-
-## Security of agents and library entities
-
-You use pre-defined roles and manage membership in those roles to
-configure [security on agent pools](../agents/pools-queues.md#security).
-You can configure this in a hierarchical manner either for all
-pools, or for an individual pool.  
-
-Roles are also defined to help you configure security on shared
-[library entities](../library/index.md) such as [variable groups](../library/index.md#security)
-and [service connection](../library/service-endpoints.md#security).
-Membership of these roles can be configured hierarchically, as well
-as at either project level or individual entity level.
-
-## Pipeline permissions
-
-Build and YAML pipeline permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
-
-
-
-STOPPED
+For more information on default permissions, see [Default permissions and access quick reference](../../organizations/security/permissions-access.md). 
 
 
 
@@ -260,6 +181,17 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 > | **Administer task group permissions** | Can add and remove users or groups to task group security. |
 > | **Delete task group** | Can delete a task group. | 
 > | **Edit task group** | Can create, modify, or delete a task group. | 
+
+
+## Set agent and library permissions
+
+You can use pre-defined roles and manage membership in those roles to configure [security on agent pools](../agents/pools-queues.md#security).
+You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
+
+Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security)
+and [service connection](../library/service-endpoints.md#security). Membership of these roles can be configured hierarchically, as well
+as at either project level or individual entity level.
+
 
 
 ## Library roles and permissions
