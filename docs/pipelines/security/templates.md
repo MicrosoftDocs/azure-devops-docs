@@ -2,7 +2,7 @@
 title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 02/24/2021
 monikerRange: '> azure-devops-2019'
 ---
