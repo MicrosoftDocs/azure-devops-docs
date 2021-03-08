@@ -4374,7 +4374,7 @@ Versions in the "Server" column are linked to the appropriate download location.
 </thead>
 <tbody>
         <tr>
-          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true)">2020 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020&preserve-view=true)">2020 RTW</a></td>
           <td>Oct. 6, 2020</td>
           <td>18.170.30525.1</td>
         </tr>
