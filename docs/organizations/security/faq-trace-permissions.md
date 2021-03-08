@@ -3,7 +3,7 @@ title: Trace permissions
 description: Learn how to trace permissions if you're having permissions issues with Azure DevOps
 ms.technology: devops-security
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
-ms.topic: troubleshooting
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

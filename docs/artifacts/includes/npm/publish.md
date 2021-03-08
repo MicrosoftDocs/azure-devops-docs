@@ -8,7 +8,7 @@ ms.date: 06/19/2020
 
 This article will show you how to connect your npm client to your feed in Azure Artifacts and share your packages with your team and your organization.
 
-If you don't have a feed yet, check out the [Create a feed](../../get-started-npm.md#create-a-feed) section in the npm quickstart to set up your own Azure Artifacts feed.
+If you don't have a feed yet, check out the [Create a feed](../../get-started-npm.md#1-create-a-feed) section in the npm quickstart to set up your own Azure Artifacts feed.
 
 ## Publish your packages
 

@@ -1,12 +1,11 @@
 ---
-title: Data locations for Azure DevOps 
-titleSuffix: Azure DevOps Services
+title: Azure DevOps - data location
 description: Learn where your data is stored for Azure DevOps
 ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2020
+ms.date: 01/22/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -39,10 +38,9 @@ Except as noted below, Azure DevOps maintains all customer data within your sele
 - test results
 - geo-redundant mirrors and offsite backups
 
-Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
+Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
 
 ### Profile data 
-
 Azure DevOps stores information that's global in nature, such as user identities and profile information as follows: 
 - EU-based users: profile data is in EU data center  
 - US-based users: profile data is in US data center 

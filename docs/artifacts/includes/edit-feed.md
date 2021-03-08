@@ -12,13 +12,13 @@ With your feed selected, select the gear icon :::image type="icon" source="../..
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of the Edit feed button.](../media/editfeed-azure-devops-newnav.png)
+> ![Edit feed button](../media/editfeed-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 > [!div class="mx-imgBorder"] 
-> ![Screenshot of the Edit feed button.](../media/editfeed.png)
+> ![Edit feed button](../media/editfeed.png)
 
 ::: moniker-end

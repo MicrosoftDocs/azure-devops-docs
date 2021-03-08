@@ -1,7 +1,7 @@
 ---
-title: About access levels
+title: What are access levels? What access levels are supported?
 titleSuffix: Azure DevOps
-description: Learn how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
+description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
 ms.technology: devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual

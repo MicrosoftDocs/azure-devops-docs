@@ -124,7 +124,7 @@
      inkscape:zoom="1.336478"
      inkscape:cx="248.36035"
      inkscape:cy="289.20788"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg5370"
@@ -153,6 +153,21 @@
      fill="#e6f26d"
      id="path4572"
      style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578"
+     x="83.03978"
+     y="51.3624"
+     style="stroke-width:0.730811"><tspan
+       letter-spacing="-0.034em"
+       id="tspan4574"
+       style="stroke-width:0.618677">F</tspan><tspan
+       x="91.00415"
+       y="51.3624"
+       id="tspan4576"
+       style="stroke-width:0.730811">abrikam</tspan></text>
   <text
      font-size="24"
      font-family="SegoeUI, Segoe UI"
@@ -670,35 +685,4 @@
        x="150.81036"
        y="183.44969"
        style="stroke-width:0.219244">Public</tspan></text>
-  <text
-     transform="scale(0.98064606,1.0197359)"
-     font-size="17.5395px"
-     font-family="SegoeUI, 'Segoe UI'"
-     id="text4578"
-     x="98.026573"
-     y="50.414135"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
-       sodipodi:role="line"
-       id="tspan963"
-       x="98.026573"
-       y="50.414135">Feed</tspan></text>
-  <rect
-     style="opacity:0.998;fill:#b4a0ff;fill-opacity:1;stroke:#00070f;stroke-width:0.74;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-     id="rect964"
-     width="159.36554"
-     height="22.438484"
-     x="160.50076"
-     y="288.82312" />
-  <text
-     transform="scale(0.98064606,1.0197359)"
-     font-size="17.5395px"
-     font-family="SegoeUI, 'Segoe UI'"
-     id="text4578-3"
-     x="172.41933"
-     y="299.8905"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
-       sodipodi:role="line"
-       id="tspan989"
-       x="172.41933"
-       y="299.8905">Available packages</tspan></text>
 </svg>

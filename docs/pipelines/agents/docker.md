@@ -96,7 +96,7 @@ Next, create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if ((Test-Path Env:AZP_WORK) -and -not (Test-Path $Env:AZP_WORK)) {
+    if ($Env:AZP_WORK -and -not (Test-Path Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
@@ -403,11 +403,11 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 1. Create the secrets on the AKS cluster.
 
    ```shell
-   kubectl create secret generic azdevops \
-     --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
-     --from-literal=AZP_TOKEN=YourPAT \
-     --from-literal=AZP_POOL=NameOfYourPool
-   ```
+    kubectl create secret generic azdevops \
+    --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+    --from-literal=AZP_TOKEN=YourPAT \
+    --from-literal=AZP_POOL=NameOfYourPool
+    ```
 
 2. Run this command to push your container to Container Registry:
 
@@ -424,48 +424,48 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
    ```shell
-   apiVersion: apps/v1
-   kind: Deployment
-   metadata:
-     name: azdevops-deployment
-     labels:
-       app: azdevops-agent
-   spec:
-     replicas: 1 #here is the configuration for the actual agent always running
-     selector:
-       matchLabels:
-         app: azdevops-agent
-     template:
-       metadata:
-         labels:
-           app: azdevops-agent
-       spec:
-         containers:
-         - name: kubepodcreation
-           image: AKRTestcase.azurecr.io/kubepodcreation:5306
-           env:
-             - name: AZP_URL
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_URL
-             - name: AZP_TOKEN
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_TOKEN
-             - name: AZP_POOL
-               valueFrom:
-                 secretKeyRef:
-                   name: azdevops
-                   key: AZP_POOL
-           volumeMounts:
-           - mountPath: /var/run/docker.sock
-             name: docker-volume
-         volumes:
-         - name: docker-volume
-           hostPath:
-             path: /var/run/docker.sock
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: azdevops-deployment
+      labels:
+        app: azdevops-agent
+    spec:
+      replicas: 1 #here is the configuration for the actual agent always running
+      selector:
+        matchLabels:
+          app: azdevops-agent
+      template:
+        metadata:
+          labels:
+            app: azdevops-agent
+        spec:
+          containers:
+          - name: kubepodcreation
+            image: AKRTestcase.azurecr.io/kubepodcreation:5306
+            env:
+              - name: AZP_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_URL
+              - name: AZP_TOKEN
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_TOKEN
+              - name: AZP_POOL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_POOL
+            volumeMounts:
+            - mountPath: /var/run/docker.sock
+              name: docker-volume
+          volumes:
+          - name: docker-volume
+            hostPath:
+              path: /var/run/docker.sock
    ```
 
    This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.

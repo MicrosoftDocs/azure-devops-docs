@@ -164,7 +164,7 @@ Now that the application has been built, it's time to release it. However, no de
 	```azurepowershell
 	# Using this script we will fetch storage key which is required in terraform file to authenticate backend storage account
 	
-	$key=(Get-AzStorageAccountKey -ResourceGroupName $(terraformstoragerg) -AccountName $(terraformstorageaccount)).Value[0]
+	$key=(Get-AzureRmStorageAccountKey -ResourceGroupName $(terraformstoragerg) -AccountName $(terraformstorageaccount)).Value[0]
 	
 	Write-Host "##vso[task.setvariable variable=storagekey]$key"
 	```

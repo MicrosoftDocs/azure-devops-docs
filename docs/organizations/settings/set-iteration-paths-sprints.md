@@ -1,5 +1,5 @@
 ---
-title:  Define iteration paths and configure team iterations
+title: Define sprints for a project or team
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.technology: devops-agile

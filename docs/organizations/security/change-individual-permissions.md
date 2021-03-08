@@ -1,7 +1,7 @@
 ---
 title: Change individual or group permissions
 titleSuffix: Azure DevOps
-description: Learn how to add custom security groups, change permissions for groups or individuals tutorial
+description: Add custom security groups, change permissions for groups or individuals tutorial
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli

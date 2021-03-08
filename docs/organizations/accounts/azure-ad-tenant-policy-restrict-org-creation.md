@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2021
+ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -20,7 +20,9 @@ Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which 
 
 ## Prerequisites
 
-You must be an Azure DevOps Administrator in Azure AD to manage this policy. It isn't a requirement to be a Project Collection Administrator.
+You must be an Azure DevOps Administrator in Azure AD to manage this policy. However, you do not need to be a Project Collection Admin.
+
+For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 If you don't see the policy section in Azure DevOps, you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
@@ -29,14 +31,7 @@ If you don't see the policy section in Azure DevOps, you aren't an administrator
 You can also check your role using the Azure AD PowerShell module.
 ![Azure AD PowerShell to enable policy](media/azure-ad-tenant-policy/azure-ad-powershell.png)
 
-For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-
-> [!NOTE]
-> An Azure DevOps Administrator can only restrict new organization creation for individual users, rather than groups at this time. 
-
 ## Turn on the policy
-
-
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -51,7 +46,7 @@ For more information about the new built-in Azure AD roles, see [Administrator r
 
 ### Create allow list
 
-With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
+With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users or groups with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
 
 1. Select **Add AAD user or group**.
 

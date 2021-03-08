@@ -182,7 +182,7 @@ For a different experience than one of the default options use the **CustomerQnA
 ```json
 {
     "CustomerQnASupport": {
-        "enablemarketplaceqna": true,
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
     } 
 }
@@ -192,7 +192,7 @@ For a different experience than one of the default options use the **CustomerQnA
 
 Properties for the Customer Q & A Support section:
 
-- **enablemarketplaceqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
+- **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
 - **url** - string, URL for custom Q&A
 
 
@@ -203,7 +203,7 @@ Properties for the Customer Q & A Support section:
 ```json
 {
      "CustomerQnASupport": {
-        "enablemarketplaceqna":"true",
+        "enableqna":"true",
         "url": "http://uservoice.visualstudio.com"
     } 
 }
@@ -213,7 +213,7 @@ Properties for the Customer Q & A Support section:
 ```json
 {
      "CustomerQnASupport": {
-        "enablemarketplaceqna":"true"
+        "enableqna":"true"
     } 
 }
 ```
@@ -222,7 +222,7 @@ Properties for the Customer Q & A Support section:
 ```json
 {
      "CustomerQnASupport": {
-        "enablemarketplaceqna":"false"
+        "enableqna":"false"
     } 
 }
 ```

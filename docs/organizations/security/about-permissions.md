@@ -1,5 +1,5 @@
 ---
-title: Get started with permissions, access levels, and security groups 
+title: How permissions, access, and security groups are managed 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
 ms.technology: devops-security

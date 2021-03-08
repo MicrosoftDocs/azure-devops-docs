@@ -44,8 +44,6 @@ git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 ![Connect to a Git repo in Azure Repos from Visual Studio](./media/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
 
 ---
@@ -80,8 +78,6 @@ git checkout -b francis/demo-feature
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 In Visual Studio, choose **Team Explorer > Branches > right-click on branch > New Local Branch From...**
 
 ![Creating a new branch from Visual Studio Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-createbranch.png)
@@ -109,8 +105,6 @@ git add --all
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 In Visual Studio, choose **Team Explorer > Changes > Untracked Files > add individual files or add all**
 
 ![Viewing Tracked and Untracked Changes in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-untracked.png)
@@ -134,8 +128,6 @@ git status
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 In Visual Studio, choose **Team Explorer > Changes > Included Changes**
 
 ![Using Visual Studio Team Explorer to show staged changes](./media/mapping-my-tfvc-actions-to-git/actionmap-status-vs2.png)
@@ -157,8 +149,6 @@ git commit
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 In Visual Studio, choose **Team Explorer > Changes > Commit**
  
 ![Creating a Git commit in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-commit.png)
@@ -177,8 +167,6 @@ git push --set-upstream origin francis/demo-feature
 
 
 # [Visual Studio](#tab/visual-studio)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 In Visual Studio, choose **Team Explorer > Branches > right-click on local branch > Publish Branch**
 
@@ -215,8 +203,6 @@ git log
 As shown above, `git log` lists the author, email, date written, and the commit SHA-1 checksum. As a TFVC user you may want to use the `--stat` option to include more information, such as file name and change statistics. 
 
 # [Visual Studio](#tab/visual-studio)
-
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 You can retrieve a history view of the **local** repository in the Visual Studio IDE.
 

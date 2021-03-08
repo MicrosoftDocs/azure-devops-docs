@@ -75,8 +75,6 @@ in a `revert`, making it safe to use when working with others.
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE [temp](includes/note-new-git-tool.md)]
-
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
 
