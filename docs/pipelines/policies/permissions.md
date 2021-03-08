@@ -42,7 +42,7 @@ You can update pipeline permissions with security groups or by adding individual
 
 When it comes to security, there are different best practices and levels of permissiveness. 
 
-* In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
+* In many cases, you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
 * Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
 
@@ -61,7 +61,7 @@ To set the permissions at project level for all pipelines, choose **Manage secur
 
     :::image type="content" source="media/manage-security-all-pipelines.png" alt-text="Manage security for all pipelines in a project. ":::
 
-1. Modify the permissions associated with a [Azure DevOps group](../../organizations/security/permissions.md) (example: Build Administrators) or [individual user](set-permissions.md). 
+1. Modify the permissions associated with an [Azure DevOps group](../../organizations/security/permissions.md) (example: Build Administrators) or [individual user](set-permissions.md). 
 
 1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
 
@@ -83,7 +83,7 @@ To set or override the permissions for a specific pipeline, choose **Security** 
 
 ### Pipeline permissions reference
  
-These permissions are defined for pipelines. All of these can be set for both all pipelines in a project or for an individual pipeline.
+These permissions are defined for pipelines. All of these permissions can be set for both all pipelines in a project or for an individual pipeline.
 
 To learn more about how permissions are set, including inheritance, see [About permissions and inheritance](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md)
 
@@ -109,7 +109,7 @@ To learn more about how permissions are set, including inheritance, see [About p
 
 Default values for these permissions are set for team project collections and project groups. For example, <strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and <strong>Build Administrators</strong> are given all of the above permissions by default.
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. 
+Once you've been added as a team member, you're a member of the Contributors group. This group permission allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. 
 
 For more information on default permissions, see [Default permissions and access quick reference](../../organizations/security/permissions-access.md). 
 
@@ -157,7 +157,7 @@ are denied all permissions except <strong>View release pipeline</strong> and
 
 ## Set task group permissions
 
-You can use task groups to combine a sequence of tasks already defined in a build or a release pipeline into a single, reusable task. [Task groups](../library/task-groups.md) are defined in the **Task groups** tab for **Azure Pipelines**.
+You can use task groups to combine a sequence of tasks already defined in a pipeline into a single, reusable task. [Task groups](../library/task-groups.md) are defined in the **Task groups** tab for **Azure Pipelines**.
 
 Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group pipeline.
 
@@ -215,7 +215,7 @@ To [define and manage variable groups](../library/variable-groups.md) and [secur
 
 :::image type="content" source="media/pipeline-library-permissions.png" alt-text="Open the Library menu option.":::
 
-Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). Membership of these roles can be configured hierarchically, as well as at either project level or individual entity level.
+Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). Membership of these roles can be configured hierarchically, and at either project level or individual entity level.
 
 You can configure Library object permissions for everything in your library or for an individual variable group or secure file. Select the **Security** option in the navigation. 
 
@@ -235,7 +235,7 @@ You [add users to the following roles](set-permissions.md) from the project-leve
 
 [!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
 
-## Set deployment pool permissinos
+## Set deployment pool permissions
 
 You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
 
