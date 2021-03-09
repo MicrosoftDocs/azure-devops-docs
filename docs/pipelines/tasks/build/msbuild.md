@@ -279,10 +279,10 @@ In addition to the pipeline diagnostic logs, you can also check these other type
 
 If you are using a hosted build agent, you might want to try to reproduce the error locally. This will help you to narrow down whether the failure is the result of the build agent or the build task.
 
-Run the same MSBuild command on your local machine using the same arguments. Check out [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019) for reference
+Run the same MSBuild command on your local machine using the same arguments. Check out [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019&preserve-view=true) for reference
 
 > [!TIP]
-> If you can reproduce the problem on your local machine, then your next step is to investigate the [MSBuild](/visualstudio/msbuild/msbuild?view=vs-2019) issue.
+> If you can reproduce the problem on your local machine, then your next step is to investigate the [MSBuild](/visualstudio/msbuild/msbuild?view=vs-2019&preserve-view=true) issue.
 
 For more information on [Microsoft hosted agents](../../agents/hosted.md#microsoft-hosted-agents)
 

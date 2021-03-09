@@ -30,6 +30,9 @@ In this tutorial you learn how to:
 ## Cherry-pick a commit
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
 2. Right-click the branch containing the changes you want and select **View History...**. 
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    

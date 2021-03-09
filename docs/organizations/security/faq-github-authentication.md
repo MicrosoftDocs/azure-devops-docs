@@ -3,7 +3,7 @@ title: Authenticating and inviting GitHub users frequently asked questions
 description: Learn about frequently asked questions (FAQs) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 ms.date: 06/04/2020
