@@ -41,7 +41,7 @@ While environment at its core is a grouping of resources, the resources themselv
 > It is possible to create an empty environment and reference it from deployment jobs. This will let you record the deployment history against the environment.
 
 > [!NOTE]
-> You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
+> You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md).
 
 <a name="target-from-deployment-job"></a>
 
@@ -72,7 +72,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 
 ## Target a specific resource within an environment from deployment job
 
-You can scope the target of deployment to a particular resource within the environment. This allows you to record deployment history on a specific resource within the environment. The steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job. 
+You can scope the target of deployment to a particular resource within the environment. This allows you to record deployment history on a specific resource within the environment. The steps of the deployment job **automatically inherit** the service connection details from the resource targeted by the deployment job. 
 
 ```YAML
 environment: 'smarthotel-dev.bookings'
@@ -104,7 +104,7 @@ If you're using an AKS private cluster, the **Environments** tab isn't available
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. You can use approval checks to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline consumes resource. As the owner of a resource, such as an environment, you can [define approvals and checks](approvals.md) that must be satisfied before a stage consuming that resource starts. 
+You can manually control when a stage should run using approval checks. You can use approval checks to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can [define approvals and checks](approvals.md) that must be satisfied before a stage consuming that resource starts. 
 
 Currently, manual approval checks are supported on environments. 
 For more information, see [Approvals](approvals.md).
@@ -135,7 +135,7 @@ You can control who can create, view, use, and manage the environments with user
 
 -  Navigate to the specific **Environment** that you would like to authorize. 
 -  Click on overflow menu button located at the top-right part of the page next to "Add resource" and choose **Security** to view the settings.
--  In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**. 
+-  In the **User permissions** panel, click on **+Add** to add a **User or group** and select a suitable **Role**. 
 
 | Role on an environment | Purpose |
 |------------------------------------|---------|
