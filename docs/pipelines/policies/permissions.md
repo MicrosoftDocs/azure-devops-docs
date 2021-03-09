@@ -203,15 +203,22 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 > | **Edit task group** | Can create, modify, or delete a task group. | 
 
 
-## Set agent permissions
+## Set agent pool permissions
 
 You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
+To configure agent pool permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. Select **Security** to configure security settings for all agent pools. 
+
+:::image type="content" source="media/agent-pool-security.png" alt-text="Configure agent pool security."::: 
+
+ To configure permissions for one agent pool, select the agent. Then, select the **Security** tab.
+
+:::image type="content" source="media/single-agent-pool-security.png" alt-text="Set security for one agent pool.":::
+
 ## Set Library permissions
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). You can configure these roles hierarchically.
-
 
 To [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), open the **Library** tab in **Azure Pipelines**.
 
@@ -229,7 +236,16 @@ You can configure Library object permissions for everything in your library or f
 
 ## Set service connection permissions
 
-You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
+To configure [service connection](../library/service-endpoints.md) permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. Select **Service connections** in **Pipelines** to configure service connections. 
+
+You can configure permissions in a hierarchical manner either for all service connections, or for an individual connection.  
+
+To configure permissions for all service connections, select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::.
+
+:::image type="content" source="media/security-option-service-connection.png" alt-text="Select security service connection option.":::
+
+to configure permissions for one service connection, open the service connection and select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: within an individual service connection.
+
 
 ### Service connection permissions reference
 
@@ -237,7 +253,9 @@ You [add users to the following roles](set-permissions.md) from the project-leve
 
 ## Set deployment pool permissions
 
-You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
+To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md). 
+
+You can [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. 
 
 
 ### Deployment pool permissions reference
