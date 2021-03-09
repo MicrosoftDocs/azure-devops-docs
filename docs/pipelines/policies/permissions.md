@@ -208,7 +208,8 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
-To configure agent pool permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. Select **Security** to configure security settings for all agent pools. 
+To configure agent pool permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. 
+Select **Security** to configure security settings for all agent pools. 
 
 :::image type="content" source="media/agent-pool-security.png" alt-text="Configure agent pool security."::: 
 
@@ -216,7 +217,7 @@ To configure agent pool permissions, open **Settings** :::image type="icon" sour
 
 :::image type="content" source="media/single-agent-pool-security.png" alt-text="Set security for one agent pool.":::
 
-## Set Library permissions
+## Set library permissions
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). You can configure these roles hierarchically.
 
@@ -244,7 +245,7 @@ To configure permissions for all service connections, select **Security** from *
 
 :::image type="content" source="media/security-option-service-connection.png" alt-text="Select security service connection option.":::
 
-to configure permissions for one service connection, open the service connection and select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: within an individual service connection.
+To configure permissions for one service connection, open the service connection and select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: within an individual service connection.
 
 
 ### Service connection permissions reference
@@ -253,9 +254,14 @@ to configure permissions for one service connection, open the service connection
 
 ## Set deployment pool permissions
 
-To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md). 
+You can set default security roles for all [deployment groups](../release/deployment-groups/index.md) and manage security roles for an individual deployment group.
 
-You can [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. 
+To set default deployment group permissions, open **Deployment groups** in the **Pipelines** tab. Then, select **Security**.
+
+:::image type="content" source="media/deployment-groups-permissions.png" alt-text="Select Security to manage default deployment group permissions.":::
+
+
+To set permissions for a specific deployment group, select the deployment group. On the deployment group page, select **Security**.
 
 
 ### Deployment pool permissions reference
@@ -265,7 +271,21 @@ You can [add users to the following roles](set-permissions.md) from the collecti
 
 ## Set environment permissions 
 
-You can use roles to control who [can create, view, and manage environments](../process/environments.md#security). When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
+You can use roles and user permissions to control who [can create, view, and manage environments](../process/environments.md#security). Environment roles are hierarchical and can be applied to all environments or one environment. 
+
+To change environment permissions, open **Environments** in the **Pipelines** tab. 
+
+:::image type="content" source="media/environments-permissions.png" alt-text="Select Environments.":::
+
+Select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to change permissions for all environment.
+
+To change the permission for one environment, select the environment. Then, select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::.  
+
+ When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
+
+### Environment permissions reference
+
+[!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
 ## Related notes 
 
