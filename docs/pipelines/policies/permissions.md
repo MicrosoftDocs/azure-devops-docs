@@ -10,7 +10,7 @@ ms.date: 03/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Pipeline permissions and security roles
+# Set pipeline object-level permissions
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
