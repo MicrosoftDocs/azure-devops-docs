@@ -12,6 +12,8 @@ monikerRange: '<= azure-devops'
 
 # Delete a Git branch
 
+This article describes how to delete a Git branch by using two different methods: in Visual Studio and from the command line.
+
 > [!NOTE] 
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
