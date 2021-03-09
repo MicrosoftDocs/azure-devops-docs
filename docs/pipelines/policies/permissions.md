@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 Pipeline permissions are the object-level permissions associated with a set of pipelines or one pipeline in an Azure DevOps project. 
 Permissions in Azure DevOps are hierarchical and can be set at the organization, server (for on-premises), project, and object levels. 
 
-This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** menu:
+This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** tab:
 
 - pipeline permissions
 - release permissions
@@ -210,15 +210,14 @@ You can configure this in a hierarchical manner either for all pools, or for an 
 
 ## Set Library permissions
 
-Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. 
+Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). You can configure these roles hierarchically.
+
 
 To [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), open the **Library** tab in **Azure Pipelines**.
 
 :::image type="content" source="media/pipeline-library-permissions.png" alt-text="Open the Library menu option.":::
 
-Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). Membership of these roles can be configured hierarchically, and at either project level or individual entity level.
-
-You can configure Library object permissions for everything in your library or for an individual variable group or secure file. Select the **Security** option in the navigation. 
+You can configure Library object permissions for everything in your library or for an individual variable group or secure file. Select the **Security** option in the navigation for all of your variable groups and secure files or for one instance. 
 
 :::image type="content" source="media/pipelines-security-library.png" alt-text="Security option in Library.":::
 
