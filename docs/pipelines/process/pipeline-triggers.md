@@ -2,9 +2,10 @@
 title: Configure pipeline triggers
 description: Configure pipeline triggers
 ms.topic: conceptual
-ms.author: ashkir
-author: ashokirla
-ms.date: 10/20/2020
+ms.author: sdanie
+author: steved0x
+ms.date: 03/09/2021
+ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2019"
 ---
 
