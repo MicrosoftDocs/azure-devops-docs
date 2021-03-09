@@ -29,6 +29,12 @@ sections:
         answer: |
           While both query and search finds and list work items, the filter features and result presentation are different. To learn more, see [About managed queries, Managed work item queries versus semantic searches](about-managed-queries.md#semantic-v-managed).  
 
+      - question: Can I export a query and import to another project?  
+        answer: |
+          **Yes**. You can save a query as a `.wiq` file, update the syntax, and then import it to another project, organization, or collection.  can  both query and search finds 
+          and list work items, the filter features and result presentation are different. 
+          To learn more, see [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md#wiql).  
+
       - question: What are all the query filter functions? 
         answer: |
           From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs-boards-plans).  
@@ -171,18 +177,6 @@ sections:
         answer: |
           **Yes**. Simply open a query in a new browser tab to run several queries at the same time.  
 
-  - name: Find work items
-    questions:
-      - question: Where can I find work assigned to me or work that I'm following?
-        answer: | 
-          Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**. 
-
-      - question: Where can I find recent work item activity?
-        answer: | 
-          - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
-
-          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
-
   - name: Navigate 
     questions: 
       - question: How do I quickly navigate to queries I view frequently? 
@@ -202,6 +196,19 @@ sections:
 
           > [!div class="mx-imgBorder"]  
           > ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
+           
+  - name: Find work items
+    questions:
+      - question: Where can I find work assigned to me or work that I'm following?
+        answer: | 
+          Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**. 
+
+      - question: Where can I find recent work item activity?
+        answer: | 
+          - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+
+          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
+
 
   - name: Linked work item queries 
     questions: 
@@ -218,7 +225,7 @@ sections:
           **No** across collections. This isn't a supported feature. 
           ::: moniker-end
 
-  - name: Bulk add and update using queries
+  - name: Bulk add and update work items using queries
     questions: 
       - question: Can I export a cross-project query to Excel? 
         answer: |
@@ -267,6 +274,6 @@ additionalContent: |
   ## Related articles
   -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
-  -  [Excel FAQs](../backlogs/office/faqs.md)
+  -  [Excel FAQs](../backlogs/office/faqs.yml)
 
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

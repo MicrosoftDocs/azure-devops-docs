@@ -20,4 +20,4 @@ To create a work item select the text in the wiki page where you want to embed t
 > [!div class="mx-imgBorder"]
 > ![Create and embed work items from wiki content.](../../media/154_07.gif "Create and embed work items from wiki content")
 
-To learn more about creating and embeding a work item from wiki, see our documentation [here](/azure/devops/project/wiki/create-embed-wit-from-wiki?view=azure-devops).
+To learn more about creating and embeding a work item from wiki, see our documentation [here](/azure/devops/project/wiki/create-embed-wit-from-wiki?view=azure-devops&preserve-view=true).
