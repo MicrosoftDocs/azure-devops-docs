@@ -104,14 +104,14 @@ Sample JSON:
 
 ```json
 	{
-	    "event.type": "git.push",
+	    "eventType": "git.push",
 	    ...
 	    "messages": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
 	    },
-	    "detailedMessages": {
+	    "detailedMessage": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."

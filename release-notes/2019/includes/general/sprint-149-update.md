@@ -8,4 +8,4 @@ With our Sprint 148 update we gave you the ability to connect your organization 
 
 There are two steps to restore disconnected members. First, the current identities of those members are mapped to identities in the newly connected Azure AD. Since some disconnected members may not have matching identities in the Azure AD, the second step is to invite those remaining members as guests to the Azure AD. This update provides an interface to take both steps right from the Azure AD settings page in the Azure DevOps portal.
 
-Look for updates in our documentation [here](/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
+Look for updates in our documentation [here](/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops&preserve-view=true).

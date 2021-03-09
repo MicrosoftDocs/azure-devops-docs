@@ -1,5 +1,5 @@
 ---
-title: How permissions, access, and security groups are managed 
+title: Get started with permissions, access levels, and security groups 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
 ms.technology: devops-security
@@ -152,7 +152,7 @@ no members of the group are able to access the project, collection, or deploymen
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 

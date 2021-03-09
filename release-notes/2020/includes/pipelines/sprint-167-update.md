@@ -27,9 +27,9 @@ The following additional checks are now available:
 
 When you add an approval to an environment or a service connection, all multi-stage pipelines that use the resource automatically wait for the approval at the start of the stage. The designated approvers need to complete the approval before the pipeline can continue.
 
-With this update, the approvers are sent an email notification for the pending approval. Users and team owners can opt-out of or configure custom subscriptions using <a href="/azure/devops/notifications/navigating-the-ui?view=azure-devops">notification settings</a>.
+With this update, the approvers are sent an email notification for the pending approval. Users and team owners can opt-out of or configure custom subscriptions using <a href="/azure/devops/notifications/navigating-the-ui?view=azure-devops&preserve-view=true">notification settings</a>.
 
 > [!div class="mx-imgBorder"]
 > ![Approval notification.](../../media/167-0.png)
 
-In addition to email notifications, project administrators can also direct notifications to <a href="/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops">Microsoft Teams</a> or <a href="/azure/devops/pipelines/integrations/slack?view=azure-devops">Slack</a>.
+In addition to email notifications, project administrators can also direct notifications to <a href="/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops&preserve-view=true">Microsoft Teams</a> or <a href="/azure/devops/pipelines/integrations/slack?view=azure-devops&preserve-view=true">Slack</a>.

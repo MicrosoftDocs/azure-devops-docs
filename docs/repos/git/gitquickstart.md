@@ -37,6 +37,9 @@ To get a copy of the source code, you [clone](clone.md) a Git repository. Clonin
 If you don't have a Git repository yet, you can create one [using your own code](creatingrepo.md). Continue with the steps in this article to commit and share your work.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
 
    ![Cloning Azure DevOps Server Git repositories in Visual Studio](media/gitquickstart-vs2017/manage-connections.png) 
@@ -80,6 +83,9 @@ The recommended [Git workflow](gitworkflow.md) uses a new branch for every featu
 You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select the **Home** button and choose **Branches**. 
 
    ![Screenshot showing Branches in Team Explorer.](media/gitquickstart-vs2017/branches.png)
@@ -145,6 +151,9 @@ push changes after you add commits to a branch.
 Once you push the changes, you can create a [pull request](pull-requests.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the main branch of the code.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
    ![Synchronization](media/gitquickstart-vs2017/sync.png)
@@ -204,6 +213,9 @@ It's a good idea to pull your branches regularly to keep them up to date with th
 Pulling often makes sure that your feature branches from your main branch are using the latest version of the code.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Home** and choose **Sync** to open **Synchronization**.
 
    ![Synchronization with others.](media/gitquickstart-vs2017/sync.png)
