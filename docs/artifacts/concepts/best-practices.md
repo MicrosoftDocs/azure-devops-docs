@@ -11,29 +11,31 @@ monikerRange: '>= tfs-2017'
 
 This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure Artifacts.
 
-## Creating packages as part of a build
+## Create and publish packages
 
-### Each repository should only reference one feed
+Follow these guidelines and best practices when creating or publishing your packages.
 
-A feed is a container for packages. You can have multiple feeds for different projects but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](upstream-sources.md) to bring packages from multiple feeds together into a single feed.
+- **Each repository should only reference one feed**:
 
-### On package creation, automatically publish packages back to the feed.
+A feed is an organizational construct to host packages. You can have multiple feeds for a project but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](upstream-sources.md) to access packages from multiple feeds through a single upstream.
 
-This will populate the `@local` view of your feed. For more information on views, check out the [views concept page](views.md).
+- **Automatically publish newly created packages to your feed**:
 
-### Enable retention policies to automatically cleanup old package versions
+This will populate the `@local` view of your feed. See [Feed views](views.md) to learn more about feed views and upstream sources.
+
+- **Enable retention policies to automatically cleanup old package versions**:
 
 Deleting old package versions improves client performance and releases storage space. You can choose how many versions of a package to retain when setting up your [retention policy](../how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
 
-### Promote your package to the correct view
+- **Promote your package to the correct view**:
 
-When a package is ready for early adopters, select that package and its dependency graph and promote it to the `@prerelease` view.
+When a package is ready for early adopters, select that package from within your feed and promote it to the `@prerelease` view.
 
-When the package is deemed of sufficient quality to be released, promote that package and its dependency graph into the `@release` view.
+When the package is deemed of sufficient quality to be released, promote that package to the `@release` view.
 
-Promoting package versions to a view ensures they won't be deleted by retention policies. For more information on views, check out the [views concept page](views.md).
+Promoting package versions to a view ensures they won't be deleted by retention policies. For more information on views, check out the [Feed views](views.md) article.
 
-### If external teams are consuming your package, ensure that your `@release` view and `@prerelease` view are visible across the organizations
+- **If external teams are consuming your packages, ensure that `@release` and `@prerelease` views are visible across the organizations**:
 
 If these views aren't visible, teams won't have access to your packages.
 
