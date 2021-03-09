@@ -39,30 +39,24 @@ Promoting package versions to a view ensures they won't be deleted by retention 
 
 If these views aren't visible, teams won't have access to your packages.
 
-## Consuming packages from public and internal sources as part of a build
+## Consume packages
 
-### Each repository should have a unique feed
+Follow these guidelines and best practices when consuming packages from feeds and upstream sources.
 
-A feed is a container for packages, the only package source should be that single unique feed for each repository.
+- **Configure upstream sources for your feed**:
 
-### Configure upstream sources for public and internal sources
+If you want to consume packages from public registries such as NuGet.org or npmjs.com, you should consider adding upstream sources to your feed.
 
-Add any public sources as a public upstream.
+For more details, see [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
 
-Add any internal sources as an Azure DevOps Services upstream.
+- **Sources not in your organization but in the same AAD tenant should be added using the feed locator**:
 
-Find out more information about [upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
+The feed locator uses the following syntax: `azure-feed://<organization>/<projectName>/<feed>@<view>`
 
-### Sources not in your organization but in the same AAD tenant should be added using the feed locator
-
-The feed locator uses the following syntax:
-
-`azure-feed://<organization>/<feed>@<view>`
-
-### Ensure that the order of the sources matches your desired package resolution order
+- **Ensure that the order of the sources matches your desired package resolution order**:
 
 The feed will check each upstream in order, returning the package from the first source that can provide it.
 
-### To avoid confusion, we recommend placing any public upstreams FIRST in your resolution order
+- **To avoid confusion, we recommend placing any public upstreams FIRST in your resolution order**:
 
 This prevents other sources from overriding well-known packages with altered or incompatible versions.
