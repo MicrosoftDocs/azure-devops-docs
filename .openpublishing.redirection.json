@@ -9573,12 +9573,12 @@
     {
       "source_path": "docs/git/pull-requests-overview.md",
       "redirect_url": "/azure/devops/repos/git/pull-requests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/pull-requests.md",
       "redirect_url": "/azure/devops/repos/git/pull-requests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/repo-rename-tfs2015.md",
