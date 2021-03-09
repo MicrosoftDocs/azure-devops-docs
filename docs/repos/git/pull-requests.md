@@ -610,7 +610,7 @@ For most teams, nearly all pull requests target the same branch, such as `main` 
 
 ## Complete the pull request
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
@@ -694,7 +694,7 @@ In all these cases, you still have the option of rebasing your branch locally an
 
 ::: moniker-end
 
-::: moniker range= "<= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
