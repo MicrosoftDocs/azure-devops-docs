@@ -24,7 +24,7 @@ If you would prefer to migrate your Azure DevOps organization to a different geo
 * [How Microsoft categorizes data](https://www.microsoft.com/trustcenter/privacy/data-management/customer-data-definitions)
 * [Data management at Microsoft](https://www.microsoft.com/trust-center/privacy/data-management)
 * [Azure customer data protection](/azure/security/azure-protection-of-customer-data)
-* [Azure DevOps transferring your data details](/azure/devops/organizations/security/data-location?view=azure-devops&preserve-view=true #transferring-your-data)
+* [Azure DevOps transferring your data details](/azure/devops/organizations/security/data-location?view=azure-devops#transferring-your-data&preserve-view=true)
 * [Data Residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/)
 
 ## Frequently Asked Questions
