@@ -126,7 +126,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2021 through Janu
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues, January 1-31, 2021](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2021-01-01..2021-01-31+).
 
 - [[azure-devops-docs] Update the external links to GitHub Actions documentation #10053](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10053)
-- [coverlet.msbuild is not accurate for .Net 5.0 #10009](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10009)
+- [coverlet.msbuild is not accurate for .NET 5.0 #10009](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10009)
 - [Documentation improvement needed for Markdown image resize syntax #9974](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9974)
 - [Pipeline publish path incorrect #9959](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9959)
 - [Incorrect casing of env var #9947](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9947)
@@ -150,7 +150,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Lifetime of the service principals #7436](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7436)
 - [nothing about filtering groups #6899](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6899)
 - [artifactName is optional, and it's default is NOT drop #6765](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6765)
-- [documentation for how to use service connection in powershell #5860](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5860)
+- [documentation for how to use service connection in PowerShell #5860](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5860)
 - [Sentence correction #4621](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4621)
 
 
