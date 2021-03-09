@@ -271,9 +271,6 @@ To set permissions for a specific deployment group, select the deployment group.
 
 ## Set environment permissions 
 
-> [!NOTE]
-> When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
-
 You can use roles and user permissions to control who [can create, view, and manage environments](../process/environments.md#security). Environment roles are hierarchical and can be applied to all environments or one environment. 
 
 To change environment permissions, open **Environments** in the **Pipelines** tab. 
@@ -286,6 +283,9 @@ To change the permission for one environment, select the environment. Then, sele
 
 
 ### Environment permissions reference
+
+> [!NOTE]
+> When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
