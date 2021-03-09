@@ -23,8 +23,8 @@ The following table describes supported artifact types in Azure Pipelines.
 | [npm](npm.md)                              | Publish npm packages to Azure Artifacts feeds or npm registry.                                                         |
 | [NuGet](nuget.md)                          | Publish NuGet packages to Azure Artifacts feeds or NuGet public repository.                                            |
 | [PyPI](pypi.md)                            | Publish Python packages to Azure Artifacts feeds or PyPI registry.                                                     |
-| [Symbols](symbols.md)                      | Symbol files contain debugging information about the compiled executables. You can publish symbols to a symbol server in Azure Artifacts to debug your application. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
 | [Universal packages](universal-packages.md)| Publish Universal Packages to Azure Artifacts feeds.                                                                   |
+| [Symbols](symbols.md)                      | Symbol files contain debugging information about the compiled executables. You can publish symbols to a symbol server in Azure Artifacts to debug your application. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
 
 ## How do I publish and consume artifacts?
 
@@ -40,7 +40,7 @@ Each kind of artifact has a different way of being published and consumed. Some 
 
 - [Publish an npm package from the command line](../../artifacts/npm/publish.md)
 - [Publish npm packages (YAML/Classic)](/npm.md)
-- [Consume NuGet packages]()
+- [Consume NuGet packages](../../artifacts/get-started-npm.md)
 
 #### [Python](#tab/python/)
 
