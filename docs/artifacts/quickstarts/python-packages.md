@@ -12,21 +12,21 @@ ms.custom: devx-track-python
 
 **Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
-This quickstart will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
+This guide will walk you through using Azure Artifacts to publish and consume Python packages to and from your feed.
 
 ## Create a feed
 
 [!INCLUDE [](../includes/create-feed.md)]
      
-## Connect to your feed
+## Connect to feed
 
 There are two primary ways to connect to a feed to publish or consume your Python packages:
 
-- Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
-- Manually set up credentials for `pip.ini`/`pip.conf` for pushes, and `.pypirc` for pulls with a personal access token (PAT).
+1. Install and use the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package, which will automatically set up authentication for you.
+1. Manually set up credentials for **pip.ini**/**pip.conf** for pushes, and **.pypirc** for pulls with a personal access token (PAT).
 
 > [!NOTE]
-> `artifacts-keyring` is not supported on newer versions of Ubuntu.
+> **artifacts-keyring** is not supported on newer versions of Ubuntu.
 
 ## Use artifacts-keyring to set up authentication
 
