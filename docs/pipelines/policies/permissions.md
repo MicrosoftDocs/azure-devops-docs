@@ -19,16 +19,6 @@ monikerRange: '>= tfs-2015'
 Pipeline permissions are the permissions associated with pipelines in an Azure DevOps project. 
 Permissions in Azure DevOps are hierarchical and can be set at the organization, server (for on-premises), project, and object levels. 
 
-This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** tab:
-
-- pipeline permissions
-- release permissions
-- task group permissions
-- library permissions
-- service connection permissions
-- deployment pool permissions
-- environment permissions
-
 Object-level permissions are designed to be more granular than organization-level permissions. For example, a user could have access to your Azure repository thanks to their organization-level permissions. However, that same user could be prevented from running a pipeline manually because of that pipeline's permissions. 
 
 You can increase the security of your pipeline by fine-tuning the object-level permissions associated with your pipeline. To learn more about best practices for pipeline security, see [Security Azure Pipelines](../security/overview.md). 
@@ -51,6 +41,7 @@ When it comes to security, there are different best practices and levels of perm
 
 * We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
 
+::: moniker range=">=azure-devops-2020"
 
 ### Update pipeline permissions at the project-level
 
@@ -79,10 +70,10 @@ To set or override the permissions for a specific pipeline, choose **Security** 
 
 2. Open an individual pipeline. 
 
-
  
 :::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
 
+::: moniker-end 
 
 ### Pipeline permissions reference
  
@@ -117,16 +108,21 @@ Once you've been added as a team member, you're a member of the Contributors gro
 For more information on default permissions, see [Default permissions and access quick reference](../../organizations/security/permissions-access.md). 
 
 
-
 ## Set release permissions
 
+
 Permissions for release pipelines follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual release pipeline.
+
+::: moniker range=">=azure-devops-2020"
 
 To set permissions at project level for all release definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 
 To set or override the permissions for a specific release pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png) icon next to that pipeline name. Then choose **Security** to open the **Permissions** dialog.
 
 To specify security settings for individual stages in a release pipeline, open the **Permissions** dialog by choosing **Security** on the shortcut menu that opens from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: on a stage in the release pipeline editor.
+
+::: moniker-end 
+
 
 ### Release permissions reference
 
@@ -158,11 +154,46 @@ default. <strong>Contributors</strong> are given all permissions except
 are denied all permissions except <strong>View release pipeline</strong> and
 <strong>View releases</strong>.
 
+::: moniker range="azure-devops-2019"
+
+## Default permissions assigned to built-in security groups
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
+
+### Task groups  
+
+[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
+
+::: moniker-end 
+
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/build.md)]
+
+### Release  
+
+[!INCLUDE [temp](../../organizations/security/includes/release.md)]
+
+::: moniker-end    
+
+
+
 ## Set task group permissions
 
 You can use task groups to combine a sequence of tasks already defined in a pipeline into a single, reusable task. [Task groups](../library/task-groups.md) are defined in the **Task groups** tab for **Azure Pipelines**.
 
 Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual task group pipeline.
+
+::: moniker range=">=azure-devops-2020"
 
 ### Set task group permissions at the project-level
 
@@ -194,6 +225,7 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 
 1. Set permissions by selecting **Allow** or **Deny** for the permission for a security group or an individual user. 
 
+::: moniker-end
 
 ### Task group permissions reference
 
@@ -210,6 +242,8 @@ Task group permissions follow a hierarchical model. Defaults for all the permiss
 You can use pre-defined roles to configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all pools, or for an individual pool.  
 
+::: moniker range=">=azure-devops-2020"
+
 To configure agent pool permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. 
 Select **Security** to configure security settings for all agent pools. 
 
@@ -219,9 +253,13 @@ Select **Security** to configure security settings for all agent pools.
 
 :::image type="content" source="media/single-agent-pool-security.png" alt-text="Set security for one agent pool.":::
 
+::: moniker-end
+
 ## Set library permissions
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). You can configure these roles hierarchically.
+
+::: moniker range=">=azure-devops-2020"
 
 To [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md), open the **Library** tab in **Azure Pipelines**.
 
@@ -231,6 +269,7 @@ You can configure Library object permissions for everything in your library or f
 
 :::image type="content" source="media/pipelines-security-library.png" alt-text="Security option in Library.":::
 
+::: moniker-end
 
 ### Library permissions reference
 
@@ -238,6 +277,14 @@ You can configure Library object permissions for everything in your library or f
 
 
 ## Set service connection permissions
+
+::: moniker range="<=azure-devops-2020"
+
+You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 To configure [service connection](../library/service-endpoints.md) permissions, open **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false":::. Select **Service connections** in **Pipelines** to configure service connections. 
 
@@ -249,6 +296,7 @@ To configure permissions for all service connections, select **Security** from *
 
 To configure permissions for one service connection, open the service connection and select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: within an individual service connection.
 
+::: moniker-end
 
 ### Service connection permissions reference
 
@@ -258,18 +306,22 @@ To configure permissions for one service connection, open the service connection
 
 You can set default security roles for all [deployment groups](../release/deployment-groups/index.md) and manage security roles for an individual deployment group.
 
+::: moniker range=">=azure-devops-2020"
+
 To set default deployment group permissions, open **Deployment groups** in the **Pipelines** tab. Then, select **Security**.
 
 :::image type="content" source="media/deployment-groups-permissions.png" alt-text="Select Security to manage default deployment group permissions.":::
 
-
 To set permissions for a specific deployment group, select the deployment group. On the deployment group page, select **Security**.
 
+::: moniker-end
 
 ### Deployment pool permissions reference
 
 [!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
+
+::: moniker range=">=azure-devops-2020"
 
 ## Set environment permissions 
 
@@ -282,7 +334,7 @@ To change environment permissions, open **Environments** in the **Pipelines** ta
 Select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to change permissions for all environment.
 
 To change the permission for one environment, select the environment. Then, select **Security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::.  
-
+ 
 
 ### Environment permissions reference
 
@@ -290,6 +342,8 @@ To change the permission for one environment, select the environment. Then, sele
 > When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
 
 [!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
+
+::: moniker-end
 
 ## Related notes 
 
