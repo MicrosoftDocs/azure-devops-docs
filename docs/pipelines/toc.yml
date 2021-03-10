@@ -497,7 +497,7 @@
     displayName: service endpoints
   - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
-  - name: Pipeline permissions and security roles
+  - name: Set pipelines permissions
     href: policies/permissions.md
   - name: Add users to contribute to pipelines
     href: policies/set-permissions.md
