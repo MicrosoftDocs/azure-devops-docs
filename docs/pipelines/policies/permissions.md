@@ -364,3 +364,11 @@ To change the permission for one environment, select the environment. Then, sele
 - [Set build and release permissions](set-permissions.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
+
+## FAQ
+
+### Why can't I create a new pipeline?
+
+You need edit build pipeline permissions to create a new pipeline. To add the permission, open the security settings for all pipelines and verify that  **Edit build pipeline** is set to *Allow* for your security group. 
+
+If you still are unable to create a pipeline after updating this permission, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
