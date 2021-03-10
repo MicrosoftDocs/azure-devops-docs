@@ -1,5 +1,5 @@
 ---
-title: Set pipeline object-level permissions
+title: Set pipeline permissions
 ms.topic: conceptual
 ms.custom: seodec18
 description: Understand how permissions and roles are used to securely manage Azure Pipelines.
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-Pipeline permissions are the object-level permissions associated with pipelines in an Azure DevOps project. 
+Pipeline permissions are the permissions associated with pipelines in an Azure DevOps project. 
 Permissions in Azure DevOps are hierarchical and can be set at the organization, server (for on-premises), project, and object levels. 
 
 This article also includes an overview of all of the object-level permissions that you can find in the **Pipelines** tab:
@@ -60,7 +60,7 @@ To set the permissions at project level for all pipelines, choose **Manage secur
     
     :::image type="content" source="media/pipelines-navigation.png" alt-text="Select Pipelines from the menu.":::
     
-1. Select **Manage security** from the contextual menu. 
+1. Select **Manage security** from **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
 
     :::image type="content" source="media/manage-security-all-pipelines.png" alt-text="Manage security for all pipelines in a project. ":::
 
