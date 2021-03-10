@@ -6,6 +6,7 @@ ms.topic: quickstart
 ms.date: 02/26/2021
 monikerRange: '>= tfs-2017'
 ms.custom: devx-track-python
+"recommendations": "true"
 ---
 
 # Get started with Python packages in Azure Artifacts
@@ -30,12 +31,12 @@ There are two primary ways to connect to a feed to publish or consume your Pytho
 
 ## Use artifacts-keyring to set up authentication
 
-The `artifacts-keyring` package allows your to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
+The **artifacts-keyring** package allows you to set up authentication to publish and consume your Python packages to and from your feed. Both [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) use the Python [keyring library](https://pypi.org/project/keyring/) to find credentials. 
 
 > [!IMPORTANT]
-> You must have pip 19.2 and twine 1.13.0 or higher to use `artifacts-keyring`.
+> You must have pip 19.2 and twine 1.13.0 or higher to use **artifacts-keyring**.
 
-1. In an elevated command prompt window, run the following command to install the [artifacts-keyring](https://github.com/microsoft/artifacts-keyring) package:
+1. In an elevated command prompt window, run the following command to install the artifacts-keyring package:
    
    ```Command
    pip install artifacts-keyring
