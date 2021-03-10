@@ -161,6 +161,33 @@ Permissions for release pipelines follow a hierarchical model. Defaults for all 
 
 ::: moniker range=">=azure-devops-2020"
 
+### Update pipeline permissions for all releases
+
+To update permissions for all releases, open **Releases** in the **Pipelines** tab. 
+
+1. Select the file view. 
+
+    :::image type="content" source="media/releases-select-file-view.png" alt-text="Select the all files view.":::
+
+1. Select the **All pipelines** folder.
+
+    :::image type="content" source="media/releases-select-all-pipelines.png" alt-text="Select all pipelines folder.":::
+
+1. Open **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**.
+
+
+### Update pipeline permissions for one release
+
+To update permissions for one release, first open **Releases** in the **Pipelines** tab.
+
+1. Select the release you want to modify.
+
+1. Open **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: and select **Security**.
+
+::: moniker-end 
+
+::: moniker range="<=azure-devops-2020"
+
 To set permissions at project level for all release definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 
 To set or override the permissions for a specific release pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png) icon next to that pipeline name. Then choose **Security** to open the **Permissions** dialog.
