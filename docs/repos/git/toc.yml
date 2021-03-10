@@ -76,8 +76,8 @@
     href: git-branching-guidance.md
   - name: Create a branch
     href: create-branch.md
-  - name: Create work in branches
-    href: branches.md
+  - name: Delete a Git branch
+    href: delete-git-branch.md
   - name: Change the default branch
     href: change-default-branch.md
   - name: Forks

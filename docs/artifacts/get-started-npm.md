@@ -138,7 +138,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, 
 
 At this point, your project should have a package.json file and a .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm discovers your feed in the .npmrc file in the current working directory. It then fetches the credentials from your home directory's .npmrc file that you configured in the "Create a feed" section.
 
-## Publish the npm package
+## Publish npm packages
 
 You can now publish the npm package:
 
@@ -153,9 +153,14 @@ Your npm package should now be available in your feed.
 > [!IMPORTANT]
 > Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build doesn't support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build might fail with an unrelated authentication error.
 
-## Related articles
+## Download npm packages
 
-- [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
-- [Use packages from npmjs.com](./npm/upstream-sources.md)
-- [Use npm scopes](npm/scopes.md)
-- [Use npm audit](npm/npm-audit.md)
+[!INCLUDE [](includes/npm/install.md)]
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
+> [Use packages from npmjs.com](./npm/upstream-sources.md)
+> [Use npm scopes](npm/scopes.md)
+> [Use npm audit](npm/npm-audit.md)
