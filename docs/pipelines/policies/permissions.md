@@ -29,6 +29,38 @@ To learn more about how Azure DevOps permissions work overall, including how the
 * To manage permissions for project-level groups, you'll need to be a **Project Administrator**. Learn more about  [project-level group permissions](../../organizations/security/permissions.md#project-level-groups). You'll need to be a member of the Project Administrators group to [add users to Azure Pipelines](set-permissions.md). 
 * To manage permissions for collection groups, you'll need to be a **Project Collection Administrator**. [Learn more about collection-level group permissions](../../organizations/security/permissions.md#collection-level-groups). 
 
+::: moniker range="azure-devops-2019"
+
+## Default permissions assigned to built-in security groups
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
+
+### Task groups  
+
+[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
+
+::: moniker-end 
+
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/build.md)]
+
+### Release  
+
+[!INCLUDE [temp](../../organizations/security/includes/release.md)]
+
+::: moniker-end    
+
+
 ## Set pipeline permissions
 
 You can update pipeline permissions with security groups or by adding individual users. To learn how to add a user to Azure Pipelines, see [Add users to Azure Pipelines](set-permissions.md).
@@ -40,6 +72,9 @@ When it comes to security, there are different best practices and levels of perm
 * Without **Delete builds** permission, users cannot delete even their own completed builds. However, keep in mind that they can automatically delete old unneeded builds using [retention policies](retention.md).
 
 * We recommend that you do not grant these permissions directly to a person. A better practice is to add the person to the build administrator group or another group, and manage permissions on that group.
+
+
+
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -74,6 +109,17 @@ To set or override the permissions for a specific pipeline, choose **Security** 
 :::image type="content" source="media/manage-security.png" alt-text="Manage pipeline security":::
 
 ::: moniker-end 
+
+::: moniker range="<=azure-devops-2020"
+Build and YAML pipeline permissions follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
+
+To set the permissions at project level for all pipelines in a project, choose **Security** from the action bar on the main page of Builds hub.
+
+To set or override the permissions for a specific pipeline, choose **Security** from the context menu of the pipeline.
+
+The following permissions are defined for pipelines. All of these can be set at both the levels.
+
+::: moniker-end
 
 ### Pipeline permissions reference
  
@@ -153,38 +199,6 @@ default. <strong>Contributors</strong> are given all permissions except
 <strong>Administer release permissions</strong>. <strong>Readers</strong>, by default,
 are denied all permissions except <strong>View release pipeline</strong> and
 <strong>View releases</strong>.
-
-::: moniker range="azure-devops-2019"
-
-## Default permissions assigned to built-in security groups
-
-### Build  
-
-[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
-
-### Release 
-
-[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
-
-### Task groups  
-
-[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
-
-::: moniker-end 
-
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-### Build  
-
-[!INCLUDE [temp](../../organizations/security/includes/build.md)]
-
-### Release  
-
-[!INCLUDE [temp](../../organizations/security/includes/release.md)]
-
-::: moniker-end    
-
 
 
 ## Set task group permissions
