@@ -170,6 +170,12 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker-end
 
+### Automatically set retention lease on pipeline runs
+
+Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](https://docs.microsoft.com/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for buildid and definition id.
+
+A retention lease can be added on a pipeline run for a specific period. For example, a pipeline run which deploys to a test environment can be retained for a shorter duration while a run deploying to production environment can be retained longer.
+
 ::: moniker range=">=azure-devops-2020"
 
 ## Delete a run
