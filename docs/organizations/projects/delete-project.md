@@ -1,25 +1,25 @@
 ---
 title: Delete, remove project
 titleSuffix: Azure DevOps
-ms.custom: seodec18, devx-track-azurecli
-description: Delete or remove a project from Azure DevOps.
+ms.custom: seodec18, devx-track-azurecli, contperf-
+description: Delete or remove a project from your organization in Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 07/20/2020
+ms.date: 03/09/2021
 ---
 
 # Delete a project
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-Learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
+If you have a project that's no longer valid, you can delete it from your organization in Azure DevOps. This action helps to simplify navigating to only those projects that are in use. 
 
 > [!Caution]
-> Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+> Projects get permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
 ## Prerequisites
 
@@ -65,10 +65,9 @@ Learn how to delete a project from Azure DevOps. Deleting a project helps simpli
 
     ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
-Your project is deleted and can be restored up to 28 days afterward.
-
 ::: moniker-end
 
+Your project is deleted and can be restored up to 28 days afterward. Your deleted project is removed from your projects list.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -105,8 +104,6 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
-
-
 
 <a name="delete-team-proj"></a>
 
@@ -162,11 +159,23 @@ If your project had a project portal, all links to that portal get removed from 
 
 ::: moniker-end
 
+## FAQs
+
+See the following frequently asked questions about deleting projects in Azure DevOps.
+
+### Q: What if the project I deleted remains in Visual Studio with its ID?
+
+A: 
+
+### Q: After deleting one project, why do work items in a remaining project still have links to the deleted project work items? 
+
+A: Work items get deleted within 24 hours after your project is deleted. You can run the RemoveUnusedContent job to immediately remove those work items.
+
 ::: moniker range="<= tfs-2018"
 
-## What to do if the delete action doesn't finish
+### Q: What if the delete action doesn't finish?
 
-Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
+A: Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
 
 - (**Processing**) means that the process has started and is in progress.
 
@@ -180,11 +189,15 @@ Review the status and log files for the delete action. Open the **Status** tab a
 
     If partial data remains, you can also use the [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd) command-line tool.
 
+### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, why?
+
+A: Wait 28 days before the project is permanently deleted.
+
 ::: moniker-end
-
-
 
 ## Related articles
 
-- [Create project](./create-project.md)
+- [Create a project](create-project.md)
+- [Restore a project](restore-project.md)
+- [Delete a project with REST API](/rest/api/azure/devops/core/projects/delete)
 - [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)
