@@ -4,14 +4,14 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 09/25/2020
+ms.date: 03/10/2021
 ---
 
-There are two types of feeds: project scoped and organization scoped feeds. All public feeds are project-scoped and they inherit the visibility settings of the hosting project.
+There are two types of feeds: project scoped and organization scoped feeds. All public feeds are project-scoped and they inherit the visibility settings of the hosting project. Creating a feed using the Azure DevOps portal web UI will create a project-scoped feed.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to **Azure Artifacts**.
+1. From withing your project, navigate to **Azure Artifacts**.
 
    > [!div class="mx-imgBorder"] 
    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
@@ -21,15 +21,15 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
    > [!div class="mx-imgBorder"] 
    > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
 
-3. Give your feed a **Name** and choose its **visibility**, **upstream sources** and **scope**.
+3. Give your feed a **Name** and choose its **visibility**, **upstream sources** and **scope** settings.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
 
-4. Select **Create**.
+4. When you are done, select **Create**.
 
 > [!NOTE]   
-> Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
+> Enabling upstream sources allows you to consume packages from public registries such as NuGet.org and npmjs.com, and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
 
@@ -53,8 +53,6 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
 > [!NOTE]   
-> Enabling upstream sources allow you to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
+> Enabling upstream sources allows you to consume packages from public registries such as NuGet.org and npmjs.com, and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
-
-See [Feeds and views permissions ](../feeds/feed-permissions.md) to learn more about managing feed permissions.
