@@ -27,7 +27,7 @@ To learn more about how Azure DevOps permissions work overall, including how the
 
 ## Prerequisites
 * To manage permissions for project-level groups, you'll need to be a **Project Administrator**. Learn more about  [project-level group permissions](../../organizations/security/permissions.md#project-level-groups). You'll need to be a member of the Project Administrators group to [add users to Azure Pipelines](set-permissions.md). 
-* To manage permissions for collection groups, you'll need to be a **Project Collection Administrator**. Learn more about collection-level group permissions](../../organizations/security/permissions.md#collection-level-groups). 
+* To manage permissions for collection groups, you'll need to be a **Project Collection Administrator**. [Learn more about collection-level group permissions](../../organizations/security/permissions.md#collection-level-groups). 
 
 ## Set pipeline permissions
 
