@@ -302,8 +302,6 @@ To add a tag when creating a pull request, type a tag name in the **Tags** secti
 
 :::image type="content" source="media/pull-requests/pull-request-tags-section.png" alt-text="Screenshot that shows the pull request Tags section highlighted.":::
 
-In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
-
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
@@ -317,8 +315,6 @@ Sometimes it's important to communicate extra information about a pull request t
 To add a label when creating a pull request, choose **Add label**. After you create a pull request, you can manage its labels in the **Labels** section.
 
 ![Add pull request label](media/pull-requests/add-pull-request-label.png)
-
-In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
 
 ::: moniker-end
 
