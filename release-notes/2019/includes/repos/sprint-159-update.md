@@ -41,4 +41,4 @@ Mobile
 
 As we listened to your feedback from the [Developer Community](https://developercommunity.visualstudio.com/idea/474980/support-of-proximity-search-terms-near-before-afte.html), we heard that you wanted the ability to search your code to find files with terms in close proximity to one another. You can now use **NEAR**, **BEFORE** and **AFTER** operators to find files based on the term distance and ordering. For example, if you search for *foo NEAR bar* it will return all files where *foo* is in proximity to the term *bar*. 
 
-To learn more about code search, see the documentation [here](/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops#search-for-special-characters).
+To learn more about code search, see the documentation [here](/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops&preserve-view=true#search-for-special-characters).

@@ -63,8 +63,6 @@ Work item queries only support querying of work items and work items linked to o
 - List work items linked from one project to another.  
 - Export a cross-project query to Excel. Direct links queries export to Excel as a flat-list. 
 
-<a id="ad-hoc-v-managed" /> 
-
 ## Query types (flat, direct links, tree)
 
 Azure Boards supports three query types. The icon next to each query indicates the query type. Use the following guidance to choose the query type based on what you want to accomplish with the query. 

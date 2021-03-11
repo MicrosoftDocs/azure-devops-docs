@@ -14,4 +14,4 @@ The new Basic process provides three work item types (Epics, Issues, and Tasks) 
 > [!div class="mx-imgBorder"]
 > ![Organize work using the Basic process.](../../media/146_20.png)
 
-See the [track issues and tasks](/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops) documentation to help you get started with your new project.
+See the [track issues and tasks](/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops&preserve-view=true) documentation to help you get started with your new project.

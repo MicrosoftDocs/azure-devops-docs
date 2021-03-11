@@ -9,6 +9,22 @@
         ],
         "group": "all",
         "exclude": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "**/obj/**",
+          "**/includes/**",
+          "**/_data/**",
+          "**/_shared/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md"
+        ],
+        "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -88,10 +104,8 @@
       "monikerRange": {
         "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/powerbi/**": ">= azure-devops-2019",
         "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops",
-        "reference/mapping/**": "<= tfs-2018"
+        "reference/witadmin/**": "< azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
