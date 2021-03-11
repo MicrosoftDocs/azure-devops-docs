@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 ## Publish Python packages
 
-To publish a Python package to your feed, follow these steps:
+To publish a Python package to your feed using the command line, follow these steps:
 
 1. Install the latest version of Azure Artifacts keyring
 
@@ -49,4 +49,35 @@ To publish a Python package to your feed, follow these steps:
 
    ```
    twine upload -r <organizationName> dist/*
+   ```
+
+### Consume Python packages
+
+To install a Python package from the command line, follow these steps:
+
+1. Update your Python package installer
+
+    ```Command
+    python -m pip install --upgrade pip
+    ```
+
+1. Ensure you have the latest version of Azure Artifacts keyring
+
+    ```Command
+    pip install twine keyring artifacts-keyring
+    ```
+
+1. [Create a virtual environment](https://docs.python.org/3/library/venv.html) if you don't have one already
+
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) configuration file to your virtual environment
+
+    ```Command
+    [global]
+    extra-index-url=https://pkgs.dev.azure.com/<organizationName>/_packaging/<organizationName>/pypi/simple/
+    ```
+
+1. Run the following command in your project directory to install your package
+
+   ```
+   pip install <package>
    ```
