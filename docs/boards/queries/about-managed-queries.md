@@ -215,8 +215,8 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 You can quickly create pie, bar, pivot, and trend charts from a flat-list query. Queries must be flat-list and return 1000 or less work items. You can add your query charts to a dashboard, retitle, and reconfigure them. 
 
-| ![Example pie chart.](media/about-queries/example-pie-chart.png)  |   ![Example pivot chart.](media/about-queries/example-pivot-chart.png) |
-| ![Example bar chart.](media/about-queries/example-bar-chart.png)  |   ![Example trend chart.](media/about-queries/example-trend-chart.png) |
+ ![Example pie chart.](media/about-queries/example-pie-chart.png)  ![Example pivot chart.](media/about-queries/example-pivot-chart.png) 
+ ![Example bar chart.](media/about-queries/example-bar-chart.png)  ![Example trend chart.](media/about-queries/example-trend-chart.png) 
 
 Query-based widgets provide support for presenting query information on a dashboard. For example, the number of active bugs or a list of work items that you can interact with. To learn about query charts and widgets, see these articles: 
  
