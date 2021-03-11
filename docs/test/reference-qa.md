@@ -505,7 +505,7 @@ You don't have to provide values in the shared steps definition. However, you ca
 ### Q: Which web browsers does the extension support?
 
 **A:** The Test &amp; Feedback extension is currently available for
-[Google Chrome](https://www.google.com/chrome/)
+[Google Chrome](https://www.google.com/chrome/),
 [Microsoft Edge](https://www.microsoft.com/edge/)
 and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
 
