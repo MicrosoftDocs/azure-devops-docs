@@ -63,7 +63,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Add work items to a board; update status through drag-and-drop
    :::column-end:::
    :::column span="1":::
@@ -83,7 +83,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Reorder work items or reparent child items through drag-and-drop; update a field on a card
    :::column-end:::
    :::column span="1":::
@@ -103,7 +103,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range=">= tfs-2015 < azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Add work items to a board; update status, reorder, or reparent child items through drag-and-drop; update a field on a card
    :::column-end:::
    :::column span="1":::
@@ -123,7 +123,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range="tfs-2013"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Add work items to a board; update status through drag-and-drop
    :::column-end:::
    :::column span="1":::
@@ -143,7 +143,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Add child items to a checklist
    :::column-end:::
    :::column span="1":::
@@ -163,7 +163,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Assign to a sprint (from card field)
    :::column-end:::
    :::column span="1":::
@@ -183,7 +183,7 @@ ms.date: 02/25/2021
 ::: moniker-end 
 ::: moniker range="tfs-2013"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Assign to a sprint
    :::column-end:::
    :::column span="1":::
@@ -202,7 +202,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker-end  
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Configure board settings  
      *(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)*
    :::column-end:::
