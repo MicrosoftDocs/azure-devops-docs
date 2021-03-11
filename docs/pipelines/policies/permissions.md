@@ -6,7 +6,7 @@ description: Understand how permissions and roles are used to securely manage Az
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: jukullam
 author: juliakm
-ms.date: 03/03/2021
+ms.date: 03/11/2021
 monikerRange: '>= tfs-2015'
 ---
 
