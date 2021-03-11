@@ -689,7 +689,9 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed. This field is read-only and only valid for Agile and CMMI work item types.  
-      Reference name=`Microsoft.VSTS.Common.ResolvedReason`, Data type=String 
+      
+      Reference name=`Microsoft.VSTS.Common.ResolvedReason`  
+      Data type=String 
    :::column-end:::
    :::column span="1":::
       All (Agile, CMMI)
@@ -701,8 +703,10 @@ You can use the following fields to filter your queries or build reports. Some o
       Reviewed By 
    :::column-end:::
    :::column span="2":::
-      The name of the team member who responded to a code review request and is cataloged in the code review response.   
-      Reference name=`Microsoft.VSTS.Common.ReviewedBy`, Data type=String (Identity)
+      The name of the team member who responded to a code review request and is cataloged in the code review response.  
+       
+      Reference name=`Microsoft.VSTS.Common.ReviewedBy`  
+      Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
       Code Review Response
@@ -730,8 +734,9 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end 
       ::: moniker range="< azure-devops-2019"
       To modify the workflow states, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
-      ::: moniker-end 
-      Reference name=`System.State`, Data type=String
+      ::: moniker-end  
+      Reference name=`System.State`  
+      Data type=String
    :::column-end:::
    :::column span="1":::
       All
@@ -743,8 +748,10 @@ You can use the following fields to filter your queries or build reports. Some o
       State Changed Date 
    :::column-end:::
    :::column span="2":::
-      The date and time when the value of the State field changed.
-      Reference name=`Microsoft.VSTS.Common.StateChangeDate`, Data type=DateTime
+      The date and time when the value of the State field changed.  
+      
+      Reference name=`Microsoft.VSTS.Common.StateChangeDate`  
+      Data type=DateTime
    :::column-end:::
    :::column span="1":::
       All
