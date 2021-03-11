@@ -82,9 +82,9 @@ When you search from Wiki, you automatically navigate to wiki search results. Te
 
 For more information about searching wikis, see [Search Wiki](../wiki/search-wiki.md).
 
-## Best practices for Search
 
-### Work item search
+
+## Work item search best practices
 
 - You can use a text search across all fields to efficiently locate relevant work items. This is useful when you are trying to, for example, search for all work items that had similar exception trace.
 - You can also use the quick in-line search filters on any work item field to [narrow down to a list](#narrow-search-results) of work items in seconds. The dropdown list of suggestions helps complete your search faster.
@@ -137,7 +137,7 @@ To get started, see the following articles:
 
 For specific managed query examples, see [Query quick reference, Example queries](../../boards/queries/query-index-quick-ref.md).  
 
-### Code search
+### Code search best practices
 
 - You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
 - You can [narrow your search](#narrow-search-results) by using project, repository, path, file name, and other filter operators. This helps you achieve your desired results even faster. Start with a higher-level search if you don’t know where the results would be and keep filtering till you have a subset of results to browse through and work on.
@@ -145,9 +145,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
 - Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 
-## Sort and view search results
-
-### Sort and view work item results
+## Sort and view work item results
 
 You can use the following common inline search filters to quickly access common shortcuts:
 
@@ -158,13 +156,13 @@ You can use the following common inline search filters to quickly access common 
 
 For more information about how to sort and view search results for work items, see [View and filter work item results](functional-work-item-search.md#view-and-filter-work-item-results).
 
-### Sort and view code results
+## Sort and view code results
 
 Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type that you want to include in your search string from the list, and then enter the criteria value.
 
 For more information about how to sort and view search results for code, see [View and filter code results](functional-code-search.md#view-and-filter-code-results).
 
-### Sort and view package results
+## Sort and view package results
 
 You can search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
 
@@ -222,26 +220,26 @@ In the following table, you find some other search functions.
 ---  
 :::row:::
    :::column span="1":::
-      <br/>**Search feature** 
+      **Search feature** 
    :::column-end:::
    :::column span="2":::
       **Usage**
    :::column-end:::
    :::column span="2":::
-      <br/>**Example**
+      **Example**
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker range=" azure-devops"
 :::row:::
    :::column span="1":::
-      <br/>**Proximity search** 
+      **Proximity search** 
    :::column-end:::
    :::column span="2":::
-      You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance.
+      You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance
    :::column-end:::
    :::column span="2":::
-      <br/>BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.
+      BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. AFTER: term1 AFTER term2: returns the same results as term2 BEFORE term1. NEAR: term1 NEAR term2: returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -249,100 +247,99 @@ In the following table, you find some other search functions.
 ::: moniker range=" >= azure-devops-2020"
 :::row:::
    :::column span="1":::
-      <br/>**Quick navigation** 
+      **Quick navigation** 
    :::column-end:::
    :::column span="2":::
-      Search for boards, backlogs, queries, and sprint from the instant search box.
+      Search for boards, backlogs, queries, and sprint from the instant search box
    :::column-end:::
    :::column span="2":::
-      <br/>...
+      Enter search criteria into the search box
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Instant search for work items** 
+      **Instant search for work items** 
    :::column-end:::
    :::column span="2":::
-      Enter the work item ID in the search box.
+      Enter the work item ID in the search box
    :::column-end:::
    :::column span="2":::
-      <br/>The work item opens in a modal dialog, providing access to read and edit the work item.
+      The work item opens in a modal dialog, providing access to read and edit the work item
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      <br/>**Keyword searches** 
+      **Keyword searches** 
    :::column-end:::
    :::column span="2":::
       Search for two keywords with *OR*
    :::column-end:::
    :::column span="2":::
-      <br/>validate OR release
+      validate OR release
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Exact match** 
+      **Exact match** 
    :::column-end:::
    :::column span="2":::
       Enclose a keyword or phrase in double-quotes
    :::column-end:::
    :::column span="2":::
-      <br/>"Client not found"
+      "Client not found"
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Work item ID** 
+      **Work item ID** 
    :::column-end:::
    :::column span="2":::
       enter *work item #* 
    :::column-end:::
    :::column span="2":::
-      <br/>8765921 
+      8765921 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Wildcard searches** 
+      **Wildcard searches** 
    :::column-end:::
    :::column span="2":::
       `alpha?version` finds work items containing words that start with *alpha*, have any alphanumeric character next, and end with version. `Browser*` finds work items containing words that start with Browser. 
    :::column-end:::
    :::column span="2":::
-      <br/>*alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox* 
+      *alpha1version* and *alphaXversion*, *BrowserEdge*, *BrowserIE* and *BrowserFirefox* 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Use wildcards in combination** 
+      **Use wildcards in combination** 
    :::column-end:::
    :::column span="2":::
       You can use wildcard characters anywhere in your search string except as a prefix.
    :::column-end:::
    :::column span="2":::
-      <br/>You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest. 
+      You can't use a search query such as *RequestHandler. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings area:*mobile and tags:*Browser are valid. CodeSenseHttp* finds files containing words that start with CodeSenseHttp, such as CodeSenseHttpClient and CodeSenseHttpClientTest. 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Boolean operator searches** 
+      **Boolean operator searches** 
    :::column-end:::
    :::column span="2":::
       Find two or more keywords using Boolean operators. AND is the default operator, and so this is equivalent to the search string validate revisit.
    :::column-end:::
    :::column span="2":::
-      <br/>validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
+      validate AND revisit finds files that contain both the words validate and revisit. validate OR revisit finds files that contain either of the words validate or revisit.
 · validate NOT revisit finds files that contain the word validate but not the word revisit.
 ·         (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed. 
    :::column-end:::
@@ -350,131 +347,119 @@ In the following table, you find some other search functions.
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Search across projects** 
+      **Search across projects** 
    :::column-end:::
    :::column span="2":::
-      Search across all the projects, teams, and repositories to which you have access. 
+      Search across all the projects, teams, and repositories to which you have access
    :::column-end:::
    :::column span="2":::
-      <br/>Search box search 
+      Enter search criteria into the search box
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Specific field search** 
+      **Specific field search** 
    :::column-end:::
    :::column span="2":::
-      Search for a specific field within a work item. 
+      Search for a specific field within a work item, for instance, *state* 
    :::column-end:::
    :::column span="2":::
-      <br/>Search box within work item 
+      Enter "state:closed" into the search box, which returns work items that are in a closed state
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Search discussions** 
+      **Search discussions** 
    :::column-end:::
    :::column span="2":::
       ... 
    :::column-end:::
    :::column span="2":::
-      <br/>... 
+      ... 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Functions to find specific types of code** 
+      **Functions to find specific types of code** 
    :::column-end:::
    :::column span="2":::
       ... 
    :::column-end:::
    :::column span="2":::
-      <br/>... 
+      ... 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Search for commits in branches** 
+      **Search for commits in branches** 
    :::column-end:::
    :::column span="2":::
       ... 
    :::column-end:::
    :::column span="2":::
-      <br/>... 
+      ... 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Special character searches** 
+      **Special character searches** 
    :::column-end:::
    :::column span="2":::
       You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that is not a part of the query language, (for example, excluding the characters : ( )[]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: () []*?) by enclosing the search string within double-quotes. 
    :::column-end:::
    :::column span="2":::
-      <br/> `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux". 
+      `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux". 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Expanded search box with filters and operators** 
+      **Expanded search box with filters and operators** 
    :::column-end:::
    :::column span="2":::
-      ...
+      Use filters, like ext = extension, file = filename, path = under path, and so on. Use operators like AND, NOT, or OR.
    :::column-end:::
    :::column span="2":::
-      ...
+      Select from the provided filters and operators, expanding your search.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Search for boards, backlogs, queries, and sprint from the instant search box** 
+      **Search for boards, backlogs, queries, and sprint from the instant search box** 
    :::column-end:::
    :::column span="2":::
-      Access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. You can also search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box.
+      Access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. You can also search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box
    :::column-end:::
    :::column span="2":::
-      Enter board name in the search box.
+      Enter board name in the search box
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Open work items from search** 
+      **Open work items from search** 
    :::column-end:::
    :::column span="2":::
-      ...
+      When you enter your search, a list of related work items appears
    :::column-end:::
    :::column span="2":::
-      ...
+      Select the work item # that appears within the Work items list
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Search for a file or folder in commit history** 
+      **Search for a file or folder in commit history** 
    :::column-end:::
    :::column span="2":::
-      ...
-   :::column-end:::
-   :::column span="2":::
-      ...
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      <br/>**Scope code search using path filters** 
-   :::column-end:::
-   :::column span="2":::
-      ...
+      
    :::column-end:::
    :::column span="2":::
       ...
@@ -483,10 +468,22 @@ In the following table, you find some other search functions.
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Quick navigation in Azure Boards search** 
+      **Scope code search using path filters** 
    :::column-end:::
    :::column span="2":::
-      Search and find any item within Azure Boards without having to switch tabs for your search.
+      Use path filters, such as 
+   :::column-end:::
+   :::column span="2":::
+      ...
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Quick navigation in Azure Boards search** 
+   :::column-end:::
+   :::column span="2":::
+      Search and find any item within Azure Boards without having to switch tabs for your search
    :::column-end:::
    :::column span="2":::
       Type the keyboard shortcut `/` on Azure Boards
@@ -495,10 +492,10 @@ In the following table, you find some other search functions.
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Access recently visited wiki pages** 
+      **Access recently visited wiki pages** 
    :::column-end:::
    :::column span="2":::
-      Access recently visited wiki pages by clicking on the search box in Wiki hub.
+      Access recently visited wiki pages by clicking on the search box in Wiki hub
    :::column-end:::
    :::column span="2":::
       invoke the search box by typing the keyboard shortcut `/`
@@ -507,13 +504,13 @@ In the following table, you find some other search functions.
 ---
 :::row:::
    :::column span="1":::
-      <br/>**Instant search for wiki** 
+      **Instant search for wiki** 
    :::column-end:::
    :::column span="2":::
-      View the wiki search results as you type in the search box.
+      View the wiki search results as you type in the search box
    :::column-end:::
    :::column span="2":::
-      *getting started* results in all the wiki pages that contain *getting started*.
+      *getting started* results in all the wiki pages that contain *getting started*
    :::column-end:::
 :::row-end:::
 ---
