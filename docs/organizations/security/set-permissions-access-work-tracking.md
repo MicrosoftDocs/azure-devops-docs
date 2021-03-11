@@ -245,7 +245,7 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
 
-## Manage test artifacts
+## Manage test plans and test suites
 
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
