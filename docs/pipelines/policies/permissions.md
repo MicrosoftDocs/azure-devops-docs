@@ -6,7 +6,7 @@ description: Understand how permissions and roles are used to securely manage Az
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
 ms.author: jukullam
 author: juliakm
-ms.date: 03/03/2021
+ms.date: 03/11/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -339,6 +339,9 @@ To configure permissions for one service connection, open the service connection
 
 ::: moniker-end
 
+If you're having trouble with permissions and service connections, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+
+
 ### Service connection permissions reference
 
 [!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
@@ -391,6 +394,7 @@ To change the permission for one environment, select the environment. Then, sele
 - [Set build and release permissions](set-permissions.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
+- [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 
 ## FAQ
 
@@ -398,4 +402,22 @@ To change the permission for one environment, select the environment. Then, sele
 
 You need edit build pipeline permissions to create a new pipeline. To add the permission, open the security settings for all pipelines and verify that  **Edit build pipeline** is set to *Allow* for your security group. 
 
-If you still are unable to create a pipeline after updating this permission, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
+If you're still unable to create a pipeline after updating this permission, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
+
+::: moniker range=">=azure-devops-2020"
+
+### Why do I see the message that I need to authorize a resource before the run can continue? 
+
+You'll need to authorize resources before you can use them. The exception to this is that when you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized. The resource are authorized for the pipeline as long as the user running the pipeline has access to the resource. 
+
+If you want to authorize **all pipelines** to access a resource like an agent pool, go to the permissions setting for that resource. 
+
+For example, if you want all pipelines to be able to use an agent pool, go to **Settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: and select **Agent Pools** in **Pipelines**. 
+
+Next, select the **Security** tab for a specific agent pool and update permissions to grant access to all pipelines. 
+
+:::image type="content" source="media/agent-pool-grant-permissions.png" alt-text="Grant permissions to all pipelines.":::
+
+To learn more about resources, see [Resources in YAML](../process/resources.md).
+
+::: moniker-end
