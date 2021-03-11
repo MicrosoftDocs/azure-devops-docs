@@ -11,7 +11,7 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From withing your project, navigate to **Azure Artifacts**.
+1. From within your project, navigate to **Azure Artifacts**.
 
    > [!div class="mx-imgBorder"] 
    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
@@ -21,7 +21,7 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
    > [!div class="mx-imgBorder"] 
    > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
 
-3. Give your feed a **Name** and choose its **visibility**, **upstream sources** and **scope** settings.
+3. Give your feed a **Name** and choose its **visibility**, **upstream sources, and **scope** settings.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
