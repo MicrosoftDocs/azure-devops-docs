@@ -16,9 +16,9 @@ ms.date: 03/10/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
+Workflow states support tracking the status of work as it moves from a new state to a closed or done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
-Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your project. 
+Each workflow consists of a set of states, valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your project. 
 
 Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it is reassigned to the tester who created it.  
 
@@ -34,8 +34,6 @@ You can also use the Activated By and Activated Date fields, or other workflow f
 > Not all fields are valid for all WITs. Jump to [Workflow and Kanban query fields](#workflow-fields) for the set of fields you can include in queries and which WITs they apply to.  
 
 If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md).  
-
-
 ## Supported operators and macros 
 
 Query clauses that specify an Identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
@@ -81,7 +79,7 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 ---
 :::row:::
    :::column span="1":::
-     ** Single text (String)** (Note 2)
+     **Single text (String)** (Note 2)
    :::column-end:::
    :::column span="3":::
       = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
@@ -353,7 +351,6 @@ For example, you can list items based on the team area path, and if they are in 
    :::column-end:::
    :::column span="3":::
       `Board Lane = Expedite`  
-
    :::column-end:::
 :::row-end:::
 ---
@@ -376,6 +373,7 @@ For example, you can list items based on the team area path, and if they are in 
    :::column-end:::
 :::row-end:::
 ---
+
 ::: moniker-end
 
 
