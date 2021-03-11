@@ -455,6 +455,8 @@
   - name: Add & manage agent pools
     href: agents/pools-queues.md
     displayName: queue, default, hosted, maintenance
+  - name: Historical graph for agent pools
+    href: agents/pool-consumption-report.md
   - name: Microsoft-hosted agents
     href: agents/hosted.md
   - name: Self-hosted Linux agents
@@ -495,7 +497,7 @@
     displayName: service endpoints
   - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
-  - name: Pipeline permissions and security roles
+  - name: Set pipelines permissions
     href: policies/permissions.md
   - name: Add users to contribute to pipelines
     href: policies/set-permissions.md

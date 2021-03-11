@@ -9,7 +9,7 @@ monikerRange: azure-devops
 
 # Quickstart: Migrate your classic pipeline to YAML
 
-Get started with YAML pipelines by using converting your existing Classic pipeline to use YAML. YAML-based pipelines enable you to implement your CI/CD strategy as code. You can use the **Export as YAML** option to export your YAML from an existing Classic pipeline. 
+Get started with YAML pipelines by converting your existing Classic pipeline to use YAML. YAML-based pipelines enable you to implement your CI/CD strategy as code. You can use the **Export as YAML** option to export your YAML from an existing Classic pipeline. 
 
 
 ## Prerequisites

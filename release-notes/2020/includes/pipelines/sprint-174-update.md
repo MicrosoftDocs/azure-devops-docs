@@ -80,7 +80,7 @@ Every job that runs in releases gets an access token. The access token is used b
 
 With this update, we build upon [improve pipeline security by restricting the scope of access tokens](../../../2019/sprint-160-update.md#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) and extend the same to classic releases.
 
-This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in Organization **Settings > Pipelines > Settings. > Limit job authorization scope to current project for release pipelines**. Learn more [here](/azure/devops/pipelines/release/artifacts?view=azure-devops#artifact-sources---azure-pipelines).
+This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in Organization **Settings > Pipelines > Settings. > Limit job authorization scope to current project for release pipelines**. Learn more [here](/azure/devops/pipelines/release/artifacts?view=azure-devops&preserve-view=true#artifact-sources---azure-pipelines).
 
 ### YAML preview API enhancements
 

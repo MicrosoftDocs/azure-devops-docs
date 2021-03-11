@@ -85,7 +85,7 @@ Attaching files to work items allows you and your team to centralize reference m
 
 ### Manage dependencies by linking work items across your organizations
 
-Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
+Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&preserve-view=true&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
 
 > [!NOTE]
 > Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Azure AD tenant.
@@ -120,7 +120,7 @@ Build counters provide a way to uniquely number and label builds. Previously, yo
 * You can define multiple counters per definition.
 * You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
 
-See the documentation on [User-defined variables](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops) for more information about build counters.
+See the documentation on [User-defined variables](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) for more information about build counters.
 
 ### Use YAML to specify branches to build for pull requests
 
@@ -214,7 +214,7 @@ The Linux hosting model for Azure Functions is based on Docker containers which 
 
 ### Azure Test Runner client to run manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
+You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops&preserve-view=true). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
 
 ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 

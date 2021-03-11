@@ -11,7 +11,7 @@ We're excited to announce the new Azure Boards app for Microsoft Teams. With thi
 
 ### Import work items from a CSV file
 
-Until now, importing work items from a CSV file was dependent on using the Excel plugin. In this update we are providing a first class import experience directly from Azure Boards so you can import new or update existing work items. To learn more, see the documentation [here](/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops).
+Until now, importing work items from a CSV file was dependent on using the Excel plugin. In this update we are providing a first class import experience directly from Azure Boards so you can import new or update existing work items. To learn more, see the documentation [here](/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Import work items from a CSV file.](../../media/159_01.gif)

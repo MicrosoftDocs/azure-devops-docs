@@ -386,7 +386,7 @@ They're applied left-to-right.
 
 #### Can I push changes directly to a branch after a branch policy is configured?
 
-No. After you set up a required branch policy, you can't directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
+No. After you set up a required branch policy, you can't directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests.md).
 
 >[!NOTE]
 >* If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after a required branch policy is configured.

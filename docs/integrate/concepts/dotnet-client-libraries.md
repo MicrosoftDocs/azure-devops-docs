@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/13/2020
+ms.date: 03/05/2021
 ---
 
 # .NET client libraries
