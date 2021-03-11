@@ -329,19 +329,19 @@ For example, you can list items based on the team area path, and if they are in 
 ::: moniker range=">= tfs-2015"
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       **Filter for**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       **Include these query clauses**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       User Stories in the **Code/Doing** column
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       `      Work Item Type = User Story`  
       `And` `Board Column = Code`   
       `And` `Board Column Done  = False`  
@@ -349,19 +349,19 @@ For example, you can list items based on the team area path, and if they are in 
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Items in the **Expedite** swimlane 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       `Board Lane = Expedite`  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Items in any swimlane whose label contains "Test"  
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       `Board Lane Contains Test`  
    :::column-end:::
 :::row-end:::
@@ -369,10 +369,10 @@ For example, you can list items based on the team area path, and if they are in 
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Items that were ever in the "In Review" column 
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       `Board Column Was Ever In Review`  
    :::column-end:::
 :::row-end:::
