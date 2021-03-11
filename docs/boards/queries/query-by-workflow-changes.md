@@ -433,12 +433,14 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops"
       The name of the team member who changed the status of a work item from *New* to *Active* or re-activated a work item after it had been closed, completed, or done. 
       ::: moniker-end 
-      Reference name=`Microsoft.VSTS.Common.ActivatedBy`, Data type=String (Identity)
+      Reference name=`Microsoft.VSTS.Common.ActivatedBy`  
+      Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Activated Date <sup> 1, 3</sup> 
@@ -450,12 +452,14 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops"
       The date and time when the work item was changed from *New* to *Active* or re-activated after it had been closed, completed, or done. 
       ::: moniker-end 
-      Reference name=`Microsoft.VSTS.Common.ActivatedDate`, Data type=DateTime
+      Reference name=`Microsoft.VSTS.Common.ActivatedDate`  
+      Data type=DateTime
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -467,19 +471,24 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The name of the team member who currently owns the work item. For more information, see [Note 1 on synchronization and person-name fields](#sync).  
-      Reference name=`System.AssignedTo`, Data type=String (Identity)
+        
+      Reference name=`System.AssignedTo`  
+      Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Board Column
    :::column-end:::
    :::column span="2":::
       The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
-      Reference name=`System.BoardColumn`, Data type=String  
+        
+      Reference name=`System.BoardColumn`  
+      Data type=String  
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -490,13 +499,16 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Board Column Done 
    :::column-end:::
    :::column span="2":::
-      The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a Kanban board column. 
-      Reference name=`System.BoardColumnDone`, Data type=Boolean  
+      The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a Kanban board column.  
+      
+      Reference name=`System.BoardColumnDone`  
+      Data type=Boolean  
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -507,13 +519,16 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Board Lane
    :::column-end:::
    :::column span="2":::
-      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.
-      Reference name=`System.BoardLane`, Data type=String  
+      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.  
+      
+      Reference name=`System.BoardLane`  
+      Data type=String  
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -524,6 +539,7 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -535,24 +551,30 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The name of the team member who set the state to closed, completed, or done.   
-      Reference name=`Microsoft.VSTS.Common.ClosedBy`, Data type=String (Identity)
+      
+      Reference name=`Microsoft.VSTS.Common.ClosedBy`  
+      Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Closed Date 
    :::column-end:::
    :::column span="2":::
-      The date and time when a work item was closed. 
-      Reference name=`Microsoft.VSTS.Common.ClosedDate`, Data type=DateTime
+      The date and time when a work item was closed.  
+      
+      Reference name=`Microsoft.VSTS.Common.ClosedDate`  
+      Data type=DateTime
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -563,25 +585,31 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      The name of the team member who created the work item. 
-      Reference name=`System.CreatedBy`, Data type=String (Identity)
+      The name of the team member who created the work item.  
+      
+      Reference name=`System.CreatedBy  
+      Data type=String (Identity)
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Created Date 
    :::column-end:::
    :::column span="2":::
-      The date and time when a work item was created. 
-      Reference name=`System.CreatedDate`, Data type=DateTime
+      The date and time when a work item was created.  
+      
+      Reference name=`System.CreatedDate`  
+      Data type=DateTime
    :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -596,11 +624,14 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops-2019"
       For On-premises XML process models, the reason values are defined within the `WORKFLOW` section of the work item type definition using the `REASON` element. To modify the defined reasons, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
       ::: moniker-end 
-      Reference name=`System.Reason`, Data type=String
+      Reference name=`System.Reason`  
+      Data type=String
+   :::column-end:::
    :::column span="1":::
       All (except Test Case and Shared Steps)
    :::column-end:::
-:::row-end::: 
+:::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -623,6 +654,7 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -645,6 +677,7 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -657,10 +690,12 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column span="2":::
       The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed. This field is read-only and only valid for Agile and CMMI work item types.  
       Reference name=`Microsoft.VSTS.Common.ResolvedReason`, Data type=String 
+   :::column-end:::
    :::column span="1":::
       All (Agile, CMMI)
    :::column-end:::
-:::row-end:::  
+:::row-end:::
+---
 :::row:::
    :::column span="1":::
       Reviewed By 
@@ -672,7 +707,8 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column span="1":::
       Code Review Response
    :::column-end:::
-:::row-end:::  
+:::row-end:::
+---
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -696,10 +732,12 @@ You can use the following fields to filter your queries or build reports. Some o
       To modify the workflow states, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
       ::: moniker-end 
       Reference name=`System.State`, Data type=String
+   :::column-end:::
    :::column span="1":::
       All
    :::column-end:::
-:::row-end:::  
+:::row-end:::
+---
 :::row:::
    :::column span="1":::
       State Changed Date 
@@ -712,7 +750,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
-
 ---
 
 #### Notes:  
