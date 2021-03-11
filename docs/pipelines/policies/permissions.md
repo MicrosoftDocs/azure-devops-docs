@@ -339,7 +339,7 @@ To configure permissions for one service connection, open the service connection
 
 ::: moniker-end
 
-If you are having trouble with permissions and service connections, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
+If you're having trouble with permissions and service connections, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 
 ### Service connection permissions reference
@@ -402,11 +402,11 @@ To change the permission for one environment, select the environment. Then, sele
 
 You need edit build pipeline permissions to create a new pipeline. To add the permission, open the security settings for all pipelines and verify that  **Edit build pipeline** is set to *Allow* for your security group. 
 
-If you still are unable to create a pipeline after updating this permission, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
+If you're still unable to create a pipeline after updating this permission, check to see if your [access level](../../organizations/security/access-levels.md) is set to **Stakeholder**. If you have stakeholder access, change your access to **Basic**. 
 
 ::: moniker range=">=azure-devops-2020"
 
-## Why do I see the message that I need to authorize a resource before the run can continue? 
+### Why do I see the message that I need to authorize a resource before the run can continue? 
 
 You'll need to authorize resources before you can use them. The exception to this is that when you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized. The resource are authorized for the pipeline as long as the user running the pipeline has access to the resource. 
 
