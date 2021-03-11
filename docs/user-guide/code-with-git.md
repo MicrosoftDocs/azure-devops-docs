@@ -231,7 +231,7 @@ This example shows the basic steps of creating and completing a pull request.
    ![Complete pull request](../repos/get-started/media/complete-pull-request.png)
 
 >[!NOTE]
->This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Pull requests overview](../repos/git/pull-requests-overview.md).
+>This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Create, view, and manage pull requests](../repos/git/pull-requests.md).
 
 ::: moniker-end
 
