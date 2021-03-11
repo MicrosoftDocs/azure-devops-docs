@@ -177,7 +177,7 @@ A subscription lets you control what your team is notified of and how the team r
    |**Team preference**   | use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).        |
    |**Custom email address**    |  Send an email to a specified email address.       |
    |**Members of Azure DevOps**   |  Send an individual email to each member of the team.       |
-   |**SOAP**    | Send to an eamil address.      |
+   |**SOAP**    | Send to an email address.      |
 
    See the following roles and their descriptions:
 
