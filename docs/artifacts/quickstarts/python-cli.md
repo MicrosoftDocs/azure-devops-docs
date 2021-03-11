@@ -1,6 +1,6 @@
 ---
 title: Publish and consume packages from the CLI
-description: Publish and consume Python packages from the command line interface
+description: Publish and consume Python packages from the command-line interface
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.date: 03/10/2021
@@ -12,9 +12,11 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
+With Azure Artifacts, you can publish and consume packages from Azure Artifacts feeds as well as public registries such as pypi.org. Follow this quickstart to learn how to publish and consume Python packages using the command line.
+
 ## Publish Python packages
 
-To publish a Python package to your feed using the command line, follow these steps:
+To publish a Python package to your feed, follow these steps:
 
 1. Install the latest version of Azure Artifacts keyring
 
@@ -51,7 +53,7 @@ To publish a Python package to your feed using the command line, follow these st
    twine upload -r <organizationName> dist/*
    ```
 
-### Consume Python packages
+## Consume Python packages
 
 To install a Python package from the command line, follow these steps:
 
@@ -81,3 +83,9 @@ To install a Python package from the command line, follow these steps:
    ```
    pip install <package>
    ```
+
+## Related articles
+
+- [Feeds permissions](../feeds/feed-permissions.md)
+- [Understand upstream sources](../concepts/upstream-sources.md)
+- [Publish Python packages with Azure Pipelines](../../pipelines/artifacts/pypi.md)
