@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 02/17/2021
+ms.date: 03/10/2021
 ---
 
 # Query by assignment or workflow changes
@@ -40,38 +40,60 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 Query clauses that specify an Identity or workflow-associated field can use the operators and macros listed in the following table. To learn about the field data type, see [Workflow and Kanban board fields](#workflow-fields) provided later in this article. 
 
-<table valign="top">
-<thead>
-<tr>
-<th width="22%"><p>Data type</p></th>
-<th width="78%"><p>Supported operators and macros</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><p><strong>Boolean <sup>1</sup></strong> </p></td>
-    <td>= , &lt;&gt; , =[Field] , &lt;&gt;[Field]</td>
-</tr>
-<tr>
-    <td><p><strong>DateTime</strong> </p></td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref> +/- n</strong> valid with any <strong>DateTime</strong> field</p></td>
-</tr>
-<tr>
-    <td><strong>Identity</strong></td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-    <p><strong>Macros</strong>: <strong><xref href="me" data-throw-if-not-resolved="False" data-raw-source="@me"></xref></strong> valid for all Identity fields</p></td>
-</tr>
-<tr>
-    <td><strong>Single text (String)</strong> </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
-    </td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="1":::
+      **Data type**
+   :::column-end:::
+   :::column span="3":::
+      **Supported operators and macros**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Boolean** (Note 1)
+   :::column-end:::
+   :::column span="3":::
+      = , &lt;&gt; , =[Field] , &lt;&gt;[Field]
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **DateTime**
+   :::column-end:::
+   :::column span="3":::
+      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  
+      **Macros**: **@Today**, **@Today +/- n** valid with any DateTime field 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Identity**
+   :::column-end:::
+   :::column span="3":::
+      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever  
+      **Macros**: **@me** valid for all Identity fields 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+     ** Single text (String)** (Note 2)
+   :::column-end:::
+   :::column span="3":::
+      = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 #### Notes:
-1. The <strong>Boolean</strong> data type field is supported for TFS 2017 and later versions.  
+1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
+2. The **Was Ever** operator is only valid for Kanban board columns for Azure DevOps Services at this time.  
+
 
 Use the **In** and **Not In** operators to filter for or exclude two or more picklist entries or a delimited set of items. Use the **In Group** or **Not In Group** operators to filter for items that belong or don't belong within a category group or  security group. For more information, see [Query fields, operators, and macros](query-operators-variables.md). 
 
@@ -316,7 +338,7 @@ For example, you can list items based on the team area path, and if they are in 
 ---
 :::row:::
    :::column span="1":::
-      User Stories in the Code/Doing column
+      User Stories in the **Code/Doing** column
    :::column-end:::
    :::column span="3":::
       `      Work Item Type = User Story`  
@@ -327,7 +349,7 @@ For example, you can list items based on the team area path, and if they are in 
 ---
 :::row:::
    :::column span="1":::
-      Items in the Expedite swimlane 
+      Items in the **Expedite** swimlane 
    :::column-end:::
    :::column span="3":::
       `Board Lane = Expedite`  
@@ -344,7 +366,19 @@ For example, you can list items based on the team area path, and if they are in 
    :::column-end:::
 :::row-end:::
 ---
- 
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      Items that were ever in the "In Review" column 
+   :::column-end:::
+   :::column span="3":::
+      `Board Column Was Ever In Review`  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+
+
 
 <a id="kanban-query-results">  </a>
 
@@ -784,7 +818,7 @@ You can use the following fields to filter your queries or build reports. Some o
 ::: moniker-end
  
 
-### people picker 
+### People picker 
 
 The **Assigned To** field is supported by the people picker feature. For example, when you choose the **Assigned To** field from within a work item form, the people picker is activated. As shown in the following image, you simply start typing the name of the user you want to select, and search until you find a match. Users that you've previously selected appear in the list automatically. To select users that you haven't selected previously, simply enter their entire name or search against the full directory.  
  

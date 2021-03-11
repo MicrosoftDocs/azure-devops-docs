@@ -38,7 +38,7 @@
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
-- name: Samples
+- name: Sample queries 
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
