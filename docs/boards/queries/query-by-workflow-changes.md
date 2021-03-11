@@ -50,7 +50,7 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 ---
 :::row:::
    :::column span="1":::
-      **Boolean** (Note 1)
+      **Boolean** <sup>1</sup>
    :::column-end:::
    :::column span="3":::
       = , &lt;&gt; , =[Field] , &lt;&gt;[Field]
@@ -79,7 +79,7 @@ Query clauses that specify an Identity or workflow-associated field can use the 
 ---
 :::row:::
    :::column span="1":::
-     **Single text (String)** (Note 2)
+     **Single text (String)** <sup>2</sup>
    :::column-end:::
    :::column span="3":::
       = , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
@@ -324,6 +324,9 @@ For example, you can list items based on the team area path, and if they are in 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
 
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 ---
 :::row:::
    :::column span="1":::
@@ -363,6 +366,7 @@ For example, you can list items based on the team area path, and if they are in 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -373,7 +377,6 @@ For example, you can list items based on the team area path, and if they are in 
    :::column-end:::
 :::row-end:::
 ---
-
 ::: moniker-end
 
 
