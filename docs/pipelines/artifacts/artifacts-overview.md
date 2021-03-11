@@ -45,7 +45,7 @@ Each kind of artifact has a different way of being published and consumed. Some 
 #### [Python](#tab/python/)
 
 - [Publish Python packages](pypi.md)
-- [Consume Python packages]()
+- [Consume Python packages](../../artifacts/quickstarts/python-cli.md)
 
 #### [Maven](#tab/maven/)
 
