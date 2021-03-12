@@ -13,6 +13,6 @@
 - name: Manage search indexing
   href: manage-search.md
 - name: FAQs
-  href: faq-search.md
+  href: faq-search.yml
 
   
