@@ -45,7 +45,7 @@ The PowerShell scripts require the SQL script files, so ensure the **SqlScripts*
 > * [TFS 2018 Update 2](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update2)
 > * [Azure DevOps Server and TFS 2018 Update 3](https://github.com/Microsoft/Code-Search/tree/master/TFS_2018Update3)
 
-### Check indexing status for TFS 2017 RTM
+### Check indexing status
 
 (For TFS 2017 Update 1 and later, and Azure DevOps Server, see the [next section](#check-indexing-status-for-tfs-2017-update-1-and-later).)
 
@@ -162,5 +162,5 @@ You're prompted to enter the following information:
 ## Related articles
 
 - [Install and configure Search](install-configure-search.md)
-- [Search FAQs](faq-search.md)
+- [Search FAQs](faq-search.yml)
 

@@ -80,7 +80,7 @@ Code Search requires the [Code Search extension](https://marketplace.visualstudi
 
 You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. You can also use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term. See the following examples.
 
-|Usage  |Example  |
+|**Usage**  |**Example**  |
 |---------|---------|
 |Find all instances of "ToDo" comments in your code.   | select `comment:` and enter `todo`        |
 |Search in specific locations, such as within a particular path.    |  use a search string such as `Driver path:MyShuttle/Server`    |
@@ -135,7 +135,7 @@ Narrow your search by using Boolean operators to combine search criteria. Combin
 Use parentheses to specify the precedence of the operations when you use more than one Boolean operator. By default, a search combines all the words you enter using the `AND` operator so that it only returns files that contain all of the key words you entered. 
 
 
-| Usage                                                                | Example                                                                    |
+| **Usage**                                                                | **Example**                                                                   |
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | Finds files that contain both the words **validate** and **revisit**.     | `validate AND revisit` |
 | Finds files that contain either of the words **validate** or **revisit**. | `validate OR revisit`  |
@@ -153,7 +153,7 @@ You can use more than one `?` wildcard to match more than one character.
 
 See the following table for more wildcard usage.
 
-| Usage                                                                 | Example                                                                   |
+|**Usage**                                                                | **Example**                                                                 |
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.    || `CodeSenseHttp*` and  `CodeA23?R`  |  
 | Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
@@ -182,22 +182,18 @@ You can include special characters in a search string, or search specifically fo
 according to the following rules:
 
 
-|Usage  |Example |
+|**Usage**  |**Example** |
 |---------|---------|
-|Search for any special character that isn't a part of the query language, 
-  for example, excluding the characters `: ( )[ ]*?`) as either a simple search string
-  or a phrase search string.   | `react-redux` or `"react-redux"` produce the same results        |
-|Search for a special character that is a part of the query language (`: ( )[ ]*?`)
-  by enclosing the search string within double-quotes.   | `"flatten()"` finds the literal string `flatten()` |
-|Search for a literal occurrence of the double-quote character `"` by preceding it with the
-  escape character `\` and enclosing the search string in double-quotes.     |`"\"react-redux\""` finds the literal string `"react-redux"`         |
+|Search for any special character that isn't a part of the query language, for example, excluding the characters `: ( )[ ]*?`) as either a simple search string or a phrase search string.   | `react-redux` or `"react-redux"` produce the same results        |
+|Search for a special character that is a part of the query language (`: ( )[ ]*?`) by enclosing the search string within double-quotes.   | `"flatten()"` finds the literal string `flatten()` |
+|Search for a literal occurrence of the double-quote character `"` by preceding it with the escape character `\` and enclosing the search string in double-quotes.     |`"\"react-redux\""` finds the literal string `"react-redux"`         |
 
 ### Search based on proximity
 
 You can search for files based on the term *vicinity* using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default proximity search looks for terms within five tokens distance. 
 
 
-|Boolean operator |Usage  |Example  |
+|**Boolean operator** |**Usage**  |**Example**  |
 |---------|---------|---------|
 |BEFORE   | Returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.        | `term1` BEFORE `term2`      |
 |AFTER    | Returns the same results as `term2` BEFORE `term1`                                                          | `term1` AFTER `term2`       |
@@ -273,7 +269,7 @@ Functions make it easy to narrow the search to specified locations, specific typ
 Narrow the search to a specific location using the `proj`, `repo`, or `path` filters:
 
 
-|Usage  |Example  |
+|**Usage**  |**Example**  |
 |---------|---------|
 |Finds all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.     | `QueueJobsNow proj:Fabrikam`        |
 |Finds all occurrences of the word **QueueJobsNow** in the **Contoso** repository.    |  `QueueJobsNow repo:Contoso`       |
@@ -300,7 +296,7 @@ the definition if you select an object name, or for references to a selected obj
 See the following examples of even more search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 
-|Usage |Example |
+|**Usage** |**Example** |
 |---------|---------|
 |Find all instances of "ToDo" comments in your code               |Select `comment:` and type `todo`   |
 |Search in specific locations, such as within a particular path   |Use a search string such as `Driver path:MyShuttle/Server`    | 
@@ -324,4 +320,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
-* [Search FAQs](faq-search.md)
+* [Search FAQs](faq-search.yml)

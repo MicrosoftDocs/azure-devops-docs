@@ -28,7 +28,6 @@ sections:
         
         You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
         ![Wildcard search for ge*](media/shared/faq-wildcard1.png)
-        while ```get*``` shows **109,134** results.
         ![Wildcard search for get*](media/shared/faq-wildcard2.png)
         Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
         Ensuring that you can find the most meaningful and actionable results as fast as possible, **enter more criteria in the search bar**.

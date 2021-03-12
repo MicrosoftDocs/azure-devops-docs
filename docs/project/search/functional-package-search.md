@@ -116,4 +116,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 * [Search code](functional-code-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
-* [Search FAQs](faq-search.md)
+* [Search FAQs](faq-search.yml)
