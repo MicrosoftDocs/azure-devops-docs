@@ -17,6 +17,8 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
 
+You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines. 
+
 ::: moniker range=">=azure-devops-2020"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
 ::: moniker-end
