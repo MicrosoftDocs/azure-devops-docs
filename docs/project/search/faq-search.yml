@@ -72,7 +72,7 @@ sections:
    
     - question: How do I know if indexing was triggered for all the collections?
       answer: |
-        [Check indexing status](administration.md#check-index) separately for each collection.
+        [Check indexing status](manage-search.md#check-indexing-status) separately for each collection.
     - question: When I search file:span, why does it return files with an extension?
       answer: |
         File:span searches will fetch all files named span with the extension included. This behavior occurs because the most common scenario for users is to fetch the filename along with the extension. In case you don't want to see the extension, use the following search string: file:{filename} NOT file:{filename}.*
@@ -91,11 +91,11 @@ sections:
     - question: Why doesn't Search show the expected results?
       answer: |
        1. If the files were added in the last few minutes, wait for about 10 minutes while they're indexed.
-       2. [Check indexing status](administration.md#check-index) for the collection. 
-       3. If the files are still not shown in the results, [reindex the repository or collection](administration.md#re-index) where the files are located.
+       2. [Check indexing status](manage-search.md#check-indexing-status) for the collection. 
+       3. If the files are still not shown in the results, [reindex the repository or collection](manage-search.md#re-index-a-repository-or-collection) where the files are located.
     - question: Why is Azure DevOps Server or TFS overall performance affected?
       answer: |
-       1. [Pause all indexing](administration.md#pause-index) and see if performance recovers.
+       1. [Pause all indexing](manage-search.md#pause-indexing) and see if performance recovers.
        2. If performance does recover, consider locating Search on a separate server if you haven't already done so.
     - question: Why doesn't Search work after upgrading to Azure DevOps Server 2019 Update 1?
       answer: | 
