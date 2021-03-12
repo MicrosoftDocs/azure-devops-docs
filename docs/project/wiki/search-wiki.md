@@ -83,4 +83,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 - [Search code](..//search/functional-code-search.md)
 - [Search work items](..//search/functional-work-item-search.md)
 - [Search artifacts](../search/functional-package-search.md)
-- [Search FAQs](../search/faq-search.md)
+- [Search FAQs](../search/faq-search.yml)
