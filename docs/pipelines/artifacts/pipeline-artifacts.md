@@ -51,25 +51,20 @@ steps:
 
 # [Classic](#tab/classic)
 
-:::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: **Publish Pipeline Artifact**
+- Add the :::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: **Publish Pipeline Artifact** task.
 
-* Artifact name:
-
-   ```
-   WebApp
-   ```
-
-* File or directory path:
-
-   ```
-   $(System.DefaultWorkingDirectory)/bin/WebApp
-   ```
+- Fill out the following fields:
+    - **Display name**: artifact display name
+    - **File or directory path**: the path of the file or directory to publish
+    - **Artifact name**: name of the artifact to publish
+    - **Artifact publish location**: choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent.
 
 # [Azure CLI](#tab/azure-cli)
 
-```azurecli
-  az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
-```
+- Run the following command to publish your Artifact
+    ```Command
+      az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+    ```
 
 ---
 
