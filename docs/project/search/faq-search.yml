@@ -25,7 +25,6 @@ sections:
 
     - question: Why isn't the wildcard search working as expected?
       answer: |
-        
         You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
         ![Wildcard search for ge*](media/shared/faq-wildcard1.png)
         ![Wildcard search for get*](media/shared/faq-wildcard2.png)

@@ -100,7 +100,7 @@ You can use the code type search functions with files written in C#, C, C++, Jav
 
    ![Open the file in Code Explorer](media/code-search-get-started/open-in-code-explorer.png)
 
-5. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+5. Quickly [search for work items](functional-work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
    ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
 
@@ -151,10 +151,10 @@ For example, you can't use a search query such as `*RequestHandler` or `class:?R
 
 You can use more than one `?` wildcard to match more than one character.
 
-See the following table for more wildcard usage.
+See the following table for more wildcard usage and examples.
 
-|**Usage**                                                                | **Example**                                                                 |
-|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+|**Usage**                                                              | **Example**                                             |
+|--------------------------------------------------------------------|------------------------------------------------------------|
 | Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.    || `CodeSenseHttp*` and  `CodeA23?R`  |  
 | Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
 
