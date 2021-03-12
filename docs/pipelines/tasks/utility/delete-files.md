@@ -34,7 +34,7 @@ None
 |`Contents`<br/>Contents|(Required) File/folder paths to delete. Supports multiple lines of minimatch patterns; each one is processed before moving onto the next line. [More Information](../file-matching-patterns.md). <br/> For example:<ul><li><code>\*\*/\*</code> deletes all files and folders in the root folder.</li><li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li><li><code>temp\*</code> deletes any file or folder in the root folder with a name that begins with <em>temp</em>.</li><li><code>\*\*/temp/\*</code> deletes all files and folders in any sub-folder named <em>temp</em>.</li><li><code>\*\*/temp\*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li><li><code>!(\*.vsix)</code> deletes all files in the root folder that do not have a <em>.vsix</em> extension.</li></ul>|
 |`RemoveSourceFolder`<br/>Remove SourceFolder|(Optional) Attempt to remove the source folder after attempting to remove `Contents`.<br/>Default value: `false`.<br/>If you want to remove the whole folder, set this to `true` and set `Contents` to `*`.|
 | <h3>Advanced</h3>|
-|`RemoveDotFiles`<br/>Remove DotFiles|(Optional) Delete files starting with a dot (.git, .dockerfile). Omits these files if it's not specified explicitly (for example, '/.*'). Please see this [link](https://github.com/isaacs/minimatch#dot) for more info.<br/>Default value: `false`.|
+|`RemoveDotFiles`<br/>Remove DotFiles|(Optional) Delete files starting with a dot (.git, .dockerfile). Omits these files if it's not specified explicitly (for example, '/.*'). [More information](https://github.com/isaacs/minimatch#dot).<br/>Default value: `false`.|
 ## Examples
 
 ### Delete several patterns
@@ -76,6 +76,20 @@ steps:
   inputs:
     contents: |
       some/{one,four}
+```
+
+### Delete files starting with a dot
+
+This example will delete all `.txt` files. Files starting with a dot will be deleted as well.
+
+```yaml
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove unneeded files'
+  inputs:
+    contents: |
+      /some/*.txt
+    removeDotFiles: true
 ```
 
 ## Open source
