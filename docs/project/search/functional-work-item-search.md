@@ -6,32 +6,32 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/04/2021
+ms.date: 03/12/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Functional work items search
+# Functional work item search
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Work Item Search is available as a built-in extension in Azure DevOps. Users can use Work Item Search by default without any installation when the Boards service is installed and enabled in Azure DevOps Services.
+Work Item Search is available as a built-in extension in Azure DevOps. 
+
+::: moniker range=" azure-devops"
+
+Users can use Work Item Search by default without any installation when the Boards service is installed and enabled in Azure DevOps Services.
+
+::: moniker-end
 
 By using Work Item Search, you can do the following tasks:
 
-* **Search over all your projects**:
-  Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters. 
-  
-* **Search across all work item fields**:
-  Quickly and easily find relevant work items by searching across all work item fields (including custom fields). Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.
-  
-* **Search in specific fields**:
-  Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The dropdown list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.
 
-* **Search across test**: 
-   Search across Test Plans, Test Suites, and other test work item types. 
-
-* **Take advantage of integration with work item tracking**:
-  The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and much more.
+|Task  |Description  |
+|---------|---------|
+|[Search over all your projects](#narrow-your-search-with-boolean-operators)   | Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters.         |
+|[Search across all work item fields](#full-text-search-across-all-fields)   | Quickly and easily find relevant work items by searching across all work item fields, including custom fields. Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.        |
+|[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The dropdown list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
+|[Search across test](#start-searching-work-items)   |Search across Test Plans, Test Suites, and other test work item types.         |
+|[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
 
 
 ## Prerequisites
@@ -54,7 +54,7 @@ Start searching across all your work items over all your projects, Test Plans, T
 
    :::image type="content" source="media/work-item-search-get-started/results-matching.png" alt-text="Search matching results":::
 
-   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for
+   This full text search uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for
    "updating" also finds instances of the word "updated" and "update".
 
 3. Select a snippet of a work item to display it in the window on the right side of your screen. 
@@ -64,15 +64,6 @@ Start searching across all your work items over all your projects, Test Plans, T
 4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 ::: moniker-end
-
-### Search by work item ID
-
-Enter the work item ID in the search box in the Azure DevOps title bar to quickly go to it. 
-Searching for a work item ID opens the work item in a modal dialog, providing quick access to read and edit work items.
-
-::: moniker range=">= azure-devops-2019"
-
-::: moniker-end 
 
 ::: moniker range=" <= tfs-2018"
 
@@ -88,12 +79,30 @@ Searching for a work item ID opens the work item in a modal dialog, providing qu
 
    ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
-   This is a full text search that uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Searches are _not_ case-sensitive.
+   This full text search uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Searches aren't case-sensitive.
 
 4. Select a snippet of a work item to display it in the right window. 
   
    Open the search results in a new browser tab from a search box by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
    ![the start search icon](../search/media/shared/start-search-icon.png) icon. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+
+::: moniker-end
+
+
+### Search by work item ID
+
+Enter the work item ID in the search box in the Azure DevOps title bar to quickly go to it. Searching for a work item ID opens the work item in a 
+modal dialog, providing quick access to read and edit work items.
+
+::: moniker range=">= azure-devops-2019"
+
+![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal-new.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
+
+![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal.png)
 
 ::: moniker-end
 
@@ -116,7 +125,7 @@ Searching for a work item ID opens the work item in a modal dialog, providing qu
 
    :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter the name of a field":::
 
-   The dropdown list shows work item field name suggestions that match user input thereby helping the user to complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
 
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
@@ -156,7 +165,7 @@ Searching for a work item ID opens the work item in a modal dialog, providing qu
 
    :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter a field name":::   
 
-   The dropdown list shows work item field name suggestions that match user input thereby helping the user to complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
 
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
@@ -185,7 +194,7 @@ You can easily search across all work item fields, including custom fields, whic
 
 <img alt="Search across all work item fields" src="media/work-item-search-get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
-Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Searches are _not_ case-sensitive.
+Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" also finds instances of the word "updated" and "update". Searches aren't case-sensitive.
 
 When you search from inside a project, the default is to search only within that project. While searching from inside a team, the default is to search only within the default area path of that team. When you have one project selected, you see a list of area paths in that project for which you have read access - you won't see any projects and area paths for which you don't have read permission. 
 Select area paths in the tree to narrow your search if necessary.
@@ -200,68 +209,33 @@ Open the search results in a new browser tab from either search box by selecting
 
 Quick inline search filters let you refine work items in seconds. The dropdown list of suggestions helps complete your search faster. Mix and match the functions to create quick powerful searches. 
 
-For example:
 
-* Scope your search terms to match in any work item field including custom fields.
-  Enter the field name followed by the search terms; for example, a search such as **tags:Critical** 
-  finds work items having a field 'tags' containing the term 'Critical'.
-
-* Use multiple inline search filters to scope your search by any work item field, including custom fields.
-  For example, a search such as **t: Bug path:"project\search"** finds all bugs in the area path "project\search".
-
-* Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.
-  For example, a search such as <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week
-
-* For the search query that contains multiple terms and users looking for exact match, embed the search term inside " ";
-  for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
+|Usage  |Example |
+|---------|---------|
+| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |**tags:Critical** 
+  finds work items having a field 'tags' containing the term 'Critical'         |
+|Use multiple inline search filters to scope your search by any work item field, including custom fields.    | **t: Bug path:"project\search"** finds all bugs in the area path "project\search"        |
+|Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week       |
+|For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com"        |
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
-
-## Quick filter shortcuts
-
-You can use the following common inline search filters to quickly access common shortcuts:
-
-* `a:` for **Assigned to:** 
-* `c:` for **Created by:** 
-* `s:` for **State** 
-* `t:` for **Work item type**
-
-For example, you can use quick searches such as **`a:@Me s:active t:bug`** to find all bugs assigned to you.
 
 <a name="locationfunctions"></a>
 
 ## Scope projects and area and iteration paths using filters 
 
 Filters make it easy to narrow the search to specified projects and area paths.
-Narrow the search to a specific location using the `proj`, `area`, or `iteration` filters:
+Narrow the search to a specific location using the `proj`, `area`, `iteration`, `path`, and `comment` filters:
 
-* `Wiki proj:Fabrikam` finds all occurrences of the word **Wiki** in the **Fabrikam** project.
-* `Wiki area:Contoso/Mobile` finds all occurrences of the word **Wiki** 
-  in the area path **Contoso/Mobile** and its subpaths.
-* `Wiki iteration:Contoso/Sprint101` finds all occurrences of the word **Wiki** 
-  in the iteration path **Contoso/Sprint101** and its subpaths.
-* Enclose the argument to the filter in double-quotes if it contains a space. 
-  For example: `Wiki path:"Contoso/Windows Phones and Devices/Services"`.
-  
-<a name="quicknavigation"></a>
 
-## Quickly go to a work item using its ID
+|Usage |Example  |
+|---------|---------|
+|Finds all occurrences of the word **Wiki** in the **Fabrikam** project.  |    `Wiki proj:Fabrikam`      |
+|Finds all occurrences of the word **Wiki** in the area path **Contoso/Mobile** and its subpaths.     |  `Wiki area:Contoso/Mobile`        |
+|Finds all occurrences of the word **Wiki** in the iteration path **Contoso/Sprint101** and its subpaths.    |  `Wiki iteration:Contoso/Sprint101`        |
+|Enclose the argument to the filter in double-quotes if it contains a space.  | `Wiki path:"Contoso/Windows Phones and Devices/Services"`        |
+|Finds backlog comments | `comment:todo` |
 
-Enter the work item ID in the search box in the Azure DevOps title bar 
-to quickly go to it. Searching for a work item ID opens the work item in a 
-modal dialog, providing quick access to read and edit work items.
-
-::: moniker range=">= azure-devops-2019"  
-
-![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal-new.png)
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"  
-
-![Opening the work item in a modal dialogue](media/advanced-work-item-search-syntax/open-work-item-modal.png)
-
-::: moniker-end
 
 <a name="boolean"></a>
 
@@ -271,35 +245,28 @@ Narrow your search by using Boolean operators to combine search criteria.
 Combine multiple search criteria using `AND`, `OR`, or `NOT` (they must be 
 uppercase). 
 
-Use parentheses to specify the precedence of the operations when you use more than 
-one Boolean operator. By default, a search combines all the words you enter using 
-the `AND` operator so that it returns only work items that contain all of the 
-words you entered. 
+Use parentheses to specify the precedence of the operations when you use more than one Boolean operator. By default, a search combines all the words you enter using 
+the `AND` operator so that it returns only work items that contain all of the words you entered. 
 
-For example:
 
-* `welcome AND page` finds work items that contain derived forms of both the words **welcome** and 
-  **page**. `AND` is the default operator, and is equivalent to 
-  the search string `welcome page`.
-* `signup OR signin` finds work items that contain either of the words **signup** or **signin**.
-* `signin NOT signup` finds work items that contain the word **signin** but not the word **signup**.
-* `(signin NOT signup) OR "user login"` finds work items that contain the word **signin**
-  but not the word **signup** or work items that contain the phrase **user login**.
-
-To find an exact match to a set of words, enclose your search terms in double-quotes. 
-For example, `"Client not found"`
+|Usage  |Example  |
+|---------|---------|
+|Finds work items that contain derived forms of both the words **welcome** and **page**. `AND` is the default operator, and is equivalent to the search string `welcome page`.  | `welcome AND page`  |
+|Finds work items that contain either of the words **signup** or **signin**.    |  `signup OR signin`         |
+|Finds work items that contain the word **signin** but not the word **signup**.    |  `signin NOT signup`       |
+|Finds work items that contain the word **signin** but not the word **signup** or work items that contain the phrase **user login**.    | `(signin NOT signup) OR "user login"`         |
+|Finds an exact match to a set of words, enclose your search terms in double-quotes.|  `"Client not found"`   |
 
 <a name="wildcards"></a>
 
 ## Broaden your search with wildcards
 
-Use the wildcard characters `*` and `?` to broaden your search criteria. For 
-example:
+Use the wildcard characters `*` and `?` to broaden your search criteria. 
 
-* `Browser*` finds work items containing words that start with **Browser**, 
-  such as **BrowserEdge**, **BrowserIE**, and **BrowserFirefox**.
-* `alpha?version` finds work items containing words that start with **alpha**, have any 
-  alphanumeric character next, and end with **version**. For example, **alpha1version** and **alphaXversion**. 
+|Usage |Example  |
+|---------|---------|
+|Finds work items containing words that start with **Browser**, such as **BrowserEdge**, **BrowserIE**, and **BrowserFirefox**.    | `Browser*`         |
+|Finds work items containing words that start with **alpha**, have any alphanumeric character next, and end with **version**. For example, **alpha1version** and **alphaXversion**.      | `alpha?version`     | 
 
 You can use wildcard characters anywhere in your search string **except** as a **prefix**. For example, you can't use a search query such as `*RequestHandler`. 
 However, you can use prefix wildcards with the other search filter functions; for example, the search query strings `area:*mobile` and `tags:*Browser` are valid.  
@@ -308,12 +275,12 @@ You can use more than one `?` wildcard to match more than one character.
 
 ![Warning](media/shared/Warning-hightop.png) **No results found for ...**  
 
-* If there are no results matching the input, try removing filters and retry the search. Broadening the search and after you view the search results,
+* If you get no results matching the input, try removing filters and retry the search. Broadening the search and after you view the search results,
   you can apply appropriate filters again and search again for relevant results
 
 * Check for the spelling of your search terms. Currently Work item search doesn't support ignoring of users' spelling mistakes
 
-* If there are lots of hits when you're using a wildcard search, such as when you're using a simple wildcard search string, you may see a message that no matching files are found. In this case, narrow your search to reduce the number of matches. For example, specify more characters of the word or words that you want to find, or add a condition or filter to limit the number of possible matches.
+* If there are lots of hits when you're using a wildcard search, such as when you're using a simple wildcard search string, you may see a message that no matching files are found. In this case, narrow your search to reduce the number of matches. Specify more characters of the word or words that you want to find, or add a condition or filter to limit the number of possible matches.
 
 
 <a name="seemoreworkitem"></a>
@@ -327,10 +294,6 @@ by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the 
 If you're using a portrait orientation screen, use the **Preview pane: Right** link at the top right of the window to display the code below the search results list.
 
 Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
-
-## Find backlog comments
-
-.........
 
 ## Search Work Items with REST API
 
@@ -349,3 +312,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 - [Search code](functional-code-search.md)
 * [Search artifacts and packages](functional-package-search.md)
 * [Search wiki](../wiki/search-wiki.md)
+* [Search FAQs](faq-search.md)

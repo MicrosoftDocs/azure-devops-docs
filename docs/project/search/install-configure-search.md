@@ -312,3 +312,5 @@ Search for Azure DevOps Server has the following limitation:
 ## Related articles
 
 - [Manage indexing for Search](manage-search.md)
+- [Get started with Search](get-started-search.md)
+- [Search FAQs](faq-search.md)

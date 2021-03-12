@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/08/2021
+ms.date: 03/11/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -145,28 +145,47 @@ For specific managed query examples, see [Query quick reference, Example queries
 - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
 - Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 
-## Sort and view work item results
+## Sort and view results
 
-You can use the following common inline search filters to quickly access common shortcuts:
+You can select the filter function that you want to include in your search string from the list, and then enter the criteria value. You can also assemble a more complex search string using the operators and functions listed in the drop-down menu.
+
+### Work items
+
+Use the following common inline search filters to quickly access common shortcuts:
 
 * `a:` for **Assigned to:** 
 * `c:` for **Created by:** 
 * `s:` for **State** 
 * `t:` for **Work item type**
 
-For more information about how to sort and view search results for work items, see [View and filter work item results](functional-work-item-search.md#view-and-filter-work-item-results).
+For more information about functional searches, see the following articles:
+- [Functional work item search](functional-work-item-search.md)
+- [Functional code search](functional-code-search.md)
+- [Functional package search](functional-package-search.md)
 
-## Sort and view code results
+### Code
 
-Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type that you want to include in your search string from the list, and then enter the criteria value.
+ 
 
-For more information about how to sort and view search results for code, see [View and filter code results](functional-code-search.md#view-and-filter-code-results).
+
 
 ## Sort and view package results
 
 You can search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
 
 For more information about how to sort and view search results for packages, see [View and filter package results](functional-package-search.md#sort-and-view-package-results).
+
+## Broaden search results
+
+Use the wildcard characters `*` and `?` to broaden your search criteria. You can use more than one `?` wildcard to match more than one character. 
+
+### Search vs. query
+
+Work Item queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in Excel to perform bulk additions and modifications. For more information about queries, see [Define a query](../../boards/queries/using-queries.md)
+
+### Search vs. filter
+
+Searching begins from nothing and adds to a list of results based on criteria that matches. Filtering begins from the full list of results and eliminates from that list based on which results do not match certain criteria. For more information about filters, see [Apply keyword and ID filters](../../boards/backlogs/filter-backlogs-boards-plans.md#apply-keyword-and-id-filters).
 
 ## Narrow search results
 
@@ -180,25 +199,6 @@ For more information about how to narrow your search results, see the following 
 - [Narrow your work item search](functional-work-item-search.md#narrow-your-search-with-boolean-operators)
 - [Narrow your code search](functional-code-search.md#narrow-your-search-by-using-boolean-operators)
 - [Narrow your artifacts or packages search](functional-package-search.md#narrow-your-search-by-using-boolean-operators)
-
-## Broaden search results
-
-Use the wildcard characters `*` and `?` to broaden your search criteria. You can use more than one `?` wildcard to match more than one character. 
-
-For more information about how to broaden your search results, see the following articles:
-
-- [Broaden your work item search](functional-work-item-search.md#broaden-your-search-with-wildcards)
-- [Broaden your code search](functional-code-search.md#broaden-your-search-by-using-wildcards)
-- [Broaden your artifacts or packages search](functional-package-search.md#broaden-your-search-by-using-wildcards)
-
-### Search vs. query
-
-Work Item queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in Excel to perform bulk additions and modifications. For more information about queries, see [Define a query](../../boards/queries/using-queries.md)
-
-### Search vs. filter
-
-Searching begins from nothing and adds to a list of results based on criteria that matches. Filtering begins from the full list of results and eliminates from that list based on which results do not match certain criteria. For more information about filters, see [Apply keyword and ID filters](../../boards/backlogs/filter-backlogs-boards-plans.md#apply-keyword-and-id-filters).
-
 
 ## Non-search box tasks
 
@@ -526,9 +526,9 @@ In the following table, you find some other search functions.
 
 
 ## Related articles
-
-* [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
+* [Functional work item search](functional-work-item-search.md)
+* [Functional code search](functional-code-search.md)
+* [Functional package search](functional-package-search.md)
 * [Code Search blog posts](https://devblogs.microsoft.com/devops/?s=code+search&submit=%EE%9C%A1)
-* [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
 * [Work item search blog posts](https://devblogs.microsoft.com/devops/?s=work+item+search&submit=%EE%9C%A1)
 * [Search wiki](../wiki/search-wiki.md)
