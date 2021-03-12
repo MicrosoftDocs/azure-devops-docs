@@ -58,7 +58,7 @@ sections:
     - question: Why are no search results shown after installing or configuring Search?
       answer: |
         1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.
-        2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status-for-tfs-2017-rtm). 
+        2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status). 
     
     - question: Why isn't the wildcard search working as expected?
       answer: |
@@ -98,7 +98,7 @@ sections:
        2. If performance does recover, consider locating Search on a separate server if you haven't already done so.
     - question: Why doesn't Search work after upgrading to Azure DevOps Server 2019 Update 1?
       answer: | 
-        If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](administration.md#upgrading-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
+        If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](install-configure-search.md#upgrade-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
     
     - question: Why do I only get partial results when I search code?
       answer: | 
