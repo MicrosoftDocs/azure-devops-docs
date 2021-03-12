@@ -50,7 +50,7 @@ Less common reasons for limited access occur when one of the following events ha
 - A project admin has disabled a service. In this case, no one has access to the disabled service.  To determine if a service has been disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).
 - A Project Collection Administrator has disabled a preview feature, which disables it for all project members in the organization. See [Manage preview features](../../project/navigation/preview-features.md).
 - Group rules governing the user’s access level or project membership  can restrict access. To troubleshoot, see Membership in a group that has less access or permissions.
-- Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operations](#rules-applied-to-a-work-item-type-that-restrict-permissions). 
+- Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations). 
 
 ## Determine a user's access level and subscription status
 
@@ -210,7 +210,7 @@ For more information about hiding organization settings from users, see [About p
 
 ## View, add, and manage permissions with CLI
 
-You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces?view=azure-devops).
+You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces.md).
 
 ::: moniker-end
 
@@ -231,7 +231,7 @@ Example usage:
 Example usage:
 Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
 
-For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2020).
+For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd.md).
 
 ::: moniker-end
 
@@ -283,7 +283,6 @@ You see a message that says, "Sign out in progress." After you sign out, you're 
 
 <!--->
 ## Other 
-
 Where are all the default permissions and groups? See security/permissions
 
 Add external users
@@ -298,10 +297,7 @@ extension management
 
 see stackoverflow
 
-
-https://docs.microsoft.com/en-us/azure/devops/organizations/security/manage-tokens-namespaces?view=azure-devops manage permissions with command line tool
-
-
+https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces.md manage permissions with command line tool
 -->
 
 ::: moniker range=">= azure-devops-2019"
