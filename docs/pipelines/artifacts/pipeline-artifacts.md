@@ -18,11 +18,9 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 > [!NOTE]
 > Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
 
-## Publishing artifacts
+## Publish artifacts
 
-[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
-
-To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
+You can publish your artifacts using YAML, the classic web UI, or Azure CLI
 
 # [YAML](#tab/yaml)
 
@@ -89,7 +87,7 @@ Keep in mind:
 > [!CAUTION]
 > Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
 
-### Limiting which files are included
+### Ignore files with artifactignore
 
 `.artifactignore` files use the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
 
@@ -110,7 +108,7 @@ To learn more, see [Use the .artifactignore file](../../artifacts/reference/arti
 > [!IMPORTANT]
 > Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
-## Downloading artifacts
+## Download artifacts
 
 To download a specific artifact in CI/CD or classic pipelines:
 
@@ -162,7 +160,7 @@ Keep in mind:
 
 * The **Download Pipeline Artifact** task can download both build artifacts (published with the Publish Build Artifacts task) and pipeline artifacts.
 
-* By default, files are downloaded to **$(Pipeline.Workspace)/**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
+* By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
 
 * File matching patterns can be used to limit which files from the artifact(s) are downloaded. For more information on how pattern matching works, see [artifact selection](#artifact-selection).
 
@@ -329,7 +327,7 @@ stages:
      - script: echo hello from Job B2
 ```
 
-## Migrating from build artifacts
+## Migrate from build artifacts
 
 Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but can also be downloaded using the latest **Download Pipeline Artifact** task.
 
