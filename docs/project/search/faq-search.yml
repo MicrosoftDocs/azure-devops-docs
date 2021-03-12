@@ -17,25 +17,26 @@ summary: |
   **Azure Devops Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
 
   Learn the answers to frequently asked questions (FAQs) about the Search function for Azure DevOps. 
-::: moniker range=" azure-devops"
+
 sections:
-  - name: FAQs for Search 
-     
-    questions:
+  - name: FAQs for Search
+
+    questions: 
 
     - question: Why isn't the wildcard search working as expected?
       answer: |
+        
         You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
         ![Wildcard search for ge*](media/shared/faq-wildcard1.png)
         while ```get*``` shows **109,134** results.
         ![Wildcard search for get*](media/shared/faq-wildcard2.png)
         Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
         Ensuring that you can find the most meaningful and actionable results as fast as possible, **enter more criteria in the search bar**.
-    
+        ::: moniker range=" azure-devops"
     - question: How do I search backlog comments?
       answer: |
         Enter in the search box, "comment:todo".
-    
+        
     - question: How do I search company-wide for published internal NuGet packages?
       answer: |
         Go to [Discover in Azure DevOps(https://aka.ms/discover), enter your query and search, and then choose the **Packages** pivot. You can also navigate from your organization's landing page. At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.
@@ -47,13 +48,8 @@ sections:
     - question: Why is Code search what's provided when I'm in Work Item view?
       answer: |
         You can toggle between Work Item and Code Search entities by using the picker next to the search box.
-
-::: moniker-end
-::: moniker range="<= azure-devops-2019"
-sections: 
-  - name: FAQs for Search
-
-    questions:
+        ::: moniker-end
+        ::: moniker range="<= azure-devops-2019"
 
     - question: Why isn't the Search box displayed after it's configured?
       answer: |
@@ -114,7 +110,9 @@ sections:
            * Scope your query by using filters to narrow down to a "repo" or a "path".
            * See if you can narrow your query to avoid scenarios that require matching too many terms. 
            For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
-::: moniker-end
+
+          ::: moniker-end
+
 additionalContent: | 
   ## Related articles
   - [Search artifacts and packages](functional-package-search.md)
