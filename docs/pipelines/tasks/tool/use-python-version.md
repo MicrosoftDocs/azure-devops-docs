@@ -4,8 +4,6 @@ description: Select a version of Python to run on an agent and optionally add it
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
 ms.custom: seodec18, devx-track-python
-ms.author: macoope
-author: vtbassmatt
 ms.reviewer: dastahel
 ms.date: 05/26/2020
 monikerRange: azure-devops

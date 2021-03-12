@@ -150,7 +150,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 > [!Note]
 > While auditing is in a public preview, we're working hard to get more areas audited. We're adding new auditing events monthly.
 >
-> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
+> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
 
 |Area            |Description |
 |----------------|------------|
@@ -167,12 +167,13 @@ When you filter through audit events, it’s best to use the *area* and *categor
 | Release        |  Create, delete, modify, approval complete, and deployment complete for a release.          |
 | OrganizationPolicy | Changes to organization policies (for example, no basic authentication).           |
 | Organization   | Rename, change owner, link to Azure Active Directory (Azure AD), and unlink from Azure AD.            |
-|Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
-|Agile     |Process, create, delete, and modify.         |
-|Notification    |Create, remove, and modify a subscription.         |
-|Git        | Branch policies, and create, delete, and rename repository. |
-|Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
-
+| Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
+| Agile     |Process, create, delete, and modify.         |
+| Notification    |Create, remove, and modify a subscription.         |
+| Git        | Branch policies, and create, delete, and rename repository. |
+| Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
+| User | Sign-in events or access events of PAT and SSH |
+| Token / Authentication | Create, update, and removal/revocation Personal Access Tokens (PATs) or SSH Key. |
 
 
 ### Filtering tips
