@@ -27,9 +27,9 @@
   - name: Get started with search
     href: ../project/search/get-started-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
   - name: Search code
-    href: ../project/search/code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/search/functional-code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
   - name: Search work items
-    href: ../project/search/work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/search/functional-work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Migrate & import
   href: ../migrate/toc.yml 
 - name: Permissions & access

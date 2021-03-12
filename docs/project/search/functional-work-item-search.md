@@ -142,7 +142,7 @@ modal dialog, providing quick access to read and edit work items.
 
    ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
 
-8. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
    ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
 
@@ -182,7 +182,7 @@ modal dialog, providing quick access to read and edit work items.
 
    ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
 
-8. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
    ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
 
@@ -312,4 +312,4 @@ You can use APIs to extend or supplement the capabilities listed in this article
 - [Search code](functional-code-search.md)
 * [Search artifacts and packages](functional-package-search.md)
 * [Search wiki](../wiki/search-wiki.md)
-* [Search FAQs](faq-search.md)
+* [Search FAQs](faq-search.yml)

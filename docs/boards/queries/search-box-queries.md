@@ -28,7 +28,7 @@ You can find work items using shortcut filters or by specifying keywords or phra
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/administration.md).
+You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
 
 For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [semantic searches](#initiate-an-ad-hoc-search-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
 
