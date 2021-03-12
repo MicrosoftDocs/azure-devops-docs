@@ -66,8 +66,6 @@
       href: get-started-maven.md
     - name: Set up a project to work with Maven feed
       href: ../pipelines/artifacts/maven.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-    - name: Publish a Maven package from the command line
-      href: maven/publish.md
     - name: Set up authentication
       href: maven/pom-and-settings.md
     - name: Install a Maven artifact
@@ -84,6 +82,8 @@
       href: quickstarts/python-packages.md
     - name: Publish to a Python feed
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    - name: Publish and consume Python packages from the command line
+      href: quickstarts/python-cli.md
   - name: Work with Universal Packages
     items:
     - name: Universal packages quickstart

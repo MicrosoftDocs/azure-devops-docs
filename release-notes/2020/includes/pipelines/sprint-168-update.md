@@ -20,7 +20,7 @@ Output variables are still produced by steps inside of jobs. Instead of referrin
 
 Building upon [improving pipeline security by restricting the scope of access tokens](../../../2019/sprint-160-update.md#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) Azure Pipelines can now scope down its repository access to just the repos required for a **YAML-based pipeline**. This means that if the pipelines's access token were to leak, it would only be able to see the repo(s) used in the pipeline. Previously, the access token was good for any Azure Repos repository in the project, or potentially the entire collection.
 
-This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all Azure Repos Git repositories accessed by the pipeline using the [build service identity](/azure/devops/pipelines/build/options?view=azure-devops#scoped-build-identities) must be explicitly checked out using a `checkout` step in the job that uses the repository. For more information, see [Limit job authorization scope to referenced Azure DevOps repositories](/azure/devops/pipelines/repos/azure-repos-git?tabs=yaml&view=azure-devops#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
+This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all Azure Repos Git repositories accessed by the pipeline using the [build service identity](/azure/devops/pipelines/build/options?view=azure-devops&preserve-view=true#scoped-build-identities) must be explicitly checked out using a `checkout` step in the job that uses the repository. For more information, see [Limit job authorization scope to referenced Azure DevOps repositories](/azure/devops/pipelines/repos/azure-repos-git?tabs=yaml&view=azure-devops&preserve-view=true#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
     
 ### Getting details at runtime about multiple repositories
@@ -34,7 +34,7 @@ Multi-stage pipelines UI is now generally available. The corresponding preview f
 
 You can navigate to the new experience by selecting **Pipelines** -&gt; **Pipelines** under the left navigation menu in Azure DevOps. This experience is the entry point for both classic build pipelines as well as YAML pipelines. It is mobile-friendly and brings various improvements to how you manage your pipelines.&nbsp;You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
-To learn more about the multi-stage pipelines user experience, see the documentation [here](/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
+To learn more about the multi-stage pipelines user experience, see the documentation [here](/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops&preserve-view=true).
 
 ![Multi stage pipelines.](../../media/168-pipelines-2-0.png)
 

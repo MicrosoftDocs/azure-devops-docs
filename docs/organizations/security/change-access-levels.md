@@ -1,7 +1,7 @@
 ---
-title: Access levels for users or groups
+title: Change access levels for users or groups
 titleSuffix: Azure DevOps 
-description: Provide access to web portal users based on their license 
+description: Learn how to set the access level for a user or group based on their license 
 ms.technology: devops-security
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: conceptual
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 06/02/2019
 ---
 
-# Change access levels
+# Change access levels for users or groups
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 

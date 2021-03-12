@@ -3,47 +3,35 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 07/22/2020
+ms.date: 02/23/2021
 ---
 
-Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
+To publish a Maven artifact to your feed, follow these steps: 
 
-To publish a Maven artifact, you'll need to have a Maven artifact to publish on your local machine. 
-If you don't have one, you can generate one by running the following command:
+1. If you don't have a Maven package, you can create one by running the following command:
 
-```Command
-mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
-```
-
-If you get the following error ***You must specify a valid lifecycle phase or a goal (..)*** after executing the previous command, follow these steps to add a goal in your run configuration for maven build:
-
-Right click on your project, select 'Run as' then 'Maven Build'. Write ***package*** in the 'Goals' text box, then select 'Run'.
+    ```Command
+    mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
+    ```
+    
+    If you get the following error *You must specify a valid lifecycle phase or a goal (..)* after executing the previous command, follow these steps to add a goal in your run configuration:
+    
+    Right click on your project, select *Run as* then *Maven Build*. Enter **package** in the *Goals* text box, then select *Run*.
 
 
 1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
 
-2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the _myFirstApp_ folder.
+1. Navigate to the directory of your *pom.xml* file. By default, the *pom.xml* file is at root path of the project.
 
-3. From the directory containing your **pom.xml** file, run the following commands to build and deploy your Maven artifact:
+1. Run the following commands to build and deploy your Maven artifact:
+    - **Build your package**: `mvn build`
+    - **Deploy your package**: `mvn deploy` 
 
-    - **Build your package**:
-        ```Command
-        mvn build
-        ``` 
-    - **Publish your package**:
-    
-        ```Command
-        mvn deploy
-        ``` 
-
-Your Maven artifact should appear in your feed now. See the [Apache Maven Deploy Plugin](https://maven.apache.org/plugins/maven-deploy-plugin/) to learn more about Maven deployment.
-
-> [!TIP]
-> If you want to publish a 3rd party assembly to a Maven feed, you can use the [deploy:deploy-file Mojo](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html). This mojo is used primarily to publish artifacts that were not built by Maven and you can use it with or without a POM file.
+If you want to publish a third-party artifact, you can use the [deploy:deploy-file](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) mojo. This can be used with or without a POM file to deploy your packages.
 
 ```Command
 mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFeedURL" -DgroupId="MyGroup" -DartifactId="myFirstApp" -Dversion="jarFileVersion" -Dfile="jarFileLocalPath"
 ```
 
-> [!IMPORTANT]
-> Maven snapshot artifacts are not currently supported in upstream sources.
+> [!NOTE]
+> Maven snapshots are not supported in upstream sources.

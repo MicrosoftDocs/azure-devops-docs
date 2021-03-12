@@ -305,13 +305,10 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
-
-~~~
 <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
 
 > [!TIP]  
 > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
-~~~
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
