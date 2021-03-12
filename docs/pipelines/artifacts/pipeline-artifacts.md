@@ -68,40 +68,33 @@ steps:
 
 ---
 
-Keep in mind:
+Things to keep in mind:
 
 * Although artifact name is optional, it is a good practice to specify a name that accurately reflects the contents of the artifact.
 
-* The path of the file or folder to publish is required. It can be absolute or relative to `$(System.DefaultWorkingDirectory)`.
+* The path of the file or folder to publish is required. It can be an absolute or a relative path to `$(System.DefaultWorkingDirectory)`.
 
-* If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths in the artifact are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
+* If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
 
 > [!NOTE]
-> You will not be billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
+> You will not be billed for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
 
 > [!CAUTION]
 > Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
 
 ### Ignore files with artifactignore
 
-`.artifactignore` files use the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
+`.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. For more information, see [.artifactIgnore usage].
 
-Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to include only files in the artifact with a `.exe` extension:
+Example: ignore all files except **.exe** files:
 
 ```
 **/*
 !*.exe
 ```
 
-The above statement instructs the universal package task and the pipeline artifacts task to ignore all files except the ones with `.exe` extension.
-
 > [!NOTE]
 > `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
-
-To learn more, see [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or the [.gitignore documentation](https://git-scm.com/docs/gitignore).
-
-> [!IMPORTANT]
-> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
 ## Download artifacts
 
@@ -293,6 +286,8 @@ To stop artifacts from being downloaded automatically, add a `download` step and
 steps:
 - download: none
 ```
+> [!IMPORTANT]
+> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
 ## Use Artifacts across stages
 
