@@ -1,7 +1,7 @@
 ---
 title: Functional code search options
 titleSuffix: Azure Repos
-description: Options for using Code Search across all your projects in Azure DevOps.
+description: Options for code searching across all your projects in Azure DevOps.
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.technology: devops-collab
 ms.topic: how-to
@@ -45,9 +45,7 @@ By using Code Search, you can do the following tasks:
 
 To use Code Search, you must have at least a **Basic** access. **Stakeholders** don't have access to code, and so don't have access to Code Search. 
 
-## Start searching code
-
-Code Search requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it isn't installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
+## Get started searching code
 
 ::: moniker range=">= azure-devops-2019"
   
@@ -58,6 +56,8 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
 ::: moniker-end
 
 ::: moniker range=" <= tfs-2018"
+
+Code Search requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it isn't installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
 
 1. In the search box, check that the text displays _Search code_. If it doesn't, select it.
 
@@ -78,13 +78,15 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
 
    :::image type="content" source="media/get-started/code-search-filters.png" alt-text="Code search bar":::
 
-   * Find all instances of "ToDo" comments in your code by selecting `comment:` and entering `todo`. 
-   * Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
-   * Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files.
-   * Combine two or more words by using Boolean operators; for example, `validate OR release`.
-   * Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
-   * Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
-   * Use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term.
+You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. You can also use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term. See the following examples.
+
+|Usage  |Example  |
+|---------|---------|
+|Find all instances of "ToDo" comments in your code.   | select `comment:` and enter `todo`        |
+|Search in specific locations, such as within a particular path.    |  use a search string such as `Driver path:MyShuttle/Server`    |
+|Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension.    |The search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files.         |
+|Combine two or more words by using Boolean operators.   | `validate OR release`        |
+|Find an exact match to a set of words by enclosing your search terms in double-quotes.   |  `"Client not found"`       |
 
 2. Widen your search to all projects or your entire organization. Narrow your search to specific areas and types of code by selecting from the drop-down lists at the top of the page.
 
@@ -107,14 +109,11 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
 > [!NOTE]
 > You can't search code in forked repositories. 
 
-Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation". However, searches are _not_ case-sensitive.
+Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
 
 Words separated by spaces, and not wrapped in double-quotes, are treated as separate search terms and the search will expect to find an occurrence of all the words (in other words, it assumes the `AND` operator between words).
 
 Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
-<!--- IS THIS TRUE?
-When you search from inside a project, the default is to search only within that project. You can go up to higher levels to broaden your search.
--->
 
 In a Git project, you see a list of the repositories that it contains. Use the project and repository checkboxes to widen your search. You can search more or all projects, or narrow your search to fewer projects and repositories. If there are more than a few projects or repositories, use the **Show more** link to see them all.
 
@@ -133,33 +132,31 @@ Code Search remembers your last settings, such as the project and repository or 
  
 Narrow your search by using Boolean operators to combine search criteria. Combine multiple search criteria using `AND`, `OR`, or `NOT` (they must be uppercase). 
 
-Use parentheses to specify the precedence of the operations when you use more than one Boolean operator. By default, a search combines all the words you enter using the `AND` operator so that it only returns files that contain all of the words you entered. 
+Use parentheses to specify the precedence of the operations when you use more than one Boolean operator. By default, a search combines all the words you enter using the `AND` operator so that it only returns files that contain all of the key words you entered. 
 
-For example:
 
-* `validate AND revisit` finds files that contain both the words **validate** and 
-  **revisit**. `AND` is the default operator, and so it's equivalent to 
-  the search string `validate revisit`.
-* `validate OR revisit` finds files that contain either of the words **validate** or **revisit**.
-* `validate NOT revisit` finds files that contain the word **validate** but not the word **revisit**.
-* `(validate NOT revisit) OR "release delayed"` finds files that contain the word **validate**
-  but not the word **revisit** or files that contain the phrase **release delayed**.
+| Usage                                                                | Example                                                                    |
+|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Finds files that contain both the words **validate** and **revisit**.     | `validate AND revisit` |
+| Finds files that contain either of the words **validate** or **revisit**. | `validate OR revisit`  |
+| Finds files that contain the word **validate**, but not the word, **revisit** or files that contain the phrase **release delayed**.     | `validate NOT revisit OR "release delayed"`  |                
+
 
 ### Broaden your search by using wildcards
 
-Use the wildcard characters `*` and `?` to broaden your search criteria. 
-
-For example:
-
-* `CodeSenseHttp*` finds files containing words that start with **CodeSenseHttp**, 
-  such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.
-* `CodeA23?R` finds files containing words that start with **CodeA23**, have any 
-  alphanumeric character next, and end with **R**. For example, **CodeA234R** and **CodeA23QR**. 
+Use the wildcard characters `*` and `?` to broaden your search criteria.
 
 You can use wildcard characters anywhere in your search string **except** as a **prefix** in a simple search string or a query that uses a [code type filter](#codefunctions). 
 For example, you can't use a search query such as `*RequestHandler` or `class:?RequestHandler`. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings `file:*RequestHandler.cs` and `repo:?Handlers` are valid.  
 
 You can use more than one `?` wildcard to match more than one character.
+
+See the following table for more wildcard usage.
+
+| Usage                                                                 | Example                                                                   |
+|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.    || `CodeSenseHttp*` and  `CodeA23?R`  |  
+| Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
 
 > [!WARNING]
 > **No results found for ...**  
@@ -177,34 +174,34 @@ Within a phrase:
 * The query language characters `:()[]*?` are treated as literal text.
 * Escape only the special characters `\` and `"`.
 
- ::: moniker range=" azure-devops"
+ ::: moniker range=" >= azure-devops-2020"
 
 ### Search for special characters
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:
 
-* Search for any special character that isn't a part of the query language, 
+
+|Usage  |Example |
+|---------|---------|
+|Search for any special character that isn't a part of the query language, 
   for example, excluding the characters `: ( )[ ]*?`) as either a simple search string
-  or a phrase search string. For example, `react-redux` or `"react-redux"` will produce the same results.
-
-* Search for a special character that is a part of the query language (`: ( )[ ]*?`)
-  by enclosing the search string within double-quotes. For example, `"flatten()"` will
-  find the literal string `flatten()`.
-
-* Search for a literal occurrence of the double-quote character `"` by preceding it with the
-  escape character `\` and enclosing the search string in double-quotes.
-  For example, `"\"react-redux\""` will find the literal string `"react-redux"`. 
+  or a phrase search string.   | `react-redux` or `"react-redux"` produce the same results        |
+|Search for a special character that is a part of the query language (`: ( )[ ]*?`)
+  by enclosing the search string within double-quotes.   | `"flatten()"` finds the literal string `flatten()` |
+|Search for a literal occurrence of the double-quote character `"` by preceding it with the
+  escape character `\` and enclosing the search string in double-quotes.     |`"\"react-redux\""` finds the literal string `"react-redux"`         |
 
 ### Search based on proximity
 
-You can search for files based on the term *vicinity* using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance. 
+You can search for files based on the term *vicinity* using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default proximity search looks for terms within five tokens distance. 
 
-For example:
 
-- BEFORE: `term1` BEFORE `term2` - returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.
-- AFTER: `term1` AFTER `term2`: returns the same results as `term2` BEFORE `term1`.
-- NEAR: `term1` NEAR `term2`: returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.
+|Boolean operator |Usage  |Example  |
+|---------|---------|---------|
+|BEFORE   | Returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.        | `term1` BEFORE `term2`      |
+|AFTER    | Returns the same results as `term2` BEFORE `term1`                                                          | `term1` AFTER `term2`       |
+|NEAR     |Returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.                                                                                                                | `term1` NEAR `term2`        |
 
 > [!NOTE]
 > - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported. 
@@ -265,12 +262,7 @@ Instead, you can type the functions and parameters directly into the search box.
 | Typedef | **typedef:**_findThis_ ```Merged with type:```|
 | Union | **union:**_findThis_ ```Deprecated in July 2019```|
 
-## Find two or more keywords using Boolean operators
 
-- validate AND revisit finds files that contain both the words validate and revisit. AND is the default operator, and so this is equivalent to the search string validate revisit.
-- validate OR revisit finds files that contain either of the words validate or revisit.
-- validate NOT revisit finds files that contain the word validate but not the word revisit.
-- (validate NOT revisit) OR "release delayed" finds files that contain the word validate but not the word revisit or files that contain the phrase release delayed.
 
 <a name="locationfunctions"></a>
 
@@ -280,21 +272,17 @@ Functions make it easy to narrow the search to specified locations, specific typ
 
 Narrow the search to a specific location using the `proj`, `repo`, or `path` filters:
 
-* `QueueJobsNow proj:Fabrikam` finds all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.
-* `QueueJobsNow repo:Contoso` finds all occurrences of the word **QueueJobsNow** in the **Contoso** repository.
-* `QueueJobsNow path:VisualStudio/Services/Framework` finds all occurrences of the word **QueueJobsNow** 
-  in the path **VisualStudio/Services/Framework** and its subpaths.
-* Enclose the argument to the filter in double-quotes if it contains a space. 
-  For example: `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`.
 
-Narrow the search to specific files using the `file` or `ext` filters:
-
-* `QueueJobsNow file:queueRegister*` finds all occurrences of the word **QueueJobsNow** in all 
-  files where the filename starts with **queueRegister**.
-  Use quotes to find files without extensions: file:"queueRegister" finds all files with the name QueueRegister without an extension.
-* `QueueJobsNow ext:cs` finds all occurrences of the word **QueueJobsNow** in only C# source files.
-* A plain text search string that doesn't include file type functions 
-  will also find files where the string matches part of the filename.
+|Usage  |Example  |
+|---------|---------|
+|Finds all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.     | `QueueJobsNow proj:Fabrikam`        |
+|Finds all occurrences of the word **QueueJobsNow** in the **Contoso** repository.    |  `QueueJobsNow repo:Contoso`       |
+|Finds all occurrences of the word **QueueJobsNow** in the path **VisualStudio/Services/Framework** and its subpaths.  | `QueueJobsNow path:VisualStudio/Services/Framework`        |
+|Enclose the argument to the filter in double-quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
+|Finds all occurrences of the word **QueueJobsNow** in all files where the filename starts with **queueRegister**. | `QueueJobsNow file:queueRegister*`         |
+|Finds all files with the name QueueRegister without an extension.    | Use quotes to find files without extensions: file:"queueRegister"       |
+|Finds all occurrences of the word **QueueJobsNow** in only C# source files. A plain text search string that doesn't include file type functions 
+  will also find files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
 
 ## Find code comments
 
@@ -309,15 +297,16 @@ the definition if you select an object name, or for references to a selected obj
 
 ## More examples
 
-See the following examples of even more search functions:
+See the following examples of even more search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
-* Find all instances of "ToDo" comments in your code by selecting `comment:` and typing `todo`. 
-* Search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`. 
-* Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension. For example, the search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string, without specific file type functions, matches part of a filename, the file appears in the list of found files.
-* Combine two or more words by using Boolean operators; for example, `validate OR release`.
-* Find an exact match to a set of words by enclosing your search terms in double-quotes. For example, `"Client not found"`. 
-* Use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
-* Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+
+|Usage |Example |
+|---------|---------|
+|Find all instances of "ToDo" comments in your code               |Select `comment:` and type `todo`   |
+|Search in specific locations, such as within a particular path   |Use a search string such as `Driver path:MyShuttle/Server`    | 
+|Search for files by name or just by file extension    | For example, you could use `Driver file:GreenCabs.cs`. The search string `error ext:resx` could be useful if you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files. This search works without matching specific file type functions.        |
+|Combine two or more words by using Boolean operators   | `validate OR release`        |
+|Find an exact match to a set of words by enclosing your search terms in double-quotes.|`"Client not found"`|
 
 ## Search Code with REST API
 
@@ -328,9 +317,11 @@ You can use APIs to extend or supplement the capabilities listed in this article
 ## Next steps
 
 > [!div class="nextstepaction"]
+> [Search work items](functional-work-item-search.md)
 
 ## Related articles
 
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
+* [Search FAQs](faq-search.md)

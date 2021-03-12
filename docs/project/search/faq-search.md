@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: sunar
 author: chcomley
-ms.date: 03/04/2021
+ms.date: 03/11/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,49 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-all-versions](../../includes/version-tfs-all-versions.md)]
 
+::: moniker range=" azure-devops-"
+
+Learn the answers to frequently asked questions (FAQs) about the Search function for Azure DevOps Services.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 Learn the answers to frequently asked questions (FAQs) about the Search function and extensions available for Azure DevOps.
+
+::: moniker-end
+
+::: moniker range=" azure-devops-"
+
+## Q: Why isn't the wildcard search working as expected
+
+You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
+
+![Wildcard search for ge*](media/shared/faq-wildcard1.png)
+
+while ```get*``` shows **109,134** results.
+
+![Wildcard search for get*](media/shared/faq-wildcard2.png)
+
+A: Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
+
+Ensuring that you can find the most meaningful and actionable results as fast as possible, **enter more criteria in the search bar**.
+
+## Q: How do I search backlog comments?
+
+A: Enter in the search box, "comment:todo".
+
+## Q: How do I search company-wide for published internal NuGet packages?
+
+A: Go to [Discover in Azure DevOps(https://aka.ms/discover), enter your query and search, and then choose the **Packages** pivot. You can also navigate from your organization's landing page. At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.
+
+## Q: Is Azure DevOps Search extensible?
+
+A: Currently, no, but you can submit a new feature request in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html).
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 ## Q: Why isn't the Search box displayed after it's configured?
 A:
@@ -22,7 +64,7 @@ A:
    Go to a project and check if the search box is displayed at the top right. 
 
 2. If the search box isn't shown, verify that the extension is installed for the collection. 
-   If not, [install](administration.md#config-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
+   If not, see [Install and configure Search](install-configure-search.md).
 
 <a name="no-results-install"></a>
 
@@ -30,8 +72,7 @@ A:
 A:
 1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.
 
-2. If no results are shown after this period, 
-   [check indexing status](administration.md#check-index). 
+2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status-for-tfs-2017-rtm). 
 
 <a name="indexing-status-for-collections"></a>
 
@@ -131,8 +172,11 @@ You could try the following alternatives, as applicable to your scenario:
 
 For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
 
+::: moniker-end
+
 ## Related articles
 
 * [Search artifacts and packages](functional-package-search.md)
 * [Search work items](functional-work-item-search.md)
 * [Search wiki](../wiki/search-wiki.md)
+* [Export access levels audit log](../../organizations/security/export-users-audit-log.md)
