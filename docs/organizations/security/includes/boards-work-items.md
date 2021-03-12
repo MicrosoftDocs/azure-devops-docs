@@ -75,7 +75,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Change work item type
    :::column-end:::
    :::column span="1":::
@@ -93,7 +93,7 @@ ms.date: 02/25/2021
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Move work item to another project
    :::column-end:::
    :::column span="1":::
@@ -112,7 +112,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker-end  
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Email work items
    :::column-end:::
    :::column span="1":::
@@ -131,7 +131,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker range=">= tfs-2017"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Apply a work item template
    :::column-end:::
    :::column span="1":::
@@ -151,7 +151,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Delete work items (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::
@@ -171,7 +171,7 @@ ms.date: 02/25/2021
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Permanently delete work items
    :::column-end:::
    :::column span="1":::
@@ -191,7 +191,7 @@ ms.date: 02/25/2021
 ::: moniker-end 
 ::: moniker range="tfs-2013"
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       [Provide feedback](../../../project/feedback/give-feedback.md) (through the Microsoft Feedback client)
    :::column-end:::
    :::column span="1":::
@@ -210,7 +210,7 @@ ms.date: 02/25/2021
 ---
 ::: moniker-end  
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       [Request feedback](../../../project/feedback/get-feedback.md) 
    :::column-end:::
    :::column span="1":::
