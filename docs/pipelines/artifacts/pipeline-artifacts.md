@@ -43,8 +43,8 @@ steps:
     artifactName: WebApp
 ```
 
-* **targetPath**: the path to the folder or file you want to publish.
-* **artifactName**: the name of the artifact that you want to create.
+- **targetPath**: the path to the folder or file you want to publish.
+- **artifactName**: the name of the artifact that you want to create.
 
 > [!TIP]
 > For more information on `PublishPipelineArtifact@1`, see [Publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-artifact.md).
@@ -62,9 +62,10 @@ steps:
 # [Azure CLI](#tab/azure-cli)
 
 - Run the following command to publish your Artifact
-    ```Command
-      az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
-    ```
+
+  ```Command
+    az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+  ```
 
 ---
 
@@ -98,7 +99,7 @@ Example: ignore all files except **.exe** files:
 
 ## Download artifacts
 
-To download a specific artifact in CI/CD or classic pipelines:
+You can download artifacts using YAML, the classic web UI, or Azure CLI.
 
 # [YAML](#tab/yaml)
 
@@ -108,12 +109,10 @@ steps:
   artifact: WebApp
 ```
 
+- **current**: download artifacts produced by the current pipeline run. Options: current, specific.
+
 > [!NOTE]
 > The `download` keyword is a shortcut to the **Download Pipeline Artifact** task.
-
-In this context, `current` means the current run of this pipeline (i.e. artifacts published earlier in the run). For release and deployment jobs this also include any source artifacts.
-
-For additional configuration options, see the [download keyword](../yaml-schema.md#download) in the YAML schema.
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -124,39 +123,40 @@ steps:
     artifact: WebApp
 ```
 
-* **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
+- **artifact**: The name of the artifact to download. If left empty, all artifacts associated with the pipeline run will be downloaded.
 
 # [Classic](#tab/classic)
 
-:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
 
-* Artifact name:
-
-   ```
-   WebApp
-   ```
+- Fill out the following fields:
+    - **Display name**: artifact display name
+    - **Download artifacts produced by**: download artifacts produced by the current pipeline run, or from a specific pipeline run
+    - **Artifact name**: name of the artifact to publish
+    - **Matching patterns**: file matching patterns to control which files get downloaded
+    - **Destination directory**: directory to download the artifact files to
 
 # [Azure CLI](#tab/azure-cli)
 
-```azurecli
-  az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
-```
+- Run the following command to download your Artifact
+
+  ```Command
+    az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+  ```
 
 ---
 
-Keep in mind:
+Things to keep in mind:
 
-* The **Download Pipeline Artifact** task can download both build artifacts (published with the Publish Build Artifacts task) and pipeline artifacts.
+- By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
 
-* By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
+- File matching patterns can be used to limit which files are downloaded.
 
-* File matching patterns can be used to limit which files from the artifact(s) are downloaded. For more information on how pattern matching works, see [artifact selection](#artifact-selection).
+- To download artifacts from a different pipeline or from earlier stages in your pipeline see, [Download Pipeline Artifacts](../tasks/utility/download-pipeline-artifact.md) task.
 
-For other scenarios, including downloading artifacts from other pipelines, see the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
+### Artifacts selection
 
-### Artifact selection
-
-A single download step can download one or more artifacts. To download multiple artifacts, do not specify an artifact name and optionally use file matching patterns to limit which artifacts and files are downloaded. The default file matching pattern is `**`, meaning all files in all artifacts.
+A single download step can download one or more artifacts. To download multiple artifacts, leave the _artifact name_ field empty and use file matching patterns to limit which files will be downloaded. `**` is the default file matching pattern (all files in all artifacts).
 
 #### Single artifact
 
