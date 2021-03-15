@@ -30,7 +30,7 @@ You create a new pipeline by first selecting **Bitbucket Cloud** for repository 
 
 ---
 
-Azure Pipelines must be granted access to your repositories to trigger their builds, and fetch their code during builds.
+Azure Pipelines must be granted access to your repositories to fetch the code during builds. In addition, the user setting up the pipeline must have admin access to Bitbucket, since that identity is used to register a webhook in Bitbucket.
 
 There are 2 authentication types for granting Azure Pipelines access to your Bitbucket Cloud repositories while creating a pipeline.
 
@@ -157,13 +157,19 @@ pr:
     - releases/*
   paths:
     include:
-    - docs/*
+    - docs
     exclude:
     - docs/README.md
 ```
 
-> [!NOTE]
-> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+> **Tips:**
+>  * Wild cards are not supported with path filters.
+>  * Paths are always specified relative to the root of the repository.
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
+>  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+>  * You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ### Multiple PR updates
 

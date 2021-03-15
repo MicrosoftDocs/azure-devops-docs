@@ -5,7 +5,7 @@ description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -27,8 +27,8 @@ To complete the steps in this guide you need:
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
 * The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/previous-versions/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
-  * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows).
-  * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
+  * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](set-up-credential-managers.md).
+  * To install Git for macOS and Linux, see [git-scm.com](https://git-scm.com/downloads).
 
 ## Create a repo
 1. Navigate to your project in Azure DevOps by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.

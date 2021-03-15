@@ -75,7 +75,7 @@ Events supported for multi-stage YAML pipelines
 
 **URL unfurling and messaging extensions**
 
-We've added a [messaging extension](https://docs.microsoft.com/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Microsoft Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
+We've added a [messaging extension](/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Microsoft Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
 
 > [!div class="mx-imgBorder"]
 > ![URL unfurling and messaging extensions.](../../media/158_08.png)

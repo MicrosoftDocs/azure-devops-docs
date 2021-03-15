@@ -1,6 +1,6 @@
 ﻿---
 title: Configure Maven client
-description: Successfully configure your Maven client for use with Azure DevOps Services or Team Foundation Server
+description: How to set up Maven client
 ms.technology: devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.manager: jenp
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
  
 
-# Set up the Maven client in Azure DevOps Services and TFS
+# Set up the Maven client
 
 **Azure DevOps Services** | **TFS 2018**
 

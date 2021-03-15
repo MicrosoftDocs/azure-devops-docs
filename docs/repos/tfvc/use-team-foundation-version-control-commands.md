@@ -157,7 +157,7 @@ Use the following commands to isolate risk using branches:
 
 [Merges Command](merges-command.md) (Visual Studio 2010)  
 
-See also: [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md).
+See also: [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md).
 
 ### Administer Version Control
 
@@ -167,7 +167,7 @@ Use the following commands to administer your version control system:
 
 [Permission Command](permission-command.md) (Visual Studio 2010)  
 
-See also: [Administering Team Foundation Version Control](administering-team-foundation-version-control.md) (Visual Studio 2010).
+See also: [Administering Team Foundation Version Control](./configure-check-out-settings.md) (Visual Studio 2010).
 
 ### Get Help on Version Control Commands
 

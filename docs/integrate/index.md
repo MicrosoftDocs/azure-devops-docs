@@ -1,10 +1,10 @@
 ---
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-title: Integrating custom apps and third party services with Azure DevOps and Team Foundation Server
-description: Overview of integrating with Azure DevOps and Team Foundation Server
+title: Integrating custom apps and third party services with Azure DevOps
+description: Overview of integrating with Azure DevOps.
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
-monikerRange: ">= tfs-2013"
+monikerRange: "<= azure-devops"
 ms.author: chcomley
 author: chcomley
 ms.date: 08/23/2016
@@ -14,9 +14,9 @@ ms.date: 08/23/2016
 
 [!INCLUDE [version-all](../includes/version-all.md)]
 
-You can build custom applications or services that integrate with your Azure DevOps and Team Foundation Server (TFS) accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
+You can build custom applications or services that integrate with your Azure DevOps accounts by using the **REST APIs** to make direct HTTP calls, or utilize our **.NET Client Libraries**.
 
-Along with interacting with Azure DevOps or TFS in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
+Along with interacting with Azure DevOps in your application, you can also integrate with popular third-party services such as Slack or Jenkins.
 
 ## 5-minute quickstarts
 

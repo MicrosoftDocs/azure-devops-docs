@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 463 490"
+   version="1.1"
+   id="svg196"
+   sodipodi:docname="upstream-source-graph-1.svg"
+   width="463"
+   height="490"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata202">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>blog-package-upstream-diagram-1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs200">
+    <clipPath
+       id="clip0">
+      <rect
+         width="636"
+         height="620"
+         fill="#ffffff"
+         id="rect636"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview198"
+     showgrid="false"
+     inkscape:zoom="1.336478"
+     inkscape:cx="277.96941"
+     inkscape:cy="198.28235"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg196"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="false" />
+  <title
+     id="title2">blog-package-upstream-diagram-1</title>
+  <rect
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1"
+     id="rect105"
+     width="445.19998"
+     height="468.39529"
+     x="11.971765"
+     y="10.475294" />
+  <path
+     d="M 250.63333,33 H 439.11667 A 7.8833333,8.1975737 0 0 1 447,41.197574 V 229.74177 H 258.51667 a 7.8833333,8.1975737 0 0 1 -7.88334,-8.19758 z"
+     fill="#cbe247"
+     id="path4"
+     style="stroke-width:0.730811" />
+  <path
+     d="m 17,33 h 188.48333 a 7.8833333,8.1975737 0 0 1 7.88334,8.197574 V 229.74177 H 24.883333 A 7.8833333,8.1975737 0 0 1 17,221.54419 Z"
+     fill="#b0cdda"
+     id="path6"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 213.36667,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 205.48333,33 H 17 v 28.567054 z"
+     fill="#cadee6"
+     id="path8"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 447,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 439.11667,33 H 250.63333 v 28.567054 z"
+     fill="#e6f26d"
+     id="path10"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text16"
+     x="83.03978"
+     y="51.3624"
+     style="stroke-width:0.730811"><tspan
+       letter-spacing="-0.034em"
+       id="tspan12"
+       style="stroke-width:0.618677">F</tspan><tspan
+       x="91.00415"
+       y="51.3624"
+       id="tspan14"
+       style="stroke-width:0.730811">abrikam</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text18"
+     x="322.46872"
+     y="51.3624"
+     style="stroke-width:0.730811">Contoso</text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text20"
+     x="111.03421"
+     y="110.55807"
+     style="stroke-width:0.730811">Widgets</text>
+  <rect
+     x="88.755531"
+     y="124.53187"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect22"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="182.777,160.602 115.264,160.602 120.753,166.515 182.777,166.515 "
+     fill="#c2c2c2"
+     id="polygon24"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="135.33743"
+     y="124.53187"
+     width="7.3723497"
+     height="41.423084"
+     fill="#939393"
+     id="rect26"
+     style="stroke-width:0.730811" />
+  <rect
+     x="84.873352"
+     y="118.95007"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect28"
+     style="stroke-width:0.730811" />
+  <rect
+     x="138.28651"
+     y="118.95007"
+     width="7.3723497"
+     height="10.632998"
+     fill="#939393"
+     id="rect30"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text34"
+     x="102.54366"
+     y="142.71375"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="102.54366"
+   y="156.7453"
+   id="tspan32"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 90.355133,93.846118 a 6.40055,6.6556846 0 0 0 -6.41345,6.672822 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.932317 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21386 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.672827 z m -1.361666,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.988592 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.988592 z m 7.644683,6.066952 a 4.1487833,4.3141594 0 1 1 -4.146633,4.31416 4.1480667,4.3134142 0 0 1 4.146633,-4.31416 z M 82.646667,90.880087 a 2.2689667,2.3594107 0 1 1 -2.26825,2.358665 2.2675333,2.3579203 0 0 1 2.26825,-2.358665 z"
+     fill="#004880"
+     id="path36"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text38"
+     x="349.35596"
+     y="110.55807"
+     style="stroke-width:0.730811">Gizmos</text>
+  <rect
+     x="322.38885"
+     y="124.53187"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect40"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="508.777,160.602 441.264,160.602 446.753,166.515 508.777,166.515 "
+     fill="#c2c2c2"
+     id="polygon42"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="368.97076"
+     y="124.53187"
+     width="7.3723497"
+     height="41.423084"
+     fill="#939393"
+     id="rect44"
+     style="stroke-width:0.730811" />
+  <rect
+     x="318.50668"
+     y="118.95007"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect46"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.91986"
+     y="118.95007"
+     width="7.3723497"
+     height="10.632998"
+     fill="#939393"
+     id="rect48"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text52"
+     x="340.78796"
+     y="142.71375"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="340.78796"
+   y="156.7453"
+   id="tspan50"
+   style="stroke-width:0.730811">3.0.0</tspan></text>
+  <path
+     d="m 323.98847,93.846118 a 6.40055,6.6556846 0 0 0 -6.41345,6.672822 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21386 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.672827 z m -1.36167,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.988592 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.988592 z m 7.64468,6.066952 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 316.28,90.880087 a 2.2689667,2.3594107 0 1 1 -2.26825,2.358665 2.2675333,2.3579203 0 0 1 2.26825,-2.358665 z"
+     fill="#004880"
+     id="path54"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 133.81667,267.00347 H 322.3 a 7.8833333,8.1975737 0 0 1 7.88333,8.19757 V 463 H 141.7 a 7.8833333,8.1975737 0 0 1 -7.88333,-8.19757 z"
+     fill="#b4a0ff"
+     id="path56"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 330.18333,296.39847 V 275.20104 A 7.8833333,8.1975737 0 0 0 322.3,267.00347 H 133.81667 v 29.395 z"
+     fill="#c7b8ff"
+     id="path58"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text64"
+     x="172.32146"
+     y="280.83698"
+     style="stroke-width:0.730811">Adventure<tspan
+   x="252.60249"
+   y="280.83698"
+   letter-spacing="-0.039em"
+   id="tspan60"
+   style="stroke-width:0.618677">W</tspan><tspan
+   x="268.30029"
+   y="280.83698"
+   id="tspan62"
+   style="stroke-width:0.730811">orks</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text66"
+     x="186.93037"
+     y="343.68668"
+     style="stroke-width:0.730811">Gadgets</text>
+  <rect
+     x="163.28886"
+     y="362.26151"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect68"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="286.777,479.602 219.264,479.602 224.753,485.515 286.777,485.515 "
+     fill="#c2c2c2"
+     id="polygon70"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="209.87077"
+     y="362.26151"
+     width="7.3723497"
+     height="41.423084"
+     fill="#737373"
+     id="rect72"
+     style="stroke-width:0.730811" />
+  <rect
+     x="159.40668"
+     y="356.67972"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect74"
+     style="stroke-width:0.730811" />
+  <rect
+     x="212.81985"
+     y="356.67972"
+     width="7.3723497"
+     height="10.632998"
+     fill="#737373"
+     id="rect76"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text80"
+     x="178.54797"
+     y="375.84238"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="178.54797"
+   y="389.87393"
+   id="tspan78"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 164.88847,331.57575 a 6.40055,6.6556846 0 0 0 -6.41345,6.67283 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21387 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.67282 z m -1.36167,3.5026 a 2.3986851,2.4943 0 0 1 0,4.9886 v 0 a 2.3986851,2.4943 0 0 1 0,-4.9886 z m 7.64468,6.06695 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 157.18,328.60972 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35867 2.2675333,2.3579203 0 0 1 2.26825,-2.35867 z"
+     fill="#004880"
+     id="path82"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text84"
+     x="278.26709"
+     y="343.68668"
+     style="stroke-width:0.730811">Things</text>
+  <rect
+     x="251.43886"
+     y="362.26151"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect86"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="409.777,479.602 342.264,479.602 347.753,485.515 409.777,485.515 "
+     fill="#c2c2c2"
+     id="polygon88"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="298.02078"
+     y="362.26151"
+     width="7.3723497"
+     height="41.423084"
+     fill="#737373"
+     id="rect90"
+     style="stroke-width:0.730811" />
+  <rect
+     x="247.55669"
+     y="356.67972"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect92"
+     style="stroke-width:0.730811" />
+  <rect
+     x="300.96985"
+     y="356.67972"
+     width="7.3723497"
+     height="10.632998"
+     fill="#737373"
+     id="rect94"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text96"
+     x="268.43768"
+     y="375.84238"
+     style="stroke-width:0.730811">1.0.0</text>
+  <path
+     d="m 253.03847,331.57575 a 6.40055,6.6556846 0 0 0 -6.41345,6.67283 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21387 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.67282 z m -1.36167,3.5026 a 2.3986851,2.4943 0 0 1 0,4.9886 v 0 a 2.3986851,2.4943 0 0 1 0,-4.9886 z m 7.64468,6.06695 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 245.33,328.60972 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35867 2.2675333,2.3579203 0 0 1 2.26825,-2.35867 z"
+     fill="#004880"
+     id="path98"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 250.63333,33 H 439.11667 A 7.8833333,8.1975737 0 0 1 447,41.197574 V 229.74177 H 258.51667 a 7.8833333,8.1975737 0 0 1 -7.88334,-8.19758 z"
+     fill="#cbe247"
+     id="path100"
+     style="stroke-width:0.730811" />
+  <path
+     d="m 17,33 h 188.48333 a 7.8833333,8.1975737 0 0 1 7.88334,8.197574 V 229.74177 H 24.883333 A 7.8833333,8.1975737 0 0 1 17,221.54419 Z"
+     fill="#b0cdda"
+     id="path102"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 213.36667,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 205.48333,33 H 17 v 28.567054 z"
+     fill="#cadee6"
+     id="path104"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 447,61.567054 V 41.197574 A 7.8833333,8.1975737 0 0 0 439.11667,33 H 250.63333 v 28.567054 z"
+     fill="#e6f26d"
+     id="path106"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text112"
+     x="83.03978"
+     y="51.3624"
+     style="stroke-width:0.730811"><tspan
+       letter-spacing="-0.034em"
+       id="tspan108"
+       style="stroke-width:0.618677">F</tspan><tspan
+       x="91.00415"
+       y="51.3624"
+       id="tspan110"
+       style="stroke-width:0.730811">abrikam</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text114"
+     x="322.46872"
+     y="51.3624"
+     style="stroke-width:0.730811">Contoso</text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text116"
+     x="111.03421"
+     y="110.55807"
+     style="stroke-width:0.730811">Widgets</text>
+  <rect
+     x="88.755531"
+     y="124.53187"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect118"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="182.777,160.602 115.264,160.602 120.753,166.515 182.777,166.515 "
+     fill="#c2c2c2"
+     id="polygon120"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="135.33743"
+     y="124.53187"
+     width="7.3723497"
+     height="41.423084"
+     fill="#939393"
+     id="rect122"
+     style="stroke-width:0.730811" />
+  <rect
+     x="84.873352"
+     y="118.95007"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect124"
+     style="stroke-width:0.730811" />
+  <rect
+     x="138.28651"
+     y="118.95007"
+     width="7.3723497"
+     height="10.632998"
+     fill="#939393"
+     id="rect126"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text130"
+     x="102.54366"
+     y="142.71375"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="102.54366"
+   y="156.7453"
+   id="tspan128"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 90.355133,93.846118 a 6.40055,6.6556846 0 0 0 -6.41345,6.672822 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.932317 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21386 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.672827 z m -1.361666,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.988592 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.988592 z m 7.644683,6.066952 a 4.1487833,4.3141594 0 1 1 -4.146633,4.31416 4.1480667,4.3134142 0 0 1 4.146633,-4.31416 z M 82.646667,90.880087 a 2.2689667,2.3594107 0 1 1 -2.26825,2.358665 2.2675333,2.3579203 0 0 1 2.26825,-2.358665 z"
+     fill="#004880"
+     id="path132"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text134"
+     x="349.35596"
+     y="110.55807"
+     style="stroke-width:0.730811">Gizmos</text>
+  <rect
+     x="322.38885"
+     y="124.53187"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect136"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="508.777,160.602 441.264,160.602 446.753,166.515 508.777,166.515 "
+     fill="#c2c2c2"
+     id="polygon138"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="368.97076"
+     y="124.53187"
+     width="7.3723497"
+     height="41.423084"
+     fill="#939393"
+     id="rect140"
+     style="stroke-width:0.730811" />
+  <rect
+     x="318.50668"
+     y="118.95007"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect142"
+     style="stroke-width:0.730811" />
+  <rect
+     x="371.91986"
+     y="118.95007"
+     width="7.3723497"
+     height="10.632998"
+     fill="#939393"
+     id="rect144"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text148"
+     x="340.78796"
+     y="142.71375"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="340.78796"
+   y="156.7453"
+   id="tspan146"
+   style="stroke-width:0.730811">3.0.0</tspan></text>
+  <path
+     d="m 323.98847,93.846118 a 6.40055,6.6556846 0 0 0 -6.41345,6.672822 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21386 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.672827 z m -1.36167,3.5026 a 2.3986833,2.4942981 0 0 1 0,4.988592 v 0 a 2.3986833,2.4942981 0 0 1 0,-4.988592 z m 7.64468,6.066952 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 316.28,90.880087 a 2.2689667,2.3594107 0 1 1 -2.26825,2.358665 2.2675333,2.3579203 0 0 1 2.26825,-2.358665 z"
+     fill="#004880"
+     id="path150"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 133.81667,267.00347 H 322.3 a 7.8833333,8.1975737 0 0 1 7.88333,8.19757 V 463 H 141.7 a 7.8833333,8.1975737 0 0 1 -7.88333,-8.19757 z"
+     fill="#b4a0ff"
+     id="path152"
+     style="stroke-width:0.730811" />
+  <path
+     d="M 330.18333,296.39847 V 275.20104 A 7.8833333,8.1975737 0 0 0 322.3,267.00347 H 133.81667 v 29.395 z"
+     fill="#c7b8ff"
+     id="path154"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text160"
+     x="172.32146"
+     y="280.83698"
+     style="stroke-width:0.730811">Adventure<tspan
+   x="252.60249"
+   y="280.83698"
+   letter-spacing="-0.039em"
+   id="tspan156"
+   style="stroke-width:0.618677">W</tspan><tspan
+   x="268.30029"
+   y="280.83698"
+   id="tspan158"
+   style="stroke-width:0.730811">orks</tspan></text>
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text162"
+     x="274.62766"
+     y="343.68668"
+     style="stroke-width:0.730811">Gadgets</text>
+  <rect
+     x="249.28886"
+     y="362.26151"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect164"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="406.777,479.602 339.264,479.602 344.753,485.515 406.777,485.515 "
+     fill="#c2c2c2"
+     id="polygon166"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="295.87079"
+     y="362.26151"
+     width="7.3723497"
+     height="41.423084"
+     fill="#737373"
+     id="rect168"
+     style="stroke-width:0.730811" />
+  <rect
+     x="245.40668"
+     y="356.67972"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect170"
+     style="stroke-width:0.730811" />
+  <rect
+     x="298.81985"
+     y="356.67972"
+     width="7.3723497"
+     height="10.632998"
+     fill="#737373"
+     id="rect172"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text176"
+     x="266.24527"
+     y="375.84238"
+     style="stroke-width:0.730811">1.0.0<tspan
+   x="266.24527"
+   y="389.87393"
+   id="tspan174"
+   style="stroke-width:0.730811">2.0.0</tspan></text>
+  <path
+     d="m 250.88847,331.57575 a 6.40055,6.6556846 0 0 0 -6.41345,6.67283 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93231 a 6.4019833,6.657175 0 0 0 6.41417,-6.67357 v -7.21387 a 6.4012667,6.6564298 0 0 0 -6.41417,-6.67282 z m -1.36167,3.5026 a 2.3986851,2.4943 0 0 1 0,4.9886 v 0 a 2.3986851,2.4943 0 0 1 0,-4.9886 z m 7.64468,6.06695 a 4.1487833,4.3141594 0 1 1 -4.14663,4.31416 4.1480667,4.3134142 0 0 1 4.14663,-4.31416 z M 243.18,328.60972 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35867 2.2675333,2.3579203 0 0 1 2.26825,-2.35867 z"
+     fill="#004880"
+     id="path178"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text180"
+     x="186.91576"
+     y="343.68668"
+     style="stroke-width:0.730811">Things</text>
+  <rect
+     x="162.57219"
+     y="362.26151"
+     width="46.582619"
+     height="41.423084"
+     fill="#ffffff"
+     id="rect182"
+     style="stroke-width:0.730811" />
+  <polygon
+     points="285.777,479.602 218.264,479.602 223.753,485.515 285.777,485.515 "
+     fill="#c2c2c2"
+     id="polygon184"
+     transform="matrix(0.71666667,0,0,0.74523397,4.8166667,8.407279)" />
+  <rect
+     x="209.15411"
+     y="362.26151"
+     width="7.3723497"
+     height="41.423084"
+     fill="#737373"
+     id="rect186"
+     style="stroke-width:0.730811" />
+  <rect
+     x="158.69002"
+     y="356.67972"
+     width="54.346268"
+     height="10.632998"
+     fill="#ffffff"
+     id="rect188"
+     style="stroke-width:0.730811" />
+  <rect
+     x="212.10318"
+     y="356.67972"
+     width="7.3723497"
+     height="10.632998"
+     fill="#737373"
+     id="rect190"
+     style="stroke-width:0.730811" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="11.693px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text192"
+     x="177.81715"
+     y="375.84238"
+     style="stroke-width:0.730811">1.0.0</text>
+  <path
+     d="m 164.1718,331.57575 a 6.40055,6.6556846 0 0 0 -6.41345,6.67283 v 7.21312 a 6.4012667,6.6564298 0 0 0 6.41345,6.67357 h 6.93232 a 6.4019833,6.657175 0 0 0 6.41416,-6.67357 v -7.21387 a 6.4012667,6.6564298 0 0 0 -6.41416,-6.67282 z m -1.36167,3.5026 a 2.3986851,2.4943 0 0 1 0,4.9886 v 0 a 2.3986851,2.4943 0 0 1 0,-4.9886 z m 7.64469,6.06695 a 4.1487833,4.3141594 0 1 1 -4.14664,4.31416 4.1480667,4.3134142 0 0 1 4.14664,-4.31416 z m -13.99149,-12.53558 a 2.2689667,2.3594107 0 1 1 -2.26825,2.35867 2.2675333,2.3579203 0 0 1 2.26825,-2.35867 z"
+     fill="#004880"
+     id="path194"
+     style="stroke-width:0.730811" />
+</svg>

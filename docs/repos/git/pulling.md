@@ -6,7 +6,7 @@ ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Update code with fetch and pull
@@ -25,7 +25,7 @@ In this tutorial you learn how to:
 > * Download changes with fetch
 > * Update branches with merge
 > * Fetch and merge with pull
-> * Update your local branch with the latest changes from master
+> * Update your local branch with the latest changes from main
 
 ## Video Overview
 
@@ -43,6 +43,8 @@ You download changes to your local branch from the remote through `fetch`. `Fetc
 >To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes.
 Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the changes.
@@ -89,6 +91,8 @@ Git is generally very smart about resolving merge conflicts automatically, but s
 
 #### [Visual Studio](#tab/visual-studio/)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** view.
 
 **Sync** is a combined operation of pulling remote changes and then pushing local ones. This operation synchronizes the commits on the local and remote branch.
@@ -131,6 +135,8 @@ Use `pull` to make your branch current with the remote when you aren't worried a
 
 #### [Visual Studio](#tab/visual-studio/)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Open the Team Explorer and open the Sync view. Then click the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
 updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.
 
@@ -171,9 +177,9 @@ A `pull` command is a useful way to directly merge the work from remote branch i
 
 * * *
 
-## Update your branch with the latest changes from master
+## Update your branch with the latest changes from main
 
-When working in a branch, you may want to incorporate the latest changes from the master branch into your branch. There are two approaches you can use: rebase or merge.
+When working in a branch, you may want to incorporate the latest changes from the main branch into your branch. There are two approaches you can use: rebase or merge.
 
 - **Rebase** takes the changes made in the commits in your current branch and replays them on the history of another branch. Rebasing rewrites the commit history of your current branch. The history starts from the most recent commit in the target branch of the rebase.
 - **Merge** merges the changes from the source branch to the target branch using a merge commit, which becomes part of the commit history.
@@ -183,10 +189,12 @@ When working in a branch, you may want to incorporate the latest changes from th
 
 #### [Visual Studio](#tab/visual-studio/)
 
-> [!NOTE]
-> The `git pull origin master` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
-To merge the latest changes from the master branch to your branch:
+> [!NOTE]
+> The `git pull origin main` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 
+
+To merge the latest changes from the main branch to your branch:
 
 1. In Team Explorer, select the **Home** button and choose **Branches**.
 
@@ -194,15 +202,15 @@ To merge the latest changes from the master branch to your branch:
 
    ![Merge from](media/pulling/merge-from-menu.png)
 
-1. Specify a **Merge from branch**, which is `master` in this example, and then select **Merge**.
+1. Specify a **Merge from branch**, which is `main` in this example, and then select **Merge**.
 
-   ![Merge from master](media/pulling/merge-from.png)
+   ![Merge from main](media/pulling/merge-from.png)
 
    If there are any merge conflicts, Team Explorer tells you now. [Resolve the merge commits](merging.md?tabs=visual-studio) before the next step.
 
 1. Enter a commit message and select **Commit Staged**.
 
-   ![Commit merge from master](media/pulling/commit-merge-from-master.png)
+   ![Commit merge from main](media/pulling/commit-merge-from-master.png)
 
 1. When you're ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the **Synchronization** view.
 
@@ -210,15 +218,15 @@ To merge the latest changes from the master branch to your branch:
 
 #### [Command Line](#tab/command-line/)
 
-To merge the latest changes from master into your branch, in this example named `users/jamal/readme-fix`, you can use the following commands:
+To merge the latest changes from main into your branch, in this example named `users/jamal/readme-fix`, you can use the following commands:
 
 ```cmd
 git checkout users/jamal/readme-fix
-git pull origin master
+git pull origin main
 git push
 ```
 
-`git pull origin master` fetches and merges the contents of the master branch with your branch and creates a merge commit. If there are any merge conflicts, git shows you after the `pull`. [Resolve the merge commits](merging.md?tabs=command-line) before you continue. When you're ready to push your local commits, including your new merge commit, to the remote server, run `git push`.
+`git pull origin main` fetches and merges the contents of the main branch with your branch and creates a merge commit. If there are any merge conflicts, git shows you after the `pull`. [Resolve the merge commits](merging.md?tabs=command-line) before you continue. When you're ready to push your local commits, including your new merge commit, to the remote server, run `git push`.
 
 * * *
 

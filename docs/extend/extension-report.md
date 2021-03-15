@@ -21,9 +21,9 @@ To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmar
 
 You can view acquisition-related data in this tab for the selected period. 
 * Aggregated acquisition in the selected period for overall acquisition
-* Aggregated acquisition split by extension downloads, Azure DevOps and Team Foundation Server (TFS) connected install for free extension
-* Aggregated acquisition split by trials, Azure DevOps and TFS connected buy for paid extension
-* Daily trend of extension page views with acquisition for Azure DevOps and TFS connected server
+* Aggregated acquisition split by extension downloads Azure DevOps connected install for free extension
+* Aggregated acquisition split by trials Azure DevOps connected buy for paid extension
+* Daily trend of extension page views with acquisition for Azure DevOps and connected server
 * Conversion percentage from page views to acquisition
 
 For paid extensions, all transactional details for buy and trials are available with date, organization name, trial end date, and quantity. You can use the **Contact** action to communicate with your users. For more information, see the [Contact](#contact) section provided later in this article. 
@@ -58,8 +58,6 @@ This tab gives you snapshot of all questions by your extension users with the no
 ## Export to Excel
 
 All data elements available in the reports page are also available for download in XLS format to aid creating your own custom reports. 
-
-<a id="contact" />
 
 ## Contact
 

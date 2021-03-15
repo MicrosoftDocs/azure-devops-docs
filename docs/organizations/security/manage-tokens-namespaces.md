@@ -4,10 +4,10 @@ titleSuffix: Azure DevOps
 description: Manage security permissions using az devops security permission commands  
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/12/2020
 ---
 
@@ -16,7 +16,7 @@ ms.date: 10/12/2020
 
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-Permissions grant access to perform a specific action on a specific resource. You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
+Permissions grant access to perform a specific action on a specific resource as described in [Get started with permissions, access, and security groups](about-permissions.md). You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
 
 Azure DevOps grants a number of permissions by default to members of default security groups. You can add and manage permissions at a more granular level with the `az devops security permission` commands. Use these commands to:
 
@@ -431,13 +431,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 
 ## Security namespaces and their IDs
 
-The following table lists valid namespaces and provides descriptions and links to more information.  
-
-> [!NOTE]   
-> Some permissions don't appear in any user interface. These permissions are assigned to security roles, members of a security group, or internal resources. 
-
-
-
+See [Security namespace and permission reference for Azure DevOps](namespace-reference.md). 
  
 ## Related articles
 

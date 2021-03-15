@@ -50,6 +50,8 @@ To clone additional repositories as part of your pipeline:
 
   `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
 
+  In order to use `System.AccessToken` in a script, you must first make it available to the script. To do this, select the job under the **Tasks** tab in the editor, select **Additional Options** in the right panel, and check the option to **Allow scripts to access the OAuth token**.
+
 * If the access token (explained below) does not have access to the repository:
 
     1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`

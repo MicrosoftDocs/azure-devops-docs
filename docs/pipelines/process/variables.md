@@ -1,10 +1,10 @@
 ---
 title: Define variables
-ms.custom: seodec18, contperfq4, devx-track-azurecli
+ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 10/23/2020
+ms.date: 03/11/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2015'
 Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
+
+You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines. 
 
 ::: moniker range=">=azure-devops-2020"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
@@ -92,6 +94,19 @@ Macro variables are only expanded when they are used for a value, not as a keywo
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use macro syntax inside a `resource` or `trigger`.
+
+In this example, macro syntax is used with Bash, PowerShell, and a script task. The syntax for calling a variable with macro syntax is the same for all three. 
+
+ ```yaml
+variables:
+  - name: pullRequest
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+
+steps: 
+- bash: echo $(pullRequest)
+- powershell: echo $(pullRequest)
+- script: echo $(pullRequest)
+ ```
 
 ### Template expression syntax 
 You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template expressions are designed for reusing parts of YAML as templates. 
@@ -528,6 +543,8 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
 #### [YAML](#tab/yaml/)
 
@@ -549,7 +566,9 @@ steps:
 jobs:
 - job: A
   steps:
-  - task: MyTask@1  # this step generates the output variable
+  # assume that MyTask generates an output variable called "MyVar"
+  # (you would learn that from the task's documentation)
+  - task: MyTask@1
     name: ProduceVar  # because we're going to depend on it, we need to name the step
 - job: B
   dependsOn: A
@@ -650,9 +669,11 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` logging command.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
 This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
+
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
 
 ```yaml
 steps:
@@ -691,6 +712,9 @@ If you want to make a variable available to future jobs, you must mark it as
 an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
 
 To pass variables to jobs in different stages, use the [stage dependencies](expressions.md#dependencies) syntax. 
+
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file. Therefore, each stage can use output variables from the prior stage. To access further stages, you will need to alter the dependency graph, for instance, if stage 3 requires a variable from stage 1, you will need to declare an explicit dependency on stage 1.
 
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
@@ -931,12 +955,15 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
-If a variable appears in the `variables` block of a YAML file, it's fixed and can't be overridden at queue time.
+If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you may want to define a secret variable and not have the variable exposed in your YAML. Or, you may need to manually set a variable value during the pipeline run.
 
-To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job. 
+You have two options for defining queue-time values. You can define a variable in the UI and select the option to **Let users override this value when running this pipeline** or you can use [runtime parameters](runtime-parameters.md) instead. If your variable is not a secret, the best practice is to use [runtime parameters](runtime-parameters.md).
 
-You can also set a default value in the editor, and that value can be overridden by the person queuing the pipeline. To do this, select the variable in the **Variables** tab of the pipeline, and check **Let users override this value when running this pipeline**.
+To set a variable at queue time, add a new variable within your pipeline and select the override option. 
+
+:::image type="content" source="media/set-queue-time-variable.png" alt-text="Set a variable at queue time.":::
+
+To allow a variable to be set at queue time, make sure the variable doesn't also appear in the `variables` block of a pipeline or job. If you define a variable in both the variables block of a YAML and in the UI, the value in the YAML will have priority. 
 
 
 ::: moniker-end
@@ -946,7 +973,9 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
-To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
+To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at release time**.
+
+:::image type="content" source="media/checks/classic-settable-at-release.png" alt-text="Set variable during the release.":::
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

@@ -45,7 +45,7 @@ In a move to reduce our storage footprint, we’ve removed diagnostic informatio
 
 ## Xcode with Git-tf
 
-If you’re using Xcode in your environment, we published a [new article](/azure/devops/git/share-your-code-in-git-xcode?view=azure-devops) describing how to use Git and Xcode with Team Foundation Service.
+If you’re using Xcode in your environment, we published a [new article](/azure/devops/git/share-your-code-in-git-xcode?view=azure-devops&preserve-view=true) describing how to use Git and Xcode with Team Foundation Service.
 
 ## News RSS feed
 

@@ -2,7 +2,7 @@
 title: Get support and provide feedback
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps
+description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
 ms.technology: devops-new-user
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: chcomley
@@ -10,15 +10,12 @@ ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
 ms.date: 04/23/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Get support and provide feedback
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
-
-> [!Important]
-> Having problems? We can help. We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country from the dropdown menu, and then select **Live Chat (English)**.
 
 Share your feedback and ideas with us, or join our communities. We're always working to improve Azure DevOps, and we want you to be part of the process! 
 
@@ -30,7 +27,10 @@ Do you need to do any of the following?
 
 * **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
 
-* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
+* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
+
+<!---
+Removed section per work item 1791710, as all Support links should go to Developer Community.
 
 ## Azure DevOps product support
 
@@ -48,6 +48,7 @@ For billing support:
 
 * [Azure DevOps](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 
+-->
 ### Get live help
 
 We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country from the dropdown menu, and then select **Live Chat (English)**.
@@ -77,7 +78,7 @@ The more details, the better!
 
 ## What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to Azure DevOps Services, Azure DevOps Server, or Team Foundation Server.
+You can tell what platform you use from the URL you use to connect to Azure DevOps Services or Azure DevOps Server.
 
 ### Azure DevOps Services
 

@@ -3,7 +3,7 @@ title: Manage wikis in Azure DevOps
 titleSuffix: Azure DevOps
 description: Learn how to manage wikis in Azure DevOps
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devx-track-azurecli
 ms.topic: conceptual
 ms.assetid: 
 ms.author: chcomley

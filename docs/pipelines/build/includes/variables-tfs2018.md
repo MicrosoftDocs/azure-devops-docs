@@ -185,7 +185,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>Build.Reason</td>
 <td>The event that caused the build to run.
 <ul>
-<li><code>Manual</code>: A user manually queued the build.</li>
+<li><code>Manual</code>: A user manually queued the build from the UI or an API call.</li>
 <li><code>IndividualCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in.</li>
 <li><code>BatchedCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in, and the <strong>Batch changes</strong> was selected.</li>
 <li><code>Schedule</code>: <strong>Scheduled</strong> trigger.</li>

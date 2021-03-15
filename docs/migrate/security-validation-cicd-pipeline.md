@@ -5,8 +5,8 @@ ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.date: 04/26/2018
-ms.author: kaelli
-author: KathrynEE
+ms.author: sdanie
+author: steved0x
 monikerRange: '>= tfs-2015'
 ---
 

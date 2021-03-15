@@ -99,4 +99,4 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 - [Branch Command](branch-command.md)  
 - [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
 - [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
-- [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Branching and Merging](./branching-strategies-with-tfvc.md)

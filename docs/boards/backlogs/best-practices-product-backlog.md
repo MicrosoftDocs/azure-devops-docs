@@ -106,7 +106,6 @@ A meeting to refine the backlog should occur separate from the sprint planning m
 
 You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fully.    
 
-[Refining your Agile backlogs for success](https://www.batimes.com/robert-galen/grooming-your-agile-backlogs-for-success.html) provides a nice quality checklist to guide your backlog refinement efforts
 
 
 <a name="spikes"></a>

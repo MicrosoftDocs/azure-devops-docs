@@ -1,18 +1,18 @@
 ---
-title: Access levels for users or groups
+title: Change access levels for users or groups
 titleSuffix: Azure DevOps 
-description: Provide access to web portal users based on their license 
+description: Learn how to set the access level for a user or group based on their license 
 ms.technology: devops-security
 ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: conceptual
 ms.reviewer:  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/02/2019
 ---
 
-# Change access levels
+# Change access levels for users or groups
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -37,7 +37,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](/azure/devops/server/admin/add-administrator?view=azure-devops).
+* You must be a member of the Administrators group. If you aren't a member, [get added now](/azure/devops/server/admin/add-administrator).
 * <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 ::: moniker-end
@@ -142,7 +142,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 To change the access level for a user or group, first remove them from their existing access level, and then add them to the access level you want them to have. 
 
-1. Choose the user or group and then click **Remove**.
+1. Choose the user or group and then select **Remove**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Collection level permissions and groups](media/change-access-levels/remove-user-from-access-level.png)  

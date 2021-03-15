@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps 
-description: Auth and security for Azure DevOps and Team Foundation Server (TFS) extensions
+description: Learn about authentication and security for Azure DevOps extensions.
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -39,7 +39,7 @@ Most extensions have a need to call Azure DevOps REST APIs on behalf of the curr
 
 ## Authenticating requests to your service
 
-A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in Azure DevOps or TFS and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
+A common scenario is to make calls to a back-end service from an extension. To verify these calls are coming from your extension running in Azure DevOps and to verify the authenticity of the current user (and other context information), a special type of token is made available to your extension. This token contains information about who is making the call and also a signature that you can validate to know that the request came from your extension. 
 
 ### Get your extension's key
 
@@ -159,6 +159,7 @@ namespace TokenSample.Core.API
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseMvc();
             app.UseStaticFiles();
         }

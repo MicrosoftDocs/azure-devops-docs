@@ -1,6 +1,6 @@
 ---
 title: Use packages from nuget.org
-description: Use packages from nuget.org in Azure DevOps Services and Team Foundation Server via upstream sources or scopes.
+description: Use packages from nuget.org using scopes or upstream sources
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 
 The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Azure Artifacts feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
 
-The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the nuget client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
+The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the NuGet client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
 
 To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
 
@@ -62,7 +62,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">= azure-devops-2019"
 
-![Viewing your cached packages](media/view-cached-packages-newnav.png)
+![Source is set to filter on nuget.org.](media/view-cached-packages-newnav.png)
 
 ::: moniker-end
 
@@ -74,6 +74,6 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-![Viewing your cached packages](media/view-cached-packages.png)
+![Filtering is on the source nuget.org.](media/view-cached-packages.png)
 
 ::: moniker-end

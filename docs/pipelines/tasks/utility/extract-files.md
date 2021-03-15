@@ -4,8 +4,6 @@ description: Extract files from archives to a target folder using minimatch patt
 ms.topic: reference
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -62,6 +60,10 @@ None
 <td>Select this check box to delete all existing files in the destination folder before beginning to extract archives.</td>
 </tr>
 <tr>
+<td>Overwrite files in the destination directory</td>
+<td>Select this option to overwrite files in the output directory if they already exist.</td>
+</tr>
+<tr>
 </tr>
 
 
@@ -83,6 +85,7 @@ steps:
   inputs:
     archiveFilePatterns: '**/*.zip'
     cleanDestinationFolder: true
+    overwriteExistingFiles: false
 ```
 
 ### Extract all .zip files from subfolder
@@ -95,6 +98,7 @@ steps:
   inputs:
     archiveFilePatterns: 'test/*.zip'
     cleanDestinationFolder: true
+    overwriteExistingFiles: false
 ```
 
 ## Open source

@@ -2,7 +2,7 @@
 title: Troubleshooting renaming a project - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: View frequently asked questions (FAQs) about renaming a project, including what else gets renamed.
+description: View frequently asked questions (FAQs) about renaming a project, including what else gets renamed in Azure DevOps.
 ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
 toc: show

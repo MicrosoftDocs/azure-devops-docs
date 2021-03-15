@@ -104,7 +104,7 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
     1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes and paste it into the `<password>` tag.
 
 > [!IMPORTANT]
-> In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenFeedAuthenticate` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.
+> In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenAuthenticateFeed` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.
 
 ## Restore your package
 

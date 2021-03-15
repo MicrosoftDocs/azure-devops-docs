@@ -24,10 +24,10 @@ When you create a team project, a Wiki Git repo isn't created by default. To sta
 The team project Wiki Git repositories are assigned the following labels.
 
 - Wiki repo for a team project: *ProjectName.wiki*
-- Master branch: *wikiMaster*
+- Main branch: *wikiMain*
 
 > [!NOTE]  
-> You can manage your Wiki repo in the same way you manage any other Git repo, by defining branch policies on the wikiMaster branch. However, you can make changes to your local wikiMaster branch and push them directly to the remote branch without defining any policies.
+> You can manage your Wiki repo in the same way you manage any other Git repo, by defining branch policies on the wikiMain branch. However, you can make changes to your local wikiMain branch and push them directly to the remote branch without defining any policies.
 
 The Wiki repository has the following files and folders:
 
