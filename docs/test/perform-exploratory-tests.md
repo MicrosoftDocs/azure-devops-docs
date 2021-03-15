@@ -28,16 +28,16 @@ quality of your product.
 
 1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
 
-2. Download and install your chosen browser, if you haven't already, then open it.
+1. Download and install your chosen browser, if you haven't already, then open it.
 
-3. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
+1. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
    and choose **Install**.
 
    ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
    ![Visual Studio Marketplace, Test &amp; Feedback extension, Supported Browsers](media/perform-exploratory-tests/getstarted-11.PNG)
 
-4. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
+1. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
    - If you are using Google Chrome, choose the **Install** link for Chrome from the above image to open the 
      Google Chrome web store and follow the instructions to install the extension.
