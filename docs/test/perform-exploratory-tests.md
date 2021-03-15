@@ -28,36 +28,37 @@ quality of your product.
 
 1. Check the list of [supported browsers](reference-qa.md#browser-support) and decide which you want to use.
 
-1. Download and install your chosen browser, if you haven't already, then open it.
+2. Download and install your chosen browser, if you haven't already, then open it.
 
-1. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
+3. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
    and choose **Install**.
 
    ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
-1. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
+   ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-11.png)
 
-   - If you are using Google Chrome, choose the **Install** link to open the 
+4. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
+
+   - If you are using Google Chrome, choose the **Install** link for Chrome from the above image to open the 
      Google Chrome web store and follow the instructions to install the extension.
 
-     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
+     ![Add extension to Chrome](media/perform-exploratory-tests/getstarted-chrome01.png)
 
-     ![Follow instructions to install the extension on Chrome.](media/perform-exploratory-tests/getstarted-03.png)
+     ![Follow instructions to install the extension on Chrome.](media/perform-exploratory-tests/getstarted-chrome02.png)
+     
+   - If you are using Microsoft Edge (Chromium), choose the **Install** link for Edge from the above image to open the 
+     Microsoft Edge Add-ons page and follow the instructions to install the extension.
 
-   - If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
-     and save the file to a local folder on your computer. 
+     ![Add extension to Edge](media/perform-exploratory-tests/getstarted-edge01.png)
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-07.png)
+     ![Follow instructions to install the extension on Edge.](media/perform-exploratory-tests/getstarted-edge02.png)
+     
+   - If you are using Mozilla Firefox 50.0 and higher, choose the **Install** link for Firefox from the above image to open the 
+     Firefox Browser Add-ons page and follow the instructions to install the extension.
 
-     Select and drag the downloaded file and drop it on any tab in Firefox.
+     ![Add extension to Firefox](media/perform-exploratory-tests/getstarted-firefox01.png)
 
-     ![Drag and drop the file on any tab in Firefox.](media/perform-exploratory-tests/getstarted-08.png)
-
-     Choose **Install**.
-
-     ![Choose Install.](media/perform-exploratory-tests/getstarted-09.png)
-
-     ![Choose Install to install the extension on Firefox.](media/perform-exploratory-tests/getstarted-10.png)
+     ![Follow instructions to install the extension on Edge.](media/perform-exploratory-tests/getstarted-firefox02.png)
 
 >You need to install the extension or add-on only once. Afterwards your browser will
 update it automatically.
