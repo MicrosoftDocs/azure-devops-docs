@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: ">= tfs-2013"
-ms.date: 07/24/2020
+ms.date: 01/19/2021
 ---
 
 # Work tracking, process, and project limits
@@ -32,10 +32,10 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Queries  |  2 minutes | 
+| Query execution time  |  2 minutes | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
-
+| Shared queries under a folder | 999 queries |
 
 To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
@@ -67,18 +67,23 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 
 | User interface |  Limit | 
 |--------|-------|
-| Backlogs | 10,000 work items | 
-| Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
-| Taskboard | 1000 tasks  | 
+| Backlogs | 1,000 work items | 
+| Boards | 1,000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
+| Taskboard | 1,000 tasks  | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
+| Area Paths | 10,000 per project
+| Area Path Depth | 14
+| Iteration Paths | 10,000 per project
+| Iteration Path Depth | 14
 
-Each backlog can display up to 10,000 work items. This is simply a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
 #### Additional notes:
 
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+- By default, work item limits might be initially configured to lower values.
 
 
 ::: moniker-end

@@ -22,6 +22,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
+- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help connecting to Azure AD. 
 - Ensure you're a Project Collection Administrator or [Owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
 - Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-azure-access.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
@@ -80,13 +81,13 @@ When you inform your users of the completed change, include the following tasks 
 - Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine. 
 - [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 
     b. Select **Personal access tokens**, and then select **New Token**.
     
-     ![Select New Token button to create](media/shared/select-personal-access-tokens-new-token.png)
+     ![Select New Token](media/shared/select-personal-access-tokens-new-token.png)
 
     c. Complete the form, and then select **Create**.
 
@@ -96,7 +97,7 @@ When you inform your users of the completed change, include the following tasks 
 
 - Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 

@@ -1,13 +1,13 @@
 ---
 title: Change individual or group permissions
 titleSuffix: Azure DevOps
-description: Add custom security groups, change permissions for groups or individuals tutorial
+description: Learn how to add custom security groups, change permissions for groups or individuals tutorial
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/22/2020
 ---
 
@@ -72,7 +72,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
@@ -97,7 +97,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 

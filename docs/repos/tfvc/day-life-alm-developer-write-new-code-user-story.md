@@ -517,6 +517,6 @@ For more information about how to define a continuous integration build process,
 
 ![CI Build results](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
 
-For more information, see [Run, monitor, and manage builds](../../pipelines/overview.md).
+For more information, see [Run, monitor, and manage builds](../../pipelines/get-started/what-is-azure-pipelines.md).
  
 [Next (Suspend work, fix a bug, and conduct a code review)](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

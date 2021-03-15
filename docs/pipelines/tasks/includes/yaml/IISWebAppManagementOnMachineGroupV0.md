@@ -37,7 +37,7 @@ ms.technology: devops-cicd-tasks
     appPoolNameForWebsite: 
     #dotNetVersionForWebsite: 'v4.0' # Options: v4.0, v2.0, no Managed Code
     #pipeLineModeForWebsite: 'Integrated' # Options: integrated, classic
-    #appPoolIdentityForWebsite: 'ApplicationPoolIdentity' # Options: applicationPoolIdentity, localService, localSystem, networkService, specificUser
+    #appPoolIdentityForWebsite: 'ApplicationPoolIdentity' # Options: ApplicationPoolIdentity, LocalService, LocalSystem, NetworkService, SpecificUser
     #appPoolUsernameForWebsite: # Required when appPoolIdentityForWebsite == SpecificUser
     #appPoolPasswordForWebsite: # Optional
     #anonymousAuthenticationForWebsite: false # Optional

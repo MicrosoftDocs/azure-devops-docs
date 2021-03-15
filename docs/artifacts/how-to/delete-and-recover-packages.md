@@ -1,9 +1,9 @@
 ---
 title: Delete and recover packages | Azure Artifacts
-description: Recover deleted packages and set up policies to automatically delete packages hosted in Azure DevOps Services and Team Foundation Server (TFS)
+description: Recover deleted packages and set up retention policies
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.topic: conceptual
 ms.date: 10/13/2020
 monikerRange: '>= tfs-2017'
@@ -107,7 +107,7 @@ From within your feed, select the appropriate package and select **Unlist** or *
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-### Unlisting or deleting a NuGet package in Team Foundation Server
+### Unlisting or deleting a NuGet package
 
 You must be a **contributor** to unlist a package and an **owner** to delete it.
 
@@ -162,6 +162,10 @@ From within your feed, select the appropriate package and select **Delete latest
 > ![Unlist or delete a Universal package](../media/delete/delete-universal-package.png)
 
 * * *
+
+> [!NOTE]
+> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
+
 ## Automatically delete old package versions with retention policies
 
 Over time, the number of versions for each package being hosted in your feed can grow quickly. You can set up retention policies to automatically delete old packages and save storage space.
@@ -248,3 +252,15 @@ Deleted packages will remain in the recycle bin for 30 days after which it will 
     > ![Restore package TFS](../media/recycle-bin/recycle-bin-restore.png)
 
 ::: moniker-end
+
+## Q&A
+
+### Q: What happens with old/existing packages when we enable retention policies?
+
+A: Those packages will get soft-deleted and moved to the recycle bin. The deletion job runs once a day but there could be an initial delay after the policy is turned on for the first time due to an influx of packages. Packages remain in the recycle bin for 30 days before they are permanently deleted. To remove the packages from your billable storage, you can chose to delete them manually using the UI or the REST API before the 30 days is up. 
+
+## What's next?
+
+- [Set up upstream sources](./set-up-upstream-sources.md)
+- [Configure permissions](../feeds/feed-permissions.md)
+- [Promote a package to a view](../feeds/views.md)

@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/17/2020 
 ---
 
@@ -36,7 +36,7 @@ From your profile page, you can change your information and  account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
+1. From your home page, select :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then select **Profile**.
 
    ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 

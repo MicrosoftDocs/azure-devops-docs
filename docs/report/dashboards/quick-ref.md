@@ -552,3 +552,6 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 
 ::: moniker-end
 
+## Marketplace extensions
+
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)

@@ -1,6 +1,6 @@
 ﻿---
 title: Follow a package to receive notifications
-description: Following a package in Azure DevOps Services or TFS will allow you to be notified every time a new version of the package is published
+description: How to follow packages and get notified every time a new version is published
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 05/10/2018

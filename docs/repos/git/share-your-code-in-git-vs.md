@@ -1,4 +1,4 @@
-﻿---
+---
 title: Share your code with Git using Visual Studio 2015
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio
@@ -13,17 +13,15 @@ monikerRange: '>= tfs-2015'
 
 # Share your code with Visual Studio 2015 and Azure Repos
 
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
    
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+This article walks you through the steps to get a Visual Studio solution on your PC into an Azure DevOps Git repo you can share with others. If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
 
-Share your Visual Studio solution in a new Azure DevOps Services or Team Foundation Server Git repo.
-
-> This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others, even if you don't have an organization in Azure DevOps.
-> If you need to work with a Visual Studio solution hosted in an existing repo, use the [Git quick start](gitquickstart.md) instead.
 
 ##  Create a local Git repo for your project
 
@@ -94,7 +92,7 @@ Sync your local repo with changes from your team as they make updates.
  
 ## Try this next
 
-[Set up a build](../../pipelines/overview.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
+[Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
 
 ## Troubleshooting
 
@@ -133,4 +131,4 @@ Make sure to install the latest release of [Git for Windows](https://git-scm.com
 
 See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->

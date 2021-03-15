@@ -28,7 +28,7 @@ In this tutorial, you will:
 ::: moniker range=">= azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   >![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+   >![Artifacts is highlighted in the navigation pane.](../media/goto-feed-hub-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ In this tutorial, you will:
 ::: moniker range=">= azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   >![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+   >![On Packages there is a list of packages, and + Create Feed is highlighted.](../media/new-feed-button-azure-devops-newnav.png)
 
 ::: moniker-end
 
@@ -72,11 +72,11 @@ In this tutorial, you will:
 
 1. Navigate to the **Packages** page:
 
-   ![Go to Azure Artifacts](../media/goto-feed-hub.png)
+   ![The Packages tab shows All in Release view and All packages in Source.](../media/goto-feed-hub.png)
 
 1. Select **+ New feed**:
 
-   ![New feed button](../media/new-feed-button.png)
+   ![The + New feed button is highlighted.](../media/new-feed-button.png)
 
 1. In the dialog:
 

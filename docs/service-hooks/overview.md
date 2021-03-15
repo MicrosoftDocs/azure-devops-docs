@@ -5,7 +5,7 @@ ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+ms.date: 11/19/2020
 ---
 
 # Integrate with service hooks
@@ -24,6 +24,10 @@ Subscriptions also target **consumers**, which are external services that can ru
 when an event occurs.
 
 ![Service Hooks Diagram](./media/service-hooks.png)
+
+> [!NOTE]
+> For Azure DevOps Services connecting to endpoints for Service Hooks requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../organizations/security/allow-list-ip-url.md#range-restrictions).
+
 
 ## Available services
 
@@ -150,7 +154,7 @@ A: Yes. You can revoke authorizations from your profile.
 
 	Make sure you start from the Visual Studio site (https://visualstudio.com) 
 	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
-	your profile accessed from your organization will take you to the wrong implementation 
+	your profile accessed from your organization takes you to the wrong implementation 
 	of the authorizations management feature.
 
 2.	Manage your authorizations.

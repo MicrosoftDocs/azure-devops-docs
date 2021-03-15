@@ -29,7 +29,7 @@ Enforce policies for accessing your team's critical resources and key assets.
 ## How Azure AD controls access to Azure DevOps
 
 Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
-Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or  SSH.
+Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or SSH.
 Only specific [Azure AD administrators](/azure/active-directory/roles/permissions-reference) manage users in your directory, so they control who gets access to your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
@@ -54,7 +54,7 @@ A: Add these users to the directory with new work or school accounts, and reassi
 
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
-A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
+A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: What if I accidentally delete a user in Azure AD?
 

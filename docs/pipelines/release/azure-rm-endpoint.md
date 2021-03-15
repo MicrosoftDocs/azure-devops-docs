@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/09/2020
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -53,6 +53,8 @@ Errors that may occur when the system attempts to create the service connection 
 * [A valid refresh token was not found](#sessionexpired)
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
+* [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
+* [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
 
 <a name="privileges"></a>
 
@@ -174,6 +176,47 @@ To fix this issue you will need to modify the supported account types and who ca
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
 1. Select **Save**.
+
+<a name="autoCreatedSecretExpiration"></a>
+
+### Automatically created service principal client secret has expired
+
+An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
+
+To renew the token for an automatically created service principal:
+
+1. Go to the Azure Resource Manager service connection that was created by using the Automatic method.
+
+1. In the upper-right corner, click **Edit**.
+
+1. Click **Verify** on the service connection page. 
+
+1. Click **Save**. The client secret for that service principal has now been renewed for two years.
+
+<a name="failedToObtainJWT"></a>
+
+### Failed to obtain the JWT by using the service principal client ID
+
+This issue occurs when you try to verify a service connection that has an expired secret.
+
+To resolve this issue:
+
+1. Go to the Azure Resource Manager service connection you want to update.
+
+1. Make a change to the service connection. The easiest and recommended change is to add a description.
+
+1. Save the service connection.
+
+   > [!NOTE]
+   > Select **Save**. Don't try to verify at this step.
+
+1. Exit the service connection, and then refresh the service connections page.
+
+1. Edit the service connection again.
+
+1. Click **Verify**.
+
+1. Save the service connection.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 

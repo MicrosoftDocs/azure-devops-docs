@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.author: kaelli
 ms.date: 06/02/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # DevOps tools overview for Azure DevOps

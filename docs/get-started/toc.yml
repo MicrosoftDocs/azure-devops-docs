@@ -3,7 +3,33 @@
 - name: Start using Azure DevOps
   href: ../user-guide/toc.yml
 - name: Web portal navigation
-  href: ../project/navigation/toc.yml 
+  items:
+  - name: Navigation 
+    href: ../project/navigation/index.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Open a service, page, or setting 
+    href: ../project/navigation/go-to-service-page.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Add an artifact or team artifacts
+    href: ../project/navigation/add-artifact-team.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Use breadcrumbs, selectors, and directories
+    href: ../project/navigation/use-breadcrumbs-selectors.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Open another project or repo  
+    href: ../project/navigation/go-to-project-repo.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json   
+  - name: Set favorites 
+    href: ../project/navigation/set-favorites.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Filter basics 
+    href: ../project/navigation/filter-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Search your repo, work items, or wiki 
+    href: ../project/navigation/search-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
+  - name: Manage or enable features  
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+- name: Search
+  items:
+  - name: Search across your projects
+    href: ../project/search/overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search code
+    href: ../project/search/code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search work items
+    href: ../project/search/work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Migrate & import
   href: ../migrate/toc.yml 
 - name: Permissions & access

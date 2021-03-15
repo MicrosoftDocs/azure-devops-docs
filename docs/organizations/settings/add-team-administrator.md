@@ -7,7 +7,7 @@ ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/17/2020
 ---
 

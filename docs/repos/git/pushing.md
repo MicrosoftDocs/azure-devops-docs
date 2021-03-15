@@ -6,7 +6,7 @@ ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Share code with push
@@ -17,7 +17,7 @@ Share changes made in [commits](commits.md) and [branches](branches.md) using th
 Push your branches to the remote repository. Git adds your commits to an existing branch on the remote or creates a new branch with the same commits as your local branch.
 
 Git makes sure that pushed changes are consistent with the remote branch. Others can [pull](pulling.md) your commits and merge them into their own local copy of the branch.
-Pushed branches that have finished work are reviewed and merged into the main branch of your repo through a [pull request](pullrequest.md).
+Pushed branches that have finished work are reviewed and merged into the main branch of your repo through a [pull request](pull-requests.md).
 
 In this tutorial you learn how to:
 
@@ -33,6 +33,10 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
    ![Synchronization](media/gitquickstart-vs2017/sync.png)
@@ -88,4 +92,4 @@ If there are [conflicts](merging.md) between your local commits and the remote b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Review code with pull requests](pullrequest.md) or [update code with fetch and pull](pulling.md)
+> [Review code with pull requests](pull-requests.md) or [update code with fetch and pull](pulling.md)

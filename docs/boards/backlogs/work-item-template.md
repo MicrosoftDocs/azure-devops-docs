@@ -1,14 +1,14 @@
 ---
-title: Use work item templates to update stories, & more
+title: Use work item templates to update stories & more
 titleSuffix: Azure Boards   
-description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
+description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps and Visual Studio
 ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 # Use templates to add and update work items 
@@ -23,6 +23,8 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md)
+
+[!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)] 
 
 
 ## Prerequisites  
@@ -303,13 +305,10 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
-
-~~~
 <img src="media/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
 
 > [!TIP]  
 > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
-~~~
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
@@ -593,57 +592,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
 
-## Q & A
-
-
-### Q: How do I set a default template for a team? 
-
-**A:** The feature to set a default template for a team isn't a supported feature at this time. 
-
-::: moniker range="<= tfs-2015"
-From the Work Item Templates tool, you can set a default for each work item type. However, that default is set only for you and available only when working through Team Explorer. Open the template context menu and select **Set as default**. 
-
-::: moniker-end
-
-### Q: Can I copy a work item template to another team or project? 
-
-**A:** No. This feature isn't supported at this time.  
-
-### Q: How do I delete a work item template? 
-
-**A:** From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Delete** option. 
-
-> [!div class="mx-imgBorder"]  
-> ![Delete template](media/templates/delete-template.png)
-
-
-### How do I create a template with links to other work items?
-
-::: moniker range=">= azure-devops-2019"
-
-**A:** You can't create templates that contain default links to work items. However, you can use the Marketplace extension, [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions), to create rules that support adding linked work items with a single click. 
-
-Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
-- [Add task checklists](../boards/add-task-checklists.md)
-- [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
-- [Add features and epics](../boards/kanban-epics-features-stories.md)  
-
-Otherwise, you can quickly copy tasks, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-You can't create templates that contain default links to work items. However, you can quickly copy tasks, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
-
-Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
-- [Add task checklists](../boards/add-task-checklists.md)
-- [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
-- [Add features and epics](../boards/kanban-epics-features-stories.md)  
-
-::: moniker-end
-
-
 ## Related articles
 
+- [Azure Boards FAQs](../faqs.yml) 
 - [Sample work item templates](../work-items/work-item-template-examples.md)

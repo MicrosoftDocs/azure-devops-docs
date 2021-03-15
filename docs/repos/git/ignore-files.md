@@ -6,7 +6,7 @@ ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 08/24/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Ignore file changes with Git
@@ -33,6 +33,8 @@ Share *.gitignore* in the default branch in your repo. You and your team can upd
 ### Create a .gitignore
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 Visual Studio automatically creates a *.gitignore* file in your repo when you [create new repo for your project](creatingrepo.md).
 
@@ -64,6 +66,8 @@ Modify your *.gitignore* to include files types, paths, and file patterns in you
 Git starts ignoring these files as soon as you update *.gitignore*. If others on your team need the same set of ignored files, be sure to commit your changes.
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 You can edit your *.gitignore* file for your repo by going to the **Settings** view in Team Explorer, then selecting **Repository Settings**. Select **Edit** for your *.gitignore*.
 

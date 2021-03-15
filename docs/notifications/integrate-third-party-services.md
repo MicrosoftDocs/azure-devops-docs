@@ -1,7 +1,7 @@
 ---
 title: How to integrate with third-party services
 titleSuffix: Azure DevOps 
-description: Learn how to integrate third-party services, such as Slack, Microsoft Teams, and others with Azure DevOps and Team Foundation Server (TFS)
+description: Learn how to integrate third-party services, such as Slack, Microsoft Teams, and others with Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley

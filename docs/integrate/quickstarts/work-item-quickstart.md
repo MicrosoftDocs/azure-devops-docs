@@ -28,7 +28,7 @@ You need the following prerequisites:
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
-There are a few things happening in the code sample below:
+There are a few things happening in the following code sample:
 
 1. Authenticating
    1. Create credentials using your PAT
@@ -84,7 +84,7 @@ public class QueryExecutor
         // create a wiql object and build our query
         var wiql = new Wiql()
         {
-            // NOTE: Even if other columns are specified, only the ID & URL will be available in the WorkItemReference
+            // NOTE: Even if other columns are specified, only the ID & URL are available in the WorkItemReference
             Query = "Select [Id] " +
                     "From WorkItems " +
                     "Where [Work Item Type] = 'Bug' " +

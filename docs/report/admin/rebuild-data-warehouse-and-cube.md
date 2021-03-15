@@ -21,13 +21,13 @@ The data warehouse aggregates all operational data, such as version control, wor
 
 You should not have to rebuild the data warehouse during normal operations. If you want to refresh the data warehouse data, you can manually process the warehouse and cube on demand. See [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md). Depending on the amount of data in the data warehouse, the rebuild operation can take several hours to finish, during which time reports are not available. 
 
-To rebuild the TFS data warehouse, perform this sequence of steps:
+To rebuild the Azure DevOps data warehouse, perform this sequence of steps:
 
 1. [Verify that services and application pools are running and that TCP/IP is enabled for SQL Server](#verify-services)  
 2. [Rebuild the data warehouse](#create-datawarehouse)  
 3. [Verify that reports can be accessed](#verify-reports)  
 
-**Requirements** 
+## Prerequisites
 
 You must be a member of these security groups or have the corresponding permissions:
 
@@ -59,33 +59,53 @@ With the rebuild operation, you re-create both the relational database and the c
 
 <a id="verify-services">  </a>
 
-## 1. Verify that services and application pools are running and that TCP/IP is enabled for SQL Server
+## 1. Verify that services and application pools are running 
+
+Also, and that TCP/IP is enabled for SQL Server. 
 To complete the steps in this procedure, the services that SQL Server requires must be running. You stop Reporting Services so that users do not access reports while you are rebuilding the data warehouse. Also, for a dual-server deployment, the TCP/IP protocol must be enabled for each instance of a SQL Server database. 
 
 By default, TCP/IP is disabled when you install SQL Server.
 
 1. Log on to the appropriate server, open Computer Manager, and then verify that the services and application pools in the following table are running: 
 
-    <table>
-    <tr valign="top">
-    <th>Log on to the server that hosts this program</th>
-    <th>Component</th>
-    </tr>
-    <tr>
-    <td>SQL Server Analysis Services</td>
-    <td>- SQL Server Analysis Services (MSSQLSERVER or <i>TFSInstance</i>)</td>
-    </tr>
-    <tr>
-    <td>Team Foundation databases</td>
-    <td>- SQL Server (MSSQLSERVER or <i>TFSInstance</i>)<br/>
-    - SQL Server Agent (MSSQLSERVER or <i>TFSInstance</i>)
-    </td>
-    </tr>
-    <tr>
-    <td>Application tier</td>
-    <td>- TFS Application Pool</td>
-    </tr>
-    </table>
+	---
+	:::row:::
+	   :::column span="2":::
+	      **Log on to the server that hosts this program**
+	   :::column-end:::
+	   :::column span="2":::
+	      **Component**
+	   :::column-end:::
+	:::row-end:::
+	---
+	:::row:::
+	   :::column span="2":::
+	      SQL Server Analysis Services
+	   :::column-end:::
+	   :::column span="2":::
+	      - SQL Server Analysis Services (MSSQLSERVER or *TFSInstance*)
+	   :::column-end:::
+	:::row-end:::
+	---
+	:::row:::
+	   :::column span="2":::
+	      Team Foundation databases
+	   :::column-end:::
+	   :::column span="2":::
+	      - SQL Server (MSSQLSERVER or *TFSInstance*)  
+	      - SQL Server Agent (MSSQLSERVER or *TFSInstance*)
+	   :::column-end:::
+	:::row-end:::
+	---
+	:::row:::
+	   :::column span="2":::
+	      Application tier
+	   :::column-end:::
+	   :::column span="2":::
+	      - TFS Application Pool
+	   :::column-end:::
+	:::row-end:::
+	---
 
     For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
@@ -98,7 +118,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 ## 2. Rebuild the data warehouse and restart services
 
-1. [Open the Team Foundation administration console](/azure/devops/server/admin/admin-quick-ref).
+1. [Open the Azure DevOps Server Administration Console](/azure/devops/server/admin/admin-quick-ref).
 
 2. Under **Application Tier>Reporting**, choose **Start Rebuild**.  
 
@@ -151,12 +171,15 @@ By default, TCP/IP is disabled when you install SQL Server.
 5. Check the date when the report was last updated. This information appears in the lower-left corner of the report. 
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### Q: How do I resolve schema conflicts?
+
 **A:** If you encounter schema conflicts, you cannot resolve this by rebuilding the data warehouse. Instead, you must resolve the conflicts first and then rebuild the data warehouse. See [Resolve schema conflicts that are occurring in the data warehouse](resolve-schema-conflicts.md).
 
 #### Q: How can I resolve failure errors that occur when rebuilding or processing the data warehouse?
+
 **A:** The following actions can cause failure errors to occur.  
 
 * You manually modified a TFS database or edited a SQL table. You should not manually modify any of the TFS databases unless you're either instructed to do so by Microsoft Support or when you're following the procedures described for manually backing up the databases ([Manually back up Team Foundation Server](/azure/devops/server/admin/backup/manually-backup-tfs)). Any other modifications can invalidate your service agreement, block upgrades and patches, and result in data loss or corruption.  
@@ -166,11 +189,13 @@ By default, TCP/IP is disabled when you install SQL Server.
 * You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).   
 
 #### Q: How do I modify the reporting configuration?
+
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.
 
 ![Edit the information to configure reporting](media/IC665021.png)
 
 #### Q: What happens to data that has been purged or destroyed before a rebuild?
+
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 
 
 Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
@@ -182,7 +207,7 @@ Deleting builds doesn't remove all associated data from the database. To do that
 <!-- ENDSECTION -->
 
 
-## Related content
+## Related articles
 
 - [RebuildWarehouse Command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120))  
 - [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)  

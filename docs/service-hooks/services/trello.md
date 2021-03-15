@@ -131,7 +131,7 @@ So, if the subscription is for a completed build, it might be something like
     Build {{build.id}} completed at {{build.finishTime}}
 ```
 
-To understand what fields are available to use, look at the [events reference](../events.md).
+Where build is the name of the resource and ID, finishTime are the fields available in this resource. To understand the event types, fields and resources available to use, look at the [events reference](../events.md).
 
 ### Work item fields
 

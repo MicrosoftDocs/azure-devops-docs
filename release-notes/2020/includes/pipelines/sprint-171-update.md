@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Additional agent platform: ARM64
 
-We added Linux/ARM64 to the list of supported platforms for the Azure Pipelines agent. Although the code changes were minimal, a lot of behind-the-scenes work had to be completed first, and we're excited to announce its release!
+You can now run your self-hosted agents on Linux/ARM64. We added Linux/ARM64 to the list of supported platforms for the Azure Pipelines agent. Although the code changes were minimal, a lot of behind-the-scenes work had to be completed first, and we're excited to announce its release!
 
 ### Tag filter support for pipeline resources
 

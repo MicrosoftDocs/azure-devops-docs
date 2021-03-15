@@ -34,7 +34,7 @@ Before you can change a private project, to a public project, you must enable an
 
 1. From your web browser, sign in to Azure DevOps. You must be signed in to create a public project.
 
-2. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**.
+2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then choose **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  

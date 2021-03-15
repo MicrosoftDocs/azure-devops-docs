@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, and personal access tokens to securely s
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,6 +24,8 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 > [!TIP]
 > Using Visual Studio? Team Explorer handles authentication with Azure Repos for you.
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 ## Authentication comparison
 
 | Authentication Type | When to use | Secure? | Ease of setup | Additional tools |   
@@ -41,7 +43,7 @@ Use PATs to authenticate if you don't already have SSH keys set up on your syste
 
 ### <a name="use-credential-managers-to-generate-tokens"></a>Use Git Credential Manager to generate tokens
 
-[Git credential managers](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
+The [Git Credential Manager Core](set-up-credential-managers.md) is an optional tool that makes it easy to create PATs when you're working with Azure Repos. 
 Sign in to the web portal, generate a token, and then use the token as your password when you're connecting to Azure Repos. 
 
 PATs are generated on demand when you have the credential manager installed. 

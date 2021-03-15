@@ -5,7 +5,7 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/25/2020
+ms.date: 12/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Managers](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 >[!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
@@ -112,7 +112,8 @@ Associate the public key generated in the previous step with your user ID.
 
     ![Configuring Public Key in Azure DevOps Services](media/use-ssh-authentication/ssh_key_input.png)
 
-4. Give the key a useful description (this description will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
+4. Give the key a useful description (this description will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
+  Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. Also note that SSH keys stored in Azure DevOps expire after five years. If your key expires, you may upload a new key or the same one to continue accessing Azure DevOps via SSH.
 
 5. Test the connection by running the following command: `ssh -T git@ssh.dev.azure.com`.
 If everything is working correctly, you'll receive a response which says: `remote: Shell access is not supported.`
@@ -418,3 +419,16 @@ Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS
 **A:** If you receive a notification of an SSH key being registered and you did not manually upload it to the service, your credentials may have been compromised. 
 
 The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.
+
+### Q: What do I do if I'm still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm`?
+
+**A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature algorithms than Azure DevOps supports (as of January 2021). There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
+
+You can work around the issue by adding the following code to your SSH configuration (`~/.ssh/config`):
+
+```sshconfig
+Host ssh.dev.azure.com
+  PubkeyAcceptedKeyTypes=ssh-rsa
+```
+
+Replace `ssh.dev.azure.com` with the correct host name if you use Azure DevOps Server.
