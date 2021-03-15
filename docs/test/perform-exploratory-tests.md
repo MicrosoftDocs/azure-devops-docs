@@ -58,7 +58,7 @@ quality of your product.
 
      ![Add extension to Firefox](media/perform-exploratory-tests/getstarted-firefox01.png)
 
-     ![Follow instructions to install the extension on Edge.](media/perform-exploratory-tests/getstarted-firefox02.png)
+     ![Follow instructions to install the extension on Firefox.](media/perform-exploratory-tests/getstarted-firefox02.png)
 
 >You need to install the extension or add-on only once. Afterwards your browser will
 update it automatically.
