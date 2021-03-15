@@ -162,13 +162,11 @@ A single download step can download one or more artifacts. To download multiple 
 
 When an artifact name is specified:
 
-1. Only files for this artifact are downloaded. If this artifact does not exist, the task will fail.
+1. Only files for that specific artifact are downloaded. If the artifact does not exist, the task will fail.
 
-2. Unless the specified download path is absolute, a folder with the same name as the artifact is created under the download path, and the artifact's files are placed in it.
+1. File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
 
-3. File matching patterns are evaluated relative to the root of the artifact. For example, the pattern `*.jar` matches all files with a `.jar` extension at the root of the artifact.
-
-For example, to download all `*.js` from the artifact `WebApp`:
+The following example illustrates how to download all `*.js` from an artifact `WebApp`:
 
 # [YAML](#tab/yaml)
 
@@ -178,8 +176,6 @@ steps:
   artifact: WebApp
   patterns: '**/*.js'
 ```
-
-Files (with the directory structure of the artifact preserved) are downloaded under `$(Pipeline.Workspace)/WebApp`.
 
 # [YAML (task)](#tab/yaml-task)
 
@@ -194,35 +190,22 @@ steps:
 
 * **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
 * **patterns**: One or more file matching patterns that limit which files get downloaded.
-* **path**: The destination directory. It accepts both relative and absolute path.
-
-In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(Build.SourcesDirectory)/bin`.
+* **path**: The destination directory. Can be relative or absolute path.
 
 # [Classic](#tab/classic)
 
-:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
 
-* Artifact name:
-
-   ```
-   artifactName
-   ```
-
-* Destination directory:
-
-   ```
-   $(Build.SourcesDirectory)/bin
-   ```
-
-* Matching patterns:
-
-   ```
-   '**/*.js'
-   ```
+- Fill out the following fields:
+    - **Display name**: artifact display name
+    - **Download artifacts produced by**: download artifacts produced by the current pipeline run, or from a specific pipeline run
+    - **Artifact name**: name of the artifact to publish
+    - **Matching patterns**: file matching patterns to control which files get downloaded
+    - **Destination directory**: directory to download the artifact files to
 
 # [Azure CLI](#tab/azure-cli)
 
-No available Azure CLI option for this action.
+Not available for this action.
 
 ---
 
@@ -230,13 +213,13 @@ No available Azure CLI option for this action.
 
 When no artifact name is specified:
 
-1. Files from multiple artifacts can be downloaded, and the task does not fail if no files are downloaded.
+1. Multiple artifacts can be downloaded and the task does not fail if no files are found.
 
-2. A folder is always created under the download path for each artifact with files being downloaded.
+1. A sub-directory is created for each artifact.
 
-3. File matching patterns should assume the first segment of the pattern is (or matches) an artifact name. For example, `WebApp/**` matches all files from the `WebApp` artifact. The pattern `*/*.dll` matches all files with a `.dll` extension at the root of each artifact.
+1. File matching patterns should assume the first segment of the pattern is (or matches) an artifact name. For example, `WebApp/**` matches all files from the `WebApp` artifact. The pattern `*/*.dll` matches all files with a `.dll` extension at the root of each artifact.
 
-For example, to download all `.zip` files from all source artifacts:
+The following example illustrates how to download all `.zip` files from all artifacts:
 
 # [YAML](#tab/yaml)
 
@@ -259,17 +242,18 @@ steps:
 
 # [Classic](#tab/classic)
 
-:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
+- Add the :::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact** task.
 
-* Matching patterns:
-
-   ```
-   '**/*.zip'
-   ```
+- Fill out the following fields:
+    - **Display name**: artifact display name
+    - **Download artifacts produced by**: download artifacts produced by the current pipeline run, or from a specific pipeline run
+    - **Artifact name**: name of the artifact to publish
+    - **Matching patterns**: file matching patterns to control which files get downloaded
+    - **Destination directory**: directory to download the artifact files to
 
 # [Azure CLI](#tab/azure-cli)
 
-No available Azure CLI option for this action.
+Not available for this action.
 
 ---
 
