@@ -130,18 +130,23 @@ However, you can cache Docker layers with self-hosted agents because the ephemer
 
 ### How to build Linux container images for architectures other than x64?
 
-When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
+When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86 or ARM), you can use a machine emulator like [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image by using QEMU:
+
 1. Author your Dockerfile with a base image that matches the target architecture:
+ 
     ```
     FROM arm64v8/alpine:latest
     ```
-1. Run the following script in your job before building the image:
+    
+1. Run the following script in your job before you build the image:
+ 
     ```
     # register QEMU binary - this can be done by running the following image
     docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     # build your image
     ```
-You can find more info [HERE](https://github.com/multiarch/qemu-user-static)
+    
+For more information, see the [QEMU repository](https://github.com/multiarch/qemu-user-static) on GitHub.
 
 ### How to run tests and publish test results for containerized applications?
 
