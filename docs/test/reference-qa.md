@@ -506,12 +506,12 @@ You don't have to provide values in the shared steps definition. However, you ca
 
 **A:** The Test &amp; Feedback extension is currently available for
 [Google Chrome](https://www.google.com/chrome/),
-[Microsoft Edge (Edge Chromium Only](https://www.microsoft.com/edge/)
+[Microsoft Edge (Edge Chromium Only)](https://www.microsoft.com/edge/)
 and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
 
 Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
 
-| Feature | Chrome | Edge| Firefox |
+| Feature | Chrome | Edge | Firefox |
 | --- | --- | --- | --- |
 | Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
 | Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
