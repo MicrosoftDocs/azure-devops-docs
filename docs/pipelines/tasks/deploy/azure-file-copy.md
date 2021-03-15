@@ -161,7 +161,7 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 #### How do I use the Azure file copy task to copy a file to an Azure virtual machine that doesn't have a public IP address?
 
-Make sure that you're using version 4 of the Azure file copy task. If the task still fails, you can add a build step to execute the command `azcopy cp "source-file-path" "destination-file-path"` to substitute the source and destination values.
+Make sure that you're using version 4 of the Azure file copy task. If the task fails, you can add a build step to execute the command `azcopy cp "source-file-path" "destination-file-path"` to substitute the source and destination values.
 
 #### Forbidden error: 'AzCopy.exe exited with non-zero exit code while uploading files to blob storage' while using Azure File Copy task
 
