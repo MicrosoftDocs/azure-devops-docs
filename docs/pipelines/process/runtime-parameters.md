@@ -18,6 +18,10 @@ You can specify [parameters in templates](templates.md) and in the pipeline. Par
 
 Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
 
+> [!NOTE]
+> This guidance does not apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md).
+> 
+
 Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. 
 
 ## Use parameters in pipelines
@@ -298,3 +302,33 @@ steps:
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
+
+## FAQ
+
+### Can parameters be set based on variables?
+
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+
+In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
+
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- main
+
+extends:
+  template: template.yml
+```
+
+```yaml
+# File: template.yml
+steps:
+- script: echo Build.SourceBranch = $(Build.SourceBranch) # outputs refs/heads/main
+- script: echo Build.Reason = $(Build.Reason) # outputs IndividualCI
+- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
+  - script: echo I run only if Build.SourceBranch = refs/heads/main 
+- ${{ if eq(variables['Build.Reason'], 'IndividualCI') }}: 
+  - script: echo I run only if Build.Reason = IndividualCI 
+- script: echo I run after the conditions
+```

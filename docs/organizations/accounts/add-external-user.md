@@ -27,19 +27,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 * The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
 * Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
 
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
-   ![External guest access turned on](media/add-external-user/guest-access-preview.png)
-
-#### [Current page](#tab/current-page)
-
-   >[!div class="mx-imgBorder"]
-   >![External guest access](media/add-external-user/guest-access.png)
-
-* * *
+![External guest access turned on](media/add-external-user/guest-access-preview.png)
 
 > [!TIP]
 > We recommend using a different email or user principal name (UPN) for your personal and business accounts, rather than using the same, even though it's allowed. This eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.

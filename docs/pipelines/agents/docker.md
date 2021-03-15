@@ -3,7 +3,7 @@ title: Run a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 05/29/2020
+ms.date: 02/12/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -11,7 +11,8 @@ monikerRange: '>= azure-devops-2019'
 
 This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
-Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. You pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
+Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. Windows containers should run on a Windows `vmImage`. 
+To run your agent in Docker, you'll pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
 
 ::: moniker range="azure-devops-2019"
 
@@ -95,7 +96,7 @@ Next, create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if ($Env:AZP_WORK -and -not (Test-Path Env:AZP_WORK)) {
+    if ((Test-Path Env:AZP_WORK) -and -not (Test-Path $Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
@@ -133,9 +134,6 @@ Next, create the Dockerfile.
         --pool "$(if (Test-Path Env:AZP_POOL) { ${Env:AZP_POOL} } else { 'Default' })" `
         --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
         --replace
-      
-      # remove the administrative token before accepting work
-      Remove-Item $Env:AZP_TOKEN_FILE
 
       Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
       
@@ -312,9 +310,6 @@ Next, create the Dockerfile.
 
     source ./env.sh
 
-    trap 'cleanup; exit 130' INT
-    trap 'cleanup; exit 143' TERM
-
     print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
@@ -326,18 +321,19 @@ Next, create the Dockerfile.
       --work "${AZP_WORK:-_work}" \
       --replace \
       --acceptTeeEula & wait $!
-    
-    # remove the administrative token before accepting work
-    rm $AZP_TOKEN_FILE
 
     print_header "4. Running Azure Pipelines agent..."
 
-    # `exec` the node runtime so it's aware of TERM and INT signals
-    # AgentService.js understands how to handle agent self-update and restart
-    # Running it with the --once flag at the end will shut down the agent after the build is executed
-    exec ./externals/node/bin/node ./bin/AgentService.js interactive
-    ```
+    trap 'cleanup; exit 130' INT
+    trap 'cleanup; exit 143' TERM
 
+    # To be aware of TERM and INT signals call run.sh
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
+    ./run.sh & wait $!
+    ```
+    > [!NOTE]
+    >If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+    >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 6. Run the following command within that directory:
 
     ```shell
@@ -362,8 +358,6 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
-You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Environment variables
 
@@ -409,11 +403,11 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 1. Create the secrets on the AKS cluster.
 
    ```shell
-    kubectl create secret generic azdevops \
-    --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
-    --from-literal=AZP_TOKEN=YourPAT \
-    --from-literal=AZP_POOL=NameOfYourPool
-    ```
+   kubectl create secret generic azdevops \
+     --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+     --from-literal=AZP_TOKEN=YourPAT \
+     --from-literal=AZP_POOL=NameOfYourPool
+   ```
 
 2. Run this command to push your container to Container Registry:
 
@@ -430,48 +424,48 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
    ```shell
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: azdevops-deployment
-      labels:
-        app: azdevops-agent
-    spec:
-      replicas: 1 #here is the configuration for the actual agent always running
-      selector:
-        matchLabels:
-          app: azdevops-agent
-      template:
-        metadata:
-          labels:
-            app: azdevops-agent
-        spec:
-          containers:
-          - name: kubepodcreation
-            image: AKRTestcase.azurecr.io/kubepodcreation:5306
-            env:
-              - name: AZP_URL
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_URL
-              - name: AZP_TOKEN
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_TOKEN
-              - name: AZP_POOL
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_POOL
-            volumeMounts:
-            - mountPath: /var/run/docker.sock
-              name: docker-volume
-          volumes:
-          - name: docker-volume
-            hostPath:
-              path: /var/run/docker.sock
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: azdevops-deployment
+     labels:
+       app: azdevops-agent
+   spec:
+     replicas: 1 #here is the configuration for the actual agent always running
+     selector:
+       matchLabels:
+         app: azdevops-agent
+     template:
+       metadata:
+         labels:
+           app: azdevops-agent
+       spec:
+         containers:
+         - name: kubepodcreation
+           image: AKRTestcase.azurecr.io/kubepodcreation:5306
+           env:
+             - name: AZP_URL
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_URL
+             - name: AZP_TOKEN
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_TOKEN
+             - name: AZP_POOL
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_POOL
+           volumeMounts:
+           - mountPath: /var/run/docker.sock
+             name: docker-volume
+         volumes:
+         - name: docker-volume
+           hostPath:
+             path: /var/run/docker.sock
    ```
 
    This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.

@@ -25,6 +25,7 @@ Approvals and other checks are not defined in the yaml file. Users modifying the
 
 > [!IMPORTANT]
 > Checks can be configured on environments, service connections and agent pools.
+> Service connections cannot be specified by variable.
 
 ## Approvals
 
@@ -180,6 +181,14 @@ All stages in all runs of that pipeline which use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
 Also, only one stage will be allowed to continue.
 Any other stages which tried to take the lock will be cancelled.
+
+## ServiceNow Change Management
+
+**This checks needs the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) to be installed from the marketplace**
+
+The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
+By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
+More details are available [here](../release/approvals/servicenow.md).
 
 ## FAQ
 

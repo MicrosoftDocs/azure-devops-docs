@@ -28,7 +28,7 @@ You must have the following before you can create a work item.
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
-There are a few things happening in the code sample below:
+There are a few things happening in the following code sample:
 
 1. Authentication
     1. Creating credentials using your PAT

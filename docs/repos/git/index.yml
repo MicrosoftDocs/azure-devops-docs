@@ -76,7 +76,7 @@ landingContent:
           - text: History 
             url: ./history.md
           - text: Pull requests
-            url: ./pull-requests-overview.md
+            url: ./pull-requests.md
   - title: Set up your Azure Repos Git repositories
     linkLists:
       - linkListType: how-to-guide

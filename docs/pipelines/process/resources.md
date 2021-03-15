@@ -43,7 +43,8 @@ When a resource triggers a pipeline, the following variables are set:
 resources.triggeringAlias
 resources.triggeringCategory
 ```
----
+
+These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set.
 
 ## Resources: `pipelines`
 
@@ -116,7 +117,7 @@ resources:
     trigger:
       branches:
       - releases/*
-      - master
+      - resources.triggeringAlias
 ```
 
 Stages filters for triggers
@@ -705,7 +706,7 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ![CD pipelines info in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
 ### YAML resource trigger issues support and traceability
-It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. 
+It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. The **Trigger Issues** option will only appear for non-repository resources. 
 
 :::image type="content" source="media/trigger-menu.png" alt-text="Select Trigger Issues from the navigation.":::
 

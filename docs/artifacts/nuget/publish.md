@@ -1,6 +1,6 @@
 ---
-title: Publish a NuGet package from the command line
-description: Publish NuGet packages to Azure DevOps Services or Team Foundation Server from the command line
+title: Publish a NuGet package using the command line
+description: How to publish NuGet packages using the command line
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 06/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish a NuGet package from the command line
+# Publish a NuGet package using the command line
 
 **Azure DevOps Services** | **Team Foundation Server 2018** | **Team Foundation Server 2017**
 

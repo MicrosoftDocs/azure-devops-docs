@@ -8,10 +8,12 @@
     href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
-  - name: Artifacts Storage (New UI)
+  - name: Artifacts Storage breakdown
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
+  - name: Search packages
+    href: ../project/search/package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Work with packages
   items:
   - name: About packages
@@ -64,8 +66,6 @@
       href: get-started-maven.md
     - name: Set up a project to work with Maven feed
       href: ../pipelines/artifacts/maven.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-    - name: Publish a Maven package from the command line
-      href: maven/publish.md
     - name: Set up authentication
       href: maven/pom-and-settings.md
     - name: Install a Maven artifact
@@ -82,6 +82,8 @@
       href: quickstarts/python-packages.md
     - name: Publish to a Python feed
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    - name: Publish and consume Python packages from the command line
+      href: quickstarts/python-cli.md
   - name: Work with Universal Packages
     items:
     - name: Universal packages quickstart
@@ -102,7 +104,7 @@
       href: how-to/delete-and-recover-packages.md
     - name: Migrate packages to Azure Artifacts feed
       href: tutorials/migrate-packages.md
-    - name: Move your packages to the cloud
+    - name: Use Azure Artifacts feeds with NuGet
       href: nuget/move-from-fileshares.md
     - name: Share PowerShell modules with Azure Artifacts feed
       href: tutorials/private-powershell-library.md
@@ -122,6 +124,8 @@
       href: how-to/set-up-upstream-sources.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
+    - name: Configure upstream behavior
+      href: concepts/upstream-behavior.md
 - name: Work with Azure Pipelines
   items:
   - name: Artifacts in Azure Pipelines
@@ -161,4 +165,4 @@
   - name: REST API reference
     href: /rest/api/azure/devops/index
   - name: Azure DevOps CLI
-    href: /azure/devops/cli/index
+    href: ../cli/index.md

@@ -138,6 +138,8 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 ::: moniker-end    
 
+<a id="test-controllers" /> 
+
 ## Set permissions to manage test controllers
 
 Test controllers are used to perform load testing. To learn more, see [Overview of test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests).

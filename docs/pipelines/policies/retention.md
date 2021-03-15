@@ -6,7 +6,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
 ms.date: 11/19/2020
-ms.custom: contperfq1, contperfq2
+ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
 
@@ -169,6 +169,12 @@ A run is deleted if all of the following conditions are true:
 Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
 
 ::: moniker-end
+
+### Automatically set retention lease on pipeline runs
+
+Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](https://docs.microsoft.com/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables) for runId and definitionId.
+
+A retention lease can be added on a pipeline run for a specific period. For example, a pipeline run which deploys to a test environment can be retained for a shorter duration while a run deploying to production environment can be retained longer.
 
 ::: moniker range=">=azure-devops-2020"
 

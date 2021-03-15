@@ -101,7 +101,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ### Q: How do I add SharePoint portal resources?
 
-**A:** See one of these topics:
+**A:** See one of the following articles:
 
 -   To add a SharePoint web application: [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).
 

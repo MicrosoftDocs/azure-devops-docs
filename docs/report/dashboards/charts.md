@@ -2,14 +2,14 @@
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps  
 description: Create status, progress, and trend charts from flat-based queries in Azure DevOps  
-ms.custom: dashboards, contperfq4 
+ms.custom: dashboards, contperf-fy20q4 
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/14/2020
+monikerRange: '<= azure-devops'
+ms.date: 01/19/2021
 ---
 
 # Track progress with status and trend query-based charts 
@@ -20,6 +20,18 @@ You can quickly view the status of work in progress by charting the results of a
 
 In this article you'll learn how to perform the following tasks:  
 
+::: moniker range="azure-devops"
+> [!div class="checklist"]    
+> * Construct a flat-list query to support your chart
+> * Create and share your query-based chart 
+> * Create a status pie, column, bar, or pivot chart
+> * Create a trend chart 
+> * Add a query chart to a dashboard
+> * Configure a query widget    
+> * Group a **Chart by Work Items** widget by tags  
+::: moniker-end
+
+::: moniker range="< azure-devops"
 > [!div class="checklist"]    
 > * Construct a flat-list query to support your chart
 > * Create and share your query-based chart 
@@ -27,6 +39,7 @@ In this article you'll learn how to perform the following tasks:
 > * Create a trend chart 
 > * Add a chart to a dashboard
 > * Configure a query widget    
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -87,14 +100,14 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end
 
-To learn more about default groups, see [About permissions and inheritance(../../organizations/security/about-permissions.md).
+To learn more about default groups, see [Get started with permissions, Permission inheritance and security groups](../../organizations/security/about-permissions.md#inheritance).
 
 
 ## Create a flat-list query  
 
 When creating a query to support your chart, follow these guidelines. 
 
-- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Create and save managed queries](../../boards/queries/using-queries.md#create-a-query). 
+- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
 - Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
 	- To group by Status, include the **State** field 
 	- To group by work assignments, include the **Assigned To** field
@@ -104,22 +117,35 @@ When creating a query to support your chart, follow these guidelines.
 - To sum a numeric column, include the corresponding field in your query clause or column options. For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
 - If you plan to add your query to a dashboard, save your query as a Shared query.
 
-The following options aren't supported in query-based charts. 
+::: moniker range="azure-devops"
 
 -  You can't group charts by the following field data types:
 	-  ID
 	-  Date-time, such as Created Date, Changed Date 
 	-  Plain text, such as Title 
 	-  Rich-text, such as Description, Repro Steps 
-	-  Tags
--  You can filter a query using tags, however you can't use tags to configure your chart
+	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
+> [!NOTE]   
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
+> 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+-  You can't group charts by the following field data types:
+	-  ID
+	-  Date-time, such as Created Date, Changed Date 
+	-  Plain text, such as Title 
+	-  Rich-text, such as Description, Repro Steps 
+	-  Tags (You can filter a query using tags, however you can't use tags to configure your chart).
+::: moniker-end
 
 ### Chart availability
 
-- Charts configured for Shared Queries are viewable by all team members, except members with Stakeholder access, and can be added to dashboards   
-- Charts that you create for queries under your My Queries folder are visible only to you   
-- You can copy and email the URL of any chart page to share it with a project member 
-- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)   
+- Charts saved under **Shared Queries** are viewable by all team members, except members with Stakeholder access, and can be added to dashboards.   
+- Charts that you create for queries under your **My Queries** folder are visible only to you.   
+- You can copy and email the URL of any chart page to share it with a project member. 
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md).   
 
 
 ### Display of areas and iterations
@@ -128,7 +154,15 @@ When you select **Area Path** or **Iteration Path**, only the leaf node appears 
 
 Choose the **Node Name** field, the area path leaf node, to see if that improves your results. 
 
-Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Edge, Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
+Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Edge, Internet Explorer 9 and later versions, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
+
+
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]   
+> Internet Explorer is no longer supported for Azure DevOps Services, nor for Azure DevOps Server 2020.1.   
+
+::: moniker-end
+
 
 ### Sort by Value or Label 
 
@@ -394,6 +428,22 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+<a id="group-by-tags"></a> 
+
+## Group by Tags chart 
+
+> [!NOTE]   
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard. This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+
+To group a chart by tags, perform the same steps provided in the previous section. Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+
+:::image type="content" source="media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
+
+To learn more about using tags, see [Add tags to work items](../../boards/queries/add-tags-to-work-items.md). 
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 

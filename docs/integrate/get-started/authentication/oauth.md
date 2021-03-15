@@ -84,7 +84,7 @@ redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL
 Azure DevOps Services asks your user to authorize your app.
 It handles authentication, and then calls you back with an authorization code, if the user approves the authorization.
 
-Add a link or button to your site that navigates the user to the Azure DevOps Services authorization endpoint:
+Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -119,7 +119,7 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 |  Header           | Value 
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see below)
+| Content-Length    | Calculated string length of the request body (see the following example)
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -131,7 +131,7 @@ Content-Length: 1322
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={1}&redirect_uri={2}
 ```
 <br>
-Replace the placeholder values in the sample request body above:
+Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
@@ -192,7 +192,7 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 |  Header           | Value 
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see below)
+| Content-Length    | Calculated string length of the request body (see the following example)
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -204,7 +204,7 @@ Content-Length: 1654
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=refresh_token&assertion={1}&redirect_uri={2}
 ```
 <br>
-Replace the placeholder values in the sample request body above:
+Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded refresh token for the user

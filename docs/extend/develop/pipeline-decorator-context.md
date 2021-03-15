@@ -4,8 +4,6 @@ description: Contextual data available to pipeline decorators
 ms.topic: reference
 ms.technology: devops-cicd
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
-ms.author: macoope
-author: vtbassmatt
 ms.date: 03/01/2019
 monikerRange: 'azure-devops'
 ---
@@ -52,7 +50,7 @@ resources['repositories']['self'] =
 	"version": "<commit hash>",
 	"name": "<repo name>",
 	"project": "<project guid>",
-	"defaultBranch": "<default ref of repo, like 'refs/heads/master'>",
+	"defaultBranch": "<default ref of repo, like 'refs/heads/main'>",
 	"ref": "<current pipeline ref, like 'refs/heads/topic'>",
 	"versionInfo": {
 		"author": "<author of tip commit>",
@@ -150,7 +148,7 @@ Task names and keywords map to task GUIDs before decorators run.
 If a decorator wants to check for the existence of another task, it must search by task GUID rather than by name or keyword.
 
 For normal tasks (which you specify with the `task` keyword), you can look at the task's `task.json` to determine its GUID.
-For special keywords like `checkout` and `bash` in the example above, you can use the following GUIDs:
+For special keywords like `checkout` and `bash` in the previous example, you can use the following GUIDs:
 
 | Keyword      | GUID                                   | Task Name |
 |--------------|----------------------------------------|-----------|
@@ -162,7 +160,7 @@ For special keywords like `checkout` and `bash` in the example above, you can us
 | `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
 | `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
 
-After resolving task names and keywords, the above YAML becomes:
+After resolving task names and keywords, the previous YAML becomes:
 
 ```yaml
 steps:

@@ -43,7 +43,7 @@ Import process supports the following scenarios:
 
 ## Import a process from an on-premises Azure DevOps 
 
-If you want to test your process in an on-premises Azure DevOps Server (formerly named Team Foundation Server (TFS)) to see if it will work in Azure DevOps Services, perform the steps that follow.
+If you want to test your process in an on-premises Azure DevOps Server (formerly named Team Foundation Server (TFS)) to see if it works in Azure DevOps Services, perform the steps that follow.
 
 In an on-premises Azure DevOps Server, each project has its own copy of a process so careful consideration needs to be made as to which processes should exist for your organization. 
 Migration to Azure DevOps Services is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
@@ -134,7 +134,7 @@ Once you've added a process, you can update it by importing a zip file where you
 	> ![Process page, Import Process success dialog, successfully imported and updated projects](media/import-process-successful-dialog.png)
 
 5.  If you renamed or deleted fields or work item types, you receive a confirmation message.
-    Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
+    Go ahead and check the box and proceed with the import. To learn more about each message, select the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
 	![Deleted field confirmation dialog](media/ALM_IP_InfoMessage.png)  

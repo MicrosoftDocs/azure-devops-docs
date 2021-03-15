@@ -44,14 +44,14 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ## Add the widget to your dashboard   
 
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
+2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now. There are two widgets: [Cycle Time](widget-catalog.md#cycle-time-widget) and [Lead Time](widget-catalog.md#lead-time-widget). Choose the one you want to display and configure.
 
 
 <a id="configure-widget"></a>
 
 ## Configure the Cycle Time and Lead Time widgets    
 
-The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
+The Configuration dialog is the same for the Cycle Time and Lead Time widgets. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
 ::: moniker range=">= azure-devops-2020"
 

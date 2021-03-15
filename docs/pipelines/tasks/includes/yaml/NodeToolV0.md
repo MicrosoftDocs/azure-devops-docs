@@ -13,5 +13,6 @@ ms.technology: devops-cicd-tasks
 - task: NodeTool@0
   inputs:
     #versionSpec: '6.x' 
+    #force32bit: false # Optional
     #checkLatest: false # Optional
 ```

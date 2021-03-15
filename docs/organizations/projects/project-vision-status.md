@@ -37,12 +37,12 @@ From the project home page, share your project with your team, add project membe
   - Change the repository that you use to share your project mission
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers).
+- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
 ## Open project summary
 
 ::: moniker range=">= azure-devops-2019"
-From your web browser, choose **Overview > Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
+From your web browser, choose **Overview** > **Summary**. If you don't have a  project yet, [create a project](../../organizations/projects/create-project.md).
 
 If you haven't set up your project summary yet, you'll see this welcome page:
 
@@ -94,7 +94,7 @@ You can share your project and objective, as well as ways for team members to co
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. Return to **Overview>Summary** and choose the README file for the project page. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
+3. Return to **Overview** > **Summary** and choose the README file for the project page. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
@@ -221,7 +221,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
 
 ::: moniker range=">= azure-devops-2019"
-To add users to the project, choose the :::image type="icon" source="media/share-project/add-members-new-nav.png" border="false"::: **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+To add users to the project, select :::image type="icon" source="media/share-project/add-members-new-nav.png" border="false"::: **add**. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 > [!div class="mx-imgBorder"]
 > ![Project stats](media/share-project/project-stats-new-nav.png)
@@ -246,12 +246,12 @@ You can change the repository used to support your project vision, including poi
 
 1. Open **Overview > Summary** .
 
-2. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
+2. Select :::image type="icon" source="../../media/icons/edit.png" border="false"::: **Edit**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
 
-   If you don't see the **Edit** icon, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
+   If you don't see **Edit**, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) to proceed.
 
 3. Select a different repository or choose the Wiki option.
 
@@ -259,7 +259,7 @@ You can change the repository used to support your project vision, including poi
    > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
 
    > [!TIP]  
-   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
+   > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
 
 ::: moniker-end
 
@@ -277,7 +277,7 @@ You can change the repository used to support your project vision, including poi
    <img src="media/share-project/select-file-to-display-dialog.png" alt="Web portal, Project page, Select file to display dialog" style="border: 1px solid #C3C3C3;" />
 
    > [!TIP]  
-   > Only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
+   > Only the Wiki home page displays. To access additional Wiki pages, go to the Wiki.
 
 ::: moniker-end
 

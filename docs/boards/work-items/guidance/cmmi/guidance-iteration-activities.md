@@ -89,7 +89,7 @@ The requirements are considered completed only if the associated tests pass.
 -   What you will do as a result.  
   
 ### Integration  
- If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/branching-strategies-with-tfvc.md).  
   
  The integration consists of two steps:  
   

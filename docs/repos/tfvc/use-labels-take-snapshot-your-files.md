@@ -281,6 +281,6 @@ When you open the shortcut menu for an item in the Label window, you can also ch
 
  [Permissions and groups reference](../../organizations/security/permissions.md) 
 
- [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
+ [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
 
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+ [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

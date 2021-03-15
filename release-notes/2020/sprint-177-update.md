@@ -17,21 +17,27 @@ Check out the [Features](#features) list below for details.
 ## Features
 
 ### Azure Boards
+
 [!INCLUDE [sprint-177-update-links](includes/boards/sprint-177-update-links.md)]
 
 ### Azure Repos
+
 [!INCLUDE [sprint-177-update-links](includes/repos/sprint-177-update-links.md)]
 
 ### Azure Pipelines
+
 [!INCLUDE [sprint-177-update-links](includes/pipelines/sprint-177-update-links.md)]
 
 ## Azure Boards
+
 [!INCLUDE [sprint-177-update](includes/boards/sprint-177-update.md)]
 
 ## Azure Repos
+
 [!INCLUDE [sprint-177-update](includes/repos/sprint-177-update.md)]
 
 ## Azure Pipelines
+
 [!INCLUDE [sprint-177-update](includes/pipelines/sprint-177-update.md)]
 
 

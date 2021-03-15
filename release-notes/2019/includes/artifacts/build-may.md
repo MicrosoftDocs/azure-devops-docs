@@ -10,6 +10,6 @@ Every organization can use up to 2 GB storage for free. Additional storage usage
 
 ### General availability of Python and Universal Packages
 
-We've had support for [Python packages](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages), as well as our own [Universal Packages](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/universal-packages), in public preview for some time. Starting now, both are generally available and ready for all your production workloads.
+We've had support for [Python packages](/azure/devops/artifacts/quickstarts/python-packages), as well as our own [Universal Packages](/azure/devops/artifacts/quickstarts/universal-packages), in public preview for some time. Starting now, both are generally available and ready for all your production workloads.
 
 You can see the blog post on pay-per-GB pricing and other Azure Artifacts updates [here](https://devblogs.microsoft.com/devops/pay-per-gb-azure-artifacts/).

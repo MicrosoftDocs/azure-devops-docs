@@ -32,7 +32,7 @@ For a sample test suite hierarchy in a test plan like below, you can configure t
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-## Prerequisites
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 

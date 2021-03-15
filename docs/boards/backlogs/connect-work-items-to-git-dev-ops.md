@@ -1,5 +1,5 @@
 ---
-title: Create a Git branch or initiate Git commits or pull requests from a user story, issue, or bug
+title: Drive Git development from user story and requirements  
 titleSuffix: Azure Boards 
 description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.custom: "boards-backlogs, seodec18"

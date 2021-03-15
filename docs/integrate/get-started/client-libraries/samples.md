@@ -47,7 +47,7 @@ using Microsoft.VisualStudio.Services.Common;
 /// </summary>
 public static void SampleREST()
 {
-    // Connection object could be created once per application and we will use it to get httpclient objects. 
+    // Connection object could be created once per application and we use it to get httpclient objects. 
     // Httpclients have been reused between callers and threads.
     // Their lifetime has been managed by connection (we don't have to dispose them).
     // This is more robust then newing up httpclient objects directly.  

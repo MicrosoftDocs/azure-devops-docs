@@ -64,9 +64,8 @@ we communicate impact of each of these services by geographic region in the serv
 
 ### Event Logs
 
-More information on active events is found in the form of an "event log" that's displayed on the top 
-of the service health matrix. Each log has additional associated information in the form of the impacted service 
-and geography, as well as the duration of a specific event. You can click through the provided hyperlink to navigate into 
+More information on active events is found in the form of an "event log" that's displayed on the upper portion of the service health matrix. Each log has additional associated information in the form of the impacted service 
+and geography, as well as the duration of a specific event. You can click through the provided hyperlink to go into 
 the event log, which provides detailed information on the event being investigated.
 
 The [Status history section](https://status.dev.azure.com/_history) provides a view into current active 

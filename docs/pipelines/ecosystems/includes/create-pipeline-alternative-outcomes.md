@@ -13,4 +13,4 @@ ms.date: 02/13/2020
 > 
 > * If your repository already contains an `azure-pipelines.yml` file, then that file will be used, and you'll see a **Run** button. Select it to start a build.
 >
-> * If your repository has different kinds of code in it, then you might be shown a list of options from which you can choose. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+> * If your repository has different kinds of code in it, then you might be shown a list of options from which you can choose. You'll see a **Save and run** button instead of **Run**. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.

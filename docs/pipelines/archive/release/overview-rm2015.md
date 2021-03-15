@@ -24,7 +24,6 @@ Manage the tasks in the process with approvals for each task.
     * [Install Release Management server and client](previous-version/install-release-management/install-server-and-client.md)
     * [Install deployment agents](previous-version/install-release-management/install-deployment-agent.md)
     * [Connect Release Management to TFS](previous-version/install-release-management/connect-to-tfs.md)
-  - [Manage users, groups, and permissions](previous-version/add-users-and-groups.md)
 * **[Manage your release](previous-version/manage-your-release.md)**
   - [Release without deployment agents](previous-version/release-without-agents.md)
   - [Release with deployment agents](previous-version/release-with-agents.md)
@@ -32,7 +31,6 @@ Manage the tasks in the process with approvals for each task.
   - [Deploy continuously to Azure](previous-version/deploy-continuously-to-azure.md)
   - [Release actions to deploy an app](previous-version/release-actions.md)
     * [Tools for release actions](previous-version/release-actions/release-action-tools.md)
-  - [Configuration variables and system variables](previous-version/config-and-system-variables.md)
 
 [!INCLUDE [wpfver-support-shared](includes/wpfver-support-shared.md)]
 

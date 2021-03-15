@@ -4,9 +4,9 @@ description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 07/20/2020
+ms.date: 02/12/2021
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -98,7 +98,17 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 
 ### UI settings override YAML scheduled triggers
 
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. 
+
+To access the pipeline settings UI from a YAML pipeline, edit your pipeline, choose **...** and then **Triggers**.
+
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+Remove all scheduled triggers. 
+
+:::image type="content" source="../process/media/triggers/delete-ui-scheduled-trigger.png" alt-text="Delete scheduled triggers in the Pipeline settings UI.":::
+
+Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
@@ -535,8 +545,6 @@ However, when it sees the second line, the agent will process everything to the 
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
-
-
 
 
 ## Get logs to diagnose problems

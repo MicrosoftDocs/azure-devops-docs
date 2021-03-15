@@ -5,13 +5,13 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2020
+ms.date: 12/09/2020
 monikerRange: azure-devops
 ---
 
 # Azure virtual machine scale set agents
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)] 
 
 Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be autoscaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
@@ -146,7 +146,13 @@ In the following example, a new resource group and virtual machine scale set are
 2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md) you can choose that from the list instead of the subscription.
 
     > [!IMPORTANT]
-    > To configure a scale set agent pool, you must have either [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#user-administrator-permissions) permissions on the selected subscription. If you have one of these permissions but get an error when you choose **Authorize**, see [troubleshooting](../release/azure-rm-endpoint.md#insufficient-privileges-to-complete-the-operation).
+    > - To configure a scale set agent pool, you must have either [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#user-administrator-permissions) permissions on the selected subscription. If you have one of these permissions but get an error when you choose **Authorize**, see [troubleshooting](../release/azure-rm-endpoint.md#insufficient-privileges-to-complete-the-operation).
+    > 
+    > - The only service connection currently supported is an Azure Resource Manager (ARM) service connection based on a service principal key. ARM service connections based on a certificate credential or a Managed Identity will fail. When you attempt to list the existing scale sets in your subscription, you'll see an error like this:
+    >
+    >   `Invalid Service Endpoint with Id <guid> and Scope <guid>`
+
+
 
 3. Choose the desired virtual machine scale set from that subscription.
 
@@ -349,7 +355,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
       ```
     - **Linux**:
       ```bash
-      sudo waagent -deprovision+user -force`
+      sudo waagent -deprovision+user -force
       ```
 
     > [!IMPORTANT]

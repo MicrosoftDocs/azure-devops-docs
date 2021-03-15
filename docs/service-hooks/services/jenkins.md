@@ -89,7 +89,7 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
 ::: moniker-end
 
-Now, when that event occurs in Azure DevOps Services, your Jenkins build will be triggered.
+Now, when that event occurs in Azure DevOps Services, your Jenkins build gets triggered.
 
 ## Pricing
 Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site

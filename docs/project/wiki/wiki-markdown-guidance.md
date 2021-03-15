@@ -131,7 +131,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
-You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 > ![Query Results Icon](media/query_selector_icon.png)
 >

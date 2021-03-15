@@ -38,11 +38,11 @@ Only organization Owners or Project Collection Administrators can manage webhook
 
 1. Configure what to do when the event occurs:
 
-	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
+	See the following [Q & A](#q--a) for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
 	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
-1. Test the service hook subscription and finish the wizard:
+2. Test the service hook subscription and finish the wizard:
 
 	![Test it](./media/webhooks/test.png)
 
@@ -64,11 +64,11 @@ Only organization Owners or Project Collection Administrators can manage webhook
 
 1. Configure what to do when the event occurs:
 
-	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
+	See the following [Q & A](#q--a) for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
 	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
-1. Test the service hook subscription and finish the wizard:
+2. Test the service hook subscription and finish the wizard:
 
 	![Test it](./media/webhooks/test.png)
 
@@ -104,14 +104,14 @@ Sample JSON:
 
 ```json
 	{
-	    "event.type": "git.push",
+	    "eventType": "git.push",
 	    ...
 	    "messages": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
 	    },
-	    "detailedMessages": {
+	    "detailedMessage": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
