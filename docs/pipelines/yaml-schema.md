@@ -2055,7 +2055,7 @@ steps:
 
 ---
 
-Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publish-artifacts).
 
 ## Download
 
@@ -2095,7 +2095,7 @@ steps:
 
 ---
 
-Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#download-artifacts).
 
 ::: moniker-end
 
