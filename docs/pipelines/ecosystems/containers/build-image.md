@@ -146,7 +146,7 @@ When you use Microsoft-hosted Linux agents, you create Linux container images fo
     # build your image
     ```
     
-For more information, see the [QEMU repository](https://github.com/multiarch/qemu-user-static) on GitHub.
+For more information, see [qemu-user-static](https://github.com/multiarch/qemu-user-static) on GitHub.
 
 ### How to run tests and publish test results for containerized applications?
 
