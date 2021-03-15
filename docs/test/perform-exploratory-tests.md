@@ -35,7 +35,7 @@ quality of your product.
 
    ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
-   ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-11.PNG)
+   ![Visual Studio Marketplace, Test &amp; Feedback extension, Supported Browsers](media/perform-exploratory-tests/getstarted-11.PNG)
 
 4. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
