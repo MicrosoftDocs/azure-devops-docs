@@ -2,7 +2,7 @@
 title: Securing Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'
 ---
@@ -32,7 +32,7 @@ Another goal is to prevent lateral exposure to other projects, pipelines, and re
 
 This series of topics outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
 It also covers the places where you can make trade-offs between security and flexibility.
-The series also assumes familiarity with [Azure Pipelines](../overview.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
+The series also assumes familiarity with [Azure Pipelines](../get-started/what-is-azure-pipelines.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
 Topics covered:
 - [Incremental approach to improving security](approach.md)

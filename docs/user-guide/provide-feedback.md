@@ -27,7 +27,7 @@ Do you need to do any of the following?
 
 * **Suggest a feature or a fix** Submit your idea or issue through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/content/idea/post.html?space=21) or [Azure DevOps Server](https://developercommunity.visualstudio.com/content/idea/post.html?space=22).
 
-* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
+* **Find out what's new in Azure DevOps** Check out the [current Azure DevOps Release Notes](/azure/devops/server/release-notes/azuredevops2020). These notes are updated every three weeks.
 
 <!---
 Removed section per work item 1791710, as all Support links should go to Developer Community.

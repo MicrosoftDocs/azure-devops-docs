@@ -35,4 +35,4 @@ For information about the measures and dimensions that are associated with these
 - [Builds](perspective-build-analyze-report-build-details-coverage.md)   
 - [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md) 
+- [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md)

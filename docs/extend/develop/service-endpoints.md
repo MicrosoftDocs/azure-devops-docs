@@ -302,4 +302,4 @@ The authentication scheme in a service endpoint determines the credentials that 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the following articles for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](/previous-versions/azure/devops/docs/extend/test/debug-in-browser)
+* [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)

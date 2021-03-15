@@ -17,7 +17,7 @@ During the last sprint we wrapped up some features, while preparing for conferen
 
 ## iOS and Android support
 
-Our [iOS](https://azure.microsoft.com/documentation/articles/app-insights-ios/) and [Android](https://azure.microsoft.com/documentation/articles/app-insights-android/) SDKs are now released, together with supporting overview pages in the portal. They provide usage insights and crash diagnostics, thanks to the powerful capabilities we are integrating from [HockeyApp](https://blogs.msdn.com/b/somasegar/archive/2014/12/11/microsoft-acquires-hockeyapp-leading-mobile-crash-analytics-and-beta-distribution-service-for-ios-android-and-windows-phone.aspx).
+Our [iOS](/azure/azure-monitor/overview) and [Android](/azure/azure-monitor/overview) SDKs are now released, together with supporting overview pages in the portal. They provide usage insights and crash diagnostics, thanks to the powerful capabilities we are integrating from [HockeyApp](https://blogs.msdn.com/b/somasegar/archive/2014/12/11/microsoft-acquires-hockeyapp-leading-mobile-crash-analytics-and-beta-distribution-service-for-ios-android-and-windows-phone.aspx).
 
 ## Performance counters for Java applications
 

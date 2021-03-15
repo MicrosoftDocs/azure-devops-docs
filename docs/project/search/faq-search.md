@@ -119,7 +119,7 @@ You could try the following alternatives as applicable for your scenarios
 * Try to scope your query by using filters to narrow down to a "repo" or a "path".
 * See if you can narrow down your query to avoid scenarios that require matching too many terms while searching. 
 
-For example, while looking for methods like App_App1/ App_App2 etc., instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
+For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
 
 ## Wildcard search
 

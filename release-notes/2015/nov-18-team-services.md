@@ -25,7 +25,7 @@ Users can discover extensions via the new Visual Studio Marketplace. The Marketp
 
 ![Visual Studio Marketplace](media/11_18_01.png)
 
-There are lots of Team Services extensions available in the marketplace today, but there's room for a whole lot more. Developing extensions is straightforward and anyone can do it. To get started, visit [https://aka.ms/vsoextensions](https://aka.ms/vsoextensions).
+There are lots of Team Services extensions available in the marketplace today, but there's room for a whole lot more. Developing extensions is straightforward and anyone can do it. To get started, visit [https://aka.ms/vsoextensions](/azure/devops/extend/overview).
 
 ## Release Management public preview
 
@@ -41,7 +41,7 @@ This Release Management update has a number of improvements over our previous ve
 - Use the same agents, task model, and extensibility model as the new Build system, enabling seamless migration from continuous delivery to staged release practices.
 - It has fewer concepts and is easier to get started.
 
-For more information, and to get started, see the full documentation at [https://aka.ms/rmpreview](https://aka.ms/rmpreview).
+For more information, and to get started, see the full documentation at [https://aka.ms/rmpreview](/azure/devops/pipelines/get-started/what-is-azure-pipelines).
 
 ## Package Management public preview
 

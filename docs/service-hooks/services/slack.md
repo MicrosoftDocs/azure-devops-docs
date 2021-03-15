@@ -54,7 +54,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 	![create-Web Hook](./media/slack/create-webhook.png)
 
-5. Copy the Web Hook URL and navigate to Azure DevOps portal
+5. Copy the Web Hook URL and go to Azure DevOps
 
 	![copy Web Hook](./media/slack/copy-webhook.png)
 
@@ -81,7 +81,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
    <img alt="Action dialog box with the Web Hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
+4. Now, when the event you configured occurs in your project, a notification appears in your team's Slack channel.
 
 	![Screenshot showing a notification in a Slack channel.](./media/slack/notifications.png)
 
@@ -106,7 +106,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
    ![Action dialog box with the Web Hook URL]./media/slack/action.png) 
 
-4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
+4. Now, when the event you configured occurs in your project, a notification appears in your team's Slack channel.
 
 	![Screenshot that shows a notification in a Slack channel.](./media/slack/notifications.png)
 

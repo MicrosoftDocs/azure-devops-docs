@@ -118,7 +118,7 @@ Some of the most common ways information is shared within a team or across teams
 The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
 
 * If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
-* If you are set to use the new Git Tool as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
  
 
@@ -146,7 +146,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 <a id="team-services-email" />  
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
 
@@ -210,7 +210,7 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -312,7 +312,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > [!NOTE]   
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 

@@ -4,8 +4,6 @@ description: Copy files between folders with match patterns when building code i
 ms.topic: reference
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 06/08/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -119,6 +117,15 @@ steps:
       ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
       !ConsoleApplication1\**\ClassLibrary*\**
       ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
+
+**Example with variables in content section**
+
+```yaml
+- task: CopyFiles@2
+  inputs:
+    Contents: '$(Build.Repository.LocalPath)/**' 
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 

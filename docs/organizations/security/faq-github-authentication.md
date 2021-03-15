@@ -3,7 +3,7 @@ title: Authenticating and inviting GitHub users frequently asked questions
 description: Learn about frequently asked questions (FAQs) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 ms.date: 06/04/2020
@@ -19,6 +19,8 @@ If you're having issues either connecting to Azure DevOps using your GitHub iden
 ## Q: Some of my users in Azure DevOps have GitHub identities. Do I need to add them as new GitHub users into my organization?
 
 A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
+
+<a id="github-users" />
 
 ## Q: I'm an organization administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
 

@@ -3,13 +3,13 @@ title: Namespace reference
 titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
 ms.technology: devops-security
-ms.custom: quarterly-review, devx-track-azurecli
-ms.topic: conceptual
+ms.custom: quarterly-review
+ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/12/2020
----
+ms.date: 11/16/2020
+--- 
 
 # Security namespace and permission reference for Azure DevOps 
 
@@ -249,7 +249,7 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](permissions.md#task-group) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#task-group-permissions). 
+      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#set-task-group-permissions). 
       <br/>
       **ID:** `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
    :::column-end:::
@@ -1036,6 +1036,21 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      OrganizationLevelData
+   :::column-end:::
+   :::column span="1":::
+      `Project-Scoped Users`                       
+   :::column-end:::
+   :::column span="2":::
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
 :::row:::
    :::column span="":::
       PipelineCachePrivileges
@@ -1218,7 +1233,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 
 ## Related articles
 
-- [About security, permissions, and membership](about-security-identity.md)
+- [About security, authentication, and authorization](about-security-identity.md)
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)

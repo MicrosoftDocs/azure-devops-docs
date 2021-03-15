@@ -89,7 +89,7 @@ By default, all team members have permissions to create and edit dashboards for 
 1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/set-permissions/project-setting-permissions-s167.png)
+	> ![Web portal, open Dashboards.](media/set-permissions/project-setting-permissions-s167.png)
 
 1. Slide to enable or disable those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
@@ -100,7 +100,7 @@ By default, all team members have permissions to create and edit dashboards for 
 1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/set-permissions/project-setting-permissions.png)
+	> ![Web portal, open Dashboards.](media/set-permissions/project-setting-permissions.png)
 
 1. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 

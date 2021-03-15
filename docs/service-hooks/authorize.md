@@ -36,23 +36,23 @@ A typical authorization flow might go like this:
 1. You're using a service that uses Azure DevOps Services resources,
 so the service requests authorization.
 
-2. If you're not already signed in, Azure DevOps Services will prompt you for your credentials.
+1. If you're not already signed in, Azure DevOps Services prompts you for your credentials.
 
    ![Azure DevOps Services sign in page](./media/authorize/vso-sign-in.png) 
 
-3. After you've signed in, you get the authorization approval page.
+2. After you've signed in, you get the authorization approval page.
 
    ![Azure DevOps Services authorization page](./media/authorize/vso-authorize.png)
 
    At this point in time, services can only request full access to all of the resources that are available to you through the REST APIs, so don't be surprised that the authorization request isn't more specific.
 
-4. You review the request and approve the authorization.
+3. You review the request and approve the authorization.
 
-5. The authorized service uses that authorization to access resources in your Visual Studio account.
+4. The authorized service uses that authorization to access resources in your Visual Studio account.
 
 To ensure an authorization request is legitimate:
 
-- Look for the Azure DevOps Services branding across the top of the authorization approval page.
+- Look for the Azure DevOps Services branding across the upper portion of the authorization approval page.
 
 - Ensure the authorization approval page URL begins with ```https://app.vssps.visualstudio.com/```.
 

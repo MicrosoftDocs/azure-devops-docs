@@ -53,5 +53,5 @@ You must have [Project Collection Administrator or organization Owner permission
 ## Related articles
 
 - [Manage paid access for users](buy-basic-access-add-users.md)
-- [Buy CI/CD for Azure DevOps](buy-more-build-vs.md)
+- [Buy parallel jobs for Azure DevOps](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 - [Azure DevOps billing overview](overview.md)

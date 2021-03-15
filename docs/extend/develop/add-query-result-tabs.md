@@ -107,7 +107,7 @@ VSS.register(VSS.getContribution(), {
 });
 ```
 
-Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
+Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 ## Next Steps:
 
@@ -121,7 +121,7 @@ Now that you've written your extension, the next steps are to Package, Publish, 
     </div>
     <div style="vertical-align:top;display:inline-block;float:left;width:50%">
         <div class="index-button" align="left" style="padding-left:10px">
-        <a href="/previous-versions/azure/devops/docs/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Testing and Debugging</button></a>
+        <a href="/previous-versions/azure/devops/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Testing and Debugging</button></a>
         </div>
     </div>
 </div>

@@ -222,7 +222,7 @@ The example below uses each of the form elements listed in the table.
 ### Display validation errors below a form element
 
 We recommend providing validation errors below the relevant form elements. 
-In order to display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
+To display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
 
 ```html
 <span class="validation-error">
@@ -231,7 +231,7 @@ In order to display these messages in a manner consistent with 1st party widgets
 </span>
 ```
 
-The above has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
+The previous code snippet has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
 
 Example:
 There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.

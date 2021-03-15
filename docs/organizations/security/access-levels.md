@@ -1,7 +1,7 @@
 ---
-title: What are access levels? What access levels are supported?
+title: About access levels
 titleSuffix: Azure DevOps
-description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
+description: Learn how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
 ms.technology: devops-security
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
@@ -357,7 +357,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Build**  
-      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/overview.md).
+      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
    :::column-end:::
    :::column span="1":::
        

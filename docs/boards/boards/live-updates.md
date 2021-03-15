@@ -54,6 +54,5 @@ As one team member updates the status of a work item, other team members will se
 
 ## Related articles
 
-- [Filter your Kanban board](filter-kanban-board.md)
+- [Filter your Kanban board](../backlogs/filter-backlogs-boards-plans.md)
 - [Customize cards](customize-cards.md)     
- 

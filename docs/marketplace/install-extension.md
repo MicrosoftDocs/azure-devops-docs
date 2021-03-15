@@ -32,7 +32,7 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select the shopping bag icon, and then select **Browse Marketplace**.
+2. Select the shopping bag, and then select **Browse Marketplace**.
 
    ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 

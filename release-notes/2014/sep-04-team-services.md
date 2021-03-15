@@ -66,7 +66,7 @@ On a related note, for those of you building integrations with Visual Studio Onl
 
 ## Hello Hubot
 
-With the help of our community, we now have support for connecting Visual Studio Online Team Rooms to the popular, open source chat bot service [Hubot](https://github.com/github/hubot). Hubot integration helps improve productivity by making it simple to create work items, queue a build, recall what you last worked on, and more—all from within a Visual Studio Online team room. And with an extensible infrastructure, you can extend what your Hubot service can do by adding community or custom built scripts. Get started today by [setting up your own Hubot service](https://go.microsoft.com/fwlink/?LinkID=402677) that you can connect to your Team Rooms.
+With the help of our community, we now have support for connecting Visual Studio Online Team Rooms to the popular, open source chat bot service [Hubot](https://github.com/github/hubot). Hubot integration helps improve productivity by making it simple to create work items, queue a build, recall what you last worked on, and more—all from within a Visual Studio Online team room. And with an extensible infrastructure, you can extend what your Hubot service can do by adding community or custom built scripts. Get started today by [setting up your own Hubot service](/azure/devops/service-hooks/overview) that you can connect to your Team Rooms.
 
 ![Hubot](media/9_04_06.png)
 

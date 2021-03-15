@@ -237,6 +237,54 @@ steps:
 See [ccache configuration settings](
 https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
 
+## Docker images
+
+Caching Docker images dramatically reduces the time it takes to run your pipeline.
+
+```yaml
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+```
+
+## Golang
+
+For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
+
+**Example**:
+
+```yaml
+variables:
+  GO_CACHE_DIR: $(Pipeline.Workspace)/.cache/go-build/
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'go | "$(Agent.OS)" | go.mod'
+    restoreKeys: | 
+      go | "$(Agent.OS)"
+    path: $(GO_CACHE_DIR)
+  displayName: Cache GO packages
+
+```
+
 ## Gradle
 
 Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
@@ -300,13 +348,13 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory.
 
 **Example**:
 
 ```yaml
 variables:
-  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+  NUGET_PACKAGES: $(UserProfile)/.nuget/packages
 
 steps:
 - task: Cache@2
@@ -321,7 +369,7 @@ steps:
 > [!TIP]
 > Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
 
-See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details.
+See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
@@ -441,33 +489,6 @@ steps:
   displayName: Cache composer
 
 - script: composer install
-```
-
-## Docker images
-
-Caching docker images will dramatically reduce the time it takes to run your pipeline.
-
-```YAML
-pool:
-  vmImage: ubuntu-16.04
-
-steps:
-  - task: Cache@2
-    inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
-      path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
-  - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
-  - script: |
-      mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
 ## Known issues and feedback

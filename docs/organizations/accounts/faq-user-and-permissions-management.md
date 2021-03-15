@@ -156,6 +156,16 @@ A: A user can lose access for the following reasons (although the user can conti
 *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 
    Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
+   
+<a name="inherit-permissions-from-other-azure-ad-groups"></a>
+
+### Q: How does my user account inherit permissions from other Azure AD groups?
+
+A:  If a user is in more than one Azure AD group, a **DENY** permission set in one group applies to the user in all groups the user is in. Because the permission is set to **DENY** for the user at the lowest possible level, the user's usage of the resource is affected in all groups they are in because denial always takes precedence. 
+
+For example, if a user is in the Contributor group and in the Project Administrator group and **DENY** is set for a specific permission in the Contributor group, that permission is denied for the user in the Project Administrator group, too. In this scenario, you can use the **Not set** option.
+
+For more information about permissions states, see [Permission states](../security/about-permissions.md?view=azure-devops&tabs=preview-page&preserve-view=true#permission-states).
 
 <a name="change-app-access-policies"></a>
 
@@ -214,13 +224,13 @@ A: This option removes the Azure DevOps or Azure AD group from any project-level
 ### Q: What determines the final access level if a user is in more than one group?
 
 A: Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder.
-Users always get the best access level between all the group rules, including VS subscription.
+Users always get the best access level between all the group rules, including Visual Studio subscription.
 
 See the following examples, showing how the subscriber detection factors into group rules.
 
 **Example 1**: group rule gives me more access
 
-If I have a VS Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
+If I have a Visual Studio Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
 Expected: I get Basic + Test Plans because what the group rule gives me is greater than my subscription.
 
@@ -268,7 +278,7 @@ A: You're probably a guest in the Azure AD instance that backs Azure DevOps. By 
 
 First, check to see if you're an Azure AD guest:
 
-1. Go to the **Settings** section of your organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your organization.
+1. Go to the **Settings** section of your organization. Look at the lower **Azure Active Directory** section. Make a note of the tenant that backs your organization.
 2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
 
     ![Check user type in the Azure portal](media/faq/check-user-type-in-Azure-portal.png)
@@ -279,7 +289,7 @@ If you're an Azure AD guest, do one of the following steps:
 * Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
 * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
 
-1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
+1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0&preserve-view=true).
     ```
     PS Install-Module -Name AzureAD
     ```
@@ -306,7 +316,7 @@ If you're an Azure AD guest, do one of the following steps:
     d. Change the **usertype** from **member** to **guest**:
 
     ```
-    PS Set-AzureADUser -objectId c<replacethe object ID for the result of the command to search> -UserType Member
+    PS Set-AzureADUser -objectId <replacethe object ID for the result of the command to search> -UserType Member
     ```
 
 <a name="users-delay"></a>

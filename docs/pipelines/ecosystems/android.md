@@ -37,7 +37,7 @@ Follow these instructions to set up a pipeline for a sample Android app.
 
 1. Azure Pipelines will analyze the code in your repository and recommend starter templates for your pipeline. Select the `Android` template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 1. A new run is started. Wait for the run to finish.
 

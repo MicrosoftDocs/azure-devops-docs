@@ -17,7 +17,7 @@ Let’s start by walking through some of the improvements we’ve made in the Co
 
 Build status (success or failure) is now clearly visible in the Code Explorer and Commit Details views. More details are just a click away, so you’ll always know if the changes in the commit passed the build or not. You can also customize which builds post status in the repository options for the build definition.
 
-Additionally, the latest changes to the Commit Details view provide deeper insights about your changes. If you’re using pull requests to merge your changes, you’ll see the link to the pull request that introduced the changes into the master branch (or in the case of a merge commit, the PR that created it). When your changes have reached master, the branch link will appear to confirm that the changes have been included.
+Additionally, the latest changes to the Commit Details view provide deeper insights about your changes. If you’re using pull requests to merge your changes, you’ll see the link to the pull request that introduced the changes into the main branch (or in the case of a merge commit, the PR that created it). When your changes have reached main, the branch link will appear to confirm that the changes have been included.
 
 ![Commit tracing in pull request](media/3_24_01.png)
 
@@ -55,7 +55,7 @@ With this new capability, you can now perform the following actions directly fro
 -Run the test by launching it in the Web Test Runner, from which you can pass or fail individual steps, file bugs, etc.
 -View a summary of the roll-up status indicating how many tests have passed and how many remain for that story
 
-If you need advanced test management capabilities (like assign testers, assign configurations, centralized parameters, exporting test results, etc.), you can then switch over to Test Hub and start using the default test plan/requirement-based suites that have been auto-created for you. You can learn about this capability [here](https://msdn.microsoft.com/Library/vs/alm/Work/kanban/add-run-update-tests).
+If you need advanced test management capabilities (like assign testers, assign configurations, centralized parameters, exporting test results, etc.), you can then switch over to Test Hub and start using the default test plan/requirement-based suites that have been auto-created for you. You can learn about this capability [here](/azure/devops/boards/boards/add-run-update-tests).
 
 ## Capture screen recordings
 

@@ -56,7 +56,7 @@ parameters are for manual tests only.
 
 > For more information about checking in your test project and team build, see
 [Add files to the server](../repos/tfvc/add-files-server.md)
-and [Continuous integration on any platform](../pipelines/overview.md).
+and [Continuous integration on any platform](../pipelines/get-started/what-is-azure-pipelines.md).
 For more information about action recordings and coded UI tests, see 
 [Recording and Playing Back Manual Tests](/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests)
 and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-to-test-your-code).

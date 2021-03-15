@@ -13,17 +13,11 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
+
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 
-> [!NOTE] 
-> Branch permissions are different between different versions of TFS, Azure DevOps
-> Server, and Azure DevOps Services.
->
-> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
-> in the upper left corner of the window.
->
-> ![Content version selector](../../media/version-selector.png)
+[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
 
 ## Use the branches view to configure security
 
@@ -53,9 +47,10 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Add users or groups
 
-> Avoid trouble:  You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
+> [!TIP]    
+> You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
-Add users or groups to your branch permissions by selecting **Add** 
+Add users or groups to your branch permissions by selecting **Add**.  
 Enter the sign-in address or group alias, then select **Save Changes**.
 
 ## Remove users or groups

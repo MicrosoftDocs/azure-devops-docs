@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
 
-Azure Artifacts offers a free-tier plan that includes 2 gibibytes (GiB) of free storage for different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
+Azure Artifacts offers a free-tier plan that includes 2 gigabytes (GiB) of free storage for different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
 
 On November 1, 2020, Azure Artifacts switched to consumption-based billing for all package types (NuGet, npm, Python, Maven, and Universal packages). Symbol storage is free for now, and billing will be deferred to a later time. For more information on the billing changes, see the [Billing changes](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/) blog post.
 

@@ -27,7 +27,7 @@ When you create a page, you become a default follower of the page. You can unfol
 
 * From within the UI
 
-   ![Select the unfollow button](media/wiki/unfollow-button.png)
+   ![Select unfollow](media/wiki/unfollow-button.png)
 
 * From within the footer of your email notification
 

@@ -92,7 +92,7 @@ Sync your local repo with changes from your team as they make updates.
  
 ## Try this next
 
-[Set up a build](../../pipelines/overview.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
+[Set up a build](../../pipelines/get-started/what-is-azure-pipelines.md) for your code and learn more about using Git in the [Azure Repos Git tutorial](gitworkflow.md).
 
 ## Troubleshooting
 
@@ -131,4 +131,4 @@ Make sure to install the latest release of [Git for Windows](https://git-scm.com
 
 See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](command-prompt.md) for additional help using Git from the command line.
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->

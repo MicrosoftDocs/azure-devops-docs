@@ -49,8 +49,8 @@ Some suggestions for naming your feature branches:
 * users/username/description
 * users/username/workitem
 * bugfix/description
-* features/feature-name
-* features/feature-area/feature-name
+* feature/feature-name
+* feature/feature-area/feature-name
 * hotfix/description
 
 ::: moniker range=">= tfs-2018" 

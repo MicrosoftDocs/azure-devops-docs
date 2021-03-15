@@ -13,7 +13,7 @@ ms.date: 08/18/2020
 
 
 
-# Configure and customize Azure Boards 
+# Configure and customize Azure Boards  
 
 [!INCLUDE [temp](includes/version-vsts-only.md)]
 
@@ -406,9 +406,16 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
+::: moniker range="azure-devops"
+
+In addition, the new [Delivery Plans (Preview)](plans/review-team-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](plans/media/plans/rollup-view.png)  
+
+::: moniker-end
+
 <!---
-
-
 Consider how your selection impacts rollup
 If your development team uses tasks 
 --> 
@@ -427,7 +434,7 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 
 
 > [!NOTE]   
-> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
+> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
 
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
@@ -514,7 +521,7 @@ Because process-level, project-level and team-level settings can have a wide imp
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md?view=azure-devops-2019#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 For additional information, see the following articles:  
 
@@ -559,6 +566,7 @@ For details on configuring backlogs and boards, see [Manage and configure team t
 
 ## Related articles
 
+- [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
 - [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)  
 - [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
--  [Manage and configure team tools](../organizations/settings/manage-teams.md)
+- [Manage and configure team tools](../organizations/settings/manage-teams.md)

@@ -11,16 +11,16 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '<= azure-devops' 
-ms.date: 11/13/2019 
+ms.date: 01/13/2021 
 ---
 
-# Azure DevOps Services vs. Azure DevOps Server
+# Compare Azure DevOps Services with Azure DevOps Server
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps Services is the **cloud offering** that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
+The **cloud offering**, Azure DevOps Services, provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Customers usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps Server data and tools.  
+The **on-premises offering**, Azure DevOps Server, is built on a SQL Server back end. Customers usually choose the on-premises version when they need their data to stay within their network. Or, when they want access to SQL Server reporting services that integrate with Azure DevOps Server data and tools.  
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
@@ -44,7 +44,7 @@ When you're choosing which platform you want, or if you're considering a move fr
 **Differences in specific feature areas**  
 Although Azure DevOps Services is a hosted version of Azure DevOps Server, there are some differences between features. Some Azure DevOps Server features aren't supported in Azure DevOps Services. For example, Azure DevOps Services doesn't support integration with SQL Server Analysis Services to support reporting.
 
-Two of the following additional areas differ in their support:
+Two of the following other areas differ in their support:
 
 - [Process customization](#process-customization)
 - [Reporting](#reporting)
@@ -58,7 +58,7 @@ Are you on Azure DevOps Server and considering moving? Read [Migration options](
 
 ## Scope and scale data 
 
-As your business grows you may need to scale up your Azure DevOps instance. 
+As your business grows, you may need to scale up your Azure DevOps instance. 
 
 ### Azure DevOps Services scales by using organizations and projects
 
@@ -209,6 +209,25 @@ Azure DevOps Services and Azure DevOps Server 2019 also provide access to the fo
 To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 
 [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md) are available from Azure DevOps Server when configured with SQL Server Analysis Services.  
+
+## Visual Studio Team Services is now Azure DevOps Services<a id="vsts" />
+
+Many of the featured services in VSTS are now offered as standalone services in both Azure DevOps Services and Azure DevOps Server 2019. You can get services separately or all together as Azure DevOps Services. If you're an Azure DevOps subscriber, you have access to all of the services already.
+
+| VSTS feature name    | Azure DevOps service name | Description |
+|----------------------|----------------------|-------------|
+| Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
+| Code                 | Azure Repos          | Unlimited cloud-hosted private Git and Team Foundation Version Control (TFVC) repositories for your project. |
+| Work                 | Azure Boards         | Work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. |
+| Test                 | Azure Test Plans     | All-in-one planned and exploratory testing solution. |
+| Packages (extension) | Azure Artifacts      | Maven, npm, Python, Universal Package, and NuGet package feeds from public and private sources. |
+
+Both Azure DevOps Services and Azure DevOps Server 2019 use the new navigation user interface, with a vertical sidebar to go to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation in Azure DevOps](../project/navigation/index.md).
+
+> [!NOTE]
+> You can disable select services from the user interface. For more information, see [Turn a service on or off](../organizations/settings/set-services.md).
+
+You can still use `visualstudio.com` to access Azure DevOps Services. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
 
 ## Related articles
 

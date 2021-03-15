@@ -105,16 +105,16 @@ An item that is explicitly mapped cannot be renamed without first changing the m
 
 For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
-The following example changes the name of 314.c to 1254.c.
+The following example changes the name of 314.cs to 1254.cs.
 
 ```
-c:\projects>tf rename  314.c  1254.c
+c:\projects>tf rename  314.cs  1254.cs
 ```
 
-The following example renames 314.c to 1254.c and moves it to the newdir folder.
+The following example renames 314.cs to 1254.cs and moves it to the newdir folder.
 
 ```
-c:\projects>tf rename 314.c ..\newdir\1254.c
+c:\projects>tf rename 314.cs ..\newdir\1254.cs
 ```
 
 The following example changes the name of Form1.vb to MainPage.vb and applies a lock to it.

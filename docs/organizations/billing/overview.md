@@ -47,7 +47,7 @@ The following links take you to the paid services that are offered by Microsoft:
 
  * [Buy Basic access for users](buy-basic-access-add-users.md)
  * [Buy Azure Test Plans](buy-basic-access-add-users.md)
- * [Buy CI/CD](buy-more-build-vs.md)
+ * [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
  * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]

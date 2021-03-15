@@ -48,7 +48,7 @@ landingContent:
           - text: Extension samples
             url: ../extend/develop/samples-overview.md
           - text: Extensibility points
-            url: /previous-versions/azure/devops/docs/extend/reference/targets/overview
+            url: /previous-versions/azure/devops/extend/reference/targets/overview
       - linkListType: tutorial
         links:
           - text: Create a custom pipelines task

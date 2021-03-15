@@ -1,8 +1,8 @@
 - name: "About Wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
-- name: Provisioned vs published wikis 
+- name: Provisioned versus published wikis 
   href: provisioned-vs-published-wiki.md
-- name: Quickstarts
+- name: Get started
   items:
   - name: Create a wiki for your project
     href: wiki-create-repo.md
@@ -10,8 +10,6 @@
     href: add-edit-wiki.md
   - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
-- name: Concepts
-  items:
   - name: Wiki file structure
     href: wiki-file-structure.md 
   - name: Create a README 
