@@ -159,7 +159,7 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
-#### I'm unable to copy a file from one system to an Azure Virtual Machine without a public IP address with the Azure file copy task.
+#### How do I use the Azure file copy task to copy a file to an Azure virtual machine that doesn't have a public IP address?
 
 Make sure that you're using version 4 of the Azure file copy task. If the task still fails, you can add a build step to execute the command `azcopy cp "source-file-path" "destination-file-path"` to substitute the source and destination values.
 
