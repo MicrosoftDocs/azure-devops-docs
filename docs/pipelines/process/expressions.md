@@ -655,11 +655,11 @@ stages:
 
 ### Stage depending on job output
 
-Often a build can cause no changes to be needed, and you would like to skip a whole stage in a pipeline under certain conditions. This can be when using Terraform Plan, where you only want to trigger approval and apply when the plan contains changes.
+If no changes are required after a build, you might want to skip a stage in a pipeline under certain conditions. An example is when you're using Terraform Plan, and you want to trigger approval and apply only when the plan contains changes.
 
-When using such condition on a stage, the dependencies variable must be used, not stageDependencies.
+When you use this condition on a stage, you must use the `dependencies` variable, not `stageDependencies`.
 
-The below example is a simple script that sets a variable (this should of course be actual information from Terraform Plan, not this example) in a step in a stage, and invokes the second stage only if the variable has a certain value.
+The following example is a simple script that sets a variable (use your actual information from Terraform Plan) in a step in a stage, and then invokes the second stage only if the variable has a specific value.
 
 ```yaml
 stages:
