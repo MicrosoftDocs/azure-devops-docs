@@ -119,7 +119,7 @@ However, Docker layer caching is possible using self-hosted agents as the epheme
 ### How to build Linux container images for architectures other than x64?
 
 When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
-1. Author your Dockerfile so from a base image that match the target architecture:
+1. Author your Dockerfile with a base image that matches the target architecture:
     ```
     FROM arm64v8/alpine:latest
     ```
