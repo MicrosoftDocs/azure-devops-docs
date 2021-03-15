@@ -61,7 +61,7 @@ Learn how to create an organization. An organization is used to connect groups o
 
 A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to those projects. 
 
-For more information about how to create a project collection, see [create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+For more information about how to create a project collection, see [create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops&preserve-view=true#create-a-project-collection).
 
 ::: moniker-end
 

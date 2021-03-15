@@ -95,7 +95,7 @@ topic branches within the same repository or a branch in a
 [fork](../git/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-Learn more: [pull requests](../git/pull-requests-overview.md).
+Learn more: [pull requests](../git/pull-requests.md).
 
 ## Pull
 

@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Quickly view linked GitHub activity from the Kanban board
 
-When reviewing the Kanban board yourself or as a team, you often have questions such as "has this item started development yet?" or "is this item in review yet?" With the new GitHub annotations on the Kanban board, now you can get a quick sense of where an item is and directly navigate to the GitHub commit, pull request, or issue for more detail. See the [Customize cards](/azure/devops/boards/boards/customize-cards?view=azure-devops) documentation for more information about this and the other annotations for Tasks and Tests.
+When reviewing the Kanban board yourself or as a team, you often have questions such as "has this item started development yet?" or "is this item in review yet?" With the new GitHub annotations on the Kanban board, now you can get a quick sense of where an item is and directly navigate to the GitHub commit, pull request, or issue for more detail. See the [Customize cards](/azure/devops/boards/boards/customize-cards?view=azure-devops&preserve-view=true) documentation for more information about this and the other annotations for Tasks and Tests.
 
 > [!div class="mx-imgBorder"]
 > ![View linked GitHub activity from the Kanban board.](../../media/153_03.png "View linked GitHub activity from the Kanban board")

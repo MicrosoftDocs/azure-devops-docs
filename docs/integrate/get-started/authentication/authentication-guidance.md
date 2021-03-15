@@ -8,7 +8,7 @@ ms.custom: has-adal-ref
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/25/2021
+ms.date: 03/05/2021
 ---
 
 # Choosing the right authentication mechanism
@@ -48,15 +48,6 @@ A: Your service account may not have "materialized." Since signing in isn't poss
 
 ### Q: I'm making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](../../concepts/dotnet-client-libraries.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
 A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They're simpler and more easily maintained when version changes to our REST endpoints occur. If functionality is missing from the client libraries, [MSAL](/azure/active-directory/develop/msal-overview) is the best authentication mechanism to use with our REST APIs.
-
-### Q: Can I use ADAL if I log into my organization with a Microsoft account (MSA)?
-
-A: Yes, you can use ADAL to create client-side applications for an MSA backed account using ADAL with some limitations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. This approach only works for client side applications. For JS web apps, ADAL JS doesn't work without an Azure AD tenant.
-
-> [!IMPORTANT]
-> **Starting, June 30th, 2020**, we'll no longer add any new features to ADAL and Azure AD Graph. We'll continue to provide technical support and security updates, but won't provide feature updates.
-> **Starting June 30th, 2022**, we'll end support for ADAL and Azure AD Graph and won't provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates.
-> Instead, use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 ### Q: Is this guidance only for Azure DevOps Services or is it also relevant for on-premises Azure DevOps Server users?
 
 A: This guidance is mainly for Azure DevOps Services users. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using the [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate for a user.

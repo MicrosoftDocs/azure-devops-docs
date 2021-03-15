@@ -31,11 +31,11 @@ The 1.0 designation means we have locked these APIs from any breaking changes go
 
 Although the 1.0 set is locked from a breaking change standpoint, it is not locked from a feature standpoint. New APIs can be added to the 1.0 set and nonbreaking enhancements may even be introduced to APIs already released. A few existing preview APIs (like Git Pull Requests) remain in preview today, but will eventually graduate into the 1.0 set (this is mainly due to significant changes coming soon).
 
-To learn more about how to use the APIs, check out [Get started with the REST APIs](/rest/api/vsts/?view=vsts-rest-4.1).
+To learn more about how to use the APIs, check out [Get started with the REST APIs](/rest/api/vsts/?view=vsts-rest-4.1&preserve-view=true).
 
 To explore the available APIs, see the [Visual Studio Online REST API Reference](/azure/devops/integrate/).
 
-**Developers with existing apps using the 1.0 preview APIs:** you should start migrating to the release 1.0 APIs as soon as possible. Graduated preview APIs (any API in the 1.0 set) are subject to stop working in 12 weeks from today. To learn more about versioning and migrating, see the [versioning and migration](/rest/api/vsts/?view=vsts-rest-4.1) page.
+**Developers with existing apps using the 1.0 preview APIs:** you should start migrating to the release 1.0 APIs as soon as possible. Graduated preview APIs (any API in the 1.0 set) are subject to stop working in 12 weeks from today. To learn more about versioning and migrating, see the [versioning and migration](/rest/api/vsts/?view=vsts-rest-4.1&preserve-view=true) page.
 
 ## Service hooks is out of preview
 
@@ -43,7 +43,7 @@ I am also happy to announce that the service hooks features is out of preview an
 
 Visual Studio Online supports 14 services out of the box, including Trello, UserVoice, HipChat, AppVeyor, MyGet, Flowdock, Zendesk, Kato, Zapier, Campfire, Azure, and more. You can also use service hooks with your own custom solutions, enabling your solutions to react efficiently when events happen in your Visual Studio Online projects.
 
-To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=azure-devops).
+To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=azure-devops&preserve-view=true).
 
 Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
