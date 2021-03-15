@@ -59,8 +59,6 @@ This tab gives you snapshot of all questions by your extension users with the no
 
 All data elements available in the reports page are also available for download in XLS format to aid creating your own custom reports. 
 
-<a id="contact" />
-
 ## Contact
 
 For paid extensions, you can use the <strong>Contact</strong> action to communicate with your users. This functionality is available only for publishers with contributor + access on the extension. 
