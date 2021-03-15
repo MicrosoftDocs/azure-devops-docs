@@ -7,7 +7,7 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 08/07/2020
+ms.date: 02/08/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -34,7 +34,7 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Go to the **Permissions** tab, and then verify that you are a member of the **Project Collection Administrators** group.
+3. Go to the **Permissions** tab, and then verify that you're a member of the **Project Collection Administrators** group.
 
    ![Project collection administrators group members](media/assign-access-levels/project-collection-administrators-group-members-new.png)
 
@@ -42,7 +42,7 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Select Add a group rule](media/manage-group-licensing/add-group-rule.png)
 
-	**Group rules** only appears if you are a member of the **Project Collection Administrators** group.  
+	**Group rules** appear only if you're a member of the **Project Collection Administrators** group.  
 
 5. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access for the group. Select **Add**.
 
@@ -67,8 +67,10 @@ A notification displays, showing the status and outcome of the rule. If the assi
 
    ![Add group member](media/migrate-to-group-based-resource-management/add-group-members.png)
 
-When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group. No additional licenses are required.
+When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group. No other licenses are required.
 
+> [!NOTE]
+> You can assign Group rules to support both access levels and project memberships. Users are granted the highest access level when assigned to more than one rule or Azure AD group which specify different levels of access.  For example, if John is assigned to two Azure AD groups and two different Group rules that specify Stakeholder access and the other Basic access, then John's access level is Basic. 
 ## Verify group rule
 
 - Verify that the resources are applied to each group and individual user. On the **All users** tab, highlight a user, and then select **Summary**.
@@ -77,7 +79,7 @@ When you assign the same access level to a user, the user consumes only one acce
 
 ## Remove direct assignments
 
-To manage a user's resources only by the groups that they're in, remove the direct assignments. Resources assigned to a user via individual assignment stay assigned to the user. This assignment stays whether the resources are assigned or taken away from the user's groups.
+To manage a user's resources only by the groups that they're in, remove their direct assignments. Resources assigned to a user via individual assignment stay assigned to the user. This assignment stays whether the resources are assigned or taken away from the user's groups.
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).

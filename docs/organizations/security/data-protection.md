@@ -1,5 +1,6 @@
 ---
-title: Azure DevOps - Data protection
+title: Data protection overview
+titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.topic: article
 ms.technology: devops-security
@@ -194,6 +195,9 @@ The General Data Protection Regulation (GDPR) is the biggest change in data prot
 Azure DevOps is available in the following eight geographies across the world: United States, Canada, Europe, United Kingdom, India, Australia, Asia Pacific, and Brazil. By default, your organization is assigned to your closest geography, but you do have the option to choose a different geography. If you change your mind later, it's possible to migrate your organization to a different geography, with the assistance of Microsoft support.
 
 Azure DevOps doesn't move or replicate customer data outside of the chosen geography. Instead, your data is geo-replicated to a second region within the same geography. The only exception is Brazil, which replicates data to the South Central US geography for disaster recovery purposes.
+
+> [!NOTE]
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a third-party data center in the US.
 
 To learn more, see [Azure DevOps data location](data-location.md).
 

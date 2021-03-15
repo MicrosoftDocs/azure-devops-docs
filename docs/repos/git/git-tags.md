@@ -22,6 +22,8 @@ This article provides an overview of working with Git tags in Azure DevOps Servi
 
 ## View and filter tags
 
+#### [Browser](#tab/browser)
+
 ::: moniker range=">= azure-devops-2019"
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
@@ -42,9 +44,9 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 ### View tags in the Commits view
 
-1. To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Repos**, **Commits**, and select your branch.
+To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Repos**, **Commits**, and select your branch.
 
-   ![View tags in Commits view.](media/git-tags/view-tags-from-commits-new-nav.png)
+![View tags in Commits view.](media/git-tags/view-tags-from-commits-new-nav.png)
 
 ::: moniker-end
 
@@ -68,13 +70,15 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 ### View tags in the Commits view
 
-1. To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Code**, **Commits**, and select your branch.
+To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Code**, **Commits**, and select your branch.
 
-   ![View tags in Commits view.](media/git-tags/view-tags-from-commits.png)
+![View tags in Commits view.](media/git-tags/view-tags-from-commits.png)
 
 ::: moniker-end
 
-### Visual Studio
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 You can view tags in the **Tags** view and in the **History** view.
 
@@ -108,9 +112,13 @@ You can also view tags in the **History** view, for example by navigating to the
 
 ![View tags in the History view.](media/git-tags/view-tags-from-commits-vs.png)
 
+---
+
 ## Create tag
 
 To create a tag, you must have the [Create Tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -135,9 +143,9 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
 ### Create tags from the Commits view
 
-1. To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
+To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
 
-   ![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
+![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
 
 ::: moniker-end
 
@@ -164,13 +172,15 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
 ### Create tags from the Commits view
 
-1. To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
+To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
 
-   ![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
+![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
 
 ::: moniker-end
 
-### Visual Studio
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 You can create both annotated and lightweight tags in Visual Studio from both the **Tags** view and the **History** view. To create an annotated tag, provide both a name and a message when creating the tag. To create a lightweight tag, omit the message and supply only a name.
 
@@ -194,9 +204,11 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 
 ### Create tags from the History view
 
-1. To create a tag directly from the history view, right-click the desired commit and choose **Create Tag**.
+To create a tag directly from the history view, right-click the desired commit and choose **Create Tag**.
 
-   ![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
+![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
+
+---
 
 ## Delete tag
 
@@ -205,6 +217,8 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 
 To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). Force push permissions for a branch are also automatically inherited by the branch creator.
 
+#### [Browser](#tab/browser)
+
 ::: moniker range=">= azure-devops-2019"
 
 ### Delete a tag in the remote repo
@@ -245,18 +259,24 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 ::: moniker-end
 
-### Visual Studio
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2017 Update 6.
 
-1. Right-click the tag to delete and choose **Delete Locally**
+Right-click the tag to delete and choose **Delete Locally**
 
-   ![Delete tag using Visual Studio 2017 Update 6.](media/git-tags/delete-tag-vs.png)
+![Delete tag using Visual Studio 2017 Update 6.](media/git-tags/delete-tag-vs.png)
 
 >[!IMPORTANT]
 >If your tag has already been pushed to the remote repo, you should not delete it. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags.
 
+---
+
 ## Create branch from a tag
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -290,7 +310,9 @@ The steps in this procedure show you how to delete a tag in the local repo using
 
 ::: moniker-end
 
-### Visual Studio
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To create a branch from a tag, right-click the tag and choose **New Local Branch From**. You can also choose **Create Branch From Tag**.
 
@@ -308,7 +330,11 @@ The steps in this procedure show you how to delete a tag in the local repo using
 
    ![Push new branch from tag in Visual Studio.](media/git-tags/branch-from-tag-created.vs.png)
 
+---
+
 ## View tag history
+
+#### [Browser](#tab/browser)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -334,7 +360,9 @@ The steps in this procedure show you how to delete a tag in the local repo using
 
 ::: moniker-end
 
-### Visual Studio
+#### [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To view the history for a tag, right-click the tag and choose **View History**.
 
@@ -343,3 +371,5 @@ The steps in this procedure show you how to delete a tag in the local repo using
 2. The history is displayed in the **History** view.
 
    ![Tag history in Visual Studio.](media/git-tags/commits-vs.png)
+
+---

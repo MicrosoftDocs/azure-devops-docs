@@ -7,8 +7,8 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/17/2020
----
+ms.date: 02/16/2021
+--- 
 
 # About settings for users, teams, projects, or organizations
 
@@ -630,7 +630,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access Organization Settings aother than the **Overview** and **Projects** pages.   To learn more, see [About projects and scaling your organization, Project-scoped User group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [About projects and scaling your organization, Limit user visibility for projects using the Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 
 > [!div class="mx-imgBorder"]  

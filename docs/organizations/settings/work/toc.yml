@@ -26,6 +26,8 @@
     href: customize-process-form.md
   - name: Add a custom control
     href: custom-controls-process.md
+- name: FAQs
+  href: faqs.yml
 - name: Change project process
   items:
   - name: From Agile to Scrum

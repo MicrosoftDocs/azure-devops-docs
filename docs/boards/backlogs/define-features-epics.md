@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 02/17/2020
+ms.date: 02/03/2021
 ---
 
 # Define features and epics  
@@ -296,14 +296,7 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
 
-
-## Q & A
-
-[!INCLUDE [temp](../includes/faq-copy-clone.md)]
-
-[!INCLUDE [temp](../includes/faq-critical-path.md)]
-
-
+ 
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 
@@ -314,8 +307,9 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 ## Related articles  
 
+-  [Azure Boards FAQs](../faqs.yml) 
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
 - [Product backlog controls](product-backlog-controls.md)

@@ -170,7 +170,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 **Filter backlogs and boards based on tags** 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](../boards/backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum  
 
@@ -380,7 +380,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Start using your Kanban board](../boards/boards/kanban-quickstart.md)
 - [Add columns to your Kanban board](../boards/boards/add-columns.md) 
 - [Customize cards](../boards/boards/customize-cards.md)
-- [Filter your Kanban board](../boards/boards/filter-kanban-board.md)
+- [Filter your Kanban board](../boards/backlogs/filter-backlogs-boards-plans.md)
 - [Kanban best practices](../boards/boards/best-practices-kanban.md)
 
 #### Scrum

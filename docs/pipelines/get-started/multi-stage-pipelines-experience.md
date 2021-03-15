@@ -128,6 +128,20 @@ You can configure pipelines security on a project level from the context menu on
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
 
+:::moniker range="azure-devops"
+
+## Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="media/task-insights.png" alt-text="This task has failed pop-up.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
+
+:::moniker-end
+
 ## Next steps
 
 Learn more about configuring pipelines in the language of your choice:

@@ -153,5 +153,5 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link work items to deployments](../boards/queries/linking-attachments.md)
 - [Save work with commits](../repos/git/commits.md)
-- [Create and complete a pull request](../repos/git/pullrequest.md)
+- [View and manage pull requests](../repos/git/pull-requests.md)
 
