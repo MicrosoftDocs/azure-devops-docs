@@ -38,7 +38,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
-> We have temporarily disabled the free grant of parallel jobs for public and private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freegrant@microsoft.com. Existing organizations and projects are not affected.
+> We have temporarily disabled the free grant of parallel jobs for public and private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected.
 
 ## What is a parallel job? 
 
@@ -72,7 +72,7 @@ For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted p
 
 For **private projects**, you can get one free job that can run for up to 60 minutes each time.
 
-When you create a new Azure DevOps organization, you are not given the free grants for public or private projects by default. However, you can request the free grant by sending an email to azpipelines-freegrant@microsoft.com and providing the following information:
+When you create a new Azure DevOps organization, you are not given the free grants for public or private projects by default. However, you can request the free grant by sending an email to azpipelines-freetier@microsoft.com and providing the following information:
 
 - Your name
 - The Azure DevOps organization for which you are seeking the free grant
