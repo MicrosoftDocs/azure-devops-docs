@@ -7,6 +7,7 @@ ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
 ms.date: 07/13/2020
 monikerRange: 'azure-devops'
+"recommendations": "true"
 ---
 
 # Publish and download artifacts in Azure Pipelines
@@ -83,7 +84,7 @@ Things to keep in mind:
 > [!CAUTION]
 > Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
 
-### Ignore files with artifactignore
+### Use .artifactignore
 
 `.artifactignore` uses the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should not be included when publishing artifacts. For more information, see [.artifactIgnore usage].
 
@@ -148,7 +149,7 @@ steps:
 
 Things to keep in mind:
 
-- By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a sub-directory will be created for each downloaded artifact.
+- By default, files are downloaded to **$(Pipeline.Workspace)**. If an artifact name was not specified, a subdirectory will be created for each downloaded artifact.
 
 - File matching patterns can be used to limit which files are downloaded.
 
@@ -215,7 +216,7 @@ When no artifact name is specified:
 
 1. Multiple artifacts can be downloaded and the task does not fail if no files are found.
 
-1. A sub-directory is created for each artifact.
+1. A subdirectory is created for each artifact.
 
 1. File matching patterns should assume the first segment of the pattern is (or matches) an artifact name. For example, `WebApp/**` matches all files from the `WebApp` artifact. The pattern `*/*.dll` matches all files with a `.dll` extension at the root of each artifact.
 
@@ -259,10 +260,7 @@ Not available for this action.
 
 ## Artifacts in release and deployment jobs
 
-If you're using pipeline artifacts to deliver artifacts into a classic release pipeline or deployment job, you do not need to add a download step --- a step is injected automatically. If you need to control over the location where files are downloaded, you can add a **Download Pipeline Artifact** task or use the `download` YAML keyword.
-
-> [!NOTE]
-> Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or **Download Pipeline Artifact** task.
+Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
 To stop artifacts from being downloaded automatically, add a `download` step and set its value to none:
 
@@ -270,8 +268,9 @@ To stop artifacts from being downloaded automatically, add a `download` step and
 steps:
 - download: none
 ```
-> [!IMPORTANT]
-> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
+
+> [!NOTE]
+> Deleting or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
 ## Use Artifacts across stages
 
@@ -303,11 +302,11 @@ stages:
 
 ## Migrate from build artifacts
 
-Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but can also be downloaded using the latest **Download Pipeline Artifact** task.
+Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but we recommend using the latest **Download Pipeline Artifact** task instead.
 
 When migrating from build artifacts to pipeline artifacts:
 
-1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, just publish directly from the path containing the files.
+1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, you can just publish directly from the path containing the files.
 
 2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
@@ -318,10 +317,16 @@ When migrating from build artifacts to pipeline artifacts:
 
 ## FAQ
 
-* **Can this task publish artifacts to a shared folder or network path?**
+- **Can this task publish artifacts to a shared folder or a network path?**
 
 Not currently, but this feature is planned.
 
-* **What are build artifacts?**
+- **What are build artifacts?**
 
 Build artifacts are the files generated by your build. See [Build Artifacts](build-artifacts.md) to learn more about how to publish and consume your build artifacts.
+
+## Related articles
+
+- [Build artifacts](build-artifacts.md)
+- [Releases in Azure Pipelines](../release/releases.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
