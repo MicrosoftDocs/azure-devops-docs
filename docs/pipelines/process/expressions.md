@@ -664,17 +664,18 @@ The below example is a simple script that sets a variable (this should of course
 ```yaml
 stages:
 - stage: plan_dev
-jobs:
-- job: terraform_plan_dev
-  steps:
-  - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
-    name: terraform_plan
-
+  jobs:
+  - job: terraform_plan_dev
+    steps:
+    - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
+      name: terraform_plan
 - stage: apply_dev
-dependsOn: plan_dev
-condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
-jobs:
-- deployment: "apply_dev"
+  dependsOn: plan_dev
+  condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
+  jobs:
+  - job: part_b
+    steps:
+    - bash: echo "BA"
 ```
 
 ::: moniker-end
