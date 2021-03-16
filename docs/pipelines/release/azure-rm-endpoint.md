@@ -55,7 +55,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
-* [Azure Subscription is not being taken directly from the output of a previous task](#azure-subscription-is-not-being-taken-directly-from-the-output-of-a-previous-task)
+* [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
 
 <a name="privileges"></a>
 
@@ -219,11 +219,11 @@ To resolve this issue:
 
 1. Save the service connection.
 
-### Azure Subscription is not being taken directly from the output of a previous task
+### Azure subscription not taken directly from previous task output
 
-This scenario is encountered when you are setting an Azure Subscription dynamically for the release pipeline wherein the subscription is an output variable from a preceding task. 
+When you set an Azure subscription dynamically for the release pipeline and the subscription is an output variable from a preceding task, you might encounter this issue. 
 
-To resolve this issue, ensure that the values are defined within the pipeline variables section which can be used in the subscription name or the service connection.
+To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or the service connection.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
