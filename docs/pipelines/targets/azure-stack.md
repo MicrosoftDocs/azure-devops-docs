@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 2/9/2021
+ms.date: 3/16/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -26,7 +26,7 @@ In this article you can learn to create or validate:
 
 ## Create or validate your SPN
 
-An SPN provides role-based credentials so that processes outside of Azure can connect to and interact with resources. You will need an SPN with contributor access and the attributes specified in these instructions to use with your GitHub Actions.
+An SPN provides role-based credentials so that processes outside of Azure can connect to and interact with resources. You will need an SPN with contributor access and the attributes specified in these instructions to use with your Azure DevOps pipeline.
 
 As a user of Azure Stack Hub you do not have the permission to create the SPN. You will need to request this principle from your cloud operator. The instructions are being provided here so you can create the SPN if you are a cloud operator, or you can validate the SPN if you are a developer using an SPN in your workflow provided by a cloud operator.
 
