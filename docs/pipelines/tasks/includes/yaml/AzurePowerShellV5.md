@@ -10,7 +10,7 @@ ms.technology: devops-cicd-tasks
 ```YAML
 # Azure PowerShell
 # Run a PowerShell script within an Azure environment
-- task: AzurePowerShell@4
+- task: AzurePowerShell@5
   inputs:
     #azureSubscription: Required. Name of Azure Resource Manager service connection
     #scriptType: 'FilePath' # Optional. Options: filePath, inlineScript
@@ -21,4 +21,5 @@ ms.technology: devops-cicd-tasks
     #failOnStandardError: false # Optional
     #azurePowerShellVersion: 'OtherVersion' # Required. Options: latestVersion, otherVersion
     #preferredAzurePowerShellVersion: # Required when azurePowerShellVersion == OtherVersion
+    #pwsh: true # Optional. If true, then will use PowerShell Core pwsh.exe
 ```
