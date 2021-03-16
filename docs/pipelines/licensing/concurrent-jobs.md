@@ -67,7 +67,7 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default.
 
-For **private projects**, you can get one free job that can run for up to 60 minutes each time. When you create a new Azure DevOps organization that uses MSAs (Microsoft accounts) instead of AAD (Azure Active Directory) accounts, you are not given the free grant by default. 
+For **private projects**, you can get one free job that can run for up to 60 minutes each time. When you create a new Azure DevOps organization you may not always be given this free grant by default. 
 
 To request the free grant for public or private projects, send an email to azpipelines-freetier@microsoft.com and provide the following information:
 
