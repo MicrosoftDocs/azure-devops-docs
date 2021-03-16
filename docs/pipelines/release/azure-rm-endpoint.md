@@ -55,6 +55,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Azure Subscription is not being taken directly from the output of a previous task](#azure-subscription-is-not-being-taken-directly-from-the-output-of-a-previous-task)
 
 <a name="privileges"></a>
 
