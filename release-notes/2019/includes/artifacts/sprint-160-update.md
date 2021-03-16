@@ -12,4 +12,4 @@ The public preview of public feeds has received great adoption and feedback. In 
 
 ### Create project-scoped feeds from the portal
 
-When we released public feeds, we also released [project-scoped feeds](/azure/devops/artifacts/concepts/feeds?view=azure-devops). Until now, project-scoped feeds could be created via REST APIs or by creating a public feed and then turning the project private. Now, you can create project-scoped feeds directly in the portal from any project if you have the required permissions. You can also see which feeds are project and which are organization-scoped in the feed picker.
+When we released public feeds, we also released [project-scoped feeds](/azure/devops/artifacts/concepts/feeds?view=azure-devops&preserve-view=true). Until now, project-scoped feeds could be created via REST APIs or by creating a public feed and then turning the project private. Now, you can create project-scoped feeds directly in the portal from any project if you have the required permissions. You can also see which feeds are project and which are organization-scoped in the feed picker.

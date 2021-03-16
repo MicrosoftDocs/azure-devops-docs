@@ -2,7 +2,7 @@
 title: Recommendations to structure projects in your pipeline
 description: Learn how to use project structure to improve pipeline security.
 ms.assetid: 90fb461a-2315-4b60-a662-f022c9c770e2
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 02/04/2020
 monikerRange: '> azure-devops-2019'
 ---

@@ -97,7 +97,7 @@ trigger:
 
 If you want to disable the trigger or override the trigger settings in the YAML files you can do so on the definition.
 
-See the [YAML build triggers](/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) documentation for more information.
+See the [YAML build triggers](/azure/devops/pipelines/yaml-schema?view=azure-devops&preserve-view=true&tabs=schema%2Cparameter-schema) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![ci triggers from yaml](media/133_04.png)
@@ -110,7 +110,7 @@ You can now continuously deploy to [Azure Database for MySQL](https://azure.micr
 
 [Helm](https://github.com/kubernetes/helm/) is a tool that streamlines installing and managing Kubernetes applications. It has also gained a lot of popularity and community support in the last year. A Helm task in **Release** is now available for packaging and deploying Helm charts to [Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) or any other Kubernetes cluster.
 
-VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes?view=azure-devops) documentation for more information.
+VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes?view=azure-devops&preserve-view=true) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![helm tasks](media/133_09.png)
@@ -149,7 +149,7 @@ This feature was prioritized based on a suggestion.
 
 ### Use upstream NuGet packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#benefits-of-upstream-sources) documentation for more information.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops&preserve-view=true#benefits-of-upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![NuGet upstreams](media/133_05.png)
@@ -158,7 +158,7 @@ We continue to invest in upstream sources, which enable you to centralize all yo
 
 Previously, only feeds created after the [Sprint 130 Update](./feb-14-vsts.md#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
 
-Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#saving-packages-from-upstream-sources-continuity) documentation for more information.
+Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops&preserve-view=true#saving-packages-from-upstream-sources-continuity) documentation for more information.
 
 ## Wiki
 

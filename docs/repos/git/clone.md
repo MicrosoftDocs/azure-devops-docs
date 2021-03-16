@@ -46,7 +46,7 @@ If you're using Azure Repos, Azure DevOps Server 2019, or Team Foundation Server
 
 1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, then **Files**.
 
-   ![Repos files](../get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/clone-repo/repos-files.png)
 
 1. Select **Clone** in the upper right.
 

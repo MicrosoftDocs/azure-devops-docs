@@ -4,8 +4,6 @@ description: Execute .bat or .cmd scripts when building your code in Azure Pipel
 ms.topic: reference
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 02/18/2020
 monikerRange: '>= tfs-2015'
 ---

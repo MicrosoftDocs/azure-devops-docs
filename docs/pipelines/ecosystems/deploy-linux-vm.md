@@ -12,6 +12,9 @@ monikerRange: 'azure-devops'
 
 # Deploy to a Linux Virtual Machine
 
+> [!NOTE]
+> If you want to deploy your application to a Linux virtual machine using the classic editor, see [Deploy web apps to Linux VMs](../apps/cd/deploy-linuxvm-deploygroups.md).
+
 Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to virtual machines. 
 
 You can use continuous integration (CI) and continuous deployment (CD) to build, release, and deploy your code. Learn how to set up a CI/CD pipeline for multi-machine deployments.

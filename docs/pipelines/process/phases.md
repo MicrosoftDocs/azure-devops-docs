@@ -832,8 +832,8 @@ When you specify one of the `clean` options, they are interpreted as follows:
   - deployment: deploy
     pool:
       vmImage: 'Ubuntu-16.04'
-      workspace:
-        clean: all
+    workspace:
+      clean: all
     environment: staging
 ```
 

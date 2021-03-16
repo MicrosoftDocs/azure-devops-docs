@@ -7,12 +7,11 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/02/2017
-# monikerRange: '>= tfs-2015'
 ---
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
-[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](/azure/app-service/overview)
@@ -27,7 +26,7 @@ runs tests, and deploy to a staging slot and then to production.
 ## Code
 
 You must store your app's source code in a 
-[Azure Repos Git](../../../../repos/git/gitquickstart.md), 
+Azure Repos Git, 
 [GitHub](https://help.github.com/articles/create-a-repo),
 or any other Git repository to use Azure Continuous Delivery.
 Team Foundation Version Control (TFVC) repositories are not supported at present.
@@ -45,9 +44,6 @@ Carry out the following steps to create a simple
 
 1. Commit the solution to your chosen repository.
 
->For more information about publishing your project, see 
-[Get Started with Git and Azure Repos](../../../../repos/git/gitquickstart.md)
-or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 ## Configure
 
@@ -74,10 +70,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
  
    If you chose to use GitHub, complete the authorization steps.
    If you chose to use an external Git repository, enter the repository name, branch, and (if required) your credentials.
- 
-   >If you encounter a service endpoint error while configuring Continuous Delivery, see
-   [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
- 
+  
 1. Select **Configure Continuous Delivery** and choose the web application framework
    you used to develop your app. This choice influences the way that Azure Continuous Delivery builds
    and packages the app for deployment. At present, ASP.NET, ASP.NET Core, PHP, Python, and Node.js
@@ -202,28 +195,7 @@ to execute during deployment. You can even choose to deploy automatically,
 or set up manual approval for any deployment to production.
 
 <a name="faq"></a>
-## Notes
 
-The Azure Continuous Delivery feature is a preview version. You
-may encounter the following known issues:
-
-* If you do not have relevant permission to create build and release definitions 
-  in Azure Pipelines, the Continuous Delivery configuration will fail
-  with an appropriate error message. See 
-  [Manage users and access in Azure Pipelines](../../../../organizations/accounts/add-organization-users.md).
-  
-* Continuous Delivery supports only applications developed by using
-  [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).
-  
-* If you encounter the error "Failed to create an Azure service connection"
-  while deploying to Azure App Service, see
-  [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
-  
-* There is a known issue where users are able to see their Azure Pipelines information within the [Azure classic portal](https://manage.windowsazure.com/),
-  but not in the [Azure dashboard](https://portal.azure.com/). You may see a
-  "No accounts found" message in this situation. To resolve this, you can
-  configure Azure Pipelines to be backed by an Azure Active Directory (Azure AD) instance. For information on how to do this, see
-  [Azure Pipelines - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
 ## FAQ
 
@@ -231,7 +203,7 @@ may encounter the following known issues:
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, connect to your project.
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 
@@ -247,9 +219,7 @@ may encounter the following known issues:
 
 1. Clear **Host in the cloud** and click **OK**.
 
-1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
+1. Commit and push (Git) or check in TFVC your code.
 
 
 <!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

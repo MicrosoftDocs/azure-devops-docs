@@ -18,7 +18,7 @@ ms.date: 12/13/2019
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](./what-is-azure-boards.md).
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project that uses the [Basic process for work tracking](./what-is-azure-boards.md).
 
 You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 

@@ -183,7 +183,7 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 ### Q: What versions of ServiceNow are supported?
 
-**A**: The integration is compatible with Kingston and above ServiceNow versions.
+**A**: The integration is compatible with Kingston, London, and New York versions of ServiceNow.
 
 ### Q: What types of change request can be managed with the integration?
 

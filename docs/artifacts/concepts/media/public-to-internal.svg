@@ -168,21 +168,6 @@
      id="path4572"
      style="stroke-width:0.730811" />
   <text
-     transform="scale(0.98064606,1.0197359)"
-     font-size="17.5395px"
-     font-family="SegoeUI, 'Segoe UI'"
-     id="text4578"
-     x="83.03978"
-     y="51.3624"
-     style="stroke-width:0.730811"><tspan
-       letter-spacing="-0.034em"
-       id="tspan4574"
-       style="stroke-width:0.618677">F</tspan><tspan
-       x="91.00415"
-       y="51.3624"
-       id="tspan4576"
-       style="stroke-width:0.730811">abrikam</tspan></text>
-  <text
      font-size="24"
      font-family="SegoeUI, Segoe UI"
      id="text4580"
@@ -716,4 +701,35 @@
      style="fill:none;stroke:#000000;stroke-width:0.365406;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7231-9)"
      d="m 161.93362,187.1214 c 0,20.07398 0,20.07398 0,20.07398"
      id="path13920" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578"
+     x="95.737556"
+     y="51.881645"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan963"
+       x="95.737556"
+       y="51.881645">Feed</tspan></text>
+  <rect
+     style="opacity:0.998;fill:#b4a0ff;fill-opacity:1;stroke:#00070f;stroke-width:0.74;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
+     id="rect964"
+     width="159.36554"
+     height="22.438484"
+     x="159.00429"
+     y="288.82312" />
+  <text
+     transform="scale(0.98064606,1.0197359)"
+     font-size="17.5395px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-3"
+     x="170.89333"
+     y="299.89053"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5395px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.731;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan989"
+       x="170.89333"
+       y="299.89053">Available packages</tspan></text>
 </svg>
