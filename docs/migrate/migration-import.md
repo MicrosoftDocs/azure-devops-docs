@@ -279,13 +279,12 @@ Step 3: [Upload the DACPAC file and import files to an Azure storage account](#s
 Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-SAS-key).  
 Step 5: [Complete the last fields in the import specification](#step-5-complete-the-import-specification). 
 
-
 > [!NOTE] 
 > Before you perform a production import, we *strongly* recommend that you complete a dry-run import. With a dry run, you can validate that the import process works for your collection and that there are no unique data shapes present that might cause a production import failure. 
 
 ### Step 1: Detach your collection
 
-[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the import *can't* be executed. We recommend that you keep the collection detached until the import has been completed, because there isn't a way to import the changes that occurred during the import.
+[Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import process. Identity data for the collection resides in the Azure DevOps Server instance's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance, it takes a copy of that identity data and packages it with the collection for transport. Without this data, the identity portion of the import *can't* be executed. We recommend that you keep the collection detached until the import has been completed, because there isn't a way to import the changes that occurred during the import.
 
 If you're doing a dry run (test) import, we recommend that you reattach your collection after you back it up for import, because you won't be concerned about having the latest data for this type of import. To avoid offline time altogether, you can also choose to employ an [offline detach](/azure/devops/server/command-line/tfsconfig-cmd#offlinedetach) for dry runs. 
 
