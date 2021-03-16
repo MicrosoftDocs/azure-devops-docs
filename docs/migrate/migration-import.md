@@ -273,11 +273,11 @@ You don't need to repeat a dry-run import if users' Visual Studio subscriptions 
 
 By now, you have everything ready to execute on your import. You need to schedule downtime with your team to take the collection offline for the migration. When you've agreed upon a time to run the import, you need to upload to Azure both the required assets you've generated and a copy of the database. This process has five steps:
 
-Step 1: [Take the collection offline and detach it](#step-1-detatch-your-collection).  
-Step 2: [Generate a DACPAC file from the collection you're going to import](#generate-a-dacpac-file).  
-Step 3: [Upload the DACPAC file and import files to an Azure storage account](#upload-the-dacpac-file).  
-Step 4: [Generate an SAS key to the storage account](#generate-an-SAS-key).  
-Step 5: [Complete the last fields in the import specification](#complete-the-import-specification). 
+Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
+Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
+Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
+Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-SAS-key).  
+Step 5: [Complete the last fields in the import specification](#step-5-complete-the-import-specification). 
 
 
 > [!NOTE] 
@@ -294,7 +294,7 @@ It's important to weigh the cost of choosing to incur zero downtime for a dry ru
 ### Step 2: Generate a DACPAC file
 
 > [!IMPORTANT]  
-> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-import.md#detach-your-collection).
+> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-import.md#step-1-detach-your-collection).
 
 > [!NOTE] 
 > If the data migration tool didn't display a warning that your collection was too big, use the DACPAC method outlined in this section. Otherwise, see the ["Import large collections"](#import-large-collections) section later in this article.  
@@ -374,16 +374,16 @@ Cleaning older, no-longer-relevant artifacts could remove a lot more space than 
 > [!IMPORTANT]
 > After you've deleted older data, it *can't* be recovered unless you restore an older backup of the collection.
 
-If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generate-a-dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
+If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC](#step-2-generate-a-dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
 
 Let's walk through how to accomplish this. At a high level, you'll:
 
-Step 1: [Set up a SQL Azure VM](#set-up-a-sql-azure-vm).  
-Step 2: [Optionally, we recommend that you restrict access to Azure DevOps Services IPs only](#restrict-access-to-azure-devops-services-ips-only).  
-Step 3: [Configure IP firewall exceptions](#configure-ip-firewall-exceptions).  
-Step 4: [Restore your database on the VM](#restore-your-database-on-the-vm).
-Step 5: [Configure your collection for import](#configure-your-collection-for-import).  
-Step 6: [Configure the import specification file to target the VM](#configure-the-import-specification-file-to-target-the-VM). 
+Step 1: [Set up a SQL Azure VM](#step-1-set-up-a-sql-azure-vm).  
+Step 2: [Optionally, we recommend that you restrict access to Azure DevOps Services IPs only](#step-2-restrict-access-to-azure-devops-services-ips-only).  
+Step 3: [Configure IP firewall exceptions](#step-3-configure-ip-firewall-exceptions).  
+Step 4: [Restore your database on the VM](#step-4-restore-your-database-on-the-vm).
+Step 5: [Configure your collection for import](#step-5-configure-your-collection-for-import).  
+Step 6: [Configure the import specification file to target the VM](#step-6-configure-the-import-specification-file-to-target-the-VM). 
 
 #### Step 1: Set up a SQL Azure VM
 
@@ -412,13 +412,13 @@ If you're using this import method, determine where to create your SQL Azure VM 
 Although Azure DevOps Services is available in multiple regions in the US, only the Central United States region accepts new organizations. Companies can't import their data into other US Azure regions at this time. 
 
 > [!NOTE] 
-> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#upload-the-dacpac). The preceding guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the ["Step 3: Upload the DACPAC file" section](#step-3-upload-the-dacpac-file). The preceding guidelines are for SQL Azure VMs only. 
 
 Here are a few more SQL Azure VM configurations that we recommend:
 
 - Use D Series VMs, because they're optimized for database operations.
 - Ensure that the D Series VMs have at least 28 gigabytes (GB) of RAM. For imports, we recommend Azure D12 V2 VM sizes.
-- [Configure the SQL temporary database](/sql/relational-databases/databases/move-system-databases#Examples) to use a drive other than drive C. Ideally the drive should have ample free space; at least equivalent to your database's [largest table](#generate-a-dacpac-file).
+- [Configure the SQL temporary database](/sql/relational-databases/databases/move-system-databases#Examples) to use a drive other than drive C. Ideally the drive should have ample free space; at least equivalent to your database's [largest table](#step-2-generate-a-dacpac-file).
 - If your source database is still over 1 terabyte (TB) after you've [reduced its size](/azure/devops/server/upgrade/clean-up-data), you need to [attach additional 1-TB disks](/azure/virtual-machines/windows/attach-disk-portal) and combine them into a single partition to restore your database on the VM. 
 - If your collection databases are over 1 TB in size, consider using an SSD for both the temporary database and collection database. Also, consider using larger VMs with 16 virtual CPUs (vCPUs) and 128 GB of RAM.
 - You need to have a public facing IP address for the service to reach this machine.
@@ -787,7 +787,7 @@ Rollback for the final production run is fairly simple. Before you queue the imp
 ### Queue an import
 
 > [!IMPORTANT] 
-> Before you proceed, ensure that your collection was [detached](migration-import.md#detach-your-collection) prior to generating a DACPAC file or uploading the collection database to a SQL Azure VM. If you don't complete this step, the import will fail. In the event that your import fails, see [Troubleshoot import and migration errors](migration-troubleshooting.md). 
+> Before you proceed, ensure that your collection was [detached](migration-import.md#step-1-detach-your-collection) prior to generating a DACPAC file or uploading the collection database to a SQL Azure VM. If you don't complete this step, the import will fail. In the event that your import fails, see [Troubleshoot import and migration errors](migration-troubleshooting.md). 
 
 You start an import by using the data migration tool's **import** command. The import command takes an import specification file as input. It parses the file to ensure that the provided values are valid and, if successful, it queues an import to Azure DevOps Services. The import command requires an internet connection, but does *not* require a connection to your Azure DevOps Server instance. 
 
