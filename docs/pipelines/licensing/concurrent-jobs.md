@@ -38,7 +38,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
-> We have temporarily disabled the free grant of parallel jobs for public and private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected.
+> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected.
 
 ## What is a parallel job? 
 
@@ -65,14 +65,11 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 # [Microsoft-hosted](#tab/ms-hosted)
 
-For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. 
+For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default.
 
-> [!NOTE]
-> The above grant of 10 free pipelines is only for open-source projects.
+For **private projects**, you can get one free job that can run for up to 60 minutes each time. When you create a new Azure DevOps organization that uses MSAs (Microsoft accounts) instead of AAD (Azure Active Directory) accounts, you are not given the free grant by default. 
 
-For **private projects**, you can get one free job that can run for up to 60 minutes each time.
-
-When you create a new Azure DevOps organization, you are not given the free grants for public or private projects by default. However, you can request the free grant by sending an email to azpipelines-freetier@microsoft.com and providing the following information:
+To request the free grant for public or private projects, send an email to azpipelines-freetier@microsoft.com and provide the following information:
 
 - Your name
 - The Azure DevOps organization for which you are seeking the free grant
