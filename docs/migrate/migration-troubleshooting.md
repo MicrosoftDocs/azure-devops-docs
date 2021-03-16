@@ -364,7 +364,7 @@ VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
 VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -385,7 +385,7 @@ VS403260: The database is not detached.
 VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and retry the import queue.  
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and retry the import queue.  
 
 **VS403261**
 
@@ -416,7 +416,7 @@ Your SQL sign in user account doesn't have the required database role.
 VS403263: The User ID {0} must be member of the database role {1}.
 ```
 
-Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) role. 
+Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#step-5-configure-your-collection-for-import) role. 
 
 > [!NOTE]   
 > There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Validate and import processes, Import large collections](migration-import.md#import-large-collections).
