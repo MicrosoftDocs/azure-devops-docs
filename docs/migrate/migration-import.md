@@ -378,14 +378,14 @@ If you're under the DACPAC threshold, follow the instructions to [generate a DAC
 
 Let's walk through how to accomplish this. At a high level, you'll:
 
-Step 1: [Set up a SQL Azure VM](#step-1-set-up-a-sql-azure-vm).  
-Step 2: [Optionally, we recommend that you restrict access to Azure DevOps Services IPs only](#step-2-restrict-access-to-azure-devops-services-ips-only).  
-Step 3: [Configure IP firewall exceptions](#step-3-configure-ip-firewall-exceptions).  
-Step 4: [Restore your database on the VM](#step-4-restore-your-database-on-the-vm).
-Step 5: [Configure your collection for import](#step-5-configure-your-collection-for-import).  
-Step 6: [Configure the import specification file to target the VM](#step-6-configure-the-import-specification-file-to-target-the-VM). 
+* [Set up a SQL Azure VM](#set-up-a-sql-azure-vm).  
+* [(Optional) Restrict access to Azure DevOps Services IPs only](#restrict-access-to-azure-devops-services-ips-only).  
+* [Configure IP firewall exceptions](#configure-ip-firewall-exceptions).  
+* [Restore your database on the VM](#restore-your-database-on-the-vm).  
+* [Configure your collection for import](#configure-your-collection-for-import).  
+* [Configure the import specification file to target the VM](#configure-the-import-specification-file-to-target-the-VM). 
 
-#### Step 1: Set up a SQL Azure VM
+#### Set up a SQL Azure VM
 
 You can set up a SQL Azure VM from the Azure portal with just a few clicks. To learn how, see [Use the Azure portal to provision a Windows virtual machine with SQL Server](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal). 
 
@@ -424,7 +424,7 @@ Here are a few more SQL Azure VM configurations that we recommend:
 - You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips"></a>
-#### Step 2: Restrict access to Azure DevOps Services IPs only 
+#### Restrict access to Azure DevOps Services IPs only 
 
 We highly recommend that you restrict access to your VM to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database depend on the region you're importing into. The following tables can help you identify the correct IPs. The only port that's required to be opened to connections is the standard SQL connection port 1433.
 
@@ -580,7 +580,7 @@ If you included preview features with your import, add an exception for the anal
 
 <br> 
 
-#### Step 3: Configure IP firewall exceptions
+#### Configure IP firewall exceptions
 
 Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started, go to your SQL Azure VM in the [Azure portal](https://ms.portal.azure.com). In **Settings**, select **Networking**. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1431. You can grant exceptions for the IPs by selecting **Add inbound port rule** in the networking settings. 
 
@@ -598,11 +598,11 @@ Depending on other inbound port rules that have been configured, you might need 
 
 Repeat adding inbound port rules until all necessary Azure DevOps Services IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
-#### Step 4: Restore your database on the VM
+#### Restore your database on the VM
 
 After you set up and configure an Azure VM, you need to take your detached backup from your Azure DevOps Server instance to your Azure VM. Azure has [several documented methods](/azure/azure-sql/virtual-machines/windows/migrate-to-vm-from-sql-server) for how to accomplish this task. The collection database needs to be restored on your SQL instance and doesn't require Azure DevOps Server to be installed on the VM. 
 
-#### Step 5: Configure your collection for import
+#### Configure your collection for import
 
 After your collection database has been restored on your Azure VM, configure a SQL login to allow Azure DevOps Services to connect to the database to import the data. This login allows only *read* access to a single database. 
 
@@ -636,7 +636,7 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 > [!NOTE] 
 > Be sure to enable [SQL Server and Windows authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM. If you don't enable authentication mode, the import will fail.  
 
-#### Step 6: Configure the import specification file to target the VM
+#### Configure the import specification file to target the VM
 
 Update the import specification file to include information about how to connect to the SQL Server instance. Open your import specification file and make the following updates:
 
