@@ -260,9 +260,8 @@ Not available for this action.
 
 ## Artifacts in release and deployment jobs
 
-Artifacts are only downloaded automatically in deployment jobs. In a regular build job, you need to explicitly use the `download` step keyword or [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
-
-To stop artifacts from being downloaded automatically, add a `download` step and set its value to none:
+Artifacts are only downloaded automatically in deployment jobs. The download artifact task will be auto injected only when using the `deploy` lifecycle hook in your deployment. To stop artifacts from being downloaded automatically, add a `download` step and set its value to none.
+In a regular build job, you need to explicitly use the `download` step keyword or the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task. See [lifecycle hooks](../process/deployment-jobs.md#descriptions-of-lifecycle-hooks) to learn more about the other types of hooks.
 
 ```yaml
 steps:
