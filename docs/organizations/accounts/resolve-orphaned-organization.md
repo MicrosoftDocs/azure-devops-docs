@@ -8,7 +8,7 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2020
+ms.date: 03/05/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -21,11 +21,11 @@ An organization is considered orphaned when the organization Owner and all Proje
 For organizations connected to Azure AD, if your organization Owner and all other Project Collection Administrators are inactive in Azure AD, you can transfer ownership to another user.
 
 > [!NOTE]   
-> If you want to change the organization owner and aren't under the banner of orphaned organization, then see [Change organization owner](change-organization-ownership.md). 
+> If you want to change the organization owner and aren't under the banner of an orphaned organization, then see [Change organization owner](change-organization-ownership.md). 
 
 ## Prerequisites
 
-- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. It is not a requirement to be a Project Collection Administrator.
+- You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. It isn't a requirement to be a Project Collection Administrator.
 - The Azure DevOps Administrator can only claim ownership of organizations where the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD.
 
 ### Find your Azure DevOps Administrator

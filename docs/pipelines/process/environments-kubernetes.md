@@ -4,7 +4,7 @@ description: Kubernetes resource views within Environment
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
-ms.date: 05/03/2019
+ms.date: 03/11/2021
 monikerRange: azure-devops
 ---
 
@@ -12,6 +12,8 @@ monikerRange: azure-devops
 [!INCLUDE [include](../includes/version-team-services.md)]
 
 Kubernetes resource view within environments provides a glimpse of the status of objects within the namespace mapped to the resource. It also overlays pipeline traceability on top of these objects so that one can trace back from a Kubernetes object to the pipeline and then back to the commit.
+
+To learn more about how resources work, see [resources in YAML](resources.md) and [security with resources](../security/resources.md).
 
 ## Overview
 

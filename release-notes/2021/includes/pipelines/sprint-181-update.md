@@ -55,6 +55,6 @@ jobs:
 ```
 ### Manual Validation for YAML pipelines
 
-With the newly released **Manual Validation** task you can pause a YAML pipeline mid-stage. This allows you to perform manual or offline activities and then resume (or reject) the run. This is especially useful in scenarios where you want to pause a pipeline and let a peer to validate configuration settings, build package, etc. before moving on to a long-running, compute-intensive job. <a href="https://aka.ms/manual-validation">Learn more</a>.  
+With the newly released **Manual Validation** task you can pause a YAML pipeline mid-stage. This allows you to perform manual or offline activities and then resume (or reject) the run. This is especially useful in scenarios where you want to pause a pipeline and let a peer to validate configuration settings, build package, etc. before moving on to a long-running, compute-intensive job. <a href="/azure/devops/pipelines/tasks/utility/manual-validation">Learn more</a>.  
 
 <br><img src="../../media/181-pipelines-0-0.png" alt="manual validation" width="500">

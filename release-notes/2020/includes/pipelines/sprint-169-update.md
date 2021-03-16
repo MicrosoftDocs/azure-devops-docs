@@ -10,15 +10,15 @@ ms.topic: include
 
 We’re excited to announce the general availability of the Azure Pipelines YAML CD features. We now offer a unified YAML experience so you can configure each of your pipelines to do CI, CD, or CI and CD together. YAML CD features introduces several new advanced features that are available for all organizations using multi-stage YAML pipelines. Some of the highlights include:
 
-- [Multi-stage YAML pipelines (for CI and CD)](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops)
-- [Approvals and checks on resources](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops)
-- [Environments](/azure/devops/pipelines/process/environments?view=azure-devops) and [deployment strategies](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#deployment-strategies)
-- [Kubernetes](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops) and [Virtual Machine](/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops) resources in environment
-- [Review apps for collaboration](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops#setup-review-app)
-- [Refreshed UX for service connections](/azure/devops/pipelines/library/service-endpoints?tabs=yaml&view=azure-devops)
-- [Resources in YAML pipelines](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops)
+- [Multi-stage YAML pipelines (for CI and CD)](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops&preserve-view=true) 
+- [Approvals and checks on resources](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true)
+- [Environments](/azure/devops/pipelines/process/environments?view=azure-devops&preserve-view=true) and [deployment strategies](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#deployment-strategies)
+- [Kubernetes](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops&preserve-view=true) and [Virtual Machine](/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops&preserve-view=true) resources in environment
+- [Review apps for collaboration](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops&preserve-view=true#setup-review-app)
+- [Refreshed UX for service connections](/azure/devops/pipelines/library/service-endpoints?tabs=yaml&view=azure-devops&preserve-view=true) 
+- [Resources in YAML pipelines](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops&preserve-view=true)
 
-If you’re ready to start building, check out the [documentation](/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema&view=azure-devops)&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd)&nbsp;for building multi-stage CI/CD pipelines.
+If you’re ready to start building, check out the [documentation](/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema&view=azure-devops&preserve-view=true)&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd)&nbsp;for building multi-stage CI/CD pipelines.
 
 ### Service connections new UI as default experience
 
@@ -58,6 +58,6 @@ Learn more about service connections sharing [here](/azure/devops/pipelines/libr
 
 ### Pipeline resource version picker in the create run dialogue
 
-In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
+In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops&preserve-view=true#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
 
 ![Pipeline resource version picker.](../../media/169-pipelines-2-0.png)

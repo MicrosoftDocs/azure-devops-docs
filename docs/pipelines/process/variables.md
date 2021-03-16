@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 10/23/2020
+ms.date: 03/11/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -16,6 +16,8 @@ monikerRange: '>= tfs-2015'
 Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
+
+You can use variables with [expressions](expressions.md) to conditionally assign values and further customize pipelines. 
 
 ::: moniker range=">=azure-devops-2020"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
@@ -541,6 +543,8 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
 #### [YAML](#tab/yaml/)
 
@@ -951,12 +955,15 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
-If a variable appears in the `variables` block of a YAML file, it's fixed and can't be overridden at queue time.
+If a variable appears in the `variables` block of a YAML file, its value is fixed and can't be overridden at queue time. Best practice is to define your variables in a YAML file but there are times when this doesn't make sense. For example, you may want to define a secret variable and not have the variable exposed in your YAML. Or, you may need to manually set a variable value during the pipeline run.
 
-To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job. 
+You have two options for defining queue-time values. You can define a variable in the UI and select the option to **Let users override this value when running this pipeline** or you can use [runtime parameters](runtime-parameters.md) instead. If your variable is not a secret, the best practice is to use [runtime parameters](runtime-parameters.md).
 
-You can also set a default value in the editor, and that value can be overridden by the person queuing the pipeline. To do this, select the variable in the **Variables** tab of the pipeline, and check **Let users override this value when running this pipeline**.
+To set a variable at queue time, add a new variable within your pipeline and select the override option. 
+
+:::image type="content" source="media/set-queue-time-variable.png" alt-text="Set a variable at queue time.":::
+
+To allow a variable to be set at queue time, make sure the variable doesn't also appear in the `variables` block of a pipeline or job. If you define a variable in both the variables block of a YAML and in the UI, the value in the YAML will have priority. 
 
 
 ::: moniker-end
@@ -966,7 +973,9 @@ YAML is not supported in TFS.
 
 #### [Classic](#tab/classic/)
 You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
-To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
+To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at release time**.
+
+:::image type="content" source="media/checks/classic-settable-at-release.png" alt-text="Set variable during the release.":::
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

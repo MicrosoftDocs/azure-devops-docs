@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Improvement to the Query Results widget
 
-The [query results widget](/azure/devops/report/dashboards/widget-catalog?view=azure-devops#query-results-widget) is one of our most popular widgets, and for good reason. The widget displays the results of a query directly on your dashboard and is useful in many situations.
+The [query results widget](/azure/devops/report/dashboards/widget-catalog?view=azure-devops&preserve-view=true#query-results-widget) is one of our most popular widgets, and for good reason. The widget displays the results of a query directly on your dashboard and is useful in many situations.
 
 With this update we included many long-awaited improvements:
 

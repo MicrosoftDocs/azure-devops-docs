@@ -14,6 +14,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
+> [!NOTE]
+> If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
+
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018 and higher. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
