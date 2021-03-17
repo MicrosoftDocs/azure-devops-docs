@@ -74,14 +74,14 @@ The following code snippets are written for a Windows machine using the PowerShe
         --sdk-auth
     ```
 
-    If you do not have cloud operator privileges, you can also sign in with the SPN provided to you by your cloud operator. You will need the client ID, the secret, and your tenant ID. With these values, you can use the following Azure CLI commands to create the JSON object you can add to your GitHub repository as a secret.
+    If you do not have cloud operator privileges, you can also sign in with the SPN provided to you by your cloud operator. You will need the client ID, the secret, and your tenant ID. With these values, you can use the following Azure CLI commands to create the JSON object that contains the values you will need to create your service connection.
 
     ```azurecli  
     az login --service-principal -u "<client-id>" -p "<secret>" --tenant "<tenant-ID>" --allow-no-subscriptions
     az account show --sdk-auth
     ```
 
-6. Check the resulting JSON object. You will use the JSON object to create your secret in your GitHub repository that contains your action. The JSON object should have the following attributes:
+6. Check the resulting JSON object. You will use the JSON object to create your service connection. The JSON object should have the following attributes:
 
     ```json
     {
@@ -171,8 +171,8 @@ Create a service connection. You will need the values from your SPN and the name
         package: '$(System.DefaultWorkingDirectory)'
     ```
     
-    > [!NOTE]  
-    > To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
+> [!NOTE]  
+> To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
 
 10. Update the `azureSubscription` value with the name of your service connection.
 11. Update the `appName` with your app name. You are now ready to deploy.
