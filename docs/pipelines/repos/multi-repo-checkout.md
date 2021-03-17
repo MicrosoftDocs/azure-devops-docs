@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 01/13/2021
+ms.date: 03/17/2021
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -17,6 +17,9 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
 Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md) (`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
+
+> [!IMPORTANT]
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
 
 The following combinations of `checkout` steps are supported.
 
