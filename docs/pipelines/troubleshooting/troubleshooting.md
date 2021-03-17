@@ -162,7 +162,7 @@ If you are currently running other pipelines, you may not have any remaining par
 
 ### Unable to access Azure Key Vault behind firewall from Azure DevOps.
 
-If you are unable to access Azure Key Vault from your pipeline, the firewall may be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allow listed. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md?view=azure-devops&tabs=yaml#networking).
+If you are unable to access Azure Key Vault from your pipeline, the firewall may be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allow listed. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md#networking).
 
 ### You don't have enough concurrency
  
