@@ -18,8 +18,11 @@ ms.date: 02/11/2021
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. As shown in the following image, your backlog consists of a flat list of work items. 
 
+> [!NOTE]   
+> The following image illustrates the product backlog image for a Scrum process for Azure DevOps Services. For the Agile, Basic, and CMMI process models, the **Backlog items** selection appears as **Stories**, **Issues**, and **Requirements**. 
+
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of a Backlog of product backlog items.](media/create-backlog/intro-image.png)
+> ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
 
 After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you're able to [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
