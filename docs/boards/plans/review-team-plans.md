@@ -25,11 +25,11 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. This new version of Delivery Plans provides support for the following tasks: 
-> - Epics can be added to a delivery plan 
-> - Work item cards can span iteration boundaries 
+> A new version of Delivery Plans is available in public preview for Azure Boards. This tool is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. This new version of Delivery Plans supports the following tasks: 
+> - Custom portfolio backlogs as well as Epics can be added to a delivery plan  
+> - Work item cards can span iteration boundaries  
 > - Drag and drop borders show when a work item starts and ends 
-> - You can add backlog items to a team from a plan
+> - You can add backlog items to a team from a plan  
 > - You can view work item dependencies 
 > - Stakeholders can view plans
 > - Plans can support configuration of up to 15 teams 
@@ -161,7 +161,7 @@ Note the following:
 - If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
 ::: moniker-end  
 
-::: moniker range="azure-devops"  
+::: moniker range="< azure-devops"  
 
 - Use a consistent sprint schedule across your project teams and organization. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
 - Minimize the number of fields you choose to display on your cards.  
