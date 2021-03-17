@@ -185,7 +185,7 @@ There is a limit to the number of Azure Subscriptions we list in the various Azu
 
 1. Create a new, native AAD user in the Azure AD of the Azure Subcription. 
 
-1. Set up that AAD user so it has the proper permissions in the Azure Subcription to set up Azure DevOps billing or service connection. [Refer](https://docs.microsoft.com/azure/devops/organizations/billing/add-backup-billing-managers?view=azure-devops or https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
+1. Set up that AAD user so it has the proper permissions in the Azure Subcription to set up Azure DevOps billing or service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
  
 1. Add the AAD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing) or ensure the user has enough rights in the Team Project to create service connections.
 
