@@ -55,6 +55,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
 * [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
 
 <a name="privileges"></a>
@@ -218,6 +219,12 @@ To resolve this issue:
 1. Click **Verify**.
 
 1. Save the service connection.
+
+<a name="cant-create-service-connection-manually"></a>
+
+### Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell
+
+To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
 
 ### Azure subscription not taken directly from previous task output
 
