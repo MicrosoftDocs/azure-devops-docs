@@ -131,7 +131,7 @@ Create a service connection. You will need the values from your SPN and the name
 
 1. Select **Azure Stack** for **Environment**.
 1. Add the value for `managementEndpointUrl` for the **Server URL**.
-1.: Select **Subscription** for **Scope Level**.
+1. Select **Subscription** for **Scope Level**.
 1. Add `subscriptionId` and type the name.
 1. Add the name of your subscription for **Subscription Name**.
 1. Add `clientId` for **Service Principal Id**.
@@ -152,7 +152,7 @@ Create a service connection. You will need the values from your SPN and the name
 7. Select **Starter pipeline**.
 8. Navigate back to the repo and open the `azure-pipelines.yml`.
 9. Add the following yaml:
-    ```yml  
+    ```yaml  
     # Starter pipeline
     # Start with a minimal pipeline that you can customize to build and deploy your code.
     # Add steps that build, run tests, deploy, and more:
@@ -171,8 +171,8 @@ Create a service connection. You will need the values from your SPN and the name
         package: '$(System.DefaultWorkingDirectory)'
     ```
     
-> [!NOTE]  
-> To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
+   > [!NOTE]  
+   > To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
 
 10. Update the `azureSubscription` value with the name of your service connection.
 11. Update the `appName` with your app name. You are now ready to deploy.
