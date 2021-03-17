@@ -180,6 +180,8 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+:::moniker range=">azure-devops-2020"
+
 ## Triggers
 
 You can trigger a pipeline when an update is pushed to the `self` repository or to any of the repositories declared as resources. This is useful, for instance, in the following scenarios:
@@ -271,6 +273,8 @@ The following table shows which versions are checked out for each repository by 
 | `release` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `release` that triggered the pipeline |
 
 You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
+
+:::moniker-end
 
 ## Repository details
 
