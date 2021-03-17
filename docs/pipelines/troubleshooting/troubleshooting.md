@@ -532,11 +532,11 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
-### Libraries are not getting installed for the python application while executing a script 
+### Libraries aren't installed for Python application when script executes 
 
-In certain cases, while deploying a python application, a CI/CD pipeline runs and the code is deployed successfully, but the file **requirements.txt**, which is responsible for installing all the depending libraries, is sometimes not executed. 
+When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
 
-To install these dependencies, the post deployment script should be used in App Service deployment task. The following example shows the command that must be used in the post deployment script, and can be updated appropriately for your scenario.
+To install the dependencies, use a post-deployment script in the App Service deployment task. The following example shows the command you must use in the post-deployment script. You can update the script for your scenario.
 
 ```
 D:\home\python364x64\python.exe -m pip install -r requirements.txt
