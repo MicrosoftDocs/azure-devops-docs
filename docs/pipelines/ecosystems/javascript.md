@@ -983,5 +983,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:master
+      git push -u origin HEAD:main
 ```
