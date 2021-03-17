@@ -20,7 +20,7 @@ summary: |
   Find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions.  
 
 sections:
-  - name: FAQs
+  - name: General
      
     questions: 
 
@@ -54,7 +54,6 @@ sections:
           - You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
           - If you get an "already installed or requested" error check with your Project Collection Administrator, and ask them to assign the extension to you.  
 
-
       - question: Why can't users access extension features?
         answer: |
           Users may be unable to access an extension for one of the following reasons:  
@@ -72,14 +71,15 @@ sections:
 
           Learn more about [assigning extensions to users](../marketplace/install-extension.md).
 
-      - question: How do I get other help or support for Azure subscriptions and billing?
-        answer: |
-          Check these [articles about Azure billing and subscriptions](https://docs.microsoft.com/search/?terms=billing&scope=%22Azure%20DevOps%22), the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/pricing/faq/), or try [Azure Support](https://azure.microsoft.com/support/options/).
+
 
       - question: What happened to my preview extension?
         answer: |
           Your extension imay have been moved out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period may be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
 
+  - name: Install extension on-premises
+
+    questions: 
       - question: Why can't I install extensions for Azure DevOps Server?  (on-premises)
         answer: |
           You can't install extensions for Azure DevOps Server for one of the following reasons:
@@ -110,6 +110,13 @@ sections:
       - question: Why can't I upload extensions to Azure DevOps Server? (on-premises)
         answer: |
           You must be a member of the [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) for the Azure DevOps Server where you want to upload extensions.
+
+  - name: Marketplace support
+
+    questions: 
+      - question: How do I get support for Azure subscriptions and billing?
+        answer: |
+          See these [articles about Azure billing and subscriptions](https://docs.microsoft.com/search/?terms=billing&scope=%22Azure%20DevOps%22), the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/pricing/faq/), or try [Azure Support](https://azure.microsoft.com/support/options/).
 
       - question: How do I get support for the  Azure DevOps Marketplace?
         answer: |
