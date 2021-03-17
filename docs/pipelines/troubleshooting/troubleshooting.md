@@ -557,6 +557,9 @@ D:\home\python364x64\python.exe -m pip install -r requirements.txt
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
+### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
+
+In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 
