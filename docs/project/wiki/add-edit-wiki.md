@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 08/26/2020 
+ms.date: 02/05/2021
 ---
 
 # Add and edit wiki pages
@@ -34,7 +34,7 @@ While you author pages using [Markdown format](./markdown-guidance.md), you can 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
 
-As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
@@ -67,6 +67,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 * You must have a provisioned wiki. If your wiki hasn't yet been created, [create it now](wiki-create-repo.md).
 * You must be a member of the team project as a contributor to add or update wiki pages.
+* You must have Basic access level to edit the project wiki.
 
 <a id="open-wiki">  </a>
 
@@ -111,7 +112,7 @@ az devops wiki page create --path
 - **--wiki**: Required. Name or ID of the wiki.
 -  **--comment**: Optional. Comment in the commit message of file add operation. Default value: Added a new page using Azure DevOps CLI.
 -  **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified. 
--  **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
+-  **--encoding**: Optional. Encoding of the file. Used with --file-path parameter.
 accepted values: ascii, utf-16be, utf-16le, utf-8
 -  **--file-path**: Optional. Path of the file input if content is specified in the file.    
 -  **--project -p**: Required if not configured as default or picked up via git config. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. 

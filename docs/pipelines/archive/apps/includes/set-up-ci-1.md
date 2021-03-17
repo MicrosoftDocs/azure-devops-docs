@@ -9,8 +9,10 @@ ms.date: 02/19/2020
 
 ## Set up continuous integration
 
-On the **Files** tab of the **Code** hub, click **Set up build**.
+Under the **Build and Release** menu, select **Builds** then **New** to create a new build definition.
 
-![Screenshot showing button to set up build for a repository](../../../apps/media/set-up-first-build-from-code-hub.png)
+:::image type="content" source="../../../apps/media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
 
-You are taken to Azure Pipelines and asked to **Choose a template**.
+Select a source and chose your team project, repository, and default branch then select **Continue**.
+
+**Select a template** or start with an **Empty process** to create your build pipeline.

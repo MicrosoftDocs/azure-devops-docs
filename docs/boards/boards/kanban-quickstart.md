@@ -7,8 +7,8 @@ ms.topic: quickstart
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 09/10/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/11/2021
 ---
 
 # Start using your Kanban board
@@ -120,6 +120,38 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"
+
+### Filter your board using keywords, field values, or tags
+
+You can apply filters interactively to focus on a subset of work. For example, you can filter the board to focus on work assigned to at team member for a specific sprint. To start filtering, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. . To learn more about applying filters, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+![Enable kanban field-based filtering, earlier versions](../backlogs/media/filter-boards/filter-kb-choose-filter.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+For example, here we filter for all items assigned to Jamal and Raisa.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter on assignment field](../backlogs/media/filter-boards/filter-kb-filters-chosen-services.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+![Kanban board, Filter on assignment field, earlier versions](../backlogs/media/filter-boards/filter-kb-filters-chosen.png)
+::: moniker-end
+
+
+
+
 ## Invite others to work on your Kanban board 
 
 All members of a project can view and contribute to your Kanban board. To invite users to contribute, copy the URL of your Kanban board and email it to people you want to invite to your project.
@@ -157,6 +189,7 @@ To get the full power of the Kanban board, configure it to map the flow of work 
 
 ## Related articles
 
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Kanban key concepts](kanban-key-concepts.md)
 - [Kanban best practices](best-practices-kanban.md)
 - [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)

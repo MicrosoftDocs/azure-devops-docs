@@ -156,7 +156,7 @@ The user making the UserType change must have the following items:
    ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
-5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
+5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) page.
 
    ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
@@ -417,13 +417,13 @@ Select the bolded text to see which users are affected.
 
 ![Show disconnected users](media/shared/show-disconnected-users.png)
 
-### Q: What if I have over 200 users and want to connect to Azure AD?
+### Q: What if I have over 100 users and want to connect to Azure AD?
 
-A: With more than 200 users, you can still connect, however you may need to [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html) for help with disconnected users.
+A: With more than 100 users, you can still connect, however you may need to [contact Support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
 
-### Q: With more than 200 members in my Azure DevOps organization, how can I connect to an Azure AD?
+### Q: With more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
-A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 200. [Contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
+A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 100. [Contact Support](https://azure.microsoft.com/support/devops/).
 
 ### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
 

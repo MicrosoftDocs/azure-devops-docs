@@ -41,7 +41,7 @@ steps:
 
 We have also updated the Download Pipeline Artifact to let you download artifacts that have been published with the traditional Publish Build Artifacts task. Now you don't need to know how an artifact was published when you are going to consume it in your pipeline.
 
-To learn more about these changes, see the pipeline artifacts in Azure Pipeline documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops).
+To learn more about these changes, see the pipeline artifacts in Azure Pipeline documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops&preserve-view=true) .
 
 ### Use cron syntax to specify schedules in a YAML file
 
