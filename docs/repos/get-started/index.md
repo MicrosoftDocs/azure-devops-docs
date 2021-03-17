@@ -11,9 +11,9 @@ monikerRange: '>= tfs-2013'
 
 # Start using Azure Repos
 
-Use this guide to sign up and start using Azure Repos. If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md).
+Use this guide to sign up and start using Azure Repos. If you're new to Azure Repos, see [What is Azure Repos?](what-is-repos.md)
 
-Azure DevOps Services includes free unlimited private Git repos, so Azure Repos is easy to try out. Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning that your local copy of code is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
+Azure Repos includes free unlimited private Git repos, so Azure Repos is easy to try out. Git is the most commonly used version control system today and is quickly becoming the standard for version control. Git is a distributed version control system, meaning that your local copy of code is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. You commit your work locally, and then sync your copy of the repository with the copy on the server.
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
@@ -24,5 +24,5 @@ After you sign up, learn how to [code with Git](code-with-git.md). Whether your 
 Other resources to get you up and running:
 
 - [Web portal navigation](../../project/navigation/index.md)
-- [Security & identity](../../organizations/security/about-security-identity.md)
+- [Get started with permissions, access, and security groups](../../organizations/security/about-permissions.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
