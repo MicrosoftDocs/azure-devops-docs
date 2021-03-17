@@ -1217,7 +1217,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <a name="version-control"></a>
 
-### What kinds of version control can I use
+### What kinds of version control can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -1464,3 +1464,12 @@ To learn more about build pipeline settings, see:
 <!-- ENDSECTION -->
 
 ::: moniker-end
+
+### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
+
+Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/ext/azure-devops/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
+
+
+::: moniker-end
+
+::: moniker range="azure-devops"
