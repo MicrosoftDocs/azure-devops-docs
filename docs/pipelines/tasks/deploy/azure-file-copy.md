@@ -159,6 +159,10 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
+#### How do I use the Azure file copy task to copy a file to an Azure virtual machine that doesn't have a public IP address?
+
+Make sure that you're using version 4 of the Azure file copy task. If the task fails, you can add a build step to execute the command `azcopy cp "source-file-path" "destination-file-path"` to substitute the source and destination values.
+
 #### Forbidden error: 'AzCopy.exe exited with non-zero exit code while uploading files to blob storage' while using Azure File Copy task
 
 The hosted agents are assigned randomly every time a build is triggered and hence the [agent IP addresses](../../agents/hosted.md#agent-ip-ranges) will be different on every run. If these IP addresses are not in your allowed list of IPs, the communication between Azure DevOps and the storage account fails. In such scenarios, follow the below steps outlined:

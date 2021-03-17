@@ -431,13 +431,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 
 ## Security namespaces and their IDs
 
-The following table lists valid namespaces and provides descriptions and links to more information.  
-
-> [!NOTE]   
-> Some permissions don't appear in any user interface. These permissions are assigned to security roles, members of a security group, or internal resources. 
-
-
-
+See [Security namespace and permission reference for Azure DevOps](namespace-reference.md). 
  
 ## Related articles
 

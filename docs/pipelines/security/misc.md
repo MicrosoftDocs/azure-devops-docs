@@ -2,7 +2,7 @@
 title: Other security considerations
 description: Additional tips for securing your pipelines.
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 09/25/2020
 monikerRange: '> azure-devops-2019'
 ---

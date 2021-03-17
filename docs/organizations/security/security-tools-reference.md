@@ -72,10 +72,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |   ✔️  |     |  
 | [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |   ✔️  |  ✔️ |  
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |   ✔️  |  ✔️ |  
-| [Builds, Task groups](../../pipelines/policies/permissions.md#pipeline-permissions)  |   ✔️  |   ✔️  |     |  
+| [Builds, Task groups](../../pipelines/policies/permissions.md#set-pipeline-permissions)  |   ✔️  |   ✔️  |     |  
 | [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |   ✔️  |     |  
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️  |     |  
-| [Releases](../../pipelines/policies/permissions.md#release-permissions)              |   ✔️  |   ✔️  |     | 
+| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)              |   ✔️  |   ✔️  |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |   ✔️  |     |  
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path)  |   ✔️  |   ✔️  |     |  
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)           |   ✔️  |   ✔️  |      | 
@@ -96,10 +96,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |  ✔️  |   ✔️   |  ✔️ | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |  ✔️ |   ✔️   |  ✔️ | 
-| [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)               |   ✔️  |  ✔️  |   ✔️   |     | 
+| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)               |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️ |  ✔️   |     | 
-| [Releases](../../pipelines/policies/permissions.md#release-permissions)              |   ✔️  |  ✔️ |   ✔️   |     | 
+| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)              |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path)       |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path)  |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)           |   ✔️  |  ✔️ |    ✔️  |     | 
@@ -123,10 +123,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
-| [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
+| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
-| [Releases](../../pipelines/policies/permissions.md#release-permissions)             |   ✔️  |  ✔️ |     | 
+| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 | [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)          |   ✔️  |  ✔️ |     | 
@@ -148,10 +148,10 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
-| [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
+| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
-| [Releases](../../pipelines/policies/permissions.md#release-permissions)             |   ✔️  |  ✔️ |     | 
+| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 | [Area path (CSS)](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)          |   ✔️  |  ✔️ |     | 
@@ -172,7 +172,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
-| [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
+| [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Git repository](git-permissions-before-2017.md)                                    |   ✔️  |  ✔️ |  ✔️ | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️ | 
@@ -181,7 +181,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
 | [Notifications or alerts](permissions.md#alerts)                                    |       |  ✔️ |     | 
-| [Releases](../../pipelines/policies/permissions.md#release-permissions)             |   ✔️  |  ✔️ |     | 
+| [Releases](../../pipelines/policies/permissions.md#set-release-permissions)             |   ✔️  |  ✔️ |     | 
 
 In addition, Lab Management permissions can be managed through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
    
