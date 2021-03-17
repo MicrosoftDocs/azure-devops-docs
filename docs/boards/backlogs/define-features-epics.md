@@ -19,6 +19,7 @@ ms.date: 03/15/2021
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
 Perhaps you like to start with a big picture and break it down into smaller deliverables. Or, you've got an existing backlog and now need to organize it.   
+
 The following image shows a Features portfolio backlog that consists of a flat list of Feature work items. 
 
 > [!div class="mx-imgBorder"]  
