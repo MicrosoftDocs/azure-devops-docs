@@ -18,6 +18,7 @@ Repositories can be specified as a [repository resource](../yaml-schema.md#repos
 
 The following repository types are supported.
 
+---
 :::row:::
     :::column:::
         [Azure Repos Git](azure-repos-git.md) (`git`)
@@ -33,7 +34,7 @@ The following repository types are supported.
         [GitHub](github.md) (`github`)
     :::column-end:::
     :::column:::
-        Azure DevOps Services
+        * Azure DevOps Services
     :::column-end:::
 :::row-end:::
 ---
@@ -42,7 +43,7 @@ The following repository types are supported.
         [GitHubEnterprise](github-enterprise.md) (`githubenterprise`)
     :::column-end:::
     :::column:::
-        Azure DevOps Services
+        * Azure DevOps Services
     :::column-end:::
 :::row-end:::
 ---
@@ -51,7 +52,7 @@ The following repository types are supported.
         [Bitbucket Cloud](bitbucket.md) (`bitbucket`)
     :::column-end:::
     :::column:::
-        Azure DevOps Services
+        * Azure DevOps Services
     :::column-end:::
 :::row-end:::
 
@@ -60,6 +61,7 @@ The following repository types are supported.
 
 The following combinations of `checkout` steps are supported.
 
+---
 :::row:::
     :::column:::
         No `checkout` steps
