@@ -27,9 +27,11 @@
   - name: Recover organization
     href: recover-your-organization.md
   - name: Restrict organization creation
-    href: azure-ad-tenant-policy-restrict-org-creation.md
+    href: azure-ad-tenant-policy-restrict-org-creation.md?
   - name: Resolve orphaned organization
     href: resolve-orphaned-organization.md
+- name: Services status
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: FAQs
   items:
   - name: Create and configure an organization
