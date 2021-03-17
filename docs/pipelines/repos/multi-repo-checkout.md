@@ -16,18 +16,18 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-### Supported repository types
+The following repository types are supported.
 
 :::row:::
     :::column:::
         [Azure Repos Git](azure-repos-git.md) (`git`)
     :::column-end:::
     :::column:::
-        Azure DevOps Server 2020 (limited to repositories in the same organization)
-        Azure DevOps Services
+        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Services
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         [GitHub](github.md) (`github`)
@@ -36,7 +36,7 @@ Repositories can be specified as a [repository resource](../yaml-schema.md#repos
         Azure DevOps Services
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         [GitHubEnterprise](github-enterprise.md) (`githubenterprise`)
@@ -45,7 +45,7 @@ Repositories can be specified as a [repository resource](../yaml-schema.md#repos
         Azure DevOps Services
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         [Bitbucket Cloud](bitbucket.md) (`bitbucket`)
