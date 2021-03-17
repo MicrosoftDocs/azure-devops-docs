@@ -82,7 +82,7 @@ param
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
 $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $agentIP
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -129,7 +129,7 @@ param
   [String] [Parameter(Mandatory = $true)] $ResourceGroup,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
-Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
+Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
 ```
 
 ### Classic
