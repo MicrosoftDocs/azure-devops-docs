@@ -4,6 +4,8 @@
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Create your organization 
   href: create-organization.md 
+- name: Look up organization owner
+  href:  ../security/lookup-organization-owner-admin.md
 - name: Add and manage banners 
   href:  ../settings/manage-banners.md
 - name: Adjust organization settings
