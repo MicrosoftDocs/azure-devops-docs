@@ -60,8 +60,10 @@ We recommend this simple approach if:
 
 > [!NOTE]
 > 
-> By following this approach, Azure DevOps will **connect with Azure Active Directory and create an App Registration with a secret with two years of validity**. Once the service connection is nearing the reach of two years, the Azure AAD will show a prompt such that **A certificate or secret is expiring soon. Create a new one**. In such cases, the Service Connection will have to be refreshed.
-> To refresh a service connection, edit the connection from the Azure DevOps portal and select **Verify**. Once it is saved, the service connection will again be valid for two years.  
+> When you follow this approach, Azure DevOps *connects with Azure Active Directory (Azure AD) and creates an app registration with a secret that's valid for two years*. When the service connection is close to two years old, Azure AD displays this prompt: **A certificate or secret is expiring soon. Create a new one**. In this scenario, you must refresh the service connection.
+>
+> To refresh a service connection, in the Azure DevOps portal, edit the connection and select **Verify**. After you save the edit, the service connection is valid for another two years.
+> 
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
