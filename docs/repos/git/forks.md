@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
  
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests-overview.md) to push the changes back to the original repository.
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests.md) to push the changes back to the original repository.
 
 
 ## What's in a fork
@@ -154,6 +154,8 @@ When you've gotten your PR accepted into upstream, you'll want to make sure your
 We recommend rebasing on `upstream`'s `main` branch (assuming `main` is the main development branch).
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 

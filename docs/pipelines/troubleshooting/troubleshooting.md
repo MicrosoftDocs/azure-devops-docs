@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 07/20/2020
+ms.date: 02/12/2021
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -98,7 +98,17 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 
 ### UI settings override YAML scheduled triggers
 
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. 
+
+To access the pipeline settings UI from a YAML pipeline, edit your pipeline, choose **...** and then **Triggers**.
+
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+Remove all scheduled triggers. 
+
+:::image type="content" source="../process/media/triggers/delete-ui-scheduled-trigger.png" alt-text="Delete scheduled triggers in the Pipeline settings UI.":::
+
+Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
@@ -531,6 +541,17 @@ On stdout, the agent will see two lines:
 When the agent sees the first line, `MY_VAR` will be set to the correct value, "my_value".
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
+
+### Libraries aren't installed for Python application when script executes 
+
+When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
+
+To install the dependencies, use a post-deployment script in the App Service deployment task. The following example shows the command you must use in the post-deployment script. You can update the script for your scenario.
+
+```
+D:\home\python364x64\python.exe -m pip install -r requirements.txt
+```
+
 
 ### Service Connection related issues
 

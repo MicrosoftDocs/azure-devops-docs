@@ -6,7 +6,7 @@ ms.topic: include
 
 We've been working on an updated user experience to manage your pipelines. These updates make the pipelines experience modern and consistent with the direction of Azure DevOps. Moreover, these updates bring together classic build pipelines and multi-stage YAML pipelines into a single experience. For example, the following capabilities are included in the new experience; viewing and managing multiple stages, approving pipeline runs, ability to scroll all the way back in logs while a pipeline is still in progress, and per-branch health of a pipeline.
 
-Thank you to all who have tried the new experience. If you haven't tried it, enable **Multi-stage pipelines** in the preview features. To learn more about multi-stage pipelines, see the documentation [here](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops).
+Thank you to all who have tried the new experience. If you haven't tried it, enable **Multi-stage pipelines** in the preview features. To learn more about multi-stage pipelines, see the documentation [here](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops&preserve-view=true) .
 
 > [!div class="mx-imgBorder"]
 > ![Multi-stage pipelines UX.](../../media/160_07.png)
@@ -189,7 +189,7 @@ You can now define a set of policies and add the policy evaluation as a check on
 
 ### Markdown support in automated test error messages
 
-We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
+We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Markdown support in automated test error messages.](../../media/160_03.png)

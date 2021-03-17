@@ -81,6 +81,6 @@ Saved queries have a higher chance of performing better due to internal optimiza
 - [Service limits and rate limits](../../user-guide/service-limits.md) 
 - [Create managed queries](using-queries.md)
 - [Query fields, operators & macros](query-operators-variables.md)
-- [WIQL syntax](wiql-syntax.md)
+- [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
 - [az boards query command](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query)

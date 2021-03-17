@@ -245,7 +245,7 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
 
-## Manage test artifacts
+## Manage test plans and test suites
 
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
@@ -276,7 +276,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 

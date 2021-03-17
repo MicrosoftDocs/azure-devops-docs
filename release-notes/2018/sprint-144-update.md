@@ -185,7 +185,7 @@ When a deployment to a stage fails, **Azure Pipelines** can now automatically re
 
 ### PyPI public preview
 
-Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](/azure/devops/artifacts/quickstarts/python-packages?tabs=new-nav&view=azure-devops).
+Azure Artifacts can now host Python packages. This includes packages that you produce and upstream packages saved from the public PyPI. For more details, see the [announcement blog post](https://azure.microsoft.com/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/) and the [documentation](/azure/devops/artifacts/quickstarts/python-packages?tabs=new-nav&view=azure-devops&preserve-view=true).
 
 Now, you can host all of your NuGet, npm, Maven, Python, and Universal packages in the same feed.
 
@@ -201,13 +201,13 @@ We added a new Azure DevOps Service Status Portal that will provide a better exp
 > [!div class="mx-imgBorder"]
 > ![Service health portal.](media/144_07.png)
 
-For more details, see the [announcement blog post](https://blogs.msdn.microsoft.com/vsoservice/?p=17995) and the [documentation](/azure/devops/articles/service-status-info?view=azure-devops).
+For more details, see the [announcement blog post](https://blogs.msdn.microsoft.com/vsoservice/?p=17995) and the [documentation](/azure/devops/articles/service-status-info?view=azure-devops&preserve-view=true).
 
 ## Wiki
 
 ### Markdown templates for formulas and videos
 
-There is no longer a need to remember markdown syntax for adding [formulas](/azure/devops/project/wiki/markdown-guidance?view=azure-devops#mathematical-notation-and-characters), [videos](/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops#embed-videos-in-a-wiki-page) and [YAML tags](./aug-03-vsts.md#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
+There is no longer a need to remember markdown syntax for adding [formulas](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true#mathematical-notation-and-characters), [videos](/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops&preserve-view=true#embed-videos-in-a-wiki-page) and [YAML tags](./aug-03-vsts.md#wiki) when editing a Wiki. You can now click on the context menu in the toolbar and select the option of your choice.
 
 > [!div class="mx-imgBorder"]
 > ![Markdown templates for formulas and videos.](media/144_04.png)
@@ -216,7 +216,7 @@ There is no longer a need to remember markdown syntax for adding [formulas](/azu
 
 ### Restore deleted projects
 
-With this release we added the ability to restore deleted projects. As of today, users with the delete project permission can restore deleted projects via our REST APIs. To do this, create an update project request with **{ "state" : "wellFormed" }**. In a future release, we will be adding a UI that can be accessed from the organization overview page. For more information on the REST API see the documentation [here](/rest/api/azure/devops/core/projects/update?view=azure-devops-rest-5.1).  
+With this release we added the ability to restore deleted projects. As of today, users with the delete project permission can restore deleted projects via our REST APIs. To do this, create an update project request with **{ "state" : "wellFormed" }**. In a future release, we will be adding a UI that can be accessed from the organization overview page. For more information on the REST API see the documentation [here](/rest/api/azure/devops/core/projects/update?view=azure-devops-rest-5.1&preserve-view=true).  
 
 To get a list of deleted projects use the following request
 ```

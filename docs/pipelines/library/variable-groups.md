@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 Use a variable group to store values that you want to control and make available across
 multiple pipelines. You can also use variable groups to store secrets and other values
-that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group). Variable groups are defined and managed in the **Library** page under
+that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group). Variable groups are defined and managed in the **Library** page under
 **Pipelines**.
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -38,7 +38,7 @@ Choose **+ Variable group**.
 1. Decide if you want the variable group to be accessible for any pipeline
    by setting the **Allow access to all pipelines** option. This option allows
    pipelines defined in YAML, which are not automatically authorized for variable groups,
-   to use this variable group. See [Use a variable group](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group)
+   to use this variable group. See [Use a variable group](variable-groups.md?tabs=yaml&view=azure-devops&preserve-view=true#use-a-variable-group)
 
 1. If you want to link secrets from an Azure key vault as variables, see [Link secrets from an Azure key vault](variable-groups.md#link-secrets-from-an-azure-key-vault).
 

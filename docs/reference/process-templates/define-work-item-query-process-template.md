@@ -17,23 +17,26 @@ ms.date: 02/24/2017
 
 <a name="top"></a> 
 
-You can create a work item query (.wiq) file most easily in Team Explorer. In an existing project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  
+You can save work item queries as `.wiq` files that you can then add to a process template. For more information about how to create work item queries, see [Define a query](../../boards/queries/using-queries.md).  
   
- **Requirements**  
+## Prerequisites
   
--   To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each project in the query.  
-  
--   To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
+- To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each project in the query.   
+- To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
   
 <a name="create"></a> 
 
-##  Save a work item query as a .wiq file  
+## Save a work item query as a .wiq file  
+
+You can install the [**Wiql Editor**](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) Marketplace extension to add import and export of `.wiq` files to the web portal. To learn more, see [Cross-service and enhanced query operations](../../boards/queries/query-support-integration-cross-service-extensions.md).
+
+Otherwise, you can use Team Explorer to save queries as `.wiq` files.  
   
-1. In Team Explorer, open the query that you want to save.   
-2. On the **File** menu, choose **Save \<name of query> [Query] As**.    
-3. In the **Save Query As** dialog box, choose **File**, and specify a location and file name for the .wiq file. As an alternative, choose **Browse**, specify a file name, browse to the location to save the file, and then choose **Save**.    
-4. Copy the file to the **\WorkItem Tracking\Queries** folder, which is in the folder to which you downloaded your process template.    
-5. Open the .wiq file in a text editor.    
+1. In Team Explorer, open the query that you want to save.  
+2. On the **File** menu, choose **Save \<name of query> [Query] As**.  
+3. In the **Save Query As** dialog box, choose **File**, and specify a location and file name for the `.wiq` file. As an alternative, choose **Browse**, specify a file name, browse to the location to save the file, and then choose **Save**.  
+4. Copy the file to the **\WorkItem Tracking\Queries** folder, which is in the folder to which you downloaded your process template.  
+5. Open the .wiq file in a text editor.  
 6. Remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server that is running Visual Studio Team Foundation Server and a specific project, as the following example shows:  
   
    > [!div class="tabbedCodeSnippets"]
@@ -41,7 +44,7 @@ You can create a work item query (.wiq) file most easily in Team Explorer. In an
    > <TeamFoundationServer>CollectionURL</TeamFoundationServer>  
    > <TeamProject>ProjectName</TeamProject>  
    > ```  
-   > 
+
    > [!NOTE]
    >  You must edit the .wiq file in a text editor and remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server and project. Otherwise, the query will not work correctly if the process template is uploaded to a different server. As an alternative, use macros where you can so that your query does not contain the explicit name of the current project or any other values that are specific to a certain environment.  
   
@@ -51,6 +54,7 @@ You can create a work item query (.wiq) file most easily in Team Explorer. In an
 <a name="path"></a> 
 
 ##  Create a work item query that references an iteration path  
+
  You can define a query that references a specific iteration path by including the macro for the project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -123,7 +127,7 @@ You can create a work item query (.wiq) file most easily in Team Explorer. In an
 > ```  
 > 
 > [!NOTE]
-> For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+> For queries made against Azure DevOps, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
 |Element|Syntax|Description|  
 |-------------|------------|-----------------|  
@@ -133,8 +137,9 @@ You can create a work item query (.wiq) file most easily in Team Explorer. In an
   
 ## Related articles   
 
--  [Create managed queries](../../boards/queries/about-managed-queries.md)  
--  [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)      
+- [About managed queries](../../boards/queries/about-managed-queries.md)  
+- [Cross-service and enhanced query operations](../../boards/queries/query-support-integration-cross-service-extensions.md)
+- [Define a query](../../boards/queries/using-queries.md)      
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  
 -  [Work Item Query Language](../../boards/queries/wiql-syntax.md) 
 -  [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
