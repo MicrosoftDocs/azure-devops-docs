@@ -16,7 +16,44 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md) (`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
+### Supported repository types
+
+:::row:::
+    :::column:::
+        [Azure Repos Git](azure-repos-git.md) (`git`)
+    :::column-end:::
+    :::column:::
+        Azure DevOps Server 2020 (limited to repositories in the same organization)
+        Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [GitHub](github.md) (`github`)
+    :::column-end:::
+    :::column:::
+        Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [GitHubEnterprise](github-enterprise.md) (`githubenterprise`)
+    :::column-end:::
+    :::column:::
+        Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Bitbucket Cloud](bitbucket.md) (`bitbucket`)
+    :::column-end:::
+    :::column:::
+        Azure DevOps Services
+    :::column-end:::
+:::row-end:::
 
 > [!IMPORTANT]
 > Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
