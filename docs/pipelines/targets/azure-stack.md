@@ -170,7 +170,9 @@ Create a service connection. You will need the values from your SPN and the name
         appName: <your-app-name>
         package: '$(System.DefaultWorkingDirectory)'
     ```
-    > [!NOTE] To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
+    
+    > [!NOTE]  
+    > To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline, as in this example.
 
 10. Update the `azureSubscription` value with the name of your service connection.
 11. Update the `appName` with your app name. You are now ready to deploy.
