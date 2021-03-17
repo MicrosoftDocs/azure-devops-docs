@@ -119,6 +119,7 @@ If your pipeline queues but never gets an agent, check the following items.
 ::: moniker range="azure-devops"
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Can't access Azure Key Vault behind firewall from Azure DevOps](#cant-access-azure-key-vault-behind-firewall-from-azure-devops)
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
@@ -169,6 +170,10 @@ If you are currently running other pipelines, you may not have any remaining par
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+### Can't access Azure Key Vault behind firewall from Azure DevOps
+
+If you can't access Azure Key Vault from your pipeline, the firewall might be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allowlisted. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md#networking).
 
 ### You don't have enough concurrency
  
