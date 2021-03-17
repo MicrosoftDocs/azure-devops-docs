@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18,contperf-fy21q2
-ms.date: 12/16/2020
+ms.date: 02/05/2021
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
@@ -49,7 +49,7 @@ This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamar
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-9. If you created a new YAML file you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+9. If you created a new YAML file, you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!

@@ -2,13 +2,13 @@
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Trello
-description: Use Trello with your Azure DevOps organization.
+description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-# Create a service hook for Azure DevOps with Trello
+# Create a service hook for Azure DevOps Services and TFS with Trello
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -33,7 +33,9 @@ Create a Trello card or list from an Azure DevOps Services event.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page by choosing **Project settings**, **Service hooks**.
+1. Go to your project Service Hooks page: 
+
+	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
 	![Project administration page](./media/add-devops-service-hook.png)
 
@@ -49,7 +51,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello takes in response to the trigger -
+1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png)
@@ -68,7 +70,9 @@ either create a card or a list.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Go to your project Service Hooks page by choosing **Settings**, **Service Hooks**.
+1. Go to your project Service Hooks page: 
+
+    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
 	![Project administration page](./media/add-service-hook.png)
 
@@ -84,7 +88,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello takes in response to the trigger -
+1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png) 
@@ -108,7 +112,7 @@ Now it's set up. Go to Trello and see the cards appear.
 ## Placeholders
 
 You can insert placeholders in the name of a list or the name or description of a card to be created by your subscription.
-When a list or card is created, the placeholders get replaced by values from the event that was raised.
+When a list or card is created, the placeholders will be replaced by values from the event that was raised.
 The example we used for the card name in this page uses:
 
 ```
@@ -127,7 +131,7 @@ So, if the subscription is for a completed build, it might be something like
     Build {{build.id}} completed at {{build.finishTime}}
 ```
 
-To understand what fields are available to use, look at the [events reference](../events.md).
+Where build is the name of the resource and ID, finishTime are the fields available in this resource. To understand the event types, fields and resources available to use, look at the [events reference](../events.md).
 
 ### Work item fields
 

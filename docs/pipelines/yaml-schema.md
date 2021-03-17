@@ -5,7 +5,7 @@ description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
@@ -2055,7 +2055,7 @@ steps:
 
 ---
 
-Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publish-artifacts).
 
 ## Download
 
@@ -2095,7 +2095,7 @@ steps:
 
 ---
 
-Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#download-artifacts).
 
 ::: moniker-end
 

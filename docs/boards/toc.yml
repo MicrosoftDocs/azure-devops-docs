@@ -155,7 +155,7 @@
   - name: Bulk add or modify work items (Excel)
     href: backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Excel FAQs
-    href: backlogs/office/faqs.md
+    href: backlogs/office/faqs.yml
   - name: "Create backlog items & tasks (Project)"
     href: backlogs/office/create-your-backlog-tasks-using-project.md
   - name: Schedule projects using Project
@@ -234,7 +234,7 @@
   - name: What is Agile development?
     href: /azure/devops/learn/agile/what-is-agile-development
   - name: Agile culture
-    href: /azure/devops/boards/plans/agile-culture
+    href: ./plans/agile-culture.md
   - name: Creating productive teams
     href: /azure/devops/learn/agile/productive-teams
   - name: What is Scrum?
