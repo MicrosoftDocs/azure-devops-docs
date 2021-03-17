@@ -39,7 +39,7 @@ categories: **Core** and **Other**. The **Core** category encompasses the set of
 
 For more information about pricing and acquisition, see the [pricing and acquisition page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
-## Service Health Matrix
+## Service health matrix
 
 The service status portal provides a two-dimensional matrix view of active events mapped to a 
 given service and geography. To help clarify which specific aspects of the service are affected, 
@@ -54,10 +54,10 @@ The Azure DevOps Services status portal indicates the status of Azure DevOps ser
 - **Healthy**: Indicates the service is broadly available. 
 - **Degraded**: Indicates a lower-severity event that affects the performance of a service feature, but doesn't impact broad service availability. 
 - **Unhealthy**: Indicates a high-severity event that affects the performance of a service and it's broad availability. 
-- **Advisory**: Indicates that a service is under investigation to determine the  performance impact. 
+- **Advisory**: Indicates that a service is under investigation to determine the  performance and availability impact. 
 
 
-## Service status and event Logs
+## Service status and event logs
 
 You can access more information on active events from the [Status history page](https://status.dev.azure.com/_history). This page provides a view into current active events and past events. Eave event under investigation or previously investigate is logged in the form of an event log. Each log has other associated information such as the impacted service,  
 geography, and event duration. Choose the provided hyperlink to view the event log, which provides detailed information on the event under investigation.
