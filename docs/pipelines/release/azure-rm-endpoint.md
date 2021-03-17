@@ -55,6 +55,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
 
 <a name="privileges"></a>
 
@@ -218,6 +219,13 @@ To resolve this issue:
 
 1. Save the service connection.
 
+
+<a name="cant-create-service-connection-manually"></a>
+
+### Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell
+
+To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
+
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
 Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or Managed Identity Authentication.
@@ -226,9 +234,5 @@ See [Assigning roles](/azure/active-directory/managed-identities-azure-resources
 
 > [!NOTE]
 > Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](../agents/agents.md#install) on an Azure VM and configure managed identity for the virtual machine.
-
-## Can't create an Azure Resource Manager service connection manually by using PowerShell scripts and Azure Cloud Shell
-
-To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
