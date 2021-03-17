@@ -52,11 +52,11 @@ Use this task to deploy a virtual machine scale set image.
 ### Error: Permission denied: Script is not executable
 
 This issue happens when we try to run a custom script but the script isn't executable. 
-First make sure the customScript input doesnt have './' or anything else before the script name(test.sh)
+First make sure the customScript input doesn't have `./` or anything else before the script name: `'test.sh'`
 
     customScript: 'test.sh'
 
-After this, try adding command line task before vmss task
+After this, try adding a command line task before the vmss task.
 
     - task: CmdLine@2
       inputs:
