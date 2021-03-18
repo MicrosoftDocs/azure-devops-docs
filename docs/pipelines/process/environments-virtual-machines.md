@@ -55,48 +55,48 @@ The first step in adding a virtual machine resource is to define an environment.
 
 You'll target virtual machines in your pipeline by referencing the environment. By default, the pipeline job will run for all of the virtual machines defined for an environment. 
 
-    ```yaml
-    trigger: 
-    - main
-    
-    pool: 
-       vmImage: ubuntu-latest
-    
-    jobs:
-    - deployment: VMDeploy
-      displayName: Deploy to VM
-      environment: 
-        name: ContosoDeploy
-        resourceType: VirtualMachine
-      strategy:
-       runOnce:
-        deploy:   
-          steps:
-          - script: echo "Hello world"
-    ```
+```yaml
+trigger: 
+- main
+
+pool: 
+   vmImage: ubuntu-latest
+
+jobs:
+- deployment: VMDeploy
+displayName: Deploy to VM
+environment: 
+   name: ContosoDeploy
+   resourceType: VirtualMachine
+strategy:
+   runOnce:
+   deploy:   
+      steps:
+      - script: echo "Hello world"
+```
 
 You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
 
-    ```yaml
-    trigger: 
-    - main
-    
-    pool: 
-       vmImage: ubuntu-latest
-    
-    jobs:
-    - deployment: VMDeploy
-      displayName: Deploy to VM
-      environment: 
-        name: ContosoDeploy
-        resourceType: VirtualMachine
-        tags: windows # only deploy to virtual machines with this tag
-      strategy:
-       runOnce:
-         deploy:   
-          steps:
-            - script: echo "Hello world"
-    ```
+```yaml
+trigger: 
+- main
+
+pool: 
+   vmImage: ubuntu-latest
+
+jobs:
+- deployment: VMDeploy
+displayName: Deploy to VM
+environment: 
+   name: ContosoDeploy
+   resourceType: VirtualMachine
+   tags: windows # only deploy to virtual machines with this tag
+strategy:
+   runOnce:
+   deploy:   
+      steps:
+      - script: echo "Hello world"
+```
 
 To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job). 
 
@@ -110,26 +110,26 @@ Add or remove tags in the UI from the resource view by selecting **More actions*
 
 When you select multiple tags, virtual machines that include all the tags will be used in your pipeline.  For example, this pipeline targets virtual machines with both the `windows` and `prod` tags. If a virtual machine only has one of these tags, it will not be targeted.
 
-    ```yaml
-    trigger: 
-    - master
-    
-    pool: 
-       vmImage: ubuntu-latest
-    
-    jobs:
-    - deployment: VMDeploy
-      displayName: Deploy to VM
-      environment: 
-        name: ContosoDeploy
-        resourceType: VirtualMachine
-        tags: windows,prod # only deploy to virtual machines with both windows and prod tags
-      strategy:
-       runOnce:
-         deploy:   
-          steps:
-            - script: echo "Hello world"
-    ```
+```yaml
+trigger: 
+- master
+
+pool: 
+   vmImage: ubuntu-latest
+
+jobs:
+- deployment: VMDeploy
+displayName: Deploy to VM
+environment: 
+   name: ContosoDeploy
+   resourceType: VirtualMachine
+   tags: windows,prod # only deploy to virtual machines with both windows and prod tags
+strategy:
+   runOnce:
+   deploy:   
+      steps:
+      - script: echo "Hello world"
+```
 
 ## Apply deployment strategy 
 
