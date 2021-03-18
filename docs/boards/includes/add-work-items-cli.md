@@ -6,7 +6,6 @@ ms.topic: include
 ms.date: 07/09/2020
 ---
 
-
 ::: moniker range=">= azure-devops-2020"  
 
 You can add a new work item with the [az boards work-item create](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index.md). 
