@@ -11,9 +11,9 @@ monikerRange: '>= azure-devops-2020'
 # Environment - virtual machine resource
 [!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
-You can use virtual machine resources to orchestrate deployments across multiple machines with YAML pipelines. Virtual machine resources also let you install agents on your own target servers so that you can drive rolling deployment to those servers. 
+You can use virtual machine resources to orchestrate deployments across multiple machines with YAML pipelines. Virtual machine resources let you install agents on your own target servers so that you can drive rolling deployment to those servers. 
 
-Virtual machine resources are connected to [environments](environments.md). Once you define an environment, you can add virtual machines to it that you can target in multi-VM deployments. The deployment history view in an environment provides traceability from your VM to your pipeline. 
+Virtual machine resources are connected to [environments](environments.md). Once you define an environment, you can add virtual machines to it that you can target in multi-VM deployments. The deployment history view in an environment provides traceability from your virtual machine to your pipeline. 
 
 ## Create a virtual machine resource
 
@@ -25,13 +25,17 @@ The first step in adding a virtual machine resource is to define an environment.
 ### Define an environment
 1. Select **Create environment** or **New environment** (if this is not your first environment).
 1. Add a **Name** (required) for the environment and a **Description**.
-    :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
 
 ### Add a resource
 1. Select your environment and choose **Add resource**.
 1. Select **Virtual machines** for your  **Resource** type. Then select **Next**.
+    :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
+
 1. Choose Windows or Linux for the **Operating System**.  
 1.  Copy the registration script. Your script will be a [PowerShell script](/azure/powershell/scripting/) if you've selected Windows and a Linux script if you've selected Linux.
+
+    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::
+    
 1.  Run the copied script on each of the target VMs that you want to register with this environment.
     * If you're installing on Windows, you'll need to run the script an PowerShell administrator.
     * If you're installing on Linux, you'll need to have permission to download and run executable scripts. 
@@ -39,101 +43,92 @@ The first step in adding a virtual machine resource is to define an environment.
    > [!NOTE]
    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
    > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
-
 1.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
-
-   > [!div class="mx-imgBorder"]
-   > ![VMcreation](media/vm-creation.png)
-
 1.    To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment. 
-
 1.    When the VM script is successfully installed, your VM will appear in the list of resources associated with your environment. 
 
-   > [!div class="mx-imgBorder"]
-   > ![VMresource_view](media/vm-resourceview.png)
+    :::image type="content" source="media/vm-resourceview.png" alt-text="View resources.":::
 
+    
   
 ## Use virtual machine in pipelines
 
-Create a new pipeline by referencing the environment and VM resources in a pipeline YAML. The environment will be created if it does not already exist. By default, the pipeline job will run for all of the virtual machines defined for an environment. 
-```YAML
-trigger: 
-- main
+You'll target virtual machines in your pipeline by referencing the environment. By default, the pipeline job will run for all of the virtual machines defined for an environment. 
+    ```YAML
+    trigger: 
+    - main
+    
+    pool: 
+       vmImage: ubuntu-latest
+    
+    jobs:
+    - deployment: VMDeploy
+      displayName: Deploy to VM
+      environment: 
+        name: ContosoDeploy # the name of your environment
+        resourceType: VirtualMachine
+      strategy:
+       runOnce:
+         deploy:   
+          steps:
+            - script: echo "Hello world"
+    ```
 
-pool: 
-   vmImage: ubuntu-latest
+You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
 
-jobs:
-- deployment: VMDeploy
-  displayName: Deploy to VM
-  environment: 
-    name: ContosoDeploy # the name of your environment
-    resourceType: VirtualMachine
-  strategy:
-   runOnce:
-     deploy:   
-      steps:
-        - script: echo "Hello world"
-```
-
-You can select specific sets of virtual machines from the environment to receive the deployment by setting tags for a virtual machine resource. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter to your pipeline.
-
-```yaml
-trigger: 
-- main
-
-pool: 
-   vmImage: ubuntu-latest
-
-jobs:
-- deployment: VMDeploy
-  displayName: Deploy to VM
-  environment: 
-    name: ContosoDeploy
-    resourceType: VirtualMachine
-    tags: windows # only deploy to virtual machines with this tag
-  strategy:
-   runOnce:
-     deploy:   
-      steps:
-        - script: echo "Hello world"
-```
+    ```yaml
+    trigger: 
+    - main
+    
+    pool: 
+       vmImage: ubuntu-latest
+    
+    jobs:
+    - deployment: VMDeploy
+      displayName: Deploy to VM
+      environment: 
+        name: ContosoDeploy
+        resourceType: VirtualMachine
+        tags: windows # only deploy to virtual machines with this tag
+      strategy:
+       runOnce:
+         deploy:   
+          steps:
+            - script: echo "Hello world"
+    ```
 
 To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job). 
 
 ## Adding and managing tags
 
-The tags allow you to limit deployment to specific virtual machines when the environment is used in a deployment job. You can add tags to the VM as part of the interactive registration script or through the UI. 
- Add or remove tags from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a Virtual machine resource.
+Tags give you a way to target specific virtual machines in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI.  Tags are each limited to 256 characters. There is no limit to the number of tags you can use. 
+Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a virtual machine resource.
 
 
- Tags are each limited to 256 characters. There is no limit to the number of tags you can use. 
-
-> [!div class="mx-imgBorder"]
-> ![VMtags](media/vm-tags.png)
+:::image type="content" source="media/vm-tags.png" alt-text="Set VM tags.":::
 
 When you select multiple tags, virtual machines that include all the tags will be used in your pipeline.  For example, this pipeline targets virtual machines with both the `windows` and `prod` tags. If a virtual machine only has one of these tags, it will not be targeted.
 
-```yaml
-trigger: 
-- master
-
-pool: 
-   vmImage: ubuntu-latest
-
-jobs:
-- deployment: VMDeploy
-  displayName: Deploy to VM
-  environment: 
-    name: ContosoDeploy
-    resourceType: VirtualMachine
-    tags: windows,prod # only deploy to virtual machines with both windows and prod tags
-  strategy:
-   runOnce:
-     deploy:   
-      steps:
-        - script: echo "Hello world"
-```
+    ```yaml
+    trigger: 
+    - master
+    
+    pool: 
+       vmImage: ubuntu-latest
+    
+    jobs:
+    - deployment: VMDeploy
+      displayName: Deploy to VM
+      environment: 
+        name: ContosoDeploy
+        resourceType: VirtualMachine
+        tags: windows,prod # only deploy to virtual machines with both windows and prod tags
+      strategy:
+       runOnce:
+         deploy:   
+          steps:
+            - script: echo "Hello world"
+    ```
 
 ## Apply deployment strategy 
 
