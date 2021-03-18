@@ -106,7 +106,7 @@ Set up your development environment one time after you [clone](clone.md). Then, 
 
 Learn how to complete common tasks when working with branches.
 
-- [Branches tutorial](branches.md)
+- [Branches tutorial](./create-branch.md)
 - [How to create a branch](create-branch.md)
 - [How to delete a branch](delete-branch.md)
 - [Restore a deleted branch](restore-deleted-branch.md)
