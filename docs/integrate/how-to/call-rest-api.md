@@ -60,7 +60,7 @@ public static async void GetProjects()
 			client.DefaultRequestHeaders.Accept.Add(
 				new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+			client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",
 				Convert.ToBase64String(
 					System.Text.ASCIIEncoding.ASCII.GetBytes(
 						string.Format("{0}:{1}", "", personalaccesstoken))));
