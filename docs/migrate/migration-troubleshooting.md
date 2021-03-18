@@ -416,7 +416,7 @@ Your SQL sign in user account doesn't have the required database role.
 VS403263: The User ID {0} must be member of the database role {1}.
 ```
 
-Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#step-5-configure-your-collection-for-import) role. 
+Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) role. 
 
 > [!NOTE]   
 > There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Validate and import processes, Import large collections](migration-import.md#import-large-collections).
