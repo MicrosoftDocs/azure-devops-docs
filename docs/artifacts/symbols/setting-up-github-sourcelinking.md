@@ -62,13 +62,13 @@ Once the build has been completed and the symbols published, it is time to make 
 
 1. Under **Debugging**, select **Symbols**.
 
-1. Select the `+` sign to add a new symbol file location, then enter your URL.
+1. Select the `+` sign to add a new symbol file location. Then enter your URL.
 
-  :::image type="content" source="media/vs-symbols-location.png" alt-text="Adding organization to the list of symbol locations":::
+    :::image type="content" source="media/vs-symbols-location.png" alt-text="Adding organization to the list of symbol locations":::
 
 1. Select **General** under the same **Debugging** section. Scroll down and check **Enable Source Link support**.
 
-  :::image type="content" source="media/enable-source-link-support.png" alt-text="Enable source link support":::
+    :::image type="content" source="media/enable-source-link-support.png" alt-text="Enable source link support":::
 
 Things to keep in mind:
 
