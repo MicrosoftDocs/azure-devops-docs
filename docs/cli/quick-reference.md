@@ -17,12 +17,17 @@ ms.date: 03/17/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Use this index to quickly access examples that showcase use of az devops CLI commands.  For a list of az devops commands, see the following Azure CLI reference articles: 
+Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
 - [az artifacts](/cli/azure/artifacts) 
 - [az boards](/cli/azure/boards) 
 - [az devops](/cli/azure/devops) 
 - [az pipelines](/cli/azure/pipelines) 
 - [az repos](/cli/azure/repos) 
+
+
+
+> [!NOTE]  
+> The Azure DevOps Command Line Interface (CLI) is available for Azure DevOps Server 2020 and Azure DevOps Services. 
 
 ## Azure Artifacts
 
@@ -48,6 +53,9 @@ Use this index to quickly access examples that showcase use of az devops CLI com
       - [Rename or move a project area path](../organizations/settings/set-area-paths.md#rename-move-project-area-path) 
       - [Set team area paths](../organizations/settings/set-area-paths.md#set-team-area-paths) 
       - [Set team iteration paths](../organizations/settings/set-iteration-paths-sprints.md#set-team-iteration-paths) 
+      #### Queries 
+      - [Run work item query](../boards/queries/view-run-query.md#run-a-query)
+      - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
    :::column-end:::
    :::column span="1":::
       #### Teams
@@ -57,10 +65,6 @@ Use this index to quickly access examples that showcase use of az devops CLI com
       - [List teams](../organizations/settings/add-teams.md#list-teams) 
       - [Show team details](../organizations/security/add-users-team-project.md#show-details)
       - [Update a team](../organizations/settings/rename-remove-team.md#update-team) 
-      #### Queries 
-      - [Run work item query](../boards/queries/view-run-query.md#run-a-query)
-      - [Permanently delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
-
       #### Work items
       - [Add work items](../boards/work-items/view-add-work-items.md) 
       - [Delete work items](../boards/backlogs/remove-delete-work-items.md#az-boards-cli)  
@@ -93,16 +97,6 @@ Use this index to quickly access examples that showcase use of az devops CLI com
       - [Show users](../organizations/accounts/add-organization-users.md#show-users)
    :::column-end:::
 :::row-end:::
-
-
-## Extensions
-
-- [Install an extension](../marketplace/install-extension.md) 
-- [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
-- [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
-- [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
-- [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
-- [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
 
 
 ## Azure Pipelines 
@@ -146,7 +140,6 @@ Use this index to quickly access examples that showcase use of az devops CLI com
       - [Create a variable group](../pipelines/library/variable-groups.md#create-variable-group)
       - [Delete a variable group](../pipelines/library/variable-groups.md#delete-variable-group)
       - [Delete variables from a variable group](../pipelines/library/variable-groups.md#delete-variables-group)
-
       - [List variable groups](../pipelines/library/variable-groups.md#list-variable-group)
       - [List variables in a variable group](../pipelines/library/variable-groups.md#list-variables-group)
       - [Show details for a variable group](../pipelines/library/variable-groups.md#show-variable-group)
@@ -163,19 +156,50 @@ Use this index to quickly access examples that showcase use of az devops CLI com
 - [Update file size policy](../repos/git/repository-settings.md#update-file-size-policy)
 
 
+## Projects, Extensions, and Wikis 
+
+:::row:::
+   :::column span="1":::
+      #### Extensions
+      - [Install an extension](../marketplace/install-extension.md) 
+      - [List extensions](../marketplace/uninstall-disable-extensions.md#list-extensions) 
+      - [List extension information](../marketplace/uninstall-disable-extensions.md#list-extension-information) 
+      - [Search for extension in the Marketplace](../marketplace/overview.md#search-extension) 
+      - [Uninstall an extension](../marketplace/uninstall-disable-extensions.md#uninstall-extension) 
+      - [Enable/disable an extension](../marketplace/uninstall-disable-extensions.md#disable-extension) 
+      #### Projects
+      - [Create a project](../organizations/projects/create-project.md) 
+      - [Delete a project](../organizations/projects/delete-project.md) 
+      - [List projects](../organizations/projects/create-project.md#list-projects) 
+      - [Show project information](../organizations/projects/create-project.md#show-project) 
+      - [Open project in web portal](../organizations/projects/create-project.md#show-project) 
+   :::column-end:::
+   :::column span="1":::
+      #### Wikis 
+      - [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki) 
+      - [Get the content of a page or open a page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)  
+      - [Add a new page](../project/wiki/add-edit-wiki.md#add-a-wiki-page) 
+      - [Edit a page](../project/wiki/add-edit-wiki.md#edit-wiki-page) 
+      - [Delete a page](../project/wiki/add-edit-wiki.md#delete-wiki-page) 
+      - [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)    
+      - [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)  
+      - [List all the wikis](../project/wiki/manage-wikis.md#list-wikis)  
+      - [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki) 
+   :::column-end:::
+:::row-end:::
+
+
 ## Security groups and permissions  
 
 - [Add a member to a security group](../organizations/security/add-manage-security-groups.md)
 - [Assign allow or deny permission to specified user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Clear all permissions of this token for a user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Create a security group](../organizations/security/add-manage-security-groups.md)
-- [Delete a security group](../organizations/security/add-manage-security-groups.md)
-
+- [Delete a security group](../organizations/security/add-manage-security-groups.md)<br/>
 - [List tokens for specified user or group and namespace](../organizations/security/manage-tokens-namespaces.md)
 - [List all available namespaces for an organization](../organizations/security/manage-tokens-namespaces.md)
 - [List security groups](../organizations/security/add-manage-security-groups.md)
-- [List the memberships for a group or user](../organizations/security/add-manage-security-groups.md)
-
+- [List the memberships for a group or user](../organizations/security/add-manage-security-groups.md)<br/>
 - [Remove a member from a security group](../organizations/security/add-manage-security-groups.md)
 - [Reset permission for specified permission bit(s)](../organizations/security/manage-tokens-namespaces.md)
 - [Show details of a security group](../organizations/security/add-manage-security-groups.md)
@@ -183,22 +207,8 @@ Use this index to quickly access examples that showcase use of az devops CLI com
 - [Show permissions for specified token, namespace and user or group](../organizations/security/manage-tokens-namespaces.md)
 - [Update a security group](../organizations/security/add-manage-security-groups.md)
 
-## Projects
+## Service endpoints
 
-- [Create a project](../organizations/projects/create-project.md) 
-- [Delete a project](../organizations/projects/delete-project.md) 
-- [List projects](../organizations/projects/create-project.md#list-projects) 
-- [Show project information](../organizations/projects/create-project.md#show-project) 
-- [Open project in web portal](../organizations/projects/create-project.md#show-project) 
-
-## Wikis 
-
-- [Open a wiki](../project/wiki/add-edit-wiki.md#open-wiki) 
-- [Get the content of a page or open a page](../project/wiki/add-edit-wiki.md#view-a-wiki-page)  
-- [Add a new page](../project/wiki/add-edit-wiki.md#add-a-wiki-page) 
-- [Edit a page](../project/wiki/add-edit-wiki.md#edit-wiki-page) 
-- [Delete a page](../project/wiki/add-edit-wiki.md#delete-wiki-page) 
-- [Create a wiki](../project/wiki/manage-wikis.md#create-a-wiki)    
-- [Delete a wiki](../project/wiki/manage-wikis.md#delete-a-wiki)  
-- [List all the wikis](../project/wiki/manage-wikis.md#list-wikis)  
-- [Show details of a wiki](../project/wiki/manage-wikis.md#show-wiki)   
+- [Create a GitHub service endpoint](service-endpoint.md)
+- [Create an Azure RM service endpoint](service-endpoint.md)
+- [Create service endpoint using a configuration file](service-endpoint.md)
