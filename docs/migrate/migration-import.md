@@ -32,7 +32,7 @@ After you've confirmed that you're running the latest version of Azure DevOps Se
 
 The validation step examines various aspects of your collection, including, but not limited to, size, collation, identity, and processes. 
 
-You run the validation by using the data migration tool. To start, [download the tool](https://aka.ms/AzureDevOpsImport), copy the zip file to one of your Azure DevOps Server application tiers, and then unzip it. You can also run the tool from a different machine without Azure DevOps Server installed as long as the machine can connect to the configuration database of the Azure DevOps Server instance. An example is shown below.
+You run the validation by using the data migration tool. To start, [download the tool](https://aka.ms/AzureDevOpsImport), copy the zip file to one of your Azure DevOps Server application tiers, and then unzip it. You can also run the tool from a different machine without Azure DevOps Server installed as long as the machine can connect to the configuration database of the Azure DevOps Server instance. An example is shown here.
 
 1. Open a Command Prompt window on the server, and enter a cd command to change to the directory where the data migration tool is stored. Take a few moments to review the help content that's provided with the tool. 
  
@@ -158,14 +158,14 @@ The *import.json* file's displayed fields and required actions are described in 
 
 <br> 
 
-After you complete the preceding process, you should have a file that looks somewhat like the below. 
+After you complete the preceding process, you should have a file that looks like the following: 
 
 ![Screenshot of a partially completed import specification file.](media/migration-import/importSpecHalfFilledOut.png)
 
 In the preceding image, note that the planner of the Fabrikam import added the organization name *fabrikam-import* and selected the Central US region in the Target object. Other values were left as is to be modified just before the planner took the collection offline for the migration. 
 
 > [!NOTE] 
-> Dry run imports have a '-dryrun' automatically appended to the end of the organization name. This can be changed after the import.
+> Dry-run imports have a '-dryrun' automatically appended to the end of the organization name. This can be changed after the import.
 
 
 <a id="supported-azure-regions-for-import"></a>
@@ -277,7 +277,7 @@ Step 1: [Take the collection offline and detach it](#step-1-detach-your-collecti
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
 Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
-Step 5: [Complete the last fields in the import specification](#step-5-complete-the-import-specification). 
+Step 5: [Complete the import specification](#step-5-complete-the-import-specification). 
 
 > [!NOTE] 
 > Before you perform a production import, we *strongly* recommend that you complete a dry-run import. With a dry run, you can validate that the import process works for your collection and that there are no unique data shapes present that might cause a production import failure. 
@@ -756,11 +756,11 @@ Imports can be queued as either a dry run or a production run. The **ImportType*
 
 ![Completed import specification file with import type](media/migration-import/importSpecCompleted.png)
 
-### Dry run organizations
+### Dry-run organizations
 
-Dry run imports help teams test the migration of their collections. Organizations are expected not to remain around forever but to exist for a short time. In fact, before a production migration can be run, any completed dry run organizations will need to be deleted. All dry run organizations have a *limited existence and are automatically deleted after a set period of time*. Information about when the organization will be deleted is included in the success email you should receive after the import finishes. Be sure to take note of this date and plan accordingly. 
+Dry-run imports help teams test the migration of their collections. Organizations are expected not to remain around forever but to exist for a short time. In fact, before a production migration can be run, any completed dry-run organizations will need to be deleted. All dry-run organizations have a *limited existence and are automatically deleted after a set period of time*. Information about when the organization will be deleted is included in the success email you should receive after the import finishes. Be sure to take note of this date and plan accordingly. 
 
-Most dry run organizations have 15 days before they're deleted. Dry run organizations can also have a 21-day expiration if more than 100 users have a basic or greater license at *import time*. After the specified time period, the dry run organization is deleted. You can repeat dry run imports as many times as you need before you do a production migration. You need to delete any previous dry runs before you attempt a new one. When your team is ready to perform a production migration, you'll need to manually delete the dry run organization. 
+Most dry-run organizations have 15 days before they're deleted. Dry-run organizations can also have a 21-day expiration if more than 100 users have a basic or greater license at *import time*. After the specified time period, the dry-run organization is deleted. You can repeat dry-run imports as many times as you need before you do a production migration. You need to delete any previous dry runs before you attempt a new one. When your team is ready to perform a production migration, you'll need to manually delete the dry-run organization. 
 
 For more information about post-import activities, see the [post import](migration-post-import.md) article. 
 
