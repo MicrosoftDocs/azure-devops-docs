@@ -96,7 +96,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 From the web portal, open **Project Settings**.
 
-Define both areas and iterations for a project from the **Project settings** > **Work** > **Project configuration**. 
+Define both areas and iterations for a project from the **Project settings** > **Boards** > **Project configuration**. 
 
 1. Choose (1) **Project Settings**, expand **Boards** if needed, and then choose (2) **Project configuration** and (3) **Iterations**.   
 

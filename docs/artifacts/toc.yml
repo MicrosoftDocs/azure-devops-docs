@@ -148,7 +148,7 @@
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
       href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-    - name: Set up GitHub SourceLinking
+    - name: Publish and consume symbols
       href: symbols/setting-up-github-sourcelinking.md
 - name: Concepts and references
   items:
