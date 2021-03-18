@@ -355,7 +355,7 @@ You can customize the download behavior for each deployment or job.
 
 ## Resources: `repositories`
 
-If your pipeline has [templates in another repository](../process/templates.md), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
+If your pipeline has [templates in another repository](../process/templates.md#use-other-repositories), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
 ## [Schema](#tab/schema)

@@ -36,20 +36,21 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
     <tr>
+
 <td rowspan="2"><strong>2020 Q4</strong></td>
 <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676 data-raw-source="[Azure DevOps Service Tag Released](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676)">Azure DevOps Service Tag Released</a></td><td><a href="https://devblogs.microsoft.com/devops/azure-devops-service-tag-released/">GA</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td><a href="https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/">In Preview</a></td><td>Boards</td><td>Future</td></tr>
 <tr>
-<td rowspan="7"><strong>2021 Q1</strong></td>
+<td rowspan="5"><strong>2021 Q1</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Sign-in attempts, PAT and SSH management events in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Sign-in attempts, PAT and SSH management events in the Audit Log</a></td><td><a href="https://devblogs.microsoft.com/devops/billing-and-token-management-events-now-available-in-auditing/">GA</a></td><td>Admin</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[PAT and SSH management events in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">PAT and SSH management events in the Audit Log</a></td><td><a href="https://devblogs.microsoft.com/devops/billing-and-token-management-events-now-available-in-auditing/">GA</a></td><td>Admin</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td><a href="https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview">In Preview</a></td><td>Pipelines</td><td>Future</td></tr>
+<td rowspan="4"><strong>2021 Q2</strong></td>
+<td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Proposed</td><td>Boards</td><td>Future</td>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>In Progress</td><td>Boards</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td>In Progress</td><td>Pipelines</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>In Progress</td><td>Pipelines</td><td>2020</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1779769 data-raw-source="[General availability of new pull request experience](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1779769)">General availability of new pull request experience</a></td><td>In Progress</td><td>Repos</td><td>Future</td></tr>
-<td rowspan="2"><strong>2021 Q2</strong></td>
-<td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and Ux Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and Ux Modernization</a></td><td>Proposed</td><td>Boards</td><td>Future</td>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>In Progress</td><td>Pipelines</td><td>TBD</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004 data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>In Progress</td><td>Reporting</td><td>Future</td></tr>
 <td rowspan="10"><strong>Future</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>Planned</td><td>Admin</td><td>Future</td>
@@ -62,7 +63,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Planned</td><td>Pipelines</td><td>TBD</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531 data-raw-source="[Conversion from classic build pipelines to YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531)">Conversion from classic build pipelines to YAML pipelines</a></td><td>Planned</td><td>Pipelines</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876 data-raw-source="[Make file diff viewing easier in PR summary](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1562876)">Make file diff viewing easier in PR summary</a></td><td>Planned</td><td>Repos</td><td>Future</td></tr>
-
    </tr>
     </tbody>
 </table>
@@ -81,18 +81,16 @@ Versions in the "Server" column are linked to the appropriate download location.
             <th>Server</th>
         </tr>
     </thead>
-    <tbody>
     <tr>
-    <td rowspan="6"><a href="2021/sprint-183-update.md" data-raw-source="[24 February 2021](2021/sprint-183-update.md)">24 February 2021</a></td>
-    <td>PAT lifecycle management API (private preview)</td><td>General</td><td>Future</td>
+    <td rowspan="7"><a href="2021/sprint-183-update.md" data-raw-source="[03 March 2021](2021/sprint-183-update.md)">03 March 2021</a></td>
+    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
     </tr>
-    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>Future</td></tr>
-    <tr><td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
     <tr><td>Hide Organization Settings</td><td>General</td><td>Future</td></tr>
+    <tr><td>Token management events now in Audit Logs</td><td>General</td><td>Future</td></tr>
+    <tr><td>PAT lifecycle management API (private preview)</td><td>General</td><td>Future</td></tr>
     <tr><td>Approver details available in audit logs</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Change in process for obtaining free pipelines grant in public projects</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Changes to Azure Artifacts upstream behavior</td><td>Artifacts</td><td>Future</td></tr>
-    <tr>
     <tr>
     <td rowspan="5"><a href="2021/sprint-182-update.md" data-raw-source="[04 February 2021](2021/sprint-182-update.md)">04 February 2021</a></td>
     <td>Limited people-picker search and tagging</td><td>General</td><td>Future</td>

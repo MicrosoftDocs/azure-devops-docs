@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 02/03/2021
+ms.date: 03/15/2021
 ---
 
 # Define features and epics  
@@ -18,8 +18,14 @@ ms.date: 02/03/2021
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
-Perhaps you like to start with a big picture and break it down into smaller deliverables. 
-Or, you've got an existing backlog and now need to organize it.   
+Perhaps you like to start with a big picture and break it down into smaller deliverables. Or, you've got an existing backlog and now need to organize it.   
+
+The following image shows a Features portfolio backlog that consists of a flat list of Feature work items. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot ofthe Features portfolio Backlog.](media/features-epics/intro-image.png)
+
+
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
 Use your backlogs to plan your project and to:  
 *   Manage a portfolio of features that are supported by different development and management teams  
