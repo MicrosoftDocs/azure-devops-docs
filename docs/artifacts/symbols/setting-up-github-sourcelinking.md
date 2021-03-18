@@ -20,7 +20,7 @@ The Index Sources & Publish Symbols task is used to index your source code and p
 
 ## Use Source Link in .NET projects
 
-Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code.
+Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code. Check out the [dotnet/sourcelink](https://github.com/dotnet/sourcelink) GitHub repository to learn about the different packages included.
 
 - For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
 
@@ -46,15 +46,13 @@ Source link is a set of tools that allow developers to debug their source code b
   </ItemGroup>
   ```
 
-
-## Modifying the Build Pipeline
+## Set up the Build Pipeline
 
 The next step is to modify the build pipeline to invoke Source Link during the build process. To do so, add `/p:SourceLinkCreate=true` to the **MSBuild arguments** field within the **Visual Studio Build** task.
 
-> [!div class="mx-imgBorder"] 
-> ![MSBuild arguments in the build solution task](media/build-solution-task-classic.png)
+:::image type="content" source="media/build-solution-task-classic.png" alt-text="MSBuild arguments in the build solution task":::
 
-Select **Save & queue** to save and run your build pipeline when an agent is available.
+Select **Save & queue** to save and run your build pipeline when an agent becomes available.
 
 ## Set up Visual Studio
 
@@ -64,32 +62,36 @@ Once the build has been completed and the symbols published, it is time to make 
 
 1. Under **Debugging**, select **Symbols**.
 
-1. Select the `+` sign to add a new symbol file location then type your URL.
+1. Select the `+` sign to add a new symbol file location, then enter your URL.
 
-    > [!div class="mx-imgBorder"]
-    > ![Adding organization to the list of symbol locations](media/vs-symbols-location.png)
+  :::image type="content" source="media/vs-symbols-location.png" alt-text="Adding organization to the list of symbol locations":::
 
-1. Select **General** under the same section. Scroll down and check **Enable Source Link support**.
+1. Select **General** under the same **Debugging** section. Scroll down and check **Enable Source Link support**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Enable source link support](media/enable-source-link-support.png)
+  :::image type="content" source="media/enable-source-link-support.png" alt-text="Enable source link support":::
 
-## Verifying the Setup
+Things to keep in mind:
+
+- **Enable Just My Code**: uncheck this to enable third-party source code debugging.
+
+- **Enable source server support**: check this to enable support for Windows PDB files on symbol servers.
+
+- **Enable Source Link support**: check this to enable support for portable PDB files.
+
+## Setup verification
 
 Now that Visual Studio is configured, it is time to attach the debugger to the process you want to debug. Once the debugger is attached Visual Studio will establish connection to the symbols server and attempt to locate the symbols.
 
-The first time Visual Studio attempts to download the source code it will prompt the user for input.
+The first time Visual Studio attempts to download the source, it will prompt the user for input:
 
-> [!div class="mx-imgBorder"]
-> ![download symbols from GitHub confirmation window](media/download-symbols-confirmation.png)
+:::image type="content" source="media/download-symbols-confirmation.png" alt-text="Download symbols from the server":::
 
 Visual Studio will then download the file(s) needed and launch the code editor at a break point.
 
-> [!div class="mx-imgBorder"]
-> ![Debugging in Visual Studio](media/debugging-in-visual-studio.png)
+:::image type="content" source="media/debugging-in-visual-studio.png" alt-text="Debugging in Visual Studio":::
 
 > [!TIP]
-> When attaching to a process, you may need to uncheck the **Enable Just My Code** option. See [Enable or disable Just My Code](/visualstudio/debugger/just-my-code) for details.
+> When attaching to a process, you may need to uncheck the **Enable Just My Code** option in Visual studio. See [Enable or disable Just My Code](/visualstudio/debugger/just-my-code) for details.
 
 ## Related articles
 
