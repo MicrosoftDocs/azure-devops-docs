@@ -869,29 +869,29 @@ If you can build your project on your development machine but are having trouble
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
 
-* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
-(`nvm` is installed for historical reasons on the macOS image.)
-`nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
-The **Node Tool Installer** task handles this model correctly.
-However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
-```yaml
-steps:
-- bash: |
-    NODE_VERSION=12  # or whatever your preferred version is
-    npm config delete prefix  # avoid a warning
-    . ${NVM_DIR}/nvm.sh
-    nvm use ${NODE_VERSION}
-    nvm alias default ${NODE_VERSION}
-    VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
-    echo "##vso[task.prependPath]$VERSION_PATH"
-```
-Then `node` and other command-line tools will work for the rest of the pipeline job.
-In each step where you need to use the `nvm` command, you'll need to start the script with:
-```yaml
-- bash: |
-    . ${NVM_DIR}/nvm.sh
-    nvm <command>
-```
+* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead. (`nvm` is installed for historical reasons on the macOS image.) `nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
+
+  The **Node Tool Installer** task handles this model correctly. However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
+
+  ```yaml
+  steps:
+  - bash: |
+      NODE_VERSION=12  # or whatever your preferred version is
+      npm config delete prefix  # avoid a warning
+      . ${NVM_DIR}/nvm.sh
+      nvm use ${NODE_VERSION}
+      nvm alias default ${NODE_VERSION}
+      VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
+      echo "##vso[task.prependPath]$VERSION_PATH"
+  ```
+
+  Then, `node` and other command-line tools will work for the rest of the pipeline job. In each step where you need to use the `nvm` command, you'll need to start the script with:
+
+  ```yaml
+  - bash: |
+      . ${NVM_DIR}/nvm.sh
+      nvm <command>
+  ```
 
 ## FAQ
 
@@ -903,9 +903,9 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 
 [Build, release, and test tasks](../tasks/index.md)
 
-### My pipeline fails with a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+### How do I fix a pipeline failure with the message 'FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory'
 
-This happens when the node package exceeds the memory usage limit. In this scenario, add a variable, like **NODE_OPTION**. Assign the variable a value of ***--max_old_space_size=16384***.
+This happens when the Node.js package has exceeded the memory usage limit. To resolve the issue, add a variable like `NODE_OPTION` and assign it a value of ***--max_old_space_size=16384***.
 
 ### How can I version my npm packages as part of the build process?
 
@@ -983,5 +983,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:master
+      git push -u origin HEAD:main
 ```
