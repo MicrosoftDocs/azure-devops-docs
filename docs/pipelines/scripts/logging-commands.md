@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 01/13/2021
+ms.date: 03/15/2021
 ms.custom: contperf-fy21q3
 ---
 
@@ -78,8 +78,8 @@ The formatting commands are:
 
 Those commands will render in the logs like this:
 
-![Screenshot of logs with custom formatting](media/log-formatting.png)
-
+![Screenshot of logs with custom formatting options](media/log-formatting.png)
+ 
 That block of commands can also be collapsed, and looks like this:
 
 ![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)

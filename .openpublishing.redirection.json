@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/integrate/ide/extensions/overview.md",
       "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
@@ -2038,6 +2043,11 @@
     {
       "source_path": "docs/setup-admin/team-services/sign-up-for-visual-studio-team-services.md",
       "redirect_url": "/azure/devops/organizations/accounts/create-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/branches.md",
+      "redirect_url": "/azure/devops/repos/git/create-branch",
       "redirect_document_id": false
     },
     {
@@ -6162,7 +6172,7 @@
     },
     {
       "source_path": "docs/git/concepts/pull-requests-overview.md",
-      "redirect_url": "/azure/devops/repos/git/pull-requests-overview",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
       "redirect_document_id": false
     },
     {
@@ -9312,8 +9322,18 @@
     },
     {
       "source_path": "docs/git/tutorial/pullrequest.md",
-      "redirect_url": "/azure/devops/repos/git/pullrequest",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/repos/git/pullrequest.md",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/pull-requests-overview.md",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/pushing.md",
@@ -9562,13 +9582,13 @@
     },
     {
       "source_path": "docs/git/pull-requests-overview.md",
-      "redirect_url": "/azure/devops/repos/git/pull-requests-overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/pull-requests.md",
       "redirect_url": "/azure/devops/repos/git/pull-requests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/repo-rename-tfs2015.md",
