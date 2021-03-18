@@ -92,7 +92,7 @@ By now, you've run the data migration tool validation against the collection, an
 - *IdentityMapLog.csv*: Outlines your identity map between Active Directory and Azure Active Directory (Azure AD).
 - *import.json*: Requires you to fill out the import specification you want to use to kick off your migration. 
 
-### Prepare command
+### The prepare command
 
 The `prepare` command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, *IdentityMapLog.csv*, and then tries to connect to Azure AD to find each identity's match. To do this, your company needs to use the [Azure Active Directory Connect tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or DirSync.exe tool). 
 
@@ -137,7 +137,7 @@ When you run the `prepare` command successfully in the data migration tool, the 
 
 The two files are described in greater detail in the next sections.
 
-### Import specification file
+### The import specification file
 
 The import specification, *import.json*, is a JSON file that provides import settings. It includes the desired organization name, storage account information, and other information. Most of fields are auto-populated, and some fields require your input before you attempt an import.
 
@@ -187,7 +187,7 @@ Azure DevOps Services is available in several [Azure regions](https://azure.micr
 
 <br> 
 
-### Identity map log
+### The identity map log
 
 The identity map log is of equal importance to the actual data that you'll be migrating to Azure DevOps Services. As you're reviewing the file, it's important to understand how identity import operates and what the potential results could entail. When you import an identity, it can become either *active* or *historical*. Active identities can sign in to Azure DevOps Services, but historical identities cannot. 
 
