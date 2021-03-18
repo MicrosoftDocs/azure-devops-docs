@@ -382,7 +382,6 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 
 
-
 ## List and connect to projects
 
 ::: moniker range="azure-devops"
