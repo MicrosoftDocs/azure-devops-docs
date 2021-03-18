@@ -11,16 +11,16 @@ monikerRange: '>= azure-devops-2020'
 # Environment - virtual machine resource
 [!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
-You can use virtual machine resources to orchestrate deployments across multiple machines and perform rolling updates with YAML pipelines. You can also install agents on your own target servers directly and and drive rolling deployment to those servers. 
+You can use virtual machine resources to orchestrate deployments across multiple machines with YAML pipelines. Virtual machine resources also let you install agents on your own target servers so that you can drive rolling deployment to those servers. 
 
-Virtual machine resources are connected to [environments](environments.md). Once you define an environment, you can add virtual machines to it that you can target in multi-VM deployments. The deployment history view within an environment provide traceability from the virtual machine to your pipeline and individual commits.
+Virtual machine resources are connected to [environments](environments.md). Once you define an environment, you can add virtual machines to it that you can target in multi-VM deployments. The deployment history view in an environment provides traceability from your VM to your pipeline. 
 
 ## Create a virtual machine resource
 
 > [!NOTE]
 > You can use this same process to set up physical machines with a registration script. 
 
-The first step in adding a virtual machine resources is to define an environment. You can define environments in **Environments** under **Pipelines**. 
+The first step in adding a virtual machine resource is to define an environment. You can define environments in **Environments** under **Pipelines**. 
 
 ### Define an environment
 1. Select **Create environment** or **New environment** (if this is not your first environment).
