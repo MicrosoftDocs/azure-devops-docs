@@ -1465,6 +1465,7 @@ To learn more about build pipeline settings, see:
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
 ### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
 
 Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/ext/azure-devops/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
@@ -1472,4 +1473,4 @@ Currently, the Azure CLI and Azure APIs don't offer commands that run multiple p
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+
