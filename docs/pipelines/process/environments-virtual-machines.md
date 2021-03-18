@@ -54,7 +54,8 @@ The first step in adding a virtual machine resource is to define an environment.
 ## Use virtual machine in pipelines
 
 You'll target virtual machines in your pipeline by referencing the environment. By default, the pipeline job will run for all of the virtual machines defined for an environment. 
-    ```YAML
+
+    ```yaml
     trigger: 
     - main
     
@@ -65,13 +66,13 @@ You'll target virtual machines in your pipeline by referencing the environment. 
     - deployment: VMDeploy
       displayName: Deploy to VM
       environment: 
-        name: ContosoDeploy # the name of your environment
+        name: ContosoDeploy
         resourceType: VirtualMachine
       strategy:
        runOnce:
-         deploy:   
+        deploy:   
           steps:
-            - script: echo "Hello world"
+          - script: echo "Hello world"
     ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment with tags. For example, if you only want to deploy to resources with the `windows` tag, add the `tags` parameter and the value `windows` to your pipeline.
