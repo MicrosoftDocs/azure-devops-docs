@@ -92,7 +92,7 @@ Create the Git repository using the `init` command as shown in the following exa
 git init .
 ```
 
-Work in [branches](branches.md) to keep track of your work and create [commits](commits.md) to snapshot your changes into Git.   
+Work in [branches](./create-branch.md) to keep track of your work and create [commits](commits.md) to snapshot your changes into Git.   
 
 Once you are ready to share your code, [get the clone URL](clone.md#clone_url) for the repository you want to connect to and then set up a remote relationship (in this case, `origin`) so your repo 
 can [push](pushing.md) changes to a shared repo.

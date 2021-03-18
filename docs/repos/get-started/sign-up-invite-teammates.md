@@ -43,4 +43,4 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Code with Git](code-with-git.md) or [Develop and share your code in TFVC](../tfvc/share-your-code-in-tfvc-vs.md)  
+> [Code with Git](../../user-guide/code-with-git.md?view=azure-devops) or [Develop and share your code in TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
