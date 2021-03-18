@@ -210,7 +210,7 @@ Currently, we don't publish hosted Mac IP address ranges.
 
 ## Azure DevOps import service
 
-During the import process, we highly recommend that you restrict access to your VM to only IPs from Azure DevOps. To restrict access, allow only connections from the set of Azure DevOps IPs,  which were involved in the collection database import process. For information about identifying the correct IPs, see [Restrict access to Azure DevOps Services IPs only](../../migrate/migration-import.md#step-2-restrict-access-to-azure-devops-services-ips-only). 
+During the import process, we highly recommend that you restrict access to your VM to only IPs from Azure DevOps. To restrict access, allow only connections from the set of Azure DevOps IPs,  which were involved in the collection database import process. For information about identifying the correct IPs, see [(Optional) Restrict access to Azure DevOps Services IPs only](../../migrate/migration-import.md#optional-restrict-access-to-azure-devops-services-ips-only). 
 
 ## Related articles
 
