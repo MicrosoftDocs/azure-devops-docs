@@ -276,7 +276,7 @@ By now, you have everything ready to execute on your import. You need to schedul
 Step 1: [Take the collection offline and detach it](#step-1-detach-your-collection).  
 Step 2: [Generate a DACPAC file from the collection you're going to import](#step-2-generate-a-dacpac-file).  
 Step 3: [Upload the DACPAC file and import files to an Azure storage account](#step-3-upload-the-dacpac-file).  
-Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-SAS-key).  
+Step 4: [Generate an SAS key to the storage account](#step-4-generate-an-sas-key).  
 Step 5: [Complete the last fields in the import specification](#step-5-complete-the-import-specification). 
 
 > [!NOTE] 
@@ -377,12 +377,12 @@ If you're under the DACPAC threshold, follow the instructions to [generate a DAC
 
 Let's walk through how to accomplish this. At a high level, you'll:
 
-* [Set up a SQL Azure VM](#set-up-a-sql-azure-vm).  
-* [(Optional) Restrict access to Azure DevOps Services IPs only](#restrict-access-to-azure-devops-services-ips-only).  
-* [Configure IP firewall exceptions](#configure-ip-firewall-exceptions).  
-* [Restore your database on the VM](#restore-your-database-on-the-vm).  
-* [Configure your collection for import](#configure-your-collection-for-import).  
-* [Configure the import specification file to target the VM](#configure-the-import-specification-file-to-target-the-VM). 
+* Set up a SQL Azure VM.  
+* (Optional) Restrict access to Azure DevOps Services IPs only.  
+* Configure IP firewall exceptions.  
+* Restore your database on the VM.  
+* Configure your collection for import.  
+* Configure the import specification file to target the VM] 
 
 #### Set up a SQL Azure VM
 
@@ -423,7 +423,7 @@ Here are a few more SQL Azure VM configurations that we recommend:
 - You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips"></a>
-#### Restrict access to Azure DevOps Services IPs only 
+#### (Optional) Restrict access to Azure DevOps Services IPs only 
 
 We highly recommend that you restrict access to your VM to only IPs from Azure DevOps Services. You do this by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database depend on the region you're importing into. The following tables can help you identify the correct IPs. The only port that's required to be opened to connections is the standard SQL connection port 1433.
 
