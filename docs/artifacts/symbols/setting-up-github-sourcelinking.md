@@ -1,43 +1,51 @@
 ﻿---
-title: Publish symbols to Azure Artifacts symbol server
-description: Using Index Sources & Publish Symbols task to publish  symbols to Azure Artifacts symbols server
+title: Publish and consume symbols with Azure Artifacts
+description: Publish and consume symbols using Index Sources & Publish Symbols task and Visual Studio
 ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.date: 10/29/2020
+ms.date: 03/18/2021
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ---
 
-# Use Index Sources & Publish Symbols task to publish your symbols
+# Publish and consume symbols
 
-Symbols are PDB files that are generated after a successful build run. these files are used by developers to debug their application. Azure Artifacts now offers a dedicated symbols server to publish your symbols. 
+Symbols are PDB files that are created from source files during compilation. PDB files (Program database) contain mapping information to the source code and are used to debug application. Azure Artifacts offers a dedicated symbols server to publish your symbols. 
 
-The _Publish symbols_ feature is part of the **Index Sources & Publish Symbols** task. This feature is also available for GitHub repositories.
+## Use Index Sources & Publish Symbols task
 
-To publish your symbols check the **Publish symbols** checkbox and select the **Symbol Server in this account/collection** option from the dropdown.
+The Index Sources & Publish Symbols task is used to index your source code and publish your symbols to Azure Artifacts symbols server. To do so, add the **Index Sources & Publish Symbols** task to your build process, check the **Publish symbols** checkbox, and select the **Symbol Server in this account/collection** option from the dropdown.
 
-> [!div class="mx-imgBorder"] 
-> ![Symbol server type in the publish symbols path task](media/publish-symbols-task-classic.png)
+:::image type="content" source="media/publish-symbols-task-classic.png" alt-text="Publish symbols path task":::
 
-## Using Source Link in .NET projects
+## Use Source Link in .NET projects
 
 Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code.
 
-For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
+- For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
 
-For projects hosted on Azure Repos, add the `Microsoft.SourceLink.AzureRepos.Git` package reference to your project file.
+- For projects hosted on Azure Repos, add the `Microsoft.SourceLink.AzureRepos.Git` package reference to your project file.
 
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
+
+- For projects hosted on Azure DevOps Server, add the `Microsoft.SourceLink.AzureDevOpsServer.Git` package reference to your project file.
+
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.AzureDevOpsServer.Git" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  ```
+
 
 ## Modifying the Build Pipeline
 
