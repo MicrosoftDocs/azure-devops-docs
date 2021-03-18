@@ -116,7 +116,7 @@ sections:
     questions: 
       - question: How do I get support for Azure subscriptions and billing?
         answer: |
-          See these [articles about Azure billing and subscriptions](https://docs.microsoft.com/search/?terms=billing&scope=%22Azure%20DevOps%22), the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/pricing/faq/), or try [Azure Support](https://azure.microsoft.com/support/options/).
+          See these [articles about Azure billing and subscriptions](/search/?scope=%22Azure+DevOps%22&terms=billing), the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/pricing/faq/), or try [Azure Support](https://azure.microsoft.com/support/options/).
 
       - question: How do I get support for the  Azure DevOps Marketplace?
         answer: |

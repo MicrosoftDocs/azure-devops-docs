@@ -14,7 +14,7 @@ The following table summarizes the query macros or variables supported by the Az
 > [!NOTE]  
 > You can use certain macros from the web portal only. Tfese include the **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas** macros. These macros aren't supported when exporting a query to Excel, notification filters, or exercised from Team Explorer, or REST APIs. 
 
-For more detailed descriptions and links to examples, see [Query fields, operators, and macros](/azure/devops/boards/queries/query-operators-variables). 
+For more detailed descriptions and links to examples, see [Query fields, operators, and macros](../queries/query-operators-variables.md). 
 
 
 ---
@@ -32,7 +32,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [[Any]](/azure/devops/boards/queries/titles-ids-descriptions)
+      [[Any]](../queries/titles-ids-descriptions.md)
    :::column-end:::
    :::column span="1":::
       Find any work item type, `Work Item Type=[Any]`, or any State, `State=[Any]`.
@@ -44,7 +44,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@Me](/azure/devops/boards/queries/query-by-workflow-changes)
+      [@Me](../queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="1":::
       Find work where `Identity field=logged in user`.
@@ -56,7 +56,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@Today](/azure/devops/boards/queries/query-by-date-or-current-iteration) 
+      [@Today](../queries/query-by-date-or-current-iteration.md) 
    :::column-end:::
    :::column span="1":::
       Find work where `Date-Time field=today`.
@@ -68,7 +68,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@Project](/azure/devops/boards/queries/using-queries#across-projects)  
+      [@Project](../queries/using-queries.md#across-projects)  
    :::column-end:::
    :::column span="1":::
       Find work defined in one or more projects. 
@@ -80,7 +80,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@CurrentIteration](/azure/devops/boards/queries/query-by-date-or-current-iteration)   
+      [@CurrentIteration](../queries/query-by-date-or-current-iteration.md)   
    :::column-end:::
    :::column span="1":::
       Find work defined in current iteration for a team.
@@ -92,7 +92,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@CurrentIteration +/-n](/azure/devops/boards/queries/query-by-date-or-current-iteration)   
+      [@CurrentIteration +/-n](../queries/query-by-date-or-current-iteration.md)   
    :::column-end:::
    :::column span="1":::
       Find work defined in +/- n of current iteration for a team.
@@ -104,7 +104,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@Follows](/azure/devops/boards/queries/titles-ids-descriptions#following)
+      [@Follows](../queries/titles-ids-descriptions.md#following)
    :::column-end:::
    :::column span="1":::
       Find work current logged in user is following, `ID In @Follows`.
@@ -116,11 +116,11 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](/azure/devops/boards/queries/titles-ids-descriptions#recent-macros)
+      [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](../queries/titles-ids-descriptions.md#recent-macros)
    :::column-end:::
    :::column span="4":::
       Find work items recently changed, `ID In @MyRecentActivity`
-      See also [View and add work items, Work Items page](/azure/devops/boards/work-items/view-add-work-items).
+      See also [View and add work items, Work Items page](../work-items/view-add-work-items.md).
    :::column-end:::
    :::column span="1":::
       TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -129,7 +129,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](/azure/devops/boards/queries/query-by-date-or-current-iteration)   
+      [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](../queries/query-by-date-or-current-iteration.md)   
    :::column-end:::
    :::column span="1":::
       Find work where the selected date-time field is within the current day, month, week, or year with a plus/minus offset, example: `Closed Date>=@StartOfDay-7`.
@@ -141,10 +141,10 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      [@TeamAreas](/azure/devops/boards/queries/query-by-area-iteration-path)
+      [@TeamAreas](../queries/query-by-area-iteration-path.md)
    :::column-end:::
    :::column span="1":::
-      Find work assigned to an Area Path or Iteration Path of specified team, for examples, see [Query by area or iteration path](/azure/devops/boards/queries/query-by-area-iteration-path). 
+      Find work assigned to an Area Path or Iteration Path of specified team, for examples, see [Query by area or iteration path](../queries/query-by-area-iteration-path.md). 
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019-2020, Azure DevOps Services  

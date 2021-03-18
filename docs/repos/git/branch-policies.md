@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
-Branch policies help teams protect their important [branches](branches.md) of development.
+Branch policies help teams protect their important [branches](./create-branch.md) of development.
 Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies

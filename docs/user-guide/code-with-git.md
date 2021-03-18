@@ -42,7 +42,7 @@ If you're just getting started with Azure Repos, your code might be in one of se
 
 If you just signed up for Azure DevOps Services, by default you have a project named `MyFirstProject` and a Git repo named `MyFirstProject`. If you want to work in that repo, you can [clone it](#clone-the-repo-to-your-computer) and then add your code to that repo.
 
-If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, [clone](#clone-the-repo-to-your-computer) the new repo and add your code there.
+If you want to make a new repo, follow the steps in [Create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, [clone](#clone-the-repo-to-your-computer) the new repo and add your code there.
 
 ### The code is in my (or my organization's) Azure Repos Git repo
 
@@ -56,7 +56,7 @@ If the code is in another Git repo, such as a GitHub repo or a different Azure R
 
 If your code is not yet in version control, you have a couple of options:
 
-- Create a new repository and add your code there. To create a new repository and add your code there, follow the steps in [Create a new Git repo in your project](../git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, come back to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
+- Create a new repository and add your code there. To create a new repository and add your code there, follow the steps in [Create a new Git repo in your project](../repos/git/create-new-repo.md#create-a-repo-using-the-web-portal). Then, come back to this article and jump down to [Clone the repo](#clone-the-repo-to-your-computer).
 - Add your code to an existing repository. To do add your code to an existing repository, jump down to [Clone the repo](#clone-the-repo-to-your-computer).
 
 After the repository is cloned, we'll show you how to add your existing code to the repo.
@@ -304,5 +304,3 @@ Now you're ready to create a new branch, write some code, and do it again.
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json) or
 > [learn more about working with a Git repo](../repos/git/index.yml).
-
-
