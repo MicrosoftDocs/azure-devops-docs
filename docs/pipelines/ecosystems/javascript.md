@@ -305,7 +305,7 @@ You can use a [script](../scripts/cross-platform-scripting.md) or the [npm task]
 ```yaml
 - task: Npm@1
   inputs:
-  command: 'install'
+     command: 'install'
 ```
 
 Run tools installed this way by using npm's `npx` package runner, which will first look for tools installed this way in its path resolution. The following example calls the `mocha` test runner but will look for the version installed as a dev dependency before using a globally installed (through `npm install -g`) version.
