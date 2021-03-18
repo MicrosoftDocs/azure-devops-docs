@@ -1387,7 +1387,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 
@@ -1413,7 +1413,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 

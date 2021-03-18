@@ -50,7 +50,7 @@ Continue to create commits as you work, [pushing](pushing.md) your changes to th
 Commits include the following information:
 
 - A snapshot of the files saved in the commit. Git snapshots the contents of all files in your repo at the time of the commit&mdash;this makes switching versions very fast and helps Git [merge](merging.md) changes.
-- A reference to the parent commit(s). Commits with multiple parents occur when [branches](branches.md) are merged together.
+- A reference to the parent commit(s). Commits with multiple parents occur when [branches](./create-branch.md) are merged together.
 - A short and to the point message describing the changes in the commit. You enter this message when you create the commit.  
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
@@ -167,4 +167,4 @@ Amend your last commit to correct small errors without making a new commit.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create work in branches](branches.md).
+> [Create work in branches](./create-branch.md).
