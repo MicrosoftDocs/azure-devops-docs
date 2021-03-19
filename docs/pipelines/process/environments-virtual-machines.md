@@ -97,7 +97,7 @@ strategy:
 
 To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tabs=schema#deployment-job). 
 
-## Adding and managing tags
+## Add and manage tags
 
 Tags give you a way to target specific virtual machines in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI.  Tags are each limited to 256 characters. There is no limit to the number of tags you can use. 
 Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a virtual machine resource.
