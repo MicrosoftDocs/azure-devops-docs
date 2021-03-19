@@ -37,6 +37,7 @@ The following objects display time stamps using the organization time zone setti
   - Library
   - Task groups
 - Notifications
+- [Export Users](../security/export-users-audit-log.md)
 
 By default, build pipeline `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's time zone. To learn more about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
 
