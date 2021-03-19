@@ -11,7 +11,7 @@ monikerRange: azure-devops
 # Environment - Kubernetes resource
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-You can use Kubernetes resources to target Kubernetes clusters in an environment for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
+You can use Kubernetes resources to target Kubernetes clusters in an [environment](environments.md) for deployment. Use pipelines to deploy to Azure Kubernetes Service (AKS) and clusters from any other cloud provider.
 
 The Kubernetes resource view within environments provides a glimpse of the status of objects within the namespace mapped to the resource. The resource view also overlays pipeline traceability on top of these objects so that you can trace back from a Kubernetes object to the pipeline and then back to the commit.
 
