@@ -70,8 +70,6 @@ The task supports authentication based on Azure Active Directory. Authentication
 
 ## Arguments
 
-## Arguments
-
 | Argument | Description |
 |------------------------------------------|----------------------------------------|
 | **Source** | Required. The source of the files to copy. YAML Pipelines and Classic Release support [pre-defined system variables](../../build/variables.md?tabs=yaml) like *Build.Repository.LocalPath* as well. [Release variables](../../release/variables.md?tabs=batch) are supported only in classic releases. Wild card symbol (\*) is supported anywhere in the file path or file name. |
