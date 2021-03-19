@@ -46,7 +46,7 @@ The first step in adding a virtual machine resource is to define an environment.
 1.    To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment. 
 1.    When the VM script is successfully installed, your VM will appear in the list of resources associated with your environment. 
 
-    :::image type="content" source="media/vm-resourceview.png" alt-text="View resources.":::
+   :::image type="content" source="media/vm-resourceview.png" alt-text="View resources.":::
 
     
   
