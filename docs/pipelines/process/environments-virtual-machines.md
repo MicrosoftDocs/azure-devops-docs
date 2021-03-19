@@ -9,6 +9,7 @@ monikerRange: '>= azure-devops-2020'
 ---
 
 # Environment - virtual machine resource
+
 [!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
 You can use virtual machine resources to orchestrate deployments across multiple machines with YAML pipelines. Virtual machine resources let you install agents on your own target servers so that you can drive rolling deployment to those servers. 
@@ -23,33 +24,37 @@ Virtual machine resources are connected to [environments](environments.md). Once
 The first step in adding a virtual machine resource is to define an environment. You can define environments in **Environments** under **Pipelines**. 
 
 ### Define an environment
+
 1. Select **Create environment** or **New environment** (if this is not your first environment).
 1. Add a **Name** (required) for the environment and a **Description**.
 1. Save the new environment.
 
 ### Add a resource
+
 1. Select your environment and choose **Add resource**.
 1. Select **Virtual machines** for your  **Resource** type. Then select **Next**.
-    :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
+
+   :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
 
 1. Choose Windows or Linux for the **Operating System**.  
-1.  Copy the registration script. Your script will be a [PowerShell script](/azure/powershell/scripting/) if you've selected Windows and a Linux script if you've selected Linux.
+1. Copy the registration script. Your script will be a [PowerShell script](/azure/powershell/scripting/) if you've selected Windows and a Linux script if you've selected Linux.
 
-    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
-1.  Run the copied script on each of the target virtual machines that you want to register with this environment.
-    * If you're installing on Windows, you'll need to run the script an PowerShell administrator.
-    * If you're installing on Linux, you'll need to have permission to download and run executable scripts. 
+   :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
+
+1. Run the copied script on each of the target virtual machines that you want to register with this environment.
+   - If you're installing on Windows, you'll need to run the script an PowerShell administrator.
+   - If you're installing on Linux, you'll need to have permission to download and run executable scripts. 
+
    > [!NOTE]
    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
    > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
-1.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
-1.    To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment. 
-1.    When the VM script is successfully installed, your VM will appear in the list of resources associated with your environment. 
+
+1. Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
+1. To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment. 
+1. When the VM script is successfully installed, your VM will appear in the list of resources associated with your environment. 
 
    :::image type="content" source="media/vm-resourceview.png" alt-text="View resources.":::
-
-    
-  
+ 
 ## Use virtual machine in pipelines
 
 You'll target virtual machines in your pipeline by referencing the environment. By default, the pipeline job will run for all of the virtual machines defined for an environment. 
@@ -102,8 +107,8 @@ To learn more about deployment jobs, see the [YAML schema](../yaml-schema.md?tab
 ## Add and manage tags
 
 Tags give you a way to target specific virtual machines in an environment for deployment. You can add tags to the VM as part of the interactive registration script or through the UI.  Tags are each limited to 256 characters. There is no limit to the number of tags you can use. 
-Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a virtual machine resource.
 
+Add or remove tags in the UI from the resource view by selecting **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: for a virtual machine resource.
 
 :::image type="content" source="media/vm-tags.png" alt-text="Set VM tags.":::
 
@@ -145,6 +150,7 @@ The **Deployments** tab provides complete traceability of commits and work items
 > ![VMjobs_view](media/vm-jobsview.png)
   
 ## Remove a virtual machine from an environment
+
 To remove virtual machines that were previously added to a Windows environment, run this command from an administrator PowerShell command prompt on each machine. You'll need to run the command in the same folder path where the script to register to the environment has been previously run:
 
 ```
@@ -158,8 +164,10 @@ To remove a virtual machine from a Linux environment, run this command on each m
 ```
 
 ## Known limitations
+
 When you retry a stage, it will rerun the deployment on all virtual machines and not just failed targets. 
 
 ## Next steps
+
 * Learn more about [deployment jobs](deployment-jobs.md) and [environments](environments.md).
 * See the [YAML schema reference](../yaml-schema.md) to learn what else you can do with YAML pipelines.
