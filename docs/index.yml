@@ -317,6 +317,8 @@ additionalContent:
           links:
             - text: Command line interface
               url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Azure DevOps CLI quick reference
+              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: Azure DevOps Services Demo Generator
               url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: REST APIs
