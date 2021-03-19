@@ -156,7 +156,7 @@ Use this index to quickly access examples that showcase use of command line tool
 - [Update file size policy](../repos/git/repository-settings.md#update-file-size-policy)
 
 
-## Projects, Extensions, and Wikis 
+## Projects, extensions, and wikis 
 
 :::row:::
    :::column span="1":::
