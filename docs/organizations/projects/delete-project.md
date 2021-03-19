@@ -73,7 +73,7 @@ Your project is deleted and can be restored up to 28 days afterward. Your delete
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete a team project with the [az devops project delete](/cli/azure/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az devops project delete --id
@@ -83,7 +83,7 @@ az devops project delete --id
 
 #### Parameters 
 
-- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/devops/project#ext-azure-devops-az-devops-project-list) command.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 - **yes**: Don't prompt for confirmation.
 
