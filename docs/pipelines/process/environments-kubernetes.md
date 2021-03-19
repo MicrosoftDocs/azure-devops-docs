@@ -185,3 +185,4 @@ To use this job in an **exiting** pipeline, the service connection backing the r
 - [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
 - [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
 - [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
+- [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
