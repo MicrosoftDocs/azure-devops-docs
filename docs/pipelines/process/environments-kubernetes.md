@@ -194,4 +194,4 @@ To use this job in an **exiting** pipeline, the service connection backing the r
 - [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
 - [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
 - [Deploy ASP.NET Core apps to Azure Kubernetes Service with Azure DevOps Starter](/azure/devops-project/azure-devops-project-aks)
-- [REST API: Kubernetes with Azure DevOps](/azure/devops/distributedtask/kubernetes/add)
+- [REST API: Kubernetes with Azure DevOps](/rest/api/azure/devops/distributedtask/kubernetes/add)
