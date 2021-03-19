@@ -2,7 +2,7 @@
 title: Customize cards on a board
 titleSuffix: Azure Boards
 description: Customize cards on the Kanban or Sprint/Scrum/taskboards in Azure Boards and Azure DevOps 
-ms.custom: boards-kanban 
+ms.custom: boards-kanban, contperf-fy21q3
 ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
@@ -152,6 +152,10 @@ Once you open the Settings dialog for the Kanban board, choose one of the follow
    :::column-end:::
 :::row-end:::
 ---
+
+> [!NOTE]   
+> Each team can customize the cards for their Kanban board. Board settings are not inherited from other teams that they may share portions of area paths. 
+
 
 ## Card customization sequence 
 
