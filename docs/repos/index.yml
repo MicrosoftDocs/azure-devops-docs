@@ -90,7 +90,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Default permissions
-            url: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+            url: /azure/devops/organizations/security/default-git-permissions?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
           - text: Git command reference
             url: ./git/command-prompt.md
   - title: Get started with TFVC
