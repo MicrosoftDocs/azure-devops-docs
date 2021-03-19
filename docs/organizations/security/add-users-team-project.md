@@ -168,7 +168,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-Azure DevOps CLI commands aren't supported for adding a user to a project, currently. You can, however, add a user to a team using the CLI in the following section.
+Azure DevOps CLI commands aren't supported for adding a user to a project, currently.  
 
 * * *
 
