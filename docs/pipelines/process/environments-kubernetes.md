@@ -181,3 +181,7 @@ variables:
 
 To use this job in an **exiting** pipeline, the service connection backing the regular Kubernetes environment resource needs to be modified to "Use cluster admin credentials". Alternatively, role bindings need to be created for the underlying service account to the review app namespace.
 
+## Next steps
+- [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
+- [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
+- [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
