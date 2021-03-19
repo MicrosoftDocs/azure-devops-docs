@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps Services 
 ms.technology: devops-new-user 
 ms.topic: quickstart
-ms.date: 05/06/2018
+ms.date: 03/18/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -43,4 +43,4 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Code with Git](../../user-guide/code-with-git.md?view=azure-devops) or [Develop and share your code in TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
+> [Code with Git](../../user-guide/code-with-git.md?view=azure-devops&preserve-view=true) or [Develop and share your code in TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
