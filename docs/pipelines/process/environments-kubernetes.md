@@ -42,6 +42,7 @@ When you use Azure Kubernetes Service a [ServiceAccount](https://kubernetes.io/d
 3. Choose the Azure subscription, cluster, and namespace (new/existing).
 4. Click on **Validate and create** to create the Kubernetes resource.
 5. Verify that you see a cluster for your environment. 
+
     :::image type="content" source="media/kubernetes-environment-cluster.png" alt-text="Add a Kubernetes cluster.":::
   
 
@@ -77,7 +78,11 @@ While the Azure Provider option creates a new ServiceAccount, the generic provid
 
 ## Reference your Kubernetes resources in a pipeline 
 
-If you are using Azure Kubernetes Service and building a YAML pipeline, the easiest way to configure your pipeline is to use a template. Connect to your repository and select one of the two Kubernetes Service options - [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md) or Deploy to Kubernetes - Review app with Azure DevSpaces. The templates let you set up review apps without needing to write YAML code from scratch or create explicit role bindings manually. 
+If you are using Azure Kubernetes Service and building a YAML pipeline, the easiest way to configure your pipeline is to use a template. Connect to your repository and select one of the two Kubernetes Service options:
+ - [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md)
+ - Deploy to Kubernetes - Review app with Azure DevSpaces
+ 
+The templates let you set up review apps without needing to write YAML code from scratch or create explicit role bindings manually. 
 
 :::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Kubernetes template options.":::
 
@@ -184,6 +189,7 @@ variables:
 To use this job in an **exiting** pipeline, the service connection backing the regular Kubernetes environment resource needs to be modified to "Use cluster admin credentials". Alternatively, role bindings need to be created for the underlying service account to the review app namespace.
 
 ## Next steps
+- [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)
 - [Deploy manifests](../ecosystems/kubernetes/deploy.md) and [bake manifests](../ecosystems/kubernetes/bake.md)
 - [Multi-cloud Kubernetes deployments](../ecosystems/kubernetes/multi-cloud.md)
 - [Deployment strategies for Kubernetes in Azure Pipelines](../ecosystems/kubernetes/deployment-strategies.md)
