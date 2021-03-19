@@ -35,30 +35,30 @@ quality of your product.
 
    ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
-   ![Visual Studio Marketplace, Test &amp; Feedback extension, Supported Browsers](media/perform-exploratory-tests/getstarted-11.PNG)
+   ![Visual Studio Marketplace, Test &amp; Feedback extension, Supported Browsers](media/perform-exploratory-tests/getstarted-11.png)
 
 1. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
    - If you are using Google Chrome, choose the **Install** link for Chrome from the above image to open the 
      Google Chrome web store and follow the instructions to install the extension.
 
-     ![Add extension to Chrome](media/perform-exploratory-tests/getstarted-chrome01.PNG)
+     ![Add extension to Chrome](media/perform-exploratory-tests/getstarted-chrome01.png)
 
-     ![Follow instructions to install the extension on Chrome.](media/perform-exploratory-tests/getstarted-chrome02.PNG)
+     ![Follow instructions to install the extension on Chrome.](media/perform-exploratory-tests/getstarted-chrome02.png)
      
    - If you are using Microsoft Edge (Chromium), choose the **Install** link for Edge from the above image to open the 
      Microsoft Edge Add-ons page and follow the instructions to install the extension.
 
-     ![Add extension to Edge](media/perform-exploratory-tests/getstarted-edge01.PNG)
+     ![Add extension to Edge](media/perform-exploratory-tests/getstarted-edge01.png)
 
-     ![Follow instructions to install the extension on Edge.](media/perform-exploratory-tests/getstarted-edge02.PNG)
+     ![Follow instructions to install the extension on Edge.](media/perform-exploratory-tests/getstarted-edge02.png)
      
    - If you are using Mozilla Firefox 50.0 and higher, choose the **Install** link for Firefox from the above image to open the 
      Firefox Browser Add-ons page and follow the instructions to install the extension.
 
-     ![Add extension to Firefox](media/perform-exploratory-tests/getstarted-firefox01.PNG)
+     ![Add extension to Firefox](media/perform-exploratory-tests/getstarted-firefox01.png)
 
-     ![Follow instructions to install the extension on Firefox.](media/perform-exploratory-tests/getstarted-firefox02.PNG)
+     ![Follow instructions to install the extension on Firefox.](media/perform-exploratory-tests/getstarted-firefox02.png)
 
 >You need to install the extension or add-on only once. Afterwards your browser will
 update it automatically.
