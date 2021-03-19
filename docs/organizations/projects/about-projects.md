@@ -302,7 +302,7 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 **A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
 
 ::: moniker range=">= azure-devops-2020"
-Also, you can use the [**az devops project** commands](/cli/azure/ext/azure-devops/devops/project).  
+Also, you can use the [**az devops project** commands](/cli/azure/devops/project).  
 ::: moniker-end
 
 
