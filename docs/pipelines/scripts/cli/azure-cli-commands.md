@@ -1,6 +1,6 @@
 ---
-title: 'Azure CLI sample for Azure pipelines: create, manage, and monitor'
-description: Azure CLI sample for creating, managing, and monitoring an Azure pipeline using Azure DevOps commands.
+title: 'Azure CLI sample for Azure Pipelines: create, manage, and monitor'
+description: Azure CLI sample for creating, managing, and monitoring an Azure Pipeline using Azure DevOps commands.
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
@@ -13,7 +13,7 @@ ms.custom: devx-track-azurecli
 
 # Create, manage, and monitor an Azure pipeline
 
-This sample shows you how to use Azure DevOps CLI commands to work with Azure pipelines. Before you can run the sample, [sign up for Azure pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization and create a project to contain the pipeline. The sample also requires an [Azure DevOps personal access token](../../../cli/log-in-via-pat.md) (PAT) for authentication. To get an Azure DevOps PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat).
+This sample shows you how to use Azure DevOps CLI commands to work with Azure pipelines. Before you can run the sample, [sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization and create a project to contain the pipeline. The sample also requires an [Azure DevOps personal access token](../../../cli/log-in-via-pat.md) (PAT) for authentication. To get an Azure DevOps PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Then in the GitHub Marketplace, [install the Azure Pipelines application](https://github.com/marketplace/azure-pipelines/) so that Azure Pipelines can access your GitHub repository.
 
 This script demonstrates three operations:
 
@@ -39,15 +39,26 @@ devopsOrg='https://dev.azure.com/<my-organization>'
 devopsProject='<my-project>'
 pipelineName='<my-build>'
 pipelineDesc='<my-description>'
-repoType='github'; repoName='<my-github-organization>/<my-repository>'
+repoType='github'; repoName='<my-github-username>/<my-repository>'
 # repoType='tfsgit'; repoName='<my-repository-in-azure-devops-project>'
 repoBranch='master'
 
 # Set the environment variable used for Azure DevOps token authentication
+export AZURE_DEVOPS_EXT_GITHUB_PAT=$devopsToken
 export AZURE_DEVOPS_EXT_PAT=$devopsToken
 
 # Set up your default Azure DevOps organization and project
 az devops configure --defaults organization=$devopsOrg project=$devopsProject
+
+# Create Azure Resource Manager service connection
+export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<client secret string value from your service principal>
+az devops service-endpoint azurerm create \
+    --name <service-connection-name-to-create> \
+    --azure-rm-subscription-id <subscription-guid> \
+    --azure-rm-subscription-name "<name-of-subscription>" \
+    --azure-rm-service-principal-id <service-principal-application-guid> \
+    --azure-rm-tenant-id <service-principal-directory-guid>
+
 
 az pipelines create \
     --name $pipelineName \
@@ -84,4 +95,7 @@ Remove this sentence: alphabetize this list and provide links at the command lev
 - [az devops configure](/cli/azure/ext/azure-devops/devops#ext_azure_devops_az_devops_configure)
 - [az devops service-endpoint create](/cli/azure/ext/azure-devops/devops/service-endpoint#ext_azure_devops_az_devops_service_endpoint_create)
 - [az pipelines create](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_create)
+- [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_run)
 - [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_show)
+- [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
+- 
