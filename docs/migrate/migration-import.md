@@ -121,7 +121,7 @@ The **connectionString** parameter is a pointer to the configuration database of
 Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-When the data migration tools runs the `prepare` command, it runs a complete validation to ensure that nothing has changed with your collection since the last full validation. If any new issues are detected, no import files are generated. 
+When the data migration tool runs the `prepare` command, it runs a complete validation to ensure that nothing has changed with your collection since the last full validation. If any new issues are detected, no import files are generated. 
 
 Shortly after the command has started running, an Azure AD sign-in window is displayed. You need to sign in with an identity that belongs to the tenant domain that's specified in the command. Make sure that the specified Azure AD tenant is the one you want your future organization to be backed with. In our Fabrikam example, a user would enter credentials that are similar to what's shown in the following screenshot.
 
@@ -698,7 +698,7 @@ After the import has finished, you can delete the blob container and accompanyin
 
 A [shared access signature (SAS) key](/azure/storage/common/storage-sas-overview) provides delegated access to resources in a storage account. The key allows you to give Microsoft the lowest level of privilege that's required to access your data for executing the import. 
 
-The recommended way to generate an SAS key is to use [Azure Storage Explorer](https://storageexplorer.com/). With Storage Explorer you can to easily create container-level SAS keys. This is essential, because the data migration tool does *not* support account-level SAS keys. 
+The recommended way to generate an SAS key is to use [Azure Storage Explorer](https://storageexplorer.com/). With Storage Explorer, you can easily create container-level SAS keys. This is essential, because the data migration tool does *not* support account-level SAS keys. 
 
 > [!NOTE] 
 > Do *not* generate an SAS key from the Azure portal. Azure portal-generated SAS keys are account scoped and don't work with the data migration tool. 
