@@ -30,14 +30,17 @@ Artifact filters can be used with release triggers to deploy from multiple branc
 
   :::image type="content" source="media/add-artifact.png" alt-text="Add build artifact to release pipeline":::
 
-1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open up the _continuous deployment trigger_ panel and switch the button to **Enabled**.
+1. Select the **Continuous deployment trigger** icon and enable the **Continuous deployment trigger** to create a release every time a new build is available.
 
-    > [!div class="mx-imgBorder"]  
-    > ![CI trigger](media/deploy-multiple-branches/ci-trigger.png)
+  :::image type="content" source="media/deploy-multiple-branches/ci-trigger.png" alt-text="Enable continuous deployment trigger":::
 
-1. Add a stage with a name **Dev**. This stage will be triggered when a build artifact is published from the dev branch.
+1. Under **Stages**, select the stage and rename it to **Dev**. This stage will be triggered when a build artifact is published from the dev branch.
 
-1. Choose the **Pre-deployment conditions** icon in the **Stages** section to open up the _pre-deployment conditions_ panel. Under _select trigger_ select **After release**. This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
+  :::image type="content" source="media/dev-stage.png" alt-text="Configure Dev stage":::
+
+1. Select the **Pre-deployment conditions** icon in the _Dev_ stage and set the deployment trigger to **After release** to trigger a deployment to this stage every time a new release is created.
+
+  :::image type="content" source="media/predeployment-trigger.png" alt-text="Set pre-deployment trigger to after release":::
 
 1. Enable the **Artifact filters**. Select Add and specify your artifact. In the **Build branch** select the dev branch then Save.
 
