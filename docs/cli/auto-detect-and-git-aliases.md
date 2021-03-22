@@ -4,16 +4,17 @@ titleSuffix: Azure DevOps
 description: Auto detect configuration and git aliases when using Azure DevOps extension command-line interface 
 ms.topic: conceptual
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 # Auto detect configuration and git aliases
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 The Azure DevOps CLI has been optimized to allow developers to use Azure Repos and work well with their git workflows.
 

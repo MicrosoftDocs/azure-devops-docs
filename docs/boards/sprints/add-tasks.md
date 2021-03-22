@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/28/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 04/28/2020
 
 # 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -33,7 +33,7 @@ In this article you'll learn how to:
 <!---Address how to parent unparented items --> 
 
 
-Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
+Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed, such as design, code, test, content, or sign out. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
@@ -41,14 +41,14 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ## Open a Sprint backlog for a team 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
@@ -69,7 +69,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
     ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
@@ -149,7 +149,7 @@ From the **Backlog** view, choose the plus sign to open the work item form for a
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
+Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the taskboard](media/add-tasks/add-task-board-agile.png)
@@ -164,14 +164,14 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
-From the **Backlog** view, choose the ![ ](../../media/icons/blue-add-icon.png) plus icon to add a new task.  
+From the **Backlog** view, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: plus icon to add a new task.  
 
 > [!div class="mx-imgBorder"]
 > ![print backlog page, add task](media/add-tasks/sp-add-tasks.png)
 
 Fill out the form as described in the next section. 
 
-Another option, is to open **Taskboard**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
+Another option, is to open **Taskboard**, and add tasks as cards. Simply click the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the taskboard](media/add-tasks/add-task-board-standard.png)
@@ -180,6 +180,9 @@ Another option, is to open **Taskboard**, and add tasks as cards. Simply click t
 > You can quickly add tasks by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).  
 
 ::: moniker-end
+
+To interactively filter sprint views, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then specify a keyword or select a value for a field or tag. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+
 
 
 ## Fill out the task form 
@@ -267,7 +270,9 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ## Related articles
 
-- [1. Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
 - [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)  
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)   
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+
 

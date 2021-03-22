@@ -29,7 +29,7 @@
       topicHref: /azure/devops/boards/queries/example-queries
     - name: Plans & Agile at Scale
       tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boardsplans/index
+      topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
       tocHref: /azure/devops/boards/backlogs/office/track-work
       topicHref: /azure/devops/boards/backlogs/office/track-work

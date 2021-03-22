@@ -45,7 +45,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
 
-	If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+	If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 1. Choose the dashboard you want to modify. 
 
@@ -65,7 +65,7 @@ For example, here we choose to view the Work in Progress dashboard.
 > [!div class="mx-imgBorder"]  
 > ![Dashboards, Choose a team dashboard](media/dashboards/choose-dashboard.png)  
 
-If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 ::: moniker-end  
 
 
@@ -73,7 +73,7 @@ If you need to switch to a different project, choose the ![ ](../../media/icons/
 
 ::: moniker range=">= azure-devops-2019"
 
-To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**. 
+To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. 
 
 The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
@@ -114,7 +114,7 @@ This example shows how to add the Velocity widget available from Analytics to a 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
 
-	If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+	If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 1. Make sure that the [Analytics Marketplace extension](../dashboards/analytics-extension.md) has been installed. The Analytics widgets won't be available until it is installed.  
 
@@ -154,7 +154,7 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Additional information is provided to configure the following widgets: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)
@@ -197,7 +197,7 @@ Just as you have to be a team or project admin to add items to a dashboard, you 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-Choose ![ ](media/icons/edit-icon.png) **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
+Choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 
 To remove a widget, choose the ![actions icon](../../media/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 

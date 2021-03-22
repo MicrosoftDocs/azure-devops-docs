@@ -1,25 +1,25 @@
-﻿---
+---
 title: LinksControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2017 < azure-devops'
 ms.date: 06/25/2019
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-**Azure DevOps Services (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)**
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
+By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.   
 
 > [!IMPORTANT]  
-> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
+> This article applies to project customization for On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
 > Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
-
-By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.    
 
 The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
 
@@ -33,7 +33,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 
 ## Summary of what's changed
 
-The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](https://msdn.microsoft.com/library/aa337625.aspx). Overall, it's a much simpler syntax structure than its predecessor. 
+The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md?viewFallbackFrom=vsts). Overall, it's a much simpler syntax structure than its predecessor. 
 
 
 > [!div class="mx-tdBreakAll"]  

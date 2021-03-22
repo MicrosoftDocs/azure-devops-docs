@@ -1,11 +1,15 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 
 ## Velocity 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 When you assign your backlog items to sprints, you'll gain access to an in-context velocity report for both product and portfolio backlogs. Velocity helps teams determine how much work they can perform sprint-over-sprint. 
 
@@ -16,7 +20,7 @@ You can quickly configure the Velocity report to count work items or sum Story P
 
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops-2020"
 
 When you assign your product backlog items to sprints, you'll gain access to an in-context velocity report for your product backlog. Velocity helps teams determine how much work they can perform sprint-over-sprint.  
 
@@ -27,5 +31,5 @@ The report tracks the team's estimated backlog work&mdash;sum of Effort (Basic o
 ::: moniker-end 
 
 To learn more, see the following articles: 
-- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)  
-- [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)  
+- [View or configure team velocity](../../report/dashboards/team-velocity.md)  
+- [Velocity metrics and usage guidance](../../report/dashboards/velocity-guidance.md)

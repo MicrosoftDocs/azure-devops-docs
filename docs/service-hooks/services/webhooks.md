@@ -1,30 +1,36 @@
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
-title: WebHooks with Azure DevOps Services
-description: Use WebHooks with your Azure DevOps Services organization
+title: Webhooks with Azure DevOps
+description: Use webhooks with your Azure DevOps organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 07/27/2020
 ---
 
-# Web Hooks
+# Webhooks
 
-Web Hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+
+Webhooks provide a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 
 For more information about the JSON payloads posted by this consumer, see [events](../events.md).
+
+## Prerequisites
+
+Only organization Owners or Project Collection Administrators can manage webhooks for an organization.
 
 ## Send JSON representation to a service
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
+1. Go to your project **Service hooks** page: 
 
 	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./media/add-devops-service-hook.png)
+	![Screenshot of the most recent version of the Project administration page](./media/add-devops-service-hook.png)
 
-	Select **Create Subscription**.
+	Select **Create subscription**.
 
 1.  Select and configure the Azure DevOps Services event:
 
@@ -32,11 +38,11 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 1. Configure what to do when the event occurs:
 
-	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
+	See the following [Q & A](#q--a) for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
 	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
-1. Test the service hook subscription and finish the wizard:
+2. Test the service hook subscription and finish the wizard:
 
 	![Test it](./media/webhooks/test.png)
 
@@ -48,7 +54,7 @@ For more information about the JSON payloads posted by this consumer, see [event
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./media/add-service-hook.png)
+	![Screenshot of the Project administration page](./media/add-service-hook.png)
 
 	Select **Create Subscription**.
 
@@ -58,23 +64,24 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 1. Configure what to do when the event occurs:
 
-	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
+	See the following [Q & A](#q--a) for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
 	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
-1. Test the service hook subscription and finish the wizard:
+2. Test the service hook subscription and finish the wizard:
 
 	![Test it](./media/webhooks/test.png)
 
 ::: moniker-end
 
-Now the Web hook is set up. Go to the target service to view the JSON representation:
+Now the webhook is set up. Go to the target service to view the JSON representation:
 
 ![View the JSON representation](./media/webhooks/request-bin.png)
 
 
 ## Pricing
-Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+
+Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A
@@ -97,14 +104,14 @@ Sample JSON:
 
 ```json
 	{
-	    "event.type": "git.push",
+	    "eventType": "git.push",
 	    ...
 	    "messages": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
 	    },
-	    "detailedMessages": {
+	    "detailedMessage": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
@@ -120,18 +127,18 @@ Sample JSON:
 
 #### Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](../create-subscription.md).
+**A:** Yes, see details [here](../create-subscription.md).
 
-#### Q: Can I send web hooks to non HTTPS endpoints?
+#### Q: Can I send webhooks to non HTTPS endpoints?
 
-A: Yes. However, it's recommended that you only use HTTPS endpoints for your web hooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your web hook. 
+**A:** Yes. However, it's recommended that you only use HTTPS endpoints for your webhooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your webhook. 
 
-#### Q: Can I use basic authentication when setting up a web hook that isn't HTTPS?
+#### Q: Can I use basic authentication when setting up a webhook that isn't HTTPS?
 
-A: No. You must use HTTPS when utilizing basic authentication on a web hook. 
+**A:** No. You must use HTTPS when utilizing basic authentication on a webhook. 
 
-#### Q: Can we use localhost or special range IPs as web hook targets?
+#### Q: Can we use localhost or special range IPs as webhook targets?
 
-A: No. Web hooks cannot target localhost (loopback) or special range [IPv4](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml)/[IPv6](https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) addresses. 
+A: No. Webhooks can't target localhost (loopback) or special range [IPv4](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml)/[IPv6](https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) addresses. 
 
 <!-- ENDSECTION -->

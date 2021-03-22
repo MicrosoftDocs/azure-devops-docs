@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.author: kaelli
 ms.date: 04/16/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # FAQs about signing up and getting started
@@ -28,17 +28,15 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2019"
-
 ## How do I get started on-premises?
+
+::: moniker range=">= azure-devops-2019"
 
 - Download and install [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-## How do I get started on-premises?
 
 - To get started with an on-premises instance, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). 
 - [Configure the installation](/azure/devops/server/install/get-started), which creates a default  collection.
@@ -51,10 +49,10 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)  
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
-- [Visual Studio Code](../java/vscode-extension.md)
+- [Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)  
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+- [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
 
 ::: moniker-end
 
@@ -72,7 +70,7 @@ See about [sharing code](roles.md#software-developers).
 
 ## How do I track work?
 
-See [Plan and track work](plan-track-work.md).
+See [Plan and track work](../boards/get-started/plan-track-work.md).
 
 ## What do I do as an admin?
 
@@ -100,9 +98,9 @@ Yes. You can connect to a project from one of the following clients:
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (requires Team Foundation add-in)  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  (requires Team Foundation add-in)  
-- [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)
+- [Project Professional](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server)
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (requires Team Foundation add-in)  
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx)  
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140))  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
 
@@ -111,7 +109,7 @@ Yes. You can connect to a project from one of the following clients:
 ::: moniker range="tfs-2017"
 
 >[!NOTE]  
->Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details.  
+>Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.  
 >Test Manager is deprecated for TFS 2017.
 
 You can also find several open-source clients that have been added to [Marketplace extensions](https://marketplace.visualstudio.com). For example, you can install extensions to Visual Studio that support additional features:
@@ -126,7 +124,7 @@ You can also find several open-source clients that have been added to [Marketpla
 
 ::: moniker range="<= tfs-2015"
 
-- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provides enhancements, tools, and command-line utilities that support increased productivity.
+- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.
 
 ::: moniker-end
 
@@ -146,7 +144,5 @@ See [Troubleshoot connection](troubleshoot-connection.md).
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only)
-
-

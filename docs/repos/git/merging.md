@@ -4,18 +4,16 @@ titleSuffix: Azure Repos
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Resolve merge conflicts
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
+When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes in the other.
 Git attempts to resolve these changes by using the [history](review-history.md) in your repo to determine what the merged files should look like.
 When it isn't clear how to merge changes, Git halts the merge and tells you which files conflict. 
 
@@ -27,12 +25,12 @@ In this tutorial you learn how to:
 
 ## Understand merge conflicts
 
-The following image shows a very basic example of how changes conflict in Git. Both the master and bugfix branch make updates to the same lines of source code.
+The following image shows a very basic example of how changes conflict in Git. Both the main and bugfix branch make updates to the same lines of source code.
 
-![Master and bugfix branch have changes that conflict](media/merge-conflict.png)    
+![Main and bugfix branch have changes that conflict](media/merge-conflict.png)    
 
-If you try to merge the bugfix branch into master, Git can't determine which changes to use in the merged version. You may want to keep the changes
-in the master branch, the bugfix branch, or some combination of the two. Resolve this conflict with a merge commit on the master branch
+If you try to merge the bugfix branch into main, Git can't determine which changes to use in the merged version. You may want to keep the changes
+in the main branch, the bugfix branch, or some combination of the two. Resolve this conflict with a merge commit on the main branch
 that reconciles the conflicting changes between the two branches.
 
 ![Create a merge commit to resolve the conflict between the two branches](media/merge-conflict-resolved.png)
@@ -48,12 +46,16 @@ Git keeps an entire history of all changes made in your repo. Git uses this hist
 ### Preventing merge conflicts
 
 Git is very good at automatically merging file changes in most circumstances, provided that the file contents don't change dramatically between commits.
-Consider [rebasing](rebase.md) branches before you open up a [pull request](pullrequest.md) if your branch is far behind your main branch.
+Consider [rebasing](rebase.md) branches before you open up a [pull request](pull-requests.md) if your branch is far behind your main branch.
 Rebased branches will merge into your main branch without conflicts.
 
 ## Resolve merge conflicts 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+
 1. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
 2. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
 
@@ -98,8 +100,7 @@ Resolve merge conflicts on the command line:
     > git log --merge
     commit fac422e78f105ccb44b50a00fc82d6ea89b15513
     Merge: 9b28b1e 1dd2603
-    Author: Francis Totten frank@fabrikam.com
-
+    
         merging new api endpoint
     ```
 

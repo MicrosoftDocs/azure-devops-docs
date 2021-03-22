@@ -7,7 +7,7 @@ ms.topic: include
 Editing wiki pages is now easier with synchronous scroll between the edit and the preview pane. Scrolling on one side will automatically scroll the other side to map the corresponding sections. You can disable the synchronous scroll with the toggle button. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_06.png)
+> ![Synchronous scroll for editing wiki pages.](../../media/160_06.png)
 
 > [!NOTE]
 > The state of the synchronous scroll toggle is saved per user and account.
@@ -19,7 +19,7 @@ You can now get insights into the page visits for wiki pages. The REST API let y
 You will also see an aggregated page visits count for the last 30 days in every page.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_13.png)
+> ![Page visits for wiki pages.](../../media/160_13.png)
 
 > [!NOTE]
 > A page visit is defined as a page view by a given user in a 15-minute interval.

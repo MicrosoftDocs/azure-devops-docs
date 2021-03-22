@@ -33,16 +33,16 @@ You can build every commit and pull request to your Git repository using Azure P
 
 ## Set up a CI trigger for a topic branch
 
-A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.
+A common workflow with Git is to create temporary branches from your main branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the main branch and delete the topic branch.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `feature/*` branches to be automatically built.
+Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `main` branch. This will cause any changes to `main` and `feature/*` branches to be automatically built.
 
 ```yaml
 trigger:
-- master
+- main
 - feature/*
 ```
 ::: moniker-end
@@ -55,10 +55,10 @@ YAML builds are not yet available on TFS.
 Follow the steps below to create a CI trigger that will run a build for feature branches.
 
 1. Select **Pipelines**, and then choose **Builds**.
-2. Locate the build pipeline that services your master branch. Select **Edit**.
+2. Locate the build pipeline that services your main branch. Select **Edit**.
 3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
 4. Select the **+ Add** icon under **Branch filters**.
-5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. 
+5. Under the **Branch specification** dropdown, type `feature/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the main branch. 
 
    > [!NOTE] 
    > Note that the filtered list of branches may not populate as you type `*`. 
@@ -69,7 +69,7 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 * * *
 ## Automatically build a change in topic branch
 
-You're now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
+You're now ready for CI for both the main branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
 
 Follow the steps below to edit a file and create a new topic branch.
 
@@ -79,20 +79,20 @@ Follow the steps below to edit a file and create a new topic branch.
 1. Navigate to the **Pipelines** menu in Azure Pipelines or TFS and select **Builds**.
 1. Select the build pipeline for this repo. You should now see a new build executing for the topic branch. This build was initiated by the trigger you created earlier. Wait for the build to finish.
 
-Your typical development process includes developing code locally and periodically pushing to your remote topic branch.  Each push you make results in a build pipeline executing in the background.  The build pipeline helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
+Your typical development process includes developing code locally and periodically pushing to your remote topic branch.  Each push you make results in a build pipeline executing in the background.  The build pipeline helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to main.  Practicing CI for your topic branches helps to minimize risk when merging back to main.
 
 ## Exclude or include tasks for builds based on the branch being built
 
-The master branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in Azure Pipelines or TFS so that certain tasks only execute on your master branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
+The main branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in Azure Pipelines or TFS so that certain tasks only execute on your main branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
 
 #### [YAML](#tab/yaml/)
-Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
+Edit the `azure-pipelines.yml` file in your `main` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 - task: PublishBuildArtifacts@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 ::: moniker-end
 ::: moniker range="< azure-devops"
@@ -102,7 +102,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-1. Locate the build pipeline that services your master branch. Select **Edit**.
+1. Locate the build pipeline that services your main branch. Select **Edit**.
 2. Choose a task in your build pipeline. If you are following the .NET Core sample, then select the [**Publish Artifact**](../tasks/utility/publish-build-artifacts.md) task.
 3. Select **Control Options** for the task on the bottom right hand part of your screen.
 4. Select the dropdown for **Run this task** and choose **Custom conditions**.
@@ -111,30 +111,30 @@ YAML builds are not yet available on TFS.
 
 5. Enter the following snippet:
    ```
-   and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+   and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
    ```
 
 6. Select **Save & queue**.
-7. Choose your **topic branch**.  Select **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
+7. Choose your **topic branch**.  Select **Queue**.  We are not building the main branch, and the task for **Publish artifacts** will not execute.
 8. Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task.
 
 * * *
 ## Validate pull requests
 
-Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
+Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the main branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
 
 ### GitHub repository
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds. 
-For example, to run the build only for pull requests that target: `master` and `feature/*`:
+For example, to run the build only for pull requests that target: `main` and `feature/*`:
 
 ```yaml
 pr:
-- master
+- main
 - feature/*
 ```
 
@@ -149,10 +149,10 @@ YAML builds are not yet available on TFS.
 
 #### [Classic](#tab/classic/)
 1. Navigate to your project in Azure Pipelines or TFS. Select **Pipelines**, and then select **Builds**. Locate your build, and select **Edit**.
-1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.
+1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **main branch** under **Branch filters**.
 1. Select **Save & queue**, then select **Save**.
 1. Navigate to your GitHub account. Navigate to the main page for your **repository**.
-1. Select the **Branch** selector, and then type a name for a new branch and press enter. This will create a branch based on master.
+1. Select the **Branch** selector, and then type a name for a new branch and press enter. This will create a branch based on main.
 1. Edit a file in your new branch. **Commit** your change to the new branch.
 1. Select **Pull requests**. Select **New pull request**.
 1. Create the pull request. Navigate back to your build pipeline. A build will be queued or completed for the merge commit of your pull request.
@@ -161,8 +161,8 @@ YAML builds are not yet available on TFS.
 ### Azure Pipelines or TFS repository
 
 1.  Navigate to the **Repos** hub in Azure Repos or TFS.
-1.  Choose your **repository** and select **Branches**.  Choose the **master branch**.
-1.  You will implement a branch policy to protect the master branch.  Select the **ellipsis** to the right of your branch name and select **Branch policies**.
+1.  Choose your **repository** and select **Branches**.  Choose the **main branch**.
+1.  You will implement a branch policy to protect the main branch.  Select the **ellipsis** to the right of your branch name and select **Branch policies**.
 1.  Choose the checkbox for **Protect this branch**.  There are several options for protecting the branch.   
 1.  Under the **Build validation** menu choose **Add build policy**.
 1.  Choose the appropriate build pipeline.
@@ -170,11 +170,11 @@ YAML builds are not yet available on TFS.
 1.  Enter a descriptive **Display name** to describe the policy.  
 1.  Select **Save** to create and enable the policy.  Select **Save changes** at the top left of your screen.
 1. To test the policy navigate to the **Pull request** menu in Azure Pipelines or TFS.
-1. Select **New pull request**.  Ensure your topic branch is set to merge into your master branch.  Select **create**.
+1. Select **New pull request**.  Ensure your topic branch is set to merge into your main branch.  Select **create**.
 1. Your screen displays the **policy** being executed.  
-1. Select the **policy name** to examine the build.  If the build succeeds your code will be merged to master.  If the build fails the merge is blocked.
+1. Select the **policy name** to examine the build.  If the build succeeds your code will be merged to main.  If the build fails the merge is blocked.
 
-Once the work is completed in the topic branch and merged to master, you can delete your topic branch.  You can then create additional feature or bug fix branches as necessary.
+Once the work is completed in the topic branch and merged to main, you can delete your topic branch.  You can then create additional feature or bug fix branches as necessary.
 
 ## Use retention policies to clean up your completed builds
 

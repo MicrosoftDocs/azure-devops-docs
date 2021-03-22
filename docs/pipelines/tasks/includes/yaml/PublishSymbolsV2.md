@@ -1,7 +1,7 @@
 ---
 ms.topic: include
-author: PBoraMSFT
-ms.author: pbora
+author: shashban
+ms.author: shashban
 ms.date: 12/17/2019
 ms.prod: devops
 ms.technology: devops-cicd-tasks

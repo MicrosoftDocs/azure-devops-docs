@@ -16,5 +16,5 @@ ms.topic: include
 - [Azure Kubernetes Service Cluster link in Kubernetes environments resource view](#azure-kubernetes-service-cluster-link-in-kubernetes-environments-resource-view)
 - [Release folder filters in notification subscriptions](#release-folder-filters-in-notification-subscriptions)
 - [Deploy external Git repositories to Azure Kubernetes Services (AKS)](#deploy-external-git-repositories-to-azure-kubernetes-services-aks)
-- [Support for BitBucket repositories in DevOps Projects](#support-for-bitbucket-repositories-in-devops-projects)
+- [Support for Bitbucket repositories in DevOps Projects](#support-for-bitbucket-repositories-in-devops-projects)
 - [Select a Dockerfile in deployment center for AKS and WebApp Containers](#select-a-dockerfile-in-deployment-center-for-aks-and-webapp-containers)

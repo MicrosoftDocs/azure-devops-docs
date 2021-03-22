@@ -18,7 +18,7 @@ In the __Sprint 121 Update__ we’re introducing the native Wiki in Visual Studi
 - [Improved exploratory testing traceability](#exploratory-testing-traceability-improvements-for-work-item-links-iterations-and-area-paths) - Improved testing work item defaults and linking
 - Filter consistency across [boards](#filtering-on-kanban-board) and [test cases](#filters-for-test-case-work-items-in-test-plans-and-suites-in-test-hub) - Find the work items you care about quickly.
 
-We will also start asking a few of you for feedback from within VSTS to help us make the product better. Read more about in-product feedback in the [Feedback](#feedback) section below.
+We will also start asking a few of you for feedback from within VSTS to help us make the product better. Read more about in-product feedback in the [How to provide feedback](#how-to-provide-feedback) section below.
 
 ## Work
 ### Copy work item processes
@@ -160,7 +160,7 @@ In the dialog, select the service that’s posting the status from the list and 
 
 Once the policy is active, the status will be shown in the __Policies__ section, under __Required__ or __Optional__ as appropriate, and the PR completion will be enforced as appropriate. 
 
-To learn more about the status API, and to try it out for yourself, check out the [documentation](https://go.microsoft.com/fwlink/?linkid=854107) and [samples](https://go.microsoft.com/fwlink/?linkid=854108).
+To learn more about the status API, and to try it out for yourself, check out the [documentation](/rest/api/azure/devops/git/pull%20request%20statuses) and [samples](/azure/devops/repos/git/create-pr-status-server).
 
 ## Build
 ### Let contributed build sections control section visibility
@@ -257,7 +257,7 @@ To install an extension, you had to copy install command and then browse to **Vi
 
 ![Visual Studio Code install](media/08_04_24.png)
 
-## Feedback
+## How to provide feedback
 With this release, we will begin asking a small subset of you for feedback on VSTS using the industry standard “how likely are you to recommend” question, followed by an optional explanation. We expect this will give us insight into how you are feeling about VSTS overall on a regular basis so that we can learn quickly from both encouraging and critical feedback. We expect this will be a more accurate and timely approach than the email surveys we’ve relied on thus far to collect this type of feedback. 
 
 As we roll this out, we are extremely mindful to guard against this becoming too annoying or getting in the way of your use of VSTS. We will only prompt the minimum number of people necessary to collect statistically relevant results for each major release. To further minimize interruptions, we’ll only ask people who visit the account and project home pages. Also, if you dismiss or click out of the dialog, we’ll prompt only a couple more times before we stop prompting you. We promise to ask you for feedback only once every 3 months and likely even less frequently, based on overall response rates. We also promise to read all the feedback, look for trends, and share the high-level insights with you from time to time.  

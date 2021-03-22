@@ -8,16 +8,15 @@ ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
+ms.date: 12/02/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Billing overview for Azure DevOps
 
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-ts-tfs-2015-2016.md)]
-
-[Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies.
+[Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features offered by Microsoft or other companies.
 
 The *free tier* includes:
 
@@ -25,10 +24,9 @@ The *free tier* includes:
 
 ::: moniker range="azure-devops"
 
-All charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
+All charges appear on your monthly Azure bill. Azure supports payment by credit card and invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
 
 * [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
-* [Azure DevOps billing overview](overview.md)
 
 ::: moniker-end
 
@@ -49,24 +47,23 @@ The following links take you to the paid services that are offered by Microsoft:
 
  * [Buy Basic access for users](buy-basic-access-add-users.md)
  * [Buy Azure Test Plans](buy-basic-access-add-users.md)
- * [Buy CI/CD](buy-more-build-vs.md)
+ * [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
  * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
- * [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
-
-Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
+
+Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
-Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
+To [set up billing](set-up-billing-for-your-organization-vs.md) for the first time, you need the following permission and subscription:
 
-* User has [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
-* User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
+* [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+* [An Azure subscription that you can use to make purchases](add-backup-billing-managers.md)
 
-To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
+To make changes afterward to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).
 
 ## Next steps
 

@@ -2,7 +2,48 @@
 ms.topic: include
 ---
 
-::: moniker range=">= tfs-2017"  
+::: moniker range="azure-devops"  
+
+<table>
+<tr valign="bottom">
+<th width="41%">Task</th>
+<th width="15%">Stakeholders</th>
+<th width="12%">Readers</th>
+<th width="15%">Contributors</th>
+<th width="17%">Project admins</th>
+</tr>
+<tbody valign="top" align="center">
+<tr>
+<td align="left">View delivery plans 
+</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td align="left">Create, edit, or delete a delivery plan<br/><em>(Contributors can only edit or delete plans that they create)</em>
+</td>
+<td></td>
+<td> </td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td align="left">Manage permissions for a delivery plan<br/><em>(Contributors can only manage permissions for plans that they create)</em>
+</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table>
+  
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 <table>
 <tr valign="bottom">
@@ -17,17 +58,17 @@ ms.topic: include
 <td align="left">View delivery plans 
 </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Create, edit, or delete a delivery plan<br/><em>(Contributors can only edit or delete plans that they create)</em>
 </td>
 <td></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Manage permissions for a delivery plan<br/><em>(Contributors can only manage permissions for plans that they create)</em>
@@ -35,7 +76,7 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 </tbody>
 </table>

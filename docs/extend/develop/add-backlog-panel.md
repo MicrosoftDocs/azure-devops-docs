@@ -4,7 +4,7 @@ description: Extend Azure DevOps Services with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
@@ -12,7 +12,9 @@ ms.date: 08/22/2016
 
 # Add panels on backlog pages
 
-In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
+Here, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -82,7 +84,7 @@ For each contribution in your extension, the manifest defines
 | registeredObjectId | Id of the object registered for the panel                                             |    
 
 
-Learn about all of the places where you can add an extension in the [contributions reference](../reference/targets/overview.md).
+Learn about all of the places where you can add an extension in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 ### Scopes
 Include the [scopes](manifest.md#scopes) that your extension requires.
@@ -112,7 +114,7 @@ To get selection events (information about what work items are selected) impleme
     </div>
     <div style="vertical-align:top;display:inline-block;float:left;width:50%">
         <div class="index-button" align="left" style="padding-left:10px">
-        <a href="../test/debug-in-browser.md"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Test and Debug</button></a>
+        <a href="/previous-versions/azure/devops/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Test and Debug</button></a>
         </div>
     </div>
 </div>

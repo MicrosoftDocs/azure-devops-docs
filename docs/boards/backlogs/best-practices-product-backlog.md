@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Refine your backlog  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 
@@ -106,7 +106,6 @@ A meeting to refine the backlog should occur separate from the sprint planning m
 
 You'll know that you've done a good job refining your backlog when your sprint planning meetings run smoothly and efficiently. Such meetings shouldn't contain a lot of surprises, and your team should feel they can contribute fully.    
 
-[Refining your Agile backlogs for success](https://www.batimes.com/robert-galen/grooming-your-agile-backlogs-for-success.html) provides a nice quality checklist to guide your backlog refinement efforts
 
 
 <a name="spikes"></a>

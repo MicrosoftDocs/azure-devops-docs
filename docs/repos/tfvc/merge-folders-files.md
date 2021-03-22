@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge folders and files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -82,7 +80,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 2. Right-click the selected item and click **View History**.
 
-3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
+3. In the **History** window, right-click the changeset you want to view and select **Track Changeset**.
 
    The **Select Branches** dialog box appears.
 
@@ -106,7 +104,7 @@ Tracking Changeset Window: Merge to Parent Branch
 
 ![Tracking Changeset window: merge to parent branch](media/merge-folders-files/IC269735.png)
 
-From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 50 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
+From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 51 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
 
 <a name="sourcecontrolwizard"></a>
 
@@ -152,7 +150,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
         </tbody>
         </table>
 
-    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
+    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch** page appears. Select the changeset you want to merge.
 
         > [!TIP]
         > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
@@ -167,16 +165,10 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     2.  Use the Pending Changes window to check in the changes. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
-## See Also
 
-#### Other Resources
-
- [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
-
- [Merge Command](merge-command.md) 
-
- [Merges Command](merges-command.md) 
-
- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+## Related articles
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
+-  [Merge Command](merge-command.md) 
+-  [Merges Command](merges-command.md) 
+-  [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 > [!div class="mx-imgBorder"] 
 > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
-To learn more, see [Configure and monitor sprint burndown ](configure-sprint-burndown.md).  
+To learn more, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
 
 
 ## Cumulative Flow Diagram (CFD)

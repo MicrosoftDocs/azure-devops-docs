@@ -6,7 +6,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/28/2020
+ms.date: 01/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -61,17 +61,17 @@ The following list shows the key benefits of this task:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
-    <td>(Required)<br/>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
     <br/>
     The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
-    <td>(Required)<br/>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
@@ -79,7 +79,7 @@ The following list shows the key benefits of this task:
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -111,7 +111,7 @@ The following list shows the key benefits of this task:
     <br/>
     Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/>
     <br/>
-    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md)">TrafficSplit</a> objects.
+    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/)">TrafficSplit</a> objects.
     <br/><br/>
     For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of a service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary. The calculation is a percentage of replicas that are specified in the input manifests for the stable variant.</td>
   </tr>
@@ -150,6 +150,13 @@ The following list shows the key benefits of this task:
     <br/>
     In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But baseline and canary variants don't receive three replicas each. They instead receive the specified number of replicas, which means they each receive one replica.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code is an example of deploying to a Kubernetes namespace by using manifest files:
@@ -161,7 +168,9 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/deployment.yml|manifests/service.yml
+    manifests: |
+      manifests/deployment.yml
+      manifests/service.yml
     containers: |
       foo/demo:$(tagVariable1)
       bar/demo:$(tagVariable2)
@@ -193,7 +202,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -211,7 +220,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -246,11 +255,11 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>secretType</b><br/>Secret type</td>
-    <td>(Required only if <b>action</b> is set to <b>secret</b>)<br/>
+    <td>(Required only if <b>action</b> is set to <b>createSecret</b>)<br/>
     <br/>
     Acceptable values are <b>dockerRegistry</b> and <b>generic</b>. The default value is <b>dockerRegistry</b>.<br/>
     <br/>
@@ -272,7 +281,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>secretArguments</b><br/>Secret arguments</td>
     <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set to <b>generic</b>)<br/>
     <br/>
-    Multiline input that accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
+    Accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
     <b>--from-literal=key1=value1</b>
     <b>--from-literal=key2=&quot;top secret&quot;</b>
     </td>
@@ -334,7 +343,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>renderType</b><br/>Render engine</td>
@@ -419,7 +428,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kind</b><br/>Kind</td>
@@ -451,6 +460,13 @@ steps:
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code shows an example of scaling objects:
@@ -480,7 +496,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and  <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>resourceToPatch</b><br/>Resource to patch</td>
@@ -537,6 +553,13 @@ steps:
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code shows an example of object patching:
@@ -568,7 +591,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>arguments</b><br/>Arguments</td>
@@ -608,7 +631,7 @@ steps:
 
 ### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
 
-You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops#agent-ip-ranges)
+You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](../../agents/hosted.md#agent-ip-ranges)
 
 ## Open source
 

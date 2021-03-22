@@ -38,7 +38,7 @@
                 { text: "Property key", index: "key", width: 150 },
                 { text: "Property value", index: "value", width: 600 }
             ],
-            // This data source is rendered into the Grid columns defined above
+            // This data source is rendered into the Grid columns defined previously
             source: dataSource
         });
 		VSS.notifyLoadSucceeded();

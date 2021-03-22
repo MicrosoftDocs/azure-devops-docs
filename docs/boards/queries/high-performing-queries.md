@@ -15,7 +15,7 @@ ms.date: 09/26/2019
 
 # Guidance to create high-performing queries  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
 
@@ -81,6 +81,6 @@ Saved queries have a higher chance of performing better due to internal optimiza
 - [Service limits and rate limits](../../user-guide/service-limits.md) 
 - [Create managed queries](using-queries.md)
 - [Query fields, operators & macros](query-operators-variables.md)
-- [WIQL syntax](wiql-syntax.md)
+- [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
 - [az boards query command](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query)

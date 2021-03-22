@@ -1,11 +1,9 @@
 ---
 title: PyPI Publisher task (Deprecated)
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
-ms.author: macoope
-author: vtbassmatt
 ms.reviewer: dastahel
 ms.date: 5/7/2018
 monikerRange: azure-devops
@@ -25,7 +23,7 @@ The task will install the `wheel` and `twine` packages with `python -m pip insta
 ## Deprecated
 
 > [!WARNING]
-> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../targets/pypi.md). 
+> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../artifacts/pypi.md). 
 
 ## Demands
 

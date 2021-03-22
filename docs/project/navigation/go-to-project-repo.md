@@ -21,13 +21,28 @@ Several features depend on the project, repository, or team that you have select
 
 Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
+## Prerequisites 
+ 
+* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+ 
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
+
+
 <a id="projects">  </a>
+
 ## View and open a project 
+
 From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](../../media/settings/open-projects-page-vert-brn.png)
@@ -37,14 +52,14 @@ From the **Projects** page you can quickly navigate to a project that you have p
 1. Hover over the dots and you can open the service of interest for that project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, Azure DevOps logo](media/projects-page/projects-page-vert.png)
+	> ![Open the service of interest for that project.](media/projects-page/projects-page-vert.png)
 
 1. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](media/projects-page/filter-projects-vert.png) 
 
-1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](../../organizations/projects/media/create-project/projects-hub-vert-create-project.png) 
@@ -55,7 +70,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
 
-1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](../../media/settings/open-project-hub-horz.png)
@@ -75,7 +90,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](media/projects-page/account-home-search-projects-fabrikam.png) 
 
-3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](media/projects-page/account-home-projects-new-project.png) 
@@ -130,7 +145,7 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 
 
 ::: moniker range="tfs-2018"
-You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
+You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
 
 ![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 ::: moniker-end
@@ -138,9 +153,9 @@ You can switch your team focus to one that you've recently viewed from the proje
 ::: moniker range="tfs-2017" 
 <a id="switch-context-tfs-2017-1" /> 
 ### TFS 2017.1 
-To switch your team focus to a project or team you've recently viewed, hover over the ![ ](../../media/icons/project-icon.png) Azure DevOps logo and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
+To switch your team focus to a project or team you've recently viewed, hover over the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
 
-![Choose another team from the project menu](../../media/work-web-portal-tfs-2017-1-switch-team-focus.png) 
+![Choose another team from the project menu in TFS 2017.1.](../../media/work-web-portal-tfs-2017-1-switch-team-focus.png) 
 
 
 ### TFS 2017
@@ -148,7 +163,7 @@ To switch your team focus to a project or team you've recently viewed, hover ove
 
 Open the project/team drop-down menu and select the project/team that you've recently visited. If you don't see the team or project you want, choose **Browse all** to browse all projects and teams. 
 
-![Choose another team from the project menu](../../media/switch-context-tfs-2017.png)   
+![Choose another team from the project menu in TFS 2017.](../../media/switch-context-tfs-2017.png)   
 
 ::: moniker-end
 

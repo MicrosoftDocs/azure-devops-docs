@@ -7,14 +7,14 @@ ms.topic: include
 Work item rules let you set specific actions on work item fields to automate their behavior. You can create a rule to set a field to read-only or required based on group membership. For example, you may want to grant product owners the ability to set the priority of your features while making it read-only for everyone else.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_02.png)
+> ![Rules for group membership.](../../media/156_02.png)
 
 ### Customize system picklist values
 
 You can now customize the values for any system picklist (except the reason field) such as Severity, Activity, Priority, etc. The picklist customizations are scoped so that you can manage different values for the same field for each work item type.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_03.gif)
+> ![Customize system picklist values.](../../media/156_03.gif)
 
 ### New work item URL parameter
 
@@ -29,7 +29,7 @@ As we listened to your feedback, we heard that you wanted the ability to mention
 You can see an example here.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_04.png)
+> ![Example of long text fields.](../../media/156_04.png)
 
 * To use people mentions, type the **@** sign and the person's name you want to mention. @mentions in work item fields will generate email notifications like what it does for comments.
 * To use work item mentions, type the **#** sign followed by the work item ID or title. #mentions will create a link between the two work items.
@@ -40,16 +40,16 @@ You can see an example here.
 One of our main goals is to make the work items more collaborative for teams. Recently we conducted a [poll on Twitter](https://twitter.com/AzureDevOps/status/1101157288520413185) to find out what collaboration features you want in discussions on the work item. Bringing reactions to comments won the poll, so we add them! Here are the results of the Twitter poll.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_08.png)
+> ![Results of the Twitter poll.](../../media/156_08.png)
 
 You can add reactions to any comment, and there are two ways to add your reactions – the smiley icon at the top right corner of any comment, as well as at the bottom of a comment next to any existing reactions. You can add all six reactions if you like, or just one or two. To remove your reaction, click on the reaction on the bottom of your comment and it will be removed. Below you can see the experience of adding a reaction, as well as what the reactions look like on a comment.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_09.png)
+> ![Add reactions to comments.](../../media/156_09.png)
 
 ### Pin Azure Boards reports to the dashboard
 
-In the Sprint 155 Update, we included [updated versions of the CFD and Velocity reports](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-155-update?branch=releasenotes%2Fsprint-156-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports). These reports are available under the Analytics tab of Boards and Backlogs. Now you can pin the reports directly to your Dashboard. To pin the reports, hover over the report, select the ellipsis "..." menu, and **Copy to Dashboard**.
+In the Sprint 155 Update, we included [updated versions of the CFD and Velocity reports](../../sprint-155-update.md?branch=releasenotes%2fsprint-156-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports). These reports are available under the Analytics tab of Boards and Backlogs. Now you can pin the reports directly to your Dashboard. To pin the reports, hover over the report, select the ellipsis "..." menu, and **Copy to Dashboard**.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_13.png)
+> ![Pin Azure Boards reports to the dashboard.](../../media/156_13.png)

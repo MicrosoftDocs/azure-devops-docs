@@ -8,7 +8,7 @@ ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/13/2020
+ms.date: 10/01/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -18,19 +18,19 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn about controlling access to your organization via Azure Active Directory (Azure AD).
+Learn about controlling access to your organization via Azure Active Directory (Azure AD).
 If your organization was created with a Microsoft account, connect your organization to your [Azure Azure AD](/azure/active-directory/fundamentals/active-directory-whatis).
 Sign in to Azure DevOps Services with the same username and password that you use with your Microsoft services.
 Enforce policies for accessing your team's critical resources and key assets.
 
 > [!NOTE]
-> To use existing on-premises identities with Azure DevOps, you can integrate directories with Azure AD by using [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/). To switch your organization to another directory, learn [how to change your directory in Azure AD](change-azure-ad-connection.md).
+> To use existing on-premises identities with Azure DevOps, you can integrate directories with Azure AD by using [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). To switch your organization to another directory, learn [how to change your directory in Azure AD](change-azure-ad-connection.md).
 
 ## How Azure AD controls access to Azure DevOps
 
 Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
-Disabled or removed users from your directory have no access to your organization by any mechanism. Mechanisms include PATs, SSH, or any other alternate credentials.
-Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) manage users in your directory, so they control who gets access to your organization.
+Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or SSH.
+Only specific [Azure AD administrators](/azure/active-directory/roles/permissions-reference) manage users in your directory, so they control who gets access to your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
 
@@ -40,13 +40,13 @@ Without Azure AD, you're solely responsible for controlling organization access.
 
 ### Q: What do I need to set up an existing Azure DevOps Services instance with Azure AD?
 
-A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](https://docs.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
+A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md?view=azure-devops&preserve-view=true).
 
 ### Q: What happens to current users?
 
 A: Your work in Azure DevOps Services is associated with your credentials for Azure AD.
 After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory.
-If users' addresses don't appear, you must [add those users to your directory](add-users-to-azure-ad.md#SetUpCurrentUsers). Your organization might have policies about adding users to the directory, so find out more first.
+If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
 
 ### Q: What if we can't use the same sign-in addresses?
 
@@ -54,7 +54,7 @@ A: Add these users to the directory with new work or school accounts, and reassi
 
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
-A: Alternate credentials won't work anymore for tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected. See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
+A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: What if I accidentally delete a user in Azure AD?
 
@@ -62,9 +62,8 @@ A: [Restore the user](/azure/active-directory/active-directory-users-restore), r
 
 ## Related articles
 
-* [Add Azure DevOps Services users to Azure AD](add-users-to-azure-ad.md)
-* [Connect your organization to Azure AD](connect-organization-to-aad.md)
-* [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
+* [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+* [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md)
+* [Disconnect your organization from Azure AD](./disconnect-organization-from-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-

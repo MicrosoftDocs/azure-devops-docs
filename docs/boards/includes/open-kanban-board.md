@@ -4,12 +4,12 @@ ms.topic: include
 
 
 > [!NOTE]  
-> Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board).
+> Both Kanban boards and Taskboards support visualizing the flow of work and monitoring metrics to optimize that flow. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).
 
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. The other is the sprint Taskboard. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board). For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans).
+Your Kanban board is one of two types of boards available to you. The other is the sprint Taskboard. Kanban boards track requirements, are sprint-independent, and provide a cumulative flow chart for monitoring progress. Each sprint is associated with a Taskboard that supports tracking tasks defined for the sprint. You can monitor progress through capacity charts and the sprint burndown chart. For guidance on using the Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md). For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).
 
 
 ::: moniker range="azure-devops"
@@ -24,14 +24,14 @@ Your Kanban board is one of two types of boards available to you. The other is t
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board).  
+To switch to the [product backlog](../backlogs/create-your-backlog.md), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
 ::: moniker-end
 
@@ -49,14 +49,14 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board).  
+To switch to the [product backlog](../backlogs/create-your-backlog.md), select **Stories backlog**. To switch to a Taskboard, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -88,7 +88,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -100,4 +100,4 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	 
    > [!div class="mx-imgBorder"]  
    > ![TFS 2015, Kanban board, Agile template](/azure/devops/boards/boards/media/overview/kanban-basics-intro-tfs.png)  
-::: moniker-end   
+::: moniker-end

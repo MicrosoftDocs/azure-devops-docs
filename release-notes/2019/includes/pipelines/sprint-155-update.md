@@ -4,7 +4,7 @@ ms.topic: include
 
 ### kustomize and kompose as bake options in KubernetesManifest task
 
-[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
+[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
 
 ```YAML
 steps:
@@ -47,14 +47,14 @@ steps:
 Previously, the **HelmDeploy** task used the cluster user credentials for deployments. This resulted in interactive login prompts and failing pipelines for an Azure Active Directory based RBAC enabled cluster. To address this issue, we added a checkbox that lets you use cluster admin credentials instead of a cluster user credentials.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
+> ![Package and deploy Helm charts showing the use cluster admin credentials checkbox.](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
 
 ### Manage pipeline variables in YAML editor
 
 We updated the experience for managing pipeline variables in the YAML editor. You no longer have to go to the classic editor to add or update variables in your YAML pipelines.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_11.png)
+> ![Manage pipeline variables in YAML editor.](../../media/155_11.png)
 
 ### New predefined variables in YAML pipeline
 
@@ -79,12 +79,12 @@ We continue to improve multi-stage YAML pipelines, we now let you add manual app
 With complete segregation of roles between infrastructure (environment) and application (pipeline) owners, you will ensure manual sign off for deployment in a particular pipeline and get central control in applying the same checks across all deployments to the environment.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_24.png)
+> ![Approvals in multi-stage YAML pipelines.](../../media/155_24.png)
 
 The pipeline runs deploying to dev will stop for approval at the start of the stage.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_25.png)
+> ![Pipeline runs deploying to dev will stop for approval.](../../media/155_25.png)
 
 ### Updates to hosted pipelines images
 
@@ -114,7 +114,7 @@ For a full list of tools available for a particular image, go to **Settings > Ag
 In this update, we enhanced the DevOps Projects virtual machine (VM) workflow to include the VMs that don't comply with the per location quota restriction.  Previously, you had to choose the VM by name and offering. Now, you have an on-demand view with more details about the VM offerings such as cost/month, RAM, data disks etc. This makes it easier for you to select the virtual machine that you need.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_21.png)
+> ![Enhancements to DevOps Project for virtual machine.](../../media/155_21.png)
 
 ### Single hosted pool
 
@@ -135,14 +135,14 @@ Flaky tests can affect developers' productivity since test failures may not be r
 System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until its resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_13.png)
+> ![In-product support for flaky test management.](../../media/155_13.png)
 
 Here is an example of a report with the test summary. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_14.png)
+> ![Example of a report with the test summary.](../../media/155_14.png)
 
-For more details about flaky test management, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/test/flaky-test-management?view=azure-devops).
+For more details about flaky test management, see the documentation [here](/azure/devops/pipelines/test/flaky-test-management?view=azure-devops&preserve-view=true).
 
 ### Improvements to the Deployment Center for WebApp in the Azure Portal
 
@@ -164,7 +164,7 @@ Terraform is an open-source tool for developing, changing and versioning infrast
 To learn more about the Terraform extension, see the documentation [here](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_28.png)
+> ![Terraform integration with Azure Pipelines.](../../media/155_28.png)
 
 ### Integration with Google Analytics
 
@@ -175,7 +175,7 @@ The Google Analytics experiments extension for Azure DevOps adds experimentation
 You can download the [Google Analytics experiments extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.GoogleAnalytics) from the Marketplace. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_23.png)
+> ![Integration with Google Analytics.](../../media/155_23.png)
 
 ### Pipeline caching (public preview)
 
@@ -185,16 +185,16 @@ For more details, see the blog post with the full announcement [here](https://de
 
 ### Pipeline variable group and variable management commands
 
-It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines/variable-group?view=azure-cli-latest) and [variable](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines/variable?view=azure-cli-latest) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
+It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](/cli/azure/pipelines/variable-group?view=azure-cli-latest&preserve-view=true) and [variable](/cli/azure/pipelines/variable?view=azure-cli-latest&preserve-view=true) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
 
 ### Run pipeline for a PR branch
 
-When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines/build?view=azure-cli-latest#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
+When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](/cli/azure/pipelines/build?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
 
 ### Skip the first pipeline run
 
-When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](https://docs.microsoft.com/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-create) for more information.
+When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-create) for more information.
 
 ### Service endpoint command enhancement
 
-Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](https://docs.microsoft.com/cli/azure/ext/azure-devops/devops/service-endpoint?view=azure-cli-latest) for more information.
+Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](/cli/azure/devops/service-endpoint?view=azure-cli-latest&preserve-view=true) for more information.

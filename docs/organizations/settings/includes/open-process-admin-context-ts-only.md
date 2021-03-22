@@ -1,23 +1,26 @@
 ---
 ms.topic: include
+ms.author: kaelli
+author: KathrynEE
+ms.date: 07/17/2020
 ---
 
 <a id="open-process-wit"></a>
 
-## Organization Settings > Process
 
-You create, manage, and make customizations to processes from **Organization settings > Process**.
+## Open Settings>Process
 
-1. Choose the ![Azure DevOps logo](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**.
+You create, manage, and make customizations to processes from **Organization settings>Process**. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
-1. Under **Boards**, choose **Process**.
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
 
-    > [!div class="mx-imgBorder"]
-    > ![Organization Settings > Process page](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
+1. Then, choose **Process**. 
+   
+	> [!div class="mx-imgBorder"]  
+	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
-    > [!IMPORTANT]
-    > If you don't see **Process**, you're working from on-premises Team Foundation Server. The **Process** page isn't supported. You must use the features supported for the on-premises XML process model as described in [Customize your work tracking experience](/azure/devops/reference/customize-work).
-
+	> [!IMPORTANT]  
+	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/customize-work.md).

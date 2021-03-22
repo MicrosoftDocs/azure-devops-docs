@@ -1,24 +1,22 @@
-- name: witadmin command reference
-  items:
-  - name: witAdmin command reference
-    href: witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Import and export categories
-    href: witadmin-import-export-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Import and export global workflow
-    href: witadmin-import-export-global-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Import and export process configuration
-    href: witadmin-import-export-process-configuration.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: "Import, export, and manage work item types"
-    href: witadmin-import-export-manage-wits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Manage global lists for work item types
-    href: manage-global-lists-for-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Manage link types
-    href: manage-link-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Manage work item fields
-    href: manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Rebuild the client cache
-    href: rebuild-client-cache.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Remove work items permanently
-    href: remove-work-items-permanently.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Customize and manage the test experience
-    href: tcm-customize-manage-test-experience.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: witAdmin command reference
+  href: witadmin-customize-and-manage-objects-for-tracking-work.md
+- name: Import & export categories
+  href: witadmin-import-export-categories.md
+- name: Import & export global workflow
+  href: witadmin-import-export-global-workflow.md
+- name: Import & export process configuration
+  href: witadmin-import-export-process-configuration.md
+- name: "Import, export, & manage work item types"
+  href: witadmin-import-export-manage-wits.md
+- name: Manage global lists  
+  href: manage-global-lists-for-work-item-types.md
+- name: Manage link types
+  href: manage-link-types.md
+- name: Manage work item fields
+  href: manage-work-item-fields.md
+- name: Rebuild the client cache
+  href: rebuild-client-cache.md
+- name: Delete work items 
+  href: remove-work-items-permanently.md
+- name: Customize & manage the test experience
+  href: tcm-customize-manage-test-experience.md

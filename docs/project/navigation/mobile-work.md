@@ -1,4 +1,4 @@
-﻿---
+---
 title: View and update work items via a mobile browser 
 titleSuffix: Azure DevOps
 description: View and update work items from your mobile client when using Azure DevOps
@@ -14,7 +14,7 @@ ms.date: 08/02/2019
 
 #  View and update work items via the mobile browser   
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)] 
+[!INCLUDE [temp](../../boards/includes/version-azure-boards-plus-2018-2020.md)] 
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
@@ -27,10 +27,10 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || azure-devops-2019"
+::: moniker range="tfs-2018 < azure-devops"
 
 > [!NOTE]  
-> The mobile browser is available for Azure DevOps Server 2019 and TFS 2018. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
+> The mobile browser is available for TFS 2018 and Azure DevOps Server 2019 and later versions. For downloads, see [Downloads](https://visualstudio.microsoft.com/downloads/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ The mobile work item form will open when you click **View work item** from an em
 
 - Changes were made to a work item you're following
 - You were <strong>@mentioned</strong> in a discussion
-- A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). 
+- A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/manage-your-personal-notifications.md). 
 
 <img src="media/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />  
 
@@ -111,14 +111,14 @@ Then, click **Work items**.
 
 The browser opens to the **Assigned to me** page. From there, you can choose **Following** or **My activity** to access the other pages. To learn more about the **Work Items** view, see [View and add work items](../../boards/work-items/view-add-work-items.md). 
 
-![Mobile work item form, Change State action](media/mobile-work-account-work-items-pages.png)  
+![The browser opens to the Assigned to me page.](media/mobile-work-account-work-items-pages.png)  
 
 ## Related articles  
 
 Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
   
-- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)  
-- [Set team notifications](../../notifications/howto-manage-team-notifications.md)  
+- [Set personal notifications](../../notifications/manage-your-personal-notifications.md)  
+- [Set team notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Follow a work item](../../boards/work-items/follow-work-items.md)    
 
 
@@ -128,6 +128,4 @@ Help us improve the mobile experience.
 
 To provide feedback,  click the list control from the work item form and then click **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
 
-<img src="media/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" /> 
-
-
+<img src="media/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" />

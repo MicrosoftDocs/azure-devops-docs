@@ -65,7 +65,7 @@ This was a relatively new item requested on UserVoice and we’re happy to mark 
 
 The final change in this sprint’s deployment is an update to our login page so that it’s now a branded Team Foundation Service experience. This was something we got a lot of feedback on. The flow prior to this update used a generic Microsoft account sign in page. This created a somewhat confusing experience.
 
-![Multiple repositories](media/5_13_08.png)
+![Screenshot of branded login page.](media/5_13_08.png)
 
 That’s it for sprint 47. Let us know what you think. We're listening on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 

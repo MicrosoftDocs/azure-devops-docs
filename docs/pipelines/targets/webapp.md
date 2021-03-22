@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 04/15/2020
+ms.date: 09/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,7 +22,6 @@ You can automatically deploy your web app to an Azure App Service web app after 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> 
 > This guidance applies to Team Foundation Server (TFS) version 2017.3 and later.
 
 ::: moniker-end
@@ -107,7 +106,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a Java app
 
-If you're building a [Java app](../apps/java/build-gradle.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
+If you're building a [Java app](../ecosystems/java.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
 
 ```yaml
 - task: AzureWebApp@1
@@ -223,7 +222,7 @@ By default, your deployment happens to the root application in the Azure Web App
 ```
 
 * **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
-](https://azure.microsoft.com/documentation/articles/web-sites-configure/) for more details.
+](/azure/app-service/configure-common) for more details.
 
 ::: moniker-end
 
@@ -343,8 +342,8 @@ You can control the order of deployment. To learn more, see [Stages](../process/
 * * *
 ## Configuration changes
 
-For most language stacks, [app settings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-app-settings) and [connection strings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
-App settings can also be resolved from Key Vault using [Key Vault references](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references).
+For most language stacks, [app settings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-app-settings) and [connection strings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
+App settings can also be resolved from Key Vault using [Key Vault references](/azure/app-service/app-service-key-vault-references).
 
 For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
 You might want to apply a specific configuration for your web app target before deploying to it. 
@@ -356,9 +355,11 @@ a Web.config transformation or by substituting variables in your Web.config file
 **Azure App Service Deploy task** allows users to modify configuration settings in configuration files (*.config files) inside web packages and XML parameters files (parameters.xml), based on the stage name specified.
 
 ::: moniker range="> tfs-2018"
+
 > [!NOTE]  
 > File transforms and variable substitution are also supported by the separate [File Transform task](../tasks/utility/file-transform.md) for use in Azure Pipelines.
-  You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
@@ -419,11 +420,11 @@ To do this in YAML, you can use one of these techniques:
 * Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
-The following example shows how to use step conditions to deploy only builds that originate from the master branch:
+The following example shows how to use step conditions to deploy only builds that originate from the main branch:
 
 ```yaml
 - task: AzureWebApp@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<name of web app>'

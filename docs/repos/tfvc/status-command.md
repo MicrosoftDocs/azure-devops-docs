@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,9 +12,12 @@ monikerRange: '>= tfs-2015'
 
 # Status command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Displays information about pending changes to files and folders in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
+Displays information both about pending changes to files and folders and pending change candidates in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
+
+> [!NOTE]
+> A pending changes candidate is a file in the workspace's folder or sub folder that wasn't added to version control. To view all pending changes candidates in Visual Studio, go to **Team Explorer** > **Pending Changes** > **Excluded Changes**, and then select **Detected**.  
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
@@ -57,7 +58,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
 	<td><p>Specifies the shelveset that contains the changes you want to list.</p><p>This option cannot be combined with the <strong>/workspace</strong> option.</p></td></tr>
 <tr>
 	<td><p><strong>/user</strong></p></td>
-    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><table><thead>
+    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><p>Acceptable values for this option:</p><ul><li>username</li><li>useraccount</li><li>an asterisk</li></ul><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: quickstart
 ms.date: 05/13/2019
 monikerRange: '>= tfs-2015'
@@ -13,14 +11,14 @@ monikerRange: '>= tfs-2015'
 
 
 # Share your code in Git using Eclipse
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 Share your Eclipse project with your team in an Azure DevOps Services/TFS Git repo.
 
 ## Prerequisites
 
 * An Azure DevOps organization. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
-* A local Eclipse project. If your code is already in version control in Azure Repos or TFS and you want to clone it, see [Clone an Azure DevOps Services Git repo using Eclipse](../../java/labs/eclipsegit/index.md).
+* A local Eclipse project. If your code is already in version control in Azure Repos or TFS and you want to clone it, see [Clone an Azure DevOps Services Git repo using Eclipse](/previous-versions/azure/devops/java/labs/eclipsegit/).
 
 <a name="git"></a>
 
@@ -31,7 +29,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 > [!NOTE]
 > The Team Explorer Everywhere plug-in works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
-1. [Install the Team Explorer Everywhere plug-in](/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse).
+1. [Install the Team Explorer Everywhere plug-in](/previous-versions/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse).
 
 2. Add the Team Explorer Everywhere view in Eclipse. Go to **Window, Show View** and select **Other...** Search for **Team Explorer**, select the **Team Explorer** view, and select **OK**.   
 
@@ -94,9 +92,3 @@ You can [download EGit](https://www.eclipse.org/egit/) to use Git with Eclipse.
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](gitworkflow.md)
-
-
-
-
-
-

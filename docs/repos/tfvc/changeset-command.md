@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Changeset Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays information about and lets you change the attributes, such as comments and check-in notes, that are associated with a changeset.
 
@@ -54,13 +52,13 @@ A *changeset* is a set of file and folder revisions that were committed to the T
 
 You can use the **changeset** command to view the attributes of a changeset and modify its properties. You can use the History command to determine which changeset you want to obtain information about. For more information, see [History Command](history-command.md).
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
-The following example Displays detailed information about changeset 8675309 in an editable format in the **Changeset **dialog box and replaces the existing comment with "This is a new comment."
+The following example Displays detailed information about changeset 8675309 in an editable format in the **Changeset** dialog box and replaces the existing comment with "This is a new comment."
 
 After you press ENTER, the **Details for Changeset** *\<changeset number\>* **- Source Files** dialog box appears. Click **Save** to associate the comment with the changeset.
 
@@ -159,4 +157,4 @@ Check-in Notes:
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

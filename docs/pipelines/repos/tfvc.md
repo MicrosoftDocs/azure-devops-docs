@@ -154,6 +154,19 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
+### I get the following error when running a pipeline: 
+
+`The shelveset <xyz> could not be found for check-in`
+
+- Is your [job authorization scope](../process/access-tokens.md#job-authorization-scope) set to **collection**? TFVC repositories are usually spread across the projects in your collection. You may be reading or writing to a folder that can only be accessed when the scope is the entire collection. You can set this in organization settings or in project setting under the **Pipelines** tab.
+
+### I get the following error when running a pipeline:
+
+`The underlying connection was closed: An unexpected error occurred on a receive.
+##[error]Exit code 100 returned from process: file name 'tf', arguments 'vc workspace /new /location:local /permission:Public`
+
+- This is usually an intermittent error caused when the service is experiencing technical issues. Please re-run the pipeline.
+
 ### What is scorch?
 
 Scorch is a TFVC power tool that ensures source control on the server and the local disk are identical. See [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).

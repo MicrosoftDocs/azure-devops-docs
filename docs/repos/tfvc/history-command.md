@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # History command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays the revision history of one or more files or folders. The data is displayed in either the History window, or if **/noprompt** option is specified, at the command prompt.
 
@@ -53,7 +51,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/itemmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
@@ -77,7 +75,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/slotmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/sort</strong></p></td>

@@ -18,7 +18,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
  You can use the Reactivations report to show either bugs or user stories that have been reactivated. As a product owner, you might want to discuss acceptable rates of reactivation with the team. A low rate of reactivations (for example, less than 5%) might be acceptable depending on your team's goals. However, a high or increasing rate of reactivations indicates that the team might need to diagnose and fix systemic issues.  
   
- For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
+ For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  For Azure DevOps Service users, please check the [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview) extension available in Azure DevOps market place. This report provides a detailed report on bugs and user stories reopened during sprints and also can be exported to excel.
   
 > [!NOTE]
 >  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  

@@ -13,7 +13,7 @@ ms.date: 01/24/2017
 
 # Requirements field reference (CMMI)
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 When you create a project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
   

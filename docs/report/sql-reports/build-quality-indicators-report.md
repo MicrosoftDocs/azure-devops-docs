@@ -7,7 +7,7 @@ description: Shows test coverage, code churn, and bug counts for a specified bui
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
@@ -77,11 +77,11 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+     For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/index.yml).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
@@ -90,7 +90,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
      For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
-    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
+    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
   
 ##  <a name="Duration"></a> Changing the Number of Builds in the Report  
  The display of the Build Quality Indicators report will vary significantly based on the number of builds that the report includes and other filters that you apply to the report. You can focus the report on a specific range of builds by changing the number of builds that appear in the report.  

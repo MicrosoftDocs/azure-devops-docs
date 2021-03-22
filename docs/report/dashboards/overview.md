@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/14/2020
 ---
 
 # About dashboards, charts, reports, & widgets   
@@ -32,6 +32,21 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 - <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 - <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.  
 - <strong>Power BI reports</strong> allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
+
+::: moniker-end  
+
+::: moniker range="azure-devops-2020"
+
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results. 
+- <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics. 
+- <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
+- <strong>Reports</strong>
+	- <strong>Power BI reports</strong>: For project collections that support the Inherited process, allow users to create rich, customized Power BI reports or other reports using OData queries of Analytics data and the returned JSON data.  
+	- <strong>SQL Server reports</strong>: For project collections that support the On-premises XML process model, allow users access to out-of-the-box SQL Server reports as well as support to create customized SQL Reports or Excel reports. This requires that the project is [configured to support SQL Server reporting](../admin/add-a-report-server.md).
+
+> [!NOTE]  
+> OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
 
 ::: moniker-end  
 
@@ -123,13 +138,13 @@ The steps to creating charts that track manual testing progress and results are 
 
 ### Sample light-weight test charts 
   
-![Active bugs](media/gs-monitor-test-charts.png)
+![Web Team test plan is a chart that shows counts of test in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
 And, just like work item query-based charts, you can add these charts to a dashboard.  
 
 **Sequence for adding test progress and result charts to a dashboard**  
 
-[![Edit query](media/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+[![Choose test chart type](media/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 ::: moniker range=">= tfs-2015"
 
@@ -393,7 +408,7 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Analytics widgets
 
@@ -440,7 +455,7 @@ Or, you can [create your own widget using the REST API](../../extend/develop/add
 
 ## In-context reports: Work tracking 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Azure Boards provides several in-context reports that derive from Analytics data. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by selecting the **Analytics** tab. Each report provides interactive controls to provide each user the view of interest to them. From a Sprint backlog, you can view the sprint burndown trend. 
 
@@ -469,7 +484,7 @@ Use the interactive controls to choose the start and end of the sprint and count
 
 ::: moniker range="<= azure-devops-2019"
 
-Azure Boards provides several in-context reports that derive from the work tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the minature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.  
+Azure Boards provides several in-context reports that derive from the work tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the miniature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.  
 
 ### Cumulative Flow Diagram 
 
@@ -495,16 +510,26 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]
-> You can't add the in-context reports to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard.  
+> You can add the in-context reports to a dashboard using the copy to dashboard option from the report's context menu. 
+> 
+> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png)  
+::: moniker-end 
+
+::: moniker range="<= azure-devops-2019"
+
+> [!NOTE]
+> You can't add the in-context reports to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. 
+::: moniker-end 
 
 To learn more about these reports, see one of the following articles:
 - [Cumulative flow](cumulative-flow.md)
 - [Team velocity](team-velocity.md)
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <a id="incontext-reports" />  
 
@@ -528,7 +553,7 @@ Azure Pipelines provides an in-context Test failures report, derived from Analyt
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Pipeline pass rate report
 
@@ -550,7 +575,7 @@ The **Test failures** report provides a granular view of the top failing tests i
 
 Learn more about the [Test failures report](../../pipelines/test/test-analytics.md#test-failures).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Pipeline duration report
 
@@ -581,7 +606,7 @@ Learn more about the [Pipeline duration report](../../pipelines/reports/pipeline
 You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You can add data to support reporting requirements by adding a custom field [Inheritance process](../../organizations/settings/work/customize-process-field.md) or [On-premises XML process](../../reference/add-modify-field.md).
 ::: moniker-end

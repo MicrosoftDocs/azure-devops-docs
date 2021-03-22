@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add work item queries to a process template
 titleSuffix: Azure DevOps & TFS
 description: Define the initial set of shared queries and query folder structure for a project in Team Foundation Server
@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
 ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 04/11/2019
 ---
 
@@ -19,7 +20,7 @@ By adding work item queries to your process template, you can define the initial
 Work item queries specify criteria for generating a list of work items, such as a list of active bugs or closed tasks. Files for work item queries have a .wiq extension and are stored in the Queries subfolder of the WorkItem Tracking folder for the default process templates.  
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!IMPORTANT]  
 > The default process templates define a few queries that appear under My Queries on the Queries page. They no longer define Shared Queries. You can always define shared queries and add them to a custom process template. Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    

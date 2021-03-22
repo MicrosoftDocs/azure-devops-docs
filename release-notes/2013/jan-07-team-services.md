@@ -47,7 +47,7 @@ We’ve also been making a big push to give you the most number of pixels possib
 
 If you want to see even more lines, we added another button to take the code into “fullscreen” mode. This is available when you are browsing files and doing comparisons. To go back to the normal view simply click the **Exit full screen mode** link.
 
-![Browsing the contents of a file](media/1_7_06.png)
+![Browsing the contents of a file in full screen mode.](media/1_7_06.png)
 
 In the last update we showed off the new inline diff features. We have now added inline viewing and also diffing for images such as gifs, jpegs and png files. If you do a file comparison on an image that has changed, you now get to see the old and new image together so that you can play a little game of spot the difference. We’re going to be iterating on the image diffing functionality to make it even more useful but as you can see from the screen shot, it is already pretty handy.
 

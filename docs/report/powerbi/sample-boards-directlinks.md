@@ -1,4 +1,4 @@
-﻿---
+---
 title: Work Items with Direct Links sample report
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate reports based on Work Items with Direct Links
@@ -25,6 +25,7 @@ Other sample queries include listing bugs with a Duplicate link to another bug, 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 
@@ -115,22 +116,22 @@ The following table describes each part of the query.
 1. Select all the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks2.png)
+    > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)
 
 1. Click the expand button on the Links.TargetWorkItem column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks3.png)
+    > ![Click the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
 
 1. Select the fields of the Target Work Item to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks4.png)
+    > ![Select the fields of the Target Work Item to flatten.](media/odatapowerbi-expandlinks4.png)
 
 	The Table now contains flattened Link and Target Work Item field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks5.png)
+    > ![The Table now contains flattened Link and Target Work Item field(s).](media/odatapowerbi-expandlinks5.png)
 
 > [!NOTE]
 > If the link represents a one-to-many or many-to-many relationship, then multiple links will
