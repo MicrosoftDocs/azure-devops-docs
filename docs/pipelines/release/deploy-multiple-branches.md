@@ -55,11 +55,11 @@ Artifact filters can be used with release triggers to deploy from multiple branc
 
 Now the next time you have a successful build, the pipeline will detect which branch triggered that build and trigger deployment to the appropriate stage only.
 
-    :::image type="content" source="media/deploy-multiple-branches/after-release.png" alt-text="Deployment status":::  
+:::image type="content" source="media/deploy-multiple-branches/after-release.png" alt-text="Deployment status":::  
 
 ## Related articles
 
 - [Release triggers](triggers.md)
 - [Build Artifacts](../artifacts/build-artifacts.md)
 - [Release artifacts and artifact sources](../release/artifacts.md)
-- [Publish and download artifacts](../artifacts/pipeline-artifacts)
+- [Publish and download artifacts](../artifacts/pipeline-artifacts.md)
