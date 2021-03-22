@@ -31,11 +31,6 @@ sections:
         answer: |
           All versions from TFS 2013 through Azure DevOps Server 2020 and Azure DevOps Services/Azure Boards support integration with Microsoft Excel.
 
-
-      - question: What versions of Azure DevOps work with Excel?
-        answer: |
-          All Azure DevOps versions support integration with Microsoft Excel.
-
       - question: What do I need to use Excel to add or modify work items?
         answer: |
           You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
@@ -49,20 +44,11 @@ sections:
 
           Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
-      - question: What versions of Azure DevOps work with Excel?
-        answer: |
-          All Azure DevOps versions support integration with Microsoft Excel.
-
-
       - question: Can I use Excel on my Mac?
         answer: |
           **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
 
-      - question: What versions of Azure DevOps work with Excel?
-        answer: |
-          **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.  
-
-      - question: Can I open a query in Excel from the web portal?  
+         - question: Can I open a query in Excel from the web portal?  
         answer: |
           **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
 
