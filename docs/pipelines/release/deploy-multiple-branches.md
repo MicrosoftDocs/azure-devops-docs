@@ -42,22 +42,19 @@ Artifact filters can be used with release triggers to deploy from multiple branc
 
   :::image type="content" source="media/predeployment-trigger.png" alt-text="Set pre-deployment trigger to after release":::
 
-1. Enable the **Artifact filters**. Select Add and specify your artifact. In the **Build branch** select the dev branch then Save.
+1. Enable the **Artifact filters**. Select Add and specify your artifact and build branch.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Select Artifact filter dev](media/deploy-multiple-branches/artifact-filter1.png)
+  :::image type="content" source="media/deploy-multiple-branches/artifact-filter1.png" alt-text="Enable Artifact filters":::  
 
-1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat steps 4-5 and replace **Build branch** to main.
+1. Under **Stage**, select **Add** then **New stage** to add a new stage. Select **Start with an empty job** when prompted to select a template, and rename the stage to **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat the steps 6-8 and replace the **Build branch** for this stage to main.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Select Artifact filter prod](media/deploy-multiple-branches/artifact-filter2.png)
+  :::image type="content" source="media/deploy-multiple-branches/artifact-filter2.png" alt-text="Set up Prod with the main branch":::  
 
-1. Add your appropriate deployment tasks in each stage.
+1. Add to each stage any relevant deployment tasks to your environment.
 
-Now the next time you have a successful build, the artifact filter will detect which branch triggered that build and only the appropriate stage will get deployed.
+Now the next time you have a successful build, the pipeline will detect which branch triggered that build and trigger deployment to the appropriate stage only.
 
-  > [!div class="mx-imgBorder"] 
-  > ![After release](media/deploy-multiple-branches/after-release.png)
+  :::image type="content" source="media/deploy-multiple-branches/after-release.png" alt-text="Deployment status":::  
 
 ## Related articles
 
