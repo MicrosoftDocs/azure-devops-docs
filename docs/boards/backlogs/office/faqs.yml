@@ -48,7 +48,7 @@ sections:
         answer: |
           **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
 
-         - question: Can I open a query in Excel from the web portal?  
+      - question: Can I open a query in Excel from the web portal?  
         answer: |
           **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
 
