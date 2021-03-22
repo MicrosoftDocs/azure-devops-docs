@@ -12,21 +12,23 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines | Azure DevOps Server 2019**
 
-Artifact filters can be used with release triggers to deploy from multiple branches. Applying the artifact filter to a specific branch results in the artifact deploying to a specific stage only when those filter conditions are met.
+Artifact filters can be used with release triggers to deploy from multiple branches. Applying the artifact filter to a specific branch enables deployment to a specific stage when all the conditions are met.
 
 ## Prerequisites
 
-You'll need:
+- A Git repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
 
-* A working build for your repository
-
-  - [Build multiple branches](../build/ci-build-git.md)
- 
-* Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target. You will have to choose names that are unique, but it's a good idea to include "Dev" in the name of one, and "Prod" in the name of the other so that you can easily identify them.
+- A working build for your repository.
 
 ## Set up a release pipeline
 
-1. In **Azure Pipelines**, open the **Releases** tab. Create a New release Pipeline, select **Add an artifact** and specify your build artifact.
+1. Select **Releases** under **Pipelines**. If this is your first release pipeline, select **New Pipeline**, otherwise select **Create a release**.
+
+1. Select **Start with an empty job** when prompted to select a template.
+
+1. Select **Add an artifact** and specify the project, the build pipeline, and the default version. Select **Add** when you are done.
+
+  :::image type="content" source="media/add-artifact.png" alt-text="Add build artifact to release pipeline":::
 
 1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open up the _continuous deployment trigger_ panel and switch the button to **Enabled**.
 
