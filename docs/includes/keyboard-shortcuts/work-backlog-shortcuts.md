@@ -11,15 +11,14 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 :::row:::
    :::column span="2":::
       ![Boards>Backlogs page shortcuts](/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/><br/>
-      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top  
+      <br/><br/>      
       &nbsp;&nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog  
       &nbsp;&nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration  
       &nbsp;&nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration  

@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
 ms.author: kaelli
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 04/05/2019
 ---
 
@@ -70,6 +70,5 @@ For more information about the warehouse database, see [Table reference for the 
 
 - [Create Excel status and trend charts from a query](../create-status-and-trend-excel-reports.md)
 - [Dashboards and reports](overview.md)
-- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](https://msdn.microsoft.com/library/ms156280.aspx) 
-- [Report Builder in SQL Server 2016](https://msdn.microsoft.com/library/dd220460.aspx)
-
+- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs) 
+- [Report Builder in SQL Server 2016](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016)

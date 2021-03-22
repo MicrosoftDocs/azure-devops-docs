@@ -81,7 +81,7 @@ containing all of the parameters - even though a few of the columns in the set w
 
 ## Run a test case with parameters
 
-1. Select a test case with parameters and start it running.
+1. Select a test case with parameters and start running it.
 The Test Runner shows the first row of parameter values.
  
    ![Test Runner showing the first row of parameter values](media/repeat-test-with-different-data/repeat-test-with-different-data-06.png)

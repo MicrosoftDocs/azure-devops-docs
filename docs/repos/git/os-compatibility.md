@@ -5,25 +5,15 @@ description: How Git interacts with multiple platform filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 08/14/2020
 monikerRange: '>= tfs-2018'
 ---
 
 # Git Cross-Platform Compatibility
 
-::: moniker range="azure-devops"
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-#### Azure Repos
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
-
-::: moniker-end
-
-The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working direction due to unsupported file or paths names.
+The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working directory due to unsupported file or paths names.
 
 Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. The three file system limitations these settings are related to are:
 
@@ -88,7 +78,7 @@ Return to the tags page and delete the conflicting tag.
 
 ## Path and File Name Restrictions
 
-The Windows, Mac OS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
+The Windows, macOS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
 
 For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to damage your repo with corrupted data.
 
@@ -100,8 +90,30 @@ Azure Repos offers file name and max path [repository settings](repository-setti
 
 ### File Name & Path Length Reference Table
 
-|                          |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
+| Restrictions / Platforms |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
 |--------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------:|
-|  File Name Restrictions  |                      [Reserved File Names](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
-| Path Length Restrictions | [Paths in Windows](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |
+|  File Name Restrictions  |                      [Reserved File Names](/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
+| Path Length Restrictions | [Paths in Windows](/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |
 
+::: moniker range=">=azure-devops-2019"
+
+## Encoding support
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> The encoding support described in this section is supported in Azure DevOps Server 2019.1 and higher.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+Microsoft has added support for UTF-16 and UTF-32 encoding via the web pushes endpoint. This means that we will preserve the encoding type so you don't have to rewrite your files as UTF-8. You will also see a warning when you try to save a file that is not UTF encoded via the web (which only supports UTF encoding).
+
+The following screenshot shows an example of the dialog that you see when you introduce encoding changes by a web push.
+
+:::image type="content" source="media/os-compatibility/web-push-encoding-dialog.png" alt-text="{Screenshot that shows the dialog when you introduce encoding changes by a web push.}":::
+
+::: moniker-end

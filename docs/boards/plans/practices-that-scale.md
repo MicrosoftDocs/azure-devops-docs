@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/14/2020
 ---
 
 
 # Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 
@@ -53,6 +53,7 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 
 
 ## Improve project visibility
+
 <meta name="keywords" content="Agile culture,Agile project management,Agile tools" />
 The more insight you and your teams have into the goal, vision, and progress of the work being done, the better enabled you&#39;ll be to reduce risks and manage dependencies. 
 
@@ -67,7 +68,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 
 - **Embedded leadership**: Empower teams and leaders within the organization to self-organize and self-manage as much as possible. Team autonomy increases organizational agility team effectiveness. Ensure teams have the corporate sponsorship needed to succeed.  
 - **Daily stand-ups**: Or, [Scrum meetings](../sprints/best-practices-scrum.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
-- **[Scrum of scrums](http://guide.agilealliance.org/guide/scrumofscrums.html)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
+- **[Scrum of scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
 - **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications as well as collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual as well as overall corporate competence.  
 
@@ -80,7 +81,7 @@ You improve organizational effectiveness by attending to the culture you want to
   - **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
   - **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
 
-	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Main_Page) for ideas, tips, and tools  for planning and conducting retrospectives. 
+	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki) for ideas, tips, and tools  for planning and conducting retrospectives. See also the [Marketplace Retrospectives extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives).
 - **Improvement tracking board**: Good ideas to improve processes can arise from any one at any time. Capturing those ideas in order to discuss and decide on how to act on them in a timely manner is a key to support process improvement efforts.  
 
 	A white board provides any easy and visual means with which to capture ideas. Also, you can create an Improvement tracking team and capture ideas that you track on an electronic [Kanban board](../boards/kanban-basics.md).  

@@ -3,10 +3,11 @@ title: Link type element reference
 titleSuffix: Azure DevOps & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '< azure-devops'
 ms.date: 02/14/2018  
 ---
 

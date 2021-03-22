@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -102,7 +102,7 @@ You can review the event log on the application-tier server to obtain more infor
     ```
 	witadmin listfields /collection:CollectionURL /n:RefName   ```
 
-	For more information, see [Manage work item fields](https://msdn.microsoft.com/library/dd236909.aspx).
+	For more information, see [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?viewFallbackFrom=vsts).
 
 2. Determine in which of the following ways you want to resolve the conflict:
 
@@ -138,13 +138,13 @@ You can verify that the schema conflicts have been resolved by [manually process
 
 2. Process the cube on demand by using the **ProcessAnalysisDatabase** operation of the **WarehouseControlService**.
 
-3. Open a dashboard or Report Manager, and verify that the reports are being updated. For more information, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md) or [Reports (SQL Server Reporting Services)](../sql-reports/reporting-services-reports.md).
+3. Open a dashboard or Report Manager, and verify that the reports are being updated. For more information, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards) or [Reports (SQL Server Reporting Services)](../sql-reports/reporting-services-reports.md).
 
 	If error messages continue to appear, you can obtain more information about the data conflict and the affected blocked adapters by running the **GetProcessingStatus** operation of the **WarehouseControlService**. 
 
 ## Related content
 
-- [Manage work item fields using **witadmin**](https://msdn.microsoft.com/library/dd236909.aspx)  
+- [Manage work item fields using **witadmin**](../../reference/witadmin/manage-work-item-fields.md?viewFallbackFrom=vsts)  
 - [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)  
-- [Dashboards and reports](../overview.md)  
-- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)  
+- [Dashboards and reports](../dashboards/overview.md)  
+- [Manually process the TFS data warehouse and analysis services cube](manually-process-data-warehouse-and-cube.md)

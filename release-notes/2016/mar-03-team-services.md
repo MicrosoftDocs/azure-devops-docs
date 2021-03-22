@@ -67,7 +67,7 @@ Right from your repo on the web, you can clone in IntelliJ, Android Studio, and 
 
 ## Gated builds for Team Foundation Version Control (TFVC)
 
-Team build now supports creating a gated trigger for a build definition on a TFVC repository. You can read more here [https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated](https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated).
+Team build now supports creating a gated trigger for a build definition on a TFVC repository. You can read more here [https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated](/azure/devops/pipelines/build/triggers#gated).
 
 ## Automated testing on Azure environments
 

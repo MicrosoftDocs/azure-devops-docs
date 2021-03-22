@@ -64,9 +64,9 @@ Admin:
 
 When we first launched the pull request (PR) experience, we thought it would make sense to assign all PRs to the team context that you had selected when creating the PR. This behavior has been a frustration point, since many people did not notice the connection between the team context and the PR assignment. In fact, this has been one of our top UserVoice suggestions.
  
-As part of the [new navigation](/azure/devops/release-notes/2018/jun-19-vsts#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
+As part of the [new navigation](./jun-19-vsts.md#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
  
-1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/azure/devops/git/branch-policies?view=azure-devops#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
+1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/azure/devops/git/branch-policies?view=azure-devops&preserve-view=true#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
 1. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
 
 ### Allow bypassing branch policies without giving up push protection
@@ -83,7 +83,7 @@ By granting the first permission and denying the second, a user will be able to 
 > [!NOTE]
 > This change does not introduce any behavior changes. Users that were formerly granted **Allow** for "Exempt from policy enforcement" will be granted **Allow** for both new permissions, so they will be able to both override completion on PRs and push directly to branches with policies.
 
-See the [Set branch permissions](/azure/devops/git/branch-permissions?view=azure-devops) documentation for more information.
+See the [Set branch permissions](/azure/devops/git/branch-permissions?view=azure-devops&preserve-view=true) documentation for more information.
 
 ## Wiki
 
@@ -119,7 +119,7 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 ### Build and release with Microsoft-hosted Linux and macOS agents
 
-The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops) documentation for more information.
+The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true) documentation for more information.
 
 > [!IMPORTANT]
 > Due to the way the hosted pools were implemented in preview, the agent pools in existing organizations will continue to have the "Preview" moniker (in name only). Pools marked "Preview" have reached general availability and will be equivalent to corresponding, newly-named pools that will soon roll out.
@@ -133,14 +133,14 @@ Previously, when new targets were added to a deployment group, a manual deployme
 
 ### Hold deployments until gates succeed consistently
 
-Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/azure/devops/pipelines/release/approvals/gates?view=azure-devops) documentation for more information.
+Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/azure/devops/pipelines/release/approvals/gates?view=azure-devops&preserve-view=true) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Gates hold setting](media/137_07.png)
 
 ### Azure DevOps Projects now generally available
 
-Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+Back in [November](../2017/nov-28-vsts.md#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 
@@ -155,14 +155,14 @@ The Package Management extension is pre-installed into all organizations. If you
 
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
-A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/azure/devops/organizations/accounts/connect-organization-to-aad?view=azure-devops). Previously this had to be done by an organization owner.
+A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/azure/devops/organizations/accounts/connect-organization-to-aad?view=azure-devops&preserve-view=true). Previously this had to be done by an organization owner.
 
 ### Public projects available in preview for all organizations
 
 > [!IMPORTANT]
-> To use this capability, an organization administrator must [enable public projects](/azure/devops/organizations/public/create-public-project?view=azure-devops&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
+> To use this capability, an organization administrator must [enable public projects](/azure/devops/organizations/public/create-public-project?view=azure-devops&preserve-view=true&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
 
-As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=azure-devops) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
+As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/azure/devops/organizations/public/index?view=azure-devops&preserve-view=true) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
 
 > [!IMPORTANT]
 > If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.
@@ -171,7 +171,7 @@ As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/
 
 We've made a change to our terminology when it comes to referring to a collection of projects in VSTS. Previously we used the term "account" but have found that this has caused a lot of confusion for the broader developer and open source community. We've chosen to replace the term "account" with "organization". You'll start seeing this change rollout in documentation and in-product with this Update. See the [Adopting the word “organization” post](https://blogs.msdn.microsoft.com/devops/2018/07/19/adopting-the-word-organization/) on the Microsoft DevOps Blog for more information.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

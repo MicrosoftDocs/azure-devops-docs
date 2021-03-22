@@ -59,7 +59,7 @@ In this article, you'll learn:
 
     <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../media/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
 
    <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 
@@ -99,6 +99,7 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
 ## Configure the Kanban board 
+
 To configure or change the layout of the board, see one of these topics. 
 
 * [Add columns](add-columns.md)  
@@ -115,6 +116,7 @@ To configure or change the layout of the board, see one of these topics.
 
 
 ## Related articles  
+
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
 You can also [add tags and show tags and fields on cards](../../boards/boards/customize-cards.md) to support other tracking needs.  

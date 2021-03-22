@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 #  Sprints and Scrum key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 

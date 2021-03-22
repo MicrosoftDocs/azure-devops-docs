@@ -1,34 +1,48 @@
 - name: About managed queries
-  href: example-queries.md
-- name: Ad hoc vs managed queries
-  href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: Ad hoc search
-  href: search-box-queries.md
+  href: about-managed-queries.md
 - name: Query quick reference
   href: query-index-quick-ref.md
-- name: Define, run, and manage queries
+- name: Semantic search
+  href: search-box-queries.md
+- name: Get started with queries
+  expanded: true
   items:
-  - name: View, run, or email a query 
+  - name: View, open, run a query 
     href: view-run-query.md
-  - name: Create managed queries
+  - name: Define a query
     href: using-queries.md
+  - name: Manage queries & query folders
+    href: organize-queries.md
+  - name: Chart a query
+    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Triage work items  
     href: triage-work-items.md
-  - name: Organize queries with folders
-    href: organize-queries.md
+  - name: Filter your queries
+    href: ../backlogs/filter-backlogs-boards-plans.md 
+    displayname: sort, reorder, group, parent, tags  
+  - name: Best practices to define a query
+    href: high-performing-queries.md 
+  - name: Query FAQs
+    href: query-faqs.yml
   - name: Set query permissions (Security) 
     href: set-query-permissions.md
-  - name: Define a query as a hyperlink 
-    href: define-query-hyperlink.md 
+- name: Additional query operations
+  items:
+  - name: Cross-service and enhanced query operations  
+    href: query-support-integration-cross-service-extensions.md 
+    displayname: OData, Power BI, WIQL
   - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
     displayname: import, export, csv
-- name: Samples
-  expanded: true
+  - name: Bulk add or modify work items (Excel)
+    href: ../backlogs/office/bulk-add-modify-work-items-excel.md
+  - name: Define a query as a hyperlink 
+    href: define-query-hyperlink.md 
+- name: Sample queries 
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 
-    displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria, Resolution, System Info, Team Project, Title, Work Item Type
+    displayname: Title, Description, Detail, Repo Steps, Acceptance Criteria, Resolution, System Info, Team Project, Title, Work Item Type, wildcard
   - name: Query by assignment or workflow changes
     href: query-by-workflow-changes.md 
     displayname: Identity, Assigned To, Changed By, State, Reason, Board Column, Board Lane, Activated By, State Changed Date 
@@ -40,8 +54,8 @@
     href: query-by-date-or-current-iteration.md  
   - name: Query based on tags
     href: add-tags-to-work-items.md#query
-  - name: Query history
-    displayname: revision, rev, Contains Words, Watermark
+  - name: Query history and discussion
+    displayname: revision, rev, Contains Words, Watermark, comments, change date, closed date, created date, resolved date, search comments, wildcard
     href: history-and-auditing.md  
   - name: Query by field comparison
     href: query-field-value.md   
@@ -57,15 +71,11 @@
   - name: Query by build & test integration fields
     displayname: Automation Status, Found In, Integration Build, Issue, Parameters, Steps, System Info, Repo Steps, Test Suite Type, Automated, Query Text, LocalDataSource
     href: build-test-integration.md  
-- name: Best practices, monitoring, & reports
+- name: Reference
   items:
-  - name: High-performing queries
-    href: high-performing-queries.md 
-  - name: Create work tracking charts
-    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Query fields, operators & macros
     href: query-operators-variables.md
-  - name: WIQL syntax
+  - name: Work Item Query Language (WIQL) syntax
     href: wiql-syntax.md
 
 

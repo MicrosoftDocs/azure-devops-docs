@@ -32,7 +32,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box](../../organizations/public/media/search/code-search-vert.png) 
@@ -89,7 +89,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box](media/search/work-item-search-vert.png)    

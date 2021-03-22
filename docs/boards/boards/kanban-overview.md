@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -132,7 +132,7 @@ Once you've configured your Kanban board, you can add work items directly to the
 
 The Cumulative Flow Diagram (CFD) is an in-context report available for both product and portfolio backlog levels. Use this chart to monitor key metrics to fine tune your processes. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
@@ -184,17 +184,20 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Customize your project and boards 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see <a href="../../organizations/settings/work/customize-process-backlogs-boards.md" data-raw-source="[Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)">Customize your backlogs or boards for a process</a>. 
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
  
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+
 ::: moniker-end
 
 

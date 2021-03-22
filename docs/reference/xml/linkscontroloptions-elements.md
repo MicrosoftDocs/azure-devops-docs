@@ -3,6 +3,7 @@ title: LinksControlOptions XML elements (client)
 titleSuffix: TFS  
 description: XML syntax to scope the allowed links within a links control element used in the client and web forms for Team Foundation Server (TFS)  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +14,7 @@ ms.date: 02/02/2017
 
 # LinksControlOptions elements
 
-**TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)] 
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  

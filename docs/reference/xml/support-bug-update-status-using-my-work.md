@@ -3,6 +3,7 @@ title: Support bug update status using My Work
 titleSuffix: TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
 ms.author: kaelli
 author: KathrynEE

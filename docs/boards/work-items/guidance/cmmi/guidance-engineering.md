@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Engineering
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes Requirements Development, Requirements Management, Technical Solution, Product Integration, Verification, and Validation. 
 

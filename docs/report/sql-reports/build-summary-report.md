@@ -7,7 +7,7 @@ ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
@@ -48,7 +48,7 @@ The Build Summary lists builds and provides information about test results, test
 |Quality indicator|Description|  
 |-----------------------|-----------------|  
 |**Build Progress**|Specifies the status of the build. A build can be in one of the following states:<br /><br /> -   **Failed**. The build failed to compile or tests failed to pass.<br />-   **Partially Succeeded**. Only some portions of the build successfully compiled.<br />-   **Stopped**. The build was manually stopped.<br />-   **Succeeded**. The build successfully compiled, and tests ran.|  
-|**Build Quality**|Specifies a manually assigned assessment of the quality of the build. You can add or remove the build qualities that are defined for your team project. For more information, see [Add or remove build quality values](https://msdn.microsoft.com/library/ms181735.aspx).<br /><br /> The column is empty if the build quality has not been rated.|  
+|**Build Quality**|Specifies a manually assigned assessment of the quality of the build. You can add or remove the build qualities that are defined for your team project. For more information, see [Add or remove build quality values](/previous-versions/ms181735(v=vs.140)).<br /><br /> The column is empty if the build quality has not been rated.|  
 |**% Tests Passed**|Displays a horizontal stacked bar chart that lists the percentage of tests that passed superimposed on a green bar. The remaining bar segment is red, which indicates the percentage of tests that failed. The total length of the chart always equals the width of the column.|  
 |**% Code Coverage**|Displays a horizontal stacked bar chart that lists the percentage of code that was covered superimposed on a green bar. The remaining bar segment is light blue, which indicates the percentage of code that was not tested in the build. The total length of the chart always equals the width of the column.|  
 |**% Code Churn (lines)**|Displays a horizontal bar chart that lists the percentage of code churn superimposed on a gray bar. The code churn is calculated by determining the number of lines of code that the team has added, deleted, or modified divided by the total number of lines in the build. The bar length is proportionate to the percentage figure, scaled across the report so that the maximum amount of code churn across all builds equals the width of the column.|  
@@ -70,11 +70,11 @@ The Build Summary lists builds and provides information about test results, test
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+     For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/index.yml).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
@@ -84,7 +84,7 @@ The Build Summary lists builds and provides information about test results, test
   
 -   (Optional) **Rate completed builds**. A team member can manually rate a build by using Build Explorer.  
   
-     For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx).  
+     For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Iteration  
  To understand the progress that the team is making in your current iteration, you must set the start and end dates for the report to match those of your current iteration cycle.  

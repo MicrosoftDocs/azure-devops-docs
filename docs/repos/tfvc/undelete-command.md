@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,12 +12,12 @@ monikerRange: '>= tfs-2015'
 
 # Undelete Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **undelete** command restores items that were previously deleted.
 
 > [!NOTE]
-> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
 **Required Permissions**
 
@@ -34,7 +32,7 @@ tf undelete [/noget] [/lock:(none|checkin|checkout)]
 
 | **Argument** |                                                                                                                 **Description**                                                                                                                 |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be). |
+|  *itemspec*  | Identifies the file or folder to undelete. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)). |
 | *deletionID* |                                                                           Specifies a unique identifier that disambiguates multiple deleted items with the same name.                                                                           |
 |  *username*  |                                                            Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                            |
 
@@ -63,7 +61,7 @@ If you want to change the file after restoring it, you may check out the file fo
 
 When your *itemspec* specifies a folder, Team Foundation restores all its files and subfolders and the files they contain, by default. If you do not want to restore all the items in a folder, you must first undelete the folder and its items and then delete the items that you do not want to keep.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example restores 314.cs to the server folder from which 314.cs was deleted and retrieves a read-only copy of the latest version in the current workspace.
 
@@ -94,7 +92,7 @@ c:\projects>tf undelete 314.cs;X11
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Rename Command (Team Foundation Version Control)](rename-command-team-foundation-version-control.md)
 
@@ -104,10 +102,10 @@ c:\projects>tf undelete 314.cs;X11
 
 #### Concepts
 
-[Pending Changes](https://msdn.microsoft.com/library/ms181409)
+[Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100))
 
 [Understanding Lock Types](understand-lock-types.md)
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

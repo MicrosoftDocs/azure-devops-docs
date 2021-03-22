@@ -3,7 +3,7 @@ title: Review logs to diagnose pipeline issues
 description: Learn how to review pipeline diagnostic logs to troubleshoot
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
 ms.date: 06/09/2020
 monikerRange: '>= tfs-2015'
@@ -12,7 +12,7 @@ author: steved0x
 
 # Review logs to diagnose pipeline issues
 
-Pipeline logs provide a powerful tool for determining the cause pipeline failures.
+Pipeline logs provide a powerful tool for determining the cause of pipeline failures.
 
 A typical starting point is to review the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
 
@@ -24,7 +24,7 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 ::: moniker range="> azure-devops-2019"
 
-* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
+* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** and selecting **Enable system diagnostics**, **Run**.
 
   ![Enable system diagnostics](../media/troubleshooting/enable-system-diagnostics.png)
 
@@ -36,7 +36,13 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.debug` variable to `true`.
 * To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.debug`, set its value to `true`, and select to **Allow at Queue Time**.
+* To configure verbose logs for a YAML pipeline, add the `system.debug` variable in the `variables` section:
 
+  ```YAML
+  variables:
+    system.debug: true
+  ```
+  
 ::: moniker-end
 
 
@@ -48,7 +54,7 @@ To view individual logs for each step, navigate to the build results for the run
 
 ![Task log](../media/troubleshooting/job-task-logs.png)
 
-To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../../project/navigation/preview-features.md)).
+To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs**.
 
 ![Download logs](../media/troubleshooting/download-logs.png)
 
@@ -101,9 +107,16 @@ that ran your build.
 
 ## HTTP trace logs
 
-* [Use built-in HTTP tracing](#use-built-in-http-tracing)
-* [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
-* [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
+- [Review logs to diagnose pipeline issues](#review-logs-to-diagnose-pipeline-issues)
+  - [Configure verbose logs](#configure-verbose-logs)
+  - [View and download logs](#view-and-download-logs)
+  - [Worker diagnostic logs](#worker-diagnostic-logs)
+  - [Agent diagnostic logs](#agent-diagnostic-logs)
+  - [Other logs](#other-logs)
+  - [HTTP trace logs](#http-trace-logs)
+    - [Use built-in HTTP tracing](#use-built-in-http-tracing)
+    - [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
+    - [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
 
 > [!IMPORTANT]
 > HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.

@@ -19,5 +19,4 @@ ms.topic: include
 
 #### Supported in: Definition of Done | Markdown widget | README files
 
-
 ::: moniker-end

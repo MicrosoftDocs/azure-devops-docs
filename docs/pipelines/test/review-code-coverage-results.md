@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
 ms.author: vinojos
 author: vinodjo
-ms.date: 12/07/2018
+ms.date: 06/23/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -39,21 +39,53 @@ code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 
 ## View results 
 
+:::moniker range="< azure-devops-2019"
+
 The code coverage summary can be viewed in the build timeline view.
 The summary shows the overall percentage of line coverage. 
 
-![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
+![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary-2018.png)
 
 > [!NOTE]
 > Merging code coverage results from multiple [test runs](test-glossary.md) is
 > limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
 
+:::moniker-end
+
+:::moniker range=">= azure-devops-2019"
+
+The code coverage summary can be viewed on the **Summary** tab on the pipeline run summary.
+
+![View code coverage results](media/review-code-coverage-results/pipeline-run-summary.png)
+
+The results can be viewed and downloaded on the **Code coverage** tab.
+
+![View and download results on the Code coverage tab.](media/review-code-coverage-results/view-code-coverage-summary.png)
+
+> [!NOTE]
+> Merging code coverage results from multiple [test runs](test-glossary.md) is
+> limited to .NET and .NET Core at present. This will be supported for other formats in a future release.
+
+:::moniker-end
+
 ## Artifacts
+
+:::moniker range="< azure-devops-2019"
 
 The code coverage artifacts published during the build can be viewed under the
 **Build artifacts published** milestone in the timeline view.
 
+![View code coverage artifact](media/review-code-coverage-results/view-code-coverage-artifact-2018.png)
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2019"
+
+The code coverage artifacts published during the build can be viewed under the **Summary** tab on the pipeline run summary.
+
 ![View code coverage artifact](media/review-code-coverage-results/view-code-coverage-artifact.png)
+
+:::moniker-end
 
 * If you use the [Visual Studio Test](../tasks/test/vstest.md) task to collect coverage for .NET and .NET Core apps, the artifact contains
   **.coverage** files that can be downloaded and used for further analysis in Visual Studio.

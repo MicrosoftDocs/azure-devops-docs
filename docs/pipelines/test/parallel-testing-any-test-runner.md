@@ -4,8 +4,8 @@ description: Speed up testing by running tests in parallel for any test runner
 ms.assetid: 21D3C181-5067-45C7-8A98-1F0ECB2CCB01
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= azure-devops-2019'
 ---

@@ -24,6 +24,6 @@ This was prioritized based on this [feature suggestion ticket](https://developer
 We've added support for inserting [mermaid diagrams](https://mermaidjs.github.io/#/README) in wiki pages. You can now create, edit and manage flow charts, sequence diagrams in your design documents and add Gantt charts in your planning documents in Azure DevOps Wiki.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_09.png)
+> ![Mermaid diagram support in wiki.](../../media/158_09.png)
 
-This was prioritized based on this [feature suggestion ticket](https://developercommunity.visualstudio.com/content/idea/365751/wiki-mermaid-plantuml-support.html) from the Developer Community. For more information about Mermaid diagrams, see our documentation [here](https://docs.microsoft.com/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops#add-mermaid-diagrams-to-a-wiki-page).
+This was prioritized based on this [feature suggestion ticket](https://developercommunity.visualstudio.com/content/idea/365751/wiki-mermaid-plantuml-support.html) from the Developer Community. For more information about Mermaid diagrams, see our documentation [here](/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops&preserve-view=true#add-mermaid-diagrams-to-a-wiki-page).

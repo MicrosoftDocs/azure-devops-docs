@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 
@@ -31,9 +31,9 @@ After you've planned your sprint, you may want to [share the plan](share-plan.md
 
 You can learn more from these resources: 
 *	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-*	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+*	[Sprint planning](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
 *	[The Scrum Guide](https://www.scrumguides.org/scrum-guide.html)
-*	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+*	[Build and manage the product backlog](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
 
 
 <a id="set-sprint-goals">  </a>

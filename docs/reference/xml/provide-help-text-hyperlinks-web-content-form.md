@@ -3,9 +3,11 @@ title: Help text, hyperlinks, web content
 titleSuffix: TFS
 description: Customize your work item form to provide information or links to content.
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: b6409e94-7e59-47a9-8a62-afdeeac8ad86
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 01/20/2017
 ---
 

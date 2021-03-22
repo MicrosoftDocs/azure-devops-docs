@@ -21,12 +21,12 @@ The new reports are fully interactive and allow you to adjust them for your need
 * The burndown chart can be found under the **Sprints** hub.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/155_03.png "Analytics tab in Sprint hub")
+    > ![Analytics tab in Sprint hub.](../../media/155_03.png "Analytics tab in Sprint hub")
 
 * The CFD and Velocity reports can be accessed from the **Analytics tab** under **Boards** and **Backlogs** by clicking on the relevant card.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/155_04.png "CFD and velocity reports in boards")
+    > ![CFD and velocity reports in boards.](../../media/155_04.png "CFD and velocity reports in boards")
 
 With the new reports you have more control and information about your team. Here are some examples:
 
@@ -38,12 +38,12 @@ With the new reports you have more control and information about your team. Here
 Here is an example of the CFD report showing the flow for the last 30 days of the Stories backlog.
 
   > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/155_05.png)
+  > ![Example of the CFD report.](../../media/155_05.png)
 
 The Velocity chart can now be tracked for all backlog levels. For example, you can now add both Features and Epics whereas before the previous chart supported only Requirements. Here is an example of a velocity report for the last 6 iterations of the Features backlog.
 
   > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/155_06.png)
+  > ![Example of a velocity report.](../../media/155_06.png)
 
 ### Azure Boards app for Slack
 
@@ -52,7 +52,7 @@ We're happy to announce the new Azure Boards app for Slack. With this app you ca
 The app allows you to set up and manage event subscriptions including creation, and work item updates, and to get notifications for these events in your Slack channel. The conversations in the Slack channel can be used to create work items. ​ You will also get personal notifications when work items are assigned to you. In addition, previews for work item URLs will let you initiate discussions.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_22.png)
+> ![Azure Boards app for Slack.](../../media/155_22.png)
 
 To install the Azure Boards app, click [here](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp).
 
@@ -63,7 +63,7 @@ We're excited to announce that we added an option to let you customize the colum
 To configure the columns on your Taskboard, go to **Column Options**.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_01.png "Customizing columns on the taskboard")
+> ![Customizing columns on the taskboard.](../../media/155_01.png "Customizing columns on the taskboard")
 
 This feature was prioritized based on a [suggestion](https://developercommunity.visualstudio.com/content/idea/365416/customize-the-columns-on-the-task-board.html) from the Developer Community. 
 
@@ -74,23 +74,23 @@ Many times, when refining the backlog, you only want to see items that have not 
 If the toggle is on, you will see all child items in a completed state. When the toggle is off, all child items in a completed state will be hidden from the backlog.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_11.gif "Show or hide child items on the backlog")
+> ![Show or hide child items on the backlog.](../../media/155_11.gif "Show or hide child items on the backlog")
 
 ### Search for boards, backlogs, queries and sprint from the instant search box
 
 Now you can easily access your recently visited boards, backlogs, queries and sprints from the search box by activating the search box in Azure Boards. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_18.png)
+> ![Activate the instant search box.](../../media/155_18.png)
 
 In addition, you can search for the boards, backlogs, queries and sprints across your project by typing the board name in the search box. Now, the boards that matter most to you are just a click away.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_19.png)
+> ![Search for a board name.](../../media/155_19.png)
 
 ### Most recent tags displayed when tagging a work item
 
 When tagging a work item, the auto-complete option will now display up to five of your most recently used tags. This will make it easier to add the right information to your work items.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_02.png "Most recent used tags displayed when tagging a work item")
+> ![Most recent used tags displayed when tagging a work item.](../../media/155_02.png "Most recent used tags displayed when tagging a work item")

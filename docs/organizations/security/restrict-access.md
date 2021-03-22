@@ -3,30 +3,49 @@ title: Grant or restrict access to select features
 titleSuffix: Azure DevOps
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
-ms.topic: Conceptual
+ms.topic: conceptual
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
----
+monikerRange: '<= azure-devops'
+ms.date: 02/17/2021 
+--- 
+
 
 # Grant or restrict access
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
-If you're new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to administrating permissions and groups, review [About permissions and inheritance](about-permissions.md)to learn about permission states and inheritance.
 
 In this article you learn how to do the following tasks: 
+
+
+
+::: moniker range="azure-devops"
+
+> [!div class="checklist"]
+> * Recommended method for granting and restricting permissions
+> * Delegate tasks by assigning select permissions to specific roles 
+> * Limit visibility to organization information
+> * Limit people picker to project users and groups 
+> * Restrict access to view or modify objects
+> * Restrict modification of work items based on a user or group
+::: moniker-end
+
+   
+
+
+::: moniker range="< azure-devops"
 
 > [!div class="checklist"]
 > * Recommended method for granting and restricting permissions
 > * Delegate tasks by assigning select permissions to specific roles
 > * Restrict access to view or modify objects
 > * Restrict modification of work items based on a user or group
-
+::: moniker-end
 
 
 > [!TIP]    
@@ -127,6 +146,41 @@ For an account or collection, Edit instance-level (or collection-level) informat
 </tr>
 </table>
 
+
+
+<a id="restrict-access-project-scoped-user-group" />
+
+
+::: moniker range="azure-devops" 
+
+## Limit visibility to organization and project information
+
+By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Limit user visibility for projects** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+With this feature enabled, users added to the **Project-Scoped Users** group can't view most **Organization settings** and can only connect to those projects to which they've been added. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops" 
+
+## Limit people picker to project users and groups
+
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to a project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection).
+
+
+::: moniker-end
+ 
 ## Restrict access to view or modify objects  
 
 Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
@@ -159,28 +213,24 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 </tr>
 </table>
 
-<a id="restrict-modifications-wits" />
+<a id="restrict-modifications-wits" /> 
 
-## Restrict modification of work items based on a user or group  
 
-::: moniker range="azure-devops"
+## Restrict modification of select fields based on a user or group 
 
-For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types restrict who can modify a specific field for a work item type. 
-
-For example, the Priority field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a User Story, they are unable to change the value on the Priority field.
-
-You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
-
-::: moniker-end
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
-> The ability to restrict modification of work items based on a user or group is only supported with the On-premises XML process model at this time for on-premises Azure DevOps. 
+> For Azure DevOps Server 2019 and earlier versions, you can only restrict modification of work items based on a user or group with the On-premises XML process model. 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range="< azure-devops"
 
 For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
@@ -194,9 +244,34 @@ You  restrict access to work tracking objects in one of two ways:
    
 ::: moniker-end
 
-## Restrict modification of closed work items 
 
-[!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
+## Restrict modification of closed work items
+
+[!INCLUDE [temp](../../includes/restrict-modification-closed-work-items.md)]
+
+::: moniker range="< azure-devops"
+
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
+
+For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
+
+```
+<TRANSITION from="Closed" to="New"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+<TRANSITION from="Closed" to="Active"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+```
+
+To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).  
+
+::: moniker-end
+
 
 
 ## Next steps
@@ -209,7 +284,7 @@ You  restrict access to work tracking objects in one of two ways:
 - [Trace permissions](faq-trace-permissions.md)
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
-- [About permissions and groups](about-permissions.md)
+- [About permissions and inheritance](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 

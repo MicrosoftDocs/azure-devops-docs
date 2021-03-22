@@ -65,14 +65,14 @@ steps:
 We added a new task that allows you to install a specific version of the Kubectl binary on the agents. The **latest** and **semver** version strings such as 'v1.14.0' are accepted as valid values for the Kubectl Version Spec input.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_15.png "kubectl tool installer")
+> ![kubectl tool installer.](../../media/150_15.png "kubectl tool installer")
 
 ### Azure container registry in Docker registry service connection
 
-Now you can create a Docker registry service connection from your project's settings page. To create the connection, choose an Azure container registry in one of the subscriptions associated with your Azure Active Directory (AAD) identity. All tasks requiring service connections to container registries such as **Docker@2** and **KubernetesManifest@0** will support a single way of specifying a connection.
+Now you can create a Docker registry service connection from your project's settings page. To create the connection, choose an Azure container registry in one of the subscriptions associated with your Azure Active Directory (Azure AD) identity. All tasks requiring service connections to container registries such as **Docker@2** and **KubernetesManifest@0** will support a single way of specifying a connection.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_13.png "Add a Docker service connection")
+> ![Add a Docker service connection.](../../media/150_13.png "Add a Docker service connection")
 
 ### cgroup support on hosted Ubuntu pool
 
@@ -87,21 +87,21 @@ If you're using infrastructure such as Azure Container Instances to run elastic 
 We've added support for VS2019 to the Visual Studio Test task in pipelines. To run tests using the test platform for VS2019, select the **Latest** or **Visual Studio 2019** options from the Test platform version dropdown.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_05.png "Support for Visual Studio 2019 (VS2019) in Visual Studio Test task")
+> ![Support for Visual Studio 2019 (VS2019) in Visual Studio Test task.](../../media/150_05.png "Support for Visual Studio 2019 (VS2019) in Visual Studio Test task")
 
 ### Agent pool user interface update
 
 The agent pools management page in project settings has been updated with a new user interface. Now you can easily see all the jobs that are running in a pool. In addition you can learn why a job is not running.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_06.png "Agent pool user experience (UX) update")
+> ![Agent pool user experience (UX) update.](../../media/150_06.png "Agent pool user experience (UX) update")
 
 ### Task assistant for editing YAML files
 
 We continue to receive a lot of feedback asking to make it easier to edit YAML files for pipelines. In the previous updates, we added intellisense support. Now we are adding a task assistant to the YAML editor. With this, you will have the same familiar experience for adding a new task to a YAML file as in the classic editor. This new assistant supports most of the common task input types such as pick lists and service connections. To use the new task assistant, select **Edit** on a YAML-based pipeline, and then select the **Task assistant**.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_34.gif "Task assistant for editing YAML files")
+> ![Task assistant for editing YAML files.](../../media/150_34.gif "Task assistant for editing YAML files")
 
 ### Hosted pipelines image updates
 
@@ -137,7 +137,7 @@ Last December, we released the ServiceNow Change Management integration with rel
 With this update, we enhanced the integration to support all types of changes (normal, standard and emergency). In addition, you can now specify the gate used to create a new change request using an existing template, as per the ITSM process followed in your organization. Finally, you can also gate releases based on existing change requests. This enables you to adopt CD, without needing to change the process recommended by your IT teams.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_11.png "ServiceNow change management")
+> ![ServiceNow change management.](../../media/150_11.png "ServiceNow change management")
 
 ### Support for Azure PowerShell Az module
 
@@ -145,12 +145,12 @@ Azure PowerShell provides a set of cmdlets that you can use to manage Azure reso
 
 Previously, we didn’t provide support for the Azure PowerShell Az module in our hosted agents. With the new Azure PowerShell task version 4.* in build and release pipelines, we have added support for the new Az module for all platforms. Azure PowerShell task version 3.* will continue to support the AzureRM module. However, to keep up with the latest Azure services and features, we recommend that you switch to the Azure PowerShell task version 4.* as soon as possible.
 
-The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.5.0#migrate-existing-scripts-to-az).
+The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](/powershell/azure/new-azureps-module-az?view=azps-1.5.0&preserve-view=true#migrate-existing-scripts-to-az).
 
 > [!NOTE]
 > You need to install the Az module on your agent machine if you are using private agents.
 
-For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#continued-support-for-azurerm).
+For more information on the Azure PowerShell Az module, see the documentation [here](/powershell/azure/new-azureps-module-az?view=azps-1.4.0&preserve-view=true#continued-support-for-azurerm).
 
 ### Resource authorization improvements
 
@@ -159,7 +159,7 @@ We needed to provide security for protected resources (e.g., service connections
 With this update, we are making it easier for you to fix a resource authorization problem even if you have not marked a resource as such. In the new experience, when a build fails because of a resource authorization error, you will see an option to explicitly authorize the use of those resources in the pipeline, and then proceed. Team members with permissions to authorize resources will be able to complete this action right from a failed build.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_24.png "Pipeline summary with authorization error")
+> ![Pipeline summary with authorization error.](../../media/150_24.png "Pipeline summary with authorization error")
 
 ### Simplified retention policies for build pipelines
 
@@ -178,4 +178,4 @@ Previously, when you ran tests in pipeline and published code coverage results t
 With this update we have addressed these limitations for Cobertura coverage reports. When publishing code coverage reports, you no longer need to specify HTML files. Reports are automatically generated and are rendered with appropriate styling in the code coverage tab. This capability uses the open source tool [ReportGenerator](https://github.com/danielpalme/ReportGenerator).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/150_33.png "Code coverage")
+> ![Code coverage.](../../media/150_33.png "Code coverage")

@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 * Azure CLI version 2.0.49 or newer.
 
-  * To install, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+  * To install, see [Install the Azure CLI](/cli/azure/install-azure-cli).
 
   * To check the version from the command prompt:
 

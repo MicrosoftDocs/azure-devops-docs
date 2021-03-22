@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 08/19/2020
 ---
 
 <h3 id="set-in-script">Define and modify your variables in a script</h3>
@@ -30,14 +30,14 @@ On Linux and macOS, you use `$AGENT_WORKFOLDER`.
 
 **Batch script**
 
-![icon](../tasks/utility/media/batch-script.png) Set the `sauce` and `secret.Sauce` variables
+:::image type="icon" source="../tasks/utility/media/batch-script.png" border="false"::: Set the `sauce` and `secret.Sauce` variables
 
 ```bat
 @echo ##vso[task.setvariable variable=sauce]crushed tomatoes
 @echo ##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic
 ```
 
-![icon](../tasks/utility/media/batch-script.png) Read the variables
+:::image type="icon" source="../tasks/utility/media/batch-script.png" border="false"::: Read the variables
 
 Arguments
 
@@ -61,7 +61,7 @@ set secretSauceArgument=%~2
 
 **PowerShell script**
 
-![icon](../tasks/utility/media/powershell.png) Set the `sauce` and `secret.Sauce` variables
+:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: Set the `sauce` and `secret.Sauce` variables
 
 ```powershell
 Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
@@ -69,7 +69,7 @@ Write-Host "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed t
             garlic"
 ```
 
-![icon](../tasks/utility/media/powershell.png) Read the variables
+:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: Read the variables
 
 Arguments
 
@@ -92,7 +92,7 @@ Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do
 
 # [Shell](#tab/shell)
 
-![icon](../tasks/utility/media/shell-script.png) Set the `sauce` and `secret.Sauce` variables
+:::image type="icon" source="../tasks/utility/media/shell-script.png" border="false"::: Set the `sauce` and `secret.Sauce` variables
 
 ```bash
 #!/bin/bash
@@ -100,7 +100,7 @@ echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 echo "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic"
 ```
 
-![icon](../tasks/utility/media/shell-script.png) Read the variables
+:::image type="icon" source="../tasks/utility/media/shell-script.png" border="false"::: Read the variables
 
 Arguments
 

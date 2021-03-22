@@ -3,6 +3,7 @@ title: WebLayout XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.author: kaelli
 author: KathrynEE
@@ -525,7 +526,7 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 <p>Use <code>DateTimeControl</code> to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
 <img src="media/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](/azure/devops/organizations/settings/set-your-preferences)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
+<blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](../../organizations/settings/set-your-preferences.md)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
 </td>
 </tr>
 
@@ -672,5 +673,4 @@ Given the above example, you can add the following code snippet to your work ite
 
 Upon import of the updated WIT definition, the group extension will automatically appear on your work item form.
 
-The next time you export your WIT definition, you'll see that a ```GroupContribution``` element has been added. You can move this element within the ```WebLayout``` section just as you would any other control. 
-
+The next time you export your WIT definition, you'll see that a ```GroupContribution``` element has been added. You can move this element within the ```WebLayout``` section just as you would any other control.

@@ -22,6 +22,8 @@ When the pipeline job completes, no matter whether it succeeds, fails, or is can
 
 It is unnecessary to use this task with the [Install Apple Certificate](install-apple-certificate.md) or [Install Apple Provisioning Profile](install-apple-provisioning-profile.md) tasks because they automatically download, install, and delete (at the end of the pipeline job) the secure file.
 
+This task currently supports only one file task per instance.
+
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -32,9 +34,22 @@ It is unnecessary to use this task with the [Install Apple Certificate](install-
 
 ## Arguments
 
-| Argument | Description |
-| -------- | ----------- |
-| Secure File | The file name or unique identifier (GUID) of the secure file to download to the agent machine. The file will be deleted when the pipeline job completes. |
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>secureFile</code><br/>Secure File</td>
+      <td>(Required) The file name or unique identifier (GUID) of the secure file to download to the agent machine. The file will be deleted when the pipeline job completes.</td>
+   </tr>
+   <tr>
+      <td><code>retryCount</code><br/>Retry Count</td>
+      <td>(Optional) Number of times to retry downloading a secure file if the download fails.<br/>Default value: 8</td>
+   </tr>
+</table>
 
 ## Example
 

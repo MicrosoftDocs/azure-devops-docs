@@ -69,7 +69,7 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+* [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

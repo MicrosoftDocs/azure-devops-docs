@@ -77,7 +77,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 - task: CopyFiles@2
   displayName: Copy Files
   inputs:
-    SourceFolder: $(system.defaultworkingdirectory)/target/azure-functions/
+    SourceFolder: $(system.defaultworkingdirectory)/target/azure-functions/$(functionAppName)/
     Contents: '**'
     TargetFolder: $(build.artifactstagingdirectory)   
 

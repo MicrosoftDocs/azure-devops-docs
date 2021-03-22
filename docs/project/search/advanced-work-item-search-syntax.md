@@ -1,20 +1,20 @@
 ---
-title: Use advanced workitem search options
-description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps and TFS for all projects of your projects 
+title: Use advanced work item search options
+description: How to use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
-ms.date: 12/07/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# How To: Use Work Item Search
+# Advanced work items search
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Work Item Search is available as a built-in extension in Azure DevOps and TFS.
+Work Item Search is available as a built-in extension in Azure DevOps.
 Users can use Work Item Search by default without any installation 
 when Boards service is installed and enabled in Azure DevOps Services.
 
@@ -66,8 +66,7 @@ The selected projects are always at the top of the list.
 Notice that hit counts are also shown for projects that are not selected. 
 
 Open the search results in a new browser tab from either search box by
-pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/shared/start-search-icon.png) icon.
+pressing _Ctrl+Shift+Enter_.
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -86,24 +85,25 @@ Mix and match the functions to create quick powerful searches. For example:
 * Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer and float fields.
   For example, a search such as <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week
 
-* For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
+* For the search query that contains multiple terms and users looking for exact match, embed the search term inside " ";
   for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
-## Quick Filters shortcuts
+## Quick filter shortcuts
 
-The common inline search filters can be quickly accessed using shortcuts:
+You can use the following common inline search filters to quickly access common shortcuts:
 
 * `a:` for **Assigned to:** 
 * `c:` for **Created by:** 
 * `s:` for **State** 
 * `t:` for **Work item type**
 
-For example, you can use quick searches such as **a:@Me s:active t:bug** to find all bugs assigned to you.
+For example, you can use quick searches such as **`a:@Me s:active t:bug`** to find all bugs assigned to you.
 
 <a name="locationfunctions"></a>
-## Filters to scope projects, area and iteration paths
+
+## Scope projects and area and iteration paths using filters 
 
 Filters make it easy to narrow the search to specified projects and area paths.
 Narrow the search to a specific location using the `proj`, `area`, or `iteration` filters:
@@ -117,10 +117,11 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
   For example: `Wiki path:"Contoso/Windows Phones and Devices/Services"`.
   
 <a name="quicknavigation"></a>
-## Quickly navigate to a work item using its ID
 
-Type or paste the work item ID in the search box in the Azure DevOps or TFS title bar 
-to quickly navigate to it. Searching for a work item ID opens the work item in a 
+## Quickly go to a work item using its ID
+
+Type or paste the work item ID in the search box in the Azure DevOps title bar 
+to quickly go to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
 ::: moniker range=">= azure-devops-2019"  
@@ -199,12 +200,11 @@ You can use more than one `?` wildcard to match more than one character.
 <a name="seemoreworkitem"></a>
 ## See more of the work item
 
-You can quickly get a full screen view of the selected work item using the expand
-![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png)
-and shrink ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png)
-icons in the toolbar. However, another way to see more of the work item, while still being able to 
+You can quickly get a full screen view of the selected work item using 
+![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png) **expand**
+and ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png) **shrink** in the toolbar. However, another way to see more of the work item, while still being able to 
 select work items from the list of matching results, is to hide the left column filter pane
-by choosing the **&lt;** icon at the top left of the column. Use the **&gt;** icon to restore the filter pane. 
+by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the filter pane. 
 
 If you are using a portrait orientation screen, use the **Preview pane: Right**
 link at the top right of the window to display the code below the 
@@ -213,4 +213,4 @@ search results list.
 >Search remembers the state of the filter pane, configuration of the work item 
 view pane, and its position between sessions as part of your user preferences.
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+

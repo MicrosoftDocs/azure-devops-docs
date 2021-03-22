@@ -4,18 +4,21 @@ description: Use REST APIs to get work items from Azure DevOps Services with que
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/27/2017
 ---
 
-# Fetch work items with queries programmatically in Azure DevOps Services
+# Fetch work items with queries programmatically 
+
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
 
 ## Prerequisites
-To work on this Quickstart, you'll need the following prerequisites:
+
+You need the following prerequisites:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
@@ -26,7 +29,8 @@ To work on this Quickstart, you'll need the following prerequisites:
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
-There are a few things happening in the code sample below:
+
+There are a few things happening in the following code sample:
 
 1. Authenticating
    1. Create credentials using your PAT
@@ -37,6 +41,7 @@ There are a few things happening in the code sample below:
    3. Get each of the work items by ID
 
 ## C# code snippet
+
 ```cs
 // nuget:Microsoft.TeamFoundationServer.Client
 using System;
@@ -82,7 +87,7 @@ public class QueryExecutor
         // create a wiql object and build our query
         var wiql = new Wiql()
         {
-            // NOTE: Even if other columns are specified, only the ID & URL will be available in the WorkItemReference
+            // NOTE: Even if other columns are specified, only the ID & URL are available in the WorkItemReference
             Query = "Select [Id] " +
                     "From WorkItems " +
                     "Where [Work Item Type] = 'Bug' " +
@@ -136,7 +141,7 @@ public class QueryExecutor
 }
 ```
 
-## Next Steps
+## Related articles
 
-* Check out another Quickstart: [Create a bug](./create-bug-quickstart.md)
-* Explore the [integrate samples](../get-started/client-libraries/samples.md)
+- [Create a bug](./create-bug-quickstart.md)
+- [Integrate samples](../get-started/client-libraries/samples.md)

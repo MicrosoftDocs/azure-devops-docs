@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 03/05/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -16,13 +16,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
+Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
 
 ## Prerequisites
 
-You must be an Azure DevOps Administrator in Azure AD to manage this policy. 
-
-For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+You must be an Azure DevOps Administrator in Azure AD to manage this policy. It isn't a requirement to be a Project Collection Administrator.
 
 If you don't see the policy section in Azure DevOps, you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
@@ -31,7 +29,14 @@ If you don't see the policy section in Azure DevOps, you aren't an administrator
 You can also check your role using the Azure AD PowerShell module.
 ![Azure AD PowerShell to enable policy](media/azure-ad-tenant-policy/azure-ad-powershell.png)
 
+For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+
+> [!NOTE]
+> An Azure DevOps Administrator can only restrict new organization creation for individual users, rather than groups at this time. 
+
 ## Turn on the policy
+
+
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -46,7 +51,7 @@ You can also check your role using the Azure AD PowerShell module.
 
 ### Create allow list
 
-With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users or groups with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
+With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
 
 1. Select **Add AAD user or group**.
 
@@ -82,4 +87,3 @@ The error message is customized.
 * [About access with Azure AD](access-with-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)
-

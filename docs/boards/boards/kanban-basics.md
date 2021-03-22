@@ -12,7 +12,7 @@ ms.date: 01/08/2018
 
 # Kanban basics
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -122,7 +122,7 @@ Updating your Kanban board as work progresses helps keep you and your team in sy
 
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Choose the **Analytics** tab, and then choose **View full report** for the Cumulative Flow Diagram as shown in the following image. 
 
@@ -171,7 +171,7 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 ## Try this next
 
 Here are some useful tips when working with the Kanban board:
-- To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
+- To focus on select work items, [filter your Kanban board](../backlogs/filter-backlogs-boards-plans.md)
 - To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../../boards/boards/customize-cards.md)     
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
 - Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md)) 

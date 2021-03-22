@@ -2,7 +2,7 @@
 title: Repository protection
 description: Securing repos and forks.
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 05/14/2020
 monikerRange: '> azure-devops-2019'
 ---

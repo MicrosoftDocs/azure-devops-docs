@@ -12,11 +12,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: View and filter wiki pages
+# View and filter wiki pages
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn how to view public project wikis. If you're a contributor, you can also [add and edit pages](../../project/wiki/add-edit-wiki.md).
+Learn how to view public project wikis. If you're a contributor, you can also [add and edit pages](../../project/wiki/add-edit-wiki.md).
 
 [!INCLUDE [temp](includes/anon-user.md)]
 

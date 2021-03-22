@@ -1,6 +1,6 @@
 ::: moniker range=">= tfs-2017"
 
-Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](/azure/devops/repos/git/branch-permissions) and [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies).
+Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](../../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../../repos/git/branch-policies.md).
 
 <table>
 <tr valign="bottom">
@@ -14,18 +14,18 @@ Set permissions across all Git repositories by making changes to the top-level *
 <tr>
 <td align="left">Clone, fetch, and explore the contents of a repository; also, can create, comment on, vote, and contribute to pull requests
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Contribute to a repository, create branches, create tags, manage notes
 </td>
 <td> </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Create, delete, and rename repositories 
@@ -33,7 +33,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Edit policies, Manage permissions, Remove others&#39; locks
@@ -41,7 +41,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Bypass policies when completing pull requests, Bypass policies when pushing, Force push (rewrite history, delete branches and tags)  <em>(not set for any security group)</em> 
@@ -60,7 +60,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 
 ::: moniker range="tfs-2015"
 
-Set permissions across all Git repositories by making changes to the top-level <strong>Git repositories</strong> entry. Individual repositories inherit permissions from the top-level <strong>Git Repositories</strong> entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see <a href="/azure/devops/repos/git/branch-permissions" data-raw-source="[Set branch permissions](/azure/devops/repos/git/branch-permissions)">Set branch permissions</a> and <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](/azure/devops/repos/git/branch-policies)">Improve code quality with branch policies</a>.
+Set permissions across all Git repositories by making changes to the top-level <strong>Git repositories</strong> entry. Individual repositories inherit permissions from the top-level <strong>Git Repositories</strong> entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see <a href="/azure/devops/repos/git/branch-permissions" data-raw-source="[Set branch permissions](../../../repos/git/branch-permissions.md)">Set branch permissions</a> and <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
 
 By default, the project-level Readers groups have read-only permissions.
 
@@ -73,32 +73,32 @@ By default, the project-level Readers groups have read-only permissions.
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>Branch Creation</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
+<td align="left"><strong>Branch Creation</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
+<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><strong>Note Management</strong>: Can push and edit Git notes to the repository. They can also remove notes from items if they have the Force permission.
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><strong>Tag Creation</strong>: Can push tags to the repository, and can also edit or remove tags if they have the Force permission.
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><strong>Administer</strong>: Delete and rename repositories
@@ -107,14 +107,14 @@ Administer permissions at the top-level <strong>Git repositories</strong> entry.
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><strong>Rewrite and destroy history (force push)</strong>: Can force an update to a branch and delete a branch. A force update can overwrite commits added from any user. Users with this permission can modify the commit history of a branch.
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 </tbody>
 </table>

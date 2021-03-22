@@ -1,12 +1,12 @@
 ---
 title: Troubleshoot pipeline runs
-description: Learn how to troubleshoot pipeine runs in Azure Pipelines and Team Foundation Server.
+description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team Foundation Server.
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 06/09/2020
+ms.date: 02/12/2021
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -56,7 +56,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline settings UI. If your `trigger` or `pr` triggers don't seem to be firing, check that setting. While editing your pipeline, choose **...** and then **Triggers**.
 
-![Pipeline settings UI.../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 Check the **Override the YAML trigger from here** setting for the types of trigger (**Continuous integration** or **Pull request validation**) available for your repo.
 
@@ -98,7 +98,17 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 
 ### UI settings override YAML scheduled triggers
 
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. 
+
+To access the pipeline settings UI from a YAML pipeline, edit your pipeline, choose **...** and then **Triggers**.
+
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+Remove all scheduled triggers. 
+
+:::image type="content" source="../process/media/triggers/delete-ui-scheduled-trigger.png" alt-text="Delete scheduled triggers in the Pipeline settings UI.":::
+
+Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
@@ -109,6 +119,7 @@ If your pipeline queues but never gets an agent, check the following items.
 ::: moniker range="azure-devops"
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Can't access Azure Key Vault behind firewall from Azure DevOps](#cant-access-azure-key-vault-behind-firewall-from-azure-devops)
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
@@ -122,7 +133,7 @@ If your pipeline queues but never gets an agent, check the following items.
 > 
 > Learn more:
 > [How a parallel job is consumed by a pipeline](../licensing/concurrent-jobs.md),
-> [Approvals within a pipeline](../release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
+> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-approvals),
 > [Server jobs](../process/phases.md#server-jobs),
 > [Deployment groups](../release/deployment-groups/index.md)
 
@@ -159,6 +170,10 @@ If you are currently running other pipelines, you may not have any remaining par
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+### Can't access Azure Key Vault behind firewall from Azure DevOps
+
+If you can't access Azure Key Vault from your pipeline, the firewall might be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allowlisted. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md#networking).
 
 ### You don't have enough concurrency
  
@@ -209,7 +224,7 @@ To check the capabilities and demands specified for your agents and pipelines, s
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands and you are using Microsoft-hosted agents, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands that don't match the system capabilities of the agent, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
 
 ::: moniker-end
 
@@ -285,7 +300,7 @@ If your pipeline gets an agent but fails to complete, check the following common
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
 * [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
-* [Process hang](#process-hang)
+* [Process stops responding](#process-stops-responding)
 * [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
@@ -349,6 +364,61 @@ Check the logs for the exact command-line executed by the failing task. Attempti
 For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
+::: moniker range="azure-devops"
+
+#### File layout
+
+The location of tools, libraries, headers, and other things needed for a build may be different on the hosted agent than from your local machine.
+If a build fails because it can't find one of these files, you can use the below scripts to inspect the layout on the agent.
+This may help you track down the missing file.
+
+Create a new YAML pipeline in a temporary location (e.g. a new repo created for the purpose of troubleshooting).
+As written, the script searches directories on your path.
+You may optionally edit the `SEARCH_PATH=` line to search other places.
+
+```yaml
+# Script for Linux and macOS
+pool: { vmImage: ubuntu-latest } # or whatever pool you use
+steps:
+- checkout: none
+- bash: |
+    SEARCH_PATH=$PATH  # or any colon-delimited list of paths
+    IFS=':' read -r -a PathDirs <<< "$SEARCH_PATH"
+    echo "##[debug] Found directories"
+    for element in "${PathDirs[@]}"; do
+        echo "$element"
+    done;
+    echo;
+    echo;  
+    echo "##[debug] Found files"
+    for element in "${PathDirs[@]}"; do
+        find "$element" -type f
+    done
+```
+
+```yaml
+# Script for Windows
+pool: { vmImage: windows-2019 } # or whatever pool you use
+steps:
+- checkout: none
+- powershell: |
+    $SEARCH_PATH=$Env:Path
+    Write-Host "##[debug] Found directories"
+    ForEach ($Dir in $SEARCH_PATH -split ";") {
+      Write-Host "$Dir"
+    }
+    Write-Host ""
+    Write-Host ""
+    Write-Host "##[debug] Found files"
+    ForEach ($Dir in $SEARCH_PATH -split ";") {
+      Get-ChildItem $Dir -File -ErrorAction Continue | ForEach-Object -Process {
+        Write-Host $_.FullName
+      }
+    }
+```
+
+::: moniker-end
+
 #### Differences between local command prompt and agent
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
@@ -373,7 +443,7 @@ Troubleshooting steps:
 
 #### Detect files and folders in use
 
-On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
+On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](/sysinternals/downloads/process-explorer) or [Handle](/sysinternals/downloads/handle) can be used.
 
 #### Anti-virus exclusion
 
@@ -400,9 +470,9 @@ File-in-use issues may result when leveraging the concurrent-process feature of 
 
 If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn).
 
-### Process hang
+### Process stops responding
 
-Process hang causes and troubleshooting steps:
+Process stops responding causes and troubleshooting steps:
 
 * [Waiting for Input](#waiting-for-input)
 * [Process dump](#process-dump)
@@ -410,7 +480,7 @@ Process hang causes and troubleshooting steps:
 
 #### Waiting for Input
 
-A process hang may indicate that a process is waiting for input.
+A process that stops responding may indicate that a process is waiting for input.
 
 Running the agent from the command line of an interactive logged on session may help to identify whether a process is prompting with a dialog for input.
 
@@ -477,12 +547,24 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
+### Libraries aren't installed for Python application when script executes 
+
+When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
+
+To install the dependencies, use a post-deployment script in the App Service deployment task. The following example shows the command you must use in the post-deployment script. You can update the script for your scenario.
+
+```
+D:\home\python364x64\python.exe -m pip install -r requirements.txt
+```
+
+
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
+### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
 
-
+In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 
@@ -501,4 +583,3 @@ For detailed instructions for configuring and using logs, see [Review logs to di
 Report any problems or submit feedback at [Developer Community](https://developercommunity.visualstudio.com/).
 
 We welcome your suggestions:
-

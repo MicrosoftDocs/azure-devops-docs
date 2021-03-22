@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 :::row:::
@@ -28,11 +28,11 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
    :::column-end:::
    :::column span="2":::
       <br/><br/><br/> 
-      **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)<br/>
-      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)<br/>
-      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)<br/>
-      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](/azure/devops/boards/sprints/assign-work-sprint)<br/>
-      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)<br/>
+      **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](../../boards/work-items/view-add-work-items.md)<br/>
+      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](../../boards/backlogs/create-your-backlog.md)<br/>
+      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](../../boards/boards/kanban-quickstart.md)<br/>
+      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](../../boards/sprints/assign-work-sprint.md)<br/>
+      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](../../boards/queries/using-queries.md)<br/>
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
       <br/><br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>
@@ -54,11 +54,11 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
    :::column-end:::
    :::column span="2":::
       <br/><br/> 
-      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[backlog](/azure/devops/boards/backlogs/create-your-backlog)">backlog</a><br/>
-      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/boards/kanban-quickstart" data-raw-source="[board](/azure/devops/boards/boards/kanban-quickstart)">board</a><br/>
-      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[current iteration](/azure/devops/boards/sprints/assign-work-sprint)">current iteration</a><br/>
-      **t**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](/azure/devops/boards/sprints/task-board)">task board</a><br/>
-      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
+      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[backlog](../../boards/backlogs/create-your-backlog.md)">backlog</a><br/>
+      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/boards/kanban-quickstart" data-raw-source="[board](../../boards/boards/kanban-quickstart.md)">board</a><br/>
+      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[current iteration](../../boards/sprints/assign-work-sprint.md)">current iteration</a><br/>
+      **t**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](../../boards/sprints/task-board.md)">task board</a><br/>
+      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](../../boards/queries/using-queries.md)">queries</a><br/>
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
       <br/><br/><br/><br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>
@@ -70,4 +70,3 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
 ::: moniker-end
 
 
- 

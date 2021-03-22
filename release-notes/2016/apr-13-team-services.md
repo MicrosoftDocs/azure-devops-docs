@@ -21,7 +21,7 @@ You can now setup an alert for tracking changes to a single work item just by cl
 
 This is the first feature in a set of personal notifications improvements we are continuing to update. Stay tuned for more updates here.
 
-For details, see [Follow a work item](https://msdn.microsoft.com/Library/vs/alm/work/track/follow-work-items).
+For details, see [Follow a work item](/azure/devops/boards/work-items/follow-work-items).
 
 ## Change work item type
 
@@ -31,7 +31,7 @@ Change type is also an option during a work item move if the type you are moving
 
 ![Change a work item type](media/4_13_02.png)
 
-For details see [Move, change, and delete work items](https://msdn.microsoft.com/Library/vs/alm/work/backlogs/remove-delete-work-items) or [Bulk modify work items](https://msdn.microsoft.com/Library/vs/alm/work/backlogs/bulk-modify-work-items).
+For details see [Move, change, and delete work items](/azure/devops/boards/backlogs/remove-delete-work-items) or [Bulk modify work items](/azure/devops/boards/backlogs/bulk-modify-work-items).
 
 ## Work Item move (single or bulk)
 
@@ -93,17 +93,17 @@ Xamarin Build Tasks
 
 We made some significant improvements to our Xamarin support: 
 
-- The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports macOS and Linux
-- The [Xamarin.iOS](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-ios) step now supports signing and packaging
-- [Xamarin Test Cloud](https://msdn.microsoft.com/library/vs/alm/build/steps/test/xamarin-test-cloud) results can be displayed on the build summary page
+- The [Xamarin.Android](/azure/devops/pipelines/tasks/build/xamarin-android) step now supports macOS and Linux
+- The [Xamarin.iOS](/azure/devops/pipelines/tasks/build/xamarin-ios) step now supports signing and packaging
+- [Xamarin Test Cloud](/azure/devops/pipelines/tasks/test/xamarin-test-cloud) results can be displayed on the build summary page
 - A new [Xamarin component restore](/xamarin/cross-platform/troubleshooting/component-nuget) step
-- The [NuGet Installer](https://msdn.microsoft.com/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
+- The [NuGet Installer](/azure/devops/pipelines/tasks/package/nuget) step now supports macOS
 
-Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](https://msdn.microsoft.com/Library/vs/alm/Build/apps/xamarin).
+Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](/azure/devops/pipelines/ecosystems/xamarin).
 
 ## Widget SDK: Reusable CSS and DOM templates
 
-When building widgets for the Dashboard, developers can now use the same CSS that we apply to our widgets. This helps developers get started using great widget styles that have a consistent look and feel with VSTS. You can learn how to incorporate these styles in your widget by visiting our [integration docs](https://aka.ms/widgetSDKStyles).
+When building widgets for the Dashboard, developers can now use the same CSS that we apply to our widgets. This helps developers get started using great widget styles that have a consistent look and feel with VSTS. You can learn how to incorporate these styles in your widget by visiting our [integration docs](/azure/devops/extend/develop/styles-from-widget-sdk).
 
 ## Adding users from the team members widget
 

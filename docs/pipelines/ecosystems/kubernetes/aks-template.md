@@ -19,6 +19,8 @@ In this step-by-step guide, you'll learn how to create a pipeline that continuou
 
 ## Prerequisites
 
+To ensure that your Azure DevOps project has the authorization required to access your Azure subscription, [create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required when you create a pipeline in the project to deploy to Azure Kubernetes Service.  Otherwise, the drop-down lists for **Cluster** and **Container Registry** are empty.    
+
 [!INCLUDE [include](../../includes/prerequisites.md)]
 
 [!INCLUDE [include](../../includes/azure-prerequisites.md)]
@@ -50,7 +52,8 @@ az aks create \
     --name myapp \
     --node-count 1 \
     --enable-addons monitoring \
-    --generate-ssh-keys
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
 ```
 
 ## Sign in to Azure Pipelines
@@ -99,6 +102,10 @@ When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service*
 
 As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
+> [!NOTE]
+> If you're using a Microsoft-hosted agent, you must add the IP range of the Microsoft-hosted agent to your firewall. Get the weekly list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519), which is published every Wednesday. The new IP ranges become effective the following Monday. For more information, see [Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#networking).
+> To find the IP ranges that are required for your Azure DevOps organization, learn how to [identify the possible IP ranges for Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents).
+    
 After the pipeline run is finished, explore what happened and then go see your app deployed. From the pipeline summary:
 
 1. Select the **Environments** tab.

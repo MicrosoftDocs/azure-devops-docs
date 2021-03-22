@@ -63,7 +63,7 @@ After you validate the process, you can then change projects to use the newly cr
 > [!div class="mx-imgBorder"]
 > ![Change process for project](media/139_05.png)
 
-See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=azure-devops&tabs=new-nav) documentation for more information.
+See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=azure-devops&preserve-view=true&tabs=new-nav) documentation for more information.
 
 ### Chat about the latest status using the improved Microsoft Teams integration
 
@@ -106,7 +106,7 @@ We have now added support for Azure Kubernetes Service (AKS) targeting Go Langua
 
 When VSTS posts the status of a build to GitHub, the status text appears on the associated commit, branch, and pull request check. Until now, each build pipeline's name in the text was prefaced with `VSTS:`. We removed this preface from the status text so that the name of the build pipeline would be easier to see with a glance and not cause confusion about `VSTS:` being in a build pipeline's official name. Unfortunately, this change affects GitHub branch protection rules where GitHub still expects pipeline names to begin with `VSTS:`. This may cause GitHub pull requests to be blocked until repository settings are updated. To resolve this, after running the build at least once, update your repository's branch protection rules under repository Settings > Branches > Branch protection rules.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

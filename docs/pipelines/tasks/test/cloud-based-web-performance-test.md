@@ -4,8 +4,8 @@ description: Runs the Quick Web Performance Test with a build or release pipelin
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
