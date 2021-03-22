@@ -364,7 +364,7 @@ VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
 VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -385,7 +385,7 @@ VS403260: The database is not detached.
 VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and retry the import queue.  
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and retry the import queue.  
 
 **VS403261**
 
