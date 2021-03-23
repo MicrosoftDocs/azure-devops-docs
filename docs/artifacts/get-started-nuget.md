@@ -4,7 +4,7 @@ description: Use Azure Artifacts to publish and consume NuGet packages
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 03/06/2020
+ms.date: 03/23/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2018 | TFS 2017**
 
-Azure Artifacts feeds enable developers to publish and consume NuGet packages to/from feeds and public registries.
+Azure Artifacts enable developers to publish and consume NuGet packages to/from feeds and public registries.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 ::: moniker-end
 
 <a name="create-a-feed"></a>
+
 ## Create a feed
 
 *Already have a feed? [Skip to the next step](#publish-a-package).*
@@ -39,21 +40,13 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 [!INCLUDE [](includes/create-feed.md)]
 
 <a name="publish-a-package"></a>
+
 ## Publish packages
 
 [!INCLUDE [](includes/nuget/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
+
 ## Consume your package in Visual Studio
 
 [!INCLUDE [](includes/nuget/consume.md)]
-
-<a name="automate-with-continuous-integration"></a>
-## Automate the process with continuous integration
-
-You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [NuGet in Team Build guidance](../pipelines/artifacts/nuget.md).
-
-## What's next?
-
-For more advanced topics, check out the [content summary](overview.md).

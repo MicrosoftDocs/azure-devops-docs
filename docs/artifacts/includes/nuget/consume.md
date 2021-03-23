@@ -60,15 +60,3 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package ver
 1. On the upstream source (for example, nuget.org), copy the `Install-Package` command.
 2. In Visual Studio, open the Package Manager Console from **Tools** > **NuGet Package Manager**.
 3. Paste the `Install-Package` command into the Package Manager Console and run it.
-
-<a name="use-symbols-to-debug"></a>
-
-## Use symbols to debug
-
-Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers, or package names. If [symbols have been published](../../../pipelines/artifacts/symbols.md) for your packages, [connect Visual Studio to the symbol server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
-
-<!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
-
-## Using Visual Studio 2013 or earlier
-
-You'll need to get a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.
