@@ -65,7 +65,7 @@ None
 </tr>
 <tr>
 <td>Path to 7z utility</td>
-<td>You can specify custom path to 7z utility using this option.</td>
+<td>You can specify custom path to 7z utility using this option. If it's not specified on Windows - default 7zip version supplied with a task will be used.</td>
 </tr>
 <tr>
 </tr>
