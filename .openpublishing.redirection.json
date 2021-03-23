@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/integrate/ide/extensions/overview.md",
       "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false

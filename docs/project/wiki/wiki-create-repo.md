@@ -108,7 +108,7 @@ The URL of the wiki Git repository is exposed. Copy and paste it into your web b
 
 ::: moniker range=">= azure-devops-2020"
 
-You can create a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can create a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 > [!NOTE]
 > If you want to provision more than one wiki, then you must [publish code as a wiki](./publish-repo-to-wiki.md#publish-a-git-repository-to-a-wiki). You can set up multiple wiki repos within a single project.

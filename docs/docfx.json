@@ -10,6 +10,10 @@
         "group": "all",
         "exclude": [
           "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -22,7 +26,11 @@
       },
       {
         "files": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md"
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**"
         ],
         "exclude": [
           "**/obj/**",

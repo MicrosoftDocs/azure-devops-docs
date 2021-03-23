@@ -74,7 +74,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 ## Clone the repo to your computer
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](commits.md) and [branches](branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](commits.md) and [branches](./create-branch.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -92,7 +92,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://dev.azure.com/fabrikam-fiber/MyFirstProject/_git/
    ```
 
-   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](../git/branches.md) from the repo.
+   Git downloads a copy of the code into a new folder for you to work with. The download includes all [commits](../git/commits.md) and [branches](./create-branch.md) from the repo.
 
 4. Switch your directory to the repository that you cloned.
 
@@ -116,7 +116,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
    git clone https://fabrikam-fiber.visualstudio.com/DefaultCollection/MyFirstProject/_git/
    ```
   
-   After running the previous command, Git downloads a copy of the code into a new folder for you to work with. This download includes all [commits](commits.md) and [branches](branches.md) from the repo.
+   After running the previous command, Git downloads a copy of the code into a new folder for you to work with. This download includes all [commits](commits.md) and [branches](./create-branch.md) from the repo.
 
    Keep this command window open, as you'll use it in the following steps.
 

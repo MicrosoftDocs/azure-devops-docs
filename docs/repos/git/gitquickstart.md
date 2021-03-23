@@ -78,7 +78,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work in the project.
+Git [branches](./create-branch.md) isolate your changes from other work in the project.
 The recommended [Git workflow](gitworkflow.md) uses a new branch for every feature or fix you work on.
 You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 

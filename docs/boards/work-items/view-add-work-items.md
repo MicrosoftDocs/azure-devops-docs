@@ -187,7 +187,7 @@ To view a work item, double-click the title or open the context menu for the wor
 
 ::: moniker range=">= azure-devops-2020"  
 
-You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can view a new work item with the [az boards work-item show](/cli/azure/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az boards work-item show --id

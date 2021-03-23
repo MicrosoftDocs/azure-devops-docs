@@ -37,6 +37,9 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
+> [!NOTE]
+> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected.
+
 ## What is a parallel job? 
 
 When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline. Each running job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
@@ -62,19 +65,19 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 # [Microsoft-hosted](#tab/ms-hosted)
 
-For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default. You can request this free grant for your open-source project by sending an email to azpipelines-ossgrant@microsoft.com and providing the following information:
+For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default.
+
+For **private projects**, you can get one free job that can run for up to 60 minutes each time. When you create a new Azure DevOps organization you may not always be given this free grant by default. 
+
+To request the free grant for public or private projects, send an email to azpipelines-freetier@microsoft.com and provide the following information:
 
 - Your name
 - The Azure DevOps organization for which you are seeking the free grant
-- Links to public repositories that you plan to build
-- A brief description of your open-source project
+- Whether you need the free grant for public projects or private projects
+- (Public projects only) Links to public repositories that you plan to build
+- (Public projects only) A brief description of your project
 
-> [!NOTE]
-> The above grant of 10 free pipelines is only for open-source projects.
-
-For **private projects**, you get one free job that can run for up to 60 minutes each time. 
-
-There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
+There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects.
 
 |           |  Number of parallel jobs |  Time limit |
 | ----------| -------------------------| ------------|

@@ -155,7 +155,7 @@ You can use the following steps to identify the commit that contains the content
 For more information, see the following articles:
 
 - [Clone an existing Git repo](../../repos/git/clone.md)  
-- [Create work in branches](../../repos/git/branches.md)  
+- [Create work in branches](../../repos/git/create-branch.md)  
 - [Review history](../../repos/git/review-history.md)  
 - [Undo (revert) changes](../../repos/git/undo.md)
 - [Resolve merge conflicts](../../repos/git/merging.md)
