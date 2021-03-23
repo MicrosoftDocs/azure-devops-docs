@@ -162,9 +162,9 @@ You can use more than one `?` wildcard to match more than one character.
 
 See the following table for more wildcard usage and examples.
 
-|**Usage**                                                              | **Example**                                             |
+|**Usage**                                                           | **Example**                                             |
 |--------------------------------------------------------------------|------------------------------------------------------------|
-| Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**.    || `CodeSenseHttp*` and  `CodeA23?R`  |  
+| Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**. | `CodeSenseHttp*` and  `CodeA23?R`  |  
 | Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
 
 > [!WARNING]

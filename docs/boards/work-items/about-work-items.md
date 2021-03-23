@@ -219,7 +219,7 @@ You can use the search box to perform an ad hoc search to find specific work ite
 To learn more, see these topics: 
 - [About managed queries](../queries/about-managed-queries.md) 
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [About managed queries, Ad hoc versus managed queries](../queries/about-managed-queries.md#ad-hoc-v-managed)  
+- [About managed queries](../queries/about-managed-queries.md) 
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />
