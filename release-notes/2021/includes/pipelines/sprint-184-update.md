@@ -6,7 +6,27 @@ ms.date: 03/23/2021
 ms.topic: include
 ---
 
-### Removal of per-pipeline retention policies in class builds
+### Changes to Azure Pipelines free grants
+
+Azure Pipelines has been offering free CI/CD to public and private projects for several years. Because this amounts to giving away free compute, it has always been a target for abuse – especially crypto mining. Minimizing this abuse has always taken energy from the team. Over the past few months, the situation has gotten substantially worse, with a high percentage of new projects in Azure DevOps being used for crypto mining and other activities we classify as abusive. Several service incidents over the past month have been caused by this abuse resulting in long wait times for existing customers.
+
+To address this situation, we've added an extra step for new organizations in Azure DevOps to get their free grant. The following changes are effective immediately:
+
+* By default, new organizations created in Azure DevOps will no longer get a free grant of concurrent pipelines. This applies to both public as well as private projects in new organizations.
+* To request your free grant, send an email to azpipelines-freetier@microsoft.com and provide the following details clearly:
+    * Your name
+    * Azure DevOps organization for which you are requesting the free grant
+    * Whether you need the free grant for public projects, private projects, or both
+    * Links to the repositories that you plan to build (public projects only) 
+    * Brief description of your project (public projects only) 
+
+We will review your request and respond within a few days.
+
+> [!NOTE]
+> This change only impacts new organizations. It doesn't apply to existing projects or organizations. This does not change the amount of free grant you can get. It only adds an extra step to get that free grant.
+
+We apologize for any inconvenience this may cause new customers wishing to use Azure Pipelines for CI/CD. We believe that this is necessary to continue providing a high level of service to all our customers. We will continue to explore automated ways of preventing abuse and will restore the previous model once we have a reliable mechanism to prevent abuse.
+### Removal of per-pipeline retention policies in classic builds
 
 You can now configure retention policies for classic builds and YAML pipelines in Azure DevOps project settings. While this is the only way to configure retention for YAML pipelines, you can also configure retention for classic build pipelines on a per-pipeline basis. We will remove all per-pipeline retention rules for classic build pipelines in an upcoming release. 
 
@@ -21,7 +41,7 @@ We recommend that you update your pipelines by removing the per-pipeline retenti
 
 ### New controls for environment variables in pipelines
 
-Azure Pipelines agent scans standard output for special [logging commands](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands) and executes them. The `setVariable`[command](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands?view=azure-devops&tabs=bash#setvariable-initialize-or-modify-the-value-of-a-variable&preserve-view=true) can be used to set a variable or modify a previously defined variable. This can potentially be exploited by an actor outside the system. For example, if your pipeline has a step that prints the list of files in an ftp server, then a person with access to the ftp server can add a new file, whose name contains the `setVariable` command and cause the pipeline to change its behavior.
+Azure Pipelines agent scans standard output for special [logging commands](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands) and executes them. The `setVariable` [command](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands?view=azure-devops&tabs=bash#setvariable-initialize-or-modify-the-value-of-a-variable&preserve-view=true) can be used to set a variable or modify a previously defined variable. This can potentially be exploited by an actor outside the system. For example, if your pipeline has a step that prints the list of files in an ftp server, then a person with access to the ftp server can add a new file, whose name contains the `setVariable` command and cause the pipeline to change its behavior.
 
 We have many users that rely on setting variables using the logging command in their pipeline. With this release we are making the following changes to reduce the risk of unwanted uses of the `setVariable` command. 
 
@@ -74,34 +94,13 @@ You can change this setting from **Triggers** in pipeline editor. Before changin
 > [!div class="mx-imgBorder"]
 > ![Generate unrestricted token for fork builds](../../media/184-pipelines-02.png)
 
-    
-### Changes to Azure Pipelines free grants
-
-Azure Pipelines has been offering free CI/CD to public and private projects for several years. Because this amounts to giving away free compute, it has always been a target for abuse – especially crypto mining. Minimizing this abuse has always taken energy from the team. Over the past few months, the situation has gotten substantially worse, with a high percentage of new projects in Azure DevOps being used for crypto mining and other activities we classify as abusive. Several service incidents over the past month have been caused by this abuse resulting in long wait times for existing customers.
-
-To address this situation, we've added an extra step for new organizations in Azure DevOps to get their free grant. The following changes are effective immediately:
-
-* By default, new organizations created in Azure DevOps will no longer get a free grant of concurrent pipelines. This applies to both public as well as private projects in new organizations.
-* To request your free grant, send an email to azpipelines-freetier@microsoft.com and provide the following details clearly:
-    * Your name
-    * Azure DevOps organization for which you are requesting the free grant
-    * Whether you need the free grant for public projects, private projects, or both
-    * Links to the repositories that you plan to build (public projects only) 
-    * Brief description of your project (public projects only) 
-
-We will review your request and respond within a few days.
-
-> [!NOTE]
-> This change only impacts new organizations. It doesn't apply to existing projects or organizations. This does not change the amount of free grant you can get. It only adds an extra step to get that free grant.
-
-We apologize for any inconvenience this may cause new customers wishing to use Azure Pipelines for CI/CD. We believe that this is necessary to continue providing a high level of service to all our customers. We will continue to explore automated ways of preventing abuse and will restore the previous model once we have a reliable mechanism to prevent abuse.
 
 ### Change in Az, Azure, and Azure RM preinstalled modules
 
 We are updating the process of pre-installing Az, Azure and AzureRM modules to Ubuntu and Windows hosted images for more efficient support and image space usage.
 
 
-During the week of March, 29th, all versions, except for the latest and the most popular one, will be stored as archives and will be extracted by Azure PowerShell task on demand. The detailed list of changes is below:
+During the week of March 29th, all versions, except for the latest and the most popular one, will be stored as archives and will be extracted by Azure PowerShell task on demand. The detailed list of changes is below:
 
 
 1. Windows images
