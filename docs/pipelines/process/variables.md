@@ -546,6 +546,9 @@ Some tasks define output variables, which you can consume in downstream steps wi
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you are using deployment pipelines, both variable and conditioonal variable syntax will differ. Please refer to [deployment jobs](deployment-jobs.md) for specific syntax.
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
