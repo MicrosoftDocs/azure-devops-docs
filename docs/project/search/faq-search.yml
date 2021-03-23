@@ -95,7 +95,7 @@ sections:
        2. If performance does recover, consider locating Search on a separate server if you haven't already done so.
     - question: How do I get Search to work after an upgrade?
       answer: |
-      If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](install-configure-search.md#upgrade-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
+       If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](install-configure-search.md#upgrade-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
 
 additionalContent: | 
   ## Related articles

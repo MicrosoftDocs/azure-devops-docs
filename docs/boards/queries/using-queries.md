@@ -52,7 +52,7 @@ In addition to the query filters, you can [interactively apply filters to query 
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](../../project/search/advanced-work-item-search-syntax.md).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work item search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ---
