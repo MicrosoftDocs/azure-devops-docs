@@ -104,8 +104,6 @@ Within a phrase, Boolean operators are treated as literal text.
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?preserve-view-not-set).
 
-[!INCLUDE [search-limitations](includes/search-limitations.md)]
-
 ## Next steps
 
 > [!div class="nextstepaction"]

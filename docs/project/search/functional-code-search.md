@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 03/04/2021
+ms.date: 03/22/2021
 ---
 
 # Functional code search  
@@ -104,6 +104,15 @@ You can use the code type search functions with files written in C#, C, C++, Jav
 
    ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
 
+
+### Code search best practices
+
+- You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
+- You can [narrow your search](#narrow-search-results) by using project, repository, path, file name, and other filter operators. This helps you achieve your desired results even faster. Start with a higher-level search if you don’t know where the results would be and keep filtering till you have a subset of results to browse through and work on.
+- You can [use wildcards](#broaden-search-results) to widen your search and [Boolean operators](#broaden-search-results) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
+- When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
+- Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
+- 
 ## Syntax for simple and compound searches
 
 > [!NOTE]
@@ -307,8 +316,6 @@ See the following examples of even more search functions. You can use the code t
 ## Search Code with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Code Search with REST API, see [Fetch Code Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/code%20search%20results/fetch%20code%20search%20results?preserve-view-not-set).
-
-[!INCLUDE [search-limitations](includes/search-limitations.md)]
 
 ## Next steps
 
