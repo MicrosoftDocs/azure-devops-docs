@@ -10,7 +10,7 @@ ms.technology: devops-cicd-tasks
 ```YAML
 # Publish code coverage results
 # Publish Cobertura or JaCoCo code coverage results from a build
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs:
     summaryFileLocation: 
     #pathToSources: # Optional
