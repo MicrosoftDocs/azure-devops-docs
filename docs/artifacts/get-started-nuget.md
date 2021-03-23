@@ -12,9 +12,12 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2018 | TFS 2017**
 
-## Before you start
+Azure Artifacts feeds enable developers to publish and consume NuGet packages to/from feeds and public registries.
 
-For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](/nuget/install-nuget-client-tools).
+## Prerequisites
+
+- [Install NuGet client tools](https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools)
+- [Project and org permissions](../organizations/security/lookup-organization-owner-admin.md) to use Azure Artifacts.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
