@@ -163,7 +163,7 @@ You're prompted to enter the following information:
 
 Search for Azure DevOps Server has the following limitation: 
 
-* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [re-index all your collections](../manage-search.md#reindex-a-repository-or-collection).
+* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [re-index all your collections](manage-search.md#reindex-a-repository-or-collection).
 
 ## Related articles
 
