@@ -19,14 +19,13 @@ Use this task in a YAML pipeline to pause a run within a stage, typically to per
 
 This task is supported only in YAML pipelines. Can be used only in an [agentless job](../../process/phases.md#server-jobs) of a YAML pipeline. 
 
-
 ## Arguments
 
 | Parameter | Comments |
 | --- | --- |
 | **instructions** | Optional. The instruction text to display to the user when the task is activated. |
 | **notifyUsers** | Optional. The list of users that will be notified that the task has been activated. |
-| **onTimeout** | Required. The action to take (reject or resume) if the task times out. Defaults to reject |
+| **onTimeout** | Required. The action to take (reject or resume) if the task times out. Defaults to reject. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 The **Manual Validation** task allows you to pause a pipeline run within a stage, typically to perform some
@@ -57,12 +56,12 @@ Users with 'Queue builds' permission on the pipeline can resume or reject the ru
 
 #### [YAML](#tab/yaml/)
 ```yaml
-  jobs:  
+  jobs:
   - job: waitForValidation
-    displayName: Wait for external validation  
-    pool: server    
+    displayName: Wait for external validation
+    pool: server
     timeoutInMinutes: 4320 # job times out in 3 days
-    steps:   
+    steps:
     - task: ManualValidation@0
       timeoutInMinutes: 1440 # task times out in 1 day
       inputs:

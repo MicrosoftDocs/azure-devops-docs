@@ -23,7 +23,7 @@ The following time zones are available in Azure DevOps:
 * **Azure DevOps organization time zone** - the main time zone setting. This setting is where all your iteration dates, builds, and release schedules depend upon, and so on. Changing your organization time zone affects its dependencies.
 * **Azure DevOps user profile time zone** - only used for the user interface (UI). Your user profile time zone setting is used for a more personalized experience. It also displays timestamps for when users browse Azure DevOps using the time zone that's configured for that specific user.
 
-If your organization time zone is EST, and user profile is PST, all date and time fields display in PST time zone.
+If your organization time zone is EST, and user profile is PST, all date and time fields display in PST time zone. To learn more, see [Time zone settings and usage](../settings/timezone-settings-usage.md).
 
 ## Change your organization time zone
 
@@ -73,3 +73,8 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 ::: moniker-end
 
 ***
+
+## Related articles
+
+- [Time zone settings and usage](../settings/timezone-settings-usage.md)
+- [Set user preferences](../settings/set-your-preferences.md)

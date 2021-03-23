@@ -75,6 +75,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
+      - [Was Ever (Board Column)](./query-by-workflow-changes.md#kanban_query_fields)  
       - [Wildcard](./titles-ids-descriptions.md)  
       ::: moniker-end
       ::: moniker range="tfs-2018"

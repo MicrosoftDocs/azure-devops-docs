@@ -17,7 +17,6 @@ ms.date: 03/09/2021
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-
 Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations.  
  
 

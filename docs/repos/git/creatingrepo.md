@@ -92,7 +92,7 @@ Create the Git repository using the `init` command as shown in the following exa
 git init .
 ```
 
-Work in [branches](branches.md) to keep track of your work and create [commits](commits.md) to snapshot your changes into Git.   
+Work in [branches](./create-branch.md) to keep track of your work and create [commits](commits.md) to snapshot your changes into Git.   
 
 Once you are ready to share your code, [get the clone URL](clone.md#clone_url) for the repository you want to connect to and then set up a remote relationship (in this case, `origin`) so your repo 
 can [push](pushing.md) changes to a shared repo.
@@ -108,7 +108,7 @@ git push origin users/frank/feature
 ```
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true).
+> You can also create and get repos from the command line or scripts using the [Azure DevOps Services CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
 
 * * *
 ## Next steps
