@@ -79,8 +79,8 @@ sections:
        2. If the search box isn't shown, verify that the extension is installed for the collection. If not, see [Install and configure Search](install-configure-search.md).
     - question: Why are no search results shown after installing or configuring Search?
       answer: |
-        1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.
-        2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status). 
+       1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.
+       2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status). 
     - question: Why doesn't Search show the expected results?
       answer: |
        1. If the files were added in the last few minutes, wait for about 10 minutes while they're indexed.
@@ -88,7 +88,7 @@ sections:
        3. If the files are still not shown in the results, [reindex the repository or collection](manage-search.md#reindex-a-repository-or-collection) where the files are located.
     - question: How do I determine the status of indexing for a collection?  
       answer: |
-      [Check indexing status](manage-search.md#check-indexing-status) separately for each collection.
+       [Check indexing status](manage-search.md#check-indexing-status) separately for each collection.
     - question: Why does Search stop working and no results are shown?
       answer: |
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access. You can find an at-a-glance look at all of the [features of Search](#features-for-search) further in this article.
+The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access. You can find an at-a-glance look at all of the [semantic Search features](#semantic-search-features) further in this article.
 
 ::: moniker range=">= tfs-2018"  
 With semantic search, you can quickly find code files, work items, wiki pages, or packages based on a keyword, wildcards, and other supported semantic search filters.
@@ -33,7 +33,7 @@ With semantic search, you can quickly find code files and work items based on a 
 
 A keyword search is the most basic type of search to get started. Enter a word enclosed with double quotes, and then select _Enter_ or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search. You can also search for a phrase by enclosing your search terms in double-quotes.
 
-By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-search-results).
+By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-your-semantic-search-results).
 
 ::: moniker range=">= azure-devops-2019"
 
