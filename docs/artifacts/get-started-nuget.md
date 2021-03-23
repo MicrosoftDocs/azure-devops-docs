@@ -39,7 +39,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 [!INCLUDE [](includes/create-feed.md)]
 
 <a name="publish-a-package"></a>
-## Publish a package
+## Publish packages
 
 [!INCLUDE [](includes/nuget/publish.md)]
 
