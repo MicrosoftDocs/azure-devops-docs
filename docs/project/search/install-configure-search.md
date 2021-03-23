@@ -4,8 +4,8 @@ description: Find installation and setup instructions for Code, Wiki & Work Item
 ms.assetid: 
 ms.technology: devops-collab
 ms.topic: how-to
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2017 < azure-devops'
 ms.date: 02/25/2021
 ---

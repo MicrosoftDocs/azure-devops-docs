@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/12/2021
+ms.date: 03/22/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,7 @@ Work Item Search is available as a built-in extension in Azure DevOps.
 
 ::: moniker range=" azure-devops"
 
-Users can use Work Item Search by default without any installation when the Boards service is installed and enabled in Azure DevOps Services.
+You can use Work Item Search by default without any installation when the Boards service is installed and enabled in Azure DevOps Services.
 
 ::: moniker-end
 
@@ -203,6 +203,59 @@ The selected projects are always at the top of the list. Notice that hit counts 
 
 Open the search results in a new browser tab from either search box by selecting _Ctrl+Shift+Enter_.
 
+## Work item search best practices
+
+- You can use a text search across all fields to efficiently locate relevant work items. This is useful when you are trying to, for example, search for all work items that had similar exception trace.
+- You can also use the quick in-line search filters on any work item field to [narrow down to a list](#narrow-search-results) of work items in seconds. The dropdown list of suggestions helps complete your search faster.
+
+#### Semantic search vs. managed work item queries
+
+You have two ways to find and list work items: managed queries and semantic searches. If you are looking for a single work item, use the search box. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
+
+> [!NOTE]    
+> With semantic search, you search against a more fully indexed set of fields than that of managed queries.  
+
+---
+:::row:::
+   :::column span="1":::
+      **Use a managed query**
+   :::column-end:::
+   :::column span="1":::
+      **Use a semantic search**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      - List items to perform bulk updates to fields  
+      - Review work that's in progress or recently closed    
+      - Triage work (set priority, review, update)  
+      - Create a chart and add it to a dashboard    
+      - Create a chart to get a count of items or sum a field    
+      - Create a chart that shows a burndown or burnup over time   
+      - View a tree of parent-child related work items   
+      - List work items with link relationships    
+      - List work items for a single project, multiple projects, or across all projects.    
+   :::column-end:::
+   :::column span="1":::
+      - Find a specific work item using its ID or a keyword   
+      - Find one or more work items across all projects in a fast, flexible manner  
+      - Perform full text search across all work item fields  
+      - Review work items assigned to a specific team member  
+      - Search against specific work item fields to quickly narrow down a list of work items  
+      - Determine what key words will support a managed search  
+      - List work items for a single project, multiple projects, or across all projects.    
+   :::column-end:::
+:::row-end:::
+---
+
+To get started, see the following articles:  
+- [View and run a query](../../boards/queries/view-run-query.md)
+- [Use semantic search](../../boards/queries/search-box-queries.md)  
+- [Define a query](../../boards/queries/using-queries.md)   
+
+For specific managed query examples, see [Query quick reference, Example queries](../../boards/queries/query-index-quick-ref.md).  
+
 <a name="quickfilters"></a>
 
 ## Quick filters for matching in specific fields
@@ -298,9 +351,6 @@ Search remembers the state of the filter pane, configuration of the work item vi
 ## Search Work Items with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results?preserve-view-not-set).
-
-
-[!INCLUDE [search-limitations](includes/search-limitations.md)]
 
 ## Next steps
 

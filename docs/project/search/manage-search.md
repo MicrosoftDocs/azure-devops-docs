@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 02/20/2021
+ms.date: 03/22/2021
 monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
@@ -158,6 +158,12 @@ You're prompted to enter the following information:
   - **Code**
   - **WorkItem**
   - **Wiki**
+
+## Search limitations
+
+Search for Azure DevOps Server has the following limitation: 
+
+* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [re-index all your collections](../manage-search.md#reindex-a-repository-or-collection).
 
 ## Related articles
 
