@@ -17,6 +17,14 @@ ms.date: 03/22/2021
 
 By using Code Search, you can do the following tasks:
 
+
+|**Task**  |**Description** |
+|---------|---------|
+|**Search across all of your projects**  | - Search in your own code base and your partner teams' code bases. - Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. - Narrow your search by using project, repository, path, file name, and other filter operators.        |
+|**Find specific types of code**  |  - Find - definitions - references - functions - comments - strings - namespaces. - Use Code Search to narrow your results to exact code type matches. - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
+|**Easily drill down or widen your search**   |         |
+
+
 * **Search across all of your projects**:
   - Search in your own codebase and your partner teams' code bases. 
   - Use cross-project searches over all the code in your Azure DevOps or TFS instance to search across your enterprise's entire codebase. 
@@ -112,7 +120,7 @@ You can use the code type search functions with files written in C#, C, C++, Jav
 - You can [use wildcards](#broaden-search-results) to widen your search and [Boolean operators](#broaden-search-results) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
 - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
 - Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
-- 
+
 ## Syntax for simple and compound searches
 
 > [!NOTE]
@@ -286,12 +294,8 @@ Narrow the search to a specific location using the `proj`, `repo`, or `path` fil
 |Enclose the argument to the filter in double-quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
 |Finds all occurrences of the word **QueueJobsNow** in all files where the filename starts with **queueRegister**. | `QueueJobsNow file:queueRegister*`         |
 |Finds all files with the name QueueRegister without an extension.    | Use quotes to find files without extensions: file:"queueRegister"       |
-|Finds all occurrences of the word **QueueJobsNow** in only C# source files. A plain text search string that doesn't include file type functions 
-  will also find files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
+|Finds all occurrences of the word **QueueJobsNow** in only C# source files. A plain text search string that doesn't include file type functions will also find files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
 
-## Find code comments
-
-You can search a code file based on a comment you wrote in the file by entering "comment.:todo".
 
 ## Find related items or other terms
    

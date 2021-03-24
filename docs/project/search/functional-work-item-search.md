@@ -265,8 +265,7 @@ Quick inline search filters let you refine work items in seconds. The dropdown l
 
 |Usage  |Example |
 |---------|---------|
-| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |**tags:Critical** 
-  finds work items having a field 'tags' containing the term 'Critical'         |
+| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |**tags:Critical** finds work items having a field 'tags' containing the term 'Critical'         |
 |Use multiple inline search filters to scope your search by any work item field, including custom fields.    | **t: Bug path:"project\search"** finds all bugs in the area path "project\search"        |
 |Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week       |
 |For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com"        |
