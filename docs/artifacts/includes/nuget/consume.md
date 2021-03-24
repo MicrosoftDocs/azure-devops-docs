@@ -14,31 +14,37 @@ To consume NuGet packages from our feed, we need to add the feed's NuGet endpoin
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
-### Windows: Add the feed to your NuGet configuration
+### 2. Set up Visual Studio
 
-1. On the **Tools** menu, select **Options**.
-2. Expand **NuGet Package Manager** and select **Package Sources**.
-3. Select the green plus in the upper-right corner.
-4. At the bottom of the dialog box, enter the feed's name and the URL that you got in the last step.
-5. Select **Update**.
-6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-   ![Add new NuGet source](../../media/vs-addsource.png)
-7. Select **OK**.
-8. [Go to the steps for consuming packages](#consume-packages).
+#### [Windows](#tab/windows/)
+
+### Add feed to NuGet configuration
+
+1. Select **Tools** then **Options** in Visual Studio.
+1. Expand the **NuGet Package Manager** and select **Package Sources**.
+1. Select the green (+) sign to add a source.
+1. Enter the feed's name and the source URL (step 1).
+1. Select **Update**.
+1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
+1. Select **OK**.
+
+    :::image type="content" source="../../media/vs-addsource.png" alt-text="Set up visual studio: Windows":::
 
 <a name="mac-os"></a>
 
-### macOS: Add the feed to your NuGet configuration
+#### [MacOs](#tab/MacOs/)
 
-1. Get a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
-2. Open the **Preferences** dialog box from the **Visual Studio** menu on the menu bar.
-3. Select **NuGet** > **Sources**.
-4. Select **Add**. Then enter your feed's name, the URL, any username, and your PAT as the password.
-5. Select **OK**.
-6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-7. Select **OK** again.
+### Add feed to NuGet configuration
 
-   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../../media/vs-mac-settings.png)
+1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
+1. In visual studio, select **Preferences** from the menu bar.
+1. Select **NuGet** then **Sources**.
+1. Select **Add** and enter your feed's name, the source URL, a userName (any string), and your personal access token.
+1. Select **OK**.
+1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
+1. Select **OK**.
+
+    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: MacOs":::
 
 <a name="consume-packages"></a>
 
