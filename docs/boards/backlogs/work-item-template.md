@@ -18,13 +18,12 @@ ms.date: 03/23/2021
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, you can create a task template that defines the area path, iteration path, and activity to use when creating a task.  
+With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, you can create a task template that defines the area path, iteration path, and activity to use when creating a task. 
+
+You can use work item templates to create work items or bulk update several work items. For examples that show usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 > [!NOTE]  
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
-
-For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
-
 
 
 ## Supported template tasks   
@@ -426,11 +425,14 @@ You can apply a template to a single work item or perform a bulk update of sever
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019"
 
 <a id="apply-multiple"> </a>
 
-### Apply a template to several work items (bulk update) 
+### Apply a template to work items 
+
+#### [Web portal](#tab/visual-studio/)
+
+::: moniker range=">= azure-devops-2019"
 
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
@@ -444,8 +446,6 @@ You can apply a template to a single work item or perform a bulk update of sever
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-
-### Apply a template to several work items (bulk update) 
 
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
@@ -467,11 +467,6 @@ The feature to apply a template to existing work items from the web portal isn't
 #### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-apply" />
-
-### Apply a template to one or more work items  
-
-> [!NOTE]  
-> If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
 
 1. Open or run a query that lists the work item(s) whose fields you want to capture.  
 
@@ -546,18 +541,29 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 ### Manage templates for a work item type   
 
-Choose the work item type to view the templates defined for each type. 
+1. Choose the work item type to view the templates defined for each type. 
 
-For example, choose User Story to view templates defined to capture user stories.
+	For example, choose User Story to view templates defined to capture user stories.
 
-![Manage user story templates](media/wi-templates-user-stories-list.png)  
+::: moniker-end
+
+	::: moniker range=">= azure-devops-2019"
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot, choose User Story templates](media/templates/templates-user-story-type-selected.png)   
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"
+
+	![Manage user story templates](media/wi-templates-user-stories-list.png)  
+	::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+### Create a work item template 
 
 <a id="define-template" />
 
-### Define a template from scratch 
-
 1. From the work item type page, choose the ![green plus icon](../media/icons/green_plus_icon.png) **New template** to create a template from scratch.  
-
+    
     <img src="media/wi-templates-new-template.png" alt="Add a user story template" style="border: 1px solid #CCCCCC;" />  
 
 2. Name the template and optionally add and remove fields. Save the template when finished. 
@@ -578,10 +584,6 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 
 2. Name the template and optionally add and remove fields. Save the template when finished. 
 
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019"
 
 <a id="delete"> </a>
 
@@ -603,7 +605,6 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 
 ::: moniker-end
 
-
 ::: moniker range="<= tfs-2015"  
 
 Managing work item templates from the web portal is only supported from TFS 2017 and later versions. 
@@ -623,7 +624,7 @@ The root Templates node represents the parent of all of your templates. You may 
 
 You can cut, copy, paste, rename, and delete templates and folders using the context menu. You may also drag and drop templates into folders. To edit multiple templates, use shift-click to select a range or ctrl-click to add individual templates to your selection, then right-click. 
 
-### Define a template from scratch 
+### Define a template  
 
 1. From the Templates section, right-click **Templates** and choose to create a template from scratch.
 
@@ -665,8 +666,6 @@ You can add tags to a template and they'll be applied to the work item when you 
 If you don't specify tags to remove, then all tags present in a work item will remain defined even when you apply a work item template to an existing work item. 
 
 ::: moniker-end
-
-
 
 
 <a id="adhoc-template"> </a>
