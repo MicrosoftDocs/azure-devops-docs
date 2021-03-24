@@ -61,7 +61,7 @@ The following repository types are supported.
 
 > [!NOTE]
 > Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
-> To check out Azure Repos Git repositories hosted inn another project, **Limit job scope** must be configured to allow access. For more information, see [Limit job authorization scope](azure-repos-git.md#limit-job-authorization-scope).
+> To check out Azure Repos Git repositories hosted in another project, **Limit job scope** must be configured to allow access. For more information, see [Limit job authorization scope](azure-repos-git.md#limit-job-authorization-scope).
 
 The following combinations of `checkout` steps are supported.
 
