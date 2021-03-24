@@ -90,8 +90,7 @@ Use the wildcard character `*` and `?` to broaden your search criteria. You can 
 
 |Usage  |Example  |
 |---------|---------|
-|Finds packages that contain words that start with **xmlparser**, 
-  such as **xmlparsersdk** and **xmlparserlib**.   |  `xmlparser*`        |
+|Finds packages that contain words that start with **xmlparser**, such as **xmlparsersdk** and **xmlparserlib**.   |  `xmlparser*`        |
 |Finds packages that contain words that start with **mypackage** and have any one alphanumeric character next, such as **mypackage1**, **mypackage2**, and **mypackage3**.     | `mypackage?`        |
 
 ### Search for phrases
