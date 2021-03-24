@@ -134,7 +134,7 @@ This spaces your text better and makes it easier to read.
 
 **Result:**
 Add lines between your text with the Enter key.
-This action spaces your text better and makes it easier to read.
+This spaces your text better and makes it easier to read.
 
 **Example - Markdown file or widget:**
 
