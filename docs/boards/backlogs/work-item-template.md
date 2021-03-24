@@ -71,7 +71,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
 ---
 :::row:::
    :::column span="2":::
-      [Copy URL of a template](#copy-link)
+      [Copy link (URL) of a template](#copy-link)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -117,7 +117,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= tfs-2017
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
       [Add or remove tags from templates](#tags)
@@ -129,8 +129,8 @@ As shown in the following table, a ✔️ indicates the task is available from t
        
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
+::: moniker-end
 :::row:::
    :::column span="2":::
       [Define a template using a hyperlink](#adhoc-template) 
@@ -467,8 +467,9 @@ With Visual Studio with power tools installed, you can view the list of template
 
 ## Add a work item using a template  
 
-The main method for adding a work item using a template is to open the template link within a browser window. You can then share these links through email, a network share, team portal, or a team dashboard or Welcome page.  
- 
+The main method for adding a work item using a template is to open the template link within a browser window. To get the template link, see the next section [Copy the link to a template](#copy-link).
+
+You can share these links through email, a network share, or a team dashboard.  
 
 <a id="copy-link" />
 
