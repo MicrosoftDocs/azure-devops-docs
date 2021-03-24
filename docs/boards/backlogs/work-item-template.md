@@ -9,7 +9,6 @@ author: KathrynEE
 ms.topic: conceptual
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'
-"recommendations": "true"
 ms.date: 03/23/2021
 ---
 
@@ -24,23 +23,18 @@ With work item templates, you can quickly create work items that have pre-popula
 > [!NOTE]  
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
-For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md)
+For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 
 
 ## Supported template tasks   
 
-The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio. However, the templates define in the web portal aren't recognized in  Visual Studio, and those you define through Visual Studio aren't recognized in the web portal.  
+::: moniker range=">= tfs-2017"
 
-Visual Studio 2015 and earlier versions supports working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
+The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions supports working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
 
 As shown in the following table, a ✔️ indicates the task is available from the web portal or from Visual Studio. *(Make sure that you have selected the content version based on your platform version)*. 
 
-[!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)] 
-
-
-
-::: moniker range=">= tfs-2017"
 ---  
 :::row:::
    :::column span="2":::
@@ -164,21 +158,26 @@ As shown in the following table, a ✔️ indicates the task is available from t
 ---
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
-Managing work item templates from the web portal is only supported from TFS 2017 and later versions. For TFS 2013 and TFS 2015, you can manage work item templates in Visual Studio 2013 or Visual Studio 2015 by downloading [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). With the Work Item Templates power tool add-in, you can:
-- Create and edit work item templates  
+You can manage work item templates in Visual Studio 2013 or Visual Studio 2015 by downloading [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). With the Work Item Templates power tool add-in, you can perform the following tasks from Visual Studio Team Explorer:
+- Capture a work item as a template 
+- Manage work item templates (Create, edit, delete, set as default, copy, rename) 
 - Create and update work items using a template  
-- Create a template from an existing work item  
-- Bulk-edit work items by applying a template  
-- Use templates created in Visual Studio to create work items through the Visual Studio client.  
+- Apply a template to new or existing work item(s) 
+
+
+You can only use templates created in Visual Studio to create work items through the Visual Studio client.  
 
 > [!NOTE]  
-> Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to TFS 2015 version or an earlier version. Templates you define through the power tool are separate from those defined through the web portal for TFS.  
+> Visual Studio 2015 is the last version in which you can install TFS power tools. You can use the Work Item Templates tool whenever you connect to TFS 2015 version or an earlier version. 
 
 ::: moniker-end
 
-Apply a template to new or existing work item(s)
+ 
+> [!NOTE] 
+> The templates you define in the web portal aren't recognized in Visual Studio, and those you define through Visual Studio aren't recognized in the web portal.  
+
 
 ## Prerequisites  
 
@@ -325,9 +324,9 @@ The main method for adding a work item using a template is to open the template 
 
 ### Copy the link to a template 
 
-::: moniker range=">= azure-devops-2019"  
-
 #### [Web portal](#tab/browser/)
+
+::: moniker range=">= azure-devops-2019"  
 
 1. Go to **Project Settings**.
 
@@ -342,24 +341,9 @@ The main method for adding a work item using a template is to open the template 
 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
-#### [Visual Studio 2015](#tab/visual-studio/)
-
-<a id="team-explorer-copy-link" />
-
-1. You can copy the link to a template which will open in the web portal, by opening the context menu for the template.  
-
-    <img src="media/wi-templates-copy-URL-te.png" alt="Copy link to template from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
-
-2. Paste the copied link into a web browser to check that it works as expected.    
-
-* * *
-
 ::: moniker-end  
 
-
 ::: moniker range=">=tfs-2017 <= tfs-2018"  
-
-#### [Web portal](#tab/browser/)
 
 1. Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
@@ -376,6 +360,14 @@ The main method for adding a work item using a template is to open the template 
 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
+::: moniker-end  
+
+::: moniker range="<= tfs-2015"  
+
+Managing work item templates from the web portal is only supported from TFS 2017 and later versions. 
+
+::: moniker-end  
+
 #### [Visual Studio 2015](#tab/visual-studio/)
 
 <a id="team-explorer-copy-link" />
@@ -388,42 +380,7 @@ The main method for adding a work item using a template is to open the template 
 
 * * *
 
-::: moniker-end
 
-
-<a id="tfs-portal-copy-link" />
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-See [Capture a work item as a template, Web portal](#capture). 
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-<a id="markdown-widget"> </a>
-
-### Add a template link to the dashboard   
-
-You can add links to a markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]   
-> Multiple team dashboards and the Markdown widget are available for Azure Boards and TFS 2015.2 and later versions. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-For example, the following widget contains links to three templates.  
-
-![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
-
-To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
-
-::: moniker-end
 
 <a id="apply"> </a>
 
@@ -531,20 +488,20 @@ The feature to apply a template to existing work items from the web portal isn't
     <img src="media/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
 
 * * *
-* 
+
 <a id="manage"> </a> 
 
-## Manage work item templates
+## Manage work item templates 
+
+You can view, add, delete, and rename work item templates. 
 
 #### [Web portal](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"
 
-You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
+You can view the list of templates defined for each work item types, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
 
 <a id="team-services-manage" /> 
-
-You manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
 
 1. From the web portal, open settings for a team. 
 
@@ -583,6 +540,10 @@ You manage templates from  team settings. All templates are defined for a team. 
 
     From here, you can click any work item type to view or add templates for that type.  
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
 ### Manage templates for a work item type   
 
 Choose the work item type to view the templates defined for each type. 
@@ -590,7 +551,6 @@ Choose the work item type to view the templates defined for each type.
 For example, choose User Story to view templates defined to capture user stories.
 
 ![Manage user story templates](media/wi-templates-user-stories-list.png)  
-
 
 <a id="define-template" />
 
@@ -620,6 +580,35 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 
 ::: moniker-end
 
+
+::: moniker range=">= azure-devops-2019"
+
+<a id="delete"> </a>
+
+## Delete a work item template  
+
+1. From the web portal, open **Project Settings>Team configuration>Templates**.  
+
+2. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, and choose **Delete**.   
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of Delete a template menu option.](media/templates/delete-template.png) 
+
+2. Choose **Delete** from the Delete template confirmation dialog that displays.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Delete template confirmation dialog.](media/templates/delete-template-confirmation.png) 
+
+	As indicated in the confirmation dialog, you can't recover a template once it's deleted. 
+
+::: moniker-end
+
+
+::: moniker range="<= tfs-2015"  
+
+Managing work item templates from the web portal is only supported from TFS 2017 and later versions. 
+
+::: moniker-end  
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -676,6 +665,9 @@ You can add tags to a template and they'll be applied to the work item when you 
 If you don't specify tags to remove, then all tags present in a work item will remain defined even when you apply a work item template to an existing work item. 
 
 ::: moniker-end
+
+
+
 
 <a id="adhoc-template"> </a>
 
@@ -745,29 +737,33 @@ For example, the following syntax specifies a work item task with title *TaskTit
 
 You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
-::: moniker range=">= azure-devops-2019"
 
-<a id="delete"> </a>
+::: moniker range=">= tfs-2015"
 
-## Delete a work item template  
+<a id="markdown-widget"> </a>
 
-1. From the web portal, open **Project Settings>Team configuration>Templates**.  
+## Add a template link to a team dashboard   
 
-2. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, and choose **Delete**.   
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Delete a template menu option.](media/templates/delete-template.png) 
-
-2. Choose **Delete** from the Delete template confirmation dialog that displays.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Screenshot of Delete a template menu option.](media/templates/delete-template-confirmation.png) 
-
-	As indicated in the confirmation dialog, you can't recover a template once it's deleted. 
+You can add links to a markdown widget that appear on your team dashboard in the web portal. These links open a work item with the template defined fields predefined.
 
 ::: moniker-end
 
+::: moniker range="tfs-2015"
 
+> [!NOTE]   
+> Multiple team dashboards and the Markdown widget are available for Azure Boards and TFS 2015.2 and later versions. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+
+For example, the following widget contains links to three templates.  
+
+![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
+
+To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
+
+::: moniker-end
 
 ## Related articles
 
