@@ -126,7 +126,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Add a user 
 
-You can add users to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can add users to an organization by using the [az devops user add](/cli/azure/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user add –-email-id 
@@ -173,7 +173,7 @@ You can also add the user to an Azure DevOps Group - Project Contributors, the d
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
 ```
 
-You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+You can see all security groups in a project using the [az devops security group list](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Update a user
 
-You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can update a user's license type with the [az devops user update](/cli/azure/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
@@ -335,7 +335,7 @@ ID                                    Display Name         Email                
 
 ### Show users
 
-You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can show details for users in your organization with the [az devops user show](/cli/azure/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user show --user [--org]

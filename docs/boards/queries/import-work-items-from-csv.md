@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: ">= azure-devops-2019"
-ms.date: 03/02/2021
+ms.date: 03/16/2021
 ---
 
 # Bulk import or update work items using CSV files
@@ -60,7 +60,7 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Button Image](media/import-csv/import-file.png)
 
-5. The import process loads the imported work items into the queries view in an **unsaved** state. Verify the results are what you want. Choose **Save Items** to save the work items.
+5. The import process loads the imported work items into the queries view in an **unsaved** state. No IDs are assigned. Verify the results are what you want. Then, choose **Save Items** to save the work items.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Save imported work items](media/import-csv/imported-file.png)
@@ -80,34 +80,34 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Export work items, CSV](media/import-csv/export-query.png)
 
-   The exported file should look similar to the following syntax:
+	The exported file should look similar to the following syntax:
 
-  > [!div class="tabbedCodeSnippets"]
-   ```CSV
-   ID,Work Item Type,State,Assigned To,Title,Tags
-   "1043","Issue","To Do",,"Fix issues with code",
-   "1044","Issue","To Do",,"Merge testing modules",
-   "1045","Issue","To Do",,"Open private preview for select customers",
-   "1046","Issue","To Do",,"Enable feature for customer champs",
-   "1047","Issue","To Do",,"Remove old test code",
-   ```
+	> [!div class="tabbedCodeSnippets"]
+	```CSV
+	ID,Work Item Type,State,Assigned To,Title,Tags
+	"1043","Issue","To Do",,"Fix issues with code",
+	"1044","Issue","To Do",,"Merge testing modules",
+	"1045","Issue","To Do",,"Open private preview for select customers",
+	"1046","Issue","To Do",,"Enable feature for customer champs",
+	"1047","Issue","To Do",,"Remove old test code",
+	```
 
 2. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Any additional fields you want to include are optional.
 
 	> [!NOTE]   
-	> When importing identity fields, the name and email must be entered in the following format `"Display Name <email>"`. For example, to assign work to Jamal Hartnett, specify `"Jamal Hartnett <fabrikamfiber4@hotmail.com>"`
+	> When importing identity fields, the name and email must be entered in the following format `"Display Name <email>"`. For example, to assign work to Jamal Hartnett, specify `"Jamal Hartnett <fabrikamfiber4@hotmail.com>"`. If you specify a value that isn't recognized as a valid user to the system, you may encounter problems with the import. 
 
    In the following example we change several values on existing working items.
 
-  > [!div class="tabbedCodeSnippets"]
-   ```CSV
-   ID,Work Item Type,State,Assigned To,Title,Tags
-   "1043","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Fix issues with code",architecture
-   "1044","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Merge testing modules",testing
-   "1045","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Open private preview for select customers","customer focus"
-   "1046","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Enable feature for customer champs","customer focus"
-   "1047","Issue","To Do","Christie Church <fabrikamfiber1@hotmail.com>","Remove old test code",architecture
-   ```
+	> [!div class="tabbedCodeSnippets"]
+	```CSV
+	ID,Work Item Type,State,Assigned To,Title,Tags
+	"1043","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Fix issues with code",architecture
+	"1044","Issue","To Do","Jamal Hartnett <fabrikamfiber4@hotmail.com>","Merge testing modules",testing
+	"1045","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Open private preview for select customers","customer focus"
+	"1046","Issue","To Do","Raisa Pokrovskaya <fabrikamfiber5@hotmail.com>","Enable feature for customer champs","customer focus"
+	"1047","Issue","To Do","Christie Church <fabrikamfiber1@hotmail.com>","Remove old test code",architecture
+	```
 
 3. Save the file and import (see steps 4-6 from the previous import section.)
 
@@ -202,4 +202,4 @@ The work items results always lists the data errors found for individual work it
 ## Related articles
 
 - [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)
+- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.yml)

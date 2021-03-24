@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 # Lock a branch
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
-Prevent updates to a Git [branch](branches.md) by locking the branch. 
+Prevent updates to a Git [branch](./create-branch.md) by locking the branch. 
 Locking a branch prevents other users from changing the existing commit history. 
 Locking also blocks any new commits from being added to the branch by others. 
 
@@ -37,4 +37,3 @@ Share with your team the reason for the locking of the branch and make sure your
    Unlock a locked branch by selecting **Unlock** from the same menu.
 
    ![Lock a branch from the branches context menu](media/branches/branches_context_menu_lock.png)
-

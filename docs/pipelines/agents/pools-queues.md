@@ -374,7 +374,7 @@ The **All agent pools** node in the Agent Pools tab is used to control the secur
 
 Roles are also defined on each project agent pool, and memberships in these roles govern what operations you can perform on an agent pool at the project level.
 
-| Role on a agent pool in project settings | Purpose |
+| Role on an agent pool in project settings | Purpose |
 |------|---------|
 | Reader | Members of this role can view the project agent pool. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that project agent pool.  |
 | User | Members of this role can use the project agent pool when authoring pipelines. |
@@ -425,7 +425,7 @@ To configure maintenance job settings:
 Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. 
 
 > [!IMPORTANT]
-> You must have the [Manage build queues](../policies/permissions.md?#default-permissions-assigned-to-built-in-security-groups) permission to configure maintenance job settings. If you don't see the **Settings** tab or the **Maintenance History** tab, you don't have that permission, which is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
+> You must have the [Manage build queues](../../organizations/security/permissions-access.md) permission to configure maintenance job settings. If you don't see the **Settings** tab or the **Maintenance History** tab, you don't have that permission, which is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
 
 :::moniker range="> tfs-2018"
 

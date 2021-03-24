@@ -12,7 +12,7 @@ Now you can configure your Azure Artifacts feeds to automatically download Unive
 
 Previously, you could configure upstream sources on your feed for NuGet, Python, Maven, and npm packages, but not for Universal Packages. This was due to a difference in the storage technology used for Universal Packages, which support much larger packages than other supported package types.
 
-You can now configure upstream sources for Universal Packages in the same way as for other package types; open your feed settings, click **Upstream sources** -> **Add upstream source** -> and choose the source type that is right for you. You will see Universal Packages (UPack) as a new option in the next view (see image below). For more information, please see the upstream sources configuration [documentation](/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops#:~:text=Add%20an%20Azure%20Artifacts%20feed%20in%20your%20organization,dialog%20where%20you%20can%20choose%20Add%20upstream%20source.).
+You can now configure upstream sources for Universal Packages in the same way as for other package types; open your feed settings, click **Upstream sources** -> **Add upstream source** -> and choose the source type that is right for you. You will see Universal Packages (UPack) as a new option in the next view (see image below). For more information, please see the upstream sources configuration [documentation](/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops&preserve-view=true#:~:text=Add%20an%20Azure%20Artifacts%20feed%20in%20your%20organization,dialog%20where%20you%20can%20choose%20Add%20upstream%20source.).
 
 <img src="../../media/174-artifacts-1-0.png" width="600" alt="upack">
 
@@ -49,7 +49,7 @@ You can set the following:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- | --- |
-| views | [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1#jsonpatchoperation) | The view to which the package version will be added |
+| views | [JsonPatchOperation](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1&preserve-view=true#jsonpatchoperation) | The view to which the package version will be added |
 |
 
-For more information, please refer to the [REST API documentation](/rest/api/azure/devops/artifactspackagetypes/maven?view=azure-devops-rest-5.1) as it gets updated.
+For more information, please refer to the [REST API documentation](/rest/api/azure/devops/artifactspackagetypes/maven?view=azure-devops-rest-5.1&preserve-view=true) as it gets updated.

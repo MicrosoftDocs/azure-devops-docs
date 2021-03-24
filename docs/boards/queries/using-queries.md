@@ -2,7 +2,7 @@
 title: Define a work item query with the Query Editor
 titleSuffix: Azure Boards
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
-ms.custom: boards-queries
+ms.custom: "boards-queries, contperf-fy21q3" 
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 monikerRange: '<= azure-devops'
@@ -75,6 +75,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Query macros](./about-managed-queries.md#macros)  
       - [Tags](./add-tags-to-work-items.md#query)  
       - [Was Ever](./query-by-workflow-changes.md)  
+      - [Was Ever (Board Column)](./query-by-workflow-changes.md#kanban_query_fields)  
       - [Wildcard](./titles-ids-descriptions.md)  
       ::: moniker-end
       ::: moniker range="tfs-2018"
@@ -303,7 +304,7 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 	For more information about how to use a macro or variable to specify the current project, user, date, or other selection, see [Variables](query-operators-variables.md#variables).
 
-5. To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
+5. To add a clause, choose **Add new clause**.
 
 	You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](media/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](media/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](media/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](media/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
 
