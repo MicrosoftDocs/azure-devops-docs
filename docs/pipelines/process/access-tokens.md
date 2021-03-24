@@ -83,7 +83,7 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 ::: moniker range="<= azure-devops-2019"
 
-If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps server 2019.
+If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps Server 2019.
 
 YAML pipelines are not available in TFS.
 
