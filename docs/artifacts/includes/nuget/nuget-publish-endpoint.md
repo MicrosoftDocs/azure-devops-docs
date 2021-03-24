@@ -17,22 +17,31 @@ ms.date: 06/22/2020
 
 1. Select **NuGet.exe** under the **NuGet** header.
 
-1. If you have NuGet and Visual Studio installed on your machine, you can *move to the next step*. Otherwise: <p></p>
+    :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-    1. Select **Get the tools** in the upper-right corner.
-    1. Download the latest NuGet version if you haven't yet.
+1. If you have NuGet and Visual Studio installed, you can move to the next step. Otherwise:
+
+    1. Select **Get the tools** button.
+    1. Download the latest NuGet version.
     1. Download and install the credential provider.
 
-1. Copy the `xml` code snippet in the **Project setup** section and add/create a `nuget.config` file for your project. Place your file in the same folder as your .`csproj` or `.sln` file.
+1. Create a nuget.config file with the following content and add it to your project in the same path as your .csproj or .sln file
 
-1. Run the **Publish packages** command yo publish the package to your feed. 
+    ```Command
+    <?xml version="1.0" encoding="utf-8"?>
+    <configuration>
+      <packageSources>
+        <clear />
+        <add key="<orgName>" value="https://pkgs.dev.azure.com/<orgName>/_packaging/<orgName>/nuget/v3/index.json" />
+      </packageSources>
+    </configuration>
+    ```
 
-   > [!div class="mx-imgBorder"] 
-   > ![NuGet publish instructions in Connect to feed dialog box](../../media/nuget-azure-devops-newnav.png)
+1. Run the following command yo publish your NuGet package to your feed.
 
-* The NuGet `push` command requires an API key. You can use any non-empty string for this variable. In our example, we used the string `key`.
-* For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
-* For more information on using personal access tokens, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+    ```Command
+    nuget.exe push -Source <orgName> -ApiKey az <packagePath>
+    ``` 
 
 ## Publish a NuGet package with the NuGet CLI
 
