@@ -73,7 +73,7 @@ steps:
     action: Push module images
     containerregistrytype: Azure Container Registry
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureContainerRegistry: {"loginServer":"$(azureContainerRegistry)", "id":"$(azureSubscriptionEndpoint)"}
+    azureContainerRegistry: {"loginServer":"$(azureContainerRegistry)", "id":"/subscriptions/$(azureSubscriptionEndpoint)"}
     templateFilePath: deployment.template.json
     defaultPlatform: amd64  
 ```
