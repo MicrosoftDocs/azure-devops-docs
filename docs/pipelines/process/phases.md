@@ -290,7 +290,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
 
-Because tasks are extensible, you can add more agentless tasks by using extensions.
+Because tasks are extensible, you can add more agentless tasks by using extensions. The default timeout for agentless jobs is 60 minutes.  
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
