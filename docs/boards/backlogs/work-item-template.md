@@ -28,11 +28,9 @@ You can use work item templates to create work items or bulk update several work
 
 ## Supported template tasks   
 
-::: moniker range=">= tfs-2017"
-
 The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions supports working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
 
-As shown in the following table, a ✔️ indicates the task is available from the web portal or from Visual Studio. *(Make sure that you have selected the content version based on your platform version)*. 
+As shown in the following table, a ✔️ indicates the task is available from the web portal or from Visual Studio 2015 or earlier versions. *(Make sure that you have selected the content version based on your platform version)*. 
 
 ---  
 :::row:::
@@ -63,6 +61,18 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column span="2":::
       [Manage work item templates](#manage)  
       (Define, edit, delete, copy link, create copy, and rename)
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Copy URL of a template](#copy-link)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -105,10 +115,11 @@ As shown in the following table, a ✔️ indicates the task is available from t
       ✔️   
    :::column-end:::
    :::column span="1":::
-         
+      ✔️   
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= tfs-2017
 :::row:::
    :::column span="2":::
       [Add or remove tags from templates](#tags)
@@ -120,6 +131,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
        
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ---
 :::row:::
    :::column span="2":::
@@ -133,7 +145,7 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
+
 
 > [!TIP]    
 > The templates you define through the web portal are distinct from those you define through Visual Studio. Web portal templates can only be managed and applied to work items through the web portal. Similarly, Visual Studio templates can only be managed, viewed, and applied to work items in Visual Studio. However, you can use the URLs of both template types to add work items through the web portal. 
@@ -279,15 +291,15 @@ If you primarily work in Visual Studio or Team Explorer, and want to create work
 
 ## Manage work item templates 
 
-You can view, add, delete, create a copy, and rename work item templates. Also, you can copy the URL of a template to use it to add work items using the template. 
+You can view the list of templates defined for each work item type, and also add, edit, copy, delete, rename, and copy the link of a template. All templates are defined and managed for a team. 
 
 #### [Web portal](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"
 
-You can view the list of templates defined for each work item types, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
-
 <a id="team-services-manage" /> 
+
+You must be a member of the team to add or edit team templates. 
 
 1. From the web portal, open settings for a team. 
 
@@ -304,11 +316,10 @@ You can view the list of templates defined for each work item types, and also ad
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
 
 <a id="team-services-manage" /> 
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 You manage templates from  team settings. All templates are defined for a team. If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can change work item templates.   
 
@@ -367,13 +378,15 @@ You manage templates from  team settings. All templates are defined for a team. 
 
     Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.  
 
-### Edit, delete, or copy link to a template  
+### Edit, rename, or copy link to a template  
 
-From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**. 
+1. From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**.  
 
-<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+	<img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
 
-### Copy or duplicate a template  
+1. To rename a template, choose to edit the template, change the name, and then save your changes.  
+
+### Create a copy of a template  
 
 1. To duplicate an existing template, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Create copy** option. 
 
@@ -384,7 +397,7 @@ From the work item type page, choose  :::image type="icon" source="../media/icon
 
 <a id="delete"> </a>
 
-### Delete a work item template  
+### Delete a template  
 
 1. From the web portal, open **Project Settings>Team configuration>Templates**.  
 
@@ -412,18 +425,19 @@ Managing work item templates from the web portal is only supported from TFS 2017
 
 <a id="team-explorer-manage" />
 
-If Visual Studio with power tools installed, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template.   
+With Visual Studio with power tools installed, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. These templates are only available to you. To share them with others, you can copy the template URL and share that, or save the template as a .wt file. 
 
-You manage templates from the Team Explorer pane.  
-![Templates, Team Explorer with power tools installed](media/wi-templates-section-te.png)  
+- You manage templates from the Team Explorer pane.  
 
-The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders &mdash;right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
+	![Templates, Team Explorer with power tools installed](media/wi-templates-section-te.png)  
 
-You can cut, copy, paste, rename, and delete templates and folders using the context menu. You may also drag and drop templates into folders. To edit multiple templates, use shift-click to select a range or ctrl-click to add individual templates to your selection, then right-click. 
+	The root Templates node represents the parent of all of your templates. You may create a directory structure underneath it by adding folders &mdash;right-click on the **Templates** node or a folder and select **New Folder** from the context menu.  
+
+- You can cut, copy, paste, rename, and delete templates and folders using the context menu. You may also drag and drop templates into folders. To edit multiple templates, use shift-click to select a range or ctrl-click to add individual templates to your selection, then right-click. 
 
 ### Define a template  
 
-1. From the Templates section, right-click **Templates** and choose to create a template from scratch.
+1. From the **Templates** section, right-click **Templates** and choose to create a template from scratch.
 
     <img src="media/wi-templates-new-template-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
 
@@ -435,20 +449,19 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 ### Edit, use, copy, or delete a template  
 
-To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
+- To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
 
-<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." style="border: 1px solid #CCCCCC;" />  
+	<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." style="border: 1px solid #CCCCCC;" />  
 
-To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
+- To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
 
 
 ### Set your template directory  
 
-To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
+- To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
 * * *
-
-
+ 
 
 <a id="copy-link" />
 
@@ -509,10 +522,7 @@ Managing work item templates from the web portal is only supported from TFS 2017
 2. Paste the copied link into a web browser to check that it works as expected.    
 
 * * *
-
-
-
-
+ 
 
 <a id="add-wi"> </a>
 
