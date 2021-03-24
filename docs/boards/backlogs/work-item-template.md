@@ -9,7 +9,7 @@ author: KathrynEE
 ms.topic: conceptual
 ms.custom: "work-items, contperf-fy21q3"  
 monikerRange: '<= azure-devops'
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ---
 
 # Use templates to add and update work items 
@@ -18,17 +18,16 @@ ms.date: 03/23/2021
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
-With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, you can create a task template that defines the area path, iteration path, and activity to use when creating a task. 
+With work item templates, you can quickly create work items that have pre-populated values for your team's commonly used fields. For example, you can create a template that defines the area path, iteration path, and activity to use when creating a task. 
 
 You can use work item templates to create work items or bulk update several work items. For examples that show usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md). 
 
 > [!NOTE]  
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
-
 ## Supported template tasks   
 
-The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions supports working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
+The availability of template task options depends on the client and platform version available to you. You can add and manage work item templates from the web portal or from Visual Studio 2015 or earlier versions. Visual Studio 2015 and earlier versions support working with templates by installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). These templates only appear in your view of Team Explorer.  
 
 As shown in the following table, a ✔️ indicates the task is available from the web portal or from Visual Studio 2015 or earlier versions. *(Make sure that you have selected the content version based on your platform version)*. 
 
@@ -106,7 +105,6 @@ As shown in the following table, a ✔️ indicates the task is available from t
    :::column-end:::
 :::row-end:::
 ---
-
 :::row:::
    :::column span="2":::
       [Apply a template to one or more work items](#apply)
@@ -156,12 +154,14 @@ As shown in the following table, a ✔️ indicates the task is available from t
 ::: moniker range=">= azure-devops-2019"
 
 - To add, capture, edit, or delete work item templates through the web portal, you must be a member of the team under which you add them.  
+
 - To apply a work item template, you must be a Contributor of the project and a member of the team under which the work item template is defined.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 - To add, capture, edit, or delete work item templates through the web portal, you must be a team administrator.   
+
 - To apply a team template, you must be a Contributor of the project and a member of the team under which the work item template is defined.   
 ::: moniker-end
 
@@ -183,7 +183,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 Templates captured through the web portal are assigned a GUID. 
 
-1. From the web portal, open a work item which you'll use as the basis for a template.  
+1. From the web portal, open a work item that you'll use as the basis for a template.  
 
 2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
@@ -207,9 +207,9 @@ Templates captured through the web portal are assigned a GUID.
 
 Templates captured through the web portal are assigned a GUID. 
 
-1. From the web portal, open a work item which you'll use as the basis for a template.  
+1. From the web portal, open a work item that you'll use as the basis for a template.  
 
-    Within the web portal, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
+    Within the web portal, work item templates are associated with a team. Only those templates that are defined for a team are accessible when you go to [apply a template](#apply) to work items using the web portal.  
 
 2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
@@ -461,11 +461,20 @@ With Visual Studio with power tools installed, you can view the list of template
 - To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
 * * *
+
+
+<a id="add-wi"> </a>
+
+## Add a work item using a template  
+
+The main method for adding a work item using a template is to open the template link within a browser window. You can then share these links through email, a network share, team portal, or a team dashboard or Welcome page.  
  
 
 <a id="copy-link" />
 
 ## Copy the link to a template 
+
+Use the URL whenever you want to add a work item of the type you've defined with its predefined values. Copy the link to a shared network or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget).  
 
 #### [Web portal](#tab/browser/)
 
@@ -478,9 +487,12 @@ With Visual Studio with power tools installed, you can view the list of template
 
     Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
-1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget).  
+1. Choose the work item type whose template you want to copy. 
 
-2. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
+1. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, and choose **Copy link**.   
+
+    > [!div class="mx-imgBorder"]  
+    > ![Screenshot of Copy link template menu option.](media/templates/copy-link-template-menu-option.png) 
 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
@@ -496,10 +508,6 @@ With Visual Studio with power tools installed, you can view the list of template
 1. Choose the **Work>Templates** tab. Then, choose the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon for the template you want to copy and select **Copy link**.  
 
     <img src="media/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
-
-2. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
-
-3. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
     You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
@@ -522,13 +530,6 @@ Managing work item templates from the web portal is only supported from TFS 2017
 2. Paste the copied link into a web browser to check that it works as expected.    
 
 * * *
- 
-
-<a id="add-wi"> </a>
-
-## Add a work item using a template  
-
-The main method for adding a work item using a template is to open the template link within a browser window. You can then share these links through email, a network share, team portal, or a team dashboard or Welcome page.  
  
 
 
