@@ -43,19 +43,19 @@ ms.date: 06/22/2020
     nuget.exe push -Source <orgName> -ApiKey az <packagePath>
     ``` 
 
-## Publish a NuGet package with the NuGet CLI
+## Publish NuGet packages with the command line
 
 To publish your package using the NuGet CLI, you will need the following variables:
 
 - **SourceName**: The name of your feed (step 1).
-- **SourceURL**: The feed URL (step 6).
+- **SourceURL**: The feed's URL (step 6).
 - **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Go to your feed or [create a feed](../../get-started-nuget.md#create-a-feed) if you haven't. 
+1. Go to your feed or [create one](../../get-started-nuget.md#create-a-feed) if you haven't. 
 
 2. Select **Connect to feed**:
 
@@ -71,5 +71,4 @@ To publish your package using the NuGet CLI, you will need the following variabl
 ::: moniker-end
 
 > [!NOTE]
-> You can use the symbols of your NuGet packages to debug your application. You can publish your symbols to a file share using the [index sources and publish symbols task](../../../pipelines/tasks/build/index-sources-publish-symbols.md) as well as in your build pipeline that produces the NuGet packages. See [Symbol files overview](../../concepts/symbols.md) and [How to publish your symbols for debugging](../../../pipelines/artifacts/symbols.md) for more information.
-> Publishing your symbols to Azure Artifact feeds from the command line is not currently supported.
+> Aside from publishing NuGet packages, Azure Artifacts also allow you to publish your symbols to [file shares](../../../pipelines/tasks/build/index-sources-publish-symbols.md) and [symbols server](../../../pipelines/artifacts/symbols.md). Publishing your symbols from the command line is not currently supported.
