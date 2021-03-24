@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 02/26/2021
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -217,6 +217,8 @@ steps:
 # Or you can reference it with a uses statement in the job
 uses:
 - FabrikamTools # Repository reference to FabrikamTools
+
+steps:
 - script: Do something with that repo like clone it
 ```
 

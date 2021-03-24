@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 02/26/2021
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2017'
 ---
 
