@@ -6,7 +6,7 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 10/07/2019
+ms.date: 03/24/2021
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -29,7 +29,7 @@ Follow these instructions to set up a pipeline for a sample Android app.
 
 1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+1. Walk through the steps of the wizard by first selecting **GitHub** for the location of your source code.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
@@ -51,9 +51,8 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Gradle is a common build tool used for building Android projects. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
-  vmImage: 'macOS-10.14'
+  vmImage: 'macos-latest'
 
 steps:
 - task: Gradle@2
