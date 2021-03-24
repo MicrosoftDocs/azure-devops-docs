@@ -9,6 +9,6 @@ monikerRange: '>= tfs-2015'
 
 # Azure Pipelines agents support
 
-Agents are widely backward compatible. Any version of the agent should be compatible with any version of Azure DevOps as long as Azure DevOps isn't demanding a higher version of the agent.
+Agents are widely backward compatible. Any version of the agent should be compatible with any Azure DevOps version as long as Azure DevOps isn't demanding a higher version of the agent.
 
-We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bugfixes.
+We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
