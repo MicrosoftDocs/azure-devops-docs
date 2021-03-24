@@ -29,7 +29,7 @@ With Azure Artifacts, you can create two types of feeds: project scoped and orga
 4. When you are done, select **Create**.
 
 > [!NOTE]   
-> Enabling upstream sources allows you to consume packages from public registries such as NuGet.org and npmjs.com, and gives you more protection against outages and corrupted packages.
+> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
 
@@ -53,6 +53,6 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
    > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
 > [!NOTE]   
-> Enabling upstream sources allows you to consume packages from public registries such as NuGet.org and npmjs.com, and gives you more protection against outages and corrupted packages.
+> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
