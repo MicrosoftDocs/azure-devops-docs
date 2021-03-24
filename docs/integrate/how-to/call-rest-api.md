@@ -8,7 +8,7 @@ ms.custom: has-adal-ref
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 01/25/2021
+ms.date: 03/24/2021
 ---
 
 # Get started with the REST APIs
@@ -20,10 +20,11 @@ Integrate your app with Azure DevOps using these REST APIs.
 These APIs follow a common pattern: 
 
 ```no-highlight
-VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}
+VERB https://{instance}[/{collection}][/{team-project}]/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-> Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
+> [!TIP]
+> To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
 ## Azure DevOps Services
 
