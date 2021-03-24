@@ -6,13 +6,11 @@ author: ramiMSFT
 ms.date: 02/19/2020
 ---
 
-To consume NuGet packages from a feed, add the feed's NuGet endpoint as a package source in Visual Studio.
-
-[!INCLUDE [Azure Artifacts and Visual Studio 2015](vs2015.md)]
+To consume NuGet packages from our feed, we need to add the feed's NuGet endpoint as a package source in Visual Studio.
 
 <a name="get-nuget-pkg-url"></a>
 
-## Get your feed's NuGet package source information
+### 1. Get the feed's source
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
