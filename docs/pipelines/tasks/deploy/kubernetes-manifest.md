@@ -6,7 +6,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/28/2020
+ms.date: 01/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -79,7 +79,7 @@ The following list shows the key benefits of this task:
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -150,6 +150,13 @@ The following list shows the key benefits of this task:
     <br/>
     In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But baseline and canary variants don't receive three replicas each. They instead receive the specified number of replicas, which means they each receive one replica.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code is an example of deploying to a Kubernetes namespace by using manifest files:
@@ -161,7 +168,9 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/deployment.yml|manifests/service.yml
+    manifests: |
+      manifests/deployment.yml
+      manifests/service.yml
     containers: |
       foo/demo:$(tagVariable1)
       bar/demo:$(tagVariable2)
@@ -211,7 +220,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -272,7 +281,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>secretArguments</b><br/>Secret arguments</td>
     <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set to <b>generic</b>)<br/>
     <br/>
-    Multiline input that accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
+    Accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
     <b>--from-literal=key1=value1</b>
     <b>--from-literal=key2=&quot;top secret&quot;</b>
     </td>
@@ -451,6 +460,13 @@ steps:
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code shows an example of scaling objects:
@@ -536,6 +552,13 @@ steps:
     <td>(Required)<br/>
     <br/>
     The namespace within the cluster to deploy to.</td>
+  </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
   </tr>
 </table>
 

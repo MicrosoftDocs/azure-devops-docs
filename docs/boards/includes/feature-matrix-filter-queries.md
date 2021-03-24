@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 01/14/2021
+ms.date: 03/05/2021
 ---
 
 
@@ -43,7 +43,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Wildcard searches](../queries/titles-ids-descriptions.md)
+      [Wildcard searches](../queries/titles-ids-descriptions.md) 
    :::column-end:::
    :::column span="4":::
       Wild card = `*` 
@@ -58,7 +58,8 @@ The following table summarizes the query filter functions supported by each Azur
       [Linked work item searches](../queries/linking-attachments.md)   
    :::column-end:::
    :::column span="4":::
-      Find work items based on direct links or topological/hierarchical link types. 
+      Find work items based on direct links or topological/hierarchical link types.  
+      Filter linked work items based on `MODE` ([WIQL syntax](../queries/wiql-syntax.md#query-for-links-between-work-items))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -84,6 +85,8 @@ The following table summarizes the query filter functions supported by each Azur
    :::column span="1":::
        Find work items based on a field match with a previous value. 
        Supported operator: `Was Ever`
+       Find work items based on a value defined on a specific date. 
+       Supported operator: `ASOF` ([WIQL syntax](../queries/wiql-syntax.md#historical-queries-asof))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -213,3 +216,5 @@ The following table summarizes the query filter functions supported by each Azur
    :::column-end:::
 :::row-end:::
 ---
+
+To bulk move, copy, or paste query clauses, install and use the WIQL editor. To learn more, see [Cross-service and enhanced query operations](../queries/query-support-integration-cross-service-extensions.md#wiql)

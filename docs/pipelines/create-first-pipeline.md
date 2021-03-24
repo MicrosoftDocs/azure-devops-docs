@@ -261,11 +261,11 @@ You can manage the pipelines in your organization using these `az pipelines` com
 - [az pipelines update](#update-a-pipeline): Update an existing pipeline
 - [az pipelines show](#show-pipeline): Show the details of an existing pipeline
 
-These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-list) command.
+These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/pipelines#ext-azure-devops-az-pipelines-list) command.
 
 ### Run a pipeline
 
-You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az pipelines run [--branch]
@@ -305,7 +305,7 @@ Run ID    Number      Status      Result    Pipeline ID    Pipeline Name        
 
 ### Update a pipeline
 
-You can update an existing pipeline with the [az pipelines update](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can update an existing pipeline with the [az pipelines update](/cli/azure/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az pipelines update [--branch]
@@ -347,7 +347,7 @@ ID    Name                        Status    Default Queue
 
 ### Show pipeline
 
-You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az pipelines show [--folder-path]
@@ -425,7 +425,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
-   ![Repos files](../repos/get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/create-first-pipeline/repos-files.png)
 
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
@@ -1217,7 +1217,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <a name="version-control"></a>
 
-### What kinds of version control can I use
+### What kinds of version control can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -1387,7 +1387,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 
@@ -1413,7 +1413,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 
@@ -1459,8 +1459,17 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
 
 <!-- ENDSECTION -->
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
+
+Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
+
+::: moniker-end
+

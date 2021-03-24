@@ -46,7 +46,7 @@ Git keeps an entire history of all changes made in your repo. Git uses this hist
 ### Preventing merge conflicts
 
 Git is very good at automatically merging file changes in most circumstances, provided that the file contents don't change dramatically between commits.
-Consider [rebasing](rebase.md) branches before you open up a [pull request](pullrequest.md) if your branch is far behind your main branch.
+Consider [rebasing](rebase.md) branches before you open up a [pull request](pull-requests.md) if your branch is far behind your main branch.
 Rebased branches will merge into your main branch without conflicts.
 
 ## Resolve merge conflicts 

@@ -5,6 +5,10 @@
   - name: Azure Artifacts
     tocHref: /azure/devops/artifacts/
     topicHref: /azure/devops/artifacts/index
+    items: 
+    - name: Publish Artifacts with Azure Pipelines
+      tocHref: /azure/devops/pipelines/
+      topicHref: /azure/devops/pipelines/artifacts/nuget
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
@@ -148,5 +152,5 @@
       tocHref: /azure/devops/cli/
       topicHref: /azure/devops/cli/index
     - name: Demo Generator
-      tocHref: /azure/devops//demo-gen
+      tocHref: /azure/devops/demo-gen
       topicHref: /azure/devops/demo-gen/index

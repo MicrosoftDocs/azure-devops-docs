@@ -1,4 +1,4 @@
-﻿---
+---
 ms.technology: devops-ecosystem
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation
@@ -10,7 +10,7 @@ author: apawast
 ms.date: 10/02/2019
 ---
 
-# Guidance for extension developers impacted by vertical navigation
+# Vertical navigation guidance
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 

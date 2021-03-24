@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
 > 
 > - Verify which remotes are using SSH by running ```git remote -v``` in your Git client. 
@@ -24,7 +24,7 @@ Connect to your Git repos through SSH on macOS, Linux, or Windows to securely co
 > - In your Git client, run: ```git remote set-url <remote name, e.g. origin> <new SSH URL>```. Alternatively, in Visual Studio, go to [Repository Settings](git-config.md#remotes), and edit your remotes.
 
 >[!NOTE]
-> As of Visual Studio 2017, SSH can be used to connect to Git repos.
+> As of Visual Studio 2017, SSH can be used to connect to Azure DevOps Git repos.
 
 ## How SSH key authentication works
 
@@ -125,7 +125,7 @@ If not, see the section on [Questions and troubleshooting](#questions-and-troubl
 
 ::: moniker range="< azure-devops-2019"
 
-### Step 2:  Add the public key to Azure DevOps Services/TFS
+### Step 2:  Add the public key to Azure DevOps
 
 Associate the public key generated in the previous step with your user ID.
 
@@ -194,8 +194,8 @@ Resolving deltas: 100% (15/15), done.
 
 When you are asked if you want to continue connecting, type `yes`. Git will clone the repo and set up the `origin` remote to connect with SSH for future Git commands. 
 
->[!TIP]
-> Avoid trouble: Windows users will need to [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase.
+> [!TIP]
+> To prevent problems, Windows users should [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase. 
 
 ## Questions and troubleshooting
 
@@ -262,9 +262,9 @@ You can now run any Git command that connects to `origin`.
 
 **A:** Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
  
-### Q: How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
+### Q: How can I use a non-default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
 
-**A:** To use keys created with `ssh-keygen` in a different place than the default, you do two things:
+**A:** To use keys created with `ssh-keygen` in a different place than the default, perform these two tasks:
 
 1. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
 2. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
@@ -291,6 +291,7 @@ On macOS and Linux you also must have `ssh-agent` running before running `ssh-ad
 takes care of starting `ssh-agent` for you.
 
 ### Q: I have multiple SSH keys.  How do I use different SSH keys for different SSH servers or repos?
+
 **A:** Generally, if you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
 
 However, this doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured.  Azure DevOps will blindly accept the first key that the client provides during authentication.  If that key is invalid for the requested repo, the request will fail with the following error:

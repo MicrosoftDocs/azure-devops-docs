@@ -9,6 +9,30 @@
         ],
         "group": "all",
         "exclude": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**",
+          "**/obj/**",
+          "**/includes/**",
+          "**/_data/**",
+          "**/_shared/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**"
+        ],
+        "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -88,10 +112,8 @@
       "monikerRange": {
         "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/powerbi/**": ">= azure-devops-2019",
         "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops",
-        "reference/mapping/**": "<= tfs-2018"
+        "reference/witadmin/**": "< azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
@@ -121,8 +143,8 @@
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "v-maksim",
-        "repos/get-started/**": "macoope",
-        "repos/git/**": "macoope"
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
 
       },
       "author": {
@@ -153,8 +175,8 @@
         "pipelines/test/**": "steved0x",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/get-started/**": "vtbassmatt",
-        "repos/git/**": "vtbassmatt"
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
 
       },
       "ms.technology": {

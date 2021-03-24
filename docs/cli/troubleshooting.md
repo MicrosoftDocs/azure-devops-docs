@@ -58,7 +58,7 @@ Get the identifier of the iteration and add it to your team using `az boards ite
  
 
 ## Related articles
-- [az boards area](/cli/azure/ext/azure-devops/boards/area)
-- [az boards iteration](/cli/azure/ext/azure-devops/boards/iteration)
+- [az boards area](/cli/azure/boards/area)
+- [az boards iteration](/cli/azure/boards/iteration)
 - [Define area paths and assign to a team](../organizations/settings/set-area-paths.md)
 - [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 

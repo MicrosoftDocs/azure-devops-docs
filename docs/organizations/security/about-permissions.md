@@ -1,5 +1,5 @@
 ---
-title: How permissions, access, and security groups are managed 
+title: Get started with permissions, access levels, and security groups 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
 ms.technology: devops-security
@@ -31,7 +31,7 @@ For example, individual contributors are added to the Contributors security grou
 Administrators manage security groups and permissions from the web portal administration context. Contributors manage permissions for objects they create or own from the web portal as well. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server-level to which you add users or groups.  
 
 > [!TIP]    
-> User accounts that are assigned to more than one security group are restricted to those permissions granting the least access. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
+> User accounts that are assigned to more than one security group are restricted to those permissions granting the **least access**. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
 
 To learn more, review the information provided in this article and the following articles:  
 
