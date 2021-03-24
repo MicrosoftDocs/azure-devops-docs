@@ -299,7 +299,7 @@ jobs:
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
   uses: # Any resources (repos or pools) required by this job that are not already referenced
-    repositories: [ string ] # Repository references to Azure Git repositories in another project
+    repositories: [ string ] # Repository references to Azure Git repositories
     pools: [ string ] # Pool names, typically when using a matrix strategy for the job
 ```
 
