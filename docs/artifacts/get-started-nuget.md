@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2018 | TFS 2017**
 
-Azure Artifacts enable developers to publish and consume NuGet packages to/from feeds and public registries. A feed is an organizational construct that host packages. You can create public or private feeds and control who can access your packages by modifying feed permissions.
+Developers can use Azure Artifacts to publish and consume NuGet packages both to and from feeds and public registries. A feed is an organizational construct that hosts packages. You can create public and private feeds, and you can control who can access your packages by modifying feed permissions.
 
 ## Prerequisites
 
