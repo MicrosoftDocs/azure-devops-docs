@@ -35,7 +35,7 @@ To generate the HTML code coverage report you need dotnet 2.0.0 or later on the 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/PublishCodeCoverageResultsV1.md)]
+[!INCLUDE [temp](../includes/yaml/PublishCodeCoverageResultsV2.md)]
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
