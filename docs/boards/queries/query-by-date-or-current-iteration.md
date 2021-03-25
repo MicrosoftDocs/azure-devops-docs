@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 01/21/2021
+ms.date: 03/24/2021
 ---
 
 # Query by date or current iteration
@@ -391,6 +391,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md) define iteration paths for a project and select iteration paths for a team.   
       Reference name=System.IterationPath, Data type=TreePath
    :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
 :::row-end:::
 ---
 :::row:::
@@ -462,7 +465,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 	</FIELD >  
     ```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields may not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+
+	[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
