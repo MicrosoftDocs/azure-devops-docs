@@ -123,7 +123,7 @@ sections:
           ::: moniker-end
 
 
-  - name: Backlogs and boards 
+  - name: Backlogs and Boards 
 
     questions: 
       - question: What's the difference between a backlog and a board?  
