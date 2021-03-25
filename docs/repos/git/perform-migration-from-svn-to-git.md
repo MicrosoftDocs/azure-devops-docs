@@ -134,7 +134,7 @@ In this step, you will create a bare repository and make its default branch matc
     ```
     cd c:\mytempdir 
     git remote add bare c:\new-bare.git 
-    git config remote.bare.push 'refs/remotes/*:refs/heads/*' 
+    git config remote.bare.push refs/remotes/*:refs/heads/* 
     git push bare 
     ```
 
