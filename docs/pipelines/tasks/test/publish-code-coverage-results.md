@@ -39,7 +39,7 @@ To generate the HTML code coverage report you need dotnet 2.0.0 or later on the 
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
-To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
+To publish code coverage results for JavaScript with Istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 
