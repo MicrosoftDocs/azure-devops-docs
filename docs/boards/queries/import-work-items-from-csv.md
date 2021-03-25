@@ -65,6 +65,11 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Save imported work items](media/import-csv/imported-file.png)
 
+	> [!NOTE]  
+	> Make sure you don't assign IDs to new work items that you are adding. You'll receive an error message similar to the following if you do so. 
+	> [!div class="mx-imgBorder"]  
+	> ![Error message of work item ID.](media/import-csv/import-work-item-ids-assigned.png)  
+
 6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
@@ -167,7 +172,7 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 
 <a id="tree-items" /> 
 
-### Can I import a CSV file that have parent-child links?
+### Can I import a CSV file that has parent-child links?
 
 Yes, you can add child work items by indenting title columns. The following example add three child Issues under the already defined Epic.
 
