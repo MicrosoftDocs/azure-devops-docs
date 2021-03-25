@@ -95,7 +95,7 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>javaHomeSelection</code><br/>Set JAVA_HOME by</td>
-       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
+       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. Please note that if you already have java installed on agent machine - you can specify it by setting up 'javaHomeOption' as 'path', and 'jdkDirectory' - as a path to jdk installed directory. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
     </tr>
     <tr>
        <td><code>jdkVersion</code><br/>JDK version</td>
