@@ -6,7 +6,9 @@ author: ramiMSFT
 ms.date: 04/06/2020
 ---
 
-With Azure Artifacts you can publish your NuGet packages to public or private feeds and share them with your consumers depending on your feed's visibility settings.
+With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others, depending on your feed's visibility settings. 
+
+Here's how to connect to your feed and publish a package.
 
 [!INCLUDE [](nuget-publish-endpoint.md)]
 

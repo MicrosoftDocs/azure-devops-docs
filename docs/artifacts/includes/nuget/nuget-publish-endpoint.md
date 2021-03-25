@@ -43,12 +43,12 @@ ms.date: 06/22/2020
     nuget.exe push -Source <orgName> -ApiKey az <packagePath>
     ``` 
 
-## Publish NuGet packages with the command line
+## Publish NuGet packages by using the command line
 
-To publish your package using the NuGet CLI, you will need the following variables:
+To publish your package by using the NuGet CLI, you will need the following variables:
 
-- **SourceName**: The name of your feed (step 1).
-- **SourceURL**: The feed's URL (step 6).
+- **SourceName**: The name of your feed.
+- **SourceURL**: The feed's [source URL](../../get-started-nuget.md#1-get-the-feeds-source).
 - **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end

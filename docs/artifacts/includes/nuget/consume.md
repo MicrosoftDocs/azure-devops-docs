@@ -6,11 +6,11 @@ author: ramiMSFT
 ms.date: 02/19/2020
 ---
 
-To consume NuGet packages from our feed, we need to add the feed's NuGet endpoint as a package source in Visual Studio.
+To consume NuGet packages from your feed, you need to add the feed's NuGet endpoint as a package source in Visual Studio, as follows.
 
 <a name="get-nuget-pkg-url"></a>
 
-### 1. Get the feed's source
+### 1. Get the feed's source URL
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
@@ -18,7 +18,7 @@ To consume NuGet packages from our feed, we need to add the feed's NuGet endpoin
 
 #### [Windows](#tab/windows/)
 
-### Add feed to NuGet configuration
+### Set up package source
 
 1. Select **Tools** then **Options** in Visual Studio.
 1. Expand the **NuGet Package Manager** and select **Package Sources**.
@@ -34,7 +34,7 @@ To consume NuGet packages from our feed, we need to add the feed's NuGet endpoin
 
 #### [MacOs](#tab/MacOs/)
 
-### Add feed to NuGet configuration
+### Set up package source
 
 1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
 1. In visual studio, select **Preferences** from the menu bar.
@@ -48,19 +48,21 @@ To consume NuGet packages from our feed, we need to add the feed's NuGet endpoin
 
 <a name="consume-packages"></a>
 
-## Consume packages
+---
 
-You can now discover and use packages in this feed. To add a package reference to a project:
+## 3. Consume packages
 
-1. Find your project in Solution Explorer.
-2. Right-click **References**.
-3. Select **Manage NuGet Packages**.
-4. In the **Package source** drop-down list, select your feed.
-5. Look for your package in the list.
-   ![Select feed source](../../media/select-pkg-src.png)
+You can now find and consume packages from your feed by using Visual Studio.
 
-If you're using [upstream sources](../../nuget/upstream-sources.md), package versions in the upstream source that haven't yet been saved into your feed (by using them at least once) won't appear in the NuGet Package Manager search. To install these packages:
+1. In Visual Studio, find your project in the Solution Explorer.
+1. Right-click on your project, select **References** then **Manage NuGet Packages**
+1. Select your feed from the **Package source** drop-down list.
+1. Use the search bar to look for packages.
 
-1. On the upstream source (for example, nuget.org), copy the `Install-Package` command.
-2. In Visual Studio, open the Package Manager Console from **Tools** > **NuGet Package Manager**.
-3. Paste the `Install-Package` command into the Package Manager Console and run it.
+    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
+
+If you're using [upstream sources](../../nuget/upstream-sources.md), any packages from upstream sources that haven't been saved to your feed yet (by using them at least once) won't appear in the Package Manager search result. To install those packages:
+
+1. Copy the **Install-Package** command from the public registry (NuGet.org), .
+1. Select **Tools** then **NuGet Package Manager** to open the NuGet package manager.
+1. Paste the command into the Package Manager Console and select **run**.
