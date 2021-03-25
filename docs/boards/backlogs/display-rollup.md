@@ -7,11 +7,10 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 01/21/2021
+ms.date: 03/24/2021
 ---
 
 # Display rollup progress or totals
-
 
 [!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
@@ -22,7 +21,7 @@ Rollup columns allow you to view progress bars or totals of numeric fields or de
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand-child work items. Descendant items for Features includes all child User Stories and their child work items.
 
 > [!IMPORTANT]   
-> Rollup data supports progress or counts within a project. Child items that link to a different project aren't counted within the parent rollup calculations.
+> Rollup data supports progress bars, counts of work items, or sums of numeric fields within a project. Child items that link to a different project aren't counted within the parent rollup calculations.
 
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/rollup/progress-by-work-items.png)
@@ -33,6 +32,16 @@ For example, here we show **Progress by Work Items** which displays progress bar
 > You can also view rollup progress from the new version of Delivery Plans that is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
  
 ::: moniker-end
+
+## Prerequisites
+
+- Rollup column data is calculated from the Analytics service.  
+
+::: moniker range="< azure-devops"
+- To add a rollup column, the Analytics service must be enabled on your on-premises Azure DevOps Server. To learn more, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
+
+::: moniker-end
+
 
 ## Rollup and hierarchical work items
 
