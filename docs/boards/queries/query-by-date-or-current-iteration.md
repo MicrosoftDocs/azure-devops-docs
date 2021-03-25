@@ -467,7 +467,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 2. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields may not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
 
-	[!INCLUDE [temp](../../includes/deprecate-project.md)]
+	[!INCLUDE [temp](../includes/deprecate-project.md)]
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
