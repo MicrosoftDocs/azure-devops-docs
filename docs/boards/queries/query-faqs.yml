@@ -31,8 +31,7 @@ sections:
 
       - question: Can I export a query and import to another project?  
         answer: |
-          **Yes**. You can save a query as a `.wiq` file, update the syntax, and then import it to another project, organization, or collection.  can  both query and search finds 
-          and list work items, the filter features and result presentation are different. 
+          **Yes**. You can save a query as a `.wiq` file, update the syntax, and then import it to another project, organization, or collection.  
           To learn more, see [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md#wiql).  
 
       - question: What are all the query filter functions? 
