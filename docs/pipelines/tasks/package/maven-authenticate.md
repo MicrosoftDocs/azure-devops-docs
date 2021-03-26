@@ -153,7 +153,7 @@ The Maven Authenticate task searches for the settings.xml in the current user's 
 
 ### We use the `mvn -s` switch to specify our own `settings.xml` file, how do we authenticate Azure Artifacts feeds there?
 
-The Maven Authenticate task doesn't have access to the custom settings.xml file specified using a -m switch. To add Azure Artifacts authentication for your custom settings.xml, add a server element inside your settings.xml like this:
+The Maven Authenticate task doesn't have access to the custom settings.xml file specified using a `-s` switch. To add Azure Artifacts authentication for your custom settings.xml, add a server element inside your settings.xml like this:
 
 ```XML
 <server>
