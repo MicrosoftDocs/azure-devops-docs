@@ -266,12 +266,12 @@ In this YAML file, you download an `app.keystore` secure file and use a bash scr
   inputs:
     targetType: "inline"
     script: |
-      msbuild -restore $(Build.SourcesDirectory)/myTestAndroidAppGH/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+      msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
 
 - task: CopyFiles@2
   displayName: 'Copy deliverables'
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/myTestAndroidAppGH/bin/$(buildConfiguration)'
+    SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
     Contents: '*.aab'
     TargetFolder: 'drop'
 ```
