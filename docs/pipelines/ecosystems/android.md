@@ -6,19 +6,14 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 03/25/2021
+ms.date: 10/07/2019
 monikerRange: azure-devops
 author: vijayma
 ---
 
 # Build, test, and deploy Android apps
 
-Learn how to build, test, and deploy Android apps with a pipeline. 
-
-## Prerequisites
-- Keystore
-- Xamarin or Gradle Android app
-    - [Hello, Android: Quickstart](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-quickstart)
+This guidance explains how to automatically build, test, and deploy Android apps.
 
 ## Get started
 
@@ -34,7 +29,7 @@ Follow these instructions to set up a pipeline for a sample Android app.
 
 1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** for the location of your source code.
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
 1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
@@ -56,8 +51,9 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Gradle is a common build tool used for building Android projects. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'macOS-10.14'
 
 steps:
 - task: Gradle@2
@@ -239,7 +235,6 @@ task to increase the rollout percentage of an app that was previously released t
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
-::: moniker-end
 
 ## Related extensions
 
@@ -248,3 +243,35 @@ task to increase the rollout percentage of an app that was previously released t
 - [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
 - [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
 - [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+
+## How do I create app bundles?
+
+You can build and sign your app bundle with an inline script and a secure file. To do this, you'll need to first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). You'll also need to create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
+
+Next, you'll use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
+
+In this YAML file, you download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, you use Copy Files to copy the app bundle. From there, you can create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+
+```yaml
+- task: DownloadSecureFile@1
+  name: keyStore
+  displayName: "Download keystore from secure files"
+  inputs:
+    secureFile: app.keystore
+
+- task: Bash@3
+  displayName: "Build and sign App Bundle"
+  inputs:
+    targetType: "inline"
+    script: |
+      msbuild -restore $(Build.SourcesDirectory)/myTestAndroidAppGH/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+
+- task: CopyFiles@2
+  displayName: 'Copy deliverables'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/myTestAndroidAppGH/bin/$(buildConfiguration)'
+    Contents: '*.aab'
+    TargetFolder: 'drop'
+```
+
+::: moniker-end
