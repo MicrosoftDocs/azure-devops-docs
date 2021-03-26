@@ -48,7 +48,7 @@ ms.date: 06/22/2020
 To publish your package by using the NuGet CLI, you will need the following variables:
 
 - **SourceName**: The name of your feed.
-- **SourceURL**: The feed's [source URL](consume.md#1-get-the-feeds-source-url).
+- **SourceURL**: The feed's [source URL](./consume.md#1-get-the-feeds-source-url).
 - **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end
