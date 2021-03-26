@@ -39,12 +39,12 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 <a name="publish-a-package"></a>
 
-## Publish packages
+## Connect to feed and publish packages
 
 [!INCLUDE [](includes/nuget/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
 
-## Consume your package in Visual Studio
+## Consume packages in Visual Studio
 
 [!INCLUDE [](includes/nuget/consume.md)]

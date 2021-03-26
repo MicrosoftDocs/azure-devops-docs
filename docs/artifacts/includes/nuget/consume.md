@@ -50,7 +50,7 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 
 ---
 
-## 3. Consume packages
+### 3. Consume packages
 
 You can now find and consume packages from your feed by using Visual Studio.
 
