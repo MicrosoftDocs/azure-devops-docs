@@ -48,8 +48,6 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 
 Your next step is to [create a project](#create-project). 
 
-<a id="create-project" />
-
 ## Sign up with a GitHub account
 
 If you have a GitHub account, follow these steps to sign up for Azure Pipelines. 
