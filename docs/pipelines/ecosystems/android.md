@@ -244,13 +244,15 @@ task to increase the rollout percentage of an app that was previously released t
 - [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
 - [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
 
-## How do I create app bundles?
+## FAQ
+
+### How do I create app bundles?
 
 You can build and sign your app bundle with an inline script and a secure file. To do this, you'll need to first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). You'll also need to create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
 
 Next, you'll use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
 
-In this YAML file, you download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, you use Copy Files to copy the app bundle. From there, you can create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+In this YAML file, you download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, you use [Copy Files](../tasks/utility/copy-files.md) to copy the app bundle. From there, you can create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
 
 ```yaml
 - task: DownloadSecureFile@1
