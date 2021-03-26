@@ -6,14 +6,19 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 03/24/2021
+ms.date: 03/25/2021
 monikerRange: azure-devops
 author: vijayma
 ---
 
 # Build, test, and deploy Android apps
 
-This guidance explains how to automatically build, test, and deploy Android apps.
+Learn how to build, test, and deploy Android apps with a pipeline. 
+
+## Prerequisites
+- Keystore
+- Xamarin or Gradle Android app
+    - [Hello, Android: Quickstart](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-quickstart)
 
 ## Get started
 
