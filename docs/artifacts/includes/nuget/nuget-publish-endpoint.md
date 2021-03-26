@@ -43,7 +43,7 @@ ms.date: 06/22/2020
     nuget.exe push -Source <orgName> -ApiKey az <packagePath>
     ``` 
 
-## Publish NuGet packages by using the command line
+## Publish packages by using the command line
 
 To publish your package by using the NuGet CLI, you will need the following variables:
 
