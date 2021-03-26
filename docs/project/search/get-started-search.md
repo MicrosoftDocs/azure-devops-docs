@@ -184,20 +184,14 @@ When you search from Wiki, you automatically navigate to wiki search results. Te
 
 For more information about searching wikis, see [Search Wiki](../wiki/search-wiki.md).
 
-## Narrow your semantic search results
+## Narrow your search results
 
 Narrow your search by using Boolean operators to combine search criteria. You can combine multiple search criteria using `AND`, `OR`, or `NOT`. 
 
 Use parentheses to specify the precedence of the operations when you use more than one Boolean operator. By default, a search combines all the words you enter using 
 the `AND` operator so that it returns only items that contain all of the words you entered.
 
-For more information about how to narrow your search results, see the following articles:
-
-- [Narrow your work item search](functional-work-item-search.md#narrow-your-search-with-boolean-operators)
-- [Narrow your code search](functional-code-search.md#narrow-your-search-by-using-boolean-operators)
-- [Narrow your artifacts or packages search](functional-package-search.md#narrow-your-search-by-using-boolean-operators)
-
-## Broaden your semantic search results
+## Broaden your search results
 
 Use the wildcard characters `*` and `?` to broaden your search criteria. You can use more than one `?` wildcard to match more than one character. 
 

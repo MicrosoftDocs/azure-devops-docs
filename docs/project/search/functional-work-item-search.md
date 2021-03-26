@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/22/2021
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -206,7 +206,7 @@ Open the search results in a new browser tab from either search box by selecting
 ## Work item search best practices
 
 - You can use a text search across all fields to efficiently locate relevant work items. This is useful when you are trying to, for example, search for all work items that had similar exception trace.
-- You can also use the quick in-line search filters on any work item field to [narrow down to a list](#narrow-search-results) of work items in seconds. The dropdown list of suggestions helps complete your search faster.
+- You can also use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The dropdown list of suggestions helps complete your search faster.
 
 #### Semantic search vs. managed work item queries
 

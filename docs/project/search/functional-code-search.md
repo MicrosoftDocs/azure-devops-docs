@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 03/22/2021
+ms.date: 03/24/2021
 ---
 
 # Functional code search  
@@ -21,31 +21,9 @@ By using Code Search, you can do the following tasks:
 |**Task**  |**Description** |
 |---------|---------|
 |**Search across all of your projects**  | - Search in your own code base and your partner teams' code bases. - Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. - Narrow your search by using project, repository, path, file name, and other filter operators.        |
-|**Find specific types of code**  |  - Find - definitions - references - functions - comments - strings - namespaces. - Use Code Search to narrow your results to exact code type matches. - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
-|**Easily drill down or widen your search**   |         |
-
-
-* **Search across all of your projects**:
-  - Search in your own codebase and your partner teams' code bases. 
-  - Use cross-project searches over all the code in your Azure DevOps or TFS instance to search across your enterprise's entire codebase. 
-  - Narrow your search by using project, repository, path, file name, and other filter operators. 
-  - [Use wildcards to widen your search](#broaden-your-search-by-using-wildcards) and [Boolean operators to fine-tune it](#narrow-your-search-by-using-boolean-operators). 
-
-* **Find specific types of code**: 
-  - Use code type filters to search for the following specific kinds of code:
-    - definitions
-    - references
-    - functions
-    - comments
-    - strings
-    - namespaces
-    - and more
-  - Use Code Search to narrow down your results to exact code type matches. 
-  - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.
-
-* **Easily drill down or widen your search**: 
-  - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. 
-  - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.
+|**Find specific types of code**  |  - Find - definitions, - references, - functions, - comments, - strings, - namespaces. - Use Code Search to narrow your results to exact code type matches. - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
+|**Easily drill down or widen your search**   | - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. 
+  - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.        |
 
 <a name="syntaxdetails"></a>
 
@@ -116,8 +94,8 @@ You can use the code type search functions with files written in C#, C, C++, Jav
 ### Code search best practices
 
 - You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
-- You can [narrow your search](#narrow-search-results) by using project, repository, path, file name, and other filter operators. This helps you achieve your desired results even faster. Start with a higher-level search if you don’t know where the results would be and keep filtering till you have a subset of results to browse through and work on.
-- You can [use wildcards](#broaden-search-results) to widen your search and [Boolean operators](#broaden-search-results) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
+- You can narrow your search by using project, repository, path, file name, and other filter operators. This helps you achieve your desired results even faster. Start with a higher-level search if you don’t know where the results would be and keep filtering till you have a subset of results to browse through and work on.
+- You can [use wildcards](#broaden-your-search-by-using-wildcards) to widen your search and [Boolean operators](#narrow-your-search-by-using-boolean-operators) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
 - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
 - Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 
