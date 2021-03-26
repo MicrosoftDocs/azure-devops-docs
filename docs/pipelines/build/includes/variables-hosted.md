@@ -763,8 +763,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Checks.StageAttempt</td>
 <td>Set to 1 the first time this stage is attempted, and increments every time the job is retried. 
 <br/><br/>
-This variable can only be used within an [approval or check](../../process/approvals.md) for an environment. For example, you could use `$(Checks.StageAttempt)` within an [Invoke REST API check](../../process/approvals.md#invoke-rest-api).<br /><br />
-    :::image type="content" source="../media/checks-stageattempt-var.png" alt-text="Add the stage attempt as a parameter.":::
+This variable can only be used within an <a href="../../process/approvals.md">approval or check] for an environment. For example, you could use `$(Checks.StageAttempt)` within an <a href="../../process/approvals.md#invoke-rest-api">Invoke REST API check</a>.<br /><br />
+    <image src="../media/checks-stageattempt-var.png" alt="Add the stage attempt as a parameter." />
 </td>
 </tr>
 </table>
