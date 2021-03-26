@@ -22,6 +22,7 @@ Azure Artifacts is a highly-scalable artifact service. In the course of everyday
 * NuGet packages are limited to 500 MB.
 * npm packages are limited to 500 MB.
 * Maven packages are limited to 500 MB per file.
+  * Maven `pom.xml` files are limited to 384000 bytes.
 * Python packages are limited to 500 MB per file.
 ::: moniker range="<= tfs-2018 || azure-devops"
 * Universal Packages have been tested up to 1 TB and are recommended for managing large binary content.
