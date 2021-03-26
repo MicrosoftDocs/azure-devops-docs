@@ -40,7 +40,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Create a new repo
-            url: ./clone.md
+            url: ./create-new-repo.md
           - text: Clone an existing repo
             url: ./clone.md
           - text: Commit, share, and sync your code
