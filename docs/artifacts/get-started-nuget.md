@@ -16,7 +16,7 @@ Developers can use Azure Artifacts to publish and consume NuGet packages both to
 
 ## Prerequisites
 
-- [Install NuGet client tools](https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools)
+- [Install NuGet client tools](https://docs.microsoft.com/nuget/install-nuget-client-tools)
 - [Project and org permissions](../organizations/security/lookup-organization-owner-admin.md) to use Azure Artifacts.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
