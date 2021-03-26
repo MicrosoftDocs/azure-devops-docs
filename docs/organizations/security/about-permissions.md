@@ -219,9 +219,8 @@ Here's what you need to know about permission settings:
 
 - For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
-	For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, **Deny** doesn't trump **Allow**. Permissions assigned to these groups take precedent over any **Deny** set within any other group to which that member might belong. 
-	**Project Collection Administrators** or **Team Foundation Administrators** permissions will not take precedence for work item operations, such as deletion. **Deny** will override **Allow** for these permissions.
-
+	In some cases, members of the **Project Collection Administrators** or **Team Foundation Administrators** groups may always get the permission even if they are denied that permission in a different group. In other cases such as work item deletion or pipelines, being a member of project collection administrators does not bypass **Deny** permissions set elsewhere.
+	
 - Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
 <a name="inheritance"></a>
