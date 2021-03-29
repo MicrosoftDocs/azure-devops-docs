@@ -41,7 +41,7 @@ See the following most common reasons a project member can’t access a project,
 - The user has been recently granted permission, however a refresh is required for their client to recognize the changes. Have them perform a **Refresh/re-evaluate permissions**.  
 - The user's trying to exercise a feature granted only to a team administrator for a specific team, however they haven’t been granted that role. To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md) .
 - The user hasn’t enabled a preview feature. To troubleshoot, have the user open the Preview features and determine the on/off status for the specific feature. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
-- Project member has been added to a limited scope security group, such as the Project-Scoped Users group. To discover if this is a cause, [look up the user’s security group memberships](#membership-in-a-security-group-with-lesser-permissions).  
+- Project member has been added to a limited scope security group, such as the Project-Scoped Users group. To discover if this is a cause, [look up the user’s security group memberships](#group-rules-with-lesser-permissions).  
  
 ### Less common access and permission issues
 
@@ -49,7 +49,7 @@ Less common reasons for limited access are when one of the following events has 
 
 - A project administrator disabled a service. In this case, no one has access to the disabled service.  To determine whether a service is disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).
 - A Project Collection Administrator disabled a preview feature, which disables it for all project members in the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
-- Group rules governing the user’s access level or project membership are restricting access. To troubleshoot, see [Membership in a security group that has less access or permissions](#membership-in-a-security-group-with-lesser-permissions).
+- Group rules governing the user’s access level or project membership are restricting access. To troubleshoot, see [Determine a user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).
 - Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations). 
 
 ## Determine a user's access level and subscription status
