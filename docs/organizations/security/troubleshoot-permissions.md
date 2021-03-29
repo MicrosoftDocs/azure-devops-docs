@@ -36,21 +36,26 @@ Permissions get set at one of the following levels:
 
 See the following most common reasons a project member can’t access a project, service, or feature: 
 
-- Their access level doesn’t support access to the service or feature. To discover if this is the cause, you want to [determine the user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).   
-- Their membership within a security group doesn’t support access to a feature or they have been explicitly denied permission to a feature. To discover if this is the cause, [trace a permission](#trace-a-permission). 
-- The user has been recently granted permission, however a refresh is required for their client to recognize the changes. Have them perform a **Refresh/re-evaluate permissions**.  
-- The user's trying to exercise a feature granted only to a team administrator for a specific team, however they haven’t been granted that role. To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md) .
-- The user hasn’t enabled a preview feature. To troubleshoot, have the user open the Preview features and determine the on/off status for the specific feature. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
-- Project member has been added to a limited scope security group, such as the Project-Scoped Users group. To discover if this is a cause, [look up the user’s security group memberships](#group-rules-with-lesser-permissions).  
+
+|**Issue**  |**Troubleshooting action**  |
+|---------|---------|
+|Their access level doesn’t support access to the service or feature.     | To discover if this is the cause, you want to [determine the user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).        |
+|Their membership within a security group doesn’t support access to a feature or they have been explicitly denied permission to a feature.   | To discover if this is the cause, [trace a permission](#trace-a-permission).         |
+|The user has been recently granted permission, however a refresh is required for their client to recognize the changes.    | Have the user [refresh or re-evaluate their permissions](#refresh-or-reevaluate-permissions).        |
+|The user's trying to exercise a feature granted only to a team administrator for a specific team, however they haven’t been granted that role.   |To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md).         |
+|The user hasn’t enabled a preview feature.   | Have the user open the Preview features and determine the on/off status for the specific feature. For more information, see [Manage preview features](../../project/navigation/preview-features.md).        |
+|Project member has been added to a limited scope security group, such as the Project-Scoped Users group.  | To discover if this is a cause, [look up the user’s security group memberships](#group-rules-with-lesser-permissions).        | 
  
 ### Less common access and permission issues
 
 Less common reasons for limited access are when one of the following events has occurred:
 
-- A project administrator disabled a service. In this case, no one has access to the disabled service.  To determine whether a service is disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).
-- A Project Collection Administrator disabled a preview feature, which disables it for all project members in the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
-- Group rules governing the user’s access level or project membership are restricting access. To troubleshoot, see [Determine a user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).
-- Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations). 
+|**Issue**  |**Troubleshooting action**  |
+|---------|---------|
+|A project administrator disabled a service. In this case, no one has access to the disabled service.    | To determine whether a service is disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).        |
+|A Project Collection Administrator disabled a preview feature, which disables it for all project members in the organization.    | See [Manage preview features](../../project/navigation/preview-features.md).        |
+|Group rules governing the user’s access level or project membership are restricting access.    |See [Determine a user's access level and subscription status].(#determine-a-users-access-level-and-subscription-status).         |
+|Custom rules have been defined to a work item type’s workflow.   |see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations).          |
 
 ## Determine a user's access level and subscription status
 
@@ -67,7 +72,7 @@ To use Azure DevOps features, users must be added to a security group with the a
 Users can lose access for the following reasons:
 
 
-|**Reason for loss of access**  |**Notes/fix**|
+|**Reason for loss of access**  |**Troubleshooting action**|
 |---------|---------|
 |The user's Visual Studio subscription has expired.     | Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
 |The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
@@ -152,6 +157,8 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
 
 ## Refresh or reevaluate permissions
+
+See the following scenario where refreshing or reevaluating permissions may be necessary.
 
 ### Problem
 
@@ -272,7 +279,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 
 3. Go to the following URL: https://aka.ms/vssignout.
 
- A message displays that says, "Sign out in progress." After you sign out, you're redirected to dev.azure.microsoft.com.
+   A message displays that says, "Sign out in progress." After you sign out, you're redirected to dev.azure.microsoft.com.
 
 4. Sign in to [Azure DevOps](https://dev.azure.com/{organizationName}) again. Select your other identity.
 
