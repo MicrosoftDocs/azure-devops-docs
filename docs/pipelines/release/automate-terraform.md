@@ -117,6 +117,8 @@ This DevOps project includes two separate pipelines for CI and CD. The CI pipeli
 
 ### [YAML](#tab/YAML/)
 
+Use the [DotNetCoreCLI](../tasks/build/dotnet-core-cli.md) task to restore, build, test, and publish your packages, and the [CopyFiles](../tasks/utility/copy-files.md) and [PublishBuildArtifacts](../tasks/utility/publish-build-artifacts.md) tasks to copy and publish your artifacts.
+
 ```YAML
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -169,6 +171,8 @@ steps:
 ## Release the application to Azure resources provisioned by Terraform
 
 Now that the application has been built, it's time to release it. However, no deployment infrastructure has been created yet. This is where Terraform comes in. By following the definition file reviewed earlier, Terraform will be able to ensure the expected state of the Azure infrastructure meets the application's needs before it is published.
+
+### [Classic](#tab/classic/)
 
 1. Navigate to **Releases** under **Pipelines** and select the **Terraform-CD** pipeline. Select **Edit**.
 
@@ -281,6 +285,55 @@ Now that the application has been built, it's time to release it. However, no de
     ```
 
     ![Open a new browser tab and navigate to the app service.](media/automate-terraform/deployed-app.png)
+
+### [YAML](#tab/YAML/)
+
+- Deploy Azure resources
+
+    ```YAML
+    variables:
+      terraformstoragerg: 'terraformrg'
+      terraformstorageaccount: 'terraformstorage8ff03276'
+    
+    steps:
+    - task: AzureCLI@1
+      displayName: 'Azure CLI to deploy required Azure resources'
+      inputs:
+        azureSubscription: '<yourAzureSubscription>'
+        scriptLocation: inlineScript
+        inlineScript: |
+         # this will create Azure resource group
+         az group create --location westus --name $(terraformstoragerg)
+         
+         az storage account create --name $(terraformstorageaccount) --resource-group $(terraformstoragerg) --location westus --sku Standard_LRS
+         
+         az storage container create --name terraform --account-name $(terraformstorageaccount)
+         
+         az storage account keys list -g $(terraformstoragerg) -n $(terraformstorageaccount)   
+    ```
+
+- Get storage key
+
+    ```YAML
+    variables:
+      terraformstoragerg: 'terraformrg'
+      terraformstorageaccount: 'terraformstorage8ff03276'
+    
+    steps:
+    - task: AzurePowerShell@3
+      displayName: 'Azure PowerShell script to get the storage key'
+      inputs:
+        azureSubscription: '<yourAzureSubscription>'
+        ScriptType: InlineScript
+        Inline: |
+         # Using this script we will fetch storage key which is required in terraform file to authenticate backend storage account
+         
+         $key=(Get-AzureRmStorageAccountKey -ResourceGroupName $(terraformstoragerg) -AccountName $(terraformstorageaccount)).Value[0]
+         
+         Write-Host "##vso[task.setvariable variable=storagekey]$key"
+        azurePowerShellVersion: LatestVersion
+    ```
+---
 
 ## Summary
 
