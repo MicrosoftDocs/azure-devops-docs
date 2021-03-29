@@ -78,24 +78,24 @@ resourceGroupName="contoso-storage-rg$uniqueId"
 storageAccountName="contosostoracct$uniqueId" #needs to be lower case
 devopsProject="Contoso DevOps Project $uniqueId"
 repoBranch="master"
+variableGroupName="Contoso Variable group $uniqueId"
 
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"
 az storage account create --name "$storageAccountName" \
-    --resource-group "$resourceGroupName" \
-    --location "$storageAccountLocation"
+    --resource-group "$resourceGroupName" --location "$storageAccountLocation"
 
 # Set the environment variable used for Azure DevOps token authentication.
 export AZURE_DEVOPS_EXT_GITHUB_PAT=$devopsToken
 
 # Create the Azure DevOps project. Set the default organization and project.
-az devops project create --name "$devopsProject" --organization "$devopsOrg" --visibility public
+projectId=$(az devops project create \
+    --name "$devopsProject" --organization "$devopsOrg" --visibility public --query id)
 az devops configure --defaults organization="$devopsOrg" project="$devopsProject"
 
 # Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set)
 az devops service-endpoint github create \
-    --name "$serviceConnectionName" \
-    --github-url "https://www.github.com/$repoName"
+    --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName"
 
 # Create Azure Resource Manager service connection
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY="<client secret string value from your service principal>"
@@ -106,8 +106,7 @@ az devops service-endpoint azurerm create \
     --azure-rm-service-principal-id <service-principal-application-guid> \
     --azure-rm-tenant-id <service-principal-directory-guid>
 
-
-az pipelines create \
+pipelineId=$(az pipelines create \
     --name "$pipelineName" \
     --description "$pipelineDesc" \
     --repository $repoName \
@@ -115,6 +114,13 @@ az pipelines create \
     --branch $repoBranch \
     --service-connection $serviceConnectionId \
     --yml-path azure-pipelines.yml
+    --query id)
+
+# Create a variable group with 2 non-secret variables and 1 secret variable.
+variableGroupId=$(az pipelines variable-group create \
+    --name $variableGroupName --variables a=35 b=86 --query id)
+az pipelines variable-group variable create \
+    --group-id $variableGroupId --name contososecret --secret true --value 67
 
 read -p "Press any key to do the next step"
 az referenceName command
@@ -125,8 +131,9 @@ az referenceName command
 After the script sample has been run, the following command can be used to remove the resource group and all resources associated with it.
 
 ```azurecli-interactive
-az group delete --name $resourceGroupName
-#az devops project delete --id "$devopsProject" --yes --organization "$devopsOrg"
+az group delete --name $resourceGroupName --yes
+az devops project delete --id "$devopsProject" --yes
+az pipelines variable-group delete --group-id $variableGroupId --yes
 az devops configure --defaults organization="" project=""
 ```
 
@@ -150,4 +157,4 @@ Remove this sentence: alphabetize this list and provide links at the command lev
 - [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_run)
 - [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_show)
 - [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
-- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
+- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create) 
