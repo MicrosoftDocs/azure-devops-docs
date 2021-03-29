@@ -8,7 +8,6 @@ ms.date: 02/13/2020
 ---
 
 <li><p>Open your project in your web browser</p>
-<div class="collapse" id="expando-begin-create-build-definition-open-team-project">
 <img src="/azure/devops/pipelines/media/browse-to-team-project.png" alt="Browse to project"/>
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
@@ -17,12 +16,9 @@ ms.date: 02/13/2020
 <li>Azure Pipelines: <code>https://dev.azure.com/{your_organization}/{your_project}</code></li>
 </ul>
 <p><a href="/azure/devops/server/admin/websitesettings" data-raw-source="[The TFS URL doesn&#39;t work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)">The TFS URL doesn&#39;t work for me. How can I get the correct URL?</a></p>
-</div>
 </li>
 
 <li><p>Create a build pipeline (Pipelines tab &gt; Builds)</p>
-<div class="collapse" id="expando-begin-create-build-definition-create">
 <img src="/azure/devops/pipelines/media/create-new-build-definition.png" alt="Build tab"/>
 <p></p>
-</div>
 </li>
