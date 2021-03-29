@@ -66,9 +66,12 @@ To use Azure DevOps features, users must be added to a security group with the a
 
 Users can lose access for the following reasons:
 
-- The user's Visual Studio subscription has expired. Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
-- The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
-- The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md).
+
+|**Reason for loss of access**  |**Notes/fix**|
+|---------|---------|
+|The user's Visual Studio subscription has expired.     | Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.        |
+|The Azure subscription used for billing is no longer active.  |  All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).       |
+|The Azure subscription used for billing was removed from your organization.    | Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md)        |
 
 Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
@@ -134,9 +137,9 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 1.	Go to the Security page for the project that the user is having access problems.
 2.	Enter their name into the box in the upper left-hand corner.
    
-   ![Enter user name to view permissions](media/security-page-enter-user-name.png)
+   :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Enter user name to view permissions.":::
 
-   You should now have a user-specific view that shows what permissions they have.
+   You should have a user-specific view that shows what permissions they have.
 
 3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
@@ -166,6 +169,8 @@ Users get added to an Azure DevOps group. This action grants inherited access to
 
 ### Solution
 
+::: moniker range=" <= azure-devops"
+
 Within **User settings**, on the **Permissions** page, you can select **Reevaluate permissions**. This function reevaluates your group memberships and permissions, and then any recent changes take effect immediately.
 
 :::image type="content" source="media/troubleshoot-permissions/re-evaluate-permissions-button.png" alt-text="Reevaluate permissions control":::
@@ -181,10 +186,7 @@ For more information about work item type rules that apply toward restricting pe
 - [Apply rules to workflow states (Inheritance process)](../settings/work/apply-rules-to-workflow-states.md)
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
-
-For more information, see [Define area paths and assign to a team](../settings/set-area-paths.md).
-
-::: moniker-end
+- [Define area paths and assign to a team](../settings/set-area-paths.md)
 
 ## Hide organization settings from users
 
@@ -236,11 +238,9 @@ For more information, see [Use TFSSecurity to manage groups and permissions for 
 
 ::: moniker range=" azure-devops"
 
-## Membership in a security group with lesser permissions
-
 ## Group rules with lesser permissions
 
-Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. 
+Group rule types get ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. 
 Users always get the best access level between all the group rules, including Visual Studio (VS) subscription. 
 
 See the following examples, showing how subscriber detection factors into group rules.
@@ -258,13 +258,13 @@ I have a Visual Studio Test Pro subscription and I'm in a group rule that gives 
 Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule. I'm already paying for the Visual Studio Test Pro, so I don't want to pay again.
 
 ## Work with GitHub
-
+See the following troubleshooting information for when you're trying to deploy code in Azure DevOps with GitHub.
 ### Problem
-You're trying to deploy code in Azure DevOps with GitHub. The issue is that you can't bring the rest of your team into the organization and project, despite your adding them as organization and project members. They receive emails but when signing in they receive an error 401. 
 
+ You can't bring the rest of your team into the organization and project, despite adding them as organization and project members. They receive emails but when signing in they receive an error 401. 
 ### Solution
 
-You're likely signed into Azure DevOps with a different identity. Complete the following steps.
+You're likely signed into Azure DevOps with an incorrect identity. Complete the following steps.
 
 1. Close all browsers, including browsers that aren't running Azure DevOps.
 
