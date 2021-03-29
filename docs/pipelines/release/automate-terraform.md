@@ -97,6 +97,8 @@ This tutorial uses the PartsUnlimited project, which is a sample eCommerce websi
 
 This DevOps project includes two separate pipelines for CI and CD. The CI pipeline produces the artifacts that will be released via the CD pipeline at a later point.
 
+### [Classic](#tab/classic/)
+
 1. Navigate to **Pipelines** and select the **Terraform-CI** pipeline.
 
     ![Selecting the CI pipeline](media/automate-terraform/select-ci-pipeline.png)
@@ -112,6 +114,55 @@ This DevOps project includes two separate pipelines for CI and CD. The CI pipeli
 1. Select **Queue** to queue a new build. Select **Run** to use the default options. When the build page appears, select **Agent job 1**. The build may take a few minutes to complete.
 
     ![Tracking the build](media/automate-terraform/track-build.png)
+
+### [YAML](#tab/YAML/)
+
+```YAML
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '$(Parameters.RestoreBuildProjects)'
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    projects: '$(Parameters.RestoreBuildProjects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Test
+  inputs:
+    command: test
+    projects: '$(Parameters.TestProjects)'
+    arguments: '--configuration $(BuildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Publish
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+    zipAfterPublish: True
+
+- task: CopyFiles@2
+  displayName: 'Copy Terraform files to artifacts'
+  inputs:
+    SourceFolder: Terraform
+    TargetFolder: '$(build.artifactstagingdirectory)/Terraform'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+
+```
+
+---
 
 <a name="release-application"></a>
 
