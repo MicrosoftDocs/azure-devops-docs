@@ -8,24 +8,22 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 --- 
 
 # Troubleshoot access and permission issues
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Because Azure DevOps security and permission structure is extensive, you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
+Azure DevOps security and permission structure is extensive, so you may find yourself needing to investigate why you or a project member doesn’t have the access to a project, service, or feature that they expect to have. Find step-by-step guidance to understand and address problems a project member may be having in connecting to a project or accessing an Azure DevOps service or feature. 
 
-Before using this guide, we recommend that you review the following articles: 
+Before using this guide, we recommend that you're familiar with the following content: 
 - [Get started with permissions, access, and security groups](about-permissions.md)
 - [Default permissions and access quick reference.](permissions-access.md) 
 - [Quick reference index to Azure DevOps security](quick-reference-index-security.md)  
 
 > [!TIP]
-> When you're creating an Azure DevOps security group, label it in a way that is easy to discern if it is created to limit access.
-
-## Common access and permission issues
+> When you're creating an Azure DevOps security group, label it in a way that is easy to discern if it's created to limit access.
 
 Permissions get set at one of the following levels:
 - object level
@@ -34,22 +32,24 @@ Permissions get set at one of the following levels:
 - security role
 - team administrator role
 
-To trace a permission from the web portal, open the permission or security page for the corresponding level. To learn how, see [Change individual permissions](change-individual-permissions.md).
+## Common access and permission issues
 
 See the following most common reasons a project member can’t access a project, service, or feature: 
 
-- Their access level doesn’t support access to the service or feature. To discover if this is the cause, you want to determine the users access level and subscription status.   
+- Their access level doesn’t support access to the service or feature. To discover if this is the cause, you want to [determine the user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).   
 - Their membership within a security group doesn’t support access to a feature or they have been explicitly denied permission to a feature. To discover if this is the cause, [trace a permission](#trace-a-permission). 
 - The user has been recently granted permission, however a refresh is required for their client to recognize the changes. Have them perform a **Refresh/re-evaluate permissions**.  
-- The user is trying to exercise a feature granted only to a team administrator for a specific team however they haven’t been granted that role. To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md) .
-- The user hasn’t enabled a preview feature. To troubleshoot, have them open the Preview features and determine the on/off status for the specific feature. See [Manage preview features](../../project/navigation/preview-features.md).
-- Project member has been added to a limited scope security group, such as the Project-Scoped Users group. To discover if this is a cause, look up the user’s permission memberships.  
+- The user's trying to exercise a feature granted only to a team administrator for a specific team, however they haven’t been granted that role. To add them to the role, see [Add, remove team administrator](../settings/add-team-administrator.md) .
+- The user hasn’t enabled a preview feature. To troubleshoot, have the user open the Preview features and determine the on/off status for the specific feature. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
+- Project member has been added to a limited scope security group, such as the Project-Scoped Users group. To discover if this is a cause, [look up the user’s security group memberships](#membership-in-a-security-group-with-lesser-permissions).  
  
-Less common reasons for limited access occur when one of the following events has occurred: 
+### Less common access and permission issues
 
-- A project admin has disabled a service. In this case, no one has access to the disabled service.  To determine if a service has been disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).
-- A Project Collection Administrator has disabled a preview feature, which disables it for all project members in the organization. See [Manage preview features](../../project/navigation/preview-features.md).
-- Group rules governing the user’s access level or project membership  can restrict access. To troubleshoot, see Membership in a group that has less access or permissions.
+Less common reasons for limited access are when one of the following events has occurred:
+
+- A project administrator disabled a service. In this case, no one has access to the disabled service.  To determine whether a service is disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).
+- A Project Collection Administrator disabled a preview feature, which disables it for all project members in the organization. For more information, see [Manage preview features](../../project/navigation/preview-features.md).
+- Group rules governing the user’s access level or project membership are restricting access. To troubleshoot, see [Membership in a security group that has less access or permissions](#membership-in-a-security-group-with-lesser-permissions).
 - Custom rules have been defined to a work item type’s workflow. To investigate, see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations). 
 
 ## Determine a user's access level and subscription status
@@ -60,23 +60,24 @@ You can assign users or groups of users to one of the following access levels:
 - Basic + Test Plans
 - Visual Studio subscription
 
-For more information about access level restriction, see [Supported access levels](access-levels.md#supported-access-levels) in Azure DevOps.
+For more information about access level restriction in Azure DevOps, see [Supported access levels](access-levels.md#supported-access-levels).
 
-To use Azure DevOps features, users must be added to a security group with the appropriate permissions. They also need access to the web portal. Limitations to select features are based on the access level and security group to which a user is assigned.
+To use Azure DevOps features, users must be added to a security group with the appropriate permissions. Users also need access to the web portal. Limitations to select features get based on the access level and security group to which a user is assigned.
 
-A user can lose access for the following reasons:
+Users can lose access for the following reasons:
 
-- The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
+- The user's Visual Studio subscription has expired. Meanwhile, this user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 - The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 - The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md).
 
 Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
-For more information about permissions, see [Permissions and groups](permissions.md), and the [Permissions lookup guide](permissions-lookup-guide.md).
+For more information about permissions, see [Permissions and groups](permissions.md) and the [Permissions lookup guide](permissions-lookup-guide.md).
 
 ## Trace a permission
 
-Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions.
+Use permission tracing to determine why a user's permissions aren't allowing them access to a specific feature or function. Learn how a user or an administrator can investigate the inheritance of permissions. To trace a permission from the web portal, open the permission or security page for the corresponding level. For more information, see [Change individual permissions](change-individual-permissions.md).
+
 
 ::: moniker range=" azure-devops"
 
@@ -181,9 +182,7 @@ For more information about work item type rules that apply toward restricting pe
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
 - [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
 
-For more information, see the following articles:
-
-- [Define area paths and assign to a team](../settings/set-area-paths.md)
+For more information, see [Define area paths and assign to a team](../settings/set-area-paths.md).
 
 ::: moniker-end
 
@@ -235,16 +234,16 @@ For more information, see [Use TFSSecurity to manage groups and permissions for 
 
 ::: moniker-end
 
-## Membership in a security group with lesser permissions
-
 ::: moniker range=" azure-devops"
+
+## Membership in a security group with lesser permissions
 
 ## Group rules with lesser permissions
 
 Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. 
 Users always get the best access level between all the group rules, including Visual Studio (VS) subscription. 
 
-See the following examples, showing how the subscriber detection factors into group rules.
+See the following examples, showing how subscriber detection factors into group rules.
 
 ### Example 1: Group rule gives me more access
 
@@ -258,47 +257,26 @@ I have a Visual Studio Test Pro subscription and I'm in a group rule that gives 
 
 Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule. I'm already paying for the Visual Studio Test Pro, so I don't want to pay again.
 
-::: moniker-end
-
 ## Work with GitHub
-
 
 ### Problem
 You're trying to deploy code in Azure DevOps with GitHub. The issue is that you can't bring the rest of your team into the organization and project, despite your adding them as organization and project members. They receive emails but when signing in they receive an error 401. 
 
 ### Solution
 
-Complete the following steps.
+You're likely signed into Azure DevOps with a different identity. Complete the following steps.
 
-1.Close all browsers, including browsers that aren't running Azure DevOps.
+1. Close all browsers, including browsers that aren't running Azure DevOps.
 
-2.Open a private or incognito browsing session.
+2. Open a private or incognito browsing session.
 
-3.Go to this URL: https://aka.ms/vssignout.
+3. Go to the following URL: https://aka.ms/vssignout.
 
-You see a message that says, "Sign out in progress." After you sign out, you're redirected to the Azure DevOps @dev.azure.microsoft.com webpage.
+ A message displays that says, "Sign out in progress." After you sign out, you're redirected to dev.azure.microsoft.com.
 
-4.Sign in to [Azure DevOps](https://dev.azure.com/{organizationName}) again. Select your other identity.
+4. Sign in to [Azure DevOps](https://dev.azure.com/{organizationName}) again. Select your other identity.
 
-
-<!--->
-## Other 
-Where are all the default permissions and groups? See security/permissions
-
-Add external users
-Turn on External guest access policy - link to add-external-user
-
-Dashboard
-Wiki
-Project-level
-feedback
-organization
-extension management
-
-see stackoverflow
-
-https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces.md manage permissions with command line tool
--->
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -318,6 +296,7 @@ https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-nam
 
 ## Related articles
 
+- [Manage permissions with the command line tool](manage-tokens-namespaces.md)
 - [Change individual or group permissions](change-individual-permissions.md)
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
