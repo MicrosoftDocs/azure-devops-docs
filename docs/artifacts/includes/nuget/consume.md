@@ -32,7 +32,7 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 
 <a name="mac-os"></a>
 
-#### [MacOs](#tab/MacOs/)
+#### [macOS](#tab/macOS/)
 
 ### Set up package source
 
@@ -44,7 +44,7 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
 1. Select **OK**.
 
-    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: MacOs":::
+    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
 
 <a name="consume-packages"></a>
 
