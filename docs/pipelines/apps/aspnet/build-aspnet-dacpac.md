@@ -32,7 +32,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 <ol>
 
 
-<li><p>Open your project in your web browser &#x25BC;</p>
+<li><p>Open your project in your web browser</p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
 <img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
