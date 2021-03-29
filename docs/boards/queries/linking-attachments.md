@@ -134,7 +134,7 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
-:::image type="content" source="media/links-attachments/tree-query-te.png" alt-text="Screenshot of Query Editor, Tree Query, Team Explorer.":::
+:::image type="content" source="media/link-attachments/tree-query-te.png" alt-text="Screenshot of Query Editor, Tree Query, Team Explorer.":::
 
 * * *
 
@@ -207,7 +207,7 @@ The following example shows a dependent linked query that returns items with dep
 
 The following query finds work items in all projects that are linked to work items under the **Fabrikam** area path and project using Predecessor and Successor link types.
 
-:::image type="content" source="media/links-attachments/direct-links-query-web-portal.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal.":::
+:::image type="content" source="media/link-attachments/direct-links-query-web-portal.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal.":::
 
 **Why this works:**
 
@@ -254,7 +254,7 @@ If you typically organize your user stories under features, you can quickly find
 
 Or, you can find unparented backlog items using a **Work items and direct links** query. For example, the following query lists active user stories for the Azure DevOps team that don't have a Parent link. 
 
-:::image type="content" source="media/links-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal, unparented user stories.":::
+:::image type="content" source="media/link-attachments/unparented-work-items.png" alt-text="Screenshot of Query Editor, Work items and direct links, Web portal, unparented user stories.":::
   
 <a id="table-field"/>
 
