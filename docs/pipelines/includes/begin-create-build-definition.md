@@ -7,7 +7,7 @@ author: steved0x
 ms.date: 02/13/2020
 ---
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
+<li><p>Open your project in your web browser</p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
 <img src="/azure/devops/pipelines/media/browse-to-team-project.png" alt="Browse to project"/>
 
@@ -20,7 +20,7 @@ ms.date: 02/13/2020
 </div>
 </li>
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
+<li><p>Create a build pipeline (Pipelines tab &gt; Builds)</p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
 <img src="/azure/devops/pipelines/media/create-new-build-definition.png" alt="Build tab"/>
 <p></p>

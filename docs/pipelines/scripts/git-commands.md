@@ -64,7 +64,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 ::: moniker range="<= azure-devops-2019"
 
-Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
+Go to the Version Control control panel tab
 
 <div class="collapse" id="expando-version-control-permissions">
 

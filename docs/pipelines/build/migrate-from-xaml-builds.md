@@ -62,7 +62,7 @@ If you're building a standard .NET app, you're probably using one of the out-of-
 <ol>
 
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
+<li><p>Open your project in your web browser</p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
 <img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
@@ -75,7 +75,7 @@ If you're building a standard .NET app, you're probably using one of the out-of-
 </div>
 </li>
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
+<li><p>Create a build pipeline (Pipelines tab &gt; Builds)</p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
 <img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
 <p>
