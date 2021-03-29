@@ -1,7 +1,7 @@
 ---
 title: Define a work item query with the Query Editor
 titleSuffix: Azure Boards
-description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
+description: Create flat-list, tree, or direct links queries to list, triage, update, and chart work items  
 ms.custom: "boards-queries, contperf-fy21q3" 
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
@@ -9,14 +9,16 @@ monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03./29/2021
+ms.date: 03/29/2021
 ---
 
 # Define a query
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Work item queries are managed queries that you can define, save, and share with others. This is in contrast with semantic searches that list work items, but can't be saved or shared. Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
+Work item queries generate lists of work items based on the filter criteria you provide. You can then save and share these managed queries with others. In contrast, semantic searches list work items, but can't be saved or shared. 
+
+You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
 #### [Browser](#tab/browser/) 
 > [!div class="mx-imgBorder"]  
@@ -27,7 +29,6 @@ Work item queries are managed queries that you can define, save, and share with 
 > ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png)  
 
 ***
-
 
 > [!NOTE]  
 > To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
@@ -42,7 +43,6 @@ In this article you'll learn:
 > * How to group and ungroup query clauses 
 > * How to create a tree of work items or a direct-links query 
  
-
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
 ## Query filters
@@ -181,7 +181,6 @@ In addition to the query filters, you can [interactively apply filters to query 
    :::column-end:::
 :::row-end:::
 ---
- 
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
@@ -428,7 +427,7 @@ You specify **And** or **Or** to create logical expressions of your query clause
 
 You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
 
-Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
+You can group query clauses to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
 
 <a id="group-clauses" /> 
 
