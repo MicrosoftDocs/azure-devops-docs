@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 03./29/2021
 ---
 
 # Define a query
@@ -313,7 +313,15 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 ## Use a tree of work items to view hierarchies  
 
-Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
+
+Use the :::image type="icon" source="media/11.png" border="false"::: **Tree of Work Items** query to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
+
+> [!NOTE]    
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+
+Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
+
+#### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -335,8 +343,6 @@ Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested 
 
 ::: moniker-end  
 
-Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
-
 ::: moniker range=">= tfs-2017"  
 
 > [!div class="mx-imgBorder"]  
@@ -350,19 +356,25 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ::: moniker-end  
 
+#### [Visual Studio 2015](#tab/visual-studio/)
 
-> [!NOTE] 
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+:::image type="content" source="media/using-queries/tree-backlog-te.png" alt-text="Screenshot, Query Editor, Tree Query, Team Explorer. ":::
+
+* * * 
+ 
 
 <a id="directs-link-query" />
 
 ## Use direct links to view dependencies
 
-Use the direct links query (![Direct Links Query](media/16.png)) to track work items that depend on other tracked work, such as tasks, bugs, issues, or features. For example, you can view backlog items that depend on other items being implemented or a bug being fixed. 
-
-![Direct Links Query Results](media/17.png)
+Use the :::image type="icon" source="media/16.png" border="false"::: **Work items and Direct links** query to track work items that depend on other tracked work, such as tasks, bugs, issues, or features. For example, you can view backlog items that depend on other items being implemented or a bug being fixed. 
 
 Use the direct links query to track dependencies your team has that other teams work on, or manage commitments your team has made to other teams. Specify the filter criteria for both top and linked work items, and select the types of links used to filter the dependencies. 
+
+
+#### [Browser](#tab/browser/)
+
+![Direct Links Query Results](media/17.png)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -379,11 +391,30 @@ Use the direct links query to track dependencies your team has that other teams 
 
 Filter your first-tier list of work items by choosing one of these options:
 
-- **Only return work items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
+- **Only return items that have matching links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
+
+- **Return all top level items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
+
+- **Only return items that do not have matching links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- 
+
+#### [Visual Studio 2015](#tab/visual-studio/)
+
+:::image type="content" source="media/using-queries/direct-links-te.png" alt-text="Screenshot, Query Editor, Direct Links Query, Team Explorer.":::
+
+
+Filter your first-tier list of work items by choosing one of these options:
+
 
 - **Return all top level work items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
-- **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- **Only return items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
+
+- **Only return items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- 
+* * * 
+
+
 
 To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
