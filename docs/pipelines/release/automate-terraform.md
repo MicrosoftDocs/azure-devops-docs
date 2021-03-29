@@ -14,32 +14,28 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-[Terraform](https://www.terraform.io/intro/index.html) is a tool for building, changing and versioning infrastructure safely and efficiently. Terraform can manage existing and popular cloud service providers as well as custom in-house solutions.
+Terraform is an open-source infrastructure as code (IaC) tool to manage cloud services. Terraform can manage existing and popular cloud service providers as well as custom in-house solutions. Using Terraform you can define and provision your infrastructure components in config files using an easy to learn declarative language: HashiCorp Configuration Language (HCL).
 
-Configuration files describe to **Terraform** the components needed to run a single application or your entire datacenter. Terraform generates an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure. As the configuration changes, Terraform is able to determine what changed and create incremental execution plans which can be applied.
-
-In this tutorial, you learn about:
+In this tutorial, you will learn about:
 
 > [!div class="checklist"]
 > * The structure of a Terraform file
 > * Building an application using an Azure CI pipeline
-> * Deploying resources using Terraform in an Azure CD pipeline
+> * Deploying resources using Terraform and Azure CD pipeline
 
 ## Prerequisites
 
 1. A Microsoft Azure account.
 1. An Azure DevOps account.
-1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77382&Name=Terraform) to provision the tutorial project on your Azure DevOps organization. This URL automatically selects the Terraform template in the demo generator.
+1. Set up the demo project using the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77382&Name=Terraform).
 
 <a name="examine-terraform-file"></a>
 
 ## Examine the Terraform file in your source code
 
-This tutorial uses the PartsUnlimited project, which is a sample eCommerce website developed using .NET Core. You will examine the Terraform file that defines the Azure resources required to deploy PartsUnlimited website.
+This tutorial uses the PartsUnlimited project, a sample eCommerce website developed using .NET Core. The Terraform config file defines the Azure resources required to deploy our web application.
 
-1. Navigate to the project created earlier using the Azure DevOps Demo Generator.
-
-1. In the **Repos** tab of **Azure Pipelines**, select the **terraform** branch. 
+1. Select **Repos** then select the **terraform** branch. 
 
     ![Selecting the terraform branch](media/automate-terraform/select-branch.png)
 
@@ -423,24 +419,22 @@ Now that the application has been built, it's time to release it. However, no de
     ```
 ---
 
-## Summary
-
-In this tutorial, you learned how to automate repeatable deployments with Terraform on Azure using Azure Pipelines.
-
 ## Clean up resources
 
-This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
+In this tutorial, we created a Azure DevOps project and few resources in Azure. If you're not going to continue to use these resources, you can follow these steps to delete them:
 
 1. [Delete the Azure DevOps project](../../organizations/projects/delete-project.md) created by the Azure DevOps Demo Generator.
 
-1. All Azure resources created during this tutorial were assigned to either the **PULTerraform** or **terraformrg** resource groups. Deleting those two groups will delete the resources they contain. This can be done via the CLI or portal. The following example shows you how to delete the resource groups using Azure CLI.
+1. All Azure resources created during this tutorial were assigned to either the **PULTerraform** or **terraformrg** resource groups. Deleting those two groups will delete the resources they contain.
 
-    ```azurecli-interactive
+    ```Command
     az group delete --name PULTerraform
     az group delete --name terraformrg
 	```
 
-## Next steps
+## Related articles
 
 > [!div class="nextstepaction"]
 > [Terraform with Azure](/azure/developer/terraform/overview)
+> [Configure Terraform using Azure Cloud Shell](/azure/developer/terraform/get-started-cloud-shell)
+> [Configure Terraform using Azure PowerShell](/azure/developer/terraform/get-started-powershell)
