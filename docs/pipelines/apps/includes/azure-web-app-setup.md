@@ -26,7 +26,7 @@ If you don&#39;t yet have an Azure account, you can get started for free through
 <p></p>
 </div>
 
-<p><a data-toggle="collapse" href="#try-azure">Can I just use a temporary App Service instead?</p>
+<p>Can I just use a temporary App Service instead?</p>
 <div class="collapse" id="try-azure">
  Yes, just visit <a href="https://tryappservice.azure.com/" data-raw-source="[Create your Azure App Service App](https://tryappservice.azure.com/)">Create your Azure App Service App</a> to set up a Web App for temporary use (1 hour). On that page, do the following:
 
