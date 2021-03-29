@@ -1,7 +1,7 @@
 ---
 title: Query by link or attachment count   
 titleSuffix: Azure Boards
-description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Query work items based on link type, link count, link restrictions, and attachment file count
 ms.technology: devops-agile
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
@@ -16,7 +16,7 @@ ms.date: 03/29/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
+You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following fields:
 
 ::: moniker range="azure-devops"  
 - Attachment File Count
@@ -52,10 +52,10 @@ For descriptions of each of these fields, see the [table provided later in this 
 ## Supported operators and macros 
 
 Query clauses that specify an integer field can use the operators listed below.
-- = , <> , > , < , >= , <= , 
-- =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], 
-- In, Not In, 
-- Was Ever
+`= , <> , > , < , >= , <= ,`  
+`=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],`   
+`In, Not In,`   
+`Was Ever`  
 
 ## Link or attachment count queries
 
@@ -76,7 +76,7 @@ You can filter for work items by the link type, link count, or attachment count.
      Items with attachments
    :::column-end:::
    :::column span="":::
-      `Attached File Count &gt;= 1`
+      `Attached File Count >= 1`
    :::column-end:::
 :::row-end:::
 ---
@@ -85,7 +85,7 @@ You can filter for work items by the link type, link count, or attachment count.
      Items with two or more hyperlinks
    :::column-end:::
    :::column span="":::
-      `Hyperlink Count &gt;= 2`
+      `Hyperlink Count >= 2`
    :::column-end:::
 :::row-end:::
 ---
@@ -94,7 +94,7 @@ You can filter for work items by the link type, link count, or attachment count.
      Items containing external links, links to objects other than work items
    :::column-end:::
    :::column span="":::
-      `External Link Count &gt;=1`
+      `External Link Count >= 1`
    :::column-end:::
 :::row-end:::
 ---
@@ -103,9 +103,9 @@ You can filter for work items by the link type, link count, or attachment count.
      Items that contain between three and seven related links
    :::column-end:::
    :::column span="":::
-      `Related Link Count &gt;=3`
+      `Related Link Count >= 3`
       `And`
-      `Related Link Count &lt;=7`
+      `Related Link Count <= 7`
    :::column-end:::
 :::row-end:::
 ---
@@ -115,7 +115,7 @@ You can filter for work items by the link type, link count, or attachment count.
      Items that contain remote links
    :::column-end:::
    :::column span="":::
-      `Remote Link Count &gt; 0`
+      `Remote Link Count > 0`
    :::column-end:::
 :::row-end:::
 ---
@@ -130,7 +130,7 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 #### [Browser](#tab/browser/)
 
-![Screenshot of Query Editor, Tree Query, web portal.](media/query-link-attach-all-items-tree-query.png)  
+:::image type="content" source="media/query-link-attach-all-items-tree-query.png" alt-text="Screenshot of Query Editor, Tree Query, web portal.":::
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
@@ -139,10 +139,10 @@ Add a query and select **Tree of work items** to begin your query. You should se
 * * *
 
 
-> [!NOTE]    
+> [!NOTE]
 > You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. However, you can create a Direct links query that lists test-related work items. Also, you can, [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
 
-From there, you can add additional query clauses or change the Filter options for linked work items. 
+From there, you can add query clauses or change the filter options for linked work items. 
  
 ---
 :::row:::
@@ -159,7 +159,7 @@ From there, you can add additional query clauses or change the Filter options fo
      View only child items of work item 645
    :::column-end:::
    :::column span="":::
-      **Add to Filters for top level work items:**
+      **Add to Filters for top-level work items:**  
       `ID  =  645`
    :::column-end:::
 :::row-end:::
@@ -169,7 +169,7 @@ From there, you can add additional query clauses or change the Filter options fo
      Tasks or bugs
    :::column-end:::
    :::column span="":::
-      **Add to Filters for linked work items:**
+      **Add to Filters for linked work items:**  
       `Work Item Type  In  Task,Bug`
    :::column-end:::
 :::row-end:::
@@ -179,8 +179,8 @@ From there, you can add additional query clauses or change the Filter options fo
      Items assigned to my team (Web)
    :::column-end:::
    :::column span="":::
-      **Add to both top and bottom filters:**
-      `Assigned to  In Group  [Fabrikam Fiber]\Web`
+      **Add to both top and bottom filters:**  
+      `Assigned to  In Group  [Fabrikam Fiber]\Web`  
    :::column-end:::
 :::row-end:::
 ---
@@ -189,8 +189,8 @@ From there, you can add additional query clauses or change the Filter options fo
      Parent items of tasks assigned to me
    :::column-end:::
    :::column span="":::
-      Change Filter options to **Match linked work items first**
-      **Add to Filters for linked work items:**
+      Change Filter options to **Match linked work items first**  
+      **Add to Filters for linked work items:**  
       `Assigned To = @Me`
    :::column-end:::
 :::row-end:::
@@ -220,7 +220,7 @@ The following query finds work items in all projects that are linked to work ite
 
 #### [Visual Studio 2015](#tab/visual-studio/)
 
-Use this type of query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\Phone Customers** are returned.
+Use this type of query to list all dependent work items that link to active Product Backlog Items or Bugs that haven't been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\Phone Customers** are returned.
 
 ![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)   
 
@@ -247,7 +247,7 @@ The following image shows the query results that are returned.
 
 ## List orphan user stories 
 
-If you typically organize your user stories under features, you can quickly find those user stories that are orphan by opening the product backlog, enable Parents On view option,  and scroll down to the section that lists Unparented Stories (Agile) or Unparented Backlog items (Scrum).
+If you typically organize your user stories under features, you can quickly find  user stories that are orphan by opening the product backlog, enable **Parents On** view option, and scroll down to the section that lists **Unparented Stories** (Agile) or **Unparented Backlog items** (Scrum).
 
 > [!div class="mx-imgBorder"]  
 > ![List orphan stories or backlog items](media/link-attachments/list-orphan-stories.png) 
@@ -260,7 +260,7 @@ Or, you can find unparented backlog items using a **Work items and direct links*
 
 ## Link and attachment count and comment fields 
 
-The following table describes fields associated with links and attachments. Most of these fields do not appear on the work item forms but are tracked for all work item types. 
+The following table describes fields associated with links and attachments. Most of these fields don't appear within the work item form, but are tracked for all work item types. 
 
 <table><thead>
 <tr>
