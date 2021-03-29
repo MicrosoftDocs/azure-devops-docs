@@ -198,14 +198,13 @@ Now that the application has been built, it's time to release it. However, no de
 
     ```azurecli
 	# this will create Azure resource group
-	call az group create --location westus --name $(terraformstoragerg)
+	az group create --location westus --name $(terraformstoragerg)
 	
-	call az storage account create --name $(terraformstorageaccount) --resource-group $(terraformstoragerg) --location westus --sku Standard_LRS
+	az storage account create --name $(terraformstorageaccount) --resource-group $(terraformstoragerg) --location westus --sku Standard_LRS
 	
-	call az storage container create --name terraform --account-name $(terraformstorageaccount)
+	az storage container create --name terraform --account-name $(terraformstorageaccount)
 	
-	call az storage account keys list -g $(terraformstoragerg) -n $(terraformstorageaccount)
-
+	az storage account keys list -g $(terraformstoragerg) -n $(terraformstorageaccount)
     ```
 
     By default, Terraform stores state locally in a file named **terraform.tfstate**. When working with Terraform in a team, use of a local file makes Terraform implementation complicated. With remote state, Terraform writes the state data to a remote data store. Here the pipeline uses an Azure CLI task to create an Azure storage account and storage container to store the Terraform state. For more information on Terraform remote state, see Terraform's docs for working with [Remote State](https://www.terraform.io/docs/state/remote.html).
@@ -332,6 +331,95 @@ Now that the application has been built, it's time to release it. However, no de
          
          Write-Host "##vso[task.setvariable variable=storagekey]$key"
         azurePowerShellVersion: LatestVersion
+    ```
+
+- Replace tokens in terraform file
+
+    ```YAML
+    steps:
+    - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+      displayName: 'Replace tokens in terraform file'
+      inputs:
+        targetFiles: '**/*.tf'
+        escapeType: none
+        tokenPrefix: '__'
+        tokenSuffix: '__'
+    ``` 
+
+- Install, init, plan, and apply auto approve
+
+    ```YAML
+    # Install
+    steps:
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller@0
+      displayName: 'Install Terraform 0.12.3'
+    
+    # Init
+    variables:
+      terraformstoragerg: 'terraformrg'
+      terraformstorageaccount: 'terraformstorage8ff03276'
+    
+    steps:
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
+      displayName: 'Terraform : init'
+      inputs:
+        workingDirectory: '$(System.DefaultWorkingDirectory)/_Terraform-CI/drop/Terraform'
+        backendServiceArm: '<yourAzureSubscription>'
+        backendAzureRmResourceGroupName: '$(terraformstoragerg)'
+        backendAzureRmStorageAccountName: '$(terraformstorageaccount) '
+        backendAzureRmContainerName: terraform
+        backendAzureRmKey: terraform.tfstate
+    
+    # Plan
+    variables:
+      terraformstoragerg: 'terraformrg'
+      terraformstorageaccount: 'terraformstorage8ff03276'
+      storagekey: 'PipelineWillGetThisValueRuntime'
+    
+    steps:
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
+      displayName: 'Terraform : plan'
+      inputs:
+        command: plan
+        workingDirectory: '$(System.DefaultWorkingDirectory)/_Terraform-CI/drop/Terraform'
+        environmentServiceNameAzureRM: '<yourAzureSubscription>'
+        backendAzureRmResourceGroupName: '$(terraformstoragerg)'
+        backendAzureRmStorageAccountName: '$(terraformstorageaccount) '
+        backendAzureRmContainerName: terraform
+        backendAzureRmKey: '$(storagekey)'
+    
+    # apply auto approve
+    variables:
+      terraformstoragerg: 'terraformrg'
+      terraformstorageaccount: 'terraformstorage8ff03276'
+      storagekey: 'PipelineWillGetThisValueRuntime'
+    
+    steps:
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-release-task.TerraformTaskV1@0
+      displayName: 'Terraform : apply -auto-approve'
+      inputs:
+        command: apply
+        workingDirectory: '$(System.DefaultWorkingDirectory)/_Terraform-CI/drop/Terraform'
+        commandOptions: '-auto-approve'
+        environmentServiceNameAzureRM: '<yourAzureSubscription>'
+        backendAzureRmResourceGroupName: '$(terraformstoragerg)'
+        backendAzureRmStorageAccountName: '$(terraformstorageaccount) '
+        backendAzureRmContainerName: terraform
+        backendAzureRmKey: '$(storagekey)'
+    ```
+
+- Azure App Service deploy
+
+    ```YAML
+    variables:
+    appservicename: 'pulterraformweb8ff03276'
+    
+    steps:
+    - task: AzureRmWebAppDeployment@3
+      displayName: 'Azure App Service Deploy: $(appservicename)'
+      inputs:
+        azureSubscription: '<yourAzureSubscription>'
+        WebAppName: '$(appservicename)'
     ```
 ---
 
