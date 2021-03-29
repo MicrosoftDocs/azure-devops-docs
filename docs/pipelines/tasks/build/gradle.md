@@ -139,12 +139,27 @@ Use this task to build using a Gradle wrapper script.
    </tr>
    <tr>
       <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
-      <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts<br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code>
+      <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. In Gradle 6.0 this plugin was removed. Use spotbugs plugin instead. <a href="https://docs.gradle.org/current/userguide/upgrading_version_5.html#the_findbugs_plugin_has_been_removed">More info<a/>. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code>
       </td>
    </tr>
       <tr>
       <td><code>pmdAnalysisEnabled</code><br/>Run PMD</td>
       <td>(Optional) Use the PMD Java static analysis tool to look for bugs in the code. Results are uploaded as build artifacts <br/>Default value: false <br/>Argument aliases: <code>pmdRunAnalysis</code>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotBugsAnalysisEnabled</code><br/>Run Spotbugs</td>
+      <td>(Required) Enable this option to run spotBugs. This plugin works with Gradle v5.6 or later. Results are uploaded as build artifacts. <a href="https://spotbugs.readthedocs.io/en/stable/gradle.html#use-spotbugs-gradle-plugin">More info</a>. Please make sure that you are using Gradle 5.6 or later. If you are using an earlier version of Gradle, the plugin may work in an unexpected way or may not work at all. <br/>Default value: false <br/>Argument aliases:         <code>spotBugsAnalysis</code>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotBugsGradlePluginVersionChoice</code><br/>Spotbugs plugin for Gradle version</td>
+      <td>(Required) The Spotbugs Gradle plugin version to use. You can declare it in your Gradle configuration file, or specify a version here. <br/>Default value: specify <br/>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotbugsGradlePluginVersion</code><br/>Spotbugs for Gradle plugin version</td>
+      <td>(Required) <a href="https://plugins.gradle.org/plugin/com.github.spotbugs">Refer</a> for all available versions.<br/>Default value: 4.7.0 <br/>Argument aliases:         <code>spotbugsGradlePluginVersion</code>
       </td>
    </tr>
    <tr>
