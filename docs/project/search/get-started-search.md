@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/23/2021
+ms.date: 03/30/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -33,7 +33,7 @@ With semantic search, you can quickly find code files and work items based on a 
 
 A keyword search is the most basic type of search to get started. Enter a word enclosed with double quotes, and then select _Enter_ or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search. You can also search for a phrase by enclosing your search terms in double-quotes.
 
-By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-your-semantic-search-results).
+By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-your-search-results).
 
 ::: moniker range=">= azure-devops-2019"
 
