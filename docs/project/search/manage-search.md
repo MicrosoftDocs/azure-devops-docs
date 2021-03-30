@@ -6,15 +6,14 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 03/24/2021
+ms.date: 03/30/2021
 monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
 # Manage Search indexing
 
 You can manage your search extension and indexing status, which include the following actions:
-[Check indexing for TFS RTM](#check-indexing-status-for-tfs-2017-rtm)
-[Check indexing for TFS 2017 Update 1 and later](#check-indexing-status-for-tfs-2017-update-1-and-later)
+[Check indexing status](#check-indexing-status)
 [Pause indexing](#pause-indexing)
 [Resume indexing](#resume-indexing)
 [Reindex a repository or collection](#reindex-a-repository-or-collection)
@@ -27,7 +26,7 @@ To manage Search and indexing, you must be a [Project Collection Administrator (
 
 ## Manage indexing
 
-Search gets managed by running PowerShell and SQL scripts. All of these scripts are available to download from the **[Code-Search GitHub repository](https://github.com/Microsoft/Code-Search)**. You can download all of the scripts into a local folder on the server, which runs the database for Azure DevOps Server using the **Download ZIP** option. 
+Search gets managed by running PowerShell and SQL scripts. All of these scripts are available to download from the **[Code-Search GitHub repository](https://github.com/Microsoft/Code-Search)**. You can download all scripts into a local folder on the server. This server runs the database for Azure DevOps Server using the **Download ZIP** option. 
 
 The PowerShell scripts require the SQL script files, so ensure the **SqlScripts** folder and its contents are present, along with the PowerShell scripts.
 
