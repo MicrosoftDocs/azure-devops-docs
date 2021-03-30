@@ -95,15 +95,15 @@ This DevOps project includes two separate pipelines to build and deploy our web 
 
 1. Select **Edit** to review the tasks included in the pipeline. The .NET Core tasks help restore dependencies, build, test, and publish the build output as a zip file to be deployed to an app service.
 
-    ::image type="content" source="media/automate-terraform/ci-pipeline.png" alt-text="Pipeline tasks":::
+   :::image type="content" source="media/automate-terraform/ci-pipeline.png" alt-text="Pipeline tasks":::
 
 1. The **Copy files** task copies the Terraform folder to the Artifact staging directory.
 
-    ::image type="content" source="media/automate-terraform/publish-terraform.png" alt-text="Copy Terraform folder":::
+   :::image type="content" source="media/automate-terraform/publish-terraform.png" alt-text="Copy Terraform folder":::
 
 1. Select **Queue** then **Run** to queue and run your pipeline.
 
-    ::image type="content" source="media/automate-terraform/track-build.png" alt-text="Queue and run pipeline":::
+   :::image type="content" source="media/automate-terraform/track-build.png" alt-text="Queue and run pipeline":::
 
 ### [YAML](#tab/YAML/)
 
@@ -166,23 +166,23 @@ Now that we built our application, it's time to deploy it. However, no deploymen
 
 1. Navigate to **Releases** and select the **Terraform-CD** pipeline. Select **Edit** to review or edit the pipeline.
 
-    ::image type="content" source="media/automate-terraform/select-cd-pipeline.png" alt-text="Select release pipeline":::
+   :::image type="content" source="media/automate-terraform/select-cd-pipeline.png" alt-text="Select release pipeline":::
 
 1. The release pipeline has been configured to consume the build artifact. Select the **Dev** stage to review or edit its tasks.
 
-    ::image type="content" source="media/automate-terraform/cd-pipeline.png" alt-text="Artifacts and stages":::
+   :::image type="content" source="media/automate-terraform/cd-pipeline.png" alt-text="Artifacts and stages":::
 
 1. There are eight tasks defined in the release stage. Most of them require some configuration to work with your Azure account. Select each task and enter your Azure subscription in the appropriate field.
 
-    ::image type="content" source="media/automate-terraform/cd-pipeline-tasks.png" alt-text="Dev stage tasks":::
+   :::image type="content" source="media/automate-terraform/cd-pipeline-tasks.png" alt-text="Dev stage tasks":::
 
 1. Select **Agent job** and set up the **Agent pool** and **Agent specification**.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-agent.png" alt-text="Set up agent pool and specification":::
+   :::image type="content" source="media/automate-terraform/configure-cd-agent.png" alt-text="Set up agent pool and specification":::
 
 1. Select the **Azure CLI** task and add your **Azure subscription**.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-azure-cli.png" alt-text="Set up the Azure CLI task":::
+   :::image type="content" source="media/automate-terraform/configure-cd-azure-cli.png" alt-text="Set up the Azure CLI task":::
     
     This task executes a series of Azure CLI commands to set up some basic infrastructure required to use Terraform.
 
@@ -201,7 +201,7 @@ Now that we built our application, it's time to deploy it. However, no deploymen
 
 1. Select the **Azure PowerShell** task and set up the **Azure Resource Manager** and **Azure subscription** fields. 
 
-    ::image type="content" source="media/automate-terraform/configure-cd-powershell.png" alt-text="Configure Azure Powershell task":::
+    :::image type="content" source="media/automate-terraform/configure-cd-powershell.png" alt-text="Configure Azure PowerShell task":::
     
     This task uses a PowerShell script to retrieve the storage account key needed for the Terraform provisioning.
 
@@ -215,60 +215,60 @@ Now that we built our application, it's time to deploy it. However, no deploymen
 
 1. Select the **Replace tokens in terraform file** task. If you recall the  file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task assigns values during run-time to some of the variables in the **webapp.tf** config file including those from the pipeline's **Variables** section.
 
-    ::image type="content" source="media/automate-terraform/cd-variables.png" alt-text="Replace tokens task":::
+   :::image type="content" source="media/automate-terraform/cd-variables.png" alt-text="Replace tokens task":::
 
 1. The **Install Terraform** task installs and configures the specified version of Terraform on the agent for the remaining tasks.
 
     When running Terraform in automation, the focus is usually on the core plan/apply cycle. The next three tasks follow these stages.
 
-    ::image type="content" source="media/automate-terraform/terraform-workflow.png" alt-text="Terraform workflow":::
+   :::image type="content" source="media/automate-terraform/terraform-workflow.png" alt-text="Terraform workflow":::
 
 1. The **Terraform init** task runs the **init** command to look through all of the *.tf files in the current working directory and automatically downloads any of the required providers. In this example, it will download Azure provider as it is going to deploy Azure resources.
 
     Set up the **Azure subscription**, **container**, and **Key** fields.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-terraform-init.png" alt-text="Set up Terraform init task":::
+   :::image type="content" source="media/automate-terraform/configure-cd-terraform-init.png" alt-text="Set up Terraform init task":::
 
 1. The **Terraform plan** task runs the **plan** command to create an execution plan by determining what actions are necessary to achieve the desired state specified in the configuration files. This is just a dry run and shows which actions will be performed.
 
     Enter your **Azure subscription** in the appropriate field.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-terraform-plan.png" alt-text="Set up Terraform plan task":::
+   :::image type="content" source="media/automate-terraform/configure-cd-terraform-plan.png" alt-text="Set up Terraform plan task":::
 
 1. The **Terraform apply** task runs the **apply** command to deploy the resources. By default, it will also prompt for confirmation before applying. Since this is an automated deployment, the **auto-approve** argument is included.
 
     Enter your **Azure subscription** in the appropriate field.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-terraform-apply.png" alt-text="Set up Terraform apply task":::
+   :::image type="content" source="media/automate-terraform/configure-cd-terraform-apply.png" alt-text="Set up Terraform apply task":::
 
 1. Select the **Azure App Service Deploy** task and enter your **Azure subscription**. By the time this task runs, Terraform has already ensured that the deployment environment has been configured to meet the app's requirements. It will use the $(appservicename) from the **Variables** section.
 
-    ::image type="content" source="media/automate-terraform/configure-cd-app-service-deploy.png" alt-text="Set up the app service deployment task":::
+   :::image type="content" source="media/automate-terraform/configure-cd-app-service-deploy.png" alt-text="Set up the app service deployment task":::
 
 1. Select **Save** then confirm.
 
 1. Select **Create release** and specify the recent build's Artifact then select **Create**.
 
-    ::image type="content" source="media/automate-terraform/cd-create-release.png" alt-text="Create a release":::
+   :::image type="content" source="media/automate-terraform/cd-create-release.png" alt-text="Create a release":::
 
 1. Select the new release to view the pipeline's execution.
 
-    ::image type="content" source="media/automate-terraform/view-release.png" alt-text="View release pipeline execution":::
+   :::image type="content" source="media/automate-terraform/view-release.png" alt-text="View release pipeline execution":::
 
 1. Once the release is completed, select the **Azure App Service Deploy** task.
 
-    ::image type="content" source="media/automate-terraform/completed-pipeline.png" alt-text="Select the Azure App Service Deploy task":::
+   :::image type="content" source="media/automate-terraform/completed-pipeline.png" alt-text="Select the Azure App Service Deploy task":::
 
 1. Copy the name of the app service from the task title.
 
-    ::image type="content" source="media/automate-terraform/app-service-name.png" alt-text="Copy the name of the app service":::
+   :::image type="content" source="media/automate-terraform/app-service-name.png" alt-text="Copy the name of the app service":::
 
 1. Open a new browser tab and navigate to your deployed website. The domain format is **[app service name].azurewebsites.net**:
  
     ```URL
     https://pulterraformweb99ac17bf.azurewebsites.net.
     ```
-    ::image type="content" source="media/automate-terraform/deployed-app.png" alt-text="Navigate to the deployed website":::
+   :::image type="content" source="media/automate-terraform/deployed-app.png" alt-text="Navigate to the deployed website":::
 
 ### [YAML](#tab/YAML/)
 
