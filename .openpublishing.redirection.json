@@ -17688,6 +17688,11 @@
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-permissions.md",
+      "redirect_url": "/azure/devops/organizations/accounts/faq-permissions",
+      "redirect_document_id": false
     }
   ]
 }
