@@ -150,9 +150,9 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Run a query, open the context menu for a query  |✔️ |✔️ |
 > |Expand or collapse container folders or query folders |✔️ |✔️ |
 > |Filter the list of queries |✔️ |✔️ |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
-> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
+> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 ::: moniker-end	
 
@@ -160,7 +160,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 
 ## Filter the list of queries
 
-Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
+Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. To learn more about filtering, see [Filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).   
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
@@ -207,6 +207,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ## Related articles
 
 - [Manage queries and query folders](organize-queries.md)
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Change column options](../backlogs/set-column-options.md)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md) 

@@ -135,7 +135,7 @@ On Linux or macOS, in Bash, you can enter:
  
 ```bash
 MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
-B64_PAT=$(printf -n":$MY_PAT" | base64)
+B64_PAT=$(printf "%s"":$MY_PAT" | base64)
 git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
@@ -241,7 +241,7 @@ When your code is working, it's a good time to switch from basic auth to <a href
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](~/integrate/get-started/authentication/iis-basic-auth.md).
 
-For more examples of how to use PATs, see [Git credential managers](~/repos/git/set-up-credential-managers.md), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume.md#mac-os), [[Reporting clients](~/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](~/cli/index.md).
+For more examples of how to use PATs, see [Git credential managers](~/repos/git/set-up-credential-managers.md), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume.md#mac-os), [[Reporting clients](~/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](~/cli/index.md).
 
 ::: moniker range="azure-devops"
 

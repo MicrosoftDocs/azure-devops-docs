@@ -24,7 +24,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
-## Using the Cache task
+## Use Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
@@ -33,7 +33,7 @@ When a cache step is encountered during a run, the task will restore the cache b
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
 
-### Configuring the task
+### Configure Cache task
 
 The `Cache` task has two required inputs: `key` and `path`. 
 
@@ -150,7 +150,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 |--------|------|-------|
 | Source branch | Yes | No |
 | Target branch | Yes | No |
-| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
 | main branch | Yes | No |
 
 ### Pull request fork runs
@@ -158,7 +158,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Branch | Read | Write |
 |--------|------|-------|
 | Target branch | Yes | No |
-| Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Intermediate branch (such as `refs/pull/1/merge`) | Yes | Yes |
 | main branch | Yes | No |
 
 > [!TIP]
@@ -208,9 +208,9 @@ steps:
 - script: bundle install
 ```
 
-## ccache (C/C++)
+## Ccache (C/C++)
 
-[ccache](https://ccache.dev/) is a compiler cache for C/C++. To use ccache in your pipeline make sure `ccache` is installed, and optionally added to your `PATH` (see [ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
+[Ccache](https://ccache.dev/) is a compiler cache for C/C++. To use Ccache in your pipeline make sure `Ccache` is installed, and optionally added to your `PATH` (see [Ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
 
 **Example**:
 
@@ -234,8 +234,56 @@ steps:
 > [!NOTE]
 > In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
 
-See [ccache configuration settings](
+See [Ccache configuration settings](
 https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
+
+## Docker images
+
+Caching Docker images dramatically reduces the time it takes to run your pipeline.
+
+```yaml
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+```
+
+## Golang
+
+For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
+
+**Example**:
+
+```yaml
+variables:
+  GO_CACHE_DIR: $(Pipeline.Workspace)/.cache/go-build/
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'go | "$(Agent.OS)" | go.mod'
+    restoreKeys: | 
+      go | "$(Agent.OS)"
+    path: $(GO_CACHE_DIR)
+  displayName: Cache GO packages
+
+```
 
 ## Gradle
 
@@ -306,7 +354,7 @@ If you use `PackageReferences` to manage NuGet dependencies directly within your
 
 ```yaml
 variables:
-  NUGET_PACKAGES: $(UserProfile)/.nuget/packages
+  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 steps:
 - task: Cache@2
@@ -420,6 +468,36 @@ steps:
 - script: pipenv install
 ```
 
+## Python/Anaconda
+
+Set up your pipeline caching with Anaconda environments 
+
+### Example
+
+```yaml
+variables:
+  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+
+# Add conda to system path
+steps:
+- script: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
+
+- task: Cache@2
+  displayName: Use cached Anaconda environment
+  inputs:
+    key: 'conda | "$(Agent.OS)" | environment.yml'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(CONDA_CACHE_DIR)
+    cacheHitVar: CONDA_CACHE_RESTORED
+
+- script: conda env create --quiet --file environment.yml
+  displayName: Create Anaconda environment
+  condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+```
+
 ## PHP/Composer
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
@@ -443,33 +521,6 @@ steps:
 - script: composer install
 ```
 
-## Docker images
-
-Caching docker images will dramatically reduce the time it takes to run your pipeline.
-
-```YAML
-pool:
-  vmImage: ubuntu-16.04
-
-steps:
-  - task: Cache@2
-    inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
-      path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
-  - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
-  - script: |
-      mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
-```
-
 ## Known issues and feedback
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
@@ -480,7 +531,7 @@ If you experience problems enabling caching for your project, first check the li
 
 ### Can I clear a cache?
 
-Clearing a cache is currently not supported. However you can add a string literal (e.g. `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
+Clearing a cache is currently not supported. However you can add a string literal (such as `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
 
 ```yaml
 key: 'yarn | "$(Agent.OS)" | yarn.lock'
@@ -494,7 +545,7 @@ key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 
 ### When does a cache expire?
 
-A cache will expire after 7 days of no activity.
+A cache will expire after seven days of no activity.
 
 ### Is there a limit on the size of a cache?
 

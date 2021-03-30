@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Use pipeline decorators to inject steps automatically in a deployment job
 
-You can now add [pipeline decorators](/azure/devops/extend/develop/add-pipeline-decorator) to deployment jobs. You can have any custom step (e.g. vulnerability scanner) auto-injected to every [life cycle hook](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+You can now add [pipeline decorators](/azure/devops/extend/develop/add-pipeline-decorator) to deployment jobs. You can have any custom step (e.g. vulnerability scanner) auto-injected to every [life cycle hook](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#descriptions-of-life-cycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
 
 In addition, deployment jobs can be run as a [container job](/azure/devops/pipelines/process/container-phases) along with [services side-car](/azure/devops/pipelines/process/service-containers) if defined.
 
@@ -81,7 +81,7 @@ The following events are available now:
 
 ### Enhancements to evaluate artifacts checks policy in pipelines
 
-We've enhanced the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
+We've enhanced the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
 
 > [!div class="mx-imgBorder"]
 > ![Enhancement to evaluate artifacts checks policy in pipelines.](../../media/163_04.png)

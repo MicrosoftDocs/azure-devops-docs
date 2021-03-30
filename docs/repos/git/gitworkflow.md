@@ -41,11 +41,11 @@ These terms might sound familiar if you've used a version control system like Te
 ##  Git workflow
 
 ---
-1. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
+1. [Create a branch](./create-branch.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
 2. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
 3. [Push your branch](pushing.md) to the remote repository. 
-4. [Create a pull request](pullrequest.md) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
-5. [Complete your pull request](pullrequest.md) and resolve any merge conflicts from changes other people made after you created your branch.   
+4. [Create a pull request](pull-requests.md#create-a-new-pull-request) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
+5. [Complete your pull request](pull-requests.md#complete-the-pull-request) and resolve any merge conflicts from changes other people made after you created your branch.   
 
 ---
 

@@ -1,7 +1,5 @@
 ---
 ms.topic: include
-author: vtbassmatt
-ms.author: macoope
 ms.date: 12/07/2018
 ms.prod: devops
 ms.technology: devops-cicd-tasks
@@ -16,4 +14,5 @@ ms.technology: devops-cicd-tasks
     destinationFolder: 
     #cleanDestinationFolder: true 
     #overwriteExistingFiles: false
+    #pathToSevenZipTool: 
 ```

@@ -3,7 +3,7 @@ title: Authenticating and inviting GitHub users frequently asked questions
 description: Learn about frequently asked questions (FAQs) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 ms.date: 06/04/2020
@@ -36,3 +36,4 @@ A: Only organization or project administrators can invite new users to join the 
 
 * [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md)
 * [Add organization users to Azure DevOps](../accounts/add-organization-users.md)
+* [Permission and access FAQs](faq-permissions.yml)

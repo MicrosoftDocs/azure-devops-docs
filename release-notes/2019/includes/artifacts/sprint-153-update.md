@@ -25,4 +25,4 @@ By using package search, you can:
 > [!div class="mx-imgBorder"]
 > ![Search across all your organization feeds.](../../media/153_08.png)
 
-You can learn more about package search [here](/azure/devops/project/search/package-search?view=azure-devops).
+You can learn more about package search [here](/azure/devops/project/search/package-search?view=azure-devops&preserve-view=true).

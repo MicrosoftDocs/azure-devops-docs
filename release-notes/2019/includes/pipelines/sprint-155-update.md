@@ -4,7 +4,7 @@ ms.topic: include
 
 ### kustomize and kompose as bake options in KubernetesManifest task
 
-[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
+[kustomize](https://github.com/kubernetes-sigs/kustomize) (part of Kubernetes sig-cli) let you customize raw, template-free YAML files for multiple purposes and leaves the original YAML untouched. An option for kustomize has been added under bake action of [KubernetesManifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?view=azure-devops&preserve-view=true) so that any folder containing kustomization.yaml files can be used for generating the manifest files used in the deploy action of the KubernetesManifest task.
 
 ```YAML
 steps:
@@ -142,7 +142,7 @@ Here is an example of a report with the test summary.
 > [!div class="mx-imgBorder"]
 > ![Example of a report with the test summary.](../../media/155_14.png)
 
-For more details about flaky test management, see the documentation [here](/azure/devops/pipelines/test/flaky-test-management?view=azure-devops).
+For more details about flaky test management, see the documentation [here](/azure/devops/pipelines/test/flaky-test-management?view=azure-devops&preserve-view=true).
 
 ### Improvements to the Deployment Center for WebApp in the Azure Portal
 
@@ -185,16 +185,16 @@ For more details, see the blog post with the full announcement [here](https://de
 
 ### Pipeline variable group and variable management commands
 
-It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](/cli/azure/ext/azure-devops/pipelines/variable-group?view=azure-cli-latest) and [variable](/cli/azure/ext/azure-devops/pipelines/variable?view=azure-cli-latest) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
+It can be challenging to port YAML based pipelines from one project to another as you need to manually set up the pipeline variables and variable groups. However, with the pipeline [variable group](/cli/azure/pipelines/variable-group?view=azure-cli-latest&preserve-view=true) and [variable](/cli/azure/pipelines/variable?view=azure-cli-latest&preserve-view=true) management commands, you can now script the set up and management of pipeline variables and variable groups which can in turn be version controlled, allowing you to easily share the instructions to move and set up pipelines from one project to another.
 
 ### Run pipeline for a PR branch
 
-When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](/cli/azure/ext/azure-devops/pipelines/build?view=azure-cli-latest#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
+When creating a PR, it can be challenging to validate if the changes might break the pipeline run on the target branch. However, with the capability to trigger a pipeline run or queue a build for a PR branch, you can now validate and visualize the changes going in by running it against the target pipeline. Refer [az pipelines run](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-run) and [az pipelines build queue](/cli/azure/pipelines/build?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-build-queue) command documentation for more information.
 
 ### Skip the first pipeline run
 
-When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-create) for more information.
+When creating pipelines, sometimes you want to create and commit a YAML file and not trigger the pipeline run as it may result in a faulty run due to a variety of reasons - infrastructure is not ready or need to create and update variable/variable groups etc. With Azure DevOps CLI,  you can now to skip the first automated pipeline run on creating a pipeline by including the --skip-first-run parameter.  Refer [az pipeline create command documentation](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-create) for more information.
 
 ### Service endpoint command enhancement
 
-Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](/cli/azure/ext/azure-devops/devops/service-endpoint?view=azure-cli-latest) for more information.
+Service endpoint CLI commands supported only azure rm and github service endpoint set up and management. However, with this release, service endpoint commands allow you to create any service endpoint by providing the configuration via file and provides optimized commands - az devops service-endpoint github and az devops service-endpoint azurerm, which provide first class support to create service endpoints of these types. Refer the [command documentation](/cli/azure/devops/service-endpoint?view=azure-cli-latest&preserve-view=true) for more information.

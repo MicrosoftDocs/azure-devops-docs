@@ -240,7 +240,7 @@ A: No, this behavior isn't a bug and is how it has been implemented. We hope to 
 
 ### Q: What makes the organization Owner different from other organization users?
 
-A: The organization Owner manages payments and access for organization users. The organization Owner also manages billing for the organization through the [Azure classic portal](https://manage.windowsazure.com/) or the [Azure portal](https://portal.azure.com). 
+A: The organization Owner manages payments and access for organization users. The organization Owner also manages billing for the organization through the [Azure classic portal](https://azure.microsoft.com/en-in/updates/azure-portal-updates-for-classic-portal-users/) or the [Azure portal](https://portal.azure.com). 
 
 Organization Owners also have permissions to do the following tasks:
 

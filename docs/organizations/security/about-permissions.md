@@ -1,5 +1,5 @@
 ---
-title: How permissions, access, and security groups are managed 
+title: Get started with permissions, access levels, and security groups 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
 ms.technology: devops-security
@@ -31,12 +31,12 @@ For example, individual contributors are added to the Contributors security grou
 Administrators manage security groups and permissions from the web portal administration context. Contributors manage permissions for objects they create or own from the web portal as well. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server-level to which you add users or groups.  
 
 > [!TIP]    
-> User accounts that are assigned to more than one security group are restricted to those permissions granting the least access. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
+> User accounts that are assigned to more than one security group are restricted to those permissions granting the **least access**. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
 
 To learn more, review the information provided in this article and the following articles:  
 
 - [Default permissions and access](permissions-access.md)  
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 
 <a id="security-group-membership" /> 
 
@@ -152,7 +152,7 @@ no members of the group are able to access the project, collection, or deploymen
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
@@ -219,9 +219,8 @@ Here's what you need to know about permission settings:
 
 - For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
-	For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, **Deny** doesn't trump **Allow**. Permissions assigned to these groups take precedent over any **Deny** set within any other group to which that member might belong. 
-	**Project Collection Administrators** or **Team Foundation Administrators** permissions will not take precedence for work item operations, such as deletion. **Deny** will override **Allow** for these permissions.
-
+	In some cases, members of the **Project Collection Administrators** or **Team Foundation Administrators** groups may always get the permission even if they are denied that permission in a different group. In other cases such as work item deletion or pipelines, being a member of project collection administrators does not bypass **Deny** permissions set elsewhere.
+	
 - Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
 <a name="inheritance"></a>

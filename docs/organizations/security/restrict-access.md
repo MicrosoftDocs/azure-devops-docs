@@ -8,8 +8,9 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 02/17/2021 
 --- 
+
 
 # Grant or restrict access
 
@@ -21,12 +22,30 @@ If you're new to administrating permissions and groups, review [About permission
 
 In this article you learn how to do the following tasks: 
 
+
+
+::: moniker range="azure-devops"
+
+> [!div class="checklist"]
+> * Recommended method for granting and restricting permissions
+> * Delegate tasks by assigning select permissions to specific roles 
+> * Limit visibility to organization information
+> * Limit people picker to project users and groups 
+> * Restrict access to view or modify objects
+> * Restrict modification of work items based on a user or group
+::: moniker-end
+
+   
+
+
+::: moniker range="< azure-devops"
+
 > [!div class="checklist"]
 > * Recommended method for granting and restricting permissions
 > * Delegate tasks by assigning select permissions to specific roles
 > * Restrict access to view or modify objects
 > * Restrict modification of work items based on a user or group
-
+::: moniker-end
 
 
 > [!TIP]    
@@ -127,15 +146,38 @@ For an account or collection, Edit instance-level (or collection-level) informat
 </tr>
 </table>
 
-::: moniker range="azure-devops"
 
-<a id="restrict-access-project-scoped-user-group" /> 
 
-## Restrict access to projects and Organization information
+<a id="restrict-access-project-scoped-user-group" />
 
-By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
-With this feature enabled, users added to the **Project-scoped User group** can't view most Organization Settings and can only connect to those projects to which they've been added. 
+::: moniker range="azure-devops" 
+
+## Limit visibility to organization and project information
+
+By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Limit user visibility for projects** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+With this feature enabled, users added to the **Project-Scoped Users** group can't view most **Organization settings** and can only connect to those projects to which they've been added. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops" 
+
+## Limit people picker to project users and groups
+
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to a project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection).
+
 
 ::: moniker-end
  
@@ -203,8 +245,6 @@ You  restrict access to work tracking objects in one of two ways:
 ::: moniker-end
 
 
-
-
 ## Restrict modification of closed work items
 
 [!INCLUDE [temp](../../includes/restrict-modification-closed-work-items.md)]
@@ -241,7 +281,7 @@ To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item
 
 ## Related articles
 
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [About permissions and inheritance](about-permissions.md)

@@ -122,6 +122,7 @@ Your profile settings are updated.
 
 ## Related articles
 
+- [Time zone settings and usage](../settings/timezone-settings-usage.md)
 - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
 - [Manage or enable features](../../project/navigation/preview-features.md)  

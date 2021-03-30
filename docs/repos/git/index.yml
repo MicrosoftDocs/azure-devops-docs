@@ -40,7 +40,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Create a new repo
-            url: ./clone.md
+            url: ./create-new-repo.md
           - text: Clone an existing repo
             url: ./clone.md
           - text: Commit, share, and sync your code
@@ -76,7 +76,7 @@ landingContent:
           - text: History 
             url: ./history.md
           - text: Pull requests
-            url: ./pull-requests-overview.md
+            url: ./pull-requests.md
   - title: Set up your Azure Repos Git repositories
     linkLists:
       - linkListType: how-to-guide

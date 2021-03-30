@@ -4,6 +4,8 @@
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Create your organization 
   href: create-organization.md 
+- name: Look up organization owner
+  href:  ../security/lookup-organization-owner-admin.md
 - name: Add and manage banners 
   href:  ../settings/manage-banners.md
 - name: Adjust organization settings
@@ -18,6 +20,8 @@
     href: change-organization-ownership.md
 - name: Manage your organization 
   items:
+  - name:  Manage preview features
+    href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Rename organization
     href: rename-organization.md 
   - name: Delete organization
@@ -25,9 +29,11 @@
   - name: Recover organization
     href: recover-your-organization.md
   - name: Restrict organization creation
-    href: azure-ad-tenant-policy-restrict-org-creation.md
+    href: azure-ad-tenant-policy-restrict-org-creation.md?
   - name: Resolve orphaned organization
     href: resolve-orphaned-organization.md
+- name: Services status
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: FAQs
   items:
   - name: Create and configure an organization
