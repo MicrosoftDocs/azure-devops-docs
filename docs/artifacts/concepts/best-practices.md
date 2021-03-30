@@ -18,7 +18,7 @@ Follow these guidelines and best practices when creating or publishing your pack
 
 - **Each repository should only reference one feed**:
 
-    A feed is an organizational construct to host packages. You can have multiple feeds for a project but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) to access packages from multiple feeds through a single upstream.
+    A feed is an organizational construct to host packages. You can have multiple feeds for a project but a particular project should only reference one feed. If you want to use packages from multiple feeds, use [upstream sources](upstream-sources.md) to access packages from multiple feeds through a single upstream.
 
 - **Automatically publish newly created packages to your feed**:
 
@@ -46,7 +46,7 @@ Follow these guidelines and best practices when consuming packages from feeds an
 
     If you want to consume packages from public registries such as NuGet.org or npmjs.com, you should consider adding upstream sources to your feed.
     
-    For more information, see [Understand upstream sources](/azure/devops/artifacts/concepts/upstream-sources) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
+    For more information, see [Understand upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
 
 - **Sources not in your organization but in the same AAD tenant should be added using the feed locator**:
 
@@ -65,6 +65,6 @@ Follow these guidelines and best practices when consuming packages from feeds an
 > [!div class="nextstepaction"]
 > [Get started with Azure Artifacts)](../start-using-azure-artifacts.md)
 > [Artifacts storage breakdown](../artifact-storage.md)
-> [What are feeds?](/azure/devops/artifacts/concepts/feeds)
-> [What are feed views?](/azure/devops/artifacts/concepts/views)
-> [Understand upstream sources](/azure/devops/artifacts/concepts/upstream-sources)
+> [What are feeds?](/feeds.md)
+> [What are feed views?](/views.md)
+> [Understand upstream sources](/upstream-sources.md)
