@@ -235,7 +235,6 @@ task to increase the rollout percentage of an app that was previously released t
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
-::: moniker-end
 
 ## Related extensions
 
@@ -244,3 +243,37 @@ task to increase the rollout percentage of an app that was previously released t
 - [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
 - [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
 - [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+
+## FAQ
+
+### How do I create app bundles?
+
+You can build and sign your app bundle with an inline script and a secure file. To do this, you'll need to first download your keystore and [store it as a secure file in the Library](../library/secure-files.md). You'll also need to create variables for `keystore.password`, `key.alias`, and `key.password` in a [variable group](../library/variable-groups.md). 
+
+Next, you'll use the [Download Secure File](../tasks/utility/download-secure-file.md) and [Bash](../tasks/utility/bash.md) tasks to download your keystore and build and sign your app bundle.
+
+In this YAML file, you download an `app.keystore` secure file and use a bash script to generate an app bundle. Then, you use [Copy Files](../tasks/utility/copy-files.md) to copy the app bundle. From there, you can create and save an artifact with [Publish Build Artifact](../tasks/utility/publish-build-artifacts.md) or use the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to publish.
+
+```yaml
+- task: DownloadSecureFile@1
+  name: keyStore
+  displayName: "Download keystore from secure files"
+  inputs:
+    secureFile: app.keystore
+
+- task: Bash@3
+  displayName: "Build and sign App Bundle"
+  inputs:
+    targetType: "inline"
+    script: |
+      msbuild -restore $(Build.SourcesDirectory)/myAndroidApp/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore.password) -p:AndroidSigningKeyAlias=$(key.alias) -p:AndroidSigningKeyPass=$(key.password)
+
+- task: CopyFiles@2
+  displayName: 'Copy deliverables'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/myAndroidApp/bin/$(buildConfiguration)'
+    Contents: '*.aab'
+    TargetFolder: 'drop'
+```
+
+::: moniker-end

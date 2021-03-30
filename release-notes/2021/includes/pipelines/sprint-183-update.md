@@ -21,4 +21,4 @@ To address this situation, new public projects created in Azure DevOps will no l
 - Links to the repositories that you plan to build
 - Brief description of your project
 
-For more information about parallel jobs and free grants, see [our documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true).
+For more information about parallel jobs and free grants, see [our documentation](/azure/devops/pipelines/licensing/concurrent-jobs?preserve-view=true&tabs=ms-hosted&view=azure-devops).

@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -58,6 +58,10 @@ The following repository types are supported.
 
 > [!IMPORTANT]
 > Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+
+> [!NOTE]
+> Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
+> To check out Azure Repos Git repositories hosted in another project, **Limit job scope** must be configured to allow access. For more information, see [Limit job authorization scope](azure-repos-git.md#limit-job-authorization-scope).
 
 The following combinations of `checkout` steps are supported.
 

@@ -6,7 +6,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/28/2020
+ms.date: 01/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -61,7 +61,7 @@ The following list shows the key benefits of this task:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>deploy</b></td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -79,7 +79,7 @@ The following list shows the key benefits of this task:
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -168,7 +168,9 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/deployment.yml|manifests/service.yml
+    manifests: |
+      manifests/deployment.yml
+      manifests/service.yml
     containers: |
       foo/demo:$(tagVariable1)
       bar/demo:$(tagVariable2)
@@ -200,7 +202,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>promote</b> or <b>reject</b></td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -218,7 +220,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -253,11 +255,11 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>createSecret</b></td>
   </tr>
   <tr>
     <td><b>secretType</b><br/>Secret type</td>
-    <td>(Required only if <b>action</b> is set to <b>createSecret</b>)<br/>
+    <td>(Required)<br/>
     <br/>
     Acceptable values are <b>dockerRegistry</b> and <b>generic</b>. The default value is <b>dockerRegistry</b>.<br/>
     <br/>
@@ -271,13 +273,13 @@ In the above example, the task tries to find matches for the images <code>foo/de
   </tr>
   <tr>
     <td><b>dockerRegistryEndpoint</b><br/>Docker registry service connection</td>
-    <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set to <b>dockerRegistry</b>)<br/>
+    <td>(Required only if <b>secretType</b> is set to <b>dockerRegistry</b>)<br/>
     <br/>
     The credentials of the specified service connection are used to create a Docker registry secret within the cluster. Manifest files under the <b>imagePullSecrets</b> field can then refer to this secret's name.</td>
   </tr>
   <tr>
     <td><b>secretArguments</b><br/>Secret arguments</td>
-    <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set to <b>generic</b>)<br/>
+    <td>(Required only if <b>secretType</b> is set to <b>generic</b>)<br/>
     <br/>
     Accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
     <b>--from-literal=key1=value1</b>
@@ -341,11 +343,11 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>bake</b></td>
   </tr>
   <tr>
     <td><b>renderType</b><br/>Render engine</td>
-    <td>(Required only if <b>action</b> is set to <b>bake</b>)<br/>
+    <td>(Required)<br/>
     <br/>
     The render type used to produce the manifest files.</br>
     </br>
@@ -353,19 +355,19 @@ steps:
   </tr>
   <tr>
     <td><b>helmChart</b><br/>Helm chart</td>
-    <td>(Required only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Required only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     The path to the Helm chart used for baking.</td>
   </tr>
   <tr>
     <td><b>overrideFiles</b><br/>Override files</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     Multiline input that accepts the path to the override files. The files are used when manifest files from Helm charts are baked.</td>
   </tr>
   <tr>
     <td><b>overrides</b><br/>Override values</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     Additional override values that are used via the command-line switch <b>--set</b> when manifest files using Helm are baked.<br/>
     <br/>
@@ -373,19 +375,19 @@ steps:
   </tr>
   <tr>
     <td><b>releaseName</b><br/>Release name</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     The name of the release used when baking Helm charts.</td>
   </tr>
   <tr>
     <td><b>kustomizationPath</b><br/>Kustomization path</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>kustomize</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>kustomize</b>)<br/>
     <br/>
     The path to the directory containing the file kustomization.yaml.</td>
   </tr>
   <tr>
     <td><b>dockerComposeFile</b><br/>Path to Docker compose file</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>kompose</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>kompose</b>)<br/>
     <br/>
     The path to the Docker compose file.</td>
   </tr>
@@ -426,7 +428,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>scale</b></td>
   </tr>
   <tr>
     <td><b>kind</b><br/>Kind</td>
@@ -494,7 +496,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>patch</b></td>
   </tr>
   <tr>
     <td><b>resourceToPatch</b><br/>Resource to patch</td>
@@ -515,13 +517,13 @@ steps:
   </tr>
   <tr>
     <td><b>kind</b><br/>Kind</td>
-    <td>(Required only if <b>action</b> is set to <b>patch</b> and <b>resourceToPatch</b> is set to <b>name</b>)<br/>
+    <td>(Required only if <b>resourceToPatch</b> is set to <b>name</b>)<br/>
     <br/>
     The kind of the Kubernetes object. Examples include ReplicaSet and StatefulSet.</td>
   </tr>
   <tr>
     <td><b>name</b><br/>Name</td>
-    <td>(Required only if <b>action</b> is set to <b>patch</b> and <b>resourceToPatch</b> is set to <b>name</b>)<br/>
+    <td>(Required only if <b>resourceToPatch</b> is set to <b>name</b>)<br/>
     <br/>
     The name of the Kubernetes object to be patched.</td>
   </tr>
@@ -589,7 +591,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    <b>delete</b></td>
   </tr>
   <tr>
     <td><b>arguments</b><br/>Arguments</td>

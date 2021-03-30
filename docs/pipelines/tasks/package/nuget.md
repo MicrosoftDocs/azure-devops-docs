@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 > [!NOTE]
-> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. 
+> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. This task no longer takes new features and only critical bugs are addressed. 
 
 Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
@@ -201,7 +201,7 @@ Run any other NuGet command besides the default ones: pack, push, and restore.
   displayName: 'list locals'
   inputs:
     command: custom
-    arguments: 'nuget locals all -list'
+    arguments: 'locals all -list'
 ```
 ## Open-source
 

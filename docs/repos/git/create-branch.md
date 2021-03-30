@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 >[!TIP]
-> Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](branches.md).
+> Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial]().
 
 >[!IMPORTANT]
 > Users of TFS 2015 and previous won't have the **Branches** tab in the **Code** view. When using those versions, you can create a new branch in TFS from the **Code** view by selecting the dropdown list next to the branch name and then selecting **New branch**.
