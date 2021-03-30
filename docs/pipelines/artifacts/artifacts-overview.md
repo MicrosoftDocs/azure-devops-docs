@@ -40,7 +40,7 @@ Each kind of artifact has a different way of being published and consumed. Some 
 
 - [Publish an npm package from the command line](../../artifacts/npm/publish.md)
 - [Publish npm packages (YAML/Classic)](/azure/devops/pipelines/tasks/package/npm#publish-npm-packages)
-- [Consume NuGet packages](../../artifacts/get-started-npm.md)
+- [Consume npm packages](../../artifacts/get-started-npm.md)
 
 #### [Python](#tab/python/)
 
