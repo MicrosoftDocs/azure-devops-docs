@@ -260,5 +260,5 @@ From the web portal, open the Security dialog for the object whose permissions y
 - [About permissions and inheritance](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 
