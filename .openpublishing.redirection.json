@@ -17825,6 +17825,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/organizations/security/faq-trace-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/troubleshoot-permissions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
       "redirect_document_id": true
