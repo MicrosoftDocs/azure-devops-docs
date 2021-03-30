@@ -15,10 +15,10 @@ ms.date: 03/29/2021
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Managing change is an aspect of managing requirements and your project plan. This article provides an overview of the types of changes to monitor and methods for managing change. 
+Managing change is an aspect of managing requirements, your project plan, and sprints. This article provides an overview of the types of changes to monitor and methods for managing those changes. 
 
 > [!NOTE]
-> *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. Asq.org*  
+> *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. &mdash;Asq.org*  
 
 In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change? 
  
@@ -28,43 +28,49 @@ In keeping with Agile methods, you want to keep your change management process l
 > - Define and track status of change  
 > - Analyze and prioritize change requirements  
 > - Monitor and report on changes  
+> - Keep stakeholders and teams informed of changes.   
  
  
-This article maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
-
+This article provides best practices and guidance for managing change. It also maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles). 
 
 ## Where does change arise? How can we minimize change?  
 
-Very briefly, valid changes can occur from a number of areas: 
+Changes to a software development project can occur from a number of areas, such as one or more of the following: 
 
 - Business needs and customer needs change  
 - New priorities arise 
 - Feature requirements change as new information arises 
-- Resources change and organizations change  
+- Resources and organizations change  
 - New dependencies are discovered  
 - Development or testing takes longer than expected.
 
 ### Minimize changes that are avoidable 
 
-Less valid changes that can occur and contribute to scope creep include the following items. Many of these types of changes arise when a team is new to Agile methods and may not have completely adopted an Agile culture.  
+While some changes are unavoidable, other types of changes are avoidable. Many of these types of changes arise when a team is new to Agile methods and may not have completely adopted an Agile culture. Such types of changes often introduce scope creep during a sprint or release.  
 
+> [!NOTE]
+> *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
+
+To minimize avoidable changes, the following occurrences should be avoided. 
+
+- Requirements aren't clearly articulated 
+- Requirements aren't well prioritized 
+- The team hasn't agreed on how they'll manage change
+- Poor estimates on planned work
+- New requests aren't negotiated
 - A team member is unclear on a requirement, project scope, or acceptance criteria
 - A team member is focused on developing what they believe to be best rather than what is required 
 - One or more team members make decisions without communicating with others 
-- Requirements aren't clearly articulated 
-- Requirements aren't well prioritized 
-- No agreement within the team on how to handle change
-- Poor estimates
-- New requests aren't negotiated
 - Stakeholders and customer input isn't sought out early enough or well enough
 - Team members don't raise issues proactively. 
  
 ### Adopt best change management practices
 
-To avoid some of these undesirable changes, you'll want to integrate  best change management practices into your organization culture.  
+To avoid some of these undesirable changes, you'll want to integrate  best change management practices into your organization culture.
+  
 - Continuous improvement 
 - Agile practices and an entrepreneurial mindset  
-- Transparent operations
+- Transparent operations 
 - Daily communication 
 - More upfront work to minimize change 
 - Early engagement of the change
@@ -85,8 +91,6 @@ To mitigate problems that arise from change, Agile project managers focus on the
 - Support a change management process  
 - Assist teams in their continual improvement processes.   
 
-> [!NOTE]
-> *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
  
 ## Best practices for managing change
 
@@ -108,14 +112,30 @@ Good practice is to constantly refine the backlog to ensure acceptance criteria 
 - If new scope is added to the sprint backlog, is there something that can be removed? 
 
 ### Avoid scope creep  
-1. Know your project goals from the start
-2. Get serious about documenting requirements
-3. Use project management software to keep everyone on track
-4. Create a change control process
-5. Set (and stick to) a clear schedule
-6. Learn the proper ways to communicate with stakeholders and your team
-7. Protect your team against “Gold plating”
 
+Some practices that help avoid scope creep are: 
+
+- Know your project goals from the start 
+- Clearly document requirements and acceptance criteria
+- Use project management software to keep everyone on track
+- Create a change control process
+- Set and follow a clear schedule
+- Properly communicate with stakeholders and your team
+- Protect your team against "gold plating", a practice of making changes to a project that are outside of the original agreed-upon scope.  
+
+
+### Manage change at the product plan level 
+
+You can minimize the need to track changes by following these suggestions: 
+
+- Constantly refine the product plan and product backlog for dependencies, risks 
+- Ensure the acceptance criteria and requirements are well understood at the start of a sprint 
+- Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles 
+
+> [!NOTE]
+> *Continuous Improvement is a Scrum approach in which the team learns from experience and stakeholder engagement to constantly keep the Prioritized Product Backlog updated with any changes in requirements.*
+
+ 
 ## Options for tracking change 
 
 You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
@@ -127,41 +147,37 @@ The methods you adopt will depend on several factors, such as the following:
 
 You have several choices for tracking change. From most lightweight to most robust, you can use one or more of the following methods: 
 
-- Add information to an existing user story or work item that identifies the change
-- Tag user stories or work items with a change management tag 
-- Log changes to the backlog using a formal change request form  
+- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments
+- Add a *change* tag to work items to support tracking changes to the scope of work 
+- Set up notifications to automatically communicate change within your team or organization 
+- Add a bug that tracks a change in scope or additional work 
+- Add a change request work item type to formally track and log change requests to the product backlog.   
 
 With any of these methods, you can generate a query, review and triage the change. In many cases, how you choose to track change should align with how you and your team choose to monitor and report the scope of change. When early on in the adoption of Agile methods, the need to monitor and track change may be greater than when a team has managed to forge an Agile culture. 
 
-In general, we recommend that you keep the process lightweight and eliminate as much waste as possible.
-
-
 ### Change request form 
 
-To formally track change, you may want to define a change request work item type, similar to the one shown in the following image for the [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process).
+To formally track change, you can define a change request work item type, similar to the one shown in the following image for the [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process).
 
 > [!div class="mx-imgBorder"]  
 > ![Change request work item form.](media/manage-change/change-request-form.png) 
 
-This form provides rich-text fields to capture the impact of the change on the following areas: 
+This form provides rich-text fields to capture the impact of the change to the following areas: 
 - Architecture
 - User experience
 - Test
 - Design and development
 - Technical publications 
 
-You can adopt this form or customize your own to track the changes of most interest to your organization's needs. You can also customize your backlog to have change requests appear on your backlog along with other user stories or requirements. 
- 
-Also, you can customize your backlogs and boards to manage change request work items alongside requirements. 
-
+You can adopt this form or customize your own to track the changes of most interest to your organization's needs. You can also customize your backlog to have change requests appear on your backlog along with other user stories or requirements. Also, you can customize your backlogs and boards to manage change request work items alongside requirements. 
 
 ### Ensure acceptance criteria is well defined
 
 The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
 
-Ensures that all team members (including the Product Owner) understand what is required for a User Story to be completed within a sprint. If this is not established early for a scrum team, it is possible to get to the sprint demo and have stories that team members think are done, but in reality, have not been fully implemented. "Wait, I was supposed to write automated unit tests too?"
+Ensures that all team members, including the product owner, understand what is required for a feature or requirement to be completed within a sprint. If this is not established early for a scrum team, it's possible to get to the sprint demo and have stories that team members think are done, but in reality, have not been fully implemented. "Wait, I was supposed to write automated unit tests too?"
 
-**Example 1: A Product Backlog Item is considered “Done” when the following objectives have been met:**
+**Example 1: A Product Backlog Item is considered "Done" when the following objectives have been met:**
 
 - Solution builds successfully.
 - Code written and merged into main branch
@@ -175,7 +191,7 @@ Ensures that all team members (including the Product Owner) understand what is r
 - Deploys successfully to non development environment (automated)
 - Static Code Analysis is run with results no worse than the baseline.
 
-**Example 2: A Sprint is considered “Done” when  the following objectives have been met:**
+**Example 2: A Sprint is considered "Done" when  the following objectives have been met:**
 - The time period allocated for the Sprint has passed
 - Unfinished work has been moved to the Backlog
 - Completed work has been deployed to target environment(s) and demoed in a Sprint Review to the Product Owner
@@ -185,52 +201,41 @@ Ensures that all team members (including the Product Owner) understand what is r
 - Sprint Burndown
 - Notable accomplishments, highlights, or milestones that were hit
 - Retrospective conducted.
-
-
-## Manage change at the product plan level 
-
-From an Agile methodology point of view you can minimize the need to track changes by following these suggestions: 
-- Constantly refine the product plan and product backlog for dependencies, risks 
-- Ensure the acceptance criteria and requirements are well understood at the start of a sprint 
-- Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles 
-
-> [!NOTE]
-> *Continuous Improvement is a Scrum approach in which the team learns from experience and stakeholder engagement to constantly keep the Prioritized Product Backlog updated with any changes in requirements.*
-
-## Manage change during a sprint 
  
-Here are the main ways you can track change: 
-- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments
-- Add a *change* tag to work items to support tracking changes to the scope of work 
-- Add a bug that tracks a change in scope or additional work 
-- Add a change request work item type to formally track 
-- Set up notifications to automatically communicate change within your team or organization 
-
+## Monitor and report on changes 
  
-## Monitor and report on changes    
+Teams can monitor changes through the following methods: 
+- Work item queries
+- Team velocity 
+- Sprint burndowns, release burndowns 
+ 
 
+### Work item queries 
 
-How to monitor change? Goals and methods.  
-
-The main methods for monitoring change are through work item queries. With queries you can find and triage a list of change management requests or work items tagged with a change management tag. 
+With queries you can find and triage a list of change management requests or work items tagged with a change management tag. You can also use the Was Ever operator to determine if work went through a ... 
 
 In addition, you can filter work items that 
 - Monitor and review change additions - query by tag or work items 
 - Monitor scope creep - sprint burndown 
 - Review was ever queries 
 
+### Team velocity and unplanned work  
+
+The team velocity chart provides several pieces of information. This chart shows how much work was planned and how much was completed. Viusally, you can determine how often work was added to a sprint after the sprint began. As shown in the following image, the team velocity for the past 10 sprints shows a pattern of adding work after the sprint start date. 
+
+:::image type="content" source="media/manage-change/velocity-chart-scope-creep.png" alt-text="Screenshot of Velocity chart showing scope creep":::
+
 
 ### Monitor scope creep 
 
+Another chart to review for scope creep is the sprint burndown chart. As shown in the following image, 
 Two charts that can help with monitoring scope creep are the sprint burndown and release burndown charts. Sprint burndown provides a visual of how much work 
 
-Monitor scope creep - sprint burndown 
-
-Monitor scope creep - release period  
 
 
-Questions for retrospective scope creep change management
+:::image type="content" source="media/manage-change/sprint-burndown-scope-increase.png" alt-text="Screenshot of Sprint burndown showing scope creep":::
 
+ 
 
 
 ## Get notified of changes 
@@ -253,6 +258,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Industry articles
 
+- [How to Create the Best Agile Change Management Process](https://www.mindville.com/blog/create-the-best-agile-change-management-process) 
 - [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/) 
 - [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
 - [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
@@ -262,7 +268,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 ### Work items and process guidance 
 
 - [Manage change using Change request form](/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change)  
-- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items)
+- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items) 
 
 #### Monitor and report on progress
 
