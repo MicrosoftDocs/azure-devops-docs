@@ -64,9 +64,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 ::: moniker range="<= azure-devops-2019"
 
-Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
-
-<div class="collapse" id="expando-version-control-permissions">
+Go to the Version Control control panel tab
 
 <ul>
 <li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol</code></li>
@@ -93,8 +91,6 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 ![control panel project version control tab](media/control-panel-team-project-version-control-tab.png)
 
 </p>
-
-</div>
 
 On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it.
 

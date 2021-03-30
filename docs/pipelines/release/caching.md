@@ -468,6 +468,36 @@ steps:
 - script: pipenv install
 ```
 
+## Python/Anaconda
+
+Set up your pipeline caching with Anaconda environments 
+
+### Example
+
+```yaml
+variables:
+  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+
+# Add conda to system path
+steps:
+- script: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
+
+- task: Cache@2
+  displayName: Use cached Anaconda environment
+  inputs:
+    key: 'conda | "$(Agent.OS)" | environment.yml'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(CONDA_CACHE_DIR)
+    cacheHitVar: CONDA_CACHE_RESTORED
+
+- script: conda env create --quiet --file environment.yml
+  displayName: Create Anaconda environment
+  condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
+```
+
 ## PHP/Composer
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
