@@ -8,8 +8,6 @@
     href: permissions-access.md
   - name: View permissions 
     href: view-permissions.md
-  - name: Troubleshoot access and permissions
-    href: troubleshoot-permissions.md
   - name: Increase permission levels, find an admin
     href: lookup-organization-owner-admin.md
   - name: Permission lookup guide 
@@ -68,6 +66,8 @@
       href: ../accounts/faq-azure-access.md
     - name: Set up Visual Studio
       href: ../accounts/faq-set-up-vs.md
+    - name: Troubleshoot access and permissions
+      herf: troubleshoot-permissions.md
     - name: Resolve connection issues
       href: ../../user-guide/troubleshoot-connection.md
     - name: "TF31002: Unable to connect"
