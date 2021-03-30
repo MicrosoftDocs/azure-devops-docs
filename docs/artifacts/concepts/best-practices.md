@@ -1,4 +1,4 @@
-﻿---
+---
 title: Best practices when working with Azure Artifacts
 description: Best practices to publish and consume packages from Artifacts feeds
 ms.technology: devops-artifacts
@@ -63,8 +63,8 @@ Follow these guidelines and best practices when consuming packages from feeds an
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get started with Azure Artifacts)](../start-using-azure-artifacts.md)
+> [Get started with Azure Artifacts](../start-using-azure-artifacts.md)
 > [Artifacts storage breakdown](../artifact-storage.md)
-> [What are feeds?](/feeds.md)
-> [What are feed views?](/views.md)
-> [Understand upstream sources](/upstream-sources.md)
+> [What are feeds?](feeds.md)
+> [What are feed views?](views.md)
+> [Understand upstream sources](upstream-sources.md)
