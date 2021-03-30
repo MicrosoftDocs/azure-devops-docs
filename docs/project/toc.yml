@@ -19,6 +19,8 @@
   href: ../organizations/public/toc.yml
 - name: Navigation
   href: navigation/toc.yml
+- name: Traceability
+  href: ../cross-service/toc.yml
 - name: REST API Reference
   items:
   - name: Projects
