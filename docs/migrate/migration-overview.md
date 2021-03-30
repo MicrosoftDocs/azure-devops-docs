@@ -47,7 +47,7 @@ Normal release cadence for new Azure DevOps Server versions is once every three-
 
 The following features can be included with your import, but are currently in a preview state. 
 
-* [Analytics](../report/powerbi/what-is-analytics.md?view=azure-devops) - Note this is only supported for Azure DevOps Server 2019 and later.
+* [Analytics](../report/powerbi/what-is-analytics.md) - Note this is only supported for Azure DevOps Server 2019 and later.
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
