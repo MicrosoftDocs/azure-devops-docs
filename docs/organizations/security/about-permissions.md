@@ -36,7 +36,7 @@ Administrators manage security groups and permissions from the web portal admini
 To learn more, review the information provided in this article and the following articles:  
 
 - [Default permissions and access](permissions-access.md)  
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 
 <a id="security-group-membership" /> 
 
