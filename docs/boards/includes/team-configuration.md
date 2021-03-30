@@ -173,10 +173,10 @@ Not applicable
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
-<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
-<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels" data-raw-source="[Select backlog levels](select-backlog-navigation-levels)">Select backlog levels</a></li>
+<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -193,8 +193,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
 <li><a href="/azure/devops/organizations/security/add-users-team-project" >Add team members</a></li>
 </ul>
 </td>
@@ -208,8 +208,8 @@ Not applicable
 <li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Queries](../queries/using-queries.md)">Queries</a></li>
 <li><a href="/azure/devops/report/dashboards/team-velocity" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></li>
 <li><a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Dashboards](../../report/dashboards/dashboards.md)">Dashboards</a></li>
-<li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/azure/devops/notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
-<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
+<li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></li>
+<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](../../notifications/manage-team-group-global-organization-notifications.md)">Alerts</a> </li> 
 </ul>
 </td>
 <td>
@@ -245,9 +245,9 @@ Not applicable
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
-<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -258,14 +258,14 @@ Not applicable
 <li><a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[Sprint backlogs](../sprints/assign-work-sprint.md)">Sprint backlogs</a></li>
 <li><a href="/azure/devops/boards/sprints/set-capacity" data-raw-source="[Sprint capacity](../sprints/set-capacity.md)">Sprint capacity</a></li>
 <li><a href="/azure/devops/boards/sprints/task-board" data-raw-source="[Taskboard](../sprints/task-board.md)">Taskboard</a></li>
-<li><a href="/azure/devops/boards/sprints/sprint-burndown" data-raw-source="[Sprint burndown](/azure/devops/boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="/azure/devops/boards/sprints/sprint-burndown" data-raw-source="[Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)">Sprint burndown</a></li>
 </ul>
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
-<li><a href="/azure/devops/organizations/settings/set-working-days" data-raw-source="[Set working days](set-working-days.md)">Set working days</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/set-working-days" data-raw-source="[Set working days](set-working-days)">Set working days</a></li>
 </ul>
 </td>
 </tr>
@@ -280,10 +280,10 @@ Not applicable
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
-<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels" data-raw-source="[Select backlog levels](select-backlog-navigation-levels.md)">Select backlog levels</a></li>
-<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog.md)">Show bugs on backlogs &amp; boards</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/select-backlog-navigation-levels" data-raw-source="[Select backlog levels](select-backlog-navigation-levels)">Select backlog levels</a></li>
+<li><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" data-raw-source="[Show bugs on backlogs &amp; boards](show-bugs-on-backlog)">Show bugs on backlogs &amp; boards</a></li>
 </ul>
 </td>
 </tr>
@@ -300,8 +300,8 @@ Not applicable
 </td>
 <td>
 <ul>
-<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths.md)">Configure area paths</a></li>
-<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints.md)">Select default, current, and active iteration paths (sprints)</a></li>
+<li><a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Configure area paths](set-area-paths)">Configure area paths</a></li>
+<li><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints" data-raw-source="[Select default, current, and active iteration paths (sprints)](set-iteration-paths-sprints)">Select default, current, and active iteration paths (sprints)</a></li>
 <li><a href="/azure/devops/organizations/security/add-users-team-project">Add team members</a></li>
 </ul>
 </td>
@@ -315,8 +315,8 @@ Not applicable
 <li><a href="/azure/devops/boards/queries/using-queries" data-raw-source="[Queries](../queries/using-queries.md)">Queries</a></li>
 <li><a href="/azure/devops/report/dashboards/team-velocity" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></li>
 <li><a href="/azure/devops/report/dashboards/team-dashboard" data-raw-source="[Team home page](../../report/dashboards/team-dashboard.md)">Team home page</a></li>
-<li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/azure/devops/notifications/collaborate-in-a-team-room.md)">Team rooms</a></li>
-<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](/azure/devops/notifications/howto-manage-team-notifications.md)">Alerts</a> </li> 
+<li><a href="/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></li>
+<li><a href="/azure/devops/notifications/howto-manage-team-notifications" data-raw-source="[Alerts](../../notifications/manage-team-group-global-organization-notifications.md)">Alerts</a> </li> 
 </ul>
 </td>
 <td>

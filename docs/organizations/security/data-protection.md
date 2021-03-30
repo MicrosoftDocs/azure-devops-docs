@@ -1,5 +1,6 @@
 ---
-title: Azure DevOps - Data protection
+title: Data protection overview
+titleSuffix: Azure DevOps Services
 description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.topic: article
 ms.technology: devops-security

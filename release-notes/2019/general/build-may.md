@@ -1,5 +1,6 @@
 ---
 title: General - Microsoft Build Announcements
+description: May 2019 announcements for Azure Pipelines.  
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes

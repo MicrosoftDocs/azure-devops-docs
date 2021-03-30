@@ -8,8 +8,8 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 01/21/2021
 monikerRange: '>= azure-devops-2019'
+ms.date: 02/17/2021
 ---
 
 # Add users and manage access in Azure DevOps
@@ -126,7 +126,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Add a user 
 
-You can add users to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can add users to an organization by using the [az devops user add](/cli/azure/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user add –-email-id 
@@ -173,7 +173,7 @@ You can also add the user to an Azure DevOps Group - Project Contributors, the d
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
 ```
 
-You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+You can see all security groups in a project using the [az devops security group list](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Update a user
 
-You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can update a user's license type with the [az devops user update](/cli/azure/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
@@ -335,7 +335,7 @@ ID                                    Display Name         Email                
 
 ### Show users
 
-You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can show details for users in your organization with the [az devops user show](/cli/azure/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user show --user [--org]
@@ -368,21 +368,30 @@ ID                                    Display Name         Email                
 
 ## Restrict users' view to organization projects
  
-If the **Project-Scoped Users well-known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+To limit select users access to organizational information, enable the **Limit user visibility for projects** preview feature and add the users to the **Project-Scoped Users** group. Once added, users in that group won't be able to access projects that they haven't been added to. 
 
-Complete the following steps to add users to the new Project-scoped user group:
+> [!NOTE]   
+> Users and groups added to the **Project-Scoped Users** group have limited access to project and organization information as well as limited access to select identities through the people picker. To learn more, see [About projects and scaling your organization, Limit user visibility for projects using the Project-Scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+Complete the following steps to add users to the new **Project-Scoped Users** group:
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+	> [!TIP]  
+	> The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
+
+2. Add users or groups to your project(s) as described in [Add users to a project or team](../security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
+
+2. Open **Organizations Settings**, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Permissions** > **Users**.
-4. Select the user name for restricting views into projects.
-5. See the **Project-Scoped Users well-known group to hide settings** dropdown menu, and then set to **Allow**.
+3. Open **Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. 
 
-6. **Save** your changes.
+	To learn more, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md). 
+
 
 ::: moniker-end  
 

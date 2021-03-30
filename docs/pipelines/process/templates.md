@@ -266,6 +266,33 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
+When working with multiple jobs, remember to remove the name of the job in the template file, so as to avoid conflict
+
+```yaml
+# File: templates/jobs.yml
+jobs:
+- job: 
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - bash: echo "Hello Ubuntu"
+
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - bash: echo "Hello Windows"
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+```
+
 ### Stage reuse
 
 Stages can also be reused with templates.
@@ -536,7 +563,7 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md) with access to the project and include that in YAML:
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md#sep-tfsts) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
 
 ```yaml
 resources:

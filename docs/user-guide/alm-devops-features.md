@@ -142,7 +142,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
+<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs-boards-plans.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs-boards-plans.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
 <img src="media/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
 
 <p><b>Request feedback</b></p>
@@ -454,7 +454,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="../boards/backlogs/media/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
 
 <p><b>Filter</b></p>
-<p><a href="../boards/boards/filter-kanban-board.md#text-filter" data-raw-source="[Use key words to filter and find items](../boards/boards/filter-kanban-board.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
+<p><a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans#text-filter" data-raw-source="[Use key words to filter and find items](../boards/backlogs/filter-backlogs-boards-plans.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
 
 <img src="media/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
 
@@ -482,7 +482,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/backlogs/filter-backlogs-boards-plans.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
@@ -1187,7 +1187,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-release-3.png" alt="Customize release definition process"/><br/><br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#set-release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#set-release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>

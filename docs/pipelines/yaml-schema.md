@@ -5,8 +5,8 @@ description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
-ms.reviewer: macoope
-ms.date: 12/15/2020
+ms.reviewer: vijayma
+ms.date: 03/24/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -276,6 +276,37 @@ Jobs can run [conditionally](process/phases.md?tabs=yaml#conditions) and  might 
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops"
+
+```yaml
+jobs:
+- job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  strategy:
+    parallel: # parallel strategy; see the following "Parallel" topic
+    matrix: # matrix strategy; see the following "Matrix" topic
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  pool: pool # see the following "Pool" schema
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  container: containerReference # container to run this job inside of
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: # several syntaxes, see specific section
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+  services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
+```
+
+:::moniker-end
+
+:::moniker range="<azure-devops"
+
 ```yaml
 jobs:
 - job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
@@ -297,6 +328,8 @@ jobs:
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
+
+:::moniker-end
 
 For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
@@ -2055,7 +2088,7 @@ steps:
 
 ---
 
-Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publish-artifacts).
 
 ## Download
 
@@ -2095,7 +2128,7 @@ steps:
 
 ---
 
-Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#download-artifacts).
 
 ::: moniker-end
 

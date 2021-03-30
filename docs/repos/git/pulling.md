@@ -91,6 +91,8 @@ Git is generally very smart about resolving merge conflicts automatically, but s
 
 #### [Visual Studio](#tab/visual-studio/)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** view.
 
 **Sync** is a combined operation of pulling remote changes and then pushing local ones. This operation synchronizes the commits on the local and remote branch.
@@ -132,6 +134,8 @@ Specify the `--no-commit` parameter to merge without committing. The command att
 Use `pull` to make your branch current with the remote when you aren't worried about reviewing the changes before merging them into your own branch.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 Open the Team Explorer and open the Sync view. Then click the **Pull** link under **Incoming Commits** to `pull` remote changes and merge them into your local branch. Pulling
 updates files in your open project, so make sure to [commit your changes](commits.md) before pulling.
@@ -184,6 +188,8 @@ When working in a branch, you may want to incorporate the latest changes from th
 >This article demonstrates the `merge` approach. For more information on `rebase` and guidance on which method is right for your scenario, see [Apply changes with Rebase - When to rebase vs. merge](rebase.md#when-to-rebase-vs-merge) and [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge) from the Pro Git book.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 > [!NOTE]
 > The `git pull origin main` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 

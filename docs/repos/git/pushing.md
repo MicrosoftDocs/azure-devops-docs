@@ -13,11 +13,11 @@ monikerRange: '<= azure-devops'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-Share changes made in [commits](commits.md) and [branches](branches.md) using the `push` command.
+Share changes made in [commits](commits.md) and [branches](./create-branch.md) using the `push` command.
 Push your branches to the remote repository. Git adds your commits to an existing branch on the remote or creates a new branch with the same commits as your local branch.
 
 Git makes sure that pushed changes are consistent with the remote branch. Others can [pull](pulling.md) your commits and merge them into their own local copy of the branch.
-Pushed branches that have finished work are reviewed and merged into the main branch of your repo through a [pull request](pullrequest.md).
+Pushed branches that have finished work are reviewed and merged into the main branch of your repo through a [pull request](pull-requests.md).
 
 In this tutorial you learn how to:
 
@@ -92,4 +92,4 @@ If there are [conflicts](merging.md) between your local commits and the remote b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Review code with pull requests](pullrequest.md) or [update code with fetch and pull](pulling.md)
+> [Review code with pull requests](pull-requests.md) or [update code with fetch and pull](pulling.md)

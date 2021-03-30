@@ -31,4 +31,4 @@ Boards are automatically created when you create a project or add a team. Each t
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 * Users with **Stakeholder** access can't exercise these board features: add work items, drag-and-drop work items to update status, or update fields displayed on cards. They can add tasks and change task status. 
 
-::: moniker-end 
+::: moniker-end

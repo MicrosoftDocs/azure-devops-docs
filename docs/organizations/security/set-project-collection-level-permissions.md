@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 01/25/2021
 --- 
+
 
 # Set permissions at the project- or collection-level
 
@@ -69,7 +70,7 @@ For a description of each group and each permission, see [Permissions and groups
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group. If you created the organization or collection, you are automatically added as a member of this group. 
 
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
 
 <a id="project-level" />
 
@@ -557,4 +558,4 @@ A: You can find detailed information about individual permissions and their rela
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Trace permissions](faq-trace-permissions.md) 
+- [Troubleshoot permissions](troubleshoot-permissions.md)

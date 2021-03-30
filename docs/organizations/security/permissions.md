@@ -668,15 +668,15 @@ So the full name of the administrator group for the default collection is
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-       Project-scoped Users
+       Project-Scoped Users <a id="project-scoped-user-group" />
    :::column-end:::
    :::column span="1":::
-       Has limited access to view organization settings and projects other than those projects they are specifically added to. 
+       Has limited access to view organization settings and projects other than those projects they are specifically added to. Also, people picker options are limited to those users and groups that have been explicitly added to the project the user is connected to.
    :::column-end:::
    :::column span="2":::
-       Add users to this group when you want to limit their access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+       Add users to this group when you want to limit their visibility and access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
        > [!NOTE]   
-       > Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
+       > The **Project-Scoped Users** group becomes available with restricted access when the organization-level preview feature, **Limit user visibility for projects** is enabled. To learn more, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group).
    :::column-end:::
 :::row-end:::
 ---
@@ -3531,4 +3531,4 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
- 
+- [Troubleshoot permissions](troubleshoot-permissions.md)

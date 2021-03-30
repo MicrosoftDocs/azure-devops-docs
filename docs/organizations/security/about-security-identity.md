@@ -1,7 +1,7 @@
 ---
-title: Learn about security, authentication, authorization, and security policies  
+title: About security, authentication, authorization, and security policies 
 titleSuffix: Azure DevOps
-description: Understand how Azure DevOps manages security through authentication, authorization, and policies 
+description: Learn how Azure DevOps manages security through authentication, authorization, and policies 
 ms.technology: devops-security
 ms.assetid: 
 toc: show
@@ -122,7 +122,7 @@ While the main types of accounts of interest are the user accounts that you add 
 
 ::: moniker range="azure-devops"
 - **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions; find an admin](lookup-organization-owner-admin.md#find-owner). 
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level groups). 
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
 - **Service principals**: Internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
@@ -131,7 +131,7 @@ While the main types of accounts of interest are the user accounts that you add 
 
 
 ::: moniker range="< azure-devops"
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level groups). 
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level-groups). 
 - **Service principals**: Internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
@@ -238,15 +238,19 @@ To secure your organization and code, you can set a number of policies. Specific
 
 <a id="project-scoped-user-group" /> 
 
-### Project-scoped User group 
+### Project-Scoped Users group 
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted in the following ways: 
+- Can only access the **Overview** and **Projects** pages of **Organization Settings**.
+- Can only connect and view those projects to which they've been added to explicitly (see [Add users to a project or team](add-users-team-project.md). 
+- Can only select user and group identities that have been added explicitly to the project they are connected to. 
 
-To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+To learn more about the **Limit user visibility for projects**, see [About projects, Limit user visibility for projects](../projects/about-projects.md#project-scoped-user-group). To enable the feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 ### Git repository and branch policies 
+
 - [Configure repository settings and policies](../../repos/git/repository-settings.md)
 - [Configure branch policies](../../repos/git/branch-policies.md)
 - [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)

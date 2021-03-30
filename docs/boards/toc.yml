@@ -155,14 +155,14 @@
   - name: Bulk add or modify work items (Excel)
     href: backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Excel FAQs
-    href: backlogs/office/faqs.md
-  - name: "Create backlog items & tasks (Project)"
+    href: backlogs/office/faqs.yml
+  - name: Create backlog items & tasks (Project) 
     href: backlogs/office/create-your-backlog-tasks-using-project.md
-  - name: Schedule projects using Project
+  - name: Schedule projects (Project) 
     href: backlogs/office/schedule-projects-using-microsoft-project.md
-  - name: Storyboard your ideas
+  - name: Storyboard your ideas (PowerPoint)
     href: backlogs/office/storyboard-your-ideas-using-powerpoint.md
-  - name: Add & share storyboard shapes
+  - name: Add & share storyboard shapes (PowerPoint)
     href: backlogs/office/add-share-storyboard-shapes.md
   - name: Troubleshooting
     items:
@@ -234,7 +234,7 @@
   - name: What is Agile development?
     href: /azure/devops/learn/agile/what-is-agile-development
   - name: Agile culture
-    href: /azure/devops/boards/plans/agile-culture
+    href: ./plans/agile-culture.md
   - name: Creating productive teams
     href: /azure/devops/learn/agile/productive-teams
   - name: What is Scrum?

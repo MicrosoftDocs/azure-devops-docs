@@ -94,8 +94,8 @@ To learn more about each page, see the following articles.
 <li><a href="../repos/git/creatingrepo.md" data-raw-source="[Create a new repo](../repos/git/creatingrepo.md)">Create a new repo</a></li>
 <li><a href="../repos/git/clone.md" data-raw-source="[Clone an existing repo](../repos/git/clone.md)">Clone an existing repo</a></li>
 <li><strong>Changes</strong>: <a href="../repos/git/commits.md" data-raw-source="[Save work with commits](../repos/git/commits.md)">Save work with commits</a></li>
-<li><strong>Branches</strong>: <a href="../repos/git/branches.md" data-raw-source="[Create work in branches](../repos/git/branches.md)">Create work in branches</a></li>
-<li><strong>Pull Requests</strong>: <a href="../repos/git/pullrequest.md" data-raw-source="[Review code with pull requests](../repos/git/pullrequest.md)">Review code with pull requests</a></li>
+<li><strong>Branches</strong>: <a href="/azure/devops/repos/git/create-branch" data-raw-source="[Create work in branches](../repos/git/create-branch.md)">Create work in branches</a></li>
+<li><strong>Pull Requests</strong>: <a href="../repos/git/pull-requests.md" data-raw-source="[Review code with pull requests](../repos/git/pull-requests.md)">Review code with pull requests</a></li>
 <li><strong>Sync</strong>: <a href="../repos/git/pulling.md" data-raw-source="[Update code with fetch and pull](../repos/git/pulling.md)">Update code with fetch and pull</a></li>
 <li><strong>Tags</strong>: <a href="../repos/git/git-tags.md" data-raw-source="[Work with Git tags](../repos/git/git-tags.md)">Work with Git tags</a></li>
 <li><a href="../repos/git/git-config.md" data-raw-source="[Git preferences](../repos/git/git-config.md)">Git preferences</a></li>

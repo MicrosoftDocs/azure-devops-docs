@@ -13,7 +13,7 @@ ms.date: 08/18/2020
 
 
 
-# Configure and customize Azure Boards 
+# Configure and customize Azure Boards  
 
 [!INCLUDE [temp](includes/version-vsts-only.md)]
 
@@ -434,7 +434,7 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 
 
 > [!NOTE]   
-> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
+> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
 
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
