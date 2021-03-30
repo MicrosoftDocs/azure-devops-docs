@@ -3,10 +3,9 @@ title: Guide for getting started with Azure Repos
 titleSuffix: Azure Repos 
 description: Sign up and get started using Azure Repos 
 ms.technology: devops-new-user
-ms.assetid:  
-ms.date: 09/10/2018
 ms.custom: seo-javascript-september2019
 monikerRange: '>= tfs-2013'
+ms.date: 03/18/2021
 ---
 
 # Start using Azure Repos
@@ -19,7 +18,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
-After you sign up, learn how to [code with Git](code-with-git.md). Whether your code is in Azure Repos, in a GitHub repo, or on your local computer, this guide shows you how to get started.
+After you sign up, learn how to [code with Git](../../user-guide/code-with-git.md?view=azure-devops&preserve-view=true). Whether your code is in Azure Repos, in a GitHub repo, or on your local computer, this guide shows you how to get started.
 
 Other resources to get you up and running:
 

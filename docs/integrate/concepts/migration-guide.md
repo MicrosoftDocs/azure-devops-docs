@@ -45,7 +45,7 @@ For sample code covered in these scenarios, see the [GitHub Azure DevOps WIT Cli
 
 - [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)
 - [Migration guide with code samples](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide)
-- [Work Item Tracking REST API documentation](https://docs.microsoft.com/rest/api/azure/devops/wit/?view=azure-devops-rest-6.0&preserve-view=true)
+- [Work Item Tracking REST API documentation](/rest/api/azure/devops/wit/?preserve-view=true&view=azure-devops-rest-6.0)
 
 ## Support
 

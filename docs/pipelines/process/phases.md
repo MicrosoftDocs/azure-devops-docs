@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -107,7 +107,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 The full syntax to specify a job is:
 
@@ -136,6 +136,40 @@ The full syntax to specify a job is:
 ```
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+The full syntax to specify a job is:
+
+```yaml
+- job: string  # name of the job, A-Z, a-z, 0-9, and underscore
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  strategy:
+    parallel: # parallel strategy
+    matrix: # matrix strategy
+    maxParallel: number # maximum number simultaneous matrix legs to run
+    # note: `parallel` and `matrix` are mutually exclusive
+    # you may specify one or the other; including both is an error
+    # `maxParallel` is only valid with `matrix`
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  pool: pool # agent pool
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  container: containerReference # container to run this job inside
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: { string: string } | [ variable | variableReference ] 
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+  services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
+```
+
+::: moniker-end
+
 ::: moniker range=">=azure-devops-2020"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
@@ -290,7 +324,7 @@ Currently, only the following tasks are supported out of the box for agentless j
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
 
-Because tasks are extensible, you can add more agentless tasks by using extensions.
+Because tasks are extensible, you can add more agentless tasks by using extensions. The default timeout for agentless jobs is 60 minutes.  
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

@@ -8,7 +8,7 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2021
+ms.date: 03/30/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -26,7 +26,9 @@ For organizations connected to Azure AD, if your organization Owner and all othe
 ## Prerequisites
 
 - You must be an [Azure DevOps Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#azure-devops-administrator) in Azure AD. It isn't a requirement to be a Project Collection Administrator.
-- The Azure DevOps Administrator can only claim ownership of organizations where the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD.
+- The Azure DevOps Administrator role can only claim ownership of organizations in the following instances:
+  - when the current owner and all members of the Project Collection Administrators group are inactive in the backing Azure AD
+  - when individual users, rather than groups, are assigned to the Azure DevOps Administrator role
 
 ### Find your Azure DevOps Administrator
 

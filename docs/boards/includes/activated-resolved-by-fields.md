@@ -15,12 +15,12 @@ ms.date: 08/06/2020
 
 The system updates these fields&mdash;**Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date**&mdash;when a change occurs based on corresponding workflow category states. When the workflow state changes to a *Proposed* state category, **Activated By** and **Activated Date** are updated. When the workflow state changes to a *Resolved* state category, **Resolved By** and **Resolved Date** are updated. 
 
-To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/boards/work-items/workflow-and-state-categories). 
+To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md). 
 
 > [!NOTE]   
 > The logic governing the fields described here applies to Azure DevOps Services only.   
    
-Because these fields reference the workflow state categories, custom workflow states that you add are referenced when updating the fields. To learn more about customization, see [Customize the workflow for a process](/azure/devops/organizations/settings/work/customize-process-workflow). 
+Because these fields reference the workflow state categories, custom workflow states that you add are referenced when updating the fields. To learn more about customization, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
 
 #### Additional notes:
 

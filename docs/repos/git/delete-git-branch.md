@@ -62,5 +62,4 @@ git push origin --delete <branch_name>
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Restore a deleted branch](/azure/devops/repos/git/restore-deleted-branch)
-
+> [Restore a deleted branch](./restore-deleted-branch.md)
