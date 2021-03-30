@@ -52,6 +52,7 @@ For descriptions of each of these fields, see the [table provided later in this 
 ## Supported operators and macros 
 
 Query clauses that specify an integer field can use the operators listed below.
+
 `= , <> , > , < , >= , <= ,`  
 `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field],`   
 `In, Not In,`   
@@ -373,5 +374,4 @@ All tabs that support creating links between work items are implemented by using
 You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 ::: moniker-end 
-
 
