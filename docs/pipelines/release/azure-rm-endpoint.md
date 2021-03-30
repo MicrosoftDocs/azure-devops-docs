@@ -53,8 +53,11 @@ Errors that may occur when the system attempts to create the service connection 
 * [A valid refresh token was not found](#sessionexpired)
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
+* [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
+* [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
 
 <a name="privileges"></a>
 
@@ -177,6 +180,20 @@ To fix this issue you will need to modify the supported account types and who ca
 
 1. Select **Save**.
 
+<a name="subscription-isnt-listed-service-connection"></a>
+
+### Subscription isn't listed when creating a service connection
+
+A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete these steps:
+
+1. Create a new, native Azure AD user in the Azure AD instance for the Azure subcription. 
+
+1. Set up the Azure AD user so that it has the proper permissions in the Azure subcription to set up Azure DevOps billing or a service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+ 
+1. Add the Azure AD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+
+1. Log in to Azure DevOps as this user and set up a billing service connection. You'll only see one Azure subcription in the list.
+
 <a name="autoCreatedSecretExpiration"></a>
 
 ### Automatically created service principal client secret has expired
@@ -217,6 +234,18 @@ To resolve this issue:
 1. Click **Verify**.
 
 1. Save the service connection.
+
+<a name="cant-create-service-connection-manually"></a>
+
+### Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell
+
+To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
+
+### Azure subscription not taken directly from previous task output
+
+When you set an Azure subscription dynamically for the release pipeline and the subscription is an output variable from a preceding task, you might encounter this issue. 
+
+To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or the service connection.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 

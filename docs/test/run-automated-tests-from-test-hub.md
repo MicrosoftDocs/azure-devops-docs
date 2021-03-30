@@ -49,7 +49,7 @@ You must also be a Project Contributor, or have the following permissions:
 * Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#release-permissions).
+[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
 
 ## Set up your environment
 
@@ -227,7 +227,7 @@ You must be a Project Contributor, or have the following permissions:
 * Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#release-permissions).
+[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
 
@@ -383,7 +383,7 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
      the user in the **Security** menu of the release pipeline.
-     See [Release permissions](../pipelines/policies/permissions.md#release-permissions).<p />
+     See [Release permissions](../pipelines/policies/permissions.md#set-release-permissions).<p />
    
 * I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do this in the work item

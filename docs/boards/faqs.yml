@@ -8,6 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
+  "recommendations": "true"
   ms.date: 02/03/2021
 
 
@@ -122,7 +123,7 @@ sections:
           ::: moniker-end
 
 
-  - name: Backlogs and boards 
+  - name: Backlogs and Boards 
 
     questions: 
       - question: What's the difference between a backlog and a board?  

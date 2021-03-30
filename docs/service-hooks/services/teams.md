@@ -20,9 +20,9 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 * Release deployments and approvals
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 > [!NOTE]
-> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
+> For Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
 
 ### Azure Boards app for Teams
 
@@ -38,7 +38,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 ## Configure a new connector for Azure DevOps Server
 

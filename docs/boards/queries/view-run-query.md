@@ -150,9 +150,9 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Run a query, open the context menu for a query  |✔️ |✔️ |
 > |Expand or collapse container folders or query folders |✔️ |✔️ |
 > |Filter the list of queries |✔️ |✔️ |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
-> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
+> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 ::: moniker-end	
 

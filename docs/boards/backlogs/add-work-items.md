@@ -211,7 +211,7 @@ There is no way to use Visual Studio 2019 to update a work item at this time.
 
 ### Update a work item
 
-You can make updates to your work items with the [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item update --id
@@ -270,7 +270,7 @@ az boards work-item update --id 864  --discussion  "This work item is about 50% 
 
 ### Show details for a work item
 
-You can show the details for a work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item show --id

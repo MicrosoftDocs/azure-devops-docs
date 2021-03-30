@@ -185,7 +185,7 @@ From the Azure DevOps CLI command, you can list teams, add teams, and run other 
 
 ### List teams 
 
-You can list teams using [Azure DevOps team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list teams using [Azure DevOps team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -237,7 +237,7 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 
 ### Add a team 
 
-You can add a team using [Azure DevOps team create](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can add a team using [Azure DevOps team create](/cli/azure/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -406,7 +406,7 @@ Now that your two feature teams are configured, you need to move existing work i
 
 ::: moniker range=">= azure-devops-2020"
 
-You can move work items to a new area paths using [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
+You can move work items to a new area paths using [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -615,7 +615,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -698,6 +698,6 @@ Configure your Agile tools to support how your team works. Also, consider adding
 
 - [Rename or remove a team](rename-remove-team.md)
 - [About teams and Agile tools](about-teams-and-settings.md)
-- [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
+- [Azure DevOps Teams CLI](/cli/azure/devops/team)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Work Items (REST API)](/rest/api/azure/devops/wit)

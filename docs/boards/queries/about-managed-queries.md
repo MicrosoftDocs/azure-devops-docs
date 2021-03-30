@@ -152,10 +152,14 @@ Azure Boards supports three query types. The icon next to each query indicates t
       **Work items and direct links**
    :::column-end:::
    :::column span="3":::
+      - List items which are dependent on other work items
+      - Find items related or dependent on other work items
       - List linked work items to perform bulk updates to fields 
       - Triage a list of linked work items  
-
-        Exporting to Excel exports as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
+      - List test-related linked work items 
+      - Find orphaned backlog items, work items that have no parent 
+      > [!NOTE]
+      > **Work items and direct links** queries export to Excel as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
    :::column-end:::
 :::row-end:::
 ---
@@ -215,8 +219,8 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 You can quickly create pie, bar, pivot, and trend charts from a flat-list query. Queries must be flat-list and return 1000 or less work items. You can add your query charts to a dashboard, retitle, and reconfigure them. 
 
-| ![Example pie chart.](media/about-queries/example-pie-chart.png)  |   ![Example pivot chart.](media/about-queries/example-pivot-chart.png) |
-| ![Example bar chart.](media/about-queries/example-bar-chart.png)  |   ![Example trend chart.](media/about-queries/example-trend-chart.png) |
+ ![Example pie chart.](media/about-queries/example-pie-chart.png)  ![Example pivot chart.](media/about-queries/example-pivot-chart.png) 
+ ![Example bar chart.](media/about-queries/example-bar-chart.png)  ![Example trend chart.](media/about-queries/example-trend-chart.png) 
 
 Query-based widgets provide support for presenting query information on a dashboard. For example, the number of active bugs or a list of work items that you can interact with. To learn about query charts and widgets, see these articles: 
  

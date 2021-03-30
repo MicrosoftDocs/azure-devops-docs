@@ -56,7 +56,7 @@ Git doesn't create multiple copies of your source when working with branches&mda
 
 Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bug fixes.
 
-The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pullrequest.md) all work through branches.
+The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pull-requests.md) all work through branches.
 
 Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
@@ -106,7 +106,7 @@ Set up your development environment one time after you [clone](clone.md). Then, 
 
 Learn how to complete common tasks when working with branches.
 
-- [Branches tutorial](branches.md)
+- [Branches tutorial](./create-branch.md)
 - [How to create a branch](create-branch.md)
 - [How to delete a branch](delete-branch.md)
 - [Restore a deleted branch](restore-deleted-branch.md)
