@@ -217,6 +217,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
 - [Permissions and groups reference](permissions.md)  
 - [Security namespace and permission reference](namespace-reference.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2020" 
@@ -229,6 +230,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
 - [Permissions and groups reference](permissions.md)  
 - [Security namespace and permission reference](namespace-reference.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2020" 
@@ -239,4 +241,5 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Permissions and groups reference](permissions.md)  
 - [Security namespace and permission reference](namespace-reference.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 ::: moniker-end  

@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/09/2021
+ms.date: 03/30/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -41,5 +41,9 @@ A: No, we don't have a REST API to renew a PAT. You can only regenerate a PAT wi
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
 A: No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops/) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
+
+### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
+
+A: Azure DevOps scans for PATs checked into public repositories on GitHub. When a leaked token is discovered, we immediately send a detailed email notification to the token owner and log an event to your Azure DevOps organization's [audit log](../audit/azure-devops-auditing.md#review-audit-log). We encourage impacted users to mitigate immediately by [rotating or revoking the leaked PAT](use-personal-access-tokens-to-authenticate.md#revoke-a-pat).
 
 ::: moniker-end
