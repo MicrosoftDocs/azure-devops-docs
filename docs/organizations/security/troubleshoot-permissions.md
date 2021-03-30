@@ -54,7 +54,7 @@ Less common reasons for limited access are when one of the following events has 
 |---------|---------|
 |A project administrator disabled a service. In this case, no one has access to the disabled service.    | To determine whether a service is disabled, see [Turn an Azure DevOps service on or off](../settings/set-services.md).        |
 |A Project Collection Administrator disabled a preview feature, which disables it for all project members in the organization.    | See [Manage preview features](../../project/navigation/preview-features.md).        |
-|Group rules governing the user’s access level or project membership are restricting access.    |See [Determine a user's access level and subscription status].(#determine-a-users-access-level-and-subscription-status).         |
+|Group rules governing the user’s access level or project membership are restricting access.    |See [Determine a user's access level and subscription status](#determine-a-users-access-level-and-subscription-status).         |
 |Custom rules have been defined to a work item type’s workflow.   |see [Rules applied to a work item type that restrict select operation](#rules-applied-to-a-work-item-type-that-restrict-select-operations).          |
 
 ## Determine a user's access level and subscription status
@@ -142,13 +142,13 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 1.	Go to the Security page for the project that the user is having access problems.
 2.	Enter their name into the box in the upper left-hand corner.
    
-   :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Enter user name to view permissions.":::
+    :::image type="content" source="media/security-page-enter-user-name.png" alt-text="Enter user name to view permissions.":::
 
-   You should have a user-specific view that shows what permissions they have.
+    You should have a user-specific view that shows what permissions they have.
 
 3.	Trace why a user does or doesn't have any of the listed permissions. Hover over the permission, and then choose **Why**.
 
-   :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
+    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions provided to the groups they're in.
 
@@ -230,14 +230,14 @@ You can use the following tools to fix a user's permission issue.
 
 - TFSSecurity.exe - TFSSecurity is a command-line tool that can be used to view and update and delete permissions or groups. 
 
-Example usage:
-`tfssecurity /a+ Identity "81e4e4b5-bde0-4f2c-a7a5-4d25c2e8a81f\" Read "Project Collection Valid Users" ALLOW /collection:{collectionUrl}`
+   Example usage:
+   `tfssecurity /a+ Identity "81e4e4b5-bde0-4f2c-a7a5-4d25c2e8a81f\" Read "Project Collection Valid Users" ALLOW /collection:{collectionUrl}`
 `tfssecurity /a- Identity "3c7a0a47-27b4-4def-8d42-aab9b405fc8a\" Write n:"[Project1]\Contributors" DENY /collection:{collectionUrl}`
 
 - Use the public sproc
 
-Example usage:
-Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
+   Example usage:
+   Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
 
 For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd.md).
 
