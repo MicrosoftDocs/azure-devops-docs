@@ -158,35 +158,35 @@ steps:
 
 <a name="release-application"></a>
 
-## Release the application to Azure resources provisioned by Terraform
+## Release pipeline
 
-Now that the application has been built, it's time to release it. However, no deployment infrastructure has been created yet. This is where Terraform comes in. By following the definition file reviewed earlier, Terraform will be able to ensure the expected state of the Azure infrastructure meets the application's needs before it is published.
+Now that we built our application, it's time to deploy it. However, no deployment infrastructure has been created yet. This is where Terraform comes in. By following the definition file reviewed earlier, Terraform determines what actions are necessary to achieve the state outlined in the config file.
 
 ### [Classic](#tab/classic/)
 
-1. Navigate to **Releases** under **Pipelines** and select the **Terraform-CD** pipeline. Select **Edit**.
+1. Navigate to **Releases** and select the **Terraform-CD** pipeline. Select **Edit** to review or edit the pipeline.
 
-    ![Selecting the CD pipeline](media/automate-terraform/select-cd-pipeline.png)
+    ::image type="content" source="media/automate-terraform/select-cd-pipeline.png" alt-text="Select release pipeline":::
 
-1. The CD pipeline has been configured to accept the artifacts published by the CI pipeline. There is only one stage, which is the **Dev** stage that performs the deployment. Select it to review its tasks.
+1. The release pipeline has been configured to consume the build artifact. Select the **Dev** stage to review or edit its tasks.
 
-    ![Viewing CD pipeline stages](media/automate-terraform/cd-pipeline.png)
+    ::image type="content" source="media/automate-terraform/cd-pipeline.png" alt-text="Artifacts and stages":::
 
-1. There are eight tasks defined in the release stage. Most of them require some configuration to work with the target Azure account.
+1. There are eight tasks defined in the release stage. Most of them require some configuration to work with your Azure account. Select each task and enter your Azure subscription in the appropriate field.
 
-    ![Viewing CD pipeline tasks](media/automate-terraform/cd-pipeline-tasks.png)
+    ::image type="content" source="media/automate-terraform/cd-pipeline-tasks.png" alt-text="Dev stage tasks":::
 
-1. Select the **Agent job** and configure it to use the **Azure Pipelines** agent pool and **vs2017-win2016** specification.
+1. Select **Agent job** and set up the **Agent pool** and **Agent specification**.
 
-    ![Configuring the CD agent](media/automate-terraform/configure-cd-agent.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-agent.png" alt-text="Set up agent pool and specification":::
 
-1. Select the **Azure CLI** task and configure it to use a service connection to the target Azure account. If the target Azure account is under the same user logged in to Azure DevOps, then available subscriptions can be selected and authorized from the dropdown. Otherwise, use the **Manage** link to manually create a service connection. Once created, this connection can be reused for future tasks.
+1. Select the **Azure CLI** task and add your **Azure subscription**.
 
-    ![Configuring the Azure CLI task](media/automate-terraform/configure-cd-azure-cli.png)
-
+    ::image type="content" source="media/automate-terraform/configure-cd-azure-cli.png" alt-text="Set up the Azure CLI task":::
+    
     This task executes a series of Azure CLI commands to set up some basic infrastructure required to use Terraform.
 
-    ```azurecli
+    ```Command
 	# this will create Azure resource group
 	az group create --location westus --name $(terraformstoragerg)
 	
@@ -197,15 +197,15 @@ Now that the application has been built, it's time to release it. However, no de
 	az storage account keys list -g $(terraformstoragerg) -n $(terraformstorageaccount)
     ```
 
-    By default, Terraform stores state locally in a file named **terraform.tfstate**. When working with Terraform in a team, use of a local file makes Terraform implementation complicated. With remote state, Terraform writes the state data to a remote data store. Here the pipeline uses an Azure CLI task to create an Azure storage account and storage container to store the Terraform state. For more information on Terraform remote state, see Terraform's docs for working with [Remote State](https://www.terraform.io/docs/state/remote.html).
+    By default, Terraform stores state locally in **terraform.tfstate**. When working in a team environment, using a local file makes Terraform implementation more complicated. With remote state, Terraform writes the state data to a remote data store. In our example, the Azure CLI task creates an Azure storage account and a storage container to store the Terraform state. For more information on Terraform remote state, see [Remote State](https://www.terraform.io/docs/state/remote.html).
 
-1. Select the **Azure PowerShell** task and configure it to use the **Azure Resource Manager** connection type and use the service connection created earlier. 
+1. Select the **Azure PowerShell** task and set up the **Azure Resource Manager** and **Azure subscription** fields. 
 
-    ![Configuring the Azure Powershell task](media/automate-terraform/configure-cd-powershell.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-powershell.png" alt-text="Configure Azure Powershell task":::
+    
+    This task uses a PowerShell script to retrieve the storage account key needed for the Terraform provisioning.
 
-    This task uses PowerShell commands to retrieve the storage account key needed for the Terraform provisioning.
-
-	```azurepowershell
+	```Command
 	# Using this script we will fetch storage key which is required in terraform file to authenticate backend storage account
 	
 	$key=(Get-AzStorageAccountKey -ResourceGroupName $(terraformstoragerg) -AccountName $(terraformstorageaccount)).Value[0]
@@ -213,67 +213,62 @@ Now that the application has been built, it's time to release it. However, no de
 	Write-Host "##vso[task.setvariable variable=storagekey]$key"
 	```
 
-1. Select the **Replace tokens** task. If you recall the **webapp.tf** file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task replaces those tokens with variable values relevant to the deployment, including those from the pipeline's **Variables**. You may review those under **Variables** if you like, but return to **Tasks** afterwards.
+1. Select the **Replace tokens in terraform file** task. If you recall the  file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task assigns values during run-time to some of the variables in the **webapp.tf** config file including those from the pipeline's **Variables** section.
 
-    ![Select the Replace tokens task.](media/automate-terraform/cd-variables.png)
+    ::image type="content" source="media/automate-terraform/cd-variables.png" alt-text="Replace tokens task":::
 
-1. Select the **Install Terraform** task. This installs and configures the specified version of Terraform on the agent for the remaining tasks.
+1. The **Install Terraform** task installs and configures the specified version of Terraform on the agent for the remaining tasks.
 
     When running Terraform in automation, the focus is usually on the core plan/apply cycle. The next three tasks follow these stages.
 
-    ![Terraform workflow](media/automate-terraform/terraform-workflow.png)
+    ::image type="content" source="media/automate-terraform/terraform-workflow.png" alt-text="Terraform workflow":::
 
-1. Select the **Terraform init** task. This task runs the **terraform init** command. This command looks through all of the *.tf files in the current working directory and automatically downloads any of the providers required for them. In this example, it will download Azure provider as it is going to deploy Azure resources. For more information, see Terraform's documentation for the [init command](https://www.terraform.io/docs/commands/init.html). 
+1. The **Terraform init** task runs the **init** command to look through all of the *.tf files in the current working directory and automatically downloads any of the required providers. In this example, it will download Azure provider as it is going to deploy Azure resources.
 
-    Select the **Azure subscription** created earlier and enter **terraform** as the container. Note that the key is set to **terraform.tfstate**.
+    Set up the **Azure subscription**, **container**, and **Key** fields.
 
-    ![Configuring the Terraform init task](media/automate-terraform/configure-cd-terraform-init.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-terraform-init.png" alt-text="Set up Terraform init task":::
 
-1. Select the **Terraform plan** task. This task runs the **terraform plan** command. This command is used to create an execution plan by determining what actions are necessary to achieve the desired state specified in the configuration files. This is just a dry run and shows which actions will be performed. For more information, see Terraform's documentation for the [plan command](https://www.terraform.io/docs/commands/plan.html).
+1. The **Terraform plan** task runs the **plan** command to create an execution plan by determining what actions are necessary to achieve the desired state specified in the configuration files. This is just a dry run and shows which actions will be performed.
 
-    Select the **Azure subscription** created earlier.
+    Enter your **Azure subscription** in the appropriate field.
 
-    ![Configuring the Terraform plan task](media/automate-terraform/configure-cd-terraform-plan.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-terraform-plan.png" alt-text="Set up Terraform plan task":::
 
-1. Select the **Terraform apply** task. This task runs the **terraform validate and apply** command. This command deploys the resources. By default, it will also prompt for confirmation before applying. Since this is an automated deployment, the **auto-approve** argument is included. For more information, see Terraform's documentation for the [plan command](https://www.terraform.io/docs/commands/apply.html).
+1. The **Terraform apply** task runs the **apply** command to deploy the resources. By default, it will also prompt for confirmation before applying. Since this is an automated deployment, the **auto-approve** argument is included.
 
-    Select the **Azure subscription** created earlier.
+    Enter your **Azure subscription** in the appropriate field.
 
-    ![Configuring the Terraform apply task](media/automate-terraform/configure-cd-terraform-apply.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-terraform-apply.png" alt-text="Set up Terraform apply task":::
 
-1. Select the **Azure App Service Deploy** task. Select the **Azure subscription** created earlier. By the time this task runs, Terraform has ensured that the deployment environment has been configured to meet the app's requirements. It will use the created app service name set in the **Variables** section.
+1. Select the **Azure App Service Deploy** task and enter your **Azure subscription**. By the time this task runs, Terraform has already ensured that the deployment environment has been configured to meet the app's requirements. It will use the $(appservicename) from the **Variables** section.
 
-    ![Configuring the app service deployment task](media/automate-terraform/configure-cd-app-service-deploy.png)
+    ::image type="content" source="media/automate-terraform/configure-cd-app-service-deploy.png" alt-text="Set up the app service deployment task":::
 
-1. From the top of the page, select **Save** and confirm.
+1. Select **Save** then confirm.
 
-1. Select **Create release**. Specify the recent build and select **Create**. Your build number will most likely be different than this example.
+1. Select **Create release** and specify the recent build's Artifact then select **Create**.
 
-    ![Creating a release](media/automate-terraform/cd-create-release.png)
+    ::image type="content" source="media/automate-terraform/cd-create-release.png" alt-text="Create a release":::
 
-1. Select the new release to track the pipeline.
+1. Select the new release to view the pipeline's execution.
 
-    ![Following the release](media/automate-terraform/view-release.png)
+    ::image type="content" source="media/automate-terraform/view-release.png" alt-text="View release pipeline execution":::
 
-1. Click through to track task progress.
+1. Once the release is completed, select the **Azure App Service Deploy** task.
 
-    ![Tracking the release](media/automate-terraform/tracking-release.png)
+    ::image type="content" source="media/automate-terraform/completed-pipeline.png" alt-text="Select the Azure App Service Deploy task":::
 
-1. Once the release has completed, select the **Azure App Service Deploy** task.
+1. Copy the name of the app service from the task title.
 
-    ![Select the Azure App Service Deploy task.](media/automate-terraform/completed-pipeline.png)
+    ::image type="content" source="media/automate-terraform/app-service-name.png" alt-text="Copy the name of the app service":::
 
-1. Copy the name of the app service from the task title. Note that the name you see will vary slightly.
-
-    ![Copy the name of the app service from the task title.](media/automate-terraform/app-service-name.png)
-
-1. Open a new browser tab and navigate to the app service. The domain format is **[app service name].azurewebsites.net**, so the final URL will be something like:
+1. Open a new browser tab and navigate to your deployed website. The domain format is **[app service name].azurewebsites.net**:
  
-    ```
+    ```URL
     https://pulterraformweb99ac17bf.azurewebsites.net.
     ```
-
-    ![Open a new browser tab and navigate to the app service.](media/automate-terraform/deployed-app.png)
+    ::image type="content" source="media/automate-terraform/deployed-app.png" alt-text="Navigate to the deployed website":::
 
 ### [YAML](#tab/YAML/)
 
