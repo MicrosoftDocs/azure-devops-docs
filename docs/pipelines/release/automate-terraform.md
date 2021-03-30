@@ -31,17 +31,15 @@ In this tutorial, you will learn about:
 
 <a name="examine-terraform-file"></a>
 
-## Examine the Terraform file in your source code
+## Examine the Terraform config file
 
 This tutorial uses the PartsUnlimited project, a sample eCommerce website developed using .NET Core. The Terraform config file defines the Azure resources required to deploy our web application.
 
 1. Select **Repos** then select the **terraform** branch. 
 
-    ![Selecting the terraform branch](media/automate-terraform/select-branch.png)
+    :::image type="content" source="media/automate-terraform/select-branch.png" alt-text="Selecting the terraform branch":::
 
-    Make sure that you are now on the terraform branch and Terraform folder is there in the repo.
-
-1. Select the **webapp.tf** file under the **Terraform** folder. Review the code.
+1. Find and select the **webapp.tf** configuration file in your repo and review its content. In this example, we define the Azure resources that will be used to deploy our web application. Some variables will be populated during run time.
 
 	```
 	 terraform {
@@ -83,33 +81,29 @@ This tutorial uses the PartsUnlimited project, a sample eCommerce website develo
 	}
 	```
 
-    **webapp.tf** is a terraform configuration file. Terraform uses its own file format, called HCL (Hashicorp Configuration Language). The structure is similar to YAML. In this example, Terraform will deploy the Azure resource group, app service plan, and app service required to deploy the website. However, since the names of those resources are not yet known, they are marked with tokens that will be replaced with real values during the release pipeline.
-
-    As an added benefit, this Infrastructure-as-Code (IaC) file can be managed as part of source control. You may learn more about working with Terraform and Azure in [this Terraform Basics lab](https://archive.azurecitadel.com/automation/terraform/lab1/).
-
 <a name="build-application"></a>
 
-## Build the application using an Azure CI Pipeline
+## Azure build pipeline
 
-This DevOps project includes two separate pipelines for CI and CD. The CI pipeline produces the artifacts that will be released via the CD pipeline at a later point.
+This DevOps project includes two separate pipelines to build and deploy our web application. The build pipeline produces the artifacts that will be deployed by the release pipeline in the next section.
 
 ### [Classic](#tab/classic/)
 
 1. Navigate to **Pipelines** and select the **Terraform-CI** pipeline.
 
-    ![Selecting the CI pipeline](media/automate-terraform/select-ci-pipeline.png)
+    :::image type="content" source="media/automate-terraform/select-ci-pipeline.png" alt-text="Select the build pipeline":::
 
-1. Select **Edit**. This CI pipeline has tasks to compile the .NET Core project. These tasks restore dependencies, build, test, and publish the output as a zip file which can be deployed to an app service.
+1. Select **Edit** to review the tasks included in the pipeline. The .NET Core tasks help restore dependencies, build, test, and publish the build output as a zip file to be deployed to an app service.
 
-    ![The CI pipeline](media/automate-terraform/ci-pipeline.png)
+    ::image type="content" source="media/automate-terraform/ci-pipeline.png" alt-text="Pipeline tasks":::
 
-1. In addition to the application build, the pipeline publishes Terraform files as build artifacts so that they will be available to other pipelines, such as the CD pipeline to be used later. This is done via the **Copy files** task, which copies the Terraform folder to the Artifacts directory.
+1. The **Copy files** task copies the Terraform folder to the Artifact staging directory.
 
-    ![Publishing Terraform files](media/automate-terraform/publish-terraform.png)
+    ::image type="content" source="media/automate-terraform/publish-terraform.png" alt-text="Copy Terraform folder":::
 
-1. Select **Queue** to queue a new build. Select **Run** to use the default options. When the build page appears, select **Agent job 1**. The build may take a few minutes to complete.
+1. Select **Queue** then **Run** to queue and run your pipeline.
 
-    ![Tracking the build](media/automate-terraform/track-build.png)
+    ::image type="content" source="media/automate-terraform/track-build.png" alt-text="Queue and run pipeline":::
 
 ### [YAML](#tab/YAML/)
 
