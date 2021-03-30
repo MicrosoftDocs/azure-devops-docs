@@ -33,7 +33,7 @@ In keeping with Agile methods, you want to keep your change management process l
 This article maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
 
 
-## Where does change arise?   
+## Where does change arise? How can we minimize change?  
 
 Very briefly, valid changes can occur from a number of areas: 
 
@@ -44,7 +44,7 @@ Very briefly, valid changes can occur from a number of areas:
 - New dependencies are discovered  
 - Development or testing takes longer than expected.
 
-## Minimize changes that are avoidable 
+### Minimize changes that are avoidable 
 
 Less valid changes that can occur and contribute to scope creep include the following items. Many of these types of changes arise when a team is new to Agile methods and may not have completely adopted an Agile culture.  
 
@@ -59,7 +59,7 @@ Less valid changes that can occur and contribute to scope creep include the foll
 - Stakeholders and customer input isn't sought out early enough or well enough
 - Team members don't raise issues proactively. 
  
-## Adopt best change management practices
+### Adopt best change management practices
 
 To avoid some of these undesirable changes, you'll want to integrate  best change management practices into your organization culture.  
 - Continuous improvement 
@@ -85,41 +85,19 @@ To mitigate problems that arise from change, Agile project managers focus on the
 - Support a change management process  
 - Assist teams in their continual improvement processes.   
 
-
 > [!NOTE]
 > *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
  
-## Best practices for managing and minimizing change
+## Best practices for managing change
 
-You have several choices for managing change. From most lightweight to most robust, you moChanges should be added to the backlog, tag 
-
+Good practice is to constantly refine the backlog to ensure acceptance criteria is well defined and your team is building the software your customers want. 
+ 
 - Analyze and triage change requests
 - Determine the scope impact on current and planned work 
 - Assess the risks of accepting or rejecting the change
 - Eliminate as many approvals as possible
 - Have a light change control form as needed
 - Keep all stakeholders and teams involved. 
-
-Good practice is to constantly refine the backlog to ensure acceptance criteria is well defined and your team is building the software your customers want. 
-
-## Choices for tracking change 
-
-You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
-
-The methods you adopt will depend on several factors, such as the following:
-- Change management processes adopted by your organization
-- The need to maintain an audit trail 
-- Communicate changes occurring across teams ... .  
-
-You have several choices for tracking change. From most lightweight to most robust, you can use one or more of the following methods: 
-
-- Add information to an existing user story or work item that identifies the change
-- Tag user stories or work items with a change management tag 
-- Log changes to the backlog using a formal change request form  
-
-With any of these methods, you can generate a query, review and triage the change. In many cases, how you choose to track change should align with how you and your team choose to monitor and report the scope of change. When early on in the adoption of Agile methods, the need to monitor and track change may be greater than when a team has managed to forge an Agile culture. 
-
-In general, we recommend that you keep the process lightweight and eliminate as much waste as possible.
 
 ### Questions to ask before accepting a change
 
@@ -138,8 +116,46 @@ In general, we recommend that you keep the process lightweight and eliminate as 
 6. Learn the proper ways to communicate with stakeholders and your team
 7. Protect your team against “Gold plating”
 
+## Options for tracking change 
 
-## Ensure acceptance criteria is well defined
+You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
+
+The methods you adopt will depend on several factors, such as the following:
+- Change management processes adopted by your organization
+- The need to maintain an audit trail 
+- Communicate changes occurring across teams.
+
+You have several choices for tracking change. From most lightweight to most robust, you can use one or more of the following methods: 
+
+- Add information to an existing user story or work item that identifies the change
+- Tag user stories or work items with a change management tag 
+- Log changes to the backlog using a formal change request form  
+
+With any of these methods, you can generate a query, review and triage the change. In many cases, how you choose to track change should align with how you and your team choose to monitor and report the scope of change. When early on in the adoption of Agile methods, the need to monitor and track change may be greater than when a team has managed to forge an Agile culture. 
+
+In general, we recommend that you keep the process lightweight and eliminate as much waste as possible.
+
+
+### Change request form 
+
+To formally track change, you may want to define a change request work item type, similar to the one shown in the following image for the [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process).
+
+> [!div class="mx-imgBorder"]  
+> ![Change request work item form.](media/manage-change/change-request-form.png) 
+
+This form provides rich-text fields to capture the impact of the change on the following areas: 
+- Architecture
+- User experience
+- Test
+- Design and development
+- Technical publications 
+
+You can adopt this form or customize your own to track the changes of most interest to your organization's needs. You can also customize your backlog to have change requests appear on your backlog along with other user stories or requirements. 
+ 
+Also, you can customize your backlogs and boards to manage change request work items alongside requirements. 
+
+
+### Ensure acceptance criteria is well defined
 
 The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
 
@@ -190,28 +206,15 @@ Here are the main ways you can track change:
 - Add a change request work item type to formally track 
 - Set up notifications to automatically communicate change within your team or organization 
 
-## Change request form 
-
-To formally track change, you may want to define a change request work item type, similar to the one shown in the following image for the [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process).
-
-> [!div class="mx-imgBorder"]  
-> ![Change request work item form.](media/manage-change/change-request-form.png) 
-
-This form provides rich-text fields to capture the impact of the change on the following areas: 
-- Architecture
-- User experience
-- Test
-- Design and development
-- Technical publications 
-
-You can adopt this form or customize your own to track the changes of most interest to your organization's needs. 
- 
-Also, you can customize your backlogs and boards to manage change request work items alongside requirements. 
  
 ## Monitor and report on changes    
 
+
 How to monitor change? Goals and methods.  
 
+The main methods for monitoring change are through work item queries. With queries you can find and triage a list of change management requests or work items tagged with a change management tag. 
+
+In addition, you can filter work items that 
 - Monitor and review change additions - query by tag or work items 
 - Monitor scope creep - sprint burndown 
 - Review was ever queries 
@@ -243,7 +246,6 @@ To support change management, you can set up alerts to go out to your team for t
  
 
 <a id="related-articles" />
-
 
 ## Related articles 
 
