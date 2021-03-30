@@ -83,7 +83,7 @@ public static async void GetProjects()
 ```
 <br />
 If you don&#39;t have an organization,
-you can <a href="https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services" data-raw-source="[set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)">set one up for free</a>. 
+you can <a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[set one up for free](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">set one up for free</a>. 
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
@@ -197,7 +197,7 @@ Content-Type: application/json
 
 Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
 If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](https://visualstudio.microsoft.com/docs/integrate/api/wit/work-items#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+For example, you may want to [update a work item](https://docs.microsoft.com/rest/api/azure/devops/wit/work%20items/update) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 
