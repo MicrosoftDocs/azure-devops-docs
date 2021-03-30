@@ -57,7 +57,7 @@
     - name: User & permissions management
       href: ../accounts/faq-user-and-permissions-management.md
     - name: Access and permissions FAQ
-      href: faq-permissiond.yml
+      href: faq-permissions.yml
     - name: Add administrators
       href: ../accounts/faq-user-and-permissions-management.md
     - name: About access with Azure AD
