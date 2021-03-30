@@ -188,7 +188,7 @@ Within **User settings**, on the **Permissions** page, you can select **Reevalua
 
 Before you customize a process, we recommend that you review [Configure and customize Azure Boards](../../boards/configure-customize.md), which provides guidance on how to customize Azure Boards to meet your business needs.
 
-For more information about work item type rules that apply toward restricting permissions, see:
+For more information about work item type rules that apply toward restricting operations, see:
 
 - [Apply rules to workflow states (Inheritance process)](../settings/work/apply-rules-to-workflow-states.md)
 - [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
