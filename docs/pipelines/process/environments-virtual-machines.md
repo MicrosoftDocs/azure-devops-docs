@@ -37,7 +37,7 @@ The first step in adding a virtual machine resource is to define an environment.
    :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
 
 1. Choose Windows or Linux for the **Operating System**.  
-1. Copy the registration script. Your script will be a [PowerShell script](/azure/powershell/scripting/) if you've selected Windows and a Linux script if you've selected Linux.
+1. Copy the registration script. Your script will be a [PowerShell script](/powershell/scripting/overview) if you've selected Windows and a Linux script if you've selected Linux.
 
    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
 
