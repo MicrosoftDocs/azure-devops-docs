@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 01/25/2021
 --- 
+
 
 # Set permissions at the project- or collection-level
 
@@ -557,4 +558,4 @@ A: You can find detailed information about individual permissions and their rela
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-- [Trace permissions](faq-trace-permissions.md) 
+- [Troubleshoot permissions](troubleshoot-permissions.md)
