@@ -14,4 +14,5 @@ ms.technology: devops-cicd-tasks
     destinationFolder: 
     #cleanDestinationFolder: true 
     #overwriteExistingFiles: false
+    #pathToSevenZipTool: 
 ```

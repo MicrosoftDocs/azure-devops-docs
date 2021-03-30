@@ -70,7 +70,7 @@ Git will download and create your own copy of the code in a new folder for you t
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work being done in the project. The recommended [Git workflow](gitworkflow.md) 
+Git [branches](./create-branch.md) isolate your changes from other work being done in the project. The recommended [Git workflow](gitworkflow.md) 
 uses a new branch for every feature or fix you work on. You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -113,7 +113,7 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 When you are ready to share your changes with the team, you [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch. 
 
-Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the main 
+Once you push the changes, you can create a [pull request](pull-requests.md) to let others know you'd like to have the changes reviewed and added to the main 
 branch of the code.   
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -125,7 +125,7 @@ branch of the code.
 
    ![Create a Pull Request in Visual Studio](media/newVsPullRequest.png)
 
-3. You can review comments made in your [pull request](pullrequest.md) in a web browser on the Azure Repos pull request page. Once all changes are approved by the
+3. You can review comments made in your [pull request](pull-requests.md) in a web browser on the Azure Repos pull request page. Once all changes are approved by the
    team, you complete the pull request through the web browser.
 
 #### [Command Line](#tab/command-line/)

@@ -9,9 +9,8 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart 
 monikerRange: '>= tfs-2013'
-ms.date: 09/16/2020 
+ms.date: 03/24/2021
 ---
-
 
 # Link user stories, issues, bugs, and other work items  
 

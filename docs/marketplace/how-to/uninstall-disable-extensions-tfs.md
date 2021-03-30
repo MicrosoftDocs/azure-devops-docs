@@ -43,4 +43,4 @@ can uninstall or disable extensions.
 
    <img alt="Uninstall or disable an extension" src="../media/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 
-   [[Need help?](../faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
+   [[Need help?](../faq-extensions.yml)]

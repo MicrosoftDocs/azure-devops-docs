@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 03/05/2021
 ---
 
-# Choosing the right authentication mechanism
+# Choose the right authentication mechanism
 
 [!INCLUDE [version-all](../../../includes/version-all.md)]
 
