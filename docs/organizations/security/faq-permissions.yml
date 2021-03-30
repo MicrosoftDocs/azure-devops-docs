@@ -9,7 +9,7 @@ metadata:
   author: ChComley
   ms.topic: FAQ
   monikerRange: 'azure-devops'
-  ms.date: 03/29/2021
+  ms.date: 03/30/2021
 
 title: Permissions FAQs 
 
@@ -29,7 +29,7 @@ sections:
         answer: |
           See [Find your administrator](lookup-organization-owner-admin.md).
 
-      - question: I accidentally removed my permissions, and am unable to grant them again. What should I do?
+      - question: I accidentally removed my permissions and am unable to grant them again. What should I do?
         answer: |
           The only way to resolve this scenario is to [find your project/org administrator](lookup-organization-owner-admin.md) and ask them to grant the permission again.
 
@@ -54,7 +54,7 @@ sections:
  
 additionalContent: |
   ## Related articles
-    - [Troubleshoot access and permission issues in Azure DevOps](troubleshoot-permissions.md)
+    - [Troubleshoot access and permission issues in Azure DevOps](troubleshoot-permissions.yml)
     - [Azure access FAQs](../accounts/faq-azure-access.md)
 
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
