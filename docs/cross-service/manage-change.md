@@ -66,22 +66,20 @@ To mitigate problems that arise from change, Agile project managers adopt a numb
 - Ensure customer needs are understood and properly scoped and communicated
 - Control scope changes and minimize scope creep  
 - Meet both team and business objectives  
-- Keep everyone informed  
 - Develop contingency plans   
-- Identify planned, completed, and incomplete work  
+- Minimize the number of approvals required to address changes 
 - Assist teams in their continual improvement processes.   
 
 > [!NOTE]
 > *Continuous Improvement is a Scrum approach in which the team learns from experience and stakeholder engagement to constantly keep the prioritized product backlog updated with any changes in requirements.*
 
-## Best practices for managing change
+## Agile practices for managing change
 
-Good practice is to constantly refine the backlog to ensure acceptance criteria is well defined and your team is building the software your customers want. 
- 
+For Agile software development, the following practices help manage change. 
+- Continuously refining and prioritizing the product backlog 
 - Analyze and triage change requests
 - Determine the scope impact on current and planned work 
 - Assess the risks of accepting or rejecting the change 
-- Eliminate as many approvals as possible 
 - Have a light change control form as needed 
 - Keep all stakeholders and teams involved.  
 
