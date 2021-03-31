@@ -41,7 +41,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Scheduled triggers](../process/scheduled-triggers.md) are independent of the repository and allow you to run a pipeline according to a schedule.
 
-[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers.md?tabs=classic) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
+[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
 ## Classic release pipelines
 

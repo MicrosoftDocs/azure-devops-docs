@@ -6,7 +6,7 @@ ms.author: sdanie
 author: steved0x
 ms.date: 03/31/2021
 ms.custom: contperf-fy21q3
-monikerRange: ">=azure-devops-2019"
+monikerRange: ">=azure-devops-2020"
 ---
 
 # Trigger one pipeline after another
@@ -20,12 +20,12 @@ These components are often independently built. When an upstream component (a li
 
 In situations like these, add a pipeline trigger to run your pipeline upon the successful completion of the **triggering pipeline**.
 
-:::moniker range=">= azure-devops-2020"
-
-To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
-
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
+
+## Configure a pipeline resource
+
+To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
 In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the main branch or any releases branch.
 
@@ -72,7 +72,7 @@ resources:
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following section.
 
-### Branch considerations for pipeline completion triggers
+## Branch considerations for pipeline completion triggers
 
 Pipeline completion triggers use the **Default branch for manual and scheduled builds** setting to determine which branch's version of a YAML pipeline's branch filters to evaluate when determining whether to run a pipeline as the result of another pipeline completing. By default this setting points to the default branch of the repository.
 
@@ -111,10 +111,4 @@ When you specify both CI triggers and pipeline triggers, you can expect new runs
 - As `A` completes, it will trigger another run of `B`.
 
 To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
-
-:::moniker-end
-
-:::moniker range="< azure-devops-2020"
-Triggers in pipeline resources are not in Azure DevOps Server 2019. Choose the **Classic** tab in the documentation for information on build completion triggers.
-:::moniker-end
 
