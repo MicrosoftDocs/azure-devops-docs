@@ -1,6 +1,6 @@
 ---
-title: Configure pipeline triggers (classic)
-description: Configure pipeline triggers (classic)
+title: Configure build completion triggers (classic)
+description: Configure build completion triggers (classic)
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
@@ -19,6 +19,8 @@ These components are often independently built. When an upstream component (a li
 
 In situations like these, add a pipeline trigger to run your pipeline upon the successful completion of the **triggering pipeline**.
 
+## Add a build completion trigger
+
 In the classic editor, pipeline triggers are called **build completion triggers**. You can select any other build in the same project to be the triggering pipeline.
 
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
@@ -27,7 +29,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 > Keep in mind that in some cases, a single [multi-job build](phases.md) could meet your needs.
 > However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent pipeline.
 
-### Download artifacts from the triggering build
+## Download artifacts from the triggering build
 
 In many cases, you'll want to download artifacts from the triggering build. To do this:
 
