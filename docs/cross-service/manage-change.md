@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 03/30/2021
 ---
  
 
@@ -18,7 +18,7 @@ ms.date: 03/29/2021
 Managing change is an aspect of managing requirements, your project plan, and sprints. This article provides an overview of the types of changes to monitor and methods for managing those changes. 
 
 > [!NOTE]
-> *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. &mdash;Asq.org*  
+> *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. &mdash;[Asq.org](https://asq.org/quality-resources/change-management)*  
 
 In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change? 
  
@@ -35,38 +35,35 @@ This article provides best practices and guidance for managing change. It also m
 
 ## Where does change arise? How can we minimize change?  
 
-Changes to a software development project can occur from a number of areas, such as one or more of the following: 
+Changes to a software development project can occur from a number of areas, such as the following: 
 
 - Business needs and customer needs change  
 - New priorities arise 
-- Feature requirements change as new information arises 
-- Resources and organizations change  
-- New dependencies are discovered  
+- Feature requirements change as new information occurs or dependencies are discovered 
+- Resources and organizations change    
 - Development or testing takes longer than expected.
 
 ### Minimize changes that are avoidable 
 
-While some changes are unavoidable, other types of changes are avoidable. Many of these types of changes arise when a team is new to Agile methods and may not have completely adopted an Agile culture. Such types of changes often introduce scope creep during a sprint or release.  
+While some changes are unavoidable, other types of changes can be avoided or their impact minimized. Many of these types of changes arise when a team is new to Agile methods and may not have completely adopted an Agile culture. Such types of changes often introduce scope creep during a sprint or release.  
 
 > [!NOTE]
 > *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
 
-To minimize avoidable changes, the following occurrences should be avoided. 
-
-- Requirements aren't clearly articulated 
-- Requirements aren't well prioritized 
-- The team hasn't agreed on how they'll manage change
+To minimize avoidable changes, minimize the occurrence of the following.  
+- Unclear requirements and acceptance criteria  
+- Unclear project scope and priorities
+- No change management process agreed to by the team 
 - Poor estimates on planned work
-- New requests aren't negotiated
-- A team member is unclear on a requirement, project scope, or acceptance criteria
-- A team member is focused on developing what they believe to be best rather than what is required 
-- One or more team members make decisions without communicating with others 
-- Stakeholders and customer input isn't sought out early enough or well enough
-- Team members don't raise issues proactively. 
+- Not negotiating requests for new work  
+- Allowing a team member to focus  on developing what they believe to be best rather than what is required 
+- Poor communication within the team when changes occur 
+- Lack of stakeholders and customer input around change requests  
+- Lack of proactive raising of issues by team members.   
  
 ### Adopt best change management practices
 
-To avoid some of these undesirable changes, you'll want to integrate  best change management practices into your organization culture.
+To avoid some of these undesirable changes, you'll want to integrate  best change management practices into your organization culture. These include: 
   
 - Continuous improvement 
 - Agile practices and an entrepreneurial mindset  
@@ -75,7 +72,7 @@ To avoid some of these undesirable changes, you'll want to integrate  best chang
 - More upfront work to minimize change 
 - Early engagement of the change
 - Consistent communication
-- Senior leader engagement.
+- Senior leader engagement as needed.
 
 ## Goals for managing change
 
@@ -83,10 +80,9 @@ To mitigate problems that arise from change, Agile project managers focus on the
 
 - Ensure customer needs are understood and properly scoped and communicated   
 - Control scope changes and minimize scope creep  
-- Meet business objectives  
-- Meet organization, team, and human objectives  
+- Meet business objectives as well as organization, team, and human objectives  
 - Keep everyone informed  
-- Develop contingency plans in the event of change  
+- Develop contingency plans in the event of change   
 - Identify planned, completed, and incomplete work  
 - Support a change management process  
 - Assist teams in their continual improvement processes.   
@@ -98,16 +94,16 @@ Good practice is to constantly refine the backlog to ensure acceptance criteria 
  
 - Analyze and triage change requests
 - Determine the scope impact on current and planned work 
-- Assess the risks of accepting or rejecting the change
-- Eliminate as many approvals as possible
-- Have a light change control form as needed
-- Keep all stakeholders and teams involved. 
+- Assess the risks of accepting or rejecting the change 
+- Eliminate as many approvals as possible 
+- Have a light change control form as needed 
+- Keep all stakeholders and teams involved.  
 
 ### Questions to ask before accepting a change
 
 - Does it serve the sprint goal?    
 - Is there a clear business value for the change? 
-- Upon release, sill the customer use the result of the scope change?
+- Upon release, will the customer use the result of the scope change?
 - What is the urgency for the change request?
 - If new scope is added to the sprint backlog, is there something that can be removed? 
 
@@ -173,41 +169,43 @@ You can adopt this form or customize your own to track the changes of most inter
 
 ### Ensure acceptance criteria is well defined
 
-The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
+Acceptance criteria defines what "done" means. It clearly describes the conditions that the team should use to verify whether a requirement or bug fix has been fully implemented. Typically, you want to capture these criteria within the work item. Clear acceptance criteria helps team estimate work and develop tests to ensure the criteria has been met.  
 
-Ensures that all team members, including the product owner, understand what is required for a feature or requirement to be completed within a sprint. If this is not established early for a scrum team, it's possible to get to the sprint demo and have stories that team members think are done, but in reality, have not been fully implemented. "Wait, I was supposed to write automated unit tests too?"
+You can specify acceptance criteria for individual requirements and for sprints. Clear definition and shared understanding of acceptance criteria ensures that all team members understand the scope of work. 
 
-**Example 1: A Product Backlog Item is considered "Done" when the following objectives have been met:**
+Here are two examples of defining acceptance criteria.  
 
-- Solution builds successfully.
-- Code written and merged into main branch
-- Unit Tests implemented on all features to an appropriate code coverage
-- All regression tests run and pass
-- All acceptance criteria met
-- Code has been peer reviewed and comments addressed
-- User Story moved to Resolved state
-- Remaining hours for tasks set to zero and tasks closed.
-- No open Sev1 or Sev2 bugs
-- Deploys successfully to non development environment (automated)
-- Static Code Analysis is run with results no worse than the baseline.
+- **Example 1: A Product Backlog Item is considered "Done" when the following objectives have been met:**
 
-**Example 2: A Sprint is considered "Done" when  the following objectives have been met:**
-- The time period allocated for the Sprint has passed
-- Unfinished work has been moved to the Backlog
-- Completed work has been deployed to target environment(s) and demoed in a Sprint Review to the Product Owner
-- Sprint Summary email has been sent to the team detailing:
-- User Stories Completed
-- Velocity of the sprint
-- Sprint Burndown
-- Notable accomplishments, highlights, or milestones that were hit
-- Retrospective conducted.
+	- Solution builds successfully.
+	- Code written and merged into main branch
+	- Unit Tests implemented on all features to an appropriate code coverage
+	- All regression tests run and pass
+	- All acceptance criteria met
+	- Code has been peer reviewed and comments addressed
+	- User Story moved to Resolved state
+	- Remaining hours for tasks set to zero and tasks closed.
+	- No open Sev1 or Sev2 bugs
+	- Deploys successfully to non development environment (automated)
+	- Static Code Analysis is run with results no worse than the baseline.
+
+- **Example 2: A Sprint is considered "Done" when  the following objectives have been met:**
+	- The time period allocated for the Sprint has passed
+	- Unfinished work has been moved to the Backlog
+	- Completed work has been deployed to target environment(s) and demoed in a Sprint Review to the Product Owner
+	- Sprint Summary email has been sent to the team detailing:
+	- User Stories Completed
+	- Velocity of the sprint
+	- Sprint Burndown
+	- Notable accomplishments, highlights, or milestones that were hit
+	- Retrospective conducted.
  
 ## Monitor and report on changes 
  
 Teams can monitor changes through the following methods: 
-- Work item queries
-- Team velocity 
-- Sprint burndowns, release burndowns 
+- Work item queries 
+- Team velocity charts 
+- Sprint burndown and release burndown charts  
  
 
 ### Work item queries 
@@ -226,17 +224,13 @@ The team velocity chart provides several pieces of information. This chart shows
 :::image type="content" source="media/manage-change/velocity-chart-scope-creep.png" alt-text="Screenshot of Velocity chart showing scope creep":::
 
 
-### Monitor scope creep 
+### Sprint burndown and scope creep 
 
-Another chart to review for scope creep is the sprint burndown chart. As shown in the following image, 
-Two charts that can help with monitoring scope creep are the sprint burndown and release burndown charts. Sprint burndown provides a visual of how much work 
-
-
+Another chart to review for scope creep is the sprint burndown chart. As shown in the following image, a number of work items were added after the start of the sprint.   
 
 :::image type="content" source="media/manage-change/sprint-burndown-scope-increase.png" alt-text="Screenshot of Sprint burndown showing scope creep":::
 
- 
-
+With Azure Boards, you can review the sprint burndown charts for each sprint and each team to determine the degree of scope creep introduced into each sprint. 
 
 ## Get notified of changes 
 
@@ -244,17 +238,17 @@ Azure DevOps provides a robust alert system, allowing project members to set ale
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, team, project, or organization alerts. 
 
-To support change management, you can set up alerts to go out to your team for the following instances: 
-- Change request is filed 
-- A requirement is tagged with a change request tag 
- 
- 
+To support change management, you can define team alerts for the following instances: 
+
+- A requirement or work item is tagged with a change request tag 
+- A formal change request work item is filed 
+- Work is added to a sprint after the sprint has started 
 
 <a id="related-articles" />
 
 ## Related articles 
 
-To learn more about any of the concepts introduced in this article, refer to the following articles. 
+To learn more about any of the concepts introduced in this article, refer to the following resources. 
 
 #### Industry articles
 
@@ -264,24 +258,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [Change Management meets Agile, how does that work?](https://www.andchange.com/themes/change-management-meets-agile/)
 
- 
-### Work items and process guidance 
-
-- [Manage change using Change request form](/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change)  
-- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items) 
-
-#### Monitor and report on progress
-
-- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
-- [Burndown guidance, scope management](/azure/devops/report/dashboards/burndown-guidance)
-
-#### Notifications
-
-- [Default and supported notifications](/azure/devops/notifications/oob-built-in-notifications) 
-- [Manage personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
-- [Manage notifications for a team or group](/azure/devops/notifications/manage-team-group-notifications)
-
- 
 
 #### Agile and Agile culture
 
@@ -291,99 +267,31 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 
 
 
-#### Work items, work item types, and process models 
+#### Work items and process guidance 
 
-- [About work items](../boards/work-items/about-work-items.md) 
-- [Choose a process](../boards/work-items/guidance/choose-process.md)
-- [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
-- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
-- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
-
-
-#### Backlogs and boards
-
-- [Create your backlog](../boards/backlogs/create-your-backlog.md)  
-- [Organize your backlog](../boards/backlogs/organize-backlog.md)  
-- [Define features and epics](../boards/backlogs/define-features-epics.md) 
-- [Refine your backlog](../boards/backlogs/best-practices-product-backlog.md) 
-- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../boards/backlogs/backlogs-boards-plans.md)
-- [Configure and customize Azure Boards](../boards/configure-customize.md)
-
-#### Kanban 
-
-- [Start using your Kanban board](../boards/boards/kanban-quickstart.md)
-- [Add columns to your Kanban board](../boards/boards/add-columns.md) 
-- [Customize cards](../boards/boards/customize-cards.md)
-- [Filter your Kanban board](../boards/boards/filter-kanban-board.md)
-- [Kanban best practices](../boards/boards/best-practices-kanban.md)
-
-#### Scrum
-
-- [Assign backlog items to a sprint](../boards/sprints/assign-work-sprint.md) 
-- [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
-- [Scrum and best practices](../boards/sprints/best-practices-scrum.md)  
-
-#### Dependency management 
-
-- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
-- [Triage work items](../boards/queries/triage-work-items.md) 
-
-#### Milestone planning 
-
-- [View or configure team velocity](../report/dashboards/team-velocity.md)
-- [Forecast your product backlog](../boards/sprints/forecast.md) 
-- [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects)
-- [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42) 
+- [Acceptance criteria](/azure/devops/boards/backlogs/best-practices-product-backlog#acceptance-criteria)
+- [Definition of Done](/azure/devops/boards/boards/definition-of-done)
+- [Manage change using Change request form](/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change)  
+- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items) 
+- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
 
 #### Monitor and report on progress
 
-- [Display rollup progress or totals](../boards/backlogs/display-rollup.md)
-- [Review team Delivery Plans](../boards/plans/review-team-plans.md)
+- [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)
+- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
+- [Burndown guidance, scope management](/azure/devops/report/dashboards/burndown-guidance)
+- [Cumulative flow, lead time, and cycle time guidance](/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance)
 
+#### Notifications
+
+- [Default and supported notifications](/azure/devops/notifications/oob-built-in-notifications) 
+- [Manage personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
+- [Manage notifications for a team or group](/azure/devops/notifications/manage-team-group-notifications)
+  
+ 
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
 - [Share information within work items and social tools](../boards/queries/share-plans.md)
 
- 
-
-<!---
-
-Business Case for Action to define what the change is
-- From-To Definition to identify gaps between “is” and “will be”
-- Key Role Mapping to identify where Sponsors are needed, and who specifically these individuals are by name
-- Readiness Planning to have strategies and tactics available to manage resistance
-- Communication Planning by audience, with feedback loops to gather feedback that identifies potential sources of resistance
-
-Minimize these types of change: 
-- Poorly understood acceptance criteria 
-- what more? 
-
-Log change to the backlog or change tracker
-Eliminate as many approvals as possible
-Have a light change control form, if necessary
-Keep the stakeholders and operations involved
-
-
-
-Agile requirements management supports the following scenarios.   
-
-> [!div class="checklist"]  
-> - Define and track status of change requirements  
- 
-> - Determine what can ship and when  
-> - Monitor and report on progress  
-> - Control Scope Changes 
-> - Identify planned, completed, and incomplete work 
-> - Minimize scope creep  
-> - Support a change management process
-
-Early engagement of change manager
-Consistent communication
-Senior leader engagement
-Early wins
-
- risk reduction approach to software development
--->
+  

@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 03/29/2021
+ms.date: 03/30/2021
 ---
 
 
@@ -167,8 +167,9 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Industry articles
 
-- [The Key To Managing Risk During Agile](https://clearbridgemobile.com/how-to-manage-software-development-risks-in-an-agile-environment/)
+- [How to Manage Software Development Risks in an Agile Environment](https://clearbridgemobile.com/how-to-manage-software-development-risks-in-an-agile-environment/)
 - [Risk Management in an Agile Lifecycle](https://www.agilealliance.org/wp-content/uploads/2016/01/Agile-Risk-Management-Agile-2012.pdf)
+- [10 biggest risks in software development?](https://codebots.com/library/way-of-working/what-are-the-10-biggest-risks-in-software-development)
  
 
 <!--- 
