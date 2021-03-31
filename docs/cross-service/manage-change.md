@@ -18,7 +18,7 @@ ms.date: 03/30/2021
 Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 
 > [!NOTE]
-> *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen.&mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/)* 
+> *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen.&mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/).* 
 
 You'll want to keep your change management process lightweight. You'll want to gain insight into where change is occurring in your project, and how the change impacts your team in their ability to deliver. And, when managing change, you'll want to consider your business requirements to meet the following scenarios.   
 
@@ -173,12 +173,8 @@ Teams can monitor changes through the following methods:
 
 ### Work item queries 
 
-With queries you can find and triage a list of change management requests or work items tagged with a change management tag. You can also use the Was Ever operator to determine if work went through a ... 
+With queries you can find and triage a list of change management requests or work items tagged with a change management tag. 
 
-In addition, you can filter work items that 
-- Monitor and review change additions - query by tag or work items 
-- Monitor scope creep - sprint burndown 
-- Review was ever queries 
 
 ### Team velocity and unplanned work  
 
