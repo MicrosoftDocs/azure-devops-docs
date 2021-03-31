@@ -17,7 +17,7 @@ Azure Artifacts enable developers to consume and publish different types of pack
 The following table describes supported artifact types in Azure Pipelines.
 
 |         Supported artifact type            |                                                 Description                                                            |
-|    -------------------------------------------------------------------------------------------------------------------------------------------------------------    |
+|    ----------------------------------------|--------------------------------------------------------------------------------------------------------------------    |
 | [Build artifacts](build-artifacts.md)      | The files produced by a build such as .dll, .exe, or .PDB files.                                                       |
 | [Maven](maven.md)                          | Publish Maven packages to Azure Artifacts feeds or Maven central repository.                                           |
 | [npm](npm.md)                              | Publish npm packages to Azure Artifacts feeds or npm registry.                                                         |
@@ -33,14 +33,14 @@ Each kind of artifact has a different way of being published and consumed. Some 
 #### [NuGet](#tab/nuget/)
 
 - [Publish a NuGet package using the command line](../../artifacts/nuget/publish.md)
-- [Publish to NuGet feeds (YAML/Classic)](/nuget.md)
+- [Publish to NuGet feeds (YAML/Classic)](nuget.md)
 - [Consume NuGet packages](../../artifacts/nuget/consume.md)
  
 #### [Npm](#tab/npm/)
 
 - [Publish an npm package from the command line](../../artifacts/npm/publish.md)
-- [Publish npm packages (YAML/Classic)](/npm.md)
-- [Consume NuGet packages](../../artifacts/get-started-npm.md)
+- [Publish npm packages (YAML/Classic)](../tasks/package/npm.md#publish-npm-packages)
+- [Consume npm packages](../../artifacts/get-started-npm.md)
 
 #### [Python](#tab/python/)
 
