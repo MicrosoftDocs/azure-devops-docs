@@ -74,6 +74,9 @@
       displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
     - name: Pipeline completion triggers
       href: process/pipeline-triggers.md
+      displayName: build completion, completion trigger
+    - name: Pipeline completion triggers (classic)
+      href: process/pipeline-triggers-classic.md
       displayName: build completion, completion trigger, pipeline resource
     - name: Release triggers (classic)
       href: release/triggers.md
