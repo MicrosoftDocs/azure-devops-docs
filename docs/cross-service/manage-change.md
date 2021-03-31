@@ -15,104 +15,92 @@ ms.date: 03/30/2021
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Managing change is an aspect of managing requirements, your project plan, and sprints. This article provides an overview of the types of changes to monitor and methods for managing those changes. 
+Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 
 > [!NOTE]
-> *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. &mdash;[Asq.org](https://asq.org/quality-resources/change-management)*  
+> *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen.&mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/)* 
 
-In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change? 
- 
-First off, you'll want to keep your change management process lightweight. You'll want to gain insight into where change is occurring in your project and how the change impacts your team in their ability to deliver. When managing change, you'll want to consider your business requirements to meet the following scenarios.   
+You'll want to keep your change management process lightweight. You'll want to gain insight into where change is occurring in your project, and how the change impacts your team in their ability to deliver. And, when managing change, you'll want to consider your business requirements to meet the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of change  
 > - Analyze and prioritize change requirements  
 > - Monitor and report on changes  
 > - Keep stakeholders and teams informed of changes.   
- 
- 
+
 This article provides guidance for managing change. It also maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles). 
 
 ## Where does change arise? How can you minimize change?  
 
-Changes to a software development project can arise from several areas, such as the following areas: 
+Several sources can contribute to changes that you need to manage in your software development projects.  
 
 - Business needs and customer needs change  
 - New priorities arise 
 - Feature requirements change as new information occurs or dependencies are discovered 
 - Resources and organizations change    
-- Development or testing takes longer than expected.
+- Development or testing takes longer than expected
+- Issues arise after deployment and ongoing operations.  
 
-### Minimize changes that are avoidable 
-
-While some changes are unavoidable, other types of changes can be avoided or their affect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
+While some changes are unavoidable, other changes can be avoided or their affect minimized. Many changes arise when a team is new to Agile methods and haven't yet adopted an Agile culture.
 
 To minimize avoidable changes, minimize the occurrence of the following.  
 - Unclear requirements and acceptance criteria  
 - Unclear project scope and priorities
-- No change management process agreed to by the team 
-- Poor estimates on planned work
+- Unclear change management process agreed to by the team 
+- Poor estimates on planned work 
 - Not negotiating requests for new work  
 - Allowing a team member to focus  on developing what they believe to be best rather than what is required 
 - Poor communication within the team when changes occur 
 - Lack of stakeholders and customer input around change requests  
 - Team members are hesitant to raise issues as they occur.   
  
-### Adopt best practices 
+
+## Agile practices for managing change
+
+> [!NOTE]
+> *Agile is a project management approach that works by breaking projects into short, iterative cycles called “sprints”. At its core, Agile is based on the assumption that circumstances change as a project develops. That’s why, in an Agile project, the planning, design, development, and testing cycles are never done. They continue to change as the project takes form. &mdash;[IMA](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)*  
+
  
-To mitigate problems that arise from change, Agile project managers adopt a number of best practices.  
+To mitigate problems that arise from change, Agile project managers adopt a number of best practices. These practices are divided into the following three groups: 
+
+### Process practices 
 
 - Support a change management process  
-- Ensure customer needs are understood and properly scoped and communicated
-- Control scope changes and minimize scope creep  
 - Meet both team and business objectives  
-- Develop contingency plans   
 - Minimize the number of approvals required to address changes 
 - Assist teams in their continual improvement processes.   
 
 > [!NOTE]
-> *Continuous Improvement is a Scrum approach in which the team learns from experience and stakeholder engagement to constantly keep the prioritized product backlog updated with any changes in requirements.*
+> *Continuous improvement is a method to make sure that your processes, methods, and practices are as efficient and effective as possible. &mdash;[Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset)*  
 
-## Agile practices for managing change
+### Manage change at the product plan level   
 
-For Agile software development, the following practices help manage change. 
-- Continuously refining and prioritizing the product backlog 
+- Continuously refine and prioritize the product plan and product backlog 
+- Ensure customer needs are understood and properly scoped and communicated
+- Analyze the product backlog for dependencies and risks 
+- Develop contingency plans  
 - Analyze and triage change requests
-- Determine the scope impact on current and planned work 
+- Determine the scope impact of change requests on current and planned work 
 - Assess the risks of accepting or rejecting the change 
-- Have a light change control form as needed 
-- Keep all stakeholders and teams involved.  
+- Use a light change control form as needed 
+
+### Sprint management practices 
+
+- Ensure the acceptance criteria and requirements are well understood at the start of a sprint 
+- Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles   
+- Keep all stakeholders and teams involved as changes occur  
+- Control scope changes and minimize scope creep  
+- Protect your team against "gold plating", a practice of making changes to a project that are outside of the original agreed-upon scope.  
+
+> [!NOTE]
+> *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
 
 ### Questions to ask before accepting a change
-
 - Does it serve the sprint goal?    
 - Is there a clear business value for the change? 
 - Upon release, will the customer use the result of the scope change?
 - What is the urgency for the change request?
 - If new scope is added to the sprint backlog, is there something that can be removed? 
-
-### Avoid scope creep  
-
-> [!NOTE]
-> *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
-
-Some practices that help avoid scope creep are: 
-
-- Know your project goals from the start 
-- Clearly document requirements and acceptance criteria
-- Use project management software to keep everyone on track
-- Create a change control process
-- Set and follow a clear schedule
-- Properly communicate with stakeholders and your team
-- Protect your team against "gold plating", a practice of making changes to a project that are outside of the original agreed-upon scope.  
-
-### Manage change at the product plan level 
-
-You can minimize the need to track changes by following these suggestions: 
-
-- Constantly refine the product plan and product backlog for dependencies, risks 
-- Ensure the acceptance criteria and requirements are well understood at the start of a sprint 
-- Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles.  
 
 ## Options for tracking change 
 
@@ -227,10 +215,10 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Industry articles
 
+- [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [How to Create the Best Agile Change Management Process](https://www.mindville.com/blog/create-the-best-agile-change-management-process) 
 - [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/) 
 - [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
-- [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [Change Management meets Agile, how does that work?](https://www.andchange.com/themes/change-management-meets-agile/)
 
 
@@ -253,6 +241,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Monitor and report on progress
 
+- [Triage work items](/azure/devops/boards/queries/triage-work-items)
 - [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)
 - [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
 - [Burndown guidance, scope management](/azure/devops/report/dashboards/burndown-guidance)
@@ -269,16 +258,4 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
 - [Share information within work items and social tools](../boards/queries/share-plans.md)
-
-<!---
-
-You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
-
-The methods you adopt will depend on several factors, such as the following:
-- Change management processes adopted by your organization
-- The need to maintain an audit trail 
-- Communicate changes occurring across teams.
-
-When early on in the adoption of Agile methods, the need to monitor and track change may be greater than when a team has managed to forge a robust Agile culture. 
---->
-
+ 
