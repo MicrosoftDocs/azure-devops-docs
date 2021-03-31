@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 01/13/2021
+ms.date: 03/31/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -584,7 +584,7 @@ kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={
 The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
 
 ```
-kubectl get secret <service-account-secret-name> -n <namespace> -o yaml
+kubectl get secret <service-account-secret-name> -n <namespace> -o json
 ```
 
 Copy and paste the Secret object fetched in YAML form into the Secret text-field.

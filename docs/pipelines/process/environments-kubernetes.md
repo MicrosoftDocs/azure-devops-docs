@@ -4,7 +4,7 @@ description: Target Kubernetes clusters with the Kubernetes resource. Use Kubern
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
-ms.date: 03/19/2021
+ms.date: 03/31/2021
 monikerRange: azure-devops
 ---
 
@@ -48,33 +48,35 @@ When you use Azure Kubernetes Service a [ServiceAccount](https://kubernetes.io/d
 
 ### Using an existing service account
 
-While the Azure Provider option creates a new ServiceAccount, the generic provider allows for using an existing ServiceAccount to allow a Kubernetes resource within environment to be mapped to a namespace.
+While the Azure Kubernetes Service option creates a new ServiceAccount, the generic provider option lets you use an existing ServiceAccount to map a Kubernetes resource within your environment to a namespace. 
+
+If you want to set up a Kubernetes service connection outside of an environment, see the [Kubernetes service connection](../library/service-endpoints.md#common-service-connection-types) section in [Service connections](../library/service-endpoints.md). 
+
+
 > [!TIP]
 > Use the generic provider (existing service account) to map a Kubernetes resource to a namespace from a non-AKS cluster.
 
-1. In the environment details page, click on **Add resource** and choose **Kubernetes**.
-2. Select **Generic provider (existing service account)** in the Provider dropdown.
-3. Input cluster name and namespace values.
-4. For fetching Server URL, execute the following command on your shell:
+1. In the environment details page, select **Add resource** and choose **Kubernetes**.
+2. Select **Generic provider (existing service account)** for your provider.
+3. Add the cluster name and namespace values. 
+1. Add the server URL. You can get the URL with this command:
 
    ```
    kubectl config view --minify -o 'jsonpath={.clusters[0].cluster.server}'
    ```
-5. For fetching Secret object required to connect and authenticate with the cluster, the following sequence of commands needs to be run:
-
-   ```
-   kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={.secrets[*].name}'
-   ```   
-
-   The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object: 
+5. To get your secret object, you'll need to first find the service account secret name.     
+       ```
+       kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={.secrets[*].name}'
+       ```   
+6. Next, you can retrieve the secret object using the output of the previous step.
 
    ```
    kubectl get secret <service-account-secret-name> -n <namespace> -o json
    ```
 
-   Copy and paste the Secret object fetched in JSON form into the Secret text-field.
+   Copy and paste the Secret object fetched in JSON form into the Secret field.
 
-6. Click on **Validate and create** to create the Kubernetes resource.
+6. Click **Validate and create** to create the Kubernetes resource.
 
 ## Reference your Kubernetes resources in a pipeline 
 
