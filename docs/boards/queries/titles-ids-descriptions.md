@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '<= azure-devops'
 ms.date: 01/25/2021
 ---
