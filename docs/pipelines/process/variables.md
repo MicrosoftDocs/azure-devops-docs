@@ -970,7 +970,7 @@ In this example, the script allows the variable `sauce` but not the variable `se
 
 :::image type="content" source="media/set-vars-warning.png" alt-text="Warning that you cannot set secretSauce."::: 
 
-```yml
+```yaml
 steps:
   - bash: |
       echo "##vso[task.setvariable variable=Sauce;]crushed tomatoes"
