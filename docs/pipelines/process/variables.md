@@ -953,7 +953,7 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to set
 
 ::: moniker range=">= azure-devops-2019"
 
-## Settable Variables in steps
+## Configure settable variables for steps
 
 You can define `settableVariables` within a step or specify that no variables can be set. 
 
