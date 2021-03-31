@@ -5,7 +5,7 @@ description: Learn which tool is best to add or update user stories, bugs, issue
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 10/17/2019

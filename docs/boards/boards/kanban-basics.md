@@ -6,6 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
+ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 01/08/2018
 ---
