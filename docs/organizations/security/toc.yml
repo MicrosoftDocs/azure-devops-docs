@@ -66,8 +66,6 @@
       href: ../accounts/faq-azure-access.md
     - name: Set up Visual Studio
       href: ../accounts/faq-set-up-vs.md
-    - name: Troubleshoot access and permissions
-      herf: troubleshoot-permissions.md
     - name: Resolve connection issues
       href: ../../user-guide/troubleshoot-connection.md
     - name: "TF31002: Unable to connect"
