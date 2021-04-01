@@ -5,7 +5,7 @@ description: Learn how to view progress by using the Epic Roadmap to provide a c
 ms.custom: extensions
 ms.technology: devops-agile
 ms.prod: devops
-ms.topic: conceptual
+ms.topic: how-to
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE

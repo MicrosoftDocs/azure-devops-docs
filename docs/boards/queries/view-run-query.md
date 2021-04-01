@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps 
 ms.custom: boards-queries, devx-track-azurecli
 ms.technology: devops-agile
-ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

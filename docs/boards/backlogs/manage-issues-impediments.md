@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 ms.date: 08/18/2020
 ---
 
