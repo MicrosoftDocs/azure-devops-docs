@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Plan and track work in your new team project on Azure Boards using the Agile, Basic, Scrum, or CMMI process
 ms.custom: boards-get-started
 ms.technology: devops-agile
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 05/28/2020
 ---
