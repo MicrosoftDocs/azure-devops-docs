@@ -243,7 +243,7 @@ the `AND` operator so that it returns only work items that contain all of the wo
 
 ### Work items
 
-|Usage  |Example  |
+|**Usage**  |**Example**  |
 |---------|---------|
 |Finds work items that contain derived forms of both the words **welcome** and **page**. `AND` is the default operator, and is equivalent to the search string `welcome page`.  | `welcome AND page`  |
 |Finds work items that contain either of the words **signup** or **signin**.    |  `signup OR signin`         |
@@ -261,7 +261,7 @@ the `AND` operator so that it returns only work items that contain all of the wo
 
 ### Packages
 
-|Usage |Example  |
+|**Usage** |**Example**  |
 |---------|---------|
 |Finds packages that contain both the words **xml** and **parser**.  | `xml AND parser` - `AND` is the default operator, and so it's equivalent to the search string `xml parser`       |
 |Finds packages that contain either of the words **xml** or **parser**.  |  `xml OR parser`        |
@@ -277,14 +277,14 @@ Use the wildcard character `*` and `?` to broaden your search criteria. You can 
 
 ### Work items
 
-|Usage |Example  |
+|**Usage** |**Example**  |
 |---------|---------|
 |Finds work items containing words that start with **Browser**, such as **BrowserEdge**, **BrowserIE**, and **BrowserFirefox**.    | `Browser*`         |
 |Finds work items containing words that start with **alpha**, have any alphanumeric character next, and end with **version**. For example, **alpha1version** and **alphaXversion**.      | `alpha?version`     | 
 
 ### Packages
 
-|Usage  |Example  |
+|**Usage**  |**Example**  |
 |---------|---------|
 |Finds packages that contain words that start with **xmlparser**, such as **xmlparsersdk** and **xmlparserlib**.   |  `xmlparser*`        |
 |Finds packages that contain words that start with **mypackage** and have any one alphanumeric character next, such as **mypackage1**, **mypackage2**, and **mypackage3**.     | `mypackage?`        |
@@ -435,7 +435,6 @@ You can use the code type search functions with files written in C#, C, C++, Jav
 
 The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
 
-For more information about how to sort and view search results for packages, see [View and filter package results](functional-package-search.md#sort-and-view-package-results).
 Select :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter** and the function that you want to include in your search string from the list. Then, enter your criteria. 
 
 :::image type="content" source="media/shared/show-filters.png" alt-text="Show filter panel button.":::

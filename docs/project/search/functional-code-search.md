@@ -18,7 +18,7 @@ ms.date: 04/01/2021
 By using Code Search, you can do the following tasks:
 
 
-|**Task**  |**Description** |
+|**Search task**  |**Description** |
 |---------|---------|
 |**Search across all of your projects**  | - Search in your own code base and your partner teams' code bases. - Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. - Narrow your search by using project, repository, path, file name, and other filter operators.        |
 |**Find specific types of code**  |  - Find - definitions, - references, - functions, - comments, - strings, - namespaces. - Use Code Search to narrow your results to exact code type matches. - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
@@ -58,7 +58,7 @@ Code Search requires the [Code Search extension](https://marketplace.visualstudi
 
 - You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
 - You can narrow your search by using project, repository, path, file name, and other filter operators. This way you achieve your wanted results even faster. Start with a higher-level search if you don’t know where the results would be. Keep filtering until you have a subset of results to browse through and work on.
-- You can [use wildcards](#broaden-your-search-by-using-wildcards) to widen your search and [Boolean operators](#narrow-your-search-by-using-boolean-operators) to fine-tune it. This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
+- You can [use wildcards to widen your search](get-started-search.md#code-1) and [Boolean operators to fine-tune it](get-started-search.md#code). This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
 - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
 - Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 
@@ -210,7 +210,7 @@ One of the powerful features of Code Search is the capability to expand your sea
 Place the insertion point on a term in the file and open the shortcut menu (mouse: right-click) to start a new search for other files containing the selected term. You can search for it as text, for 
 the definition if you select an object name, or for references to a selected object. 
 
-## More examples
+## More examples of search functions
 
 See the following examples of even more search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 

@@ -10,7 +10,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: how-to
 monikerRange: '>= tfs-2018'
-ms.date: 03/03/2021
+ms.date: 04/01/2021
 ---
 
 # Search Wiki
@@ -30,6 +30,9 @@ With wiki search, you can search within a project wiki or across all wikis creat
 - You must be a Stakeholder to do semantic searches on work items, wiki, and packages.
 
 ## Start searching wiki
+
+ [!TIP]
+> When you search from **Wiki**, you automatically go to wiki search results. If you initiate a search from another page, such as one under **Repos/Code** or **Boards/Work**, then first select the **Search wiki** option from the search box menu options.
 
 Start searching within a project wiki or across all wikis created for your organization.
 
@@ -65,9 +68,6 @@ The search feature quickly returns wiki pages by title or page content. English 
   :::image type="content" source="../wiki/media/search/wiki-search-example-vert.png" alt-text="Wiki search results":::   
 
 ::: moniker-end
-
-> [!TIP]
-> When you search from **Wiki**, you automatically go to wiki search results. If you initiate a search from another page, such as one under **Repos/Code** or **Boards/Work**, then first select the **Search wiki** option from the search box menu options.
 
 ### Search Wiki with REST API
 
