@@ -150,7 +150,7 @@ The *import.json* file's displayed fields and required actions are described in 
 | Source | Information about the location and names of the source data files that are used for import. | No action required. Review information for the subfield actions to follow. |
 | Location | The shared access signature key to the Azure storage account that hosts the data-tier application package (DACPAC). | No action required. This field will be covered in a later step. |
 | Files | The names of the files containing import data. | No action required. Review information for the subfield actions to follow. |
-| Dacpac | A DACPAC file that packages the collection database to be used to bring in the data during the import. | No action required. In a later step, you'll generate this file by using your collection and then upload it to an Azure storage account. You'll need to update the file based on the name you use when you generate it later in this process. |
+| DACPAC | A DACPAC file that packages the collection database to be used to bring in the data during the import. | No action required. In a later step, you'll generate this file by using your collection and then upload it to an Azure storage account. You'll need to update the file based on the name you use when you generate it later in this process. |
 | Target | Properties of the new organization to import into. | No action required. Review information for the subfield actions to follow. |
 | Name | The name of the organization to be created during the import. | Provide a name. The name can be quickly changed later after the import has completed.<br>**Note**: Do *not* create an organization with this name before you run the import. The organization will be created as part of the import process. |
 | ImportType | The type of import that you want to run. | No action required. In a later step, you'll select the type of import to run. |
@@ -169,6 +169,7 @@ In the preceding image, note that the planner of the Fabrikam import added the o
 
 
 <a id="supported-azure-regions-for-import"></a>
+
 ### Supported Azure regions for import
 
 Azure DevOps Services is available in several [Azure regions](https://azure.microsoft.com/regions/services/). However, not all regions where Azure DevOps Services is available are supported for import. The following table lists the Azure regions that you can select for import. Also included is the value that you need to place in the import specification file to target that region for import.  
@@ -269,6 +270,7 @@ The data migration tool can't detect Visual Studio subscriptions (formerly known
 You don't need to repeat a dry-run import if users' Visual Studio subscriptions aren't automatically upgraded in Azure DevOps Services. Visual Studio subscription linking happens outside the scope of an import. As long as their work account is linked correctly before or after the import, users' licenses are automatically upgraded on their next sign-in. After their licenses have been upgraded successfully, the next time you run an import, the users are upgraded automatically on their first sign-in to the organization.  
 
 <a id="prepare-import"></a>
+
 ## Prepare for import
 
 By now, you have everything ready to execute on your import. You need to schedule downtime with your team to take the collection offline for the migration. When you've agreed upon a time to run the import, you need to upload to Azure both the required assets you've generated and a copy of the database. This process has five steps:
@@ -296,11 +298,11 @@ It's important to weigh the cost of choosing to incur zero downtime for a dry ru
 
 DACPACs offer a fast and relatively easy method for moving collections into Azure DevOps Services. However, after a collection database size exceeds a certain threshold, the benefits of using a DACPAC start to diminish. 
 
-> [!IMPORTANT]  
-> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-import.md#step-1-detach-your-collection).
-
 > [!NOTE] 
-> If the data migration tool didn't display a warning that your collection was too big, use the DACPAC method outlined in this section. Otherwise, follow the instructions provided in [Import large collections](migration-import-large-collections.md).  
+> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method provided in [Import large collections](migration-import-large-collections.md).  
+> 
+> If the data migration tool doesn't display a warning, use the DACPAC method described in this step.  
+
 
 [DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications) is a feature of SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. A DACPAC file can also be restored directly to Azure DevOps Services, so you can use it as the packaging method for getting your collection's data in the cloud. You use the SqlPackage.exe tool to generate the DACPAC file. The tool is included as part of [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
@@ -323,6 +325,10 @@ As it creates the package, SqlPackage.exe temporarily stores data from your coll
 You might find that your drive C is too small to support creating a DACPAC. You can estimate the amount of space you'll need by looking for the largest table in your collection database. DACPACs are created one table at a time. The maximum space requirement to run the generation is roughly equivalent to the size of the largest table in the collection's database. If you're saving the generated DACPAC to drive C, you also need to take into account the size of the collection database as reported in the *DataMigrationTool.log* file from a validation run.
 
 The *DataMigrationTool.log* file provides a list of the largest tables in the collection each time the validate command is run. For an example of table sizes for a collection, see the following output. Compare the size of the largest table with the free space on the drive that hosts your temporary directory. 
+
+> [!IMPORTANT]  
+> Before you proceed with generating a DACPAC file, ensure that your collection is [detached](migration-import.md#step-1-detach-your-collection).
+ 
 
 ```cmdline 
 [Info   @08:23:59.539] Table name                               Size in MB

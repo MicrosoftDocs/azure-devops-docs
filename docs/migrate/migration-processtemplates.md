@@ -15,12 +15,14 @@ ms.date: 04/13/2018
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
+The data migration tool could flag errors which need to be corrected before you start a migration. Below are the most common process related errors that you may encounter when preparing for a migration. After you have corrected each error, you will need to run the data migration tool's validate command again.
+
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
 > With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-The data migration tool could flag errors which need to be corrected before you start a migration. Below are the most common process related errors that you may encounter when preparing for a migration. After you have corrected each error, you will need to run the data migration tool's validate command again.
+
 
 <a id="process-validation-types"></a>
 

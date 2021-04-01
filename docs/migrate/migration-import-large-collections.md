@@ -16,19 +16,21 @@ ms.date: 04/01/2021
 
 <a id="import-large-collections"></a>
 
-> [!NOTE] 
-> If the data migration tool displays a warning that you can't use the DACPAC method, you have to perform the import by using the SQL Azure virtual machine (VM) method outlined here. If the data migration tool doesn't display a warning, use the DACPAC method described in {Step 2: Generate a DACPAC file](migration-import.md#dacpac-file).
 
 For databases that the data migration tool warns are too big, a different data packaging approach is required to migrate to Azure DevOps Services. If you're unsure whether your collection exceeds the size threshold, you should run a data migration tool validation on the collection. The validation lets you know whether you need to use the SQL Azure VM method for import. 
 
-Before you proceed, we recommend checking to see whether your [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time, collections can build up very large volumes of data. This is a natural part of the DevOps process, but some of this data might no longer be relevant and doesn't need to be retained. Some common examples are older workspaces and build results. 
+## Determine if you can reduce the collection size
+
+Before you proceed, we recommend checking to see whether your [old data can be cleaned up](/azure/devops/server/upgrade/clean-up-data). Over time, collections can build up very large volumes of data. This is a natural part of the DevOps process, but you might find that you don't need to retain all of the data. Some common examples of no longer relevant data are older workspaces and build results. 
 
 Cleaning older, no-longer-relevant artifacts could remove a lot more space than you might expect, and it could determine whether you use the DACPAC import method or a SQL Azure VM. 
 
 > [!IMPORTANT]
 > After you've deleted older data, it *can't* be recovered unless you restore an older backup of the collection.
 
-If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC](#step-2-generate-a-dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
+If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC]](migration-import.md#dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
+
+## Set up a SQL Azure VM to import to Azure DevOps Services
 
 Let's walk through how to accomplish this. At a high level, you'll:
 
@@ -66,13 +68,13 @@ If you're using this import method, determine where to create your SQL Azure VM 
 Although Azure DevOps Services is available in multiple regions in the US, only the Central United States region accepts new organizations. Companies can't import their data into other US Azure regions at this time. 
 
 > [!NOTE] 
-> DACPAC customers should consult the region table in the ["Step 3: Upload the DACPAC file" section](#step-3-upload-the-dacpac-file). The preceding guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the ["Step 3: Upload the DACPAC file" section](migration-import.md#step-3-upload-the-dacpac-file). The preceding guidelines are for SQL Azure VMs only. 
 
 Here are a few more SQL Azure VM configurations that we recommend:
 
 - Use D Series VMs, because they're optimized for database operations.
 - Ensure that the D Series VMs have at least 28 gigabytes (GB) of RAM. For imports, we recommend Azure D12 V2 VM sizes.
-- [Configure the SQL temporary database](/sql/relational-databases/databases/move-system-databases#Examples) to use a drive other than drive C. Ideally the drive should have ample free space; at least equivalent to your database's [largest table](#step-2-generate-a-dacpac-file).
+- [Configure the SQL temporary database](/sql/relational-databases/databases/move-system-databases#Examples) to use a drive other than drive C. Ideally the drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#step-2-generate-a-dacpac-file).
 - If your source database is still over 1 terabyte (TB) after you've [reduced its size](/azure/devops/server/upgrade/clean-up-data), you need to [attach additional 1-TB disks](/azure/virtual-machines/windows/attach-disk-portal) and combine them into a single partition to restore your database on the VM. 
 - If your collection databases are over 1 TB in size, consider using an SSD for both the temporary database and collection database. Also, consider using larger VMs with 16 virtual CPUs (vCPUs) and 128 GB of RAM.
 - You need to have a public facing IP address for the service to reach this machine.
@@ -323,5 +325,4 @@ Your import specification is now configured to use a SQL Azure VM for import. Pr
 
 ## Related articles
 
-- [Migrate options](migration-overview.md) 
-- [Post-import](migration-post-import.md)
+- [Validation and import processes](migration-import.md)  
