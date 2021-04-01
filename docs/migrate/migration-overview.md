@@ -1,13 +1,13 @@
 ---
 title: Azure DevOps Server to Services Migration overview
 description: Overview of the high fidelity migration process from Server to Services
-ms.topic: conceptual
+ms.topic: overview
 ms.technology: devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 10/06/2020
+monikerRange: '<= azure-devops'
+ms.date: 04/01/2021
 ---
 
 # Migrate data from Azure DevOps Server to Azure DevOps Services  
@@ -30,7 +30,7 @@ The data migration tool for Azure DevOps supports the two latest releases of Azu
 
 * Azure DevOps Server 2020.0.1
 * Azure DevOps Server 2020
-* Azure DevOps Server 2019.1.1 (Support for importing new 2019.1.1 collections will be removed on Monday March 5th)
+* Azure DevOps Server 2019.1.1 (Support for importing new 2019.1.1 collections will be removed on Monday April 5th)
 
 > [!NOTE]
 > The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 

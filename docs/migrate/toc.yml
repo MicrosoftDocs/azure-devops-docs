@@ -4,6 +4,8 @@
   href: migrate-from-tfs.md
 - name: Import
   href: migration-import.md
+- name: Import large collections
+  href: migration-import-large-collections.md
 - name: Process templates
   href: migration-processtemplates.md
 - name: Post-import
