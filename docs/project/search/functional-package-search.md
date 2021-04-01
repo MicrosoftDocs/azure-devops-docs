@@ -37,9 +37,9 @@ Start searching across all your packages and artifacts inside your organization.
 
 3. Enter a search string in the textbox, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search.
 
-Search results display with matches to your query shown in bold. The following example shows a full text search that uses simple search strings for words or phrases. 
+   Search results display with matches to your query shown in bold. The following example shows a full text search that uses simple search strings for words or phrases. 
 
-:::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
+   :::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
 ### Sort and view package results
 
 1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
@@ -56,16 +56,22 @@ Search results display with matches to your query shown in bold. The following e
 	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
 ## Syntax for simple and compound searches
 
-Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "config" won't find instances of the word "configuration". However, searches aren't case-sensitive.
-
-Words separated by spaces, and not wrapped in double-quotes, are treated as separate search terms and the search will expect to find an occurrence of all the words (in other words, it assumes the `AND` operator between words).
+- Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
+- Wrap each word in double-quotes to treat them as separate search terms.
+- Separate words with spaces (not wrapped), so Search assumes the `AND` operator between the words.
+- Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
 
 By default, you search within all feeds of the organization, no matter which project you're in. 
-### Search for phrases
 
-To find an exact match to a set of words, enclose your search terms in double-quotes to do a _phrase search_. For example, `"package for markup files"`.
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+- Keyword
+- Exact match
+- Wildcard
+- Wildcard in combination
+- Boolean operators
+- Proximity
+- Special characters
 
-Within a phrase, Boolean operators are treated as literal text.
 ## Search Packages with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?preserve-view-not-set).

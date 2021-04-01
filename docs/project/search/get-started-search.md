@@ -282,6 +282,19 @@ Use the wildcard character `*` and `?` to broaden your search criteria. You can 
 |Finds work items containing words that start with **Browser**, such as **BrowserEdge**, **BrowserIE**, and **BrowserFirefox**.    | `Browser*`         |
 |Finds work items containing words that start with **alpha**, have any alphanumeric character next, and end with **version**. For example, **alpha1version** and **alphaXversion**.      | `alpha?version`     | 
 
+### Code
+
+You can't use a search query such as `*RequestHandler` or `class:?RequestHandler`. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings `file:*RequestHandler.cs` and `repo:?Handlers` are valid.  
+
+|**Usage**                                                           | **Example**                                             |
+|--------------------------------------------------------------------|------------------------------------------------------------|
+| Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**. | `CodeSenseHttp*` and  `CodeA23?R`  |  
+| Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
+
+> [!WARNING]
+> **No results found for ...**  
+> If there's a very large number of hits when using a wildcard search, such as when using a very simple wildcard search string, you may see a message that no matching files were found. In this case, narrow your search to reduce the number of matches. For example, specify more characters of the word(s) you want to find, or add a condition or filter to limit the number of possible matches.   
+
 ### Packages
 
 |**Usage**  |**Example**  |
@@ -298,18 +311,6 @@ Use the wildcard character `*` and `?` to broaden your search criteria. You can 
 
 * If there are lots of hits when you're using a wildcard search, such as when you're using a simple wildcard search string, you may see a message that no matching files are found. In this case, narrow your search to reduce the number of matches. Specify more characters of the word or words that you want to find, or add a condition or filter to limit the number of possible matches.
 
-### Code
-
-You can't use a search query such as `*RequestHandler` or `class:?RequestHandler`. However, you can use prefix wildcards with the other search filter functions; for example, the search query strings `file:*RequestHandler.cs` and `repo:?Handlers` are valid.  
-
-|**Usage**                                                           | **Example**                                             |
-|--------------------------------------------------------------------|------------------------------------------------------------|
-| Finds files containing words that start with **CodeSenseHttp**, such as **CodeSenseHttpClient** and **CodeSenseHttpClientTest**. | `CodeSenseHttp*` and  `CodeA23?R`  |  
-| Finds files containing words that start with **CodeA23**, have any alphanumeric character next, and end with **R**. | **CodeA234R** and **CodeA23QR**.  |
-
-> [!WARNING]
-> **No results found for ...**  
-> If there's a very large number of hits when using a wildcard search, such as when using a very simple wildcard search string, you may see a message that no matching files were found. In this case, narrow your search to reduce the number of matches. For example, specify more characters of the word(s) you want to find, or add a condition or filter to limit the number of possible matches.   
 
 ## View and filter results
 

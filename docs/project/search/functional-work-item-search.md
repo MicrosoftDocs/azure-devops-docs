@@ -22,7 +22,7 @@ You can use Work Item Search by default without any installation when the Boards
 
 ::: moniker-end
 
-By using Work Item Search, you can do the following tasks:
+By using Work Item Search, you can do the following tasks and more.
 
 
 |**Search task**  |**Description**  |
@@ -36,7 +36,8 @@ By using Work Item Search, you can do the following tasks:
 
 ## Prerequisites
 
-All users have access to work item and wiki search.
+- Every user can use the basic Search function, which includes work item and wiki Search.
+- You must be a Stakeholder to do semantic searches on work items, wiki, and packages.
 
 ### Search by work item ID
 
@@ -162,7 +163,17 @@ by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the 
 
 If you're using a portrait orientation screen, use the **Preview pane: Right** link at the top right of the window to display the code below the search results list.
 
-Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
+> [!TIP]
+> Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
+
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+- Keyword
+- Exact match
+- Wildcard
+- Wildcard in combination
+- Boolean operators
+- Proximity
+- Special characters
 
 ## Search Work Items with REST API
 
