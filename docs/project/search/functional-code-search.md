@@ -15,15 +15,15 @@ ms.date: 04/01/2021
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-By using Code Search, you can do the following tasks:
+By using Code Search, you can do the following tasks and more.
 
 
 |**Search task**  |**Description** |
 |---------|---------|
-|**Search across all of your projects**  | - Search in your own code base and your partner teams' code bases. - Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. - Narrow your search by using project, repository, path, file name, and other filter operators.        |
-|**Find specific types of code**  |  - Find - definitions, - references, - functions, - comments, - strings, - namespaces. - Use Code Search to narrow your results to exact code type matches. - Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
-|**Easily drill down or widen your search**   | - When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. 
-  - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.        |
+|**[Search across all of your projects](#functions-to-select-projects-repositories-paths-and-files)**  | Search in your own code base and your partner teams' code bases. Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. Narrow your search by using project, repository, path, file name, and other filter operators.        |
+|**[Find specific types of code](#functions-to-find-specific-types-of-code)**  |  Find definitions, references, functions, comments, strings, and namespaces. Use Code Search to narrow your results to exact code type matches. Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
+|**[Easily drill down or widen your search](#find-related-items-or-other-terms)**   | When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.        |
+
 
 <a name="syntaxdetails"></a>
 
@@ -56,22 +56,22 @@ Code Search requires the [Code Search extension](https://marketplace.visualstudi
 
 ### Code search best practices
 
-- You can use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. You can use Code Search to narrow down your results to exact code type matches. This is useful when all you want to do is just get quickly to the implementation of, for example, an API your code might be taking dependency on.
-- You can narrow your search by using project, repository, path, file name, and other filter operators. This way you achieve your wanted results even faster. Start with a higher-level search if you don’t know where the results would be. Keep filtering until you have a subset of results to browse through and work on.
-- You can [use wildcards to widen your search](get-started-search.md#code-1) and [Boolean operators to fine-tune it](get-started-search.md#code). This ensures you get to the results you desire even when you are not sure of the exact term you're looking for.
-- When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. This helps you find more information about an item of interest faster and with minimal efforts.
-- Similarly, you can also easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
+- Achieve your wanted results even faster by starting with a higher-level search. You can narrow your search by using project, repository, path, file name, and other filter operators. 
+- Ensure that you get to the results you desire even when you're not sure of the exact term you're looking for. [Use wildcards to widen your search](get-started-search.md#code-1) and [Boolean operators to fine-tune it](get-started-search.md#code). 
+- Find more information about an item of interest faster and with minimal efforts. When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files.
+- Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
+- Go quickly to the implementation of, for example, an API your code might be taking dependency on by narrowing down your results to exact code type matches. Use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. 
 
 ## Syntax for simple and compound searches
 
+- Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
+- Wrap each word in double-quotes to treat them as separate search terms.
+- Separate words with spaces (not wrapped), so Search assumes the `AND` operator between the words.
+- Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
+
 > [!NOTE]
 > You can't search code in forked repositories. 
-
-Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
-
-Words separated by spaces, and not wrapped in double-quotes, are treated as separate search terms and the search will expect to find an occurrence of all the words (in other words, it assumes the `AND` operator between words).
-
-Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
+### Search Git projects and repositories
 
 In a Git project, you see a list of the repositories that it contains. Use the project and repository checkboxes to widen your search. You can search more or all projects, or narrow your search to fewer projects and repositories. If there are more than a few projects or repositories, use the **Show more** link to see them all.
 
@@ -81,53 +81,10 @@ Code Search can index multiple branches in a Git repository. By default it index
 ![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
 ::: moniker-end
 
-In a TFVC project, you see a list of folder paths in that project for which you have read access - you won't see any projects and folders 
-for which you don't have read permission. Select paths in the folder tree to narrow your search if necessary.
+In a TFVC project, you see a list of folder paths in that project for which you have read access - you won't see any projects and folders for which you don't have read permission. Select paths in the folder tree to narrow your search if necessary.
 
-Code Search remembers your last settings, such as the project and repository or path that you searched in. Clear the checkboxes to search across all projects easily with the **Clear all** links when you want to search in a different scope. In the results pane, Code Search highlights up to the first 100 hits or matches found in the target files.  
-### Search for phrases
-
-To find an exact match to a set of words, enclose your search terms in double-quotes to do a _phrase search_. 
-
-For example, `"Client not found"`.
-
-Within a phrase:
-
-* Boolean operators are treated as literal text.
-* The query language characters `:()[]*?` are treated as literal text.
-* Escape only the special characters `\` and `"`.
-
- ::: moniker range=" >= azure-devops-2020"
-
-### Search for special characters
-
-You can include special characters in a search string, or search specifically for special characters,
-according to the following rules:
-
-
-|**Usage**  |**Example** |
-|---------|---------|
-|Search for any special character that isn't a part of the query language, for example, excluding the characters `: ( )[ ]*?`) as either a simple search string or a phrase search string.   | `react-redux` or `"react-redux"` produce the same results        |
-|Search for a special character that is a part of the query language (`: ( )[ ]*?`) by enclosing the search string within double-quotes.   | `"flatten()"` finds the literal string `flatten()` |
-|Search for a literal occurrence of the double-quote character `"` by preceding it with the escape character `\` and enclosing the search string in double-quotes.     |`"\"react-redux\""` finds the literal string `"react-redux"`         |
-
-### Search based on proximity
-
-You can search for files based on the term *vicinity* using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default proximity search looks for terms within five tokens distance. 
-
-
-|**Boolean operator** |**Usage**  |**Example**  |
-|---------|---------|---------|
-|BEFORE   | Returns all files where `term1` occurs BEFORE `term2` within a distance of five tokens between them.        | `term1` BEFORE `term2`      |
-|AFTER    | Returns the same results as `term2` BEFORE `term1`                                                          | `term1` AFTER `term2`       |
-|NEAR     |Returns all files where `term1` is within five token distance from `term2` in any direction. `term1` NEAR `term2` returns the same results as `term1` BEFORE `term2` OR `term2` BEFORE `term1`.                                                                                                                | `term1` NEAR `term2`        |
-
-> [!NOTE]
-> - Wildcards and composite proximity searches, such as `term1` BEFORE `term2` AFTER `term3` aren't supported. 
-> - You can combine proximity operators with other filters and operators to narrow your search.
-> - There isn't support to customize the token distance, which defaults to five. 
-
-::: moniker-end
+> [!TIP]
+> Code Search remembers your last settings, such as the project and repository or path that you searched in. Clear the checkboxes to search across all projects easily with the **Clear all** links when you want to search in a different scope. In the results pane, Code Search highlights up to the first 100 hits or matches found in the target files.  
 
 <a name="codefunctions"></a>
 
@@ -210,9 +167,18 @@ One of the powerful features of Code Search is the capability to expand your sea
 Place the insertion point on a term in the file and open the shortcut menu (mouse: right-click) to start a new search for other files containing the selected term. You can search for it as text, for 
 the definition if you select an object name, or for references to a selected object. 
 
-## More examples of search functions
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+- Keyword
+- Exact match
+- Wildcard
+- Wildcard in combination
+- Boolean operators
+- Proximity
+- Special characters
 
-See the following examples of even more search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+## More examples of code search functions
+
+See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 
 |**Usage** |**Example** |
