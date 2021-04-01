@@ -39,7 +39,7 @@ You can find an at-a-glance look at all of the [semantic Search features](#seman
 
 A keyword search is the most basic type of search to get started. Enter a word enclosed with double quotes, and then select _Enter_ or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search. You can also search for a phrase by enclosing your search terms in double-quotes.
 
-By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-your-search-results).
+By default, the search box searches everything. You can narrow down your results and focus on what you need by using [Boolean operators](#narrow-your-search-with-boolean-operators).
 
 ::: moniker range=">= azure-devops-2019"
 
