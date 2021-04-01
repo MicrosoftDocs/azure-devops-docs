@@ -18,7 +18,7 @@ ms.date: 03/30/2021
 Managing change is an aspect of managing your project plan, your requirements, and your sprints. In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change?
 
 > [!NOTE]
-> *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen.&mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/).* 
+> *Agile change management is the adaptive and iterative planning and execution of change management practices that encourages flexibility and speed. If organizations want to make effective change, they need to recognize and deal with the principles of how change happens within agile organizations and have the tools to make the work happen. &mdash;[Managing Change in an Agile World](https://www.agilealliance.org/resources/books/managing-change-in-an-agile-world/)* 
 
 You'll want to keep your change management process lightweight. You'll want to gain insight into where change is occurring in your project, and how the change impacts your team in their ability to deliver. And, when managing change, you'll want to consider your business requirements to meet the following scenarios.   
 
@@ -149,7 +149,7 @@ Here are two examples of defining acceptance criteria.
 	- User Story moved to Resolved state
 	- Remaining hours for tasks set to zero and tasks closed.
 	- No open Sev1 or Sev2 bugs
-	- Deploys successfully to non development environment (automated)
+	- Deploys successfully to nondevelopment environment (automated)
 	- Static Code Analysis is run with results no worse than the baseline.
 
 - **Example 2: A Sprint is considered "Done" when  the following objectives have been met:**
@@ -178,7 +178,7 @@ With queries you can find and triage a list of change management requests or wor
 
 ### Team velocity and unplanned work  
 
-The team velocity chart provides several pieces of information. This chart shows how much work was planned and how much was completed. Viusally, you can determine how often work was added to a sprint after the sprint began. As shown in the following image, the team velocity for the past 10 sprints shows a pattern of adding work after the sprint start date. 
+The team velocity chart provides several pieces of information. This chart shows how much work was planned and how much was completed. Visually, you can determine how often work was added to a sprint after the sprint began. As shown in the following image, the team velocity for the past 10 sprints shows a pattern of adding work after the sprint start date. 
 
 :::image type="content" source="media/manage-change/velocity-chart-scope-creep.png" alt-text="Screenshot of Velocity chart showing scope creep":::
 
