@@ -25,12 +25,12 @@ You can use Work Item Search by default without any installation when the Boards
 By using Work Item Search, you can do the following tasks:
 
 
-|Task  |Description  |
+|**Search task**  |**Description**  |
 |---------|---------|
-|[Search over all your projects](#narrow-your-search-with-boolean-operators)   | Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters.         |
+|[Search over all your projects](#full-text-search-across-all-fields)   | Search in your own and your partner teams' backlog. Use cross-project searches over all the work items to search across your enterprise's entire work items. Narrow your search by using project and area path filters.         |
 |[Search across all work item fields](#full-text-search-across-all-fields)   | Quickly and easily find relevant work items by searching across all work item fields, including custom fields. Use a full text search across all fields to efficiently locate relevant work items. The snippet view indicates where matches were found.        |
-|[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The dropdown list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
-|[Search across test](#start-searching-work-items)   |Search across Test Plans, Test Suites, and other test work item types.         |
+|[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
+|Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
 |[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
 
 
@@ -129,7 +129,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 Quick inline search filters let you refine work items in seconds. The dropdown list of suggestions helps complete your search faster. Mix and match the functions to create quick powerful searches. 
 
-|Usage  |Example |
+|**Usage**  |**Example** |
 |---------|---------|
 | Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |**tags:Critical** finds work items having a field 'tags' containing the term 'Critical'         |
 |Use multiple inline search filters to scope your search by any work item field, including custom fields.    | **t: Bug path:"project\search"** finds all bugs in the area path "project\search"        |
@@ -146,7 +146,7 @@ Filters make it easy to narrow the search to specified projects and area paths.
 
 Narrow the search to a specific location using the `proj`, `area`, `iteration`, `path`, and `comment` filters:
 
-|Usage |Example  |
+|**Usage** |**Example**  |
 |---------|---------|
 |Finds all occurrences of the word **Wiki** in the **Fabrikam** project.  |    `Wiki proj:Fabrikam`      |
 |Finds all occurrences of the word **Wiki** in the area path **Contoso/Mobile** and its subpaths.     |  `Wiki area:Contoso/Mobile`        |

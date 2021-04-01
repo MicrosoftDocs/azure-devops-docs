@@ -16,11 +16,11 @@ ms.date: 04/01/2021
 
 By using Package Search, you can do the following tasks.
 
-- **Search package by title and description**: Quickly and easily find relevant packages by using free text search on title and description. [Narrow your search by using Boolean operators](get-started-search.md#narrow-your-search-results) and combine search criteria. 
+- **Search package by title and description**: Quickly and easily find relevant packages by using free text search on title and description. [Narrow your search by using Boolean operators](get-started-search.md#packages) and combine search criteria. 
 
   :::image type="content" source="media/shared/pkg-srch-u2.png" alt-text="Web portal package search":::
 
-- **Search across all of your organization feeds**: Search feeds across the organization. Narrow your search by using feed, view, and package type filters. [Use wildcards to widen your search](get-started-search.md#broaden-your-search-results) and Boolean operators to fine-tune it. 
+- **Search across all of your organization feeds**: Search feeds across the organization. Narrow your search by using feed, view, and package type filters. [Use wildcards to widen your search](get-started-search.md#packages-1) and Boolean operators to fine-tune it. 
 
   :::image type="content" source="media/shared/pkg-srch-u1.png" alt-text="Web portal package search across organization feeds":::
 ## Prerequisites
