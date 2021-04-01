@@ -504,7 +504,7 @@ Use this form of `dependencies` to map in variables or check conditions at a sta
 In this example, Stage B runs whether Stage A is successful or skipped.
 
 > [!NOTE]
-> The following examples use standard pipeline syntax. If you are using deployment pipelines, both variable and conditional variable syntax will differ. Please refer to [deployment jobs](deployment-jobs.md) for specific syntax.
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
 
 ```yaml
 stages:
