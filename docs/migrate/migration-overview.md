@@ -36,9 +36,9 @@ Normal release cadence for new Azure DevOps Server versions is once every three-
 ## Preview features
 
 > [!Note]
-> If you’re not including preview features when running the migration tool, then you will need to re-run the migration tool prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
+> If you're not including preview features when running the migration tool, then you will need to re-run the migration tool prepare to generate a new import.json to queue an import. You DO NOT need to include preview features when you re-generate your import.json.  
 >
-> If you had previously been including preview features then you DO NOT need to take any additional actions after Monday, April 23rd. 
+> If you had previously been including preview features then you DO NOT need to take any additional actions after Monday, April 23, 2020. 
 
 
 The following features can be included with your import, but are currently in a preview state. 
@@ -72,7 +72,6 @@ In general you should use the [Migration guide and tool](https://aka.ms/AzureDev
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
- 
 
 ### Q: Will my Personal Access Tokens also migrate when I migrate from on-premises to Azure DevOps Services?
 
@@ -88,3 +87,6 @@ A: **Yes**. You can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOps
 
 <!-- ENDSECTION --> 
 
+## Related articles
+
+- [Migration and process model FAQs](faqs.yml)
