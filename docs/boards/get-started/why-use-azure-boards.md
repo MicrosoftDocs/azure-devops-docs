@@ -4,10 +4,9 @@ titleSuffix: Azure Boards & TFS
 description: Understand why to use Azure Boards to track your issues, user stories, bugs, tasks, and other work  
 ms.custom: "boards-get-started, seodec18"
 ms.technology: devops-new-user
-ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 01/11/2019
 ---

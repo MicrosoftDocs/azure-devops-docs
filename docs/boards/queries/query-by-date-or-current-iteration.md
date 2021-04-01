@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 03/24/2021
 ---
