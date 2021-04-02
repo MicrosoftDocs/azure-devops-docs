@@ -22,8 +22,12 @@ landingContent:
             url: azure-devops-docs-2021-02.md
           - text: January 2021
             url: azure-devops-docs-2021-01.md
-          - text: "2020"
+          - text: December 2020
             url: azure-devops-docs-2020-12.md
+          - text: November 2020
+            url: azure-devops-docs-2020-11.md
+          - text: October 2020
+            url: azure-devops-docs-2020-10.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:
