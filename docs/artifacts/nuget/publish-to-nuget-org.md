@@ -25,6 +25,23 @@ You can use your own .NET project to build and generate a NuGet package, or crea
 1. In Visual Studio, select **File**, **New**, then **Project**.
 1. Select the **Class Library (.NET Standard)** template and select **Next**.
 1. Name your project and you solution then select a location to save the project locally. Select **Create** when you are done.
+    
     :::image type="content" source="media/class-library-project.png" alt-text="Create a class library project":::
 
 The template class library is sufficient to create a NuGet package so for the purpose of this tutorial we will use the existing template and we won't be writing any additional code.
+
+## Set up and generate a package
+
+1. Select your project from the solution explorer, right-click and select **properties** then **Package**.
+
+1. Fill out the form and make sure that your **package id** is unique otherwise it may conflict with existing packages on NuGet.org. A common naming convention is something like: Company.Product.Feature. If you want to generate your package every time you build your project, select the **Generate NuGet package on build** checkbox.
+
+    :::image type="content" source="media/package-properties.png" alt-text="Configure package properties":::
+
+1. Select your project from the solution explorer, right-click then select **Pack** to generate your `.nupkg` package.
+
+    :::image type="content" source="media/pack-package.png" alt-text="Generate package":::
+
+1. Check the status of the pack command in the output window.
+
+    :::image type="content" source="media/pack-output.png" alt-text="Pack output":::
