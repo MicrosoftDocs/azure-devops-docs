@@ -22,6 +22,11 @@ If you're working within Microsoft tools, then your Microsoft account (MSA) or A
 
 PATs are easy to create when you need them and easy to revoke when you don’t. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
 
+You can create and manage your PATs through one of two ways:
+1. the user interface in your user settings, which is described in detail below, and
+2. via the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md).
+
+
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
 ## Related articles
@@ -35,8 +40,8 @@ PATs are easy to create when you need them and easy to revoke when you don’t. 
 ## FAQ
 
 ### Q: Is there a way to renew a PAT via REST API?
+A: Yes, there is a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). Read more about renewing/regenerating/rotating PATs in our [FAQ](manage-personal-access-tokens-via-api.md#faq).
 
-A: Yes, you can use the "update" endpoint as part of the [PAT lifecycle management API](TODO: link to REST API docs) to extend the expiration date of a PAT if it hasn't already expired or been revoked.  To get started using this API, see [Manage personal access tokens via API](manage-personal-access-tokens-via-api.md).
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
