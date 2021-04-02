@@ -256,7 +256,7 @@ A: We love that you want to use the API in your language of choice! We’re look
 If you have a sample application that you’d like to share to the larger Azure Devops audience, please [let us know](mailto:angelwong@github.com) and we can look into circulating it on these docs more widely!
 
 ### Q: What is the difference between this token API and the tokenadmin API?
-This [token API](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats) and the [tokenadmin API](https://docs.microsoft.com/rest/api/azure/devops/tokenadmin/?view=azure-devops-rest-6.0), while similar, serve different use cases and audiences: 
+This [token API](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats) and the [tokenadmin API](https://docs.microsoft.com/rest/api/azure/devops/tokenadmin/), while similar, serve different use cases and audiences: 
 * This token API is largely for users who want to manage the PATs that they own in an automated pipeline. This API allows. It gives you the ability to create new tokens and update existing ones.
 * The tokenadmin API is meant for organization admins who are looking to retrieve and revoke the OAuth authorizations, including personal access tokens (PATs) and self-describing session tokens, of users in their organizations. 
 
