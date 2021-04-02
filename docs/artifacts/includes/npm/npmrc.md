@@ -6,14 +6,14 @@ author: ramiMSFT
 ms.date: 09/01/2020
 ---
 
+#### Project setup
+
 The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file. The token has a lifespan of 90 days.
 
 <a id="tokenpast90"></a>
 
 > [!TIP]
 > If you want to create a token that lasts longer than 90 days, make sure you change the default expiration date.
-
-Project setup:
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -34,7 +34,7 @@ Project setup:
     always-auth=true
     ```
 
-Set up credentials by following these steps:
+#### Credentials setup
 
 1. Copy the following code to your user .npmrc file.
 
@@ -66,7 +66,7 @@ Set up credentials by following these steps:
         [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
         ```
     
-        Mac:
+        Linux/Mac:
         ```
         echo -n "YOUR_PAT_GOES_HERE" | base64
         ```
