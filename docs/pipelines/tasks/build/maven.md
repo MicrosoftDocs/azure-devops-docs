@@ -73,6 +73,15 @@ The build agent must have the following capability:
        <td><code>testRunTitle</code><br/>Test run title</td>
        <td>(Optional) Provide a name for the test run.</td>
     </tr>
+   <tr>
+      <td><code>allowBrokenSymbolicLinks</code><br/>Test results files</td>
+      <td>
+         (Optional) Set false to fail build when the task meets broken symbolic links during publishing tests. It has an effect only if <code>publishJUnitResults</code> is set <code>
+         true</code>
+         <br/>Default value: true<br/>
+         Argument aliases: <code>allowBrokenSymlink</code></td>
+      </td>
+   </tr>
     <tr>
        <td><code>codeCoverageTool</code><br/>Code coverage tool</td>
        <td>(Optional) Select the code coverage tool. Enabling code coverage inserts the <code>clean</code> goal into the Maven goals list when Maven runs.<br/>Default value: None <br/>Argument aliases: <code>codeCoverageToolOption</code></td>
