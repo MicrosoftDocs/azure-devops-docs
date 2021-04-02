@@ -444,7 +444,7 @@ When you define an environment in a deployment job, the syntax of the output var
 
 ```yaml
 stages:
-- stage: MyStage
+- stage: StageA
   jobs:
   - deployment: A1
     pool:
@@ -486,12 +486,51 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     variables:
-      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStepTwo.myOutputVar'] ]
+      myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
     
     steps:
     - script: "echo $(myOutputVarTwo)"
       name: echovartwo
+```
+
+When you output a variable from a deployment job, referencing it from the next job uses different syntax depending on if you want to set a variable or use it as a condition for the stage. 
+
+```yaml
+stages:
+- stage: StageA
+  jobs:
+  - deployment: A1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: env1
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - bash: echo "##vso[task.setvariable variable=RunStageB;isOutput=true]true"
+            name: setvarStep
+          - bash: echo $(System.JobName)
+
+- stage: StageB
+  dependsOn: 
+    - StageA
+ 
+  # when referring to another stage, stage name is included in variable path
+  condition: eq(dependencies.StageA.outputs['StageA.A1.setvarStep.RunStageB'], 'true')
+  
+  # Variables reference syntax differs slightly from inter-stage condition syntax
+  variables:
+    myOutputVar: stageDependencies.StageA.A1.outputs['A1.setvarStep.RunStageB']
+  jobs:
+  - deployment: B1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - bash: echo $(myOutputVar)
 ```
 
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)
