@@ -7,7 +7,7 @@ ms.technology: devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
+monikerRange: '<= azure-devops' 
 ms.date: 04/01/2021
 ---
 
@@ -15,7 +15,7 @@ ms.date: 04/01/2021
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
-As part of the migration import process, the data migration tool checks the process used by the projects in the collection. Fix any errors that get flagged. 
+As part of the migration import process, the data migration tool checks the process used by the projects in the collection. Fix any errors that get flagged.  
 
 After resolving the errors, rerun the data migration tool's `validate` command to verify that all errors have been fixed.
 
