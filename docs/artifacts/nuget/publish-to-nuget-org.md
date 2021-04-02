@@ -45,3 +45,23 @@ The template class library is sufficient to create a NuGet package so for the pu
 1. Check the status of the pack command in the output window.
 
     :::image type="content" source="media/pack-output.png" alt-text="Pack output":::
+
+## Generate API key
+
+Now that we created our `nupkg` package, we are almost ready to publish it, but first we need to generate an API key to connect to the NuGet.org API.
+
+1. Sign in to your [NuGet.org](https://www.nuget.org/users/account/LogOn?returnUrl=%2F) account or create one if you haven't.
+
+1. Select your user name icon then select **API Keys**.
+
+1. Select **Create** then enter a name for your key. Give your key a **Push new packages and package version** scope, and enter `*` in the glob pattern field to select all packages. Select **Create** when you are done.
+
+    :::image type="content" source="media/create-api-key.png" alt-text="Create API key":::
+
+1. Select **Copy** and save your API key in a secure location. We will need this key to publish our NuGet package.
+
+    :::image type="content" source="media/api-key.png" alt-text="Copy API key":::
+
+## Publish a package to NuGet.org
+
+You can publish your package using dotnet CLI or nuget.exe CLI. To do so, you will need the name of your package, an API key, and the source URL.
