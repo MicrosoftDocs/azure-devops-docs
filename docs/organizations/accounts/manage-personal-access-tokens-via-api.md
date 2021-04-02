@@ -1,4 +1,4 @@
-`---
+---
 title: Manage personal access tokens via API
 titleSuffix: Azure DevOps
 description: Users can utilize the PAT lifecycle management API to get, create, update, and revoke their personal access tokens (PATs).
@@ -67,7 +67,7 @@ To use application Quickstart, follow the documentation under **Quickstarts** fo
 
 
 ###### Example: Get started with a Python Flask Quickstart application
-1. Once you've registered your application in an AAD tenant with an active Azure subscription, in the[Azure Portal](https://portal.azure.com/), navigate to your registered application under **Azure Active Directory** -> **App Registrations**.
+1. Once you've registered your application in an AAD tenant with an active Azure subscription, in the [Azure Portal](https://portal.azure.com/), navigate to your registered application under **Azure Active Directory** -> **App Registrations**.
    
    ![Open "Azure Active Directory" -> "App Registrations"](./media/manage-personal-access-tokens-via-api/step1-aad-app-registrations.png)
 
@@ -195,7 +195,7 @@ Alternatively, users can choose to use a certificate instead of a client secret;
 
     ```python
     # For single-tenant app:
-    AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"  # 
+    AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"
 
     # For multi-tenant app:
     AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
@@ -241,6 +241,7 @@ In the above Github sample application and Quickstart applications, the applicat
 To learn more about the individual endpoints themselves and what parameters they accept and what is returned in responses, see the [API Reference docs](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats).
 
 
+
 ##  FAQ
 
 ### Q: Why do I need to authenticate with an AAD token? Why is a PAT Token not enough?
@@ -263,9 +264,9 @@ This [token API](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats) a
 Great question! The “Regenerate” functionality available in the UI actually accomplishes a few actions, which are fully replicable through the API. 
 
 To rotate your PAT, you need to:
-1. Understand the metadata of the PAT using a GET call, 
-2. Create a new PAT with the old PAT’s metadata using a POST call, 
-3. Revoke the old PAT using a DELETE call
+1. Understand the metadata of the PAT using a **GET** call, 
+2. Create a new PAT with the old PAT’s metadata using a **POST** call, 
+3. Revoke the old PAT using a **DELETE** call
 
 We may consider updating the API to include a method for rotating PATs in future versions of the API.
 

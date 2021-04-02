@@ -40,7 +40,7 @@ You can create and manage your PATs through one of two ways:
 ## FAQ
 
 ### Q: Is there a way to renew a PAT via REST API?
-A: Yes, there is a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). Read more about renewing/regenerating/rotating PATs in our [FAQ](manage-personal-access-tokens-via-api.md#faq).
+A: Yes, there is a way to renew, manage, and create PATs using our [PAT Lifecycle Management APIs](manage-personal-access-tokens-via-api.md). Read more about renewing/regenerating/rotating PATs in our [FAQ](manage-personal-access-tokens-via-api.md#q-how-can-i-regeneraterotate-pats-through-the-api-i-saw-that-option-in-the-ui-but-i-dont-see-a-similar-method-in-the-api).
 
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
