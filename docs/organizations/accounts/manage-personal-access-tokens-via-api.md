@@ -14,60 +14,60 @@ monikerRange: 'azure-devops'
 # Manage personal access tokens (PATs) via API
 [!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
-When dealing with a large set of personal access tokens (PATs), it may become cumbersome to manage the maintenance of these tokens via UI alone.
+When you're dealing with a large set of personal access tokens (PATs), it may become complex to manage the maintenance of these tokens via UI alone.
 
 With the PAT Lifecycle Management API, it's much easier to manage the PATs associated with your organizations via automated processes. This rich set of APIs enables you to manage the PATs you own, allowing you to create new personal access tokens and renew or expire existing personal access tokens.
 
 > [!IMPORTANT]
-> In order to use the API, you must authenticate with an Azure Active Directory (AAD) token. Learn more on how to do this in the [authentication section below](#api-authentication).
+> To use the API, you must authenticate with an Azure Active Directory (Azure AD) token. Learn more on how to do this in the following [authentication section](#api-authentication).
 
 To see the full list of available endpoints, [view the API reference here](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats).
 
 
 ## API authentication
 
-### Authenticating with Azure Active Directory (AAD) Tokens
+### Authenticating with Azure Active Directory (Azure AD) Tokens
 
-Unlike other Azure DevOps Services APIs, users must provide an [Azure Active Directory (AAD) access token](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) to use this API instead of a PAT token. AAD tokens are a safer authentication mechanism than using PATs. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only.
+Unlike other Azure DevOps Services APIs, users must provide an [Azure Active Directory (Azure AD) access token](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) to use this API instead of a PAT token. Azure AD tokens are a safer authentication mechanism than using PATs. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only.
 
-The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows you can use within your app for acquiring and refreshing AAD tokens. A complete list of MSAL flows can be found under Microsoft Authentication Library “authentication flows” documentation. A guide to choosing the right authentication method for your application can be found under Choosing the right authentication method for Azure DevOps.
+The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows you can use within your app for acquiring and refreshing Azure AD tokens. A complete list of MSAL flows can be found under Microsoft Authentication Library “authentication flows” documentation. A guide to choosing the right authentication method for your application can be found under Choosing the right authentication method for Azure DevOps.
 
 
 > [!IMPORTANT]
-> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue an AAD access token is not valid for use with this API.  If multi-factor authentication is enabled in your AAD tenant, you must definitely use the MSAL “authorization code” flow.  
+> "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue an Azure AD access token is not valid for use with this API.  If multi-factor authentication is enabled in your Azure AD tenant, you must definitely use the MSAL “authorization code” flow.  
 
-To use the MSAL library to automatically acquire and refresh AAD access tokens, you must: 
-1. [Have an AAD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
-2. [Register an application in their AAD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
+To use the MSAL library to automatically acquire and refresh Azure AD access tokens, you must: 
+1. [Have an Azure AD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
+2. [Register an application in their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
 3. [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
 
 > [!CAUTION]
-> Having an AAD tenant with an active Azure subscription is a prerequisite for using this API.
+> Having an Azure AD tenant with an active Azure subscription is a prerequisite for using this API.
 
-Once you have an application with a working authentication flow for handling AAD tokens, you can use these tokens to make calls to the PAT Lifecycle Management API. In the following section, we show you how to create an app that authenticates a user with an AAD access token using the MSAL library and calls our PAT Lifecycle Management API. 
+Once you have an application with a working authentication flow for handling Azure AD tokens, you can use these tokens to make calls to the PAT Lifecycle Management API. In the following section, we show you how to create an app that authenticates a user with an Azure AD access token using the MSAL library and calls our PAT Lifecycle Management API. 
 
-Follow either one of the two examples below to get started:
+Follow either one of the two examples to get started:
 * [Clone our sample Python Flask app](#clone-our-python-flask-web-app) and configure it with your tenant and ADO organization
 * [Generate a sample application in the Azure portal](#generate-a-quickstart-azure-portal-application) for your language of choice and configure it for the PAT Lifecycle Management API
 
 #### Clone our Python Flask web app
 
-We've provided you with a [sample Python Flask web application for this API that you can download on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) and can be configured to use with your AAD tenant and Azure DevOps organization. The sample application uses the MSAL authentication code flow to acquire an AAD access token.  
+We've provided you with a [sample Python Flask web application for this API that you can download on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample) and can be configured to use with your Azure AD tenant and Azure DevOps organization. The sample application uses the MSAL authentication code flow to acquire an Azure AD access token.  
 
 > [!IMPORTANT]
-> We recommend getting started with the sample Python Flask web application on GitHub, but if you prefer to use a different language or application type, use the [Quickstart option](#generate-a-quickstart-azure-portal-application) below to recreate an equivalent test application.
+> We recommend getting started with the sample Python Flask web application on GitHub, but if you prefer to use a different language or application type, use the [Quickstart option](#generate-a-quickstart-azure-portal-application) to recreate an equivalent test application.
 
-Once you've cloned the sample app, follow the instructions in the repo’s README. The README explains how to register an application in your AAD tenant, configure the sample to use your AAD tenant, and run your cloned app.
+Once you've cloned the sample app, follow the instructions in the repo’s README. The README explains how to register an application in your Azure AD tenant, configure the sample to use your Azure AD tenant, and run your cloned app.
 
 #### Generate a Quickstart Azure portal application
 
 Instead, you can generate a sample app with the generated MSAL code using the **Quickstart** option on the application's page in [Azure portal](https://portal.azure.com/). The Quickstart test application follows the authorization code flow, but does so with a Microsoft Graph API endpoint. Users will need to update the application's configuration to point to the endpoint for the PAT Lifecycle Management API.
 
-To follow this approach, follow the **Quickstarts** instructions for the application type of your choice on the [Azure Active Directory Develop docs homepage](https://docs.microsoft.com/azure/active-directory/develop/). Below, we will walk through an example where we've done this for a Python Flask Quickstart app.
+To follow this approach, follow the **Quickstarts** instructions for the application type of your choice on the [Azure AD Develop docs homepage](https://docs.microsoft.com/azure/active-directory/develop/). We will walk through an example where we've done this for a Python Flask Quickstart app.
 
 
 ###### Example: Get started with a Python Flask Quickstart application
-1. Once you've registered your application in an AAD tenant that has an active Azure subscription, navigate to your registered application under **Azure Active Directory** -> **App Registrations** in the [Azure portal](https://portal.azure.com/).
+1. Once you've registered your application in an Azure AD tenant that has an active Azure subscription, navigate to your registered application under **Azure Active Directory** -> **App Registrations** in the [Azure portal](https://portal.azure.com/).
    
    ![Open "Azure Active Directory" -> "App Registrations"](./media/manage-personal-access-tokens-via-api/step1-aad-app-registrations.png)
 
@@ -97,7 +97,7 @@ To follow this approach, follow the **Quickstarts** instructions for the applica
 
     ![Download the Quickstart application and extract the files](./media/manage-personal-access-tokens-via-api/step8-download-and-extract.png)
 
-9.  Install the application requirements and run the application to ensure you have all necessary dependencies.  The application is initially configured to hit an endpoint in the Microsoft Graph API. Users can change this endpoint to the PAT Lifecycle Management API base endpoint by following the configuration instructions below. 
+9.  Install the application requirements and run the application to ensure you have all necessary dependencies.  The application is initially configured to hit an endpoint in the Microsoft Graph API. Users can change this endpoint to the PAT Lifecycle Management API base endpoint by following the configuration instructions in the following section. 
     
     ![Install the application requirements and run the application to ensure you have all necessary dependencies](./media/manage-personal-access-tokens-via-api/step9-install-and-run.png)
 
@@ -114,7 +114,7 @@ To do so, we need to do a few things:
 1. Update the **ENDPOINT** configuration variable to `https://vssps.dev.azure.com/{YOUR_COLLECTION_NAME_HERE}/_apis/Tokens/Pats?api-version=6.1-preview` for the PAT Lifecycle Management APIs
 2. Update the **SCOPE** configuration variable to **"499b84ac-1321-427f-aa17-267ca6975798/.default"** to refer to the Azure DevOps resource and all of its scopes.
 
-The below example will show you how we did this configuration for the Quickstart Python Flask application we generated through the Azure portal in the previous section.
+The following example will show you how we did this configuration for the Quickstart Python Flask application we generated through the Azure portal in the previous section.
 
 Make sure you follow instructions to secure your client secret, which is initially inserted in plain-text into the application configuration file. As a best practice, remove the plain-text variable from the configuration file and use an environment variable or Azure KeyVault to secure their application's secret. 
 
@@ -232,23 +232,23 @@ Instead, you can choose to use a certificate instead of a client secret. Using c
 6. Rerun the application to test that you can GET all PAT tokens for the requesting user.  Once you've verified that you have, feel free to modify the contents of `'app.py'` and the `'ms-identity-python-webapp-master\templates'` directory to support sending requests to the rest of the PAT lifecycle management API endpoints.  For an example of a Python Flask Quickstart application that has been modified to support requests to all PAT lifecycle management API endpoints, [see this sample repo on GitHub](https://github.com/microsoft/azure-devops-auth-samples/tree/master/PersonalAccessTokenAPIAppSample).
 
 
-### Automatically refresh an AAD access token
+### Automatically refresh an Azure AD access token
 Once the application is configured correctly and the user has acquired an access token, the token can be used for up to an hour. The MSAL code provided in both examples above will automatically refresh the token once it expires. Refreshing the token prevents the user from needing to log in again and acquire a new authorization code. However, users may need to log in again after 90 days once their refresh token expires.
 
 
 ### Explore PAT Lifecycle Management APIs
-In the above GitHub sample application and Quickstart applications, the application has been pre-configured to make requests with the AAD tokens you've acquired. 
+In the above GitHub sample application and Quickstart applications, the application has been pre-configured to make requests with the Azure AD tokens you've acquired. 
 To learn more about the endpoints, what parameters they accept, and what is returned in responses, see the [API Reference docs](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats).
 
 
 
 ##  FAQ
 
-### Q: Why do I need to authenticate with an AAD token? Why is a PAT Token not enough?
-A: With this PAT Lifecycle Management API, we've opened up the ability to create new PATs and revoke existing PATs. In the wrong hands, this API could be used by malicious actors to create multiple entry points into your organization’s ADO resources. By enforcing AAD authentication, we hope to have this powerful API be more secure against this unauthorized usage. 
+### Q: Why do I need to authenticate with an Azure AD token? Why is a PAT Token not enough?
+A: With this PAT Lifecycle Management API, we've opened up the ability to create new PATs and revoke existing PATs. In the wrong hands, this API could be used by malicious actors to create multiple entry points into your organization’s ADO resources. By enforcing Azure AD authentication, we hope to have this powerful API be more secure against this unauthorized usage. 
 
-### Q: Do I need to have an AAD tenant with an active Azure subscription to use this API?
-A:  Unfortunately, this API is only available to users that are part of an AAD tenant with an active Azure subscription.
+### Q: Do I need to have an Azure AD tenant with an active Azure subscription to use this API?
+A:  Unfortunately, this API is only available to users that are part of an Azure AD tenant with an active Azure subscription.
 
 ### Q: Can I get an example of this sample application for another language/framework/application type?
 A: We love that you want to use the API in your language of choice! We’re looking to add alternative GitHub samples in other languages soon. In the meantime, if you have a request for an example, head over to our [Dev Community](https://developercommunity.visualstudio.com/search?space=21) to see if someone else has an example to share. 
