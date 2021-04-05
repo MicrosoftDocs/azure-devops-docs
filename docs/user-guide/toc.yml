@@ -72,3 +72,6 @@
     href: service-limits.md
   - name: Features index
     href: alm-devops-features.md
+  - name: Azure CLI
+    href: /cli/azure/devops
+    
