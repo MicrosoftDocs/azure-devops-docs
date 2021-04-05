@@ -30,17 +30,19 @@
       href: get-started-nuget.md
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-    - name: Publish a NuGet package from the command line
+    - name: Publish to a NuGet feed (CLI)
       href: nuget/publish.md
+    - name: Publish to NuGet.org
+      href: nuget/publish-to-nuget-org.md
     - name: Consume NuGet packages in Visual Studio
       href: nuget/consume.md
-    - name: Use NuGet with Azure DevOps Services
+    - name: Use NuGet with Artifacts feeds
       href: nuget/nuget-exe.md
-    - name: Use dotnet with Azure DevOps Services
+    - name: Use dotnet with Artifacts feeds
       href: nuget/dotnet-exe.md
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md
-    - name: Use packages from nuget.org
+    - name: NuGet upstream source
       href: nuget/upstream-sources.md
     - name: Set up a multi-developer environment
       href: nuget/bootstrap-nuget.md
