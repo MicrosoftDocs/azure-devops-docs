@@ -709,6 +709,7 @@ steps:
     Write-Host "my environment variable is $env:SAUCE"
 ```
 
+
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
@@ -745,6 +746,9 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 
@@ -766,6 +770,9 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
