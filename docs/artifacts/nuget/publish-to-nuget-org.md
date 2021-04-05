@@ -46,7 +46,7 @@ The template class library is sufficient to create a NuGet package so for the pu
 
     :::image type="content" source="media/pack-output.png" alt-text="Pack output":::
 
-## Generate API key
+## Generate an API key
 
 Now that we created our `nupkg` package, we are almost ready to publish it, but first we need to generate an API key to connect to the NuGet.org API.
 
@@ -64,4 +64,33 @@ Now that we created our `nupkg` package, we are almost ready to publish it, but 
 
 ## Publish a package to NuGet.org
 
-You can publish your package using dotnet CLI or nuget.exe CLI. To do so, you will need the name of your package, an API key, and the source URL.
+You can publish your package using the web UI, dotnet CLI, or nuget.exe CLI. We are going to focus on publishing packages by using the command line in this section. You will need the name of your package, an API key, and the source URL to do so.
+
+### [dotnet CLI](#tab/dotnet/)
+
+1. In an elevated command prompt, navigate to the folder containing your `nupkg` package.
+
+1. Run the following command to publish your package to NuGet.org. Replace the placeholders with your package name and API key.
+
+    ```Command
+    dotnet nuget push <packageName> --api-key <APIKey> --source https://api.nuget.org/v3/index.json
+    ```
+
+1. The output of the previous command should look something like this.
+
+    :::image type="content" source="media/package-published.png" alt-text="Publish package output":::
+
+### [nuget.exe](#tab/nuget/)
+
+1. In an elevated command prompt, navigate to the folder containing your `nupkg` package.
+
+1. Run the following command to publish your package to NuGet.org. Replace the placeholders with your package name and API key.
+
+    ```Command
+    nuget push <packageName> <APIKey> -Source https://api.nuget.org/v3/index.json
+    ```
+1. The output of the previous command should look something like this.
+
+    :::image type="content" source="media/package-published-nuget-exe.png" alt-text="Publish package output":::
+
+---
