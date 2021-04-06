@@ -132,7 +132,7 @@ sections:
 
       - question: How do I add a backlog or board?  
         answer: | 
-          To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
+          To add a backlog or board, you add a team. Each team is configured with it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
 
       - question: What limits should I be aware of?  
         answer: | 
