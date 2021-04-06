@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 05/11/2020
+ms.date: 04/06/2021
 monikerRange: azure-devops
 ---
 
@@ -24,11 +24,14 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
+> [!NOTE]
+> Caching is currently free, and cashes are stored in Azure blob storage.
+
 ## Use Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
