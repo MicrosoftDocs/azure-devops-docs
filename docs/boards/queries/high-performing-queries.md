@@ -22,7 +22,7 @@ While you can easily create a work item query, creating a high performing query 
 > [!NOTE]   
 > Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
-This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command.
+This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/boards#az_boards_query) command.
 
 
 
@@ -83,4 +83,4 @@ Saved queries have a higher chance of performing better due to internal optimiza
 - [Query fields, operators & macros](query-operators-variables.md)
 - [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
-- [az boards query command](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query)
+- [az boards query command](/cli/azure/boards#az_boards_query)
