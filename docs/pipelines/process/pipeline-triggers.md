@@ -92,6 +92,20 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 :::moniker-end
 
+You can trigger your pipeline when one or more stages of the triggering pipeline complete by using the `stages` filter. If you provide multiple stages, the triggered pipeline runs when all of the listed stages complete.
+
+```yml
+resources:
+  pipelines:
+  - pipeline: MyCIAlias  
+    project: Fabrikam  
+    source: Farbrikam-CI  
+    trigger:    
+      stages:         # This stage filter is used when evaluating conditions for 
+      - PreProduction # triggering your. On successful completion of all the stages
+      - Production    # provided, your pipeline will be triggered. 
+```
+
 ## Branch considerations for pipeline completion triggers
 
 Pipeline completion triggers use the **Default branch for manual and scheduled builds** setting to determine which branch's version of a YAML pipeline's branch filters to evaluate when determining whether to run a pipeline as the result of another pipeline completing. By default this setting points to the default branch of the repository.
