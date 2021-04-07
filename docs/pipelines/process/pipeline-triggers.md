@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 03/31/2021
+ms.date: 04/07/2021
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -71,6 +71,26 @@ resources:
 > If your filters aren't working, try using the prefix `refs/heads/`. For example, use `refs/heads/releases/old*`instead of `releases/old*`.
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following section.
+
+## Tag filters
+
+:::moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> [Tag filter support for pipeline resources](/azure/devops/server/release-notes/azuredevops2020u1#tag-filter-support-for-pipeline-resources) requires [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
+
+:::moniker-end
+
+
+
+## Stage filters
+
+:::moniker range="<azure-devops"
+
+> [!IMPORTANT]
+> [Stages filters for pipeline resource triggers](/azure/devops/server/release-notes/azuredevops2020u1#stages-filters-for-pipeline-resource-triggers) requires [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
+
+:::moniker-end
 
 ## Branch considerations for pipeline completion triggers
 
