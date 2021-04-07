@@ -323,11 +323,13 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xamarin
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
+  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, specifying the symlink to Xamarin versions bundle as needed.
 
-  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
+  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md).
+  The list of all available Xamarin SDK versions and symlinks can be found in these documentations:
+  - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
+  - [macOS 11.0](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-11.0-Readme.md#xamarin)
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -361,17 +363,6 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
 
-#### .NET Core
-  .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](../tasks/tool/dotnet-core-tool-installer.md).
-
-#### Boost
-  The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
-  
-  Example of g++ invocation with Boost libraries:
-  ```
-  g++ -I "$BOOST_ROOT/include" ...
-  ```
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 
