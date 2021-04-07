@@ -81,7 +81,22 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 :::moniker-end
 
+You can use tags to define the default version of the pipeline resource to be consumed, and you can choose to trigger your pipeline based on tags set on the triggering pipeline.
 
+```yml
+resources:
+  pipelines:
+  - pipeline: MyCIAlias
+    project: Fabrikam
+    source: Farbrikam-CI
+    branch: master
+    tags:          # This filter is used for resolving default version
+    - Production   # Tags are AND'ed
+    trigger:
+      tags:        # This filter is used for triggering the pipeline run
+      - Production # Tags are AND'ed
+      - Signed
+```
 
 ## Stage filters
 
