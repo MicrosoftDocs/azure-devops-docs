@@ -3,7 +3,7 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 01/29/2021
+ms.date: 04/07/2021
 monikerRange: 'azure-devops'
 ---
 
