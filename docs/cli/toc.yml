@@ -21,7 +21,7 @@
 - name: Azure CLI Reference
   items:
   - name: Command reference
-    href: /cli/azure/ext/azure-devops?view=azure-cli-latest
+    href: /cli/azure/devops?view=azure-cli-latest
   - name: Output formats
     href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
   - name: Query
