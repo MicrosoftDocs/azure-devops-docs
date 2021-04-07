@@ -1119,8 +1119,8 @@ resources:
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
-      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
-      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 2020.1 and greater
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 2020.1 and greater
 ```
 # [Example](#tab/example)
 
