@@ -422,7 +422,7 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
+- [Azure DevOps CLI](/cli/azure//)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 
  

@@ -167,4 +167,4 @@
   - name: REST API reference
     href: /rest/api/azure/devops/index
   - name: Azure DevOps CLI
-    href: ../cli/index.md
+    href: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
