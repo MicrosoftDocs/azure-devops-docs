@@ -1140,7 +1140,6 @@ If the variable `a` is an output variable from a previous job, then you can use 
 ### Recursive expansion
 
 On the agent, variables referenced using `$( )` syntax are recursively expanded.
-However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -1150,7 +1149,7 @@ variables:
 
 steps:
 - script: echo $(myOuter)  # prints "someValue"
-  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
+  displayName: Variable is $(myOuter)  # display name is "Variable is someValue"
 ```
 
 ::: moniker-end
