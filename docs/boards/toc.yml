@@ -250,4 +250,4 @@
   - name: Client support 
     href: ../user-guide/tools.md
   - name: Azure DevOps CLI
-    href: /cli/azure/ext/azure-devops/boards
+    href: /cli/azure/boards
