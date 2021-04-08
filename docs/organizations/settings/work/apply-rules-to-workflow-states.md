@@ -102,7 +102,7 @@ The second group supports restricting state transitions. In this second group, y
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020.1-updates.md)]
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 ::: moniker range="azure-devops-2019"
 
@@ -174,7 +174,7 @@ Workflow conditions and actions you can set are illustrated in the following ima
 ::: moniker range="azure-devops"
 :::row:::  
    :::column span="4":::
-      **Based on and user or group membership, set field attribute or restrict a State transition**
+      **Based on and user or group membership, set a field attribute or restrict a State transition**
    :::column-end:::
 :::row-end:::
 :::row:::  

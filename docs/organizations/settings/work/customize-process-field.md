@@ -229,7 +229,7 @@ Description help text displays when users hover over a field in the work item fo
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020.1-updates.md)]
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 ::: moniker range="azure-devops-2019"
 
