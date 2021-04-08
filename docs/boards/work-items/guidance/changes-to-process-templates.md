@@ -36,7 +36,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      ## [Azure DevOps Server 2020.1 update](/azure/devops/server/release-notes/azuredevops2020u1#removing-assigned-to-rule-on-bug-work-item-type)   
+      ## [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1#removing-assigned-to-rule-on-bug-work-item-type)   
       Azure DevOps Services (October 2020)  
    :::column-end:::
    :::column span="3":::
@@ -49,7 +49,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      [Azure DevOps Server 2020.1 update](/azure/devops/server/release-notes/azuredevops2020u1#improved-rules-for-activated-and-resolved-fields)   
+      [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1#improved-rules-for-activated-and-resolved-fields)   
       Azure DevOps Services (August 2020)  
    :::column-end:::
    :::column span="3":::
@@ -150,7 +150,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      TFS 2013.3  
+      ## TFS 2013.3  
    :::column-end:::
    :::column span="3":::
       Added support for the Test Plan and Test Suite feature to support customization and tracking of these items similar to other work item types.  
@@ -163,7 +163,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      TFS 2013.2  
+      ## TFS 2013.2  
    :::column-end:::
    :::column span="3":::
       Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../test/repeat-test-with-different-data.md).   
@@ -176,7 +176,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      TFS 2013 RTM  
+      ## TFS 2013 RTM  
    :::column-end:::
    :::column span="3":::
       Added the Portfolio Backlog feature and changes to simplify process configuration management.  
@@ -210,7 +210,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 ---
 :::row:::
    :::column span="1":::
-      TFS 2012 RTM  
+      ## TFS 2012 RTM  
    :::column-end:::
    :::column span="3":::
       Added the Code Review, My Work, Feedback, Storyboarding, and Planning Tools features.  
