@@ -93,37 +93,37 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Team configurable option to choose to track bugs on backlogs and boards either as requirements or as tasks. This necessitated adding fields to the bug WIT definition as well as adding a process configuration behavior.   
       #### The following changes were made to the default process templates:   
       - **WITs added**: Epic 
-      - **Miscellaneous WIT changes:**
+      **Miscellaneous WIT changes:**
              - Feature: Added **Effort**, **Time Criticality**, and **Value Area** fields; added workflow transition from *Active* to *Removed*  
              - Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option 
              - Minor layout changes to  WIT forms to reflect additions of new fields; added **ID** field to all forms 
              - Added WIT `refname` attribute to all WIT definitions. 
-      - **Categories:** Added Epic Category.  
-      - **Process configuration changes:**
+      **Categories:** Added Epic Category.  
+      **Process configuration changes:**
              - Added Epic portfolio backlog 
              - Feature: Added **Effort** and **Value Area** fields to the default columns of the backlog 
              - Requirement Category backlog: Added **Value Area** to the default columns of the backlog  
              - Increased the default work item count limits on all boards to 1000  
              - Added new properties to specify the default behavior for new teams. 
-      - **ProcessTemplate changes:** Process template names no longer specify the version or year; Agile, CMMI, Scrum.   
+      **ProcessTemplate changes:** Process template names no longer specify the version or year; Agile, CMMI, Scrum.   
       #### Changes made to Agile WIT definitions:  
-      - **User Story:**
+      **User Story:**
              - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields 
              - Added transitions from *Active* to *Removed* and *Resolved* to *Removed*   
              - Removed rules that populated **Activated By** and **Activated Date** fields when State=*Resolved*   
-      - **Bug:**
+      **Bug:**
              - Added **Activity**, **Story Points**, **Original Work**, **Completed Work**, **Remaining Work**, **Severity**, and **Value Area** fields 
              - Added *New* state and corresponding workflow transitions 
              - Added several field rules to copy or set defaults during state transitions 
              - Added *Fixed and verified* as a **Resolved Reason**.
-      - **Task:** Added rule to empty **Remaining Work** field  to support zeroing out the field when the State is set to *Closed*. 
+      **Task:** Added rule to empty **Remaining Work** field  to support zeroing out the field when the State is set to *Closed*. 
 
       #### Changes made to CMMI WIT definitions: 
-      - **Requirement:** 
+      **Requirement:** 
              - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields  
              - Added transitions from *Active* to *Removed* and *Resolved* to *Removed* 
              - Removed rules that populated **Activated By** and **Activated Date** fields when state=*Resolved*. 
-      - **Bug**: Added **Size**, **Discipline**, **Original Work**, **Completed Work**, and **Value Area** fields.   
+      **Bug**: Added **Size**, **Discipline**, **Original Work**, **Completed Work**, and **Value Area** fields.   
  
       #### Changes made to Scrum WIT definitions: 
       - **Product backlog item:** Added **Priority** and **Value Area** fields; added workflow transition from *Committed* to *Removed* workflow states  
@@ -138,11 +138,11 @@ If you've customized your project and haven't upgraded your on-premises deployme
    :::column-end:::
    :::column span="3":::
       #### The following changes were made to the WIT definitions:  
-      - **Scrum:** Bug and Product backlog item: Removed the **Backlog Priority** field from the form
-      - **Agile:**
+      **Scrum:** Bug and Product backlog item: Removed the **Backlog Priority** field from the form
+      **Agile:**
           - Bug: Added the **Story Points** field; 
           - User Story: Removed the **Stack Rank** field from the form 
-      - **CMMI:** 
+      **CMMI:** 
           - Added the **Size** field to the Bug definition. 
           - Removed the **Stack Rank** field from the Requirement form. 
    :::column-end:::
@@ -215,15 +215,15 @@ If you've customized your project and haven't upgraded your on-premises deployme
    :::column span="3":::
       Added the Code Review, My Work, Feedback, Storyboarding, and Planning Tools features.  
       #### The following changes were added to all default process templates:   
-      - WITs added: Code Review Request, Code Review Response, Feedback Request, and Feedback Response 
-      - **WIT form changes:** 
+      **WITs added:** Code Review Request, Code Review Response, Feedback Request, and Feedback Response 
+      **WIT form changes:** 
              - Many work item forms have been updated to display the larger font for the **Title** field and a two column layout of tab groups  
              - Maintained mnemonic support only for the following fields: **Area Path**, **Assigned To**, **History**, **Iteration Path**, **State**, and **Title**. Mnemonics have been removed from all other fields within the type definitions. 
       - Categories added: Code Review Request Category, Code Review Response Category, Feedback Request Category, Feedback Response Category, and Hidden Types Category 
-      - Process configuration: Added `CommonConfiguration` and `AgileConfiguration` definition files to support Agile planning tools, code review, feedback, and My Work. 
-      - Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use [legacy build processes](/previous-versions/dd647548(v=vs.140). 
-      - Process template plug-in: Added `version` element to support updating projects when configuring new features.
-      - Updated support files that contain forward links to process guidance content to point to the latest content.
+      **Process configuration:** Added `CommonConfiguration` and `AgileConfiguration` definition files to support Agile planning tools, code review, feedback, and My Work. 
+      **Build plug-in:** Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use [legacy build processes](/previous-versions/dd647548(v=vs.140). 
+      **Process template plug-in:** Added `version` element to support updating projects when configuring new features.
+      Updated support files that contain forward links to process guidance content to point to the latest content.
 
       #### The following changes were made to the Scrum process:  
       - Removed the **Sprint** type definition and **All Sprints** query, whose functionality has been replaced with the Agile planning tools.
