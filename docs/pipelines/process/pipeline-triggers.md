@@ -111,8 +111,6 @@ There are two ways that tags are used with a pipeline resource.
           - Signed
     ```
 
-You can use tags to define the default version of the pipeline resource to be consumed, and you can choose to trigger your pipeline based on tags set on the triggering pipeline.
-
 ## Stage filters
 
 :::moniker range="<azure-devops"
