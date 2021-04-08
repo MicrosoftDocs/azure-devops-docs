@@ -426,7 +426,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
 
-[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020.1-updates.md)]
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 

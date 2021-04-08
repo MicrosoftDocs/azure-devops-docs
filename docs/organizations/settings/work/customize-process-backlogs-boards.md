@@ -41,7 +41,7 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
 
-[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020.1-updates.md)]
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 <a id="add-oob-to-backlog" /> 
 
