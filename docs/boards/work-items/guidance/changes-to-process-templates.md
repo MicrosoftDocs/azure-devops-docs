@@ -94,35 +94,35 @@ If you've customized your project and haven't upgraded your on-premises deployme
       #### The following changes were made to the default process templates:   
       - **WITs added**: Epic 
       - **Miscellaneous WIT changes:**
-          - Feature: Added **Effort**, **Time Criticality**, and **Value Area** fields; added workflow transition from *Active* to *Removed*  
-          - Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option 
-          - Minor layout changes to  WIT forms to reflect additions of new fields; added **ID** field to all forms 
-        - Added WIT `refname` attribute to all WIT definitions. 
+             - Feature: Added **Effort**, **Time Criticality**, and **Value Area** fields; added workflow transition from *Active* to *Removed*  
+             - Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option 
+             - Minor layout changes to  WIT forms to reflect additions of new fields; added **ID** field to all forms 
+             - Added WIT `refname` attribute to all WIT definitions. 
       - **Categories:** Added Epic Category.  
       - **Process configuration changes:**
-          - Added Epic portfolio backlog 
-          - Feature: Added **Effort** and **Value Area** fields to the default columns of the backlog 
-          - Requirement Category backlog: Added **Value Area** to the default columns of the backlog  
-          - Increased the default work item count limits on all boards to 1000  
-          - Added new properties to specify the default behavior for new teams. 
+             - Added Epic portfolio backlog 
+             - Feature: Added **Effort** and **Value Area** fields to the default columns of the backlog 
+             - Requirement Category backlog: Added **Value Area** to the default columns of the backlog  
+             - Increased the default work item count limits on all boards to 1000  
+             - Added new properties to specify the default behavior for new teams. 
       - **ProcessTemplate changes:** Process template names no longer specify the version or year; Agile, CMMI, Scrum.   
       #### Changes made to Agile WIT definitions:  
       - **User Story:**
-          - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields 
-          - Added transitions from *Active* to *Removed* and *Resolved* to *Removed*   
-          - Removed rules that populated **Activated By** and **Activated Date** fields when State=*Resolved*   
+             - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields 
+             - Added transitions from *Active* to *Removed* and *Resolved* to *Removed*   
+             - Removed rules that populated **Activated By** and **Activated Date** fields when State=*Resolved*   
       - **Bug:**
-          - Added **Activity**, **Story Points**, **Original Work**, **Completed Work**, **Remaining Work**, **Severity**, and **Value Area** fields 
-          - Added *New* state and corresponding workflow transitions 
-          - Added several field rules to copy or set defaults during state transitions 
-          - Added *Fixed and verified* as a **Resolved Reason**.
+             - Added **Activity**, **Story Points**, **Original Work**, **Completed Work**, **Remaining Work**, **Severity**, and **Value Area** fields 
+             - Added *New* state and corresponding workflow transitions 
+             - Added several field rules to copy or set defaults during state transitions 
+             - Added *Fixed and verified* as a **Resolved Reason**.
       - **Task:** Added rule to empty **Remaining Work** field  to support zeroing out the field when the State is set to *Closed*. 
 
       #### Changes made to CMMI WIT definitions: 
       - **Requirement:** 
-          - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields  
-          - Added transitions from *Active* to *Removed* and *Resolved* to *Removed* 
-          - Removed rules that populated **Activated By** and **Activated Date** fields when state=*Resolved*. 
+             - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields  
+             - Added transitions from *Active* to *Removed* and *Resolved* to *Removed* 
+             - Removed rules that populated **Activated By** and **Activated Date** fields when state=*Resolved*. 
       - **Bug**: Added **Size**, **Discipline**, **Original Work**, **Completed Work**, and **Value Area** fields.   
  
       #### Changes made to Scrum WIT definitions: 
@@ -217,8 +217,8 @@ If you've customized your project and haven't upgraded your on-premises deployme
       #### The following changes were added to all default process templates:   
       - WITs added: Code Review Request, Code Review Response, Feedback Request, and Feedback Response 
       - **WIT form changes:** 
-          - Many work item forms have been updated to display the larger font for the **Title** field and a two column layout of tab groups  
-          - Maintained mnemonic support only for the following fields: **Area Path**, **Assigned To**, **History**, **Iteration Path**, **State**, and **Title**. Mnemonics have been removed from all other fields within the type definitions. 
+             - Many work item forms have been updated to display the larger font for the **Title** field and a two column layout of tab groups  
+             - Maintained mnemonic support only for the following fields: **Area Path**, **Assigned To**, **History**, **Iteration Path**, **State**, and **Title**. Mnemonics have been removed from all other fields within the type definitions. 
       - Categories added: Code Review Request Category, Code Review Response Category, Feedback Request Category, Feedback Response Category, and Hidden Types Category 
       - Process configuration: Added `CommonConfiguration` and `AgileConfiguration` definition files to support Agile planning tools, code review, feedback, and My Work. 
       - Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use [legacy build processes](/previous-versions/dd647548(v=vs.140). 
