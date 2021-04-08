@@ -1,15 +1,17 @@
 ---
-ms.topic: include
+ms.technology: devops-agile
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/17/2020
+ms.topic: include
+ms.date: 04/07/2021
 ---
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 > [!NOTE]  
-> You can review changes made to an inherited process through the audit log. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).  
+> You can review changes made to an inherited process through the audit log. To learn more, see [Access, export, and filter audit logs](/azure/devops/organizations/audit/azure-devops-auditing).  
 
 
 ::: moniker-end
