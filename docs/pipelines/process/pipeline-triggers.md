@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 04/07/2021
+ms.date: 04/08/2021
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -81,22 +81,37 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 :::moniker-end
 
-You can use tags to define the default version of the pipeline resource to be consumed, and you can choose to trigger your pipeline based on tags set on the triggering pipeline.
+There are two ways that tags are used with a pipeline resource.
 
-```yml
-resources:
-  pipelines:
-  - pipeline: MyCIAlias
-    project: Fabrikam
-    source: Farbrikam-CI
-    branch: master
-    tags:          # This filter is used for resolving default version
-    - Production   # Tags are AND'ed
-    trigger:
-      tags:        # This filter is used for triggering the pipeline run
-      - Production # Tags are AND'ed
-      - Signed
-```
+1. The `tags` property of the pipeline resource is used to determine which version of the pipeline to run when it is triggered manually, scheduled, or triggered by another resource.
+
+    ```yml
+    resources:
+      pipelines:
+      - pipeline: MyCIAlias
+        project: Fabrikam
+        source: Farbrikam-CI
+        branch: master
+        tags:          # This filter is used for resolving default version
+        - Production   # Tags are AND'ed
+      ```
+
+1. The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline.
+
+    ```yml
+    resources:
+      pipelines:
+      - pipeline: MyCIAlias
+        project: Fabrikam
+        source: Farbrikam-CI
+        branch: master
+        trigger:
+          tags:        # This filter is used for triggering the pipeline run
+          - Production # Tags are AND'ed
+          - Signed
+    ```
+
+You can use tags to define the default version of the pipeline resource to be consumed, and you can choose to trigger your pipeline based on tags set on the triggering pipeline.
 
 ## Stage filters
 
