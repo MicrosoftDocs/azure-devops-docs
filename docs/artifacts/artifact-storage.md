@@ -64,7 +64,7 @@ The project-level view shows your total storage summary and your storage consump
 
 The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
 
-## Related article?
+## Related articles
 
 - [What are feeds?](concepts/feeds.md)
 - [What are feed views?](concepts/views.md)
