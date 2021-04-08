@@ -8,7 +8,7 @@
     href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
-  - name: Artifacts Storage breakdown
+  - name: View Artifacts storage consumption
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
