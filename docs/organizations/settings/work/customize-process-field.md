@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 04/07/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -220,7 +220,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 ## Modify Description help text  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. Note that the implementation differs based on the field type. 
 - **For inherited fields**: Description help text can be defined differently for each work item type and process.   
@@ -229,15 +229,17 @@ Description help text displays when users hover over a field in the work item fo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020.1-updates.md)]
 
-Description help text displays when users hover over a field in the work item form. You can only modify modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
+::: moniker range="azure-devops-2019"
+
+Description help text displays when users hover over a field in the work item form. You can only modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
 
 ::: moniker-end
 
 To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Here we modify the Story Points field for User Story. 
 
@@ -246,7 +248,8 @@ Here we modify the Story Points field for User Story.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+
+::: moniker range="azure-devops-2019"
 
 Here we modify the custom Published field for User Story. 
 
