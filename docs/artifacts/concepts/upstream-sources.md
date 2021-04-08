@@ -141,7 +141,7 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 ## Offline upstream sources
 
-Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. When a package is ingested in the downtream feed, a copy of the package is created so even when the upstream feed is not available, the package is still available in the downstream feed.
+Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. When a package is ingested in the downtream feed, a copy of the package is created, so even when the upstream feed is not available, the package is still available in the downstream feed.
 
 ## Related articles
 
