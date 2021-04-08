@@ -76,8 +76,8 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 :::moniker range="<azure-devops"
 
-> [!IMPORTANT]
-> [Tag filter support for pipeline resources](/azure/devops/server/release-notes/azuredevops2020u1#tag-filter-support-for-pipeline-resources) requires [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
+> [!NOTE]
+> [Tag filter support for pipeline resources](/azure/devops/server/release-notes/azuredevops2020u1#tag-filter-support-for-pipeline-resources) requires [Azure DevOps Server 2020 Update 1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
 
 :::moniker-end
 
@@ -117,8 +117,8 @@ You can use tags to define the default version of the pipeline resource to be co
 
 :::moniker range="<azure-devops"
 
-> [!IMPORTANT]
-> [Stages filters for pipeline resource triggers](/azure/devops/server/release-notes/azuredevops2020u1#stages-filters-for-pipeline-resource-triggers) requires [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
+> [!NOTE]
+> [Stages filters for pipeline resource triggers](/azure/devops/server/release-notes/azuredevops2020u1#stages-filters-for-pipeline-resource-triggers) requires [Azure DevOps Server 2020 Update 1](/azure/devops/server/release-notes/azuredevops2020u1) or greater.
 
 :::moniker-end
 
