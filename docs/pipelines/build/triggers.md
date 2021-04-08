@@ -43,6 +43,17 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
+## Branch consideration for triggers in YAML pipelines
+
+YAML pipelines may have different versions of the pipeline in different branches, which can affect which version of the pipeline is run, and which version of the pipeline's triggers are evaluated to determine if the pipeline should run.
+
+| Trigger type | Pipeline YAML version |
+|--------------|---------|
+| CI triggers (`trigger`)    | The version of the pipeline in the pushed branch is used. |
+| PR triggers (`pr`)         | The version of the pipeline in the source branch is used. |
+| Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers?tabs=yaml#branch-considerations-for-scheduled-triggers). |
+| Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers?tabs=yaml#branch-considerations-for-pipeline-completion-triggers). |
+
 ## Classic release pipelines
 
 [Continuous deployment triggers](../release/triggers.md#release-triggers) help you start classic releases after a classic build or YAML pipeline completes.
