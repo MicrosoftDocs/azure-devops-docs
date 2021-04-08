@@ -546,6 +546,9 @@ Some tasks define output variables, which you can consume in downstream steps wi
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
@@ -706,6 +709,7 @@ steps:
     Write-Host "my environment variable is $env:SAUCE"
 ```
 
+
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
@@ -742,6 +746,9 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 
@@ -763,6 +770,9 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
@@ -950,6 +960,41 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to set
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+
+::: moniker range=">= azure-devops-2019"
+
+## Configure settable variables for steps
+
+You can define `settableVariables` within a step or specify that no variables can be set. 
+
+In this example, the script cannot set a variable. 
+
+```yaml
+steps:
+- script: echo This is a step
+  target:
+    settableVariables: none
+```
+
+In this example, the script allows the variable `sauce` but not the variable `secretSauce`. You'll see a warning on the pipeline run page. 
+
+:::image type="content" source="media/set-vars-warning.png" alt-text="Warning that you cannot set secretSauce."::: 
+
+```yaml
+steps:
+  - bash: |
+      echo "##vso[task.setvariable variable=Sauce;]crushed tomatoes"
+      echo "##vso[task.setvariable variable=secretSauce;]crushed tomatoes with garlic"
+    target:
+     settableVariables:
+      - sauce
+    name: SetVars
+  - bash: 
+      echo "Sauce is $(sauce)"
+      echo "secretSauce is $(secretSauce)"
+    name: OutputVars
+```
+::: moniker-end
 ## Allow at queue time
 
 #### [YAML](#tab/yaml/)
@@ -1095,7 +1140,6 @@ If the variable `a` is an output variable from a previous job, then you can use 
 ### Recursive expansion
 
 On the agent, variables referenced using `$( )` syntax are recursively expanded.
-However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -1105,7 +1149,7 @@ variables:
 
 steps:
 - script: echo $(myOuter)  # prints "someValue"
-  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
+  displayName: Variable is $(myOuter)  # display name is "Variable is someValue"
 ```
 
 ::: moniker-end

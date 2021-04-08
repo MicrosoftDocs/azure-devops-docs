@@ -5,10 +5,10 @@ description: Create flat-list, tree, or direct links queries to list, triage, up
 ms.custom: "boards-queries, contperf-fy21q3" 
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
+monikerRange: '<= azure-devops'
 ms.date: 03/29/2021
 ---
 
