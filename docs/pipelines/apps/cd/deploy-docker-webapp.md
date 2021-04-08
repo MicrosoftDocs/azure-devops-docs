@@ -20,6 +20,12 @@ Azure Pipelines enables us to implement a CI/CD workflow to automatically genera
 
 :::image type="content" source="azure/media/vscode-git-ci-cd-to-azure.png" alt-text="CI/CD workflow":::
 
+## Prerequisites
+
+- Azure DevOps account. Create an free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
+- GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
+- Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
+
 ## Get the code
 
 Fork or clone the sample app to follow along with this tutorial.
@@ -46,13 +52,51 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ```
 * * *
 
-## Define your CI build pipeline
+## Pipeline setup
 
-Set up a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-## Prerequisites
+1. Select **Pipelines** then **New Pipeline**.
 
-You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
+1. Select **GitHub** when prompted for the location of your source code then select your repository.
+
+1. Select the **Docker** pipeline template 
+
+    :::image type="content" source="media/docker-template.png" alt-text="Select Docker pipeline template":::
+
+1. Verify your Dockerfile then select **Validate and configure**.
+
+    :::image type="content" source="media/validate-and-configure.png" alt-text="Validate and configure Docker":::
+
+1. Review the pipeline YAML template then select **Save and run**. 
+
+    ```YAML
+    trigger:
+    - master
+    
+    resources:
+    - repo: self
+    
+    variables:
+      tag: '$(Build.BuildId)'
+    
+    stages:
+    - stage: Build
+      displayName: Build image
+      jobs:
+      - job: Build
+        displayName: Build
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+        - task: Docker@2
+          displayName: Build an image
+          inputs:
+            command: build
+            dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
+            tags: |
+              $(tag)
+    ```
 
 [!INCLUDE [create-azure-webapp-to-host-container](../includes/create-azure-webapp-to-host-container.md)]
 
