@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps 
 ms.custom: boards-queries, devx-track-azurecli
 ms.technology: devops-agile
-ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -57,7 +56,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 ::: moniker range=">= azure-devops-2020"  
 
-You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id]

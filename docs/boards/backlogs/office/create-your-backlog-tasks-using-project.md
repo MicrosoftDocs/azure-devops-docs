@@ -7,7 +7,7 @@ ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: mijacobs 
 ms.author: kaelli
 author: KathrynEE  
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= tfs-2018'
 ms.date: 08/15/2019
 ---
