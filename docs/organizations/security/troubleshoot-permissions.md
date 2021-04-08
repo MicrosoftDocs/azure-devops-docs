@@ -218,7 +218,7 @@ For more information about hiding organization settings from users, see [About p
 
 ## View, add, and manage permissions with CLI
 
-You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces.md).
+You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces).
 
 ::: moniker-end
 
@@ -239,7 +239,7 @@ You can use the following tools to fix a user's permission issue.
    Example usage:
    Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
 
-For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd.md).
+For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ::: moniker-end
 
