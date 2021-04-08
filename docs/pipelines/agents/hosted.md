@@ -323,7 +323,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xamarin
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, specifying the symlink to Xamarin versions bundle as needed.
+  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute the following bash command as a part of your build, specifying the symlink to Xamarin versions bundle as needed.
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
