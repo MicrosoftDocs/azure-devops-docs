@@ -164,7 +164,7 @@ To view and update the **Default branch for manual and scheduled builds** settin
 
     :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
 
-### Behavior when pipeline completion triggers and CI triggers are present
+## Behavior when pipeline completion triggers and CI triggers are present
 
 When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
