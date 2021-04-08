@@ -92,37 +92,37 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Support [any-to-any workflow transitions](choose-process.md#workflow-states) on Agile boards.  
       - Team configurable option to choose to track bugs on backlogs and boards either as requirements or as tasks. This necessitated adding fields to the bug WIT definition as well as adding a process configuration behavior.   
       #### The following changes were made to the default process templates:   
-      - **WITs added**: Epic 
+      **WITs added**: Epic<br/>  
       **Miscellaneous WIT changes:**
              - Feature: Added **Effort**, **Time Criticality**, and **Value Area** fields; added workflow transition from *Active* to *Removed*  
              - Bug: Added fields and workflow states to support the show bugs on backlog and boards team-configurable option 
              - Minor layout changes to  WIT forms to reflect additions of new fields; added **ID** field to all forms 
-             - Added WIT `refname` attribute to all WIT definitions. 
-      **Categories:** Added Epic Category.  
-      **Process configuration changes:**
+             - Added WIT `refname` attribute to all WIT definitions.<br/>  
+      **Categories:** Added Epic Category.<br/>   
+      **Process configuration changes:**<br/> 
              - Added Epic portfolio backlog 
              - Feature: Added **Effort** and **Value Area** fields to the default columns of the backlog 
              - Requirement Category backlog: Added **Value Area** to the default columns of the backlog  
              - Increased the default work item count limits on all boards to 1000  
-             - Added new properties to specify the default behavior for new teams. 
-      **ProcessTemplate changes:** Process template names no longer specify the version or year; Agile, CMMI, Scrum.   
+             - Added new properties to specify the default behavior for new teams.<br/>  
+      **ProcessTemplate changes:** Process template names no longer specify the version or year; Agile, CMMI, Scrum.<br/>    
       #### Changes made to Agile WIT definitions:  
       **User Story:**
              - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields 
              - Added transitions from *Active* to *Removed* and *Resolved* to *Removed*   
-             - Removed rules that populated **Activated By** and **Activated Date** fields when State=*Resolved*   
+             - Removed rules that populated **Activated By** and **Activated Date** fields when State=*Resolved*<br/>    
       **Bug:**
              - Added **Activity**, **Story Points**, **Original Work**, **Completed Work**, **Remaining Work**, **Severity**, and **Value Area** fields 
              - Added *New* state and corresponding workflow transitions 
              - Added several field rules to copy or set defaults during state transitions 
-             - Added *Fixed and verified* as a **Resolved Reason**.
+             - Added *Fixed and verified* as a **Resolved Reason**.<br/> 
       **Task:** Added rule to empty **Remaining Work** field  to support zeroing out the field when the State is set to *Closed*. 
 
       #### Changes made to CMMI WIT definitions: 
       **Requirement:** 
              - Added **Acceptance Criteria**, **Priority**, and **Value Area** fields  
              - Added transitions from *Active* to *Removed* and *Resolved* to *Removed* 
-             - Removed rules that populated **Activated By** and **Activated Date** fields when state=*Resolved*. 
+             - Removed rules that populated **Activated By** and **Activated Date** fields when state=*Resolved*.<br/>     
       **Bug**: Added **Size**, **Discipline**, **Original Work**, **Completed Work**, and **Value Area** fields.   
  
       #### Changes made to Scrum WIT definitions: 
