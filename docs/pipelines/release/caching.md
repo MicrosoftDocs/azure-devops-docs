@@ -264,7 +264,7 @@ steps:
     condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
-NOTE: `caching-docker.yml` should be replaced with the filename of your own pipeline YAML file.
+Replace `caching-docker.yml` with your own pipeline YAML file.
 
 ## Golang
 
