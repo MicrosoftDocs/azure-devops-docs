@@ -1,56 +1,45 @@
 ---
-title: Deploy a Docker container app
-description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Web App in Azure Pipelines or Team Foundation Server (TFS)
+title: Deploy containerized applications to Web App for Containers
+description: Deploy container base web apps to Web App for Containers
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/30/2019
+ms.date: 04/08/2021
 monikerRange: '> tfs-2018'
 ---
 
-# Deploy to an Azure Web App for Containers
+# Deploy to Azure Web App for Containers
 
 **Azure Pipelines**
 
-We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure Web App using
-Azure Pipelines.
+With Azure Web App for Containers you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers.
 
-For example, you can continuously deliver your app to a Windows VM hosted in Azure.
+Azure Pipelines enables us to implement a CI/CD workflow to automatically generates build Artifacts and trigger deployment to specific environments. 
 
-![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
-
-After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
+:::image type="content" source="azure/media/vscode-git-ci-cd-to-azure.png" alt-text="CI/CD workflow":::
 
 ## Get the code
 
-If you want some sample code that works with this guidance, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository, based on the desired runtime.
+Fork or clone the sample app to follow along with this tutorial.
 
 #### [Java](#tab/java)
-
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 #### [Python](#tab/python)
 
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
-
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
 ```
 #### [.NET Core](#tab/dotnet-core)
-
-[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
