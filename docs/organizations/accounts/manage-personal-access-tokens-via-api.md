@@ -20,9 +20,9 @@ With the PAT Lifecycle Management API, you can easily manage the PATs associated
 
 In this article, we'll show you how to configure an application that authenticates with an Azure Active Directory (Azure AD) token and makes calls with the PAT Lifecycle API. If you'd like to just see the full list of available endpoints, [view the API reference here](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats).
 
-## Prequisites
+## Prerequisites
 
-To use the API, you must authenticate with an Azure AD token. Learn more on how to do this in the following [authentication section](#api-authentication).
+To use the API, you must authenticate with an Azure AD token. Learn more on how to do this in the following [authentication section](#authenticate-with-azure-active-directory-azure-ad-tokens).
 
 In order to do so, a few prerequisites must be met:
 * You must [have an Azure AD tenant with an active Azure subscription.](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
@@ -32,7 +32,7 @@ In order to do so, a few prerequisites must be met:
 
 Unlike other Azure DevOps Services APIs, users must provide an [Azure AD access token](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) to use this API instead of a PAT token. Azure AD tokens are a safer authentication mechanism than using PATs. Given this API’s ability to create and revoke PATs, we want to ensure that such powerful functionality is given to allowed users only.
 
-The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows you can use within your app for acquiring and refreshing Azure AD tokens. A complete list of MSAL flows can be found under [Microsoft Authentication Library “authentication flows” documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-authentication-flows). A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication method](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/authentication-guidance?view=azure-devops) for Azure DevOps.
+The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows you can use within your app for acquiring and refreshing Azure AD tokens. A complete list of MSAL flows can be found under [Microsoft Authentication Library “authentication flows” documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows). A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication method](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance) for Azure DevOps.
 
 
 > [!IMPORTANT]
@@ -255,7 +255,7 @@ To learn more about the endpoints, what parameters they accept, and what is retu
 ### Q: Can I get an example of this sample application for another language/framework/application type?
 **A:** We love that you want to use the API in your language of choice! We’re looking to add alternative GitHub samples in other languages soon. In the meantime, if you have a request for an example, head over to our [Dev Community](https://developercommunity.visualstudio.com/search?space=21) to see if someone else has an example to share. 
 
-If you have a sample application that you’d like to share to the larger Azure Devops audience, [let us know](mailto:angelwong@github.com) and we can look into circulating it on these docs more widely!
+If you have a sample application that you’d like to share to the larger Azure DevOps audience, [let us know](mailto:angelwong@github.com) and we can look into circulating it on these docs more widely!
 
 ### Q: What is the difference between this token API and the token admin API?
 **A:** This [token API](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats) and the [token admin API](https://docs.microsoft.com/rest/api/azure/devops/tokenadmin/), while similar, serve different use cases and audiences: 
