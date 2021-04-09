@@ -22,10 +22,10 @@ Azure Pipelines enables us to implement a CI/CD workflow to automatically genera
 
 ## Prerequisites
 
-- [Create an Azure container registry and push image to registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal).
 - Azure DevOps account. Create an free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
 - GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 - Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
+- [Create an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry).
 
 ## Get the code
 
@@ -53,51 +53,68 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 ```
 * * *
 
-## Pipeline setup
+## Build and publish Docker image to Azure Container Registry
 
+To complete this section successfully you will need to have an Azure container registry. Make sure you finished the step outlined in the prerequisites.
+ 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
 1. Select **Pipelines** then **New Pipeline**.
 
 1. Select **GitHub** when prompted for the location of your source code then select your repository.
 
-1. Select the **Docker** pipeline template 
+1. Select the **Docker: build and push an image to Azure Container Registry** pipeline template.
 
     :::image type="content" source="media/docker-template.png" alt-text="Select Docker pipeline template":::
 
-1. Verify your Dockerfile then select **Validate and configure**.
+1. Select your Azure Subscription then select **Continue**.
+
+1. Select the **Container registry** you created earlier from the drop down menu then select **Validate and configure**.
 
     :::image type="content" source="media/validate-and-configure.png" alt-text="Validate and configure Docker":::
 
 1. Review the pipeline YAML template then select **Save and run**. 
 
-    ```YAML
-    trigger:
-    - master
-    
-    resources:
-    - repo: self
-    
-    variables:
-      tag: '$(Build.BuildId)'
-    
-    stages:
-    - stage: Build
-      displayName: Build image
-      jobs:
-      - job: Build
-        displayName: Build
-        pool:
-          vmImage: ubuntu-latest
-        steps:
-        - task: Docker@2
-          displayName: Build an image
-          inputs:
-            command: build
-            dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
-            tags: |
-              $(tag)
-    ```
+```YAML
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
+  imageRepository: 'javascriptdocker'
+  containerRegistry: 'sampleappcontinerregistry.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+  tag: '$(Build.BuildId)'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: Build and push stage
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+```
+1. To view your published docker image after you pipeline run is completed, navigate to your container registry in Azure portal and select **Repositories**.
+
+    :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Validate and configure Docker":::
 
 ## Create an Azure Web App for Containers
 
