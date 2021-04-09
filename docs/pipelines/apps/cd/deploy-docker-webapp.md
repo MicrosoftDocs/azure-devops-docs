@@ -22,6 +22,7 @@ Azure Pipelines enables us to implement a CI/CD workflow to automatically genera
 
 ## Prerequisites
 
+- [Create an Azure container registry and push image to registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal).
 - Azure DevOps account. Create an free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
 - GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 - Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
@@ -98,7 +99,24 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
               $(tag)
     ```
 
-[!INCLUDE [create-azure-webapp-to-host-container](../includes/create-azure-webapp-to-host-container.md)]
+## Create an Azure Web App for Containers
+
+1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
+
+1. In the Azure Portal, choose **Create a resource**, **Containers**, then choose **Web App for Containers**. 
+
+    :::image type="content" source="../cd/media/create-web-app-container.png" alt-text="Create a web app for containers resource":::
+
+1. Enter a name for your new web app, and select or create a new Resource Group. Select **Linux** for the **Operating System**.
+
+    :::image type="content" source="../cd/media/configure-web-app.png" alt-text="Configure the web app":::
+
+1. In the **Sku abd size** section, select **Change** to specify the pricing tier. Select the **Dev/Test** plan then choose the **F1 Free plan**. Select **Apply** when you are done.
+
+    :::image type="content" source="../cd/media/pricing-tier.png" alt-text="Change pricing tier to free":::
+
+1. Select **Review and create**. Review your configuration and select **Create** when you are done.
+
 
 [!INCLUDE [create-release-azure-webapp-container](../includes/create-release-azure-webapp-container.md)]
 
