@@ -73,46 +73,46 @@ To complete this section successfully you will need to have an Azure container r
 
     :::image type="content" source="media/validate-and-configure.png" alt-text="Validate and configure Docker":::
 
-1. Review the pipeline YAML template then select **Save and run**. 
+1. Review the pipeline YAML template then select **Save and run** to build and publish the Dockker image to your Azure Container Registry. 
 
-```YAML
-trigger:
-- master
-
-resources:
-- repo: self
-
-variables:
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
-  imageRepository: 'javascriptdocker'
-  containerRegistry: 'sampleappcontinerregistry.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
-  tag: '$(Build.BuildId)'
-
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-
-stages:
-- stage: Build
-  displayName: Build and push stage
-  jobs:
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: $(vmImageName)
-    steps:
-    - task: Docker@2
-      displayName: Build and push an image to container registry
-      inputs:
-        command: buildAndPush
-        repository: $(imageRepository)
-        dockerfile: $(dockerfilePath)
-        containerRegistry: $(dockerRegistryServiceConnection)
-        tags: |
-          $(tag)
-```
-1. To view your published docker image after you pipeline run is completed, navigate to your container registry in Azure portal and select **Repositories**.
+    ```YAML
+    trigger:
+    - master
+    
+    resources:
+    - repo: self
+    
+    variables:
+        # Container registry service connection established during pipeline creation
+        dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
+        imageRepository: 'javascriptdocker'
+        containerRegistry: 'sampleappcontinerregistry.azurecr.io'
+        dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
+        tag: '$(Build.BuildId)'
+    
+        # Agent VM image name
+        vmImageName: 'ubuntu-latest'
+    
+    stages:
+    - stage: Build
+        displayName: Build and push stage
+        jobs:
+        - job: Build
+        displayName: Build
+        pool:
+            vmImage: $(vmImageName)
+        steps:
+        - task: Docker@2
+            displayName: Build and push an image to container registry
+            inputs:
+            command: buildAndPush
+            repository: $(imageRepository)
+            dockerfile: $(dockerfilePath)
+            containerRegistry: $(dockerRegistryServiceConnection)
+            tags: |
+                $(tag)
+    ```
+1. To view your published docker image after your pipeline run has been completed, navigate to your container registry in Azure portal and select **Repositories**.
 
     :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Validate and configure Docker":::
 
@@ -122,20 +122,40 @@ stages:
 
 1. In the Azure Portal, choose **Create a resource**, **Containers**, then choose **Web App for Containers**. 
 
-    :::image type="content" source="../cd/media/create-web-app-container.png" alt-text="Create a web app for containers resource":::
+    :::image type="content" source="media/create-web-app-container.png" alt-text="Create a web app for containers resource":::
 
 1. Enter a name for your new web app, and select or create a new Resource Group. Select **Linux** for the **Operating System**.
 
-    :::image type="content" source="../cd/media/configure-web-app.png" alt-text="Configure the web app":::
+    :::image type="content" source="media/configure-web-app.png" alt-text="Configure the web app":::
 
 1. In the **Sku abd size** section, select **Change** to specify the pricing tier. Select the **Dev/Test** plan then choose the **F1 Free plan**. Select **Apply** when you are done.
 
-    :::image type="content" source="../cd/media/pricing-tier.png" alt-text="Change pricing tier to free":::
+    :::image type="content" source="media/pricing-tier.png" alt-text="Change pricing tier to free":::
 
 1. Select **Review and create**. Review your configuration and select **Create** when you are done.
 
+## Create a release pipeline
 
-[!INCLUDE [create-release-azure-webapp-container](../includes/create-release-azure-webapp-container.md)]
+1. From within your project, select **Pipelines** then **Release**.
+
+1. Select **New pipeline** to create a new release pipeline.
+
+1. Select the **Azure App Service deployment** template
+
+    :::image type="content" source="media/app-service-template.png" alt-text="Azure App Service template":::
+
+1. Select **Tasks** then **Unlink all** in stage 1 to unlink all the pipeline parameters. 
+
+    :::image type="content" source="media/unlink-parameters.png" alt-text="Unlink pipeline parameters":::
+
+1. Select the **Deploy Azure App Service** task and fill out the required fields. Select **Save** when you are done.
+
+    :::image type="content" source="media/deploy-task.png" alt-text="Deploy Azure App Service task":::
+
+1. Select **Create release** then choose **Stage1** from the dropdown menu. Select **Create** when you are done.
+
+    :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
+ 
 
 ## Next steps
 
