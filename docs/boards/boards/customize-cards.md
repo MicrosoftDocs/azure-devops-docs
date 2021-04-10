@@ -180,8 +180,9 @@ Before you configure the cards, you'll want to make sure the following tasks are
 3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
 
 **Team Administrator**:
+1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
 1. [Add any tags](../queries/add-tags-to-work-items.md) you want to customize on cards to work items. 
-2. Meet with your team and determine which annotations should appear on cards and how they want to configure inline tests.  
+1. Meet with your team and determine which annotations should appear on cards and how they want to configure inline tests.  
  
 
 ## Open your Kanban board settings
