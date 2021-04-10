@@ -48,7 +48,7 @@ To add or remove columns, choose **Column Options**. You customize all other opt
 
 :::row:::
    :::column span="1":::
-      **Ooption** 
+      **Option** 
    :::column-end:::
    :::column span="3":::
       **Use to...**
@@ -133,7 +133,8 @@ Before you configure your Taskboard, you'll want to make sure the following task
 ::: moniker-end
 
 **Team Administrator**:
-1. [Add any tags](../queries/add-tags-to-work-items.md) to work items that you want to use to support styling rules. 
+1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
+2. [Add any tags](../queries/add-tags-to-work-items.md) to work items that you want to use to support styling rules. 
  
 
 <a id="show-bugs" > </a>
