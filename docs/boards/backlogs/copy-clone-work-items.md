@@ -78,15 +78,14 @@ Clone a work item when you want to create another instance of it. This action op
 	- **Include existing attachments**: To include attachments in the copied work item
 	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
-	::: moniker range="azure-devops-2020"
-	> [!NOTE]   
-	> The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#copy-work-item-to-copy-children).  
-	::: moniker-end
-
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#copy-work-item-to-copy-children).  
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
