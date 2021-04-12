@@ -484,7 +484,7 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within a stage of a release are associated with both the release and the run. These test results are retained as specified by the retention policy configured for the run and for the test results. If you are not deploying Team Foundation or Azure Pipelines Build, and are still publishing test results, the retention of these results is governed by the retention settings of the release they belong to.
+Test results published within a stage of a release are retained as specified by the retention policy configured for the test results. The test results do not get retained untill the release is reatined. If you need the test results as long as the release, set the retention settings for automated test runs in the Project settings accordingly to Never delete. This makes sure the test results are deleted only when the release is deleted.
 
 ### Are manual test results deleted?
 
