@@ -99,13 +99,13 @@ In this example, macro syntax is used with Bash, PowerShell, and a script task. 
 
  ```yaml
 variables:
-  - name: pullRequest
-    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: projectName
+    value: contoso
 
 steps: 
-- bash: echo $(pullRequest)
-- powershell: echo $(pullRequest)
-- script: echo $(pullRequest)
+- bash: echo $(projectName)
+- powershell: echo $(projectName)
+- script: echo $(projectName)
  ```
 
 ### Template expression syntax 
