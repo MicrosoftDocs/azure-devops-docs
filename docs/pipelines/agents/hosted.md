@@ -323,11 +323,13 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xamarin
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute the following bash command as a part of your build, specifying the symlink to Xamarin versions bundle as needed.
+  **Hosted macOS** agent stores Xamarin SDK versions and the accosiated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
+
+  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, execute the following bash command before your Xamarin build task as a part of your build, specifying the symlink to Xamarin versions bundle that you need.
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
 
-  The list of all available Xamarin SDK versions and symlinks can be found in these documentations:
+  The list of all available Xamarin SDK versions and symlinks can be found in the agents documentations:
   - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xamarin)
   - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
 
@@ -353,7 +355,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, specifying the symlink with the required Mono version (the link to the list of all available symlinks can be found in Xamarin section above):
+  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version (list of all available symlinks can be found in the [Xamarin section](#xamarin) above):
 
   ```bash
   SYMLINK=<symlink>
