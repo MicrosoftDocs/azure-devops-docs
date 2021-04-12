@@ -8,13 +8,14 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 04/08/2021
 monikerRange: '> tfs-2018'
+"recommendations": "true"
 ---
 
 # Deploy to Azure Web App for Containers
 
 **Azure Pipelines**
 
-With Azure Web App for Containers you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers.
+With Azure Web App for Containers, you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers.
 
 Azure Pipelines enables us to implement a CI/CD workflow to automatically generates build Artifacts and trigger deployment to specific environments. 
 
@@ -22,7 +23,7 @@ Azure Pipelines enables us to implement a CI/CD workflow to automatically genera
 
 ## Prerequisites
 
-- Azure DevOps account. Create an free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
+- Azure DevOps account. Create a free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
 - GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 - Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
 - [Create an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry).
@@ -55,7 +56,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 ## Build and publish Docker image to Azure Container Registry
 
-To complete this section successfully you will need to have an Azure container registry. Make sure you finished the step outlined in the prerequisites.
+To complete this section successfully, you will need to have an Azure container registry. Make sure you finished the step outlined in the prerequisites.
  
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -69,11 +70,11 @@ To complete this section successfully you will need to have an Azure container r
 
 1. Select your Azure Subscription then select **Continue**.
 
-1. Select the **Container registry** you created earlier from the drop down menu then select **Validate and configure**.
+1. Select the **Container registry** you created earlier from the drop-down menu then select **Validate and configure**.
 
     :::image type="content" source="media/validate-and-configure.png" alt-text="Validate and configure Docker":::
 
-1. Review the pipeline YAML template then select **Save and run** to build and publish the Dockker image to your Azure Container Registry. 
+1. Review the pipeline YAML template then select **Save and run** to build and publish the Docker image to your Azure Container Registry. 
 
     ```YAML
     trigger:
@@ -112,11 +113,11 @@ To complete this section successfully you will need to have an Azure container r
             tags: |
                 $(tag)
     ```
-1. To view your published docker image after your pipeline run has been completed, navigate to your container registry in Azure portal and select **Repositories**.
+1. To view the published docker image after your pipeline run has been completed, navigate to your container registry in Azure portal and select **Repositories**.
 
     :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Docker image published to Azure Container Registry":::
 
-1. Now we will need to enable the admin user account to be able to deploy our image from the container registry. Navigate to your container registry your just created in Azure Portal and select **Access keys** from settings. Select the toggle button to **Enable Admin user**.
+1. Now we will need to enable the admin user account to be able to deploy our image from the container registry. Navigate to your container registry in Azure portal and select **Access keys**. Select the toggle button to **Enable Admin user**.
 
     :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
@@ -164,6 +165,8 @@ To complete this section successfully you will need to have an Azure container r
 
     :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
 
-## Next steps
+## Related articles
 
-* [Set up multi-stage release](../../release/define-multistage-release-process.md)
+- [Set up multi-stage release](../../release/define-multistage-release-process.md)
+- [Stage templates in Azure Pipelines](../../pipelines/release/env-templates.md)
+- [Deploy from multiple branches using Azure Pipelines](../../release/deploy-multiple-branches.md)
