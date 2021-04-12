@@ -314,4 +314,5 @@ See [Restrict access, Restrict modification of work items based on a user or gro
 - [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
 - [Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)  
-- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites)   
+- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites) 
+- [Work item form IndexDB caching issues](../settings/work/work-item-form-caching.md)  
