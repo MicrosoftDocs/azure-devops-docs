@@ -71,7 +71,7 @@ To mitigate problems that arise from change, Agile project managers adopt a numb
 - Assist teams in their continual improvement processes.   
 
 > [!NOTE]
-> *Continuous improvement is a method to make sure that your processes, methods, and practices are as efficient and effective as possible. &mdash;[Agile and a continuous improvement mindset](https://scrumtraininginstitute.com/agile-scrum-training/agile-team-health-check/#:~:text=At%20the%20core%20of%20Agile%20continuous%20improvement%20is,your%20organization%20can%20develop%20a%20continuous%20improvement%20mindset)*  
+> *Continuous improvement is a method to make sure that your processes, methods, and practices are as efficient and effective as possible. &mdash;[Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset)*  
 
 ### Manage change at the product plan level   
 
