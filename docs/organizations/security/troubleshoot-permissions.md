@@ -218,7 +218,7 @@ For more information about hiding organization settings from users, see [About p
 
 ## View, add, and manage permissions with CLI
 
-You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](https://docs.microsoft.com/azure/devops/organizations/security/manage-tokens-namespaces.md).
+You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces).
 
 ::: moniker-end
 
@@ -239,7 +239,7 @@ You can use the following tools to fix a user's permission issue.
    Example usage:
    Use `prc_pSetAccessControlEntry` or `prc_pRemoveAccessControlEntries` to add or remove ACEs directly from the security tables if TFSSecurity doesn't work for you.
 
-For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd.md).
+For more information, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ::: moniker-end
 
@@ -281,7 +281,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 
    A message displays that says, "Sign out in progress." After you sign out, you're redirected to dev.azure.microsoft.com.
 
-4. Sign in to [Azure DevOps](https://dev.azure.com/{organizationName}) again. Select your other identity.
+4. Sign in to [Azure DevOps](https://dev.azure.com/VSTS-Catapult) again. Select your other identity.
 
 ::: moniker-end
 
@@ -308,4 +308,4 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
-- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
+- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)
