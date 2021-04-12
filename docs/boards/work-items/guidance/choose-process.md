@@ -1,11 +1,11 @@
 ---
 title: Choose a process like Basic, Agile, Scrum, or CMMI
 titleSuffix: Azure Boards
-description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps 
 ms.custom: work-items 
 ms.technology: devops-agile
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

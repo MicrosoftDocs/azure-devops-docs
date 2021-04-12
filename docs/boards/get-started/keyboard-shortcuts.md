@@ -4,8 +4,7 @@ titleSuffix: Azure Boards
 description: Keyboard shortcuts for the web portal for Azure Boards and Team Explorer
 ms.custom: Navigation
 ms.technology: devops-agile
-ms.topic: reference
-ms.assetid:  
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/22/2020 

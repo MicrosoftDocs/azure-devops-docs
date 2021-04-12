@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: how-to
 monikerRange: '>= tfs-2017'
 ms.date: 12/19/2018
 ---

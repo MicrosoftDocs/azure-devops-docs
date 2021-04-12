@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to track dependencies your team has on other teams with the dependency tracker  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE

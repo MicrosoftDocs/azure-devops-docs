@@ -104,7 +104,7 @@ sections:
           ::: moniker range=">= azure-devops-2020" 
           - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
           - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-          - Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
+          - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
           ::: moniker-end 
 
           ::: moniker range="azure-devops-2019" 
@@ -200,4 +200,3 @@ additionalContent: |
   - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
   - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
-  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

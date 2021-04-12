@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 08/31/2020
 ---
