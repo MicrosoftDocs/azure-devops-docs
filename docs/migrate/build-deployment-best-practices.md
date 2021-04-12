@@ -7,7 +7,6 @@ ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
 ms.date: 06/01/2016
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2015'
 ---
 
 # Build and Deployment Automation Case Study for World Wide Time Keeping: Higher Quality and Faster Delivery in an Increasingly Agile World

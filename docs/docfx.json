@@ -10,6 +10,7 @@
         "group": "all",
         "exclude": [
           "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/TBD",
           "pipelines/archive/apps/aspnet/**",
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
@@ -27,6 +28,7 @@
       {
         "files": [
           "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/",
           "pipelines/archive/apps/aspnet/**",
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
