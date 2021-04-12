@@ -114,7 +114,11 @@ To complete this section successfully you will need to have an Azure container r
     ```
 1. To view your published docker image after your pipeline run has been completed, navigate to your container registry in Azure portal and select **Repositories**.
 
-    :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Validate and configure Docker":::
+    :::image type="content" source="media/docker-image-in-azure-portal.png" alt-text="Docker image published to Azure Container Registry":::
+
+1. Now we will need to enable the admin user account to be able to deploy our image from the container registry. Navigate to your container registry your just created in Azure Portal and select **Access keys** from settings. Select the toggle button to **Enable Admin user**.
+
+    :::image type="content" source="media/enable-admin-user.png" alt-text="Enable Admin user":::
 
 ## Create an Azure Web App for Containers
 
@@ -155,7 +159,10 @@ To complete this section successfully you will need to have an Azure container r
 1. Select **Create release** then choose **Stage1** from the dropdown menu. Select **Create** when you are done.
 
     :::image type="content" source="media/create-release.png" alt-text="Create a release pipeline":::
- 
+
+1. Hover over Stage 1 in your pipeline and select **Deploy** to queue and start the deployment.
+
+    :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
 
 ## Next steps
 
