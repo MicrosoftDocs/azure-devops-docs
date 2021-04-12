@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 ms.date: 10/28/2019
 ---
 

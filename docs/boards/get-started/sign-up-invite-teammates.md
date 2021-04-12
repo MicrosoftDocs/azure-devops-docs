@@ -5,7 +5,6 @@ description: Quickstart guide to signing up and inviting others to join a team p
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.topic: quickstart
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

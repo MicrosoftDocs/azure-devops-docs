@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Visualize the deployments which include your work items by linking them to releases
 ms.custom: boards-work-items  
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
