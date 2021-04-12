@@ -190,7 +190,7 @@ The changes made apply to all sprint Taskboards for the selected team.
 
 ## Add fields to cards  
 
-Scrum teams use the Taskboard to burn down work and report on progress during daily standups. Each sprint Taskboard shows cards that correspond to both requirements and tasks.
+Scrum teams use the Taskboard to burn down work and report on progress during daily stand ups. Each sprint Taskboard shows cards that correspond to both requirements and tasks.
 
 ### Information rich cards
 
