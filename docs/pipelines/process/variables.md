@@ -100,7 +100,7 @@ In this example, macro syntax is used with Bash, PowerShell, and a script task. 
  ```yaml
 variables:
   - name: projectName
-    value: "contoso"
+    value: contoso
 
 steps: 
 - bash: echo $(projectName)
