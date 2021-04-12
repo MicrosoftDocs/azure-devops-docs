@@ -195,6 +195,8 @@
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
     displayname: reorder, disable, nest, natural hierarchy, in progress,   
+  - name: Fix "Team changes not reflecting in Work Item Form"
+    href: work-items/resolve-indexDB-rules-issues.md
 - name: Field reference
   items:
   - name: Work item field index
