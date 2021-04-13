@@ -15,7 +15,7 @@ ms.date: 06/04/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and inheritance](about-permissions.md)and [About security roles](about-security-roles.md), and [Trace permissions](faq-trace-permissions.md).  
+Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and inheritance](about-permissions.md)and [About security roles](about-security-roles.md), and [Troubleshoot permissions](troubleshoot-permissions.md).  
 
 Values in parenthesis indicate what level the permission is managed:
 
@@ -700,3 +700,4 @@ for all team projects defined in the account or collection:
 - [About security roles](about-security-roles.md). 
 - [Permissions and groups reference](permissions.md) 
 - [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)

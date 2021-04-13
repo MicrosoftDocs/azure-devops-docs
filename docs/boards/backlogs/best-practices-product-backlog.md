@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---

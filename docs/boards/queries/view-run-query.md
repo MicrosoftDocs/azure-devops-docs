@@ -2,9 +2,8 @@
 title: View or run a query 
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps 
-ms.custom: boards-queries, devx-track-azurecli
+ms.custom: boards-queries
 ms.technology: devops-agile
-ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -57,7 +56,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 ::: moniker range=">= azure-devops-2020"  
 
-You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can run a query in the CLI with the [az boards query](/cli/azure/boards#az_boards_query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards query [--id]
@@ -150,9 +149,9 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Run a query, open the context menu for a query  |✔️ |✔️ |
 > |Expand or collapse container folders or query folders |✔️ |✔️ |
 > |Filter the list of queries |✔️ |✔️ |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
-> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
+> |Favorite a query: Choose ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Choose :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Choose :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 ::: moniker-end	
 

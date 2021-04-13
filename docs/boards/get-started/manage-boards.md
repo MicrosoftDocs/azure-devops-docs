@@ -3,8 +3,6 @@ title: Quickstart guide to configure and manage your project
 titleSuffix: Azure Boards 
 description: Understand how to manage your project
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -114,7 +112,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 
 ## Install and manage extensions 
 
-To add new features and capabilities to Azure Boards, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.md#difference) 
+To add new features and capabilities to Azure Boards, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.yml) 
 
 To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](../../extend/overview.md) and [publishing](../../extend/publish/overview.md) extensions.
 

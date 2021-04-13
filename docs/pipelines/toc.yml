@@ -503,6 +503,26 @@
     href: policies/set-permissions.md
   - name: Grant version control permissions to the build service
     href: scripts/git-commands.md#version-control
+  - name: Pipelines security walkthrough
+    items:
+    - name: Overview
+      href: security/overview.md
+    - name: Approach to securing YAML pipelines
+      href: security/approach.md
+    - name: Repository protection
+      href: security/repos.md
+    - name: Pipeline resources
+      href: security/resources.md
+    - name: Project structure
+      href: security/projects.md
+    - name: Security through templates
+      href: security/templates.md
+    - name: Variables and parameters
+      href: security/inputs.md
+    - name: Shared infrastructure
+      href: security/infrastructure.md
+    - name: Other security considerations
+      href: security/misc.md
   - name: Integrate with 3rd party software
     items:
     - name: Microsoft Teams
@@ -854,28 +874,10 @@
     href: scripts/logging-commands.md
   - name: Artifact policy checks
     href: process/artifact-policy.md
+  - name: Azure CLI
+    href: /cli/azure/pipelines
 - name: Case studies & best practices
   items:
-  - name: Pipelines security walkthrough
-    items:
-    - name: Overview
-      href: security/overview.md
-    - name: Approach to securing YAML pipelines
-      href: security/approach.md
-    - name: Repository protection
-      href: security/repos.md
-    - name: Pipeline resources
-      href: security/resources.md
-    - name: Project structure
-      href: security/projects.md
-    - name: Security through templates
-      href: security/templates.md
-    - name: Variables and parameters
-      href: security/inputs.md
-    - name: Shared infrastructure
-      href: security/infrastructure.md
-    - name: Other security considerations
-      href: security/misc.md
   - name: Add continuous security validation
     href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Build & deploy automation

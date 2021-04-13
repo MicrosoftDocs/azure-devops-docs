@@ -2,7 +2,7 @@
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views 
-ms.custom: boards-work-items, seodec18, contperf-fy20q4, devx-track-azurecli
+ms.custom: boards-work-items, seodec18, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -109,7 +109,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
+There is no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
 
 ***
 
@@ -187,7 +187,7 @@ To view a work item, double-click the title or open the context menu for the wor
 
 ::: moniker range=">= azure-devops-2020"  
 
-You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can view a new work item with the [az boards work-item show](/cli/azure/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az boards work-item show --id
@@ -294,7 +294,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
+There is no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
 ***
 

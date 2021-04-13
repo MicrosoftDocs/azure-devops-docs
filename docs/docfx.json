@@ -1,15 +1,17 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", 
+          "**/*.md",
           "**/*.yml"
         ],
-        "group": "all",
         "exclude": [
           "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**",
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
@@ -18,11 +20,16 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "group": "all"
       },
       {
         "files": [
-          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md"
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**"
         ],
         "exclude": [
           "**/obj/**",
@@ -45,12 +52,12 @@
           "**/*.mp4",
           "**/*.svg"
         ],
-        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_data/**"
-        ]
+        ],
+        "group": "all"
       }
     ],
     "overwrite": [],
@@ -60,7 +67,9 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps Services"],
+      "searchScope": [
+        "Azure DevOps Services"
+      ],
       "ms.manager": "mijacobs",
       "author": "mijacobs",
       "ms.author": "mijacobs",
@@ -137,7 +146,6 @@
         "repos/tfvc/**": "v-maksim",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
-
       },
       "author": {
         "artifacts/**": "ramiMSFT",
@@ -169,7 +177,6 @@
         "repos/tfvc/**": "MaximMalygin",
         "repos/get-started/**": "vijayma",
         "repos/git/**": "vijayma"
-
       },
       "ms.technology": {
         "pipelines/**": "devops-cicd",
@@ -196,14 +203,19 @@
         "pipelines/targets/**": "devops-cicd-targets",
         "pipelines/tasks/**": "devops-cicd-tasks",
         "pipelines/test/**": "devops-cicd-test"
-
       },
-      "ROBOTS":{
+      "ROBOTS": {
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
+      },
+      "exclude_monikers": {
+        "reference/error/**/*.md": [
+          "azure-devops"
+        ]
       }
     },
     "template": [],
     "dest": "team-services",
+    "markdownEngineName": "markdig",
     "groups": {
       "all": {
         "dest": "all",

@@ -8,6 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
+  "recommendations": "true"
   ms.date: 02/03/2021
 
 
@@ -106,12 +107,12 @@ sections:
       - question: How do I copy or clone a work item with all linked items? 
 
         answer: |
-          ::: moniker range="azure-devops"
+          ::: moniker range=">= azure-devops-2020"
           With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
-          ::: moniker range="< azure-devops"
-          This feature isn't supported at this time for on-premises deployments. Copying a work item doesn't copy any parent-child linked work items. However, is is now available on Azure Boards (cloud service).  
+          ::: moniker range="< azure-devops-2020"
+          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
 
           The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
@@ -121,8 +122,7 @@ sections:
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
 
-
-  - name: Backlogs and boards 
+  - name: Backlogs and Boards 
 
     questions: 
       - question: What's the difference between a backlog and a board?  
@@ -131,7 +131,7 @@ sections:
 
       - question: How do I add a backlog or board?  
         answer: | 
-          To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
+          To add a backlog or board, you add a team. Each team is configured with its own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
 
       - question: What limits should I be aware of?  
         answer: | 
@@ -297,5 +297,3 @@ additionalContent: |
   - [Work across projects FAQs](../project/work-across-projects-faqs.yml)
   - [Azure Boards extensions](extensions/index.md)
   - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
-
-  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, boards-kanban, seodec18, contperf-fy21q3"
 ms.technology: devops-agile  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 03/02/2021
 ---

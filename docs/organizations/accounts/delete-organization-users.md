@@ -1,7 +1,7 @@
 ---
 title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18, devx-track-azurecli
+ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -119,7 +119,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Remove a user 
 
-You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user add --user

@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/21/2021
+ms.date: 03/30/2021
 ---
 
 # Access, export, and filter audit logs
@@ -171,9 +171,9 @@ When you filter through audit events, it’s best to use the *area* and *categor
 | Agile     |Process, create, delete, and modify.         |
 | Notification    |Create, remove, and modify a subscription.         |
 | Git        | Branch policies, and create, delete, and rename repository. |
-| Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
+| Billing        | Adding, changing, and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
 | User | Sign-in events or access events of PAT and SSH |
-| Token / Authentication | Create, update, and removal/revocation Personal Access Tokens (PATs) or SSH Key. |
+| Token / Authentication | Create, update, and remove or revoke Personal Access Tokens (PATs) or SSH Keys. |
 
 
 ### Filtering tips
