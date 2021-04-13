@@ -246,7 +246,7 @@ To learn more about the endpoints, what parameters they accept, and what is retu
 
 ##  FAQ
 
-### Q: Why do I need to authenticate with an Azure AD token? Why is a PAT Token not enough?
+### Q: Why do I need to authenticate with an Azure AD token? Why is a PAT not enough?
 **A:** With this PAT Lifecycle Management API, we've opened up the ability to create new PATs and revoke existing PATs. In the wrong hands, this API could be used by malicious actors to create multiple entry points into your organization’s ADO resources. By enforcing Azure AD authentication, we hope to have this powerful API be more secure against this unauthorized usage. 
 
 ### Q: Do I need to have an Azure AD tenant with an active Azure subscription to use this API?
