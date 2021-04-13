@@ -31,7 +31,7 @@ sections:
           
           With user assignment-based billing, you only pay for the users you assign an access level. When you remove the users, charges stop. There's no longer an extra step of increase/decreasing the paid count.
           
-          In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. We don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
+          In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. We don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project-) for your organization to Basic.
           
           [Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
           
@@ -61,7 +61,7 @@ sections:
       - question: |
           How can I pay only once per user across multiple organizations?
         answer: |
-          Multi-organization billing/licensing is available. For more information, see [multi-organization billing](#multi-organization-billing).
+          Multi-organization billing/licensing is available. For more information, see [multi-organization billing](/billing-faq.yml#multi-organization-billing).
           
       - question: |
           What's the difference between daily pro-rated charges instead of monthly committed purchases?
@@ -291,7 +291,7 @@ sections:
       - question: |
           What happens if I delete my organization resource? 
         answer: |
-          Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-subscription) and your organization returns to its [free limits](billing-faq.yml#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
+          Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-subscription) and your organization returns to its [free limits](billing-faq.yml#can-i-use-azure-devops-for-free-). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
           
       - question: |
           Can credits from Azure Sponsorship Offer be used to pay for Azure DevOps Services?
