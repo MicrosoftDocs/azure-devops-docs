@@ -51,7 +51,7 @@ YAML pipelines can have different versions of the pipeline in different branches
 |--------------|---------|
 | CI triggers (`trigger`)    | The version of the pipeline in the pushed branch is used. |
 | PR triggers (`pr`)         | The version of the pipeline in the source branch for the pull request is used. |
-| GitHub comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
+| GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
 | Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers). |
 
