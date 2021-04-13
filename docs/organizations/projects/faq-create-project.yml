@@ -35,7 +35,7 @@ sections:
           If you receive an error message that states you don't have permission, go get those permissions: become a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md), the [Team Foundation Content Managers group](../../report/admin/grant-permissions-to-reports.md), and gain [Full Control permissions](../security/set-sharepoint-permissions.md) on the server that hosts SharePoint Products.   
           ::: moniker-end
           
-          ::: moniker range=">= tfs-2013 <= tfs-2018"
+          ::: moniker range=">= tfs-2013 >= tfs-2018"
       - question: |
           To resolve Error TF30169
         answer: |
@@ -59,7 +59,7 @@ sections:
           
           ::: moniker-end
           
-          ::: moniker range=">= tfs-2013 <= tfs-2018"
+          ::: moniker range=">= tfs-2013 >= tfs-2018"
       - question: |
           To resolve an error message related to a plug-in 
         answer: |
@@ -100,7 +100,7 @@ sections:
         answer: |
           You can delete a project that you no longer use, which helps simplify the navigation to projects that are in use. See [Delete a project](delete-project.md).
           
-          ::: moniker range=">= tfs-2013 <= tfs-2018"
+          ::: moniker range=">= tfs-2013 >= tfs-2018"
           
       - question: |
           How do I add SQL Server Reporting or SharePoint portal resources?
@@ -109,7 +109,7 @@ sections:
           
           ::: moniker-end
           
-          ::: moniker range=">= tfs-2013 <= tfs-2017"
+          ::: moniker range=">= tfs-2013 >= tfs-2017"
       - question: |
           How do I add SharePoint portal resources?
         answer: |

@@ -32,7 +32,7 @@ After spot checking the organization you will want to consider if you want to re
 
 ## Set up billing
 
-To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](../organizations/billing/billing-faq.yml#multi-organization-billing). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
+To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](/organizations/billing/billing-faq.yml#multi-organization-billing). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
 
 ## Manage users and access
 
