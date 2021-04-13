@@ -46,7 +46,7 @@ Releases can be created in several ways:
 
     :::image type="content" source="media/create-release-ui.png" alt-text="Create a release pipeline from the UI":::
 
-1. By using the [REST API](/rest/api/azure/devops/release/index.md) to create a release definition.
+1. By using the [REST API](/rest/api/azure/devops/release) to create a release definition.
 
 ## Q&A
 
