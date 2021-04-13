@@ -18,9 +18,10 @@ summary: |
   
   Learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
   
+  ## Visual Studio
 
 sections:
-  - name: Visual Studio
+  - name: General
     questions:
       - question: |
           Why do I need to sign in?

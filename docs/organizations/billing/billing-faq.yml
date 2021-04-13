@@ -20,14 +20,13 @@ summary: |
   
   [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
   
+  ## User assignment-based billing
+  
+  For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
 sections:
-  - name: User assignment-based billing
+  - name: General
     questions:
-      - question:
-        answer: |
-          For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
-
       - question: |
           What is user assignment-based billing?
         answer: |
@@ -81,9 +80,11 @@ sections:
           Do I need to pay to add "Package Management" users in Team Foundation Server 2017 and 2018?
         answer: |
           Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
-          
-  - name: Multi-organization billing
-    questions:
+
+          ## Multi-organization billing
+
+          Multi-organization billing allows you to pay once per user, for organizations under the same Azure billing subscription.
+
       - question: |
           Does multi-organization billing make sense for all customers?
         answer: |
@@ -202,9 +203,17 @@ sections:
           Can tags be applied to organizations from the Azure portal?
         answer: |
           No, but this feature is in our backlog to add in the future.
+
+          ## Understanding your bill
           
-  - name: Understanding your bill
-    questions:
+          Azure DevOps charges appear with other Azure charges on your [Azure bill](/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
+
+          Complete the following step to view by cost analysis.
+
+          1. Go to [Azure portal > Subscriptions](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade), and then select **Cost analysis**.
+
+             ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+
       - question: |
           How do I see only my Azure DevOps charges?
         answer: |
@@ -254,8 +263,10 @@ sections:
           
                ![Group by tag, see stacked charges](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
           
-  - name: Azure portal integration
-    questions:
+          ## Azure portal integration
+
+          Your Azure DevOps organization appears as a resource in the Azure portal, but it's created and managed outside of the portal. There are some limitations to this integration and workarounds, as follows.
+
       - question: |
           Can I move between subscriptions? 
         answer: |
