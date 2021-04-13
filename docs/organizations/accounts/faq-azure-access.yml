@@ -353,7 +353,6 @@ sections:
       - question: |
           Some users are disconnected, but they have matching identities in Azure AD. What should I do?
         answer: |
-          
           * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
           
           ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
@@ -365,7 +364,6 @@ sections:
       - question: |
           I got an error message when I was resolving disconnections. What should I do?
         answer: |
-          
           * Try again.
           * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
           
@@ -390,8 +388,7 @@ sections:
           
       - question: |
           What if my email account isn't found in Azure AD?
-        answer: |
-          
+        answer: |          
           * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
           
              ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)

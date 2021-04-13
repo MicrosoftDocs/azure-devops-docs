@@ -68,12 +68,11 @@ sections:
           Why can't I open queries saved to a disk after a rename?
         answer: |
           If you use Visual Studio 2010 and you have queries save to disk, you can't open them after a project is renamed. You can use Visual Studio 2012 or newer to open them.
-          
-          ::: moniker range=">= tfs-2015"
-          
+                    
       - question: |
           Why does the existing Lab Management BDT in Visual Studio fail with the error 'oldprojectName' cannot be found?
         answer: |
+          ::: moniker range=">= tfs-2015"
           This issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing build pipeline, select the process tab under it, select the ellipses next to the Lab Process settings to
           open the Lab Workflow Parameters wizard, and then select **Finish**. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
           
