@@ -115,10 +115,11 @@ sections:
           
           Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
           
-additionalContent: |
-
-  ## Related articles
-  
-  - [Access with Azure AD FAQs](faq-azure-access.yml)
-  - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
-  - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
+  - name: Visual Studio
+    questions:
+      - question: |
+          Related articles 
+        answer: |
+          - [Access with Azure AD FAQs](faq-azure-access.yml)
+          - [Configure and customize organization FAQs](faq-configure-customize-organization.yml)
+          - [User and permissions management FAQs](faq-user-and-permissions-management.yml)
