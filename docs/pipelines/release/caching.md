@@ -267,6 +267,8 @@ steps:
     condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
+Replace `caching-docker.yml` with your own pipeline YAML file.
+
 ## Golang
 
 For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.

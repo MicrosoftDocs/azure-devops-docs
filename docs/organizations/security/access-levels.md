@@ -218,11 +218,11 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards and can't [view or set capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards (except for the work item State) and can't [view or set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -236,11 +236,11 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end  
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="3":::
       **Agile boards**  
-      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md).  Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
+      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
