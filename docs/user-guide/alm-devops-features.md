@@ -2286,7 +2286,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Sign up for Azure DevOps Services </b></p>
-<p><a href="https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services" data-raw-source="[Store your code, tests, and test results in the cloud with Azure DevOps Services](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)">Store your code, tests, and test results in the cloud with Azure DevOps Services</a>, as well as plan your project and track progress. </p>
+<p><a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[Store your code, tests, and test results in the cloud with Azure DevOps Services](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">Store your code, tests, and test results in the cloud with Azure DevOps Services</a>, as well as plan your project and track progress. </p>
 
 
 

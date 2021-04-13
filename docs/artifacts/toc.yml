@@ -8,7 +8,7 @@
     href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
-  - name: Artifacts Storage breakdown
+  - name: View Artifacts storage consumption
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
@@ -30,17 +30,19 @@
       href: get-started-nuget.md
     - name: Publish to a NuGet feed (YAML/Classic)
       href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-    - name: Publish a NuGet package from the command line
+    - name: Publish to a NuGet feed (CLI)
       href: nuget/publish.md
+    - name: Publish to NuGet.org
+      href: nuget/publish-to-nuget-org.md
     - name: Consume NuGet packages in Visual Studio
       href: nuget/consume.md
-    - name: Use NuGet with Azure DevOps Services
+    - name: Use NuGet with Artifacts feeds
       href: nuget/nuget-exe.md
-    - name: Use dotnet with Azure DevOps Services
+    - name: Use dotnet with Artifacts feeds
       href: nuget/dotnet-exe.md
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md
-    - name: Use packages from nuget.org
+    - name: NuGet upstream source
       href: nuget/upstream-sources.md
     - name: Set up a multi-developer environment
       href: nuget/bootstrap-nuget.md
@@ -148,7 +150,7 @@
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
       href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-    - name: Set up GitHub SourceLinking
+    - name: Publish and consume symbols
       href: symbols/setting-up-github-sourcelinking.md
 - name: Concepts and references
   items:
@@ -165,4 +167,4 @@
   - name: REST API reference
     href: /rest/api/azure/devops/index
   - name: Azure DevOps CLI
-    href: ../cli/index.md
+    href: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 

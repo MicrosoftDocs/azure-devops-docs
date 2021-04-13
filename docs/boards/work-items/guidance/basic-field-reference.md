@@ -5,7 +5,7 @@ description: Index to those fields used in the Basic process for Azure Boards
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid:  
-ms.topic: reference  
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

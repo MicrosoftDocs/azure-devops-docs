@@ -99,13 +99,13 @@ In this example, macro syntax is used with Bash, PowerShell, and a script task. 
 
  ```yaml
 variables:
-  - name: pullRequest
-    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: projectName
+    value: contoso
 
 steps: 
-- bash: echo $(pullRequest)
-- powershell: echo $(pullRequest)
-- script: echo $(pullRequest)
+- bash: echo $(projectName)
+- powershell: echo $(projectName)
+- script: echo $(projectName)
  ```
 
 ### Template expression syntax 
@@ -268,7 +268,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 
 ### Create a variable
 
-You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable create --name
@@ -308,7 +308,7 @@ Configuration  False             False        platform
 
 ### Update a variable
 
-You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable update --name
@@ -352,7 +352,7 @@ Configuration  False             False        config.debug
 
 ### Delete a variable
 
-You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable delete --name
@@ -546,6 +546,9 @@ Some tasks define output variables, which you can consume in downstream steps wi
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
@@ -617,7 +620,7 @@ You must use YAML to consume output variables in a different job.
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">=azure-devops-2020"
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az pipelines**](/cli/azure/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
@@ -628,7 +631,7 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 
 ## List variables
 
-You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/pipelines/variable#ext-azure-devops-az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines variable list [--org]
@@ -669,15 +672,12 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
-This doesn't update the environment variables, but it does make the new
-variable available to downstream steps within the same job.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md). This will update the environment variables for subsequent jobs. Subsequent jobs will have access to the new variable with [macro syntax](#understand-variable-syntax) and in tasks as environment variables.
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  For more information on secret variables, see [logging commands](../scripts/logging-commands.md).  
 
 ```yaml
 steps:
-
 # Create a variable
 - bash: |
     echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
@@ -689,11 +689,10 @@ steps:
     echo my pipeline variable is $(sauce)
 ```
 
-Subsequent steps will also have the pipeline variable added to their environment.
+Subsequent steps will also have the pipeline variable added to their environment. You cannot use the variable in the step that it is defined.
 
 ```yaml
 steps:
-
 # Create a variable
 # Note that this does not update the environment of the current script.
 - bash: |
@@ -705,6 +704,7 @@ steps:
 - pwsh: |
     Write-Host "my environment variable is $env:SAUCE"
 ```
+
 
 ### Set a multi-job output variable
 
@@ -742,6 +742,9 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 
@@ -763,6 +766,9 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
@@ -896,7 +902,7 @@ You can't pass a variable from one job to another job of a build pipeline, unles
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">=azure-devops-2020"
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
@@ -944,12 +950,47 @@ For more information about counters and other expressions, see [expressions](exp
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">=azure-devops-2020"
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az pipelines**](/cli/azure/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+
+::: moniker range=">= azure-devops-2019"
+
+## Configure settable variables for steps
+
+You can define `settableVariables` within a step or specify that no variables can be set. 
+
+In this example, the script cannot set a variable. 
+
+```yaml
+steps:
+- script: echo This is a step
+  target:
+    settableVariables: none
+```
+
+In this example, the script allows the variable `sauce` but not the variable `secretSauce`. You'll see a warning on the pipeline run page. 
+
+:::image type="content" source="media/set-vars-warning.png" alt-text="Warning that you cannot set secretSauce."::: 
+
+```yaml
+steps:
+  - bash: |
+      echo "##vso[task.setvariable variable=Sauce;]crushed tomatoes"
+      echo "##vso[task.setvariable variable=secretSauce;]crushed tomatoes with garlic"
+    target:
+     settableVariables:
+      - sauce
+    name: SetVars
+  - bash: 
+      echo "Sauce is $(sauce)"
+      echo "secretSauce is $(secretSauce)"
+    name: OutputVars
+```
+::: moniker-end
 ## Allow at queue time
 
 #### [YAML](#tab/yaml/)
@@ -1095,7 +1136,6 @@ If the variable `a` is an output variable from a previous job, then you can use 
 ### Recursive expansion
 
 On the agent, variables referenced using `$( )` syntax are recursively expanded.
-However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -1105,7 +1145,7 @@ variables:
 
 steps:
 - script: echo $(myOuter)  # prints "someValue"
-  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
+  displayName: Variable is $(myOuter)  # display name is "Variable is someValue"
 ```
 
 ::: moniker-end
@@ -1140,7 +1180,7 @@ Variables are expanded once when the run is started, and again at the beginning 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range=">=azure-devops-2020"
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az pipelines**](/cli/azure/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]

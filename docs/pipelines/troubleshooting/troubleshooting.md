@@ -119,6 +119,7 @@ If your pipeline queues but never gets an agent, check the following items.
 ::: moniker range="azure-devops"
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Can't access Azure Key Vault behind firewall from Azure DevOps](#cant-access-azure-key-vault-behind-firewall-from-azure-devops)
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
@@ -169,6 +170,10 @@ If you are currently running other pipelines, you may not have any remaining par
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+### Can't access Azure Key Vault behind firewall from Azure DevOps
+
+If you can't access Azure Key Vault from your pipeline, the firewall might be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allowlisted. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md#networking).
 
 ### You don't have enough concurrency
  
@@ -542,10 +547,24 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
+### Libraries aren't installed for Python application when script executes 
+
+When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
+
+To install the dependencies, use a post-deployment script in the App Service deployment task. The following example shows the command you must use in the post-deployment script. You can update the script for your scenario.
+
+```
+D:\home\python364x64\python.exe -m pip install -r requirements.txt
+```
+
+
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
+### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
+
+In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 

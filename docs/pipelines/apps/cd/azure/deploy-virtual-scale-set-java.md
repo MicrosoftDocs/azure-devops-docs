@@ -90,7 +90,7 @@ Before you begin, you need:
 
 You'll need a resource group, storage account, and shared image gallery for your custom image. 
 
-1. Create a resource group with [az group create](/cli/azure/group#az-group-create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+1. Create a resource group with [az group create](/cli/azure/group#az_group_create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
     ```azurecli-interactive
     az group create --name myVMSSResourceGroup --location eastus2

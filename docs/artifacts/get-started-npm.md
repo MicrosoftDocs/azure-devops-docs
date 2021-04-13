@@ -126,7 +126,7 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 }
 ```
 
-#### Linux or Mac
+#### Linux/Mac
 
 If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, generate a token in the following manner for your $HOME/.npmrc file.
 

@@ -120,10 +120,10 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 ::: moniker range=">= azure-devops-2020"
 
-You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
+You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
 > [!NOTE]
-> You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
+> You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/repos#ext-azure-devops-az-repos-create), and then return to this page.
 
 ```azurecli 
 az devops wiki create [--mapped-path]

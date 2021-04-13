@@ -4,7 +4,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.prod: azure-devops
 ms.topic: include
-ms.date: 08/18/2020
+ms.date: 04/07/2021 
 ---
 
 
@@ -26,7 +26,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
    :::column-end:::
    :::column span="2":::
       - [Add a custom work item type](../work/customize-process-backlogs-boards.md#edit-product-backlog) 
-      ::: moniker range="azure-devops"
+      ::: moniker range=">= azure-devops-2020"
       - [Add an inherited work item type](../work/customize-process-backlogs-boards.md#add-oob-to-backlog) 
       ::: moniker-end  
       - [Change the default work item type](../work/customize-process-backlogs-boards.md#edit-product-backlog) 
@@ -49,7 +49,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 
 **What you can't customize**  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - You can't remove an inherited portfolio level from the product (but you can rename the portfolio level and you can disable an inherited work item type)
 - You can't insert a backlog level within the existing set of defined backlogs
@@ -61,7 +61,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 ::: moniker-end  
 
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
 
 - You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
 - You can't remove an inherited portfolio level from the product (but you can rename the portfolio level and you can disable an inherited work item type)  

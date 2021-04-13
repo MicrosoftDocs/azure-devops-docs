@@ -157,7 +157,7 @@ Intervention** task in your pipeline.
 
 You can use the [manual validation task](../tasks/utility/manual-validation.md) to pause a YAML pipeline run and perform manual activities. You can then resume or reject the run. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build package before moving onto a computation-intensive job.
 
-In this pipeline, `myPostValidationJob` does not run until you give manual approval. There's a prompt within the Pipeline UI to review and provide validation. The email addresses listed in `notifyUsers` will receive emails asking them to approve the pipeline. 
+In this pipeline, `waitForValidation` does not run until you give manual approval. There's a prompt within the Pipeline UI to review and provide validation. The email addresses listed in `notifyUsers` will receive emails asking them to approve the pipeline. 
 
 :::image type="content" source="media/needs-validation-prompt.png" alt-text="Add validation for the pipeline to continue.":::
     

@@ -14,33 +14,33 @@ The following features provide support for working with query results, saving an
 ---
 :::row:::  
    :::column span="1":::  
-      - [Add a query chart to a dashboard](/azure/devops/report/dashboards/charts#add-chart-to-a-dashboard)  
-      - [Apply interactive filters](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)  
-      - [Choose column sort](/azure/devops/boards/backlogs/set-column-options)  
-      - [Choose query column options](/azure/devops/boards/backlogs/set-column-options)  
-      - [Copy query results](/azure/devops/boards/backlogs/copy-list)  
-      - [Copy Query URL](/azure/devops/boards/queries/view-run-query#email-query)  
-      - [Create a query from a backlog](/azure/devops/boards/backlogs/product-backlog-controls)  
-      - [Create query charts](/azure/devops/report/dashboards/charts)  
-      - [Create query folders](/azure/devops/boards/queries/organize-queries)  
+      - [Add a query chart to a dashboard](../../report/dashboards/charts.md#add-chart-to-a-dashboard)  
+      - [Apply interactive filters](../backlogs/filter-backlogs-boards-plans.md)  
+      - [Choose column sort](../backlogs/set-column-options.md)  
+      - [Choose query column options](../backlogs/set-column-options.md)  
+      - [Copy query results](../backlogs/copy-list.md)  
+      - [Copy Query URL](../queries/view-run-query.md#email-query)  
+      - [Create a query from a backlog](../backlogs/product-backlog-controls.md)  
+      - [Create query charts](../../report/dashboards/charts.md)  
+      - [Create query folders](../queries/organize-queries.md)  
    :::column-end:::
    :::column span="1":::  
-      - [Define a query hyperlink](/azure/devops/boards/queries/define-query-hyperlink)  
-      - [Define and edit a query](/azure/devops/boards/queries/using-queries)  
-      - [Define WIQL syntax](/azure/devops/boards/queries/wiql-syntax)  
-      - [Email query results](/azure/devops/boards/queries/view-run-query#email-query)  
-      - [Favorite a query](/azure/devops/boards/queries/view-run-query#favorites)  
-      - [Filter a query](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)  
+      - [Define a query hyperlink](../queries/define-query-hyperlink.md)  
+      - [Define and edit a query](../queries/using-queries.md)  
+      - [Define WIQL syntax](../queries/wiql-syntax.md)  
+      - [Email query results](../queries/view-run-query.md#email-query)  
+      - [Favorite a query](../queries/view-run-query.md#favorites)  
+      - [Filter a query](../backlogs/filter-backlogs-boards-plans.md)  
    :::column-end:::
    :::column span="1":::  
-      - [Import/export a query (csv)](/azure/devops/boards/queries/import-work-items-from-csv)  
-      - [Import/export a query (.wiq)](/azure/devops/boards/queries/query-support-integration-cross-service-extensions#wiql)  
-      - [Open and run a query](/azure/devops/boards/queries/view-run-query)  
-      - [Publish/refresh a query (Excel)](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)  
+      - [Import/export a query (csv)](../queries/import-work-items-from-csv.md)  
+      - [Import/export a query (.wiq)](../queries/query-support-integration-cross-service-extensions.md#wiql)  
+      - [Open and run a query](../queries/view-run-query.md)  
+      - [Publish/refresh a query (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)  
       - [Run REST API queries](/rest/api/vsts/wit/queries)  
-      - [Save queries](/azure/devops/boards/queries/organize-queries#flat-list-query)  
-      - [Set query permissions](/azure/devops/boards/queries/set-query-permissions)  
-      - [Triage query results](/azure/devops/boards/queries/triage-work-items)  
+      - [Save queries](../queries/organize-queries.md#flat-list-query)  
+      - [Set query permissions](../queries/set-query-permissions.md)  
+      - [Triage query results](../queries/triage-work-items.md)  
    :::column-end:::  
 :::row-end:::
 ---

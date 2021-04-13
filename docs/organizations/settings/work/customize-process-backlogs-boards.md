@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 08/18/2020
+ms.date: 04/07/2021 
 ---
 
 # Customize your backlogs or boards (Inheritance process)  
@@ -29,11 +29,9 @@ Your project defines two portfolio backlogs: Features and Epics. However, if you
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
-
-> [!NOTE]   
-> You can't add or remove an inherited work item type to or from a backlog, for example, you can't add the Issue work item type to the product backlog.  
  
-::: moniker range="< azure-devops"
+ 
+::: moniker range="azure-devops-2019"
 > [!NOTE]    
 > You can't add an inherited work item type to any backlog level. For example, you can't add the Issue or Impediment work item type to the product backlog. 
  
@@ -43,9 +41,11 @@ To learn more about what you can customize, see [About process customization and
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
 
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
+
 <a id="add-oob-to-backlog" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add a system work item type to a backlog  
 
@@ -153,24 +153,24 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 1. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click **Add**. 
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](media/backlogs/add-portfolio-backlog-initiative-s173.png) 
 	::: moniker-end 
-	::: moniker range="< azure-devops"
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](media/process/process-add-portfolio-backlog-dialog.png) 
 	::: moniker-end 
 
 1. If you are associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
-	![Web portal, Add a portfolio backlog dialog, Save changes.](media/backlogs/add-portfolio-backlog-initiative-save.png)
+	> ![Web portal, Add a portfolio backlog dialog, Save changes.](media/backlogs/add-portfolio-backlog-initiative-save.png)
 	::: moniker-end 
-	::: moniker range="< azure-devops"
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
-	![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-add-portfolio-backlog-dialog-save.png) 
+	> ![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-add-portfolio-backlog-dialog-save.png) 
 	::: moniker-end 
 
 <a id="edit-portfolio-backlog">  </a>
@@ -186,7 +186,7 @@ Deleting a backlog level removes the backlog and board associated with the level
 ![Deleting a backlog level removes the backlog and board associated with the level.](media/process/process-edit-portfolio-backlog-dialog.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs.  
+> You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs. However, you can disable these work item types and that effectively removes them from the user interface.  
 
 <a id="edit-product-backlog">  </a>
 
@@ -197,7 +197,7 @@ The Requirement backlog, also referred to as the product backlog, defines the wo
 You can rename the backlog, change the color, add work item types, and change the default work item type. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Check those boxes of the work item types to include on the backlog. 
 
@@ -206,7 +206,7 @@ Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and ch
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
 
 Here, we've renamed the backlog, added *Customer Ticket*, and changed the default type to *Customer Ticket*. 
 
@@ -215,7 +215,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
  
 
 > [!NOTE]    
-> You can't remove the default, inherited work item type from the Requirements backlog. 
+> You can't remove the default, inherited work item type from the Requirements backlog. However, you can disable the work item type and that effectively removes it from the user interface.  
 
 <a id="edit-iteration-backlog">  </a>
 
@@ -230,7 +230,7 @@ Here, we've added the *Ticket* work item type which is tracked along with tasks.
 ![Example of adding the Ticket work item.](media/process/process-edit-iteration-backlog-dialog-modified.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited work item type from the Iteration backlog. 
+> You can't remove the default, inherited work item type from the Iteration backlog. However, you can disable the work item type and that effectively removes it from the user interface. 
 
 
 

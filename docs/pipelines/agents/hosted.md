@@ -310,8 +310,15 @@ See the section [Agent IP ranges](#agent-ip-ranges)
 
 If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) allowed.
 
-<a name="mac-pick-tools"></a>
+### I'm getting an SAS IP authorization error from an Azure Storage account
 
+If you get an SAS error code, it is most likely because the IP address ranges from the Microsoft-hosted agents aren't permitted due to your Azure Storage rules. There are a few workarounds:
+
+1. [Manage the IP network rules for your Azure Storage account](/azure/storage/common/storage-network-security?tabs=azure-portal#managing-ip-network-rules) and add the [IP address ranges for your hosted agents](#networking).
+2. In your pipeline, use [Azure CLI to update the network ruleset for your Azure Storage account](/powershell/module/az.storage/update-azstorageaccountnetworkruleset) right before you access storage, and then restore the previous ruleset.
+3. Use [self-hosted agents](agents.md#install) or [Scale set agents](scale-set-agents.md).
+
+<a name="mac-pick-tools"></a>
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
 #### Xamarin

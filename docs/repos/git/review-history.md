@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
 
-Git's use of feature [branches](branches.md) and merges through [pull requests](pull-requests.md) mean that the commit history of your development doesn't form a straight, chronological line.
+Git's use of feature [branches](./create-branch.md) and merges through [pull requests](pull-requests.md) mean that the commit history of your development doesn't form a straight, chronological line.
 When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. 
 A recent change to a file in the `main` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday. 
 
@@ -248,4 +248,3 @@ You can narrow down specific file changes by specifying a file after the branch 
 </pre>
 
 ---
-

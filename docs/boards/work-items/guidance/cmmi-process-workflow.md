@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/20/2018
+ms.date: 03/24/2021
 ---
 
 # CMMI process work item types and workflow
@@ -32,14 +32,17 @@ To support additional CMMI processes, teams can track change requests, risks, is
 
 ## Define requirements 
 
-Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md).
+Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). 
 
 <img src="media/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
-
 
 Later, you can open each requirement to provide more details and estimate its size.
 
 ![Requirement work item form](media/cmmi-requirement-form.png)  
+
+Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md). 
+
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Requirements specify the functions and product elements that teams need to create. Product owners typically define and stack rank requirements on the product backlog page. The team then scopes the size of the effort to deliver the highest priority items.
 
@@ -161,8 +164,7 @@ Use the following guidance and that provided for [fields used in common across w
 </tr>
 <tr>
     <td><p><a href="../../queries/query-by-date-or-current-iteration.md" data-raw-source="[Start Date/Finish Date](../../queries/query-by-date-or-current-iteration.md)">Start Date/Finish Date</a> </p></td>
-    <td><p>The target dates for when the work will start or finish. These fields are filled in by <a href="../../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Microsoft Project](../../backlogs/office/create-your-backlog-tasks-using-project.md)">Microsoft Project</a> when you use it for scheduling.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
+    <td><p>The target dates for when the work will start or finish. </p>
 </td>
 </tr>
   <tr>
