@@ -2,7 +2,7 @@
 title: View or run a query 
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps 
-ms.custom: boards-queries, devx-track-azurecli
+ms.custom: boards-queries
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
