@@ -12,7 +12,7 @@ ms.date: 04/12/2021
 
 # Work item form IndexDB caching issues
 
-[!INCLUDE [temp](../../../boards/includes/version-all.md)]
+[!INCLUDE [temp](../../../boards/includes/version-azure-boards-plus-2018-2020.md)]
  
 To quickly render work items in your client or browser, several data elements are cached by the IndexDB process. A known issue exists in the cache rules that can cause a delay in server-side rule re-evaluations.  
 
