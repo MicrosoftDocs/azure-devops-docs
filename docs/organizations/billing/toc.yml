@@ -19,7 +19,7 @@
   - name: Buy access to Azure DevOps Server or Azure Test Plans
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQs
-    href: billing-faq.md
+    href: billing-faq.yml
 - name: Cloud Solution Providers
   items:
   - name: "CSPs: Buy Azure DevOps"
