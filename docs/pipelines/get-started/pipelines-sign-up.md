@@ -75,7 +75,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 
 	An organization gets created based on the account you used to sign in. Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
 Your next step is to [create a project](#create-project). 
 
