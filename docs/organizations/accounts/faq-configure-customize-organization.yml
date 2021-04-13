@@ -95,11 +95,10 @@ sections:
           
           <a name="create-organization-faqs"></a>
           
-  - name: Create an organization
-    questions:
-      - question:
-        answer: |
+          ## Create an organization
+
           For more information, see Plan your Azure DevOps organization structure.
+
       - question: |
           Q: How many organizations can I create?
         answer: |
