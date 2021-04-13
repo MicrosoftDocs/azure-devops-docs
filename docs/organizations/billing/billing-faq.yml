@@ -25,7 +25,7 @@ summary: |
   For more information about user assignment-based billing, see our [blog post](https://devblogs.microsoft.com/devops/a-simpler-way-to-buy-azure-devops/).
 
 sections:
-  - name: General
+  - name: General
     questions:
       - question: |
           What is user assignment-based billing?
