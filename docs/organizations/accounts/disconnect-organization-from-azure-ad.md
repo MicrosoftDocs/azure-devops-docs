@@ -64,4 +64,4 @@ For answers to frequently asked questions about connecting to, disconnecting fro
 * [About access with Azure AD](access-with-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)
+* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

@@ -429,7 +429,7 @@ A:
 
 ### Q: Why can't I add any more members?
 
-A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#q-why-cant-i-add-any-more-members-to-my-project). 
+A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#why-can-t-i-add-any-more-members-to-my-project-). 
 
 #### Q: How is *access* different from *permissions?
 

@@ -54,7 +54,7 @@ if you don't have the version you want already.
 
     This profile saves your settings and roams with you 
     when you sign in to Visual Studio on any computer. 
-    [Why else should I sign in?](faq-set-up-vs.yml#why-sign-in)
+    [Why else should I sign in?](/faq-set-up-vs.yml#why-sign-in)
     If you're a Visual Studio subscriber, use the sign in address for your subscription. 
 
     ![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)
