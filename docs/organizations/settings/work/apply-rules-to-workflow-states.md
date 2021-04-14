@@ -548,6 +548,10 @@ For the rules defined in the previous table, you should see the following State 
 
 When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
 
+
+[!INCLUDE [temp](../../../boards/includes/note-work-item-caching-rules-simple.md)]
+
+
 ::: moniker-end
 
 ## Automate state transitions of parent work items 
@@ -577,8 +581,8 @@ The Agile process bug work item type previously had a rule which reassigned the 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Customize a workflow](customize-process-workflow.md) 
-- [Add a custom rule](custom-rules.md) 
-  
+- [Add a custom rule](custom-rules.md)  
+- [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  
 
 
 

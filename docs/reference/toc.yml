@@ -1,4 +1,4 @@
-- name: Azure Boards settings
+- name: Azure Boards Configuration & Customization Documentation
   href: index.yml
 - name: Quick reference index
   href: quick-reference-index-boards-settings.md
@@ -40,6 +40,19 @@
   href: process-templates/toc.yml
 - name: witadmin Reference
   href: witadmin/toc.yml
+- name: Troubleshooting 
+  items:
+  - name: Azure Boards FAQs 
+    href: ../boards/faqs.yml 
+  - name: Azure Boards customization FAQs
+    href: ../organizations/settings/work/faqs.yml
+  - name: Set up your backlogs & boards
+    href: ../boards/backlogs/set-up-your-backlog.md 
+  - name: Fix "Ordering backlog items is disabled"
+    href: ../boards/backlogs/resolve-backlog-reorder-issues.md
+    displayname: reorder, disable, nest, natural hierarchy, in progress  
+  - name: Work item form caching
+    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
 - name: Reference
   items:
   - name: Naming restrictions
