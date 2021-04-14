@@ -125,7 +125,7 @@ To complete this section successfully, you will need to have an Azure container 
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
-1. In the Azure Portal, choose **Create a resource**, **Containers**, then choose **Web App for Containers**. 
+1. In the Azure portal, choose **Create a resource**, **Containers**, then choose **Web App for Containers**. 
 
     :::image type="content" source="media/create-web-app-container.png" alt-text="Create a web app for containers resource":::
 
@@ -133,7 +133,7 @@ To complete this section successfully, you will need to have an Azure container 
 
     :::image type="content" source="media/configure-web-app.png" alt-text="Configure the web app":::
 
-1. In the **Sku abd size** section, select **Change** to specify the pricing tier. Select the **Dev/Test** plan then choose the **F1 Free plan**. Select **Apply** when you are done.
+1. In the **Sku and size** section, select **Change** to specify the pricing tier. Select the **Dev/Test** plan then choose the **F1 Free plan**. Select **Apply** when you are done.
 
     :::image type="content" source="media/pricing-tier.png" alt-text="Change pricing tier to free":::
 
@@ -168,5 +168,5 @@ To complete this section successfully, you will need to have an Azure container 
 ## Related articles
 
 - [Set up multi-stage release](../../release/define-multistage-release-process.md)
-- [Stage templates in Azure Pipelines](../../pipelines/release/env-templates.md)
+- [Stage templates in Azure Pipelines](../../release/env-templates.md)
 - [Deploy from multiple branches using Azure Pipelines](../../release/deploy-multiple-branches.md)
