@@ -99,13 +99,13 @@ In this example, macro syntax is used with Bash, PowerShell, and a script task. 
 
  ```yaml
 variables:
-  - name: pullRequest
-    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: projectName
+    value: contoso
 
 steps: 
-- bash: echo $(pullRequest)
-- powershell: echo $(pullRequest)
-- script: echo $(pullRequest)
+- bash: echo $(projectName)
+- powershell: echo $(projectName)
+- script: echo $(projectName)
  ```
 
 ### Template expression syntax 
@@ -546,6 +546,9 @@ Some tasks define output variables, which you can consume in downstream steps wi
 > [!NOTE]
 > By default, each stage in a pipeline depends on the one just before it in the YAML file. If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
 
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
@@ -669,15 +672,12 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
-This doesn't update the environment variables, but it does make the new
-variable available to downstream steps within the same job.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md). This will update the environment variables for subsequent jobs. Subsequent jobs will have access to the new variable with [macro syntax](#understand-variable-syntax) and in tasks as environment variables.
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  For more information on secret variables, see [logging commands](../scripts/logging-commands.md).  
 
 ```yaml
 steps:
-
 # Create a variable
 - bash: |
     echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
@@ -689,11 +689,10 @@ steps:
     echo my pipeline variable is $(sauce)
 ```
 
-Subsequent steps will also have the pipeline variable added to their environment.
+Subsequent steps will also have the pipeline variable added to their environment. You cannot use the variable in the step that it is defined.
 
 ```yaml
 steps:
-
 # Create a variable
 # Note that this does not update the environment of the current script.
 - bash: |
@@ -705,6 +704,7 @@ steps:
 - pwsh: |
     Write-Host "my environment variable is $env:SAUCE"
 ```
+
 
 ### Set a multi-job output variable
 
@@ -742,6 +742,9 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 
@@ -763,6 +766,9 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
@@ -950,6 +956,41 @@ There is no [**az pipelines**](/cli/azure/pipelines) command that applies to set
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+
+::: moniker range=">= azure-devops-2019"
+
+## Configure settable variables for steps
+
+You can define `settableVariables` within a step or specify that no variables can be set. 
+
+In this example, the script cannot set a variable. 
+
+```yaml
+steps:
+- script: echo This is a step
+  target:
+    settableVariables: none
+```
+
+In this example, the script allows the variable `sauce` but not the variable `secretSauce`. You'll see a warning on the pipeline run page. 
+
+:::image type="content" source="media/set-vars-warning.png" alt-text="Warning that you cannot set secretSauce."::: 
+
+```yaml
+steps:
+  - bash: |
+      echo "##vso[task.setvariable variable=Sauce;]crushed tomatoes"
+      echo "##vso[task.setvariable variable=secretSauce;]crushed tomatoes with garlic"
+    target:
+     settableVariables:
+      - sauce
+    name: SetVars
+  - bash: 
+      echo "Sauce is $(sauce)"
+      echo "secretSauce is $(secretSauce)"
+    name: OutputVars
+```
+::: moniker-end
 ## Allow at queue time
 
 #### [YAML](#tab/yaml/)
@@ -1095,7 +1136,6 @@ If the variable `a` is an output variable from a previous job, then you can use 
 ### Recursive expansion
 
 On the agent, variables referenced using `$( )` syntax are recursively expanded.
-However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -1105,7 +1145,7 @@ variables:
 
 steps:
 - script: echo $(myOuter)  # prints "someValue"
-  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
+  displayName: Variable is $(myOuter)  # display name is "Variable is someValue"
 ```
 
 ::: moniker-end

@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: landing-page
+ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 10/14/2018
 ---

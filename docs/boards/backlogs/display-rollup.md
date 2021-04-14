@@ -3,7 +3,7 @@ title: Display rollup columns that show progress, counts, or totals
 titleSuffix: Azure Boards
 description: Add or remove the display of rollup columns that show progress or totals of hierarchical items 
 ms.technology: devops-agile
-ms.assetid: 
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'

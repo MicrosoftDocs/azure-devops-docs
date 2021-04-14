@@ -2265,6 +2265,7 @@ steps:
   target:
     container: string # where this step will run; values are the container name or the word 'host'
     commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
+    settableVariables: string # what variables are allowed; defaults to all; can be `none` or a list of allowed vars
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add

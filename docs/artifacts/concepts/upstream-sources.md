@@ -123,12 +123,6 @@ You can't publish any package-version that already exists in any upstream source
 
 If you must push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. See the [immutability concept](../artifacts-key-concepts.md#immutability) for more info.
 
-<a name="upstream-metadata-cache"></a>
-
-## Cached metadata
-
-When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This delay depends on job timing and package data propagation.
-
 <a name="upstream-health-status"></a>
 
 ## Upstream sources health status
@@ -142,11 +136,12 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 <a name="offline-upstreams"></a>
 
+> [!NOTE]
+> For feeds that have public package respositories such as nuget.org as upstream sources, there is a 3-6 hour delay between when a package is pushed to the public repository and when it is available for download by your feed. This delay depends on job timing and package data propagation. The delay doesn't apply when the upstream sources are Azure DevOps feeds.
+
 ## Offline upstream sources
 
-Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. For outages lasting less than 12 hours, you can continue to normally use your feeds thanks to the [Cached metadata](#upstream-metadata-cache).
-
-Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can choose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
+Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. When a package is ingested in the downstream feed, a copy of the package is created, so even when the upstream feed is not available, the package is still available in the downstream feed.
 
 ## Related articles
 

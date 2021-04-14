@@ -449,7 +449,7 @@ Select **Maintenance History** to see the maintenance job history for the curren
 
 :::moniker-end
 
-The maintenance is done per agent, not per machine; so if you have multiple agents on a single machine, you may still run into disk space issues.
+The maintenance is done per agent pool, not per machine; so if you have multiple agent pools on a single machine, you may still run into disk space issues.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 

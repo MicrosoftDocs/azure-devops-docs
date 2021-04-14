@@ -874,6 +874,8 @@
     href: scripts/logging-commands.md
   - name: Artifact policy checks
     href: process/artifact-policy.md
+  - name: Azure CLI
+    href: /cli/azure/pipelines
 - name: Case studies & best practices
   items:
   - name: Add continuous security validation
