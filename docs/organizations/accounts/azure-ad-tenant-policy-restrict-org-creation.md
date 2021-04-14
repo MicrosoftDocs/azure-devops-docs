@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2021
+ms.date: 03/30/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -20,9 +20,9 @@ Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which 
 
 ## Prerequisites
 
-You must be an Azure DevOps Administrator in Azure AD to manage this policy. It isn't a requirement to be a Project Collection Administrator.
+You must be an Azure DevOps Administrator in Azure AD to manage this policy. It isn't a requirement to be a Project Collection Administrator. 
 
-If you don't see the policy section in Azure DevOps, you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
+If you don't see the policy section in Azure DevOps, then you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
 ![Check Azure AD roles and administrators](media/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
 
@@ -49,9 +49,9 @@ For more information about the new built-in Azure AD roles, see [Administrator r
 
 ## Optional
 
-### Create allow list
+### Create allowlist
 
-With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
+With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users with an allowlist. Users on the allowlist can create new organizations, but they can't manage the policy.
 
 1. Select **Add AAD user or group**.
 
@@ -59,7 +59,7 @@ With the policy turned on, all users are restricted from creating new organizati
  
 ### Create error message
 
-When administrators, who aren't on the allow list, try to create an organization they get an error similar to the following example. 
+When administrators, who aren't on the allowlist, try to create an organization they get an error similar to the following example. 
  
 ![Error message example](media/azure-ad-tenant-policy/error-message.png)
 

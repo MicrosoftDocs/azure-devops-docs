@@ -2,7 +2,7 @@
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views 
-ms.custom: boards-work-items, seodec18, contperf-fy20q4, devx-track-azurecli
+ms.custom: boards-work-items, seodec18, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -109,7 +109,7 @@ If you don't see the **Work Items** option, you need to connect to a project and
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
+There is no [**az boards**](/cli/azure//boards) command that opens the **Work Items** page at this time. The Azure DevOps CLI commands are valid for Azure DevOps Services and Azure DevOps Server 2020.
 
 ***
 
@@ -294,7 +294,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
+There is no [**az boards**](/cli/azure//boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
 ***
 

@@ -8,7 +8,7 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/27/2020
+ms.date: 03/31/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -25,6 +25,27 @@ Visual Studio subscribers get access included with their subscription, and their
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
+::: moniker range=" < azure-devops"
+
+## Prerequisites
+
+Ensure the following is true:
+
+* [Licensing is set up for your organization via Azure](https://azure.microsoft.com/en-us/pricing/details/devops/server/)
+* You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
+
+## Pay through Azure
+
+Complete the following steps to pay via Azure.
+
+1. Set up an Azure DevOps organization, even if you don't intend to use it.
+2. During this process, set up billing using an Azure subscription and buy users or CI/CD.
+3. Assign licenses to users.
+You're entitled to the same amount of user licenses to be used in the server.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 ## Prerequisites
 
 Ensure the following is true:
@@ -111,6 +132,7 @@ If you have more than one Azure DevOps organization, you can turn on multi-organ
 
    ![Select Multi-organization](media/buy-more-basic-access/select-multi-organization-billing.png)
 
+::: moniker-end
 ## Next steps
 
 > [!div class="nextstepaction"]
