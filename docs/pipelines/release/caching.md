@@ -42,7 +42,7 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 #### Path input
 
-`path` should be set to the directory to populate the cache from (on save) and to store files in (on restore). It can be absolute or relative. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
+`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
 
 #### Key input
 
