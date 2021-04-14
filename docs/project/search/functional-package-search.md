@@ -27,7 +27,7 @@ For more information about the following search functions, see [Get started with
 - Proximity
 ## View and filter search results
 
-1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
+1. The Views filter only appears if a single feed is selected from Feeds filter.
    Use the filter to show the selector lists.
 
 	:::image type="content" source="media/shared/pkgsrch-results-filtericon.png" alt-text="Showing the filter lists":::   

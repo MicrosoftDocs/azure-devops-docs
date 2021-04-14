@@ -90,7 +90,7 @@ The following features apply to all searches - work items, code, wiki, and packa
       Search based on one or more keywords.
    :::column-end:::
    :::column span="2":::
-      Enter `validate` to find instances that contain the word *validate*.
+      `validate` finds instances that contain the word *validate*.
    :::column-end:::
 :::row-end:::
 ---
@@ -102,7 +102,7 @@ The following features apply to all searches - work items, code, wiki, and packa
       Search based on an exact match, enclosed in double-quotes.
    :::column-end:::
    :::column span="2":::
-      Enter `"Client not found"` to find instances that contain the exact phrase match *Client not found*.
+      `"Client not found"` finds instances that contain the exact phrase match *Client not found*.
    :::column-end:::
 :::row-end:::
 ---
@@ -118,7 +118,9 @@ The following features apply to all searches - work items, code, wiki, and packa
       - You can use more than one wildcard to match more than one character.
    :::column-end:::
    :::column span="2":::
-      Specify `alpha?version` to find instances of alpha1version and alphaXversion. Specify `Browser*` to find instances of BrowserEdge, BrowserIE, and BrowserFirefox. `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.
+      - `alpha?version` finds instances of alpha1version and alphaXversion. 
+      - `Browser*` finds instances of BrowserEdge, BrowserIE, and BrowserFirefox. 
+      - `CodeSenseHttp*` finds files containing words that start with *CodeSenseHttp*, such as CodeSenseHttpClient and CodeSenseHttpClientTest.
    :::column-end:::
 :::row-end:::
 ---
@@ -145,12 +147,13 @@ The following features apply to all searches - work items, code, wiki, and packa
       **Proximity** 
    :::column-end:::
    :::column span="2":::
-      You can search for files based on the term vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). By default, proximity search looks for terms within five tokens distance
+      - Search for files based on vicinity using proximity operators: NEAR, BEFORE, and AFTER (must be uppercase). 
+      - By default, proximity search looks for terms within five tokens distance.
    :::column-end:::
    :::column span="2":::
-      - BEFORE: term1 BEFORE term2 - returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. 
-      - AFTER: term1 AFTER term2 - returns the same results as term2 BEFORE term1. 
-      - NEAR: term1 NEAR term2 - returns all files where term1 is within five token distance from term2 in any direction. term1 NEAR term2 returns the same results as term1 BEFORE term2 OR term2 BEFORE term1.
+      - `term1 BEFORE term2` returns all files where term1 occurs BEFORE term2 within a distance of five tokens between them. 
+      - `term1 AFTER term2` returns the same results as term2 BEFORE term1. 
+      - `term1 NEAR term2` returns all files where term1 is within five token distance from term2 in any direction. `term1 NEAR term2` returns the same results as `term1 BEFORE term2` OR `term2 BEFORE term1`.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -160,10 +163,15 @@ The following features apply to all searches - work items, code, wiki, and packa
       **Special characters** 
    :::column-end:::
    :::column span="2":::
-      You must escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes " and ". You can include special characters in a search string, or search specifically for special characters, according to the following rules: CodeA23?R finds files containing words that start with CodeA23, have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   Search for any special character that isn't a part of the query language. For example, excluding the characters: ( )[]*?) as either a simple search string or a phrase search string. For example, react-redux or "react-redux" will produce the same results. Search for a special character that is a part of the query language (: () []*?) by enclosing the search string within double-quotes. 
+      - Escape the special characters `(`, `)`, `[`, `]`, `:`, `*`, and `?` by enclosing them in a phrase delimited with double-quotes. 
+      - Include special characters in a search string, or search specifically for special characters, according to the following rules: 
+        - CodeA23?R finds files containing words that start with CodeA23
+        - Have any alphanumeric character next, and end with R. For example, CodeA234R and CodeA23QR.   
+      - Search for any special character that isn't a part of the query language.   
    :::column-end:::
    :::column span="2":::
-      `"flatten()"` will find the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. `"\"react-redux\""` will find the literal string "react-redux". 
+      - `"flatten()"` finds the literal string *flatten()*. Search for a literal occurrence of the double-quote character *"* by preceding it with the escape character `\` and enclosing the search string in double-quotes. 
+      - `"\"react-redux\""` finds the literal string "react-redux". 
    :::column-end:::
 :::row-end:::
 ---
@@ -190,7 +198,7 @@ Start searching across all your work items over all your projects with a keyword
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the semantic search, and select _Enter_ or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
+1. Choose any **Boards** page, enter a keyword or phrase in the semantic search, and select **Enter** or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
 
    :::image type="content" source="media/get-started/work-item-search-vert.png" alt-text="Project semantic search":::
 
@@ -203,9 +211,7 @@ Start searching across all your work items over all your projects with a keyword
 
 3. Select a snippet of a work item to display it in the window on the right side of your screen. 
   
-   Open the search results in a new browser tab from the semantic search by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting ![start search](../search/media/shared/start-search-icon.png) start search.
-
-4. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+4. Open the search results in a new browser tab from the semantic search: Select **Ctrl** + **Enter** or hold **Ctrl** and select ![start search](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select **Ctrl** + **Shift** + **Enter** to switch the focus to the new browser tab. 
 
 ::: moniker-end
 
@@ -215,20 +221,17 @@ Start searching across all your work items over all your projects with a keyword
 
    ![The Work item search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
-2. Enter a search string in the text box, and select _Enter_ or  
-   
-   ![starting search icon](../search/media/shared/start-search-icon.png) start search. 
+2. Enter a search string in the text box, and select **Enter** or ![starting search icon](../search/media/shared/start-search-icon.png) start search. 
 
 3. Search results display in a snippet view where the matches found are shown in bold.
 
    ![Search results](../search/media/work-item-search-get-started/results-matching-previous-versions.png)
 
-   This full text search uses simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" will also find instances of the word "updated" and "update". Searches aren't case-sensitive.
+   This full text search uses simple search strings for words or phrases. Work item search matches derived forms of your search terms. For example, a search for "updating" also finds instances of the word "updated" and "update". Searches aren't case-sensitive.
 
 4. Select a snippet of a work item to display it in the right window. 
   
-   Open the search results in a new browser tab from semantic search by selecting _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![the start search icon](../search/media/shared/start-search-icon.png) icon. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+5. Open the search results in a new browser tab from semantic search. Select **Ctrl** + **Enter** or hold **Ctrl** and select ![the start search icon](../search/media/shared/start-search-icon.png) start search. In Google Chrome, select **Ctrl** + **Shift** + **Enter** to switch the focus to the new browser tab. 
 
 ::: moniker-end
 
