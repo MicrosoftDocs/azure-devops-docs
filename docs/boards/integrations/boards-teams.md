@@ -8,7 +8,7 @@ ms.reviewer: karrg
 ms.author: karrg
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/09/2020
+ms.date: 04/14/2021
 ---
  
 # Azure Boards with Microsoft Teams
