@@ -56,7 +56,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 ## Build and publish Docker image to Azure Container Registry
 
-To complete this section successfully, you will need to have an [Azure Container Registry]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry)). Make sure you finished the step outlined in the prerequisites.
+To complete this section successfully, you will need to have an [Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry). Make sure you finished the step outlined in the prerequisites.
  
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
