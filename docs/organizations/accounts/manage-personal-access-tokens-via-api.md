@@ -39,9 +39,9 @@ The Microsoft Authentication Library (MSAL) includes multiple compliant authenti
 > "On-behalf-of application" solutions (such as the “client credential” flow) and any authentication flow that does not issue an Azure AD access token is not valid for use with this API.  If multi-factor authentication is enabled in your Azure AD tenant, you must definitely use the MSAL “authorization code” flow.  
 
 To use the MSAL library to automatically acquire and refresh Azure AD access tokens, you must: 
-1. [Have an Azure AD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
-2. [Register an application in their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
-3. [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
+* [Have an Azure AD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
+* [Register an application in their Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
+* [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
 
 > [!CAUTION]
 > Having an Azure AD tenant with an active Azure subscription is a prerequisite for using this API.
@@ -71,37 +71,33 @@ To follow this approach, follow the **Quickstarts** instructions for the applica
 #### Example: Get started with a Python Flask Quickstart application
 1. Once you've registered your application in an Azure AD tenant that has an active Azure subscription, navigate to your registered application under **Azure Active Directory** -> **App Registrations** in the [Azure portal](https://portal.azure.com/).
    
-   ![Open "Azure Active Directory" -> "App Registrations"](./media/manage-personal-access-tokens-via-api/step1-aad-app-registrations.png)
+   ![Open "Azure Active Directory" -> "App Registrations"](./media/manage-personal-access-tokens-via-api/step-1-azure-ad-app-registrations.png)
 
 2. Select your application and navigate to **API Permissions**.
    
-   ![Select your application and navigate to "API Permissions"](./media/manage-personal-access-tokens-via-api/step2-api-permissions.png)
+   ![Select your application and navigate to "API Permissions"](./media/manage-personal-access-tokens-via-api/step-2-api-permissions.png)
 
 3. Select **Add a permission** and select **Azure DevOps** -> check **user_impersonation** -> select **Add permissions**.
    
-   ![Add the "Azure DevOps" -> "user_impersonation" permission](./media/manage-personal-access-tokens-via-api/step3-add-ado-permissions.png)
+   ![Add the "Azure DevOps" -> "user_impersonation" permission](./media/manage-personal-access-tokens-via-api/step-3-add-azure-devops-permissions.png)
 
 4. Select **Quickstart** from the left navigation panel.
    
 5. Select your application type: for Python Flask, select **Web application**.
 
-    ![Select the "Web application" type](./media/manage-personal-access-tokens-via-api/step5-select-app-type.png)
-
-6. Select your application platform.
+6. Select your application platform. For this tutorial, select "Python".
    
-    ![Select the "Python" application platform](./media/manage-personal-access-tokens-via-api/step6-select-app-platform.png)
-
 7. Make sure you've met the necessary prerequisites, then allow Azure portal to make the necessary changes to configure your application.  The **reply URL** will be the redirect URL that was set at application creation + “/getAToken”.
    
-    ![Allow the Azure portal to make the necessary changes to configure your application](./media/manage-personal-access-tokens-via-api/step7-allow-portal-configuration.png)
+    ![Allow the Azure portal to make the necessary changes to configure your application](./media/manage-personal-access-tokens-via-api/step-7-allow-portal-configuration.png)
 
 8. Download the Quickstart application and extract the files.
 
-    ![Download the Quickstart application and extract the files](./media/manage-personal-access-tokens-via-api/step8-download-and-extract.png)
+    ![Download the Quickstart application and extract the files](./media/manage-personal-access-tokens-via-api/step-8-download-and-extract.png)
 
 9.  Install the application requirements and run the application to ensure you have all necessary dependencies.  The application is initially configured to hit an endpoint in the Microsoft Graph API. Learn how to change this endpoint to the PAT Lifecycle Management API base endpoint by following the configuration instructions in the following section. 
     
-    ![Install the application requirements and run the application to ensure you have all necessary dependencies](./media/manage-personal-access-tokens-via-api/step9-install-and-run.png)
+    ![Install the application requirements and run the application to ensure you have all necessary dependencies](./media/manage-personal-access-tokens-via-api/step-9-install-and-run.png)
 
 
 ### Configure a Quickstart application
@@ -253,9 +249,7 @@ To learn more about the endpoints, what parameters they accept, and what is retu
 **A:**  Unfortunately, this API is only available to users that are part of an Azure AD tenant with an active Azure subscription.
 
 ### Q: Can I get an example of this sample application for another language/framework/application type?
-**A:** We love that you want to use the API in your language of choice! We’re looking to add alternative GitHub samples in other languages soon. In the meantime, if you have a request for an example, head over to our [Dev Community](https://developercommunity.visualstudio.com/search?space=21) to see if someone else has an example to share. 
-
-If you have a sample application that you’d like to share to the larger Azure DevOps audience, [let us know](mailto:angelwong@github.com) and we can look into circulating it on these docs more widely!
+**A:** We love that you want to use the API in your language of choice! If you have a request for an example, head over to our [Dev Community](https://developercommunity.visualstudio.com/search?space=21) to see if someone else has an example to share. If you have a sample application that you’d like to share to the larger Azure DevOps audience, [let us know](mailto:ado-identity@github.com) and we can look into circulating it on these docs more widely!
 
 ### Q: What is the difference between this token API and the token admin API?
 **A:** This [token API](https://docs.microsoft.com/rest/api/azure/devops/tokens/pats) and the [token admin API](https://docs.microsoft.com/rest/api/azure/devops/tokenadmin/), while similar, serve different use cases and audiences: 
@@ -270,11 +264,8 @@ To rotate your PAT, you need to:
 2. Create a new PAT with the old PAT’s metadata using a **POST** call, 
 3. Revoke the old PAT using a **DELETE** call
 
-We may consider updating the API to include a method for rotating PATs in future versions of the API.
-
 ### Q: I see a "Need admin approval" pop-up when I try to proceed with using this app. How can I use this app without admin approval?
 **A:** It seems that your tenant has set security policies which require your application to be granted permissions to access resources in the organization. At this moment, the only way to proceed with using this app in this tenant is to ask an admin to grant permission to the app before you can use it.
-
 
 
 ## Next steps
