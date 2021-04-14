@@ -60,6 +60,7 @@ sections:
           ::: moniker-end
 
           ::: moniker range=">= tfs-2013 <= tfs-2018"          
+
           ## To resolve an error message related to a plug-in 
 
           The process template used to create the project contains several XML plug-in files. If one of these files contains a format or other error, an error message appears.
@@ -68,6 +69,7 @@ sections:
           ::: moniker-end                    
 
           ::: moniker range=">= tfs-2013 <= tfs-2018"          
+
           ## To resolve a problem connecting to a server
 
           If you receive an error message about a problem connecting to a server, retrieving information from a server, or checking permissions to create projects, it could be caused by an incorrectly configured server in the deployment. This problem is especially common after a server move, failover, or other maintenance activity.
@@ -79,15 +81,24 @@ sections:
   - name: FAQs 
     questions:
       - question: |
+          ::: moniker range=">= tfs-2013 <= tfs-2018"
           How do I add my custom process template to the list?
+          ::: moniker-end
         answer: |
+          ::: moniker range=">= tfs-2013 <= tfs-2018"
+
           You'll need to first [upload your template](../../boards/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](../../reference/process-templates/customize-process.md).
           
           <a id="log-file">  </a>
-          
+          ::: moniker-end          
       - question: |
+          ::: moniker range=">= tfs-2013 <= tfs-2018"
+
           Where is the log file located?
+          ::: moniker-end
         answer: |
+          ::: moniker range=">= tfs-2013 <= tfs-2018"
+
           The log file is stored in $:\\Users\\*user name*\\AppData\\Local\\Temp and labeled vso\_TeamProjectCreation\_*yyyy\_mm\_dd\_hh\_mm\_ss*.log.
           
           The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. You can review the log entries to find network or file related issues by searching for **Exception** or **Error**.
