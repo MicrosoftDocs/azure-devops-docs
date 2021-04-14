@@ -15,9 +15,9 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-With Azure Web App for Containers, you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers.
+With Azure Web App for Containers, you can easily deploy and run container-based web apps on Windows and Linux. In this quickstart, we will use Azure Pipelines to build and deploy our sample application to Web App for Containers App service.
 
-Azure Pipelines enables us to implement a CI/CD workflow to automatically generates build Artifacts and trigger deployment to specific environments. 
+Azure Pipelines enables us to implement a CI/CD workflow to automatically generate build Artifacts and trigger deployment to specific environments. 
 
 :::image type="content" source="azure/media/vscode-git-ci-cd-to-azure.png" alt-text="CI/CD workflow":::
 
@@ -56,7 +56,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
 
 ## Build and publish Docker image to Azure Container Registry
 
-To complete this section successfully, you will need to have an Azure container registry. Make sure you finished the step outlined in the prerequisites.
+To complete this section successfully, you will need to have an [Azure Container Registry]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry)). Make sure you finished the step outlined in the prerequisites.
  
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -164,6 +164,14 @@ To complete this section successfully, you will need to have an Azure container 
 1. Hover over Stage 1 in your pipeline and select **Deploy** to queue and start the deployment.
 
     :::image type="content" source="media/deploy-docker-image.png" alt-text="Queue and deploy Docker image":::
+
+1. Your pipeline logs should look similar to the snapshot below. 
+
+    :::image type="content" source="media/pipeline-logs.png" alt-text="Pipeline logs":::
+
+1. Navigate to your newly deployed web app to verify your deployment.
+
+    :::image type="content" source="media/deployed-web-app.png" alt-text="Web app deployed. Hello World message":::
 
 ## Related articles
 
