@@ -96,13 +96,13 @@ Narrow the search to a specific location using the `proj`, `repo`, or `path` fil
 
 |**Usage**  |**Example**  |
 |---------|---------|
-|Find all occurrences of the word **QueueJobsNow** in the **Fabrikam** project.     | `QueueJobsNow proj:Fabrikam`        |
-|Find all occurrences of the word **QueueJobsNow** in the **Contoso** repository.    |  `QueueJobsNow repo:Contoso`       |
-|Find all occurrences of the word **QueueJobsNow** in the path **VisualStudio/Services/Framework** and its subpaths.  | `QueueJobsNow path:VisualStudio/Services/Framework`        |
+|Find all occurrences of the word *QueueJobsNow* in the Fabrikam project.     | `QueueJobsNow proj:Fabrikam`        |
+|Find all occurrences of the word *QueueJobsNow* in the Contoso repository.    |  `QueueJobsNow repo:Contoso`       |
+|Find all occurrences of the word *QueueJobsNow* in the path *VisualStudio/Services/Framework* and its subpaths.  | `QueueJobsNow path:VisualStudio/Services/Framework`        |
 |Enclose the argument to the filter in double-quotes if it contains a space.   | `QueueJobsNow path:"VisualStudio/Windows Phones and Devices/Services"`        |
-|Find all occurrences of the word **QueueJobsNow** in all files where the filename starts with **queueRegister**. | `QueueJobsNow file:queueRegister*`         |
-|Find all files with the name QueueRegister without an extension.    | Use quotes to find files without extensions: file:"queueRegister"       |
-|Find all occurrences of the word **QueueJobsNow** in only C# source files. A plain text search string that doesn't include file type functions will also find files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
+|Find all occurrences of the word *QueueJobsNow* in all files where the filename starts with *queueRegister*. | `QueueJobsNow file:queueRegister*`         |
+|Find all files with the name *QueueRegister* without an extension. Use quotes to find files without extensions.   |  `file:"queueRegister"`       |
+|Find all occurrences of the word *QueueJobsNow* in only C# source files. A plain text search string that doesn't include file type functions also finds files where the string matches part of the filename.  |  `QueueJobsNow ext:cs`       |
 
 
 ## Find related items or other terms
@@ -121,16 +121,15 @@ For more information about the following search functions, see [Get started with
 
 ## More examples of code search functions
 
-See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from the semantic search and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from the semantic search and select **Ctrl** + **Enter**. In Google Chrome, select **Ctrl** + **Shift** + **Enter** to switch the focus to the new browser tab. 
 
 
 |**Usage** |**Example** |
 |---------|---------|
 |Find all instances of "ToDo" comments in your code               |Select `comment:` and enter `todo`   |
 |Search in specific locations, such as within a particular path   |Use a search string such as `Driver path:MyShuttle/Server`    | 
-|Search for files by name or just by file extension    | For example, you could use `Driver file:GreenCabs.cs`. The search string `error ext:resx` could be useful if you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files. This search works without matching specific file type functions.        |
-|Combine two or more words by using Boolean operators   | `validate OR release`        |
-|Find an exact match to a set of words by enclosing your search terms in double-quotes.|`"Client not found"`|
+|Search for files by name or just by file extension    | `Driver file:GreenCabs.cs`. The search string `error ext:resx` could be useful if you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files. This search works without matching specific file type functions.        |
+
 
 ## Search Git projects and repositories
 

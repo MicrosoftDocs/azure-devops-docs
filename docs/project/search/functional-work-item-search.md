@@ -74,7 +74,7 @@ Select area paths in the tree to narrow your search if necessary.
 
 The selected projects are always at the top of the list. Notice that hit counts are also shown for projects that aren't selected. 
 
-Open the search results in a new browser tab from either the semantic search or by selecting _Ctrl+Shift+Enter_.
+Open the search results in a new browser tab from either the semantic search or by selecting **Ctrl** + **Shift** + **Enter**.
 
 ## Work item search best practices
 
@@ -100,23 +100,23 @@ You have two ways to find and list work items: managed queries and semantic sear
 ---
 :::row:::
    :::column span="1":::
-      - List items to perform bulk updates to fields  
-      - Review work that's in progress or recently closed    
-      - Triage work: set priority, review, update  
-      - Create a chart and add it to a dashboard    
-      - Create a chart to get a count of items or sum a field    
-      - Create a chart that shows a burndown or burnup over time   
-      - View a tree of parent-child related work items   
-      - List work items with link relationships    
+      - List items to perform bulk updates to fields.  
+      - Review work that's in progress or recently closed.    
+      - Triage work: set priority, review, update. 
+      - Create a chart and add it to a dashboard.    
+      - Create a chart to get a count of items or sum a field.    
+      - Create a chart that shows a burndown or burnup over time.   
+      - View a tree of parent-child related work items.   
+      - List work items with link relationships.    
       - List work items for a single project, multiple projects, or across all projects.    
    :::column-end:::
    :::column span="1":::
-      - Find a specific work item using its ID or a keyword   
-      - Find one or more work items across all projects in a fast, flexible manner  
-      - Perform full text search across all work item fields  
-      - Review work items assigned to a specific team member  
-      - Search against specific work item fields to quickly narrow down a list of work items  
-      - Determine what key words will support a managed search  
+      - Find a specific work item using its ID or a keyword.   
+      - Find one or more work items across all projects in a fast, flexible manner.  
+      - Perform full text search across all work item fields.  
+      - Review work items assigned to a specific team member.  
+      - Search against specific work item fields to quickly narrow down a list of work items.  
+      - Determine what key words will support a managed search.  
       - List work items for a single project, multiple projects, or across all projects.    
    :::column-end:::
 :::row-end:::
@@ -139,7 +139,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 	:::image type="content" source="media/get-started/search-work-vert.png" alt-text="Search from title bar":::    
 
-   The quick filters you can use are:
+   See the following quick filters that you can use:
 
    * `a:` for **Assigned to:** 
    * `c:` for **Created by:** 
@@ -150,7 +150,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
    :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter the name of a field":::
 
-   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
+   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as `tags:Critical` finds all work items tagged 'Critical'. 
 
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
@@ -167,10 +167,6 @@ For specific managed query examples, see [Query quick reference, Example queries
 
    ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
 
-8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
-
-   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
-
 ::: moniker-end
 
 ::: moniker range=" <= tfs-2018"
@@ -179,7 +175,7 @@ For specific managed query examples, see [Query quick reference, Example queries
    
    :::image type="content" source="media/get-started/work-item-search-filters.png" alt-text="Search from the title bar":::   
 
-   The quick filters you can use are:
+   See the following quick filters that you can use:
 
    * `a:` for **Assigned to:** 
    * `c:` for **Created by:** 
@@ -207,10 +203,6 @@ For specific managed query examples, see [Query quick reference, Example queries
 
    ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
 
-8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
-
-   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
-
 ::: moniker-end
 
 ### Quick filters for matching in specific fields
@@ -219,10 +211,10 @@ Quick inline search filters let you refine work items in seconds. The dropdown l
 
 |**Usage**  |**Example** |
 |---------|---------|
-| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |**tags:Critical** finds work items having a field 'tags' containing the term 'Critical'         |
-|Use multiple inline search filters to scope your search by any work item field, including custom fields.    | **t: Bug path:"project\search"** finds all bugs in the area path "project\search"        |
-|Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week       |
-|For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com"        |
+| Scope your search terms to match in any work item field including custom fields. Enter the field name followed by the search terms.   |`tags:Critical` finds work items having a field 'tags' containing the term 'Critical'.         |
+|Use multiple inline search filters to scope your search by any work item field, including custom fields.    | `t: Bug path:"project\search"` finds all bugs in the area path "project\search".        |
+|Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer, and float fields.   |  `t: Bug CreatedDate> @Today-7` finds all bugs created in the last week.       |
+|For the search query that contains multiple terms and users looking for exact match, embed the search term inside `" "`   | `BuildPath: "tools.demoproject.com"` finds all work items that necessarily contain the path "tools.demoproject.com".        |
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
