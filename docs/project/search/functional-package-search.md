@@ -19,6 +19,12 @@ Package Search is available to all users of Azure DevOps. For information on sem
 
 Package Search is automatically available to users of Azure DevOps.
 
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+- Keyword
+- Exact match
+- Wildcard
+- Boolean operators
+- Proximity
 ## View and filter search results
 
 1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
@@ -30,7 +36,7 @@ Package Search is automatically available to users of Azure DevOps.
 
 	:::image type="content" source="media/shared/pkgsrch-results-filters.png" alt-text="Selector drop-down lists":::
 
-3. By switching pivots, quickly [search code](functional-code-search.md) that contains the same search string. Or, search for the same string in your [wikis](../wiki/search-wiki.md), [work items](functional-work-item-search.md), or [packages](#start-searching-packages-or-artifacts).
+3. By switching pivots, quickly [search code](functional-code-search.md) that contains the same search string. Or, search for the same string in your [wikis](../wiki/search-wiki.md), [work items](functional-work-item-search.md), or packages.
 
 	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
 

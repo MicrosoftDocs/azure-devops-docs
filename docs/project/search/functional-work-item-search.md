@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/13/2021
+ms.date: 04/14/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -33,7 +33,12 @@ By using Work Item Search, you can do the following tasks and more.
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
 |[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
 
-
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+- Keyword
+- Exact match
+- Wildcard
+- Boolean operators
+- Proximity
 ## Prerequisites
 
 - Every user can use semantic Search, which includes work item and wiki Search.
