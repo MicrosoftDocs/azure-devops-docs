@@ -184,6 +184,9 @@ For example, the following condition indicates that the Justification field is h
 
 :::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
+
+[!INCLUDE [temp](../../../boards/includes/note-work-item-caching-rules-simple.md)]
+
 ::: moniker-end
 
 
@@ -213,7 +216,7 @@ For example, the following condition indicates that the Justification field is h
 - [Apply rules to workflow states](apply-rules-to-workflow-states.md)  
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
-
+- [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  
 
 
 <!---
