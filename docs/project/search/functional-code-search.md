@@ -8,34 +8,26 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 04/01/2021
+ms.date: 04/13/2021
 ---
 
 # Functional code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-By using Code Search, you can do the following tasks and more.
-
-
-|**Search task**  |**Description** |
-|---------|---------|
-|**[Search across all of your projects](#functions-to-select-projects-repositories-paths-and-files)**  | Search in your own code base and your partner teams' code bases. Use cross-project searches over all the code in your Azure DevOps instance to search across your entire codebase. Narrow your search by using project, repository, path, file name, and other filter operators.        |
-|**[Find specific types of code](#functions-to-find-specific-types-of-code)**  |  Find definitions, references, functions, comments, strings, and namespaces. Use Code Search to narrow your results to exact code type matches. Go quickly to a method definition to understand its implementation. Apply the definition filter or scope the search to references to view calls and maximize code reuse.       |
-|**[Easily drill down or widen your search](#find-related-items-or-other-terms)**   | When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files. Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references - directly from inside a file.        |
-
-
-<a name="syntaxdetails"></a>
+By using the functional Code Search, you can do the following tasks and more. For information on semantic search functions, see [Get started with Search](get-started-search.md).
 
 ## Prerequisites
 
-To use Code Search, you must have at least a **Basic** access. **Stakeholders** don't have access to code, and so don't have access to Code Search. 
+- To use Code Search, you must have at least a **Basic** access. 
+- **Stakeholders** don't have access to code, and therefore don't have access to Code Search. 
+- When searching across the organization or collection, only results for which a project member has access are listed.
 
-## Get started searching code
+## Start searching code
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos** > **Files** or another page under **Code**. Enter a keyword or phrase in the search box, and then select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
+To start your search, choose **Repos** > **Files** or another page under **Code**. Enter a keyword or phrase in the semantic search, and then select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search. 
 
 :::image type="content" source="../../organizations/public/media/search/code-search-vert.png" alt-text="Code Search box":::
  
@@ -45,7 +37,7 @@ To start your search, choose **Repos** > **Files** or another page under **Code*
 
 Code Search requires the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search). If it isn't installed, request that a member of your Project Collection Administrators group [install it](../..//marketplace/install-extension.md).  
 
-1. In the search box, check that the text displays _Search code_. If it doesn't, select it.
+1. In the semantic search, check that the text displays _Search code_. If it doesn't, select it.
 
    :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-outlined.png" alt-text="Switch between searching for code and work items":::
 
@@ -61,13 +53,6 @@ Code Search requires the [Code Search extension](https://marketplace.visualstudi
 - Find more information about an item of interest faster and with minimal efforts. When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files.
 - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 - Go quickly to the implementation of, for example, an API your code might be taking dependency on by narrowing down your results to exact code type matches. Use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. 
-
-## Syntax for simple and compound searches
-
-- Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
-- Wrap each word in double-quotes to treat them as separate search terms.
-- Separate words with spaces (not wrapped), so Search assumes the `AND` operator between the words.
-- Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
 
 > [!NOTE]
 > You can't search code in forked repositories. 
@@ -86,15 +71,51 @@ In a TFVC project, you see a list of folder paths in that project for which you 
 > [!TIP]
 > Code Search remembers your last settings, such as the project and repository or path that you searched in. Clear the checkboxes to search across all projects easily with the **Clear all** links when you want to search in a different scope. In the results pane, Code Search highlights up to the first 100 hits or matches found in the target files.  
 
+## View and filter search results
+
 <a name="codefunctions"></a>
+
+The search page shows a list of the matching code files. The selected file has all instances of the search string highlighted. If you see a list of work items, ensure **Code** is selected in the top left.
+	
+  :::image type="content" source="media/get-started/code-search-example.png" alt-text="Code search results example":::
+
+1. Assemble more complex search string using the operators and functions listed in the drop-down menu. Select the filter function or code type that you want to include in your search string from the list. The,n enter the criteria value.
+
+   :::image type="content" source="media/get-started/code-search-filters.png" alt-text="Code search bar":::
+
+You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. You can also use proximity operators like NEAR, BEFORE, and AFTER to search for files in the vicinity of a term. See the following examples.
+
+|**Usage**  |**Example**  |
+|---------|---------|
+|Find all instances of "ToDo" comments in your code.   | select `comment:` and enter `todo`        |
+|Search in specific locations, such as within a particular path.    |  use a search string such as `Driver path:MyShuttle/Server`    |
+|Search for files by name, such as `Driver file:GreenCabs.cs`, or just by file extension.    |The search string `error ext:resx` could be useful when you want to review all error strings in your code. Even if your plain text search string matches part of a filename, the file appears in the list of found files.         |
+|Combine two or more words by using Boolean operators.   | `validate OR release`        |
+|Find an exact match to a set of words by enclosing your search terms in double-quotes.   |  `"Client not found"`       |
+
+1. Widen your search to all projects or your entire organization. Narrow your search to specific areas and types of code by selecting from the lists at the top of the page.
+
+   ![Use drop-down lists to widen or narrow your search](media/code-search-get-started/select-projects.png)
+
+2. Use the tabs in the results page to view the history of the file and to compare versions of the file.
+
+   ![Use tabs to view history and compare files](media/code-search-get-started/compare-tab.png)
+
+3. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+
+   ![Open the file in Code Explorer](media/code-search-get-started/open-in-code-explorer.png)
+
+4. Quickly [search for work items](functional-work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
 
 ## Functions to find specific types of code
 
-As you type in the search box, select functions and keywords from the drop-down list to quickly create your query. Use the **Show more** link to display all the available functions and keywords. Mix and match the functions as required.
+As you type in the semantic search, select functions and keywords from the drop-down list to quickly create your query. Use the **Show more** link to display all the available functions and keywords. Mix and match the functions as required.
 
 You can also select one or a combination of filters from the list in the left column. Again, the **Show more** link displays all the available functions and keywords.
 
-Instead, you can type the functions and parameters directly into the search box. The following table shows the full list of functions for selecting specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
+Instead, you can type the functions and parameters directly into the semantic search. The following table shows the full list of functions for selecting specific types or members in your C#, C, C++, Java, and Visual Basic.NET code.
 
 | To find code where _findThis_ appears as a ... | ... search for argument **arg:**_findThis_ |
 | --- | --- |
@@ -178,7 +199,7 @@ For more information about the following search functions, see [Get started with
 
 ## More examples of code search functions
 
-See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from either search box and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
+See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from the semantic search and select _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus to the new browser tab. 
 
 
 |**Usage** |**Example** |

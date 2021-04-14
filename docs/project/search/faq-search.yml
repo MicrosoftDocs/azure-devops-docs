@@ -1,17 +1,17 @@
 ### YamlMime:FAQ
 metadata:
-  title: Search FAQs 
+  title: FAQs semantic search
   description: Get answers to common questions about searching in Azure DevOps. 
   titleSuffix: Azure Boards
   ms.custom: boards-queries
   ms.technology: devops-agile
-  ms.author: kaelli
-  author: KathrynEE
+  ms.author: chcomley
+  author: chcomley
   ms.topic: troubleshooting
   monikerRange: '>= tfs-2017'
-  ms.date: 04/01/2021
+  ms.date: 04/14/2021
 
-title: Search FAQs 
+title: Semantic search FAQs 
 
 summary: | 
   **Azure Devops Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
@@ -60,14 +60,18 @@ sections:
         Specify the History field. For example: History:Keyword.
     - question: Why does Code search display when I'm in Work Item view?
       answer: |
-        You can toggle between Work Item and Code Search entities by using the picker next to the search box. 
+        You can toggle between Work Item and Code Search entities by using the picker next to the semantic search. 
   - name: Package search
 
     questions:
     
     - question: How do I search internal NuGet packages published company-wide?
       answer: |
-        Go to [Discover in Azure DevOps(https://aka.ms/discover), enter your query and search, and then choose the **Packages** pivot. You can also navigate from your organization's landing page. At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.       
+        1. Go to [Discover in Azure DevOps(https://aka.ms/discover).
+        2. Enter your query and search.
+        3. Choose the **Packages** pivot. 
+        You can also navigate from your organization's landing page. 
+        At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.       
 
   - name: On-premises, Azure DevOps Server
 
@@ -75,8 +79,8 @@ sections:
     
     - question: How do I get the search box to display?
       answer: |   
-       1. The search box is shown only in the context of a project page. Go to a project and check if the search box is displayed at the top right. 
-       2. If the search box isn't shown, verify that the extension is installed for the collection. If not, see [Install and configure Search](install-configure-search.md).
+       1. The semantic search is shown only in the context of a project page. Go to a project and check if the semantic search is displayed at the top right. 
+       2. If you don't see the semantic search, verify that the extension is installed for the collection. If not, see [Install and configure Search](install-configure-search.md).
     - question: Why are no search results shown after installing or configuring Search?
       answer: |
        1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.

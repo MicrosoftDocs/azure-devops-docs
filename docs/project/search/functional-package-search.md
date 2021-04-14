@@ -7,40 +7,19 @@ ms.technology: devops-collab
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-monikerRange: 'azure-devops'
-ms.date: 04/01/2021
+monikerRange: '>= azure-devops-2020'
+ms.date: 04/13/2021
 ---
 # Functional artifact or package search
 
-[!INCLUDE [version-header](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-By using Package Search, you can do the following tasks.
-
-- **Search package by title and description**: Quickly and easily find relevant packages by using free text search on title and description. [Narrow your search by using Boolean operators](get-started-search.md#packages) and combine search criteria. 
-
-  :::image type="content" source="media/shared/pkg-srch-u2.png" alt-text="Web portal package search":::
-
-- **Search across all of your organization feeds**: Search feeds across the organization. Narrow your search by using feed, view, and package type filters. [Use wildcards to widen your search](get-started-search.md#packages-1) and Boolean operators to fine-tune it. 
-
-  :::image type="content" source="media/shared/pkg-srch-u1.png" alt-text="Web portal package search across organization feeds":::
+Package Search is available to all users of Azure DevOps. For information on semantic search functions, see [Get started with semantic search](get-started-search.md).
 ## Prerequisites
 
-Package Search is automatically available to users of Azure DevOps Services.
+Package Search is automatically available to users of Azure DevOps.
 
-## Start searching packages or artifacts
-
-Start searching across all your packages and artifacts inside your organization.
-
-1. Open the **Azure Artifacts** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
-
-2. Choose ![start search icon](media/shared/start-search-icon-new.png) **Search** at the top right of the window to show the search textbox.
-
-3. Enter a search string in the textbox, and select *Enter* or choose :::image type="icon" source="../search/media/shared/start-search-icon.png" border="false"::: start search.
-
-   Search results display with matches to your query shown in bold. The following example shows a full text search that uses simple search strings for words or phrases. 
-
-   :::image type="content" source="media/shared/pkgsrch-results.png" alt-text="Package search results":::
-### Sort and view package results
+## View and filter search results
 
 1. Widen your search across all feeds, or narrow it to specific views and package types. The Views filter only appears if a single feed is selected from Feeds filter.
    Use the filter to show the selector lists.
@@ -54,23 +33,16 @@ Start searching across all your packages and artifacts inside your organization.
 3. By switching pivots, quickly [search code](functional-code-search.md) that contains the same search string. Or, search for the same string in your [wikis](../wiki/search-wiki.md), [work items](functional-work-item-search.md), or [packages](#start-searching-packages-or-artifacts).
 
 	:::image type="content" source="media/shared/pkgsrch-other.png" alt-text="Search for code or wiki or work items containing the same search string":::
-## Syntax for simple and compound searches
-
-- Use simple search strings for words or phrases. The default is a whole word search; for example, a search for "valid" won't find instances of the word "validation".
-- Wrap each word in double-quotes to treat them as separate search terms.
-- Separate words with spaces (not wrapped), so Search assumes the `AND` operator between the words.
-- Escape the special characters, `(`,  `)`, `[`, `]`, `:`, `*`, and `?`, by enclosing them in a phrase delimited with double-quotes like `"` and `"`.
 
 By default, you search within all feeds of the organization, no matter which project you're in. 
 
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
-- Keyword
-- Exact match
-- Wildcard
-- Wildcard in combination
-- Boolean operators
-- Proximity
-- Special characters
+The Views filter only appears if a single feed is selected from Feeds filter. Use this filter to show the selector lists.
+
+Select :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter** and the function that you want to include in your search string from the list. Then, enter your criteria. 
+
+:::image type="content" source="media/shared/show-filters.png" alt-text="Show filter panel button.":::
+
+Add more criteria by using the operators and functions listed in :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**.
 
 ## Search Packages with REST API
 

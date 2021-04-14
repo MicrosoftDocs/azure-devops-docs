@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/01/2021
+ms.date: 04/13/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Work Item Search is available as a built-in extension in Azure DevOps. 
+Work Item Search is available as a built-in extension in Azure DevOps. For information on semantic search functions, see [Get started with Search](get-started-search.md).
 
 ::: moniker range=" azure-devops"
 
@@ -36,12 +36,12 @@ By using Work Item Search, you can do the following tasks and more.
 
 ## Prerequisites
 
-- Every user can use the basic Search function, which includes work item and wiki Search.
-- You must be a Stakeholder to do semantic searches on work items, wiki, and packages.
+- Every user can use semantic Search, which includes work item and wiki Search.
+- You must be a **Stakeholder** to do semantic searches on work items, wiki, and packages.
 
 ### Search by work item ID
 
-Enter the work item ID in the search box in the Azure DevOps title bar to quickly go to it. Searching for a work item ID opens the work item in a 
+Enter the work item ID in the Azure DevOps title bar to quickly go to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
 ::: moniker range=">= azure-devops-2019"
@@ -69,7 +69,7 @@ Select area paths in the tree to narrow your search if necessary.
 
 The selected projects are always at the top of the list. Notice that hit counts are also shown for projects that aren't selected. 
 
-Open the search results in a new browser tab from either search box by selecting _Ctrl+Shift+Enter_.
+Open the search results in a new browser tab from either the semantic search or by selecting _Ctrl+Shift+Enter_.
 
 ## Work item search best practices
 
@@ -78,7 +78,7 @@ Open the search results in a new browser tab from either search box by selecting
 
 #### Semantic search vs. managed work item queries
 
-You have two ways to find and list work items: managed queries and semantic searches. If you're looking for a single work item, use the search box. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
+You have two ways to find and list work items: managed queries and semantic searches. If you're looking for a single work item, use the semantic search. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
 
 > [!NOTE]    
 > With semantic search, you search against a more fully indexed set of fields than that of managed queries.  
@@ -126,7 +126,89 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 <a name="quickfilters"></a>
 
-## Quick filters for matching in specific fields
+## View and filter search results
+
+::: moniker range=">= azure-devops-2019"
+
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
+
+	:::image type="content" source="media/get-started/search-work-vert.png" alt-text="Search from title bar":::    
+
+   The quick filters you can use are:
+
+   * `a:` for **Assigned to:** 
+   * `c:` for **Created by:** 
+   * `s:` for **State** 
+   * `t:` for **Work item type**
+ 
+2. Start entering the name of a field in your work items; for example, enter `ta`.
+
+   :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter the name of a field":::
+
+   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
+
+3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
+
+4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
+5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
+
+   ![Showing the filter lists](media/shared/show-filters.png)    
+
+6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+   ![Selector drop-down lists](media/work-item-search-get-started/area-selectors.png)    
+
+7. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
+
+8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
+
+::: moniker-end
+
+::: moniker range=" <= tfs-2018"
+
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name to search for all items assigned to that user.
+   
+   :::image type="content" source="media/get-started/work-item-search-filters.png" alt-text="Search from the title bar":::   
+
+   The quick filters you can use are:
+
+   * `a:` for **Assigned to:** 
+   * `c:` for **Created by:** 
+   * `s:` for **State** 
+   * `t:` for **Work item type**<p />
+ 
+2. Start entering the name of a field in your work items; for example, enter `ta`.
+
+   :::image type="content" source="media/work-item-search-get-started/dyna-dropdown.png" alt-text="Quick filters as you enter a field name":::   
+
+   The dropdown list shows work item field name suggestions that match user input. These suggestions help you complete the search faster. For example, a search such as **tags:Critical** finds all work items tagged 'Critical'. 
+
+3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
+
+4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
+5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
+
+   ![Showing the filter lists](media/shared/show-filters.png)    
+
+6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+
+   ![Selector drop-down lists](media/work-item-search-get-started/area-selectors.png)    
+
+7. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
+
+8. Quickly [search for code](functional-code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+
+   ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
+
+::: moniker-end
+
+### Quick filters for matching in specific fields
 
 Quick inline search filters let you refine work items in seconds. The dropdown list of suggestions helps complete your search faster. Mix and match the functions to create quick powerful searches. 
 
@@ -141,7 +223,7 @@ Quick inline search filters let you refine work items in seconds. The dropdown l
 
 <a name="locationfunctions"></a>
 
-## Scope projects and area and iteration paths using filters 
+### Scope projects and area and iteration paths using filters 
 
 Filters make it easy to narrow the search to specified projects and area paths.
 
@@ -165,15 +247,6 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 
 > [!TIP]
 > Search remembers the state of the filter pane, configuration of the work item view pane, and its position between sessions as part of your user preferences.
-
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
-- Keyword
-- Exact match
-- Wildcard
-- Wildcard in combination
-- Boolean operators
-- Proximity
-- Special characters
 
 ## Search Work Items with REST API
 
