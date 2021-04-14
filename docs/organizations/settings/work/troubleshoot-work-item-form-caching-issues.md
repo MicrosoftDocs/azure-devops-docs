@@ -1,7 +1,7 @@
 ---
-title: Work item form IndexDB caching issues
+title: Troubleshoot Work item form caching issues
 titleSuffix: Azure Boards
-description: Work item cache rules cause delay in some server-side rule evaluations  
+description: Resolve work item cache rules that cause delay in server-side rule evaluations  
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
@@ -10,7 +10,7 @@ monikerRange: "<= azure-devops"
 ms.date: 04/12/2021
 ---
 
-# Work item form IndexDB caching issues
+# Troubleshoot work item form caching issues
 
 [!INCLUDE [temp](../../../boards/includes/version-azure-boards-plus-2018-2020.md)]
  
