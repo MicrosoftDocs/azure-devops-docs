@@ -23,8 +23,8 @@ If you're working within Microsoft tools, then your Microsoft account (MSA) or A
 PATs are easy to create when you need them and easy to revoke when you don’t. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
 
 You can create and manage your PATs through one of two ways:
-1. the user interface in your user settings, which is described in detail below, and
-2. via the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md).
+* the user interface in your user settings, which is described in detail below, and
+* through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md).
 
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
