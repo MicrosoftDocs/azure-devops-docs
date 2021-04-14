@@ -582,7 +582,7 @@ The Agile process bug work item type previously had a rule which reassigned the 
 
 - [Customize a workflow](customize-process-workflow.md) 
 - [Add a custom rule](custom-rules.md)  
-- [Work item form caching](work-item-form-caching.md)  
+- [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  
 
 
 

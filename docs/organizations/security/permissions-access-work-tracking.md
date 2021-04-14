@@ -366,4 +366,4 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Manage teams and configure team tools](../settings/manage-teams.md)
-- [Work item form IndexDB caching issues](../settings/work/work-item-form-caching.md)  
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  
