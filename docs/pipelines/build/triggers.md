@@ -45,7 +45,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 ## Branch consideration for triggers in YAML pipelines
 
-YAML pipelines can have different versions of the pipeline in different branches, which can affect which version of the version of the pipeline's triggers are evaluated and and which version of the pipeline should run.
+YAML pipelines can have different versions of the pipeline in different branches, which can affect which version of the pipeline's triggers are evaluated and which version of the pipeline should run.
 
 | Trigger type | Pipeline YAML version |
 |--------------|---------|
