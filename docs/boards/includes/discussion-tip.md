@@ -28,7 +28,7 @@ The rich text editor tool bar displays below the text entry area when you click 
 > ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/discussion-rich-text-editor-toolbar.png) 
 
 > [!NOTE]  
-> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
+> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](/azure/devops/boards/queries/history-and-auditing). The full content of the text entered into the Discussion text box is added to the History field. 
 
 ### Mention someone, a group, work item, or pull request (:::image type="icon" source="/azure/devops/media/icons/at-mention.png" border="false":::, :::image type="icon" source="/azure/devops/media/icons/work-id.png" border="false":::, or ![pull-request id icon](/azure/devops/media/icons/pr-id.png))
 
@@ -76,7 +76,7 @@ A full audit trail of all  edited and deleted comments is maintained in the **Hi
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-Use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Use the [**@mention** control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 To reference a work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
