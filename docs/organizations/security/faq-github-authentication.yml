@@ -1,16 +1,16 @@
 ### YamlMime:FAQ
 metadata:
-  title: Authenticating and inviting GitHub users frequently asked questions
+  title: Authenticate & invite GitHub user FAQs
   description: Learn about frequently asked questions (FAQs) on authenticating with a GitHub identity and inviting other GitHub users to Azure DevOps.
   ms.technology: devops-security
   ms.assetid: 
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.author: chcomley
   author: chcomley
   ms.date: 06/04/2020
   monikerRange: 'azure-devops'
     
-title: Authenticating & inviting GitHub users FAQs
+title: Authenticate & invite GitHub user FAQs
 summary: |
   [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
   
