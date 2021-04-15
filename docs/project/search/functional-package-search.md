@@ -19,7 +19,7 @@ Package Search is available to all users of Azure DevOps. For information on sem
 
 Package Search is automatically available to users of Azure DevOps.
 
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features-usage-and-examples).
 - Keyword
 - Exact match
 - Wildcard
