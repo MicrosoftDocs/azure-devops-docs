@@ -13,11 +13,11 @@ ms.date: 04/14/2021
 
 # Set Git repository permissions 
 
-[!INCLUDE [version-tfs-2015-cloud](../includes/version-tfs-2015-cloud.md)]
+[!INCLUDE all-versions](../../includes/version-all.md)]
 
-You grant or restrict access to repositories to lock down who can contribute to your source code and manage other features. By default, members of the project Contributors group have permissions to contribute to a repository. This includes the ability to  create branches, create tags, and manage notes. 
+You grant or restrict access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
 
-You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](/azure/devops/repos/git/branch-permissions) and [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies).
+Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](/azure/devops/repos/git/branch-permissions) and [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies).
 
 
 ## Prerequisites
@@ -39,7 +39,7 @@ To contribute to the source code, you must be granted **Basic** access level or 
 
 ## Default repository permissions  
 
-For a description of each security group and permission level, see [Permissions and group reference](../../organizations/security/permissions.md).  
+By default, members of the project Contributors group have permissions to contribute to a repository. This includes the ability to create branches, create tags, and manage notes. For a description of each security group and permission level, see [Permissions and group reference](../../organizations/security/permissions.md).  
 
 [!INCLUDE [temp](../../organizations/security/includes/code-git.md)]
 
@@ -51,7 +51,7 @@ For a description of each security group and permission level, see [Permissions 
 
 ## Open Security for a repository
 
-You can set the permissions for all Git repositories for a project, or for a single repository. You do both these tasks from **Project Settings>Repositories**. 
+You set Git repository permissions from **Project Settings>Repositories**. 
 
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
@@ -64,7 +64,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	:::image type="content" source="media/git-permissions/open-repositories-s-185.png" alt-text="Screenshot showing choosing Project settings>Repositories>Security.":::
 
-1.	Otherwise, to set permissions for a specific repository, choose (1)the repository and then choose (2) **Security**.
+1.	Otherwise, to set permissions for a specific repository, choose (1) the repository and then choose (2) **Security**.
 
 	:::image type="content" source="media/git-permissions/choose-git-repo-security-callouts.png" alt-text="Screenshot showing choosing Project settings>Choose a repository>Security.":::
 
@@ -132,25 +132,35 @@ You can grant or restrict access to a repository by setting the permission state
 
 ::: moniker range="azure-devops"
 
-## Change permissions for a default security group
+## Change permissions for a security group
+
+To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level). 
+
+1. To set permissions for a specific group, choose the group. For example, here we choose the Contributors group.
+
+	:::image type="content" source="media/git-permissions/choose-security-group.png" alt-text="Screenshot showing choosing Contributors group.":::
+
+1. Change one or more permissions. To grant a permissions, change **Not Set** to **Allow**. To restrict permissions, change **Allow** to **Deny**.   
+2. 
+	:::image type="content" source="media/git-permissions/change-permissions.png" alt-text="Screenshot showing three permissions changed for the Contributors group.":::
+
+1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
 
 
+## Set permissions for a specific user
 
-## Set permissions for a specific user or group
-
-1.  To set permissions for a specific user or group, enter the name of the user or group into the search filter and select from the identities that appear.  
+1.  To set permissions for a specific user, enter the name of the user  into the search filter and select from the identities that appear.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add user or group](media/git-permissions/add-user-group.png)  
 
 	Then make the changes to the permission set. 
 
-	> [!NOTE]  
-	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level)
+1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
 
-	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
- 
-	The changes are made automatically, no need to save your changes.  
+> [!NOTE]   
+> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+  
 
 ## Enable or disable inheritance for a specific repository
 
@@ -162,7 +172,6 @@ You can grant or restrict access to a repository by setting the permission state
 	To learn about inheritance, see [About permissions and groups, Inheritance and security groups](../../organizations/security/about-permissions.md#inheritance). 
 
 ::: moniker-end
-
 
 
 ## Related articles
