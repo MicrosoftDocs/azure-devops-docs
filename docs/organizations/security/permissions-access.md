@@ -167,12 +167,6 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 ::: moniker-end
 
-<!---
-From **Project Settings**, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
-
--->
-
-
 <a id="pipelines" />
 
 ::: moniker range=">= azure-devops-2019"

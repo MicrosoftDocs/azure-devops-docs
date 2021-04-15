@@ -16,12 +16,12 @@ monikerRange: '<= azure-devops'
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
 
-From the project admin content, **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md).
+From the project admin content, **Repositories** page, you can you can [set Git repository permissions](../../repos/git/set-git-repository-permissions.md). 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
 ## Related articles
 
-- [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
+- [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
 - [Default permissions and access](permissions-access.md)
 - [Permissions and groups reference](permissions.md)

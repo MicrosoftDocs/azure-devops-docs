@@ -149,7 +149,7 @@ Test Management<br/>
 <td>❌</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
-For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage <a href="../../repos/tfvc/add-check-policies.md" data-raw-source="[TFVC check-in policies](../../repos/tfvc/add-check-policies.md)">TFVC check-in policies</a> or <a href="../../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[permissions](../../organizations/security/set-git-tfvc-repository-permissions.md)">permissions</a> from the web portal.
+For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage <a href="../../repos/tfvc/add-check-policies.md" data-raw-source="[TFVC check-in policies](../../repos/tfvc/add-check-policies.md)">TFVC check-in policies</a> or <a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">permissions</a> from the web portal.
 </blockquote>
 </td>
 </tr>

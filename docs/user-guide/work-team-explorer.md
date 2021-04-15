@@ -317,7 +317,7 @@ From the **Settings** page, you can configure administrative features for either
 <td> 
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../organizations/security/set-git-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
+<li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../repos/tfvc/set-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
 <li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
