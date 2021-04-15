@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-The Search function and extensions available for Azure DevOps enable you to easily search across all the projects, teams, and repositories to which you have access.
+The Search function for Azure DevOps enables you to easily search across all the projects, teams, and repositories to which you have access.
 
 ::: moniker range=">= tfs-2018"
 
@@ -40,15 +40,13 @@ You can find an at-a-glance look at all of the [semantic Search features](#seman
 ::: moniker range="<= azure-devops-2020"
 
 > [!NOTE]
-> For Code search, a Collection Administrator must install the Code Search extension.
+> For Code search, a Collection Administrator must [install the Code Search extension](install-configure-search.md).
 
 ::: moniker-end
 
-## Start searching with a keyword
+## Start your search with a keyword
 
-A keyword search is the most basic type of search to get started. Enter a word enclosed with double quotes, and then select _Enter_ or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search. You can also search for a phrase by enclosing your search terms in double-quotes.
-
-By default, semantic search covers everything in Azure DevOps. You can narrow down your results and focus on what you need by using [Boolean operators](#semantic-search-features).
+Start your search using a keyword. You can then apply other options, as needed, to broaden or narrow your search results.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -63,11 +61,24 @@ By default, semantic search covers everything in Azure DevOps. You can narrow do
 ::: moniker-end
 
 > [!TIP]
+> * If you get no results matching the input, try removing filters and retry the search. Broadening the search and after you view the search results, you can apply appropriate filters again and search again for relevant results.
+> * Check for the spelling of your search terms. Currently Work item search doesn't support ignoring of users' spelling mistakes.
+> * If there are lots of hits when you're using a wildcard search, such as when you're using a simple wildcard search string, you may see a message that no matching files are found. In this case, narrow your search to reduce the number of matches. Specify more characters of the word or words that you want to find, or add a condition or filter to limit the number of possible matches.
 > Searches aren't case-sensitive.
 
-## Semantic search features
+## Semantic search features, usage, and examples
 
-The following features apply to all searches - work items, code, wiki, and packages.
+::: moniker range="azure-devops"
+
+The following features apply to all searches, including work items, code, wikis, and packages.
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The following features apply to all searches, including work items, code, and packages.
+
+::: moniker-end
 
 ---  
 :::row:::
@@ -129,9 +140,9 @@ The following features apply to all searches - work items, code, wiki, and packa
       **Boolean operators** 
    :::column-end:::
    :::column span="2":::
-      - Find two or more keywords using Boolean operators: AND, OR, and NOT (must be uppercase).
+      - Find two or more keywords using Boolean operators: `AND`, `OR`, and `NOT` (must be uppercase).
       - Add parenthesis to clauses to support logical groupings.
-      - Because AND is the default operator, an entry of two keywords with no operator is the same as an AND search.
+      - Because `AND` is the default operator, an entry of two keywords with no operator is the same as an `AND` search.
    :::column-end:::
    :::column span="2":::
       - `Validate AND revisit` finds files that contain both the words *validate* and *revisit*. 
@@ -178,21 +189,31 @@ The following features apply to all searches - work items, code, wiki, and packa
 
 ## Choose your semantic search starting page
 
-The features that are available to you depend on the page that you start your search from.
+You can start a search from one of the following pages:
 
-### Start searching from the Projects page
+- [**Projects**](#start-your-search-from-the-projects-page) page for the organization, starts a search across all projects.
+- [**Project**](#start-your-search-from-the-project-overview-page) overview page, automatically applies a filter to search within the selected project.
+- [**Boards**](#start-your-search-from-a-boards-page) page for a project, automatically displays recent work items and backlogs accessed by the user.
+- **Repos**, **Pipelines**, **Test Plans**, or an **Artifacts** page for a project, automatically displays functional filters for code searches.
+- [**Wiki**](#start-your-search-from-a-wiki-page) page for a project, automatically access recent wiki pages access by the user.
+
+> [!TIP]
+> Use the content type filter to access a page that you recently opened.
+> :::image type="content" source="media/get-started/search-page-filter.png" alt-text="Search page filter":::
+
+## Start your search from the Projects page
 
 From your organization's Overview page, enter a keyword or phrase in the semantic search, and then select **Enter** or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search.
 
 :::image type="content" source="media/get-started/start-search-from-org-project-page.png" alt-text="Starting search from organization projects page":::
 
-### Start searching from the Project-Overview page
+## Start your search from the Project-Overview page
 
 From your project's Overview page, enter a keyword or phrase in the semantic search, and then select **Enter** or choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: start search.
 
 :::image type="content" source="media/get-started/start-search-from-project-overview-page.png" alt-text="Start search from project overview page":::
 
-### Start searching from a Boards page
+## Start your search from a Boards page
 
 Start searching across all your work items over all your projects with a keyword or phrase. Work item search includes all work item types, including test-related and custom work item types.
 
@@ -237,12 +258,9 @@ Start searching across all your work items over all your projects with a keyword
 
 For more information about searching and filtering in Azure Boards, see [Filter backlogs, boards, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md).
 
-> [!TIP]
-> * If you get no results matching the input, try removing filters and retry the search. Broadening the search and after you view the search results, you can apply appropriate filters again and search again for relevant results.
-> * Check for the spelling of your search terms. Currently Work item search doesn't support ignoring of users' spelling mistakes.
-> * If there are lots of hits when you're using a wildcard search, such as when you're using a simple wildcard search string, you may see a message that no matching files are found. In this case, narrow your search to reduce the number of matches. Specify more characters of the word or words that you want to find, or add a condition or filter to limit the number of possible matches.
+::: moniker range="azure-devops"
 
-### Start searching from a Wiki page
+## Start your search from a Wiki page
 
 When you search from Wiki, you automatically navigate to wiki search results. Text search across the wiki is supported by the search platform.
 
@@ -250,31 +268,117 @@ When you search from Wiki, you automatically navigate to wiki search results. Te
 
 For more information about searching wikis, see [Search Wiki](../wiki/search-wiki.md) and [Provisioned vs. published wiki](../wiki/provisioned-vs-published-wiki.md).
 
+::: moniker-end
+
 > [!WARNING]
 > **No results found for ...**  
 > If there's a large number of hits when using a wildcard search, such as when using a very simple wildcard search string, you may see a message that no matching files were found. In this case, narrow your search to reduce the number of matches. For example, specify more characters of the word(s) you want to find, or add a condition or filter to limit the number of possible matches.   
 
-## Extensions for Search
+## Additional search functions
+
+If you want to search for various settings, users, projects, and more, see the following table to find non-semantic search tasks and corresponding actions.
+
+
+---  
+:::row:::
+   :::column span="1":::
+      **Non-semantic search task** 
+   :::column-end:::
+   :::column span="2":::
+      **Action**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      [Find an organization setting](../../organizations/settings/search-settings.md) 
+   :::column-end:::
+   :::column span="2":::
+      Go to your organization and select **Organization settings**.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+---
+:::row:::
+   :::column span="1":::
+      [Find a project setting](../../organizations/settings/search-settings.md) 
+   :::column-end:::
+   :::column span="2":::
+      Go to your project and select **Project settings**.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      [Find a user setting](../../organizations/settings/search-settings.md) 
+   :::column-end:::
+   :::column span="2":::
+      Go to your **User settings page**. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Find a user 
+   :::column-end:::
+   :::column span="2":::
+      Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Find an organization 
+   :::column-end:::
+   :::column span="2":::
+       Scroll through the left side of your screen, which lists all organizations. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Find a project
+   :::column-end:::
+   :::column span="2":::
+      Go to your organization, and then enter the project name in the Filter projects box.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      View file history and compare versions 
+   :::column-end:::
+   :::column span="2":::
+      Go to **Repos** > **Files**, highlight your file, and then select **History**. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      [Find wiki content](../wiki/search-wiki.md)
+   :::column-end:::
+   :::column span="2":::
+      Go to your wiki and enter your semantic search. 
+   :::column-end:::
+:::row-end:::
+
+::: moniker range="azure-devops"
+> [!NOTE]
+> The organization settings search function finds all settings, both organization and project.
+::: moniker-end
+
+::: moniker range="<= azure-devops>
+
+## Search re-index requirements
+
+Search for Azure DevOps Server has the following limitation: 
+
+* If you do a disaster recovery (DR) operation and move your server back to an earlier snapshot of your SQL database, [reindex all your collections](manage-search.md#reindex-a-repository-or-collection).
+
+::: moniker-end
+
+## Marketplace extensions
 
 > [!NOTE]
 > Some extensions aren't supported features of Azure DevOps and therefore aren't supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
 - [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) - Extends semantic search with fast, flexible, and precise search results across all your code. Required for searching repositories.
 - [Azure Paths Search](https://marketplace.visualstudio.com/items?itemName=wavemotionio.ado-areapaths) - Adds a special search hub to Boards for searching within iterations and area paths without having to create and maintain custom queries.
-
-## Other search functions
-
-If you want to search for various settings, users, projects, and more, see the following table to find non-semantic search tasks and corresponding actions.
-
-| **Non-semantic search task**                      | **Action**                                                             |
-|----------------------------------------------|------------------------------------------------------------------------|
-| Find an organization setting                 | Go to your organization and select **Organization settings**.           |
-| Find a project setting                       | Go to your project and select **Project settings**.                     |
-| Find a user setting                         | Go to your **User settings page**.                                     |
-| Find a user                                  | Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box.   |
-| Find an organization                         | Scroll through the left side of your screen, which lists all organizations.      |
-| Find a project                               | Go to your organization, and then enter the project name in the Filter projects box.   |
-| View file history and compare versions       | Go to **Repos** > **Files**, highlight your file, and then select **History**.              |
 
 ## Next steps
 

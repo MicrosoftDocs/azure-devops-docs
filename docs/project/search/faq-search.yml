@@ -16,7 +16,7 @@ title: Semantic search FAQs
 summary: | 
   **Azure Devops Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
 
-  Learn the answers to frequently asked questions (FAQs) about the Search function for Azure DevOps. 
+  Learn the answers to frequently asked questions (FAQs) about the semantic search function for Azure DevOps. 
 
 sections:
   - name: General
@@ -50,14 +50,14 @@ sections:
            * Scope your query by using filters to narrow down to a "repo" or a "path".
            * See if you can narrow your query to avoid scenarios that require matching too many terms. 
            For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
+    - question: How do I search code comments?
+      answer: |
+        Specify the History field. For example: History:Keyword.
   
   - name: Work item search
 
     questions:
     
-    - question: How do I search work item discussion comments?
-      answer: |
-        Specify the History field. For example: History:Keyword.
     - question: Why does Code search display when I'm in Work Item view?
       answer: |
         You can toggle between Work Item and Code Search entities by using the picker next to the semantic search. 
@@ -72,7 +72,10 @@ sections:
         3. Choose the **Packages** pivot. 
         You can also navigate from your organization's landing page. 
         At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.       
-
+    - question: How do I search package comments?
+      answer: |
+        Specify the History field. For example: History:Keyword.
+    ::: moniker range="< azure-devops"
   - name: On-premises, Azure DevOps Server
 
     questions:
@@ -100,7 +103,7 @@ sections:
     - question: How do I get Search to work after an upgrade?
       answer: |
        If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](install-configure-search.md#upgrade-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
-
+    ::: moniker-end
 additionalContent: | 
   ## Related articles
   - [Search artifacts and packages](functional-package-search.md)

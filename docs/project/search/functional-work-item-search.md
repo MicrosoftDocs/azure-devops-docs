@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/14/2021
+ms.date: 04/15/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Work Item Search is available as a built-in extension in Azure DevOps. For information on semantic search functions, see [Get started with Search](get-started-search.md).
+Functional work item search command filters extend your ability to refine your search of work items based on assignment, work item type, specific fields, and more. This is in addition to the filter functions documented in [Get started with semantic search](get-started-search.md). Work item search is a built-in feature available to all Azure DevOps users.
 
 ::: moniker range=" azure-devops"
 
@@ -41,9 +41,7 @@ For more information about the following search functions, see [Get started with
 - Proximity
 ## Prerequisites
 
-- Every user can use semantic Search, which includes work item and wiki Search.
-- You must be a **Stakeholder** to do semantic searches on work items, wiki, and packages.
-
+- All users can use work item search.
 ### Search by work item ID
 
 Enter the work item ID in the Azure DevOps title bar to quickly go to it. Searching for a work item ID opens the work item in a 
@@ -81,7 +79,7 @@ Open the search results in a new browser tab from either the semantic search or 
 - You can use a text search across all fields to efficiently locate relevant work items. Text search is useful when you're trying to, for example, search for all work items that had similar exception trace.
 - You can also use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The list of suggestions helps complete your search faster.
 
-#### Semantic search vs. managed work item queries
+## Semantic search vs. managed work item queries
 
 You have two ways to find and list work items: managed queries and semantic searches. If you're looking for a single work item, use the semantic search. If you want to generate a list of work items to triage, update, chart, or share with others, use a managed query.
 
