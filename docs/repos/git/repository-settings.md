@@ -9,7 +9,7 @@ ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Git repository settings
+# Git repository settings and policies
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
