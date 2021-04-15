@@ -14,7 +14,7 @@ The following table summarizes the query filter functions supported by each Azur
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
 > Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work items search](../../project/search/functional-work-item-search.md).
-::: moniker-end
+
 
 ---
 :::row:::
