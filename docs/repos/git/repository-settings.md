@@ -1,7 +1,7 @@
 ---
-title: Repository settings
+title: Git repository settings
 titleSuffix: Azure Repos
-description: Repository settings
+description: Learn about settings you can set for a Git repository  
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Repository settings
+# Git repository settings
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
