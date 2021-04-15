@@ -174,7 +174,7 @@
   - name: "Default Git permissions (Security)"
     href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: "Set permissions (Security)"
-    href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: set-git-repository-permissions.md
   - name: Frequently asked questions
     href: howto.md
   - name: Git limits

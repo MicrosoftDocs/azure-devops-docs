@@ -32,7 +32,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
 ![Open a command prompt to a repo from inside Visual Studio](media/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
-> Some commands require having [specific Git permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) in Azure Repos to complete.
+> Some commands require having [specific Git permissions](set-git-repository-permissions.md#git-repository) in Azure Repos to complete.
 
 ## Repos
 

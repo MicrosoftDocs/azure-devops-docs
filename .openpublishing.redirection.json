@@ -18089,6 +18089,16 @@
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/security/set-git-tfvc-repository-permissions.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/git-permissions-before-2017.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
     }
   ]
 }

@@ -492,7 +492,8 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Create additional Git repositories](../../repos/git/creatingrepo.md)
-      - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)
+      - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
+      - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
       - [Manage branch policies](../../repos/git/branch-policies.md)
       - [Add Team Foundation Version Control (TFVC) Check-In Policies](../../repos/tfvc/add-check-policies.md)
    :::column-end:::
