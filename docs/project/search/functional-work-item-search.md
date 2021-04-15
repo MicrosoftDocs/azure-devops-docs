@@ -33,7 +33,7 @@ By using Work Item Search, you can do the following tasks and more.
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
 |[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
 
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features-usage-and-examples).
 - Keyword
 - Exact match
 - Wildcard
