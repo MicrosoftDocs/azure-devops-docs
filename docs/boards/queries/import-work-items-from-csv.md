@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
 ms.date: 03/16/2021
 ---

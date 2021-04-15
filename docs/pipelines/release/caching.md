@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 05/11/2020
+ms.date: 04/06/2021
 monikerRange: azure-devops
 ---
 
@@ -24,11 +24,14 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
+> [!NOTE]
+> Caching is currently free, and cashes are stored in Azure blob storage.
+
 ## Use Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
@@ -264,6 +267,8 @@ steps:
     condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
+Replace `caching-docker.yml` with your own pipeline YAML file.
+
 ## Golang
 
 For Golang projects, you can specify the packages to be downloaded in the *go.mod* file. If your `GOCACHE` variable isn't already set, set it to where you want the cache to be downloaded.
@@ -466,6 +471,36 @@ steps:
   displayName: Cache pipenv packages
 
 - script: pipenv install
+```
+
+## Python/Anaconda
+
+Set up your pipeline caching with Anaconda environments 
+
+### Example
+
+```yaml
+variables:
+  CONDA_CACHE_DIR: $(Pipeline.Workspace)/.condarc
+
+# Add conda to system path
+steps:
+- script: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
+
+- task: Cache@2
+  displayName: Use cached Anaconda environment
+  inputs:
+    key: 'conda | "$(Agent.OS)" | environment.yml'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(CONDA_CACHE_DIR)
+    cacheHitVar: CONDA_CACHE_RESTORED
+
+- script: conda env create --quiet --file environment.yml
+  displayName: Create Anaconda environment
+  condition: eq(variables.CONDA_CACHE_RESTORED, 'false')
 ```
 
 ## PHP/Composer

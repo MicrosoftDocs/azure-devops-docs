@@ -27,7 +27,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 - [About permissions, access, & security groups](about-permissions.md)   
 - [Default permissions & access](permissions-access.md)   
 - [View permissions](view-permissions.md)   
-- [Trace permissions](faq-trace-permissions.md)   
+- [Troubleshoot permissions](troubleshoot-permissions.md)   
 - [Increase permission levels, find an admin](lookup-organization-owner-admin.md)   
 - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 
@@ -135,6 +135,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        **Authentication** 
        - [Choose authentication method](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authenticate access with PATs](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Manage personal access tokens using API](../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
        - [Use OAuth 2.0 to authorize access to REST APIs](../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authorize a service, manage authorizations](../settings/manage-authorizations.md)  

@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to manage portfolios with a calendar view of features and epics  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

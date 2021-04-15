@@ -128,7 +128,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/repos
+            url: /cli/azure/repos
           - text: Git REST API
             url: /rest/api/azure/devops/git/
           - text: TFVC REST API

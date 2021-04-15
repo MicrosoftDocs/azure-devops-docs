@@ -8,7 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/03/2021
+  ms.date: 04/12/2021
 
 title: Azure Boards configuration and customization FAQs  
 
@@ -109,6 +109,12 @@ sections:
 
           To learn how, see [Customize your backlogs or boards (Inheritance process)](customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../../../reference/add-portfolio-backlogs.md).
 
+      - question: Can caching impact rules applied to work items?  
+        answer: | 
+
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+
+
       - question: Can I upload my own custom work item type icons for an Inherited process?  
         answer: | 
           **Example request**: *When I create a new work item type, I get an option to choose an icon. The icon set is limited and doesn't support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?*   
@@ -123,6 +129,4 @@ additionalContent: |
   - [Work tracking, process, and project limits](object-limits.md)   
   - [Azure Boards extensions](../../../boards/extensions/index.md)  
   - [About teams and Agile tools](../about-teams-and-settings.md)  
-
-  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
 

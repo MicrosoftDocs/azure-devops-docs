@@ -4,7 +4,7 @@ description: Virtual machine resource support within Environment
 ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
-ms.date: 03/18/2021
+ms.date: 03/29/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -37,17 +37,18 @@ The first step in adding a virtual machine resource is to define an environment.
    :::image type="content" source="media/create-environment.png" alt-text="Add an environment.":::
 
 1. Choose Windows or Linux for the **Operating System**.  
-1. Copy the registration script. Your script will be a [PowerShell script](/azure/powershell/scripting/) if you've selected Windows and a Linux script if you've selected Linux.
+1. Copy the registration script. Your script will be a [PowerShell script](/powershell/scripting/overview) if you've selected Windows and a Linux script if you've selected Linux.
 
    :::image type="content" source="media/vm-creation.png" alt-text="Add a virtual machine.":::    
 
-1. Run the copied script on each of the target virtual machines that you want to register with this environment.
+1. Run the copied script on each of the target virtual machines that you want to register with this environment. 
    - If you're installing on Windows, you'll need to run the script an PowerShell administrator.
    - If you're installing on Linux, you'll need to have permission to download and run executable scripts. 
 
    > [!NOTE]
    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
    > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
+   > -  To learn more about installing the agent script, see [Self-hosted Linux agents](../agents/v2-linux.md) and [Self-hosted Windows agents](../agents/v2-windows.md). The agent scripts for virtual machine resources are very similar to the scripts for self-hosted agents and you can use the same commands. 
 
 1. Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
 1. To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual machines**. The Windows and Linux scripts are the same for all the VMs added to the environment. 

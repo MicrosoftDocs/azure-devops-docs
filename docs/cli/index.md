@@ -98,6 +98,6 @@ This command shows the details of build with `id 1` on the command-line and also
 ## Related articles
 
 - [Sign in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md)
-- [Output formats](/cli/azure/format-output-azure-cli?view=azure-cli-latest&preserve-view=true)
-- [Command Reference](/cli/azure/ext/azure-devops?view=azure-cli-latest&preserve-view=true)
+- [Output formats](/cli/azure/format-output-azure-cli)
+- [Index to az devops examples](quick-reference.md)
 - [Azure DevOps CLI Extension GitHub Repo](https://github.com/Azure/azure-devops-cli-extension)

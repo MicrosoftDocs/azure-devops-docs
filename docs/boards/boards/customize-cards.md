@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 03/12/2021 
 ---
@@ -101,6 +101,18 @@ Once you open the Settings dialog for the Kanban board, choose one of the follow
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      **[Fields](#fields)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove fields from cards.  
+      Includes adding the **Parent** field to cards.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="1":::
       **[Fields](#fields)** 
@@ -109,6 +121,7 @@ Once you open the Settings dialog for the Kanban board, choose one of the follow
       Add or remove fields from cards. 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="1":::
       **[Styles](#style-rule)** 
@@ -164,11 +177,12 @@ Before you configure the cards, you'll want to make sure the following tasks are
 **Process Administrator**: 
 1. Add custom work item types that you want to appear on your backlog or board. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 2. Customize your product and portfolio backlogs to ensure all work item types you want to have will appear on the backlogs and boards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md)
+3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
 
 **Team Administrator**:
+1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
 1. [Add any tags](../queries/add-tags-to-work-items.md) you want to customize on cards to work items. 
-2. Meet with your team and determine which annotations should appear on cards and how they want to configure inline tests.  
+1. Meet with your team and determine which annotations should appear on cards and how they want to configure inline tests.  
  
 
 ## Open your Kanban board settings
@@ -262,7 +276,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 ::: moniker range=">= azure-devops-2020"
 > [!NOTE]  
-> To show the Title of the parent work item, choose the Parent field. Choosing the Parent title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your board based on parent work items, whether the Parent field is added to cards or not.
+> To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your board based on parent work items, whether the **Parent** field is added to cards or not.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
