@@ -6,7 +6,7 @@ metadata:
   description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
   ms.technology: devops-billing
   ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
-  ms.topic: conceptual
+  ms.topic: troubleshooting
   ms.author: chcomley
   author: chcomley
   ms.date: 12/15/2020

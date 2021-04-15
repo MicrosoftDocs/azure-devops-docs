@@ -5,13 +5,13 @@ metadata:
   description: General questions and answers about notifications settings in Azure DevOps.
   ms.technology: devops-collab
   toc: show
-  ms.topic: conceptual
+  ms.topic: troubleshooting
   ms.author: chcomley
   author: chcomley
   ms.date: 12/30/2019
   monikerRange: '>= tfs-2015'
     
-title: Frequently asked questions (FAQs) on notifications
+title: Notifications FAQS
 summary: |
   [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
   
