@@ -8,19 +8,26 @@ ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2017'
-ms.date: 04/14/2021
+ms.date: 04/15/2021
 ---
 
 # Functional code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-By using the functional Code Search, you can do the following tasks and more. For information on semantic search functions, see [Get started with Search](get-started-search.md).
+Functional code search command filters extend your ability to refine your search across repositories beyond what is documented in [Get started with semantic search](get-started-search.md). To perform code searches, the [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) Marketplace extension must be installed for your organization or collection.
 
 ## Prerequisites
 
+- You must install [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)
+::: moniker range="< azure-devops"
+  For more information, see [Install and configure search](install-configure-search.md).
+::: moniker-end
 - To use Code Search, you must have at least a Basic access. 
-- Stakeholders don't have access to code, and so don't have access to Code Search. 
+- Users granted Stakeholder access don't have access to code, and so don't have access to Code Search.
+::: moniker range="azure-devops"
+- Users granted Stakeholder access for a private project can perform code searches, as they have [Full Access to the code](../../organizations/security/access-levels.md).
+::: moniker-end
 - When you're searching across the organization or collection, only results for which a project member has access are listed.
 
 ## Code search best practices
@@ -140,6 +147,8 @@ Code Search can index multiple branches in a Git repository. By default it index
 ::: moniker range=">= azure-devops-2019"
 ![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
 ::: moniker-end
+
+## Search TFVC projects
 
 In a TFVC project, you see a list of folder paths in that project for which you have read access - you won't see any projects and folders for which you don't have read permission. Select paths in the folder tree to narrow your search if necessary.
 

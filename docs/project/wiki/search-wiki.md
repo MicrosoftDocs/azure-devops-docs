@@ -10,35 +10,33 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: how-to
 monikerRange: '>= tfs-2018'
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ---
 
 # Search Wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-With wiki search, you can search within a project wiki or across all wikis created for your organization.
+With wiki search, you can search within your project wiki. 
 
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions.
+::: moniker range="azure-devops"
+
+With [semantic search](../search/get-started-search.md), you can search across all wikis created for your organization.
+
 ::: moniker-end
 
 ## Prerequisites
 
-- Every user can use the basic Search function, which includes work item and wiki Search.
-- You must be a Stakeholder to do semantic searches on work items, wiki, and packages.
+- All users can search within a wiki.
 
-## Start searching wiki
+## Start your search in a wiki
 
- [!TIP]
-> When you search from **Wiki**, you automatically go to wiki search results. If you initiate a search from another page, such as one under **Repos/Code** or **Boards/Work**, then first select the **Search wiki** option from the search box menu options.
+> [!TIP]
+> When you search from **Wiki**, you automatically go to wiki search results. If you initiate a search from another page, such as one under **Repos/Code** or **Boards/Work**, then first select the **Search wiki** option from the search menu options.
 
-Start searching within a project wiki or across all wikis created for your organization.
+::: moniker range=" azure-devops"
 
-::: moniker range=">= azure-devops-2019"
-
-Select the **Search wiki** option from the search box and enter a keyword or phrase within the search box.
+Select the **Search wiki** option from the search menu and enter a keyword or phrase.
 
   :::image type="content" source="../wiki/media/search/search-wiki-vert.png" alt-text="Wiki search option":::   
 
@@ -53,7 +51,7 @@ Search quickly returns wiki pages by title or page content. English language ste
 
 ::: moniker-end  
 
-::: moniker range="tfs-2018"  
+::: moniker range="< azure-devops"
 
 Open **Wiki** and enter your keyword or phrase into the search box. 
 
