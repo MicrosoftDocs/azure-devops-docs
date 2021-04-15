@@ -44,6 +44,9 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 
    ![Visual Studio is now connected to your project](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
 
+[!NOTE]
+TFVC is not supported when workspaces are placed on network drives or UNC paths.
+
 ## Create a new app
 
 If you already have an app that you want to add to version control,
