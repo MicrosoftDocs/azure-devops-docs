@@ -68,11 +68,11 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	For example, here we choose (1) **Project settings**, (2) **Repositories**, and then (3) **Security**.
 
-	:::image type="content" source="media/git/permissions/open-repositories-s-185.png" alt-text="Screenshot showing choosing Project settings>Repositories>Security.":::
+	:::image type="content" source="media/git-permissions/open-repositories-s-185.png" alt-text="Screenshot showing choosing Project settings>Repositories>Security.":::
 
 1.	Otherwise, to set permissions for a specific repository, choose (1)the repository and then choose (2) **Security**.
 
-	:::image type="content" source="media/git/permissions/choose-git-repo-security-callouts.png" alt-text="Screenshot showing choosing Project settings>Choose a repository>Security.":::
+	:::image type="content" source="media/git-permissions/choose-git-repo-security-callouts.png" alt-text="Screenshot showing choosing Project settings>Choose a repository>Security.":::
 
 ::: moniker-end 
 
