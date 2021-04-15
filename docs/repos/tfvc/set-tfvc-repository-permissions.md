@@ -50,7 +50,7 @@ For a description of each security group and permission level, see [Permissions 
 
 <a id="tfvc-repository">  </a>
 
-## Set TFVC repository permissions
+## Open TFVC repository Security
 
 ::: moniker range="azure-devops"
 
@@ -90,7 +90,7 @@ For a description of each security group and permission level, see [Permissions 
 
 	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
 
-	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/tfvc-permissions/open-tfvc-repository-security-vert-reduced.png)](media/tfvc-permissions/open-tfvc-repository-security-vert.png#lightbox) 
+	[![Project Settings>Code>Repositories>TFVC repositories>Security.](media/tfvc-permissions/open-tfvc-repository-security-vert-reduced.png)](media/tfvc-permissions/open-tfvc-repository-security-vert.png#lightbox) 
 
 	> [!NOTE]  
 	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
@@ -122,7 +122,4 @@ For a description of each security group and permission level, see [Permissions 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Tf Team Foundation Version Control (TFVC) permission command-line tool](permission-command.md)  
 - [Security REST API commands](/rest/api/azure/devops/security/)
-
-
-[![Project Settings>Code>Repositories>TFVC repositories>Security](media/tfvc-permissions/open-tfvc-repo.png)](media/tfvc-permissions/open-tfvc-repo-wide.png#lightbox) 
 
