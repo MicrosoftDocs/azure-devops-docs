@@ -3,7 +3,7 @@ title: Set TFVC repository permissions
 titleSuffix: Azure Repos
 description: Steps for how to grant or restrict access to a Team Foundation Version Control repository feature or function
 ms.assetid:  
-ms.technology: devops-security
+ms.technology: devops-code-git 
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
@@ -21,7 +21,7 @@ By default, members of the project Contributors group have permissions to contri
 ## Prerequisites
 
 * You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).
-* You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for Git repositories or the TFVC repository.  
+* You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for the TFVC repository.  
 
 ## Default repository permissions  
 
