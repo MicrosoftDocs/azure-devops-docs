@@ -11,7 +11,7 @@ description: In this sprint, we resolved several dependency tracking issues in A
 
 In this sprint, we resolved several dependency tracking issues in Azure Board Delivery Plans 2.0. The dependency panel no longer cuts off longer work item titles and the tooltip now shows up when hovering over the title.
 
-Check out the [Features](#features) list below for details.
+Check out the following feature descriptions for details.
 
 ### Azure Boards
 

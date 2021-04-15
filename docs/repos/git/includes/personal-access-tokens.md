@@ -241,7 +241,7 @@ When your code is working, it's a good time to switch from basic auth to <a href
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](/azure/devops/integrate/get-started/authentication/iis-basic-auth).
 
-For more examples of how to use PATs, see [Git credential managers](/azure/devops/repos/git/set-up-credential-managers), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume#mac-os), [Reporting clients](/azure/devops/report/powerbi/client-authentication-options#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+For more examples of how to use PATs, see [Git credential managers](/azure/devops/repos/git/set-up-credential-managers), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true#assemble-the-request), [NuGet on a Mac](/azure/devops/artifacts/nuget/consume#mac-os), [Reporting clients](/azure/devops/report/powerbi/client-authentication-options#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](/azure/devops/cli/index).
 
 ::: moniker range="azure-devops"
 
