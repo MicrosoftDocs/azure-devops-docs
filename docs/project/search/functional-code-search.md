@@ -33,7 +33,7 @@ Functional code search command filters extend your ability to refine your search
 ## Code search best practices
 
 - Get the results you want even faster by starting with a higher-level search. You can narrow your search by using project, repository, path, file name, and other filter operators. 
-- Ensure that you get to the results you want even when you're not sure of the exact term you're looking for. [Use wildcards to widen your search](get-started-search.md#semantic-search-features) and [Boolean operators to fine-tune it](get-started-search.md#semantic-search-features). 
+- Ensure that you get to the results you want even when you're not sure of the exact term you're looking for. [Use wildcards to widen your search](get-started-search.md#semantic-search-features-usage-and-examples) and [Boolean operators to fine-tune it](get-started-search.md##semantic-search-features-usage-and-examples). 
 - Find more information about an item of interest faster and with minimal efforts. When you find an item of interest, place the cursor on it and use the shortcut menu to quickly search for that text across all your projects and files.
 - Easily trace how your code works by using the shortcut menu to search for related items such as definitions and references – directly from inside a file or from the search results.
 - Go quickly to the implementation of, for example, an API your code might be taking dependency on by narrowing down your results to exact code type matches. Use code type filters to search for specific kinds of code such as definitions, references, functions, comments, strings, namespaces, and more. 
@@ -119,7 +119,7 @@ One of the powerful features of Code Search is the capability to expand your sea
 Place the insertion point on a term in the file and open the shortcut menu (mouse: right-click) to start a new search for other files containing the selected term. You can search for it as text, for 
 the definition if you select an object name, or for references to a selected object. 
 
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features).
+For more information about the following search functions, see [Get started with Search](get-started-search.md##semantic-search-features-usage-and-examples).
 - Keyword
 - Exact match
 - Wildcard
