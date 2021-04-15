@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 Historically, all feeds used to be scoped to an organization. However, to enable public feeds and to become more consistent with the rest of Azure DevOps, feeds created through the new create feed web UI will now be scoped to a project. 
 
-New organization will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain organization-scoped.
+New organizations will automatically have one feed scoped to the organization and all subsequent feeds created will be scoped to a project. All existing organization-scoped feeds will remain organization-scoped.
 
 ## Understanding the difference between an organization-scoped feed and a project-scoped feed
 
@@ -40,7 +40,7 @@ Here are the main differences between the two feed types:
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed.
 
-## What can I do if I'm concerned about my project-scoped feed's visibility
+## What can I do if I'm concerned about my project-scoped feed's visibility?
 
 There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
 
