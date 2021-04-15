@@ -1,4 +1,4 @@
-﻿---
+---
 title: Develop and share code in TFVC using Visual Studio
 titleSuffix: Azure Repos
 description: Share code in Team Foundation Version Control using Visual Studio
@@ -43,6 +43,9 @@ Is your code in another place? [Learn how to migrate it here](#migrate).
 3. Now you can check in source, queue builds, and manage work.
 
    ![Visual Studio is now connected to your project](media/share-your-code-in-tfvc-vs/MapWorkspaceSuccess.png)
+
+> [!NOTE]
+> TFVC is not supported when workspaces are placed on network drives or UNC paths.
 
 ## Create a new app
 
