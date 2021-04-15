@@ -3,7 +3,7 @@ title: Best practices for Agile project management
 titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -432,5 +432,5 @@ Teams can define one or more dashboards to share information and monitor real-ti
 
 ### Industry articles  
 
-- [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
+- [Agile and a continuous improvement mindset](https://scrumtraininginstitute.com/agile-scrum-training/agile-team-health-check/#:~:text=At%20the%20core%20of%20Agile%20continuous%20improvement%20is,your%20organization%20can%20develop%20a%20continuous%20improvement%20mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)

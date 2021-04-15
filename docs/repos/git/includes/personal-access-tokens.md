@@ -123,7 +123,7 @@ If you receive an unexpected PAT notification, an administrator or tool might ha
 - When you or an administrator sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
-If you believe that a PAT exists in error, we suggest that you [revoke the PAT](~/organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location.
+If you believe that a PAT exists in error, we suggest that you [revoke the PAT](~/organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location. See also the FAQ about [accidentally checking in a PAT to a public GitHub repository](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#q-what-happens-if-i-accidentally-check-my-pat-into-a-public-repository-on-github).
 
 ## Use a PAT
 

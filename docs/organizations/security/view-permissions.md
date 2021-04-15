@@ -223,6 +223,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
 

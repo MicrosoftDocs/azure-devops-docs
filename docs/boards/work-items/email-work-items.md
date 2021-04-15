@@ -5,7 +5,7 @@ description: Email or print work items to share information in Azure Boards, Azu
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

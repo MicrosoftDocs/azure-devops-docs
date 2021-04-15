@@ -4,7 +4,7 @@ description: Learn about Azure Boards extensions
 titleSuffix: Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -58,7 +58,6 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 - [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Dependency Tracker](dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-- [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
