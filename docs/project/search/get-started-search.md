@@ -29,7 +29,7 @@ With semantic search, you can quickly find work items and code files based on a 
 
 ::: moniker-end
 
-You can find an at-a-glance look at all of the [semantic Search features](#semantic-search-features) further in this article.
+You can find an at-a-glance look at all of the [semantic search features](#semantic-search-features-usage-and-examples) further in this article.
 
 ## Prerequisites
 
