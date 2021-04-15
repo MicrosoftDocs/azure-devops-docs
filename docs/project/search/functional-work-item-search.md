@@ -32,13 +32,6 @@ By using Work Item Search, you can do the following tasks and more.
 |[Search in specific fields](#quick-filters-for-matching-in-specific-fields)  | Use the quick in-line search filters to narrow down to a list of work items in seconds. Use the filters on any work item field. The list of suggestions helps complete your search faster. For example, a search such as **AssignedTo:Chris WorkItemType:Bug State:Active** finds all active bugs assigned to a user named Chris.        |
 |Search across test   |Search across Test Plans, Test Suites, and other test work item types.         |
 |[Take advantage of integration with work item tracking](#search-by-work-item-id)   | The Work Item Search interface integrates with familiar controls for managing your work items; letting you view, edit, comment, share, and more.        |
-
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features-usage-and-examples).
-- Keyword
-- Exact match
-- Wildcard
-- Boolean operators
-- Proximity
 ## Prerequisites
 
 - All users can use work item search.
@@ -65,19 +58,18 @@ You can easily search across all work item fields, including custom fields, whic
 
 <img alt="Search across all work item fields" src="media/work-item-search-get-started/NewSearchAcross.gif" width="710" height="400" border="0"></img>  
 
-Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" also finds instances of the word "updated" and "update". Searches aren't case-sensitive.
-
-When you search from inside a project, the default is to search only within that project. While searching from inside a team, the default is to search only within the default area path of that team. When you have one project selected, you see a list of area paths in that project for which you have read access - you won't see any projects and area paths for which you don't have read permission. 
-Select area paths in the tree to narrow your search if necessary.
-
-The selected projects are always at the top of the list. Notice that hit counts are also shown for projects that aren't selected. 
-
-Open the search results in a new browser tab from either the semantic search or by selecting **Ctrl** + **Shift** + **Enter**.
+- Use simple search strings for words or phrases. Work item search matches derived forms of your search terms; for example, a search for "updating" also finds instances of the word "updated" and "update". Searches aren't case-sensitive.
+- When you search from inside a project, the default is to search only within that project. 
+- While searching from inside a team, the default is to search only within the default area path of that team. 
+  - When you have one project selected, you see a list of area paths in that project for which you have read access - you won't see any projects and area paths for which you don't have read permission
+  - Select area paths in the tree to narrow your search if necessary.
+- The selected projects are always at the top of the list. Notice that hit counts are also shown for projects that aren't selected. 
+- Open the search results in a new browser tab from either the semantic search or by selecting **Ctrl** + **Shift** + **Enter**.
 
 ## Work item search best practices
 
-- You can use a text search across all fields to efficiently locate relevant work items. Text search is useful when you're trying to, for example, search for all work items that had similar exception trace.
-- You can also use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The list of suggestions helps complete your search faster.
+- Use a text search across all fields to efficiently locate relevant work items. Text search is useful when you're trying to, for example, search for all work items that had similar exception trace.
+- Use the quick in-line search filters on any work item field to narrow down to a list of work items in seconds. The list of suggestions helps complete your search faster.
 
 ## Semantic search vs. managed work item queries
 
@@ -129,7 +121,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 <a name="quickfilters"></a>
 
-## View and filter search results
+## Apply supported functions to work item search
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -152,7 +144,7 @@ For specific managed query examples, see [Query quick reference, Example queries
 
 3. Add more filters to further narrow your search, and use Boolean operators to combine terms if necessary. For example, **a: Chris t: Bug s: Active** finds all active bugs assigned to a user named Chris.
 
-4. Narrow your search to specific types and states, by using the drop-down selector lists at the top of the results page.
+4. Narrow your search to specific types and states, by using the selector lists at the top of the results page.
 5. Widen your search across all projects, or narrow it to specific types and states. Use the filter to show the selector lists.
 
    ![Showing the filter lists](media/shared/show-filters.png)    

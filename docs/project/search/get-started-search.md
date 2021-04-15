@@ -308,6 +308,7 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to your project and select **Project settings**.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       [Find a user setting](../../organizations/settings/search-settings.md) 
@@ -316,6 +317,7 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to your **User settings page**. 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Find a user 
@@ -324,6 +326,7 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to your organization and select **Organization settings** > **Users**, and then enter the name in the filter box.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Find an organization 
@@ -332,6 +335,7 @@ If you want to search for various settings, users, projects, and more, see the f
        Scroll through the left side of your screen, which lists all organizations. 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Find a project
@@ -340,6 +344,7 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to your organization, and then enter the project name in the Filter projects box.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       View file history and compare versions 
@@ -348,6 +353,7 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to **Repos** > **Files**, highlight your file, and then select **History**. 
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       [Find wiki content](../wiki/search-wiki.md)
@@ -356,13 +362,14 @@ If you want to search for various settings, users, projects, and more, see the f
       Go to your wiki and enter your semantic search. 
    :::column-end:::
 :::row-end:::
+---
 
 ::: moniker range="azure-devops"
 > [!NOTE]
 > The organization settings search function finds all settings, both organization and project.
 ::: moniker-end
 
-::: moniker range="<= azure-devops>
+::: moniker range="< azure-devops"
 
 ## Search re-index requirements
 
@@ -374,11 +381,11 @@ Search for Azure DevOps Server has the following limitation:
 
 ## Marketplace extensions
 
-> [!NOTE]
-> Some extensions aren't supported features of Azure DevOps and therefore aren't supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
-
 - [Code Search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) - Extends semantic search with fast, flexible, and precise search results across all your code. Required for searching repositories.
 - [Azure Paths Search](https://marketplace.visualstudio.com/items?itemName=wavemotionio.ado-areapaths) - Adds a special search hub to Boards for searching within iterations and area paths without having to create and maintain custom queries.
+
+> [!NOTE]
+> Some extensions aren't supported features of Azure DevOps and therefore aren't supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
 ## Next steps
 

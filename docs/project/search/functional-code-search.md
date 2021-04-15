@@ -96,9 +96,8 @@ Instead, you can enter the functions and parameters directly into the semantic s
 
 ## Functions to select projects, repositories, paths, and files
 
-Functions make it easy to narrow the search to specified locations, specific types of files within these locations, or specified filenames. Mix and match the functions as required.
+Functions make it easy to narrow the search to specified locations, specific types of files within these locations, or specified filenames. Narrow the search to a specific location using the `proj`, `repo`, or `path` filters. Mix and match the functions as required.
 
-Narrow the search to a specific location using the `proj`, `repo`, or `path` filters:
 
 
 |**Usage**  |**Example**  |
@@ -119,14 +118,14 @@ One of the powerful features of Code Search is the capability to expand your sea
 Place the insertion point on a term in the file and open the shortcut menu (mouse: right-click) to start a new search for other files containing the selected term. You can search for it as text, for 
 the definition if you select an object name, or for references to a selected object. 
 
-For more information about the following search functions, see [Get started with Search](get-started-search.md#semantic-search-features-usage-and-examples).
+For more information about the following search functions, see [Get started with semantic search](get-started-search.md#semantic-search-features-usage-and-examples).
 - Keyword
 - Exact match
 - Wildcard
 - Boolean operators
 - Proximity
 
-## More examples of code search functions
+## Additional code search operations
 
 See the following examples of even more code search functions. You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET. Open the search results in a new browser tab from the semantic search and select **Ctrl** + **Enter**. In Google Chrome, select **Ctrl** + **Shift** + **Enter** to switch the focus to the new browser tab. 
 
