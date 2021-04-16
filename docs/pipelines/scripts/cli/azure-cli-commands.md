@@ -4,7 +4,7 @@ description: Azure CLI sample for creating, managing, and monitoring an Azure Pi
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 04/15/2021
+ms.date: 04/16/2021
 ms.topic: sample
 ms.service: az-devops-project
 ms.devlang: azurecli 
@@ -31,29 +31,63 @@ This script demonstrates three operations:
 First, save the following YAML file to `azure-pipelines.yml` in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
 
 ```yml
-# Azure file copy
-# Copy files to Azure Blob Storage or virtual machines
-- task: AzureFileCopy@4
-  inputs:
-    sourcePath: 
-    azureSubscription: "APEX C+L - Aquent Vendor Subscriptions"
-    destination: AzureBlob
-    storage: contosostoragewebblob1
-    containerName: $web
-    #blobPrefix: # Optional
-    #resourceGroup: # Required when destination == AzureVMs
-    #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
-    #machineNames: # Optional
-    #vmsAdminUserName: # Required when destination == AzureVMs
-    #vmsAdminPassword: # Required when destination == AzureVMs
-    #targetPath: # Required when destination == AzureVMs
-    #additionalArgumentsForBlobCopy: # Optional
-    #additionalArgumentsForVMCopy: # Optional
-    #enableCopyPrerequisites: false # Optional
-    #copyFilesInParallel: true # Optional
-    #cleanTargetBeforeCopy: false # Optional
-    #skipCACheck: true # Optional
-    #sasTokenTimeOutInMinutes: # Optional
+parameters:
+- name: image
+  displayName: Pool Image
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+- name: test
+  displayName: Run Tests?
+  type: boolean
+  default: false
+
+variables:
+- group: "Contoso Variable Group"
+- name: va
+  value: $[variables.a]
+- name: vb
+  value: $[variables.b]
+- name: vcontososecret
+  value: $[variables.contososecret]
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    echo Hello, world!
+    echo Pool image: ${{ parameters.image }}
+    echo Run tests? ${{ parameters.test }}
+  displayName: 'Show runtime parameter values'
+
+- script: |
+    echo a=$(va)
+    echo b=$(vb)
+    echo contososecret=$(vcontososecret)
+    echo Is a less than b? ${{ lt(variables.va, variables.vb) }}
+    echo Is a equal to b? ${{ eq(variables.va, variables.vb) }}
+    echo Is a greater than b? ${{ gt(variables.va, variables.vb) }}
+    echo Is a greater than contososecret? ${{ gt(variables.va, variables.vcontososecret) }}
+    echo Is b greater than contososecret? ${{ gt(variables.vb, variables.vcontososecret) }}
+    echo Is a less than contososecret? ${{ lt(variables.va, variables.vcontososecret) }}
+    echo Is b less than contososecret? ${{ lt(variables.vb, variables.vcontososecret) }}
+    echo
+    for number in {1..$(contososecret)}
+    do
+    echo $number
+    done
+  displayName: 'Test variable group variables (secret and nonsecret)'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
 Next, in the following Bash script, replace the placeholders, and then run the script:
@@ -132,7 +166,7 @@ read -p "Press any key to continue:"
 
 ## Clean up resources
 
-After the script sample has been run, the following command can be used to remove the resource group and all resources associated with it.
+After the script sample has been run, the following commands can be used to remove the resource group and all resources associated with it.
 
 ```azurecli-interactive
 az pipelines variable-group delete --group-id $variableGroupId --yes
