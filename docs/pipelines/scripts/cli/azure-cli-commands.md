@@ -4,7 +4,7 @@ description: Azure CLI sample for creating, managing, and monitoring an Azure Pi
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 03/25/2021
+ms.date: 04/15/2021
 ms.topic: sample
 ms.service: az-devops-project
 ms.devlang: azurecli 
@@ -18,7 +18,7 @@ This sample shows you how to use Azure DevOps CLI commands to work with Azure pi
 This script demonstrates three operations:
 
 * Showing how to use authentication to work with pipelines in Azure DevOps CLI
-* Using [YAML](../../yaml-schema.md) files to define the pipeline
+* Defining a pipeline using [YAML](../../yaml-schema.md) files and variable groups that contain secret and nonsecret variables
 * Managing and monitoring a pipeline
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../../../../includes/azure-cli-prepare-your-environment.md)]
@@ -28,7 +28,7 @@ This script demonstrates three operations:
 > [!NOTE]
 > Add note of FYI or caution if needed here.
 
-Save the following YAML file to `azure-pipelines.yml`:
+Save the following YAML file to `azure-pipelines.yml` in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
 
 ```yml
 # Azure file copy
@@ -62,20 +62,19 @@ Save the following YAML file to `azure-pipelines.yml`:
 
 # Provide variable definitions.
 devopsToken="<azure-devops-personal-access-token>"
-devopsOrg="https://dev.azure.com/<my-organization>"
+devopsOrg="https://dev.azure.com/<my-organization-name>"
 pipelineName="<my-build>"
 pipelineDesc="<my-description>"
 repoType="github"; repoName="<my-github-username>/<my-repository>"
 # repoType="tfsgit"; repoName="<my-repository-in-azure-devops-project>"
-serviceConnectionName="<name-of-service-connection>"
-serviceConnectionId="<service-connection-guid>"
+serviceConnectionName="<my-service-connection-name>"
 resourceGroupLocation="<resource-group-location-name-or-id>"
 storageAccountLocation="<storage-account-location-name-or-id>"
 
 # Declare other variables.
 uniqueId=$RANDOM
 resourceGroupName="contoso-storage-rg$uniqueId"
-storageAccountName="contosostoracct$uniqueId" #needs to be lower case
+storageAccountName="contosostoracct$uniqueId"  # needs to be lowercase
 devopsProject="Contoso DevOps Project $uniqueId"
 repoBranch="master"
 variableGroupName="Contoso Variable group $uniqueId"
@@ -94,17 +93,8 @@ projectId=$(az devops project create \
 az devops configure --defaults organization="$devopsOrg" project="$devopsProject"
 
 # Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set)
-az devops service-endpoint github create \
-    --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName"
-
-# Create Azure Resource Manager service connection
-export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY="<client secret string value from your service principal>"
-az devops service-endpoint azurerm create \
-    --name "$serviceConnectionName" \
-    --azure-rm-subscription-id <subscription-guid> \
-    --azure-rm-subscription-name "<name-of-subscription>" \
-    --azure-rm-service-principal-id <service-principal-application-guid> \
-    --azure-rm-tenant-id <service-principal-directory-guid>
+githubServiceEndpointId=$(az devops service-endpoint github create \
+    --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName" --query id)
 
 pipelineId=$(az pipelines create \
     --name "$pipelineName" \
@@ -112,18 +102,30 @@ pipelineId=$(az pipelines create \
     --repository $repoName \
     --repository-type $repoType \
     --branch $repoBranch \
-    --service-connection $serviceConnectionId \
+    --service-connection $githubServiceEndpointId \
     --yml-path azure-pipelines.yml
     --query id)
 
-# Create a variable group with 2 non-secret variables and 1 secret variable.
+# Create a variable group with 2 non-secret variables and 1 secret variable
+# (contososecret < a < b). Then run the pipeline.
 variableGroupId=$(az pipelines variable-group create \
-    --name $variableGroupName --variables a=35 b=86 --query id)
+    --name "$variableGroupName" --authorize true --variables a=35 b=86 --query id)
 az pipelines variable-group variable create \
-    --group-id $variableGroupId --name contososecret --secret true --value 67
+    --group-id $variableGroupId --name contososecret --secret true --value 14
+az pipelines run --id $pipelineId --open
+read -p "Press any key to change the value of the variable group's secret variable, then run again:"
 
-read -p "Press any key to do the next step"
-az referenceName command
+# Change the variable group's secret variable value (a < contososecret < b).
+az pipelines variable-group variable update \
+    --group-id $variableGroupId --name contososecret --value 53
+az pipelines run --id $pipelineId --open
+read -p "Press any key to again change the value of the variable group's secret variable, then run again:"
+
+# Change the variable group's secret variable value again (a < b < contososecret).
+az pipelines variable-group variable update \
+    --group-id $variableGroupId --name contososecret --value 97
+az pipelines run --id $pipelineId --open
+read -p "Press any key to continue:"
 ```
 
 ## Clean up resources
@@ -131,30 +133,31 @@ az referenceName command
 After the script sample has been run, the following command can be used to remove the resource group and all resources associated with it.
 
 ```azurecli-interactive
-az group delete --name $resourceGroupName --yes
-az devops project delete --id "$devopsProject" --yes
 az pipelines variable-group delete --group-id $variableGroupId --yes
+az pipelines delete --id $pipelineId --yes
+az devops service-endpoint delete --id $githubServiceEndpointId --yes
+az devops project delete --id "$projectId" --yes
+export AZURE_DEVOPS_EXT_GITHUB_PAT=""
+az storage account delete --name $storageAccountName --resource-group $resourceGroupName --yes
+az group delete --name $resourceGroupName --yes
 az devops configure --defaults organization="" project=""
 ```
 
 ## Azure CLI references used in this article
 
-Remove this sentence: alphabetize this list and provide links at the command level
-
-- [az config param-persist delete](/cli/azure/config/param-persist#az_config_param_persist_delete)
-- [az config param-persist off](/cli/azure/config/param-persist#az_config_param_persist_off)
-- [az config param-persist on](/cli/azure/config/param-persist#az_config_param_persist_on)
-- [az config param-persist show](/cli/azure/config/param-persist#az_config_param_persist_show)
-- [az function app create](/cli/azure/functionapp#az_functionapp_create)
-
 - [az group create](/cli/azure/group#az_group_create)
-- [az storage account create](/cli/azure/storage/account#az_storage_account_create)
-- [az devops configure](/cli/azure/ext/azure-devops/devops#ext_azure_devops_az_devops_configure)
+- [az group delete](/cli/azure/group#az_group_delete)
+- [az devops configure](/cli/azure/ext/azure-devops/devops#az_devops_configure)
 - [az devops project create](/cli/azure/devops/project#az_devops_project_create)
-- [az devops service-endpoint azurerm create](/cli/azure/ext/azure-devops/devops/service-endpoint/azurerm#ext_azure_devops_az_devops_service_endpoint_azurerm_create)
+- [az devops project delete](/cli/azure/devops/project#az_devops_project_delete)
 - [az devops service-endpoint github create](/cli/azure/ext/azure-devops/devops/service-endpoint/github#ext_azure_devops_az_devops_service_endpoint_github_create)
-- [az pipelines create](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_create)
+- [az pipelines create](/cli/azure/ext/azure-devops/pipelines#az_pipelines_create)
+- [az pipelines delete](/cli/azure/ext/azure-devops/pipelines#az_pipelines_delete)
 - [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_run)
 - [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_show)
 - [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
-- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create) 
+- [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_delete)
+- [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
+- [az pipelines variable-group variable update](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_update)
+- [az storage account create](/cli/azure/storage/account#az_storage_account_create)
+- [az storage account delete](/cli/azure/storage/account#az_storage_account_delete)
