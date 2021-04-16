@@ -54,17 +54,22 @@ By default, members of the project Contributors group have permissions to contri
 
 ## Open TFVC repository Security
 
+To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level)
+
 ::: moniker range="azure-devops"
 
-1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-	For example, here we choose (1) **Project Settings**, (2) **Repositories**, and then the (3) **TFVC repository**
+2. Open **Project settings>Repositories**.  
 
-	![Project Settings>Repositories>TFVC repo](media/tfvc-permissions/open-tfvc-repo-settings.png)
+	For example, Choose (1) **Project settings**, (2) **Repositories**, and then (3) the TFVC repository labeled with the name of the project.
 
-1. Next choose the user or security group you want to change permissions. 
+	> [!div class="mx-imgBorder"]  
+	> ![Project Settings>Repositories>TFVC repo](media/tfvc-permissions/open-tfvc-repositories-security-s185.png)
 
-1.  To set permissions for a specific user or group, enter their name in the identity box and select their identity. 
+1. Next, choose the user or security group you want to change permissions. 
+
+	To set permissions for a specific user or group, enter their name in the identity box and select their identity. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add user or group](media/tfvc-permissions/add-user-group.png)  
@@ -74,10 +79,7 @@ By default, members of the project Contributors group have permissions to contri
 	> [!div class="mx-imgBorder"]  
 	> ![Set permissions for a user or group](media/tfvc-permissions/set-tfvc-permissions.png)  
 
-	The changes are made automatically, no need to save your changes.  
-
-	> [!NOTE]  
-	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md#project-level)
+1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
 
 	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
 
