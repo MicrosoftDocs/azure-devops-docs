@@ -6,12 +6,13 @@ ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
-ms.date: 04/14/2021
 monikerRange: '<= azure-devops'
+ms.date: 04/14/2021
 ---
 
 
 #  Git command reference 
+
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 <a name="set_up"></a>
@@ -27,7 +28,7 @@ Team Explorer and the Git command-line work great together. When you make update
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, install[Git for Windows](https://git-scm.com/download/win) to set up the [Git Credential Manager Core](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
 
-While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
+While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click your local repo and select **Open Command Prompt**
    
 ![Open a command prompt to a repo from inside Visual Studio](media/command-prompt/open_cmd_prompt_repo_vs.png)
 
@@ -42,7 +43,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
       **How do I?** 
    :::column-end:::
    :::column span="1":::
-     **Git command-line **
+     **Git command-line**
    :::column-end:::
    :::column span="1":::
      **Visual Studio**
@@ -213,7 +214,7 @@ For additional information, see the following resources:
       **How do I?** 
    :::column-end:::
    :::column span="1":::
-     **Git command-line **
+     **Git command-line**
    :::column-end:::
    :::column span="1":::
      **Visual Studio**
@@ -285,10 +286,10 @@ For additional information, see the following resources:
       Lock a branch, preventing updates to it
    :::column-end:::
    :::column span="1":::
-     From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock**
+     Not applicable.
    :::column-end:::
    :::column span="1":::
-     Same as command line 
+     From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock**.
    :::column-end:::
 :::row-end:::
 ---
@@ -297,10 +298,10 @@ For additional information, see the following resources:
       Set a default branch in your Azure DevOps repo
    :::column-end:::
    :::column span="1":::
-     Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](media/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch**
+     Not applicable.
    :::column-end:::
    :::column span="1":::
-     Same as command line  
+     Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](media/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch**. 
    :::column-end:::
 :::row-end:::
 ---
@@ -309,10 +310,10 @@ For additional information, see the following resources:
       Set a compare branch for pull requests in  Azure DevOps repo
    :::column-end:::
    :::column span="1":::
-     From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch**
+     Not applicable.
    :::column-end:::
    :::column span="1":::
-     Same as command line
+     From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch**.
    :::column-end:::
 :::row-end:::
 ---
@@ -429,9 +430,20 @@ For additional information, see the following resources:
 To learn more, see [Save your work with commits](commits.md).
 
 ## Compare files and versions
+ 
 
-| How do I? | Git command | Visual Studio |
-|------------|-------------|--------------|
+---
+:::row:::
+   :::column span="1":::
+      **How do I?** 
+   :::column-end:::
+   :::column span="1":::
+     **Git command-line**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio**
+   :::column-end:::
+:::row-end:::
 ---
 :::row:::
    :::column span="1":::
@@ -441,7 +453,7 @@ To learn more, see [Save your work with commits](commits.md).
      `git diff HEAD` *filename* 
    :::column-end:::
    :::column span="1":::
-     Right-click on the change in the **Changes** view in Team Explorer and select **Compare with unmodified**.  
+     Right-click the change in the **Changes** view in Team Explorer and select **Compare with unmodified**.  
    :::column-end:::
 :::row-end:::
 ---
@@ -453,7 +465,7 @@ To learn more, see [Save your work with commits](commits.md).
      `git diff` *branchname*
    :::column-end:::
    :::column span="1":::
-     Right-click on a file in Solution Explorer and select **View History...**, then select both on the latest commit on your current branch and the latest commit on the remote branch. Right-click and select **Compare** 
+     Right-click a file in Solution Explorer and select **View History...**, then select both on the latest commit on your current branch and the latest commit on the remote branch. Right-click and select **Compare** 
    :::column-end:::
 :::row-end:::
 ---
@@ -465,7 +477,7 @@ To learn more, see [Save your work with commits](commits.md).
      `git diff` *branchname1* *branchname2*
    :::column-end:::
    :::column span="1":::
-     Right-click on a file in Solution Explorer and select **View History...**, then select the most recent commits for both branches. Right-click and select **Compare**
+     Right-click a file in Solution Explorer and select **View History...**, then select the most recent commits for both branches. Right-click and select **Compare**
    :::column-end:::
 :::row-end:::
 ---
@@ -481,7 +493,7 @@ To learn more, see [Compare versions and review history](review-history.md).
       **How do I?** 
    :::column-end:::
    :::column span="1":::
-     **Git command-line **
+     **Git command-line**
    :::column-end:::
    :::column span="1":::
      **Visual Studio**
@@ -564,7 +576,7 @@ For additional information, see the following resources:
       **How do I?** 
    :::column-end:::
    :::column span="1":::
-     **Git command-line **
+     **Git command-line**
    :::column-end:::
    :::column span="1":::
      **Visual Studio**
@@ -650,7 +662,7 @@ For additional information, see the following resources:
       **How do I?** 
    :::column-end:::
    :::column span="1":::
-     **Git command-line **
+     **Git command-line**
    :::column-end:::
    :::column span="1":::
      **Visual Studio**
@@ -659,23 +671,61 @@ For additional information, see the following resources:
 ---
 :::row:::
    :::column span="1":::
-      Revert all changes and roll back to the most recent commit| | `git reset --hard HEAD`| Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** |
----
+      Revert all changes and roll back to the most recent commit
+   :::column-end:::
+   :::column span="1":::
+     `git reset --hard HEAD
+   :::column-end:::
+   :::column span="1":::
+     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
+   :::column-end:::
+:::row-end:::
+---   
 :::row:::
    :::column span="1":::
-      Revert staging of files, but keep file changes  | `git reset --mixed HEAD` | Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**  |
----
+      Revert staging of files, but keep file changes
+   :::column-end:::
+   :::column span="1":::
+     `git reset --mixed HEAD`
+   :::column-end:::
+   :::column span="1":::
+     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**
+   :::column-end:::
+:::row-end:::
+---   
 :::row:::
    :::column span="1":::
-      Delete untracked files | `git clean -f` |In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.                                         |
----
+      Delete untracked files
+   :::column-end:::
+   :::column span="1":::
+     `git clean -f`
+   :::column-end:::
+   :::column span="1":::
+     In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.  
+   :::column-end:::
+:::row-end:::
+---   
 :::row:::
    :::column span="1":::
-      Reset your local branch to the most recent commit on a remote branch | `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/master`) |                                                        Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....** |
----
+      Reset your local branch to the most recent commit on a remote branch
+   :::column-end:::
+   :::column span="1":::
+     `git reset --hard` *remote*/*branchname*<br>(for example, `git reset --hard origin/master`)
+   :::column-end:::
+   :::column span="1":::
+     Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**  
+   :::column-end:::
+:::row-end:::
+---   
 :::row:::
    :::column span="1":::
-      Revert a commit pushed to a remote repository   | `git revert` *commitID*|Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
+      Revert a commit pushed to a remote repository
+   :::column-end:::
+   :::column span="1":::
+     `git revert` *commitID*
+   :::column-end:::
+   :::column span="1":::
+     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
    :::column-end:::
 :::row-end:::
 ---                          |
