@@ -1,4 +1,4 @@
-- Use the Bash environment in [Azure Cloud Shell](../articles/cloud-shell/quickstart.md).
+- Use the Bash environment in [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
    [![Launch Cloud Shell in a new window](media/cloud-shell-try-it/hdi-launch-cloud-shell.png)](https://shell.azure.com)
 - If you prefer, [install](/cli/azure/install-azure-cli) the Azure CLI to run CLI reference commands.
