@@ -31,7 +31,7 @@ You can link work items to existing builds from the **Add link** dialog. These b
 
 	If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it by choosing the :::image type="icon" source="/azure/devops/media/icons/actions-icon.png" border="false"::: icon. 
 
-	:::image type="content" source="/azure/devops/includes/media/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
+	:::image type="content" source="/azure/devops/media/add-links/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
  
 1. From the **Link builds** dialog, choose the parameters to filter your search of builds. 
 
@@ -39,12 +39,12 @@ You can link work items to existing builds from the **Add link** dialog. These b
 
 	For example, you can specify a build number, select a build pipeline, a build result&mdash;such as, **All**, **succeeded**, **partially succeeded**, **failed**, or **canceled**.  Or, with **All** selected for **Result**, choose **Find** to list the available builds to link to. 
 
-	:::image type="content" source="/azure/devops/includes/media/find-builds-dialog-filled-out.png" alt-text="Find builds dialog with project selected and builds listed. ":::
+	:::image type="content" source="/azure/devops/media/add-links/find-builds-dialog-filled-out.png" alt-text="Find builds dialog with project selected and builds listed. ":::
 
 1. Choose the build from the list you want to link to and then choose **OK**. 
 2. From the **Add link** dialog, choose **OK** to complete the operation.
 
-	:::image type="content" source="/azure/devops/includes/media/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
+	:::image type="content" source="/azure/devops/media/add-links/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ You can link work items to existing builds from the **Add link** dialog.
 
 	If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it by choosing the :::image type="icon" source="/azure/devops/media/icons/actions-icon.png" border="false"::: icon. 
 
-	:::image type="content" source="/azure/devops/includes/media/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
+	:::image type="content" source="/azure/devops/media/add-links/add-link-build.png" alt-text="Add link dialog with Build link type selected. ":::
  
 1. From the **Link builds** dialog, choose the parameters to filter your search of builds. 
 
@@ -72,7 +72,7 @@ You can link work items to existing builds from the **Add link** dialog.
 1. Choose the build from the list you want to link to and then choose **OK**. 
 2. From the **Add link** dialog, choose **OK** to complete the operation.
 
-	:::image type="content" source="/azure/devops/includes/media/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
+	:::image type="content" source="/azure/devops/media/add-links/add-link-build-filled-in.png" alt-text="Add link dialog with Build number filled in. ":::
 
 ::: moniker-end
 
