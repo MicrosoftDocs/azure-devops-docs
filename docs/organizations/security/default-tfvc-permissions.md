@@ -1,9 +1,8 @@
 ---
 title: TFVC repository default permissions
 titleSuffix: Azure DevOps
-description: At-a-glance view of default permissions assigned to built-in security groups made for Team Foundation Version Control (TFVC) repositories 
+description: Summary view of default Team Foundation Version Control (TFVC) repository permissions 
 ms.topic: reference
-ms.assetid:   
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
@@ -16,8 +15,7 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
- 
+All members of the Contributors group with Basic access can contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
