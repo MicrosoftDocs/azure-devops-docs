@@ -1,6 +1,6 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.date: 02/17/2021
 --- 
 
 
-# Grant or restrict access
+# Grant or restrict access using permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
