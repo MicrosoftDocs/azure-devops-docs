@@ -514,7 +514,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 ## Related articles
 
 * To view permissions for yourself or another user, see [View permissions](view-permissions.md).
-* [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
+* [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
+* [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)

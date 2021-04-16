@@ -1,7 +1,7 @@
 ---
-title: Repository settings
+title: Git repository settings
 titleSuffix: Azure Repos
-description: Repository settings
+description: Learn about settings you can set for a Git repository  
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
 ms.topic: conceptual
@@ -9,13 +9,13 @@ ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Repository settings
+# Git repository settings and policies
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
 Git repositories can be customized to a great extent on Azure DevOps Services and Team Foundation Server.
 Global options for entire repositories are configured by repository settings.
-There are also user-specific and branch-specific controls, covered by [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.
+There are also user-specific and branch-specific controls, covered by [permissions](set-git-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.
 
 This topic covers server-side repository settings.
 You may also want to learn about client-side [Git preferences](git-config.md).
@@ -425,7 +425,7 @@ For instructions on configuring this policy using Azure CLI, see [View and edit 
 
 For branch-specific settings, you should look at [branch policies](branch-policies.md).
 These include options like requiring a pull request, a successful build, or a code review.
-For user-specific settings, you probably want [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
+For user-specific settings, you probably want [permissions](set-git-repository-permissions.md#git-repository).
 Permissions allow you to control who can read, write, contribute to pull requests, and other specific actions.
 
 
@@ -433,4 +433,4 @@ Permissions allow you to control who can read, write, contribute to pull request
 
 - [Set branch policies](branch-policies.md)
 - [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
-- [Set permissions (Security)](../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)  
+- [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)  

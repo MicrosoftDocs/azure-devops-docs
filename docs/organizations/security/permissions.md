@@ -46,8 +46,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
@@ -98,8 +98,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -155,8 +155,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -206,8 +206,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -2413,8 +2413,7 @@ Remove Others' Locks
 Rename Repository 
 -->
 
-
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+You manage the security of each [Git repository](../../repos/git/set-git-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 
 ::: moniker range="<= tfs-2017" 
@@ -2566,7 +2565,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+You manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a project setup to use Team Foundation Version Control as the source control system.
 

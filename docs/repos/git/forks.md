@@ -70,7 +70,7 @@ This will isolate their changes from yours until you've had a chance to vet the 
 
 > [!NOTE]
 > You must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
-> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
+> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](set-git-repository-permissions.md#set-git-repository-permissions).
 
 <a name="clone-locally" />
 

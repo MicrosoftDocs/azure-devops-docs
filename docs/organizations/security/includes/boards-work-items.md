@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 02/25/2021
+ms.date: 04/14/2021
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 02/25/2021
 ---
 :::row:::
    :::column span="2":::
-      **Task** 
+      **Task or permission** 
    :::column-end:::
    :::column span="1":::
       **Stakeholder**
@@ -38,7 +38,8 @@ ms.date: 02/25/2021
 ---
 :::row:::
    :::column span="2":::
-      View/open work items
+      **View work items in this node** 
+      (Area Path permission)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -56,7 +57,26 @@ ms.date: 02/25/2021
 ---
 :::row:::
    :::column span="2":::
-      Add work items, add tags to work items  
+      **Edit work items in this node** 
+      (Area Path permission)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Create tag definition** 
       *(Stakeholders can assign existing tags to work items, but can't add new tags)*
    :::column-end:::
    :::column span="1":::
@@ -76,7 +96,8 @@ ms.date: 02/25/2021
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
-      Change work item type
+      **Change work item type**
+      (Project-level permission)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -94,7 +115,8 @@ ms.date: 02/25/2021
 ---
 :::row:::
    :::column span="2":::
-      Move work item to another project
+      **Move work items out of this project**
+      (Project-level permission)
    :::column-end:::
    :::column span="1":::
        
@@ -152,7 +174,9 @@ ms.date: 02/25/2021
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
-      Delete work items (able to restore from the Recycle bin)
+      Delete and restore work items  
+      (Project-level permission) 
+      (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -172,7 +196,8 @@ ms.date: 02/25/2021
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="2":::
-      Permanently delete work items
+      **Permanently delete work items**
+      (Project-level permission) 
    :::column-end:::
    :::column span="1":::
 

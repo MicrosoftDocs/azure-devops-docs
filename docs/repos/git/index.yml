@@ -96,7 +96,7 @@ landingContent:
           - text: Manage Git branch policies
             url: ./branch-policies.md 
           - text: Manage repository permissions
-            url: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json 
+            url: ./set-git-repository-permissions.md 
           - text: Set branch permissions 
             url: ./branch-permissions.md
   - title: Reference
