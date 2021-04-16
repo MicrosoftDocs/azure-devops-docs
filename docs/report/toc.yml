@@ -5,11 +5,11 @@
   items:
   - name: Dashboards, charts, reports, & widgets
     displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
-    href: overview.md
+    href: dashboards/overview.md
   - name: Quick reference
-    href: quick-ref.md
+    href: dashboards/quick-ref.md
   - name: Widget catalog
-    href: widget-catalog.md
+    href: dashboards/widget-catalog.md
   - name: What is the Analytics service?
     href: powerbi/what-is-analytics.md
   - name: Reporting roadmap 
