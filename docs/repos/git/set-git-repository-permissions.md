@@ -21,6 +21,8 @@ You grant or restrict access to repositories to lock down who can contribute to 
 > [!NOTE]   
 > Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](branch-permissions.md) and [Improve code quality with branch policies](branch-policies.md).
  
+For guidance on who to provide greater permission levels, see [Grant or restrict access using permissions](../../organizations/security/restrict-access.md).
+
 
 ## Prerequisites
 
@@ -199,6 +201,7 @@ By granting the first permission and denying the second, a user can use the bypa
 
 ## Related articles
 
+- [Grant or restrict access using permissions](../../organizations/security/restrict-access.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Tf git permission command-line tool](../tfvc/git-permission-command.md)  

@@ -18,15 +18,13 @@ ms.date: 04/14/2021
 
 
 You grant or restrict access to a TFVC repository to lock down who can contribute to your source code. There is only one TFVC repository per project.   
- 
 
-By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
+For guidance on who to provide greater permission levels, see [Grant or restrict access using permissions](../../organizations/security/restrict-access.md).
 
 ## Prerequisites
 
 * You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).
 * You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for the TFVC repository.  
-
 
 ::: moniker range="azure-devops"
 
@@ -83,6 +81,8 @@ To set permissions for a custom security group, you must have defined that group
 
 	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
 
+	[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
+
 ::: moniker-end    
 
 
@@ -96,8 +96,9 @@ To set permissions for a custom security group, you must have defined that group
 
 	[![Project Settings>Code>Repositories>TFVC repositories>Security.](media/tfvc-permissions/open-tfvc-repository-security-vert-reduced.png)](media/tfvc-permissions/open-tfvc-repository-security-vert.png#lightbox) 
 
-	> [!NOTE]  
-	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+	[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
+
+	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
 
 1. Save your changes.  
 
@@ -115,6 +116,8 @@ To set permissions for a custom security group, you must have defined that group
 
 	![Security dialog for the TFVC repository, Contributors group](media/tfvc-permissions/set-repo-tfvc-permissions.png)  
 
+	[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
+
 3. Save your changes. 
 
 ::: moniker-end
@@ -122,6 +125,7 @@ To set permissions for a custom security group, you must have defined that group
 
 ## Related articles
 
+- [Grant or restrict access using permissions](../../organizations/security/restrict-access.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)  
 - [Tf Team Foundation Version Control (TFVC) permission command-line tool](permission-command.md)  
