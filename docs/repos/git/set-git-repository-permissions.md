@@ -106,7 +106,8 @@ You can grant or restrict access to a repository by setting the permission state
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
@@ -118,6 +119,7 @@ You can grant or restrict access to a repository by setting the permission state
 2. Choose **Version Control**.
 
 3. To set the set the permissions for all Git repositories for a project, (1) choose **Git Repositories** and then (2) choose the security group whose permissions you want to manage. 
+
 	[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
@@ -133,6 +135,28 @@ You can grant or restrict access to a repository by setting the permission state
 ::: moniker-end
 
 
+::: moniker range="<= tfs-2015"
+
+Individual repositories inherit permissions from the top-level **Git Repository** security settings. Branches inherit permissions from assignments made at the repository level.   
+ 
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+
+1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
+
+2. Choose **Version Control**.
+
+3. To set the set the permissions for all Git repositories for a project, (1) choose **Git Repositories** and then (2) choose the security group whose permissions you want to manage. 
+
+	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
+
+4. Choose the setting for the permission you want to change. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Git repository permissions dialog, prior to TFS 2017.1](media/git-permissions/git-permissions-prior-to-2017.png)  
+
+5. When done, choose **Save changes**. 
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 

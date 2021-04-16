@@ -12,7 +12,7 @@ ms.date: 04/15/2021
 ---
 :::row:::
    :::column span="2":::
-      **Task** 
+      **Permission** 
    :::column-end:::
    :::column span="1":::
      **Readers**
@@ -150,7 +150,7 @@ By default, the project-level Readers groups have read-only permissions.
 ---
 :::row:::
    :::column span="2":::
-      **Task** 
+      **Permission** 
    :::column-end:::
    :::column span="1":::
      **Contributors**
