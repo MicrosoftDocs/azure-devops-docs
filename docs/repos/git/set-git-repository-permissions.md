@@ -13,12 +13,14 @@ ms.date: 04/14/2021
 
 # Set Git repository permissions 
 
-[!INCLUDE all-versions](../../includes/version-all.md)]
+
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You grant or restrict access to repositories to lock down who can contribute to your source code and manage other features.  You can set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. 
 
-Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](/azure/devops/repos/git/branch-permissions) and [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies).
-
+> [!NOTE]   
+> Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](branch-permissions.md) and [Improve code quality with branch policies](branch-policies.md).
+ 
 
 ## Prerequisites
 
@@ -120,7 +122,7 @@ You can grant or restrict access to a repository by setting the permission state
 
 4. Choose the setting for the permission you want to change. 
 
-	Here we grant permissions to the Contributors group to (3) create repositories. 
+	Here we grant permissions to the Contributors group to (3) **Create repository**. 
 
 	![Security dialog for all Git repositories, Contributors group](media/git-permissions/set-repo-git-permissions.png)  
 
@@ -156,6 +158,8 @@ To set permissions for a custom security group, you must have defined that group
 
 	Then make the changes to the permission set. 
 
+	[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
+
 1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
 
 > [!NOTE]   
@@ -174,6 +178,25 @@ To set permissions for a custom security group, you must have defined that group
 ::: moniker-end
 
 
+
+::: moniker range=">= tfs-2017"
+
+## Exempt from policy enforcement and bypass policy permissions
+
+There are many scenarios where you have the occasional need to bypass a branch policy. For example, when reverting a change that caused a build break or applying a hotfix in the middle of the night. Previously, the **Exempt from policy enforcement** permission helped teams manage which users were granted the ability to bypass branch policies when completing a pull request. However, that permission also granted the ability to push directly to the branch, bypassing the PR process entirely. 
+ 
+To improve this experience, we split the **Exempt from policy enforcement** permission to offer more control to teams that are granting bypass permissions. There are two new permissions to replace the old one: 
+ 
+1. **Bypass policies when completing pull requests.** Users with this permission will be able to use the "Override" experience for pull requests.
+1. **Bypass policies when pushing.** Users with this permission will be able to push directly to branches that have required policies configured. 
+
+By granting the first permission and denying the second, a user can use the bypass option when necessary, but will still have the protection from accidentally pushing to a branch with policies.
+ 
+> [!NOTE]
+> This change does not introduce any behavior changes. Users that were formerly granted **Allow** for **Exempt from policy enforcement** are granted **Allow** for both new permissions, so they'll be able to both override completion on PRs and push directly to branches with policies.
+
+::: moniker-end
+
 ## Related articles
 
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
@@ -181,23 +204,4 @@ To set permissions for a custom security group, you must have defined that group
 - [Tf git permission command-line tool](../tfvc/git-permission-command.md)  
 - [Security REST API commands](/rest/api/azure/devops/security/)
  
-
-<!--- 
-
-
-
-
-
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
-
-2. Open **Project settings>Repositories**.  
-
-	To set the permissions for all Git repositories, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
-
-	For example, here we choose (1) **Project settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Bypass policies when pushing**.
-
-	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
-
-	[![Project Settings>Code>Repositories>Git repositories>Security.](media/git-permissions/open-git-repo.png)](media/git-permissions/open-git-repo-wide.png#lightbox) 
-
---> 
+ 

@@ -16,6 +16,10 @@ ms.date: 04/14/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
+
+You grant or restrict access to a TFVC repository to lock down who can contribute to your source code. There is only one TFVC repository per project.   
+ 
+
 By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
 ## Prerequisites
@@ -23,7 +27,6 @@ By default, members of the project Contributors group have permissions to contri
 * You must have a project. If you don't have a project yet, create one in [Azure DevOps](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../organizations/projects/create-project.md).
 * You must be a member of the [Project Administrators Group](../../organizations/security/set-project-collection-level-permissions.md) or have your **Manage permissions** set to **Allow** for the TFVC repository.  
 
-## Default repository permissions  
 
 ::: moniker range="azure-devops"
 
@@ -34,15 +37,14 @@ To contribute to the source code, you must be granted **Basic** access level or 
 ::: moniker range="< azure-devops"
 
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. To learn more, see [About access levels](../../organizations/security/access-levels.md).
-::: moniker-end
+::: moniker-end 
 
-For a description of each security group and permission level, see [Permissions and group reference](../../organizations/security/permissions.md).  
+
+
+## Default repository permissions  
+
+By default, members of the project Contributors group have permissions to contribute to a repository. For a description of each security group and permission level, see [Permissions and group reference](../../organizations/security/permissions.md).  
  
-::: moniker range="<= tfs-2015"
-
-[Team Foundation Version Control (TFVC)](index.yml) provides a centralized version control system to manage your source control. 
-
-::: moniker-end
 
 [!INCLUDE [temp](../../organizations/security/includes/code-tfvc.md)]
 
@@ -58,7 +60,7 @@ For a description of each security group and permission level, see [Permissions 
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, and then the (3) **TFVC repository**
 
-	![Project Settings>Repositories>TFVC repo}(media/tfvc-permissions/open-tfvc-repo-settings.png)
+	![Project Settings>Repositories>TFVC repo](media/tfvc-permissions/open-tfvc-repo-settings.png)
 
 1. Next choose the user or security group you want to change permissions. 
 
