@@ -245,26 +245,26 @@ https://ccache.dev/manual/latest.html#_configuration_settings) for more options,
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
-pool:
-  vmImage: ubuntu-16.04
+parameters:
+  - name: cacheImages
+    type: string
 
 steps:
   - task: Cache@2
     inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      key: docker | **/Dockerfile | "${{ parameters.cacheImages }}"
       path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
+      cacheHitVar: DOCKER_CACHE_HIT
+    displayName: Cache Docker images
   - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
+      docker load -i $(Pipeline.Workspace)/docker/cache.tar
+    displayName: Restore Docker image
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_HIT, 'true'))
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+    displayName: Save Docker image
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_HIT, 'true')))
 ```
 
 ## Golang
