@@ -1,11 +1,5 @@
-- name: Dashboards, charts, reports, & widgets
-  displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
-  href: overview.md
-- name: Quick reference
-  href: quick-ref.md
-- name: Widget catalog
-  href: widget-catalog.md
-- name: Add & manage dashboards
+
+- name: Dashboards
   items:
   - name: "Add, rename, & delete dashboards"
     displayname: filter, dashboard, auto-refresh, add widget, delete widget
@@ -20,10 +14,13 @@
     href: add-markdown-to-dashboard.md
   - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
-- name: Configure charts & widgets
+- name: Charts & widgets
   items:
   - name: Create work tracking charts
     href: charts.md
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
+  - name: Create test tracking charts
+    href: ../../test/track-test-status#charts?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: cumulative-flow.md

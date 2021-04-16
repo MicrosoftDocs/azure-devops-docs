@@ -1,13 +1,22 @@
 - name: Reporting
   expanded: false
   href: index.yml
-- name: What is the Analytics service?
-  href: powerbi/what-is-analytics.md
-- name: Reporting roadmap 
-  href: powerbi/reporting-roadmap.md
+- name: Get started
+  items:
+  - name: Dashboards, charts, reports, & widgets
+    displayname: charts, in-context charts, in context reports, powerbi reports, status, trends, work tracking, testing, progress, test results, marketplace widgets, built-in
+    href: overview.md
+  - name: Quick reference
+    href: quick-ref.md
+  - name: Widget catalog
+    href: widget-catalog.md
+  - name: What is the Analytics service?
+    href: powerbi/what-is-analytics.md
+  - name: Reporting roadmap 
+    href: powerbi/reporting-roadmap.md
 - name: Dashboards, charts, reports, & widgets   
   href: dashboards/toc.yml  
-- name: Analytics & Power BI integration (Preview)
+- name: Analytics & Power BI integration 
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
