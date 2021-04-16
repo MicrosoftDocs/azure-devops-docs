@@ -20,7 +20,7 @@
     href: charts.md
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: Create test tracking charts
-    href: ../../test/track-test-status#charts?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../../test/track-test-status.md#charts?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: cumulative-flow.md
