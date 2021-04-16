@@ -21,7 +21,7 @@ This script demonstrates three operations:
 * Defining a pipeline using [YAML](../../yaml-schema.md) files and variable groups that contain secret and nonsecret variables
 * Managing and monitoring a pipeline
 
-[!INCLUDE [azure-cli-prepare-your-environment.md](../../../../../includes/azure-cli-prepare-your-environment.md)]
+[!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
 ## Sample script
 
