@@ -169,7 +169,7 @@ To set permissions for a custom security group, you must have defined that group
 	:::image type="content" source="media/git-permissions/choose-security-group.png" alt-text="Screenshot showing choosing Contributors group.":::
 
 1. Change one or more permissions. To grant a permissions, change **Not Set** to **Allow**. To restrict permissions, change **Allow** to **Deny**.   
-2. 
+
 	:::image type="content" source="media/git-permissions/change-permissions.png" alt-text="Screenshot showing three permissions changed for the Contributors group.":::
 
 1. When done, navigate away from the page. The permission changes are automatically saved for the selected group. 
@@ -211,10 +211,10 @@ To set permissions for a custom security group, you must have defined that group
 
 There are many scenarios where you have the occasional need to bypass a branch policy. For example, when reverting a change that caused a build break or applying a hotfix in the middle of the night. Previously, the **Exempt from policy enforcement** permission helped teams manage which users were granted the ability to bypass branch policies when completing a pull request. However, that permission also granted the ability to push directly to the branch, bypassing the PR process entirely. 
  
-To improve this experience, we split the **Exempt from policy enforcement** permission to offer more control to teams that are granting bypass permissions. There are two new permissions to replace the old one: 
+To improve this experience, we split the **Exempt from policy enforcement** permission to offer more control to teams that are granting bypass permissions. The following two permissions replace the former permission: 
  
-1. **Bypass policies when completing pull requests.** Users with this permission will be able to use the "Override" experience for pull requests.
-1. **Bypass policies when pushing.** Users with this permission will be able to push directly to branches that have required policies configured. 
+- **Bypass policies when completing pull requests.** Users with this permission will be able to use the "Override" experience for pull requests.
+- **Bypass policies when pushing.** Users with this permission will be able to push directly to branches that have required policies configured. 
 
 By granting the first permission and denying the second, a user can use the bypass option when necessary, but will still have the protection from accidentally pushing to a branch with policies.
  
