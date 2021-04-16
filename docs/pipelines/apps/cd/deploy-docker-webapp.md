@@ -167,7 +167,7 @@ To complete this section successfully, you will need to have an [Azure Container
 
 1. Your pipeline logs should look similar to the snapshot below. 
 
-    :::image type="content" source="media/pipeline-logs.png" alt-text="Pipeline logs":::
+    :::image type="content" source="media/pipeline-logs.png" lightbox="media/pipeline-logs.png" alt-text="Pipeline logs":::
 
 1. Navigate to your newly deployed web app to verify your deployment.
 
