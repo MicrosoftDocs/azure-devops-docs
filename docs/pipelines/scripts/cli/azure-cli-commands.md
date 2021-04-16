@@ -28,7 +28,7 @@ This script demonstrates three operations:
 > [!NOTE]
 > Add note of FYI or caution if needed here.
 
-Save the following YAML file to `azure-pipelines.yml` in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
+First, save the following YAML file to `azure-pipelines.yml` in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
 
 ```yml
 # Azure file copy
@@ -55,6 +55,8 @@ Save the following YAML file to `azure-pipelines.yml` in the root directory of y
     #skipCACheck: true # Optional
     #sasTokenTimeOutInMinutes: # Optional
 ```
+
+Next, in the following Bash script, replace the placeholders, and then run the script:
 
 ```azurecli-interactive
 #!/bin/bash
