@@ -327,8 +327,18 @@ For additional information, see the following resources:
 
 ## Commits
 
-| How do I? | Git command | Visual Studio |
-|------------|-------------|--------------|
+---
+:::row:::
+   :::column span="1":::
+      **How do I?** 
+   :::column-end:::
+   :::column span="1":::
+     **Git command-line**
+   :::column-end:::
+   :::column span="1":::
+     **Visual Studio**
+   :::column-end:::
+:::row-end:::
 ---
 :::row:::
    :::column span="1":::
@@ -615,7 +625,7 @@ For additional information, see the following resources:
      `git rebase` *branchname*
    :::column-end:::
    :::column span="1":::
-     In the Team Explorer **Branches** view, right-click the branch you want to rebase your current branch changes onto and select **Rebase Onto.."**
+     In the Team Explorer **Branches** view, right-click the branch you want to rebase your current branch changes onto and select **Rebase Onto...**
    :::column-end:::
 :::row-end:::
 ---
@@ -627,7 +637,7 @@ For additional information, see the following resources:
      `git rebase -i HEAD`~*n* (Linux and macOS)<br>`git rebase -i "HEAD`^*n*" (Windows)
    :::column-end:::
    :::column span="1":::
-     Use command line
+     Not applicable
    :::column-end:::
 :::row-end:::
 ---
@@ -639,7 +649,7 @@ For additional information, see the following resources:
      `git cherry-pick` *commitID*
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Cherry-pick** 
+     Open the **Changes** view in Team Explorer, then choose **View history...** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Cherry-pick** 
    :::column-end:::
 :::row-end:::
 ---
@@ -674,10 +684,10 @@ For additional information, see the following resources:
       Revert all changes and roll back to the most recent commit
    :::column-end:::
    :::column span="1":::
-     `git reset --hard HEAD
+     `git reset --hard HEAD`
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
+     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
    :::column-end:::
 :::row-end:::
 ---   
@@ -689,7 +699,7 @@ For additional information, see the following resources:
      `git reset --mixed HEAD`
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**
+     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**
    :::column-end:::
 :::row-end:::
 ---   
@@ -725,9 +735,10 @@ For additional information, see the following resources:
      `git revert` *commitID*
    :::column-end:::
    :::column span="1":::
-     Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
+     Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit to revert and select **Revert**. 
    :::column-end:::
 :::row-end:::
----                          |
-   
+--- 
+
+ 
 To learn more, see [Undo changes and commits](undo.md).
