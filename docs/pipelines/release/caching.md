@@ -245,14 +245,13 @@ https://ccache.dev/manual/latest.html#_configuration_settings) for more options,
 Caching Docker images dramatically reduces the time it takes to run your pipeline.
 
 ```yaml
-parameters:
-  - name: cacheImages
-    type: string
+pool:
+  vmImage: 'Ubuntu-16.04'
 
 steps:
   - task: Cache@2
     inputs:
-      key: docker | **/Dockerfile | "${{ parameters.cacheImages }}"
+      key: 'docker | cache'
       path: $(Pipeline.Workspace)/docker
       cacheHitVar: DOCKER_CACHE_HIT
     displayName: Cache Docker images
