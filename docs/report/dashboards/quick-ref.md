@@ -22,197 +22,94 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ## Tasks
 
-::: moniker range=">= azure-devops-2020"
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="50%"> 
-<strong>Dashboards</strong>
-<ul>
-<li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
-<li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a chart to a dashboard](add-charts-to-dashboard.md)">Add a chart to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
-<li><a href="charts.md" data-raw-source="[Add a work-tracking query chart](charts.md)">Add a work-tracking query chart</a></li>
-<li><a href="charts.md" data-raw-source="[Add a test status or progress chart](charts.md)">Add a test status or progress chart</a></li>
-<li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
+---
+:::row:::
+   :::column span="2":::
+      **Dashboards** 
+      ::: moniker range=">= azure-devops-2019"
+      - [Add a dashboard](dashboards.md)  
+      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
+      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
+      - [Add a work-tracking query chart](charts.md)  
+      - [Add a test status or progress chart](../../test/track-test-status.md)  
+      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
 <br/>
-<li><a href="add-widget-to-dashboard.md#copy" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)">Copy a widget to a dashboard</a>
-<li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
-<li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
-<li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Filter a dashboard](dashboards.md)">Filter a dashboard</a></li>
+      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)"  
+      - [Delete a dashboard](dashboards.md)  
+      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)"  
+      - [Edit a dashboard](dashboards.md)  
+      - [Enable auto-refresh](dashboards.md)  
+      - [Favorite a dashboard](dashboards.md)  
+      - [Filter a dashboard](dashboards.md)  
 <br/> 
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li> 
-<li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
-<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li> 
-<li><a href="dashboards.md" data-raw-source="[View a dashboard](dashboards.md)">View a dashboard</a></li>
-</ul>
-</td>
-<td width="50%"> 
-<strong>Analytics</strong>
-<ul>
-<li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
-<li><a href="analytics-widgets.md">Analytics widgets</a></li>
-<li><a href="../powerbi/what-is-analytics.md">What is Analytics?</a></li>
-</ul>
-<strong>Charts</strong>
-<ul>
-<li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
-<li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
-</ul>
-<strong>Reports</strong>
-<ul>
-<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
-<li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
-</ul>
-<strong>Widgets</strong>
-<ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
-<li><a href="configure-sprint-burndown.md">Configure Sprint Burndown widget</a> 
-<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
-<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
-<li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
----
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="50%"> 
-<strong>Dashboards</strong>
-<ul>
-<li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
-<li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a chart to a dashboard](add-charts-to-dashboard.md)">Add a chart to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
-<li><a href="charts.md" data-raw-source="[Add a work-tracking query chart](charts.md)">Add a work-tracking query chart</a></li>
-<li><a href="charts.md" data-raw-source="[Add a test status or progress chart](charts.md)">Add a test status or progress chart</a></li>
-<li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
+      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
+      - [Open a dashboard](dashboards.md)  
+      - [Rename a dashboard](dashboards.md)  
+      - [Refresh a dashboard](dashboards.md)  
+      - [Set dashboard permissions](dashboard-permissions.md)  
+      - [View a dashboard](dashboards.md)  
+      ::: moniker-end
+      ::: moniker range="< azure-devops-2019"
+      - [Add a dashboard](dashboards.md)  
+      - [Add a chart to a dashboard](add-charts-to-dashboard.md)  
+      - [Add a widget to a dashboard](add-widget-to-dashboard.md)  
+      - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)  
 <br/>
-<li><a href="add-widget-to-dashboard.md#copy" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)">Copy a widget to a dashboard</a>
-<li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
-<li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
-<li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Filter a dashboard](dashboards.md)">Filter a dashboard</a></li>
+      - [Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)"  
+      - [Delete a dashboard](dashboards.md)  
+      - [Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)"  
+      - [Edit a dashboard](dashboards.md)  
+      - [Enable auto-refresh](dashboards.md)  
+      - [Favorite a dashboard](dashboards.md)  
+      - [Filter dashboard directory](dashboards.md)  
 <br/> 
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li><br/> 
-<li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
-<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li> 
-<li><a href="dashboards.md" data-raw-source="[View a dashboard](dashboards.md)">View a dashboard</a></li>
-</ul>
-</td>
-<td width="50%"> 
-<strong>Analytics</strong>
-<ul>
-<li><a href="../powerbi/analytics-default-views.md">Analytics views</a></li>
-<li><a href="analytics-widgets.md">Analytics widgets</a></li>
-<li><a href="analytics-extension.md">Enable or install Analytics</a></li>
-<li><a href="../powerbi/what-is-analytics.md">What is Analytics?</a></li>
-</ul>
-<strong>Charts</strong>
-<ul>
-<li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
-<li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
-</ul>
-<strong>Reports</strong>
-<ul>
-<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
-<li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
-<li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
-<li><a href="../../report/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
-</ul>
-<strong>Widgets</strong>
-<ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
-<li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
-<li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
-<li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
-<li><a href="configure-test-results-trend.md" data-raw-source="[Configure the Test Results widget](configure-test-results-trend.md)">Configure the Test Results widget</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+      - [Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)  
+      - [Open a dashboard](dashboards.md)  
+      - [Rename a dashboard](dashboards.md)  
+      - [Refresh a dashboard](dashboards.md)  
+      - [Set dashboard permissions](dashboard-permissions.md)  
+      - [View a dashboard](dashboards.md)  
+      ::: moniker-end
 
+   :::column-end:::
+   :::column span="2":::
+      **Charts** 
+      - [Work-tracking query chart](charts.md) 
+      - [Test status or progress chart](../../test/track-test-status.md) 
+      ::: moniker range=">= azure-devops-2019"
+      **Analytics**  
+      - [Analytics views](../powerbi/analytics-default-views.md)  
+      - [Analytics widgets](analytics-widgets.md)  
+      - [What is Analytics?](../powerbi/what-is-analytics.md)  
+      - [Enable or install Analytics](analytics-extension.md) 
+      - [Power BI reports](../powerbi/overview.md#sample-reports)  
+      - [OData](../extend-analytics/quick-ref.md)  
+      ::: moniker-end
+      ::: moniker range="<= azure-devops-2019"
+      **SQL Reports** 
+      - [SQL Server reports](../../report/sql-reports/reporting-services-reports.md)  
+      - [Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)  
+      ::: moniker-end
+      **Widgets** 
+      ::: moniker range=">= azure-devops-2019"
+      - [Configure a widget](add-widget-to-dashboard.md#configure)  
+      - [Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)  
+      - [Configure Sprint Burndown widget](configure-sprint-burndown.md)   
+      - [Configure the Cumulative Flow widget](cumulative-flow.md) 
+      - [Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md) 
+      - [Configure the Velocity widget](team-velocity.md) 
+      - [Configure the Test Results widget](configure-test-results-trend.md)  
+      - [Resize a widget](add-widget-to-dashboard.md) 
+      ::: moniker-end
+      ::: moniker range="< azure-devops-2019"
+      - [Configure a widget](add-widget-to-dashboard.md#configure)  
+      - [Resize a widget](add-widget-to-dashboard.md) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
 ---
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="50%"> 
-<strong>Dashboards</strong>
-<ul>
-<li><a href="dashboards.md" data-raw-source="[Add a dashboard](dashboards.md)">Add a dashboard</a></li>
-<li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a built-in chart to a dashboard](add-charts-to-dashboard.md)">Add a built-in chart to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
-<li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md)">Copy a widget to a dashboard</a>	
-<li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
-<li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Enable auto-refresh](dashboards.md)">Enable auto-refresh</a></li>
-<br/> 
-<li><a href="dashboards.md" data-raw-source="[Favorite a dashboard](dashboards.md)">Favorite a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Filter dashboard directory](dashboards.md)">Filter dashboard directory</a></li> 
-<li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Move widgets on a dashboard](add-widget-to-dashboard.md#move-delete)">Move widgets on a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Open a dashboard](dashboards.md)">Open a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Rename a dashboard](dashboards.md)">Rename a dashboard</a></li>
-<li><a href="dashboards.md" data-raw-source="[Refresh a dashboard](dashboards.md)">Refresh a dashboard</a></li>
-<li><a href="dashboard-permissions.md" data-raw-source="[Set dashboard permissions](dashboard-permissions.md)">Set dashboard permissions</a></li>
-<li><a href="dashboards.md" data-raw-source="[View a dashboard](dashboards.md)">View a dashboard</a></li>
-</ul>
-</td>
-<td width="50%">
-<strong>Charts</strong>
-<ul>
-<li><a href="charts.md" data-raw-source="[Work-tracking query chart](charts.md)">Work-tracking query chart</a></li>
-<li><a href="charts.md" data-raw-source="[Test status or progress chart](charts.md)">Test status or progress chart</a></li>
-</ul>
-<strong>Reports</strong>
-<ul>
-<li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
-<li><a href="../../report/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
-</ul>
-<strong>Widgets</strong>
-<ul>
-<li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
-<li><a href="add-widget-to-dashboard.md" data-raw-source="[Resize a widget](add-widget-to-dashboard.md)">Resize a widget</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
----
-
-::: moniker-end
+ 
 
 
 ## In-context reports
