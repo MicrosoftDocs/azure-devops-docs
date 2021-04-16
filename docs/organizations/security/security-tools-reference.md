@@ -70,8 +70,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Add users to an organization](../accounts/add-organization-users.md)                |   ✔️  |   ✔️  |     |  
 | [Organization-level, auditing, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |   ✔️  |     |  
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |   ✔️  |     |  
-| [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |   ✔️  |  ✔️ |  
-| [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |   ✔️  |  ✔️ |  
+| [Git repository](../../repos/git/set-git-repository-permissions.md)                             |   ✔️  |   ✔️  |  ✔️ |  
+| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)            |   ✔️  |   ✔️  |  ✔️ |  
 | [Builds, Task groups](../../pipelines/policies/permissions.md#set-pipeline-permissions)  |   ✔️  |   ✔️  |     |  
 | [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |   ✔️  |     |  
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️  |     |  
@@ -82,7 +82,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)         |   ✔️  |   ✔️  |     |  
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                       |   ✔️  |   ✔️  |     |  
 | [Analytics views](../../report/powerbi/analytics-security.md)                        |   ✔️  |   ✔️  |     |  
-| [Dashboards](../..//report/dashboards/dashboard-permissions.md)                      |   ✔️  |   ✔️  |     |  
+| [Dashboards](../../report/dashboards/dashboard-permissions.md)                      |   ✔️  |   ✔️  |     |  
 | [Notifications or alerts](permissions.md#alerts)                                     |       |   ✔️   |    |   
 
 ::: moniker-end
@@ -94,8 +94,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Add users to a server instance](../accounts/add-organization-users.md)              |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Collection-level, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |  ✔️  |   ✔️   |     | 
-| [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |  ✔️  |   ✔️   |  ✔️ | 
-| [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |  ✔️ |   ✔️   |  ✔️ | 
+| [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️  |   ✔️   |  ✔️ | 
+| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)             |   ✔️  |  ✔️ |   ✔️   |  ✔️ | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)               |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)      |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                   |   ✔️  |   ✔️ |  ✔️   |     | 
@@ -106,7 +106,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)         |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                       |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Analytics views](../../report/powerbi/analytics-security.md)                        |   ✔️  |  ✔️ |   ✔️   |     | 
-| [Dashboards](../..//report/dashboards/dashboard-permissions.md)                      |   ✔️  |  ✔️ |   ✔️   |     | 
+| [Dashboards](../../report/dashboards/dashboard-permissions.md)                      |   ✔️  |  ✔️ |   ✔️   |     | 
 | [Notifications or alerts](permissions.md#alerts)                                     |       |  ✔️ |   ✔️   |     | 
 
 
@@ -121,8 +121,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level, process, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
-| [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
-| [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
+| [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
+| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)          |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
@@ -133,7 +133,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
 | [Analytics views](../../report/powerbi/analytics-security.md)                       |   ✔️  |  ✔️ |     | 
-| [Dashboards](../..//report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |     | 
+| [Dashboards](../../report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |     | 
 | [Notifications or alerts](permissions.md#alerts)                                    |   ✔️  |  ✔️ |     | 
 
 
@@ -146,8 +146,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
-| [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
-| [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
+| [Git repository](../../repos/git/set-git-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
+| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Pipeline security roles](../../pipelines/policies/permissions.md)                  |   ✔️  |   ✔️ |    |   
@@ -157,7 +157,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)          |   ✔️  |  ✔️ |     | 
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
 | [Work item tags](set-permissions-access-work-tracking.md#tags)                      |   ✔️  |  ✔️ |     | 
-| [Dashboards](../..//report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |    |    
+| [Dashboards](../../report/dashboards/dashboard-permissions.md)                     |   ✔️  |  ✔️ |    |    
 | [Notifications or alerts](permissions.md#alerts)                                    |   ✔️  |  ✔️ |     | 
 
 
@@ -174,8 +174,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Builds](../../pipelines/policies/permissions.md#set-pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
-| [Git repository](git-permissions-before-2017.md)                                    |   ✔️  |  ✔️ |  ✔️ | 
-| [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️ | 
+| [Git repository](../../repos/git/set-git-repository-permissions.md)                                    |   ✔️  |  ✔️ |  ✔️ | 
+| [Team Foundation Version Control](../../repos/tfvc/set-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️ | 
 | [Area path](set-permissions-access-work-tracking.md#set-permissions-area-path)      |   ✔️  |  ✔️ |     | 
 | [Iteration path](set-permissions-access-work-tracking.md#set-permissions-area-path) |   ✔️  |  ✔️ |     | 
 | [Work item query](set-permissions-access-work-tracking.md#work-item-queries)        |   ✔️  |  ✔️ |     | 
@@ -210,7 +210,6 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops" 
 
-- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
 - [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
 - [Add users to a project or team](add-users-team-project.md)  
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
@@ -222,7 +221,6 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops-2020" 
 
-- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
 - [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Add users to a project or team](add-users-team-project.md)  
@@ -235,7 +233,6 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="< azure-devops-2020" 
 
-- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
 - [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
 - [Add users to a project or team](add-users-team-project.md)             
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  

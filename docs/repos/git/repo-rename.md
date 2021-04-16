@@ -23,7 +23,7 @@ You can rename a Git repository in a project from your web browser. After you re
 ## Rename the repo in the web
 
 > [!IMPORTANT]
-> This step requires [Rename Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+> This step requires [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
 
 ::: moniker range=">= azure-devops-2019"
 

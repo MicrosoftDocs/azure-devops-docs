@@ -1,6 +1,6 @@
 ---
 title: Grant or restrict access to select features
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps 
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.date: 02/17/2021
 --- 
 
 
-# Grant or restrict access
+# Grant or restrict access using permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -91,12 +91,12 @@ To delegate tasks to other members within your organization, consider creating a
 <tr>
 <td>Development lead (TFVC)</td>
 <td>Manage repository and branches</td>
-<td>Administer labels, Manage branch, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
+<td>Administer labels, Manage branch, and Manage permissions<br/>See <a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions</a>.</td>
 </tr>
 <tr>
 <td>Software architect (Git)</td>
 <td>Manage repositories</td>
-<td>Create repositories, Force push, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
+<td>Create repositories, Force push, and Manage permissions<br/>See <a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions </a></td>
 </tr>
 <tr>
 <td>Team administrators</td>
@@ -138,8 +138,9 @@ Delete and restore work items, Move work items out of this project, Permanently 
 <td>For a project, Edit project-level information<br/> 
 For an account or collection, Edit instance-level (or collection-level) information<br/> To understand the scope of these permissions, see <a href="permissions-lookup-guide.md" data-raw-source="[Permission lookup guide](permissions-lookup-guide.md)">Permission lookup guide</a>. To grant permissions, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.<br/><br/>You can also grant permissions to manage permissions for the following objects:
 <ul>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)">Manage Git or TFVC repository permissions</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)">Manage Git branch permissions</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions </a></li>
+<li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Manage Git branch permissions](../../repos/git/branch-permissions.md)">Manage Git branch permissions</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions </a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Administer build and release permissions](../../pipelines/policies/set-permissions.md)">Administer build and release permissions</a></li>
 <li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)">Manage Wiki permissions</a>.</li>
 </td>
@@ -194,7 +195,7 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
 </tr>
 <tr>
 <td>View or contribute to a repository</td>
-<td>View, Contribute<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
+<td>View, Contribute<br/>See <a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)">Set Git repository permissions</a> or <a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)">Set TFVC repository permissions</a>.</td>
 </tr>
 <tr>
 <td>View, create, or modify work items within an area path</td>

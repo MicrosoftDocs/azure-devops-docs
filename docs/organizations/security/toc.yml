@@ -124,8 +124,10 @@
     href: set-permissions-access-work-tracking.md 
 - name: Secure Azure Repos
   items:
-  - name: Set Git or TFVC repository permissions
-    href: set-git-tfvc-repository-permissions.md
+  - name: Set Git repository permissions
+    href: ../../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Set TFVC repository permissions
+    href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set Git branch permissions
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Git permissions prior to TFS 2017 Update 1
