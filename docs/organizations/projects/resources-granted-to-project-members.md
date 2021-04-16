@@ -51,7 +51,7 @@ Those resources include those defined at the organization-level (cloud) or proje
   ![Edit field release in feature](media/edit-field-release-in-feature.png)
 
 * When the WIT Client OM is used, which includes the usage of Excel and Visual Studio integration, it stores sensitive information in a cache on the local disk. This cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
-* When a user is added to the project-level Build Administrators group, they have the ability to create pipelines which run with project collection (account-wide) scope. A pipeline with project collection scope may access resources in another project, such as Git repositories, that the user cannot. (You can change this by [removing the Read permission from Project Collection Build Service](../security/set-git-tfvc-repository-permissions.md#pcbs-has-read-by-default)).
+* When a user is added to the project-level Build Administrators group, they have the ability to create pipelines which run with project collection (account-wide) scope. A pipeline with project collection scope may access resources in another project, such as Git repositories, that the user cannot. (You can change this by [removing the Read permission from Project Collection Build Service](../../repos/git/set-git-repository-permissions.md#pcbs-has-read-by-default)).
 
 ## The trust decision
 
