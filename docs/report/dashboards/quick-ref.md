@@ -1,7 +1,7 @@
 ---
-title: Quick reference to dashboards, charts, & widgets 
+title: Quick reference to dashboards, charts, and reports
 titleSuffix: Azure DevOps  
-description: Index to dashboard, charts&, and widgets tasks for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Index to dashboard, charts and report tasks for Azure Boards, Azure DevOps 
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.technology: devops-analytics
@@ -12,14 +12,13 @@ monikerRange: '>= tfs-2015'
 ms.date: 04/14/2021
 ---
 
-# Dashboards, reports, & widgets quick reference 
+# Dashboards, charts, and quick reference 
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
  
 ## Tasks
-
 
 ---
 :::row:::
@@ -132,6 +131,7 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
       - [Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd) 
       - [Sprint burndown](configure-sprint-burndown.md)  
       - [Velocity chart](team-velocity.md) 
+   :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
       **Pipelines** 
@@ -158,10 +158,12 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
  
  
 
-## Marketplace extensions
+## Marketplace extensions 
 
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
+- [Marketplace extension reports](https://marketplace.visualstudio.com/search?term=report&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
-- [MArketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
+
  
 
 ## Related articles

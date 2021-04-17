@@ -1,6 +1,8 @@
 - name: Create test result charts
   href: ../../test/track-test-status.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   displayname: progress, trend, pie, bar, column, stacked bar, pivot table, test case
+- name: Configure a Test Results Trend widget
+  href: configure-test-results-trend.md
 - name: Build test results    
   href: ../../pipelines/test/review-continuous-test-results-after-build.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Code coverage 
@@ -15,8 +17,7 @@
   href: ../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
 - name: Test impact analysis 
   href: ../../pipelines/test/test-impact-analysis.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Configure a Test Results Trend widget
-  href: configure-test-results-trend.md
+
 
 
 
