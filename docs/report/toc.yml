@@ -55,7 +55,7 @@
     href: dashboards/cycle-time-and-lead-time.md
     displayname: lead time, cycle time, rolling period, scatter-plot, control chart, moving average, standard deviation, 
 - name: Pipelines & test charts
-  href: dashbards/toc.yml 
+  href: dashboards/toc.yml 
 - name: Guidance
   items:
   - name: Burndown guidance
