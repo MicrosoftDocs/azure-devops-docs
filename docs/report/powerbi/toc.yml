@@ -1,7 +1,7 @@
 - name: About Power BI integration
   href: overview.md
 - name: Enable or install Analytics  
-  href: analytics-extension.md
+  href: ../dashboards/analytics-extension.md
 - name: Set Analytics permissions (Security)
   href: analytics-security.md
 - name: Analytics views
