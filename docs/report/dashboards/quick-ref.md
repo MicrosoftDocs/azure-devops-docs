@@ -161,7 +161,7 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 ## Marketplace extensions
 
 - [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
-
+- [MArketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
  
 
 ## Related articles
