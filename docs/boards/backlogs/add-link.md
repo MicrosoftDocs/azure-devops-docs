@@ -251,54 +251,13 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 ::: moniker range="tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch, TFS 2017 version.](media/add-link-new-branch.png)   
-
+> ![Screenshot of backlog, context menu, choose Link multiple backlog items to a git branch, TFS 2017 version.](media/add-link-new-branch.png)  
 ::: moniker-end
 
+<a id="link-builds" />
 
-::: moniker range=">= azure-devops-2019"
+[!INCLUDE [temp](../../includes/link-work-item-builds-projects.md)]
 
-## Link work items to a build  
-
-You can link work items to existing builds from the **Add link** dialog. 
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-1. From the Add link dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add link dialog, build link type selected.](media/add-link/add-link-dialog-build.png)   
-
-1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
-
-	Note you can choose a different project within your organization to link to a build. With **All** selected, choose **Find** and then apply additional filters to narrow your search.
- 
-	> [!div class="mx-imgBorder"]  
-	> ![Find builds dialog, Project filter available.](media/add-link/find-builds-dialog.png)   
-
-1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-1. From the Add link dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add link dialog, build link type selected](media/add-link/add-link-dialog-build.png)   
-
-1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
-
-	With **All** selected, choose **Find** and then apply additional filters to narrow your search.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Find builds dialog, link to a build within your project.](media/add-link/find-builds-dialog-2020-and-previous-versions.png)   
-
-1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
- 
-::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
@@ -340,6 +299,17 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 ::: moniker-end
 
+
+[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
+
+
+::: moniker range=">= azure-devops-2020"
+
+To learn more about this feature, see [Link to work items from other objects](../../notifications/add-links-to-work-items.md#set-work-item-state-in-pull-request).
+
+::: moniker-end
+
+
 ## Additional bulk-modify link options
 
 Additional features you can use to quickly link or change links that use the parent-child link type (some features are version dependent, see the linked topic for details):
@@ -366,6 +336,7 @@ Additional features you can use to quickly link or change links that use the par
 ::: moniker range="<= azure-devops-2019"
 
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
+- [Link to work items from other objects](../../notifications/add-links-to-work-items.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
