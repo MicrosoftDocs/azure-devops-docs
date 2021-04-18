@@ -37,5 +37,5 @@
 - name: FAQs
   items:
   - name: Create and configure an organization
-    href: faq-configure-customize-organization.md
+    href: faq-configure-customize-organization.yml
 

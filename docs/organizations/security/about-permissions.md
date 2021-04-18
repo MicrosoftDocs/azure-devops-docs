@@ -95,7 +95,7 @@ To set up Azure Active Directory for use with Azure DevOps Services, see [Connec
 To manage organizational access with Azure AD, refer to the following articles: 
 
 * [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
-* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.md) 
+* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.yml) 
 
 ::: moniker-end
 
