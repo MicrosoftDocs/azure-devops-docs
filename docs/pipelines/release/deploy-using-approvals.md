@@ -36,7 +36,7 @@ In this tutorial, you will learn about:
 
 <a name="configure-gate"></a>
 
-## Configure a gate
+## Set up gates
 
 You can use gates to ensure that the release pipeline meets specific criteria before deployment without requiring user intervention.
 
@@ -70,42 +70,33 @@ You can use gates to ensure that the release pipeline meets specific criteria be
 
 <a name="configure-maninter"></a>
    
-## Configure a manual intervention 
+## Set up manual intervention 
 
-Sometimes, you may need to introduce manual intervention into a release pipeline.
-For example, there may be tasks that cannot be accomplished automatically such as
-confirming network conditions are appropriate, or that specific hardware or software 
-is in place, before you approve a deployment. You can do this by using the **Manual
-Intervention** task in your pipeline.
+Depending on the scenario, sometimes you may need to add manual intervention to your release pipeline. You can do this by adding the **Manual Intervention** task to your pipeline.
 
-1. In the release pipeline editor, open the **Tasks** editor for the **QA** stage.
+1. Select your release pipeline, and then select **Tasks** and choose your stage.
 
-   ![Opening the QA tasks editor](media/deploy-using-approvals/open-qa-tasks.png)
+    :::image type="content" source="media/deploy-using-approvals/open-qa-tasks.png" alt-text="Stage tasks":::
 
-1. Choose the ellipses (**...**) in the **QA** deployment pipeline bar and then choose **Add agentless job**.
+1. Select the ellipses (**...**) from your stage definition, and then select **Add agentless job**.
 
-   ![Adding an Agentless job to the task list](media/deploy-using-approvals/add-agentless-phase.png)
+    :::image type="content" source="media/deploy-using-approvals/add-agentless-phase.png" alt-text="Add agentless job":::
 
-   Several tasks, including the **Manual Intervention** task, can be used only in an
-   [agentless job](../process/phases.md#server-jobs).
+   > [!NOTE]
+   > The **Manual Intervention** task can only be used in an [agentless job](../process/phases.md#server-jobs).
 
-1. Drag and drop the new agentless job to the start of the QA process, before the existing agent job.
-   Then choose **+** in the **Agentless job** bar and add a **Manual Intervention** task to the job.
+1. Drag and drop the agentless job to the start of the deployment process. Select the **+** sign, and then select **Add** the Manual Intervention task.
 
-   ![Adding a Manual Intervention task](media/deploy-using-approvals/add-maninter-task.png)
+    :::image type="content" source="media/deploy-using-approvals/add-maninter-task.png" alt-text="Add a Manual Intervention task":::
 
-1. Configure the task by entering a message (the **Instructions**) to display when it executes and pauses the release pipeline.
+1. Configure the task by entering the Instructions to be displayed when it the task is triggered.
 
-   ![Configuring the Manual Intervention task](media/deploy-using-approvals/manual-intervention-task.png)
+    :::image type="content" source="media/deploy-using-approvals/manual-intervention-task.png" alt-text="Configure the Manual Intervention task":::
 
-   Notice that you can specify a list of users who will receive a notification that the deployment
-   is waiting for manual approval. You can also specify a timeout and the action (approve or reject)
-   that will occur if there is no user response within the timeout period.
-   For more details, see [Manual Intervention task](../tasks/utility/manual-intervention.md).
+   You can specify a list of users to be notified when the deployment is pending manual approval. You can also specify a timeout and the action (approve or reject)
+   that occur if no intervention within the timeout period. See the [Manual Intervention](../tasks/utility/manual-intervention.md) task for more details.
 
-1. Save the release pipeline and then start a new release.
-
-   ![Starting a new release](media/deploy-using-approvals/start-release.png)
+1. Select **Save** when you are done.
 
 <a name="view-approvals"></a>
 
