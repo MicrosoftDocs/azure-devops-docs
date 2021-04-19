@@ -142,12 +142,10 @@ Every self-hosted agent has a set of capabilities that indicate what it can do. 
 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
-> [!Note]
->
-> The storing of environment variables as capabilites means that when an agent runs, the stored capability values are used to set the environment variables. This means that any changes to environment variables while the agent is running will be not be picked up and used by any task.
-> If you have sensitive environment variables that change, and you don't wish them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable with a comma delimited list of variables to ignore. `PATH` is a critical variable that if you are installing software you may want to ignore.   
+> [!NOTE]
+> Storing environment variables as capabilites means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running won't be picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
 
-When you author a pipeline you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
+When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
 > [!NOTE]
 >
