@@ -323,7 +323,7 @@ If you get an SAS error code, it is most likely because the IP address ranges fr
 
 #### Xamarin
 
-  **Hosted macOS** agent stores Xamarin SDK versions and the accosiated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
+  **Hosted macOS** agent stores Xamarin SDK versions and the associated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
 
   To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, execute the following bash command before your Xamarin build task as a part of your build, specifying the symlink to Xamarin versions bundle that you need.
 
