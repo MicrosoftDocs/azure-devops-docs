@@ -76,7 +76,7 @@ If you're not going to continue to use this application, delete your pipeline an
 
 ### What pre-cached images are available on hosted agents?
 
-Some commonly used images are pre-cached on the Microsoft-hosted agents to avoiding long time intervals spent in pulling these images from container registry for every job. Images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/windowsservercore`, `microsoft/nanoserver`, and `microsoft/aspnetcore-build` are pre-cached on Windows agents while `jekyll/builder` and `mcr.microsoft.com/azure-pipelines/node8-typescript` are pre-cached on Linux agents. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
+Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
 
 ### How do I set the BuildKit variable for my docker builds?
 
