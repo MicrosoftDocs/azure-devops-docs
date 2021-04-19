@@ -94,7 +94,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 <br/>
 
----  
+ 
 :::row:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2020"
@@ -124,7 +124,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
       - **Recently created**: lists work items created within the last 30 days in the project.  
    :::column-end:::
 :::row-end:::
----  
+ 
  
 # [Visual Studio 2019](#tab/visual-studio)
 
