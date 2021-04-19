@@ -17,6 +17,6 @@ For example, if your build includes the [npm task](../../tasks/package/npm.md), 
 
 > [!IMPORTANT]
 > 
-> Capabilities includes all environment variables and their values that are set when the agent runs. If any of these values change whilst the agent is running the agent needs to be restarted to pick uo the new values. This is why after you install new software on an agent, you must restart the agent for the new capability to show up in the pool so that the build can run.
+> Capabilities includes all environment variables and their values that are set when the agent runs. If any of these values change while the agent is running, the agent must be restarted to pick up the new values. After you install new software on an agent, you must restart the agent for the new capability to show up in the pool, so that the build can run.
 > 
-> if you want environment variables not to be included as capabilities you can have them ignored by setting an enirvonment vairable `VSO_AGENT_IGNORE` with a comma delimited list of variables to ignore. 
+> If you want to exclude environment variables as capabilities, you can designate them by setting an enirvonment vairable `VSO_AGENT_IGNORE` with a comma delimited list of variables to ignore. 
