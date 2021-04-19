@@ -82,6 +82,11 @@ Versions in the "Server" column are linked to the appropriate download location.
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="2"><a href="2021/sprint-185-update.md" data-raw-source="[13 April 2021](2021/sprint-185-update.md)">13 April 2021</a></td>
+    <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>Future</td></tr>
+    </tr>
+    <tr><td>Display custom work item types in burndown widget</td><td>Reporting</td><td>Future</td></tr>
     <tr>
     <td rowspan="7"><a href="2021/sprint-183-update.md" data-raw-source="[03 March 2021](2021/sprint-183-update.md)">03 March 2021</a></td>
     <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
