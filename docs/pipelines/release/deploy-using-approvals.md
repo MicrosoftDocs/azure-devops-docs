@@ -1,7 +1,7 @@
 ---
-title: Control deployments with approvals and gates
+title: Control deployments with gates and approvals
 ms.custom: seodec18
-description: DevOps CI CD - Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in Azure Pipelines and TFS
+description: DevOps CI CD - Use deployment approvals, gates, and manual intervention to control your deployment
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.topic: tutorial
 ms.author: shashban
@@ -10,7 +10,7 @@ ms.date: 01/12/2021
 monikerRange: '>= tfs-2018'
 ---
 
-# Use approvals and gates to control your deployment
+# Use gates and approvals to control your deployment
 
 [!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
@@ -18,37 +18,21 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-By using a combination of manual deployment approvals, gates, and manual
-intervention within a release pipeline in Azure Pipelines and Team Foundation Server (TFS), you can quickly and easily configure
-a release pipeline with all the control and auditing capabilities you require
-for your DevOps CI/CD processes.
+By using a combination of manual deployment approvals, gates, and manual intervention in your release pipeline, you can quickly and easily configure your deployment to meet all the specific pre-deployment requirements for your DevOps CI/CD workflow.
 
-In this tutorial, you learn about:
+In this tutorial, you will learn about:
 
 > [!div class="checklist"]
-> * Extending the approval process with gates for classic pipelines
-> * Extending the approval process with manual intervention classic pipelines
-> * Extending the approval process with manual validation for YAML pipelines
-> * Viewing and monitoring approvals and gates
+> * Pre-deployment gates
+> * Manual intervention
+> * Manual validation
+> * Deployment logs
 
 ## Prerequisites
 
-This tutorial extends the tutorial [Define your multi-stage
-continuous deployment (CD) pipeline](define-multistage-release-process.md).
-**You must have completed that tutorial first.**
+- Complete the [Define your multi-stage continuous deployment (CD) pipeline](define-multistage-release-process.md) tutorial.
 
-You'll also need a **work item query** that returns some work items from
-Azure Pipelines or TFS. This query is used in the gate you
-will configure. You can use one of the built-in queries, or create a
-new one just for this gate to use. For more information, see
-[Create managed queries with the query editor](../../boards/queries/using-queries.md).
-
-In the previous tutorial, you saw a simple use of manual approvals to allow an administrator
-to confirm that a release is ready to deploy to the production stage. In this 
-tutorial, you'll see some additional and more powerful ways to configure approvals 
-for releases and deployments by using manual intervention and gates.
-For more information about the ways you can configure approvals for a release,
-see [Approvals and gates overview](../release/approvals/index.md).
+- A work item query: that returns some work items. You can use one of the built-in queries, or create a new one here: [Create managed queries with the query editor](../../boards/queries/using-queries.md).
 
 <a name="configure-gate"></a>
 
