@@ -313,7 +313,7 @@ with the selected build, and the test outcome will be published
 against that build.
 
 > [!NOTE]
-> The selected build should be from the same project were the tests are defined.
+> The selected build must be from the same project where the tests are defined.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
