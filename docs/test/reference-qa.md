@@ -312,6 +312,9 @@ Any bug filed during the run will automatically be associated
 with the selected build, and the test outcome will be published
 against that build.
 
+> [!NOTE]
+> The selected build must be from the project in which the tests are defined.
+
 ### Q: Can I fix my test steps while I'm running a test?
 
 **A:** Yes, if you have Azure Test Plans for Azure DevOps. 
