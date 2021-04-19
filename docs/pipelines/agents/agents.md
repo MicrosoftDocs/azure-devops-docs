@@ -144,8 +144,8 @@ The agent software automatically determines various system capabilities such as 
 
 > [!Note]
 >
-> The storing of environment variables as capabilites means when a agent runs the stored capability values are used to set the environment variables. This means that any changes to environment variables whilst the agent is running, will be not be picked up and used by any task.
-> If you have sensitive environment variables that change and you need to not be statically stored as capabilities you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable with a comma delimited list of variables to ignore. `PATH` is a critical variable that if you are installing software you may want to ignore.   
+> The storing of environment variables as capabilites means that when an agent runs, the stored capability values are used to set the environment variables. This means that any changes to environment variables while the agent is running will be not be picked up and used by any task.
+> If you have sensitive environment variables that change, and you don't wish them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable with a comma delimited list of variables to ignore. `PATH` is a critical variable that if you are installing software you may want to ignore.   
 
 When you author a pipeline you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
