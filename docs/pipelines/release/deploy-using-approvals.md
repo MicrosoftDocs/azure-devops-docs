@@ -32,68 +32,41 @@ In this tutorial, you will learn about:
 
 - Complete the [Define your multi-stage continuous deployment (CD) pipeline](define-multistage-release-process.md) tutorial.
 
-- A work item query: that returns some work items. You can use one of the built-in queries, or create a new one here: [Create managed queries with the query editor](../../boards/queries/using-queries.md).
+- A work item query. You can create a new query here: [Create managed queries with the query editor](../../boards/queries/using-queries.md) if you don't already have one.
 
 <a name="configure-gate"></a>
 
 ## Configure a gate
 
-First, you will extend the approval process for the release by adding a gate.
-Gates allow you to configure automated calls to external services, where the results
-are used to approve or reject a deployment. You can use gates to ensure that the release
-meets a wide range or criteria, without requiring user intervention.
+You can use gates to ensure that the release pipeline meets specific criteria before deployment without requiring user intervention.
 
-1. In the **Releases** tab of **Azure Pipelines**, select your release
-   pipeline and choose **Edit** to open the pipeline editor.
+1. Select **Releases**, and then select your release pipeline and then **Edit** to open the pipeline editor.
 
-   ![Opening the release pipeline](media/deploy-using-approvals/open-pipeline.png)
+    :::image type="content" source="media/deploy-using-approvals/open-pipeline.png" alt-text="Edit the release pipeline":::
 
-1. Choose the pre-deployment conditions icon for the **Production** stage to
-   open the conditions panel. Enable gates by using the switch control in the **Gates** section.   
+1. Select the pre-deployment icon for your stage to open the pre-deployment conditions panel, and then select the toggle button to **Enable** gates.   
 
-   ![Enabling release approval gates](media/deploy-using-approvals/gates-01.png)
- 
-1. To allow gate functions to initialize and stabilize (it may take some time for them
-   to begin returning accurate results), you configure a delay before the results
-   are evaluated and used to determine if the deployment should be approved or rejected.
-   For this example, so that you can see a result reasonably quickly, set the delay
-   to a short period such as one minute.
+    :::image type="content" source="media/deploy-using-approvals/gates-01.png" alt-text="Enable gates":::
 
-   ![Configuring the delay before evaluation](media/deploy-using-approvals/gates-02.png)
+1. Enter the delay time before the added gates are evaluated. This time is to allow gate functions to initialize and stabilize before returning results.
 
-1. Choose **+ Add** and select the **Query Work Items** gate.
+    :::image type="content" source="media/deploy-using-approvals/gates-02.png" alt-text="Gates delay time":::
 
-   ![Adding a Query Work Items approval gate](media/deploy-using-approvals/gates-03.png)
+1. Select **Add**, and then choose the **Query Work Items** task.
 
-1. Configure the gate by selecting an existing work item query. You can use one of the built-in
-   Azure Pipelines and TFS queries, or [create your own query](../../boards/queries/using-queries.md).
-   Depending on how many work items you expect it to return, set the maximum and minimum
-   thresholds (run the query in the **Work** hub if you're not sure what to expect).
+    :::image type="content" source="media/deploy-using-approvals/gates-03.png" alt-text="Adding Query work items task":::
 
-   ![Configuring the Query Work Items approval gate](media/deploy-using-approvals/gates-04.png)
+1. Select an existing work item query or [create your own](../../boards/queries/using-queries.md). Depending on how many work items you expect the query to return, set your maximum and minimum thresholds.
 
-   > You'll need to open the **Advanced** section to see the **Lower Threshold** setting.
-   > You can also set an **Output Variable** to be returned from the gate task. 
-   > For more details about the gate arguments, see [Work Item Query task](../tasks/utility/work-item-query.md).
+    :::image type="content" source="media/deploy-using-approvals/gates-04.png" alt-text="Configuring the Query Work Items task":::
 
-1. Open the **Evaluation options** section and specify the timeout and the sampling interval.
-   For this example, choose short periods so that you can see the results reasonably quickly.
-   The minimum values you can specify are 6 minutes timeout and 5 minutes sampling interval.
+1. Select the **Evaluation options** section, and then specify the timeout and the sampling interval. The minimum values you can specify are 6 minutes timeout and 5 minutes sampling interval.
 
-   ![Configuring the options for all gates](media/deploy-using-approvals/gates-05.png)
+    :::image type="content" source="media/deploy-using-approvals/gates-05.png" alt-text="Evaluation options setup":::
 
-   >The sampling interval and timeout work together so that the gates will call their functions
-   at suitable intervals, and reject the deployment if they don't all succeed during the same sampling
-   interval and within the timeout period.
-   For more details, see [Gates](../release/approvals/gates.md).
+1. Select **Save** when you are done.
 
-1. Save you release pipeline.
-
-   ![Saving the release pipeline](media/deploy-using-approvals/gates-06.png)
-
-For more information about using other types of approval gates, see [Approvals and gates](../release/approvals/index.md).
-
-<!-- TBD - ADD GATE TASK TO TASKS LIST -->
+    :::image type="content" source="media/deploy-using-approvals/gates-06.png" alt-text="Save a release pipeline":::
 
 <a name="configure-maninter"></a>
    
