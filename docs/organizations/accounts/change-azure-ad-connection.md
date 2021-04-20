@@ -105,4 +105,4 @@ When you inform your users of the completed change, include the following tasks 
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)
+- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/azure/devops/organizations/accounts/faq-azure-access#faq-connect)
