@@ -28,7 +28,6 @@
         "files": [
           "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
           "pipelines/migrate/build-deployment-best-practices.md",
-          "pipelines/",
           "pipelines/archive/apps/aspnet/**",
           "pipelines/archive/apps/java/**",
           "pipelines/archive/apps/nodejs/**",
