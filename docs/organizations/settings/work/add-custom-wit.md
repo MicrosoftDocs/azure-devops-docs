@@ -141,7 +141,29 @@ We recommend that you create a test project and apply your customized  inherited
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
+## Custom item created shows as unparented in Sprint section on Boards. 
 
+Custom item created called ‘Goals’ and assigned ‘Task’ as their child on his Process,  Sprint section on Boards shows all items as unparented. See image for reference:
+ ![image](https://user-images.githubusercontent.com/61211413/115440843-cfb84c80-a1d5-11eb-8246-02829d034ef5.png)
+
+1. Go to Organization Settings > Process > Select your Process where you created your custom item, for example:  
+	> [!div class="mx-imgBorder"]  
+	![image](https://user-images.githubusercontent.com/61211413/115441003-fb3b3700-a1d5-11eb-8c4c-0f50118de42e.png)
+
+2. Go to Backlog levels tab > Requirement backlog; click on the three dots option and click on Edit/Rename option:
+	> [!div class="mx-imgBorder"]  
+	![image](https://user-images.githubusercontent.com/61211413/115441822-ea3ef580-a1d6-11eb-85e1-12e71806d41f.png)
+
+3. Check your custom item(s) created and click on Save: 
+	> [!div class="mx-imgBorder"]  
+        ![image](https://user-images.githubusercontent.com/61211413/115441882-00e54c80-a1d7-11eb-8c1d-0f5384d8b2dc.png)
+
+4. Once you follow this instructions, you will see the items with their respective parents on your sprints: 
+	> [!div class="mx-imgBorder"]  
+	![image](https://user-images.githubusercontent.com/61211413/115441967-1eb2b180-a1d7-11eb-8cfc-94f5ff1f1b0d.png)
+
+
+[!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 ## Try this next
 > [!div class="nextstepaction"]
 > [Customize the web layout](customize-process-form.md) 
