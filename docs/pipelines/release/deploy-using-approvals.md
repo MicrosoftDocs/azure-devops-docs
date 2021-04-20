@@ -60,7 +60,7 @@ You can use gates to ensure that the release pipeline meets specific criteria be
 
     :::image type="content" source="media/deploy-using-approvals/gates-04.png" alt-text="Configuring the Query Work Items task":::
 
-1. Select the **Evaluation options** section, and then specify the timeout and the sampling interval. The minimum values you can specify are 6 minutes timeout and 5 minutes sampling interval.
+1. Select the **Evaluation options** section, and then specify the timeout and the sampling interval. The minimum values you can specify are 6-minutes timeout and 5-minutes sampling interval.
 
     :::image type="content" source="media/deploy-using-approvals/gates-05.png" alt-text="Evaluation options setup":::
 
@@ -144,7 +144,7 @@ Deployment logs can be very useful when debugging deployment issues. You can als
 
     :::image type="content" source="media/deploy-using-approvals/view-log-01.png" alt-text="Resume task":::
 
-1. Return to your release pipeline view. The **QA** stage deployment succeeded and the pre-deployment approval is triggered for the **Production** stage.
+1. Return to your release pipeline. The **QA** stage deployment succeeded and the pre-deployment approvals are triggered for the **Production** stage.
 
     :::image type="content" source="media/deploy-using-approvals/view-log-05.png" alt-text="Pre-deployment approval triggered for next stage":::
 
@@ -152,11 +152,11 @@ Deployment logs can be very useful when debugging deployment issues. You can als
 
     :::image type="content" source="media/deploy-using-approvals/view-log-06.png" alt-text="Approve deployment":::
 
-1. Return to your release pipeline view. The live status indicates that the gates are being processed for the **Production** stage before the release continues.  
+1. Return to your release pipeline. The live status indicates that the gates are being processed for the **Production** stage before the release continues.  
 
     :::image type="content" source="media/deploy-using-approvals/view-log-04.png" alt-text="status: processing gates":::
 
-1. Return to your release pipeline view, and hover over the stage you want to audit and then select **Logs** to view the logs. 
+1. Return to your release pipeline, and hover over the stage you want to audit and then select **Logs** to view the logs. 
 
     :::image type="content" source="media/deploy-using-approvals/view-logs.png" alt-text="View logs":::
 
