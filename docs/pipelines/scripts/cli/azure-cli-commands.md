@@ -4,7 +4,7 @@ description: Azure CLI sample for creating, managing, and monitoring an Azure Pi
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 04/16/2021
+ms.date: 04/20/2021
 ms.topic: sample
 ms.service: az-devops-project
 ms.devlang: azurecli 
@@ -17,23 +17,20 @@ This sample shows you how to use Azure DevOps CLI commands to work with Azure Pi
 
 This script demonstrates three operations:
 
-* Showing how to use authentication to work with pipelines in Azure DevOps CLI
-* Defining a pipeline using [YAML](../../yaml-schema.md) files and variable groups that contain secret and nonsecret variables
-* Managing and monitoring a pipeline
+* Defining a pipeline using [YAML](../../yaml-schema.md) files
+* Creating a variable group with nonsecret variables and updating it to add a secret variable
+* Using the nonsecret and secret variables from the variable group during a pipeline run
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
 ## Sample script
 
-> [!NOTE]
-> Add note of FYI or caution if needed here.
-
-First, save the following YAML file to `azure-pipelines.yml` in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
+First, save the following YAML file to *azure-pipelines.yml* in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
 
 ```yml
 parameters:
 - name: image
-  displayName: Pool Image
+  displayName: 'Pool image'
   default: ubuntu-latest
   values:
   - windows-latest
@@ -92,18 +89,18 @@ steps:
 
 Next, in the following Bash script, replace the placeholders, and then run the script:
 
-```azurecli-interactive
+```azurecli
 #!/bin/bash
-# <anything the reader needs to know that is not already in prerequisites
 
 # Provide variable definitions.
 devopsToken="<azure-devops-personal-access-token>"
-devopsOrg="https://dev.azure.com/<my-organization-name>"
+devopsOrg="https://dev.azure.com/<my-azure-devops-account-or-organization-name>"
 pipelineName="<my-build>"
 pipelineDesc="<my-description>"
-repoType="github"; repoName="<my-github-username>/<my-repository>"
-# repoType="tfsgit"; repoName="<my-repository-in-azure-devops-project>"
-serviceConnectionName="<my-service-connection-name>"
+githubOrg="<my-github-organization-name>"
+githubRepo="<my-github-repository-name>"
+repoName="$githubOrg/$githubRepo"
+repoType="github"
 resourceGroupLocation="<resource-group-location-name-or-id>"
 storageAccountLocation="<storage-account-location-name-or-id>"
 
@@ -112,8 +109,8 @@ uniqueId=$RANDOM
 resourceGroupName="contoso-storage-rg$uniqueId"
 storageAccountName="contosostoracct$uniqueId"  # needs to be lowercase
 devopsProject="Contoso DevOps Project $uniqueId"
-repoBranch="master"
-variableGroupName="Contoso Variable group $uniqueId"
+serviceConnectionName="Contoso Service Connection $uniqueId"
+variableGroupName="Contoso Variable Group"
 
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"
@@ -137,9 +134,8 @@ pipelineId=$(az pipelines create \
     --description "$pipelineDesc" \
     --repository $repoName \
     --repository-type $repoType \
-    --branch $repoBranch \
     --service-connection $githubServiceEndpointId \
-    --yml-path azure-pipelines.yml
+    --yml-path azure-pipelines.yml \
     --query id)
 
 # Create a variable group with 2 non-secret variables and 1 secret variable
@@ -181,16 +177,15 @@ az devops configure --defaults organization="" project=""
 
 ## Azure CLI references used in this article
 
-- [az group create](/cli/azure/group#az_group_create)
-- [az group delete](/cli/azure/group#az_group_delete)
 - [az devops configure](/cli/azure/ext/azure-devops/devops#az_devops_configure)
 - [az devops project create](/cli/azure/devops/project#az_devops_project_create)
 - [az devops project delete](/cli/azure/devops/project#az_devops_project_delete)
-- [az devops service-endpoint github create](/cli/azure/ext/azure-devops/devops/service-endpoint/github#ext_azure_devops_az_devops_service_endpoint_github_create)
+- [az devops service-endpoint github create](/cli/azure/ext/azure-devops/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
+- [az group create](/cli/azure/group#az_group_create)
+- [az group delete](/cli/azure/group#az_group_delete)
 - [az pipelines create](/cli/azure/ext/azure-devops/pipelines#az_pipelines_create)
 - [az pipelines delete](/cli/azure/ext/azure-devops/pipelines#az_pipelines_delete)
-- [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_run)
-- [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext_azure_devops_az_pipelines_show)
+- [az pipelines run](/cli/azure/ext/azure-devops/pipelines#az_pipelines_run)
 - [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
 - [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_delete)
 - [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
