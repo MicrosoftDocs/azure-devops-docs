@@ -74,7 +74,7 @@
   - name: Test Management
     href: /rest/api/azure/devops/test
   - name: Test Plans
-    href: /rest/api/azure/devops/testplan/test%20%20plans
+    href: /rest/api/azure/devops/testplan/test%20%20plans/list
 - name: Resources
   items:
   - name: Azure Pipelines Test
