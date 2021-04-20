@@ -18098,27 +18098,27 @@
     {
       "source_path": "docs/project/search/administration.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/advanced-package-syntax.md",
       "redirect_url": "/azure/devops/project/search/functional-code-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/advanced-work-item-search-syntax.md",
       "redirect_url": "/azure/devops/project/search/functional-work-item-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/code-search.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/package-search.md",
       "redirect_url": "/azure/devops/project/search/get-started-search",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/project/search/work-item-search.md",
