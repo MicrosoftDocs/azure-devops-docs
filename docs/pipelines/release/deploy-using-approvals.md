@@ -100,17 +100,16 @@ Depending on the scenario, sometimes you may need to add manual intervention to 
 
 <a name="view-approvals"></a>
 
+## Set up manual validation 
 
-## Configure manual validation 
+You can use the [manual validation](../tasks/utility/manual-validation.md) task in your YAML to pause the pipeline run and wait for manual approval. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build packages before starting a computation-intensive job.
 
-You can use the [manual validation task](../tasks/utility/manual-validation.md) to pause a YAML pipeline run and perform manual activities. You can then resume or reject the run. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build package before moving onto a computation-intensive job.
-
-In this pipeline, `waitForValidation` does not run until you give manual approval. There's a prompt within the Pipeline UI to review and provide validation. The email addresses listed in `notifyUsers` will receive emails asking them to approve the pipeline. 
+The `waitForValidation` job pauses the run and triggers a prompt within the Pipeline UI to review and validate the task. The email addresses listed in `notifyUsers` receive a notification to approve or deny the pipeline run. 
 
 :::image type="content" source="media/needs-validation-prompt.png" alt-text="Add validation for the pipeline to continue.":::
     
 
-```yaml
+```YAML
 pool: 
    vmImage: ubuntu-latest
 
@@ -127,60 +126,42 @@ jobs:
             someone@example.com
          instructions: 'Please validate the build configuration and resume'
          onTimeout: 'resume'
-
-- job: myPostValidationJob
-  pool:
-    vmImage: 'ubuntu-latest'
-  steps:
-  - bash: echo "Hello world"
-
 ```
-## View the logs for approvals 
 
-You typically need to validate and audit a release and the associated deployments
-after it has completed, or even during the deployment pipeline. This is useful when
-debugging a problematic deployment, or when checking when and by whom approvals were
-granted. The comprehensive logging capabilities provide this information.
+## View deployment logs
 
-1. Open the release summary for the release you just created. You can do this by choosing the
-   link in the information bar in the release editor after you create the release,
-   or directly from the **Releases** tab of **Azure Pipelines**.
+Deployment logs can be very useful when debugging deployment issues. You can also use the logs to audit the run and verify approvals and how they were granted and by whom. 
 
-   ![Opening the release summary](media/deploy-using-approvals/open-summary.png)
+1. Select **Releases**, and then select your release pipeline.
 
-1. You'll see the live status for each step in the release pipeline. It indicates that a 
-   manual intervention is pending (this pre-deployment approval was configured in the
-   previous tutorial [Define your multi-stage continuous deployment pipeline](define-multistage-release-process.md)).
-   Choose the **Resume** link.  
+    :::image type="content" source="media/deploy-using-approvals/open-summary.png" alt-text="Release summary":::
 
-   ![Viewing the status for the manual intervention](media/deploy-using-approvals/view-log-03.png)
+1. This view will show you a live status of each stage in your pipeline. The QA stage in this example is pending intervention. Select **Resume**. 
 
-1. You see the intervention message, and can choose to resume or reject the deployment.
-   Enter some text response to the intervention and choose **Resume**.
+    :::image type="content" source="media/deploy-using-approvals/view-log-03.png" alt-text="Stage pending intervention":::
 
-   ![Resuming or rejecting the deployment](media/deploy-using-approvals/view-log-01.png)
-   
-1. Go back to the pipeline view of the release. After deployment to the QA stage succeeds,
-   you see the pre-deployment approval pending message for the **Production** environment.
+1. Enter your comment, and then select **Resume**
 
-   ![Pre-deployment approval required](media/deploy-using-approvals/view-log-05.png)
+    :::image type="content" source="media/deploy-using-approvals/view-log-01.png" alt-text="Resume task":::
 
-1. Enter your approval message and choose **Approve** to continue the deployment.
+1. Return to your release pipeline view. The **QA** stage deployment succeeded and the pre-deployment approval is triggered for the **Production** stage.
 
-   ![Approve the deployment](media/deploy-using-approvals/view-log-06.png)
+    :::image type="content" source="media/deploy-using-approvals/view-log-05.png" alt-text="Pre-deployment approval triggered for next stage":::
 
-1. Go back to the pipeline view of the release. Now you see that the gates are being processed before the release continues.  
+1. Select **Approve** and enter your comment and then select **Approve** to continue deployment.
 
-   ![Status while executing gates in the deployment](media/deploy-using-approvals/view-log-04.png)
+    :::image type="content" source="media/deploy-using-approvals/view-log-06.png" alt-text="Approve deployment":::
 
-1. After the gate evaluation has successfully completed, the deployment occurs for the Production stage.
-   Choose the **Production** stage icon in the release summary to see more details of the approvals and gate evaluations.
+1. Return to your release pipeline view. The live status indicates that the gates are being processed for the **Production** stage before the release continues.  
 
-Altogether, by using a combination of manual approvals, approval gates, and the manual
-intervention task, you've seen how can configure a release pipeline with all the control and
-auditing capabilities you may require.
+    :::image type="content" source="media/deploy-using-approvals/view-log-04.png" alt-text="status: processing gates":::
+
+1. Return to your release pipeline view, and hover over the stage you want to audit and then select **Logs** to view the logs. 
+
+    :::image type="content" source="media/deploy-using-approvals/view-logs.png" alt-text="View logs":::
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Integrate with ServiceNow change management](approvals/servicenow.md)
+> [Integrate with ServiceNow](approvals/servicenow.md)
+> [Integrate with Jenkins (Classic)](integrate-jenkins-pipelines-cicd.md)
