@@ -42,7 +42,7 @@ Select :::image type="icon" source="../../media/icons/filter-icon.png" border="f
 
 Add more criteria to either narrow or broaden your search by using the operators and functions listed in :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**.
 
-## Search Packages with REST API
+## Search packages with REST API
 
 You can use APIs to extend or supplement the capabilities listed in this article. For information about Package Search with REST API, see [Fetch Package Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/package%20search%20results/fetch%20package%20search%20results?preserve-view-not-set).
 ## Next steps
