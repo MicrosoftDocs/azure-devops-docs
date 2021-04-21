@@ -27,6 +27,48 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
+In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built.
+
+
+```yaml
+# this is being defined in app-ci pipeline
+resources:
+  pipelines:
+  - pipeline: securitylib   # Name of the pipeline resource
+    source: security-lib-ci # Name of the pipeline referenced by the pipeline resource
+    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+```
+
+* `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
+* `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane. This setting only works if the value is in quotes, if the name of the pipeline being referenced contains whitespace.
+
+    ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+> [!NOTE] 
+> If the triggering pipeline is in another Azure DevOps project, you must specify the
+> project name using `project: OtherProjectName`. For more information, see [pipeline resource](resources.md#resources-pipelines).
+
+
+
+## Branch filters
+
+Similar to CI triggers, you can specify the branches to include or exclude:
+
+```yaml
+# this is being defined in app-ci pipeline
+resources:
+  pipelines:
+  - pipeline: securitylib
+    source: security-lib-ci
+    trigger: 
+      branches:
+        include: 
+        - releases/*
+        exclude:
+        - releases/old*
+```
+
+
 In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the main branch or any releases branch.
 
 
@@ -42,14 +84,7 @@ resources:
       - main
 ```
 
-* `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
-* `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane. This setting only works if the value is in quotes, if the name of the pipeline being referenced contains whitespace.
 
-    ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
-
-> [!NOTE] 
-> If the triggering pipeline is in another Azure DevOps project, you must specify the
-> project name using `project: OtherProjectName`. For more information, see [pipeline resource](resources.md#resources-pipelines).
 
 Similar to CI triggers, you can specify the branches to include or exclude:
 
