@@ -135,7 +135,7 @@ For example, here we use the **Related** link type to link three items to the bu
 To link to multiple work items, you can use inline add which finds work items based on your recent activity or keyword searches. Simply select one or more of the work items displayed automatically based on your recent activity, or enter a keyword. Keyword searches will display work items based on work items that include that keyword in their title. 
 
 > [!NOTE]   
-> You need to add each link one at a time. (You can no longer enter their IDs separated by commas or spaces.) To quickly find work items of interest, you can also use [work item search](../../project/search/work-item-search.md).
+> You need to add each link one at a time. (You can no longer enter their IDs separated by commas or spaces.) To quickly find work items of interest, you can also use [work item search](../../project/search/functional-work-item-search.md).
 
 ::: moniker-end 
 
