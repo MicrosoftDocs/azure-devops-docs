@@ -23,7 +23,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
 
-## Configure triggers in a pipeline resource
+## Configure pipeline resource triggers
 
 To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
@@ -83,7 +83,7 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 There are two ways that tags are used with a pipeline resource.
 
-1. The `tags` property of the pipeline resource is used to determine which version of the pipeline to run when it is triggered manually or by a scheduled trigger.
+1. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
 
     ```yml
     resources:
@@ -96,7 +96,7 @@ There are two ways that tags are used with a pipeline resource.
         - Production   # Tags are AND'ed, used only for manual or scheduled triggers
       ```
 
-1. The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline.
+1. The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline branch contains all of the tags in the `tags` list, the pipeline runs.
 
     ```yml
     resources:
