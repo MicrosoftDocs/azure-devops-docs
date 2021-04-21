@@ -27,7 +27,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
-In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built.
+The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built.
 
 
 ```yaml
@@ -80,9 +80,7 @@ resources:
 
 :::moniker-end
 
-There are two ways that tags are used with a pipeline resource.
-
-The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline branch contains all of the tags in the `tags` list, the pipeline runs.
+The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline matches all of the tags in the `tags` list, the pipeline runs.
 
     ```yml
     resources:
@@ -98,7 +96,7 @@ The `tags` property of the `trigger` is used to filter which pipeline completion
     ```
 
 > [!NOTE]
-> The pipeline resource also has  a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
+> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
 
 ## Stage filters
 
