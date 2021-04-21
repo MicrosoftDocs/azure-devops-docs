@@ -36,57 +36,23 @@ resources:
   pipelines:
   - pipeline: securitylib   # Name of the pipeline resource
     source: security-lib-ci # Name of the pipeline referenced by the pipeline resource
+    project: FabrikamProject # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 ```
 
 * `pipeline: securitylib` specifies the name of the pipeline resource, and is used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables.
-* `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane. This setting only works if the value is in quotes, if the name of the pipeline being referenced contains whitespace.
+* `source: security-lib-ci` specifies the name of the pipeline referenced by this pipeline resource. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane. You must use quotes if the source pipeline name contains spaces.
 
     ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
-> [!NOTE] 
-> If the triggering pipeline is in another Azure DevOps project, you must specify the
-> project name using `project: OtherProjectName`. For more information, see [pipeline resource](resources.md#resources-pipelines).
+* `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project.
+* `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
 
-
+If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following section.
 
 ## Branch filters
 
-Similar to CI triggers, you can specify the branches to include or exclude:
-
-```yaml
-# this is being defined in app-ci pipeline
-resources:
-  pipelines:
-  - pipeline: securitylib
-    source: security-lib-ci
-    trigger: 
-      branches:
-        include: 
-        - releases/*
-        exclude:
-        - releases/old*
-```
-
-
-In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the main branch or any releases branch.
-
-
-```yaml
-# this is being defined in app-ci pipeline
-resources:
-  pipelines:
-  - pipeline: securitylib   # Name of the pipeline resource
-    source: security-lib-ci # Name of the pipeline referenced by the pipeline resource
-    trigger: 
-      branches:
-      - releases/*
-      - main
-```
-
-
-
-Similar to CI triggers, you can specify the branches to include or exclude:
+You can specify the branches to include or exclude. If you provide branches, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. 
 
 ```yaml
 # this is being defined in app-ci pipeline
@@ -103,9 +69,7 @@ resources:
 ```
 
 > [!NOTE]
-> If your filters aren't working, try using the prefix `refs/heads/`. For example, use `refs/heads/releases/old*`instead of `releases/old*`.
-
-If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following section.
+> If your branch filters aren't working, try using the prefix `refs/heads/`. For example, use `refs/heads/releases/old*`instead of `releases/old*`.
 
 ## Tag filters
 
@@ -118,20 +82,7 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 There are two ways that tags are used with a pipeline resource.
 
-1. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
-
-    ```yml
-    resources:
-      pipelines:
-      - pipeline: MyCIAlias
-        project: Fabrikam
-        source: Farbrikam-CI
-        branch: master
-        tags:          # optional list of tags required on the pipeline to pickup default artifacts 
-        - Production   # Tags are AND'ed, used only for manual or scheduled triggers
-      ```
-
-1. The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline branch contains all of the tags in the `tags` list, the pipeline runs.
+The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline branch contains all of the tags in the `tags` list, the pipeline runs.
 
     ```yml
     resources:
@@ -145,6 +96,9 @@ There are two ways that tags are used with a pipeline resource.
           - Production # Tags are AND'ed
           - Signed
     ```
+
+> [!NOTE]
+> The pipeline resource also has  a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
 
 ## Stage filters
 
