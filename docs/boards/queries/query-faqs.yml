@@ -27,7 +27,7 @@ sections:
 
       - question: What's the difference between a query and a semantic search? 
         answer: |
-          While both query and search finds and list work items, the filter features and result presentation are different. To learn more, see [About managed queries](about-managed-queries.md).  
+          While both query and semantic search finds and list work items, the filter features and results presentation are different. To learn more, see [Functional work item search, Semantic search vs. managed work item queries](../../project/search/functional-work-item-search.md#semantic-search-vs-managed-work-item-queries).  
 
       - question: Can I export a query and import to another project?  
         answer: |
@@ -208,6 +208,10 @@ sections:
 
           - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
+
+      - question: How do I sort on the Parent field?  
+        answer: | 
+          You can't. Sorting a query on the **Parent** field isn't a supported feature. 
 
   - name: Linked work item queries 
     questions: 
