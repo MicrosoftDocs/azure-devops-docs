@@ -118,7 +118,7 @@ To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azu
 
 ## Q & A
 
-[!INCLUDE [temp](../includes/qa-custom-work-item-on-backlog.md)] 
+[!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
 
 ## Related articles  
 
