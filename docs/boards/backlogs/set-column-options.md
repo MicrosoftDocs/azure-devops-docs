@@ -115,7 +115,7 @@ Specifically, you can perform the following actions from the following list view
 
 
 > [!TIP]    
-> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
+> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. Not all fields are supported for selection, such as the **Parent** field. 
 
 
 ::: moniker range="azure-devops"

@@ -142,6 +142,10 @@ We recommend that you create a test project and apply your customized  inherited
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
 
+## Q & A
+
+[!INCLUDE [temp](../includes/qa-custom-work-item-on-backlog.md)] 
+
 ## Try this next
 > [!div class="nextstepaction"]
 > [Customize the web layout](customize-process-form.md) 
@@ -150,7 +154,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 ## Related articles 
 
-[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+[!INCLUDE [temp](includes/note-audit-log-support-process.md)]
 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)
