@@ -18,8 +18,8 @@ This sample shows you how to use Azure DevOps CLI commands to work with Azure Pi
 This script demonstrates three operations:
 
 * Defining a pipeline using [YAML](../../yaml-schema.md) files
-* Creating a variable group with nonsecret variables and updating it to add a secret variable
-* Using the nonsecret and secret variables from the variable group during a pipeline run
+* Creating a variable group with nonsecret and secret variables for use in a pipeline
+* Running the pipeline using Azure CLI, which also opens a web page for monitoring the pipeline run
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
