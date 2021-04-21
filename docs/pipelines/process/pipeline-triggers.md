@@ -25,9 +25,9 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 ## Configure pipeline resource triggers
 
-To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
+To trigger a pipeline upon the completion of another pipeline, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
-The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built.
+The following example has two pipelines - `app-ci` (the pipeline defined by the YAML snippet), and `security-lib-ci` (the triggering pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of `security-lib-ci` is built.
 
 
 ```yaml
@@ -48,11 +48,11 @@ resources:
 * `project: FabrikamProject` - If the triggering pipeline is in another Azure DevOps project, you must specify the project name. This property is optional if both the source pipeline and the triggered pipeline are in the same project.
 * `trigger: true` - Use this syntax to trigger the pipeline when any version of the source pipeline completes. See the following sections in this article to learn how to filter which versions of the source pipeline completing will trigger a run. When filters are specified, the source pipeline run must match all of the filters to trigger a run.
 
-If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following section.
+If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the version of the code in the branch specified by the **Default branch for manual and scheduled builds** setting, as described in the following [Branch considerations for pipeline completion triggers](#branch-considerations-for-pipeline-completion-triggers) section.
 
 ## Branch filters
 
-You can specify the branches to include or exclude. If you provide branches, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. 
+You can optionally specify the branches to include or exclude. If you specify branch filters, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. In the following example, the `app-ci` pipeline run if the `security-lib-ci` completes on any `releases/*` branch, except for `releases/old*`.
 
 ```yaml
 # this is being defined in app-ci pipeline
@@ -80,20 +80,20 @@ resources:
 
 :::moniker-end
 
-The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline. If the triggering pipeline matches all of the tags in the `tags` list, the pipeline runs.
+The `tags` property of the `trigger` filters which pipeline completion events can trigger your pipeline. If the triggering pipeline matches all of the tags in the `tags` list, the pipeline runs.
 
-    ```yml
-    resources:
-      pipelines:
-      - pipeline: MyCIAlias
-        project: Fabrikam
-        source: Farbrikam-CI
-        branch: master
-        trigger:
-          tags:        # This filter is used for triggering the pipeline run
-          - Production # Tags are AND'ed
-          - Signed
-    ```
+```yml
+resources:
+  pipelines:
+  - pipeline: MyCIAlias
+    project: Fabrikam
+    source: Farbrikam-CI
+    branch: master
+    trigger:
+      tags:        # This filter is used for triggering the pipeline run
+      - Production # Tags are AND'ed
+      - Signed
+```
 
 > [!NOTE]
 > The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
