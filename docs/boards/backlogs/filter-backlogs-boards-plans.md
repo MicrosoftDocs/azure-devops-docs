@@ -254,7 +254,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1.5":::
-     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+     [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -492,7 +492,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ---
 :::row:::
    :::column span="2":::
-     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+     [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
    :::column-end:::
    :::column span="2":::
         
@@ -693,7 +693,7 @@ In addition to the standard filter functions summarized in the previous table, t
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 :::row:::
    :::column span="2":::
-     [**Semantic search, Work Items**](../../project/search/work-item-search.md)
+     [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
    :::column-end:::
    :::column span="2":::
 
