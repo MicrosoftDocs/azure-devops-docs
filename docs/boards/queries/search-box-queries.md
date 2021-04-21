@@ -354,15 +354,14 @@ Use the following search operators to specify search criteria:
 
 The following examples show how to use operators when you create a search string.  
 
----
 |Filter for items that meet this criteria:|Type the following string:|  
-|---|---|
+|-----------------------------------------|--------------------------|
 |Assigned to Peter and not Active.|`A:Peter -S=Active`|
 |In which the Activity field was not `Development`.|`- Activity=Development`|
 |Resolved by Peter.|`"Resolved By":Peter`|
 |Contain the keyword `triage` in the title or description, are not assigned to you, and are not closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that do not contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
----
+
 
 ## Related articles
 
