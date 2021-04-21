@@ -1,5 +1,5 @@
 ---
-title: What are all the default permissions and groups? 
+title: Permissions, security groups, and service accounts reference
 titleSuffix: Azure DevOps
 description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
 ms.technology: devops-security
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/16/2020
+ms.date: 04/09/2021
 --- 
 
 
@@ -46,8 +46,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
@@ -98,8 +98,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -155,8 +155,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -206,8 +206,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>DevOps permissions</h4>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Git repositories</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Git repositories</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
@@ -1115,7 +1115,6 @@ You manage organization-level permissions through the [web portal admin context]
             <li><a href="../settings/work/customize-process.md" data-raw-source="[Customize a project](../settings/work/customize-process.md)">Customize a project</a></li>
             <li><a href="../settings/work/manage-process.md" data-raw-source="[Add and manage processes](../settings/work/manage-process.md)">Add and manage processes</a></li>
             </ul>
-            <p>Users granted Basic and Stakeholder access are granted this permission by default. </p>
         </td>
     </tr>
     <tr>
@@ -1127,19 +1126,19 @@ You manage organization-level permissions through the [web portal admin context]
     <tr>
         <td id="delete-field">Delete field from organization</td>
         <td>
-            Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>. Users granted Basic and Stakeholder access are granted this permission by default. 
+            Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>.
         </td>
     </tr>
     <tr>
         <td id="delete-process">Delete process</td>
         <td>
-            Can <a href="../settings/work/manage-process.md" data-raw-source="[delete an inherited process](../settings/work/manage-process.md)">delete an inherited process</a> used to customize work tracking and Azure Boards. Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+            Can <a href="../settings/work/manage-process.md" data-raw-source="[delete an inherited process](../settings/work/manage-process.md)">delete an inherited process</a> used to customize work tracking and Azure Boards. 
         </td>
     </tr>
     <tr>
         <td id="edit-process">Edit process</td>
         <td>
-            Can edit a <a href="../settings/work/customize-process.md" data-raw-source="[custom inherited process](../settings/work/customize-process.md)">custom inherited process</a>. Users granted Basic and Stakeholder access are granted this permission by default. 
+            Can edit a <a href="../settings/work/customize-process.md" data-raw-source="[custom inherited process](../settings/work/customize-process.md)">custom inherited process</a>.
         </td>
     </tr>
     <tr><td><h4>Repos</hr></td><td> </td> 
@@ -1634,7 +1633,7 @@ You manage project-level permissions through the [web portal admin context](set-
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
         <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
-        <p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
+       </td>
     </tr>
     <tr>
         <td id="update-project-visibility">Update project visibility</td>
@@ -1649,7 +1648,7 @@ You manage project-level permissions through the [web portal admin context](set-
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
         <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
-        <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
+        </td>
     </tr>
     <tr>
         <td id="change-process-team-project-permission">Change process of project</td>
@@ -1670,12 +1669,12 @@ You manage project-level permissions through the [web portal admin context](set-
     </tr>
     <tr>
         <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-        <td><p>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection.   <blockquote>Users granted Stakeholder access for a public project are granted this permission by default.</blockquote>
+        <td><p>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection.   
         </td>
     </tr>
     <tr>
         <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
-        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. </td>
     </tr>
     <tr><td><h4>Analytics</hr></td><td> </td> 
     </tr>
@@ -1730,8 +1729,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
-        <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p></td>
     </tr>
     <tr>
         <td id="change-process-team-project-permission">Change process of project</td>
@@ -1813,12 +1811,12 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection.  Users granted Stakeholder access for a public project are granted this permission by default.
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. 
         </td>
     </tr>
     <tr>
         <td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
-        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.</td>
+        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[permanently delete work items](../../boards/backlogs/remove-delete-work-items.md)">permanently delete work items</a> from this project. </td>
     </tr>
     <tr>
         <td id="rename-team-project-permission">Rename project</td>
@@ -1827,7 +1825,7 @@ that have been saved under the Shared area.   </td>
     <tr>
         <td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
         <td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the <strong>Bypass rules on work item updates</strong> permission. You can set the <code>suppressNotifications</code> parameter to <code>true</code> when updating working via <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a>.</p>
-        <p>Users granted Stakeholder access for a public project are granted this permission by default.</p></td>
+        </td>
     </tr>
     <tr>
         <td id="update-project-visibility">Update project visibility</td>
@@ -1907,7 +1905,6 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column span="3":::
       Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.  
       Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).  
-      Users granted Basic and Stakeholder access are granted this permission by default. 
    :::column-end:::
 :::row-end:::
 ---
@@ -2416,8 +2413,7 @@ Remove Others' Locks
 Rename Repository 
 -->
 
-
-You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
+You manage the security of each [Git repository](../../repos/git/set-git-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
 
 ::: moniker range="<= tfs-2017" 
@@ -2569,7 +2565,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../../re
 
 ## TFVC (object-level)
 
-You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
+You manage the security of each TFVC branch from the [web portal](../../repos/tfvc/set-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
 These permissions appear only for a project setup to use Team Foundation Version Control as the source control system.
 
@@ -2784,7 +2780,7 @@ Members of the Project Administrators group are automatically granted permission
         <td>
             Can create area nodes.
             Users who have both this permission and the <strong>Edit this node</strong> permission
-            can move or reorder any child area nodes. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
+            can move or reorder any child area nodes.  
             <blockquote>
                 Consider adding this permission to any manually added users or groups
                 that may need to delete, add, or rename area nodes.
@@ -2797,7 +2793,6 @@ Members of the Project Administrators group are automatically granted permission
             Users who have both this permission and the <strong>Edit this node</strong> permission for another node
             can delete area nodes and reclassify existing work items from the deleted node. 
             If the deleted node has child nodes, those nodes are also deleted.
-            <p>Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.</p>
             <blockquote>
                 Consider adding this permission to any manually added users or groups
                 that may need to delete, add, or rename area nodes.
@@ -2807,7 +2802,7 @@ Members of the Project Administrators group are automatically granted permission
     <tr>
         <td id="area-edit-this-node-permission">Edit this node</td>
         <td>
-            Can set permissions for this node and rename area nodes. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects. 
+            Can set permissions for this node and rename area nodes. 
             <blockquote>
                 Consider adding this permission to any manually added users or groups
                 that may need to delete, add, or rename area nodes.
@@ -2817,7 +2812,7 @@ Members of the Project Administrators group are automatically granted permission
     <tr>
         <td id="area-edit-work-items-in-this-node-permission">Edit work items in this node</td>
         <td>
-            Can edit work items in this area node. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
+            Can edit work items in this area node.
             <blockquote>
                 Consider adding this permission to any manually added users or groups
                 that may need to edit work items under the area node.
@@ -2854,7 +2849,7 @@ Members of the Project Administrators group are automatically granted permission
     <tr>
         <td id="area-view-work-items-in-this-node-permission">View work items in this node</td>
         <td>
-            Can view, but not change, work items in this area node. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default for both public and private projects.
+            Can view, but not change, work items in this area node.
             <blockquote>
                 If you set the View work items in this node to Deny,
                 the user will not be able to see any work items in this area node.

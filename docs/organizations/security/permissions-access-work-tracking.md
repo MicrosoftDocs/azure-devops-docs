@@ -362,7 +362,8 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes 
 
-- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)  
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Manage teams and configure team tools](../settings/manage-teams.md)
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  

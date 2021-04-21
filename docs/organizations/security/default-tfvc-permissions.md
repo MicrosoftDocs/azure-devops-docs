@@ -1,27 +1,29 @@
 ---
 title: TFVC repository default permissions
 titleSuffix: Azure DevOps
-description: At-a-glance view of default permissions assigned to built-in security groups made for Team Foundation Version Control (TFVC) repositories 
+description: Summary view of default Team Foundation Version Control (TFVC) repository permissions 
 ms.topic: reference
-ms.assetid:   
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/07/2018
+ms.date: 04/14/2021
 monikerRange: '<= azure-devops'
 ---
+
+
 # Default TFVC permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
-
-From the project admin content, **Version Control** page, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md).
+All members of the Contributors group with Basic access can contribute to a TFVC repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to the repository as listed below.
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
+To change permissions for TFVC repositories or branches, see [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md).
+
+[!INCLUDE [tip-search-settings](../../includes/tip-find-setting-permission.md)]
+
 ## Related articles
 
-- [Set repository permissions for Git or TFV](set-git-tfvc-repository-permissions.md)
-- [Default permissions and access](permissions-access.md)
-- [Permissions and groups reference](permissions.md)
+- [Default permissions and access](permissions-access.md) 
+- [Permissions and groups reference](permissions.md) 

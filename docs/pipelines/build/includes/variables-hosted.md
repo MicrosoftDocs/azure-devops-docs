@@ -761,7 +761,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr><th>Variable</th><th>Description</th></tr>
 <tr>
 <td>Checks.StageAttempt</td>
-<td>Set to 1 the first time this check is attempted, and increments every time it is retried. 
+<td>Set to 1 the first time this stage is attempted, and increments every time the stage is retried. 
 <br/><br/>
 This variable can only be used within an <a href="../../process/approvals.md">approval or check</a> for an environment. For example, you could use <code>$(Checks.StageAttempt)</code> within an <a href="../../process/approvals.md#invoke-rest-api">Invoke REST API check</a>.<br /><br />
     <image src="../media/checks-stageattempt-var.png" alt="Add the stage attempt as a parameter." />

@@ -51,7 +51,7 @@ Open a browser and navigate to *http:\//localhost:5000* to view the app. When yo
 
 ## Provision the target Azure App Service
 
-The quickest way to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use [az webapp up](/cli/azure/webapp#az-webapp-up) to both provision the App Service and perform the first deployment of your app.
+The quickest way to create an App Service instance is to use the Azure command-line interface (CLI) through the interactive Azure Cloud Shell. In the following steps, you use [az webapp up](/cli/azure/webapp#az_webapp_up) to both provision the App Service and perform the first deployment of your app.
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 
@@ -98,7 +98,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
    > [!TIP]
    > If you encounter a "Permission denied" error with a *.zip* file, you may have tried to run the command from a folder that doesn't contain a Python app. The `az webapp up` command then tries to create a Windows app service plan, and fails. 
 
-1. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config?view=azure-cli-latest&preserve-view=true#az-webapp-config-set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
+1. If your app uses a custom startup command, set the [az webapp config](/cli/azure/webapp/config?view=azure-cli-latest&preserve-view=true#az_webapp_config_set) property. For example, the *python-sample-vscode-flask-tutorial* app contains a file named *startup.txt* that contains its specific startup command, so you set the `az webapp config` property to `startup.txt`.
 
    1. From the first line of output from the previous `az webapp up` command, copy the name of your resource group, which is similar to **\<your-name>\_rg\_Linux\_\<your-region>**.
 
@@ -369,7 +369,7 @@ You can also use a task like [PublishTestResults@2](../tasks/test/publish-test-r
 
 ## Provision an App Service with single commands
 
-The [az webapp up](/cli/azure/webapp#az-webapp-up) command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If you want more control over the deployment process, you can use single commands to accomplish the same tasks. For example, you might want to use a specific name for the resource group, or create an App Service within an existing App Service Plan.
+The [az webapp up](/cli/azure/webapp#az_webapp_up) command used earlier in this article is a convenient method to provision the App Service and initially deploy your app in a single step. If you want more control over the deployment process, you can use single commands to accomplish the same tasks. For example, you might want to use a specific name for the resource group, or create an App Service within an existing App Service Plan.
 
 The following steps perform the equivalent of the `az webapp up` command:
 
@@ -400,7 +400,7 @@ The following steps perform the equivalent of the `az webapp up` command:
    ```
 
     > [!NOTE]
-    > If you want to deploy your code at the same time you create the app service, you can use the `--deployment-source-url` and `--deployment-source-branch` arguments with the `az webapp create` command. For more information, see [az webapp create](/cli/azure/webapp?view=azure-cli-latest&preserve-view=true#az-webapp-create).
+    > If you want to deploy your code at the same time you create the app service, you can use the `--deployment-source-url` and `--deployment-source-branch` arguments with the `az webapp create` command. For more information, see [az webapp create](/cli/azure/webapp?view=azure-cli-latest&preserve-view=true#az_webapp_create).
 
    > [!TIP]
    > If you see the error message "The plan (name) doesn't exist", and you're sure that the plan name is correct, check that the resource group specified with the `-g` argument is also correct, and the plan you identify is part of that resource group. If you misspell the resource group name, the command doesn't find the plan in that nonexistent resource group, and gives this particular error.
@@ -417,7 +417,7 @@ The following steps perform the equivalent of the `az webapp up` command:
 
 To avoid incurring ongoing charges for any Azure resources you created in this walkthrough, such as a B1 App Service Plan, delete the resource group that contains the App Service and the App Service Plan. To delete the resource group from the Azure portal, select **Resource groups** in the left navigation. In the resource group list, select the **...** to the right of the resource group you want to delete, select **Delete resource group**, and follow the prompts.
 
-You can also use [az group delete](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az-group-delete) in the Cloud Shell to delete resource groups.
+You can also use [az group delete](/cli/azure/group?view=azure-cli-latest&preserve-view=true#az_group_delete) in the Cloud Shell to delete resource groups.
 
 To delete the storage account that maintains the file system for Cloud Shell, which incurs a small monthly charge, delete the resource group that begins with **cloud-shell-storage-**.
 
