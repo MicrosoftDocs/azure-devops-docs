@@ -178,7 +178,7 @@ The following Azure Machine Learning service CLI commands are used in the exampl
 | az ml pipeline list | Lists Azure Machine Learning pipelines. |
 | az ml computetarget delete | Deletes a compute target. |
 
-For more information on these commands, see the [CLI extension reference](/cli/azure/ext/azure-cli-ml/ml?preserve-view=true&view=azure-cli-latest).
+For more information on these commands, see the [CLI extension reference](/cli/azure/ml?preserve-view=true&view=azure-cli-latest).
 
 ## Next steps
 
