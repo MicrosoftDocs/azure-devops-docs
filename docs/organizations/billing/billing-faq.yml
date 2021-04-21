@@ -64,7 +64,7 @@ sections:
       - question: |
           How can I pay only once per user across multiple organizations?
         answer: |
-          Multi-organization billing/licensing is available. For more information, see [multi-organization billing](/billing-faq.yml#multi-organization-billing).
+          Multi-organization billing/licensing is available. For more information, see [multi-organization billing](/azure/devops/organizations/billing/billing-faq).
           
       - question: |
           What's the difference between daily pro-rated charges instead of monthly committed purchases?
@@ -293,16 +293,7 @@ sections:
           Why is the name of my organization resource incorrect? 
         answer: |
           If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
-          
-      - question: |
-          Does Azure DevOps support billing tags? 
-        answer: |
-          Yes, you can apply [billing tags](/azure/azure-resource-manager/management/tag-resources#tags-and-billing) to the organization resource in the Azure portal and they're included in billing charges associated with your organization.  
-          
-          1. Go to https://portal.azure.com/#blade/HubsExtension/BrowseAll.
-          2. Select the organization resource.
-          3. Select **Assign tags**. 
-          
+         
       - question: |
           What happens if I delete my organization resource? 
         answer: |
