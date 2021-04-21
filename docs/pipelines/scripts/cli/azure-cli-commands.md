@@ -101,6 +101,7 @@ githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
+branch="master"
 resourceGroupLocation="<resource-group-location-name-or-id>"
 storageAccountLocation="<storage-account-location-name-or-id>"
 
@@ -134,6 +135,7 @@ pipelineId=$(az pipelines create \
     --description "$pipelineDesc" \
     --repository $repoName \
     --repository-type $repoType \
+    --branch $branch \
     --service-connection $githubServiceEndpointId \
     --yml-path azure-pipelines.yml \
     --query id)
