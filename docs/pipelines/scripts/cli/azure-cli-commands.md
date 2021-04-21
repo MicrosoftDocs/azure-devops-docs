@@ -87,7 +87,7 @@ steps:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-Next, in the following Bash script, replace the placeholders, and then run the script:
+Next, replace the placeholders in the following script, and then run it in Bash.
 
 ```azurecli
 #!/bin/bash
