@@ -43,9 +43,9 @@
 - name: FAQs
   items:
   - name: Create a project
-    href: faq-create-project.md
+    href: faq-create-project.yml
   - name: Rename a project
-    href: faq-rename-project.md
+    href: faq-rename-project.yml
 - name: Public projects
   href: ../public/about-public-projects.md 
 

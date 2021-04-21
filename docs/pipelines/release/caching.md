@@ -42,7 +42,7 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 #### Path input
 
-`path` should be set to the directory to populate the cache from (on save) and to store files in (on restore). It can be absolute or relative. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
+`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
 
 #### Key input
 
@@ -246,25 +246,24 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'Ubuntu-16.04'
 
 steps:
   - task: Cache@2
     inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      key: 'docker | cache'
       path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
+      cacheHitVar: DOCKER_CACHE_HIT
+    displayName: Cache Docker images
   - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
+      docker load -i $(Pipeline.Workspace)/docker/cache.tar
+    displayName: Restore Docker image
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_HIT, 'true'))
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+    displayName: Save Docker image
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_HIT, 'true')))
 ```
 
 Replace `caching-docker.yml` with your own pipeline YAML file.

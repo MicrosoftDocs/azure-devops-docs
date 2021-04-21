@@ -198,7 +198,7 @@ The following table describes the namespaces that manage object-level permission
       `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
-      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](set-git-tfvc-repository-permissions.md#set-git-repository-permissions).  
+      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
@@ -440,7 +440,7 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repository administrative interface](set-git-tfvc-repository-permissions.md#set-tfvc-repository-permissions).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
       <br/>
       **ID:** `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
