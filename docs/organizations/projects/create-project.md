@@ -348,7 +348,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     If the **Next** button is active, you can configure your project portal.
 
-    If you have a problem, you receive an error message and a link to the project creation log. See [Troubleshoot creating a project](faq-create-project.md) for specific errors and exceptions.
+    If you have a problem, you receive an error message and a link to the project creation log. See [Troubleshoot creating a project](faq-create-project.yml) for specific errors and exceptions.
 
     When you're finished, you can see your project in Team Explorer. You can also choose the **Web Access** link to connect to your project from the web portal.
 

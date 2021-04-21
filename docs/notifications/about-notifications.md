@@ -156,6 +156,6 @@ You can also use a third-party service like Zapier to send notifications to hund
 
 * [Default and supported notifications](oob-built-in-notifications.md)
 * [Query with group clauses](../boards/queries/using-queries.md#group-clauses)
-* [FAQs](faq-notifications.md)
+* [FAQs](faq-notifications.yml)
 * [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 * [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)

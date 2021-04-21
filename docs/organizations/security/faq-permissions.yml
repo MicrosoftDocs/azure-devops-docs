@@ -44,7 +44,7 @@ sections:
           To view a [project](permissions.md#project-level-groups), users must have the [**view project level information permission** set to **allow**](set-project-collection-level-permissions.md#set-permissions-at-the-project--or-collection-level).  
       - question: Why can't guest users search for Azure Active Directory users?
         answer: |
-          By default, [Azure AD guests can't search the Azure AD in the manner required by Azure DevOps](../accounts/faq-azure-access.md#q-why-are-no-identities-found-when-i-try-to-add-users-from-azure-ad-to-my-azure-devops-organization).
+          By default, [Azure AD guests can't search the Azure AD in the manner required by Azure DevOps](../accounts/faq-azure-access.yml#q--why-are--no-identities-found--when-i-try-to-add-users-from-azure-ad-to-my-azure-devops-organization-).
 
   - name: Organizations
     questions:
@@ -55,6 +55,6 @@ sections:
 additionalContent: |
   ## Related articles
     - [Troubleshoot access and permission issues in Azure DevOps](troubleshoot-permissions.md)
-    - [Azure access FAQs](../accounts/faq-azure-access.md)
+    - [Azure access FAQs](../accounts/faq-azure-access.yml)
 
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

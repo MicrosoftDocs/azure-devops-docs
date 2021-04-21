@@ -82,6 +82,11 @@ Versions in the "Server" column are linked to the appropriate download location.
             <th>Server</th>
         </tr>
     </thead>
+<tr>
+    <td rowspan="2"><a href="2021/sprint-185-update.md" data-raw-source="[13 April 2021](2021/sprint-185-update.md)">13 April 2021</a></td>
+    <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>Future</td></tr>
+    </tr>
+    <tr><td>Display custom work item types in burndown widget</td><td>Reporting</td><td>Future</td></tr>
     <tr>
     <td rowspan="7"><a href="2021/sprint-183-update.md" data-raw-source="[03 March 2021](2021/sprint-183-update.md)">03 March 2021</a></td>
     <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td></tr>
@@ -122,14 +127,14 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tr><td>ServiceNow change management integration with YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
-    <td>Removed items on the Work Items page</td><td>Boards</td><td>Future</td>
+    <td>Removed items on the Work Items page</td><td>Boards</td><td>2020.1</td>
     </tr>
     <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
     <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
     <tr>
     <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
-    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>Future</td>
+    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>2020.1</td>
     </tr>
     <tr><td>A batch of improvements to the Pull Request experience</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Node 14 in the Azure Pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
@@ -138,16 +143,16 @@ Versions in the "Server" column are linked to the appropriate download location.
     <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
     <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
     </tr>
-    <tr><td>Parent field on the task board</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Parent field on the task board</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>Org-level setting for default branch</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Add a new auth scope for contributing PR comments</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Configure draft PR validation for GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="8"><a href="2020/sprint-175-update.md" data-raw-source="[10 September 2020](2020/sprint-175-update.md)">10 September 2020</a></td>
-    <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>Future</td>
+    <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>2020.1</td>
     </tr>
-    <tr><td>Link your work item to builds in another project</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>Editing description (help text) on system fields</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Link your work item to builds in another project</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Editing description (help text) on system fields</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>General availability of scale-set agents</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Run this job next</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Template expressions allowed in YAML resources block</td><td>Pipelines</td><td>Future</td></tr>
@@ -155,11 +160,11 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tr><td>The Test and Feedback extension is now available in the Microsoft Edge store</td><td>Test Plans</td><td>Future</td></tr>
     <tr>
     <td rowspan="13"><a href="2020/sprint-174-update.md" data-raw-source="[24 August 2020](2020/sprint-174-update.md)">24 August 2020</a></td>
-    <td>System work item types on backlogs and boards</td><td>Boards</td><td>Future</td>
+    <td>System work item types on backlogs and boards</td><td>Boards</td><td>2020.1</td>
     </tr>
     <tr><td>Audit logging event</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>Azure Boards GitHub app repo limit raised (private preview)</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>Customize work item state when pull request is merged (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Azure Boards GitHub app repo limit raised</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Customize work item state when pull request is merged</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>Pipelines images announcements</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Agent log uploads improved</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Optionally mount container volumes read-only</td><td>Pipelines</td><td>Future</td></tr>
@@ -179,10 +184,10 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tr><td>Multi-repo triggers for Azure repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
-    <td>State transition restriction rules</td><td>Boards</td><td>Future</td>
+    <td>State transition restriction rules</td><td>Boards</td><td>2020.1</td>
     </tr>
-    <tr><td>Copy work item to copy children</td><td>Boards</td><td>Future</td></tr>
-    <tr><td>Improved rules for activated and resolved fields</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Copy work item to copy children</td><td>Boards</td><td>2020.1</td></tr>
+    <tr><td>Improved rules for activated and resolved fields</td><td>Boards</td><td>2020.1</td></tr>
     <tr><td>System work item types on backlogs and boards (private preview)</td><td>Boards</td><td>Future</td></tr>
     <tr><td>Exclusive deployment lock policy</td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>Stages filters for pipeline resource triggers</td><td>Pipelines</td><td>Future</td></tr>
