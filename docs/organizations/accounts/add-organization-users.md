@@ -76,7 +76,7 @@ To give other users access to your organization, add their email addresses.
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
-   - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
+   - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml).
    - **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
    - **Add to projects:** Select the project you want to add them to.  
    - **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
@@ -103,7 +103,7 @@ Choose the **Current page** for instructions.
 
 4. Enter the following information.
 
-  - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
+  - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.yml).
    - **Access level:** Leave the access level as **Basic** for users who contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).  
    - **Add to projects:** Select the project you want to add them to.  
    - **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).  
@@ -199,7 +199,7 @@ When you add members to projects without setting up billing, they automatically 
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *Project Administrator*, *Project Collection Administrator*, or *organization Owner*.
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
 2. Open your project, and then select **Project settings** > **Teams**. Then, select your project.
 
@@ -405,7 +405,7 @@ A:
 
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
-* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
+* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.yml) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
@@ -429,7 +429,7 @@ A:
 
 ### Q: Why can't I add any more members?
 
-A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.md#q-why-cant-i-add-any-more-members-to-my-project). 
+A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.yml#q--why-can-t-i-add-any-more-members-to-my-project-). 
 
 #### Q: How is *access* different from *permissions?
 

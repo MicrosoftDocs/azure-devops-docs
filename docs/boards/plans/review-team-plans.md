@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 02/26/2021
+ms.date: 04/12/2021
 ---
 
 
@@ -84,12 +84,13 @@ In this article you'll learn:
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 	- [Enable the New Delivery Plans feature](../../project/navigation/preview-features.md).  
-	- Be a member of a project.  Users granted **Stakeholder** access for a private project cannot add plans but can view plans. Users granted **Stakeholder** access for a public project can add and view plans.
+	- Be a member of a project. Users granted **Stakeholder** access for a public project can add and view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
 	- [Defined area paths and assigned to a team](../../organizations/settings/set-area-paths.md)
 	- [Defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
-- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users.  
+	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group and have Basic access or higher. Members of the project's Readers group are valid users. Users granted **Stakeholder** access for a private project cannot view plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
  
 #### [Plans](#tab/plans) 
@@ -100,7 +101,8 @@ In this article you'll learn:
 	- [Configured teams](../../organizations/settings/add-teams.md)
 	- [Defined area paths and assigned to a team](../../organizations/settings/set-area-paths.md)
 	- [Defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations. 
+	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
 
@@ -116,6 +118,7 @@ In this article you'll learn:
 	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
 
@@ -193,7 +196,6 @@ Note the following:
 	> ![Choose New Plan button.](media/plans/add-plan-new-plan-button.png) 
 
 	All users have permissions to create a plan and manage the plans they create.   
-
 2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan. You can add up to 15 teams to a plan.   
 
 	> [!div class="mx-imgBorder"]  
@@ -267,9 +269,11 @@ Note the following:
 When defining a plan, note the following:  
 - Use the name and description field to clearly identify your plan within the project 
 - You can choose one or more teams from any project defined in the organization or collection, up to a maximum of ten teams   
-- You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md)
+- You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md) 
+	> [!NOTE] 
+	> If you aren't able to select a backlog level, check the Team Backlog settings to ensure the backlog level is enabled for the team. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
--  To filter for specific work items, specify the field criteria. 
+-  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
 <a id="card-settings">  </a>
 

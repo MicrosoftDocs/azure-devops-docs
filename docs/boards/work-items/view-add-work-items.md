@@ -2,7 +2,7 @@
 title: View and add work items from Work Items page
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views 
-ms.custom: boards-work-items, seodec18, contperf-fy20q4, devx-track-azurecli
+ms.custom: boards-work-items, seodec18, contperf-fy20q4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -12,7 +12,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/11/2021
+ms.date: 04/16/2021
 ---
 
 # View and add work items using the Work Items page  
@@ -22,45 +22,13 @@ ms.date: 02/11/2021
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots, as shown and described in the following image, as well as interactive filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
-<br/> 
 
----  
-:::row:::
-   :::column span="1":::
-      ::: moniker range="azure-devops"
-      ![Screenshot of Boards&gt;Work Items Menu, Cloud version.](media/view-add/view-menu-cloud-version.png)  
-      ::: moniker-end
-      ::: moniker range="< azure-devops"
-      ![Screenshot of Boards&gt;Work Items Menu, on-premises version.](media/view-add/view-menu.png)  
-      ::: moniker-end
-   :::column-end:::
-   :::column span="2":::
-      ::: moniker range="azure-devops"
-      <br/><br/><br/><br/>
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
-      - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
-      - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
-      - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
-      - **My team(s)**: lists work items that you&#39;re team members have recently viewed or updated.  
-      ---
-      - **Recently updated**: lists work items recently updated in the project.  
-      - **Recently completed**: lists work items completed or closed in the project.  
-      - **Recently created**: lists work items created within the last 30 days in the project.  
-      ::: moniker-end
-      ::: moniker range="< azure-devops"
-      <br/><br/><br/><br/>
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
-      - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
-      - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
-      - **My activity**: lists work items that you&#39;ve recently viewed or updated.   
-      ---
-      - **Recently updated**: lists work items recently updated in the project.  
-      - **Recently completed**: lists work items completed or closed in the project.  
-      - **Recently created**: lists work items created within the last 30 days in the project.  
-      ::: moniker-end
-   :::column-end:::
-:::row-end:::
----  
+::: moniker range=">= azure-devops-2020"
+![Screenshot of Boards&gt;Work Items Menu, Cloud version.](media/view-add/view-menu-cloud-version.png)  
+::: moniker-end
+::: moniker range="< azure-devops-2020"
+![Screenshot of Boards&gt;Work Items Menu, on-premises version.](media/view-add/view-menu.png)  
+::: moniker-end
 
 
 > [!NOTE]     
@@ -126,51 +94,45 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 
 <br/>
 
+ 
 :::row:::
    :::column span="1":::
-      ::: moniker range="azure-devops"
+      ::: moniker range=">= azure-devops-2020"
       ![Screenshot of Boards&gt;Work Items Menu, Cloud version.](media/view-add/view-menu-cloud-version.png)  
       ::: moniker-end
-      ::: moniker range="< azure-devops"
+      ::: moniker range="< azure-devops-2020"
       ![Screenshot of Boards&gt;Work Items Menu, on-premises version.](media/view-add/view-menu.png)  
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      <br/><br/><br/><br/>
-      ::: moniker range="azure-devops"
-      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
+      ::: moniker range=">= azure-devops-2020" 
+      - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. Does not include items moved to the Removed state. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
       - **My activity**: lists work items that you&#39;ve recently viewed or updated.  
       - **My team(s)**: lists work items that you&#39;re team members have recently viewed or updated.  
-      ---
-      - **Recently updated**: lists work items recently updated in the project.  
-      - **Recently completed**: lists work items completed or closed in the project.  
-      - **Recently created**: lists work items created within the last 30 days in the project.  
       ::: moniker-end
-      ::: moniker range="< azure-devops"
+      ::: moniker range="< azure-devops-2020" 
       - **Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.  
       - **Following**: lists work items that you&#39;re [following](follow-work-items.md).  
       - **Mentioned**: lists work items in which you&#39;ve been mentioned in the last 30 days.  
       - **My activity**: lists work items that you&#39;ve recently viewed or updated.   
+      ::: moniker-end
       ---
       - **Recently updated**: lists work items recently updated in the project.  
       - **Recently completed**: lists work items completed or closed in the project.  
       - **Recently created**: lists work items created within the last 30 days in the project.  
-      ::: moniker-end
    :::column-end:::
 :::row-end:::
-
-<br/>
-
-
+ 
+ 
 # [Visual Studio 2019](#tab/visual-studio)
 
 
 To view a work item, double-click the title or open the context menu for the work item (right-click or enter the menu key) and select **Open**. A browser window will open with the work item form.
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Screenshot of Boards&gt;Work Items Menu, Visual Studio 2019.](media/view-add/work-item-menu-options-vs.png)  
    :::column-end:::
    :::column span="2":::
@@ -178,7 +140,7 @@ To view a work item, double-click the title or open the context menu for the wor
       - **Assign to me**: Changes the **Assigned To** field to your user name.    
       - **New Branch...**: Opens a dialog to create a new branch automatically linked to the work item. For details, see [Drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md).
       - **Complete work item**: Updates the **State** field to Completed, Done, or Closed.
-      - **Relate to changes**: Links the work item to the current commit of recent changes.< 
+      - **Relate to changes**: Links the work item to the current commit of recent changes.  
    :::column-end:::
 :::row-end:::
 

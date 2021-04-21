@@ -1,26 +1,24 @@
 ---
-title: Artifacts storage
-description: Azure Artifacts storage breakdown at organization and project levels to show data consumption by project and artifact type.
+title: View Artifacts storage
+description: View Azure Artifacts storage consumption at organization and project levels.
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/20/2020
+ms.date: 04/07/2021
 ms.author: rabououn
 author: ramiMSFT
 monikerRange: '>= tfs-2017'
+"recommendations": "true"
 ---
 
-# Artifacts storage breakdown
+# Artifacts storage consumption
 
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
 
-Azure Artifacts offers a free-tier plan that includes 2 gigabytes (GiB) of free storage for different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
+With Azure Artifacts free-tier plan, you get two Gibibytes (GiB) of free storage to store different types of packages. When you reach your maximum storage limit, you can either upgrade to a paid subscription or delete some of your existing artifacts.
 
-On November 1, 2020, Azure Artifacts switched to consumption-based billing for all package types (NuGet, npm, Python, Maven, and Universal packages). Symbol storage is free for now, and billing will be deferred to a later time. For more information on the billing changes, see the [Billing changes](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/) blog post.
+Azure Artifacts uses a consumption-based billing for all the supported package types (NuGet, npm, Python, Maven, and Universal packages). Storing symbols files is free.
 
-> [!NOTE]
-> Organizations created before May 6, 2019, remained on per-subscription billing until November 1, 2020. At that time, they switched over to per-storage usage billing.
-
-To give you a better view of your storage consumption, Azure Artifacts has introduced a new user interface for artifact storage. You can now view your consumption at both the organization level and the project level. Storage is also grouped by artifact type and/or by projects.
+Using the artifact storage UI from your organization/project settings, you can view your storage consumption at both the organization level and the project level. Storage is also grouped by project and/or by artifact type.
 
 ## Organization-level storage
 
@@ -66,9 +64,10 @@ The project-level view shows your total storage summary and your storage consump
 
 The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
 
-## What's next?
+## Related articles
 
 - [What are feeds?](concepts/feeds.md)
 - [What are feed views?](concepts/views.md)
 - [Get started with NuGet packages](get-started-nuget.md)
 - [Publish to NuGet feeds (YAML/classic)](../pipelines/artifacts/nuget.md)
+- [Azure Artifacts billing: blog post](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/)

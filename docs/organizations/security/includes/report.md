@@ -98,7 +98,7 @@
 <td align="left">Add and configure dashboards<br/></td>
 <td>  </td>
 <td>  </td>
-<td><a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[With permissions set](../../../report/dashboards/dashboard-permissions.md)">With permissions set</a></td>
+<td><a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[With permissions set](/azure/devops/report/dashboards/dashboard-permissions)">With permissions set</a></td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>

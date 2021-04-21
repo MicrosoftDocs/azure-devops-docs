@@ -59,7 +59,7 @@ permissions. [How do I find the Project Collection Administrators?](../security/
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 
-   [Need help?](faq-configure-customize-organization.md#get-support)
+   [Need help?](faq-configure-customize-organization.yml#get-support)
 
 Your organization is deleted.
 
