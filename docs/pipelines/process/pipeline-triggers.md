@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 04/08/2021
+ms.date: 04/21/2021
 ms.custom: contperf-fy21q3
 monikerRange: ">=azure-devops-2020"
 ---
@@ -83,7 +83,7 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 There are two ways that tags are used with a pipeline resource.
 
-1. The `tags` property of the pipeline resource is used to determine which version of the pipeline to run when it is triggered manually, scheduled, or triggered by another resource.
+1. The `tags` property of the pipeline resource is used to determine which version of the pipeline to run when it is triggered manually or by a scheduled trigger.
 
     ```yml
     resources:
@@ -92,8 +92,8 @@ There are two ways that tags are used with a pipeline resource.
         project: Fabrikam
         source: Farbrikam-CI
         branch: master
-        tags:          # This filter is used for resolving default version
-        - Production   # Tags are AND'ed
+        tags:          # optional list of tags required on the pipeline to pickup default artifacts 
+        - Production   # Tags are AND'ed, used only for manual or scheduled triggers
       ```
 
 1. The `tags` property of the `trigger` is used to filter which pipeline completion events can trigger your pipeline.
