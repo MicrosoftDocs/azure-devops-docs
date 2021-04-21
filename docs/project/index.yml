@@ -86,10 +86,10 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Search code
-            url: ./search/code-search.md
+            url: ./search/functional-code-search.md
           - text: Search packages
-            url: ./search/package-search.md
+            url: ./search/functional-package-search.md
           - text: Search work items
-            url: ./search/work-item-search.md
+            url: ./search/functional-work-item-search.md
           - text: Search wiki
             url: ./wiki/search-wiki.md

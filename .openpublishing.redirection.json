@@ -18071,13 +18071,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/backlogs/filter-backlogs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
-      "redirect_document_id": true
+      "source_path": "docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/boards/filter-kanban-board.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
+      "source_path": "docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/navigation/search-basics.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
@@ -18088,6 +18093,36 @@
     {
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/project/search/administration.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-package-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-work-item-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/code-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/package-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": true
     },
     {
