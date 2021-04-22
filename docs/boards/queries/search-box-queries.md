@@ -28,7 +28,7 @@ You can find work items using shortcut filters or by specifying keywords or phra
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/administration.md).
+You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
 
 For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [semantic searches](#initiate-an-ad-hoc-search-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
 
@@ -54,10 +54,9 @@ Free text search easily searches across all work item fields, including custom f
 
 1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
+   :::image type="content" source="../../project/search/media/get-started/work-item-search-vert.png" alt-text="Work Item Search box":::
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. Search results are displayed in a snippet view where the matches found are shown in bold.
 
    ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
@@ -65,7 +64,7 @@ Free text search easily searches across all work item fields, including custom f
    Work item search matches derived forms of your search terms; for example, a search for
    "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-2. Select a snippet of a work item to display it in the right window. 
+3. Select a snippet of a work item to display it in the right window. 
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
@@ -120,8 +119,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/media/search/search-work-vert.png)    
+   :::image type="content" source="../../project/search/media/get-started/search-work-vert.png" alt-text="Search from the title bar":::   
 
    The quick filters you can use are:
 
@@ -130,7 +128,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-1. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start typing the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
@@ -138,12 +136,12 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
    `tags:Critical` finds all work items tagged "Critical". 
 
-1. Add more filters to further narrow your search, and use Boolean operators
+3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if required. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
    to a user named "Chris".
 
-1. Narrow your search to specific types
+4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
 
@@ -154,8 +152,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/media/search/work-item-search-filters.png)    
+   :::image type="content" source="../../project/search/media/get-started/work-item-search-filters.png" alt-text="Title bar Search":::
 
    The quick filters you can use are:
 
@@ -164,7 +161,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-1. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start typing the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
@@ -172,12 +169,12 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
    `tags:Critical` finds all work items tagged "Critical". 
 
-1. Add more filters to further narrow your search, and use Boolean operators
+3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if required. For example, 
    `a: Chris t: Bug s: Active` finds all active bugs assigned
    to a user named "Chris".
 
-1. Narrow your search to specific types
+4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 ::: moniker-end
 
@@ -357,15 +354,14 @@ Use the following search operators to specify search criteria:
 
 The following examples show how to use operators when you create a search string.  
 
----
 |Filter for items that meet this criteria:|Type the following string:|  
-|---|---|
+|-----------------------------------------|--------------------------|
 |Assigned to Peter and not Active.|`A:Peter -S=Active`|
 |In which the Activity field was not `Development`.|`- Activity=Development`|
 |Resolved by Peter.|`"Resolved By":Peter`|
 |Contain the keyword `triage` in the title or description, are not assigned to you, and are not closed.|`triage -A=@me -S=Closed`|
 |Active bugs that are assigned to you that do not contain the keyword `bugbash` in the title.|`S=Active T=bug A=@Me -Title:bugbash`
----
+
 
 ## Related articles
 
