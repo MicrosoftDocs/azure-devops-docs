@@ -96,7 +96,7 @@ resources:
 ```
 
 > [!NOTE]
-> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources#evaluation-of-artifact-version).
+> The pipeline resource also has a `tags` property. The `tags` property of the pipeline resource is used to determine which pipeline run to retrieve artifacts from, when the pipeline is triggered manually or by a scheduled trigger. For more information, see [Resources: pipelines](resources.md#resources-pipelines) and [Evaluation of artifact version](resources.md#evaluation-of-artifact-version).
 
 ## Stage filters
 
