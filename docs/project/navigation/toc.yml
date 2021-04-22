@@ -14,10 +14,6 @@
   href: filter-basics.md
 - name: Keyboard shortcuts
   href: keyboard-shortcuts.md
-- name: Search
-  items:
-  - name: Get started with Search
-    href: ../search/get-started-search.md
 - name: Manage or enable features
   href: preview-features.md
 - name: Reference

@@ -109,6 +109,13 @@ sections:
 
           To learn how, see [Customize your backlogs or boards (Inheritance process)](customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../../../reference/add-portfolio-backlogs.md).
 
+      - question: How do I add my custom work item type to a backlog?  
+        answer: | 
+          Modify your requirement backlog to include the custom work item type on the product backlog. For details, see [Customize your backlogs or boards, Edit or rename the requirement backlog](customize-process-backlogs-boards.md#edit-or-rename-the-requirement-backlog). 
+
+          > [!NOTE]  
+          > The backlog level to which you add a custom work item type determines the parent work item type(s) for the work item type.  
+
       - question: Can caching impact rules applied to work items?  
         answer: | 
 
