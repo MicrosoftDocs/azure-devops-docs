@@ -273,10 +273,10 @@ cd ~/myagent$
 Command:
 
 ```bash
-sudo ./svc.sh install
+sudo ./svc.sh install [username]
 ```
 
-This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host.
+This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified then the username is taken from the $SUDO_USER environment variable which is set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
 
 #### Start
 
