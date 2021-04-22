@@ -153,7 +153,17 @@ To view and update the **Default branch for manual and scheduled builds** settin
 
 ## Combining trigger types
 
-When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
+When you specify both CI triggers and pipeline triggers in your pipeline, you can expect new runs to be started every time a push is made that matches the filters the CI trigger, and a run of the source pipeline is completed that matches the filters of the pipeline completion trigger. 
+
+For example, consider two pipelines named `A` and `B` that are in the same repository, both have CI triggers, and `B` has a pipeline completion trigger configured for the completion of pipeline `A`. If you make a push to the repository:
+
+- A new run of `A` is started, based on its CI trigger.
+- At the same time, a new run of `B` is started, based on its CI trigger. This run consumes the artifacts from a previous run of pipeline `A`.
+- When `A` completes, it triggers another run of `B`, based on the pipeline completion trigger in `B`.
+
+To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
+
+Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
 - A new run of `A` is started.
 - At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
