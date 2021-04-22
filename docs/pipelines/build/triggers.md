@@ -41,7 +41,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Scheduled triggers](../process/scheduled-triggers.md) are independent of the repository and allow you to run a pipeline according to a schedule.
 
-[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
+[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
 
 ## Branch consideration for triggers in YAML pipelines
 
@@ -53,7 +53,7 @@ YAML pipelines can have different versions of the pipeline in different branches
 | PR triggers (`pr`)         | The version of the pipeline in the source branch for the pull request is used. |
 | GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
 | Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
-| Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers). |
+| Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
 
 ## Classic release pipelines
 
