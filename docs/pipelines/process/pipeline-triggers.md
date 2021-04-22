@@ -163,11 +163,4 @@ For example, consider two pipelines named `A` and `B` that are in the same repos
 
 To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
 
-Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
-
-- A new run of `A` is started.
-- At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
-- As `A` completes, it will trigger another run of `B`.
-
-To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
 
