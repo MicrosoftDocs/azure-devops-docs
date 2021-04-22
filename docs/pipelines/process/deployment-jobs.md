@@ -517,11 +517,11 @@ stages:
     - StageA
  
   # when referring to another stage, stage name is included in variable path
-  condition: eq(dependencies.StageA.outputs['StageA.A1.setvarStep.RunStageB'], 'true')
+  condition: eq(dependencies.StageA.outputs['A1.setvarStep.RunStageB'], 'true')
   
   # Variables reference syntax differs slightly from inter-stage condition syntax
   variables:
-    myOutputVar: stageDependencies.StageA.A1.outputs['A1.setvarStep.RunStageB']
+    myOutputVar: $[stageDependencies.StageA.A1.outputs['setvarStep.RunStageB']]
   jobs:
   - deployment: B1
     pool:
