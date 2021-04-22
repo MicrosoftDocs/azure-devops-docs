@@ -52,7 +52,7 @@ If the triggering pipeline and the triggered pipeline use the same repository, t
 
 ## Branch filters
 
-You can optionally specify the branches to include or exclude. If you specify branch filters, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. In the following example, the `app-ci` pipeline run if the `security-lib-ci` completes on any `releases/*` branch, except for `releases/old*`.
+You can optionally specify the branches to include or exclude when configuring the trigger. If you specify branch filters, a new pipeline is triggered whenever a source pipeline run is successfully completed that matches the branch filters. In the following example, the `app-ci` pipeline runs if the `security-lib-ci` completes on any `releases/*` branch, except for `releases/old*`.
 
 ```yaml
 # this is being defined in app-ci pipeline
@@ -86,9 +86,7 @@ The `tags` property of the `trigger` filters which pipeline completion events ca
 resources:
   pipelines:
   - pipeline: MyCIAlias
-    project: Fabrikam
     source: Farbrikam-CI
-    branch: master
     trigger:
       tags:        # This filter is used for triggering the pipeline run
       - Production # Tags are AND'ed
@@ -113,7 +111,6 @@ You can trigger your pipeline when one or more stages of the triggering pipeline
 resources:
   pipelines:
   - pipeline: MyCIAlias  
-    project: Fabrikam  
     source: Farbrikam-CI  
     trigger:    
       stages:         # This stage filter is used when evaluating conditions for 
