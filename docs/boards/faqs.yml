@@ -79,7 +79,7 @@ sections:
       - question: Can a work item be assigned to several users or a user group? 
 
         answer: |
-          **No**. Work items can only be assigned to a single user. Also, you can only add a user that is available from the [people picker](queries/query-by-workflow-changes.md#people-picker.md).    
+          **No**. Work items can only be assigned to a single user. Also, you can only add a user that is available from the [people picker](queries/query-by-workflow-changes.md#people-picker).    
 
       - question: What's the recommended method to group work? 
 
