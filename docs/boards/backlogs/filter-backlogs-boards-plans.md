@@ -757,16 +757,16 @@ You can also add the **Parent** field to cards on the Kanban Boards and Taskboar
 ## Prerequisites
 
 - All project members can exercise filter functions.  
-- All filter functions are set only for the current user until they clear them.  
+- All filter functions are set only for the current user until the user clears them.  
 
 ::: moniker range=">= tfs-2017"  
-- To filter using fields, first add the field as a column or to the card. For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;add those fields to show on the cards. For details, see [Customize cards](../boards/customize-cards.md) for Kanban Boards and [Customize a sprint Taskboard](../sprints/customize-taskboard.md) for the Taskboard.
+- To filter using fields, first add the field as a column or to the card. For example, to filter by **Assign To**, **Iteration Path**, or **Work Item Type**&mdash;or the contents of any other field&mdash;add those fields to show on the cards, backlog, plan, or list. 
 
-  To add columns or fields, see the following articles: 
-  - For Backlogs and Queries, see [Change column options](set-column-options.md)
-  - For Boards, see [Customize cards](../boards/customize-cards.md)
-  - For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
-  - For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
+To add columns or fields, see the following articles: 
+- For Backlogs and Queries, see [Change column options](set-column-options.md)
+- For Boards, see [Customize cards](../boards/customize-cards.md)
+- For Taskboards, see [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+- For Plans, see [Review team delivery plans]( ../plans/review-team-plans.md). 
 ::: moniker-end
 
 
@@ -838,6 +838,11 @@ Filters remain in place until you explicitly clear them.  When you refresh your 
 Once the board is filtered, you can choose the filter icon to hide the drop downs and view the applied filters on the board. The filter icon turns opaque to signify a filtered board.
 
 
+## Filter logic and Boolean operators
+
+Applying Boolean operators to filters is only supported for tags, as described in [Filter based on tags](#tags) later in this article. All other filters are applied with an implicit **AND** operator.  
+
+
 <a id="text-filter"></a>
 
 ## Apply keyword and ID filters
@@ -845,9 +850,6 @@ Once the board is filtered, you can choose the filter icon to hide the drop down
 The keyword filter function filters lists or cards based on the fields displayed via **Column Options** or board settings. Also, you can enter a value for an ID, whether or not the ID field is visible. Therefore, when filtering, consider what fields contain the keyword text or tags you want to filter on and make sure it is displayed.  
 
 Filtering is case-insensitive. 
-
-
-
 
 <a id="characters-ignore" />  
 
@@ -864,7 +866,8 @@ The filter criteria ignores the following characters when the field value starts
 ::: moniker range="<= tfs-2015"
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
- 
+
+
 ### Filter a board using a keyword
 
 
@@ -1016,6 +1019,7 @@ The final board displays just those stories linked as child work items to the se
 
 ::: moniker-end 
 
+<a id="tags" />
 
 ## Filter based on tags
 
