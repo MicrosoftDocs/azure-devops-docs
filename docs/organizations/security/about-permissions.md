@@ -308,7 +308,8 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 - Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
 
 **Don't:**  
-- Don't add users to multiple security groups which contain different permission levels. In certain cases, a Deny permission level will override an Allow permission level.  
+- Don't assign a **Deny** permission to the Project Collection Administrators group or Project Administrators group at any level 
+- Don't add users to multiple security groups which contain different permission levels. In certain cases, a **Deny** permission level may override an **Allow** permission level.  
 - Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
