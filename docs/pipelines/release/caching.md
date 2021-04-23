@@ -291,7 +291,7 @@ steps:
 
 ## Gradle
 
-Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
+Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable the build cache, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either run your build with `--build-cache` or add `org.gradle.caching=true` to your `gradle.properties` file.
 
 **Example**:
 
@@ -302,10 +302,12 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'gradle | "$(Agent.OS)"'
-    restoreKeys: gradle
-    path: $(GRADLE_USER_HOME)
-  displayName: Gradle build cache
+    key: gradle | $(Agent.OS)
+    path: GRADLE_USER_HOME
+    restoreKeys: |
+      gradle | $(Agent.OS) | Gemfile.lock
+      $(Agent.OS)
+  displayName: Gradle caching
 
 - script: |
     ./gradlew --build-cache build    
@@ -314,8 +316,10 @@ steps:
   displayName: Build
 ```
 
+- **restoreKeys**: The fallback keys if the primary key fails (Optional)
+
 > [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature:  [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842).
+> Caches are immutable, once a cache with a particular key is created for a specific scope (branch), the cache cannot be updated. This means that if the key is a fixed value, all subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. If you want to use a fixed key value, you must use the `restoreKeys` argument as a fallback option.
 
 ## Maven
 
