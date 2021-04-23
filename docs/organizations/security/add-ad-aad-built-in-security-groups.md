@@ -213,6 +213,6 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Related articles
 
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)
