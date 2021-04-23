@@ -79,7 +79,7 @@ sections:
       - question: Can a work item be assigned to several users or a user group? 
 
         answer: |
-          **No**. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
+          **No**. Work items can only be assigned to a single user. Also, you can only add a user that is available from the [people picker](queries/query-by-workflow-changes.md#people-picker.md).    
 
       - question: What's the recommended method to group work? 
 
@@ -115,7 +115,6 @@ sections:
         answer: |
           Each process defines four default backlog levels: the iteration backlog, requirement backlog, feature and epic portfolio backlogs. The work item types added to each backlog level are the natural work item types to form parent-child relationship and group work items into a hierarchy. To learn more, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize the process, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).   
 
-
       - question: How do I copy or clone a work item with all linked items? 
 
         answer: |
@@ -133,6 +132,12 @@ sections:
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
+
+
+      - question: How do I bulk modify a rich-text field? 
+
+        answer: | 
+          See [Bulk modify work items, Bulk modify rich-text fields](backlogs/bulk-modify-work-items.md#rich-text).
 
   - name: Backlogs and Boards 
 
