@@ -37,11 +37,11 @@ To help you identify these pipelines, we are rolling out a change in this releas
 > [!div class="mx-imgBorder"]
 > ![Build retention improvements](../../media/184-pipelines-03.png)
 
-We recommend that you update your pipelines by removing the per-pipeline retention rules. If your pipeline specifically requires custom rules, you can use a custom task in your pipeline. For information on adding retention leases through a task, see the [set retention policies for builds, releases, and tests documentation](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml#automatically-set-retention-lease-on-pipeline-runs&preserve-view=true).
+We recommend that you update your pipelines by removing the per-pipeline retention rules. If your pipeline specifically requires custom rules, you can use a custom task in your pipeline. For information on adding retention leases through a task, see the [set retention policies for builds, releases, and tests documentation](/azure/devops/pipelines/policies/retention?preserve-view=true&tabs=yaml&view=azure-devops#automatically-set-retention-lease-on-pipeline-runs).
 
 ### New controls for environment variables in pipelines
 
-Azure Pipelines agent scans standard output for special [logging commands](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands) and executes them. The `setVariable` [command](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands?view=azure-devops&tabs=bash#setvariable-initialize-or-modify-the-value-of-a-variable&preserve-view=true) can be used to set a variable or modify a previously defined variable. This can potentially be exploited by an actor outside the system. For example, if your pipeline has a step that prints the list of files in an ftp server, then a person with access to the ftp server can add a new file, whose name contains the `setVariable` command and cause the pipeline to change its behavior.
+Azure Pipelines agent scans standard output for special [logging commands](/azure/devops/pipelines/scripts/logging-commands) and executes them. The `setVariable` [command](/azure/devops/pipelines/scripts/logging-commands?preserve-view=true&tabs=bash&view=azure-devops#setvariable-initialize-or-modify-the-value-of-a-variable) can be used to set a variable or modify a previously defined variable. This can potentially be exploited by an actor outside the system. For example, if your pipeline has a step that prints the list of files in an ftp server, then a person with access to the ftp server can add a new file, whose name contains the `setVariable` command and cause the pipeline to change its behavior.
 
 We have many users that rely on setting variables using the logging command in their pipeline. With this release we are making the following changes to reduce the risk of unwanted uses of the `setVariable` command. 
 
@@ -85,7 +85,7 @@ steps:
 
 ### Generate unrestricted token for fork builds
 
-GitHub users commonly use forks to contribute to an upstream repository. When Azure Pipelines builds contributions from a fork of a GitHub repository, it restricts the permissions granted to the job access token and does not allow pipeline secrets to be accessed by such jobs. You can find more information about the security of building forks in our [documentation](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml#contributions-from-forks&preserve-view=true).
+GitHub users commonly use forks to contribute to an upstream repository. When Azure Pipelines builds contributions from a fork of a GitHub repository, it restricts the permissions granted to the job access token and does not allow pipeline secrets to be accessed by such jobs. You can find more information about the security of building forks in our [documentation](/azure/devops/pipelines/repos/github?preserve-view=true&tabs=yaml&view=azure-devops#contributions-from-forks).
 
 The same restrictions apply by default when building forks of a GitHub Enterprise Server repository. This may be more restrictive than desired in such closed environments, where users might still benefit from an inner-source collaboration model. While you can configure a setting in a pipeline to make secrets available to forks, there is no setting to control the job access token scope. With this release, we are giving you control to generate a regular job access token even for builds of forks. 
 
