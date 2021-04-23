@@ -271,10 +271,15 @@ Next, create the Dockerfile.
     cleanup() {
       if [ -e config.sh ]; then
         print_header "Cleanup. Removing Azure Pipelines agent..."
+        
+        # If the agent has some running jobs, the configuration removal process will fail.
+        # So, give it some time to finish the job.
+        while true; do
+          ./config.sh remove --unattended --auth PAT --token $(cat "$AZP_TOKEN_FILE") && break
 
-        ./config.sh remove --unattended \
-          --auth PAT \
-          --token $(cat "$AZP_TOKEN_FILE")
+          echo "Retrying in 30 seconds..."
+          sleep 30
+        done
       fi
     }
 
