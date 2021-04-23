@@ -20,7 +20,7 @@ ms.date: 04/09/2021
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
-For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and inheritance](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [Get started with permissions, access, and security groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -856,7 +856,7 @@ For each project that you create, the system creates the followings project-leve
        Has permissions to contribute fully to the project code base and work item tracking.  The default Team group is created when you create a project, and by default is added to the Contributors group for the project. Any new teams you create will also have a group created for them and added to the Contributors group.
    :::column-end:::
    :::column span="2":::
-       Add members of the team to this group. To grant access to configure team settings, add a team member to the team administrator role](../settings/add-team-administrator.md).
+       Add members of the team to this group. To grant access to configure team settings, [add a team member to the team administrator role](../settings/add-team-administrator.md).
    :::column-end:::
 :::row-end:::
 ---
