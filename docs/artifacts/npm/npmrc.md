@@ -33,7 +33,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-         > [!div class="mx-imgBorder"] 
+         > [!div class="mx-imgBorder"]
          > ![Connect to feed TFS](../media/connect-to-feed.png)
 
       ::: moniker-end
@@ -98,7 +98,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 ### Linux or Mac
 
-If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we recommend generating a token in the following manner for your **_$HOME/.npmrc_**
+`vsts-npm-auth` is not supported for Linuc/Mac. We recommend generating a token and saving it in your **_$HOME/.npmrc_** as follows 
 
 [!INCLUDE [npmrc.md](../includes/npm/npmrc.md)]
 
