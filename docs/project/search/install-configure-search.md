@@ -1,18 +1,19 @@
 ---
-title: Install, configure Search 
+title: Install, configure Search
+titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
 ms.technology: devops-collab
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017 < azure-devops'
-ms.date: 02/25/2021
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= tfs-2017 <= azure-devops'
+ms.date: 04/26/2021
 ---
 
 # Install and configure Search
 
-**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
+[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
 
 Learn how to do the following actions for the Search extension for Code, Wiki, and Work item searches in Azure DevOps Server.
 - [Configure Search](#configure-search)
@@ -112,7 +113,7 @@ To change to the Azul Zulu OpenJDK, follow these steps:
 For more information, see [GitHub Code-Search Java Migration](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
 
 > [!NOTE]
-> * If you choose to use Azul Zulu OpenJDK, ensure that you [download the latest updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk). It doesn't automatically install updates.
+> * If you choose to use Azul Zulu OpenJDK, ensure that you [download version 8](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
 
 ## Feature availability
 
