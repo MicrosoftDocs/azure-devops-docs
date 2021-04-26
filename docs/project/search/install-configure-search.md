@@ -113,7 +113,7 @@ To change to the Azul Zulu OpenJDK, follow these steps:
 For more information, see [GitHub Code-Search Java Migration](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
 
 > [!NOTE]
-> * If you choose to use Azul Zulu OpenJDK, ensure that you [download the latest updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk). It doesn't automatically install updates.
+> * If you choose to use Azul Zulu OpenJDK, ensure that you [download version 8](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
 
 ## Feature availability
 
