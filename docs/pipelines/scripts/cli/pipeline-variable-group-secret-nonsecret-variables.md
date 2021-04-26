@@ -1,31 +1,36 @@
 ---
-title: 'Azure CLI sample for Azure Pipelines: create, manage, and monitor'
-description: Azure CLI sample for creating, managing, and monitoring an Azure Pipeline using Azure DevOps commands.
+title: 'Azure CLI sample for Azure Pipelines and variable groups'
+description: Azure CLI sample for accessing secret and nonsecret variables from a variable group in an Azure Pipeline. This sample uses the azure-devops extension.
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 04/20/2021
+ms.date: 04/23/2021
 ms.topic: sample
 ms.service: az-devops-project
 ms.devlang: azurecli 
 ms.custom: devx-track-azurecli
 ---
 
-# Create, manage, and monitor an Azure pipeline
+# Use a variable group's secret and nonsecret variables in an Azure Pipeline
 
-This sample shows you how to use Azure DevOps CLI commands to work with Azure Pipelines. Before you can run the sample, [sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization. The sample also requires an [Azure DevOps personal access token](../../../cli/log-in-via-pat.md) (PAT) for authentication. To get an Azure DevOps PAT, see [Use personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat). Then in the GitHub Marketplace, [install the Azure Pipelines application](https://github.com/marketplace/azure-pipelines/) so that Azure Pipelines can access your GitHub repository.
+In this sample, use the Azure DevOps CLI (azure-devops extension) to create an Azure Pipeline that accesses a variable group containing both secret and nonsecret variables.
 
 This script demonstrates three operations:
 
-* Defining a pipeline using [YAML](../../yaml-schema.md) files
-* Creating a variable group with nonsecret and secret variables for use in a pipeline
-* Running the pipeline using Azure CLI, which also opens a web page for monitoring the pipeline run
+* Defining a [Azure Pipeline](../../index.yml) using [YAML](../../yaml-schema.md) files
+* Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
+* Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
+* [Sign up for Azure Pipelines](../../get-started/pipelines-sign-up.md) to get an Azure DevOps organization.
+* [Create an Azure DevOps personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) (PAT) for authentication.
+* Use or create a [GitHub](https://www.github.com) repository to place the Azure Pipeline in.
+* In the GitHub Marketplace, [install the Azure Pipelines application](https://github.com/marketplace/azure-pipelines/) so that Azure Pipelines can access your GitHub repository.
+
 ## Sample script
 
-First, save the following YAML file to *azure-pipelines.yml* in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
+First, save the following YAML file, which defines the Azure Pipeline, to *azure-pipelines.yml* in the root directory of your local repository. Then add and commit the file in GitHub, and push the file to the remote GitHub repository.
 
 ```yml
 parameters:
@@ -126,10 +131,11 @@ projectId=$(az devops project create \
     --name "$devopsProject" --organization "$devopsOrg" --visibility public --query id)
 az devops configure --defaults organization="$devopsOrg" project="$devopsProject"
 
-# Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set)
+# Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set).
 githubServiceEndpointId=$(az devops service-endpoint github create \
     --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName" --query id)
 
+# Create the pipeline.
 pipelineId=$(az pipelines create \
     --name "$pipelineName" \
     --description "$pipelineDesc" \
@@ -140,7 +146,7 @@ pipelineId=$(az pipelines create \
     --yml-path azure-pipelines.yml \
     --query id)
 
-# Create a variable group with 2 non-secret variables and 1 secret variable
+# Create a variable group with 2 non-secret variables and 1 secret variable.
 # (contososecret < a < b). Then run the pipeline.
 variableGroupId=$(az pipelines variable-group create \
     --name "$variableGroupName" --authorize true --variables a=35 b=86 --query id)
@@ -179,15 +185,15 @@ az devops configure --defaults organization="" project=""
 
 ## Azure CLI references used in this article
 
-- [az devops configure](/cli/azure/ext/azure-devops/devops#az_devops_configure)
+- [az devops configure](/cli/azure/devops#az_devops_configure)
 - [az devops project create](/cli/azure/devops/project#az_devops_project_create)
 - [az devops project delete](/cli/azure/devops/project#az_devops_project_delete)
-- [az devops service-endpoint github create](/cli/azure/ext/azure-devops/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
+- [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
 - [az group create](/cli/azure/group#az_group_create)
 - [az group delete](/cli/azure/group#az_group_delete)
-- [az pipelines create](/cli/azure/ext/azure-devops/pipelines#az_pipelines_create)
-- [az pipelines delete](/cli/azure/ext/azure-devops/pipelines#az_pipelines_delete)
-- [az pipelines run](/cli/azure/ext/azure-devops/pipelines#az_pipelines_run)
+- [az pipelines create](/cli/azure/pipelines#az_pipelines_create)
+- [az pipelines delete](/cli/azure/pipelines#az_pipelines_delete)
+- [az pipelines run](/cli/azure/pipelines#az_pipelines_run)
 - [az pipelines variable-group create](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_create)
 - [az pipelines variable-group delete](/cli/azure/pipelines/variable-group#az_pipelines_variable_group_delete)
 - [az pipelines variable-group variable create](/cli/azure/pipelines/variable-group/variable#az_pipelines_variable_group_variable_create)
