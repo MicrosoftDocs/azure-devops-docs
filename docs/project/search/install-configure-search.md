@@ -1,18 +1,19 @@
 ---
-title: Install, configure Search 
+title: Install, configure Search
+titleSuffix: Azure DevOps 
 description: Find installation and setup instructions for Code, Wiki & Work Item Search in Azure DevOps Server.
 ms.assetid: 
 ms.technology: devops-collab
 ms.topic: how-to
-ms.author: kaelli
-author: KathrynEE
-monikerRange: '>= tfs-2017 < azure-devops'
-ms.date: 02/25/2021
+ms.author: chcomley
+author: chcomley
+monikerRange: '>= tfs-2017 <= azure-devops'
+ms.date: 04/26/2021
 ---
 
 # Install and configure Search
 
-**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
+[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
 
 Learn how to do the following actions for the Search extension for Code, Wiki, and Work item searches in Azure DevOps Server.
 - [Configure Search](#configure-search)
