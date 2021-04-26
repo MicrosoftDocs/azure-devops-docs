@@ -343,7 +343,7 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
