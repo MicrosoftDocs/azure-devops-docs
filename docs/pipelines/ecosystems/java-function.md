@@ -46,7 +46,7 @@ az functionapp create --resource-group myapp-rg --consumption-plan-location west
 
 ## Update pom.xml
 
-Update `pom.xml` to reflect your application. Exit the `pom.xml` file in your forked repository with your values for `FUNCTION_APP_NAME`, `REGION`, and `RESOURCE_GROUP`.
+Update `pom.xml` to reflect your application. Edit the `pom.xml` file in your forked repository with your values for `FUNCTION_APP_NAME`, `REGION`, and `RESOURCE_GROUP`.
 
 ```xml
         <functionAppName>FUNCTION_APP_NAME</functionAppName>
