@@ -237,7 +237,7 @@ If you're using a portrait orientation screen, use the **Preview pane: Right** l
 
 ## Search Work Items with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results?preserve-view-not-set).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Work Item Search with REST API, see [Fetch Work Item Search Results](/rest/api/azure/devops/search/work%20item%20search%20results/fetch%20work%20item%20search%20results).
 
 ## Next steps
 
