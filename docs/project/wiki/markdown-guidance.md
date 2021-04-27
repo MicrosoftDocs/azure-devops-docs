@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 09/19/2019
+ms.date: 04/26/2021
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -103,25 +103,27 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 [!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
-Make your text easier to read by breaking it up with paragraphs or line breaks.  
+Make your text easier to read by breaking it up into paragraphs or with line breaks.  
 
 ::: moniker range=">= tfs-2018"
 
 In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
 
-In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, select **Enter** to insert a line break. Begin your text on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph. Or, enter two consecutive line breaks to begin a new paragraph.
+In pull request comments, select **Enter** to insert a line break. Begin your text on a new line.  
+
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter**. This action begins a new paragraph.
 
 ::: moniker-end
 
@@ -139,12 +141,12 @@ Your text gets better spaced and makes it easier to read.
 **Example - Markdown file or widget:**
 
 <pre>
-Add two spaces before the end of the line.(space, space)
+Add two spaces before the end of the line, and then select **Enter**.(space, space, Enter)
 A space gets added in between paragraphs.
 </pre>
 
 **Result:**  
-Add two spaces before the end of the line.
+Add two spaces before the end of the line, and then select Enter.
 
 Space gets added in between paragraphs.
 
