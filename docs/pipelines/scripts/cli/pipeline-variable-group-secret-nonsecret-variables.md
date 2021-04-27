@@ -19,7 +19,7 @@ This script demonstrates three operations:
 
 * Defining a [Azure Pipeline](../../index.yml) using [YAML](../../yaml-schema.md) files
 * Creating a [variable group](../../library/variable-groups.md) with nonsecret and secret variables for use in a pipeline
-* Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run
+* Running the pipeline using [Azure DevOps CLI](../../../cli/index.md), which also opens a web page for monitoring the pipeline run's processing and output
 
 [!INCLUDE [azure-cli-prepare-your-environment.md](../../includes/azure-cli-prepare-your-environment.md)]
 
@@ -101,7 +101,6 @@ Next, replace the placeholders in the following script, and then run it in Bash.
 devopsToken="<azure-devops-personal-access-token>"
 devopsOrg="https://dev.azure.com/<my-azure-devops-account-or-organization-name>"
 pipelineName="<my-build>"
-pipelineDesc="<my-description>"
 githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
@@ -138,11 +137,11 @@ githubServiceEndpointId=$(az devops service-endpoint github create \
 # Create the pipeline.
 pipelineId=$(az pipelines create \
     --name "$pipelineName" \
-    --description "$pipelineDesc" \
+    --skip-first-run \
     --repository $repoName \
     --repository-type $repoType \
     --branch $branch \
-    --service-connection $githubServiceEndpointId \
+    --service-connection ${githubServiceEndpointId:1:-1} \
     --yml-path azure-pipelines.yml \
     --query id)
 
@@ -153,18 +152,21 @@ variableGroupId=$(az pipelines variable-group create \
 az pipelines variable-group variable create \
     --group-id $variableGroupId --name contososecret --secret true --value 14
 az pipelines run --id $pipelineId --open
+echo "Go to the pipeline run's web page to view the output results."
 read -p "Press any key to change the value of the variable group's secret variable, then run again:"
 
 # Change the variable group's secret variable value (a < contososecret < b).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 53
 az pipelines run --id $pipelineId --open
-read -p "Press any key to again change the value of the variable group's secret variable, then run again:"
+echo "Go to the pipeline run's web page to view the output results."
+read -p "Press any key to again change the value of the variable group's secret variable, then run once more:"
 
 # Change the variable group's secret variable value again (a < b < contososecret).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 97
 az pipelines run --id $pipelineId --open
+echo "Go to the pipeline run's web page to view the output results."
 read -p "Press any key to continue:"
 ```
 
