@@ -10,7 +10,6 @@ ms.author: atulmal
 ms.reviewer: laobri
 author: azooinmyluggage
 ms.date: 01/13/2021
-ms.custom: devx-track-azurecli
 monikerRange: azure-devops
 ---
 
