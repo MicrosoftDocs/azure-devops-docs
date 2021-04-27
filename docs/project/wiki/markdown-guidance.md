@@ -152,6 +152,7 @@ A space gets added in between paragraphs.
 </pre>
 
 **Result:**  
+
 Add two spaces before the end of the line, and then select Enter.
 
 A space gets added in between paragraphs.
