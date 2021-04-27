@@ -131,7 +131,7 @@
   - name: Set Git branch permissions
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Git permissions prior to TFS 2017 Update 1
-    href: git-permissions-before-2017.md
+    href: /azure/devops/repos/git/set-git-repository-permissions
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles
@@ -202,4 +202,4 @@
   - name: Manage security groups with CLI
     href: add-manage-security-groups.md 
   - name: Manage permissions with CLI
-    href: manage-tokens-namespaces.md 
+    href: manage-tokens-namespaces.md

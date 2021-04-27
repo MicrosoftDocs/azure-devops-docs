@@ -26,7 +26,7 @@ For information about managing Search indexing, see [Manage Search and indexing]
 ## Prerequisites
 
 - To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization. Non-administrative users can also request that the extension get added to their PCA.
-- See [Install and configure Azure DevOps Server](https://docs.microsoft.com/azure/devops/server/install/get-started?preserve-view-not-set) and [Requirements and compatibility](/azure/devops/server/requirements).
+- See [Install and configure Azure DevOps Server](/azure/devops/server/install/get-started) and [Requirements and compatibility](/azure/devops/server/requirements).
 
 ### Hardware recommendations
 

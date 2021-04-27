@@ -69,7 +69,7 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ### Search Wiki with REST API
 
-You can use APIs to extend or supplement the capabilities listed in this article. For information about Wiki Search with REST API, see [Fetch Wiki Search Results](https://docs.microsoft.com/rest/api/azure/devops/search/wiki%20search%20results/fetch%20wiki%20search%20results?preserve-view-not-set).
+You can use APIs to extend or supplement the capabilities listed in this article. For information about Wiki Search with REST API, see [Fetch Wiki Search Results](/rest/api/azure/devops/search/wiki%20search%20results/fetch%20wiki%20search%20results).
 
 ## Next steps
 
