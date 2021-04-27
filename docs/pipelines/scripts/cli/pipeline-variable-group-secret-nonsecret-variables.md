@@ -152,21 +152,21 @@ variableGroupId=$(az pipelines variable-group create \
 az pipelines variable-group variable create \
     --group-id $variableGroupId --name contososecret --secret true --value 14
 az pipelines run --id $pipelineId --open
-echo "Go to the pipeline run's web page to view the output results."
+echo "Go to the pipeline run's web page to view the output results for the 1st run."
 read -p "Press any key to change the value of the variable group's secret variable, then run again:"
 
 # Change the variable group's secret variable value (a < contososecret < b).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 53
 az pipelines run --id $pipelineId --open
-echo "Go to the pipeline run's web page to view the output results."
+echo "Go to the pipeline run's web page to view the output results for the 2nd run."
 read -p "Press any key to again change the value of the variable group's secret variable, then run once more:"
 
 # Change the variable group's secret variable value again (a < b < contososecret).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 97
 az pipelines run --id $pipelineId --open
-echo "Go to the pipeline run's web page to view the output results."
+echo "Go to the pipeline run's web page to view the output results for the 3rd run."
 read -p "Press any key to continue:"
 ```
 
