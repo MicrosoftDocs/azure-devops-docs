@@ -103,19 +103,36 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 [!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
-Make your text easier to read by breaking it up into paragraphs or with line breaks.  
+Make your text easier to read by breaking it into paragraphs or with line breaks.  
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
+### Pull requests
 
 In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
+
+**Example - pull request comment:**
+
+<pre>
+Add lines between your text with the **Enter** key.
+Your text gets better spaced and makes it easier to read.
+</pre>
+
+**Result:**
+
+Add lines between your text with the **Enter** key.
+
+Your text gets better spaced and makes it easier to read.
+
+::: moniker-end
+### Markdown files or widgets
+
+::: moniker range=">= tfs-2018"
 
 In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
-
-In pull request comments, select **Enter** to insert a line break. Begin your text on a new line.  
 
 In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
@@ -127,17 +144,6 @@ In a Markdown file or widget, enter two spaces before the line break, and then s
 
 ::: moniker-end
 
-**Example - pull request comment:**
-
-<pre>
-Add lines between your text with the **Enter** key.
-Your text gets better spaced and makes it easier to read.
-</pre>
-
-**Result:**
-Add lines between your text with the **Enter** key.
-Your text gets better spaced and makes it easier to read.
-
 **Example - Markdown file or widget:**
 
 <pre>
@@ -148,7 +154,7 @@ A space gets added in between paragraphs.
 **Result:**  
 Add two spaces before the end of the line, and then select Enter.
 
-Space gets added in between paragraphs.
+A space gets added in between paragraphs.
 
 ## Blockquotes
 
