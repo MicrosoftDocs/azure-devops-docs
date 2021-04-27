@@ -144,7 +144,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 <a id="build-variables"></a>
 
 <table>
-<tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
+<tr><th>Variable</th><th>Description</th><th>Available in <a href="../../process/templates.md">templates</a>?</th></tr>
 
 <tr>
 <td>Build.ArtifactStagingDirectory</td>
@@ -577,9 +577,8 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 ## System variables (DevOps Services)
 
 <a id="system-variables"></a>
-
 <table>
-<tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
+<tr><th>Variable</th><th>Description</th><th>Available in <a href="../../process/templates.md">templates</a>?</th></tr>
 
 <tr>
 <td>System.AccessToken</td>
