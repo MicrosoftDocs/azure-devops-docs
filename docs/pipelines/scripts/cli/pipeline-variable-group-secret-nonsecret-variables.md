@@ -174,11 +174,11 @@ read -p "Press any key to continue:"
 
 After the script sample has been run, the following commands can be used to remove the resource group and all resources associated with it.
 
-```azurecli-interactive
+```azurecli
 az pipelines variable-group delete --group-id $variableGroupId --yes
 az pipelines delete --id $pipelineId --yes
-az devops service-endpoint delete --id $githubServiceEndpointId --yes
-az devops project delete --id "$projectId" --yes
+az devops service-endpoint delete --id ${githubServiceEndpointId:1:-1} --yes
+az devops project delete --id ${projectId:1:-1} --yes
 export AZURE_DEVOPS_EXT_GITHUB_PAT=""
 az storage account delete --name $storageAccountName --resource-group $resourceGroupName --yes
 az group delete --name $resourceGroupName --yes
