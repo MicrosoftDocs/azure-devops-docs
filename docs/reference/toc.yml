@@ -66,15 +66,15 @@
   - name: Area & iteration paths
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Processes
-    href: /rest/api/azure/devops/processes/processes
+    href: /rest/api/azure/devops/processes/processes/list
   - name: Process templates
-    href: /rest/api/azure/devops/processadmin/processes
+    href: /rest/api/azure/devops/processadmin/processes/export%20process%20template
   - name: Projects
     href: /rest/api/azure/devops/core/projects
   - name: Teams
     href: /rest/api/vsts/core/teams
   - name: Work item types
-    href: /rest/api/azure/devops/processDefinitions/Work%20Item%20Types
+    href: /rest/api/azure/devops/wit/work%20item%20types
   - name: API SDK reference (Deprecated)
     items:
     - name: IProcessTemplates.AddUpdateTemplate
