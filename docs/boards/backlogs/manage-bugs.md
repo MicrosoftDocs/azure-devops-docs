@@ -13,7 +13,7 @@ ms.date: 04/28/2021
 
 # Define, capture, triage, and manage bugs
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -29,40 +29,37 @@ To support these scenarios, Azure Boards provides a Bug work item type. The Bug 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
 
 
+- *Benefits of using Bugs to track code defect*s  
+- *Manage technical debt* 
+
+
 ## Bug work item type 
 
 The Bug work item type tracks similar information to the one shown in the following image for the Scrum process. It is designed to support tracking on the product backlog along with requirements or tracking on the Taskboard along with tasks.  
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
-
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Bug work item type, form for Scrum process, Azure DevOps Server 2020 and cloud service. ](media/manage-bugs/bug-work-item-type.png)
-
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 ![Bug work item type, form for Scrum process, Azure DevOps Server 2019 and earlier versions to TFS 2017.](media/manage-bugs-scrum-bug-from-ts.png)
 ::: moniker-end
 
- 
+::: moniker range="< tfs-2017"
+![Bug work item type, form for Scrum process, TFS 2013 and TFS 2015 versions.](media/scrum-bug-wi-form.png) 
+::: moniker-end
 
+::: moniker range=">= tfs-2017"
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
-
+::: moniker-end
 
 ## Bug-specific fields  
 
-Deployment section 
-Development section 
-Customizing bug work item type
-
-
-
-
-When defining a bug, use these fields to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
+When defining a bug, use the fields listed in the following table to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
 
 
 ---
@@ -77,7 +74,8 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 ---
 :::row:::
    :::column span="1":::
-      [Steps to Reproduce](../queries/titles-ids-descriptions.md)(friendly name=Repro Steps)
+      [Steps to Reproduce](../queries/titles-ids-descriptions.md)  
+      (friendly name=Repro Steps)
    :::column-end:::
    :::column span="3":::
       Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.  
@@ -146,10 +144,9 @@ When defining a bug, use these fields to capture both the initial issue and ongo
       [Deployment](../work-items/work-item-deployments-control.md)
    :::column-end:::
    :::column span="3":::
-      The Deployment control supports links to and display of releases which contains the work items. For example, the following image shows several releases which contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the release or stage for more information.
+      The **Deployment** control supports links to and display of releases which contains the work items. For example, the following image shows several releases which contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md). 
       > [!div class="mx-imgBorder"]  
-      > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)
-      To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md).
+      > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)  
    :::column-end:::
 :::row-end:::
 ---
@@ -159,16 +156,12 @@ When defining a bug, use these fields to capture both the initial issue and ongo
       [Development](connect-work-items-to-git-dev-ops.md) 
    :::column-end:::
    :::column span="3":::
-      The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests, or TFVC changesets and versioned items.
+      The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests, or TFVC changesets and versioned items. You can choose the link for each linked item to open the corresponding item. To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).
       > [!div class="mx-imgBorder"]  
-      > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)
-      To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).
+      > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)  
    :::column-end:::
 :::row-end:::
 ---
- 
- 
- 
 
 #### Notes: 
 
@@ -177,30 +170,37 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
+
+
+## Choose how your team tracks bugs
+
+(pros and cons table) 
+(add same section to Show bugs team setting) 
+
+
+[!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
+
+
+## Customize your bug work item type 
+
+
+
 <a id="fix-resolve-close">  </a>
 
-## Bug tracking lifecycle 
+## Bug lifecycle and workflow states
 
-Benefits of using Bugs to track code defects  
-Manage technical debt   
+As with all other work item types, the Bug work item type has a well-defined workflow. Each workflow consists of three or more **States** and a **Reason** for each supported transition from one State to another. The following images illustrate the default bug workflow defined for the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), and [CMMI](../work-items/guidance/cmmi-process.md) processes.
 
-
-Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the bug work item history.
-
-### Bug workflow lifecycle  
-
-Once you fix a bug, you should update its workflow State. State choices vary depending on the process you use&mdash;[Scrum](../work-items/guidance/scrum-process.md), 
-[Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). The following images illustrate the workflow lifecycle defined for the default bug workflow for the Agile, Scrum, and CMMI processes. 
 
 | Agile | Scrum | CMMI | 
 |------------|------------|-----------| 
 | ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
+For Scrum bugs, you simply change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
+
 > [!NOTE]  
 > The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../work-items/guidance/changes-to-process-templates.md). You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
-
-For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
-
+ 
 
 ### Verify a fix 
 
@@ -247,14 +247,6 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 > Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug.   
 
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
-
-
-## Choose how your team tracks bugs
-
-(pros and cons table) 
-(add same section to Show bugs team setting) 
-
-
 
 
 ## Define or capture bugs using test tools 
@@ -369,3 +361,16 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 
 ## Related articles 
+
+
+<!---
+
+
+
+Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the **Discussion** section of the Bug work item.
+
+### Bug workflow lifecycle  
+ 
+
+
+-->
