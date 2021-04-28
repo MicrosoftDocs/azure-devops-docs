@@ -20,7 +20,7 @@ ms.date: 12/07/2020
 
 Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
 
-This article builds on the information provided in [About permissions, access, and security groups](about-permissions.md). Administrators benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
+This article builds on the information provided in [Get started with permissions, access, and security groups](../security/about-permissions.md). Administrators benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
 ::: moniker range="azure-devops"
 
@@ -198,7 +198,7 @@ To learn more about how to choose the right authentication mechanism, see [Guida
 
 Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
 
-Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. To learn more about these authorization methods, see [About permissions, access, and security groups](about-permissions.md). 
+Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. To learn more about these authorization methods, see [Get started with permissions, access, and security groups](../security/about-permissions.md). 
 
 
 <a id="namespaces" /> 

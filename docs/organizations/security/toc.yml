@@ -14,6 +14,8 @@
     href: permissions-lookup-guide.md
   - name: Security key concepts
     href: security-glossary.md 
+  - name: Troubleshoot permissions
+    href: troubleshoot-permissions.md
 - name: Manage user access
   items:
   - name: About security, authentication, & authorization 
@@ -94,8 +96,6 @@
     href: set-project-collection-level-permissions.md
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md
-  - name: Troubleshoot permissions
-    href: troubleshoot-permissions.md
   - name: Set dashboard permissions
     href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set Wiki permissions

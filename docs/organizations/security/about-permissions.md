@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 04/22/2021
 ---
 
 # Get started with permissions, access, and security groups  
@@ -30,9 +30,6 @@ For example, individual contributors are added to the Contributors security grou
 
 Administrators manage security groups and permissions from the web portal administration context. Contributors manage permissions for objects they create or own from the web portal as well. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server-level to which you add users or groups.  
 
-> [!TIP]    
-> User accounts that are assigned to more than one security group are restricted to those permissions granting the **least access**. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
-
 To learn more, review the information provided in this article and the following articles:  
 
 - [Default permissions and access](permissions-access.md)  
@@ -44,7 +41,7 @@ To learn more, review the information provided in this article and the following
 
 With the creation of an organization, collection, or project&mdash;Azure DevOps creates a set of default security groups which are automatically assigned default permissions. Additional security groups are defined with the following actions: 
 - When you add a custom security group. You can create custom security groups at the following levels: 
-	- Object-level
+	- Object-level, such as for pipelines, repositories, area paths, and more
 	- Project-level
 	- Organization- or collection-level
 	- Server-level (on-premises only)
@@ -305,15 +302,15 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 ### When assigning permissions
  
 **Do:**  
-- Use Windows groups when managing lots of users.  
-- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
-- When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.  
+- Use Azure Active Directory, Active Directory, or Windows security groups when managing lots of users.  
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.  
-
+- When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.  
+- Consider granting the [work item query folders **Contribute**](../../boards/queries/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the project.  
 
 **Don't:**  
-- Don't add users to the project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
-- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
+- Don't assign a **Deny** permission to the Project Collection Administrators group or Project Administrators group at any level 
+- Don't add users to multiple security groups which contain different permission levels. In certain cases, a **Deny** permission level may override an **Allow** permission level.  
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 <a id="security-roles" />
@@ -345,22 +342,23 @@ To learn more, see [Manage or enable features](../../project/navigation/preview-
 
 ::: moniker range="= azure-devops"
 
+- [Troubleshoot access and permission issues](troubleshoot-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)
-- [How billing works](../billing/overview.md)
-- [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../billing/set-up-billing-for-your-organization-vs.md) 
 - [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
 - [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
 - [Permissions and groups reference](permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization](../accounts/add-organization-users.md) 
 - [Add and manage security groups](add-manage-security-groups.md)   
-- [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   
+- [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md) 
+- [How billing works](../billing/overview.md)
+- [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../billing/set-up-billing-for-your-organization-vs.md)   
 ::: moniker-end  
 
 
 ::: moniker range="< azure-devops" 
 
-- [About security, authentication, and authorization](about-security-identity.md)
+- [Troubleshoot access and permission issues](troubleshoot-permissions.md)[About security, authentication, and authorization](about-security-identity.md)
 - [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)  
 - [AD DS Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
 - [Permissions and groups reference](permissions.md)  
