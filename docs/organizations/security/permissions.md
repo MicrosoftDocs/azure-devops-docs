@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 04/09/2021
+ms.date: 04/22/2021
 --- 
 
 
@@ -20,7 +20,7 @@ ms.date: 04/09/2021
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
-For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and inheritance](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [Get started with permissions, access, and security groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -351,11 +351,6 @@ You can't remove or delete the default server level groups.
         <td>Azure DevOps Valid Users</td>
         <td>
             Has permission to view server instance-level information.
-            <blockquote>
-                If you set the <strong>View instance-level information</strong>
-                permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-                no users will be able to access the deployment.
-            </blockquote>
         </td>
         <td>
             Contains all users known to exist in the server instance.
@@ -821,14 +816,12 @@ For each project that you create, the system creates the followings project-leve
        Project Valid Users
    :::column-end:::
    :::column span="1":::
-       Has permissions to access the project and view information in the collection.
+       Has permissions to access and view project information.
    :::column-end:::
    :::column span="2":::
        Contains all users and groups that have been added anywhere to the project. You cannot modify the membership of this group.
        > [!NOTE]  
-       > If you set the **View project-level information** permission
-       > to **Deny** or **Not set** for this group, 
-       > no users, except for members of Project Collection Administrators group, will be able to access the project. 
+       > We recommend that you don't change the default permissions for this group. 
    :::column-end:::
 :::row-end:::
 ---
@@ -856,7 +849,7 @@ For each project that you create, the system creates the followings project-leve
        Has permissions to contribute fully to the project code base and work item tracking.  The default Team group is created when you create a project, and by default is added to the Contributors group for the project. Any new teams you create will also have a group created for them and added to the Contributors group.
    :::column-end:::
    :::column span="2":::
-       Add members of the team to this group. To grant access to configure team settings, add a team member to the team administrator role](../settings/add-team-administrator.md).
+       Add members of the team to this group. To grant access to configure team settings, [add a team member to the team administrator role](../settings/add-team-administrator.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -1525,10 +1518,6 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
    :::column-end:::
    :::column span="3":::
       Can view project collection-level group membership and permissions.
-      > [!NOTE]   
-      > If you set the **View instance-level information** permission
-      > to **Deny** or **Not set** for this group,
-      > no users will be able to access projects in the organization or project collection.
    :::column-end:::
 :::row-end:::
 ---
@@ -2851,10 +2840,10 @@ Members of the Project Administrators group are automatically granted permission
         <td>
             Can view, but not change, work items in this area node.
             <blockquote>
-                If you set the View work items in this node to Deny,
+                If you set the <strong>View work items in this node</strong> to <strong>Deny</strong>,
                 the user will not be able to see any work items in this area node.
-                A Deny will override any implicit allow, even for accounts
-                that are members of administrative groups such as Team Foundation Administrators.
+                A <strong>Deny</strong> will override any implicit allow, even for users
+                that are members of an administrative groups.
             </blockquote>
         </td>
     </tr>
