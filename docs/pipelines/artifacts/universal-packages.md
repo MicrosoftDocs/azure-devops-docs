@@ -52,20 +52,19 @@ To publish to an external feed, you must first create a service connection to po
 
 # [Classic](#tab/classic)
 
-To publish the files that you assembled previously as a Universal Package, add the **Universal Package** task and configure these options:
+To publish your Universal Package, add the **Universal Package** task to your pipeline and fill out the required fields as follows
 
 - **Command:** Publish
-- **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
-- **Feed location:** Publish to an Azure Artifacts feed in this organization or in another organization.
+- **Path to file(s) to publish:** The path to the list of files to be published. Default: `$(Build.ArtifactStagingDirectory)`.
+- **Feed location:** Publish to an Azure Artifacts feed in your current organization or in another organization.
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-> [!div class="mx-imgBorder"]
-> ![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
+    :::image type="content" source="media/universal-packages/publish.png" alt-text="Universal Package publish task":::
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
-To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Azure Repos/Team Foundation Server** option for the service connection. Fill in the feed URL and a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
+To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
 
 ---
 
