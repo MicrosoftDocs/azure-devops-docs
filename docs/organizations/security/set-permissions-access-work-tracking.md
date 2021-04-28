@@ -131,7 +131,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
 ::: moniker-end
 
