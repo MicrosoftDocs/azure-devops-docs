@@ -54,6 +54,8 @@
     href: ./troubleshoot-connection.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
   - name: "TF31002: Unable to connect"
     href: ../organizations/projects/tf31002-unable-connect-tfs.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
+  - name: Troubleshoot access and permissions
+    href: ../organizations/security/troubleshoot-permissions.md
   - name: Allowed address lists and network connections
     href: ../organizations/security/allow-list-ip-url.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
   - name: Configure a network adapter to adjust speed
@@ -70,3 +72,5 @@
     href: service-limits.md
   - name: Features index
     href: alm-devops-features.md
+  - name: Azure CLI
+    href: /cli/azure/devops

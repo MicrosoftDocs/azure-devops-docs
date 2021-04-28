@@ -11,7 +11,7 @@
     items: 
     - name: Get started 
       tocHref: /azure/devops/boards/get-started/
-      topicHref: /azure/devops/boards//get-started/index
+      topicHref: /azure/devops/boards/get-started/index
     - name: Azure Boards & GitHub 
       tocHref: /azure/devops/boards/github/
       topicHref: /azure/devops/boards/github/index
@@ -82,7 +82,7 @@
       topicHref: /azure/devops/organizations/projects/about-projects
     - name: Audit
       tocHref: /azure/devops/organizations/audit/ 
-      topicHref: /azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&preserve-view=true&tabs=preview-page#access-auditing
+      topicHref: /azure/devops/organizations/audit/azure-devops-auditing 
     - name: Notifications
       tocHref: /azure/devops/notifications
       topicHref: /azure/devops/notifications/about-notifications
@@ -105,13 +105,16 @@
     - name: witadmin 
       tocHref: /azure/devops/reference/witadmin/ 
       topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
-  - name: Cross-service, Wikis, Public Projects
+  - name: Cross-service, Search, Wikis, Public Projects
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
     - name: Cross-service
       tocHref: /azure/devops/cross-service/
       topicHref: /azure/devops/cross-service/end-to-end-traceability
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/index
     - name: Wikis
       tocHref: /azure/devops/project/wiki/
       topicHref: /azure/devops/project/wiki/index
@@ -121,9 +124,6 @@
     - name: Navigation
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
-    - name: Search
-      tocHref: /azure/devops/project/search/
-      topicHref: /azure/devops/project/search/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
@@ -148,5 +148,5 @@
       tocHref: /azure/devops/cli/
       topicHref: /azure/devops/cli/index
     - name: Demo Generator
-      tocHref: /azure/devops//demo-gen
+      tocHref: /azure/devops/demo-gen
       topicHref: /azure/devops/demo-gen/index

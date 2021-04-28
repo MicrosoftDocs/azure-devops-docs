@@ -1,7 +1,7 @@
 ---
 title: Change individual or group permissions
 titleSuffix: Azure DevOps
-description: Add custom security groups, change permissions for groups or individuals tutorial
+description: Learn how to add custom security groups, change permissions for groups or individuals tutorial
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli
@@ -31,7 +31,7 @@ In this article you learn how to do the following tasks:
 > * Add members to a custom security group 
 > * Change the permission assignments for an individual user 
 
-If you're new to managing permissions and groups, review [About permissions and inheritance](about-permissions.md)to learn about permission states and inheritance.
+If you're new to managing permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md)to learn about permission states and inheritance.
 
 
 ## Prerequisites
@@ -215,8 +215,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
 <li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
@@ -257,8 +257,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Related articles
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 

@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
 ---
@@ -388,9 +388,9 @@ For teams that support several other teams, such as a UX Design team, configure 
 
 You can use Azure DevOps command-line tools to add or update the following artifacts:
 
-- **Teams**: [Azure DevOps team create](/cli/azure/ext/azure-devops/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
-- **Area Paths**: [Azure DevOps area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create)
-- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
+- **Teams**: [Azure DevOps team create](/cli/azure/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
+- **Area Paths**: [Azure DevOps area project create](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-create)
+- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
 
 ::: moniker-end
 
@@ -422,7 +422,7 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
+- [Azure DevOps CLI](/cli/azure//)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 
  

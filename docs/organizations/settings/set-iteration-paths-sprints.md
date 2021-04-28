@@ -1,5 +1,5 @@
 ---
-title: Define sprints for a project or team
+title:  Define iteration paths and configure team iterations
 titleSuffix: Azure Boards 
 description: Learn how to define the iteration and sprint fields when you assign work items and configure dashboards in Azure DevOps.
 ms.technology: devops-agile
@@ -18,7 +18,7 @@ ms.date: 10/21/2020
 Iteration paths support teams who implement Scrum or use sprint planning to group work items, based on a time-box interval or sprint. You define iteration paths at the project level, and then each team selects the paths that they want to be active within the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, subreleases, and sprints. 
 
 > [!NOTE] 
-> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI commands, [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration) and [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI command [az boards iteration](/cli/azure/boards/iteration).
 
 Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
@@ -96,7 +96,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 From the web portal, open **Project Settings**.
 
-Define both areas and iterations for a project from the **Project settings** > **Work** > **Project configuration**. 
+Define both areas and iterations for a project from the **Project settings** > **Boards** > **Project configuration**. 
 
 1. Choose (1) **Project Settings**, expand **Boards** if needed, and then choose (2) **Project configuration** and (3) **Iterations**.   
 
@@ -136,7 +136,7 @@ From the web portal, choose **Project settings** :::image type="icon" source="..
 
 <a id="iteration-project-list" />
 
-List the iterations defined for a project using [az boards iteration project list](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+List the iterations defined for a project using [az boards iteration project list](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -310,7 +310,7 @@ For Scrum-based projects, you see the following set of sprints.
 
 ::: moniker range=">= azure-devops-2020"
 
-You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can add iteration paths to a project using [az boards iteration project create](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -409,7 +409,7 @@ You open team settings from the upper navigation bar. Select the team you want a
 
 ::: moniker range=">= azure-devops-2020"
 
-You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -572,7 +572,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 ::: moniker range=">= azure-devops-2020" 
 
-Add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/index.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).   
+Add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/boards/iteration/team)[Azure DevOps CLI](../../cli/index.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).   
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -654,7 +654,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
 ::: moniker range=">= azure-devops-2020"
 
-You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/ext/azure-devops/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 <a id="delete-update-iteration-paths" /> 
 
@@ -750,7 +750,7 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 
 ::: moniker range=">= azure-devops-2020"
 
-- [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
+- [az boards iteration (Azure DevOps CLI)](/cli/azure/boards/iteration)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 

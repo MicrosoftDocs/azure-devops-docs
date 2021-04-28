@@ -8,7 +8,8 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/03/2021
+  "recommendations": "true"
+  ms.date: 04/12/2021
 
 
 title: Azure Boards FAQs  
@@ -17,7 +18,7 @@ title: Azure Boards FAQs
 summary: | 
   **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
 
-  Find answers to frequently asked questions when using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
+  Find answers to frequently asked questions when using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml). 
 
   You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
 
@@ -48,6 +49,12 @@ sections:
           - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
           - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
 
+      - question: Can caching impact rules applied to work items?  
+        answer: | 
+
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+
+
       - question: What client tools support work tracking with Azure Boards? 
         answer: |
           See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
@@ -72,7 +79,7 @@ sections:
       - question: Can a work item be assigned to several users or a user group? 
 
         answer: |
-          **No**. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
+          **No**. Work items can only be assigned to a single user. Also, you can only add a user that is available from the [people picker](queries/query-by-workflow-changes.md#people-picker).    
 
       - question: What's the recommended method to group work? 
 
@@ -81,7 +88,7 @@ sections:
 
           For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
-      - question: How to mark a task or work item as a milestone task?
+      - question: How do I mark a task or work item as a milestone task?
 
         answer: |
           Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. Delivery Plans provide a calendar view and allow you to define a milestone marker. For more information, see [Review team Delivery Plans](plans/review-team-plans.md).  
@@ -103,15 +110,20 @@ sections:
 
           If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
 
+      - question: What determines which work item type should be a parent for another work item type? 
+
+        answer: |
+          Each process defines four default backlog levels: the iteration backlog, requirement backlog, feature and epic portfolio backlogs. The work item types added to each backlog level are the natural work item types to form parent-child relationship and group work items into a hierarchy. To learn more, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize the process, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).   
+
       - question: How do I copy or clone a work item with all linked items? 
 
         answer: |
-          ::: moniker range="azure-devops"
+          ::: moniker range=">= azure-devops-2020"
           With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
-          ::: moniker range="< azure-devops"
-          This feature isn't supported at this time for on-premises deployments. Copying a work item doesn't copy any parent-child linked work items. However, is is now available on Azure Boards (cloud service).  
+          ::: moniker range="< azure-devops-2020"
+          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
 
           The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
@@ -122,7 +134,12 @@ sections:
           ::: moniker-end
 
 
-  - name: Backlogs and boards 
+      - question: How do I bulk modify a rich-text field? 
+
+        answer: | 
+          See [Bulk modify work items, Bulk modify rich-text fields](backlogs/bulk-modify-work-items.md#rich-text).
+
+  - name: Backlogs and Boards 
 
     questions: 
       - question: What's the difference between a backlog and a board?  
@@ -131,7 +148,7 @@ sections:
 
       - question: How do I add a backlog or board?  
         answer: | 
-          To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
+          To add a backlog or board, you add a team. Each team is configured with its own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
 
       - question: What limits should I be aware of?  
         answer: | 
@@ -153,7 +170,7 @@ sections:
 
       - question: Can I define sprints and use them with my Kanban board? 
         answer: | 
-          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md). 
 
       - question: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
         answer: | 
@@ -193,6 +210,32 @@ sections:
           **No**. The data entered for team capacity isn't stored in the regular data stores.
  
 
+
+  - name: Kanban boards
+
+    questions: 
+      - question: Is there a way to widen columns on a Kanban board? 
+
+        answer: | 
+          **No**. This is not a supported feature at this time. It is a suggested feature which you can upvote by going to our [Developer Community page](https://developercommunity.visualstudio.com/t/Resize-board-column-width/901212?space=21&q=column+width).
+
+
+
+      - question: Can I query based on Kanban board columns? 
+
+        answer: | 
+          **Yes**, see [Query by assignment or workflow changes, Kanban board change queries](queries/query-by-workflow-changes.md#kanban-board-change-queries). 
+
+      - question: Can I view a query as a Kanban board? 
+
+        answer: | 
+          **Yes**, by adding the [Query Based Boards](https://marketplace.visualstudio.com/items?itemName=realdolmen.EdTro-AzureDevOps-Extensions-QueryBasedBoards-Public) Marketplace extension. 
+
+      - question: Is there a way to copy a Kanban configuration to another team?  
+
+        answer: | 
+           **Yes**, by adding the [Azure Boards Kanban Tools](https://marketplace.visualstudio.com/items?itemName=alm-devops-rangers.KanbanBoardTools) Marketplace extension. 
+ 
 
   - name: Work item templates  
 
@@ -267,9 +310,7 @@ additionalContent: |
   - [Query FAQs](queries/query-faqs.yml)
   - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
   - [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
-  - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
+  - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.yml)
   - [Work across projects FAQs](../project/work-across-projects-faqs.yml)
   - [Azure Boards extensions](extensions/index.md)
   - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
-
-  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*

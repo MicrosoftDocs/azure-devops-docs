@@ -4,7 +4,7 @@ ms.topic: include
 
 ### All Artifacts package types supported in releases
 
-Until now, only NuGet packages have been supported in the [Azure Artifacts artifact type](/azure/devops/pipelines/release/artifacts?view=azure-devops) in Pipelines releases. With this update, all Azure Artifacts package types - Maven, npm, Python, and Universal - are supported.
+Until now, only NuGet packages have been supported in the [Azure Artifacts artifact type](/azure/devops/pipelines/release/artifacts?view=azure-devops&preserve-view=true) in Pipelines releases. With this update, all Azure Artifacts package types - Maven, npm, Python, and Universal - are supported.
 
 ### Artifacts views supported in releases
 

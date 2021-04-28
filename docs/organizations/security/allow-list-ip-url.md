@@ -1,7 +1,7 @@
 ---
-title: Add IP addresses and URLs to allow list
+title: Allowed address lists and network connections  
 titleSuffix: Azure DevOps
-description: Add IP addresses and URLs to the Allow list for Azure DevOps and troubleshoot network connections. 
+description: Add IP addresses and URLs to the allowlist for Azure DevOps and troubleshoot network connections. 
 ms.topic: reference
 ms.technology: devops-security
 ms.reviewer: jominana
@@ -15,7 +15,7 @@ ms.date: 11/19/2020
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-If your organization is secured with a firewall or proxy server, you need to add certain IP addresses and domain URLs to the **Allow list**. Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
+If your organization is secured with a firewall or proxy server, you need to add certain IP addresses and domain URLs to the **allowlist**. Adding them to the allowlist helps to ensure that you have the best experiences with Azure DevOps.
 
 For the best experience with Visual Studio and Azure Services, you open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
 
@@ -71,7 +71,7 @@ Azure DevOps uses CDNs to serve static content. Ensure the following CDNs are al
 - `*.vsassets.io` 
 - `*.gallerycdn.vsassets.io` (Marketplace)
 
-Users in China should also add the following domains to an allow list: 
+Users in China should also add the following domains to an allowlist: 
 
 - `*.vsassetscdn.azure.cn` 
 - `*.gallerycdn.azure.cn` (Marketplace)
@@ -104,7 +104,7 @@ _Outbound connections_ are those that originate from inside your organization an
 - Azure Pipelines agents installed on your organization's network connecting to Azure DevOps to poll for pending jobs
 - CI events being sent from a source code repository hosted within your organization's network to Azure DevOps
 
-Ensure the following IP addresses are allowed for outbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organziation to Azure DevOps Services.
+Ensure the following IP addresses are allowed for outbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from a machine in your organization to Azure DevOps Services.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |**IP V4 ranges** |**IP V6 ranges**  |
@@ -114,14 +114,14 @@ Ensure the following IP addresses are allowed for outbound connection, so your o
 > |`13.107.42.0/24`    |  `2620:1ec:21::/48`     |
 > |`13.107.43.0/24`    |  `2620:1ec:22::/48`     |
 
-If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
+If you're currently allowing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
 
 > [!NOTE]
 > [Azure Service Tags](/azure/virtual-network/service-tags-overview) are not supported for *outbound* connection.
 
 ### Inbound connections
 
-_Inbound connections_ are those that orginate from Azure DevOps and that target resources within your organization's network. Examples of such connections include:
+_Inbound connections_ are those that originate from Azure DevOps and that target resources within your organization's network. Examples of such connections include:
 
 - Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
 - Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
@@ -210,7 +210,7 @@ Currently, we don't publish hosted Mac IP address ranges.
 
 ## Azure DevOps import service
 
-During the import process, we highly recommend that you restrict access to your VM to only IPs from Azure DevOps. To restrict access, allow only connections from the set of Azure DevOps IPs,  which were involved in the collection database import process. For information about identifying the correct IPs, see [Azure DevOps Services IPs](../../migrate/migration-import.md#azure-devops-services-ips). 
+During the import process, we highly recommend that you restrict access to your VM to only IPs from Azure DevOps. To restrict access, allow only connections from the set of Azure DevOps IPs,  which were involved in the collection database import process. For information about identifying the correct IPs, see [(Optional) Restrict access to Azure DevOps Services IPs only](../../migrate/migration-import-large-collections.md#ips). 
 
 ## Related articles
 

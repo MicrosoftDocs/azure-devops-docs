@@ -4,8 +4,7 @@ titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.assetid:  
-ms.topic: reference  
+ms.topic: overview 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -16,18 +15,14 @@ ms.date: 01/25/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Use this index to quickly access information on query examples, query editor tasks, operators available based on data type, and access sample queries. 
+Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
-
- 
 <a id="examples" />  
 
-## Example queries 
+## Example queries   
 
-You can list work items based on the following criteria...
+You can list work items based on the following criteria...  
 
 
 ---
@@ -38,8 +33,9 @@ You can list work items based on the following criteria...
       - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
       - [Empty or not empty HTML field queries](titles-ids-descriptions.md)
       - [Category based queries](titles-ids-descriptions.md#category)  
-      - [Items you are following](titles-ids-descriptions.md#following)  
+      - [Items you're following](titles-ids-descriptions.md#following)  
       - [Recent activity work items](titles-ids-descriptions.md#recent-macros)  
+
       **Tag based queries**  
       ::: moniker range="azure-devops"
       - [Items containing a specific tag](add-tags-to-work-items.md#query)
@@ -124,10 +120,15 @@ You can list work items based on the following criteria...
       - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
       - [List automated test cases](build-test-integration.md)
       - [List requirement-based test suites](build-test-integration.md)
-      - [List query-based test suites](build-test-integration.md)  
+      - [List query-based test suites](build-test-integration.md) 
+      
+      **Other**  
+      - [List deleted work items (Recycle bin)](../backlogs/remove-delete-work-items.md#restore-or-destroy-work-items)
    :::column-end:::
 :::row-end:::
 ---
+
+<a id="tasks" />
 
 
 ## Query tasks 
@@ -137,7 +138,7 @@ You can list work items based on the following criteria...
 :::row:::
    :::column span="1":::
       - [Add a query](using-queries.md) 
-      - [Add a query chart](../../report/dashboards/charts.md)" 
+      - [Add a query chart](../../report/dashboards/charts.md) 
       - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
       - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
       - [Add a query folder](organize-queries.md) 
@@ -153,7 +154,7 @@ You can list work items based on the following criteria...
       - [Email a query](view-run-query.md#email-query) 
       - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
       - [Favorite a query](view-run-query.md) 
-      - [Filter a query](../backlogs/filter-backlogs.md) 
+      - [Filter a query](../backlogs/filter-backlogs-boards-plans.md) 
       - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
       - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 

@@ -168,7 +168,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-Azure DevOps CLI commands aren't supported for adding a user to a project, currently. You can, however, add a user to a team using the CLI in the following section.
+Azure DevOps CLI commands aren't supported for adding a user to a project, currently.  
 
 * * *
 
@@ -400,7 +400,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker range=">= azure-devops-2020"
 
-From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list) command.
+From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list) command.
 
 | [List team members](#list-members) | [Show team details](#show-details)
 
@@ -408,7 +408,7 @@ From the Azure DevOps CLI command, you can see details about a team or list the 
 
 ### List team members
 
-You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az devops team list-member --team
@@ -446,7 +446,7 @@ bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.
 
 ### Show team details
 
-You can view details about a team in your organization with the [az devops team show](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can view details about a team in your organization with the [az devops team show](/cli/azure/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops team show --team
@@ -514,7 +514,8 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 ## Related articles
 
 * To view permissions for yourself or another user, see [View permissions](view-permissions.md).
-* [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
+* [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
+* [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)

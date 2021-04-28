@@ -74,7 +74,7 @@ The following table shows how each token is resolved based on the previous examp
 | Token | Example replacement value |
 | ----- | ------------------------- |
 | `$(Build.DefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
-| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
+| `$(Build.BuildId)` | 752<br /><br />$(Build.BuildId) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
 | `$(Hours)` | 21 |

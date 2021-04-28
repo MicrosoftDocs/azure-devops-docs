@@ -120,7 +120,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker range=">= azure-devops-2020"
 
-You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -302,7 +302,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
+You can delete a team using [az devops team delete](/cli/azure/devops/team#ext-azure-devops-az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -337,6 +337,6 @@ Are you sure you want to delete this team? (y/n): y
 
 - [Add teams](add-teams.md)  
 - [About teams and Agile tools](about-teams-and-settings.md)  
-- [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)  
+- [Azure DevOps Teams CLI](/cli/azure/devops/team)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 - [Work Items (REST API)](/rest/api/azure/devops/wit)  

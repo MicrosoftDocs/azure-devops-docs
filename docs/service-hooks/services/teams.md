@@ -20,9 +20,9 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 * Release deployments and approvals
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 > [!NOTE]
-> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
+> For Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
 
 ### Azure Boards app for Teams
 
@@ -38,7 +38,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 ## Configure a new connector for Azure DevOps Server
 
@@ -106,7 +106,7 @@ create two additional subscriptions.
 
 A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
 
-Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#q-why-is-my-organization-already-connected-to-a-directory-can-i-change-that-directory).
+Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.yml#q--why-is-my-organization-already-connected-to-a-directory--can-i-change-that-directory-).
 
 <!-- ENDSECTION -->
 

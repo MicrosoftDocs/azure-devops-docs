@@ -78,6 +78,10 @@ See the [Get started with npm packages in Azure Artifacts](../get-started-npm.md
 
 ## FAQs
 
+### Why can't I see a package in the browser even though I can see it in one of my feed's upstreams?
+
+Packages belonging to an upstream are available downstream soon after they are published, but will only show up in the feed's UI once they have been 'ingested,' which requires installing the package version for the first time in the downstream feed.
+
 ### What are views?
 
 Views enable you to share with your consumers only a subset of package versions that have been tested and validated but hold back packages that are still under development and/or didn't meet your quality bar. See [What are feed views](../concepts/views.md) for more details.

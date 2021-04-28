@@ -48,7 +48,7 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 
 ### Uninstall an extension
 
-You can uninstall an extension with the [az devops extension uninstall](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can uninstall an extension with the [az devops extension uninstall](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension uninstall --extension-name
@@ -75,7 +75,7 @@ az devops extension uninstall --extension-name Timetracker --publisher-name 7pac
 
 ### Disable an extension
 
-You can disable an extension with the [az devops extension disable](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can disable an extension with the [az devops extension disable](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension disable --extension-name
@@ -135,7 +135,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## Enable an extension
 
-You can enable an extension with the [az devops extension enable](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can enable an extension with the [az devops extension enable](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension enable --extension-name
@@ -163,7 +163,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## List extensions
 
-You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli
 az devops extension list [--include-built-in {false, true}]
@@ -208,7 +208,7 @@ ms-devlabs      WorkItemVisualizatio...  Work Item Visualizat...  1.4.64        
 
 ## List extension information
 
-You can list the details about an extension with the [az devops extension show](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can list the details about an extension with the [az devops extension show](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```azurecli 
 az devops extension show --extension-name

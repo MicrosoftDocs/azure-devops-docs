@@ -1,5 +1,7 @@
 - name: About Power BI integration
   href: overview.md
+- name: Enable or install Analytics  
+  href: ../dashboards/analytics-extension.md
 - name: Set Analytics permissions (Security)
   href: analytics-security.md
 - name: Analytics views
@@ -14,6 +16,8 @@
     href: analytics-views-manage.md
   - name: Analytics views dataset design
     href: data-connector-dataset.md
+  - name: Resolve errors with an Analytics view
+    href: troubleshooting-views.md
 - name: Power BI reports
   items:
   - name: Create a report using an Analytics view
@@ -117,10 +121,6 @@
       href: sample-test-plans-tester-by-outcome.md
     - name: Configuration by outcome matrix
       href: sample-test-plans-configuration-by-outcome.md
-- name: Troubleshooting
-  items:
-  - name: Resolve errors with an Analytics view
-    href: troubleshooting-views.md
 - name: Reference
   items:
   - name: Data available from Analytics
