@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/21/2021
+ms.date: 03/30/2021
 ---
 
 # Access, export, and filter audit logs
@@ -37,16 +37,11 @@ By default, Project Collection Administrators are the only group that have full 
 
 ### Audit permissions
 
-**Project Collection Administrators group**
-
-Members of the Project Collection Administrators group have full access to all auditing features.
-
-**Project Collection Valid Users group**
-
-Members of the Project Collection Valid Users group can view the Auditing page and export audit logs.
+- Members of the **Project Collection Administrators** group have full access to all auditing features.
+- Members of the **Project Collection Valid Users** group can view the Auditing page and export audit logs.
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group can't view **Auditing** and have limited visibility to **Organization Setting** pages.  To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ## Access auditing
 
@@ -155,7 +150,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 > [!Note]
 > While auditing is in a public preview, we're working hard to get more areas audited. We're adding new auditing events monthly.
 >
-> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
+> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
 
 |Area            |Description |
 |----------------|------------|
@@ -172,12 +167,13 @@ When you filter through audit events, it’s best to use the *area* and *categor
 | Release        |  Create, delete, modify, approval complete, and deployment complete for a release.          |
 | OrganizationPolicy | Changes to organization policies (for example, no basic authentication).           |
 | Organization   | Rename, change owner, link to Azure Active Directory (Azure AD), and unlink from Azure AD.            |
-|Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
-|Agile     |Process, create, delete, and modify.         |
-|Notification    |Create, remove, and modify a subscription.         |
-|Git        | Branch policies, and create, delete, and rename repository. |
-|Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
-
+| Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
+| Agile     |Process, create, delete, and modify.         |
+| Notification    |Create, remove, and modify a subscription.         |
+| Git        | Branch policies, and create, delete, and rename repository. |
+| Billing        | Adding, changing, and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
+| User | Sign-in events or access events of PAT and SSH |
+| Token / Authentication | Create, update, and remove or revoke Personal Access Tokens (PATs) or SSH Keys. |
 
 
 ### Filtering tips

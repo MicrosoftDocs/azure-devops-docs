@@ -8,7 +8,7 @@ ms.custom: has-adal-ref
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/19/2020
+ms.date: 03/24/2021
 robots: NOINDEX, NOFOLLOW
 ---
 
@@ -27,7 +27,7 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 
 You can separate a REST API request and response pair into the following five components:
 
-1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
+1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}][/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
    * *instance*: The Azure DevOps organization or Azure DevOps Server you're sending the request to. They're structured as follows:
        * Azure DevOps: `dev.azure.com/{organization}`
        * Azure DevOps Server: `server:port` (the default port is 8080)

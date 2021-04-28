@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 12/18/2020
+ms.date: 04/07/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -182,7 +182,9 @@ for a stage in a release pipeline. You can:
 
 ::: moniker range=">=azure-devops-2019"
 
-When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
+When you define multiple stages in a pipeline, by default, they run sequentially in the order in which you define them in the YAML file. The exception to this is when you add dependencies. With dependencies, stages run in the order of the `dependsOn` requirements. 
+
+Pipelines must contain at least one stage with no dependencies.
 
 
 The syntax for defining multiple stages and their dependencies is:

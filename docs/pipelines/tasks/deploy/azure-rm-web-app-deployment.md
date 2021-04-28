@@ -299,7 +299,7 @@ This may be because web.config is not present in your app. You can either add a 
 * Click on OK. This will populate web.config parameters required to generate web.config.
 
 > [!NOTE]
-> This section is deprecated and has been replaced with the [File Transform](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) task.
+> This section is deprecated and has been replaced with the [File Transform](../utility/file-transform.md) task.
 
 ### ERROR_FILE_IN_USE
 

@@ -1,21 +1,29 @@
 - name: About projects
   href: about-projects.md
+- name: Project & team quick reference
+  href: project-team-quick-reference.md
 - name: Create a project
   href: create-project.md
 - name: Connect to a project
   href: connect-to-projects.md
+- name: Connect a project to GitHub  
+  href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Get started as a Stakeholder
   href: ../security/get-started-stakeholder.md 
 - name: When to add a team or project
   href: about-projects.md
 - name: What do I get with a project?
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Project configuration
+  items:
+  - name: "Area & iteration paths"
+    href: ../settings/about-areas-iterations.md
+  - name: Set area paths  
+    href: ../settings/set-area-paths.md?
+  - name: Set iteration paths (sprints) 
+    href: ../settings/set-iteration-paths-sprints.md
 - name: Manage projects
   items:
-  - name: Project & team quick reference
-    href: project-team-quick-reference.md
-  - name: Connect a project to GitHub  
-    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Share your project vision  
     href: project-vision-status.md
   - name: Rename a project
@@ -32,12 +40,12 @@
     href: save-project-data.md
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md 
-  - name: FAQs
-    items:
-    - name: Create a project
-      href: faq-create-project.md
-    - name: Rename a project
-      href: faq-rename-project.md
+- name: FAQs
+  items:
+  - name: Create a project
+    href: faq-create-project.yml
+  - name: Rename a project
+    href: faq-rename-project.yml
 - name: Public projects
   href: ../public/about-public-projects.md 
 

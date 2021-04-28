@@ -5,7 +5,7 @@ description: Email or print work items to share information in Azure Boards, Azu
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -146,7 +146,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 <a id="team-services-email" />  
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
 
@@ -210,7 +210,7 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -312,7 +312,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > [!NOTE]   
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 

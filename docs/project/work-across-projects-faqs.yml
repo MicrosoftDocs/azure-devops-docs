@@ -1,7 +1,14 @@
 ### YamlMime:FAQ
 metadata:
   title: Work across projects FAQ 
-  description: Get answers to common questions about working across projects in Azure DevOps. 
+  description: Get answers to common questions about working across projects in Azure DevOps.  
+  titleSuffix: Azure DevOps
+  ms.technology: devops-new-user
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: '<= azure-devops'
+  ms.date: 01/15/2021
 
 title: Work across projects FAQs 
 
@@ -63,7 +70,7 @@ sections:
         answer: |
           **Yes**. You can create work item queries that span all projects within an organization or filter for specific projects. Also, you can use the search tool to perform work item searches across all projects in an organization. To learn more, see one of the following articles: 
           - [Define a query, Query across projects](../boards/queries/using-queries.md#across-projects) 
-          - [Search for work items](search/work-item-search.md)
+          - [Search for work items](search/functional-work-item-search.md)
 
       - question: Can I link work items across projects? 
         answer: |

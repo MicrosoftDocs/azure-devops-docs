@@ -5,8 +5,8 @@ description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
-ms.reviewer: macoope
-ms.date: 12/15/2020
+ms.reviewer: vijayma
+ms.date: 03/24/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -276,6 +276,37 @@ Jobs can run [conditionally](process/phases.md?tabs=yaml#conditions) and  might 
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops"
+
+```yaml
+jobs:
+- job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  strategy:
+    parallel: # parallel strategy; see the following "Parallel" topic
+    matrix: # matrix strategy; see the following "Matrix" topic
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  pool: pool # see the following "Pool" schema
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  container: containerReference # container to run this job inside of
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: # several syntaxes, see specific section
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+  services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
+```
+
+:::moniker-end
+
+:::moniker range="<azure-devops"
+
 ```yaml
 jobs:
 - job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
@@ -297,6 +328,8 @@ jobs:
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
+
+:::moniker-end
 
 For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
@@ -1086,8 +1119,8 @@ resources:
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
-      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
-      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 2020.1 and greater
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 2020.1 and greater
 ```
 # [Example](#tab/example)
 
@@ -1117,7 +1150,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -2055,7 +2088,7 @@ steps:
 
 ---
 
-Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publish-artifacts).
 
 ## Download
 
@@ -2095,7 +2128,7 @@ steps:
 
 ---
 
-Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#download-artifacts).
 
 ::: moniker-end
 
@@ -2232,6 +2265,7 @@ steps:
   target:
     container: string # where this step will run; values are the container name or the word 'host'
     commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
+    settableVariables: string # what variables are allowed; defaults to all; can be `none` or a list of allowed vars
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add

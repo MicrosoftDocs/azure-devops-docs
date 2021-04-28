@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 09/19/2019
+ms.date: 04/26/2021
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -22,7 +22,7 @@ Here you can find some basic Markdown syntax guidance and specific guidance for 
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-For additional syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
+For more syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
@@ -33,7 +33,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)  
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)  
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 ::: moniker-end
@@ -44,7 +44,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
@@ -57,7 +57,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
@@ -84,7 +84,7 @@ You can provide guidance in the following areas using Markdown:
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example `####`. Up to six levels of headings are supported.
 
 **Example:**
 ```markdown
@@ -103,50 +103,59 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 [!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
-Make your text easier to read by breaking it up with paragraphs or line breaks.  
+Make your text easier to read by breaking it into paragraphs or with line breaks.  
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
+### Pull requests
 
 In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
 
-In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+**Example - pull request comment:**
+
+<pre>
+Add lines between your text with the **Enter** key.
+Your text gets better spaced and makes it easier to read.
+</pre>
+
+**Result:**
+
+Add lines between your text with the **Enter** key.
+
+Your text gets better spaced and makes it easier to read.
+
+::: moniker-end
+### Markdown files or widgets
+
+::: moniker range=">= tfs-2018"
+
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, select **Enter** to insert a line break, and begin text on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter**. This action begins a new paragraph.
 
 ::: moniker-end
-
-**Example - pull request comment:**
-
-<pre>
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
-</pre>
-
-**Result:**
-Add lines between your text with the Enter key.
-This action spaces your text better and makes it easier to read.
 
 **Example - Markdown file or widget:**
 
 <pre>
-Add two spaces before the end of the line.(space, space)
-This adds space in between paragraphs.
+Add two spaces before the end of the line, and then select **Enter**.(space, space, Enter)
+A space gets added in between paragraphs.
 </pre>
 
 **Result:**  
-Add two spaces before the end of the line.
 
-Space is added in between paragraphs.
+Add two spaces before the end of the line, and then select Enter.
+
+A space gets added in between paragraphs.
 
 ## Blockquotes
 
@@ -316,7 +325,7 @@ code
 
 <br/>
 
-**Additional examples:**
+**More examples:**
 
 <pre>
 ``` js
@@ -459,7 +468,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Supported links for Welcome pages:**
 
-- Relative path: `[text to display](/target.md)` 
+- Relative path: `[text to display](target.md)` 
 - Absolute path in Git: `[text to display](/folder/target.md)`
 - Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
 - URL: `[text to display](http://address.com)`
@@ -599,7 +608,7 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 #### Supported in: Pull Requests | Wikis
 
-Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
+Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
 
 You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
@@ -750,7 +759,7 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in your wiki page.
 
 ::: moniker-end
 

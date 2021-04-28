@@ -22,7 +22,7 @@ The following image shows how an information message is displayed. Users can can
 > [!div class="mx-imgBorder"]  
 > ![Information banner](media/banners/show-banner-info.png)   
 
-You can only manage banners using the Azure DevOps Command Line Interface (CLI), [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can only manage banners using the Azure DevOps Command Line Interface (CLI), [`az devops admin banner commands`](/cli/azure/devops/admin/banner). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 ## Prerequisites 
 
@@ -217,7 +217,7 @@ az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --messag
 ## Related articles
 
 - [Get started with Azure DevOps CLI](../../cli/index.md)  
-- [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner)   
+- [`az devops admin banner commands`](/cli/azure/devops/admin/banner)   
 - [About projects and scaling your organization](../projects/about-projects.md)  
 
 

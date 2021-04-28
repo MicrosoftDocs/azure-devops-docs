@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '<= azure-devops'
-ms.date: 01/25/2021
+ms.date: 04/13/2021
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -157,12 +157,8 @@ For example, the following query filters will list all work items where some ent
 
 <a id="no-tags" />
 
-## List work items with no tags 
-
-To find all work items that don't have tags assigned to them, use the **Tags** field, **Does Not Contain** operator and **(blank)** value. For example, the following query lists all work items in the Proposed State that have no tags assigned to them. 
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Query Editor to query on tags.](media/add-tags/tags-blank-query-editor.png) 
+> [!NOTE]
+> The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
 
 
 <a id="category"/>

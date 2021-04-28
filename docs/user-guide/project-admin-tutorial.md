@@ -9,10 +9,10 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 02/16/2021
 ---
 
-# Manage your project
+# Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]  
 
@@ -20,7 +20,7 @@ With most Azure DevOps Services, you can start using the service and configure r
 
 As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, consider additional tasks to structure your projects to support multiple teams or software development applications.  
 
-## Add users to your project
+## Add users to your project 
 
 ::: moniker range="azure-devops"  
 Ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
@@ -40,14 +40,14 @@ Ensure that all members of your organization or group are added to your organiza
 
 To delegate the task of managing user access, add a user with Stakeholder or higher access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
 
-## Grant or restrict permissions
+## Grant or restrict permissions  
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group).
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group](../organizations/projects/about-projects.md#project-scoped-user-group).
 
 ::: moniker-end  
 
@@ -63,9 +63,36 @@ To learn more about permissions and security, review the following articles:
 - [About security roles](../organizations/security/about-security-roles.md)  
 - [About access levels](../organizations/security/access-levels.md)  
 
+
+::: moniker range="azure-devops"
+
+<a id="limit-identity-selection" /> 
+
+## Limit identity search and selection  
+
+For organizations that manage their users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those added to your project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page  
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../notifications/media/at-mention/identity-selector.png)  
+
+
+To limit the identity selection to just those users and groups added to a project, perform the following procedure for your organization and projects. 
+
+1. Enable the **Limit user visibility for projects** preview feature for the organization. To learn how, see [Manage or enable features](../project/navigation/preview-features.md#account-level). 
+2. Add the users to your project(s) as described in [Add users to a project or team](../organizations/security/add-users-team-project.md). Users added to a team are automatically added to the project and team group. 
+3. Open **Organizations Settings>Security>Permissions** and choose **Project-Scoped Users**. Choose the **Members** tab. Add all users and groups that you want to scope to the project(s) you've added them to. To learn more, see [Set permissions at the project- or collection-level](../organizations/security/set-project-collection-level-permissions.md). 
+	The **Project-Scoped Users** group only appears under the **Permissions>Groups** once **Limit user visibility for projects** preview feature is enabled. 
+
+::: moniker-end  
+
 ::: moniker range=">= tfs-2015"
 
-## Share your project vision and support collaboration
+## Share your project vision  
 
 ::: moniker-end
 
@@ -82,7 +109,7 @@ Each project has a summary page that's useful for sharing information through **
 
 ::: moniker range=">= azure-devops-2019"  
 
-## Remove unused services from the user interface
+## Remove unused services 
 
 To simplify the web portal user interface, you can disable select services. For example, if you use a project only to log bugs, then disable all services except for **Boards**.
 
@@ -95,7 +122,7 @@ This example shows that **Test Plans** is disabled:
 
 ::: moniker range=">= tfs-2015"  
 
-## Set code, test, and other policies 
+## Set DevOps policies 
 
 Set policies to support collaboration across your teams, secure your projects, and automatically remove obsolete files. To set policies, review the following articles: 
 
@@ -119,7 +146,7 @@ Set policies to support collaboration across your teams, secure your projects, a
 ::: moniker-end  
 
 
-## Define area and iteration paths for work tracking
+## Define area and iteration paths to track work
 
 If you support several products, you can assign work items by feature area by defining [area paths](../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you configure [iteration paths](../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, and team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md).  
 
@@ -200,7 +227,7 @@ An extension is an installable unit that adds new capabilities to your projects.
 
 ::: moniker range=">= tfs-2017"
 
-For example, to support [code search](../project/search/code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
+For example, to support [code search](../project/search/functional-code-search.md), install the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search).
 
 ::: moniker-end  
 
@@ -221,7 +248,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ## Next steps  
 
 > [!div class="nextstepaction"]
-> [Manage projects](../organizations/projects/about-projects.md)
+> [Share your project vision](../organizations/projects/project-vision-status.md)
 
 ## Related articles
 

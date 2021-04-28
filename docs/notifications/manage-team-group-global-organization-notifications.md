@@ -67,12 +67,12 @@ A subscription lets you control what your team is notified of and how the team r
 
    Choose from one of the following delivery options:
 
-     | Delivery option          | Description                                                                                                                                                                                |
-   |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **Team members by role** | Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification. |
-   | **Team preference**      | Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).                                                                                 |
-   | **Custom email address** | Send an email to a specified email address.                                                                                                                                                |
-   | **All team members**     | Send an individual email to each member of the team.                                                                                                                                       |                                                           |
+     | **Delivery option**    | **Description**   | 
+     | --------------------|-------------------|  
+     | **Team members by role** | Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification. |  
+     | **Team preference**      | Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).   |  
+     | **Custom email address** | Send an email to a specified email address.    |  
+     | **All team members**     | Send an individual email to each member of the team.        |   
 
    For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 

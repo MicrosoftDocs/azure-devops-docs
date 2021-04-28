@@ -1,21 +1,20 @@
-- name: Search across your projects
-  href: overview.md
-- name: Search code
-  href: code-search.md
-- name: Search work items
-  href: work-item-search.md
+- name: Get started with semantic search
+  href: get-started-search.md
+- name: Functional code search
+  href: functional-code-search.md
+- name: Functional work item search
+  href: functional-work-item-search.md
+- name: Functional package search
+  href: functional-package-search.md
 - name: Search wiki
   href: ../wiki/search-wiki.md
-- name: Search packages or artifacts
-  href: package-search.md
-- name: Advanced code search
-  href: advanced-code-search-syntax.md
-- name: Advanced work item search
-  href: advanced-work-item-search-syntax.md
-- name: Advanced package search
-  href: advanced-package-syntax.md
-- name: Configure search
-  href: administration.md
+- name: Search organization settings
+  href: ../../organizations/settings/search-settings.md
+- name: Install and configure search
+  href: install-configure-search.md
+- name: Manage search indexing
+  href: manage-search.md
 - name: FAQs
-  href: faq-search.md
+  href: faq-search.yml
+
   

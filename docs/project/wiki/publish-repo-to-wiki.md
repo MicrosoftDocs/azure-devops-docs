@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 08/18/2020  
+ms.date: 03/05/2021  
 ---
 
 # Publish a Git repository to a wiki
@@ -49,7 +49,7 @@ For for information about managing the different wiki types, see [Differences be
 * You must have a team project. If you don't have a team project yet, [create one](../../organizations/projects/create-project.md).  
 * You must have enabled Azure Repos service for your project.
 * You must have a Git repository defined in your team project. Ideally, this repository contains at least one Markdown file, which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
-* You must have the permission **Contribute** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
+* You must have the permission **Contribute** to publish code as wiki. By default, this permission is set for members of the [Contributors group](../../repos/git/set-git-repository-permissions.md). 
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages.
 
 ## Open Wiki  
@@ -104,12 +104,15 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
    - Each Markdown file (file type=**.md**) defined in the repo/branch/folder is listed in alphabetical order, the TOC title is derived from the Markdown file name
    - A parent page for each subfolder defined within the published folder, even if it doesn't contain any Markdown files.
 
-     And here is an image of the contents of the azure-docs-sdk-node repository.
+     And here's an image of the contents of the azure-docs-sdk-node repository.
 
      > [!div class="mx-imgBorder"]  
      > ![Repo with Markdown files published to wiki](media/wiki/publish-wiki-sample-code-repo.png)
 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
+
+> [!NOTE]
+> You're limited to publishing 10 branches as code wikis.
 
 For the Wiki that's provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
 
@@ -117,10 +120,10 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 ::: moniker range=">= azure-devops-2020"
 
-You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
+You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
 > [!NOTE]
-> You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
+> You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/repos#ext-azure-devops-az-repos-create), and then return to this page.
 
 ```azurecli 
 az devops wiki create [--mapped-path]
@@ -217,7 +220,7 @@ You can add pages to your published wiki as follows:
 
 - Add a file to a root folder or subfolder from the web portal
 - Upload files to a root folder or subfolder
-- Add or update an .order file to specify the page sequence in the wiki TOC.
+- Add or update a .order file to specify the page sequence in the wiki TOC.
 
 Each update you make requires you commit your changes to the repository. You can then refresh your **Wiki** for your published repo to review the changes.  
 

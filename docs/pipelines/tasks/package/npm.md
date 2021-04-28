@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 Use this task to install and publish npm packages.
 
 > [!NOTE]
-> Moving forward, the [npm Authenticate](npm-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
+> The [npm Authenticate](npm-authenticate.md) task is the recommended way to authenticate with Azure Artifacts. This task no longer takes new features and only critical bugs are addressed.
 
 ::: moniker range="<= tfs-2018"
 

@@ -27,7 +27,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 - [About permissions, access, & security groups](about-permissions.md)   
 - [Default permissions & access](permissions-access.md)   
 - [View permissions](view-permissions.md)   
-- [Trace permissions](faq-trace-permissions.md)   
+- [Troubleshoot permissions](troubleshoot-permissions.md)   
 - [Increase permission levels, find an admin](lookup-organization-owner-admin.md)   
 - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 
@@ -135,6 +135,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        **Authentication** 
        - [Choose authentication method](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authenticate access with PATs](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Manage personal access tokens using API](../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
        - [Use OAuth 2.0 to authorize access to REST APIs](../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authorize a service, manage authorizations](../settings/manage-authorizations.md)  
@@ -162,7 +163,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
       **Set organization or collection-level permissions**  
        - [Set organization-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Enable Project-scoped Users Group](../projects/about-projects.md#project-scoped-user-group)  
+       - [Enable Project-Scoped Users Group](../projects/about-projects.md#project-scoped-user-group)  
    :::column-end:::
    :::column span="1":::
       **Set organization policies**  
@@ -237,7 +238,8 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
    :::column-end:::
    :::column span="1":::
       **Set repository and branch permissions**  
-       - [Repository permissions](set-git-tfvc-repository-permissions.md)  
+       - [Git repository permissions](../../repos/git/set-git-repository-permissions.md)  
+       - [TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)  
        - [Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Administer shelved changes (TFVC)](set-project-collection-level-permissions.md#project-level)
        - [Administer workspaces (TFVC)](set-project-collection-level-permissions.md#project-level)

@@ -3,10 +3,11 @@ title: Best practices for Agile project management
 titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ms.date: 08/24/2020
 ---
 
@@ -166,7 +167,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 The following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 
 
@@ -179,7 +180,7 @@ The following image illustrates a Kanban board filtered on the *web* keyword whi
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
 
 
@@ -363,7 +364,7 @@ To review features delivered across several teams, configure a delivery plan. De
 
 - [Add columns to your Kanban board](boards/add-columns.md) 
 - [Customize cards](boards/customize-cards.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
@@ -431,5 +432,5 @@ Teams can define one or more dashboards to share information and monitor real-ti
 
 ### Industry articles  
 
-- [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
+- [Agile and a continuous improvement mindset](https://scrumtraininginstitute.com/agile-scrum-training/agile-team-health-check/#:~:text=At%20the%20core%20of%20Agile%20continuous%20improvement%20is,your%20organization%20can%20develop%20a%20continuous%20improvement%20mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)

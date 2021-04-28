@@ -27,7 +27,7 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
 2. On your profile page, go to the lower *Organizations Pending Deletion* section, and then select **Restore**.
 

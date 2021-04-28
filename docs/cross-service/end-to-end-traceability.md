@@ -200,27 +200,27 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 ### Linking requirements  
 
-- [Drive Git development from a work item](/azure/devops/boards/backlogs/connect-work-items-to-git-dev-ops)
-- [Link work items to deployments](/azure/devops/boards/work-items/work-item-deployments-control) 
-- [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link)
-- [Linking, traceability, and managing dependencies](/azure/devops/boards/queries/link-work-items-support-traceability)
+- [Drive Git development from a work item](../boards/backlogs/connect-work-items-to-git-dev-ops.md)
+- [Link work items to deployments](../boards/work-items/work-item-deployments-control.md) 
+- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
+- [Linking, traceability, and managing dependencies](../boards/queries/link-work-items-support-traceability.md)
 
 
 ### Testing
 
-- [Add, run, and update inline tests](/azure/devops/boards/boards/add-run-update-tests)
-- [Associate automated tests with test cases](/azure/devops/test/associate-automated-test-with-test-case)  
+- [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md)
+- [Associate automated tests with test cases](../test/associate-automated-test-with-test-case.md)  
 
 
 ### Reports and Analytics
 
-- [Requirements traceability](/azure/devops/pipelines/test/requirements-traceability)
-- [Requirements tracking sample report](/azure/devops/report/powerbi/sample-stories-overview) 
-- [Requirements tracking rollup sample report](/azure/devops/report/powerbi/sample-stories-overview-rollup)
-- [Review test results](/azure/devops/pipelines/test/review-continuous-test-results-after-build)
-- [Test Analytics](/azure/devops/pipelines/test/test-analytics)
-- [Review code coverage results](/azure/devops/pipelines/test/review-code-coverage-results)
-- [Code coverage for pull requests](/azure/devops/pipelines/test/codecoverage-for-pullrequests)
+- [Requirements traceability](../pipelines/test/requirements-traceability.md)
+- [Requirements tracking sample report](../report/powerbi/sample-stories-overview.md) 
+- [Requirements tracking rollup sample report](../report/powerbi/sample-stories-overview-rollup.md)
+- [Review test results](../pipelines/test/review-continuous-test-results-after-build.md)
+- [Test Analytics](../pipelines/test/test-analytics.md)
+- [Review code coverage results](../pipelines/test/review-code-coverage-results.md)
+- [Code coverage for pull requests](../pipelines/test/codecoverage-for-pullrequests.md)
 
 <!---
  

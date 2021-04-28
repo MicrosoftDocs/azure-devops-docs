@@ -186,6 +186,6 @@ landingContent:
       - linkListType: reference
         links:
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/boards
+            url: /cli/azure/boards
           - text: REST API
             url: /rest/api/azure/devops/work

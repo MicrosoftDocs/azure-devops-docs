@@ -16,6 +16,6 @@ Partners in the Cloud Solution Provider (CSP) program can enable their customers
 
 To enable the customer to purchase App Center resources by using a CSP-based Azure subscription, confirm the following:
 
-* The customer has organization admin rights in App Center, which grants them access to the Billing tab.
+* The customer has organization administration rights in App Center, which grants them access to the Billing tab.
 
 * The customer has owner role permissions to the CSP-based Azure subscription in order to make purchases. Learn more about [how to add users with co-owner permissions](/azure/billing/billing-add-change-azure-subscription-administrator).
