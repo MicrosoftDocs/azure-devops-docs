@@ -1,12 +1,11 @@
 ---
 title: Publish & download Universal Packages
-titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Publishing Universal Packages to Azure Artifacts feeds
+description: Publish Universal Packages to Azure Artifacts feeds with Azure Pipelines
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 06/25/2020
+ms.date: 04/27/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -14,23 +13,22 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
+Using Universal Packages you can pack any number of files of any type and share it with your team. Using the Universal Package task, you can pack, publish, and download packages of various sizes up to 4 TB. Each package will be uniquely identified with a name and a version number. Packages can be published and consumed to and from Artifacts feeds by using the Azure CLI or Azure Pipelines.
 
-## Prepare your Universal Package
+## Prepare a Universal Package
 
-[Universal Packages](../../artifacts/quickstarts/universal-packages.md) are created from a directory of files. By default, the Universal Packages task will publish all files in `$(Build.ArtifactStagingDirectory)`.
-
-To prepare your Universal Package for publishing, either configure preceding tasks to place output files in that directory, or use the [Copy Files utility task](../tasks/utility/copy-files.md) to assemble the files that you want to publish.
+By default, the Universal Packages task uses the `$(Build.ArtifactStagingDirectory)` as the publish directory. To prepare your Universal Package for publishing, place the files you want to publish in that directory. You can also use the [Copy Files](../tasks/utility/copy-files.md) utility task to copy those files to the publish directory.
 
 <a name="publish-packages"></a>
 
-## Publish your packages
+## Publish a Universal Package
 
 # [YAML](#tab/yaml)
 
-To publish a Universal Package to your feed, add the following snippet to your azure-pipelines.yml file.
+To publish a Universal Package to your Artifacts feed, add the following task to your pipeline's yaml file.
 
 ```yaml
+# Publish a Universal Package
 - task: UniversalPackages@0
   displayName: Universal Publish
   inputs:
@@ -39,22 +37,18 @@ To publish a Universal Package to your feed, add the following snippet to your a
     vstsFeedPublish: '<projectName>/<feedName>'
     vstsFeedPackagePublish: '<Package name>'
     packagePublishDescription: '<Package description>'
-
 ```
 
 | Argument                                                          | Description                                                                       |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | publishDirectory                                                  | Location of the files to be published.                                            |
 | vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
-| vstsFeedPackagePublish                                            | The package name.                                                                 |
+| vstsFeedPackagePublish                                            | The package name. Must be lower case. Use only letters, numbers, and dashes.                                                                |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
-> [!NOTE]
-> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
+To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from the feed's settings. See [Adding users/groups permissions to a feed](../../../artifacts/feeds/feed-permissions.md) for details.
 
-[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
-
-To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [personal access token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
+To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
 
 # [Classic](#tab/classic)
 
