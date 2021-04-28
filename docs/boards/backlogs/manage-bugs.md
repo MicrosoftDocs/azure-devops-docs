@@ -35,7 +35,19 @@ The Bug work item type tracks similar information to the one shown in the follow
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
-![Scrum bug work item form](media/manage-bugs-scrum-bug-from-ts.png)  
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="mx-imgBorder"]  
+> ![Bug work item type, form for Scrum process, Azure DevOps Server 2020 and cloud service. ](media/manage-bugs/bug-work-item-type.png)
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops-2020"
+![Bug work item type, form for Scrum process, Azure DevOps Server 2019 and earlier versions to TFS 2017.](media/manage-bugs-scrum-bug-from-ts.png)
+::: moniker-end
+
+ 
 
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
@@ -56,9 +68,9 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 ---
 :::row:::
    :::column span="1":::
-      **Field or tab** 
+      **Field, Group, or Tab** 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       **Usage**
    :::column-end:::
 :::row-end:::
@@ -67,7 +79,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
    :::column span="1":::
       [Steps to Reproduce](../queries/titles-ids-descriptions.md)(friendly name=Repro Steps)
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       Capture enough information so that other team members can understand the full impact of the problem as well as whether they have fixed the bug. This includes actions taken to find or reproduce the bug and expected behavior.  
       Describe the criteria that the team should use to verify whether the code defect is fixed.  
    :::column-end:::
@@ -77,7 +89,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
    :::column span="1":::
       [System Info](../queries/titles-ids-descriptions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       Information about the software and system configuration that is relevant to the bug and tests to apply. 
    :::column-end:::
 :::row-end:::
@@ -86,7 +98,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
    :::column span="1":::
       [Acceptance Criteria](../queries/titles-ids-descriptions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       Provide the criteria to meet before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed. 
    :::column-end:::
 :::row-end:::
@@ -96,7 +108,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
       [Found In Build](../queries/build-test-integration.md)  
       [Integrated in Build](../queries/build-test-integration.md) 
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       When a bug is created using a testing tool, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).  
       When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug.  
       For on-premises Azure DevOps, to access a drop-down menu of all builds that have been run, you can update the `FIELD` definitions for **Found in Build** and **Integrated in Build** to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../queries/build-test-integration.md).  
@@ -108,7 +120,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
    :::column span="1":::
       [Priority](../queries/planning-ranking-priorities.md)<sup>1</sup>
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.
       - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.
       - **3**: Resolution of the work item is optional based on resources, time, and risk.
@@ -118,9 +130,8 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 :::row:::
    :::column span="1":::
       [Severity](../queries/planning-ranking-priorities.md)<sup>1</sup>
-
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       A subjective rating of the impact of a bug on the project or software system. For example: If clicking a remote link (a rare event) causes an application or web page to crash (a severe customer experience), you might specify **Severity = 2 - High** and **Priority = 3**.  Allowed values and suggested guidelines are: 
       - **1 - Critical**: Must fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. And, there are no acceptable alternative methods to achieve required results.
       - **2 - High**: Consider fix. A defect that causes termination of one or more system components or the complete system, or causes extensive data corruption. However, an acceptable alternative method exists to achieve required results.
@@ -129,6 +140,34 @@ When defining a bug, use these fields to capture both the initial issue and ongo
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      [Deployment](../work-items/work-item-deployments-control.md)
+   :::column-end:::
+   :::column span="3":::
+      The Deployment control supports links to and display of releases which contains the work items. For example, the following image shows several releases which contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the release or stage for more information.
+      > [!div class="mx-imgBorder"]  
+      > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)
+      To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md).
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      [Development](connect-work-items-to-git-dev-ops.md) 
+   :::column-end:::
+   :::column span="3":::
+      The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests, or TFVC changesets and versioned items.
+      > [!div class="mx-imgBorder"]  
+      > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)
+      To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).
+   :::column-end:::
+:::row-end:::
+---
+ 
+ 
  
 
 #### Notes: 
