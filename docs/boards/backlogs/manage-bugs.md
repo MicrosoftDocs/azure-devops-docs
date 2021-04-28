@@ -174,16 +174,43 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 ## Choose how your team tracks bugs
 
-(pros and cons table) 
-(add same section to Show bugs team setting) 
+There are a number of factors to consider when determining how your team will track bugs. The main ones to consider are: 
 
+- Size of your team, smaller teams will want to maintain a lightweight footprint
+- Organization requirements to track work, if you're team is required to track hours, then tracking bugs as tasks makes sense
+- How your team prioritizes work
+- Tools your team uses 
+
+
+Team choices: 
+- Product backlog of features or users stories under development 
+- Bug backlog (don't let them go to die, EDRM epics - EPIC owner stack ranks work (not recommended) 
+ 
+CSS team - request from a customer 
+relationship through test run adn user story - is related; 
+
+- parent relationship 
+- 
+- Process model impact 
+- Managing technical debt vs addressing bugs that arise during a sprint 
+- Can create a custom bug to manage along with requirements AND use a bug work item type to manage along with tasks 
+
+Testing - bugs associated with user stories - parent-child relationship OR Related 
+Rollup 
+
+Some factors to consider: 
+- Team size 
+- Tools you'll want to use 
+ 
 
 [!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
 
 
 ## Customize your bug work item type 
 
-
+Fields  
+Workflow  
+Rules  
 
 <a id="fix-resolve-close">  </a>
 
