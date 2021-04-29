@@ -33,7 +33,7 @@ ms.date: 04/28/2021
    :::column span="1":::
       Track bugs as Tasks 
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       - Estimate work for bugs similar to tasks  
       - Update bug status on sprint Taskboards  
       - Link bugs to requirements as child items  

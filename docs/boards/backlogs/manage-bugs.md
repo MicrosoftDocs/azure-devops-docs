@@ -349,9 +349,14 @@ Analytics service
 
 You can track the bug status, assignments, and trends using queries which you can then chart and add to a dashboard. 
 
-For example, here are two examples showing active bugs by priority trend and a snapshot of bugs by priority.
+For example, here are two examples showing active bug trends by State and Active Bugs by Priority over time.
 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of two active bug query charts, Bug Trends by State and by Priority.](media/manage-bugs/query-charts-active-bugs.png) 
+
+<!---
 ![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
+-->
 
 To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).   
 
@@ -384,6 +389,22 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 ## Integration across Azure DevOps 
 
 ### Pipelines
+
+pipelines often run due to a commit which may have work items associated it, and you can link the work items to the run. 
+
+[Customize your pipeline](../../pipelines/customize-pipeline.md) 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Pipeline Settings, Automatically link work items in this run from selected branch.](media/manage-bugs/pipeline-settings.png) 
+ 
+
+ undefined
+
+You can also create/edit a work item on a test failure as well.
+
+Review test results - Azure Pipelines | Microsoft Docs
+
+ 
 
 ### Test
 
