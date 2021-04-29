@@ -170,8 +170,6 @@ When defining a bug, use the fields listed in the following table to capture bot
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
-
-
 ## Choose how your team tracks bugs
 
 There are a number of factors to consider when determining how your team will track bugs. The main ones to consider are: 
@@ -179,38 +177,68 @@ There are a number of factors to consider when determining how your team will tr
 - Size of your team, smaller teams will want to maintain a lightweight footprint
 - Organization requirements to track work, if you're team is required to track hours, then tracking bugs as tasks makes sense
 - How your team prioritizes work
-- Tools your team uses 
+- Tools your team wants to use such as planning pane, velocity chart, rollup, delivery plans  
 
-
-Team choices: 
-- Product backlog of features or users stories under development 
-- Bug backlog (don't let them go to die, EDRM epics - EPIC owner stack ranks work (not recommended) 
- 
-CSS team - request from a customer 
-relationship through test run adn user story - is related; 
-
-- parent relationship 
-- 
-- Process model impact 
-- Managing technical debt vs addressing bugs that arise during a sprint 
-- Can create a custom bug to manage along with requirements AND use a bug work item type to manage along with tasks 
-
-Testing - bugs associated with user stories - parent-child relationship OR Related 
-Rollup 
-
-Some factors to consider: 
-- Team size 
-- Tools you'll want to use 
- 
+The following table summarizes the three options team's have to track bugs. To learn more, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 [!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
 
 
 ## Customize your bug work item type 
 
-Fields  
-Workflow  
-Rules  
+You can customize your bug work item type or create additional work item types to track software issues or customer feedback. With all work item types, you can customize the following elements: 
+
+- Add or remove custom fields 
+- Customize the workflow states 
+- Add conditional rules 
+- Determine the backlog the work item type appears 
+  
+Before you customize your process, we recommend you review [Configure and customize Azure Boards](../configure-customize.md). 
+
+## Define or capture bugs 
+
+You can define bugs from several different tools.  
+
+> [!TIP]   
+> By default, the only required field when creating a bug is the **Title** field. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, you can do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
+
+### Create a bug from your backlog or board 
+
+If your team chose to manage bugs with requirements, you can define bugs from your product backlog or Kanban board.
+
+- **Add from the product backlog**  
+	> [!div class="mx-imgBorder"]  
+	> ![From product backlog, Add bug.](media/manage-bugs/add-bug-from-backlog.png)  
+
+- **Add from the product backlog**  
+	> [!div class="mx-imgBorder"]  
+	> ![From Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
+
+### Create a bug from your backlog or board 
+
+If your team chose to manage bugs with tasks, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item. 
+
+- **Add child bug from the Kanban board**  
+	> [!div class="mx-imgBorder"]  
+	> ![From Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
+
+- **Add child bug from the Sprint Backlog**  
+	> [!div class="mx-imgBorder"]  
+	> ![From Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
+
+### Create a bug from a testing tool
+
+Other tools you can use to create bugs are testing tools as illustrated and described in the following two tools.  
+
+- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
+
+	![Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
+
+- **Test Runner**: see [Run manual tests](../../test/run-manual-tests.md).  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Test Runner, Create bug feature.](media/manage-bugs/test-runner-create-bug.png)
+
 
 <a id="fix-resolve-close">  </a>
 
@@ -225,9 +253,12 @@ As with all other work item types, the Bug work item type has a well-defined wor
 
 For Scrum bugs, you simply change the **State** from *Committed* (similar to *Active*) to *Done*. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from *Resolved* to *Closed*. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 
+
+::: moniker range=">= azure-devops-2020"  
 > [!NOTE]  
 > The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../work-items/guidance/changes-to-process-templates.md). You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
  
+::: moniker-end  
 
 ### Verify a fix 
 
@@ -274,15 +305,6 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 > Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug.   
 
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
-
-
-## Define or capture bugs using test tools 
-
-
-You can create bugs during test sessions using one of the following tools: 
-- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)   
-- **Test Runner**: see [Update an existing bug while using Test Runner](/previous-versions/dd286731(v=vs.140)).  
-
 
 
 ## List and triage bugs 
@@ -388,6 +410,15 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 
 ## Related articles 
+
+
+
+- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
+- [Follow a work item or pull request](../work-items/follow-work-items.md)
+- [Move, change type, or delete work items](remove-delete-work-items.md)
+- [Pre-populate fields using a template](work-item-template.md)
+- [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
+
 
 
 <!---
