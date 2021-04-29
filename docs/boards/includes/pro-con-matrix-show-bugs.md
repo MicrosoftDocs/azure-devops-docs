@@ -37,8 +37,8 @@ ms.date: 04/28/2021
       - Estimate work for bugs similar to tasks  
       - Update bug status on sprint Taskboards  
       - Link bugs to requirements as child items  
-      **Note:** 
-      - Bugs won't be visible on Delivery Plans
+      > [!NOTE]   
+      > Bugs won't be visible on Delivery Plans
    :::column-end:::
 :::row-end:::
 ---
@@ -48,9 +48,9 @@ ms.date: 04/28/2021
    :::column-end:::
    :::column span="3":::
       - Manage bugs using queries 
-      **Note:** 
-      - Bugs won't be visible on Backlogs, Boards, Sprint Backlogs, Taskboards, or Delivery Plans
-      - Can't drag and drop bugs onto Planning pane to assign bugs to a sprint 
+      > [!NOTE]   
+      > - Bugs won't be visible on Backlogs, Boards, Sprint Backlogs, Taskboards, or Delivery Plans
+      > - Can't drag and drop bugs onto Planning pane to assign bugs to a sprint 
    :::column-end:::
 :::row-end:::
 ---
