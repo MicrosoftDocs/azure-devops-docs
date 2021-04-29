@@ -29,10 +29,6 @@ To support these scenarios, Azure Boards provides a Bug work item type. The Bug 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
 
 
-- *Benefits of using Bugs to track code defect*s  
-- *Manage technical debt* 
-
-
 ## Bug work item type 
 
 The Bug work item type tracks similar information to the one shown in the following image for the Scrum process. It is designed to support tracking on the product backlog along with requirements or tracking on the Taskboard along with tasks.  
@@ -179,65 +175,81 @@ There are a number of factors to consider when determining how your team will tr
 - How your team prioritizes work
 - Tools your team wants to use such as planning pane, velocity chart, rollup, delivery plans  
 
-The following table summarizes the three options team's have to track bugs. To learn more, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+The following table summarizes the three options team's have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 [!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
 
-
+<a id="customize"> </a>
 ## Customize your bug work item type 
 
 You can customize your bug work item type or create additional work item types to track software issues or customer feedback. With all work item types, you can customize the following elements: 
 
 - Add or remove custom fields 
+- Add custom controls or custom tabs within the work item form
 - Customize the workflow states 
 - Add conditional rules 
-- Determine the backlog the work item type appears 
+- Choose the backlog level the work item type appears 
   
 Before you customize your process, we recommend you review [Configure and customize Azure Boards](../configure-customize.md). 
 
-## Define or capture bugs 
+::: moniker range="azure-devops"
+To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model).  
+::: moniker-end
 
-You can define bugs from several different tools.  
+::: moniker range=">= azure-devops-2019 < azure-devops"
+To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model) or [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model) depending on the process model used by your project. 
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+To customize your particular process, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model). 
+::: moniker-end
+
+
+
+## Add or capture bugs 
+
+You can define bugs from several different Azure DevOps tools. These include backlogs and boards and testing tools.  
 
 > [!TIP]   
 > By default, the only required field when creating a bug is the **Title** field. You can quickly add bugs in the same way you add user stories or product backlog items using Azure Boards. If you want to make some fields required, you can do that by adding conditional rules based on a state change. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
-### Create a bug from your backlog or board 
+### Add a bug from your backlog or board 
 
-If your team chose to manage bugs with requirements, you can define bugs from your product backlog or Kanban board.
+If your team chose to manage bugs with requirements, you can define bugs from your product backlog or Kanban board. To learn more, see [Create your product backlog](create-your-backlog.md) or [Start using your Kanban board](../boards/kanban-quickstart.md). 
 
-- **Add from the product backlog**  
+- **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
 	> ![From product backlog, Add bug.](media/manage-bugs/add-bug-from-backlog.png)  
 
-- **Add from the product backlog**  
+- **Add a bug from the product backlog**  
 	> [!div class="mx-imgBorder"]  
 	> ![From Kanban board, Add bug.](media/manage-bugs/add-bug-from-board.png)  
 
-### Create a bug from your backlog or board 
+### Add a bug from your Sprint backlog or Taskboard 
 
 If your team chose to manage bugs with tasks, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item. 
 
-- **Add child bug from the Kanban board**  
+- **Add a linked child bug from the Kanban board**  
+	You add a bug in the same way you add a task to a backlog item. To learn more, see [Add task checklists](../boards/add-task-checklists.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![From Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
-- **Add child bug from the Sprint Backlog**  
+- **Add a linked child bug from the Sprint Backlog**  
+	You add a bug in the same way you add a task to a Sprint backlog. To learn more, see [Add tasks to backlog items](../boards/sprints/add-tasks.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![From Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
 
-### Create a bug from a testing tool
+### Create a bug from a testing tool 
 
-Other tools you can use to create bugs are testing tools as illustrated and described in the following two tools.  
+The two testing tools you can use to add bugs while testing include the web portal Test Runner and the Test & Feedback extension.  
 
-- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
-
-	![Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
-
-- **Test Runner**: see [Run manual tests](../../test/run-manual-tests.md).  
-
+- **Test Runner**: When running manual tests, you can choose to **Create bug**. To learn more, see [Run manual tests](../../test/run-manual-tests.md).  
 	> [!div class="mx-imgBorder"]  
 	> ![Test Runner, Create bug feature.](media/manage-bugs/test-runner-create-bug.png)
+
+- **Test & Feedback extension**: When running exploratory tests, you can choose to **Create bug** or **Create task**. To learn more, see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md) 
+	![Test & Feedback extension, Create bug or task feature.](../../test/media/connected-mode-exploratory-testing/create-bugs-02.png)  
+
 
 
 <a id="fix-resolve-close">  </a>
@@ -307,35 +319,101 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
 
 
-## List and triage bugs 
+::: moniker range=">= azure-devops-2020"
 
-Prioritize bugs on your backlog 
-Assign bugs to a sprint from your backlog 
+### Automate bug closure when merging pull requests 
 
+If you team uses a Git repository, you can set the State in linked bugs and other work items to close upon successful merging of pull requests. For more information, see [Set work item state in pull request](#set-state-pr) later in this article. 
+::: moniker-end
 
-Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
+## List and triage bugs  
 
-The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
+Most teams, regardless of the option they chose to track bugs, maintain one or more bug queries. Queries are helpful to list active bugs, unassigned bugs, stale bugs, bug trends, and more. You can then add queries and query charts to your team dashboards to monitor bug status and progress. 
+
 
 ### Bug queries
+
 Open a shared query or [use the query editor](../queries/using-queries.md) to create useful bug queries, such as the following:
 - Active bugs by priority (```State <> Done``` or ```State <> Closed```)
 - In Progress bugs (```State = Committed``` or ```State = Active```)
 - Bugs to fix for a target release (```Tags Contains RTM```)
 - Recent bugs - bugs opened within the last 3 weeks (```Created Date > @Today-21```) 
 
-Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md) that you can also add the chart to a [dashboard](../../report/dashboards/dashboards.md).  
+Once you have the queries of interest to your team, you can [create status or trend charts](../../report/dashboards/charts.md). You can also add the chart you create to a [dashboard](../../report/dashboards/dashboards.md).  
 
 ### Triage mode in query results
 
-From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. 
+From the query results page, you can quickly move up and down within the list of bug work items using the up and down arrows. As you review each bug, you can assign it, add details, or set priority. To learn more, see [Triage work items](../queries/triage-work-items.md). 
 
-To learn more, see [Triage work items](../queries/triage-work-items.md). 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Query Results, Active Bugs, and Triage mode Right pane.](media/manage-bugs/bug-triage-mode.png)  
+
+
+### Prioritize and assign bugs to a sprint from your backlog
+
+If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. You can also use the [filter function](filter-backlogs-boards-plans.md) to focus solely on bugs. You can use your product backlog to perform the following tasks:  
+
+- Prioritize bugs on your backlog, stack rank against other items (stack ranking is disabled when filtering is enabled)  
+- Assign bugs to a sprint from your backlog using the Planning pane 
+- Parent bugs to Features or other portfolio backlog items using the Mapping pane 
+ 
+
+### Prioritize and assign bugs to a sprint from your backlog
+
+If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. You can also use the [filter function](filter-backlogs-boards-plans.md) to focus solely on bugs. You can use your product backlog to perform the following tasks:  
+
+- Prioritize bugs on your backlog, stack rank against other items (stack ranking is disabled when filtering is enabled)  
+- Assign bugs to a sprint from your backlog using the Planning pane 
+- Parent bugs to Features or other portfolio backlog items using the Mapping pane 
+
+Once you've started coding and testing, you'll want to hold periodic triage meetings to review and prioritize your bugs. How frequently you meet and for how long depends on your situation. Typically, the project owner runs the bug triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them.
+
+The project owner can create or open a shared query for new and reopened bugs to generate a list of bugs to be triaged. 
+
 
 ## Update bug status 
 
 (Fix, resolve and close bugs (update status)
 Change bug assignment 
+
+
+
+## Integration across Azure DevOps 
+
+
+<a id="set-state-pr">  </a>
+
+[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
+
+
+### Pipelines
+
+#### Link work items to pipeline runs
+pipelines often run due to a commit which may have work items associated it, and you can link the work items to the run. 
+
+[Customize your pipeline](../../pipelines/customize-pipeline.md) 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Pipeline Settings, Automatically link work items in this run from selected branch.](media/manage-bugs/pipeline-settings.png) 
+ 
+#### Create or edit a work item upon a build failure
+ undefined
+
+#### Create or edit a work item upon a test failure
+
+You can also create/edit a work item on a test failure as well.
+
+Review test results - Azure Pipelines | Microsoft Docs
+
+You can create work items on a build failure in classic Pipelines, but not in YAML :( There is a Developer community post about it and a stack overflow workaround though…
+Build options - Azure Pipelines | Microsoft Docs
+
+ 
+
+
+### Test
+
 
 
 ## Monitor bug status, assignments, and trends
@@ -386,37 +464,6 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
  
 
-## Integration across Azure DevOps 
-
-### Pipelines
-
-pipelines often run due to a commit which may have work items associated it, and you can link the work items to the run. 
-
-[Customize your pipeline](../../pipelines/customize-pipeline.md) 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Pipeline Settings, Automatically link work items in this run from selected branch.](media/manage-bugs/pipeline-settings.png) 
- 
-
- undefined
-
-You can also create/edit a work item on a test failure as well.
-
-Review test results - Azure Pipelines | Microsoft Docs
-
- 
-
-### Test
-
-
-<a id="customize"> </a>
-
-## Customize the bug work item type 
-
-[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
-
-
-
 ## Marketplace extensions 
 
 
@@ -433,7 +480,7 @@ Review test results - Azure Pipelines | Microsoft Docs
 ## Related articles 
 
 
-
+- [Link user stories, issues, bugs, and other work items](add-link.md)
 - [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
 - [Follow a work item or pull request](../work-items/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
@@ -444,6 +491,10 @@ Review test results - Azure Pipelines | Microsoft Docs
 
 <!---
 
+
+
+- *Benefits of using Bugs to track code defect*s  
+- *Manage technical debt* 
 
 
 Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the **Discussion** section of the Bug work item.
