@@ -11,6 +11,57 @@ ms.date: 04/28/2021
    :::column span="1":::
       **Option** 
    :::column-end:::
+   :::column span="3":::
+      **Choose when you want to...**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Track bugs as Requirements  
+   :::column-end:::
+   :::column span="3":::
+      - Prioritize (stack rank) bugs along with requirements 
+      - Estimate Bug effort for forecasting 
+      - Include Bugs in Velocity chart 
+      - Can use forecast tool against overall effort 
+      - View Bugs on Delivery Plans 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Track bugs as Tasks 
+   :::column-end:::
+   :::column span="2":::
+      - Estimate work for bugs similar to tasks  
+      - Update bug status on sprint Taskboards  
+      - Link bugs to requirements as child items  
+      **Note:** 
+      - Bugs won't be visible on Delivery Plans
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Bugs don't appear on backlogs or boards  
+   :::column-end:::
+   :::column span="3":::
+      - Manage bugs using queries 
+      **Note:** 
+      - Bugs won't be visible on Backlogs, Boards, Sprint Backlogs, Taskboards, or Delivery Plans
+      - Can't drag and drop bugs onto Planning pane to assign bugs to a sprint 
+   :::column-end:::
+:::row-end:::
+---
+
+
+<!---
+---
+:::row:::
+   :::column span="1":::
+      **Option** 
+   :::column-end:::
    :::column span="2":::
       **Pros**
    :::column-end:::
@@ -77,3 +128,5 @@ ms.date: 04/28/2021
 ---
 
 
+
+-->

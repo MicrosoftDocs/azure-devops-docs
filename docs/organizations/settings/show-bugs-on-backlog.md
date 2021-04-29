@@ -160,3 +160,29 @@ You can review bugs defined for your project by creating a query and specifying 
 
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
 - [Manage teams and configure team tools](manage-teams.md)
+
+
+<!---
+
+Team choices: 
+- Product backlog of features or users stories under development 
+- Bug backlog (don't let them go to die, EDRM epics - EPIC owner stack ranks work (not recommended) 
+ 
+CSS team - request from a customer 
+relationship through test run adn user story - is related; 
+
+- parent relationship 
+- 
+- Process model impact 
+- Managing technical debt vs addressing bugs that arise during a sprint 
+- Can create a custom bug to manage along with requirements AND use a bug work item type to manage along with tasks 
+
+Testing - bugs associated with user stories - parent-child relationship OR Related 
+Rollup 
+
+Some factors to consider: 
+- Team size 
+- Tools you'll want to use 
+ 
+
+-->
