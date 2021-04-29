@@ -72,17 +72,19 @@ To publish to an external feed, you must first create a service connection to po
 
 ## Package versioning
 
-In Universal Packages, a particular package is identified by its name and version number. Currently, Universal Packages require [Semantic Versioning](https://semver.org). Semantic version numbers have three numeric components, `Major.Minor.Patch`. When you fix a bug, you increment the patch (`1.0.0` to `1.0.1`). When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). When you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`).
+Universal Packages follow the semantic versioning spec and are identified by their names and version numbers. Semantic version numbers have three numeric components, Major, Minor, and Patch: `Major.Minor.Patch`.
 
-The Universal Packages task automatically selects the next major, minor, or patch version for you when you publish a new package. Just set the appropriate option. 
+When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`), and when you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`). The patch version number should be incremented in the case of fixing a bug (`1.0.0` to `1.0.1`). 
+
+The Universal Packages task automatically selects the next major, minor, or patch version for you when you publish a new package.
 
 # [YAML](#tab/yaml)
 
-In the **Universal Packages** snippet that you added previously, add a `versionOption`. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
+To enable versioning for your package, add a `versionOption` input to your YAML file. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
 
-Selecting `custom` allows you to specify any SemVer2 compliant version number for your package. The other options will get the latest version of the package from your feed and increment the chosen version segment by 1. So if you have a _testPackage v1.0.0_, and you publish a new version of _testPackage_ and select the _major_ option, your package version number will be 2.0.0. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
+Selecting `custom` enables you to manually specify your package version. The other options will get the latest package version from your feed and increment the chosen version segment by 1. So if you have a _testPackage 1.0.0_, and select the _major_ option, your new package will be _testPackage 2.0.0_. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
 
-One thing to keep in mind is that if you select the `custom` option, you must also provide a `versionPublish`.
+One thing to keep in mind is that if you select the `custom` option, you must also provide a `versionPublish` as follows.
 
 ```yaml
 - task: UniversalPackages@0
@@ -106,12 +108,11 @@ One thing to keep in mind is that if you select the `custom` option, you must al
 | versionPublish                                                    | The custom package version                                                        |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
-> [!NOTE]
-> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
-
 # [Classic](#tab/classic)
 
-In the **Universal Packages** task that you configured previously, choose the appropriate **Version** increment option.
+From the Universal Packages task form, select a version increment strategy, or select Custom to input your package version manually .
+
+    :::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
 
 ---
 
