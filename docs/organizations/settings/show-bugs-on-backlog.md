@@ -158,6 +158,7 @@ You can review bugs defined for your project by creating a query and specifying 
 
 ## Related articles
 
+- [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md)
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
 - [Manage teams and configure team tools](manage-teams.md)
 
