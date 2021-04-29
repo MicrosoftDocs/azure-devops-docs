@@ -46,7 +46,7 @@ To publish a Universal Package to your Artifacts feed, add the following task to
 | vstsFeedPackagePublish                                            | The package name. Must be lower case. Use only letters, numbers, and dashes.                                                                |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
-To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from the feed's settings. See [Adding users/groups permissions to a feed](../../../artifacts/feeds/feed-permissions.md) for details.
+To publish packages to an Azure Artifacts feed from your pipeline, you must add the **Project Collection Build Service** identity as a **Contributor** from the feed's settings. See [Adding users/groups permissions to a feed](../../artifacts/feeds/feed-permissions.md) for details.
 
 To publish to an external feed, you must first create a service connection to point to that feed. see [Manage service connection](../library/service-endpoints.md) for details. 
 
@@ -110,9 +110,9 @@ One thing to keep in mind is that if you select the `custom` option, you must al
 
 # [Classic](#tab/classic)
 
-From the Universal Packages task form, select a version increment strategy, or select Custom to input your package version manually .
+From the Universal Packages task form, select a version increment strategy, or select Custom to input your package version manually.
 
-    :::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
+:::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
 
 ---
 
