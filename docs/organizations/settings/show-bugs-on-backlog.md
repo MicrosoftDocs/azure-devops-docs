@@ -14,7 +14,7 @@ ms.date: 09/18/2020
 
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
-As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks. 
+As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -30,18 +30,17 @@ When you track bugs like tasks, the bugs appear on the sprint backlogs and task 
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
+## Options your team has to track bugs
+
+The following table summarizes the three options teams have to track bugs. Prior to making your choice, we recommend you review the information provided in [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md). That article provides an overview of the Bug work item type and supported tools for managing bugs.   
+
+[!INCLUDE [temp](../../boards/includes/pro-con-matrix-show-bugs.md)] 
+
+
 ## Set your team's preferences for bug tracking
 
-You can change the setting from a backlog or board view. Here we show how to change it from the board view.
-
-In the **Working with bugs** dialog, you can select from the following three options.
-
-> - Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs are associated with the Requirements category.  
->
-> - Choose the second option when your team wants to manage bugs similar to tasks. Remaining work can be tracked for bugs and tracked against the sprint capacity and burndown. Bugs are associated with the Task category. 
->
-> - Choose the last option if your team manages bugs separate from requirements or tasks. Bugs are associated with the Bugs category and won't appear on either backlogs or boards.  
-
+You can change the setting from a backlog or board view, or from **Project Settings>Team Settings**. Here we show how to change it from the board view.
+ 
 ::: moniker range=">= azure-devops-2019"  
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.

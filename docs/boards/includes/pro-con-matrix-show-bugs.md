@@ -24,9 +24,13 @@ ms.date: 04/28/2021
       - Prioritize (stack rank) bugs along with requirements 
       - Estimate Bug effort for forecasting 
       - Update bug status on Kanban board 
-      - Include Bugs in Velocity chart 
-      - Can use forecast tool against overall effort 
-      - View Bugs on Delivery Plans 
+      - Include Bugs in [Velocity charts](/azure/devops/report/dashboards/team-velocity) and [Cumulative Flow Diagrams](/azure/devops/report/dashboards/cumulative-flow) 
+      - Can use the [**Forecast** tool](/azure/devops/boards/sprints/forecast) to support sprint planning
+      - Can drag and drop bugs onto Planning pane to assign bugs to a sprint 
+      - Can view Bugs on Delivery Plans 
+      > [!NOTE]   
+      > - Bugs are assigned to the Requirements Category 
+
    :::column-end:::
 :::row-end:::
 ---
@@ -38,9 +42,11 @@ ms.date: 04/28/2021
       - Estimate work for bugs similar to tasks  
       - Update bug status on sprint Taskboards  
       - Link bugs to requirements as child items  
+      - Can drag and drop bugs onto Planning pane to assign bugs to a sprint 
       > [!NOTE]   
+      > - Bugs are assigned to the Task Category
+      > - User Stories (Agile), Product Backlog Items (Scrum), or Requirements (CMMI) are the natural parent work item type for Bugs 
       > - Bugs won't be visible on Delivery Plans 
-      > - Can drag and drop bugs onto Planning pane to assign bugs to a sprint 
    :::column-end:::
 :::row-end:::
 ---
@@ -51,7 +57,8 @@ ms.date: 04/28/2021
    :::column span="3":::
       - Manage bugs using queries 
       > [!NOTE]   
-      > - Bugs won't be visible on Backlogs, Boards, Sprint Backlogs, Taskboards, or Delivery Plans
+      > -  Bugs are associated with the Bugs Category and won't appear on either backlogs or boards  
+      > - Bugs won't be visible on Backlogs, Boards, Sprint Backlogs, Taskboards, or Delivery Plans 
       > - Can't drag and drop bugs onto Planning pane to assign bugs to a sprint 
    :::column-end:::
 :::row-end:::
