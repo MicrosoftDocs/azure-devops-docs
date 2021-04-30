@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
-ms.date: 04.30/2021
+ms.topic: how-to
+ms.date: 04/30/2021
 ---
 
 # Show bugs on backlogs and boards  
@@ -15,18 +15,14 @@ ms.date: 04.30/2021
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to tracking requirements. Or, they can schedule bugs to be fixed within a sprint along with other tasks.  
+When you *track bugs as requirements*, they appear on the product Backlogs and Kanban Boards. When you *track bugs as tasks*, the bugs appear on the Sprint Backlogs and Taskboards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
 
 ::: moniker range=">= azure-devops-2019"
 
 You can define this team setting for the [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/plan-track-work.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
-
 ::: moniker-end
 
-When you track bugs as requirements, they appear on the product backlog and Kanban board. 
-
 [!INCLUDE [requirements-term](../../boards/includes/note-requirements-terms.md)]
-
-When you track bugs like tasks, the bugs appear on the sprint backlogs and task boards. For more information about other work item types, see [Add other work item types to backlogs or boards](#add-other-wits).
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
@@ -34,10 +30,10 @@ When you track bugs like tasks, the bugs appear on the sprint backlogs and task 
 
 The following table summarizes the three options teams have to track bugs. Before making your choice, we recommend you review the information provided in [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md). That article provides an overview of the Bug work item type and supported tools for managing bugs.   
 
-[!INCLUDE [temp](../../boards/includes/pro-con-matrix-show-bugs.md)] 
+[!INCLUDE [temp](../../boards/includes/show-bugs-matrix-options.md)] 
 
 
-## Set your team's preferences for bug tracking
+## Set your team's preference for bug tracking
 
 You can change the setting from a backlog or board view, or from **Project Settings>Team Settings**. Here we show how to change it from the board view.
  
@@ -138,51 +134,19 @@ Bugs that are managed with requirements can be added through the [product backlo
 > [!TIP]
 > Effort should automatically be part of a bug, but if you don't see it, customize the bug work item type for it to appear.
 
-You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI), or **Work in Progress** (Scrum). For other bug-related tasks, see the following articles:  
+You can review bugs defined for your project by creating a query and specifying the **Work Item Type=Bug**. Or, open a predefined query, **Active Bugs** (Agile and CMMI), or **Work in Progress** (Scrum).  
 
-::: moniker range=">= azure-devops-2019"
-- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-- [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md)
-- [Triage work items](../../boards/queries/triage-work-items.md)
-- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
-- [Triage work items](../../boards/queries/triage-work-items.md)
-- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
+:
 
 ::: moniker-end
 
 ## Related articles
 
+
 - [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md)
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
 - [Manage teams and configure team tools](manage-teams.md)
+- [View, run, or email a work item query](../../boards/queries/view-run-query.md)
+- [Triage work items](../../boards/queries/triage-work-items.md)
+- [Query by assignment or workflow changes](../../boards/queries/query-by-workflow-changes.md)
 
-
-<!---
-
-Team choices: 
-- Product backlog of features or users stories under development 
-- Bug backlog (don't let them go to die, EDRM epics - EPIC owner stack ranks work (not recommended) 
- 
-CSS team - request from a customer 
-relationship through test run adn user story - is related; 
-
-- parent relationship 
-- 
-- Process model impact 
-- Managing technical debt vs addressing bugs that arise during a sprint 
-- Can create a custom bug to manage along with requirements AND use a bug work item type to manage along with tasks 
-
-Testing - bugs associated with user stories - parent-child relationship OR Related 
-Rollup 
-
-Some factors to consider: 
-- Team size 
-- Tools you'll want to use 
- 
-
--->

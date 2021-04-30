@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 04/28/2021
+ms.date: 04/30/2021
 ---
 
 ---
@@ -26,8 +26,8 @@ ms.date: 04/28/2021
       - Update bug status on Kanban board 
       - Include Bugs in [Velocity charts](/azure/devops/report/dashboards/team-velocity) and [Cumulative Flow Diagrams](/azure/devops/report/dashboards/cumulative-flow) 
       - Can use the [**Forecast** tool](/azure/devops/boards/sprints/forecast) to support sprint planning
-      - Can drag and drop bugs onto Planning pane to assign bugs to a sprint 
-      - Can view Bugs on Delivery Plans 
+      - Can drag and drop bugs onto [**Planning**](/azure/devops/boards/sprints/assign-work-sprint#assign-work-from-your-backlog-to-a-sprint) pane to assign bugs to a sprint 
+      - Can view Bugs on [Delivery Plans](/azure/devops/boards/plans/review-team-plans) 
       > [!NOTE]   
       > - Bugs are assigned to the Requirements Category 
 
