@@ -390,7 +390,7 @@ You can update the bug status by dragging and dropping bugs to a new column on a
 
 You can add intermediate columns to track your bug status on the board. You can also define queries that filter based on the status of a Board Column. To learn more, see the following articles: 
 
-::: moniker range=">= azoure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
@@ -398,7 +398,7 @@ You can add intermediate columns to track your bug status on the board. You can 
 
 ::: moniker-end
 
-::: moniker range="< azoure-devops-2020"
+::: moniker range="< azure-devops-2020"
 
 - [Add columns to your Kanban board](../boards/add-columns.md)
 - [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
