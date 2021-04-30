@@ -8,7 +8,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-ms.date: 04/28/2021
+ms.date: 04/30/2021
 ---
 
 # Define, capture, triage, and manage bugs
@@ -174,7 +174,7 @@ When determining how your team will track bug, consider the following factors.
 
 The following table summarizes the three options teams have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-[!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
+[!INCLUDE [temp](../includes/show-bugs-matrix-options.md)] 
 
 <a id="customize"> </a>
 
@@ -484,7 +484,18 @@ To learn more about queries, charts, and dashboards; see [About managed queries]
 
 ::: moniker range=">= azure-devops-2019"
 
-### Use the Analytics service to create bug reports
+### Use Analytics views and the Analytics service to create bug reports
+
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services.  
+
+Analytics views provide pre-built filters to view work items. Four Analytic views are supported for bug reporting. You can use these as defined or further edit them to create a custom, filtered view. 
+
+- Bugs - All history by month
+- Bugs - Last 26 weeks
+- Bugs - Last 30 days
+- Bugs - Today 
+
+To learn more about using Analytic views, see [What are Analytics views](../../report/powerbi/what-are-analytics-views.md) and [Create an active bugs report in Power BI based on a custom Analytics view](../../report/powerbi/active-bugs-sample-report.md).
 
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
@@ -505,8 +516,15 @@ These report require you have SQL Server Analysis Services and SQL Server Report
 ::: moniker-end  
 
 
+### Marketplace extensions 
+
+There are a number of bug-related Marketplace extensions. See [Marketplace for Azure DevOps](https://marketplace.visualstudio.com/search?term=bug&target=AzureDevOps&category=All%20categories&sortBy=Installs). 
+
+For additional information on extensions, see [Azure Boards extensions developed by Microsoft](../extensions/index.md).
+
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Triage work items](../queries/triage-work-items.md) 
 
@@ -516,9 +534,30 @@ These report require you have SQL Server Analysis Services and SQL Server Report
 - [Move, change type, or delete work items](remove-delete-work-items.md) 
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
-### Scrum and Taskboard
-- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
+### Product backlog and Kanban board
 
+- [Backlogs, portfolios, and Agile project management](backlogs-overview.md) 
+- [Create your backlog](create-your-backlog.md)  
+- [Define features and epics](define-features-epics.md)  
+- [Organize your backlog, map child work items to parents](organize-backlog.md)  
+- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)  
+- [Forecast your product backlog](../sprints/forecast.md)  
+- [Refine your backlog](best-practices-product-backlog.md)  
+
+### Kanban board
+
+- [About Boards and Kanban](../boards/kanban-overview.md) 
+- [Kanban board quickstart](../boards/kanban-quickstart.md) 
+- [Reorder cards](../boards/reorder-cards.md) 
+- [Add task checklists](../boards/add-task-checklists.md) 
+- [Kanban best practices](../boards/best-practices-kanban.md) 
+
+### Sprint backlog and Taskboard 
+
+- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
+- [Assign backlog items to a sprint](../sprints/assign-work-sprint.md)  
+- [Add tasks](../sprints/add-tasks.md)  
+- [Update the Taskboard](../sprints/task-board.md)  
 
 ### Integration within Azure DevOps
 
@@ -532,46 +571,3 @@ These report require you have SQL Server Analysis Services and SQL Server Report
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
 
  
-### Marketplace extensions 
-
-- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
-- [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro&ssr=false#overview)
-
-
-
-<!---
-
-
-Using a specific work item type such as the Bug work item type to manage your code issues has many benefits. Consider managing your bugs and technical debt as part of your team's overall set of continuous improvement activities.  
-
-- *Benefits of using Bugs to track code defect*s  
-- *Manage technical debt* 
-
-
-Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the **Discussion** section of the Bug work item.
- 
- 
-
-::: moniker range=">= tfs-2017"  
-
-<a id="verify-bug">  </a>
-
-### Verify a bug, re-run tests defined for web apps 
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2018"  
-Choose the **Verify** option to re-run tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
-::: moniker-end  
-
-::: moniker range="tfs-2017"
-Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
-::: moniker-end  
-
-::: moniker range=">= tfs-2017"  
-![Bug work item form, Actions menu, Verify option](../media/verify-bug-menu-option.png)  
-
-To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
-::: moniker-end  
-
--->
