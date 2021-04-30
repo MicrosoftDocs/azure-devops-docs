@@ -300,6 +300,10 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2020"
+## Set work item state in pull request
+::: moniker-end
+
 [!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
 
 

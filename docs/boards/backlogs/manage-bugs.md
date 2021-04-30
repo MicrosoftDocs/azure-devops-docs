@@ -56,9 +56,9 @@ The Bug work item type tracks similar information to the one shown in the follow
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 ::: moniker-end
 
-## Bug-specific fields  
+## Fields specific to Bugs  
 
-When defining a bug, use the fields listed in the following table to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug.  
+The Bug work item type uses some bug-specific fields. Use the fields described in the following table to capture both the initial issue and ongoing discoveries made when triaging, investigating, fixing, and closing the bug. For information about fields specific to the CMMI process Bug, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
 ---
@@ -166,7 +166,7 @@ When defining a bug, use the fields listed in the following table to capture bot
 
 <sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
 
-For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
+
 
 
 ## Choose how your team tracks bugs
@@ -183,6 +183,7 @@ The following table summarizes the three options team's have to track bugs. To l
 [!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
 
 <a id="customize"> </a>
+
 ## Customize your bug work item type 
 
 You can customize your bug work item type or create additional work item types to track software issues or customer feedback. With all work item types, you can customize the following elements: 
@@ -242,7 +243,7 @@ If your team chose to *manage bugs with tasks*, you can define bugs from your Ka
 	> ![From Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
 - **Add a linked child bug from the Sprint Backlog**  
-	You add a bug in the same way you add a task to a Sprint backlog. To learn more, see [Add tasks to backlog items](../boards/sprints/add-tasks.md). 
+	You add a bug in the same way you add a task to a Sprint backlog. To learn more, see [Add tasks to backlog items](../sprints/add-tasks.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![From Sprint backlog, Add child bug to backlog item.](media/manage-bugs/add-bug-sprint-backlog.png) 
 
@@ -339,43 +340,86 @@ From the query results page, you can quickly move up and down within the list of
 > ![Screenshot of Query Results, Active Bugs, and Triage mode Right pane.](media/manage-bugs/bug-triage-mode.png)  
 
 
-### Prioritize and assign bugs to a sprint from your backlog
+### Prioritize and assign bugs to a sprint 
 
 If your team *tracks bugs as requirements*, you can view the list of active bugs from your backlog. You can also use the [filter function](filter-backlogs-boards-plans.md) to focus solely on bugs. You can use your product backlog to perform the following tasks:  
 
 - [Prioritize bugs on your backlog](create-your-backlog.md#reorder-your-backlog), stack rank against other items (stack ranking is disabled when filtering is enabled)  
 - [Assign bugs to a sprint](../sprints/assign-work-sprint.md) from your backlog using the **Planning** pane  
 - [Parent bugs to Features](organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic) or other portfolio backlog items using the **Mapping** pane 
- 
 
-### Track bugs as tasks
-
-If your team *tracks bugs as tasks*, you'll use managed queries to list and triage bugs. Then, within each sprint, you'll see those bugs that are assign to the sprint from the Sprint backlog or Taskboard.   
+If your team *tracks bugs as tasks*, you'll use managed queries to list and triage bugs. Then, within each sprint, you'll see those bugs that are assign to the sprint from the Sprint backlog or Taskboard.  
 
 <a id="task-board-items"/> 
 
 ### Taskboard items versus query list items
 
-You may notice and wonder why the items shown on the taskboard may differ from those listed in a query created from its corresponding sprint backlog. 
+You may notice and wonder why the items shown on a sprint Taskboard may differ from those listed in a query created from its corresponding sprint backlog. 
 
-It's possible to assign tasks to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the taskboard itself. The system runs the query and then applies a few background processes before displaying the taskboard items.
+It's possible to assign tasks or bugs to an iteration but not have them linked to a parent backlog item. These items will show up in the created query, but might not show up on the Taskboard itself. The system runs the query and then applies a few background processes before displaying Taskboard items.
 
-These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or taskboard:  
-- The task hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.   
-- The task is a parent of another task, or the user story is a parent of another user story. If you've created a hierarchy of tasks or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
-- The task's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's parent backlog item differs from the task's area path.  
+These reasons can cause work items that belong to the Task Category to not appear on a sprint backlog or Taskboard:  
+- The task or bug hasn't been linked to a parent backlog item. Only those bugs and tasks that you have linked to a parent product backlog item (Scrum), user story (Agile), or requirement (CMMI) whose iteration path is set to the sprint will appear on the sprint backlog page.  
+- The task or bug is a parent of another task or bug, or the user story is a parent of another user story. If you've created a hierarchy of tasks, bugs, or user stories, [only the child-level tasks or the child-level stories at the bottom of the hierarchy appear](resolve-backlog-reorder-issues.md#leaf-nodes).  
+- The task's or bug's linked parent corresponds to a backlog item defined for another team. Or, the area path of the task's or bug's parent backlog item differs from the task's or bug's area path.  
 
 
 ## Create inline tests linked to bugs  
 
 When your team *tracks bugs as requirements*, you can use the Kanban board to add tests to verify bug fixes. 
 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Kanban board, 3 columns showing inline tests added and linked to bugs.]( media/add-tests-inline-kanban-board.png) 
+
+
 ## Update bug status 
 
-(Fix, resolve and close bugs (update status)
-Change bug assignment 
+You can update the bug status by dragging and dropping bugs to a new column on a board. 
+
+- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md1#update-status).  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
+
+- If your team *tracks bugs as tasks*, you use the Taskboard. To learn more, see [Update and monitor your Taskboard](..sprints/task-board.md).  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Kanban board, drag and drop to update status.](../sprints/media/alm_tb_move_to_done.png) 
+
+### Customize your board to track intermediate states 
+
+You can add intermediate columns to track your bug status on the board. You can also define queries that filter based on the status of a Board Column. To learn more, see the following articles: 
+
+::: moniker range=">= azoure-devops-2020"
+
+- [Add columns to your Kanban board](../boards/add-columns.md)
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+
+::: moniker-end
+
+::: moniker range="< azoure-devops-2020"
+
+- [Add columns to your Kanban board](../boards/add-columns.md)
+- [Kanban board change queries](../queries/query-by-workflow-changes.md#kanban-board-change-queries)
+
+::: moniker-end
+
+### Automate bug reassignment based on workflow state 
+
+Add custom rules to your Bug work item type to automate select actions. For example, You can add a rule to change reassign a bug to the person who opened the bug once it is resolved. Typically, that person verifies that the bug is fixed and closes the bug. To learn more, see [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md).
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of rule defined to reassign bug based on resolved state.](media/manage-bugs/rule-reassigned-resolved-bug.png) 
 
 
+<a id="set-state-pr">  </a>
+
+::: moniker range=">= azure-devops-2020"
+### Set work item state in pull request
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)] 
 
 ## Integration across Azure DevOps 
 
@@ -386,9 +430,6 @@ One of the methods used by Azure DevOps to support integration is to link object
  
 You can initiate a link from the work item or from the build and release objects. 
 
-<a id="set-state-pr">  </a>
-
-[!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
 
 ### Link work items to pipeline runs 
 

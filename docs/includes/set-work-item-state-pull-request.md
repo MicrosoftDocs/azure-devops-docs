@@ -11,8 +11,6 @@ ms.date: 04/16/2021
 
 ::: moniker range=">= azure-devops-2020"
 
-## Set work item state in pull request
-
 When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: ``` {state value}: #ID ```.
 When you merge the pull request, the system reads the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, and #323 and #324 to Closed.
 

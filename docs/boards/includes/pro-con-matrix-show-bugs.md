@@ -23,6 +23,7 @@ ms.date: 04/28/2021
    :::column span="3":::
       - Prioritize (stack rank) bugs along with requirements 
       - Estimate Bug effort for forecasting 
+      - Update bug status on Kanban board 
       - Include Bugs in Velocity chart 
       - Can use forecast tool against overall effort 
       - View Bugs on Delivery Plans 
