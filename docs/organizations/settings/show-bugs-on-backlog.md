@@ -7,7 +7,7 @@ ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 09/18/2020
+ms.date: 04.30/2021
 ---
 
 # Show bugs on backlogs and boards  
@@ -32,7 +32,7 @@ When you track bugs like tasks, the bugs appear on the sprint backlogs and task 
 
 ## Options your team has to track bugs
 
-The following table summarizes the three options teams have to track bugs. Prior to making your choice, we recommend you review the information provided in [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md). That article provides an overview of the Bug work item type and supported tools for managing bugs.   
+The following table summarizes the three options teams have to track bugs. Before making your choice, we recommend you review the information provided in [Define, capture, triage, and manage bugs](../../boards/backlogs/manage-bugs.md). That article provides an overview of the Bug work item type and supported tools for managing bugs.   
 
 [!INCLUDE [temp](../../boards/includes/pro-con-matrix-show-bugs.md)] 
 
