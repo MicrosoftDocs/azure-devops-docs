@@ -19,17 +19,16 @@ How do you track and manage defects in your code? How do you make sure software 
 
 At a minimum, you need a way to capture your software issues, prioritize them, assign them, and track progress. Moreover, you'll want to manage your bugs in ways that align with your Agile practices. 
 
-To support these scenarios, Azure Boards provides a Bug work item type. The Bug work item type shares all the features of other work item types with some additional features. For an overview of supported features, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
+To support these scenarios, Azure Boards provides a Bug work item type. The Bug work item type shares all the features of other work item types with some additional ones. For an overview of supported features, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).
 
 The main additional features include:
 
 - Option for each team to choose how they want to track bugs 
 - Test tools to capture bugs 
-- Built-in integration across Azure DevOps to support tracking and resolving bugs 
+- Built-in integration across Azure DevOps to track bugs linked to builds and releases 
 
 
 [!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
-
 
 
 ## Bug work item type 
@@ -140,24 +139,21 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      [Deployment](../work-items/work-item-deployments-control.md)
+      [Deployment](#deployment-control)
    :::column-end:::
    :::column span="3":::
-      The **Deployment** control supports links to and display of releases which contains the work items. For example, the following image shows several releases which contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md). 
-      > [!div class="mx-imgBorder"]  
-      > ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)  
+      The **Deployment** control supports links to and display of releases which contains the work items. To use the control you must enable settings for the release. To learn more, see [Link work items to releases](#deployment-control) later in this article.  
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="1":::
-      [Development](connect-work-items-to-git-dev-ops.md) 
+      [Development](#development-control) 
    :::column-end:::
    :::column span="3":::
-      The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests, or TFVC changesets and versioned items. You can choose the link for each linked item to open the corresponding item. To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).
-      > [!div class="mx-imgBorder"]  
-      > ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)  
+      The **Development** control supports linking to and displaying links made to builds, Git commits and pull requests, or TFVC changesets and versioned items. You can define links from the work item or from the commits, pull requests, or other development objects. To learn more, see [Link work items to development ](#development-control) later in this article.   
    :::column-end:::
 :::row-end:::
 ---
@@ -165,8 +161,6 @@ The Bug work item type uses some bug-specific fields. Use the fields described i
 #### Notes: 
 
 <sup>1</sup> To change the menu selection or picklist, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
-
-
 
 
 ## Choose how your team tracks bugs
@@ -178,7 +172,7 @@ There are a number of factors to consider when determining how your team will tr
 - How your team prioritizes work
 - Tools your team wants to use such as planning pane, velocity chart, rollup, delivery plans  
 
-The following table summarizes the three options team's have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
+The following table summarizes the three options teams have to track bugs. To learn more and to set the option for your team, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 [!INCLUDE [temp](../includes/pro-con-matrix-show-bugs.md)] 
 
@@ -381,7 +375,7 @@ You can update the bug status by dragging and dropping bugs to a new column on a
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
 
-- If your team *tracks bugs as tasks*, you use the Taskboard. To learn more, see [Update and monitor your Taskboard](..sprints/task-board.md).  
+- If your team *tracks bugs as tasks*, you use the Taskboard. To learn more, see [Update and monitor your Taskboard](../sprints/task-board.md).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Taskboard, drag and drop to update status.](../sprints/media/alm_tb_move_to_done.png) 
@@ -431,11 +425,25 @@ One of the methods used by Azure DevOps to support integration is to link object
 You can initiate a link from the work item or from the build and release objects. 
 
 
+<a id="development-control" />
+
+### Link work items to development 
+
+The **Development** control provided within the work item form supports linking to and displaying links made to builds, Git commits and pull requests. Or, when a TFVC repository is used, it supports links to changesets and versioned items. You can choose the link for each linked item to open the corresponding item. To learn more, see [Drive Git development from a work item](connect-work-items-to-git-dev-ops.md).  
+> [!div class="mx-imgBorder"]  
+> ![Development control on work item form with sample links to build, pull requests, and commits.](media/manage-bugs/development-links.png)  
+
+<a id="deployment-control" />
+
+### Link work items to releases   
+
+The **Deployment** control supports links to and display of releases which contains the work items. For example, the following image shows several releases which contain links to the current work item. You can expand each release to see details about each stage. You can choose the link for each release and stage to open the corresponding release or stage. To learn more, see [Link work items to deployments](../work-items/work-item-deployments-control.md).  
+> [!div class="mx-imgBorder"]  
+> ![Deployment control on work item form with sample releases.](media/manage-bugs/deployment-section-with-releases.png)  
+
 ### Link work items to pipeline runs 
 
-Pipelines are often defined to automatically run when a new commit occurs to a Git repository. Work items associated with the commit ipelines often run due to a commit which may have work items associated it, and you can link the work items to the run. 
-
-[Customize your pipeline](../../pipelines/customize-pipeline.md) 
+Pipelines are often defined to automatically run when a new commit occurs to a Git repository. Work items associated with the commit pipelines will show up as part of the pipeline run if you customize your pipeline settings. To learn more, see [Customize your pipeline](../../pipelines/customize-pipeline.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Pipeline Settings, Automatically link work items in this run from selected branch.](media/manage-bugs/pipeline-settings.png) 
@@ -443,7 +451,7 @@ Pipelines are often defined to automatically run when a new commit occurs to a G
 ### Create or edit a work item upon a build failure
 
 If you use classic pipelines (not YAML), you can create work items on a build failure. For details, see [Build options, Create a work item on failure](../../pipelines/build/options.md). 
-<!---There is a Developer community post about it and a stack overflow workaround though--> 
+<!---There is a Developer community post about it and a stack overflow workaround though
 
 ### Create or edit a work item upon a test failure
 
@@ -454,25 +462,14 @@ Review test results - Azure Pipelines | Microsoft Docs
 You can create work items on a build failure in classic Pipelines, but not in YAML :( There is a Developer community post about it and a stack overflow workaround though…
 Build options - Azure Pipelines | Microsoft Docs
 
+--> 
  
 
-
-### Test
-
-
+ 
 
 ## Monitor bug status, assignments, and trends
 
-Queries and query charts
-Dashboards and widgets
-Built-in charts 
-Analytics views 
-Analytics service 
-
-
-You can track the bug status, assignments, and trends using queries which you can then chart and add to a dashboard. 
-
-For example, here are two examples showing active bug trends by State and Active Bugs by Priority over time.
+You can track the bug status, assignments, and trends using queries which you can then chart and add to a dashboard. For example, here are two examples showing active bug trends by State and Active Bugs by Priority over time.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of two active bug query charts, Bug Trends by State and by Priority.](media/manage-bugs/query-charts-active-bugs.png) 
@@ -492,8 +489,7 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops-2019"  
-
+::: moniker range="<= azure-devops-2020"  
 
 ### Pre-defined SQL Server bug reports
 
@@ -507,13 +503,6 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 ::: moniker-end  
 
- 
-
-## Marketplace extensions 
-
-
-- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
-- [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro&ssr=false#overview)
 
 
 ## Try this next
@@ -522,10 +511,13 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 ## Related articles 
 
-- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
-- [Move, change type, or delete work items](remove-delete-work-items.md)
-- [Pre-populate fields using a template](work-item-template.md)
+- [Use templates to add and update work items](work-item-template.md)  
+- [Move, change type, or delete work items](remove-delete-work-items.md) 
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
+
+### Scrum and Taskboard
+- [Scrum and working with sprints best practices](../sprints/best-practices-scrum.md)  
+
 
 ### Integration within Azure DevOps
 
@@ -537,6 +529,14 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 - [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg  
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
+
+ 
+### Marketplace extensions 
+
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
+- [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro&ssr=false#overview)
+
+
 
 <!---
 
