@@ -369,14 +369,14 @@ These reasons can cause work items that belong to the Task Category to not appea
 When your team *tracks bugs as requirements*, you can use the Kanban board to add tests to verify bug fixes. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, 3 columns showing inline tests added and linked to bugs.]( media/add-tests-inline-kanban-board.png) 
+> ![Screenshot of Kanban board, 3 columns showing inline tests added and linked to bugs.](media/manage-bugs/add-tests-inline-kanban-board.png) 
 
 
 ## Update bug status 
 
 You can update the bug status by dragging and dropping bugs to a new column on a board. 
 
-- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md1#update-status).  
+- If your team *tracks bugs as requirements*, you use the Kanban board as shown in the following image.  To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md#update-status).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Kanban board, drag and drop to update status.](media/manage-bugs/kanban-board-update-status.png) 
@@ -384,7 +384,7 @@ You can update the bug status by dragging and dropping bugs to a new column on a
 - If your team *tracks bugs as tasks*, you use the Taskboard. To learn more, see [Update and monitor your Taskboard](..sprints/task-board.md).  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Kanban board, drag and drop to update status.](../sprints/media/alm_tb_move_to_done.png) 
+	> ![Screenshot of Taskboard, drag and drop to update status.](../sprints/media/alm_tb_move_to_done.png) 
 
 ### Customize your board to track intermediate states 
 
