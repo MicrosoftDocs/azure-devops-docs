@@ -87,7 +87,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Process template names have been changed to Agile, CMMI, and Scrum and have been repurposed as locked, system templates. You can export these templates for customization, but you can no longer overwrite these templates with your changes. 
       - Second-level portfolio backlog, Epic, plus configurable option for teams to activate portfolio backlogs.  
       - Team configurable option to choose which backlogs and portfolio backlogs are active. 
-      - Tracking **Time Criticality** of portfolio backlog items. The **Time **Criticality field captures how the business value decreases over time for a Feature or Epic. Higher values indicate that the item is inherently more time critical than those items with lower values.  
+      - Tracking **Time Criticality** of portfolio backlog items. The **Time** Criticality field captures how the business value decreases over time for a Feature or Epic. Higher values indicate that the item is inherently more time critical than those items with lower values.  
       - Tracking the **Value Area** for portfolio backlog and backlog items. The **Value Area** field differentiates items based on work performed to support *Architectural* requirements or *Business* needs.  
       - Support [any-to-any workflow transitions](choose-process.md#workflow-states) on Agile boards.  
       - Team configurable option to choose to track bugs on backlogs and boards either as requirements or as tasks. This necessitated adding fields to the bug WIT definition as well as adding a process configuration behavior.   
