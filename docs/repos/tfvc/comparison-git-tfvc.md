@@ -82,7 +82,7 @@ Need more help to make a choice? These charts might help.
 <td>
 <p>Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.</p>
 
-<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
+<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
 </p>
 
 <p>You can get visualizations of your branch structures and where your changesets have been merged.</p>
