@@ -8,7 +8,7 @@ ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart 
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2021
 ---
 
@@ -299,6 +299,10 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 ::: moniker-end
 
+
+::: moniker range=">= azure-devops-2020"
+## Set work item state in pull request
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/set-work-item-state-pull-request.md)]
 
