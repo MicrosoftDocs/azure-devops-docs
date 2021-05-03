@@ -117,6 +117,9 @@ devopsProject="Contoso DevOps Project $uniqueId"
 serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
+# Sign in to Azure CLI and follow directions. (May be unnecessary in some environments.)
+az login
+
 # Create a resource group and a storage account.
 az group create --name "$resourceGroupName" --location "$resourceGroupLocation"
 az storage account create --name "$storageAccountName" \
@@ -128,11 +131,14 @@ export AZURE_DEVOPS_EXT_GITHUB_PAT=$devopsToken
 # Create the Azure DevOps project. Set the default organization and project.
 projectId=$(az devops project create \
     --name "$devopsProject" --organization "$devopsOrg" --visibility public --query id)
+projectId=${projectId:1:-1}  # Just set to GUID; drop enclosing quotes.
 az devops configure --defaults organization="$devopsOrg" project="$devopsProject"
+pipelineRunUrlPrefix="$devopsOrg/$projectId/_build/results?buildId="
 
 # Create GitHub service connection (requires AZURE_DEVOPS_EXT_GITHUB_PAT to be set).
 githubServiceEndpointId=$(az devops service-endpoint github create \
     --name "$serviceConnectionName" --github-url "https://www.github.com/$repoName" --query id)
+githubServiceEndpointId=${githubServiceEndpointId:1:-1}  # Just set to GUID; drop enclosing quotes.
 
 # Create the pipeline.
 pipelineId=$(az pipelines create \
@@ -141,7 +147,7 @@ pipelineId=$(az pipelines create \
     --repository $repoName \
     --repository-type $repoType \
     --branch $branch \
-    --service-connection ${githubServiceEndpointId:1:-1} \
+    --service-connection $githubServiceEndpointId \
     --yml-path azure-pipelines.yml \
     --query id)
 
@@ -151,22 +157,25 @@ variableGroupId=$(az pipelines variable-group create \
     --name "$variableGroupName" --authorize true --variables a=35 b=86 --query id)
 az pipelines variable-group variable create \
     --group-id $variableGroupId --name contososecret --secret true --value 14
-az pipelines run --id $pipelineId --open
+pipelineRunId1=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 1st run."
+echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId1}"
 read -p "Press any key to change the value of the variable group's secret variable, then run again:"
 
 # Change the variable group's secret variable value (a < contososecret < b).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 53
-az pipelines run --id $pipelineId --open
+pipelineRunId2=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 2nd run."
+echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId2}"
 read -p "Press any key to again change the value of the variable group's secret variable, then run once more:"
 
 # Change the variable group's secret variable value again (a < b < contososecret).
 az pipelines variable-group variable update \
     --group-id $variableGroupId --name contososecret --value 97
-az pipelines run --id $pipelineId --open
+pipelineRunId3=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 3rd run."
+echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId3}"
 read -p "Press any key to continue:"
 ```
 
@@ -177,8 +186,8 @@ After the script sample has been run, the following commands can be used to remo
 ```azurecli
 az pipelines variable-group delete --group-id $variableGroupId --yes
 az pipelines delete --id $pipelineId --yes
-az devops service-endpoint delete --id ${githubServiceEndpointId:1:-1} --yes
-az devops project delete --id ${projectId:1:-1} --yes
+az devops service-endpoint delete --id $githubServiceEndpointId --yes
+az devops project delete --id $projectId --yes
 export AZURE_DEVOPS_EXT_GITHUB_PAT=""
 az storage account delete --name $storageAccountName --resource-group $resourceGroupName --yes
 az group delete --name $resourceGroupName --yes
@@ -193,6 +202,7 @@ az devops configure --defaults organization="" project=""
 - [az devops service-endpoint github create](/cli/azure/devops/service-endpoint/github#az_devops_service_endpoint_github_create)
 - [az group create](/cli/azure/group#az_group_create)
 - [az group delete](/cli/azure/group#az_group_delete)
+- [az login](/cli/azure/reference-index#az_login)
 - [az pipelines create](/cli/azure/pipelines#az_pipelines_create)
 - [az pipelines delete](/cli/azure/pipelines#az_pipelines_delete)
 - [az pipelines run](/cli/azure/pipelines#az_pipelines_run)
