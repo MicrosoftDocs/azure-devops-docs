@@ -98,7 +98,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 ### Linux or Mac
 
-`vsts-npm-auth` is not supported for Linuc/Mac. We recommend generating a token and saving it in your **_$HOME/.npmrc_** as follows 
+`vsts-npm-auth` is not supported for Linux/Mac. We recommend generating a token and saving it in your **_$HOME/.npmrc_** as follows.
 
 [!INCLUDE [npmrc.md](../includes/npm/npmrc.md)]
 
