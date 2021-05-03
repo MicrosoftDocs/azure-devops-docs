@@ -6,6 +6,7 @@
   href: configure-hierarchical-teams.md
 - name: Review team Delivery Plans
   href: review-team-plans.md  
+  displayname: dependency, dependencies, filter, roadmap, calendar, multi-team views, cards
 - name: Filter your Delivery Plans
   href: ../backlogs/filter-backlogs-boards-plans.md 
   displayname: rollup, group, parent, tags 
