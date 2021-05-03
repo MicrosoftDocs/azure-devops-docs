@@ -500,32 +500,27 @@ When you output a variable from a deployment job, referencing it from the next j
 stages:
 - stage: StageA
   jobs:
-  - deployment: A1
-    pool:
-      vmImage: 'ubuntu-16.04'
-    environment: env1
-    strategy:                  
-      runOnce:
-        deploy:
-          steps:
-          - bash: echo "##vso[task.setvariable variable=RunStageB;isOutput=true]true"
-            name: setvarStep
-          - bash: echo $(System.JobName)
+  - job: A1
+    steps:
+      - pwsh: echo "##vso[task.setvariable variable=RunStageB;isOutput=true]true"
+        name: setvarStep
+      - bash: echo $(System.JobName)
 
 - stage: StageB
   dependsOn: 
     - StageA
  
   # when referring to another stage, stage name is included in variable path
-  condition: eq(dependencies.StageA.outputs['StageA.A1.setvarStep.RunStageB'], 'true')
+  condition: eq(dependencies.StageA.outputs['A1.setvarStep.RunStageB'], 'true')
   
   # Variables reference syntax differs slightly from inter-stage condition syntax
   variables:
-    myOutputVar: stageDependencies.StageA.A1.outputs['A1.setvarStep.RunStageB']
+    myOutputVar: $[stageDependencies.StageA.A1.outputs['setvarStep.RunStageB']]
   jobs:
   - deployment: B1
     pool:
       vmImage: 'ubuntu-16.04'
+    environment: envB
     strategy:                  
       runOnce:
         deploy:
