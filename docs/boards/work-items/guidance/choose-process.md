@@ -38,7 +38,7 @@ The work tracking objects contained within the default processes and process tem
 
 <a id="template_intro"></a>
 
-::: moniker range=">= azure-devops-2019"
+
 
 ## Basic, Agile, Scrum, and CMMI
 
@@ -47,22 +47,7 @@ The default processes differ mainly in the work item types (WITs) they provide f
 Basic is the most lightweight and is in a selective Preview. 
 Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
 
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
 [!INCLUDE [temp](../../includes/note-basic-process.md)]
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-## Agile, Scrum, and CMMI
-
-The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
-Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
-
-::: moniker-end
 
 Choose the process that provides the best fit for your team.  
 
@@ -146,8 +131,7 @@ If your team has unusual needs and connects to an on-premises server,
 you can customize a process and then create the project. 
 Or, you can create a project from a process and then customize the project.  
 
-The following table summarizes the main distinctions between the WITs and states 
-used by the three default processes.  
+The following table summarizes the main distinctions between the WITs and states used by the four default processes.  
 
 <table valign="top">
 <tbody>
