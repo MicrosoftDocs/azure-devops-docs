@@ -13,9 +13,8 @@ monikerRange: '>= tfs-2017'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
-Git repositories can be customized to a great extent on Azure DevOps Services and Team Foundation Server.
-Global options for entire repositories are configured by repository settings.
-There are also user-specific and branch-specific controls, covered by [permissions](set-git-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.
+You can customize your Azure DevOps Git repositories using policy settings. Global options for entire repositories are configured by repository settings.
+There are also user-specific and branch-specific controls, covered by [permissions](set-git-repository-permissions.md#git-repository) and [branch policies](branch-policies.md) respectively.  
 
 This topic covers server-side repository settings.
 You may also want to learn about client-side [Git preferences](git-config.md).
@@ -432,5 +431,6 @@ Permissions allow you to control who can read, write, contribute to pull request
 ## Related articles
 
 - [Set branch policies](branch-policies.md)
+- [Configure Git repository policies using a configuration file](../../cli/policy-configuration-file.md)
 - [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
 - [Set permissions (Security)](set-git-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)  
