@@ -206,6 +206,12 @@
         "pipelines/tasks/**": "devops-cicd-tasks",
         "pipelines/test/**": "devops-cicd-test"
       },
+      "recommendations": {
+        "pipelines/repos/**": "true",
+        "repos/tfvc/**": "true",
+        "repos/get-started/**": "true",
+        "repos/git/**": "true"
+      },
       "ROBOTS": {
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
       },
