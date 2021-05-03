@@ -5,7 +5,7 @@ description: Publish Universal Packages to Azure Artifacts feeds with Azure Pipe
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 04/27/2021
+ms.date: 05/03/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -14,6 +14,9 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 Using Universal Packages you can pack any number of files of any type and share it with your team. Using the Universal Package task, you can pack, publish, and download packages of various sizes up to 4 TB. Each package will be uniquely identified with a name and a version number. Packages can be published and consumed to and from Artifacts feeds by using the Azure CLI or Azure Pipelines.
+
+> [!NOTE]
+> Universal Packages are only available for Azure DevOps Services.
 
 ## Prepare a Universal Package
 
@@ -110,7 +113,7 @@ One thing to keep in mind is that if you select the `custom` option, you must al
 
 # [Classic](#tab/classic)
 
-From the Universal Packages task form, select a version increment strategy, or select Custom to input your package version manually.
+From the Universal Packages task form, select a version increment strategy, or select **Custom** to input your package version manually.
 
 :::image type="content" source="media/universal-packages/publish-versioning.png" alt-text="Package versioning":::
 
@@ -118,11 +121,9 @@ From the Universal Packages task form, select a version increment strategy, or s
 
 ## Download a Universal Package
 
-You can also download a Universal Package from your pipeline.
-
 #### [YAML](#tab/yaml/)
 
-To download a Universal Package from a feed in your organization to a specified destination, use the following snippet: 
+To download a Universal Package from a feed in your organization, use the Universal package task with the `download` command input as follows: 
 
 ```yaml
 steps:
@@ -132,19 +133,16 @@ steps:
     command: download
     vstsFeed: '<projectName>/<feedName>'
     vstsFeedPackage: '<packageName>'
-    vstsPackageVersion: 1.0.0
+    vstsPackageVersion: '<packageVersion>'
     downloadDirectory: '$(Build.SourcesDirectory)\someFolder'
 ```
 
-| Argument                       | Description                                                         |
-| ------------------------------ | ------------------------------------------------------------------- |
-| vstsFeed                       | The project and feed name that the package will be downloaded from.     |
-| vstsFeedPackage                | Name of the package to be downloaded.    |
-| vstsPackageVersion             | Version of the package to be downloaded. |
-| downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
-
-> [!NOTE]
-> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
+| Argument                       | Description                                                                       |
+| ------------------------------ | -------------------------------------------------------------------               |
+| vstsFeed                       | The Artifacts feed hosting the package to be downloaded.                          |
+| vstsFeedPackage                | Name of the package to be downloaded.                                             |
+| vstsPackageVersion             | Version of the package to be downloaded.                                          |
+| downloadDirectory              | The package destination folder. Default value: $(System.DefaultWorkingDirectory). |
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -161,43 +159,33 @@ steps:
     versionDownloadExternal: 1.0.0
 ```
 
-| Argument                       | Description                                                         |
-| ------------------------------ | ------------------------------------------------------------------- |
-| feedsToUse                     | Value should be `external` when you're downloading from an external source.|
-| externalFeedCredentials        | Name of a service connection to another Azure DevOps organization or server. See [service connections](../library/service-endpoints.md#sep-tfsts).                    |
-| feedDownloadExternal           | Feed that the package will be downloaded from.        |
-| packageDownloadExternal        | Name of the package to be downloaded.                             |
-| versionDownloadExternal        | Version of the package to be downloaded.        |
-
-> [!NOTE]
-> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
+| Argument                       | Description                                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| feedsToUse                     | Set the value to `external` when downloading from an external source.                                                                                    |
+| externalFeedCredentials        | Name of the service connection pointing to the external feed. See [service connections](../library/service-endpoints.md) for details.                    |
+| feedDownloadExternal           | Name of the external feed.                                                                                                                               |
+| packageDownloadExternal        | The package name to be downloaded.                                                                                                                       |
+| versionDownloadExternal        | The version of the package to be downloaded.                                                                                                             |
 
 #### [Classic](#tab/classic/)
 
-To download a Universal Package, add the **Universal Package** task and configure these options:
+To download a Universal Package, add the **Universal Package** task to your pipeline and fill out the required fields as follows:
 
 - **Command:** Download
-- **Destination directory**: Directory to download the package. The default is `$(System.DefaultWorkingDirectory)`.
-- **Feed location:** Download a Universal Package from an Azure Artifacts feed in this organization or in another organization.
-- **Feed:** Select the feed that you want to download from.
-- **Package name:** Select the package that you want to download.
-- **Version:** Select the version of the package that you want to download.
+- **Destination directory**: Folder path where the packages will be downloaded. Default value: `$(System.DefaultWorkingDirectory)`.
+- **Feed location:** Download a Universal Package from an Azure Artifacts feed in your organization or in another organization.
+- **Feed:** The feed that you want to download from.
+- **Package name:** The package that you want to download.
+- **Version:** The version of the package that you want to download.
 
-> [!div class="mx-imgBorder"]
-> ![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
+:::image type="content" source="media/universal-packages/download.png" alt-text="Download Universal Packages task configuration":::
 
 ---
 
-### Downloading the latest version
+> [!NOTE]
+> You can use wildcards in the string you pass to the download command to download the latest version of a Universal Package. See [Universal Packages quickstart](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) for more details.
 
-You can use a wildcard expression as the version to get the latest (highest) version of a package. For more information, see [Downloading the latest version](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) in the quickstart guide.
+## Next Steps
 
-## FAQ
-
-### Where can I learn more about Azure Artifacts and the TFS Package Management service?
-
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
-
-### In what versions of Azure DevOps/TFS are Universal Packages available? 
-
-Universal Packages are only available for Azure DevOps Services.
+- [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
+- [Release artifacts and artifact sources](../release/artifacts.md)
