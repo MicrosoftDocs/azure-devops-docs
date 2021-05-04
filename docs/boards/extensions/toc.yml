@@ -6,6 +6,8 @@
 - name: Delivery Plans
   href: delivery-plans.md 
   displayname: filter, roadmap, calendar, multi-team views, cards   
+- name: Delivery Plans FAQs
+  href: faqs.md 
 - name: Feature Timeline
   href: feature-timeline.md      
 - name: Epic Roadmap
