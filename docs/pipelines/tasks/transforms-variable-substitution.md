@@ -406,7 +406,7 @@ variables:
   Data.DBAccess.Users.0: Admin-3
   Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
-# Update appsettings.json via FileTransformation task.
+# Update appsettings.json via FileTransform task.
 - task: FileTransform@1
   displayName: 'File transformation: appsettings.json'
   inputs:
@@ -414,7 +414,7 @@ variables:
     targetFiles: '**/appsettings.json'
     fileType: json
   
-#
+# Deploy web app
 - task: AzureWebApp@1
   inputs:
     azureSubscription: <Name of the Azure subscription>
