@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 04/20/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -36,7 +36,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
     <tr>
-
 <td rowspan="1"><strong>2020 Q4</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td><a href="https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/">In Preview</a></td><td>Boards</td><td>Future</td></tr>
 <td rowspan="4"><strong>2021 Q1</strong></td>
@@ -82,6 +81,12 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
 <tr>
+    <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
+    <td>PAT lifecycle management API general availability</td><td>General</td><td>Future</td></tr>
+    <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>Future</td></tr>
+    <td>Repos as a protected resource in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Enable empty recycle bin for feeds</td><td>Artifacts</td><td>Future</td></tr>
+    </tr>
     <td rowspan="2"><a href="2021/sprint-185-update.md" data-raw-source="[13 April 2021](2021/sprint-185-update.md)">13 April 2021</a></td>
     <td>Delivery Plans 2.0 Dependency tracking cleanup</td><td>Boards</td><td>Future</td></tr>
     </tr>
