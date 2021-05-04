@@ -36,34 +36,35 @@ Any plan you created with the original Delivery Plans extension will work with D
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of delivery plans, preview](media/plans/intro-image.png)
 
-In this article you'll learn:
+In this article you'll learn how to perform the following tasks:
 
 > [!div class="checklist"]   
-> - How to review a plan with your teams
-> - How to add and edit a plan
-> - How to add field criteria, customize cards, and add markers
-> - How to open a plan from the list of defined plans 
-> - How to work with the interactive elements of plans and change the plan view
-> - What permissions are required to create and view plans  
+> - Open a plan from the list of defined plans 
+> - Review a plan with your teams
+> - Add and edit a plan
+> - Add field criteria, customize cards, and add markers
+> - Use the interactive elements of plans and change the plan view
+> - View dependencies 
+> - Understand rollup  
 
 ## Prerequisites
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
-	- [Enable the New Delivery Plans feature](../../project/navigation/preview-features.md).  
-	- Be a member of a project. Users granted **Stakeholder** access for a public project can add and view plans.
-	- [Configured teams](../../organizations/settings/add-teams.md)
-	- [Defined area paths and assigned to a team](../../organizations/settings/set-area-paths.md)
-	- [Defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group and have Basic access or higher. Members of the project's Readers group are valid users. Users granted **Stakeholder** access for a private project cannot view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
+- To add and configure a Delivery Plan, the following elements must be configured:
+	- [Teams and team backlogs](../../organizations/settings/add-teams.md)
+	- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md)
+	- [Iteration (sprint) paths and team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- Teams have defined [product backlog items](../backlogs/create-your-backlog.md), or [portfolio backlogs](../backlogs/define-features-epics.md) and assigned those items to either a **Start Date** and **End Date** or an **Iteration Path**.   
 	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
-- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group and have Basic access or higher. Members of the project's Readers group are valid users. Users granted **Stakeholder** access for a private project cannot view plans.  
+
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
  
  
-
 ## Review a plan with your teams
 
-It takes several teams to develop large software projects. Very large projects require multiple autonomous teams (review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment). Autonomous teams manage their own backlog and priority which contributes to a unified direction for that project.
+It takes several teams to develop large software projects. Very large projects require multiple autonomous teams. Autonomous teams manage their own backlog and priority which contributes to a unified direction for that project. Review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment. 
 
 Regular reviews of the project schedule with these teams help ensure that the teams are working toward common goals. Delivery Plans provide the needed multi-team view of your project schedule. 
 
