@@ -12,6 +12,8 @@
   displayname: rollup, group, parent, tags 
 - name: Edit plan permissions 
   href: edit-delivery-plan-permissions.md
+- name: Delivery Plans FAQs
+  href: faqs.yml
 - name: Scaled Agile Framework®
   items:
   - name: Implement Scaled Agile Framework®
