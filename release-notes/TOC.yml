@@ -6,7 +6,7 @@
     - name: 2021
       expanded: true
       items:
-        - name: May 5
+        - name: May 4
           href: 2021/sprint-186-update.md
         - name: April 13
           href: 2021/sprint-185-update.md
