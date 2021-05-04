@@ -58,7 +58,7 @@ You can also use the web UI to create your Azure Container Registry. See the [Cr
 
 [!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Docker**.
+When the **Configure** tab appears, select **Docker - Build and push an image to Azure Container Registry**.
 
 1. If you are prompted, select the subscription in which you created your registry.
 
