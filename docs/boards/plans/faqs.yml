@@ -30,11 +30,11 @@ sections:
              :::column span="1":::
                 **Feature**
              :::column-end::: 
-             :::column span="1":::
-                **Delivery Plans 2.0**
+             :::column span="2":::
+                [*[Delivery Plans 2.0**](review-team-plans.md)
              :::column-end:::
-             :::column span="1":::
-                **Delivery Plans Extension**
+             :::column span="2":::
+                [**Delivery Plans Extension**](../extensions/delivery-plans.md) 
              :::column-end:::
           :::row-end:::
           ---
@@ -42,10 +42,10 @@ sections:
              :::column span="1":::
                 Teams, Backlogs
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 15 maximum
              :::column-end:::
-             :::column span="1":::
+             :::column span="2":::
                 10 maximum
              :::column-end:::
           :::row-end:::
@@ -54,10 +54,10 @@ sections:
              :::column span="1":::
                 Timeframes
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 Start Date/Target Date and Iterations
              :::column-end:::
-             :::column span="1":::
+             :::column span="2":::
                 Iterations only
              :::column-end:::
           :::row-end:::
@@ -66,10 +66,10 @@ sections:
              :::column span="1":::
                 Card data
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 Condensed and expanded views, Variable based on zoom-level  
              :::column-end:::
-             :::column span="1":::
+             :::column span="2":::
                 Full card/TItle only 
              :::column-end:::
           :::row-end:::
@@ -78,10 +78,10 @@ sections:
              :::column span="1":::
                 Rollup
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 % done of child and linked work items
              :::column-end:::
-             :::column span="1":::
+             :::column span="2":::
                 Not supported
              :::column-end:::
           :::row-end:::
@@ -90,10 +90,10 @@ sections:
              :::column span="1":::
                 Dependency tracking
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 Supported 
              :::column-end:::
-             :::column span="1":::
+             :::column span="2":::
                 Not supported
              :::column-end:::
           :::row-end:::
@@ -102,7 +102,7 @@ sections:
              :::column span="1":::
                 Card styles
              :::column-end::: 
-             :::column span="1":::
+             :::column span="2":::
                 Supported 
              :::column-end:::
              :::column span="2":::
@@ -114,8 +114,8 @@ sections:
              :::column span="1":::
                 Keyboard shortcuts
              :::column-end::: 
-             :::column span="1":::
-                Not supported
+             :::column span="2":::
+                Not supported at this time
              :::column-end:::
              :::column span="2":::
                 Supported 
@@ -140,9 +140,9 @@ sections:
         answer: |
           **Yes**. Add your custom work item type to a backlog level as described in [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
-      - question: Do Keyboard shortcuts work with Delivery Plans?  
+      - question: Do keyboard shortcuts work with Delivery Plans?  
         answer: |
-          No, not with Delivery Plans 2.0. 
+          Currently, keyboard shortcuts aren't supported with Delivery Plans 2.0. 
 
 additionalContent: |
   ## Related articles
