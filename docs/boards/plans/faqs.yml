@@ -20,7 +20,7 @@ summary: |
 
 sections:
   - name: Single section - ignored
-  - 
+
     questions: 
       - question: What are the main differences between Delivery Plans 2.0 and the Delivery Plans extension?
         answer: | 

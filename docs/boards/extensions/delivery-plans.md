@@ -19,6 +19,10 @@ ms.date: 05/03/2021
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
+> [!NOTE]   
+> Delivery Plans 2.0 is available for Azure Boards (cloud service). This tool is now part of Azure Boards and not an extension. This new version of Delivery Plans supports several new features. We recommend that you use the new version in place of the extension. The plans you have already defined will open using [Delivery Plans 2.0](../plans/review-team-plans.md).
+
+
 Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more.
 
 You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
@@ -49,7 +53,7 @@ In this article you'll learn:
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 	- Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
-- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](../plans/edit-delivery-plan-permissions.md).  
 
 ::: moniker range="tfs-2017" 
 > [!NOTE]
@@ -59,7 +63,7 @@ In this article you'll learn:
 
 ## Review a plan with your teams
 
-It takes several teams to develop large software projects. Very large projects require multiple autonomous teams (review [Agile culture](agile-culture.md) for a discussion of autonomous teams and organizational alignment). Autonomous teams manage their own backlog and priority which contributes to a unified direction for that project.
+It takes several teams to develop large software projects. Very large projects require multiple autonomous teams (review [Agile culture](../plans/agile-culture.md) for a discussion of autonomous teams and organizational alignment). Autonomous teams manage their own backlog and priority which contributes to a unified direction for that project.
 
 Regular reviews of the project schedule with these teams help ensure that the teams are working toward common goals. Delivery Plans provide the needed multi-team view of your project schedule. 
 
@@ -251,7 +255,7 @@ For additional resources for working with multiple teams, see these additional t
 - [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
-- [Portfolio management](portfolio-management.md)  
+- [Portfolio management](../plans/portfolio-management.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)  
 
