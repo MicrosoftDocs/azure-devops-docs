@@ -155,7 +155,7 @@ As shown in the following image, you simply start typing into a people picker bo
 > ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
 
 > [!WARNING]   
-> When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to Azure DevOps Services through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self resolve this issue for now, disable the **Limit user visibility for projects** preview feature for the organization. 
+> When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility for projects** preview feature for the organization.  
 
 
 Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
