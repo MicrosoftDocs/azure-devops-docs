@@ -31,7 +31,7 @@ sections:
                 **Feature**
              :::column-end::: 
              :::column span="2":::
-                [*[Delivery Plans 2.0**](review-team-plans.md)
+                [**Delivery Plans 2.0**](review-team-plans.md)
              :::column-end:::
              :::column span="2":::
                 [**Delivery Plans Extension**](../extensions/delivery-plans.md) 
@@ -52,6 +52,18 @@ sections:
           ---
           :::row:::
              :::column span="1":::
+                Cross-project team backlogs
+             :::column-end::: 
+             :::column span="2":::
+                Supported
+             :::column-end:::
+             :::column span="2":::
+                Supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
                 Timeframes
              :::column-end::: 
              :::column span="2":::
@@ -59,6 +71,18 @@ sections:
              :::column-end:::
              :::column span="2":::
                 Iterations only
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Varying iteration paths
+             :::column-end::: 
+             :::column span="2":::
+                Supported
+             :::column-end:::
+             :::column span="2":::
+                Supported
              :::column-end:::
           :::row-end:::
           ---
