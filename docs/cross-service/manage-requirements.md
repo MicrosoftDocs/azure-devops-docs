@@ -324,11 +324,11 @@ To review features delivered across several teams, configure a delivery plan. De
 **Example of multi-team Delivery Plan** 
 
 ::: moniker range="azure-devops"  
-:::image type="content" source="../boards/plans/media/plans/overview-preview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+:::image type="content" source="../boards/plans/media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
-<img src="../boards/plans/media/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+<img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end 
  
 
