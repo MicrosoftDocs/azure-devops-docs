@@ -11,5 +11,3 @@ ms.topic: include
 We're happy to announce the general availability of the Personal Access Tokens (PATs) lifecycle management APIs. This rich set of APIs allows your team to simplify the management of the PATs they own, offering them new functionality, such as creating new personal access tokens with a desired scope and duration, and renewing or expiring existing ones.
 
 Previously, the primary way for you to manage PATs (Personal Access Tokens) is through the UI or by using a limited set of APIs intended only for Project Collection Administrators. This new API unlocks the ability for organizations to set up automation involving PATs, including setting up build pipelines or interacting with work items.
-
-The PAT lifecycle management API is now available for organizations to use in private preview.
