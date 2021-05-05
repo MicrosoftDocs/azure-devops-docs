@@ -32,7 +32,7 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 > - View work item dependencies 
 > - Stakeholders can view plans
  
-Any plan you created with the original Delivery Plans extension will work with Delivery Plans (Preview). You don't have to migrate any data or reconfigure plan  settings.  
+Any plan you created with the original Delivery Plans extension will work with Delivery Plans. You don't have to migrate any data or reconfigure plan  settings.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of delivery plans, preview](media/plans/intro-image.png)
@@ -99,7 +99,7 @@ Note the following:
 1. Open **Boards>Delivery Plans**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to Open Boards>Plans (Preview).](media/plans/open-plans.png) 
+	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
 
 1. To add a plan, choose **New Plan**. 
 
@@ -189,7 +189,7 @@ Collapse and expand each team row by choosing **Expand team row** or **Collapse 
 > [!div class="mx-imgBorder"]  
 > ![Collapse click targets](media/plans/overview.png)  
 
-## Show work that spans one or more iterations - Plans (Preview) 
+## Show work that spans one or more iterations
 
 For work items that span one or more iterations, you can define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. 
 
@@ -203,7 +203,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing location of collapse/expand card fields feature icons. ](media/plans/collapse-card-fields.png)  
 
-## View rollup of features and epics - Plans (Preview) 
+## View rollup of features and epics 
 
 Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollup, open your plan settings, choose **Fields**, and select **Show child rollup data**.
 
@@ -214,22 +214,6 @@ For example, here we show a plan view of four scenarios with rollup of the child
 > ![Screenshot showing rollup view of four scenarios. ](media/plans/rollup-view.png)  
 
 You can also view rollup from a backlog view as described in [Display rollup progress or totals](../backlogs/display-rollup.md).
-
-<a id="dependencies">  </a>
-
-## View dependencies - Plans (Preview) 
-
-To view dependencies for a work item, hover over the upper-right corner and choose the dependency-links :::image type="icon" source="../media/icons/dependency-links.png" border="false"::: icon. 
-
-For example, here we show a work item with dependencies to several work items within the same project.   
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of dependencies within the same project. ](media/plans/dependencies.png)  
-
-When the dependency is to a work item in another project, the project information is shown as well as other link relationships. A red exclamation mark and red colored arrows indicate there is an issue with the dependency.  
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of dependencies-cross-project. ](media/plans/dependencies-cross-project.png)  
 
 
 ## Update the iteration for a backlog item 
