@@ -648,8 +648,8 @@ stages:
         filePath: 'script-b.sh'
       name: fileversion
       env:
-        StageSauce: $(StageSauce) # We do not expand [] vars, we need to predefine above
-        skipMe: $(skipMe)
+        StageSauce: $(StageSauce) # predefined in variables section
+        skipMe: $(skipMe) # predefined in variables section
     - task: Bash@3
       inputs:
         targetType: 'inline'
