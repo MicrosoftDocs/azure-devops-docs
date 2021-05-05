@@ -81,7 +81,7 @@ There is no time limit on parallel jobs for public projects and a 30 hour time l
 | **Public project** | Up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
-When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. For pricing cost per parallel job, see [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).
 
 [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
@@ -105,7 +105,7 @@ For public projects that are self-hosted, you can have unlimited parallel jobs r
 | **Private project** | One self-hosted job; For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.   |   None |
 
 
-When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. For pricing cost per parallel job, see [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
@@ -181,7 +181,7 @@ Buy more parallel jobs within your organization settings:
 
 4. Enter your desired amount, and then **Save**.
 
-For pricing cost per parallel job, see [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## How do I change the quantity of parallel jobs for my organization?
 
