@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/09/2020
+ms.date: 05/05/2021
 monikerRange: azure-devops
 ---
 
@@ -182,7 +182,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale up or down is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale up operation if either of the following conditions is satisfied:
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale in or out is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale out operation if either of the following conditions is satisfied:
 
 - The number of idle agents falls below the number of standby agents you specify
 - There are no idle agents to service pipeline jobs waiting in the queue
@@ -203,12 +203,12 @@ To put all of this into an example, consider a scale set agent pool that is conf
 
 - If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales down the pool to two agents.
 
-Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
+Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over the course of a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
 
 > [!NOTE]
->  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
+>  It can take an hour or more for Azure Pipelines to scale out or scale in the virtual machines. Azure Pipelines will scale out in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
 
-To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted, depending on the **Save an unhealthy agent for investigation** setting. For more information, see [Unhealthy agents](#unhealthy-agents).
+To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale out and there are also unhealthy machines to delete, Azure Pipelines will first scale out the pool. Once the pool has scaled out to reach the desired number of idle agents on standby, the unhealthy machines will be deleted, depending on the **Save an unhealthy agent for investigation** setting. For more information, see [Unhealthy agents](#unhealthy-agents).
 
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
@@ -271,7 +271,7 @@ az vmss extension set \
 
 Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set Agent
 
-1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
+1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale out. Azure Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
 
 1. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
@@ -410,7 +410,7 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
 
-The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set. Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
+The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set. Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale out. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
 
 ### Unhealthy Agents
 
