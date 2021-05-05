@@ -189,19 +189,19 @@ Azure Pipelines samples the state of the agents in the pool and virtual machines
 
 If one of these conditions is met, Azure Pipelines grows the number of VMs. Scaling up is done in increments of a certain percentage of the maximum pool size. Allow 20 minutes for machines to be created for each step.
 
-Azure Pipelines scales down the agents when the number of idle agents exceeds the standby count for more than 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**).
+Azure Pipelines scales in the agents when the number of idle agents exceeds the standby count for more than 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**).
 
 To put all of this into an example, consider a scale set agent pool that is configured with 2 standby agents and 4 maximum agents. Let us say that you want to tear down the VM after each use. Also, let us assume that there are no VMs to start with in the scale set.
 
-- Since the number of idle agents is 0, and since the number of idle agents is below the standby count of 2, Azure Pipelines scales up and adds two VMs to the scale set. Once these agents come online, there will be 2 idle agents.
+- Since the number of idle agents is 0, and since the number of idle agents is below the standby count of 2, Azure Pipelines scales out and adds two VMs to the scale set. Once these agents come online, there will be 2 idle agents.
 
 - Let us say that 1 pipeline job arrives and is allocated to one of the agents.
 
-- At this time, the number of idle agents is 1, and that is less than the standby count of 2. So, Azure Pipelines scales up and adds 2 more VMs (the increment size used in this example). At this time, the pool has 3 idle agents and 1 busy agent.
+- At this time, the number of idle agents is 1, and that is less than the standby count of 2. So, Azure Pipelines scales out and adds 2 more VMs (the increment size used in this example). At this time, the pool has 3 idle agents and 1 busy agent.
 
 - Let us say that the job on the first agent completes. Azure Pipeline takes that agent offline to re-image that machine. After a few minutes, it comes back with a fresh image. At this time, we'll have 4 idle agents.
 
-- If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales down the pool to two agents.
+- If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales in the pool to two agents.
 
 Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale out and in slowly. Over the course of a day, the pool will scale out as requests are queued in the morning and scale in as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
 
@@ -210,7 +210,7 @@ Throughout this operation, the goal for Azure Pipelines is to reach the desired 
 
 To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale out and there are also unhealthy machines to delete, Azure Pipelines will first scale out the pool. Once the pool has scaled out to reach the desired number of idle agents on standby, the unhealthy machines will be deleted, depending on the **Save an unhealthy agent for investigation** setting. For more information, see [Unhealthy agents](#unhealthy-agents).
 
-Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
+Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling out will occur.
 
 ## Customizing Pipeline Agent Configuration
 
