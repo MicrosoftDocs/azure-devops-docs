@@ -444,7 +444,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       The date by which a feature or work item is expected to be completed.  
       ::: moniker range="azure-devops"
       > [!NOTE]   
-      > [Delivery Plans (Preview)](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
+      > [Delivery Plans](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
       ::: moniker-end
       Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime
    :::column-end:::

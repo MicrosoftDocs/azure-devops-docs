@@ -451,9 +451,10 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -472,9 +473,11 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -493,6 +496,7 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -673,10 +677,30 @@ In addition to the standard filter functions summarized in the previous table, t
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 6)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️ 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
 
