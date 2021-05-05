@@ -22,7 +22,7 @@ ms.date: 12/19/2018
 You can control who has access to a Delivery Plan by setting it's permissions. You can grant or restrict access to users and groups to delete, edit, view, or  manage permissions of delivery plans. 
 
 ::: moniker range="azure-devops"
-By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Review team delivery plans](review-team-plans.md).  
+By default all members of an organization or project collection can view Delivery Plans, including users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Review team delivery plans](review-team-plans.md).  
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
@@ -35,10 +35,9 @@ By default all members of an organization or project collection can view Deliver
 ::: moniker-end  
 
 ## Prerequisites
+
 - In order to edit the permissions for a Delivery Plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. 
-- Even if you grant view permissions to a user who has Stakeholder access for a public project, they won't be able to view the plan. 
-
-
+ 
 ## Edit permissions for a delivery plan
 
 

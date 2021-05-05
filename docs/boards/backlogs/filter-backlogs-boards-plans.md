@@ -298,7 +298,9 @@ Supported options are indicated with a ✔️ or listed.
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
 <br/>
+::: moniker-end 
 
+::: moniker range=">= azure-devops-2020"
 ---
 :::row:::
    :::column span="2":::
@@ -451,6 +453,7 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -497,6 +500,7 @@ In addition to the standard filter functions summarized in the previous table, t
 :::row-end:::
 ---
 ::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -518,11 +522,7 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-
-
-::: moniker-end  
-
-
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
