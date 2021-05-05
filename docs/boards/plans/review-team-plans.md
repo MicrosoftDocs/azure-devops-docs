@@ -23,13 +23,14 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 
 > [!NOTE]   
 > Delivery Plans 2.0 is available for Azure Boards (cloud service). This tool is now part of Azure Boards and not an extension. This new version of Delivery Plans supports the following tasks: 
-> - Custom portfolio backlogs as well as Epics can be added to a delivery plan  
-> - Work item cards can span iteration boundaries  
-> - Drag and drop borders show when a work item starts and ends 
-> - You can add backlog items to a team from a plan  
-> - You can view work item dependencies 
+> - Add up to 15 team backlogs
+> - Add custom portfolio backlogs as well as Epics 
+> - View work items that span several iterations 
+> - Reset Start Date and Target Date through drag and drop borders 
+> - Add backlog items to a team from a plan   
+> - View rollup progress of Features, Epics, and other portfolio items
+> - View work item dependencies 
 > - Stakeholders can view plans
-> - Plans can support configuration of up to 15 teams 
  
 Any plan you created with the original Delivery Plans extension will work with Delivery Plans (Preview). You don't have to migrate any data or reconfigure plan  settings.  
 
@@ -51,7 +52,7 @@ In this article you'll learn how to perform the following tasks:
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
 
-- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group and have Basic access or higher. Members of the project's Readers group are valid users. Users granted **Stakeholder** access for a private project cannot view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans. 
 - To add and configure a Delivery Plan, the following elements must be configured:
 	- [Teams and team backlogs](../../organizations/settings/add-teams.md)
 	- [Area paths and team area paths assignments](../../organizations/settings/set-area-paths.md)

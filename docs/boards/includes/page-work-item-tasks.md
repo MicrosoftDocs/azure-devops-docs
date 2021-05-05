@@ -10,7 +10,7 @@ ms.topic: include
 - [**Backlogs**](/azure/devops/boards/backlogs/create-your-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](/azure/devops/boards/backlogs/organize-backlog).  
 - [**Sprints**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
-- [**Plans**](/azure/devops/boards/plans/review-team-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. The latest version requires enabling the [New Delivery Plans Experience](/azure/devops/project/navigation/preview-features) feature.
+- [**Delivery Plans**](/azure/devops/boards/plans/review-team-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. The latest version requires enabling the [New Delivery Plans Experience](/azure/devops/project/navigation/preview-features) feature.
 
 ::: moniker-end
 
@@ -23,7 +23,7 @@ ms.topic: include
 - [**Backlogs**](/azure/devops/boards/backlogs/create-your-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](/azure/devops/boards/backlogs/organize-backlog).  
 - [**Sprints**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
-- [**Plans**](/azure/devops/boards/plans/review-team-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+- [**Plans**](/azure/devops/boards/extensions/delivery-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ ms.topic: include
 	- [**Boards**](/azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
 	- [**Sprint backlogs**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
-- [**Plans**](/azure/devops/boards/plans/review-team-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+- [**Plans**](/azure/devops/boards/extensions/delivery-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ ms.topic: include
 	- [**Boards**](/azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
 	- [**Sprint backlogs**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
-- [**Plans**](/azure/devops/boards/plans/review-team-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+- [**Plans**](/azure/devops/boards/extensions/delivery-plans): Use to review the schedule of stories or features your teams plan to deliver. Plans show scheduled work items defined that are assigned to sprints (iteration path) of selected teams against a calendar view. Requires installation of the [Delivery Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
 
 ::: moniker-end
 

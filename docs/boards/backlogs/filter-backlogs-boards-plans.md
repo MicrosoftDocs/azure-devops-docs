@@ -208,17 +208,19 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
    :::column span="2":::
-      - Assigned To
       - Work Item Types
+      - Assigned To
       - States
       - Area Path
       - Iteration Path
+      - Tags
+      - Parent Work Item
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -229,10 +231,10 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -240,7 +242,8 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="2":::
       - Work Item Types
       - Assigned To
-      - States 
+      - States
+      - Tags
    :::column-end:::
    :::column span="1.5":::
         
