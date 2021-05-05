@@ -95,7 +95,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.RequestedFor | The display name of identity that triggered the release.<br/><br />Example: `Mateo Escobedo` |
 | Release.RequestedForEmail | The email address of identity that triggered the release.<br/><br />Example: `mateo@fabrikam.com` |
 | Release.RequestedForId | The ID of identity that triggered the release.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
-| Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
+| Release.SkipArtifactsDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
 | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually.<br/><br />Example: `fabrikam\_app` |
 
 ## Default variables - Release stage
