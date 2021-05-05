@@ -117,7 +117,8 @@ devopsProject="Contoso DevOps Project $uniqueId"
 serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
-# Sign in to Azure CLI and follow directions. (May be unnecessary in some environments.)
+# Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
+echo "Sign in. (For Cloud Shell, provide the device authentication code.)"
 az login
 
 # Create a resource group and a storage account.
