@@ -6,7 +6,7 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 03/03/2021
+ms.date: 05/05/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -60,9 +60,6 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 We provide a *free tier* of service by default in every organization for both hosted and self-hosted parallel jobs. 
 Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
 
-
-[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
-
 # [Microsoft-hosted](#tab/ms-hosted)
 
 For Microsoft-hosted parallel jobs, you can get up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for **public projects**. When you create a new Azure DevOps organization, you are not given this free grant by default.
@@ -84,7 +81,9 @@ There is no time limit on parallel jobs for public projects and a 30 hour time l
 | **Public project** | Up to 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
-When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours).
+
+[Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
 When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still one. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
  
@@ -106,8 +105,7 @@ For public projects that are self-hosted, you can have unlimited parallel jobs r
 | **Private project** | One self-hosted job; For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.   |   None |
 
 
-When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. 
-
+When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
@@ -182,6 +180,8 @@ Buy more parallel jobs within your organization settings:
    :::image type="content" source="../../organizations/billing/media/shared/manage-parallel-jobs.png" alt-text="manage parallel jobs image":::
 
 4. Enter your desired amount, and then **Save**.
+
+For pricing cost per parallel job, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## How do I change the quantity of parallel jobs for my organization?
 
