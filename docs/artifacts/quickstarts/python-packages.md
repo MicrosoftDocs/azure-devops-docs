@@ -69,21 +69,6 @@ The **artifacts-keyring** package allows you to set up authentication to publish
 
    :::image type="content" source="media/pip-twine-feed.png" alt-text="Select pip or twine to connect to your feed":::
 
-- **Pip** configuration
-
-    1. Make sure you have installed the latest version of the **Azure Artifacts keyring** from the "Get the tools" menu.
-    1. [Create a virtualenv](https://docs.python.org/3/library/venv.html), if you don't already have one.
-    1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv
-        ```Command
-        [global]
-        extra-index-url=https://<your-feed-name>:<your-PAT-key>@pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple/
-        ```
-    1. Run the following command in your project directory to install your package
-        ```Command
-        pip install <your-package>
-        ``` 
-
-
 1. Follow the instructions under **Project setup** to set up your project.
 
 1. Follow the steps in the next section to **Install** or **Publish** your packages.
