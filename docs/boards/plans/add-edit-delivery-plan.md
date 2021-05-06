@@ -98,7 +98,7 @@ Once you've defined a plan, you can further customize it.
 ## Related articles  
 
 - [Review team plans](review-team-plans.md)
-- [Edit Delivery Plan permissions](edit-plan-permissions.md)
+- [Edit Delivery Plan permissions](edit-delivery-plan-permissions.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  

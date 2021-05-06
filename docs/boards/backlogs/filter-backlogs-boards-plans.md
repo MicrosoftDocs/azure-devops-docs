@@ -747,7 +747,7 @@ In addition to the standard filter functions summarized in the previous table, t
 3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Delivery Plans define the grouping in Settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
+6. Delivery Plans define the grouping in Settings based on [team selections](../plans/add-edit-delivery-plan.md#add-a-plan). 
 7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
 ::: moniker-end  
