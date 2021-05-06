@@ -55,7 +55,7 @@ The **artifacts-keyring** package allows you to set up authentication to publish
    ```
 
 > [!NOTE]
-> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](../../pipelines/tasks/package/pip-authenticate.md) task to install packages, or the [Python Twine Upload Authenticate](../../pipelines/tasks/package/twine-authenticate.md) task to push packages.
+> The artifacts-keyring package is layered on top of our Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
 
 ## Manually configure authentication
 
@@ -76,23 +76,23 @@ The **artifacts-keyring** package allows you to set up authentication to publish
 
 1. [Create a virtualenv](https://docs.python.org/3/library/venv.html), if you don't already have one.
 
-1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv. Make sure you don't check your personal access token into a public repository. 
 
-    ```Command
+    ```
     [global]
-    index-url=https://pkgs.dev.azure.com/ramiMSFTDevOps/_packaging/microsoftLearnModule/pypi/simple/
+    extra-index-url=https://<your-feed-name>:<your-PAT-key>@pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple/
     ```
 
 1. Run the following command to install a package
 
     ```Command
-    pip install <package_name> --index-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/simple
+    pip install <package-name>
     ```
 
 When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
 
 > [!NOTE]
-> The artifacts-keyring package is layered on top of our Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
+> If you want to set up authentication in Azure Pipelines, use the [Python Pip Authenticate](../../pipelines/tasks/package/pip-authenticate.md) task to install packages, or the [Python Twine Upload Authenticate](../../pipelines/tasks/package/twine-authenticate.md) task to push packages.
 
 ## Related articles
 
