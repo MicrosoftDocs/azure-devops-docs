@@ -2145,7 +2145,7 @@ Use the `checkout` keyword to configure or suppress this behavior.
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  fetchDepth: number  # the depth of commits to ask Git to fetch (applies to submodules too if they're enabled); defaults to no limit
   lfs: boolean  # whether to download Git-LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
