@@ -65,15 +65,34 @@ The **artifacts-keyring** package allows you to set up authentication to publish
 
    :::image type="content" source="../media/connect-to-feed-azure-devops-newnav.png" alt-text="Connect to feed button":::
 
-1. Select **pip** or **twine** under the Python header. 
+1. Select **pip** under the **Python** header. 
 
-   :::image type="content" source="media/pip-twine-feed.png" alt-text="Select pip or twine to connect to your feed":::
+   :::image type="content" source="media/pip-feed.png" alt-text="Select pip to connect to your feed":::
 
-1. Follow the instructions under **Project setup** to set up your project.
+1. Make sure you have installed the latest version of the **Azure Artifacts keyring** from the "Get the tools" menu.
 
-1. Follow the steps in the next section to **Install** or **Publish** your packages.
+    > [!NOTE]
+    > The **artifacts-keyring** package provides authentication for publishing and consuming Python packages to and from Azure Artifacts feeds.
+
+1. [Create a virtualenv](https://docs.python.org/3/library/venv.html), if you don't already have one.
+
+1. Add a pip.ini (Windows) or pip.conf (Mac/Linux) file to your virtualenv
+
+    ```Command
+    [global]
+    index-url=https://pkgs.dev.azure.com/ramiMSFTDevOps/_packaging/microsoftLearnModule/pypi/simple/
+    ```
+
+1. Run the following command to install a package
+
+    ```Command
+    pip install <package_name> --index-url https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/pypi/simple
+    ```
 
 When you connect to Azure DevOps for the first time, you will be prompted for credentials. Enter your user name(any string) and your personal access token in the appropriate fields. The credentials will be cached locally and used to automatically sign you in the next time you use the service.
+
+> [!NOTE]
+> The artifacts-keyring package is layered on top of our Azure Artifacts Credential Provider. For more advanced configuration options, check out the [artifacts-credprovider](https://github.com/microsoft/artifacts-credprovider) repository.
 
 ## Related articles
 
