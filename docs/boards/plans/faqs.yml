@@ -16,7 +16,7 @@ title: Delivery Plans FAQs
 summary: | 
   **Azure Boards**  
 
-  Delivery Plans provides a calendar view of multiple backlogs, teams, and team backlogs from different products. It replaces the Delivery Plans marketplace extension and is available for Azure DevOps Services. Here are some answers to frequently asked questions about work item queries. 
+  Delivery Plans provides a calendar view of multiple backlogs, teams, and team backlogs from different projects. It replaces the Delivery Plans marketplace extension and is available for Azure DevOps Services. Here are some answers to frequently asked questions about Delivery Plans. 
 
 sections:
   - name: Single section - ignored
@@ -91,7 +91,8 @@ sections:
                 Card data
              :::column-end::: 
              :::column span="2":::
-                Condensed and expanded views, Variable based on zoom-level  
+                Condensed and expanded views  
+                Variable based on zoom-level  
              :::column-end:::
              :::column span="2":::
                 Full card/TItle only 
@@ -150,11 +151,11 @@ sections:
 
       - question: Why don't my work items show on the plan?
         answer: |
-          Make sure your work items are assigned to an Iteration Path, or a Start Date and End Date. Also, verify that the Iteration Paths have been selected for the teams whose backlog levels are chosen for the Delivery Plans. If the Iteration Paths aren't selected, work items associated with those iterations won't display.    
+          Make sure your work items are assigned to an Iteration Path, or a Start Date and Target Date. Also, verify that the Iteration Paths have been selected for the teams whose backlog levels are chosen for the Delivery Plans. If the Iteration Paths aren't selected, work items associated with those iterations won't display.    
 
       - question: How do I get dependency lines to show?
         answer: |
-          Click  the bottom of the card to show the dependency lines of the work item. To turn them off, click on the bottom of the card. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
+          Click  the bottom of the card to show the dependency lines of the work item. To turn them off, click on the bottom of the card or anywhere else in the plan. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
 
       - question: Why can't I see all the fields I've configured?
         answer: |
@@ -163,10 +164,7 @@ sections:
       - question: Can I view custom work item types on Delivery Plans?  
         answer: |
           **Yes**. Add your custom work item type to a backlog level as described in [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-
-      - question: Do keyboard shortcuts work with Delivery Plans?  
-        answer: |
-          Currently, keyboard shortcuts aren't supported with Delivery Plans 2.0. 
+ 
 
 additionalContent: |
   ## Related articles
