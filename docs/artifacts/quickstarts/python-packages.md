@@ -45,13 +45,13 @@ The **artifacts-keyring** package allows you to set up authentication to publish
 1. Install packages from your feed. 
     
    ```Command
-   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/simple
+   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/simple
    ```
 
 1. Publish packages to your feed.
    
    ```Command
-   twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/upload
+   twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/<your-project-name>/_packaging/<your-feed-name>/pypi/upload
    ```
 
 > [!NOTE]
