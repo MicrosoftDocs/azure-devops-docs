@@ -21,15 +21,14 @@ Use the visualization options provided by Delivery Plans to review the schedule 
 
 Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more. 
 
-> [!NOTE]   
-> Delivery Plans 2.0 is available for Azure Boards (cloud service). This tool is now part of Azure Boards and not an extension. This new version of Delivery Plans supports the following tasks: 
-> - Add up to 15 team backlogs
+Delivery Plans supports these tasks: 
+> - View up to 15 team backlogs, include a mix of backlogs and teams from different projects
 > - Add custom portfolio backlogs as well as Epics 
 > - View work items that span several iterations 
 > - Reset Start Date and Target Date through drag and drop borders 
 > - Add backlog items to a team from a plan   
 > - View rollup progress of Features, Epics, and other portfolio items
-> - View work item dependencies 
+> - View dependencies that exist between work items 
 > - Stakeholders can view plans
  
 Any plan you created with the original Delivery Plans extension will work with Delivery Plans. You don't have to migrate any data or reconfigure plan settings. To learn how to add or edit a plan, see [Add or edit a Delivery Plan](add-edit-delivery-plan.md). 
@@ -51,7 +50,7 @@ For information on working with dependencies, see [Track dependencies](track-dep
 ## Prerequisites
 
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Users granted **Stakeholder** access for a private project can view plans. Users granted **Stakeholder** access for a public project can add and view plans.  
-- To open or modify a work item or add work items, you must have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item.  
+- To open or modify a work item or add work items to a plan, you must have the **Edit work items in this node** set to **Allow** for the Area Paths assigned to the work item. For details, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path). 
  
 ## Review a plan with your teams
 
@@ -70,14 +69,19 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 ## Best practices 
 
-- Use a consistent sprint schedule across your project teams and organization. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
+- Determine how you want to use the Delivery Plan. Some ideas are: 
+	- Review quarterly plans for features to be delivered
+	- Monthly sync-up with several teams which have dependencies 
+	- Review cross-project deliverables and identify dependencies. 
+- Use a consistent sprint schedule across your project teams and organization when possible. While the plan can accommodate different sprint schedules, it adds to visual clutter. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
 - Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. The **Target Date** will always override the **Iteration** end date on the plan.
 - Minimize the number of fields you choose to display on your cards.  
 - Eliminate cross-team ownership of area paths. Cross-team area path ownership isn't recommended and can lead to undesirable edge cases.  
+- Keep your work items up-to-date. When changes occur, update the Target Dates or Iteration Paths. 
 
 Note the following: 
-- Plan views are limited to 12 to 13 months. 
-- Plan views are limited to a maximum of 15 teams/backlogs
+- Plan views display the set of months that correspond to the Iteration Paths selected by the teams whose backlogs appear in the plan. 
+- Plan views are limited to a maximum of 15 teams/backlogs.
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
 -  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
 - If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
@@ -90,7 +94,7 @@ Once you've defined a few plans, you'll see them listed from the **Plans** page 
 
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project. 
 
-To open a plan, open **Boards>Delivery Plans** and choose the plan name. You can Sort by any of the columns&mdash;**Name**, **Created By**, **Description**, **Last configured**, or :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::) **Favorites**.   
+To open a plan, open **Boards>Delivery Plans** and choose the plan name. You can sort by any of the columns&mdash;**Name**, **Created By**, **Description**, **Last configured**, or :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::) **Favorites**.   
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
@@ -103,7 +107,7 @@ Each team's backlog specified in a Delivery Plan appears as a row within the pla
 
 
 > [!TIP]    
-> Work items appear in the stack rank order listed for the sprint backlog. 
+> Work items appear in the [prioritized order](../backlogs/create-your-backlog.md#reorder-your-backlog) listed for the sprint backlog, which inherits the priority from the product backlog. 
 
 You can interact with the plan in the following ways:  
 
@@ -162,7 +166,7 @@ You can also view rollup from a backlog view as described in [Display rollup pro
 As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
-> ![Move a card to a different iteration](../extensions/media/plans/plans-move-1.png)
+> ![Screenshot showing moving a card to a different iteration](media/plans/move-card-iteration.png)
 
 
 ## Related articles  

@@ -43,13 +43,15 @@ By default all members of an organization or project collection can view Deliver
 
 ::: moniker range="azure-devops"
 
-1. Open **Boards>Delivery Plans**. For details, see [Review team delivery plans](review-team-plans.md).  
-
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
+1. Open **Boards>Delivery Plans**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
+	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
 
+1. To grant permissions to a group or user to manage or edit a specific plan, choose  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More options** to open the **Security** dialog for the plan.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open the Permissions dialog for a plan](media/permissions/open-security.png)  
 2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). By default, non-administrators can't delete or edit a plan. 
 
 3. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
@@ -83,11 +85,10 @@ By default all members of an organization or project collection can view Deliver
 
 4. Choose **Save changes** when done. 
 
-
 ::: moniker-end 
 
-
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
+
 1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
 1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
@@ -107,7 +108,6 @@ By default all members of an organization or project collection can view Deliver
 4. Choose **Save changes** when done. 
 
 ::: moniker-end  
-
 
 ## Related articles
 
