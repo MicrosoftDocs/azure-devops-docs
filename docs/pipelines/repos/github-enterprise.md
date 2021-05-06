@@ -33,10 +33,10 @@ The first thing to check is whether your GitHub Enterprise Server is reachable f
 
 If the verification passes, then the servers that run Azure Pipelines service are able to reach your on-premises GitHub Enterprise Server. You can proceed and set up the connection. Then, you can use this service connection when creating a classic build or YAML pipeline. You can also configure CI and PR triggers for the pipeline. A majority of features in Azure Pipelines that work with GitHub also work with GitHub Enterprise Server. Review the documentation for [GitHub](github.md) to understand these features. Here are some differences:
 
-* The integration between GitHub and Azure Pipelines is made easier through an Azure Pipelines app in GitHub marketplace. This app allows you to set up an integration without having to rely on a particular user's OAuth token. We do not have a similar app that works with GitHub Enterprise Server. So, you must use a PAT, username and password, or OAuth to set up the connection between Azure Pipelines and GitHub Enterpriser server.
-* When working with GitHub, Azure Pipelines supports a number of security features to validate contributions from external forks. For instance, secrets stored in a pipeline are not made available to a running job. These protections are not available when working with GitHub Enterpriser server.
-* Comment triggers are not available with GitHub Enterpriser server. You cannot use comments in a GitHub Enterpriser server repo pull request to trigger a pipeline.
-* GitHub Checks are not available in GitHub Enterpriser server. All status updates are through basic statuses.
+* The integration between GitHub and Azure Pipelines is made easier through an Azure Pipelines app in GitHub marketplace. This app allows you to set up an integration without having to rely on a particular user's OAuth token. We do not have a similar app that works with GitHub Enterprise Server. So, you must use a PAT, username and password, or OAuth to set up the connection between Azure Pipelines and GitHub Enterprise server.
+* When working with GitHub, Azure Pipelines supports a number of security features to validate contributions from external forks. For instance, secrets stored in a pipeline are not made available to a running job. These protections are not available when working with GitHub Enterprise server.
+* Comment triggers are not available with GitHub Enterprise server. You cannot use comments in a GitHub Enterprise server repo pull request to trigger a pipeline.
+* GitHub Checks are not available in GitHub Enterprise server. All status updates are through basic statuses.
 
 ## Not reachable from Azure Pipelines
 
@@ -52,7 +52,7 @@ Another decision you possibly have to make is whether to use Microsoft-hosted ag
 
 ## Not reachable from Microsoft-hosted agents
 
-If the simple test pipeline mentioned in the above section fails with the error `TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting`, then the GitHub Enterpriser Server is not reachable from Microsoft-hosted agents. This is again probably caused by a firewall blocking traffic from these servers. You have two options in this case:
+If the simple test pipeline mentioned in the above section fails with the error `TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting`, then the GitHub Enterprise Server is not reachable from Microsoft-hosted agents. This is again probably caused by a firewall blocking traffic from these servers. You have two options in this case:
 
 * Work with your IT department to open a network path between Microsoft-hosted agents and GitHub Enterprise Server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
 
