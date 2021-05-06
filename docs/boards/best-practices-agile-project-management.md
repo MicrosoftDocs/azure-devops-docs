@@ -249,12 +249,24 @@ The following Add link dialog illustrates how two work items are linked using th
 
 ### Visualize work item relationships 
 
+::: moniker range="azure-devops"
+
+You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. To learn more, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
+
+:::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 With the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension, you can visualize the link relationships among several work items as shown in the following image. 
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
 > [![Screenshot of Visualize work item relationships.](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+
+::: moniker-end
 
 ### Minimum Viable Product versus Critical Path Management  
 

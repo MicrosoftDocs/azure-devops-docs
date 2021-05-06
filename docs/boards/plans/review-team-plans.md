@@ -101,6 +101,10 @@ Each team's backlog specified in a Delivery Plan appears as a row within the pla
 
 :::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 
+
+> [!TIP]    
+> Work items appear in the stack rank order listed for the sprint backlog. 
+
 You can interact with the plan in the following ways:  
 
 - Filter the plan by choosing Choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::. You can filter on any field you include in the plan Settings based on the keyword or text filter. For additional details, see [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md).
