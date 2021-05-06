@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/30/2021
+ms.date: 05/06/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -26,6 +26,8 @@ You can create and manage your PATs through one of two ways:
 * the user interface in your user settings, which is described in detail below, and
 * through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md).
 
+> [!IMPORTANT]
+>  For organizations backed by Azure Active Directory, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
