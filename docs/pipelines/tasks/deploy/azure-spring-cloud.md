@@ -1,0 +1,37 @@
+---
+title: Azure Spring Cloud task
+description: Learn how to use the Azure Spring Cloud task to deploy applications to Azure Spring Cloud.
+ms.topic: reference
+ms.assetid: 0C07E3BA-5197-48F7-83C9-D0D7178B6D19
+ms.author: yebronsh
+author: yevster
+ms.date: 05/05/2021
+monikerRange: 'azure-devops'
+---
+
+# Azure Spring Cloud task
+
+[!INCLUDE [include](../../includes/version-team-services.md)]
+
+Use this task to deploy applications to Azure Spring Cloud and to manage Azure Spring Cloud [deployments](/azure/spring-cloud/concept-understand-app-and-deployment).
+
+## Arguments
+
+> [!NOTE]
+> Some arguments are only applicable for certain settings of the `Action` argument. The Action column below specifies the pertinent actions for each argument. Any argument listed as Required is only required for the pertinent Action(s).
+
+|Argument|Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description|
+|--- |--- |--- |
+|`Action`<br/>Action|All|(Required) The action to be performed by this task.<br/>One of: `Deploy`, `Set Production`, `Delete Staging Deployment`<br/>Default value: `Deploy`|
+|`ConnectedServiceName`<br/>Azure Subscription|All|(Required) name of the [Azure Resource Manager service connection](../../library/connect-to-azure.md). <br/>Argument alias: `azureSubscription`|
+|`AzureSpringCloud`<br/>Azure Spring Cloud|All|(Required) Name or resource ID of the Azure Spring Cloud instance.|
+|`AppName`<br/>App Name|All|(Required) The name of the Azure Spring Cloud app to which to deploy. The app must exist prior to task execution.
+|`UseStagingDeployment`<br/>Use Staging Deployment.|Deploy<br/>Set Production|(Required) Apply to whichever [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) is set as the staging deployment at time fo execution. If omitted, the `DeploymentName` parameter must be set.<br/>Default value: `true`|
+|`DeploymentName`<br/>Deployment Name |Deploy<br/>Set production|(Required if `UseStagingDeployment` is `false`) The name of the [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) to which the action will apply. If not using blue-green deployments, set this field to  `default`.|
+|`CreateNewDeployment`<br/>Create new deployment |Deploy|(Optional) If set to true and the deployment specified by `DeploymentName` does not exist at execution time, it will be created.<br/>Default value: `false`|
+|`Package`<br/>Package or folder|Deploy|(Required) File path to the package containing the application to be deployed (`.jar` file for Java, `.zip` for .Net Core) or to a folder containing the application source to be built. [Build variables](../../build/variables.md) or [release variables](../../release/variables.md#default-variables) are supported. <br/>Default value: ```$(System.DefaultWorkingDirectory)/**/*.jar```|
+|`RuntimeVersion`<br/>Runtime Version|Deploy|(Optional) The runtime stack for the application.<br/>One of: `Java_8`, `Java_11`, `NetCore_31`,<br/>Default value: `Java_11`|
+|`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-SERVER_PORT 5000 -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
+|`JvmOptions`<br/>JVM Options|Deploy|(Optional) Edit the app's JVM options. A String containing JVM Options. Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
+|`DotNetCoreMainEntryPath`<br/>.Net Core entry path |Deploy|(Optional) A string containing the path to the .NET executable relative to zip root.|
+|`Version`<br/>Version|Deploy|(Optional)Deployment version, left unchanged if not set.|
