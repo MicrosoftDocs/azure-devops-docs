@@ -293,7 +293,7 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 ## Create a scale set with custom image, software, or disk size
 
-If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set. Otherwise follow these steps to customize your VM image.
+If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 10 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set. Otherwise follow these steps to customize your VM image.
 
 1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to `<myDiskSizeGb>`.
 
