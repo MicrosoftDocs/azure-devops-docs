@@ -58,15 +58,13 @@ For example, here we choose the link icon for a work item with dependencies to s
 
 The Dependencies dialog  indicates that the work item has four predecessors. 
 
-:::image type="content" source="media/dependencies/
-dependency-dialog-no-issues.png" alt-text="Dependencies dialog for a work item with four predecessors and no issues.":::
+:::image type="content" source="media/dependencies/dependency-dialog-no-issues.png" alt-text="Dependencies dialog for a work item with four predecessors and no issues.":::
 
 ## Identify dependency issues 
 
 When issues exist, they are highlighted in red. For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete.  
 
-:::image type="content" source="media/dependencies/
-dependency-dialog-with-issues.png" alt-text="Dependencies dialog for a work item with issues.":::
+:::image type="content" source="media/dependencies/dependency-dialog-with-issues.png" alt-text="Dependencies dialog for a work item with issues.":::
 
 
 

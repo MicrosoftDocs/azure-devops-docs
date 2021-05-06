@@ -251,7 +251,7 @@ The following Add link dialog illustrates how two work items are linked using th
 
 ::: moniker range="azure-devops"
 
-You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. To learn more, see [Track dependencies using Delivery Plans](../plans/track-dependencies.md). 
+You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. To learn more, see [Track dependencies using Delivery Plans](plans/track-dependencies.md). 
 
 :::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
 
