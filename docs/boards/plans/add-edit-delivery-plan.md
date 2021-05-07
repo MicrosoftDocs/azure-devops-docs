@@ -60,7 +60,6 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
       **Overview** 
@@ -108,7 +107,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 ---
 :::row:::
    :::column span="1":::
-      **[Styles](#style-rule)** 
+      **[Styles](#styles)** 
    :::column-end:::
    :::column span="3":::
       Add styling rules to change card color based on field criteria. 
@@ -116,7 +115,7 @@ Once you open the Plan settings dialog, choose one of the following tabs to set 
 :::row-end:::
 ---
 
-
+<a id="teams" />
 ## Add a plan  
 
 1. Open **Boards>Delivery Plans**. 
@@ -144,8 +143,7 @@ When defining a plan, note the following:
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
 -  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
-<a id="card-settings">  </a>
-
+<a id="field-criteria" />
 ## Edit a plan 
 
 Once you've defined a plan, you can further customize it. 
@@ -185,7 +183,7 @@ Show those fields that are useful for your review purposes or if they contain ke
 	> [!TIP]  
 	> To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your plan based on parent work items, whether the **Parent** field is added to cards or not. 
 
-1. To remove a field, choose the :::image type="icon" source="../../media/icons/trash-can.png" border="false"::: delete icon next to the field.
+1. To remove a field, choose the :::image type="icon" source="../media/icons/trash-can.png" border="false"::: delete icon next to the field.
 
 1. When done with your changes, choose **Save**.
 
@@ -231,7 +229,7 @@ With styling rules, you can cause cards to change color when their corresponding
 
 ## Programmatically manage Delivery Plans  
 
-You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0).
+You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0&preserve-view=true ).
 
 
 ## Related articles  
