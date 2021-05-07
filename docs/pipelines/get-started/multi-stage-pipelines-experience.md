@@ -59,12 +59,6 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](media/pipeline-overview.png)
 
-### Pipeline settings
-
-You can view and configure pipeline settings from the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: menu on the pipeline details page.
-
-![Pipeline settings and more actions](media/pipeline-more-actions.png)
-
 ### Runs
 
 Select **Runs** to view the runs for that pipeline. You can optionally filter the displayed runs.
@@ -133,6 +127,12 @@ You can configure pipelines security on a project level from the *More actions**
 ![Pipeline security](media/pipelines-context-menu.png)
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
+
+### Manage pipeline settings
+
+You can view and configure pipeline settings from the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: menu on the [pipeline details page](#view-pipeline-details).
+
+![Pipeline settings and more actions](media/pipeline-more-actions.png)
 
 :::moniker range="azure-devops"
 
