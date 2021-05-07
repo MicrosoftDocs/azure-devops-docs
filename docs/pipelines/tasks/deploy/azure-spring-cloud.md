@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [include](../../includes/version-team-services.md)]
 
-Use this task to deploy applications to Azure Spring Cloud and to manage Azure Spring Cloud [deployments](/azure/spring-cloud/concept-understand-app-and-deployment).
+Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud/) and to manage Azure Spring Cloud [deployments](/azure/spring-cloud/concept-understand-app-and-deployment).
 
 ## Arguments
 
@@ -96,6 +96,8 @@ steps:
     UseStagingDeployment: true
     Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
 ```
+
+For more on blue-green deployments, including an alternative approach, see [Blue-Green deployment strategies](/azure/spring-cloud/concepts-blue-green-deployment-strategies).
 
 ### Setting production deployment
 
