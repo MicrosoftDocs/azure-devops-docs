@@ -7,6 +7,9 @@
   href: ./settings/search-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Time zone settings
+  href: ./settings/timezone-settings-usage.md
+  displayName: timezone, organization
 - name: Security, membership, & access
   href: ../organizations/security/toc.yml
 - name: Billing
@@ -68,17 +71,19 @@
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
-    href: ../repos/git/create-new-repo.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage Git repository permissions
+    href: ../repos/git/set-git-repository-permissions.md
   - name: Manage Git branch policies
-    href: ../repos/git/branch-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
-  - name: Manage repository permissions
-    href: ./security/set-git-tfvc-repository-permissions.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage TFVC repository permissions
+    href: ../repos/tfvc/set-tfvc-repository-permissions.md
   - name: Add TFVC Check-In Policies
-    href: ../repos/tfvc/add-check-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Test
   items:
   - name: Set test retention policies
-    href: ../test/how-long-to-keep-test-results.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Artifacts
   items:
   - name: View storage
@@ -104,7 +109,7 @@
   - name: Process 
     href: ./settings/work/inheritance-process-model.md
   - name: Search  
-    href: ../project/search/overview.md
+    href: ../project/search/get-started-search.md
   - name: Get started  
     href: ../get-started/index.yml
   - name: Marketplace & extensibility  

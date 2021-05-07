@@ -235,7 +235,7 @@ You'll find you can work more effectively through these actions:
 
 - Organize work into a hierarchy by grouping issues under epics, and tasks under issues.
 - Create queries and quickly triage issues and tasks. 
-- Create work item templates to help contributors quickly add and define open meaningful issues and tasks.  
+- Create work item templates to help contributors quickly add meaningful issues and tasks.  
 - Quickly find work items that are assigned to you. Pivot or filter your work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.  
 
 

@@ -83,7 +83,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 
 - [Git repository](../../repos/git/creatingrepo.md)
 - [Git branch](../../repos/git/create-branch.md)
-- [Git pull request](../../repos/git/pullrequest.md) 
+- [Git pull request](../../repos/git/pull-requests.md) 
 - [Add work items](../../boards/work-items/view-add-work-items.md)
 
 

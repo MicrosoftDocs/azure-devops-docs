@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 11/19/2020
+ms.date: 04/23/2021
 ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
@@ -84,8 +84,9 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]
-> The only way to configure retention policies for YAML and classic pipelines is through the project settings as described above. You cannot configure per-pipeline retention policies any more.
+> [!WARNING]
+> Azure DevOps will stop supporting per-pipeline retention rules in an upcoming release. At that time, any classic build pipeline that still has per-pipeline retention rules will be governed by the project-level retention rules instead. If you are using per-pipeline permissions, you should move your permissions to the project-level.
+> The only way to configure retention policies for YAML and classic pipelines is through the project settings described above. You can no longer configure per-pipeline retention policies. 
 
 ::: moniker-end
 
@@ -169,6 +170,12 @@ A run is deleted if all of the following conditions are true:
 Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
 
 ::: moniker-end
+
+### Automatically set retention lease on pipeline runs
+
+Retention leases are used to manage the lifetime of pipeline runs beyond the configured retention periods. Retention leases can be added or deleted on a pipeline run by calling the [Lease API](/rest/api/azure/devops/build/leases). This API can be invoked within the pipeline using a script and using [predefined variables](../build/variables.md) for runId and definitionId.
+
+A retention lease can be added on a pipeline run for a specific period. For example, a pipeline run which deploys to a test environment can be retained for a shorter duration while a run deploying to production environment can be retained longer.
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -478,7 +485,7 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within a stage of a release are associated with both the release and the run. These test results are retained as specified by the retention policy configured for the run and for the test results. If you are not deploying Team Foundation or Azure Pipelines Build, and are still publishing test results, the retention of these results is governed by the retention settings of the release they belong to.
+Test results published within a stage of a release are retained as specified by the retention policy configured for the test results. The test results do not get retained untill the release is reatined. If you need the test results as long as the release, set the retention settings for automated test runs in the Project settings accordingly to Never delete. This makes sure the test results are deleted only when the release is deleted.
 
 ### Are manual test results deleted?
 

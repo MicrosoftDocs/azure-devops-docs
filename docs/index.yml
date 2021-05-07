@@ -202,7 +202,7 @@ additionalContent:
               text: Features & services
             - url: ./project/navigation/index.md
               text: Web portal navigation
-            - url: ./project/search/index.md
+            - url: ./project/search/get-started-search.md
               text: Search
             - url: ./notifications/manage-your-personal-notifications.md
               text: Manage personal notifications 
@@ -233,7 +233,7 @@ additionalContent:
         - title: Cross-service, Wikis, Public Projects
           links:
             - text: Search
-              url: ./project/search/overview.md  
+              url: ./project/search/get-started-search.md  
             - text: Work across projects
               url: ./project/navigation/work-across-projects.md  
             - text: Work across projects FAQs
@@ -316,7 +316,11 @@ additionalContent:
         - title: Developer resources
           links:
             - text: Command line interface
-              url: ./cli/index.md
+              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Azure DevOps CLI quick reference
+              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Azure DevOps Services Demo Generator
+              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: REST APIs
               url: /rest/api/vsts/
             - text: DevOps resource center

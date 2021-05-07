@@ -1,24 +1,30 @@
 ---
-title: Plan product backlog of stories, issues, & more
+title: Create your product backlog  
 titleSuffix: Azure Boards
-description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
+description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards and Azure DevOps   
 ms.custom: "boards-backlogs, seodec18, contperf-fy20q4" 
 ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 7/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 03/19/2021
 ---
 
 # Create your product backlog 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. 
+Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. As shown in the following image, your backlog consists of a flat list of work items. 
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
+> [!NOTE]   
+> The following image illustrates the product backlog image for a Scrum process for Azure DevOps Services. For the Agile, Basic, and CMMI process models, the **Backlog items** selection appears as **Stories**, **Issues**, and **Requirements**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of a Backlog of Scrum process product backlog items.](media/create-backlog/intro-image.png)
+
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team. And, you're able to [interactively filter the backlog](filter-backlogs-boards-plans.md) to focus on a subset of work items.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -117,7 +123,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
-Before deciding, review [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md) for guidance. 
+Before deciding, review [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md#show-bugs) for guidance. Or, go directly to [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 <a id="convert-ideas" />
 
@@ -370,7 +376,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Display rollup progress bars or counts](display-rollup.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
@@ -382,7 +388,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 

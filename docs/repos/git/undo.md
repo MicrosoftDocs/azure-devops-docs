@@ -62,7 +62,7 @@ You can revert the file to the version in a specific commit by providing the com
 &gt; git checkout <font color="#b5bd68">38035acd2 approuter.js</font>
 </pre>
 
-This differs from the earlier use of the `checkout` command used to swap to a different [branch](branches.md). 
+This differs from the earlier use of the `checkout` command used to swap to a different [branch](./create-branch.md). 
 Git will tell you if it is changing a file or swapping between branches in the output, and complain if it's not clear which one you are trying to do.
 
 * * *
@@ -74,6 +74,8 @@ Use `revert` to undo the changes made in your commits pushed to shared branches.
 in a `revert`, making it safe to use when working with others.
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
@@ -127,4 +129,3 @@ been committed yet.
 
 > [!div class="nextstepaction"]
 > [Ignore files](ignore-files.md)
-

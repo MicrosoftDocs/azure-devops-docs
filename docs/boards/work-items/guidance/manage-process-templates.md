@@ -5,7 +5,7 @@ description: Upload, download, delete, or make default a process template for a 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

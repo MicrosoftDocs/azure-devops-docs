@@ -131,7 +131,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [Get started with permissions, access, and security groups](about-permissions.md). 
 
 ::: moniker-end
 
@@ -245,7 +245,7 @@ In this example, we grant members assigned to the team administrator role, who b
 <a id="delete-test-permissions"></a>
 <a id="manage-test-artifacts"></a>
 
-## Manage test artifacts
+## Manage test plans and test suites
 
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
@@ -276,7 +276,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Limit user visibility for projects** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -314,4 +314,5 @@ See [Restrict access, Restrict modification of work items based on a user or gro
 - [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
 - [Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)  
-- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites)   
+- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md#prerequisites) 
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  

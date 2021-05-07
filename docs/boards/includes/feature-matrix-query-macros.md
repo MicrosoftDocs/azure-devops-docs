@@ -151,4 +151,3 @@ For more detailed descriptions and links to examples, see [Query fields, operato
    :::column-end:::
 :::row-end:::
 ---
-  

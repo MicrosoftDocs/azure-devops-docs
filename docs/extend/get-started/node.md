@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/12/2020
+ms.date: 02/04/2021
 ---
 
 # Develop a web extension
@@ -45,7 +45,7 @@ An extension is composed of a set of files that includes a required manifest fil
 
 1. Create a directory to hold the files needed for your extension:
    ```
-   md my-first-extension
+   mkdir my-first-extension
    ```
 
 2. From this directory, initialize a new NPM package manifest:
@@ -191,7 +191,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 3. From a command prompt, run the TFX tool's packaging command from your extension directory.
 
    ```
-   npx tfx extension create
+   npx tfx-cli extension create
    ```
    
 
@@ -226,7 +226,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 To test an extension, it must be installed to an organization in Azure DevOps. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
-1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
+1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** or **Publish/Unpublish**, depending on the extension; Share = Publish and Unshare = Unpublish.
 
    <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
 

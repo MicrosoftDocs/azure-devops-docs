@@ -8,8 +8,8 @@ ms.custom: contperf-fy21q2
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 11/19/2020
 monikerRange: '>= tfs-2015'
+ms.date: 04/16/2021
 ---
 
 # Link to work items from other objects
@@ -69,6 +69,8 @@ Linking your work items to other objects also produces the following benefits:
 
 ::: moniker-end
 
+<a id="link-wit-id">  </a>
+
 ## Link to work items from pull requests, commits, and comments
 
 1. Enter `#` to trigger the `#ID` work item picker in your pull request commits, commit comments, changeset comments, shelveset comments, description, and more. You see a list of 50 work items that you've recently modified or that are assigned to you.
@@ -89,15 +91,19 @@ Linking your work items to other objects also produces the following benefits:
 > Requires TFS 2015 Update 2 or a later version.
 ::: moniker-end
 
-::: moniker range="azure-devops"
+<a id="work-item-state-pull-request" />
+
+
+::: moniker range=">= azure-devops-2020"
 
 ## Set work item state in pull request
 
-When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: ``` {state value}: #ID ```.
-When you merge the pull request, the system reads the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, and #323 and #324 to Closed.
+::: moniker-end
 
-:::image type="content" source="media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a PR.":::
- 
+[!INCLUDE [temp](../includes/set-work-item-state-pull-request.md)]
+
+::: moniker range=">= azure-devops-2020"
+
 ### How it works
 
 The system considers the following three different criteria (in this order) when attempting to set the state of #mentioned work items: 
@@ -137,6 +143,11 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 
 ::: moniker-end
 
+
+<a id="link-to-builds" />
+
+[!INCLUDE [temp](../includes/link-work-item-builds-projects.md)]
+
 ::: moniker range=">= tfs-2018"
 
 ## Link to work items from a Wiki page
@@ -153,5 +164,5 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 - [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
 - [Link work items to deployments](../boards/queries/linking-attachments.md)
 - [Save work with commits](../repos/git/commits.md)
-- [Create and complete a pull request](../repos/git/pullrequest.md)
+- [View and manage pull requests](../repos/git/pull-requests.md)
 

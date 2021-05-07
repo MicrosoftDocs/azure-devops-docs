@@ -44,7 +44,7 @@ If you want, you can also use Azure DevOps Services with any IDE or code editor,
 
 1. [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
-[Which versions can I use with Azure DevOps Services?](faq-set-up-vs.md#vs-versions)
+[Which versions can I use with Azure DevOps Services?](/azure/devops/organizations/accounts/faq-set-up-vs)
 
     If you have a Visual Studio subscription that 
     includes the Visual Studio IDE, get the version 
@@ -54,12 +54,12 @@ if you don't have the version you want already.
 
     This profile saves your settings and roams with you 
     when you sign in to Visual Studio on any computer. 
-    [Why else should I sign in?](faq-set-up-vs.md#why-sign-in)
+    [Why else should I sign in?](/azure/devops/organizations/accounts/faq-set-up-vs)
     If you're a Visual Studio subscriber, use the sign in address for your subscription. 
 
     ![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)
 
-    [Can't sign in?](faq-set-up-vs.md#cannot-sign-in)
+    [Can't sign in?](/azure/devops/organizations/accounts/faq-set-up-vs#t-i-assign-azure-devops-permissions-directly-to-an-azure-ad-group-)
 
 3. Enter your sign in address, 
 and then enter your password.
@@ -72,7 +72,7 @@ and then enter your password.
 
     ![Name your organization, confirm its location](media/set-up-vs/profile-organization-details2.png)
 
-    [How can I create an organization later](faq-configure-customize-organization.md#create-organization-faqs) or [change its location?](change-organization-location.md)
+    [How can I create an organization later](faq-configure-customize-organization.yml#create-organization-faqs) or [change its location?](change-organization-location.md)
 
 6. Create your first project to store your code, 
 work items, backlog, builds, tests, and other assets. 

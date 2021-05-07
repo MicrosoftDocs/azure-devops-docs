@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 01/14/2021
+ms.date: 03/05/2021
 ---
 
 
@@ -13,7 +13,7 @@ The following table summarizes the query filter functions supported by each Azur
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
-> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches support both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Functional work items search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ---
@@ -43,7 +43,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Wildcard searches](/azure/devops/boards/queries/titles-ids-descriptions)
+      [Wildcard searches](/azure/devops/boards/queries/titles-ids-descriptions) 
    :::column-end:::
    :::column span="4":::
       Wild card = `*` 
@@ -58,7 +58,8 @@ The following table summarizes the query filter functions supported by each Azur
       [Linked work item searches](/azure/devops/boards/queries/linking-attachments)   
    :::column-end:::
    :::column span="4":::
-      Find work items based on direct links or topological/hierarchical link types. 
+      Find work items based on direct links or topological/hierarchical link types.  
+      Filter linked work items based on `MODE` ([WIQL syntax](/azure/devops/boards/queries/wiql-syntax#query-for-links-between-work-items))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -84,6 +85,8 @@ The following table summarizes the query filter functions supported by each Azur
    :::column span="1":::
        Find work items based on a field match with a previous value. 
        Supported operator: `Was Ever`
+       Find work items based on a value defined on a specific date. 
+       Supported operator: `ASOF` ([WIQL syntax](/azure/devops/boards/queries/wiql-syntax#historical-queries-asof))
    :::column-end:::
    :::column span="1":::
       All versions  
@@ -203,7 +206,7 @@ The following table summarizes the query filter functions supported by each Azur
 ---
 :::row:::
    :::column span="1":::
-      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs)
+      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)
    :::column-end:::
    :::column span="1":::
       Filter query results based on a key word or select fields. 
@@ -213,3 +216,5 @@ The following table summarizes the query filter functions supported by each Azur
    :::column-end:::
 :::row-end:::
 ---
+
+To bulk move, copy, or paste query clauses, install and use the WIQL editor. To learn more, see [Cross-service and enhanced query operations](/azure/devops/boards/queries/query-support-integration-cross-service-extensions#wiql)

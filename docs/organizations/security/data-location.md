@@ -1,11 +1,12 @@
 ---
-title: Azure DevOps - data location
+title: Data locations for Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Learn where your data is stored for Azure DevOps
 ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.date: 01/22/2020
+ms.date: 03/05/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -38,9 +39,10 @@ Except as noted below, Azure DevOps maintains all customer data within your sele
 - test results
 - geo-redundant mirrors and offsite backups
 
-Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
+Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
 
 ### Profile data 
+
 Azure DevOps stores information that's global in nature, such as user identities and profile information as follows: 
 - EU-based users: profile data is in EU data center  
 - US-based users: profile data is in US data center 
@@ -62,7 +64,7 @@ Microsoft will transfer your data if it needs to do any of the following actions
 > Microsoft doesn't control or limit the geographies from which you or your users may access your data.
 
 > [!NOTE]
-> Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
+> Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
 
 > [!NOTE]
 > For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a third-party data center in the US.

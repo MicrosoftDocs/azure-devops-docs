@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 7/09/2020
 ---
@@ -194,7 +194,7 @@ Once you've defined your product backlog, you can use the following controls to 
       Filter
    :::column-end:::
    :::column span="2":::
-      [Turn filtering On/Off](filter-backlogs.md)
+      [Turn filtering On/Off](filter-backlogs-boards-plans.md)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -229,7 +229,7 @@ Once you've defined your product backlog, you can use the following controls to 
       Filter
    :::column-end:::
    :::column span="2":::
-      [Turn filtering On/Off](filter-backlogs.md)
+      [Turn filtering On/Off](filter-backlogs-boards-plans.md)
    :::column-end:::
 :::row-end:::
 :::row:::

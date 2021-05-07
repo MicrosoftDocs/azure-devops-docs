@@ -43,7 +43,7 @@ If no one else on the team has made any changes to the repository - usually thro
 
 __Note: You may need to clone or fix your local repo before beginning this work.  This could result in lost work or changes, so proceed with caution.__
 
-By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](../../organizations/security/set-git-tfvc-repository-permissions.md).
+By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](set-git-repository-permissions.md).
 
 > ![Command Prompt - git push --force permissions.](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
 

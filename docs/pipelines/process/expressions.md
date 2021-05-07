@@ -503,6 +503,9 @@ Expressed as JSON, it would look like:
 Use this form of `dependencies` to map in variables or check conditions at a stage level.
 In this example, Stage B runs whether Stage A is successful or skipped.
 
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
+
 ```yaml
 stages:
 - stage: A
@@ -665,6 +668,35 @@ stages:
     steps:
      - script: echo hello from Job B2
 
+```
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
+### Stage depending on job output
+
+If no changes are required after a build, you might want to skip a stage in a pipeline under certain conditions. An example is when you're using Terraform Plan, and you want to trigger approval and apply only when the plan contains changes.
+
+When you use this condition on a stage, you must use the `dependencies` variable, not `stageDependencies`.
+
+The following example is a simple script that sets a variable (use your actual information from Terraform Plan) in a step in a stage, and then invokes the second stage only if the variable has a specific value.
+
+```yaml
+stages:
+- stage: plan_dev
+  jobs:
+  - job: terraform_plan_dev
+    steps:
+    - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
+      name: terraform_plan
+- stage: apply_dev
+  dependsOn: plan_dev
+  condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
+  jobs:
+  - job: part_b
+    steps:
+    - bash: echo "BA"
 ```
 
 ::: moniker-end

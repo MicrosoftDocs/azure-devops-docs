@@ -1,6 +1,14 @@
 - name: Start using Azure Repos
   href: index.md 
+- name: Compare Git and TFVC
+  href: ../tfvc/comparison-git-tfvc.md
 - name: Sign up and invite some teammates 
-  href: sign-up-invite-teammates.md
+  href: sign-up-invite-teammates.md 
 - name: Code with Git
   href: ../../user-guide/code-with-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+- name: Use Git and TFVC
+  href: ../git/team-projects.md 
+- name: Key concepts
+  href: key-concepts-repos.md
+- name: Search code repositories
+  href: ../../project/search/functional-code-search.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
