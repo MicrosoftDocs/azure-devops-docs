@@ -132,7 +132,15 @@ To support security of your pipeline operations, you can add users to a built-in
 
 You can view and configure pipeline settings from the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: menu on the [pipeline details page](#view-pipeline-details).
 
-![Pipeline settings and more actions](media/pipeline-more-actions.png)
+:::image type="content" source="media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
+
+[Manage security](#manage-security)
+
+:::image type="content" source="media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
+
+[Add a status badge to your repository](../create-first-pipeline.md#add-a-status-badge-to-your-repository)
+
+
 
 :::moniker range="azure-devops"
 
