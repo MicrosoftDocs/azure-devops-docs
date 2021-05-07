@@ -44,7 +44,7 @@ When you select **OK**, the system:
 
 <a name="troubleshoot"></a>
 
-## How to troubleshoot errors that may occur while creating a connection?
+## How do I troubleshoot errors that may occur while creating a connection?
 
 Errors that may occur when the system attempts to create the service connection include:
 
@@ -56,8 +56,10 @@ Errors that may occur when the system attempts to create the service connection 
 * [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 * [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Creating a service connection with Artifactory instance fails despite allowlisted IPs](#service-connection-artifactory)
 * [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
 * [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
+* [What authentication mechanisms are supported? How do managed identities work?](#authentication-mechanisms)
 
 <a name="privileges"></a>
 
@@ -235,9 +237,11 @@ To resolve this issue:
 
 1. Save the service connection.
 
-## When I try to setup a Service Connection on Azure DevOps with our Artifactory instance , it throws an error inspite of whitelisting the IP's
+<a name="service-connection-artifactory"></a>
 
-Ensure the right IP addresses are whitelisted by referring to [this article](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking) and find the updated [list](https://docs.microsoft.com/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops#azure-artifacts) of IP's that are published on a weekly basis based on the geographical location.  
+### Creating a service connection with Artifactory instance fails despite allowlisted IPs
+
+Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted?view=azure-devops&tabs=yaml#networking&preserve-view=true) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url?view=azure-devops#azure-artifacts&preserve-view=true) that's published weekly based on geographic location.  
 
 <a name="cant-create-service-connection-manually"></a>
 
@@ -249,15 +253,17 @@ To learn how to manually create an Azure Resource Manager service connection, se
 
 When you set an Azure subscription dynamically for the release pipeline and the subscription is an output variable from a preceding task, you might encounter this issue. 
 
-To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or the service connection.
+To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or in the service connection.
 
-## What authentication mechanisms are supported? How do Managed Identities work?
+<a name="authentication-mechanisms"></a>
 
-Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or Managed Identity Authentication.
-Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection.
-See [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to learn about managed identities for virtual machines.  
+### What authentication mechanisms are supported? How do managed identities work?
+
+An Azure Resource Manager service connection can connect to an Azure subscription by using a Service Principal Authentication (SPA) or managed identity authentication. Managed identities for Azure resources provide Azure services with an automatically managed identity in Azure Active Directory (Azure AD). You can use this identity to authenticate to any service that supports Azure AD authentication without persisting credentials in code or in the service connection.
+
+To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 
 > [!NOTE]
-> Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](../agents/agents.md#install) on an Azure VM and configure managed identity for the virtual machine.
+> Managed identities aren't supported in Microsoft-hosted agents. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for the VM.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
