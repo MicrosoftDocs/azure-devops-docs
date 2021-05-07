@@ -241,7 +241,7 @@ To resolve this issue:
 
 ### Creating a service connection with Artifactory instance fails despite allowlisted IPs
 
-Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted.md?view=azure-devops&tabs=yaml#networking&preserve-view=true) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url.md?view=azure-devops#azure-artifacts&preserve-view=true) that's published weekly based on geographic location.  
+Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted.md#networking?view=azure-devops&tabs=yaml&preserve-view=true) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts?view=azure-devops&preserve-view=true) that's published weekly based on geographic location.  
 
 <a name="cant-create-service-connection-manually"></a>
 
