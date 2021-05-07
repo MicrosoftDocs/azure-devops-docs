@@ -121,7 +121,7 @@ You can interact with the plan in the following ways:
 - To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
 - Click a card title to open the backlog item and view details. Close the work item to return to the plan.   
 - To add a work item to a sprint, choose **Add item** :::image type="icon" source="media/plans/add-item-icon.png" border="false":::  within the sprint and team you want to add it to. 
-- To [change the fields displayed on the cards](add-edit-delivery-plan.md#card-settings), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
+- To [change the fields displayed on the cards](add-edit-delivery-plan.md#fields), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
 
 
 ## Collapse teams for summary information
