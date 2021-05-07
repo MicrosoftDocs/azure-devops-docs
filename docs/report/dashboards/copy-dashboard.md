@@ -17,8 +17,15 @@ ms.date: 05/07/2021
 
 intro 
 
-[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
+<a id="permissions">  </a>
+
+## Prerequisites  
+
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team member for the currently selected team to edit dashboards.
 
 
 ## Open the dashboard 
@@ -47,7 +54,6 @@ If you need to switch to a different project, choose the :::image type="icon" so
 
 ## Select a dashboard 
 
-
 1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
@@ -60,12 +66,7 @@ If you need to switch to a different project, choose the :::image type="icon" so
 
 	Favoriting a dashboard will cause it to appear under **My Favorites dashboards** list on the dashboards directory. Also, it will appear towards the top in the **Dashboards** selector and in your [personal Favorites list](../../project/navigation/set-favorites.md). . 
  
-
-
 ## Copy the dashboard 
-
- 
-::: moniker range=">= azure-devops-2020"
 
 1. From the Dashboards page, choose **Copy Dashboard**.  
 
@@ -87,30 +88,7 @@ If you need to switch to a different project, choose the :::image type="icon" so
 4.	You can move the widgets around the dashboard to place them where you want them. 
 
 5.  When you're done making changes, choose **Done Editing**. 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open the create a dashboard dialog](media/dashboards/open-new-dashboard-dialog.png)  
-
-	If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
-
-2. Enter the name of the dashboard and other information you want to capture. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Create a dashboard dialog](media/dashboards/create-dashboard-bug-status.png)  
-
-	Choose **Save**. 
-
-3.  The widget catalog opens. You can add one or more widgets to the dashboard. You can then configure and resize each widget as needed. 
-
-4.	You can move the widgets around the dashboard to place them where you want them. 
-
-5.  When you're done making changes, choose **Done Editing**. 
+ 
   
 
 ## Try this next 
