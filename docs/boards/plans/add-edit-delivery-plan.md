@@ -6,12 +6,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: 'azure-devops'
-ms.date: 05/03/2021
+ms.date: 05/06/2021
 ---
 
 
 
-# Add or edit a Delivery Plans 
+
+# Add or edit a Delivery Plan 
 
 **Azure Boards |** [**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**](../extensions/delivery-plans.md) 
 
@@ -224,6 +225,14 @@ With styling rules, you can cause cards to change color when their corresponding
 
 	> [!NOTE]   
 	> Some fields aren't supported for selection, such as the **Title** field, **Description** and other rich-text fields, **Assigned To** and other identity fields. Also, you may be able to select a field but not be able to specify a value or the value you want. For example, you can't specify **Tags** that are *Empty* or *Not Empty*. 
+
+
+<a id="plans-rest-api">  </a>
+
+## Programmatically manage Delivery Plans  
+
+You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0).
+
 
 ## Related articles  
 

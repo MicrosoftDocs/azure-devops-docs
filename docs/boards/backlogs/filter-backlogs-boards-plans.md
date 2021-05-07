@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/02/2021
+ms.date: 05/06/2021
 ---
+
  
 # Interactively filter backlogs, boards, queries, and plans 
 
@@ -208,7 +209,7 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -747,7 +748,7 @@ In addition to the standard filter functions summarized in the previous table, t
 3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Delivery Plans define the grouping in Settings based on [team selections](../plans/add-edit-delivery-plan.md#add-a-plan). 
+6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
 7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
 ::: moniker-end  
