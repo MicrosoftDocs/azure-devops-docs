@@ -70,7 +70,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -142,7 +142,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
-<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
+<p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs-boards-plans.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs-boards-plans.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
 <img src="media/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
 
 <p><b>Request feedback</b></p>
@@ -454,7 +454,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="../boards/backlogs/media/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
 
 <p><b>Filter</b></p>
-<p><a href="../boards/boards/filter-kanban-board.md#text-filter" data-raw-source="[Use key words to filter and find items](../boards/boards/filter-kanban-board.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
+<p><a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans#text-filter" data-raw-source="[Use key words to filter and find items](../boards/backlogs/filter-backlogs-boards-plans.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
 
 <img src="media/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
 
@@ -482,7 +482,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="/azure/devops/boards/backlogs/filter-backlogs-boards-plans" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/backlogs/filter-backlogs-boards-plans.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
@@ -805,7 +805,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to <a href="../repos/git/merging.md" data-raw-source="[prevent and resolve merge conflicts](../repos/git/merging.md)">prevent and resolve merge conflicts</a>.   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
@@ -919,7 +919,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 
 
@@ -1187,7 +1187,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-release-3.png" alt="Customize release definition process"/><br/><br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#set-release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#set-release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
@@ -2023,7 +2023,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/overview.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/get-started-search.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 <p><b>Find work items</b></p>
 <p>When in the Work hub, <a href="../boards/queries/using-queries.md" data-raw-source="[enter IDs or keywords to start a query](../boards/queries/using-queries.md)">enter IDs or keywords to start a query</a> to find  work items that you want to review, triage, or update.</p>
@@ -2081,7 +2081,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/overview.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/overview.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
@@ -2185,9 +2185,9 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)">Git repositories</a></li>
+<li><a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repositories](../repos/git/set-git-repository-permissions.md)">Git repositories</a></li>
 <li><a href="../repos/git/branch-permissions.md" data-raw-source="[Git branches](../repos/git/branch-permissions.md)">Git branches</a></li>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
+<li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build](../pipelines/policies/set-permissions.md)">Build</a></li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a>)</li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Release](../pipelines/policies/set-permissions.md)">Release</a></li>
@@ -2286,7 +2286,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Sign up for Azure DevOps Services </b></p>
-<p><a href="https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services" data-raw-source="[Store your code, tests, and test results in the cloud with Azure DevOps Services](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)">Store your code, tests, and test results in the cloud with Azure DevOps Services</a>, as well as plan your project and track progress. </p>
+<p><a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[Store your code, tests, and test results in the cloud with Azure DevOps Services](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">Store your code, tests, and test results in the cloud with Azure DevOps Services</a>, as well as plan your project and track progress. </p>
 
 
 

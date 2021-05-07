@@ -36,26 +36,26 @@ In the tables provided in this article, a ✔️ indicates that the correspondin
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
 
 
-## General work item feature access
+## Work items
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
-## Boards feature access
+## Boards
 
 You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop. 
 
 [!INCLUDE [temp](includes/boards-boards.md)]
 
-## Backlogs features access
+## Backlogs 
 
 [**Backlogs**](../../boards/backlogs/create-your-backlog.md) display work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.  
 
 [!INCLUDE [temp](includes/boards-backlogs.md)]
 
 
-## Sprints feature access
+## Sprints 
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
 
@@ -73,7 +73,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ::: moniker range=">= tfs-2017"  
 
-## Delivery plans feature access
+## Delivery plans
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access.  
 
@@ -84,7 +84,7 @@ You can manage permissions for individual plans. To learn more, see [Edit or man
 ::: moniker-end
 
 
-## Test management feature access   
+## Test management
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
@@ -105,62 +105,138 @@ The **Manage test plans** permission enables users to:
 - Change test plan properties such as build and test settings 
 
 
-## Resources defined for the project
+## Project-level resources  
 
 You set project-level information permissions from **Project settings** > **Permissions**. You set permissions for area and iteration paths under **Project settings**> **Project configuration**. These resources are defined for a project which all valid users of the project can view. 
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Team Admins</th>
-<th width="16%">Account Owner/<br/>Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
 
-
-<tr>
-<td align="left">Area node: <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Edit work items under the node](../../organizations/settings/set-area-paths.md)">Edit work items under the node</a> 
-</td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-</tr>
-
-
-<tr>
-<td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[Edit project-level information](set-project-collection-level-permissions.md)">Edit project-level information</a><br/></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td><p>&nbsp;&nbsp;</p></td>
-<td>✔️</td>
-</tr>
-
-
-</tbody>
-</table>
-
+---
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Team Admins**
+   :::column-end:::
+   :::column span="1":::
+     **Project Admins**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [View project-level information](set-project-collection-level-permissions.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Edit work items under the node](../../organizations/settings/set-area-paths.md)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Edit project-level information](set-project-collection-level-permissions.md)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
 
 The **Edit project-level information** permission includes the ability to perform these tasks for the project:
 - Create and modify areas and iterations  
@@ -286,7 +362,8 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 
 ## Related notes 
 
-- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)  
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
 - [Manage teams and configure team tools](../settings/manage-teams.md)
+- [Work item form IndexDB caching issues](../settings/work/troubleshoot-work-item-form-caching-issues.md)  

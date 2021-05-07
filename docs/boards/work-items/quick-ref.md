@@ -4,8 +4,7 @@ titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-work-items  
 ms.technology: devops-agile
-ms.assetid:
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -42,7 +41,7 @@ Use this index to quickly access concepts related to work items and information 
       - [Dependencies](../best-practices-agile-project-management.md#manage-dependencies)  
       - [Delivery plans](../backlogs/backlogs-boards-plans.md)  
       <br/>
-      - [Filtering](../backlogs/filter-backlogs.md)  
+      - [Filtering](../backlogs/filter-backlogs-boards-plans.md)  
       - [Following](follow-work-items.md)  
       - [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)  
       - [Iteration Paths](../../organizations/settings/about-areas-iterations.md)  

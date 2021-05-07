@@ -54,11 +54,14 @@ steps:
     artifact:  A1 # name of the artifact to download; optional; defaults to all artifacts
 ```
 
-For more details, see the downloading artifacts documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops#downloading-artifacts).
+For more details, see the downloading artifacts documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops&preserve-view=true#downloading-artifacts).
 
 ### Bitbucket integration and other improvements in getting started with pipelines
 
-The getting-started wizard experience for Pipelines has been updated to work with Bitbucket repositories. Azure Pipelines will now analyze the contents of your Bitbucket repository and recommend a YAML template to get you going.
+The getting-started wizard experience for Pipelines has been updated to work with Bitbucket repositories. Azure Pipelines will now analyze the contents of your Bitbucket repository and recommend a YAML template to get you going. 
+
+> [!NOTE]
+> Bitbucket support is for Azure DevOps Services only.
 
 A common ask with the getting-started wizard has been the ability to rename the generated file. Currently, it is checked in as `azure-pipelines.yml` at the root of your repository. You can now update this to a different file name or location before saving the pipeline.
 

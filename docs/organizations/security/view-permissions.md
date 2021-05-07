@@ -18,7 +18,7 @@ ms.date: 07/22/2019
 
 Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and inheritance](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [Get started with permissions, access, and security groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
 
 > [!NOTE]
@@ -196,8 +196,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
 <li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
@@ -223,6 +223,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
 

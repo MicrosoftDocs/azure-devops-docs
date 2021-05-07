@@ -4,8 +4,6 @@ description: Execute tools from a command prompt when building code in Azure Pip
 ms.topic: reference
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 02/13/2020
 monikerRange: '>= tfs-2015'
 ---

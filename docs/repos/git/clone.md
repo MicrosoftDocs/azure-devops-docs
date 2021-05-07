@@ -14,7 +14,7 @@ monikerRange: '<= azure-devops'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create a complete local copy of an existing Git repository by cloning it.
-Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo.
+Cloning a repo downloads all [commits](commits.md) and [branches](./create-branch.md) in the repo.
 Cloning sets up a named relationship with the existing repo you cloned.
 Use this relationship to interact with the existing repo, [pushing](pushing.md) and [pulling](pulling.md) changes to share code with your team.
 
@@ -46,7 +46,7 @@ If you're using Azure Repos, Azure DevOps Server 2019, or Team Foundation Server
 
 1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, then **Files**.
 
-   ![Repos files](../get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/clone-repo/repos-files.png)
 
 1. Select **Clone** in the upper right.
 

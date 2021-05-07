@@ -4,8 +4,6 @@ description: Extract files from archives to a target folder using minimatch patt
 ms.topic: reference
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -64,6 +62,10 @@ None
 <tr>
 <td>Overwrite files in the destination directory</td>
 <td>Select this option to overwrite files in the output directory if they already exist.</td>
+</tr>
+<tr>
+<td>Path to 7z utility</td>
+<td>You can specify custom path to 7z utility using this option. If it's not specified on Windows - default 7zip version supplied with a task will be used.</td>
 </tr>
 <tr>
 </tr>

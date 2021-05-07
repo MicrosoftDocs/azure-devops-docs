@@ -11,7 +11,7 @@ ms.date: 02/14/2020
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
-1. In the Azure Portal, choose **Create a resource**, **Web**, then choose **Web App for Containers**.    
+1. In the Azure Portal, choose **Create a resource**, **Containers**, then choose **Web App for Containers**.    
 
 1. Enter a name for your new web app, and select or create a new Resource Group. For the **OS**, choose **Linux**.
 

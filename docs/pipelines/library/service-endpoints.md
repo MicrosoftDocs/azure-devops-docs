@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 01/13/2021
+ms.date: 03/31/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -266,7 +266,7 @@ Defines and secures a connection to another Azure DevOps organization.
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   (authentication)    |                                                                                                              Select **Basic** or **Token Based** authentication.                                                                                                               |
 |    Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-|    Connection URL     |                                                                                                           Required. The URL of the TFS or Azure Pipelines instance.                                                                                                            |
+|    Connection URL     |                                                                                                           Required. The URL of the TFS or the other Azure DevOps organization.                                                                                                         |
 |       User name       |                                                                                                   Required for Basic authentication. The username to connect to the service.                                                                                                   |
 |       Password        |                                                                                                  Required for Basic authentication. The password for the specified username.                                                                                                   |
 | Personal Access Token |                      Required for Token Based authentication (TFS 2017 and newer and Azure Pipelines only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                       |
@@ -584,7 +584,7 @@ kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={
 The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
 
 ```
-kubectl get secret <service-account-secret-name> -n <namespace> -o yaml
+kubectl get secret <service-account-secret-name> -n <namespace> -o json
 ```
 
 Copy and paste the Secret object fetched in YAML form into the Secret text-field.

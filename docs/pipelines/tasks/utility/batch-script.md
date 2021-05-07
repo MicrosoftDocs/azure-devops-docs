@@ -4,8 +4,6 @@ description: Execute .bat or .cmd scripts when building your code in Azure Pipel
 ms.topic: reference
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 02/18/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -40,7 +38,7 @@ Optionally, allow it to permanently modify environment variables.
 
 |Argument|Description|
 |--- |--- |
-|`filename`<br/>Path|(Required) Path of the cmd or bat script to execute. Should be fully qualified path or relative to the default working directory|
+|`filename`<br/>Path|(Required) Path of the cmd or bat script to execute. Should be fully qualified path or relative to the default working directory (please note that working directory could differ from 'workingFolder' which could be specified for this task).|
 |`arguments`<br/>Arguments|(Optional) Specify arguments to pass to the script.|
 |`modifyEnvironment`<br/>Modify environment|(Optional) Determines whether environment variable modifications will affect subsequent tasks <br/>Default value: `False`|
 |`workingFolder`<br/>Working folder|(Optional) Current working directory when script is run. Defaults to the agent's default working directory|

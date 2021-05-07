@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020  
+ms.date: 03/05/2021
 ---
 
 # Create a Wiki for your project
@@ -39,8 +39,9 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker range="azure-devops"
 
-* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).  
-*  You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
+* You must have a team project. If you don't have a team project yet, create one in [Azure DevOps](../../organizations/accounts/set-up-vs.md).
+* You must have at least Basic access to create and modify a wiki.
+* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
@@ -48,7 +49,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 ::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
-* You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
+* You must have the permission **Create Repository** to publish code as wiki. By default, this permission is set for members of the [Project Administrators group](../../repos/git/set-git-repository-permissions.md). 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki.
 
 ::: moniker-end
@@ -107,7 +108,7 @@ The URL of the wiki Git repository is exposed. Copy and paste it into your web b
 
 ::: moniker range=">= azure-devops-2020"
 
-You can create a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can create a wiki with the [az devops wiki create](/cli/azure/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 > [!NOTE]
 > If you want to provision more than one wiki, then you must [publish code as a wiki](./publish-repo-to-wiki.md#publish-a-git-repository-to-a-wiki). You can set up multiple wiki repos within a single project.

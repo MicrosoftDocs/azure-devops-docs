@@ -83,6 +83,7 @@ If a pipeline is delayed or blocked by rate limiting, a message appears in the a
 
 <!---
 ### Work item tracking request limits
+
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
@@ -98,6 +99,7 @@ To avoid hitting these limits, we recommend:
 - Reducing the frequency of running applications which make many WIT requests.
 
 As discussed above, we expect to add additional rate limits over time. And we always reserve the right to slow down or block usage which we believe to be abusive.  
+
 --> 
 
 
@@ -110,19 +112,77 @@ The following table lists the headers available and what they mean.
 Except for `X-RateLimit-Delay`, all of these headers get sent before requests start getting delayed.
 This design gives clients the opportunity to proactively slow down their rate of requests.
 
-| Header name | Description |
-|-------------|-------------|
-| `Retry-After` | The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4")-specified header sent to tell you how long to wait before you send your next request to fall under the detection threshold. Units: seconds. |
-| `X-RateLimit-Resource` | A custom header indicating the service and type of threshold that was reached. Threshold types and service names may vary over time and without warning. We recommend displaying this string to a human, but not relying on it for computation. |
-| `X-RateLimit-Delay` | How long the request was delayed. Units: seconds with up to 3 decimal places (milliseconds). |
-| `X-RateLimit-Limit` | Total number of TSTUs allowed before delays are imposed. |
-| `X-RateLimit-Remaining` | Number of TSTUs remaining before being delayed. If requests are already being delayed or blocked, it's 0. |
-| `X-RateLimit-Reset` | Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs. Expressed in Unix epoch time. |
+
+
+:::row:::
+   :::column span="1":::
+      **Header name** 
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `Retry-After`
+   :::column-end:::
+   :::column span="2":::
+       The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4")-specified header sent to tell you how long to wait before you send your next request to fall under the detection threshold. Units: seconds.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `X-RateLimit-Resource`
+   :::column-end:::
+   :::column span="2":::
+       A custom header indicating the service and type of threshold that was reached. Threshold types and service names may vary over time and without warning. We recommend displaying this string to a human, but not relying on it for computation.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `X-RateLimit-Delay` 
+   :::column-end:::
+   :::column span="2":::
+       How long the request was delayed. Units: seconds with up to 3 decimal places (milliseconds). 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `X-RateLimit-Limit`
+   :::column-end:::
+   :::column span="2":::
+       Total number of TSTUs allowed before delays are imposed.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      `X-RateLimit-Remaining`
+   :::column-end:::
+   :::column span="2":::
+       Number of TSTUs remaining before being delayed. If requests are already being delayed or blocked, it's 0.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       `X-RateLimit-Reset`
+   :::column-end:::
+   :::column span="2":::
+       Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs. Expressed in Unix epoch time. 
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 ### Recommendations
 
-We recommend that you at least respond to the `Retry-After` header.
-If you detect a `Retry-After` header in any response, wait until that amount of time has passed before sending another request.
+We recommend that you at least respond to the `Retry-After` header. 
+If you detect a `Retry-After` header in any response, wait until that amount of time has passed before sending another request. 
 Doing so helps your client application experience fewer enforced delays.
 
 If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers.

@@ -1,0 +1,144 @@
+### YamlMime:FAQ
+metadata:
+  title: FAQs about getting extensions for Azure DevOps
+  description: Frequently asked questions about getting and paying for extensions for Azure DevOps 
+  titleSuffix: Azure DevOps
+  ms.technology: devops-marketplace
+  ms.author: chcomley
+  author: chcomley
+  ms.topic: troubleshooting
+  monikerRange: '>= tfs-2015'
+  ms.date: 03/15/2021
+
+
+title: FAQs for acquiring Azure DevOps extensions 
+
+ 
+summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**  
+
+  Find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions.  
+
+sections:
+  - name: General
+     
+    questions: 
+
+      - question: Who can install extensions?
+        answer: |
+          A member of the Project Collection Administrators group can install extensions. If you don't have permissions, but you're a project member, 
+          you can [request extensions](request-extensions.md) instead.
+ 
+      - question: How do I find a member of the Project Administrators group?
+        answer: |
+          See [Increase permission levels, find an admin](../organizations/security/lookup-organization-owner-admin.md).  
+  
+      - question: Why don't I see my organization from the Marketplace install page? 
+        answer: |
+          If you don't see your organization when buying from the Azure DevOps Marketplace, try these steps:
+
+          1. Check the identity that you use to sign in to the Visual Studio Marketplace. In the upper-right corner, select your user name to view your profile. 
+          1. On the left, make sure your email address and directory are correct.
+          1. Close all browser windows.
+          1. Open a private or incognito browsing session.
+          1. Sign in to the Visual Studio Marketplace. Use the identity of a user in the organization that you want.
+
+          > [!TIP]
+          > If you're asked to choose "work or school account" or "personal account", then you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions.
+          > 
+          > Choose the identity for the user in the organization that you want to select.
+ 
+      - question: Why can't I install an extension?
+        answer: |
+          You can't install extensions for one of the following reasons.  
+          - You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md). If you don't have permissions, but you're a project member, you can [request extensions](request-extensions.md) instead.
+          - If you get an "already installed or requested" error check with your Project Collection Administrator, and ask them to assign the extension to you.  
+
+      - question: Why can't users access extension features?
+        answer: |
+          Users may be unable to access an extension for one of the following reasons:  
+          - Most extensions require that users have at least Basic access, not Stakeholder. For example, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but each user must have at least Basic access to search for code. To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web), but you'll get different capabilities based on your access level and whether you work offline or connected to Azure DevOps Services or on-premises Azure DevOps Server. For more details, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
+
+          - If you're using an organization, and you started a free extension trial, your trial might have expired. To check whether your trial expired:
+              1. On your organization toolbar, go to **Users**.
+              2. Go to the extension pane.
+              3. Check for an expiration message to find if or when your extension expired.
+
+          - If you're using an organization, and you paid for this extension, make sure that you assigned this extension to users.
+              1. On your organization toolbar, go to **Users**.
+              2. Go to the extension pane.
+              3. Check whether the extension is assigned to the user. If it is not, assign the extension to the user.
+
+          Learn more about [assigning extensions to users](../marketplace/install-extension.md).
+
+
+
+      - question: What happened to my preview extension?
+        answer: |
+          Your extension imay have been moved out of preview. After a preview period, an extension longer is generally available as a paid extension. A grace period may be offered before you have to buy the extension. All preview extensions automatically convert to a [free trial](../organizations/billing/try-additional-features-vs.md) before you have to buy the extension.
+
+  - name: Install extension on-premises
+
+    questions: 
+      - question: Why can't I install extensions for Azure DevOps Server?  (on-premises)
+        answer: |
+          You can't install extensions for Azure DevOps Server for one of the following reasons:
+          - You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+          - If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
+ 
+      - question: Why don't I see the project collection I want? (on-premises)
+        answer: |
+          You must be a member of your project collection. Follow these steps to check your identity that you use to sign in to the Marketplace.
+
+          1. On your Azure DevOps Server web portal home page (```https://{server}:8080/tfs/```), go to the top-right corner of the page, and select your user name to view your profile.
+          2. On the left side of your profile, make sure that your email address and directory are correct.
+          3. Close all browser windows.
+          4. Open a private or incognito browsing session.
+          5. Sign in to your Azure DevOps Server home page (```https://{server}:8080/tfs/```) with the identity that's a user in the project collection where you want to install the extension.
+
+          If you're asked to choose "work or school organization" or "personal account", this means you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
+
+          6. From your project collection, go to the Marketplace.
+
+      - question: Why doesn't the extension that I want show a download button? (on-premises)
+        answer: |
+          Some extensions work only with Azure DevOps Services for one of the following reasons:  
+          - The extension uses Azure DevOps features that aren't released yet for Azure DevOps Server.
+          - The [extension manifest](../extend/develop/manifest.md) indicates that the extension is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Services.Cloud).
+          - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
+
+      - question: Why can't I upload extensions to Azure DevOps Server? (on-premises)
+        answer: |
+          You must be a member of the [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) for the Azure DevOps Server where you want to upload extensions.
+
+  - name: Marketplace support
+
+    questions: 
+      - question: How do I get support for Azure subscriptions and billing?
+        answer: |
+          See these [articles about Azure billing and subscriptions](/search/?scope=%22Azure+DevOps%22&terms=billing), the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/en-us/pricing/faq/), or try [Azure Support](https://azure.microsoft.com/support/options/).
+
+      - question: How do I get support for the  Azure DevOps Marketplace?
+        answer: |
+          Depending on the support you need, choose from the following:
+          - Billing questions -- [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
+          - Visual Studio subscriptions -- [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
+          - Help with Azure DevOps -- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
+          - General Marketplace help -- [Contact the Azure DevOps Marketplace team](mailto:vsmarketplace@microsoft.com)
+
+      - question: How do I get support for the Marketplace?
+        answer: |
+          Depending on the support you need, choose from the following links:
+          - Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
+          - Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
+          - Help with Azure DevOps - [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
+          - General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
+
+additionalContent: | 
+  ## Related articles
+  - [Azure DevOps billing overview](../organizations/billing/overview.md)
+  - [Azure DevOps billing FAQ](../organizations/billing/billing-faq.yml)
+  - [How to pay for Azure DevOps Server users](../organizations/billing/buy-access-tfs-test-hub.md)
+  - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
+  - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)  
+

@@ -21,7 +21,7 @@ Here all notifications related to a the pull request are threaded together in th
 
 ### Delete bulk subscriptions created in a Microsoft Teams or Slack channel
 
-Currently, you can [create bulk subscriptions](../../../2019/sprint-161-update.md#create-bulk-subscriptions-in-azure-pipelines-app-for-slack-and-microsoft-teams) in the Azure Pipelines and Azure Repos app for Microsoft Teams and Slack. Now, you can quickly delete all the subscriptions created for individual pipelines or repositories in a channel. You can use the **unsubscribe all** command to delete all subscriptions in a channel for a given project. For more details, see the documentation [here](/azure/devops/service-hooks/services/workplace-messaging-apps?view=azure-devops).
+Currently, you can [create bulk subscriptions](../../../2019/sprint-161-update.md#create-bulk-subscriptions-in-azure-pipelines-app-for-slack-and-microsoft-teams) in the Azure Pipelines and Azure Repos app for Microsoft Teams and Slack. Now, you can quickly delete all the subscriptions created for individual pipelines or repositories in a channel. You can use the **unsubscribe all** command to delete all subscriptions in a channel for a given project. For more details, see the documentation [here](/azure/devops/service-hooks/services/workplace-messaging-apps?view=azure-devops&preserve-view=true).
 
 To delete all the subscriptions in a channel for a given project in the Azure Pipelines app for Microsoft Teams use the following command. 
  

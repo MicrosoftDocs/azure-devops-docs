@@ -41,7 +41,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 
 1. In your repository on GitHub, create a new YAML file in the .github/workflows directory.
 
-1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. 
+1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. The `azure-devops-project-url` should not have a trailing slash.
 
     ```yaml
     name: CI

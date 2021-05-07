@@ -1,7 +1,7 @@
 ---
 title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18, devx-track-azurecli
+ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -55,7 +55,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 6. Removing a user from the organization doesn't remove their memberships to any security groups. If the user is a member of an access-granting security group, then the user still has access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
 7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
@@ -94,7 +94,7 @@ Choose the **Current page** tab for instructions.
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.yml#users-delay)
 
 7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
@@ -119,7 +119,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 ### Remove a user 
 
-You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can remove a user from an organization by using the [az devops user remove](/cli/azure/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user add --user
@@ -158,5 +158,5 @@ To remove users from a project, remove them from the **Teams** groups they belon
 - [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
 - [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
+- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.yml)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)

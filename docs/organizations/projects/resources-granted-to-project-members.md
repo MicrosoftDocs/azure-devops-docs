@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
---- 
+ms.date: 02/17/2021
+---
 
 # Resources granted to project members
 
@@ -26,7 +26,7 @@ If someone is not already a member of your organization, when you add them to a 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -51,7 +51,7 @@ Those resources include those defined at the organization-level (cloud) or proje
   ![Edit field release in feature](media/edit-field-release-in-feature.png)
 
 * When the WIT Client OM is used, which includes the usage of Excel and Visual Studio integration, it stores sensitive information in a cache on the local disk. This cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
-* When a user is added to the project-level Build Administrators group, they have the ability to create pipelines which run with project collection (account-wide) scope. A pipeline with project collection scope may access resources in another project, such as Git repositories, that the user cannot. (You can change this by [removing the Read permission from Project Collection Build Service](../security/set-git-tfvc-repository-permissions.md#pcbs-has-read-by-default)).
+* When a user is added to the project-level Build Administrators group, they have the ability to create pipelines which run with project collection (account-wide) scope. A pipeline with project collection scope may access resources in another project, such as Git repositories, that the user cannot. (You can change this by [removing the Read permission from Project Collection Build Service](../../repos/git/set-git-repository-permissions.md#pcbs-has-read-by-default)).
 
 ## The trust decision
 

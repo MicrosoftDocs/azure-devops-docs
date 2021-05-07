@@ -7,8 +7,8 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/17/2020
----
+ms.date: 02/16/2021
+--- 
 
 # About settings for users, teams, projects, or organizations
 
@@ -395,7 +395,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
    :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -413,7 +413,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
    :::column-end:::
    :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -492,7 +492,8 @@ From the administrative **Project settings** page, you can configure settings av
    :::column-end:::
    :::column span="2":::
       - [Create additional Git repositories](../../repos/git/creatingrepo.md)
-      - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)
+      - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
+      - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
       - [Manage branch policies](../../repos/git/branch-policies.md)
       - [Add Team Foundation Version Control (TFVC) Check-In Policies](../../repos/tfvc/add-check-policies.md)
    :::column-end:::
@@ -630,7 +631,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access Organization Settings aother than the **Overview** and **Projects** pages.   To learn more, see [About projects and scaling your organization, Project-scoped User group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access **Organization Settings** other than the **Overview** and **Projects** pages. To learn more, see [About projects and scaling your organization, Limit user visibility for projects using the Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 
 > [!div class="mx-imgBorder"]  
@@ -848,7 +849,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -864,7 +865,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Add administrators, set collection-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [Get started with permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---

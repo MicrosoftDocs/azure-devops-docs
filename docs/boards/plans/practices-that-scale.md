@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 07/14/2020
 ---
@@ -25,7 +25,7 @@ Enterprise organizations adopt Agile practices for a number of reasons. Prime am
 
 As your organization grows, you'll want to scale your practices to remain agile and meet changing goals. To do that, consider these two guiding principles:   
 - **What does success look like** to you, your teams, and your organization? What's of most interest: On-time delivery? Product quality? Predictability? Customer satisfaction? 
-- **Return to first principles**, return to the principles and shared values enumerated in the [Agile manifesto](http://www.agilemanifesto.org/principles.html) As noted by [Ken Schwaber](https://kenschwaber.wordpress.com), one of the founders of Scrum:  
+- **Return to first principles**, return to the principles and shared values enumerated in the [Agile manifesto](https://agilemanifesto.org/principles.html) As noted by [Ken Schwaber](https://kenschwaber.wordpress.com), one of the founders of Scrum:  
 	- "Values and principles scale, but practices are context sensitive."  
 	- "Keep the values, keep the principles, think for yourself.  A core premise of Agile is that the people doing the work are the people who can best figure out how to do it." 
 
@@ -100,7 +100,7 @@ You improve organizational effectiveness by attending to the culture you want to
 ## Working software
 
 > *"Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."*   
-> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)   
+> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](https://agilemanifesto.org/principles.html)   
 
 As the amount of software, features, and complexity increase, you'll need to adopt practices that help you produce consumable solutions.  
  
