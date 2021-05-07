@@ -7,7 +7,7 @@ ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2017'
 ms.date: 05/06/2021
 ---
 
@@ -16,9 +16,13 @@ ms.date: 05/06/2021
 
 # Review team Delivery Plans 
 
-**Azure Boards |** [**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**](../extensions/delivery-plans.md) 
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
+
+
+> [!NOTE]   
+> This article describes using Delivery Plans 2.0 which is available for Azure DevOps Services. The next update of Azure DevOps Server, update 2, will support Delivery Plans 2.0.  For information on the Delivery Plans Marketplace extension which supports TFS 2017 and later Azure DevOps Server versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
 
 Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more. 
 

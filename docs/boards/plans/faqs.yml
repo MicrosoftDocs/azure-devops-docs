@@ -148,6 +148,9 @@ sections:
           :::row-end:::
           ---
 
+      - question: Can I use Delivery Plans 2.0 with Azure DevOps Server 2020?
+        answer: |
+          Not at this time. Delivery Plans 2.0 will be made available with Azure DevOps Server 2020 update 2. 
 
       - question: Why don't my work items show on the plan?
         answer: |

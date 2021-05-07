@@ -5,7 +5,7 @@ description: Learn how to add or edit a Delivery Plan
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2017'
 ms.date: 05/06/2021
 ---
 
@@ -13,7 +13,7 @@ ms.date: 05/06/2021
 
 # Add or edit a Delivery Plan 
 
-**Azure Boards |** [**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**](../extensions/delivery-plans.md) 
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can perform, see [Review team Delivery Plans](review-team-plans.md). 
 
@@ -22,6 +22,10 @@ Use this article to learn how to perform these tasks:
 - Open a plan from the list of defined plans 
 - Add and edit a plan
 - Add field criteria, customize cards, and add markers
+
+
+> [!NOTE]   
+> This article describes how to add or edit Delivery Plans 2.0 which is available for Azure DevOps Services. The next update of Azure DevOps Server, update 2, will support Delivery Plans 2.0.  For information on the Delivery Plans Marketplace extension which supports TFS 2017 and later Azure DevOps Server versions, see [Delivery Plans 1.0](../extensions/delivery-plans.md). 
 
 ## Prerequisites
 
