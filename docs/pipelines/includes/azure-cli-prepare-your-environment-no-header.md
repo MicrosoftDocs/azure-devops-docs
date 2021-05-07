@@ -9,7 +9,7 @@ ms.custom: devx-track-azurecli
 
 - Use the Bash environment in [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
-   [![Launch Cloud Shell in a new window](media/cloud-shell-try-it/hdi-launch-cloud-shell.png)](https://shell.azure.com)
+   [![Launch Cloud Shell in a new window](../media/hdi-launch-cloud-shell.png)](https://shell.azure.com)
 - If you prefer, [install](/cli/azure/install-azure-cli) the Azure CLI to run CLI reference commands.
 
   - If you're using a local installation, sign in to the Azure CLI by using the [az login](/cli/azure/reference-index#az_login) command.  To finish the authentication process, follow the steps displayed in your terminal.  For additional sign-in options, see [Sign in with the Azure CLI](/cli/azure/authenticate-azure-cli).
