@@ -18,20 +18,6 @@ An advantage of using Team Foundation version control to manage your files is th
 
 Although it can be frustrating to encounter conflicts, the system provides information and tools to help you understand and resolve conflicts.
 
--   [Resolve conflicts](resolve-team-foundation-version-control-conflicts.md#manage_items)
-
--   [AutoResolve all conflicts](resolve-team-foundation-version-control-conflicts.md#autoresolve)
-
--   [AutoMerge an individual conflict](resolve-team-foundation-version-control-conflicts.md#automerge)
-
--   [Manually resolve an individual conflict](resolve-team-foundation-version-control-conflicts.md#manual)
-
--   [Understand the automatic options](resolve-team-foundation-version-control-conflicts.md#automatic_options)
-
--   [Work from the command prompt](resolve-team-foundation-version-control-conflicts.md#command_prompt)
-
--   [Get tips](resolve-team-foundation-version-control-conflicts.md#tips)
-
 <a name="manage_items"></a>
 
 ## Resolve conflicts
