@@ -2,19 +2,17 @@
 title: TF30005-The New Team Project Wizard group... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a project.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF30005: The New Team Project Wizard group security component could not connect to the Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard is unable to connect to the application-tier server {*name*} while creating a project. An active connection cannot be made due to one of the following conditions:  
   

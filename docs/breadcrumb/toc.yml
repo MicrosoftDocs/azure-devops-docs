@@ -11,7 +11,7 @@
     items: 
     - name: Get started 
       tocHref: /azure/devops/boards/get-started/
-      topicHref: /azure/devops/boards//get-started/index
+      topicHref: /azure/devops/boards/get-started/index
     - name: Azure Boards & GitHub 
       tocHref: /azure/devops/boards/github/
       topicHref: /azure/devops/boards/github/index
@@ -21,6 +21,9 @@
     - name: Boards 
       tocHref: /azure/devops/boards/boards
       topicHref: /azure/devops/boards/boards/kanban-overview
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
     - name: Backlogs
       tocHref: /azure/devops/boards/backlogs
       topicHref: /azure/devops/boards/backlogs/backlogs-overview
@@ -34,7 +37,7 @@
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
-      tocHref: /azure/devops/boards/backlogs/office/
+      tocHref: /azure/devops/boards/backlogs/office/track-work
       topicHref: /azure/devops/boards/backlogs/office/track-work
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/
@@ -46,9 +49,6 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/what-is-azure-devops
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
@@ -64,28 +64,66 @@
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
-  - name: Configure & customize
+  - name: Settings, Security & Usage
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
-  - name: Security, access, & billing
-    tocHref: /azure/devops/security-access-billing/
-    topicHref: /azure/devops/security-access-billing/index
-  - name: Collaborate
+    items:
+    - name: Security, membership, & access
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/organizations/security/about-security-identity
+    - name: Organizations
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/organizations/accounts/organization-management
+    - name: Billing
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/organizations/billing/overview?view=azure-devops
+    - name: Projects
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/projects/about-projects
+    - name: Audit
+      tocHref: /azure/devops/organizations/audit/ 
+      topicHref: /azure/devops/organizations/audit/azure-devops-auditing 
+    - name: Notifications
+      tocHref: /azure/devops/notifications
+      topicHref: /azure/devops/notifications/about-notifications
+  - name: Azure Boards customization 
+    tocHref: /azure/devops/reference/
+    topicHref: /azure/devops/reference/index
+    items:
+    - name: Inherited process
+      tocHref: /azure/devops/organizations/settings/work/ 
+      topicHref: /azure/devops/organizations/settings/work/inheritance-process-model
+    - name: On-premises XML process
+      tocHref: /azure/devops/reference/xml/ 
+      topicHref: /azure/devops/reference/on-premises-xml-process-model
+    - name: Hosted XML process
+      tocHref: /azure/devops/organizations/settings/work/hosted 
+      topicHref: /azure/devops/reference/on-premises-xml-process-model
+    - name: Process templates
+      tocHref: /azure/devops/reference/process-templates/ 
+      topicHref: /azure/devops/reference/process-templates/customize-process 
+    - name: witadmin 
+      tocHref: /azure/devops/reference/witadmin/ 
+      topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
+  - name: Cross-service, Search, Wikis, Public Projects
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
     items:
+    - name: Cross-service
+      tocHref: /azure/devops/cross-service/
+      topicHref: /azure/devops/cross-service/end-to-end-traceability
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/index
     - name: Wikis
       tocHref: /azure/devops/project/wiki/
       topicHref: /azure/devops/project/wiki/index
     - name: Public projects
       tocHref: /azure/devops/organizations/public/
       topicHref: /azure/devops/organizations/public/about-public-projects
-    - name: Search across Azure DevOps
-      tocHref: /azure/devops/project/search/
-      topicHref: /azure/devops/project/search/overview
-    - name: Feedback
-      tocHref: /azure/devops/project/feedback/
-      topicHref: /azure/devops/project/feedback/index
+    - name: Navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
@@ -102,12 +140,6 @@
     - name: Service hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/overview
-    - name: Additional integrations
-      tocHref: /azure/devops/boards/integrations/
-      topicHref: /azure/devops/boards/integrations/boards-slack
-    - name: Additional integrations
-      tocHref: /azure/devops/pipelines/integrations/
-      topicHref: /azure/devops/pipelines/integrations/slack
   - name: Developer resources
     tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index
@@ -116,5 +148,5 @@
       tocHref: /azure/devops/cli/
       topicHref: /azure/devops/cli/index
     - name: Demo Generator
-      tocHref: /azure/devops//demo-gen
+      tocHref: /azure/devops/demo-gen
       topicHref: /azure/devops/demo-gen/index

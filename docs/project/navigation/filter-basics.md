@@ -3,10 +3,8 @@ title: Filter lists, boards, and directories
 titleSuffix: Azure DevOps 
 description: Filter your view to focus on items of interest 
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -18,7 +16,7 @@ ms.date: 02/08/2019
 
 # Filter lists, boards, and directories 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 Several applications and pages support filtering, which is very useful when a large number of artifacts or items have been defined. Most directory views provide one or more filter functions. 
 
@@ -48,7 +46,7 @@ You can filter most items using keywords or a user name for an author of an item
 ::: moniker range=">= tfs-2018"
 ## Filter based on keywords, tags, or fields
 
-To turn filtering on, choose the ![ ](../../media/icons/filter-icon.png) filter icon. 
+To turn filtering on, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
@@ -93,7 +91,7 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 ::: moniker range=">= azure-devops-2019"
 ## Filter directories
 
-Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter a directory list by keyword, team, or other supported field. Keywords apply to titles, descriptions, and team names. 
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter a directory list by keyword, team, or other supported field. Keywords apply to titles, descriptions, and team names. 
 
 For example, here we turn filtering on for the dashboard directory. 
 
@@ -105,7 +103,6 @@ For example, here we turn filtering on for the dashboard directory.
 ## Related articles  
 - [Commit history](../../repos/git/commit-history.md)
 - [Working with Git tags](../../repos/git/git-tags.md)
-- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs.md)
-- [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
-- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md) 
-
+- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Filter your Kanban board](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md)

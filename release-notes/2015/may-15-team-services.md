@@ -1,7 +1,6 @@
 ---
 title: Build preview, updated backlog navigation, branch policies, and more... – May 15
 description: VSTS release notes for May 15 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
@@ -16,13 +15,13 @@ You might think that this would be a light deployment for us, given all the [ann
 
 ## Build Preview now publicly available
 
-The next version of our build system is now publicly available on Visual Studio Online. In addition to all of the [new capabilities](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/12/build-futures.aspx), you also have access to the Hosted queue, enabling you to run builds on Virtual Machines running in Azure. For our initial public preview, any builds you run in the hosted pool will not count against your 60 free build minutes or subscription.
+The next version of our build system is now publicly available on Visual Studio Online. In addition to all of the [new capabilities](https://devblogs.microsoft.com/devops/build-futures/), you also have access to the Hosted queue, enabling you to run builds on Virtual Machines running in Azure. For our initial public preview, any builds you run in the hosted pool will not count against your 60 free build minutes or subscription.
 
 ![New build system in preview](media/5_15_01.png)
 
 Included in the preview is support for building projects hosted in public or private GitHub repositories. You can now set up a continuous integration build in Visual Studio Online that kicks off when code is pushed to your GitHub repository. The build results page provides a link to the associated GitHub commits and the status of these commits updates based on the result of the build. You can also show the status of the build on your GitHub repository’s readme file or on your own web site. To enable, navigate to the **General** tab of your build definition and check the **Badge enabled** box. You can then embed the provided image URL onto a markdown or HTML page so users can see the latest status of the repository.
 
-To learn more, please visit [https://docs.microsoft.com/azure/devops/pipelines/index?view=azure-devops).
+To learn more, please visit [https://docs.microsoft.com/azure/devops/pipelines/index?view=azure-devops&preserve-view=true).
 
 ## Backlog navigation updates
 
@@ -46,7 +45,7 @@ We updated our three out-of-the-box process templates to include new fields and 
 
 ![New work item type, Epic](media/5_15_04.png)
 
-The Epic work item is also bound to a new optional backlog level. Using the steps above, you can turn/off this new level as desired. We also made a few process updates to address some usability issues. You can read more about the process changes in a [post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/14/scaled-agile-framework-visual-studio-online-process-template-updates.aspx) written by Gregg Boer.
+The Epic work item is also bound to a new optional backlog level. Using the steps above, you can turn/off this new level as desired. We also made a few process updates to address some usability issues. You can read more about the process changes in a [post](https://devblogs.microsoft.com/devops/scaled-agile-framework-visual-studio-online-process-template-updates/) written by Gregg Boer.
 
 ## Kanban and Taskboard improvements
 
@@ -90,7 +89,7 @@ To learn more about all the services, see [Integrate with service hooks](https:/
 
 ## Power BI & Visual Studio Online
 
-Finally, at the [BUILD](https://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/04/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) on how to get started.
+Finally, at the [BUILD](https://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](https://devblogs.microsoft.com/devops/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi/) on how to get started.
 
 ![Power BI integration](media/5_15_09.png)
 

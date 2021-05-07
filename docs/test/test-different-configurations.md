@@ -2,10 +2,8 @@
 title: Test different configurations
 description: Manual and exploratory testing - test different configurations with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Test different configurations
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Your users will probably install or run your app 
 on a wide variety of configurations, such as different 
@@ -29,7 +27,7 @@ for the configurations that you need.
 
 You might draw up a schematic matrix of the combinations that you want to test:
 
-![Test matrix of browser and operating system configurations](media/_shared/testing-configurations-schematic.png)
+![Test matrix of browser and operating system configurations](media/shared/testing-configurations-schematic.png)
 
 Then you can:
 
@@ -42,7 +40,7 @@ Then you can:
 > This feature is available only in Azure DevOps.
 > In addition, Stakeholders and Basic users cannot create or manage configurations.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="create-configs"></a>
 ## Create configurations and variables
@@ -55,7 +53,7 @@ might be "Windows 8 + 32-bit CPU" or "Windows 10 + 64-bit CPU."
 You must create the configuration variables first. Then combine 
 multiple variable values to create a configuration.
  
-1. Open the **Configurations** page in [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose 
+1. Open the **Configurations** page in [!INCLUDE [test-hub-include](includes/test-hub-include.md)], choose 
    the ![new](media/plus-and-arrow-icon.png) icon, and select 
    **New configuration variable**.
 
@@ -161,4 +159,4 @@ The same test case can have different configuration settings in different test s
 * [Overview of manual and exploratory testing](index.yml)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

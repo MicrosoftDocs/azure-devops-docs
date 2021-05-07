@@ -3,12 +3,9 @@ title: Control deployments by using gates
 ms.custom: seodec18
 description: Understand gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -67,7 +64,7 @@ The following gates are available by default:
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
 * **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
   given subscription and resource group, and optionally at a specific resource level. For more details, see
-  [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md).
+  [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md).
 
 You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
@@ -83,7 +80,7 @@ The evaluation options that apply to all the gates you've added are:
   For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
   This saves the system from evaluating the gate functions if the release is rejected by the user.
   For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
- This ensures the approvers have all the information required for a sign-off.
+ This ensures the approvers have all the information required to approve.
    
 For information about viewing gate results and logs, see
 [View the logs for approvals](../deploy-using-approvals.md#view-approvals) and
@@ -114,7 +111,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
+* [Security Compliance and Assessment task](../../tasks/deploy/azure-policy.md)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
@@ -129,5 +126,5 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 

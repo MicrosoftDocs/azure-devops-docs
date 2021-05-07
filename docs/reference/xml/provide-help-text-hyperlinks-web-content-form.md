@@ -2,18 +2,18 @@
 title: Help text, hyperlinks, web content 
 titleSuffix: TFS
 description: Customize your work item form to provide information or links to content.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: b6409e94-7e59-47a9-8a62-afdeeac8ad86
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 01/20/2017
 ---
 
 # Provide help text, hyperlinks, or web content on a work item form
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 When you customize your work item form, you may want to provide information or links to content that helps your team define the fields in the form. If you embed information in the form or make it easily available, team members will be better able to track useful data.  
 
@@ -22,7 +22,7 @@ By using the form controls that are described in this topic, you can add tooltip
 To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
 
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 ##  <a name="HelpTextA"></a> Provide help text or tooltip text  
  You can provide Help text in one of two ways. In the first method, you add the `HELPTEXT` element as a child to the `FIELD` element in the `FIELDS` section of the type definition. By using `HELPTEXT`, you create the tooltip for the field. You are limited to 255 characters with this method.  

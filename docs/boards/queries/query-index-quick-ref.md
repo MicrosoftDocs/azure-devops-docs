@@ -1,77 +1,181 @@
 ---
-title: Look up definitions and sample queries 
+title: Index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
-ms.assetid:  
-ms.topic: reference  
-ms.manager: mijacobs
+ms.topic: overview 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
 ---
 
 # Query quick reference 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
-Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+Use this index to quickly access example queries and information on opening, defining, and working with queries. To learn how to use the Query Editor, see [Define a query](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
+<a id="examples" />  
+
+## Example queries   
+
+You can list work items based on the following criteria...  
+
+
+---
+:::row:::
+   :::column span="1":::
+      **Keywords, wildcard queries**  
+      - [Keyword or phrase query with wildcards](titles-ids-descriptions.md#keyword)
+      - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
+      - [Empty or not empty HTML field queries](titles-ids-descriptions.md)
+      - [Category based queries](titles-ids-descriptions.md#category)  
+      - [Items you're following](titles-ids-descriptions.md#following)  
+      - [Recent activity work items](titles-ids-descriptions.md#recent-macros)  
+
+      **Tag based queries**  
+      ::: moniker range="azure-devops"
+      - [Items containing a specific tag](add-tags-to-work-items.md#query)
+      - [Items that don't contain a specific tag](add-tags-to-work-items.md#query)
+      - [Items that contain two or more tags](add-tags-to-work-items.md#query)  
+      - [Items that have no tag assignments](add-tags-to-work-items.md#no-tags)
+      - [Chart work items and group by tags](add-tags-to-work-items.md#group-by-tags)
+      ::: moniker-end   
+      ::: moniker range="< azure-devops"
+      - [Items containing a specific tag](add-tags-to-work-items.md#query)
+      - [Items that don't contain a specific tag](add-tags-to-work-items.md#query)
+      - [Items that contain two or more tags](add-tags-to-work-items.md#query)  
+      - [Items that have no tag assignments](add-tags-to-work-items.md#no-tags)
+      - [Chart work items and group by tags](add-tags-to-work-items.md#group-by-tags)
+      ::: moniker-end   
+
+      **State, reason, or workflow change queries**    
+      - [Resolved user stories](query-by-workflow-changes.md#workflow-change)
+      - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change)
+      - [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)
+      - [Items closed within the last 15 days](query-by-workflow-changes.md#workflow-change)
+      - [Items removed as they're duplicate](query-by-workflow-changes.md)
+      - [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)
+      - [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)
+      - [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)
+      - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields)  
+
+      **Date and iteration-based queries**   
+      - [Items created in the last 30 days](query-by-date-or-current-iteration.md)
+      - [Items modified on a specific date](query-by-date-or-current-iteration.md)
+      - [Items resolved today](query-by-date-or-current-iteration.md)
+      - [Items closed within a specific time period](query-by-date-or-current-iteration.md)
+      - [Items whose updated status](query-by-date-or-current-iteration.md)
+      - [Items closed in the current sprint](query-by-date-or-current-iteration.md)
+
+      **Link and attachment count queries**   
+      - [All child items of a single epic](linking-attachments.md)
+      - [All related items](linking-attachments.md)
+      - [Items with one or more attachments](linking-attachments.md)
+      - [Items with 2 or more hyperlinks](linking-attachments.md)
+      - [Items containing external links](linking-attachments.md)  
+	   :::column-end:::
+   :::column span="1":::
+
+      **Identity-based queries**  
+      - [Active items assigned to me](query-by-workflow-changes.md#me)
+      - [Closed items that were assigned to me](query-by-workflow-changes.md#me)
+      - [Active items assigned to my team](query-by-workflow-changes.md#me)
+      - [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
+      - [Items I closed](query-by-workflow-changes.md#workflow-change-who)
+      - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who) 
+      - [Team or group membership queries](query-by-workflow-changes.md#group) 
+      - [My recent activity work items](titles-ids-descriptions.md#recent-macros)   
+
+     **Work item count and numeric field queries**   
+      - [Count of active bugs per developer](query-numeric.md#counts)
+      - [Count of bugs by area and states](query-numeric.md#counts)
+      - [Sum of story points and their status](query-numeric.md#effort)
+      - [Burnup chart of user stories for a sprint](query-numeric.md#effort)
+      - [Sum of remaining work per developer](query-numeric.md#work)  
+
+      **History, Discussion, and revision-change queries**  
+      - [History contains a specific word](history-and-auditing.md)
+      - [History doesn't contain a specific word](history-and-auditing.md)
+      - [Reactivated items](history-and-auditing.md)
+      - [Items closed within a time period](history-and-auditing.md)
+      - [Items you've been associated with](history-and-auditing.md)  
+
+      **Team focus queries**
+      ::: moniker range=">= azure-devops-2019"
+      - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
+      - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
+      - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
+      - [Assigned to a team's sprint window](query-by-date-or-current-iteration.md#current-iteration-plus-minus-n)  
+      ::: moniker-end
+      ::: moniker range="<= tfs-2018"
+      - [Assigned to a member of a team](query-by-workflow-changes.md#group)
+      - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
+      ::: moniker-end
+
+      **Build and test field queries**  
+      - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
+      - [List automated test cases](build-test-integration.md)
+      - [List requirement-based test suites](build-test-integration.md)
+      - [List query-based test suites](build-test-integration.md) 
+      
+      **Other**  
+      - [List deleted work items (Recycle bin)](../backlogs/remove-delete-work-items.md#restore-or-destroy-work-items)
+   :::column-end:::
+:::row-end:::
+---
+
+<a id="tasks" />
+
 
 ## Query tasks 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<ul>
-<li><a href="using-queries.md" data-raw-source="[Add a query](using-queries.md)">Add a query</a></li>
-<li><a href="../../report/dashboards/charts.md" data-raw-source="[Add a query chart](../../report/dashboards/charts.md)">Add a query chart</a></li>
-<li><a href="../../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)">Add a query to a dashboard</a></li>
-<li><a href="organize-queries.md" data-raw-source="[Add a query folder](organize-queries.md)">Add a query folder</a></li>
-<li><a href="../backlogs/set-column-options.md" data-raw-source="[Add columns to query results](../backlogs/set-column-options.md)">Add columns to query results</a></li>
-<li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify query items](../backlogs/bulk-modify-work-items.md)">Bulk modify query items</a></li>
-<li><a href="using-queries.md#define-clause" data-raw-source="[Define a clause](using-queries.md#define-clause)">Define a clause</a> 
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Delete a query](view-run-query.md#view-rename-delete)">Delete a query</a></li>
-<li><a href="using-queries.md#directs-link-query" data-raw-source="[Direct-links query](using-queries.md#directs-link-query)">Direct-links query</a></li>
-<li><a href="using-queries.md" data-raw-source="[Edit a query](using-queries.md)">Edit a query</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
-<li><a href="view-run-query.md#email-query" data-raw-source="[Email a query](view-run-query.md#email-query)">Email a query</a></li>
-<li><a href="using-queries.md#export-query" data-raw-source="[Export a query](using-queries.md#export-query)">Export a query</a></li>
-<li><a href="view-run-query.md" data-raw-source="[Favorite a query](view-run-query.md)">Favorite a query</a></li>	
-<li><a href="../backlogs/filter-backlogs.md" data-raw-source="[Filter a query](../backlogs/filter-backlogs.md)">Filter a query</a></li>
-<li><a href="using-queries.md#flat-list-query" data-raw-source="[Flat-list query](using-queries.md#flat-list-query)">Flat-list query</a></li>
-<li><a href="using-queries.md#group-clauses" data-raw-source="[Group a clause](using-queries.md#group-clauses)">Group a clause</a></li>
-<li><a href="using-queries.md" data-raw-source="[Open a query](using-queries.md)">Open a query</a></li>
-<li><a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a></li>
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Rename a query](view-run-query.md#view-rename-delete)">Rename a query</a></li>
-<li><a href="using-queries.md" data-raw-source="[Run a query](using-queries.md)">Run a query</a></li>
-</ul>
-</td>
-<td width="34%">
-<ul>
-<li><a href="using-queries.md#flat-list-query" data-raw-source="[Save a query](using-queries.md#flat-list-query)">Save a query</a></li>
-<li><a href="set-query-permissions.md" data-raw-source="[Set query permissions](set-query-permissions.md)">Set query permissions</a></li>
-<li><a href="using-queries.md#tree-query" data-raw-source="[Tree query](using-queries.md#tree-query)">Tree query</a></li>
-<li><a href="triage-work-items.md" data-raw-source="[Triage query items](triage-work-items.md)">Triage query items</a></li>
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[View a query](view-run-query.md#view-rename-delete)">View a query</a></li>
-<li><a href="link-type-reference.md" data-raw-source="[Understand link types](link-type-reference.md)">Understand link types</a></li>
-<li><a href="using-queries.md#ungroup-clause" data-raw-source="[Ungroup a clause](using-queries.md#ungroup-clause)">Ungroup a clause</a> </li>
-<li><a href="wiql-syntax.md" data-raw-source="[Work Item Query Language (WIQL)](wiql-syntax.md)">Work Item Query Language (WIQL)</a> </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+
+---
+:::row:::
+   :::column span="1":::
+      - [Add a query](using-queries.md) 
+      - [Add a query chart](../../report/dashboards/charts.md) 
+      - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
+      - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
+      - [Add a query folder](organize-queries.md) 
+      - [Add columns to query results](../backlogs/set-column-options.md) 
+      - [Bulk modify query items](../backlogs/bulk-modify-work-items.md) 
+      - [Copy query URL](view-run-query.md#email-query) 
+      - [Define a clause](using-queries.md#define-clause) 
+      - [Delete a query](organize-queries.md#view-rename-delete) 
+      - [Direct-links query](using-queries.md#directs-link-query) 
+      - [Edit a query](using-queries.md) 
+   :::column-end:::
+   :::column span="1":::
+      - [Email a query](view-run-query.md#email-query) 
+      - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
+      - [Favorite a query](view-run-query.md) 
+      - [Filter a query](../backlogs/filter-backlogs-boards-plans.md) 
+      - [Flat-list query](using-queries.md#flat-list) 
+      - [Group a clause](using-queries.md#group-clauses) 
+      - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
+      - [Open a query](using-queries.md) 
+      - [Query across projects](using-queries.md#across-projects) 
+      - [Query based on tags](add-tags-to-work-items.md#query) 
+      - [Rename a query](organize-queries.md#view-rename-delete) 
+   :::column-end:::
+   :::column span="1":::
+      - [Run a query](using-queries.md) 
+      - [Save a query](organize-queries.md#save) 
+      - [Set query permissions](set-query-permissions.md) 
+      - [Tree query](using-queries.md#tree-query) 
+      - [Triage query items](triage-work-items.md) 
+      - [View a query](view-run-query.md) 
+      - [Understand link types](link-type-reference.md) 
+      - [Ungroup a clause](using-queries.md#ungroup-clause) 
+      - [Work Item Query Language (WIQL)](wiql-syntax.md) 
+   :::column-end:::
+:::row-end:::
+---
 
 <a id="fields-operators-macros" />
 
@@ -128,7 +232,7 @@ The following table indicates the operators and macros available for the differe
     <td><strong>Integer</strong></td>
     <td>Also includes <strong>picklistInteger</strong><sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.<p>Query samples: <a href="query-numeric.md" data-raw-source="[Query by numeric fields](query-numeric.md)">Query by numeric fields</a></p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>: <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong><sup>4</sup>, <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong><sup>5</sup>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong><sup>5</sup>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong><sup>6</sup>, valid when used with the <strong>ID</strong> field </p>
+    <p><strong>Macros</strong>: <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong><sup>4</sup>, <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong><sup>5</sup>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong><sup>5</sup>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong>, valid when used with the <strong>ID</strong> field </p>
 	</td>
 </tr>
 <tr>
@@ -138,10 +242,10 @@ The following table indicates the operators and macros available for the differe
 </tr>
 <tr>
 	<td><strong>String</strong> </td>
-    <td>Also includes <strong>picklistString</strong><sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the <strong>Title</strong> field, picklists (drop-down menus), user account ids, <strong>Tags</strong>, and other fields. <p>Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a> and <a href="planning-ranking-priorities.md" data-raw-source="[Query by picklist value](planning-ranking-priorities.md)">Query by picklist value</a>.</p></td>
+    <td>Also includes <strong>picklistString</strong><sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the <strong>Title</strong> field, picklists (drop-down menus), user accounts, <strong>Tags</strong>, and other fields. <p>Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a> and <a href="planning-ranking-priorities.md" data-raw-source="[Query by picklist value](planning-ranking-priorities.md)">Query by picklist value</a>.</p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
     <p><strong>Macros</strong>: <strong>[Any]</strong>, valid with the <strong>Work Item Type</strong> field<br/>
-    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>7</sup>, valid with the <strong>Team Project</strong> field </p>
+    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>6</sup>, valid with the <strong>Team Project</strong> field </p>
 	</td>
 </tr>
 <tr>
@@ -149,27 +253,30 @@ The following table indicates the operators and macros available for the differe
     <td><p>Field type that supports the <strong>Area Path</strong> and <strong>Iteration Path</strong> fields. You define the tree structure for a project&mdash;<a href="../../organizations/settings/set-area-paths.md" data-raw-source="[area paths](../../organizations/settings/set-area-paths.md)">area paths</a> and <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a>.</p> 
     <p>Query samples: <a href="query-by-area-iteration-path.md" data-raw-source="[Query by area or iteration path](query-by-area-iteration-path.md)">Query by area or iteration path</a> and <a href="query-by-area-iteration-path.md" data-raw-source="[Query by date or current iteration](query-by-area-iteration-path.md)">Query by date or current iteration</a>.</p></td>
 	<td>Under, Not Under
-    <p><strong>Macros</strong>: <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong><sup>8</sup>, valid with <strong>Area Path</strong> field<br/>
-    <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>9</sup> and<strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>10</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+    <p><strong>Macros</strong>: <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong><sup>7</sup>, valid with <strong>Area Path</strong> field<br/>
+    <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>8</sup> and<strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>9</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 
 </tbody>
 </table>
 
- 
+
 #### Notes:  
 
 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
-4. The <strong>@Follows</strong> macro is supported for TFS 2017 and later versions.
-5. The <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
-6. The <strong>@RecentProjectActivity</strong> macro is supported for Azure Boards only at this time.
-7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
-9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+4. The **@Follows** macro is supported for TFS 2017 and later versions.
+5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples" />
 

@@ -3,11 +3,7 @@ title: Label Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Label Command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Updated: October 2011
 
@@ -61,7 +57,7 @@ itemspec [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Identifies the file or folder from which to label, re-label, or modify. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -75,7 +71,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>versionspec</i></p></td>
-<td><p>Provides a value such as c2 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td>
+<td><p>Provides a value such as c2 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>comment</i></p></td>
@@ -91,7 +87,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +127,7 @@ Labels are version-specific, that is, you can only attach a label to one version
 
 A label is not a versioned object; therefore, the label history of files is not tracked. Additionally, a label operation does not create a pending change in your workspace. When you issue the **label** command, the update is immediately reflected in the Team Foundation version control server.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Removing and Deleting Labels
 
@@ -179,27 +175,12 @@ The following example uses the scope option to apply a label to 314.cs.
 c:\projects>tf label goodbuild@$/TeamProject1 314.cs
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
-
-[Labels Command](labels-command.md)
-
-[Unlabel Command](unlabel-command.md)
-
-#### Concepts
-
-[Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-
-[Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
-## Change History
-
-| Date | History | Reason |
-|---|---|---|
-| October 2011 | Removed incorrect guidance on `/child` option. | Content bug fix. |
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Labels Command](labels-command.md)
+- [Unlabel Command](unlabel-command.md)
+- [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
+- [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+ 

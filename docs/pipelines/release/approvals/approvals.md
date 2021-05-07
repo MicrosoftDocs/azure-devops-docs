@@ -3,22 +3,19 @@ title: Control deployments by using approvals
 ms.custom: seodec18
 description: Understand release approvals in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release deployment control using approvals
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When a release is created from a release pipeline that defines
@@ -40,7 +37,7 @@ how to define and use approvals, see [Add approvals within a release pipeline](.
 
 You can add multiple approvers for both pre-deployment and post-deployment settings.
 These approvers can be individual users or groups of users. These users must have the
-[View releases](../../policies/permissions.md#release-permissions) permission.
+[View releases](../../policies/permissions.md#set-release-permissions) permission.
 
 
 When a group is specified as an approver, only one of the users in that group needs to approve
@@ -56,7 +53,7 @@ for the deployment to occur or the release to move forward.
 
 The creator of a deployment is considered to be a separate user
 role for deployments. For more details,
-see [Release permissions](../../policies/permissions.md#release-permissions).
+see [Release permissions](../../policies/permissions.md#set-release-permissions).
 Either the release creator or the deployment creator can be restricted from approving deployments.
 
 If no approval is granted within the **Timeout** specified for the approval, the deployment is rejected.
@@ -98,4 +95,4 @@ where the user can approve or reject the release.
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

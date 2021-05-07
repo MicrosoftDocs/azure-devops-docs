@@ -3,10 +3,7 @@ title: Android signing build and release task
 ms.custom: seodec18
 description: Android signing build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
@@ -16,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Android signing task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a pipeline to sign and align Android APK files.
 
@@ -30,7 +27,7 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AndroidSigningV3.md)]
+[!INCLUDE [temp](../includes/yaml/AndroidSigningV3.md)]
 
 ::: moniker-end
 

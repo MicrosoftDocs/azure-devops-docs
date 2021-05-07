@@ -2,10 +2,8 @@
 title: FAQs and problem solutions   
 description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 04/24/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -55,7 +53,7 @@ every test case that is returned by the query that you define.
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
+**A:** Yes. For test plans, use [this API](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -67,6 +65,9 @@ that you want in the report. Then email or print this report for review.
 Change the test case fields in the report by adding or removing columns from 
 the list view of the test suite.
 
+> [!IMPORTANT]
+> You cannot export more than 75 Test Suites in a single operation. The email supports up to 1MB of data.
+
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
 **A:** Yes, choose Print in the Export dialog box, then choose Cancel in the Print dialog box. 
@@ -76,7 +77,7 @@ into a Word document, if you want. All the formatting in the report is retained.
 ### Q: When I export a test plan, can I customize the report?
 
 **A:** You can only do this if you are using an on-premises Team Foundation Server. 
-You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
+You can [edit the XSLT file](/previous-versions/dd380763(v=vs.140)#XSLT).
 
 ### Q: Can I track changes to test plans and test suites that I create with Azure DevOps?
 
@@ -203,18 +204,18 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](includes/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
 **A:** Yes, choose the steps that you want to share. Find out more about 
-[sharing test steps](mtm/share-steps-between-test-cases.md).
+[sharing test steps](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
 
 ![Create shared test steps](media/create-test-cases/CreateSharedSteps.png)
 
@@ -301,7 +302,7 @@ is active. You can reset the state of a test to active if you want to rerun it.
 
 **A:** Yes, Choose **Run** and then select **Run with options**.
 
-![Starting a test with options](media/_shared/collect-diagnostic-data-16.png) 
+![Starting a test with options](media/shared/collect-diagnostic-data-16.png) 
 
 Select the build you want from the drop-down list.
 
@@ -310,6 +311,9 @@ Select the build you want from the drop-down list.
 Any bug filed during the run will automatically be associated 
 with the selected build, and the test outcome will be published
 against that build.
+
+> [!NOTE]
+> The selected build must be from the project in which the tests are defined.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
@@ -331,7 +335,7 @@ the web runner to take screenshots of the web
 app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screenshot from the app](media/_shared/collect-diagnostic-data-01.png) 
+![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -342,7 +346,7 @@ the web runner capture your actions on the web
 app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
-![Capturing an image action log from the app](media/_shared/collect-diagnostic-data-06.png) 
+![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -353,7 +357,7 @@ the web runner to capture screen recordings of
 your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screen recording from the app](media/_shared/collect-diagnostic-data-11.png) 
+![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
@@ -462,7 +466,7 @@ unless you chose to indefinitely retain a build associated with those results.
 **A**: By default, a XAML build pipeline is set up to delete builds older 
 than the 10 most recent builds. But related test results aren't automatically
 deleted when those builds are deleted. 
-[Learn more](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx). 
+[Learn more](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)). 
 
 ### Q: Why isn't test data deleted for XAML builds by default? 
 
@@ -482,7 +486,7 @@ Test results are often deleted before you can analyze them.
 <a name="sharesteps"><a/>
 ## Sharing steps between test cases
 
-[Go to related topic &gt;](mtm/share-steps-between-test-cases.md)
+[Go to related topic &gt;](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)
 
 ### Q: Can I share steps between test plans and projects?**  
 
@@ -504,30 +508,30 @@ You don't have to provide values in the shared steps definition. However, you ca
 ### Q: Which web browsers does the extension support?
 
 **A:** The Test &amp; Feedback extension is currently available for
-[Google Chrome](https://www.google.com/chrome/)
+[Google Chrome](https://www.google.com/chrome/),
+[Microsoft Edge (Edge Chromium Only)](https://www.microsoft.com/edge/)
 and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
-Edge support is planned. 
 
 Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
 
-| Feature | Chrome | Firefox |
-| --- | --- | --- |
-| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture screen recordings | &nbsp; **Yes** | &nbsp; **No** |
-| Capture page load data | &nbsp; **Yes** | &nbsp; **No** |
-| Capture user actions log | &nbsp; **Yes** |&nbsp; **No** |
-| Capture system information | &nbsp; **Yes** |&nbsp; **No** |
-| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
-| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end traceability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
-| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** |
-| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** |
-| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **No** |
-| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
+| Feature | Chrome | Edge | Firefox |
+| --- | --- | --- | --- |
+| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
 
 <p />
 For more details, see 
@@ -567,26 +571,26 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 **A:** You can assign configurations in two ways: 
 
 a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
-![FAQ1.1](media/FAQ1.1.png)
+![Screenshot showing Assign configurations.](media/FAQ1.1.png)
 
 b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
 
 
 ### Q: How can I see the configurations assigned to my test cases?
 **A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
-![FAQ2](media/FAQ2.png)
+![Screenshot showing configurations assigned to the test points.](media/FAQ2.png)
 
 ### Q: How can I edit the test case?
 **A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
-![FAQ3](media/FAQ3.png)
+![Screenshot that shows editing the test case.](media/FAQ3.png)
 
 ### Q: How can I see the outcome of each test case?
 **A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
-![FAQ4](media/FAQ4.png)
+![Screenshot that shows viewing the outcome of the test case.](media/FAQ4.png)
 
 ### Q: How can I assign testers?
 **A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
-![FAQ5](media/FAQ5.png)
+![Screenshot that shows assigning testers to test cases.](media/FAQ5.png)
 
 ### Q: How can I view the execution history of the test case?
 **A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
@@ -597,4 +601,4 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 
 *****
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

@@ -3,10 +3,7 @@ title: Ant build and release task
 ms.custom: seodec18
 description: Learn how to build with Apache Ant for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Ant task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build with Apache Ant.
+Use this task to build with Apache Ant.
 
 ## Demands
 
@@ -29,7 +26,7 @@ The build agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ANTV1.md)]
+[!INCLUDE [temp](../includes/yaml/ANTV1.md)]
 
 ::: moniker-end
 
@@ -164,13 +161,13 @@ The build agent must have the following capability:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

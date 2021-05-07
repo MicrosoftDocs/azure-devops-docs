@@ -3,10 +3,8 @@ title: Add markdown content to a team dashboard
 titleSuffix: Azure DevOps
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Add Markdown to a dashboard
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 
 <a id="markdown-widget">  </a> 
@@ -28,7 +26,7 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 Here's an example:  
 <img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Supported Markdown syntax
 
@@ -65,7 +63,7 @@ Open a web browser, connect to your project, and  choose **Overview>Dashboards**
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](media/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -75,7 +73,7 @@ Open a web browser, connect to your project, and  choose **Dashboards**.
 
 ![Open Dashboards](media/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end
 
@@ -89,7 +87,7 @@ If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboa
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
-To add the markdown widget to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  
+To add the markdown widget to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  
 
 1. Add or drag the Markdown widget onto the dashboard where you want it located.  
 

@@ -1,11 +1,9 @@
 ---
 title: Relational warehouse database tables | TFS
 description: Create reports and query for Team Foundation Server (TFS) data 
-ms.prod: devops
 ms.technology: devops-analytics 
 ms.topic: reference
 ms.assetid: 0f398cef-add1-4112-85e8-016108de10b3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -13,7 +11,7 @@ ms.date: 10/17/2017
 
 # Table reference for the relational warehouse database
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can create reports and query for data by using the warehouse database. The data in the warehouse is collected from the Azure DevOps (formerly named Team Foundation Server (TFS)) operational stores and organized in a set of tables, views, and table-valued functions that are designed for creating reports.  
   
@@ -44,7 +42,7 @@ You can query for data about builds by using four fact tables, as the following 
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors of the builds.|  
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
   
-For more information about builds, see [Build](../../pipelines/overview.md).  
+For more information about builds, see [Build](../../pipelines/get-started/what-is-azure-pipelines.md).  
 
 <a name="SourceCode"></a>
 
@@ -61,7 +59,7 @@ You can query for data about code and other files that are under version control
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors that were used.|  
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
   
-For more information about version control, see [Code](../../repos/tfvc/overview.md).  
+For more information about version control, see [Code](../../repos/tfvc/index.yml).  
  
 <a name="TestResults"></a>
  
@@ -78,7 +76,7 @@ You can query for information about test results and analyze how well the tests 
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
- For more information, see [Testing overview](../../test/index.yml) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx). 
+ For more information, see [Testing overview](../../test/index.yml) and [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested). 
   
 <a name="WorkItems"></a>
 
@@ -96,5 +94,3 @@ You can query for information about tasks, bugs, and other types of work items b
 |[Work Item Category tables](work-item-category-tables.md)|The categories that are used to associate similar types of work items.|  
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
-  
- 

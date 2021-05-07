@@ -1,12 +1,10 @@
 ---
 title: Default and supported notifications
 titleSuffix: Azure DevOps
-description: Learn about out of the box or default notifications set in Azure DevOps or Team Foundation Server 
-ms.prod: devops
+description: Learn about out of the box or default notifications set in Azure DevOps.
 ms.technology: devops-collab
 ms.topic: conceptual
 toc: show
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/20/2019
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Default and supported notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 Configure default subscriptions to send notifications to certain roles or user groups with specific associations to an event. For example, "reviewer" is a role on a pull request event. "Assignee (current)" is a role that reflects the current Assigned To user of a changed work item.
 
@@ -81,11 +79,5 @@ You can create subscriptions using the following templates for yourself, a team,
 ## Related articles
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md)
+- [Manage personal notifications](./manage-team-group-global-organization-notifications.md)
 - [Unsubscribe from a notification](unsubscribe-default-notification.md)
-
-
-
-
-
-

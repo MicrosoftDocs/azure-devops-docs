@@ -3,19 +3,17 @@ title: Clone a Git repository in a public project
 titleSuffix: Azure DevOps Services Public Project
 description: Create a local copy of a repo using Visual Studio or command line clone 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 11/13/2020
 monikerRange: 'azure-devops'
 ---
 
 # Clone a Git repository in a public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]
+[!INCLUDE [temp](includes/version-public-projects.md)]
 
 You can create a complete local copy of a Git repository from a public project by cloning it. 
 Cloning a repo downloads all commits and branches in the repo and sets up a named relationship with the existing repo you cloned. If you are signed in as a member of the project, you can use this relationship to interact with the existing repo, pushing and pulling changes to share code with the public project team.
@@ -51,6 +49,8 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Clone using Visual Studio and Team Explorer
 
+[!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)] 
+
 1. In Team Explorer, (1) open up the **Connect** page by selecting the **Connect** icon. (2) Choose **Clone** under **Local Git Repositories**, (3) enter the clone URL, verify your local folder in which to clone, and (4) select the **Clone** button.
 
    ![Connecting to Azure DevOps](media/clone-git-repo-public/clone-vs.png)
@@ -61,8 +61,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Prerequisites
 
-* Ensure you have installed the [Git command line package](https://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
+* Ensure you have installed the [Git command line package](https://git-scm.com/download) for your platform as well as the [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 

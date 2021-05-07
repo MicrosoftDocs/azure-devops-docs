@@ -2,19 +2,17 @@
 title: Underlying connection was closed 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when users save work items, check in code merges, or perform other operations on a large number of files.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobs2-bbb2-4821-b5a4-dd5eb215d18a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
 # Underlying connection was closed
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When users save work items, check in code merges, or perform other Team Foundation operations on a large number of files, a dialog box might appear that contains the phrase "The underlying connection was closed." The problem might be intermittent and difficult to reproduce.  
   

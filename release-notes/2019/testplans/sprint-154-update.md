@@ -3,7 +3,6 @@ title: Azure Test Plans - Sprint 154 Update
 description: See the Sprint 154 feature updates for Azure Test Plans, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 07/01/2019
 ---
@@ -12,11 +11,11 @@ ms.date: 07/01/2019
 
 ## Features
 
-[!INCLUDE [sprint-154-update-links](../_shared/testplans/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](../includes/testplans/sprint-154-update-links.md)]
 
-[!INCLUDE [sprint-154-update](../_shared/testplans/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](../includes/testplans/sprint-154-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 

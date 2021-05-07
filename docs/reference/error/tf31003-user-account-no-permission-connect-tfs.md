@@ -2,19 +2,17 @@
 title: TF31003-You don't have permission to connect 
 titleSuffix: Azure DevOps & TFS
 description: Receive the error when you try to connect to Azure DevOps Services or Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: bfec0879-44e7-4cf1-825b-c9e6520f4d56
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 02/22/2017
 ---
 
 # TF31003: Your user account does not have permission to connect to the Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You might receive this error when you try to connect to Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
   

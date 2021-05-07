@@ -2,30 +2,27 @@
 title: Cloud-based Web Performance Test task (Deprecated)
 description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Cloud-based Web Performance Test task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [loadtest-deprecated-include](../../../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
-Use this task in a build or release pipeline to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
+Use this task to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
 The task generates load against an application URL
 using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -39,7 +36,7 @@ The agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.md)]
+[!INCLUDE [temp](../includes/yaml/QuickPerfTestV1.md)]
 
 ::: moniker-end
 
@@ -65,15 +62,15 @@ The agent must have the following capability:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

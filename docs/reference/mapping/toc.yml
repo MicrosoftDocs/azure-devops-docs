@@ -1,9 +1,8 @@
-- name: Customize the Project field mapping
-  href: ../xml/customize-project-field-mapping-file.md
+- name: Customize Project field mapping
+  href: /previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file
 - name: Upload/download the Project mapping file
-  href: ../xml/upload-or-download-the-microsoft-project-mapping-file.md
+  href: /previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file
 - name: Map Project fields
-  href: ../xml/map-microsoft-project-fields-to-tf-fields.md
+  href: /previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields
 - name: Project field mappings
-  href: ../xml/field-mappings-in-microsoft-project.md
-
+  href: /previous-versions/azure/devops/reference/xml/field-mappings-in-microsoft-project

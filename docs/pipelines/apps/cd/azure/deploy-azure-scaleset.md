@@ -2,10 +2,7 @@
 title: Deploy apps to an Azure VM Scale Set
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2017'
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-[!INCLUDE [version-tfs-2017-rtm](../../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The **Build Machine Image** task makes it easy for users who are new to immutable
@@ -42,7 +39,7 @@ A custom **Packer** configuration JSON file can also be used.
 
 Before you begin, you need a CI build that creates your app. To set up CI, see:
 
-* [Build and deploy your app](../../index.md)
+* [Build and deploy your app](/previous-versions/azure/devops/pipelines/apps/)
 
 ## Create the release pipeline
 
@@ -122,16 +119,15 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 1. Create a new release, select the latest build, and 
    ensure that the application has been deployed correctly and has generated the VHD.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
-
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

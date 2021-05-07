@@ -2,10 +2,8 @@
 title: Get insights across exploratory test sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions by using the Microsoft Test & Feedback extension
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,12 +12,12 @@ monikerRange: '>= tfs-2015'
 
 # Get insights across your exploratory testing sessions
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
  
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 1. Open the **Recent exploratory sessions** page. You can do this:
 
@@ -28,7 +26,7 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](media/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
+   - From [!INCLUDE [test-hub-include](includes/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
      ![Opening the insights page](media/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
@@ -137,7 +135,7 @@ Use a query to explore the work items that users have not yet explored.
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+* [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

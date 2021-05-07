@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 #  Sprints and Scrum key concepts
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 
@@ -25,9 +23,9 @@ This article provides a short dictionary of terms and available tools used in tr
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/agile-tools.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/bugs.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/bugs.md)] 
 
 <!---
 ## Burndown charts 
@@ -70,13 +68,12 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
-[!INCLUDE [temp](../../_shared/glossary-terms/issues.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog-item.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog-item.md)] 
 
 <!---
 ## Product Backlog Item Effort  
@@ -91,11 +88,12 @@ The role of product owners is to act as the interface between customers and the 
 
 
 ## Scrum master role
+
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases. Learn more: [Scrum best practices, Role of the Scrum Master](best-practices-scrum.md#scrum-master-role).   
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
+[!INCLUDE [temp](../../includes/glossary-terms/sprint-backlogs.md)]  
 
 <a id="sbc" />
 
@@ -129,7 +127,7 @@ A taskboard provides an interactive progress board for work required to complete
 
 ![taskboard](media/ALM_DS_Task_board_S.png)
 
-[!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/teams.md)] 
 
 ## Team member
 
@@ -146,7 +144,7 @@ Technical debt includes anything the team must do to deploy production quality c
 Triage meetings are used to review and prioritize the backlog and bugs assigned to a team. Additional details, such as estimates, acceptance criteria, and more may be added to the work items. Typically, a product owner runs triage meetings, and team leads, business analysts and other stakeholders who can speak about specific project risks attend them. 
 Learn more: [Triage work items](../queries/triage-work-items.md).
 
-[!INCLUDE [temp](../../_shared/glossary-terms/user-story.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/user-story.md)] 
 
 ## Velocity and velocity chart
 

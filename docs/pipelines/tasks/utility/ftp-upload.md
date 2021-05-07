@@ -2,10 +2,7 @@
 title: FTP Upload task
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -15,13 +12,13 @@ monikerRange: '>= tfs-2017'
 
 # FTP Upload task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
+Use this task to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +30,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/FtpUploadV2.md)]
+[!INCLUDE [temp](../includes/yaml/FtpUploadV2.md)]
 
 ::: moniker-end
 
@@ -47,7 +44,7 @@ None
 | `username` <br/> Username | (Required) |
 | `password` <br/> Password | (Required) |
 | `rootFolder` <br/> Root folder | (Required) The source folder to upload files from <br/>Argument aliases: `rootDirectory`|
-| `filePatterns` <br/> File patterns | (Required) File paths or patterns of the files to upload.  Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkId=800269).<br/>Default value: **|
+| `filePatterns` <br/> File patterns | (Required) File paths or patterns of the files to upload.  Supports multiple lines of minimatch patterns. [More Information](./extract-files.md).<br/>Default value: **|
 | `remotePath` <br/> Remote directory | (Required) Upload files to this directory on the remote FTP server. <br/>Default value: /upload/$(Build.BuildId)/ <br/>Argument aliases: `remoteDirectory`|
 | `enableUtf8` <br/> Enable UTF8 support | (Optional) Enables UTF-8 support for the FTP connection ('OPTS UTF8 ON') <br/>Default value: false|
 | `clean` <br/> Delete remote directory | (Required) Delete the remote directory including its contents before uploading <br/>Default value: false|
@@ -60,19 +57,19 @@ None
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

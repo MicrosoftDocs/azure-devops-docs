@@ -2,38 +2,36 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Default Analytics views
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 A default set of Analytics views are provided, as shown below. 
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> To access <strong>Analytics views</strong>, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
+> To access **Analytics views**, you must enable the feature as described in [Manage or enable features](../../project/navigation/preview-features.md).  
 
 ::: moniker-end
 
 > [!div class="mx-imgBorder"] 
 > ![Default Analytics views](./media/default-views/default-views.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 

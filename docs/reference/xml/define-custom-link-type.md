@@ -2,20 +2,19 @@
 title: Define a custom link type 
 titleSuffix: TFS
 description: Add a custom link type to meet your project tracking requirements in Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 0d0d51f7-b8d0-4e5d-82b9-766ee12690ba
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
+author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 
 # Define a custom link type
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for On-premises XML process models. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 

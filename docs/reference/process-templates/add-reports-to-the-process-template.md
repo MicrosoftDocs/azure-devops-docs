@@ -2,14 +2,12 @@
 title: Add reports via a process template 
 titleSuffix: TFS
 description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019' 
+monikerRange: '< azure-devops' 
 ms.date: 04/10/2018
 ---
 
@@ -17,7 +15,7 @@ ms.date: 04/10/2018
 
 # Add reports to the process template
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services.  
 

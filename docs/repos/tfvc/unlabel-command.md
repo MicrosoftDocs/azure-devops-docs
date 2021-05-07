@@ -3,11 +3,7 @@ title: Unlabel Command
 titleSuffix: Azure Repos
 description: Unlabel Command
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Unlabel Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Removes an item from an existing label in the server for Team Foundation version control.
 
@@ -40,7 +36,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 <tbody>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><i>labelname</i></p></td>
@@ -48,7 +44,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
-<td><p>Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Identifies the file or folder from which to remove the specified label. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -79,7 +75,7 @@ The **unlabel** command of the **tf** command-line utility removes an item from 
 
 If you remove all items from a label in the Team Foundation version control server, that label is deleted. You can also delete a label using the command `tf label /delete`. To learn more about the existing labels in the system, see [Labels Command](labels-command.md).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -99,7 +95,7 @@ c:\projects>tf unlabel Beta1 $/ /collection:http://myserver:8080/tfs/DefaultColl
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
 
@@ -111,4 +107,4 @@ c:\projects>tf unlabel Beta1 $/ /collection:http://myserver:8080/tfs/DefaultColl
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

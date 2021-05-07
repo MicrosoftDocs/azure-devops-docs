@@ -1,7 +1,6 @@
 ---
 title: Multi-select backlog items, reorder when changing columns, client libraries availability – Aug 7
 description: VSTS release notes for August 7 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 8e5ea1bd-811a-46eb-8b25-f12f449b1c93
@@ -34,7 +33,7 @@ We’ve added two small, but powerful ways to add visual cues to your board. You
 
 ## Libraries for integrating with Visual Studio Online now available at nuget.org
 
-For .NET developers building Windows apps and services that integrate with Visual Studio Online, NuGet packages containing libraries for integrating with work item tracking, version control, build, and other services are now available. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service. To learn more, see the [overview of the client library packages](https://go.microsoft.com/fwlink/?LinkId=613084).
+For .NET developers building Windows apps and services that integrate with Visual Studio Online, NuGet packages containing libraries for integrating with work item tracking, version control, build, and other services are now available. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service. To learn more, see the [overview of the client library packages](/azure/devops/integrate/concepts/dotnet-client-libraries).
 
 If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

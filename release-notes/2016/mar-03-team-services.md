@@ -1,7 +1,6 @@
 ---
 title: Better exploratory testing, test results for release environments, squash merge, and more – Mar 3
 description: VSTS release notes for March 3 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 66042038-4458-4bd3-8257-91e3cd7c7ee4
@@ -68,7 +67,7 @@ Right from your repo on the web, you can clone in IntelliJ, Android Studio, and 
 
 ## Gated builds for Team Foundation Version Control (TFVC)
 
-Team build now supports creating a gated trigger for a build definition on a TFVC repository. You can read more here [https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated](https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated).
+Team build now supports creating a gated trigger for a build definition on a TFVC repository. You can read more here [https://msdn.microsoft.com/Library/vs/alm/Build/define/triggers#gated](/azure/devops/pipelines/build/triggers#gated).
 
 ## Automated testing on Azure environments
 

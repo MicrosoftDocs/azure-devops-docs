@@ -2,7 +2,6 @@
 title: Release and pipelines events available in the audit logs - Sprint 163 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 01/13/2020
 description: In the **Sprint 163 Update** of Azure DevOps, we've added release and pipelines events to the audit logs..
@@ -18,19 +17,22 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-163-update-links](_shared/general/sprint-163-update-links.md)]
+[!INCLUDE [sprint-163-update-links](includes/general/sprint-163-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-163-update-links](_shared/pipelines/sprint-163-update-links.md)]
+> [!NOTE]
+> Installing .NET 4.6.2 or higher is required for VSTest task to work properly on build agents.
+
+[!INCLUDE [sprint-163-update-links](includes/pipelines/sprint-163-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-163-update](_shared/general/sprint-163-update.md)]
+[!INCLUDE [sprint-163-update](includes/general/sprint-163-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-163-update](_shared/pipelines/sprint-163-update.md)]
+[!INCLUDE [sprint-163-update](includes/pipelines/sprint-163-update.md)]
 
 ## Next steps
 
@@ -42,7 +44,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
@@ -53,4 +55,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-163](_shared/signer/sprint-163.md)]
+[!INCLUDE [sprint-163](includes/signer/sprint-163.md)]

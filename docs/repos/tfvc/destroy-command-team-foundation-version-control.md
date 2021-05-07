@@ -3,11 +3,7 @@ title: Destroy Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Destroy Command (Team Foundation Version Control)
 ms.assetid: fc14da45-891e-4f18-bbc2-9829b80531db
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Destroy Command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Use the **tf destroy** command to destroy, or permanently delete, version-controlled files from Team Foundation version control.
 
@@ -45,13 +41,13 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
 <tr>
 	<td><p><em>versionspec</em></p></td>
-	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
     <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains files that you want to destroy (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr></tbody>
+    <td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
 </table>
 
 <table><thead>
@@ -103,16 +99,16 @@ Destroyed: $/Test1/MyProject/MyProject/Program.cs
 
 However, the file is actually not destroyed because you used the **/preview** option.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 
 ### Effects of /keephistory on Other Version Control Operations
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
 
--   **Change content   **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
+-   **Change content** If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
 
--   **Branch, merge, or unshelve   **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
+-   **Branch, merge, or unshelve** If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
 
 ### Destroying Previously Deleted Items
 
@@ -164,8 +160,8 @@ Where x123 is the deletion ID.
 
 #### Concepts
 
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](https://msdn.microsoft.com/library/ms194957)
+[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

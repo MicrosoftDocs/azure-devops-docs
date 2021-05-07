@@ -1,12 +1,10 @@
 ---
 title: Requirements Overview Report (CMMI) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by area and iteration and in order of importance.
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 
 # Requirements Overview Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Requirements Overview report lists all requirements, filtered by area and iteration and in order of importance. For information about how to open this report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   

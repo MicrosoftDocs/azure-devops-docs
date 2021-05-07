@@ -1,7 +1,6 @@
 ---
 title: Dashboards, improved pull requests, test results and more – Oct 30
 description: VSTS release notes for October 30 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 961ad637-4194-4b9c-8042-0d4537a71b43
@@ -14,7 +13,7 @@ author: yukom
 
 ## Dashboards
 
-I’m excited to announce that we have released our [dashboards feature](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/26/agile-project-management-futures-august-2015.aspx) in Visual Studio Online! Dashboards are a customizable canvas and replace your existing Team Overview page. They enable your team to visualize status and monitor progress across your project.
+I’m excited to announce that we have released our [dashboards feature](https://devblogs.microsoft.com/devops/agile-project-management-futures-august-2015/) in Visual Studio Online! Dashboards are a customizable canvas and replace your existing Team Overview page. They enable your team to visualize status and monitor progress across your project.
 
 ![Dashboards](media/10_30_01.png)
 
@@ -44,7 +43,7 @@ We've simplified test result data cleanup and removed the dependency on tools li
 
 ![Test results retention policies](media/10_30_04.png)
 
-We are also integrating test retention with the retention policy of the new build system (Build vNext) by adding functionality to delete test results when builds are deleted. More information about this feature is available on the [Visual Studio devops blog](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/08/test-result-data-retention-with-team-foundation-server-2015.aspx).
+We are also integrating test retention with the retention policy of the new build system (Build vNext) by adding functionality to delete test results when builds are deleted. More information about this feature is available on the [Visual Studio devops blog](https://devblogs.microsoft.com/devops/test-result-data-retention-with-team-foundation-server-2015/).
 
 ## Reorder and re-parent tasks from the Kanban board
 
