@@ -10,20 +10,15 @@
   href: go-to-project-repo.md 
 - name: Work with favorites 
   href: set-favorites.md  
-- name: Work across projects
-  href: work-across-projects.md  
 - name: Filter basics 
   href: filter-basics.md
-- name: Search your repo, work items, or wiki 
-  href: search-basics.md   
-- name: Enable a preview feature  
-  href: preview-features.md  
+- name: Keyboard shortcuts
+  href: keyboard-shortcuts.md
+- name: Manage or enable features
+  href: preview-features.md
 - name: Reference
   items:
-  - name: Glossary
-    href: glossary.md  
   - name: Go mobile 
-    href: mobile-work.md  
-  - name: Keyboard shortcuts
-    href: keyboard-shortcuts.md  
- 
+    href: mobile-work.md
+  - name: Glossary
+    href: glossary.md

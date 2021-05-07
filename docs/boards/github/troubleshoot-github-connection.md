@@ -1,21 +1,18 @@
-﻿---
+---
 title: Troubleshoot GitHub repo connection to a project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project  
-ms.assetid: 
-ms.prod: devops
 ms.technology: devops-agile
-ms.topic: quickstart
-ms.manager: mijacobs
+ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/05/2019
+ms.date: 07/09/2020
 ---
 
 # Troubleshoot GitHub & Azure Boards connection 
 
-[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 ::: moniker range="azure-devops"
 When you create a GitHub connection, you are granted access to GitHub as an OAuth app or by using a Personal Access Token (PAT).
@@ -24,7 +21,7 @@ The access by Azure Boards to the GitHub repo can be revoked in one or more ways
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 When you create a GitHub connection, you are granted access to your GitHub Enterprise server as an OAuth app,  by Personal Access Token (PAT), or account credentials.
 
 The access by Azure Boards to the GitHub repositories can be revoked in several ways. If the user who created the connection PAT is revoked or the permission scope changes, then the Azure Boards access is revoked. Or, the OAuth app's authorization can be revoked entirely for the GitHub Enterprise server.
@@ -32,7 +29,7 @@ The access by Azure Boards to the GitHub repositories can be revoked in several 
 ::: moniker-end
 
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 ::: moniker range="azure-devops"
 <a id="integrate-repo-to-several-organizations" />
@@ -71,6 +68,7 @@ To resolve the problem, consider the following:
 	To resolve, recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
 
 <a id="update-wits" />
+
 ## Update XML definitions for select work item types 
 
 If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 

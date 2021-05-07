@@ -1,19 +1,16 @@
 ---
 title: Deployment strategies for Kubernetes deployments
 description: Setting up deployment strategies using KubernetesManifest task
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: bba1eae2-6494-4ad4-991b-53b755c4c86e
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Deployment strategies for Kubernetes in Azure Pipelines
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) currently supports canary deployment strategy. This document explains the guidelines and best practices around the usage of this task for setting up canary deployments to Kubernetes.
 

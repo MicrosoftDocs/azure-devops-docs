@@ -2,10 +2,8 @@
 title: Exploratory and manual testing overview
 description: Test tools - Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/26/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory and manual testing scenarios and capabilities
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be an important techniques for maximizing this.
@@ -40,7 +38,7 @@ and gathering feedback from stakeholders.
 ![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-testing"></a>
 
@@ -54,19 +52,41 @@ hub for all their test management needs.
 
 Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
 
-| | | |
-| --- | --- | --- |
-| ![icon](media/testplan-icon.png)<br />[Create a test plan](create-a-test-plan.md) | ![icon](media/testcases-icon.png)<br />[Create test cases](create-test-cases.md) | ![icon](media/runtests2-icon.png)<br />[Run manual tests](run-manual-tests.md) |
-| ![icon](media/marketplace-icon.png)<br />[Install the extension](perform-exploratory-tests.md) | ![icon](media/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](media/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
-| | | |
+:::row:::
+    :::column:::
+        :::image type="icon" source="media/testplan-icon.png" border="false":::  
+        [Create a test plan](create-a-test-plan.md)  
+
+        :::image type="icon" source="media/marketplace-icon.png" border="false":::  
+        [Install the extension](perform-exploratory-tests.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/testcases-icon.png" border="false":::  
+        [Create test cases](create-test-cases.md)  
+
+        :::image type="icon" source="media/connectedmode-icon.png" border="false":::  
+        [Test in Connected mode](connected-mode-exploratory-testing.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/runtests2-icon.png" border="false":::  
+        [Run manual tests](run-manual-tests.md)  
+
+        :::image type="icon" source="media/standalonemode-icon.png" border="false":::  
+        [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
+    :::column-end:::
+:::row-end:::
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | |
-| | |
+:::row:::
+    :::column:::
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe>  
+    :::column-end:::
+:::row-end:::
 
 ## Manual testing from the Kanban board
 
@@ -82,7 +102,7 @@ to use these features. See more at [Add, run, and update inline tests](../boards
 
 ## Manual testing in Test Manager
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
 a rich test management solution for teams that need advanced manual
 testing capabilities. It includes all the capabilities
 required for the testing lifecycle - including test planning, authoring,
@@ -110,7 +130,7 @@ across test suites. See more at [Create test cases](create-test-cases.md).
 
 ### Testing applications
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides
 test runners to run tests for your web and desktop applications. Mark test steps and test outcomes as pass or fail, and collect
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
 to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
@@ -184,7 +204,7 @@ Using the extension is a simple, three step process:
   bugs and tasks, and managing feedback requests in one place.
 
 As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md) in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)] of 
+[get insights from the sessions](insights-exploratory-testing.md) in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] of 
 Azure DevOps or TFS. View completed exploratory sessions and derive meaningful
 insights across all the sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,
@@ -208,7 +228,7 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 ## Key benefits
 
-* **Test on any platform**. With [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
+* **Test on any platform**. With [!INCLUDE [test-hub-include](includes/test-hub-include.md)], you can use your browser to access all the manual testing capabilities. It enables you to [create](create-test-cases.md) and [run manual tests](run-manual-tests.md) through an easy-to-use, web-based interface that can be accessed from all major browsers on any platform.
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
@@ -224,6 +244,6 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Continuous testing](../pipelines/index.yml), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

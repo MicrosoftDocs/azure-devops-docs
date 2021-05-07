@@ -3,18 +3,18 @@ title: Add or modify a work item type (WIT)
 titleSuffix: Azure DevOps & TFS 
 description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 01/24/2019
 ---
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Your project contains a number of work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 
@@ -65,7 +65,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
-   [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
@@ -156,7 +156,7 @@ Apply workflow field rules to accomplish the following actions:
 -   Conditionally apply rules based on values in other fields using **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED**  
 -   Limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.    
 
-For more information about applying workflow field rules, see [FIELD (Workflow) element reference](https://msdn.microsoft.com/library/aa337626.aspx).  
+For more information about applying workflow field rules, see [FIELD (Workflow) element reference](./xml/field-workflow-element-reference.md?viewFallbackFrom=vsts).  
 
 <a id="modify-form">  </a>
 ## Customize the work item form  
@@ -187,9 +187,9 @@ The Agile planning tools&mdash;product backlog, sprint backlog, and task board p
 
 For example, you can add bugs from the product backlog page.
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../includes/image-differences.md)]
 
-![](media/add-modify-wit-quick-add-panel.png)
+![This screen shows how to add bugs from the product backlog page.](media/add-modify-wit-quick-add-panel.png)
 
 
 To learn how to add or remove WITs from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new WIT to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
@@ -299,7 +299,7 @@ For more information, see [Import, export, and manage work item types](witadmin/
 
 What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.
+You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.
 
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
@@ -326,4 +326,4 @@ If you want to completely remove the fields from the data store, use [**witadmin
 
 When you change the workflow for the test plan or test suite&mdash;and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions&mdash;these WITs became available when you updated your application-tier server to TFS 2013.3. that appears on an Agile planning tool page.
 
-If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md).  
+If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md).

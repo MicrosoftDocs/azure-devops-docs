@@ -2,11 +2,9 @@
 title: Give reviewers permission to provide feedback
 titleSuffix: Azure DevOps Services & TFS  
 description: Grant users access to provide feedback initiated from a team project in Azure DevOps Services & Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: db5148e8-0dd2-4ddd-b563-d9b924356263  
-ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 08/15/2017
@@ -15,7 +13,7 @@ ms.date: 08/15/2017
 # Give reviewers permissions to provide feedback
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You provide feedback to users that you plan to [request feedback](get-feedback.md) from. Reviewers who aren't members of your team require special permissions to provide feedback using the Microsoft Feedback Client. 
 

@@ -2,25 +2,23 @@
 title: Pipeline task duration sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline task duration Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'   
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'      
+ms.date: 07/14/2020
 ---
 
 # Pipeline task duration sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the time taken to execute different tasks of a pipeline. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image.
 
@@ -28,14 +26,15 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines task duration - Report](media/odatapowerbi-pipelines/taskduration-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -60,7 +59,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
@@ -83,7 +82,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 ### Query breakdown
 
@@ -199,9 +198,9 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
 

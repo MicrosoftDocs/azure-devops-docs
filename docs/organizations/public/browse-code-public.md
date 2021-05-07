@@ -3,9 +3,7 @@ title: Browse repos, files, branches, pushes, commits, pull requests
 titleSuffix: Azure DevOps Services
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: quickstart
@@ -15,14 +13,14 @@ monikerRange: 'azure-devops'
 
 # Browse code, download code  
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]
+[!INCLUDE [temp](includes/version-public-projects.md)]
 
 When you're viewing a public project, you're able to browse and download the code stored within the repositories, and view code-related objects such as commits, branches, and pull requests.
 
 > [!NOTE]
 > By default you have read-only access to the code in the repository. To perform operations such as forking, creating branches, and making pull requests, you must be [invited to contribute](invite-users-public.md).
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
 ## Open Repos > Files or Code > Files
 
@@ -52,7 +50,7 @@ Within a Git repository, you can view any of the following items: **Files**, **C
 In the following example, we view **Commits**.
 
 > [!div class="mx-imgBorder"]
-> ![Download code ](media/browse-code/view-commits-vert.png)
+> ![View Commits.](media/browse-code/view-commits-vert.png)
 
 ## Next steps
 

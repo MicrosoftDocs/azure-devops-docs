@@ -2,10 +2,7 @@
 title: GitHub Release task
 description: Create, edit, or discard a GitHub release.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -28,14 +25,14 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GitHubReleaseV0.md)]
+[!INCLUDE [temp](../includes/yaml/GitHubReleaseV0.md)]
 
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="https://aka.ms/AA3am5s" data-raw-source="[here.](https://aka.ms/AA3am5s)">here.</a></td></tr>
+<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
 <tr><td>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
 <tr><td>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
 <tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
@@ -73,8 +70,8 @@ The following YAML creates a GitHub release every time the task runs. The build 
     tagSource: manual
     tag: $(Build.BuildNumber)      
     assets: |
-         $(Build.ArtifactStagingDirectory)/*.exe
-         $(Build.ArtifactStagingDirectory)/README.txt
+      $(Build.ArtifactStagingDirectory)/*.exe
+      $(Build.ArtifactStagingDirectory)/README.txt
 ```
 
 You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.

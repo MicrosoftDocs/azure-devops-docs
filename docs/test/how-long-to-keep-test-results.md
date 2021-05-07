@@ -2,10 +2,8 @@
 title: Manage how long to keep test results
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Control how long to keep test results
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
@@ -23,7 +21,7 @@ Delete automated test results when you delete your builds.
 You can keep manual test results while you're still reviewing them, 
 for example, up to a year. 
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-test-results-limits"></a> 
 ## Manual test results 
@@ -77,4 +75,4 @@ set the retention limits at the project level as shown [here](#manual-test-resul
 
 *  [FAQs for manual testing](reference-qa.md#manageresults)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

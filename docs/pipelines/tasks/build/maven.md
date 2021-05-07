@@ -3,10 +3,7 @@ title: Maven build and release task
 ms.custom: seodec18
 description: Maven build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019
@@ -16,9 +13,9 @@ monikerRange: '>= tfs-2015'
 
 # Maven task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build your Java code.
+Use this task to build your Java code.
 
 ## Demands
 
@@ -30,7 +27,7 @@ The build agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/MavenV3.md)]
+[!INCLUDE [temp](../includes/yaml/MavenV3.md)]
 
 ::: moniker-end
 
@@ -62,7 +59,7 @@ The build agent must have the following capability:
    <tr>
       <td><code>testResultsFiles</code><br/>Test results files</td>
       <td>
-         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="https://go.microsoft.com/fwlink/?linkid=856077" data-raw-source="[more information](https://go.microsoft.com/fwlink/?linkid=856077)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
+         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[more information](../file-matching-patterns.md)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
          <strong>
             /TEST-
             <em>
@@ -98,7 +95,7 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>javaHomeSelection</code><br/>Set JAVA_HOME by</td>
-       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
+       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. Please note that if you already have java installed on agent machine - you can specify it by setting up 'javaHomeOption' as 'path', and 'jdkDirectory' - as a path to jdk installed directory. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
     </tr>
     <tr>
        <td><code>jdkVersion</code><br/>JDK version</td>
@@ -166,20 +163,20 @@ The build agent must have the following capability:
 
 ## Example
 
-[Build and Deploy your Java application to an Azure Web App](../../apps/java/build-maven.md)
+[Build and Deploy your Java application to an Azure Web App](../../ecosystems/java.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q&A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

@@ -2,10 +2,8 @@
 title: Schedule projects using Microsoft Project
 titleSuffix: Azure Boards
 description: Use Microsoft Project 2010 to plan work, schedule tasks, assign resources, and track changes in Azure Boards, Azure DevOps, & Team Foundation Server   
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c8d9ea81-ebde-47e5-b813-473018177aa9
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,11 +13,11 @@ ms.date: 08/15/2019
 
 # Schedule projects using Microsoft Project  
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
@@ -85,14 +83,14 @@ If you want team members to schedule tasks manually from a Team Foundation clien
 
 To learn more, see: 
 - [Available Fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
-- [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md)
+- [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)
 
   
 ### Add fields to the task work item type
 
 To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command-line tool to export and import the definition file for each work item type. 
  
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 For more information, see: 
 - [Add or modify a work item field](../../../reference/add-modify-field.md)
@@ -103,7 +101,7 @@ For more information, see:
 
 The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
 
-To learn more, see [TFSFieldMapping](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).   
+To learn more, see [TFSFieldMapping](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file).   
   
 ## Related articles
 

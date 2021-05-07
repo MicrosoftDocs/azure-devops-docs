@@ -2,7 +2,6 @@
 title: Follow a PR, task versioning, and search for commits in branches – Nov 23
 description: VSTS release notes for Nov 23 2016
 ms.ContentId: 3ddd918f-81cd-4745-9b1c-4fb6f1dae6fd
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
@@ -69,7 +68,7 @@ If you don’t see the option yet, just give it a little time. We’re rolling t
 To make continuous integration and deployment (CI/CD) of Docker apps a whole lot simpler for you, we’ve:
 * Updated the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker) with support for Azure Container Service and Azure Container Registry. 
 * Begun a preview of the Hosted Linux pool preview so that you don’t have to set up your own Docker hosts.
-* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
+* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/) and included [new continuous delivery tools](/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure?view=azure-devops&preserve-view=true) for ASP.NET Core Preview apps. You can use these tools to configure a CI/CD process quickly in Team Services. Any ASP.NET Core project with Docker support enabled can be set up to run an automated build and deployment to Azure Container Service with every Git push.
 
 ## New licensing model for Build and Release Management
 Over the next two weeks, Build and Release Management will move from the current agent-based licensing model to a concurrent pipeline based licensing model. Each pipeline lets you run one build or deploy one release at a time. The maximum number of concurrent builds that you can run and releases that you can deploy at the same time is limited only by the number of pipelines that you have.

@@ -2,23 +2,21 @@
 title: Markdown syntax for wikis in Azure DevOps
 titleSuffix: Azure DevOps
 description: Learn how to share information, add tables & mathematical notation using Markdown within wikis
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2019
+ms.date: 04/26/2021 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 In this article, find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
 
@@ -28,12 +26,12 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 
 ## Table of contents (TOC) for Wiki pages
 
-To create a table of contents, add a [\_TOC\_]. The TOC is generated when the tag is added and there's at least one heading on the page.
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag is added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
 > ![Table of contents](media/toc_sample.png)
 
-The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
+The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
 Only Markdown headings are considered for TOC (HTML heading tags aren't).
 
 All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
@@ -45,19 +43,19 @@ For example: Adding bold and italics to a heading text renders the TOC as follow
 Consistency is maintained in the formatting in TOC.
 
 > [!NOTE]
-> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add Mermaid diagrams to a Wiki page
 
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaidjs.github.io/#/flowchart)
-2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+- [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+- [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -72,13 +70,15 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
-> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> 
+> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-## Embed Videos in a Wiki page
+## Embed videos in a Wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
 
@@ -132,7 +132,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
-You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 > ![Query Results Icon](media/query_selector_icon.png)
 >
@@ -150,7 +150,7 @@ You can also select "@mention" from the edit toolbar.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Page visits for wiki pages
 
@@ -189,10 +189,22 @@ Enter the pound sign (`#`), and then enter a work item ID.
 
 In wiki pages, you can also create rich content using HTML tags.
 
+> [!TIP]
+> You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
+
+
+ ```HTML
+<p>
+  
+  [A markdown link](https://microsoft.com) 
+</p>
+```
+
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+
 
 **Example - Embedded video**
 

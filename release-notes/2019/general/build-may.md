@@ -1,8 +1,8 @@
 ---
 title: General - Microsoft Build Announcements
+description: May 2019 announcements for Azure Pipelines.  
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 ---
@@ -11,9 +11,9 @@ ms.date: 05/10/2019
 
 ## Features
 
-[!INCLUDE [build-may-links](../_shared/general/build-may-links.md)]
+[!INCLUDE [build-may-links](../includes/general/build-may-links.md)]
 
-[!INCLUDE [build-may](../_shared/general/build-may.md)]
+[!INCLUDE [build-may](../includes/general/build-may.md)]
 
 ## Next steps
 
@@ -22,7 +22,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

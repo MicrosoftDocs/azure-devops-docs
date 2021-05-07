@@ -2,10 +2,8 @@
 title: Explore work items when exploratory testing
 description: Test tools - Manual and exploratory testing - explore work items from the Kanban board or by using the Microsoft Test & Feedback extension
 ms.assetid: AFD66FBF-5DEC-4457-8867-A47FFB8EF407
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore work items with the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
@@ -31,7 +29,7 @@ You can explore:
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="kanban"></a>
 ## Explore work items from the Kanban board
@@ -106,7 +104,7 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Get insights across your exploratory testing sessions](insights-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+* [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

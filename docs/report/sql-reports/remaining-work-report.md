@@ -1,12 +1,10 @@
 ---
 title: Remaining Work Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks the team's progress and identify any problems in the flow of work
 ms.assetid: 61990591-ac5a-4cec-80f6-6627a723a910
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 
 # Remaining Work Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team has estimated its tasks and begun work, you can use the Remaining Work report to track the team's progress and identify any problems in the flow of work.  
   

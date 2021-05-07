@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Aug 27
 description: VSTS release notes for August 27 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 98cc1eb1-1b6f-415d-814b-da3d8a02d90c
@@ -53,7 +52,7 @@ Click the “Enable alternate credentials and set password” link on the Creden
 
 ![Enable alternate credentials on the user profile page](media/8_27_06.png)
 
-Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=azure-devops#alternate-credentials) for more info on how to use this.
+Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=azure-devops&preserve-view=true#alternate-credentials) for more info on how to use this.
 
 That’s it for sprint 35. We’re already busy on sprint 36 and looking forward to bringing more great stuff your way. Please feel free to use our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) if you want to help prioritize our investments.
 

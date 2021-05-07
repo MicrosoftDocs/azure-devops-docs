@@ -2,10 +2,8 @@
 title: Run manual tests
 description: Test tools - Run manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
@@ -27,7 +25,7 @@ to run tests that have been assigned to you with Azure DevOps.
 Learn more about the [access](https://visualstudio.microsoft.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="run-web"></a>
 ## Run tests for web apps
@@ -48,12 +46,14 @@ that you need for more advanced testing features.
 
    ![Use Microsoft Test Runner to record your test results](media/run-manual-tests/RunTestsStartApp.png)
 
-1. Mark each test step as either passed or failed based on the expected results. 
-   If a test step fails, you can enter a comment on why it failed  or
+1. Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed  or
    [collect diagnostic data for the test](collect-diagnostic-data.md).
 
    ![Mark test steps](media/run-manual-tests/RunTest_3.png)
 
+   > [!IMPORTANT]
+   >  Any test step that has expected result is called a validation test step. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.
+ 
 1. Create a bug to describe what failed.
 
    ![Submit a bug](media/run-manual-tests/RunTest_4.png)
@@ -92,13 +92,16 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. Launch the test runner client from Azure Test Plans in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
 
-   ![Launching the test runner client](media/_shared/collect-diagnostic-data-16.png)
+   ![Launching the test runner client](media/shared/collect-diagnostic-data-16.png)
 
-1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up.
+1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
 
    ![Download and launch Test runner](media/run-manual-tests/tr-atp-launch.png)
 
-1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
+   > [!NOTE]
+   > Check that the Test Runner client is available for your platform. Currently, the Test Runner client is available only for x64.
+
+1. Choose **Launch** and start testing the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 

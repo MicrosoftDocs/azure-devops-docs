@@ -1,11 +1,9 @@
-﻿---
+---
 title: Work Items with Direct Links sample report
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate reports based on Work Items with Direct Links
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
@@ -16,7 +14,7 @@ ms.date: 08/07/2019
 
 # Work items with direct links sample reports
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to list a given set of User Stories and their linked User Stories. An example is shown in the following image. 
 
@@ -25,14 +23,15 @@ This article shows you how to list a given set of User Stories and their linked 
 
 Other sample queries include listing bugs with a Duplicate link to another bug, and listing bugs which don't contain a Duplicate link to another bug.
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -55,7 +54,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -76,7 +75,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 
@@ -105,7 +104,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
 ### Expand the Links column
 
@@ -117,22 +116,22 @@ The following table describes each part of the query.
 1. Select all the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks2.png)
+    > ![Select all the fields to flatten.](media/odatapowerbi-expandlinks2.png)
 
 1. Click the expand button on the Links.TargetWorkItem column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks3.png)
+    > ![Click the expand button on the Links.TargetWorkItem column.](media/odatapowerbi-expandlinks3.png)
 
 1. Select the fields of the Target Work Item to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks4.png)
+    > ![Select the fields of the Target Work Item to flatten.](media/odatapowerbi-expandlinks4.png)
 
 	The Table now contains flattened Link and Target Work Item field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding a Links column](media/odatapowerbi-expandlinks5.png)
+    > ![The Table now contains flattened Link and Target Work Item field(s).](media/odatapowerbi-expandlinks5.png)
 
 > [!NOTE]
 > If the link represents a one-to-many or many-to-many relationship, then multiple links will
@@ -143,7 +142,7 @@ The following table describes each part of the query.
 > represents its link to Work Item #3.
 
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -176,7 +175,7 @@ The resulting example report is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Direct Links - Report](media/odatapowerbi-directlinks-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -188,7 +187,7 @@ The following query is the same as the one used previously in this article, exce
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -211,7 +210,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -234,7 +233,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -258,7 +257,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -282,7 +281,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -300,7 +299,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -316,8 +315,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

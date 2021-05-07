@@ -2,39 +2,38 @@
 title: Pipeline stage wise failures sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline stage wise failure Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'     
+ms.date: 12/18/2020
 ---
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Stage wise failure - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -60,7 +59,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
@@ -83,7 +82,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -233,7 +232,7 @@ You can use the following additional queries to create different but similar rep
 You may want to view the task wise failure trend, rather than stage wise failure trend.
 
 #### [Power BI query](#tab/powerbi/)
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
@@ -252,7 +251,7 @@ in
     Source
 ```
 #### [OData query](#tab/odata/)
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
@@ -275,7 +274,7 @@ You may want to view the job wise failure trend, rather than stage wise failure 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -299,7 +298,7 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
@@ -322,8 +321,8 @@ $apply=filter(
 
 ## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

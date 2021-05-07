@@ -4,22 +4,18 @@
   href: wit-analytics.md
 - name: "Project & organization-scoped queries" 
   href: account-scoped-queries.md
-- name: Tutorials
-  items:
-  - name: Query aggregate data
-    href: aggregated-data-analytics.md
-  - name: Query trend data
-    href: querying-for-trend-data.md
-  - name: Query work item links
-    href: work-item-links.md
-  - name: Explore Analytics metadata
-    href: analytics-metadata.md
+- name: Query aggregate data
+  href: aggregated-data-analytics.md
+- name: Query trend data
+  href: querying-for-trend-data.md
+- name: Query work item links
+  href: work-item-links.md
+- name: Explore Analytics metadata
+  href: analytics-metadata.md
 - name: Samples
   items:
-  - name: Work item tracking queries
+  - name: Work tracking queries
     href: analytics-recipes.md
-  - name: Create an Analytics widget
-    href: example-analytics-widget.md  
 - name: Reference
   items:
   - name: Query guidelines

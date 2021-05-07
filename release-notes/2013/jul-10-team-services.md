@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - July 10
 description: VSTS release notes for July 10 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: fb442da5-ffd1-4c26-9864-78fa94c32735
@@ -20,7 +19,7 @@ First, the Agile Portfolio Management feature announced back on [June 3rd](jun-0
 
 ![Backlog with unmapped items](media/7_10_01.png)
 
-Next, you can see that I’ve turned on the mapping panel and I’m now viewing both my product backlog and feature backlog side by side. I’m dragging the “Deleting a ticket” backlog item to the “Ticket administration” feature and in doing so, creating a [parent-child link](https://msdn.microsoft.com/library/dd286633.aspx) between the two.
+Next, you can see that I’ve turned on the mapping panel and I’m now viewing both my product backlog and feature backlog side by side. I’m dragging the “Deleting a ticket” backlog item to the “Ticket administration” feature and in doing so, creating a [parent-child link](/previous-versions/dd286633(v=vs.120)) between the two.
 
 ![Dropping a backlog item on a feature in the mapping pane](media/7_10_02.png)
 

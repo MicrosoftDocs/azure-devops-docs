@@ -2,7 +2,6 @@
 title: Team Foundation Service updates - Aug 6
 description: VSTS release notes for August 6 2012
 ms.assetid: 23fc5dd7-6fc3-4e95-b518-9ae63ec8fbcd
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.date: 06/01/2016
@@ -24,7 +23,7 @@ We’ve also improved the Azure Continuous Deployment feature we released in Jun
 
 ![Build report with deployment summary](media/8_6_02.png)
 
-We’ve also made a variety of updates to the welcome site content – a new [article on Code Review](/azure/devops/tfvc/get-code-reviewed-vs?view=azure-devops) and updates to all the screen shots to reflect some of the styling changes we’ve made in the past couple of months.
+We’ve also made a variety of updates to the welcome site content – a new [article on Code Review](/azure/devops/tfvc/get-code-reviewed-vs?view=azure-devops&preserve-view=true) and updates to all the screen shots to reflect some of the styling changes we’ve made in the past couple of months.
 
 Lastly, we’ve updated our service status page to contain more information about expected maintenance windows, service interruptions, etc. You can still go to the service blog if you like but this brings it all to the main site and saves you the click to the blog.
 

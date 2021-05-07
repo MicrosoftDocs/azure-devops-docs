@@ -2,7 +2,6 @@
 title: YAML improvements in Azure Pipelines - Sprint 142 Update
 author: erindormier
 ms.author: egeaney
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/22/2018
 description: In the Sprint 142 Update of Azure DevOps, we have made several improvements to YAML in Azure Pipelines
@@ -86,7 +85,7 @@ Attaching files to work items allows you and your team to centralize reference m
 
 ### Manage dependencies by linking work items across your organizations
 
-Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
+Linking related or dependent work gives you broader context into the work you're tracking and helps you manage dependencies with other teams. With links for remote work, now you can keep track of work across organizations within your company. Simply copy the URL of an existing work item, go to another work item, and create a link using one of the three new link types: Consumes From, Produces For, and Remote Related. See the [work item linking](/azure/devops/boards/queries/link-work-items-support-traceability?view=azure-devops&preserve-view=true&tabs=new-web-form) documentation for more information about traceability in Azure Boards.
 
 > [!NOTE]
 > Permissions are respected across both Azure DevOps organizations, which must both be backed by the same Azure AD tenant.
@@ -121,7 +120,7 @@ Build counters provide a way to uniquely number and label builds. Previously, yo
 * You can define multiple counters per definition.
 * You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
 
-See the documentation on [User-defined variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) for more information about build counters.
+See the documentation on [User-defined variables](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true) for more information about build counters.
 
 ### Use YAML to specify branches to build for pull requests
 
@@ -191,7 +190,7 @@ Continuing our commitment towards improved traceability, we are happy to announc
 
 ### Run from Package supported in Azure App Service deployments
 
-The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
+The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
 
 App Service supports a number of different techniques to deploy your files such as msdeploy (aka WebDeploy), git, ARM and more. But all these techniques have a limitation. Your files are deployed under your wwwroot folder (specifically d:\home\site\wwwroot) and the runtime then runs the files from there. 
 
@@ -215,7 +214,7 @@ The Linux hosting model for Azure Functions is based on Docker containers which 
 
 ### Azure Test Runner client to run manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
+You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops&preserve-view=true). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.  
 
 ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 
@@ -229,7 +228,7 @@ ATR requires a one-time download and install of the runner. Select **Run for des
 
 ### Public preview of Pipeline Artifacts
 
-We are releasing a public preview of Pipeline Artifacts, a new highly scalable artifact type designed for use with Azure Pipelines. Pipeline Artifacts is based on the same technology used by the recently announced [Universal Packages](https://docs.microsoft.com/azure/devops/release-notes/2018/sprint-140-update#store-artifacts-using-universal-packages) feature and can dramatically reduce the time it takes to store build outputs for large enterprise class builds.
+We are releasing a public preview of Pipeline Artifacts, a new highly scalable artifact type designed for use with Azure Pipelines. Pipeline Artifacts is based on the same technology used by the recently announced [Universal Packages](./sprint-140-update.md#store-artifacts-using-universal-packages) feature and can dramatically reduce the time it takes to store build outputs for large enterprise class builds.
 
 ## Wiki
 
@@ -241,7 +240,7 @@ Earlier, only users having **Create Repository** permission on a git repository 
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](https://docs.microsoft.com/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 
@@ -253,7 +252,7 @@ Read about the new features below and head over to Azure DevOps to try them for 
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

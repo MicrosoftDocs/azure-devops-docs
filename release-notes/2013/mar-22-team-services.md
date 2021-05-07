@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Mar 22
 description: VSTS release notes for March 22 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: cb4abbef-5cca-433a-b70d-5c2c759a8dec

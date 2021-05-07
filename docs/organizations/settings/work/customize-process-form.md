@@ -1,12 +1,10 @@
-﻿---
+---
 title: Customize the web form to an inherited process
 titleSuffix: Azure DevOps Services  
 description: Customize the web form for a work item type and Inheritance process model for a project  
-ms-custom: inherited-process   
+ms.custom: inherited-process   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -16,11 +14,11 @@ ms.date: 04/22/2019
 
 # Customize the web layout for a work item type (Inheritance process) 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 Work items are the backbone for planning and tracking work. As such, you'll want to make sure that each work item type (WIT) is tracking the data that your team needs. 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 To support your work tracking requirements, you can customize each WIT to add custom groups to collect custom fields that you add under a common section. You can organize your forms by placing logically related groups and HTML fields on separate pages within a form to minimize clutter on any one page within the form.  
 
@@ -31,11 +29,11 @@ For example, the following form shows that two custom pages have been added, **I
 Once you've added a custom page or group, you can add [custom fields to those pages or groups](customize-process-field.md). To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 
 <a id="groups"></a>
@@ -98,7 +96,7 @@ Here we remove the Severity inherited field from appearing on the Bug form.
 
 Removing a custom field from a form removes tracking data for the WIT. You can re-add a custom field to a WIT by adding it to a form as an existing field. 
 
-Removing an inherited field from a form simply hides the field from displaying on the form; it remains defined for the WIT. Hidden fields display on the admin layout page with a strikethrough. You can re-add these fields to the form through their context menu. 
+Removing an inherited field from a form hides the field from displaying on the form; it remains defined for the WIT. Hidden fields display on the admin layout page with a strikethrough. You can re-add these fields to the form through their context menu. 
 
 --> 
 
@@ -140,12 +138,14 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 
 > [!NOTE]    
->Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
+> Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
 
 
 ## Related articles  
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md) 
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  

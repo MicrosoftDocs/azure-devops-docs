@@ -3,9 +3,7 @@ title: Azure DevOps Office integration issues
 titleSuffix: Azure Boards
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -15,14 +13,14 @@ ms.date: 12/03/2019
 
 # Azure DevOps Office integration issues
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this article. 
 
 > [!div class="mx-imgBorder"]
 > ![Excel TFS-Office integration Team ribbon](media/tfs-office-issues-excel-team-ribbon.png)
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 > [!IMPORTANT]  
 > All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). These software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
@@ -67,7 +65,7 @@ If the Team ribbon does not appear at next launch, the load behavior of the add-
  
 4.	Press **OK** and restart Excel. 
 
-	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](https://msdn.microsoft.com/library/bb386106.aspx#LoadBehavior).  
+	To learn more about the LoadBehavior entry, see [Registry Entries for VSTO Add-ins, LoadBehavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  
 
 ## Office Add-in doesn't load or "Open in Excel" from Visual Studio fails
 
@@ -79,7 +77,7 @@ To connect to Azure Boards or TFS, go to the Team ribbon and choose **New List**
 This error is typically caused when you install Visual Studio before you install Office Excel or Project. In this instance, the Visual Studio Tools for Office Run Time are not correctly configured. To correct this error, you must repair Visual Studio.
 
 > [!NOTE]
-> For authentication issues, such as `TF31003` and `TF30063`, please refer to [User account does not have permission](/azure/devops/reference/error/tf31003-user-account-no-permission-connect-tfs).
+> For authentication issues, such as `TF31003` and `TF30063`, please refer to [User account does not have permission](../../../reference/error/tf31003-user-account-no-permission-connect-tfs.md).
 
 ### Prerequisites 
 
@@ -125,5 +123,5 @@ If the above steps are unsuccessful, try the following steps:
 
 ## Related articles
 
-- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
-- [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)  
+- [FAQs: Work in Excel connected to Azure Boards](faqs.yml)
+- [Add or remove add-ins](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460)

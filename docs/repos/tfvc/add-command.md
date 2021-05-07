@@ -3,11 +3,7 @@ title: Add files to version control using TFVC Add command
 titleSuffix: Azure Repos
 description: Use the TFVC Add command to add files to version control in TFS
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Add command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Adds files and folders to version control.
 
@@ -65,10 +61,10 @@ Adds the latest versions of all items in a local workspace.
 ### Add individual items
 
 ```
-c:\code\SiteApp\Main>tf add program1.cs program2.c
+c:\code\SiteApp\Main>tf add program1.cs program2.cs
 ```
 
-Adds the files program1.cs and program2.c.
+Adds the files program1.cs and program2.cs.
 
 ### Recursively add all items of a specific type
 

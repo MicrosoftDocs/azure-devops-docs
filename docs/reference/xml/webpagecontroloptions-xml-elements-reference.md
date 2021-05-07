@@ -1,11 +1,10 @@
-﻿---
+---
 title: WebpageControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the WebpageControlOptions to display content defined for a Web page or within a CDATA tag on a work item form.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: affebf93-892c-4bce-9ad0-cbdc98410d61
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/05/2017
@@ -13,7 +12,7 @@ ms.date: 04/05/2017
 
 # WebpageControlOptions XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can display content defined for a Web page or within a CDATA tag on a work item form by using the `WebpageControlOptions` element. You can include either the **Link** or the **Content** child elements to specify either a URL or HTML for the content to appear in the form.  
   

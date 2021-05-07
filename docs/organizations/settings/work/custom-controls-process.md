@@ -2,11 +2,9 @@
 title: Add a custom control to a WIT 
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Add extensions and custom controls to a work item type  (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 With extensions, you can add rich functionality to your work item forms. An extension comes in four flavors, or contribution types. The following controls appear on the web form layout for all inherited and customizable work item types (WITs):    
 - Field-level contribution (custom controls) 
@@ -25,7 +23,7 @@ With extensions, you can add rich functionality to your work item forms. An exte
 
 The fourth type, action-level contributions, on the other hand, appear in the context menu of the web form.  
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 You add all contributions by installing its extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab. Or, you can [create your own custom control](../../../extend/get-started/node.md).
 
@@ -34,13 +32,13 @@ For example, you can add the [**Who recently viewed a work item?** extension](ht
 <img src="media/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 To add extensions or edit a process, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions).
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 
 ## Review installed Marketplace extensions   
@@ -52,6 +50,7 @@ From the **Settings** context, **Extensions**, you can view the extensions that 
 To learn more about extensions, see [Install free extensions](../../../marketplace/install-extension.md).
 
 <a id="add-extension">  </a>
+
 ## Add a Marketplace extension   
 
 You can [browse the Marketplace](https://marketplace.visualstudio.com/search?term=control%20group%20tab%20page&target=vsts&category=Plan%20and%20track&hosting=cloud&sortBy=Relevance) to determine what extension(s) you want to add.
@@ -78,6 +77,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 
 <a id="add-field-control"></a>
+
 ## Add a field-level contribution or custom control 
 
 1. Install the [custom control](#add-extension) as discussed in the previous section.  
@@ -123,6 +123,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
    </tr> 
    </table>
 
+<a id="group-level" />
 
 ## Group-level and page-level contributions
 
@@ -133,7 +134,7 @@ If you've installed a group or page contribution, refresh your browser, and then
 
 ## Action-level contributions
 
-Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-vsts-extensions.md).  
+Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-extensions.md).  
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
@@ -148,9 +149,9 @@ You can use these REST APIs to work with extensions:
 
 ## Related articles 
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 - [Add a custom field to a work item type](customize-process-field.md)  
-- [Customize a work item type](customize-process-wit.md)
+- [Customize a work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
-- [Customize a project using an inherited process](customize-process.md)  
-
-
+- [Customize a project using an inherited process](customize-process.md)

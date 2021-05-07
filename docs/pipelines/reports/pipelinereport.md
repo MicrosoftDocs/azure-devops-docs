@@ -2,20 +2,15 @@
 title: Pipeline reports
 description: Get meaningful insights with pipeline reports in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 08/21/2019
 monikerRange: '>=azure-devops-2019'
 ---
 
 # Pipeline reports
 
-[!INCLUDE [version-header-ap](../_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-header-ap](../includes/version-server-2019-rtm.md)]
 
 Teams track their pipeline health and efficiency to ensure continuous delivery to their customers. You can gain visibility into your team's pipeline(s) using Pipeline analytics. The source of information for pipeline analytics is the set of runs for your pipeline. These analytics are accrued over a period of time, and form the basis of the rich insights offered. Pipelines reports show you metrics, trends, and can help you identify insights to improve the efficiency of your pipeline.  
 
@@ -25,7 +20,15 @@ Teams track their pipeline health and efficiency to ensure continuous delivery t
 
 Ensure that you have installed the [Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops"
+
 ## View pipeline reports
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 A summary of the pass rate can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report.
 
@@ -34,8 +37,6 @@ A summary of the pass rate can be viewed in the **Analytics** tab of a pipeline.
 <a name="viewinbuild"></a>
 
 ::: moniker range="azure-devops"
-
-## View pipeline reports
 
 A summary of the pass rate and duration can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report.
 
@@ -107,4 +108,4 @@ Pipelines reports can be further filtered by date range or branch.
     > ![View branch filter](media/pipelines-reports/branch-filter.png)
 
 
-[!INCLUDE [help-and-support-footer](../test/_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../test/includes/help-and-support-footer.md)] 

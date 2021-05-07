@@ -2,10 +2,8 @@
 title: Exploratory test in standalone mode
 description: Manual and exploratory testing - exploratory testing by using the Microsoft Test & Feedback extension in Standalone mode
 ms.assetid: 762A75FB-0B6D-47C3-9232-371348D8D529
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing with the Test &amp; Feedback extension in Standalone mode
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
 Users don't need an Azure DevOps subscription 

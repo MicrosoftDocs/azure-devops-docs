@@ -3,9 +3,7 @@ title: New work item web form
 titleSuffix: TFS 
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017 <= azure-devops-2019'
@@ -35,7 +33,7 @@ Work items have received a facelift. To provide a fresher, more modern experienc
 
 Here's what you'll see when you preview the new form.  
 
-<img src="../../boards/_shared/media/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
 
 For guidance in using the new form features, see [Add work items to plan and track your project](../../boards/backlogs/add-work-items.md).   
 
@@ -45,13 +43,13 @@ For guidance in using the new form features, see [Add work items to plan and tra
 
 First off, you'll notice that the form reflects the color of your work item type&mdash;bug, user story, or task. And, we've done away with duplicate titles to cut down on clutter. Whether you're working from a backlog, board, or query&mdash;your experience remains the same.  
 
-<img src="../../boards/_shared/media/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
 
 ### Great consumption experience  
  
 Your data has more structure and organization. Plus, you can focus more easily on areas of interest by collapsing groups to hide details you don't care about. And as you resize the form, it quickly responds to provide you with a great viewing experience even within a limited screen width.  
  
-<img src="../../boards/_shared/media/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
 
 
 ### More viewing area to support core experiences  
@@ -76,7 +74,7 @@ Within the discussion section, you can use the [<strong>@mention</strong> contro
 
 ### Access to other tasks
 
-Looking for the toolbar task options? You access them now through the ![](../../media/icons/actions-icon.png) actions icon.  
+Looking for the toolbar task options? You access them now through the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon.  
 
 <img src="../../boards/backlogs/media/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
 
@@ -94,7 +92,7 @@ As this switch is set on a per-user basis, other users will continue to see the 
 <a id="switch-back">  </a> 
 ### Switch back to the old form 
 
-If your admin has enabled opt-in to support switch back. Simply choose the ![](../../media/icons/actions-icon.png) actions icon to open the context menu to switch back to the old layouts.  
+If your admin has enabled opt-in to support switch back. Simply choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu to switch back to the old layouts.  
 
 ![New web form, user story, Back to old form menu option](../media/m-new-form-user-story-switch-to-old-form.png)
 
@@ -116,7 +114,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
-- [REST API, Work Item Types](/rest/api/azure/devops/processdefinitions/work%20item%20types)  
+- [REST API, Work Item Types](/rest/api/azure/devops/wit/work%20item%20types)  
 
 
 ### Will this impact Visual Studio work item forms?  

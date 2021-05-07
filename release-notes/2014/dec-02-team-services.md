@@ -1,7 +1,6 @@
 ---
 title: A new identity control – Dec 2
 description: VSTS release notes for December 02 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: eef013c8-9727-404d-9ef4-b8386d797d0b
@@ -58,7 +57,7 @@ Finally, we’ve heard from many of you that it’s annoying that you can’t sh
 
 ## Release Management Preview as Visual Studio Online service
 
-On November 12, we announced that Release Management is now available as a Visual Studio Online service as a Preview feature. With this, you can now configure [Release Management Update 4 client](https://go.microsoft.com/?linkid=9843000) to connect to a Visual Studio Online account. Once connected, you can and then [set up and manage releases to Azure](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx).
+On November 12, we announced that Release Management is now available as a Visual Studio Online service as a Preview feature. With this, you can now configure [Release Management Update 4 client](https://go.microsoft.com/?linkid=9843000) to connect to a Visual Studio Online account. Once connected, you can and then [set up and manage releases to Azure](https://devblogs.microsoft.com/devops/using-release-management-vso-service-to-manage-releases/).
 
 ![Connecting Release Management to a VSO account](media/12_02_07.png)
 

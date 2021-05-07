@@ -2,11 +2,9 @@
 title: CMMI process guidance, Project management 
 titleSuffix: Azure Boards
 description: Use to understand how to manage, plan, and coordinate the development and maintenance of software products.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 03/16/2017
 
 # Project management (CMMI)  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 You can use the Project Management section of the MSF for CMMI process improvement guidance to better understand how to manage, plan, and coordinate the development and maintenance of software products. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   
@@ -56,7 +54,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 ### Large projects  
  A project in which a team works through a series of iterations may be part of a larger project or program. A large project has several teams that work in parallel. Each team typically has four to 16 people.  
   
- Open a separate version control branch for each team. Each team should integrate with the main branch at the end of each iteration. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ Open a separate version control branch for each team. Each team should integrate with the main branch at the end of each iteration. For more information, see [Use branches](../../../../repos/tfvc/branching-strategies-with-tfvc.md).  
   
  Reserve the main branch for integration and tests. The build machine should perform a complete set of tests after an integration.  
   
@@ -70,4 +68,4 @@ You can use the Project Management section of the MSF for CMMI process improveme
 ## Related articles
 - **The Project Cycle/[Project activities](guidance-project-activities.md):** Start the project, gather requirements, create a project plan, divide it into iterations, and deliver releases. Manage risks, and manage changes to the plan.    
 - **The Iteration Cycle/[Iteration activities](guidance-iteration-activities.md):** Review and update requirements, plan the tasks to implement requirements, and manage issues as they occur.  
-- [CMMI process](../cmmi-process.md)   
+- [CMMI process](../cmmi-process.md)

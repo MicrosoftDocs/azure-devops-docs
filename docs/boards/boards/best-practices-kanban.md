@@ -4,18 +4,16 @@ titleSuffix: Azure Boards
 description: Best practices when implementing Kanban in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 11/19/2018
 ---
 
 # Kanban best practices
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 Having worked through the four configuration steps provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.

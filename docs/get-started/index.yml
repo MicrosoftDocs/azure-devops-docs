@@ -9,8 +9,8 @@ metadata:
   ms.prod: devops 
   ms.technology: devops-new-user
   ms.topic: landing-page 
-  author: kaelli 
-  ms.author: KathrynEE 
+  author: KathrynEE 
+  ms.author: kaelli 
   ms.date: 09/30/2019 
   manager: jillfra
 
@@ -85,7 +85,7 @@ landingContent:
           - text: Authenticate with SSH
             url: ../repos/git/use-ssh-keys-to-authenticate.md
           - text: Search code across projects
-            url: ../project/search/code-search.md
+            url: ../project/search/functional-code-search.md
   - title: Build and deploy your apps
     linkLists:
       - linkListType: quickstart
@@ -103,7 +103,7 @@ landingContent:
           - text: Change profile preferences
             url: ../organizations/settings/set-your-preferences.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Manage your notifications
-            url: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+            url: ../notifications/manage-your-personal-notifications.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
           - text: Preview new features
             url: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
           - text: Set favorites
@@ -126,11 +126,3 @@ landingContent:
             url: ../migrate/migrate-from-tfs.md
           - text: Import
             url: ../migrate/migration-import.md
-
-
-
-
-
-
-
-

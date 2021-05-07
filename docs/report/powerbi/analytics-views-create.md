@@ -2,28 +2,24 @@
 title: Create an Analytics view 
 titleSuffix: Azure DevOps
 description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 08/10/2020
 ---
 
 # Create an Analytics view in Azure DevOps 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 You create a custom Analytics view to define the filtered set of data and other criteria to support your Power BI reporting needs. A custom view provides you with greater flexibility over filter criteria and the fields loaded into a Power BI report over those available with a default Analytics view. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
-
-[!INCLUDE [temp](../_shared/boards-disabled.md)]
 
 Use this article to learn how to:
 
@@ -34,9 +30,11 @@ Use this article to learn how to:
 > * Create a custom Analytics view
 > * Review filter criteria for a view 
 
-[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
-[!INCLUDE [temp](../_shared/analytics-open.md)] 
+[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+
+[!INCLUDE [temp](../includes/analytics-open.md)] 
 
 ## Browse your views
 
@@ -45,7 +43,7 @@ From the **All** page as shown in the following image, you can access all Analyt
 > [!div class="mx-imgBorder"]
 > ![Analytics Views directory](media/editable-views/directory-actions.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
 To favorite a view, hover over the view and choose the ![star icon](../../media/icons/icon-favorite-star.png). Views you favorite will appear on the **Favorites** page.
 
@@ -62,6 +60,9 @@ Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialo
 
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
 
+> [!NOTE]   
+> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
+
 ### 1. Name the view and choose a sharing option
 
 Enter a name for the view and provide a description. To allow others to view and use the Analytics view, choose the **Shared** option. With shared views, you can set permissions as to who can view, edit, and delete the view as described in [Manage Analytics views](analytics-views-manage.md).
@@ -76,7 +77,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](media/editable-views/work-items-default.png)
+> ![Specify Work items filters.](media/editable-views/work-items-default.png)
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.

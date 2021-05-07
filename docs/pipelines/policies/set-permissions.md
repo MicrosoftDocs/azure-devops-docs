@@ -3,21 +3,16 @@ title: Add users to Azure Pipelines
 ms.custom: seodec18
 description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 05/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="> tfs-2018"
 
@@ -38,6 +33,9 @@ If your teammates want to edit pipelines, then have an administrator add them to
 4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
 
 ## Confirm that contributors have pipeline permissions 
+
+> [!NOTE]
+> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
 
 If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
 
@@ -83,7 +81,7 @@ In addition to permission assignments, you manage security for several resources
 
 1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
 
-   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a release pipeline." style="border: 1px solid #C3C3C3;" />
 
    If you want to manage the permissions for a specific release, then open the Security dialog for that release.
 
@@ -199,7 +197,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](media/manage-roles/add-user-role-endpoint-service.png)  
+   ![On Endpoint: gitConnect, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-endpoint-service.png)  
 
 1. Click **Add**.  
 
@@ -220,7 +218,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
 
-   ![Open the Roles tab for a service connection](media/manage-roles/open-security-deployment-pools.png) 
+   ![Open the Security dialog for all deployment pools.](media/manage-roles/open-security-deployment-pools.png) 
 
    If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group.
 
@@ -228,7 +226,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](media/manage-roles/add-user-role-deployment-pool.png)  
+   ![On the security dialog, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-deployment-pool.png)  
 
 1. Click **Add**.  
 

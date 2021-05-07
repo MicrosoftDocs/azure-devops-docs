@@ -2,21 +2,19 @@
 title: Service hooks event reference | Azure DevOps Services
 description: Events supported by Azure DevOps Services and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
 # Azure DevOps Services service hooks events
 
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+
 ## Available event types
 
-* Build and release
+* **Build and release**
   * [Build completed](#build.complete)
   * [Release created](#ms.vss-release.release-created-event)
   * [Release abandoned](#ms.vss-release.release-abandoned-event)
@@ -25,31 +23,33 @@ ms.date: 08/04/2016
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-::: moniker range="azure-devops"
-* Pipelines
+::: moniker range=">= azure-devops-2020"
+* **Pipelines**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
 ::: moniker-end
 
-* Code
+* **Code**
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
 
-* Work item 
+* **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
-Deprecated event types:
+::: moniker range="<= tfs-2017"
+**Deprecated event types**:
 
 * [Team room message posted](#message.posted)
+::: moniker-end
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -57,12 +57,14 @@ Deprecated event types:
 ## Build and release
 
 <a name="build.complete"></a>
+
 ### Build completed
 
 A build completes
 
 * Publisher ID: `tfs`
 * Event ID: `build.complete`
+* Resource Name: `build`
 
 #### Settings
  * `definitionName`: Filter events to include only completed builds for the specified pipeline
@@ -172,6 +174,7 @@ A release was abandoned
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-abandoned-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -332,6 +335,7 @@ A release was created
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-created-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -492,6 +496,7 @@ A deployment approval has been completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
@@ -696,6 +701,7 @@ A deployment approval has been requested
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
@@ -892,6 +898,7 @@ A deployment completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1045,6 +1052,7 @@ A deployment was started
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-started-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1186,19 +1194,22 @@ A deployment was started
 }
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 ## Pipelines
 
 > [!NOTE]
-> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events
+> [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md) preview feature needs to be enabled for these events.
 
 <a name="run.statechanged"></a>
+
 ### Run state changed
 
 Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1286,6 +1297,7 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1375,6 +1387,7 @@ An approval is created for a run stage
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-pending`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1457,6 +1470,7 @@ An approval completed for a run stage
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-completed`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1542,6 +1556,7 @@ A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
+* Resource Name: `changeset`
 
 #### Settings
  * `path`: Filter to checkins that change one or more files under the specified path
@@ -1600,6 +1615,7 @@ Code is pushed to a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.push`
+* Resource Name: `push`
 
 #### Settings
  * `branch`: The branch that code was pushed into
@@ -1694,6 +1710,7 @@ Pull request is created in a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.created`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1798,6 +1815,7 @@ Pull request - Created merge commit
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.merged`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1903,6 +1921,7 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `notificationType`: The type of pull request change
@@ -2022,6 +2041,7 @@ Filter events to include only newly created work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.created`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2104,6 +2124,7 @@ Filter events to include only newly deleted work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.deleted`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2180,6 +2201,7 @@ Filter events to include only newly restored work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.restored`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2268,6 +2290,7 @@ Filter events to include only changed work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.updated`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2391,6 +2414,7 @@ Filter events to include only work items commented on.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.commented`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2468,6 +2492,8 @@ Filter events to include only work items commented on.
 }
 ```
 
+::: moniker range="<= tfs-2017"
+
 ## Deprecated event types
 
 <a name="message.posted"></a>
@@ -2477,6 +2503,7 @@ Triggers when a message is posted to a team room
 
 * Publisher ID: `tfs`
 * Event ID: `message.posted`
+* Resource Name: `messageposted`
 
 #### Settings
  * `messagePattern`: The string that must be found in the message
@@ -2529,6 +2556,8 @@ Triggers when a message is posted to a team room
 }
 ```
 
+::: moniker-end
+
 ## Resource containers
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.
@@ -2536,4 +2565,3 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
 * **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
-

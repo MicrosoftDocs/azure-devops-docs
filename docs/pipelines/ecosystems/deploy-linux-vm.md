@@ -1,32 +1,31 @@
 ---
 title: Deploy to a Linux VM
-description: Deploy a web application to a web server on a Linux virtual machine using Environment support for VM resources in Azure Pipelines
+description: Deploy a web application to a web server on a Linux VM with an environment
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ushan
 author: N-usha
-ms.date: 12/24/2019
+ms.date: 02/24/2020
 monikerRange: 'azure-devops' 
 ---
 
 # Deploy to a Linux Virtual Machine
 
-Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to virtual machines, both on-premises or on any cloud.
+> [!NOTE]
+> If you want to deploy your application to a Linux virtual machine using the classic editor, see [Deploy web apps to Linux VMs](../apps/cd/deploy-linuxvm-deploygroups.md).
 
-Continuous integration (CI) and continuous deployment (CD) form a pipeline by which you can build, release, and deploy your code. This document contains the steps associated with setting up a CI/CD pipeline for doing multi-machine deployments.
-We'll show you how to set up continuous deployment of your app to an web server running on Ubuntu using YAML based
-Azure Pipelines. You can use the steps in this 
-quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
+Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to virtual machines. 
+
+You can use continuous integration (CI) and continuous deployment (CD) to build, release, and deploy your code. Learn how to set up a CI/CD pipeline for multi-machine deployments.
+
+This article covers how to set up continuous deployment of your app to a web server running on Ubuntu. You can use these steps for any app that publishes a web deployment package.
 
 ## Get your sample code
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-projects/spring-petclinic
@@ -36,7 +35,7 @@ https://github.com/spring-projects/spring-petclinic
 
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
 ```
 https://github.com/azure-devops/fabrikam-node
@@ -52,14 +51,14 @@ https://github.com/azure-devops/fabrikam-node
 
 ## Prerequisites for the Linux VM
 
-Sample apps mentioned above have been tested on Ubuntu 16.04, and we recommend you use the same version of Linux VM for this quickstart.
-Follow the additional steps described below based on the runtime stack used for the app.
+Use Ubuntu 16.04 for this quickstart. Follow additional steps for Java or JavaScript.
 
 #### [Java](#tab/java)
 
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
-- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/Oracle.OracleWebLogicServer12cEnterprise) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14 
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
+- For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
+
 
 #### [JavaScript](#tab/java-script)
 
@@ -70,28 +69,28 @@ Follow the additional steps described below based on the runtime stack used for 
 ## Create an environment with virtual machines
 
 Virtual machines can be added as resources within [environments](../process/environments.md) and can be targeted for multi-VM deployments. 
-Deployment history views within environment provide traceability from VM to the pipeline and then to the commit.
+The deployment history view provides traceability from the VM to the commit.
 
-You can create an environment in the **Environments** hub within the **Pipelines** section.
+You can create an environment in **Environments** within **Pipelines**.
 1.	Sign into your Azure DevOps organization and navigate to your project.
-2.	In your project, navigate to the Pipelines page. Then choose **Environments** and click **Create Environment**. Specify a **Name** (required) for the environment and a **Description**.
-3.	Choose **Virtual Machines** as a **Resource** to be added to the environment and click **Next**.
-4.	Choose Operating System (Windows/Linux), and **copy PS registration script**. 
-5.	Now run the copied script from an administrator PowerShell command prompt on each of the target VMs to be registered with this Environment.
+2.	Navigate to the Pipelines page. Select **Environments** and click **Create Environment**. Specify a **Name** (required) for the environment and a **Description**.
+3.	Choose **Virtual Machines** as a **Resource** to be added to the environment. Click **Next**.
+4.	Choose the Windows or Linux for the **Operating System** and copy PS registration script. 
+5.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs registered with this environment.
     > [!NOTE]
-    > - Personal Access Token of the logged in user is pre-inserted in the script which expires on the same day making the copied script unusable thereon.
-    > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
-6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
+    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script and expires after three hours.
+    > - If your VM already has any agent running on it, provide a unique name to register with environment.
+6.	Once VM is registered, it will start appearing as an environment resource under **Resources**.
     > [!div class="mx-imgBorder"]
     > ![VMcreation](media/vm-creation.png)
 
-7.	For adding more VMs, you can view and copy the script again. Click **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs to be added to this environment. 
+7.	To add more VMs, copy the script again. Click **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs you want to add to the same environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
     > [!div class="mx-imgBorder"]
     > ![VMresource_view](media/vm-resourceview.png)
 
-9. You can add tags to the VM as part of the interactive PS registration script (or) you can also add/remove the same from the resource view by clicking on the triple dots at the end of each VM resource in the resources view.
-The tags you assign allow you to limit deployment to specific virtual machines when the environment is used in a Deployment job. Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
+9. You can add or remove tags for the VM. Click on the dots at the end of each VM resource in **Resources**.
+The tags you assign allow you to limit deployment to specific VMs when the environment is used in a deployment job. Tags are each limited to 256 characters, but there is no limit to the number of tags you can create.
     > [!div class="mx-imgBorder"]
     > ![VMtags](media/vm-tags.png)
 
@@ -99,8 +98,7 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 
 ## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build pipeline that publishes your web application, as well as
-a deployment script that can be run locally on the Ubuntu server. Set up a CI build pipeline based on the runtime you want to use. 
+You'll need a continuous integration (CI) build pipeline that publishes your web application and a deployment script that can be run locally on the Ubuntu server. Set up a CI build pipeline based on the runtime you want to use. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -108,7 +106,7 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+1. You may be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
 1. When the list of repositories appears, select your desired sample app repository.
 
@@ -116,7 +114,7 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 
 #### [Java](#tab/java)
 
-Select the **starter** template and copy the below YAML snippet that builds your Java project and runs tests with Apache Maven:
+Select the **starter** template and copy this YAML snippet to build your Java project and runs tests with Apache Maven:
 ```YAML
 - job: Build
     displayName: Build Maven Project
@@ -138,7 +136,7 @@ For more guidance, follow the steps mentioned in [Build your Java app with Maven
 
 #### [JavaScript](#tab/java-script)
 
-Select the **starter** template and copy the below YAML snippet that builds a general Node.js project with npm.
+Select the **starter** template and copy this YAML snippet to build a general Node.js project with npm.
 ```YAML
 - stage: Build
   displayName: Build stage
@@ -167,49 +165,49 @@ Select the **starter** template and copy the below YAML snippet that builds a ge
 ```
 For more guidance, follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
 
-- Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+- Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
-- A new run is started. Wait for the run to finish.
+- A new run is started. Wait for the run to complete.
 
 * * * 
 
 ## Define CD steps to deploy to the Linux VM
-1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources which you created earlier:
+1. Edit your pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources you created earlier:
     ```YAML
     jobs:  
-      - deployment: VMDeploy
-        displayName: web
-        environment:
-          name:  <environment name>
-          resourceType: VirtualMachine
-          tags: web1
-        strategy:
+    - deployment: VMDeploy
+      displayName: web
+      environment:
+        name:  <environment name>
+        resourceType: VirtualMachine
+        tags: web1
+      strategy:
     ```
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
+[Here](../yaml-schema.md?tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
 3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 
-`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
+   `runOnce` is the simplest deployment strategy. All the life-cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
 
-Below is the example YAML snippet for `runOnce` :
-    ```YAML
-    jobs:
-    - deployment: VMDeploy
-      displayName: web
-      pool:
-        vmImage: 'Ubuntu-16.04'
-      environment:
-        name: <environment name>
-        resourceType: VirtualMachine
-      strategy:
-          runOnce:
-            deploy:
-              steps:
-              - script: echo my first deployment
-    ```
+   Below is an example YAML snippet for `runOnce` :
+   ```YAML
+   jobs:
+   - deployment: VMDeploy
+     displayName: web
+     pool:
+       vmImage: 'Ubuntu-16.04'
+     environment:
+       name: <environment name>
+       resourceType: VirtualMachine
+     strategy:
+       runOnce:
+         deploy:
+           steps:
+           - script: echo my first deployment
+   ```
 
-4. Below is an example of the YAML snippet that you can use to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+4. Below is an example YAML snippet for the rolling strategy. You can update up to 5 targets gets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
     ```YAML
     jobs: 
@@ -252,7 +250,7 @@ Below is the example YAML snippet for `runOnce` :
     With each run of this job, deployment history is recorded against the `<environment name>` environment that you have created and registered the VMs.
 
 ## Pipeline traceability views in environment
-Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
+The **Deployments**  view provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment.
 > [!div class="mx-imgBorder"]
 > ![VMDeployments_view](media/vm-deployments.png)
   
@@ -260,6 +258,6 @@ Deployments view of the environment provides complete traceability of commits an
 > ![VMjobs_view](media/vm-jobsview.png)
 
 ## Next Steps
-To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting.md).
+To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting/troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).

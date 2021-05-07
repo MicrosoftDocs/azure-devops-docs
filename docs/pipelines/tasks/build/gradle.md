@@ -3,27 +3,24 @@ title: Gradle build and release task
 ms.custom: seodec18
 description: Gradle build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 12/17/2019
+ms.date: 03/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Gradle task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build using a Gradle wrapper script.
+Use this task to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
+[!INCLUDE [temp](../includes/yaml/GradleV2.md)]
 
 ::: moniker-end
 
@@ -157,13 +154,13 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 
 ## Example
 
-[Build your Java app with Gradle](../../apps/java/build-gradle.md)
+[Build your Java app with Gradle](../../ecosystems/java.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I generate a wrapper from my Gradle project?
@@ -202,10 +199,10 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
    by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
    from 10 seconds to 1 minute.
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

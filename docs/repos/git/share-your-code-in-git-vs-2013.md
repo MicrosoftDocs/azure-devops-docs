@@ -1,36 +1,33 @@
-﻿---
+---
 title: Share your code with Git using Visual Studio 2013
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
-ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: quickstart
 ms.date: 08/29/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Share your code with Visual Studio 2013 and Azure Repos Git
+
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015  
-
+ 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
 as early as possible. Here, we'll show you how to get started with 
 Git, a distributed system. If you want to work in a centralized system, 
 you can instead use [TFVC with Azure Repos](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
-[!INCLUDE [temp](_shared/open-team-project-in-vs.md)]
+[!INCLUDE [temp](includes/open-team-project-in-vs.md)]
 
 ## Clone your repository
 
@@ -112,7 +109,7 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 2. Go to the commits page (Keyboard: Ctrl + 0, C).
 
-   ![Push changes](media/share-your-code-in-git-vs/IC682976.png)
+   ![Go to the commits page.](media/share-your-code-in-git-vs/IC682976.png)
 
 3. Push your changes.
 
@@ -123,9 +120,9 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/open-team-project-in-vs-qa.md)]
+[!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
 
-[!INCLUDE [temp](_shared/qa-vs-launch-fail.md)]
+[!INCLUDE [temp](includes/qa-vs-launch-fail.md)]
 
 
 #### Q: How can I see what I've changed?
@@ -156,6 +153,6 @@ A: Yes. See [Use Git from the command prompt](command-prompt.md).
 
 #### Q: Where can I learn more?
 
-A: [Use Visual Studio and Team Foundation Server with Git](overview.md)
+A: [Use Visual Studio and Team Foundation Server with Git](./index.yml)
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->

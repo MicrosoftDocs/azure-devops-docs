@@ -1,7 +1,6 @@
 ---
 title: Dashboard widget SDK, create branch from work item, test visualizations and so much more – Jan 25
 description: VSTS release notes for January 25 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 5f275e4c-86c9-44fa-8d53-cf7a0d1d792a
@@ -36,7 +35,7 @@ In the same way as the work item form, the pull request details view has been up
 
 ## Build widgets in the catalog
 
-As I wrote about in the [dashboards futures blog](https://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/dashboards-futures-january-2016.aspx), one area we’re focusing on is improving the discoverability and ease in bringing different charts to your dashboard. With this update, you’ll see a new option to add a build history chart from the dashboard catalog, and you’ll be able to configure the build definition displayed directly from the dashboard.
+As I wrote about in the [dashboards futures blog](https://devblogs.microsoft.com/devops/dashboards-futures-january-2016/), one area we’re focusing on is improving the discoverability and ease in bringing different charts to your dashboard. With this update, you’ll see a new option to add a build history chart from the dashboard catalog, and you’ll be able to configure the build definition displayed directly from the dashboard.
 
 ![Adding a build history chart from the dashboard catalog](media/1_25_04.png)
 
@@ -188,7 +187,7 @@ The default retention policy for all release definitions is 60 days. By default,
 
 At this point, the retention policies for release management are independent from builds. In a future version, we will help you retain builds based on their usage in release management.
 
-For more information, see [documentation](https://aka.ms/rmpreview) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
+For more information, see [documentation](/azure/devops/pipelines/get-started/what-is-azure-pipelines) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
 
 ## UI extensibility for release management
 

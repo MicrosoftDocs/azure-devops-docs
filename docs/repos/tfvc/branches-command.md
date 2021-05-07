@@ -3,11 +3,7 @@ title: Branches Command
 titleSuffix: Azure Repos
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Branches Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays the history of a branch for a specified file or folder.
 
@@ -38,15 +34,15 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
 <tbody>
 <tr>
 <td><p><i>Itemspec</i></p></td>
-<td><p>Identifies the file or folder that contains the branch you want to examine. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p></td>
+<td><p>Identifies the file or folder that contains the branch you want to examine. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>Versionspec</i></p></td>
-<td><p>Provides a value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td>
+<td><p>Provides a value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains a file or folder in a branch for which you want to display the history (for example, `http://myserver:8080/tfs/DefaultCollection`.</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
@@ -80,7 +76,7 @@ tf branches itemspec [/version:versionspec] [/collection:TeamProjectCollectionUr
 ## Remarks
 The branches command tells you when an item has been the source or destination of a branch operation. The output displays the parent branch for each version.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -122,10 +118,10 @@ $/jun16-1/WindowsApplication13
 
 #### Concepts
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)
+[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
-[Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+[Branching and Merging](./branching-strategies-with-tfvc.md)

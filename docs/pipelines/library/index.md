@@ -3,10 +3,7 @@ title: Library for Azure Pipelines and Team Foundation Server
 ms.custom: seodec18
 description: Understand the library in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,13 +12,13 @@ monikerRange: '>= tfs-2017'
 
 # Library
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-*Library* is a collection of _shared_ build and release assets for a project.
+*Library* is a collection of build and release assets for a project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.
 The **Library** tab can be accessed directly in Azure Pipelines and Team Foundation Server (TFS).
 
@@ -46,4 +43,4 @@ The security settings for the **Library** tab control access for _all_ items in 
 In addition to the three roles listed above, the **Creator** role on the library defines who can create new items in the library, but it does not include **Reader** and **User** permissions and cannot be used to manage permissions for other users.
 By default, the following groups are added to the **Administrator** role of the library: **Build Administrators**, **Release Administrators**, and **Project Administrators**.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
