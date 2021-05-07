@@ -48,7 +48,7 @@ By default all members of an organization or project collection can view Deliver
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans.](media/plans/open-plans.png) 
 
-1. To grant permissions to a group or user to manage or edit a specific plan, choose  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More options** to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-security.png)  
@@ -56,12 +56,12 @@ By default all members of an organization or project collection can view Deliver
 
 3. With the user or group selected, set the permission you want them to have to **Allow**. **Manage** set to **Allow** enables the user to manage permissions for the plan.
 
-	For example, here we grant permission to Raisa to edit the plan.
+	For example, here we grant permission to Cristina to edit the plan.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a delivery plan](media/permissions/permissions-plans-dialog.png)
+	> ![Permissions dialog for a delivery plan](media/permissions/permissions-dialog-change-s186.png)
 
-4. Choose **Save changes** when done. 
+4. When done, close the dialog. The changes are automatically saved.  
 
 ::: moniker-end 
 
