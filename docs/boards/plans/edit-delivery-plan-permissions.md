@@ -115,5 +115,4 @@ By default all members of an organization or project collection can view Deliver
 - [Review team delivery plans](review-team-plans.md)  
 - [About permissions and inheritance](../../organizations/security/about-permissions.md)
 - [About access levels](../../organizations/security/access-levels.md)
-https://docs.microsoft.com/en-us/rest/api/azure/devops/work/plans/create?view=azure-devops-rest-6.0
 
