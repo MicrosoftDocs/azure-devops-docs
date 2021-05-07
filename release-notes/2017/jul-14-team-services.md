@@ -2,7 +2,6 @@
 title: New Release Definition Editor and improved pull request workflows – July 14
 description: VSTS release notes for July 13 2017
 ms.ContentId: 3db4e4d9-ac9e-426c-81bc-dac28ea16988
-ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
@@ -14,7 +13,7 @@ ms.date: 07/23/2017
 
 Last sprint we talked about the continuing refresh of our web experience.  The big thing we’re excited about this sprint is the new __Release Definition Editor__ going into preview.  It is based off the new CI editor we released not long ago, and it’s a good example of the overall direction that we are going.  It’s not just a cleaner experience, it is structurally different in that it lets you visualize your release process.  It lets you work with Release in the way you think about your system.  We are going to be bringing this same approach to the runtime views as well so that you can visualize a release as it progresses.  Unlocking all of your data with richer, easier to consume visualizations is something we are trying to do across the product. Read more about the new [__Release Definition Editor__ preview](#new-release-definition-editor-preview) below.
 
-![visualize pipeline](_img/07_14_08.png)
+![visualize pipeline](media/07_14_08.png)
 
 And of course, there are lots of other improvements across the product this sprint.  Let’s jump in!
 
@@ -27,67 +26,67 @@ Many customers have asked us how to prepare and test changes of a process withou
 ### Filtering on Backlogs, Sprints, and Queries
 All of our existing work item tracking grid experiences (queries, backlogs, sprints backlogs, and test case management) now make use of our common, consistent filtering component. Beyond applying a keyword filter across displayed columns and selecting tags, with this new component, you can also filter on work item types, states, and assigned to in order quickly to get to the work items you are looking for. Here’s a sneak peek:
 
-![Filtering on backlogs sprints and queries](_img/07_14_01.png)
+![Filtering on backlogs sprints and queries](media/07_14_01.png)
 
 Over the next couple of sprints, we will be bringing this same filtering experience into our Kanban board, our task board, and our Delivery Plans extension so stay tuned!
 
 ### Expand to show empty fields on a Kanban card
 Today, you have the option to add additional fields to a card and then __hide empty fields__ in board settings to remove unnecessary clutter from the board. The drawback to this feature was that once an empty field was hidden, the only way to update the field was to open the work item form. With the newly available expand option on Kanban cards, you can now benefit from hiding empty fields across the board, but still have single click access to update a particular field on a card. Simply hover over the card and look for the down chevron at the bottom of the card to update the hidden field. 
 
-![Show empty card fields closed](_img/07_14_02.png)
+![Show empty card fields closed](media/07_14_02.png)
 
 Click the down chevron at the bottom of the card to update the field.
 
-![Show empty card fields open](_img/07_14_23.png)
+![Show empty card fields open](media/07_14_23.png)
 
 ## Code
 ### Automatically complete work items when completing pull requests
 If you’re linking work items to your PRs, keeping everything up to date just got simpler. Now, when you complete a PR, you’ll have the option to automatically complete the linked work items after the PR has been merged successfully. If you’re using policies and set PRs to auto-complete, you’ll see the same option. No more remembering to revisit work items to update the state once the PR has completed - VSTS will do it for you.  
 
-![Complete work items](_img/07_14_16.png)
+![Complete work items](media/07_14_16.png)
 
 ### Policies: Reset votes on push/new iteration
 Teams opting for a more strict approval workflow in PRs can now opt-in to a new feature - the ability to reset votes when new changes are pushed. The new setting is an option under the policy to __Require a minimum number of reviewers__.
 
-![Reset votes setting](_img/07_14_17.png)
+![Reset votes setting](media/07_14_17.png)
 
 When set, this option will cause all votes from all reviewers to be reset any time the source branch of the PR is updated. The PR timeline will record an entry any time the votes are reset as a result of this option.
 
-![Reset votes timeline](_img/07_14_18.png)
+![Reset votes timeline](media/07_14_18.png)
 
 ### Notifications: Great email templates for pull request workflows
 Pull request email alerts have been refreshed to make them clear, concise, and actionable. The subject line will begin with the PR title and secondary information, like the repo name, and ID will be deferred to the end.  The name of the author has been added to the subject to make it simpler to apply rules and filters based on the person that’s created the PR.  
 
 The body of the alert emails has a refreshed template that first summarizes why the alert was sent, followed by the critical metadata (title, branch names, and description), and a main call-to-action button. Additional details like the reviewers, files, and commits are included further down the email.
 
-![Email body](_img/07_14_21.png)
+![Email body](media/07_14_21.png)
 
 For most alerts, the call-to-action will be to view the pull request in the web. However, when you’re notified about a specific comment, the call-to-action will __link directly to that comment__ so you can easily find the code and prior conversation for context.  
 
-![Email view comment](_img/07_14_22.png)
+![Email view comment](media/07_14_22.png)
 
 ### Pull request details: View original diff for code comments
 Sometimes, it’s hard to make sense out of a PR comment after the code it’s referencing has changed (many times, when a requested change has been made).  
 
-![Code after](_img/07_14_19.png)
+![Code after](media/07_14_19.png)
 
 When this happens, you’ll now see a badge with an update number that you can click to see what the code looked like at the time the comment was originally created.  
 
-![Code before](_img/07_14_20.png)
+![Code before](media/07_14_20.png)
 
 ### Task lists in pull request descriptions and comments
 When preparing a PR or commenting you sometimes have a short list of things that you want to track but then end up editing the text or adding multiple comments. Lightweight task lists are a great way to track progress on a list of todos as either a PR creator or reviewer in the description or a single, consolidated comment. Click on the Markdown toolbar to get started or apply the format to selected text.
 
-![Task list toolbar](_img/07_14_13.png)
+![Task list toolbar](media/07_14_13.png)
 
 Once you’ve added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as `[ ]` and `[x]` in Markdown. See [Markdown guidance](https://visualstudio.microsoft.com/docs/reference/markdown-guidance#checklist-or-task-list) for more information.
 
-![Task list complete](_img/07_14_14.png)
+![Task list complete](media/07_14_14.png)
 
 ### Ability to “Like” comments in pull requests
 Show your support for a PR comment with a single click on the __like__ button. You can see the list of all people that liked the comment by hovering over the button.  
 
-![Like comments](_img/07_14_15.png)
+![Like comments](media/07_14_15.png)
 
 ## Build
 ### Pull request build variables
@@ -107,22 +106,22 @@ Have you ever struggled to create a mental model of how the deployments to your 
 #### Visualization of the pipeline
 The pipeline in the editor provides a graphical view of how deployments will progress in a release. The artifacts will be consumed by the release and deployed to the environments. The layout and linking of the environments reflects the trigger settings defined for each environment.
 
-![Visualize pipeline](_img/07_14_08.png)
+![Visualize pipeline](media/07_14_08.png)
 
 #### In context configuration UI
 Artifacts, release triggers, pre deployment / post deployment approvals, environment properties and deployment settings are now in-context and easily configurable.
 
-![In context config](_img/07_14_09.png)
+![In context config](media/07_14_09.png)
  
 #### Applying deployment templates
 The list of featured templates are shown when creating a new environment. 
 
-![Templates](_img/07_14_10.png)
+![Templates](media/07_14_10.png)
   
 #### Improved task and phase editor
 All the enhancements in the new build definition editor are now available in the release definition editor, too. You can search for tasks and add them either by using the __Add__ button or by using drag/drop. You can reorder or clone tasks using drag/drop. 
 
-![Task and phase editor](_img/07_14_11.png)
+![Task and phase editor](media/07_14_11.png)
 
 ### Task group references
 Task groups are created for use across multiple release and build definitions but we’ve heard that there is confusion with not knowing which definitions are impacted by a task group change. This feature adds the __References__ tab to show the list of build and release definitions using the task group so that you can make changes with confidence.
@@ -132,24 +131,24 @@ When making changes to task groups, it can feel risky because the change is effe
 
 When a new major (or preview) version of the task group is available, the definition editor will advise you that there is a new version. If that major version is preview, you even see a “try it out” message. When the task group comes out of preview, definitions using it will be auto-updated, sliding along that major channel.
 
-![Save as draft](_img/07_14_04.png)
+![Save as draft](media/07_14_04.png)
 
-![Publish as preview](_img/07_14_05.png)
+![Publish as preview](media/07_14_05.png)
 
 ### Task group import and export
 Although task groups have enabled reuse within a project, we know that recreating a task group across projects and accounts can be painful. With task group import/export, as we’ve done for release definitions, now you can export as a JSON file and import where you want it. We’ve also enabled nested task groups, which first expand when they are exported.
 
-![Publish as preview](_img/07_14_07.png)
+![Task group import and export.](media/07_14_07.png)
 
 ### Multi Configuration support in Server Side (Agentless) tasks
 By specifying variable multipliers for server side (agentless) tasks, you can now run the same set of tasks in a phase on multiple configurations, which run in parallel. 
 
-![multi config support](_img/07_14_06.png)
+![multi config support](media/07_14_06.png)
 
 ### Code information in Release with Jenkins CI
 In __Release__, we want to have better integration with popular CI systems like Jenkins. Today, in the __release summary__ tab, we show code commits only if the CI build is coming from VSTS. This feature enables code information for Jenkins CI artifacts as well when the Jenkins server is reachable by the agent executing the release.
 
-![Code info in Release with Jenkins](_img/07_14_03.png)
+![Code info in Release with Jenkins](media/07_14_03.png)
 
 ## Insights
 ### Velocity Widget for the Analytics Extension
@@ -159,7 +158,7 @@ The [Marketplace Extension for Analytics](https://marketplace.visualstudio.com/i
 With this powerful widget, you can chart your team’s velocity by Story Points, work item count, or any custom field.
 With advanced options, you can compare what your team delivered as compared to plan, as well as highlighting work that was completed late. 
 
-![Velocity Widget](_img/07_14_12.png)
+![Velocity Widget](media/07_14_12.png)
 
 ## Shared
 ### Notifications: Give team admins control over the delivery of notifications targeting the team
@@ -174,10 +173,10 @@ Due to security concerns, we have added SVG constraints to make extensions safer
 * The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
 * Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
 
-## Feedback
+## How to provide feedback
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu. 
 
-![Feedback menu](_img/07_14_00.png)
+![Feedback menu](media/07_14_00.png)
 
 You can also get advice and your questions answers by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services). 
 

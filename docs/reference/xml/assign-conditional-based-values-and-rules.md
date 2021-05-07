@@ -1,20 +1,20 @@
-﻿---
+---
 title: Assign conditional-based values and rules
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define conditional rules and values
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 01/20/2017
 ---
 
 # Assign conditional-based values and rules
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define rules that are run conditionally by using the **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED** elements. You use these rules to define which elements are run when the defined clause is `True`. You can define conditions that are based on what value is assigned to a specific field or whether a user modifies a specific field. For example, you can create a dependent pick list to provide detailed security or custom behavior.  
 

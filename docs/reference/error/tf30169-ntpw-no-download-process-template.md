@@ -2,19 +2,17 @@
 title: TF30169-The New Team Project Wizard ... 
 titleSuffix: Azure DevOps & TFS
 description: Provides the list of errors when the New Team Project Wizard unable to download the process template.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6fda9d67-bbdc-432d-949a-2814e499b2c3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 # TF30169: The New Team Project Wizard was unable to download the process template {0}.
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the project. This error can occur due to one of the following conditions:  
   
@@ -34,7 +32,7 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
   
 1.  Confirm that your local computer is connected to the network and can access network resources.  
   
-2.  Contact the administrator for the server that hosts SharePoint Products to confirm the availability of the server on the network and request that the process templates be added to the server. For more information, see [Retrieve and Restore Missing Site Templates](https://msdn.microsoft.com/library/bb909677.aspx).  
+2.  Contact the administrator for the server that hosts SharePoint Products to confirm the availability of the server on the network and request that the process templates be added to the server. For more information, see [Retrieve and Restore Missing Site Templates](/previous-versions/visualstudio/visual-studio-2010/bb909677(v=vs.100)).  
   
 3.  If the server is available on the network and the process templates are available on the server, review the amount of available storage space for program downloads onto your local hard disk. For information about how to increase the available download space, see the online Help for your operating system.  
   

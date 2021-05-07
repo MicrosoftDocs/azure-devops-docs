@@ -1,14 +1,12 @@
 ---
 title: Sprint and scrum best practices
 titleSuffix: Azure Boards 
-description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 
@@ -33,9 +31,9 @@ After you've planned your sprint, you may want to [share the plan](share-plan.md
 
 You can learn more from these resources: 
 *	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-*	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+*	[Sprint planning](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
 *	[The Scrum Guide](https://www.scrumguides.org/scrum-guide.html)
-*	[Build and manage the product backlog](https://msdn.microsoft.com/library/hh765982.aspx) white paper
+*	[Build and manage the product backlog](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
 
 
 <a id="set-sprint-goals">  </a>

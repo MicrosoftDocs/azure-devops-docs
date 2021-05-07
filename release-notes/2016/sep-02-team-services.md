@@ -1,7 +1,6 @@
 ---
 title: Custom work item types and stakeholder support for exploratory testing – Sept 2
 description: VSTS release notes for September 02 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 6dacf469-d201-4cc9-8fd4-4fab64c975bc
@@ -22,7 +21,7 @@ I’m very happy to roll out in this latest sprint the ability to create custom 
 
 The work item history tab has been redesigned to provide a better experience for exploring changes made to work items. Individual revisions are now grouped by date buckets and summarized in a left pane, complete with adornment icons that help you quickly identify changes. Quickly scan the history pane to spot the revisions with comments, work item state changes, assignment changes, attachments, and links. We’ve also made quite a few “under the hood” changes to ensure better performance for work items with lots of revisions.
 
-![Redesigned work item history tab](_img/9_02_01.png)
+![Redesigned work item history tab](media/9_02_01.png)
 
 ## Managing a NuGet package's lifecycle
 
@@ -34,7 +33,7 @@ Note: You must be a feed contributor to unlist and a feed owner to delete a pack
 
 We've implemented a new design for the Queued builds page that shows a longer list of queued and running builds, and in a more intuitive fashion. Let us know what you think.
 
-![Redesigned Queued Builds page](_img/9_02_02.png)
+![Redesigned Queued Builds page](media/9_02_02.png)
 
 ## Hosted build pool build agent
 
@@ -46,9 +45,9 @@ The Xamarin License step is no longer necessary and has been removed from the bu
 
 ## Jenkins with untrusted SSL certificates
 
-Jenkins connections can now be configured to accept untrusted SSL certificates of Jenkins servers. This is useful when Team Services service hooks or build/release processes integrate with Jenkins. For example, if a Jenkins server is configured to use SSL with a self-signed certificate or a certificate that cannot be verified by a Certificate Authority (CA), this setting will allow administrators to deliberately trust the certificate anyway. For more information about Jenkins integration capabilities, see [Team Services Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+Jenkins connections can now be configured to accept untrusted SSL certificates of Jenkins servers. This is useful when Team Services service hooks or build/release processes integrate with Jenkins. For example, if a Jenkins server is configured to use SSL with a self-signed certificate or a certificate that cannot be verified by a Certificate Authority (CA), this setting will allow administrators to deliberately trust the certificate anyway. For more information about Jenkins integration capabilities, see [Team Services Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
-![Adding a Jenkins connection with untrusted SSL certificates](_img/9_02_03.png)
+![Adding a Jenkins connection with untrusted SSL certificates](media/9_02_03.png)
 
 ## Apple App Store extension
 
@@ -58,29 +57,29 @@ We’ve released a new extension in our marketplace with deployment tasks for au
 
 You can now request feedback from stakeholders directly from features/stories using the **Request Feedback** option in the work item menu. Provide a simple set of instructions that are sent to them directly, prompting for the areas of the product you’d like input.
 
-![The new Request Feedback form](_img/9_02_04.png)
+![The new Request Feedback form](media/9_02_04.png)
 
 Stakeholders can respond to the feedback request by clicking the **Provide feedback** link, which automatically configures the Exploratory testing extension with the selected feedback request (it will prompt to install the extension, if not already installed). Stakeholders can then use the full capture capabilities of the extension to capture their findings and submit their feedback in the form of feedback response/bug/task work-items.
 
-![Feedback request alert](_img/9_02_05.png)
+![Feedback request alert](media/9_02_05.png)
 
-![Creating a new feedback response](_img/9_02_06.png)
+![Creating a new feedback response](media/9_02_06.png)
 
 In addition to the solicited flow mentioned above, stakeholders can also use the extension to provide voluntary feedback. They can invoke the extension, select the **Stakeholder** mode in the Connection settings page, and connect to the account and Project/Team to whom they wish to provide feedback. They can then use the extension to capture their findings and submit their feedback in the form of feedback response/bug/task work-items.
 
-![Selecting Stakeholder mode in Connection settings](_img/9_02_07.png)
+![Selecting Stakeholder mode in Connection settings](media/9_02_07.png)
 
 ## Checkstyle static analysis
 
 You can now request a [CheckStyle](https://docs.gradle.org/current/userguide/checkstyle_plugin.html) standalone analysis based on the [Sun Java rules](https://raw.githubusercontent.com/checkstyle/checkstyle/checkstyle-6.1.1/sun_checks.xml) in the Gradle build task. The Artifact tab of the build summary contains the results of the CheckStyle static analysis. This now works in every agent (including the Hosted agent).
 
-![Selecting the Run Checkstyle option in Gradle builds](_img/9_02_08.png)
+![Selecting the Run Checkstyle option in Gradle builds](media/9_02_08.png)
 
 ## Deployment manual intervention
 
 You can now pause execution during deployment to an environment. Including a **Manual Intervention** task enables you to pause a deployment, perform manual steps, and then resume further automated steps. You can also reject the deployment and prevent further steps from executing after a manual intervention.
 
-![Adding a Manual Intervention task to a deployment](_img/9_02_09.png)
+![Adding a Manual Intervention task to a deployment](media/9_02_09.png)
 
 You should note that a manual intervention task splits the overall execution into three phases. The first phase runs on an agent, and after it is done, the agent is released. The manual intervention phase does not require any agent. After it is completed, any tasks following the manual intervention task are run in the third phase, possibly on a different agent. The artifacts are downloaded during both the agent phases, since different agents may be used for both of them. You should not assume that the state from the first phase is available during subsequent phases.
 
@@ -94,13 +93,13 @@ Another enhancement to the endpoints is the introduction of icons. Endpoint type
 
 The Azure SQL Database Deployment task has been enhanced to run SQL scripts against an Azure SQL DB. The scripts can be provided as a file or inline within the task.
 
-![The enhanced Azure SQL Database deployment task](_img/9_02_10.png)
+![The enhanced Azure SQL Database deployment task](media/9_02_10.png)
 
 ## User lifecycle management improvements
 
-We made changes to better support securing access to your Team Service. Check out this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/user-lifecycle-management-improvements-in-visual-studio-team-services/) for all the details.
+We made changes to better support securing access to your Team Service. Check out this [blog post](https://devblogs.microsoft.com/devops/user-lifecycle-management-improvements-in-visual-studio-team-services/) for all the details.
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

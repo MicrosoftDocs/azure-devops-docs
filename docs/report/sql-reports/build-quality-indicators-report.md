@@ -1,22 +1,20 @@
 ---
 title: Build Quality Indicators Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows test coverage, code churn, and bug counts for a specified build definition - Team Foundation Server
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
 
 # Build Quality Indicators Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  
@@ -29,7 +27,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   What is the quality of the software?<br />-   How often are tests passing, and how much of the code is being tested?<br />-   Based on the code and test metrics, is the team likely to meet target goals? 
   
@@ -44,7 +42,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
  The following illustration displays a sample Build Qualities Indicators report.  
   
- ![Example Build Quality Indicators report](_img/procguid_buildqualityindicators.png "ProcGuid_BuildQualityIndicators")  
+ ![Example Build Quality Indicators report](media/procguid_buildqualityindicators.png "ProcGuid_BuildQualityIndicators")  
   
  The following table describes the information that appears for each quality indicator in the report:  
   
@@ -79,11 +77,11 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+     For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/index.yml).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
@@ -92,7 +90,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
      For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
-    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
+    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
   
 ##  <a name="Duration"></a> Changing the Number of Builds in the Report  
  The display of the Build Quality Indicators report will vary significantly based on the number of builds that the report includes and other filters that you apply to the report. You can focus the report on a specific range of builds by changing the number of builds that appear in the report.  
@@ -130,34 +128,34 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
   As the following illustration shows, code coverage and test pass rates are high and increasing over time. Code churn, active bugs, inconclusive tests, and failed tests are all low and decreasing.  
   
-  ![Healthy version of Build Qualities Indicator](_img/procguid_buildquality_healthy.png "ProcGuid_BuildQuality_Healthy")  
+  ![Healthy version of Build Qualities Indicator](media/procguid_buildquality_healthy.png "ProcGuid_BuildQuality_Healthy")  
   
 ### Unhealthy Versions of the Build Quality Indicators Report  
  An unhealthy version of the Build Quality Indicators report shows one or more of the following indicators. You might want to investigate the cause according to the following guidance.  
   
 -   **Less code coverage and more code churn**. The following illustration shows a decrease in code coverage and an increase in code churn. This data is a clear warning that new code is being checked in without corresponding unit tests to cover it.  
   
-     ![Code Churn in Build Quality Indicators report](_img/procguid_buildquality_unhealthy_codechurn.png "ProcGuid_BuildQuality_Unhealthy_CodeChurn")  
+     ![Code Churn in Build Quality Indicators report](media/procguid_buildquality_unhealthy_codechurn.png "ProcGuid_BuildQuality_Unhealthy_CodeChurn")  
   
 -   **Low rate of tests being run**. The following illustration shows a low rate of tests being run. This data might indicate that the team is not performing enough testing. This blockage could indicate lack of resources, or testers might be doing something else, such as writing test automation instead of testing the current functionality. In either case, resource balancing might be warranted.  
   
-     ![Low rate tests in Build Quality Indicators report](_img/procguid_unhealth_lowratetests2.png "ProcGuid_Unhealth_LowRateTests2")  
+     ![Low rate tests in Build Quality Indicators report](media/procguid_unhealth_lowratetests2.png "ProcGuid_Unhealth_LowRateTests2")  
   
 -   **High code churn, low rate of code coverage**. High code churn suggests that bugs will be introduced as side effects of the changes. In a perfectly refactored project, you can see code churn with no change in code coverage or test pass rates. Otherwise, high code churn might indicate decreased coverage and the need to rewrite tests.  
   
      The following illustration shows a high rate of code churn and a low rate of code coverage from testing, even though test pass rates remain high. This data indicates that tests that are being run are not exercising the new code.  
   
-     ![High Code Churn in Build Quality Indicators report](_img/procguid_buildquality_unhealthy_highcodechurn.png "ProcGuid_BuildQuality_Unhealthy_HighCodeChurn")  
+     ![High Code Churn in Build Quality Indicators report](media/procguid_buildquality_unhealthy_highcodechurn.png "ProcGuid_BuildQuality_Unhealthy_HighCodeChurn")  
   
 -   **High rate of tests failing**. The following illustration shows that many tests are being run with reasonable code coverage, but the tests are failing. This data might indicate loose development practices, or, in early iterations, the tests might be too harsh for this stage of the product.  
   
-     ![Test Failing in Build Quality Indicators report](_img/procguid_buildquality_unhealthy_testfailing.png "ProcGuid_BuildQuality_Unhealthy_TestFailing")  
+     ![Test Failing in Build Quality Indicators report](media/procguid_buildquality_unhealthy_testfailing.png "ProcGuid_BuildQuality_Unhealthy_TestFailing")  
   
      Failing tests should be addressed as soon as possible. If fixing the code is not practical, the failing tests should be temporarily disabled, and a bug should be logged. Although it is sometimes acceptable to treat code analysis faults with less urgency early in the project, you should not let the red sections get too large.  
   
 -   **High rate of tests passing and high active bug rate**. The following illustration shows a high test pass rate but still a large incoming bug rate. This situation can occur for several reasons. Tests might not be sufficiently rigorous for this stage of the product.  
   
-     ![Low Test Rate in Build Quality Indicators report](_img/procguid_buildquality_unhealthy_lowratetests.png "ProcGuid_BuildQuality_Unhealthy_LowRateTests")  
+     ![Low Test Rate in Build Quality Indicators report](media/procguid_buildquality_unhealthy_lowratetests.png "ProcGuid_BuildQuality_Unhealthy_LowRateTests")  
   
      In early iterations, simple tests are good, but as the product matures, tests should exercise broader scenarios and integrations. Tests might be stale, or they might be testing the wrong functionality. It might be time to switch test techniques.  
   
@@ -183,7 +181,7 @@ Ideally, test rates, bugs, and code churn would all produce the same picture, bu
   
   The following illustration shows the available filters:  
   
-  ![Filters for Build Quality Indicators](_img/procguid_buildqualityindicators_filters.png "ProcGuid_BuildQualityIndicators_Filters")  
+  ![Filters for Build Quality Indicators](media/procguid_buildqualityindicators_filters.png "ProcGuid_BuildQualityIndicators_Filters")  
   
   Apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
   

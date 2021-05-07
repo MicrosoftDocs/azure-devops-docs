@@ -3,25 +3,24 @@ title: Get started with Git and Visual Studio
 titleSuffix: Azure Repos
 description: Quick Start with Git and Azure DevOps Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
+#  Get started with Git and Visual Studio 2015
 
-#  Get Started with Git and Azure DevOps Services
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+
 
 This guide covers the basics so you can get up and running using Git with code already in Azure DevOps Services or Team Foundation Server (TFS). 
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
@@ -40,21 +39,21 @@ If you don't have a Git repository yet, you can create one [using your own code]
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, open up the Connect page by choosing **Projects and My Teams** then **Manage Connections**    
 
-   ![Cloning Git repositories in Visual Studio](_shared/_img/manageConnections.png) 
+   ![Cloning Git repositories in Visual Studio](media/manageConnections.png) 
 
 2. Choose **Connect**, select your organization, choose the projects you want to work on, then
 click **Connect**.   
 
 3. Right click on the project and click **Clone...**. Then enter a local folder on your drive to store the downloaded code.      
 
-   ![Cloning a Git Repository from a connected organization in Azure DevOps](_shared/_img/cloneVsRepo.png)
+   ![Cloning a Git Repository from a connected organization in Azure DevOps](media/cloneVsRepo.png)
 
 #### [Command Line](#tab/command-line/)
 1. [Download and install Git](https://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
 2. Open the Azure DevOps Services web portal in your browser and find your Git repository. 
    Copy the command line instructions from the **Clone** pop-up.   
 
-   ![Finding the Clone URL for your Git Repository in Azure DevOps Services](_shared/_img/cloneURL.png)
+   ![Finding the Clone URL for your Git Repository in Azure DevOps Services](media/cloneURL.png)
 
 3. Navigate to the folder where you want the code stored on your local computer using the command line.
 4. From the command line, paste the command you copied from the command line instructions. It will look like this
@@ -71,13 +70,14 @@ Git will download and create your own copy of the code in a new folder for you t
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work being done in the project. The recommended [Git workflow](gitworkflow.md) 
+Git [branches](./create-branch.md) isolate your changes from other work being done in the project. The recommended [Git workflow](gitworkflow.md) 
 uses a new branch for every feature or fix you work on. You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
-1. In Team Explorer, click the drop down and choose **Branches**. Right click the master branch and choose **New Local Branch From...**    
+1. In Team Explorer, click the drop down and choose **Branches**. Right click the main branch and choose **New Local Branch From...**    
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](_shared/_img/newVSBranch.png)  
+   ![Creating a Local Branch off the main branch in Visual Studio](media/newVSBranch.png)  
+
 
    Choose a descriptive branch name for your work to remind you and others what kind of work is in the branch. 
 
@@ -86,7 +86,7 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 3. When you are satisfied with the changes, save them in Git using a commit. Open up the 
    **Changes** view from Team Explorer. Stage the changes to add to your next commit by right-clicking the files and selecting **Stage**, add a message describing the commit, then select **Commit Staged**.    
 
-   ![Committing changes to a Git branch in Visual Studio](_shared/_img/vs_update2_changes.png)
+   ![Committing changes to a Git branch in Visual Studio](media/vs_update2_changes.png)
 
 #### [Command Line](#tab/command-line/)
 1. Create a branch where you will work with the code and make your changes.
@@ -113,19 +113,19 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 When you are ready to share your changes with the team, you [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch. 
 
-Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the master 
+Once you push the changes, you can create a [pull request](pull-requests.md) to let others know you'd like to have the changes reviewed and added to the main 
 branch of the code.   
 
 #### [Visual Studio](#tab/visual-studio/)
 1. Open up the **Synchronization** view in Team Explorer. You can see the outgoing commits and share them by clicking **Push** if you are working with a branch that is already shared, or **Publish** if you are working with a newly created local branch.    
 
-   ![Sharing Code in Git using Push in Visual Studio](_shared/_img/newVsPush.png) 
+   ![Sharing Code in Git using Push in Visual Studio](media/newVsPush.png) 
 
 2. Create a pull request so that others can review your changes. Open **Pull Requests** in Team Explorer, and click **New Pull Request**. Verify the remote branch to merge the changes into, such as `my-feature`.   
 
-   ![Create a Pull Request in Visual Studio](_shared/_img/newVsPullRequest.png)
+   ![Create a Pull Request in Visual Studio](media/newVsPullRequest.png)
 
-3. You can review comments made in your [pull request](pullrequest.md) in a web browser on the Azure Repos pull request page. Once all changes are approved by the
+3. You can review comments made in your [pull request](pull-requests.md) in a web browser on the Azure Repos pull request page. Once all changes are approved by the
    team, you complete the pull request through the web browser.
 
 #### [Command Line](#tab/command-line/)
@@ -136,12 +136,12 @@ branch of the code.
 
 2. Open up the project in the web portal and browse to your repository under the "Code" tab. Click the **Create Pull Request** button to create a pull request for the branch that you pushed.   
 
-   ![Creating a new Pull Request in Azure Repos](_shared/_img/vstsCreatePullReq.png)   
+   ![Creating a new Pull Request in Azure Repos](media/vstsCreatePullReq.png)   
 
 3. Create the pull request, adding in team members to review and approve the code changes.
 
 4. Once the changes are approved, complete the pull request. 
-   This will pull your changes from the branch into the master branch of the code.
+   This will pull your changes from the branch into the main branch of the code.
 
 * * *
 <a name="pull"></a>
@@ -155,7 +155,7 @@ pull your branches regularly to keep them up to date with the changes from other
 #### [Visual Studio](#tab/visual-studio/)
 1. Open up the **Sync** view in Team Explorer. You can download the latest changes to the branch you are on using the "Pull" link.   
 
-   ![Using Pull to download changes in Git in Visual Studio](_shared/_img/newVsPull.png)
+   ![Using Pull to download changes in Git in Visual Studio](media/newVsPull.png)
 
 #### [Command Line](#tab/command-line/)
 1. Switch to the branch where you want to download the changes others have made

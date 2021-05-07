@@ -1,45 +1,88 @@
 ### YamlMime:Landing
 
 title: Azure Artifacts documentation
-summary: Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.
+summary: Code once and share packages across your organization. Host your private NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds.
 
 metadata:
   title: Azure Artifacts documentation
-  description:  Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds. 
+  description: Code once and share your packages NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds. 
   ms.prod: devops 
   ms.technology: devops-artifacts
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/03/2019 
+  ms.date: 06/22/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# Schema location: https://static.docs.com/ui/latest/schemas/Landing.schema.json
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Get started
+  - title: Get started with Azure Artifacts
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: What is Azure Artifacts?
             url: overview.md
+      - linkListType: quickstart
+        links:
           - text: Sign up for Azure Artifacts
-            url: sign-up-azure-artifacts.md
+            url: ./start-using-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
             url: ./concepts/best-practices.md
-          - text: Consume packages from public sources
-            url: ./concepts/upstream-sources.md
-      - linkListType: tutorial
+          - text: Artifacts in Azure Pipelines
+            url: ../pipelines/artifacts/artifacts-overview.md
+          - text: Limits on package sizes and counts
+            url: ./reference/limits.md
+  - title: Configure Feeds
+    linkLists:
+    - linkListType: concept
+      links:
+        - text: What are feeds?
+          url: ./concepts/feeds.md
+        - text: What are feed views?
+          url: ./concepts/views.md
+    - linkListType: quickstart
+      links:
+        - text: Set feeds and views permissions
+          url: ./feeds/feed-permissions.md
+        - text: Understanding upstream sources
+          url: ./concepts/upstream-sources.md
+        - text: Set up upstream sources
+          url: ./how-to/set-up-upstream-sources.md
+  - title: Use Artifacts in your Azure Pipelines
+    linkLists:
+      - linkListType: concept
         links:
-          - text: Move your packages to the cloud
-            url: ./nuget/move-from-fileshares.md
-          - text: Communicate package quality with release views
-            url: ./feeds/views.md
-          - text: Set permissions and grant access
-            url: ./feeds/feed-permissions.md
-  - title: NuGet
+          - text: Azure Pipelines Artifacts
+            url: ../pipelines/artifacts/artifacts-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Publish and consume Artifacts
+            url: ../pipelines/artifacts/build-artifacts.md
+          - text: Release Artifacts and classic release pipelines
+            url: ../pipelines/release/artifacts.md
+          - text: Publish and download Artifacts
+            url: ../pipelines/artifacts/pipeline-artifacts.md
+          - text: Pipeline caching
+            url: ../pipelines/release/caching.md
+  - title: Publish and consume symbols
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What are symbol files (PDBs)?
+            url: ./concepts/symbols.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use symbols in Visual Studio
+            url: ./symbols/debug-with-symbols-visual-studio.md
+          - text: Use symbols in WinDbg
+            url: ./symbols/debug-with-symbols-windbg.md
+          - text: Publish symbols for debugging
+            url: ../pipelines/artifacts/symbols.md
+  - title: Publish and consume NuGet packages
     linkLists:
       - linkListType: quickstart
         links:
@@ -47,17 +90,15 @@ landingContent:
             url: get-started-nuget.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and NuGet packages
+          - text: Publish to NuGet feeds (YAML/Classic)
             url: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Publish a NuGet package from the command line
+            url: ./nuget/publish.md
+          - text: Consume NuGet packages in Visual Studio
+            url: ./nuget/consume.md
           - text: Use packages from nuget.org
             url: ./nuget/upstream-sources.md
-          - text: Publish a NuGet package
-            url: ./nuget/publish.md
-          - text: Consume NuGet packages
-            url: ./nuget/consume.md
-          - text: Use NuGet with Azure DevOps Services feeds
-            url: ./nuget/nuget-exe.md
-  - title: npm
+  - title: Work with npm packages and feeds
     linkLists:
       - linkListType: quickstart
         links:
@@ -65,13 +106,15 @@ landingContent:
             url: get-started-npm.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and npm packages
+          - text: Publish to an npm feed
             url: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-          - text: Use packages from npmjs.com
-            url: ./npm/upstream-sources.md
           - text: Set up your client's npmrc
             url: ./npm/npmrc.md
-  - title: Maven
+          - text: Use npm scopes
+            url: ./npm/scopes.md
+          - text: Use packages from npmjs.com
+            url: ./npm/upstream-sources.md
+  - title: Use Maven Artifacts and feeds
     linkLists:
       - linkListType: quickstart
         links:
@@ -79,15 +122,13 @@ landingContent:
             url: get-started-maven.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Maven packages
+          - text: Publish to a Maven feed
             url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-          - text: Use packages from Maven Central
-            url: ./maven/upstream-sources.md 
-          - text: Publish Maven artifacts
-            url: ./maven/publish.md
           - text: Install Maven artifacts
             url: ./maven/install.md
-  - title: Python
+          - text: Use packages from Maven Central
+            url: ./maven/upstream-sources.md 
+  - title: Publish Python packages
     linkLists:
       - linkListType: quickstart
         links:
@@ -95,9 +136,9 @@ landingContent:
             url: ./quickstarts/python-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Python packages
+          - text: Publish to a Python feed
             url: ../pipelines/artifacts/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-  - title: Universal Packages
+  - title: Publish Universal packages
     linkLists:
       - linkListType: quickstart
         links:
@@ -105,5 +146,5 @@ landingContent:
             url: ./quickstarts/universal-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Universal packages
-            url: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Publish to a Universal feed
+            url: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json

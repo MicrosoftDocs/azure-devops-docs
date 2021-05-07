@@ -1,20 +1,20 @@
-﻿---
+---
 title: Add work item types to backlogs and boards   
 titleSuffix: Azure DevOps & TFS
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
 # Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
 
 
 > [!IMPORTANT]  
@@ -26,7 +26,7 @@ To satisfy other business processes, your team may want to track additional work
 
 For example, you may want to track different types of requirements based on their target customer, or different types of bugs based on their source. Here the Fabrikam Fiber team has added the Service App WIT to track work that supports their customer service team.   
 
-![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](_img/ALM_AWB_Intro.png)
+![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](media/ALM_AWB_Intro.png)
 
 > [!TIP]  
 > If all you want to do is add bugs to your backlogs and boards, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) to make your team's selection. If you want to add another WIT and portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</p>
@@ -46,7 +46,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 ### Hosted XML process model customization sequence  
 
 > [!NOTE]    
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-work-item-type.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project. 
 
@@ -59,7 +59,7 @@ You'll make your changes to your process definition files, and then import that 
 
 You'll first export your work tracking definition files, update them, and then import them to your project.  
 -  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
--  Update your project to [enable the latest features](configure-features-after-upgrade.md)
+-  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))
 	- [Categories definition](xml/apply-rule-work-item-field.md#apply-ignore)  
@@ -154,7 +154,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
    <li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
    <li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
    </ul>
-   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](add-features-manually.md#update-processconfiguration). </p>
+   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration). </p>
    </td>
    </tr>
    <tr>
@@ -336,7 +336,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    <li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
    <li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
    </ul>
-   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](add-features-manually.md#update-processconfiguration). </p>
+   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration). </p>
    </td>
    </tr>
    <tr>
@@ -406,7 +406,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 7. Confirm that you can add the WIT to the task board. Open the task board page, or refresh the page if it's already open.  
 	You should be able to select either Task or Service Task as a linked work item to a user story.  
-	![Task board with Service Task work item type added](_img/ALM_AWB_AddTaskConfirm.png)  
+	![Task board with Service Task work item type added](media/ALM_AWB_AddTaskConfirm.png)  
 
 	On the task board, drag the work item to update its status. You'll notice that you can't drag an item to a column for which the state isn't valid. For example, you can't drag Task to the Blocked state, or a Task into a resolved state. If you want to use these states, then add them to the workflow definition for the corresponding WIT definition. 
 
@@ -468,9 +468,9 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 ## Import and export definition files (On-premises XML) 
 Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 

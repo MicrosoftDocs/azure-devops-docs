@@ -1,27 +1,25 @@
 ---
-title: Perform ad hoc searches for quick queries
+title: Perform semantic searches 
 titleSuffix: Azure Boards
-description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps  
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 03/26/2019
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
 ---
 
 
-# Perform a semantic or ad hoc work item search
+# Perform a semantic work item search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="search-box"/>
 
-You can find work items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching is not case-sensitive. Use semantic or ad hoc searches when you want to perform the following tasks:
+You can find work items using shortcut filters or by specifying keywords or phrases, specific fields/field values, assignment or date modifications, or using Equals, Contains, and Not operators. Searching is not case-sensitive. Use semantic searches when you want to perform the following tasks:
 
 - Find a specific work item using its ID or a keyword
 - Find one or more work items across all projects in a fast, flexible manner
@@ -30,17 +28,15 @@ You can find work items using shortcut filters or by specifying keywords or phra
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/administration.md).
+You can perform a powerful [semantic search](#start-search) from the web portal for Azure DevOps Services or TFS 2017.2 or later versions when the [server instance has been configured with the work item search extension](../../project/search/get-started-search.md).
 
-For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [ad hoc searches](#initiate-an-ad-hoc-search-use-shortcut-filters). 
-
-With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited. 
+For TFS 2017.1 and earlier versions, or where the work item search extension hasn't been configured, you can perform [semantic searches](#initiate-an-ad-hoc-search-use-shortcut-filters). With semantic search, you search against a fully indexed set of fields.  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 > [!TIP]   
 > If semantic search has been configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
 > 
->![Search Work Items Text Box](_img/search-box/search-box-vsts.png)  
+>![Search Work Items Text Box](media/search-box/search-box-vsts.png)  
 ::: moniker-end     
 
 <a name="start-search"></a>
@@ -56,24 +52,23 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
+   :::image type="content" source="../../project/search/media/get-started/work-item-search-vert.png" alt-text="Work Item Search box":::
 
-1. Search results are displayed in a snippet view where the matches found are shown in bold.
+2. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
    "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
 
-2. Select a snippet of a work item to display it in the right window. 
+3. Select a snippet of a work item to display it in the right window. 
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -84,14 +79,14 @@ Free text search easily searches across all work item fields, including custom f
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work Item Search textbox in the title bar](../../project/search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon) to start your search. 
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
@@ -101,7 +96,7 @@ Free text search easily searches across all work item fields, including custom f
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -113,19 +108,18 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+[!INCLUDE [temp](../../includes/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 
 
-### Fine tune semantic search results 
+### Fine-tune semantic search results 
 
 ::: moniker range=">= azure-devops-2019"
-1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/_img/search/search-work-vert.png)    
+   :::image type="content" source="../../project/search/media/get-started/search-work-vert.png" alt-text="Search from the title bar":::   
 
    The quick filters you can use are:
 
@@ -134,20 +128,20 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-1. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   `tags:Critical` finds all work items tagged "Critical". 
 
-1. Add more filters to further narrow your search, and use Boolean operators
+3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if required. For example, 
-   **a: Chris t: Bug s: Active** finds all active bugs assigned
-   to a user named Chris.
+   `a: Chris t: Bug s: Active` finds all active bugs assigned
+   to a user named "Chris".
 
-1. Narrow your search to specific types
+4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
 
@@ -155,11 +149,10 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
+1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
-    > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/_img/search/work-item-search-filters.png)    
+   :::image type="content" source="../../project/search/media/get-started/work-item-search-filters.png" alt-text="Title bar Search":::
 
    The quick filters you can use are:
 
@@ -168,20 +161,20 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
 
-1. Start typing the name of a field in your work items; for example, type `ta`.
+2. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
-   **tags:Critical** finds all work items tagged 'Critical'. 
+   `tags:Critical` finds all work items tagged "Critical". 
 
-1. Add more filters to further narrow your search, and use Boolean operators
+3. Add more filters to further narrow your search, and use Boolean operators
    to combine terms if required. For example, 
-   **a: Chris t: Bug s: Active** finds all active bugs assigned
-   to a user named Chris.
+   `a: Chris t: Bug s: Active` finds all active bugs assigned
+   to a user named "Chris".
 
-1. Narrow your search to specific types
+4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 ::: moniker-end
 
@@ -190,6 +183,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
 ::: moniker-end
 
+::: moniker range="<= tfs-2017" 
 
 ## Initiate an ad hoc search, use shortcut filters
 
@@ -206,6 +200,8 @@ Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
 Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
 
+::: moniker-end
+
 ### From the web portal 
 
 ::: moniker range="azure-devops"
@@ -215,34 +211,34 @@ Ad hoc search isn't available from Azure DevOps Services. Only [semantic search]
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)   
+> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 
 > [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)    
+> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)    
 
 ::: moniker-end
 
 ### From Visual Studio Team Explorer
 
-Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 
 > [!div class="mx-imgBorder"]  
-> ![Search box menu (Team Explorer)](_img/example-search-box-queries/IC588319.png) 
+> ![Search box menu (Team Explorer)](media/example-search-box-queries/IC588319.png) 
 
 
 Finding work items using the search box (Team Explorer)
 
-![Find a work item using the search text box](_img/example-search-box-queries/IC552976.png)  
+![Find a work item using the search text box](media/example-search-box-queries/IC552976.png)  
 
 You can combine shortcuts and use search operators within the search box.
 
-Use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
 
 
 <a id="keywords" /> 
@@ -288,70 +284,78 @@ To find work items based on a keyword or phrase contained within other text stri
 
 The <strong>@Me</strong> macro expands to the full name of the current user in any work item search. The <strong>@Me</strong> macro is especially useful for creating a search that you can share with other users, and it can simplify your work by reducing the number of characters you must type to specify your own user name. For a description of all macros, see [Query fields, operators, and macros, Query macros or variables](query-operators-variables.md#macros). 
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<th width="50%">Filter for</th>
-<th width="50%">Type the following string</th>
-</tr>
-<tr>
-<td>Currently assigned to you
-</td>
-<td>
-<code>A=<xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code>
-</td>
-</tr>
-
-<tr>
-<td>Created by you
-</td>
-<td>
-<code>C=<xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code> 
-</td>
-</tr>
 
 
-<tr>
-<td>Resolved yesterday
-</td>
-<td>
-<code>&quot;Resolved Date&amp;quot;=<xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></code> 
-</td>
-</tr>
+---
+:::row:::
+   :::column span="2":::
+      **Filter for**
+   :::column-end::: 
+   :::column span="2":::
+      **Type the following string**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Currently assigned to you
+   :::column-end::: 
+   :::column span="2":::
+      `A=@Me`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Created by you
+   :::column-end::: 
+   :::column span="2":::
+      `C=@Me`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Resolved yesterday
+   :::column-end::: 
+   :::column span="2":::
+      `Resolved Date=@Today-1`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Modified 7 days ago
+   :::column-end::: 
+   :::column span="2":::
+      `System.ChangedDate=@Today-7`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      Created yesterday under the Phone Saver team
+   :::column-end::: 
+   :::column span="2":::
+      `Created Date=@Today-1 And Area Path=FabrikamFiber\Phone Saver`
+   :::column-end:::
+:::row-end:::
+---
 
-<tr>
-<td>Modified 7 days ago
-</td>
-<td>
-<code>System.ChangedDate=<xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code>
-</td>
-</tr>
-
-<tr>
-<td>
-Created yesterday under the Phone Saver team
-</td>
-<td>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<code>Created Date <em> = </em> <xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></code><br/><code>And <em> Area Path </em> = _ FabrikamFiber\Phone Saver</code><br/>
-</td>
-</tr>
-
-</tbody>
-</table>  
 
 
 ## Use Equals, Contains, and Not operators
 
 Use the following search operators to specify search criteria:
 
-&#160;&#160;&#160;**=** (EQUALS) to search for exact matches of text.  
-&#160;&#160;&#160;**:** (CONTAINS) to search for partial matches of text.  
-&#160;&#160;&#160;**-** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
+**=** (EQUALS) to search for exact matches of text.  
+**:** (CONTAINS) to search for partial matches of text.  
+**-** (NOT) to exclude work items that contain certain text. The **NOT** operator can only be used with field names.
 
-The following examples show how to use operators when you create a search string.
+The following examples show how to use operators when you create a search string.  
 
 |Filter for items that meet this criteria:|Type the following string:|  
-|---|---|
+|-----------------------------------------|--------------------------|
 |Assigned to Peter and not Active.|`A:Peter -S=Active`|
 |In which the Activity field was not `Development`.|`- Activity=Development`|
 |Resolved by Peter.|`"Resolved By":Peter`|
@@ -361,11 +365,10 @@ The following examples show how to use operators when you create a search string
 
 ## Related articles
 
-- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)  
-- [Create managed queries with the query editor](using-queries.md)   
+- [About managed queries](about-managed-queries.md)  
+- [Define a query](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../work-items/guidance/work-item-field.md)     - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
 
 ## Q & A
 

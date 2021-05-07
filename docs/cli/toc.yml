@@ -1,33 +1,39 @@
-
 - name: Get started
   href: index.md 
-- name: How-to Guides
+- name: Quick reference
+  href: quick-reference.md 
+- name: Sign in with a Personal Access Token
+  href: log-in-via-pat.md
+- name: Auto detect configuration and git aliases 
+  href: auto-detect-and-git-aliases.md
+- name: Configure policies
+  href: policy-configuration-file.md
+- name: Run commands in a YAML build pipeline
+  href: azure-devops-cli-in-yaml.md  
+- name: Run commands in a release pipeline 
+  href: azure-devops-cli-in-release-pipeline.md
+- name: Manage permissions 
+  href: ../organizations/security/manage-tokens-namespaces.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
+- name: Service connections
+  href: service-endpoint.md
+- name: Troubleshoot common errors
+  href: troubleshooting.md
+- name: Azure CLI Reference
   items:
-  - name: Sign in with a Personal Access Token
-    href: log-in-via-pat.md
+  - name: az artifacts
+    href: /cli/azure/artifacts
+  - name: az boards
+    href: /cli/azure/boards
+  - name: az devops
+    href: /cli/azure/devops
+  - name: az pipelines
+    href: /cli/azure/pipelines
+  - name: az repos
+    href: /cli/azure/repos
   - name: Output formats
     href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
   - name: Query
     href: /cli/azure/query-azure-cli?view=azure-cli-latest
-  - name: Auto detect configuration and git aliases 
-    href: auto-detect-and-git-aliases.md
-  - name: Configure policies
-    href: policy-configuration-file.md
-  - name: Run commands in a release pipeline 
-    href: azure-devops-cli-in-release-pipeline.md
-  - name: Run commands in a YAML build pipeline
-    href: azure-devops-cli-in-yaml.md  
-  - name: Manage security permissions
-    href: permissions.md
-  - name: Manage service connections
-    href: service_endpoint.md
-- name: Troubleshooting
-  items:
-  - name: Troubleshooting common errors
-    href: troubleshooting.md
-- name: Reference
-  items:
-  - name: Command reference
-    href: /cli/azure/ext/azure-devops?view=azure-cli-latest
-  - name: Security tokens
-    href: security_tokens.md
+
+
+

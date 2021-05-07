@@ -1,28 +1,25 @@
 ---
 title: Bug Status Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 
 
 # Bug Status Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team has started to find and fix bugs, you can track the team's progress toward resolving and closing bugs by viewing the Bug Status report. This report shows the cumulative bug count based on the bug state, priority, and severity.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   Is the team fixing bugs quickly enough to finish on time?<br />-   Is the team fixing high priority bugs first?<br />-   What is the distribution of bugs by priority and severity?<br />-   How many bugs are assigned to each team member?  
   
@@ -33,9 +30,9 @@ After the team has started to find and fix bugs, you can track the team's progre
 ##  <a name="Data"></a> Data in the Report  
  The data that appears in the Bug Status report is derived from the data warehouse. This report displays several sets of information as the following illustrations and table show and describe.  
   
- ![Bug status chart](_img/procguid_bugstatusdata.png "ProcGuid_BugStatusData")  
+ ![Bug status chart](media/procguid_bugstatusdata.png "ProcGuid_BugStatusData")  
   
- ![Lower half of bug status report](_img/procguid_data2.png "ProcGuid_Data2")  
+ ![Lower half of bug status report](media/procguid_data2.png "ProcGuid_Data2")  
   
 |Information|Description|  
 |-----------------|-----------------|  
@@ -56,7 +53,7 @@ After the team has started to find and fix bugs, you can track the team's progre
  For the Bug Status report to be useful and accurate, the team must perform the following activities:  
   
 > [!NOTE]
->  The team can use the Triage Workbook to review, rank, prioritize, and assign bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md) .  
+>  The team can use the Triage Workbook to review, rank, prioritize, and assign bugs. For more information, see [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) .  
   
 -   Define bugs, and specify their **Iteration** and **Area** paths.  
   
@@ -99,12 +96,12 @@ After the team has started to find and fix bugs, you can track the team's progre
 ### Healthy Version of Report  
  A healthy Bug Status report shows an increase in active bugs over time followed by a steady progression of resolving and closing bugs, as the following illustration shows. When the team fixes more bugs than it finds, the number of active bugs decreases.  
   
- ![Healthy version of Bug Status Report](_img/procguid_bugstatus_healthy.png "ProcGuid_BugStatus_Healthy")  
+ ![Healthy version of Bug Status Report](media/procguid_bugstatus_healthy.png "ProcGuid_BugStatus_Healthy")  
   
 ### Unhealthy Version of Report  
  The following illustration shows an unhealthy version of the Bug Status report.  
   
- ![Unhealthy version of Bug Status Report](_img/procguid_bugstatus_unhealthy.png "ProcGuid_BugStatus_Unhealthy")  
+ ![Unhealthy version of Bug Status Report](media/procguid_bugstatus_unhealthy.png "ProcGuid_BugStatus_Unhealthy")  
   
  An unhealthy Bug Status report shows one or more of the indicators that the following table describes:  
   
@@ -127,7 +124,7 @@ After the team has started to find and fix bugs, you can track the team's progre
   
   The following illustration shows the available filters and display options:  
   
-  ![Filters for Bug Status](_img/procguid_bugstatus.png "ProcGuid_BugStatus")  
+  ![Filters for Bug Status](media/procguid_bugstatus.png "ProcGuid_BugStatus")  
   
 #### To filter the set of bugs that are counted in the report  
   
@@ -146,9 +143,9 @@ After the team has started to find and fix bugs, you can track the team's progre
 2.  Click **View Report**.  
   
 ## Related notes  
- [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)  
- [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)   
- [Workbooks](../sharepoint-dashboards/workbooks.md)  
+ [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)  
+ [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)   
+ [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks)  
  [Bug Trends](bug-trends-report.md)   
  [Reactivations](reactivations-report.md)   
  [Reporting Services Reports](reporting-services-reports.md)

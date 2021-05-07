@@ -2,10 +2,7 @@
 title: Chef Knife task
 description: Run scripts with Knife commands on your Chef workstation
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: C7B7CCF9-D6E0-472B-97BB-06B6E43504F3
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,13 +14,13 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run scripts with Knife commands on your Chef workstation.
+Use this task to run scripts with Knife commands on your Chef workstation.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ChefKnifeV1.md)]
+[!INCLUDE [temp](../includes/yaml/ChefKnifeV1.md)]
 
 ::: moniker-end
 

@@ -2,19 +2,17 @@
 title: Pipeline decorators
 description: Inject steps before and after every pipeline job
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
-ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
-ms.date: 02/28/2019
+ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Use a decorator to inject steps into a pipeline
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 Pipeline decorators let you add steps to the beginning and end of every job.
 This process is different than adding steps to a single definition because it applies to all pipelines in an organization.
@@ -57,14 +55,28 @@ In this file, add contribution for our new pipeline decorator.
 }
 ```
 
+### Contribution options
+
 Let's take a look at the properties and what they're used for:
 
 | Property | Description |
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. For executing the decorator before or after jobs in build or yaml pipelines, the targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. `ms.azure-release-pipelines-agent-job.pre-job-tasks` and `ms.azure-release-pipelines-agent-job.post-job-tasks` targets inject the decorators in jobs in release pipelines. In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs. |
+| `targets` | Decorators can run before your job, after, or both. See the table below for available options. |
 | `properties` | The only property required is a `template`. The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+
+### Targets
+
+| Target | Description |
+| ------ |:----------- |
+| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
+| `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
+
+In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs.
 
 This extension contributes a pipeline decorator.
 Next, we'll create a template YAML file to define the decorator's behavior.
@@ -80,10 +92,10 @@ We'll start with a basic example and work up to the full task.
 ------
 ```yaml
 steps:
-  - task: CmdLine@2
-    displayName: 'Run my script (injected from decorator)'
-    inputs:
-      script: dir
+- task: CmdLine@2
+  displayName: 'Run my script (injected from decorator)'
+  inputs:
+    script: dir
 ```
 
 ## Installing the decorator
@@ -94,17 +106,12 @@ The extension must be authored and shared with your organization before it can b
 
 Once the extension has been shared with your organization, [search for the extension](https://marketplace.visualstudio.com/search?term=tag%3APipeline%20decorator&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) and install it.
 
-> [!IMPORTANT]
-> Pipeline decorators are in preview.
-> You must [enable the feature at the organization level](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users)
-> Otherwise, pipeline decorators don't run.
-
 Save the file, then [build and install the extension](../get-started/node.md).
 Create and run a basic pipeline.
 The decorator automatically injects our `dir` script at the end of every job.
 A pipeline run looks similar to:
 
-![Pipeline decorator running a simple script](_img/mydecorator-runmyscript.png)
+![Pipeline decorator running a simple script](media/mydecorator-runmyscript.png)
 
 > [!NOTE] 
 > The decorator runs on every job in every pipeline in the organization.
@@ -173,7 +180,7 @@ Then, look at the pipeline summary page.
 
 You see something similar to the following image:
 
-![View pipeline decorator context](_img/system-debugcontext.png)
+![View pipeline decorator context](media/system-debugcontext.png)
 
 Select the task to see the logs, which report the available context is available and runtime values.
 

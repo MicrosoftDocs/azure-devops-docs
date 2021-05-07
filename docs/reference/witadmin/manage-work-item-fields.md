@@ -2,20 +2,19 @@
 title: Manage work item fields using witadmin
 titleSuffix: TFS  
 description: Change an attribute for a work item field defined for a project in Team Foundation Server
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
 # Manage work item fields
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../xml/global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
   
@@ -31,11 +30,11 @@ You can manage the fields defined for work item types (WITs) that are defined fo
 -   **indexfield**: Turns indexing on or off for the specified field. When you enable indexing for a field, you may increase the performance of finding work items whose queries specify that field. If you add a custom field that you use in many of your work item queries, you may want to enable indexing for that field.   
 -   **listfields**: Lists the attributes for all fields or a specified field.
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)] 
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)] 
   
 For an overview of the fields defined within a default process template, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  
@@ -46,7 +45,7 @@ For an overview of the fields defined within a default process template, see [Wo
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
   
@@ -203,7 +202,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 #### To verify changes imported to a single project  
   
-1.  In Team Explorer, choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1.  In Team Explorer, choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, which include the changes that you just made to the field name. Wait several seconds for the refresh to finish.  
   
@@ -217,7 +216,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 5.  Select **<>** in the **Operator** cell, and type **1** into the **Value** cell.  
   
-6.  On the **Query** toolbar, choose ![Run Query](_img/icon_runquery.png "Icon_runQuery")**Run**.  
+6.  On the **Query** toolbar, choose ![Run Query](media/icon_runquery.png "Icon_runQuery")**Run**.  
   
 7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   
@@ -337,7 +336,7 @@ Enter **y** at the confirmation prompt to complete this step.
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
 Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
@@ -346,4 +345,3 @@ Changing field attributes is not recommended. To learn about which customization
 -  [Customizing your work tracking experience](../customize-work.md)   
 -  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
-  

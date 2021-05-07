@@ -4,24 +4,22 @@ titleSuffix: Azure Boards
 description: Learn how to scale Agile tools using portfolios, dashboards, and delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: landing-page
+ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 10/14/2018
 ---
 
 # Plans (Agile at scale) 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 As your organization grows, you want your tools to scale to support your growing business needs. Azure Boards tools scale primarily by supporting the addition of teams. Each team provides configurable tools that allow teams to focus on their set of work. 
 
 > [!div class="mx-imgBorder"]  
-> ![Agile tools and teams](../../organizations/settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)
+> ![Agile tools and teams](../../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png)
 
  For guidance on adding teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 

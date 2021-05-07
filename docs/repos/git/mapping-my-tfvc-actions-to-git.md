@@ -2,37 +2,33 @@
 title: Version Control - Map TFVC actions to Git
 titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: mijacobs
-ms.author: sdanie
-author: wpschaub
 ms.topic: conceptual
 ms.date: 04/25/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
 
-Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.md) actions, and wondering how they map to [Git](index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
+Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
 This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
 ## Start at the beginning by creating a new repo
 
-Each Project can host [TFVC and Git repositories in the same project](https://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
+Each Project can host [TFVC and Git repositories in the same project](https://devblogs.microsoft.com/devops/tfvc-and-git-repositories-in-the-same-team-project/), creating one TFVC, and one or more Git repositories.
 
-![Create a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
+![Create a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 
 Once the repo is created, you are presented with step-by-step instructions to quickly get started. 
 
-![Get Started with a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
+![Get Started with a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/actionmap-newrepoinfo.png)
 
 Click on the `Create a ReadMe file' at the end of the instruction page, to give the repo context and to create some history.
 
-![Create a README to initialize a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
+![Create a README to initialize a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/actionmap-readme.png)
 
 ## Create a workspace and get latest
 
@@ -48,7 +44,9 @@ git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions
 
 # [Visual Studio](#tab/visual-studio)
 
-![Connect to a Git repo in Azure Repos from Visual Studio](./_img/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
+![Connect to a Git repo in Azure Repos from Visual Studio](./media/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
 
 ---
 
@@ -77,14 +75,16 @@ Create and switch to a local topic branch, named *francis/demo-feature*. It is g
 git checkout -b francis/demo-feature
 ```
 
-![Creating a new Git branch from the Windows command line](./_img/mapping-my-tfvc-actions-to-git/actionmap-createtopicbranch2.png)
+![Creating a new Git branch from the Windows command line](./media/mapping-my-tfvc-actions-to-git/actionmap-createtopicbranch2.png)
 
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Branches > right-click on branch > New Local Branch From...**
 
-![Creating a new branch from Visual Studio Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-createbranch.png)
+![Creating a new branch from Visual Studio Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-createbranch.png)
 
 ---
 
@@ -109,9 +109,11 @@ git add --all
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Untracked Files > add individual files or add all**
 
-![Viewing Tracked and Untracked Changes in Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-untracked.png)
+![Viewing Tracked and Untracked Changes in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-untracked.png)
 
 ---
 
@@ -128,13 +130,15 @@ Wondering what changes are now sitting in your working environment? As before, t
 git status
 ```
 
-![Using Git Status to show staged changes](./_img/mapping-my-tfvc-actions-to-git/actionmap-status2.png)
+![Using Git Status to show staged changes](./media/mapping-my-tfvc-actions-to-git/actionmap-status2.png)
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Included Changes**
 
-![Using Visual Studio Team Explorer to show staged changes](./_img/mapping-my-tfvc-actions-to-git/actionmap-status-vs2.png)
+![Using Visual Studio Team Explorer to show staged changes](./media/mapping-my-tfvc-actions-to-git/actionmap-status-vs2.png)
 
 ---
 
@@ -153,9 +157,11 @@ git commit
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Commit**
  
-![Creating a Git commit in Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-commit.png)
+![Creating a Git commit in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-commit.png)
 
 ---
 
@@ -172,9 +178,11 @@ git push --set-upstream origin francis/demo-feature
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Branches > right-click on local branch > Publish Branch**
 
-![Pushing a branch to remote with Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-publishbranch.png)
+![Pushing a branch to remote with Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-publishbranch.png)
 
 ---
 
@@ -202,17 +210,19 @@ For a detailed, view, use:
 git log
 ```
 
-![Using Git log to review branch history](./_img/mapping-my-tfvc-actions-to-git/actionmap-history2.png)
+![Using Git log to review branch history](./media/mapping-my-tfvc-actions-to-git/actionmap-history2.png)
 
 As shown above, `git log` lists the author, email, date written, and the commit SHA-1 checksum. As a TFVC user you may want to use the `--stat` option to include more information, such as file name and change statistics. 
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 You can retrieve a history view of the **local** repository in the Visual Studio IDE.
 
 In Visual Studio, choose **Team Explorer > Branches | Changes | Sync > Actions > View History**
 
-![Viewing History in Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-history-ide.png)
+![Viewing History in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-history-ide.png)
 
 ---
 
@@ -220,7 +230,7 @@ You can also view the history of the **centralized** repository using the Azure 
 
 In the Azure DevOps Services web portal, choose **CODE > History** or **CODE > Explorer > History**
 
-![Viewing Branch history in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
+![Viewing Branch history in Azure Repos](./media/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
 
 At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
 
@@ -303,7 +313,7 @@ There are a lot more actions and options available to Git users. Here are some u
 
 "*Does the Visual Studio IDE `Commit and Sync` not magically do all this?*", you may be asking yourself.
 
-![Commit and sync in Team Explorer](./_img/mapping-my-tfvc-actions-to-git/actionmap-sync.png)
+![Commit and sync in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-sync.png)
 
 With magic comes responsibility! Many users dislike the `sync` as it can sometimes mess up your local history and add a merge commit on top of your current commit. Once you are in a bad state, you have to revert to the command line as there is currently no reset support in the IDE.
 

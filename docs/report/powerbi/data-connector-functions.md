@@ -1,13 +1,11 @@
-﻿---
+---
 title: Connect using Power Query & Azure DevOps functions
 titleSuffix: Azure DevOps 
 description: Describes the available functions that the Power BI Data Connector and Analytics support for Azure DevOps 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.reviewer: stansw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -16,20 +14,20 @@ ms.date: 8/1/2019
 
 # Connect using Power Query and Azure DevOps functions 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-The Data Connector for Azure DevOps includes Power Query M functions which can be used by query authors. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
+The Data Connector for Azure DevOps includes Power Query M functions which query authors can use. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
 
-The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/query-bi/m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. It can be used to call [AzureDevOps REST APIs](/rest/api/azure/devops).
+The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](/powerquery-m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. You can use it to call [AzureDevOps REST APIs](/rest/api/azure/devops).
 
 > [!IMPORTANT]  
-> VSTS.AccountContents should only be used to access data not [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI Integration Overview](overview.md). 
+> You should only use VSTS.AccountContents to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI integration overview](overview.md). 
 
 ## VSTS.AccountContents
 
 Advanced function which returns the contents downloaded from the URL for Analytics as a binary value.
 
-The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
+The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Contents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](/powerquery-m/web-contents).
 
 If you are already using `Web.Contents` to access data from Analytics (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
 This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.
@@ -96,5 +94,5 @@ This will also inform Power BI that these requests are referencing the same data
 
 ## Related articles
 
-* [Power Query (M) Formula Reference](https://msdn.microsoft.com/library/mt270235.aspx)
-* [Power Query (M) Formula Reference - Accessing data functions](https://msdn.microsoft.com/query-bi/m/accessing-data-functions)
+* [Power Query (M) Formula Reference](/previous-versions/mt270235(v=msdn.10))
+* [Power Query (M) Formula Reference - Accessing data functions](/powerquery-m/accessing-data-functions)

@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 8
 description: VSTS release notes for October 8 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: e39e465e-4faa-4dfe-99ca-afbadf7d4ec2
@@ -14,7 +13,7 @@ author: yukom
 
 ## 400 character paths on the server
 
-One of the top votes on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) is eliminating the 260 character path limit for developers. As Brian Harry mentioned on his [blog](https://blogs.msdn.com/b/bharry/archive/2012/09/12/visual-studio-update-this-fall.aspx), we have been working on eliminating the server side part of this problem. With this release, we have upped the path limit you can use in TFS version control to 400 characters. While this does not change the 260 path limit on the client, it is a step in the right direction.
+One of the top votes on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) is eliminating the 260 character path limit for developers. As Brian Harry mentioned on his [blog](https://blogs.msdn.com/b/bharry/archive/2012/09/12/visual-studio-update-this-fall.aspx), we have been working on eliminating the server side part of this problem. With this release, we have upped the path limit you can use in TFS version control to 400 characters. While this does not change the 260 path limit on the client, it is a step in the right direction.
 
 You may be asking yourself, what good are longer paths on the server if I can’t use those paths on the client? One of the reasons folks hit the path limit problem is when they take a source tree that is already long & start to try to put a branch structure on top of it. Now you will be able to organize your source tree on the server however you want, up to 400 characters. If you choose to do this, you still have to be careful that whatever subset of that tree you are planning to sync down in your workspace is still less than 260 characters total. So for example, if you sync a particular branch (a common practice we see) then you will need to continue to make sure each individual branch is less than 260 characters deep. Also be sure to reserve some of those 260 characters for the local part of the path (ex. c:/src).
 
@@ -26,10 +25,10 @@ Since this change required an updated to the client, once the upcoming VS 2012 u
 
 We have also updated the [learn](https://visualstudio.microsoft.com/get-started/) section of the site & added several new articles:
 
-- [Use the Hosted Build Controller](/azure/devops/pipelines/agents/hosted?view=azure-devops)
-- [Set up an Ant Build in the Cloud](/azure/devops/pipelines/tasks/build/ant?view=azure-devops)
+- [Use the Hosted Build Controller](/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true)
+- [Set up an Ant Build in the Cloud](/azure/devops/pipelines/tasks/build/ant?view=azure-devops&preserve-view=true)
 
-On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](/azure/devops/pipelines/index?view=azure-devops) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
+On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](/azure/devops/pipelines/index?view=azure-devops&preserve-view=true) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
 
 That’s it for sprint 37. See you again in 3 weeks.
 

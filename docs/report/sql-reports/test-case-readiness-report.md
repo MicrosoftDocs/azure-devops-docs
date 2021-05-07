@@ -1,12 +1,10 @@
 ---
 title: Test Case Readiness Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determine how many test cases have been defined and are ready to run 
 ms.assetid: c4e804d5-1549-41c0-a365-28fdec77bffe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 # Test Case Readiness report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   
@@ -24,7 +22,7 @@ After the team starts to define test cases, you can use the Test Case Readiness 
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was configured with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was configured with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   When will all the test cases be ready to run?<br />-   Will all the test cases be ready to run by the end of the iteration?<br />-   How many test cases must the team still write and review?<br />-   How many test cases are ready to be run?
   
@@ -37,7 +35,7 @@ After the team starts to define test cases, you can use the Test Case Readiness 
   
  The following illustration shows an example of a Test Case Readiness report.  
   
- ![Example Test Case Readiness Report](_img/procguid_testcasereadiness.png "ProcGuid_TestCaseReadiness")  
+ ![Example Test Case Readiness Report](media/procguid_testcasereadiness.png "ProcGuid_TestCaseReadiness")  
   
  The data that appears in the report is derived from the data warehouse. The report summarizes the data that was captured for each test case during the time interval  that you specified, based on the area path and other filters that you specified.  
   
@@ -73,12 +71,12 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 ### Healthy version of report  
  A healthy Test Case Readiness report will show a steady progress in test cases being designed and moving to the ready state, as the following illustration shows.  
   
- ![Healthy version of Test Case Readiness](_img/procguid_testcasereadiness_healthy.png "ProcGuid_TestCaseReadiness_Healthy")  
+ ![Healthy version of Test Case Readiness](media/procguid_testcasereadiness_healthy.png "ProcGuid_TestCaseReadiness_Healthy")  
   
 ### Unhealthy version of report  
  The following illustration shows an unhealthy version of the Test Case Readiness report, in which the states do not change for several weeks at a time.  
   
- ![Unhealthy version of Test Case Readiness](_img/procguide_testcasereadiness_unhealthy.png "ProcGuide_TestCaseReadiness_Unhealthy")  
+ ![Unhealthy version of Test Case Readiness](media/procguide_testcasereadiness_unhealthy.png "ProcGuide_TestCaseReadiness_Unhealthy")  
   
  An unhealthy Test Case Readiness report shows one or more of the following indicators:  
   
@@ -93,7 +91,7 @@ After the team starts to define test cases, you can use the Test Case Readiness 
 ##  <a name="Changing"></a> Filtering the report  
  You can filter the Test Case Readiness report to show only those test cases that are defined for the product areas, states, and priorities that you specify. The following illustration shows the available filters:  
   
- ![Filters for Test Case Readiness report](_img/procguid_readiness.png "ProcGuid_Readiness")  
+ ![Filters for Test Case Readiness report](media/procguid_readiness.png "ProcGuid_Readiness")  
   
 #### To change the time interval of the report  
   

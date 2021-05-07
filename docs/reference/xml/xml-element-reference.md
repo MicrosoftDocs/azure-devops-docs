@@ -2,24 +2,24 @@
 title: XML element index
 titleSuffix: Azure DevOps & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 04/04/2017
 ---
 
 # XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize your project to support specific processes and practices that your team uses, and to design your workflow, work item forms, and data fields. Customization requires modifying one or more XML definition files. Each file corresponds to a work item tracking object. You can look up the syntax structure of each XML element from the topics provided in this section.  
 
  This illustration shows that you can create or customize eight types of objects. For projects, you can customize categories, work item types, and process configuration. For project collections, you can customize global lists, link types, and work item fields. You can customize global workflow for a project or for a project collection. For a description of these objects and other customization options, see [Agile glossary](../../boards/work-items/agile-glossary.md) and [Customize your work tracking experience](../customize-work.md).  
 
- ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
+ ![Work Item Tracking Objects](media/pnt_wit_objects.png "PNT_WIT_Objects")  
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema type definition for work item tracking. Elements are organized alphabetically and by the following four major groups:  
 

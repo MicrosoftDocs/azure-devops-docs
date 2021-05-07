@@ -2,19 +2,17 @@
 title: TF30249-The New Team Project Wizard... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs an error when the New Team Project Wizard cannot download the process template header information.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobsa-9b0d-4222-8630-5e76330a511e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30249: The New Team Project Wizard could not retrieve the process template information.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard cannot download the process template header information so the Wizard can display a list of the process templates available on the server. Because the actual process template XML files can be very large (up to 100 megabytes), the wizard downloads the smaller XML header file to save time.  
   

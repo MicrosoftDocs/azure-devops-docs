@@ -2,26 +2,23 @@
 title: FTP Upload task
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 07/05/2019
+ms.date: 01/01/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # FTP Upload task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
+Use this task to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,74 +30,46 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/FtpUploadV2.md)]
+[!INCLUDE [temp](../includes/yaml/FtpUploadV2.md)]
 
 ::: moniker-end
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>FTP service connection</td>
-<td>
-<p>Select the service connection for your FTP server.  To create one, click the Manage link and create a new Generic service connection, enter the FTP server URL for the server URL, e.g. <b><code>ftp://server.example.com</code></b>, and required credentials.<p>Secure connections will always be made regardless of the specified protocol (<b><code>ftp://</code></b> or <b><code>ftps://</code></b>) if the target server supports FTPS.  To allow only secure connections, use the <b><code>ftps://</code></b> protocol, e.g. <b><code>ftps://server.example.com</code></b>.  Connections to servers not supporting FTPS will fail if <b><code>ftps://</code></b> is specified.</p>
-</td>
-</tr>
-<tr>
-<td>Source folder</td>
-<td>The source folder to upload files from. The default file path is relative from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</td>
-</tr>
-<tr>
-<td>File patterns</td>
-<td>File paths or patterns of the files to upload.  Supports multiple lines of match patterns.  To upload the entire folder content recursively, specify <b><code>**</code></b>.</td>
-</tr>
-<tr>
-<td>Remote directory</td>
-<td>Upload files to this directory on the remote FTP server.</td>
-</tr>
-<tr>
-<td>Clean remote directory</td>
-<td>Recursively delete all contents of the remote directory before uploading.</td>
-</tr>
-<tr>
-<td>Overwrite</td>
-<td>Overwrite existing files in the remote directory.</td>
-</tr>
-<tr>
-<td>Trust server certificate</td>
-<td>Selecting this option results in the FTP server&#39;s SSL certificate being trusted with ftps://, even if it is self-signed or cannot be validated by a Certificate Authority (CA).</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+| `credsType` <br/>Authentication Method | (Required) Use FTP service connection or enter connection credentials <br/>Default value: serviceEndpoint <br/>Argument aliases: `credentialsOption`|
+| `serverEndpoint` <br/>FTP Service Connection| (Required) Select the service connection for your FTP server.  To create one, click the Manage link and create a new Generic service connection, enter the FTP server URL for the server URL, Example, ftp://server.example.com, and required credentials. <br/>Secure connections will always be made regardless of the specified protocol (**ftp://** or **ftps://**) if the target server supports FTPS.  To allow only secure connections, use the **ftps://** protocol. For example, **ftps://server.example.com**.  Connections to servers not supporting FTPS will fail if **ftps://** is specified.|
+| `serverUrl` <br/> Server URL | (Required) |
+| `username` <br/> Username | (Required) |
+| `password` <br/> Password | (Required) |
+| `rootFolder` <br/> Root folder | (Required) The source folder to upload files from <br/>Argument aliases: `rootDirectory`|
+| `filePatterns` <br/> File patterns | (Required) File paths or patterns of the files to upload.  Supports multiple lines of minimatch patterns. [More Information](./extract-files.md).<br/>Default value: **|
+| `remotePath` <br/> Remote directory | (Required) Upload files to this directory on the remote FTP server. <br/>Default value: /upload/$(Build.BuildId)/ <br/>Argument aliases: `remoteDirectory`|
+| `enableUtf8` <br/> Enable UTF8 support | (Optional) Enables UTF-8 support for the FTP connection ('OPTS UTF8 ON') <br/>Default value: false|
+| `clean` <br/> Delete remote directory | (Required) Delete the remote directory including its contents before uploading <br/>Default value: false|
+| `cleanContents` <br/>Clear remote directory contents | (Required) Recursively delete all contents of the remote directory before uploading. The existing directory will not be deleted. For better performance, consider using `Delete remote directory` instead <br/>Default value: false|
+| `preservePaths` <br/> Preserve file paths | (Required) If selected, the relative local directory structure is recreated under the remote directory where files are uploaded.  Otherwise, files are uploaded directly to the remote directory without creating additional subdirectories. <br/>For example, suppose your source folder is: **/home/user/source/** and contains the file: **foo/bar/foobar.txt**, and your remote directory is: **/uploads/**. <br/>If selected, the file is uploaded to: **/uploads/foo/bar/foobar.txt**.  Otherwise, to: **/uploads/foobar.txt** <br/>Default value: false|
+| `trustSSL` <br/> Trust server certificate | (Required) Selecting this option results in the FTP server's SSL certificate being trusted with ftps://, even if it is self-signed or cannot be validated by a Certificate Authority (CA). <br/>Default value: false|
+| `customCmds` <br/>FTP Commands | (Optional) Optional FTP Commands that will be sent to the remote FTP server upon connection |
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

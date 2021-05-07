@@ -1,12 +1,10 @@
 ---
 title: Analyze and report on test results
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,14 +12,14 @@ ms.date: 10/17/2017
 
 # Analyze and report on test results using the test perspective 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 <a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, you can view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, you can use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
   
 The Test measure group is based on the Test Results relational table, which enables reporting on test results as either a property of the tests or an independent outcome. For more information, see [Test Result tables](test-result-tables.md).  
   
  
-![Test Measure Group](_img/rpt_testmg.png "RPT_TestMG")
+![Test Measure Group](media/rpt_testmg.png "RPT_TestMG")
 
 By using the Test perspective, you can create reports that answer the following questions:
 
@@ -46,19 +44,19 @@ By using the Test perspective, you can create reports that answer the following 
 ##  Example: Progress report for testing user stories  
  By using PivotTable and PivotChart reports in Excel, you can create a status report that shows the test progress on user stories, similar to the report in the following illustration.  
   
- ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
+ ![User Story Test Status Excel Report](media/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
- The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
+ The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](/previous-versions/azure/devops/report/excel/user-story-test-status-excel-report-agile) and [Requirement Test Status](/previous-versions/azure/devops/report/excel/requirement-test-status-excel-report-cmmi) in Excel, respectively.  
   
 ### Specify and filter pivot fields  
 
- ![Pivot Fields for User Stories Test Progress](_img/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
+ ![Pivot Fields for User Stories Test Progress](media/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
   
  By performing the following steps, you can create a progress report for testing user stories:  
   
 1.  In Excel, connect to the Analysis Services cube for Team Foundation Server, and then insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart, then choose **Change Chart Type**, **Area**, **Stacked Bar**.  
   
@@ -83,7 +81,7 @@ By using the Test perspective, you can create reports that answer the following 
   
 |**Measure**|**Description**|  
 |-----------------|---------------------|  
-|Build Result Count Trend|Counts the most recent version of each result in a particular build.<br /><br /> For an example of a report that uses this measure, see [Build Quality](../excel/build-quality-excel-report.md).|  
+|Build Result Count Trend|Counts the most recent version of each result in a particular build.<br /><br /> For an example of a report that uses this measure, see [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report).|  
 |Point Count Trend|Count of the most recent version of each test result in a particular build. If a test is run multiple times against a build, the Point Count Trend counts the most recent result for that test using that build. If a test case is not included in the build, the test case is counted as "Never Run."<br /><br /> Use this measure to determine which tests or how many tests are failing in the current build.|  
 |Result Count|Counts the most recent version of each test result. Use this measure when you want to determine the overall volume of testing.<br /><br /> For an example of a report that uses this measure, see [Build Quality Indicators](build-quality-indicators-report.md).|  
 |Result Transition Count|Counts all the results whose outcome changed in a particular build. Use this measure when you want to determine which tests were affected by a particular build.|  
@@ -97,7 +95,7 @@ By using the Test perspective, you can create reports that answer the following 
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Build|Build Pipeline Name|The name that is assigned to the build pipeline for which a build was executed.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
+|Build|Build Pipeline Name|The name that is assigned to the build pipeline for which a build was executed.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report).|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
@@ -133,11 +131,11 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|Failure Type and Failure Type Id|Corresponds to one of the following reasons why a test failed: **None**, **Known Issue**, **New Issue**, or **Regression**.<br /><br /> Microsoft Test Manager automatically assigns a number or an ID to each reason. The test team can, but is not required to, assign a failure type to each failed test. **Note:**  You cannot add to or change the set of failure types. <br /><br /> For an example of a trend report that shows the outcome of test results based on failure type, see [Failure Analysis](../excel/failure-analysis-excel-report.md).|  
+|Failure Type and Failure Type Id|Corresponds to one of the following reasons why a test failed: **None**, **Known Issue**, **New Issue**, or **Regression**.<br /><br /> Microsoft Test Manager automatically assigns a number or an ID to each reason. The test team can, but is not required to, assign a failure type to each failed test. **Note:**  You cannot add to or change the set of failure types. <br /><br /> For an example of a trend report that shows the outcome of test results based on failure type, see [Failure Analysis](/previous-versions/azure/devops/report/excel/failure-analysis-excel-report).|  
 |Outcome and Outcome Id|The outcome of the test (for example, **Passed**, **Failed**, or **Inconclusive**).<br /><br /> For an example of a trend report that shows the outcome of test plans and test configurations, see [Test Plan Progress](test-plan-progress-report.md).|  
 |Readiness State and Readiness State Id|The state of a particular test within a test run. Valid values are **Completed**, **InProgress**, **None**, **NotReady**, and **Ready**.|  
 |Resolution State|(Optional) The name of the **Resolution** with which a tester identified the cause of a failed test. By default, all MSF process templates have the following resolution states: **Needs investigation**, **Test issue**, **Product issue**, and **Configuration issue**. The test team can, but is not required to, assign a resolution state to each failed test. **Note:**  You can change these states or add states using the `tcm` command line tool. See [tcm: Customize and manage the test experience](../../reference/witadmin/tcm-customize-manage-test-experience.md).|  
-|Test Result Executed By|The name of the user or other account under which the test was run.<br /><br /> For an example of a report that uses this attribute, see [Test Team Productivity](../excel/test-team-productivity-excel-report.md).|  
+|Test Result Executed By|The name of the user or other account under which the test was run.<br /><br /> For an example of a report that uses this attribute, see [Test Team Productivity](/previous-versions/azure/devops/report/excel/test-team-productivity-excel-report).|  
 |Test Result Owner|The name of the user or other account that is assigned as the owner of the test result. The assignment corresponds to the value that is set by using the `tcm /resultowner` switch.|  
 |Test Result Priority|The priority of a particular test within a test run.|  
   
@@ -149,8 +147,8 @@ The following table describes the attributes that are defined for the Test Run d
 |Attribute|Description|  
 |---------------|-----------------|  
 |Complete Date, Creation Date, Start Date Hierarchy By Month or By Week|Dates when the test run was created, completed, or started. You can use these attributes to filter or structure a report. For more information, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
-|Is Automated|Flag that indicates that the test run contains one or more automated tests.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
-|Is Build Verification Run|Flag that indicates whether the test run contains build verification tests that check the basic functionality of the build. This flag corresponds to the `tcm /buildverification` switch.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
+|Is Automated|Flag that indicates that the test run contains one or more automated tests.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report).|  
+|Is Build Verification Run|Flag that indicates whether the test run contains build verification tests that check the basic functionality of the build. This flag corresponds to the `tcm /buildverification` switch.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](/previous-versions/azure/devops/report/excel/build-quality-excel-report).|  
 |Test Run Id|The number that the system assigned to the test run.|  
 |Test Run Owner|Corresponds to the owner who is assigned to the test run that the test team created or published. Corresponds to the `tcm /owner` switch.|  
 |Test Run State and Id|Name or number that is assigned to the state of a test run (for example, **Aborted**, **Completed**, **In Progress**, **Not Started**, or **Unknown**).|  
@@ -166,9 +164,9 @@ You can link test cases to other work items such as user stories, requirements, 
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
 -   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
--   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
+-   [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)    
   
 ## Related notes
--  [Test Management Reports](../excel/test-management-reports.md)   
+-  [Test Management Reports](/previous-versions/azure/devops/report/excel/test-management-reports)   
 -  [Test Plan Progress](test-plan-progress-report.md)   
 -  [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md)

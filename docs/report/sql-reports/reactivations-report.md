@@ -1,12 +1,10 @@
 ---
 title: Reactivations Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determines how effectively the team is fixing bugs.
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,16 +12,16 @@ ms.date: 10/17/2017
 
 
 # Reactivations Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 As the team resolves and closes bugs, you can use the Reactivations report to determine how effectively the team is fixing bugs. Reactivations generally refer to bugs that have been resolved or closed prematurely and then reopened. The reactivation rate is also referred to as the fault feedback ratio.  
   
  You can use the Reactivations report to show either bugs or user stories that have been reactivated. As a product owner, you might want to discuss acceptable rates of reactivation with the team. A low rate of reactivations (for example, less than 5%) might be acceptable depending on your team's goals. However, a high or increasing rate of reactivations indicates that the team might need to diagnose and fix systemic issues.  
   
- For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
+ For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  For Azure DevOps Service users, please check the [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview) extension available in Azure DevOps market place. This report provides a detailed report on bugs and user stories reopened during sprints and also can be exported to excel.
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 
 **You can use this report to answer the following questions**:<br /><br /> -   How many bugs are being reactivated?<br />-   How many user stories are being reactivated?<br />-   Is the team resolving and closing reactivated bugs at an acceptable rate?
@@ -35,7 +33,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 ##  <a name="Data"></a> Data in the Report  
  The Reactivations report shows an area graph of the number of bugs or stories that are in a resolved state or that have been reactivated from the closed state. The data is derived from the data warehouse. The graph depicts the number of items based on the time duration and filters that you specify, as the following illustration shows.  
   
- ![Example Reactivations Report](_img/procguid_reportsbugsreactivations.png "ProcGuid_ReportsBugsReactivations")  
+ ![Example Reactivations Report](media/procguid_reportsbugsreactivations.png "ProcGuid_ReportsBugsReactivations")  
   
  You can filter the Reactivations report in the following ways:  
   
@@ -78,12 +76,12 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
 ### Healthy Version of Report  
  A healthy version of the Reactivations report shows a steady progress in resolving and closing bugs as the following illustration shows. The total rate of work item reactivation is 5% or less, and it does not increase during the iteration. Small fluctuations might be acceptable, based on your team goals. The lower your reactivation rate, the more progress your team can make overall.  
   
- ![Healthy version of a Reactivations report](_img/procguid_bugs_reactivationshealthy.png "ProcGuid_Bugs_ReactivationsHealthy")  
+ ![Healthy version of a Reactivations report](media/procguid_bugs_reactivationshealthy.png "ProcGuid_Bugs_ReactivationsHealthy")  
   
 ### Unhealthy Version of Report  
  The following illustration shows an unhealthy version of the Reactivations report.  
   
- ![Unhealthy version of Reactivations report](_img/procguid_reactivationsunhealthy.png "ProcGuid_ReactivationsUnhealthy")  
+ ![Unhealthy version of Reactivations report](media/procguid_reactivationsunhealthy.png "ProcGuid_ReactivationsUnhealthy")  
   
  The following table describes the indications of an unhealthy version of this report, in addition to providing some suggested questions to consider.  
   
@@ -102,7 +100,7 @@ As the team resolves and closes bugs, you can use the Reactivations report to de
   
   The following illustration shows the available filters:  
   
-  ![Filters for Reactivations Report](_img/procguide_bugsreactivationsfilters.png "ProcGuide_BugsReactivationsFilters")  
+  ![Filters for Reactivations Report](media/procguide_bugsreactivationsfilters.png "ProcGuide_BugsReactivationsFilters")  
   
 #### To filter the work items that appear in the report  
   

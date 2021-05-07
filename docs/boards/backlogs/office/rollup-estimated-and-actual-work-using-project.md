@@ -1,11 +1,10 @@
 ---
 title: Rollup estimated and actual work using Project
 titleSuffix: Azure Boards 
-description: Provides summed values of select fields for all child work items of a parent.
-ms.prod: devops
+description: Use Microsoft Project to automatically generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.
 ms.technology: devops-agile
+ms.topic: conceptual
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2018'
@@ -14,17 +13,17 @@ ms.date: 08/15/2019
 
 # Rollup estimated and actual work using Project
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
  There are a few items to be aware of, however, to make it work correctly. You may have to add fields to work item types (WITs) and update the Microsoft Project Mapping file. You can work in Project or TFS to structure the breakdown of work items and move seamlessly back and forth from each tool by publishing and refreshing data. After setting a baseline schedule in Project, you publish your rollup values to TFS.  
   
  With Project, you can rollup estimated, completed work or remaining work, and effort, size, or story points. By publishing the rollup values back to TFS, you can view them in work item forms, queries or on the backlog pages.  
   
- ![taskboard displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
+ ![taskboard displays round&#45;trip rollup from Project](media/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
  To learn about other methods that support rollup, see [Support rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).  
   
@@ -63,7 +62,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ##  Update the Microsoft Project Mapping file  
   
-1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).  
+1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file).  
   
      Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
@@ -92,7 +91,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  Link all work items that should support rollup using parent-child links.  For example, create tasks that link to user stories.  
   
-     You can do this easily by [creating tasks from the taskboard](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
+     You can do this easily by [creating tasks from the taskboard](../../sprints/assign-work-sprint.md), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
   
 2.  Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.  
   
@@ -102,16 +101,16 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 4.  If you want to roll up to a feature level, link user stories, or other backlog items, to features using parent-child links.  
   
-     You can quickly link items [using the mapping pane](https://msdn.microsoft.com/658f5e1c-ccdd-48da-bd88-4637273c666d).  
+     You can quickly link items [using the mapping pane](../organize-backlog.md).  
   
 ## Create a query of the work items you want to rollup  
  If you've created your work items in Project, then you can proceed to creating your schedule in Project.  
   
  However, if you've created your work items in TFS, your next step is to create a tree query. By viewing backlog items to tasks, you can create the query from the backlog page.  
   
- ![Create query from backlog page](_img/alm_rup_createquery.png "ALM_RUP_CreateQuery")  
+ ![Create query from backlog page](media/alm_rup_createquery.png "ALM_RUP_CreateQuery")  
   
- For more information, about tree queries, see [Use the query editor to list and manage queries](https://msdn.microsoft.com/c9b6d41c-47ce-4a29-8a1c-ba44d8c4809a)  
+ For more information, about tree queries, see [Use the query editor to list and manage queries](../../queries/using-queries.md)  
   
 ## Create your schedule in Project  
   
@@ -119,7 +118,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
      To get rollup of work items you've defined in TFS, open Project, connect to the project, and open the query you created in the last procedure.  
   
-     ![Connect to a project from Microsoft Project](_img/alm_prj_chooseteamproject.png "ALM_PRJ_ChooseTeamProject")  
+     ![Connect to a project from Microsoft Project](media/alm_prj_chooseteamproject.png "ALM_PRJ_ChooseTeamProject")  
   
      Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several TFS fields.  
   
@@ -127,13 +126,13 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 2.  From the Schedule page (**File>Options>Schedule**) set those options that need to match with how you track work in TFS. For example, if you track work in hours, make sure that Project is set to track hours. To automate scheduling of tasks, choose **Auto Scheduled**.  
   
-     ![Schedule options](_img/alm_rup_scheduleoptions.png "ALM_RUP_ScheduleOptions")  
+     ![Schedule options](media/alm_rup_scheduleoptions.png "ALM_RUP_ScheduleOptions")  
   
 3.  Add columns to display fields that you need. For example, you might need to add columns to display Original Estimate and Completed Work. These TFS fields correspond to the Baseline Work and Actual Work fields in Project.  
   
      To see which TFS fields are mapped, open **Column Mappings**.  
   
-     ![View which TFS fields are mapped to project fields](_img/alm_prj_viewcolumnmappings.png "ALM_PRJ_ViewColumnMappings")  
+     ![View which TFS fields are mapped to project fields](media/alm_prj_viewcolumnmappings.png "ALM_PRJ_ViewColumnMappings")  
   
 4.  Enter your work estimates in the Duration column, not in the Baseline Work.  
   
@@ -143,15 +142,15 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  When you have a schedule that meets your needs, set the Project Baseline to copy the values in the Duration field to the Original Estimate field.  
   
-     ![Set baseline option](_img/alm_rup_setbaseline_1.png "ALM_RUP_SetBaseline_1")  
+     ![Set baseline option](media/alm_rup_setbaseline_1.png "ALM_RUP_SetBaseline_1")  
   
-     ![Set baseline](_img/alm_rup_setbaseline_2.png "ALM_RUP_SetBaseline_2")  
+     ![Set baseline](media/alm_rup_setbaseline_2.png "ALM_RUP_SetBaseline_2")  
   
 2.  To publish changes you make in Project to TFS, make sure that the **Publish and Refresh** field is set to Yes. Set this field to No if you create milestone tasks or other tasks that aren't work item related.  
   
 3.  Publish your changes and rollup values to TFS.  
   
-     ![Publish](_img/alm_rup_publish.png "ALM_RUP_Publish")  
+     ![Publish](media/alm_rup_publish.png "ALM_RUP_Publish")  
   
 4.  As changes occur to the schedule, you can refresh your Project plan, clear and set a new baseline, and republish the rollup values.  
   
@@ -159,18 +158,19 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file? 
  
- **A:** See [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md).  
+ **A:** See [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).  
   
 ### Q: What's the difference between manual and automated task scheduling? 
  
  **A:** By using Task Mode, which is accessed through the following Ribbon menu, you have more flexibility in the way you and team members schedule tasks.  
   
- ![Task mode scheduling ribbon menu options](_img/tfs_oiproj_taskmode_menu.png "TFS_OIProj_TaskMode_Menu")  
+ ![Task mode scheduling ribbon menu options](media/tfs_oiproj_taskmode_menu.png "TFS_OIProj_TaskMode_Menu")  
   
- By using manually scheduled tasks, which are indicated by the ![Pinned task icon](_img/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it.  
+ By using manually scheduled tasks, which are indicated by the ![Pinned task icon](media/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it.  
   
- Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
-  
-### Q: Can I get a rollup of team capacity?
-  
- **A:** No. The data entered for team capacity isn't stored in the regular data stores.
+ Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](media/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
+
+## Related articles
+
+-  [Azure Boards FAQs](../../faqs.yml) 
+-  [Excel FAQs](faqs.yml)  

@@ -1,109 +1,73 @@
-- name: What are extensions?
-  href: ./overview.md
-- name: Develop a web extension
-  href: get-started/node.md
-- name: Tutorials
+- name:  Get started
   items:
+  - name: Develop a web extension
+    href: get-started/node.md
+  - name: Contribution model
+    href: develop/contributions-overview.md
   - name: Create a custom pipelines task
     href: develop/add-build-task.md
-  - name: Use a pipeline decorator
+  - name: Author a pipeline decorator
     href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
-  - name: Azure DevOps Services extension samples
+  - name: Extension samples
     href: develop/samples-overview.md
-- name: Concepts
-  items:
-  - name: Extensibility points
-    href: reference/targets/overview.md
-  - name: Contribution model
-    href: develop/contributions-overview.md
-- name: How-to Guides
-  items:
-  - name: Develop
+  - name: Vertical navigation guidance
+    href: develop/web-navigation.md
+  - name: Work with URLs
+    href: develop/work-with-urls.md 
+  - name: Store data and settings
+    href: develop/data-storage.md 
+  - name: Add a hub
+    href: develop/add-hub.md
+  - name: Add a hub group
+    href: develop/add-hub-group.md
+  - name: Add a menu action
+    href: develop/add-action.md
+  - name: Add a new service endpoint
+    href: develop/service-endpoints.md
+  - name: Add a service hook
+    href: develop/add-service-hook.md
+  - name: Create a PR status server
+    href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Use Azure Functions to create custom branch policies
+    href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Add Azure Boards extensions
     items:
-    - name: Add a hub
-      href: develop/add-hub.md
-    - name: Add a menu action
-      href: develop/add-action.md
+    - name: Add a tab to a Backlog  
+      href: develop/add-backlog-tabs.md
+    - name: Add a panel to a Backlog  
+      href: develop/add-backlog-panel.md
+    - name: Extend the work item form
+      href: develop/add-workitem-extension.md
+    - name: Add a custom control to a work item form
+      href: develop/custom-control.md
+    - name: Configure work item form extensions (on-premises) 
+      href: develop/configure-workitemform-extensions.md
+    - name: Add query result tabs
+      href: develop/add-query-result-tabs.md
+  - name: Add dashboard extensions
+    items:
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
-    - name: Add a new service endpoint
-      href: develop/service-endpoints.md
-    - name: Add a service hook
-      href: develop/add-service-hook.md
-    - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-    - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
-    - name: Store data and settings
-      href: develop/data-storage.md
-    - name: Add Work hub extensions
-      items:
-      - name: Add backlog tabs
-        href: develop/add-backlog-tabs.md
-      - name: Add backlog panels
-        href: develop/add-backlog-panel.md
-      - name: Extend the work item form
-        href: develop/add-workitem-extension.md
-      - name: Add a custom control to the work item form
-        href: develop/custom-control.md
-      - name: Configure work item form extensions in TFS
-        href: develop/configure-workitemform-extensions.md
-      - name: Add query result tabs
-        href: develop/add-query-result-tabs.md
-    - name: Call a REST API
-      href: develop/call-rest-api.md
-    - name: Extensions for public projects
-      href: develop/public-project.md
-    - name: Use vertical navigation
-      href: develop/web-navigation.md
-    - name: Work with URLs
-      href: develop/work-with-urls.md      
-    - name: Use a platform UI control
-      items:
-      - name: Configure
-        href: develop/ui-controls/configure.md
-      - name: Use grid
-        href: develop/ui-controls/grido.md
-      - name: Use menubar
-        href: develop/ui-controls/menubaro.md
-      - name: Use treeview
-        href: develop/ui-controls/treeviewo.md
-      - name: Use combo
-        href: develop/ui-controls/comboo.md
-      - name: Use modal dialog
-        href: develop/ui-controls/modaldialogo.md
-      - name: Use splitter
-        href: develop/ui-controls/splittero.md
-      - name: Use wait control
-        href: develop/ui-controls/waitcontrolo.md
-      - name: Use pivot filter
-        href: develop/ui-controls/pivotfiltero.md
-  - name: Package and publish
-    items:
-    - name: Package and publish extensions
-      href: publish/overview.md
-    - name: Package and publish integrations
-      href: publish/integration.md
-    - name: Make listing public and Top Publisher program
-      href: publish/publicize.md
-    - name: Publish via command line
-      href: publish/command-line.md
-    - name: Respond to Marketplace reviews
-      href: publish/manage-ratings-reviews.md
-  - name: Test and debug
-    items:
-    - name: Debug a web extension
-      href: test/debug-in-browser.md
-  - name: Reporting
-    items:
-    - name: Extension reporting
-      href: extension-report.md
-    - name: Extension statistics PowerBI content pack
-      href: extension-statistics-powerbi-contentpack.md
+  - name: Call a REST API
+    href: develop/call-rest-api.md
+  - name: Public project extensions
+    href: develop/public-project.md
+- name: Package and publish
+  items:
+  - name: Package and publish extensions
+    href: publish/overview.md
+  - name: Package and publish integrations
+    href: publish/integration.md
+  - name: Make listing public and Top Publisher program
+    href: publish/publicize.md
+  - name: Publish via command line
+    href: publish/command-line.md
+  - name: Respond to Marketplace reviews
+    href: publish/manage-ratings-reviews.md
 - name: Reference
   items:
   - name: Manifest reference
@@ -122,62 +86,5 @@
     href: develop/host-navigation.md
   - name: Basic styles for widgets
     href: develop/styles-from-widget-sdk.md
-  - name: Auth and security
-    href: develop/auth.md
   - name: Deploy web content to Azure
     href: publish/publish-azure.md
-  - name: Client APIs
-    items:
-    - name: Core SDK
-      href: reference/client/core-sdk.md
-    - name: Client services
-      href: reference/client/client-services.md
-    - name: REST clients
-      href: reference/client/rest-clients.md
-      items:
-      - name: BuildHttpClient2_1
-        href: reference/client/api/TFS/Build/RestClient/BuildHttpClient2_1.md
-      - name: BuildHttpClient2_2
-        href: reference/client/api/TFS/Build/RestClient/BuildHttpClient2_2.md
-      - name: CoreHttpClient2_1
-        href: reference/client/api/TFS/Core/RestClient/CoreHttpClient2_1.md
-      - name: CoreHttpClient2_2
-        href: reference/client/api/TFS/Core/RestClient/CoreHttpClient2_2.md
-      - name: TestHttpClient2_1
-        href: reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_1.md
-      - name: TestHttpClient2_2
-        href: reference/client/api/TFS/TestManagement/RestClient/TestHttpClient2_2.md
-      - name: GitHttpClient2_1
-        href: reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_1.md
-      - name: GitHttpClient2_2
-        href: reference/client/api/TFS/VersionControl/GitRestClient/GitHttpClient2_2.md
-      - name: TfvcHttpClient2_1
-        href: reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_1.md
-      - name: TfvcHttpClient2_2
-        href: reference/client/api/TFS/VersionControl/TfvcRestClient/TfvcHttpClient2_2.md
-      - name: WorkHttpClient2_1
-        href: reference/client/api/TFS/Work/RestClient/WorkHttpClient2_1.md
-      - name: WorkHttpClient2_2
-        href: reference/client/api/TFS/Work/RestClient/WorkHttpClient2_2.md
-      - name: WorkItemTrackingHttpClient2_1
-        href: reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_1.md
-      - name: WorkItemTrackingHttpClient2_2
-        href: reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2.md
-  - name: UI controls
-    items:
-    - name: Combo
-      href: reference/client/controls/combo.md
-    - name: Grid
-      href: reference/client/controls/grid.md
-    - name: TreeView
-      href: reference/client/controls/tree.md
-    - name: MenuBar
-      href: reference/client/controls/menubar.md
-    - name: Modal Dialog
-      href: reference/client/controls/modaldialog.md
-    - name: Splitter
-      href: reference/client/controls/splitter.md
-    - name: WaitControl
-      href: reference/client/controls/waitcontrol.md
-    - name: How to get help
-      href: support/help.md

@@ -2,10 +2,8 @@
 title: Track test status
 description: Track test status with charts and graphs using Azure DevOps
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/04/2019
@@ -14,11 +12,13 @@ monikerRange: '>= tfs-2015'
 
 # Track test status
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 View the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
+
+:::moniker range=">= azure-devops-2020"
 
 ## Progress Report
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
@@ -30,23 +30,23 @@ To track the progress of more than one test plan or test suite, use the Progress
 6. View the progress each suite has made within a test plan and identify the areas that need attention.
 
 ### Configuring the report
-By navigating to Test Plans > Progress Report*, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
+By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
 
 ### Understanding the report
 The progress report consists of three sections:
 1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, refer [here](new-test-plans-page.md).
 2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
-3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double clicking on it.
+3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double-clicking on it.
 
-![snippet](_img/progress-report/snippet.png)
+![Progress report](media/progress-report/snippet.PNG)
 
-An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (i.e. tests are being executed) and the number of passed tests are on the rise.
+An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (because tests are being executed) and the number of passed tests are on the rise.
 
-![good trend](_img/progress-report/goodtrend.png)
+![good trend](media/progress-report/goodtrend.PNG)
 
 An example of an unhealthy outcome trend is as follows because as time is progressing, there is no significant execution occurring and the # of passed and failed tests are continuing to remain flat. In such situations, use the details card to drill down and take suitable actions.
 
-![bad trend](_img/progress-report/badtrend.png)
+![bad trend](media/progress-report/badtrend.png)
 
 ### Filtering
 By using the filter bar you can filter this report by Test Suites, Configuration, Tester, Test Case priority, and Test Case Assigned to. As example: you can filter by configuration 'Chrome' and then 'Edge' to understand where the execution and pass % are higher. Note: Tester is the person to whom the test point is assigned for execution whereas Assigned to is the person who is responsible for the reusable test case.
@@ -54,7 +54,7 @@ By using the filter bar you can filter this report by Test Suites, Configuration
 > The test plan is considered Level 1. Its child suites are considered level 2. Their child suites in turn are considered level 3. The Test Suites filter shows only the Level 3 test suites inside the selected test plans. To select a Level 2 test suite select all the Level 3 test suites underneath it. This assumes the Level 2 test suites itself does not have any test points.
 
 ### Behavior
-When using this progress report it is good to know the following points:
+When using this progress report, it is good to know the following points:
 1. The report lets you view data for one or more Test Plans in a single project. To view data across projects, use the [OData APIs](../report/extend-analytics/data-model-analytics-service.md). This report is also rendered using the same OData APIs. 
 2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
 3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
@@ -62,7 +62,10 @@ When using this progress report it is good to know the following points:
 5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
 
 ### Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+
+To report any issues you might be having with the Progress Report, go to https://developercommunity.visualstudio.com/content/problem/post.html?space=21. If relevant to the issue you report, include screenshots.
+
+:::moniker-end
 
 ## Charts
 
@@ -76,7 +79,7 @@ for all the tests in the test plan.
 
 View this default chart from the Charts page.
 
-![Select test plan. Go to Charts page to view default chart](_img/track-test-status/DefaultChart.png)
+![Select test plan. Go to Charts page to view default chart](media/track-test-status/DefaultChart.png)
 
 Add your own charts for test results to visualize what's important 
 for your team. If you already know how to add a chart, jump to the 
@@ -85,12 +88,12 @@ for your team. If you already know how to add a chart, jump to the
 1. Select the test plan or test suite for your chart in the 
    Test Plans page. Then create a new chart.
 
-   ![On the Charts page; click New. Select New Test Result Chart](_img/track-test-status/NewTestResultChart.png)
+   ![On the Charts page; click New. Select New Test Result Chart](media/track-test-status/NewTestResultChart.png)
 
 1. Select the chart type. Based on the chart, configure the 
    fields that you want to use to group by, or for the rows and columns.
 
-   ![Name your chart. Select the field values. To save, click OK](_img/track-test-status/ConfigureChart.png)
+   ![Name your chart. Select the field values. To save, click OK](media/track-test-status/ConfigureChart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
@@ -106,7 +109,7 @@ for your team. If you already know how to add a chart, jump to the
 Select the test suite from the Test Plans page and add 
 a test results pie chart. Group by **Outcome**.
 
-![On the chart page, choose New test result chart; choose Pie chart. In Group By, select Outcome](_img/track-test-status/ExampleOutcome.png)
+![On the chart page, choose New test result chart; choose Pie chart. In Group By, select Outcome](media/track-test-status/ExampleOutcome.png)
 
 **What's the test status for user stories that my team's testing this sprint?**
 
@@ -121,7 +124,7 @@ plan for your user stories, you can create a chart for this.
 1. Add a test results stacked bar chart. Choose **Suite** 
    as the Y-axis (rows) pivot and **Outcome** as the Group by (columns) pivot.
 
-   ![For Rows, select Suite. For Columns, select Outcome. To save, click OK](_img/track-test-status/ExampleUserStories.png)
+   ![For Rows, select Suite. For Columns, select Outcome. To save, click OK](media/track-test-status/ExampleUserStories.png)
 
 **How many tests has each tester left to run?**
 
@@ -129,7 +132,7 @@ Select your test plan from the Test Plans page and add a test
 results pivot table chart. Choose **Tester** as the rows pivot and
 **Outcome** as the columns pivot.
 
-![For Rows, select Tester. For Columns, select Outcome. To save, click OK](_img/track-test-status/ExampleTesterTestsLeft.png)
+![For Rows, select Tester. For Columns, select Outcome. To save, click OK](media/track-test-status/ExampleTesterTestsLeft.png)
 
 **How can I check quality based on the configuration?**
 
@@ -171,7 +174,7 @@ create for test cases.
 1. Select the test plan or test suite for your chart in 
    the Test Plans page. Then add a test case chart.
 
-   ![Select test suite; Charts page; New test case chart](_img/track-test-status/NewTestCaseChart.png)
+   ![Select test suite; Charts page; New test case chart](media/track-test-status/NewTestCaseChart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.
@@ -180,7 +183,7 @@ create for test cases.
    fields that you want to use to group by, for rows and columns,
    or the range (trend charts only).
 
-   ![Choose the chart type; choose the fields for the chart](_img/track-test-status/ConfigureChart2.png)
+   ![Choose the chart type; choose the fields for the chart](media/track-test-status/ConfigureChart2.png)
 
    You can't group by test suite for the test case charts.
 
@@ -196,7 +199,7 @@ Use a stacked area trend chart to view the burn down for
 how many test cases are ready to be run. Choose **State** 
 for the stack by field and **Ascending** for the sort field.
 
-![Create a stacked area chart: For Stack By, choose State, then sort by ascending value](_img/track-test-status/ExampleBurndownReadiness.png)
+![Create a stacked area chart: For Stack By, choose State, then sort by ascending value](media/track-test-status/ExampleBurndownReadiness.png)
 
 **How can I track burn down for automation status?**
 
@@ -227,15 +230,15 @@ Use a stacked bar chart or a pivot table chart. Choose
 Pin a chart to your team's dashboard for all the team to view. 
 Use the chart's context menu.
 
-![Open the chart](_img/track-test-status/EditDeletePinChart.png)
+![Open the chart](media/track-test-status/EditDeletePinChart.png)
 
-You can [configure the dashboard widget](../report/widget-catalog.md)
+You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 to show a range of chart types.
-You must be a team administrator to do this, but team members with 
+You must be a team administrator to configure the dashboard widget, but team members with 
 Stakeholder access can view the charts on the dashboard. 
 
 Learn more about
-[dashboards](../report/dashboards.md). 
+[dashboards](../report/dashboards/dashboards.md). 
 Or learn more about
 [team administration](../organizations/settings/manage-teams.md).
 

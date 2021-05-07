@@ -1,29 +1,27 @@
-﻿---
+---
 title: Process data warehouse and analysis services cube
 titleSuffix: TFS
 description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
-ms.date: 11/19/2018
+monikerRange: '< azure-devops' 
+ms.date: 11/19/2020
 ---
 
-# Manually process the TFS data warehouse and analysis services cube
+# Manually process the data warehouse and analysis services cube for Azure DevOps
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
 When you need the freshest data in your reports, when errors have occurred, or after you've resolved schema conflicts, you can manually process the Team Foundation Server (TFS) relational database (Tfs\_Warehouse) or SQL Server Analysis Services cube (Tfs\_Analysis).
 
 During typical operations, the warehouse is processed within two minutes of changes made to an operational store, and the cube is processed every two hours. By manually processing the warehouse, you help ensure that queries and reports are up-to-date with data that depends on the warehouse.
 
-You use the Warehouse Control Web Service to process the warehouse or cube or perform other maintenance operations. If you know that you want to perform a full rebuild of both databases, then use the [Administration console](rebuild-data-warehouse-and-cube.md) or the [TFSConfig RebuildWarehouse command](https://msdn.microsoft.com/library/ee349264.aspx). 
+You use the Warehouse Control Web Service to process the warehouse or cube or perform other maintenance operations. If you know that you want to perform a full rebuild of both databases, then use the [Administration console](rebuild-data-warehouse-and-cube.md) or the [TFSConfig RebuildWarehouse command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120)). 
 
- ![Warehouse Control Web Services page](_img/web-services.png)
+ ![Warehouse Control Web Services page](media/web-services.png)
 
 > [!NOTE]  
 > Do not use SQL Server Management Studio (SSMS) to manually process the cube. Processing the cube using that tool is not supported. 
@@ -41,9 +39,16 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 2. Log on to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
-	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx``` 
-
-	If another name was used other than **tfs** for the virtual directory, then type the *IIS Virtual Directory* that was specified when Team Foundation Server was installed.  
+	::: moniker range=">= azure-devops-2019"
+	`http://localhost:8080/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx`  
+	::: moniker-end
+	::: moniker range="< azure-devops-2019"
+    ```
+	http://localhost:8080/VirtualDirectory/DefaultCollection/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx   
+    ```
+	For VirtualDirectory, type the IIS Virtual Directory that was specified when TFS was installed. By default, the virtual directory is **tfs**. 
+	::: moniker-end
+	If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
 
 3. The **WarehouseControlWebService** page opens.
 
@@ -53,7 +58,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 Choose  **GetProcessingStatus**.
 
-![Get processing status](_img/IC714222.png)
+![Get processing status](media/IC714222.png)
 
 A new browser window opens. It indicates the following job's processing status:
 
