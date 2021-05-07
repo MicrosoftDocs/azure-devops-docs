@@ -219,7 +219,7 @@ Next, create the Dockerfile.
         libicu60 \
         libunwind8 \
         netcat \
-        libssl1.0
+        libssl1.0 \
       && rm -rf /var/lib/apt/lists/*
 
     RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \

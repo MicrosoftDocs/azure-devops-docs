@@ -30,7 +30,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ::: moniker range="> tfs-2018"
 
-The agent is based on .NET Core 2.1.
+The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 - x64

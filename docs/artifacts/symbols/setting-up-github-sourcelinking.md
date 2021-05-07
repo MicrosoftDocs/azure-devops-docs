@@ -46,7 +46,7 @@ Source link is a set of tools that allow developers to debug their source code b
   </ItemGroup>
   ```
 
-## Set up the Build Pipeline
+## Set up the build Pipeline
 
 The next step is to modify the build pipeline to invoke Source Link during the build process. To do so, add `/p:SourceLinkCreate=true` to the **MSBuild arguments** field within the **Visual Studio Build** task.
 
@@ -78,7 +78,7 @@ Things to keep in mind:
 
 - **Enable Source Link support**: check this to enable support for portable PDB files.
 
-## Setup verification
+## Set up verification
 
 Now that Visual Studio is configured, it is time to attach the debugger to the process you want to debug. Once the debugger is attached Visual Studio will establish connection to the symbols server and attempt to locate the symbols.
 
