@@ -2,21 +2,19 @@
 title: Service hooks event reference | Azure DevOps Services
 description: Events supported by Azure DevOps Services and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
 # Azure DevOps Services service hooks events
 
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+
 ## Available event types
 
-* Build and release
+* **Build and release**
   * [Build completed](#build.complete)
   * [Release created](#ms.vss-release.release-created-event)
   * [Release abandoned](#ms.vss-release.release-abandoned-event)
@@ -25,23 +23,33 @@ ms.date: 08/04/2016
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-* Code
+::: moniker range=">= azure-devops-2020"
+* **Pipelines**
+  * [Run state changed](#run.statechanged)
+  *	[Run stage state changed](#run.stagestatechanged)
+  * [Run stage waiting for approval](#run.stageapprovalpending)
+  * [Run stage approval completed](#run.stageapprovalcompleted)
+::: moniker-end
+
+* **Code**
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
 
-* Work item 
+* **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
-Deprecated event types:
+::: moniker range="<= tfs-2017"
+**Deprecated event types**:
 
 * [Team room message posted](#message.posted)
+::: moniker-end
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -49,12 +57,14 @@ Deprecated event types:
 ## Build and release
 
 <a name="build.complete"></a>
+
 ### Build completed
 
 A build completes
 
 * Publisher ID: `tfs`
 * Event ID: `build.complete`
+* Resource Name: `build`
 
 #### Settings
  * `definitionName`: Filter events to include only completed builds for the specified pipeline
@@ -164,6 +174,7 @@ A release was abandoned
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-abandoned-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -324,6 +335,7 @@ A release was created
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-created-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -484,6 +496,7 @@ A deployment approval has been completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
@@ -688,6 +701,7 @@ A deployment approval has been requested
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
@@ -884,6 +898,7 @@ A deployment completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1037,6 +1052,7 @@ A deployment was started
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-started-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1178,6 +1194,359 @@ A deployment was started
 }
 ```
 
+::: moniker range=">= azure-devops-2020"
+
+## Pipelines
+
+> [!NOTE]
+> [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md) preview feature needs to be enabled for these events.
+
+<a name="run.statechanged"></a>
+
+### Run state changed
+
+Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelines.run-state-changed-event`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `runStateId`: Filter events based on the new state of the run
+   * Valid values: 
+      * `InProgress` 
+      * `Canceling` 
+      * `Completed` 
+
+#### Sample payload
+```json
+{
+  "id": "62e4351f-1c24-40f9-8510-7af03692ab45",
+  "eventType": "ms.vss-pipelines.run-state-changed-event",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Run 11 succeeded.",
+    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+  },
+  "detailedMessage": {
+    "text": "Run 11 succeeded.",
+    "html": "Run <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11\">11</a> succeeded.",
+    "markdown": "Run [11](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11) succeeded."
+  },
+  "resource": {
+    "run": {
+      "_links": {
+        "self": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11"
+        },
+        "web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=11"
+        },
+        "pipeline.web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=1"
+        },
+        "pipeline": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1?revision=1"
+        }
+      },
+      "pipeline": {
+        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+        "id": 11,
+        "revision": 1,
+        "name": "TEST-CI",
+        "folder": "\\"
+      },
+      "state": "completed",
+      "result": "succeeded",
+      "createdDate": "2019-12-13T04:46:13.613Z",
+      "finishedDate": "2019-12-13T04:46:13.613Z",
+      "url": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_apis/Pipelines/1/runs/11",
+      "id": 11,
+      "name": "11"
+    },
+    "pipeline": {
+      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/1?revision=1",
+      "id": 11,
+      "revision": 1,
+      "name": "TEST-CI",
+      "folder": "\\"
+    }
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T04:46:13.683Z"
+}
+```
+
+<a name="run.stagestatechanged"></a>
+### Run stage state changed
+
+A new stage has started, or a stage has transitioned to canceling, canceled, failed, partially succeeded or succeeded.
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelines.stage-state-changed-event`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `stageNameId`: Filter events to a specific stage name
+ * `stageStateId`: Filter events based on the new state of the stage
+   * Valid values: 
+      * `NotStarted` 
+      * `Waiting` 
+      * `Running`
+      * `Completed`
+
+#### Sample payload
+```json
+{
+  "id": "ac1dd6da-af30-43cb-8434-e1005864b0a3",
+  "eventType": "ms.vss-pipelines.stage-state-changed-event",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Run 2 stage __default succeeded.",
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+  },
+  "detailedMessage": {
+    "text": "Run 2 stage __default succeeded.",
+    "html": "Run 2 stage <a href=\"https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2\">__default</a> succeeded.",
+    "markdown": "Run 2 stage [__default](https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2) succeeded."
+  },
+  "resource": {
+    "stage": {
+      "_links": {
+        "web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/results?buildId=2"
+        },
+        "pipeline.web": {
+          "href": "https://codedev.ms/org/863d0a5b-3c91-4bf3-8ad7-7f33736b7f4c/_build/definition?definitionId=2"
+        }
+      },
+      "id": "00000000-0000-0000-0000-000000000000",
+      "name": "__default",
+      "displayName": null,
+      "state": "completed",
+      "result": "succeeded"
+    },
+    "run": {
+      "pipeline": {
+        "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+        "id": 2,
+        "revision": 2,
+        "name": "TEST-CI",
+        "folder": "\\"
+      },
+      "state": "completed",
+      "result": "succeeded",
+      "createdDate": "2019-12-13T06:10:10.164Z",
+      "finishedDate": "2019-12-13T06:10:10.164Z",
+      "id": 2,
+      "name": "2"
+    },
+    "pipeline": {
+      "url": "https://codedev.ms/org/091d79ee-dc21-465e-86a2-b4006b9d0921/_apis/Pipelines/2?revision=2",
+      "id": 2,
+      "revision": 2,
+      "name": "TEST-CI",
+      "folder": "\\"
+    }
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T06:10:10.186Z"
+}
+```
+
+<a name="run.stageapprovalpending"></a>
+### Run stage waiting for approval
+
+An approval is created for a run stage
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelinechecks-events.approval-pending`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `stageName`: Filter events to a specific stage name
+ * `environmentName`: Filter events to approvals for deployments to a specified environment
+ 
+#### Sample payload
+```json
+{
+  "id": "55382df7-24fa-453c-9173-3369b2417a5b",
+  "eventType": "ms.vss-pipelinechecks-events.approval-pending",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Approval pending for deployment of pipeline run1 to environment env1.",
+    "html": "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "detailedMessage": {
+    "text": "Approval pending for deployment of pipeline run1 to environment env1.",
+    "html": "Approval pending for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval pending for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "resource": {
+    "approval": {
+      "id": "0f027b05-0942-4a35-9218-26fa07d8760a",
+      "steps": [
+        {
+          "assignedApprover": {
+            "displayName": null,
+            "id": "743f73b7-cdeb-4de7-80b7-00cee17476b8"
+          },
+          "status": "pending",
+          "comment": "Sample comment",
+          "initiatedOn": "2019-12-13T06:14:11.642Z"
+        }
+      ],
+      "status": "pending",
+      "createdOn": "2019-12-13T06:14:11.642Z",
+      "lastModifiedOn": "2019-12-13T06:14:11.642Z",
+      "instructions": "Instructions",
+      "minRequiredApprovers": 2,
+      "blockedApprovers": [
+        {
+          "displayName": null,
+          "id": "d651e716-a205-4b37-a803-e373df09fea6"
+        }
+      ],
+      "_links": {}
+    },
+    "projectId": "00000000-0000-0000-0000-000000000000",
+    "pipeline": null,
+    "stage": null,
+    "run": null,
+    "resource": null,
+    "id": 0,
+    "url": null,
+    "stageName": null,
+    "attemptId": 0
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T06:14:11.671Z"
+}
+```
+
+<a name="run.stageapprovalcompleted"></a>
+### Run stage approval completed
+
+An approval completed for a run stage
+
+* Publisher ID: `pipelines`
+* Event ID: `ms.vss-pipelinechecks-events.approval-completed`
+* Resource Name: `resource`
+
+#### Settings
+ * `PipelineId`: Filter to include only events for the specified pipeline
+ * `stageName`: Filter events to a specific stage name
+ * `environmentName`: Filter events to approvals for deployments to a specified environment
+ 
+#### Sample payload
+```json
+{
+  "id": "5810cce3-55e9-46dc-ad4f-681c57cf620e",
+  "eventType": "ms.vss-pipelinechecks-events.approval-completed",
+  "publisherId": "pipelines",
+  "message": {
+    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "detailedMessage": {
+    "text": "Approval completed for deployment of pipeline run1 to environment env1.",
+    "html": "Approval completed for deployment of pipeline <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results> run1 </a> to environment <a href=https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources>env1</a>.",
+    "markdown": "Approval completed for deployment of pipeline [https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_build/results?buildId=2&view=results](run1) to environment [env1](https://dev.azure.com/fabfiber/Fabrikam-Fiber-Git/_environments/1?view=resources)"
+  },
+  "resource": {
+    "approval": {
+      "id": "0f027b05-0942-4a35-9218-26fa07d8760a",
+      "steps": [
+        {
+          "assignedApprover": {
+            "displayName": null,
+            "id": "f8482ec0-3e2f-489b-ba62-ea01cf84afa8"
+          },
+          "status": "approved",
+          "comment": "Sample comment",
+          "initiatedOn": "2019-12-13T06:18:22.460Z"
+        }
+      ],
+      "status": "approved",
+      "createdOn": "2019-12-13T06:18:22.460Z",
+      "lastModifiedOn": "2019-12-13T06:18:22.460Z",
+      "instructions": "Instructions",
+      "minRequiredApprovers": 2,
+      "blockedApprovers": [
+        {
+          "displayName": null,
+          "id": "23241e2e-59af-4b58-842e-5604d508c6b5"
+        }
+      ],
+      "_links": {}
+    },
+    "projectId": "00000000-0000-0000-0000-000000000000",
+    "pipeline": null,
+    "stage": null,
+    "run": null,
+    "resource": null,
+    "id": 0,
+    "url": null,
+    "stageName": null,
+    "attemptId": 0
+  },
+  "resourceVersion": "5.1-preview.1",
+  "resourceContainers": {
+    "collection": {
+      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    },
+    "account": {
+      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+    },
+    "project": {
+      "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+    }
+  },
+  "createdDate": "2019-12-13T06:18:22.487Z"
+}
+```
+::: moniker-end
+
 ## Code
 
 <a name="tfvc.checkin"></a>
@@ -1187,6 +1556,7 @@ A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
+* Resource Name: `changeset`
 
 #### Settings
  * `path`: Filter to checkins that change one or more files under the specified path
@@ -1245,6 +1615,7 @@ Code is pushed to a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.push`
+* Resource Name: `push`
 
 #### Settings
  * `branch`: The branch that code was pushed into
@@ -1339,6 +1710,7 @@ Pull request is created in a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.created`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1443,6 +1815,7 @@ Pull request - Created merge commit
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.merged`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1548,6 +1921,7 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `notificationType`: The type of pull request change
@@ -1667,6 +2041,7 @@ Filter events to include only newly created work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.created`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -1749,6 +2124,7 @@ Filter events to include only newly deleted work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.deleted`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -1825,6 +2201,7 @@ Filter events to include only newly restored work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.restored`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -1913,6 +2290,7 @@ Filter events to include only changed work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.updated`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2036,6 +2414,7 @@ Filter events to include only work items commented on.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.commented`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2113,6 +2492,8 @@ Filter events to include only work items commented on.
 }
 ```
 
+::: moniker range="<= tfs-2017"
+
 ## Deprecated event types
 
 <a name="message.posted"></a>
@@ -2122,6 +2503,7 @@ Triggers when a message is posted to a team room
 
 * Publisher ID: `tfs`
 * Event ID: `message.posted`
+* Resource Name: `messageposted`
 
 #### Settings
  * `messagePattern`: The string that must be found in the message
@@ -2174,6 +2556,8 @@ Triggers when a message is posted to a team room
 }
 ```
 
+::: moniker-end
+
 ## Resource containers
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.
@@ -2181,4 +2565,3 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
 * **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
-

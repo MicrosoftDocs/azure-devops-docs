@@ -1,26 +1,29 @@
 ---
-title: Kubernetes Manifest task
+title: Kubernetes manifest task
 description: Bake and deploy manifests to Kubernetes clusters
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
-ms.manager: shasb
-ms.author: shasb
-author: shashankbarsin
-ms.date: 11/06/2019
+ms.manager: atulmal
+ms.author: atulmal
+author: azooinmyluggage
+ms.date: 01/26/2021
 monikerRange: 'azure-devops'
 ---
 
 # Kubernetes manifest task
-Use this task in a build or release pipeline to bake and deploy manifests to Kubernetes clusters.
+
+Use a Kubernetes manifest task in a build or release pipeline to bake and deploy manifests to Kubernetes clusters.
 
 ## Overview
-Following are the key benefits of this task - 
 
-- **Artifact substitution** - The deploy action takes as input a list of container images which can be specified along with their tags or digests. The same is substituted into the non-templatized version of manifest files before application to the cluster to ensure that the right version of the image is pulled by the cluster nodes.
-- **Manifest stability** - Rollout status is checked for the Kubernetes objects deployed. This is done to incorporate stability checks while computing the task status as success/failure.
-- **Traceability annotations** - Annotations are added to the deployed Kubernetes objects to superimpose traceability information in the form of following annotations - 
+The following list shows the key benefits of this task:
+
+- **Artifact substitution**: The deployment action takes as input a list of container images that you can specify along with their tags and digests. The same input is substituted into the nontemplatized manifest files before application to the cluster. This substitution ensures that the cluster nodes pull the right version of the image.
+
+- **Manifest stability**: The rollout status of the deployed Kubernetes objects is checked. The stability checks are incorporated to determine whether the task status is a success or a failure.
+
+- **Traceability annotations**: Annotations are added to the deployed Kubernetes objects to superimpose traceability information. The following annotations are supported:
+
   - azure-pipelines/org
   - azure-pipelines/project
   - azure-pipelines/pipeline
@@ -28,66 +31,135 @@ Following are the key benefits of this task -
   - azure-pipelines/execution
   - azure-pipelines/executionuri
   - azure-pipelines/jobName
-- **Secret handling** - The createSecret action enables creation of docker-registry secrets using Docker Registry Service Connections and generic secrets using plain-text/secret variables. The *secrets* input can be used along with *deploy* action so that the manifest files specified as inputs are augmented with appropriate imagePullSecrets before deploying to the cluster.
-- **Bake manifest** - The bake action of the task allows for baking Helm charts into Kubernetes manifest files so that the same can be applied onto the cluster.
-- **Deployment strategy** - Choosing canary strategy with deploy action leads to creation of workloads suffixed with '-baseline' and '-canary'. There are two methods of traffic splitting supported in the task:
-    - **Service Mesh Interface** -  [Service Mesh Interface](https://smi-spec.io/) abstraction allows for plug-and-play configuration with service mesh providers such as Linkerd and Istio. Meanwhile, the KubernetesManifest task takes away the hard work of mapping SMI's TrafficSplit objects to the stable, baseline and canary services during the lifecycle of the deployment strategy. Service mesh based canary deployments using this task are more accurate as service mesh providers enable granular percentage traffic split (via service registry and sidecar containers injected into pods alongside application containers).
-    - **Only Kubernetes (no service mesh)**- In the absence of service mesh, while it may not be possible to achieve exact percentage split at the request level, it is still possible to perform canary deployments by deploying -baseline and -canary workload variants next to the stable variant. The service routes requests to pods of all three workload variants as the selector-label constraints are met (KubernetesManifest will honor these when creating -baseline and -canary variants). This achieves the intended effect of routing only a portion of total requests to the canary.
-    
-    The -baseline and -canary workloads can be compared using a [ManualIntervention task](../utility/manual-intervention.md)) in release pipelines or using a [Delay task](../utility/delay.md) in YAML pipeline before utilizing the promote/reject action of the task.
+
+- **Secret handling**: The **createSecret** action lets Docker registry secrets be created using Docker registry service connections. It also lets generic secrets be created using either plain-text variables or secret variables. Before deployment to the cluster, you can use the **secrets** input along with the **deploy** action to augment the input manifest files with the appropriate **imagePullSecrets** value.
+
+- **Bake manifest**: The **bake** action of the task allows for baking templates into Kubernetes manifest files. The action uses tools such as Helm, Compose, and kustomize. With baking, these Kubernetes manifest files are usable for deployments to the cluster.
+
+- **Deployment strategy**: Choosing the **canary** strategy with the **deploy** action leads to creation of workloads having names suffixed with "-baseline" and "-canary". The task supports two methods of traffic splitting:
+
+  - **Service Mesh Interface**: [Service Mesh Interface](https://smi-spec.io/) (SMI) abstraction allows configuration with service mesh providers like Linkerd and Istio. The Kubernetes Manifest task maps SMI TrafficSplit objects to the stable, baseline, and canary services during the life cycle of the deployment strategy.
+
+    Canary deployments that are based on a service mesh and use this task are more accurate. This accuracy comes because service mesh providers enable the granular percentage-based split of traffic. The service mesh uses the service registry and sidecar containers that are injected into pods. This injection occurs alongside application containers to achieve the granular traffic split.
+  
+  - **Kubernetes with no service mesh**: In the absence of a service mesh, you might not get the exact percentage split you want at the request level. But you can possibly do canary deployments by using baseline and canary variants next to the stable variant.
+
+    The service sends requests to pods of all three workload variants as the selector-label constraints are met. Kubernetes Manifest honors these requests when creating baseline and canary variants. This routing behavior achieves the intended effect of routing only a portion of total requests to the canary.
+
+  Compare the baseline and canary workloads by using either a [Manual Intervention task](../utility/manual-intervention.md) in release pipelines or a [Delay task](../utility/delay.md) in YAML pipelines. Do the comparison before using the promote or reject action of the task.
 
 ## Deploy action
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>deploy</b></td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to deploy to</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
+    <br/>
+    The namespace within the cluster to deploy to.</td>
   </tr>
   <tr>
-    <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
+    <td><b>manifests</b><br/>Manifests</td>
+    <td>(Required)<br/>
+    <br/>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
-    <td><code>containers</code><br/>Containers</td>
-    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files. This multiline input accepts specifying multiple artifact substitutions in newline separated form. For example - <br>containers: |<br>&nbsp&nbspcontosodemo.azurecr.io/foo:test1<br>&nbsp&nbspcontosodemo.azurecr.io/bar:test2<br>In this example, all references to contosodemo.azurecr.io/foo and contosodemo.azurecr.io/bar are searched for in the image field of the input manifest files. For the matches found, the tags test1 and test2 are substituted.</td>
+    <td><b>containers</b><br/>Containers</td>
+    <td>(Optional)<br/>
+    <br/>
+    The fully qualified URL of the image to be used for substitutions on the manifest files. This input accepts the specification of multiple artifact substitutions in newline-separated form. Here's an example:<br/>
+    <br/>
+    <code>containers: |</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/foo:test1</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/bar:test2</code><br/>
+    <br/>
+    In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For each match found, the tag <code>test1</code> or <code>test2</code> replaces the matched reference.</td>
   </tr>
   <tr>
-    <td><code>imagePullSecrets</code><br/>Image pull secrets</td>
-    <td>(Optional) Multiline input where each line contains the name of a docker-registry secret that has already been setup within the cluster. Each of these secret names are added under imagePullSecrets field for the workloads found in the input manifest files</td>
+    <td><b>imagePullSecrets</b><br/>Image pulls secrets</td>
+    <td>(Optional)<br/>
+    <br/>
+    Multiline input where each line contains the name of a Docker registry secret that has already been set up within the cluster. Each secret name is added under <b>imagePullSecrets</b> for the workloads that are found in the input manifest files.</td>
   </tr>
   <tr>
-    <td><code>strategy</code><br/>Strategy</td>
-    <td>(Optional) Deployment strategy to be used while applying manifest files on the cluster. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
+    <td><b>strategy</b><br/>Strategy</td>
+    <td>(Optional)<br/>
+    <br/>
+    The deployment strategy used while manifest files are applied on the cluster. Currently, <b>canary</b> is the only acceptable deployment strategy.</td>
   </tr>
   <tr>
-    <td><code>trafficSplitMethod</code><br/>Traffic split method</td>
-    <td>(Optional) Acceptable values: pod/smi; Default value: pod <br>SMI: Percentage traffic split is done at request level using service mesh. Service mesh has to be setup by cluster admin. Orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI is handled by this task. <br>Pod: Percentage split not possible at request level in the absence of service mesh. So the percentage input is used to calculate the replicas for baseline and canary as a percentage of replicas specified in the input manifests for the stable variant.</td>
+    <td><b>trafficSplitMethod</b><br/>Traffic split method</td>
+    <td>(Optional)<br/>
+    <br/>
+    Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/>
+    <br/>
+    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/)">TrafficSplit</a> objects.
+    <br/><br/>
+    For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of a service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary. The calculation is a percentage of replicas that are specified in the input manifests for the stable variant.</td>
   </tr>
   <tr>
-    <td><code>percentage</code><br/>Percentage</td>
-    <td>(Required if strategy ==  canary) Percentage used to compute the number of replicas of &#39;-baseline&#39; and &#39;-canary&#39; varaints of the workloads found in manifest files. For the specified percentage input, if (percentage * numberOfDesirerdReplicas)/100 is not a round number, the floor of this number is used while creating &#39;-baseline&#39; and &#39;-canary&#39;<br/>Example: If Deployment hello-world was found in the input manifest file with &#39;replicas: 4&#39; and if &#39;strategy: canary&#39; and &#39;percentage: 25&#39; are given as inputs to the task, then the Deployments hello-world-baseline and hello-world-canary are created with 1 replica each. The &#39;-baseline&#39; variant is created with the same image and tag as the stable version (4 replica variant prior to deployment) while the &#39;-canary&#39; variant is created with the image and tag corresponding to the new changes being deployed</td>
+    <td><b>percentage</b><br/>Percentage</td>
+    <td>(Required only if <b>strategy</b> is set to <b>canary</b>)<br/>
+    <br/>
+    The percentage that is used to compute the number of baseline-variant and canary-variant replicas of the workloads that are contained in manifest files.<br/>
+    <br/>
+    For the specified percentage input, calculate:<br/>
+    <br/>
+    (<i>percentage</i> <b>&times;</b> <i>number&nbsp;of&nbsp;replicas</i>) <b>/</b> 100<br/>
+    <br/>
+    If the result isn't an integer, the mathematical floor of the result is used when baseline and canary variants are created.<br/>
+    <br/>
+    For example, assume the deployment hello-world is in the input manifest file and that the following lines are in the task input:<br/>
+    <br/>
+    <code>replicas: 4</code><br/>
+    <code>strategy: canary</code><br/>
+    <code>percentage: 25</code><br/>
+    <br/>
+    In this case, the deployments hello-world-baseline and hello-world-canary are created with one replica each. The baseline variant is created with the same image and tag as the stable version, which is the four-replica variant before deployment. The canary variant is created with the image and tag corresponding to the newly deployed changes.</td>
   </tr>
   <tr>
-    <td><code>baselineAndCanaryReplicas</code><br/>Baseline and canary replicas</td>
-    <td>(Optional; Relevant only if trafficSplitMethod ==  smi) When trafficSplitMethod == smi, as percentage traffic split is controlled in the service mesh plane, the actual number of replicas for canary and baseline variants could be controlled independently of the traffic split. For example, assume that the input Deployment manifest desired 30 replicas to be used for stable and that the following inputs were specified for the task - <br>&nbsp;&nbsp;&nbsp;&nbsp;strategy: canary<br>&nbsp;&nbsp;&nbsp;&nbsp;trafficSplitMethod: smi<br>&nbsp;&nbsp;&nbsp;&nbsp;percentage: 20<br>&nbsp;&nbsp;&nbsp;&nbsp;baselineAndCanaryReplicas: 1<br> In this case, stable variant will receive 80% traffic while baseline and canary variants will receive 10% each (20% split equally between baseline and canary). However, instead of creating baseline and canary with 3 replicas, the explicit count of baseline and canary replicas is honored. That is, only 1 replica each is created for baseline and canary variants.</td>
+    <td><b>baselineAndCanaryReplicas</b><br/>Baseline and canary replicas</td>
+    <td>(Optional, and relevant only if <b>trafficSplitMethod</b> is set to <b>smi</b>)<br/>
+    <br/>
+    When you set <b>trafficSplitMethod</b> to <b>smi</b>, the percentage traffic split is controlled in the service mesh plane. But you can control the actual number of replicas for canary and baseline variants independently of the traffic split.<br/>
+    <br/>
+    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant. Also assume that you specify the following input for the task:<br/>
+    <br/>
+    <code>strategy: canary</code><br/>
+    <code>trafficSplitMethod: smi</code><br/>
+    <code>percentage: 20</code><br/>
+    <code>baselineAndCanaryReplicas: 1</code><br/>
+    <br/>
+    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But baseline and canary variants don't receive three replicas each. They instead receive the specified number of replicas, which means they each receive one replica.</td>
+  </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
   </tr>
 </table>
 
-
-Following is an example YAML snippet for deploying to a Kubernetes namespace using manifest files - 
+The following YAML code is an example of deploying to a Kubernetes namespace by using manifest files:
 
 ```YAML
 steps:
@@ -96,7 +168,9 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/deployment.yml|manifests/service.yml
+    manifests: |
+      manifests/deployment.yml
+      manifests/service.yml
     containers: |
       foo/demo:$(tagVariable1)
       bar/demo:$(tagVariable2)
@@ -105,93 +179,128 @@ steps:
       some-other-secret
 ```
 
-In the above example, the tasks tries to find matches for the image foobar/demo in the image fields of manifest files. If a match is found, the value of *tagVariable* is appended as tag to the image name. Note that it is also possible to specify digests in the containers input for artifact substitution.
+In the above example, the task tries to find matches for the images <code>foo/demo</code> and <code>bar/demo</code> in the image fields of manifest files. For each match found, the value of either <code>tagVariable1</code> or <code>tagVariable2</code> is appended as a tag to the image name. You can also specify digests in the containers input for artifact substitution.
 
 > [!NOTE]
-> While it is possible to author deploy, promote and reject actions with deployment strategy related inputs in YAML, support for ManualIntervention task is currently not in place for build pipeline. It is thus advisable to use the deployment strategy related actions and inputs in release pipelines in the following sequence:
-> 1. Deploy action with strategy: canary and percentage: $(someValue).
-> 1. ManualIntervention task so that one can pause the pipeline and compare the baseline with canary.
-> 1. Promote (run if ManualIntervention is resumed) and reject actions (run if ManualIntervention is rejected).
+> While you can author deploy, promote, and reject actions with YAML input related to deployment strategy, support for a Manual Intervention task is currently unavailable for build pipelines.
+>
+> For release pipelines, we advise you to use actions and input related to deployment strategy in the following sequence:
+> 1. A deploy action specified with <code>strategy: canary</code> and <code>percentage: $(<i>someValue</i>)</code>.
+> 1. A Manual Intervention task so that you can pause the pipeline and compare the baseline variant with the canary variant.
+> 1. A promote action that runs if a Manual Intervention task is resumed and a reject action that runs if a Manual Intervention task is rejected.
 
 ## Promote and reject actions
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>promote</b> or <b>reject</b></td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to deploy to</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required)<br/>
+    <br/>
+    The namespace within the cluster to deploy to.</td>
   </tr>
   <tr>
-    <td><code>manifests</code><br/>Manifests</td>
-    <td>(Required) Path to the manifest files to be used for deployment. [File matching patterns](../file-matching-patterns.md) is an acceptable value for this input</td>
+    <td><b>manifests</b><br/>Manifests</td>
+    <td>(Required)<br/>
+    <br/>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
-    <td><code>containers</code><br/>Containers</td>
-    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files<br/>Example: contosodemo.azurecr.io/helloworld:test</td>
+    <td><b>containers</b><br/>Containers</td>
+    <td>(Optional)<br/>
+    <br/>
+    The fully qualified resource URL of the image to be used for substitutions on the manifest files. The URL contosodemo.azurecr.io/helloworld:test is an example.</td>
   </tr>
   <tr>
-    <td><code>imagePullSecrets</code><br/>Image pull secrets</td>
-    <td>(Optional) Multiline input where each line contains the name of a docker-registry secret that has already been setup within the cluster. Each of these secret names are added under imagePullSecrets field for the workloads found in the input manifest files</td>
+    <td><b>imagePullSecrets</b><br/>Image pull secrets</td>
+    <td>(Optional)<br/>
+    <br/>
+    Multiline input where each line contains the name of a Docker registry secret that is already set up within the cluster. Each secret name is added under the <b>imagePullSecrets</b> field for the workloads that are found in the input manifest files.</td>
   </tr>
   <tr>
-    <td><code>strategy</code><br/>Strategy</td>
-    <td>(Optional) Deployment strategy that was used in the deploy action prior to promote/reject. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
+    <td><b>strategy</b><br/>Strategy</td>
+    <td>(Optional)<br/>
+    <br/>
+    The deployment strategy used in the deploy action before a promote action or reject action. Currently, <b>canary</b> is the only acceptable deployment strategy.</td>
   </tr>
 </table>
 
 ## Create secret action
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>createSecret</b></td>
   </tr>
   <tr>
-    <td><code>secretType</code><br/>Secret type</td>
-    <td>(Required if action == secret) Acceptable values: dockerRegistry/generic. Set dockerRegistry option for creating/updating imagePullSecret in cluster to facilitate image pull from a private container registry<br/>Default value: dockerRegistry</td>
+    <td><b>secretType</b><br/>Secret type</td>
+    <td>(Required)<br/>
+    <br/>
+    Acceptable values are <b>dockerRegistry</b> and <b>generic</b>. The default value is <b>dockerRegistry</b>.<br/>
+    <br/>
+    If you set <b>secretType</b> to <b>dockerRegistry</b>, the <b>imagePullSecrets</b> field is created or updated in a cluster to help image pull from a private container registry.</td>
   </tr>
   <tr>
-    <td><code>secretName</code><br/>Secret name</td>
-    <td>(Required) Name of the secret to be created/updated</td>
+    <td><b>secretName</b><br/>Secret name</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the secret to be created or updated.</td>
   </tr>
   <tr>
-    <td><code>dockerRegistryEndpoint</code><br/>Docker registry service connection</td>
-    <td>(Required if action == createSecret and secretType == dockerRegistry) The specified service connection&#39;s credentials are used to create a docker-registry secret within the cluster. This secret&#39;s name can then be referred to from manifest files under the imagePullSecrets field</td>
+    <td><b>dockerRegistryEndpoint</b><br/>Docker registry service connection</td>
+    <td>(Required only if <b>secretType</b> is set to <b>dockerRegistry</b>)<br/>
+    <br/>
+    The credentials of the specified service connection are used to create a Docker registry secret within the cluster. Manifest files under the <b>imagePullSecrets</b> field can then refer to this secret's name.</td>
   </tr>
   <tr>
-    <td><code>secretArguments</code><br/>Secret arguments</td>
-    <td>(Required if action == createSecret and secretType == generic) Multiline input accepting keys and literal values to be used for secret creation/updation. Example: --from-literal=key1=value1 
-    --from-literal=key2=&quot;top secret&quot;.&quot;
+    <td><b>secretArguments</b><br/>Secret arguments</td>
+    <td>(Required only if <b>secretType</b> is set to <b>generic</b>)<br/>
+    <br/>
+    Accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
+    <b>--from-literal=key1=value1</b>
+    <b>--from-literal=key2=&quot;top secret&quot;</b>
     </td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to create secret in</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required)<br/>
+    <br/>
+    The cluster namespace within which to create a secret.</td>
   </tr>
 </table>
 
-Following is an example YAML snippet for creation of docker registry secrets using [Docker Registry service connection](../../library/service-endpoints.md#sep-docreg)- 
+The following YAML code shows a sample creation of Docker registry secrets by using [Docker Registry service connection](../../library/service-endpoints.md#sep-docreg): 
 
 ```YAML
 steps:
@@ -206,7 +315,7 @@ steps:
     namespace: default
 ```
 
-Following is an example YAML snippet for creation of generic secrets - 
+This YAML code shows a sample creation of generic secrets:
 
 ```YAML
 steps:
@@ -222,48 +331,69 @@ steps:
 ```
 
 ## Bake action
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>bake</b></td>
   </tr>
   <tr>
-    <td><code>renderType</code><br/>Render engine</td>
-    <td>(Required if action == bake) Acceptable values: helm2/kompose/kustomize. Render type to be used for producing the manifest files<br/>Default value: helm2</td>
+    <td><b>renderType</b><br/>Render engine</td>
+    <td>(Required)<br/>
+    <br/>
+    The render type used to produce the manifest files.</br>
+    </br>
+    Acceptable values are <b>helm2</b>, <b>kompose</b>, and <b>kustomize</b>. The default value is <b>helm2</b>.</td>
   </tr>
   <tr>
-    <td><code>helmChart</code><br/>Helm chart</td>
-    <td>(Required if action == bake and renderType == helm2) Path to the helm chart to be used for bake</td>
+    <td><b>helmChart</b><br/>Helm chart</td>
+    <td>(Required only if <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <br/>
+    The path to the Helm chart used for baking.</td>
   </tr>
   <tr>
-    <td><code>overrideFiles</code><br/>Override files</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Multiline input accepting path to the override files that are to be used when baking manifest files from helm charts</td>
+    <td><b>overrideFiles</b><br/>Override files</td>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <br/>
+    Multiline input that accepts the path to the override files. The files are used when manifest files from Helm charts are baked.</td>
   </tr>
   <tr>
-    <td><code>overrides</code><br/>Override values</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --set switch when baking manifest files using helm. If multiple overriding key-value pairs are to be used, each key-value pair is to be specified in a separate line (use newline as delimiter between different key-value pairs). Key value pairs are specified in the format key:value</td>
+    <td><b>overrides</b><br/>Override values</td>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <br/>
+    Additional override values that are used via the command-line switch <b>--set</b> when manifest files using Helm are baked.<br/>
+    <br/>
+    Specify override values as key-value pairs in the format <i>key</i><b>:</b><i>value</i>. If you use multiple overriding key-value pairs, specify each key-value pair in a separate line. Use a newline character as the delimiter between different key-value pairs.</td>
   </tr>
   <tr>
-    <td><code>releaseName</code><br/>Release Name</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Name of the release used when baking Helm charts</td>
+    <td><b>releaseName</b><br/>Release name</td>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <br/>
+    The name of the release used when baking Helm charts.</td>
   </tr>
   <tr>
-    <td><code>kustomizationPath</code><br/>Kustomization path</td>
-    <td>(Optional; Relevant if action == bake and renderType == kustomize) Path to the directory containing kustomization.yaml</td>
+    <td><b>kustomizationPath</b><br/>Kustomization path</td>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>kustomize</b>)<br/>
+    <br/>
+    The path to the directory containing the file kustomization.yaml.</td>
   </tr>
   <tr>
-    <td><code>dockerComposeFile</code><br/>Path to docker compose file</td>
-    <td>(Optional; Relevant if action == bake and renderType == kompose) Path to docker compose file</td>
+    <td><b>dockerComposeFile</b><br/>Path to Docker compose file</td>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>kompose</b>)<br/>
+    <br/>
+    The path to the Docker compose file.</td>
   </tr>
 </table>
 
-Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step.
+The following YAML code is an example of baking manifest files from Helm charts. Note the usage of name input in the first task. This name is later referenced from the deploy step for specifying the path to the manifests that were produced by the bake step.
 
 ```YAML
 steps:
@@ -286,40 +416,60 @@ steps:
 ```
 
 ## Scale action
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>scale</b></td>
   </tr>
   <tr>
-    <td><code>kind</code><br/>Kind</td>
-    <td>(Required) Kind of Kubernetes object (ReplicaSet/StatefulSet/...) to be scaled up/down</td>
+    <td><b>kind</b><br/>Kind</td>
+    <td>(Required)<br/>
+    <br/>
+    The kind of Kubernetes object to be scaled up or down. Examples include ReplicaSet and StatefulSet.</td>
   </tr>
   <tr>
-    <td><code>name</code><br/>Name</td>
-    <td>(Required) Name of Kubernetes object to be scaled up/down</td>
+    <td><b>name</b><br/>Name</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the Kubernetes object to be scaled up or down.</td>
   </tr>
   <tr>
-    <td><code>replicas</code><br/>Replica count</td>
-    <td>(Required) Number of replicas to scale to</td>
+    <td><b>replicas</b><br/>Replica count</td>
+    <td>(Required)<br/>
+    <br/>
+    The number of replicas to scale to.</td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to deploy to</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required)<br/>
+    <br/>
+    The namespace within the cluster to deploy to.</td>
+  </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
   </tr>
 </table>
 
-Following is an example YAML snippet for scaling objects - 
+The following YAML code shows an example of scaling objects:
 
 ```YAML
 steps:
@@ -338,49 +488,81 @@ steps:
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>patch</b></td>
   </tr>
   <tr>
-    <td><code>resourceToPatch</code><br/>Resource to patch</td>
-    <td>(Required) Acceptablee values: file/name. Indicates whether a manifest file is to be used to identify the objects to be patched or if an individual object is to be identified by kind and name as the target for patch<br/>Default value: file</td>
+    <td><b>resourceToPatch</b><br/>Resource to patch</td>
+    <td>(Required)<br/>
+    <br/>
+    Indicates one of the following patch methods:
+    <ul>
+      <li>A manifest file identifies the objects to be patched.</li>
+      <li>An individual object is identified by kind and name as the patch target.</li>
+    </ul>
+    Acceptable values are <b>file</b> and <b>name</b>. The default value is <b>file</b>.</td>
   </tr>
   <tr>
-    <td><code>resourceFiletoPatch</code><br/>File path</td>
-    <td>(Required if action == patch and resourceToPatch == file) Path to the file used for patch</td>
+    <td><b>resourceFiletoPatch</b><br/>File path</td>
+    <td>(Required only if <b>action</b> is set to <b> patch</b> and <b>resourceToPatch</b> is set to <b>file</b>)<br/>
+    <br/>
+    The path to the file used for the patch.</td>
   </tr>
   <tr>
-    <td><code>kind</code><br/>Kind</td>
-    <td>(Required if action == patch and resourceToPatch == name) Kind of Kubernetes object (ReplicaSet/StatefulSet/...) </td>
+    <td><b>kind</b><br/>Kind</td>
+    <td>(Required only if <b>resourceToPatch</b> is set to <b>name</b>)<br/>
+    <br/>
+    The kind of the Kubernetes object. Examples include ReplicaSet and StatefulSet.</td>
   </tr>
   <tr>
-    <td><code>name</code><br/>Name</td>
-    <td>(Required if action == patch and resourceToPatch == name) Name of Kubernetes object to be patched</td>
+    <td><b>name</b><br/>Name</td>
+    <td>(Required only if <b>resourceToPatch</b> is set to <b>name</b>)<br/>
+    <br/>
+    The name of the Kubernetes object to be patched.</td>
   </tr>
   <tr>
-    <td><code>mergeStrategy</code><br/>Merge strategy</td>
-    <td>(Required) Acceptable values: json/merge/strategic. Strategy to be used for applying the patch. <br/>Default: strategic</td>
+    <td><b>mergeStrategy</b><br/>Merge strategy</td>
+    <td>(Required)<br/>
+    <br/>
+    The strategy to be used for applying the patch.</br>
+    </br>
+    Acceptable values are <b>json</b>, <b>merge</b>, and <b>strategic</b>. The default value is <b>strategic</b>.</td>
   </tr>
   <tr>
-    <td><code>patch</code><br/>Patch</td>
-    <td>(Required) Contents of the patch</td>
+    <td><b>patch</b><br/>Patch</td>
+    <td>(Required)<br/>
+    <br/>
+    The contents of the patch.</td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to deploy to</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required)<br/>
+    <br/>
+    The namespace within the cluster to deploy to.</td>
+  </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
   </tr>
 </table>
 
-Following is an example YAML snippet for patching an object - 
+The following YAML code shows an example of object patching:
 
 ```YAML
 steps:
@@ -397,43 +579,59 @@ steps:
 ```
 
 ## Delete action
+
 <table>
   <thead>
     <tr>
-      <th>Parameters</th>
+      <th>Parameter</th>
       <th>Description</th>
     </tr>
   </thead>
   <tr>
-    <td><code>action</code><br/>Action</td>
-    <td>(Required) Acceptable values: deploy/promote/reject/bake/scale/patch/delete</td>
+    <td><b>action</b><br/>Action</td>
+    <td>(Required)<br/>
+    <br/>
+    <b>delete</b></td>
   </tr>
   <tr>
-    <td><code>arguments</code><br/>Arguments</td>
-    <td>(Required) Arguments to be passed onto kubectl for deleting the necessary objects. For example - <br/> <code>arguments: deployment hello-world foo-bar</code></td>
+    <td><b>arguments</b><br/>Arguments</td>
+    <td>(Required)<br/>
+    <br/>
+    Arguments to be passed on to kubectl for deleting the necessary objects. An example is:<br/>
+    <code>arguments: deployment hello-world foo-bar</code></td>
   </tr>
   <tr>
-    <td><code>kubernetesServiceConnection</code><br/>Kubernetes service connection</td>
-    <td>(Required) Name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a></td>
+    <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
+    <td>(Required)<br/>
+    <br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
-    <td><code>namespace</code><br/>Namespace</td>
-    <td>(Required) Namespace within the cluster to deploy to</td>
+    <td><b>namespace</b><br/>Namespace</td>
+    <td>(Required)<br/>
+    <br/>
+    The namespace within the cluster to deploy to.</td>
   </tr>
 </table>
 
-Following is an example YAML snippet for deleting objects - 
+This YAML code shows a sample object deletion:
 
 ```YAML
 steps:
 - task: KubernetesManifest@0
   displayName: Delete
-  inputs: 
+  inputs:
     action: delete
     arguments: deployment expressapp
     kubernetesServiceConnection: someK8sSC
     namespace: default
 ```
+
+## Troubleshooting
+
+### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
+
+You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](../../agents/hosted.md#agent-ip-ranges)
 
 ## Open source
 

@@ -3,11 +3,7 @@ title: Branch strategically
 titleSuffix: Azure Repos
 description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch strategically
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Source code is an important asset in your development effort. But it can be a challenge to effectively manage and evolve source files when multiple developers work concurrently on file updates. You can use a version control system to store source code in shared repositories, to isolate parallel development efforts, to integrate code changes, and to recover previous file versions. A key element in version control is branching that enables simultaneous development. If you branch strategically, you can maintain the order and consistency of multiple versions of your software.
 
@@ -26,7 +22,7 @@ Team Foundation provides a flexible and reliable version control system. You can
 
 When you work with a version control system, you must consider how to set up a branch structure. You can create a branch by mirroring the source code file. Then you can change the branch without affecting the source. For example, as the branch structure in the following illustration shows, the MAIN branch contains completed functionality that has passed integration tests, and the DEVELOPMENT branch contains the code that is under construction. When a new functionality in the DEVELOPMENT branch is completed and can pass integration tests, you can promote the code from the DEVELOPMENT branch to the MAIN branch. This process is referred to as reverse integration. Conversely, if you merge the code from the MAIN branch to the DEVELOPMENT branch, the process is referred to as forward integration.
 
-![Main Branch](_img/branch-strategically/IC372280.png)   
+![Main Branch](media/branch-strategically/IC372280.png)   
    For more information about how to create and merge code branches, see the following page on the CodePlex Web site: [Team Foundation Server Branching Guide 2.0](https://go.microsoft.com/fwlink/?LinkId=178567).
 
 Branching and merging entail the following principles:
@@ -47,7 +43,7 @@ Team Foundation Build allows you to choose from several types of builds for your
 
 As shown in the following illustration, reverse integration and forward integration should occur at least when you complete a user story. Although each team might define completeness differently, completion of a user story generally means that you complete both the functionality and the corresponding unit tests. You can reverse integrate to the MAIN branch only after unit tests have verified the stability of the DEVELOPMENT branch.
 
-![Branch across two sprints](_img/branch-strategically/IC378600.png)   
+![Branch across two sprints](media/branch-strategically/IC378600.png)   
 If you have more than one work (DEVELOPMENT) branch, forward integration to all work branches should occur as soon as any branch integrates into the MAIN branch. Because the MAIN branch is kept stable, forward integration is safe. Conflicts or failures at the work branches might occur because you cannot guarantee that the work branches are stable.
 
 It is important that you resolve all conflicts as soon as possible. By using a gated check-in for the MAIN branch, you help make the reverse integration much easier because quality gates help avoid conflicts or errors in the MAIN branch. For more information, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
@@ -56,7 +52,7 @@ It is important that you resolve all conflicts as soon as possible. By using a g
 
 As the following illustration shows, you can check in changes to a work branch periodically to complete a user story. You can implement multiple user stories in the same branch at the same time. However, you can reverse integrate to the MAIN branch only when you complete all the in-progress work. It is recommended that you group user stories by similar size because you do not want a large user story to block the integration of many small ones. You can split the two sets of user stories into two branches.
 
-![Check-in Completes User story](_img/branch-strategically/IC378601.png)
+![Check-in Completes User story](media/branch-strategically/IC378601.png)
 
 ## When should the team add a branch?
 
@@ -74,8 +70,8 @@ You should not create a branching for each user story because it creates a high 
 
 Your team should be able to release code at the end of any sprint. By using Team Foundation Server, you can label a branch to take a snapshot of the code at a specific point in time. As the following illustration shows, you can label the MAIN branch for a release. This lets you return the branch to its state at this point.
 
-![Label a branch to take a snapshot of the code](_img/branch-strategically/IC372284.png)   
+![Label a branch to take a snapshot of the code](media/branch-strategically/IC372284.png)   
 Because you must implement updates on releases, creating a branch for a release helps your team continue to work independently on the next sprint without creating conflicts with future releases. The following illustration shows a branch that contains code for an update and that is reverse integrated into the MAIN branch after a release at the end of the second sprint.
 
-![Reverse integrate a branch that contains update](_img/branch-strategically/IC379434.png)   
+![Reverse integrate a branch that contains update](media/branch-strategically/IC379434.png)   
 When you create a branch for a release, you should create that branch from the MAIN branch, which is the most stable. If you branch for release from a work branch, it can cause integration challenges because the stability of work branches is not guaranteed.

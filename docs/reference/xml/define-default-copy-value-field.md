@@ -2,18 +2,18 @@
 title: Define default value or copy a value 
 titleSuffix: TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
+author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 04/05/2017
 ---
 
 # Define a default value or copy a value to a field
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 
 You can specify a default value for a field, or you can copy the value from another field or system-defined value.  Field defaults are rules that control how field values are automatically assigned. You can assign a field default by using one of the following elements: `COPY`, `DEFAULT`, and `SERVERDEFAULT`. You can specify these elements as child elements of the `FIELD` (Definition) element or the `FIELD` (Workflow) element.  

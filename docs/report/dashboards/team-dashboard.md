@@ -3,11 +3,9 @@ title: Team home page or dashboard
 titleSuffix: TFS
 description: View progress and gain quick access to code, builds, and work items from the team home page in Team Foundation Server (TFS)  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2015'
@@ -25,7 +23,7 @@ Teams can view the progress of work from the team home page. Team administrators
 
 From the web portal, you can view pinned items on the home page, including flat-list query charts.
 
-![Team dashboard](_img/on-premises-tfs-team-dashboard.png)
+![Team dashboard](media/on-premises-tfs-team-dashboard.png)
 
 If you need to add a team first, see [Add teams](../../organizations/settings/add-teams.md).
 
@@ -37,13 +35,13 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 2.	Pin a work item query from its context menu.
 
-	![Pin query from context menu](_img/tfs-pin-to-homepage.png)  
+	![Pin query from context menu](media/tfs-pin-to-homepage.png)  
 
 	To add a source control folder or a build pipeline, open the corresponding page and access the pin feature in the same way.    
 
 3.	To pin a chart, go to the query's Charts page and pin it to your selected dashboard or the team homepage.  
 
-	![Chart context menu](_img/tfs-pin-to-homepage.png)
+	![Chart context menu](media/tfs-pin-to-homepage.png)
 
 4.	Drag tiles to reorder their sequence on the dashboard.    
 
@@ -55,16 +53,16 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 Choose the ellipses for any tile to remove it from a dashboard. 
 
-![From a dashboard tile, choose the tile ellipses and select remove]](_img/add-a-dashboard-remove-tile.png)
+![From a dashboard tile, choose the tile ellipses and select remove]](media/add-a-dashboard-remove-tile.png)
 
 Either choose the context menu for the item that you want to remove and select Unpin from the home page, or drag it from the Team favorites section.  
 
-![Unpin an item from the team homepage](_img/tfs-unpin-from-homepage.png)   
+![Unpin an item from the team homepage](media/tfs-unpin-from-homepage.png)   
 
 ## Related notes
 
 - [Define queries](../../boards/queries/using-queries.md) 
-- [Define builds](../../pipelines/overview.md) 
+- [Define builds](../../pipelines/get-started/what-is-azure-pipelines.md) 
 - [Test charts](../../test/track-test-status.md) 
 
 
@@ -74,4 +72,4 @@ Either choose the context menu for the item that you want to remove and select U
  
 You navigate to your team context from the top navigation bar.   
 
-![Choose another team from the project menu](_img/switch-team-context.png)  
+![Choose another team from the project menu](media/switch-team-context.png)

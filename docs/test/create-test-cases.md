@@ -2,10 +2,8 @@
 title: Create manual tests
 description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Create manual test cases
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
@@ -24,7 +22,7 @@ the tests.
 
 [What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 > [!NOTE]
 > Stakeholders cannot create or manage test cases. You must have at least Basic access.
@@ -39,7 +37,7 @@ the tests.
 1. Select a requirement-based test suite. In the right-hand pane, choose **+** (New)
    and then choose **New test case**.
 
-   ![Selecting the test suite for a backlog item and adding a new test case](_img/create-test-cases/CreateTest_1.png)
+   ![Selecting the test suite for a backlog item and adding a new test case](media/create-test-cases/CreateTest_1.png)
 
    > The [test suite](create-a-test-plan.md) shown here was created from a User Story work item in the team's backlog board. 
    > When you add a test case to this kind of suite, the test case is automatically linked to the backlog item.
@@ -51,7 +49,7 @@ the tests.
    You can add attachments to a step if you want. Repeat until you have added
    all the steps for the test. Now you've created a test case that you can run.
 
-   ![Creating the steps for a new manual test case](_img/create-test-cases/CreateTest_3.png)
+   ![Creating the steps for a new manual test case](media/create-test-cases/CreateTest_3.png)
 
    [How can I find an existing test case within a test plan?](create-a-test-plan.md#findplan)
    
@@ -69,21 +67,21 @@ the tests.
    open the shortcut menu (choose the "..." ellipses or right-click) 
    and select the tester you want to run the tests.
 
-   ![Reassigning tests to a different tester](_img/create-test-cases/AssignTester.png)
+   ![Reassigning tests to a different tester](media/create-test-cases/AssignTester.png)
 
    Or, you can assign all the test cases in a test suite to multiple testers. 
    This is useful for acceptance testing. Open the shortcut menu for the test plan
    and choose **Assign testers to run all tests**. 
    
-   ![Assigning testers to run all tests](_img/create-test-cases/AssignMultipleTesters.png)
+   ![Assigning testers to run all tests](media/create-test-cases/AssignMultipleTesters.png)
 
 1. Add or remove testers from the list. After you select the testers, tick the **Send email**
    checkbox and edit the message as required so they know that tests are ready for them to run.
 
-   ![Send emails to testers](_img/create-test-cases/AssignMultipleTestersEmail.png)
+   ![Send emails to testers](media/create-test-cases/AssignMultipleTestersEmail.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
-   Testers need just [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
+   Testers need just [Basic access](../organizations/security/access-levels.md)
    to run tests from Azure Test Plans.
 
 ## See also

@@ -3,12 +3,7 @@ title: Migrate from Travis to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/20/2018
 monikerRange: azure-devops
 ---
@@ -117,7 +112,7 @@ dependency installation step or execution inside a docker container:
 | `julia`       | `sudo apt-get install julia`<br>`julia -e "using Pkg; Pkg.build(); end"`<br>`julia --check-bounds=yes -e "Pkg; Pkg.test(coverage=true); end"` |
 | `nix`         | `docker run -v $(pwd):/src -w /src nixos/nix nix-build`
 | `perl6`       | `sudo apt-get install rakudo`<br>`PERL6LIB=lib prove -v -r --exec=perl6 t/`
-| `rust`        | `sudo apt-get install rustc`<br>`cargo build --verbose`<br>`cargo test --verbose` |
+| `rust`        | `curl -sSf https://sh.rustup.rs | sh -s -- -y`<br>`cargo build --verbose`<br>`cargo test --verbose` |
 | `scala`       | <code>echo "deb https://dl.bintray.com/sbt/debian /" &#124; sudo tee -a /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
 | `smalltalk`   | `docker run -v $(pwd):/src -w /src hpiswa/smalltalkci smalltalkci` |
 
@@ -196,7 +191,7 @@ the completion of one step, and then fan back in with a single step that runs af
 This model gives you options to define complex workflows if necessary. For now, here's
 a simple example:
 
-![Simple Parallel Execution Illustration](_img/parallel-travis.png)
+![Simple Parallel Execution Illustration](media/parallel-travis.png)
 
 For example, to run a build script, then upon its completion run both the
 unit tests and the integration tests in parallel, and once all tests have
@@ -251,7 +246,7 @@ and the resources that it produces when it's done.
 For example, a team has a set of fast-running unit tests, and another set of and slower integration tests. The team wants to begin creating the .ZIP file for a release as soon as the unit are completed because they provide high confidence 
 that the build will provide a good package. But before they deploy to pre-production, they want to wait until all tests have passed:
 
-![Advanced Parallel Execution Illustration](_img/parallel-azurepipelines.png)
+![Advanced Parallel Execution Illustration](media/parallel-azurepipelines.png)
 
 In Azure Pipelines they can do it this way:
 
@@ -317,7 +312,7 @@ script: echo $MY_ENVIRONMENT_VARIABLE
 **azure-pipelines.yml**
 ``` yaml
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 strategy:
   matrix:
     set_env_to_one:
@@ -400,7 +395,7 @@ strategy:
     linux:
       imageName: 'ubuntu-16.04'
     mac:
-      imageName: 'macos-10.13'
+      imageName: 'macos-10.14'
     windows:
       imageName: 'vs2017-win2016'
 
@@ -447,7 +442,7 @@ You can even configure jobs to always run,
 regardless of the success of other jobs.
 
 For example, if you want to run a script when the build fails, but only 
-if it is running as a build on the master branch:
+if it is running as a build on the main branch:
 
 **azure-pipelines.yml**
 ``` yaml
@@ -457,7 +452,7 @@ jobs:
   - script: ./build.sh
 - job: alert
   dependsOn: build
-  condition: and(failed(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(failed(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   steps:
   - script: ./sound_the_alarms.sh
 ```
@@ -479,14 +474,14 @@ environment variables in Travis and their analog in Azure Pipelines:
 | `TRAVIS_BUILD_DIR`           | `BUILD_SOURCESDIRECTORY`      | The location of your checked out source and the default working directory. |
 | `TRAVIS_BUILD_NUMBER`        | `BUILD_BUILDID`               | A unique numeric identifier for the current build invocation. |
 | `TRAVIS_COMMIT`              | **CI builds**:<br>`BUILD_SOURCEVERSION` | The commit ID currently being built. |
-| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into master; this command will identify the pull request commit itself. |
+| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
 | `TRAVIS_COMMIT_MESSAGE`      | `BUILD_SOURCEVERSIONMESSAGE`  | The log message of the commit being built. |
 | `TRAVIS_EVENT_TYPE`          | `BUILD_REASON` | The reason the build was queued; a map of values is in the "build reasons" table below. |
 | `TRAVIS_JOB_NAME`            | `AGENT_JOBNAME`                | The name of the current job, if specified. |
 | `TRAVIS_OS_NAME`             | `AGENT_OS`                     | The operating system that the job is running on; a map of values is in the "operating systems" table below. |
 | `TRAVIS_PULL_REQUEST`        | **Azure Repos**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTID`<br><br>**GitHub**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTNUMBER` | The pull request number that triggered this build. (For GitHub builds, this is a unique identifier that is _not_ the pull request number.) |
 | `TRAVIS_PULL_REQUEST_BRANCH` | `SYSTEM_PULLREQUEST_SOURCEBRANCH` | The name of the branch where the pull request originated. |
-| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into master; this command will identify the pull request commit itself. |
+| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
 | `TRAVIS_PULL_REQUEST_SLUG`   |                                | The name of the forked repository, if the pull request originated in a fork.  There's no analog to this in Azure Pipelines. |
 | `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORY_NAME`         | The name of the repository that this build is configured for. |
 | `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps have succeeded (returned `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
@@ -529,14 +524,14 @@ specific branches.  In Azure Pipelines, the list of branches to build
 should be listed in the `include` list and the branches _not_ to build
 should be listed in the `exclude list.  Wildcards are supported.
 
-For example, to build only the master branch and those that begin with
+For example, to build only the main branch and those that begin with
 the word "releases":
 
 **.travis.yml**
 ``` yaml
 branches:
   only:
-  - master
+  - main
   - /^releases.*/
 ```
 
@@ -545,7 +540,7 @@ branches:
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases*
 ```
 

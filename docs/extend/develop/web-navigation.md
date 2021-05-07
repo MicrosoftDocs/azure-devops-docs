@@ -1,22 +1,22 @@
-﻿---
-ms.prod: devops
+---
 ms.technology: devops-ecosystem
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast
 ms.date: 10/02/2019
 ---
 
-# Guidance for extension developers impacted by vertical navigation
+# Vertical navigation guidance
+
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Team context
 
@@ -80,13 +80,13 @@ function getCurrentTeam() {
 
 ### Actions extensions that are in team aware hubs like Backlogs and Dashboard
 
-Your extension can check the *actionContext* object passed to the callback invoked when a user clicks the contributed menu item. Example shows reading team from the *actionContext*.
+Your extension can check the *actionContext* object passed to the callback invoked when a user selects the contributed menu item. Example shows reading team from the *actionContext*.
 
 ```javascript
 var menuContributionHandler = (function () {
         "use strict";
         return {
-            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // This is a callback that gets invoked when a user selects the newly contributed menu item
             // The actionContext parameter contains team information.
             execute: function (actionContext) {
                 if("team" in actionContext) {
@@ -107,7 +107,7 @@ To set an icon for your hub:
 
 1. Set the `iconAsset` property of the hub contribution to the fully-qualified asset identifier, which follows the pattern: `{publisher-id}.{extension-id}/{asset-path}`.
 
-2. Add an entry for this asset in the `_shareData` contribution property.
+2. Add an entry for this asset in the `includesata` contribution property.
 
 3. Package the asset with your extension by listing it in the `files` property at the root of your manifest.
 
@@ -128,7 +128,7 @@ For example:
             "properties": {
                 "name": "My Hub",
                 "iconAsset": "my-publisher.my-extension/images/fabrikam-logo.png",
-                "_sharedData": {
+                "includesData": {
                     "assets": [
                         "my-publisher.my-extension/images/fabrikam-logo.png"
                     ]

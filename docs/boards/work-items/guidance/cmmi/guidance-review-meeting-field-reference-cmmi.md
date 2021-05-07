@@ -1,12 +1,10 @@
 ---
 title: CMMI Review meeting field reference 
 titleSuffix: Azure Boards
-description: Definition of fields used to track review meetings in the CMMI process for Azure Boards, Azure DevOps, & Team Foundation Server
-ms.prod: devops
+description: Definition of fields used to track review meetings in the CMMI process for Azure Boards, Azure DevOps 
 ms.technology: devops-agile
 ms.assetid: 35b045a4-1332-499d-97a6-f7797033990d
-ms.topic: reference
-ms.manager: mijacobs
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 01/20/2017
 
 # Review meeting field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 The following fields track information and changes for review meetings. Your team can specify this kind of information by using the Review type of work item that is provided with the [CMMI process](../cmmi-process.md).  
   

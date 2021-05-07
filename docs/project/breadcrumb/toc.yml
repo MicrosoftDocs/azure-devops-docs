@@ -5,3 +5,16 @@
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/wiki/index
+    - name: Public projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/organizations/public/about-public-projects
+    - name: Search across Azure DevOps
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/overview
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index

@@ -1,14 +1,11 @@
 ---
 title: Burndown and Burn Rate Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determine the rate of team progress by reviewing the Burndown and Burn Rate report - Team Foundation Server 
 ms.assetid: 68941ffa-eb19-4d52-9418-7de1b6aca335
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 
@@ -16,14 +13,14 @@ ms.date: 10/17/2017
 
 # Burndown and Burn Rate Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After a team has worked on one or more iterations, also known as sprints, you can determine the rate of team progress by reviewing the Burndown and Burn Rate report. Burndown shows the trend of completed and remaining work over a specified time period. Burn rate provides calculations of the completed and required rate of work based on the specified time period. In addition, a chart shows the amount of completed and remaining work that is assigned to team members. You can view the Burndown and Burn Rate report based on hours worked or number of work items that have been resolved and closed.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   Is the team likely to finish the iteration on time?<br />-   Will the team complete the required work, based on the current burn rate?<br />-   How much work does each team member have?  
   
@@ -44,13 +41,13 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
   You can use the Burndown and Burn Rate report to understand how well the team is progressing and whether the team or a team member is over-allocated. The upper section of the report displays a version of the Remaining Work report, as the following illustration shows.  
   
-  ![Example Burndown and Velocity report &#45; bottom](_img/procguid_burndownbottom.png "ProcGuid_BurndownBottom")  
+  ![Example Burndown and Velocity report &#45; bottom](media/procguid_burndownbottom.png "ProcGuid_BurndownBottom")  
   
   In addition, you can display trend lines that predict when work will be completed. The ideal trend line calculates a slope or trajectory for when work will be completed based on the amount of work remaining and the end date that you define for the report. The actual trend line is calculated based on the team's actual progress in completing work and closing work items.  
   
   The lower section of the report presents a calculation of the team's burn rate, both actual and required, and a breakdown of work assignments to each team member, as the following illustration shows:  
   
-  ![Example Burndown and Velocity report &#45; top](_img/procguid_part2burndown.png "ProcGuid_Part2Burndown")  
+  ![Example Burndown and Velocity report &#45; top](media/procguid_part2burndown.png "ProcGuid_Part2Burndown")  
   
 ### Burndown  
  Burndown shows the trend of how much work has been completed and how much work remains across time in an iteration or a release. The source of the raw data is either work hours or work remaining, which is tracked on the vertical axis, and the time period (days), which is tracked on the horizontal axis.  
@@ -133,7 +130,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
 ### Healthy Versions of the Report  
  A healthy Burndown and Burn Rate report shows that the team is making steady progress toward finishing the work. The actual and ideal trend lines are close together.  
   
- ![Healthy version of Burndown report](_img/procguid_healthyburndown.png "ProcGuid_HealthyBurndown")  
+ ![Healthy version of Burndown report](media/procguid_healthyburndown.png "ProcGuid_HealthyBurndown")  
   
 ### Unhealthy Versions of the Report  
  An unhealthy Burndown and Burn Rate report will show one or more of the following indications:  
@@ -144,7 +141,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
      Scope creep occurs when team members add features to an iteration after it is planned. The following illustration shows an iteration in which a team is taking on more work over time and making minimal progress on the work that had already been assigned.  
   
-     ![Burndown showing scope creep](_img/procguid_scopecreep.png "ProcGuid_ScopeCreep")  
+     ![Burndown showing scope creep](media/procguid_scopecreep.png "ProcGuid_ScopeCreep")  
   
 ##  <a name="Changing"></a> Filtering the Report and Changing the Display  
  You can filter the Burndown and Burn Rate report or change its display in the following ways:  
@@ -157,7 +154,7 @@ After a team has worked on one or more iterations, also known as sprints, you ca
   
   The following illustration shows the available filters and display options:  
   
-  ![Filters for the Burndown and Velocity report](_img/procguid_burndown.png "ProcGuid_Burndown")  
+  ![Filters for the Burndown and Velocity report](media/procguid_burndown.png "ProcGuid_Burndown")  
   
 #### To filter the set of work items that are counted in the report  
   

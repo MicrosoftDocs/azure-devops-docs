@@ -3,18 +3,16 @@ title: Feedback index to content
 titleSuffix: Azure DevOps 
 description: Index to topics for requesting and providing feedback in Azure DevOps & Team Foundation Server  
 ms.technology: devops-collab
-ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 09/19/2017
 ---
 
-# Feedback 
+# Request feedback 
  
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You can request feedback using one of two tools, through the Test & Feedback extension or through the Request feedback link you access from a dashboard. 
 
@@ -24,14 +22,14 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 
 ::: moniker-end  
 
-To provide feedback about Azure DevOps Services or TFS, see [Provide product and content feedback](/azure/devops/user-guide/provide-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json).
+To provide feedback about Azure DevOps Services or TFS, see [Provide product and content feedback](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fproject%252ffeedback%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
 
 
 ## How-to Guides
 
-- [Request feedback (Test & Feedback extension)](/azure/devops/test/request-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json )
+- [Request feedback (Test & Feedback extension)](../../test/request-stakeholder-feedback.md?bc=%252fazure%252fdevops%252fproject%252ffeedback%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json)
 - [Get feedback (Work tracking)](get-feedback.md) 
-- [Provide feedback with the Test & Feedback extension](/azure/devops/test/provide-stakeholder-feedback?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json )  
+- [Provide feedback with the Test & Feedback extension](../../test/provide-stakeholder-feedback.md?bc=%252fazure%252fdevops%252fproject%252ffeedback%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json)  
 - [Provide feedback with the Feedback client](give-feedback.md )  
 - [Set feedback permissions](give-permissions-feedback.md)  
 
@@ -42,5 +40,4 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 
 ## Resources 
 
-- [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)  
-
+- [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)

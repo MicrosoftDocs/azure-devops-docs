@@ -1,28 +1,25 @@
 ---
 title: Build and push to Azure Container Registry
 description: Build and push images to Azure Container Registry
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build and push to Azure Container Registry
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 In this step-by-step guide, you'll learn how to create a pipeline that continuously builds a repository that contains a Dockerfile. Every time you change your code, the images are automatically pushed to Azure Container Registry.
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/prerequisites.md)]
+[!INCLUDE [include](../../includes/prerequisites.md)]
 
-[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../../includes/azure-prerequisites.md)]
 
 ## Get the code
 
@@ -34,7 +31,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
 ## Create a container registry
 
-[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
 
 ```azurecli-interactive
 # Create a resource group
@@ -44,19 +41,24 @@ az group create --name myapp-rg --location eastus
 az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
 ```
 
+You can also use the web UI to create your Azure Container Registry. See the [Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) quickstart for a walkthrough.
+
+> [!NOTE]
+> To deploy a Docker image from an Azure Container Registry, you must enable the admin user account. To learn how, see [Authenticate with an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-authentication#admin-account).
+
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../_shared/create-project.md)]
+[!INCLUDE [include](../includes/create-project.md)]
 
 ## Create the pipeline
 
 ### Connect and select repository
 
-[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Docker**.
+When the **Configure** tab appears, select **Docker - Build and push an image to Azure Container Registry**.
 
 1. If you are prompted, select the subscription in which you created your registry.
 
@@ -105,7 +107,7 @@ The build stage uses the _Docker task_ to build and push the image to the contai
           $(tag)
 ```
 
-[!INCLUDE [include](../_shared/clean-up-resources.md)]
+[!INCLUDE [include](../includes/clean-up-resources.md)]
 
 ## Learn more
 

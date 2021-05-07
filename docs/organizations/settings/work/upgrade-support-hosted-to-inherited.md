@@ -2,11 +2,9 @@
 title: Customizations when cloning a Hosted XML process 
 titleSuffix: Azure DevOps Services
 description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.date: 05/30/2018
 
 # Supported operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
@@ -52,7 +50,7 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 > [!div class="mx-tdCol2BreakAll"]
 > |Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
 > |------|---------|
-> | Header area customization  | Any customizations made to the header area within the work item form are ignored. The header area, as shown in the following image, is managed by the system. Any customizations made within the **SystemControls** section of the **WebLayout** are ignored. <br/><br/>![Work item web form, Header area](_img/migration/header-area.png) |
+> | Header area customization  | Any customizations made to the header area within the work item form are ignored. The header area, as shown in the following image, is managed by the system. Any customizations made within the **SystemControls** section of the **WebLayout** are ignored. <br/><br/>![Work item web form, Header area](media/migration/header-area.png) |
 > | Four column layout  and size | The inherited process supports a [a fixed relative sizing of three columns](inheritance-process-model.md#resizing) to a WIT layout, while the Hosted XML process supports up to four columns and allows you to set the first column as equal sized with the rest of the columns.  |
 > | Hide Details page in layout  | The inherited process ignores any customizations made to hide the Details page in a WIT layout. | 
 > | Workflow restriction | The inherited process follows an any-to-any workflow state transition. Any customizations that restrict the transition from one workflow state to another are ignored.  |
@@ -65,7 +63,7 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 > | Identity fields with string values | Lists that contain an identity value in ALLOWEDVALUES or PROHIBITEDVALUES are automatically converted into the Identity field type. Any other string values in the list are ignored. | 
 
 
-[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](../includes/post-upgrade-steps.md)]
 
 
 ## Related articles

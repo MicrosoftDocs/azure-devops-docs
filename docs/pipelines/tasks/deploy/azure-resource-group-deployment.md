@@ -2,14 +2,12 @@
 title: Azure Resource Group Deployment task
 description: Deploy, start, stop, or delete Azure Resource Groups
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 94A74903-F93F-4075-884F-DC11F34058B4
 ms.manager: dastahel
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 02/10/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,58 +15,90 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy, start, stop, and delete Azure Resource Groups.
+Use this task to deploy, start, stop, and delete Azure Resource Groups.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.md)]
+[!INCLUDE [temp](../includes/yaml/AzureResourceGroupDeploymentV2.md)]
 
 ::: moniker-end
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Azure subscription</td><td>(Required) Select the Azure Resource Manager subscription for the deployment.</td></tr>
-<tr><td>Action</td><td>(Required) Action to be performed on the Azure resources or resource group.</td></tr>
-<tr><td>Resource group</td><td>(Required) Provide the name of a resource group.</td></tr>
-<tr><td>Location</td><td>(Required) Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored.</td></tr>
-<tr><td>Template location</td><td>(Required) Select either "Linked artifact" or "URL of the file"<br/><br/>By default, "Linked artifact" is used.</td></tr>
-<tr><td>Template link</td><td>(Required) Specify the URL of the template file. Example: <a href="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" data-raw-source="[https://raw.githubusercontent.com/Azure/...](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json)">https://raw.githubusercontent.com/Azure/...</a> 
+|Argument|Description|
+|--- |--- |
+|`ConnectedServiceName` <br/>Azure subscription|(Required) Select the Azure Resource Manager subscription for the deployment.<br/>Argument aliases: `azureSubscription`|
+|`action` <br/> Action|(Required) Action to be performed on the Azure resources or resource group.<br/>Default value: `Create Or Update Resource Group`|
+|`resourceGroupName`<br/>Resource group|(Required) Provide the name of a resource group.|
+|`location` <br/> Location|(Required) Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored.|
+|`templateLocation` <br/> Template location|(Required) Select either **Linked artifact** or **URL of the file**.<br/>Default value: `Linked artifact`|
+|`csmFileLink`<br/>Template link|(Required) Specify the URL of the template file. <br/> **Example:** [https://raw.githubusercontent.com/Azure/...](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json) <br/> To deploy a template stored in a private storage account, retrieve and include the shared access signature (SAS) token in the URL of the template. <br/>**Example**: **<blob_storage_url>/template.json?<SAStoken>**. <br/> To upload a template file (or a linked template) to a storage account and generate a SAS token, you could use [Azure file copy](https://aka.ms/azurefilecopyreadme) task or follow the steps using [PowerShell](/azure/azure-resource-manager/templates/deploy-powershell) or [Azure CLI](https://go.microsoft.com/fwlink/?linkid=836911).<br/>To  view the template parameters in a grid, click on **...** next to Override template parameters text box. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to [this](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services#understanding-cors-requests) to enable CORS. |
+|`csmParametersFileLink`<br/>Template parameters link|(Optional) Specify the URL of the parameters file. <br/> **Example**: https://raw.githubusercontent.com/Azure/... <br/>To use a file stored in a private storage account, retrieve and include the shared access signature (SAS) token in the URL of the template. <br/> **Example:** **<blob_storage_url>/template.json?<SAStoken>**. <br/>To upload a parameters file to a storage account and generate a SAS token, you could use Azure file copy task or follow the steps using PowerShell or Azure CLI. <br/>To  view the template parameters in a grid, click on **...** next to Override template parameters text box. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to this to enable CORS. |
+|`csmFile`<br/>Template|(Required) Specify the path or a pattern pointing to the Azure Resource Manager template. For more information about the templates see https://aka.ms/azuretemplates. To get started immediately use template https://aka.ms/sampletemplate. |
+|`csmParametersFile`<br/>Template parameters|(Optional) Specify the path or a pattern pointing for the parameters file for the Azure Resource Manager template.|
+|`overrideParameters`<br/>Override template parameters|(Optional) To view the template parameters in a grid, click on **...** next to Override Parameters textbox. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to this to enable CORS. Or type the template parameters to override in the textbox. <br/>**Example**: **-storageName fabrikam -adminUsername $(vmusername) -adminPassword $(password) -azureKeyVaultName $(fabrikamFibre)**.<br/>If the parameter value you're using has multiple words, enclose them in quotes, even if you're passing them using variables. <br/>**For example**, **-name "parameter value" -name2 "$(var)"**. <br/>To override object type parameters use stringified JSON objects. <br/>**For example**, **-options ["option1"] -map {"key1": "value1" }**.|
+|`deploymentMode`<br/>Deployment mode|(Required) Incremental mode handles deployments as incremental updates to the resource group. It leaves unchanged resources that exist in the resource group but are not specified in the template. Complete mode deletes resources that are not in your template. Validate mode enables you to find problems with the template before creating actual resources. Note that this mode always creates a resource group, even if no resources are deployed. <br/>Default value: `Incremental`|
+|`enableDeploymentPrerequisites`<br/>Enable prerequisites|(Optional) These options would be applicable only when the Resource group contains virtual machines. Choosing Deployment Group option would configure Deployment Group agent on each of the virtual machines. Selecting WinRM option configures Windows Remote Management (WinRM) listener over HTTPS protocol on port 5986, using a self-signed certificate. This configuration is required for performing deployment operation on Azure machines. If the target Virtual Machines are backed by a Load balancer, ensure Inbound NAT rules are configured for target port (5986). <br/>Default value: `None`|
+|`deploymentGroupEndpoint`<br/>Azure Pipelines service connection|(Required) Specify the service connection to connect to an Azure DevOps organization or collection for agent registration.<br><br>You can create a service connection using **+New**, and select **Token-based authentication**. You need a [personal access token (PAT)](/vsts/accounts/use-personal-access-tokens-to-authenticate) to set up a service connection. <br/> ​Click **Manage** to update the service connection details. <br/>Argument aliases: `teamServicesConnection`|
+|`project`<br/>Team project|(Required) Specify the Team project which has the Deployment Group defined in it. <br/>Argument aliases: `teamProject`|
+|`deploymentGroupName`<br/>Deployment Group|(Required) Specify the Deployment Group against which the Agent(s) will be registered. For more guidance, refer to [Deployment Groups](../../release/deployment-groups/index.md).|
+|`copyAzureVMTags`<br/>Copy Azure VM tags to agents|(Optional) Choose if the tags configured on the Azure VM need to be copied to the corresponding Deployment Group agent. By default all Azure tags will be copied following the format **Key: Value**. <br/>**Example**: An Azure Tag **"Role : Web"** would be copied  as-is to the Agent machine. For more information on how tag Azure resources refer to the [link](/azure/azure-resource-manager/resource-group-using-tags).|
+|`runAgentServiceAsUser`<br/>Run agent service as a user| (Optional) Decide whether to run the agent service as a user other than the default. The default user is **NT AUTHORITY\\\SYSTEM** in Windows and **root** in Linux. |
+|`userName`<br/>User name| (Required) The username to run the agent service on the virtual machines. <br>For domain users, please enter values as **domain\\\username** or **username\@domain.com**. <br/>For local users, please enter just the user name. <br/>It is assumed that the same domain user or a local user with the same name, respectively, is present on all the virtual machines in the resource group.|
+| `password`<br/>Password| The password for the user to run the agent service on the Windows VMs. <br>It is assumed that the password is same for the specified user on all the VMs. <br>It can accept variable defined in build or release pipelines as **$(passwordVariable)**. You may mark variable as **secret** to secure it. <br>For linux VMs, a password is not required and will be ignored.|
+|`outputVariable`<br/>VM details for WinRM|(Optional) Provide a name for the variable for the resource group. The variable can be used as **$(variableName)** to refer to the resource group in subsequent tasks like in the PowerShell on Target Machines task for deploying applications. Valid only when the selected action is **Create, Update** or **Select**, and required when an existing resource group is selected.|
+|`deploymentName`<br/>Deployment name| (Optional) Specifies the name of the resource group deployment to create|
+|`deploymentOutputs`<br/>Deployment outputs|(Optional) Provide a name for the variable for the output variable which will contain the outputs section of the current deployment object in string format. You can use the **ConvertFrom-Json** PowerShell cmdlet to parse the JSON object and access the individual output values.|
+|`addSpnToEnvironment`<br/>Access service principal details in override parameters| Adds service principal ID and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: **$servicePrincipalId** and **$servicePrincipalKey** in your override parameters like **-key $servicePrincipalKey**|
 
-To deploy a template stored in a private storage account, retrieve and include the shared access signature (SAS) token in the URL of the template. Example: <code>&lt;blob_storage_url&gt;/template.json?&lt;SAStoken&gt;</code> To upload a template file (or a linked template) to a storage account and generate a SAS token, you could use <a href="https://aka.ms/azurefilecopyreadme" data-raw-source="[Azure file copy](https://aka.ms/azurefilecopyreadme)">Azure file copy</a> task or follow the steps using <a href="https://go.microsoft.com/fwlink/?linkid=838080" data-raw-source="[PowerShell](https://go.microsoft.com/fwlink/?linkid=838080)">PowerShell</a> or <a href="https://go.microsoft.com/fwlink/?linkid=836911" data-raw-source="[Azure CLI](https://go.microsoft.com/fwlink/?linkid=836911)">Azure CLI</a>.
+## Troubleshooting
 
-To  view the template parameters in a grid, click on <strong>...</strong> next to Override template parameters text box. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to <a href="/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests" data-raw-source="[this](/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests)">this</a> to enable CORS.</td></tr>
-<tr><td>Template parameters link</td><td>(Optional) Specify the URL of the parameters file. Example: <a href="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json" data-raw-source="[https://raw.githubusercontent.com/Azure/...](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.parameters.json)">https://raw.githubusercontent.com/Azure/...</a> 
+### Error: Internal Server Error
 
-To use a file stored in a private storage account, retrieve and include the shared access signature (SAS) token in the URL of the template. Example: <code>&lt;blob_storage_url&gt;/template.json?&lt;SAStoken&gt;</code> To upload a parameters file to a storage account and generate a SAS token, you could use <a href="https://aka.ms/azurefilecopyreadme" data-raw-source="[Azure file copy](https://aka.ms/azurefilecopyreadme)">Azure file copy</a> task or follow the steps using <a href="https://go.microsoft.com/fwlink/?linkid=838080" data-raw-source="[PowerShell](https://go.microsoft.com/fwlink/?linkid=838080)">PowerShell</a> or <a href="https://go.microsoft.com/fwlink/?linkid=836911" data-raw-source="[Azure CLI](https://go.microsoft.com/fwlink/?linkid=836911)">Azure CLI</a>.
+These issues are mostly transient in nature. There are multiple reasons why it could be happening:
+- One of the Azure services you're trying to deploy is undergoing maintenance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
+- Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
 
-To  view the template parameters in a grid, click on <strong>...</strong> next to Override template parameters text box. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to <a href="/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests" data-raw-source="[this](/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests)">this</a> to enable CORS.</td></tr>
-<tr><td>Template</td><td>(Required) Specify the path or a pattern pointing to the Azure Resource Manager template. For more information about the templates see <a href="https://aka.ms/azuretemplates" data-raw-source="https://aka.ms/azuretemplates">https://aka.ms/azuretemplates</a>. To get started immediately use template <a href="https://aka.ms/sampletemplate" data-raw-source="https://aka.ms/sampletemplate">https://aka.ms/sampletemplate</a>.</td></tr>
-<tr><td>Template parameters</td><td>(Optional) Specify the path or a pattern pointing for the parameters file for the Azure Resource Manager template.</td></tr>
-<tr><td>Override template parameters</td><td>(Optional) To view the template parameters in a grid, click on “…” next to Override Parameters textbox. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to <a href="/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests" data-raw-source="[this](/rest/api/storageservices/fileservices/Cross-Origin-Resource-Sharing--CORS--Support-for-the-Azure-Storage-Services?redirectedfrom=MSDN#understanding-cors-requests)">this</a> to enable CORS. Or type the template parameters to override in the textbox. Example, <br>–storageName fabrikam –adminUsername $(vmusername) -adminPassword $(password) –azureKeyVaultName $(fabrikamFibre).<br>If the parameter value you&#39;re using has multiple words, enclose them in quotes, even if you&#39;re passing them using variables. For example, -name &quot;parameter value&quot; -name2 &quot;$(var)&quot;<br>To override object type parameters use stringified JSON objects. For example, -options [&quot;option1&quot;] -map {&quot;key1&quot;: &quot;value1&quot; }. </td></tr>
-<tr><td>Deployment mode</td><td>(Required) Incremental mode handles deployments as incremental updates to the resource group . It leaves unchanged resources that exist in the resource group but are not specified in the template.
+However, we've seen some instances where this is due to an error in the ARM template, such as the Azure service you're trying to deploy doesn't support the region you've chosen for the resource.
 
- Complete mode deletes resources that are not in your template.
+### Error: Timeout
 
- Validate mode enables you to find problems with the template before creating actual resources.
+Timeout issues could be coming from two places:
+- Azure Pipelines Agent
+- Portal Deployment
 
- By default, Incremental mode is used.</td></tr>
-<tr><td>Enable prerequisites</td><td>(Optional) These options would be applicable only when the Resource group contains virtual machines. <br><br>Choosing Deployment Group option would configure Deployment Group agent on each of the virtual machines. <br><br>Selecting WinRM option configures Windows Remote Management (WinRM) listener over HTTPS protocol on port 5986, using a self-signed certificate. This configuration is required for performing deployment operation on Azure machines. If the target Virtual Machines are backed by a Load balancer, ensure Inbound NAT rules are configured for target port (5986).</td></tr>
-<tr><td>Azure Pipelines/TFS endpoint</td><td>(Required) Agent registration with a deployment group requires access to your Visual Studio project.? <br><br>Click &quot;Add&quot; to create a service connection using a personal access token (PAT) with scope restricted to &quot;Deployment Group&quot; and a default expiration time of 90 days. <br><br>?Click &quot;Manage&quot; to update service connection details.?</td></tr>
-<tr><td>Project</td><td>(Required) Specify the project which has the Deployment Group defined in it?</td></tr>
-<tr><td>Deployment Group</td><td>(Required) Specify the Deployment Group against which the Agent(s) will be registered. For more guidance, refer to <a href="https://aka.ms/832442" data-raw-source="[Deployment Groups](https://aka.ms/832442)">Deployment Groups</a></td></tr>
-<tr><td>Copy Azure VM tags to agents</td><td>(Optional) Choose if the tags configured on the Azure VM need to be copied to the corresponding Deployment Group agent. <br><br>By default all Azure tags will be copied following the format “Key: Value”. Example: An Azure Tag &quot;Role : Web&quot; would be copied  as-is to the Agent machine. <br><br>For more information on how tag Azure resources refer to <a href="/azure/azure-resource-manager/resource-group-using-tags?" data-raw-source="[link](/azure/azure-resource-manager/resource-group-using-tags?)">link</a></td></tr>
-<tr><td>VM details for WinRM</td><td>(Optional) Provide a name for the variable for the resource group. The variable can be used as $(variableName) to refer to the resource group in subsequent tasks like in the PowerShell on Target Machines task for deploying applications. <br>Valid only when the selected action is Create, Update or Select, and required when an existing resource group is selected.</td></tr>
-<tr><td>Deployment outputs</td><td>(Optional) Provide a name for the variable for the output variable which will contain the outputs section of the current deployment object in string format. You can use the “ConvertFrom-Json” PowerShell cmdlet to parse the JSON object and access the individual output values.</td></tr>
+You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the task logs. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
 
+### Error: CORS rules to be enabled while overriding parameters
 
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
+If the template file is being referred from a BLOB, while overriding parameters in the pipeline, you might see the following warning message:
 
-</table>
+`Warning: Failed to download the file from template path.`
+
+This feature requires the CORS rules to be enabled at the source. If templates are in Azure storage blob, see [Cross-origin resource sharing support](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS. 
+
+Besides enabling CORS, ensure that the SAS token specified in the link of the template is "srt-sco". This token is required for you to download the file and proceed.
+
+#### Azure Pipelines Agent
+
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this article for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml.
+
+#### Portal Deployment
+
+Check out this doc on how to identify if the error came from the Azure portal: https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal.
+
+In case of portal deployment, try setting "timeoutInMinutes" in the ARM template to "0". If not specified, the value assumed is 60 minutes. 0 makes sure the deployment will run for as long as it can to succeed.
+
+This could also be happening because of transient issues in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service.
+
+### Error: Azure Resource Manager (ARM) template failed validation
+
+This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid. 
+
+In addition, refer to this article regarding structure and syntax of ARM Templates: https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax.
+
 
 ## Open source
 

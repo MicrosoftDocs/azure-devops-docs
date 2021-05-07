@@ -2,10 +2,7 @@
 title: SSH Deployment task
 description: SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,14 +12,14 @@ monikerRange: '>= tfs-2017'
 
 # SSH Deployment task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to run shell commands or a script on a remote machine using SSH.
+Use this task to run shell commands or a script on a remote machine using SSH.
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -35,7 +32,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/SshV0.md)]
+[!INCLUDE [temp](../includes/yaml/SshV0.md)]
 
 ::: moniker-end
 
@@ -47,9 +44,41 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Run** | Choose to run either shell commands or a shell script on the remote machine. |
 | **Commands** | The shell commands to run on the remote machine. This parameter is available only when **Commands** is selected for the **Run** option. Enter each command together with its arguments on a new line of the multi-line textbox. To run multiple commands together, enter them on the same line separated by semicolons. Example: `cd /home/user/myFolder;build`<br /><br />**NOTE**: Each command runs in a separate process. If you want to run a series of commands that are interdependent (for example, changing the current folder before executing a command) use the **Inline Script** option instead. |
 | **Shell script path** | Path to the shell script file to run on the remote machine. This parameter is available only when **Shell script** is selected for the **Run** option. |
+| **Interpreter command** | Path to the command interpreter used to execute the script. Used when **Run** option = Inline. Adds a shebang line to the beginning of the script. Relevant only for UNIX-like operating systems. Please use empty string for Windows-based remote hosts. [See more about shebang (#!)](https://homepages.cwi.nl/~aeb/std/shebang/unix-faq.txt) |
 | **Arguments** | The arguments to pass to the shell script. This parameter is available only when **Shell script** is selected for the **Run** option. |
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+
+## Supported algorithms
+
+### Key pair algorithms
+
+* RSA
+* DSA
+
+### Encryption algorithms
+
+* aes256-cbc
+* aes192-cbc
+* aes128-cbc
+* blowfish-cbc
+* 3des-cbc
+* arcfour256
+* arcfour128
+* cast128-cbc
+* arcfour
+
+For OpenSSL v1.0.1 and higher (on agent):
+* aes256-ctr
+* aes192-ctr
+* aes128-ctr
+
+For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
+* aes128-gcm
+* aes128-gcm@openssh.com
+* aes256-gcm
+* aes256-gcm@openssh.com
+
 
 ## See also
 
@@ -57,22 +86,22 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 * [Copy Files Over SSH](copy-files-over-ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+[!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

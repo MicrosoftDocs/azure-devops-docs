@@ -2,21 +2,20 @@
 title: Import or export process configuration  
 titleSuffix: TFS
 description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
 
 # Import and export process configuration
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You customize the process configuration to modify the display of the web portal Agile tools. A few additional tools require that you map workflow states to metastate mappings.  
 
@@ -27,9 +26,9 @@ To manage the process configuration for a project, use the **witadmin** command 
 -   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  
@@ -52,15 +51,15 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 |-------------------|---------------------|  
 |**/collection**:`CollectionURLx`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/p**:`ProjectName`|Required. Specifies the project for which you want to export or import the process configuration. This project must be defined in the collection that you specified by using the /collection parameter. You do not need to specify a project when you specify the `/v` switch.|  
-|**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br /> **Note:** If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft website: [Registry Virtualization](https://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](https://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the XML definition file for the process configuration to export or import.<br /><br /> **Note:** If the client computer is running Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft website. To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|Optional. The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding and uses UTF-8 if detection fails.|  
 |**/v**|Optional. Validates the XML that defines the process configuration but does not import the definition file.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
 
 ## Remarks  
- Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](../configure-features-after-upgrade.md).  
+ Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 
- If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](../xml/update-a-team-project-manually-to-support-test-management.md).  
+ If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management).  
 
 ## Examples  
 
@@ -76,7 +75,7 @@ The following values apply in each example:
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.  
 
-![Backlog panel with Business Value field added](_img/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
+![Backlog panel with Business Value field added](media/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
 
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).  
 
@@ -198,7 +197,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section.  See [ProcessConfiguration](../xml/process-configuration-xml-element.md).  
 
 ## Related articles
-- [Configure features after an upgrade](../configure-features-after-upgrade.md) 
+- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) 
 - [Control XML element reference](../xml/control-xml-element-reference.md)  
 - [Change the work item form layout](../xml/change-work-item-form-layout.md)   
 - [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
@@ -208,7 +207,7 @@ If you modify the test suite workflow, then you have to make a similar update if
 
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can customize the quick add panel. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+**A:** You can customize the quick add panel. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
 
 Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
 
@@ -224,7 +223,7 @@ Other changes might require you to perform some manual operations when updating 
 
     Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
 
-    ![Application fault error message after TFS upgrade](_img/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
+    ![Application fault error message after TFS upgrade](media/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
 
 ### How do I resolve process configuration errors?  
 
@@ -252,5 +251,4 @@ Other changes might require you to perform some manual operations when updating 
 
 ### Q: Do you want to add or change the WITs that appear on your task board or product backlog?  
 
-**A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).  
-
+**A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).

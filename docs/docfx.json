@@ -1,13 +1,38 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", 
+          "**/*.md",
           "**/*.yml"
         ],
-        "group": "all",
+        "exclude": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "migrate/build-deployment-best-practices.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**",
+          "**/obj/**",
+          "**/includes/**",
+          "**/_data/**",
+          "**/_shared/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "group": "all"
+      },
+      {
+        "files": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "migrate/build-deployment-best-practices.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -29,12 +54,12 @@
           "**/*.mp4",
           "**/*.svg"
         ],
-        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_data/**"
-        ]
+        ],
+        "group": "all"
       }
     ],
     "overwrite": [],
@@ -44,16 +69,19 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps Services"],
-      "author": "thomps23",
-      "ms.author": "jillfra",
+      "searchScope": [
+        "Azure DevOps Services"
+      ],
+      "ms.manager": "mijacobs",
+      "author": "mijacobs",
+      "ms.author": "mijacobs",
       "ms.date": "09/05/2018",
       "ms.prod": "devops",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/vsts-docs",
+      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -85,26 +113,121 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "<= azure-devops-2019",
-        "report/analytics/**": ">= azure-devops-2019",
-        "report/excel/**": "<= tfs-2017",
+        "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/powerbi/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "<= azure-devops-2019",
-        "reference/tfs-ps-sync/**": "<= tfs-2015",
-        "reference/witadmin/**": "<= azure-devops-2019",
-        "reference/mapping/**": "<= azure-devops-2019"
+        "report/sql-reports/**": "< azure-devops",
+        "reference/witadmin/**": "< azure-devops"
       },
-      "ROBOTS":{
+      "ms.author": {
+        "artifacts/**": "rabououn",
+        "pipelines/*.md": "sdanie",
+        "pipelines/agents/**": "sdanie",
+        "pipelines/apps/**": "jukullam",
+        "pipelines/archive/**": "sdanie",
+        "pipelines/artifacts/**": "rabououn",
+        "pipelines/build/**": "sdanie",
+        "pipelines/caching/**": "rabououn",
+        "pipelines/ecosystems/**": "jukullam",
+        "pipelines/get-started/**": "jukullam",
+        "pipelines/integrations/**": "rabououn",
+        "pipelines/library/**": "jukullam",
+        "pipelines/licensing/**": "sdanie",
+        "pipelines/migrate/**": "jukullam",
+        "pipelines/packages/**": "rabououn",
+        "pipelines/policies/**": "rabououn",
+        "pipelines/process/**": "jukullam",
+        "pipelines/release/**": "rabououn",
+        "pipelines/reports/**": "sdanie",
+        "pipelines/repos/**": "sdanie",
+        "pipelines/scripts/**": "jukullam",
+        "pipelines/security/**": "jukullam",
+        "pipelines/targets/**": "rabououn",
+        "pipelines/tasks/**": "sdanie",
+        "pipelines/test/**": "sdanie",
+        "service-hooks/**": "aaronha",
+        "repos/tfvc/**": "v-maksim",
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
+      },
+      "author": {
+        "artifacts/**": "ramiMSFT",
+        "pipelines/*.md": "steved0x",
+        "pipelines/agents/**": "steved0x",
+        "pipelines/apps/**": "juliakm",
+        "pipelines/archive/**": "steved0x",
+        "pipelines/artifacts/**": "ramiMSFT",
+        "pipelines/build/**": "steved0x",
+        "pipelines/caching/**": "ramiMSFT",
+        "pipelines/ecosystems/**": "juliakm",
+        "pipelines/get-started/**": "juliakm",
+        "pipelines/integrations/**": "ramiMSFT",
+        "pipelines/library/**": "juliakm",
+        "pipelines/licensing/**": "steved0x",
+        "pipelines/migrate/**": "juliakm",
+        "pipelines/packages/**": "ramiMSFT",
+        "pipelines/policies/**": "ramiMSFT",
+        "pipelines/process/**": "juliakm",
+        "pipelines/release/**": "ramiMSFT",
+        "pipelines/reports/**": "steved0x",
+        "pipelines/repos/**": "steved0x",
+        "pipelines/scripts/**": "juliakm",
+        "pipelines/security/**": "juliakm",
+        "pipelines/targets/**": "ramiMSFT",
+        "pipelines/tasks/**": "steved0x",
+        "pipelines/test/**": "steved0x",
+        "service-hooks/**": "aaronhallberg",
+        "repos/tfvc/**": "MaximMalygin",
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
+      },
+      "ms.technology": {
+        "pipelines/**": "devops-cicd",
+        "pipelines/agents/**": "devops-cicd-agents",
+        "pipelines/apps/**": "devops-cicd-apps",
+        "pipelines/archive/**": "devops-cicd-archive",
+        "pipelines/artifacts/**": "devops-cicd-artifacts",
+        "pipelines/build/**": "devops-cicd-build",
+        "pipelines/caching/**": "devops-cicd-caching",
+        "pipelines/ecosystems/**": "devops-cicd-ecosystems",
+        "pipelines/get-started/**": "devops-cicd-get-started",
+        "pipelines/integrations/**": "devops-cicd-integrations",
+        "pipelines/library/**": "devops-cicd-library",
+        "pipelines/licensing/**": "devops-cicd-licensing",
+        "pipelines/migrate/**": "devops-cicd-migrate",
+        "pipelines/packages/**": "devops-cicd-packages",
+        "pipelines/policies/**": "devops-cicd-policies",
+        "pipelines/process/**": "devops-cicd-process",
+        "pipelines/release/**": "devops-cicd-release",
+        "pipelines/reports/**": "devops-cicd-reports",
+        "pipelines/repos/**": "devops-cicd-repos",
+        "pipelines/security/**": "devops-cicd-security",
+        "pipelines/scripts/**": "devops-cicd-scripts",
+        "pipelines/targets/**": "devops-cicd-targets",
+        "pipelines/tasks/**": "devops-cicd-tasks",
+        "pipelines/test/**": "devops-cicd-test"
+      },
+      "recommendations": {
+        "pipelines/repos/**": "true",
+        "repos/tfvc/**": "true",
+        "repos/get-started/**": "true",
+        "repos/git/**": "true"
+      },
+      "ROBOTS": {
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
+      },
+      "exclude_monikers": {
+        "reference/error/**/*.md": [
+          "azure-devops"
+        ]
       }
     },
     "template": [],
     "dest": "team-services",
+    "markdownEngineName": "markdig",
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       }
     }
   }

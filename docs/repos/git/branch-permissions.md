@@ -3,48 +3,54 @@ title: Set Git branch security and permissions
 titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 12/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Set branch permissions
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-## Overview
 
 Set up permissions to control who can read and update the code in a branch on your Git repo.
-You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
+You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](set-git-repository-permissions.md#git-repository).
+
+[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
 
 ## Use the branches view to configure security
 
+::: moniker range=">= azure-devops-2019"
+
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
-   If you're not using the new navigation preview, select **Code**, **Branches**.
+::: moniker-end
 
-   ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+::: moniker range="< azure-devops-2019"
+
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Code**, **Branches**.
+
+   ![Open up the Branches page on the web](media/branches/branches_nav.png)
+
+::: moniker-end
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-   ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](media/branches/branches-page.png)
 
 3. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
-   ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
+   ![Open the branch permissions page from the branches context menu](media/branches/branches_context_menu_permissions.png)
 
 ## Add users or groups
 
-> Avoid trouble:  You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
+> [!TIP]    
+> You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
-Add users or groups to your branch permissions by selecting **Add** 
+Add users or groups to your branch permissions by selecting **Add**.  
 Enter the sign-in address or group alias, then select **Save Changes**.
 
 ## Remove users or groups
@@ -52,19 +58,12 @@ Enter the sign-in address or group alias, then select **Save Changes**.
 Remove permissions for a user or group by selecting the user or Azure DevOps group, then selecting **Remove**. 
 The user or group will still exist in your Project and this change will not affect other permissions for the user or group.    
 
-![Remove branch permissions for a user in Azure DevOps Services or TFS](_img/branches/remove_permissions.png)
+![Remove branch permissions for a user in Azure DevOps Services or TFS](media/branches/remove_permissions.png)
  
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
-[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
-
-> [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and Azure DevOps Services.
-> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
-> in the upper left corner of the window.
->
-> ![Content version selector](../../_shared/_img/version-selector.png)
+[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. To learn more about how permissions work, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings).
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
@@ -94,12 +93,12 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 
-### Permissions in Azure DevOps Services
+### Permissions in Azure DevOps Server 2019 through Azure DevOps Services
 
 >[!NOTE]
->[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
+>[The **Exempt from policy enforcement**](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**
@@ -115,5 +114,7 @@ Control branch permission settings from the branch permission view. Users and gr
 | Force Push (Rewrite History and Delete Branches) | Can force push to a branch, which can rewrite history. This permission is also required to delete a branch. |
 | Manage Permissions                               | Can set permissions for the branch.                                                                         |
 | Remove Others' Locks                             | Can remove [locks](lock-branches.md) set on branches by other users.                                                            |
+
+The following permissions are automatically assigned to branch creators: Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others' Locks.
 
 ::: moniker-end 

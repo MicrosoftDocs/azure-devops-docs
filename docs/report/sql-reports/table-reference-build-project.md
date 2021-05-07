@@ -1,22 +1,20 @@
 ---
 title: Build Project tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the files and projects that were built and information about those files  
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
 
 # Build Project tables 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about the files and projects that were built and information about those files by using FactBuildProjects and the associated dimensions. Records contain the static analysis and compiler warnings and errors for each file that was built. If it was built for more than one platform or flavor, you can find records for each platform and flavor.  
  
@@ -25,7 +23,7 @@ You can query for data about the files and projects that were built and informat
  
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
-![Tables for Source Projects in a Build](_img/teamproj_factbuildproject.png "TeamProj_FactBuildProject")  
+![Tables for Source Projects in a Build](media/teamproj_factbuildproject.png "TeamProj_FactBuildProject")  
   
 FactBuildProject is associated with the following dimension tables:  
   
@@ -43,4 +41,4 @@ FactBuildProject is associated with the following dimension tables:
 -  [Build Summary](build-summary-report.md)   
 -  [Build Details tables](table-reference-build-details.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md)   
+- [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md)

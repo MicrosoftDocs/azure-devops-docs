@@ -3,18 +3,18 @@ title: Add portfolio backlogs
 titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
 # Add a portfolio backlog level
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
@@ -26,7 +26,7 @@ Portfolio backlogs are useful for organizing your backlog under business initiat
 Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
 
 > [!NOTE]    
->If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](configure-features-after-upgrade.md).  
+>If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 
 Here, we add a third portfolio backlog, Initiative. With it, the management team can set priorities and view progress of work belonging to initiatives.  
 
@@ -36,7 +36,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 > The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your project&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
-![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
+![A view of three portfolio backlogs enabled](media/three-level-portfolio-backlog.png)
 
 You can add up to five levels of portfolio backlogs. And, each team can [choose which  backlogs appear for them to work on](../organizations/settings/select-backlog-navigation-levels.md).
 
@@ -68,7 +68,7 @@ For an overview of the three system processes, see [Choose a process](../boards/
 Save the files to a folder that you&#39;ll use to update these files and folders: Categories, ProcessConfiguration, and WorkItemTypes</li> 
 <li> For <strong>On-premises XML</strong>: <br/>
 <ul>
-<li> If you haven&#39;t done so yet, update your project to <a href="configure-features-after-upgrade.md" data-raw-source="[enable the latest features](configure-features-after-upgrade.md)">enable the latest features</a>  </li> 
+<li> If you haven&#39;t done so yet, update your project to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">enable the latest features</a>  </li> 
 <li> <a href="#import-export" data-raw-source="[Export the definition files you&#39;ll need](#import-export)">Export the definition files you&#39;ll need</a>: Epic, Categories, and ProcessConfiguration </li> 
 </ul> 
 </li>
@@ -217,9 +217,9 @@ If you're updating a project that connects to an on-premises TFS, you'll use the
 - Categories.xml (located in the WorkItem Tracking folder)
 - ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
 
-[!INCLUDE [temp](../_shared/process-editor.md)]   
+[!INCLUDE [temp](../includes/process-editor.md)]   
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]
 
 1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 
@@ -257,7 +257,7 @@ witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"Di
 ## Related articles  
 We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
-![Conceptual image of 5 levels of portfolio backlog](_img/five-levels-portfolio-backlogs.png)
+![Conceptual image of 5 levels of portfolio backlog](media/five-levels-portfolio-backlogs.png)
 
 If you want to add another WIT to your backlogs or boards, see [work item types to backlogs and boards](add-wits-to-backlogs-and-boards.md). 
 
@@ -293,4 +293,3 @@ Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog ca
 While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).  
 
 For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).
-

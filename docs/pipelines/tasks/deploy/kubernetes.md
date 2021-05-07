@@ -3,21 +3,18 @@ title: Kubectl task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/28/2019
+ms.date: 02/28/2020
 monikerRange: 'azure-devops'
 ---
 
 # Kubectl task
 
-[!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
-Use this task in a build or release pipeline to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
+Use this task to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
 
 ::: moniker range="> tfs-2018"
 
@@ -32,6 +29,7 @@ The task works with two service connection types: **Azure Resource Manager** and
 <tr><td><code>azureSubscriptionEndpoint</code><br/>Azure subscription</td><td>(Required) Name of the Azure Service Connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>Resource group</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>Kubernetes cluster</td><td>(Required) Name of the AKS cluster.</td></tr>
+<tr><td><code>useClusterAdmin</code><br/>Use cluster admin credentials</td><td>(Optional) Use cluster administrator credentials instead of default cluster user credentials. This will ignore role based access control.</td></tr>
 <tr><td><code>namespace</code><br/>Namespace</td><td>(Optional) The namespace on which the kubectl commands are to be run. If unspecified, the default namespace is used.</td></tr>
 </table>
 
@@ -39,10 +37,11 @@ This YAML example shows how Azure Resource Manager is used to refer to the Kuber
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
-    azureResourceGroup: Contoso
-    kubernetesCluster: Contoso
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
+  azureResourceGroup: Contoso
+  kubernetesCluster: Contoso
+  useClusterAdmin: false
 
 steps:
 - task: Kubernetes@1
@@ -52,6 +51,7 @@ steps:
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureResourceGroup: $(azureResourceGroup)
     kubernetesCluster: $(kubernetesCluster)
+    useClusterAdmin: $(useClusterAdmin)
 ```
 
 ### Kubernetes Service Connection
@@ -196,7 +196,7 @@ ConfigMaps allow you to decouple configuration artifacts from image content to m
 <tr><td><code>configMapName</code><br/>ConfigMapName</td><td>(Optional) Name of the ConfigMap.</td></tr>
 <tr><td><code>forceUpdateConfigMap</code><br/>Force update configmap</td><td>(Optional) Delete the configmap if it exists and create a new one with updated values.<br/>Default value: false</td></tr>
 <tr><td><code>useConfigMapFile</code><br/>Use file</td><td>(Optional) Create a ConfigMap from an individual file, or from multiple files by specifying a directory.<br/>Default value: false</td></tr>
-<tr><td><code>configMapFile</code><br/>ConfigMap File</td><td>(Required if useConfigMapFile == true) Specify a file or directory that contains the configMaps.</td></tr>
+<tr><td><code>configMapFile</code><br/>ConfigMap File</td><td>(Required if useConfigMapFile == true) Specify a file or directory that contains the configMaps. Note that this will use the <code>--from-file</code> argument.</td></tr>
 <tr><td><code>configMapArguments</code><br/>Arguments</td><td>(Optional) Specify keys and literal values to insert in configMap.
 For example, <code>--from-literal=key1=value1 --from-literal=key2=&quot;top secret&quot;</code></td></tr>
 </table>
@@ -263,6 +263,12 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 </table>
 
 ::: moniker-end
+
+## Troubleshooting
+
+### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
+
+You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](../../agents/hosted.md#agent-ip-ranges)
 
 ## Open source
 

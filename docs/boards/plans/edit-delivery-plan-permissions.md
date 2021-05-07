@@ -3,19 +3,17 @@ title: Edit or manage Delivery Plan permissions
 titleSuffix: Azure Boards
 description: Edit or change permissions for a delivery plan    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: how-to
 monikerRange: '>= tfs-2017'
 ms.date: 12/19/2018
 ---
 
 # Edit or manage Delivery Plan permissions 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>
@@ -40,10 +38,10 @@ By default all members of an organization or project collection can view Deliver
 
 1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the Permissions dialog for a plan](_img/permissions/open-plans-security.png)     
+	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
 
 2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
 
@@ -52,7 +50,7 @@ By default all members of an organization or project collection can view Deliver
 	For example, here we grant permission to Raisa to edit the plan.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a delivery plan](_img/permissions/permissions-plans-dialog.png)
+	> ![Permissions dialog for a delivery plan](media/permissions/permissions-plans-dialog.png)
 
 4. Choose **Save changes** when done. 
 
@@ -63,10 +61,10 @@ By default all members of an organization or project collection can view Deliver
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the Permissions dialog for a plan](_img/permissions/open-plans-security.png)     
+	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
 
 2. Add a user, team group, or other security group who you want to grant permissions to or restrict access. (For details, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md)). By default, non-administrators can't delete or edit a plan. 
 
@@ -75,7 +73,7 @@ By default all members of an organization or project collection can view Deliver
 	For example, here we grant permission to Raisa to edit the plan.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Permissions dialog for a delivery plan](_img/permissions/permissions-plans-dialog.png)
+	> ![Permissions dialog for a delivery plan](media/permissions/permissions-plans-dialog.png)
 
 4. Choose **Save changes** when done. 
 
@@ -85,6 +83,6 @@ By default all members of an organization or project collection can view Deliver
 ## Related articles
 
 - [Review team delivery plans](review-team-plans.md)  
-- [About permissions and groups](../../organizations/security/about-permissions.md)
+- [About permissions and inheritance](../../organizations/security/about-permissions.md)
 - [About access levels](../../organizations/security/access-levels.md)
 
