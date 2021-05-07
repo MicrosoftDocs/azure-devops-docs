@@ -222,7 +222,7 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
 1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
 2. Select the pipeline you want to configure settings for from the list of pipelines.
-3. Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
+3. Choose **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: and select **Settings**.
 
 ### Processing of new run requests
 Sometimes you'll want to prevent new runs from starting on your pipeline. 
