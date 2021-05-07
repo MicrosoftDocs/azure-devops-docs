@@ -178,7 +178,7 @@ steps:
 - script: echo hello
 ```
 
-Running `docker create --help` will give you the list of supported options.
+Running `docker create --help` will give you the list of supported options. You can use any option available with the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/).
 
 ## Reusable container definition
 
