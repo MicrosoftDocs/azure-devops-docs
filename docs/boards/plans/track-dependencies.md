@@ -71,13 +71,14 @@ When issues exist, they are highlighted in red. The issue always has to do with 
 For example, the following Dependencies dialog indicates that two predecessor work items are scheduled to complete before the successor work item is scheduled to complete. A red exclamation mark and red colored arrows indicate there is an issue with the dependency.   
 
 When the dependency is to a work item in another project, the project information is shown as well as other link relationships. 
-:::image type="content" source="media/dependencies/dependencies-cross-project.pn" alt-text="Dependencies dialog for a work item with dependencies-cross-project.":::
+
+:::image type="content" source="media/dependencies/dependencies-cross-project.png" alt-text="Dependencies dialog for a work item with dependencies-cross-project.":::
 
 
 ## Related articles  
 
 - [Add or edit a Delivery Plan](add-edit-delivery-plan.md)
-- [Review team plans](review-team-plans.md)
+- [Review team Delivery Plans](review-team-plans.md)
 - [Interactively filter your backlogs, boards, and plans](../backlogs/filter-backlogs-boards-plans.md)
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
  

@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how to add or edit a Delivery Plan 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: 'azure-devops'
 ms.date: 05/03/2021
 ---
@@ -13,13 +13,15 @@ ms.date: 05/03/2021
 
 # Add or edit a Delivery Plans 
 
-[!INCLUDE [temp](../includes/version-all.md)] 
+**Azure Boards |** [**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**](../extensions/delivery-plans.md) 
 
+Delivery Plans provide a highly interactive calendar view of multiple team backlogs. For the use cases, benefits, and interactions you can perform, see [Review team Delivery Plans](review-team-plans.md). 
 
-> [!div class="checklist"]   
-> - Open a plan from the list of defined plans 
-> - Add and edit a plan
-> - Add field criteria, customize cards, and add markers
+Use this article to learn how to perform these tasks:
+
+- Open a plan from the list of defined plans 
+- Add and edit a plan
+- Add field criteria, customize cards, and add markers
 
 ## Prerequisites
 
@@ -38,6 +40,81 @@ To add and configure a Delivery Plan, the following elements must be configured:
 - Team Backlog settings have enabled the backlogs to show in the delivery plans. To learn more, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 
  
+> [!TIP]  
+> If you edit a plan and don't see the changes you made appear in the plan, refresh your browser. A browser refresh is needed some times to trigger the updates.   
+
+
+## Plan customization options
+ 
+
+Once you open the Plan settings dialog, choose one of the following tabs to set your customization options. 
+
+---
+:::row:::
+   :::column span="1":::
+      **Tab** 
+   :::column-end:::
+   :::column span="3":::
+      **Use to...**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      **Overview** 
+   :::column-end:::
+   :::column span="3":::
+      Modify the plan **Name** or **Description** 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Teams](#teams)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove a team backlog. You can add up to 15 backlog levels. You can add a mix of backlog levels.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Field criteria](#field-criteria)** 
+   :::column-end:::
+   :::column span="3":::
+      Specify field criteria to filter work item types displayed on the plan. All criteria is evaluated as an AND statement.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Markers](#markers)** 
+   :::column-end:::
+   :::column span="3":::
+      Add milestone markers to the plan. Specify a label and select a color.   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Fields](#fields)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove fields from cards to display on the plan. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Styles](#style-rule)** 
+   :::column-end:::
+   :::column span="3":::
+      Add styling rules to change card color based on field criteria. 
+   :::column-end:::
+:::row-end:::
+---
+
 
 ## Add a plan  
 
@@ -86,14 +163,67 @@ Once you've defined a plan, you can further customize it.
 
   :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
 
-3. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
 
-     :::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Screenshot to Open the Markers page, specify a date and select a color.":::   
+<a id="fields"></a>
+
+## Choose fields to appear on cards 
+ 
+Show those fields that are useful for your review purposes or if they contain keywords that you may want to use to filter your plan. Unlike the Kanban board, you can't change the field displayed on the card. You must open the work item to make field changes.   
+
+> [!TIP]   
+> To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
+ 
+1. From the Plan settings dialog, choose the **Fields** tab. Place a check mark in the check box for those fields you want to have appear on the board. 
+
+1. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
+
+	Here we select all standard fields and add the **Story Points** and **Priority** fields to display on cards. 
+
+	:::image type="content" source="media/plans/plan-settings-fields.png" alt-text="Plan settings, Fields tab.":::
+
+	> [!TIP]  
+	> To show the **Title** of the parent work item, choose the **Parent** field. Choosing the **Parent** title from a card opens the parent work item. To change the parent work item, open the child work item and remove the link and add a different parent work item. You can filter your plan based on parent work items, whether the **Parent** field is added to cards or not. 
+
+1. To remove a field, choose the :::image type="icon" source="../../media/icons/trash-can.png" border="false"::: delete icon next to the field.
+
+1. When done with your changes, choose **Save**.
+
+<a id="markers" />
+
+## Add milestone markers
+
+1. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
+
+	:::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Plans settings, Markers tab, two markers defined.":::   
 
 	Markers appear on the plan as shown: 
 
-     :::image type="content" source="media/plans/markers.png" border="true" alt-text="Screenshot pf Plans, Markers appear on calendar.":::   
+	:::image type="content" source="media/plans/markers.png" border="true" alt-text="Screenshot of Plans, Markers appear on calendar.":::   
 
+1. When done with your changes, choose **Save**.
+
+
+<a id="styles" />
+
+## Change card color 
+
+With styling rules, you can cause cards to change color when their corresponding work items meet the field criteria that you set. This feature is similar to the one you can define for Kanban boards as described in [Customize cards](../boards/customize-cards.md). Here we highlight the card based on its **Tags** assignment. 
+
+:::image type="content" source="media/plans/card-tag-style.png" border="true" alt-text="Screenshot of a card with style applied.":::   
+
+1. To change the card color, open the **Styles** tab. You can specify up to 10 styles. There are some limits to the fields you choose.   
+
+	:::image type="content" source="media/plans/plan-settings-styles.png" border="true" alt-text="Plans settings, Styles tab, two styles defined.":::   
+
+1. Choose **+Add styling rule**. Enter a name for the style and choose the color from the color picker. Then specify the field criteria. You can add multiple field values. For style purposes, they are all evaluated as a logical AND. Choose the field and the value for the field. 
+ 
+	For example, here we choose to highlight cards with a **Priority=1**. 
+
+	:::image type="content" source="media/plans/specify-style.png" border="true" alt-text="Plans settings, Styles tab, define a new style.":::   
+
+
+	> [!NOTE]   
+	> Some fields aren't supported for selection, such as the **Title** field, **Description** and other rich-text fields, **Assigned To** and other identity fields. Also, you may be able to select a field but not be able to specify a value or the value you want. For example, you can't specify **Tags** that are *Empty* or *Not Empty*. 
 
 ## Related articles  
 
