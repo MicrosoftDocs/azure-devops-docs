@@ -26,12 +26,92 @@ Use this task to deploy applications to Azure Spring Cloud and to manage Azure S
 |`ConnectedServiceName`<br/>Azure Subscription|All|(Required) name of the [Azure Resource Manager service connection](../../library/connect-to-azure.md). <br/>Argument alias: `azureSubscription`|
 |`AzureSpringCloud`<br/>Azure Spring Cloud|All|(Required) Name or resource ID of the Azure Spring Cloud instance.|
 |`AppName`<br/>App Name|All|(Required) The name of the Azure Spring Cloud app to which to deploy. The app must exist prior to task execution.
-|`UseStagingDeployment`<br/>Use Staging Deployment.|Deploy<br/>Set Production|(Required) Apply to whichever [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) is set as the staging deployment at time fo execution. If omitted, the `DeploymentName` parameter must be set.<br/>Default value: `true`|
+|`UseStagingDeployment`<br/>Use Staging Deployment.|Deploy<br/>Set Production|(Required) Apply to whichever [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) is set as the staging deployment at time of execution. If omitted, the `DeploymentName` parameter must be set.<br/>Default value: `true`|
 |`DeploymentName`<br/>Deployment Name |Deploy<br/>Set production|(Required if `UseStagingDeployment` is `false`) The name of the [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) to which the action will apply. If not using blue-green deployments, set this field to  `default`.|
 |`CreateNewDeployment`<br/>Create new deployment |Deploy|(Optional) If set to true and the deployment specified by `DeploymentName` does not exist at execution time, it will be created.<br/>Default value: `false`|
 |`Package`<br/>Package or folder|Deploy|(Required) File path to the package containing the application to be deployed (`.jar` file for Java, `.zip` for .Net Core) or to a folder containing the application source to be built. [Build variables](../../build/variables.md) or [release variables](../../release/variables.md#default-variables) are supported. <br/>Default value: ```$(System.DefaultWorkingDirectory)/**/*.jar```|
 |`RuntimeVersion`<br/>Runtime Version|Deploy|(Optional) The runtime stack for the application.<br/>One of: `Java_8`, `Java_11`, `NetCore_31`,<br/>Default value: `Java_11`|
 |`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-SERVER_PORT 5000 -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
-|`JvmOptions`<br/>JVM Options|Deploy|(Optional) Edit the app's JVM options. A String containing JVM Options. Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
+|`JvmOptions`<br/>JVM Options|Deploy|(Optional) Edit the app's JVM options. A String containing JVM Options. <br/> Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
 |`DotNetCoreMainEntryPath`<br/>.Net Core entry path |Deploy|(Optional) A string containing the path to the .NET executable relative to zip root.|
 |`Version`<br/>Version|Deploy|(Optional)Deployment version, left unchanged if not set.|
+
+## Examples
+
+### Deleting a staging deployment
+
+The "Delete Staging Deployment" action allows you to delete the deployment not receiving production traffic. This frees up resources used by that deployment and makes room for a new staging deployment:
+
+```yml
+variables:
+  azureSubscription: Contoso
+
+steps:
+- task: AzureSpringCloud@0
+  continueOnError: true #Don't fail the pipeline if a staging deployment doesn't already exist.
+  inputs:
+    continueOnError: true
+    inputs:
+    azureSubscription: $(azureSubscription)
+    Action: 'Delete Staging Deployment'
+    AppName: customer-api
+    AzureSpringCloud: contoso-dev-az-spr-cld
+```
+
+### Deploying
+
+#### To Production
+The following example deploys to the default production deployment in Azure Spring Cloud. This is the only possible deployment scenario when using the Basic SKU:
+
+```yml
+variables:
+  azureSubscription: Contoso
+
+steps:
+- task: AzureSpringCloud@0
+    inputs:
+    azureSubscription: $(azureSubscription)
+    Action: 'Deploy'
+    AzureSpringCloud: contoso-dev-az-spr-cld
+    AppName: customer-api
+    UseStagingDeployment: false
+    DeploymentName: default
+    Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
+```
+
+#### Blue-Green
+The following example deploys to a pre-existing staging deployment. This deployment will not receive production traffic until it is set as a production deployment.
+
+```yml
+variables:
+  azureSubscription: Contoso
+
+steps:
+- task: AzureSpringCloud@0
+    inputs:
+    azureSubscription: $(azureSubscription)
+    Action: 'Deploy'
+    AzureSpringCloud: contoso-dev-az-spr-cld
+    AppName: customer-api
+    UseStagingDeployment: true
+    Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
+```
+
+### Setting production deployment
+
+The following example will set the current staging deployment as production, effectively swapping which deployment will receive production traffic.
+
+```yml
+variables:
+  azureSubscription: Contoso
+
+steps:
+- task: AzureSpringCloud@0
+    inputs:
+    azureSubscription: $(azureSubscription)
+    Action: 'Set Production'
+    AzureSpringCloud: contoso-dev-az-spr-cld
+    AppName: customer-api
+    UseStagingDeployment: true
+```
+
