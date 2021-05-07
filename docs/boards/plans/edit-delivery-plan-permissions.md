@@ -27,7 +27,7 @@ By default all members of an organization or project collection can view Deliver
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
-By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).  
+By default all members of an organization or project collection can view Delivery Plans, except users with Stakeholder access for private projects. The plan creator, as well as project and collection administrators, can edit or delete a plan, or change the plan's permissions. To learn more about Delivery Plans, see [Delivery Plans 1.0](../extensions/delivery-plans.md).  
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
