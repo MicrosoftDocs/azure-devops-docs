@@ -181,10 +181,10 @@ A retention lease can be added on a pipeline run for a specific period. For exam
 
 ## Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+You can delete runs using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu).
 
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)

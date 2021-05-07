@@ -98,7 +98,7 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 <a name="download-logs"></a>
 ### Pipeline run more actions menu
 
-From the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
+From the *More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
 
 ![Pipeline run summary more actions menu](media/pipeline-run-summary-context-menu.png)
 
@@ -116,13 +116,13 @@ Choose a job to see the steps for that job.
 
 ![Pipeline tasks](media/pipeline-steps-list.png)
 
-From the steps view, you can review the status and details of each step. From the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
+From the steps view, you can review the status and details of each step. From the *More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
 
 ![Pipeline tasks more actions menu](media/pipeline-steps-context-menu.png)
 
 ## Manage security
 
-You can configure pipelines security on a project level from the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
+You can configure pipelines security on a project level from the *More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
 
 ![Pipeline security](media/pipelines-context-menu.png)
 
@@ -130,7 +130,7 @@ To support security of your pipeline operations, you can add users to a built-in
 
 ### Manage pipeline settings
 
-You can view and configure pipeline settings from the *More actions** :::image type="icon" source="../../../media/icons/more-actions.png"::: menu on the [pipeline details page](#view-pipeline-details).
+You can view and configure pipeline settings from the *More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu on the [pipeline details page](#view-pipeline-details).
 
 :::image type="content" source="media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
 
@@ -138,7 +138,7 @@ You can view and configure pipeline settings from the *More actions** :::image t
 
 :::image type="content" source="media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
 
-[Add a status badge to your repository](../create-first-pipeline.md#add-a-status-badge-to-your-repository)
+[Add a status badge to your repository](../create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
 
 
 
