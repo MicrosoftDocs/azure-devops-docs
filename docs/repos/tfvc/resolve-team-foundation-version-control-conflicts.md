@@ -24,9 +24,9 @@ Although it can be frustrating to encounter conflicts, the system provides infor
 
 Use the Resolve Conflicts window to resolve conflicts that are blocking you.
 
-![Use the Resolve Conflicts window to resolve conflicts.](media/resolve-team-foundation-version-control-conflicts/IC745580.png)
+:::image type="content" source="media/resolve-team-foundation-version-control-conflicts/IC745580.png" alt-text="Use the Resolve Conflicts window to resolve conflicts.":::
 
-![Resolve conflicts](media/resolve-team-foundation-version-control-conflicts/IC612247.png)
+:::image type="content" source="media/resolve-team-foundation-version-control-conflicts/IC612247.png" alt-text="Resolve conflicts":::
 
 By default, the window shows only the conflicts caused by the most recent operation you attempted. When the window is in this state, a message appears that begins: **Path filter applied**. To show all conflicts in your workspace, choose **Get All Conflicts**. A message that begins with: **n Conflict(s)** appears.
 
@@ -80,7 +80,7 @@ When a conflict is caused by conflicting content changes, you can choose **Merge
 
 When you choose this action, the Merge window appears.
 
-![Merge changes in merge tool](media/resolve-team-foundation-version-control-conflicts/IC612248.png)
+:::image type="content" source="media/resolve-team-foundation-version-control-conflicts/IC612248.png" alt-text="Merge changes in merge tool":::
 
 The outcome of your work to resolve the conflict is shown in the **Results** pane.
 
@@ -110,8 +110,7 @@ In special cases, you may want to restrict the types of conflicts automatically 
 
 When you choose **AutoResolve All**, and then **Specific Conflict Types**, the **Choose Conflicts to Resolve** dialog box appears.
 
-![Understand the automatic options](media/resolve-team-foundation-version-control-conflicts/IC612249.png)
-
+:::image type="content" source="media/resolve-team-foundation-version-control-conflicts/IC612249.png" alt-text="Understand the automatic options":::
 
 <table>
 <thead>
