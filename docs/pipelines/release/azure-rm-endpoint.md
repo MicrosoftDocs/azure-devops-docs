@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an Azure Resource Manager [ARM service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
+This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an [Azure Resource Manager service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 
@@ -188,13 +188,13 @@ To fix this issue you will need to modify the supported account types and who ca
 
 A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete these steps:
 
-1. Create a new, native Azure AD user in the Azure AD instance for the Azure subcription. 
+1. Create a new, native Azure AD user in the Azure AD instance for the Azure subscription. 
 
-1. Set up the Azure AD user so that it has the proper permissions in the Azure subcription to set up Azure DevOps billing or a service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+1. Set up the Azure AD user so that it has the proper permissions in the Azure subscription to set up Azure DevOps billing or a service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
  
 1. Add the Azure AD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
 
-1. Log in to Azure DevOps as this user and set up a billing service connection. You'll only see one Azure subcription in the list.
+1. Log in to Azure DevOps as this user and set up a billing service connection. You'll only see one Azure subscription in the list.
 
 <a name="autoCreatedSecretExpiration"></a>
 
@@ -241,7 +241,7 @@ To resolve this issue:
 
 ### Creating a service connection with Artifactory instance fails despite allowlisted IPs
 
-Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted?view=azure-devops&tabs=yaml#networking&preserve-view=true) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url?view=azure-devops#azure-artifacts&preserve-view=true) that's published weekly based on geographic location.  
+Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted.md?view=azure-devops&tabs=yaml#networking&preserve-view=true) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url.md?view=azure-devops#azure-artifacts&preserve-view=true) that's published weekly based on geographic location.  
 
 <a name="cant-create-service-connection-manually"></a>
 
