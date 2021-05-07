@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 03/11/2021
+ms.date: 05/07/2021
 
 monikerRange: '>= tfs-2015'
 ---
