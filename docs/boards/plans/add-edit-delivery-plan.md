@@ -9,8 +9,7 @@ monikerRange: 'azure-devops'
 ms.date: 05/06/2021
 ---
 
-
-
+ 
 
 # Add or edit a Delivery Plan 
 
@@ -144,6 +143,7 @@ When defining a plan, note the following:
 -  To filter for specific work items, specify the field criteria. For example, to exclude bugs from the view, add the following criteria: `Work Item Type <> Bug`. 
 
 <a id="field-criteria" />
+
 ## Edit a plan 
 
 Once you've defined a plan, you can further customize it. 
