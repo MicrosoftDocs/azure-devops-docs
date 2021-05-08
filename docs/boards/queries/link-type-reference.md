@@ -793,7 +793,7 @@ Is Active: True
 
 ### Link type attributes
 
-The following table provides descriptions for each of the link type attributes returned by **azure boards** CLI or the REST API.  
+The following table provides descriptions for each of the link type attributes returned by **Azure Boards** CLI or the REST API.  
 
 
 :::row:::
