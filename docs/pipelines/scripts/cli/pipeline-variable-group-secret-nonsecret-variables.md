@@ -75,13 +75,6 @@ steps:
     echo "a=$(va)"
     echo "b=$(vb)"
     echo "contososecret=$(vcontososecret)"
-    echo "Is a less than b? ${{ lt(variables.va, variables.vb) }}"
-    echo "Is a equal to b? ${{ eq(variables.va, variables.vb) }}"
-    echo "Is a greater than b? ${{ gt(variables.va, variables.vb) }}"
-    echo "Is a greater than contososecret? ${{ gt(variables.va, variables.vcontososecret) }}"
-    echo "Is b greater than contososecret? ${{ gt(variables.vb, variables.vcontososecret) }}"
-    echo "Is a less than contososecret? ${{ lt(variables.va, variables.vcontososecret) }}"
-    echo "Is b less than contososecret? ${{ lt(variables.vb, variables.vcontososecret) }}"
     echo
     echo "Count up to the value of the variable group's nonsecret variable *a*:"
     for number in {1..$(va)}
@@ -111,14 +104,14 @@ Next, replace the placeholders in the following script, and then run it in Bash.
 # Provide variable definitions.
 devopsToken="<azure-devops-personal-access-token>"
 devopsOrg="https://dev.azure.com/<my-azure-devops-account-or-organization-name>"
+resourceGroupLocation="<resource-group-location-name-or-id>"
+storageAccountLocation="<storage-account-location-name-or-id>"
 pipelineName="<my-build>"
 githubOrg="<my-github-organization-name>"
 githubRepo="<my-github-repository-name>"
 repoName="$githubOrg/$githubRepo"
 repoType="github"
 branch="master"
-resourceGroupLocation="<resource-group-location-name-or-id>"
-storageAccountLocation="<storage-account-location-name-or-id>"
 
 # Declare other variables.
 uniqueId=$RANDOM
