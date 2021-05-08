@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/02/2021
+ms.date: 05/06/2021
 ---
+
  
 # Interactively filter backlogs, boards, queries, and plans 
 
@@ -208,17 +209,19 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
    :::column span="2":::
-      - Assigned To
       - Work Item Types
+      - Assigned To
       - States
       - Area Path
       - Iteration Path
+      - Tags
+      - Parent Work Item
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -229,10 +232,10 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -240,7 +243,8 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="2":::
       - Work Item Types
       - Assigned To
-      - States 
+      - States
+      - Tags
    :::column-end:::
    :::column span="1.5":::
         
@@ -295,7 +299,9 @@ Supported options are indicated with a ✔️ or listed.
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
 <br/>
+::: moniker-end 
 
+::: moniker range=">= azure-devops-2020"
 ---
 :::row:::
    :::column span="2":::
@@ -448,9 +454,11 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -469,9 +477,11 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -490,6 +500,8 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -511,11 +523,7 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-
-
-::: moniker-end  
-
-
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
@@ -670,10 +678,30 @@ In addition to the standard filter functions summarized in the previous table, t
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 6)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️ 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
 
@@ -720,7 +748,7 @@ In addition to the standard filter functions summarized in the previous table, t
 3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Delivery Plans define the grouping in Settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
+6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
 7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
 ::: moniker-end  
