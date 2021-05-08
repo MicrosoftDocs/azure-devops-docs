@@ -4,7 +4,7 @@ description: Azure CLI sample for accessing secret and nonsecret variables from 
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 04/23/2021
+ms.date: 05/08/2021
 ms.topic: sample
 ms.service: az-devops-project
 ms.devlang: azurecli 
@@ -66,26 +66,37 @@ pool:
 
 steps:
 - script: |
-    echo Hello, world!
-    echo Pool image: ${{ parameters.image }}
-    echo Run tests? ${{ parameters.test }}
+    echo "Hello, world!"
+    echo "Pool image: ${{ parameters.image }}"
+    echo "Run tests? ${{ parameters.test }}"
   displayName: 'Show runtime parameter values'
 
 - script: |
-    echo a=$(va)
-    echo b=$(vb)
-    echo contososecret=$(vcontososecret)
-    echo Is a less than b? ${{ lt(variables.va, variables.vb) }}
-    echo Is a equal to b? ${{ eq(variables.va, variables.vb) }}
-    echo Is a greater than b? ${{ gt(variables.va, variables.vb) }}
-    echo Is a greater than contososecret? ${{ gt(variables.va, variables.vcontososecret) }}
-    echo Is b greater than contososecret? ${{ gt(variables.vb, variables.vcontososecret) }}
-    echo Is a less than contososecret? ${{ lt(variables.va, variables.vcontososecret) }}
-    echo Is b less than contososecret? ${{ lt(variables.vb, variables.vcontososecret) }}
+    echo "a=$(va)"
+    echo "b=$(vb)"
+    echo "contososecret=$(vcontososecret)"
+    echo "Is a less than b? ${{ lt(variables.va, variables.vb) }}"
+    echo "Is a equal to b? ${{ eq(variables.va, variables.vb) }}"
+    echo "Is a greater than b? ${{ gt(variables.va, variables.vb) }}"
+    echo "Is a greater than contososecret? ${{ gt(variables.va, variables.vcontososecret) }}"
+    echo "Is b greater than contososecret? ${{ gt(variables.vb, variables.vcontososecret) }}"
+    echo "Is a less than contososecret? ${{ lt(variables.va, variables.vcontososecret) }}"
+    echo "Is b less than contososecret? ${{ lt(variables.vb, variables.vcontososecret) }}"
     echo
-    for number in {1..$(contososecret)}
+    echo "Count up to the value of the variable group's nonsecret variable *a*:"
+    for number in {1..$(va)}
     do
-    echo $number
+        echo "$number"
+    done
+    echo "Count up to the value of the variable group's nonsecret variable *b*:"
+    for number in {1..$(vb)}
+    do
+        echo "$number"
+    done
+    echo "Count up to the value of the variable group's secret variable *contososecret*:"
+    for number in {1..$(vcontososecret)}
+    do
+        echo "$number"
     done
   displayName: 'Test variable group variables (secret and nonsecret)'
   env:
@@ -118,7 +129,7 @@ serviceConnectionName="Contoso Service Connection $uniqueId"
 variableGroupName="Contoso Variable Group"
 
 # Sign in to Azure CLI and follow the directions. May be unnecessary in some environments.
-echo "Sign in. (For Cloud Shell, provide the device authentication code.)"
+echo "Sign in. (For Cloud Shell, provide the device login code.)"
 az login
 
 # Create a resource group and a storage account.
@@ -155,29 +166,32 @@ pipelineId=$(az pipelines create \
 # Create a variable group with 2 non-secret variables and 1 secret variable.
 # (contososecret < a < b). Then run the pipeline.
 variableGroupId=$(az pipelines variable-group create \
-    --name "$variableGroupName" --authorize true --variables a=35 b=86 --query id)
+    --name "$variableGroupName" --authorize true --variables a=12 b=29 --query id)
 az pipelines variable-group variable create \
-    --group-id $variableGroupId --name contososecret --secret true --value 14
+    --group-id $variableGroupId --name contososecret --secret true --value 17
 pipelineRunId1=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 1st run."
-echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId1}"
-read -p "Press any key to change the value of the variable group's secret variable, then run again:"
+echo "If the web page doesn't automatically appear, go to:"
+echo "    ${pipelineRunUrlPrefix}${pipelineRunId1}"
+read -p "Press Enter to change the value of one of the variable group's nonsecret variables, then run again:"
 
-# Change the variable group's secret variable value (a < contososecret < b).
+# Change the value of one of the variable group's nonsecret variables.
 az pipelines variable-group variable update \
-    --group-id $variableGroupId --name contososecret --value 53
+    --group-id $variableGroupId --name a --value 22
 pipelineRunId2=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 2nd run."
-echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId2}"
-read -p "Press any key to again change the value of the variable group's secret variable, then run once more:"
+echo "If the web page doesn't automatically appear, go to:"
+echo "    ${pipelineRunUrlPrefix}${pipelineRunId2}"
+read -p "Press Enter to change the value of the variable group's secret variable, then run once more:"
 
-# Change the variable group's secret variable value again (a < b < contososecret).
+# Change the value of the variable group's secret variable.
 az pipelines variable-group variable update \
-    --group-id $variableGroupId --name contososecret --value 97
+    --group-id $variableGroupId --name contososecret --value 35
 pipelineRunId3=$(az pipelines run --id $pipelineId --open --query id)
 echo "Go to the pipeline run's web page to view the output results for the 3rd run."
-echo "If the web page doesn't automatically appear, go to: ${pipelineRunUrlPrefix}${pipelineRunId3}"
-read -p "Press any key to continue:"
+echo "If the web page doesn't automatically appear, go to:"
+echo "    ${pipelineRunUrlPrefix}${pipelineRunId3}"
+read -p "Press Enter to continue:"
 ```
 
 ## Clean up resources
