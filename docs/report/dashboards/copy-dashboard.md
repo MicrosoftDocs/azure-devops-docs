@@ -15,8 +15,12 @@ ms.date: 05/07/2021
 
 [!INCLUDE [temp](../../includes/version-vsts-only.md)] 
 
-intro 
+Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
+ 
+> [!NOTE]  
+> The Copy Dashboard feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience** feature. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
 
+To add a team, see [Add a team](../../organizations/settings/add-teams.md). 
 
 <a id="permissions">  </a>
 
@@ -30,7 +34,7 @@ intro
 
 ## Open the dashboard 
 
-All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are project dashboard.  
+All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are a project dashboard.  
 
 Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
 
@@ -68,28 +72,24 @@ If you need to switch to a different project, choose the :::image type="icon" so
  
 ## Copy the dashboard 
 
-1. From the Dashboards page, choose **Copy Dashboard**.  
+1. From the dashboard page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** and then choose **Copy Dashboard**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the create a dashboard dialog](media/dashboards/open-new-dashboard-dialog.png)  
+	> ![Open the create a dashboard dialog](media/copy-dashboard/dashboard-copy-dashboard-selected.png)  
 
-	If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
+	If you don't see the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** icon, make sure that you've enabled the Copy Dashboard Experience preview feature. See [Manage or enable features](../../project/navigation/preview-features.md).
 
-2. Enter the name of the dashboard and other information you want to capture. 
+2. Enter a **Name** and **Description** for the new dashboard. To copy the dashboard as a team dashboard, choose **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, choose **Project Dashboard** and then the **Project**. 
 
-	Here we choose to create a Project dashboard. To create a team dashboard, choose **Team Dashboard** and then select a team. To add a team, see [Add a team](../../organizations/settings/add-teams.md). 
+	Here we choose to copy a team dashboard to another team dashboard. 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a Project dashboard.](media/dashboards/create-dashboard-project-dialog.png)  
+	> ![New dashboard dialog, copy dashboard for a different team.](media/copy-dashboard/new-dashboard-dialog.png)  
 
-	Choose **Save**. 
+	Choose **Create**. 
 
-3.  The widget catalog opens. You can add one or more widgets to the dashboard. You can then configure and resize each widget as needed. 
-
-4.	You can move the widgets around the dashboard to place them where you want them. 
-
-5.  When you're done making changes, choose **Done Editing**. 
+3. Open a team-based widget, such as , and verify that the widget now references the team selected in the previous step. 
  
-  
+ 
 
 ## Try this next 
 
