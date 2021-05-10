@@ -147,9 +147,9 @@ using System.Net.Http.Headers;
 using System.Text;
 using Newtonsoft.Json;
 
-private static string organizationName = "[Organization Name]";   // Organization name
-private static string projectName = "[Project Name]";             // Project name
-private static string repositoryName = "[Repo Name]";             // Repository name
+private static string organizationName = "[Organization Name]";  // Organization name
+private static string projectName      = "[Project Name]";       // Project name
+private static string repositoryName   = "[Repo Name]";          // Repository name
 
 /*
     This is here just to simplify the sample, it is recommended to store
