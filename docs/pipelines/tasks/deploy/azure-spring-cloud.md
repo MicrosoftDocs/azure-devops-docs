@@ -34,7 +34,7 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 |`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-SERVER_PORT 5000 -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
 |`JvmOptions`<br/>JVM Options|Deploy|(Optional) A string containing JVM Options. <br/> Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
 |`DotNetCoreMainEntryPath`<br/>.Net Core entry path |Deploy|(Optional) A string containing the path to the .NET executable relative to zip root.|
-|`Version`<br/>Version|Deploy|(Optional)Deployment version, left unchanged if not set.|
+|`Version`<br/>Version|Deploy|(Optional) The deployment version. If not set, the version is left unchanged.|
 
 ## Examples
 
