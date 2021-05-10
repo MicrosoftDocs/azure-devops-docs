@@ -549,9 +549,10 @@ jobs:
         steps:
         - script: echo my first deployment
 ```
-::: moniker-end
 
 ---
+
+::: moniker-end
 
 ## Steps
 
