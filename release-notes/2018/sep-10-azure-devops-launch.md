@@ -4,12 +4,12 @@ author: alexcnichols
 ms.author: alexn
 ms.technology: devops-release-notes
 ms.date: 9/10/2018
-description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
+description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps Services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 ---
 
 # Introducing Azure DevOps
 
-The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of [Azure DevOps](https://azure.microsoft.com/services/devops/) services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
+The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of [Azure DevOps Services](https://azure.microsoft.com/services/devops/). Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 
 - [**Azure Pipelines**](https://azure.microsoft.com/services/devops/pipelines/) to continuously build, test, and deploy to any platform and cloud.
 - [**Azure Boards**](https://azure.microsoft.com/services/devops/boards/) for powerful work management.

@@ -115,6 +115,6 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 -   ![Tip](media/check-your-work-team-codebase/IC572374.png) If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
--   ![Tip](media/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes cannot be submitted to your Team Foundation server, none of the changes is committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
+-   ![Tip](media/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes can't be submitted to Team Foundation Server, none of the changes are committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
 
     The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
