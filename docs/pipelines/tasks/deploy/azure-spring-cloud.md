@@ -48,7 +48,7 @@ variables:
 
 steps:
 - task: AzureSpringCloud@0
-  continueOnError: true #Don't fail the pipeline if a staging deployment doesn't already exist.
+  continueOnError: true # Don't fail the pipeline if a staging deployment doesn't already exist.
   inputs:
     continueOnError: true
     inputs:
