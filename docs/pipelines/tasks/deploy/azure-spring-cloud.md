@@ -25,7 +25,7 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 |`Action`<br/>Action|All|(Required) The action to be performed by this task.<br/>One of: `Deploy`, `Set Production`, `Delete Staging Deployment`<br/>Default value: `Deploy`|
 |`ConnectedServiceName`<br/>Azure Subscription|All|(Required) The name of the [Azure Resource Manager service connection](../../library/connect-to-azure.md). <br/>Argument alias: `azureSubscription`|
 |`AzureSpringCloud`<br/>Azure Spring Cloud|All|(Required) The name or resource ID of the Azure Spring Cloud instance.|
-|`AppName`<br/>App Name|All|(Required) The name of the Azure Spring Cloud app to which to deploy. The app must exist prior to task execution.
+|`AppName`<br/>App Name|All|(Required) The name of the Azure Spring Cloud app to deploy. The app must exist prior to task execution.
 |`UseStagingDeployment`<br/>Use Staging Deployment.|Deploy<br/>Set Production|(Required) If set to `true`, apply the task to whichever [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) is set as the staging deployment at time of execution. If omitted, the `DeploymentName` parameter must be set.<br/>Default value: `true`|
 |`DeploymentName`<br/>Deployment Name |Deploy<br/>Set production|(Required if `UseStagingDeployment` is `false`) The name of the [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) to which the action will apply. If not using blue-green deployments, set this field to  `default`.|
 |`CreateNewDeployment`<br/>Create new deployment |Deploy|(Optional) If set to true and the deployment specified by `DeploymentName` does not exist at execution time, it will be created.<br/>Default value: `false`|
