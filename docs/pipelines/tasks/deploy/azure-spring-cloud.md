@@ -23,7 +23,7 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 |Argument|Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description|
 |--- |--- |--- |
 |`Action`<br/>Action|All|(Required) The action to be performed by this task.<br/>One of: `Deploy`, `Set Production`, `Delete Staging Deployment`<br/>Default value: `Deploy`|
-|`ConnectedServiceName`<br/>Azure Subscription|All|(Required) name of the [Azure Resource Manager service connection](../../library/connect-to-azure.md). <br/>Argument alias: `azureSubscription`|
+|`ConnectedServiceName`<br/>Azure Subscription|All|(Required) The name of the [Azure Resource Manager service connection](../../library/connect-to-azure.md). <br/>Argument alias: `azureSubscription`|
 |`AzureSpringCloud`<br/>Azure Spring Cloud|All|(Required) Name or resource ID of the Azure Spring Cloud instance.|
 |`AppName`<br/>App Name|All|(Required) The name of the Azure Spring Cloud app to which to deploy. The app must exist prior to task execution.
 |`UseStagingDeployment`<br/>Use Staging Deployment.|Deploy<br/>Set Production|(Required) Apply to whichever [deployment](/azure/spring-cloud/concept-understand-app-and-deployment) is set as the staging deployment at time of execution. If omitted, the `DeploymentName` parameter must be set.<br/>Default value: `true`|
