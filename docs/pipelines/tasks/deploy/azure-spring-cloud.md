@@ -61,6 +61,7 @@ steps:
 ### Deploying
 
 #### To Production
+
 The following example deploys to the default production deployment in Azure Spring Cloud. This is the only possible deployment scenario when using the Basic SKU:
 
 ```yml
@@ -116,4 +117,3 @@ steps:
     AppName: customer-api
     UseStagingDeployment: true
 ```
-
