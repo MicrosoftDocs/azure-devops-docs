@@ -32,7 +32,7 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 |`Package`<br/>Package or folder|Deploy|(Required) File path to the package containing the application to be deployed (`.jar` file for Java, `.zip` for .Net Core) or to a folder containing the application source to be built. [Build variables](../../build/variables.md) or [release variables](../../release/variables.md#default-variables) are supported. <br/>Default value: ```$(System.DefaultWorkingDirectory)/**/*.jar```|
 |`RuntimeVersion`<br/>Runtime Version|Deploy|(Optional) The runtime stack for the application.<br/>One of: `Java_8`, `Java_11`, `NetCore_31`,<br/>Default value: `Java_11`|
 |`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-SERVER_PORT 5000 -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
-|`JvmOptions`<br/>JVM Options|Deploy|(Optional) Edit the app's JVM options. A String containing JVM Options. <br/> Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
+|`JvmOptions`<br/>JVM Options|Deploy|(Optional) A string containing JVM Options. <br/> Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
 |`DotNetCoreMainEntryPath`<br/>.Net Core entry path |Deploy|(Optional) A string containing the path to the .NET executable relative to zip root.|
 |`Version`<br/>Version|Deploy|(Optional)Deployment version, left unchanged if not set.|
 
