@@ -81,6 +81,7 @@ steps:
 ```
 
 #### Blue-Green
+
 The following example deploys to a pre-existing staging deployment. This deployment will not receive production traffic until it is set as a production deployment.
 
 ```yml
