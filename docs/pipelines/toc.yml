@@ -784,6 +784,8 @@
       href: tasks/deploy/azure-powershell.md
     - name: Azure Resource Group Deployment
       href: tasks/deploy/azure-resource-group-deployment.md
+    - name: Azure Spring Cloud
+      href: tasks/deploy/azure-spring-cloud.md
     - name: Azure SQL Database Deployment
       href: tasks/deploy/sql-azure-dacpac-deployment.md
     - name: Azure Web App
