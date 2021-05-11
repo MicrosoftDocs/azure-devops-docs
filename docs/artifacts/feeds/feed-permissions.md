@@ -158,8 +158,6 @@ You can also use the `Allow project-scoped builds` feature if you would like to 
 > [!NOTE]
 > If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#adding-usersgroups-permissions-to-a-feed).
 
-If the pipeline is running in a different project than the project that the feed is scoped to, the project that the feed is scoped to must give permissions to Pipeline's project's build service. [How to allow a Pipeline to access a feed in a different project](/azure/devops/artifacts/how-to/project-scoped-feeds-pipeline-project-permissions.md).
-
 ## Sharing packages with everyone in your organization
 
 If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
