@@ -51,6 +51,8 @@ Learn how to create an organization. An organization is used to connect groups o
 
 ::: moniker range="= azure-devops"
 
+[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
+
 [!INCLUDE [create-organization](../../includes/create-organization.md)]
 
 ::: moniker-end
