@@ -47,7 +47,7 @@ Follow these instructions to set up a pipeline for a sample Python app with Anac
 
 ## Add conda to your system path
 
-On hosted agents, conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
+On [hosted agents](../agents/hosted.md), conda is left out of `PATH` by default to keep its Python version from conflicting with other installed versions. The `task.prependpath` agent command will make it available to all subsequent steps.
 
 # [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
 
