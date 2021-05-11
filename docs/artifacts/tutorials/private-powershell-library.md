@@ -28,7 +28,7 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 ## Prerequisites
 
-- [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
+- [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
 - An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
 
 ## Create a PAT to get command-line access to Azure DevOps Services
@@ -52,7 +52,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
     > [!div class="mx-imgBorder"]
     > ![PAT setup](../../repos/git/media/setup-personal-access-token.png)
 
-5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
+5.  Select the [scopes](../../integrate/get-started/authentication/oauth.md#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
 
 6. When you're done, make sure to copy your token to a safe location, as you won't be able to view it afterwards.
 
@@ -118,7 +118,7 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     RootModule = 'Get-Hello.psm1'
     ```
 
-4. The `FunctionsToExport = @()` section is meant to define the module's exported functions. This is simply a list of all exported functions. Take following is an example from `PowerShellGet.psd1`:
+4. The `FunctionsToExport = @()` section is meant to define the module's exported functions. This is simply a list of all exported functions. The following is an example from `PowerShellGet.psd1`:
 
     ```powershell
     FunctionsToExport = @('Install-Module',
@@ -147,6 +147,9 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
                           'Unregister-PSRepository',
                           'Update-ModuleManifest')
     ```
+    
+    > [!TIP]
+    > Your module manifest should export the `Get-Hello` function you created in Step 1.
     
 5. It is also possible to define a list of files as part of your module. Just add this list under `FileList=@()`.
 
@@ -185,7 +188,7 @@ We now have the module and the module manifest. We are ready to package it and p
        <description>The module says hello to the user</description>
        <releaseNotes>This is the newest I know of.</releaseNotes>
        <copyright>Copyright 2019</copyright>
-       <tags>Francis Totten</tags>
+       <tags>PSModule</tags>
        <dependencies>
        </dependencies>
      </metadata>

@@ -32,4 +32,4 @@ The report tracks the team's estimated backlog work&mdash;sum of Effort (Basic o
 
 To learn more, see the following articles: 
 - [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)  
-- [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)  
+- [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)

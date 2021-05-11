@@ -1,11 +1,11 @@
 ---
 title: Using work item form controls
 titleSuffix: Azure Boards 
-description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Use work item form controls to update status, link work items, and more in Azure Boards 
 ms.custom: work-items, seodec18  
 ms.technology: devops-agile
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
 ms.date: 07/09/2020
@@ -101,7 +101,7 @@ While the workflow states differ for different work item types, they usually fol
 </ul>
 </td>
 <td>
-<img src="./guidance/media/ALM_PT_Agile_WF_UserStory.png" alt="Product backlog item workflow, Scrum process"/><br/></td>
+<img src="./guidance/media/ALM_PT_Agile_WF_UserStory.png" alt="Work flow states for the Agile process user story."/><br/></td>
 </tr>
 </tbody>
 </table>

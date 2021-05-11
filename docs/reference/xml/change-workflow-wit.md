@@ -28,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > [!NOTE]  
 > This article describes how to customize a workflow state. If instead, you want to change the *State* assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../../boards/work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../../boards/boards/kanban-basics.md#track-work), or [Task board, Update task status](../../boards/sprints//task-board.md#update-task-status). You can also perform a [bulk update of the *State* for many work items](../../boards/backlogs/bulk-modify-work-items.md).
 > 
-> For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+> For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
 
 [!INCLUDE [temp](../../includes/update-xml-wit.md)] 
@@ -313,4 +313,4 @@ You can define rules that update fields whenever the following events occur:
 
 ### Tool support
 
-You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace.  
+You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace.

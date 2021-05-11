@@ -31,12 +31,4 @@ Backlogs are automatically created when you create a project or add a team. Each
 * To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 
-::: moniker-end 
-
-
-
-
-
-
-
-
+::: moniker-end

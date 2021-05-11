@@ -72,7 +72,7 @@ The detailed view contains two sections:
 
 * **Results**: List of top failed tests based on the total number of failures.  Helps to identify problematic tests and lets you drill into a detailed summary of results.
 
-  ![View chart](media/test-analytics/results-view.png)
+  ![View results.](media/test-analytics/results-view.png)
 
 ### Group test failures
 
@@ -110,7 +110,7 @@ to see failure details in context.
 When looking at the test failures for a single instance of execution, it is often difficult to infer any pattern.
 In the example below, the test failures occurred during a specific period, and knowing this can help narrow down the scope of investigation. 
 
-![View chart](media/test-analytics/infer-pattern.png)
+![Example of test failure pattern.](media/test-analytics/infer-pattern.png)
 
 Another example is tests that exhibit non-deterministic behavior (often referred to as [flaky tests](test-glossary.md)).
 Looking at an individual instance of test execution may not provide any meaningful insights into the behavior.

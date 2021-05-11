@@ -15,7 +15,7 @@ variables:
 
 ### Support for output variables in a deployment job
  
-You can now define output variables in a deployment job's [lifecycle hooks](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
+You can now define output variables in a deployment job's [lifecycle hooks](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#descriptions-of-life-cycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
@@ -50,7 +50,7 @@ While executing deployment strategies, you can access output variables across jo
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
-Learn more on how to [set a multi-job output variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#set-a-multi-job-output-variable)
+Learn more on how to [set a multi-job output variable](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops&preserve-view=true#set-a-multi-job-output-variable)
 
 ### Avoid rollback of critical changes
 

@@ -59,7 +59,7 @@ The build agent must have the following capability:
    <tr>
       <td><code>testResultsFiles</code><br/>Test results files</td>
       <td>
-         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="https://go.microsoft.com/fwlink/?linkid=856077" data-raw-source="[more information](https://go.microsoft.com/fwlink/?linkid=856077)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
+         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[more information](../file-matching-patterns.md)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
          <strong>
             /TEST-
             <em>
@@ -95,11 +95,11 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>javaHomeSelection</code><br/>Set JAVA_HOME by</td>
-       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
+       <td>(Required) Sets JAVA_HOME either by selecting a JDK version that will be discovered during builds or by manually entering a JDK path. Please note that if you already have java installed on agent machine - you can specify it by setting up 'javaHomeOption' as 'path', and 'jdkDirectory' - as a path to jdk installed directory. <br/>Default value: JDKVersion <br/>Argument aliases: <code>javaHomeOption</code></td>
     </tr>
     <tr>
        <td><code>jdkVersion</code><br/>JDK version</td>
-       <td>(Optional) Will attempt to discover the path to the selected JDK version and set JAVA_HOME accordingly. <br/>Default value: default <br/>Argument aliases: <code>jdkVersionOption</code></td>
+       <td>(Optional) Will attempt to discover the path to the selected JDK version and set JAVA_HOME accordingly.<br/><strong>Note:</strong> If running on an agent not hosted by Microsoft, and the requested Java version is not the one indicated by the JAVA_HOME variable set on the agent machine, the task will rely on the variable <code>JAVA_HOME_&lt;version&gt;_&lt;arch&gt;</code> (e.g. <code>JAVA_HOME_8_X64</code>), to locate the necessary JDK. Ensure this variable is set on self-hosted agents for any version and architecture of the JDK that may be requested by this parameter and/or by <code>jdkArchitecture</code>.<br/>Default value: default <br/>Argument aliases: <code>jdkVersionOption</code></td>
     </tr>
     <tr>
        <td><code>jdkUserInputPath</code><br/>JDK path</td>
@@ -107,7 +107,7 @@ The build agent must have the following capability:
     </tr>
     <tr>
        <td><code>jdkArchitecture</code><br/>JDK architecture</td>
-       <td>(Optional) Optionally supply the architecture (x86, x64) of the JDK. <br/>Default value: x64 <br/>Argument aliases: <code>jdkArchitectureOption</code></td>
+       <td>(Optional) Optionally supply the architecture (x86, x64) of the JDK. <br/><strong>Note:</strong> If running on an agent not hosted by Microsoft, and the requested Java architecture is not the one indicated by the JAVA_HOME variable set on the agent machine, the task will rely on the variable <code>JAVA_HOME_&lt;version&gt;_&lt;arch&gt;</code> (e.g. <code>JAVA_HOME_8_X64</code>), to locate the necessary JDK. Ensure this variable is set on self-hosted agents for any version and architecture of the JDK that may be requested by this parameter and/or by <code>jdkVersion</code>.<br/>Default value: x64 <br/>Argument aliases: <code>jdkArchitectureOption</code></td>
     </tr>
     <tr>
        <td><code>mavenVersionSelection</code><br/>Maven version</td>
@@ -163,7 +163,7 @@ The build agent must have the following capability:
 
 ## Example
 
-[Build and Deploy your Java application to an Azure Web App](../../apps/java/build-maven.md)
+[Build and Deploy your Java application to an Azure Web App](../../ecosystems/java.md)
 
 ## Open source
 

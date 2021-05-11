@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/27/2020
 ---
 
@@ -117,18 +117,17 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 #### [Preview page](#tab/preview-page) 
 
-> [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
+> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
 #### [Current page](#tab/current-page) 
 
-> [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
 ::: moniker-end    
 
 * * *
-* 
+
 ::: moniker range=">= tfs-2017 < azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
@@ -137,6 +136,8 @@ In this example, we grant members assigned to the Test Admin group permissions t
 > ![Set project-level permissions for a custom group, Team Admin](media/set-permissions-project-level-dialog.png)  
 
 ::: moniker-end    
+
+<a id="test-controllers" /> 
 
 ## Set permissions to manage test controllers
 
@@ -161,7 +162,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
+> ![Screenshot of set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
 
 * * *
 
@@ -181,3 +182,4 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 - [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
+- [Troubleshoot permissions](troubleshoot-permissions.md)

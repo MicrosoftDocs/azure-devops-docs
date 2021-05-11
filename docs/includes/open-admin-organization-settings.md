@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Open organization settings
 
-Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](/azure/devops/organizations/settings/about-settings#admin).
+Organization settings configure resources for all projects or the entire organization. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../organizations/settings/about-settings.md#admin).
 
 
 ::: moniker range="azure-devops"

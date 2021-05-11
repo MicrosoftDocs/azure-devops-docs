@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure Check-Out Settings
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Administrators of Team Foundation version control can configure source control check-out settings. Check-out settings in Team Foundation version control enable files to be edited by more than one person at the same time. The following procedure shows you how to configure check-out settings.
 
@@ -38,4 +38,4 @@ To configure check-out settings, you must have the **Edit project-level informat
 
 #### Tasks
 
-[Enable Team Foundation Version Control to Get the Latest Files on Check-Out](https://msdn.microsoft.com/library/bb385989)
+[Enable Team Foundation Version Control to Get the Latest Files on Check-Out](/previous-versions/visualstudio/visual-studio-2010/bb385989(v=vs.100))

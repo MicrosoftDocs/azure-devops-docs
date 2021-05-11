@@ -54,7 +54,7 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
   
 -   [Define sprints](../../boards/sprints/define-sprints.md) for your team.  
   
--   [Define tasks for each product backlog item](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) you're working on within the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (**Iteration**) and to your team's default **Area** path.  
+-   [Define tasks for each product backlog item](../../boards/sprints/assign-work-sprint.md) you're working on within the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (**Iteration**) and to your team's default **Area** path.  
   
 -   Specify and update the **Remaining Work** field for each task or subtask as it is worked on.  
   
@@ -76,4 +76,4 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
   
 ## Related notes
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
-[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) 
+[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

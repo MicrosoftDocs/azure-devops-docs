@@ -7,8 +7,8 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/11/2021
 ---
 
 # 6. Update and monitor your Taskboard
@@ -37,26 +37,40 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
-* To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+* To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
+::: moniker range=">= azure-devops"
 
 > [!NOTE]  
-> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
+> Users assigned **Stakeholder** access can't exercise these **Taskboard** features: update fields displayed on cards or use the **Planning** pane to change the sprint assignment.  
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+> [!NOTE]  
+> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
+
+::: moniker-end
 
 ## Open the sprint Taskboard for your team
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+1. From your web browser, open the sprint backlog for your team.
+
+   1. Check that you have selected the right **Project**
+   2. Choose **Boards>Sprints**
+   3. Select the correct **Team** from the team selector menu
+   4. Choose **Taskboard**
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
@@ -78,7 +92,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/taskboard/open-taskboard-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
@@ -179,7 +193,7 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 
 ::: moniker range=">= azure-devops-2020"
 > [!NOTE]
-> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 ::: moniker-end
 
 
@@ -260,10 +274,10 @@ With this view, you can quickly see all the tasks associated with each team memb
 	> [!div class="mx-imgBorder"]
 	> ![Group by people](media/taskboard/group-by-people-agile.png)
 
-1. To filter on the tasks for a specific team member, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, and then select their name from the **Assigned to** filter box.
+1. To filter on the tasks for a specific team member, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then select their name from the **Assigned to** filter box. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](media/taskboard/filter-by-a-team-member.png)
+	> ![Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)
 
 ::: moniker-end
 
@@ -331,13 +345,16 @@ Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md
 
 ## Related articles
 
-As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
+As you can see, the Taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
-*	[Scrum best practices](best-practices-scrum.md)
-*	[Sprint planning](assign-work-sprint.md)
-*	[Schedule sprints](define-sprints.md)
-*	[Customize a sprint Taskboard](customize-taskboard.md)
-*	[Capacity planning](../sprints/set-capacity.md)
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+- [Scrum best practices](best-practices-scrum.md)
+- [Sprint planning](assign-work-sprint.md)
+- [Schedule sprints](define-sprints.md)
+- [Customize a sprint Taskboard](customize-taskboard.md)
+- [Capacity planning](../sprints/set-capacity.md)
+ 
 
 <!---
 <a id="task-board-controls">  </a>
@@ -354,7 +371,7 @@ As you can see, the taskboard provides a lot of support for your Scrum activitie
 | ![Settings icon](../media/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |
 | ![full screen icon](../media/icons/fullscreen_icon.png)/![exit full screen icon](../media/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md).
+See also [Backlog keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 -->
 

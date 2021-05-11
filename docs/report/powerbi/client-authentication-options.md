@@ -190,13 +190,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Select the correct URL to the OData Feed and click Edit." style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit, on-premises version." style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
@@ -204,13 +204,13 @@ If you receive an access denied message, you may need to change your authenticat
  
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" />
 
 	::: moniker-end
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" /> 
 
 	::: moniker-end
 

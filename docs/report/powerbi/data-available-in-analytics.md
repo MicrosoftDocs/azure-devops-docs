@@ -21,7 +21,7 @@ Analytics provides the reporting platform for Azure DevOps. Analytics is general
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]   
-> For Azure DevOps Server, you can use Analytics in place of SQL Server Reporting Services or along side it. However, if you plan to use the Inheritance process model to customize work tracking, you can only use Analytics for reporting, the project collection must not be configured to support reporting. To learn more about the Inheritance process model, see [About process customization and inherited processes](/azure/devops/organizations/settings/work/inheritance-process-model). 
+> For Azure DevOps Server, you can use Analytics in place of SQL Server Reporting Services or along side it. However, if you plan to use the Inheritance process model to customize work tracking, you can only use Analytics for reporting, the project collection must not be configured to support reporting. To learn more about the Inheritance process model, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ Currently, you can access the following data from Analytics. This information wa
 > [!NOTE]   
 > Analytics doesn't support reporting on plain text and HTML fields at this time. 
 
-As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/tag/reporting/).
+As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/).
 
 
 ## Try this next

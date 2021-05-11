@@ -12,11 +12,11 @@ With this sprint, we are excited to announce the general availability of Azure P
 
 ## Features
 
-### Pipelines
+### Azure Pipelines
 
 [!INCLUDE [sprint-169-update-links](includes/pipelines/sprint-169-update-links.md)]
 
-## Pipelines
+## Azure Pipelines
 
 [!INCLUDE [sprint-169-update](includes/pipelines/sprint-169-update.md)]
 

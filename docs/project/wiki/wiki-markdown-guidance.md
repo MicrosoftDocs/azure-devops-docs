@@ -9,12 +9,12 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020 
+ms.date: 04/26/2021 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -53,9 +53,9 @@ Consistency is maintained in the formatting in TOC.
 
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
-2.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+- [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -71,6 +71,8 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 > [!NOTE]
 > Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> 
+> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 
@@ -130,7 +132,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
-You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 > ![Query Results Icon](media/query_selector_icon.png)
 >
@@ -186,7 +188,11 @@ Enter the pound sign (`#`), and then enter a work item ID.
 ## HTML tag support in wiki pages
 
 In wiki pages, you can also create rich content using HTML tags.
-(You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.)
+
+> [!TIP]
+> You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
+
+
  ```HTML
 <p>
   

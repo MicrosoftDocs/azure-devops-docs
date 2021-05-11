@@ -26,7 +26,7 @@ For approvals we follow segregation of roles between infrastructure owners and d
 The experience is similar to configuring approvals for environments. When an approval is pending on a resource referenced in a stage, the execution of the pipeline waits until the pipeline is manually approved.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_06.png)
+> ![Enhancements to approvals in YAML pipelines.](../../media/158_06.png)
 
 ### Container structure testing support in Azure Pipeline
 ​
@@ -37,12 +37,12 @@ You can validate the structure of an image based on four categories of tests whi
 Input the config file and image details
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_01.png)
+> ![Container structure testing support in Azure Pipeline.](../../media/158_01.png)
 
 Test data and summary 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_02.png)
+> ![Test data and summary.](../../media/158_02.png)
 
 ### Flaky bug management and resolution
 
@@ -62,7 +62,7 @@ When a bug report is resolved or closed, we will automatically unmark the test a
 The Azure Pipelines app for Slack and Microsoft Teams now supports multi-stage YAML pipelines for CI and CD. With this enhancement, you will get notified on various events related to YAML pipelines. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_12.png)
+> ![Enhancements to Azure Pipelines app for Slack and Microsoft Teams.](../../media/158_12.png)
 
 Events supported for multi-stage YAML pipelines
 * Run state changed
@@ -71,14 +71,14 @@ Events supported for multi-stage YAML pipelines
 * Run stage approval completed
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_07.png)
+> ![Events supported for multi-stage YAML pipelines.](../../media/158_07.png)
 
 **URL unfurling and messaging extensions**
 
-We've added a [messaging extension](https://docs.microsoft.com/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Microsoft Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
+We've added a [messaging extension](/microsoftteams/platform/concepts/messaging-extensions/messaging-extensions-overview) for the Azure Pipelines app for Microsoft Teams. You can now search for pipelines and share relevant details about the pipeline as a card in the channel. URL unfurling helps you initiate discussions around pipelines and have meaningful & contextual conversations.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_08.png)
+> ![URL unfurling and messaging extensions.](../../media/158_08.png)
 
 ### Updates to hosted pipelines images
 

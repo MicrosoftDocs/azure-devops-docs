@@ -192,7 +192,7 @@ To deploy to an Azure Web App, add the following snippet at the end of your **az
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

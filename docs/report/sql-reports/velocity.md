@@ -21,7 +21,7 @@ If your team has completed multiple sprints, you can forecast release and produc
   
 - Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.  
   
-  You can access similar information from the [velocity chart](../guidance/team-velocity.md) provided in the web portal.  
+  You can access similar information from the [velocity chart](../dashboards/team-velocity.md) provided in the web portal.  
   
 > [!NOTE]
 >  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
@@ -66,4 +66,4 @@ If your team has completed multiple sprints, you can forecast release and produc
 ## Related notes
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
  [Define iteration paths (sprints)](../../organizations/settings/set-iteration-paths-sprints.md)   
- [Velocity chart and widget](../guidance/team-velocity.md)
+ [Velocity chart and widget](../dashboards/team-velocity.md)

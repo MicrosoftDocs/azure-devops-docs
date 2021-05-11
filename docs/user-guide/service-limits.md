@@ -49,7 +49,7 @@ See [Rate limits documentation](../integrate/concepts/rate-limits.md) for detail
 
 ## Data import
 - Limited to to 300 projects per collection
-- See [data import documentation](../migrate/index.md) for details
+- See [data import documentation](../migrate/migration-overview.md) for details
 
 ## Next steps 
 

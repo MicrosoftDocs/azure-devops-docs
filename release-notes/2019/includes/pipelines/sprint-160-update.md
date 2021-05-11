@@ -6,10 +6,10 @@ ms.topic: include
 
 We've been working on an updated user experience to manage your pipelines. These updates make the pipelines experience modern and consistent with the direction of Azure DevOps. Moreover, these updates bring together classic build pipelines and multi-stage YAML pipelines into a single experience. For example, the following capabilities are included in the new experience; viewing and managing multiple stages, approving pipeline runs, ability to scroll all the way back in logs while a pipeline is still in progress, and per-branch health of a pipeline.
 
-Thank you to all who have tried the new experience. If you haven't tried it, enable **Multi-stage pipelines** in the preview features. To learn more about multi-stage pipelines, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+Thank you to all who have tried the new experience. If you haven't tried it, enable **Multi-stage pipelines** in the preview features. To learn more about multi-stage pipelines, see the documentation [here](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops&preserve-view=true) .
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_07.png)
+> ![Multi-stage pipelines UX.](../../media/160_07.png)
 
 Thanks to your feedback, we addressed the following in the last two updates.
 
@@ -19,7 +19,7 @@ Thanks to your feedback, we addressed the following in the last two updates.
 4. Make it easier to navigate between tasks when reviewing logs.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_04.png)
+> ![Capabilities included in the new experience.](../../media/160_04.png)
 
 > [!NOTE]
 > In the next update, we plan to turn this feature on by default for everyone. You will still have the option to opt-out of the preview. A few weeks after that, the feature will be made generally available.
@@ -74,7 +74,7 @@ In YAML pipelines, we follow a resource owner-controlled approval configuration.
 You can now use **advanced approval options** to configure approval policies like requester should not approve, require approval from a subset of users and approval timeout.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_14.png)
+> ![Approval policies for YAML pipelines.](../../media/160_14.png)
 
 ### ACR as a first-class pipeline resource
 
@@ -135,24 +135,24 @@ In the pipeline run summary view, you can see:
   * The **resource version that triggered the run**. Now, your pipeline can be triggered upon completion of another Azure pipeline run or when a container image is pushed to ACR.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/160_16.png)
+    > ![Resource version that triggered the run.](../../media/160_16.png)
 
   * The **commits** that are consumed by the pipeline. You can also find the breakdown of the commits by each resource consumed by the pipeline.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/160_09.png)
+    > ![Commits that are consumed by the pipeline.](../../media/160_09.png)
 
   * The **work items** that are associated with each resource consumed by the pipeline.
 
   * The **artifacts** that are available to be used by the run.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/160_10.png)
+    > ![Artifacts that are available to be used by the run.](../../media/160_10.png)
 
 In the environment's deployments view, you can see the commits and work items for each resource deployed to the environment.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_11.png)
+> ![Commits and work items for each resource deployed to the environment.](../../media/160_11.png)
 
 ### Simplified resource authorization in YAML pipelines
 
@@ -161,7 +161,7 @@ A resource is anything used by a pipeline that is outside the pipeline. Resource
 We are now making it easier to manage resource authorizations. Instead of failing the run, the run will wait for permissions on the resources at the start of the stage consuming the resource. A resource owner can view the pipeline and authorize the resource from the Security page.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_17.png)
+> ![Simplified resource authorization in YAML pipelines.](../../media/160_17.png)
 
 ### Improve pipeline security by restricting the scope of access tokens
 
@@ -185,21 +185,21 @@ Every job that runs in Azure Pipelines gets an access token. The access token is
 You can now define a set of policies and add the policy evaluation as a check on an environment for container image artifacts. When a pipeline runs, the execution pauses before starting a stage that uses the environment. The specified policy is evaluated against the available metadata for the image being deployed. The check passes when the policy is successful and marks the stage as failed if the check fails.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_15.png)
+> ![Evaluate artifact check.](../../media/160_15.png)
 
 ### Markdown support in automated test error messages
 
-We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
+We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_03.png)
+> ![Markdown support in automated test error messages.](../../media/160_03.png)
 
 ### Diagnosing cron schedules in YAML
 
 We have seen a steady increase in the use of cron syntax for specifying schedules in your YAML pipelines. As we listened to your feedback, we heard that it was hard for you to determine whether Azure Pipelines had processed your syntax correctly. Previously, you would have to wait for the actual time of the scheduled run to debug schedule problems. To help you diagnose branch/syntax errors, we added a new action menu for pipeline. The **Scheduled runs** in the Run pipeline menu will give you a preview of the upcoming few scheduled runs for your pipeline to help you diagnose errors with your cron schedules.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_12.png)
+> ![Diagnosing cron schedules in YAML.](../../media/160_12.png)
 
 ### Updates to the ARM template deployment task
 
@@ -210,7 +210,7 @@ Previously, we didn't filter the service connections in the ARM template deploym
 With this update, we added hub level security for service connections. Now, you can add/remove users, assign roles and manage access in a centralized place for all the service connections.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/160_18.png)
+> ![Project level security for service connections.](../../media/160_18.png)
 
 ### Ubuntu 18.04 pool
 

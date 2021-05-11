@@ -60,7 +60,7 @@ The code coverage summary can be viewed on the **Summary** tab on the pipeline r
 
 The results can be viewed and downloaded on the **Code coverage** tab.
 
-![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
+![View and download results on the Code coverage tab.](media/review-code-coverage-results/view-code-coverage-summary.png)
 
 > [!NOTE]
 > Merging code coverage results from multiple [test runs](test-glossary.md) is

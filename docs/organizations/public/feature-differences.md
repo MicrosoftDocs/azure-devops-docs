@@ -30,7 +30,7 @@ A project member has access to features based on the access level assigned. Non-
 	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
 * **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
-* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members.
+* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members. PowerBI integeration in general is not supported.
 * Settings and administrative pages are hidden.
 
 > [!NOTE]
@@ -41,7 +41,7 @@ In addition, non-members have no access or limited access to the following featu
 * Any form of editing or creating artifacts such as files, work items, and pipelines
 * Favoriting and following existing artifacts
 * Information about members of a project is limited to their name and picture. Email addresses and other contact information aren't available. Also, lists of artifacts cannot be filtered by identity.
-* The ability to switch between two public projects in the same organization; non-members must navigate directly to a public project using a URL.
+* The ability to switch between two public projects in the same organization; non-members must go directly to a public project using a URL.
 * The ability to perform code or work item semantic searches across an organization isn't supported.
 
 ## Feature and functional support based on permissions
