@@ -131,7 +131,7 @@ You can check in an [`environment.yml`](https://conda.io/docs/user-guide/tasks/m
 
 The following YAML installs the `scipy` package in the conda environment named `myEnvironment`.
 
-# [Hosted Ubuntu 16.04](#tab/ubuntu-16-04)
+# [Hosted Ubuntu 18.04](#tab/ubuntu-18-04)
 
 ```yaml
 - bash: |
