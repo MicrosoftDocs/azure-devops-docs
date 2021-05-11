@@ -14,7 +14,7 @@ ms.topic: include
 3. Confirm information, and then select **Continue**.
 
 > [!IMPORTANT]
-> Currently, organization names are limited to letters from the English alphabet.
+> Currently, you can only use letters from the English alphabet in your organization name.
 
    ![Create your organization in Azure DevOps](/azure/devops/media/name-your-organization.png)
 

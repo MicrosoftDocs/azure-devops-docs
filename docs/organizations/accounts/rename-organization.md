@@ -40,7 +40,7 @@ To change your organization URL, you need at least Basic access and organization
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if you want.
 
 > [!IMPORTANT]
-> Currently, organization names are limited to letters from the English alphabet.
+> Currently, you can only use letters from the English alphabet in your organization name.
 
    ![Rename you organization](media/rename-vso-organization/rename-organization-new.png)
 
