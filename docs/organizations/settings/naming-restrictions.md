@@ -9,7 +9,7 @@ ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 10/22/2020
+ms.date: 05/11/2021
 ---
 
 # Naming restrictions and conventions  
@@ -105,6 +105,8 @@ User accounts that you add must conform to the following restrictions.
    :::column-end:::
 :::row-end:::
 ---
+
+[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
 <a id="GroupAccountNames">   </a>
 
