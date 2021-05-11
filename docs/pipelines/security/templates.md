@@ -2,8 +2,8 @@
 title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
-ms.reviewer: macoope
-ms.date: 08/03/2020
+ms.reviewer: vijayma
+ms.date: 02/24/2021
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -93,6 +93,22 @@ In restricted mode, most of the agent's services such as uploading artifacts and
     commands: restricted
 ```
 
+One of the commands still allowed in restricted mode is the `setvariable` command. Because pipeline variables are exported as environment variables to subsequent tasks, tasks that output user-provided data (for example, the contents of open issues retrieved from a REST API) can be vulnerable to injection attacks. Such user content can set environment variables that can in turn be used to exploit the agent host. To disallow this, pipeline authors can explicitly declare which variables are settable via the `setvariable` logging command. Specifying an empty list disallows setting all variables. 
+
+```yaml
+# this task will fail because the task is only allowed to set the 'expectedVar' variable, or a variable prefixed with "ok"
+- task: PowerShell@2
+  target:
+    commands: restricted
+    settableVariables:
+    - expectedVar
+    - ok*
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "##vso[task.setvariable variable=BadVar]myValue"
+```
+
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
@@ -103,10 +119,10 @@ jobs:
 - job: buildNormal
   steps:
   - script: echo Building the normal, unsensitive part
-- ${{ if eq(variables['Build.SourceBranchName'], 'refs/heads/master') }}:
-  - job: buildMasterOnly
+- ${{ if eq(variables['Build.SourceBranchName'], 'refs/heads/main') }}:
+  - job: buildMainOnly
     steps:
-    - script: echo Building the restricted part that only builds for master branch
+    - script: echo Building the restricted part that only builds for main branch
 ```
 
 ### Require certain syntax with extends templates

@@ -26,6 +26,17 @@ Analytics supports several dashboard widgets that take advantage of the power of
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
 
+
+
+## Prerequisites
+
+- Analytics widget data is calculated from the Analytics service.  
+
+::: moniker range="< azure-devops"
+- For Analytics widgets to display correctly, the Analytics service must be enabled on your on-premises Azure DevOps Server. To learn more, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/boards-disabled.md)]
 
 ## Burndown
@@ -62,7 +73,7 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 > [!div class="mx-imgBorder"] 
 > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
-To learn more, see [Configure and monitor sprint burndown ](configure-sprint-burndown.md).  
+To learn more, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
 
 
 ## Cumulative Flow Diagram (CFD)

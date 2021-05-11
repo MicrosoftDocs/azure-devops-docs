@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Checkout (or Edit) command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Checks out a file and changes its pending change status to Edit. You can call this command using either **Checkout** or **Edit**.
 
@@ -45,10 +45,10 @@ Checks out program.cs.
 ### Check out two items
 
 ```
-c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.cs
 ```
 
-Checks out the files program1.cs and program2.c.
+Checks out the files program1.cs and program2.cs.
 
 ## Work in Visual Studio
 

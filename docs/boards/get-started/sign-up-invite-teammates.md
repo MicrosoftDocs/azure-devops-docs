@@ -5,7 +5,6 @@ description: Quickstart guide to signing up and inviting others to join a team p
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.topic: quickstart
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -18,7 +17,7 @@ ms.date: 12/13/2019
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](what-is-azure-boards-basic-process.md).
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project that uses the [Basic process for work tracking](./what-is-azure-boards.md).
 
 You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 
@@ -46,18 +45,18 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 3. Enter a password you want to use with Azure DevOps and choose **Next**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter your password and sign in](media/acquisition/enter-password-for-devops.png)
+	> ![Enter a password.](media/acquisition/enter-password-for-devops.png)
 
 3. Check your email account and enter the code provided. Choose  **Next**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter your password and sign in](media/acquisition/verify-new-account.png)
+	> ![Enter the code provided.](media/acquisition/verify-new-account.png)
 
 	An organization is created based on your sign-in account name. Sign in to your organization at any time by specifying (`https://dev.azure.com/{yourorganization}`).
 
 4. A project is created based on your sign-in account name. You can make changes to the settings shown, or change them later. To get started with Azure DevOps, choose **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](media/acquisition/create-project-new-account.png)
+   ![Choose Continue to get started with Azure DevOps.](media/acquisition/create-project-new-account.png)
 
 	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
@@ -76,12 +75,12 @@ If you have a Microsoft account, follow these steps to sign up for Azure Boards.
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](/azure/devops/media/enter-password-sign-in.png)
+   ![Enter your password and sign in.](/azure/devops/media/enter-password-sign-in.png)
 
 4. To get started with Azure Boards, select **Continue**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
+	> ![Select Continue.](/azure/devops/media/sign-up-azure-devops.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
 
@@ -117,7 +116,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 	`https://dev.azure.com/{yourorganization}`
 
-For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
 Your next step is to  [create a project](#create-project). 
 
@@ -130,7 +129,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project dialog](media/sign-up/nf-create-project.png)
+	> ![Create a project.](media/sign-up/nf-create-project.png)
 
 	The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 	
@@ -168,7 +167,7 @@ You can add and invite others to work on your project by adding their email addr
         - **Project Administrators**: Assign to users who will configure project resources.  
 		
 	> [!NOTE]  
-	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 
@@ -201,6 +200,4 @@ You can rename your project or change it's visibility. To learn more about manag
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [Manage organizations](../../organizations/accounts/organization-management.md)
 - [About access levels](../../organizations/security/access-levels.md)
-- [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
-
-
+- [Define organizations and projects](../../user-guide/plan-your-azure-devops-org-structure.md)

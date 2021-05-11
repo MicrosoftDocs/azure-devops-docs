@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to manage portfolios with a calendar view of features and epics  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -178,14 +178,14 @@ You can customize your view of the Feature Timeline with the controls shown in t
 	A dialog opens showing the child items of the feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature Timeline controls](media/feature-timeline/drill-down-2.png)
+	> ![Dialog showing the child items of the feature.](media/feature-timeline/drill-down-2.png)
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
 
 1.	Or, you can also drag and drop a child item to a new iteration. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature Timeline controls](media/feature-timeline/drill-down-3.png)
+	> ![Drag and drop a child item to a new iteration.](media/feature-timeline/drill-down-3.png)
 
 
 ## Q & A

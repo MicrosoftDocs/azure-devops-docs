@@ -73,7 +73,7 @@ steps:
     action: Push module images
     containerregistrytype: Azure Container Registry
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-    azureContainerRegistry: $(azureContainerRegistry)
+    azureContainerRegistry: {"loginServer":"$(azureContainerRegistry)", "id":"/subscriptions/$(azureSubscriptionEndpoint)"}
     templateFilePath: deployment.template.json
     defaultPlatform: amd64  
 ```
@@ -87,9 +87,9 @@ steps:
 |`connectedServiceNameARM` <br/>Azure subscription contains IoT Hub|(Required) Select an Azure subscription that contains an IoT Hub <br/>Argument aliases: `azureSubscription`|
 |`iothubname` <br/>IoT Hub name|(Required) Select the IoT Hub|
 |`deviceOption` <br/>Choose single/multiple device|(Required) Choose to deploy to a single device, or to multiple devices specified by using tags.|
-|`deploymentid` <br/>IoT Edge deployment ID|(Required) Enter the IoT Edge Deployment ID. If an ID already exists, it will be overridden. Up to 128 lowercase letters, numbers, and the characters `- : + % _ # * ? ! ( ) , = @ ;`. [More details](https://docs.microsoft.com/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment). <br/>Default value: $(System.TeamProject)-devops-deployment.|
+|`deploymentid` <br/>IoT Edge deployment ID|(Required) Enter the IoT Edge Deployment ID. If an ID already exists, it will be overridden. Up to 128 lowercase letters, numbers, and the characters `- : + % _ # * ? ! ( ) , = @ ;`. [More details](/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment). <br/>Default value: $(System.TeamProject)-devops-deployment.|
 |`priority` <br/>IoT Edge deployment priority|(Required) A positive integer used to resolve deployment conflicts. When a device is targeted by multiple deployments it will use the one with highest priority or, in the case of two deployments with the same priority, the one with the latest creation time. <br/>Default value: 0.|
-|`targetcondition` <br/>IoT Edge device target condition|(Required) Specify the target condition of the devices to which you want to deploy. For example, tags.building=9 and tags.environment='test'. Do not include double quotes. [More details](https://docs.microsoft.com/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment).|
+|`targetcondition` <br/>IoT Edge device target condition|(Required) Specify the target condition of the devices to which you want to deploy. For example, tags.building=9 and tags.environment='test'. Do not include double quotes. [More details](/azure/iot-edge/how-to-deploy-monitor#monitor-a-deployment).|
 |`deviceId` <br/>IoT Edge device ID|(Required) Specify the IoT Edge Device ID.|
 
 The following YAML example deploys module images:
@@ -105,9 +105,3 @@ steps:
     deviceOption: 'Single Device'
     deviceId: deviceId
 ```
-
-
-
-
-
-

@@ -4,12 +4,12 @@ author: alexcnichols
 ms.author: alexn
 ms.technology: devops-release-notes
 ms.date: 9/10/2018
-description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
+description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps Services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 ---
 
 # Introducing Azure DevOps
 
-The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of [Azure DevOps](https://azure.microsoft.com/services/devops/) services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
+The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of [Azure DevOps Services](https://azure.microsoft.com/services/devops/). Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
 
 - [**Azure Pipelines**](https://azure.microsoft.com/services/devops/pipelines/) to continuously build, test, and deploy to any platform and cloud.
 - [**Azure Boards**](https://azure.microsoft.com/services/devops/boards/) for powerful work management.
@@ -75,7 +75,7 @@ To get started, install the app [from the GitHub Marketplace](https://github.com
 
 Azure Pipelines provides cloud-hosted pipelines for Linux, macOS, and Windows with unlimited minutes and 10 free parallel jobs for open source.
 
-See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=azure-devops&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=azure-devops) documentation for more information.
+See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=azure-devops&preserve-view=true&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=azure-devops&preserve-view=true) documentation for more information.
 
 ### Configure builds using YAML
 
@@ -83,7 +83,7 @@ See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=
 > To use this capability, you must have the **Build YAML pipelines** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your organization.
 
 
-YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-job-configuration).
+YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops&preserve-view=true) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops&preserve-view=true) , [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops&preserve-view=true), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&preserve-view=true&tabs=yaml#multi-job-configuration).
 
 ### Create YAML build pipelines using the new wizard
 
@@ -117,7 +117,7 @@ Build badges embedded into the homepage of a repository are a common way to show
 
 ### Leverage even more tools on Microsoft-hosted Linux agents
 
-In this update, several build, test, and deployment tools have been added to the [Microsoft-hosted Linux agents](/azure/devops/pipelines/agents/hosted?view=azure-devops#software), which removes the need to install them yourself during a build or release.
+In this update, several build, test, and deployment tools have been added to the [Microsoft-hosted Linux agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true#software), which removes the need to install them yourself during a build or release.
 
 - Erlang/OTP
 - Firefox
@@ -179,13 +179,13 @@ Environment | Stage | A logical and independent entity that represents where you
 Concurrent job/pipeline | Parallel job |  A parallel job gives you the ability to run a single build or release job at a time in your organization. With more parallel jobs available, you can run more build and release jobs at the same time.
 Service endpoint | Service connection | A group of settings, such as credentials, used to connect to external services to execute tasks in a build or release.
 
-See the [Concepts](/azure/devops/pipelines/?view=azure-devops) documentation for more information.
+See the [Concepts](/azure/devops/pipelines/?view=azure-devops&preserve-view=true) documentation for more information.
 
 ## Marketplace
 
 ### Leverage the latest extension categories
 
-As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=azure-devops#required-attributes) documentation for more information.
+As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=azure-devops&preserve-view=true#required-attributes) documentation for more information.
 
 ## Administration
 
@@ -199,7 +199,7 @@ Although we've moved to the new `dev.azure.com` domain name as the URL for new o
 We will make the move to the new URL gradually based on customer feedback. It will start as opt-in, then later we will make it the default for organizations. We have yet to set a timeline for deliberately moving organizations away from the `visualstudio.com` domain.
 
 > [!IMPORTANT]
-> To ensure your organization works with any existing firewall or IP restrictions, ensure that the appropriate domain names and IP addresses are allowed. See this [agent Q&A section](/azure/devops/pipelines/agents/v2-linux?view=azure-devops#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) for more information.
+> To ensure your organization works with any existing firewall or IP restrictions, ensure that the appropriate domain names and IP addresses are allowed. See this [agent Q&A section](/azure/devops/pipelines/agents/v2-linux?view=azure-devops&preserve-view=true#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) for more information.
 
 ### Add Stakeholder users to save on Azure Pipelines license costs
 

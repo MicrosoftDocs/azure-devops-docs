@@ -18,6 +18,8 @@ monikerRange: '>= tfs-2017'
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 
+
+
 ## DACPAC
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
@@ -60,9 +62,9 @@ See also [authentication information when using the Azure SQL Database Deploymen
 Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
 
 ```sql
-  USE [master]
+  USE [main]
   GO
-  IF NOT EXISTS (SELECT name FROM master.sys.databases WHERE name = N'DatabaseExample')
+  IF NOT EXISTS (SELECT name FROM main.sys.databases WHERE name = N'DatabaseExample')
   CREATE DATABASE [DatabaseExample]
   GO
 ```
@@ -81,8 +83,8 @@ param
   [String] [Parameter(Mandatory = $true)] $ResourceGroup,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
-$agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $
+$agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
+New-AzSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $ServerName -FirewallRuleName $AzureFirewallName -StartIPAddress $agentIp -EndIPAddress $agentIP
 ```
 
 ### Classic
@@ -99,11 +101,11 @@ param
 $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
-  $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
+  $agentIP = (New-Object net.webclient).downloadstring("https://api.ipify.org")
   New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 function Update-AzureSQLServerFirewallRule{
-  $agentIP= (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
+  $agentIP= (New-Object net.webclient).downloadstring("https://api.ipify.org")
   Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
@@ -129,7 +131,7 @@ param
   [String] [Parameter(Mandatory = $true)] $ResourceGroup,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
-Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
+Remove-AzSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroup
 ```
 
 ### Classic
@@ -237,11 +239,11 @@ To do this in YAML, you can use one of these techniques:
 * Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
-The following example shows how to use step conditions to deploy only those builds that originate from master branch.
+The following example shows how to use step conditions to deploy only those builds that originate from main branch.
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     azureSubscription: '<Azure service connection>'
     ServerName: '<Database server name>'
@@ -262,7 +264,12 @@ YAML pipelines aren't available in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-In your release pipeline you can implement various checks and conditions to control the deployment.
+
+In your release pipeline, you can implement various checks and conditions to control the deployment.
+
+> [!NOTE]
+> In some setups, you might need to allowlist the range of IP addresses for the specific region that is updated in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519). Learn about [networking Microsoft-hosted agents](../agents/hosted.md#networking).
+
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
@@ -276,7 +283,7 @@ To learn more, see [Release, branch, and stage triggers](../release/triggers.md)
 
 **SQL Azure Dacpac Deployment** may not support all SQL server actions
 that you want to perform. In these cases, you can simply use Powershell or command line scripts to run the commands you need.
-This section shows some of the common use cases for invoking the [SqlPackage.exe tool](https://docs.microsoft.com/sql/tools/sqlpackage-download).
+This section shows some of the common use cases for invoking the [SqlPackage.exe tool](/sql/tools/sqlpackage-download).
 As a prerequisite to running this tool, you must use a self-hosted agent and have the tool installed on your agent.
 
 > [!NOTE]

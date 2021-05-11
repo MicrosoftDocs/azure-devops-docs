@@ -29,7 +29,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Sign up for Azure Artifacts
-            url: sign-up-azure-artifacts.md
+            url: ./start-using-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
             url: ./concepts/best-practices.md
           - text: Artifacts in Azure Pipelines
@@ -124,8 +124,6 @@ landingContent:
         links:
           - text: Publish to a Maven feed
             url: ../pipelines/artifacts/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-          - text: Publish a Maven package from the command line
-            url: ./maven/publish.md
           - text: Install Maven artifacts
             url: ./maven/install.md
           - text: Use packages from Maven Central

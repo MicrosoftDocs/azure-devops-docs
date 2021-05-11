@@ -15,4 +15,4 @@ In addition to Project administrators, Azure DevOps now allows Team admins to su
 
 As enhancement to our MS Teams and Slack integration you now can choose to subscribe to one or more events on a pull request such as comments, code push, updates, and merge attempts.
 
-![img](../../media/168-general-0-0.png)
+![Notifications for Repos events.](../../media/168-general-0-0.png)

@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: How to Call a REST API | Extensions for Azure DevOps 
-description: How to call a REST API in your extension for Azure DevOps and Team Foundation Server (TFS).
+description: How to call a REST API in your extension for Azure DevOps.
 ms.assetid: 99794e1e-0127-4e65-83fb-93a71f496d93
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -20,7 +20,7 @@ To call a REST API from your extension, get the client service first, and then u
 
 ## Client services
 
-You can find the [full list of available REST clients and their references here](/previous-versions/azure/devops/docs/extend/reference/client/rest-clients).
+You can find the [full list of available REST clients and their references here](/previous-versions/azure/devops/extend/reference/client/rest-clients).
 
 ## Call an API
 
@@ -30,4 +30,4 @@ You can find the [full list of available REST clients and their references here]
 
 ## Next steps
 
-Display the results of your REST API call [in a Grid](/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido).
+Display the results of your REST API call [in a Grid](/previous-versions/azure/devops/extend/develop/ui-controls/grido).

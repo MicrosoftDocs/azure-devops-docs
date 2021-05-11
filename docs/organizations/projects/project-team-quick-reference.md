@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 02/26/2020
 ---
 
@@ -149,7 +149,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Enable/disable project services](../settings/set-services.md)  
 - [Export list of projects](create-project.md#list-and-connect-to-projects)  
 - [Export list of teams](../settings/add-teams.md#list-teams)  
-- [Manage notifications](../../notifications/manage-organization-notifications.md)  
+- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -159,7 +159,7 @@ Several of the following tasks require permissions granted to a member of the Pr
    :::column span="":::
 - [Restore project](restore-project.md)  
 - [Change user access levels](../accounts/add-organization-users.md) 
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
@@ -192,7 +192,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Enable/disable project services](../settings/set-services.md)  
-- [Manage notifications](../../notifications/manage-organization-notifications.md)  
+- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -201,7 +201,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
@@ -230,7 +230,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Connect to a project](connect-to-projects.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
-- [Manage notifications](../../notifications/manage-organization-notifications.md)  
+- [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
@@ -239,7 +239,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  

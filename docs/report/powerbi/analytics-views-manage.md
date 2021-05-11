@@ -20,8 +20,6 @@ With Analytics views, you gain a simplified way to specify and share the filter 
 
 [!INCLUDE [temp](includes/analytics-views-warning.md)]
 
-[!INCLUDE [temp](../includes/boards-disabled.md)]
-
 Use this article to learn how to:
 
 > [!div class="checklist"]
@@ -32,6 +30,9 @@ Use this article to learn how to:
 > * Favorite a view
 > * Manage permissions for a shared view
 > * Delete a view
+
+
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
 [!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
 

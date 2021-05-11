@@ -23,6 +23,8 @@ This article shows you how to display the Stories CFD for a specified team. An e
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
@@ -81,7 +83,7 @@ The following table describes each part of the query.
 <tr><td><code>$apply=filter(</code></td><td>Start filter()</td><tr>
 <tr><td><code>Team/TeamName eq '{teamname}'</code></td><td>Return items for a specific team</td><tr>
 <tr><td><code>and BoardName eq 'Stories'</code></td><td>Return items on the 'Stories' backlog. You can specify other backlog names, such as 'Epics', and 'Features'</td><tr>
-<tr><td><code>and DateValue ge {startdate}</code></td><td>Start CFD on or after the specified date. Example: **2019-04-01Z** represents 2019-April-01 2019-July-01</td><tr>
+<tr><td><code>and DateValue ge {startdate}</code></td><td>Start CFD on or after the specified date. Example: <b>2019-04-01Z</b> represents 2019-April-01 2019-July-01</td><tr>
 <tr><td><code>)</code></td><td>Close filter()</td><tr>
 <tr><td><code>/groupby(</code></td><td>Start groupby()</td><tr>
 <tr><td><code>(DateValue, ColumnName, LaneName, State, WorkItemType,AssignedTo/UserName,Area/AreaPath), </code></td><td>Group by DateValue (used for trending), ColumnName, and any other fields you want to report on. Here we include LaneName to enabling filtering by LaneName</td><tr>

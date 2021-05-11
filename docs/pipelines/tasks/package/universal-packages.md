@@ -120,7 +120,7 @@ The last step in this sample pipeline uses the Universal Package task to upload 
 6. Copy the resulting YAML into you your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
 
 ```YAML
-# Download Universal Package
+# Publish Universal Package
 steps:
 - task: UniversalPackages@0
   displayName: 'Universal publish'

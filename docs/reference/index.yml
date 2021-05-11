@@ -111,6 +111,6 @@ landingContent:
           - text: Naming restrictions
             url: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
           - text: Workflow states & categories
-            url: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+            url: ../boards/work-items/workflow-and-state-categories.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
           - text: Work tracking object limits
             url: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

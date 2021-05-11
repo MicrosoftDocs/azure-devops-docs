@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 03/22/2019
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.
+For some workflows, you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
 
 Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
@@ -36,9 +36,35 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 ### Grant version control permissions to the build service
 
-Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
+::: moniker range=">= azure-devops-2020"
 
-<div class="collapse" id="expando-version-control-permissions">
+1. Go to the project settings page for your organization at **Organization Settings** > **General** > **Projects**.
+
+    :::image type="content" source="media/organization-project-settings.png" alt-text="Select your organization settings. ":::
+
+1. Select the project you want to edit. 
+
+    :::image type="content" source="media/select-project.png" alt-text="Select your project. ":::
+
+1. Within **Project Settings**, select **Repositories**. Select the repository you want to run Git commands on.
+
+1. Select **Permissions** to edit your repository permissions. 
+
+    :::image type="content" source="media/modify-repo-permissions.png" alt-text="Choose Permissions to edit your repository permissions. ":::
+
+1. Search for **Project Collection Build Service**. Choose the identity **Project Collection Build Service ({your organization})**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+
+      * **Create branch:**  Allow
+      * **Contribute:**  Allow
+      * **Read:**  Allow
+      * **Create tag:**  Allow
+
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+Go to the Version Control control panel tab
 
 <ul>
 <li>Azure Repos: <code>https:&#x2F;&#x2F;dev.azure.com/{your-organization}/{your-project}/_admin/_versioncontrol</code></li>
@@ -66,8 +92,6 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 
 </p>
 
-</div>
-
 On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it.
 
 ![permissions](media/control-panel-version-control-project-collection-build-service.png)
@@ -80,6 +104,8 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 * **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
+
+::: moniker-end
 
 ::: moniker range="< tfs-2018"
 
@@ -115,7 +141,7 @@ Learn more about [`checkout`](../yaml-schema.md#checkout).
 
 # [Classic](#tab/classic)
 
-On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ---
 
@@ -123,7 +149,7 @@ On the [options tab](../build/options.md) select **Allow scripts to access OAuth
 
 ::: moniker range="< azure-devops"
 
-On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ::: moniker-end
 
@@ -158,9 +184,9 @@ steps:
 
 ::: moniker range="< azure-devops"
 
-* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent), set **Clean** to true.
 
-* On the [variables tab](../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
+* On the [variables tab](../build/variables.md), create or modify the ```Build.Clean``` variable and set it to ```source```
 
 ::: moniker-end
 
@@ -179,32 +205,32 @@ On the [build tab](../tasks/index.md) add this task:
 | ---- | --------- |
 |  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
-### Merge a feature branch to master
+### Merge a feature branch to main
 
-You want a CI build to merge to master if the build succeeds.
+You want a CI build to merge to main if the build succeeds.
 
 ::: moniker range="< tfs-2018"
 Make sure to follow the above steps to [enable Git](#enable).
 ::: moniker-end
 
-On the [Triggers tab](../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
+On the [Triggers tab](../build/triggers.md), select **Continuous integration (CI)** and include the branches you want to build.
 
 Create ```merge.bat``` at the root of your repo:
 
 ```bat
 @echo off
 ECHO SOURCE BRANCH IS %BUILD_SOURCEBRANCH%
-IF %BUILD_SOURCEBRANCH% == refs/heads/master (
-   ECHO Building master branch so no merge is needed.
+IF %BUILD_SOURCEBRANCH% == refs/heads/main (
+   ECHO Building main branch so no merge is needed.
    EXIT
 )
 SET sourceBranch=origin/%BUILD_SOURCEBRANCH:refs/heads/=%
-ECHO GIT CHECKOUT MASTER
-git checkout master
+ECHO GIT CHECKOUT MAIN
+git checkout main
 ECHO GIT STATUS
 git status
 ECHO GIT MERGE
-git merge %sourceBranch% -m "Merge to master"
+git merge %sourceBranch% -m "Merge to main"
 ECHO GIT STATUS
 git status
 ECHO GIT PUSH
@@ -244,7 +270,7 @@ Yes
 
 Add ```***NO_CI***``` to your commit message. Here are examples:
 * ```git commit -m "This is a commit message ***NO_CI***"```
-* ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+* ```git merge origin/features/hello-world -m "Merge to main ***NO_CI***"```
 
 ::: moniker-end
 
@@ -252,7 +278,7 @@ Add ```***NO_CI***``` to your commit message. Here are examples:
 
 Add `[skip ci]` to your commit message or description. Here are examples:
 * ```git commit -m "This is a commit message [skip ci]"```
-* ```git merge origin/features/hello-world -m "Merge to master [skip ci]"```
+* ```git merge origin/features/hello-world -m "Merge to main [skip ci]"```
 
 You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
 

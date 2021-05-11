@@ -31,7 +31,7 @@ We now have GitHub Actions for [Azure Pipelines (Azure/pipelines)](https://githu
 
 [GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-github-actions) makes it easy to build, test, and deploy your code right from GitHub. You can also use it to trigger external CI/CD tools and services. For example, you can use GitHub Actions for continuous integration, and [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/?nav=min) for continuous delivery to leverage features like Approvals, Environments and deep integration with Kubernetes.
 
-You can use this action to trigger a specific pipeline (YAML or classic release pipeline) in Azure DevOps. GitHub Actions will take the Project URL, pipeline name, and a [Personal Access Token (PAT)](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) for your Azure DevOps organization as inputs.
+You can use this action to trigger a specific pipeline (YAML or classic release pipeline) in Azure DevOps. GitHub Actions will take the Project URL, pipeline name, and a [Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?tabs=preview-page&view=azure-devops&preserve-view=true) for your Azure DevOps organization as inputs.
 
 You can find starter templates [here](https://github.com/Azure/actions-workflow-samples/tree/master/AzurePipelines).
 
@@ -44,7 +44,7 @@ The [Azure Pipelines app for ServiceNow](https://store.servicenow.com/sn_appstor
 The VSTest task discovers and runs tests using user inputs (test files, filter criteria, and so forth) as well as a test adapter specific to the test framework being used. Changes to either user inputs or the test adapter can lead to cases where tests are not discovered and only a subset of the expected tests are run. This can lead to situations where pipelines succeed because tests are skipped rather than because the code is of sufficiently high quality. To help avoid this situation, we've added a new option in the VSTest task that allows you to specify the minimum number of tests that must be run for the task to pass.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/161_01.png)
+> ![Set VSTest tasks to fail if a minimum number of tests are not run.](../../media/161_01.png)
 
 ### UCS-4 support for Python 2.7 
 
@@ -61,7 +61,7 @@ Slash command: /azpipelines subscribe [project url] ​
 Example: /azpipelines subscribe `https://dev.azure.com/myorg/myproject​`
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/161_02.png)
+> ![Create bulk subscriptions in Azure Pipelines app for Slack.](../../media/161_02.png)
 
 Microsoft Teams:
 
@@ -70,4 +70,4 @@ Command: @Azure Pipelines subscribe [project url] ​
 Example: @Azure Pipelines subscribe `https://dev.azure.com/myorg/myproject​`
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/161_03.png)
+> ![Create bulk subscriptions in Azure Pipelines app for Microsoft Teams.](../../media/161_03.png)

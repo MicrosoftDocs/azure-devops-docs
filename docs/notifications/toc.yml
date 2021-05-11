@@ -14,12 +14,8 @@
     href: manage-your-personal-notifications.md
   - name: Unsubscribe from default notification
     href: unsubscribe-default-notification.md 
-  - name: Manage team and group notifications
-    href: manage-team-group-notifications.md 
-  - name: Manage Global notifications
-    href: manage-organization-notifications.md 
-  - name: Manage Global default delivery settings
-    href: manage-organization-notifications-settings.md
+  - name: Manage team, group, and Global notifications
+    href: manage-team-group-global-organization-notifications.md 
   - name: Exclude yourself from notification of events you initiated
     href: exclude-self-from-email.md  
 - name: Follow work, link work items, use @mentions  
@@ -39,7 +35,7 @@
   - name: Enable subscription logging for troubleshooting
     href: use-subscription-logging.md 
   - name: FAQs 
-    href: faq-notifications.md 
+    href: faq-notifications.yml
   - name: Why am I not getting an email
     href: troubleshoot-not-getting-email.md 
   - name: Why am I getting this email
@@ -59,6 +55,4 @@
   - name: Events
     href: oob-supported-event-types.md 
   - name: Collaborate in a Team room
-    href: collaborate-in-a-team-room.md 
-
-
+    href: /previous-versions/azure/devops/notifications/collaborate-in-a-team-room

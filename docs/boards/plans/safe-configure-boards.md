@@ -7,7 +7,7 @@ ms.prod: devops
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
 ---
@@ -93,7 +93,7 @@ Add each team, one by one.
 	Here we add the *App* team. Choose the team administrator and ensure the **Create an area path with the name of the team** checkbox is checked. Optionally add team members.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/safe-configure/add-team.png)
+	> ![Add the App team.](media/safe-configure/add-team.png)
 
 	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. As team administrators, they can configure their team's tools to support their Agile practices and business needs. 
 
@@ -149,7 +149,7 @@ If you already have iterations for your default team, you can rename them. You'l
 1. Under the default iteration, which shares the same name as the project, create a child iteration that will represent your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration will be broken down further into sprints.
 
 	> [!div class="mx-imgBorder"]
-	> ![Hierarchical area path](media/safe-configure/define-pi1-iteration.png) 
+	> ![Create a child iteration.](media/safe-configure/define-pi1-iteration.png) 
 
 2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your Agile teams' cadences.  
 
@@ -315,7 +315,7 @@ The following table lists the recommended settings to make based on the team lev
 	And, for Agile teams, choose the  **Working with bugs** option to track bugs along with requirements.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
+	> ![Agile Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
 
 1. Choose the **Iterations** tab to configure the team's iterations. 
 
@@ -388,9 +388,9 @@ For teams that support several other teams, such as a UX Design team, configure 
 
 You can use Azure DevOps command-line tools to add or update the following artifacts:
 
-- **Teams**: [Azure DevOps team create](/cli/azure/ext/azure-devops/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
-- **Area Paths**: [Azure DevOps area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create)
-- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
+- **Teams**: [Azure DevOps team create](/cli/azure/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
+- **Area Paths**: [Azure DevOps area project create](/cli/azure/boards/area/project#ext-azure-devops-az-boards-area-project-create)
+- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
 
 ::: moniker-end
 
@@ -422,7 +422,7 @@ You can use Azure DevOps REST APIs to add or update the following artifacts:
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
+- [Azure DevOps CLI](/cli/azure//)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 
  

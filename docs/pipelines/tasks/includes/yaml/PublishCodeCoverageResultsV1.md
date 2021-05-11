@@ -1,7 +1,7 @@
 ---
 ms.topic: include
-author: pboraMSFT
-ms.author: pbora
+author: shashban
+ms.author: shashban
 ms.date: 12/07/2018
 ms.prod: devops
 ms.technology: devops-cicd-tasks
@@ -12,10 +12,7 @@ ms.technology: devops-cicd-tasks
 # Publish Cobertura or JaCoCo code coverage results from a build
 - task: PublishCodeCoverageResults@1
   inputs:
-    #codeCoverageTool: 'JaCoCo' # Options: cobertura, jaCoCo
     summaryFileLocation: 
     #pathToSources: # Optional
-    #reportDirectory: # Optional
-    #additionalCodeCoverageFiles: # Optional
     #failIfCoverageEmpty: false # Optional
 ```

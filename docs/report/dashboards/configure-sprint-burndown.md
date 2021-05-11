@@ -132,6 +132,10 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker-end
 
+
+
+
+
 ::: moniker range=">= tfs-2015"
 
 ## The Sprint Burndown widget
@@ -171,30 +175,26 @@ If your dashboard already has a legacy version available, you can easily upgrade
 The **Sprint Burndown** widget adds a chart based on Remaining Work defined for tasks in the team's current sprint. There are no configuration options for this widget. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sprint Burndown Widget - Configuration](media/burndown/sprint-burndown-widget-no-config.png)  
+> ![Sprint Burndown Widget - Configuration, legacy](media/burndown/sprint-burndown-widget-no-config.png)  
 
 ::: moniker-end
 
+## Prerequisites  
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
-
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
 
-## Prerequisites  
-
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
+- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
-## Prerequisites  
-
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 
 ::: moniker-end
 
@@ -242,15 +242,15 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web portal, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](../../boards/sprints/media/add-tasks/open-sprint-backlog-s155-co.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the **View Sprint directory** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../../boards/sprints/media/add-tasks/team-selector-sprints-agile.png) 
+    > ![Choose another team, team selector](../../boards/sprints/media/add-tasks/team-selector-sprints-agile.png) 
 
 2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
@@ -266,17 +266,17 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-    ![Open Work, Sprints, for a team](../../boards/sprints/media/add-tasks/open-sprints-backlog-agile.png)
+    ![Open Work, Sprints, for a team, 2019](../../boards/sprints/media/add-tasks/open-sprints-backlog-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../../boards/sprints/media/add-tasks/team-selector-sprints-agile.png) 
+    > ![Choose another team, team selector 2019](../../boards/sprints/media/add-tasks/team-selector-sprints-agile.png) 
 
 2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another sprint](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
+    > ![Choose another sprint, 2019](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
 
     The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
@@ -294,14 +294,14 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
+    > ![Choose another team, on-premises](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 
     The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](../../boards/sprints/define-sprints.md). 
 
 1. Choose the sprint whose burndown chart you want to view. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another sprint](../../boards/sprints/media/add-tasks/choose-sprint-standard.png)
+    > ![Choose another sprint, on-premises](../../boards/sprints/media/add-tasks/choose-sprint-standard.png)
 
     The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
@@ -374,18 +374,18 @@ Choose the chart to display it in a larger view.
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Open sprint burndown chart](media/burndown/open-burndown-chart-agile.png)
+> ![Open sprint burndown chart, 2019](media/burndown/open-burndown-chart-agile.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Open sprint burndown chart](media/burndown/sprint-burndown-open-chart.png)
+> ![Open sprint burndown chart, 2018](media/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 > [!div class="mx-imgBorder"]  
-> ![Open sprint burndown chart](media/burndown/sprint-burndown-open-chart.png)
+> ![Open sprint burndown chart, 2015](media/burndown/sprint-burndown-open-chart.png)
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -530,14 +530,14 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
 
 > [!div class="mx-imgBorder"]  
-> ![Past sprints provide historical record](media/burndown/past-sprints.png) 
+> ![Past sprints provide historical record, 2017-2018](media/burndown/past-sprints.png) 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-![Past sprints provide historical record](media/burndown/ALM_DS_PastSprints.png)  
+![Past sprints provide historical record, 2015 and earlier](media/burndown/ALM_DS_PastSprints.png)  
 
 ::: moniker-end
 
@@ -604,4 +604,3 @@ And, from these industry resources:
 For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 
 ::: moniker-end
-

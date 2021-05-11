@@ -1,0 +1,177 @@
+### YamlMime:FAQ
+metadata:
+  title: Delivery Plans FAQs 
+  description: Get answers to common questions about working with Delivery Plans. 
+  titleSuffix: Azure Boards
+  ms.custom: boards-queries
+  ms.technology: devops-agile
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: 'azure-devops'
+  ms.date: 05/03/2021
+
+title: Delivery Plans FAQs 
+
+summary: | 
+  **Azure Boards**  
+
+  Delivery Plans provides a calendar view of multiple backlogs, teams, and team backlogs from different projects. It replaces the Delivery Plans marketplace extension and is available for Azure DevOps Services. Here are some answers to frequently asked questions about Delivery Plans. 
+
+sections:
+  - name: Single section - ignored
+
+    questions: 
+      - question: What are the main differences between Delivery Plans 2.0 and the Delivery Plans extension?
+        answer: | 
+
+          ---
+          :::row:::
+             :::column span="1":::
+                **Feature**
+             :::column-end::: 
+             :::column span="2":::
+                [**Delivery Plans 2.0**](review-team-plans.md)
+             :::column-end:::
+             :::column span="2":::
+                [**Delivery Plans Extension**](../extensions/delivery-plans.md) 
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Teams, Backlogs
+             :::column-end::: 
+             :::column span="2":::
+                15 maximum
+             :::column-end:::
+             :::column span="2":::
+                10 maximum
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Cross-project team backlogs
+             :::column-end::: 
+             :::column span="2":::
+                Supported
+             :::column-end:::
+             :::column span="2":::
+                Supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Timeframes
+             :::column-end::: 
+             :::column span="2":::
+                Start Date/Target Date and Iterations
+             :::column-end:::
+             :::column span="2":::
+                Iterations only
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Varying iteration paths
+             :::column-end::: 
+             :::column span="2":::
+                Supported
+             :::column-end:::
+             :::column span="2":::
+                Supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Card data
+             :::column-end::: 
+             :::column span="2":::
+                Condensed and expanded views  
+                Variable based on zoom-level  
+             :::column-end:::
+             :::column span="2":::
+                Full card/TItle only 
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Rollup
+             :::column-end::: 
+             :::column span="2":::
+                % done of child and linked work items
+             :::column-end:::
+             :::column span="2":::
+                Not supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Dependency tracking
+             :::column-end::: 
+             :::column span="2":::
+                Supported 
+             :::column-end:::
+             :::column span="2":::
+                Not supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Card styles
+             :::column-end::: 
+             :::column span="2":::
+                Supported 
+             :::column-end:::
+             :::column span="2":::
+                Not supported
+             :::column-end:::
+          :::row-end:::
+          ---
+          :::row:::
+             :::column span="1":::
+                Keyboard shortcuts
+             :::column-end::: 
+             :::column span="2":::
+                Not supported at this time
+             :::column-end:::
+             :::column span="2":::
+                Supported 
+             :::column-end:::
+          :::row-end:::
+          ---
+
+      - question: Can I use Delivery Plans 2.0 with Azure DevOps Server 2020?
+        answer: |
+          Not at this time. Delivery Plans 2.0 will be made available with Azure DevOps Server 2020 update 2. 
+
+      - question: Why don't my work items show on the plan?
+        answer: |
+          Make sure your work items are assigned to an Iteration Path, or a Start Date and Target Date. Also, verify that the Iteration Paths have been selected for the teams whose backlog levels are chosen for the Delivery Plans. If the Iteration Paths aren't selected, work items associated with those iterations won't display.    
+
+      - question: How do I get dependency lines to show?
+        answer: |
+          Click  the bottom of the card to show the dependency lines of the work item. To turn them off, click on the bottom of the card or anywhere else in the plan. Clicking the bottom of the card is a toggle for the display of the dependency lines. 
+
+      - question: Why can't I see all the fields I've configured?
+        answer: |
+          In the settings under the **Fields** section, you can add  fields display on the cards. However, depending on the number of fields and the zoom level, not all fields are displayed.  Selective field display based on zoom level is a design decision that was made to avoid card clutter. To see all the fields on a card, continue to increase (+) the zoom level until they fully display.
+ 
+      - question: Can I view custom work item types on Delivery Plans?  
+        answer: |
+          **Yes**. Add your custom work item type to a backlog level as described in [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+ 
+
+additionalContent: |
+  ## Related articles
+  -  [Azure Boards FAQs](../faqs.yml) 
+  -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
+ 
+

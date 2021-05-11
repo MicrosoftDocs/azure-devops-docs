@@ -33,7 +33,7 @@ In this article you'll learn how to:
 <!---Address how to parent unparented items --> 
 
 
-Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
+Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed, such as design, code, test, content, or sign out. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
@@ -48,7 +48,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
@@ -69,7 +69,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
     ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
@@ -181,6 +181,9 @@ Another option, is to open **Taskboard**, and add tasks as cards. Simply click t
 
 ::: moniker-end
 
+To interactively filter sprint views, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then specify a keyword or select a value for a field or tag. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+
+
 
 ## Fill out the task form 
 
@@ -267,7 +270,9 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ## Related articles
 
-- [1. Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
 - [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)  
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)   
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+
 

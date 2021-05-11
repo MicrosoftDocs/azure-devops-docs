@@ -138,7 +138,7 @@ When a new major (or preview) version of the task group is available, the defini
 ### Task group import and export
 Although task groups have enabled reuse within a project, we know that recreating a task group across projects and accounts can be painful. With task group import/export, as we’ve done for release definitions, now you can export as a JSON file and import where you want it. We’ve also enabled nested task groups, which first expand when they are exported.
 
-![Publish as preview](media/07_14_07.png)
+![Task group import and export.](media/07_14_07.png)
 
 ### Multi Configuration support in Server Side (Agentless) tasks
 By specifying variable multipliers for server side (agentless) tasks, you can now run the same set of tasks in a phase on multiple configurations, which run in parallel. 

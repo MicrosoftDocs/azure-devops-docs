@@ -1,0 +1,115 @@
+### YamlMime:FAQ
+metadata:
+  title: FAQs semantic search
+  description: Get answers to common questions about searching in Azure DevOps. 
+  titleSuffix: Azure Boards
+  ms.custom: boards-queries
+  ms.technology: devops-agile
+  ms.author: chcomley
+  author: chcomley
+  ms.topic: troubleshooting
+  monikerRange: '>= tfs-2017'
+  ms.date: 04/14/2021
+
+title: Semantic search FAQs 
+
+summary: | 
+  **Azure Devops Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**  
+
+  Learn the answers to frequently asked questions (FAQs) about the semantic search function for Azure DevOps. 
+
+sections:
+  - name: General
+
+    questions: 
+
+    - question: Why isn't the wildcard search working as expected?
+      answer: |
+        You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
+        ![Wildcard search for ge*](media/shared/faq-wildcard1.png)
+        ![Wildcard search for get*](media/shared/faq-wildcard2.png)
+        Let's say, you're searching for ```app*```. In the backend, the wildcard `*` expands to match any character sequence after the term ```app```. For example, ```app*``` might expand to ```app, app0, app01, .., apple```. The expansion takes place for the first 100 expanded terms only. Post expansion, all the files associated with the 100 expanded terms display on the search results page. There's a possibility that ```application``` may not be within the first 100 expanded terms so, you may not find files with the search term ```application``` in the search results. You may see fewer search results for the term ```ge*``` as compared to ```get*```.
+        Ensuring that you can find the most meaningful and actionable results as fast as possible, **enter more criteria in the search bar**.
+    - question: Is Azure DevOps Search extensible?
+      answer: |
+        Currently, no, but you can submit a new feature request in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html). 
+       
+  - name: Code search
+
+    questions:
+    
+    - question: When I search file:span, why does it return files with an extension?
+      answer: |
+        You need to format functional commands as code. For instance, File:span searches fetch all files named span with the extension included. This behavior occurs because the most common scenario for users is to fetch the filename along with the extension. In case you don't want to see the extension, use the following search string: file:{filename} NOT file:{filename}.
+    - question: Why do I only get partial results when I search code?
+      answer: | 
+          I see a **Showing partial code results** banner in code search. 
+          ![Showing partial code results](media/shared/faq-partialresult.png)
+          Your code base might have one or more large repositories. The larger the repository, the higher number of documents that get searched. When you search large repositories, the request could take more time to process, which can cause the search request to fail. In this case, you may see partial search results along with the **Showing partial code results** banner, per the previous image.
+          You could try the following alternatives, as applicable to your scenario:
+           * Scope your query by using filters to narrow down to a "repo" or a "path".
+           * See if you can narrow your query to avoid scenarios that require matching too many terms. 
+           For example, while looking for methods like App_App1, App_App2, and so on, instead of searching for ```a*``` try searching for ```app*``` instead. (```a*``` will match many more terms than ```app*```).
+    - question: How do I search code comments?
+      answer: |
+        Specify the History field. For example: History:Keyword.
+  
+  - name: Work item search
+
+    questions:
+    
+    - question: Why does Code search display when I'm in Work Item view?
+      answer: |
+        You can toggle between Work Item and Code Search entities by using the picker next to the semantic search. 
+  - name: Package search
+
+    questions:
+    
+    - question: How do I search internal NuGet packages published company-wide?
+      answer: |
+        1. Go to [Discover in Azure DevOps(https://aka.ms/discover).
+        2. Enter your query and search.
+        3. Choose the **Packages** pivot. 
+        You can also navigate from your organization's landing page. 
+        At the top left of your screen, there's a link to the Microsoft enterprise search page below the Azure DevOps logo.       
+    - question: How do I search package comments?
+      answer: |
+        Specify the History field. For example: History:Keyword.
+ 
+  - name: On-premises, Azure DevOps Server
+
+    questions:
+    
+    - question: How do I get the search box to display?
+      answer: |   
+       1. The semantic search is shown only in the context of a project page. Go to a project and check if the semantic search is displayed at the top right. 
+       2. If you don't see the semantic search, verify that the extension is installed for the collection. If not, see [Install and configure Search](install-configure-search.md).
+    - question: Why are no search results shown after installing or configuring Search?
+      answer: |
+       1. Wait until you're sure sufficient time has elapsed after installing or configuring Search. It typically takes less than one hour for Search to index a collection. But, it may take up to 12 hours based on the size and number of code files, work items, or wiki pages.
+       2. If no results are shown after this period, [check the indexing status](manage-search.md#check-indexing-status). 
+    - question: Why doesn't Search show the expected results?
+      answer: |
+       1. If the files were added in the last few minutes, wait for about 10 minutes while they're indexed.
+       2. [Check indexing status](manage-search.md#check-indexing-status) for the collection. 
+       3. If the files are still not shown in the results, [reindex the repository or collection](manage-search.md#reindex-a-repository-or-collection) where the files are located.
+    - question: How do I determine the status of indexing for a collection?  
+      answer: |
+       [Check indexing status](manage-search.md#check-indexing-status) separately for each collection.
+    - question: How do I address adverse performance issues?
+      answer: |
+       1. [Pause all indexing](manage-search.md#pause-indexing) and see if performance recovers.
+       2. If performance does recover, consider locating Search on a separate server if you haven't already done so.
+    - question: How do I get Search to work after an upgrade?
+      answer: |
+       If Search is on a separate remote server and the source version is TFS 2018 Update 2 or higher, verify that the user followed [these upgrade steps](install-configure-search.md#upgrade-search). Run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue, if the upgrade steps weren't followed.
+ 
+additionalContent: | 
+  ## Related articles
+  - [Search artifacts and packages](functional-package-search.md)
+  - [Search work items](functional-work-item-search.md)
+  - [Search wiki](../wiki/search-wiki.md)
+  - [Export access levels audit log](../../organizations/security/export-users-audit-log.md)
+  
+  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
+  

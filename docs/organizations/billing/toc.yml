@@ -1,32 +1,43 @@
 - name: Billing overview 
   href: overview.md
+  displayName: services, Azure, subscription, monthly, bill, pricing
 - name: Set up billing
   href: set-up-billing-for-your-organization-vs.md
+  displayName: Azure, subscription, pay
 - name: Manage paid access for users
   href: buy-basic-access-add-users.md
+  displayName: billing, assign, default, Azure, licensing, subscription, group, rules, reduce, multi-org
 - name: Try Azure Test Plans for free
   href: try-additional-features-vs.md
-- name: Buy CI/CD
-  href: buy-more-build-vs.md
+  displayName: billing, free, trial, access
+- name: Buy parallel jobs
+  href: ../../pipelines/licensing/concurrent-jobs.md
+  displayName: configure, hosted, public, private, project, purchase, quantity
 - name: Buy Azure Artifacts
   href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Buy cloud-based load testing
-  href: buy-load-testing-vs.md 
+  displayName: signup, billing, basic, extension, license, storage
 - name: Manage billing
   items:
   - name: Add user who can set up billing
     href: add-backup-billing-managers.md
+    displayName: assign, subscription
   - name: Change Azure subscription
     href: change-azure-subscription.md
+    displayName: update, remove, billing
   - name: Buy access to Azure DevOps Server or Azure Test Plans
     href: buy-access-tfs-test-hub.md
+    displayName: monthly, basic, CALs, users
   - name: Billing FAQs
-    href: billing-faq.md
+    href: billing-faq.yml
+    displayName: assignment, group, rules, basic, stakeholder, pro-rated, mulit-organization, subscription, charges
 - name: Cloud Solution Providers
   items:
   - name: "CSPs: Buy Azure DevOps"
     href: csp/buy-csp-azure-devops.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: enable, subscription
   - name: "CSPs: Buy and manage Visual Studio subscriptions"
     href: /visualstudio/subscriptions/vscloud-csp?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: purchase, change, VS
   - name: "CSPs: Buy App Center resources"
     href: csp/buy-vs-app-center.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: enable, purchase, administration, co-owner

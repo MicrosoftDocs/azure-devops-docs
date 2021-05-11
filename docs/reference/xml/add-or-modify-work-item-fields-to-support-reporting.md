@@ -238,4 +238,4 @@ witadmin listfields /collection:CollectionURL /n:RefName
 -  [Modify a field or add a custom field](../add-modify-field.md)   
 -  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 -  [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)    
--  [Dashboards and reports](../../report/overview.md)
+-  [Dashboards and reports](../../report/dashboards/overview.md)

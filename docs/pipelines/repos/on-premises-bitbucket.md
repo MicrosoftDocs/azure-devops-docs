@@ -65,13 +65,7 @@ When you use **Other Git** connection to set up a classic pipeline, disable comm
 
 If you want to enhance this experience, it is important that you enable communication from Azure Pipelines to Bitbucket Server. 
 
-Determine the region your Azure DevOps organization is hosted in. Go to the **Organization settings** in your Azure DevOps UI. The region is listed under **Region** in the **Overview** page.
-
-Use the list below to find the appropriate range of IP addresses for your region.
-
-[!INCLUDE [ip-addresses](includes/ip-addresses.md)]
-
-Add the corresponding range of IP addresses to your firewall exception rules.
+To allow traffic from Azure DevOps to reach your Bitbucket Server, add the IP addresses or service tags specified in [Inbound connections](../../organizations/security/allow-list-ip-url.md#inbound-connections) to your firewall's allow-list. If you use ExpressRoute, make sure to also include [ExpressRoute IP ranges](../../organizations/security/allow-list-ip-url.md#azure-devops-expressroute-connections) to your firewall's allow-list.
 
 Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** service connection.
 
@@ -96,7 +90,7 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### I did not push any updates to my code, however the pipeline is still being triggered.
 
-* The continuous integration trigger for BitBucket works through polling. After each polling interval, Azure Pipelines attempts to contact the BitBucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. In a few cases, Azure Pipelines may also create a dummy failed build with an error message to indicate that it was unable to reach the server.
+* The continuous integration trigger for Bitbucket works through polling. After each polling interval, Azure Pipelines attempts to contact the Bitbucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. In a few cases, Azure Pipelines may also create a dummy failed build with an error message to indicate that it was unable to reach the server.
 
 ### Failing checkout
 

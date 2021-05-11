@@ -2,14 +2,14 @@
 title: Troubleshoot connecting project
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
+description: Follow these steps to resolve connection issues with Azure DevOps.
 ms.technology: devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 04/22/2019
-monikerRange: '>= tfs-2013'
+ms.date: 11/05/2020
+monikerRange: '<= azure-devops'
 ---
 
 # Troubleshoot connecting to a project
@@ -24,7 +24,7 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 1. Sign out of your browser. To do so, select the [Visual Studio sign out](https://aka.ms/VsSignout) link.
 
-2. Delete the cookies in your browser. To delete cookies in most browsers, press Ctrl+Shift+Del.
+2. Delete the cookies in your browser. To delete cookies in most browsers, select Ctrl+Shift+Del.
 
 3. Open Internet Explorer and delete the browser cookies. The Visual Studio IDE uses Internet Explorer cookies.
 
@@ -41,12 +41,14 @@ Two types of identities can sign in: Microsoft accounts and Azure Active Directo
 > [!div class="mx-imgBorder"]
 > ![Troubleshoot Azure DevOps connection 401 error 1](media/troubleshoot-connection/401_notauthorized.png)
 
-The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
+The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. See the following common reasons for the error:
 
 * Your identity isn't a member of the organization.
 * Your identity has an invalid or missing license assignment.
+* Your identity doesn't have enough memberships to access the resource. For example, membership to the Reader/Contributors group.
+* Your identity is a B2B guest in the tenant, and the invitation hasn't been accepted.
 
-If you think you're a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
+If you think you're a member of the organization, but are blocked by this error page, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Scenario 1
 
@@ -65,8 +67,10 @@ In some cases, you might not know you have two identities with the same sign-in 
 
 To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
+* If you can´t access to the organization, make sure that your Azure Active Directory still exists and that your work or school account is in the Azure AD tenant.
+
 > [!TIP]
-> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
+> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity, your work or school account, or Azure AD account, uses your sign-in address.
 
 ### Scenario 2
 
@@ -79,13 +83,13 @@ Your personal Microsoft account doesn't have access, but your Azure AD account d
 
 ### Mitigation
 
-When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, contact [customer support](https://support.microsoft.com/).
+When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 < azure-devops"
 
-## Troubleshoot TFS connectivity
+## Troubleshoot Azure DevOps Server connectivity
 
 Here's a list of the most frequently reported connection problems and what to do about them. Complete the list in the order indicated.
 
@@ -95,11 +99,11 @@ Here's a list of the most frequently reported connection problems and what to do
 
 2. Verify that your computer is connected to the network and that it can access network resources.
 
-3. Verify that TFS hasn't been taken offline. Talk with your TFS administrator.
+3. Verify that Azure DevOps Server hasn't been taken offline. Talk with your Azure DevOps Server administrator.
 
-4. Check whether your project has been moved to another project collection in TFS. If it has been moved, you must create a connection to the new server name.
+4. Check whether your project has been moved to another project collection in Azure DevOps Server. If it has been moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../reference/error/tf31002-unable-connect-tfs.md).
+For additional troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../organizations/projects/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 
@@ -109,29 +113,29 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 When you use two or more organizations that are linked to Azure AD, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
-When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
+When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Azure DevOps Server** dialog box:
 
-> TF31003: Either you have not entered the necessary credentials, or your user account does not have permission to connect to the Team Foundation Server
+> TF31003: Either you have not entered the necessary credentials, or your user account does not have permission to connect to the Azure DevOps Server
 > 
-> TF31002: Unable to connect to this Team Foundation Server
+> TF31002: Unable to connect to this Azure DevOps Server
 
 To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](https://visualstudio.microsoft.com/downloads).
 
-Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
+Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Codespaces](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 < azure-devops"
 
-## Connect to TFS with Secure Sockets Layer
+## Connect to Azure DevOps Server with Secure Sockets Layer
 
-If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
+If you connect to an Azure DevOps Server instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for Azure DevOps Server - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 
-When the on-premises TFS configuration changes, such as when you move or split a project collection, clear the cache.
+When the on-premises Azure DevOps Server configuration changes, such as when you move or split a project collection, clear the cache.
 
-1. Sign in to your client computer for TFS by using the credentials of the user whose cache you want to clear.
+1. Sign in to your client computer for Azure DevOps Server by using the credentials of the user whose cache you want to clear.
 
 2. Close any open instances of Visual Studio.
 

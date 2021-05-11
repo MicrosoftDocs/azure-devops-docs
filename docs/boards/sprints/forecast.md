@@ -30,21 +30,21 @@ Use this article to learn:
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project). 
-* You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
+* You must be granted **Basic** access or higher to use the forecast feature. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+> Users with **Stakeholder** access for a public project have full access to backlog and board features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project). 
-* You must be granted **Basic** access or higher to add or modify work items. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](../../organizations/security/add-users-team-project.md). 
+* You must be granted **Basic** access or higher to add or modify work items. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end 
  
@@ -64,7 +64,7 @@ Here's what you need to have in place before you attempt to forecast your team's
 *	Define and size backlog items to [minimize variability](../../report/dashboards/velocity-guidance.md#minimize-variability).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The display of the leaf node, the last node in a same-category hierarchy, may only appear on Kanban boards, sprint backlogs, and taskboards. To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).<br/>Instead of nesting requirements, bugs, and tasks, maintain a flat list&mdash;only creating parent-child links one level deep between different-category items. Use [Features to group requirements or user stories](../backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.
 
 
@@ -129,7 +129,7 @@ To forecast your product backlog, perform the following actions.
 
 	![Open Work, Backlogs, for a team](media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -278,4 +278,3 @@ You can then assess the delta between the current team's velocity and the requir
 
 
 
- 

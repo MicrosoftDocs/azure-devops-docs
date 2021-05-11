@@ -1,6 +1,6 @@
 ---
 title: Publish packages to Azure Artifacts
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: Publish Python packages to Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
 ms.topic: conceptual
@@ -58,18 +58,18 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 The example below will enable you to authenticate to a list of Azure Artifacts feeds as well as a list of service connections from external organizations. If you need to authenticate to a single feed, you must replace the following arguments: `artifactFeeds` and `externalFeeds` with `artifactFeed` and `externalFeed` and specify your feed name accordingly.
 
 ```yaml
-- task: TwineAuthenticate@0
+- task: TwineAuthenticate@1
   inputs:
     artifactFeeds: 'feed_name1, feed_name2'
     externalFeeds: 'feed_name1, feed_name2'
 ```
 
-* **artifactFeeds**: a list of Azure Artifacts feeds within your organization.
-* **externalFeeds**: a list of [service connections](/azure/devops/pipelines/library/service-endpoints) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
+* **artifactFeeds**: a list of Azure Artifacts feeds within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (singular) instead.
+* **externalFeeds**: a list of [service connections](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/package/media/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
+:::image type="icon" source="../tasks/package/media/python-twine-authenticate.png" border="false"::: **Package: Python Twine Upload Authenticate**
 
 * My feeds 
 
@@ -100,7 +100,7 @@ Check out the [YAML schema reference](../yaml-schema.md#script) for more details
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/powershell.png) **Utility: PowerShell**
+:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: **Utility: PowerShell**
 
 * Type:
 

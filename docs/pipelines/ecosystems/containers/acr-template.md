@@ -41,6 +41,11 @@ az group create --name myapp-rg --location eastus
 az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
 ```
 
+You can also use the web UI to create your Azure Container Registry. See the [Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) quickstart for a walkthrough.
+
+> [!NOTE]
+> To deploy a Docker image from an Azure Container Registry, you must enable the admin user account. To learn how, see [Authenticate with an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-authentication#admin-account).
+
 ## Sign in to Azure Pipelines
 
 [!INCLUDE [include](../includes/sign-in-azure-pipelines.md)]
@@ -53,7 +58,7 @@ az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
 
 [!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
-When the **Configure** tab appears, select **Docker**.
+When the **Configure** tab appears, select **Docker - Build and push an image to Azure Container Registry**.
 
 1. If you are prompted, select the subscription in which you created your registry.
 

@@ -1,11 +1,11 @@
 ---
 title: Choose a process like Basic, Agile, Scrum, or CMMI
 titleSuffix: Azure Boards
-description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps 
 ms.custom: work-items 
 ms.technology: devops-agile
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -31,14 +31,14 @@ The work tracking objects contained within the default processes and process tem
 ::: moniker range=">= azure-devops-2019"
 
 > [!TIP]  
-> To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
+> To view and manage Inherited process models, see [Manage processes](../../../organizations/settings/work/manage-process.md).
 
 ::: moniker-end
 
 
 <a id="template_intro"></a>
 
-::: moniker range=">= azure-devops-2019"
+
 
 ## Basic, Agile, Scrum, and CMMI
 
@@ -47,22 +47,7 @@ The default processes differ mainly in the work item types (WITs) they provide f
 Basic is the most lightweight and is in a selective Preview. 
 Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
 
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
-
 [!INCLUDE [temp](../../includes/note-basic-process.md)]
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-## Agile, Scrum, and CMMI
-
-The default processes differ mainly in the work item types (WITs) they provide for planning and tracking work. 
-Scrum is the next most light-weight. Agile supports many Agile method terms, and CMMI, which stands for Capability Maturity Model Integration, provides the most support for formal processes and change management. 
-
-::: moniker-end
 
 Choose the process that provides the best fit for your team.  
 
@@ -122,7 +107,7 @@ Choose the process that provides the best fit for your team.
             you can track requirements, change requests, risks, and reviews.
             </p>
             <p>
-            This process supports <a href="https://msdn.microsoft.com/library/ee461556.aspx" data-raw-source="[formal change management activities](https://msdn.microsoft.com/library/ee461556.aspx)">formal change management activities</a>.
+            This process supports <a href="/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts" data-raw-source="[formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts)">formal change management activities</a>.
             Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
             </p>
             </td>
@@ -146,8 +131,7 @@ If your team has unusual needs and connects to an on-premises server,
 you can customize a process and then create the project. 
 Or, you can create a project from a process and then customize the project.  
 
-The following table summarizes the main distinctions between the WITs and states 
-used by the three default processes.  
+The following table summarizes the main distinctions between the WITs and states used by the four default processes.  
 
 <table valign="top">
 <tbody>
@@ -545,7 +529,7 @@ Work item types that are added to the Hidden Types category don't appear in the 
 ::: moniker range="tfs-2013"
 
 > [!NOTE]    
-> If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
+> If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 >
 > The following WITs were added with the indicated TFS version:   
 > - Shared Parameters added with TFS 2013.2   
@@ -573,11 +557,11 @@ If you change the workflow for the test plan and test suite, you might need to u
 
 <a id="term-note"></a>
 
-You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
+You can customize a process before or after you create a project that uses the process. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
  
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  
-- [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)  
+- [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 
 
 If you have additional questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

@@ -69,12 +69,12 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+     For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
   
 -   **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
-    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
+    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Report  
  To understand the progress that your team is making in your current iteration, the start and end dates for the report must match those of your current iteration cycle.  

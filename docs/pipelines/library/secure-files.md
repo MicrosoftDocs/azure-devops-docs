@@ -38,7 +38,7 @@ You can build your own tasks that use secure files by using inputs with type `se
 
 The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](../tasks/utility/install-apple-provisioning-profile.md) and [source code](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
 
-To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common/securefiles-common).
+To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common).
 
 ### My task can't access the secure files. What do I do?
 
@@ -49,11 +49,12 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
 <a name="secure-file-authorization"></a>
-### How do I authorize a secure file for use in all pipelines?
+### How do I authorize a secure file for use in a specific pipeline?
 
  1. In **Azure Pipelines**, select the **Library** tab.
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 
- 1. In the details view under **Properties**, select **Authorize for use in all pipelines**, and then select **Save**.
+ 1. Select the **Pipeline permissions** button. 
+ 1. In the open dialog you are able to review and modify the access for each available pipeline.
 
 <!-- ENDSECTION -->

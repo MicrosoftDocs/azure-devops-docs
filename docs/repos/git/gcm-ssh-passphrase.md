@@ -1,11 +1,11 @@
 ---
 title: Understand SSH passphrases
 titleSuffix: Azure Repos
-description: Understand what a SSH passphrase is and why the Git Credential Manager for Windows needs it.
+description: Understand what a SSH passphrase is.
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Add command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Adds files and folders to version control.
 
@@ -61,10 +61,10 @@ Adds the latest versions of all items in a local workspace.
 ### Add individual items
 
 ```
-c:\code\SiteApp\Main>tf add program1.cs program2.c
+c:\code\SiteApp\Main>tf add program1.cs program2.cs
 ```
 
-Adds the files program1.cs and program2.c.
+Adds the files program1.cs and program2.cs.
 
 ### Recursively add all items of a specific type
 

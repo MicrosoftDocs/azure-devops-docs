@@ -1,6 +1,6 @@
 ---
 title: Add a custom control to the work item form | Extensions for Azure DevOps
-description: Describes how to extend the work item form by adding a custom control in Azure DevOps and Team Foundation Server (TFS).
+description: Describes how to extend the work item form by adding a custom control in Azure DevOps.
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 10/10/2017
 
 [!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
 
-Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  In this article, learn how to build your own custom control.
+Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  Learn how to build your own custom control.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 

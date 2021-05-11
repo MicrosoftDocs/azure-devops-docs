@@ -18,11 +18,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn how to enable public users to contribute to your project.
+Learn how to enable public users to contribute to your project.
 
 > [!IMPORTANT]
 > Before you add a member, review the notes provided in [private-to-public migration checklist](migration-checklist.md) as well as
-> the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
+> the [additional cross-project resources](../projects/resources-granted-to-project-members.md) this grants.
 
 ## Prerequisites
 
@@ -74,4 +74,3 @@ You must have [Project Collection Administrator or organization Owner permission
 
 > [!div class="nextstepaction"]
 > [Clone an existing Git repo](clone-git-repo-public.md)
-

@@ -6,13 +6,13 @@ ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Copy changes with cherry-pick
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
@@ -30,6 +30,9 @@ In this tutorial you learn how to:
 ## Cherry-pick a commit
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
 2. Right-click the branch containing the changes you want and select **View History...**. 
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    

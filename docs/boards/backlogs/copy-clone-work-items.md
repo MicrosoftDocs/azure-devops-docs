@@ -1,7 +1,7 @@
 ---
 title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
-description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
+description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure Boards, Azure DevOps  
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/20/2020 
+ms.date: 04/09/2021 
 ---
 
 # Copy or clone work items  
@@ -30,8 +30,12 @@ There are two types of copy functions you can use. The first is to duplicate a s
 
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
+::: moniker range="< azure-devops-2019"
+
 > [!TIP]    
-> You can't copy or clone linked work items at this time. To learn more, see the [Q & A section](#faq-copy-clone) later in this article. 
+> You can't copy or clone linked work items at this time. To learn more, see the [Azure Boards FAQs](../faqs.yml#how-do-i-copy-or-clone-a-work-item-with-all-linked-items). 
+
+::: moniker-end
 
 
 Use this article to learn how to:  
@@ -53,10 +57,11 @@ Use this article to learn how to:
 Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
 > [!NOTE]
-> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field get'S copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
+> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field gets copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, choose Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
 
@@ -65,16 +70,24 @@ Clone a work item when you want to create another instance of it. This action op
     :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Copy work item dialog":::
 
 	Optionally, check one or more of the boxes: 
+
+	> [!NOTE]   
+	> When you copy the work item to a different project, **Include child work items** is disabled. 
+
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item
-	- **Include child work items**: To include existing links to child work items in the copied work item. 
+	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> The **Include child work items** feature requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#copy-work-item-to-copy-children).  
+::: moniker-end
 
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+::: moniker range="azure-devops-2019"
 
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
@@ -84,6 +97,7 @@ Clone a work item when you want to create another instance of it. This action op
     :::image type="content" source="media/copy/copy-work-item-2020.png" alt-text="Copy work item dialog":::
 
 	Optionally, check one or more of the boxes: 
+
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item.
 
@@ -96,7 +110,6 @@ Clone a work item when you want to create another instance of it. This action op
 ::: moniker range="tfs-2018"
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-ts.png) 
-
 1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
     ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
@@ -125,7 +138,7 @@ Clone a work item when you want to create another instance of it. This action op
 
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
-    ![TFS 2015, web portal, user story work item form, click copy-clone icon](media/copy-work-item-copy-clone-2015.png) 
+    ![TFS 2015, web portal, user story work item form, choose copy-clone icon.](media/copy-work-item-copy-clone-2015.png) 
 
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Choose **OK**.
 
@@ -209,6 +222,7 @@ The formatted table contains a link to each work item included in your selected 
 ## Copy the URL
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
@@ -223,19 +237,17 @@ Right click the link ID to open the browser copy link option.
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
 
-## Q & A
-
-[!INCLUDE [temp](../includes/faq-copy-clone.md)]
-
 
 ## Related topics
 
+-  [Azure Boards FAQs](../faqs.yml) 
 - [Bulk modify work items](bulk-modify-work-items.md)   
 - [Move, change, or delete work items](remove-delete-work-items.md)  
 - [Pre-populate fields using work item templates](work-item-template.md)

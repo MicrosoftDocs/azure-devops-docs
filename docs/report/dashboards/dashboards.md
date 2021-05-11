@@ -41,12 +41,12 @@ When a project is first created, a default team and default team dashboard is cr
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
+> For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
@@ -140,18 +140,18 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](media/icons/blue-plus-icon.png) **New Dashboard** option. 
+1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](media/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](media/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
+	If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
 	Here we choose to create a Project dashboard. To create a team dashboard, choose **Team Dashboard** and then select a team. To add a team, see [Add a team](../../organizations/settings/add-teams.md). 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the create a dashboard dialog](media/dashboards/create-dashboard-project-dialog.png)  
+	> ![Create a Project dashboard.](media/dashboards/create-dashboard-project-dialog.png)  
 
 	Choose **Save**. 
 
@@ -165,12 +165,12 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="azure-devops-2019"
 
-1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](media/icons/blue-plus-icon.png) **New Dashboard** option. 
+1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](media/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](media/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
+	If you don't see the :::image type="icon" source="media/icons/blue-plus-icon.png" border="false"::: **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
@@ -189,11 +189,11 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-From **Dashboards**, choose the ![plus icon](../../boards/media/icons/green_plus_icon.png) and enter a dashboard name. 
+From **Dashboards**, choose the :::image type="icon" source="../../boards/media/icons/green_plus_icon.png" border="false"::: and enter a dashboard name. 
 
 ![Add and name a dashboard](media/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../../boards/media/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json). 
+If you don't see the :::image type="icon" source="../../boards/media/icons/green_plus_icon.png" border="false":::, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/breadcrumb/dashboards/toc.json). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test pages](add-charts-to-dashboard.md).
 ::: moniker-end
@@ -214,7 +214,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 ::: moniker range=">= azure-devops-2019"
 
-- To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
+- To rename a dashboard, modify its description, or change its automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
 - To delete a dashboard, open the Dashboards directory, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and select the **Delete** menu option.  
 
@@ -311,5 +311,4 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
-
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).
