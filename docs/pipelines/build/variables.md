@@ -20,9 +20,14 @@ Variables give you a convenient way to get key bits of data into various parts o
 This is the comprehensive list of predefined variables.
 
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
+
+::: moniker range=">=azure-devops-2020"
+
 In YAML pipelines, you can reference predefined variables as environment variables. For example, the variable `Build.ArtfactStagingDirectory` becomes the variable `BUILD_ARTIFACTSTAGINGDIRECTORY`.
 
-For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
+For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc).
+
+::: moniker-end
 
 Learn more about [working with variables](../process/variables.md).
 
