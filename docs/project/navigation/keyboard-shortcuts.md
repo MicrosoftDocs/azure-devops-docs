@@ -100,7 +100,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ## Plans
 

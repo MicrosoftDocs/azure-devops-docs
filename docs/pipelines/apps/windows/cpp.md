@@ -63,9 +63,9 @@ It is often required to build your app in multiple configurations. The following
 
 ## Copy output
 
-To copy the results of the build to Azure Pipelines or TFS, perform these steps:
+To copy the results of the build to Azure Pipelines, perform these steps:
 
-1. Click the **Copy Files** task. Specify the following arguments:
+1. Click the [Copy Files task](../../tasks/utility/copy-files.md). Specify the following arguments:
 
    * **Contents:** `**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)`
 

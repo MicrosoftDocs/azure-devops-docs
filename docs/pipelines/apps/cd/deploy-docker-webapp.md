@@ -26,7 +26,7 @@ With Azure Pipelines, you can implement a CI/CD workflow to automatically genera
 - Azure DevOps account. Create a free [Azure DevOps account](https://azure.microsoft.com/services/devops/) if you don't have one already.
 - GitHub account. Create a free [GitHub account](https://github.com/join) if you don't have one already.
 - Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/) if you don't have one already.
-- [Create an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
+- [Create an Azure container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) if you don't have one already.
 
 ## Get the code
 

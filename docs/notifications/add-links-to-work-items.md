@@ -93,6 +93,13 @@ Linking your work items to other objects also produces the following benefits:
 
 <a id="work-item-state-pull-request" />
 
+
+::: moniker range=">= azure-devops-2020"
+
+## Set work item state in pull request
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/set-work-item-state-pull-request.md)]
 
 ::: moniker range=">= azure-devops-2020"

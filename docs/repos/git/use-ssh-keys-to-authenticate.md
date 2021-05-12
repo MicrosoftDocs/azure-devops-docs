@@ -57,7 +57,7 @@ The commands here will let you create new default SSH keys, overwriting existing
 
 If these files exist, then you have already created SSH keys. You can overwrite the keys with the following commands, or skip this step and go to [configuring SSH keys](use-ssh-keys-to-authenticate.md#configuration) to reuse these keys.
 
-Create your SSH keys with the `ssh-keygen` command from the `bash` prompt. This command will create a 2048-bit RSA key for use with SSH. You can give a passphrase
+Create your SSH keys with the `ssh-keygen` command from the `bash` prompt. This command will create a 3072-bit RSA key for use with SSH. You can give a passphrase
 for your private key when prompted&mdash;this passphrase provides another layer of security for your private key. 
 If you give a passphrase, be sure to [configure the SSH agent](use-ssh-keys-to-authenticate.md#rememberpassphrase) to cache your passphrase so you don't have to enter it every time you connect.
 
@@ -72,7 +72,7 @@ Your public key has been saved in /c/Users/jamal/.ssh/id_rsa.pub.
 The key fingerprint is:
 SHA256:******************************************* jamal@fabrikam.com
 The key's randomart image is:
-+---[RSA 2048]----+
++---[RSA 3072]----+
 |+.   +yX*o .     |
 |... ..E+*=o      |
 |  ..o.=E=.o      |

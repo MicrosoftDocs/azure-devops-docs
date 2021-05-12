@@ -2,7 +2,7 @@
 title: Manage paid access for users in Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Assign paid access and control the default access of your new users in Azure DevOps
+description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
