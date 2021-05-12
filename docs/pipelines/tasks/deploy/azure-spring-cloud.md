@@ -38,6 +38,8 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 
 ## Examples
 
+The following examples demonstrate common usage scenarios. For more information, see [Automate application deployments to Azure Spring Cloud](/azure/spring-cloud/how-to-cicd?pivots=programming-language-java).
+
 ### Deleting a staging deployment
 
 The "Delete Staging Deployment" action allows you to delete the deployment not receiving production traffic. This frees up resources used by that deployment and makes room for a new staging deployment:
@@ -60,7 +62,7 @@ steps:
 
 ### Deploying
 
-#### To Production
+#### To production
 
 The following example deploys to the default production deployment in Azure Spring Cloud. This is the only possible deployment scenario when using the Basic SKU:
 
@@ -80,7 +82,7 @@ steps:
     Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
 ```
 
-#### Blue-Green
+#### Blue-green
 
 The following example deploys to a pre-existing staging deployment. This deployment will not receive production traffic until it is set as a production deployment.
 
@@ -99,7 +101,7 @@ steps:
     Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
 ```
 
-For more on blue-green deployments, including an alternative approach, see [Blue-Green deployment strategies](/azure/spring-cloud/concepts-blue-green-deployment-strategies).
+For more on blue-green deployments, including an alternative approach, see [Blue-green deployment strategies](/azure/spring-cloud/concepts-blue-green-deployment-strategies).
 
 ### Setting production deployment
 
