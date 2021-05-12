@@ -48,10 +48,12 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 
     # Run this workflow every time a commit is pushed to main or a pull request is opened against main
     on:
-    push:
-        branches: [ main ]
-    pull_request:
-        branches: [ main ]
+      push:
+        branches:
+          - main
+      pull_request:
+        branches: 
+          - main
 
     jobs:
         build:
