@@ -3,7 +3,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 04/14/2021
+ms.date: 05/12/2021
 ---
 
 
@@ -179,7 +179,7 @@ ms.date: 04/14/2021
       (able to restore from the Recycle bin)
    :::column-end:::
    :::column span="1":::
-      ✔️
+
    :::column-end:::
    :::column span="1":::
       
