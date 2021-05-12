@@ -336,6 +336,7 @@ Once you've formed a link relationship, you can't edit the link type of that rel
 For additional information, see these topics: 
 
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

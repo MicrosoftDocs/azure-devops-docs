@@ -118,7 +118,7 @@ To learn more, see the following articles:
 
 ## Extensibility 
 
-You can programmatically interact with work item templates to create, get, list, and delete using the [Templates REST APIs](/rest/api/azure/devops/wit/templates).
+You can programmatically interact with work item templates to create, get, list, and delete using the [Templates REST APIs](/rest/api/azure/devops/wit/templates/list).
 
 
 ## Related articles

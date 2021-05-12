@@ -1,4 +1,4 @@
-- name: Azure Artifacts Documentation
+- name: Azure Artifacts
   href: index.yml
 - name: What is Azure Artifacts?
   href: overview.md
@@ -14,9 +14,9 @@
     href: concepts/best-practices.md
   - name: Search packages
     href: ../project/search/functional-package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
-- name: Work with packages
+- name: Packages
   items:
-  - name: About packages
+  - name: About
     items:
     - name: Use badges to share your packages
       href: package-badges.md
@@ -24,7 +24,7 @@
       href: reference/limits.md
     - name: Follow a package for publish alerts
       href: how-to/follow-package-notifications.md
-  - name: Work with NuGet
+  - name: NuGet
     items:
     - name: NuGet quickstart
       href: get-started-nuget.md
@@ -46,7 +46,7 @@
       href: nuget/upstream-sources.md
     - name: Set up a multi-developer environment
       href: nuget/bootstrap-nuget.md
-  - name: Work with npm 
+  - name: Npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md
@@ -62,7 +62,7 @@
       href: npm/scopes.md
     - name: Use npm audit
       href: npm/npm-audit.md
-  - name: Work with Maven
+  - name: Maven
     items:
     - name: Maven quickstart
       href: get-started-maven.md
@@ -78,7 +78,7 @@
       href: gradle/pull-package-gradle.md
     - name: Publish a Maven artifact using Gradle
       href: gradle/publish-package-gradle.md
-  - name: Work with Python
+  - name: Python
     items:
     - name: Python quickstart 
       href: quickstarts/python-packages.md
@@ -86,11 +86,11 @@
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
     - name: Publish and consume Python packages from the command line
       href: quickstarts/python-cli.md
-  - name: Work with Universal Packages
+  - name: Universal Packages
     items:
-    - name: Universal packages quickstart
+    - name: Quickstart
       href: quickstarts/universal-packages.md
-    - name: Publish to a Universal feed (YAML/Classic)
+    - name: Universal Packages in Azure Pipelines (YAML/Classic)
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
 - name: Feeds, views, and upstream sources
   items:
@@ -128,19 +128,17 @@
       href: tutorials/protect-oss-packages-with-upstream-sources.md
     - name: Configure upstream behavior
       href: concepts/upstream-behavior.md
-- name: Work with Azure Pipelines
+- name: Artifacts in Azure Pipelines
   items:
-  - name: Artifacts in Azure Pipelines
-    items:
-    - name: Artifacts in Azure Pipelines overview
-      href: ../pipelines/artifacts/artifacts-overview.md
-    - name: Publish and download artifacts in Azure Pipeline
-      href: ../pipelines/artifacts/pipeline-artifacts.md
-    - name: Pipeline caching
-      href: ../pipelines/release/caching.md
-    - name: Set up retention policies
-      href: ../pipelines/policies/retention.md
-  - name: Work with symbols
+  - name: Artifacts in Azure Pipelines overview
+    href: ../pipelines/artifacts/artifacts-overview.md
+  - name: Publish and download artifacts in Azure Pipeline
+    href: ../pipelines/artifacts/pipeline-artifacts.md
+  - name: Pipeline caching
+    href: ../pipelines/release/caching.md
+  - name: Set up retention policies
+    href: ../pipelines/policies/retention.md
+  - name: Symbols
     items:
     - name: Symbol files
       href: concepts/symbols.md

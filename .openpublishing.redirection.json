@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/migrate/build-deployment-best-practices.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/build-deployment-best-practices",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/reference/error/attachment-upload-failed.md",
       "redirect_url": "/previous-versions/azure/devops/reference/error/attachment-upload-failed",
       "redirect_document_id": false,

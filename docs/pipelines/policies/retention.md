@@ -146,7 +146,7 @@ The following information is deleted when a run is deleted:
 * Test results
 * Run metadata
 
-Universal packages, Nuget, npm, and other packages are not tied to pipelines retention. 
+Universal packages, NuGet, npm, and other packages are not tied to pipelines retention. 
 
 ::: moniker-end
 
@@ -181,10 +181,10 @@ A retention lease can be added on a pipeline run for a specific period. For exam
 
 ## Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+You can delete runs using the [More actions menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-more-actions-menu).
 
   > [!div class="mx-imgBorder"]
   > ![delete a run](media/delete-a-run.png)
@@ -485,7 +485,7 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within a stage of a release are retained as specified by the retention policy configured for the test results. The test results do not get retained untill the release is reatined. If you need the test results as long as the release, set the retention settings for automated test runs in the Project settings accordingly to Never delete. This makes sure the test results are deleted only when the release is deleted.
+Test results published within a stage of a release are retained as specified by the retention policy configured for the test results. The test results do not get retained until the release is retained. If you need the test results as long as the release, set the retention settings for automated test runs in the Project settings accordingly to Never delete. This makes sure the test results are deleted only when the release is deleted.
 
 ### Are manual test results deleted?
 

@@ -82,7 +82,7 @@ Need more help to make a choice? These charts might help.
 <td>
 <p>Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.</p>
 
-<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
+<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
 </p>
 
 <p>You can get visualizations of your branch structures and where your changesets have been merged.</p>
@@ -160,7 +160,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>Auditability</td>
 <td>Because your team checks in all their work into a centralized system, you can identify which user checked in a <a href="find-view-changesets.md" data-raw-source="[changeset](find-view-changesets.md)">changeset</a> and use <a href="compare-files.md" data-raw-source="[compare](compare-files.md)">compare</a> to see what they changed. Looking at a file, you can <a href="view-file-changes-using-annotate.md" data-raw-source="[annotate](view-file-changes-using-annotate.md)">annotate</a> it to identify who changed a block of code, and when they did it.</td>
-<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made what was changed using history, compare, and annotate.</td>
+<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made and what was changed using history, compare, and annotate.</td>
 </tr>
 <tr>
 <td>Builds (automated by TFBuild)</td>
