@@ -77,6 +77,8 @@ az devops wiki create --name WIKI_NAME --type codewiki
 
 To delete a wiki, enter the `az devops wiki delete` command.
 
+[Note] Only code wiki is supported and not the project wiki.
+
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
 az devops wiki delete 
