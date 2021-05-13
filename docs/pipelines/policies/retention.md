@@ -477,7 +477,8 @@ The only way to retain a run or a release longer than what is allowed through re
 
 ### I lost some of the runs. Is there any way to get them back?
 
-If you believe that you have lost the runs due to a bug in the service, then create a support ticket immediately to recover the lost information. If the runs have been deleted as expected due to a retention policy or if the runs have been deleted longer than a week ago, then it is not possible to recover the lost runs.
+If you believe that you have lost the runs due to a bug in the service, then create a support ticket immediately to recover the lost information.If the runs have been manually deleted longer than a week ago then it is not possible to recover the lost runs. If the runs have been deleted as expected due to a retention policy it is not possible to recover the lost runs. 
+
 
 ### How do I use the `Build.Cleanup` capability of agents?
 
