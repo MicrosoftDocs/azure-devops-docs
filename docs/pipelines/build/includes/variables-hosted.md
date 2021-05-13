@@ -573,7 +573,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <tr>
 <td>Strategy.Name</td>
-<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>,or <code>rolling</code>.</td>
+<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>, or <code>rolling</code>.</td>
 </tr>
 
 <tr>
