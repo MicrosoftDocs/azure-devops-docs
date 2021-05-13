@@ -573,12 +573,12 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <tr>
 <td>Strategy.Name</td>
-<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>,<code>rolling</code>.</td>
+<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>,or <code>rolling</code>.</td>
 </tr>
 
 <tr>
 <td>Strategy.CycleName</td>
-<td>The current cycle name in a deployment. Options are <code>PreIteration</code>, <code>Iteration</code> and <code>PostIteration</code>.</td>
+<td>The current cycle name in a deployment. Options are <code>PreIteration</code>, <code>Iteration</code>, or <code>PostIteration</code>.</td>
 </tr>
 
 </table>
