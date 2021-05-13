@@ -555,7 +555,7 @@ Problems related to GitHub integration fall into the following categories:
 * **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
 * **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
 * **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
-* **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipeline did not report a status update.
+* **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipelines did not report a status update.
 
 ### Connection types
 
