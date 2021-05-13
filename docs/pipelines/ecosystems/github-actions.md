@@ -43,7 +43,9 @@ You'll use a [personal access token](../../organizations/accounts/use-personal-a
 
 ## Add a GitHub workflow
 
-[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). You can use the [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) to trigger a pipeline run. This example walks through creating a new workflow from within GitHub Actions. You can adapt the example to meet your needs. The relevant section for connecting to Azure Pipelines is the Azure Pipelines action. 
+[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). You'll use the [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) to trigger a pipeline run. 
+
+This example walks through creating a new workflow from within GitHub Actions and can be adapted to meet your needs. The relevant section for connecting to Azure Pipelines is the Azure Pipelines action. 
 
 1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
