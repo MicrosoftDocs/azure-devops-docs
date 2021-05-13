@@ -11,7 +11,7 @@ ms.topic: quickstart
 
 # Quickstart: Trigger an Azure Pipelines run from GitHub Actions
 
-Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Pipelines together. GitHub Actions helps you automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. 
+Get started using [GitHub Actions](https://docs.github.com/en/actions) and Azure Pipelines together. GitHub Actions help you automate your software development workflows from within GitHub. You can deploy workflows in the same place where you store code and collaborate on pull requests and issues. 
 
 If you have both Azure Pipelines and GitHub Actions workflows, you might want to trigger a pipeline run from within a GitHub action. For example, you might have a specific set of Azure DevOps pipeline tasks that you want to trigger from your GitHub Actions workflow. 
 
@@ -47,7 +47,7 @@ You'll use a [personal access token](../../organizations/accounts/use-personal-a
 
 1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
-1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. The `azure-devops-project-url` should not have a trailing slash.
+1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. The `azure-devops-project-url` shouldn't have a trailing slash.
 
     ```yaml
     name: CI
