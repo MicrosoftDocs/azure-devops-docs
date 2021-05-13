@@ -86,6 +86,14 @@ This example walks through creating a new workflow from within GitHub Actions an
 
     :::image type="content" source="media/pipeline-run-from-github.png" alt-text="GitHub Actions detailed run":::
 
+
+## Branch considerations
+
+The pipeline your branch runs on depends on whether your pipeline is in the same repo as your GitHub workflow file. 
+
+* If the pipeline and the GitHub workflow are in different repositories, the triggered pipeline version in the branch specified by **Default branch for manual and scheduled builds** is run.
+* If the pipeline and the GitHub workflow are in the same repository, the triggered pipeline version in the same branch as the triggering pipeline is run. 
+
 ## Clean up resources
 
 If you're not going to continue to use your GitHub workflow, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
