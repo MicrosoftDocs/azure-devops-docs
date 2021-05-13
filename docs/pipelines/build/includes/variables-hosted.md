@@ -568,9 +568,15 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 <tr>
 <td>Environment.ResourceId</td>
-<td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
+<td>Takes the name of the deployment strategy: <code>canary</code>, <code>runOnce</code>,<code>rolling</code>.</td>
 </tr>
 
+
+
+<tr>
+<td>Strategy.Name</td>
+<td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
+</tr>
 </table>
 
 
