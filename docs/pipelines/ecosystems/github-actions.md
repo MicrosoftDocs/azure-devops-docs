@@ -41,7 +41,7 @@ You'll use a [personal access token](../../organizations/accounts/use-personal-a
 1. Save by selecting **Add secret**.
 
 
-## Add a GitHub workflow
+## Create a GitHub workflow that triggers a pipeline
 
 [GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). You'll use the [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) to trigger a pipeline run. 
 
