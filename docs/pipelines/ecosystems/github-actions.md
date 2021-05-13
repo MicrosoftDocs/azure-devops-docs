@@ -25,6 +25,8 @@ To accomplish this, you can trigger a pipeline run with the [Azure Pipelines Act
 
 ## Authenticate with Azure Pipelines
 
+You'll use a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) to connect your GitHub account to Azure DevOps. You can generate a PAT from within Azure DevOps and then store it as a GitHub secret. Within your GitHub workflow, you'll reference the secret so that your GitHub action can authenticate with your Azure DevOps project. 
+
 1. Open your GitHub repository and go to **Settings**.
 
     :::image type="content" source="media/github-repo-settings.png" alt-text="Select Settings in GitHub":::
@@ -41,7 +43,9 @@ To accomplish this, you can trigger a pipeline run with the [Azure Pipelines Act
 
 ## Add a GitHub workflow
 
-1. In your repository on GitHub, create a new YAML file in the .github/workflows directory.
+[GitHub workflows](/azure/developer/github/github-actions) are a series of actions (like tasks in Azure Pipelines). You can use the [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) to trigger a pipeline run. This example walks through creating a new workflow from within GitHub Actions. You can adapt the example to meet your needs. The relevant section for connecting to Azure Pipelines is the Azure Pipelines action. 
+
+1. In your repository on GitHub, create a new YAML file in the `.github/workflows` directory.
 
 1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. The `azure-devops-project-url` should not have a trailing slash.
 
@@ -82,7 +86,7 @@ To accomplish this, you can trigger a pipeline run with the [Azure Pipelines Act
 
 ## Clean up resources
 
-If you're not going to continue to use the GitHub Action, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
+If you're not going to continue to use your GitHub workflow, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
 
 
 ## Next steps
