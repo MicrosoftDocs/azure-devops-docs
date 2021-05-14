@@ -33,6 +33,7 @@ resources:
   repositories: [ repository ]
   containers: [ container ]
   packages: [ package ]
+  webhooks: [ webhook ]
 ```
 
 ### Variables
