@@ -87,7 +87,8 @@ Along with defining how many days to retain runs, you can also decide the minimu
 > [!WARNING]
 > Azure DevOps will stop supporting per-pipeline retention rules in an upcoming release. At that time, any classic build pipeline that still has per-pipeline retention rules will be governed by the project-level retention rules instead. If you are using per-pipeline permissions, you should move your permissions to the project-level.
 > The only way to configure retention policies for YAML and classic pipelines is through the project settings described above. You can no longer configure per-pipeline retention policies. 
-> To remove your existing project-level retention settings, edit your release pipeline. Then, remove the values on the **Retention** tab. 
+>
+> To remove your existing pipeline-level retention settings, edit your release pipeline. Then, remove the values on the **Retention** tab. 
 
 ::: moniker-end
 
