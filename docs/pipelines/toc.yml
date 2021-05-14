@@ -170,19 +170,22 @@
     displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
-    displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
+    displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild, DotNetCore
   - name: .NET Framework
     href: apps/aspnet/build-aspnet-4.md
+    displayName: ASP, ASPNET, web
   - name: JavaScript and Node.js apps
     href: ecosystems/javascript.md
-    displayName: node, node.js, nodetool, npm, yarn, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+    displayName: node, node.js, nodetool, npm, yarn, react, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
   - name: Python
     href: ecosystems/python.md
     displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
   - name: Python to web app
     href: ecosystems/python-webapp.md
+    displayName: django, webapp
   - name: Anaconda
     href: ecosystems/anaconda.md
+    displayName: data science, python, miniconda, conda
   - name: C/C++
     href: apps/windows/cpp.md
   - name: Java
@@ -198,22 +201,28 @@
       href: ecosystems/java-function.md
   - name: Android
     href: ecosystems/android.md
+    displayName: android sdk, xamarin, android sdk platform tools
   - name: Go
     href: ecosystems/go.md
     displayName: workspace, gopath, goroot, go get, dep, dep ensure
   - name: PHP
     href: ecosystems/php.md
+    displayName: php, phpunit
   - name: PHP to web app
     href: ecosystems/php-webapp.md
+    displayName: php, app service
   - name: Ruby
     href: ecosystems/ruby.md
     displayName: rails, bundler, rake, simplecov, cobertura
   - name: Xamarin
     href: ecosystems/xamarin.md
+    displayName: xamarin.android, xamarin.ios, macOS, AppStore, Xamarin SDK
   - name: Xcode
     href: ecosystems/xcode.md
+    displayName: app certificate, test flight
   - name: GitHub Actions
     href: ecosystems/github-actions.md
+    displayName: github, pipelines action
 - name: Build apps
   items:
   - name: Build multiple branches
@@ -269,9 +278,10 @@
     items:
     - name: Define and target environments
       href: process/environments.md
-      displayName: environments
+      displayName: clusters, vms, resources
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
+      displayName: clusters, aks, manifest, service account
     - name: Virtual machine resource
       href: process/environments-virtual-machines.md
   - name: Deploy apps using VMs
@@ -284,12 +294,12 @@
     items:
     - name: Use a Resource Manager template to deploy
       href: apps/cd/azure/deploy-arm-template.md
-      displayName: Resource Manager
+      displayName: Resource Manager, ARM, azure
     - name: Deploy a data pipeline with Azure
       items:
       - name: Data pipeline overview
         href: apps/cd/azure/cicd-data-overview.md
-        displayName: Data pipeline overview
+        displayName: data science, machine learning
       - name: Build a data pipeline
         href: apps/cd/azure/build-data-pipeline.md
     - name: Deploy a virtual machine scale set
