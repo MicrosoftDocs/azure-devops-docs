@@ -25,7 +25,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
 > [!NOTE]
-> Caching is currently free, and cashes are stored in Azure blob storage.
+> Caching is currently free, and caches are stored in Azure blob storage.
 
 ## Use Cache task
 
