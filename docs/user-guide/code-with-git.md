@@ -46,7 +46,7 @@ If you want to make a new repo, follow the steps in [Create a new Git repo in yo
 
 ### The code is in my (or my organization's) Azure Repos Git repo
 
-If the code is in your (or your organization's) Azure Repo, you can clone the Git repo to your local computer and start working with it by jumping down to [Clone the repo](#clone-the-repo-to-your-computer).
+If the code is in your (or your organization's) Azure Repos, you can clone the Git repo to your local computer and start working with it by jumping down to [Clone the repo](#clone-the-repo-to-your-computer).
 
 ### The code is in another Git repo
 
