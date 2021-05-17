@@ -25,7 +25,7 @@ With pull request triggers, anytime you raise a new pull request for the designa
 
 1. A GitHub/Azure repos repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
 1. A working build for your repository.
-1. A classic release pipeline. [Set up a release pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops#set-up-a-release-pipeline) for your project if you don't already have one.
+1. A classic release pipeline. [Set up a release pipeline](https://docs.microsoft.com/azure/devops/pipelines/release/deploy-multiple-branches.md#set-up-a-release-pipeline) for your project if you don't already have one.
 
 ## Create a pull request trigger
 
