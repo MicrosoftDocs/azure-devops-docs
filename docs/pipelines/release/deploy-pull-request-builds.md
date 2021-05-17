@@ -29,35 +29,32 @@ With pull request triggers, anytime you raise a new pull request for the designa
 
 ## Create a pull request trigger
 
-Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers for both Azure Repos or GitHub repositories.
+A pull request trigger creates a release every time a new build Artifact is available. You can set up pull request triggers for both Azure Repos or GitHub repositories.
 
-1. Under **Artifacts** select the **Continuous deployment trigger** icon.
+1. From within your project, Select **Pipelines** > **Releases**, and then select your release pipeline.
 
-   > [!div class="mx-imgBorder"]
-   > ![Continuous deployment trigger](media/deploy-pull-request-builds/artifact-pr-trigger.png)
+1. Select the **Continuous deployment trigger** icon in the **Artifacts** section
 
-2. Select the pull request trigger toggle and set it to **Enabled**.
+    :::image type="content" source="media/deploy-pull-request-builds/artifact-pr-trigger.png" alt-text="Continuous deployment trigger:::
 
-   > [!div class="mx-imgBorder"]  
-   > ![Pull Request trigger toggle](media/deploy-pull-request-builds/pull-request-trigger-enabled.png)
+2. Under the **Pull request trigger** section, select the toggle button to enable it.
 
-3. Set up one or more target branches. Target branches are the branches for which the pull request is raised. When a pull request is created for one of these branches, it triggers a build, and when the build succeeds, it triggers the PR release. You can optionally specify build tags as well.
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-enabled.png" alt-text="Pull Request trigger toggle:::
 
-   > [!div class="mx-imgBorder"]
-   > ![Target branch filters](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
+3. From the **Target Branch Filters**, select your **Target Branch** from the dropdown menu.
 
-4. To deploy to a specific stage you need to explicitly opt-in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-target-branch.png" alt-text="Target branch filters:::
 
-   > [!div class="mx-imgBorder"]
-   > ![Stages enabled for pull request deployments](media/deploy-pull-request-builds/pull-request-trigger-stage.png)
+4. To deploy your application to a specific stage you need to explicitly opt-in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
 
-   To opt-in a stage for PR deployment, select the **Pre-deployment conditions** icon for that specific stage and under the **Triggers** section, select **Pull request deployment** to set it to **Enabled**. 
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-stage.png" alt-text="Stages enabled for pull request deployments:::
 
-   > [!div class="mx-imgBorder"]
-   > ![Pull request deployment toggle button](media/deploy-pull-request-builds/deploy-to-dev-stage.png)
+   To opt-in a stage for pull request deployment, select the **Pre-deployment conditions** icon for your specific stage, and then select **Triggers** > **After release**. Finally select the **Pull request deployment** toggle button to enable it. 
+
+    :::image type="content" source="media/deploy-pull-request-builds/deploy-to-dev-stage.png" alt-text="After release - Pull request deployment:::
 
 > [!IMPORTANT]
-> For critical stages like production, **Pull request deployment** should not be turned on.
+> Enabling automatic pull request deployments for production stages is not recommended.
 
 ## Set up branch policy for Azure Repos
 
