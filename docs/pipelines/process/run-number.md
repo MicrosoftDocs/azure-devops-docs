@@ -100,6 +100,10 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
 
+## Expressions
+
+If using an expression to set the build number, some tokens cannot be used as their values are not set at the time expressions are evaluated. These include `$(Build.BuildId)`, `$(Build.BuildURL)` and `$(Build.BuildNumber)`.
+
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
