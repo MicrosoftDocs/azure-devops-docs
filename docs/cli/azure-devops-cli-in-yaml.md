@@ -48,7 +48,6 @@ steps:
 
 ### For Linux: azure-pipelines-steps-linux.yml
 
-Replace `https://dev.azure.com/{OrganizationName}` with the URL for your Azure DevOps organization.
 
 ```yaml
 steps:
@@ -77,7 +76,7 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=https://dev.azure.com/{OrganizationName} project="Movie Search Web App" --use-git-aliases true
+- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
@@ -87,8 +86,6 @@ steps:
 ```
 
 #### For Windows: azure-pipelines-steps-win.yml
-
-Replace `https://dev.azure.com/{OrganizationName}` with the URL for your Azure DevOps organization.
 
 ```yaml
 steps:
@@ -112,12 +109,12 @@ steps:
 - script: az extension add -n azure-devops
   displayName: 'Install Azure DevOps Extension'
 
-- script: echo ${AZURE_DEVOPS_CLI_PAT} | az devops login
+- script: echo %AZURE_DEVOPS_CLI_PAT% | az devops login
   env:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=https://dev.azure.com/{OrganizationName} project="Movie Search Web App" --use-git-aliases true
+- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
