@@ -463,7 +463,7 @@
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
-       displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
+      displayName: service connection, project-level permissions, docker, GitHub, npm, Nuget, Azure Repos
 - name: Manage agents & agent pools
   items:
     - name: About agents & agent pools
