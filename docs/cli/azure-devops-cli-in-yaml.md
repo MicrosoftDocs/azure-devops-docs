@@ -112,7 +112,7 @@ steps:
 - script: az extension add -n azure-devops
   displayName: 'Install Azure DevOps Extension'
 
-- script: echo $(AZURE_DEVOPS_CLI_PAT) | az devops login
+- script: echo ${AZURE_DEVOPS_CLI_PAT} | az devops login
   env:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
