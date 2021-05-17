@@ -9,7 +9,7 @@ ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 05/11/2021
+ms.date: 05/17/2021
 ---
 
 # Naming restrictions and conventions  
@@ -1272,6 +1272,51 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       - Must not end with a space ( )
       - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ;
+   :::column-end:::
+:::row-end:::
+---
+
+## Azure Pipelines
+
+:::row:::
+   :::column span="1":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="1":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Job name
+   :::column-end:::
+   :::column span="1":::
+      - Must only contain alphanumeric characters and `'_'`
+      - Must not start with a number
+      - Must have a unique name
+      - Must have the following pattern: `^[-_A-Za-z0-9]*$`
+      - Must not contain keywords, for example: "deployment"
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Stage name
+   :::column-end:::
+   :::column span="1":::
+      - Must only contain alphanumeric characters and `'_'`
+      - Must not start with a number
+      - Must not contain keywords, for example: "deployment"
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Expressions
+   :::column-end:::
+   :::column span="1":::
+      - Must start with `a-Z` or `_AND`, followed by `a-Z`, `0-9`, or `_`
    :::column-end:::
 :::row-end:::
 ---

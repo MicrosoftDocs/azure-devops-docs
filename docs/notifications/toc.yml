@@ -1,58 +1,82 @@
 - name: About notifications
   href: about-notifications.md
+  displayName:
 - name: Navigating the UI
   href: navigating-the-ui.md
+  displayName:
 - name: Events and notifications
-  href: concepts-events-and-notifications.md 
+  href: concepts-events-and-notifications.md
+  displayName:
 - name: How email recipients are determined
-  href: concepts-email-recipients.md 
+  href: concepts-email-recipients.md
+  displayName:
 - name: Add & manage notifications
   items:
   - name: Change your preferred email address
-    href: change-email-address.md 
+    href: change-email-address.md
+    displayName:
   - name: Manage personal notifications
     href: manage-your-personal-notifications.md
+    displayName:
   - name: Unsubscribe from default notification
-    href: unsubscribe-default-notification.md 
+    href: unsubscribe-default-notification.md
+    displayName:
   - name: Manage team, group, and Global notifications
-    href: manage-team-group-global-organization-notifications.md 
+    href: manage-team-group-global-organization-notifications.md
+    displayName:
   - name: Exclude yourself from notification of events you initiated
-    href: exclude-self-from-email.md  
+    href: exclude-self-from-email.md
+    displayName:
 - name: Follow work, link work items, use @mentions  
   items:
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName:
   - name: "Use @mentions to further discussion"
-    href: at-mentions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+    href: at-mentions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName:
   - name: "Use #ID to link to work items"
-    href: add-links-to-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+    href: add-links-to-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName:
 - name: Notifications to third parties
   items:
   - name: Send notifications to third-party services (Slack, Teams, etc.)
-    href: integrate-third-party-services.md 
+    href: integrate-third-party-services.md
+    displayName:
 - name: Troubleshooting
   items:
   - name: Enable subscription logging for troubleshooting
-    href: use-subscription-logging.md 
+    href: use-subscription-logging.md
+    displayName:
   - name: FAQs 
     href: faq-notifications.yml
+    displayName:
   - name: Why am I not getting an email
-    href: troubleshoot-not-getting-email.md 
+    href: troubleshoot-not-getting-email.md
+    displayName:
   - name: Why am I getting this email
-    href: troubleshoot-unexpected-email.md 
+    href: troubleshoot-unexpected-email.md
+    displayName:
   - name: Why are my emails delayed
-    href: troubleshoot-delayed-email.md 
+    href: troubleshoot-delayed-email.md
+    displayName:
   - name: Contacting support
-    href: troubleshoot-contact-support.md 
+    href: troubleshoot-contact-support.md
+    displayName:
 - name: Reference
   items:
   - name: Default permissions (Security)  
     href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName:
   - name: View notification statistics for your organization
-    href: view-organization-notification-statistics.md 
+    href: view-organization-notification-statistics.md
+    displayName:
   - name: Default notifications
-    href: oob-built-in-notifications.md 
+    href: oob-built-in-notifications.md
+    displayName:
   - name: Events
-    href: oob-supported-event-types.md 
+    href: oob-supported-event-types.md
+    displayName:
   - name: Collaborate in a Team room
     href: /previous-versions/azure/devops/notifications/collaborate-in-a-team-room
+    displayName:
