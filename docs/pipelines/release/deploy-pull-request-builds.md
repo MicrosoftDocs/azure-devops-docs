@@ -1,6 +1,6 @@
 ---
 title: Deploy pull request Artifacts
-description: DevOps CI CD - Deploy pull request Artifacts from Azure Repos and GitHub
+description: Deploy pull request Artifacts from Azure Repos or GitHub repository
 ms.topic: tutorial
 ms.author: moala
 author: raiyanalam
@@ -8,20 +8,24 @@ ms.date: 10/16/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Deploy pull request Artifacts with Azure Pipelines
+# Deploy pull request Artifacts with classic release pipelines
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019**
 
-Pull requests provide an effective way to have code reviewed before it is merged to the codebase. However, certain issues can be tricky to find until the code is built and deployed to an environment. Before the introduction of [pull request release triggers](/azure/devops/release-notes/2018/aug-21-vsts#perform-additional-testing-using-a-pull-request-release-trigger), when a PR was raised, you could trigger a build, but not a deployment. Pull request triggers enable you to set up a set of criteria that must be met before deploying your code. You can use pull request triggers with code hosted on Azure Repos or GitHub.
+Pull requests provide an effective way to review code changes before it is merged into the codebase. However, these changes can introduce issues that can be tricky to find without building and deploying your application to a specific environment. Pull request triggers enable you to set up a set of criteria that must be met before deploying your code. You can use pull request triggers with code hosted on Azure Repos or GitHub.
 
-Configuring pull request based releases has two parts:
+Setting up pull request deployments is a two step process:
 
-1. Setting up a pull request trigger.
-2. Setting up a branch policy (in Azure Repos) or status checks (in GitHub) for your release pipeline.
+1. Set up a pull request trigger.
+2. Set up branch policies (in Azure Repos) or status checks (in GitHub) for your release pipeline.
 
-Once a pull request release is configured, anytime a pull request is raised for the protected branch a release is triggered automatically, deployed to the specified environments, and the status of the deployment is displayed in the PR page. Pull request deployments may help you catch deployment issues early in the cycle, maintain better code quality, and release with higher confidence.
+With pull request triggers, anytime you raise a new pull request for the designated branch, a release is triggered automatically to start the deployment to the designated environments. The deployment status will then be displayed on the pull request page. Pull request triggers can help you maintain better code quality, release with higher confidence, and discover any issues early on in the development cycle.
 
-This article shows how you can set up a pull request based release for code hosted in Azure Repos and in GitHub.
+## Prerequisites
+
+1. A GitHub/Azure repos repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
+1. A working build for your repository.
+1. A classic release pipeline. [Set up a release pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deploy-multiple-branches?view=azure-devops#set-up-a-release-pipeline) for your project if you don't already have one.
 
 ## Create a pull request trigger
 
