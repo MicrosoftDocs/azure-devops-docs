@@ -1,29 +1,42 @@
 - name: About service hooks
   href: overview.md
+  displayName:
 - name: Create a service hook
   items:
   - name: Workplace messaging apps
     href: services/workplace-messaging-apps.md
+    displayName:
   - name: Grafana
     href: services/grafana.md
+    displayName:
   - name: Slack
     href: services/slack.md
+    displayName:
   - name: Jenkins
     href: services/jenkins.md
+    displayName:
   - name: Trello
     href: services/trello.md
+    displayName:
   - name: Datadog
     href: services/datadog.md
+    displayName:
   - name: Microsoft Teams
     href: services/teams.md
+    displayName:
 - name: Web Hooks
   href: services/webhooks.md
+  displayName:
 - name: Authorize other services
   href: authorize.md
+  displayName:
 - name: Service hook consumers
   href: consumers.md
+  displayName:
 - name: Service hook events
   href: events.md
+  displayName:
 - name: Troubleshoot and FAQs
   href: troubleshoot.md
+  displayName:
 
