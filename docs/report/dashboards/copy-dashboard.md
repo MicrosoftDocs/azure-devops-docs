@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/07/2021
+ms.date: 05/18/2021
 ---
 
 # Copy a dashboard 
@@ -18,9 +18,9 @@ ms.date: 05/07/2021
 Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
  
 > [!NOTE]  
-> The Copy Dashboard feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience** feature. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Copy Dashboard** feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience**. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
 
-To add a team, see [Add a team](../../organizations/settings/add-teams.md). 
+To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
 
 <a id="permissions">  </a>
 
@@ -32,43 +32,32 @@ To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 - To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](../dashboards/dashboard-permissions.md). In general, you need to be a team member for the currently selected team to edit dashboards.
 
 
-## Open the dashboard 
+## Open the dashboard you want to copy
 
 All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are a project dashboard.  
 
-Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
+1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
 
-> [!div class="mx-imgBorder"]  
-> ![Dashboards Directory, new navigation](media/dashboards/open-dashboards-vert.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Dashboards Directory.](media/dashboards/open-dashboards-vert.png)
 
-It lists dashboards in the following order: 
-- Your last visited dashboard
-- Your favorited dashboards
-- All dashboards of teams that you belong to
-- All dashboards defined for the project in alphabetical order. 
+	It lists dashboards in the following order: 
+	- Your last visited dashboard
+	- Your favorited dashboards
+	- All dashboards of teams that you belong to
+	- All dashboards defined for the project in alphabetical order. 
 
-Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
+	Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
 
-> [!div class="mx-imgBorder"]  
-> ![Filter the dashboard directory](media/dashboards/filter-directory.png)   
+	> [!div class="mx-imgBorder"]  
+	> ![Screenshot of Filter the dashboard directory.](media/dashboards/filter-directory.png)   
 
-If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
- 
-<a id="choose-dashboard" />
+1.  If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
-## Select a dashboard 
-
-1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
+1. If you open a dashboard, you can choose a different dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
-	> ![Dashboards, Browse all dashboards option](media/dashboards/browse-all-dashboards.png)  
-	 
-1. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../media/icons/icon-favorite-star.png).  
-
-	> [!div class="mx-imgBorder"]
-	> ![Dashboards, Favorite a dashboard](media/dashboards/favorite-dashboard.png)  
-
-	Favoriting a dashboard will cause it to appear under **My Favorites dashboards** list on the dashboards directory. Also, it will appear towards the top in the **Dashboards** selector and in your [personal Favorites list](../../project/navigation/set-favorites.md). . 
+	> ![Screenshot of Dashboard selector, Browse all dashboards option.](media/dashboards/browse-all-dashboards.png)  
  
 ## Copy the dashboard 
 
@@ -87,8 +76,7 @@ If you need to switch to a different project, choose the :::image type="icon" so
 
 	Choose **Create**. 
 
-3. Open a team-based widget, such as , and verify that the widget now references the team selected in the previous step. 
- 
+3. Open a team-based widget, such as **Velocity**, and verify that the widget now references the team selected in the previous step. 
  
 
 ## Try this next 
