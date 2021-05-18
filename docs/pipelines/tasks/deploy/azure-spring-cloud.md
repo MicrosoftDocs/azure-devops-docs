@@ -31,12 +31,14 @@ Use this task to deploy applications to [Azure Spring Cloud](/azure/spring-cloud
 |`CreateNewDeployment`<br/>Create new deployment |Deploy|(Optional) If set to `true` and the deployment specified by `DeploymentName` does not exist at execution time, it will be created.<br/>Default value: `false`|
 |`Package`<br/>Package or folder|Deploy|(Required) The file path to the package containing the application to be deployed (`.jar` file for Java, `.zip` for .NET Core) or to a folder containing the application source to be built. [Build variables](../../build/variables.md) or [release variables](../../release/variables.md#default-variables) are supported. <br/>Default value: ```$(System.DefaultWorkingDirectory)/**/*.jar```|
 |`RuntimeVersion`<br/>Runtime Version|Deploy|(Optional) The runtime stack for the application.<br/>One of: `Java_8`, `Java_11`, `NetCore_31`,<br/>Default value: `Java_11`|
-|`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-SERVER_PORT 5000 -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
-|`JvmOptions`<br/>JVM Options|Deploy|(Optional) A string containing JVM Options. <br/> Example: `-Xms1024m -Xmx2048m -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
+|`EnvironmentVariables`<br/>Environment Variables|Deploy|(Optional) Environment variables to be entered using the syntax &#39;-key value&#39;. Values containing spaces should be enclosed in double quotes. <br/>Example: ```-CUSTOMER_NAME Contoso -WEBSITE_TIME_ZONE "Eastern Standard Time"```|
+|`JvmOptions`<br/>JVM Options|Deploy|(Optional) A string containing JVM Options. <br/> Example: `-XX:+UseG1GC -XX:MaxRAMPercentage=70 -Dazure.keyvault.enabled=true -Dazure.keyvault.uri=https://myvault.vault.azure.net/`|
 |`DotNetCoreMainEntryPath`<br/>.NET Core entry path |Deploy|(Optional) A string containing the path to the .NET executable relative to zip root.|
 |`Version`<br/>Version|Deploy|(Optional) The deployment version. If not set, the version is left unchanged.|
 
 ## Examples
+
+The following examples demonstrate common usage scenarios. For more information, see [Automate application deployments to Azure Spring Cloud](/azure/spring-cloud/how-to-cicd?pivots=programming-language-java).
 
 ### Deleting a staging deployment
 
@@ -60,7 +62,7 @@ steps:
 
 ### Deploying
 
-#### To Production
+#### To production
 
 The following example deploys to the default production deployment in Azure Spring Cloud. This is the only possible deployment scenario when using the Basic SKU:
 
@@ -80,7 +82,7 @@ steps:
     Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
 ```
 
-#### Blue-Green
+#### Blue-green
 
 The following example deploys to a pre-existing staging deployment. This deployment will not receive production traffic until it is set as a production deployment.
 
@@ -99,7 +101,7 @@ steps:
     Package: '$(System.DefaultWorkingDirectory)/**/*customer-api*.jar'
 ```
 
-For more on blue-green deployments, including an alternative approach, see [Blue-Green deployment strategies](/azure/spring-cloud/concepts-blue-green-deployment-strategies).
+For more on blue-green deployments, including an alternative approach, see [Blue-green deployment strategies](/azure/spring-cloud/concepts-blue-green-deployment-strategies).
 
 ### Setting production deployment
 

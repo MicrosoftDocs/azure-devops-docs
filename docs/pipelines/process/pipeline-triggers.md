@@ -132,6 +132,8 @@ A typical scenario in which the pipeline completion trigger doesn't fire is when
 - Update the branch filters in the pipeline in the **Default branch for manual and scheduled builds** branch so that they match the new branch.
 - Update the **Default branch for manual and scheduled builds** setting to a branch that has a version of the pipeline with the branch filters that match the new branch.
 
+### Default branch for manual and scheduled builds setting
+
 To view and update the **Default branch for manual and scheduled builds** setting:
 
 1. [Navigate](../get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.

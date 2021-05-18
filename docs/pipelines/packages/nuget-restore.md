@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. This allows for a cleaner development environment and smaller repository size. You can restore your NuGet packages using the NuGet restore build task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both YAML and the classic Azure pipelines. 
+NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. This allows for a cleaner development environment and smaller repository size. You can restore your NuGet packages using the NuGet restore build task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both YAML and the classic Azure Pipelines. 
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ To build a solution that relies on NuGet packages from Azure artifacts feeds, we
 - **Display name:** NuGet restore.
 - **Command:** restore.
 - **Path to solution, packages.config, or project.json:** The path to the solution, packages.config, or project.json file that references the packages to be restored.
-4. If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and specify the file from your repo. If you're using a single Azure Artifacts feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
+4. If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and specify the file from your repository. If you're using a single Azure Artifacts feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 5. Check the **Use packages from NuGet.org** option if you want to include NuGet.org in the generated NuGet.config.
 6. Select **Save & queue** .
 

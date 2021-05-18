@@ -58,18 +58,18 @@ The next section shows a few common scenarios where the upstream behavior is tri
 
     :::image type="content" source="media\public-to-internal.svg" alt-text="switched from public to private":::
 
-## Enable upstream behavior
+## Allow external versions
 
 > [!NOTE]
-> Only feed owners are allowed to enable/disable upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> Only feed owners are allowed to configure the upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-To enable the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+To configure the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
 
 :::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
 
-## Enable upstream behavior using the REST API
+## Allow external versions using the REST API
 
-Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
+Aside from using the feed's user interface, you can also configure the upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
 
 #### [NuGet](#tab/nuget/)
 
@@ -95,7 +95,7 @@ Aside from using the feed's user interface, you can also enable upstream behavio
 
 * * * 
 
-## Enable upstream behavior with PowerShell
+## Allow external versions with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
 
@@ -162,7 +162,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 ```
 
 > [!NOTE]
-> In some cases, enabling/disabling upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+> In some cases, configuring the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
 ## Related articles
 
