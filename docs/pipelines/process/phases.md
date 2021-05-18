@@ -266,7 +266,9 @@ Jobs can be of different types, depending on where they run.
 ### Agent pool jobs
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
-Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job.
+
+* When using Microsoft-hosted agents, each job in a pipeline gets a fresh agent.
+* Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job. You may get the same agent for consecutive jobs, depending on whether there is more than one agent in your agent pool that matches your pipeline's demands. If there is only one agent in your pool that matches the pipeline's demands, the pipeline will wait until this agent is available.
 
 > [!NOTE]
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
