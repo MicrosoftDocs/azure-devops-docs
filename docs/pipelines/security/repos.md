@@ -1,16 +1,17 @@
 ---
-title: Repository protection
-description: Securing repos and forks.
+title: Secure repositories
+description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
 ms.reviewer: vijayma
-ms.date: 05/14/2020
+ms.date: 05/18/2021
 monikerRange: '> azure-devops-2019'
 ---
 
 # Repository protection
 
 Source code, the pipeline's YAML file, and necessary scripts & tools are all stored in a version control repository.
-Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe.
+Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe. You can also add pipeline permissions and checks to repositories.  
+
 Also, you should review [default access control](../../organizations/security/default-git-permissions.md) for repositories.
 
 Because of Git's design, protection at a branch level will only carry you so far.
