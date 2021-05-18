@@ -3,7 +3,7 @@ title: About pipeline resources
 ms.custom: seodec18
 description: What are resources?
 ms.topic: reference
-ms.date: 05/11/2021
+ms.date: 05/18/2021
 monikerRange: azure-devops
 ---
 
@@ -12,30 +12,29 @@ monikerRange: azure-devops
 A resource is anything used by a pipeline that lives outside the pipeline. [Resources](resources.md) are defined at one place and can be consumed anywhere in your pipeline. 
 
 There are three types of resources:
-- Resources that consume something (Example: secure file, variable group, pipeline, repository)
-- Resources that are triggered by something (repositories, artifacts, pipeline triggers)  
+- Resources that consume (secure file, variable group, pipeline, repository)
+- Resources that get triggered (repositories, artifacts, pipeline triggers)  
 - Resources that run on something (environments, agent pools, containers)
-- 
-It's useful to also think about resources from three user roles. An owner of a resource cares about preventing people from accessing it if they do not have the appropriate permissions. For example, a resource owner for a secure password to an environment might not want anyone with access to the Pipeline to see the password. 
-
-A pipeline author cares about what happens within a YAML file. Pipeline authors care about preventing malicious scripts from running and want to protect against code issues.
-
-A developer is the person writing all of the code used in a pipeline and wants to have a seamless process. 
-
-
-When we look at resources, it's useful to think about how that resource is used, how you can prevent a malicious script, and how to prevent an authorized pipeline from having access. 
-
-
 
 Resources can be [protected or open](../security/resources.md). 
 
-Resources include:
-- [agent pools](../agents/agents.md)
-- [variable groups](../library/variable-groups.md)
-- [secure files](../library/secure-files.md)
-- [service connections](../library/service-endpoints.md)
-- [environments](../process/environments.md)
-- [repositories](resources.md#resources-repositories)
-- [artifacts](../artifacts/artifacts-overview.md)
-- [pipelines](resources.md#resources-pipelines)
+## Resources security
+
+When we look at resources, it's useful to think about how that resource is used, how you can prevent a malicious code, and how to prevent an authorized pipeline from having access. 
+
+
+|Resource  |How is it consumed?  |How can you prevent a malicious script in a pipeline from using this?  |How do you prevent an unintended pipeline from using this?  |
+|---------|---------|---------|---------|
+|[service connections]((../library/service-endpoints.md))     |    Consumed by tasks in a YAML file that use the service connection as an input     |    There is no API to read a service connection. A service connection  needs to be declared in a YAML file.   |     Checks and pipeline permissions controlled by service connection users.     |
+|[variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md)    |    A special syntax exists for using variable groups in a pipeline or in a job. A variable group gets added like a service connection.     |    Variable groups need to be declared in a YAML file.     |  There is not a way now. Authors have access to variable groups.    |
+|[agent pools](../agents/agents.md) |   There is a special syntax to use an agent pool to run a job.      |    There is no API to run a script on an agent pool. Agent pools must be declared in a YAML file.     |    Checks and pipeline permissions are controlled by agent pool users. A resource owner can control which pipelines can access an agent pool. You can also use pipeline permissions to restrict access to a particular pipelines.      |
+|[environments](../process/environments.md) |   There is a special syntax to use an environment in a YAML.      |    There is no API to run a script on an environment. Environments must be declared in a YAML file.     |    Checks and pipeline permissions are controlled by environment users. You can also use pipeline permissions to restrict access to a particular environment.      |
+|[repositories](resources.md#resources-repositories)     |   A script can clone a repository if the job access token has access to the repo.   |   There is an API to clone repositories. You can also use a project setting to prevent un-declared repositories from being accessed in a script. When enabled, ACLs for the repository are added to the job access token on if it is explicitly declared in the resources section.       |   Checks and pipeline permissions controlled by respository contributors. A repository owner can restrict ownership.      |
+|[artifacts](../artifacts/artifacts-overview.md), work items, [pipelines](resources.md#resources-pipelines)     |   [Pipeline artifacts](../artifacts/artifacts-overview.md) are resources, but [Azure Artifacts](/azure/devops/artifacts/) are not.  Artifacts on their own are not resources. A script can download artifacts if the job access token has access to the feed. An (pipeline) artifact can be explicitly declared as a resource in the resources section – primarily for the intent of triggering the pipeline when a new artifact is available, or to consume that artifact in the pipeline.
+      |    Job access tokens have read permissions on artifacts within their scope (project or collection). You can restrict the job access token to be project-scoped instead of collection scoped and limit the access to feeds within the project. If I have access to a project, then I can see all the artifacts and feeds. There is no way to add permission restrictions to specific feeds (as declared in the resources section) to a job access token.
+     |    Checks and pipeline permissions for feeds are not supported     |
+
+There are some resources that live outside of the Azure DevOps ecosystem. Access to these resources is controlled with service connections. 
 - [containers](resources.md#resources-containers)
+- [packages](resources.md#resources-packages)
+- [webhooks](resources.md#resources-webhooks)
