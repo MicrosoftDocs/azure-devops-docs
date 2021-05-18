@@ -35,23 +35,23 @@ A pull request trigger creates a release every time a new build Artifact is avai
 
 1. Select the **Continuous deployment trigger** icon in the **Artifacts** section
 
-    :::image type="content" source="media/deploy-pull-request-builds/artifact-pr-trigger.png" alt-text="Continuous deployment trigger:::
+    :::image type="content" source="media/deploy-pull-request-builds/artifact-pr-trigger.png" alt-text="Continuous deployment trigger":::
 
 2. Under the **Pull request trigger** section, select the toggle button to enable it.
 
-    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-enabled.png" alt-text="Pull Request trigger toggle:::
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-enabled.png" alt-text="Pull Request trigger toggle":::
 
 3. From the **Target Branch Filters**, select your **Target Branch** from the dropdown menu.
 
-    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-target-branch.png" alt-text="Target branch filters:::
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-target-branch.png" alt-text="Target branch filters":::
 
 4. To deploy your application to a specific stage you need to explicitly opt-in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
 
-    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-stage.png" alt-text="Stages enabled for pull request deployments:::
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-trigger-stage.png" alt-text="Stages enabled for pull request deployments":::
 
    To opt-in a stage for pull request deployment, select the **Pre-deployment conditions** icon for your specific stage, and then select **Triggers** > **After release**. Finally select the **Pull request deployment** toggle button to enable it. 
 
-    :::image type="content" source="media/deploy-pull-request-builds/deploy-to-dev-stage.png" alt-text="After release - Pull request deployment:::
+    :::image type="content" source="media/deploy-pull-request-builds/deploy-to-dev-stage.png" alt-text="After release - Pull request deployment":::
 
 > [!IMPORTANT]
 > Enabling automatic pull request deployments for production stages is not recommended.
