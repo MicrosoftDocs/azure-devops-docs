@@ -58,52 +58,43 @@ A pull request trigger creates a release every time a new build Artifact is avai
 
 ## Set up branch policy for Azure Repos
 
-You can use branch policies to implement a list of criteria that must be met for a PR to be merged.
+You can use branch policies to implement a list of criteria that must be met for a pull request to be merged.
 
-1. Under **Repos** select **Branches** to access the list of branches for your repository.
+1. From within your project, select **Repos** > **Branches** to access the list of branches for your repository.
 
-   > [!div class="mx-imgBorder"]
-   > ![Branches in Azure repos](../../repos/git/media/branches/branches_nav-new-nav.png)
+    :::image type="content" source="../../repos/git/media/branches/branches_nav-new-nav.png" alt-text="Branches in Azure repos":::
 
-2. Select the the context menu `...` for your appropriate branch and select **Branch policies**.
+2. Select the the context menu for your appropriate branch `...`, then select **Branch policies**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Branch policies for main branch](media/deploy-pull-request-builds/branch-policies-menu.png)
+    :::image type="content" source="media/deploy-pull-request-builds/branch-policies-menu.png" alt-text="Branch policies for main branch":::
 
-3. Select **Add status policy** and select a status policy from the **status to check** dropdown menu. The dropdown contains a list of recent statuses. The release definition should have run at least once with the PR trigger switched on in order to get the status. Select the status corresponding to your release definition and save the policy.
+3. Select **Add status policy**, then select a **status to check** from the dropdown menu. The release definition should have run at least once with the pull request trigger switched on in order to get the status. Select the status corresponding to your release definition and then select **Save**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Add status policy](media/deploy-pull-request-builds/add-status-policy.png)
+    :::image type="content" source="media/deploy-pull-request-builds/add-status-policy.png" alt-text="Add status policy":::
 
-   You can further customize the policy for this status, like making the policy required or optional. For more information, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
+   For more information on customizing your status policy, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
 
-4. You should now be able to see your new status policy in the list. Users won't be able to merge any changes to the target branch until "succeeded" status is posted to the pull request.
-   > [!div class="mx-imgBorder"]
-   > ![Status policy list](media/deploy-pull-request-builds/status-policies.png)
+4. With the new status policy added, users won't be able to merge any changes to the target branch without a "succeeded" status is posted to the pull request.
 
-5. You can view the status of your policies in the pull request Overview page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status gets updated every time the pipeline is triggered.
+    :::image type="content" source="media/deploy-pull-request-builds/status-policies.png" alt-text="Status policy list":::
+
+5. You can view the status of your policies from the pull request Overview page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status gets updated every time the pipeline is triggered.
    
-   > [!div class="mx-imgBorder"]
-   > ![Pull request policies status](media/deploy-pull-request-builds/pull-request-policy-status.png)
+    :::image type="content" source="media/deploy-pull-request-builds/pull-request-policy-status.png" alt-text="Pull request policies status":::
 
 ## Set up status checks for GitHub repositories
 
-Enabling status checks for a GitHub repository allow an administrator to choose which status checks must pass before a pull request is merged into the target branch. Follow the [GitHub how-to guide](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) to enable status checks for your GitHub repository. The status checks will appear in your PRs only after your release pipeline is run at least once with the **Pull request deployment** condition set to **Enabled**.
+Enabling status checks for a GitHub repository allow an administrator to choose which criteria must be met before a pull request is merged into the target branch. Check out the [Branch protection rule](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) GitHub article to learn how to enable status checks for your GitHub repository. The status checks will be posted on your pull request only after your release pipeline has run at least once with the pull request deployment condition Enabled.
 
-   > [!div class="mx-imgBorder"]
-   > ![Status checks GitHub](media/deploy-pull-request-builds/github-branch-protection-rule.png)
+    :::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="Status checks GitHub":::
 
 You can view your status checks in your pull request under the **Conversation** tab.
    
-   > [!div class="mx-imgBorder"]
-   > ![Pull request status checks](media/deploy-pull-request-builds/github-pr-status-check.png)
+    :::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="Pull request status checks":::
 
 ## Related articles
 
 - [Release triggers](triggers.md)
 - [Supported build source repositories](../repos/index.md)
-
-## Additional resources 
-- [Azure Repos](../../repos/git/index.yml)
-- [Branch policies](../../repos/git/branch-policies-overview.md)
-- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
+- [Git branch policies](../../repos/git/branch-policies-overview.md)
+- [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md)
