@@ -73,3 +73,15 @@ If you use multiple publish code coverage tasks in the pipeline, the summary and
 
 [!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]
 
+
+## Known issues
+The publish code coverage results task generates and publishes the HTML report (multiple HTML files linked from the mail file "index.html")
+If the code coverage tab fails to show the coverage report then check if the size of the index.html file is crossing around 7 MB. 
+If yes then please use the following workaround to view the coverage report:
+1. Go to the summary tab and click on the artifacts link published as shown below:
+2. Next to the Code Coverage Report_* artifact, click on download artifacts as show below:
+3. Once downloaded, extract the zip file.
+4. Open the index.html file in a browser to view/browse the code coverage report.
+
+
+
