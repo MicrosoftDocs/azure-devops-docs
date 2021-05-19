@@ -181,8 +181,6 @@ parameters:
           - two
  
 steps:
-- pwsh: |
-    Write-Host "${{ convertToJson(parameters.listOfValues) }}"
 - script: |
     echo "${{ convertToJson(parameters.listOfValues) }}"
 ```
