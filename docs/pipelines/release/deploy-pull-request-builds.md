@@ -25,7 +25,7 @@ With pull request triggers, anytime you raise a new pull request for the designa
 
 1. A GitHub/Azure repos repository to create the pipeline. If you don't have one, use the [pipelines-dotnet-core](https://github.com/MicrosoftDocs/pipelines-dotnet-core) sample app.
 1. A working build for your repository.
-1. A classic release pipeline. [Set up a release pipeline](https://docs.microsoft.com/azure/devops/pipelines/release/deploy-multiple-branches.md#set-up-a-release-pipeline) for your project if you don't already have one.
+1. A classic release pipeline. [Set up a release pipeline](/deploy-multiple-branches.md#set-up-a-release-pipeline) for your project if you don't already have one.
 
 ## Create a pull request trigger
 
@@ -86,11 +86,11 @@ You can use branch policies to implement a list of criteria that must be met for
 
 Enabling status checks for a GitHub repository allow an administrator to choose which criteria must be met before a pull request is merged into the target branch. Check out the [Branch protection rule](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) GitHub article to learn how to enable status checks for your GitHub repository. The status checks will be posted on your pull request only after your release pipeline has run at least once with the pull request deployment condition Enabled.
 
-    :::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="Status checks GitHub":::
+:::image type="content" source="media/deploy-pull-request-builds/github-branch-protection-rule.png" alt-text="Status checks GitHub":::
 
 You can view your status checks in your pull request under the **Conversation** tab.
    
-    :::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="Pull request status checks":::
+:::image type="content" source="media/deploy-pull-request-builds/github-pr-status-check.png" alt-text="Pull request status checks":::
 
 ## Related articles
 
