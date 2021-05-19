@@ -36,6 +36,7 @@ You can also set a repository to only be used on specific pipelines. Restricting
 
 1. Select the repository you want to modify. 
 1. Open the **Security** tab.
+
     :::image type="content" source="media/security-tab-settings.png" alt-text="Select the Security tab. ":::
 1. Go to **Pipeline permissions**.
     :::image type="content" source="media/pipeline-repository-permission.png" alt-text="Add a pipeline repository restriction.":::
