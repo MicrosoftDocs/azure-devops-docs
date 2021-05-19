@@ -431,24 +431,22 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 > [!div class="mx-imgBorder"]  
 > ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
-
-
 > [!NOTE]   
 > While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
-
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
 
+- [Assign work to sprints using the Planning pane](sprints/assign-work-sprint.md)
+- [Forecast your product backlog](sprints/forecast.md)
 - [Sprints> all tools](sprints/scrum-overview.md) 
-- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views
-- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team features 
-- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-- And all other timeline or calendar view tools  
-
+- [Delivery plans](plans/review-team-plans.md), calendar view of team deliverables
+- [Velocity chart](../report/dashboards/team-velocity.md) and [Sprint burndown chart](../report/dashboards/configure-sprint-burndown.md)
+- [Feature Timeline extension](extensions/feature-timeline.md), provides a calendar view of team features 
+- [Dependency Tracker extension](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
 
 > [!TIP]    
-> If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view, tool, or portfolio planning tool.   
-
+> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view, tool, or portfolio planning tool.   
+> 
 
 ## Time tracking 
 

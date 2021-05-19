@@ -22,6 +22,8 @@
     href: ../settings/set-area-paths.md?
   - name: Set iteration paths (sprints) 
     href: ../settings/set-iteration-paths-sprints.md
+  - name: Schedule sprints
+    href: ../../boards/define-sprints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Manage projects
   items:
   - name: Share your project vision  
