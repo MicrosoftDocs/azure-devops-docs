@@ -604,7 +604,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 Provides quick access to open the following Agile tools and team resources:
 
 - [Backlog](../../boards/backlogs/create-your-backlog.md)  
-- [Kanban Board](../../boards/boards/kanban-basics.md)  
+- [Kanban board](../../boards/boards/kanban-basics.md)  
 - [Task board](../../boards/sprints/task-board.md)  
 - [Queries](../../boards/queries/using-queries.md)  
 
