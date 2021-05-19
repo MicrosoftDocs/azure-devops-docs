@@ -20,7 +20,7 @@ If you prefer to use YAML to provide your release pipeline configuration, you ca
 
 ## Use Azure DevOps CLI with preconfigured agents
 
-The Microsoft-hosted agents are preconfigured with recent versions of Azure CLI and Azure DevOps CLI. You can view the included software for Microsoft-hosted agents by following the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
+The Microsoft-hosted agents are preconfigured with recent versions of Azure CLI and Azure DevOps CLI. You can view the included software for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension by following the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
 The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other hosted images.
 
