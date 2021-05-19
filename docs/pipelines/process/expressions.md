@@ -165,6 +165,39 @@ The following built-in functions can be used in expressions.
 
 ::: moniker range=">= azure-devops-2019"
 
+### convertToJson
+* Take a complex object and outputs it as JSON.
+* Min parameters: 1. Max parameters: 1.
+
+```yaml
+parameters:
+  - name: listOfValues
+    type: object
+    default:
+      this_is:
+        a_complex: object
+        with:
+          - one
+          - two
+ 
+steps:
+- script: |
+    echo "${{ convertToJson(parameters.listOfValues) }}"
+```
+
+```json
+# Example output
+{
+  this_is: {
+    a_complex: object,
+    with: [
+      one,
+      two
+    ]
+  }
+}
+```
+
 ### counter
 * This function can only be used in an expression that defines a variable. It cannot be used as part of a condition for a step, job, or stage.
 * Evaluates a number that is incremented with each run of a pipeline.
