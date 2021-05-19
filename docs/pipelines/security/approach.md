@@ -2,7 +2,7 @@
 title: Plan an approach to secure your YAML pipelines
 description: Apply security recommendations incrementally in your YAML pipelines. Incremental improvements add up.
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
-ms.reviewer: macoope
+ms.reviewer: vijayma
 ms.date: 02/04/2020
 monikerRange: '> azure-devops-2019'
 ---

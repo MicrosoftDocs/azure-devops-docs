@@ -60,7 +60,12 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+1. From your web browser, open the sprint backlog for your team.
+
+   1. Check that you have selected the right **Project**
+   2. Choose **Boards>Sprints**
+   3. Select the correct **Team** from the team selector menu
+   4. Choose **Taskboard**
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
@@ -343,7 +348,8 @@ Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md
 As you can see, the Taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
 - [Assign backlog items to a sprint](assign-work-sprint.md)  
-- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)[Scrum best practices](best-practices-scrum.md)
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+- [Scrum best practices](best-practices-scrum.md)
 - [Sprint planning](assign-work-sprint.md)
 - [Schedule sprints](define-sprints.md)
 - [Customize a sprint Taskboard](customize-taskboard.md)

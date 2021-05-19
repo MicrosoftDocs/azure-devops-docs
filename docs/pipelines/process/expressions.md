@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 12/22/2020
+ms.date: 05/13/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -359,7 +359,7 @@ steps:
 
 
 ### startsWith
-* Evaluates `true` if left parameter string starts with right parameter
+* Evaluates `True` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
@@ -502,6 +502,9 @@ Expressed as JSON, it would look like:
 
 Use this form of `dependencies` to map in variables or check conditions at a stage level.
 In this example, Stage B runs whether Stage A is successful or skipped.
+
+> [!NOTE]
+> The following examples use standard pipeline syntax. If you're using deployment pipelines, both variable and conditional variable syntax will differ. For information about the specific syntax to use, see [Deployment jobs](deployment-jobs.md).
 
 ```yaml
 stages:
@@ -669,6 +672,35 @@ stages:
 
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+
+### Stage depending on job output
+
+If no changes are required after a build, you might want to skip a stage in a pipeline under certain conditions. An example is when you're using Terraform Plan, and you want to trigger approval and apply only when the plan contains changes.
+
+When you use this condition on a stage, you must use the `dependencies` variable, not `stageDependencies`.
+
+The following example is a simple script that sets a variable (use your actual information from Terraform Plan) in a step in a stage, and then invokes the second stage only if the variable has a specific value.
+
+```yaml
+stages:
+- stage: plan_dev
+  jobs:
+  - job: terraform_plan_dev
+    steps:
+    - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
+      name: terraform_plan
+- stage: apply_dev
+  dependsOn: plan_dev
+  condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
+  jobs:
+  - job: part_b
+    steps:
+    - bash: echo "BA"
+```
+
+::: moniker-end
+
 ## Filtered arrays
 
 When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
@@ -700,13 +732,13 @@ This would return:
 Values in an expression may be converted from one type to another as the expression gets evaluated.
 When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings.
 
-For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated.
+For example, in this YAML, the values `True` and `False` are converted  to `1` and `0` when the expression is evaluated.
 The function `lt()` returns `True` when the left parameter is less than the right parameter.
 
 ```yaml
 variables:
-  firstEval: $[lt(false, true)] # 0 vs. 1, True
-  secondEval: $[lt(true, false)] # 1 vs. 0, False
+  firstEval: $[lt(False, True)] # 0 vs. 1, True
+  secondEval: $[lt(True, False)] # 1 vs. 0, False
 
 steps:
 - script: echo $(firstEval)
@@ -743,8 +775,8 @@ To number:
 * `True` &rarr; `1`
 
 To string:
-* `False` &rarr; `'false'`
-* `True` &rarr; `'true'`
+* `False` &rarr; `'False'`
+* `True` &rarr; `'True'`
 
 ### Null
 

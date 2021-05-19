@@ -40,7 +40,7 @@ The method for adding a user or group to a built-in security group is the same, 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+> If the **Limit user visibility for projects** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end 
 
@@ -213,6 +213,6 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ## Related articles
 
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 - [About security, authentication, and authorization](about-security-identity.md)

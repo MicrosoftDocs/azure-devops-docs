@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 03/24/2020
+ms.date: 05/12/2021
 ---
 
 # Default permissions and access for Azure DevOps
@@ -43,7 +43,7 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 ## Azure Boards
 
-You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
+You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). To change permissions, see [Set permissions and access for work tracking](set-permissions-access-work-tracking.md).
 
 ::: moniker-end
 
@@ -64,17 +64,17 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
 
-
+Access to the following tasks are controlled by each user's access level or by permission assignments. Members of the Readers, Contributors, or Project Administrators group are assumed to have Basic access or greater.  
 
 ### General work item feature access
 
-You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
+You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).   
 
 [!INCLUDE [temp](includes/boards-work-items.md)]
 
 ### Boards feature access
 
-You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop. 
+You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop.
 
 [!INCLUDE [temp](includes/boards-boards.md)]
 
@@ -166,12 +166,6 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 [!INCLUDE [temp](includes/code-tfvc.md)]
 
 ::: moniker-end
-
-<!---
-From **Project Settings**, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
-
--->
-
 
 <a id="pipelines" />
 
@@ -350,4 +344,6 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 - [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
-- [Web portal navigation](../../project/navigation/index.md)
+- [Web portal navigation](../../project/navigation/index.md) 
+- [Troubleshoot permissions](troubleshoot-permissions.md)
+

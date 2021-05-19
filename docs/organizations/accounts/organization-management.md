@@ -204,4 +204,4 @@ You can then pay for more users with Basic access, buy more services, and purcha
 - [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) 
 - [Add a user as a team administrator](../settings/add-team-administrator.md)
 - [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
-- [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
+- [Troubleshoot permissions and access with Azure AD](faq-azure-access.yml)

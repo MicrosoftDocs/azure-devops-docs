@@ -33,6 +33,7 @@ resources:
   repositories: [ repository ]
   containers: [ container ]
   packages: [ package ]
+  webhooks: [ webhook ]
 ```
 
 ### Variables
@@ -355,7 +356,7 @@ You can customize the download behavior for each deployment or job.
 
 ## Resources: `repositories`
 
-If your pipeline has [templates in another repository](../process/templates.md), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
+If your pipeline has [templates in another repository](../process/templates.md#use-other-repositories), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
 ## [Schema](#tab/schema)
@@ -613,8 +614,8 @@ Here are the steps to configure the webhook triggers:
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
-    - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
-    - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key 
+    - **HTTP Header** - The name of the HTTP header in the request that contains the payload's HMAC-SHA1 hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
+    - **Secret** - The secret is used to verify the payload's HMAC-SHA1 hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key 
   
 ![Incoming Webhook Service connection](media/incoming-webhook.png)
 
@@ -706,7 +707,7 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ![CD pipelines info in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
 ### YAML resource trigger issues support and traceability
-It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. 
+It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. The **Trigger Issues** option will only appear for non-repository resources. 
 
 :::image type="content" source="media/trigger-menu.png" alt-text="Select Trigger Issues from the navigation.":::
 

@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 02/26/2020
+ms.date: 03/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -40,6 +40,8 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 
     ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
+5. Select the service you'd like to start your project with, **Pipelines**.
+    
     ![New project, select Azure Pipelines](../media/new-project-select-pipelines.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
@@ -47,8 +49,6 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 	`https://dev.azure.com/{yourorganization}`
 
 Your next step is to [create a project](#create-project). 
-
-<a id="create-project" />
 
 ## Sign up with a GitHub account
 
@@ -73,11 +73,9 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 
    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
-	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
+	An organization gets created based on the account you used to sign in. Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-	`https://dev.azure.com/{yourorganization}`
-
-For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
 Your next step is to [create a project](#create-project). 
 

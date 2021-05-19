@@ -8,7 +8,7 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 05/31/2020
+ms.date: 05/11/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -32,7 +32,7 @@ Learn how to create an organization. An organization is used to connect groups o
 * Complete the following steps if you want to use only Microsoft accounts with your organization.
 
      Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
-     [What are other differences?](faq-configure-customize-organization.md#SignInOrganizationDifferences)
+     [What are other differences?](faq-configure-customize-organization.yml#SignInOrganizationDifferences)
 
      - If you don't have a Microsoft account, you can create one when you sign up for Azure DevOps.
 
@@ -51,6 +51,8 @@ Learn how to create an organization. An organization is used to connect groups o
 
 ::: moniker range="= azure-devops"
 
+[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
+
 [!INCLUDE [create-organization](../../includes/create-organization.md)]
 
 ::: moniker-end
@@ -61,7 +63,7 @@ Learn how to create an organization. An organization is used to connect groups o
 
 A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to those projects. 
 
-For more information about how to create a project collection, see [create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+For more information about how to create a project collection, see [create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops&preserve-view=true#create-a-project-collection).
 
 ::: moniker-end
 

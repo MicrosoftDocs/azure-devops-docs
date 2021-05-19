@@ -96,7 +96,7 @@ Next, create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if ($Env:AZP_WORK -and -not (Test-Path Env:AZP_WORK)) {
+    if ((Test-Path Env:AZP_WORK) -and -not (Test-Path $Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
@@ -209,25 +209,37 @@ Next, create the Dockerfile.
     ENV DEBIAN_FRONTEND=noninteractive
     RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
-    RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-            ca-certificates \
-            curl \
-            jq \
-            git \
-            iputils-ping \
-            libcurl4 \
-            libicu60 \
-            libunwind8 \
-            netcat \
-            libssl1.0
+    RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        curl \
+        jq \
+        git \
+        iputils-ping \
+        libcurl4 \
+        libicu60 \
+        libunwind8 \
+        netcat \
+        libssl1.0 \
+      && rm -rf /var/lib/apt/lists/*
+
+    RUN curl -LsS https://aka.ms/InstallAzureCLIDeb | bash \
+      && rm -rf /var/lib/apt/lists/*
+
+    ARG TARGETARCH=amd64
+    ARG AGENT_VERSION=2.185.1
 
     WORKDIR /azp
+    RUN if [ "$TARGETARCH" = "amd64" ]; then \
+          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-x64-${AGENT_VERSION}.tar.gz; \
+        else \
+          AZP_AGENTPACKAGE_URL=https://vstsagentpackage.azureedge.net/agent/${AGENT_VERSION}/vsts-agent-linux-${TARGETARCH}-${AGENT_VERSION}.tar.gz; \
+        fi; \
+        curl -LsS "$AZP_AGENTPACKAGE_URL" | tar -xz
 
     COPY ./start.sh .
     RUN chmod +x start.sh
 
-    CMD ["./start.sh"]
+    ENTRYPOINT [ "./start.sh" ]
     ```
 
    > [!NOTE]
@@ -262,19 +274,20 @@ Next, create the Dockerfile.
       mkdir -p "$AZP_WORK"
     fi
 
-    rm -rf /azp/agent
-    mkdir /azp/agent
-    cd /azp/agent
-
     export AGENT_ALLOW_RUNASROOT="1"
 
     cleanup() {
       if [ -e config.sh ]; then
         print_header "Cleanup. Removing Azure Pipelines agent..."
+        
+        # If the agent has some running jobs, the configuration removal process will fail.
+        # So, give it some time to finish the job.
+        while true; do
+          ./config.sh remove --unattended --auth PAT --token $(cat "$AZP_TOKEN_FILE") && break
 
-        ./config.sh remove --unattended \
-          --auth PAT \
-          --token $(cat "$AZP_TOKEN_FILE")
+          echo "Retrying in 30 seconds..."
+          sleep 30
+        done
       fi
     }
 
@@ -287,30 +300,9 @@ Next, create the Dockerfile.
     # Let the agent ignore the token env variables
     export VSO_AGENT_IGNORE=AZP_TOKEN,AZP_TOKEN_FILE
 
-    print_header "1. Determining matching Azure Pipelines agent..."
-
-    AZP_AGENT_RESPONSE=$(curl -LsS \
-      -u user:$(cat "$AZP_TOKEN_FILE") \
-      -H 'Accept:application/json;api-version=3.0-preview' \
-      "$AZP_URL/_apis/distributedtask/packages/agent?platform=linux-x64")
-
-    if echo "$AZP_AGENT_RESPONSE" | jq . >/dev/null 2>&1; then
-      AZP_AGENTPACKAGE_URL=$(echo "$AZP_AGENT_RESPONSE" \
-        | jq -r '.value | map([.version.major,.version.minor,.version.patch,.downloadUrl]) | sort | .[length-1] | .[3]')
-    fi
-
-    if [ -z "$AZP_AGENTPACKAGE_URL" -o "$AZP_AGENTPACKAGE_URL" == "null" ]; then
-      echo 1>&2 "error: could not determine a matching Azure Pipelines agent - check that account '$AZP_URL' is correct and the token is valid for that account"
-      exit 1
-    fi
-
-    print_header "2. Downloading and installing Azure Pipelines agent..."
-
-    curl -LsS $AZP_AGENTPACKAGE_URL | tar -xz & wait $!
-
     source ./env.sh
 
-    print_header "3. Configuring Azure Pipelines agent..."
+    print_header "1. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
       --agent "${AZP_AGENT_NAME:-$(hostname)}" \
@@ -322,17 +314,17 @@ Next, create the Dockerfile.
       --replace \
       --acceptTeeEula & wait $!
 
-    print_header "4. Running Azure Pipelines agent..."
+    print_header "2. Running Azure Pipelines agent..."
 
+    trap 'cleanup; exit 0' EXIT
     trap 'cleanup; exit 130' INT
     trap 'cleanup; exit 143' TERM
 
     # To be aware of TERM and INT signals call run.sh
     # Running it with the --once flag at the end will shut down the agent after the build is executed
-    ./run.sh & wait $!
+    ./run.sh "$@"
     ```
     > [!NOTE]
-    >If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
     >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 6. Run the following command within that directory:
 
@@ -356,6 +348,12 @@ Now that you have created an image, you can run a container.
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
+   If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+
+    ```shell
+    docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest --once
+    ```
+    
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
 
@@ -403,11 +401,11 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 1. Create the secrets on the AKS cluster.
 
    ```shell
-    kubectl create secret generic azdevops \
-    --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
-    --from-literal=AZP_TOKEN=YourPAT \
-    --from-literal=AZP_POOL=NameOfYourPool
-    ```
+   kubectl create secret generic azdevops \
+     --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+     --from-literal=AZP_TOKEN=YourPAT \
+     --from-literal=AZP_POOL=NameOfYourPool
+   ```
 
 2. Run this command to push your container to Container Registry:
 
@@ -424,48 +422,48 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 4. Save the following content to `~/AKS/ReplicationController.yaml`:
 
    ```shell
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: azdevops-deployment
-      labels:
-        app: azdevops-agent
-    spec:
-      replicas: 1 #here is the configuration for the actual agent always running
-      selector:
-        matchLabels:
-          app: azdevops-agent
-      template:
-        metadata:
-          labels:
-            app: azdevops-agent
-        spec:
-          containers:
-          - name: kubepodcreation
-            image: AKRTestcase.azurecr.io/kubepodcreation:5306
-            env:
-              - name: AZP_URL
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_URL
-              - name: AZP_TOKEN
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_TOKEN
-              - name: AZP_POOL
-                valueFrom:
-                  secretKeyRef:
-                    name: azdevops
-                    key: AZP_POOL
-            volumeMounts:
-            - mountPath: /var/run/docker.sock
-              name: docker-volume
-          volumes:
-          - name: docker-volume
-            hostPath:
-              path: /var/run/docker.sock
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: azdevops-deployment
+     labels:
+       app: azdevops-agent
+   spec:
+     replicas: 1 #here is the configuration for the actual agent always running
+     selector:
+       matchLabels:
+         app: azdevops-agent
+     template:
+       metadata:
+         labels:
+           app: azdevops-agent
+       spec:
+         containers:
+         - name: kubepodcreation
+           image: AKRTestcase.azurecr.io/kubepodcreation:5306
+           env:
+             - name: AZP_URL
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_URL
+             - name: AZP_TOKEN
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_TOKEN
+             - name: AZP_POOL
+               valueFrom:
+                 secretKeyRef:
+                   name: azdevops
+                   key: AZP_POOL
+           volumeMounts:
+           - mountPath: /var/run/docker.sock
+             name: docker-volume
+         volumes:
+         - name: docker-volume
+           hostPath:
+             path: /var/run/docker.sock
    ```
 
    This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.

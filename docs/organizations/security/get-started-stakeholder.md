@@ -203,7 +203,7 @@ From the Kanban board, you can't add work items, but you can open them and annot
 
 <a id="update-status">  </a> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Update status of work items 
 
@@ -212,6 +212,11 @@ As work completes in one stage, update the status of an item by dragging it to a
 ![Screenshot of Kanban board, Agile template, update status of work item.](../../boards/boards/media/ALM_CC_MoveCard.png)  
 
 ::: moniker-end  
+
+::: moniker range="azure-devops-2020"
+> [!NOTE]   
+> The drag-and-drop feature to update the work item state requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
+::: moniker-end
 
 ## Add details to a work item
 

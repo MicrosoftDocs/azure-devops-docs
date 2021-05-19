@@ -310,17 +310,28 @@ See the section [Agent IP ranges](#agent-ip-ranges)
 
 If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) allowed.
 
-<a name="mac-pick-tools"></a>
+### I'm getting an SAS IP authorization error from an Azure Storage account
 
+If you get an SAS error code, it is most likely because the IP address ranges from the Microsoft-hosted agents aren't permitted due to your Azure Storage rules. There are a few workarounds:
+
+1. [Manage the IP network rules for your Azure Storage account](/azure/storage/common/storage-network-security?tabs=azure-portal#managing-ip-network-rules) and add the [IP address ranges for your hosted agents](#networking).
+2. In your pipeline, use [Azure CLI to update the network ruleset for your Azure Storage account](/powershell/module/az.storage/update-azstorageaccountnetworkruleset) right before you access storage, and then restore the previous ruleset.
+3. Use [self-hosted agents](agents.md#install) or [Scale set agents](scale-set-agents.md).
+
+<a name="mac-pick-tools"></a>
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
 #### Xamarin
 
-  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
+  **Hosted macOS** agent stores Xamarin SDK versions and the associated Mono versions as a set of symlinks to Xamarin SDK locations that are available by a single bundle symlink.
 
-  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
+  To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, execute the following bash command before your Xamarin build task as a part of your build, specifying the symlink to Xamarin versions bundle that you need.
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md).
+  `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh <symlink>"`
+
+  The list of all available Xamarin SDK versions and symlinks can be found in the agents documentation:
+  - [macOS 10.14](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xamarin)
+  - [macOS 10.15](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xamarin)
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -328,15 +339,15 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
   
-  where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
+  where `$(xcodeRoot)` = `/Applications/Xcode_12.4.app`
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
 
 #### Xcode
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
+  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent pool, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 12.4 as needed:
 
-  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
+  `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_12.4.app/Contents/Developer"`
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode).
 
@@ -344,27 +355,16 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
 #### Mono
 
-  To manually select a Mono version to use on the **Hosted macOS** agent pool, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
+  To manually select a Mono version to use on the **Hosted macOS** agent pool, execute this script in each job of your build before your Mono build task, specifying the symlink with the required Mono version (list of all available symlinks can be found in the [Xamarin section](#xamarin) above):
 
   ```bash
-  SYMLINK=5_4_1
+  SYMLINK=<symlink>
   MONOPREFIX=/Library/Frameworks/Mono.framework/Versions/$SYMLINK
   echo "##vso[task.setvariable variable=DYLD_FALLBACK_LIBRARY_PATH;]$MONOPREFIX/lib:/lib:/usr/lib:$DYLD_LIBRARY_FALLBACK_PATH"
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
 
-#### .NET Core
-  .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](../tasks/tool/dotnet-core-tool-installer.md).
-
-#### Boost
-  The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
-  
-  Example of g++ invocation with Boost libraries:
-  ```
-  g++ -I "$BOOST_ROOT/include" ...
-  ```
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 

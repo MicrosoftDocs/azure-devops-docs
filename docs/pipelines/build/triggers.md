@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 04/03/2020
+ms.date: 04/13/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -41,7 +41,20 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Scheduled triggers](../process/scheduled-triggers.md) are independent of the repository and allow you to run a pipeline according to a schedule.
 
-[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
+[Pipeline triggers](../process/pipeline-triggers.md) in YAML pipelines and [build completion triggers](../process/pipeline-triggers-classic.md) in classic build pipelines allow you to trigger one pipeline upon the completion of another.
+
+## Branch consideration for triggers in YAML pipelines
+
+YAML pipelines can have different versions of the pipeline in different branches, which can affect which version of the pipeline's triggers are evaluated and which version of the pipeline should run.
+
+| Trigger type | Pipeline YAML version |
+|--------------|---------|
+| CI triggers (`trigger`)    | The version of the pipeline in the pushed branch is used. |
+| PR triggers (`pr`)         | The version of the pipeline in the source branch for the pull request is used. |
+| GitHub pull request comment triggers    | The version of the pipeline in the source branch for the pull request is used. |
+| Scheduled triggers         | See [Branch considerations for scheduled triggers](../process/scheduled-triggers.md?tabs=yaml#branch-considerations-for-scheduled-triggers). |
+| Pipeline completion triggers | See [Branch considerations for pipeline completion triggers](../process/pipeline-triggers.md?tabs=yaml#branch-considerations). |
+| [Azure Pipelines Action](https://github.com/marketplace/actions/azure-pipelines-action) | See [Branch considerations](../ecosystems/github-actions.md#branch-considerations). |
 
 ## Classic release pipelines
 

@@ -5,7 +5,7 @@ description: Index to all fields used in the Agile, Scrum, and CMMI processes/pr
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
-ms.topic: reference  
+ms.topic: conceptual  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

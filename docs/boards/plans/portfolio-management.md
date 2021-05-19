@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
 ---

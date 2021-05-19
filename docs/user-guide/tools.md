@@ -9,14 +9,13 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/11/2020
+ms.date: 03/09/2021
 ---
 
 
 # Tools and clients that connect to Azure DevOps
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
-
 
 Our platform of software development tools began more than 20 years ago. We released Visual Basic and Visual Studio as an integrated development environment (IDE). Visual Studio supports many plug-ins that extend its functionality. In particular, the Team Explorer plug-in allows the Visual Studio client to connect to Azure DevOps to support source control, work tracking, build, and test operations.  
  
@@ -53,7 +52,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 You can integrate the following Microsoft Office tools with Azure DevOps.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
+- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
 
 > [!IMPORTANT]
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
@@ -63,7 +62,7 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 ::: moniker range="= azure-devops-2019"
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
-- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
+- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to more features, such as a project calendar, Gantt charts, and resource views.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
 
 > [!TIP]
@@ -99,7 +98,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items:
 
-- [Azure Test Plans](../test/perform-exploratory-tests.md): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts.  
+- [Azure Test Plans](../organizations/billing/try-additional-features-vs.md): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts.  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/perform-exploratory-tests.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
 
@@ -136,7 +135,7 @@ The following extensions are available and are built and maintained by the Azure
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): To quickly find relevant work items, search across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
-Find additional extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
+Find more extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
 
 ## Command-line tools
 

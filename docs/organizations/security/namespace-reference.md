@@ -198,7 +198,7 @@ The following table describes the namespaces that manage object-level permission
       `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
-      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](set-git-tfvc-repository-permissions.md#set-git-repository-permissions).  
+      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/git/set-git-repository-permissions.md).  
       <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
@@ -249,7 +249,7 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](permissions.md#task-group) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#task-group-permissions). 
+      [Manages task group permissions](permissions.md) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#set-task-group-permissions). 
       <br/>
       **ID:** `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
    :::column-end:::
@@ -440,7 +440,7 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repository administrative interface](set-git-tfvc-repository-permissions.md#set-tfvc-repository-permissions).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repositories administrative interface](../../repos/tfvc/set-tfvc-repository-permissions.md).  
       <br/>
       **ID:** `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
@@ -1045,7 +1045,7 @@ The following table describes the security namespaces and permissions that aren'
       `Project-Scoped Users`                       
    :::column-end:::
    :::column span="2":::
-      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
       **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
    :::column-end:::
 :::row-end:::

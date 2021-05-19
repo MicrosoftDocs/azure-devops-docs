@@ -144,7 +144,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 <a id="build-variables"></a>
 
 <table>
-<tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
+<tr><th>Variable</th><th>Description</th><th>Available in <a href="../../process/templates.md">templates</a>?</th></tr>
 
 <tr>
 <td>Build.ArtifactStagingDirectory</td>
@@ -430,6 +430,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.SourceVersionMessage</td>
 <td>The comment of the commit or changeset for the triggering repo. We truncate the message to the first line or 200 characters, whichever is shorter.
 
+The `Build.SourceVersionMessage` corresponds to the message on `Build.SourceVersion` commit. The `Build.SourceVersion` commit for a PR build is the merge commit (not the commit on the source branch).
+
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
 
@@ -569,15 +571,24 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 <td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
 </tr>
 
+<tr>
+<td>Strategy.Name</td>
+<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>, or <code>rolling</code>.</td>
+</tr>
+
+<tr>
+<td>Strategy.CycleName</td>
+<td>The current cycle name in a deployment. Options are <code>PreIteration</code>, <code>Iteration</code>, or <code>PostIteration</code>.</td>
+</tr>
+
 </table>
 
 
 ## System variables (DevOps Services)
 
 <a id="system-variables"></a>
-
 <table>
-<tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
+<tr><th>Variable</th><th>Description</th><th>Available in <a href="../../process/templates.md">templates</a>?</th></tr>
 
 <tr>
 <td>System.AccessToken</td>
@@ -707,7 +718,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code> for Azure Repos. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>). This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 <td>No</td>
 </tr>
 
@@ -751,4 +762,20 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>No</td>
 </tr>
 
+</table>
+
+## Checks variables (DevOps Services)
+
+<a id="checks-variables"></a>
+
+<table>
+<tr><th>Variable</th><th>Description</th></tr>
+<tr>
+<td>Checks.StageAttempt</td>
+<td>Set to 1 the first time this stage is attempted, and increments every time the stage is retried. 
+<br/><br/>
+This variable can only be used within an <a href="../../process/approvals.md">approval or check</a> for an environment. For example, you could use <code>$(Checks.StageAttempt)</code> within an <a href="../../process/approvals.md#invoke-rest-api">Invoke REST API check</a>.<br /><br />
+    <image src="../media/checks-stageattempt-var.png" alt="Add the stage attempt as a parameter." />
+</td>
+</tr>
 </table>

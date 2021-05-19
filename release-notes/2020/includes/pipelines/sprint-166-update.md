@@ -10,7 +10,7 @@ With this update, we're adding runtime parameters. Runtime parameters let you ha
 * Control parameter types, ranges allowed, and defaults
 * Dynamically select jobs and stages with template expression
 
-To learn more about runtime parameters, see the documentation [here](/azure/devops/pipelines/process/runtime-parameters?view=azure-devops).
+To learn more about runtime parameters, see the documentation [here](/azure/devops/pipelines/process/runtime-parameters?view=azure-devops&preserve-view=true).
 
 ### Agent diagnostics
 

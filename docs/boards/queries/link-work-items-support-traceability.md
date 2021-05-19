@@ -6,9 +6,9 @@ ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 04/16/2021
 ---
 
 # Linking, traceability, and managing dependencies  
@@ -210,6 +210,20 @@ To learn more about the links control or to customize the Development links cont
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../reference/process/new-work-item-experience.md). 
 
+::: moniker range=">= azure-devops-2019"
+See the following articles for additional information: 
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+- [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
+- [Set work item state in pull request](../../notifications/add-links-to-work-items.md#work-item-state-pull-request)
+- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+- [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
+- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+::: moniker-end
+
 ::: moniker range=">= tfs-2017"
 
 ## Work items linked to Git code development  
@@ -322,6 +336,7 @@ Once you've formed a link relationship, you can't edit the link type of that rel
 For additional information, see these topics: 
 
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

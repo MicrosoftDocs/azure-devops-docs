@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 10/08/2020
+ms.date: 05/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -79,12 +79,10 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
-you can specify the conditions under which the task or job will run:
-
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* Custom conditions
+you can specify the conditions under which the task or job will run.
 
 * * *
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -95,7 +93,7 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 
 ::: moniker-end
 
-Conditions are written as expressions.
+Conditions are written as expressions in YAML pipelines.
 The agent evaluates the expression beginning with the innermost function and works its way out.
 The final result is a boolean value that determines if the task, job, or stage should run or not.
 See the [expressions](expressions.md) topic for a full guide to the syntax.

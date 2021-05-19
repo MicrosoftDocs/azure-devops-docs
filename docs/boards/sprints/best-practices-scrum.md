@@ -1,12 +1,12 @@
 ---
 title: Sprint and scrum best practices
 titleSuffix: Azure Boards 
-description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Best practice guidance to implement scrum and use sprint tools in Azure Boards, Azure DevOps 
 ms.technology: devops-agile
 ms.assetid: 1E2F0BDC-C267-4724-86E8-E4BBD75B50B2
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---

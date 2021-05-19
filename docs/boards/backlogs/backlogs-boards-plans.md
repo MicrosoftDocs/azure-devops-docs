@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 01/21/2021
 ---
@@ -500,7 +500,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Example plans view](../plans/media/plans-move-1.png)  
+![Example plans view](../extensions/media/plans/plans-move-1.png)  
 ::: moniker-end
 
 

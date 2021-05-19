@@ -1,6 +1,6 @@
 ---
 title: Install extensions for on-premises servers
-description: Find and install extensions for Azure DevOps Server from the Visual Studio Marketplace.
+description: Find and install extensions for Azure DevOps Server from the Azure DevOps Marketplace.
 ms.topic: conceptual
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
@@ -12,10 +12,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 # Install extensions for on-premises servers
 
-[!INCLUDE [version-tfs-all-versions](../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-tfs-all-versions](../includes/version-ts-tfs-2015-2016.md)]
 
 To add new features and capabilities to your Azure DevOps Server,
-install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
+install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 > [!TIP]
 > To learn more about building your own extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
@@ -37,7 +37,7 @@ If you don't have permissions, you can [request extensions](request-extensions.m
 
 Your project collection reuses your Azure subscription 
 for future Marketplace purchases. 
-[Where can I find more info about Azure billing?](faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
+[Where can I find more info about Azure billing?](faq-extensions.yml)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -57,7 +57,7 @@ for future Marketplace purchases.
 
 * Working with TFS 2015 Update 3, or disconnected from TFS 2017? 
 [Download extensions, then upload them to TFS](#disconnected-tfs) to 
-[install free and preview extensions](faq-extensions.md#difference). 
+[install free and preview extensions](faq-extensions.yml). 
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ for future Marketplace purchases.
 
    <img alt="Extension installed" src="./media/get-tfs-extensions/connected/assign-extension-to-users.png" style="border: 1px solid #CCCCCC" />
 
-   [Need help?](faq-extensions.md) 
+   [Need help?](faq-extensions.yml) 
 
 <a name="disconnected-tfs"></a>
 
@@ -173,7 +173,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="Find and upload your downloaded extension" src="./media/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-   [Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-azure-devops-server)
+   [Why can't I upload extensions?](faq-extensions.yml)
 
 ### Install extension in your project collection
 
@@ -320,4 +320,4 @@ Use the **Extensions** page to manage installed extensions.
 
 - [Uninstall or disable extensions](how-to/uninstall-disable-extensions-tfs.md)
 - [Request extensions](request-extensions.md)
-- [[About permissions](../organizations/security/about-permissions.md)
+- [About permissions](../organizations/security/about-permissions.md)

@@ -11,7 +11,7 @@ With this update we added a few enhancements to the **Deployment Center** workfl
 
 ### New Azure subscription option in Kubernetes service connection
 
-Service connections for builds and releases allow you to connect to external and remote services to execute tasks for a build or deployment. You can [define and manage a service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops#create-a-service-connection) from the Admin settings of your project.
+Service connections for builds and releases allow you to connect to external and remote services to execute tasks for a build or deployment. You can [define and manage a service connection](/azure/devops/pipelines/library/service-endpoints?view=azure-devops&preserve-view=true#create-a-service-connection) from the Admin settings of your project.
 
 With this update, we added an authentication option to the Kubernetes service connection form. Now you can select **Azure Subscription** to authenticate your connection. This makes it easy to deploy to specific namespaces by setting up Kubernetes connections with your Azure subscription and cluster name.
 
@@ -25,7 +25,7 @@ For a role-based access control (RBAC) enabled cluster, [ServiceAccount](https:/
 You can set notifications to receive emails as changes occur to your builds, code base, and other operations. For example, you can set an alert to get notified when a work item is assigned to you.
 
 With this update, we added a new notification subscription to the **Release** category. This notification will send you an email when a request for a release creation fails. An example scenario where this may be useful is when a request to create a release fails because an artifact version is not available.
-To learn how to manage your notifications see the documentation [here](/azure/devops/notifications/howto-manage-personal-notifications?view=azure-devops).
+To learn how to manage your notifications see the documentation [here](/azure/devops/notifications/howto-manage-personal-notifications?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Notifications on failure of a release creation request.](../../media/148_02.png)
@@ -121,7 +121,7 @@ Currently, the following languages and test runners are supported:
 > * Search and filter the test results.
 > * Preview attachments generated during the test runs in the web UI.
 
-For more details on analyzing test results see the documentation [here](/azure/devops/pipelines/test/test-analytics?view=azure-devops).
+For more details on analyzing test results see the documentation [here](/azure/devops/pipelines/test/test-analytics?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Simplified publishing of test results.](../../media/148_11.png)
