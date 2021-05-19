@@ -8,27 +8,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 05/21/2021
+ms.date: 05/20/2021
 ---
 
 # Define iteration paths (sprints) and configure team iterations 
 
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
-Iteration paths, also referred to as *sprints*, support assignment of work to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to be active within the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
+Iteration paths, also referred to as *sprints*, support assignment of work to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
-Define iteration paths and assign them to teams when you want to perform the following tasks or use the following tools: 
-
-- [Assign work to sprints using the Planning pane](../../boards/sprints/assign-work-sprint.md)
-- [Forecast your product backlog](../../boards/sprints/forecast.md)
-- [Sprints> all tools](../../boards/sprints/scrum-overview.md) 
-- [Delivery plans](../../boards/plans/review-team-plans.md), calendar view of team deliverables
-- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)
-- [Feature Timeline extension](../../boards/extensions/feature-timeline.md), provides a calendar view of team features 
-- [Dependency Tracker extension](../../boards/extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-
-> [!TIP]    
-> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view, tool, or portfolio planning tool.   
+[!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
 
 ## Prerequisites
 
@@ -36,7 +25,7 @@ Define iteration paths and assign them to teams when you want to perform the fol
 
 - To add an iteration path to a project, you must be a member of the **Project Administrators** group. If you don't have a project yet, [create one now](../projects/create-project.md).
 - To add an iteration path under the root node or to edit or delete any child node, you must be a member of the **Project Administrators** group. For more information about acquiring these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
-- To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+- To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
 For more information about naming restrictions on iteration paths, see [About areas and iterations, naming restrictions](about-areas-iterations.md#name-restrictions).
@@ -65,11 +54,7 @@ As needed, you can do the following tasks at any time:
 
 <a id="default_path">  </a>
 
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
-
-
-## Team backlog iteration versus default iteration 
+##3 Team backlog iteration versus default iteration 
 
 Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
@@ -86,6 +71,9 @@ All work items that you create from your team context are automatically assigned
 For TFS 2015 and earlier versions, the default iteration is the same as the backlog iteration. The selected value filters items that appear on the team's backlogs and boards, and it's assigned to work items created from the team context.
 
 ::: moniker-end
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
 
 <a id="open-project-settings" />
 <a id="open-admin-context" />  
@@ -188,11 +176,6 @@ ID     Identifier                            Name            Path               
 55341  8548898e-4dfd-4515-9d6e-d476d90033a3  Sprint 4        \Fabrikam Fiber\Iteration\Release 1\Sprint 4   False
 55342  d130534c-05dc-434b-a7f3-85689d11c36f  Sprint 5        \Fabrikam Fiber\Iteration\Release 1\Sprint 5   False
 55343  738f5c0b-c62b-4ba5-96ab-026e606b0cef  Sprint 6        \Fabrikam Fiber\Iteration\Release 1\Sprint 6   False           2018-07-16T00:00:00Z  2018-08-03T00:00:00Z
-55352  62ec9886-f537-4eaf-b3b9-2e785239174b  Sprint 7        \Fabrikam Fiber\Iteration\Release 1\Sprint 7   False
-55353  607b3754-699a-4eca-ab61-40b8ad72d243  Sprint 8        \Fabrikam Fiber\Iteration\Release 1\Sprint 8   False
-55354  c383d1d3-be7f-49f1-95aa-850e49916a58  Sprint 9        \Fabrikam Fiber\Iteration\Release 1\Sprint 9   False           2018-09-17T00:00:00Z  2018-10-05T00:00:00Z
-55355  f01f2536-7931-498d-b7f9-8a02c3815653  Sprint 10       \Fabrikam Fiber\Iteration\Release 1\Sprint 10  False
-55356  234d1760-7455-41cc-ba7c-0f10e1939c9c  Sprint 11       \Fabrikam Fiber\Iteration\Release 1\Sprint 11  False           2018-10-29T00:00:00Z  2018-11-16T00:00:00Z
 55299  a0554e98-b1f1-4230-8500-733c739a0113  Release 2       \Fabrikam Fiber\Iteration\Release 2            False
 55300  5c3a5d56-f860-4ebc-8838-7701256c88a4  Release 3       \Fabrikam Fiber\Iteration\Release 3            False
 55301  ad722430-042b-4c45-87e5-8d67572d4fc1  Release 4       \Fabrikam Fiber\Iteration\Release 4            False
@@ -364,7 +347,7 @@ az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --
   "name": "Sprint 36",
   "path": "\\Fabrikam Fiber\\Iteration\\Sprint 36",
   "structureType": "iteration",
-  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Iterations/Sprint%2036"
+  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Iterations/Sprint%2036"
 }
 ```
 
@@ -627,7 +610,7 @@ az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "S
   "id": "a0554e98-b1f1-4230-8500-733c739a0113",
   "name": "Release 2",
   "path": "Fabrikam Fiber\\Release 2",
-  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/43e6bd2e-696f-492c-bbf7-9cde9cd420ea/_apis/work/teamsettings/iterations/a0554e98-b1f1-4230-8500-733c739a0113"
+  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/43e6bd2e-696f-492c-bbf7-9cde9cd420ea/_apis/work/teamsettings/iterations/a0554e98-b1f1-4230-8500-733c739a0113"
 }
 ```
 

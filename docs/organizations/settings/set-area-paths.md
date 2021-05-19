@@ -285,7 +285,7 @@ az boards area project create --name Voice --project "Fabrikam Fiber"
   "name": "Voice",
   "path": "\\Fabrikam Fiber\\Area\\Voice",
   "structureType": "area",
-  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Areas/Voice"
+  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Areas/Voice"
 }
 ```
 

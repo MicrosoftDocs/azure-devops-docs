@@ -434,19 +434,7 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 > [!NOTE]   
 > While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
-To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
-
-- [Assign work to sprints using the Planning pane](sprints/assign-work-sprint.md)
-- [Forecast your product backlog](sprints/forecast.md)
-- [Sprints> all tools](sprints/scrum-overview.md) 
-- [Delivery plans](plans/review-team-plans.md), calendar view of team deliverables
-- [Velocity chart](../report/dashboards/team-velocity.md) and [Sprint burndown chart](../report/dashboards/configure-sprint-burndown.md)
-- [Feature Timeline extension](extensions/feature-timeline.md), provides a calendar view of team features 
-- [Dependency Tracker extension](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-
-> [!TIP]    
-> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view, tool, or portfolio planning tool.   
-> 
+[!INCLUDE [temp](includes/list-sprint-dependent-tools.md)]
 
 ## Time tracking 
 
