@@ -64,7 +64,6 @@
     displayname: import, export, csv
   - name:Change work item type, move work items
     href: ../backlogs/move-change-type.md
-    displayname: project
   - name: Remove, delete, or restore
     href: ../backlogs/remove-delete-work-items.md
     displayname: restore, recycle, bulk delete
