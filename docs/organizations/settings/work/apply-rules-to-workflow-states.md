@@ -213,7 +213,7 @@ When defining workflow states and rules, we recommend that you consider the foll
 
 Workflow rules are applied when adding or modifying work items through any of the following interfaces: 
 - Web portal: Work item form, bulk updates, updates in query view  ​
-- Web portal: Kanban Board or Taskboard, move work item to column​
+- Web portal: Kanban board or Taskboard, move work item to column​
 - Visual Studio 2017 and earlier versions, work item form 
 - CSV file format: bulk import or update 
 - Excel​: bulk import or update 
