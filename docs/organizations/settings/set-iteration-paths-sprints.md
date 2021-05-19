@@ -8,23 +8,27 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/21/2020
+ms.date: 05/21/2021
 ---
 
-# Define iteration paths and configure team iterations 
+# Define iteration paths (sprints) and configure team iterations 
 
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
-Iteration paths support teams who implement Scrum or use sprint planning to group work items, based on a time-box interval or sprint. You define iteration paths at the project level, and then each team selects the paths that they want to be active within the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, subreleases, and sprints. 
+Iteration paths, also referred to as *sprints*, support assignment of work to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to be active within the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
-> [!NOTE] 
-> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI command [az boards iteration](/cli/azure/boards/iteration).
+Define iteration paths and assign them to teams when you want to perform the following tasks or use the following tools: 
 
-Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+- [Assign work to sprints using the Planning pane](../../boards/sprints/assign-work-sprint.md)
+- [Forecast your product backlog](../../boards/sprints/forecast.md)
+- [Sprints> all tools](../../boards/sprints/scrum-overview.md) 
+- [Delivery plans](../../boards/plans/review-team-plans.md), calendar view of team deliverables
+- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)
+- [Feature Timeline extension](../../boards/extensions/feature-timeline.md), provides a calendar view of team features 
+- [Dependency Tracker extension](../../boards/extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
 
-Newly created projects contain a single, root area path that corresponds to the project name. You add area paths under this root. Also, each project typically specifies a predefined set of iteration paths to help you get started tracking your work. You only need to specify the dates. 
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+> [!TIP]    
+> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view, tool, or portfolio planning tool.   
 
 ## Prerequisites
 
@@ -39,25 +43,35 @@ For more information about naming restrictions on iteration paths, see [About ar
 
 ## Get started
 
+Newly created projects contain a single, root area path that corresponds to the project name. You add area paths under this root. Also, each project typically specifies a predefined set of iteration paths to help you get started tracking your work. You only need to specify the dates. 
+
 If you're new to managing projects and teams, complete the following steps.
 
+1. Review [Configure and customize Azure Boards](../../boards/configure-customize.md).
 1. Define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
-2. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
-3. Determine if you want a flat structure or hierarchy of sprints and releases.
-4. Open **Project settings** > **Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add iterations and set iteration dates](#iterations). 
-5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default iteration path(s)](#activate).
-6. Each team should assign the default iteration path they selected to their work items. Do so for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence. For guidance, review [About areas and iterations](about-areas-iterations.md).
+1. Determine if you want a flat structure or hierarchy of sprints and releases.
+1. Open **Project settings>Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add iterations and set iteration dates](#iterations). 
+1. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default iteration path(s)](#activate).
+1. Each team should assign the default iteration path they selected to their work items. Do so for those work items to show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+
 As needed, you can do the following tasks at any time: 
 
-      - Add additional child iteration nodes
-      - Rename an iteration path (except the root path)
-      - Move a child iteration path under another node 
-      - Delete a child iteration path 
-      - Change the default and selected iteration paths assigned to a team
+- Add additional child iteration nodes
+- Rename an iteration path (except the root path)
+- Move a child iteration path under another node 
+- Delete a child iteration path 
+- Change the default and selected iteration paths assigned to a team
 
 <a id="default_path">  </a>
 
-## Backlog iteration versus default iteration 
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
+
+## Team backlog iteration versus default iteration 
+
+Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
 ::: moniker range=">= tfs-2017" 
 
@@ -183,8 +197,6 @@ ID     Identifier                            Name            Path               
 55300  5c3a5d56-f860-4ebc-8838-7701256c88a4  Release 3       \Fabrikam Fiber\Iteration\Release 3            False
 55301  ad722430-042b-4c45-87e5-8d67572d4fc1  Release 4       \Fabrikam Fiber\Iteration\Release 4            False
 55364  8b738736-fef6-49f5-be2a-31c86add6589  Future          \Fabrikam Fiber\Iteration\Future               False
-55410  1ae491d7-c16e-42f6-a2a8-71eeedbad37e  Sprint 35       \Fabrikam Fiber\Iteration\Sprint 35            False           2019-08-01T00:00:00Z  2019-08-31T00:00:00Z
-55411  af3ef6a7-6551-451b-8f9f-63af7a60fc55  Sprint 36       \Fabrikam Fiber\Iteration\Sprint 36            False           2019-09-01T00:00:00Z  2019-09-30T00:00:00Z
 ```
 
 ::: moniker-end
@@ -738,15 +750,15 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 ## Related articles 
 
-As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these articles: 
-
 * [About areas and iterations](about-areas-iterations.md)  
 * [Add another team](../../organizations/settings/add-teams.md)  
 * [Configure team settings and add team administrators](manage-teams.md) 
 * [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md)
-*	[Agile tools that rely on areas or iterations](about-teams-and-settings.md)
+* [Agile tools that rely on areas or iterations](about-teams-and-settings.md)
 
 ### Programmatic resources
+
+Area paths and iteration paths are also referred to as *Classification Nodes*. 
 
 ::: moniker range=">= azure-devops-2020"
 
