@@ -8,14 +8,14 @@
     href: permissions-access.md
   - name: View permissions 
     href: view-permissions.md
-  - name: Trace permissions
-    href: faq-trace-permissions.md
   - name: Increase permission levels, find an admin
     href: lookup-organization-owner-admin.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
   - name: Security key concepts
     href: security-glossary.md 
+  - name: Troubleshoot permissions
+    href: troubleshoot-permissions.md
 - name: Manage user access
   items:
   - name: About security, authentication, & authorization 
@@ -55,17 +55,19 @@
   - name: FAQs
     items:
     - name: User & permissions management
-      href: ../accounts/faq-user-and-permissions-management.md
+      href: ../accounts/faq-user-and-permissions-management.yml
+    - name: Access and permissions FAQ
+      href: faq-permissions.yml
     - name: Add administrators
-      href: ../accounts/faq-user-and-permissions-management.md
+      href: ../accounts/faq-user-and-permissions-management.yml
     - name: About access with Azure AD
       href: ../accounts/access-with-azure-ad.md
     - name: Authenticate & invite with GitHub
-      href: faq-github-authentication.md
+      href: faq-github-authentication.yml
     - name: Access with Azure AD
-      href: ../accounts/faq-azure-access.md
+      href: ../accounts/faq-azure-access.yml
     - name: Set up Visual Studio
-      href: ../accounts/faq-set-up-vs.md
+      href: ../accounts/faq-set-up-vs.yml
     - name: Resolve connection issues
       href: ../../user-guide/troubleshoot-connection.md
     - name: "TF31002: Unable to connect"
@@ -76,6 +78,8 @@
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Authenticate access with personal access tokens  
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage personal access tokens via API
+    href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Authorize access to REST APIs with OAuth 2.0
     href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Use SSH key authentication
@@ -91,7 +95,7 @@
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
   - name: Grant or restrict permissions to select tasks
-    href: restrict-access.md   
+    href: restrict-access.md
   - name: Set dashboard permissions
     href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set Wiki permissions
@@ -120,12 +124,14 @@
     href: set-permissions-access-work-tracking.md 
 - name: Secure Azure Repos
   items:
-  - name: Set Git or TFVC repository permissions
-    href: set-git-tfvc-repository-permissions.md
+  - name: Set Git repository permissions
+    href: ../../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Set TFVC repository permissions
+    href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set Git branch permissions
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Git permissions prior to TFS 2017 Update 1
-    href: git-permissions-before-2017.md
+    href: /azure/devops/repos/git/set-git-repository-permissions
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles
@@ -196,4 +202,4 @@
   - name: Manage security groups with CLI
     href: add-manage-security-groups.md 
   - name: Manage permissions with CLI
-    href: manage-tokens-namespaces.md 
+    href: manage-tokens-namespaces.md

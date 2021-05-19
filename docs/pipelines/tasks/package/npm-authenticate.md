@@ -137,4 +137,8 @@ If your proxy requires authentication, you may need to add an additional build s
 - script: npm publish --https-proxy $(proxyAuthUri)
 ```
 
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
+
 <!-- ENDSECTION -->

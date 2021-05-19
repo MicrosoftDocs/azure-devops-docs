@@ -15,7 +15,7 @@ ms.date: 06/04/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and inheritance](about-permissions.md)and [About security roles](about-security-roles.md), and [Trace permissions](faq-trace-permissions.md).  
+Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [Get started with permissions, access, and security groups](about-permissions.md)and [About security roles](about-security-roles.md), and [Troubleshoot permissions](troubleshoot-permissions.md).  
 
 Values in parenthesis indicate what level the permission is managed:
 
@@ -56,7 +56,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>B</h3>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Branches, Git (Object)](../../repos/git/branch-permissions.md)">Branches, Git (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build pipelines (Object)](../../pipelines/policies/set-permissions.md)">Build pipelines (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)">Build quality, manage (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)">Build queue, manage (Object)</a></li>
@@ -70,7 +70,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="set-project-collection-level-permissions.md#project-level">Change process of team project (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Change work item type (Project)](set-project-collection-level-permissions.md)">Change work item type (Project)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Collection-level information](set-project-collection-level-permissions.md)">Collection-level information</a></li>
 <li><a href="../settings/manage-teams.md" data-raw-source="[Configure Azure Boards (Team)](../settings/manage-teams.md)">Configure Azure Boards (Team)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Create a workspace (Collection)</a></li>
@@ -140,9 +140,9 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#process-permissions">Inherited process (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
 <li>Library (Object, Role)</li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
 <ul>
@@ -164,7 +164,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Manage test environments (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage test controllers (Collection)</a></li>
 <li><a href="../../marketplace/how-to/grant-permissions.md">Marketplace extensions (Collection, Role)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Merge, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">Merge, TFVC (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Move work items out of this project (Project)</a></li>
 <li><a href="../../repos/git/branch-permissions.md">Notes, Git (Object)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" >Notifications (Collection)</a></li>
@@ -174,7 +174,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/permissions.md">Override check-in validation by build (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Permanently delete work items (Project)</a></li>
 <li><a href="../../repos/git/branch-permissions.md">Policies, Git branch (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Policies, Git repository (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Policies, Git repository (Object)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md">Power BI (Analytics Service)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#process-permissions">Process (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Project properties (Project)</a></li>
@@ -191,7 +191,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Read (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Rename team project (Project)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Repository, Git (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Repository, Git (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Retain (build) indefinitely (Object)</a></li>
 </ul>
 <h3>S</h3>
@@ -216,7 +216,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md">Test controllers (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Test environments (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Test runs  (Project)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC repositories (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC repositories (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Trace settings (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Trigger events (Collection)</a></li>
 </ul>
@@ -295,7 +295,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>B</h3>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Branches, Git (Object)](../../repos/git/branch-permissions.md)">Branches, Git (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build pipelines (Object)](../../pipelines/policies/set-permissions.md)">Build pipelines (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)">Build quality, manage (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)">Build queue, manage (Object)</a></li>
@@ -309,7 +309,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="set-project-collection-level-permissions.md#project-level">Change process of team project (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Change work item type (Project)](set-project-collection-level-permissions.md)">Change work item type (Project)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Collection-level information](set-project-collection-level-permissions.md)">Collection-level information</a></li>
 <li><a href="../settings/manage-teams.md" data-raw-source="[Configure Azure Boards (Team)](../settings/manage-teams.md)">Configure Azure Boards (Team)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Create a workspace (Collection)</a></li>
@@ -380,9 +380,9 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#process-permissions">Inherited process (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
 <li>Library (Object, Role)</li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
 <ul>
@@ -404,7 +404,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Manage test environments (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage test controllers (Collection)</a></li>
 <li><a href="../../marketplace/how-to/grant-permissions.md">Marketplace extensions (Collection, Role)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Merge, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">Merge, TFVC (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Move work items out of this project (Project)</a></li>
 <li><a href="../../repos/git/branch-permissions.md">Notes, Git (Object)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" >Notifications (Collection)</a></li>
@@ -414,7 +414,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/permissions.md">Override check-in validation by build (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Permanently delete work items (Project)</a></li>
 <li><a href="../../repos/git/branch-permissions.md">Policies, Git branch (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Policies, Git repository (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Policies, Git repository (Object)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md">Power BI (Analytics Service)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#process-permissions">Process (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Project properties (Project)</a></li>
@@ -431,7 +431,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Read (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Rename team project (Project)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">Repository, Git (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md">Repository, Git (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Retain (build) indefinitely (Object)</a></li>
 </ul>
 <h3>S</h3>
@@ -456,7 +456,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md">Test controllers (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Test environments (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Test runs  (Project)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md">TFVC repositories (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md">TFVC repositories (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Trace settings (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Trigger events (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Trigger events (Server)</a></li>
@@ -526,7 +526,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>B</h3>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Branches, Git (Object)](../../repos/git/branch-permissions.md)">Branches, Git (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Branches, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Branches, TFVC (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build pipelines (Object)](../../pipelines/policies/set-permissions.md)">Build pipelines (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build quality, manage (Object)](../../pipelines/policies/set-permissions.md)">Build quality, manage (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Build queue, manage (Object)](../../pipelines/policies/set-permissions.md)">Build queue, manage (Object)</a></li>
@@ -537,7 +537,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>C</h3>
 <ul>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Check ins, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Check ins, TFVC (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Collection-level information](set-project-collection-level-permissions.md)">Collection-level information</a></li>
 <li><a href="../settings/manage-teams.md" data-raw-source="[Configure Agile tools (Team)](../settings/manage-teams.md)">Configure Agile tools (Team)</a></li>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Create project collection (Server)](permissions.md#server-permissions)">Create project collection (Server)</a></li>
@@ -584,9 +584,9 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Inherited process (Object)](set-permissions-access-work-tracking.md)">Inherited process (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md)">Library (Object, Role)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
 <ul>
@@ -596,7 +596,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/permissions.md">Manage release approvers (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Manage releases (Object)</a></li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Marketplace extensions (Collection, Role)](../../marketplace/how-to/grant-permissions.md)">Marketplace extensions (Collection, Role)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Merge, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Merge, TFVC (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Merge, TFVC (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">Merge, TFVC (Object)</a></li>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Notes, Git (Object)](../../repos/git/branch-permissions.md)">Notes, Git (Object)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Notifications (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Notifications (Collection)</a></li>
 </ul>
@@ -604,7 +604,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="../../pipelines/policies/permissions.md">Override check-in validation by build (Object)</a></li>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Policies, Git branch (Object)](../../repos/git/branch-permissions.md)">Policies, Git branch (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Policies, Git repository (Object)](set-git-tfvc-repository-permissions.md)">Policies, Git repository (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Policies, Git repository (Object)](../../repos/git/set-git-repository-permissions.md)">Policies, Git repository (Object)</a></li>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Project collection (Server)](permissions.md#server-permissions)">Project collection (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Project properties (Project)](set-project-collection-level-permissions.md)">Project properties (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Project-level information](set-project-collection-level-permissions.md)">Project-level information</a></li>
@@ -618,7 +618,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Query (Object)](../../boards/queries/set-query-permissions.md)">Query (Object)</a></li>
 <li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Query folder (Object)](../../boards/queries/set-query-permissions.md)">Query folder (Object)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipelines (Object)](../../pipelines/policies/set-permissions.md)">Release pipelines (Object)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Repository, Git (Object)](set-git-tfvc-repository-permissions.md)">Repository, Git (Object)</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Repository, Git (Object)](../../repos/git/set-git-repository-permissions.md)">Repository, Git (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Retain (build) indefinitely (Object)</a></li>
 </ul>
 <h3>S</h3>
@@ -643,7 +643,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test controllers (Project)](set-project-collection-level-permissions.md)">Test controllers (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test environments (Project)](set-project-collection-level-permissions.md)">Test environments (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test runs  (Project)](set-project-collection-level-permissions.md)">Test runs  (Project)</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC repositories (Object)](set-git-tfvc-repository-permissions.md)">TFVC repositories (Object)</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC repositories (Object)](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC repositories (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Trace settings (Collection)](set-project-collection-level-permissions.md)">Trace settings (Collection)</a></li>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Trigger events (Server)](permissions.md#server-permissions)">Trigger events (Server)</a></li>
 </ul>
@@ -696,7 +696,8 @@ for all team projects defined in the account or collection:
 ## Related notes
 
 - [Grant or restrict permissions to select tasks](restrict-access.md)
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [About security roles](about-security-roles.md). 
 - [Permissions and groups reference](permissions.md) 
 - [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)

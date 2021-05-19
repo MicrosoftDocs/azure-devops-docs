@@ -5,7 +5,7 @@ description: Learn how to view progress by using the Epic Roadmap to provide a c
 ms.custom: extensions
 ms.technology: devops-agile
 ms.prod: devops
-ms.topic: conceptual
+ms.topic: how-to
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
@@ -142,7 +142,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> Another tool that supports dependency views is the [Delivery Plans (Preview)](../plans/review-team-plans.md#dependencies).
+> Another tool that supports dependency views is [Delivery Plans](../plans/track-dependencies.md).
 ::: moniker-end
 
 ## Related articles

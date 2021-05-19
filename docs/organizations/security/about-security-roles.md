@@ -1,10 +1,8 @@
 ---
-title: Understand how security roles work
+title: About pipeline security roles
 titleSuffix: Azure DevOps
-description: Learn about security roles and where they are used to manage permissions to select features and functions of Azure DevOps
+description: Learn about security roles and where they are used to manage select pipeline permissions 
 ms.technology: devops-security
-ms.assetid: 
-toc: show
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -23,12 +21,9 @@ While the majority of features and functional tasks are managed by [individual p
 Many role-based permissions can be set for all artifacts of a specific type in a project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
 
 
- 
 ## Default role assignments
 
 By default, all contributors in a project are members of the User role on each hosted queue.  This allows every contributor in a project to author and run build and release pipelines using hosted queues.
-
-
 
 <a id="agent-queue-security-roles" />
 
@@ -76,14 +71,7 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 ## Related articles
 
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
  
-<!---
-
-You manage the security for the following artifacts and features by adding a user or group to the roles which are described in the following sections. 
-
-[Agent queues](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools](../../pipelines/policies/set-permissions.md)<br/>- [Deployment groups](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools](../../pipelines/policies/set-permissions.md#deployment-group) - [Secure files](../../pipelines/policies/set-permissions.md#library)<br/>- [Service connections](../../pipelines/policies/set-permissions.md)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#library)
-
---> 

@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 01/13/2021
+ms.date: 04/09/2021
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -16,10 +16,56 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md) (`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
+The following repository types are supported.
+
+---
+:::row:::
+    :::column:::
+        [Azure Repos Git](azure-repos-git.md) (`git`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [GitHub](github.md) (`github`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [GitHubEnterprise](github-enterprise.md) (`githubenterprise`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [Bitbucket Cloud](bitbucket.md) (`bitbucket`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+
+> [!IMPORTANT]
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+
+> [!NOTE]
+> Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
+> To check out Azure Repos Git repositories hosted in another project, **Limit job scope** must be configured to allow access. For more information, see [Limit job authorization scope](azure-repos-git.md#limit-job-authorization-scope).
 
 The following combinations of `checkout` steps are supported.
 
+---
 :::row:::
     :::column:::
         No `checkout` steps
@@ -177,6 +223,8 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+:::moniker range=">azure-devops-2020"
+
 ## Triggers
 
 You can trigger a pipeline when an update is pushed to the `self` repository or to any of the repositories declared as resources. This is useful, for instance, in the following scenarios:
@@ -268,6 +316,8 @@ The following table shows which versions are checked out for each repository by 
 | `release` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `release` that triggered the pipeline |
 
 You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
+
+:::moniker-end
 
 ## Repository details
 

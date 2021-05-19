@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 01/13/2021
+ms.date: 03/15/2021
 ms.custom: contperf-fy21q3
 ---
 
@@ -78,8 +78,8 @@ The formatting commands are:
 
 Those commands will render in the logs like this:
 
-![Screenshot of logs with custom formatting](media/log-formatting.png)
-
+![Screenshot of logs with custom formatting options](media/log-formatting.png)
+ 
 That block of commands can also be collapsed, and looks like this:
 
 ![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
@@ -433,34 +433,44 @@ The updated environment variable will be reflected in subsequent tasks.
                 
 #### Usage
 
-Create an artifact link. Artifact location must be a file container path, VC path or UNC share path.
+Create a link to an existing Artifact. Artifact location must be a file container path, VC path or UNC share path.
 
 #### Properties
 
 * `artifactname` = artifact name (Required)
-*  `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
+*  `type` = artifact type (Required) `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`
 
 #### Examples
 
-```
-##vso[artifact.associate type=container;artifactname=MyServerDrop]#/1/build
-```
+- **container**
+    ```
+    ##vso[artifact.associate type=container;artifactname=MyServerDrop]#/1/build
+    ```
 
-```
-##vso[artifact.associate type=filepath;artifactname=MyFileShareDrop]\\MyShare\MyDropLocation
-```
+- **filepath**
+    ```
+    ##vso[artifact.associate type=filepath;artifactname=MyFileShareDrop]\\MyShare\MyDropLocation
+    ```
 
-```
-##vso[artifact.associate type=versioncontrol;artifactname=MyTfvcPath]$/MyTeamProj/MyFolder
-```
+- **versioncontrol**
+    ```
+    ##vso[artifact.associate type=versioncontrol;artifactname=MyTfvcPath]$/MyTeamProj/MyFolder
+    ```
 
-```
-##vso[artifact.associate type=gitref;artifactname=MyTag]refs/tags/MyGitTag
-```
+- **gitref**
+    ```
+    ##vso[artifact.associate type=gitref;artifactname=MyTag]refs/tags/MyGitTag
+    ```
 
-```
-##vso[artifact.associate type=tfvclabel;artifactname=MyTag]MyTfvcLabel
-```
+- **tfvclabel**
+    ```
+    ##vso[artifact.associate type=tfvclabel;artifactname=MyTag]MyTfvcLabel
+    ```
+
+- **Custom Artifact**
+    ```
+    ##vso[artifact.associate artifactname=myDrop;artifacttype=myartifacttype]https://downloads.visualstudio.com/foo/bar/package.zip
+    ```
 
 ### Upload: Upload an artifact
 
@@ -478,8 +488,11 @@ Upload a local file into a file container folder, and optionally publish an arti
 #### Example
 
 ```
-##vso[artifact.upload containerfolder=testresult;artifactname=uploadedresult;]c:\testresult.trx
+##vso[artifact.upload containerfolder=testresult;artifactname=uploadedresult]c:\testresult.trx
 ```
+
+> [!NOTE]
+> The difference between Artifact.associate and Artifact.upload is that the first can be used to create a link to an existing artifact, while the latter can be used to upload/publish a new Artifact.
 
 ## Build commands
 

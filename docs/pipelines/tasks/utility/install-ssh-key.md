@@ -122,9 +122,9 @@ Now, the SSH keys are installed and you can proceed with the script to connect b
 
 ## Usage and best practices
 
-If you install an SSH key in the [hosted pools](../../agents/hosted.md?view=azure-devops), in later steps in your pipeline, you can connect to a remote system in which the matching public key is already in place. For example, you can connect to a Git repository or to a VM in Azure.
+If you install an SSH key in the [hosted pools](../../agents/hosted.md?view=azure-devops&preserve-view=true), in later steps in your pipeline, you can connect to a remote system in which the matching public key is already in place. For example, you can connect to a Git repository or to a VM in Azure.
 
-We recommend that you don't pass in your public key as plain text to the task configuration. Instead, [set a secret variable](../../process/variables.md?tabs=yaml%252cbatch&view=azure-devops#secret-variables) in your pipeline for the contents of your `mykey.pub` file. Then, call the variable in your pipeline definition as `$(myPubKey)`. For the secret part of your key, use the [Secure File library](../../library/secure-files.md?view=azure-devops) in Azure Pipelines.  
+We recommend that you don't pass in your public key as plain text to the task configuration. Instead, [set a secret variable](../../process/variables.md?tabs=yaml%252cbatch&view=azure-devops&preserve-view=true#secret-variables) in your pipeline for the contents of your `mykey.pub` file. Then, call the variable in your pipeline definition as `$(myPubKey)`. For the secret part of your key, use the [Secure File library](../../library/secure-files.md?view=azure-devops&preserve-view=true) in Azure Pipelines.  
 
 To create your task, use the following example of a well-configured Install SSH Key task:
 

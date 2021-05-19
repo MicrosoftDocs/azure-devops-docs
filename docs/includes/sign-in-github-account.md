@@ -41,4 +41,4 @@ Once the setting is changed, sign out of Azure DevOps, and then from a fresh bro
 
 ![Invite GitHub users policy ](/azure/devops/media/invite-github-users-policy.png)
 
-For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.md).
+For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.yml).

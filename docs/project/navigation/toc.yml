@@ -13,17 +13,12 @@
 - name: Filter basics 
   href: filter-basics.md
 - name: Keyboard shortcuts
-  href: keyboard-shortcuts.md 
-- name: Search your repo, work items, or wiki 
-  href: search-basics.md   
-- name: Manage or enable features  
-  href: preview-features.md  
+  href: keyboard-shortcuts.md
+- name: Manage or enable features
+  href: preview-features.md
 - name: Reference
   items:
   - name: Go mobile 
-    href: mobile-work.md  
+    href: mobile-work.md
   - name: Glossary
-    href: glossary.md  
-
- 
- 
+    href: glossary.md

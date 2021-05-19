@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 08/27/2020
 ---
@@ -62,7 +62,7 @@ The **Query Editor** isn't available when you are connected to a GitHub or third
 ## List items based on the contents of the History field  
 
 ::: moniker range=">= tfs-2017"
-You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/work-item-search.md).
+You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"

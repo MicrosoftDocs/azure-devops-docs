@@ -48,7 +48,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited 
 - [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation  
-- [**Search box**](search-basics.md): use to find code, work items, or wiki content  
+- [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content  
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization-level resources.  
 
@@ -62,7 +62,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited 
 - [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
-- [**Search box**](search-basics.md): use to find code, work items, or wiki content 
+- [**Search box**](../search/get-started-search.md): use to find code, work items, or wiki content 
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization-level resources. 
 
@@ -148,7 +148,7 @@ Although you can access source code, work items, and builds from both clients, s
       - [Administration pages to administer accounts, team projects, and teams](../../organizations/settings/about-settings.md)   
    :::column-end:::
    :::column span="2":::
-      - Git: [Changes](../../repos/git/commits.md#stage-your-changes-and-commit), [Branches](../../repos/git/branches.md), [Pull Requests](../../repos/git/pullrequest.md), [Sync](../../repos/git/pulling.md), [Work Items](../../boards/backlogs/add-work-items.md), [Builds](/previous-versions/ms181721(v=vs.140)) 
+      - Git: [Changes](../../repos/git/commits.md#stage-your-changes-and-commit), [Branches](../../repos/git/create-branch.md), [Pull Requests](../../repos/git/pull-requests.md), [Sync](../../repos/git/pulling.md), [Work Items](../../boards/backlogs/add-work-items.md), [Builds](/previous-versions/ms181721(v=vs.140)) 
        - TFVC: [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work), [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed), [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](/previous-versions/ms181721(v=vs.140)) 
        - Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client. 
    :::column-end:::

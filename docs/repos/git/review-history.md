@@ -16,9 +16,9 @@ monikerRange: '<= azure-devops'
 Git uses the parent reference information stored in each [commit](commits.md) to manage a full history of your development. 
 Review this commit history to find out when file changes were made and determine differences between versions of your code.
 
-Git's use of feature [branches](branches.md) and merges through [pull requests](pullrequest.md) mean that the commit history of your development doesn't form a straight, chronological line.
+Git's use of feature [branches](./create-branch.md) and merges through [pull requests](pull-requests.md) mean that the commit history of your development doesn't form a straight, chronological line.
 When you use history to compare versions, think in terms of file changes between two commits instead of file changes between two points in time. 
-A recent change to a file in the `master` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday. 
+A recent change to a file in the `main` branch may have come from a commit created two weeks ago in a feature branch but was only merged yesterday. 
 
 In this tutorial you learn how to:
 
@@ -46,6 +46,9 @@ Compare the changes between two versions of a file in your Git repo.
     :::image type="content" source="media/review-history/select-commits-for-compare-browser.png" alt-text="Screenshot that shows the selections for the previous commits for comparison.":::
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
 
     ![View history in your repo for a file](media/history/vs-history-view.png)     
@@ -120,6 +123,9 @@ your branch.
     :::image type="content" source="media/review-history/revert-commit-dialog-browser.png" alt-text="Screenshot that shows the 'Revert commit' dialog.":::
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 To retrieve a previous version of a file that exists in your Visual Studio project:
 
 1. Right-click the file in Solution Explorer and select **View History**. The Visual Studio **History** view will appear, showing the commits in your repo that updated the file.
@@ -186,6 +192,8 @@ changes others have made will affect your work.
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Comparing branches can be done in the web portal, which you can access from the Team Explorer **Home** view in Visual Studio by choosing **Web Portal**. 
 
 ![Web portal](media/history/vs-browse-web-portal.png) 
@@ -240,4 +248,3 @@ You can narrow down specific file changes by specifying a file after the branch 
 </pre>
 
 ---
-

@@ -1,14 +1,14 @@
 ---
-title: Expedite work with swimlanes, use swimlanes to differentiate work items on your Kanban board
+title: Expedite work with swimlanes
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 09/24/2020
 ---

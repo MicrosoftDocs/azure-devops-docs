@@ -11,26 +11,28 @@ monikerRange: '>= tfs-2017'
 
 # Configure upstream behavior
 
-Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries (e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
+Upstream sources enables developers to use a single feed to publish and consume packages from Artifact feeds and public registries such as NuGet.org or npmjs.com. To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
-Azure Artifacts is introducing a new upstream behavior that will dictate which packages will be made available from the public registries for individual packages.
+:::image type="content" source="media/include-upstream-sources.png" alt-text="Include packages from common public sources checkbox":::
 
 Previously, Artifact feeds combined a list of available package versions from the feed and all the upstream sources.
 
 :::image type="content" source="media/previous-behavior.svg" alt-text="Previous upstream sources behavior":::
 
-The new upstream behavior will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
+Upstream behavior is a feature that enables developers to choose if they want to consume externally-sourced package versions. Upstream behavior dictates which packages will be made available from the public registries for individual packages.
 
-With the new upstream behavior, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
+When the upstream behavior is enabled, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-Users will still be able to toggle off the new upstream behavior setting and consume packages from the public registries if they choose to do so.
+This approach provides another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
+
+Users will still be able to toggle off the upstream behavior setting and consume packages from the public registries if they choose to do so.
 
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
 
-## Applicable Scenarios
+## Applicable scenarios
 
-Below are few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
+The next section shows a few common scenarios where the upstream behavior is triggered to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
 
 ## Public versions will be blocked
 
@@ -56,18 +58,18 @@ Below are few common scenarios where the upstream behavior is triggered to block
 
     :::image type="content" source="media\public-to-internal.svg" alt-text="switched from public to private":::
 
-## Enable upstream behavior
+## Allow external versions
 
 > [!NOTE]
-> Only feed owners are allowed to enable/disable upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> Only feed owners are allowed to configure the upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-To enable the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+To configure the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
 
 :::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
 
-## Enable upstream behavior using the REST API
+## Allow external versions using the REST API
 
-Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
+Aside from using the feed's user interface, you can also configure the upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
 
 #### [NuGet](#tab/nuget/)
 
@@ -93,7 +95,7 @@ Aside from using the feed's user interface, you can also enable upstream behavio
 
 * * * 
 
-## Enable upstream behavior with PowerShell
+## Allow external versions with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
 
@@ -160,7 +162,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 ```
 
 > [!NOTE]
-> In some cases, enabling/disabling upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+> In some cases, configuring the upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
 ## Related articles
 

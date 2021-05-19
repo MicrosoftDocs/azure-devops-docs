@@ -76,7 +76,7 @@ If you're not going to continue to use this application, delete your pipeline an
 
 ### What pre-cached images are available on hosted agents?
 
-Some commonly used images are pre-cached on the Microsoft-hosted agents to avoiding long time intervals spent in pulling these images from container registry for every job. Images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/windowsservercore`, `microsoft/nanoserver`, and `microsoft/aspnetcore-build` are pre-cached on Windows agents while `jekyll/builder` and `mcr.microsoft.com/azure-pipelines/node8-typescript` are pre-cached on Linux agents. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
+Some commonly used images are pre-cached on Microsoft-hosted agents to avoid long time intervals spent in pulling these images from the container registry for every job. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
 
 ### How do I set the BuildKit variable for my docker builds?
 
@@ -130,18 +130,23 @@ However, you can cache Docker layers with self-hosted agents because the ephemer
 
 ### How to build Linux container images for architectures other than x64?
 
-When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). These steps show how to create an ARM container image.
+When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86 or ARM), you can use a machine emulator like [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image by using QEMU:
 
-1. Author your Dockerfile so that an Intel binary of QEMU exists in the base image. For example, the raspbian image already has this.
+1. Author your Dockerfile with a base image that matches the target architecture:
+ 
     ```
-    FROM balenalib/rpi-raspbian
+    FROM arm64v8/alpine:latest
     ```
-1. Run the following script in your job before building the image:
+    
+1. Run the following script in your job before you build the image:
+ 
     ```
     # register QEMU binary - this can be done by running the following image
-    docker run --rm --privileged multiarch/qemu-user-static:register --reset
+    docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
     # build your image
     ```
+    
+For more information, see [qemu-user-static](https://github.com/multiarch/qemu-user-static) on GitHub.
 
 ### How to run tests and publish test results for containerized applications?
 

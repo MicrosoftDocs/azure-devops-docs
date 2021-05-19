@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 > [!NOTE]
-> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. 
+> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. This task no longer takes new features and only critical bugs are addressed. 
 
 Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
@@ -85,9 +85,9 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+For **byEnvVar**, the version will be set to the value of the environment variable that has the name specified by the **versionEnvVar** parameter, e.g. `MyVersion` (no **$**, just the environment variable name). Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
+For **byBuildNumber**, the version will be set using the pipeline run's build number.  This is the value specified for the pipeline's `name` property, which gets saved to the `BUILD_BUILDNUMBER` environment variable).  Ensure that the build number being used contains a proper SemVer e.g. `1.0.$(Rev:r)`. When using **byBuildNumber**, the task will extract the dotted version, `1.2.3.4` from the build number string, and use only that portion.  The rest of the string will be dropped.  If you want to use the build number as is, you can use **byEnvVar** as described above, and set **versionEnvVar** to `BUILD_BUILDNUMBER`.
 
 ::: moniker-end
 
@@ -201,7 +201,7 @@ Run any other NuGet command besides the default ones: pack, push, and restore.
   displayName: 'list locals'
   inputs:
     command: custom
-    arguments: 'nuget locals all -list'
+    arguments: 'locals all -list'
 ```
 ## Open-source
 
@@ -222,5 +222,9 @@ Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [o
 [!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

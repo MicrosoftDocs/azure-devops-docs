@@ -74,7 +74,7 @@ The following table shows how each token is resolved based on the previous examp
 | Token | Example replacement value |
 | ----- | ------------------------- |
 | `$(Build.DefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
-| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
+| `$(Build.BuildId)` | 752<br /><br />$(Build.BuildId) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
 | `$(Hours)` | 21 |
@@ -99,6 +99,10 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 ```
 
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
+
+## Expressions
+
+If you use an expression to set the build number, you can't use some tokens because their values aren't set at the time expressions are evaluated. These tokens include `$(Build.BuildId)`, `$(Build.BuildURL)`, and `$(Build.BuildNumber)`.
 
 ## FAQ
 

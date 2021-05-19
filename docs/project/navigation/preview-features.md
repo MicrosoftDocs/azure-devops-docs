@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/16/2020
+ms.date: 03/03/2021
 ---
 
 
@@ -24,11 +24,9 @@ As new features are introduced, you can turn them on or off. That way, you can t
 Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
 
 > [!NOTE]   
-> You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
+> It may take up to three weeks after a release to Azure DevOps Services for the preview feature to appear in your organization. The [latest release notes](/azure/devops/release-notes/) usually provide information on new preview features. You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ::: moniker range="azure-devops-2020"
 
@@ -59,96 +57,110 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      [Experimental themes](#experimental-themes)  
-      [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
-      [Git Forks](../../repos/git/forks.md)  
-      [New account manager](#account-manager)  
+      [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
        ✔️   
-      &nbsp;  
-      &nbsp;  
-       ✔️   
    :::column-end:::
    :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
-      New release progress views  
-      [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
-      [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      [New service connections experience](../../pipelines/library/service-endpoints.md)  
-      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
-      [New Teams page](../../organizations/settings/add-teams.md)  
-      [New Test Plans Page](../../test/new-test-plans-page.md)  
-      New TFVC pages
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="3":::
-      New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group)  
-      Task Insights for Failed Pipeline Runs   
-   :::column-end:::
-   :::column span=".5":::
-      &nbsp;  
-       ✔️   
-       ✔️   
-      &nbsp;   
-       ✔️   
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-       ✔️  
        ✔️   
        ✔️   
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
+   :::column span="3":::
+      [Experimental themes](#experimental-themes)  
+      [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
+      [Git Forks](../../repos/git/forks.md)  
+      [Historical graph for agent pools](/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview)  
+      [New account manager](#account-manager)  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+      &nbsp;  
+      &nbsp;  
+       ✔️   
+       ✔️    
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
+      [New service connections experience](../../pipelines/library/service-endpoints.md)  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
+      [New Teams page](../../organizations/settings/add-teams.md)  
+      [New Test Plans Page](../../test/new-test-plans-page.md)  
+      New TFVC pages   
+      New Wiki experience  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      [Limit user visibility for projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      Task Insights for Failed Pipeline Runs   
+   :::column-end:::
+   :::column span=".5":::
+       ✔️   
+       ✔️   
+       ✔️  
+       ✔️   
+   :::column-end:::
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+      &nbsp;  
+       ✔️   
+   :::column-end:::
+:::row-end:::
+---
+
+
 ::: moniker-end
 
 
@@ -236,18 +248,15 @@ For information on other user settings and preferences, see [Set user preference
 
 <a id="account-level">  </a>
 
-## Enable features at the organization level (for all users)  
+## Enable features at the organization level 
 
 When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
 
 > [!TIP]  
-> If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+> If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the organization](media/preview-features/org-features-s170a.png)
-
-> [!div class="mx-imgBorder"]  
-> ![Preview features options for the organization, part 2](media/preview-features/org-features-s170-3.png)
+> ![Preview features options for the organization](media/preview-features/organization-settings-1.png)
 
 ::: moniker-end
 
@@ -308,7 +317,6 @@ With **Experimental themes** enabled, you can select among a number of additiona
 ### Azure Pipelines
 
 - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
-- [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
 - [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
@@ -321,11 +329,14 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Boards 
 
-- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)  
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 
 ### Azure Repos
 
+- [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
 - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 
