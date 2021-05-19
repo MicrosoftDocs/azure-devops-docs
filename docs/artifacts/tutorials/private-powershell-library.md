@@ -188,7 +188,7 @@ We now have the module and the module manifest. We are ready to package it and p
        <description>The module says hello to the user</description>
        <releaseNotes>This is the newest I know of.</releaseNotes>
        <copyright>Copyright 2019</copyright>
-       <tags>Francis Totten</tags>
+       <tags>PSModule</tags>
        <dependencies>
        </dependencies>
      </metadata>

@@ -75,6 +75,8 @@ landingContent:
         links:
           - text: Create & manage Git repositories
             url: ./git/create-new-repo.md
+          - text: Set Git repository permissions
+            url: ./git/set-git-repository-permissions.md 
           - text: Create a new branch
             url: ./git/create-branch.md
           - text: Improve code quality with branch policies
@@ -119,16 +121,16 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage repository permissions
-            url: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+          - text: Manage TFVC repository permissions
+            url: ./tfvc/set-tfvc-repository-permissions.md 
           - text: Add TFVC check-in policies
-            url: ./tfvc/add-check-policies.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+            url: ./tfvc/add-check-policies.md 
   - title: Developer resources
     linkLists:
       - linkListType: reference
         links:
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/repos
+            url: /cli/azure/repos
           - text: Git REST API
             url: /rest/api/azure/devops/git/
           - text: TFVC REST API

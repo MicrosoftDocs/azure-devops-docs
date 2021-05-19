@@ -30,7 +30,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ::: moniker range="> tfs-2018"
 
-The agent is based on .NET Core 2.1.
+The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 - x64
@@ -40,7 +40,7 @@ We support the following subset of .NET Core supported distributions:
   - Linux Mint 18, 17
   - openSUSE 42.3 or later
   - Oracle Linux 7
-  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
+  - Red Hat Enterprise Linux 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 18.04, 16.04
 - ARM32 (see note 2)
@@ -273,10 +273,10 @@ cd ~/myagent$
 Command:
 
 ```bash
-sudo ./svc.sh install
+sudo ./svc.sh install [username]
 ```
 
-This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host.
+This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified then the username is taken from the $SUDO_USER environment variable which is set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
 
 #### Start
 

@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 05/11/2020
+ms.date: 04/06/2021
 monikerRange: azure-devops
 ---
 
@@ -24,11 +24,14 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 * **Use pipeline caching** when you want to improve build time by reusing files from previous runs (and not having these files will not impact the job's ability to run).
 
+> [!NOTE]
+> Caching is currently free, and caches are stored in Azure blob storage.
+
 ## Use Cache task
 
 Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
-When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
+When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
 
 > [!NOTE]
 > Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
@@ -39,7 +42,7 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 #### Path input
 
-`path` should be set to the directory to populate the cache from (on save) and to store files in (on restore). It can be absolute or relative. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
+`path` the path of the folder to cache. Can be an absolute or a relative path. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`. You can use predefined variables however wildcards are not supported.
 
 #### Key input
 
@@ -243,26 +246,27 @@ Caching Docker images dramatically reduces the time it takes to run your pipelin
 
 ```yaml
 pool:
-  vmImage: ubuntu-16.04
+  vmImage: 'Ubuntu-16.04'
 
 steps:
   - task: Cache@2
     inputs:
-      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      key: 'docker | cache'
       path: $(Pipeline.Workspace)/docker
-      cacheHitVar: DOCKER_CACHE_RESTORED
-    displayName: Caching Docker image
-
+      cacheHitVar: DOCKER_CACHE_HIT
+    displayName: Cache Docker images
   - script: |
-      docker load < $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
-
+      docker load -i $(Pipeline.Workspace)/docker/cache.tar
+    displayName: Restore Docker image
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_HIT, 'true'))
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      docker pull ubuntu
-      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
-    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+      docker save -o $(Pipeline.Workspace)/docker/cache.tar cache
+    displayName: Save Docker image
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_HIT, 'true')))
 ```
+
+Replace `caching-docker.yml` with your own pipeline YAML file.
 
 ## Golang
 
@@ -287,7 +291,7 @@ steps:
 
 ## Gradle
 
-Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
+Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable the build cache, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either run your build with `--build-cache` or add `org.gradle.caching=true` to your `gradle.properties` file.
 
 **Example**:
 
@@ -298,20 +302,30 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'gradle | "$(Agent.OS)"'
-    restoreKeys: gradle
+    key: 'gradle | "$(Agent.OS)" | **/build.gradle.kts' # Swap build.gradle.kts for build.gradle when using Groovy
+    restoreKeys: |
+      gradle | "$(Agent.OS)"
+      gradle
     path: $(GRADLE_USER_HOME)
-  displayName: Gradle build cache
+  displayName: Configure gradle caching
 
-- script: |
-    ./gradlew --build-cache build    
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
+    tasks: 'build'
+    options: '--build-cache'
+  displayName: Build
+
+- script: |   
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
     ./gradlew --stop    
   displayName: Build
 ```
 
+- **restoreKeys**: The fallback keys if the primary key fails (Optional)
+
 > [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature:  [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842).
+> Caches are immutable, once a cache with a particular key is created for a specific scope (branch), the cache cannot be updated. This means that if the key is a fixed value, all subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. If you want to use a fixed key value, you must use the `restoreKeys` argument as a fallback option.
 
 ## Maven
 
@@ -359,7 +373,7 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**'
+    key: 'nuget | "$(Agent.OS)" | $(Build.SourcesDirectory)/packages.lock.json'
     restoreKeys: |
        nuget | "$(Agent.OS)"
     path: $(NUGET_PACKAGES)
@@ -369,7 +383,7 @@ steps:
 > [!TIP]
 > Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
 
-See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
+In the above example, the `$(Build.SourcesDirectory)` points to your project's generated lock file. See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 

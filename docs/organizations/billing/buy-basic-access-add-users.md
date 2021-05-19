@@ -2,7 +2,7 @@
 title: Manage paid access for users in Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Assign paid access and control the default access of your new users in Azure DevOps
+description: Assign paid access and control the default access of your new users in Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
@@ -112,7 +112,7 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](billing-faq.md#multi-organization-billing). Complete the following steps.
+If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](/azure/devops/organizations/billing/billing-faq). Complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

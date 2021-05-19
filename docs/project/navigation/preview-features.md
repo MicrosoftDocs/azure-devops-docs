@@ -96,7 +96,6 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
       [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
@@ -105,11 +104,9 @@ The follow table indicates which preview features can be enabled per user or tea
        ✔️   
        ✔️   
        ✔️   
-       ✔️   
        ✔️  
    :::column-end:::
    :::column span=".5"::: 
-       ✔️   
        ✔️   
        ✔️   
        ✔️   
@@ -332,7 +329,9 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Boards 
 
-- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)  
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 
 ### Azure Repos

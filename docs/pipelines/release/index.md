@@ -185,7 +185,7 @@ The deployment status is displayed in the following sections of Azure Repos:
 If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
 > [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipeline to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
 
 **Report deployment status to Work**
 
@@ -254,8 +254,8 @@ When specifying the format mask, you can use the following pre-defined variables
 | **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, it's the number of the [primary build](artifacts.md#primary-source). |
 | **Build.DefinitionName** | The pipeline name of the build contained in the release. If a release has multiple builds, it's the pipeline name of the [primary build](artifacts.md#primary-source). |
 | **Artifact.ArtifactType** | The type of the artifact source linked with the release. For example, this can be **Azure Pipelines** or **Jenkins**. |
-| **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **main** if the branch is **refs/heads/main**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable isn't set for Jenkins or other artifact sources. |
-| *Custom variable* | The value of a global configuration property defined in the release pipeline. |
+| **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **main** if the branch is **refs/heads/main**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
+| **Custom variable** | The value of a global configuration property defined in the release pipeline. You can update the release name with custom variables using the [Release logging commands](https://github.com/microsoft/azure-pipelines-tasks/blob/master/docs/authoring/commands.md#release-logging-commands) |
 
 For example, the release name format `Release $(Rev:rrr) for build $(Build.BuildNumber) $(Build.DefinitionName)` creates releases with names such as **Release 002 for build 20170213.2 MySampleAppBuild**.
 

@@ -70,7 +70,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git](../repos/git/set-git-repository-permissions.md)">Git</a><br/>- <a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -805,7 +805,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to <a href="../repos/git/merging.md" data-raw-source="[prevent and resolve merge conflicts](../repos/git/merging.md)">prevent and resolve merge conflicts</a>.   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
@@ -919,7 +919,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/get-started-search.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/get-started-search.md)">filters, preview code, view history, compare versions, and more</a> </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 
 
@@ -2023,7 +2023,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/overview.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/get-started-search.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 <p><b>Find work items</b></p>
 <p>When in the Work hub, <a href="../boards/queries/using-queries.md" data-raw-source="[enter IDs or keywords to start a query](../boards/queries/using-queries.md)">enter IDs or keywords to start a query</a> to find  work items that you want to review, triage, or update.</p>
@@ -2081,7 +2081,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p><a href="../project/search/overview.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/overview.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
+<p><a href="../project/search/get-started-search.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/get-started-search.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
@@ -2185,9 +2185,9 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)">Git repositories</a></li>
+<li><a href="../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repositories](../repos/git/set-git-repository-permissions.md)">Git repositories</a></li>
 <li><a href="../repos/git/branch-permissions.md" data-raw-source="[Git branches](../repos/git/branch-permissions.md)">Git branches</a></li>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
+<li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC source code and folders](../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC source code and folders</a></li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build](../pipelines/policies/set-permissions.md)">Build</a></li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a>)</li>
 <li><a href="../pipelines/policies/set-permissions.md" data-raw-source="[Release](../pipelines/policies/set-permissions.md)">Release</a></li>

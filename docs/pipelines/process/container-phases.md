@@ -64,7 +64,7 @@ Docker must be installed. Be sure your pipelines agent has permission to access 
 
 The Windows container must support running Node.js.
 A base Windows Nano Server container is missing dependencies required to run Node.
-See [this post](/archive/blogs/nanoserver/node-js-on-nano-server) for more information about what it takes to run Node on Windows Nano Server.
+
 
 ### Hosted agents
 
@@ -178,7 +178,7 @@ steps:
 - script: echo hello
 ```
 
-Running `docker create --help` will give you the list of supported options.
+Running `docker create --help` will give you the list of supported options. You can use any option available with the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/).
 
 ## Reusable container definition
 

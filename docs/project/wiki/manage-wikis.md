@@ -25,13 +25,13 @@ Learn the following CLI commands for managing wikis.
 |---------|---------|
 |[az devops wiki create](#create-a-wiki)     | Create a wiki.        |
 |[az devops wiki delete](#delete-a-wiki)   | Delete a wiki.        |
-|[az devops wiki list](#list-wikis)   |  List all the wikis in a project or organization.       |
+|[az devops wiki list](#list-wikis)   |  List all the wikis in a project or an organization.       |
 |[az devops wiki page](add-edit-wiki.md)    |  Manage wiki pages.       |
 |[az devops wiki page create](#create-a-wiki-page)     | Add a new page.        |
 |[az devops wiki page delete](add-edit-wiki.md#delete-wiki-page)   | Delete a page.        |
 |[az devops wiki page show](add-edit-wiki.md#view-a-wiki-page)    | Get the content of a page or open a page.        |
 |[az devops wiki page update](add-edit-wiki.md#edit-wiki-page)   |  Edit a page.       |
-|[az devops wiki show](#show-wiki)    |  Show details of a wiki.       |
+|[az devops wiki show](#show-wiki)    |  Show the details of a wiki.       |
 
 ## Create a wiki
 
@@ -76,6 +76,9 @@ az devops wiki create --name WIKI_NAME --type codewiki
 ## Delete a wiki
 
 To delete a wiki, enter the `az devops wiki delete` command.
+
+> [!NOTE]
+> You can use this command only to delete a code wiki. You can't use the command to delete a project wiki.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

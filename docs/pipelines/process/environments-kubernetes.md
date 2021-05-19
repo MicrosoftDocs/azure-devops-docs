@@ -188,7 +188,7 @@ variables:
                 $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-To use this job in an **exiting** pipeline, the service connection backing the regular Kubernetes environment resource needs to be modified to "Use cluster admin credentials". Alternatively, role bindings need to be created for the underlying service account to the review app namespace.
+To use this job in an **existing** pipeline, the service connection backing the regular Kubernetes environment resource needs to be modified to "Use cluster admin credentials". Alternatively, role bindings need to be created for the underlying service account to the review app namespace.
 
 ## Next steps
 - [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)

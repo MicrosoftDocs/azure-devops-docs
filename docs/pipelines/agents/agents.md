@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 12/15/2020
+ms.date: 04/08/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -92,6 +92,11 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ::: moniker range="azure-devops"
 
+> [!NOTE]
+> Agents are widely backward compatible. Any version of the agent should be compatible with any Azure DevOps version as long as Azure DevOps isn't demanding a higher version of the agent.
+>
+> We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
+
 ## Azure virtual machine scale set agents
 
 Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
@@ -137,7 +142,10 @@ Every self-hosted agent has a set of capabilities that indicate what it can do. 
 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
-When you author a pipeline you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the demands [specified in the pipeline](../build/options.md). As a result, agent capabilities allow you to direct jobs to specific agents.
+> [!NOTE]
+> Storing environment variables as capabilities means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running won't be picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
+
+When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
 > [!NOTE]
 >
@@ -146,7 +154,7 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 > matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
 > to use capabilities with Microsoft-hosted agents.
 
-### View agent details
+### Configure agent capabilities
 
 #### [Browser](#tab/browser)
 
@@ -159,6 +167,8 @@ You can view the details of an agent, including its version and system capabilit
 1. Navigate to the capabilities tab:
  
    [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
+
+1. To register a new capability with the agent, choose **Add a new capability**.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -543,7 +553,7 @@ Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
-You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
+You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Configure agent capabilities](#configure-agent-capabilities).
 
 > [!NOTE]
 > For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.

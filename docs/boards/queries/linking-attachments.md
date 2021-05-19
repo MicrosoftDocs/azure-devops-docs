@@ -347,6 +347,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 
 - [Add a link to multiple work items](../backlogs/add-link.md) 
 - [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md) 
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Query quick reference](query-index-quick-ref.md)
 - [Query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   

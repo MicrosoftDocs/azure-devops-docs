@@ -549,9 +549,10 @@ jobs:
         steps:
         - script: echo my first deployment
 ```
-::: moniker-end
 
 ---
+
+::: moniker-end
 
 ## Steps
 
@@ -1119,8 +1120,8 @@ resources:
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
-      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
-      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 2020.1 and greater
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 2020.1 and greater
 ```
 # [Example](#tab/example)
 
@@ -1150,7 +1151,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -2145,7 +2146,7 @@ Use the `checkout` keyword to configure or suppress this behavior.
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  fetchDepth: number  # the depth of commits to ask Git to fetch (applies to submodules too if they're enabled); defaults to no limit
   lfs: boolean  # whether to download Git-LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`

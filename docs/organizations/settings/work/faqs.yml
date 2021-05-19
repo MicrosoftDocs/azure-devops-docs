@@ -8,7 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/03/2021
+  ms.date: 04/12/2021
 
 title: Azure Boards configuration and customization FAQs  
 
@@ -108,6 +108,19 @@ sections:
           **Yes**. You can add up to a total of five portfolio backlogs. And, you can rename a portfolio backlog and add custom work item types to a portfolio backlog.  
 
           To learn how, see [Customize your backlogs or boards (Inheritance process)](customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../../../reference/add-portfolio-backlogs.md).
+
+      - question: How do I add my custom work item type to a backlog?  
+        answer: | 
+          Modify your requirement backlog to include the custom work item type on the product backlog. For details, see [Customize your backlogs or boards, Edit or rename the requirement backlog](customize-process-backlogs-boards.md#edit-or-rename-the-requirement-backlog). 
+
+          > [!NOTE]  
+          > The backlog level to which you add a custom work item type determines the parent work item type(s) for the work item type.  
+
+      - question: Can caching impact rules applied to work items?  
+        answer: | 
+
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+
 
       - question: Can I upload my own custom work item type icons for an Inherited process?  
         answer: | 

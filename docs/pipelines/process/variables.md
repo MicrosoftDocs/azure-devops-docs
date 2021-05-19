@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 03/11/2021
+ms.date: 05/07/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -99,13 +99,13 @@ In this example, macro syntax is used with Bash, PowerShell, and a script task. 
 
  ```yaml
 variables:
-  - name: pullRequest
-    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+  - name: projectName
+    value: contoso
 
 steps: 
-- bash: echo $(pullRequest)
-- powershell: echo $(pullRequest)
-- script: echo $(pullRequest)
+- bash: echo $(projectName)
+- powershell: echo $(projectName)
+- script: echo $(projectName)
  ```
 
 ### Template expression syntax 
@@ -437,7 +437,7 @@ Using a global secret var mapped in the pipeline does not work either:
 Using a global non-secret var mapped in the pipeline works: foo
 Using the mapped env var for this task works and is recommended: ***
 ```
-You can also map secret variables using the `variables` definition. This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
+You can also use secret variables outside of scripts. For example, you can map secret variables to tasks using the `variables` definition. This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
 
 ```yaml
 variables:
@@ -604,6 +604,61 @@ stages:
     - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
 
+You can also pass variables between stages with a file input. To do so, you'll need to define variables in the second stage at the job level and then pass the variables as `env:` inputs. 
+
+```bash
+## script-a.sh
+echo "##vso[task.setvariable variable=sauce;isOutput=true]crushed tomatoes"
+```
+
+```bash
+## script-b.sh
+echo 'Hello file version'
+echo $skipMe
+echo $StageSauce
+```
+
+```yaml
+## azure-pipelines.yml
+stages:
+
+- stage: one
+  jobs:
+  - job: A
+    steps:
+    - task: Bash@3
+      inputs:
+          filePath: 'script-a.sh'
+      name: setvar
+    - bash: |
+       echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]true"
+      name: skipstep
+  
+- stage: two
+  jobs:
+  - job: B
+    variables:
+      - name: StageSauce
+        value: $[ stageDependencies.one.A.outputs['setvar.sauce'] ]
+      - name: skipMe
+        value: $[ stageDependencies.one.A.outputs['skipstep.skipsubsequent'] ]
+    steps:
+    - task: Bash@3
+      inputs:
+        filePath: 'script-b.sh'
+      name: fileversion
+      env:
+        StageSauce: $(StageSauce) # predefined in variables section
+        skipMe: $(skipMe) # predefined in variables section
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: |
+          echo 'Hello inline version'
+          echo $(skipMe) 
+          echo $(StageSauce) 
+```
+
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -672,15 +727,12 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
-This doesn't update the environment variables, but it does make the new
-variable available to downstream steps within the same job.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md). This will update the environment variables for subsequent jobs. Subsequent jobs will have access to the new variable with [macro syntax](#understand-variable-syntax) and in tasks as environment variables.
 
-When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  For more information on secret variables, see [logging commands](../scripts/logging-commands.md).  
 
 ```yaml
 steps:
-
 # Create a variable
 - bash: |
     echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
@@ -692,11 +744,10 @@ steps:
     echo my pipeline variable is $(sauce)
 ```
 
-Subsequent steps will also have the pipeline variable added to their environment.
+Subsequent steps will also have the pipeline variable added to their environment. You cannot use the variable in the step that it is defined.
 
 ```yaml
 steps:
-
 # Create a variable
 # Note that this does not update the environment of the current script.
 - bash: |
@@ -708,6 +759,7 @@ steps:
 - pwsh: |
     Write-Host "my environment variable is $env:SAUCE"
 ```
+
 
 ### Set a multi-job output variable
 
@@ -745,6 +797,9 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 If you're setting a variable from one stage to another, use `stageDependencies`. 
 
@@ -766,6 +821,9 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
 or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
@@ -1133,7 +1191,6 @@ If the variable `a` is an output variable from a previous job, then you can use 
 ### Recursive expansion
 
 On the agent, variables referenced using `$( )` syntax are recursively expanded.
-However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -1143,7 +1200,7 @@ variables:
 
 steps:
 - script: echo $(myOuter)  # prints "someValue"
-  displayName: Variable is $(myOuter)  # display name is "Variable is $(myInner)"
+  displayName: Variable is $(myOuter)  # display name is "Variable is someValue"
 ```
 
 ::: moniker-end

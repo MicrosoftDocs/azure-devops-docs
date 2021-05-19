@@ -9,7 +9,7 @@ metadata:
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
   "recommendations": "true"
-  ms.date: 02/03/2021
+  ms.date: 04/12/2021
 
 
 title: Azure Boards FAQs  
@@ -49,6 +49,12 @@ sections:
           - [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
           - [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
 
+      - question: Can caching impact rules applied to work items?  
+        answer: | 
+
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+
+
       - question: What client tools support work tracking with Azure Boards? 
         answer: |
           See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
@@ -73,7 +79,7 @@ sections:
       - question: Can a work item be assigned to several users or a user group? 
 
         answer: |
-          **No**. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
+          **No**. Work items can only be assigned to a single user. Also, you can only add a user that is available from the [people picker](queries/query-by-workflow-changes.md#people-picker).    
 
       - question: What's the recommended method to group work? 
 
@@ -82,7 +88,7 @@ sections:
 
           For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
-      - question: How to mark a task or work item as a milestone task?
+      - question: How do I mark a task or work item as a milestone task?
 
         answer: |
           Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. Delivery Plans provide a calendar view and allow you to define a milestone marker. For more information, see [Review team Delivery Plans](plans/review-team-plans.md).  
@@ -104,15 +110,20 @@ sections:
 
           If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
 
+      - question: What determines which work item type should be a parent for another work item type? 
+
+        answer: |
+          Each process defines four default backlog levels: the iteration backlog, requirement backlog, feature and epic portfolio backlogs. The work item types added to each backlog level are the natural work item types to form parent-child relationship and group work items into a hierarchy. To learn more, see [Organize your backlog, map child work items to parents](backlogs/organize-backlog.md). To customize the process, see [Customize your backlogs or boards, Edit or rename the requirement backlog](../organizations/settings/work/customize-process-backlogs-boards.md).   
+
       - question: How do I copy or clone a work item with all linked items? 
 
         answer: |
-          ::: moniker range="azure-devops"
+          ::: moniker range=">= azure-devops-2020"
           With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
-          ::: moniker range="< azure-devops"
-          This feature isn't supported at this time for on-premises deployments. Copying a work item doesn't copy any parent-child linked work items. However, is is now available on Azure Boards (cloud service).  
+          ::: moniker range="< azure-devops-2020"
+          This feature isn't supported at this time for Azure DevOps 2019 and earlier versions. Copying a work item doesn't copy any parent-child linked work items. However, is is available for Azure DevOps Server 2020.1 update and Azure Boards (cloud service).  
 
           The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
@@ -123,6 +134,11 @@ sections:
           ::: moniker-end
 
 
+      - question: How do I bulk modify a rich-text field? 
+
+        answer: | 
+          See [Bulk modify work items, Bulk modify rich-text fields](backlogs/bulk-modify-work-items.md#rich-text).
+
   - name: Backlogs and Boards 
 
     questions: 
@@ -132,7 +148,7 @@ sections:
 
       - question: How do I add a backlog or board?  
         answer: | 
-          To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
+          To add a backlog or board, you add a team. Each team is configured with its own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
 
       - question: What limits should I be aware of?  
         answer: | 

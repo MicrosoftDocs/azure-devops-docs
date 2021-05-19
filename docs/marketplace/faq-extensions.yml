@@ -137,7 +137,7 @@ sections:
 additionalContent: | 
   ## Related articles
   - [Azure DevOps billing overview](../organizations/billing/overview.md)
-  - [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
+  - [Azure DevOps billing FAQ](../organizations/billing/billing-faq.yml)
   - [How to pay for Azure DevOps Server users](../organizations/billing/buy-access-tfs-test-hub.md)
   - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
   - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)  

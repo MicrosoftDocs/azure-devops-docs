@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 04/22/2021
 ---
 
 # Bulk modify work items  
@@ -428,6 +428,15 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
+<a id="rich-text"> </a> 
+
+## Bulk modify rich-text fields
+
+Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#query-samples-for-select-fields). 
+
+You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and perform a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
+
+For a worked example using templates showing entry of HTML formatted syntax, see [Sample work item templates, Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text). 
 
 <a id="tags"></a>
 

@@ -1,6 +1,267 @@
 {
   "redirections": [
     {
+      "source_path": "docs/migrate/build-deployment-best-practices.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/build-deployment-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/error/attachment-upload-failed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/attachment-upload-failed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf237002-cannot-open-document-excel-not-installed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf237002-cannot-open-document-excel-not-installed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf24023-tfs-configuration-failure.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf24023-tfs-configuration-failure",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30004-ntpw-encountered-error-initializing-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30004-ntpw-encountered-error-initializing-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30022-ntpw-no-connect-sharepoint.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30022-ntpw-no-connect-sharepoint",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30026-cannot-change-file-name-extension.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30026-cannot-change-file-name-extension",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30030-team-explorer-could-not-connect-to-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30030-team-explorer-could-not-connect-to-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30031-team-explorer-no-open-document-service-no-run.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30031-team-explorer-no-open-document-service-no-run",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30034-you-do-not-have-permission-to-create-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30034-you-do-not-have-permission-to-create-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30082-team-explorer-error-launching-document.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30082-team-explorer-error-launching-document",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30168-ntpw-failure-check-permission-create-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30168-ntpw-failure-check-permission-create-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30169-ntpw-no-download-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30169-ntpw-no-download-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30170-the-plug-in-failed-during-task-from-group.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30170-the-plug-in-failed-during-task-from-group",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30172-you-do-not-have-permission-to-create-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30172-you-do-not-have-permission-to-create-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30247-ntpw-no-load-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30247-ntpw-no-load-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30249-ntpw-no-retrieve-process-template-info.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30249-ntpw-no-retrieve-process-template-info",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30320-ntpw-no-retrieve-list-team-projects-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30320-ntpw-no-retrieve-list-team-projects-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30321-name-in-use-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30321-name-in-use-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30323-ntpw-no-retrieve-wizard-page-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30323-ntpw-no-retrieve-wizard-page-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31001-tfs-no-retrieve-team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31001-tfs-no-retrieve-team-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31003-user-account-no-permission-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31003-user-account-no-permission-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31004-tf-error-connecting-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31004-tf-error-connecting-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/underlying-connection-was-closed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/underlying-connection-was-closed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
       "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
       "redirect_document_id": false
@@ -17815,13 +18076,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/backlogs/filter-backlogs.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
-      "redirect_document_id": true
+      "source_path": "docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/boards/boards/filter-kanban-board.md",
-      "redirect_url": "/azure/devops/boards/backlogs/filter-backlogs-boards-plans",
+      "source_path": "docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/navigation/search-basics.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
       "redirect_document_id": false
     },
     {
@@ -17833,6 +18099,46 @@
       "source_path": "docs/misc/migration.md",
       "redirect_url": "/azure/devops/migrate/migration",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/project/search/administration.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-package-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-work-item-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/code-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/package-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/security/set-git-tfvc-repository-permissions.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/git-permissions-before-2017.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
     }
   ]
 }

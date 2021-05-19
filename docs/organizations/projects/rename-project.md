@@ -228,7 +228,7 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 ## Related articles
 
-- [FAQs for renaming a project](faq-rename-project.md)
+- [FAQs for renaming a project](faq-rename-project.yml)
 - [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Go to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
