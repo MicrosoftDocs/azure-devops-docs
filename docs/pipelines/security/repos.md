@@ -10,7 +10,7 @@ monikerRange: '> azure-devops-2019'
 # Repository protection
 
 Source code, the pipeline's YAML file, and necessary scripts & tools are all stored in a version control repository.
-Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe. You can also add pipeline permissions and checks to repositories.  
+Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe. You can also [add pipeline permissions and checks to repositories](../process/repository-resource.md).  
 
 Also, you should review [default access control](../../organizations/security/default-git-permissions.md) for repositories.
 
