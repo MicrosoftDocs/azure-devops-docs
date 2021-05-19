@@ -494,6 +494,14 @@ Test results published within a stage of a release are retained as specified by 
 
 No. Manual test results are not deleted. 
 
+::: moniker range=">= azure-devops-2019"
+
+### How do I preserve my version control labels? 
+
+Version control labels created during a build will be deleted when your build is deleted. If you need to preserve version control labels, you'll need to retain any associated builds. 
+
+::: moniker-end
+
 ## Related articles
 
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
