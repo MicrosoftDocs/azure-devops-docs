@@ -93,7 +93,7 @@ For example, if you add bugs or other work item types to appear on a Kanban boar
 
 ## What is State mapping?  
 
-One of the main configuration details you need to understand to correctly add columns to your Kanban board is how workflow states map to Kanban board column states. The Kanban board and other Azure Board tools use categories to group WITs that they want to treat the same. Two types of categories are used.  
+One of the main configuration details you need to understand to correctly add columns to your Kanban board is how workflow states map to Kanban board column states. The Kanban board and other Azure Boards tools use categories to group WITs that they want to treat the same. Two types of categories are used.  
 
 - **Work item type categories**:  
 	- Only work items whose work item types belong to the Requirement Category show up on the product board. 

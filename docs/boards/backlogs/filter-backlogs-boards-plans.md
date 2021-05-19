@@ -26,7 +26,7 @@ You enable the filter feature by choosing **Filter** :::image type="icon" source
 > ![Screenshot of choosing Filter function latest versions.](media/filter/filter-backlogs.png)
 
 
-From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Board tools.  
+From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
 
 ::: moniker range="<= tfs-2015"
 You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
