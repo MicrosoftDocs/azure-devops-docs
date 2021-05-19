@@ -30,7 +30,7 @@ To protect your products from contributed code, consider the following recommend
 
 ### Don't provide secrets to fork builds
 
-By default, the pipelines you create do not build forks.
+By default, your pipelines do not build forks.
 If you decide to build forks, secrets and protected resources are not made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
@@ -70,4 +70,4 @@ This can apply to a public project (with a separate private repo) as well as a n
 
 ## Next steps
 
-Next, learn about the additional protection offered by checks on [protected resources](resources.md).
+Next, learn about the more protection offered by checks on [protected resources](resources.md).
