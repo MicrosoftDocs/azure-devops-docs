@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
 ms.date: 05/20/2021
 ---
@@ -18,6 +18,9 @@ ms.date: 05/20/2021
 Iteration paths, also referred to as *sprints*, support assignment of work to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
+
+For additional information on iteration paths, see [About area and iteration paths](about-areas-iterations.md).
+
 
 ## Prerequisites
 
