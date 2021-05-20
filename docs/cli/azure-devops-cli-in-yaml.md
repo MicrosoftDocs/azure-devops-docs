@@ -81,6 +81,7 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
 
 * [macOS X Catalina 10.15](#macos-x-catalina-1015)
 * [macOS X Catalina 10.14](#macos-x-catalina-1014)
+* [Conditionally install the Azure DevOps CLI extension](#conditionally-install-the-azure-devops-cli-extension)
 
 ### macOS X Catalina 10.15
 
@@ -123,6 +124,59 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 # Now you can make calls into Azure DevOps CLI
 # ...
+```
+
+### Conditionally install the Azure DevOps CLI extension
+
+If you have a pipeline that runs on several VM images, some of which do not have the Azure DevOps CLI extension install, you can perform that step conditionally, as shown in the following example.
+
+```yml
+trigger:
+- main
+
+# Run on all Microsoft-hosted agent images
+strategy:
+  matrix:
+    linux16:
+      imageName: "ubuntu-16.04"
+    linux18:
+      imageName: "ubuntu-18.04"
+    linux20:
+      imageName: "ubuntu-20.04"
+    mac1014:
+      imageName: "macos-10.14"
+    mac1015:
+      imageName: "macos-10.15"
+    windows2016:
+      imageName: "vs2017-win2016"
+    windows2019:
+      imageName: "windows-2019"
+  maxParallel: 3
+
+pool:
+  vmImage: $(imageName)
+
+- bash: az --version
+  displayName: 'Show Azure CLI version'
+
+# Install Azure DevOps CLI extension only on macOS images
+- bash: az extension add -n azure-devops
+  condition: contains(variables.imageName, 'mac')
+  displayName: 'Install Azure DevOps extension'
+
+# Azure DevOps CLI extension call that does not require login or credentials
+# since it configures the local environment
+- bash: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
+  displayName: 'Set default Azure DevOps organization and project'
+
+# Call that does require credentials, use the System.AccessToken PAT
+# and assign to AZURE_DEVOPS_EXT_PAT which is known to Azure DevOps CLI extension
+- bash: |
+    az pipelines build list
+    git pr list
+  env:
+    AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)
+  displayName: 'Show build list and PRs'
 ```
 
 ## Azure DevOps CLI with self-hosted agents
