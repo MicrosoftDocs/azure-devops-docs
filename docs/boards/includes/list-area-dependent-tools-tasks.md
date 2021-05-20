@@ -13,7 +13,7 @@ To perform the following tasks, you must define area paths:
 
 ::: moniker range=">= tfs-2017"
 
-- [Query work items based on Area Path assignment](/azure/devops/boards/queries/query-by-area-iteration-path)
+- [Query and chart work items based on Area Path](/azure/devops/boards/queries/query-by-area-iteration-path)
 - [Assign work to more than one team, [Add teams](/azure/devops/organizations/settings/add-teams) 
 - [Work with management and feature teams, [Configure a hierarchy of teams](/azure/devops/boards/plans/configure-hierarchical-teams)
 - [Filter a backlog, query, board, or plan using Area Paths](/azure/devops/boards/backlogs/filter-backlogs-boards-plans)
@@ -22,7 +22,7 @@ To perform the following tasks, you must define area paths:
 
 ::: moniker range="< tfs-2017"
 
-- [Query work items based on Area Path assignment](/azure/devops/boards/queries/query-by-area-iteration-path)
+- [Query and chart work items based on Area Path](/azure/devops/boards/queries/query-by-area-iteration-path)
 - [Assign work to more than one team, [Add teams](/azure/devops/organizations/settings/add-teams) 
 - [Work with management and feature teams, [Configure a hierarchy of teams](/azure/devops/boards/plans/configure-hierarchical-teams)
 
