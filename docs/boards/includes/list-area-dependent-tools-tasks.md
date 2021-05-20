@@ -33,36 +33,27 @@ To use the following tools, teams must subscribe to area paths:
 ::: moniker range=">= azure-devops-2020"
 
 - [Boards> all tools](/azure/devops/boards/kanban-overview)  
-- [Backlogs> all tools](/azure/devops/backlogs/backlogs-overview)  
-- [Sprints> all tools](/azure/devops/sprints/scrum-overview)  
-- [Analytics> all](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking)
+- [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
+- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
+- [Delivery plans](/azure/devops/boards/plans/review-team-plans), calendar view of team deliverables
 - [Rollup](/azure/devops/configure-customize#rollup)  
-- Portfolio planning tools   
-	- [Delivery plans](plans/review-team-plans.md), calendar view of team deliverables
-	- [Feature Timeline extension](/azure/devops/boards/extensions/feature-timeline), provides a calendar view of team features 
-	- [Dependency Tracker extension](/azure/devops/boards/extensions/dependency-tracker), provides list and calendar views of dependencies being produced or consumed by teams  
+- [Analytics> all](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
 - [Boards> all tools](/azure/devops/boards/kanban-overview)  
-- [Backlogs> all tools](/azure/devops/backlogs/backlogs-overview)  
-- [Sprints> all tools](/azure/devops/sprints/scrum-overview)  
-- [Analytics> all](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking)
-- Portfolio planning tools   
-	- [Delivery plans](plans/review-team-plans.md), calendar view of team deliverables
-	- [Feature Timeline extension](/azure/devops/boards/extensions/feature-timeline), provides a calendar view of team features 
-	- [Dependency Tracker extension](/azure/devops/boards/extensions/dependency-tracker), provides list and calendar views of dependencies being produced or consumed by teams  
+- [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
+- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview)  
+- [Delivery plans](/azure/devops/boards/extensions/delivery-plans), calendar view of team deliverables
 
 ::: moniker-end
 
 ::: moniker range="< tfs-2017"
 
 - [Boards> all tools](/azure/devops/boards/kanban-overview)  
-- [Backlogs> all tools](/azure/devops/backlogs/backlogs-overview)  
-- [Sprints> all tools](/azure/devops/sprints/scrum-overview)  
-- [Analytics> all](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking)
-- [Rollup](/azure/devops/configure-customize#rollup)  
+- [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
+- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview)  
 
 ::: moniker-end

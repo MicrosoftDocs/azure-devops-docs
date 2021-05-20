@@ -15,7 +15,7 @@ ms.date: 05/20/2021
 
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
-Iteration paths, also referred to as *sprints*, support assignment of work to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
+Iteration paths, also referred to as *sprints*, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
 

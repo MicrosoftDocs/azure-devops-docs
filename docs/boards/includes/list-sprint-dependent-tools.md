@@ -10,18 +10,36 @@ ms.date: 05/20/2021
 
  
 
-Define iteration paths and assign them to teams when you want to perform the following tasks or use the following tools: 
+Define iteration paths and assign them to teams when you want to use the following tools: 
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops"
+
+- [Assign work items to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
+- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
+- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
+- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/plans/review-team-plans)  
+- [Velocity chart](/azure/devops/report/dashboards/team-velocity) and [Sprint burndown chart](/azure/devops/report/dashboards/configure-sprint-burndown)  
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - [Assign work to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
 - [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
 - [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
-- [Delivery plans](/azure/devops/boards/plans/review-team-plans), calendar view of team deliverables
+- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/extensions/delivery-plans)  
 - [Velocity chart](/azure/devops/report/dashboards/team-velocity) and [Sprint burndown chart](/azure/devops/report/dashboards/configure-sprint-burndown)
-- [Feature Timeline extension](/azure/devops/boards/extensions/feature-timeline), provides a calendar view of team features 
-- [Dependency Tracker extension](/azure/devops/boards/extensions/dependency-tracker), provides list and calendar views of dependencies being produced or consumed by teams  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+- [Assign work to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
+- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
+- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
+- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/extensions/delivery-plans)  
+- [Velocity chart](/azure/devops/report/dashboards/team-velocity)  
 
 ::: moniker-end
 
