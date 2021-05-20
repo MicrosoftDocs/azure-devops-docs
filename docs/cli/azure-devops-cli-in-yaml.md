@@ -57,7 +57,7 @@ steps:
 
 ```
 
-If you are using a Windows agent, and want to replace [bash](../pipelines/tasks/utility/bash?view=azure-devops) with [script](../pipelines/yaml-schema.md#script), which uses bash for Linux and macOS and cmd.exe for Windows, use the following example to log in to Azure DevOps.
+If you are using a Windows agent, and want to replace [bash](../pipelines/tasks/utility/bash.md) with [script](../pipelines/yaml-schema.md#script), which uses bash for Linux and macOS and cmd.exe for Windows, use the following example to log in to Azure DevOps.
 
 ```yml
 # %AZURE_DEVOPS_CLI_PAT% on Windows when using script
@@ -160,7 +160,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
 
 * Install Azure CLI DevOps extension
   * Azure CLI version [2.10.1](index.md) or higher is installed. 
-  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash?view=azure-devops).
+  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash.md).
   ```yml
   # Install Azure DevOps extension
   - bash: az extension add -n azure-devops
