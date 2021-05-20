@@ -18,6 +18,9 @@ ms.date: 05/19/2021
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI, add the Azure DevOps extension, and run the build and PR list commands.
 
+> [!NOTE]
+> The steps in this article show how to log in to Azure DevOps and run `az devops` commands using the Azure DevOps CLI extension. If you want to use Azure CLI to interact with Azure resources, use the [AzureCLI task](../pipelines/tasks/deploy/azure-cli.md).
+
 ## Azure DevOps CLI with Windows and Linux hosted agents
 
 The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. 
@@ -27,7 +30,7 @@ The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI a
 >
 > To check the included software and their versions for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
-The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other [Windows or Linux hosted images](../pipelines/agents/hosted.md#software).
+The following example shows how to log in to Azure DevOps and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other [Windows or Linux hosted images](../pipelines/agents/hosted.md#software).
 
 This example logs into Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
