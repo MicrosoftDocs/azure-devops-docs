@@ -4,9 +4,8 @@ description: Azure CLI sample for accessing secret and nonsecret variables from 
 author: steved0x
 ms.author: jukullam
 manager: mijacobs
-ms.date: 05/10/2021
+ms.date: 05/20/2021
 ms.topic: sample
-ms.service: az-devops-project
 ms.devlang: azurecli 
 ms.custom: devx-track-azurecli
 ---
