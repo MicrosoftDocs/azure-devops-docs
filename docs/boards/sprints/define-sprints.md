@@ -1,5 +1,5 @@
 ---
-title: Schedule sprints to support working in Scrum
+title: Change sprint dates to support working in Scrum
 titleSuffix: Azure Boards  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints
@@ -13,24 +13,19 @@ ms.date: 07/09/2020
 ---
 
 
-# Schedule sprints  
+# Change sprint dates 
 
 [!INCLUDE [temp](../includes/version-all.md)] 
 
+With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. You define Iteration Paths, also referred to as *sprints*, to support assignment of work items to time-box intervals. Iteration paths are a shared resource used by all teams that select them. Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.  
 
-With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
-You define sprints to correspond to the cadence your team uses. 
-
-Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.  
-
+> [!TIP]
+> If all you need to do is change the iteration dates, you can do that by following the guidance provided in this article.  However, if you need to define the iteration paths and tree structure, or assign team sprints, then follow the guidance provided in [Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+ 
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* To modify work tracking project configuration, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
-* You must be added to a project as a member of the **Project Administrators** security group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
-* Or, to add, edit, and manage Iteration Paths under a node, you must have one or more of the following permissions set to **Allow** for the node you want to manage: **Create child nodes**, **Delete this node**, and **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
-
+* To change sprint dates, you must be a member of the **Project Administrators** security group, or have the **Edit this node** permission for the iteration child node you want to change. By default, the user who created the project has these permissions set. To learn more, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 <a id="quick-start-schedule">   </a>
 
