@@ -9,22 +9,44 @@ monikerRange: azure-devops
 
 # About pipeline resources
 
-A resource is anything used by a pipeline that lives outside the pipeline. [Resources](resources.md) are defined at one place and can be consumed anywhere in your pipeline. 
+A [resources](resources.md) is anything used by a pipeline that lives outside the pipeline. Resources provide three main benefits:
+
+Resources are a way to share information across pipelines so that you do not need to recreate it each time. Good examples of using resources for sharing are variable groups, secure files, and service connections. In all these cases, you're using a resource as an easier way for a pipeline to access and consume something. 
+
+At the same time, resources are useful for restricting access and making sure your valuable information is shared with the fewest number of authorized users. For example, you can limit a service connection to only run on one pipeline or make sure that a repository can only be used with a manual approval check. 
+
+Resources are also a way to improve traceability. When you use resources in a YAML pipeline, you can trace the lifecycle of your resources. For example, you'll be able to see the version of a package that gets consumed in a pipeline. When resources are combined with environments, you can see any resources such as containers that are consumed within a specific environment. 
+
+
+
 
 There are three types of resources:
-- Resources that get consumed (secure files, variable groups, pipelines, repositories, packages, service connections)
-- Resources that get triggered (repositories, artifacts, pipeline triggers, webhooks)  
-- Resources that run on something (environments, agent pools, containers)
+* Resources that are consumed (secure files, variable groups, pipelines, repositories, packages, service connections)
+* Resources that are triggered (repositories, artifacts, pipeline triggers, webhooks)  
+* Resources that run on infrastructure (environments, agent pools, containers)
+
+Resources give you an added level of control. Because a resource doe
+
+## Manage resources
+
+Some resources are only managed in the Pipelines UI:
+* service connections
+* variable groups
+* agent pools
+
+
+There's a special YAML pipeline syntax for managing some resource types:
+
+
+Other resources are only managed in the Azure Pipelines UI:
+* secure files
+
+## Secure resources
 
 Resources can be [protected or open](../security/resources.md). You can use approvals and checks with protected resources and limit them to specific users and pipelines. Protected resources include service connections, agent pools, environments, and repositories.
 
-## Use resources in a pipeline
-
-
-## Resources security
 
 It's useful to think about resources are used, how to prevent malicious code, and how to prevent an authorized pipeline from having access. 
-
 
 |Resource  |How is it consumed?  |How can you prevent a malicious script in a pipeline from using this?  |How do you prevent an unintended pipeline from using this?  |
 |---------|---------|---------|---------|
