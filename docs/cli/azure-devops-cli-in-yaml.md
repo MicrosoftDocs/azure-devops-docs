@@ -27,7 +27,7 @@ The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI a
 >
 > To check the included software and their versions for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
-The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other Windows or Linux hosted images.
+The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other [Windows or Linux hosted images](../pipelines/agents/hosted.md#software).
 
 This example logs into Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
@@ -64,7 +64,7 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
 > [!IMPORTANT]
 > Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/virtual-environments#updates-to-virtual-environments) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s).
 >
-> To check the included software and their versions for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
+> To check the included software and their versions for Microsoft-hosted agents, including the version of Azure CLI, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
 * [macOS X Catalina 10.15](#macos-x-catalina-1015)
 * [macOS X Catalina 10.14](#macos-x-catalina-1014)
@@ -116,22 +116,22 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 If your self-hosted agent isn't preconfigured with the required software to use Azure DevOps CLI, or if you want to ensure you have the latest versions, you can install the required software using the following steps.
 
-* [Manually install Azure CLI nd Azure DevOps CLI extension](#manually-install-azure-cli-nd-azure-devops-cli-extension)
+* [Manually install Azure CLI and Azure DevOps CLI extension](#manually-install-azure-cli-and-azure-devops-cli-extension)
 * [Install Azure CLI and Azure DevOps CLI extension in your pipeline](#install-azure-cli-and-azure-devops-cli-extension-in-your-pipeline)
 
-### Manually install Azure CLI nd Azure DevOps CLI extension
+### Manually install Azure CLI and Azure DevOps CLI extension
 
 Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent when you provision the virtual machine image for the agent is much faster than installing them each time the pipeline is run. 
 
-* To install Azure CLI, see [Install the Azure CLI](/cli/azure/install-azure-cli). There are separate instructions for [Windows](/cli/azure/install-azure-cli-windows), [Linux](/cli/azure/install-azure-cli-linux), and [macOS](/cli/azure/install-azure-cli-macos).
+* To install Azure CLI on your self-hosted agent image, see [Install the Azure CLI](/cli/azure/install-azure-cli). There are separate instructions for [Windows](/cli/azure/install-azure-cli-windows), [Linux](/cli/azure/install-azure-cli-linux), and [macOS](/cli/azure/install-azure-cli-macos).
 * After installing Azure CLI, install [Azure DevOps CLI extension](index.md).
 
 ### Install Azure CLI and Azure DevOps CLI extension in your pipeline
 
-The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent has the following prerequisites.
+The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent using a pipeline has the following prerequisites.
 
 * Install Azure CLI using Python
-  * Python is installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task). The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+  * Python must be installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task) The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
   ```yml
   # Specify python version if you have side-by-side versions
   - task: UsePythonVersion@0
