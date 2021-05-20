@@ -156,6 +156,7 @@ strategy:
 pool:
   vmImage: $(imageName)
 
+steps:
 - bash: az --version
   displayName: 'Show Azure CLI version'
 
