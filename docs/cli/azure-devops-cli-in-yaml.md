@@ -27,7 +27,7 @@ The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI a
 >
 > To check the included software and their versions for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
-The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other Windows of Linux hosted images.
+The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other Windows or Linux hosted images.
 
 This example logs into Azure DevOps CLI using the [System.AccessToken](../pipelines/build/variables.md#systemaccesstoken) security token used by the running pipeline.
 
@@ -81,7 +81,7 @@ The minimum Azure CLI version that supports the Azure DevOps CLI extension is 2.
   displayName: 'Install Azure DevOps extension'
 ```
 
-To upgrade the Azure CLI version to the latest version, run the following commands in your pipeline.
+To upgrade the Azure CLI version to the latest version before installing the Azure DevOps CLI extension, run the following commands in your pipeline.
 
 ```yml
 # Specify python version
@@ -90,7 +90,7 @@ To upgrade the Azure CLI version to the latest version, run the following comman
     versionSpec: '3.x'
     architecture: 'x64'
 
-# Update to latest Azure CLI version, min version required for Azure DevOps is 2.0.49
+# Update to latest Azure CLI version
 - bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
   displayName: 'Upgrade Azure CLI'
 
@@ -102,7 +102,7 @@ To upgrade the Azure CLI version to the latest version, run the following comman
 # ...
 ```
 
-## Install and update CLI on self-hosted agents
+## Azure DevOps CLI with self-hosted agents
 
 If your self-hosted agent isn't preconfigured with the required software to use Azure DevOps CLI, or if you want to ensure you have the latest versions, you can install the required software using the following steps.
 
