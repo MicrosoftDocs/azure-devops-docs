@@ -152,11 +152,6 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 - [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
-<a name="export"></a>
-
-### Export tree structures  
-
-You can't export the structure of tree paths for one project to use with another  project.  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 

@@ -18,9 +18,9 @@ ms.date: 05/20/2021
 Iteration paths, also referred to as *sprints*, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
+ 
 
-For additional information on iteration paths, see [About area and iteration paths](about-areas-iterations.md).
-
+For information about naming restrictions and limits placed on addition of Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 ## Prerequisites
 
@@ -31,7 +31,6 @@ For additional information on iteration paths, see [About area and iteration pat
 - To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
-For more information about naming restrictions on iteration paths, see [About areas and iterations, naming restrictions](about-areas-iterations.md#name-restrictions).
 
 ## Get started
 
@@ -709,7 +708,17 @@ ID     Identifier                            Name      Start Date            Fin
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
+<a name="export"></a>
 
+### Export/import iteration paths  
+
+You can't export or import the structure of tree paths for one project to use with another project. 
+
+::: moniker range=">= azure-devops-2020"
+
+However, using the `az boards iteration` commands you can list the iterations defined for one project and then add them to another project. Once they are added, you can then use the `az boards iteration team` commands to add them to a team and set the default and backlog iteration path for the team. Using the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) and [Teams (REST API)](/rest/api/azure/devops/core/teams), you can perform similar actions.
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
@@ -754,7 +763,7 @@ Area paths and iteration paths are also referred to as *Classification Nodes*.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
