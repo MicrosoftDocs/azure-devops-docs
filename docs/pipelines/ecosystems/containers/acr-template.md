@@ -17,13 +17,13 @@ In this step-by-step tutorial, you'll learn how to set up a continuous integrati
 
 * A GitHub account. [Create a free GitHub account](https://github.com), if you don't already have one.
 
-* An Azure DevOps organization. [Create a new organization](../../../organizations/accounts/create-organization.md), if you don't already have one.
+* An Azure DevOps organization and a project. [Create a new organization](../../../organizations/accounts/create-organization.md) and/or a [new project](../../..//organizations/projects/create-project.md), if you don't already have one.
 
 * An Azure account. Sign up for a [free Azure account](https://azure.microsoft.com/free/), if you don't already have one.
 
 ## Get the code
 
-Fork the following repository containing a sample application and a Dockerfile:
+Fork or clone the *pipeline-javascript-docker* sample application:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
@@ -31,34 +31,40 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
 ## Create a container registry
 
-[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
+1. Sign in to [Azure](https://portal.azure.com/), and then select the **Azure Cloud Shell** button in the upper-right corner.
 
-```azurecli-interactive
-# Create a resource group
-az group create --name myapp-rg --location eastus
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Azure Cloud Shell button":::
 
-# Create a container registry
-az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
-```
+1. Run the following commands to create a resource group and an Azure Container Registry using the Azure CLI
 
-You can also use the web UI to create your Azure Container Registry. See the [Create an Azure container registry using the Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) quickstart for a walkthrough.
+    ```azurecli-interactive
+    # Create a resource group
+    az group create --name myapp-rg --location eastus
+    
+    # Create a container registry
+    az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
+    ```
 
-> [!NOTE]
-> To deploy a Docker image from an Azure Container Registry, you must enable the admin user account. To learn how, see [Authenticate with an Azure container registry](https://docs.microsoft.com/azure/container-registry/container-registry-authentication#admin-account).
+You can also use the Azure Portal web UI to create your Azure Container Registry. See the [Create a container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
 
-## Sign in to Azure Pipelines
-
-[!INCLUDE [include](../includes/sign-in-azure-pipelines.md)]
-
-[!INCLUDE [include](../includes/create-project.md)]
+> [!IMPORTANT]
+> You must enable the admin user account in order for you to deploy a Docker image from an Azure Container Registry. See [Container registry authentication](https://docs.microsoft.com/azure/container-registry/container-registry-authentication#admin-account) for more details.
 
 ## Create the pipeline
 
-### Connect and select repository
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-[!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
+1. Select **Pipelines**, and then select **New Pipeline** to create a new pipeline.
 
-When the **Configure** tab appears, select **Docker - Build and push an image to Azure Container Registry**.
+    :::image type="content" source="../media/new-pipeline.png" alt-text="Create a new pipeline":::
+
+1. Select **GitHub YAML**, and then select **Authorize AzurePipelines** to provide the appropriate permissions to access your repository.
+
+1. You might be asked to sign in to GitHub. If so, enter your GitHub credentials, and then select your repository from the list of repositories.
+
+1. From the **Configure** tab, select the **Docker - Build and push an image to Azure Container Registry** task.
+
+    :::image type="content" source="../media/docker-task.png" alt-text="Build and push Docker images to Azure Container Registry":::
 
 1. If you are prompted, select the subscription in which you created your registry.
 
