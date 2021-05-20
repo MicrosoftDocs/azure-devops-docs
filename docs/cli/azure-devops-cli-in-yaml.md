@@ -106,9 +106,12 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 If your self-hosted agent isn't preconfigured with the required software to use Azure DevOps CLI, or if you want to ensure you have the latest versions, you can install the required software using the following steps.
 
+> [!IMPORTANT]
+> The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. The self-hosted agent must have Python installed as described in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task). If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+
 ```yml
 steps:
-# Specify python version and install if needed
+# Specify python version if you have side-by-side versions
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.x'
