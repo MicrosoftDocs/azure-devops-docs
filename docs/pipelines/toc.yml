@@ -123,6 +123,9 @@
         - name: Define variables
           href: process/variables.md
           displayName: secrets, expressions, queue time, expansion,system, environment variables, macro syntax, template syntax
+        - name: Use variables in variable group
+          href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
+          displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
         - name: Use predefined variables
           href: build/variables.md
           displayName: build variables, agent variables, pipeline variables, system variables
@@ -459,6 +462,9 @@
     - name: Add resources to a pipeline
       href: process/resources.md
       displayName: webhook, pipelines resource, repository resource, package resource, troubleshoot
+    - name: Add protection to a repository resource
+      href: process/repository-resource.md
+      displayName: protected resources, protection, checks
     - name: Add & use variable groups
       href: library/variable-groups.md
       displayName: Azure key vault, link secrets, expansion, expand variables
@@ -535,7 +541,7 @@
         - name: Approach to securing YAML pipelines
           href: security/approach.md
           displayName: template permissions, repositories
-        - name: Repository protection
+        - name: Secure repositories
           href: security/repos.md
           displayName: forks, branches, access token
         - name: Pipeline resources

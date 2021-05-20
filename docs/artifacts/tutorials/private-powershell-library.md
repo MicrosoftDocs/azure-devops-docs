@@ -235,7 +235,7 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 1. Open an elevated PowerShell prompt
 
-2. Set up authentication to access Azure artifact feeds. Replace the placeholders with your personal access token and email:
+2. Set up authentication to access Azure Artifacts feeds. Replace the placeholders with your personal access token and email:
 
     ```powershell
         $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
