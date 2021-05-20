@@ -81,7 +81,6 @@ The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure Dev
 
 * [macOS X Catalina 10.15](#macos-x-catalina-1015)
 * [macOS X Catalina 10.14](#macos-x-catalina-1014)
-* [Conditionally install the Azure DevOps CLI extension](#conditionally-install-the-azure-devops-cli-extension)
 
 ### macOS X Catalina 10.15
 
@@ -126,7 +125,7 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 # ...
 ```
 
-### Conditionally install the Azure DevOps CLI extension
+## Conditionally install the Azure DevOps CLI extension
 
 If you have a pipeline that runs on several VM images, some of which do not have the Azure DevOps CLI extension installed, you can perform that step conditionally, as shown in the following example.
 
