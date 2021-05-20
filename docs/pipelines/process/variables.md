@@ -25,11 +25,11 @@ Variables are different from [runtime parameters](runtime-parameters.md), which 
 
 ## User-defined variables
 
-When you define a variable, you can use [different syntaxes (macro, template expression, or runtime)](#understand-variable-syntax) and what syntax you use will determine where in the pipeline your variable will render. There are [naming restrictions for variables](#variable-naming-restrictions) (example: you can't use `secret` at the start of a variable name).
+When you define a variable, you can use [different syntaxes (macro, template expression, or runtime)](#understand-variable-syntax) and what syntax you use will determine where in the pipeline your variable will render.
 
 In YAML pipelines, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML pipeline in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAML pipelines and need to be passed to your YAML file with `env:` or a variable at the root level. 
 
-User-defined variables can be [set as read-only](../security/inputs.md). 
+User-defined variables can be [set as read-only](../security/inputs.md). There are [naming restrictions for variables](#variable-naming-restrictions) (example: you can't use `secret` at the start of a variable name).
 
 You can [use a variable group](../library/variable-groups.md) to make variables available across multiple pipelines.  
 
