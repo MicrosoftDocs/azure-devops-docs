@@ -148,7 +148,7 @@ The following example of configuring Azure CLI and Azure DevOps CLI extension on
     displayName: 'Upgrade Azure CLI'
   ```
 
-* Install Azure CLI DevOps 
+* Install Azure CLI DevOps extension
   * Azure CLI version [2.10.1](index.md) or higher is installed. 
   * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash?view=azure-devops).
   ```yml
