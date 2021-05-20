@@ -1,25 +1,25 @@
 ---
-title: Build and push to Azure Container Registry
-description: Build and push images to Azure Container Registry
+title: Build and push Docker images to Azure Container Registry
+description: Build and push Docker images with Azure Pipelines
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/28/2019
+ms.date: 05/20/2021
 monikerRange: 'azure-devops'
 ---
 
-# Build and push to Azure Container Registry
+# Build and push Docker images to Azure Container Registry
 
-[!INCLUDE [include](../../includes/version-team-services.md)]
-
-In this step-by-step guide, you'll learn how to create a pipeline that continuously builds a repository that contains a Dockerfile. Every time you change your code, the images are automatically pushed to Azure Container Registry.
+In this step-by-step tutorial, you'll learn how to set up a continuous integration pipeline to build a containerized application. New pull requests trigger the pipeline to build and publish Docker images to Azure Container Registry.
 
 ## Prerequisites
 
-[!INCLUDE [include](../../includes/prerequisites.md)]
+* A GitHub account. [Create a free GitHub account](https://github.com), if you don't already have one.
 
-[!INCLUDE [include](../../includes/azure-prerequisites.md)]
+* An Azure DevOps organization. [Create a new organization](../../../organizations/accounts/create-organization.md), if you don't already have one.
+
+* An Azure account. Sign up for a [free Azure account](https://azure.microsoft.com/free/), if you don't already have one.
 
 ## Get the code
 
