@@ -138,14 +138,9 @@ Iterations don't enforce any rules. For example, you can assign a task to an ite
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and make sure you conform to the following restrictions when you're adding child nodes.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Restriction type                 | Restriction       |  
-> | ------------------------- | ---------------------- |  
-> | Node length | Must not contain more than 255 characters | 
-> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](/windows/win32/fileio/naming-a-file). |
-> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](/windows/win32/fileio/naming-a-file) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
-> | Path length | Must contain fewer than 4,000 Unicode characters | 
-> | Path hierarchy depth | Must be fewer than 14 levels deep | 
+
+[!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
+
 
 ## Related articles 
 
