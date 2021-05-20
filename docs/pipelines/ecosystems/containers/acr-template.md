@@ -66,25 +66,25 @@ You can also use the Azure Portal web UI to create your Azure Container Registry
 
     :::image type="content" source="../media/docker-task.png" alt-text="Build and push Docker images to Azure Container Registry":::
 
-1. If you are prompted, select the subscription in which you created your registry.
+1. Select your **Azure Subscription**, and then select your **Container registry** from the dropdown menu. 
 
-2. Select the container registry that you created above.
-
-3. Select **Validate and configure**.
+1. Provide an **Image Name** to your container image, and then select **Validate and configure**.
 
    As Azure Pipelines creates your pipeline, it:
 
-   * Creates a _Docker registry service connection_ to enable your pipeline to push images into your container registry.
+   * Creates a _Docker registry service connection_ to enable your pipeline to push images to your container registry.
 
    * Generates an *azure-pipelines.yml* file, which defines your pipeline.
   
-4. When your new pipeline appears, take a look at the YAML to see what it does (for more information, see [How we build your pipeline](#how) below). When you're ready, select **Save and run**.
+1. Review your pipeline YAML and select **Save and run** when you are ready.
 
-5. The commit that will create your new pipeline appears. Select **Save and run**.
+    :::image type="content" source="../media/review-your-pipeline.png" alt-text="Review your pipeline, save & run":::
 
-6. If you want, change the **Commit message** to something like _Add pipeline to our repository_. When you're ready, select **Save and run** to commit the new pipeline into your repository, and then begin the first run of your new pipeline!
+1. Add a **Commit message**, and then select **Save and run** to commit your changes and run your pipeline.
 
-As your pipeline runs, select the build job to watch your pipeline in action.
+1. As your pipeline runs, select the build job to watch your pipeline in action.
+
+    :::image type="content" source="../media/jobs-build.png" alt-text="Monitor builds":::
 
 <a name="how"></a>
 ## How we build your pipeline
