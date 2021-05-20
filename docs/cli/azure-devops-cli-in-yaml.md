@@ -73,7 +73,7 @@ To install the Azure DevOps CLI extension, run the following command in your pip
 
 ### macOS X Catalina 10.14
 
-The minimum Azure CLI version that supports the Azure DevOps CLI extension is 2.0.49, and the macOS X Catalina 10.14 hosted agent has Azure CLI 2.22.1 installed. To install the Azure DevOps CLI extension using that version of Azure CLI, run the following command in your pipeline before calling `az devops login`.
+The minimum Azure CLI version that supports the Azure DevOps CLI extension is [2.10.1](index.md), and the macOS X Catalina 10.14 hosted agent has Azure CLI 2.22.1 installed. To install the Azure DevOps CLI extension using that version of Azure CLI, run the following command in your pipeline before calling `az devops login`.
 
 ```yml
 # Install Azure DevOps extension
@@ -106,18 +106,48 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 If your self-hosted agent isn't preconfigured with the required software to use Azure DevOps CLI, or if you want to ensure you have the latest versions, you can install the required software using the following steps.
 
-> [!NOTE]
-> It is recommended to preinstall the Azure CLI and Azure DevOps CLI extension on your self host agent when you provision the virtual machine image for the agent.
+### Manually install Azure CLI nd Azure DevOps CLI extension
+
+Installing Azure CLI and Azure DevOps CLI extension on your self-hosted agent when you provision the virtual machine image for the agent is much faster than installing them each time the pipeline is run. 
+
+* To install Azure CLI, see [Install the Azure CLI](/cli/azure/install-azure-cli). There are separate instructions for [Windows](/cli/azure/install-azure-cli-windows), [Linux](/cli/azure/install-azure-cli-linux), and [macOS](/cli/azure/install-azure-cli-macos).
+* After installing Azure CLI, install [Azure DevOps CLI extension](index.md).
+
+### Install Azure CLI and Azure DevOps CLI extension i your pipeline
 
 The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent has the following prerequisites.
 
-* Installing Azure CLI using Python
+* Instal Azure CLI using Python
   * Python is installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task). The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
-  * If Azure CLI is installed on the agent you can skip the first three steps in the following example pipeline.
-* Installing Azure CLI DevOps 
-  * Azure CLI version 2.0.49 or hgher is installed. 
-  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash?view=azure-devops).
+  ```yml
+  # Specify python version if you have side-by-side versions
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+      architecture: 'x64'
+  
+  # Update pip to latest
+  - bash: python -m pip install --upgrade pip
+    displayName: 'Upgrade pip'
+  
+  # Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
+  - bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
+    displayName: 'Upgrade Azure CLI'
+  ```
 
+* Instal Azure CLI DevOps 
+  * Azure CLI version [2.10.1](index.md) or higher is installed. 
+  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash?view=azure-devops).
+  ```yml
+  # Install Azure DevOps extension
+  - bash: az extension add -n azure-devops
+    displayName: 'Install Azure DevOps extension'
+  
+  # Now you can make calls into Azure DevOps CLI
+  # ...
+  ```
+
+The following example installs Azure CLI followed by the Azure DevOps CLI extension.
 
 ```yml
 steps:
@@ -131,7 +161,7 @@ steps:
 - bash: python -m pip install --upgrade pip
   displayName: 'Upgrade pip'
 
-# Update to latest Azure CLI version, min version required for Azure DevOps is 2.0.49
+# Update to latest Azure CLI version, min version required for Azure DevOps is 2.10.1
 - bash: pip install --pre azure-cli --extra-index-url https://azurecliprod.blob.core.windows.net/edge
   displayName: 'Upgrade Azure CLI'
 
