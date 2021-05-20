@@ -15,22 +15,25 @@ ms.date: 05/20/2021
 
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
-Iteration paths, also referred to as *sprints*, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
+Iteration Paths, also referred to as *sprints*, support assignment of work items to time-box intervals. You define iteration paths at the project level, and then each team selects the paths that they want to use. Iteration paths are a shared resource used by all teams that select them. You can create a flat set of iteration paths or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
 [!INCLUDE [temp](../../boards/includes/list-sprint-dependent-tools.md)] 
- 
+
 
 For information about naming restrictions and limits placed on addition of Iteration Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
-## Prerequisites
+> [!TIP]
+> If all you need to do is change the iteration dates, you can do that quickly as shown in [Change sprint dates](../../boards/sprints/define-sprints.md). However, if you need to define the iteration paths and tree structure, then follow the guidance provided in this article. 
 
 <a name="permissions"></a>
 
-- To add an iteration path to a project, you must be a member of the **Project Administrators** group. If you don't have a project yet, [create one now](../projects/create-project.md).
-- To add an iteration path under the root node or to edit or delete any child node, you must be a member of the **Project Administrators** group. For more information about acquiring these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).  
-- To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. By default, the user who created the project has these permissions set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
+## Prerequisites
+
+- To add an iteration path to a project, you must be a member of the **Project Administrators** group. If you don't have a project yet, [create one now](../projects/create-project.md). By default, the user who created the project has these permissions set.  
+- To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**. 
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
+For more information about acquiring permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) or [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 
 ## Get started
 
@@ -56,7 +59,7 @@ As needed, you can do the following tasks at any time:
 
 <a id="default_path">  </a>
 
-##3 Team backlog iteration versus default iteration 
+### Team backlog iteration versus default iteration 
 
 Each team has access to many Agile tools, as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
