@@ -127,7 +127,7 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 ## Conditionally install the Azure DevOps CLI extension
 
-If you have a pipeline that runs on several VM images, some of which do not have the Azure DevOps CLI extension installed, you can perform that step conditionally, as shown in the following example.
+If you have a pipeline that runs on several Microsoft-hosted VM images, some of which do not have the Azure DevOps CLI extension installed, you can perform that step conditionally, as shown in the following example.
 
 ```yml
 trigger:
