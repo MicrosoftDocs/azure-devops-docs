@@ -106,8 +106,18 @@ To upgrade the Azure CLI version to the latest version before installing the Azu
 
 If your self-hosted agent isn't preconfigured with the required software to use Azure DevOps CLI, or if you want to ensure you have the latest versions, you can install the required software using the following steps.
 
-> [!IMPORTANT]
-> The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. The self-hosted agent must have Python installed as described in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task). If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+> [!NOTE]
+> It is recommended to preinstall the Azure CLI and Azure DevOps CLI extension on your self host agent when you provision the virtual machine image for the agent.
+
+The following example of configuring Azure CLI and Azure DevOps CLI extension on a self-hosted agent has the following prerequisites.
+
+* Installing Azure CLI using Python
+  * Python is installed on the agent according to the instructions in [Python version task - How can I configure a self-hosted agent to use this task?](../pipelines/tasks/tool/use-python-version.md#how-can-i-configure-a-self-hosted-agent-to-use-this-task). The `UsePythonVersion@0` task does not install Python onto your self-hosted agent. If you only have one version of Python installed on your self-hosted agent and it is in the path, you don't need to use the `UsePythonVersion@0` task.
+  * If Azure CLI is installed on the agent you can skip the first three steps in the following example pipeline.
+* Installing Azure CLI DevOps 
+  * Azure CLI version 2.0.49 or hgher is installed. 
+  * There is a version of `bash` installed on the agent and in the path. A bash installation is required to use the [bash task](../pipelines/tasks/utility/bash?view=azure-devops).
+
 
 ```yml
 steps:
