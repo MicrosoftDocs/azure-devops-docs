@@ -26,7 +26,7 @@ This task can be used with a Docker registry or an Azure Container Registry.
 |--- |--- |
 |`containerregistrytype` <br/>(Container registry type)|(Optional) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection. <br/>Argument aliases: `azureSubscription`|
-|`azureContainerRegistry` <br/>(Azure container registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
+|`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
 
 This YAML example specifies the inputs for Azure Container Registry:
 
