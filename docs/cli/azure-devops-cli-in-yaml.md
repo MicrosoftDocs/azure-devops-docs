@@ -20,7 +20,12 @@ If you prefer to use YAML to provide your release pipeline configuration, you ca
 
 ## Azure DevOps CLI with Windows and Linux hosted agents
 
-The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. You can view the included software for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension by following the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
+The Microsoft-hosted Windows and Linux agents are preconfigured with Azure CLI and the Azure DevOps CLI extension. 
+
+> [!IMPORTANT]
+> Microsoft-hosted agents [typically deploy weekly updates](https://github.com/actions/virtual-environments#updates-to-virtual-environments) to the software on the virtual environments. For some tools, the latest version at the time of the deployment is used; for others, the tool is pinned to specific version(s).
+>
+> To check the included software and their versions for Microsoft-hosted agents, including the versions of Azure CLI and Azure DevOps CLI extension, follow the **Included Software** links in the [Software](../pipelines/agents/hosted.md#software) table.
 
 The following example shows how to log in to Azure CLI and run a few commands. This example uses the `ubuntu-latest` Microsoft-hosted agent image, but you can replace it with any of the other Windows of Linux hosted images.
 
