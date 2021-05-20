@@ -57,6 +57,16 @@ steps:
 
 ```
 
+If you are using a Windows agent, and want to replace [bash](../pipelines/tasks/utility/bash?view=azure-devops) with [script](../pipelines/yaml-schema.md#script), which uses bash for Linux and macOS and cmd.exe for Windows, use the following example to log in to Azure DevOps.
+
+```yml
+# %AZURE_DEVOPS_CLI_PAT% on Windows when using script
+- script: echo %AZURE_DEVOPS_CLI_PAT% | az devops login
+  env:
+    AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
+  displayName: 'Login Azure DevOps Extension'
+```
+
 ## Azure DevOps CLI with macOS hosted agents
 
 The macOS Microsoft-hosted agents have Azure CLI installed but not the Azure DevOps CLI extension. 
