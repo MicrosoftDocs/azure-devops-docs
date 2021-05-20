@@ -123,6 +123,9 @@
         - name: Define variables
           href: process/variables.md
           displayName: secrets, expressions, queue time, expansion,system, environment variables, macro syntax, template syntax
+        - name: Use variables in variable group
+          href: scripts/cli/pipeline-variable-group-secret-nonsecret-variables.md
+          displayName: create pipeline, manage pipeline, monitor pipeline, secret variable
         - name: Use predefined variables
           href: build/variables.md
           displayName: build variables, agent variables, pipeline variables, system variables
