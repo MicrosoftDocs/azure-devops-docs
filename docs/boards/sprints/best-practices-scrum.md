@@ -30,7 +30,7 @@ Also, setting a sprint goal as part of your planning efforts can help the team s
 After you've planned your sprint, you may want to [share the plan](share-plan.md) with key stakeholders. 
 
 You can learn more from these resources: 
-*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+*	[What is Scrum?](/devops/plan/what-is-scrum)
 *	[Sprint planning](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
 *	[The Scrum Guide](https://www.scrumguides.org/scrum-guide.html)
 *	[Build and manage the product backlog](/previous-versions/visualstudio/visual-studio-2013/hh765982(v=vs.120)) white paper
@@ -190,5 +190,5 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-*	[What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+*	[What is Scrum?](/devops/plan/what-is-scrum)
 *	[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

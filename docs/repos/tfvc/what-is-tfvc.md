@@ -120,5 +120,5 @@ We are not currently republishing the following sections. However, you can read 
 
 ## Related articles 
 
-- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
+- [What is version control?](/devops/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/devops/git/migrate-from-tfvc-to-git)

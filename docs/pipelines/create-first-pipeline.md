@@ -1209,9 +1209,9 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[What is Continuous Integration?](/azure/devops/learn/what-is-continuous-integration)
+[What is Continuous Integration?](/devops/develop/what-is-continuous-integration)
 
-[What is Continuous Delivery?](/azure/devops/learn/what-is-continuous-delivery)
+[What is Continuous Delivery?](/devops/deliver/what-is-continuous-deliverywhat-is-continuous-delivery)
 
 [What is DevOps?](https://azure.microsoft.com/overview/what-is-devops/)
 
