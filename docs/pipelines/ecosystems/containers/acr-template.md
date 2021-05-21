@@ -45,10 +45,10 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
     az acr create --resource-group myapp-rg --name myContainerRegistry --sku Basic
     ```
 
-You can also use the Azure Portal web UI to create your Azure Container Registry. See the [Create a container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
+You can also use the Azure portal web UI to create your Azure Container Registry. See the [Create a container registry](/azure/container-registry/container-registry-get-started-portal#create-a-container-registry) for details.
 
 > [!IMPORTANT]
-> You must enable the admin user account in order for you to deploy a Docker image from an Azure Container Registry. See [Container registry authentication](https://docs.microsoft.com/azure/container-registry/container-registry-authentication#admin-account) for more details.
+> You must enable the admin user account in order for you to deploy a Docker image from an Azure Container Registry. See [Container registry authentication](/azure/container-registry/container-registry-authentication#admin-account) for more details.
 
 ## Create the pipeline
 
@@ -58,7 +58,7 @@ You can also use the Azure Portal web UI to create your Azure Container Registry
 
     :::image type="content" source="../media/new-pipeline.png" alt-text="Create a new pipeline":::
 
-1. Select **GitHub YAML**, and then select **Authorize AzurePipelines** to provide the appropriate permissions to access your repository.
+1. Select **GitHub YAML**, and then select **Authorize Azure Pipelines** to provide the appropriate permissions to access your repository.
 
 1. You might be asked to sign in to GitHub. If so, enter your GitHub credentials, and then select your repository from the list of repositories.
 
