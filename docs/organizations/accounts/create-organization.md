@@ -24,7 +24,7 @@ Learn how to create an organization. An organization is used to connect groups o
 
 ::: moniker range="= azure-devops"
 
-> ![NOTE]
+> [!NOTE]
 > All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via REST API.
 
 <a name="how-sign-up"></a>
