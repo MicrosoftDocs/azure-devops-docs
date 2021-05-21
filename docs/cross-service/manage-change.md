@@ -220,7 +220,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Agile and Agile culture
 
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [What is Agile?](/devops/plan/what-is-agile)
 - [Agile culture](../boards/plans/agile-culture.md) 
 - [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 
