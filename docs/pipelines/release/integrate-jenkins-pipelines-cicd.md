@@ -150,7 +150,7 @@ To enable continuous deployment for an Azure hosted or directly visible Jenkins 
 1. Choose **Add** and select the branch you want to create the trigger for. Or select the default branch.  
 
 However, if you have an **on-premises** Jenkins server, or your Azure DevOps organization **does not** have direct visibility
-to your Jenkins Server, you can trigger a release for an Azure pipeline from a Jenkins project using the following steps:
+to your Jenkins Server, you can trigger a release for an Azure Pipeline from a Jenkins project using the following steps:
 
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) in your Azure DevOps or TFS organization. Jenkins requires this information to access your organization.
    Ensure you keep a copy of the token information for upcoming steps in this section.
