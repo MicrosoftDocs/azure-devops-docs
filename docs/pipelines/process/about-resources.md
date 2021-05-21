@@ -41,7 +41,7 @@ resources:
     source: SmartHotel-CI # name of the pipeline that produces an artifact
 ```
 
-## Use pipelines for enhanced security
+## Use resources to enhance security
 
 You can enhance your pipeline's security with resources by identifying how that resource gets consumed, how to prevent bad code from running, and how to prevent an unauthorized access. 
 
