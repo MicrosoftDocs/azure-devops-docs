@@ -174,7 +174,7 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 ::: moniker range=">= azure-devops-2020" 
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
@@ -207,7 +207,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 ::: moniker range=">= tfs-2015 < azure-devops-2020" 
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 

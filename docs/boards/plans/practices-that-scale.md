@@ -119,7 +119,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scaling Agile to large teams](/devops/plan/scaling-agile)
 
 ### Industry resources
 - [Agile manifesto](https://agilemanifesto.org)
