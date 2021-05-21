@@ -23,6 +23,7 @@ The contents of the secure files are encrypted and can only be used during the b
 
 There's a size limit of 10 MB for each secure file.
 
+Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. 
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
