@@ -32,7 +32,7 @@ With an organization, you gain access to the platform in which you can do the fo
 
 Before you get started, read [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
-> ![NOTE]
+> [!NOTE]
 > All organizations must be manually created via the web portal. We don't support automated creation of organizations. We do support automated organization configuration, project creation, and resource provisioning via REST API.
 
 Choose Git or Team Foundation Version Control (TFVC) as your version control.
