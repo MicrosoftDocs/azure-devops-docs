@@ -87,11 +87,10 @@ You can also use the Azure Portal web UI to create your Azure Container Registry
     :::image type="content" source="../media/jobs-build.png" alt-text="Monitor builds":::
 
 <a name="how"></a>
+
 ## How we build your pipeline
 
-When you finished selecting options and then proceeded to validate and configure the pipeline (see above) Azure Pipelines created a pipeline for you, using the _Docker container template_.
-
-The build stage uses the _Docker task_ to build and push the image to the container registry.
+The pipeline that we just created in the previous section was generated from the _Docker container template_ YAML. The build stage uses the Docker task `Docker@2` to build and push your Docker image to the container registry.
 
 ```YAML
 - stage: Build
@@ -113,18 +112,16 @@ The build stage uses the _Docker task_ to build and push the image to the contai
           $(tag)
 ```
 
-[!INCLUDE [include](../includes/clean-up-resources.md)]
+## Clean up resources
 
-## Learn more
+If you are not going to continue to use this application, you can delete the resources you created in this tutorial to avoid incurring ongoing charges. Run the following to delete your resource group. 
 
-We invite you to learn more about:
-* The services:
-  - [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
-* The template used to create your pipeline: [docker-container](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/docker-container.yml)
-* The method your pipeline uses to connect to the service: [Docker registry service connections](../../library/service-endpoints.md#sep-docreg)
-* Some of the tasks used in your pipeline, and how you can customize them:
-   * [Docker task](../../tasks/build/docker.md)
-   * [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md)
-* Some of the key concepts for this kind of pipeline:
-   * [Jobs](../../process/phases.md)
-   * [Docker registry service connections](../../library/service-endpoints.md#sep-docreg) (the method your pipeline uses to connect to the service)
+```azurecli-interactive
+az group delete --name myapp-rg
+```
+
+## Related articles
+
+- [Deploy containerized ASP.NET Core apps](../../apps/cd/azure/aspnet-core-to-acr.md)
+- [Deploy to Azure Web App for Containers (Classic)](../../apps/cd/deploy-docker-webapp.md)
+- [Docker Content Trust](/content-trust.md)
