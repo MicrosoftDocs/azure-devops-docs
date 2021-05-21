@@ -115,7 +115,7 @@ Now that you're using feature isolation, you should explore continuous integrati
 ## Reference information
 * [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
 * [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
-* [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
+* [Continuous Integration](/devops/develop/what-is-continuous-integration)
 * [Feature Toggles](/archive/msdn-magazine/2014/may/alm-rangers-software-development-with-feature-toggles)
 * [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
 

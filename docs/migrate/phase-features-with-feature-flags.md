@@ -142,7 +142,7 @@ Now that you've covered the concepts and considerations of feature flags, you sh
 
 ### How does the Azure DevOps team use feature flags?
 
-Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/azure/devops/learn/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
+Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/devops/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
 
 ### How do the ALM | DevOps Rangers use feature flags?
 
@@ -159,7 +159,7 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 ## Reference information
 
 * [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
-* [DevOps @ Microsoft](/azure/devops/learn/)
+* [DevOps @ Microsoft](/devops/)
 * [How to implement feature flags and A|B testing](/archive/blogs/visualstudioalmrangers/how-to-implement-feature-flags-and-ab-testing)
 
 > Authors: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)

@@ -33,7 +33,7 @@ If you're a project administrator just getting started, review the [Configure se
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
+If you're new to Agile, see [What is Agile?](/devops/plan/what-is-agile) for an overview.
 
 #### In a nutshell you use Backlogs to: 
 
@@ -314,9 +314,9 @@ If you're just getting started, see [Start using Azure Boards](../get-started/in
 - [Web portal navigation](../../project/navigation/index.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md)  
 - [About work items](../work-items/about-work-items.md)  
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
-- [Agile culture](/azure/devops/learn/agile/agile-culture) 
+- [What is Agile?](/devops/plan/what-is-agile)   
+- [What is Agile development?](/devops/plan/what-is-agile-development)  
+- [Agile culture](/devops/plan/adopting-agile) 
 
 
  

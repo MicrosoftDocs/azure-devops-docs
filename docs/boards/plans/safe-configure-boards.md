@@ -32,7 +32,7 @@ Once you've performed these core configurations, you can then consider customizi
 > [!TIP]   
 > If you plan to add custom work item types, portfolio backlogs, or workflows; you may want to make those customizations first and then define and configure your teams. 
  
-If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. Also, two excellent articles to review around team structure and Agile culture are [Agile principles in practice](/azure/devops/learn/devops-at-microsoft/agile-principles-in-practice) and [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams). 
+If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. Also, two excellent articles to review around team structure and Agile culture are [Introduction to planning efficient workloads with DevOps](/devops/plan/planning-efficient-workloads-with-devops) and [Building productive, customer focused teams](/devops/plan/building-productive-teams). 
 
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
