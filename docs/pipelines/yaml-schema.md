@@ -1102,7 +1102,7 @@ resources:
 
 ### Pipeline resource
 
-If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
+If you have an Azure Pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
 You can also enable [pipeline-completion triggers](process/pipeline-triggers.md).
 
 # [Schema](#tab/schema)
@@ -2094,7 +2094,7 @@ Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publis
 ## Download
 
 The `download` keyword is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md).
-The task downloads artifacts associated with the current run or from another Azure pipeline that is associated as a pipeline resource.
+The task downloads artifacts associated with the current run or from another Azure Pipeline that is associated as a pipeline resource.
 
 # [Schema](#tab/schema)
 
