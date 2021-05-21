@@ -18,7 +18,7 @@ Branches are lightweight references that keep a history of commits and provide a
 
 Switching between branches is quick and easy. Git doesn't create multiple copies of your source code when you're working with branches - it uses the history information stored in commits to re-create the files in a branch when you start working on it.
 
-Learn more: [branches](../git/create-branch.md), [branch organization](../git/git-branching-guidance.md), and [how we use branches at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft#git-branch-structure-and-policies).
+Learn more: [branches](../git/create-branch.md), [branch organization](../git/git-branching-guidance.md), and [how we use branches at Microsoft](/devops/develop/how-microsoft-develops-devops#git-branch-structure-and-policies).
 
 ## Branch policies
 
@@ -78,7 +78,7 @@ Git has a version of this workflow that uses terminology and commands such as re
 
 Use this workflow if you're new to Git. As your team gets more experienced and confident with Git, extend it to suit your team's needs.
 
-Learn more: [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+Learn more: [how we use Git at Microsoft](/devops/develop/how-microsoft-develops-devops).
 
 [!INCLUDE [glossary-terms-notifications](../../includes/glossary-terms/notifications.md)]
 
