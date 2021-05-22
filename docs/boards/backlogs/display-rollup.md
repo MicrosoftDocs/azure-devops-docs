@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 03/24/2021
+ms.date: 05/21/2021
 ---
 
 # Display rollup progress or totals
@@ -21,7 +21,7 @@ Rollup columns allow you to view progress bars or totals of numeric fields or de
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand-child work items. Descendant items for Features includes all child User Stories and their child work items.
 
 > [!IMPORTANT]   
-> Rollup data supports progress bars, counts of work items, or sums of numeric fields within a project. Child items that link to a different project aren't counted within the parent rollup calculations.
+> Rollup data supports progress bars, counts of work items, or sums of numeric fields within a project. Child items that link to a different project aren't counted within the parent rollup calculations. Also, links to test cases or test artifacts are also not included in rollup calculation. These items are linked using a test-specific link types. 
 
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/rollup/progress-by-work-items.png)

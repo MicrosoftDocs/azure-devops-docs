@@ -18,6 +18,7 @@
     href: custom-rules.md
   - name: Add and manage fields
     href: customize-process-field.md
+    displayname: people picker, picklist, identity, rich text, help text, delete
   - name: Add and manage work item types
     href: customize-process-work-item-type.md
   - name: Customize backlogs & boards
