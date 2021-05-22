@@ -9,7 +9,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/11/2021
+  ms.date: 05/21/2021
 
 title: Query FAQs 
 
@@ -215,6 +215,11 @@ sections:
 
   - name: Linked work item queries 
     questions: 
+
+      - question: How do I query for a list of related work items?   
+        answer:  |
+          You can't query for work items that contain links solely based on the **Related** link type. You can query for work items that have links by specifying `Related Link Count > 0`, however, the results contain all work items containing links to other work items, including **Parent-Child**, **Predecesor-Successor**, and other link types. 
+
       - question: Can I query for work items linked across projects? 
         answer:  |
           **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
