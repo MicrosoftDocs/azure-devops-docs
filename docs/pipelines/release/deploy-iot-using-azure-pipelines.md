@@ -79,7 +79,7 @@ In the previous section, you created an IoT Edge solution using CSharpModule. No
 
 1. Upon successful build, you should see an image with the following format **registryname.azurecr.io/csharpmodule:0.0.1-amd64.**
 
-## Push the code to Azure Repo
+## Push the code to Azure Repos
 
 If your workspace isn't under Git source control, you can easily create a Git repository with the **Initialize Repository** command.
 
