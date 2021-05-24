@@ -1,4 +1,4 @@
-01222222222222222222222222222222222222222222---
+---
 title: Query fields, operators, and macros/variables 
 titleSuffix: Azure Boards
 description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards, Azure DevOps, & Team Foundation Server 
@@ -237,8 +237,7 @@ To learn about adding clauses and use of the And/Or operators, see [Define a que
 
 You can use the macros described in the following table to filter your queries based on specific fields. 
 
-> [!NOTE]
-> The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
 ---
 :::row:::
@@ -399,7 +398,6 @@ You can use the macros described in the following table to filter your queries b
 1. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
 <a id="full-text" /> 
 
