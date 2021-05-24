@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 15/24/2021
+ms.date: 05/24/2021
 ---
 
 # Rename or remove a team  
