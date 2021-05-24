@@ -48,7 +48,7 @@ When you switch from one workspace to another, to avoid confusing yourself, make
 
     ![Switching workspaces from Team Explorer Home page](media/create-work-workspaces/IC720119.png)
 
-3.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), choose the workspace the workspace you want to work in.
+3.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), choose the workspace you want to work in.
 
     ![Switching workspace in Source Control Explorer](media/create-work-workspaces/IC700907.png)
 
