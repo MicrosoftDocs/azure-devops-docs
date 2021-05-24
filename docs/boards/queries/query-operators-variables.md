@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 01/25/2021
+ms.date: 05/24/2021
 ---
 
 
@@ -236,117 +236,171 @@ You can use query operators in the following table to specify how each value in 
 You can use the macros described in the following table to filter your queries based on specific fields. 
 
 > [!NOTE]
-> The following macros are only supported from the web portal: <strong>@CurrentIteration</strong>, <strong>@Follows</strong>, <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong>, <strong>@TeamAreas</strong>. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
+> The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
 
-<table>
+---
+:::row:::
+   :::column span="1":::
+      **Macro** 
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---<table>
 <thead valign="bottom">
 <tr>
 <th width="28%"><p>Macro</p></th>
 <th width="72%"><p>Description</p></th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-    <td><b>[Any]</b></td>
-    <td>Use in conjunction with the <strong>Work Item Type</strong> field to search across all work item types. For example, <code>Work Item Type=[Any]</code> won&#39;t place any filters based on the work item type.
-</td>
-</tr>
-
-
-<tr>
-    <td><strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> <sup>1</sup></td>
-    <td>Use in conjunction with the <strong>Iteration Path</strong> field to automatically filter for work items assigned to the current sprint based on the <a href="../../project/navigation/go-to-project-repo.md" data-raw-source="[current team focus or context](../../project/navigation/go-to-project-repo.md)">current team focus or context</a>. For specific examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.
-    <p>This macro only works when run from the web portal. You can&#39;t use the macro when <a href="/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases" data-raw-source="[copying or cloning test suites and test cases](/previous-versions/azure/devops/docs/test/mtm/copying-and-cloning-test-suites-and-test-cases)">copying or cloning test suites and test cases</a>, <a href="/azure/devops/notifications/about-notifications" data-raw-source="[defining alerts](../../notifications/about-notifications.md)">defining alerts</a>, or with <a href="/rest/api/azure/devops/" data-raw-source="[REST APIs](/rest/api/azure/devops/)">REST APIs</a>.</p>
-</td>
-</tr>
-
-<tr>
-    <td><b><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- <i>n</i></b> <sup>2</sup></td>
-    <td>Use in conjunction with the <strong>Iteration Path</strong> field to filter the set of work items assigned to the current sprint +/- n sprints based on the <a href="../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&amp;bc=/azure/devops/boards/plans/breadcrumb/toc.json" data-raw-source="[current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&amp;bc=/azure/devops/boards/plans/breadcrumb/toc.json)">current team focus or context</a>. For specific examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.
-</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> <sup>3</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list all work items that you are following in the project. To learn more about the Follow feature, see <a href="../work-items/follow-work-items.md" data-raw-source="[Follow a work item or pull request](../work-items/follow-work-items.md)">Follow a work item or pull request</a>. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Following** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Following</strong> pivot view</a>. 
-</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></strong></td>
-    <td>Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=<xref href="Me" data-throw-if-not-resolved="False" data-raw-source="@Me"></xref></code>. For additional examples, see <a href="query-by-workflow-changes.md" data-raw-source="[Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md)">Query by assignment, workflow or Kanban board changes</a>.
-</td>
-</tr>
-
-<tr>
-    <td><b><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></b> <sup>4</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items that you have viewed or updated in the project within the last 30 days. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>My activity</strong> pivot view</a>.
-</td>
-</tr>
-
-
-<tr>
-    <td><strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> <sup>5</sup></td>
-    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in other projects. For example, you can find all the work items in a different project with the clause <code>Team Project=<xref href="OtherProject" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. To learn more, see <a href="using-queries.md#across-projects">Define a query, Query across projects</a>.
-</td>
-</tr>
-
-<tr>
-    <td><b><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></b> <sup>4</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md)">Work Items page, <strong>Mentioned</strong> pivot view</a>. 
-</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> <sup>6</sup></td>
-    <td>Use in conjunction with the <strong>ID</strong> field and <strong>In</strong> operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the <a href="../work-items/view-add-work-items.md" data-raw-source="[Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md)">Work Items page, <strong>Recently created</strong>, <strong>Recently updated</strong> and <strong>Recently completed</strong> pivot views</a>. 
-</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=<xref href="StartOfDay-7" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause <code>Created Date&gt;=<xref href="StartOfMonth-3" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth-3"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=<xref href="StartOfWeek-2" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek-2"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> <sup>8</sup> </td>
-    <td>Only use with the Area Path field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the <strong>=</strong> operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause <code>Area Path=<xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref> [Fabrikam Fiber]\Web</code>. For additional examples, see <a href="query-by-area-iteration-path.md" data-raw-source="[Query by area or iteration path](query-by-area-iteration-path.md)">Query by area or iteration path</a>.</td>
-</tr>
-
-<tr>
-    <td><strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong></td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=<xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
-</tr>
-
-
-
-</tbody> 
-</table>
+---
+:::row:::
+   :::column span="1":::
+      **[Any]** 
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **Work Item Type** or **State** fields to search across all work item types or across all states. For example, <code>Work Item Type=[Any]</code> won't place any filters based on the work item type.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@CurrentIteration**  
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
+      The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/docs/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@CurrentIteration +/- n**   
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- *n* sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/toc.json&amp;bc=/azure/devops/boards/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).  
+      The **@CurrentIteration +/- n** macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions, and only when run from the web portal.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@Follows**  
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md).  
+      The **@Follows** macro is supported for Azure Boards and TFS 2017 and later versions, and only when run from the web portal.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      @Me 
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with an identity or user account field to automatically search for items associated with your user or account name. For example, you can find work items that you opened with the clause <code>Created By=@Me</code>. For additional examples, see [Query by assignment, workflow or Kanban board changes](query-by-workflow-changes.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@MyRecentActivity** <sup>1</sup>  
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the the **ID** field and **In** operator to list work items that you have viewed or updated in the project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@Project** 
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **Team Project** field to filter for work items in other projects. For example, you can find all the work items in the currently selected project with the clause <code>Team Project=@Project</code>.  
+      The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Define a query, Query across projects](using-queries.md#across-projects). 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@RecentMentions** <sup>1</sup> 
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **ID** field and **In** operator to list work items where you have been mentioned in the Discussion section. You can view this same list from the [Work Items page, **Mentioned** pivot view](../work-items/view-add-work-items.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@RecentProjectActivity**  
+   :::column-end:::
+   :::column span="3":::
+      Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md).  
+      The **@RecentProjectActivity** macro is supported for Azure Boards (cloud service) only at this time.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@StartOfDay** <sup>2</sup> 
+   :::column-end:::
+   :::column span="3":::
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=@StartOfDay-7</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@StartOfMonth** <sup>2</sup> 
+   :::column-end:::
+   :::column span="3":::
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause <code>Created Date&gt;=@StartOfMonth-3</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@StartOfWeek** <sup>2</sup> 
+   :::column-end:::
+   :::column span="3":::
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=@StartOfWeek-2</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@StartOfYear** <sup>2</sup> 
+   :::column-end:::
+   :::column span="3":::
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=@StartOfYear</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@TeamAreas**  
+   :::column-end:::
+   :::column span="3":::
+      Only use with the **Area Path** field to filter for work items whose area path corresponds to one assigned to a specific team. Requires you use the **=** operator. For example, you can find all items assigned to the area paths assigned to the Web team with the clause <code>Area Path=@TeamAreas [Fabrikam Fiber]\Web</code>. For additional examples, see [Query by area or iteration path](query-by-area-iteration-path.md).  
+      The **@TeamAreas** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **@Today**
+   :::column-end:::
+   :::column span="3":::
+      Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the **@Today** macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=Today-7</code>. For additional examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 #### Notes:
-1. The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> macro is supported for Azure Boards and TFS 2015 and later versions. 
-1. The <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong> macro is supported for Azure Boards, Azure DevOps Server 2019 and later versions,  and only when run from the web portal. 
-1. The <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> macro is supported for Azure Boards and TFS 2017 and later versions.
-1. The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
-1. The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>. 
-1. The <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref> macro is supported for Azure Boards (cloud service) only at this time.
-1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
-1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+
+1. The **@MyRecentActivity**, **@RecentMentions**, and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+1. The **@StartOfDay**, **@StartOfWeek**, **@StartOfMonth**, and **@StartOfYear** macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
+
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
