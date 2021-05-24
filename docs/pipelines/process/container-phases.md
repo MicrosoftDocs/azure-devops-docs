@@ -233,8 +233,8 @@ bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
 You are responsible for adding a Node binary to your container.
-Node 6 is a safe choice.
-You can start from the `node:6-alpine` image.
+Node 14 is a safe choice.
+You can start from the `node:14-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
