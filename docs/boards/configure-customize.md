@@ -310,7 +310,7 @@ Area paths are used to group work items by product, feature, or business areas a
 
 ### Area paths and hierarchical grouping 
 
-The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
+The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early in this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
 
