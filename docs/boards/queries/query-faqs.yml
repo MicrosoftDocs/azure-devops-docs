@@ -176,6 +176,10 @@ sections:
         answer: |
           **Yes**. Simply open a query in a new browser tab to run several queries at the same time.  
 
+      - question: What query macros are only supported from the web portal?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
   - name: Navigate 
     questions: 
       - question: How do I quickly navigate to queries I view frequently? 
