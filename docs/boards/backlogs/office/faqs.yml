@@ -55,6 +55,10 @@ sections:
           > [!div class="mx-imgBorder"]  
           > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
+      - question: What query macros aren't supported in Excel?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
       - question: Can I import or update work items without using Excel?  
         answer: | 
           ::: moniker range=">= azure-devops-2020" 
