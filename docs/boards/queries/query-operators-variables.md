@@ -99,7 +99,9 @@ The value you specify for a field must conform to the data type for that field. 
 
 ## Query operators
 
-You can use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md).
+You can use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md). 
+
+To learn about adding clauses and use of the And/Or operators, see [Define a query, And/Or logical expression](using-queries.md#andor-logical-expression).
 
 <table width="100%">
 <thead valign="bottom">
