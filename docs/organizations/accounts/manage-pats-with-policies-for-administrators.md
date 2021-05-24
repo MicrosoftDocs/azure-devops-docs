@@ -6,7 +6,7 @@ ms.technology: devops-accounts
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/17/2021
+ms.date: 05/24/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,14 +22,19 @@ Learn how to turn on the Azure Active Directory (Azure AD) policies that restric
 
 By default, these policies are set to *off*.
 
+> [!IMPORTANT]
+> Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction. 
+
 ## Prerequisites
 
 - Your organization must be linked to Azure AD.
-- You must be an Azure DevOps Administrator in Azure Active Directory (Azure AD) to manage these policies for your organization in Azure DevOps. 
+- You must be an [Azure DevOps Administrator in Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) to manage these policies for your organization in Azure DevOps.
 
 To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory** > **Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
 ## Set maximum lifespan for new PATs
+
+The Azure DevOps Administrator in Azure AD defines the maximum lifespan of the PAT.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -42,6 +47,8 @@ To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#h
 
 
 ## Restrict creation of global PATs
+
+Global tokens apply to all accessible organizations, rather than a single organization. Enabling this policy means that new PATs must be associated with specific Azure DevOps organizations.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
