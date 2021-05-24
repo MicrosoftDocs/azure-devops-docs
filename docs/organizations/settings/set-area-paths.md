@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 05/20/2021
+ms.date: 05/24/2021
 ---
 
 # Define area paths and assign to a team
