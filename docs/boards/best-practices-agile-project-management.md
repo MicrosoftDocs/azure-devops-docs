@@ -53,8 +53,8 @@ Azure Boards provides each team a set of Agile tools to plan and track work. Eac
 
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md) 
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md) 
-- [Agile culture](/azure/devops/learn/agile/agile-culture) 
-- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Agile culture](/devops/plan/adopting-agile) 
+- [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 
 ## Configure your sprints 
 

@@ -22,7 +22,7 @@ Each new project is configured with a default team with the project name. You ca
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
+> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
 
 <a id="add-team"> </a>  
 

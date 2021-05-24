@@ -276,10 +276,5 @@ if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
 [!INCLUDE [variable-collision](../includes/variable-collision.md)]
-
-You can use custom variables to prompt for values during the execution of a release.
-For more information, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
-
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
