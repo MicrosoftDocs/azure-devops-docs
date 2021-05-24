@@ -36,10 +36,11 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 Use filters to perform these tasks:  
 - In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
-- Or, if your team uses the Taskboard, filter for a team member's completed assigned work. 
+- Or, if your team uses the Sprints Taskboard, filter for a team member's completed assigned work. 
 - To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
 - To triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
 
+ 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
@@ -1094,6 +1095,7 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 
 ## Related articles  
 
+
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
@@ -1101,6 +1103,7 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 - [Customize cards](../boards/customize-cards.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 - [Tags](../queries/add-tags-to-work-items.md) 
+- [Query work items that you're following](../work-items/follow-work-items.md#query-work-items-that-youre-following)
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 
 
