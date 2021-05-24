@@ -56,7 +56,7 @@ To learn more about bulk update, see the [Bulk add or update work items](#bulk-u
 We recommend you use the project wiki to capture and share the Portfolio Vision, Strategic Themes and other information relevant to your programs. Consider defining and sharing the following information:  
 
 - How to use tags or custom fields to specify value streams 
-- Taxonomy terms as described in [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- Taxonomy terms as described in [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 - How release trains and sprints are used 
 - Key milestones and events  
 - Customer centric programs 
