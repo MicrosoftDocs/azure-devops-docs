@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 10/19/2020
+ms.date: 15/24/2021
 ---
 
 # Rename or remove a team  
@@ -234,7 +234,16 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 * * *
 
+## Set a team as the default
+
+When a project is created, a default team is created based on the project name. 
+
+To change the default, open **Project Settings>Teams**, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** next to the team you want as the new default, and select **Set team as project default**.   
+
+
 ## Delete a team 
+
+You can delete any team except the default team. At least one team must be defined for a project.
 
 > [!IMPORTANT]   
 > Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 

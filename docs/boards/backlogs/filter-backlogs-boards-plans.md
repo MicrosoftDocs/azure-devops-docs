@@ -20,7 +20,7 @@ ms.date: 05/06/2021
 
 With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected Area Paths and Iteration Paths for the team. Query Results list work items based on the query clauses you've defined. 
 
-You enable the filter feature by choosing **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::.
+You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter**.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of choosing Filter function latest versions.](media/filter/filter-backlogs.png)
