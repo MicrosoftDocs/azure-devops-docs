@@ -197,6 +197,7 @@ Supported options are indicated with a ✔️ or listed.
       - Work Item Types
       - Assigned To
       - States
+      - Tags
    :::column-end:::
    :::column span="1.5":::
       Note 1
