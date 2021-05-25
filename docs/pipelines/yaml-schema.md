@@ -5,8 +5,8 @@ description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
-ms.reviewer: macoope
-ms.date: 11/02/2020
+ms.reviewer: vijayma
+ms.date: 03/24/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -199,9 +199,9 @@ Learn more about:
 
 A stage is a collection of related jobs.
 By default, stages run sequentially.
-Each stage starts only after the preceding stage is complete.
+Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn` property.
 
-Use approval checks to manually control when a stage should run.
+Use [approval checks](process/approvals.md) to manually control when a stage should run.
 These checks are commonly used to control deployments to production environments.
 
 Checks are a mechanism available to the *resource owner*.
@@ -276,6 +276,37 @@ Jobs can run [conditionally](process/phases.md?tabs=yaml#conditions) and  might 
 
 # [Schema](#tab/schema)
 
+:::moniker range="azure-devops"
+
+```yaml
+jobs:
+- job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  strategy:
+    parallel: # parallel strategy; see the following "Parallel" topic
+    matrix: # matrix strategy; see the following "Matrix" topic
+    maxParallel: number # maximum number of matrix jobs to run simultaneously
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  pool: pool # see the following "Pool" schema
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  container: containerReference # container to run this job inside of
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: # several syntaxes, see specific section
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+  services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
+```
+
+:::moniker-end
+
+:::moniker range="<azure-devops"
+
 ```yaml
 jobs:
 - job: string  # name of the job (A-Z, a-z, 0-9, and underscore)
@@ -297,6 +328,8 @@ jobs:
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
+
+:::moniker-end
 
 For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
@@ -438,7 +471,7 @@ Only two jobs run simultaneously.
 
 > [!NOTE]
 > The `matrix` syntax doesn't support automatic job scaling but you can implement similar
-> functionality using the `each` keyword. For an example, see [nedrebo/parameterized-azure-jobs](https://github.com/nedrebo/parameterized-azure-jobs).
+> functionality using the `each` keyword. For an example, see [expressions](process/expressions.md).
 
 #### Parallel
 
@@ -495,8 +528,7 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 # [Example](#tab/example)
@@ -517,9 +549,10 @@ jobs:
         steps:
         - script: echo my first deployment
 ```
-::: moniker-end
 
 ---
+
+::: moniker-end
 
 ## Steps
 
@@ -570,7 +603,8 @@ All steps, regardless of whether they're documented in this article, support the
 
 ## Variables
 
-You can add hard-coded values directly or reference [variable groups](library/variable-groups.md).
+You can add hard-coded values directly, reference [variable groups](library/variable-groups.md), or insert via variable templates.
+
 Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
@@ -671,7 +705,6 @@ variables:
 
 You can export reusable sections of your pipeline to a separate file. 
 These separate files are known as templates. 
-Azure Pipelines supports four kinds of templates:
 
 Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
@@ -1031,7 +1064,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
     template: simple-param.yml
@@ -1060,9 +1093,11 @@ Resources in YAML represent sources of pipelines, containers, repositories, and 
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]
+  pipelines: [ pipeline ]  
+  builds: [ build ]
   repositories: [ repository ]
   containers: [ container ]
+  packages: [ package ]
 ```
 
 ### Pipeline resource
@@ -1075,15 +1110,18 @@ You can also enable [pipeline-completion triggers](process/pipeline-triggers.md)
 ```yaml
 resources:
   pipelines:
-  - pipeline: string  # identifier for the pipeline resource
-    project:  string # project for the build pipeline; optional input for current project
-    source: string  # source pipeline definition name
-    branch: string  # branch to pick the artifact, optional; defaults to all branches
-    version: string # pipeline run number to pick artifact, optional; defaults to last successfully completed run
-    trigger:     # optional; triggers are not enabled by default.
-      branches:
-        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
-        exclude: [string] # branches to discard the trigger events, optional; defaults to none.
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
+    project: string # project for the source; optional for current project
+    source: string  # name of the pipeline that produces an artifact
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
+    trigger:     # triggers are not enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 2020.1 and greater
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 2020.1 and greater
 ```
 # [Example](#tab/example)
 
@@ -1103,7 +1141,7 @@ resources:
     trigger:
       branches:
         include:
-        - master
+        - main
         - releases/*
         exclude:
         - users/*
@@ -1113,7 +1151,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -1246,7 +1284,7 @@ resources:
   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
     type: enum  # see the following "Type" topic
     name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/master'
+    ref: string  # ref name to use; defaults to 'refs/heads/main'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
     trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
       branches:
@@ -1290,6 +1328,50 @@ The `git` type refers to Azure Repos Git repos.
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+
+### Packages resource
+
+::: moniker range="> azure-devops-2020"
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. When specifying package resources, set the package as `NuGet` or `npm`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
+```
+---
+
+::: moniker-end
+
 
 ## Triggers
 
@@ -1373,7 +1455,7 @@ List syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - develop
 ```
 
@@ -1492,7 +1574,7 @@ List syntax:
 
 ```yaml
 pr:
-- master
+- main
 - develop
 ```
 
@@ -1557,7 +1639,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*
@@ -1572,7 +1654,7 @@ schedules:
 In the preceding example, two schedules are defined.
 
 The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
-It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
+It runs the pipeline for `main` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
 It does so regardless of whether the code has changed since the last run.
@@ -2007,7 +2089,7 @@ steps:
 
 ---
 
-Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publishing-artifacts).
+Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publish-artifacts).
 
 ## Download
 
@@ -2047,7 +2129,7 @@ steps:
 
 ---
 
-Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
+Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#download-artifacts).
 
 ::: moniker-end
 
@@ -2064,7 +2146,7 @@ Use the `checkout` keyword to configure or suppress this behavior.
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
-  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  fetchDepth: number  # the depth of commits to ask Git to fetch (applies to submodules too if they're enabled); defaults to no limit
   lfs: boolean  # whether to download Git-LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
@@ -2151,7 +2233,7 @@ resources:
     name: MyGitHubToolsOrg/tools
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -2184,6 +2266,7 @@ steps:
   target:
     container: string # where this step will run; values are the container name or the word 'host'
     commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
+    settableVariables: string # what variables are allowed; defaults to all; can be `none` or a list of allowed vars
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add

@@ -6,7 +6,7 @@ ms.topic: include
 
 Now when you mention a work item within the comment of an issue, pull request, or commit in GitHub using the `AB#{work item ID}` syntax, those mentions will become hyperlinks that you can click on to navigate directly to the mentioned work item.
 
-This doesn't create a formal link that clutters up the work item in Azure Boards for every related conversation, but instead gives your team a way to provide a little more information about work items while discussing code or a customer-reported issue. See the [Azure Boards GitHub integration](https://aka.ms/azureboardsgithub) documentation for more information.
+This doesn't create a formal link that clutters up the work item in Azure Boards for every related conversation, but instead gives your team a way to provide a little more information about work items while discussing code or a customer-reported issue. See the [Azure Boards GitHub integration](/azure/devops/boards/github/) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Navigate to work items from mentions.](../../media/149_05.png)
@@ -17,7 +17,7 @@ We cleaned up multiple work item transition rules that have been inconsistent ac
 
 ### Azure Boards GitHub Enterprise support
 
-Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](https://docs.microsoft.com/azure/devops/boards/github/connect-to-github?view=azure-devops-2019) before creating a connection to your repositories.
+Teams can now connect Azure Boards projects to repositories hosted in GitHub Enterprise Server instances. When connecting using OAuth, follow the steps in the documentation for [Registering an OAuth application](/azure/devops/boards/github/connect-to-github?view=azure-devops-2019&preserve-view=true) before creating a connection to your repositories.
 
 ### Edit and delete comments in work item
 

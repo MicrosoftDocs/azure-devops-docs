@@ -86,7 +86,7 @@ In-context CFD charts are quickly accessible from each backlog and board view. A
 Other metrics that teams use are derived from the Lead time and cycle time charts. These charts can be added to a team dashboard and monitored to learn the following information: 
 
 - Lead time: Days on average to complete deliverables from date created
-- Lead time: Days on average to complete deliverables from date work started
+- Cycle time: Days on average to complete deliverables from date work started
 - Number of outliers 
  
 Both Lead Time and Cycle Time widgets display as scatter-plot control charts. They display summary information as well as provide several interactive elements. To learn more, see [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 

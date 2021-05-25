@@ -20,6 +20,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 ## Prerequisites
 
+
 * You must be a member of the Project Collection Administrators or Project Administrators group for the organization that you want to invite external users to.
 
 * The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
@@ -27,19 +28,7 @@ Learn how to invite external users to your organization. If you access Azure Dev
 * The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
 * Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
 
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
-   ![External guest access turned on](media/add-external-user/guest-access-preview.png)
-
-#### [Current page](#tab/current-page)
-
-   >[!div class="mx-imgBorder"]
-   >![External guest access](media/add-external-user/guest-access.png)
-
-* * *
+![External guest access turned on](media/add-external-user/guest-access-preview.png)
 
 > [!TIP]
 > We recommend using a different email or user principal name (UPN) for your personal and business accounts, rather than using the same, even though it's allowed. This eliminates the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.

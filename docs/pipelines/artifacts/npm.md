@@ -43,7 +43,7 @@ Add the following snippet to your `azure-pipelines.yml` file.
 
 
 > [!NOTE]
-> All new feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishFeed` parameter: `publishFeed: '<projectName>/<feedName>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-feeds-vs-organization-scoped-feeds) to learn about the difference between the two types.
+> All new feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishFeed` parameter: `publishFeed: '<projectName>/<feedName>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-vs-organization-scoped-feeds) to learn about the difference between the two types.
 
 To publish to an external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry. See [Service connections](../library/service-endpoints.md) to learn more about how to create, manage, secure, and use a service connection.
 

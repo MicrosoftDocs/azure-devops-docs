@@ -24,7 +24,7 @@ This article shows you how to configure and view Git settings and preferences in
 
 ## How to configure settings
 
-
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
@@ -59,6 +59,9 @@ Visual Studio allows you to configure and check some of the most common Git conf
 The name and email that you provide will be used as the committer information for any commit you make. This setting is available at both global and repository scopes, and corresponds to the `git config` [user.email](https://git-scm.com/docs/git-config#git-config-useremail) and [user.name](https://git-scm.com/docs/git-config#git-config-username) settings.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, go to **Settings**. To set your user name and email at the global level, go to **Global Settings**; to set these at the repository level, go to **Repository Settings**.
 
 2. Provide your user name and email, then choose **Update** to save. 
@@ -71,14 +74,14 @@ The name and email that you provide will be used as the committer information fo
 
 #### [Command Line](#tab/command-line/)
 To set your user name, open a command prompt, navigate to the repository, and run:
-```
+```console
 git config user.name "Jamal Hartnett"
 ```
 
 By default, this command writes to the local repository configuration file. To write to other files, pass one of the following options: `--system`, `--global`, or `--file <filename>`.
 
 For example, to write to the global configuration file, run:
-```
+```console
 git config --global user.name "Jamal Hartnett"
 ```
 
@@ -96,14 +99,19 @@ We recommend setting this option to **True** at the global level. Valid settings
 - Unset (default)
 
 #### [Visual Studio](#tab/visual-studio/)
-Requires Visual Studio 2017 Update 5 and later.
-1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
-    ![Go to Team Explorer Settings, Visual Studio.](media/git-config/fetch-prune.png)
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
+Requires Visual Studio 2017 Update 5 and later.
+
+In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
+
+:::image type="content" source="media/git-config/visual-studio-prune-remote-branches-setting.png" alt-text="Screenshot that shows 'Prune remote branches during fetch' highlighted and with 'True' selected from the drop-down.":::    
+
 
 #### [Command Line](#tab/command-line/)
 To prune branches on every `fetch`, open a command prompt, and run:
-```
+```console
 git config --global fetch.prune true
 ```
 
@@ -121,19 +129,22 @@ then applies the changes that were set aside. This setting is available at both 
 - Preserve: Rebase without flattening locally created merge commits.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Requires Visual Studio 2017 Update 5 and later.
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this option at the global level; go to **Repository Settings** to configure this option at the repo level.
 
 2. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
 
-    ![Rebase local branch when pulling.](media/git-config/pull-rebase.png)
+    :::image type="content" source="media/git-config/visual-studio-rebase-local-branch-setting.png" alt-text="Screenshot that shows 'Rebase local branch when pulling' highlighted and 'True' selected from the drop-down.":::
 
 Note that it is not possible to configure `pull.rebase` to **Interactive** in Visual Studio. Visual Studio does not have interactive rebase support.
 To configure `pull.rebase` to use interactive mode, use the command line.
 
 #### [Command Line](#tab/command-line/)
 To configure pull.rebase, open a command prompt, and run:
-```
+```console
 git config [--local|--global|--system] pull.rebase [true|false|interactive|preserve]
 ```
 
@@ -149,17 +160,21 @@ allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Requires Visual Studio 2017 Update 7 and later.
 
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** to configure this setting.
 
 2. Set **Cryptographic network provider** to the desired value, and select **Update** to save.
 
-![Cryptographic network provider](media/git-config/cryptographic-network-provider.png)
+    :::image type="content" source="media/git-config/visual-studio-cryptographic-network-setting.png" alt-text="Screenshot that shows 'Cryptographic network provider' highlighted with 'OpenSSL' selected from the drop-down.":::
+
 
 #### [Command Line](#tab/command-line/)
 To configure http.sslBackend, open a command prompt, and run:
-```
+```console
 git config --global http.sslBackend [openssl|schannel]
 ```
 

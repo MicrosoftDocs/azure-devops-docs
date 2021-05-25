@@ -141,7 +141,7 @@ Parameters available for editing differ per stream type.
 
 2. Select **Save**.
 
-You can re-enable a disabled stream. It will catch up on any audit events that were missed for up to the previous seven days. That way you don’t miss any events from the duration that the stream was disabled. 
+You can re-enable a disabled stream. It catches up on any audit events that were missed for up to the previous seven days. That way you don’t miss any events from the duration that the stream was disabled. 
 
 > [!NOTE]
 > If a stream is disabled for more than 7 days, events older than 7 days aren't included in the catch up. 

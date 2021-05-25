@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 02/26/2020
 ---
 
@@ -159,7 +159,7 @@ Several of the following tasks require permissions granted to a member of the Pr
    :::column span="":::
 - [Restore project](restore-project.md)  
 - [Change user access levels](../accounts/add-organization-users.md) 
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
@@ -201,7 +201,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
@@ -239,7 +239,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
-- [Search across project(s)](../../project/search/overview.md)  
+- [Search across project(s)](../../project/search/get-started-search.md)  
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  

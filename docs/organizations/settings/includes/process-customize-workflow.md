@@ -7,7 +7,7 @@ ms.topic: include
 ms.date: 07/17/2020
 ---
 
-You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](../../../boards/work-items/guidance/choose-process.md#workflow-states), &mdash;you chose from which to create your custom process.  
+You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](/azure/devops/boards/work-items/guidance/choose-process#workflow-states), &mdash;you chose from which to create your custom process.  
 
 Each default workflow for each WIT defines between two and four States and specifies the following workflow operations: 
 
@@ -36,8 +36,8 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
       ![Inherited icon](/azure/devops/organizations/settings/work/media/process/inherited-icon.png) Inherited states
    :::column-end:::
    :::column span="2":::
-      - [Hide or unhide a state](../work/customize-process-workflow.md#hide-state)
-      - [Add rules when changing a workflow state](../work/custom-rules.md) 
+      - [Hide or unhide a state](/azure/devops/organizations/settings/work/customize-process-workflow#hide-state)
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/custom-rules) 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -45,10 +45,10 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
       Custom states
    :::column-end:::
    :::column span="2":::
-      - [Add a workflow state](../work/customize-process-workflow.md#add-states)
-      - [Edit a workflow state (change color or category)](../work/customize-process-workflow.md#edit-state)
-      - [Remove a workflow state](../work/customize-process-workflow.md#remove-state)
-      - [Add rules when changing a workflow state](../work/custom-rules.md) 
+      - [Add a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#add-states)
+      - [Edit a workflow state (change color or category)](/azure/devops/organizations/settings/work/customize-process-workflow#edit-state)
+      - [Remove a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#remove-state)
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/custom-rules) 
    :::column-end:::
 :::row-end:::
 
@@ -58,7 +58,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 
 - You must define at least one state for either the *Proposed* or *In Progress* State categories  
 	> [!NOTE]    
-	> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories.  
+	> Before adding a workflow state, review [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories) to learn how workflow states map to state categories.  
 - You must define at least two workflow States  
 - You can define a maximum of 32 workflow States per work item type  
 

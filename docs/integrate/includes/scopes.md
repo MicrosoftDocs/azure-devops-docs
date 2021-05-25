@@ -2,6 +2,7 @@
 | -------- | ----- | ---- | ----------- |
 | **Agent Pools** | `vso.agentpools` | Agent Pools (read) | Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents. |
 | | `vso.agentpools_manage` | Agent Pools (read, manage) | Grants the ability to manage pools, queues, and agents. |
+| | `vso.environment_manage` | Enviroment (read, manage) | Grants the ability to manage pools, queues, agents, and environments. |
 | **Analytics** | `vso.analytics` | Analytics (read) | Grants the ability to query analytics data. |
 | **Audit Log** | `vso.auditlog` | Audit Log (read) | Grants the ability to read the auditing log to users. |
 | **Build** | `vso.build` | Build (read) | Grants the ability to access build artifacts, including build results, definitions, and requests, and the ability to receive notifications about build events via service hooks. |

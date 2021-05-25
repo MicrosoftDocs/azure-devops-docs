@@ -1,5 +1,5 @@
 ---
-title: Plan your organizational structure - Azure DevOps
+title: Plan your organizational structure
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Begin planning your organizational structure, including projects, teams, repos, version control, and more.
@@ -8,9 +8,9 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
-ms.topic: Conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 04/22/2019
+ms.topic: conceptual
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Plan your organizational structure
@@ -88,6 +88,13 @@ Within an organization, you can do either of the following approaches:
 
 Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant, however, can be connected to many Azure DevOps organizations.
 
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group](../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
 ### Single project
 
 A single project puts all of the work at the same "portfolio" level for the entire organization. Your work has the same set of repos and iteration paths. A single project allows teams to share source repos, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight inter-dependencies on each other across the product life cycle. You create a project and divide the work using teams and area paths. This setup gives your teams visibility into each other's work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
@@ -129,14 +136,14 @@ When you map projects to business units, your company gets a single organization
 | **Roll-up reporting and portfolio management** |                                                              Best ability to roll up across teams and coordinate between teams.                                                              |                 Good reporting possible across projects.  More difficult for cross-project roll-up and team coordination.                  |                                                        No roll-up or coordination between organizations.                                                        |
 |             **Security/isolation**             |                                                   Can lock down assets at a team level, but default is open visibility and collaboration.                                                    |  Better ability to lock down between projects.  By default, provides good visibility within projects and good isolation across projects.   |                          Hard boundaries across organizations; excellent isolation and minimal ability to share across organizations.                           |
 |             **Context switching**              |                                                         Easiest for teams to work together and for users to switch between efforts.                                                          |                              Relatively easy for users to work together and switch contexts between efforts.                               |                                             More difficult for users having to work across different organizations.                                             |
-|            **Information overload**            |                               By default, all assets are visible to users will make use of “favorites” and similar mechanisms to avoid “information overload.”                               |                        Reduced risk of information overload; most project assets hidden across project boundaries.                         |                                        Assets across organizations are isolated, reducing risk of information overload.                                         |
+|            **Information overload**            |                               By default, all assets are visible to users who make use of “favorites” and similar mechanisms to avoid “information overload.”                               |                        Reduced risk of information overload; most project assets hidden across project boundaries.                         |                                        Assets across organizations are isolated, reducing risk of information overload.                                         |
 |          **Administrative overhead**           | Much administration is delegated down to individual teams. Easiest for user licensing and org-level administration.  Additional work may be needed if alignment is required between efforts. | Additional administration at the project level.  Additional overhead, but can be useful when projects have different administrative needs. |                   As with additional projects, there's additional administrative overhead, which enables additional flexibility between orgs.                   |
 
 ## Structure repos and version control within a project
 
 Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https:\//dev.azure.com/{organization-name}/{project-name}.
 
-Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
+Configure your project by visiting its URL and selecting **Project settings** at the lower left portion of the page.
 
 ![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
@@ -162,7 +169,7 @@ One project containing multiple repos works well if the products/services are wo
 
 If the products stored in multiple repos work on independent schedules or processes, you can split them into multiple projects. Git repo portability makes it easy to move a repo between projects and still keep full-fidelity commit history. Other history, such as pull requests or build history, aren't easily migrated.
 
-Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service is a good strategy.  
+Your decision for one versus many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [How Microsoft develops modern software with DevOps](/devops/develop/how-microsoft-develops-devops) articles. If you have many disconnected services, one repo per service is a good strategy.  
 
 > [!Note]
 > Consider [managing your permissions](../organizations/security/permissions.md) so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). A challenge growing teams or companies face is the rapid proliferation of repos. If you have too many repos, it's hard to keep track of who owns which code or other content stored in those repos.
@@ -181,7 +188,7 @@ The following image displays a sample of how "your company" could structure its 
 
 ### Choosing your organization administrator account type
 
-When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at https:\//dev.azure.com/{yourorganization}.
+When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https://dev.azure.com/{YourOrganization}`.
 
 #### Using your Microsoft account
 

@@ -3,9 +3,12 @@
 - name: View & add work items
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md 
-- name: "Add & update a work item"    
-  displayName: follow, update status, Discussion  
+- name: "Add & update a work item" 
   href: ../backlogs/add-work-items.md
+  displayname: follow, update status, Discussion  
+- name: Filter your work items
+  href: ../backlogs/filter-backlogs-boards-plans.md  
+  displayname: sort, reorder, group, parent, tags  
 - name: Manage bugs
   href: ../backlogs/manage-bugs.md
 - name: Manage issues
@@ -15,7 +18,7 @@
 - name: Copy/clone 
   href: ../backlogs/copy-clone-work-items.md
 - name: Go mobile
-  href: ../../project/navigation/mobile-work.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Collaborate with others
   items:
   - name: Follow work
@@ -25,15 +28,14 @@
   - name: "Use #ID to link to work items"
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Add tags to work items
-    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../queries/add-tags-to-work-items.md
   - name: Share information  
-    href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    displayName: rich text, attach files, storyboard, social tools
+    href: ../queries/share-plans.md
   - name: Copy list
     href: ../backlogs/copy-list.md 
-  - name: Email/print work items
+  - name: Email or print work items
     href: email-work-items.md  
-    displayName: export, cvs 
+    displayName: cards 
   - name: Drive Git development
     displayName: create branch, new branch 
     href: ../backlogs/connect-work-items-to-git-dev-ops.md
@@ -53,13 +55,13 @@
   - name: Remove, delete, or restore
     href: ../backlogs/remove-delete-work-items.md
   - name: Delete test artifacts
-    href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../backlogs/delete-test-artifacts.md
   - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: ../backlogs/work-item-template.md
 - name: Configure & customize
   items:
   - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../backlogs/set-column-options.md
     displayName: sort, persistence
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md

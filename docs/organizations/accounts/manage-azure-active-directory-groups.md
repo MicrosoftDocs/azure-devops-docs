@@ -28,7 +28,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 ## Prerequisites
 
-* Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
+* Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.yml#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 * You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
@@ -36,13 +36,13 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Add an Azure AD group to an Azure DevOps group
 
 > [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the preview feature, **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
 2.  Go to **Organization settings**.
 
@@ -66,7 +66,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
 2.  Go to **Organization settings**.
 

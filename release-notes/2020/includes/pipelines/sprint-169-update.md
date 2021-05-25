@@ -10,15 +10,15 @@ ms.topic: include
 
 We’re excited to announce the general availability of the Azure Pipelines YAML CD features. We now offer a unified YAML experience so you can configure each of your pipelines to do CI, CD, or CI and CD together. YAML CD features introduces several new advanced features that are available for all organizations using multi-stage YAML pipelines. Some of the highlights include:
 
-- [Multi-stage YAML pipelines (for CI and CD)](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
-- [Approvals and checks on resources](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass)
-- [Environments](https://docs.microsoft.com/azure/devops/pipelines/process/environments?view=azure-devops) and [deployment strategies](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#deployment-strategies)
-- [Kubernetes](https://docs.microsoft.com/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops) and [Virtual Machine](https://docs.microsoft.com/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops) resources in environment
-- [Review apps for collaboration](https://docs.microsoft.com/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops#setup-review-app)
-- [Refreshed UX for service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
-- [Resources in YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema)
+- [Multi-stage YAML pipelines (for CI and CD)](/azure/devops/pipelines/process/stages?tabs=yaml&view=azure-devops&preserve-view=true) 
+- [Approvals and checks on resources](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true)
+- [Environments](/azure/devops/pipelines/process/environments?view=azure-devops&preserve-view=true) and [deployment strategies](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#deployment-strategies)
+- [Kubernetes](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops&preserve-view=true) and [Virtual Machine](/azure/devops/pipelines/process/environments-virtual-machines?view=azure-devops&preserve-view=true) resources in environment
+- [Review apps for collaboration](/azure/devops/pipelines/process/environments-kubernetes?view=azure-devops&preserve-view=true#setup-review-app)
+- [Refreshed UX for service connections](/azure/devops/pipelines/library/service-endpoints?tabs=yaml&view=azure-devops&preserve-view=true) 
+- [Resources in YAML pipelines](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops&preserve-view=true)
 
-If you’re ready to start building, check out the [documentation](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema)&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd)&nbsp;for building multi-stage CI/CD pipelines.
+If you’re ready to start building, check out the [documentation](/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema&view=azure-devops&preserve-view=true)&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd)&nbsp;for building multi-stage CI/CD pipelines.
 
 ### Service connections new UI as default experience
 
@@ -28,7 +28,7 @@ New service connections UI is built on modern design standards and it comes with
 
 ![Service connections new UI.](../../media/169-pipelines-3-0.png)
 
-Learn more about service connections [here](https://aka.ms/SCLearnMore).
+Learn more about service connections [here](/azure/devops/pipelines/library/service-endpoints).
 
 ### Role-based access for service connections
 
@@ -38,7 +38,7 @@ As part of this work, we have introduced the new roles of Reader, User, Creator 
 
 ![Role-based access for service connections.](../../media/169-pipelines-0-0.png)
 
-Learn more about service connections security [here](https://aka.ms/SCLearnMore).
+Learn more about service connections security [here](/azure/devops/pipelines/library/service-endpoints).
 
 ### Showing associated CD pipelines info in CI pipelines
 
@@ -54,10 +54,10 @@ Thank you for your support. You can now share your service connections with your
 
 ![Cross-project sharing of service connections.](../../media/169-pipelines-4-0.png)
 
-Learn more about service connections sharing [here](https://aka.ms/SCLearnMore).
+Learn more about service connections sharing [here](/azure/devops/pipelines/library/service-endpoints).
 
 ### Pipeline resource version picker in the create run dialogue
 
-In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](https://docs.microsoft.com/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
+In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](/azure/devops/pipelines/process/resources?tabs=schema&view=azure-devops&preserve-view=true#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
 
 ![Pipeline resource version picker.](../../media/169-pipelines-2-0.png)

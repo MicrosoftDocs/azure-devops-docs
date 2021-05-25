@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 08/27/2020
 ---
@@ -48,7 +48,13 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="tee-query-history" />
 <a id="team-explorer" />
 
-<strong>Visual Studio 2015/Team Explorer and Team Explorer Everywhere</strong>
+
+The **Query Editor** isn't available when you are connected to a GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+
+**Visual Studio/Team Explorer and Team Explorer Everywhere**
 
 ![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
 
@@ -56,7 +62,7 @@ You can use either the web portal or Team Explorer to view the history of a work
 ## List items based on the contents of the History field  
 
 ::: moniker range=">= tfs-2017"
-You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/work-item-search.md).
+You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/functional-work-item-search.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -309,15 +315,12 @@ All
     ```
 
 ## Related articles
-To learn more about creating and saving queries, see also: 
+
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
-
-
-### Get history programmatically
-See [Work item tracking](/rest/api/azure/devops/wit/)  for ways to extract history information programmatically.  
+ 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

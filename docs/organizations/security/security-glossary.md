@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 09/29/2020
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
 ---
 
 # Security key concepts
@@ -20,11 +20,12 @@ This article provides definitions for select terms used to manage authentication
  
 ## Access control entries (ACE)
 
-An access control entry is an entry in an access control list (ACL) that grants or denies a user or group access to an Azure DevOps resource. You can manage ACLs and ACEs with the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions).
+An access control entry is an entry in an access control list (ACL) that grants or denies a user or group access to an Azure DevOps resource. For a list of namespaces, ACEs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
+
 
 ## Access control list (ACL)
 
-An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. You can manage ACLs and ACEs with the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions).
+An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. For a list of namespaces, ACLs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
 
 ## Access level
 
@@ -45,15 +46,18 @@ Audit logs contain many changes that occur throughout an Azure DevOps organizati
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security and identity](about-security-identity.md).
+Authentication verifies a user's identify based on the credentials provided when they sign into an organization in Azure DevOps. These services/servers typically integrate with and rely upon the security features provided by additional services such as Active Directory or Azure Active Directory. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
 
 ## Authorization
 
-Authorization refers to the operations performed to verify that the identity which is attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. To learn more, see [About security and identity](about-security-identity.md).
+Authorization refers to the operations performed to verify that the identity which is attempting to connect to a service or server instance has the necessary permissions to access a service, feature, function, object, or method. To learn more, see [About security, authentication, and authorization](about-security-identity.md).
 
 ## Azure Active Directory Authentication Libraries
 
-The Azure Active Directory Authentication Library (ADAL) v1.0 enables application developers to authenticate users to cloud or on-premises Active Directory (AD), and obtain tokens for securing API calls. To learn more about its usage with Azure DevOps, see [Choose the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md). 
+The Azure Active Directory Authentication Library (ADAL) v1.0 enables application developers to authenticate users to cloud or on-premises Active Directory (AD), and obtain tokens for securing API calls.
+> [!IMPORTANT]
+> **Starting, June 30th, 2020**, we'll no longer add any new features to ADAL and Azure AD Graph. We'll continue to provide technical support and security updates, but won't provide feature updates.
+> **Starting June 30th, 2022**, we'll end support for ADAL and Azure AD Graph and won't provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates.  
 
 ## Basic member
 
@@ -67,23 +71,22 @@ Conditional access provides support for securing Azure DevOps resources backed b
 
 ## Inheritance
 
-Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [About permissions and inheritance](about-permissions.md).   
+Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).   
 
 <!---
 ## Membership 
 
 -->
 
+## Microsoft Authentication Library
+
+The Microsoft Authentication Library (MSAL) enables application developers to acquire tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS. For more information, see the [Overview of Microsoft Authentication Library](/azure/active-directory/develop/msal-overview#languages-and-frameworks).
 
 ## Namespace 
 
 Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
 
-For a list of Azure DevOps namespaces, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions). 
-
-For Azure DevOps Services, you can list the namespaces using **az devops security permission namespace list** command. For details, see [Manage tokens and namespaces](manage-tokens-namespaces.md).
-
-
+For a list of Azure DevOps namespaces, see [Security namespace and permission reference](namespace-reference.md).  
 
 ## OAuth 
 
@@ -114,19 +117,20 @@ Personal access tokens (PATs) are alternate passwords that you can use to authen
 
 ## Permission
 
-The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and inheritance](about-permissions.md).
+The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
 
 ## Permission state
 
-The state assigned to a feature or function to a user's or group's permission. Users have permission to access a feature if their permission is set to **Allow** or **Inherited Allow**. They don't have permission when the state is set to **Deny**, **Inherited deny**, or **Not set**. To learn more, see [About security and identity](about-security-identity.md).
+The state assigned to a feature or function to a user's or group's permission. Users have permission to access a feature if their permission is set to **Allow** or **Inherited Allow**. They don't have permission when the state is set to **Deny**, **Inherited deny**, or **Not set**. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
+
+
+## Role-based permissions
+
+A security model that limits actions based on membership within a role and permissions assigned to that role. To learn more, see [About permissions, access, and security groups, Role-based permissions](about-permissions.md#security-roles).
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and inheritance](about-permissions.md).
-
-## Security role
-
-A security model that limits actions based on membership within a role. To learn more, see [About security roles](about-security-roles.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [Get started with permissions, access, and security groups](../security/about-permissions.md).
 
 ## Service account
 
@@ -178,7 +182,7 @@ For Azure DevOps Server, see [Use TFSSecurity to manage groups and permissions f
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and inheritance](about-permissions.md).
+Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [Get started with permissions, access, and security groups](about-permissions.md).
 
 
 

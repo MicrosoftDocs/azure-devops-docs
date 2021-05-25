@@ -4,7 +4,7 @@ description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
-ms.custom: seodec18, seo-javascript-september2019, contperfq4, devx-track-js
+ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js
 ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -20,7 +20,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 * Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue. 
 * Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md). 
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Publish [npm packages](../artifacts/npm.md) with Azure artifacts. 
+* Publish [npm packages](../artifacts/npm.md) with Azure Artifacts. 
 * Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -125,7 +125,7 @@ steps:
 
 1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 1. A new run is started. Wait for the run to finish.
 
@@ -147,7 +147,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ```yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -305,7 +305,7 @@ You can use a [script](../scripts/cross-platform-scripting.md) or the [npm task]
 ```yaml
 - task: Npm@1
   inputs:
-  command: 'install'
+     command: 'install'
 ```
 
 Run tools installed this way by using npm's `npx` package runner, which will first look for tools installed this way in its path resolution. The following example calls the `mocha` test runner but will look for the version installed as a dev dependency before using a globally installed (through `npm install -g`) version.
@@ -490,7 +490,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your test scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
+If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -611,7 +611,7 @@ The build files are in a new folder, `dist` (for Vue) or `build` (for React). Th
 
 ```yaml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -634,7 +634,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
+    PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
     ArtifactName: 'www' # output artifact named www
 ```
 
@@ -869,29 +869,29 @@ If you can build your project on your development machine but are having trouble
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
 
-* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
-(`nvm` is installed for historical reasons on the macOS image.)
-`nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
-The **Node Tool Installer** task handles this model correctly.
-However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
-```yaml
-steps:
-- bash: |
-    NODE_VERSION=12  # or whatever your preferred version is
-    npm config delete prefix  # avoid a warning
-    . ${NVM_DIR}/nvm.sh
-    nvm use ${NODE_VERSION}
-    nvm alias default ${NODE_VERSION}
-    VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
-    echo "##vso[task.prependPath]$VERSION_PATH"
-```
-Then `node` and other command-line tools will work for the rest of the pipeline job.
-In each step where you need to use the `nvm` command, you'll need to start the script with:
-```yaml
-- bash: |
-    . ${NVM_DIR}/nvm.sh
-    nvm <command>
-```
+* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead. (`nvm` is installed for historical reasons on the macOS image.) `nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
+
+  The **Node Tool Installer** task handles this model correctly. However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
+
+  ```yaml
+  steps:
+  - bash: |
+      NODE_VERSION=12  # or whatever your preferred version is
+      npm config delete prefix  # avoid a warning
+      . ${NVM_DIR}/nvm.sh
+      nvm use ${NODE_VERSION}
+      nvm alias default ${NODE_VERSION}
+      VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
+      echo "##vso[task.prependPath]$VERSION_PATH"
+  ```
+
+  Then, `node` and other command-line tools will work for the rest of the pipeline job. In each step where you need to use the `nvm` command, you'll need to start the script with:
+
+  ```yaml
+  - bash: |
+      . ${NVM_DIR}/nvm.sh
+      nvm <command>
+  ```
 
 ## FAQ
 
@@ -902,6 +902,10 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 ### Where can I learn more about tasks?
 
 [Build, release, and test tasks](../tasks/index.md)
+
+### How do I fix a pipeline failure with the message 'FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory'
+
+This happens when the Node.js package has exceeded the memory usage limit. To resolve the issue, add a variable like `NODE_OPTIONS` and assign it a value of ***--max_old_space_size=16384***.
 
 ### How can I version my npm packages as part of the build process?
 
@@ -960,7 +964,7 @@ steps: # Checking out connected repo
 
 - task: PublishBuildArtifacts@1 
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'
 
@@ -979,5 +983,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:master
+      git push -u origin HEAD:main
 ```

@@ -6,7 +6,7 @@ ms.topic: include
 
 With the increased adoption of Azure Active Directory and prevalence of using groups to manage security, teams have increasingly been looking for ways to leverage those groups in Azure Boards. Now, in addition to querying work items which have been assigned or changed by specific people using the **In Group** or **Not In Group** operators, you can also use Azure Active Directory groups directly.
 
-See the [query operators]( https://docs.microsoft.com/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops#team-or-group-membership-queries) documentation for more information.
+See the [query operators]( https://docs.microsoft.com/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops&preserve-view=true#team-or-group-membership-queries) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Query work based on groups.](../../media/150_04.png "Query for work based")
@@ -32,7 +32,7 @@ While teams often focus on work within the context of what’s coming up next or
 * @StartOfWeek
 * @StartOfDay
 
-Each of these macros also accepts a new modifier string that lets you shift the data by different date units. For example, you can write a query to find all work items completed in the first quarter of this year by querying on State Change Date >= @StartOfYear and State Change Date <= @StartOfYear(“+3M”). See the [query macros](https://docs.microsoft.com/azure/devops/boards/queries/query-operators-variables?view=azure-devops#query-macros-or-variables) documentation for more information.
+Each of these macros also accepts a new modifier string that lets you shift the data by different date units. For example, you can write a query to find all work items completed in the first quarter of this year by querying on State Change Date >= @StartOfYear and State Change Date <= @StartOfYear(“+3M”). See the [query macros](/azure/devops/boards/queries/query-operators-variables?view=azure-devops&preserve-view=true#query-macros-or-variables) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Query for work relative to the start of the day, week, month, or year.](../../media/150_26.png "Query for work relative to the start of the day, week, month, or year" )

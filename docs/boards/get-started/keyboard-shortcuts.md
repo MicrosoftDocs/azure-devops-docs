@@ -4,8 +4,7 @@ titleSuffix: Azure Boards
 description: Keyboard shortcuts for the web portal for Azure Boards and Team Explorer
 ms.custom: Navigation
 ms.technology: devops-agile
-ms.topic: reference
-ms.assetid:  
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/22/2020 
@@ -82,7 +81,12 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2017"
 
+<a id="plan-shortcuts"></a>
+
 ## Plans
+
+You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
+ 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
@@ -97,7 +101,7 @@ Use these shortcuts when working in Team Explorer.
 <tr>
 <td width="56%">
 <p><strong>Navigate</strong></p> 
-<strong>Ctrl+0,a</strong>&nbsp;&nbsp;&nbsp;Open web portal<br/><strong>Ctrl+0,b</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../pipelines/overview.md" data-raw-source="[Build](../../pipelines/overview.md)">Build</a><br/><strong>Ctrl+0,c</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a><br/><strong>Ctrl+0,d</strong>&nbsp;&nbsp;&nbsp;Open <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal" data-raw-source="[Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)">Documents</a><br/><strong>Ctrl+0,e</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a><br/><strong>Ctrl+0,g</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a><br/><strong>Ctrl+0,h</strong>&nbsp;&nbsp;&nbsp;Open Home<br/><strong>Ctrl+0,m</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)">My Work (TFVC)</a><br/><strong>Ctrl+0,p</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Pending changes (TFVC)</a><br/><strong>Ctrl+0,r</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[Reports](../../report/sql-reports/reporting-services-reports.md)">Reports</a><br/><strong>Ctrl+0,s</strong>&nbsp;&nbsp;&nbsp;Open Settings<br/><strong>Ctrl+0,w</strong>&nbsp;&nbsp;&nbsp;Open Work items<br/><strong>Ctrl+0,y</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Synchronization (Git)](../../repos/git/gitquickstart.md)">Synchronization (Git)</a><br/>
+<strong>Ctrl+0,a</strong>&nbsp;&nbsp;&nbsp;Open web portal<br/><strong>Ctrl+0,b</strong>&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[Build](../../pipelines/get-started/what-is-azure-pipelines.md)">Build</a><br/><strong>Ctrl+0,c</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../organizations/projects/connect-to-projects.md" data-raw-source="[Connect](../../organizations/projects/connect-to-projects.md)">Connect</a><br/><strong>Ctrl+0,d</strong>&nbsp;&nbsp;&nbsp;Open <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal" data-raw-source="[Documents](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal)">Documents</a><br/><strong>Ctrl+0,e</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Branches (Git)](../../repos/git/gitquickstart.md)">Branches (Git)</a><br/><strong>Ctrl+0,g</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Changes (Git)](../../repos/git/gitquickstart.md)">Changes (Git)</a><br/><strong>Ctrl+0,h</strong>&nbsp;&nbsp;&nbsp;Open Home<br/><strong>Ctrl+0,m</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[My Work (TFVC)](../../repos/tfvc/share-your-code-in-tfvc-vs.md)">My Work (TFVC)</a><br/><strong>Ctrl+0,p</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Pending changes (TFVC)](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Pending changes (TFVC)</a><br/><strong>Ctrl+0,r</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[Reports](../../report/sql-reports/reporting-services-reports.md)">Reports</a><br/><strong>Ctrl+0,s</strong>&nbsp;&nbsp;&nbsp;Open Settings<br/><strong>Ctrl+0,w</strong>&nbsp;&nbsp;&nbsp;Open Work items<br/><strong>Ctrl+0,y</strong>&nbsp;&nbsp;&nbsp;Open <a href="../../repos/git/gitquickstart.md" data-raw-source="[Synchronization (Git)](../../repos/git/gitquickstart.md)">Synchronization (Git)</a><br/>
 <br/>
 <strong>Ctrl+&#39;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><strong>Alt+0</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page<br/><strong>Alt+1</strong>&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]<br/><strong>Alt+↑↓</strong>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
 

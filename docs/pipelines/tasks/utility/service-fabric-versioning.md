@@ -40,81 +40,24 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tr>
-<td>Application Package</td>
-<td>
-<p>The location of the Service Fabric application package to be deployed to the cluster.</p>
-<ul>
-<li>Example: `$(system.defaultworkingdirectory)/**/drop/applicationpackage`</li>
-<li>Can include wildcards and variables.</li>
-</ul>
-</td>
-</tr>
-
-<tr>
-<td>Version Value</td>
-<td>
-<p>The value appended to the versions in the manifest files. Default is `.$(Build.BuildNumber)`.</p>
-<p>**Tip:** You can modify the [build number format](../../process/run-number.md) directly or use a [logging command](https://go.microsoft.com/fwlink/?LinkId=821347) to dynamically set a variable in any format. For example, you can use `$(VersionSuffix)` defined in a PowerShell task:</p>
-<p>`$versionSuffix = ".$([DateTimeOffset]::UtcNow.ToString('yyyyMMdd.HHmmss'))"`</p>
-<p>`Write-Host "##vso[task.setvariable variable=VersionSuffix;]$versionSuffix"`</p>
-</ul>
-</td>
-</tr>
-
-<tr>
-<td>Version Behavior</td>
-<td>
-<p>Specify whether to append the version value to existing values in the manifest files, or replace them.</p>
-</td>
-</tr>
-
-<tr>
-<td>Update only if changed</td>
-<td>
-<p>Select this check box if you want to append the new version suffix to only the packages that have changed from a previous build. If no changes are found, the version suffix from the previous build will be appended.</p>
-<p>**Note:** By default, the compiler will create different outputs even if you made no changes. Use the [deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668) to ensure builds with the same inputs produce the same outputs.</p>
-</td>
-</tr>
-
-<tr>
-<td>Package Artifact Name</td>
-<td>
-<p>The name of the artifact containing the application package from the previous build.</p>
-</td>
-</tr>
-
-<tr>
-<td>Log all changes</td>
-<td>
-<p>Select this check box to compare all files in every package and log if the file was added, removed, or if its content changed. Otherwise, compare files in a package only until the first change is found for potentially faster performance.</p>
-</td>
-</tr>
-
-<tr>
-<td>Compare against</td>
-<td>
-<p>Specify whether to compare against the last completed, successful build or against a specific build.</p>
-</td>
-</tr>
-
-<tr>
-<td>Build Number</td>
-<td>
-<p>If comparing against a specific build, the build number to use.</p>
-</td>
-</tr>
+| Argument | Description |
+|--------- |------------ |
+| Application Package | The location of the Service Fabric application package to be deployed to the cluster.
+| | Example: `$(system.defaultworkingdirectory)/**/drop/applicationpackage` |
+| | Can include wildcards and variables. |
+| Version Value | The value appended to the versions in the manifest files. Default is `.$(Build.BuildNumber)`. |
+| | **Tip:** You can modify the [build number format](../../process/run-number.md) directly or use a [logging command](https://go.microsoft.com/fwlink/?LinkId=821347) to dynamically set a variable in any format. For example, you can use `$(VersionSuffix)` defined in a PowerShell task:
+| | `$versionSuffix = ".$([DateTimeOffset]::UtcNow.ToString('yyyyMMdd.HHmmss'))"` |
+| | `Write-Host "##vso[task.setvariable variable=VersionSuffix;]$versionSuffix"` |
+| Version Behavior | Specify whether to append the version value to existing values in the manifest files, or replace them. |
+| Update only if changed | Select this check box if you want to append the new version suffix to only the packages that have changed from a previous build. If no changes are found, the version suffix from the previous build will be appended. |
+|  |  **Note:** By default, the compiler will create different outputs even if you made no changes. Use the [deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668) to ensure builds with the same inputs produce the same outputs. |
+| Package Artifact Name | The name of the artifact containing the application package from the previous build. |
+| Log all changes | Select this check box to compare all files in every package and log if the file was added, removed, or if its content changed. Otherwise, compare files in a package only until the first change is found for potentially faster performance. |
+| Compare against | Specify whether to compare against the last completed, successful build or against a specific build. |
+| Build Number | If comparing against a specific build, the build number to use. |
 
 [!INCLUDE [control-options-arguments](../includes/control-options-arguments.md)]
-</table>
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
 
@@ -134,20 +77,21 @@ This task support two types of update:
 
 ## Task Inputs
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>updateType</code><br/>Update Type</td><td>(Required) Specify the type of update that should be made to the manifest files. In order to use both update types, add an instance of this task to the build pipeline for each type of update to be executed<br/>Default value: Manifest versions</td></tr>
-<tr><td><code>applicationPackagePath</code><br/>Application Package</td><td>(Required) Path to the application package. [Variables](../../build/variables.md) and wildcards can be used in the path</td></tr>
-<tr><td><code>versionSuffix</code><br/>Version Value</td><td>(Required) The value used to specify the version in the manifest files. Default is .$(Build.BuildNumber)<br/>Default value: .$(Build.BuildNumber)</td></tr>
-<tr><td><code>versionBehavior</code><br/>Version Behavior</td><td>Specify whether to append the version value to existing values in the manifest files or replace them<br/>Default value: Append</td></tr>
-<tr><td><code>updateOnlyChanged</code><br/>Update only if changed</td><td>(Required) Incrementally update only the packages that have changed. Use the [deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668) to ensure builds with the same inputs produce the same outputs<br/>Default value: false</td></tr>
-<tr><td><code>pkgArtifactName</code><br/>Package Artifact Name</td><td>The name of the artifact containing the application package for comparison</td></tr>
-<tr><td><code>logAllChanges</code><br/>Log all changes</td><td>Compare all files in every package and log if the file was added, removed, or if its content changed. Otherwise, compare files in a package only until the first change is found for faster performance<br/>Default value: true</td></tr>
-<tr><td><code>compareType</code><br/>Compare against</td><td>The build for comparison<br/>Default value: LastSuccessful</td></tr>
-<tr><td><code>buildNumber</code><br/>Build Number</td><td>The build number for comparison</td></tr>
-<tr><td><code>overwriteExistingPkgArtifact</code><br/>Overwrite Existing Package Artifact</td><td>Always download a new copy of the artifact. Otherwise use an existing copy, if present<br/>Default value: true</td></tr>
-<tr><td><code>imageNamesPath</code><br/>Image Names Path</td><td>Path to a text file that contains the names of the Docker images associated with the Service Fabric application that should be updated with digests. Each image name must be on its own line and must be in the same order as the digests in Image Digests file. If the images are created by the Service Fabric project, this file is generated as part of the Package target and its output location is controlled by the property BuiltDockerImagesFilePath</td></tr>
-<tr><td><code>imageDigestsPath</code><br/>Image Digests Path</td><td>(Required) Path to a text file that contains the digest values of the Docker images associated with the Service Fabric application. This file can be output by the [Docker task](../../index.yml) when using the push action. The file should contain lines of text in the format of 'registry/image_name@digest_value'</td></tr>
-</table>
+| Parameter | Name | Description |
+|----------- |---- |------------ |
+| `updateType` | Update Type | (Required) Specify the type of update that should be made to the manifest files. In order to use both update types, add an instance of this task to the build pipeline for each type of update to be executed. Default value: Manifest versions |
+| `applicationPackagePath` | Application Package | (Required) Path to the application package. [Variables](../../build/variables.md) and wildcards can be used in the path |
+| `versionSuffix` | Version Value | (Required) The value used to specify the version in the manifest files. Default is .$(Build.BuildNumber). Default value: .$(Build.BuildNumber) |
+| `versionBehavior` | Version Behavior | Specify whether to append the version value to existing values in the manifest files or replace them. Default value: Append |
+| `updateOnlyChanged` | Update only if changed | (Required) Incrementally update only the packages that have changed. Use the [deterministic compiler flag](https://go.microsoft.com/fwlink/?LinkId=808668) to ensure builds with the same inputs produce the same outputs. Default value: false |
+| `pkgArtifactName` | Package Artifact Name | The name of the artifact containing the application package for comparison |
+| `logAllChanges` | Log all changes | Compare all files in every package and log if the file was added, removed, or if its content changed. Otherwise, compare files in a package only until the first change is found for faster performance. Default value: true |
+| `compareType` | Compare against | The build for comparison. Default value: LastSuccessful |
+| `buildNumber` | Build Number | The build number for comparison |
+| `overwriteExistingPkgArtifact` | Overwrite Existing Package Artifact | Always download a new copy of the artifact. Otherwise use an existing copy, if present. Default value: true
+| `imageNamesPath` | Image Names Path | Path to a text file that contains the names of the Docker images associated with the Service Fabric application that should be updated with digests. Each image name must be on its own line and must be in the same order as the digests in Image Digests file. If the images are created by the Service Fabric project, this file is generated as part of the Package target and its output location is controlled by the property BuiltDockerImagesFilePath |
+| `imageDigestsPath` | Image Digests Path | (Required) Path to a text file that contains the digest values of the Docker images associated with the Service Fabric application. This file can be output by the [Docker task](../../index.yml) when using the push action. The file should contain lines of text in the format of 'registry/image_name@digest_value' |
+
 ::: moniker-end
 
 ## Example

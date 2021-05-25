@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 08/19/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -25,6 +25,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
 
 ## Schema
 
@@ -32,21 +33,26 @@ Here is the full syntax to specify a deployment job:
 
 ```YAML
 jobs:
-- deployment: string   # Name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
-  displayName: string  # Friendly name to display in the UI.
-  pool:                # See pool schema.
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
+  displayName: string  # friendly name to display in the UI
+  pool:                # see pool schema
     name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
-  dependsOn: string 
-  condition: string 
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  dependsOn: string
+  condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  container: containerReference # Container to run the job inside.
-  services: { string: string | container } # Container resources to run as a service container.
-  timeoutInMinutes: nonEmptyString        # How long to run the job before automatically cancelling.
-  cancelTimeoutInMinutes: nonEmptyString  # How much time to give 'run always even if cancelled tasks' before killing them.
-  variables: { string: string } | [ variable | variableReference ]  
-  environment: string  # Target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy: [ deployment strategy ] # See deployment strategy schema.
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
+  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: # several syntaxes, see specific section
+  environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:    #rolling, canary are the other strategies that are supported
+      deploy:
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 ## Deployment strategies
@@ -109,6 +115,18 @@ strategy:
           ...
 ```
 
+If you are using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
+
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      workspace:
+        clean: all
+    environment: staging
+```
+
 ### Rolling deployment strategy
 
 A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
@@ -117,7 +135,7 @@ We currently only support the rolling strategy to VM resources.
 
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
-Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+Rolling deployments can be configured by specifying the keyword `rolling:` under the `strategy:` node. 
 The `strategy.name` variable is available in this strategy block, which takes the name of the strategy. In this case, rolling.
 
 ```YAML
@@ -206,9 +224,10 @@ The following variables are available in this strategy:
 
 ### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
+
 jobs:
   # Track deployments on the environment.
 - deployment: DeployWeb
@@ -222,6 +241,7 @@ jobs:
     runOnce:
       deploy:
         steps:
+        - checkout: self 
         - script: echo my first deployment
 ```
 
@@ -331,7 +351,7 @@ jobs:
             strategy: $(strategy.name) 
             percentage: $(strategy.increment) 
             manifests: 'manifest.yml' 
-      postRouteTaffic: 
+      postRouteTraffic: 
         pool: server 
         steps:           
         - script: echo monitor application health...   
@@ -424,7 +444,7 @@ When you define an environment in a deployment job, the syntax of the output var
 
 ```yaml
 stages:
-- stage: MyStage
+- stage: StageA
   jobs:
   - deployment: A1
     pool:
@@ -441,7 +461,7 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     environment: 
-      name: env1
+      name: env2
       resourceType: virtualmachine
     strategy:                  
       runOnce:
@@ -466,12 +486,46 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     variables:
-      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStepTwo.myOutputVar'] ]
+      myVarFromDeploymentJob: $[ dependencies.A2.outputs['A2.setvarStepTwo.myOutputVar'] ]
       myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
     
     steps:
     - script: "echo $(myOutputVarTwo)"
       name: echovartwo
+```
+
+When you output a variable from a deployment job, referencing it from the next job uses different syntax depending on if you want to set a variable or use it as a condition for the stage. 
+
+```yaml
+stages:
+- stage: StageA
+  jobs:
+  - job: A1
+    steps:
+      - pwsh: echo "##vso[task.setvariable variable=RunStageB;isOutput=true]true"
+        name: setvarStep
+      - bash: echo $(System.JobName)
+
+- stage: StageB
+  dependsOn: 
+    - StageA
+ 
+  # when referring to another stage, stage name is included in variable path
+  condition: eq(dependencies.StageA.outputs['A1.setvarStep.RunStageB'], 'true')
+  
+  # Variables reference syntax differs slightly from inter-stage condition syntax
+  variables:
+    myOutputVar: $[stageDependencies.StageA.A1.outputs['setvarStep.RunStageB']]
+  jobs:
+  - deployment: B1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: envB
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - bash: echo $(myOutputVar)
 ```
 
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)

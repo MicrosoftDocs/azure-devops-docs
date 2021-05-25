@@ -29,6 +29,9 @@ This task is not supported in a build or release pipeline.
 
 [!INCLUDE [temp](../includes/yaml/AzurePolicyV0.md)]
 
+> [!IMPORTANT]
+> Service connections cannot be specified by variable.
+
 ::: moniker-end
 
 ## Arguments

@@ -1,13 +1,38 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", 
+          "**/*.md",
           "**/*.yml"
         ],
-        "group": "all",
+        "exclude": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "migrate/build-deployment-best-practices.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**",
+          "**/obj/**",
+          "**/includes/**",
+          "**/_data/**",
+          "**/_shared/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "group": "all"
+      },
+      {
+        "files": [
+          "pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+          "migrate/build-deployment-best-practices.md",
+          "pipelines/archive/apps/aspnet/**",
+          "pipelines/archive/apps/java/**",
+          "pipelines/archive/apps/nodejs/**",
+          "pipelines/archive/release/**"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -29,12 +54,12 @@
           "**/*.mp4",
           "**/*.svg"
         ],
-        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/_data/**"
-        ]
+        ],
+        "group": "all"
       }
     ],
     "overwrite": [],
@@ -44,7 +69,9 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps Services"],
+      "searchScope": [
+        "Azure DevOps Services"
+      ],
       "ms.manager": "mijacobs",
       "author": "mijacobs",
       "ms.author": "mijacobs",
@@ -88,10 +115,8 @@
       "monikerRange": {
         "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
-        "report/powerbi/**": ">= azure-devops-2019",
         "report/sql-reports/**": "< azure-devops",
-        "reference/witadmin/**": "< azure-devops",
-        "reference/mapping/**": "<= tfs-2018"
+        "reference/witadmin/**": "< azure-devops"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
@@ -121,9 +146,8 @@
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "v-maksim",
-        "repos/get-started/**": "macoope",
-        "repos/git/**": "macoope"
-
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
       },
       "author": {
         "artifacts/**": "ramiMSFT",
@@ -153,9 +177,8 @@
         "pipelines/test/**": "steved0x",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/get-started/**": "vtbassmatt",
-        "repos/git/**": "vtbassmatt"
-
+        "repos/get-started/**": "vijayma",
+        "repos/git/**": "vijayma"
       },
       "ms.technology": {
         "pipelines/**": "devops-cicd",
@@ -177,18 +200,30 @@
         "pipelines/release/**": "devops-cicd-release",
         "pipelines/reports/**": "devops-cicd-reports",
         "pipelines/repos/**": "devops-cicd-repos",
+        "pipelines/security/**": "devops-cicd-security",
         "pipelines/scripts/**": "devops-cicd-scripts",
         "pipelines/targets/**": "devops-cicd-targets",
         "pipelines/tasks/**": "devops-cicd-tasks",
         "pipelines/test/**": "devops-cicd-test"
-
       },
-      "ROBOTS":{
+      "recommendations": {
+        "pipelines/repos/**": "true",
+        "repos/tfvc/**": "true",
+        "repos/get-started/**": "true",
+        "repos/git/**": "true"
+      },
+      "ROBOTS": {
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"
+      },
+      "exclude_monikers": {
+        "reference/error/**/*.md": [
+          "azure-devops"
+        ]
       }
     },
     "template": [],
     "dest": "team-services",
+    "markdownEngineName": "markdig",
     "groups": {
       "all": {
         "dest": "all",

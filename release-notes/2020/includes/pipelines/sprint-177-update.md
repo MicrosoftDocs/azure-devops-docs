@@ -25,7 +25,7 @@ By deleting unhealthy VMs, Azure Pipelines keeps your agent pool optimized to ru
 
 With this release, we enhanced the diagnosability of unhealthy VMs by giving you the ability to save an unhealthy agent for investigation. 
 
-When an unhealthy agent is saved, you can connect to the virtual machine, debug, and retrieve any logs you need. When finished, you can release the agent and the associated VM. For more information, see the section on [troubleshooting unhealthy agents](https://go.microsoft.com/fwlink/?linkid=2145884).
+When an unhealthy agent is saved, you can connect to the virtual machine, debug, and retrieve any logs you need. When finished, you can release the agent and the associated VM. For more information, see the section on [troubleshooting unhealthy agents](/azure/devops/pipelines/agents/scale-set-agents).
 
 ### `ubuntu-latest` pipelines will soon use Ubuntu-20.04
 

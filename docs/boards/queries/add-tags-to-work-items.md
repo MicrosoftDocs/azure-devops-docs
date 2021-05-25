@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
+ms.date: 04/13/2021
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -115,13 +115,17 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
+<a id="no-tags" />
+
+> [!NOTE]
+> The ability to query for work items that don't have any tags attached to them is not a supported feature. If you'd like to up vote the request to support this feature, you can do so on our Developer Community page, [Be able to search for empty tags](https://developercommunity.visualstudio.com/t/be-able-to-search-for-empty-tags/907425). 
 
 <a id="show-tags"></a>
 
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
-Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
+Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
 > ![Column options dialog, Add Tags to the selected columns to display.](media/add-tags/column-options-add-tags-field.png)
@@ -136,7 +140,7 @@ All tags that have been added to the listed work items appear.
 
 ::: moniker range="<= tfs-2015"
 
-1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon to select it from the menu of options.    
+1. Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: to select it from the menu of options. 
 
 	![Column options dialog, Add Tags to the selected columns to display, TFS-2015 and earlier versions.](media/add-tags-to-query-results.png)
 
@@ -154,9 +158,9 @@ From the web portal, you can filter backlogs, boards, and query results using ta
  
 ::: moniker range=">= tfs-2017"
 
-Begin by clicking the ![actions icon](../media/icons/filter-icon.png) filter icon. 
+Begin by choosing **Filter** :::image type="icon" source="../media/icons/filter-icon.png" border="false":::. 
 
-Check the boxes of those tags that you want to filter on. Keep the OR selection to perform a logical OR for all the tags you selected. Or, click the AND option to perform a logical AND on all the selected tags. 
+Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the tags you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
 
 > [!div class="mx-imgBorder"]
 > ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
@@ -210,6 +214,20 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker-end   
 
+::: moniker range="azure-devops"
+
+<a id="group-by-tags"></a> 
+
+## Chart work items and group by tags
+
+> [!NOTE]   
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.    This feature is in public preview. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **Enable group by tags for work item chart widget on dashboard**. 
+
+To group a **Chart for Work Items** widget by tags, perform the same steps provided in [Track progress with status and trend query-based charts, Add a chart widget to a dashboard](../../report/dashboards/charts.md#add-chart-widget). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+
+:::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
+
+::: moniker-end
 
 ## Related articles
 

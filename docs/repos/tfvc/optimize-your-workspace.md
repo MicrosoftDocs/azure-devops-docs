@@ -72,7 +72,7 @@ The main problem with this approach is that it would also provide her with a lot
 
 ## Use workspaces to isolate and manage work among different branches
 
-If your company uses [branches to isolate risk](use-branches-isolate-risk-team-foundation-version-control.md) in your codebase, then you should create a separate workspace for each branch you work in.
+If your company uses [branches to isolate risk](./branching-strategies-with-tfvc.md) in your codebase, then you should create a separate workspace for each branch you work in.
 
 For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolate the risk among their many teams, they've branched their codebase. Raisa continues her work within her small team, but now she uses a few workspaces to manage the work that she now does in multiple branches.
 
@@ -92,4 +92,4 @@ Raisa manages her work in three workspaces, each of which maps folders in a bran
 ![Diagram showing mapping branches to folders.](media/optimize-your-workspace/IC720117.png)
 
 > [!NOTE]
-> [Branching](use-branches-isolate-risk-team-foundation-version-control.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.
+> [Branching](./branching-strategies-with-tfvc.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.

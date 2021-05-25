@@ -1,12 +1,16 @@
-- name: Migrate data from TFS to Azure DevOps Services
+- name: Migrate data to Azure DevOps Services
   href: migration-overview.md
 - name: Migrate options
   href: migrate-from-tfs.md
 - name: Import
   href: migration-import.md
+- name: Import large collections
+  href: migration-import-large-collections.md
 - name: Process templates
   href: migration-processtemplates.md
 - name: Post-import
   href: migration-post-import.md
 - name: Troubleshooting
   href: migration-troubleshooting.md
+- name: FAQs, migration and process models
+  href: faqs.yml

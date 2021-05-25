@@ -21,7 +21,7 @@ ms.date: 10/11/2017
 >  portal, which ignores this plug-in. Instead, default permissions are set for 
 >  project-level and collection-level security groups. After you create a project, 
 >  you can manage [TFVC check-in policies](../../repos/tfvc/add-check-policies.md) or 
->  [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.  
+>  [permissions](../../repos/tfvc/set-tfvc-repository-permissions.md) from the web portal.  
 
 
 By using the plug-in for version control, you can configure a project's initial security permissions, check-out policies, and check-in notes.  
@@ -110,7 +110,7 @@ The following example shows how to create an additional check-in note labeled "D
 ##  Permissions    
 Version control has a specific set of permissions that you can configure for a process template. By specifying permissions, you define what actions security groups and individuals can perform on items that are under version control. For more information, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
-The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the project from the web UI, see [Set repository permissions for Git or TFVC](../../organizations/security/set-git-tfvc-repository-permissions.md).
+The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the project from the web UI, see [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md) or [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md).
 
  
 > [!div class="tabbedCodeSnippets"]

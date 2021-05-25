@@ -33,7 +33,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 |Argument|Description|
 |--- |--- |
 |`connection` <br/>GitHub Connection|(Required) Enter the service connection name for your GitHub connection. Learn more about service connections [here](../../library/service-endpoints.md).|
-|`userRepository` <br/>Repository|(Required) Select the name of GitHub repository in which GitHub releases will be created.|
+|`userRepository` <br/>Repository|(Required) Select the name of GitHub repository in which GitHub releases will be downloaded from.|
 |`defaultVersionType` <br/>Default version|(Required) The version of the GitHub Release from which the assets are downloaded. The version type can be 'Latest Release', 'Specific Version' or 'Specific Tag'<br/>Default value: `latest`|
 |`version` <br/> Release|(Required) This option shows up if 'Specific Version' or 'Specific Tag' is selected as Default Release version type. Based on the version type selected, Release name or the Tag needs to be provided.|
 |`itemPattern` <br/> Item pattern|(Optional) Minimatch pattern to filter files to be downloaded from the available release assets. To download all files within release use \*\*.|

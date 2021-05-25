@@ -16,24 +16,18 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: September 2020
+          - text: April 2021
             url: azure-devops-docs-whats-new.md
-          - text: August 2020
-            url: azure-devops-docs-2020-08.md
-          - text: July 2020
-            url: azure-devops-docs-2020-07.md
-          - text: June 2020
-            url: azure-devops-docs-2020-06.md
-          - text: May 2020
-            url: azure-devops-docs-2020-05.md
-          - text: April 2020
-            url: azure-devops-docs-2020-04.md
-          - text: March 2020
-            url: azure-devops-docs-2020-03.md
-          - text: February 2020
-            url: azure-devops-docs-2020-02.md
-          - text: January 2020
-            url: azure-devops-docs-2020-01.md
+          - text: March 2021
+            url: azure-devops-docs-2021-03.md
+          - text: February 2021
+            url: azure-devops-docs-2021-02.md
+          - text: January 2021
+            url: azure-devops-docs-2021-01.md
+          - text: December 2020
+            url: azure-devops-docs-2020-12.md
+          - text: November 2020
+            url: azure-devops-docs-2020-11.md
 
   - title: "Get involved - contribute to Azure DevOps docs"
     linkLists:
@@ -42,7 +36,7 @@ landingContent:
           - text: "Azure DevOps docs repository"
             url: https://github.com/MicrosoftDocs/azure-devops-docs/blob/master/README.md
           - text: Microsoft docs contributor guide
-            url: https://docs.microsoft.com/en-us/contribute/
+            url: /contribute/
 
   - title: "Related what's new pages"
     linkLists:

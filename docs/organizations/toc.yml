@@ -3,8 +3,13 @@
   href: index.yml
 - name: About settings
   href: ./settings/about-settings.md
+- name: Search settings
+  href: ./settings/search-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Time zone settings
+  href: ./settings/timezone-settings-usage.md
+  displayName: timezone, organization
 - name: Security, membership, & access
   href: ../organizations/security/toc.yml
 - name: Billing
@@ -39,6 +44,8 @@
   items:
   - name: Usage & rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Monitor usage
+    href: ./accounts/usage-monitoring.md
   - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
 - name: Extensions
@@ -64,47 +71,29 @@
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
-    href: ../repos/git/create-new-repo.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage Git repository permissions
+    href: ../repos/git/set-git-repository-permissions.md
   - name: Manage Git branch policies
-    href: ../repos/git/branch-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
-  - name: Manage repository permissions
-    href: ./security/set-git-tfvc-repository-permissions.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage TFVC repository permissions
+    href: ../repos/tfvc/set-tfvc-repository-permissions.md
   - name: Add TFVC Check-In Policies
-    href: ../repos/tfvc/add-check-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Test
   items:
   - name: Set test retention policies
-    href: ../test/how-long-to-keep-test-results.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Artifacts
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Troubleshooting
+- name: Reference
   items:
-  - name: User & permissions management
-    href: ./accounts/faq-user-and-permissions-management.md
-  - name: Trace permissions
-    href: ./security/faq-trace-permissions.md
-  - name: Authenticate & invite with GitHub
-    href: ./security/faq-github-authentication.md
-  - name: Access with Azure AD
-    href: ./accounts/faq-azure-access.md
-  - name: Set up Visual Studio
-    href: ./accounts/faq-set-up-vs.md
-  - name: Resolve connection issues
-    href: ../user-guide/troubleshoot-connection.md
-  - name: "TF31002: Unable to connect"
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Projects & organizations
-    items:
-    - name: Create a project
-      href: ./projects/faq-create-project.md
-    - name: Rename a project
-      href: ./projects/faq-rename-project.md
-    - name: Add administrators
-      href: ./accounts/faq-user-and-permissions-management.md
-    - name: Organization settings
-      href: ./accounts/faq-configure-customize-organization.md
+  - name: Naming restrictions
+    href: settings/naming-restrictions.md 
+  - name: Work tracking object limits
+    href: settings/work/object-limits.md 
 - name: REST API reference
   items:
   - name: Notifications
@@ -126,7 +115,7 @@
   - name: Process 
     href: ./settings/work/inheritance-process-model.md
   - name: Search  
-    href: ../project/search/overview.md
+    href: ../project/search/get-started-search.md
   - name: Get started  
     href: ../get-started/index.yml
   - name: Marketplace & extensibility  

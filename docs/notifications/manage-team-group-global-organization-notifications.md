@@ -1,16 +1,16 @@
 ---
 title: Manage notifications for a team, group, global organization
 titleSuffix: Azure DevOps
-description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps & Team Foundation Server (TFS).  
+description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: how-to
 ms.date: 10/09/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage notifications for a team, group, or organization
@@ -47,13 +47,13 @@ A subscription lets you control what your team is notified of and how the team r
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-1. Select **New subscription**. 
+2. Select **New subscription**. 
 
-    ![Screenshot of New subscription button highlighted.](media/new-subscription-newnav.png) 
+    ![Screenshot of New subscription highlighted.](media/new-subscription-newnav.png) 
 
-1. Select the type of activity you want your team to be notified of.
+3. Select the type of activity you want your team to be notified of.
 
 	![Screenshot of select event category and template page.](media/new-sub-page-preview.png)
 
@@ -67,12 +67,12 @@ A subscription lets you control what your team is notified of and how the team r
 
    Choose from one of the following delivery options:
 
-     | Delivery option          | Description                                                                                                                                                                                |
-   |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **Team members by role** | Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification. |
-   | **Team preference**      | Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).                                                                                 |
-   | **Custom email address** | Send an email to a specified email address.                                                                                                                                                |
-   | **All team members**     | Send an individual email to each member of the team.                                                                                                                                       |                                                           |
+     | **Delivery option**    | **Description**   | 
+     | --------------------|-------------------|  
+     | **Team members by role** | Only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification. |  
+     | **Team preference**      | Use the team's default delivery preference. For more information, see [Manage delivery settings](#manage).   |  
+     | **Custom email address** | Send an email to a specified email address.    |  
+     | **All team members**     | Send an individual email to each member of the team.        |   
 
    For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
@@ -100,13 +100,13 @@ A subscription lets you control what your team is notified of and how the team r
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-1. Select **New subscription**.
+2. Select **New subscription**.
 
     ![New subscription is highlighted.](media/new-subscription-newnav.png) 
 
-1. Select the type of activity you want your team to be notified of.
+3. Select the type of activity you want your team to be notified of.
 
 	![Select event category and template.](media/new-sub-page1.png)
 
@@ -151,7 +151,7 @@ A subscription lets you control what your team is notified of and how the team r
 1. Open the **Notifications** page in **Team settings**: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
     > [!div class="mx-imgBorder"] 
-    >![Navigate to team notifications page](media/nav-team-notifications-hub.png) 
+    >![Go to team notifications page](media/nav-team-notifications-hub.png) 
 
 1. Select **New subscription**. 
 
@@ -257,13 +257,13 @@ Your group delivery settings are updated for notifications.
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted.":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted.":::
 
-1. Choose **Delivery settings**:
+2. Choose **Delivery settings**:
 
    ![Delivery settings](media/delivery-settings-newnav.png)
 
-1. Choose which option best fits your team's needs:  
+3. Choose which option best fits your team's needs:  
 
     ![Delivery settings options for team and project.](media/delivery-settings-options.png)
 

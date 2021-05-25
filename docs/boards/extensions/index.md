@@ -4,19 +4,17 @@ description: Learn about Azure Boards extensions
 titleSuffix: Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 12/02/2019
+ms.date: 11/06/2020
 ---
 
 # Azure Boards extensions developed by Microsoft
 
-The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links.  
-
-
-
+The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links. For information on developing your own extension, see [Develop a web extension](../../extend/get-started/node.md).
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -37,16 +35,47 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020"
 
-- [Delivery Plans](../plans/review-team-plans.md)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> A new version of Delivery Plans is available. This feature is now part of Azure Boards and replaces the Delivery Plans extension. Delivery Plans provides support for the following tasks: 
+> - Add up to 15 team backlogs
+> - Add custom portfolio backlogs as well as Epics 
+> - View work items that span several iterations 
+> - Reset Start Date and Target Date through drag and drop borders 
+> - Add backlog items to a team from a plan   
+> - View rollup progress of Features, Epics, and other portfolio items
+> - View work item dependencies 
+> - Stakeholders can view plans
+
+To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
+::: moniker-end
+
+
+::: moniker range="> azure-devops-2020"
 - [Feature Timeline](feature-timeline.md)
 - [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Dependency Tracker](dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-- [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2020"
+
+- [Delivery Plans](delivery-plans.md)
+- [Feature Timeline](feature-timeline.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Dependency Tracker](dependency-tracker.md)
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
+- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
+- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 
 ::: moniker-end
 
@@ -58,6 +87,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"

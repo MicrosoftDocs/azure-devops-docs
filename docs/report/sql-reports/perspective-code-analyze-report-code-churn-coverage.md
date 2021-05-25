@@ -151,7 +151,7 @@ The following table describes the measures in the Run Coverage measure group. By
   
 ## Related notes
 -  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
--  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
+-  [Code Coverage](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Code Churn tables](table-reference-code-churn.md)   
 -  [Run Coverage tables](run-coverage-tables.md)   
 -  [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)

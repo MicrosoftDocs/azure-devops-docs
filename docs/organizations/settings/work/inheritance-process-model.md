@@ -158,8 +158,8 @@ Fields are defined for all projects and processes in the organization. That mean
       - [Change the field label](customize-process-field.md#rename-field)  
       - [Set Required/Default options](customize-process-field.md#options)  
       - [Move the field within the layout](customize-process-form.md#move-field)  
-      - [Modify Description help text](customize-process-field.md#modify-description)  
       ::: moniker range=">= azure-devops-2020"
+      - [Modify Description help text](customize-process-field.md#modify-description)  
       - [Show/Hide field on form](customize-process-field.md#show-hide-field)
       ::: moniker-end  
       - [Remove field from form](customize-process-field.md#remove-field)  
@@ -188,19 +188,10 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
-- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-- You can't change the field name or data type once you've defined it
-- You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located
-- You can't modify the Description help text of inherited fields  
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 ::: moniker-end
@@ -434,6 +425,8 @@ When the display width won't accommodate all columns, columns appear stacked wit
 ## Backlog and board customizations 
 
 [!INCLUDE [temp](../includes/process-customize-backlogs.md)]
+
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 

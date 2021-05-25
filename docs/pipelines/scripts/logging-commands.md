@@ -3,18 +3,26 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 10/29/2020
+ms.date: 03/15/2021
+ms.custom: contperf-fy21q3
 ---
 
 # Logging commands
 
-> [!NOTE]
-> Use UTF-8 formatting for logging commands. 
-
-## Overview
-
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
-They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md).
+They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you are troubleshooting a pipeline. 
+
+
+
+|Type  |Commands  |
+|---------|---------|
+|Task commands     |    [LogIssue](#logissue-log-an-error-or-warning), [SetProgress](#setprogress-show-percentage-completed),  [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [AddAttachment](#addattachment-attach-a-file-to-the-build), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable) |
+|Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
+|Build commands     |  [UploadLog](#uploadlog-upload-a-log), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [AddBuildTag](#addbuildtag-add-a-tag-to-the-build) |
+|Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
+
+
+## Logging command format 
 
 The general format for a logging command is:
 
@@ -49,6 +57,9 @@ File paths should be given as absolute paths: rooted to a drive on Windows, or b
 
 ## Formatting commands
 
+> [!NOTE]
+> Use UTF-8 formatting for logging commands. 
+
 These commands are messages to the log formatter in Azure Pipelines.
 They mark specific log lines as errors, warnings, collapsible sections, and so on.
 
@@ -58,6 +69,7 @@ The formatting commands are:
 ##[group]Beginning of a group
 ##[warning]Warning message
 ##[error]Error message
+##[section]Start of a section
 ##[debug]Debug text
 ##[command]Command-line being run
 ##[endgroup]
@@ -66,8 +78,8 @@ The formatting commands are:
 
 Those commands will render in the logs like this:
 
-![Screenshot of logs with custom formatting](media/log-formatting.png)
-
+![Screenshot of logs with custom formatting options](media/log-formatting.png)
+ 
 That block of commands can also be collapsed, and looks like this:
 
 ![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
@@ -152,7 +164,7 @@ for i in {0..100..10}
 do
    sleep 1
    echo "##vso[task.setprogress value=$i;]Sample Progress Indicator"
-do
+done
 echo "Lengthy process is complete."
 ```
 
@@ -172,7 +184,7 @@ Write-Host "Lengthy process is complete."
 
 ---
 
-To see how it looks, save and queue the build, and then watch the build run. Observer that a progress indicator changes when the task runs this script.
+To see how it looks, save and queue the build, and then watch the build run. Observe that a progress indicator changes when the task runs this script.
 
 ### Complete: Finish timeline
 
@@ -253,6 +265,8 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
 
+See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
+
 #### Properties
 
 * `variable` = variable name (Required)
@@ -266,38 +280,46 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 
 Set the variables:
 
-```bash
-echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```bash
-echo "Non-secrets automatically mapped in, sauce is $SAUCE"
-echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
-echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-echo "Future jobs can also see $OUTPUTSAUCE"
+```yaml
+- bash: |
+    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
+    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
+    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
+    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-```ps
-Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```ps
-Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
-Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
-Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
+```yaml
+- pwsh: |
+    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
+    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
+    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    Write-Host "Future jobs can also see $env:SETVARS_OUTPUTSAUCE"
+    write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 ---
@@ -306,8 +328,9 @@ Console output:
 
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
-Secrets are not automatically mapped in, secretSauce is
+Secrets are not automatically mapped in, secretSauce is 
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 
@@ -410,34 +433,44 @@ The updated environment variable will be reflected in subsequent tasks.
                 
 #### Usage
 
-Create an artifact link. Artifact location must be a file container path, VC path or UNC share path.
+Create a link to an existing Artifact. Artifact location must be a file container path, VC path or UNC share path.
 
 #### Properties
 
 * `artifactname` = artifact name (Required)
-*  `type` = `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`, artifact type (Required)
+*  `type` = artifact type (Required) `container` | `filepath` | `versioncontrol` | `gitref` | `tfvclabel`
 
 #### Examples
 
-```
-##vso[artifact.associate type=container;artifactname=MyServerDrop]#/1/build
-```
+- **container**
+    ```
+    ##vso[artifact.associate type=container;artifactname=MyServerDrop]#/1/build
+    ```
 
-```
-##vso[artifact.associate type=filepath;artifactname=MyFileShareDrop]\\MyShare\MyDropLocation
-```
+- **filepath**
+    ```
+    ##vso[artifact.associate type=filepath;artifactname=MyFileShareDrop]\\MyShare\MyDropLocation
+    ```
 
-```
-##vso[artifact.associate type=versioncontrol;artifactname=MyTfvcPath]$/MyTeamProj/MyFolder
-```
+- **versioncontrol**
+    ```
+    ##vso[artifact.associate type=versioncontrol;artifactname=MyTfvcPath]$/MyTeamProj/MyFolder
+    ```
 
-```
-##vso[artifact.associate type=gitref;artifactname=MyTag]refs/tags/MyGitTag
-```
+- **gitref**
+    ```
+    ##vso[artifact.associate type=gitref;artifactname=MyTag]refs/tags/MyGitTag
+    ```
 
-```
-##vso[artifact.associate type=tfvclabel;artifactname=MyTag]MyTfvcLabel
-```
+- **tfvclabel**
+    ```
+    ##vso[artifact.associate type=tfvclabel;artifactname=MyTag]MyTfvcLabel
+    ```
+
+- **Custom Artifact**
+    ```
+    ##vso[artifact.associate artifactname=myDrop;artifacttype=myartifacttype]https://downloads.visualstudio.com/foo/bar/package.zip
+    ```
 
 ### Upload: Upload an artifact
 
@@ -449,14 +482,17 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+* `containerfolder` = folder that the file will upload to, folder will be created if needed.
+* `artifactname` = artifact name. (Required)
 
 #### Example
 
 ```
-##vso[artifact.upload containerfolder=testresult;artifactname=uploadedresult;]c:\testresult.trx
+##vso[artifact.upload containerfolder=testresult;artifactname=uploadedresult]c:\testresult.trx
 ```
+
+> [!NOTE]
+> The difference between Artifact.associate and Artifact.upload is that the first can be used to create a link to an existing artifact, while the latter can be used to upload/publish a new Artifact.
 
 ## Build commands
 

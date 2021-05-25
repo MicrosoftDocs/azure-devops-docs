@@ -4,13 +4,11 @@ titleSuffix: Azure Boards
 description: Construct a URL for a work item for Azure Boards, Azure DevOps & TFS
 ms.custom: work-items, seodec18
 ms.technology: devops-agile   
-ms.assetid:  
 ms.author: kaelli
-ms.topic: reference   
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'   
 ms.date: 07/09/2020
 ---
-
 
 
 # Define the URL for a work item 

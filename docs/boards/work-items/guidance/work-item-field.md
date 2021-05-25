@@ -5,7 +5,7 @@ description: Index to all fields used in the Agile, Scrum, and CMMI processes/pr
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
-ms.topic: reference  
+ms.topic: conceptual  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -147,7 +147,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on User Experience</a> (CMMI)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a> (TCM)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Issue](../../queries/build-test-integration.md)">Issue</a> (TCM)</li>
-<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration Id</a>  (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration ID</a>  (System)</li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Path](../../queries/query-by-area-iteration-path.md)">Iteration Path</a> (System)</li>
 </ul>
 <h3>J-L-M-N</h3>
@@ -289,7 +289,7 @@ The following articles describe fields that are used in common by several WITs, 
 ## Related articles
 
 - [About work item fields](../work-item-fields.md)
-- [Create managed queries](../../queries/example-queries.md)
+- [About managed queries](../../queries/about-managed-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
 - [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    

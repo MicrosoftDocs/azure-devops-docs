@@ -30,7 +30,7 @@ tfsprodcus5ip1	 13.89.136.165
 		
 tfsprodcus3ip1	 13.86.36.181
 ```
-**East Asia**
+**Asia Pacific**
 
 ```
 shprodea1ip1	 20.189.72.51

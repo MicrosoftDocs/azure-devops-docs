@@ -7,8 +7,8 @@ ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 02/11/2021
 ---
 
 # 6. Update and monitor your Taskboard
@@ -60,7 +60,12 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range=">= azure-devops-2020"
 
-1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
+1. From your web browser, open the sprint backlog for your team.
+
+   1. Check that you have selected the right **Project**
+   2. Choose **Boards>Sprints**
+   3. Select the correct **Team** from the team selector menu
+   4. Choose **Taskboard**
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
@@ -188,7 +193,7 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 
 ::: moniker range=">= azure-devops-2020"
 > [!NOTE]
-> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 ::: moniker-end
 
 
@@ -269,7 +274,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 	> [!div class="mx-imgBorder"]
 	> ![Group by people](media/taskboard/group-by-people-agile.png)
 
-1. To filter on the tasks for a specific team member, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, and then select their name from the **Assigned to** filter box.
+1. To filter on the tasks for a specific team member, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::, and then select their name from the **Assigned to** filter box. To learn more, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
 
 	> [!div class="mx-imgBorder"]
 	> ![Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)
@@ -340,13 +345,16 @@ Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md
 
 ## Related articles
 
-As you can see, the taskboard provides a lot of support for your Scrum activities. For related topics, see:
+As you can see, the Taskboard provides a lot of support for your Scrum activities. For related topics, see:
 
-*	[Scrum best practices](best-practices-scrum.md)
-*	[Sprint planning](assign-work-sprint.md)
-*	[Schedule sprints](define-sprints.md)
-*	[Customize a sprint Taskboard](customize-taskboard.md)
-*	[Capacity planning](../sprints/set-capacity.md)
+- [Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md)
+- [Scrum best practices](best-practices-scrum.md)
+- [Sprint planning](assign-work-sprint.md)
+- [Schedule sprints](define-sprints.md)
+- [Customize a sprint Taskboard](customize-taskboard.md)
+- [Capacity planning](../sprints/set-capacity.md)
+ 
 
 <!---
 <a id="task-board-controls">  </a>

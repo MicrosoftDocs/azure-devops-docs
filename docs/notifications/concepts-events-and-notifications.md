@@ -1,13 +1,13 @@
 ---
 title: Events, subscriptions, and notifications
 titleSuffix: Azure DevOps 
-description: Learn about events and subscriptions in Azure DevOps and Team Foundation Server (TFS), and how they're used to create notifications to users.
+description: Learn about events and subscriptions in Azure DevOps, and how they're used to create notifications to users.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 01/14/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -35,7 +35,7 @@ Individual users can choose to opt out of any default subscription while other t
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Create managed queries](../boards/queries/using-queries.md#group-clauses).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 
@@ -45,6 +45,6 @@ Individuals can also create custom subscriptions, which apply only to them. Lear
 
 ## Notifications
 
-When an **event** occurs in Azure DevOps or TFS, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
+When an **event** occurs in Azure DevOps, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
 
 Each notification is then delivered based on the delivery properties defined in the subscription (either as an email or as a service hook). [Learn more about email delivery options](concepts-email-recipients.md).

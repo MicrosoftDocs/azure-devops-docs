@@ -61,10 +61,10 @@ Adds the latest versions of all items in a local workspace.
 ### Add individual items
 
 ```
-c:\code\SiteApp\Main>tf add program1.cs program2.c
+c:\code\SiteApp\Main>tf add program1.cs program2.cs
 ```
 
-Adds the files program1.cs and program2.c.
+Adds the files program1.cs and program2.cs.
 
 ### Recursively add all items of a specific type
 

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
-author: Divais
+author: KathrynEE
 monikerRange: '>= azure-devops-2020'
 ms.date: 07/09/2020
 ---

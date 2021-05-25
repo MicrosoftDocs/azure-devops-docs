@@ -44,7 +44,7 @@ Until now, Slack users have had limited capabilities to manage release deploymen
 > [!div class="mx-imgBorder"]
 > ![Approve Azure Pipelines deployments from Slack.](../../media/149_03.png)
 
-For more detailed on Azure Pipelines and Slack see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/integrations/slack?view=azure-devops).
+For more detailed on Azure Pipelines and Slack see the documentation [here](/azure/devops/pipelines/integrations/slack?view=azure-devops&preserve-view=true).
 
 ### All source providers included in the new build pipeline wizard
 
@@ -55,7 +55,7 @@ Until now, source providers like GitHub, Azure Repos, and Bitbucket Cloud were s
 
 ### GitHub comments trigger optimizations
 
-We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#comment-triggers). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
+We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](/azure/devops/pipelines/repos/github?view=azure-devops&preserve-view=true#comment-triggers). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
 
 > [!div class="mx-imgBorder"]
 > ![GitHub comments trigger optimizations.](../../media/149_07.png)
@@ -67,4 +67,4 @@ With this update, we’ve added support to publish test results from a [CTest]( 
 > [!div class="mx-imgBorder"]
 > ![Publish CTest and PHPUnit test results.](../../media/149_11.png)
 
-In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=yaml).
+In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&preserve-view=true&tabs=yaml).

@@ -5,7 +5,7 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 01/04/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
-Branch policies help teams protect their important [branches](branches.md) of development.
+Branch policies help teams protect their important [branches](./create-branch.md) of development.
 Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies
@@ -55,7 +55,7 @@ The basic policy requires that a certain number of reviewers approve the code wi
 
 ::: moniker range=">= azure-devops-2020"
 
-![Enable the Require Code Reviews policy](media/branch-policies/require-minimum-number-of-pr-reviews.png)  
+:::image type="content" source="media/branch-policies/require-minimum-reviewers-2020.png" alt-text="Enable the Require Code Reviews policy":::
 
 - If **Allow requestors to approve their own changes** is selected, the creator of the pull request may vote on its approval. If not, they can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
 - By default, anyone with push permissions on the source branch may both add commits and vote on the pull request's approval. By enabling **Prohibit the most recent pusher from approving their own changes**, you can enforce segregation of duties - having the most recent push automatically makes the pusher's vote not count.
@@ -92,7 +92,7 @@ Linking work items provides additional context for your changes and ensures that
 
 ::: moniker range=">= azure-devops-2020"
 
-![Require linked work items in your pull requests](media/branch-policies/work-item-linking.png)
+:::image type="content" source="media/branch-policies/check-linked-work-items-2020.png" alt-text="Require linked work items in your pull requests":::
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ Linking work items provides additional context for your changes and ensures that
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
-![Check for comment resolution](media/branch-policies/comment-resolution.png)
+:::image type="content" source="media/branch-policies/check-comment-resolution-2020.png" alt-text="Check for comment resolution":::
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
@@ -136,7 +136,7 @@ Maintain a consistent branch history by enforcing a merge strategy when a pull r
 Azure Repos has multiple merge strategies, and by default, all of them are allowed.
 Select **Limit merge types** to pick which ones you'll allow in your repo.
 
-![Limit merge types](media/branch-policies/limit-merge-types.png)
+:::image type="content" source="media/branch-policies/limit-merge-types-2020.png" alt-text="Limit merge types":::
 
 - **Basic merge (no fast-forward)** - creates a merge commit in the target whose parents are the target and source branches.
 - **Squash merge** - creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
@@ -174,18 +174,18 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 ::: moniker range=">= azure-devops-2020" 
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
->Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
+>Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](../../pipelines/create-first-pipeline.md) and choose the type of build that matches your project type.
 
-![Add build policy](media/branch-policies/add-build-policy.png)
+:::image type="content" source="media/branch-policies/build-validation-2020.png" alt-text="Add build policy":::
 
 Choose the **+** button next to **Build validation**.
 
-![Build policy settings](media/branch-policies/build-policy-settings.png)
+:::image type="content" source="media/branch-policies/add-build-policy-menu-2020.png" alt-text="Build policy settings":::
 
 1. Select the **Build pipeline**.
 1. Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
@@ -207,7 +207,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 ::: moniker range=">= tfs-2015 < azure-devops-2020" 
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/devops/develop/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
@@ -242,7 +242,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
-![Require external services to approve](media/branch-policies/require-approval-from-additional-services.png)
+:::image type="content" source="media/branch-policies/status-checks-2020.png" alt-text="Require external services to approve":::
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
 
@@ -266,7 +266,7 @@ Select reviewers for specific directories and files in your repo.
 
 ::: moniker range=">= azure-devops-2020"
 
-![Enter the path and required reviewers](media/branch-policies/require-specific-reviewers.png)
+:::image type="content" source="media/branch-policies/automatically-included-reviewers-2020.png" alt-text="Enter the path and required reviewers":::
 
 ::: moniker-end
 
@@ -279,7 +279,7 @@ Select reviewers for specific directories and files in your repo.
 These reviewers are automatically added to pull requests that change files along those paths. You can also specify an **Activity feed message**.
 
 ::: moniker range=">= azure-devops-2020"
-![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests.png)
+:::image type="content" source="media/branch-policies/add-new-reviewer-policy-2020.png" alt-text="Add automatic reviewers":::
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
@@ -290,6 +290,7 @@ If you select **Required**, then the pull request can't be completed until:
 
 - Every user added as a reviewer for the path approves the changes.
 - At least one person in every group added to the path approves the changes.
+- The number of reviewers specified for every group added to the path approves the changes.
 
 ::: moniker range="< azure-devops-2020"
 ![Required reviewers are automatically added](media/branch-policies/required-reviewer-added.png)
@@ -385,7 +386,7 @@ They're applied left-to-right.
 
 #### Can I push changes directly to a branch after a branch policy is configured?
 
-No. After you set up a required branch policy, you can't directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
+No. After you set up a required branch policy, you can't directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests.md).
 
 >[!NOTE]
 >* If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after a required branch policy is configured.

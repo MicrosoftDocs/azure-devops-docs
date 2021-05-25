@@ -7,6 +7,8 @@
   displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
 - name: Best practices for Agile project management
   href: best-practices-agile-project-management.md
+- name: Quick reference
+  href: ./work-items/quick-ref.md
 - name: Get started
   href: get-started/toc.yml
 - name: Basic concepts 
@@ -16,7 +18,7 @@
   - name: About work items
     href: work-items/about-work-items.md
   - name: Manage requirements
-    href: ../cross-platform/manage-requirements.md 
+    href: ../cross-service/manage-requirements.md 
   - name: System fields  
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
@@ -94,36 +96,36 @@
   - name: Link types 
     href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
   - name: Work tracking limits
-    href: ../organizations/settings/work/object-limits.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Configure & customize
   items:
   - name: Configure & customize
     href: configure-customize.md
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy
   - name: Define area paths & assign to a team 
-    href: ../organizations/settings/set-area-paths.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Define iteration (sprints) & configure team iterations 
-    href: ../organizations/settings/set-iteration-paths-sprints.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
   - name: Add & manage teams
     items:
     - name: Add a team
-      href: ../organizations/settings/add-teams.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Add a team administrator
-      href: ../organizations/settings/add-team-administrator.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Add users to a project or team 
-      href: ../organizations/security/add-users-team-project.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Configure team tools
-      href: ../organizations/settings/manage-teams.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Permissions & access
     items:
     - name: Default permissions & access (Security)
-      href: ../organizations/security/permissions-access-work-tracking.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/security/permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Set work tracking & plan permissions 
-      href: ../organizations/security/set-permissions-access-work-tracking.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Grant or restrict permissions to select tasks
-      href: ../organizations/security/restrict-access.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+      href: ../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Process templates & portals
     items:
     - name: Manage process templates
@@ -153,14 +155,14 @@
   - name: Bulk add or modify work items (Excel)
     href: backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Excel FAQs
-    href: backlogs/office/faqs.md
-  - name: "Create backlog items & tasks (Project)"
+    href: backlogs/office/faqs.yml
+  - name: Create backlog items & tasks (Project) 
     href: backlogs/office/create-your-backlog-tasks-using-project.md
-  - name: Schedule projects using Project
+  - name: Schedule projects (Project) 
     href: backlogs/office/schedule-projects-using-microsoft-project.md
-  - name: Storyboard your ideas
+  - name: Storyboard your ideas (PowerPoint)
     href: backlogs/office/storyboard-your-ideas-using-powerpoint.md
-  - name: Add & share storyboard shapes
+  - name: Add & share storyboard shapes (PowerPoint)
     href: backlogs/office/add-share-storyboard-shapes.md
   - name: Troubleshooting
     items:
@@ -174,17 +176,28 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
+- name: Feedback
+  href: ../project/feedback/toc.yml 
+- name: Project portal & process guidance
+  items:
+  - name: Configure or add a project portal
+    href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+  - name: Configure or redirect process guidance
+    href: ../project/configure-or-redirect-process-guidance.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Integrations & extensions
   href: extensions/toc.yml
 - name: Troubleshooting
   items:
   - name: FAQs 
-    href: faqs.md 
+    href: faqs.yml 
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
-    displayname: reorder, disable, nest, natural hierarchy, in progress,   
+    displayname: reorder, disable, nest, natural hierarchy, in progress  
+  - name: Work item form caching
+    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
+    displayname: IndexDB
 - name: Field reference
   items:
   - name: Work item field index
@@ -220,15 +233,15 @@
 - name: Azure DevOps Learn
   items:
   - name: What is Agile?
-    href: /azure/devops/agile/what-is-agile
+    href: /devops/plan/what-is-agile
   - name: What is Agile development?
-    href: /azure/devops/agile/what-is-agile-development
+    href: /devops/plan/what-is-agile-development
   - name: Agile culture
-    href: /azure/devops/agile/agile-culture
+    href: ./plans/agile-culture.md
   - name: Creating productive teams
-    href: /azure/devops/agile/productive-teams
+    href: /devops/plan/building-productive-teams
   - name: What is Scrum?
-    href: /azure/devops/agile/what-is-scrum
+    href: /devops/plan/what-is-scrum
 - name: Resources
   items:
   - name: Dashboards, Charts, Reports, & Widgets
@@ -240,4 +253,4 @@
   - name: Client support 
     href: ../user-guide/tools.md
   - name: Azure DevOps CLI
-    href: /cli/azure/ext/azure-devops/boards
+    href: /cli/azure/boards

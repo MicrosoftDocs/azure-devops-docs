@@ -193,21 +193,25 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Get started
+    - title: Additional services
       items:
         # Card
-        - title: Key concepts
+        - title: Navigation & search 
           links:
+            - url: ./user-guide/services.md
+              text: Features & services
             - url: ./project/navigation/index.md
               text: Web portal navigation
+            - url: ./project/search/get-started-search.md
+              text: Search
+            - url: ./notifications/manage-your-personal-notifications.md
+              text: Manage personal notifications 
             - url: ./user-guide/work-team-explorer.md
               text: Team Explorer navigation
             - url: ./user-guide/tools.md
-              text: Supported tools & clients
-            - url: ./user-guide/services.md
-              text: Supported features & services
+              text: Tools & clients
             - url: ./organizations/security/get-started-stakeholder.md
-              text: Stakeholder access 
+              text: Get started as a Stakeholder 
             - url: ./get-started/index.yml
               text: "See more >"
         # Card
@@ -226,20 +230,24 @@ additionalContent:
             - url: ./report/index.yml
               text: "See more >"
         # Card
-        - title: Collaborate
+        - title: Cross-service, Wikis, Public Projects
           links:
-            - url: ./project/wiki/wiki-create-repo.md
-              text: Create a wiki for your project
-            - url: ./project/wiki/markdown-guidance.md
-              text: Markdown syntax guidance
-            - url: ./organizations/public/create-public-project.md
-              text: Create a public project
-            - url: ./service-hooks/overview.md
-              text: Integrate with service hooks
-            - url: ./notifications/manage-your-personal-notifications.md
-              text: Manage personal notifications 
-            - url: ./project/index.yml
-              text: "See more >"
+            - text: Search
+              url: ./project/search/get-started-search.md  
+            - text: Work across projects
+              url: ./project/navigation/work-across-projects.md  
+            - text: Work across projects FAQs
+              url: ./project/work-across-projects-faqs.yml  
+            - text: End-to-end traceability
+              url: ./cross-service/end-to-end-traceability.md
+            - text: Create a wiki for your project
+              url: ./project/wiki/wiki-create-repo.md
+            - text: Syntax guidance for Markdown usage in Wiki
+              url: ./project/wiki/wiki-markdown-guidance.md
+            - text: Create a public project
+              url: ./organizations/public/create-public-project.md
+            - text: "See more >"
+              url: ./project/index.yml
         # Card
         - title: GitHub integration
           links:
@@ -249,15 +257,15 @@ additionalContent:
               text: Azure Pipelines & GitHub
             - url: /azure/devops-project/azure-devops-project-github
               text: Azure DevOps Projects & GitHub
-    - title: Tools & utilities
-      items:
+    - title: Configure & customize resources
+      items:    
         # Card
         - title: Settings, Security, & Usage
           links:
-            - text: Security, access, & identity
-              url: ./organizations/security/about-security-identity.md
-            - text: Permissions & groups
+            - text: Get started with permissions, access, and security groups
               url: ./organizations/security/about-permissions.md
+            - text: Security quick reference index
+              url: ./organizations/security/quick-reference-index-security.md
             - text: Access levels
               url: ./organizations/security/access-levels.md
             - text: Billing  
@@ -267,17 +275,17 @@ additionalContent:
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Projects
-              url: ./organizations/projects/about-projects.md
+              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Teams 
-              url: ./organizations/settings/about-teams-and-settings.md
+              url: ./organizations/settings/about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Repos, pipelines, & test
               url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Notifications
-              url: ./notifications/about-notifications.md?bc=%252fazure%252fdevops%252freference%252forganizations%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+              url: ./notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
           # Card
-        - title: Azure Boards settings
+        - title: Azure Boards customization
           links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
@@ -308,7 +316,11 @@ additionalContent:
         - title: Developer resources
           links:
             - text: Command line interface
-              url: ./cli/index.md
+              url: ./cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Azure DevOps CLI quick reference
+              url: ./cli/quick-reference.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
+            - text: Azure DevOps Services Demo Generator
+              url: ./demo-gen/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
             - text: REST APIs
               url: /rest/api/vsts/
             - text: DevOps resource center

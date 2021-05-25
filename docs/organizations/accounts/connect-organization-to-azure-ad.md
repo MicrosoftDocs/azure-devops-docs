@@ -22,8 +22,9 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 ## Prerequisites
 
+- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help connecting to Azure AD. 
 - Ensure you're a Project Collection Administrator or [Owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
-- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-azure-access.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
+- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](/azure/devops/organizations/accounts/faq-azure-access#q--how-can-i-convert-an-azure-ad-guest-into-a-member-).
 - Inform users of the upcoming change.
    There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps they need to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
@@ -67,7 +68,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 6. Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
 
-7. Sign back in to Azure DevOps and map any disconnected members to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](faq-azure-access.md#faq-connect).
+7. Sign back in to Azure DevOps and map any disconnected members to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](/azure/devops/organizations/accounts/faq-azure-access#faq-connect).
 
    ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
@@ -80,13 +81,13 @@ When you inform your users of the completed change, include the following tasks 
 - Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine. 
 - [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 
     b. Select **Personal access tokens**, and then select **New Token**.
     
-     ![Select New Token button to create](media/shared/select-personal-access-tokens-new-token.png)
+     ![Select New Token](media/shared/select-personal-access-tokens-new-token.png)
 
     c. Complete the form, and then select **Create**.
 
@@ -96,7 +97,7 @@ When you inform your users of the completed change, include the following tasks 
 
 - Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 
@@ -119,4 +120,4 @@ When you inform your users of the completed change, include the following tasks 
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 * [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
 * [Change Azure AD connection](change-azure-ad-connection.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
+* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/azure/devops/organizations/accounts/faq-azure-access#connect-to-disconnect-from-or-change-azure-ad-connection)

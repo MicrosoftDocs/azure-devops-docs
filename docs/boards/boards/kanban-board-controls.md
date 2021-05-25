@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
@@ -25,7 +25,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            |  
-> | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](filter-kanban-board.md)     | 
+> | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](../backlogs/filter-backlogs-boards-plans.md)     | 
 > | ![Live updates icon](../media/icons/live-updates-icon.png)  | [Enable live updates](kanban-basics.md#live-updates)  |
 > | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png) | Enter or exit full screen mode      |  
@@ -39,7 +39,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 
-> | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](filter-kanban-board.md)     | 
+> | ![Kanban filter icon](../media/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](../backlogs/filter-backlogs-boards-plans.md)     | 
 > | ![Live updates icon](../media/icons/live-updates-icon.png)  | [Enable live updates](kanban-basics.md#live-updates)  |
 > | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../media/icons/fullscreen_icon.png) / ![exit full screen icon](../media/icons/exitfullscreen_icon.png) | Enter or exit full screen mode      |  
@@ -54,7 +54,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > |--------------------------|-------------------------------|
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 
-> | ![Search filter](../media/icons/search_filter_icon.png) | [Filter by keyword or tag](filter-kanban-board.md)   |  
+> | ![Search filter](../media/icons/search_filter_icon.png) | [Filter by keyword or tag](../backlogs/filter-backlogs-boards-plans.md)   |  
 > | ![Settings icon](../media/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 
 ::: moniker-end

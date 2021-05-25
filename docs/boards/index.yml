@@ -168,7 +168,7 @@ landingContent:
           - text: Set up your Backlogs & Boards
             url: ./backlogs/set-up-your-backlog.md
           - text: FAQs 
-            url: faqs.md
+            url: faqs.yml
   - title: Quick reference
     linkLists:
       - linkListType: reference
@@ -186,6 +186,6 @@ landingContent:
       - linkListType: reference
         links:
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/boards
+            url: /cli/azure/boards
           - text: REST API
             url: /rest/api/azure/devops/work

@@ -11,19 +11,20 @@ monikerRange: '>= tfs-2018'
 
 # Sign your mobile app
 
-**Azure Pipelines | TFS 2018 | [TFS 2017.2](secure-certs.md)**
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | [TFS 2017.2](secure-certs.md)**
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
 
-> **Tip**: Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and release agents](../../agents/agents.md).
+> [!TIP]  
+> Use a Microsoft-hosted Linux, macOS, or Windows build agent, or set up your own agent. See [Build and release agents](../../agents/agents.md).
 
 This article covers:
 - [Sign your Android app](#android)
 - [Sign your Apple iOS, macOS, tvOS, or watchOS app](#apple)
+
+::: moniker range="tfs-2018"
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
+::: moniker-end
 
 <a name="android"></a>
 

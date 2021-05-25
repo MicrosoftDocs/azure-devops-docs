@@ -2,14 +2,14 @@
 title: Remove, delete, restore work items
 titleSuffix: Azure Boards
 description: How to remove, delete, or restore (from Recycle Bin) work items in Azure Boards 
-ms.custom: "boards-backlogs, seodec18, contperfq2" 
+ms.custom: "boards-backlogs, seodec18, contperf-fy21q2"
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/30/2020
+ms.date: 05/21/2021 
 ---
 
 # Remove, delete, or restore work items 
@@ -31,6 +31,10 @@ Work items can live forever in your work tracking data store. You never have to 
 ::: moniker-end
 
 The ability to archive work items or projects isn't a supported feature at this time. 
+
+::: moniker range=">= azure-devops-2019"
+To move a work item from one project to another, or to change the work item type, see [Move work items, change work item type](move-change-type.md). 
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
  
@@ -269,7 +273,7 @@ You restore deleted work items from the web portal **Recycle Bin**.
  
 ## Delete or destroy work items (command line)
 
-You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!NOTE] 
 > You can restore work items you **delete**, but you can't restore work items you choose to **destroy**.

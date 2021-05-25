@@ -22,7 +22,7 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 
 ## Prerequisites
 
-* Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
+* Only [Project Collection Administrators or organization Owners](faq-extensions.yml) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 <a id="install-extension" /> 
@@ -32,7 +32,7 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select the shopping bag icon, and then select **Browse Marketplace**.
+2. Select the shopping bag, and then select **Browse Marketplace**.
 
    ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 
@@ -46,9 +46,9 @@ To learn about building your own Azure DevOps extensions, see [developing](../ex
 
     ![Select organization for this extension](media/get-vsts-extensions/select-install-extension.png)
 
-   * [Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
+   * [Why don't I see any organizations?](./faq-extensions.yml) 
 
-   * [Why can't I install this extension?](./faq-extensions.md#no-permissions) 
+   * [Why can't I install this extension?](./faq-extensions.yml) 
 
 Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities.
 
@@ -58,7 +58,7 @@ Your extension is now installed! You can now go to your organization to use your
 
 ::: moniker range=">= azure-devops-2020"
 
-You can install an extension with the [az devops extension install](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can install an extension with the [az devops extension install](/cli/azure/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 

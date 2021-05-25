@@ -145,12 +145,12 @@ Azure PowerShell provides a set of cmdlets that you can use to manage Azure reso
 
 Previously, we didn’t provide support for the Azure PowerShell Az module in our hosted agents. With the new Azure PowerShell task version 4.* in build and release pipelines, we have added support for the new Az module for all platforms. Azure PowerShell task version 3.* will continue to support the AzureRM module. However, to keep up with the latest Azure services and features, we recommend that you switch to the Azure PowerShell task version 4.* as soon as possible.
 
-The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.5.0#migrate-existing-scripts-to-az).
+The Az module has a compatibility mode to help you use existing scripts while you update them to use the new syntax. To enable compatibility for the Az module, use the `Enable-AzureRmAlias` command. Aliases let you use the old cmdlet names with Az module. You can get more details on migrating from the Azure RM module to the Azure PowerShell Az module [here](/powershell/azure/new-azureps-module-az?view=azps-1.5.0&preserve-view=true#migrate-existing-scripts-to-az).
 
 > [!NOTE]
 > You need to install the Az module on your agent machine if you are using private agents.
 
-For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#continued-support-for-azurerm).
+For more information on the Azure PowerShell Az module, see the documentation [here](/powershell/azure/new-azureps-module-az?view=azps-1.4.0&preserve-view=true#continued-support-for-azurerm).
 
 ### Resource authorization improvements
 

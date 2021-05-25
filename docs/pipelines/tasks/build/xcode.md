@@ -5,13 +5,13 @@ description: Xcode build and release task for Azure Pipelines and Team Foundatio
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
 ms.author: vijayma
 author: vijayma
-ms.date: 12/23/2019
-monikerRange: azure-devops
+ms.date: 02/11/2021
+monikerRange: '>=azure-devops-2019'
 ---
 
 # Xcode task
 
-**Azure Pipelines | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | [TFS 2018](xcode-build.md?view=tfs-2018&preserve-view=true) | [TFS 2017](xcode-build.md?view=tfs-2017&preserve-view=true) | [TFS 2015](xcode-build.md?view=tfs-2015&preserve-view=true)**
 
 Use this task to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
 
@@ -187,7 +187,7 @@ xcode
    <tr>
       <td><code>destinationSimulators</code><br/>Simulators</td>
       <td>
-         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
+         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone8 for Xcode 11 and iPhone 7 for other iOS projects; Apple TV for tvOS projects.
       </td>
    </tr>
    <tr>

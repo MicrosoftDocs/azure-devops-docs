@@ -286,6 +286,6 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 

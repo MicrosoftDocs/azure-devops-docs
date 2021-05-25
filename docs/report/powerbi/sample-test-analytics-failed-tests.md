@@ -5,7 +5,6 @@ description: How-to guide to generate a list of failed tests Power BI report for
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -35,7 +34,7 @@ Specifically, you'll find sample queries for the following reports:
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
 

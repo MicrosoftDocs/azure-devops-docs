@@ -1,108 +1,224 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 02/25/2021
 ---
 
-::: moniker range=">= tfs-2015"
-
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Team admins</th>
-</tr>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View boards and open work items</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a board; update status, reorder, or reparent child tasks through drag-and-drop; update a field on a card</td>
-<td></td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add child tasks to a checklist</td>
-<td>✔️</td>
-<td>  </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Assign to a sprint (from card menu)
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Customize a board, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td>✔️</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end    
-
-
-
+---
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Team admins**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      View boards and open work items
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      View boards and open work items
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      Add work items to a board; update status through drag-and-drop
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="2":::
+      Reorder work items or reparent child items through drag-and-drop; update a field on a card
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2015 < azure-devops"
+:::row:::
+   :::column span="2":::
+      Add work items to a board; update status, reorder, or reparent child items through drag-and-drop; update a field on a card
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+     ✔️
+   :::column-end:::
+   :::column span="1":::
+     ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
 ::: moniker range="tfs-2013"
-
-
-<table>
-<tr valign="bottom">
-<th width="41%">Task</th>
-<th width="15%">Stakeholders</th>
-<th width="12%">Readers</th>
-<th width="15%">Contributors</th>
-<th width="17%">Team admins</th>
-</tr>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">View boards and open work items</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Add work items to a board; update status through drag-and-drop</td>
-<td></td>
-<td></td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Assign to a sprint 
-</td>
-<td>✔️</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Customize a board, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td>✔️</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end    
+:::row:::
+   :::column span="2":::
+      Add work items to a board; update status through drag-and-drop
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2015"
+:::row:::
+   :::column span="2":::
+      Add child items to a checklist
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2015"
+:::row:::
+   :::column span="2":::
+      Assign to a sprint (from card field)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
+::: moniker range="tfs-2013"
+:::row:::
+   :::column span="2":::
+      Assign to a sprint
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+:::row:::
+   :::column span="2":::
+      Configure board settings  
+     *(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)*
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
 
 

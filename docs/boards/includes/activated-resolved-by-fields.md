@@ -3,11 +3,11 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 08/06/2020
+ms.date: 04/08/2021
 ---
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <a id="activated-resolved-fields" />
 
@@ -15,12 +15,12 @@ ms.date: 08/06/2020
 
 The system updates these fields&mdash;**Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date**&mdash;when a change occurs based on corresponding workflow category states. When the workflow state changes to a *Proposed* state category, **Activated By** and **Activated Date** are updated. When the workflow state changes to a *Resolved* state category, **Resolved By** and **Resolved Date** are updated. 
 
-To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md). 
+To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/boards/work-items/workflow-and-state-categories). 
 
 > [!NOTE]   
-> The logic governing the fields described here applies to Azure DevOps Services only.   
+> The logic governing the fields described here applies to Azure DevOps Services, [Azure DevOps Server 2020.1 update](/azure/devops/server/release-notes/azuredevops2020u1#improved-rules-for-activated-and-resolved-fields), and later versions.   
    
-Because these fields reference the workflow state categories, custom workflow states that you add are referenced when updating the fields. To learn more about customization, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
+Because these fields reference the workflow state categories, custom workflow states that you add are referenced when updating the fields. To learn more about customization, see [Customize the workflow for a process](/azure/devops/organizations/settings/work/customize-process-workflow). 
 
 #### Additional notes:
 

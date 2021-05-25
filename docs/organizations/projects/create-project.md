@@ -1,7 +1,7 @@
 ---
 title: Create a project
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contentperfq4
+ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
@@ -28,7 +28,7 @@ This article describes how to use Azure DevOps to create a project and establish
 
 [!INCLUDE [version-selector](../../includes/version-selector-minimize.md)]
 
-If you don't want to create a project in Azure DevOps or TFS, you can create [Azure DevOps Projects](/azure/devops-project/).
+If you don't want to create a project in Azure DevOps, you can create [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](/visualstudio/ide/creating-solutions-and-projects). -->  
 
@@ -58,11 +58,11 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=tfs-2017#create-a-project-collection&preserve-view=true ).
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Ask your TFS administrator about the following resources and get additional permissions as needed:
+- Ask your administrator about the following resources and get additional permissions as needed:
 
     - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 
-    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports](../../report/admin/grant-permissions-to-reports.md).
 
     - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
@@ -95,7 +95,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
 2. Choose the organization, and then select **New project**.
 
@@ -134,9 +134,8 @@ Choose the **Current page** tab for information on creating a project.
 
 ::: moniker range="azure-devops-2019 || azure-devops"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
-
-2. Choose the organization, and then select **Create Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
+2. Choose the organization, and then select **Create project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Open Projects, current page.](media/create-project/projects-hub-vert-create-project.png)  
@@ -170,7 +169,7 @@ Choose the **Preview page** tab for instructions.
 
 ::: moniker range="azure-devops-2019"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page.  Then, select **Create project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Open Projects, then select Create Project.](media/create-project/projects-hub-vert-create-project.png)  
@@ -199,7 +198,7 @@ Choose the **Preview page** tab for instructions.
 
 ::: moniker range="tfs-2018"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then select **New Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. Then, select **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
@@ -209,7 +208,7 @@ Choose the **Preview page** tab for instructions.
    On completion, the project summary displays. For more information, see [Share your project, view project activity](project-vision-status.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
+   > ![New Project 2017](media/create-project/new-team-project-tfs-2017.png)
 
 ::: moniker-end
 
@@ -222,12 +221,12 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 >
 > If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For more information, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).
 
-1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New Project**.
+1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the gear button. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then select **Server settings** and choose **New project**.
+	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: settings. Then, select **Server settings** and choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
@@ -247,7 +246,7 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 
 ::: moniker range=">= azure-devops-2020" 
 
-You can create a project using the [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can create a project using the [az devops project create](/cli/azure/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -349,7 +348,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     If the **Next** button is active, you can configure your project portal.
 
-    If you have a problem, you receive an error message and a link to the project creation log. See [Troubleshoot creating a project](faq-create-project.md) for specific errors and exceptions.
+    If you have a problem, you receive an error message and a link to the project creation log. See [Troubleshoot creating a project](faq-create-project.yml) for specific errors and exceptions.
 
     When you're finished, you can see your project in Team Explorer. You can also choose the **Web Access** link to connect to your project from the web portal.
 
@@ -383,7 +382,6 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 
 
-
 ## List and connect to projects
 
 ::: moniker range="azure-devops"
@@ -398,9 +396,9 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 Connect to a project, collection, or server from your web browser.
 
-1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
+2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open Projects, then select Create Project, preview page.](media/create-project/list-projects.png)  
@@ -424,9 +422,9 @@ Choose the **Current page** tab for information on connecting to projects.
 
 Connect to a project, collection, or server from your web browser.
 
-1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
+2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select any project to connect to that project.](media/create-project/list-projects.png)  
@@ -446,9 +444,9 @@ Choose the **Preview page** tab for information.
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"  
 
-1. To view the projects defined for a collection, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
+2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Choose any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select any project to connect to that project, previous versions.](media/create-project/list-projects-2019.png)  
@@ -464,7 +462,7 @@ Choose the **Preview page** tab for information.
 
 ::: moniker range="<= tfs-2017"  
 
-Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (TFS Web Portal)](../../media/icons/gear-icon.png)
+Open the administration overview page by choosing ![Settings button (Web Portal)](../../media/icons/gear-icon.png) > **Collection settings**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Overview tab, Project list, Collection settings](media/create-project/list-projects-2017.png)
@@ -482,7 +480,7 @@ You can choose a project to open project settings for that project on this page.
 
 ### List projects
 
-You can list projects defined for an organization using the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can list projects defined for an organization using the [az devops project list](/cli/azure/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -528,7 +526,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ### Show project information, and open in web portal
 
-You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-show) command.  
+You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/devops/project#ext-azure-devops-az-devops-project-show) command.  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -627,5 +625,7 @@ From the admin context of the web portal, you can add additional repositories to
 
 - [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
-- [Team Foundation version control](../../repos/tfvc/index.yml)
+- [Team Foundation Version Control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
+- [Go to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
+- [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

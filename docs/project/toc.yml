@@ -1,21 +1,22 @@
-- name: Collaborate 
+- name: Cross-service, Wikis, Public Projects
   href: index.yml
-- name: Work across projects FAQs
-  href: work-across-projects-faqs.md
-- name: Wikis
+- name: Work across projects and services 
+  expanded: true
+  items:
+  - name: Work across projects  
+    href: navigation/work-across-projects.md 
+  - name: Work across projects FAQs
+    href: work-across-projects-faqs.yml 
+- name: Traceability
+  href: ../cross-service/toc.yml
+- name: Search  
+  href: search/toc.yml
+- name: Wiki
   href: wiki/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
-- name: Search  
-  href: ./search/toc.yml  
-- name: Feedback
-  href: feedback/toc.yml 
-- name: Project portal & process guidance
-  items:
-  - name: Configure or add a project portal
-    href: configure-or-add-a-project-portal.md 
-  - name: Configure or redirect process guidance
-    href: configure-or-redirect-process-guidance.md 
+- name: Navigation
+  href: navigation/toc.yml
 - name: REST API Reference
   items:
   - name: Projects
@@ -28,12 +29,6 @@
     href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
   - name: Get project metrics
     href: /rest/api/azure/devops/build/metrics/get%20project%20metrics
-- name: Marketplace resources
-  items:
-  - name: UserVoice Integration (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
-  - name: UserVoice UI (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui
 - name: Resources
   items:
   - name: Get Started

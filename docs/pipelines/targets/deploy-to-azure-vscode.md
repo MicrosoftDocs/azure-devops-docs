@@ -238,6 +238,14 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
+## Troubleshoot
+
+Learn how to troubleshoot common issues.
+
+**Issue**: Failed to deploy web package to App Service. Conflict (CODE: 409)
+
+**Resolution**: Restart App Service, and then deploy the package to App Service again.
+    
 ## Next steps
 
 Try the workflow with a Docker file in a repo.

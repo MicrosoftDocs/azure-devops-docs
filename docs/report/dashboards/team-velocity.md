@@ -45,7 +45,10 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 ::: moniker-end  
 
-Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. If your team have not completed any sprint or if you are working on items before any sprint start date, Velocity would have no data to analyze and forecast. Therefore you might see the message: "Set iteration dates to use this widget". To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+
+**Example: Velocity showing Set iteration dates to use this widget**  
+![Set iteration dates](media/team-velocity-set-iteration-dates.png)
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
@@ -215,7 +218,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. Open the velocity chart.  
 

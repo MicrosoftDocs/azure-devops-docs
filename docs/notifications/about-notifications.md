@@ -3,11 +3,12 @@ title: Get started with notifications in Azure DevOps
 description: Understand how notifications or alerts are managed in Azure DevOps.
 ms.technology: devops-collab
 toc: show
+ms.custom: quarterly-update
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 10/09/2020
-monikerRange: '>= tfs-2013'
+ms.date: 01/14/2021
+monikerRange: '<= azure-devops'
 ---
 
 # About notifications
@@ -68,6 +69,13 @@ You can create a subscription for the following categories and select from the f
 |Extension management | <ul><li>an extension is modified</li></ul>   |
 |Release | <ul><li>an approval for a deployment is pending</li><li>a deployment is completed</li><li>a request for release creation failed</li><li>a manual intervention for a deployment is pending</li></ul> |
 
+:::moniker range=">= azure-devops-2020"
+
+> [!NOTE]
+> You can also create a custom notification subscription for pull requests that are created or updated in a **draft state**. For more information, see [Custom notification subscription for draft pull requests](/azure/devops/release-notes/2020/repos/sprint-165-update#custom-notification-subscription-for-draft-pull-requests).
+
+:::moniker-end
+
 For more information, see [Manage team, group, and global notifications](manage-team-group-global-organization-notifications.md).
 
 ### Global notifications
@@ -76,7 +84,7 @@ Global notifications apply to all **projects** defined for an organization or co
 
 #### Default subscription 
 
-The **Default subscriptions** tab lists all default global subscriptions available. The globe icon on a notification subscription indicates the subscription is a default subscription. View all [default notification subscriptions](./oob-built-in-notifications.md). 
+The **Default subscriptions** tab lists all default global subscriptions available. The ![globe](media/oob-notification.png) on a notification subscription indicates the subscription is a default subscription. View all [default notification subscriptions](./oob-built-in-notifications.md). 
 
 Members of the **Project Collection Administrators** group have permission to enable/disable any default subscription in this view. Any member of the **Project Collection Valid Users** group has permission to view the details of the default subscription. The view and enable options are available in the context menu (`...`) associated with each individual subscription.
 
@@ -86,7 +94,7 @@ Members of the **Project Collection Administrators** group have permission to en
 
 The **Subscribers** section begins with an empty identity search box. Enter any group, team, or individual to view the list of subscriptions associated with the specified identity.
 
-All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) icon on subscription row indicates a default subscription.    
+All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. The ![globe](media/oob-notification.png) on subscription row indicates a default subscription.    
 
    :::image type="content" source="media/view-organization-notification-subscribers.png" alt-text="Screenshot of organization-level notifications page: Subscribers list.":::        
 
@@ -99,7 +107,7 @@ The **Statistics** section shows the most active notification subscriptions and 
 
 Manage global-level **Settings**, such as delivery preferences.   
 
-The **Settings** section allows organization-level notification settings to be managed by any member of the **Project Collection Administrators** group. All teams and groups inherit the _Default delivery option_ setting, which is why it isn't explicitly set at the team or group level.
+The **Settings** section allows organization-level management by any member of the **Project Collection Administrators** group. All teams and groups inherit the _Default delivery option_ setting. This setting, _Default delivery option_,  isn't explicitly set at the team or group level.
 
    :::image type="content" source="media/view-organization-notification-settings.png" alt-text="Screenshot of organization-level notifications page: Settings.":::                                                                                                                                       
 
@@ -110,7 +118,7 @@ For more information, see [Manage team, group, and global notifications](manage-
 There are no UI permissions associated with managing email notifications or alerts. Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
-- Members of the **Project Collection Administrators** group, or users who have **Edit collection-level information** permission can set alerts in that collection for others or for a team.
+- Members of the **Project Collection Administrators** group, or users who have **Edit collection-level information** permission, can set alerts for others or for a team, within that collection.
 - Members of the **Project Administrators** group, or users who have **Edit project-level information** permissions can set alerts in that project for others or for a team.
 
 ## Preferred email address
@@ -147,8 +155,7 @@ You can also use a third-party service like Zapier to send notifications to hund
 ## Related articles
 
 * [Default and supported notifications](oob-built-in-notifications.md)
-* [Supported event types](oob-supported-event-types.md)
-* [FAQs](faq-notifications.md)
+* [Query with group clauses](../boards/queries/using-queries.md#group-clauses)
+* [FAQs](faq-notifications.yml)
 * [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 * [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
-* [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)

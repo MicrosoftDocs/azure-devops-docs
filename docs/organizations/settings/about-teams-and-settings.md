@@ -7,7 +7,7 @@ ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/09/2020
 ---
 
@@ -30,6 +30,21 @@ The following scenarios apply:
 - each management team, which focuses on a set of features, can choose several area paths to monitor
 - each feature team has its distinct backlog to plan, determine priority, and track work
 - portfolio or product owners can create their idea, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md)
+
+## About area paths, feature teams, and management teams 
+
+Area paths serve the following purposes in Azure Boards:  
+1. Filter the work items that appear on a team backlog or board.
+2. Apply additional filtering to the work items that appear on a backlog or board, for details, see [Interactively filter backlogs, boards, queries, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md).
+3. Group work that shares some relationship, such as belonging to the same product, feature, or other work-level grouping. 
+4. Restrict access to work by setting permissions. Permissions can be set for security groups to restrict modification of work items based on area path. 
+
+Teams make their selections as follows: 
+- Feature teams can choose one or more area paths to specify which work items will appear on their backlogs and boards. 
+- Management teams typically choose all area paths that their feature teams work on.
+- Additionally, management teams may only focus on Features and Epics, while Feature teams may focus only on product backlog items such as User Stories (Agile), Product Backlog Items (Scrum), and Requirements (CMMI).
+
+For steps to define area paths and assign them to a team, see [Define area paths and assign to a team](set-area-paths.md). 
 
 ## The default team
 

@@ -5,7 +5,7 @@ ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.author: rabououn
 ms.reviewer: rabououn
 author: ramiMSFT
-ms.custom: "seodec18, contperfq1"
+ms.custom: "seodec18, contperf-fy21q1"
 ms.topic: conceptual
 ms.date: 09/08/2020
 monikerRange: '>= tfs-2017'
@@ -19,17 +19,17 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. This allows for a cleaner development environment and smaller repository size. You can restore your NuGet packages using the NuGet restore build task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both YAML and the classic Azure pipelines. 
+NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. This allows for a cleaner development environment and smaller repository size. You can restore your NuGet packages using the NuGet restore build task, the NuGet CLI, or the .NET Core CLI. This article will show you how to restore your NuGet packages using both YAML and the classic Azure Pipelines. 
 
 ### Prerequisites
 
-- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure artifacts feed.
+- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure Artifacts feed.
 - [Created your first pipeline](../create-first-pipeline.md) for your repository.
 - [Set up the build identity permissions](../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for your feed.
 
 ## Restore packages with NuGet restore build task
 
-To build a solution that relies on NuGet packages from Azure artifacts feeds, we will want to add the **NuGet** build task to our pipeline.
+To build a solution that relies on NuGet packages from Azure Artifacts feeds, we will want to add the **NuGet** build task to our pipeline.
 
 1. Navigate to your build pipeline and select **Edit**.
 2. Under **Tasks**, **Agent job**, select the plus sign **"+"** to add a new task. Search for **NuGet** task and add it to your agent job.
@@ -37,7 +37,7 @@ To build a solution that relies on NuGet packages from Azure artifacts feeds, we
 - **Display name:** NuGet restore.
 - **Command:** restore.
 - **Path to solution, packages.config, or project.json:** The path to the solution, packages.config, or project.json file that references the packages to be restored.
-4. If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and specify the file from your repo. If you're using a single Azure Artifacts feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
+4. If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and specify the file from your repository. If you're using a single Azure Artifacts feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 5. Check the **Use packages from NuGet.org** option if you want to include NuGet.org in the generated NuGet.config.
 6. Select **Save & queue** .
 
@@ -159,3 +159,4 @@ Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines
 
 - [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
 - [Publish and consume build artifacts](../artifacts/build-artifacts.md)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

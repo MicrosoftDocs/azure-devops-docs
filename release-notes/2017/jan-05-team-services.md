@@ -118,14 +118,14 @@ This view lets users manage personal subscriptions they have created. It also sh
 
 ![notification profile](media/01_05_20.png)
 
-Learn more about [managing personal notification settings](https://aka.ms/vstsmanagenotifications).
+Learn more about [managing personal notification settings](/azure/devops/notifications/manage-your-personal-notifications).
 
 ## New delivery options for team subscriptions
 Team administrators can manage subscriptions shared by all members of the team in the __Notifications__ hub under team settings. Two new delivery options are now available when configuring a team subscription: send the email notification to a specific email address (like the team’s distribution list), or send the notification to only team members associated with the activity.
 
 ![notification delivery](media/01_05_21.png)
 
-Learn more about [managing team subscriptions](https://aka.ms/vststeamnotifications).
+Learn more about [managing team subscriptions](/azure/devops/notifications/manage-team-group-global-organization-notifications).
 
 ## Out of the box notifications (preview)
 Prior to this feature, users would need to manually opt in to any notifications they wanted to receive. With out-of-the-box notifications (which currently must be enabled by an account administrator), users automatically receive notifications for events such as:
@@ -143,7 +143,7 @@ To enable this feature for the account, an account administrator needs to go to 
 
 ![notifications oob opt in](media/01_05_33.png)
 
-Learn more about [out of the box subscriptions](https://aka.ms/vstsoobnotifications).
+Learn more about [out of the box subscriptions](/azure/devops/notifications/manage-your-personal-notifications).
 
 ## New hosted build image
 We have deployed a new hosted build image with the following updates:

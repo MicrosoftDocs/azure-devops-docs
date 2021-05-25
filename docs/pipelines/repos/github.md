@@ -335,13 +335,19 @@ pr:
     - releases/*
   paths:
     include:
-    - docs/*
+    - docs
     exclude:
     - docs/README.md
 ```
 
-> [!NOTE]
-> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+> **Tips:**
+>  * Wild cards are not supported with path filters.
+>  * Paths are always specified relative to the root of the repository.
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
+>  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+>  * You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ### Multiple PR updates
 
@@ -461,17 +467,31 @@ To bypass this precaution on GitHub pipelines, enable the **Make secrets availab
 
 #### Important security considerations
 
-A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. This pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change might leak secrets or compromise the agent machine that's performing the build. We recommend the following actions to address this risk:
+A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. This pull request could contain malicious code to run as part of your triggered build. Such code can cause harm in the following ways:
 
-* Do not enable the **Make secrets available to builds of forks** check box if your repository is public or untrusted users can submit pull requests that automatically trigger builds. Otherwise, secrets might leak during a build.
+* Leak secrets from your pipeline. To mitigate this risk, do not enable the **Make secrets available to builds of forks** check box if your repository is public or untrusted users can submit pull requests that automatically trigger builds. This option is disabled by default.
 
-* Use a [Microsoft-hosted agent pool](../agents/hosted.md) to build pull requests from forks. Microsoft-hosted agent machines are immediately deleted after they complete a build, so there is no lasting impact if they're compromised.
-
-* If you must use a [self-hosted agent](../agents/agents.md#install), do not store any secrets or perform other builds and releases that use secrets on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets might leak, and the repository contents or secrets of other builds and releases might be revealed.
+* Compromise the machine running the agent to steal code or secrets from other pipelines. To mitigate this:
+  
+  * Use a [Microsoft-hosted agent pool](../agents/hosted.md) to build pull requests from forks. Microsoft-hosted agent machines are immediately deleted after they complete a build, so there is no lasting impact if they're compromised.
+  
+  * If you must use a [self-hosted agent](../agents/agents.md#install), do not store any secrets or perform other builds and releases that use secrets on the same agent, unless your repository is private and you trust pull request creators.
 
 ## Comment triggers
 
-Repository collaborators can comment on a pull request to manually run a pipeline. You might use this to run an optional test suite or validation build. The following commands can be issued to Azure Pipelines in comments:
+Repository collaborators can comment on a pull request to manually run a pipeline. Here are a few common reasons for why you might want to do this:
+
+- You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You want one of your team members to first review their code and then run the pipeline. This is commonly used as a security measure when building contributed code from forked repositories.
+- You may want to run an optional test suite or an additional validation build. 
+
+To enable comment triggers you must follow the following two steps:
+
+1. Enable pull request triggers for your pipeline, and make sure that you did not exclude the target branch.
+2. In Azure Pipelines web interface, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline. 
+
+With these two changes, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>`.
+
+The following commands can be issued to Azure Pipelines in comments:
 
 | Command | Result |
 | - | - |
@@ -485,12 +505,6 @@ Repository collaborators can comment on a pull request to manually run a pipelin
 
 >[!IMPORTANT]
 >Responses to these commands will appear in the pull request discussion only if your pipeline uses the [Azure Pipelines GitHub App](#github-app-authentication).
-
-### Run pull request validation only when authorized by your team
-
-You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You can configure Azure Pipelines to build GitHub pull requests only when authorized by your team.
-
-To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline. Now, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>` as described above.
 
 ### Troubleshoot pull request comment triggers
 
@@ -541,7 +555,7 @@ Problems related to GitHub integration fall into the following categories:
 * **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
 * **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
 * **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
-* **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipeline did not report a status update.
+* **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipelines did not report a status update.
 
 ### Connection types
 

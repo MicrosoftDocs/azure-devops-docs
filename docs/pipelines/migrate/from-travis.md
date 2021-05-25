@@ -442,7 +442,7 @@ You can even configure jobs to always run,
 regardless of the success of other jobs.
 
 For example, if you want to run a script when the build fails, but only 
-if it is running as a build on the master branch:
+if it is running as a build on the main branch:
 
 **azure-pipelines.yml**
 ``` yaml
@@ -452,7 +452,7 @@ jobs:
   - script: ./build.sh
 - job: alert
   dependsOn: build
-  condition: and(failed(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(failed(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   steps:
   - script: ./sound_the_alarms.sh
 ```
@@ -474,14 +474,14 @@ environment variables in Travis and their analog in Azure Pipelines:
 | `TRAVIS_BUILD_DIR`           | `BUILD_SOURCESDIRECTORY`      | The location of your checked out source and the default working directory. |
 | `TRAVIS_BUILD_NUMBER`        | `BUILD_BUILDID`               | A unique numeric identifier for the current build invocation. |
 | `TRAVIS_COMMIT`              | **CI builds**:<br>`BUILD_SOURCEVERSION` | The commit ID currently being built. |
-| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into master; this command will identify the pull request commit itself. |
+| `TRAVIS_COMMIT`              | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
 | `TRAVIS_COMMIT_MESSAGE`      | `BUILD_SOURCEVERSIONMESSAGE`  | The log message of the commit being built. |
 | `TRAVIS_EVENT_TYPE`          | `BUILD_REASON` | The reason the build was queued; a map of values is in the "build reasons" table below. |
 | `TRAVIS_JOB_NAME`            | `AGENT_JOBNAME`                | The name of the current job, if specified. |
 | `TRAVIS_OS_NAME`             | `AGENT_OS`                     | The operating system that the job is running on; a map of values is in the "operating systems" table below. |
 | `TRAVIS_PULL_REQUEST`        | **Azure Repos**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTID`<br><br>**GitHub**:<br>`SYSTEM_PULLREQUEST_PULLREQUESTNUMBER` | The pull request number that triggered this build. (For GitHub builds, this is a unique identifier that is _not_ the pull request number.) |
 | `TRAVIS_PULL_REQUEST_BRANCH` | `SYSTEM_PULLREQUEST_SOURCEBRANCH` | The name of the branch where the pull request originated. |
-| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into master; this command will identify the pull request commit itself. |
+| `TRAVIS_PULL_REQUEST_SHA`    | **Pull request builds**:<br>`git rev-parse HEAD^2` | For pull request validation builds, Azure Pipelines sets `BUILD_SOURCEVERSION` to the resulting merge commit of the pull request into main; this command will identify the pull request commit itself. |
 | `TRAVIS_PULL_REQUEST_SLUG`   |                                | The name of the forked repository, if the pull request originated in a fork.  There's no analog to this in Azure Pipelines. |
 | `TRAVIS_REPO_SLUG`           | `BUILD_REPOSITORY_NAME`         | The name of the repository that this build is configured for. |
 | `TRAVIS_TEST_RESULT`         | `AGENT_JOBSTATUS`              | Travis sets this value to `0` if all previous steps have succeeded (returned `0`).  For Azure Pipelines, check that `AGENT_JOBSTATUS=Succeeded`. |
@@ -524,14 +524,14 @@ specific branches.  In Azure Pipelines, the list of branches to build
 should be listed in the `include` list and the branches _not_ to build
 should be listed in the `exclude list.  Wildcards are supported.
 
-For example, to build only the master branch and those that begin with
+For example, to build only the main branch and those that begin with
 the word "releases":
 
 **.travis.yml**
 ``` yaml
 branches:
   only:
-  - master
+  - main
   - /^releases.*/
 ```
 
@@ -540,7 +540,7 @@ branches:
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases*
 ```
 

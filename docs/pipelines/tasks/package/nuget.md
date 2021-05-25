@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 > [!NOTE]
-> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. 
+> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. This task no longer takes new features and only critical bugs are addressed. 
 
 Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
@@ -55,8 +55,9 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 | `disableParallelProcessing`<br/>Disable parallel processing | Prevents NuGet from installing multiple packages in parallel. |
 | `restoreDirectory`<br/>Destination directory | Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json. |
 | `verbosityRestore`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `packagesToPush`<br/>Target feed location | Specifies whether the target feed is and internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external` |
+| `nuGetFeedType`<br/>Target feed location | Specifies whether the target feed is an internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external`. Required when `command` == `Push` |
 | `publishVstsFeed`<br/>Target feed | Select a feed hosted in this account. You must have Azure Artifacts installed and licensed to select a feed here. |
+| `packagesToPush`<br/>Packages location | The pattern to match or path to the nupkg files, e.g.: `'$(Build.ArtifactStagingDirectory)/*.nupkg'`. Required when `command` == `Push`|
 | `publishPackageMetadata`<br/>Publish pipeline metadata | If you continually publish a set of packages and only change the version number of the subset of packages that changed, use this option. |
 | `allowPackageConflicts` | It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.<br/>If NuGet.exe encounters a conflict, the task will fail. This option will not work and publish will fail if you are within a proxy environment. |
 | `publishFeedCredentials`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
@@ -84,9 +85,9 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 
 For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
 
-For **byEnvVar**, the version will be set as whatever environment variable, e.g. `MyVersion` (no **$**, just the environment variable name), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+For **byEnvVar**, the version will be set to the value of the environment variable that has the name specified by the **versionEnvVar** parameter, e.g. `MyVersion` (no **$**, just the environment variable name). Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
 
-For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`. If you select **byBuildNumber**, the task will extract a dotted version, `1.2.3.4` and use only that, dropping any label. To use the build number as is, you should use **byEnvVar** as described above, and set the environment variable to `BUILD_BUILDNUMBER`.
+For **byBuildNumber**, the version will be set using the pipeline run's build number.  This is the value specified for the pipeline's `name` property, which gets saved to the `BUILD_BUILDNUMBER` environment variable).  Ensure that the build number being used contains a proper SemVer e.g. `1.0.$(Rev:r)`. When using **byBuildNumber**, the task will extract the dotted version, `1.2.3.4` from the build number string, and use only that portion.  The rest of the string will be dropped.  If you want to use the build number as is, you can use **byEnvVar** as described above, and set **versionEnvVar** to `BUILD_BUILDNUMBER`.
 
 ::: moniker-end
 
@@ -192,7 +193,7 @@ Create a NuGet package in the destination folder.
     ```
 ### Custom
 
-Run any other NuGet command besides the default ones: pack, push and restore.
+Run any other NuGet command besides the default ones: pack, push, and restore.
 
 ```YAML
 # list local NuGet resources.
@@ -200,9 +201,9 @@ Run any other NuGet command besides the default ones: pack, push and restore.
   displayName: 'list locals'
   inputs:
     command: custom
-    arguments: 'nuget locals all -list'
+    arguments: 'locals all -list'
 ```
-## Open source
+## Open-source
 
 Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
 
@@ -221,5 +222,9 @@ Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [o
 [!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

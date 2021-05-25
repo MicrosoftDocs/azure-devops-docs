@@ -49,7 +49,7 @@ The [**Delivery Plans**](https://marketplace.visualstudio.com/items?itemName=ms.
 
 ### Read-only work item rules
 
-Earlier this year, we introduced [customizable work item rules](/azure/devops/release-notes/2017/aug-28-team-services#customizable-work-item-rules) to VSTS. With this current update, we are excited to provide even more options by introducing the read-only action to work item rules. Below are some examples of rules you can create that leverage this new capability.
+Earlier this year, we introduced [customizable work item rules](./aug-28-team-services.md#customizable-work-item-rules) to VSTS. With this current update, we are excited to provide even more options by introducing the read-only action to work item rules. Below are some examples of rules you can create that leverage this new capability.
 
 * When a work item state is **Resolved**, then make **Remaining Work** read-only
 * When a work item state is **Closed**, then make **Assigned To** read-only

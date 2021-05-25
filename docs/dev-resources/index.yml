@@ -33,8 +33,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Get started
-            url: ../extend/publish/command-line.md
+          - text:  Cross-platform CLI for Azure DevOps (tfx-cli)
+            url: ../extend/publish/command-line.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
   - title: Azure DevOps REST API Reference
     linkLists:
       - linkListType: get-started

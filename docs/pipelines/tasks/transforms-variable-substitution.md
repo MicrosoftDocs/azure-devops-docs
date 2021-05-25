@@ -406,18 +406,20 @@ variables:
   Data.DBAccess.Users.0: Admin-3
   Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
-- stage: Deploy
-  jobs:
-  - job: DeployJob
-    steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: Azure Resource Manager
-        azureSubscription: <Name of the Azure subscription>
-        appType: <Name of the App Service type>
-        WebAppName: <Name of the Azure WebApp>
-        package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-        JSONFiles: '**/appsettings.json'
+# Update appsettings.json via FileTransform task.
+- task: FileTransform@1
+  displayName: 'File transformation: appsettings.json'
+  inputs:
+    folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    targetFiles: '**/appsettings.json'
+    fileType: json
+  
+# Deploy web app
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: <Name of the Azure subscription>
+    appName: <Name of the Azure WebApp>
+    package: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
 ```
 
 * * *

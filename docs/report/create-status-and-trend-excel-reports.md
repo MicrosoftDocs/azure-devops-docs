@@ -59,7 +59,7 @@ to get the latest version of the Azure Devops add-in for Office, install [Azure 
  
 Use this procedure when you work from the Team Explorer plug-in for Visual Studio. 
 
-1. Create or open a [flat-list query](../boards/queries/using-queries.md#flat-list-query) that contains the work items that you want to include in the report.
+1. Create or open a [flat-list query](../boards/queries/using-queries.md) that contains the work items that you want to include in the report.
 
    Choose the fields you want to base reports on and include them in the filter criteria or as a column option. For non-reportable fields, see [Q: Which fields are non-reportable](#which_fields_are_non_reportable)?
 

@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 07/30/2020 
 ---
@@ -49,9 +49,9 @@ In addition to these operators, you can use the following macros when you select
 > |      <strong>@CurrentIteration</strong>       |                  Specify the current iteration associated with the selected team context.                  |
 > | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp; | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
 > |          <strong>@TeamAreas</strong>          |                      Filter items based on area path(s) assigned to a specific team.                       |
-> 
+
 > [!NOTE]
-> The <strong>@CurrentIteration</strong> macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and <strong>@TeamAreas</strong> macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
+> The **@CurrentIteration** macro is supported for TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 

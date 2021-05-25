@@ -4,8 +4,8 @@ description: Build Xamarin projects with Azure Pipelines, Azure DevOps, & Team F
 ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
-ms.custom: seodec18,contperfq2
-ms.date: 10/27/2020
+ms.custom: seodec18,contperf-fy21q2
+ms.date: 05/24/2021
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Get started with Xamarin and Azure Pipelines by using building a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
+Get started with [Xamarin](https://dotnet.microsoft.com/apps/xamarin) and Azure Pipelines by using building a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
 
 ## Prerequisites
 
@@ -30,6 +30,8 @@ Before you begin, you need:
 https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
+This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamarin-forms-samples` repository. For more information on getting started with Xamarin, see [Build your first Xamarin.Forms App](/xamarin/get-started/first-app/?pivots=windows).
+
 ## Sign in to Azure Pipelines
 
 [!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
@@ -40,21 +42,21 @@ https://github.com/MicrosoftDocs/pipelines-xamarin
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project.
+7. When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the included sample pipelines (Android, iOS, or a combined pipeline that builds both).
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+9. If you created a new YAML file, you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-10. See the sections below to learn some of the more common ways to customize your pipeline.
+11. See the sections below to learn some of the more common ways to customize your pipeline.
 
 
 ## Set up Xamarin tools
@@ -81,7 +83,7 @@ variables:
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
 
 steps:
-- task: NuGetToolInstaller@0
+- task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
   inputs:
@@ -92,6 +94,7 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+    msbuildVersionOption: '16.0'
 ```
 
 ### Sign a Xamarin.Android app
@@ -166,39 +169,66 @@ To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent
 You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining multiple [jobs](../process/phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
 
 ```yaml
-# https://docs.microsoft.com/vsts/pipelines/ecosystems/xamarin
+# Xamarin.Android and Xamarin.iOS
+# Build a Xamarin.Android and Xamarin.iOS app.
+# Add steps that test, sign, and distribute the app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
+
 jobs:
+
 - job: Android
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-2019'
+
   variables:
     buildConfiguration: 'Release'
     outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
   steps:
-  - task: NuGetToolInstaller@0
+  - task: NuGetToolInstaller@1
+
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
+
   - task: XamarinAndroid@1
     inputs:
       projectFile: '**/*droid*.csproj'
       outputDirectory: '$(outputDirectory)'
       configuration: '$(buildConfiguration)'
+      msbuildVersionOption: '16.0'
+
+  - task: AndroidSigning@3
+    inputs:
+      apksign: false
+      zipalign: false
+      apkFiles: '$(outputDirectory)/*.apk'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(outputDirectory)'
 
 - job: iOS
   pool:
-    vmImage: 'macOS-10.14'
-  variables:
-    buildConfiguration: 'Release'
+    vmImage: 'macOS-10.15'
+
   steps:
-  - task: NuGetToolInstaller@0
+  # To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
+  # https://go.microsoft.com/fwlink/?linkid=871629
+  - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1 
+    displayName: 'Select Xamarin SDK version'
+    enabled: false
+
+  - task: NuGetToolInstaller@1
+
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
+
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*iOS.csproj'
-      configuration: '$(buildConfiguration)'
+      solutionFile: '**/*.sln'
+      configuration: 'Release'
       buildForSimulator: true
       packageApp: false
 ```

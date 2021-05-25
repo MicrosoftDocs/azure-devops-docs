@@ -121,5 +121,5 @@ a dot (.). For example: "ms.vss-web.hub" is the full identifier for the contribu
 by the `ms` (Microsoft) publisher.
 
 *Relative* contribution references may be used within an extension manifest for a contribution's reference to another contribution or contribution
-type within that same extension. In this case, the publisher and extension IDs are NOT included, and the ID is simply a dot (.) followed
-by the contribution id. For example, ".hub" may be used within the "vss-web" extension mentioned above as a shortcut for "ms.vss-web.hub".
+type within that same extension. In this case, the publisher and extension IDs are NOT included, and the ID is a dot (.) followed
+by the contribution id. For example, ".hub" may be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub".

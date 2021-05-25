@@ -15,7 +15,7 @@ ms.date: 08/11/2020
 [!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
 Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
@@ -42,7 +42,7 @@ If you registered your app using the preview APIs, re-register because the scope
 When Azure DevOps Services presents the authorization approval page to your user,
 it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-<img alt="Visual Studio Online authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Codespaces authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When Azure DevOps Services asks for a user's authorization, and the user grants it,
 the user's browser gets redirected to your authorization callback URL with the authorization code.
@@ -84,7 +84,7 @@ redirect_uri  | URL    | Callback URL for your app. **Must exactly match the URL
 Azure DevOps Services asks your user to authorize your app.
 It handles authentication, and then calls you back with an authorization code, if the user approves the authorization.
 
-Add a link or button to your site that navigates the user to the Azure DevOps Services authorization endpoint:
+Add a link or button to your site that takes the user to the Azure DevOps Services authorization endpoint:
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -119,7 +119,7 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 |  Header           | Value 
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see below)
+| Content-Length    | Calculated string length of the request body (see the following example)
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -131,7 +131,7 @@ Content-Length: 1322
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={1}&redirect_uri={2}
 ```
 <br>
-Replace the placeholder values in the sample request body above:
+Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
@@ -192,7 +192,7 @@ POST https://app.vssps.visualstudio.com/oauth2/token
 |  Header           | Value 
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
-| Content-Length    | Calculated string length of the request body (see below)
+| Content-Length    | Calculated string length of the request body (see the following example)
 
 ```no-highlight
 Content-Type: application/x-www-form-urlencoded
@@ -204,7 +204,7 @@ Content-Length: 1654
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=refresh_token&assertion={1}&redirect_uri={2}
 ```
 <br>
-Replace the placeholder values in the sample request body above:
+Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded refresh token for the user
@@ -258,7 +258,7 @@ A: Make sure that you handle the following conditions:
 
 ### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
-A: Azure DevOps Services doesn't allow localhost to be the hostname in your callback URL. You can edit the host file on your local computer to map a hostname to 127.0.0.1. Then, use this hostname when you register your app. Or, you can deploy your app when testing to a Microsoft Azure website,  to debug and use HTTPS for the callback URL.
+A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use `https://localhost` as the beginning of your callback URL when you register your app.
 
 ### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
 

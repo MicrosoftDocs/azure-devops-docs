@@ -1,10 +1,10 @@
 ---
 title: Jobs in Azure Pipelines and TFS
-ms.custom: seodec18, contperfq4 
+ms.custom: seodec18, contperf-fy20q4 
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -107,7 +107,7 @@ stages:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 The full syntax to specify a job is:
 
@@ -136,6 +136,40 @@ The full syntax to specify a job is:
 ```
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+The full syntax to specify a job is:
+
+```yaml
+- job: string  # name of the job, A-Z, a-z, 0-9, and underscore
+  displayName: string  # friendly name to display in the UI
+  dependsOn: string | [ string ]
+  condition: string
+  strategy:
+    parallel: # parallel strategy
+    matrix: # matrix strategy
+    maxParallel: number # maximum number simultaneous matrix legs to run
+    # note: `parallel` and `matrix` are mutually exclusive
+    # you may specify one or the other; including both is an error
+    # `maxParallel` is only valid with `matrix`
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  pool: pool # agent pool
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  container: containerReference # container to run this job inside
+  timeoutInMinutes: number # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: { string: string } | [ variable | variableReference ] 
+  steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+  services: { string: string | container } # container resources to run as a service container
+  uses: # Any resources (repos or pools) required by this job that are not already referenced
+    repositories: [ string ] # Repository references to Azure Git repositories
+    pools: [ string ] # Pool names, typically when using a matrix strategy for the job
+```
+
+::: moniker-end
+
 ::: moniker range=">=azure-devops-2020"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
@@ -168,8 +202,11 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-To add jobs to your build pipeline, edit the pipeline in Pipelines page, and select the **Process** tab for your pipeline.
-To add jobs to your release pipeline, edit the pipeline in Releases page, and select the **Process** tab for your pipeline.
+To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
+
+:::image type="content" source="media/build-pipeline-jobs.png" alt-text="Add a job to the pipeline.":::
+
+To add jobs to your release pipeline, edit the pipeline from **Pipelines** > **Releases**. View the stage tasks in the stage where you want to add your job. Select **...**  to add a job.
 
 * * *
 ## Types of jobs
@@ -229,10 +266,11 @@ Jobs can be of different types, depending on where they run.
 ### Agent pool jobs
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
-Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job.
+
+* When using Microsoft-hosted agents, each job in a pipeline gets a fresh agent.
+* Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job. You may get the same agent for consecutive jobs, depending on whether there is more than one agent in your agent pool that matches your pipeline's demands. If there is only one agent in your pool that matches the pipeline's demands, the pipeline will wait until this agent is available.
 
 > [!NOTE]
->
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
 > matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
@@ -277,6 +315,19 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present.
 
+<h3 id="agentless-tasks">Agentless jobs supported tasks</h3>
+
+Currently, only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure Function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+Because tasks are extensible, you can add more agentless tasks by using extensions. The default timeout for agentless jobs is 60 minutes.  
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -315,19 +366,6 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 ::: moniker range="tfs-2017"
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
-
-<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
-
-Currently only the following tasks are supported out of the box for agentless jobs:
-
-* [Delay task](../tasks/utility/delay.md)
-* [Invoke Azure function task](../tasks/utility/azure-function.md)
-* [Invoke REST API task](../tasks/utility/http-rest-api.md)
-* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
-* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
-* [Query Work Items task](../tasks/utility/work-item-query.md)
-
-As tasks are extensible additional agentless tasks can be added through extensions.
 
 ---
 
@@ -825,6 +863,16 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    workspace:
+      clean: all
+    environment: staging
+```
+
 > [!NOTE]
 > Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
@@ -943,7 +991,7 @@ YAML is not yet supported in TFS.
 Select the **Allow scripts to access OAuth token** option in the control options for the job. The token will be available as the environment variable `SYSTEM_ACCESSTOKEN`.
 
 * * *
-## Related articles
+## What's next
 
 * [Deployment group jobs](deployment-group-phases.md)
 * [Conditions](conditions.md)

@@ -16,15 +16,28 @@ ms.date: 07/14/2020
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
-Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
-
-To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).    
+Widgets display information and charts on dashboards. Many widgets are configurable or are scoped to a team or to the current user identity. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
+ 
 
 The following widgets are organized under the service they support. Widgets that derive their data from [Analytics](../powerbi/what-is-analytics.md) are annotated with **Analytics**. 
+ 
 
-<!--- Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user. -->
+::: moniker range=">= azure-devops-2019"
+- **Analytics**: indicates data is derived from [Analytics data](../powerbi/what-is-analytics.md)  
+- **Project**: indicates you can select the project and team when configuring the widget
+- **Team**: Indicates a widget that is scoped to a team  
+- **User**: Indicates you widget that is scoped to a user identity 
+::: moniker-end
 
 
+::: moniker range=">=tfs-2015 <= tfs-2018"
+- **Team**: Indicates a widget that is scoped to a team  
+- **User**: Indicates you widget that is scoped to a user identity 
+::: moniker-end
+
+
+To add a widget to a dashboard or copy a widget from one dashboard to another, see [Add a widget to a dashboard](add-widget-to-dashboard.md).   
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -591,7 +604,7 @@ For additional guidance, see [Velocity](team-velocity.md).
 Provides quick access to open the following Agile tools and team resources:
 
 - [Backlog](../../boards/backlogs/create-your-backlog.md)  
-- [Kanban Board](../../boards/boards/kanban-basics.md)  
+- [Kanban board](../../boards/boards/kanban-basics.md)  
 - [Task board](../../boards/sprints/task-board.md)  
 - [Queries](../../boards/queries/using-queries.md)  
 

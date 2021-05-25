@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 11/02/2020
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -49,6 +49,8 @@ To clone additional repositories as part of your pipeline:
 * If the repo is in the same project as your pipeline, or if the access token (explained below) has access to the repository in a different project, use the following command:
 
   `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
+
+  In order to use `System.AccessToken` in a script, you must first make it available to the script. To do this, select the job under the **Tasks** tab in the editor, select **Additional Options** in the right panel, and check the option to **Allow scripts to access the OAuth token**.
 
 * If the access token (explained below) does not have access to the repository:
 
@@ -188,7 +190,7 @@ For more information on **Limit job authorization scope**, see [Understand job a
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
-Pipelines can access any Azure DevOps repositories in authorized projects, as described in the previous [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project) section, unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+Pipelines can access any Azure DevOps repositories in authorized projects, as described in the previous [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project) section, unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
 To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
 
@@ -203,13 +205,21 @@ There are a few exceptions where you don't need to explicitly reference an Azure
 * If you are using a script to perform read-only operations on a repository in a public project, you don't need to reference the public project repository in a `checkout` step.
 * If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository in a `checkout` step.
 
-For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must also reference this repository in a `checkout` step.
+For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must either reference this repository in a `checkout` step or with a `uses` statement.
 
 If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository, such as checking out different branches.
 
 ```yml
 steps:
 - checkout: git://FabrikamFiber/FabrikamTools # Azure Repos Git repository in the same organization
+- script: Do something with that repo
+
+# Or you can reference it with a uses statement in the job
+uses:
+- FabrikamTools # Repository reference to FabrikamTools
+
+steps:
+- script: Do something with that repo like clone it
 ```
 
 > [!NOTE]

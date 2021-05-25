@@ -7,7 +7,7 @@ ms.manager: hdixon
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/23/2020
+ms.date: 12/15/2020
 monikerRange: azure-devops
 ---
 
@@ -16,13 +16,16 @@ monikerRange: azure-devops
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 > [!NOTE]
-> For more information, including Azure CLI commands, see [downloading artifacts](../../artifacts/pipeline-artifacts.md?tabs=yaml#downloading-artifacts).
+> For more information, including Azure CLI commands, see [downloading artifacts](../../artifacts/pipeline-artifacts.md?tabs=yaml#download-artifacts).
 
 ::: moniker range="azure-devops"
 
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
+
+> [!NOTE]
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
 
 ::: moniker-end
 

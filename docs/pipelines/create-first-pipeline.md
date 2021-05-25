@@ -1,12 +1,12 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18, devx-track-python
+ms.custom: seodec18, devx-track-python, devx-track-azurecli
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 08/05/2020
+ms.date: 12/03/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -23,7 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 [!INCLUDE [include](includes/prerequisites.md)]
 
 > [!NOTE]
-> If you want create a new pipeline by copying another pipeline, see [Clone or import a pipeline](./get-started/clone-import-pipeline.md).
+> If you want to create a new pipeline by copying another pipeline, see [Clone or import a pipeline](./get-started/clone-import-pipeline.md).
 
 ## Create your first pipeline
 
@@ -49,7 +49,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 5. When the list of repositories appears, select your desired sample app repository.
 
-6. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+6. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 7. A new run is started. Wait for the run to finish.
 
@@ -139,7 +139,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 
 6. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 
-7. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+7. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 8. A new run is started. Wait for the run to finish.
 
@@ -147,9 +147,237 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
+
+#### [Azure CLI (Java)](#tab/azure-cli)
+
+
+1. From a command prompt, sign in to the Azure CLI.
+
+    ```azurecli-interactive
+    az login
+    ```
+
+1. Fork the following repository into your GitHub account:
+
+    ```
+    https://github.com/MicrosoftDocs/pipelines-java
+    ```
+
+    After you've forked it, clone it to your dev machine. 
+    Learn how: [Fork a repo](https://help.github.com/en/articles/fork-a-repo).
+
+1. Navigate to the cloned directory.
+
+1. Create a new pipeline:
+
+    ```azurecli-interactive
+    az pipelines create --name "First-Java.CI"
+    ```
+
+    The repository and branch details are picked up from the git configuration available in the cloned directory.   
+
+1. If prompted, enter your GitHub user name and password to authenticate Azure Pipelines.
+   
+    ```azurecli-interactive
+    Enter your GitHub username (Leave blank for using already generated PAT): 
+    Enter your GitHub password:
+    ``` 
+
+1. Add a name, `ContosoPipelineServiceConnection`, for the service connection created to enable Azure Pipelines to communicate with the GitHub Repository.
+    
+    ```azurecli-interactive
+    Enter a service connection name to create? ContosoPipelineServiceConnection
+    ```
+
+1. Select the Maven pipeline template from the list of recommended templates. 
+
+    ```azurecli-interactive
+    Which template do you want to use for this pipeline?
+    [1] Maven
+    [2] Maven package Java project Web App to Linux on Azure
+    [3] Android
+    [4] Ant
+    [5] ASP.NET
+    [6] ASP.NET Core
+    [7] ASP .NET Core (.NET Framework)
+    [8] Starter pipeline
+    [9] C/C++ with GCC
+    [10] Go
+    [11] Gradle
+    [12] HTML
+    [13] Jekyll site
+    [14] .NET Desktop
+    [15] Node.js
+    [16] Node.js with Angular
+    [17] Node.js with Grunt
+    [18] Node.js with gulp
+    [19] Node.js with React
+    [20] Node.js with Vue
+    [21] Node.js with webpack
+    [22] PHP
+    [23] Python Django
+    [24] Python package
+    [25] Ruby
+    [26] Universal Windows Platform
+    [27] Xamarin.Android
+    [28] Xamarin.iOS
+    [29] Xcode
+    Please enter a choice [Default choice(1)]:
+    ```
+
+1. Select *2* to view the YAML in your default editor and make changes.
+
+    ```azurecli-interactive
+    Do you want to view/edit the template yaml before proceeding?
+    [1] Continue with the generated yaml
+    [2] View or edit the yaml
+    Please enter a choice [Default choice(1)]:2
+    ```
+    
+1. Select *1* to commit the the YAML file to the main branch.
+
+    ```azurecli-interactive
+    How do you want to commit the files to the repository?
+    [1] Commit directly to the main branch.
+    [2] Create a new branch for this commit and start a pull request.
+    Please enter a choice [Default choice(1)]:
+    ```
+
+1. Azure DevOps will automatically start a pipeline run. Wait for the run to finish.
+
 --- 
 
 [!INCLUDE [include](includes/get-status-badge.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Manage your pipeline with Azure CLI
+
+You can manage the pipelines in your organization using these `az pipelines` commands:
+
+- [az pipelines run](#run-a-pipeline): Run an existing pipeline
+- [az pipelines update](#update-a-pipeline): Update an existing pipeline
+- [az pipelines show](#show-pipeline): Show the details of an existing pipeline
+
+These commands require either the name or ID of the pipeline you want to manage. You can get the ID of a pipeline using the [az pipelines list](/cli/azure/pipelines#ext-azure-devops-az-pipelines-list) command.
+
+### Run a pipeline
+
+You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az pipelines run [--branch]
+                 [--commit-id]
+                 [--folder-path]
+                 [--id]
+                 [--name]
+                 [--open]
+                 [--org]
+                 [--project]
+                 [--variables]
+``` 
+
+#### Parameters
+
+- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
+- **commit-id**: Commit-id on which the pipeline run is to be queued.
+- **folder-path**: Folder path of pipeline. Default is root level folder.
+- **id**: Required if **name** is not supplied. ID of the pipeline to queue.
+- **name**: Required if **ID** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to queue.
+- **open**: Open the pipeline results page in your web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **variables**: Space separated "name=value" pairs for the variables you would like to set.
+
+#### Example
+
+The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.  
+
+```azurecli 
+az pipelines run --name myGithubname.pipelines-java --branch pipeline --output table
+
+Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time               Reason
+--------  ----------  ----------  --------  -------------  ---------------------------  ---------------  --------------------------  --------
+123       20200123.2  notStarted            12             myGithubname.pipelines-java  pipeline           2020-01-23 11:55:56.633450  manual
+```
+
+### Update a pipeline
+
+You can update an existing pipeline with the [az pipelines update](/cli/azure/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az pipelines update [--branch]
+                    [--description]
+                    [--id]
+                    [--name]
+                    [--new-folder-path]
+                    [--new-name]
+                    [--org]
+                    [--project]
+                    [--queue-id]
+                    [--yaml-path]
+``` 
+
+#### Parameters
+
+- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
+- **description**: New description for the pipeline.
+- **id**: Required if **name** is not supplied. ID of the pipeline to update.
+- **name**: Required if **ID** is not supplied. Name of the pipeline to update.
+- **new-folder-path**: New full path of the folder to which the pipeline is moved, for example, *user1/production_pipelines*.
+- **new-name**: New updated name of the pipeline.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **queue-id**: Queue ID of the agent pool where the pipeline needs to run.
+- **yaml-path**: Path of the pipeline's yaml file in the repo.
+
+#### Example 
+
+The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
+
+```azurecli 
+az pipelines update --id 12 --description "rename pipeline" --new-name updatedname.pipelines-java --output table
+
+ID    Name                        Status    Default Queue
+----  --------------------------  --------  ------------------
+12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
+```
+
+### Show pipeline
+
+You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```azurecli 
+az pipelines show [--folder-path]
+                  [--id]
+                  [--name]
+                  [--open]
+                  [--org]
+                  [--project]
+``` 
+
+#### Parameters
+
+- **folder-path**: Folder path of pipeline. Default is root level folder.
+- **id**: Required if **name** is not supplied. ID of the pipeline to show details.
+- **name**: Required if **name** is not supplied, but ignored if **ID** is supplied. Name of the pipeline to show details.
+- **open**: Open the pipeline summary page in your web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example 
+
+The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.  
+
+```azurecli 
+az pipelines show --id 12 --output table
+
+ID    Name                        Status    Default Queue
+----  --------------------------  --------  ------------------
+12    updatedname.pipelines-java  enabled   Hosted Ubuntu 1604
+```
 
 ::: moniker-end
 
@@ -197,7 +425,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
-   ![Repos files](../repos/get-started/media/clone-repo/repos-files.png)
+   ![Repos files](./media/create-first-pipeline/repos-files.png)
 
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
@@ -981,15 +1209,15 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[What is Continuous Integration?](/azure/devops/what-is-continuous-integration)
+[What is Continuous Integration?](/devops/develop/what-is-continuous-integration)
 
-[What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)
+[What is Continuous Delivery?](/devops/deliver/what-is-continuous-deliverywhat-is-continuous-delivery)
 
-[What is DevOps?](/azure/devops/what-is-devops)
+[What is DevOps?](https://azure.microsoft.com/overview/what-is-devops/)
 
 <a name="version-control"></a>
 
-### What kinds of version control can I use
+### What kinds of version control can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -1159,7 +1387,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 
@@ -1185,7 +1413,7 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
-  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+  - Build a [branch](../repos/git/create-branch.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
   - Build a [commit](../repos/git/commits.md).
 
@@ -1231,8 +1459,17 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/?view=azure-cli-latest&preserve-view=true).
 
 <!-- ENDSECTION -->
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Can I use a single command at the command line to run multiple pipelines in Azure DevOps Services?
+
+Currently, the Azure CLI and Azure APIs don't offer commands that run multiple pipelines from the command line. You can use [Azure CLI commands](/cli/azure/pipelines) to list all pipelines and definitions and provide a *single* release or build ID as a parameter. All commands are designed to work for independent runs of independent pipelines, and they require unique ID requests that allow only one, unique value. To learn about pipeline triggers, see [Specify events that trigger pipelines](./build/triggers.md).
+
+::: moniker-end
+

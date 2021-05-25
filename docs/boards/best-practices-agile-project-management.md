@@ -3,10 +3,11 @@ title: Best practices for Agile project management
 titleSuffix: Azure Boards
 description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
+"recommendations": "true"
 ms.date: 08/24/2020
 ---
 
@@ -19,7 +20,7 @@ ms.date: 08/24/2020
 Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. 
 
 > [!NOTE]
-> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
+> If your team is committed to practicing Kanban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
 
 In this article, we make the following suggestions and guidance: 
 
@@ -52,12 +53,12 @@ Azure Boards provides each team a set of Agile tools to plan and track work. Eac
 
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md) 
 - [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md) 
-- [Agile culture](/azure/devops/learn/agile/agile-culture) 
-- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Agile culture](/devops/plan/adopting-agile) 
+- [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 
 ## Configure your sprints 
 
-Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. Also, you can define sprints within a hierarchy that includes release trains. You assign work to sprints that teams commit to deliver at the end of the sprint. These Azure Boards tools rely on sprint assignments to a team  [Sprint backlogs, Taskboard, and Forecast](sprints/scrum-overview.md) and [Delivery plans](plans/review-team-plans.md). 
+Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. Also, you can define sprints within a hierarchy that includes release trains. You assign work to sprints that teams commit to deliver at the end of the sprint. These Azure Boards tools rely on sprint assignments to a team [Sprint backlogs, Taskboard, and Forecast](sprints/scrum-overview.md) and [Delivery plans](plans/review-team-plans.md). 
 
 #### Best practice tips: 
 
@@ -166,7 +167,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 The following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](backlogs/media/filter-boards/filter-kb-text-web-services.png)
 
 
 
@@ -179,7 +180,7 @@ The following image illustrates a Kanban board filtered on the *web* keyword whi
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
 
 
@@ -248,12 +249,24 @@ The following Add link dialog illustrates how two work items are linked using th
 
 ### Visualize work item relationships 
 
+::: moniker range="azure-devops"
+
+You can view dependencies and identify dependencies that have issues with Delivery Plans. As shown in the following image, you can toggle the display of dependency lines between linked work items. To learn more, see [Track dependencies using Delivery Plans](plans/track-dependencies.md). 
+
+:::image type="content" source="plans/media/dependencies/dependency-lines.png" alt-text="Screenshot of dependency lines between several work items.":::
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 With the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension, you can visualize the link relationships among several work items as shown in the following image. 
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
 > [![Screenshot of Visualize work item relationships.](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+
+::: moniker-end
 
 ### Minimum Viable Product versus Critical Path Management  
 
@@ -341,8 +354,13 @@ One quick and visual way to monitor progress is from the Features backlog. By ad
 
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Delivery plan, annotated.](plans/media/plans_view2.png) 
+::: moniker range="azure-devops"  
+:::image type="content" source="./plans/media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+::: moniker-end 
+
+::: moniker range="< azure-devops"  
+<img src="./extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
   
 ### Best practice tips  
 
@@ -358,7 +376,7 @@ To review features delivered across several teams, configure a delivery plan. De
 
 - [Add columns to your Kanban board](boards/add-columns.md) 
 - [Customize cards](boards/customize-cards.md)
-- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md)
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
@@ -426,5 +444,5 @@ Teams can define one or more dashboards to share information and monitor real-ti
 
 ### Industry articles  
 
-- [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
+- [Agile and a continuous improvement mindset](https://scrumtraininginstitute.com/agile-scrum-training/agile-team-health-check/#:~:text=At%20the%20core%20of%20Agile%20continuous%20improvement%20is,your%20organization%20can%20develop%20a%20continuous%20improvement%20mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)

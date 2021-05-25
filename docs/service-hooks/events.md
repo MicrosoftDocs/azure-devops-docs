@@ -64,6 +64,7 @@ A build completes
 
 * Publisher ID: `tfs`
 * Event ID: `build.complete`
+* Resource Name: `build`
 
 #### Settings
  * `definitionName`: Filter events to include only completed builds for the specified pipeline
@@ -173,6 +174,7 @@ A release was abandoned
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-abandoned-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -333,6 +335,7 @@ A release was created
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.release-created-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
@@ -493,6 +496,7 @@ A deployment approval has been completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalStatus`: Filter events to include only deployments with an approval of the specified status
@@ -697,6 +701,7 @@ A deployment approval has been requested
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-approval-pending-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseApprovalType`: Filter events to include only deployments requesting an approval of the specified type
@@ -893,6 +898,7 @@ A deployment completed
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-completed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1046,6 +1052,7 @@ A deployment was started
 
 * Publisher ID: `rm`
 * Event ID: `ms.vss-release.deployment-started-event`
+* Resource Name: `resource`
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
@@ -1202,6 +1209,7 @@ Overall status of a pipeline run changed. A new run has started, or a run has tr
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.run-state-changed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1289,6 +1297,7 @@ A new stage has started, or a stage has transitioned to canceling, canceled, fai
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelines.stage-state-changed-event`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1378,6 +1387,7 @@ An approval is created for a run stage
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-pending`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1460,6 +1470,7 @@ An approval completed for a run stage
 
 * Publisher ID: `pipelines`
 * Event ID: `ms.vss-pipelinechecks-events.approval-completed`
+* Resource Name: `resource`
 
 #### Settings
  * `PipelineId`: Filter to include only events for the specified pipeline
@@ -1545,6 +1556,7 @@ A changeset is checked into TFVC.
 
 * Publisher ID: `tfs`
 * Event ID: `tfvc.checkin`
+* Resource Name: `changeset`
 
 #### Settings
  * `path`: Filter to checkins that change one or more files under the specified path
@@ -1603,6 +1615,7 @@ Code is pushed to a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.push`
+* Resource Name: `push`
 
 #### Settings
  * `branch`: The branch that code was pushed into
@@ -1697,6 +1710,7 @@ Pull request is created in a Git repository
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.created`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1801,6 +1815,7 @@ Pull request - Created merge commit
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.merged`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `repository`: The repository that code was pushed to
@@ -1906,6 +1921,7 @@ Pull request is updated; status, review list, reviewer vote changed or the sourc
 
 * Publisher ID: `tfs`
 * Event ID: `git.pullrequest.updated`
+* Resource Name: `pullrequest`
 
 #### Settings
  * `notificationType`: The type of pull request change
@@ -2025,6 +2041,7 @@ Filter events to include only newly created work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.created`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2107,6 +2124,7 @@ Filter events to include only newly deleted work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.deleted`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2183,6 +2201,7 @@ Filter events to include only newly restored work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.restored`
+* Resource Name: `resource`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2271,6 +2290,7 @@ Filter events to include only changed work items.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.updated`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2394,6 +2414,7 @@ Filter events to include only work items commented on.
 
 * Publisher ID: `tfs`
 * Event ID: `workitem.commented`
+* Resource Name: `workitem`
 
 #### Settings
  * `areaPath`: Filter events to include only work items under the specified area path.
@@ -2482,6 +2503,7 @@ Triggers when a message is posted to a team room
 
 * Publisher ID: `tfs`
 * Event ID: `message.posted`
+* Resource Name: `messageposted`
 
 #### Settings
  * `messagePattern`: The string that must be found in the message

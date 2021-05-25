@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: example-scenario
 monikerRange: '>= tfs-2017'
 ms.date: 04/24/2019 
 ---
@@ -118,7 +118,7 @@ To learn more, see the following articles:
 
 ## Extensibility 
 
-You can programmatically interact with work item templates to create, get, list, and delete using the [Templates REST APIs](/rest/api/azure/devops/wit/templates?view=azure-devops-rest-5.0).
+You can programmatically interact with work item templates to create, get, list, and delete using the [Templates REST APIs](/rest/api/azure/devops/wit/templates/list).
 
 
 ## Related articles

@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2017'
 
 # Commit details
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1 **
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
 
 ## Commit details view
 
-The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit.
+The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->
 
 ![Commit details page](media/commit-details/1Commitdetails.png)
 
@@ -30,7 +30,7 @@ The commit details view provides information regarding all the changes made as p
 
     ![Author page](media/commit-details/2AuthorDetails.png)
 
-* Associated pull requests - Once you navigate from the [commit history](commit-history.md) to the commit details, the context of the branch from the commit history page is retained. In the following example you can see that commit #33 brought this commit to the master branch. You can also view all the associated pull requests for this commit, which are all the pull requests that brought this commit to one branch or another.
+* Associated pull requests - Once you navigate from the [commit history](commit-history.md) to the commit details, the context of the branch from the commit history page is retained. In the following example you can see that commit #33 brought this commit to the main branch. You can also view all the associated pull requests for this commit, which are all the pull requests that brought this commit to one branch or another.
 
     ![Associated pull requests](media/commit-details/3AssociatedPRDetails.png)
 

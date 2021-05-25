@@ -30,7 +30,7 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
 
    ```yaml
     trigger:
-    - master
+    - main
 
     pool:
       vmImage: 'Ubuntu-16.04'
@@ -51,7 +51,7 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
    > [!Note]
    > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
     
-This pipeline runs whenever your team pushes a change to the master branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
+This pipeline runs whenever your team pushes a change to the main branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
 
@@ -167,7 +167,7 @@ To build a project using different versions of that language, you can use a `mat
 
     ```yaml
     trigger:
-    - master
+    - main
 
     strategy:
       matrix:
@@ -195,34 +195,34 @@ To build a project using different versions of that language, you can use a `mat
         goals: "package"
     ```
 
-* Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
+* Select **Save** and then confirm the changes to see your build run two jobs on two different platforms and SDKs.
 
 ## Customize CI triggers
 
-You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually master). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
+You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually main). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
 
 * If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
 
     ```yaml
     trigger:
-      - master
+      - main
       - releases/*
     ```
 
     ```yaml
     pr:
-      - master
+      - main
       - releases/*
     ```
 
-    You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+    You can specify the full name of the branch (for example, `main`) or a prefix-matching wildcard (for example, `releases/*`).
 
 ## Customize settings
 
 There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
 1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
 2. Select the pipeline you want to configure settings for from the list of pipelines.
-3. Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
+3. Choose **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: and select **Settings**.
 
 ### Processing of new run requests
 Sometimes you'll want to prevent new runs from starting on your pipeline. 

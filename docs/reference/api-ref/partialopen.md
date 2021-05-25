@@ -33,7 +33,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>public void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>C++</h4>
@@ -43,7 +42,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>F#</h4>
@@ -52,7 +50,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>member PartialOpen : unit -&gt; unit</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>JScript</h4>
@@ -61,7 +58,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>public void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>VB</h4>
@@ -74,38 +70,6 @@ Opens this work item for modification by loading only the latest revision of thi
 </table>
 
 
-<!---
-
-<a data-toggle="collapse" href="#expando-agent-pools">C# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public void PartialOpen()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">C++ ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public:  
-void PartialOpen()```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">F# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```member PartialOpen : unit -> unit```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">JScript ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public function PartialOpen()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">VB ▼</a>
-<div class="collapse" id="expando-queues"> 
-```'Declaration  
-Public Sub PartialOpen```
-</div>
-
----> 
 
 ## Exceptions
 

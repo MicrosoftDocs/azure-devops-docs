@@ -4,7 +4,7 @@ description: C# samples showing how to integrate with Azure DevOps Services and 
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: wireznak
 author: wireznak
 ms.date: 09/26/2019

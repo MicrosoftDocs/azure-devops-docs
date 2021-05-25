@@ -85,7 +85,7 @@ You can review your requests after the Marketplace sends the request to your Pro
 
 Your requests appear on your **Manage extensions** page.
 
-![Manage extensions](media/manage-extensions-vsts.png)
+![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted).](media/manage-extensions-vsts.png)
 
 ::: moniker-end
 
@@ -99,18 +99,18 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 - Azure DevOps:```https://dev.azure.com/{organization}/{project}```
 
-2. Select the shopping bag icon, and then **Manage extensions**.
+1. Select the shopping bag, and then **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions.png)
 
-3. Review and approve your requested extensions.
+2. Review and approve your requested extensions.
 
    > [!div class="mx-imgBorder"] 
    > ![Extensions tab, requested extensions](media/get-tfs-extensions/connected/approve-request-tfs.png)
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./install-extension.md) to users who need access.
+3. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 
@@ -120,18 +120,18 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 - TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
-2. Select the shopping bag icon and **Manage extensions**.
+1. Select the shopping bag, and then **Manage extensions**.
 
-   ![Manage extensions](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
+   ![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted)](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
 
-3. Review and approve your requested extensions.
+2. Review and approve your requested extensions.
 
    > [!div class="mx-imgBorder"] 
    > ![Extensions tab, requested extensions](media/get-tfs-extensions/connected/approve-request-tfs.png)
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./install-extension.md) to users who need access.
+3. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 
@@ -139,7 +139,7 @@ Tell your team about installed extensions, so they can start using their capabil
 
 ## Related articles
 
-- [FAQs](faq-extensions.md)
+- [FAQs](faq-extensions.yml)
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)

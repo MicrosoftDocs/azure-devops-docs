@@ -4,8 +4,8 @@ description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & T
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 05/06/2020
-ms.custom: contperfq4
+ms.date: 05/10/2021
+ms.custom: contperf-fy20q4
 monikerRange: '>= tfs-2017'
 ---
 
@@ -142,7 +142,7 @@ steps:
 ::: moniker range="< azure-devops" 
 ### Classic
 
-1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **Empty Pipeline**. 
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)). Select **Empty Pipeline** for the template. 
 
 2. In the task catalog, find and add the **.NET Core** task. This task will run `dotnet build` to build the code in the sample repository.
 
@@ -160,8 +160,8 @@ steps:
 
 ::: moniker range=">=azure-devops-2020"
 
-You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
-The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
+Use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
+The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines include several released versions of the .NET Core SDKs preinstalled.
 
 Ubuntu 18.04 is set here in the YAML file.  
 
@@ -190,7 +190,7 @@ steps:
     packageType: runtime
 ```
 
-If you are installing on a Windows agent, it will already have a .NET Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true` in this snippet: 
+Windows agents already include a .NET Core runtime. To install a newer SDK, set `performMultiLevelLookup` to `true` in this snippet: 
 
 ```yaml
 steps:
@@ -281,7 +281,7 @@ However, you might still need to use the **.NET Core** task to restore packages 
 ::: moniker range=">= tfs-2018"
 
 If your builds occasionally fail when restoring packages from NuGet.org due to connection issues, 
-you can use Azure Artifacts in conjunction with [upstream sources](../../artifacts/concepts/upstream-sources.md) 
+you can use Azure Artifacts with [upstream sources](../../artifacts/concepts/upstream-sources.md) 
 and cache the packages. The credentials of the pipeline are automatically used when connecting 
 to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** 
 account.
@@ -491,11 +491,43 @@ steps:
 ### Collect code coverage metrics with Coverlet
 If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 
-Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To use this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
 To run tests and publish code coverage with Coverlet:
-* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s).
+* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s) for .NET projects below .NET 5. For .NET 5, add a reference to the  `coverlet.collector` NuGet package.
 * Add this snippet to your `azure-pipelines.yml` file:
+
+
+# [.NET 5](#tab/dotnetfive)
+
+  ```yaml
+  - task: UseDotNet@2
+    inputs:
+      version: '5.0.x'
+      includePreviewVersions: true # Required for preview versions
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet build'
+    inputs:
+      command: 'build'
+      configuration: $(buildConfiguration)
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet test'
+    inputs:
+      command: 'test'
+      arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+      publishTestResults: true
+      projects: 'MyTestLibrary' # update with your test project directory
+    
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage report'
+    inputs:
+      codeCoverageTool: 'Cobertura'
+      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+  ```
+
+# [.NET < 5](#tab/netearlierversions)
 
   ```yaml
   - task: DotNetCoreCLI@2
@@ -512,6 +544,9 @@ To run tests and publish code coverage with Coverlet:
       codeCoverageTool: 'Cobertura'
       summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
   ```
+
+---
+
  
 ## Package and deliver your code
 
@@ -539,9 +574,9 @@ steps:
     zipAfterPublish: True
 
 # this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
-- task: PublishBuildArtifacts@1
+- task: PublishPipelineArtifact@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    targetPath: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'myWebsiteName'
 
 ```
@@ -549,7 +584,7 @@ steps:
 > [!NOTE]
 > The `dotNetCoreCLI@2` task has a `publishWebProjects` input that is set to **true** by default. This publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
 
-To copy additional files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
+To copy more files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
 
@@ -599,7 +634,7 @@ To publish this archive to a web app, see [Azure Web Apps deployment](../targets
 
 ### Publish artifacts to Azure Pipelines
 
-To simply publish the output of your build to Azure Pipelines or TFS, use the **Publish Artifacts** task.
+Use the **Publish Artifacts** task to publish the output of your build to Azure Pipelines or TFS.
 
 ### Publish to a NuGet feed
 
@@ -630,7 +665,7 @@ If you're able to build your project on your development machine, but you're hav
 
 ::: moniker range=">=azure-devops-2020"
 * We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released, 
-it can take a few weeks for us to roll it out to all the datacenters that Azure Pipelines runs on. You don't have to wait for us to finish 
+it can take a few weeks for us to roll it out to all the data centers that Azure Pipelines run on. You don't have to wait for us to finish 
 this rollout. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK 
 on Microsoft-hosted agents.  
 

@@ -1,7 +1,7 @@
 ---
 title: Agile process work item types & workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Agile process to track work using its work item types working in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: How to guide for using the Agile process to track work using its work item types working in Azure Boards 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  

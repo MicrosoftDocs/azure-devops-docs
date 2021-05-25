@@ -20,21 +20,16 @@ Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and t
 ::: moniker range="> tfs-2015"
 
 > [!IMPORTANT]
-> 
-> If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, we recommend that you do NOT use this deprecated task.
-> Instead, use the **[Copy Files](copy-files.md)** and **[Publish Build Artifacts](publish-build-artifacts.md)** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
 > [!IMPORTANT]
-> 
-> Are you using Team Foundation Server (TFS) 2015.4? If so, we recommend that you do NOT use this deprecated task.
-> Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
 >
-> You should use this task only if you're using Team Foundation Server (TFS) 2015 RTM.
-> In that version of TFS, this task is listed under the **Build** category and is named **Publish Build Artifacts**.
+> Use this task only if you're using Team Foundation Server (TFS) 2015 RTM. You can find this task under the **Build** category **Publish Build Artifacts**.
 
 ## Demands
 

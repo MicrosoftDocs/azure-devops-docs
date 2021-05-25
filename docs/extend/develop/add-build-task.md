@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2020
+ms.date: 03/04/2021
 ---
 
 # Add a custom pipelines task extension
@@ -32,9 +32,9 @@ To create extensions for Azure DevOps, you need the following software and tools
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- TypeScript Compiler 2.2.0 or greater. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
+- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
-- [Cross-platform CLI for Azure DevOps (tfx-cli)] to package your extensions.
+- [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
   The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
@@ -46,6 +46,10 @@ To create extensions for Azure DevOps, you need the following software and tools
   |--- buildAndReleaseTask            // where your task scripts are placed
   |--- vss-extension.json             // extension's manifest
   ```
+- The [vss-web-extension-sdk package installation](https://github.com/Microsoft/vss-web-extension-sdk).
+
+> [!IMPORTANT]
+> The dev machine needs to run Node v10.21.0 to ensure that the code written is compatible with the production environment on the agent and the latest non-preview version of azure-pipelines-task-lib.
 
 ### Develop in Unix vs. Windows
 
@@ -100,6 +104,16 @@ so that node_modules are built each time and don't need to be checked in.
 ```
 echo node_modules > .gitignore
 ```
+
+#### Choose typescript version
+
+Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typescript version using this command:
+
+```
+npm install typescript@4.0.2 --save-dev
+```
+
+If you skip this step, typescript version 2.3.4 gets used by default.
 
 #### Create tsconfig.json compiler options
 
@@ -364,7 +378,7 @@ it('it should fail if tool returns 1', function(done: Mocha.Done) {
     tr.run();
     console.log(tr.succeeded);
     assert.equal(tr.succeeded, false, 'should have failed');
-    assert.equal(tr.warningIssues, 0, "should have no warnings");
+    assert.equal(tr.warningIssues.length, 0, "should have no warnings");
     assert.equal(tr.errorIssues.length, 1, "should have 1 error issue");
     assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
     assert.equal(tr.stdout.indexOf('Hello bad'), -1, "Should not display Hello bad");
@@ -500,7 +514,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 
-You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
+Create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
 Declare the following variables in the variable group:
 - `publisherId`: ID of your marketplace publisher.
@@ -636,7 +650,7 @@ For more help with triggers, such as CI and PR triggers, see [Specify events tha
 
 ### Pipeline stages
 
-This section will help you understand how the pipeline stages work.
+This section helps you understand how the pipeline stages work.
 
 #### Stage: Run and publish unit tests
 
@@ -692,13 +706,13 @@ After the test results have been published, the output under the tests tab shoul
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
 1. Add the "Copy files" task to copy published files. Use the following inputs:
     - Contents: All of the files that need to be copied for publishing them as an artifact
-    - Target folder: The folder that the files will all be copied to
+    - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
 1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
     - Path to publish: The path to the folder that contains the files that are being published.
        - For example: $(Build.ArtifactStagingDirectory).
     - Artifact name: The name given to the artifact.
-    - Artifact publish location: Choose "Azure Pipelines" to use the artifact in future jobs.
+    - Artifacts publish location: Choose "Azure Pipelines" to use the artifact in future jobs.
 
 #### Stage: Download build artifacts and publish the extension
 
@@ -731,7 +745,7 @@ Install an extension that is shared with you in just a few steps:
 
 If you can't see the **Extensions** tab, make sure you're in the control panel (the administration page at the project collection level, `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
-If you don't see the **Extensions** tab on the control panel, then extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
+If you don't see the **Extensions** tab, then extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 For build and release tasks to package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 

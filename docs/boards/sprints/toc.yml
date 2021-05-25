@@ -1,6 +1,6 @@
 - name: About Sprints and Scrum
   href: scrum-overview.md
-- name: Schedule sprints
+- name: Change sprint dates
   href: define-sprints.md 
 - name: Forecast
   displayname: velocity, sprints, iterations  
@@ -27,6 +27,9 @@
     href: customize-taskboard.md
   - name: Change column options
     href: ../backlogs/set-column-options.md
+  - name: Filter your sprint views
+    href: ../backlogs/filter-backlogs-boards-plans.md 
+    displayname: group, parent, tags  
   - name: Set working days
     href: ../../organizations/settings/set-working-days.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Best practices, monitoring, & reports

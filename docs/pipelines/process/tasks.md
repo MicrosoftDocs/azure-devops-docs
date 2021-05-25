@@ -249,9 +249,6 @@ For example, you can set up your build pipeline to run and validate your app for
 
 ### Example: Test and validate your app on multiple versions of Node.js
 
-> [!TIP]
-> Want a visual walkthrough? See [our April 19 news release](../archive/news/2017.md#april-19).
-
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 

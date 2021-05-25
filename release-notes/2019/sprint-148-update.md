@@ -4,12 +4,12 @@ author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
 ms.date: 02/25/2019
-description: In the **Sprint 148 Update** of Azure DevOps, we added a new Azure DevOps command-line interface (CLI) extension which allows you to interact with Azure DevOps services using command-line - Sprint 148 Update.
+description: In the **Sprint 148 Update** of Azure DevOps, we added a new Azure DevOps command-line interface (CLI) extension which allows you to interact with Azure DevOps Services using command-line - Sprint 148 Update.
 ---
 
 # New Azure DevOps CLI preview and feature updates in Pipelines - Sprint 148 Update
 
-In the **Sprint 148 Update** of Azure DevOps, we added a new Azure DevOps command-line interface (CLI) extension which allows you to interact with Azure DevOps services using command-line.
+In the **Sprint 148 Update** of Azure DevOps, we added a new Azure DevOps command-line interface (CLI) extension which allows you to interact with Azure DevOps Services using command-line.
 
 In addition, we added new options to the Azure Deployment Center to make it simpler to deploy web apps for Windows, Linux and Containers to Azure. You can now use Azure Pipelines to deploy these resources from your local Git repo to Azure. We are also releasing a new Azure subscription option in the service connection to facilitate the authentication process for Kubernetes.
 

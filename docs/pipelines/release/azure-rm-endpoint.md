@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/09/2020
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an Azure Resource Manager [ARM service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
+This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an [Azure Resource Manager service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 
@@ -44,7 +44,7 @@ When you select **OK**, the system:
 
 <a name="troubleshoot"></a>
 
-## How to troubleshoot errors that may occur while creating a connection?
+## How do I troubleshoot errors that may occur while creating a connection?
 
 Errors that may occur when the system attempts to create the service connection include:
 
@@ -53,6 +53,13 @@ Errors that may occur when the system attempts to create the service connection 
 * [A valid refresh token was not found](#sessionexpired)
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
+* [Subscription isn't listed when creating a service connection](#subscription-isnt-listed-service-connection)
+* [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
+* [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
+* [Creating a service connection with Artifactory instance fails despite allowlisted IPs](#service-connection-artifactory)
+* [Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell](#cant-create-service-connection-manually)
+* [Azure subscription not taken directly from previous task output](#azure-subscription-not-taken-directly-from-previous-task-output)
+* [What authentication mechanisms are supported? How do managed identities work?](#authentication-mechanisms)
 
 <a name="privileges"></a>
 
@@ -175,13 +182,88 @@ To fix this issue you will need to modify the supported account types and who ca
 
 1. Select **Save**.
 
-## What authentication mechanisms are supported? How do Managed Identities work?
+<a name="subscription-isnt-listed-service-connection"></a>
 
-Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or Managed Identity Authentication.
-Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection.
-See [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to learn about managed identities for virtual machines.  
+### Subscription isn't listed when creating a service connection
+
+A maximum of 50 Azure subscriptions are listed in the various Azure subscription drop-down menus (billing, service connection, etc.). If you're setting up a service connection and you have more than 50 Azure subscriptions, some of your subscriptions won't be listed. In this scenario, complete these steps:
+
+1. Create a new, native Azure AD user in the Azure AD instance for the Azure subscription. 
+
+1. Set up the Azure AD user so that it has the proper permissions in the Azure subscription to set up Azure DevOps billing or a service connection. For more information, see [Add a user who can set up billing for Azure DevOps](../../organizations/billing/add-backup-billing-managers.md).
+ 
+1. Add the Azure AD user to the Azure DevOps org with the access level of **Stakeholder** and add them to the **Project Collection Administrators** group (for billing), or ensure that the user has sufficient permissions in the Team Project to create service connections.
+
+1. Log in to Azure DevOps as this user and set up a billing service connection. You'll only see one Azure subscription in the list.
+
+<a name="autoCreatedSecretExpiration"></a>
+
+### Automatically created service principal client secret has expired
+
+An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
+
+To renew the token for an automatically created service principal:
+
+1. Go to the Azure Resource Manager service connection that was created by using the Automatic method.
+
+1. In the upper-right corner, click **Edit**.
+
+1. Click **Verify** on the service connection page. 
+
+1. Click **Save**. The client secret for that service principal has now been renewed for two years.
+
+<a name="failedToObtainJWT"></a>
+
+### Failed to obtain the JWT by using the service principal client ID
+
+This issue occurs when you try to verify a service connection that has an expired secret.
+
+To resolve this issue:
+
+1. Go to the Azure Resource Manager service connection you want to update.
+
+1. Make a change to the service connection. The easiest and recommended change is to add a description.
+
+1. Save the service connection.
+
+   > [!NOTE]
+   > Select **Save**. Don't try to verify at this step.
+
+1. Exit the service connection, and then refresh the service connections page.
+
+1. Edit the service connection again.
+
+1. Click **Verify**.
+
+1. Save the service connection.
+
+<a name="service-connection-artifactory"></a>
+
+### Creating a service connection with Artifactory instance fails despite allowlisted IPs
+
+Be sure that the correct IP addresses are allowlisted. See [Microsoft-hosted agents](../agents/hosted.md#networking) and the [current list of IP addresses](../../organizations/security/allow-list-ip-url.md#azure-artifacts) that's published weekly based on geographic location.  
+
+<a name="cant-create-service-connection-manually"></a>
+
+### Can't create a service connection manually by using PowerShell scripts and Azure Cloud Shell
+
+To learn how to manually create an Azure Resource Manager service connection, see [Create an Azure service principal to use with an Azure Resource Manager service connection](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal).
+
+### Azure subscription not taken directly from previous task output
+
+When you set an Azure subscription dynamically for the release pipeline and the subscription is an output variable from a preceding task, you might encounter this issue. 
+
+To resolve the issue, ensure that the values are defined within the pipeline variables section, which can be used in the subscription name or in the service connection.
+
+<a name="authentication-mechanisms"></a>
+
+### What authentication mechanisms are supported? How do managed identities work?
+
+An Azure Resource Manager service connection can connect to an Azure subscription by using a Service Principal Authentication (SPA) or managed identity authentication. Managed identities for Azure resources provide Azure services with an automatically managed identity in Azure Active Directory (Azure AD). You can use this identity to authenticate to any service that supports Azure AD authentication without persisting credentials in code or in the service connection.
+
+To learn about managed identities for virtual machines, see [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm).  
 
 > [!NOTE]
-> Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](../agents/agents.md#install) on an Azure VM and configure managed identity for the virtual machine.
+> Managed identities aren't supported in Microsoft-hosted agents. In this scenario, you must [set up a self-hosted agent](../agents/agents.md#install) on an Azure VM and configure a managed identity for the VM.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

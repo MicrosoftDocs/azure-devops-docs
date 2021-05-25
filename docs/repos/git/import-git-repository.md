@@ -6,7 +6,7 @@ ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
 ms.topic: quickstart
 ms.date: 10/14/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Import a Git repo
@@ -214,7 +214,7 @@ git push origin --all
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
+> [New to Git repos? Learn more](/devops/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Learn more about Git in the Git tutorial](gitworkflow.md)

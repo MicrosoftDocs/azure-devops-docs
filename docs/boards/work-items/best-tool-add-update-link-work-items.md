@@ -5,7 +5,7 @@ description: Learn which tool is best to add or update user stories, bugs, issue
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 10/17/2019
@@ -78,7 +78,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
 - Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
-- [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md) 
+- [Focusing the view based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
 
@@ -111,7 +111,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Planning a sprint](../sprints/assign-work-sprint.md) 
 - [Forecasting work](../sprints/forecast.md) 
 - [Emailing a list of backlog items](email-work-items.md)
-- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md) 
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 

@@ -47,7 +47,7 @@ npm install vss-web-extension-sdk
 
 ## Your hub page: `hello-world.html`
 * Every hub displays a web page
-* Check out the targetable hub groups in the [extension points reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview#hubs)
+* Check out the targetable hub groups in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview#hubs)
 
 Create a `hello-world.html` file in the `home` directory of your extension.
 Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
@@ -71,7 +71,7 @@ Reference the SDK and call *init()* and *notifyLoadSucceeded()*.
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](../develop/manifest.md)
-* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview)
+* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -83,7 +83,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 		"name": "My first sample extension",
 		"description": "A sample Visual Studio Services extension.",
 		"publisher": "fabrikamdev",
-		"categories": ["Azure Boards"]
+		"categories": ["Azure Boards"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"
@@ -138,7 +138,7 @@ The **contributions** stanza adds your contribution - the Hello hub - to your ex
 
 For each contribution in your extension, the manifest defines
 - the type of contribution, hub, 
-- the contribution target, the work hub group (check out all of the [targetable hub groups](/previous-versions/azure/devops/docs/extend/reference/targets/overview#targetable-hub-groups)),
+- the contribution target, the work hub group (check out all of the [targetable hub groups](/previous-versions/azure/devops/extend/reference/targets/overview#targetable-hub-groups)),
 - and the properties that are specific to each type of contribution. For a hub, there are the following properties:
 
 | Property           | Description                                                                                                                         
@@ -164,5 +164,5 @@ Set `addressable` to `true` unless you include other files that don't need to be
 Package, Publish, and Install your extension. You can also check out the following articles for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](/previous-versions/azure/devops/docs/extend/test/debug-in-browser)
+* [Testing and debugging extensions](/previous-versions/azure/devops/extend/test/debug-in-browser)
 

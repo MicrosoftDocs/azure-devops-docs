@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
+See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
 * Pull requests
 * Code commits
@@ -20,13 +20,13 @@ See activity about your Team Foundation Server (2017.2 and later) projects direc
 * Release deployments and approvals
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 > [!NOTE]
-> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
+> For Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
 
 ### Azure Boards app for Teams
 
-[Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md) helps to easily create and monitor work items from your Teams channels.Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
+[Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md) helps to easily create and monitor work items from your Teams channels. Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
 
 ### Azure Pipelines app for Teams
 
@@ -38,7 +38,7 @@ See activity about your Team Foundation Server (2017.2 and later) projects direc
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 ## Configure a new connector for Azure DevOps Server
 
@@ -51,23 +51,23 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 ### From Teams 
 
-1. To bring events from Azure DevOps into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select **Connectors**. 
+1. To bring events from Azure DevOps into Microsoft Teams, select '...', the ellipsis, or at the upper navigation of your team channel, select **Connectors**. 
 
    ![Open the Teams actions menu](./media/teams/open-teams-menu-s172.png) 
 
-1. Select **Azure DevOps** from the list.
+2. Select **Azure DevOps** from the list.
 
 	:::image type="content" source="./media/teams/connectors-list-s172.png" alt-text="Connectors list":::
 
-1. Choose the **Add** button.
+3. Choose **Add**.
 
-2. Configure the connector. 
+4. Configure the connector. 
 
-1. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
+5. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
 
 ### From Azure DevOps Server
 
-1. From your project page (`https://mycompany/tfs/[collection]/[project]`), navigate to **Service Hooks** in the settings:
+1. From your project page (`https://mycompany/tfs/[collection]/[project]`), go to **Service Hooks** in the settings:
 
    ![Azure DevOps Services, Service Hook Settings](media/slack/vsts-service-hooks.png)  
 
@@ -78,14 +78,14 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 	For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs, 
     the target branch it applies to, and the team members that are required or invited to review the request.
 
-1. Paste the webhook URL from the Teams connector configuration step and click Finish.
+1. Paste the webhook URL from the Teams connector configuration step and select **Finish**.
 
 Activity from your project begins appearing in your Teams channel.
 
 
 ## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, select **+ Add new tab** on the upper portion of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 
@@ -96,7 +96,7 @@ Activity from your project begins appearing in your Teams channel.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+### Q: How can I get multiple events from my Azure DevOps Server project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
@@ -106,7 +106,7 @@ create two additional subscriptions.
 
 A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
 
-Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#q-why-is-my-organization-already-connected-to-a-directory-can-i-change-that-directory).
+Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.yml#q--why-is-my-organization-already-connected-to-a-directory--can-i-change-that-directory-).
 
 <!-- ENDSECTION -->
 
