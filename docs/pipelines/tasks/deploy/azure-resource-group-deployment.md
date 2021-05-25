@@ -95,7 +95,8 @@ This could also be happening because of transient issues in the system. Keep an 
 
 ### Error: Azure Resource Manager (ARM) template failed validation
 
-This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid. 
+This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid.
+
 This issue could also arise because of multiline strings. Currently Azure Resource Group Deployment task does not support multiline strings in arm template/parameter json file.
   
 In addition, refer to this article regarding structure and syntax of ARM Templates: https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax.
