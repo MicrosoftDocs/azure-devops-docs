@@ -31,7 +31,7 @@ Use this index to quickly access examples that showcase use of command line tool
 
 ## Azure Artifacts
 
-- [Bulk-download universal packages](../artifacts/quickstarts/universal-packages.md#bulk-download-universal-packages)
+- [Universal Packages - download specific files](../artifacts/quickstarts/universal-packages.md#download-specific-files)
 - [Create a feed](../artifacts/quickstarts/universal-packages.md) 
 - [Download a universal package](../artifacts/quickstarts/universal-packages.md#download-a-universal-package) 
 - [Publish a universal package](../artifacts/quickstarts/universal-packages.md#publish-a-package) 
