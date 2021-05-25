@@ -79,7 +79,6 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
-       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -116,11 +115,10 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
-    path: $(YARN_CACHE_FOLDER)
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-      yarn | $(Agent.OS)
-      yarn
+       yarn | "$(Agent.OS)"
+    path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
