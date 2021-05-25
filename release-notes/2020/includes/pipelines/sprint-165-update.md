@@ -26,9 +26,9 @@ Currently, pipelines agents will automatically update to the latest version when
 
 ### Azure File Copy Task now supports AzCopy V10
 
-The Azure file copy task can be used in a build or release pipeline to copy files to Microsoft storage blobs or virtual machines (VMs). The task uses **AzCopy**, the command-line utility build for fast copying of data from and into Azure storage accounts. With this update, we've added support for AzCopy V10 which is the [latest version of AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
+The Azure file copy task can be used in a build or release pipeline to copy files to Microsoft storage blobs or virtual machines (VMs). The task uses **AzCopy**, the command-line utility build for fast copying of data from and into Azure storage accounts. With this update, we've added support for AzCopy V10 which is the [latest version of AzCopy](/azure/storage/common/storage-use-azcopy-v10).
 
-The `azcopy copy` command supports only the [arguments](https://docs.microsoft.com/azure/storage/common/storage-ref-azcopy-copy?toc=/azure/storage/blobs/toc.json#options) associated with it. Because of the change in syntax of AzCopy, some of the existing capabilities are not available in AzCopy V10. These include:
+The `azcopy copy` command supports only the [arguments](/azure/storage/common/storage-ref-azcopy-copy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#options) associated with it. Because of the change in syntax of AzCopy, some of the existing capabilities are not available in AzCopy V10. These include:
 
   * Specifying log location
   * Cleaning log and plan files after the copy

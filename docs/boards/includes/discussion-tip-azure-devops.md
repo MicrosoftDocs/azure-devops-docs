@@ -22,7 +22,7 @@ The rich text editor tool bar displays below the text entry area when you click 
 
 
 > [!NOTE]  
-> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
+> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](/azure/devops/boards/queries/history-and-auditing). The full content of the text entered into the Discussion text box is added to the History field. 
 
 ### Mention someone, a group, work item, or pull request (:::image type="icon" source="/azure/devops/media/icons/at-mention.png" border="false":::, :::image type="icon" source="/azure/devops/media/icons/work-id.png" border="false":::, or ![pull-request id icon](/azure/devops/media/icons/pr-id.png))
 

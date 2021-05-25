@@ -21,7 +21,7 @@ With the introduction of Azure DevOps Services, organizational resources and API
 
 Regardless of when the organization was created, users, tools, and integrations can interact with organization-level REST APIs using either URL. As the developer of an extension, integration, or tool that interacts with Azure DevOps Services, it is important to understand how to properly work with URLs made available to your code and how to properly form URLs when calling REST APIs.
 
-For more information, see the [REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-5.1).
+For more information, see the [REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-5.1&preserve-view=true).
     
 ## Organization primary URL
 
@@ -210,7 +210,7 @@ getOrgUrl('fabrikam', (err, url) => {
 
 ### With the organization's ID
 
-To get the URL for an organization using its GUID identifier, use the `hostId` query parameter in the examples above (instead of `accountName`). For example:
+To get the URL for an organization using its GUID identifier, use the `hostId` query parameter in the previous examples (instead of `accountName`). For example:
 
 ```
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF?hostId={organizationId}&api-version=5.0-preview.1

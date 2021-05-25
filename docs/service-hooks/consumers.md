@@ -106,7 +106,7 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **Yes**
   * **topicName**
     * Topic name
-    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic doesn't exist, it will be created if the specified connection string has the necessary permissions.
+    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic doesn't exist, it gets created if the specified connection string has the necessary permissions.
     * Data type: **string**
     * Required: **Yes**
   * **resourceDetailsToSend**
@@ -151,7 +151,7 @@ This action inserts a JSON string representation of the event to the specified A
     * Required: **Yes**
   * **queueName**
     * Queue name
-    * The lowercase-only name of the queue to be used within Azure storage.  A queue by this name will be created if it does not already exist.
+    * The lowercase-only name of the queue to be used within Azure storage.  A queue by this name gets created if it doesn't already exist.
     * Data type: **string**
     * Required: **Yes**
   * **visiTimeout**
@@ -201,7 +201,7 @@ Post a message about the event to a room in Campfire. To learn more, see [Campfi
     * Required: **Yes**
   * **authToken**
     * API authentication token
-    * API authentication token for the user that messages will be posted from. You can get this token visiting the user profile page at Campfire.
+    * API authentication token for the user that messages are posted from. You can get this token visiting the user profile page at Campfire.
     * Data type: **string**
     * Required: **Yes**
   * **roomId**
@@ -335,7 +335,7 @@ Post a message about the event to a room in HipChat. [Messages, Hipchat Cloud an
     * Required: **Yes**
   * **notifyRoom**
     * Notify room participants
-    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc.). Each recipient's notification preferences are taken into account.
+    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, and so on). Each recipient's notification preferences are taken into account.
     * Data type: **boolean**
     * Required: **No**
   * **showDetails**
@@ -414,7 +414,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Required: **No**
   * **buildParameterized**
     * Accepts parameters
-    * Indicates if the build is parameterized or not (build parameters are optionally specified above)
+    * Indicates if the build is parameterized or not (build parameters are optionally specified previously)
     * Data type: **boolean**
     * Required: **No**
   * **buildParams**
@@ -464,17 +464,17 @@ This action creates a card on an existing list in Trello. A card can represent a
 * Settings:
   * **userToken**
     * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
+    * Your user token provided by Trello.  Select the link in the previously described action description to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
     * Board
-    * The name of the board on which the Trello card will be created.
+    * The name of the board on which the Trello card gets created.
     * Data type: **string**
     * Required: **Yes**
   * **listId**
     * List
-    * The name of the list on which the Trello card will be created.
+    * The name of the list on which the Trello card gets created.
     * Data type: **string**
     * Required: **Yes**
   * **labels**
@@ -483,8 +483,8 @@ This action creates a card on an existing list in Trello. A card can represent a
     * Data type: **string**
     * Required: **No**
   * **addToTop**
-    * Create at top of list
-    * Indicates if the card should be created at the top of the Trello list, instead of the bottom.
+    * Create at beginning of list
+    * Indicates if the card should be created at the beginning of the Trello list, instead of the end.
     * Data type: **boolean**
     * Required: **No**
 
@@ -498,12 +498,12 @@ This action creates a list on an existing board in Trello. A list is used to org
 * Settings:
   * **userToken**
     * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
-    * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
+    * Your user token provided by Trello.  Select the link in the previously described action description to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
   * **boardId**
     * Board
-    * The name of the board on which the Trello list will be created.
+    * The name of the board on which the Trello list gets created.
     * Data type: **string**
     * Required: **Yes**
   * **addToBottom**
@@ -528,7 +528,7 @@ This action posts a JSON object representation of the event to the specified URL
 * Settings:
   * **url**
     * URL
-    * The URL to which an HTTP POST will be sent.
+    * The URL to which an HTTP POST gets sent.
     * Data type: **uri**
     * Required: **Yes**
   * **httpHeaders**
@@ -583,7 +583,7 @@ Create a private comment in a ticket
     * Required: **Yes**
   * **username**
     * User name
-    * The Zendesk user name of a user who will update tickets
+    * The Zendesk user name of a user who updates tickets
     * Data type: **string**
     * Required: **Yes**
   * **apiToken**

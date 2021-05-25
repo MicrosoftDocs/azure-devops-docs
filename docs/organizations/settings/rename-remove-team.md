@@ -7,8 +7,8 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 10/19/2020
+monikerRange: '<= azure-devops'
+ms.date: 05/24/2021
 ---
 
 # Rename or remove a team  
@@ -120,7 +120,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker range=">= azure-devops-2020"
 
-You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description using [Azure DevOps team update](/cli/azure/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -234,7 +234,16 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 * * *
 
+## Set a team as the default
+
+When a project is created, a default team is created based on the project name. 
+
+To change the default, open **Project Settings>Teams**, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** next to the team you want as the new default, and select **Set team as project default**.   
+
+
 ## Delete a team 
+
+You can delete any team except the default team. At least one team must be defined for a project.
 
 > [!IMPORTANT]   
 > Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
@@ -302,7 +311,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
+You can delete a team using [az devops team delete](/cli/azure/devops/team#ext-azure-devops-az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -337,6 +346,6 @@ Are you sure you want to delete this team? (y/n): y
 
 - [Add teams](add-teams.md)  
 - [About teams and Agile tools](about-teams-and-settings.md)  
-- [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)  
+- [Azure DevOps Teams CLI](/cli/azure/devops/team)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
 - [Work Items (REST API)](/rest/api/azure/devops/wit)  

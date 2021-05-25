@@ -38,7 +38,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Team Foundation Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
 
 ### Quickstarts 
@@ -80,7 +80,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   Check in your changes so your team can build upon, test, and release the value you've created.
 
-- [Isolate risk](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Isolate risk](./branching-strategies-with-tfvc.md)
 
   Use branches and locks to isolate risk introduced by work done by different teams.
 
@@ -88,7 +88,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files.
 
-- [Compare folders and files](compare-folders-files.md) 
+- [Compare folders and files](./compare-files.md) 
 
   You can compare server folders and local folders to each other, and view the differences between the contents of each folder.
 
@@ -102,7 +102,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 ## Related sections
 
-- [Build and test the app in your automated build system](../../pipelines/overview.md)    
+- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)    
 
   Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
 
@@ -116,9 +116,9 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
 
-- [Administering Team Foundation Version Control](administering-team-foundation-version-control.md) 
+- [Administering Team Foundation Version Control](./configure-check-out-settings.md) 
 
 ## Related articles 
 
-- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
+- [What is version control?](/devops/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/devops/git/migrate-from-tfvc-to-git)

@@ -1,9 +1,9 @@
-- name: What are extensions?
-  href: ./overview.md
-- name: Develop a web extension
-  href: get-started/node.md
-- name: Tutorials
+- name:  Get started
   items:
+  - name: Develop a web extension
+    href: get-started/node.md
+  - name: Contribution model
+    href: develop/contributions-overview.md
   - name: Create a custom pipelines task
     href: develop/add-build-task.md
   - name: Author a pipeline decorator
@@ -12,72 +12,62 @@
   items:
   - name: Extension samples
     href: develop/samples-overview.md
-- name: Concepts
-  items:
-  - name: Contribution model
-    href: develop/contributions-overview.md
-- name: How-to guides
-  items:
-  - name: Develop
+  - name: Vertical navigation guidance
+    href: develop/web-navigation.md
+  - name: Work with URLs
+    href: develop/work-with-urls.md 
+  - name: Store data and settings
+    href: develop/data-storage.md 
+  - name: Add a hub
+    href: develop/add-hub.md
+  - name: Add a hub group
+    href: develop/add-hub-group.md
+  - name: Add a menu action
+    href: develop/add-action.md
+  - name: Add a new service endpoint
+    href: develop/service-endpoints.md
+  - name: Add a service hook
+    href: develop/add-service-hook.md
+  - name: Create a PR status server
+    href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Use Azure Functions to create custom branch policies
+    href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  - name: Add Azure Boards extensions
     items:
-    - name: Add a hub
-      href: develop/add-hub.md
-    - name: Add a hub group
-      href: develop/add-hub-group.md
-    - name: Add a menu action
-      href: develop/add-action.md
+    - name: Add a tab to a Backlog  
+      href: develop/add-backlog-tabs.md
+    - name: Add a panel to a Backlog  
+      href: develop/add-backlog-panel.md
+    - name: Extend the work item form
+      href: develop/add-workitem-extension.md
+    - name: Add a custom control to a work item form
+      href: develop/custom-control.md
+    - name: Configure work item form extensions (on-premises) 
+      href: develop/configure-workitemform-extensions.md
+    - name: Add query result tabs
+      href: develop/add-query-result-tabs.md
+  - name: Add dashboard extensions
+    items:
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
-    - name: Add a new service endpoint
-      href: develop/service-endpoints.md
-    - name: Add a service hook
-      href: develop/add-service-hook.md
-    - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-    - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
-    - name: Store data and settings
-      href: develop/data-storage.md
-    - name: Add Work hub extensions
-      items:
-      - name: Add backlog tabs
-        href: develop/add-backlog-tabs.md
-      - name: Add backlog panels
-        href: develop/add-backlog-panel.md
-      - name: Extend the work item form
-        href: develop/add-workitem-extension.md
-      - name: Add a custom control to the work item form
-        href: develop/custom-control.md
-      - name: Configure work item form extensions in TFS
-        href: develop/configure-workitemform-extensions.md
-      - name: Add query result tabs
-        href: develop/add-query-result-tabs.md
-    - name: Call a REST API
-      href: develop/call-rest-api.md
-    - name: Extensions for public projects
-      href: develop/public-project.md
-    - name: Use vertical navigation
-      href: develop/web-navigation.md
-    - name: Work with URLs
-      href: develop/work-with-urls.md      
-  - name: Package and publish
-    items:
-    - name: Package and publish extensions
-      href: publish/overview.md
-    - name: Package and publish integrations
-      href: publish/integration.md
-    - name: Make listing public and Top Publisher program
-      href: publish/publicize.md
-    - name: Publish via command line
-      href: publish/command-line.md
-    - name: Respond to Marketplace reviews
-      href: publish/manage-ratings-reviews.md
-  - name: Reporting
-    items:
-    - name: Extension statistics Power BI content pack
-      href: extension-statistics-powerbi-contentpack.md
+  - name: Call a REST API
+    href: develop/call-rest-api.md
+  - name: Public project extensions
+    href: develop/public-project.md
+- name: Package and publish
+  items:
+  - name: Package and publish extensions
+    href: publish/overview.md
+  - name: Package and publish integrations
+    href: publish/integration.md
+  - name: Make listing public and Top Publisher program
+    href: publish/publicize.md
+  - name: Publish via command line
+    href: publish/command-line.md
+  - name: Respond to Marketplace reviews
+    href: publish/manage-ratings-reviews.md
 - name: Reference
   items:
   - name: Manifest reference
@@ -96,7 +86,5 @@
     href: develop/host-navigation.md
   - name: Basic styles for widgets
     href: develop/styles-from-widget-sdk.md
-  - name: Auth and security
-    href: develop/auth.md
   - name: Deploy web content to Azure
     href: publish/publish-azure.md

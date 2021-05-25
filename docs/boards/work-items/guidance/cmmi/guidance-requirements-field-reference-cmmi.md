@@ -4,7 +4,7 @@ titleSuffix: Azure Boards
 description: Definition of fields used to track requirements in the CMMI process for Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

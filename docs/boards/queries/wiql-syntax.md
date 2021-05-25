@@ -1,11 +1,11 @@
 ---
 title: WIQL reference syntax  
 titleSuffix: Azure Boards   
-description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps 
 ms.custom: boards-queries  
 ms.technology: devops-agile  
 ms.prod: devops  
-ms.topic: reference  
+ms.topic: conceptual
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.author: kaelli  
 author: KathrynEE  
@@ -18,7 +18,7 @@ ms.date: 07/09/2020
 
 [!INCLUDE [temp](../includes/version-all.md)]   
 
-You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
+You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md) or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
@@ -414,11 +414,10 @@ The context parameter contains key-value pairs for macros. For example, if the c
 
 You can use an `ASOF` clause in a query to filter for work items that satisfy the specified filter conditions as they were defined on a specific date and time.
 
+> [!NOTE] 
+> You can’t create `ASOF` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an `ASOF` clause, and then load that in Visual Studio, the `ASOF` clause is ignored.
+
 For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
-
-
->[!NOTE]  
->If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
 
 ```WIQL
 SELECT [System.Title] 
@@ -426,6 +425,10 @@ SELECT [System.Title]
     WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
     ASOF '3/16/16 12:30'
 ```
+
+> [!NOTE]  
+> If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
+
 
 ## Sort results (ORDER BY) 
 
@@ -526,7 +529,7 @@ For additional information, see [Link type reference](link-type-reference.md).
 
 ### Tree type query example
 
-The following query returns all work item types define in the current project. The query as shown in the QUery Editor appears as shown in the following image. 
+The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![Query Editor, tree query, all work items and states](media/wiql/tree-query-all-work-items.png)   
@@ -770,17 +773,13 @@ WHERE [Assigned To] EVER 'joselugo'
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
 - [Work item fields and attributes](../work-items/work-item-fields.md) 
-- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
-
+- [About managed queries](about-managed-queries.md)  
+- [Cross-service and enhanced query operations](query-support-integration-cross-service-extensions.md)
+- [Define a query](using-queries.md)      
 
 
 
 <!---
-
-> [!NOTE] 
-> You can’t create `AsOf` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an AsOf clause, and then load that in Visual Studio, the AsOf clause will be ignored.
-
 https://msdn.microsoft.com/library/bb130306.aspx
-
 -->
 

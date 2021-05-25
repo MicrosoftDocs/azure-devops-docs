@@ -61,4 +61,4 @@ To complete this procedure, you must have the **Edit project-level information**
 [Associate Check-in Notes with Changesets](/previous-versions/visualstudio/visual-studio-2010/ms245464(v=vs.100))
 #### Other Resources
 
-[Administering Team Foundation Version Control](administering-team-foundation-version-control.md)
+[Administering Team Foundation Version Control](./configure-check-out-settings.md)

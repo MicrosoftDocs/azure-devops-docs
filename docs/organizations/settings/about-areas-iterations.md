@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/17/2020
 ---
 
@@ -18,6 +18,21 @@ ms.date: 08/17/2020
 Area paths allow you to group work items by team, product, or feature area. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
 You define area and iteration paths for a project. Teams can then choose which paths are used to support their backlog and other Agile tools. To understand how Agile tools use area and iteration paths, see [Agile tools that rely on areas and iterations](about-teams-and-settings.md).
+
+::: moniker range=">= azure-devops-2020" 
+
+> [!NOTE] 
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI command [az boards iteration](/cli/azure/boards/iteration).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018 < azure-devops-2020" 
+
+> [!NOTE] 
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).
+
+::: moniker-end
+
 
 The areas and iterations you see depend on the process you used to create your project. Here we show the defaults defined for the Scrum process. No dates are set. You set dates to correspond to your sprint or release schedules.
 
@@ -123,14 +138,9 @@ Iterations don't enforce any rules. For example, you can assign a task to an ite
 
 The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and make sure you conform to the following restrictions when you're adding child nodes.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Restriction type                 | Restriction       |  
-> | ------------------------- | ---------------------- |  
-> | Node length | Must not contain more than 255 characters | 
-> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](/windows/win32/fileio/naming-a-file). |
-> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](/windows/win32/fileio/naming-a-file) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
-> | Path length | Must contain fewer than 4,000 Unicode characters | 
-> | Path hierarchy depth | Must be fewer than 14 levels deep | 
+
+[!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
+
 
 ## Related articles 
 
@@ -142,11 +152,6 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 - [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
-<a name="export"></a>
-
-### Export tree structures  
-
-You can't export the structure of tree paths for one project to use with another  project.  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 

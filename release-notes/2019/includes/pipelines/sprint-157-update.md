@@ -11,8 +11,8 @@ We've added a new functionality to the Azure Pipelines extension for VSCode. Now
 
 ### New task for configuring Azure App Service app settings
 
-Azure App Service allows configuration through various [settings](https://docs.microsoft.com/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
-We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?view=azure-devops&amp;tabs=yaml), [manage](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops) and configure your Web apps, Function apps or any other containerized App Services.
+Azure App Service allows configuration through various [settings](/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
+We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](/azure/devops/pipelines/targets/webapp?amp;tabs=yaml&view=azure-devops&preserve-view=true) , [manage](/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops&preserve-view=true) and configure your Web apps, Function apps or any other containerized App Services.
 
 > [!div class="mx-imgBorder"]
 > ![New task for configuring Azure App Service app settings.](../../media/157_06.png)
@@ -45,7 +45,7 @@ Filtering on pipeline name and stage name is supported for all events. Approval 
 
 ### Enhancement to Azure Pipelines app for Jira
 
-The [Azure Pipeline app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. So far the app supported linking only when a GitHub repository was the source for the release. With this update, we have extended the support for linking when Azure Repos are used.
+The [Azure Pipelines app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. So far the app supported linking only when a GitHub repository was the source for the release. With this update, we have extended the support for linking when Azure Repos are used.
 
 You can use a third party app to integrate Azure Repos with Jira software cloud, and [add Jira issue keys](https://confluence.atlassian.com/adminjiracloud/integrating-with-development-tools-776636216.html) to the commit or pull request message. When a release will deploy these commits, you will be able to associate the Jira issues deployed with the release and also track deployment status in each of the Jira issues.
 

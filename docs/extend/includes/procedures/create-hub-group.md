@@ -17,7 +17,7 @@
      ]
     ```
 
-	Look at the contribution targets reference to see the [available hub groups that can be contributed to](/previous-versions/azure/devops/docs/extend/reference/targets/overview#targets).
+	Look at the contribution targets reference to see the [available hub groups that can be contributed to](/previous-versions/azure/devops/extend/reference/targets/overview#targets).
 
 2. Change the hub contribution so that it's in the samples hub group that you just created. Just update the targets to the relative contribution ID of the hub group you just added.
 

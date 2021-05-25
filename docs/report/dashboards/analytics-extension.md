@@ -258,5 +258,5 @@ To resolve this issue, you can install the extension from a machine that hosts t
 - [Data available from Analytics](../powerbi/data-available-in-analytics.md)
 - [Grant permissions to access Analytics](../powerbi/analytics-security.md)
 - [The Reporting Roadmap](../powerbi/reporting-roadmap.md) 
-- [Extension FAQs](../../marketplace/faq-extensions.md) 
+- [Extension FAQs](../../marketplace/faq-extensions.yml) 
 

@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 07/08/2020 
+  ms.date: 04/14/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -35,8 +35,8 @@ landingContent:
             url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Add users to a team or project
             url: ../organizations/security/add-users-team-project.md
-          - text: Set repository permissions
-            url: ../organizations/security/set-git-tfvc-repository-permissions.md
+          - text: Set Git repository permissions
+            url: ../repos/git/set-git-repository-permissions.md
           - text: Add project or collection administrators
             url: ../organizations/security/set-project-collection-level-permissions.md
           - text: Set user preferences
@@ -85,8 +85,6 @@ landingContent:
             url: ./billing/buy-basic-access-add-users.md
           - text: Set up billing for your organization
             url: ./billing/set-up-billing-for-your-organization-vs.md
-          - text: Buy CI/CD for Azure DevOps
-            url: ./billing/buy-more-build-vs.md
           - text: Try Azure Test Plans for free
             url: ./billing/try-additional-features-vs.md
   - title: Add & manage projects
@@ -163,8 +161,10 @@ landingContent:
             url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Manage Git branch policies
             url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage repository permissions
-            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage Git repository permissions
+            url: ../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage TFVC repository permissions
+            url: ../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Add TFVC check-in policies
             url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Test resources

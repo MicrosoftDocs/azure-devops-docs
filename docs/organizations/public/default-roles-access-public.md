@@ -143,7 +143,7 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
 > [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the :::image type="icon" source="../../media/icons/preview.png" border="false"::: preview icon shown in the following table. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by :::image type="icon" source="../../media/icons/preview.png" border="false"::: **preview**, shown in the following table. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
 
 [!INCLUDE [temp](../security/includes/pipelines-cloud.md)]
 
@@ -151,7 +151,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 ## Related articles 
 
 - [Private-to-public migration checklist](migration-checklist.md)
-- [About permissions and inheritance(../security/about-permissions.md) 
+- [Get started with permissions, access, and security groups](../security/about-permissions.md) 
 - [About security roles](../security/about-security-roles.md)  
 - [About access levels](../security/access-levels.md)
 

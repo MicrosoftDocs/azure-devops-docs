@@ -1,15 +1,15 @@
 ---
-title: Export access level audit log 
+title: Export a list of users and their access levels
 titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual
-ms.reviewer: jrice 
+ms.reviewer:  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Export a list of users and their access levels
@@ -38,7 +38,7 @@ You can get a list of users and groups that have access to your Team Foundation 
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users
@@ -81,7 +81,7 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 
 ### List users
 
-You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
+You can list the users in an organization with the [az devops user list](/cli/azure/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli
 az devops user list [--org] [--skip] [--top]

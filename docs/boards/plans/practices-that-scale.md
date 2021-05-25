@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 07/14/2020
 ---
@@ -25,7 +25,7 @@ Enterprise organizations adopt Agile practices for a number of reasons. Prime am
 
 As your organization grows, you'll want to scale your practices to remain agile and meet changing goals. To do that, consider these two guiding principles:   
 - **What does success look like** to you, your teams, and your organization? What's of most interest: On-time delivery? Product quality? Predictability? Customer satisfaction? 
-- **Return to first principles**, return to the principles and shared values enumerated in the [Agile manifesto](http://www.agilemanifesto.org/principles.html) As noted by [Ken Schwaber](https://kenschwaber.wordpress.com), one of the founders of Scrum:  
+- **Return to first principles**, return to the principles and shared values enumerated in the [Agile manifesto](https://agilemanifesto.org/principles.html) As noted by [Ken Schwaber](https://kenschwaber.wordpress.com), one of the founders of Scrum:  
 	- "Values and principles scale, but practices are context sensitive."  
 	- "Keep the values, keep the principles, think for yourself.  A core premise of Agile is that the people doing the work are the people who can best figure out how to do it." 
 
@@ -68,7 +68,7 @@ Some specific Agile practices that scale well and lead to happier, engaged, and 
 
 - **Embedded leadership**: Empower teams and leaders within the organization to self-organize and self-manage as much as possible. Team autonomy increases organizational agility team effectiveness. Ensure teams have the corporate sponsorship needed to succeed.  
 - **Daily stand-ups**: Or, [Scrum meetings](../sprints/best-practices-scrum.md#daily-scrum-meetings) help keeps teams focused on what they need to do daily to maximize their ability to meet their sprint commitments. As organizations grow, they should consider staggering these meetings so that cross-team participation can occur as needed.  
-- **[Scrum of scrums](http://guide.agilealliance.org/guide/scrumofscrums.html)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
+- **[Scrum of scrums](https://www.agilealliance.org/glossary/scrum-of-scrums)**: Daily standups of members from different Agile teams meet daily to report work completed, next steps, and issues or blocks occurring within their representative teams. 
 - **Team communications**: Provide and encourage teams to share their practices and guidance, which they and other teams can access through the corporate network. Common tools used for this purpose include team wikis, OneNotes, or markdown sites.  
 - **Collaboration**: Encourage informal team-to-team communications as well as collaboration within the team. Institutionalizing practices such as code reviews, design reviews, spec reviews not only increase team collaboration but help develop individual as well as overall corporate competence.  
 
@@ -100,7 +100,7 @@ You improve organizational effectiveness by attending to the culture you want to
 ## Working software
 
 > *"Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."*   
-> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](http://www.agilemanifesto.org/principles.html)   
+> *"Working software is the primary measure of progress."*<br/> - [Agile manifesto](https://agilemanifesto.org/principles.html)   
 
 As the amount of software, features, and complexity increase, you'll need to adopt practices that help you produce consumable solutions.  
  
@@ -119,7 +119,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
-- [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scaling Agile to large teams](/devops/plan/scaling-agile)
 
 ### Industry resources
 - [Agile manifesto](https://agilemanifesto.org)

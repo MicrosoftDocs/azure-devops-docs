@@ -1,6 +1,397 @@
 {
   "redirections": [
     {
+      "source_path": "docs/migrate/build-deployment-best-practices.md",
+      "redirect_url": "/previous-versions/azure/devops/migrate/build-deployment-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/error/attachment-upload-failed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/attachment-upload-failed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf237002-cannot-open-document-excel-not-installed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf237002-cannot-open-document-excel-not-installed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf24023-tfs-configuration-failure.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf24023-tfs-configuration-failure",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30004-ntpw-encountered-error-initializing-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30004-ntpw-encountered-error-initializing-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30005-ntpw-group-security-component-cannot-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30015-ntpw-no-connect-sql-server-reporting-server",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30016-no-permission-to-create-sql-server-reporting-site",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30017-tea-explorer-cannot-connect-tfs-expired-credentials",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30022-ntpw-no-connect-sharepoint.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30022-ntpw-no-connect-sharepoint",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30026-cannot-change-file-name-extension.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30026-cannot-change-file-name-extension",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30030-team-explorer-could-not-connect-to-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30030-team-explorer-could-not-connect-to-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30031-team-explorer-no-open-document-service-no-run.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30031-team-explorer-no-open-document-service-no-run",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30032-ntpw-common-structure-component-no-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30034-you-do-not-have-permission-to-create-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30034-you-do-not-have-permission-to-create-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30082-team-explorer-error-launching-document.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30082-team-explorer-error-launching-document",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30147-ntpw-no-retrieve-confirmation-value-error",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30167-new-team-project-wizard-could-not-finish-creating-the-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30168-ntpw-failure-check-permission-create-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30168-ntpw-failure-check-permission-create-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30169-ntpw-no-download-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30169-ntpw-no-download-process-template",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30170-the-plug-in-failed-during-task-from-group.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30170-the-plug-in-failed-during-task-from-group",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30172-you-do-not-have-permission-to-create-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30172-you-do-not-have-permission-to-create-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30247-ntpw-no-load-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30247-ntpw-no-load-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30249-ntpw-no-retrieve-process-template-info.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30249-ntpw-no-retrieve-process-template-info",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30277-insufficient-permissions-to-add-sharepoint-site",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30320-ntpw-no-retrieve-list-team-projects-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30320-ntpw-no-retrieve-list-team-projects-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30321-name-in-use-team-project.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30321-name-in-use-team-project",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30323-ntpw-no-retrieve-wizard-page-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30323-ntpw-no-retrieve-wizard-page-plug-in",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf30330-team-explorer-no-write-project-list-configuration-file",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31001-tfs-no-retrieve-team-projects.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31001-tfs-no-retrieve-team-projects",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31003-user-account-no-permission-connect-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31003-user-account-no-permission-connect-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/tf31004-tf-error-connecting-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/tf31004-tf-error-connecting-tfs",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/reference/error/underlying-connection-was-closed.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/error/underlying-connection-was-closed",
+      "redirect_document_id": false,
+      "monikers": [
+        "azure-devops"
+      ]
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-core-to-azure-web-app.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-core-to-azure-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-to-windows-vm.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-to-windows-vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/java/maven-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/java/maven-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/java/quick-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/java/quick-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/nodejs/nodejs-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/nodejs/nodejs-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/overview-rm2013.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/overview-rm2013",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/overview-rm2015.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/overview-rm2015",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/add-users-and-groups.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/add-users-and-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/config-and-system-variables.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/config-and-system-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/deploy-continuously-to-azure.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/deploy-continuously-to-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/install-release-management.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/install-release-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/manage-your-release.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/manage-your-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/release-actions.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/release-actions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/release-management-overview.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/release-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/release-with-agents.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/release-with-agents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/release-without-agents.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/release-without-agents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/trigger-a-release.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/trigger-a-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/install-release-management/connect-to-tfs.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/install-release-management/connect-to-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/install-release-management/install-deployment-agent.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/install-release-management/install-deployment-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/install-release-management/install-server-and-client.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/install-release-management/install-server-and-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/install-release-management/system-requirements.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/install-release-management/system-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/release/previous-version/release-actions/release-action-tools.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/release/previous-version/release-actions/release-action-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/integrate/ide/extensions/overview.md",
       "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
@@ -83,6 +474,11 @@
     {
       "source_path": "docs/pipelines/packages/maven.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/maven",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/maven/publish.md",
+      "redirect_url": "/azure/devops/artifacts/get-started-maven",
       "redirect_document_id": false
     },
     {
@@ -1206,6 +1602,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/repos/get-started/code-with-git.md",
+      "redirect_url": "/azure/devops/user-guide/code-with-git?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/git/howto/pr-status-policy.md",
       "redirect_url": "/azure/devops/repos/git/pr-status-policy",
       "redirect_document_id": false
@@ -1312,7 +1713,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -2031,6 +2432,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/repos/git/branches.md",
+      "redirect_url": "/azure/devops/repos/git/create-branch",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/git/get-started.md",
       "redirect_url": "/azure/devops/repos/git/gitquickstart",
       "redirect_document_id": false
@@ -2357,7 +2763,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -2397,7 +2803,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/get-more-build-or-load-testing-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -6152,7 +6558,7 @@
     },
     {
       "source_path": "docs/git/concepts/pull-requests-overview.md",
-      "redirect_url": "/azure/devops/repos/git/pull-requests-overview",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
       "redirect_document_id": false
     },
     {
@@ -6253,11 +6659,6 @@
     {
       "source_path": "docs/build-release/actions/agents/configure-tfs-authentication.md",
       "redirect_url": "/azure/devops/pipelines/agents/agents#configure-tfs-authentication",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/build-release/actions/agents/prepare-permissions.md",
-      "redirect_url": "/azure/devops/pipelines/agents/prepare-permissions",
       "redirect_document_id": false
     },
     {
@@ -7651,6 +8052,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/apps/windows/dot-net.md",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/apps/windows/universal.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/universal",
       "redirect_document_id": true
@@ -8556,6 +8962,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/apps/cd/sql-server-actions.md",
+      "redirect_url": "/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/organizations/settings/set-user-preferences.md",
       "redirect_url": "/azure/devops/organizations/settings/set-your-preferences",
       "redirect_document_id": false
@@ -8677,8 +9088,8 @@
     },
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/change-azure-subscription.md",
@@ -9297,8 +9708,18 @@
     },
     {
       "source_path": "docs/git/tutorial/pullrequest.md",
-      "redirect_url": "/azure/devops/repos/git/pullrequest",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/repos/git/pullrequest.md",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/pull-requests-overview.md",
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/tutorial/pushing.md",
@@ -9547,13 +9968,13 @@
     },
     {
       "source_path": "docs/git/pull-requests-overview.md",
-      "redirect_url": "/azure/devops/repos/git/pull-requests-overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/git/pull-requests",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/pull-requests.md",
       "redirect_url": "/azure/devops/repos/git/pull-requests",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/repo-rename-tfs2015.md",
@@ -11508,7 +11929,7 @@
     {
       "source_path": "docs/pipelines/licensing/concurrent-jobs-vsts.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/demo-gen/use-vsts-demo-generator-v2.md",
@@ -11902,8 +12323,13 @@
     },
     {
       "source_path": "docs/pipelines/languages/helm.md",
-      "redirect_url": "/azure/devops/pipelines/build/helm-provenance",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/build/helm-provenance.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/helm-deploy#package-and-sign-helm-charts",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/languages/java-function.md",
@@ -16690,10 +17116,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
-      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
-    },
-    {
       "source_path": "docs/repos/tfvc/administering-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings"
     },
@@ -16708,9 +17130,1015 @@
     {
       "source_path": "docs/repos/git/forks-overview.md",
       "redirect_url": "/azure/devops/repos/git/forks"
+    },
+    {
+      "source_path": "docs/pipelines/create-first-pipeline-cli.md",
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline"
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-load-testing-vs.md",
+      "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/azure-devops-message.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/azure-devops-message",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/disclaimer.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/disclaimer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/get-started.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version-preview1.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version-preview1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version-preview2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version-preview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version2-2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version2-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version2-preview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version2-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version2-preview1.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version2-preview1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version2-preview2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version2-preview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version3-2-preview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version3-2-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version3-preview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version3-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version3-preview1.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version3-preview1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version3-preview2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version3-preview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/_data/version4-0-preview2.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/_data/version4-0-preview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/build/builds.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/build/builds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/build/definition-templates.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/build/definition-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/build/definitions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/build/definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/build/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/build/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/build/tags.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/build/tags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/chat/messages.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/chat/messages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/chat/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/chat/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/chat/rooms.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/chat/rooms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/chat/users.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/chat/users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/dashboard/dashboards.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/dashboard/dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/dashboard/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/dashboard/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/dashboard/widgets.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/dashboard/widgets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/endpoints/endpoint-types.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/endpoints/endpoint-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/endpoints/endpoints.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/endpoints/endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/endpoints/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/endpoints/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/_data/id_or_name.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/_data/id_or_name",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/iterations.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/iterations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/pull-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/pull-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/reviewers.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/reviewers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/threads.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/threads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pull-requests/work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/annotatedtags.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/annotatedtags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/blobs.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/blobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/commits.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/commits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/diffs.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/diffs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/import-requests.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/import-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/items.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/pushes.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/pushes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/refs.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/refs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/repositories.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/repositories",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/stats.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/stats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/git/trees.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/git/trees",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/hooks/consumers.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/hooks/consumers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/hooks/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/hooks/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/hooks/publishers.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/hooks/publishers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/hooks/subscriptions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/hooks/subscriptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/notification/contracts.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/notification/contracts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/notification/eventtypes.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/notification/eventtypes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/notification/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/notification/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/notification/subscriptions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/notification/subscriptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/feeds.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/feeds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/maven.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/maven",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/npm.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/npm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/nuget.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/nuget",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/packages.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/polling.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/polling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/packaging/views.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/packaging/views",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/policy/configurations.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/policy/configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/policy/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/policy/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/policy/settings.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/policy/settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/policy/types.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/policy/types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/queues/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/queues/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/rm/approvals.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/rm/approvals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/rm/contracts.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/rm/contracts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/rm/definitions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/rm/definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/rm/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/rm/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/rm/releases.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/rm/releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/aces.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/aces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/acls.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/acls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/permissions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/securitynamespaces.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/securitynamespaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/security/tokens.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/security/tokens",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/attachments.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/cases.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/cloneOperations.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/cloneOperations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/code-coverage.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/code-coverage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/configurations.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/plans.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/points.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/points",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/resultretentionsettings.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/resultretentionsettings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/results_1_0.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/results_1_0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/results.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/runs.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/runs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/sessions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/sessions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/suite-entries.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/suite-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/suites.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/suites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/test/variables.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/test/variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/contracts.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/contracts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/processes.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/processes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/project-collections.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/project-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/projects.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/samples.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/samples",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfs/teams.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfs/teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/branches.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/branches",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/changesets.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/changesets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/items.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/labels.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/labels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/tfvc/shelvesets.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/tfvc/shelvesets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/artifactlinktypes.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/artifactlinktypes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/artifacturiquery.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/artifacturiquery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/attachments.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/batch.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/batch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/categories.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/categories",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/classification-nodes.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/classification-nodes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/comments.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/comments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/fields.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/history.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/history",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/queries.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/recycle-bin.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/recycle-bin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/relation-types.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/relation-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/reporting-work-item-links.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/reporting-work-item-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/reporting-work-item-revisions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/reporting-work-item-revisions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/revisions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/revisions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/samples.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/samples",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/tags.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/tags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/templates.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/updates.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/wiql.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/wiql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/work-item-types.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/work-item-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/wit/work-items.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/wit/work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/_data/see-latest.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/_data/see-latest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/backlog-configuration.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/backlog-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/boards.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/boards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/capacity.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/capacity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/card-fields.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/card-fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/card-rules.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/card-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/charts.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/charts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/columns.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/columns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/delivery-timeline.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/delivery-timeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/iterations.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/iterations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/plans.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/process-configuration.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/process-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/rows.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/rows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/team-days-off.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/team-days-off",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/team-field-values.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/team-field-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/work/team-settings.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/work/team-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/_data/see-latest.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/_data/see-latest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/builds.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/builds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/definitions.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/qualities.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/qualities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/queues.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/queues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/xamlbuild/requests.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/xamlbuild/requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/integrate/previous-apis/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/integrate/previous-apis/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/clt-behind-firewall.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/clt-behind-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/clt-with-private-machines.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/clt-with-private-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/get-performance-data-for-load-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/get-started-jmeter-test.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-jmeter-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/get-started-simple-cloud-load-test.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-simple-cloud-load-test",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/getting-started-with-performance-testing.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/index.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/install-certs-and-software.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/install-certs-and-software",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/overview.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/performance-reports.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/performance-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/record-and-replay-cloud-load-tests.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/reference-qa.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/reference-qa",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/test/load-test/run-performance-tests-app-before-release.md",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/setup-ad-aad.md",
+      "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/extend/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "/azure/devops/marketplace-extensibility/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-more-build-vs.md",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/reference/error/tf31002-unable-connect-tfs.md",
+      "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/example-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/adhoc-vs-managed-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015-01.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015-02.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2016.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2017.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/rm-archived.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/index.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/overview.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/navigation/search-basics.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/faq-trace-permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/troubleshoot-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/misc/migration.md",
+      "redirect_url": "/azure/devops/migrate/migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/project/search/administration.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-package-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/advanced-work-item-search-syntax.md",
+      "redirect_url": "/azure/devops/project/search/functional-work-item-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/code-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/package-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/project/search/work-item-search.md",
+      "redirect_url": "/azure/devops/project/search/get-started-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/security/set-git-tfvc-repository-permissions.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/git-permissions-before-2017.md",
+      "redirect_url": "/azure/devops/repos/git/set-git-repository-permissions",
+      "redirect_document_id": false
     }
   ]
 }
-
-
-

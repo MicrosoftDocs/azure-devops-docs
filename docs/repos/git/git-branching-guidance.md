@@ -6,7 +6,7 @@ ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 09/18/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Adopt a Git branching strategy
@@ -17,7 +17,7 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others.
 Adopt a branching strategy for your team. You can collaborate better and spend less time managing version control and more time developing code.
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/devops/develop/how-microsoft-develops-devops).
 
 ## Keep your branch strategy simple
 
@@ -49,8 +49,8 @@ Some suggestions for naming your feature branches:
 * users/username/description
 * users/username/workitem
 * bugfix/description
-* features/feature-name
-* features/feature-area/feature-name
+* feature/feature-name
+* feature/feature-area/feature-name
 * hotfix/description
 
 ::: moniker range=">= tfs-2018" 
@@ -120,7 +120,7 @@ Create branches to fix bugs from the release branch and merge them back into the
 Make sure that fixes land in both your release branch and your main branch.
 One approach is to make fixes in the release branch, then bring changes into your main branch to prevent regression in your code.
 Another approach (and the one employed by the Azure DevOps team) is to always make changes in the mainline, then port those to the release branch.
-You can read more about our [Release Flow](/azure/devops/learn/devops-at-microsoft/release-flow) strategy.
+You can read more about our [Release Flow](/devops/deliver/what-is-continuous-delivery) strategy.
 
 In this topic, we'll cover making changes in the release branch and porting them into mainline.
 Use cherry-picking instead of merging so that you have exact control over which commits are ported back to the main branch.

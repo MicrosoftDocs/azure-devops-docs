@@ -4,25 +4,22 @@ description: Use an Azure Resource Manager template to deploy a Linux web app to
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 06/05/2020
+ms.date: 12/09/2020
 monikerRange: '=azure-devops'
-ms.custom: subject-armqs
+ms.custom: subject-armqs, contperf-fy21q2
 ---
 
 # Quickstart: Use an ARM template to deploy a Linux web app to Azure
 
 Get started with [Azure Resource Manager templates (ARM templates)](/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
-[!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
+An [ARM template](/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax. In declarative syntax, you describe your intended deployment without writing the sequence of programming commands to create the deployment.
 
 ## Prerequisites
 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
-
-
-[!INCLUDE [include](../../../../includes/create-project.md)]
 
 ## Get the code
 
@@ -36,7 +33,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). 
 
-:::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json":::
+<!-- :::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json"::: -->
 
 The template defines several resources:
 
@@ -48,7 +45,7 @@ The template defines several resources:
 
 ## Create your pipeline and deploy your template
 
-1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Sign in to your Azure DevOps organization and navigate to your project. [Create a project](../../../../organizations/projects/create-project.md) if you do not already have one. 
 
 2. Go to **Pipelines**, and then select **Create Pipeline**.
 

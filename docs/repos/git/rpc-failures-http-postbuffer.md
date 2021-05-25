@@ -6,7 +6,7 @@ ms.technology: devops-code-git
 ms.manager: jepling
 ms.topic: conceptual
 ms.date: 01/22/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # RPC failures and http.postBuffer

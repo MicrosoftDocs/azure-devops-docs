@@ -59,3 +59,8 @@ name in the format `domain\userName` or `userName@domain.com`
 - `--addDeploymentGroupTags` - used with `--deploymentGroup` to indicate that deployment group tags should be added
 - `--deploymentGroupTags <tags>` - used with `--addDeploymentGroupTags` to specify the comma separated list of tags for
 the deployment group agent - for example "web, db"
+
+### Environments only
+- `--addvirtualmachineresourcetags` - used to indicate that environment resource tags should be added
+- `--virtualmachineresourcetags  <tags>` - used with `--addvirtualmachineresourcetags` to specify the comma separated list of tags for
+the environment resource agent - for example "web, db"

@@ -82,12 +82,12 @@ Need more help to make a choice? These charts might help.
 <td>
 <p>Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.</p>
 
-<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
+<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
 </p>
 
 <p>You can get visualizations of your branch structures and where your changesets have been merged.</p>
 
-<p>See <a href="use-branches-isolate-risk-team-foundation-version-control.md" data-raw-source="[Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md)">Use branches to isolate risk in Team Foundation Version Control</a>.</p>
+<p>See <a href="/azure/devops/repos/tfvc/branching-strategies-with-tfvc" data-raw-source="[Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)">Use branches to isolate risk in Team Foundation Version Control</a>.</p>
 </td>
 <td><p>Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. </p>
 
@@ -95,7 +95,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/branches.md?amp;tabs=visual-studio&view=azure-devops#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
+<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md?amp;tabs=visual-studio&preserve-view=true&view=azure-devops#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
 </td>
 </tr>
 <tr>
@@ -160,11 +160,11 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>Auditability</td>
 <td>Because your team checks in all their work into a centralized system, you can identify which user checked in a <a href="find-view-changesets.md" data-raw-source="[changeset](find-view-changesets.md)">changeset</a> and use <a href="compare-files.md" data-raw-source="[compare](compare-files.md)">compare</a> to see what they changed. Looking at a file, you can <a href="view-file-changes-using-annotate.md" data-raw-source="[annotate](view-file-changes-using-annotate.md)">annotate</a> it to identify who changed a block of code, and when they did it.</td>
-<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made what was changed using history, compare, and annotate.</td>
+<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made and what was changed using history, compare, and annotate.</td>
 </tr>
 <tr>
 <td>Builds (automated by TFBuild)</td>
-<td>You can use all <a href="../../pipelines/overview.md" data-raw-source="[TFBuild](../../pipelines/overview.md)">TFBuild</a> capabilities to build any combination of content you want within the project collection.</td>
+<td>You can use all <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[TFBuild](../../pipelines/get-started/what-is-azure-pipelines.md)">TFBuild</a> capabilities to build any combination of content you want within the project collection.</td>
 <td>You can use most TFBuild capabilities to build one project at a time, and one or more repositories at a time.
 </td>
 </tr>

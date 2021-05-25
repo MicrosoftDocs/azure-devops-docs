@@ -197,7 +197,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](media/manage-roles/add-user-role-endpoint-service.png)  
+   ![On Endpoint: gitConnect, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-endpoint-service.png)  
 
 1. Click **Add**.  
 
@@ -226,7 +226,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](media/manage-roles/add-user-role-deployment-pool.png)  
+   ![On the security dialog, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-deployment-pool.png)  
 
 1. Click **Add**.  
 

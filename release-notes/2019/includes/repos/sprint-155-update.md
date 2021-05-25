@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Improved code search filtering options
 
-Previously, code search supported [39 code search filters](https://docs.microsoft.com/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops#functions-to-find-specific-types-of-code) such as **comment:** and **def:**. Data suggested that there were many filters not being used, therefore we are removing a few filters and merging others. With this update we reduced the [number of filters to 19](https://docs.microsoft.com/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops#functions-to-find-specific-types-of-code). This will help by making code search queries more efficient and reduce clutter in the interface. 
+Previously, code search supported [39 code search filters](/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops&preserve-view=true#functions-to-find-specific-types-of-code) such as **comment:** and **def:**. Data suggested that there were many filters not being used, therefore we are removing a few filters and merging others. With this update we reduced the [number of filters to 19](/azure/devops/project/search/advanced-code-search-syntax?view=azure-devops&preserve-view=true#functions-to-find-specific-types-of-code). This will help by making code search queries more efficient and reduce clutter in the interface. 
 
 > [!div class="mx-imgBorder"]
 > ![Code search filter options.](../../media/155_12.png "Code search filter options")
@@ -22,7 +22,7 @@ Coverage status will appear as a comment in the PR overview. You can view detail
 > [!div class="mx-imgBorder"]
 > ![View details of coverage information for every code line that is changed.](../../media/155_16.png)
 
-Additionally, repo owners can now set code coverage policies and prevent large, untested changes from being merged into a branch. Desired coverage thresholds can be defined in an `azurepipelines-coverage.yml` settings file that is checked in at the root of the repo and coverage policy can be defined using the existing [configure a branch policy for additional services](https://docs.microsoft.com/azure/devops/repos/git/pr-status-policy?view=azure-devops) capability in Azure Repos.
+Additionally, repo owners can now set code coverage policies and prevent large, untested changes from being merged into a branch. Desired coverage thresholds can be defined in an `azurepipelines-coverage.yml` settings file that is checked in at the root of the repo and coverage policy can be defined using the existing [configure a branch policy for additional services](/azure/devops/repos/git/pr-status-policy?view=azure-devops&preserve-view=true) capability in Azure Repos.
 
 > [!div class="mx-imgBorder"]
 > ![Define coverage thresholds.](../../media/155_17.png)

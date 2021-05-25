@@ -52,6 +52,6 @@ landingContent:
           - text: TFVC command reference
             url: ./use-team-foundation-version-control-commands.md
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/repos
+            url: /cli/azure/repos
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/

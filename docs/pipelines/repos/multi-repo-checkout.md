@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 09/24/2020
+ms.date: 04/09/2021
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -16,10 +16,56 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md) (`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
+The following repository types are supported.
+
+---
+:::row:::
+    :::column:::
+        [Azure Repos Git](azure-repos-git.md) (`git`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Server 2020 (limited to repositories in the same organization)
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [GitHub](github.md) (`github`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [GitHubEnterprise](github-enterprise.md) (`githubenterprise`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+---
+:::row:::
+    :::column:::
+        [Bitbucket Cloud](bitbucket.md) (`bitbucket`)
+    :::column-end:::
+    :::column span="2":::
+        * Azure DevOps Services
+    :::column-end:::
+:::row-end:::
+
+> [!IMPORTANT]
+> Only [Azure Repos Git](azure-repos-git.md) (`git`) repositories in the same organization as the pipeline are supported for multi-repo checkout in Azure DevOps Server 2020.
+
+> [!NOTE]
+> Azure Pipelines provides **Limit job scope** settings for Azure Repos Git repositories.
+> To check out Azure Repos Git repositories hosted in another project, **Limit job scope** must be configured to allow access. For more information, see [Limit job authorization scope](azure-repos-git.md#limit-job-authorization-scope).
 
 The following combinations of `checkout` steps are supported.
 
+---
 :::row:::
     :::column:::
         No `checkout` steps
@@ -74,9 +120,12 @@ The following combinations of `checkout` steps are supported.
 
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
-* Bitbucket cloud repositories
-* GitHub and GitHub Enterprise Server repositories
-* Azure Repos Git repositories in a different organization than your pipeline
+| Repository type | Service connection |
+|-----------------|--------------------|
+| Bitbucket Cloud | [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) | 
+| GitHub          | [GitHub](../library/service-endpoints.md#sep-github) |
+| GitHub Enterprise Server | [GitHub Enterprise Server](../library/service-endpoints.md#sep-githubent) |
+| Azure Repos Git repositories in a different organization than your pipeline | [Azure Repos/Team Foundation Server](../library/service-endpoints.md#sep-tfsts) |
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
@@ -174,6 +223,8 @@ steps:
 - checkout: MyGitHubRepo
 ```
 
+:::moniker range=">azure-devops-2020"
+
 ## Triggers
 
 You can trigger a pipeline when an update is pushed to the `self` repository or to any of the repositories declared as resources. This is useful, for instance, in the following scenarios:
@@ -266,6 +317,8 @@ The following table shows which versions are checked out for each repository by 
 
 You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
 
+:::moniker-end
+
 ## Repository details
 
 When you check out multiple repositories, some details about the `self` repository are available as [variables](../build/variables.md).
@@ -287,7 +340,8 @@ variables:
 steps:
 - checkout: self
 - checkout: other
-- bash: echo "Tools version: $TOOLS_REF"
+- bash: |
+    echo "Tools version: $TOOLS_REF"
 ```
 
 ## FAQ

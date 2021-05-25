@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Get personalized notifications with @mention support in Slack apps
 
-Up to now, while using the Azure DevOps apps with Slack, customers have had to spend a considerable amount of time polling Slack channels looking for notifications requiring action. Now, the [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration), [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration) and [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration) will use @mentions in notifications to alert users.
+Up to now, while using the Azure DevOps apps with Slack, customers have had to spend a considerable amount of time polling Slack channels looking for notifications requiring action. Now, the [Azure Boards app for Slack](/azure/devops/boards/integrations/boards-slack), [Azure Repos app for Slack](/azure/devops/repos/integrations/repos-slack) and [Azure Pipelines app for Slack](/azure/devops/pipelines/integrations/slack) will use @mentions in notifications to alert users.
 
 Here are some example scenarios where users are @mentioned:
  

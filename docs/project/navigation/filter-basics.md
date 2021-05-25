@@ -103,7 +103,6 @@ For example, here we turn filtering on for the dashboard directory.
 ## Related articles  
 - [Commit history](../../repos/git/commit-history.md)
 - [Working with Git tags](../../repos/git/git-tags.md)
-- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs.md)
-- [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
-- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md) 
-
+- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Filter your Kanban board](../../boards/backlogs/filter-backlogs-boards-plans.md)
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md)

@@ -5,6 +5,7 @@ description: How to fix disable reorder messages due to nesting issues that occu
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
+ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

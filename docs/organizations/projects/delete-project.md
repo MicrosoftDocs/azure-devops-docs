@@ -1,25 +1,25 @@
 ---
 title: Delete, remove project
 titleSuffix: Azure DevOps
-ms.custom: seodec18
-description: Delete or remove a project from Azure DevOps or Team Foundation Server
+ms.custom: seodec18, contperf-fy21q3
+description: Delete or remove a project from your organization in Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2013'
-ms.date: 07/20/2020
+monikerRange: '<= azure-devops'
+ms.date: 03/11/2021
 ---
 
 # Delete a project
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-Learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
+If you have a project that's no longer valid, you can delete it from your organization in Azure DevOps. This action also helps to simplify navigating to only those projects that are in use. 
 
 > [!Caution]
-> Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+> Projects get permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
 
 ## Prerequisites
 
@@ -61,20 +61,19 @@ Learn how to delete a project from Azure DevOps. Deleting a project helps simpli
 
    :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
 
-4. Confirm deletion by entering the organization name (in this example, the organization and project have the same name), and then select **Delete** in the popup screen.
+4. Confirm deletion by entering the organization name, and then select **Delete** in the popup screen.
 
     ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
-Your project is deleted and can be restored up to 28 days afterward.
-
 ::: moniker-end
 
+Your project is deleted and can be restored up to 28 days afterward. Your deleted project is removed from your projects list.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete a team project with the [az devops project delete](/cli/azure/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az devops project delete --id
@@ -84,9 +83,9 @@ az devops project delete --id
 
 #### Parameters 
 
-- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/devops/project#ext-azure-devops-az-devops-project-list) command.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **yes**: Do not prompt for confirmation.
+- **yes**: Don't prompt for confirmation.
 
 ::: moniker-end
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
@@ -105,8 +104,6 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
-
-
 
 <a name="delete-team-proj"></a>
 
@@ -130,7 +127,7 @@ Using the administration console, you can delete a project from a project collec
 
     - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
 
-2. Open the administration console for TFS and delete the project from its project collection.
+2. Open the administration console and delete the project from its project collection.
 
     ![project collection delete button](media/delete-project/ic686856.png)
 
@@ -148,7 +145,7 @@ Using the administration console, you can delete a project from a project collec
 
 ## Delete reports that remain after deleting a project
 
-If your project used reporting and you didn't choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
+If your project used reporting and you didn't delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
 
 ![context menu with delete command](media/delete-project/ic686857.png)
 
@@ -158,15 +155,27 @@ If your project used reporting and you didn't choose to delete external artifact
 
 ## Remove the project portal
 
-If your project had a project portal, all links to that portal get removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal isn't deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
+If your project had a project portal, all links to that portal get removed from TWA and Team Explorer. But, the SharePoint site or website that acted as the portal doesn't get deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
 
 ::: moniker-end
 
+## FAQs
+
+See the following frequently asked questions about deleting projects in Azure DevOps.
+
+### Q: After deleting one project, why do work items in a remaining project still have links to the deleted project work items? 
+
+A: Work items get deleted within 24 hours after your project is deleted.
+
+### Q: I deleted a project in Azure DevOps, but in Visual Studio Team Explorer it's still there, what do I do?
+
+A: Wait 28 days before the project is permanently deleted.
+
 ::: moniker range="<= tfs-2018"
 
-## What to do if the delete action doesn't finish
+### Q: What if the delete action doesn't finish?
 
-Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
+A: Review the status and log files for the delete action. Open the **Status** tab and for **Deleted**, review the additional information in parentheses, and take the indicated action.
 
 - (**Processing**) means that the process has started and is in progress.
 
@@ -182,9 +191,9 @@ Review the status and log files for the delete action. Open the **Status** tab a
 
 ::: moniker-end
 
-
-
 ## Related articles
 
-- [Create project](./create-project.md)
+- [Create a project](create-project.md)
+- [Restore a project](restore-project.md)
+- [Delete a project with REST API](/rest/api/azure/devops/core/projects/delete)
 - [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)

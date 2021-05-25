@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
 ---
@@ -182,40 +182,12 @@ To keep anyone else from modifying a shared query that you create, you may want 
 ::: moniker-end
 
 
-## Q & A   
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can I change the owner of a query or folder?
-
-**A:** No. This feature was removed for TFS 2015. You can only enable permissions for users and groups from the permissions window for the query or folder.
-
-#### Q: Can I add folders to team favorites?
-
-**A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
-
-
-
-::: moniker range="<= tfs-2018"
-#### Q: Are the queries and folders I create from the web portal the same as in Team Explorer?
-
-**A:** Yes. You might have to refresh your browser or client to see changes you make in another client.
-
-::: moniker-end
-
-#### Q: Can I move a query or a folder?  
-
-**A:** Yes. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location.  
-
-In Team Explorer for Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
-
-<!-- ENDSECTION --> 
-
 
 ## Related articles  
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 
+- [Manage queries and query folders](organize-queries.md)  
 - [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)  
-- [Create and save managed queries](using-queries.md)  
-- [Dashboards](../../report/dashboards/dashboards.md)  
 - [Add a chart to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)
+- [Dashboards](../../report/dashboards/dashboards.md) 

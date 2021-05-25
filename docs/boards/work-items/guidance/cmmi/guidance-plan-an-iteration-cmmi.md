@@ -1,7 +1,7 @@
 ---
 title: CMMI process guidance, Plan an iteration  
 titleSuffix: Azure Boards
-description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration - Team Foundation Server (TFS)
+description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration 
 ms.technology: devops-agile
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual

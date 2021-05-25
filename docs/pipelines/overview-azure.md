@@ -43,7 +43,7 @@ Azure virtual machines provide on-demand, high-scale, secure, virtualized infras
 
 ## Web Apps for Containers
 
-Azure Web Apps for containers offer the fastest and simplest way for you run a container instance in Azure. Azure Pipelines offers the simplest way for you to set up and track the continuous delivery of your container application. You configure your build pipeline in Azure Pipelines to automatically publish a container image, and then your release pipeline to automatically deploy your container image to an Azure Web App. Furthermore, if you develop a ASP.NET Core application in Visual Studio, you can set up the entire Azure Pipelines build and release pipeline from Visual Studio IDE.
+Azure Web Apps for containers offer the fastest and simplest way for you to run a container instance in Azure. Azure Pipelines offers the simplest way for you to set up and track the continuous delivery of your container application. You configure your build pipeline in Azure Pipelines to automatically publish a container image, and then your release pipeline to automatically deploy your container image to an Azure Web App. Furthermore, if you develop a ASP.NET Core application in Visual Studio, you can set up the entire Azure Pipelines build and release pipeline from Visual Studio IDE.
 
 > [!div class="nextstepaction"]
 > [CI/CD to Containers](apps/cd/deploy-docker-webapp.md)

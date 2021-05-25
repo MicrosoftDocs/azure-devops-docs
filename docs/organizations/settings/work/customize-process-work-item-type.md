@@ -111,12 +111,17 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 
 	<img src="media/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
-### WIT extensibility
+## WIT extensibility
 
-To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azure/devops/processdefinitions/work%20item%20types). 
+To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azure/devops/wit/work%20item%20types). 
 
+
+## Q & A
+
+[!INCLUDE [temp](includes/qa-custom-work-item-on-backlog.md)] 
 
 ## Related articles  
+
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 

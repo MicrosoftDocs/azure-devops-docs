@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
 ---
@@ -659,7 +659,7 @@ To get a list of link types, you can use one of the supported command line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -793,7 +793,7 @@ Is Active: True
 
 ### Link type attributes
 
-The following table provides descriptions for each of the link type attributes returned by **azure boards** CLI or the REST API.  
+The following table provides descriptions for each of the link type attributes returned by **Azure Boards** CLI or the REST API.  
 
 
 :::row:::
@@ -912,6 +912,8 @@ The following table provides descriptions for each of the link type attributes r
 
 - [Link work items to track dependencies](link-work-items-support-traceability.md)    
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Query FAQs](query-faqs.yml)
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)

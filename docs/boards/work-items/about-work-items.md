@@ -2,7 +2,7 @@
 title: Using work items to track user stories, & more
 titleSuffix: Azure Boards
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Azure DevOps 
-ms.custom: work-items, seodec18, contentperfq4
+ms.custom: work-items, seodec18, contperf-fy20q4
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
@@ -138,7 +138,7 @@ You can add and update work items from the web portal. To track work using other
 
 ## Web portal and clients that support tracking work items  
 
-You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
+You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps](../../user-guide/tools.md). 
 
 ### Web portal 
 
@@ -217,9 +217,9 @@ For an overview of all team settings, see [Manage teams and configure team tools
 You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
-- [Create managed queries to list, update, or chart work items](../queries/example-queries.md)  
+- [About managed queries](../queries/about-managed-queries.md) 
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
+- [About managed queries](../queries/about-managed-queries.md) 
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />

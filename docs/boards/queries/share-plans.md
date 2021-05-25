@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.topic: how-to
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 
@@ -139,7 +139,16 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 <a id="team-explorer-rich-text" />
 
-From Team Explorer you can choose the font, font size, and text and background colors.
+
+
+**Visual Studio 2017-2019/Team Explorer** 
+
+The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+* If you are connected to a GitHub or third-party Git repository. 
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+
+From the work item form you can choose the font, font size, and text and background colors.
 
 ![Rich text tool bar - Team Explorer](media/rich-text-ui-te.png)  
 

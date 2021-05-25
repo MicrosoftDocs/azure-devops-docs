@@ -23,6 +23,7 @@ This article shows you how to display average lead time or cycle time for a give
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 
@@ -78,7 +79,7 @@ The following table describes each part of the query.
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td><code>$filter=WorkItemType eq 'User Story'</code></td><td>Return User Stories</td><tr>
 <tr><td><code>and StateCategory eq 'Completed'</code></td><td>Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
-<tr><td><code>and CompletedDate ge {startdate}</code></td><td>Return items Closed after the specified date. Example: **2019-04-01Z** represents 2019-April-01</td><tr>
+<tr><td><code>and CompletedDate ge {startdate}</code></td><td>Return items Closed after the specified date. Example: <b>2019-04-01Z</b> represents 2019-April-01</td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code></td><tr>
 <tr><td><code>&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames</code></td><td>Select fields to return</td><tr>
 <tr><td><code>, CycleTimeDays, LeadTimeDays, CompletedDateSK</code></td><td>Also return the Cycle/Lead Time fields, as well as CompletedDateSK. CompletedDateSK is the CompletedDate as an integer</td><tr>

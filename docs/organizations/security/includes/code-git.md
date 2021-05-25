@@ -1,128 +1,261 @@
+---
+ms.technology: devops-code-git 
+ms.author: kaelli
+author: KathrynEE
+ms.topic: include
+ms.date: 04/15/2021
+---
+
+
 ::: moniker range=">= tfs-2017"
 
-Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](../../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../../repos/git/branch-policies.md).
-
-<table>
-<tr valign="bottom">
-<th width="49%">Task</th>
-<th width="9%">Readers</th>
-<th width="14%">Contributors</th>
-<th width="14%">Build Admins</th>
-<th width="14%">Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Clone, fetch, and explore the contents of a repository; also, can create, comment on, vote, and contribute to pull requests
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Contribute to a repository, create branches, create tags, manage notes
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Create, delete, and rename repositories 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Edit policies, Manage permissions, Remove others&#39; locks
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left">Bypass policies when completing pull requests, Bypass policies when pushing, Force push (rewrite history, delete branches and tags)  <em>(not set for any security group)</em> 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-
-
+---
+:::row:::
+   :::column span="2":::
+      **Permission** 
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Build Admins**
+   :::column-end:::
+   :::column span="1":::
+     **Project Admins**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Read** (clone, fetch, and explore the contents of a repository); also, can create, comment on, vote, and **Contribute to pull requests**
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Contribute** to a repository, **Create branches**, **Create tags**, and **Manage notes**
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      **Bypass policies when pushing** to a repository 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="2":::
+      **Create repository**, **Delete repository**, and **Rename repository**
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Edit policies**, **Force push (rewrite history, delete branches and tags)**, **Manage permissions**, **Remove others' locks**
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Bypass policies when completing pull requests** (not set for any security group)
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+:::row-end:::
+---
 ::: moniker-end
 
 
 ::: moniker range="tfs-2015"
 
-Set permissions across all Git repositories by making changes to the top-level <strong>Git repositories</strong> entry. Individual repositories inherit permissions from the top-level <strong>Git Repositories</strong> entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see <a href="/azure/devops/repos/git/branch-permissions" data-raw-source="[Set branch permissions](../../../repos/git/branch-permissions.md)">Set branch permissions</a> and <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
-
 By default, the project-level Readers groups have read-only permissions.
 
-<table>
-<tr valign="bottom">
-<th width="55%">Task</th>
-<th width="15%">Contributors</th>
-<th width="15%">Build Admins</th>
-<th width="15%">Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left"><strong>Branch Creation</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Note Management</strong>: Can push and edit Git notes to the repository. They can also remove notes from items if they have the Force permission.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Tag Creation</strong>: Can push tags to the repository, and can also edit or remove tags if they have the Force permission.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Administer</strong>: Delete and rename repositories
-<p>If assigned to the top-level <strong>Git repositories</strong> entry, can add additional repositories. At the branch level, users can set permissions for the branch and unlock the branch. The Administer permission set on an individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-Administer permissions at the top-level <strong>Git repositories</strong> entry. 
-</td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Rewrite and destroy history (force push)</strong>: Can force an update to a branch and delete a branch. A force update can overwrite commits added from any user. Users with this permission can modify the commit history of a branch.
-</td>
-<td>  </td>
-<td>  </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
+---
+:::row:::
+   :::column span="2":::
+      **Permission** 
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Build Admins**
+   :::column-end:::
+   :::column span="1":::
+     **Project Admins**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Branch Creation**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](/azure/devops/repos/git/branch-policies). At the branch level, can push their changes to the branch and lock the branch.
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Contribute**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](/azure/devops/repos/git/branch-policies). At the branch level, can push their changes to the branch and lock the branch.
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Note Management**: Can push and edit Git notes to the repository. They can also remove notes from items if they have the **Force** permission.
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Tag Creation**: Can push tags to the repository, and can also edit or remove tags if they have the **Force** permission.
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Administer**: Delete and rename repositories: If assigned to the top-level **Git repositories** entry, can add additional repositories. At the branch level, users can set permissions for the branch and unlock the branch. The Administer permission set on an individual Git repository does not grant the ability to rename or delete the repository. These tasks require **Administer** permissions at the Git repositories top-level. 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Rewrite and destroy history (force push)**: Can force an update to a branch and delete a branch. A force update can overwrite commits added from any user. Users with this permission can modify the commit history of a branch.
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+ 
 ::: moniker-end
 
 <a name="pcbs-has-read-by-default"></a>
 
-The Project Collection Build Service can read from all repositories by default.
-Any pipeline which runs with project collection scope can potentially read any repository in the organization/collection.
-You can remove this permission for a repository: set "Read" to "Deny" for the Project Collection Build Service.
+By default, the Project Collection Build Service can read from all repositories. Any pipeline which runs within the project collection scope can potentially read any repository in the organization or collection. To remove this permission for a repository, change the **Read** permission to **Deny** for the Project Collection Build Service. 

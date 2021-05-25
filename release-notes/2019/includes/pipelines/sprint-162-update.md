@@ -6,7 +6,7 @@ ms.topic: include
 
 An updated version of the multi-stage pipelines UI is now available by default. The multi-stage pipelines experience brings improvements and ease of use to the pipeline's portal UI. You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu. In addition, you can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
-To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
+To learn more about the multi-stage pipelines user experience, see the documentation [here](/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Updated multi-stage pipelines UI.](../../media/162_01.png)
@@ -53,14 +53,14 @@ steps:
 
 ### Markdown support in automated test error messages
 
-We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
+We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](/azure/devops/project/wiki/markdown-guidance?view=azure-devops&preserve-view=true).
 
 > [!div class="mx-imgBorder"]
 > ![Markdown support in automated test error messages.](../../media/162_03.png)
 
 ### Collect automatic and user-specified metadata from pipeline
 
-Now you can enable automatic and user-specified metadata collection from pipeline tasks. You can use metadata to enforce artifact policy on an environment using the [evaluate artifact check](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#evaluate-artifact).
+Now you can enable automatic and user-specified metadata collection from pipeline tasks. You can use metadata to enforce artifact policy on an environment using the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true#evaluate-artifact).
 
 > [!div class="mx-imgBorder"]
 > ![Collect automatic and user-specified metadata from pipeline.](../../media/162_07.png)
@@ -80,7 +80,7 @@ Along with the user experience refresh, we've also added two capabilities which 
 The new user experience will be **turned on by default** with this update. You will still have the option to opt-out of the preview.
 
 > [!NOTE]
-> We plan to introduce **Cross-project Sharing of Service Connections** as a new capability. You can find more details about the sharing experience and the security roles [here](https://aka.ms/ServiceConnectionSharing).
+> We plan to introduce **Cross-project Sharing of Service Connections** as a new capability. You can find more details about the sharing experience and the security roles [here](/azure/devops/pipelines/library/service-endpoints).
 
 ### VM deployments with Environments
 
@@ -125,7 +125,7 @@ jobs:
 ```
 
 > [!NOTE]
-> With this update, all available artifacts from the current pipeline and from the associated pipeline resources are downloaded only in `deploy` lifecycle-hook. However, you can choose to download by specifying [Download Pipeline Artifact task](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#download).
+> With this update, all available artifacts from the current pipeline and from the associated pipeline resources are downloaded only in `deploy` lifecycle-hook. However, you can choose to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema?tabs=schema&view=azure-devops&preserve-view=true#download).
 > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. We are working to close these gaps in future updates.
 
 ### Skipping stages in a YAML pipeline

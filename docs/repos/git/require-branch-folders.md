@@ -26,7 +26,7 @@ Azure Repos and TFS can enforce the correct use of branch folders.
 Decide on the folder structure you want to allow.
 As an example, we'll set our repository to enforce the following rules:
 
-* Only `master` can exist at the repository root.
+* Only `main` can exist at the repository root.
 * All users will be allowed to create branches under the `feature/` and `users/` folders.
 * Administrators will be able to create branches under the `release/` folder.
 
@@ -70,10 +70,10 @@ Allow administrators to create branches under `release`.
 tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:release
 ```
 
-Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
+Finally, allow administrators to create a branch called `main` (in case it ever gets accidentally deleted).
 
 ```
-tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
+tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:main
 ```
 
 >[!NOTE]
@@ -117,6 +117,6 @@ git push origin --delete {old_branch_name}
 ```
 
 >[!NOTE]
->Any custom permissions or branch policies you had set up will not be migrated.
+>You will not migrate any custom permissions or branch policies to the renamed branches.
 
 * * *

@@ -33,6 +33,8 @@ Specifically, you'll find sample queries for the following reports:
 - Flaky tests for a particular test file
 - Flaky tests for a particular test owner 
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
+
 ## Sample queries
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]

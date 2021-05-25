@@ -21,8 +21,23 @@ Several features depend on the project, repository, or team that you have select
 
 Also, when you add a work item, the system references the default area and iteration paths defined for the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
+## Prerequisites 
+ 
+* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+ 
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-Scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
+
+
 <a id="projects">  </a>
+
 ## View and open a project 
+
 From the **Projects** page you can quickly navigate to a project that you have permissions to view. 
 
 ::: moniker range=">= azure-devops-2019"

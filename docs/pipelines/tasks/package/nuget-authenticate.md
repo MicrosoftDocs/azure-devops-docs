@@ -3,7 +3,7 @@ title: NuGet Authenticate
 ms.custom: seodec18
 description: Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories
 ms.topic: reference
-ms.date: 08/27/2019
+ms.date: 01/13/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -51,6 +51,7 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 </configuration>
 ```
 
+To use a service connection, specify the service connection in the `nuGetServiceConnections` input for the NuGet Authenticate task. You can then reference the service connection with `-ApiKey AzureArtifacts` in a task. 
 #### nuget.exe
 ```YAML
 - task: NuGetAuthenticate@0
@@ -202,5 +203,9 @@ It then sets environment variables such as `VSS_NUGET_URI_PREFIXES`, `VSS_NUGET_
 When restoring or pushing packages, a NuGet tool executes the credential provider, which uses the above variables to determine if it should return credentials back to the tool.
 
 See the credential provider documentation for more details.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

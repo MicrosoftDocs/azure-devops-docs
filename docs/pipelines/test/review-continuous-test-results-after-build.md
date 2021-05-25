@@ -71,7 +71,7 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
 * **Publish Test Results task**. Task that publishes test results to Azure Pipelines or TFS when tests are executed using
   your choice of runner, and results are available in any of the [supported test result formats](../tasks/test/publish-test-results.md). 
 
-* **API(s)**. Test results published directly by using the [Test Management API(s)](/rest/api/vsts/test/results).
+* **API(s)**. Test results published directly by using the [Test Management API(s)](/rest/api/azure/devops/test/results/list).
 
 ## Surface test information beyond the Tests tab
 
@@ -229,7 +229,7 @@ These test results are reported as a summarized test result in the **Tests** tab
 * **Rerun failed tests**: The ability to rerun failed tests is available in the latest version of the [Visual Studio Test](../tasks/test/vstest.md) task.
   During a rerun, multiple attempts can be made for a failed test, and each failure could have a different root cause due to the non-deterministic behavior of the test.
   Test reports provide a combined view for all the attempts of a rerun, along with the overall test outcome as a summarized unit.
-  Additionally the [Test Management API(s)](/rest/api/vsts/test/results)
+  Additionally the [Test Management API(s)](/rest/api/azure/devops/test/results/list)
   now support the ability to publish and query summarized test results.
 
   ![Rerun failed tests](media/review-continuous-test-results-after-build/rerun-failed-test.png)
@@ -260,7 +260,7 @@ The aborted tests and test runs can be viewed alongside the completed runs in th
 > The feature is currently available for both build and release, using the
 > [Visual Studio Test](../tasks/test/vstest.md) task in a Multi Agent job 
 > or publishing test results using the
-> [Test Management API(s)](/rest/api/vsts/test/results). 
+> [Test Management API(s)](/rest/api/azure/devops/test/results/list). 
 > It will be available for Single Agent jobs in a future release.
 
 <a name="automatically_inferred_tests"></a>

@@ -4,8 +4,6 @@ description: Run a Python script in a build or release pipeline
 ms.topic: reference
 ms.assetid: 6392F95F-7E76-4A18-B3C7-7F078D2F7700
 ms.custom: seodec18, devx-track-python
-ms.author: macoope
-author: vtbassmatt
 ms.date: 08/24/2020
 monikerRange: azure-devops
 ---

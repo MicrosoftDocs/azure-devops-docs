@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 10/03/2019
 ---
@@ -151,7 +151,7 @@ Then, add a stacked bar chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -347,7 +347,7 @@ For more information on using work items and queries, see:
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Create managed queries](example-queries.md)  
+- [About managed queries](about-managed-queries.md)  
 
 <a id="show-bugs"/>
 

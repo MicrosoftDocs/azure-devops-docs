@@ -83,7 +83,7 @@ The build pipeline will check out your Git submodules as long as they are:
     - This one would be checked out:
      `git submodule add ../../../FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber` 
 
-      In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject).  The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. This requires that the job access token has access to the repository in the second project. If you restricted the job access token as explained in the section above, then you won't be able to do this.
+      In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject).  The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. This requires that the job access token has access to the repository in the second project. If you restricted the job access token as explained in the section above, then you won't be able to do this. You can allow the job access token to access the repo in the second project by either (a) explicitly granting access to the project build service account in the second project or (b) using collection-scoped access tokens instead of project-scoped tokens for the entire organization. For more information about these options and their security implications, see [Access repositories, artifacts, and other resources](../../process/access-tokens.md).
 
     - This one would not be checked out:
      `git submodule add https://fabrikam-fiber@dev.azure.com/fabrikam-fiber/FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber`
@@ -100,7 +100,7 @@ Next, [base64-encode](https://www.base64encode.org/) this prefixed string to cre
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: Bearer <BASE64_ENCODED_STRING>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: Basic <BASE64_ENCODED_STRING>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASE64_ENCODED_STRING>" with your Base64-encoded "pat:token" string.
@@ -276,4 +276,4 @@ The build pipeline labels your sources with a [Git tag](https://git-scm.com/book
 
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
-After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built. The tag is considered a build artifact since it is produced by the build. When the build is deleted either manually or through a retention policy, the tag is also deleted.

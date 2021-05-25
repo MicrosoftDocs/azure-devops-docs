@@ -21,7 +21,7 @@ Learn how to create events and metrics in Datadog in response to events from Azu
 
 ## Prerequisites
 
-1. You must have *Edit subscriptions* and *View subscriptions* permissions. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](https://docs.microsoft.com/rest/api/azure/devops/security/?view=azure-devops-rest-6.0) REST API.
+1. You must have *Edit subscriptions* and *View subscriptions* permissions. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](/rest/api/azure/devops/security/?view=azure-devops-rest-6.0&preserve-view=true) REST API.
 2. If you don't have a Datadog account, [get started with Datadog](https://aka.ms/AzureDevOpsDataDog).
    a. In the Datadog application, go to [Integrations > API](https://aka.ms/AzureDevOpsDataDogAPI).
    b. Create a new key or select an existing one, and then copy the key to your clipboard. 
@@ -77,6 +77,3 @@ A: Datadog accepts all event types.
 ### Q: Can I get more general information about Datadog?
 
 A: Yes, see [datadoghq.com](https://datadoghq.com).
-
-
-

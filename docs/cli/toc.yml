@@ -1,6 +1,7 @@
-
 - name: Get started
   href: index.md 
+- name: Quick reference
+  href: quick-reference.md 
 - name: Sign in with a Personal Access Token
   href: log-in-via-pat.md
 - name: Auto detect configuration and git aliases 
@@ -19,8 +20,16 @@
   href: troubleshooting.md
 - name: Azure CLI Reference
   items:
-  - name: Command reference
-    href: /cli/azure/ext/azure-devops?view=azure-cli-latest
+  - name: az artifacts
+    href: /cli/azure/artifacts
+  - name: az boards
+    href: /cli/azure/boards
+  - name: az devops
+    href: /cli/azure/devops
+  - name: az pipelines
+    href: /cli/azure/pipelines
+  - name: az repos
+    href: /cli/azure/repos
   - name: Output formats
     href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
   - name: Query

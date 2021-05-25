@@ -6,7 +6,7 @@ ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 07/30/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
@@ -29,16 +29,16 @@ Start with a simple history example: a repo with 3 linear commits.
 Commit A is the parent of commit B, and commit B is the parent of commit C.
 This history looks very similar to a CVCS.
 The arrow pointing to commit C is a branch.
-It's named `master` because that's the default name for the mainline branch in a Git repo.
+It's named `main` because that's the default name for the mainline branch in a Git repo.
 Branches are pointers to specific commits, which is why branching is so lightweight and easy in Git.
 
 A key difference in Git compared to CVCS is that I have my own full copy of the repo.
 I need to keep my local repository in sync with the remote repository by getting the latest commits from the remote repository.
-To do this, I'll pull the master branch with the following command:
+To do this, I'll pull the main branch with the following command:
 
-`git pull origin master`
+`git pull origin main`
 
-This copies ("pulls") all commits from the `master` branch of the remote repo (called `origin` by default) to the `master` branch of the local repo. The pull operation copied one new commit, and the `master` branch in the local repo is now pointing to this new commit.
+This copies ("pulls") all commits from the `main` branch of the remote repo (called `origin` by default) to the `main` branch of the local repo. The pull operation copied one new commit, and the `main` branch in the local repo is now pointing to this new commit.
 
 ![a fourth commit, D, is added to the line](media/history/history-abcd.png)
 
@@ -61,10 +61,10 @@ I'll make a few changes on the `cool-new-feature` branch in two new commits, E a
 ![added two new commits](media/history/history-abcd-cool-new-feature-e-f.png)
 
 My commits are reachable by the `cool-new-feature` branch since I made them in that branch.
-I'm done with my feature and want to merge it into `master`.
+I'm done with my feature and want to merge it into `main`.
 To do that I'll use the following command:
 
-`git merge cool-feature master`
+`git merge cool-feature main`
 
 ![after the merge](media/history/history-abcd-cool-new-feature-e-f-merge.png)
 
@@ -77,7 +77,7 @@ If I had conflicts, the merge commit would include the changes needed to resolve
 ## History in the real world
 
 Here is an example of Git history that more closely resembles code in active development on a team.
-There are three people who merge commits from their own branches into the master branch around the same time.
+There are three people who merge commits from their own branches into the main branch around the same time.
 
 ![console log of git graph](media/history/gitlogconsole.png)
 

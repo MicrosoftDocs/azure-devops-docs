@@ -2,34 +2,20 @@
   href: ./index.yml
 - name: Get started with Git
   items:
-  - name: Code with Git
-    href: ../get-started/code-with-git.md
-  - name: Create a new repo
-    href: creatingrepo.md
+  - name: Commit, share, and sync your code
+    href: gitquickstart.md
+  - name: Create repo - Web
+    href: create-new-repo.md
+  - name: Create repo - Visual Studio
+    href: share-your-code-in-git-vs-2017.md
+  - name: Git preferences and settings
+    href: git-config.md
   - name: Clone an existing repo
     href: clone.md
   - name: Import repo - Web
     href: import-git-repository.md
-  - name: Commit, share, and sync your code
-    href: gitquickstart.md
-- name: Key concepts and settings
-  items:
-  - name: Git workflow
-    href: gitworkflow.md
-  - name: Ignore files
-    href: ignore-files.md
-  - name: Understand dates in Git
-    href: git-dates.md
-  - name: Understand names in Git
-    href: git-names.md
-  - name: Cross-platform compatibility
-    href: os-compatibility.md
-  - name: Git preferences and settings
-    href: git-config.md
-  - name: Repository settings
-    href: repository-settings.md
-  - name: Manage large files
-    href: manage-large-files.md
+  - name: Import a repo from TFVC
+    href: import-from-TFVC.md
 - name: Connect & authenticate
   items:
   - name: Connect to a project or repo
@@ -40,33 +26,47 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
+- name: Key concepts  
+  items:
+  - name: Git workflow
+    href: gitworkflow.md
+  - name: Ignore files
+    href: ignore-files.md
+  - name: Manage large files
+    href: manage-large-files.md
+  - name: Understand dates in Git
+    href: git-dates.md
+  - name: Understand names in Git
+    href: git-names.md
+  - name: Cross-platform compatibility
+    href: os-compatibility.md
 - name: Create & manage repos
   items:
-  - name: Create repo - Web
-    href: create-new-repo.md
+  - name: Create a new repo
+    href: creatingrepo.md
   - name: Create repo - CLI
     href: share-your-code-in-git-cmdline.md
-  - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs-2017.md
   - name: Create repo - IntelliJ
     href: create-repo-intellij.md
-  - name: Create repo - Xcode
-    href: share-your-code-in-git-xcode.md
   - name: Create repo - Eclipse
     href: share-your-code-in-git-eclipse.md
+  - name: Create repo - Xcode
+    href: share-your-code-in-git-xcode.md
   - name: Manage repos
     items:
+    - name: Repository settings and policies
+      href: repository-settings.md
+    - name: Set repository permissions (Security) 
+      href: set-git-repository-permissions.md
+    - name: Create a readme
+      href: create-a-readme.md
     - name: Delete a repo
       href: delete-existing-repo.md
     - name: Rename a repo
       href: repo-rename.md
     - name: Find a file
       href: find-a-file.md
-    - name: Create a readme
-      href: create-a-readme.md
-    - name: Git and TFVC repos
-      href: team-projects.md
-    - name: Move Git repositories between Team Projects
+    - name: Move a repo to another project
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
@@ -74,12 +74,12 @@
   items:
   - name: About branches & branch policies
     href: branch-policies-overview.md
-  - name: Branch organization
+  - name: Branch strategy
     href: git-branching-guidance.md
   - name: Create a branch
     href: create-branch.md
-  - name: Create work in branches
-    href: branches.md
+  - name: Delete a Git branch
+    href: delete-git-branch.md
   - name: Change the default branch
     href: change-default-branch.md
   - name: Forks
@@ -88,6 +88,11 @@
     items:
     - name: Manage your branches
       href: manage-your-branches.md
+    - name: Set branch policies
+      href: branch-policies.md
+    - name: Set branch permissions 
+      href: branch-permissions.md
+      displayname: security  
     - name: Delete a branch
       href: delete-branch.md
     - name: Restore a deleted branch
@@ -96,11 +101,6 @@
       href: require-branch-folders.md 
     - name: Lock a branch
       href: lock-branches.md 
-    - name: Set branch policies
-      href: branch-policies.md
-    - name: Set branch permissions 
-      href: branch-permissions.md
-      displayname: security  
 - name: Commits, push, fetch, pull 
   items:
   - name: Save work with commits
@@ -109,44 +109,38 @@
     href: pushing.md
   - name: Update code with fetch and pull
     href: pulling.md
-  - name: Work with tags
-    href: git-tags.md
-- name: Pull requests
-  items:
-  - name: Review code with pull requests
-    href: pull-requests-overview.md
-  - name: Create & complete a pull request
-    href: pullrequest.md
-  - name: View and manage pull requests
-    href: pull-requests.md
-  - name: Pull request templates
-    href: pull-request-templates.md
-  - name: Squash merge pull requests 
-    href: merging-with-squash.md
-  - name: Extend pull request workflows with pull request status
-    href: pull-request-status.md
-- name: Merge conflicts, rebase, & cherry-pick
-  items:
   - name: Resolve merge conflicts
     href: merging.md
-  - name: Apply changes with rebase
-    href: rebase.md
   - name: Copy changes with cherry-pick
     href: cherry-pick.md
   - name: Undo changes
     href: undo.md
-- name: History
-  items:
-  - name: History in Git
-    href: history.md
-  - name: Review history
-    href: review-history.md
-  - name: Git log history simplification
-    href: git-log-history-simplification.md
+  - name: Apply changes with rebase
+    href: rebase.md
+  - name: Work with tags
+    href: git-tags.md
   - name: Commit history
     href: commit-history.md
   - name: Commit details
     href: commit-details.md
+- name: Pull requests
+  items:
+  - name: View and manage pull requests
+    href: pull-requests.md
+  - name: Squash merge pull requests 
+    href: merging-with-squash.md
+  - name: Pull request templates
+    href: pull-request-templates.md
+  - name: Extend pull request workflows with pull request status
+    href: pull-request-status.md
+- name: History
+  items:
+  - name: Review history
+    href: review-history.md
+  - name: History in Git
+    href: history.md
+  - name: Git log history simplification
+    href: git-log-history-simplification.md
 - name: Cross-service operations
   items:
   - name: Drive Git development from a work item
@@ -163,12 +157,6 @@
     href: create-pr-status-server-with-azure-functions.md
   - name: Configure branch policy for an external service
     href: pr-status-policy.md
-- name: Move from TFVC to Git
-  items:
-  - name: Import a repo from TFVC
-    href: import-from-TFVC.md
-  - name: Map TFVC actions to Git
-    href: mapping-my-tfvc-actions-to-git.md
 - name: Samples
   items:
   - name: Azure DevOps Samples for .NET
@@ -181,20 +169,20 @@
     href: ../tfvc/git-permission-command.md
   - name: tf git view
     href: ../tfvc/git-view-command.md
+  - name: Go get using Azure Repos
+    href: go-get.md
 - name: Reference
   items:
   - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
-  - name: RPC failures & http.postBuffer
-    href: rpc-failures-http-postbuffer.md
-  - name: Go get using Azure Repos
-    href: go-get.md
-  - name: Format comments with markdown
-    href: ../../project/wiki/markdown-guidance.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Frequently asked questions
     href: howto.md
   - name: Git limits
     href: limits.md
+  - name: Map TFVC actions to Git
+    href: mapping-my-tfvc-actions-to-git.md
+  - name: RPC failures & http.postBuffer
+    href: rpc-failures-http-postbuffer.md 
 - name: Resources
   items:
   - name: Pro Git

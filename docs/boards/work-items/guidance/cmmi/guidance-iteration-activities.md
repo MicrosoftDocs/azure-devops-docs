@@ -1,7 +1,7 @@
 ---
 title: CMMI process guidance, Iteration activities
 titleSuffix: Azure Boards
-description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement - Team Foundation Server (TFS)
+description: Specify the set of requirements, review the requirements that are assigned to the iteration and create task work items for the work that must be performed to implement and test each requirement  
 ms.technology: devops-agile
 ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
@@ -89,7 +89,7 @@ The requirements are considered completed only if the associated tests pass.
 -   What you will do as a result.  
   
 ### Integration  
- If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/branching-strategies-with-tfvc.md).  
   
  The integration consists of two steps:  
   

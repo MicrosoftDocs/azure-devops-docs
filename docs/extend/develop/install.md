@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: How to Install Your Extension | Extensions for Azure DevOps
-description: How to install your extension for Azure DevOps and Team Foundation Server (TFS).
+description: How to install your extension for Azure DevOps.
 ms.assetid: ab9c2c1f-a78d-4f97-9b7e-ae8eaef0a3ee
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'

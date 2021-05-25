@@ -150,4 +150,4 @@ c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
 - [Branch Command](branch-command.md)
 - [Merges Command](merges-command.md)
 - [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-- [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Branching and Merging](./branching-strategies-with-tfvc.md)

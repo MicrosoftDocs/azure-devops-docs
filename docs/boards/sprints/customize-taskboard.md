@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 7/09/2020
 ---
@@ -16,8 +16,6 @@ ms.date: 7/09/2020
 # Customize a sprint Taskboard  
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -33,13 +31,117 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 ::: moniker-end
 
 > [!NOTE] 
-> This article addresses customization of a sprint Taskboard. For information on customizing a Kanban board, see [Manage and configure team tools, Configure Kanban board](../../organizations/settings/manage-teams.md#configure-kanban-boards). 
+> This article addresses customization of a sprint Taskboard. For information on customizing a Kanban board, see [Manage and configure team tools](../../organizations/settings/manage-teams.md#configure-team-backlogs). 
 
 
 ## Prerequisites
 
 * You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+
+
+## Taskboard customization options  
+
+To add or remove columns, choose **Column Options**. You customize all other options through the **Settings** dialog for the Taskboard.  
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
+
+:::row:::
+   :::column span="1":::
+      **Option** 
+   :::column-end:::
+   :::column span="3":::
+      **Use to...**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **[Show bugs](#show-bugs)** 
+   :::column-end:::
+   :::column span="3":::
+      Manage bugs on Taskboard similar to tasks.  
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      **[Customize columns](#add-columns)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove columns shown on Taskboard. 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      **[Fields](#choose-fields)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove fields from cards.  
+      Includes adding the **Parent** field to cards.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="< azure-devops-2020"
+:::row:::
+   :::column span="1":::
+      **[Fields](#choose-fields)** 
+   :::column-end:::
+   :::column span="3":::
+      Add or remove fields from cards. 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      **[Styles](#style-rule)**
+   :::column-end:::
+   :::column span="3":::
+      Add styling rules to change card color and title style based on field criteria. 
+   :::column-end:::
+:::row-end:::
+---
+
+> [!NOTE]   
+> Each team can customize their Taskboard columns and cards. Taskboard settings are not inherited from other teams that they may share portions of area paths. 
+
+
+## Taskboard customization sequence 
+
+Before you configure your Taskboard, you'll want to make sure the following tasks are complete as possible. Otherwise, you'll find yourself revisiting your configuration.  
+
+**Process Administrator**: 
+1. Add custom work item types that you want to appear on your Taskboard. For details, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
+2. Customize your iteration backlog to ensure all work item types you want to have will appear on the Taskboards. For details see [Customize backlogs & boards](../../organizations/settings/work/customize-process-backlogs-boards.md). 
+3. Customize each work item type to have any custom fields you want to show. For details, see [Customize a workflow](../../organizations/settings/work/add-custom-field.md).
+
+
+::: moniker range=">= azure-devops-2019"
+
+> [!NOTE]  
+> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops-2019"
+
+> [!NOTE]  
+> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+
+::: moniker-end
+
+**Team Administrator**:
+1. Meet with your team and determine how the team wants to manage bugs, similar to requirements or tasks.  
+2. [Add any tags](../queries/add-tags-to-work-items.md) to work items that you want to use to support styling rules. 
+ 
+
+<a id="show-bugs" > </a>
+
+## Show bugs on your Taskboard 
+
+If you want bugs to appear on the taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
 
 
 <a id="add-columns" > </a>
@@ -82,7 +184,15 @@ The changes made apply to all sprint Taskboards for the selected team.
 ::: moniker-end
 
 
-## Information rich cards
+
+
+<a id="choose-fields" > </a>
+
+## Add fields to cards  
+
+Scrum teams use the Taskboard to burn down work and report on progress during daily stand ups. Each sprint Taskboard shows cards that correspond to both requirements and tasks.
+
+### Information rich cards
 
 Information rich cards not only provide at-a-glance information of interest to you and your team, but also provide a way for you to update a field without opening the work item. And, with style rules, you can highlight those work items with select colors based on the criteria you set.  
 
@@ -99,96 +209,13 @@ In the card shown below, the following customizations have been set for the task
 
 ![Card customize to show additional fields, tags, and style rule ](media/customize/task-conceptual.png)
 
-
-::: moniker range=">= azure-devops-2019"
-
-> [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops-2019"
-
-> [!NOTE]  
-> You can customize a work item type which is different then customizing the card displayed on the Taskboard. You customize a WIT by adding fields, changing the workflow, adding custom rules and more. You can also add custom work item types and custom backlog levels. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-
-::: moniker-end
-
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
 Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Taskboards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
 
+### Add or remove fields 
 
-
-
-<a id="fields"></a>
-
-## Update fields from cards
-
-Using the board views provides you with quick and easy ways to update work items as work progresses. Making daily or frequent updates helps everyone on your team stay in sync with what's been done and what needs doing next. 
-
-To update status of a work item, you simply drag-and-drop cards to a different column. To change the order or stack ranking of a work item, you drag a card up or down within a column. 
-
-For example, on the Taskboard, moving the card from In Progress to the Done column updates the corresponding State field. In this case, the State field updates from Doing to Done. 
-
-![Taskboard, move a work item](media/alm_tb_move_to_done.png)
-
-Another handy feature is to simply update a field without having to open the work item. You can update most fields shown on the card. Here we reassign a task. 
-
-![Kanban board, assign a work item](media/customize/field-reassign.png)
-
-This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates or update Remaining Work. 
-
-To change the title, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Edit title**. 
-
-> [!div class="mx-imgBorder"]
-> ![Edit title](media/customize/edit-title.png)
-
-To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work item, not from the card and not from within the form. 
-
-<a id="styles" > </a>
-
-## Highlight cards  
-
-With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight Priority 1 tasks by having the cards display as green. 
-
-::: moniker range="tfs-2015"
-
-This feature requires TFS 2015.1 or later versions.
-
-::: moniker-end
-
-![Styling rule applied to tasks with Priority=1](media/customize/task-style-green.png)
-
-### Example styling rules 
-
-What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
-
-> [!div class="mx-tdCol2BreakAll"]
-> | Work items | Criteria |
-> |------------|------------|
-> | High priority items | `Priority = 1` |
-> | High effort items | `Remaining Work>=12`  |
-> | Stale items unchanged in the last 5 days | `Changed Date @Today-5` |
-> | Title contains a key word | `Title Contains Yes` |
-> | Severity 1 bugs | `Severity = 1 - Critical   AND   Work Item Type = Bug` |
-> | High value business items | `Business Value 50` |
-> | Items assigned to specific feature area  | `Area Path Under Fabrikam Fiber\Phone` |
-> | Contains specific tag   | `Tags Contain RTM` |
-> | Blocked tasks (Scrum process only) | `Blocked = Yes` |
-
-
-## Show bugs on your Taskboard 
-
-If you want bugs to appear on the taskboard, change your team settings for [show bugs on the backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).
-
-<a id="choose-fields" > </a>
-
-## Add fields to cards  
-
-Scrum teams use the taskboard to burn down work and report on progress during daily standups. Your taskboard shows cards that correspond to both requirements and tasks.
-
-You change the way cards appear on the taskboard in the same way you change the appearance of cards on Kanban boards. Only here, you start from the taskboard.
+You change the way cards appear on the Taskboard in the same way you change the appearance of cards on Kanban boards. Only here, you start from the Taskboard.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -270,9 +297,66 @@ You change the way cards appear on the taskboard in the same way you change the 
 ::: moniker-end  
 
 
+<a id="fields"></a>
+
+### Update fields from cards
+
+Using the board views provides you with quick and easy ways to update work items as work progresses. Making daily or frequent updates helps everyone on your team stay in sync with what's been done and what needs doing next. 
+
+To update status of a work item, you simply drag-and-drop cards to a different column. To change the order or stack ranking of a work item, you drag a card up or down within a column. 
+
+For example, on the Taskboard, moving the card from In Progress to the Done column updates the corresponding State field. In this case, the State field updates from Doing to Done. 
+
+![Taskboard, move a work item](media/alm_tb_move_to_done.png)
+
+Another handy feature is to simply update a field without having to open the work item. You can update most fields shown on the card. Here we reassign a task. 
+
+![Kanban board, assign a work item](media/customize/field-reassign.png)
+
+This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates or update Remaining Work. 
+
+To change the title, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Edit title**. 
+
+> [!div class="mx-imgBorder"]
+> ![Edit title](media/customize/edit-title.png)
+
+To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work item, not from the card and not from within the form. 
+
+<a id="styles" > </a>
+
 <a id="style-rule" > </a>  
 
 ## Define style rules, highlight cards  
+ 
+
+With styling rules, you can cause cards to change color when their corresponding work items meet criteria that you set. Here, we highlight Priority 1 tasks by having the cards display as green. 
+
+::: moniker range="tfs-2015"
+
+This feature requires TFS 2015.1 or later versions.
+
+::: moniker-end
+
+![Styling rule applied to tasks with Priority=1](media/customize/task-style-green.png)
+
+### Example styling rules 
+
+What rules should you apply to highlight work items? Here are a few examples and their associated criteria . 
+
+> [!div class="mx-tdCol2BreakAll"]
+> | Work items | Criteria |
+> |------------|------------|
+> | High priority items | `Priority = 1` |
+> | High effort items | `Remaining Work>=12`  |
+> | Stale items unchanged in the last 5 days | `Changed Date @Today-5` |
+> | Title contains a key word | `Title Contains Yes` |
+> | Severity 1 bugs | `Severity = 1 - Critical   AND   Work Item Type = Bug` |
+> | High value business items | `Business Value 50` |
+> | Items assigned to specific feature area  | `Area Path Under Fabrikam Fiber\Phone` |
+> | Contains specific tag   | `Tags Contain RTM` |
+> | Blocked tasks (Scrum process only) | `Blocked = Yes` |
+
+### Add or remove a style rule  
 
 You can apply style rules to change the color of Taskboard cards based on specified field criteria.  
 
@@ -352,7 +436,6 @@ Requires TFS 2015.1 or later version.
 Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 
 ::: moniker-end
-
 
 
 ## Related articles

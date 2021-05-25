@@ -21,7 +21,7 @@ Remove unused Git repos from your project when they are no longer needed.
 >[!IMPORTANT]
 > You cannot remove a repo if it is the only Git repo in the Project. If you need to delete the only Git repo in a Project, [create a new Git repo](create-new-repo.md) first, then delete the repo.
 >      
-> You must have [Delete Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) to delete a repo from a project. 
+> You must have [Delete Repository permissions](set-git-repository-permissions.md#git-repository) to delete a repo from a project. 
 
 
 >[!NOTE]

@@ -6,6 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
+ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 01/08/2018
 ---
@@ -171,7 +172,7 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 ## Try this next
 
 Here are some useful tips when working with the Kanban board:
-- To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
+- To focus on select work items, [filter your Kanban board](../backlogs/filter-backlogs-boards-plans.md)
 - To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../../boards/boards/customize-cards.md)     
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
 - Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md)) 

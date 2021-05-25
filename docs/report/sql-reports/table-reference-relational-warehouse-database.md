@@ -42,7 +42,7 @@ You can query for data about builds by using four fact tables, as the following 
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors of the builds.|  
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
   
-For more information about builds, see [Build](../../pipelines/overview.md).  
+For more information about builds, see [Build](../../pipelines/get-started/what-is-azure-pipelines.md).  
 
 <a name="SourceCode"></a>
 
@@ -94,4 +94,3 @@ You can query for information about tasks, bugs, and other types of work items b
 |[Work Item Category tables](work-item-category-tables.md)|The categories that are used to associate similar types of work items.|  
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
-  

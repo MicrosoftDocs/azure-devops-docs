@@ -59,7 +59,7 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
    ![ASP.NET Template](media/cosmos-db/aspnettemplate.png)
 
-5. Select the **triggers**, and then select the checkbox for ""Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
+5. Select the **triggers**, and then select the checkbox for **Enable continuous integration**.  This setting ensures every commit to the repository executes a build.
 
 6. Select **Save & Queue**, and then choose **Save and Queue** to execute a new build.
 

@@ -1,15 +1,15 @@
 ---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
-description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
+description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps   
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 01/21/2021
 ---
 
 
@@ -102,7 +102,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![The drop-down list for Fabrikam Fiber Team shows a search box, a list of team backlogs titled My Team Backlogs, and a Browse all backlogs button.](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
 	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
@@ -130,7 +130,7 @@ From your web browser, open your team's product backlog. (1) Select the team fro
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![The drop-down list for Fabrikam Fiber / Phone shows a Fabrikam Fiber Home button, a list titled Recent project/teams, a Browse button, and a New team button.](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -463,7 +463,24 @@ On your [backlog](create-your-backlog.md), set **In progress items** to **Show**
 
 ## Delivery plans display team deliverables  
 
-With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
+With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
+ 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
+> - Epics can be added to a delivery plan 
+> - Work item cards can span iteration boundaries 
+> - Drag and drop borders show when a work item starts and ends 
+> - You can add backlog items to a team from a plan
+> - You can view work item dependencies 
+> - Stakeholders can view plans
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
 
 You install Delivery Plans from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), in the Azure DevOps tab.
 
@@ -476,8 +493,14 @@ Delivery Plans is available for TFS 2017.2 and later versions.
 
 ::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../plans/review-team-plans.md). 
+::: moniker-end
 
-![Example plans view](media/backlogs-boards-plans-delivery-plans.png)  
+::: moniker range="azure-devops"
+![Example plans preview](../plans/media/plans/features-span-iterations-preview.png)  
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+![Example plans view](../extensions/media/plans/plans-move-1.png)  
 ::: moniker-end
 
 

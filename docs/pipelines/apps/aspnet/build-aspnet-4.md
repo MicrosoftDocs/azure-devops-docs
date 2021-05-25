@@ -4,7 +4,7 @@ description: Use .NET Framework to build ASP.NET apps in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
-ms.date: 04/15/2020
+ms.date: 02/09/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -63,13 +63,13 @@ Import this repo into your Git repo in TFS:
 https://github.com/Microsoft/devops-project-samples.git
 ```
 
-The sample repo includes several different projects, and the sample application for this article is located in the following path:
+The sample repo includes several different projects, and the sample application for this article is located at:
 
 ```
 https://github.com/Microsoft/devops-project-samples
 ```
 
-You will use the code in `/dotnet/aspnet/webapp/`. Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
+You'll use the code in `/dotnet/aspnet/webapp/`. Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
 
 The sample app is a Visual Studio solution that has two projects: 
 * An ASP.NET Web Application project that targets .NET Framework 4.5
@@ -103,7 +103,7 @@ You can use Azure Pipelines to build your .NET Framework projects without needin
 * Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
 * Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
 
-You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is particularly helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
+You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 
 ::: moniker-end
 
@@ -127,4 +127,26 @@ It is often required to build your app in multiple configurations. The following
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
+## Restore dependencies
+
+You can use the [NuGet task](../../tasks/package/nuget.md) to install and update NuGet package dependencies. 
+You can also download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository with the NuGet task. 
+
+This code restores a solution from a project-scoped feed in the same organization. 
+
+```yaml
+# Restore from a project scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
+    restoreSolution: '**/*.sln'
+```
+
 ::: moniker-end

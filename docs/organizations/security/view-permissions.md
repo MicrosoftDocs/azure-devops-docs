@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/22/2019
 ---
 
@@ -18,22 +18,24 @@ ms.date: 07/22/2019
 
 Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and inheritance](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [Get started with permissions, access, and security groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+
+
+> [!NOTE]
+> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## Prerequisites
 
 * You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
-> [!NOTE]
-> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## View project-level permissions
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the preview feature, for the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -194,8 +196,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
 <li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
@@ -221,6 +223,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 ## Related articles
 
-- [Trace permissions](faq-trace-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 - [Permissions and role lookup guide](permissions-lookup-guide.md)
 

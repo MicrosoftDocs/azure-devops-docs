@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/21/2020
+ms.date: 11/06/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -25,15 +25,30 @@ When you [create an organization](create-organization.md), you can choose the re
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
-3. Select **Overview**. The region is listed below.
+3. Select **Overview**. The region is listed lower on the page.
 
    ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
+You must be [the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
 
 ## Change organization region
+
+> [!IMPORTANT]
+> A region change is only possible in the following geographies across the world:
+>
+> - Australia
+> - Brazil
+> - Canada
+> - Asia Pacific
+> - Europe
+> - India
+> - United Kingdom
+> - United States
+>
+> We default your organization to your closest geography. Making a change to another data center within your geography isn't possible, for example, changing from EastUS to CentralUS.
+
 
 To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/), and then select the quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
 

@@ -62,7 +62,17 @@ The settings that can be changed are:
 | target | Target threshold value for diff coverage must be met for a successful coverage status to be posted. | 70% | Desired % number | 
 | comments | Indicates whether a comment containing coverage details for each code file should be posted in the pull request | off | on, off
 
-Sample YAML files for different coverage settings can be found in the [code coverage YAML samples repo](https://github.com/microsoftdocs/codecoverage-yaml-samples).
+Example configuration:
+
+```yaml
+coverage:
+  status:           # Code coverage status will be posted to pull requests based on targets defined below.
+    comments: on    # Off by default. When on, details about coverage for each file changed will be posted as a pull request comment. 
+    diff:           # Diff coverage is code coverage only for the lines changed in a pull request.
+      target: 60%   # Set this to a desired percentage. Default is 70 percent
+```
+
+More examples with details can be found in the [code coverage YAML samples repo](https://github.com/microsoftdocs/codecoverage-yaml-samples).
 
 > [!NOTE] 
 > Coverage indicators light up in the changed files view regardless of whether the pull request comment details are turned on.

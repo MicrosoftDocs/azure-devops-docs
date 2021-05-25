@@ -1,5 +1,5 @@
 ---
-title: Restrict Team and Project administrators from inviting new users
+title: Restrict Team and Project Administrators from inviting new users
 titleSuffix: Azure DevOps Services
 description: Learn how to manage the policy that allows Team and Project Administrators to invite new users to Azure DevOps Services.
 ms.assetid: 
@@ -8,14 +8,14 @@ ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 10/16/2020
+ms.date: 02/12/2021
 ---
 
 # Restrict new user invitations from Project and Team Administrators 
 
 [!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
-By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy will block Team and Project Administrators from inviting new users to the organization. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status. If a user is already a member of the organization, Project and Team Adminstrators will still be able to add that user to their project.
+By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy blocks Team and Project Administrators from inviting new users. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status. If a user is already a member of the organization, Project and Team Administrators can add that user to a project.
 
 <!---
 
@@ -32,7 +32,7 @@ can add users who are already in the organization to their team       |
 
 You must be a Project Collection Administrator to manage this policy.
 
-## Turn policy off
+## Turn off policy
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -46,9 +46,12 @@ You must be a Project Collection Administrator to manage this policy.
 
 Now, only Project Collection Administrators can invite new users to Azure DevOps.
 
+> [!NOTE]
+> **Known limitation:** Even with the policy turned off, Team and Project Administrators can re-invite users who were previously members of the organization. 
+
 ## Related articles
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)

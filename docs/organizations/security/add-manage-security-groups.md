@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Add and manage security groups in an organization using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: reference
 ms.reviewer: geverghe 
 ms.author: kaelli
 author: KathrynEE
@@ -16,9 +16,9 @@ ms.date: 08/18/2020
 
 [!INCLUDE [temp](../../includes/version-cloud-plus-2020.md)]  
 
-Security groups assign a set of permissions to members of the group. For example, members of a Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups. To learn more, see [Permissions and groups](permissions.md).
+Security groups are used to manage permissions and access as described in [Get started with permissions, access, and security groups](about-permissions.md). For example, members of the Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups.  
 
-Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization, a collection, or project with the [az devops security group](/cli/azure/ext/azure-devops/devops/security/group) commands. Use this command to:
+Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization, a collection, or project with the [az devops security group](/cli/azure/devops/security/group) commands. Use this command to:
 
 - Create a new security group
 - View security groups and security group details
@@ -27,7 +27,7 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 
 ::: moniker range="< azure-devops"
 > [!NOTE]
-> For Azure DevOps Server, you can manage security groups using the `az devops security group` command documented in this article, or using the TFSSecurity command.  To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
+> For Azure DevOps Server, you can manage security groups using the `az devops security group` command documented in this article, or using the **TFSSecurity** command.  To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 ::: moniker-end
 
 ## Prerequisites 
@@ -61,7 +61,7 @@ The following parameters are optional for all commands, and not listed in the ex
 
 ## Create a security group
 
-You can create a security group with the [az devops security group create](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-create) command.
+You can create a security group with the [az devops security group create](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-create) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -99,7 +99,7 @@ Name                                 Description
 
 ## Delete a security group
 
-You can delete a security group with the [az devops security group delete](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-delete) command.
+You can delete a security group with the [az devops security group delete](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-delete) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -123,7 +123,7 @@ az devops security group delete --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1L
 
 ## List security groups
 
-You can list all the security groups in a project or organization with the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+You can list all the security groups in a project or organization with the [az devops security group list](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -162,7 +162,7 @@ Name                                     Descriptor
 
 ## Show security group details
 
-You can show the details of a security group with the [az devops security group show](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-show) command.
+You can show the details of a security group with the [az devops security group show](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-show) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -188,7 +188,7 @@ Name                                  Description
 
 ## Update a security group
 
-You can update the name and description of a security group with the [az devops security group update](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-update) command.
+You can update the name and description of a security group with the [az devops security group update](/cli/azure/devops/security/group#ext-azure-devops-az-devops-security-group-update) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -231,12 +231,12 @@ scopeType: null
 securingHostId: null
 specialType: null
 subjectKind: group
-url: https://vssps.dev.azure.com/kelliott/_apis/Graph/Groups/vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw
+url: https://vssps.dev.azure.com/fabrikam/_apis/Graph/Groups/vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw
 ```
 
 ## Add a member to a group
 
-You can add a member to a security group with the [az devops security group membership add](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-add) command.
+You can add a member to a security group with the [az devops security group membership add](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-add) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -265,7 +265,7 @@ contoso@contoso.com                  user    contoso@contoso.com
 
 ## List memberships for a group or user
 
-You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-list) command.
+You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-list) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
@@ -304,7 +304,7 @@ Raisa Pokrovskaya  user    fabrikamfiber5@hotmail.com  msa.ZmUwYjk5NmYtZTAyNS03N
 
 ## Remove a member from a group
 
-You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-remove) command.
+You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-remove) command.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 09/30/2020
+ms.date: 04/29/2021
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 
 ::: moniker range=">=azure-devops-2020"
 
-Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
+Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. The second approach is useful for [building secure pipelines with templates](../security/templates.md).
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
 
@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-  - ${{ if eq(parameters.experimentalTemplate, true) }}:
-    - template: experimental.yml
-  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-    - template: stable.yml
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
@@ -266,6 +266,33 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
+When working with multiple jobs, remember to remove the name of the job in the template file, so as to avoid conflict
+
+```yaml
+# File: templates/jobs.yml
+jobs:
+- job: 
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - bash: echo "Hello Ubuntu"
+
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - bash: echo "Hello Windows"
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+- template: templates/jobs.yml  # Template reference
+```
+
 ### Stage reuse
 
 Stages can also be reused with templates.
@@ -439,8 +466,45 @@ steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
 
+## Reference template paths
 
+Template paths should be relative to the file that does the including. Here is an example nested hierarchy. 
 
+```
+|
++-- fileA.yml
+|
++-- dir1/
+     |
+     +-- fileB.yml
+     |
+     +-- dir2/
+          |
+          +-- fileC.yml
+```
+
+Then, in `fileA.yml` you can reference `fileB.yml` and `fileC.yml`  like this. 
+
+```yaml
+steps:
+- template: dir1/fileB.yml
+- template: dir1/dir2/fileC.yml
+```
+
+If `fileC.yml` is your starting point, you can include `fileA.yml` and `fileB.yml` like this. 
+
+```yaml
+steps:
+- template: ../../fileA.yml
+- template: ../fileB.yml
+```
+When `fileB.yml` is your starting point, you can include `fileA.yml` and `fileC.yml` like this. 
+
+```yaml
+steps:
+- template: ../fileA.yml
+- template: dir2/fileC.yml
+```
 ## Use other repositories
 
 You can keep your templates in other repositories.
@@ -499,7 +563,7 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md) with access to the project and include that in YAML:
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md#sep-tfsts) of type `Azure Repos/Team Foundation Server` with access to the project and include that in YAML:
 
 ```yaml
 resources:
@@ -520,6 +584,9 @@ This means that you can't use scripts from the template repo in your pipeline.
 If you want to use a particular, fixed version of the template, be sure to pin to a `ref`.
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
+
+> [!NOTE]
+> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
 
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
@@ -887,6 +954,7 @@ For example, to add additional dependencies:
 
 ```yaml
 # job.yml
+parameters:
 - name: 'jobs'
   type: jobList
   default: []

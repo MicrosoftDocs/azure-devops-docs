@@ -58,13 +58,13 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 The example below will enable you to authenticate to a list of Azure Artifacts feeds as well as a list of service connections from external organizations. If you need to authenticate to a single feed, you must replace the following arguments: `artifactFeeds` and `externalFeeds` with `artifactFeed` and `externalFeed` and specify your feed name accordingly.
 
 ```yaml
-- task: TwineAuthenticate@0
+- task: TwineAuthenticate@1
   inputs:
     artifactFeeds: 'feed_name1, feed_name2'
     externalFeeds: 'feed_name1, feed_name2'
 ```
 
-* **artifactFeeds**: a list of Azure Artifacts feeds within your organization.
+* **artifactFeeds**: a list of Azure Artifacts feeds within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (singular) instead.
 * **externalFeeds**: a list of [service connections](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
 
 # [Classic](#tab/classic)

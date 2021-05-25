@@ -1,4 +1,4 @@
-﻿---
+---
 title: TF31001-Team Foundation cannot retrieve...
 titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer can't display the list of projects defined on a Team Foundation Server. 
@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: a8f6ad82-e1e0-4659-8e97-c88ece4c23f5
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
@@ -32,17 +32,16 @@ This error occurs when Team Explorer can't display the list of projects defined 
 As an administrator, you should check the event logs for the application-tier server to try to pinpoint the problem. Also, you can use the following table to determine whether the server is misconfigured.  
   
 > [!IMPORTANT]  
-> If a TF31002 error appears in addition to one or more TF31001 errors, you should also review the information in [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md).  
+> If a TF31002 error appears in addition to one or more TF31001 errors, you should also review the information in [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](../../organizations/projects/tf31002-unable-connect-tfs.md).  
   
 |Problem|Resolution|  
 |-------------|----------------|
 |An error appears that resembles the following text:<br /><br /> TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server*ServerName*. Team Foundation Server returned the following error: The request failed with HTTP status 403: Forbidden.|This error may occur when IP restrictions are enabled on the website for Team Foundation Server. You should remove these restrictions. For more information, see [Verify or Correct IP Address and Domain Name Restrictions](/previous-versions/bb909653(v=vs.120)). **Note:**  By default, Team Foundation Server is configured to grant all computers access to all Web sites for Team Foundation. Before you revert any settings to the default value, you should investigate why the settings were changed. Many organizations deny access to match their infrastructure requirements or security policies.|  
 |TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server*ServerName*. The Team Foundation Server returned the following error: The request failed with HTTP status 503: service unavailable.|Required application pools and services might not be running.  For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).|  
 |An error appears that resembles the following text:<br /><br /> TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server*ServerName*. Team Foundation Server returned the following error: The request failed with HTTP status 503: TF30059: Fatal error when initializing web service.|The TCP/IP protocol for SQL Server is disabled. For information about how to enable the TCP/IP protocol, see [Enable TCP/IP Network Protocol for SQL Server](/previous-versions/sql/sql-server-2012/hh231672(v=sql.110)).|  
-  
- If the previous resolutions do not solve the problem, check the forum for administering Team Foundation Server. For more information, see the following page on the Microsoft website: [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](../../user-guide/provide-feedback.md).  
-  
+    
 <a name="clearcache"></a> 
+
 ##  To clear the cache on your client computer  
   
 1.  Log on to your client computer for Team Foundation by using the credentials of the user whose cache you want to clear.  
@@ -66,4 +65,4 @@ As an administrator, you should check the event logs for the application-tier se
 4.  Delete the contents of the Cache directory, including all subfolders.  
   
 ## Related articles 
-- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](tf31002-unable-connect-tfs.md)
+- [TF31002: Unable to connect to this Team Foundation Server {0}. Team Foundation Server URL: {1}.](../../organizations/projects/tf31002-unable-connect-tfs.md)

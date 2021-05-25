@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 10/08/2020
+ms.date: 05/03/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -48,7 +48,7 @@ You can also use variables in conditions.
 
 ```yaml
 variables:
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
 
 stages:
 - stage: A
@@ -79,12 +79,10 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
-you can specify the conditions under which the task or job will run:
-
-[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
-* Custom conditions
+you can specify the conditions under which the task or job will run.
 
 * * *
+
 ## Enable a custom condition
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
@@ -95,7 +93,7 @@ If the built-in conditions don't meet your needs, then you can specify **custom 
 
 ::: moniker-end
 
-Conditions are written as expressions.
+Conditions are written as expressions in YAML pipelines.
 The agent evaluates the expression beginning with the innermost function and works its way out.
 The final result is a boolean value that determines if the task, job, or stage should run or not.
 See the [expressions](expressions.md) topic for a full guide to the syntax.
@@ -104,16 +102,16 @@ Do any of your conditions make it possible for the task to run even after the bu
 
 ## Examples
 
-### Run for the master branch, if succeeding
+### Run for the main branch, if succeeding
 
 ```
-and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
-### Run if the branch is not master, if succeeding
+### Run if the branch is not main, if succeeding
 
 ```
-and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
 ### Run for user topic branches, if succeeding
@@ -262,7 +260,7 @@ stages:
 - stage: Stage1
   displayName: Stage 1
   dependsOn: []
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables
@@ -275,7 +273,7 @@ stages:
 - stage: Stage2
   displayName: stage 2
   dependsOn: Stage1
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/master')
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
   jobs:
   - job: ShowVariables
     displayName: Show variables 2
@@ -288,7 +286,7 @@ stages:
 - stage: Stage3
   displayName: stage 3
   dependsOn: Stage2
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables 3

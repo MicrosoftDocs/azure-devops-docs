@@ -48,7 +48,7 @@ A healthy test execution trend report shows a steady progress in test plans runn
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
-## Prerequisites
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 

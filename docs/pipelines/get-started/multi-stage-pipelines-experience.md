@@ -5,7 +5,7 @@ description: Learn how to navigate using the multi-stage pipelines user interfac
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-ms.date: 04/20/2020
+ms.date: 05/07/2021
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -59,6 +59,20 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](media/pipeline-overview.png)
 
+### Pipeline settings
+
+You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu on the pipeline details page.
+
+:::image type="content" source="media/pipeline-more-actions.png" alt-text="Pipeline settings and more actions":::
+
+* **Manage security** - [Manage security](#manage-security)
+* **Rename/move** - Edit your pipeline name and folder location.
+  :::image type="content" source="media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
+* **Status badge** - [Add a status badge to your repository](../create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
+* **Settings** - [Customize settings](../customize-pipeline.md#customize-settings)
+* **Delete** - Deletes the pipeline including all builds and associated artifacts.
+* **Scheduled runs** - [Scheduled runs view](../process/scheduled-triggers.md#scheduled-runs-view)
+
 ### Runs
 
 Select **Runs** to view the runs for that pipeline. You can optionally filter the displayed runs.
@@ -96,11 +110,11 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 ![Cancel pipeline run](media/cancel-pipeline-run.png)
 
 <a name="download-logs"></a>
-### Pipeline run context menu
+### Pipeline run more actions menu
 
-From the context menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
+From the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
 
-![Pipeline run summary context menu](media/pipeline-run-summary-context-menu.png)
+![Pipeline run summary more actions menu](media/pipeline-run-summary-context-menu.png)
 
 > [!NOTE]
 > You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
@@ -116,17 +130,31 @@ Choose a job to see the steps for that job.
 
 ![Pipeline tasks](media/pipeline-steps-list.png)
 
-From the steps view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
+From the steps view, you can review the status and details of each step. From the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: you can toggle timestamps or view a raw log of all steps in the pipeline.
 
-![Pipeline tasks context menu](media/pipeline-steps-context-menu.png)
+![Pipeline tasks more actions menu](media/pipeline-steps-context-menu.png)
 
 ## Manage security
 
-You can configure pipelines security on a project level from the context menu on the pipelines landing page, and on a pipeline level on the pipeline details page.
+You can configure pipelines security on a project level from the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: on the pipelines landing page, and on a pipeline level on the pipeline details page.
 
 ![Pipeline security](media/pipelines-context-menu.png)
 
-To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
+To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
+
+:::moniker range="azure-devops"
+
+## Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="media/task-insights.png" alt-text="This task has failed pop-up.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
+
+:::moniker-end
 
 ## Next steps
 

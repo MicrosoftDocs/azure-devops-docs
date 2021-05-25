@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-2. Go to **Pipelines**, and then select **Create Pipeline**.
+2. Go to **Pipelines**, and then select **New Pipeline**.
 
 3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 

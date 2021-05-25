@@ -4,9 +4,9 @@ description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
-ms.date: 07/20/2020
+ms.date: 02/12/2021
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -98,7 +98,17 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 
 ### UI settings override YAML scheduled triggers
 
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. 
+
+To access the pipeline settings UI from a YAML pipeline, edit your pipeline, choose **...** and then **Triggers**.
+
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+Remove all scheduled triggers. 
+
+:::image type="content" source="../process/media/triggers/delete-ui-scheduled-trigger.png" alt-text="Delete scheduled triggers in the Pipeline settings UI.":::
+
+Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running. For more information, see [Scheduled triggers](../process/scheduled-triggers.md).
 
 <a name="my-pipeline-tries-to-start-but-never-gets-an-agent" />
 
@@ -109,6 +119,7 @@ If your pipeline queues but never gets an agent, check the following items.
 ::: moniker range="azure-devops"
 
 * [Parallel job limits - no available agents or you have hit your free limits](#parallel-job-limits---no-available-agents-or-you-have-hit-your-free-limits)
+* [Can't access Azure Key Vault behind firewall from Azure DevOps](#cant-access-azure-key-vault-behind-firewall-from-azure-devops)
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
@@ -159,6 +170,10 @@ If you are currently running other pipelines, you may not have any remaining par
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+### Can't access Azure Key Vault behind firewall from Azure DevOps
+
+If you can't access Azure Key Vault from your pipeline, the firewall might be blocking the Azure DevOps Services agent IP address. The IP addresses published in the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) must be allowlisted. For more information, see [Microsoft-hosted agents: Networking](../agents/hosted.md#networking).
 
 ### You don't have enough concurrency
  
@@ -532,12 +547,24 @@ When the agent sees the first line, `MY_VAR` will be set to the correct value, "
 However, when it sees the second line, the agent will process everything to the end of the line.
 `MY_VAR` will be set to "my_value'".
 
+### Libraries aren't installed for Python application when script executes 
+
+When a Python application is deployed, in some cases, a CI/CD pipeline runs and the code is deployed successfully, but the *requirements.txt* file that's responsible for installing all dependency libraries doesn't execute. 
+
+To install the dependencies, use a post-deployment script in the App Service deployment task. The following example shows the command you must use in the post-deployment script. You can update the script for your scenario.
+
+```
+D:\home\python364x64\python.exe -m pip install -r requirements.txt
+```
+
+
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
+### Enable Storage Explorer to deploy static content like .css and .js to a static website from Azure DevOps via Azure Pipelines
 
-
+In this scenario, you can use the [Azure File Copy task](../tasks/deploy/azure-file-copy.md) to upload content to the website. You can use any of the tools described in [Uploading content](/azure/storage/blobs/storage-blob-static-website#uploading-content) to upload content to the web container.
 
 ## Get logs to diagnose problems
 

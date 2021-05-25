@@ -23,6 +23,7 @@ The contents of the secure files are encrypted and can only be used during the b
 
 There's a size limit of 10 MB for each secure file.
 
+Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. 
 ## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -49,11 +50,12 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
 <a name="secure-file-authorization"></a>
-### How do I authorize a secure file for use in all pipelines?
+### How do I authorize a secure file for use in a specific pipeline?
 
  1. In **Azure Pipelines**, select the **Library** tab.
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 
- 1. In the details view under **Properties**, select **Authorize for use in all pipelines**, and then select **Save**.
+ 1. Select the **Pipeline permissions** button. 
+ 1. In the open dialog you are able to review and modify the access for each available pipeline.
 
 <!-- ENDSECTION -->

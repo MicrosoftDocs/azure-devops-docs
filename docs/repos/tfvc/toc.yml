@@ -101,8 +101,10 @@
     href: suspend-your-work-manage-your-shelvesets.md
 - name: Manage TFVC
   items:
+  - name: "Default TFVC permissions (Security)"
+    href: ../../organizations/security/default-tfvc-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Set TFVC permissions (Security)
-    href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+    href: set-tfvc-repository-permissions.md
   - name: Configure check-out settings
     href: configure-check-out-settings.md
   - name: Manage file types

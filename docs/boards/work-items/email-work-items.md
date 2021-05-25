@@ -5,11 +5,11 @@ description: Email or print work items to share information in Azure Boards, Azu
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 05/21/2021
 ---
 
 
@@ -20,11 +20,8 @@ ms.date: 07/09/2020
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-Here's a list of the most common ways in which teams share information and plans using work item tracking. 
-
-> [!NOTE]    
-> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
-
+Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
+ 
 ---
 :::row:::
    :::column span="2":::
@@ -34,7 +31,7 @@ Here's a list of the most common ways in which teams share information and plans
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio**
+      **Visual Studio 2015-2017**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -116,18 +113,27 @@ Here's a list of the most common ways in which teams share information and plans
 ---
 
 
+**Visual Studio 2019/Team Explorer** 
+
+The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
+
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 ::: moniker range="< azure-devops"
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server or TFS must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
+
 
 <a id="email-item"></a>
 
@@ -140,7 +146,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 <a id="team-services-email" />  
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
 
@@ -204,7 +210,7 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -299,6 +305,12 @@ To print the details of a work item, open a query in Visual Studio that contains
 ![Print work items from Team Explorer](../queries/media/share-plans-print-work-item-details.png)   
 
 
+<a id="print-cards"></a>
+
+## Print work items as cards
+
+Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There is no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
+
 <a id="copy-url">  </a>
 
 ## Copy the URL to a single work item  
@@ -306,7 +318,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > [!NOTE]   
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -357,7 +369,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](../queries/view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>.
+From any query, you can export a list of work items as a comma-delimited list. Simply open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
 
@@ -388,9 +400,20 @@ You may find additional ways to share information by exporting work items to oth
 
 ## Related articles  
 
-- [Use templates to add and update work items](../backlogs/work-item-template.md)  
+::: moniker range="azure-devops"
+
+- [Use templates to add and update work items](../backlogs/work-item-template.md) 
+- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- [Use templates to add and update work items](../backlogs/work-item-template.md) 
 - [Share information in work items and social tools](../queries/share-plans.md) 
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 
-
+::: moniker-end

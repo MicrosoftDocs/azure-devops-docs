@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 05/21/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -55,8 +55,7 @@ For descriptions and usage of each field, as well as the Reference name for each
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to move its placement within the form. If you have several fields you want to add to a custom page or group, then [add those pages or groups first](customize-process-form.md) and then add your fields. 
 
 > [!NOTE] 
-> You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
-
+> Each process can define up to 1024 fields, including system inherited fields. You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
 
@@ -111,13 +110,19 @@ You can add fields and specify the group and page where they should appear. Also
 
 ### Add a picklist  
 
+
+[Work tracking, process, and project limits](object-limits.md)
+
 ::: moniker range=">= azure-devops-2020"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
 ::: moniker-end
 
-1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item. 
+> [!NOTE] 
+> Each organization or collection can define up to 1024 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
+
+1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
 	![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
 
@@ -220,7 +225,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 ## Modify Description help text  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. Note that the implementation differs based on the field type. 
 - **For inherited fields**: Description help text can be defined differently for each work item type and process.   
@@ -229,15 +234,17 @@ Description help text displays when users hover over a field in the work item fo
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
 
-Description help text displays when users hover over a field in the work item form. You can only modify modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
+::: moniker range="azure-devops-2019"
+
+Description help text displays when users hover over a field in the work item form. You can only modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
 
 ::: moniker-end
 
 To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Here we modify the Story Points field for User Story. 
 
@@ -246,7 +253,8 @@ Here we modify the Story Points field for User Story.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+
+::: moniker range="azure-devops-2019"
 
 Here we modify the custom Published field for User Story. 
 
@@ -348,6 +356,8 @@ Deleting a field deletes all data associated with that field, including historic
 - [Customize a project using an inherited process](customize-process.md)    
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
+- [Work tracking, process, and project limits](object-limits.md)
+
 
 If you're working with test plans or test cases, see these articles: 
 

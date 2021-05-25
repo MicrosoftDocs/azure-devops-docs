@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Get latest Universal Package with Semantic Versioning (SemVer) wildcard
 
-It has been a long pending request on [Developer Community](https://developercommunity.visualstudio.com/idea/366403/support-version-ranges-and-wildcards-when-installi.html?childToView=606540#comment-606540) to get the latest Universal Package version using SemVer wildcard syntax. You can now get latest using both the Azure CLI and the Universal Package Azure Pipelines task. Check out the [documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/universal-packages?view=azure-devops&tabs=azuredevops#downloading-the-latest-version) to learn more. 
+It has been a long pending request on [Developer Community](https://developercommunity.visualstudio.com/idea/366403/support-version-ranges-and-wildcards-when-installi.html?childToView=606540#comment-606540) to get the latest Universal Package version using SemVer wildcard syntax. You can now get latest using both the Azure CLI and the Universal Package Azure Pipelines task. Check out the [documentation](/azure/devops/artifacts/quickstarts/universal-packages?tabs=azuredevops&view=azure-devops&preserve-view=true#downloading-the-latest-version) to learn more. 
 
 ### Azure Artifacts feeds in the Visual Studio Package Manager
 

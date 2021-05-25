@@ -44,7 +44,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Create a new pull request
 
-1. Create a new pull request into the branch where the policy is defined. For more information, see [Create a pull request](pullrequest.md).
+1. Create a new pull request into the branch where the policy is defined. For more information, see [Create a pull request](pull-requests.md#create-a-new-pull-request).
 
 2. After creating the PR, the new policy will appear in the Policies section of the PR details view. Initially, the policy will appear as not set until the external service has posted status. 
 

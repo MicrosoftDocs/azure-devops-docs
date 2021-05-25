@@ -1,6 +1,6 @@
 ---
 title: Symbol files (PDBs)
-description: Symbol files conceptual overview for Azure DevOps Services and Team Foundation Server
+description: Symbol files overview
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07

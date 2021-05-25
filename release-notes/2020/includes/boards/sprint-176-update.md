@@ -9,7 +9,7 @@ ms.topic: include
 ### Customize work item state when pull request is merged
 
 A few sprints back, we released this feature under private preview. After taking feedback and fixing bugs, it is now generally available in all organizations. Pull requests often refer to multiple work items. When you create or update a pull request, you may want to close some of them, resolve some of them, and keep the rest open. You can now use comments such as the ones shown in the figure below to accomplish that. See
- <a href="https://docs.microsoft.com/azure/devops/notifications/add-links-to-work-items?view=azure-devops#set-work-item-state-in-pull-request">documentation for more details</a>. 
+ <a href="/azure/devops/notifications/add-links-to-work-items?view=azure-devops&preserve-view=true#set-work-item-state-in-pull-request">documentation for more details</a>. 
 
 <img src='../../media/176-boards-1-1.png' width='500' alt="Customize state"> 
 

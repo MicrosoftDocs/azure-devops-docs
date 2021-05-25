@@ -1,0 +1,139 @@
+### YamlMime:FAQ
+metadata:
+  title: Azure Boards configuration and customization FAQs 
+  description: Answers to frequently asked questions about configuring and customizing Azure Boards 
+  titleSuffix: Azure Boards
+  ms.technology: devops-agile
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: '<= azure-devops'
+  ms.date: 04/12/2021
+
+title: Azure Boards configuration and customization FAQs  
+
+ 
+summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+
+  You have many options to configure and customize an Azure Boards project. If you are new to this subject, see [Azure Boards Configuration and Customization](../../../boards/configure-customize.md). Here, you'll find answers to frequently asked questions when configuring or customizing Azure Boards. For FAQs specific to using Azure Boards or working with queries, see [Azure Boards FAQs](../../../boards/faqs.yml) and [Query FAQs](../../../boards/queries/query-faqs.yml). 
+
+ 
+sections:
+  - name: General
+    questions: 
+
+      - question: Can sub hubs within Azure Boards be disabled? 
+        answer: | 
+          **No**. While you can disable an entire service&mdash; such as Azure Boards, Azure Repos, Azure Pipelines&mdash; you can't disable individual pages within a service. To learn more, see [Turn a service on or off](../set-services.md). 
+
+      - question: Are there set limits regarding configuration or customization?  
+        answer: | 
+          There are a number of limits Azure DevOps imposes such as the number of Area Paths and Iteration Paths you can define for a project, the number of processes you can define, and more. For a full list, see [Work tracking, process, and project limits](object-limits.md). 
+
+
+  - name: Configuration
+    questions: 
+
+      - question: Who has permissions to configure Azure Boards?  
+        answer: | 
+
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md). 
+          - [Area Paths](../set-area-paths.md)
+          - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+          - [Iteration Paths](../set-iteration-paths-sprints.md)
+          - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
+          - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
+            
+          To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker range="azure-devops"
+          - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
+          - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
+          - [Move work items out of a project](../../../boards/backlogs/move-change-type.md)
+          - [Permanently delete work items](../../../boards/backlogs/remove-delete-work-items.md)
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
+          - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
+          - [Permanently delete work items](../../../boards/backlogs/remove-delete-work-items.md)
+          ::: moniker-end
+            
+          In general, you need to be a member of a team or granted the [Team Administrator](../add-team-administrator.md) role to configure the following team-level objects.  
+          - [Default and selected Area Paths](../set-area-paths.md#team-area-paths)
+          - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#activate)
+          - [Define work item templates](../../../boards/backlogs/work-item-template.md) 
+
+
+  - name: Customization
+     
+    questions: 
+
+
+      - question: Who has permissions to customize Azure Boards?  
+        answer: | 
+
+          ::: moniker range=">= azure-devops-2019"
+          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, you must have the following explicit collection-level permissions set to **Allow**:  
+          - [Create process](manage-process.md)  
+          - [Delete field from organization](customize-process-field.md)  
+          - [Delete process](manage-process.md)  
+          - [Edit process](customize-process.md)   
+             
+          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          To modify an On-premises XML process, you need to be a member of the Project Collection Administrators group to manage process templates or the Project Administrators group to exercise a [**witadmin** commmand](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
+          - [Delete field](../../../reference/add-modify-field.md)
+          - [Manage process template](../../../boards/work-items/guidance/manage-process-templates.md)
+          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker-end
+
+
+      - question: Is there a way to determine who changed what within a process?  
+        answer: | 
+          ::: moniker range=">= azure-devops-2019"
+          Auditing of process changes is available for Azure DevOps Services (cloud) only. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
+          ::: moniker-end
+          A best practice is to maintain process templates under source control. In that way, changes made to a process is available through standard source control versioning.  
+
+      - question: How do I change the picklist of values? 
+        answer: | 
+          Picklist value entries are dependent on the data type. Refer to the following articles based on the field type of interest:  
+          - **Numeric or string picklist fields**: You can customize the menu values for fields such as [Priority](../../../boards/queries/planning-ranking-priorities.md), [Activity](../../../boards/queries/query-numeric.md), [Discipline](../../../boards/queries/query-numeric.md), and so on. See [Add and manage fields (Inherited process)](customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../../reference/add-modify-field.md).  
+          - **Area Path or Iteration Path**: These tree-path fields are configured for each project. To learn more, see [About area and iteration (sprint) paths](../about-areas-iterations.md).  
+          - **Person-name or Identity fields**: To add values for fields associated with user accounts such as Assigned To, [add users to a project security group or a team](../../security/add-users-team-project.md). By default, the list for these fields contain the account names for all users and groups that have been added to your organization or on-premises collection. These accounts are often synchronized with Active Directory or Azure Active Directory. See [Add AD/Azure AD users or groups to a built-in security group](../../security/add-ad-aad-built-in-security-groups.md).
+
+      - question: Can I add or rename a portfolio backlog?  
+        answer: | 
+          **Yes**. You can add up to a total of five portfolio backlogs. And, you can rename a portfolio backlog and add custom work item types to a portfolio backlog.  
+
+          To learn how, see [Customize your backlogs or boards (Inheritance process)](customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../../../reference/add-portfolio-backlogs.md).
+
+      - question: How do I add my custom work item type to a backlog?  
+        answer: | 
+          Modify your requirement backlog to include the custom work item type on the product backlog. For details, see [Customize your backlogs or boards, Edit or rename the requirement backlog](customize-process-backlogs-boards.md#edit-or-rename-the-requirement-backlog). 
+
+          > [!NOTE]  
+          > The backlog level to which you add a custom work item type determines the parent work item type(s) for the work item type.  
+
+      - question: Can caching impact rules applied to work items?  
+        answer: | 
+
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+
+
+      - question: Can I upload my own custom work item type icons for an Inherited process?  
+        answer: | 
+          **Example request**: *When I create a new work item type, I get an option to choose an icon. The icon set is limited and doesn't support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?*   
+          
+          **No**. Uploading your custom icons isn't a supported feature at this time.  
+  
+
+additionalContent: | 
+  ## Related articles
+  - [Azure Boards Configuration and Customization](../../../boards/configure-customize.md)
+  - [Azure Boards FAQs](../../../boards/faqs.yml)
+  - [Work tracking, process, and project limits](object-limits.md)   
+  - [Azure Boards extensions](../../../boards/extensions/index.md)  
+  - [About teams and Agile tools](../about-teams-and-settings.md)  
+

@@ -85,7 +85,7 @@ landingContent:
           - text: Authenticate with SSH
             url: ../repos/git/use-ssh-keys-to-authenticate.md
           - text: Search code across projects
-            url: ../project/search/code-search.md
+            url: ../project/search/functional-code-search.md
   - title: Build and deploy your apps
     linkLists:
       - linkListType: quickstart

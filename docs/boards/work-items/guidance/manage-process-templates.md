@@ -5,7 +5,7 @@ description: Upload, download, delete, or make default a process template for a 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -69,12 +69,12 @@ You can upload, download, and delete process templates for a project collection.
 3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
+	> ![On All processes there is a list of processes with names and descriptions. There is an + Upload process template option, and it is highlighted.](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-dialog.png)
+	> ![On Upload process template, one .zip file is listed, named MSEng Agile Process.zip. There is an Upload button to upload a .zip file if necessary.](media/process-template/upload-process-dialog.png)
 
 4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
@@ -103,12 +103,12 @@ You can upload, download, and delete process templates for a project collection.
 3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
+	> ![On All processes there is a list of processes with names and descriptions. There is an + Upload process template option, and it is highlighted](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-dialog.png)
+	> ![On Upload process template, one .zip file is listed, named MSEng Agile Process.zip. There is an Upload button to upload a .zip file if necessary](media/process-template/upload-process-dialog.png)
 
 4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 

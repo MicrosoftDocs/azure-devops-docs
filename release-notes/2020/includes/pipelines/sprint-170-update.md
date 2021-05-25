@@ -16,11 +16,11 @@ We are previewing a new feature called scale set agents which pairs the convenie
 - need the ability to partition Microsoft-hosted parallel jobs to individual projects or teams in your organization
 - do not want to run dedicated agents around the clock but instead want to de-provision agent machines that are not being actively utilized
 
-To use scale set agents, you will first create a VM scale set in your Azure subscription, and then create an agent pool in Azure Pipelines to point to that scale set. Azure Pipelines will automatically scale this pool based on the number of pending jobs and the number of idle machines that you wish to maintain at all times. Azure Pipelines will also install the agent for you on these virtual machines. For more information, see [scale set agents](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops). As you preview the feature, please include your feedback on the [documentation page](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops).
+To use scale set agents, you will first create a VM scale set in your Azure subscription, and then create an agent pool in Azure Pipelines to point to that scale set. Azure Pipelines will automatically scale this pool based on the number of pending jobs and the number of idle machines that you wish to maintain at all times. Azure Pipelines will also install the agent for you on these virtual machines. For more information, see [scale set agents](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true). As you preview the feature, please include your feedback on the [documentation page](/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops&preserve-view=true).
 
 ### Ubuntu 20.04 in preview for Azure Pipelines hosted pools
 
-The Ubuntu 20.04 image is now available in preview for Azure Pipelines hosted pools. To use this image, update your YAML file to include vmImage:'ubuntu-20.04' . Please note, the ubuntu-latest image label will continue to point to ubuntu-18.04 until ubuntu-20.04 comes out of preview later this year.
+The Ubuntu 20.04 image is now available in preview for Azure Pipelines hosted pools. To use this image, update your YAML file to include vmImage: 'ubuntu-20.04' . Please note, the ubuntu-latest image label will continue to point to ubuntu-18.04 until ubuntu-20.04 comes out of preview later this year.
 
 Please note, since the ubuntu 20.04 image is in preview, it currently doesn't support all of the tooling available in ubuntu-18.04 . [Learn more](https://github.com/actions/virtual-environments/tree/main/images/linux)
 

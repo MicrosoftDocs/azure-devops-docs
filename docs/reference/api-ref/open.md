@@ -31,7 +31,6 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <code>public void Open()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>C++</h4>
@@ -41,7 +40,6 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <code>void Open()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>F#</h4>
@@ -50,7 +48,6 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <code>member Open : unit -&gt; unit</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>JScript</h4>
@@ -59,7 +56,6 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <code>public void Open()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>VB</h4>
@@ -72,37 +68,6 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 </table>
 
 
-<!---
-<a data-toggle="collapse" href="#expando-agent-pools">C# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public void PartialOpen()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">C++ ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public:  
-void Open()```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">F# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```member Open : unit -> unit```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">JScript ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public function Open()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">VB ▼</a>
-<div class="collapse" id="expando-queues"> 
-```'Declaration
-Public Sub Open```
-</div>
---->
- 
 
 ## Remarks
 

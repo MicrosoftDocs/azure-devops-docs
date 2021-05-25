@@ -6,9 +6,9 @@ ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 04/16/2021
 ---
 
 # Linking, traceability, and managing dependencies  
@@ -131,12 +131,22 @@ Open a work item and click one of the Links tab. From the links control tab you 
 <a id="team-explorer-link" />
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](media/IC673344.png)  
 
+
+**Visual Studio 2017-2019/Team Explorer** 
+
+The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+* If you are connected to a GitHub or third-party Git repository. 
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 #### [Team Explorer Everywhere](#tab/tee/)
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
+
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
 ![Link control options (Team Explorer, Eclipse)](media/IC775501.png)  
 
@@ -147,6 +157,7 @@ From the Query Results view, you can link a work item to a new or existing work 
 ![Link to an existing work item](media/IC588289.png)
 
 * * *
+
 ## Parent-child work item links
 
 These features let you quickly link or change links that use the parent-child link type:
@@ -169,7 +180,7 @@ The following image shows the full set of link types used in linking test manage
 
 ![Link types used to link test objects](media/link-tracking-work-item-test-case-link-types.png)  
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases?view=azure-devops). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases). 
 
 **Test case work item form (TFS 2015)**
 
@@ -198,6 +209,20 @@ To learn more about the links control or to customize the Development links cont
 ::: moniker-end
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../reference/process/new-work-item-experience.md). 
+
+::: moniker range=">= azure-devops-2019"
+See the following articles for additional information: 
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
+- [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
+- [Set work item state in pull request](../../notifications/add-links-to-work-items.md#work-item-state-pull-request)
+- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+- [Link to work items from pull requests, commits, and comments](../../notifications/add-links-to-work-items.md#link-wit-id)
+- [Link work items to a build ](../backlogs/add-link.md#link-builds)
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
@@ -311,6 +336,7 @@ Once you've formed a link relationship, you can't edit the link type of that rel
 For additional information, see these topics: 
 
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Share plans, add attachments](share-plans.md)  
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)

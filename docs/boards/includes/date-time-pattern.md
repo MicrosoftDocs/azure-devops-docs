@@ -10,7 +10,7 @@ ms.date: 08/13/2020
 
 ### Date and time pattern  
  
-The date and time pattern you enter for **DateTime** fields should match that which you select through your profile. To view or change your selection, see [Set user preferences, Time and Locale](../../organizations/settings/set-your-preferences.md).
+The date and time pattern you enter for **DateTime** fields should match that which you select through your profile. To view or change your selection, see [Set user preferences, Time and Locale](/azure/devops/organizations/settings/set-your-preferences).
 
 ::: moniker range="azure-devops"  
 

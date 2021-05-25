@@ -114,7 +114,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
-- [REST API, Work Item Types](/rest/api/azure/devops/processdefinitions/work%20item%20types)  
+- [REST API, Work Item Types](/rest/api/azure/devops/wit/work%20item%20types)  
 
 
 ### Will this impact Visual Studio work item forms?  

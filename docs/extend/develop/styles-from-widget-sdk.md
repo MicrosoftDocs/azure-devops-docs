@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Basic styles for widgets | Extensions for Azure DevOp
-description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps and Team Foundation Server (TFS).
+title: Basic styles for widgets | Extensions for Azure DevOps
+description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 We recommend you use the basic styles provided via the Widget SDK. Using these styles helps you quickly and easily create a widget that's consistent with the rest of the widgets on the dashboard.
-To use these styles, add the below line inside the `VSS.require` block in the javascript code for your widget.
+To use these styles, add the below line inside the `VSS.require` block in the JavaScript code for your widget.
 
 ```javascript
 	WidgetHelpers.IncludeWidgetStyles();
@@ -26,7 +26,7 @@ To use these styles, add the below line inside the `VSS.require` block in the ja
 This pulls a stylesheet by the name sdk-widget.css and include it in the iframe for your widget. It includes styles for font-family, font-size, margin and paddings for your widget. 
 It also includes styles for headings (h1, h2, h3 etc.), links, and more.
 
-Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the javascript code for your widget configuration.
+Similarly, to use common styles in the widget configuration, include the line below inside the `VSS.require` block in the JavaScript code for your widget configuration.
 
 ```javascript
 	WidgetHelpers.IncludeWidgetConfigurationStyles();
@@ -222,7 +222,7 @@ The example below uses each of the form elements listed in the table.
 ### Display validation errors below a form element
 
 We recommend providing validation errors below the relevant form elements. 
-In order to display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
+To display these messages in a manner consistent with 1st party widgets, add the following code snippet under each form element for which you want to show the error message.
 
 ```html
 <span class="validation-error">
@@ -231,7 +231,7 @@ In order to display these messages in a manner consistent with 1st party widgets
 </span>
 ```
 
-The above has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
+The previous code snippet has the visibility hidden by default. Whenever you want to display an error message, find the corresponding "validation-error-text", add text to it and set `visibility:visible` on its parent.
 
 Example:
 There is a simple text box where the user needs to type in a string. You need to show an error message if the text box is empty.
@@ -255,7 +255,7 @@ The html for this would be:
 </div>
 ```
 
-And the javascript code behind this would be:
+And the JavaScript code behind this would be:
 
 ```javascript
 var $singleLineInput = $(".single-line-text-input input");

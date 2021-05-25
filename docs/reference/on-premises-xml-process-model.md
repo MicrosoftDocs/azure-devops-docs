@@ -24,7 +24,7 @@ You customize your work tracking experience to support your business and reporti
 
 ::: moniker range=">= azure-devops-2019"  
 
-For Azure DevOps Server 2019 and later versions, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](./customize-work.md?view=azure-devops-2019#choose-process-model).  
+For Azure DevOps Server 2019 and later versions, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](./customize-work.md?view=azure-devops-2019&preserve-view=true#choose-process-model).  
 
 ::: moniker-end
 

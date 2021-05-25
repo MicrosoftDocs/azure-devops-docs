@@ -4,8 +4,6 @@ description: Execute a bash script when building code in Azure Pipelines and Tea
 ms.topic: reference
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---

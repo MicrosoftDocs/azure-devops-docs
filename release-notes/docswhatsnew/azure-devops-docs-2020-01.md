@@ -50,7 +50,6 @@ Welcome to what's new in Azure DevOps docs for January 2020. This article lists 
 - [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
   - Updating FAQ so that relevant content shows up
   - Combining get started sections for multiple languages
-- [Create your first pipeline from the CLI](/azure/devops/pipelines/create-first-pipeline-cli) - Document CLI commands for managing pipelines
 - [Use /azure/devops/CD to deploy a Python web app to Azure App Service on Linux](/azure/devops/pipelines/ecosystems/python-webapp) - Updated Python CICD doc to address customer feedback
 - [Service connections](/azure/devops/pipelines/library/service-endpoints)
 - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs) - Docs for VM support in Environments & Rolling deployments

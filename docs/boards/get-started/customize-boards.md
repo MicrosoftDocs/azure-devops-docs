@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Customize your issues board to show fields, add columns, and change card color
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -244,11 +243,11 @@ After you close the settings dialog, refresh (F5) your board to view your change
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
 > [!div class="mx-imgBorder"]
-> ![Customizations made in this article.](media/customize-boards/boards-customized-view.png) 
+> ![The priority 1 items are colored, the others are not.](media/customize-boards/boards-customized-view.png) 
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
-> ![Customizations made in this article.](media/customize-boards/boards-customized-view-s155.png) 
+> ![The priority 1 items are colored, the others are not](media/customize-boards/boards-customized-view-s155.png) 
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]

@@ -6,11 +6,11 @@ description: Understand how to structure your project to support collaboration o
 ms.technology: devops-new-user 
 ms.assetid:  
 ms.author: chcomley
-author: chcomley
-ms.date: 10/02/2020
+author: chcomley 
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
----
+monikerRange: '<= azure-devops'
+ms.date: 05/04/2021 
+--- 
 
 # About projects and scaling your organization
 
@@ -20,21 +20,25 @@ A project provides a repository for source code and a place for users to plan, t
 
 When you create your project, a team of the same name is automatically created. This is sufficient for small teams. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and projects. These additions can be created within the single account or collection.
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<td width="40%">
-
-<strong>Single project and team defined within an organization or collection</strong><br/><img src="media/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
-
-<td width="60%">
-
-<strong>Multiple projects and teams defined within organization or collection</strong>
-<img src="media/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
-</td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="2":::
+      **Single project and team defined within an<br/>organization or collection**
+   :::column-end:::
+   :::column span="2":::
+      **Multiple projects and teams defined within an<br/>organization or collection**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      :::image type="content" source="media/about-projects/project-concept.png" alt-text="Conceptual image, Single collection-project-team.":::
+   :::column-end:::
+   :::column span="2":::
+      :::image type="content" source="media/about-projects/multiple-projects-concept.png" alt-text="Conceptual image, Scaled collection-project-team.":::
+   :::column-end:::
+:::row-end:::
+---
 
 The collection-project-team structure provides teams a high level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
 
@@ -72,24 +76,26 @@ You can scale your on-premises Azure DevOps deployment in the following ways:
 
 Azure DevOps Services and Azure DevOps Server are enterprise-ready platforms. These platforms support teams of any size, from tens to thousands. Azure DevOps Services, our cloud service, provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
-## How to view projects defined for your organization or collection
+## How to view projects 
 
 You can view the projects defined for your organization by opening the **Projects** page.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
+1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
 
-2. From there, you can choose a project from the set of projects listed.
+2. From there, you can choose a project from the set of projects listed. 
+
+To create or list projects, see [Create a project](create-project.md)  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
+1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of open Projects button, horizontal nav](../../media/settings/open-project-hub-horz.png)
@@ -109,6 +115,54 @@ You can view the projects defined for your organization by opening the **Project
     > ![Screenshot of open Projects, TFS 2013 - 2015](media/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+<a id="project-scoped-user-group" /> 
+
+## Limit user visibility for projects using the Project-Scoped Users group 
+
+By default, users added to an organization can view all organization and project information and settings.  
+
+The **Limit user visibility for projects** preview feature for the organization limits user access in two ways:
+- Restricting views that display list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**.
+- Limiting the set of people or groups that appear through people-picker search selections and the ability to @mention people. 
+
+> [!IMPORTANT]
+> The limited visibility features described in this section apply only to interactions through the web portal. With the REST APIs or **azure devops** CLI commands, project members can access the restricted data. 
+
+### Limit access to Organization settings 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Limit user visibility for projects** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+
+To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+[!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
+
+ 
+### Limit visibility within people pickers
+
+For organizations that manage users and groups using Azure Active Directory (Azure AD), people pickers provide support for searching all users and groups added to Azure AD, not just those users and groups added to your project. people pickers support the following Azure DevOps functions: 
+- Selection of a user identity from a work tracking identity field such as **Assigned To**  
+- Selection of a user or group using **@mention** in a work item discussion or rich-text field, a pull request discussion, commit comments, or changeset or shelveset comments
+- Selection of a user or group using **@mention** from a wiki page 
+
+As shown in the following image, you simply start typing into a people picker box until you find a match to a user name or security group.
+ 
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of people picker](../../notifications/media/at-mention/identity-selector.png)  
+
+> [!WARNING]   
+> When the **Limit user visibility for projects** preview feature is enabled for the organization, project-scoped users are unable to search for users who were added to the organization through Azure Active Directory group membership, rather than through an explicit user invitation. This is an unexpected behavior and a resolution is being worked on. To self-resolve this issue, disable the **Limit user visibility for projects** preview feature for the organization.  
+
+
+Users and groups who are added to the **Project-Scoped Users** group can only see and select users and groups in the project they are connected to from a people picker. To scope people pickers for all project members, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+
+### Historical data remains visible 
+
+Identities that have been added to a comment, discussion, or assignment continue to be visible to all project members. For example, work items that were assigned to a user who has since left a project, the user’s name on that work item remains visible to everyone in the project, even to users with the new restriction. The same is true for @mentions in PRs, comments, discussions, and more.  
 
 ::: moniker-end
 
@@ -199,7 +253,7 @@ You can configure and customize most services and applications to support your b
 
 As your organization grows, add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, see the following articles.  
 
-- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scale Agile to large teams](/devops/plan/scaling-agile)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md)
 - Manage a [portfolio of backlogs](../../boards/plans/portfolio-management.md) and gain insight into each team's progress and the progress of all programs.  
 - Use [Delivery plans](../../boards/plans/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
@@ -246,13 +300,13 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 
 ### Q: Can I move or transfer a project to another organization or collection? 
 
-**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can manually copy resources and leave some behind, or use a third-party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/), that copies data using the REST APIs. 
+**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can manually copy resources and leave some behind, or use a third-party tool, such as [OpsHub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/), that copies data using the REST APIs. 
 ### Q: What programmatic tools support projects?
 
 **A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
 
 ::: moniker range=">= azure-devops-2020"
-Also, you can use the [**az devops projects** commands](/cli/azure/ext/azure-devops/devops/project).  
+Also, you can use the [**az devops project** commands](/cli/azure/devops/project).  
 ::: moniker-end
 
 

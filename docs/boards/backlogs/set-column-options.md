@@ -6,9 +6,9 @@ ms.technology: devops-agile
 ms.assetid: 823CC1FD-74A9-4123-92E1-506A505DEC8D
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 7/09/2020
+ms.date: 04/21/2021
 ---
 
 # Change column options 
@@ -115,7 +115,7 @@ Specifically, you can perform the following actions from the following list view
 
 
 > [!TIP]    
-> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
+> Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose from the **Sorting** tab of the Column options dialog. While you may be able to add a field to sort on, not all fields are supported. For example, selection of the **Parent**, **History**, **Description**, or other rich-text field will result in the display of an error message as you can't sort on these fields. 
 
 
 ::: moniker range="azure-devops"
@@ -248,6 +248,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 ::: moniker range=">= azure-devops-2020"
 
 - [Display rollup progress or totals](display-rollup.md)
+- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [View, run, or email a work item query](../queries/view-run-query.md)
@@ -256,7 +257,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-
+- [Interactively filter backlogs, boards, queries, and plans](filter-backlogs-boards-plans.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [Create managed queries](../queries/using-queries.md)

@@ -48,7 +48,7 @@ Connect your favorite development environment to Azure Repos to access your repo
 
 Review code with your team and make sure that changes build and pass tests before it's merged.
 
-- [Create a pull request](../git/pull-requests-overview.md)
+- [Create a pull request](../git/pull-requests.md)
 - [Link work items to pull requests](../git/pull-requests.md#link-work-items)
 - [Set up branch policies](../git/branch-policies.md#build-validation)
 - [Squash merge pull requests](../git/merging-with-squash.md)
@@ -84,7 +84,7 @@ Pull request statuses integrate into the PR workflow. They allow external servic
 
 Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository and then pushed to a new, empty repository.
 
-After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. After you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. After you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests.md) to push the changes back to the original repository.
 
 - [Learn more about forks](../git/forks.md)
 

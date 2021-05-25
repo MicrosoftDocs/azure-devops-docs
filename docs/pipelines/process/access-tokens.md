@@ -5,7 +5,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 09/24/2020
+ms.date: 03/24/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -83,7 +83,7 @@ Enable one or more of the following settings. Enabling these settings are recomm
 
 ::: moniker range="<= azure-devops-2019"
 
-If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps server 2019.
+If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps Server 2019.
 
 YAML pipelines are not available in TFS.
 
@@ -170,7 +170,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 
 In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
 
-Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step or a `uses` statement in the pipeline job that uses that repository.
 
 For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
@@ -196,7 +196,7 @@ The **project-scoped identity** name has the following format:
 - `{Project Name} Build Service ({Org Name})`
 - For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
 
-By default, the collection-scoped identity is used, unless configured otherwise as described in the previous [Job athorization scope](#job-authorization-scope) section.
+By default, the collection-scoped identity is used, unless configured otherwise as described in the previous [Job authorization scope](#job-authorization-scope) section.
 
 ## Manage build service account permissions
 

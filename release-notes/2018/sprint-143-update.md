@@ -48,7 +48,7 @@ Azure Artifacts:
 
 ### REST API version 5.0
 
-Every API request should include an api-version. However, if you are making a REST request to a previously released endpoint without an api-version, the default version of that request will switch from 4.1 to 5.0 with this deployment. For more information on REST and api-versions, please see [Azure DevOps Services REST API Reference](https://aka.ms/azure-devops-rest-50).
+Every API request should include an api-version. However, if you are making a REST request to a previously released endpoint without an api-version, the default version of that request will switch from 4.1 to 5.0 with this deployment. For more information on REST and api-versions, please see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?viewFallbackFrom=azure-devops-rest-5.0).
 
 ## Azure Boards
 
@@ -155,14 +155,14 @@ We are adding support of Infrastructure as Code (IaC) to our [Azure DevOps proje
 
 ### Exclude files in artifact uploads
 
-Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](https://docs.microsoft.com/azure/devops/artifacts/reference/artifactignore?view=azure-devops) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
+Previously, in order to exclude files from published artifacts, you would have to copy the files to a staging directory, remove the files to be excluded, and then upload. Now, both Universal Packages and Pipeline Artifacts will look for a file called [.artifactignore](/azure/devops/artifacts/reference/artifactignore?view=azure-devops&preserve-view=true) in the directory being uploaded to and automatically exclude those files, removing the need for a staging directory.
 
 ### Provenance information on packages
 
-With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](https://docs.microsoft.com/azure/devops/pipelines/artifacts/npm?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-), [NuGet](https://docs.microsoft.com/azure/devops/pipelines/artifacts/nuget?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) and .NET Core, [Twine Authenticate](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pypi?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml
-) (for Python), and [Universal Packages](https://docs.microsoft.com/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
+With this update, we've made it a bit easier to understand the provenance of your packages, including who or what published them and what source code commit they came from. This information is populated automatically for all packages published using the [npm](/azure/devops/pipelines/artifacts/npm?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+), [NuGet](/azure/devops/pipelines/artifacts/nuget?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) and .NET Core, [Twine Authenticate](/azure/devops/pipelines/artifacts/pypi?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true
+) (for Python), and [Universal Packages](/azure/devops/pipelines/artifacts/universal-packages?tabs=yaml&toc=%2fazure%2fdevops%2fartifacts%2ftoc.json&view=azure-devops&preserve-view=true) tasks.
 
 > [!div class="mx-imgBorder"]
 > ![Provenance information on packages.](media/143_10.png)

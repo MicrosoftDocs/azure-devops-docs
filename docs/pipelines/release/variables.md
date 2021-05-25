@@ -5,7 +5,7 @@ author: shashban
 ms.author: shashban
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
-ms.custom: seodec18, contentperfq4
+ms.custom: seodec18, contperf-fy20q4
 ms.date: 07/15/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -78,6 +78,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
 | Release.DefinitionName | The name of the release pipeline to which the current release belongs.<br/><br />Example: `fabrikam-cd` |
 | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `Mateo Escobedo` |
+| Release.Deployment.RequestedForEmail | The email address of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `mateo@fabrikam.com` |
 | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.DeploymentID | The ID of the deployment. Unique per job.<br/><br />Example: `254` |
 | Release.DeployPhaseID | The ID of the phase where deployment is running.<br/><br />Example: `127` |
@@ -95,7 +96,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.RequestedFor | The display name of identity that triggered the release.<br/><br />Example: `Mateo Escobedo` |
 | Release.RequestedForEmail | The email address of identity that triggered the release.<br/><br />Example: `mateo@fabrikam.com` |
 | Release.RequestedForId | The ID of identity that triggered the release.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
-| Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
+| Release.SkipArtifactsDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent.<br/><br />Example: `FALSE` |
 | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually.<br/><br />Example: `fabrikam\_app` |
 
 ## Default variables - Release stage
@@ -275,10 +276,5 @@ if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
 [!INCLUDE [variable-collision](../includes/variable-collision.md)]
-
-You can use custom variables to prompt for values during the execution of a release.
-For more information, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
-
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-security
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 04/15/2021
 ---
 
 <!--- ability-to-find-user-once-added)]  --> 

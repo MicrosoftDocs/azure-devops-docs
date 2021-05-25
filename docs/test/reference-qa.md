@@ -53,7 +53,7 @@ every test case that is returned by the query that you define.
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, use [this API](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
+**A:** Yes. For test plans, use [this API](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1&preserve-view=true). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -64,6 +64,9 @@ that you want in the report. Then email or print this report for review.
 
 Change the test case fields in the report by adding or removing columns from 
 the list view of the test suite.
+
+> [!IMPORTANT]
+> You cannot export more than 75 Test Suites in a single operation. The email supports up to 1MB of data.
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
@@ -309,6 +312,9 @@ Any bug filed during the run will automatically be associated
 with the selected build, and the test outcome will be published
 against that build.
 
+> [!NOTE]
+> The selected build must be from the project in which the tests are defined.
+
 ### Q: Can I fix my test steps while I'm running a test?
 
 **A:** Yes, if you have Azure Test Plans for Azure DevOps. 
@@ -502,30 +508,30 @@ You don't have to provide values in the shared steps definition. However, you ca
 ### Q: Which web browsers does the extension support?
 
 **A:** The Test &amp; Feedback extension is currently available for
-[Google Chrome](https://www.google.com/chrome/)
+[Google Chrome](https://www.google.com/chrome/),
+[Microsoft Edge (Edge Chromium Only)](https://www.microsoft.com/edge/)
 and [Mozilla Firefox version 50.0 and higher](https://www.mozilla.org/).
-Edge support is planned. 
 
 Some browser versions do not currently support all the features of the Test &amp; Feedback extension.
 
-| Feature | Chrome | Firefox |
-| --- | --- | --- |
-| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** |
-| Capture screen recordings | &nbsp; **Yes** | &nbsp; **No** |
-| Capture page load data | &nbsp; **Yes** | &nbsp; **No** |
-| Capture user actions log | &nbsp; **Yes** |&nbsp; **No** |
-| Capture system information | &nbsp; **Yes** |&nbsp; **No** |
-| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** |
-| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
-| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end traceability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
-| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** |
-| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** |
-| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** |
-| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **No** |
-| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
+| Feature | Chrome | Edge | Firefox |
+| --- | --- | --- | --- |
+| Capture screenshots with inline annotations | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture notes | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture screen recordings | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture page load data | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Capture user actions log | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Capture system information | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Create bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for work items | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
+| Test app on devices using cloud providers such as Perfecto | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **No** |
+| Manage feedback requests | &nbsp; **Yes** | &nbsp; **Yes** | &nbsp; **Yes** |
 
 <p />
 For more details, see 

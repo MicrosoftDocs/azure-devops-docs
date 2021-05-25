@@ -4,7 +4,7 @@ description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 07/07/2020
+ms.date: 03/26/2021
 monikerRange: azure-devops
 ---
 
@@ -30,7 +30,7 @@ You create a new pipeline by first selecting **Bitbucket Cloud** for repository 
 
 ---
 
-Azure Pipelines must be granted access to your repositories to trigger their builds, and fetch their code during builds.
+Azure Pipelines must be granted access to your repositories to fetch the code during builds. In addition, the user setting up the pipeline must have admin access to Bitbucket, since that identity is used to register a webhook in Bitbucket.
 
 There are 2 authentication types for granting Azure Pipelines access to your Bitbucket Cloud repositories while creating a pipeline.
 
@@ -44,6 +44,9 @@ There are 2 authentication types for granting Azure Pipelines access to your Bit
 OAuth is the simplest authentication type to get started with for repositories in your Bitbucket account. Bitbucket status updates will be performed on behalf of your personal Bitbucket identity. For pipelines to keep working, your repository access must remain active.
 
 To use OAuth, login to Bitbucket when prompted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
+
+> [!NOTE]
+> The maximum number of BitBucket repositories that the Azure DevOps Services user interface can load is 2,000. 
 
 ### Password authentication
 
@@ -157,13 +160,19 @@ pr:
     - releases/*
   paths:
     include:
-    - docs/*
+    - docs
     exclude:
     - docs/README.md
 ```
 
-> [!NOTE]
-> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+> **Tips:**
+>  * Wild cards are not supported with path filters.
+>  * Paths are always specified relative to the root of the repository.
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
+>  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+>  * You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ### Multiple PR updates
 

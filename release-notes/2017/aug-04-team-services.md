@@ -160,7 +160,7 @@ In the dialog, select the service that’s posting the status from the list and 
 
 Once the policy is active, the status will be shown in the __Policies__ section, under __Required__ or __Optional__ as appropriate, and the PR completion will be enforced as appropriate. 
 
-To learn more about the status API, and to try it out for yourself, check out the [documentation](https://go.microsoft.com/fwlink/?linkid=854107) and [samples](https://go.microsoft.com/fwlink/?linkid=854108).
+To learn more about the status API, and to try it out for yourself, check out the [documentation](/rest/api/azure/devops/git/pull%20request%20statuses) and [samples](/azure/devops/repos/git/create-pr-status-server).
 
 ## Build
 ### Let contributed build sections control section visibility

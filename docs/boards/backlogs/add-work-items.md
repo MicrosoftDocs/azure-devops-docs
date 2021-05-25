@@ -2,7 +2,7 @@
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.author: kaelli
@@ -211,7 +211,7 @@ There is no way to use Visual Studio 2019 to update a work item at this time.
 
 ### Update a work item
 
-You can make updates to your work items with the [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item update --id
@@ -270,7 +270,7 @@ az boards work-item update --id 864  --discussion  "This work item is about 50% 
 
 ### Show details for a work item
 
-You can show the details for a work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az boards work-item show --id

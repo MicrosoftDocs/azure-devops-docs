@@ -130,7 +130,7 @@ steps:
   inputs:
     command: stop
     container: builder
-# any task beyond this point would not be able to target the buider container
+# any task beyond this point would not be able to target the builder container
 # because it's been stopped
 ```
 

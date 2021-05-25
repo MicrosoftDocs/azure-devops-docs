@@ -1,32 +1,58 @@
 - name: About managing organizations 
-  href: organization-management.md 
+  href: organization-management.md
+  displayName:
 - name: Plan your organizational structure
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
 - name: Create your organization 
-  href: create-organization.md 
+  href: create-organization.md
+  displayName: new, project
+- name: Look up organization owner
+  href:  ../security/lookup-organization-owner-admin.md
+  displayName: access, permissions, owner, project collection administrator, valid
 - name: Add and manage banners 
-  href:  ../settings/manage-banners.md 
+  href:  ../settings/manage-banners.md
+  displayName: add, update, remove, information, organization
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
-    href: add-privacy-policy-url.md 
+    href: add-privacy-policy-url.md
+    displayName: GDPR, organization, public project, external guest, data, protection
   - name: Change time zone
     href: change-time-zone.md
+    displayName: update, organization, user profile, settings
   - name: Change organization region
     href: change-organization-location.md
+    displayName: update, reassign, region, geography, location, Virtual Support Agent
   - name: Change organization Owner
     href: change-organization-ownership.md
-- name: Manage your organization 
+    displayName: update, reassign, Project Collection Administrator, owner
+- name: Manage your organization
   items:
+  - name:  Manage preview features
+    href: ../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: set, enable, user, organization, features, pipelines, boards, repos, artifacts, test plans, dashboard, analytics, social, project
   - name: Rename organization
-    href: rename-organization.md 
+    href: rename-organization.md
+    displayName: owner, collection, administrator, new, name, Basic, URL, switch
   - name: Delete organization
     href: delete-your-organization.md
+    displayName: remove, billing, subscription, unlink, project collection administrator
   - name: Recover organization
     href: recover-your-organization.md
+    displayName: owner, restore, account
   - name: Restrict organization creation
     href: azure-ad-tenant-policy-restrict-org-creation.md
+    displayName: settings, Azure Active Directory, role, administrator, prevent
   - name: Resolve orphaned organization
     href: resolve-orphaned-organization.md
-
+    displayName: find, owner, collection, administrator, Azure Active Directory, claim ownership, 
+- name: Services status
+  href: ../../user-guide/service-status-info.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  displayName: service, health, portal, geography, region, core, other, event, log, availability, RSS, REST APIs
+- name: FAQs
+  items:
+  - name: Create and configure an organization
+    href: faq-configure-customize-organization.yml
+    displayName: create, configure, delete, restore, owner, browser, region, name, location, features, project, data protection, subscription
 

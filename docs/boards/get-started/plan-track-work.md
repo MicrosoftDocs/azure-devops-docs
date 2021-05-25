@@ -4,7 +4,6 @@ titleSuffix: Azure Boards
 description: Plan and track work in your new team project on Azure Boards using the Agile, Basic, Scrum, or CMMI process
 ms.custom: boards-get-started
 ms.technology: devops-agile
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -84,10 +83,36 @@ Here we show how to add user stories and child tasks from the web portal and add
 
 ## Prerequisites
 
+::: moniker range="azure-devops"
+
+- After you connect to a project, you can add work items. If you don't have a project yet, [create one in Azure DevOps](sign-up-invite-teammates.md). 
+- To add work items to a board, and use all other board features, you must be granted **Basic** access and have been added as a member of the Contributors or Project Administrators group. 
+- If you have been granted **Stakeholder** access for a private project and have been added as a member of the Contributors or Project Administrators group, you can view boards, open and modify work items, and add child tasks to a checklist. However, you can't reorder or reparent a backlog item using drag-and-drop, nor update a field on a card. 
+- If you have been granted **Stakeholder** access for a public project, and have been added as a member of the Contributors or Project Administrators group, you have full access to all Boards features. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+- After you connect to a project, you can add work items. If you don't have a project yet, [create one in Azure DevOps](sign-up-invite-teammates.md). 
+- To add work items to a board, and use all other board features, you must be granted **Basic** access and have been added as a member of the Contributors or Project Administrators group. 
+- If you have been granted **Stakeholder** access and have been added as a member of the Contributors or Project Administrators group, you can view boards, open and modify work items, and add child tasks to a checklist. However, you can't reorder or reparent a backlog item using drag-and-drop, nor update a field on a card.
+
+
+> [!NOTE]   
+> The ability to drag-and-drop cards to different columns  requires installation of Azure DevOps Server 2020.1 update. To learn more, see [Azure DevOps Server 2020 Update 1 RC1 Release Notes, Boards](/azure/devops/server/release-notes/azuredevops2020u1#stakeholders-can-move-work-items-across-board-columns).  
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
 - After you connect to a project, you can add work items. If you don't have a project yet, [create one in Azure DevOps](sign-up-invite-teammates.md). 
 - To add work items to a board, and use all other board features, you must be granted **Basic** access and have been added as a member of the Contributors or Project Administrators group. 
 - If you have been granted **Stakeholder** access for a private project and have been added as a member of the Contributors or Project Administrators group, you can view boards, open and modify work items, and add child tasks to a checklist. However, you can't update the status of a backlog item or reorder or reparent a backlog item using drag-and-drop, nor update a field on a card.
 - If you have been granted **Stakeholder** access for a public project, and have been added as a member of the Contributors or Project Administrators group, you have full access to all Boards features. 
+
+
+::: moniker-end
 
 For details, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
 
@@ -570,11 +595,6 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 [!INCLUDE [temp](../includes/discussion-tip.md)]
 
-## Q & A 
-
-[!INCLUDE [temp](../includes/faq-milestone-marker.md)] 
-
-[!INCLUDE [temp](../includes/faq-picklists.md)] 
 
 
 ## Try this next  
@@ -585,6 +605,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 ## Related articles
 
+- [Azure Boards FAQs](../faqs.yml) 
 - [Index to field descriptions](../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
 - [Add tags to issues or tasks](../queries/add-tags-to-work-items.md)   
 

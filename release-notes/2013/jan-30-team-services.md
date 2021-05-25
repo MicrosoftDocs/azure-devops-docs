@@ -61,7 +61,7 @@ And, we are working on an integrated Git experience in Visual Studio. Note, it�
 
 Our approach to Git will be to fully integrate it into our devops experience – you can link commits to work items, do automated builds of Git repos, get a fully integrated VS experience and access it from any platform. We think adding a Git option will help TFS be applicable to even more work styles.
 
-You can read more about how to get started with the new Git support in our learn content [here](/azure/devops/git/share-your-code-in-git-vs-2017?view=azure-devops).
+You can read more about how to get started with the new Git support in our learn content [here](/azure/devops/git/share-your-code-in-git-vs-2017?view=azure-devops&preserve-view=true).
 
 What we released today is just the beginning. The Git support today is just scratching the surface of what we plan to provide. There’s enough there to get going and use it in real projects. Expect that in every sprint over the next several months it will continue to advance.
 

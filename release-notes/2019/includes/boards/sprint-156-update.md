@@ -49,7 +49,7 @@ You can add reactions to any comment, and there are two ways to add your reactio
 
 ### Pin Azure Boards reports to the dashboard
 
-In the Sprint 155 Update, we included [updated versions of the CFD and Velocity reports](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-155-update?branch=releasenotes%2Fsprint-156-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports). These reports are available under the Analytics tab of Boards and Backlogs. Now you can pin the reports directly to your Dashboard. To pin the reports, hover over the report, select the ellipsis "..." menu, and **Copy to Dashboard**.
+In the Sprint 155 Update, we included [updated versions of the CFD and Velocity reports](../../sprint-155-update.md?branch=releasenotes%2fsprint-156-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports). These reports are available under the Analytics tab of Boards and Backlogs. Now you can pin the reports directly to your Dashboard. To pin the reports, hover over the report, select the ellipsis "..." menu, and **Copy to Dashboard**.
 
 > [!div class="mx-imgBorder"]
 > ![Pin Azure Boards reports to the dashboard.](../../media/156_13.png)

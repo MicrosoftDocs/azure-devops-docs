@@ -3,13 +3,13 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.date: 04/23/2020
+ms.date: 04/07/2021
 monikerRange: 'azure-devops'
 ---
 
 # Key concepts for new Azure Pipelines users
 
-Learn about the key concepts and components that are used in Azure Pipelines. Understanding the basic terms and parts of Azure Pipelines helps you further explore how it can help you deliver better code more efficiently and reliably.
+Learn about the key concepts and components that make up a pipeline. Understanding the basic terms and parts of a pipeline can help you deliver better code more efficiently and reliably.
 
 
 **Key concepts overview**
@@ -29,13 +29,13 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 
 ## Agent
 
-When your build or deployment runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time.
+When your build or deployment runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time. For example, your job could run on a Microsoft-hosted Ubuntu agent. 
 
-For more in-depth information about the different types of agents and how to use them, see [Build and release agents](../agents/agents.md).
+For more in-depth information about the different types of agents and how to use them, see [Azure Pipelines Agents](../agents/agents.md).
 
 ## Approvals
 
-[Approvals](../process/approvals.md) define a set of validations required before a deployment can be performed. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
+[Approvals](../process/approvals.md) define a set of validations required before a deployment runs. Manual approval is a common check performed to control deployments to production environments. When checks are configured on an environment, pipelines will stop before starting a stage that deploys to the environment until all the checks are completed successfully. 
 
 ## Artifact
 
@@ -43,7 +43,7 @@ An artifact is a collection of files or packages published by a run. Artifacts a
 
 ## Continuous delivery
 
-Continuous delivery &#40;CD&#41; is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process. This process ensures that  errors are caught often and early.
+Continuous delivery &#40;CD&#41; is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process. This process ensures that  errors are caught often and early.
 
 ## Continuous integration
 
@@ -51,23 +51,23 @@ Continuous integration &#40;CI&#41; is the practice used by development teams to
 
 ## Deployment group
 
-A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an agent pool. You can set the deployment targets in a pipeline for a job using a deployment group. Learn more about provisioning agents for [deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md). 
+A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an [agent pool](../agents/pools-queues.md). You can set the deployment targets in a pipeline for a job using a deployment group. Learn more about provisioning agents for [deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md). 
 
 ## Environment
 
-An environment is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
+An [environment](../process/environments.md) is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
 
 ## Job
 
-A stage contains one or more jobs. Each job runs on an agent. A job represents an execution boundary of a set of steps. All of the steps run together on the same agent. For example, you might build two configurations - x86 and x64. In this case, you have one build stage and two jobs.
+A stage contains one or more [jobs](../process/phases.md). Each job runs on an agent. A job represents an execution boundary of a set of steps. All of the steps run together on the same agent. Jobs are most useful when you want to run a series of steps in different environments. For example, you might want to build two configurations - x86 and x64. In this case, you have one stage and two jobs. One job would be for x86 and the other job would be for x64.
 
 ## Pipeline
 
-A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run.
+A pipeline defines the continuous integration and deployment process for your app. It's made up of one or more stages. It can be thought of as a workflow that defines how your test, build, and deployment steps are run. 
 
 ## Run
 
-A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then hand off the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
+A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then send the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
 
 ## Script
 
@@ -75,7 +75,11 @@ A script runs code as a step in your pipeline using command line, PowerShell, or
 
 ## Stage
 
-A stage is a logical boundary in the pipeline. It can be used to mark separation of concerns (e.g., Build, QA, and production). Each stage contains one or more jobs.
+A [stage](../process/stages.md) is a logical boundary in the pipeline. It can be used to mark separation of concerns (for example, Build, QA, and production). Each stage contains one or more jobs. When you define multiple stages in a pipeline, by default, they run one after the other. You can specify the conditions for when a stage runs. 
+When you are thinking about whether you need a stage, ask yourself:
+- Do separate groups manage different parts of this pipeline? For example, you could have a test manager that manages the jobs that relate to testing and a different manager that manages jobs related to production deployment. In this case, it makes sense to have separate stages for testing and production. 
+- Is there a set of [approvals](../process/approvals.md) that are connected to a specific job or set of jobs? If so, you can use stages to break your jobs into logical groups that require approvals. 
+- Are there jobs that need to run a long time? If you have part of your pipeline that will have an extended run time, it makes sense to divide them into their own stage. 
 
 ## Step
 

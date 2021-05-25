@@ -53,7 +53,7 @@ tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[passwor
 </table>
 
 ## Remarks
-The **delete** command records a pending change of type "delete" in your workspace for the items that you have specified. When you commit a pending change of type "delete" to the Team Foundation version control server by using the** checkin** command, Team Foundation removes the item from the Team Foundation version control server but does not delete it permanently. You can locate deleted items in the Team Foundation version control server by using the Dir Command and you can restore deleted items using the [Undelete Command](undelete-command.md).
+The **delete** command records a pending change of type "delete" in your workspace for the items that you have specified. When you commit a pending change of type "delete" to the Team Foundation version control server by using the **checkin** command, Team Foundation removes the item from the Team Foundation version control server but does not delete it permanently. You can locate deleted items in the Team Foundation version control server by using the Dir Command and you can restore deleted items using the [Undelete Command](undelete-command.md).
 
 If you have deleted an item in your workspace but have not checked in the change, you can restore the item to your workspace and remove the deletion from your list of pending changes using the [Undo Command](undo-command.md).
 

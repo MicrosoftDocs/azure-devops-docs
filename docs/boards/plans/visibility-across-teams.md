@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 05/04/2021
 ---
 
 
@@ -27,6 +27,7 @@ You have three main ways to track progress across several teams.
 For an overview of all team tools, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
 <a id="plans">  </a>
+
 ## Delivery Plans support a view of team backlogs on a calendar timeline
 
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
@@ -34,11 +35,24 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 > [!NOTE]
 > Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Azure Boards and TFS 2017.2 and later versions. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
 
+
+::: moniker range="azure-devops"  
+
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
-<img src="media/plans_move1.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+:::image type="content" source="media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+::: moniker-end 
 
-<a id="portfolio-backlogs">  </a>
+::: moniker range="< azure-devops"  
+
+
+When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Delivery Plans](../extensions/delivery-plans.md).
+
+<img src="../extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
+
+<a id="portfolio-backlogs">  </a> 
+
 ## Use portfolio backlogs to track features and epics
 
 The first level of gaining visibility across several teams is to configure your teams and backlogs to support the views you want.
@@ -62,6 +76,7 @@ With the multi-team portfolio backlog view, you can:
 - (Optional) You can use the [mapping feature](../backlogs/organize-backlog.md) to map user stories or PBIs to features
 
 ### View child items owned by other teams 
+
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker range=">= azure-devops-2019"

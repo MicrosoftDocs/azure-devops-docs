@@ -7,9 +7,10 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 07/28/2020
----
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
+--- 
+
 
 # Set permissions at the project- or collection-level
 
@@ -20,21 +21,28 @@ Several permissions are set at the project or at the organization/project collec
 
 ::: moniker range="azure-devops"
 An organization is the container for several projects that share resources. For more information about projects and project collections, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+
+
+> [!div class="mx-tdBreakAll"]  
+> | Project level | Organization level| 
+> |-------------|----------| 
+> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-Scoped Users<br/>- Security Service Group | 
+
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 A project collection is the container for several projects that share resources. For more information about projects and project collections, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
-::: moniker-end
+
+ 
+> [!Note]  
+> The following list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About security, membership, and permissions; Valid user groups](about-permissions.md#validusers). 
 
 > [!div class="mx-tdBreakAll"]  
-> | Project level | Organization/Collection level| 
+> | Project level | Collection level| 
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
-
-::: moniker range="< azure-devops"
-
-> [!Note]  
-> The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers). 
 
 ::: moniker-end
 
@@ -60,6 +68,9 @@ For a description of each group and each permission, see [Permissions and groups
   ::: moniker-end  
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group. If you created the project, you are automatically added as a member of this group. 
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group. If you created the organization or collection, you are automatically added as a member of this group. 
+
+> [!NOTE]  
+> Users added to the **Project-Scoped Users** group can't access most **Organization Settings** pages, including Permissions. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../projects/about-projects.md#project-scoped-user-group). 
 
 <a id="project-level" />
 
@@ -471,9 +482,9 @@ You can change a group name, description, add a group image, or delete a group.
 
 ## On-premises deployments
 
-For on-premises deployments, see these additional topics: 
+For on-premises deployments, see these additional articles: 
 
-- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator) 
+- [Add a user as an Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator) 
 - [Azure DevOps Server service account groups](/azure/devops/server/admin/service-accounts-dependencies)  
 
 ::: moniker-end  
@@ -543,7 +554,8 @@ A: You can find detailed information about individual permissions and their rela
 
 ## Related articles
 
-- [About permissions and inheritance](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)

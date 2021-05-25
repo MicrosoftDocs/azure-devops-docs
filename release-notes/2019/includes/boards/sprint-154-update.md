@@ -12,7 +12,7 @@ Previously, when updating a work item, and a second team member was making chang
 
 ### Manage iteration and area paths from the command line
 
-You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](https://docs.microsoft.com/cli/azure/ext/azure-devops/boards?view=azure-cli-latest).
+You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](/cli/azure/boards?view=azure-cli-latest&preserve-view=true).
 
 ### Work item parent column as column option
 
@@ -45,7 +45,7 @@ In addition, you can navigate to code and wiki search results without having to 
 
 ### Change the process used by a project
 
-Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](https://docs.microsoft.com/azure/devops/organizations/settings/work/manage-process?view=azure-devops#change-the-process-used-by-a-project). 
+Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](/azure/devops/organizations/settings/work/manage-process?view=azure-devops&preserve-view=true#change-the-process-used-by-a-project). 
 
 > [!div class="mx-imgBorder"]
 > ![Change the process used by a project.](../../media/154_28.png "Change the process used by a project")

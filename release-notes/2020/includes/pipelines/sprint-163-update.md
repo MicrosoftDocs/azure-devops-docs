@@ -4,9 +4,9 @@ ms.topic: include
 
 ### Use pipeline decorators to inject steps automatically in a deployment job
 
-You can now add [pipeline decorators](https://docs.microsoft.com/azure/devops/extend/develop/add-pipeline-decorator) to deployment jobs. You can have any custom step (e.g. vulnerability scanner) auto-injected to every [life cycle hook](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+You can now add [pipeline decorators](/azure/devops/extend/develop/add-pipeline-decorator) to deployment jobs. You can have any custom step (e.g. vulnerability scanner) auto-injected to every [life cycle hook](/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#descriptions-of-life-cycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
 
-In addition, deployment jobs can be run as a [container job](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases) along with [services side-car](https://docs.microsoft.com/azure/devops/pipelines/process/service-containers) if defined.
+In addition, deployment jobs can be run as a [container job](/azure/devops/pipelines/process/container-phases) along with [services side-car](/azure/devops/pipelines/process/service-containers) if defined.
 
 ### Allow repository references to other Azure Repos organizations
 
@@ -38,7 +38,7 @@ Azure Pipelines supports running jobs either in containers or on the agent host.
 > [!NOTE]
 > This feature is in public preview. If you have any feedback or questions about this feature, let us know in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
-Containers can act as isolation boundaries, preventing code from making unexpected changes on the host machine. The way steps [communicate with and access services from the agent](https://docs.microsoft.com/azure/devops/pipelines/scripts/logging-commands) is not affected by isolating steps in a container. Therefore, we're also introducing a command restriction mode which you can use with step targets. Turning this on will restrict the services a step can request from the agent. It will no longer be able to attach logs, upload artifacts, and certain other operations.
+Containers can act as isolation boundaries, preventing code from making unexpected changes on the host machine. The way steps [communicate with and access services from the agent](/azure/devops/pipelines/scripts/logging-commands) is not affected by isolating steps in a container. Therefore, we're also introducing a command restriction mode which you can use with step targets. Turning this on will restrict the services a step can request from the agent. It will no longer be able to attach logs, upload artifacts, and certain other operations.
 
 Here's a comprehensive example, showing running steps on the host in a job container, and in another container:
 
@@ -81,7 +81,7 @@ The following events are available now:
 
 ### Enhancements to evaluate artifacts checks policy in pipelines
 
-We've enhanced the [evaluate artifact check](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
+We've enhanced the [evaluate artifact check](/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops&preserve-view=true#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
 
 > [!div class="mx-imgBorder"]
 > ![Enhancement to evaluate artifacts checks policy in pipelines.](../../media/163_04.png)

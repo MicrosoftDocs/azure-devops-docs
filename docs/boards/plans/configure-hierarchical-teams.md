@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 ms.date: 10/28/2019
 ---
 
@@ -174,7 +174,7 @@ You do this by opening each area path associated with a feature team and changin
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." style="border: 1px solid #C3C3C3;" />  
 
     Repeat this step for all feature team area paths. 
 
@@ -245,7 +245,7 @@ From **Areas**, open the :::image type="icon" source="../media/icons/context_men
 
 Here we choose to include sub-area paths for the Account Management area.  
 
-<img src="media/pm-include-sub-area-paths.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." style="border: 1px solid #C3C3C3;" /> 
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
@@ -276,16 +276,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ## Configure additional team settings 
 
-For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include: 
-
-- [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
-- [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)  
-
-For additional details, see [Manage and configure team tools](../../organizations/settings/manage-teams.md) 
-
+For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
 

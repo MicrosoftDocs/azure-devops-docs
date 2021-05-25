@@ -183,4 +183,4 @@ tf resolve /auto:automerge
 
 [Resolving Folder Differences and File Conflicts](resolve-team-foundation-version-control-conflicts.md)
 
-[Comparing Folders and Files](compare-folders-files.md)
+[Comparing Folders and Files](./compare-files.md)

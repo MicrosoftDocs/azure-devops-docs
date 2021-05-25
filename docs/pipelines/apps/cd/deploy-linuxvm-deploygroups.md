@@ -14,6 +14,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
+> [!NOTE]
+> If you want to deploy your application to a Linux virtual machine using YAML, see [Deploy to a Linux virtual machine](../../ecosystems/deploy-linux-vm.md).
+
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018 and higher. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
@@ -94,7 +97,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    ![Checking or selecting the build pipeline and artifact](media/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
-   continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
+   continuous deployment trigger is enabled, and add a filter that includes the **main** branch.
 
    ![Checking or setting the Continuous deployment trigger](media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
 
@@ -122,9 +125,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
-   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
-
+   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`.
+   
    ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
+   
+   See a [sample deploy.sh file](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh) for a Node.js web app.   
 
 1. Save the release pipeline.
 

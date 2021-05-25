@@ -14,7 +14,7 @@ From any product, sprint, or portfolio backlog, you can drag a multi-selected li
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Planning](/azure/devops/boards/sprints/media/define-sprints/view-options-planning-menu.png)
 
-	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](../sprints/define-sprints.md).  
+	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](/azure/devops/boards/sprints/define-sprints).  
 
 1. You can drag and drop items from the **Backlog** onto a sprint. 
 	> [!div class="mx-imgBorder"]

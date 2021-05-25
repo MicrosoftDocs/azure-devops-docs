@@ -5,7 +5,7 @@ description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 12/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -13,17 +13,11 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-Set up permissions to control who can read and update the code in a branch on your Git repo.
-You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 
-> [!NOTE] 
-> Branch permissions are different between different versions of TFS, Azure DevOps
-> Server, and Azure DevOps Services.
->
-> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
-> in the upper left corner of the window.
->
-> ![Content version selector](../../media/version-selector.png)
+Set up permissions to control who can read and update the code in a branch on your Git repo.
+You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](set-git-repository-permissions.md#git-repository).
+
+[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
 
 ## Use the branches view to configure security
 
@@ -53,9 +47,10 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Add users or groups
 
-> Avoid trouble:  You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
+> [!TIP]    
+> You can only add permissions for users and groups already in your Project. [Add new users and groups to your Project](../../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
-Add users or groups to your branch permissions by selecting **Add** 
+Add users or groups to your branch permissions by selecting **Add**.  
 Enter the sign-in address or group alias, then select **Save Changes**.
 
 ## Remove users or groups
@@ -68,7 +63,7 @@ The user or group will still exist in your Project and this change will not affe
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
-[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
+[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. To learn more about how permissions work, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings).
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
