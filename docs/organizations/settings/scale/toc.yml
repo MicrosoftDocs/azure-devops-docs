@@ -1,28 +1,26 @@
 - name: "About teams & Agile tools"
   href: ../about-teams-and-settings.md
-- name: Add & manage teams
+- name: Add a team
+  href: ../add-teams.md
+- name: Add a team administrator
+  href: ../add-team-administrator.md
+- name: Add users to a project or team
+  href: ../../security/add-users-team-project.md
+- name: Set team favorites
+  href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Rename or delete a team
+  href: ../rename-remove-team.md
+- name: Configure team settings
   items:
-  - name: Add a team
-    href: ../add-teams.md
-  - name: Add a team administrator
-    href: ../add-team-administrator.md
-  - name: Add users to a project or team 
-    href: ../../security/add-users-team-project.md
-  - name: Set team favorites
-    href: ../../../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Rename or delete a team
-    href: ../rename-remove-team.md
-  - name: Configure team settings
-    items:
-    - name: Configure team tools
-      href: ../manage-teams.md 
-    - name: Select backlog levels
-      href: ../select-backlog-navigation-levels.md
-    - name: Show bugs on backlogs & boards
-      href: ../show-bugs-on-backlog.md
-    - name: Set working days
-      href: ../set-working-days.md
-- name: Support enterprise teams
+  - name: Configure team tools
+    href: ../manage-teams.md 
+  - name: Select backlog levels
+    href: ../select-backlog-navigation-levels.md
+  - name: Show bugs on backlogs & boards
+    href: ../show-bugs-on-backlog.md
+  - name: Set working days
+    href: ../set-working-days.md
+- name: Enterprise teams
   items:
   - name: Portfolio management
     href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json

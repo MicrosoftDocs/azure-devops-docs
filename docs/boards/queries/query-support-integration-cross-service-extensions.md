@@ -21,7 +21,7 @@ Managed queries are primarily focused on listing and working with work items. Ho
 
 ## Query-based dashboard widgets 
 
-In addition to defining flat-list query charts that you can add to a dashboard, you can configure one of the following query-based widgets. M 
+In addition to defining flat-list query charts that you can add to a dashboard, you can configure one of the following query-based widgets.
      	
   ![Chart work item query widget.](../../report/dashboards/media/widget-chart-work-query.png)  
  

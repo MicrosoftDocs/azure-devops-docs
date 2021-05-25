@@ -37,7 +37,7 @@ Area paths serve the following purposes in Azure Boards:
 1. Filter the work items that appear on a team backlog or board.
 2. Apply additional filtering to the work items that appear on a backlog or board, for details, see [Interactively filter backlogs, boards, queries, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md).
 3. Group work that shares some relationship, such as belonging to the same product, feature, or other work-level grouping. 
-4. Restrict access to work by setting permissions. Permissions can be set for security groups to restrict modifification of work items based on area path. 
+4. Restrict access to work by setting permissions. Permissions can be set for security groups to restrict modification of work items based on area path. 
 
 Teams make their selections as follows: 
 - Feature teams can choose one or more area paths to specify which work items will appear on their backlogs and boards. 

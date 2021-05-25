@@ -185,7 +185,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Multi-repo triggers for Azure repos</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
     <td>State transition restriction rules</td><td>Boards</td><td>2020.1</td>
