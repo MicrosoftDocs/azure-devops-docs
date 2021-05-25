@@ -43,9 +43,9 @@
     displayname: rich text, link, attach files, storyboard, email, dashboards, wiki
   - name: Copy list
     href: ../backlogs/copy-list.md 
-  - name: Email/print work items
+  - name: Email or print work items
     href: email-work-items.md  
-    displayName: export, cvs 
+    displayName: cards 
   - name: Drive Git development
     displayName: create branch, new branch, build 
     href: ../backlogs/connect-work-items-to-git-dev-ops.md
