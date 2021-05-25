@@ -261,6 +261,9 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```
 
     > [!TIP]
+    > Omit `<project_name>/` from the URLs above if your Feed was created in the 'Organization' scope instead of the 'Project' scope
+   
+    > [!NOTE]
     > Certain versions of PowerShell requires restarting a new session after executing `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
 
 4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
