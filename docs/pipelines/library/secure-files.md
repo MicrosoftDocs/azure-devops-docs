@@ -19,7 +19,7 @@ author: vijayma
 
 Secure Files are a way to store files that you can share across pipelines. You can use the Secure Files library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your repository. Secure files are defined and managed in the **Library** tab in **Azure Pipelines**.
 
-The contents of the secure files are encrypted and can only be used when them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. 
+The contents of the secure files are encrypted and can only be used when them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library). 
 
 There's a size limit of 10 MB for each secure file.
 
@@ -41,8 +41,10 @@ You can add Secure Files from **Pipelines** > **Library**.
     :::image type="content" source="media/pipeline-security-options.png" alt-text="Set Pipeline security for secure files.":::
 
 ## Consume a secure file in a pipeline
-Use the [Download Secure File](../tasks/utility/download-secure-file.md) Utility task to consume secure files within a Build or Release Pipeline. 
 
+Use the [Download Secure File](../tasks/utility/download-secure-file.md) Utility task to consume secure files in a pipeline. 
+
+::: moniker range=">=azure-devops-2019"
 This YAML pipeline example downloads a secure certificate file and installs it in a Linux environment.
 
 ```yaml
@@ -58,6 +60,8 @@ This YAML pipeline example downloads a secure certificate file and installs it i
     sudo chmod a+r $(caCertificate.secureFilePath)
     sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
 ```
+
+::: moniker-end
 
 ## FAQ
 
