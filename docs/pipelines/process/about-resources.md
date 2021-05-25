@@ -81,14 +81,9 @@ For YAML pipelines only, one way to restrict resources is by setting them as [pr
 
 
 
-There are some resources that live outside of the Azure DevOps ecosystem. Access to these resources is controlled with service connections. 
-- [containers](resources.md#resources-containers)
-- [packages](resources.md#resources-packages)
-- [webhooks](resources.md#resources-webhooks)
-
 ## Use resources for traceability in environments
 
-You can combine resources with environments so that you can better track resource use. [Environments](environments.md) are collections of resources using in pipelines. For Classic release pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar traceability tools. 
+You can combine resources with environments to better track resource use. [Environments](environments.md) are collections of resources using in pipelines. For Classic release pipelines, [deployment groups](../release/deployment-groups/index.md) offer similar traceability tools. 
 
 Environments support two resource types:
 - [Kubernetes](environments-kubernetes.md)
