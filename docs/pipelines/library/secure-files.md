@@ -87,13 +87,11 @@ Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/securi
 
 ### How are secure files secured?
  
-Secure files, variable groups, and service connections are all secured in the same way in Azure DevOps service. They are also all [protected resources](../security/resources.md). 
+Secure files, variable groups, and service connections are all secured in the same way in Azure DevOps. They are also all [protected resources](../security/resources.md). 
 
-They are encrypted and stored in the database.
-The keys to decrypt these are stored in Azure Key Vault.
-The keys are specific to each scale unit. So, two regions do not share the same keys.
-The keys are rotated with every deployment of Azure DevOps.
-The rights to retrieve these keys is only given to the Azure DevOps service principal and (on special occasions) on demand to diagnose problems.
-The secure storage does not have any certifications.
-Security-conscious customers should directly use Azure Key Vault to store their secrets and not secure files.
+Secrets are encrypted and stored in the database. The keys to decrypt secrets are stored in Azure Key Vault. The keys are specific to each scale unit. So, two regions do not share the same keys. The keys are also rotated with every deployment of Azure DevOps.
+
+The rights to retrieve secure keys is only given to the Azure DevOps service principal and (on special occasions) on demand to diagnose problems. The secure storage does not have any certifications. 
+
+[Azure Key Vault](/azure/key-vault/general/basic-concepts) is an additional, more secure option for securing sensitive information. If you decide to use Azure Key Vault, you can [use it with variable groups](../release/azure-key-vault.md). 
 <!-- ENDSECTION -->
