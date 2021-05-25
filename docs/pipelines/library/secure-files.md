@@ -1,7 +1,7 @@
 ---
-title: Secure files for Azure Pipelines and TFS
+title: Secure files for Azure Pipelines
 ms.custom: seodec18
-description: Understand secure files for Azure Pipelines and Team Foundation Server (TFS)
+description: Understand secure files for Azure Pipelines
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
 ms.date: 05/25/2021
@@ -17,7 +17,7 @@ author: vijayma
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Secure Files are a way to store files that you can share across pipelines. You can use the Secure Files library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your source repository. Secure files are defined and managed in the **Library** tab in **Azure Pipelines**.
+Secure Files are a way to store files that you can share across pipelines. You can use the Secure Files library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your repository. Secure files are defined and managed in the **Library** tab in **Azure Pipelines**.
 
 The contents of the secure files are encrypted and can only be used when them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. 
 
@@ -80,7 +80,8 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 
  1. Select the **Pipeline permissions** button. 
- 1. In the open dialog you are able to review and modify the access for each available pipeline.
+ 1. In the open dialog, you are able to review and modify the access for each available pipeline.
+ 1. 
 ### Why do I see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server/TFS on-premises?
 
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
@@ -91,7 +92,7 @@ Secure files, variable groups, and service connections are all secured in the sa
 
 Secrets are encrypted and stored in the database. The keys to decrypt secrets are stored in Azure Key Vault. The keys are specific to each scale unit. So, two regions do not share the same keys. The keys are also rotated with every deployment of Azure DevOps.
 
-The rights to retrieve secure keys is only given to the Azure DevOps service principal and (on special occasions) on demand to diagnose problems. The secure storage does not have any certifications. 
+The rights to retrieve secure keys are only given to the Azure DevOps service principals and (on special occasions) on-demand to diagnose problems. The secure storage does not have any certifications. 
 
-[Azure Key Vault](/azure/key-vault/general/basic-concepts) is an additional, more secure option for securing sensitive information. If you decide to use Azure Key Vault, you can [use it with variable groups](../release/azure-key-vault.md). 
+[Azure Key Vault](/azure/key-vault/general/basic-concepts) is another, more secure option for securing sensitive information. If you decide to use Azure Key Vault, you can [use it with variable groups](../release/azure-key-vault.md). 
 <!-- ENDSECTION -->
