@@ -88,7 +88,7 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
  1. Select the secure file you want to authorize. 
  1. Select the **Pipeline permissions** button. 
  1. In the open dialog, you are able to review and modify the access for each available pipeline.
- 1. 
+ 
 ### Why do I see an `Invalid Resource` error when downloading a secure file with Azure DevOps Server/TFS on-premises?
 
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
