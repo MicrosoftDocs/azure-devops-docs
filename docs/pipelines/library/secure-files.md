@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2015'
 author: vijayma
 ---
 
-# Secure files
+# Use secure files
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
@@ -39,8 +39,11 @@ You can add Secure Files from **Pipelines** > **Library**.
     1. You can apply security role restrictions for all files from the **Security** tab at **Pipelines** > **Library**.
     1. To add permissions for an individual file, in the file's edit view select **Pipeline permissions** to set per-pipeline permissions. Or, select **Security** to set security roles. You can also **Approvals and Checks** for the file. Learn more about [approvals and checks](../process/approvals.md). 
     :::image type="content" source="media/pipeline-security-options.png" alt-text="Set Pipeline security for secure files.":::
+
 ## Consume a secure file in a pipeline
-Use the [Download Secure File](../tasks/utility/download-secure-file.md) Utility task to consume secure files within a Build or Release Pipeline. This example downloads a secure certificate file and installs it in a Linux environment.
+Use the [Download Secure File](../tasks/utility/download-secure-file.md) Utility task to consume secure files within a Build or Release Pipeline. 
+
+This YAML pipeline example downloads a secure certificate file and installs it in a Linux environment.
 
 ```yaml
 - task: DownloadSecureFile@1
@@ -74,7 +77,7 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 
 <a name="secure-file-authorization"></a>
 
-## How do I authorize a secure file for use in a specific pipeline?
+### How do I authorize a secure file for use in a specific pipeline?
 
  1. In **Azure Pipelines**, select the **Library** tab.
  1. Select the **Secure files** tab at the top. 
