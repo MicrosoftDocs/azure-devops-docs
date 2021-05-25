@@ -75,13 +75,17 @@ If you use multiple publish code coverage tasks in the pipeline, the summary and
 
 
 ## Known issues
-The publish code coverage results task generates and publishes the HTML report - set of HTML files linked from the main file "index.html". If the code coverage tab fails to show the coverage report then check if the size of the "index.html" file is crossing around 7 MB. The steps specified below can also help checking the size of that file. If the size crosses around 7 MB then please use the following workaround to view the coverage report:
-1. Go to the build summary tab and click on the artifacts link "published" as shown below:
-![image](media/publish-code-coverage-result-build-summary.png)
 
-2. Next to the Code Coverage Report_* artifact, click on "Download artifacts" as shown below:
-![image](media/publish-code-coverage-result-build-artifacts.png)
+The publish code coverage results task generates and publishes the HTML report, a set of HTML files that are linked from the main *index.html* file. If the code coverage tab fails to show the code coverage report, check whether the size of the *index.html* file is close to or larger than 7 MB. Complete the following steps to check the size of the file. Then, if the file size is close to or larger than 7 MB, you can use the following workaround to view the coverage report:
 
-3. Once downloaded, extract the zip file.
-4. Cross check the size of the file "index.html" to double check that you are running into the same issue being discussed here.
-5. Open the "index.html" file in a browser to view/browse the code coverage report.
+1. Select the build **Summary** tab, and then select the **published** link:
+
+   ![Screenshot that shows the published link in the Summary pane.](media/publish-code-coverage-result-build-summary.png)
+
+2. Next to the *Code Coverage Report_\** artifact, select **Download artifacts**:
+
+   ![Screenshot that shows the Download artifacts link for the code coverage report under Artifacts.](media/publish-code-coverage-result-build-artifacts.png)
+
+3. When the code coverage report is downloaded, extract the .zip file.
+4. In the code coverage report, check the size of *index.html* to help determine whether the file size is causing the issue described here.
+5. Open *index.html* in a browser to view the code coverage report.
