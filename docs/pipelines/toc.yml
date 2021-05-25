@@ -468,7 +468,7 @@
     - name: Add & use variable groups
       href: library/variable-groups.md
       displayName: Azure key vault, link secrets, expansion, expand variables
-    - name: Secure files
+    - name: Use secure files
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
