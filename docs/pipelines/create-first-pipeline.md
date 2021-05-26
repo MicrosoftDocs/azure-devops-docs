@@ -22,9 +22,6 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 [!INCLUDE [include](includes/prerequisites.md)]
 
-> [!NOTE]
-> If you want to create a new pipeline by copying another pipeline, see [Clone or import a pipeline](./get-started/clone-import-pipeline.md).
-
 ## Create your first pipeline
 
 #### [Java](#tab/java)
