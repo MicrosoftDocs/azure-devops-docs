@@ -34,7 +34,7 @@ Caching is added to a pipeline using the `Cache` pipeline task. This task works 
 When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
 
 > [!NOTE]
-> Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
+> Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
 ### Configure Cache task
 
@@ -79,7 +79,6 @@ steps:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
-       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -116,11 +115,10 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
-    path: $(YARN_CACHE_FOLDER)
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-      yarn | $(Agent.OS)
-      yarn
+       yarn | "$(Agent.OS)"
+    path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
@@ -387,7 +385,7 @@ In the above example, the `$(Build.SourcesDirectory)` points to your project's g
 
 ## Node.js/npm
 
-There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules which can reduce or eliminate network calls to the public npm registry or to a private registry.
+There are different ways to enable caching in a Node.js project, but the recommended way is to cache npm's [shared cache directory](https://docs.npmjs.com/misc/config#cache). This directory is managed by npm and contains a cached version of all downloaded modules. During install, npm checks this directory first (by default) for modules that can reduce or eliminate network calls to the public npm registry or to a private registry.
 
 Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it is recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
 
@@ -539,13 +537,11 @@ steps:
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
 
-## FAQ
+## Q&A
 
-<!-- BEGINSECTION class="md-qanda" -->
+### Q: Can I clear a cache?
 
-### Can I clear a cache?
-
-Clearing a cache is currently not supported. However you can add a string literal (such as `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
+A: Clearing a cache is currently not supported. However you can add a string literal (such as `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
 
 ```yaml
 key: 'yarn | "$(Agent.OS)" | yarn.lock'
@@ -557,12 +553,11 @@ to this:
 key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
-### When does a cache expire?
+### Q: When does a cache expire?
 
-A cache will expire after seven days of no activity.
+A: Caches expire after seven days of no activity.
 
-### Is there a limit on the size of a cache?
+### Q: Is there a limit on the size of a cache?
 
-There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
+A: There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
 
-<!-- ENDSECTION -->
