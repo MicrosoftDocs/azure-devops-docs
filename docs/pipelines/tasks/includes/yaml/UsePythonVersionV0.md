@@ -1,3 +1,10 @@
+---
+ms.topic: include
+ms.date: 04/25/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Use Python version
 # Use the specified version of Python from the tool cache, optionally adding it to the PATH

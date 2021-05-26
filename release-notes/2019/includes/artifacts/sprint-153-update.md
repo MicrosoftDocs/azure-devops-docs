@@ -18,11 +18,11 @@ By using package search, you can:
 * **Search package by title and description:** You can quickly and easily find relevant packages by using free text search on title and description. You can also narrow your search by using Boolean operators and combine search criteria. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/153_07.png)
+> ![Search package by title and description.](../../media/153_07.png)
 
 * **Search across all your organization feeds:** Search in your and your team's feeds across the organization. Narrow your search by using feed, view, and package type filters. Use wildcards to widen your search and Boolean operators to fine-tune it. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/153_08.png)
+> ![Search across all your organization feeds.](../../media/153_08.png)
 
-You can learn more about package search [here](https://docs.microsoft.com/azure/devops/project/search/package-search?view=azure-devops).
+You can learn more about package search [here](/azure/devops/project/search/package-search?view=azure-devops&preserve-view=true).

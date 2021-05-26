@@ -16,27 +16,27 @@ We also made the following changes to the menu items:
     * Wiki level actions are next to the wiki picker
 
         > [!div class="mx-imgBorder"]
-        >![Badge](../../media/152_10.png)
+        >![Wiki level actions are next to the wiki picker.](../../media/152_10.png)
 
     * Tree level actions
 
         > [!div class="mx-imgBorder"]
-        >![Badge](../../media/152_11.png)
+        >![Tree level actions.](../../media/152_11.png)
 
     * Page level actions
 
         > [!div class="mx-imgBorder"]
-        >![Badge](../../media/152_12.png)
+        >![Page level actions.](../../media/152_12.png)
 
 2. The **New page** button has been moved into the tree. You can also press **n** on the keyboard to create a new page.
 
     > [!div class="mx-imgBorder"]
-    >![Badge](../../media/152_13.png)
+    >![The New page button has been moved into the tree.](../../media/152_13.png)
 
 3. We have also added **count** to the **Follow** functionality to tell you how many people are following a page. This can give you an idea of how important a page is.
 
     > [!div class="mx-imgBorder"]
-    >![Badge](../../media/152_14.png)
+    >![Count in the Follow functionality.](../../media/152_14.png)
 
 ### Support for HTML tags
 
@@ -45,7 +45,7 @@ Now, you can create richer content in wiki using HTML tags. Check out what you c
 1. You can now create collapsible sections inside your wiki pages by using the **details** and **summary** tags. You can add the **open** attribute  to keep the details expanded by default.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/152_07.png)
+    > ![Create collapsible sections inside your wiki pages.](../../media/152_07.png)
 
     For more information on the **details** tag, take a look at the documentation [here](https://www.w3schools.com/tags/tag_details.asp). 
 
@@ -56,15 +56,15 @@ Now, you can create richer content in wiki using HTML tags. Check out what you c
 
 2. In addition, you can add a caption to your images using the **figure** and **figcaption** tags. These tags let you add alternate text for images and create associated image blocks. The **figcaption** tag can be added above or below the image.
 
-  > [!div class="mx-imgBorder"]
-  >![Badge](../../media/152_08.png)
+    > [!div class="mx-imgBorder"]
+    >![Add a caption to your images.](../../media/152_08.png)
 
-    For more information on the **figcaption** tag, see the documentation [here](https://www.w3schools.com/tags/tag_figcaption.asp)
+    For more information on the **figcaption** tag, see the documentation [here](https://www.w3schools.com/tags/tag_figcaption.asp).
 
 3. Finally, you can highlight parts of text in your wiki pages by using the **mark** tag. This lets you highlight important text in your wiki pages to draw readers attention.
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/152_09.png)
+    > ![Highlight parts of text in your wiki pages.](../../media/152_09.png)
 
     For more information about the **mark** tag, see the documentation [here](https://www.w3schools.com/tags/tag_mark.asp). 
 
@@ -76,8 +76,8 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
     You no longer have to remember the markdown table syntax. Now you can create a markdown table easily by selecting from a 15 X 15 grid. Just select the required number of columns and rows to insert a table with a single click.
 
-  > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/152_03.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a table from grid.](../../media/152_03.png)
 
     This feature has been prioritized based on the following suggestion tickets:
 
@@ -89,13 +89,13 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
     You can now toggle **word wrap** for your editor to have better readability of your tables. Disabling word wrap adds a scroll bar which lets you see the content of large tables easier.
 
   > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/152_04.png)
+  > ![Toggle word wrap for your editor.](../../media/152_04.png)
 
 3. Autoformating markdown tables
 
     You no longer have to add spaces to align your markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
 
-  > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/152_05.png "Wiki page")
+    > [!div class="mx-imgBorder"]
+    > ![Autoformating markdown tables.](../../media/152_05.png "Wiki page")
 
     You can also use the **Ctrl + Shift + F** shortcut to format your tables.

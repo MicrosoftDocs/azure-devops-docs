@@ -3,7 +3,7 @@ title: Build and deploy a Java web app to Azure Functions
 description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.topic: tutorial
 ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
-ms.date: 1/8/2020
+ms.date: 04/27/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -44,6 +44,17 @@ az functionapp create --resource-group myapp-rg --consumption-plan-location west
 --name my-app-name --storage-account mystorage --runtime java
 ```
 
+## Update pom.xml
+
+Update `pom.xml` to reflect your application. Edit the `pom.xml` file in your forked repository with your values for `FUNCTION_APP_NAME`, `REGION`, and `RESOURCE_GROUP`.
+
+```xml
+        <functionAppName>FUNCTION_APP_NAME</functionAppName>
+        <functionAppRegion>REGION</functionAppRegion>
+        <stagingDirectory>${project.build.directory}/azure-functions/${functionAppName}</stagingDirectory>
+        <functionResourceGroup>RESOURCE_GROUP</functionResourceGroup>
+```
+
 ## Sign in to Azure Pipelines and connect to Azure
 
 [!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
@@ -77,7 +88,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 - task: CopyFiles@2
   displayName: Copy Files
   inputs:
-    SourceFolder: $(system.defaultworkingdirectory)/target/azure-functions/
+    SourceFolder: $(system.defaultworkingdirectory)/target/azure-functions/$(functionAppName)/
     Contents: '**'
     TargetFolder: $(build.artifactstagingdirectory)   
 

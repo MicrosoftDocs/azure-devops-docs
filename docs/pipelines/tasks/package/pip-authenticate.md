@@ -1,6 +1,6 @@
 ---
 title: Python Pip Authenticate
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-python
 description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
 ms.topic: reference
 ms.date: 08/02/2019
@@ -46,11 +46,11 @@ For project scoped feeds that are in a different project than where the pipeline
   inputs:
     # Provide list of feed names which you want to authenticate.
     # Project scoped feeds must include the project name in addition to the feed name.
-    artifactFeeds: project1/myTestFeed1, myTestFeed2
+    artifactFeeds: 'project1/myTestFeed1, myTestFeed2'
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 ### Download python distributions from Azure Artifacts feeds consulting official python registry first
@@ -65,13 +65,13 @@ For project scoped feeds that are in a different project than where the pipeline
   inputs:
     # Provide list of feed names which you want to authenticate.
     # Project scoped feeds must include the project name in addition to the feed name.
-    artifactFeeds: project1/myTestFeed1, myTestFeed2
+    artifactFeeds: 'project1/myTestFeed1, myTestFeed2'
     # Setting this variable to "true" will force pip to get distributions from official python registry first and fallback to feeds mentioned above if distributions are not found there.
     onlyAddExtraIndex: true
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 ### Download python distributions from other private python servers
@@ -87,7 +87,7 @@ In this example, we are setting authentication for downloading from a external p
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 <a name="versions" />
@@ -105,7 +105,7 @@ In this example, we are setting authentication for downloading from a external p
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -123,3 +123,7 @@ To do so, you can either:
   >The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
 * Add the proxy settings to the [pip config file](https://pip.pypa.io/en/stable/user_guide/#config-file) file using `proxy` key.
 * Use the `--proxy` command-line option to specify proxy in the form `[user:passwd@]proxy.server:port`.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.

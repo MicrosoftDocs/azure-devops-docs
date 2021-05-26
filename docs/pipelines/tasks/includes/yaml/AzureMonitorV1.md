@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Query Azure Monitor alerts
 # Observe the configured Azure Monitor rules for active alerts

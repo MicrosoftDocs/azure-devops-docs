@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 01/09/2020
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -73,7 +73,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -83,19 +83,21 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. Follow the instructions on the page.
 
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
+
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-### Azure DevOps Server 2019
+### Azure DevOps Server 2019 and Azure DevOps Server 2020
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+1. In your web browser, sign in to Azure DevOps Server, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Click **Download agent**.
 
@@ -104,6 +106,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 1. Click the **Download** button.
 
 1. Follow the instructions on the page.
+
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
@@ -126,6 +130,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 1. Click the **Download** button.
 
 1. Follow the instructions on the page.
+
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
@@ -383,7 +389,7 @@ You can use the template described above as to facilitate generating other kinds
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

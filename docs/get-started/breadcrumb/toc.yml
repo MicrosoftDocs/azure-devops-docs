@@ -19,5 +19,5 @@
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
     - name: Status & security 
-      tocHref: /azure/devops/organizations/user-guide/
+      tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/service-status-info

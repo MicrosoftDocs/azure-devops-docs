@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/23/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Visual Studio build
 # Build with MSBuild and set the Visual Studio version property

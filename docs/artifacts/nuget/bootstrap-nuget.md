@@ -1,6 +1,6 @@
 ---
 title: Set up a multi-developer NuGet environment
-description: Set up the NuGet developer environment for Azure Artifacts in Azure DevOps Services or Team Foundation Server
+description: How to set up the NuGet multi developer environment
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -19,7 +19,7 @@ For example, developers will need a compatible NuGet client and credentials to a
 Team leaders or architects can make it very simple for developers to get everything they need without having to do multiple downloads and find passwords and authentication tokens on team shares.
 We've developed a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow.
 The tools are shipped as a NuGet package called `Microsoft.VisualStudio.Services.NuGet.Bootstrap`, available on the public [NuGet Gallery](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap).
-We also have an [example repository](https://github.com/Microsoft/vsts-nuget-sample) which demonstrates these tools.
+We also have an [example repository](https://github.com/Microsoft/vsts-nuget-bootstrapper) which demonstrates these tools.
 
 ## The bootstrapper package
 
@@ -33,7 +33,7 @@ Both Git and TFVC are supported.
 
 You aren't required to use this bootstrapping package in order to use Azure DevOps Services authenticated feeds.
 It's intended to help you get going without having to write a lot of code or invest in an extensive engineering system.
-Customers with unique needs can copy [the package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) and [example repo](https://github.com/Microsoft/vsts-nuget-sample), and modify them to fit in their engineering system.
+Customers with unique needs can copy [the package](https://www.nuget.org/packages?q=Microsoft.VisualStudio.Services.NuGet.Bootstrap) and [example repo](https://github.com/Microsoft/vsts-nuget-bootstrapper), and modify them to fit in their engineering system.
 
 ### One-time setup
 

@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: shashban
+ms.author: shashban
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Run functional tests
 # Deprecated: This task and it’s companion task (Visual Studio Test Agent Deployment) are deprecated. Use the 'Visual Studio Test' task instead. The VSTest task can run unit as well as functional tests. Run tests on one or more agents using the multi-agent job setting. Use the 'Visual Studio Test Platform' task to run tests without needing Visual Studio on the agent. VSTest task also brings new capabilities such as automatically rerunning failed tests.

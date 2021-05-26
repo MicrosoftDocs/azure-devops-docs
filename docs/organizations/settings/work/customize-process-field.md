@@ -2,17 +2,17 @@
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 12/12/2019
+ms.date: 05/21/2021 
 ---
 
-# Add and manage fields for an inherited process   
+# Add and manage fields (Inheritance process)   
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
@@ -55,8 +55,7 @@ For descriptions and usage of each field, as well as the Reference name for each
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to move its placement within the form. If you have several fields you want to add to a custom page or group, then [add those pages or groups first](customize-process-form.md) and then add your fields. 
 
 > [!NOTE] 
-> You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
-
+> Each process can define up to 1024 fields, including system inherited fields. You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
 
@@ -67,7 +66,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
@@ -94,7 +93,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you don't specify its layout location, the system adds it to the first group of fields on the form.  
 
@@ -107,38 +106,44 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
+<a id="edit-picklist-inherited" />
 
 ### Add a picklist  
 
-::: moniker range="azure-devops"
+
+[Work tracking, process, and project limits](object-limits.md)
+
+::: moniker range=">= azure-devops-2020"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
 ::: moniker-end
 
-1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item. 
+> [!NOTE] 
+> Each organization or collection can define up to 1024 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
 
-	<img src="media/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
+1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
+
+	![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
-	::: moniker range="azure-devops"
-	<a id="edit-picklist-inherited" />
+	::: moniker range=">= azure-devops-2020"
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Priority field, Definition tab dialog](media/field/edit-priority-picklist.png)   
+	> ![Edit field Priority in User STory dialog, Definition tab.](media/field/edit-priority-picklist.png)   
+	
 	::: moniker-end
 
-2. (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values. 
+2. (Optional) Choose the **Options** tab to define the field as required, specify a default, or allow users to enter their own values. 
 
-	<img src="media/process/add-a-field-pick-list-options.png" alt="Allow values in a custom picklist" style="border: 1px solid #C3C3C3;" />  
+	![Allow values in a custom picklist](media/process/add-a-field-pick-list-options.png)  
 
-3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong>  tab). 
+3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (**Layout** tab). 
  
 <!---
-2. To reorder the list, simply drag the item to where you want it in the list. Add the items in the order you want them to appear in the list.
-
+2. Add the items in the order you want them to appear in the list.
 	![Add a custom picklist](media/process/customize-field-reorder-list.png)
 -->
 
@@ -151,7 +156,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
-	![Add a custom picklist](media/process/cpfield-identity.png)  
+	![Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)  
 
 1. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -188,7 +193,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 4. By default, the field is added to the last group defined in the second column. Open the <strong>Layout</strong> tab to drag and drop the field to another group on the form.  
 
 	> [!NOTE]    
-	> The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
+	> The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Taskboard, then the field values of True and False display (not a checkbox).
 
 <a id="add-existing-field">  </a>
 
@@ -215,35 +220,96 @@ Here, we relabel the Customer Ticket field to Ticket Number.
  
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
 
+
+<a id="modify-description" />
+
+## Modify Description help text  
+
+::: moniker range=">= azure-devops-2020"
+
+Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. Note that the implementation differs based on the field type. 
+- **For inherited fields**: Description help text can be defined differently for each work item type and process.   
+- **For custom fields**: Description help text appears the same for the field across all work item types and all processes. 
+
+
+::: moniker-end
+
+[!INCLUDE [temp](../../../boards/includes/note-azure-devops-2020-1-updates.md)]
+
+::: moniker range="azure-devops-2019"
+
+Description help text displays when users hover over a field in the work item form. You can only modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
+
+::: moniker-end
+
+To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
+
+::: moniker range=">= azure-devops-2020"
+
+Here we modify the Story Points field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Story Points field.](media/custom-field/edit-field-dialog-definition-description-help-text.png)
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+Here we modify the custom Published field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png)
+
+
+::: moniker-end
+
+
 <a id="show-hide-remove-field">  </a>
 
 ## Show, hide, or remove a field   
 
-You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+::: moniker range=">= azure-devops-2020"
+
+You can choose to show or hide any field or custom control from appearing on a form. If you want to reinstate a field onto the form later, you can un-hide These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it by choosing **Show on layout**. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
 
 > [!NOTE]      
 > Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
 >
-> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results.
-If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
+> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results. If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
   
 
 
 <a id="show-hide-field">  </a>
 
-### Hide an inherited field or custom control 
 
-1. Open the context menu for the inherited field and choose Hide from layout.
+::: moniker range=">= azure-devops-2020"
+### Hide a field or custom control
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+### Hide an inherited field or custom control
+::: moniker-end 
+
+1. Open the context menu for the field or control and choose **Hide from layout**.
 
 	![Bug layout, inherited field, open context menu, choose Hide from layout](media/process/cpfield-hide-inherited-field.png) 
 
-1. To add a hidden field to the form, choose **Show on layout**.  
+1. To add a hidden field or control to the form, choose **Show on layout**.  
 
 <a id="remove-field">  </a>
 
 ### Remove a custom field from a form
 
-1. Choose Remove from the context menu of the field you want to remove. 
+1. Choose **Remove** from the context menu of the field you want to remove. 
 
 	![Remove field from bug work item type](media/process/cpfield-remove-customer-ticket.png)  
 
@@ -268,7 +334,7 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 ## Delete a field  
 
-Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -283,21 +349,25 @@ Deleting a field deletes all data associated with that field, including historic
 
 ## Related articles  
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
+- [Work tracking, process, and project limits](object-limits.md)
+
 
 If you're working with test plans or test cases, see these articles: 
 
-- [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
-- [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)   
+- [Create a test plan](../../../test/create-a-test-plan.md)  
+- [Create manual test cases](../../../test/create-test-cases.md)   
 
- 
 
 <!--- 
 Commenting this out as it is in the process of changing 
+
 ### Custom field names 
 
 The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  is `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 
@@ -306,4 +376,4 @@ By adding all customizations to the same base inherited process, you simplify th
 
 Each ![locked icon](media/process/locked-icon.png) system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
 
---> 
+-->

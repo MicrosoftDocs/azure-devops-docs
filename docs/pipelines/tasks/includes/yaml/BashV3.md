@@ -1,3 +1,10 @@
+---
+ms.topic: include
+ms.date: 02/11/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Bash
 # Run a Bash script on macOS, Linux, or Windows

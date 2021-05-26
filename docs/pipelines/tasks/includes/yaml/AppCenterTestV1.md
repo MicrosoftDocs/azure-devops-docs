@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: shashban
+ms.author: shashban
+ms.date: 07/10/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # App Center test
 # Test app packages with Visual Studio App Center

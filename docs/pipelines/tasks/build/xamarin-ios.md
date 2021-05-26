@@ -59,7 +59,7 @@ Xamarin.iOS
    </tr>
    <tr>
       <td><code>runNugetRestore</code><br/>Run NuGet restore</td>
-      <td>(Required) Optionally run <code>nuget restore</code> on the Xamarin iOS solution to install all referenced packages before build. The &#39;nuget&#39; tool in the PATH of the build agent machine will be used. To use a different version of NuGet or set additional arguments, use the <a href="https://go.microsoft.com/fwlink/?linkid=852538" data-raw-source="[NuGet Tool Installer](https://go.microsoft.com/fwlink/?linkid=852538)">NuGet Tool Installer</a> task. <br/>Default value: false</td>
+      <td>(Required) Optionally run <code>nuget restore</code> on the Xamarin iOS solution to install all referenced packages before build. The &#39;nuget&#39; tool in the PATH of the build agent machine will be used. To use a different version of NuGet or set additional arguments, use the <a href="/azure/devops/pipelines/tasks/tool/nuget" data-raw-source="[NuGet Tool Installer](../tool/nuget.md)">NuGet Tool Installer</a> task. <br/>Default value: false</td>
    </tr>
    <tr>
       <td><code>args</code><br/>Arguments</td>
@@ -88,13 +88,13 @@ Xamarin.iOS
 
 ## Example
 
-[Build your Xamarin app](../../apps/mobile/xamarin.md)
+[Build your Xamarin app](../../ecosystems/xamarin.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

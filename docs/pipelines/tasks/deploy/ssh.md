@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to run shell commands or a script on a remote machine using SSH.
+Use this task to run shell commands or a script on a remote machine using SSH.
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
 ::: moniker range="<= tfs-2018"
@@ -44,9 +44,41 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Run** | Choose to run either shell commands or a shell script on the remote machine. |
 | **Commands** | The shell commands to run on the remote machine. This parameter is available only when **Commands** is selected for the **Run** option. Enter each command together with its arguments on a new line of the multi-line textbox. To run multiple commands together, enter them on the same line separated by semicolons. Example: `cd /home/user/myFolder;build`<br /><br />**NOTE**: Each command runs in a separate process. If you want to run a series of commands that are interdependent (for example, changing the current folder before executing a command) use the **Inline Script** option instead. |
 | **Shell script path** | Path to the shell script file to run on the remote machine. This parameter is available only when **Shell script** is selected for the **Run** option. |
+| **Interpreter command** | Path to the command interpreter used to execute the script. Used when **Run** option = Inline. Adds a shebang line to the beginning of the script. Relevant only for UNIX-like operating systems. Please use empty string for Windows-based remote hosts. [See more about shebang (#!)](https://homepages.cwi.nl/~aeb/std/shebang/unix-faq.txt) |
 | **Arguments** | The arguments to pass to the shell script. This parameter is available only when **Shell script** is selected for the **Run** option. |
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+
+## Supported algorithms
+
+### Key pair algorithms
+
+* RSA
+* DSA
+
+### Encryption algorithms
+
+* aes256-cbc
+* aes192-cbc
+* aes128-cbc
+* blowfish-cbc
+* 3des-cbc
+* arcfour256
+* arcfour128
+* cast128-cbc
+* arcfour
+
+For OpenSSL v1.0.1 and higher (on agent):
+* aes256-ctr
+* aes192-ctr
+* aes128-ctr
+
+For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
+* aes128-gcm
+* aes128-gcm@openssh.com
+* aes256-gcm
+* aes256-gcm@openssh.com
+
 
 ## See also
 
@@ -60,7 +92,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]

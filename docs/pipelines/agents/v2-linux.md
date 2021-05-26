@@ -1,10 +1,10 @@
 ---
-title: Deploy a Azure Pipelines agent on Linux
+title: Deploy an Azure Pipelines agent on Linux
 ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 01/09/2020
+ms.date: 06/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -30,7 +30,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ::: moniker range="> tfs-2018"
 
-The agent is based on .NET Core 2.1.
+The agent is based on .NET Core 3.1.
 You can run this agent on several Linux distributions.
 We support the following subset of .NET Core supported distributions:
 - x64
@@ -40,7 +40,7 @@ We support the following subset of .NET Core supported distributions:
   - Linux Mint 18, 17
   - openSUSE 42.3 or later
   - Oracle Linux 7
-  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
+  - Red Hat Enterprise Linux 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 18.04, 16.04
 - ARM32 (see note 2)
@@ -69,7 +69,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
-See [Azure Pipelines agent prereqs](?view=azure-devops#check-prerequisites) for more about what's required to run a newer agent.
+See [Azure Pipelines agent prereqs](?view=azure-devops&preserve-view=true#check-prerequisites) for more about what's required to run a newer agent.
 
 If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
 
@@ -100,7 +100,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -116,15 +116,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-### Azure DevOps Server 2019
+### Azure DevOps Server 2019 and Azure DevOps Server 2020
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Click **Download agent**.</li>
 
@@ -229,25 +229,31 @@ If you didn't choose a different pool, your agent will be in the **Default** poo
 
 ### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
 
  ```bash
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ## Run as a systemd service
 
-If your agent is running on these operating systems you can run the agent as a systemd service:
+If your agent is running on these operating systems you can run the agent as a `systemd` service:
 
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
 
-> [!IMPORTANT]
-> If you run your agent as a service, you cannot run the agent service as `root` user.
+We provide an example `./svc.sh` script for you to run and manage your agent as a `systemd` service.
+This script will be generated after you configure the agent.
+We encourage you to review, and if needed, update the script before running it.
 
-We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
+Some important caveats:
+* If you run your agent as a service, you cannot run the agent service as `root` user.
+* Users running [SELinux](https://selinuxproject.org/) have reported difficulties with the provided `svc.sh` script.
+Refer to [this agent issue](https://github.com/microsoft/azure-pipelines-agent/issues/2738) as a starting point.
+SELinux is not an officially supported configuration.
 
 > [!NOTE]
 > If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -267,10 +273,10 @@ cd ~/myagent$
 Command:
 
 ```bash
-sudo ./svc.sh install
+sudo ./svc.sh install [username]
 ```
 
-This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host.
+This command creates a service file that points to `./runsvc.sh`. This script sets up the environment (more details below) and starts the agents host. If `username` parameter is not specified then the username is taken from the $SUDO_USER environment variable which is set by sudo command. This variable is always equal to the name of the user who invoked the `sudo` command.
 
 #### Start
 
@@ -362,7 +368,7 @@ It's important to avoid situations in which the agent fails or become unusable b
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

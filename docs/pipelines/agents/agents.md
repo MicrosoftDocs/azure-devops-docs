@@ -1,10 +1,10 @@
 ---
 title: Azure Pipelines Agents
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 11/20/2019
+ms.date: 04/08/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
 
 When your pipeline runs, the system begins one or more jobs.
-An agent is installable software that runs one job at a time.
+An agent is computing infrastructure with installed agent software that runs one job at a time.
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
@@ -43,6 +43,9 @@ An agent that you set up and manage on your own to run jobs is a **self-hosted a
 You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS).
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
+
+> [!NOTE]
+> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents may adversely affect performance and the result of your pipelines.
 
 ::: moniker range="azure-devops"
 
@@ -74,21 +77,51 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 
 ::: moniker-end
 
+> [!NOTE]
+> On macOS, you need to clear the special attribute on the download archive to prevent Gatekeeper protection from displaying for each assembly in the tar file when `./config.sh` is run. The following command clears the extended attribute on the file:
+>
+> ```bash
+> xattr -c vsts-agent-osx-x64-V.v.v.tar.gz  ## replace V.v.v with the version in the filename downloaded.
+> 
+> # then unpack the gzip tar file normally:
+> 
+> tar xvfz vsts-agent-osx-x64-V.v.v.tar.gz
+> ```
+
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
 
 ::: moniker range="azure-devops"
 
+> [!NOTE]
+> Agents are widely backward compatible. Any version of the agent should be compatible with any Azure DevOps version as long as Azure DevOps isn't demanding a higher version of the agent.
+>
+> We only support the most recent version of the agent since that is the only version guaranteed to have all up-to-date patches and bug fixes.
+
+## Azure virtual machine scale set agents
+
+Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+
+You specify a virtual machine scale set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+
+For more information, see [Azure virtual machine scale set agents](scale-set-agents.md).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 || azure-devops"
+
 ## Parallel jobs
 
-You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+**Parallel jobs** represents the number of jobs you can run at the same time in your organization. If your organization has a single parallel job, you can run a single job at a time in your organization, with any additional concurrent jobs being queued until the first job completes. To run two jobs at the same time, you need two parallel jobs. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
 
 Microsoft provides a free tier of service by default in every organization that includes at least one parallel job. Depending on the number of concurrent pipelines you need to run, you might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time. For more information on parallel jobs and different free tiers of service, see [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
-
-## Parallel jobs
 
 You might need more parallel jobs to use multiple agents at the same time:
 
@@ -109,14 +142,19 @@ Every self-hosted agent has a set of capabilities that indicate what it can do. 
 
 The agent software automatically determines various system capabilities such as the name of the machine, type of operating system, and versions of certain software installed on the machine. Also, environment variables defined in the machine automatically appear in the list of system capabilities.
 
-When you author a pipeline you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the demands [specified in the pipeline](../build/options.md). As a result, agent capabilities allow you to direct jobs to specific agents.
+> [!NOTE]
+> Storing environment variables as capabilities means that when an agent runs, the stored capability values are used to set the environment variables. Also, any changes to environment variables that are made while the agent is running won't be picked up and used by any task. If you have sensitive environment variables that change and you don't want them to be stored as capabilities, you can have them ignored by setting the `VSO_AGENT_IGNORE` environment variable, with a comma-delimited list of variables to ignore. For example, `PATH` is a critical variable that you might want to ignore if you're installing software.   
+
+When you author a pipeline, you specify certain **demands** of the agent. The system sends the job only to agents that have capabilities matching the [demands](../process/demands.md) specified in the pipeline. As a result, agent capabilities allow you to direct jobs to specific agents.
 
 > [!NOTE]
 >
-> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
-> You cannot use capabilities with hosted agents.
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
-### View agent details
+### Configure agent capabilities
 
 #### [Browser](#tab/browser)
 
@@ -130,20 +168,22 @@ You can view the details of an agent, including its version and system capabilit
  
    [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
 
+1. To register a new capability with the agent, choose **Add a new capability**.
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
-You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
+You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true) Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
 > [!NOTE]
-> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az pipelines](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List agents
 
-You can list your agents using the [az pipelines agent list](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-list) command.
+You can list your agents using the [az pipelines agent list](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-list) command.
 
 ```azurecli
 az pipelines agent list --pool-id
@@ -171,7 +211,7 @@ az pipelines agent list --pool-id
 
 #### Example
 
-The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?view=azure-devops&tabs=yaml%2Cazure-devops-cli#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?tabs=yaml#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az pipelines agent list --pool-id 4 --output table
@@ -183,7 +223,7 @@ ID    Name          Is Enabled    Status    Version
 
 ### Show agent details
 
-You can retrieve agent details using the [az pipelines agent show](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-show) command.
+You can retrieve agent details using the [az pipelines agent show](/cli/azure/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-show) command.
 
 ```azurecli
 az pipelines agent show --agent-id
@@ -282,11 +322,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Agent topologies](media/agent-topologies-tfs.png)
+![Agent topologies in on-premises installations.](media/agent-topologies-tfs.png)
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-![Agent topologies](media/agent-topologies-devops.png)
+![Agent topologies in Azure DevOps Services.](media/agent-topologies-devops.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -356,7 +396,7 @@ Your agent can authenticate to Azure DevOps Server or TFS using one of the follo
 ::: moniker range=">= tfs-2017"
 
 ### Personal Access Token (PAT): 
-[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. Also, as explained above, this PAT is used only at the time of registering the agent, and not for subsequent communication.
+[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with Azure Pipelines or TFS 2017 and newer. PAT is the only scheme that works with Azure Pipelines. The PAT must have **Agent Pools (read, manage)** scope (for a [deployment group](../release/deployment-groups/index.md) agent, the PAT must have **Deployment group (read, manage)** scope), and while a single PAT can be used for registering multiple agents, the PAT is used only at the time of registering the agent, and not for subsequent [communication](#communication). For more information, see the Authenticate with a personal access token (PAT) section in the [Windows](v2-windows.md#authenticate-with-a-personal-access-token-pat), [Linux](v2-linux.md#authenticate-with-a-personal-access-token-pat), or [macOS](v2-osx.md#authenticate-with-a-personal-access-token-pat) self-hosted agents articles.
 
 To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](/azure/devops/server/admin/websitesettings).
 
@@ -400,7 +440,7 @@ To use this method of authentication, you must configure your TFS server as foll
 
 1. Sign in to the machine where you are running TFS.
 
-1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
@@ -467,12 +507,32 @@ We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
 Microsoft-hosted agents are always kept up-to-date.
-If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically by Azure Pipelines.
+If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
 If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
+
+### To update self-hosted agents
+
+1. Navigate to **Project settings**, **Agent pools**.
+
+    ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
+
+2. Select your agent pool and choose **Update all agents**.
+
+    ![Update all agents](media/agents/update-all-agents.png)
+
+    You can also update agents individually by choosing **Update agent** from the **...** menu.
+
+    ![Update agent](media/agents/update-agent.png)
+
+3. Select **Update** to confirm the update.
+
+    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+
+4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
@@ -493,9 +553,12 @@ Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
-You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
+You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Configure agent capabilities](#configure-agent-capabilities).
 
-## Q & A
+> [!NOTE]
+> For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
+
+## FAQ
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
 

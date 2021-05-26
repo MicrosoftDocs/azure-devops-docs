@@ -11,7 +11,7 @@ author: yukom
 
 # Team Foundation Service updates - Jun 26
 
-It’s an exciting day today as we announced and released Visual Studio 2013 Preview.  Visit [Soma's blog](https://blogs.msdn.com/b/somasegar/archive/2013/06/26/visual-studio-2013-preview.aspx) to read about the details.  Related to that announcement we have a few changes to the service that you’ll want to know about.
+It’s an exciting day today as we announced and released Visual Studio 2013 Preview.  Visit [Soma's blog](/archive/blogs/somasegar/build-2013-and-visual-studio-2013-preview) to read about the details.  Related to that announcement we have a few changes to the service that you’ll want to know about.
 
 ## Windows 8.1 support in the build service
 

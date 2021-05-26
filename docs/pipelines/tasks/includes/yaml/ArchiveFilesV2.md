@@ -1,3 +1,10 @@
+---
+ms.topic: include
+ms.date: 02/10/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Archive files
 # Compress files into .7z, .tar.gz, or .zip

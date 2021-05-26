@@ -2,8 +2,7 @@
 ms.topic: include
 ---
 
-* [Add a Team slicer to an existing report](/azure/devops/report/powerbi/sample-boards-teamslicer)
-* [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-* [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-* [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
-
+* [Add a Team slicer to an existing report](../sample-boards-teamslicer.md)
+* [Overview of sample reports using OData queries](../sample-odata-overview.md)
+* [Connect using Power BI and OData queries](../odataquery-connect.md)
+* [Analytics OData query quick reference](../../extend-analytics/quick-ref.md)

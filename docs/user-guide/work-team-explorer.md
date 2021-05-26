@@ -1,19 +1,20 @@
 ---
 title: Navigate in Visual Studio Team Explorer 
 titleSuffix: Azure DevOps 
-description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
-keywords: Download TFS clients 
+description: Learn how to download Azure DevOps clients and navigate in Team Explorer 
+keywords: Download Azure DevOps clients 
 ms.technology: devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
-monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.topic: conceptual
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # Navigate in Visual Studio Team Explorer
 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 **Visual Studio 2019 | Visual Studio 2017 | Visual Studio 2015**
 
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
@@ -22,10 +23,10 @@ You use Team Explorer to coordinate your code efforts with other team members to
 > You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](../java/download-eclipse-plug-in.md)
-> - [Azure DevOps Plugin for Android Studio](../java/download-android-studio-plug-in.md)  
-> - [Azure DevOps Plugin for IntelliJ](../java/download-intellij-plug-in.md)
-> - [Visual Studio Code](../java/vscode-extension.md)  
+> - [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
+> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+> - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)  
 > 
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
@@ -54,9 +55,11 @@ The Git and TFVC repos support different pages and functions. For a comparison o
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
 
+[!INCLUDE [temp](../repos/git/includes/note-new-git-tool.md)] 
+
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827210.png) |  
+> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page with Git as source control.](media/IC827210.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -74,12 +77,12 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -91,8 +94,8 @@ To learn more about each page, see the following articles.
 <li><a href="../repos/git/creatingrepo.md" data-raw-source="[Create a new repo](../repos/git/creatingrepo.md)">Create a new repo</a></li>
 <li><a href="../repos/git/clone.md" data-raw-source="[Clone an existing repo](../repos/git/clone.md)">Clone an existing repo</a></li>
 <li><strong>Changes</strong>: <a href="../repos/git/commits.md" data-raw-source="[Save work with commits](../repos/git/commits.md)">Save work with commits</a></li>
-<li><strong>Branches</strong>: <a href="../repos/git/branches.md" data-raw-source="[Create work in branches](../repos/git/branches.md)">Create work in branches</a></li>
-<li><strong>Pull Requests</strong>: <a href="../repos/git/pullrequest.md" data-raw-source="[Review code with pull requests](../repos/git/pullrequest.md)">Review code with pull requests</a></li>
+<li><strong>Branches</strong>: <a href="/azure/devops/repos/git/create-branch" data-raw-source="[Create work in branches](../repos/git/create-branch.md)">Create work in branches</a></li>
+<li><strong>Pull Requests</strong>: <a href="../repos/git/pull-requests.md" data-raw-source="[Review code with pull requests](../repos/git/pull-requests.md)">Review code with pull requests</a></li>
 <li><strong>Sync</strong>: <a href="../repos/git/pulling.md" data-raw-source="[Update code with fetch and pull](../repos/git/pulling.md)">Update code with fetch and pull</a></li>
 <li><strong>Tags</strong>: <a href="../repos/git/git-tags.md" data-raw-source="[Work with Git tags](../repos/git/git-tags.md)">Work with Git tags</a></li>
 <li><a href="../repos/git/git-config.md" data-raw-source="[Git preferences](../repos/git/git-config.md)">Git preferences</a></li>
@@ -115,7 +118,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 
@@ -131,7 +134,7 @@ The following images show the pages available when you connect to a TFVC reposit
 > 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|
-> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827209.png) |  
+> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page with a TFVC repository as source control](media/IC827209.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -149,12 +152,12 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -167,8 +170,8 @@ To learn more about each page, see the following articles.
 <li><strong>My Work</strong>: <a href="../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Suspend/resume work</a>  &#124; <a href="../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md" data-raw-source="[Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)">Code review</a></li>
 <li><strong>Pending Changes</strong>: <a href="../repos/tfvc/develop-code-manage-pending-changes.md" data-raw-source="[Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md)">Manage pending changes</a> &#124; <a href="../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Find shelvesets</a> &#124; <a href="../repos/tfvc/resolve-team-foundation-version-control-conflicts.md" data-raw-source="[Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)">Resolve conflicts</a></li>
 <li><strong>Source Control Explorer</strong>: <a href="../repos/tfvc/add-files-server.md" data-raw-source="[Add/view files and folders](../repos/tfvc/add-files-server.md)">Add/view files and folders</a></li>
-<li><a href="/azure/devops/repos/tfvc/add-check-policies" data-raw-source="[Add Check-In Policies](/azure/devops/repos/tfvc/add-check-policies)">Add Check-In Policies</a></li>
-<li><a href="/azure/devops/repos/tfvc/use-team-foundation-version-control-commands" data-raw-source="[Version control commands](/azure/devops/repos/tfvc/use-team-foundation-version-control-commands)">Version control commands</a></li>
+<li><a href="/azure/devops/repos/tfvc/add-check-policies" data-raw-source="[Add Check-In Policies](../repos/tfvc/add-check-policies.md)">Add Check-In Policies</a></li>
+<li><a href="/azure/devops/repos/tfvc/use-team-foundation-version-control-commands" data-raw-source="[Version control commands](../repos/tfvc/use-team-foundation-version-control-commands.md)">Version control commands</a></li>
 </ul>
 </td>
 
@@ -176,8 +179,8 @@ To learn more about each page, see the following articles.
 
 <p><strong>Default experience</strong> (Visual Studio 2019 only)</p> 
 <ul>
-<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](/azure/devops/boards/work-items/view-add-work-items)">View and add work items</a></li>
-<li><a href="/azure/devops/boards/work-items/set-work-item-experience-vs" data-raw-source="[Set the Work Items experience in Visual Studio](/azure/devops/boards/work-items/set-work-item-experience-vs)">Set the Work Items experience in Visual Studio</a></li>
+<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](../boards/work-items/view-add-work-items.md)">View and add work items</a></li>
+<li><a href="/azure/devops/boards/work-items/set-work-item-experience-vs" data-raw-source="[Set the Work Items experience in Visual Studio](../boards/work-items/set-work-item-experience-vs.md)">Set the Work Items experience in Visual Studio</a></li>
 </ul>
 <p><strong>Legacy experience</strong> (All versions of Visual Studio)</p> 
 <ul>
@@ -188,7 +191,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 
 </ul>
 </td>
@@ -201,7 +204,7 @@ To learn more about each page, see the following articles.
 
 ## Team Explorer plug-in for Eclipse
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](../java/download-eclipse-plug-in.md#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -229,7 +232,7 @@ To learn more about each page, see the following articles.
 <p><strong>Builds</strong></p> 
 <ul>
 <li><a href="../pipelines/tasks/index.md" data-raw-source="[Create build pipelines](../pipelines/tasks/index.md)">Create build pipelines</a></li>
-<li><a href="../pipelines/overview.md" data-raw-source="[View and manage builds](../pipelines/overview.md)">View and manage builds</a></li>
+<li><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[View and manage builds](../pipelines/get-started/what-is-azure-pipelines.md)">View and manage builds</a></li>
 <li><a href="../pipelines/agents/pools-queues.md" data-raw-source="[Manage the build queue](../pipelines/agents/pools-queues.md)">Manage the build queue</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017" data-raw-source="[Install Continuous Delivery (CD) Tools for Visual Studio](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#install-continuous-delivery-cd-tools-for-visual-studio-2017)">Install Continuous Delivery (CD) Tools for Visual Studio</a></li>
 <li><a href="../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app" data-raw-source="[Configure and execute Continuous Delivery (CD) for your app](../pipelines/apps/cd/azure/aspnet-core-to-acr.md#configure-and-execute-continuous-delivery-cd-for-your-app)">Configure and execute Continuous Delivery (CD) for your app</a></li>
@@ -291,7 +294,7 @@ If your project is missing one or more pages, you may be able to [add functional
 
 The **Reports** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
 
-From the **Documents** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your project has been configured with a SharePoint Products portal.
+From the **Documents** page, you can [open project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) and [manage documents and document libraries](/previous-versions/azure/devops/report/sharepoint-dashboards/manage-documents-and-document-libraries). This page appears only if your project has been configured with a SharePoint Products portal.
 
 If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
@@ -314,11 +317,11 @@ From the **Settings** page, you can configure administrative features for either
 <td> 
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Security, Group Membership](../organizations/security/set-project-collection-level-permissions.md)">Security, Group Membership</a></li>
-<li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../organizations/security/set-git-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
+<li><a href="../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../repos/tfvc/set-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
-<li><a href="../report/sharepoint-dashboards/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
-<li><a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[Project Alerts](../notifications/howto-manage-team-notifications.md)">Project Alerts</a></li>
+<li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)">Project Alerts</a></li>
 </ul>
 </td>
 
@@ -349,9 +352,9 @@ To learn more about settings, see [About team, project, and organizational-level
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
-- To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-- To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh a page that you are currently viewing, choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** in the menu bar (or choose **F5**).
+- To refresh the project you currently have selected, choose :::image type="icon" source="media/work-team-explorer/IC547418.png" border="false"::: **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** (or choose **F5**).
+- To refresh the set of teams defined for the project that you currently have selected, choose **Connect**, and then choose :::image type="icon" source="../boards/media/icons/te-refresh-query-icon.png" border="false"::: **Refresh** (or choose **F5**).
 
 [!INCLUDE [temp](includes/when-to-refresh-client.md)]
 

@@ -2,14 +2,14 @@
 title: Add a custom rule to a work item type
 titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 07/09/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -35,12 +35,10 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 ## Rule composition
 
-Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run.
+Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule, for most rules. All custom rules require all conditions to be met in order to be run. 
 
 > [!NOTE]  
-> Currently, only 1 condition is supported for state-based rules.
-
-Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
+> Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md). 
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
 &nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*`
@@ -48,27 +46,90 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`
 
 
+---
+:::row:::
+   :::column span="2":::
+      **Condition**
+   :::column-end:::
+   :::column span="2":::
+      **Supported Actions**
+   :::column-end:::
+:::row-end:::  
+---  
+:::row:::  
+   :::column span="4":::
+      **Set field value or make required or read-only**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Conditions, work item is created](media/customize-workflow/conditions-basic.png)
+   :::column-end:::
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
+   :::column-end:::
+:::row-end:::
+---  
+::: moniker range=">= azure-devops-2020"
+:::row:::  
+   :::column span="4":::
+      **Restrict a transition based on State**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
+   :::column-end:::
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
+:::row-end:::
+---  
+::: moniker-end
+::: moniker range="azure-devops-2020"
+:::row:::  
+   :::column span="4":::
+      **Hide field or make field read-only or required based on State and user or group membership**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
+   :::column-end:::
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
+   :::column-end:::
+:::row-end:::
+--- 
+::: moniker-end
 ::: moniker range="azure-devops"
-
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions.png)
-
-> [!NOTE]  
-> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
-
+:::row:::  
+   :::column span="4":::
+      **Based on and user or group membership, set field attribute or restrict a State transition**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
+   :::column-end:::
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership.png)
+   :::column-end:::
+:::row-end:::
+--- 
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
 
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions.png)
 
-::: moniker-end
+Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
@@ -98,10 +159,7 @@ You add fields to a selected work item type.
     Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
     <img src="media/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
-
-    > [!TIP]  
-    > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.
-
+  
 	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
 
 1.  Once you've added a custom rule, open a work item and verify that the rule works as you intended.
@@ -114,39 +172,85 @@ You can temporarily disable a rule or delete it altogether.
 
 You delete or disable the rule from the actions menu of the rule.
 
-<img src="media/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
+![Delete or disable a rule](media/process/custom-rule-delete-disable-rule.png)  
 
-## Restrict modification of closed work items
+::: moniker range=">= azure-devops-2020"
 
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+## Hide or restrict modification of a field based on a user or group 
+
+When you select the `Current user is a member of group...` or `Current user is not a member of group...`, you can hide a field, make a field read-only, or make a field required. 
+
+For example, the following condition indicates that the Justification field is hidden for members who don't belong to the Fabrikam Fiber\Voice group.  
+
+:::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
 
-::: moniker range="azure-devops"
-
-## Restrict modification of work items based on a user or group
-
-You can add rules to work item types to support these restriction requests:
-
-- Restrict who can create or modify a work item
-- Restrict who can create a work item types 
-- Restrict who can modify a specific field for a work item type
-- Hide field from the form
-
-For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
-
-> [!div class="mx-imgBorder"]  
-> ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
-
-For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule.  
-
-> [!NOTE]   
-> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
+[!INCLUDE [temp](../../../boards/includes/note-work-item-caching-rules-simple.md)]
 
 ::: moniker-end
 
 
+<a id="restrict-modifications-wits" />
+
+::: moniker range=">= azure-devops-2020"
+
+## Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range="azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-work-items.md)]
+
 
 ## Related articles
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Apply rules to workflow states](apply-rules-to-workflow-states.md)  
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
+- [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  
+
+
+<!---
+
+
+
+
+
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions-cloud.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](media/rules/when-condition-2020.png) | ![list of actions](media/rules/rule-actions-2020.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions-2019.png)
+
+::: moniker-end
+
+--> 

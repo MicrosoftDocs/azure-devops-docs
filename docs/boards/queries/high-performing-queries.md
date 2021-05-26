@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 09/26/2019  
 ---
@@ -15,14 +15,14 @@ ms.date: 09/26/2019
 
 # Guidance to create high-performing queries  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
 
 > [!NOTE]   
 > Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
-This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command.
+This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/boards#az_boards_query) command.
 
 
 
@@ -81,6 +81,6 @@ Saved queries have a higher chance of performing better due to internal optimiza
 - [Service limits and rate limits](../../user-guide/service-limits.md) 
 - [Create managed queries](using-queries.md)
 - [Query fields, operators & macros](query-operators-variables.md)
-- [WIQL syntax](wiql-syntax.md)
+- [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
-- [az boards query command](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query)
+- [az boards query command](/cli/azure/boards#az_boards_query)

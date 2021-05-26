@@ -7,7 +7,7 @@ description: Query for data about the files and projects that were built and inf
 ms.assetid: 3d97e0e9-84ac-4662-84fe-36a38eb463b7
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
@@ -41,4 +41,4 @@ FactBuildProject is associated with the following dimension tables:
 -  [Build Summary](build-summary-report.md)   
 -  [Build Details tables](table-reference-build-details.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md)   
+- [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md)

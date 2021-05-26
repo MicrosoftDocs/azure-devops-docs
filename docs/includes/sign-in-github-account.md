@@ -31,7 +31,7 @@ ms.topic: include
 
 An organization is created based on the account you used to sign in. Sign in to your organization at any time, (`https://dev.azure.com/{yourorganization}`).
 
-You can rename and delete your organization, or change the organization location. To learn more, see [Manage organizations](/azure/devops/organizations/accounts/organization-management).
+You can rename and delete your organization, or change the organization location. To learn more, see [Manage organizations](../organizations/accounts/organization-management.md).
 
 ### Enable GitHub invitations
 
@@ -41,6 +41,4 @@ Once the setting is changed, sign out of Azure DevOps, and then from a fresh bro
 
 ![Invite GitHub users policy ](/azure/devops/media/invite-github-users-policy.png)
 
-For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.md).
-
-
+For more information about GitHub authentication, see [FAQs](../organizations/security/faq-github-authentication.yml).

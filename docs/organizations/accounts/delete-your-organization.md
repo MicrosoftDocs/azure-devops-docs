@@ -8,7 +8,7 @@ ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2019
+ms.date: 04/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,10 +16,10 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
+When you no longer need an organization, you can delete it from Azure DevOps. If you change your mind within 28 days, you can [recover your organization](./recover-your-organization.md).
 After 28 days, your organization and data are permanently deleted.
 
-When you delete your organization, note the following:
+When you delete your organization, note the following occurrences:
 
 * All users lose access to organization services and resources immediately.
 
@@ -35,7 +35,7 @@ To delete your organization, you need Project Collection Administrator permissio
 
 ## Prerequisites
 
-If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before you can delete your organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-subscription) before you can delete your organization in Azure DevOps.
 
 ## Delete organization
 
@@ -59,6 +59,12 @@ permissions. [How do I find the Project Collection Administrators?](../security/
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 
-   [Need help?](faq-delete-restore-organization.md#get-support)
+   [Need help?](faq-configure-customize-organization.yml#get-support)
 
+Your organization is deleted.
 
+## Related articles
+
+- [Recover your deleted organization](recover-your-organization.md)
+- [Resolve an orphaned organization](resolve-orphaned-organization.md)
+- [Create a new organization](create-organization.md)

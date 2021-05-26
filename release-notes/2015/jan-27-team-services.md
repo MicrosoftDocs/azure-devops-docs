@@ -20,7 +20,7 @@ First and foremost, I’m excited to announce that this week we are rolling out 
 - Work item chart authoring
 - Team Rooms
 
-This change means all teams of five or fewer members have access to these features in Visual Studio Online for free, while larger teams can access this functionality at a much lower price point. Brian Harry will be talking more about the impact of this change on his blog at [https://blogs.msdn.com/bharry](https://blogs.msdn.com/bharry).
+This change means all teams of five or fewer members have access to these features in Visual Studio Online for free, while larger teams can access this functionality at a much lower price point. Brian Harry will be talking more about the impact of this change on his blog at [https://devblogs.microsoft.com/bharry/](https://devblogs.microsoft.com/bharry/).
 
 Now that the big news is out of the bag, let’s jump into a few improvements to the service…
 

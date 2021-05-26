@@ -2,14 +2,14 @@
 title: Add a custom field to an inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom field to the web form of a work item type for an Inheritance process model and apply it to a project. 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/24/2020
+ms.date: 07/17/2020
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
@@ -32,6 +32,7 @@ To learn more about what you can customize, see [About process customization and
 [!INCLUDE [temp](../includes/create-inherited-process.md)]
 
 <a id="add-wit">  </a>
+
 ## Add a field 
 
 You always add a field to an existing work item type.  
@@ -45,7 +46,7 @@ You always add a field to an existing work item type.
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 	
-1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
@@ -59,7 +60,7 @@ You always add a field to an existing work item type.
 
     <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
-	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist)(customize-process-field.md#add-a-pick-list), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), [Checkbox](customize-process-field.md#add-a-checkbox-field).  
+	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), and [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 
 	<a id="options">  </a>  
 1.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
@@ -92,6 +93,10 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
+	::: moniker range="azure-devops-2020"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
+	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
@@ -102,6 +107,10 @@ We recommend that you create a test project and apply your customized  inherited
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2020"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
@@ -118,7 +127,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](media/process/add-custom-field-verify-bug.png) 
 
-1.  Verify that the field you added appears on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+1.  Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-bug-form.png) 
@@ -128,12 +137,15 @@ We recommend that you create a test project and apply your customized  inherited
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 
 > Or
-> [Add or manage fields](customize-process-wit.md)
+> [Add or manage fields](customize-process-work-item-type.md)
 
 ## Related articles  
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add and manage fields for an inherited process](customize-process-field.md#show-hide-field) 
 - [Customize a project using an inherited process](customize-process.md)

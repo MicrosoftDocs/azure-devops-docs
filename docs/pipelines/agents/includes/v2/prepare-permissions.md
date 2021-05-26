@@ -1,6 +1,7 @@
 ---
 ms.topic: include
 ms.technology: devops-cicd
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 02/12/2020
@@ -9,10 +10,10 @@ ms.date: 02/12/2020
 ### Decide which user you'll use
 
 As a one-time step, you must register the agent. Someone with permission to
-[administer the agent queue](/azure/devops/organizations/security/about-security-roles?view=azure-devops#agent-queue-security-roles)
+[administer the agent queue](../../../../organizations/security/about-security-roles.md#agent-queue-security-roles)
 must complete these steps. The agent will not use this person's
 credentials in everyday operation, but they're required to complete registration.
-Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#communication).
+Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker range=">= tfs-2017"
 
@@ -26,7 +27,7 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=" >= azure-devops-2019 < azure-devops"
 
 1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 
@@ -38,18 +39,34 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![test](/azure/devops/repos/git/media/my-profile-team-services.png)
+   ![Go to your security details.](/azure/devops/repos/git/media/my-profile-team-services.png)
 
-3. [Create a personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
+3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-   ![test](/azure/devops/repos/git/media/add-personal-access-token.png)
+   ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+2. From your home page, open your user settings, and then select **Personal access tokens**.
+
+   ![Go to your security details.](/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
+
+3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+   ![Create a personal access token.](/azure/devops/repos/git/media/select-new-token.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops"
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
-   If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
+   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
 
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
@@ -81,11 +98,11 @@ Otherwise:
 
    [!INCLUDE [agent-pools-tab](../agent-pools-tab.md)]
 
-1. Click the pool on the left side of the page and then click **Security**.
+1. Select the pool on the right side of the page and then click **Security**.
 
-1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
+1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
-   If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
+   If it's a [deployment group](../../../release/deployment-groups/index.md) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](../../../../organizations/accounts/faq-user-and-permissions-management.yml#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
    You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page in **Azure Pipelines**.
 

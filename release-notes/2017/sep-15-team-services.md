@@ -209,7 +209,7 @@ You can now easily manage all your release and environment variables using the t
 
 ### Branch filters in environment triggers
 
-In the new release definition editor, you can now specify artifact conditions for a particular environment. Using these artifact conditions, you will have more granular control on which artifacts should be deployed to a specific environment. For example, for a production environment you may want to make sure that builds generated only from the master branch are deployed. This filter needs to be set for all artifacts that you think should meet this criteria.
+In the new release definition editor, you can now specify artifact conditions for a particular environment. Using these artifact conditions, you will have more granular control on which artifacts should be deployed to a specific environment. For example, for a production environment you may want to make sure that builds generated only from the main branch are deployed. This filter needs to be set for all artifacts that you think should meet this criteria.
 
 You can also add multiple filters for each artifact that is linked to the release definition. Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
 
@@ -322,7 +322,7 @@ See the [documentation](https://aka.ms/vsmarketplace_parser) for more informatio
 > [!div class="mx-imgBorder"]
 > ![markdown-it parser](media/09_15_18.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 

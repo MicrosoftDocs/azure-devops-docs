@@ -50,9 +50,9 @@ The Azure DevOps Project automatically configures a CI build and release trigger
 
 The Azure DevOps Project created a Git repository in your Azure Repos or GitHub organization.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
 
-1. On the left-hand side of the DevOps project dashboard, select the link for your **master** branch.  This link opens a opens a view to the newly created Git repository.
+1. On the left-hand side of the DevOps project dashboard, select the link for your **main** branch.  This link opens a opens a view to the newly created Git repository.
 
-1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the master branch.
+1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the main branch.
 
 1. On the left-hand side of the browser, navigate to the **views/index.pug** file.
 
@@ -115,8 +115,13 @@ When you configured your CI/CD pipeline in this quickstart, a build and release 
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| | |
+:::row:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+:::row-end:::

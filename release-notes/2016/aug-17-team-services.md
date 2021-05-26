@@ -51,7 +51,7 @@ Use the full power of markdown in all of your discussions, including formatting,
 
 ### Auto-complete pull requests waiting on policies
 
-Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=azure-devops)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
+Teams that are using branch policies ([/vsts/repos/git/branch-policies-overview](/azure/devops/repos/git/branch-policies-overview?view=azure-devops&preserve-view=true)) to protect their branches will want to check out the auto-complete action. Many times, the author of a pull request will be ready to merge their PR, but they’re waiting on a build to finish before they can click Complete. Other times, the build is passing, but there is one reviewer that hasn’t given the final approval. In these cases, the auto-complete action lets the author set the PR to automatically complete as soon as the policies are all approved.
 
 ![Auto-complete](media/8_17_06.png)
 
@@ -103,7 +103,7 @@ The SSH task provides a way to run commands and scripts on remote machines via s
 
 ### Create archives from builds and releases
 
-A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/).
+A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/](https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/).
 
 ### Copy files over SSH from builds and releases
 
@@ -149,7 +149,7 @@ Does your team have a lot of build definitions. You can now use folders to keep 
 
 ![Definitions, All](media/8_17_14.png)
 
-![Manage folders](media/8_17_15.png)
+![Manage folders in All Definitions tab.](media/8_17_15.png)
 
 > [!TIP]
 > Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.
@@ -230,7 +230,7 @@ You can unpublish free extensions, if you no longer want to offer them in the Ma
 
 To unpublish, select the extension on your [Marketplace publisher page](https://aka.ms/vsmarketplace-manage) and choose Unpublish on the menu. Your extension will be unpublished immediately from Marketplace and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. To offer your extension again in Marketplace, choose Publish on the menu.
 
-Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension.
+Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We will review the request and manually delete the extension.
 
 ## Administration
 

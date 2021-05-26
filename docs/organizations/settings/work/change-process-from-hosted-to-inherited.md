@@ -2,7 +2,7 @@
 title: Change a project from Hosted XML process
 titleSuffix: Azure DevOps      
 description: Upgrade a project that uses a Hosted XML process model to an inherited process in Azure DevOps Services
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
@@ -21,6 +21,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 > Choosing to clone a project from a Hosted XML process model to an inherited process is an irreversible operation. Before you change the process of an existing project from Hosted XML to the cloned inherited process, review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md) to understand which customizations are preserved and which are not before you change the process of a project from Hosted XML to an inherited process. Also, [create a test project](upgrade-hosted-to-inherited.md#verify) to verify the customizations preserved or reapplied to a process.
 
 ## Prerequisites 
+
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Web App Container
 
-You can automatically deploy your web app to an [Azure Web App for Linux Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker-go) after every successful build.
+You can automatically deploy your web app to an [Azure Web App for Linux Containers](/azure/app-service/containers/quickstart-docker-go) after every successful build.
 
 ## Before you begin
 
@@ -58,15 +58,15 @@ However, if you are a new user, then you might get a better start by using our s
 
 #### [.NET Core](#tab/dotnet-core/)
 
-Follow the [Build, test, and push Docker container apps](../languages/docker.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+Follow the [Build, test, and push Docker container apps](../ecosystems/containers/build-image.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
 #### [Java](#tab/java)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops).
+Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
 
 #### [Nodejs](#tab/nodejs)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops).
+Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
 
 ::: moniker-end
 
@@ -126,10 +126,10 @@ You must supply an Azure service connection to the `AzureWebAppContainer` task. 
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
-    containerRegistry: <Name of the Azure container registry>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
+  containerRegistry: <Name of the Azure container registry>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureWebAppContainer@1
@@ -170,7 +170,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
 
-![container-settings](media/webapp-linux/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
 
 ## Deploy with Azure Web App for Container
 
@@ -184,11 +184,10 @@ To deploy to an Azure Web App container, add the following snippet at the end of
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: <Docker registry service connection>
   imageRepository: <Name of your image repository>
   containerRegistry: <Name of the Azure container registry>
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'

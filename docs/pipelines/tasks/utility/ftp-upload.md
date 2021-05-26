@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
+Use this task to upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 
 ::: moniker range="<= tfs-2018"
 
@@ -44,7 +44,7 @@ None
 | `username` <br/> Username | (Required) |
 | `password` <br/> Password | (Required) |
 | `rootFolder` <br/> Root folder | (Required) The source folder to upload files from <br/>Argument aliases: `rootDirectory`|
-| `filePatterns` <br/> File patterns | (Required) File paths or patterns of the files to upload.  Supports multiple lines of minimatch patterns. [More Information](https://go.microsoft.com/fwlink/?LinkId=800269).<br/>Default value: **|
+| `filePatterns` <br/> File patterns | (Required) File paths or patterns of the files to upload.  Supports multiple lines of minimatch patterns. [More Information](./extract-files.md).<br/>Default value: **|
 | `remotePath` <br/> Remote directory | (Required) Upload files to this directory on the remote FTP server. <br/>Default value: /upload/$(Build.BuildId)/ <br/>Argument aliases: `remoteDirectory`|
 | `enableUtf8` <br/> Enable UTF8 support | (Optional) Enables UTF-8 support for the FTP connection ('OPTS UTF8 ON') <br/>Default value: false|
 | `clean` <br/> Delete remote directory | (Required) Delete the remote directory including its contents before uploading <br/>Default value: false|
@@ -57,7 +57,7 @@ None
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

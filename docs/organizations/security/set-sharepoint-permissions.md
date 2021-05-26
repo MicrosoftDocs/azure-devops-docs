@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 [!INCLUDE [version-tfs-2013-2017](../../includes/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]
-> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 
+> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/dashboards/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). 
 
 ## Add users to SharePoint site
 
@@ -31,7 +31,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
     -   To add users who act as project leads, choose **Full Control**.
 
 For more information about users and groups in SharePoint Products,
-[go here](https://technet.microsoft.com/library/cc262690.aspx).
+[go here](/SharePoint/sites/determine-permission-levels-and-groups-in-sharepoint-server).
 
 If your TFS deployment is integrated with SQL Server Reporting Services,
 you'll need to manage users in the appropriate SQL Server Reporting Services groups,
@@ -51,6 +51,4 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/media/add-administrator-tfs/people-and-groups.png)
-
-
+	![Follow instructions for your version of SharePoint](media/people-and-groups.png)

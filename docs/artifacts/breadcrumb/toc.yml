@@ -5,7 +5,4 @@
   - name: Azure Artifacts
     tocHref: /azure/devops/artifacts
     topicHref: /azure/devops/artifacts/index
-    items: 
-    - name: Publish Artifacts with Azure Pipelines
-      tocHref: /azure/devops/pipelines/
-      topicHref: /azure/devops/pipelines/artifacts/nuget
+

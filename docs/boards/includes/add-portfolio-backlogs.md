@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 
@@ -13,7 +17,7 @@ You can add them by customizing your process, adding new work item types, and th
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You can add them by either customizing your inherited process or modifying your XML definition files. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project: 
 

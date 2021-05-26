@@ -77,13 +77,13 @@ When running tests in Web runner, launched either from a card on the board or fr
 
 ## Test – History across branches
 
-It’s a common scenario for an individual test to run on multiple branches, environments and configurations. When such a test fails, it’s important to identify whether the failure is contained to development branches such as the master branch, or release branches that deploy to production environments. You can now visualize the history of a test across various branches by looking at the History tab in result summary page. Navigate to the first build in which the failure was introduced for additional context: commits and build logs. We plan to add support for visualizing history across additional pivots (environments and configurations) in upcoming sprints.
+It’s a common scenario for an individual test to run on multiple branches, environments and configurations. When such a test fails, it’s important to identify whether the failure is contained to development branches such as the main branch, or release branches that deploy to production environments. You can now visualize the history of a test across various branches by looking at the History tab in result summary page. Navigate to the first build in which the failure was introduced for additional context: commits and build logs. We plan to add support for visualizing history across additional pivots (environments and configurations) in upcoming sprints.
 
 ![History tab in the result summary page](media/6_17_08.png)
 
 ## Test – Automated testing for SCVMM and VMWare
 
-Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](https://go.microsoft.com/fwlink/?LinkId=799813).
+Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](/visualstudio/test/lab-management/install-configure-test-agents).
 
 ## Release – Test status visibility
 
@@ -93,13 +93,13 @@ It’s a recommended practice to use Release Environments to deploy applications
 
 ## Release – Support Java PMD analysis in Maven build task
 
-You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box).
+You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](https://devblogs.microsoft.com/devops/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box/).
 
 ![Running a PMD analysis in the Maven build task](media/6_17_10.png)
 
 ## Build – SonarQube with a Gradle build task
 
-You can now trigger a SonarQube analysis in the Gradle build task by checking **Run SonarQube Analysis**, and providing the endpoint, the SonarQube project name, the project key and the version. More information is available at this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis). 
+You can now trigger a SonarQube analysis in the Gradle build task by checking **Run SonarQube Analysis**, and providing the endpoint, the SonarQube project name, the project key and the version. More information is available at this [blog post](https://devblogs.microsoft.com/devops/the-gradle-build-task-now-supports-sonarqube-analysis/). 
 
 ![SonarQube analysis in the Gradle build task](media/6_17_11.png)
 

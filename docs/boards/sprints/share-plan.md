@@ -2,14 +2,13 @@
 title: Share your team's sprint plan 
 titleSuffix: Azure Boards
 description: Share sprint plan working with Scrum methods 
-
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -17,7 +16,7 @@ ms.date: 2/14/2019
 
 # 5. Share your sprint plan
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
  
 <a id="share" >  </a>
 
@@ -32,14 +31,14 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ## Open a Sprint backlog for a team 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
 
-   To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+   To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)  
@@ -49,7 +48,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -59,7 +58,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 1. ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
-   To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+   To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)  
@@ -69,12 +68,12 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -93,7 +92,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -102,7 +101,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= azure-devops-2019"
 
-1. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 

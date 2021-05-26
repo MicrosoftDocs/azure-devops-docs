@@ -1,2 +1,1 @@
-If you haven't already, look at the information on [getting started](../../get-started/rest/basics.md) with these APIs.
-
+If you haven't already, look at the information on [getting started](/rest/api/azure/devops/) with these APIs.

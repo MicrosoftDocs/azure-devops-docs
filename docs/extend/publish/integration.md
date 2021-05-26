@@ -1,6 +1,6 @@
 ---
 ms.technology: devops-ecosystem
-title: Package and Publish an Integration | Extensions for Azure DevOps Services
+title: Package and Publish an Integration
 description: How to package and publish your integration to the Visual Studio Marketplace
 ms.assetid: 61550050-c6d7-40e1-9ea7-030b48b04e3b
 ms.topic: conceptual
@@ -12,7 +12,9 @@ ms.date: 08/29/2016
 
 # Package and publish an integration to the Marketplace
 
-Do you have a tool, service, or product that integrates with Azure DevOps Services or Team Foundation Server?
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+Do you have a tool, service, or product that integrates with Azure DevOps or Team Foundation Server (TFS)?
 If so, help users find it by publishing it on the Visual Studio Marketplace.
 The Marketplace is a one-stop-shop for individuals and teams to find tools that extend and enhance the experience. 
 
@@ -28,21 +30,21 @@ The Marketplace is a one-stop-shop for individuals and teams to find tools that 
 ## What you need
 
 1. 128x128 pixel logo (PNG or JPEG format) representing your integration, yourself, or your company/organization
-2. Minimum of 1 screen shot showing your integration
+2. Minimum of one screenshot showing your integration
 3. Call to action / get started URL (where users should go to get started with your integration)
 
 ## Steps
 
-Publishing to the Marketplace is an iterative process that starts with creating a manifest file that defines your integration and key discovery characteristics (like screen shots, logos, and overview content). This information is used to present your integration to users on the Marketplace, for example:
+Publishing to the Marketplace is an iterative process that starts with creating a manifest file that defines your integration and key discovery characteristics (like screenshots, logos, and overview content). This information is used to present your integration to users on the Marketplace, for example:
 
 ![example](./media/integration-example.png)
 
-[Jenkins for Azure DevOps Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
+[Jenkins for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
 Note: The term, `extension`, is used in documentations referenced below. Extensions are another type of Marketplace item and share many similarities from a discovery standpoint as integrations.
 
 <div class="alert alert-info">
-    Need help getting your integration on the Marketplace? <a href="https://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](https://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
+    Need help with getting your integration on the Marketplace? <a href="https://go.microsoft.com/fwlink/?LinkId=615292" data-raw-source="[Contact us](https://go.microsoft.com/fwlink/?LinkId=615292)">Contact us</a>. And, yes, this e-mail address is monitored by real people. 
 </div>
 
 ### Create a publisher
@@ -55,12 +57,12 @@ Before you package your integration as an extension, you'll need to create a `ho
 
 1. Create a folder called `images` to contain:
     * Logo for your integration (128x128 pixels)
-    * Screen shots (1366x768 pixels)
+    * Screenshots (1366x768 pixels)
 2. Create a file called `overview.md`
-    * This is where you'll describe your integration.
+    * Describe your integration here
     * To learn more about markdown, see [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 3. Create a file called `vss-integration.json`
-    * This is your Marketplace listing's manifest file, it contains many properties to describe your extension in your Marketplace listing. You can browse the [extension manifest reference here](../develop/manifest.md)
+    * This file is your Marketplace listing's manifest file, it contains many properties to describe your extension in your Marketplace listing. You can browse the [extension manifest reference here](../develop/manifest.md)
 
 #### Extension Manifest
 
@@ -86,7 +88,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 ![card](../develop/media/extension-details-page.png)
 
 <div class="alert alert-danger">
-  Make sure the &quot;public&quot; attribute is set to &quot;false&quot; (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 
+  Make sure the &quot;public&quot; attribute gets set to &quot;false&quot; (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 
 </div>
 
 <a name="package"></a>
@@ -94,7 +96,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 ### Package your manifest and assets
 
 #### Get the package tool (tfx-cli)
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
+You can install or update the Cross-platform CLI for Azure DevOps (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
@@ -115,9 +117,9 @@ tfx extension create --manifest-globs vss-extension.json
 [!INCLUDE [Publish_extension](../includes/procedures/publish.md)]
 
 ### Share your integration
-Before an integration can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
+Before you can install an integration into an organization in Azure DevOps or TFS, you must share it with that organization. Sharing is a requirement during development and testing of an integration, as it's the only way to run an integration.
 
-To share an integration so it can be installed:
+To share an integration do the following tasks:
 
 1. Select an integration from the list of displayed items 
 2. Select the **Share** button

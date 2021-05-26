@@ -1,0 +1,206 @@
+### YamlMime:FAQ
+metadata:
+  title: Work in Excel connected to Azure Boards FAQs
+  description: Answers to frequently asked questions about Excel and Azure Boards 
+  titleSuffix: Azure Boards
+  ms.technology: devops-agile
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: '<= azure-devops'
+  ms.date: 03/03/2021
+
+
+title: Work in Excel connected to Azure Boards FAQs   
+
+ 
+summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+
+  Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
+
+  If you are having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
+
+sections:
+
+  - name: Connect and versioning support
+
+    questions: 
+
+      - question: What versions of Azure DevOps work with Excel?
+        answer: |
+          All versions from TFS 2013 through Azure DevOps Server 2020 and Azure DevOps Services/Azure Boards support integration with Microsoft Excel.
+
+      - question: What do I need to use Excel to add or modify work items?
+        answer: |
+          You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
+
+          > [!IMPORTANT]  
+          > Microsoft Project Integration and the **TFSFieldMapping** command are not supported for:  
+          > - Visual Studio 2019 and Azure DevOps Office® Integration 2019  
+          > - Azure DevOps Server 2019 and later versions, including Azure DevOps Services. 
+          > 
+          > However, full support for Microsoft Excel integration is maintained and is the recommended alternative.
+
+          Once you've installed the add-in, open Excel and look for the **Team** ribbon.
+
+      - question: Can I use Excel on my Mac?
+        answer: |
+          **No**. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.
+
+      - question: Can I open a query in Excel from the web portal?  
+        answer: |
+          **Yes**. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
+
+          > [!div class="mx-imgBorder"]  
+          > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
+
+      - question: What query macros aren't supported in Excel?
+        answer: |
+          The following macros are only supported from the web portal: **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
+
+      - question: Can I import or update work items without using Excel?  
+        answer: | 
+          ::: moniker range=">= azure-devops-2020" 
+          **Yes**. You can do a bulk import of new work items or update existing work items without using Excel. See [Import work items](../../queries/import-work-items-from-csv.md).
+          ::: moniker-end  
+
+          ::: moniker range="azure-devops-2019" 
+          **No**. For Azure DevOps Server 2019, Excel is the only supported method.
+          ::: moniker-end  
+
+          ::: moniker range="<= tfs-2018"  
+          **Yes**. For TFS 2018 and earlier versions, you can use Microsoft Project to perform bulk import and updates of work items. See [Create your backlog and tasks using Microsoft Project](create-your-backlog-tasks-using-project.md).  
+          ::: moniker-end  
+
+      - question: How do I connect an existing Excel workbook to Azure DevOps?  
+        answer: |
+          See [Connect Azure Boards to an Office client](track-work.md#excel-project). 
+
+      - question: How do I share an Excel workbook with others? 
+        answer: |
+          If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
+
+      - question:  How do I connect when special protocols are in use on my network?   
+        answer: |
+          If your network uses TLS 1.1 or TLS 1.2 security protocol, then you may have network connection issues. To resolve these issues, see [Allowed address lists and network connections, Domain URLs to allow](../../../organizations/security/allow-list-ip-url.md#domain-urls-to-allow).
+
+      - question: How do I disable the Team menu?   
+        answer: |
+          If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460).  
+
+  - name: Work with linked work items
+     
+    questions: 
+
+      - question:  How do I publish to a tree? 
+        answer: |
+          Follow the instructions provided in [Bulk add or modify work items with Excel, Import work items, tree list](bulk-add-modify-work-items-excel.md#tree-list) 
+
+      - question: Why does my direct-links query appear as a flat list in Excel?
+        answer: |
+          When you open a direct-links query in Excel, the add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
+
+
+      - question: Can I bulk-edit link types other than tree-topology link types? 
+        answer: |
+          **No**. Excel only supports adding and modifying hierarchical links. To bulk edit links of other types, you can use the following clients: 
+          ::: moniker range=">= azure-devops-2020" 
+          - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+          - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+          - Use the [az boards work-item relation add](/cli/azure/boards/work-item/relation) command.
+          ::: moniker-end 
+
+          ::: moniker range="azure-devops-2019" 
+          - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+          - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+          ::: moniker-end 
+
+          ::: moniker range=">= tfs-2015 <= tfs-2018" 
+          - Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships. 
+          - Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+          - Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+          ::: moniker-end 
+
+
+  - name: Work with test work items 
+     
+    questions: 
+
+      - question: Can I bulk add or edit test cases with Excel? 
+        answer: |
+          **No**. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
+            
+          > [!div class="mx-imgBorder"]  
+          > ![Test grid view](/azure/devops/test/media/create-test-cases/newtestcasesusinggrid.png)
+
+  - name: Publish and refresh 
+     
+    questions: 
+
+      - question: How can I show additional fields?
+        answer: |
+          If you start your worksheet with a **New List**, you'll see only a set of default field columns. You can add columns using the **Choose Columns** on the Team menu. 
+
+          If you start your worksheet from an existing query, you'll see all the column fields defined for the query. From there, you can add columns using the **Choose Columns** on the Team menu. However, your additions don't modify the underlying query.  
+
+          > [!div class="mx-imgBorder"]  
+          > ![Choose columns dialog](media/excel/choose-columns.png)
+
+      - question: How do I resolve publishing issues?  
+        answer: |
+          To resolve publishing errors that arise when working in Excel, see one of the following topics: 
+          - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
+            A data conflict occurs when one team member changes a field value in Excel at the same time another team member changes the same field in Azure Boards.
+
+          - [Resolve data validation errors](resolve-excel-data-validation-errors.md):
+            A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
+
+          - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
+            An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+
+          - [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
+            If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
+
+      - question: Can I delete work items from Excel?
+        answer: |
+          ::: moniker range=">= azure-devops-2020" 
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          ::: moniker-end 
+
+          ::: moniker range="< azure-devops-2020" 
+          **No**. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For details, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+          ::: moniker-end 
+
+  - name: Use built-in Excel functions
+     
+    questions: 
+
+      - question: Can I use multiple worksheets within Excel? 
+        answer: |
+          **Yes**. Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within an organization or project collection.  
+          
+          To bulk add or modify work items in a different project, open a new Excel workbook. 
+
+      - question: Can I use Excel cut and paste functions? 
+        answer: |
+          **Yes**. You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to resequence items within a list and change link relationships among work items.
+          
+          To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](media/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
+
+          > [!TIP]  
+          > When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Changes you make to a date format field are overwritten with the date format used by the server.  
+
+      - question: How do I enable the Developer tab? 
+        answer: |
+          See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon). 
+
+
+additionalContent: | 
+  ## Related articles
+  - [Query FAQs](../../queries/query-faqs.yml)
+  - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) 
+  - [Create your backlog](../../backlogs/create-your-backlog.md) 
+  - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
+  - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+

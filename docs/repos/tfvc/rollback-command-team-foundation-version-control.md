@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Rollback Command (Team Foundation Version Control)
 ms.assetid: 8cbca369-eda2-459b-aa37-c86ec2eab3b0
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Rollback Command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can use this command to roll back the effects of one or more changesets to one or more version-controlled items. This command does not remove the changesets from an item's version history. Instead, this command creates in your workspace a set of pending changes that negate the effects of the changesets that you specify.
 
@@ -41,12 +39,12 @@ tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:
 	<td><p>Use this argument with the <strong>/changeset</strong> option to specify the changesets that you want to roll back. You can specify the changesets in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/changeset:C11</strong></p></li><li><p>A range of changesets</p><p>Example: <strong>/changeset:C7~C20</strong></p></li><li><p>A date</p><p>Example: <strong>/changeset:D09/30/09</strong></p></li><li><p>A range of dates</p><p>Example:<strong>/changeset:D09/23/09~D10/07/09</strong></p></li><li><p>The most recent changeset</p><p>Example: <strong>/changeset:Tip</strong> or <strong>/changeset:T</strong></p></li></ul></td></tr>
 <tr>
 	<td><p><em>ItemSpec</em></p></td>
-	<td><p>Use this argument to specify one or more items that you want to roll back. If you are using the <strong>/toversion</strong> option, you must specify this argument.</p><p>For more information about how Team Foundation parses item specifications, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p><div class="alert"><div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml"><div class="mtps-row"><strong>Note:</strong></div><div class="mtps-row">
+	<td><p>Use this argument to specify one or more items that you want to roll back. If you are using the <strong>/toversion</strong> option, you must specify this argument.</p><p>For more information about how Team Foundation parses item specifications, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p><div class="alert"><div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml"><div class="mtps-row"><strong>Note:</strong></div><div class="mtps-row">
 You can specify more than one <em>Itemspec</em> argument.
 </div></div></div></td></tr>
 <tr>
 	<td><p><em>VersionSpec</em></p></td>
-	<td><p>The user-provided value for both the <strong>/version</strong> option and the <strong>/toversion</strong> option.</p><p>Use this argument with the <strong>/toversion</strong> option to revert a file to its state in a specific changeset. You can specify the version in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/toversion:C32</strong></p></li><li><p>A date (at midnight)</p><p>Example: <strong>/toversion:D06/19/09</strong></p></li><li><p>A date and a time</p><p>Example: <strong>/toversion:D06/19/09T14:32</strong></p></li><li><p>A label</p><p>Example: <strong>/toversion:LTestLabel</strong></p></li><li><p>The version in the workspace that is mapped to the current directory</p><p>Example: <strong>/toversion:W</strong></p></li><li><p>The version in a specific workspace</p><p>Example: <strong>/toversion:WResolveRIConflicts;AKerry</strong></p></li></ul><p>For more information about how Team Foundation parses versionspecs, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr></tbody>
+	<td><p>The user-provided value for both the <strong>/version</strong> option and the <strong>/toversion</strong> option.</p><p>Use this argument with the <strong>/toversion</strong> option to revert a file to its state in a specific changeset. You can specify the version in the following ways:</p><ul><li><p>A single changeset</p><p>Example: <strong>/toversion:C32</strong></p></li><li><p>A date (at midnight)</p><p>Example: <strong>/toversion:D06/19/09</strong></p></li><li><p>A date and a time</p><p>Example: <strong>/toversion:D06/19/09T14:32</strong></p></li><li><p>A label</p><p>Example: <strong>/toversion:LTestLabel</strong></p></li><li><p>The version in the workspace that is mapped to the current directory</p><p>Example: <strong>/toversion:W</strong></p></li><li><p>The version in a specific workspace</p><p>Example: <strong>/toversion:WResolveRIConflicts;AKerry</strong></p></li></ul><p>For more information about how Team Foundation parses versionspecs, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr></tbody>
 </table>
 
 <table><tbody>
@@ -59,10 +57,10 @@ You can specify more than one <em>Itemspec</em> argument.
 	<td><p>This option has an effect only if one or more of the changesets that you are rolling back include a <strong>branch</strong> or <strong>merge</strong> change. Specify this option if you want future merges between the same source and the same target to exclude the changes that you are rolling back.</p></td></tr>
 <tr>
 	<td><p><strong>/lock</strong></p></td>
-	<td><p>Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see <a href="https://msdn.microsoft.com/library/ms181419">Understanding Lock Types</a>.</p><p>Lock Options</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.</p></li><li><p><strong>Checkin</strong></p><p>Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. </p></li></ul></td></tr>
+	<td><p>Specify this option to prevent other users from checking in or checking out items until you finish rolling back all associated changes. For more information, see <a href="/azure/devops/repos/tfvc/understand-lock-types?viewFallbackFrom=vsts">Understanding Lock Types</a>.</p><p>Lock Options</p><ul><li><p><strong>None</strong></p><p>Default. No lock is applied. If the file that you are rolling back has been locked, this option removes the lock.</p></li><li><p><strong>Checkin</strong></p><p>Locks an item until you release the lock by performing a check-in. Other users can check out the specified items, but the users cannot check in revisions until the lock is removed. You cannot lock a file that is already locked.</p></li><li><p><strong>Checkout</strong></p><p>Prevents users from checking in or out a locked item until you remove the lock by performing a check-in. </p></li></ul></td></tr>
 <tr>
 	<td><p><strong>/login</strong></p></td>
-	<td><p>For information about this option, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p></td></tr>
+	<td><p>For information about this option, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p></td></tr>
 <tr>
 	<td><p><strong>/noprompt</strong></p></td>
 	<td><p>Suppresses any dialog boxes that would otherwise appear during this operation.</p></td></tr>
@@ -188,8 +186,8 @@ For example, you can use this command in the following situation:
 
 #### Concepts
 
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](https://msdn.microsoft.com/library/ms194957)
+[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

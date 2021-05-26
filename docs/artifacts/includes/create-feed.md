@@ -4,66 +4,55 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 03/10/2021
 ---
 
-A feed is a container for packages.
-You consume and publish packages through a particular feed.
+With Azure Artifacts, you can create two types of feeds: project-scoped and organization-scoped feeds. All public feeds are project-scoped and they inherit the hosting project's visibility settings. By default, any feed that's created by using the web UI is a project-scoped feed, as follows.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to **Azure Artifacts**:
+1. From within your project, navigate to **Azure Artifacts**.
 
    > [!div class="mx-imgBorder"] 
-   >![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
-   > 
+   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-2. Select **+ New feed**:
-
-   > [!div class="mx-imgBorder"] 
-   >![New feed button](../media/new-feed-button-azure-devops-newnav.png)
-   > 
-
-3. In the dialog box:
-
-   - Give the feed a name.
-   - Choose who can read and contribute (or update) packages in your feed.
-   - Choose the upstream sources for your feed.
-   - When you're done, select **Create**.
-
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
-   > [!NOTE]   
-   > There are some important things to consider when publishing packages that involve upstream sources. Check out the documentation on [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more information.
+2. Select **Create Feed**.
 
    > [!div class="mx-imgBorder"] 
-   >![New feed dialog box](../media/new-feed-dialog.png)
-   > 
+   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
+
+3. Give your feed a **Name** and choose its **visibility**, **upstream sources**, and **scope** settings.
+
+   > [!div class="mx-imgBorder"] 
+   > ![New feed dialog box](../media/new-feed-dialog-azure-devops.png)
+
+4. When you are done, select **Create**.
+
+> [!NOTE]   
+> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2019"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Go to the **Packages** page:
+Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](../start-using-azure-artifacts.md?preserve-view=true&view=tfs-2018#assign-licenses-in-tfs)
 
-    ![Go to Azure Artifacts](../media/goto-feed-hub.png)
+1. Go to **Build & Release** and select **Packages**.
 
-2. Select **+ New feed**:
+   > [!div class="mx-imgBorder"] 
+   > ![Go to Azure Artifacts TFS](../media/goto-feed-hub.png)
 
-    ![New feed button](../media/new-feed-button.png)
+2. Select **+ New feed**.
 
-3. In the dialog box:
+   > [!div class="mx-imgBorder"] 
+   > ![New feed button TFS](../media/new-feed-button.png)
 
-   - Give the feed a name.
-   - Choose who can read and contribute (or update) packages in your feed.
-   - Choose the upstream sources for your feed.
-   - When you're done, select **Create**.
+3. Give your feed a **Name**, a **Description**, and set up **who can read**, **who can contribute** and if you want to **Include external packages**.
 
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
-   > [!NOTE]   
-   > There are some important things to consider when publishing packages that involve upstream sources. Check out the documentation on [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more information.
+   > [!div class="mx-imgBorder"] 
+   > ![New feed dialog box TFS](../media/new-feed-dialog-azure-tfs.png)
 
-   ![New feed dialog box](../media/new-feed-dialog.png)
+> [!NOTE]   
+> Enabling upstream sources allows you to consume packages from public registries and gives you more protection against outages and corrupted packages.
 
 ::: moniker-end
-
-You can change these settings later by [editing the feed](../feeds/edit-feed.md).

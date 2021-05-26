@@ -4,8 +4,6 @@ description: Execute a bash script when building code in Azure Pipelines and Tea
 ms.topic: reference
 ms.assetid: 8D152C13-0934-4665-8D08-30E2A7841351
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a shell script using bash.
+Use this task to run a shell script using bash.
 
 ::: moniker range="<= tfs-2018"
 
@@ -110,7 +108,7 @@ On the [Build tab](../../index.yml) of a build pipeline, add this task:
 <tr>
 <td>
 
-![](media/shell-script.png)
+:::image type="icon" source="media/shell-script.png" border="false":::
 
 <br/>**Utility: Shell Script**</td>
 <td>
@@ -128,7 +126,7 @@ This example also works with release pipelines.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

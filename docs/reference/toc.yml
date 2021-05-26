@@ -1,25 +1,99 @@
-- name: About process (work tracking) customization
-  href: customize-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Compare system processes  
-  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Inheritance process model 
+- name: Azure Boards Configuration & Customization Documentation
+  href: index.yml
+- name: Quick reference index
+  href: quick-reference-index-boards-settings.md
+- name: Get started
+  items:
+  - name: Customize work tracking
+    href: customize-work.md
+  - name: Area & iteration paths
+    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set area paths
+    href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set iteration paths (sprints)
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Compare system processes
+    href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Configure & customize Azure Boards
+    href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Connect Azure Boards to GitHub
+    href: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set process permissions
+    href: ../organizations/security/set-permissions-access-work-tracking.md#process-permissions
+- name: Configure teams
+  items:
+  - name: Configure team tools
+    href: ../organizations/settings/manage-teams.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Select backlog levels
+    href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Show bugs on backlogs & boards
+    href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set working days
+    href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Customize an Inherited process
   href: ../organizations/settings/work/toc.yml
-- name: On-premises XML process model  
+- name: Customize an On-premises XML process
   href: xml/toc.yml
-- name: Hosted XML process model 
+- name: Customize a Hosted XML process
   href: ../organizations/settings/work/hosted/toc.yml
-- name: Process templates
+- name: Customize a process template
   href: process-templates/toc.yml
 - name: witadmin Reference
   href: witadmin/toc.yml
+- name: Troubleshooting 
+  items:
+  - name: Azure Boards FAQs 
+    href: ../boards/faqs.yml 
+  - name: Azure Boards customization FAQs
+    href: ../organizations/settings/work/faqs.yml
+  - name: Set up your backlogs & boards
+    href: ../boards/backlogs/set-up-your-backlog.md 
+  - name: Fix "Ordering backlog items is disabled"
+    href: ../boards/backlogs/resolve-backlog-reorder-issues.md
+    displayname: reorder, disable, nest, natural hierarchy, in progress  
+  - name: Work item form caching
+    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
+- name: Reference
+  items:
+  - name: Naming restrictions
+    href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Workflow states & categories
+    href: ../boards/work-items/workflow-and-state-categories.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
+  - name: Work tracking object limits
+    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: REST API reference
+  items:
+  - name: Area & iteration paths
+    href: /rest/api/vsts/wit/classification%20nodes
+  - name: Processes
+    href: /rest/api/azure/devops/processes/processes/list
+  - name: Process templates
+    href: /rest/api/azure/devops/processadmin/processes/export%20process%20template
+  - name: Projects
+    href: /rest/api/azure/devops/core/projects
+  - name: Teams
+    href: /rest/api/vsts/core/teams
+  - name: Work item types
+    href: /rest/api/azure/devops/wit/work%20item%20types
+  - name: API SDK reference (Deprecated)
+    items:
+    - name: IProcessTemplates.AddUpdateTemplate
+      href: ../reference/api-ref/iprocess-templates-add-update-template.md
+    - name: WorkItem.Open method
+      href: ../reference/api-ref/open.md
+    - name: WorkItem.PartialOpen method
+      href: ../reference/api-ref/partialopen.md
+- name: Archived
+  items:
+  - name: Microsoft Project Field Mapping
+    href: mapping/toc.yml
 - name: Resources
   items:
   - name: Azure Boards
-    href: /azure/devops/boards/index
+    href: ../boards/index.yml
+  - name: Settings, security, & usage
+    href: ../organizations/index.yml
   - name: Develop extensions
-    href: /azure/devops/extend/overview
-  - name: Security, access, & billing
-    href: /azure/devops/organizations/security-acces-billing/index
+    href: ../extend/overview.md
   - name: Deprecation of WIT & Test Client OM
-    href: /azure/devops/integrate/concepts/wit-client-om-deprecation
-
+    href: ../integrate/concepts/wit-client-om-deprecation.md

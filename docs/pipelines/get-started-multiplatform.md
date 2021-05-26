@@ -1,13 +1,13 @@
 ---
 title: Create a multi-platform pipeline
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 description: Build and test on macOS, Linux, and Windows
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.author: sdanie
 author: steved0x
-ms.date: 07/03/2019
-monikerRange: azure-devops
+ms.date: 05/11/2020
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create a multi-platform pipeline
@@ -110,9 +110,35 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 1. Azure Pipelines shows you the YAML file that it will use to create your pipeline.
 
-1. Select **Save and run**, and then select the option to **Commit directly to the master branch**.
+1. Select **Save and run**, and then select the option to **Commit directly to the main branch**.
 
 1. The YAML file is pushed to your GitHub repository, and a new build is automatically started. Wait for the build to finish.
+
+## FAQ
+
+### Can I build my multi-platform pipeline on both self-hosted and Microsoft-hosted agents?
+
+You can, you would need to specify both a `vmImage` and a `Pool` variable, like the following example. For the hosted agent, specify `Azure Pipelines` as the pool name, and for self-hosted agents, leave the `vmImage` blank. The blank `vmImage` for the self-hosted agent may result in some unusual entries in the logs but they won't affect the pipeline.
+
+```yml
+strategy:
+  matrix:
+    microsofthosted:
+      poolName: Azure Pipelines
+      vmImage: ubuntu-latest
+
+    selfhosted:
+      poolName: FabrikamPool
+      vmImage:
+
+pool:
+  name: $(poolName)
+  vmImage: $(vmImage)
+
+steps:
+- checkout: none
+- script: echo test
+```
 
 ## Next steps
 

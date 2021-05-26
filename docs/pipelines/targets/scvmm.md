@@ -34,7 +34,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
 
 1. Install the **Virtual Machine Manager** (VMM) console on the agent machine by
    following [these instructions](/system-center/vmm/install-console).
-   Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
+   Supported version: [System Center 2012 R2 Virtual Machine Manager](/previous-versions/system-center/system-center-2012-R2/hh546785(v=sc.12)).
 
 2. Install the **System Center Virtual Machine Manager (SCVMM)** extension
    from Visual Studio Marketplace into TFS or Azure Pipelines:

@@ -33,7 +33,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>public void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>C++</h4>
@@ -43,7 +42,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>F#</h4>
@@ -52,7 +50,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>member PartialOpen : unit -&gt; unit</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>JScript</h4>
@@ -61,7 +58,6 @@ Opens this work item for modification by loading only the latest revision of thi
 <code>public void PartialOpen()</code>
 </td>
 </tr>
-
 <tr>
 <td> 
 <h4>VB</h4>
@@ -74,45 +70,13 @@ Opens this work item for modification by loading only the latest revision of thi
 </table>
 
 
-<!---
-
-<a data-toggle="collapse" href="#expando-agent-pools">C# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public void PartialOpen()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">C++ ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public:  
-void PartialOpen()```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">F# ▼</a>
-<div class="collapse" id="expando-queues"> 
-```member PartialOpen : unit -> unit```
-</div>
-
-
-<a data-toggle="collapse" href="#expando-agent-pools">JScript ▼</a>
-<div class="collapse" id="expando-queues"> 
-```public function PartialOpen()```
-</div>
-
-<a data-toggle="collapse" href="#expando-agent-pools">VB ▼</a>
-<div class="collapse" id="expando-queues"> 
-```'Declaration  
-Public Sub PartialOpen```
-</div>
-
----> 
 
 ## Exceptions
 
 | **Exception** | **Condition** |
 | --- | --- |
-| [ValidationException](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.validationexception%28v=vs.120%29.aspx) | This WorkItem instance does not belong to a [WorkItemCollection](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection%28v=vs.120%29.aspx). |
-| [DeniedOrNotExistException](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.deniedornotexistexception%28v=vs.120%29.aspx) | This WorkItem instance could not be opened for edit correctly. |
+| [ValidationException](/previous-versions/visualstudio/visual-studio-2013/bb179827(v=vs.120)) | This WorkItem instance does not belong to a [WorkItemCollection](/previous-versions/visualstudio/visual-studio-2013/bb179841(v=vs.120)). |
+| [DeniedOrNotExistException](/previous-versions/visualstudio/visual-studio-2013/bb171970(v=vs.120)) | This WorkItem instance could not be opened for edit correctly. |
 
 ## Remarks
 
@@ -120,13 +84,13 @@ The PartialOpen method loads the field data for only the latest revision of the 
 
 PartialOpen is designed for use within a paging context. When you call PartialOpen on one work item, the entire page of work items will be fetched in a single round-trip to the server. This makes PartialOpen ideal for use in a paging context, such as when displaying and editing pages of work items. If you use [Open](open.md), it will only fetch one work item in a single round-trip, which is less efficient when working with pages of data.
 
-There are two modes of fetching used by PartialOpen, which the caller can use to determine which fields to fetch. These two modes correspond to whether the [DefaultProjectHint](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.defaultprojecthint%28v=vs.120%29.aspx) is specified or unset in the owning [WorkItemCollection](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection%28v=vs.120%29.aspx) object.
+There are two modes of fetching used by PartialOpen, which the caller can use to determine which fields to fetch. These two modes correspond to whether the [DefaultProjectHint](/previous-versions/visualstudio/visual-studio-2013/bb164761(v=vs.120)) is specified or unset in the owning [WorkItemCollection](/previous-versions/visualstudio/visual-studio-2013/bb179841(v=vs.120)) object.
 
 (Mode 1) Default - Fetch all the fields of the work item, when project hint is unset.
 
 (Mode 2) Optimized - Fetch only the fields relevant to a particular project, when project hint is specified. This is most optimal and recommended when all workitems are from the same project.
 
-By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For Azure DevOps Services, the Open method is rate limited whereas PartialOpen is not.
+By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](/previous-versions/visualstudio/visual-studio-2013/bb164764(v=vs.120)). For Azure DevOps Services, the Open method is rate limited whereas PartialOpen is not.
 
 This method does nothing if [IsPartialOpen](/previous-versions/visualstudio/visual-studio-2013/bb164816(v=vs.120)), [IsOpen](/previous-versions/visualstudio/visual-studio-2013/bb164814(v=vs.120)) or [IsNew](/previous-versions/visualstudio/visual-studio-2013/ff737494(v=vs.120)) are true.
 
@@ -205,11 +169,11 @@ private static void UpdateWorkItemsUsingPartialOpen()
 
 ## .NET Framework Security
 
-- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/library/8skskf63%28v=vs.120%29.aspx).
+- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).
 
 
 ## Related articles
 
 
 - [WorkItem Class](/previous-versions/visualstudio/visual-studio-2013/bb179831(v=vs.120))  
-- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))  
+- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))

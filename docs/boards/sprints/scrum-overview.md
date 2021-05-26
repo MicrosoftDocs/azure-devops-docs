@@ -9,16 +9,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 04/23/2020
 ---
 
 # About Sprints, Scrum and project management 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 Your Sprints tools includes a filtered backlog based on an Iteration Path, and a similarly filtered Taskboard. These tools are useful for implementing Scrum practices. With Scrum, you can schedule and plan sprints, update your taskboard, and monitor your sprint burndown. 
 
-Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
+Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/devops/plan/what-is-scrum).  
 
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
@@ -82,7 +82,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker range=">= azure-devops-2019"
 
-1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Planning**.
+1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Planning pane](media/overview/sprints-new-nav.png)
@@ -117,7 +117,124 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ::: moniker-end  
 
-[!INCLUDE [temp](../includes/velocity-section.md)]
+
+## Track team capacity
+
+Once you've [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md), you can start using the following tools to plan your sprint.  
+
+At the start of each sprint, you'll want to plan the work that your team can commit to. The three Agile tools that support this work include the sprint backlog, capacity planning, and capacity bars. The sprint backlog contains a filtered subset of backlog items whose iteration path corresponds to the current sprint. 
+
+<table valign="top" > 
+<tr valign="top" > 
+<td width="35%">
+<p>
+<b>Team capacity planning tool</b>
+</p>
+<p>By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. And, conveniently, you can set holidays or shared days off taken by the entire team. </p>
+<p>Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. </p>
+<p>You <a href="../../organizations/settings/set-working-days.md" data-raw-source="[set recurring days off](../../organizations/settings/set-working-days.md)">set recurring days off</a>, such as weekends, through team settings.</p>
+</td>
+<td>
+<img src="media/team-capacity-planning-tool.png" alt="Team capacity planning tool"/> 
+</td>
+</tr>
+<tr valign="top" > 
+<td>
+<p>
+<b>Individual and team capacity bars</b>
+</p>
+<p>With capacity bars, you can quickly see who is over, at, or under capacity. Capacity bars update with each of these activities: </p>
+<ul>
+<li>
+<p>Tasks are assigned with non-zero remaining work</p>
+</li>
+<li>
+<p>Change in remaining work</p>
+</li>
+<li>
+<p>Date change within the sprint cycle. Individual and team capacity always reflects their capacity from the current day till the end of the sprint.  </p>
+</li>
+</ul>
+<p>Here&#39;s how to interpret the capacity colors:</p>
+<img src="media/capacity-planning-tool-color-chart.png" alt="These colors help you distinguish capacity"/>
+</td>
+<td width="455px">
+<img src="media/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/>
+</td>
+</tr>
+</table>
+
+
+##  Update tasks, monitor burndown 
+
+During a sprint, your team can use the taskboard and sprint burndown chart to track their progress. Your sprint burndown chart provides you with an at-a-glance visual to determine if your team is on track to meet their sprint plan.  
+ 
+<table valign="top">
+<tr valign="top" > 
+<td width="35%">
+<p>
+<b>Taskboard</b>
+</p>
+<p>Your <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a> provides an interactive progress board for work required to complete the sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. </p>
+<p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
+</td>
+<td width="520px">
+<img src="media/ALM_DS_Task_board_S.png" alt="taskboard"/>
+</td>
+</tr>
+<tr valign="top" > 
+<td>
+<p>
+<b>Sprint burndown chart</b>
+</p>
+<p>You use the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
+<p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
+</td>
+<td>
+<img src="media/ALM_DS_SprntBD_Chrt_S.png" alt="Sprint burndown chart"/>
+</td>
+</tr>
+</table>
+
+
+<a id="velocity-forecast">  </a>
+
+##  Velocity and forecast 
+
+<p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
+<p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
+<p>After your team has worked several sprints, they can use the <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity chart](../../report/dashboards/team-velocity.md)">velocity chart</a> and <a href="forecast.md" data-raw-source="[forecast](forecast.md)">forecast</a> tool to estimate work that can be accomplished in future sprints.  </p>
+
+<table valign="top" > 
+<tr valign="top" > 
+<td>
+<p>
+<b><strong>Velocity chart</strong></b>
+</p>
+<p>Each team is associated with one and only one velocity chart. The green bar within the chart indicates the total estimated effort (story points or size) of backlog items (user stories or requirements) completed within the sprint. (Blue corresponds to the estimated effort of items not yet completed.)  </p>
+<p>Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog. </p>
+<p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
+</td>
+<td width="500px">
+<img src="media/velocity-chart.png" alt="Velocity chart"/>
+</td>
+</tr>
+<tr valign="top" > 
+<td>
+<p>
+<strong>Forecast tool</strong>
+</p>
+<p>You can use the forecast tool to get an idea of how many and which items you can complete within a sprint. </p>
+<p>*By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. *</p>
+</td>
+<td>
+<img src="media/forecast-tool.png" alt="Forecast tool"/>
+</td>
+</tr>
+</table>  
+
+
+
 
 ## Try this next
 
@@ -126,12 +243,14 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ## Related articles 
 
-- [Sprints and Scrum key concepts](scrum-key-concepts.md) 
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path. 
+
+- [Scrum concepts](scrum-key-concepts.md) 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development) 
+- [What is Scrum?](/devops/plan/what-is-scrum)
+- [What is Agile development?](/devops/plan/what-is-agile-development) 
  
 
 

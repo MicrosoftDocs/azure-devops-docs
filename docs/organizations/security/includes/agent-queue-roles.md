@@ -1,3 +1,12 @@
+---
+ms.technology: devops-security
+ms.author: kaelli
+author: KathrynEE
+ms.topic: include
+---
+
+
+
 
 > [!div class="mx-tdCol2BreakAll"]  
 > |  Role (project-level)  | Description |
@@ -9,7 +18,14 @@
 
 You control the security of all project agent pools from the **Security** tab. Role memberships for individual project agent pools automatically inherit from what those roles. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
-To manage role settings for a project agent pool, open **Project settings**, choose **Agent Pools**, choose a pool, and then add a user and select their role.
+To manage role settings for a project agent pool, open **Project settings** and choose **Agent Pools**.
 
-> [!div class="mx-imgBorder"]  
-> ![Agent pools security roles](/azure/devops/organizations/security/media/agent-pool-roles-project.png) 
+- To set permissions for all pools within the project, choose **Security**, and then add a user and select their role.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Agent pools security roles for all pools within the project.](/azure/devops/organizations/security/media/security-roles/pipeline-all-security-roles.png) 
+
+- To set permissions for a specific pool, choose the pool and then **Security**. Then add a user and select their role.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Agent pools security roles for a specific pool within the project.](/azure/devops/organizations/security/media/security-roles/pipline-individual-security-role.png) 

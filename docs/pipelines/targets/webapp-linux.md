@@ -1,5 +1,5 @@
 ---
-title: Deploy an Azure Web App
+title: Deploy an Azure Web App (Linux)
 description: Deploy to Azure Web Apps on Linux from Azure Pipelines 
 services: vsts
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 09/09/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Azure Web App
+# Deploy an Azure Web App (Linux)
 
 [!INCLUDE [version-Azure DevOps Services-rtm](../includes/version-tfs-2017-rtm.md)]
 
@@ -140,9 +140,9 @@ You must supply an Azure service connection to the `AzureWebApp` task. Add the f
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureWebApp@1
@@ -192,7 +192,7 @@ To deploy to an Azure Web App, add the following snippet at the end of your **az
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

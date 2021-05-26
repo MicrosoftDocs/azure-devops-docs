@@ -1,3 +1,10 @@
+---
+ms.topic: include
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Python script
 # Run a Python file or inline script

@@ -6,8 +6,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
-ms.date: 11/19/2018
+monikerRange: '< azure-devops' 
+ms.date: 04/23/2020
 ---
 
 # Add a report server
@@ -23,14 +23,14 @@ This is the first task in the four-task sequence to add reports to a team projec
 
 
 > [!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
+> You can only add a report server to an on-premises Azure DevOps Server, formerly named Team Foundation Server. If you're using Azure DevOps Services, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). For Azure DevOps 2019, review 
 
 
 
-On-premises installations of TFS can include reports to help you manage your software development projects. However, you need a report server as part of your deployment in order to use them. If you don't have one, you can add SQL Server Reporting Services to your deployment. 
+On-premises installations of Azure DevOps can include reports to help you manage your software development projects. However, you need a report server as part of your deployment in order to use them. If you don't have one, you can add SQL Server Reporting Services to your deployment. 
 
 > [!NOTE]  
->If you installed TFS on a client operating system, such as Windows 7, you can't add reporting as described here, because it isn't supported on client operating systems. 
+> If you installed TFS on a client operating system, such as Windows 7, you can't add reporting as described here, because it isn't supported on client operating systems. 
 
 ## What do I need to know before adding a report server?  
 <!-- BEGINSECTION class="md-qanda" -->
@@ -40,6 +40,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 **A:** You'll need to add SQL Server Reporting Services to provide a report server for TFS. This can be added to the SQL Server instance that is supporting TFS, or to a different instance.
 
 #### Q: What permissions do I need?
+
 **A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](/azure/devops/server/admin/add-administrator).
 
 #### Q: Can I add reporting if TFS is installed on a client operating system?
@@ -61,24 +62,28 @@ Jump to the bottom of this article to confirm that reports are available for the
 
 ## Verify your options and upgrade if necessary
 
-1.	Find out what version and edition of SQL Server you have by following the instructions provided in [Validate a SQL Server Installation](https://technet.microsoft.com/library/bb510455.aspx). 
+1.	Find out what version and edition of SQL Server you have by following the instructions provided in [Validate a SQL Server Installation](/sql/database-engine/install-windows/validate-a-sql-server-installation). 
 	If the answer is SQL Server Express, keep following these steps. If it's any other edition, but you don't see any version and edition information about reporting or analysis services, jump ahead to [Add Reporting Services](#AddRSandAS). If you do see information about these services, then your SQL Server already has them installed, and you can jump ahead to [Add Reporting to TFS](#AddRStoTFS).  
-2.	If your deployment is using SQL Server Express, [upgrade to a different edition](https://msdn.microsoft.com/library/cc707783.aspx). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](/azure/devops/server/requirements#sql-server). 
+2.	If your deployment is using SQL Server Express, [upgrade to a different edition](/sql/database-engine/install-windows/upgrade-to-a-different-edition-of-sql-server-setup). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](/azure/devops/server/requirements#sql-server). 
 
 <a id="AddRSandAS">  </a>
 
 ## Add Reporting Services and Analysis Services to SQL Server 
+
 After you confirm that you have an edition of SQL Server that supports reporting (or you upgrade to one), add the reporting and analysis services features if they aren't already configured.
 
 1.	Open the SQL Server Installation Center to add features to an existing installation.  
 
 	![Add, remove, and manage SQL Server features](media/sql-install-center.png)
 
+	> [!NOTE]
+    > For SQL Server 2017 or later versions, choose the **Multidimensional and Data Mining Mode** option during installation. To learn more, see [Manually install SQL Server](/azure/devops/server/install/sql-server/install-sql-server#install-sql-server).
+
 	You might have to restart your computer during this process, particularly if you've just finished upgrading from SQL Server Express.  
 
 2.	Once your server has passed all the setup rules checks, pick the instance to add features to.   
 
-	  > [!TIP]
+	> [!TIP]
     > If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
 
 	![Add features to an existing instance](media/installation-type.png)  
@@ -196,6 +201,4 @@ You can learn more about installing and configuring SQL Server for use with on-p
 
 ### Change the data reader account  
 - [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
-- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) 
-
-
+- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies)

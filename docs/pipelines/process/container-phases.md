@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 09/11/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -16,10 +16,7 @@ By default, [jobs](phases.md) run on the host machine where the [agent](../agent
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
-
-
-> [!NOTE] 
-> The Classic editor doesn't support container jobs at this time.
+YAML pipelines offer container jobs for this level of control.
 
 [!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
@@ -28,6 +25,7 @@ You can select the exact versions of operating systems, tools, and dependencies 
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
+You cannot have nested containers. Containers are not supported when an agent is already running inside a container. 
 
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
@@ -54,8 +52,9 @@ minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
 
-Also note: the Red Hat Enterprise Linux 6 build of the agent won't run container job.
-Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
+
+> [!NOTE]
+> For Windows-based Linux containers, Node.js must be pre-installed.
 
 ### Windows Containers
 
@@ -65,12 +64,12 @@ Docker must be installed. Be sure your pipelines agent has permission to access 
 
 The Windows container must support running Node.js.
 A base Windows Nano Server container is missing dependencies required to run Node.
-See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-js-on-nano-server/) for more information about what it takes to run Node on Windows Nano Server.
+
 
 ### Hosted agents
 
-The `windows-2019` and `ubuntu-16.04` pools support running containers.
-The Hosted macOS pool does not support running containers.
+Only `windows-2019` and `ubuntu-*` images support running containers.
+The macOS image does not support running containers.
 
 ## Single job
 
@@ -78,21 +77,17 @@ A simple example:
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
-container: ubuntu:16.04
+container: ubuntu:18.04
 
 steps:
 - script: printenv
 ```
 
-This tells the system to fetch the `ubuntu` image tagged `16.04` from
+This tells the system to fetch the `ubuntu` image tagged `18.04` from
 [Docker Hub](https://hub.docker.com) and then start the container. When the
-`printenv` command runs, it will happen inside the `ubuntu:16.04` container.
-
-> [!Note]
-> You must specify "Hosted Ubuntu 1604" as the
-> pool name in order to run Linux containers. Other pools won't work.
+`printenv` command runs, it will happen inside the `ubuntu:18.04` container.
 
 A Windows example:
 
@@ -108,8 +103,7 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running a windows-2019
-> build, we will use the `2019` tag for the container.
+> Since this example uses the Windows 2019 image, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
@@ -119,7 +113,7 @@ In the following example, the same steps run in multiple versions of Ubuntu Linu
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
 strategy:
   matrix:
@@ -133,7 +127,7 @@ strategy:
 container: $[ variables['containerImage'] ]
 
 steps:
-  - script: printenv
+- script: printenv
 ```
 
 ## Endpoints
@@ -167,20 +161,24 @@ steps:
 Other container registries may also work.
 Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
 
+
+> [!NOTE]
+> The Red Hat Enterprise Linux 6 build of the agent won't run container job. Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
+
 ## Options
 
 If you need to control container startup, you can specify `options`.
 
 ```yaml
 container:
-  image: ubuntu:16.04
+  image: ubuntu:18.04
   options: --hostname container-test --ip 192.168.0.1
 
 steps:
 - script: echo hello
 ```
 
-Running `docker create --help` will give you the list of supported options.
+Running `docker create --help` will give you the list of supported options. You can use any option available with the [`docker create` command](https://docs.docker.com/engine/reference/commandline/create/).
 
 ## Reusable container definition
 
@@ -203,7 +201,7 @@ resources:
 jobs:
 - job: RunInContainer
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
 
   strategy:
     matrix:
@@ -217,7 +215,7 @@ jobs:
   container: $[ variables['containerResource'] ]
 
   steps:
-    - script: printenv
+  - script: printenv
 ```
 
 ## Non glibc-based containers
@@ -234,9 +232,9 @@ Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines 
 bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
-You are responsible for adding a Node LTS binary to your container.
-Node 10 LTS is a safe choice.
-You can start from the `node:10-alpine` image.
+You are responsible for adding a Node binary to your container.
+Node 14 is a safe choice.
+You can start from the `node:14-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
@@ -268,4 +266,15 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 
 CMD [ "node" ]
+```
+
+### Multiple jobs with agent pools on a single hosted agent
+
+The container job uses the underlying host agent Docker config.json for image registry authorization, which logs out at the end of the Docker registry container initialization. Subsequent registry image pulls authorization might be denied for “unauthorized authentication” because the Docker config.json file registered in the system for authentication has already been logged out by one of the other container jobs that are running in parallel. 
+
+The solution is to set the Docker environment variable `DOCKER_CONFIG` that is specific to each agent pool service running on the hosted agent. Export the `DOCKER_CONFIG` in each agent pool’s runsvc.sh script:
+
+```
+#insert anything to set up env when running as a service
+export DOCKER_CONFIG=./.docker
 ```

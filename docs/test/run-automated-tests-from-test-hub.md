@@ -33,13 +33,13 @@ You will need:
 * A [test plan](create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using 
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
-  or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/library/dd380741%28v=vs.120%29.aspx).
+  or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
 
-* A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
+* A [Team Build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md)
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
-  [build and release workflow](../pipelines/overview.md) and also use it for on-demand testing.
+  [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.
 
 You must also be a Project Contributor, or have the following permissions:
 
@@ -49,7 +49,7 @@ You must also be a Project Contributor, or have the following permissions:
 * Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#release-permissions).
+[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
 
 ## Set up your environment
 
@@ -119,7 +119,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    * If your tests need **input parameters** such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
-     in you build pipeline to publish the settings file in a drop
+     in your build pipeline to publish the settings file in a drop
      location if this file is not included in the artifacts.
      In the example shown below, the application URL is exposed in the
      run settings file, and is overridden to set it to a staging URL
@@ -127,7 +127,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
      ![Specifying the properties for the Visual Studio Test task](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](../pipelines/tasks/test/vstest.md).
 
 7. Choose the **Agent job** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
@@ -227,7 +227,7 @@ You must be a Project Contributor, or have the following permissions:
 * Manage deployment
 
 For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
-[Release permissions](../pipelines/policies/permissions.md#release-permissions).
+[Release permissions](../pipelines/policies/permissions.md#set-release-permissions).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
 
@@ -247,7 +247,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
  
 * **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
-![Configuring the Run with options dialog](media/run-auto-tests-from-hub-09a.png)
+![Configured Run with options dialog.](media/run-auto-tests-from-hub-09a.png)
 
 ### Q: Why use release stages to run tests? 
 
@@ -258,7 +258,7 @@ running tests in scheduled workflow will find it easy to adapt; for
 example, by cloning an existing scheduled testing release pipeline.
 
 Another major benefit is the availability of a rich set of tasks in
-the task catalog that enable a range of activates to be performed before
+the task catalog that enable a range of activities to be performed before
 and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 
@@ -329,7 +329,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 builds. It only works in the web-based interface for Azure Pipelines and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for Microsoft Test Manager. See
-[Guidance on Microsoft Test Manager usage](mtm/guidance-mtm-usage.md).
+[Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release pipeline?
 
@@ -363,7 +363,7 @@ from different sources, set this option to
 <a name="pass-params"></a>
 ### Q: How do I pass parameters to my test code from a build or release pipeline?
 
-A: Use a [runsettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+A: Use a [runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 file to pass values as parameters to your test code. For example, in a release that contains several stages,
 you can pass the appropriate app URL to each the test tasks in each one. The runsettings file and matching parameters
 must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstest.md). 
@@ -383,7 +383,7 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
      the user in the **Security** menu of the release pipeline.
-     See [Release permissions](../pipelines/policies/permissions.md#release-permissions).<p />
+     See [Release permissions](../pipelines/policies/permissions.md#set-release-permissions).<p />
    
 * I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do this in the work item
@@ -405,7 +405,7 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 ## See Also
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+* [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Continuous testing scenarios and capabilities](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

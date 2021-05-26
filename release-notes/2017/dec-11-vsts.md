@@ -71,7 +71,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Permit or deny scripts to access the OAuth token each phase. This means, for example, you can now allow scripts running in your build phase to communicate with VSTS over REST APIs, and in the same build definition block the scripts running in your test phase.
 
-* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
+* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the main branch.
 
 To learn more, see [Phases in Build and Release Management](/azure/devops/pipelines/process/phases).
 
@@ -168,7 +168,7 @@ This includes:
 
 The following pre-requisites are needed:
 
-1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/azure/devops/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
+1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](./nov-28-vsts.md#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
 2. Create a [PAT](/azure/devops/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 

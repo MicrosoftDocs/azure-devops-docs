@@ -7,15 +7,15 @@ ms.topic: include
 We've added a new functionality to the Azure Pipelines extension for VSCode. Now, you will be able to create Azure Pipelines directly from VSCode without leaving the IDE.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_04.png)
+> ![Create Azure Pipelines from VSCode.](../../media/157_04.png)
 
 ### New task for configuring Azure App Service app settings
 
-Azure App Service allows configuration through various [settings](https://docs.microsoft.com/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
-We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?view=azure-devops&amp;tabs=yaml), [manage](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops) and configure your Web apps, Function apps or any other containerized App Services.
+Azure App Service allows configuration through various [settings](/azure/app-service/configure-common) like app settings, connection strings and other general configuration settings. 
+We now have a new Azure Pipelines task **Azure App Service Settings** which supports configuring these settings in bulk using JSON syntax on your web app or any of its deployment slots. This task can be used along with other App service tasks to [deploy](/azure/devops/pipelines/targets/webapp?amp;tabs=yaml&view=azure-devops&preserve-view=true) , [manage](/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops&preserve-view=true) and configure your Web apps, Function apps or any other containerized App Services.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_06.png)
+> ![New task for configuring Azure App Service app settings.](../../media/157_06.png)
 
 ### Azure App Service now supports Swap with preview
 
@@ -28,7 +28,7 @@ Azure App Service task now supports this multi-phase swap through the following 
 * **Cancel Swap with Preview** - To cancel a pending swap, select Cancel Swap with Preview.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_05.png)
+> ![Azure App Service now supports Swap with preview.](../../media/157_05.png)
 
 ### YAML templates for Python and .NET Functions apps
 
@@ -41,11 +41,11 @@ Integrating services with YAML pipelines just got easier. Using service hooks ev
 Filtering on pipeline name and stage name is supported for all events. Approval events can be filtered for specific environments as well. Similarly, state change events can be filtered by new state of the pipeline run or the stage.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_14.png)
+> ![Service hooks for YAML pipelines.](../../media/157_14.png)
 
 ### Enhancement to Azure Pipelines app for Jira
 
-The [Azure Pipeline app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. So far the app supported linking only when a GitHub repository was the source for the release. With this update, we have extended the support for linking when Azure Repos are used.
+The [Azure Pipelines app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview) enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. So far the app supported linking only when a GitHub repository was the source for the release. With this update, we have extended the support for linking when Azure Repos are used.
 
 You can use a third party app to integrate Azure Repos with Jira software cloud, and [add Jira issue keys](https://confluence.atlassian.com/adminjiracloud/integrating-with-development-tools-776636216.html) to the commit or pull request message. When a release will deploy these commits, you will be able to associate the Jira issues deployed with the release and also track deployment status in each of the Jira issues.
 
@@ -54,26 +54,26 @@ You can use a third party app to integrate Azure Repos with Jira software cloud,
 We've made several enhancements to the GitHub Release task. You can now have better control over release creation using the tag pattern field by specifying a tag regular expression and the release will be created only when the triggering commit is tagged with a matching string.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_11.png)
+> ![GitHub release task enhancements.](../../media/157_11.png)
 
 We've also added capabilities to customize creation and formatting of changelog. In the new section for changelog configuration, you can now specify the release against which the current release should be compared. The **Compare to** release can be the last full release (excludes pre-releases), last non-draft release or any previous release matching your provided release tag. Additionally, the task provides changelog type field to format the changelog. Based on the selection the changelog will display either a list of commits or a list of issues/PRs categorized based on labels.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_12.png)
+> ![Changelog displays a list of commits or a list of issues/PRs categorized based on labels.](../../media/157_12.png)
 
 ### Stage level filter for Azure Container Registry and Docker Hub artifacts
 
 Previously, regular expression filters for Azure Container Registry and Docker Hub artifacts were only available at the release pipeline level. They have now been added at the stage level as well.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_08.png)
+> ![Stage level filter for Azure Container Registry and Docker Hub artifacts.](../../media/157_08.png)
 
 ### Sovereign cloud support in Kubernetes service connection
 
 Previously, it was possible to use the service account option to setup Kubernetes service connection for Kubernetes clusters in Azure China Cloud and Azure Government Cloud. Now, you can use the Azure option for setting up Kubernetes service connections associated with managed Azure Kubernetes Service clusters that are a part of Azure China Cloud and Azure Government Cloud.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_07.png)
+> ![Sovereign cloud support in Kubernetes service connection.](../../media/157_07.png)
 
 ### Updates to hosted pipelines images
 
