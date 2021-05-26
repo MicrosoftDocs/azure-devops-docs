@@ -83,7 +83,7 @@ Your sprint backlog displays only those work items assigned to the selected spri
 
 ## Checklist for work items, backlogs, and boards 
 
-If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [Kanban Board](../boards/kanban-quickstart.md), perform the following checks: 
+If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [Kanban board](../boards/kanban-quickstart.md), perform the following checks: 
 
 1. Make sure you have selected the team backlog or board of interest. To learn how, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -106,7 +106,7 @@ If you don't see the work items you expect on your [product Backlog](create-your
 
 ::: moniker range=">= azure-devops-2019"
 
-For all processes except the Basic process, each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban Board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
+For all processes except the Basic process, each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ For all processes except the Basic process, each team can manage the way bugs ar
 
 ::: moniker range="<= tfs-2018"
 
-Each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban Board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
+Each team can manage the way bugs are tracked. You can track bugs as belonging to the Requirements category and they show up on the Backlog and Kanban board, or the Tasks category and they show up on the Taskboard, or the Bugs category where they don't appear on either backlogs or boards. 
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ If you want bugs to show up on your Backlog and Board, choose <strong>Bugs are m
 
 For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-## Correct your Kanban Board configuration
+## Correct your Kanban board configuration
 
 If you see the following error when you open your Kanban board, you need to correct the configuration. The main reason for this error is that the workflow states of work item types that have been added to the Requirements category aren't mapped to the column. 
 
@@ -137,7 +137,7 @@ Choose **Correct this now** to open the Settings dialog. To map the workflow sta
 
 ::: moniker range=">= tfs-2017"
 
-## Customize your Kanban Board checklist items
+## Customize your Kanban board checklist items
 
 Checklists are a great way to create work items that are automatically linked with a parent-child link to another work item on a Kanban board. You can customize the work item types that you can add as a checklist by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For details, see [Customize cards](../boards/customize-cards.md#annotations).
 
@@ -188,7 +188,7 @@ To learn more about checklists, see the following articles:
 
 ::: moniker range=">= azure-devops-2019"
 
-## Add other work item types to your Kanban Board checklist items
+## Add other work item types to your Kanban board checklist items
 
 If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose whether or not these types appear within a checklist on your product Kanban board. You make this choice by opening **Board Settings**, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to five annotations. For details see [Customize cards](../boards/customize-cards.md#annotations). 
 
@@ -263,7 +263,7 @@ To add custom work item types to appear on your sprint Taskboard, follow the ste
 
 ::: moniker range=">= azure-devops-2019 "
 > [!NOTE]
-> You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban Board checklist items](#customize-checklist-2019) provided earlier in this article. 
+> You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban board checklist items](#customize-checklist-2019) provided earlier in this article. 
 
 ::: moniker-end
 
