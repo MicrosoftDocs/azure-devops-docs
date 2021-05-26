@@ -81,7 +81,7 @@ For YAML pipelines only, one way to restrict resources is by setting them as [pr
 
 
 
-## Use resources for traceability in environments
+## Use resources for traceability
 #### [YAML](#tab/yaml)
 
 For YAML pipelines, you can combine resources with environments to better track resource use. [Environments](environments.md) are collections of resources using in pipelines. 
