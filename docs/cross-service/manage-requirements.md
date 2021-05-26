@@ -132,7 +132,7 @@ You can then link your specifications or attach them to your requirements.
  
 ## Analyze and prioritize requirements
 
-Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Board tools: 
+Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Boards tools: 
 
 - **Product backlog**: Supports drag-and-drop of work items to get them in priority order. Supports bulk-edit of work items to change assignments or update fields. 
 - **Query Results, Triage mode**: Supports review of a list of work items and their forms so that you can quickly update work items and add details. 
