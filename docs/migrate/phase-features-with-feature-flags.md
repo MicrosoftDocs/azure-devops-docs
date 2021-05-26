@@ -142,7 +142,7 @@ Now that you've covered the concepts and considerations of feature flags, you sh
 
 ### How does the Azure DevOps team use feature flags?
 
-Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/devops/devops-at-microsoft/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
+Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/09/30/controlling-exposure-through-feature-flags-in-vs-team-services/) and the [presentation/article](/devops/operate/progressive-experimentation-feature-flags) are great sources to get an understanding of the custom-built feature flag system used with Team Foundation Server (TFS) and Azure DevOps Services.
 
 ### How do the ALM | DevOps Rangers use feature flags?
 
