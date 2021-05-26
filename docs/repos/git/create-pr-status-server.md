@@ -198,7 +198,19 @@ Now that your server can receive service hook events when new PRs are created, u
     var authHandler = vsts.getPersonalAccessTokenHandler(token)
     var connection = new vsts.WebApi(collectionURL, authHandler)
 
-    var vstsGit = connection.getGitApi().then( success => { console.log(success) }, error => { console.log(error) } )
+    var vstsGit = connection.getGitApi().then( 
+        vstsGit => {                                    
+            vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
+                console.log(result);
+            },
+            error => {
+                console.log(error);
+            })
+        }, 
+        error => { 
+            console.log(error);
+        } 
+    );
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
