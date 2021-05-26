@@ -18,9 +18,9 @@ ms.date: 12/07/2020
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context for Azure Boards. The method you use to customize projects, which impacts all teams, depends on the process model you use. 
 
-If you're new to Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md) and [Track work with user stories, issues, bugs, features, and epics](../boards/work-items/about-work-items.md). 
+If you're new to Azure Boards and work item tracking, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md) and [Track work with user stories, issues, bugs, features, and epics](../boards/work-items/about-work-items.md). 
 
-This article provides an overview of the customizations you can make and how they differ for the three process models. For guidance on customizations to make to support business decisions, see [Configure and customize Azure Boards](../boards/configure-customize.md).
+This article provides a high-level overview of the customizations you can make and how they differ for the three process models. For guidance on customizations to make to support business decisions, see [Configure and customize Azure Boards](../boards/configure-customize.md).
 
 Customizations you make occur at one of these four levels:   
 
@@ -72,7 +72,7 @@ For organizations that manage their users and groups using Azure Active Director
 
 ::: moniker range="azure-devops"
 
-To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your project, Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-selection). 
+To limit the scope of identities available for selection to just those users added to the project, you can do so using the **Project-Scoped Users** group. To learn how, see [Manage your project, Limit identity search and selection](../user-guide/project-admin-tutorial.md#limit-identity-selection). 
 
 ::: moniker-end
 
@@ -101,6 +101,9 @@ The following table summarizes the differences between the three supported proce
 
 ---
 :::row:::
+   :::column span="3":::
+      **Feature** 
+   :::column-end:::
    :::column span="1":::
       **[Inheritance](../organizations/settings/work/inheritance-process-model.md)** 
    :::column-end:::
@@ -113,7 +116,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       WYSIWYG editing
    :::column-end:::
    :::column span="1":::
@@ -128,7 +131,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Create inherited custom processes, Inherit changes in system processes (Agile, Basic, Scrum, CMMI)
    :::column-end:::
    :::column span="1":::
@@ -143,7 +146,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Create custom process templates (see note 1)
    :::column-end:::
    :::column span="1":::
@@ -158,7 +161,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Updated process changes automatically apply to projects
    :::column-end:::
    :::column span="1":::
@@ -173,7 +176,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Support to customize fields, work item types, form layout, workflow, custom rules, backlog levels, custom controls, test management 
    :::column-end:::
    :::column span="1":::
@@ -188,7 +191,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Global lists
    :::column-end:::
    :::column span="1":::
@@ -203,7 +206,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Support to customize link types, team fields, global workflow, and process configuration (see note 3)
    :::column-end:::
    :::column span="1":::
@@ -218,7 +221,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Initial configuration of permissions and security groups (see note 3)
    :::column-end:::
    :::column span="1":::
@@ -233,7 +236,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Update Microsoft field mappings using the [**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)command-line tool (see note 4)
    :::column-end:::
    :::column span="1":::
@@ -248,7 +251,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Use [**az boards** command-line tools](../cli/quick-reference.md#azure-boards) to edit projects and teams and list information
    :::column-end:::
    :::column span="1":::
@@ -263,7 +266,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects and list project information
    :::column-end:::
    :::column span="1":::
@@ -278,7 +281,7 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       REST API (read)
    :::column-end:::
    :::column span="1":::
@@ -293,8 +296,11 @@ The following table summarizes the differences between the three supported proce
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="3":::
       REST API (write)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
    :::column-end:::
    :::column span="1":::
       ✔️
