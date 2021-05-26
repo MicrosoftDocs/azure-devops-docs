@@ -487,10 +487,10 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your organization name at the right of the Azure Pipelines page heading.
-* At the top of the left column, under **DETAILS**, choose **Security**.
-* In the **Security** tab, in the right column, choose **Personal access tokens**.
-* Choose the **Add** link and enter the information required to create the token.
+1. Open your profile from your organization name at the right of the Azure Pipelines page heading.
+1. At the top of the left column, under **DETAILS**, choose **Security**.
+1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+1. Choose the **Add** link and enter the information required to create the token.
 
 Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
@@ -525,10 +525,10 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your account name at the right of the Azure Pipelines page heading.
-* At the top of the left column, under **DETAILS**, choose **Security**.
-* In the **Security** tab, in the right column, choose **Personal access tokens**.
-* Choose the **Add** link and enter the information required to create the token.
+1. Open your profile from your account name at the right of the Azure Pipelines page heading.
+1. At the top of the left column, under **DETAILS**, choose **Security**.
+1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+1. Choose the **Add** link and enter the information required to create the token.
 
 *****
 
@@ -811,10 +811,9 @@ available through extensions are:
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-## FAQs and Troubleshoot service connections
+<!--  ## FAQs and Troubleshoot service connections -->
 
-### Q: 
-**A:** 
-
+<!-- ### Q: -->
+<!-- **A:**  -->
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
