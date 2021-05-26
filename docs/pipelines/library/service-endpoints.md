@@ -44,12 +44,14 @@ You define and manage service connections from the Admin settings of your projec
 1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#ep-types).
    
 1. Decide if you want the service connection to be accessible for any pipeline by
-   setting the **Allow all pipelines to use this connection** option. The allow all pipelines option allows YAML pipelines to use this service connection. YAML pipelines are not automatically authorized for service connections. See [Use a service connection](#use-connection).
+   setting the **Allow all pipelines to use this connection** option. This option allows pipelines
+   defined in YAML, which are not automatically authorized for service connections,
+   to use this service connection. See [Use a service connection](#use-connection).
 
 1. Choose **OK** to create the connection.
 For example, this is the default **Azure Resource Manager** connection dialog:
 
-   ![Azure Resource Manager connection dialog](../release/media/azure-rm-endpoint/new-connection-01.png)
+   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/new-azure-rm-connection-01.png)
 
    > [!NOTE]
    > The connection dialog may appear different for the different types of service connections, 
@@ -64,16 +66,16 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 
 1. Select the service connection you want to manage.
 
-1. In the **Overview** tab of the service connection, you can see the details of the service connection. Details include type, creator, and authentication type (Token, Username/Password or OAuth).
-![Azure Resource Manager connection overview](../release/media/azure-rm-endpoint/overview-page.png)
+1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication type (like Token, Username/Password or OAuth etc.).
+![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
 
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
-![Azure Resource Manager usage history](../release/media/azure-rm-endpoint/usage-history.png)
+![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
 
-1. To update the service connection, click on **Edit** at the top-right corner of the page.
+1. To update the service connection, click on **Edit** at the top right corner of the page.
 
-1. **Approvals and checks**, **Security**, and **Delete** are part of the more options at the top-right corner.
-![Azure Resource Manager more options](../release/media/azure-rm-endpoint/more-options.png)
+1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
+![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
 
 <a name="security"></a>
 
@@ -83,6 +85,7 @@ To manage the security for a connection:
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+
 
 1. To manage user permissions at hub level, go to the more options at the top-right corner and choose **Security**.
 ![Service connection hub security](../release/media/azure-rm-endpoint/service-connection-hub-security.png)
@@ -102,30 +105,28 @@ You can control who can create, view, use, and manage the service connection wit
 |------------------------------------|---------|
 | Creator | Members of this role can create the service connection in the project. Contributors are added as members by default|
 | Reader | Members of this role can view the service connection. |
-| User | Members of this role can use the service connection when authoring build or release pipelines or approve yaml pipelines via pipeline authorizations flow. |
+| User | Members of this role can use the service connection when authoring build or release pipelines or authorize yaml pipelines. |
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default |
 
-The new service connection new UI uses a pure RBAC model with roles.
-For backward compatibility, in existing projects, the Endpoint Administrators group is added as Administrator role and the Endpoint creators group is assigned the creator role. These assignments ensure there is no change in behavior for existing service connections. 
+Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
+For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role which ensures there is no change in the behavior for existing service connections. 
 
 > [!NOTE]
 > This change is applicable only in Azure DevOps Services where new UI is available. 
 > Azure DevOps Server 2019 and older versions still follow the previous security model.
 
-Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role are split between the two levels.
+Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
 
 #### Project level permissions
 
-The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. 
+The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
-You have inheritance and you can set the roles at the hub level as well as for each service connection. 
-
-The project-level administrator has limited administrative capabilities as below:
+The project-level administrator have limited administrative capabilities as below:
 * A project-level administrator can manage other users and roles at project scope.
 * A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
-* A project-level administrator can delete a service connection, which removes the existence of service connection from the project.
+* A project-level administrator can delete a service connection which removes the existence of service connection from the project.
 
-![Azure Resource Manager project security](../release/media/azure-rm-endpoint/project-level-security.png)
+![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
 
 The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the inheritance is turned on.
 
@@ -135,33 +136,39 @@ Organization level permissions are introduced along with cross project sharing f
 There is no inheritance for organization level permissions. Today we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
-* An organization-level administrator can manage organization level users.
-* An organization-level administrator can edit all the fields of a service connection.
-* An organization-level administrator can share/un-share a service connection with other projects.
+* A organization-level administrator can manage organization level users.
+* A organization-level administrator can edit all the fields of a service connection.
+* A organization-level administrator can share/un-share a service connection with other projects.
 
-![Azure Resource Manager organization security](../release/media/azure-rm-endpoint/organization-security.png)
+![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/azure-rm-organization-security.png)
 
-The user that created the service connection is automatically added as an organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
+The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
 
 
 ### Pipeline permissions
 Pipeline permissions control which YAML pipelines are authorized to use this service connection. This is interlinked with 'Allow pipeline access' checkbox you find in service connection creation dialogue.
 
-You can either choose to open access for all pipelines to consume this service connection from the more options at top-right corner of the **Pipeline permissions** section in security tab of a service connection.
+You can either choose to open access for all pipelines to consume this service connection from the more options at top right corner of the **Pipeline permissions** section in security tab of a service connection.
 
 Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
 
-![Azure Resource Manager pipeline permissions](../release/media/azure-rm-endpoint/pipeline-permissions.png)
+![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
 
 ### Project permissions - Cross project sharing of service connections
+Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
 * Only the organization-level administrators from **User permissions** can share the service connection with other projects.
-* The user who is sharing the service connection with a project should have at least create service connection permission in the target project.
-* The user who shares the service connection with a project becomes the project-level administrator for that service connection and the project-level inheritance is turned on in the target project.
+* The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
+* The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
 * The service connection name is appended with the project name and it can be renamed in the target project scope.
-* Organization level administrator can unshare a service connection from any shared project.
+* Organization level administrator can un-share a service connection from any shared project.
 
-![Azure Resource Manager project permissions](../release/media/azure-rm-endpoint/project-permissions.png)
+![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
+
+> [!NOTE]
+> Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service
+> connections UI is no longer usable.
+
 
 <a name="use-connection"></a>
 
@@ -480,10 +487,10 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your organization name at the right of the Azure Pipelines page heading.
-* At the top of the left column, under **DETAILS**, choose **Security**.
-* In the **Security** tab, in the right column, choose **Personal access tokens**.
-* Choose the **Add** link and enter the information required to create the token.
+1. Open your profile from your organization name at the right of the Azure Pipelines page heading.
+1. At the top of the left column, under **DETAILS**, choose **Security**.
+1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+1. Choose the **Add** link and enter the information required to create the token.
 
 Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
@@ -518,10 +525,10 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your account name at the right of the Azure Pipelines page heading.
-* At the top of the left column, under **DETAILS**, choose **Security**.
-* In the **Security** tab, in the right column, choose **Personal access tokens**.
-* Choose the **Add** link and enter the information required to create the token.
+1. Open your profile from your account name at the right of the Azure Pipelines page heading.
+1. At the top of the left column, under **DETAILS**, choose **Security**.
+1. In the **Security** tab, in the right column, choose **Personal access tokens**.
+1. Choose the **Add** link and enter the information required to create the token.
 
 *****
 
@@ -804,10 +811,9 @@ available through extensions are:
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-## FAQs and Troubleshoot service connections
+<!--  ## FAQs and Troubleshoot service connections -->
 
-### Q: 
-**A:** 
-
+<!-- ### Q: -->
+<!-- **A:**  -->
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
