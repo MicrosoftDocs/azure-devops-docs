@@ -106,7 +106,6 @@ You can control who can create, view, use, and manage the service connection wit
 | Creator | Members of this role can create the service connection in the project. Contributors are added as members by default|
 | Reader | Members of this role can view the service connection. |
 | User | Members of this role can use the service connection when authoring build or release pipelines or authorize yaml pipelines. |
-
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default |
 
 Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
@@ -119,6 +118,7 @@ For backward compatibility, in the existing projects, Endpoint Administrators gr
 Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
 
 #### Project level permissions
+
 The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
 The project-level administrator have limited administrative capabilities as below:
@@ -131,7 +131,9 @@ The project-level administrator have limited administrative capabilities as belo
 The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the inheritance is turned on.
 
 #### Organization level permissions
-Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. There is not inheritance for organization level permissions. Today we only have administrator role at organization level.
+Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. 
+
+There is no inheritance for organization level permissions. Today we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
 * A organization-level administrator can manage organization level users.
@@ -808,5 +810,11 @@ available through extensions are:
   start, stop, or snapshot VMware virtual machines.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
+
+## FAQs and Troubleshoot service connections
+
+### Q: 
+**A:** 
+
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
