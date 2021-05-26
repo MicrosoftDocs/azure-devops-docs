@@ -8,12 +8,12 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/24/2020
+ms.date: 05/18/2021
 ---
 
 
 
-# Configuration and customization of Azure Boards 
+# Configure and customize Azure Boards  
 
 [!INCLUDE [temp](includes/version-vsts-only.md)]
 
@@ -25,7 +25,7 @@ This article provides guidance to configure and customize Azure Boards. You shou
 - Track time estimates or actual work completed 
 
 > [!NOTE]   
-> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portolio planning tools, are only available for the cloud at this time. 
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time. 
 
 
 If you're just getting started as a Project Administrator, see also [Get started as an administrator](../user-guide/project-admin-tutorial.md).
@@ -81,6 +81,14 @@ One of the main choices teams have is choosing the work item types they use to t
 :::row-end:::
 :::row:::
    :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="2":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
       Tasks only
    :::column-end:::
    :::column span="2":::
@@ -100,7 +108,7 @@ One of the main choices teams have is choosing the work item types they use to t
      - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
      - Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)
      - Track estimated and remaining work: [Taskboard](sprints/adjust-work.md)
-     - Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](/azure/devops/report/dashboards/configure-sprint-burndown?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+     - Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)
      - Conduct daily scrums, update and monitor task status: [Sprint Taskboard](sprints/task-board.md)  
      - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)
      - View progress bars, counts, or sums of rollup on tasks: [Rollup](backlogs/display-rollup.md)  
@@ -120,7 +128,7 @@ One of the main choices teams have is choosing the work item types they use to t
       - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
       - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)  
       - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
-      - Monitor sprint burndown based on requirement estimates: [Sprint burndown](/azure/devops/report/dashboards/configure-sprint-burndown?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  
+      - Monitor sprint burndown based on requirement estimates: [Sprint burndown](../report/dashboards/configure-sprint-burndown.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)  
       - Update requirement status: [Kanban board](boards/kanban-quickstart.md)  
       - Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)
    :::column-end:::
@@ -147,7 +155,7 @@ One of the main choices teams have is choosing the work item types they use to t
 
 ## Configure and customization options 
 
-The following table indicates the areas you can configure and customize and the tools impacted by those customizations. Each area is customized either at the Organization, Project, or Team level as noted, or a combination of two. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
+The following table indicates the areas you can configure and customize and the tools impacted by those customizations. Each area is customized either at the Organization, Project, or Team level as noted, or a combination of two. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
 
 
 <table width="100%">
@@ -302,7 +310,7 @@ Area paths are used to group work items by product, feature, or business areas a
 
 ### Area paths and hierarchical grouping 
 
-The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
+The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early in this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
 
@@ -310,18 +318,7 @@ You can also assign tags to work items to group them for query and filter purpos
 
 ### Area path-dependent tools 
 
-To use the following tools, teams must subscribe to area paths. 
-
-- [Boards> all tools](boards/kanban-overview.md)  
-- [Backlogs> all tools](backlogs/backlogs-overview.md)  
-- [Sprints> all tools](sprints/scrum-overview.md)  
-- [Analytics> all](../report/dashboards/overview.md#in-context-reports-work-tracking) and [Rollup](#rollup)  
-- Portfolio planning tools   
-	- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views  
-	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items  
-	- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of a selected team epic and features with the ability to drill down into child items  
-	- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-	
+[!INCLUDE [temp](includes/list-area-dependent-tools-tasks.md)]
 
 ### Area paths and team assignments 
 
@@ -340,8 +337,8 @@ Here is an example of area paths and their assignment to teams, which support po
 Prior to adding teams, we recommend you read the following articles:  
 
 - [Portfolio management](plans/portfolio-management.md)
-- [About area paths](/azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [About area paths](../organizations/settings/about-areas-iterations.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)
+- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json)
 - [Agile culture](plans/agile-culture.md). 
 
 Recommendations:
@@ -350,7 +347,6 @@ Recommendations:
 - Define epics and scenarios for large initiatives that will take two or more sprints to complete
 - Define requirements for work that can be accomplished in a single sprint and can be assigned to a single individual  
 - Define tasks to track more granular details or when you want to track time spent working 
-
 
 > [!TIP]    
 > - Work items can only be assigned to a single individual. So when defining work items, consider how many work items are needed to assign the work to those individuals who will be tasked to complete the work.  
@@ -366,14 +362,23 @@ Most Azure Boards tools support a filtered view of work items based on area path
 
 Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](sprints/task-board.md).
 
-[!INCLUDE [temp](includes/basic-process-bug-note.md)]
-
 If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!TIP]  
 > After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+
+
+<a id="add-oob-to-backlog" /> 
+
+::: moniker range="azure-devops"
+
+## Add system work item types to a backlog   
+
+If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog).
+
+::: moniker-end
 
 
 <a id="hierarchy" />
@@ -389,9 +394,16 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
+::: moniker range="azure-devops"
+
+In addition, the new [Delivery Plans](plans/review-team-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](plans/media/plans/rollup-view.png)  
+
+::: moniker-end
+
 <!---
-
-
 Consider how your selection impacts rollup
 If your development team uses tasks 
 --> 
@@ -407,24 +419,10 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 > [!div class="mx-imgBorder"]  
 > ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
-
-
 > [!NOTE]   
-> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
+> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
-
-To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
-
-- [Sprints> all tools](sprints/scrum-overview.md) 
-- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views
-- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team features 
-- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-- And all other timeline or calendar view tools  
-
-
-> [!TIP]    
-> If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view, tool, or portfolio planning tool.   
-
+[!INCLUDE [temp](includes/list-sprint-dependent-tools.md)]
 
 ## Time tracking 
 
@@ -497,7 +495,7 @@ Because process-level, project-level and team-level settings can have a wide imp
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](/azure/devops/organizations/security/set-permissions-access-work-tracking?view=azure-devops-2019#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 For additional information, see the following articles:  
 
@@ -507,7 +505,7 @@ For additional information, see the following articles:
 
 ### Project-level changes 
 
-To add Area Paths or Iteration Paths, you must be a member of the [Project Administrators or Project Collection Administrators groups](../security/set-project-collection-level-permissions.md). 
+To add Area Paths or Iteration Paths, you must be a member of the [Project Administrators or Project Collection Administrators groups](../organizations/security/set-project-collection-level-permissions.md). 
 
 Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, you must have been granted one or more of the following permissions set to **Allow**:
 
@@ -542,7 +540,7 @@ For details on configuring backlogs and boards, see [Manage and configure team t
 
 ## Related articles
 
+- [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
 - [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)  
 - [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
--  [Manage and configure team tools](../organizations/settings/manage-teams.md)  
-
+- [Manage and configure team tools](../organizations/settings/manage-teams.md)

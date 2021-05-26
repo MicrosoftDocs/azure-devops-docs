@@ -13,7 +13,7 @@ ms.date: 02/06/2020
 
 # Azure Boards migration and integration 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You have a choice of tools to support migration of your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. In addition, you can integrate Azure Boards with a number of third-party tools. 
 
@@ -66,12 +66,11 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 
 ## Project and portfolio management  
 
-The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. The last three tools support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
+The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. These tools also support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
 
-- [AgileCraft](https://marketplace.visualstudio.com/items?itemName=agilecraft.AgileCraft) enables organizations scaling Agile to the enterprise by connecting business strategy to technical execution.
 - [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
 - [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
-- [Tasktop](https://www.tasktop.com/product-overview) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
+- [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
 ## Related articles

@@ -5,11 +5,11 @@ description: Upload, download, delete, or make default a process template for a 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2019
+ms.date: 07/09/2020
 ---
 
 # Upload or download a process template
@@ -27,7 +27,7 @@ When you create a project, the Project Creation Wizard (PCW) reads the process t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
 
 Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator). To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
@@ -40,7 +40,7 @@ You can upload, download, and delete process templates for a project collection.
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Prerequisites
 
@@ -66,29 +66,29 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
+	> ![On All processes there is a list of processes with names and descriptions. There is an + Upload process template option, and it is highlighted.](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-dialog.png)
+	> ![On Upload process template, one .zip file is listed, named MSEng Agile Process.zip. There is an Upload button to upload a .zip file if necessary.](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
 
 # [Visual Studio 2017](#tab/visual-studio-2017)
 
-1. From Visual Studio 2017, connect to an on-premises TFS collection. 
+1. From Visual Studio 2017, connect to an on-premises Azure DevOps collection. 
 
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
@@ -100,22 +100,22 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
+	> ![On All processes there is a list of processes with names and descriptions. There is an + Upload process template option, and it is highlighted](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](media/process-template/upload-process-dialog.png)
+	> ![On Upload process template, one .zip file is listed, named MSEng Agile Process.zip. There is an Upload button to upload a .zip file if necessary](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
@@ -155,7 +155,7 @@ You can upload, download, and delete process templates for a project collection.
    </td>
    <td>To download the process template to a local computer.<br/>
    <p>In the <strong>Download Process Template</strong> dialog box, select a folder where the process template will be downloaded.</p>
-   <p>If you&#39;re downloading a process template to use to <a href="../../../reference/configure-features-after-upgrade.md" data-raw-source="[configure new features](../../../reference/configure-features-after-upgrade.md)">configure new features</a>, <a href="../../../reference/add-features-manually.md" data-raw-source="[manually add new features](../../../reference/add-features-manually.md)">manually add new features</a> or <a href="../../../reference/update-customized-process-template.md" data-raw-source="[update a custom process template to enable new features](../../../reference/update-customized-process-template.md)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
+   <p>If you&#39;re downloading a process template to use to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure new features</a>, <a href="/previous-versions/azure/devops/reference/upgrade/add-features-manually" data-raw-source="[manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually)">manually add new features</a> or <a href="/previous-versions/azure/devops/reference/upgrade/additional-configuration-options" data-raw-source="[update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
    <p>You can determine which process template to select based on the <a href="#wit_correlation" data-raw-source="[work item types defined for your existing project](#wit_correlation)">work item types defined for your existing project</a>.</p>
    </td>
    </tr>
@@ -249,7 +249,7 @@ To determine the type of process template that was used to create your project, 
 
 <a id="restrictions"> </a>
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Process template restrictions and validation checks 
 
@@ -264,7 +264,7 @@ Uploading a process template requires that it pass the following validation chec
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
@@ -316,7 +316,7 @@ Periodically, updates are made to the process templates to support new features.
 
 ### Update a process template to enable new features 
 
-When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
+When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), you may need to [update a customized process template](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options). 
 
 ::: moniker-end
 
@@ -327,5 +327,3 @@ When you upgrade your on-premises TFS to a later version, new features may becom
 You can add a project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support). 
 
 ::: moniker-end
-
-

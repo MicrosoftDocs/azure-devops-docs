@@ -7,36 +7,39 @@ ms.technology: devops-agile
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 07/09/2020
 ---
 
 
 # Set permissions on queries and query folders
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
 All users can create and edit their own queries and save them under **My Queries**. Only you can view queries saved under your **My Queries** space.
 
-By default, only project administrators can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
+By default, only members of the Project Administrators group can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 
 By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
 ## Prerequisites
-- You must be a member of the Project Collection Administrators or Project Administrators groups to create or edit a shared query or manage permissions.
-- Or to create a query or folder under a shared query folder, you must have the  **Contribute** permission set explicitly to **Allow** to  
-- Or to change permissions of a query or query folder, you must have the  **Manage Permissions** permission set explicitly to **Allow**. 
+- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with Basic or higher access level 
+- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** to and be granted Basic or higher access level 
+- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted Basic or higher access level. 
 
+Users with Stakeholder access can't create or save queries in a Shared folder.  
+
+To learn more about access levels, see [About access levels](../../organizations/security/access-levels.md). 
 
 > [!TIP]    
 > Consider creating a query folder for each team and give the team administrators or the team group query permissions to manage their folder. 
 
 ## Default query permissions
 
-A ![ ](/azure/devops/media/icons/checkmark.png) checkmark in the following table indicates that the corresponding access level or security group has access to a feature by default. 
+A ✔️ in the following table indicates that the corresponding access level or security group has access to a feature by default. 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
@@ -46,11 +49,52 @@ You set permissions from the web portal. To open **Queries**, see [View, run, or
 
 If you're not a member of the project administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Contribute** permission set to **Allow** for the Shared query folder.  
 
-::: moniker range=">= azure-devops-2019"
+> [!TIP]   
+> You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to.
+
+::: moniker range=">= azure-devops-2020"
 
 1. Choose **All**. Expand **Shared Queries**. 
  
-1. To add a folder, choose the ![ ](../media/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
+
+2. Enter the name for the folder. If you want to change the location of the folder, select **Rename** from the folder drop-down menu.  
+
+	Here we name the folder *Service Delivery* with the intention that it will be used by the Service Delivery team.
+
+	> [!div class="mx-imgBorder"]  
+	> ![New folder dialog](media/permissions/new-folder-dialog.png)
+
+3. To set permissions for the folder you just added, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.
+
+4. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Enter the name of a user or group within the search box.   
+
+   Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Permissions dialog for a query folder](media/permissions/service-delivery-folder-permissions-team-dialog.png) 
+
+   **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
+
+5. (Optional) Turn inheritance off. Default is **On**. By turning inheritance off for a folder, you disallow inheritance of permissions that exist up the chain of query folders. To learn more, see [Permissions, Inheritance](../../organizations/security/about-permissions.md#inheritance).  
+
+6. Close the dialog when done.
+
+7. Reopen the Security dialog and choose Service Delivery to verify that the permissions are set. 
+
+   > [!div class="mx-imgBorder"]  
+   > ![Permissions dialog for a query folder, verify permission settings.](media/permissions/permissions-folder-dialog-s166.png) 
+  
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Choose **All**. Expand **Shared Queries**. 
+ 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
@@ -62,14 +106,14 @@ If you're not a member of the project administrators group, [get added](../../or
 	> [!div class="mx-imgBorder"]  
 	> ![New folder dialog](media/permissions/new-folder-dialog.png)
 
-3. To set permissions for the folder you just added, choose the ![ ](../media/icons/actions-icon.png) actions icon and select **Security**.
+3. To set permissions for the folder you just added, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.
 
 4. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Choose the **Add...** menu to add a user identity or group. 
 
    Here we add the Service Delivery team and grant them permissions to create and manage permissions to all queries and folders under the Service Delivery folder.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Permissions dialog for a query folder](media/permissions/permissions-dialog-query-folder-service-delivery.png) 
+   > ![Permissions dialog for a query folder, Azure DevOps Server 2019 version.](media/permissions/permissions-dialog-query-folder-service-delivery.png) 
 
    **Contribute** allows team members to create and edit queries and folders under the folder where the permissions were granted. And, **Manage Permissions** allows team members to manage the permission settings on queries and subfolders.
 
@@ -77,21 +121,22 @@ If you're not a member of the project administrators group, [get added](../../or
   
 ::: moniker-end
 
+
 ::: moniker range="<= tfs-2018"
 
-1. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../media/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
+1. Add a query folder under **Shared queries** or a sub-folder. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder and choose **New query folder**.  
 
 	![New query folder link on queries context menu](media/set-query-perm-new-folder.png)  
 
-1. To set permissions for the folder, choose the ![ ](../media/icons/context_menu.png) context menu icon for the folder you just added and choose **Security**.
+1. To set permissions for the folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder you just added and choose **Security**.
 
-   ![Permissions dialog for a query folder](media/set-permissions-query-folder-security.png)
+   ![Screenshot of context menu for a query folder, TFS 2018 and earlier versions.](media/set-permissions-query-folder-security.png)
 
 2. Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
 
    Here we add the Web team and grant them permissions to create and manage permissions to all queries and folders under the Triage folder.  
 
-   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query" style="border: 1px solid #C3C3C3;" />    
+   <img src="media/set-permissions-triage-folder-dialog.png" alt="Permissions dialog for a query folder, TFS 2018 and earlier versions." style="border: 1px solid #C3C3C3;" />    
 
    Choose the **Add...** menu to add a user identity or group.
 
@@ -107,69 +152,42 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose  the ![ ](../media/icons/actions-icon.png) actions icon and select **Security**.  
+1. Choose  the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Open query permissions](media/permissions/query-permissions-select.png)
+   > ![Screenshot of Open query permissions context menu](media/permissions/query-permissions-select.png)
 
 1. Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
    Here we deny permissions for project admins.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Permissions dialog for a query](media/permissions/query-permissions-dialog.png)
+   > ![Permissions dialog for a query, Azure DevOps Server 2019 and later versions.](media/permissions/query-permissions-dialog.png)
 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the ![ ](../media/icons/context_menu.png) context menu icon and select **Security**. 
+1. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon and select **Security**. 
 
-   ![Open query permissions](media/set-query-perm-security-menu-option.png)
+   ![Screenshot of Open query permissions context menu, TFS 2018 and earlier versions](media/set-query-perm-security-menu-option.png)
 
 1. Change the permissions so that the team member or group can't edit, delete, or change permissions for the query.  
 
    Here we deny permissions for project admins.  
 
-   ![Permissions dialog for a query](media/set-permissions-deny-for-query.png)
+   ![Permissions dialog for a query, TFS 2018 and earlier versions](media/set-permissions-deny-for-query.png)
 
 ::: moniker-end
+
+
 
 ## Related articles  
 
 With queries, you can not only list work items, you can create status and trend charts and add them to dashboards. You can learn more about permissions and working with queries from these resources: 
 
-- [Create and save managed queries](using-queries.md)  
-- [Dashboards](../../report/dashboards/dashboards.md)  
-- [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)   
-- [Permissions and access](../../organizations/security/permissions-access.md)  
-
-### Q & A   
-<!-- BEGINSECTION class="md-qanda" -->
-
-#### Q: Can I change the owner of a query or folder?
-
-**A:** No. This feature was removed for TFS 2015. You can only enable permissions for users and groups from the permissions window for the query or folder.
-
-#### Q: Can I add folders to team favorites?
-
-**A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
-
-
-
-::: moniker range="<= tfs-2018"
-#### Q: Are the queries and folders I create from the web portal the same as in Team Explorer?
-
-**A:** Yes. You might have to refresh your browser or client to see changes you make in another client.
-
-::: moniker-end
-
-#### Q: Can I move a query or a folder?  
-
-**A:** Yes. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location.  
-
-In Team Explorer for Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
-
-<!-- ENDSECTION --> 
-
+- [Manage queries and query folders](organize-queries.md)  
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)  
+- [Add a chart to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)
+- [Dashboards](../../report/dashboards/dashboards.md) 

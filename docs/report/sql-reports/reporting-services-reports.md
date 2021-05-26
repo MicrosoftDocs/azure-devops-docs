@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/04/2019
+ms.date: 10/22/2020
 ---
 
 # Reporting Services reports
@@ -17,13 +17,13 @@ ms.date: 10/04/2019
 
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range="azure-devops-2019"
-Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+::: moniker range=">= azure-devops-2019 < azure-devops"
+Azure DevOps Server 2019 and 2020 versions supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 
 > [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server 2019 and Team Foundation Server (TFS). If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
+> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server versions. If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
 > 
 > For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
 
@@ -39,9 +39,9 @@ You can analyze the progress and quality of your project by using the reports in
  Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+Azure DevOps Server 2019 and later versions support both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 
@@ -76,9 +76,9 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li><a href="../../pipelines/agents/agents.md">Configure a build system</a></li>
-<li><a href="../../pipelines/get-started-designer.md">Get started with CI/CD</a></li>
+<li><a href="/azure/devops/pipelines/create-first-pipeline">Get started with CI/CD</a></li>
 <li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests">Run tests in your build process</a></li>
-<li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
+<li>(Optional) <a href="/previous-versions/ms181734(v=vs.140)" data-raw-source="[Rate completed builds](/previous-versions/ms181734(v=vs.140))">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>
 <td>

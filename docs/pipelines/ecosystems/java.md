@@ -22,7 +22,7 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
@@ -30,7 +30,7 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ### Get the code
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
@@ -52,7 +52,7 @@ Import this repo into your Git repo in TFS:
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
@@ -64,7 +64,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ### Create the pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
@@ -105,7 +105,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
@@ -247,7 +247,7 @@ or package the build output into a .war/jar file to be deployed to a web applica
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
 

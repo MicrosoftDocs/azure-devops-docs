@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/23/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Xamarin.Android
 # Build an Android app with Xamarin
@@ -10,7 +19,7 @@
     #createAppPackage: true # Optional
     #clean: false # Optional
     #msbuildLocationOption: 'version' # Optional. Options: version, location
-    #msbuildVersionOption: '15.0' # Optional. Options: latest, 15.0, 14.0, 12.0, 4.0
+    #msbuildVersionOption: '15.0' # Optional. Options: latest, 16.0, 15.0, 14.0, 12.0, 4.0
     #msbuildFile: # Required when msbuildLocationOption == Location
     #msbuildArchitectureOption: 'x86' # Optional. Options: x86, x64
     #msbuildArguments: # Optional

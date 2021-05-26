@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Understand lock types
 ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Understand lock types
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can use the lock command to temporarily prevent changes to a particular file or folder in the source control server. This can be helpful if you want to change an item in your workspace and then check it in without being forced to resolve any merge conflicts. Only one user at a time may hold a lock on a particular file or folder. If you want to prevent access to an item in a persistent way, you should use the [Permission Command](permission-command.md) instead.
 

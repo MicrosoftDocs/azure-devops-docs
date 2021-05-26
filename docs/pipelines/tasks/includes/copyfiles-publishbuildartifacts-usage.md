@@ -1,5 +1,8 @@
 ---
 ms.topic: include
+ms.date: 02/11/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ::: moniker range="azure-devops"

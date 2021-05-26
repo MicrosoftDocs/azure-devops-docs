@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/17/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Maven
 # Build, test, and deploy with Apache Maven
@@ -9,6 +18,7 @@
     #publishJUnitResults: true 
     #testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
+    #allowBrokenSymlink: false # Optional. Has effect only when publishJUnitResults == True
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
     #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageClassFilesDirectories: # Optional

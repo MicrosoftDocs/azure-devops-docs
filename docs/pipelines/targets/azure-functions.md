@@ -118,9 +118,9 @@ You must supply an Azure service connection to the AzureFunctionApp task. Add th
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Function App>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Function App>
 ```
 
 The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The **Azure Function App Deploy** task will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
@@ -161,7 +161,7 @@ To deploy to Azure Function, add the following snippet at the end of your **azur
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Publishing and Packaging an Extension from the Command Line | Extensions for Azure DevOps Services
-description: How to package and publish your Azure DevOps Services Extension from the command line.
+title: Publishing and packaging an extension from the Command Line
+description: How to package and publish your Azure DevOps or Team Foundation Server (TFS) extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -12,20 +12,22 @@ ms.date: 08/24/2016
 
 # Publish from the command line
 
-You can use the TFS Cross Platform Command Line Interface (tfx-cli) to publish your extension to the Visual Studio Marketplace.
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-See the overview of [publish, install, and share](./overview.md) for additional details.
+You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your extension to the Visual Studio Marketplace.
 
-## Before you begin
+For more information, see the overview of [publish, install, and share](./overview.md).
 
-Before you begin, you need to get the TFX CLI from Node Package Manager and generate a personal access token. 
-Also, if you have not done so, you need to set up a Publisher in the Gallery.
+## Prerequisites
 
-### Acquire the TFS Cross Platform Command Line Interface
+Get the TFX CLI from Node Package Manager and generate a personal access token (PAT). 
+Also, if you haven't already, set up a Publisher in the Gallery.
+
+### Acquire the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 
-### Acquire a personal access token
+### Acquire a PAT
 
 [!INCLUDE [Control](../includes/procedures/acquire-pat.md)]
 
@@ -37,7 +39,7 @@ If you haven't already created a publisher, you can do so using the command line
 
 ## Publish from the command line
 
-Once the TFX CLI is installed and you have your personal access token, you can use the tool to package and publish your extension.
+Once TFX CLI is installed and you have your PAT, you can use the tool to package and publish your extension.
 
 1. Open a command prompt to the root directory of your extension.
 2. Run the `tfx extension publish` command passing in any necessary parameters. 
@@ -50,7 +52,7 @@ Failed Request: Internal Server Error(500) - Version number must increase each t
 ```
 
 You can add the `--rev-version` command line option to automatically increment the *patch* version of your extension. 
-Note that this also saves the new version to your manifest.
+This also saves the new version to your manifest.
 
 
 #### Example

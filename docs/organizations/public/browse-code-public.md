@@ -50,7 +50,7 @@ Within a Git repository, you can view any of the following items: **Files**, **C
 In the following example, we view **Commits**.
 
 > [!div class="mx-imgBorder"]
-> ![Download code ](media/browse-code/view-commits-vert.png)
+> ![View Commits.](media/browse-code/view-commits-vert.png)
 
 ## Next steps
 

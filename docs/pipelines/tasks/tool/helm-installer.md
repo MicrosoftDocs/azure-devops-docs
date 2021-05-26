@@ -7,7 +7,7 @@ ms.assetid: ed0fe761-60c2-4bbe-b027-819569b56a3d
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 04/17/2019
+ms.date: 02/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -55,6 +55,12 @@ The following YAML example demonstrates the use of an explicit version string ra
   inputs: 
     helmVersionToInstall: 2.14.1
 ```
+
+## Troubleshooting
+
+### HelmInstaller task running on a private agent behind a proxy fails to download helm package.
+
+The HelmInstaller task does not use the proxy settings to download the file https://get.helm.sh/helm-v3.1.0-linux-amd64.zip. You can work around this by pre-installing Helm on your private agents.
 
 ## Open source
 

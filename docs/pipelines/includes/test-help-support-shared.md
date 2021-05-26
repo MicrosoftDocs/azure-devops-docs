@@ -9,4 +9,6 @@ ms.date: 02/13/2020
 
 ## Help and support
 
-* Report problems through the [Developer Community](https://developercommunity.visualstudio.com/).
+* See our [troubleshooting](../troubleshooting/troubleshooting.md) page
+* Get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops),
+  and get support via the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html)

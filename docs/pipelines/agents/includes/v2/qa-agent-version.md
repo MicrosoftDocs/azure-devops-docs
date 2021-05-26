@@ -2,6 +2,7 @@
 ms.topic: include
 ms.technology: devops-cicd
 ms.author: sdanie
+ms.manager: mijacobs
 author: steved0x
 ms.date: 02/12/2020
 ---

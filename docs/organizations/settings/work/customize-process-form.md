@@ -1,8 +1,8 @@
-﻿---
+---
 title: Customize the web form to an inherited process
 titleSuffix: Azure DevOps Services  
 description: Customize the web form for a work item type and Inheritance process model for a project  
-ms-custom: inherited-process   
+ms.custom: inherited-process   
 ms.technology: devops-agile
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.author: kaelli
@@ -96,7 +96,7 @@ Here we remove the Severity inherited field from appearing on the Bug form.
 
 Removing a custom field from a form removes tracking data for the WIT. You can re-add a custom field to a WIT by adding it to a form as an existing field. 
 
-Removing an inherited field from a form simply hides the field from displaying on the form; it remains defined for the WIT. Hidden fields display on the admin layout page with a strikethrough. You can re-add these fields to the form through their context menu. 
+Removing an inherited field from a form hides the field from displaying on the form; it remains defined for the WIT. Hidden fields display on the admin layout page with a strikethrough. You can re-add these fields to the form through their context menu. 
 
 --> 
 
@@ -138,12 +138,14 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 
 > [!NOTE]    
->Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
+> Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
 
 
 ## Related articles  
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md) 
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  

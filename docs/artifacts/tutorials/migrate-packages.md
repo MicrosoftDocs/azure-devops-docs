@@ -16,11 +16,11 @@ Using the AzureArtifactsPackageMigration PowerShell module, you can easily migra
 
 ## Prerequisites
 
-- [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
+- [The NuGet CLI](/nuget/tools/nuget-exe-cli-reference)
 - [An Azure DevOps Services account](https://azure.microsoft.com/services/devops/)
 - [An Azure Artifacts feed](../get-started-nuget.md)
 - [A PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). A Personal Access Token to authenticate your feed.
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell). The AzureArtifactsPackageMigration module works with latest versions of PowerShell. With Windows, you need at least version 5.1. For Linux or Mac, you will need at least version 6.
+- [PowerShell](/powershell/scripting/install/installing-powershell). The AzureArtifactsPackageMigration module works with latest versions of PowerShell. With Windows, you need at least version 5.1. For Linux or Mac, you will need at least version 6.
 
 ## Install and import the module
 

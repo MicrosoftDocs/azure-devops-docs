@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.date: 08/10/2016
+author: steved0x
+ms.author: sdanie
+ms.prod: devops
+ms.technology: vs-devops-package
 ---
 
 You want to package and publish some projects in a C# class library to your Azure Artifacts feed.
@@ -51,7 +56,7 @@ Make sure you've prepared the build as described [above](#prepare).
 
 #### Create the feed
 
-See [Create a feed](../../../artifacts/feeds/create-feed.md).
+See [Create a feed](../../../artifacts/index.yml).
 
 
 #### [Build](../../index.yml) tasks
@@ -60,7 +65,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/pipelines/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -76,7 +81,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -91,7 +96,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
@@ -99,7 +104,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <ul>
 <li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: Internal NuGet Feed</li>
-<li>Internal feed URL: See <a href="/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url" data-raw-source="[Find your NuGet package source URL](/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url)">Find your NuGet package source URL</a>.
+<li>Internal feed URL: See <a href="/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url" data-raw-source="[Find your NuGet package source URL](../../../artifacts/nuget/consume.md#get-nuget-pkg-url)">Find your NuGet package source URL</a>.
 </li>
 </ul>
 </td>
@@ -122,7 +127,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/pipelines/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -138,7 +143,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -153,7 +158,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
@@ -162,7 +167,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: External NuGet Feed</li>
 <li>
-<p>NuGet Server Endpoint: <img src="/azure/devops/tasks/media/endpoint-manage.png" alt="endpoint manage"/></p>
+<p>NuGet Server Endpoint:</p>
 <ol>
 <li>Click &quot;New service connection&quot;, and then click Generic.</li>
 <li><p>On the Add New Generic Connection dialog box:</p>

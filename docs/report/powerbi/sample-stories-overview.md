@@ -8,7 +8,7 @@ ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '> azure-devops-2019'
+monikerRange: '>= azure-devops-2020'
 ms.date: 12/16/2019
 ---
 
@@ -23,11 +23,12 @@ This article provides instructions on how to track the quality of work items tha
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)
+> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)  
 
-[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]  
 
-[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]
+
+[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
 
 
 ## Sample queries
@@ -170,6 +171,11 @@ $apply=filter(
 ```
 
 ***
+
+
+
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
+
 
 ### Query for status of bugs linked to the requirements
 

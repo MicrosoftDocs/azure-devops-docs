@@ -6,13 +6,13 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: tutorial
 ms.date: 10/28/2019
 ---
 
 # Configure a hierarchy of teams
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 In [Portfolio management](portfolio-management.md) we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best supports the different backlog views of management and feature teams. 
 
@@ -69,7 +69,7 @@ The first step is to add a team for each feature team and management area. You c
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
 
     ![Open project admin page](../../organizations/settings/media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -84,7 +84,7 @@ The first step is to add a team for each feature team and management area. You c
 ::: moniker range="<= tfs-2015"
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
 
     <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -127,7 +127,7 @@ You do this by opening each area path associated with a feature team and changin
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png)   
 
-1. Next, choose the ![ ](../../media/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+1. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
@@ -141,7 +141,7 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the web portal for the project, choose the ![ ](../../media/icons/gear_icon.png) gear icon.   
+1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.   
 
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](../../organizations/settings/media/areas/modify-areas-its-open-admin-context-ts.png)
@@ -153,7 +153,7 @@ You do this by opening each area path associated with a feature team and changin
 
 1. Choose **Work**.  
 
-2. Next, choose the ![ ](../../media/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+2. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
@@ -166,15 +166,15 @@ You do this by opening each area path associated with a feature team and changin
 
 ::: moniker range="<= tfs-2015"  
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
-1. Next, choose the ![ ](../media/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
+1. Next, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
-    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/pm-open-and-edit-area-path.png" alt="Team admin context, Open and edit area paths for feature teams." style="border: 1px solid #C3C3C3;" />  
 
     Repeat this step for all feature team area paths. 
 
@@ -218,7 +218,7 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"   
 
-1. You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../media/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+1. You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
    > [!div class="mx-imgBorder"]  
    > ![Open team settings](../../organizations/settings/media/team-defaults/open-team-settings-horz.png) 
@@ -241,11 +241,11 @@ You define both areas and iterations from **Project Settings>Boards>Team configu
 
 ::: moniker range="<= tfs-2015"  
 
-From **Areas**, open the ![ ](../media/icons/context_menu.png) context menu and select **Include sub-areas**.  
+From **Areas**, open the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu and select **Include sub-areas**.  
 
 Here we choose to include sub-area paths for the Account Management area.  
 
-<img src="media/pm-include-sub-area-paths.png" alt="Team admin context, Open and edit area paths for feature teams" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/pm-include-sub-area-paths.png" alt="Include sub-area paths." style="border: 1px solid #C3C3C3;" /> 
 
 Repeat this step for all your management areas. Also, if you want to enable rollup across all feature teams and management areas to the top level area, repeat this step for the default team. In our example, that corresponds to Fabrikam.   
 
@@ -276,16 +276,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ## Configure additional team settings 
 
-For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include: 
-
-- [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
-- [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)  
-
-For additional details, see [Manage and configure team tools](../../organizations/settings/manage-teams.md) 
-
+For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
 

@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
@@ -59,7 +59,7 @@ In this article you'll learn how to:
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 **Stakeholder** access users can't use drag and drop to map or reparent work items or change their sprint. 
 
@@ -69,7 +69,7 @@ In this article you'll learn how to:
 
 From your web browser, open your product backlog.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -82,14 +82,14 @@ From your web browser, open your product backlog.
 	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -102,20 +102,20 @@ From your web browser, open your product backlog.
 
 	![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -151,7 +151,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To view Parents or a tree hierarchy, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
+1. To view Parents or a tree hierarchy, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Parents ON](media/organize-backlog/show-parents-agile.png)
@@ -191,10 +191,10 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Backlogs>Open view options and choose Parents ON](media/organize-backlog/turn-mapping-on-agile.png)
+	> ![Choose the view options icon and select Mapping.](media/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 
@@ -253,7 +253,7 @@ Reordering from a portfolio backlog works the same as when you [moved items into
 
 ### Limitations on reordering backlog items owned by other teams
 
-If you find you can't reorder a backlog item, check whether the ![ ](../../media/icons/info.png) info icon appears in the first column as shown in the following image. 
+If you find you can't reorder a backlog item, check whether the  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears in the first column as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![Limitations on reordering multi-team backlog items](media/organize-backlog/multi-team-reorder-limitation.png) 
@@ -286,6 +286,6 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs](filter-backlogs.md)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Filter product and portfolio backlogs](filter-backlogs-boards-plans.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 

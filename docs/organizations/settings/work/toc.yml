@@ -1,45 +1,41 @@
 - name: About the inheritance process 
-  href: inheritance-process-model.md
-- name: Quickstarts
+  href: inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+- name: Add a custom field
+  href: add-custom-field.md
+- name: Add a custom work item type
+  href: add-custom-wit.md
+- name: Customize a project
+  href: customize-process.md
+- name: Create and manage a process
+  href: manage-process.md
+- name: Customize a workflow
+  href: customize-process-workflow.md
+- name: Apply rules to workflow
+  href: apply-rules-to-workflow-states.md
+- name: Apply additional customizations
   items:
-  - name: Add a custom field
-    href: add-custom-field.md
-  - name: Add a custom work item type
-    href: add-custom-wit.md
-- name: Tutorials
-  items:
-  - name: Customize a project
-    href: customize-process.md
-  - name: Create and manage a process
-    href: manage-process.md
-- name: How-to guides
-  items:
-  - name: Add and manage fields
-    href: customize-process-field.md
-  - name: Add and manage work item types
-    href: customize-process-wit.md
-  - name: Customize a web form
-    href: customize-process-form.md
-  - name: Customize a workflow
-    href: customize-process-workflow.md
   - name: Add a custom rule
     href: custom-rules.md
-  - name: Add a custom control
-    href: custom-controls-process.md
+  - name: Add and manage fields
+    href: customize-process-field.md
+    displayname: people picker, picklist, identity, rich text, help text, delete
+  - name: Add and manage work item types
+    href: customize-process-work-item-type.md
   - name: Customize backlogs & boards
     href: customize-process-backlogs-boards.md
-  - name: Change project process
-    items:
-    - name: From Agile to Scrum
-      href: change-process-agile-to-scrum.md
-    - name: From Scrum to Agile
-      href: change-process-scrum-to-agile.md
-    - name: From Basic to Agile
-      href: change-process-basic-to-agile.md
-- name: Reference
+  - name: Customize a web form
+    href: customize-process-form.md
+  - name: Add a custom control
+    href: custom-controls-process.md
+- name: Change project process
   items:
-  - name: Work tracking object limits
-    href: object-limits.md
+  - name: From Agile to Scrum
+    href: change-process-agile-to-scrum.md
+  - name: From Scrum to Agile
+    href: change-process-scrum-to-agile.md
+  - name: From Basic to Agile
+    href: change-process-basic-to-agile.md
+
 
 
 

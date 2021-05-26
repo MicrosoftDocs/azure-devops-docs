@@ -1,9 +1,19 @@
 ---
 ms.topic: include
+ms.author: kaelli
+author: KathrynEE 
+ms.date: 03/25/2021
 ---
 
 > [!IMPORTANT]  
-> Starting with Visual Studio 2019 and Azure DevOps Office® Integration 2019, support for Microsoft Project is deprecated. Project integration and the **TFSFieldMapping** command aren't supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, full support for Microsoft Excel integration is maintained.  
+> Microsoft Project Integration and the **TFSFieldMapping** command are not supported for:  
+> - Visual Studio 2019 and Azure DevOps Office® Integration 2019  
+> - Azure DevOps Server 2019 and later versions, including Azure DevOps Services.  
+> 
+> However, full support for Microsoft Excel integration is maintained and supports bulk import and update of work items. Alternatives to using Microsoft Project include the following: 
+> - [Delivery plans](/azure/devops/boards/plans/review-team-plans)
+> - A Marketplace extension such as [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO) or [GANTT chart](https://marketplace.visualstudio.com/search?term=gantt&target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Relevance). 
+
 
 
 

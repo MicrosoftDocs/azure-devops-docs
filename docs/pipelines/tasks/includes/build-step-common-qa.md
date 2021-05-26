@@ -1,19 +1,23 @@
 ---
 ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 01/05/2021
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
-#### Q: I'm having problems. How can I troubleshoot them?
+#### Q: I'm having issues with publishing my artifacts. How can I view the detailed logs?
 
-A: Try this:
+To enable detailed logs for your pipeline:
 
-1. On the variables tab, add ```system.debug``` and set it to ```true```. Select to allow at queue time.
+1. Edit your pipeline and select **Variables**
+1. Add a new variable with the name `System.Debug` and value `true`
+1. **Save** 
 
-2. In the explorer tab, view your completed build and click the build step to view its output.
+#### Q: Which variables are available to me? 
 
-The control options arguments described above can also be useful when you're trying to isolate a problem.
+A: `$(Build.SourcesDirectory)` and `$(Agent.BuildDirectory)` are just few of the variables you can use in your pipeline. Variables are available as [expressions](../../process/expressions.md) or scripts.
 
-#### Q: How do variables work? What variables are available for me to use in the arguments? 
+See [Define variables](../../process/variables.md), [predefined variables](../../build/variables.md), and [Classic release and artifacts variables](../../release/variables.md)  to learn about the different types of variables.
 
-A: ```$(Build.SourcesDirectory)``` and ```$(Agent.BuildDirectory)``` are just a few of the variables you can use.
-Variables are available in [expressions](../../process/expressions.md) as well as scripts; see [variables](../../process/variables.md) to learn more about how to use them.
-There are some predefined [build](../../build/variables.md) and [release](../../release/variables.md) variables you can also rely on.

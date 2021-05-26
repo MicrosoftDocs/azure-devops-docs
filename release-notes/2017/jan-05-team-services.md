@@ -105,7 +105,7 @@ With so many good solutions available that integrate well with TFS and Team Serv
 
 There are several alternatives you can use. The Team room is used both for a notification hub as well as for chat. TFS and Team Services already integrate with many other collaboration products including [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), [Slack](https://slack.com/), [HipChat](https://www.hipchat.com/), [Campfire](https://campfirenow.com/) and [Flowdock](https://www.flowdock.com/). You can also use [Zapier](https://zapier.com/) to create your own integrations, or get very granular control over the notifications that show up.
 
-More information is available in this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).
+More information is available in this [blog post](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/).
 
 ## New notification settings experience
 Notifications help you and your teams stay informed about activity in your Team Services projects. With this update, it’s now easier to manage what notifications you and your teams receive. 
@@ -118,14 +118,14 @@ This view lets users manage personal subscriptions they have created. It also sh
 
 ![notification profile](media/01_05_20.png)
 
-Learn more about [managing personal notification settings](https://aka.ms/vstsmanagenotifications).
+Learn more about [managing personal notification settings](/azure/devops/notifications/manage-your-personal-notifications).
 
 ## New delivery options for team subscriptions
 Team administrators can manage subscriptions shared by all members of the team in the __Notifications__ hub under team settings. Two new delivery options are now available when configuring a team subscription: send the email notification to a specific email address (like the team’s distribution list), or send the notification to only team members associated with the activity.
 
 ![notification delivery](media/01_05_21.png)
 
-Learn more about [managing team subscriptions](https://aka.ms/vststeamnotifications).
+Learn more about [managing team subscriptions](/azure/devops/notifications/manage-team-group-global-organization-notifications).
 
 ## Out of the box notifications (preview)
 Prior to this feature, users would need to manually opt in to any notifications they wanted to receive. With out-of-the-box notifications (which currently must be enabled by an account administrator), users automatically receive notifications for events such as:
@@ -143,7 +143,7 @@ To enable this feature for the account, an account administrator needs to go to 
 
 ![notifications oob opt in](media/01_05_33.png)
 
-Learn more about [out of the box subscriptions](https://aka.ms/vstsoobnotifications).
+Learn more about [out of the box subscriptions](/azure/devops/notifications/manage-your-personal-notifications).
 
 ## New hosted build image
 We have deployed a new hosted build image with the following updates:
@@ -181,7 +181,7 @@ Test Impact Analysis for managed automated tests is now available via a checkbox
 If enabled, only the relevant set of managed automated tests that need to be run to validate a given code change will run. Test Impact Analysis requires the latest version of Visual Studio, and is presently supported in CI for managed automated tests.
 
 ## SonarQube MSBuild tasks
-SonarQube MSBuild tasks are now available from an extension provided by SonarSource. For more details, please read [SonarSource have announced their own SonarQube Team Services / TFS integration](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/13/sonarsource-have-announced-their-own-sonarqube-team-services-tfs-integration/).
+SonarQube MSBuild tasks are now available from an extension provided by SonarSource. For more details, please read [SonarSource have announced their own SonarQube Team Services / TFS integration](https://devblogs.microsoft.com/devops/sonarsource-have-announced-their-own-sonarqube-team-services-tfs-integration/).
 
 ## Improved experience for Code Search results
 There have been improvements to the Code Search results pane:
@@ -225,7 +225,7 @@ Variable groups are used to group your variables and their values that you want 
 
 Open __Library__ tab in __Build &amp; Release__ hub and choose __+ Variable group__ in the toolbar. Find more information about variable groups under [Release definitions in Microsoft Release Management](https://visualstudio.microsoft.com/docs/release/author-release-definition/more-release-definition#var-groups) in the Visual Studio documentation.
 
-![default artifact](media/01_05_18.png)
+![Choose variable group.](media/01_05_18.png)
 
 As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

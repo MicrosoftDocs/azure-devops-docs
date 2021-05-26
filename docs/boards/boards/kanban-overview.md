@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -46,7 +46,7 @@ To get started, you'll want to follow the steps outlined below.
 
 ## Product and portfolio Kanban boards 
 
-Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
@@ -120,7 +120,7 @@ In addition to these team configurations, you can [customize a project](#customi
 
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ Once you've configured your Kanban board, you can add work items directly to the
 
 The Cumulative Flow Diagram (CFD) is an in-context report available for both product and portfolio backlog levels. Use this chart to monitor key metrics to fine tune your processes. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
@@ -184,17 +184,20 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Customize your project and boards 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see <a href="../../organizations/settings/work/customize-process-backlogs-boards.md" data-raw-source="[Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)">Customize your backlogs or boards for a process</a>. 
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
  
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+
 ::: moniker-end
 
 
@@ -212,8 +215,8 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [What is Agile?](/devops/plan/what-is-agile)   
+- [What is Agile development?](/devops/plan/what-is-agile-development)  
  
 
 

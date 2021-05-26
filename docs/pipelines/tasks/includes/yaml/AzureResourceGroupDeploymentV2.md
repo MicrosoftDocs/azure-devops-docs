@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 02/10/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Azure resource group deployment
 # Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
@@ -13,7 +22,7 @@
     #csmFile: # Required when  TemplateLocation == Linked Artifact
     #csmParametersFile: # Optional
     #overrideParameters: # Optional
-    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validation
+    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validate
     #enableDeploymentPrerequisites: 'None' # Optional. Options: none, configureVMwithWinRM, configureVMWithDGAgent
     #teamServicesConnection: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #teamProject: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent

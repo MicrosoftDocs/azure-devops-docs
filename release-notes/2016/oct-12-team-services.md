@@ -24,7 +24,7 @@ The most constructive feedback we have received is that users want to manage thi
 
 We’ve added two new features that make it easier to port or back out changes from the web portal: Cherry-pick and Revert.  
 
-Use the cherry-pick command to port changes in a pull request to multiple branches.  A typical use case is when a bug needs to be hotfixed, but should also be fixed in the mainline.  Once you’ve created your pull request that contains the fix to the hotfix branch, you can easily cherry-pick the same fix into the master branch.  If the PR is active, you can find the __Cherry-pick__ command on the context menu.
+Use the cherry-pick command to port changes in a pull request to multiple branches.  A typical use case is when a bug needs to be hotfixed, but should also be fixed in the mainline.  Once you’ve created your pull request that contains the fix to the hotfix branch, you can easily cherry-pick the same fix into the main branch.  If the PR is active, you can find the __Cherry-pick__ command on the context menu.
 
 ![cherry pick](media/10_12_03.png)
 
@@ -96,7 +96,7 @@ Xcode 8 requires specifying an export options plist when exporting an app packag
 ## FindBugs in the Gradle build task
 You can now request FindBugs standalone static analysis in the Gradle build task (in addition to the PMD and Checkstyle analysis). The results of the static analysis appear in the build summary, and resulting files are available from the __Artifact__ tab of the build result.
 
-For more details see [Maven and Gradle build tasks support powerful code analysis tools](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/12/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/).
+For more details see [Maven and Gradle build tasks support powerful code analysis tools](https://devblogs.microsoft.com/devops/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/).
 ## Build improvements
 
 ### Visual Studio “15” build task
@@ -147,7 +147,7 @@ In an earlier sprint, we made it easier to create a new Azure Resource Manager s
 
 ## Test & Feedback extension general availability
 
-We are pleased to announce that __Exploratory Testing__ extension is now __Test & Feedback__ extension and is free for all.  You can find more information in the [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/08/test-feedback-overview/).
+We are pleased to announce that __Exploratory Testing__ extension is now __Test & Feedback__ extension and is free for all.  You can find more information in the [blog post](https://devblogs.microsoft.com/devops/test-feedback-overview/).
 
 ## Testing improvements
 ### Update existing bugs from Web Runner

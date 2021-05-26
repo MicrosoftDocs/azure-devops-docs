@@ -1,7 +1,7 @@
 ---
 title: Why did I get this email
 titleSuffix: Azure DevOps 
-description: Troubleshoot why you're receiving automatic notification emails from Azure DevOps or Team Foundation Server (TFS)
+description: Troubleshoot why you're receiving automatic notification emails from Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley 
@@ -36,4 +36,4 @@ All emails have a footer, which contains a link to view the subscription that tr
 
 ## Contact customer support
 
-If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md).
+If you can't resolve the issue with the previously mentioned steps, consider contacting [customer support](troubleshoot-contact-support.md).

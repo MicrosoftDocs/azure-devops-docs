@@ -16,7 +16,7 @@ Other highlights include:
 - [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
 - [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 
-## What’s new in VSTS
+## What's new in VSTS
 
 > [!VIDEO https://www.youtube.com/embed/0y7NO_5mEYM?rel=0]
 
@@ -75,7 +75,7 @@ Formerly part of the TFS Power tools, the tool has been released as a [standalon
 
 Large products have several components that are dependent on each other. These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated. Teams typically manage these dependencies manually.
 
-Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/build/triggers#BuildCompletion) documentation for more information.
+Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/process/pipeline-triggers) documentation for more information.
 
 This feature was prioritized based on what is currently the #2 highest voted suggestion with 1,129 votes.
 
@@ -111,7 +111,7 @@ Use the enhanced **Azure Resource Group** task to dynamically bootstrap agents o
 > [!div class="mx-imgBorder"]
 > ![Azure Resource Group task](media/132_12.png)
 
-When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You’ll now find a more consistent interface that feels like the rest of the product.
+When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You'll now find a more consistent interface that feels like the rest of the product.
 
 See the [Deployment Groups](/azure/devops/pipelines/release/deployment-groups/) documentation for more information about getting started.
 
@@ -135,9 +135,9 @@ See the [authoring gate tasks](https://github.com/Microsoft/azure-pipelines-task
 
 ### Use upstream npm packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project’s configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project's configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
 
-We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) documentation for more information.
+We're also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Upstream sources list](media/132_01.png)
@@ -157,7 +157,7 @@ To enable retention policies, edit your feed and enter a value in the **Maximum 
 
 ### Publish markdown files from a Git repository as a Wiki
 
-Developers create documentation for “APIs”, “SDKs”, and “help docs explaining code” in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish markdown files from code repositories and host them in Wiki.
+Developers create documentation for "APIs", "SDKs", and "help docs explaining code" in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish markdown files from code repositories and host them in Wiki.
 
 > [!div class="mx-imgBorder"]
 > ![public code as wiki action](media/132_04.png)
@@ -183,11 +183,11 @@ If you published the wrong repository, simply unpublish the wiki, which leaves t
 
 You can also change the ordering of the pages from the repository or even transform a folder to look like a wiki page.
 
-See the [product documentation blog post](https://go.microsoft.com/fwlink/?linkid=866310) for more information. This feature was prioritized based on a suggestion.
+See the [product documentation blog post](/azure/devops/project/wiki/publish-repo-to-wiki) for more information. This feature was prioritized based on a suggestion.
 
 ### Retain special characters in Wiki page titles
 
-You can now create wiki pages with special characters such as `: < > * ? | -`. Now pages with titles like “FAQ?” or “Set-up guide” can be created in Wiki. The following characters are translated to their UTF-8 encoded strings:
+You can now create wiki pages with special characters such as `: < > * ? | -`. Now pages with titles like "FAQ?" or "Set-up guide" can be created in Wiki. The following characters are translated to their UTF-8 encoded strings:
 
 |Character|Encoded String|
 |-------------|--------------------|
@@ -211,7 +211,7 @@ Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wiki
 
 Analytics Views work with our VSTS Power BI Data Connector. Together they give an easy way to get your VSTS data into Power BI so you can start creating custom reports.
 
-When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](https://go.microsoft.com/fwlink/?linkid=870159) that you can start using in Power BI. Now you can edit your default views and [create new views](https://go.microsoft.com/fwlink/?linkid=870160) to fine-tune the records, fields, and history returned to Power BI.
+When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](/azure/devops/report/powerbi/data-connector-connect) that you can start using in Power BI. Now you can edit your default views and [create new views](/azure/devops/report/powerbi/overview) to fine-tune the records, fields, and history returned to Power BI.
 
 ## Next steps and Feedback
 
@@ -221,7 +221,7 @@ When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://azure.microsoft.com/updates/?product=azure-devops)
 
-We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
+We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you'd like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
 > ![Feedback menu](../2017/media/125_00.png)

@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd 
+---
+
 ```YAML
 # Copy files over SSH
 # Copy files or build artifacts to a remote machine over SSH

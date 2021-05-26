@@ -1,3 +1,10 @@
+---
+ms.topic: include
+ms.date: 02/18/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # PowerShell
 # Run a PowerShell script on Linux, macOS, or Windows

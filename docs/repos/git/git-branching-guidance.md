@@ -4,11 +4,9 @@ titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.technology: devops-code-git 
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+ms.date: 09/18/2020
+monikerRange: '<= azure-devops'
 ---
 
 # Adopt a Git branching strategy
@@ -19,22 +17,22 @@ Your team should find a balance between this flexibility and the need to collabo
 Team members publish, share, review, and iterate on code changes through Git branches shared with others.
 Adopt a branching strategy for your team. You can collaborate better and spend less time managing version control and more time developing code.
 
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](/devops/develop/how-microsoft-develops-devops).
 
 ## Keep your branch strategy simple
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
 * Use feature branches for all new features and bug fixes.
-* Merge feature branches into the master branch using pull requests.
-* Keep a high quality, up-to-date master branch.  
+* Merge feature branches into the main branch using pull requests.
+* Keep a high quality, up-to-date main branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow.
 
 ### Use feature branches for your work
 
-Develop your features and fix bugs in feature branches based off your master branch. These branches are also known as *topic branches*.
-Feature branches isolate work in progress from the completed work in the master branch.
+Develop your features and fix bugs in feature branches based off your main branch. These branches are also known as *topic branches*.
+Feature branches isolate work in progress from the completed work in the main branch.
 Git branches are inexpensive to create and maintain. Even small fixes and changes should have their own feature branch.
 
 ![image of basic branching workflow](media/branching-guidance/featurebranching.png)
@@ -51,8 +49,8 @@ Some suggestions for naming your feature branches:
 * users/username/description
 * users/username/workitem
 * bugfix/description
-* features/feature-name
-* features/feature-area/feature-name
+* feature/feature-name
+* feature/feature-area/feature-name
 * hotfix/description
 
 ::: moniker range=">= tfs-2018" 
@@ -70,7 +68,7 @@ Learn more about [using feature flags](http://martinfowler.com/articles/feature-
 
 The review that takes place in a pull request is critical for improving code quality.
 Only merge branches through pull requests that pass your review process.
-Avoid merging branches to the master branch without a pull request.
+Avoid merging branches to the main branch without a pull request.
 
 Reviews in pull requests take time to complete. Your team should agree on what's expected from pull request creators and reviewers.
 Distribute reviewer responsibilities to share ideas across your team and spread out knowledge of your codebase.
@@ -83,18 +81,18 @@ Some suggestions for successful pull requests:
 * Provide enough detail in the description to quickly bring reviewers up to speed with your changes.
 * Include a build or linked version of your changes running in a staged environment with your pull request. Others can easily test the changes.
 
-### Keep a high quality, up-to-date master branch
+### Keep a high quality, up-to-date main branch
 
-The code in your master branch should pass tests, build cleanly, and always be current.
-Your master branch needs these qualities so that feature branches created by your team start from a known good version of code.
+The code in your main branch should pass tests, build cleanly, and always be current.
+Your main branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
 ::: moniker range=">= tfs-2015" 
 
-Set up a [branch policy](branch-policies.md) for your master branch that:
+Set up a [branch policy](branch-policies.md) for your main branch that:
 
-* Requires a pull request to merge code. This approach prevents direct pushes to the master branch and ensures discussion of proposed changes.
+* Requires a pull request to merge code. This approach prevents direct pushes to the main branch and ensures discussion of proposed changes.
 * Automatically adds reviewers when a pull request is created. The added team members review the code and comment on the changes in the pull request.
-* Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.
+* Requires a successful build to complete a pull request. Code merged into the main branch should build cleanly.
 
 >[!TIP]
 >The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process.
@@ -104,35 +102,39 @@ Set up a [branch policy](branch-policies.md) for your master branch that:
 ## Manage releases
 
 Use release branches to coordinate and stabilize changes in a release of your code.
-This branch is long-lived and isn't merged back into the master branch in a pull request, unlike the feature branches.
+This branch is long-lived and isn't merged back into the main branch in a pull request, unlike the feature branches.
 Create as many release branches as you need. Keep in mind that each active release branch represents another version of the code you need to support.
 Lock release branches when you're ready to stop supporting a particular release.
 
 ### Use release branches
 
-Create a release branch from the master branch when you get close to your release or other milestone, such as the end of a sprint.
+Create a release branch from the main branch when you get close to your release or other milestone, such as the end of a sprint.
 Give this branch a clear name associating it with the release, for example *release/20*.
 
 Create branches to fix bugs from the release branch and merge them back into the release branch in a pull request.  
 
 ![image of release branch workflows](media/branching-guidance/releasebranching_release.png)
 
-### Port changes back to the master branch
+### Port changes back to the main branch
 
-Bring over changes made in your release branch into your master branch to prevent regression in your code.
-Port your changes from your release branch into a new feature branch to bring them back into the master branch.
-Use cherry-picking instead of merging so that you have exact control over which commits are ported back to the master branch.
-Merging the feature branch into the master branch can bring over release-specific changes you don't want in the master branch.
+Make sure that fixes land in both your release branch and your main branch.
+One approach is to make fixes in the release branch, then bring changes into your main branch to prevent regression in your code.
+Another approach (and the one employed by the Azure DevOps team) is to always make changes in the mainline, then port those to the release branch.
+You can read more about our [Release Flow](/devops/deliver/what-is-continuous-delivery) strategy.
 
-Update the master branch with a change made in the release branch with these steps:
+In this topic, we'll cover making changes in the release branch and porting them into mainline.
+Use cherry-picking instead of merging so that you have exact control over which commits are ported back to the main branch.
+Merging the feature branch into the main branch can bring over release-specific changes you don't want in the main branch.
 
-1. Create a new feature branch off the master branch to port the changes.
+Update the main branch with a change made in the release branch with these steps:
+
+1. Create a new feature branch off the main branch to port the changes.
 1. Cherry-pick the changes from the release branch to your new feature branch.
-1. Merge the feature branch back into the master branch in a second pull request.
+1. Merge the feature branch back into the main branch in a second pull request.
 
-![image of release branch workflows](media/branching-guidance/releasebranching_master.png)
+![Updated release branch workflows.](media/branching-guidance/releasebranching_main.png)
 
-This release branch workflow keeps the pillars of the basic workflow intact: feature branches, pull requests, and a strong master branch that always has the latest version of the code.
+This release branch workflow keeps the pillars of the basic workflow intact: feature branches, pull requests, and a strong main branch that always has the latest version of the code.
 
 ### Why not use tags for releases?
 
@@ -150,11 +152,11 @@ Your team doesn't have to adopt any new version control process other than the c
 
 You can handle multiple deployments of your code in the same way you handle multiple releases.
 Create a clear naming convention, such as *deploy/performance-test*, and treat the environment branches like release branches.
-Your team should agree on a process to update deployment branches with the code from your master branch.
-Cherry-pick bug fixes in the deployment branch back to the master branch. Use the same steps as porting changes from a release branch.
+Your team should agree on a process to update deployment branches with the code from your main branch.
+Cherry-pick bug fixes in the deployment branch back to the main branch. Use the same steps as porting changes from a release branch.
 
 An exception to this recommendation is if you're using a form of continuous deployment.
-Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your master branch to your deployment targets.
+Use [Azure Pipelines](../../pipelines/index.yml) when working with continuous deployment to promote builds from your main branch to your deployment targets.
 
 ## Videos
 > [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]

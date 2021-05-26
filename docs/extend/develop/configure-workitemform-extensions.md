@@ -1,6 +1,6 @@
 ---
-title: Configure work item form extensions in TFS | Extensions for Azure DevOps Services
-description: Describes how to add and configure work item form extensions in TFS.
+title: Configure work item form extensions | Extensions for Azure DevOps
+description: Describes how to add and configure work item form extensions in Azure DevOps.
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -10,15 +10,18 @@ author: chcomley
 ms.date: 10/10/2017
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps Services</blockquote>  
-
 # Add extensions in work item form via work item type definition xml
 
-A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walk through, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we add the control to the Agile "User Story" work item type.
+> [!NOTE]
+> Work item form customization via xml is supported only on Azure Devops Server, not Azure DevOps Services. 
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+A work item type can be exported as XML using `witadmin` tool, that includes the layout of the work item form. As part of the walkthrough, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](../../reference/xml/weblayout-xml-elements.md). In this example, we add the control to the Agile "User Story" work item type.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-**Step 1:**  Install work item form extensions in TFS.
+**Step 1:**  Install work item form extensions in Azure DevOps Server.
 
 **Step 2:**   Open the `Developer Command Prompt`.  Export the XML file to your desktop with command shown below.
 
@@ -27,7 +30,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
 ```
 
 <br>
-<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the Weblayout Section a comment blob is present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions are listed with their ids and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
+<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the <code>Weblayout</code> Section a comment blob is present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions are listed with their IDs and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
 
 ```xml
         <!--**********************************Work Item Extensions***************************
@@ -127,5 +130,5 @@ Note that if a control contribution has any required input defined, users must g
 
 
 <br>
-<strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using witadmin.
-<code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code> 
+<strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using <code>witadmin</code>.
+<code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code>

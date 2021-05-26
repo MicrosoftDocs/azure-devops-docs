@@ -1,10 +1,13 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
 ---
 
 ::: moniker range=">= tfs-2018"
 
-### REST API 
+## REST API 
 
 To programmatically interact with queries, see one of these REST API resources:  
 

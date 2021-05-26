@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,12 +12,12 @@ monikerRange: '>= tfs-2015'
 
 # Branch Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **branch** command copies an item or set of items, including metadata and version control history, from one location to another in the Team Foundation version control server and in the local workspace.
 
 > [!NOTE]
-> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
 **Required Permissions**
 
@@ -35,7 +33,7 @@ tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|c
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       *olditem*       |                                                                                                                      Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.                                                                                                                      |
 |       *newitem*       | Specifies the name of the destination file or folder or the parent folder for the destination. If *newitem* already exists and is a Team Foundation version control server folder, Team Foundation creates the branched items within it. Otherwise, *newitem* specifies the name of the destination file or folder. Conflicts can occur during check-in if the destination already exists. |
-|     *versionspec*     |                                                            Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).                                                            |
+|     *versionspec*     |                                                            Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).                                                            |
 |       *comment*       |                                                                                                                                                                            Provides a comment about the branch.                                                                                                                                                                            |
 | <em>@commentfile</em> |                                                                                                                                                    Specifies the path of a file that contains the comment that is used for the branch.                                                                                                                                                     |
 |     *authorname*      |                                                                                                                                                                    The user-provided value for the **/author** option.                                                                                                                                                                     |
@@ -80,7 +78,7 @@ If you specify a local path such as c:\\00101 but do not specify a *versionspec*
 
 However, if you specify a server path such as $/00101/\*.cs and do not specify a *versionspec*, Team Foundation uses the latest Team Foundation version control server version as the basis for creating the new branch instead.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example creates a branch file that contains the latest workspace version of 314.cs, names it "314\_branch", and saves it to the current directory on disk and also to the Team Foundation version control server folder to which it maps.
 
@@ -136,4 +134,4 @@ c:\projects>tf branch 314.cs;LBeta1 314_Beta1branch
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

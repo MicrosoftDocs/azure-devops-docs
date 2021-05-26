@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: shashban
+ms.author: shashban
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Visual Studio test agent deployment
 # Deprecated: Instead, use the 'Visual Studio Test' task to run unit and functional tests

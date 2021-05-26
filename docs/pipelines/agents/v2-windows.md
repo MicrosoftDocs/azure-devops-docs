@@ -1,16 +1,16 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows
-ms.custom: seodec18
+ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 01/31/2019
+ms.date: 03/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Self-hosted Windows agents
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))**
 
 ::: moniker range="tfs-2015"
 
@@ -33,8 +33,8 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 Make sure your machine has these prerequisites:
 - Windows 7, 8.1, or 10 (if using a client OS)
 - Windows 2008 R2 SP1 or higher (if using a server OS)
-- [PowerShell 3.0](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) or higher
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+- [PowerShell 3.0](/powershell/scripting/install/installing-windows-powershell) or higher
+- [.NET Framework](/dotnet/framework/install/) 4.6.2 or higher
 
 > [!IMPORTANT]
 > Starting December 2019, the minimum required .NET version for build agents is 4.6.2 or higher.
@@ -71,7 +71,7 @@ running 4 self-hosted agents apiece.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -89,15 +89,15 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-### Azure DevOps Server 2019
+### Azure DevOps Server  2019 and Azure DevOps Server 2020
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
+      [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Click **Download agent**.</li>
 
@@ -186,7 +186,7 @@ Learn more at [Communication with Azure Pipelines or TFS](agents.md#communicatio
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
-If you choose to run as a service (which we recommend), the username you run as should be 20 characters or less.
+If you choose to run as a service (which we recommend), the username you run as should be 20 characters or fewer.
 
 ## Run the agent
 
@@ -202,13 +202,14 @@ To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to r
 
 ### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
 
  ```ps
  .\run.cmd --once
  ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ### Run as a service
 
@@ -247,6 +248,18 @@ You must pass `--unattended` and the answers to all questions.
 
 `.\config --help` always lists the latest required and optional responses.
 
+## Diagnostics
+
+If you're having trouble with your self-hosted agent, you can try running diagnostics.
+After configuring the agent:
+
+```ps
+.\run --diagnostics
+```
+
+This will run through a diagnostic suite that may help you troubleshoot the problem.
+The diagnostics feature is available starting with agent version 2.165.0.
+
 ## Help on other options
 
 To learn about other options:
@@ -259,7 +272,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to queue a job on a Jenkins server.
+Use this task to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 
@@ -112,7 +112,7 @@ You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatic
 
 To set it up:
 
-1. Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
+1. Install the [Team Foundation Server Plug-in](https://www.jenkins.io/doc/pipeline/steps/tfs/) on the Jenkins server.
 
 2. On the Jenkins server, for each job you would like to collect results from, add the **Collect results for Azure Pipelines/TFS** post-build action and then configure it with one or more pairs of result type and include file pattern.
 
@@ -124,7 +124,7 @@ Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../includes/build-step-common-qa.md)]

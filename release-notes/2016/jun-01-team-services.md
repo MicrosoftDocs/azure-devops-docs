@@ -119,7 +119,7 @@ If you need to work with Release Management REST APIs, we now have a [C# client 
 
 ### Dashboards REST APIs
 
-You can now use REST APIs to programmatically add, delete and get information on a dashboard. The APIs also let you add, remove, update, replace, and get information on a widget or a list of widgets on a dashboard. The documentation is available on [Visual Studio online docs](https://aka.ms/dashboardapi).
+You can now use REST APIs to programmatically add, delete and get information on a dashboard. The APIs also let you add, remove, update, replace, and get information on a widget or a list of widgets on a dashboard. The documentation is available on [Visual Studio online docs](/rest/api/azure/devops/dashboard/?viewFallbackFrom=vsts-rest-4.1).
 
 A number of features in this release are directly based on feedback that you submitted. If have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

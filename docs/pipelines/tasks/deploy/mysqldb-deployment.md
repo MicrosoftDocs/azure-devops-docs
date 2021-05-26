@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 
 # MySql Database Deployment on Machine Group task
 
-Use this task in a build or release pipeline to run your scripts and make changes to your MySQL Database. There are two ways to deploy, either using a script file or writing the script in our inline editor. Note that this is an early preview version. Since this task is server based, it appears on Deployment group jobs.
+Use this task to run your scripts and make changes to your MySQL Database. There are two ways to deploy, either using a script file or writing the script in our inline editor. Note that this is an early preview version. Since this task is server based, it appears on Deployment group jobs.
 
 ## Prerequisites
 
@@ -47,8 +47,8 @@ steps:
   inputs:
     TaskNameSelector: InlineSqlTask
     SqlInline: |
-     CREATE DATABASE IF NOT EXISTS alm;
-     use alm;
+      CREATE DATABASE IF NOT EXISTS alm;
+      use alm;
     ServerName: localhost
     SqlUsername: root
     SqlPassword: P2ssw0rd

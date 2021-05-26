@@ -3,10 +3,12 @@ title: Change the workflow for a work item type
 titleSuffix: Azure DevOps & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 03/31/2017
 ---
 
@@ -26,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > [!NOTE]  
 > This article describes how to customize a workflow state. If instead, you want to change the *State* assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../../boards/work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../../boards/boards/kanban-basics.md#track-work), or [Task board, Update task status](../../boards/sprints//task-board.md#update-task-status). You can also perform a [bulk update of the *State* for many work items](../../boards/backlogs/bulk-modify-work-items.md).
 > 
-> For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+> For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
 
 [!INCLUDE [temp](../../includes/update-xml-wit.md)] 
@@ -44,6 +46,7 @@ To customize the workflow, follow these two steps:
 <a name="DesignGuidelines"></a> 
 
 ## Workflow design guidelines  
+
 You define the workflow by first identifying the states and the valid transitions between them. The `WORKFLOW` section of the WIT definition specifies the valid states, transitions, reasons for the transitions, and optional actions that will be performed when a team member changes the state of a work item.  
 
 In general, you associate each state with a team member role and a task that a person in that role must perform to process the work item before changing its state. Transitions define the valid progressions and regressions between states. Reasons identify why a team member changes a work item from one state to another, and actions support automation of the transition of a work item at a point in the workflow.  
@@ -73,6 +76,8 @@ As you design or modify a workflow, consider the following guidelines:
      The drop-down menus for the State and Reason fields within the work item form or query editor display the values assigned in the `WORKFLOW` section of the work item type.  
 
 <a name="ExampleWorkflow"></a> 
+
+
 ##  Workflow diagram and code example  
 
 The following code example shows the `WORKFLOW` for the Bug WIT definition for the Agile process template. This example defines three states and five transitions. The `STATE` elements specify the Active, Resolved, and Closed states. All possible combinations for progression and regression transitions are defined for the three states, except one. The transition from Closed to Resolved is not defined. Therefore, team members cannot resolve a work item of this type if the work item is closed.  
@@ -129,7 +134,11 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 ```
 
 
-##  <a name="NumberStates"></a> Determine the number and types of states  
+<a name="NumberStates"></a> 
+
+
+## Determine the number and types of states  
+
  You determine the number and types of valid states based on the number of distinct logical states in which you want the work items of that type to exist. Also, if different team members perform different actions, then you can consider defining a state based on a member role. Each state corresponds to an action that a team member must perform on the work item to move it to the next state. For each state, you should define the specific actions and the team members who are allowed to perform those actions.  
 
  The following table provides an example of four states that are defined to track the progress of a feature and the valid users who must perform the indicated actions:  
@@ -144,7 +153,10 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 > [!NOTE]  
 >  All states appear in alphabetical order in the list on the form for a work item of a particular type, regardless of the sequence in which you specify them.   
 
+
   <a name="Transitions"></a> 
+
+
 ## Define transitions  
 
 You control the states to and from which team members can change a work item if you define the valid state progressions and regressions. If you do not define a transition from one state to another state, team members cannot change a work item of a particular type from a particular state to another particular state.  
@@ -172,7 +184,9 @@ You control the states to and from which team members can change a work item if 
 ```  
 
 <a name="Reasons"></a>   
+
 ### Specify the reasons  
+
  When a team member changes the State field, that user can retain the default reason for that transition or specify a different reason if you define additional options. You must use the `DEFAULTREASON` element to specify one and only one default reason. You should specify additional reasons only if they help the team track or report data.  
 
  For example, a developer can specify one of the following reasons when they resolve a bug: Fixed (Default), Deferred, Duplicate, As Designed, Cannot Reproduce, or Obsolete. Each reason specifies a particular action for the tester to perform with regard to the bug.  
@@ -198,8 +212,10 @@ You control the states to and from which team members can change a work item if 
 ```  
 
 <a name="Actions"></a>   
-###  Specify actions  
- In general, team members change the state of a work item by specifying a different value for the **State** field and then saving the work item. However, you can also define an `ACTION` element that automatically changes the state of a work item when that transition occurs. As the following example shows, you can specify that bug work items should be resolved automatically if they are associated with files that a developer checks into version control:  
+
+###  Specify actions
+  
+In general, team members change the state of a work item by specifying a different value for the **State** field and then saving the work item. However, you can also define an `ACTION` element that automatically changes the state of a work item when that transition occurs. As the following example shows, you can specify that bug work items should be resolved automatically if they are associated with files that a developer checks into version control:  
 
 ```xml
 <TRANSITION from="Active" to="Resolved">  
@@ -213,8 +229,10 @@ You control the states to and from which team members can change a work item if 
  You can use the `ACTION` element to automatically change the state of work items of a particular type when events occur elsewhere in Microsoft Visual Studio Application Lifecycle Management or outside Visual Studio Application Lifecycle Management (for example, from a tool that tracks calls). For more information, see [ACTION](automate-field-assignments-state-transition-reason.md).  
 
 <a name="fields"></a> 
-##  Update a field during a workflow change  
- You can define rules that update fields whenever the following events occur:  
+
+## Update a field during a workflow change  
+
+You can define rules that update fields whenever the following events occur:  
 
 - Assign a field rule under `STATE` when you want the rule to apply for all transitions to and reasons for entering that state.  
 
@@ -265,7 +283,9 @@ You control the states to and from which team members can change a work item if 
 ```  
 
 <a name="CopyField"></a>  
+
 ###  Define a field based on the contents of another field  
+
  When the value of the **State** field for a work item changes to Resolved and the work item is saved, the value of the **Resolved Reason** field is set to the value that the user specified in the **Reason** field. The following example shows the elements that enforce this rule:  
 
 ```xml
@@ -279,7 +299,7 @@ You control the states to and from which team members can change a work item if 
 </STATE>  
 ```  
 
-## Related notes
+## Related articles
 
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)  
 - [Customize your work tracking experience](../customize-work.md)  
@@ -290,8 +310,7 @@ You control the states to and from which team members can change a work item if 
 
 
 <a name="tools"></a> 
+
 ### Tool support
 
-You can change the workflow or view the workflow state diagram that you are defining by using the Process Editor, available for TFS 2015 and earlier versions. You install it from [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
-
-You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace. This tool supports both TFS and Azure DevOps Services. 
+You can support your users to visualize the workflow by installing the [State Model Visualization extension](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) from the Visual Studio Marketplace.

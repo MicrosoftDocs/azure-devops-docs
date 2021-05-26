@@ -43,7 +43,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
   
  ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")  
   
- The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](../excel/code-churn-excel-report.md).  
+ The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report).  
   
 ### Select and filter pivot fields  
  ![Pivot Fields for Code Churn Report](media/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  
@@ -52,7 +52,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
   
 1.  In Excel, connect to the SQL Server Analysis Services cube for Visual Studio Team Foundation Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart and then choose **Change Chart Type**, **Area**, **Stacked Area**.  
   
@@ -145,13 +145,13 @@ The following table describes the measures in the Run Coverage measure group. By
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
 -   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)  
--   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
+-   [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)  
   
--   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  
+-   [Configure unit tests by using a .runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)  
   
 ## Related notes
--  [Code Churn](../excel/code-churn-excel-report.md)   
--  [Code Churn](../excel/code-coverage-excel-report.md)  
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
+-  [Code Coverage](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Code Churn tables](table-reference-code-churn.md)   
 -  [Run Coverage tables](run-coverage-tables.md)   
 -  [Perspectives and measure groups in the Analysis Services cube](perspective-measure-groups-cube.md)

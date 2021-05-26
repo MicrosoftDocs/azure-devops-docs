@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 #  Sprints and Scrum key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 
@@ -68,7 +68,6 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
-[!INCLUDE [temp](../../includes/glossary-terms/issues.md)] 
 
 [!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
@@ -89,6 +88,7 @@ The role of product owners is to act as the interface between customers and the 
 
 
 ## Scrum master role
+
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases. Learn more: [Scrum best practices, Role of the Scrum Master](best-practices-scrum.md#scrum-master-role).   
 
 [!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
@@ -137,7 +137,7 @@ To add users to a team, see [Add users to a project or specific team](../../orga
 
 ## Technical debt 
 
-Technical debt includes anything the team must do to deploy production quality code and keep it running in production. Examples are bugs, performance issues, operational issues, accessibility, and others. Learn more about how to minimize technical debt: [What is Agile Development?](/azure/devops/learn/agile/what-is-agile-development).  
+Technical debt includes anything the team must do to deploy production quality code and keep it running in production. Examples are bugs, performance issues, operational issues, accessibility, and others. Learn more about how to minimize technical debt: [What is Agile Development?](/devops/plan/what-is-agile-development).  
 
 ## Triage meetings 
 
@@ -168,6 +168,6 @@ Each team is associated with one and only one velocity chart. Velocity will vary
 - [Refine your backlog](../backlogs/best-practices-product-backlog.md)
 - [Scrum best practices](best-practices-scrum.md). 
 - [About Sprints and Scrum](scrum-overview.md)  
-- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Scrum?](/devops/plan/what-is-scrum)
 
 

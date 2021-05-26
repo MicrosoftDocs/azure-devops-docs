@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 03/06/2020
 ---
 
 # Feature progress rollup sample report
@@ -24,7 +24,7 @@ This article shows you how to display the percentage complete by rollup of Story
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 
 ## Sample queries
@@ -39,9 +39,8 @@ let
         &"$filter=WorkItemType eq 'Feature' "
             &"and State ne 'Cut' "
             &"and startswith(Area/AreaPath,'{areapath}') "
-            &"and Descendants/any() "
-        &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
-        &"&$expand=Descendants( "
+            &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
+            &"&$expand=Descendants( "
             &"$apply=filter(WorkItemType eq 'User Story') "
                 &"/groupby((StateCategory), "
                 &"aggregate(StoryPoints with sum as TotalStoryPoints)) "
@@ -82,23 +81,114 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.
 
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=WorkItemType eq 'Feature'</code></td><td>Return Features.</td><tr>
-<tr><td><code>and State ne 'Cut'</code></td><td>Omit Features marked as Cut.</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and Descendants/any()</code></td><td>Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.</td><tr>
-<tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
-<tr><td><code>&$expand=Descendants(</code></td><td>Expand Descendants.</td><tr>
-<tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>
-<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
-<tr><td><code>aggregate(StoryPoints with sum as TotalStoryPoints))</code></td><td>Aggregate sum of Story Points.</td><tr>
-<tr><td><code>)</code></td><td>Close Descendants().</td><tr>
 
-</tbody>
-</table>
-
+:::row:::
+   :::column span="":::
+      **Query part**  
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------
+   :::column-end:::
+   :::column span="2":::
+      ----------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `$filter=WorkItemType eq 'Feature'`
+   :::column-end:::
+   :::column span="2":::
+      Return Features.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and State ne 'Cut'`
+   :::column-end:::
+   :::column span="2":::
+      Omit Features marked as Cut.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and startswith(Area/AreaPath,'{areapath}')`  
+   :::column-end:::
+   :::column span="2":::
+      Work items under a specific Area Path. Replacing with Area/AreaPath eq '{areapath}' returns items at a specific Area Path.  
+      To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and Descendants/any()`
+   :::column-end:::
+   :::column span="2":::
+      Filters out any work item that has at least one or "any" descendant. Includes all Features with at least one Child WIT. To get all work items with their descendants, even if they don't have any, run a query without the `Descendants/any()` filter. To omit Features that don't have child User Stories, replace with `any(d:d/WorkItemType eq 'User Story')`.  
+      For all work items **with and without descendants**:  
+      `$filter=endswith(Area/AreaPath,'suffix')
+      &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
+      &$expand=Descendants($select=WorkItemId)`  
+      <br/>
+      For all workitems with **at least one descendant**:
+      `$filter=endswith(Area/AreaPath, 'suffix')and Descendants/any()
+      &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
+      &$expand=Descendants($select=WorkItemId)`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `&$select=WorkItemId, Title, WorkItemType, State`  
+   :::column-end:::
+   :::column span="2":::
+      Select fields to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `&$expand=Descendants(`  
+   :::column-end:::
+   :::column span="2":::
+      Expand Descendants.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `$apply=filter(WorkItemType eq 'User Story')`  
+   :::column-end:::
+   :::column span="2":::
+      Filters the descendants. Only include User Stories (omits Tasks and Bugs).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `/groupby((StateCategory),`  
+   :::column-end:::
+   :::column span="2":::
+      Group the rollup by StateCategory. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `aggregate(StoryPoints with sum as TotalStoryPoints))`  
+   :::column-end:::
+   :::column span="2":::
+      Aggregate sum of Story Points.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `)`  
+   :::column-end:::
+   :::column span="2":::
+      Close Descendants().
+   :::column-end:::
+:::row-end:::
+ 
 
 ## Power BI transforms
 
@@ -116,12 +206,12 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 2. Check all the fields and choose **OK**.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants2.png)
+    > ![Check all the fields and choose OK.](media/odatapowerbi-expanddescendants2.png)
 
 3. Table now contains rollup fields.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants3.png)
+    > ![Table now contains rollup fields.](media/odatapowerbi-expanddescendants3.png)
 
 ### Pivot Descendants.StateCategory column
 
@@ -133,7 +223,7 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 	Power BI creates a column for every StateCategory value.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants4.png)
+	> ![Pivot Descendants.StateCategory column.](media/odatapowerbi-expanddescendants4.png)
 
 ### Replace Nulls in the pivoted columns
 
@@ -151,7 +241,7 @@ Repeat for every Pivoted StateCategory column.
 1. Enter the following in **Custom column formula**.
 
     ```
-    = ([Proposed]+[InProgress]+[Resolved])/([Proposed]+[InProgress]+[Resolved]+[Completed])
+    = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
     ```
 
     > [!NOTE]

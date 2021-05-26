@@ -4,10 +4,10 @@ description: The Azure App Service Deploy task is used to update Azure App Servi
 ms.topic: reference
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.manager: dastahel
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/24/2020
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
+Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -29,12 +29,12 @@ The task works for [ASP.NET](../../apps/aspnet/build-aspnet-4.md),
 
 The task can be used to deploy to a range of Azure App Services such as:
 
-* [Web Apps on both Windows and Linux](https://azure.microsoft.com/documentation/articles/app-service-web-overview/)
-* [Web Apps for Containers](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro)
-* [Function Apps on both Windows and Linux](https://docs.microsoft.com/azure/azure-functions/)
-* [Function Apps for Containers](https://docs.microsoft.com/azure/azure-functions/)
+* [Web Apps on both Windows and Linux](/azure/app-service/overview)
+* [Web Apps for Containers](/azure/app-service/containers/app-service-linux-intro)
+* [Function Apps on both Windows and Linux](/azure/azure-functions/)
+* [Function Apps for Containers](/azure/azure-functions/)
 * [WebJobs](https://azure.microsoft.com/blog/webjobs-goes-into-full-production/)
-* Apps configured under [Azure App Service Environments](https://docs.microsoft.com/azure/app-service/environment/intro)
+* Apps configured under [Azure App Service Environments](/azure/app-service/environment/intro)
 
 ## Prerequisites for the task
 
@@ -42,8 +42,8 @@ The following prerequisites must be set up in the target machine(s) for the task
 
 * **App Service instance**. The task is used to deploy a Web App project or Azure Function project to an existing Azure App Service instance, which must exist before the task runs.
   The App Service instance can be created from the [Azure portal](https://azure.microsoft.com/documentation/videos/azure-app-service-web-apps-with-yochay-kiriaty/)
-  and [configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/) there.
-  Alternatively, the [Azure PowerShell task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShell) can be used to run
+  and [configured](/azure/app-service/configure-common) there.
+  Alternatively, the [Azure PowerShell task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV2) can be used to run
   [AzureRM PowerShell scripts](/powershell/module/azurerm.websites) to provision and configure the Web App.
 
 * **Azure Subscription**. To deploy to Azure, an Azure subscription must be [linked to the pipeline](../../library/connect-to-azure.md).
@@ -62,7 +62,7 @@ The following prerequisites must be set up in the target machine(s) for the task
 <tr><td><code>DockerNamespace</code><br/>(Registry or Namespace)</td><td>(Required if WebAppKind = webAppContainer <br/>or WebAppkind = functionAppContainer) A globally unique top-level domain name for your specific registry or namespace. <b>Note</b>: the fully-qualified image name will be of the format: <b>{registry or namespace}/{repository}:{tag}</b>. For example, <b>myregistry.azurecr.io/nginx:latest</b></td></tr>
 <tr><td><code>DockerRepository</code><br/>(Image)</td><td>(Required if WebAppKind = webAppContainer <br/>or WebAppkind = functionAppContainer) Name of the repository where the container images are stored. <b>Note:</b> the fully-qualified image name will be of the format: <b>{registry or namespace}/{repository}:{tag}</b>. For example, <b>myregistry.azurecr.io/nginx:latest</b></td></tr>
 <tr><td><code>DockerImageTag</code><br/>(Tag)</td><td>(Optional) Tags are optional, but are the mechanism that registries use to apply version information to Docker images. <b>Note:</b> the fully-qualified image name will be of the format: <b>{registry or namespace}/{repository}:{tag}</b>. For example, <b>myregistry.azurecr.io/nginx:latest</b></td></tr>
-<tr><td><code>VirtualApplication</code><br/>(Virtual application)</td><td>(Optional) Specify the name of the Virtual Application that has been configured in the Azure portal. This option is not required for deployments to the website root. The Virtual Application must have been <a href="https://azure.microsoft.com/documentation/articles/web-sites-configure/" data-raw-source="[configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/)">configured</a> before deployment of the web project.</td></tr>
+<tr><td><code>VirtualApplication</code><br/>(Virtual application)</td><td>(Optional) Specify the name of the Virtual Application that has been configured in the Azure portal. This option is not required for deployments to the website root. The Virtual Application must have been <a href="/azure/app-service/configure-common" data-raw-source="[configured](/azure/app-service/configure-common)">configured</a> before deployment of the web project.</td></tr>
 <tr><td><code>Package</code><br/>(Package or folder)</td><td>(Required if ConnectionType = PublishProfile or WebAppKind = webApp, apiApp, functionApp, mobileApp, webAppLinux, or functionAppLinux) File path to the package, or to a folder containing App Service contents generated by MSBuild, or to a compressed zip or war file.<br /><a href="../../build/variables.md" data-raw-source="[Build variables](../../build/variables.md)">Build variables</a> or <a href="../../release/variables.md#default-variables" data-raw-source="[release variables](../../release/variables.md#default-variables)">release variables</a>) and wildcards are supported. For example, <code>$(System.DefaultWorkingDirectory)/&#42;&#42;/&#42;.zip</code> or <code>$(System.DefaultWorkingDirectory)/&#42;&#42;/&#42;.war</code><br/>Default value: <code>$(System.DefaultWorkingDirectory)/&#42;&#42;/&#42;.zip</code> <br/>Argument aliases: <code>packageForLinux</code></td></tr>
 <tr><td><code>RuntimeStack</code><br/>(Runtime Stack)</td><td>(Optional) Select the framework and version. This is for WebApp for Linux.</td></tr>
 <tr><td><code>RuntimeStackFunction</code><br/>(Runtime Stack)</td><td>(Optional) Select the framework and version. This is for Function App on Linux.</td></tr>
@@ -79,11 +79,11 @@ The following prerequisites must be set up in the target machine(s) for the task
 <tr><td><code>SetParametersFile</code><br/>(SetParameters file)</td><td>(Optional) location of the <b>SetParameters.xml</b> file to be used.</td></tr>
 <tr><td><code>RemoveAdditional<br/>FilesFlag</code><br/>(Remove additional files at destination)</td><td>(Optional) Select the option to delete files on the Azure App Service that have no matching files in the App Service package or folder.<br/><b>Note:</b> This will also remove all files related to any extensions installed on this Azure App Service. To prevent this, set the <b>Exclude files from App_Data folder</b> checkbox.<br/>Default value: false</td></tr>
 <tr><td><code>ExcludeFiles<br/>FromAppDataFlag</code><br/>(Exclude files from the App_Data folder)</td><td>(Optional) Select the option to prevent files in the App_Data folder from being deployed to or deleted from the Azure App Service.<br/>Default value: true</td></tr>
-<tr><td><code>AdditionalArguments</code><br/>(Additional arguments)</td><td>(Optional) Additional Web Deploy arguments following the syntax <b>-key:value</b>. These will be applied when deploying the Azure App Service. Example: <b>-disableLink:AppPoolExtension -disableLink:ContentExtension.</b> <a href="https://go.microsoft.com/fwlink/?linkid=838471" data-raw-source="[More examples](https://go.microsoft.com/fwlink/?linkid=838471)">More examples</a>.<br/>Default value: <b>-retryAttempts:6 -retryInterval:10000</b></td></tr>
+<tr><td><code>AdditionalArguments</code><br/>(Additional arguments)</td><td>(Optional) Additional Web Deploy arguments following the syntax <b>-key:value</b>. These will be applied when deploying the Azure App Service. Example: <b>-disableLink:AppPoolExtension -disableLink:ContentExtension.</b> <a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd569089(v=ws.10)" data-raw-source="[More examples](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd569089(v=ws.10))">More examples</a>.<br/>Default value: <b>-retryAttempts:6 -retryInterval:10000</b></td></tr>
 <tr><td><code>RenameFilesFlag</code><br/>(Rename locked files)</td><td>(Optional) Select this option to enable the MSDeploy flag <b>MSDEPLOY_RENAME_LOCKED_FILES=1</b> in the Azure App Service application settings. When set, it enables MSDeploy to rename files that are locked during app deployment.<br/>Default value: true</td></tr>
-<tr><td><code>XmlTransformation</code><br/>(XML transformation)</td><td>(Optional) The configuration transformations will be run for <strong><em>.Release.config</strong> and <strong></em>.{EnvironmentName}.config</strong> on the <strong>*.config</strong> files. Configuration transformations run before variable substitution. XML transformations are supported only for the Windows platform. <a href="https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-transformation" data-raw-source="[Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-transformation)">Learn more</a>.<br/>Default value: false <br/>Argument aliases: <code>enableXmlTransform</code></td></tr>
-<tr><td><code>XmlVariable<br/>Substitution</code><br/>(XML variable substitution)</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the <b>key</b> or <b>name</b> entries in the <b>appSettings</b>, <b>applicationSettings</b>, and <b>connectionStrings</b> sections of any configuration file and <b>parameters.xml</b> file. Variable substitution runs after configuration transformations. <br/><b>Note:</b> if the same variables are defined in the release pipeline and in the stage, the stage variables will supersede the release pipeline variables. <a href="https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-variable-substitution" data-raw-source="[Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#xml-variable-substitution)">Learn more</a> <br/>Default value: false <br/>Argument aliases: <code>enableXmlVariableSubstitution</code></td></tr>
-<tr><td><code>JSONFiles</code><br/>(JSON variable substitution)</td><td>(Optional) Provide a newline-separated list of JSON files to substitute the variable values. Filenames must be relative to the root folder. To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. For example, to replace the value of <b>ConnectionString</b> in the sample below, define a variable named <b>Data.DefaultConnection.ConnectionString</b> in the build or release pipeline (or release pipelines stage).<br/><br/>{<br/>&nbsp;&nbsp;&quot;Data&quot;: {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&quot;DefaultConnection&quot;: {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ConnectionString&quot;: &quot;Server=(localdb)\SQLEXPRESS;Database=MyDB;Trusted_Connection=True&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/><br/>Variable substitution runs after configuration transformations. <b>Note</b>: build and release pipeline variables are excluded from substitution. <a href="https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#json-variable-substitution" data-raw-source="[Learn more](https://docs.microsoft.com/vsts/build-release/tasks/transforms-variable-substitution?view=vsts#json-variable-substitution)">Learn more</a>.</td></tr>
+<tr><td><code>XmlTransformation</code><br/>(XML transformation)</td><td>(Optional) The configuration transformations will be run for <strong><em>.Release.config</strong> and <strong></em>.{EnvironmentName}.config</strong> on the <strong>*.config</strong> files. Configuration transformations run before variable substitution. XML transformations are supported only for the Windows platform. <a href="/vsts/build-release/tasks/transforms-variable-substitution#xml-transformation" data-raw-source="[Learn more](/vsts/build-release/tasks/transforms-variable-substitution#xml-transformation)">Learn more</a>.<br/>Default value: false <br/>Argument aliases: <code>enableXmlTransform</code></td></tr>
+<tr><td><code>XmlVariable<br/>Substitution</code><br/>(XML variable substitution)</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the <b>key</b> or <b>name</b> entries in the <b>appSettings</b>, <b>applicationSettings</b>, and <b>connectionStrings</b> sections of any configuration file and <b>parameters.xml</b> file. Variable substitution runs after configuration transformations. <br/><b>Note:</b> if the same variables are defined in the release pipeline and in the stage, the stage variables will supersede the release pipeline variables. <a href="/vsts/build-release/tasks/transforms-variable-substitution#xml-variable-substitution" data-raw-source="[Learn more](/vsts/build-release/tasks/transforms-variable-substitution#xml-variable-substitution)">Learn more</a> <br/>Default value: false <br/>Argument aliases: <code>enableXmlVariableSubstitution</code></td></tr>
+<tr><td><code>JSONFiles</code><br/>(JSON variable substitution)</td><td>(Optional) Provide a newline-separated list of JSON files to substitute the variable values. Filenames must be relative to the root folder. To substitute JSON variables that are nested or hierarchical, specify them using JSONPath expressions. For example, to replace the value of <b>ConnectionString</b> in the sample below, define a variable named <b>Data.DefaultConnection.ConnectionString</b> in the build or release pipeline (or release pipelines stage).<br/><br/>{<br/>&nbsp;&nbsp;&quot;Data&quot;: {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&quot;DefaultConnection&quot;: {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ConnectionString&quot;: &quot;Server=(localdb)\SQLEXPRESS;Database=MyDB;Trusted_Connection=True&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;}<br/> }<br/><br/>Variable substitution runs after configuration transformations. <b>Note</b>: build and release pipeline variables are excluded from substitution. <a href="/vsts/build-release/tasks/transforms-variable-substitution#json-variable-substitution" data-raw-source="[Learn more](/vsts/build-release/tasks/transforms-variable-substitution#json-variable-substitution)">Learn more</a>.</td></tr>
 </table>
 
 This YAML example deploys to an Azure Web App container (Linux).
@@ -110,6 +110,66 @@ steps:
     DockerRepository: $(DockerRepository)
     DockerImageTag: $(Build.BuildId)
 ```
+
+Here is another example that deploys a web app to a Windows App Service across deployment slots.
+
+```YAML
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+ - stage: DeployDevStage
+    displayName: 'Deploy App to Dev Slot'
+    jobs:
+      - job:  DeployApp
+        displayName: 'Deploy App'
+        steps:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'drop'
+            targetPath: '$(System.DefaultWorkingDirectory)'
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            ConnectionType: 'AzureRM'
+            azureSubscription: 'Fabrikam Azure Subscription - PartsUnlimited'
+            appType: 'webApp'
+            WebAppName: 'partsunlimited'
+            deployToSlotOrASE: true
+            ResourceGroupName: 'rgPartsUnlimited'
+            SlotName: 'Dev'
+            packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
+  - stage: DeployStagingStage
+    displayName: 'Deploy App to Staging Slot'
+    dependsOn: DeployDevStage
+    jobs:
+      - job:  DeployApp
+        displayName: 'Deploy App'
+        steps:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'drop'
+            targetPath: '$(System.DefaultWorkingDirectory)'
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            appType: webApp
+            ConnectionType: AzureRM            
+            ConnectedServiceName: 'Fabrikam Azure Subscription - PartsUnlimited'
+            ResourceGroupName: 'rgPartsUnlimited'
+            WebAppName: 'partsunlimited'
+            Package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+            deployToSlotOrASE: true
+            SlotName: 'staging'
+
+```
+
 * To deploy to a specific app type, set <code>appType</code> to any of the following accepted values:  <code>webApp</code> (Web App on Windows), <code>webAppLinux</code> (Web App on Linux), <code>webAppContainer</code> (Web App for Containers - Linux), <code>functionApp</code> (Function App on Windows), 
 <code>functionAppLinux</code> (Function App on Linux), <code>functionAppContainer</code> (Function App for Containers - Linux), <code>apiApp</code> (API App), <code>mobileApp</code> (Mobile App).
 If not mentioned, <code>webApp</code> is taken as the default value.
@@ -133,7 +193,7 @@ If not mentioned, <code>webApp</code> is taken as the default value.
 ## Usage notes
 
 
-* The task works with the [Azure Resource Manager APIs](https://msdn.microsoft.com/library/azure/dn790568.aspx) only.
+* The task works with the [Azure Resource Manager APIs](/rest/api/resources/) only.
 * To ignore SSL errors, define a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` with value `true` in the release pipeline.
 * For .NET apps targeting Web App on Windows, avoid deployment failure with the error `ERROR_FILE_IN_USE` by ensuring that
   **Rename locked files** and **Take App Offline** settings are enabled. For zero downtime deployment, use the slot swap option.
@@ -209,7 +269,7 @@ For windows based agents.
 <table><thead><tr><th>App Service type</th><th>Package type</th><th>Deployment Method</th></tr></thead>
 <tr><td>WebApp on Linux or Function App on Linux</td><td>Folder/Zip/jar <br/>War</td><td>Zip Deploy<br/>War Deploy</td></tr>
 <tr><td>WebApp for Containers (Linux) or Function App for Containers (Linux)</td><td>Update the App settings</td><td>NA</td></tr>
-<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/> Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/>if postDeploymentScript == true Zip Deploy <br/> else, Run From Package</td></tr>
+<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/><br/><br/>   Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/><br/> if postDeploymentScript == true, Zip Deploy <br/> else, Run From Package</td></tr>
 </table>
 
 On non-Windows agents (for any App Service type), the task relies on
@@ -235,7 +295,7 @@ Web Deploy is feature-rich and offers options such as:
 
 * **Additional Web Deploy arguments:** Arguments that will be applied when deploying the Azure App Service.
   Example: `-disableLink:AppPoolExtension -disableLink:ContentExtension`.
-  For more examples of Web Deploy operation settings, see [Web Deploy Operation Settings](https://go.microsoft.com/fwlink/?linkid=838471).
+  For more examples of Web Deploy operation settings, see [Web Deploy Operation Settings](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd569089(v=ws.10)).
 
 Install Web Deploy on the agent using the [Microsoft Web Platform Installer](https://www.microsoft.com/web/gallery/install.aspx?appid=wdeploynosmo).
 Web Deploy 3.5 must be installed without the bundled SQL support. There is no need to choose any custom settings when installing Web Deploy.
@@ -261,7 +321,7 @@ container registry, repository, image name, and tag information. You can also us
 
 Expects a .zip deployment package and deploys the file contents to the **wwwroot** folder of the App Service or Function App in Azure.
 This option overwrites all existing contents in the **wwwroot** folder. For more information, see
-[Zip deployment for Azure Functions](https://docs.microsoft.com/azure/azure-functions/deployment-zip-push).
+[Zip deployment for Azure Functions](/azure/azure-functions/deployment-zip-push).
 
 <a name="runfromzip-notes"></a>
 
@@ -269,7 +329,7 @@ This option overwrites all existing contents in the **wwwroot** folder. For more
 
 Expects the same deployment package as Zip Deploy. However, instead of deploying files to the **wwwroot** folder, the entire package is
 mounted by the Functions runtime and files in the **wwwroot** folder become read-only. For more information, see
-[Run your Azure Functions from a package file](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package).
+[Run your Azure Functions from a package file](/azure/azure-functions/run-functions-from-deployment-package).
 
 <a name="wardeploy-notes"></a>
 
@@ -289,14 +349,17 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
+    ![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+    ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
+
+> [!NOTE]
+> This section is deprecated and has been replaced with the [File Transform](../utility/file-transform.md) task.
 
 ### ERROR_FILE_IN_USE
 
@@ -306,12 +369,12 @@ You can also use *Run From Package deployment* method to avoid resource locking.
 
 ### Web Deploy Error
 
-If you are using web deploy to deploy your app, in some error scenarios Web Deploy will show an error code in the log. To troubleshoot a web deploy error see [this](https://docs.microsoft.com/iis/publish/troubleshooting-web-deploy/web-deploy-error-codes).
+If you are using web deploy to deploy your app, in some error scenarios Web Deploy will show an error code in the log. To troubleshoot a web deploy error see [this](/iis/publish/troubleshooting-web-deploy/web-deploy-error-codes).
 
 ### Web app deployment on App Service Environment (ASE) is not working
 * Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
 * If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
-* If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
+* If you are using TFS/Azure DevOps Server deployed in a Virtual Network, the agent can be completely isolated.
 * Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
 * If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.
 

@@ -3,22 +3,35 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 02/23/2021
 ---
 
-Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
+To publish a Maven artifact to your feed, follow these steps: 
 
-To publish a Maven artifact, you'll need to have a Maven artifact to publish on your local machine. 
-If you don't have one, you can generate one by running the following command:
+1. If you don't have a Maven package, you can create one by running the following command:
 
-```Command
-mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
-```
+    ```Command
+    mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
+    ```
+    
+    If you get the following error *You must specify a valid lifecycle phase or a goal (..)* after executing the previous command, follow these steps to add a goal in your run configuration:
+    
+    Right click on your project, select *Run as* then *Maven Build*. Enter **package** in the *Goals* text box, then select *Run*.
+
 
 1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
 
-2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the *myFirstApp* folder.
+1. Navigate to the directory of your *pom.xml* file. By default, the *pom.xml* file is at root path of the project.
 
-3. From the directory containing your **pom.xml** file, run the command, `mvn build` and `mvn deploy`. The Maven artifact should appear in your feed.
+1. Run the following commands to build and deploy your Maven artifact:
+    - **Build your package**: `mvn build`
+    - **Deploy your package**: `mvn deploy` 
 
-See the [Maven CLI docs](https://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.
+If you want to publish a third-party artifact, you can use the [deploy:deploy-file](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) mojo. This can be used with or without a POM file to deploy your packages.
+
+```Command
+mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFeedURL" -DgroupId="MyGroup" -DartifactId="myFirstApp" -Dversion="jarFileVersion" -Dfile="jarFileLocalPath"
+```
+
+> [!NOTE]
+> Maven snapshots are not supported in upstream sources.

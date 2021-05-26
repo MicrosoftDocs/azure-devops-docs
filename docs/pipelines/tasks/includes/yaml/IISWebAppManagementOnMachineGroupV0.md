@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # IIS web app manage
 # Create or update websites, web apps, virtual directories, or application pools
@@ -28,7 +37,7 @@
     appPoolNameForWebsite: 
     #dotNetVersionForWebsite: 'v4.0' # Options: v4.0, v2.0, no Managed Code
     #pipeLineModeForWebsite: 'Integrated' # Options: integrated, classic
-    #appPoolIdentityForWebsite: 'ApplicationPoolIdentity' # Options: applicationPoolIdentity, localService, localSystem, networkService, specificUser
+    #appPoolIdentityForWebsite: 'ApplicationPoolIdentity' # Options: ApplicationPoolIdentity, LocalService, LocalSystem, NetworkService, SpecificUser
     #appPoolUsernameForWebsite: # Required when appPoolIdentityForWebsite == SpecificUser
     #appPoolPasswordForWebsite: # Optional
     #anonymousAuthenticationForWebsite: false # Optional

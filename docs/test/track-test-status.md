@@ -18,6 +18,8 @@ View the status of your planned testing using an out-of-the-box Progress Report 
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
+:::moniker range=">= azure-devops-2020"
+
 ## Progress Report
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 1. How much testing is complete?
@@ -28,19 +30,19 @@ To track the progress of more than one test plan or test suite, use the Progress
 6. View the progress each suite has made within a test plan and identify the areas that need attention.
 
 ### Configuring the report
-By navigating to Test Plans > Progress Report*, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
+By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
 
 ### Understanding the report
 The progress report consists of three sections:
 1. **Summary**: This section provides you with a consolidated view for the selected test plans. To understand what test points are, refer [here](new-test-plans-page.md).
 2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
-3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double clicking on it.
+3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double-clicking on it.
 
-![snippet](media/progress-report/snippet.png)
+![Progress report](media/progress-report/snippet.PNG)
 
-An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (i.e. tests are being executed) and the number of passed tests are on the rise.
+An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (because tests are being executed) and the number of passed tests are on the rise.
 
-![good trend](media/progress-report/goodtrend.png)
+![good trend](media/progress-report/goodtrend.PNG)
 
 An example of an unhealthy outcome trend is as follows because as time is progressing, there is no significant execution occurring and the # of passed and failed tests are continuing to remain flat. In such situations, use the details card to drill down and take suitable actions.
 
@@ -52,7 +54,7 @@ By using the filter bar you can filter this report by Test Suites, Configuration
 > The test plan is considered Level 1. Its child suites are considered level 2. Their child suites in turn are considered level 3. The Test Suites filter shows only the Level 3 test suites inside the selected test plans. To select a Level 2 test suite select all the Level 3 test suites underneath it. This assumes the Level 2 test suites itself does not have any test points.
 
 ### Behavior
-When using this progress report it is good to know the following points:
+When using this progress report, it is good to know the following points:
 1. The report lets you view data for one or more Test Plans in a single project. To view data across projects, use the [OData APIs](../report/extend-analytics/data-model-analytics-service.md). This report is also rendered using the same OData APIs. 
 2. Whenever you visit the report, it will show you the data for the test plan you had accessed last. Currently we do not store your last set of filters and also do not let you store an instance of this report.
 3. All the data shown in the report is as per the current suite hierarchy in the selected test plans. Currently, we are not storing the hierarchy history.
@@ -60,7 +62,10 @@ When using this progress report it is good to know the following points:
 5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
 
 ### Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+
+To report any issues you might be having with the Progress Report, go to https://developercommunity.visualstudio.com/content/problem/post.html?space=21. If relevant to the issue you report, include screenshots.
+
+:::moniker-end
 
 ## Charts
 
@@ -227,13 +232,13 @@ Use the chart's context menu.
 
 ![Open the chart](media/track-test-status/EditDeletePinChart.png)
 
-You can [configure the dashboard widget](../report/widget-catalog.md)
+You can [configure the dashboard widget](../report/dashboards/widget-catalog.md)
 to show a range of chart types.
-You must be a team administrator to do this, but team members with 
+You must be a team administrator to configure the dashboard widget, but team members with 
 Stakeholder access can view the charts on the dashboard. 
 
 Learn more about
-[dashboards](../report/dashboards.md). 
+[dashboards](../report/dashboards/dashboards.md). 
 Or learn more about
 [team administration](../organizations/settings/manage-teams.md).
 

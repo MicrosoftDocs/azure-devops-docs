@@ -5,42 +5,93 @@ ms.topic: include
 
 <a id="wiki-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [managing or editing Wiki pages](/azure/devops/project/wiki/add-edit-wiki). To view the valid shortcuts, enter **Shift+?** from a **Wiki** page. 
+::: moniker range=">= tfs-2018"
+
+You can use the following keyboard shortcuts when [managing or editing Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, enter **?** from a **Wiki** page. 
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
 
 > [!NOTE]  
 > The following shortcuts are available from the web portal for Azure DevOps Services and TFS 2018.2 and later versions.  
 
-<table width="70%">
-<tbody valign="top">
-<tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/wiki-manage.png" alt="&quot;Manage wiki keyboard shortcuts"/></td>
-<td>
-<strong>Wiki (manage)</strong><br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>e</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>c</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new sub-page<br/><br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order<br/><br/>
-<strong>Ctrl+P</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page<br/>
-<strong>Ctrl+Shift+f</strong>&nbsp;&nbsp;Filter page<br/>
-</td>
-</tr>
-<tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/wiki-edit.png" alt="&quot;Edit wiki page keyboard shortcuts"/></td>
-<td>
-<strong>Wiki edit</strong><br/><br/>
+::: moniker-end
 
-**Ctrl+b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bold text<br/>
-**Ctrl+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italicize text<br/>
-**Ctrl+k**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert hyperlink<br/>
-**Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy text<br/>
-**Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied text<br/><br/>
-**Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format tables<br/><br/>
 
-**Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>
-**Ctrl+Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Close<br/>
-**Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close
-</td>
-</tr>
-</tbody>
-</table>
+::: moniker range=">= azure-devops-2020"
+
+
+:::row:::
+   :::column span="2":::
+      ![Manage wiki keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-manage-cloud.png)  
+   :::column-end:::
+   :::column span="2":::
+      <br/><br/><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page  
+      &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page  
+      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new sub-page  
+      **Ctrl+↓**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
+      **Ctrl+↑**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
+      **Ctrl+P**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page  
+      **Ctrl+Shift+b**&nbsp;&nbsp;Create work item from selected text    
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      <br/><br/><br/><br/>
+      ![Edit wiki page keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-edit-cloud.png)  
+   :::column-end:::
+   :::column span="2":::
+      **Ctrl+b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bold text  
+      **Ctrl+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italicize text  
+      **Ctrl+k**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert hyperlink  
+      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy text  
+      **Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied text  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format tables <br/><br/> 
+      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes  
+      **Ctrl+Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Close  
+      **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close 
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018 <= azure-devops-2019"
+
+
+:::row:::
+   :::column span="2":::
+      ![Manage wiki keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-manage.png)  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page  
+      &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page  
+      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new sub-page  
+      **Ctrl+↑**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
+      **Ctrl+↓**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
+      **Ctrl+P**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page  
+      **Ctrl+Shift+f**&nbsp;&nbsp;Filter page  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      ![Edit wiki page keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-edit.png)  
+   :::column-end:::
+   :::column span="2":::
+      **Ctrl+b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bold text  
+      **Ctrl+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Italicize text  
+      **Ctrl+k**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert hyperlink  
+      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy text  
+      **Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied text  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format tables  
+      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes  
+      **Ctrl+Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Close  
+      **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close 
+   :::column-end:::
+:::row-end:::
+
+
+
+::: moniker-end
+

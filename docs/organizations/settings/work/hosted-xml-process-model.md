@@ -19,7 +19,7 @@ ms.date: 10/24/2019
 
 
 > [!NOTE]   
-> **Feature availability**:  The Hosted XML process model is only supported for organizations that have been migrated to Azure DevOps Services using the TFS Database Import Service (which is no longer available).  
+> **Feature availability**: The Hosted XML process model is only supported for organizations that have migrated to Azure DevOps using the data migration tool for Azure DevOps.
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
@@ -84,7 +84,7 @@ You can perform the following tasks with the Hosted XML process model.
 <li><a href="../../../reference/add-portfolio-backlogs.md" data-raw-source="[Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md)">Add portfolio backlogs</a></li>
 <li><a href="../../../reference/xml/process-configuration-xml-element.md#add" data-raw-source="[Configure the quick add panel](../../../reference/xml/process-configuration-xml-element.md#add)">Configure the quick add panel</a></li>
 <li><a href="../../../reference/xml/process-configuration-xml-element.md#columns" data-raw-source="[Configure the default backlog columns](../../../reference/xml/process-configuration-xml-element.md#columns)">Configure the default backlog columns</a></li>
-<li><a href="../../../reference/xml/process-configuration-xml-element.md#number_items" data-raw-source="[Set maximum number of task board items](../../../reference/xml/process-configuration-xml-element.md#number_items)">Set maximum number of task board items</a></li>
+<li><a href="../../../reference/xml/process-configuration-xml-element.md#number_items" data-raw-source="[Set maximum number of Taskboard items](../../../reference/xml/process-configuration-xml-element.md#number_items)">Set maximum number of Taskboard items</a></li>
 <li><a href="../../../reference/xml/process-configuration-xml-element.md#weekend_days" data-raw-source="[Set default weekend days (Scrum)](../../../reference/xml/process-configuration-xml-element.md#weekend_days)">Set default weekend days (Scrum)</a> </li>
 <li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default bug management behavior](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default bug management behavior</a></li>
 <li><a href="../../../reference/xml/process-configuration-xml-element.md#behaviors" data-raw-source="[Set default hidden backlogs](../../../reference/xml/process-configuration-xml-element.md#behaviors)">Set default hidden backlogs</a></li>
@@ -140,9 +140,10 @@ Use the following sequences when you manage customizations using the Hosted XML 
 ## Related articles
 - [Customize a Hosted XML process](./import-process/customize-process.md)  
 - [Import a process](./import-process/import-process.md)  
-- [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md)  
+- [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md) 
+- [Differences between Inheritance and Hosted XML](./inheritance-versus-hosted-xml.md) 
 - [Work tracking object limits](object-limits.md)
-- [REST APIS: Processes](/rest/api/vsts/processes/processes)
+- [REST APIS: Processes](/rest/api/azure/devops/processes/processes/list)
 
 
 

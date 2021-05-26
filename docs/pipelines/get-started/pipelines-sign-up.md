@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.topic: overview
 ms.author: chcomley
 author: chcomley
-ms.date: 02/26/2020
+ms.date: 03/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -40,6 +40,8 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 
     ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
+5. Select the service you'd like to start your project with, **Pipelines**.
+    
     ![New project, select Azure Pipelines](../media/new-project-select-pipelines.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
@@ -47,8 +49,6 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 	`https://dev.azure.com/{yourorganization}`
 
 Your next step is to [create a project](#create-project). 
-
-<a id="create-project" />
 
 ## Sign up with a GitHub account
 
@@ -73,11 +73,9 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 
    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
-	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
+	An organization gets created based on the account you used to sign in. Use the following URL to sign in to your organization at any time: `https://dev.azure.com/{yourorganization}`
 
-	`https://dev.azure.com/{yourorganization}`
-
-For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
+For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.yml).
 
 Your next step is to [create a project](#create-project). 
 
@@ -107,7 +105,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 You can add and invite others to work on your project by adding their email address to your organization and project.
 
-1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
@@ -128,7 +126,7 @@ You can add and invite others to work on your project by adding their email addr
       - **Project Administrators:** Assign to users who will configure project resources.
 
 	> [!NOTE]  
-	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 

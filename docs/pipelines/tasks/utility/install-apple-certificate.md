@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to install an Apple certificate that is required to build on a macOS agent.
+Use this task to install an Apple certificate that is required to build on a macOS agent.
 You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server.
 
 ## Demands

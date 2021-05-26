@@ -1,19 +1,20 @@
-﻿---
+---
 title: Edit multiple user stories, & other work items
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
+ms.technology: devops-agile
 ms.custom: "boards-backlogs, seodec18" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 04/22/2021
 ---
 
 # Bulk modify work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
@@ -97,8 +98,8 @@ All of the following actions can be performed by team members that belong to the
 <li><a href="copy-clone-work-items.md#copy-clone" data-raw-source="[Clone or copy a single item](copy-clone-work-items.md#copy-clone)">Clone or copy a single item</a> <sup>2</sup></li>
 <li><a href="copy-clone-work-items.md#html" data-raw-source="[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)">Copy as HTML/Copy to clipboard</a></li>
 <li><a href="../queries/share-plans.md" data-raw-source="[Email selected item(s)](../queries/share-plans.md)">Email selected item(s)</a></li>
-<li><a href="remove-delete-work-items.md#change-type" data-raw-source="[Change work item type](remove-delete-work-items.md#change-type)">Change work item type</a><sup>1</sup></li>
-<li><a href="remove-delete-work-items.md#move" data-raw-source="[Move items to another project](remove-delete-work-items.md#move)">Move items to another project</a><sup>1, 3</sup></li>
+<li><a href="move-change-type.md#change-type" data-raw-source="[Change work item type](move-change-type.md#change-type)">Change work item type</a><sup>1</sup></li>
+<li><a href="move-change-type.md#move" data-raw-source="[Move items to another project](move-change-type.md#move)">Move items to another project</a><sup>1, 3</sup></li>
 </ul>
 </td>
 </tr>
@@ -181,7 +182,7 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
+3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end
@@ -246,7 +247,7 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
+3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end
@@ -327,7 +328,7 @@ The menu options available to you change depending on the platform you work from
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint. 
 
-To open the context menu, click (![actions icon](../media/icons/actions-icon.png)) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
+To open the context menu, click (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
@@ -388,7 +389,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 	> [!div class="mx-imgBorder"]  
 	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
     > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
@@ -427,6 +428,15 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
+<a id="rich-text"> </a> 
+
+## Bulk modify rich-text fields
+
+Rich-text fields support entry of HTML syntax tags to support formatting. Rich-text fields correspond to the **Description**, **Acceptance Criteria**, **Repos Steps**, and others listed in [Query samples for select fields](../queries/query-index-quick-ref.md#query-samples-for-select-fields). 
+
+You can bulk update a rich-text field by using the bulk modify tool, selecting the field, and entering the text with syntax in the **Value** field. Or, you can create a work item template with the text you want to use and perform a bulk update by applying the template to the selected work items. For details on using work item templates, see [Use templates to add and update work items](work-item-template.md) 
+
+For a worked example using templates showing entry of HTML formatted syntax, see [Sample work item templates, Add guidance in a rich-text field](../work-items/work-item-template-examples.md#rich-text). 
 
 <a id="tags"></a>
 
@@ -463,7 +473,7 @@ To add fields or customize a work item form, see [Customize your work tracking e
 
 ### Migrate or change a large number of work items 
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.microsoft.com/docs/integrate/api/wit/batch). 
+For large scale, organizational moves, use the REST API calls for [Work item batch operations](/rest/api/azure/devops/wit/work%20items#operations). 
 
 At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 

@@ -7,9 +7,7 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Next steps
-
-You've just learned how to create your first Azure Pipeline. Learn more about configuring pipelines in the language of your choice:
+You've just learned how to create your first pipeline in Azure. Learn more about configuring pipelines in the language of your choice:
 
 * [.NET Core](../ecosystems/dotnet-core.md)
 * [Go](../ecosystems/go.md)
@@ -38,16 +36,16 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-To delete a pipeline using Azure CLI, you can use the [az pipeline delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command. This command requires the `id` of the pipeline to delete, which you can get using the [az pipeline list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command. 
+To delete a pipeline using Azure CLI, you can use the [az pipeline delete](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-delete) command. This command requires the `id` of the pipeline to delete, which you can get using the [az pipeline list](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-list) command. 
 
 [List pipelines](#list-pipelines) | [Delete pipeline](#delete-pipeline) | [Example](#example)
 
 > [!NOTE]
-> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az pipelines](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List pipelines
 
-You can list your pipelines using the [az pipelines list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command.
+You can list your pipelines using the [az pipelines list](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-list) command.
 
 ```azurecli
 az pipelines list [--detect {false, true}]
@@ -75,7 +73,7 @@ az pipelines list [--detect {false, true}]
 
 ### Delete pipeline
 
-You can delete a pipeline using the [az pipelines delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command.
+You can delete a pipeline using the [az pipelines delete](/cli/azure/pipelines?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-delete) command.
 
 ```azurecli
 az pipelines delete --id

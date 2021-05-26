@@ -3,37 +3,15 @@
 - name: Sign up and invite some teammates 
   href: sign-up-invite-teammates.md
 - name: Plan and track work
-  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
   href: plan-track-work.md 
+  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
 - name: Customize your boards
-  displayName: cards, columns, field, swimlanes, settings, backlog levels,
   href: customize-boards.md 
+  displayName: cards, columns, field, swimlanes, settings, backlog levels 
 - name: Track work as a Stakeholder
-  href: /azure/devops/organizations/security/get-started-stakeholder?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: ../../organizations/security/get-started-stakeholder.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Manage your project
-  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
   href: manage-boards.md
-  displayName: cards, columns, field, swimlanes, settings
-- name: Concepts
-  items:
-  - name: "Why use Azure Boards?"
-    displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
-    href: why-use-azure-boards.md
-  - name: "Area & iteration paths"
-    href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: "About teams & Agile tools"
-    href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Key concepts
-    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
-    href: key-concepts.md 
-- name: Reference
-  items:
-  - name: Basic fields reference
-    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
-  - name: Client support for work tracking
-    href: /azure/devops/user-guide/tools?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-
-
-
-
-
+  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
+- name: Keyboard shortcuts
+  href: keyboard-shortcuts.md

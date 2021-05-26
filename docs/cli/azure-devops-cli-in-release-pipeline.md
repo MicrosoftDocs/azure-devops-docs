@@ -1,21 +1,21 @@
 ---
 title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps CLI to create a release pipeline
+description: Learn how to to create a release pipeline using Azure DevOps CLI 
 ms.topic: reference 
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 
 # Azure DevOps CLI in a release pipeline
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 
@@ -36,12 +36,12 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 	> [!div class="mx-imgBorder"]  
 	> ![Stage 1](media/stage-1.png)
 
-4. Choose the **Tasks** page, and configure the job to use Hosted Mac OS in Agent Pools.
+4. Choose the **Tasks** page, and configure the job to use Hosted macOS in Agent Pools.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agent Job Configuration](media/job-config.png)
 
-5. Choose the ![ ](../media/icons/blue-add.png) plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
+5. Choose the :::image type="icon" source="../media/icons/blue-add.png" border="false"::: plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
 
 	> [!div class="mx-imgBorder"]  
 	> ![PowerShell](media/power-shell.png)

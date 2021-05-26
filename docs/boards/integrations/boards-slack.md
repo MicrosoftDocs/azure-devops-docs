@@ -6,14 +6,15 @@ ms.technology: devops-agile
 ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
-author: RGKarthik
-monikerRange: 'azure-devops'
-ms.date: 10/24/2019
+author: KathrynEE
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/09/2020
 ---
  
 # Azure Boards with Slack
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
 
@@ -35,7 +36,7 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
@@ -58,7 +59,7 @@ To use the app, you must first link your Azure Boards project to your Slack chan
 
 1. Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
 
-	![Pic: signin](./media/integrations-slack/signin.png)
+	![screenshot of sign-in](./media/integrations-slack/signin.png)
 
 1. After signing in, use the following slash command inside a Slack channel to link to the Azure Boards project which you specify with the URL :
 
@@ -82,14 +83,14 @@ subscriptions just after linking a project.
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize your Slack channel. To easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-	![Pic: signin](./media/integrations-slack/add-subscriptions.png)
+   ![Set up subscriptions.](./media/integrations-slack/add-subscriptions.png)
 
-	In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
+   In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 
 
 ## Add area paths
 
-You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. 
+You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. This is important mainly for the teams with more than 100 area paths.
 
 - Use the following command to add area paths from your project to the Slack channel.
 
@@ -150,8 +151,9 @@ access to the discussion that led to the creation of the work item.
 
 	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Pic: View subscriptions](./media/integrations-slack/view-subscriptions.png)
+[!NOTE]Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
+![Pic: View subscriptions](./media/integrations-slack/view-subscriptions.png)
 
 ## Previews of work item URLs
 
@@ -209,6 +211,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
-- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
+- [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

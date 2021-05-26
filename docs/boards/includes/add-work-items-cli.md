@@ -1,15 +1,16 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
+::: moniker range=">= azure-devops-2020"  
 
-::: moniker range="azure-devops"  
+You can add a new work item with the [az boards work-item create](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
 
-### Add work item
-
-You can add a new work item with the [az boards work-item create](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
-
-```CLI
+```azurecli
 az boards work-item create --title
                            --type
                            [--area]
@@ -46,7 +47,7 @@ az boards work-item create --title
 
 The following command creates a bug titled "Fix issue". It assigns the bug to the user contoso@contoso.com and shows the results in table format.
 
-```CLI
+```azurecli
 az boards work-item create --title "Fix issue" --type bug --assigned-to contoso@contoso.com --output table
 
 ID    Type    Title      Assigned To          State

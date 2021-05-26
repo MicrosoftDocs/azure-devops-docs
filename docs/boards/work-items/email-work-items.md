@@ -1,136 +1,139 @@
-﻿---
+---
 title: Email or print user stories, and other work items
 titleSuffix: Azure Boards
 description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 10/17/2019
+monikerRange: '<= azure-devops'
+ms.date: 05/21/2021
 ---
 
 
 # Email or print user stories, bugs, and other work items 
 
-**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 |  Visual Studio 2019 |  Visual Studio 2017 | Visual Studio 2015 | Team Explorer Everywhere** 
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2019 - Visual Studio 2015 | Team Explorer Everywhere** 
 
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-Here's a list of the most common ways in which teams share information and plans using work item tracking. 
-
-> [!NOTE]    
-> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
-
-
-::: moniker range="azure-devops"  
-
-<table >
-<thead align="center">
-<tr >
-<th align="left" width="46%">Task/feature </th>
-<th align="center" width="15%">Web portal</th>
-<th align="center" width="15%">Visual Studio</th>
-<th align="center" width="24%">TEE (Eclipse plug-in)</th>
-
-</tr>
-</thead>
-<tbody align="center"  >
-
-
-<tr>
-<td align="left"><a href="#email-summary-lists" data-raw-source="[Email summary list with links to work item(s)](#email-summary-lists)">Email summary list with links to work item(s)</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-
-<tr>
-<td align="left"><a href="#print-items" data-raw-source="[Print work item(s)](#print-items)">Print work item(s)</a></td>
-<td>  </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-
-<tr>
-<td align="left"><a href="#copy-url" data-raw-source="[Email link to a work item query](#copy-url)">Email link to a work item query</a> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-
-<tr>
-<td align="left"><a href="#email-summary-lists" data-raw-source="[Email query results list](#email-summary-lists)">Email query results list</a> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-
-<tr>
-<td align="left"><a href="#export" data-raw-source="[Export list as CSV](#export)">Export list as CSV</a> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-<td>  </td>
-</tr>
-</tbody>
-</table>
-
+Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
+ 
+---
+:::row:::
+   :::column span="2":::
+      **Task/feature**
+   :::column-end:::
+   :::column span="":::
+      **Web portal**
+   :::column-end:::
+   :::column span="":::
+      **Visual Studio 2015-2017**
+   :::column-end:::
+   :::column span="":::
+      **TEE (Eclipse)**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [Email summary list with links to work item(s)](#email-summary-lists)
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Print work item(s)](#print-items)
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Email link to a work item query](#copy-url)
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Email query results list](#email-summary-lists)
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="2":::
+      [Export query result list as CSV](#export)
+   :::column-end:::
+   :::column span="":::
+      ✔️
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+   :::column span="":::
+        
+   :::column-end:::
+:::row-end:::
 ::: moniker-end 
+---
 
-::: moniker range="<= azure-devops-2019"  
 
-<table >
-<thead align="center">
-<tr >
-<th align="left" width="46%">Task/feature </th>
-<th align="center" width="15%">Web portal</th>
-<th align="center" width="15%">Visual Studio</th>
-<th align="center" width="24%">TEE (Eclipse plug-in)</th>
+**Visual Studio 2019/Team Explorer** 
 
-</tr>
-</thead>
-<tbody align="center"  >
-<tr>
-<td align="left"><a href="#email-summary-lists" data-raw-source="[Email summary list with links to work item(s)](#email-summary-lists)">Email summary list with links to work item(s)</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><a href="#print-items" data-raw-source="[Print work item(s)](#print-items)">Print work item(s)</a></td>
-<td>  </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-<tr>
-<td align="left"><a href="#copy-url" data-raw-source="[Email link to a work item query](#copy-url)">Email link to a work item query</a> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-<tr>
-<td align="left"><a href="#email-summary-lists" data-raw-source="[Email query results list](#email-summary-lists)">Email query results list</a> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-</tbody>
-</table>
+The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
 
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
+::: moniker range="< azure-devops"
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server or Team Foundation Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
+
 
 <a id="email-item"></a>
 
@@ -141,21 +144,23 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!IMPORTANT]     
 > If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
-#### [Browser](#tab/browser/)
+<a id="team-services-email" />  
+
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
-<a id="team-services-email" />  
-<strong>From the web portal</strong>, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the <strong>Email work item</strong> option. The first 200 items in the list will appear in a formatted table. 
+
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/email-work-item.png)   
+> ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
 
-**From the web portal**, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
+**From the web portal**, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
-![Email work item](../queries/media/share-plans-email-work-item-ts.png)    
+![Screenshot of work item form, context menu, Email work items option, TFS 2017 version.](../queries/media/share-plans-email-work-item-ts.png)    
 
 ::: moniker-end  
 
@@ -163,9 +168,9 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 <a id="tfs-portal-email" />
 
-**From the web portal**, open the work item and choose the ![ ](../media/icons/mail_icon.png) mail icon. The first 200 items in the list will appear in a formatted table.   
+**From the web portal**, open the work item and choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. The first 200 items in the list will appear in a formatted table.   
 
-![Email work item from on-prem TFS](../queries/media/share-plans-email-work-item-tfs.png)  
+![Screenshot of work item form, context menu, Email work items option, TFS 2015 and earlier versions.](../queries/media/share-plans-email-work-item-tfs.png)  
 
 ::: moniker-end  
 
@@ -205,7 +210,7 @@ Another way to share items is by emailing summary lists, such as a sprint summar
 Depending on the option and client you choose, summary lists may or may not include a hyperlink to the work item ID.  
 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -217,25 +222,25 @@ Depending on the option and client you choose, summary lists may or may not incl
 ::: moniker range=">= tfs-2018"
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/bulk-email-backlog-items.png)   
+> ![Screenshot of backlog, context menu, Email... options.](media/email/bulk-email-backlog-items.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
-![Email selected items from a list](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
+![Screenshot of backlog, context menu, Email... options, TFS 2017 version.](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018"
-If you want to mail a list of all items in the backlog or query, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the **Email** option. 
+If you want to mail a list of all items in the backlog or query, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email backlog or query results list](media/email/email-backlog.png)  
+> ![Screenshot of backlog, context menu, Email... option, TFS 2018 and later  versions.](media/email/email-backlog.png)  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
-If you want to mail a list of all items in the backlog or query, simply choose the ![ ](../media/icons/mail_icon.png) mail icon. 
+If you want to mail a list of all items in the backlog or query, simply choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2017 version.](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 
@@ -243,11 +248,11 @@ If you want to mail a list of all items in the backlog or query, simply choose t
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
 
-![Email selected items from a list](../queries/media/share-plans-email-summary-list-ts.png)  
+![Screenshot of backlog, context menu, Email selected items from a list option.](../queries/media/share-plans-email-summary-list-ts.png)  
 
 If you want to mail a list of all items in the backlog or query, simply choose the ![mail icon](../media/icons/mail_icon.png) mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2015 and earlier versions.]](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 
@@ -300,6 +305,12 @@ To print the details of a work item, open a query in Visual Studio that contains
 ![Print work items from Team Explorer](../queries/media/share-plans-print-work-item-details.png)   
 
 
+<a id="print-cards"></a>
+
+## Print work items as cards
+
+Some teams want to work with physical cards when planning or updating their physical Kanban or Scrum task boards. There is no native support for printing work items as cards. However, you may find a solution from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/search?term=card&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance).   
+
 <a id="copy-url">  </a>
 
 ## Copy the URL to a single work item  
@@ -307,7 +318,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 > [!NOTE]   
 > All URLs you copy, regardless of the client you use to copy them, opens the work item in the web portal. 
 
-#### [Browser](#tab/browser/)
+#### [Web portal](#tab/browser/)
 
 ::: moniker range=">= tfs-2017"  
 
@@ -323,7 +334,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 <a id="tfs-portal-copy-url" />
 
-**From the web portal for an on-premises TFS**, open the work item and then from the context menu for the browser, choose the copy link option. 
+**From the web portal for an on-premises Azure DevOps**, open the work item and then from the context menu for the browser, choose the copy link option. 
 
 ![Copy hyperlink for a work item from web portal for TFS item](../queries/media/share-plans-copy-URL-wi-tfs.png) 
 
@@ -358,7 +369,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](../queries/view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose <strong>Export to CSV</strong>.
+From any query, you can export a list of work items as a comma-delimited list. Simply open the query, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose <strong>Export to CSV</strong>. To learn more, see [Bulk import or update work items using CSV files](../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
 
@@ -377,11 +388,32 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 ::: moniker-end  
 
+::: moniker range=">= tfs-2017"  
+
+## Marketplace extensions  
+
+You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+
+::: moniker-end
+
+
+
 ## Related articles  
 
-- [Use templates to add and update work items](../backlogs/work-item-template.md)  
+::: moniker range="azure-devops"
+
+- [Use templates to add and update work items](../backlogs/work-item-template.md) 
+- [Share information in work items and social tools](../queries/share-plans.md) 
+- [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- [Use templates to add and update work items](../backlogs/work-item-template.md) 
 - [Share information in work items and social tools](../queries/share-plans.md) 
 - [Define the hyperlink for a work item](work-item-url-hyperlink.md)  
 - [Configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)
 
-
+::: moniker-end
