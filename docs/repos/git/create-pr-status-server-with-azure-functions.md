@@ -3,11 +3,7 @@ title: Use Azure Functions to create custom branch policy
 titleSuffix: Azure Repos
 description: Create a serverless function to listen to pull request events and post status on the pull request status API.
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
-ms.author: yohasna
-author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -15,9 +11,9 @@ monikerRange: '>= tfs-2018'
 
 # Use Azure Functions to create custom branch policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -78,35 +74,35 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
 1. Get the function URL from the Azure portal by clicking the **Get function URL** in your Azure function view and copy the URL.
 
-    ![Get function url](_img/create-pr-status-server-with-azure-functions/get-function-url.png)
+    ![Get function url](media/create-pr-status-server-with-azure-functions/get-function-url.png)
 
-    ![Copy function url](_img/create-pr-status-server-with-azure-functions/copy-function-url.png)
+    ![Copy function url](media/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
 2. Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your account>/<your project name>`
 
 3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
-    ![Choose Service hooks from the admin menu](_img/create-pr-status-server/service-hooks-menu.png)
+    ![Choose Service hooks from the admin menu](media/create-pr-status-server/service-hooks-menu.png)
 
 4. If this is your first service hook, select **+ Create subscription**. 
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create-first-service-hook.png)
+    ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
 
     If you already have other service hooks configured, select the green plus `(+)` to create a new service hook subscription.
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create.png)
+    ![Select the green plus to create a new service hook subscription.](media/create-pr-status-server/service-hooks-create.png)
 
 5. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
-    ![Select web hooks from the list of services](_img/create-pr-status-server/service-hooks-web-hook.png)
+    ![Select web hooks from the list of services](media/create-pr-status-server/service-hooks-web-hook.png)
 
 6. Select **Pull request created** from the list of event triggers, then select **Next**.
 
-    ![Select pull request created from the list of event triggers](_img/create-pr-status-server/service-hooks-trigger.png)
+    ![Select pull request created from the list of event triggers](media/create-pr-status-server/service-hooks-trigger.png)
 
 7. In the Action page, enter the URL that you copied in step 1 in the **URL** box. Select **Test** to send a test event to your server.
 
-    ![Enter the URL and select Test to test the service hook](_img/create-pr-status-server-with-azure-functions/service-hooks-action.png)
+    ![Enter the URL and select Test to test the service hook](media/create-pr-status-server-with-azure-functions/service-hooks-action.png)
 
     In the Azure function log window, you'll see an incoming `POST` that returned a `200 OK`, indicating your function received the service hook event.
 
@@ -119,7 +115,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     In the Test Notification window, select the Response tab to see the details of the response from your server. You should see the response from your server.
 
-    ![Select the response tab to see the results of the test](_img/create-pr-status-server-with-azure-functions/test-notification.png)
+    ![Select the response tab to see the results of the test](media/create-pr-status-server-with-azure-functions/test-notification.png)
 
 8. Close the Test Notification window, and select **Finish** to create the service hook.
 
@@ -259,30 +255,30 @@ Now that your server is running and listening for service hook notifications, cr
 
 1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
-    ![Select Edit from the context menu](_img/create-pr-status-server/edit-readme.png)
+    ![Select Edit from the context menu](media/create-pr-status-server/edit-readme.png)
 
 2. Make an edit and commit the changes to the repo.
 
-    ![Edit the file and select Commit from the toolbar](_img/create-pr-status-server/commit-changes.png)
+    ![Edit the file and select Commit from the toolbar](media/create-pr-status-server/commit-changes.png)
 
 3. Be sure to commit the changes to a new branch so you can create a PR in the next step.
 
-    ![Enter a new branch name and select Commit](_img/create-pr-status-server/commit-to-branch.png)
+    ![Enter a new branch name and select Commit](media/create-pr-status-server/commit-to-branch.png)
 
 4. Select the **Create a pull request** link.
 
-    ![Select Create a pull request from the suggestion bar](_img/create-pr-status-server/create-pr.png)
+    ![Select Create a pull request from the suggestion bar](media/create-pr-status-server/create-pr.png)
 
 5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/new-pr-wip.png)
+    ![Add WIP to the default PR title](media/create-pr-status-server/new-pr-wip.png)
 
 6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
+    ![Status section with Work in progress entry.](media/create-pr-status-server/pr-with-status.png)
 
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
-* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
+* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](/rest/api/azure/devops/git/pull%20request%20statuses). 
+* [Configure a branch policy for an external service](./pr-status-policy.md).

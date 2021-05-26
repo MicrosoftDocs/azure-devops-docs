@@ -1,32 +1,31 @@
 ---
-title: How to use subscription logging
+title: How to enable subscription logging
 titleSuffix: Azure DevOps 
 description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019  
+ms.date: 01/22/2020  
 monikerRange: '>= tfs-2018'
 ---
 
 
-# How to use subscription logging
+# How to enable subscription logging for troubleshooting
 
-[!INCLUDE [version-vsts-tfs-2018](../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
 
-> [!NOTE]  
-> This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
+ For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
 ## Enabling subscription logging
 
 > [!IMPORTANT] 
-> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default (globe icon) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
+> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
 
 Complete the following steps to enable subscription logging:
 
@@ -37,13 +36,13 @@ Complete the following steps to enable subscription logging:
 2. The option _Enable Diagnostics_ appears in the subscription context menu.
 
 > [!div class="mx-imgBorder"] 
->![Enable subscription logging](_img/enable-subscription-logging.png)
+>![Enable subscription logging](media/enable-subscription-logging.png)
 
 ## View subscription diagnostic logs for event matching
 
 Get all subscription event processing logs by entering the following URL in your browser:
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)
@@ -57,7 +56,7 @@ The result is JSON-formatted logging information.
 
 Retrieve all notification delivery logs in a given time frame by entering the URL in your browser.
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)

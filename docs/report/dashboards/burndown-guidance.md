@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 10/23/2019
 
 # Burndown guidance
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 Review your sprint burndown chart throughout your sprint cycle to check for these indicators:  
 
@@ -33,16 +31,17 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 
 ## Scope management  
 
-By estimating remaining work of tasks for each product backlog item, teams have a good understanding of what they can accomplish within a sprint. Because the sprint tasks represent the overall sprint scope, the sprint scope is well defined. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
+By estimating remaining work of tasks for each backlog item, teams better understand what they can accomplish within a sprint. Because the sprint tasks define the overall sprint scope, defining the remaining work leads to a well-defined sprint scope. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](_img/burndown/analytics-burndown-stories-count-past-s159.png) 
+> ![Choose another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
 
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 Increases instead of decreases within the blue graph may indicate:
 
@@ -74,7 +73,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 <p>Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.</p>
 </td>
 <td>
-<img src="_img/burndown/ALM_SB_ScopeCreep_75.png" alt="Sprint burndown chart: Increasing remaining work can indicate scope creep"/>
+<img src="media/burndown/ALM_SB_ScopeCreep_75.png" alt="Sprint burndown chart: Increasing remaining work can indicate scope creep"/>
 
 </td>
 </tr>
@@ -88,14 +87,14 @@ As the team makes progress, divergences from the ideal trend line help the team 
 ## Mitigate risk through daily inspection
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
-For example, when the actual remaining work (blue area) goes flat for a period of time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
+For example, when the actual remaining work (blue area) goes flat for a while, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
 
 > [!div class="mx-imgBorder"]  
-> ![Burndown trend based on Remaining Work](_img/burndown/analytics-burndown-remaining-work-s159.png)
+> ![Burndown trend based on Remaining Work](media/burndown/analytics-burndown-remaining-work-s159.png)
 
 
 Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.
@@ -116,7 +115,7 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 <p>Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.</p>
 </td>
 <td>
-<img src="_img/burndown/ALM_SB_RiskMitigation.png" alt="Sprint burndown chart: Actual remaining work high above ideal trend line"/>
+<img src="media/burndown/ALM_SB_RiskMitigation.png" alt="Sprint burndown chart: Actual remaining work high above ideal trend line"/>
 </td>
 </tr>
 </table>

@@ -2,20 +2,17 @@
 title: Configure for UI testing
 description: Continuous testing. Things to consider when running UI tests and FAQ. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: mijacobs
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # UI testing considerations
 
-[!INCLUDE [version-header-vsts-tfs2017](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-header-vsts-tfs2017](../includes/version-tfs-2017-rtm.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
@@ -26,7 +23,7 @@ the typical considerations for running UI tests.
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later.
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -52,8 +49,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
 
    > [!NOTE] 
    > Microsoft Edge browser currently cannot be run in the headless mode.
-   > To follow developments in this space, see this user voice item.
-	
+  	
 1. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
    When running tests in this mode on Windows, [special configuration of the agents](#visible-ui-mode) is required.
 
@@ -81,7 +77,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)
@@ -102,7 +98,7 @@ context of the user specified in the auto-logon settings.
 If you use Remote Desktop to access the computer on which an agent is running
 with auto-logon, simply disconnecting the Remote Desktop causes the computer
 to be locked and any UI tests that run on this agent may fail.
-To avoid this, use the [tscon](https://docs.microsoft.com/windows-server/administration/windows-commands/tscon)
+To avoid this, use the [tscon](/windows-server/administration/windows-commands/tscon)
 command on the remote computer to disconnect from Remote Desktop. For example: 
 
 `%windir%\System32\tscon.exe 1 /dest:console`
@@ -126,7 +122,7 @@ Running the batch file from this shortcut disconnects from the remote desktop bu
 If you are provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
 through the [Agent artifact for DevTest Labs](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent).
 
-![agentArtifactDTL](_img/agentartifact-dtl.png)
+![agentArtifactDTL](media/agentartifact-dtl.png)
 
 ## Setting screen resolution
 
@@ -197,9 +193,9 @@ Result attachments cannot be published if you use JUnit or xUnit test results. T
 If you use the [Visual Studio test task](../tasks/test/vstest.md) to run tests,
 video of the test can be captured and is automatically available as an attachment
 to the test result. For this, you must configure the
-[video data collector in a **.runsettings** file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+[video data collector in a **.runsettings** file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 and this file must be specified in the task settings.
 
-![runSettings](_img/runsettings-in-vs-task.png)
+![runSettings](media/runsettings-in-vs-task.png)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

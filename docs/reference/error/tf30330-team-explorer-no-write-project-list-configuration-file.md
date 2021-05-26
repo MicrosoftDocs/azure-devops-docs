@@ -2,20 +2,18 @@
 title: TF30330-Team Explorer cannot write...
 titleSuffix: Azure DevOps & TFS
 description: Display an error when Team Explorer cannot establish read/write access to the project list configuration file.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobsd-3a52-4f1e-a41f-7a794a32ac94
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
 
 # TF30330: Team Explorer cannot write to the project list configuration file. Free up space on the local hard disk.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when Team Explorer can't establish read/write access to the project list configuration file. There are at least three possible conditions that can cause this error:  
   

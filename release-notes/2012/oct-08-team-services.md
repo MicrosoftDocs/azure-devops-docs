@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 8
 description: VSTS release notes for October 8 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: e39e465e-4faa-4dfe-99ca-afbadf7d4ec2
@@ -26,10 +25,10 @@ Since this change required an updated to the client, once the upcoming VS 2012 u
 
 We have also updated the [learn](https://visualstudio.microsoft.com/get-started/) section of the site & added several new articles:
 
-- [Use the Hosted Build Controller](/azure/devops/pipelines/agents/hosted?view=azure-devops)
-- [Set up an Ant Build in the Cloud](/azure/devops/pipelines/tasks/build/ant?view=azure-devops)
+- [Use the Hosted Build Controller](/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true)
+- [Set up an Ant Build in the Cloud](/azure/devops/pipelines/tasks/build/ant?view=azure-devops&preserve-view=true)
 
-On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](/azure/devops/pipelines/index?view=azure-devops) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
+On the topic of build, there is one warning we wanted to pass along. We gave you instructions in [Set up a Build](/azure/devops/pipelines/index?view=azure-devops&preserve-view=true) that worked, but had a really bad side-effect. With hosted build today, your build drops are put into your VC path. If you simply map the root of your team project for the build, your old build drops are included with the source that is copied to the build machine when a new build is queued. Yikes. We’ve fixed the instructions. If you’ve set up a build using our old instructions, cloak your drops folder. You can look at step 5 for details.
 
 That’s it for sprint 37. See you again in 3 weeks.
 

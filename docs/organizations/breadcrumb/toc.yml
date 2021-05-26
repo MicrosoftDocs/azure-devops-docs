@@ -2,6 +2,29 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Configure & customize 
-    tocHref: /azure/devops/
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
+    items:
+    - name: User preferences
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/settings/set-your-preferences
+    - name: Notifications
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/about-notifications
+    - name: Projects
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/projects/about-projects
+    - name: Teams
+      tocHref: /azure/devops/organizations/settings/scale/
+      topicHref: /azure/devops/organizations/settings/about-teams-and-settings
+    - name: Process
+      tocHref: /azure/devops/organizations/settings/work/
+      topicHref: /azure/devops/reference/customize-work
+    - name: Process
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/customize-work
+    - name: Process
+      tocHref: /azure/devops/boards/work-items/guidance/
+      topicHref: /azure/devops/boards/work-items/guidance/choose-process
+

@@ -2,20 +2,18 @@
 title: Create a Power BI report with an OData Query
 titleSuffix: Azure DevOps
 description: Quick start to create a trend report using an OData Query
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 08/02/2019
+ms.date: 07/14/2020
 ---
 
 # Create a Power BI report with an OData Query
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 
@@ -36,22 +34,22 @@ In order to create a Power BI report, you must meet the following criteria:
 
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](../../user-guide/sign-up-invite-teammates.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). 
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.
 - **Boards** must be enabled. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
@@ -65,17 +63,17 @@ Create a Power BI Query to pull the data into Power BI as follows:
 1. Choose **Get Data**, and then **Blank Query**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Blank Query](_img/BlankQuery.png)
+    > ![Power BI - Blank Query](media/BlankQuery.png)
 
 2. From the Power BI Query editor, choose **Advanced Editor**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Select Advanced Editor](_img/AdvancedEditor.png)
+    > ![Power BI - Select Advanced Editor](media/AdvancedEditor.png)
 
 3. The Advanced Editor window opens.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor](_img/odatapowerbi-advancededitor.png)
+    > ![Power BI - Advanced Editor](media/odatapowerbi-advancededitor.png)
 
 4. Replace the contents with the following query.
  
@@ -98,7 +96,7 @@ Create a Power BI Query to pull the data into Power BI as follows:
     ```
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Pasted Query](_img/odatapowerbi-advancededitor-pasted.png)
+    > ![Power BI - Advanced Editor - Pasted Query](media/odatapowerbi-advancededitor-pasted.png)
 
 5. Substitute your values within the sample query.
 
@@ -110,7 +108,7 @@ Create a Power BI Query to pull the data into Power BI as follows:
     * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-07-01Z represents 2019-July-01. Do not enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Replace strings in query](_img/odatapowerbi-advancededitor-replaced.png)
+    > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
 
 6. Choose **Done** to execute the query.
 
@@ -118,9 +116,9 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
 ## Create Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -131,7 +129,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Fields](_img/odatapowerbi-bugtrend-fields.png)
+> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -145,16 +143,18 @@ For a simple report, do the following steps:
 The example report:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](_img/odatapowerbi-bugtrend-report.png)
+> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 <a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create an Open bugs report](sample-boards-openbugs.md)
 
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

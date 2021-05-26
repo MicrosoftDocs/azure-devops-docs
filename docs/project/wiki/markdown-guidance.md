@@ -2,29 +2,27 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 09/19/2019
+ms.date: 04/26/2021
 ---
 
 # Syntax guidance for basic Markdown usage
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
-For additional syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
+For more syntax that's supported for Wiki pages, see [Wiki Markdown guidance](wiki-markdown-guidance.md).
 
 You can provide guidance in the following areas using Markdown:
 
@@ -35,7 +33,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)  
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)  
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 ::: moniker-end
@@ -46,7 +44,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md)  
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
@@ -59,7 +57,7 @@ You can provide guidance in the following areas using Markdown:
 - [Markdown widget added to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
 - [Project page or Welcome pages](../../organizations/projects/project-vision-status.md) 
 - [Repository README files](../../repos/git/create-a-readme.md)
-- [Pull request comments](../../repos/git/pull-requests.md)
+- [Pull request (PR) comments](../../repos/git/pull-requests.md)
 - [Definition of Done (Kanban board)](../../boards/boards/definition-of-done.md)
 
 > [!NOTE]
@@ -82,11 +80,11 @@ You can provide guidance in the following areas using Markdown:
 
 ## Headers
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with more hash characters, for example `####`. Up to six levels of headings are supported.
 
 **Example:**
 ```markdown
@@ -99,60 +97,69 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
 ## Paragraphs and line breaks
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
-Make your text easier to read by breaking it up with paragraphs or line breaks.  
+Make your text easier to read by breaking it into paragraphs or with line breaks.  
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017"
+### Pull requests
 
 In pull request comments, select **Enter** to insert a line break, and begin text on a new line.
 
-In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+**Example - pull request comment:**
+
+<pre>
+Add lines between your text with the **Enter** key.
+Your text gets better spaced and makes it easier to read.
+</pre>
+
+**Result:**
+
+Add lines between your text with the **Enter** key.
+
+Your text gets better spaced and makes it easier to read.
+
+::: moniker-end
+### Markdown files or widgets
+
+::: moniker range=">= tfs-2018"
+
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, select Enter to insert a line break, and begin text on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two consecutive line breaks to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter** to begin a new paragraph.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+In a Markdown file or widget, enter two spaces before the line break, and then select **Enter**. This action begins a new paragraph.
 
 ::: moniker-end
-
-**Example - pull request comment:**
-
-<pre>
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
-</pre>
-
-**Result:**
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
 
 **Example - Markdown file or widget:**
 
 <pre>
-Add two spaces prior to the end of the line.(space, space)
-This adds space in between paragraphs.
+Add two spaces before the end of the line, and then select **Enter**.(space, space, Enter)
+A space gets added in between paragraphs.
 </pre>
 
 **Result:**  
-Add two spaces prior to the end of the line.
 
-Space is added in between paragraphs.
+Add two spaces before the end of the line, and then select Enter.
+
+A space gets added in between paragraphs.
 
 ## Blockquotes
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 Quote previous comments or text to set the context for your comment or text.
 
@@ -170,11 +177,11 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 **Result:**  
 
-![Quoting in Markdown](_img/markdown-guidance/markdown_quote2.jpg)
+![Quoting in Markdown](media/markdown-guidance/markdown_quote2.jpg)
 
 ## Horizontal rules
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -199,7 +206,7 @@ below
 
 ## Emphasis (bold, italics, strikethrough) 
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)] 
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)] 
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
@@ -302,7 +309,7 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 
 **Result:**
 
-To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer -g`.  
+To install the Microsoft Cross Platform Build & Release Agent, run the following command: `$ sudo npm install vsoagent-installer -g`.  
 
 <br/>
 
@@ -318,7 +325,7 @@ code
 
 <br/>
 
-**Additional examples:**
+**More examples:**
 
 <pre>
 ``` js
@@ -346,9 +353,9 @@ Console.WriteLine("Hello, World!");
 
 ## Tables
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning-no-dod.md)]
 
-Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
+Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that have
 a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
 
 - Place each table row on its own line
@@ -378,20 +385,20 @@ a clear name to description mapping. You can format tables in pull requests, wik
 
 ## Lists
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
-Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces prior to the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
+Ordered lists start with a number followed by a period for each list item. Unordered lists start with a `-`. Begin each list item on a new line. In a Markdown file or widget, enter two spaces before the line break to begin a new paragraph, or enter two line breaks consecutively to begin a new paragraph.
 
 ### Ordered or numbered lists
 
 **Example:**  
 ```markdown
 1. First item.
-2. Second item.
-3. Third item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -445,11 +452,11 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
 
-Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This can be useful if you want to use *#* for color hex codes.
+Avoid auto suggestions for work items by prefixing *#* with a backslash (`\`). This action can be useful if you want to use *#* for color hex codes.
 
 In Markdown files and widgets, you can set text hyperlinks for your URL using the standard Markdown link syntax:
 
@@ -461,7 +468,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Supported links for Welcome pages:**
 
-- Relative path: `[text to display](/target.md)` 
+- Relative path: `[text to display](target.md)` 
 - Absolute path in Git: `[text to display](/folder/target.md)`
 - Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
 - URL: `[text to display](http://address.com)`
@@ -486,12 +493,12 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Example:**  
 
 ```
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 ```
 
 **Result:**
 
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 
 ::: moniker range=">= tfs-2018"
 
@@ -536,7 +543,7 @@ The syntax for an anchor link to a section...
 [Link to a heading in the page](#link-to-a-heading-in-the-page)
 </pre>
 <br/>
-The ID is all lower case, and the link is case sensitive, so be sure to use lower case, even though the heading itself uses upper case.
+The ID is all lower case, and the link is case-sensitive, so be sure to use lower case, even though the heading itself uses upper case.
 
 You can also reference headings within another Markdown file:
 
@@ -555,9 +562,9 @@ In wiki, you can also reference heading in another page:
 
 ## Images
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning-no-dod.md)]
 
-To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
+To highlight issues or make things more interesting, you can add images and animated GIFs to the following aspects in your pull requests:
 
 - Comments
 - Markdown files
@@ -582,9 +589,15 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 
 - Relative path: `![Image alt text](./image.png)`  
-- Absolute path in Git: `![Image alt text](/_img/markdown-guidance/image.png)`  
-- Absolute path in TFVC: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png)`  
-- Resize image: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+- Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`  
+- Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`  
+- Resize image: `IMAGE_URL =WIDTHxHEIGHT`
+  > [!NOTE]
+  > Be sure to include a space before the equal sign.
+  >
+
+  - Example: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =500x250)`
+  - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 
 ::: moniker-end
@@ -595,19 +608,19 @@ The path to the image file can be a relative path or the absolute path in Git or
 
 #### Supported in: Pull Requests | Wikis
 
-Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
+Lightweight task lists are great ways to track progress on your to-dos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
 
-You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
+You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
 **Example - Apply the task list Markdown to a highlighted list**
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png)
+> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-apply.png)
 
-After you've added a task list, you can check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown.
+After you've added a task list, you can check the boxes to mark items as completed. These actions are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
+> ![Check the boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -625,7 +638,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 **Result:**  
 
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]
 > A checklist within a table cell isn't supported.
@@ -667,7 +680,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 
 **Result:**  
 
-![Emojis in Markdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
+![Emojis in Markdown](../../repos/git/media/pull-requests/emoji-markdown.png)
 
 To escape emojis, enclose them using the \` character.
 
@@ -683,7 +696,7 @@ To escape emojis, enclose them using the \` character.
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 
 <table width="650px">
@@ -706,6 +719,7 @@ To escape emojis, enclose them using the \` character.
 <p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
 <p style="margin-bottom:2px;"><code>.</code>, period </p>
 <p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
+<p style="margin-bottom:2px;"><code>*</code>, asterisk</p>
 </td>
 <td>
 <p>Some examples on inserting special characters:</p>
@@ -716,6 +730,7 @@ To escape emojis, enclose them using the \` character.
 <p>Enter <code>&#92;(</code> to get ( </p> 
 <p>Enter <code>&#92;.</code> to get . </p>
 <p>Enter <code>&#92;!</code> to get ! </p>
+<p>Enter <code>&#92;*</code> to get * </p>
 
 </td>
 </tr>
@@ -744,13 +759,13 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper right of the comment box or the format pane in wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in your wiki page.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the paper-clip icon in the upper right of the comment box.
+In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the **paperclip** in the upper right of the comment box.
 
 ::: moniker-end
 
@@ -763,12 +778,12 @@ In pull request comments, you can attach files to illustrate your point or to gi
 
 ::: moniker range=">= tfs-2017"
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />        
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
 
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
-Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image(s) and can select links to download attached files.
+Attached image files render directly into your comment or wiki pages. After you save or update a comment or wiki page with an attachment, you can see the attached image and can select links to download attached files.
 
 Attachments support the following file formats.
 
@@ -835,7 +850,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+> ![Greek letters](media/markdown-guidance/mathematical-notation-greek-characters.png)
 
 ### Example: Algebraic notation
 
@@ -851,7 +866,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+> ![Algebraic notation](media/markdown-guidance/mathematical-notation-algebra.png)
 
 ### Example: Sums and Integrals
 
@@ -868,7 +883,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Sums and Integrals.](media/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 
@@ -880,4 +895,3 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-

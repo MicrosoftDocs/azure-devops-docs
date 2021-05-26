@@ -2,30 +2,28 @@
 title: Reporting Services Reports
 titleSuffix: Azure DevOps
 description: Overview of the reports provided through SQL Server Reports
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/04/2019
+ms.date: 10/22/2020
 ---
 
 # Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range="azure-devops-2019"
-Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+::: moniker range=">= azure-devops-2019 < azure-devops"
+Azure DevOps Server 2019 and 2020 versions supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 
 > [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server 2019 and Team Foundation Server (TFS). If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
+> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises Azure DevOps Server versions. If you don't have a reporting site and want to add it, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).  
 > 
 > For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
 
@@ -39,11 +37,11 @@ To learn more about the future of reporting for TFS, read [Reporting roadmap](..
 You can analyze the progress and quality of your project by using the reports in SQL Server Reporting Services. These reports aggregate metrics from work items, version control, test results, and builds. These reports answer questions about the actual state of your project.  
   
  Most of these reports provide filters that you can use to specify contents to include in the report. Filters include time period, iteration and area paths, work item types, and work item states. The questions that they answer relate to all types of work items such as user stories, test cases, tasks, and bugs.  
-he SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
+The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Azure DevOps Server 2019 supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+Azure DevOps Server 2019 and later versions support both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 
@@ -78,9 +76,9 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li><a href="../../pipelines/agents/agents.md">Configure a build system</a></li>
-<li><a href="../../pipelines/get-started-designer.md">Get started with CI/CD</a></li>
+<li><a href="/azure/devops/pipelines/create-first-pipeline">Get started with CI/CD</a></li>
 <li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests">Run tests in your build process</a></li>
-<li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
+<li>(Optional) <a href="/previous-versions/ms181734(v=vs.140)" data-raw-source="[Rate completed builds](/previous-versions/ms181734(v=vs.140))">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>
 <td>
@@ -97,7 +95,7 @@ Build reports track the quality of software under development. By defining tests
 
 ### Sample build success over time report
 
-![Sample build summary report](../admin/_img/IC665009.png)  
+![Sample build summary report](../admin/media/IC665009.png)  
 
 ## Monitor progress
 
@@ -151,7 +149,7 @@ Project management reports provide insight into how much work the team is tackli
 
 **Sample stories overview report**  
 
-![Sample stories overview report](../admin/_img/IC665011.png)  
+![Sample stories overview report](../admin/media/IC665011.png)  
 
 
 ## Monitor test plans and bug tracking
@@ -184,7 +182,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 
 **Sample test plan progress report**   
 
-![Sample test plan progress report](../admin/_img/IC665012.png)  
+![Sample test plan progress report](../admin/media/IC665012.png)  
 
 <a name="Accessing"></a> 
 
@@ -194,11 +192,11 @@ Test planning reports support monitoring the test progress and coverage of backl
   
  Open the report site from the **Reports** page in Team Explorer.  
   
- ![Open the team project report site](_img/alm_uprp_te_scrumreports.png "ALM_UPRP_TE_ScrumReports")  
+ ![Open the team project report site](media/alm_uprp_te_scrumreports.png "ALM_UPRP_TE_ScrumReports")  
   
  Here's a view of reports for a Scrum project in Report Manager.  
   
- ![Open a Scrum report in Report Manager](_img/alm_uprp_rm_scrumreports.png "ALM_UPRP_RM_ScrumReports")  
+ ![Open a Scrum report in Report Manager](media/alm_uprp_rm_scrumreports.png "ALM_UPRP_RM_ScrumReports")  
   
 > [!NOTE]  
 >  If a red X icon appears on the **Reports** node in Team Explorer, you might not have permissions to access the reports or Team Explorer might have lost communication with the server that hosts SQL Server Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports node and that the server that hosts Reporting Services is running.  
@@ -221,7 +219,7 @@ All data captured for work items is written to the WIT data store, but only sele
 |Option|Result|  
 |------------|------------|  
 |Refresh button on the browser window|Refreshes the display with the report that is stored in the session cache. A session cache is created when a user opens a report. Reporting Services uses browser sessions to maintain a consistent viewing experience when a report is open.|  
-|![Refresh report](_img/procguid_refresh_icon.png "ProcGuid_Refresh_Icon")|Causes the server that is running Reporting Services to rerun the query and update report data if the report runs on-demand. If the report is cached or a snapshot, the report that is stored in the report server database appears.|  
+|![Refresh report](media/procguid_refresh_icon.png "ProcGuid_Refresh_Icon")|Causes the server that is running Reporting Services to rerun the query and update report data if the report runs on-demand. If the report is cached or a snapshot, the report that is stored in the report server database appears.|  
 |CTRL+F5 keyboard combination|Produces the same result as choosing **Refresh** on the report toolbar.|  
   
 <a name="Managing"></a>

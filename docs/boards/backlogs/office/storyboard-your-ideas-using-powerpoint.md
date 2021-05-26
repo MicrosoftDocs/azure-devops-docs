@@ -1,21 +1,19 @@
-﻿---
+---
 title: Storyboard your ideas with Microsoft PowerPoint
 titleSuffix: TFS 
 description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= tfs-2018'
 ms.date: 09/06/2019
 ---
 
 # Storyboard your ideas using Microsoft PowerPoint
 
-[!INCLUDE [temp](../../../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [temp](../../../includes/version-tfs-2018-earlier.md)]
 
 With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that Microsoft PowerPoint Storyboarding provides.
 
@@ -33,33 +31,37 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
 3.  Open PowerPoint Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
-    <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
 
     Or, you can open PowerPoint Storyboarding from the work item **Storyboarding** tab. 
 
-    <img src="_img/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 1px solid #C3C3C3;" /> 
 
-    Or, from the web portal and the new work item form, click the **Start storyboarding** menu option from any valid work item.     
+    Or, from the web portal and the new work item form, choose the **Start storyboarding** menu option from any valid work item.     
 
-	<img src="../_img/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #C3C3C3;" /> 
+	<img src="../media/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #C3C3C3;" /> 
+
+	> [!NOTE]  
+	> Becuase this feature has been deprecated, the **Start storyboarding** menu option is no longer available from the web form for Azure DevOps Services or Azure DevOps Server 2019 and later versions.    
 
 4.  Add a background shape that's appropriate for your app. To add a shape, just drag it onto the slide.
 
-    <img src="_img/IC652013.png" alt="Drag a shape onto the slide" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/IC652013.png" alt="Drag a shape onto the slide" style="border: 1px solid #C3C3C3;" /> 
 
 5.  Search for more shapes to complete your design.
 
-    <img src="_img/IC652014.png" alt="Search for shapes" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC652014.png" alt="Search for shapes" style="border: 2px solid #C3C3C3;" />
 
 6.  Create mores slides to show the flow of your app. Share them with your team to get early feedback on the design.
 
-    <img src="_img/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC652599.png" alt="Develop your storyboard with multiple slides" style="border: 2px solid #C3C3C3;" />
 
 > [!TIP]  
 >- Use animation to bring your user interface flow to life.  
 >- Take screenshots of your apps. For example, add a screenshot as the background of a master slide.   
 
 <a id="link-storyboard">  </a>
+
 ## Link your storyboard to a backlog item
 
 When you share your storyboards to a shared network location, you can link the storyboards to a backlog item. That way, your team members will be able to open the storyboards from the work items and annotate them with their suggestions.
@@ -70,34 +72,34 @@ When you share your storyboards to a shared network location, you can link the s
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 
-    <img src="_img/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC654069.png" alt="Open Storyboard Links to link to a work item" style="border: 2px solid #C3C3C3;" />
 
 	> [!NOTE]  
 	>The **Storyboards** tab is no longer supported in the new web form. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
 
 3.  If you're not already connected to a project, [connect now](../../../organizations/projects/connect-to-projects.md). If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md#add-team-members).
 
-    ![Connect to TFS](_img/IC652016.png)
+    ![Connect to TFS](media/IC652016.png)
 
 4.  Then, link to a work item.
 
-    ![Choose to link to a work item](_img/IC652017.png)
+    ![Choose to link to a work item](media/IC652017.png)
 
 5.  Select a work item to link to. The next screenshot shows how to do that using a saved query. You can also do a simple search on the title, or just provide the ID.
 
-    ![Select query to find work items](_img/IC652018.png)
+    ![Select query to find work items](media/IC652018.png)
 
-    ![Find work items from the query to link to](_img/IC652019.png)
+    ![Find work items from the query to link to](media/IC652019.png)
 
-    ![Choose the work item to link to](_img/IC652020.png)
+    ![Choose the work item to link to](media/IC652020.png)
 
 6.  Now the storyboard is linked to the work item.
 
-    <img src="_img/IC657080.png" alt="Linked work item in Storyboard links dialog box" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC657080.png" alt="Linked work item in Storyboard links dialog box" style="border: 2px solid #C3C3C3;" />
 
 7.  And, whoever views the work item can also access the storyboard.
 
-	<img src="_img/IC652022.png" alt="Storyboard tab with linked storyboard" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/IC652022.png" alt="Storyboard tab with linked storyboard" style="border: 1px solid #C3C3C3;" /> 
 
 With PowerPoint Storyboarding, you can illustrate a new or a modified interface. You can capture existing user interfaces and build a storyboard from a collection of predefined storyboard shapes. Also, you can customize the slide layouts for your web, client, or phone applications. And, by linking the storyboard to the product backlog item or user story, you automatically share it with your team.
 

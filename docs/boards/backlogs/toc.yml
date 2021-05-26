@@ -1,39 +1,39 @@
 - name: About backlogs 
   href: backlogs-overview.md
-- name: Quickstarts
-  items:
-  - name: Create your backlog
-    href: create-your-backlog.md
-  - name: Drive Git development
-    href: connect-work-items-to-git-dev-ops.md
-- name: Tutorials
-  items:
-  - name: "Define features & epics"
-    href: define-features-epics.md
-  - name: Organize your backlog (map or reparent)
-    href: organize-backlog.md
-- name: Concepts
-  items:
-  - name: Refine your backlog
-    href: best-practices-product-backlog.md
-- name: How-to Guides
-  items:
-  - name: Display rollup progress bars or totals
-    href: display-rollup.md
-  - name: "Filter backlogs & queries"
-    href: filter-backlogs.md
-  - name: Copy list
-    href: copy-list.md 
-- name: Troubleshooting
-  items:
-  - name: Fix "Ordering backlog items is disabled"
-    href: resolve-backlog-reorder-issues.md
-- name: Reference
+- name: Create your backlog
+  href: create-your-backlog.md
+  displayname: product backlog, reorder, details, description, acceptance criteria, effort, story points, size, business value,    
+- name: Define features & epics
+  href: define-features-epics.md
+  displayname: portfolio backlog, critical path, value area, business value, time criticality, target date 
+- name: Organize your backlog (map or reparent)
+  href: organize-backlog.md
+  displayname: tree hierarchy, expand, collapse, mapping, reorder, display rollup   
+- name: Filter your backlogs
+  href: filter-backlogs-boards-plans.md
+  displayname: sort, reorder, rollup, group, parent, tags
+- name: Forecast
+  displayname: velocity, sprints, iterations  
+  href: ../sprints/forecast.md
+- name: Customize your backlogs
   items:
   - name: Product backlog controls
     href: product-backlog-controls.md 
-  - name: Backlog keyboard shortcuts
-    href: backlogs-keyboard-shortcuts.md
-
-
+  - name: Change column options
+    href: set-column-options.md
+  - name: Display rollup progress bars or totals
+    href: display-rollup.md
+    displayname: In Progress items, Completed child items, Progress by, Count of, Sum of, quick list, custom rollup, column metric  
+  - name: Select backlog levels
+    href: ../../organizations/settings/select-backlog-navigation-levels.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+  - name: Show bugs on backlogs & boards
+    href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+- name: Best practices, monitoring, & reports
+  items:
+  - name: Refine your backlog
+    href: best-practices-product-backlog.md
+  - name: Rollup of work & other fields
+    href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: View/configure velocity
+    href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 

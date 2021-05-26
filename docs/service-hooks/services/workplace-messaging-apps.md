@@ -1,40 +1,67 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Workplace Messaging Apps with Azure DevOps Services
-description: Integrate workplace messaging apps like Microsoft Teams and Slack with your Azure DevOps Services organization
-ms.manager: bijuv
-ms.author: karrg
-author: atinb
-ms.date: 11/15/2019
-monikerRange: 'azure-devops'
+title: Workplace Messaging Apps with Azure DevOps 
+description: Integrate workplace messaging apps like Microsoft Teams and Slack with your Azure DevOps organization
+ms.manager: gopinach
+ms.author: divais
+author: divais
+monikerRange: '>= azure-devops-2019'
+ms.date: 07/27/2020
 ---
 
-# Workplace Messaging Apps
+# Workplace messaging apps 
 
-The following integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like 
+[!INCLUDE [version](../../includes/version-vsts-plus-azdevserver-2019.md)]
+
+
+The following integrations help users receive notifications in response to events in Azure DevOps within their workplace messaging apps such as
 [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) and [Slack](https://slack.com). 
-These integrations also help users to complete
-workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels.
 
-> [!NOTE]  
-> You can use these apps only with a project hosted on Azure DevOps Services at this time.  
+::: moniker range=">= azure-devops-2020"
 
+Along with receiving notifications, below integrations also help users to complete workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels. You can use these apps only with a project hosted on Azure DevOps Services.
 
-## Slack
+::: moniker-end
 
-* [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
-
-* [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
-
-* [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
+::: moniker range=">= tfs-2017"
 
 ## Microsoft Teams
 
-* [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+::: moniker-end
 
-* [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+::: moniker range=">= azure-devops-2020"
 
-* [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+ * [Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md)  
+* [Azure Pipelines app for Microsoft Teams](../../pipelines/integrations/microsoft-teams.md)  
+* [Azure Repos app for Microsoft Teams](../../repos/integrations/repos-teams.md)  
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+For projects hosted on Azure DevOps Server 2019, you can use the following integrations to get notifications for events in Azure DevOps.
+
+* [Azure DevOps Server](teams.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+## Slack
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+* [Azure Boards app for Slack](../../boards/integrations/boards-slack.md)
+* [Azure Pipelines app for Slack](../../pipelines/integrations/slack.md)  
+* [Azure Repos app for Slack](../../repos/integrations/repos-slack.md)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+* [Custom app for Slack](slack.md)
+
+::: moniker-end

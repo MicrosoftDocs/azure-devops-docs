@@ -2,10 +2,8 @@
 title: Perform user acceptance testing
 description: Create and run user acceptance tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C52CDC6D-1B01-4A63-A265-B68C4E3DDE7D
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Perform user acceptance testing
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
@@ -30,7 +28,7 @@ requirement work item type. However, today's
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 ## Before you start
 
@@ -54,7 +52,7 @@ suite and choosing **Assign testers to run all
 tests**. This option also enables the sending of
 emails to the testers assigned to the tests.
 
-![User acceptance testing email notification](_img/user-acceptance-testing/uat10.png)
+![User acceptance testing email notification](media/user-acceptance-testing/uat10.png)
 
 An important feature of user acceptance testing 
 is that the testers may in fact be the business 
@@ -85,7 +83,7 @@ you can use the chart views that make it much easier to
 track your test results. These views are accessible by all
 members of your team.   
 
-![Exploring test results](_img/user-acceptance-testing/uat8.png)
+![Exploring test results](media/user-acceptance-testing/uat8.png)
 
 > Note: The dashboard display shown here is also used
 for other types of testing such as continuous testing.
@@ -93,6 +91,6 @@ for other types of testing such as continuous testing.
 If you don't see the data or information you expect in
 the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
-For details see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/10/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
+For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

@@ -2,10 +2,7 @@
 title: WinRM SQL Server DB Deployment task
 description: Deploy to SQL Server Database using DACPAC or SQL scripts
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,13 +14,13 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to SQL Server Database using a DACPAC or SQL script.
+Use this task to deploy to SQL Server Database using a DACPAC or SQL script.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.md)]
+[!INCLUDE [temp](../includes/yaml/SqlDacpacDeploymentOnMachineGroupV0.md)]
 
 ::: moniker-end
 

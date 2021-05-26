@@ -2,19 +2,19 @@
 title: Categories XML element reference 
 titleSuffix: TFS
 description: Default work item type categories used by Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 
 # Categories XML element reference
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 You use the `CATEGORIES` element to group work item types (WITs). [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories used by Team Foundation Server (TFS).  
   
@@ -63,12 +63,12 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
 ## Agile tools, category requirements, and restrictions  
  When assigning WITs to categories, consider the following operational notes:  
   
--   To use the [backlog](https://msdn.microsoft.com/70a01e94-2dc9-4090-823c-71ee8e156e74) and [task](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
+-   To use the [backlog](../../boards/backlogs/create-your-backlog.md) and [task](../../boards/sprints/assign-work-sprint.md) boards, you must assign at least one WIT to the Requirements Category and one WIT to the Task Category.  
   
 -   You cannot assign the same WIT to both the Requirements Category and to the Task Category.   
 -   If you include more than one WIT in the Requirements Category or the Task Category, the type assigned to the `DEFAULTWORKITEMTYPE` element appears as the default type on the Agile backlog and board pages.   
 -   WITs that belong to a category which defines a backlog in the ProcessConfiguration file must have start, closing, and at least one intermediate  workflow state napped to a valid metastate as described in [Process Configuration XML element reference](process-configuration-xml-element.md).   
--   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](https://msdn.microsoft.com/49b374e0-1700-4650-bacf-759e7eee4580). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
+-   WITs that you assign to the Bug Category can be configured to [show up on backlogs and boards for each team](../../organizations/settings/show-bugs-on-backlog.md). You set the default behavior by [defining the property for BugsBehavior in the ProcessConfiguration file](process-configuration-xml-element.md).  
   
 ## Example  
  The following example lists the default categories XML file for the Scrum process template.  

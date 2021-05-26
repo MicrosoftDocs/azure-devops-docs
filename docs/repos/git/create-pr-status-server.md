@@ -3,11 +3,7 @@ title: Create a pull request status server with Node.js
 titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -16,9 +12,9 @@ monikerRange: '>= tfs-2018'
 
 # Create a pull request status server with Node.js
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
 * An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
@@ -126,27 +122,27 @@ In order to receive the service hook notifications, you'll need to expose a port
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
-    ![Choose Service hooks from the admin menu](_img/create-pr-status-server/service-hooks-menu.png)
+    ![Choose Service hooks from the admin menu](media/create-pr-status-server/service-hooks-menu.png)
 
 5. If this is your first service hook, select **+ Create subscription**. 
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create-first-service-hook.png)
+    ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
 
     If you already have other service hooks configured, select the green plus `(+)` to create a new service hook subscription.
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create.png)
+    ![Select the green plus to create a new service hook subscription.](media/create-pr-status-server/service-hooks-create.png)
 
 6. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
-    ![Select web hooks from the list of services](_img/create-pr-status-server/service-hooks-web-hook.png)
+    ![Select web hooks from the list of services](media/create-pr-status-server/service-hooks-web-hook.png)
 
 7. Select **Pull request created** from the list of event triggers, then select **Next**.
 
-    ![Select pull request created from the list of event triggers](_img/create-pr-status-server/service-hooks-trigger.png)
+    ![Select pull request created from the list of event triggers](media/create-pr-status-server/service-hooks-trigger.png)
 
 8. In the Action page, enter the URL from ngrok in the **URL** box. Select **Test** to send a test event to your server.
 
-    ![Enter the URL and select Test to test the service hook](_img/create-pr-status-server/service-hooks-action.png)
+    ![Enter the URL and select Test to test the service hook](media/create-pr-status-server/service-hooks-action.png)
 
     In the ngrok console window, you'll see an incoming `POST` that returned a `200 OK`, indicating your server received the service hook event.
 
@@ -159,7 +155,7 @@ In order to receive the service hook notifications, you'll need to expose a port
 
     In the Test Notification window, select the Response tab to see the details of the response from your server. You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
 
-    ![Select the response tab to see the results of the test](_img/create-pr-status-server/test-notification.png)
+    ![Select the response tab to see the results of the test](media/create-pr-status-server/test-notification.png)
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
@@ -182,7 +178,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```js
     var bodyParser = require('body-parser')
 
-    app.use(bodyParser.json());
+    app.use(bodyParser.json())
     ```
 
 3. To simplify making REST API calls to Azure Repos, install the [azure-devops-node-api](https://www.npmjs.com/package/azure-devops-node-api) package.
@@ -194,15 +190,15 @@ Now that your server can receive service hook events when new PRs are created, u
 4. Update `app.js` to use the azure-devops-node-api package, set up the details for a connection to your account, and get an instance of the Git API.
 
     ``` javascript
-    const vsts = require("azure-devops-node-api");
+    const vsts = require("azure-devops-node-api")
 
-    const collectionURL = process.env.COLLECTIONURL;    
-    const token = process.env.TOKEN;
+    const collectionURL = process.env.COLLECTIONURL    
+    const token = process.env.TOKEN
 
-    var authHandler = vsts.getPersonalAccessTokenHandler(token);
-    var connection = new vsts.WebApi(collectionURL, authHandler);
+    var authHandler = vsts.getPersonalAccessTokenHandler(token)
+    var connection = new vsts.WebApi(collectionURL, authHandler)
 
-    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } );
+    var vstsGit = connection.getGitApi().then( success => { console.log(success) }, error => { console.log(error) } )
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
@@ -223,14 +219,14 @@ Now that your server can receive service hook events when new PRs are created, u
 8. Update the `post()` function to read the PR details from the service hook payload. You'll need these values in order to post back status.
 
     ``` javascript
-    var repoId = req.body.resource.repository.id;
-    var pullRequestId = req.body.resource.pullRequestId;
-    var title = req.body.resource.title;
+    var repoId = req.body.resource.repository.id
+    var pullRequestId = req.body.resource.pullRequestId
+    var title = req.body.resource.title
     ```
 
 9. Build the status object to post on the PR. 
 
-   `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+   `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
    The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
@@ -254,7 +250,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
     ``` javascript
         if (title.includes("WIP")) {
-            prStatus.state = "pending";
+            prStatus.state = "pending"
             prStatus.description = "Work in progress"
         }
     ```
@@ -263,8 +259,8 @@ Now that your server can receive service hook events when new PRs are created, u
 
     ``` javascript
     vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
-        console.log(result);
-    });
+        console.log(result)
+    })
     ```
 
 12. The resulting method should look something like this:
@@ -273,9 +269,9 @@ Now that your server can receive service hook events when new PRs are created, u
     app.post("/", function (req, res) {
 
         // Get the details about the PR from the service hook payload
-        var repoId = req.body.resource.repository.id;
-        var pullRequestId = req.body.resource.pullRequestId;
-        var title = req.body.resource.title;
+        var repoId = req.body.resource.repository.id
+        var pullRequestId = req.body.resource.pullRequestId
+        var title = req.body.resource.title
 
         // Build the status object that we want to post.
         // Assume that the PR is ready for review...
@@ -293,16 +289,16 @@ Now that your server can receive service hook events when new PRs are created, u
         if (title.includes("WIP")) {
 
             // If so, change the status to pending and change the description.
-            prStatus.state = "pending";
+            prStatus.state = "pending"
             prStatus.description = "Work in progress"
         }
 
         // Post the status to the PR
         vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
-            console.log(result);
-        });
+            console.log(result)
+        })
 
-        res.send("Received the POST");
+        res.send("Received the POST")
     })
     ```
 
@@ -317,30 +313,30 @@ Now that your server is running and listening for service hook notifications, cr
 
 1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
-    ![Select Edit from the context menu](_img/create-pr-status-server/edit-readme.png)
+    ![Select Edit from the context menu](media/create-pr-status-server/edit-readme.png)
 
 2. Make an edit and commit the changes to the repo.
 
-    ![Edit the file and select Commit from the toolbar](_img/create-pr-status-server/commit-changes.png)
+    ![Edit the file and select Commit from the toolbar](media/create-pr-status-server/commit-changes.png)
 
 3. Be sure to commit the changes to a new branch so you can create a PR in the next step.
 
-    ![Enter a new branch name and select Commit](_img/create-pr-status-server/commit-to-branch.png)
+    ![Enter a new branch name and select Commit](media/create-pr-status-server/commit-to-branch.png)
 
 4. Select the **Create a pull request** link.
 
-    ![Select Create a pull request from the suggestion bar](_img/create-pr-status-server/create-pr.png)
+    ![Select Create a pull request from the suggestion bar](media/create-pr-status-server/create-pr.png)
 
 5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/new-pr-wip.png)
+    ![Add WIP to the default PR title](media/create-pr-status-server/new-pr-wip.png)
 
 6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
+    ![Status section with the Work in progress entry.](media/create-pr-status-server/pr-with-status.png)
 
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
-* In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
+* In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](/rest/api/azure/devops/git/pull%20request%20statuses). 
+* [Configure a branch policy for an external service](./pr-status-policy.md).

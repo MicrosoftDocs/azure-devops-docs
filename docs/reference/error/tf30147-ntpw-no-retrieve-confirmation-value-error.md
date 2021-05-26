@@ -2,20 +2,18 @@
 title: TF30147-The New Team Project Wizard ... 
 description: Occurs when the New Team Project Wizard is building the  wizard page that summarizes all the selections you made and text you typed up to that point.
 titleSuffix: Azure DevOps & TFS
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 10/23/2017
 ---
 
 
 # TF30147: The New Team Project Wizard could not retrieve the confirmation values because of the error: {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard is building the **Confirm Team Project Settings** wizard page that summarizes all the selections you made and text you typed up to that point. Each wizard page contributes text to the confirmation page, and if the contributing wizard page encounters an unexpected error while passing the text, this error is displayed. The procedures below will help you correct this error.  
   

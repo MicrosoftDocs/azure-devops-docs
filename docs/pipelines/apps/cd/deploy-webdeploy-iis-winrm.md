@@ -2,10 +2,7 @@
 title: Deploy to IIS using WinRM
 description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Management (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Deploy your Web Deploy package to IIS servers using WinRM
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md) instead of WinRM. However, deployment groups are not available in version of TFS earlier than TFS 2018.
@@ -62,7 +59,7 @@ For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
 Similarly, do not use an IP address to access the target server(s) when you use HTTP.
 Instead, in both scenarios, use HTTPS.
 
-> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](https://msdn.microsoft.com/library/aa384372.aspx).
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
 
 Follow these steps to configure each target server.
 
@@ -79,7 +76,7 @@ Follow these steps to configure each target server.
 
 1. Check your .NET Framework version. You need version 4.5
    or higher installed on every target machine. See
-   [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/library/hh925568(v=vs.110).aspx).
+   [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 
 1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
    for Windows 10 and Windows Server 2016, or
@@ -151,18 +148,18 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
+   ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
-   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
 
 1. On the **Variables** tab of the stage in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
 1. Configure the following tasks in the stage:
   
-   ![Windows Machine File Copy](../../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
    
    - **Source**: Select the Web deploy package (zip file) from the artifact source.
    
@@ -174,7 +171,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
    
-   ![WinRM - IIS Web App Deployment](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy the package.
    
    - **Machines**: `$(WebServers)`
    
@@ -192,16 +189,16 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 
-[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
+[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

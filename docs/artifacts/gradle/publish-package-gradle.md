@@ -1,14 +1,10 @@
 ---
 title: Publish a Maven artifact using Gradle
 description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: dastahel
 ms.topic: conceptual
-ms.date: 01/31/2018
+ms.date: 06/09/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -21,24 +17,28 @@ This topic covers creating and publishing a Maven artifact with Gradle using Azu
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Before you start, make sure you have the [Gradle build tool](https://gradle.org/install/) installed.
 
-From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
+Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). If you don't have it already, you can get the Java JDK from this link: [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-```cli
+To verify that you have the Java JDK or JRE version 7 or later installed, run the following command in an elevated command prompt:
+
+```CLI
 java -version
 ```
 
-And then install Gradle. Once it completes, confirm the installation from a command prompt:
+If the above command returns a java version then you can now install Gradle, otherwise go back and install Java JDK or JRE first. 
 
-```cli
+Once Gradle installation is complete, you can confirm the installation with the following command:
+
+```CLI
 gradle -v
 ```
 
 You're ready to start! This tutorial will guide you through the process of publishing a Maven artifact using Gradle.
 
 > [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/azure/devops/repos/git/clone).
+> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone an existing Git repo](../../repos/git/clone.md).
 
 ## Set up authentication
 
@@ -46,50 +46,58 @@ First, you need a **gradle.properties** file that contains an Azure DevOps Servi
 
 ::: moniker range=">= azure-devops-2019"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
-Click **+ New Token**.
+1. Click **New Token**.
 
 Give your token a name, duration, and select the **Packaging (read and write)** scope. 
 
+> [!NOTE]
 > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
 
-![Create packaging personal access token](../_shared/_img/create-packaging-pat.png)
+![Create packaging personal access token](../media/create-packaging-pat.png)
 
-Click **Create**.
+1. Click **Create**.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+1. Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
-Click **Add**.
+1. Click **Add**.
 
-![Add a personal access token](_img/add-pat.png)
+![Add a personal access token](media/add-pat.png)
 
-Give your new token a name and a duration. 
+1. Give your new token a name and a duration. 
 
-Select the **Packaging (read and write)** scope.
+1. Select the **Packaging (read and write)** scope.
 
-![Select a token scope](_img/select-scope.png)
+![Select a token scope](media/select-scope.png)
 
 ::: moniker-end
 
-The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
+1. Copy your token and save it in a secure location. The token will be a long alphanumeric string, something like _"lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa"_.
 
-Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
+1. Create a text file and name it: **gradle.properties** in your `.gradle` folder under the Gradle installation root directory. Typically, the path to your gradle folder is: `%INSTALLPATH%/gradle/user/home/.gradle/`.
 
-Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
+1. Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
+
 ```ini
-vstsMavenAccessToken=YOUR_TOKEN_HERE
+vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
 ```
 
-Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the file when you're done.
+1. Replace _<PASTE_YOUR_TOKEN_HERE>_ with the token you created earlier. Save the file when you're done.
+
+## Create a feed
+
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Configure build.gradle 
 
-Create a file called **build.gradle** in the root of your cloned (local) repo. Open it with a UTF-8-capable text editor and add the following code:
+1. Create a text file and name it **build.gradle** in the root of your cloned repo. 
+
+1. Open it with a text editor and add the following snippet:
 
 ```groovy
 apply plugin: 'java' 
@@ -108,11 +116,11 @@ publishing {
     // Repositories *to* which Gradle can publish artifacts 
     repositories { 
         maven { 
-            url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
+            url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
             credentials { 
-                username "Azure DevOps Services" 
+                username "{FeedName}"
                 //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-                password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+                password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
@@ -121,35 +129,36 @@ publishing {
 // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
 repositories { 
     maven { 
-        url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
+        url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
         credentials { 
-            username "Azure DevOps Services" 
+            username "{FeedName}" 
             //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-            password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+            password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 
 } 
 ```
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
-publishing and downloading to use separate organizations, if you prefer.
+
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure publishing and downloading to use separate organizations, if you prefer. You can use the _project setup_ section, under **Connect to feed** > **Gradle**, as a guide to set up connection to your feed. 
 
 > [!NOTE]
 > You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
 
-Replace the following fields with your own values:
+1. Replace the following fields with your own values:
 
-- `groupId`: A group ID you associate with your artifact. Give it a team or organization name so consumers can identify the origin easier.
-- `artifactId`: An artifact ID used when publishing your artifact. Again, give it a meaningful name that aptly describes the intent of the APIs in the artifact.
-- `version`: The version of the artifact you're publishing. Update this when you've made changes.
-- `artifact`: The path from the root of the repo to the JAR file that is the artifact to publish. For example, *./target/myJavaClasses.jar*.
+- `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
+- `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
+- `version`: Your package version. This number should be incremented for future iterations.
+- `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
+- `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
 
 
-## Publish your Gradle artifact
+## Publish your Maven package with Gradle
 
-From a command prompt, run:
+Run the following command in an elevated command prompt:
 
-```cli
+```CLI
 gradle publish
 ```
 
-Your new artifact name is `groupId:artifactId`.
+Your new package will be named: `groupId:artifactId` and should show up in your Artifacts feed.

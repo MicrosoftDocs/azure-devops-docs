@@ -3,27 +3,24 @@ title: Gradle build and release task
 ms.custom: seodec18
 description: Gradle build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 12/17/2019
+ms.date: 03/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Gradle task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build using a Gradle wrapper script.
+Use this task to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
+[!INCLUDE [temp](../includes/yaml/GradleV2.md)]
 
 ::: moniker-end
 
@@ -142,12 +139,27 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
    </tr>
    <tr>
       <td><code>findbugsAnalysisEnabled</code><br/>Run FindBugs</td>
-      <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts<br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code>
+      <td>(Optional) Use the FindBugs static analysis tool to look for bugs in the code. Results are uploaded as build artifacts. In Gradle 6.0 this plugin was removed. Use spotbugs plugin instead. <a href="https://docs.gradle.org/current/userguide/upgrading_version_5.html#the_findbugs_plugin_has_been_removed">More info<a/>. <br/>Default value: false <br/>Argument aliases: <code>findBugsRunAnalysis</code>
       </td>
    </tr>
       <tr>
       <td><code>pmdAnalysisEnabled</code><br/>Run PMD</td>
       <td>(Optional) Use the PMD Java static analysis tool to look for bugs in the code. Results are uploaded as build artifacts <br/>Default value: false <br/>Argument aliases: <code>pmdRunAnalysis</code>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotBugsAnalysisEnabled</code><br/>Run Spotbugs</td>
+      <td>(Required) Enable this option to run spotBugs. This plugin works with Gradle v5.6 or later. Results are uploaded as build artifacts. <a href="https://spotbugs.readthedocs.io/en/stable/gradle.html#use-spotbugs-gradle-plugin">More info</a>. Please make sure that you are using Gradle 5.6 or later. If you are using an earlier version of Gradle, the plugin may work in an unexpected way or may not work at all. <br/>Default value: false <br/>Argument aliases:         <code>spotBugsAnalysis</code>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotBugsGradlePluginVersionChoice</code><br/>Spotbugs plugin for Gradle version</td>
+      <td>(Required) The Spotbugs Gradle plugin version to use. You can declare it in your Gradle configuration file, or specify a version here. <br/>Default value: specify <br/>
+      </td>
+   </tr>
+   <tr>
+      <td><code>spotbugsGradlePluginVersion</code><br/>Spotbugs for Gradle plugin version</td>
+      <td>(Required) <a href="https://plugins.gradle.org/plugin/com.github.spotbugs">Refer</a> for all available versions.<br/>Default value: 4.7.0 <br/>Argument aliases:         <code>spotbugsGradlePluginVersion</code>
       </td>
    </tr>
    <tr>
@@ -157,13 +169,13 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 
 ## Example
 
-[Build your Java app with Gradle](../../apps/java/build-gradle.md)
+[Build your Java app with Gradle](../../ecosystems/java.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I generate a wrapper from my Gradle project?
@@ -202,10 +214,10 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
    by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
    from 10 seconds to 1 minute.
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

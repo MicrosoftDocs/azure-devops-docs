@@ -2,35 +2,33 @@
 title: Release Burndown sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Release Burndown report
-ms.prod: devops
 ms.technology: devops-analytics
-ms.reviewer: greggboe
-ms.manager: mijacobs
-ms.author: kaelli
 ms.custom: powerbisample
+ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 12/18/2020
 ---
 
 # Sample - Release Burndown
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to display the burndown of User Stories for a release based on work items tagged with a release tag. The following image shows a burndown both by Story Points and User Stories count.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -53,7 +51,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
@@ -74,7 +72,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - {areapath} - Your Area Path. Example format: Project\Level1\Level2
 - {tag} - A tag that represents your release. All work items tagged with {tagname} are included in the report
 - {startdate} - The date to start the burndown report
@@ -106,9 +104,9 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -120,7 +118,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](_img/odatapowerbi-releaseburndown-fields.png)
+> ![Sample -Release Burndown - Fields](media/odatapowerbi-releaseburndown-fields.png)
 
 For a simple report, do the following steps:
 
@@ -133,7 +131,7 @@ For a simple report, do the following steps:
 The example report displays burndown on both Story Points and Count of Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
+> ![The example report displays burndown on Story Points and Count of Stories.](media/odatapowerbi-releaseburndown-report.png)
 
 To pivot burndown by Area Path, do the following steps:
 
@@ -146,14 +144,14 @@ To pivot burndown by Area Path, do the following steps:
 The example report displays burndown pivoted by Area Path.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report2.png)
+> ![The example report displays burndown pivoted by Area Path.](media/odatapowerbi-releaseburndown-report2.png)
 
 To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report3.png)
+> ![To pivot the burndown by State, add the field "State".](media/odatapowerbi-releaseburndown-report3.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -165,7 +163,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -188,7 +186,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
@@ -213,7 +211,7 @@ Using a weekly snapshot reduces the amount of data pulled into Power BI, and inc
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -237,7 +235,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
@@ -264,7 +262,7 @@ Some organizations use Iteration Paths to mark Stories for a Release. For exampl
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -287,7 +285,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
@@ -314,7 +312,7 @@ To determine the name of your custom field, [explore the Analytics metadata](../
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -337,7 +335,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot?
@@ -358,8 +356,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

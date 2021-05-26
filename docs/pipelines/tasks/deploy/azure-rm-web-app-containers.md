@@ -2,10 +2,7 @@
 title: Azure Web App for Container task
 description: Deploy Web Apps, Functions, and WebJobs to Azure App Services
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6862AFD0-6F0E-4AD7-8C5D-9AD4CC496089
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -18,7 +15,7 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 Use this task to deploy Web Apps, Azure Functions, and WebJobs to Azure App Services
-using a [custom Docker image](https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image).
+using a [custom Docker image](/azure/app-service/containers/tutorial-custom-docker-image).
 
 ## Task Inputs
 
@@ -57,11 +54,11 @@ steps:
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

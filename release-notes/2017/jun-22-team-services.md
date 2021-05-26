@@ -2,7 +2,6 @@
 title: Git Tags web view, build definition import/export, and improved user management – June 22
 description: VSTS release notes for June 22 2017
 ms.ContentId: b94f1350-a53f-4d0b-af2d-a31832ee7799
-ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
@@ -22,7 +21,7 @@ When you create a field, you can choose to create a new field or use an existing
 
 If you change the description or the picklist values of a shared field, it will affect all work item types where the field is used.
 
-![Fields across processes](_img/06_22_00.png)
+![Fields across processes](media/06_22_00.png)
 
 ## Work item type icons
 We have made a global commitment to make our products fully accessible to our customers. As part of that commitment, we have been working to find and address many accessibility issues&mdash;anywhere from keyboard patterns to visual design and layout. 
@@ -31,20 +30,20 @@ Work item tracking has relied solely on color in many experiences to convey work
 
 Color bars conveying type on the backlog and queries grids have been replaced with colored icons.
 
-![Colored icons in query](_img/06_22_01.png)
+![Colored icons in query](media/06_22_01.png)
 
 Cards on the board now include a type icon.
 
-![Board with icon type](_img/06_22_02.png)
+![Board with icon type](media/06_22_02.png)
 
 ## Show/hide work item field borders
 Over the last couple of months, we’ve discovered that, for some of our more traditional users, not having field borders in our work item form leads to confusion and is too far away from home. To alleviate this confusion, this sprint we’ve enabled a profile setting to show/hide work item field borders. This will help give the form a more traditional look and will give users the choice of what works best for them. 
 
-![Chrome-less work item form](_img/06_22_03.png)
+![Chrome-less work item form](media/06_22_03.png)
 
 Change the setting through your Visual Studio profile.
 
-![profile setting](_img/06_22_35.png)
+![profile setting](media/06_22_35.png)
 
 ## Extensions block work item save
 Work item form custom controls, groups, and pages can now [block work item save](https://visualstudio.microsoft.com/docs/integrate/extensions/reference/client/api/tfs/workitemtracking/services/workitemformservice#seterror) to validate data and ensure the user fills out any required information before saving the work item form. 
@@ -52,51 +51,51 @@ Work item form custom controls, groups, and pages can now [block work item save]
 ## Collapsible pull request comments
 Reviewing code is a critical part of the pull request experience, so we’ve added new features to make it easier for reviewers to focus on the code. Code reviewers can easily hide comments to get them out of the way when reviewing new code for the first time.  
 
-![Hide comments](_img/06_22_30.png)
+![Hide comments](media/06_22_30.png)
 
 Hiding comments hides them from the tree view and collapses the comment threads in the file view:
 
-![Collapsed comment](_img/06_22_31.png)
+![Collapsed comment](media/06_22_31.png)
 
 When comments are collapsed, they can be expanded easily by clicking the icon in the margin, and then collapsed again with another click. Tooltips make it easy to peek at a comment without seeing the entire thread.
 
-![Collapsed tooltip](_img/06_22_32.png)
+![Collapsed tooltip](media/06_22_32.png)
 
 ## Improved workflow when approving with suggestions
 Using the __auto-complete__ option with pull requests is a great way to improve your productivity, but it shouldn’t cut short any active discussions with code reviewers. To better facilitate those discussions, the __Approve with suggestions__ vote will now prompt when a pull request is set to complete automatically. The user will have the option to cancel the auto-complete so that their feedback can be read, or keep the auto-complete set and allow the pull request to be completed automatically when all policies are fulfilled.  
 
-![prompt](_img/06_22_11.png)
+![prompt](media/06_22_11.png)
 
 ## Filter pull request tree by file name
 Finding a specific file in a pull request is easier than ever. The new filter box in the Files view lets users filter down the list of files in the tree view.  
 
-![unfiltered](_img/06_22_33.png)
+![unfiltered](media/06_22_33.png)
 
 The filter matches any part of the path of the files in the pull request, so you can search by folder names, partial paths, file names, or extensions.
 
-![filtered](_img/06_22_34.png) 
+![filtered](media/06_22_34.png) 
 
 ## Richer pull request callout on commit details page 
 The pull request callout on the commit details page shows more relevant information to help you diagnose better. Now we also show the **first pull request** that introduced the commit to any branch and the **pull request associated with the default branch** in the callout.
 
-![pull request callout](_img/06_22_12.png)
+![pull request callout](media/06_22_12.png)
 
 ## Filter tree view in Code
 Now you don’t need to scroll through all the files that a commit may have modified to just get to your files. The tree view on commit details, pull requests, shelveset details, and changeset details page now supports file and folder filtering. This is a smart filter that shows child files of a folder when you filter by folder name and shows a collapsed tree view of a file to show the file hierarchy when you filter by file name. 
 
 Find a file or folder filter on commit tree:
 
-![find a file filter](_img/06_22_13.png)
+![find a file filter](media/06_22_13.png)
 
 Filtered view on commit tree:
 
-![filtered view](_img/06_22_14.png)
+![filtered view](media/06_22_14.png)
 
 ## Git tags web view
 ### View tags
 You can view all the tags on your repository on the **Tags** page. If you manage all your tags as releases, then a user can visit the tags page to get a bird’s-eye view of all the product releases. 
 
-![view tags on tags page](_img/06_22_15.png)
+![view tags on tags page](media/06_22_15.png)
  
 You can easily differentiate between a lightweight and an annotated tag here, as annotated tags show the tagger and the creation date alongside the associated commit, while lightweight tags only show the commit information.
 
@@ -106,21 +105,21 @@ There can be times when you want to delete a tag from your remote repo. It could
 > [!NOTE]
 > Deleting tags on remote repos should be exercised with caution.
 
-![delete tags](_img/06_22_16.png)
+![delete tags](media/06_22_16.png)
 
 ### Filtering tags
 For old repositories, the number of tags can grow significantly with time; there can also be repositories that have tags created in hierarchies, which can make finding tags difficult. 
 
 If you are unable to find the tag that you were looking for on the tag page, then you can simply search for the tag name using the filter on top of the Tags page.
 
-![filtering tags](_img/06_22_17.png)
+![filtering tags](media/06_22_17.png)
  
 ### Tags security
 Now you can grant granular permissions to users of the repo to manage tags. You can give users the permission to delete tags or manage tags from this interface,
 
-![tags security](_img/06_22_18.png)
+![tags security](media/06_22_18.png)
 
-Read more about git tags at the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/visualstudioalm/2017/06/14/view-tags-for-git-repositories/).
+Read more about git tags at the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/view-tags-for-git-repositories/).
 
 ## Export and import build definitions
 
@@ -128,9 +127,9 @@ Build definitions are implemented internally as .json files, so you can see deta
 
 We’re pleased to announce that now you can do it!
 
-![export build definition](_img/06_22_export-build-definition.png)
+![export build definition](media/06_22_export-build-definition.png)
 
-![import build definition](_img/06_22_import-build-definition.png)
+![import build definition](media/06_22_import-build-definition.png)
 
 ## Visual Studio latest and hosted agent pools
 
@@ -142,7 +141,7 @@ In this release you’ll see the following changes:
 
 * To make it easier, we’re moving the default queue to the **Tasks** tab, in the **Process** section.
 
-![default build queue on tasks tab](_img/06_22_default-build-queue-on-tasks-tab-required.png)
+![default build queue on tasks tab](media/06_22_default-build-queue-on-tasks-tab-required.png)
 
 * The [Visual Studio Build](https://visualstudio.microsoft.com/docs/build/steps/build/visual-studio-build) and [MSBuild](https://visualstudio.microsoft.com/docs/build/steps/build/msbuild) tasks now default to the **Latest** setting for the version argument.
 
@@ -169,7 +168,7 @@ However, if you still need to run XAML builds during the migration, then you sho
 
 From the build summary page, you can now navigate to the build summary for other definitions.
 
-![pick a build definition from the build summary](_img/06_22_pick-a-build-definition-from-the-build-summary.png)
+![pick a build definition from the build summary](media/06_22_pick-a-build-definition-from-the-build-summary.png)
 
 This control is also available on the history page.
 
@@ -181,18 +180,18 @@ We have made two enhancements to server-side tasks (tasks that run within a serv
 
 We have added a new task that can be used to invoke any generic HTTP REST API as part of the automated pipeline. For example, it can be used to invoke specific processing with an Azure function, and wait for it to be completed.
 
-![new task REST API](_img/06_22_27.png)
+![new task REST API](media/06_22_27.png)
  
 We have also added a __Control options__ section to all server-side tasks. Task behavior now includes setting the __Enabled__, __Continue on error__, __Always run__, and __Timeout__ options.
 
-![control options](_img/06_22_28.png)
+![control options](media/06_22_28.png)
 
 ## Consume Secrets from an Azure Key Vault as variables
 We have added first-class support for integrating with Azure Key Vault in Team Services by linking variable groups to Key Vault secrets. This means you can consume secret variables in Team Services and manage secret values completely within Azure Key Vault, without changing anything on the Team Services side (for example, password rotation).
 
 To enable this feature in the __Variable Groups__ page, use the toggle button __Link secrets from an Azure key vault as variables__. After configuring the vault details, choose __+Add__ and select the specific secrets from your vault that are to be mapped to this variable group. 
 
-![add secrets](_img/06_22_29.png)
+![add secrets](media/06_22_29.png)
 
 After you have created a variable group mapped to Azure Key Vault, you can link it to your release definitions, as documented in [Variable groups](https://visualstudio.microsoft.com/docs/build/concepts/library/variable-groups).
 
@@ -203,17 +202,17 @@ We got some great feedback on the updated __Package Management__ experience when
 
 Package URLs now work with the package name and version, rather than using GUIDs. This makes it easier to hand-craft package URLs. The format is: https://\<account\>.visualstudio.com/\<project|team\>/_packaging?feed=\<feed\>&package=\<package\>&version=\<version\>&protocolType=\<NuGet|Npm\>&_a=package.
 
-![Friendly URI](_img/06_22_04.png)
+![Friendly URI](media/06_22_04.png)
 
 You can now hide deleted package versions from all feed users (no more strikethrough packages!), in response to a UserVoice suggestion.
 
-![hide](_img/06_22_05.png)
+![hide](media/06_22_05.png)
 
 Any action that you could perform on the package details page can now be performed from the context menu in the list of packages.
 
 The package list contains a new __Last pushed__ column with humanized dates so you can easily find recently-updated packages. 
 
-![Last Pushed Column](_img/06_22_06.png)
+![Last Pushed Column](media/06_22_06.png)
 
 ## Package build task updates
 We’ve made comprehensive updates to the __NuGet__, __npm__, __Maven__, and __dotnet__ build tasks, including fixes to most of the issues logged in the [vsts-tasks repo on GitHub](https://github.com/Microsoft/azure-pipelines-tasks).
@@ -223,7 +222,7 @@ We’ve combined the __NuGet Restore__, __NuGet Packager__, and __NuGet Publishe
 
 As part of this work, we’ve also released a new __NuGet Tool Installer__ task that controls the version of NuGet available on the PATH and used by the new NuGet task. So, to use a newer version of NuGet, just add a __NuGet Tool Installer__ task at the beginning of your build. 
 
-![NuGet](_img/06_22_07.png)
+![NuGet](media/06_22_07.png)
 
 ### npm build task updates
 Whether you’re building your npm project on Linux, macOS, or Windows, the new __NPM__ build task will accommodate. We have also reorganized the task to make both __npm install__ and __npm publish__ easier. For __install__ and __publish__, we have simplified credential acquisition so that credentials for registries listed in your project’s .npmrc file can be safely stored in a [service endpoint](https://visualstudio.microsoft.com/docs/build/concepts/library/service-endpoints). Alternatively, if you’re using a VSTS feed, we have a picker that will let you select a feed, and then we will generate a .npmrc with requisite credentials that are used by the build agent.
@@ -231,12 +230,12 @@ Whether you’re building your npm project on Linux, macOS, or Windows, the new 
 ### Working outside your account/collection
 It’s now easier to work with feeds outside your VSTS account, whether they’re __Package Management__ feeds in another VSTS account or TFS server or non-Package Management feeds like NuGet.org/npmjs.com, Artifactory, or MyGet. Dedicated __Service Endpoint__ types for NuGet, npm, and Maven make it easy to enter the correct credentials and enable the build tasks to work seamlessly across package download and package push operations.
 
-![Cross-account](_img/06_22_08.png)
+![Cross-account](media/06_22_08.png)
 
 ### Feed picker for VSTS/TFS feeds
 We always recommend checking in a configuration file (e.g. NuGet.Config, .npmrc, etc.) so that your source repository has a record of where your packages came from. However, we’ve heard a set of scenarios where this isn’t ideal, so we’ve added a new __Use packages from this VSTS/TFS feed__ option that allows you to select a feed and automatically generate a configuration file that will be used for that build step.
 
-![feed picker](_img/06_22_09.png)
+![feed picker](media/06_22_09.png)
 
 ### NuGet “Allow duplicates to be skipped” option
 We heard from many NuGet customers that they generate a set of packages, only some of which may have updates (and therefore updated version numbers). The __NuGet__ build task has a new __Allow duplicates to be skipped__ option that will enable the task to continue if it tries to push packages to a VSTS/TFS feed where the version is already in use.
@@ -244,7 +243,7 @@ We heard from many NuGet customers that they generate a set of packages, only so
 ### Maven and dotnet now support authenticated feeds
 Unlike __NuGet__ and __npm__, the __Maven__ and __dotnet__ build tasks did not previously work with authenticated feeds. We’ve added all the same goodness outlined above (feed picker, working outside your account improvements) to the __Maven__ and __dotnet__ tasks so you can work easily with VSTS/TFS and external feeds/repositories and have a consistent experience across all the package types supported by __Package Management__.
 
-![dotnet](_img/06_22_10.png)
+![dotnet](media/06_22_10.png)
 
 ## Project Collection Administrators can link/make initial purchase
 Now any Project Collect Administrator, not just the account owner, can make the first Marketplace purchase. This makes it easier for accounts with multiple Project Collection Administrators to pay for VSTS.
@@ -252,7 +251,7 @@ Now any Project Collect Administrator, not just the account owner, can make the 
 ## Deep link to remove your spending limit easily during a Marketplace purchase
 If you want to use the Azure subscription that came with your Visual Studio or MSDN subscription to pay for Marketplace purchases, you need to remove your spending limit and add a credit card. With this release, we’ve added a deep link to make it easy to remove the spending limit for your subscription. We also check to make sure you remove the limit indefinitely, so your Marketplace purchases won’t be interrupted. For more information, see [How to set up billing Q&A](https://visualstudio.microsoft.com/docs/setup-admin/team-services/set-up-billing-for-your-account-vs#q-which-azure-subscriptions-can-i-link-to-my-team-services-account-and-use-for-billing).
 
-![deep link to remove spending limit](_img/06_22_19.png)
+![deep link to remove spending limit](media/06_22_19.png)
 
 ## Improvements to OAuth permissions page
 The OAuth permissions page has been updated to make it easy for a user to see which identity they are authorizing permissions to prior to deciding whether to authorize the application.
@@ -268,23 +267,23 @@ Based on feedback from you, we’re releasing a set of updates to our new user m
 ### Bulk remove users
 Have you ever needed to remove multiple users from an account at once and found it cumbersome? Now, it is as easy as selecting multiple users and choosing __Remove user__ from the drop down.
 
-![bulk remove users](_img/06_22_20.png)
+![bulk remove users](media/06_22_20.png)
 
 ### Optionally add users to projects
 We’ve kept the ability to add users to projects in the new account-level Users page, but have made it optional so administrators don’t have to deal with project membership up front unless they need to.
 
-![optional add](_img/06_22_21.png)
+![optional add](media/06_22_21.png)
 
 ### Easily view subscriptions
 We heard confusion over building subscription detection to __Basic__ access levels in the new experience loud and clear, and have brought back the ability to explicitly choose Visual Studio Subscription detection from the add users dialog. 
 
-![view subscriptions](_img/06_22_22.png)
+![view subscriptions](media/06_22_22.png)
 
 Administrators can now also easily see and filter the users who have subscriptions in the account by selecting the subscription from the **Summary** pane, as well as see what resources a user is receiving from the subscription.
 
-![filter users](_img/06_22_23.png)
+![filter users](media/06_22_23.png)
 
-![user resources](_img/06_22_24.png)
+![user resources](media/06_22_24.png)
 
 ## Enhanced Publisher experience with Sales Transactions for Paid extensions
 ### Acquisition and sales data in Extension Hub for paid extension publishers on the Marketplace
@@ -295,12 +294,12 @@ This tab gives the publisher aggregated counts of all transactions (New, upgrade
 
 Both acquisition and sales tab also share the transaction details which gives publishers access to details of each transaction with date, account, changed quantity and trial end dates. This data can be searched and download in XLS to perform custom reporting. They can also now reach out to the customers for transactional communication using the contact action in the new __Publisher stats__ reports page. 
 
-![enhanced publisher experience](_img/06_22_25.png)
+![enhanced publisher experience](media/06_22_25.png)
 
 ### Setup Power BI Content Pack
 Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [docs.microsoft.com](/azure/devops/extend/extension-statistics-powerbi-contentpack). 
 
-![extension statistics Power BI content pack](_img/06_22_26.png)
+![extension statistics Power BI content pack](media/06_22_26.png)
 
 We would love to hear what you think about these features. Report any problems through [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) and get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services). As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

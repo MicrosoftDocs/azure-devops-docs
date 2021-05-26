@@ -2,11 +2,7 @@
 title: Debug with symbols in WinDbg
 description: Debug with symbols in WinDbg using the Symbol Server in Azure Artifacts
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'
@@ -14,9 +10,9 @@ monikerRange: '>= tfs-2017'
 
 # Debug with symbols in WinDbg
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+[!INCLUDE [](../includes/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols). To use symbols in Visual Studio, see [this page](debug-with-symbols-visual-studio.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](../../pipelines/artifacts/symbols.md). To use symbols in Visual Studio, see [this page](debug-with-symbols-visual-studio.md).
 
 ## Ensure WinDbg can find tf.exe
 

@@ -3,28 +3,27 @@ title: Import repositories from TFVC to Git
 titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: atinb
-author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Import repositories from TFVC to Git
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 2**
 
-You can migrate code from an existing TFVC repository to a new Git repository within the same organization. While migrating to Git has many benefits, it is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
+You can migrate code from an existing TFVC repository to a new Git repository within the same organization. Migrating to Git is an involved process for large TFVC repositories and teams. Centralized version control systems, like TFVC, behave different than Git in fundamental ways. The switch involves a lot more than learning new commands. It is a disruptive change that requires careful planning. You need to think about:
 
 * Revising tools and processes
 * Removing binaries and executables
 * Training your team
 
-We strongly recommend reading our whitepapers - [Centralized version control to Git](/azure/devops/learn/git/centralized-to-git) and [TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git) before starting the migration.
+We strongly recommend reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and [TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git) before starting the migration.
 
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
+
+> [!IMPORTANT] 
+> Due to the differences in how TFVC and Git store version control history, we [recommend](/devops/develop/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ## Importing the repository
 
@@ -32,11 +31,11 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 1. Select **Repos**, **Files**.
 
-   ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](media/repos-navigation/repos-files.png)
 
 2. From the repo drop-down, select **Import repository**.
 
-   ![Import Repository Option](_img/Import-Repo/ImportRepository-new-nav.png)
+   ![Import Repository Option](media/Import-Repo/ImportRepository-new-nav.png)
 
 3. Select TFVC from the **Source type** dropdown
 
@@ -47,10 +46,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 6. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
 
-   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog-TFVC.png)
-
-> [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+   ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog-TFVC.png)
 
 ::: moniker-end
 
@@ -58,7 +54,7 @@ The import experience is great for small simple TFVC repositories. It's also goo
 
 1. From the repo drop-down, select **Import repository**.
 
-![Import Repository Option](_img/Import-Repo/ImportRepository.png)
+![Import Repository Option](media/Import-Repo/ImportRepository.png)
 
 1. Select TFVC from the **Source type** dropdown
 
@@ -69,10 +65,10 @@ A link to the TFVC repository is added in the commit message of the 1st changese
 
 4. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
 
-![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog-TFVC.png)
+![Import Repository Dialog](media/Import-Repo/ImportRepoDialog-TFVC.png)
 
 > [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+> Due to the differences in how TFVC and Git store version control history, we [recommend](/devops/develop/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ::: moniker-end
 
@@ -85,4 +81,4 @@ while `$/Fabrikam/<branch>` would only import the branch.
 2. The imported repository and associated history (if imported) cannot exceed 1GB in size.
 3. You can import up to 180 days of history.
 
-If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/azure/devops/learn/git/centralized-to-git) and [TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
+If any of the above is a blocker for your import, we recommend you try external tools like [Git-TFS](https://github.com/git-tfs/git-tfs) for importing and reading our whitepapers - [Centralized version control to Git](/devops/develop/git/centralized-to-git) and [TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)

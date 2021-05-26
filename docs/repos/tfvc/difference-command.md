@@ -3,11 +3,7 @@ title: Difference Command
 titleSuffix: Azure Repos
 description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Difference Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Compares, and if it is possible, displays differences between two files, files in two folders, or a shelveset and a local or a server file.
 
@@ -52,7 +48,7 @@ tf diff[erence] /configure
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>itemspec</em></p></td>
-	<td><p>Required. Specifies the item to be compared. If no version or path is specified, the <em>current workspace version </em>is assumed. Accepts both local and Team Foundation version control server paths.</p><p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p><p>The <strong>difference</strong> command does not support wildcard characters.</p><p>This parameter cannot be combined with the <strong>/shelveset</strong> option.</p></td></tr>
+	<td><p>Required. Specifies the item to be compared. If no version or path is specified, the <em>current workspace version </em>is assumed. Accepts both local and Team Foundation version control server paths.</p><p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p><p>The <strong>difference</strong> command does not support wildcard characters.</p><p>This parameter cannot be combined with the <strong>/shelveset</strong> option.</p></td></tr>
 <tr>
 	<td><p><em>Itemspec2</em></p></td>
 	<td><p>Optional. The item to which the <em>itemspec</em> is to be compared. If you do not provide a second i<em>temspec</em>, the latest Team Foundation version control server version of the item is used.</p></td></tr>
@@ -64,7 +60,7 @@ tf diff[erence] /configure
 	<td><p>Used with the <strong>/format</strong> option to specify an output format of one of the following types:</p><ul><li><p>Visual</p></li><li><p>Brief</p></li><li><p>Context</p></li><li><p>RCS</p></li><li><p>SS</p></li><li><p>SS_SideBySide</p></li><li><p>SS_Unix</p></li><li><p>Unified</p></li><li><p>Unix</p></li></ul><p>These outputs formats are explained in the Remarks section of this topic.</p></td></tr>
 <tr>
 	<td><p><em>Versionspec</em></p></td>
-	<td><p>The user-provided value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>The user-provided value for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>Shelvesetowner</em></p></td>
 	<td><p>Identifies the owner of the shelveset by user name. If a value for this parameter is not provided, the current user is assumed.</p></td></tr>
@@ -120,7 +116,7 @@ If you pass only one *itemspec* to the difference command:
 
 -   If you specify a range of versions such as **/version:C1~C4**, the versions of the file at the two end points of the range are compared.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Output Format types
 
@@ -244,6 +240,6 @@ c:\projects> tf difference /shelveset:PeerCodeReview2
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
-[Comparing Folders and Files](compare-folders-files.md)
+[Comparing Folders and Files](./compare-files.md)

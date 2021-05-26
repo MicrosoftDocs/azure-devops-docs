@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online updates - Nov 13
 description: VSTS release notes for November 13 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 18bb7318-c598-49ff-bbcc-ed92e2e419a0
@@ -16,15 +15,15 @@ author: yukom
 
 Today we take a very significant step in the evolution of our developer services. There are many pieces to it so bear with me while I get to them all. And please read all the way to the end for some exciting announcements.
 
-![New branding for Visual Studio Online](_img/11_13_01.png)
+![New branding for Visual Studio Online](media/11_13_01.png)
 
 The first thing you will notice is that we’ve changed our name. What was Team Foundation Service is now Visual Studio Online. The name change is not due to any one change we are making today but rather an indicator that Visual Studio Online is the services component of our developer tools. It will, of course, continue to support all the kinds of development you do – Windows, Azure, Java, iOS, etc. and the IDE you need – Visual Studio, Eclipse, Xcode, Android Studio, etc. But the name does indicate a continued broadening of our offering – you’ll see some more on this below if you continue to read.
 
-![New Visual Studio Online site](_img/11_13_02.png)
+![New Visual Studio Online site](media/11_13_02.png)
 
 With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. https://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
 
-![Your profile page](_img/11_13_03.png)
+![Your profile page](media/11_13_03.png)
 
 ## Visual Studio Online is Open for Business
 
@@ -44,15 +43,15 @@ I assume some people will decide, for any number of reasons, that it’s time fo
 
 To get started with a paid account, the first thing to understand is that we are coupling your VS Online subscription to your Windows Azure account. VS Online is a Windows Azure resource and you can manage your subscription and billing with Windows Azure and, consequently, take advantage of all of the Windows Azure purchasing options and discounts. To get a detailed walk-through, visit our [getting started topic](https://visualstudio.microsoft.com/get-started/set-up-billing-for-your-account-vs).
 
-![Set up your billing](_img/11_13_04.png)
+![Set up your billing](media/11_13_04.png)
 
 Once your account is connected, you can use the [Windows Azure portal](https://manage.windowsazure.com/) to change your subscription.
 
-![Assign licenses in the Windows Azure portal](_img/11_13_05.png)
+![Assign licenses in the Windows Azure portal](media/11_13_05.png)
 
 Use the new Users hub in VS Online to assign licenses to users.
 
-![Assign your licenses from Visual Studio Online](_img/11_13_06.png)
+![Assign your licenses from Visual Studio Online](media/11_13_06.png)
 
 ## Getting Support is Easy
 
@@ -66,11 +65,11 @@ With Visual Studio Online we want to offer a broad range of tools and services t
 
 To get started with Monaco you must first enable editing for your website. This is done on a per website basis, on the CONFIGURE tab in the Windows Azure Portal for your site, in the “general” section.
 
-![Get started with Monaco](_img/11_13_07.png)
+![Get started with Monaco](media/11_13_07.png)
 
 Once you enable editing, a link to “Edit in Visual Studio Online” will appear on the DASHBOARD tab of the portal, under “quick glance”.
 
-![Quick glance view](_img/11_13_08.png)
+![Quick glance view](media/11_13_08.png)
 
 You’ll be prompted for your deployment credentials. These are also available in the quick glance section of the portal. Once you are authenticated, you will be directed to the Monaco environment where you can start editing your site.
 
@@ -78,7 +77,7 @@ You’ll be prompted for your deployment credentials. These are also available i
 
 Changes are automatically saved and are live. Monaco has great support for HTML5 and JavaScript applications (including TypeScript and Node) as well as PHP applications. You can edit VB and C# ASP.NET Web Applications in Monaco. You can use MSBuild from the Console to compile the project.
 
-![Using Monaco](_img/11_13_09.png)
+![Using Monaco](media/11_13_09.png)
 
 This is just a brief overview of Monaco in order to get you up and running. For more information, check out the new video series for Monaco on Channel 9.
 
@@ -92,19 +91,19 @@ With this “360 degree view” of your application, Application Insights can qu
 
 In addition to “out of the box” pre-configured insights and reports, you can create custom dashboards showing the metrics you care most about.
 
-![Customize your dashboards](_img/11_13_10.png)
+![Customize your dashboards](media/11_13_10.png)
 
 ### Integration with Visual Studio
 
 One of the cooler things about Application Insights is its integration with Visual Studio. When your availability tests fail, or exceptions occur, Application Insights can bring you right to the offending line of code in the version of the source that is actually in production.
 
-![Find a line of code that's causing an issue](_img/11_13_11.png)
+![Find a line of code that's causing an issue](media/11_13_11.png)
 
 ### Where should I focus my attention next sprint?
 
 Without Application Insights, “what’s next” decisions are often guesswork. But with Application Insights, you’ll understand what users are doing, where they are succeeding, and which platforms matter most. If you want to instrument your application, you can capture any sort of custom insight. With this insight, your continuous improvement efforts can be more focused and impactful.
 
-![See which browsers your customers use](_img/11_13_12.png)
+![See which browsers your customers use](media/11_13_12.png)
 
 ### Next Steps
 

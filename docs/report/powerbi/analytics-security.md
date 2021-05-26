@@ -2,23 +2,21 @@
 title: Analytics permissions and security
 titleSuffix: Azure DevOps     
 description: Required permissions necessary to access Analytics and how to handle project access denied errors
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/21/2019
+ms.date: 04/23/2020
 ---
 
 
 # Set permissions to access Analytics and Analytics views
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
+To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all Contributors with Basic access. Users granted Stakeholder access don't have permissions to view or edit Analytics views.  
 
 To edit an Analytics view or connect to an Analytics view in Power BI, you must have permissions for that view. 
 
@@ -35,15 +33,15 @@ You grant or restrict permissions to a user by setting one or more permissions f
 	For example, here we set the permissions for Chuck Reinhart, denying him permission to delete or modify shared Analytics views, but allowing him to access Analytics data. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](_img/analytics-security-permissions.png) 
+	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](media/analytics-security-permissions.png) 
 
-	To learn more about working with permissions, see [Security & identity](../../organizations/security/index.md).
+	To learn more about working with permissions, see [Security & identity](../../organizations/security/about-security-identity.md).
 
 > [!NOTE]  
 > Analytics does not support security at the area path level. Therefore, if a user has access to a project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through Analytics. Therefore, to protect your data, the best practice is to not allow reporting against Analytics for any user who does not have access to all data within a project.  
 
 
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+[!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
 
 
 <a name="access-denied"></a>

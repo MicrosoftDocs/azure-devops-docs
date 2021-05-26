@@ -4,32 +4,25 @@ titleSuffix: Azure DevOps
 description: Learn how to track dependencies your team has on other teams with the dependency tracker  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.prod: devops
-ms.topic: conceptual
-ms.manager: mijacobs
+ms.topic: how-to
 ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 12/02/2019
+ms.date: 01/21/2021
 ---
 
-# Plan and track dependencies using the Dependency Tracker extension
+# Plan and track dependencies using the Dependency Tracker
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
-
-
-<!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency 
-
-https://microsoft.visualstudio.com/OS/_apps/hub/wdgeswm.dependencytracker.dependencytracker-hub#b4cd1b1c9c7ce3dfbaa3fabc9532a040
-
---> 
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
 The Dependency Tracker extension provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you to track the state and schedule of dependencies to support you in assessing the risk of dependencies to product deliverables. 
 
 > [!NOTE]   
-> The Dependency Tracker extension is only available on Azure DevOps Services at this time. You can download it from the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)
+> The Dependency Tracker extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) page. The Dependency Tracker extension is only available on Azure DevOps Services. 
+> 
+> Another tool that supports dependency views is [Delivery Plans](../plans/track-dependencies.md).
 
 You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
 - **Consumer**: Feature team who has a need and initiates a request for work
@@ -66,7 +59,7 @@ All teams across organizations can participate in tracking dependencies.
 - **Dependency**: work that Team A requires from Team B to do the work Team A is trying to do
 - **Consumer**: the team that wants work done
 - **Producer**: the team that is being asked to do the work
-- **Sequencing**: when a producing team’s work is needed before the consuming team can start their work
+- **Sequencing**: when a producing team's work is needed before the consuming team can start their work
 
 ### Recommended practices 
 
@@ -74,9 +67,9 @@ All teams across organizations can participate in tracking dependencies.
 - The consumer owns the engagement and tracking of that work – since it is the work their scenario requires, the burden is on the consumer to file, monitor, and track the status of the work
 - The consumer owns entering the work into Azure Boards and submitting that work request to the producer
 - Once the work has been submitted to the producer, the producer owns the work item,
-	- The producer is responsible for maintaining the work item in Azure Boards
-	- The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
-	- The consumer should not touch these values, once the work item has been handed off
+    - The producer is responsible for maintaining the work item in Azure Boards
+    - The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
+    - The consumer should not touch these values, once the work item has been handed off
 - The consumer is in charge of managing the work they requested  so that they are aware of any material changes and adjustments.
 
 
@@ -106,15 +99,15 @@ In addition, the following configuration or customization tasks should be perfor
 
 2. Choose **Dependency Tracker** from under the Boards group. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Select Dependency Tracker from Azure Boards](_img/tracker/select-dependency-tracker.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Select Dependency Tracker from Azure Boards](media/tracker/select-dependency-tracker.png)
 
 1. To focus on your area of ownership, choose the **Area** that corresponds to the team you want to view dependencies for.   
 
-	> [!div class="mx-imgBorder"]  
-	> ![Select Area](_img/tracker/choose-area-path.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Select Area](media/tracker/choose-area-path.png)
 
-	You can only filter on those Area paths defined for the project. 
+    You can only filter on those Area paths defined for the project. 
 
 <a id="filter" /> 
 
@@ -122,10 +115,10 @@ In addition, the following configuration or customization tasks should be perfor
 
 You can filter each supported view by typing a keyword or using one or more of the fields. Provided field include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
-To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon. 
+To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter by keyword or field](_img/tracker/filter.png)  
+> ![Filter by keyword or field](media/tracker/filter.png)  
 
 You can toggle filters  on and off by choosing the filter icon. To see more filters use the arrows at the end of the list of filters. 
 
@@ -150,7 +143,7 @@ Ability to drop dependencies within the selected area (usually used for excludin
 Several views provide interactive visualizations through drill-downs. These features are addressed in the description of each of the tabbed views later in this article. 
 
 > [!div class="mx-imgBorder"]  
-> ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
+> ![Consuming dependencies, drill-down into completed work in an area](media/tracker/drill-down-completed-consuming.png) 
 
 
 
@@ -162,50 +155,50 @@ A dependency represents work where one team is dependent on another team. Both t
 
 1. Choose **New Dependency**.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose New Dependency](_img/tracker/choose-new-dependency.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Choose New Dependency](media/tracker/choose-new-dependency.png)
 
-	If the partner team is in a different organization, then first choose the **Partner Account**. The Partner Account option can be enabled or disabled by [configuring the Dependency Tracker](#configuration).   
+    If the partner team is in a different organization, then first choose the **Partner Account**. The Partner Account option can be enabled or disabled by [configuring the Dependency Tracker](#configuration).   
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose partner account](_img/tracker/choose-partner-organization.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Choose partner account](media/tracker/choose-partner-organization.png)
 
 1.  You can search for work items by ID or by entering a keyword contained within the work item title. Here, we link a user story and a bug. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create a dependency, choose two existing work items to link](_img/tracker/create-dependency.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create a dependency, choose two existing work items to link](media/tracker/create-dependency.png)
 
-	- The Producer is the team that commits to delivering the work.
-	- The Consumer is the team that needs or is dependent on the work.
-	- The fastest way to create a dependency link is to type the Producer and Consumer work item IDs in the search boxes and then choose **Save**.
+    - The Producer is the team that commits to delivering the work.
+    - The Consumer is the team that needs or is dependent on the work.
+    - The fastest way to create a dependency link is to type the Producer and Consumer work item IDs in the search boxes and then choose **Save**.
 
-	Optionally, you can choose **Create New** to add work items that you then link as dependent upon each other. Here we create two new features and link them. 
+    Optionally, you can choose **Create New** to add work items that you then link as dependent upon each other. Here we create two new features and link them. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create a dependency, create new work items to link](_img/tracker/create-new-work-items-link-dependency.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Create a dependency, create new work items to link](media/tracker/create-new-work-items-link-dependency.png)
 
-	If no work items exist for one half of the dependency, you can create a new work item as needed.
+    If no work items exist for one half of the dependency, you can create a new work item as needed.
 
-1.  Choose **Save**. The **Save** button becomes available only after you've chosen two work items to link.  	
+1.  Choose **Save**. The **Save** button becomes available only after you've chosen two work items to link.      
 
 1. From the success confirmation dialog, choose **View dependency**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Success confirmation](_img/tracker/success-confirmation.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Success confirmation](media/tracker/success-confirmation.png)
 
-1.  The work items that you just linked are highlighted.	
-	
-	As shown in this example, the Fabrikam Fiber/Service Delivery/Voice team is dependent on the MyFirstProject team to deliver their `User Story 706: Cancel order form` to complete `Bug 390: Cancel order form`. 
+1.  The work items that you just linked are highlighted.    
+    
+    As shown in this example, the Fabrikam Fiber/Service Delivery/Voice team is dependent on the MyFirstProject team to deliver their `User Story 706: Cancel order form` to complete `Bug 390: Cancel order form`. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Linked dependent work items](_img/tracker/linked-dependent-work-items.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Linked dependent work items](media/tracker/linked-dependent-work-items.png)
 
 ## Create links manually 
 
 You can also link work items using the **Links** tab to create Successor/Predecessor links. A Predecessor is the producer of the work item, or the item that must come first. A Successor is the consumer of the work item, or the item that is dependent on the first item.
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](_img/tracker/create-links-manually.png)
+> ![Create links manually](media/tracker/create-links-manually.png)
 
 > [!NOTE]   
 > The Successor/Predecessor (consumes/produces) link types are the default link types used by the Dependency Tracker. If you're projects are customized using a Hosted XML process model, it's possible to specify different link types in the Dependency Tracker configuration. See [Configure the Dependency Tracker](#configuration) later in this article.
@@ -214,19 +207,19 @@ To learn more, see [Link user stories, issues, bugs, and other work items](../ba
 
 ## Remove dependency links
 
-You can remove a dependency by choosing the ![ ](../../_img/icons/actions-icon.png) actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
+You can remove a dependency by choosing the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](_img/tracker/remove-dependency-link.png)
+> ![Remove dependency links.](media/tracker/remove-dependency-link.png)
 
 Optionally, you can remove the link from the work item's **Links** tab. 
 
 ## Create a query of dependencies 
 
-To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
+To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](_img/tracker/open-as-query.png)
+> ![Create a query of dependencies.](media/tracker/open-as-query.png)
 
 A new tab opens to the Query Results page. 
 
@@ -245,14 +238,14 @@ The **Consuming Dependencies** view shows work that a team is dependent upon oth
 - *What are the workflow states of my consumer dependencies?*
 
 > [!div class="mx-imgBorder"]  
-> ![Consuming-View](_img/tracker/consuming-dependencies-view.png)
+> ![Consuming-View](media/tracker/consuming-dependencies-view.png)
 
 Each column on the bar chart represents another area path that is producing dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
 Within the table, you can perform the following actions. 
 
 - Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
-- Expand or collapse the list of work items to show the full list of dependent work items using the ![ ](../_img/icons/expand_icon.png) expand and ![ ](../_img/icons/collapse_icon.png) collapse icons 
+- Expand or collapse the list of work items to show the full list of dependent work items using the :::image type="icon" source="../media/icons/expand_icon.png" border="false"::: expand and :::image type="icon" source="../media/icons/collapse_icon.png" border="false"::: collapse icons 
 - Add or remove column fields by opening Column Options
 - Switch the sequence of work items by choosing the Display: **Consumer on top** or **Producer on top**
 
@@ -268,7 +261,7 @@ The **Producing Dependencies** view shows work that other teams/area paths are d
 - *What are the workflow states of my producer dependencies?*
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker](_img/tracker/producing-dependencies-view.png)
+> ![Dependency Tracker](media/tracker/producing-dependencies-view.png)
 
 Each column on the bar chart represents another area path that is consuming dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
@@ -294,14 +287,14 @@ There are two versions of the Timeline view: **Correct Flow** and **Incorrect Fl
 The Correct Flow view shows those dependencies that are in the correct sequence. Successor work items are scheduled to be completed after their predecessor work item.
 
 > [!div class="mx-imgBorder"]  
-> ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
+> ![Timeline view, correct flow](media/tracker/timeline-oc-word-2019-correct-flow.png)
 
 #### Incorrect Flow
 
 The Incorrect Flow  view shows those dependencies that are out of order. At least one predecessor work item is scheduled to be completed after it's successor work item.
 
 > [!div class="mx-imgBorder"]  
-> ![Timeline view, incorrect flow](_img/tracker/timeline-oc-word-2019-incorrect-flow.png)
+> ![Timeline view, incorrect flow](media/tracker/timeline-oc-word-2019-incorrect-flow.png)
 
 
 <a id="risk-graph" />
@@ -311,19 +304,19 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph-1.png)
+> ![Dependency Tracker Risk Graph](media/tracker/risk-graph-1.png)
 
 There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
 #### Consuming From
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph-ff-consuming-from.png)
+> ![Dependency Tracker Risk Graph, Consuming From](media/tracker/risk-graph-ff-consuming-from.png)
 
 #### Producing For
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Producing For](_img/tracker/risk-graph-ff-producing-for.png)
+> ![Dependency Tracker Risk Graph, Producing For](media/tracker/risk-graph-ff-producing-for.png)
 
 
 #### Filtered on a specific dependency
@@ -331,7 +324,7 @@ There are two views: **Consuming From** and **Producing For**. The workflow stat
 You can drill down into specifics by choosing one of the dependencies. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Producing For, Filtered on a dependency](_img/tracker/risk-graph-ff-producing-for-filtered.png)
+> ![Dependency Tracker Risk Graph, Producing For, Filtered on a dependency](media/tracker/risk-graph-ff-producing-for-filtered.png)
 
 
 <a id="configuration" /> 
@@ -340,27 +333,27 @@ You can drill down into specifics by choosing one of the dependencies.
 
 You must be a member of the  Project Collection Administrator Group in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
-To change the configuration, choose the ![ ](../../_img/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
+To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when done. 
 
 The main properties you can modify are summarized as follows: 
 - The link types to use to create dependency links. Defaults are the Successor/Predecessor link types. Only customize when you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  
 - Work items and work item types
-	- Work item types to participate in dependency tracking 
-	- Mapping of work item category states to colors 
-	- Mapping of work item workflow states and colors
+    - Work item types to participate in dependency tracking 
+    - Mapping of work item category states to colors 
+    - Mapping of work item workflow states and colors
 - Default field columns in dependency list tables
 - Default filter selections:
-	- Selected dependency work item types
-	- Selected Iteration Paths
+    - Selected dependency work item types
+    - Selected Iteration Paths
 - Enabled options:
-	- Timeline
-	- New Dependency link 
-	- Cross account (organization) dependencies 
-	- Cross account dependency toggle default state 
+    - Timeline
+    - New Dependency link 
+    - Cross account (organization) dependencies 
+    - Cross account dependency toggle default state 
 - Risk graph configuration:
-	- Work item state(s) associated with at risk (Red color) work items
-	- Work item state(s) associated with neutral (Gray color) work items
-	- Work item state(s) associates with on track (Green color) work items
+    - Work item state(s) associated with at risk (Red color) work items
+    - Work item state(s) associated with neutral (Gray color) work items
+    - Work item state(s) associates with on track (Green color) work items
 
 For a full list and description, see the [Property descriptions](#table) provided later in this section. 
 
@@ -581,7 +574,7 @@ Example: <pre>["account-1", "account-2"]</pre>
 }</pre> 
 <p>If you don't want any dependencies created that belong to other organizations, then change this configuration to: </p>
 <pre>{  
-"crossAccountDependencyEnabled": true,  
+"crossAccountDependencyEnabled": false,  
 "crossAccountDependencyToggleDefaultState": false
 }</pre>
 </td>
@@ -774,6 +767,7 @@ Example: <pre>["account-1", "account-2"]</pre>
 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 
+<!---
 
 ## Dependency Bot
 
@@ -782,6 +776,7 @@ The dependency bot works in the background to notify teams when dependencies are
 - Notify the consumer (copy the producer) when the producer has changed the State of the deliverable to Cut
 - Notify the consumer (copy the producer) when the producer has moved out the iteration path of a committed dependency.
 
+--> 
 
 <!--- TO BE COMPLETED
 

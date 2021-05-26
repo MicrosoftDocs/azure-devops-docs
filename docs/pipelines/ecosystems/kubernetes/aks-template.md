@@ -1,20 +1,17 @@
 ---
 title: Deploy to Azure Kubernetes Service
 description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build and deploy to Azure Kubernetes Service
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
  Azure Kubernetes Service manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. This service also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
 
@@ -22,9 +19,11 @@ In this step-by-step guide, you'll learn how to create a pipeline that continuou
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/prerequisites.md)]
+To ensure that your Azure DevOps project has the authorization required to access your Azure subscription, [create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required when you create a pipeline in the project to deploy to Azure Kubernetes Service.  Otherwise, the drop-down lists for **Cluster** and **Container Registry** are empty.    
 
-[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../../includes/prerequisites.md)]
+
+[!INCLUDE [include](../../includes/azure-prerequisites.md)]
 
 ## Get the code
 
@@ -36,7 +35,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
 ## Create the Azure resources
 
-[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
 
 ### Create a container registry
 
@@ -53,18 +52,19 @@ az aks create \
     --name myapp \
     --node-count 1 \
     --enable-addons monitoring \
-    --generate-ssh-keys
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
 ```
 
 ## Sign in to Azure Pipelines
-[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../_shared/create-project.md)]
+[!INCLUDE [include](../includes/create-project.md)]
 
 
 ## Create the pipeline
 ### Connect and select repository
-[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service**. 
 
@@ -102,6 +102,10 @@ When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service*
 
 As your pipeline runs, watch as your build stage, and then your deployment stage, go from blue (running) to green (completed). You can select the stages and jobs to watch your pipeline in action.
 
+> [!NOTE]
+> If you're using a Microsoft-hosted agent, you must add the IP range of the Microsoft-hosted agent to your firewall. Get the weekly list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519), which is published every Wednesday. The new IP ranges become effective the following Monday. For more information, see [Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#networking).
+> To find the IP ranges that are required for your Azure DevOps organization, learn how to [identify the possible IP ranges for Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents).
+    
 After the pipeline run is finished, explore what happened and then go see your app deployed. From the pipeline summary:
 
 1. Select the **Environments** tab.
@@ -161,7 +165,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
-    environment: 'shashankbarsinpipelinesjavascriptdocker.aksnamespace'
+    environment: 'azooinmyluggagepipelinesjavascriptdocker.aksnamespace'
     strategy:
       runOnce:
         deploy:
@@ -194,7 +198,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
 ```
 
 
-[!INCLUDE [include](../_shared/clean-up-resources.md)]
+[!INCLUDE [include](../includes/clean-up-resources.md)]
 
 ```azurecli-interactive
 az group delete --name MC_myapp-rg_myapp_eastus

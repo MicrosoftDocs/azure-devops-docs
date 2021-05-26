@@ -4,24 +4,26 @@ titleSuffix: Azure Boards
 description: Query for work items based on their area or iteration path in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 07/30/2020 
 ---
 
 
 # Query by area or iteration path 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team. 
 
-To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
+
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)] 
+
 
 ## Supported operators and macros 
 
@@ -47,16 +49,16 @@ In addition to these operators, you can use the following macros when you select
 > |      <strong>@CurrentIteration</strong>       |                  Specify the current iteration associated with the selected team context.                  |
 > | **@CurrentIteration +/- n**&nbsp;&nbsp;&nbsp; | Filter items based on assignment to a sliding window of sprints associated with the selected team context. |
 > |          <strong>@TeamAreas</strong>          |                      Filter items based on area path(s) assigned to a specific team.                       |
-> 
+
 > [!NOTE]
-> The <strong>@CurrentIteration</strong> macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and <strong>@TeamAreas</strong> macros are supported for Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
+> The **@CurrentIteration** macro is supported for TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure DevOps Server 2019 and later versions. These macros are only supported from the web portal. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.
 
 ## Area path queries 
 
 You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
+> ![Query on Area Path for several areas](media/query-area-iteration/query-with-in-operator.png)
 
 
 ## Node Name and keyword based queries  
@@ -66,17 +68,17 @@ Use the **Node Name** field to filter on work items assigned to area paths based
 The following query yields the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
 In this example, the filter will return any work items assigned to an area path whose last node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
-> ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
+> ![Query for several sprints](media/query-area-iteration/query-filter-contains-node-name.png)
 
 Here's another example which uses the **Node Name** and the **In** operator. 
 
 > [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
 
 
@@ -88,7 +90,7 @@ Here's another example which uses the **Node Name** and the **In** operator.
 Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
 
 > [!div class="mx-imgBorder"]
-> ![Query on area paths assigned to a team](_img/query-area-iteration/teamareas-macro-example.png)
+> ![Query on area paths assigned to a team](media/query-area-iteration/teamareas-macro-example.png)
 
 ::: moniker-end
 
@@ -125,7 +127,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
 ::: moniker range="<= azure-devops-2019"
@@ -138,5 +140,5 @@ For the On-premises XML process model, you can apply rules to fields. However, f
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

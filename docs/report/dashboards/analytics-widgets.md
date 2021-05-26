@@ -2,9 +2,7 @@
 title:  Analytics widgets 
 titleSuffix: Azure DevOps
 description: Learn about the widgets based on Analytics data that you can add to a dashboard  
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.reviewer: romik
 ms.author: kaelli
 author: KathrynEE
@@ -16,9 +14,9 @@ ms.date: 04/05/2019
 
 # Widgets based on Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
 ::: moniker-end
 
@@ -28,7 +26,18 @@ Analytics supports several dashboard widgets that take advantage of the power of
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
 
-[!INCLUDE [temp](../_shared/boards-disabled.md)]
+
+
+## Prerequisites
+
+- Analytics widget data is calculated from the Analytics service.  
+
+::: moniker range="< azure-devops"
+- For Analytics widgets to display correctly, the Analytics service must be enabled on your on-premises Azure DevOps Server. To learn more, see [Install/uninstall or enable/disable the Analytics service](../../report/dashboards/analytics-extension.md).
+
+::: moniker-end
+
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
 ## Burndown
 
@@ -40,7 +49,7 @@ The Burndown widget lets you display a trend of remaining work across multiple t
 
 **Burndown widget showing a release Burndown**
 
-![Burndown Widget - Release Burndown Example](./_img/burndown-ax-catalog.png)
+![Burndown Widget - Release Burndown Example](./media/burndown-ax-catalog.png)
 
 To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
@@ -50,7 +59,7 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 **Burnup widget showing a release Burnup**
 
-![Burnup Widget - Release Burnup Example](./_img/burnup-ax-catalog.png)
+![Burnup Widget - Release Burnup Example](./media/burnup-ax-catalog.png)
 
 To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
@@ -62,9 +71,9 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 **Sprint Burndown widget**
 
 > [!div class="mx-imgBorder"] 
-> ![Sprint Burndown Widget - Sprint Burndown Example](_img/sprint-burndown/sprint-burndown-widget.png)
+> ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
-To learn more, see [Configure and monitor sprint burndown ](configure-sprint-burndown.md).  
+To learn more, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
 
 
 ## Cumulative Flow Diagram (CFD)
@@ -75,7 +84,7 @@ The CFD widget shows the count of work items (over time) for each column of a Ka
 
 **Cumulative flow diagram widget showing 30 days of data**
 
-![Cumulative flow diagram widget](./_img/cdf-big-widget.png) 
+![Cumulative flow diagram widget](./media/cdf-big-widget.png) 
 
 To learn more, see [Cumulative flow diagram widget](cumulative-flow.md).  
 
@@ -87,7 +96,7 @@ The Cycle time widget will help you analyze the time it takes for your team to c
 
 **Cycle time widget showing 30 days of data**
 
-![Cycle time widget](_img/cycle-time-planning.png) 
+![Cycle time widget](media/cycle-time-planning.png) 
 
 To learn more, see [Cycle time and lead time control charts](cycle-time-and-lead-time.md).  
 
@@ -100,7 +109,7 @@ The Lead time widget will help you analyze the time it takes to deliver work fro
 
 **Lead time widget showing 60 days of data**
 
-![Lead time widget](_img/lead-time-control-chart.png) 
+![Lead time widget](media/lead-time-control-chart.png) 
 
 To learn more, see [Cycle time and lead time control charts](cycle-time-and-lead-time.md). 
 
@@ -114,7 +123,7 @@ The Velocity widget will help you learn how much work your team can complete dur
 
 **Velocity widget showing 8 sprints of data based on Story Points**
 
-![Velocity widget](./_img/Velocity-ax-catalog.png)
+![Velocity widget](./media/Velocity-ax-catalog.png)
  
 
 To learn more, see [Configure and view Velocity widgets](team-velocity.md).  
@@ -131,6 +140,6 @@ You can find outliers in your test results and answer questions like:
 
 **Test trend widget showing passed test results and pass rate for the last 7 days grouped by Priority**
 
-![test trend widget by priority](_img/test-results-trend-widget/passed-bypriority-pass.png)
+![test trend widget by priority](media/test-results-trend-widget/passed-bypriority-pass.png)
 
 To learn more, see [Configure a test results widget](configure-test-results-trend.md).

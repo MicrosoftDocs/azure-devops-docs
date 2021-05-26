@@ -3,10 +3,7 @@ title: Task Groups in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 04/02/2019
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
@@ -72,12 +69,12 @@ to change each one individually.
 1. Ensure that all the tasks you intend to include do not contain any linked parameters. The easy
    way to do this is to choose **Unlink all** in the settings panel for the entire process.
 
-   ![Unlinking parameters for all tasks](_img/unlink-task-group.png)
+   ![Unlinking parameters for all tasks](media/unlink-task-group.png)
 
 1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
    checkmarks of each one). Then open the shortcut menu and choose **Create task group**.
 
-   ![Creating a task group from a release pipeline list of tasks](_img/create-task-group.png)
+   ![Creating a task group from a release pipeline list of tasks](media/create-task-group.png)
 
 2. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
 
@@ -96,7 +93,7 @@ to change each one individually.
 All the task groups you create in the current project are listed in
 the **Task Groups** page of **Azure Pipelines**.
 
-![Listing task groups](_img/list-task-group.png)
+![Listing task groups](media/list-task-group.png)
 
 Use the **Export** shortcut command to save a copy of the task group as a JSON pipeline,
 and the **Import** icon to import previously saved task group definitions. Use this feature to
@@ -104,7 +101,7 @@ transfer task groups between projects and enterprises, or replicate and save cop
 
 Select a task group name to open the details page.
 
-![Managing a task group](_img/manage-task-group.png)
+![Managing a task group](media/manage-task-group.png)
 
 * In the **Tasks** page you can edit the tasks that make up the task group.
   For each encapsulated task you can change the parameter values for the
@@ -133,19 +130,19 @@ task groups so that they behave in the same way and provide the same advantages.
 
 1. After you finish editing a task group, choose **Save as draft** instead of **Save**.
 
-   ![Saving a draft update to a task group](_img/save-draft-task-group.png)
+   ![Saving a draft update to a task group](media/save-draft-task-group.png)
 
 1. The string **-test** is appended to the task group version number.
    When you are happy with the changes, choose **Publish draft**. You can choose
    whether to publish it as a preview or as a production-ready version.
 
-   ![Publishing a draft version of a task group](_img/publish-preview-task-group.png)
+   ![Publishing a draft version of a task group](media/publish-preview-task-group.png)
  
 1. You can now use the updated task group in your build and release processes;
    either by changing the version number of the task group in an existing pipeline
    or by adding it from the **Add tasks** panel.  
 
-   ![Using a preview version of a task group](_img/use-preview-task-group.png)
+   ![Using a preview version of a task group](media/use-preview-task-group.png)
 
    > As with the built-in tasks, the default when you add a task group is the highest non-preview version.
 
@@ -153,12 +150,12 @@ task groups so that they behave in the same way and provide the same advantages.
    The **Preview** string is removed from the version number string. It will now appear
    in definitions as a "production-ready" version.
 
-   ![Publishing a preview version of a task group](_img/publish-version-task-group.png)
+   ![Publishing a preview version of a task group](media/publish-version-task-group.png)
 
 1. In a build or release pipeline that already contains this task group, you can now select the new "production-ready" version.
    When you add the task group from the **Add tasks** panel, it automatically selects the new "production-ready" version.  
 
-   ![Using an updated version of a task group](_img/use-version-task-group.png)
+   ![Using an updated version of a task group](media/use-version-task-group.png)
 
 
 
@@ -195,4 +192,4 @@ However, if your taskgroup update is not a breaking change but you would like to
 * [Tasks](../process/tasks.md)
 * [Task jobs](../process/phases.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

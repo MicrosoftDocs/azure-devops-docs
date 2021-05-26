@@ -2,10 +2,8 @@
 title: Create test plans and suites
 description: Test tools - Create test plans in Azure Test Plans and Azure DevOps Server to make sure each of the deliverables meets your users needs
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 11/15/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Create test plans and test suites
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
@@ -24,7 +22,7 @@ For more information about manual testing, see [Planned manual testing](overview
 
 ## What are test plans, test suites, and test cases?
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of test management artifacts: test plans, test suites, and test cases.
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides three main types of test management artifacts: test plans, test suites, and test cases.
 These elements are stored in your work repository as special types of work items. 
 You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
 
@@ -60,7 +58,7 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)]
+[!INCLUDE [feature-availability](includes/feature-availability.md)]
 
 ## Prerequisites
 
@@ -68,7 +66,7 @@ To manage test artifacts, you must have the correct permissions and access level
 
 ### Manage test artifacts permissions
 
-You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-work-tracking.md).
+You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-test.md).
 
 ### Access level
 
@@ -85,7 +83,7 @@ To create and edit a test artifact, you must have one of the following access le
 
 - [Basic + Test plans](../organizations/security/access-levels.md)
 - [Visual Studio Enterprise](../organizations/security/access-levels.md)
-- [Basic](../organizations/security/access-levels.md) to create and edit test cases, but not the other types of test artifacts
+- [Basic](../organizations/security/access-levels.md) edit test cases, but not create them or other types of test artifacts
 
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
@@ -103,19 +101,19 @@ If you want to use Azure Test Plans, and haven't done so already, [sign up for A
 
 You need a project. For more information, see [create your project](../organizations/accounts/organization-management.md). Then [create your backlog](../boards/backlogs/create-your-backlog.md).
 
-1. In Azure DevOps Services or Azure DevOps Server, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+1. In Azure DevOps Services or Azure DevOps Server, open your project and go to [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
-   ![Opening the list of test plans page](_img/create-a-test-plan/goto-test-plans-page.png)
+   ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)
 
 1. In the **Test Plans** page, choose **New Test Plan** to create a test plan for your current sprint.
  
-   ![Creating a new test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
+   ![Creating a new test plan](media/create-a-test-plan/CreateATestPlan1a.png)
 
 1. In **New Test Plan**, enter a name for the test plan.
    Verify that the area path and iteration are set correctly, then choose **Create**.
 
-   ![Adding test plan details](_img/create-a-test-plan/CreateATestPlan2.png) 
+   ![Adding test plan details](media/create-a-test-plan/CreateATestPlan2.png) 
 
 > [!TIP]
 > You can also create a test plan and a test suite automatically when you create a test from a User Story work item in Azure Boards or Azure DevOps Server.
@@ -128,7 +126,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 
 1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
 
-   ![Creating a requirement-based test suite](_img/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
+   ![Creating a requirement-based test suite](media/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
 
    You use requirement-based suites to group your test cases together.
    That way, you can track the testing status of a backlog item.
@@ -137,20 +135,20 @@ Now add test suites for the backlog items that need manual tests. These tests co
 1. In **Create requirement-based suites**, add one or more clauses to filter your work items by the iteration path for the sprint.
    Run the query to view the matching backlog items.
 
-   ![Adding clauses to filter by iteration and running the query to view results](_img/create-a-test-plan/AddRequirementSuitesToTestPlan2.png)
+   ![Adding clauses to filter by iteration and running the query to view results](media/create-a-test-plan/AddRequirementSuitesToTestPlan2.png)
 
 1. In the list of work items returned by the query, select the backlog items you want to test in this sprint.
    Choose **Create suites** to create a requirement-based suite for each one.
 
-   ![Adding requirement-based suites for your backlog items](_img/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
+   ![Adding requirement-based suites for your backlog items](media/create-a-test-plan/AddRequirementSuitesToTestPlan3.png)
 
 <a name="findplan"></a>
 ## Find a test case in a test plan
 
-In **Test Plans** for your test plan, use the ![filter-icon](_img/create-a-test-plan/filter-icon.png) filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
+In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
-  ![Finding a test plan](_img/create-a-test-plan/select-test-plan.png)
+  ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)
   
 ##  Next steps
 

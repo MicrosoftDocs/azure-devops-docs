@@ -2,19 +2,17 @@
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
 description: How to guide to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/1/2018
+ms.date: 07/14/2020
 ---
 
 # Aggregate work tracking data using Analytics   
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 You can get a sum of your work tracking data in one of two ways using Analytics with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
@@ -27,7 +25,7 @@ In this article you'll learn:
 > * How to group and filter aggregated results 
 > * How to aggregate data to generate a Cumulative Flow diagram  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## What is the Aggregation Extension for OData?
@@ -35,6 +33,7 @@ In this article you'll learn:
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
+
 Use the following basic root URL as a prefix for all the examples provided in this article.
 
 ::: moniker range="azure-devops"
@@ -46,7 +45,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -54,7 +53,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 > ```
 > 
 > [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+> The examples shown in this article are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL. 
 
 ::: moniker-end
 
@@ -74,7 +73,7 @@ Where the full OData query is:
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
 > ``` 
-> [!INCLUDE [temp](../_shared/api-versioning.md)]
+> [!INCLUDE [temp](../includes/api-versioning.md)]
 
 For comparison, using the OData aggregation extension, you add the following to your query:
 
@@ -336,7 +335,7 @@ When you need to use a mathematical expression to calculate properties for use i
 
 ## Generate a Cumulative Flow Diagram from aggregate data
 
-Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
+Let's say you want to create a [cumulative flow diagram](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

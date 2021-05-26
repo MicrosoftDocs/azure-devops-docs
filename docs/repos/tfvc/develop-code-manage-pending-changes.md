@@ -3,11 +3,7 @@ title: Develop code and manage pending changes
 titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop code and manage pending changes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
@@ -24,19 +20,19 @@ Most changes that you make to your files are queued as pending changes. As you w
 
 From the team explorer home page (Keyboard: Ctrl + 0, H), you can begin coding in a new or in an existing solution.
 
-![Open a solution from the Team Explorer Home page](_img/develop-code-manage-pending-changes/IC673341.png)  
+![Open a solution from the Team Explorer Home page](media/develop-code-manage-pending-changes/IC673341.png)  
 After you open your solution, open the solution explorer (Keyboard: Ctrl + Alt + L).
 
-![Solution Explorer with Test and Class projects](_img/develop-code-manage-pending-changes/IC612257.png)  
-When you open and modify a file from the solution explorer, the file is automatically checked out for you. Icons appear to indicate which files you have not changed ![TFSC Checked-In Status Icon](_img/develop-code-manage-pending-changes/IC97411.gif), those you have checked out ![TFSC Checked-Out Status Icon](_img/develop-code-manage-pending-changes/IC51402.gif), and those you have added to the solution ![TFSC Pending Addition Status Icon](_img/develop-code-manage-pending-changes/IC106108.gif).
+![Solution Explorer with Test and Class projects](media/develop-code-manage-pending-changes/IC612257.png)  
+When you open and modify a file from the solution explorer, the file is automatically checked out for you. Icons appear to indicate which files you have not changed ![TFSC Checked-In Status Icon](media/develop-code-manage-pending-changes/IC97411.gif), those you have checked out ![TFSC Checked-Out Status Icon](media/develop-code-manage-pending-changes/IC51402.gif), and those you have added to the solution ![TFSC Pending Addition Status Icon](media/develop-code-manage-pending-changes/IC106108.gif).
 
-If you're working in a solution that contains a lot of files, you'll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](_img/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
+If you're working in a solution that contains a lot of files, you'll probably find it convenient to filter the solution explorer to show only the files you have changed ![Changes filter](media/develop-code-manage-pending-changes/IC668001.png) (Keyboard: Ctrl + [, P).
 
 ## Use the My Work page to manage your work
 
 If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the My Work (Keyboard: Ctrl + 0, M) page in the team explorer to manage your work.
 
-![To Do List on My Work Page in Team Navigator](_img/develop-code-manage-pending-changes/IC591023.png)  
+![To Do List on My Work Page in Team Navigator](media/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
 -   Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md)    
 -   Suspend and later resume your work (including file changes, associated work items, and Visual Studio state such as window positions and breakpoints)  
@@ -46,18 +42,18 @@ For a step-by-step example, see [Day in the life of an devops Developer: Write n
 
 ### Tips
 
--   You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any of your personal queries that are contained in the root **My Queries** folder. To work with these queries, in the team explorer choose ![Home icon](_img/develop-code-manage-pending-changes/IC547418.png) **Home**, and then choose **Work Items**.  
--   When you move a work item to **Available**, **In Progress**, or **Suspended**, the work item state or comments are updated so that your team is automatically advised on the status of your work. For example, the task board for your team is updated to show your status. See [Collaborate [redirected]](https://msdn.microsoft.com/library/hh500404).  
--   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](https://msdn.microsoft.com/library/ms194972).
+-   You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any of your personal queries that are contained in the root **My Queries** folder. To work with these queries, in the team explorer choose ![Home icon](media/develop-code-manage-pending-changes/IC547418.png) **Home**, and then choose **Work Items**.  
+-   When you move a work item to **Available**, **In Progress**, or **Suspended**, the work item state or comments are updated so that your team is automatically advised on the status of your work. For example, the task board for your team is updated to show your status. See [Collaborate [redirected]](/previous-versions/hh500404(v=vs.120)).  
+-   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template).
 
 ## Use the Pending Changes page to manage your work
 
 You can use the Pending Changes page (Keyboard: Ctrl + 0, P) in the team explorer to manage your work.
 
-![Checking in the pending changes](_img/develop-code-manage-pending-changes/IC591276.png)
+![Checking in the pending changes](media/develop-code-manage-pending-changes/IC591276.png)
 
 > [!TIP]
-> -  You can <img src="_img/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.
+> -  You can <img src="media/develop-code-manage-pending-changes/IC667296.png" title="Undock" alt="Undock" style="border: 1px solid black;"/> undock the Pending Changes page from the team explorer and open it in a new window.
 > -  You can toggle between list and tree view from the actions menu.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a pending change until you check it in:  
@@ -84,7 +80,7 @@ If items that you don't need to check in appear regularly in the **Promote Candi
 
 ### Associate work items
 
-It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
+It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](../../boards/queries/using-queries.md) or add it by ID.
 
 ### Exclude changes
 

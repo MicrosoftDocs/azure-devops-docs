@@ -3,20 +3,16 @@ title: Require branches to be created in folders
 titleSuffix: Azure Repos
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 10/02/2020
 monikerRange: '>= tfs-2018'
 ---
 
 
 # Require branches to be created in folders
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.
@@ -30,9 +26,9 @@ Azure Repos and TFS can enforce the correct use of branch folders.
 Decide on the folder structure you want to allow.
 As an example, we'll set our repository to enforce the following rules:
 
-* Only `master` can exist at the repository root.
-* All users will be allowed to create branches under the `features/` and `users/` folders.
-* Administrators will be able to create branches under the `releases/` folder.
+* Only `main` can exist at the repository root.
+* All users will be allowed to create branches under the `feature/` and `users/` folders.
+* Administrators will be able to create branches under the `release/` folder.
 
 >[!NOTE]
 >For more examples and information about branch naming strategies, see [Adopt a Git branching strategy](git-branching-guidance.md).
@@ -43,7 +39,9 @@ As an example, we'll set our repository to enforce the following rules:
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
 
 > [!NOTE]
-> The command `tf.exe` is installed by default with Visual Studio. For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
+> The command `tf.exe` is installed by default with Visual Studio.
+> You can access it via the [Developer Command Prompt](/dotnet/framework/tools/developer-command-prompt-for-vs).
+> For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
 
 ## Enforce permissions
 
@@ -56,26 +54,26 @@ First, block the Create Branch permission at the repository root for the project
 tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo
 ```
 
-Then, allow contributors to create branches under `features` and `users`.
+Then, allow contributors to create branches under `feature` and `users`.
 
 ```
-tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
+tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:feature
 ```
 
 ```
 tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
 ```
 
-Allow administrators to create branches under `releases`.
+Allow administrators to create branches under `release`.
 
 ```
-tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
+tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:release
 ```
 
-Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
+Finally, allow administrators to create a branch called `main` (in case it ever gets accidentally deleted).
 
 ```
-tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
+tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:main
 ```
 
 >[!NOTE]
@@ -88,15 +86,15 @@ tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administ
 2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
 3. Choose its context menu (the `...` button) and choose **New branch**.
 
-   ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
+   ![Create branch menu](media/require-branch-folders/create-new-branch-menu.png)
 
 4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-   ![Create new branch](_img/require-branch-folders/create-new-branch.png)
+   ![Create new branch](media/require-branch-folders/create-new-branch.png)
 
 5. Choose the red trashcan icon next to the old branch name to delete it.
 
-   ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
+   ![Delete old branch](media/require-branch-folders/delete-old-branch.png)
 
 
 >[!NOTE] 
@@ -119,6 +117,6 @@ git push origin --delete {old_branch_name}
 ```
 
 >[!NOTE]
->Any custom permissions or branch policies you had set up will not be migrated.
+>You will not migrate any custom permissions or branch policies to the renamed branches.
 
 * * *

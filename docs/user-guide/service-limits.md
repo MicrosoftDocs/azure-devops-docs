@@ -1,11 +1,9 @@
 ---
 title: Azure DevOps Service and Rate limits
 description: Description of limits and rate limits on the Azure DevOps service
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-new-user
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
-ms.manager: mijacobs
 ms.date: 07/30/2019
 ms.author: kaelli
 author: KathrynEE
@@ -51,7 +49,7 @@ See [Rate limits documentation](../integrate/concepts/rate-limits.md) for detail
 
 ## Data import
 - Limited to to 300 projects per collection
-- See [data import documentation](../migrate/index.md) for details
+- See [data import documentation](../migrate/migration-overview.md) for details
 
 ## Next steps 
 

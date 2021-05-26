@@ -2,10 +2,7 @@
 title: Deploy an ASP.NET Cloud Service app 
 description: Example of deploying an Azure cloud services package in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Deploy your ASP.NET app to an Azure Cloud Service
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure Cloud Service using Azure Pipelines.
@@ -81,12 +78,12 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
+   ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
-   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
 
 1. Open the **Tasks** tab and select the **Stage 1** item. Configure the task variables as follows:
    
@@ -98,22 +95,22 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
    > If your Azure subscription is defined in an Azure Government Cloud, ensure your deployment pipeline meets the relevant compliance requirements. For more details, see [Azure Government Cloud deployments](../../library/government-cloud.md).
 
-   [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
+   [!INCLUDE [edit-template-vars-in-environment](../includes/edit-template-vars-in-environment.md)]
    
 1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
-[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
+[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

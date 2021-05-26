@@ -1,41 +1,39 @@
 ---
-title: View builds, releases, pipelines 
+title: View environments, releases, pipelines 
 titleSuffix: Azure DevOps Services Public Project
-description: View build and release status an pipelines for a public project
+description: View builds and environments statuses in pipelines for a public project.
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 08/18/2020
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: View build and release pipelines
+# View environments and releases in pipelines
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn how to view the status of build and release pipelines for public projects. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
+Learn how to view the status of environment and release pipelines for public projects. If you're a contributor, you can also [define environment pipelines](../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252forganizations%252fpublic%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fpublic%252ftoc.json).  
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
-## View recent builds and build pipelines  
+## View recent environments and environments pipelines  
 
-To view the status of recent builds, select  **Pipelines > Builds**. To view a summary or history of any build, choose a build.
+To view the status of recent environments, select  **Pipelines > Environments**. To view a summary or history of any environment, choose an environment.
 
-> ![Pipelines>Recent Builds, new navigation ](_img/pipelines/view-build-vert-brn.png)
+![Pipelines > Recent environments, new navigation ](media/pipelines/view-environments-pipelines.png)
 
 ## View active release pipelines
 
 To view active release pipelines, select **Pipelines > Releases**.
 
-> ![Pipelines, Recent Releases, new navigation ](_img/pipelines/view-releases-vert.png)
+![Pipelines, Recent Releases, new navigation ](media/pipelines/view-releases-pipelines.png)
 
 From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.
 
-> ![Pipelines, Build status page ](_img/pipelines/release-chart.png)
+![Pipelines, Environments status page ](media/pipelines/release-chart.png)
 
 ## Next steps
 

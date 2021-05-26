@@ -3,12 +3,8 @@ title: Key concepts and terminology used for Azure Repos
 titleSuffix: Azure Repos  
 description: Key definitions for objects and items used to code with Azure Repos
 ms.technology: devops-new-user 
-ms.prod: devops
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ms.date: 09/10/2018  
 ---
 
@@ -18,18 +14,18 @@ Here you'll find definitions of key concepts and artifacts used in Azure Repos.
 
 ## Branch
 
-Branches are lightweight references that keep a history of commits and provide a way to isolate changes for a feature or a bug fix from your master branch and other work. Committing changes to a branch doesn't affect other branches. You can push and share branches with other people on your team without having to merge the changes into master.
+Branches are lightweight references that keep a history of commits and provide a way to isolate changes for a feature or a bug fix from your main branch and other work. Committing changes to a branch doesn't affect other branches. You can push and share branches with other people on your team without having to merge the changes into main.
 
 Switching between branches is quick and easy. Git doesn't create multiple copies of your source code when you're working with branches - it uses the history information stored in commits to re-create the files in a branch when you start working on it.
 
-Learn more: [branches](../git/branches.md), [branch organization](../git/git-branching-guidance.md), and [how we use branches at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft#git-branch-structure-and-policies).
+Learn more: [branches](../git/create-branch.md), [branch organization](../git/git-branching-guidance.md), and [how we use branches at Microsoft](/devops/develop/how-microsoft-develops-devops#git-branch-structure-and-policies).
 
 ## Branch policies
 
-Branch policies are an important part of the Git workflow. You use them to help protect the important branches in your development, like `master`. Branch policies enable you to:
+Branch policies are an important part of the Git workflow. You use them to help protect the important branches in your development, like `main`. Branch policies enable you to:
 
-* Isolate work in progress from the completed work in your master branch.
-* Guarantee that changes build before they get to master.
+* Isolate work in progress from the completed work in your main branch.
+* Guarantee that changes build before they get to main.
 * Limit who can contribute to specific branches.
 * Enforce who can create branches and the naming guidelines for the branches.
 * Automatically include the right reviewers for every code change.
@@ -54,7 +50,7 @@ Learn more: [commits](../git/commits.md).
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository and then pushed to a new, empty repository. After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. When you're ready to share those changes, it's easy to use pull requests to push the changes back to the original repository.
 
-Learn more: [forks](../git/forks-overview.md)
+Learn more: [forks](../git/forks.md)
 
 ## Git
 
@@ -62,7 +58,7 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
-Learn more: [Git and Azure Repos](../git/overview.md).
+Learn more: [Git and Azure Repos](../git/index.yml).
 
 ## Git workflow
 
@@ -78,28 +74,28 @@ Git has a version of this workflow that uses terminology and commands such as re
 1. [Create a branch](#branch) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `features/cool-feature`.
 1. [Commit changes](#commit) to your branch. People often have multiple commits for a bug fix or feature.
 1. [Push your branch](#push) to the remote repository. 
-1. [Create a pull request](#pull-request) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes. When the code is ready, complete the pull request and merge your code into the target branch, such as `master`.
+1. [Create a pull request](#pull-request) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes. When the code is ready, complete the pull request and merge your code into the target branch, such as `main`.
 
 Use this workflow if you're new to Git. As your team gets more experienced and confident with Git, extend it to suit your team's needs.
 
-Learn more: [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+Learn more: [how we use Git at Microsoft](/devops/develop/how-microsoft-develops-devops).
 
-[!INCLUDE [glossary-terms-notifications](../../_shared/glossary-terms/notifications.md)]
+[!INCLUDE [glossary-terms-notifications](../../includes/glossary-terms/notifications.md)]
 
-[!INCLUDE [glossary-terms-projects](../../_shared/glossary-terms/projects.md)]
+[!INCLUDE [glossary-terms-projects](../../includes/glossary-terms/projects.md)]
 
-[!INCLUDE [glossary-terms-public-projects](../../_shared/glossary-terms/public-projects.md)]
+[!INCLUDE [glossary-terms-public-projects](../../includes/glossary-terms/public-projects.md)]
 
 ## Pull request
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before
-you merge it into the master branch. Pull requests can come from either
+you merge it into the main branch. Pull requests can come from either
 topic branches within the same repository or a branch in a
-[fork](../git/forks-overview.md) of the original repository.
+[fork](../git/forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-Learn more: [pull requests](../git/pull-requests-overview.md).
+Learn more: [pull requests](../git/pull-requests.md).
 
 ## Pull
 
@@ -119,6 +115,6 @@ Learn more: [push](../git/pushing.md).
 
 A repository is a location for your code managed by version control. Azure Repos supports both [Git](#git) and [TFVC](#team-foundation-version-control-tfvc).
 
-[!INCLUDE [glossary-terms-teams](../../_shared/glossary-terms/teams.md)]
+[!INCLUDE [glossary-terms-teams](../../includes/glossary-terms/teams.md)]
 
-[!INCLUDE [glossary-terms-tfvc](../../_shared/glossary-terms/tfvc-repo.md)]
+[!INCLUDE [glossary-terms-tfvc](../../includes/glossary-terms/tfvc-repo.md)]

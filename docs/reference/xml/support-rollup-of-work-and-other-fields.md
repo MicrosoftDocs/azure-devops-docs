@@ -2,10 +2,8 @@
 title: Support rollup of work and other fields
 titleSuffix: Azure DevOps & TFS
 description: Provides summed values of select fields for all child work items of a parent.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 08/22/2019
 
 # Rollup of work and other fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. Because Azure DevOps Services and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
@@ -24,7 +22,7 @@ Rollup provides summed values of select fields for all child work items of a par
 
 ## Native support of rollup within the web portal 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Azure Boards supports rollup columns on product and portfolio backlogs, rollup within the sprint Planning pane, as well as rollup on sprint backlogs and taskboards. 
 
@@ -32,7 +30,7 @@ Azure Boards supports rollup columns on product and portfolio backlogs, rollup w
 
 From any product or portfolio backlog, you can add rollup progress bars, counts of descendant work items within a hierarchy, or sum of select fields, such as Story Points or Remaining Work.
 
-[!INCLUDE [temp](../../boards/_shared/display-progress-bars.md)]
+[!INCLUDE [temp](../../boards/includes/display-progress-bars.md)]
 
 To learn more, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 
@@ -41,7 +39,7 @@ To learn more, see [Display rollup progress or totals](../../boards/backlogs/dis
 As you assign backlog items to a sprint using the Planning pane, the sprint window updates with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
 
 > [!div class="mx-imgBorder"]
-> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](../../boards/sprints/_img/assign-items-sprint/sprint-window-effort.png)   
+> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](../../boards/sprints/media/assign-items-sprint/sprint-window-effort.png)   
 
 *Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. To learn more, see [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
 
@@ -51,7 +49,7 @@ In addition, you can view rollup of Remaining Work from a sprint backlog or task
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 You can view rollup of Remaining Work from a sprint backlog or task board.  
 
@@ -59,23 +57,23 @@ You can view rollup of Remaining Work from a sprint backlog or task board.
 
 From the sprint backlog, the sum of all **Remaining Work** defined for all tasks is displayed for the parent work item. This value also displays on the parent work item card when you view the task board.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/remaining-work-rollup-s155.png )
+> ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-s155.png )
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/remaining-work-rollup-2019.png )
+> ![Sprint backlog displays rollup of Remaining Work.](media/rollup/remaining-work-rollup-2019.png )
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Sprint backlog displays rollup of Remaining Work](_img/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
+![Sprint backlog displays rollup of Remaining Work](media/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
 
 ::: moniker-end
   
@@ -84,23 +82,23 @@ From a sprint task board, there are three types of rollup:
 - The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
 - The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint Taskboard displays rollup of Remaining Work](_img/rollup/taskboard-remaining-work-s155.png )
+> ![Sprint Taskboard displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-s155.png )
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/taskboard-remaining-work-2019.png )
+> ![Sprint backlog displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-2019.png )
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Task board, collapsed backlog items](../../boards/sprints/_img/ALM_TB_Intro.png)
+![Task board, collapsed backlog items](../../boards/sprints/media/ALM_TB_Intro.png)
 
 ::: moniker-end
 
@@ -114,11 +112,11 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 |Method|Azure DevOps Services|On-premises Azure DevOps|  
 |------------|----------|----------------------|  
-|Work item query charts|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|
-|Marketplace extensions|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-| Analytics |![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
-|SQL Server Reporting Services report|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|Work item query charts|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|Microsoft Excel|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|
+|Marketplace extensions|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+| Analytics |![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
+|SQL Server Reporting Services report|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 
 ::: moniker-end
 
@@ -126,12 +124,12 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 |Method|TFS 2013|TFS 2015|TFS 2017|TFS 2018| 
 |------------|----------|----------------------|  
-|Work item query charts|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
-|Microsoft Project|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Marketplace extensions|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|    
-|SQL Server Reporting Services report|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|TFS-Project Server integration|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![Not supported](_img/icon_witerror.png "Icon_WITerror")|  
+|Work item query charts|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+|Microsoft Excel|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
+|Microsoft Project|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+|Marketplace extensions|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|    
+|SQL Server Reporting Services report|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|TFS-Project Server integration|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](media/icon_witerror.png "Icon_WITerror")|![Not supported](media/icon_witerror.png "Icon_WITerror")|  
 
 ::: moniker-end
 
@@ -145,7 +143,7 @@ You can create a flat list query that sums the values of a field you specify. To
 
 For example, here we show a pivot table that sums the story points for user stories by area path and work item state. 
  
-![Example rollup of story points by area and state](_img/support-rollup-chart.png)
+![Example rollup of story points by area and state](media/support-rollup-chart.png)
 
   
 ## Microsoft Excel and rollup of work tracking data 
@@ -163,7 +161,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
  
  Project natively supports rollup of summary tasks. With Project, you can round trip work tracking data to obtain rollup values.  
   
- ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
+ ![Task board displays round&#45;trip rollup from Project](media/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
  To learn how, see [Rollup estimated and actual work](../../boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
 
@@ -193,13 +191,13 @@ You can use the [Analytics Service](../../report/powerbi/what-is-analytics.md) t
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 ## SQL Server Reporting Services report  
 
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   
- ![Stories Overview example report](_img/procguid_agilereports.png "ProcGuid_AgileReports")  
+ ![Stories Overview example report](media/procguid_agilereports.png "ProcGuid_AgileReports")  
   
  If you have SQL Server Analysis Services deployed, you can get rollup for backlog items from these reports. The refresh frequency for these reports is 2 hours.  
   
@@ -215,11 +213,11 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
 
 ## TFS-Project Server integration 
 
-Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
+Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](/previous-versions/azure/devops/reference/tfs-ps-sync/understand-how-updates-to-specific-fields-managed). If you need to add fields or change how fields are mapped, see [Customize the field mapping](/previous-versions/azure/devops/reference/tfs-ps-sync/customize-field-mapping-tfs-project-server).  
   
 
 > [!IMPORTANT]
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md).
+> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server).
 
 ::: moniker-end 
 

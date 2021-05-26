@@ -2,10 +2,7 @@
 title: Deploy a Docker container app to an AKS cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
 ms.assetid: 
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -29,28 +26,28 @@ If you want some sample code that works with this guidance, [import](../../../re
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
 ```
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
 ```
 #### [Python](#tab/python)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
 ```
 #### [.NET Core](#tab/dotnet-core)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
@@ -83,9 +80,9 @@ You'll need an Azure subscription. You can get one free through [Visual Studio D
 When you use Azure Container Registry (ACR) with Azure Kubernetes Service (AKS),
 you must establish an authentication mechanism. This can be achieved in two ways:
 
-1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks).
+1. Grant AKS access to ACR. See [Authenticate with Azure Container Registry from Azure Kubernetes Service](/azure/container-registry/container-registry-auth-aks).
 
-1. Use a [Kubernetes image pull secret](https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks).
+1. Use a [Kubernetes image pull secret](/azure/container-registry/container-registry-auth-aks).
    An image pull secret can be created by using the [Kubernetes deployment task](../../tasks/deploy/kubernetes.md).
 
 ## Create a release pipeline

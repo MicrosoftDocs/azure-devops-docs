@@ -2,19 +2,19 @@
 title: Reportable fields reference
 titleSuffix: TFS
 description: Default set of fields that appear in the relational warehouse database or the cube 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 02/01/2019 
 ---
 
 
 # Reportable fields reference 
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
 > This topic applies to project customization for On-premises XML process models. For you to view SQL Server reports, you must have configured your Azure DevOps Server or Team Foundation Server (TFS) and project to support reporting. See [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md). 

@@ -4,18 +4,16 @@ titleSuffix: Azure DevOps
 description: Guidance for working with velocity charts generated for an Azure DevOps team or project 
 ms.custom: dashboards
 ms.technology: devops-analytics  
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/17/2019
+ms.date: 07/14/2020
 ---
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
 - Sprint planning  
@@ -29,21 +27,23 @@ Velocity metrics provide useful information to support the following team and pr
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:  
-- Planned velocity 
-- Actual (completed) velocity 
-- Work completed later than planned
-- Amount of work not completed   
+- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+	> [!TIP]   
+	> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+- **Completed** - calculated based on the amount of work  assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+- **Completed Late**  - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.  
+- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed. 
 
 #### [In-context Velocity chart](#tab/in-context)
 
-![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](_img/velocity/analytics-velocity-azure-devops.png)
+![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](media/velocity/analytics-velocity-azure-devops.png)
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, eight iterations](_img/commerce-team-velocity-eight-iterations.png) 
+![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
 
 ---
 
@@ -70,11 +70,11 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 
 #### [In-context Velocity chart](#tab/in-context)
 
-![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)
+![Web portal, Velocity chart showing seven sprints of in progress and completed work](media/team-velocity-chart-web-7-iterations.png)
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, eight iterations](_img/commerce-team-velocity-eight-iterations.png) 
+![Example Velocity widget, eight iterations](media/commerce-team-velocity-eight-iterations.png) 
 
 ---
 
@@ -91,14 +91,14 @@ Both of these charts support visualizing team velocity for several sprints. The 
 
 The in-context Velocity charts are based on the sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) assigned to backlog items. These charts are similar to the one shown in the following image. 
 
-![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
+![Web portal, Velocity chart showing seven sprints of in progress and completed work](media/team-velocity-chart-web-7-iterations.png)  
 
 To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/velocity-activities.md)] 
+[!INCLUDE [temp](../includes/velocity-activities.md)] 
 
 <a id="minimize-variability" >    </a>
 
@@ -122,7 +122,7 @@ While the velocity chart provides a measure of Effort, Story Points, or Size tha
 
 For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../boards/queries/query-numeric.md).
 
-![Velocity count of backlog items and bugs](_img/ALM_VF_VelocityCountItems.png) 
+![Velocity count of backlog items and bugs](media/ALM_VF_VelocityCountItems.png) 
 
 ::: moniker-end
 

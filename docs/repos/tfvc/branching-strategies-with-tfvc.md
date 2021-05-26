@@ -3,21 +3,28 @@ title: Version Control - Branching strategies with TFVC
 titleSuffix: Azure Repos
 description: Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
-ms.prod: devops
 ms.technology: devops-code-tfvc 
-ms.manager: mijacobs
 ms.date: 04/25/2018
-ms.author: sdanie
 author: wpschaub
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ---
 
 
-# Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+# Select an effective branching strategy
 
-Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+
+
+Creating branches for your Team Foundation Version Control (TFVC) repositories are useful to isolate risk. Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
+
+-   The group has a few (or maybe several) different feature teams, each working on a set of functionality that is reasonably discrete. But each team also depends on functionality built by other teams. You need to isolate the risk of the changes introduced by the work done in each of these teams, and yet eventually, you need to merge all their efforts together into one product.
+
+-   The test team needs a stable version of the code to test, and yet simultaneously, the developers need to continue moving forward with new features that will occasionally destabilize the product.
+
+-   The software has two previous versions and one current version in progress. Even though most of the development effort is invested in the current version, the previous versions must still be supported with occasional releases of service packs, critical fixes and security patches, and other changes.
+
+This article explores a few common branching strategies to help you make the right decision.
 
 Unlike Git branches, which are repository scoped, TFVC branches are path scoped and not as lightweight. Set your bar for creating branches high and only branch when you have a need for code or release isolation.
 
@@ -25,16 +32,17 @@ Unlike Git branches, which are repository scoped, TFVC branches are path scoped 
 
 The **Main Only** strategy can be folder-based or with the **main** folder [converted to a Branch](branch-folders-files.md), to enable additional visibility features. You commit your changes to the main branch and optionally indicate development and release milestones with labels.
 
-![Main Only branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-main-only.png)
+![Main Only branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-main-only.png)
 
 > RISK: The mutability and lack of history with TFVC labels can add risk of change control.
 
 Start with the main only branching strategy, [branch strategically](branch-strategically.md) and adopt other strategies to evolve into more complex strategies as needed.
 
 ## Development isolation
+
 When you need to maintain and protect a stable **main** branch, you can branch one or more **dev** branches from **main**. It enables isolation and concurrent development. Work can be isolated in development branches by feature, organization, or temporary collaboration.
 
-![Developer Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-developer-isolation.png)
+![Developer Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-developer-isolation.png)
 
 It's possible that there are changes in the **main** branch. Always forward integrate (FI) **main** to the **dev** branch and resolve merge conflicts. Then reverse integrate (RI) changes back to **main**. Maintain the same quality bar across branches. Build and run build verification tests (BVTs) on **dev** the same way you are doing on **main**.
 
@@ -44,7 +52,7 @@ It's possible that there are changes in the **main** branch. Always forward inte
 
 Feature isolation is a special derivation of the development isolation, allowing you to branch one or more **feature** branches from **main**, as shown, or from your **dev** branches. 
 
-![Feature Isolation branching strategy](./_img/branching-strategies-with-tfvc/Branching-Scenarios-Feature-Isolation.png)
+![Feature Isolation branching strategy](./media/branching-strategies-with-tfvc/Branching-Scenarios-Feature-Isolation.png)
 
 When you need to work on a particular feature, it might be a good idea to create a feature branch.
 
@@ -54,7 +62,7 @@ Keep the lifetime of feature work and the associated feature branch short-lived.
 
 Release isolation introduces one or more **release** branches from **main**. The strategy allows concurrent release management, multiple and parallel releases, and codebase snapshots at release time.
 
-![Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-release-isolation.png)
+![Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-release-isolation.png)
 
 When the release is ready to be locked down, it's time to create a new branch for the release.
 
@@ -62,11 +70,11 @@ Never forward integrate (FI) from **main**. Lock release branches using access p
 
 > NOTE: None of the branching scenarios are immutable, which is why you notice emergency hotfixes performed on release branches. Evolve each strategy to match your requirements, without losing sight of complexity and associated cost.
 
-## Servicing and Release isolation
+## Servicing and release isolation
 
 Servicing and Release Isolation strategy introduces **servicing** branches. This strategy allows concurrent service management of service packs, and codebase snapshots at release time.
 
-![Service Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-service-release-isolation.png)
+![Service Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-service-release-isolation.png)
 
 Use this strategy if you need a servicing model for customers to upgrade to the next major release and additional service packs per release.
 
@@ -74,13 +82,13 @@ Like the release isolation, the **servicing** isolation and **release** branches
 
 Create new servicing and release branches for subsequent releases if you require that level of isolation.
 
-## Servicing, Hotfix, Release isolation
+## Servicing, hotfix, release isolation
 
 Although not recommended, you can continue to evolve the strategies, by introducing additional **hotfix** branches and associated release scenarios.
 
-![Service HotFix Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-service-hotfix-release-isolation.png)
+![Service HotFix Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-service-hotfix-release-isolation.png)
 
-At this point, you have successfully explored a few of the common TFVC branching scenarios. You can evolve them, or investigate other strategies such as [feature toggling](https://msdn.microsoft.com/magazine/dn683796.aspx), toggling features on and off to determine whether a feature is available at run time.
+At this point, you have successfully explored a few of the common TFVC branching scenarios. You can evolve them, or investigate other strategies such as [feature toggling](/archive/msdn-magazine/2014/may/alm-rangers-software-development-with-feature-toggles), toggling features on and off to determine whether a feature is available at run time.
 
 ## Q&A
 
@@ -90,7 +98,7 @@ By keeping branches short-lived,  merge conflicts are kept to as few as possible
 
 ### Why only branch if necessary?
 
-To embrace [DevOps](https://aka.ms/devops), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
+To embrace [DevOps](/devops/), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
 
 ### Why remove branches?
 
@@ -102,7 +110,7 @@ Yes. It is not recommended, unless teams must share source and cannot share a co
 
 ### What about the code promotion strategy?
 
-The Code Promotion strategy feels like a relic from the waterfall development era. It is typically with long testing cycles, and separate development and testing teams. The strategy is no longer recommended. For more information on this strategy, see the [branching guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/). 
+The Code Promotion strategy feels like a relic from the waterfall development era. It is typically with long testing cycles, and separate development and testing teams. The strategy is no longer recommended. For more information on this strategy, see the [branching guidance](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions). 
 
 ### When merging **dev** to **main** branch, why are no changes detected?
 

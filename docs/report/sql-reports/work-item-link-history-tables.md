@@ -1,12 +1,10 @@
 ---
 title: Work Item Link History tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,13 +12,13 @@ ms.date: 10/17/2017
 
 
 # Work Item Link History tables
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for links between bugs, tasks, and other types of work items by using FactWorkItemLinkHistory and the associated dimension tables. To include details about the linked work items, you join SourceWorkItemID and TargetWorkItemID to Dim.System_ID.  
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Links between Work Items](_img/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
+ ![Fact Table for Links between Work Items](media/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
   
  FactWorkItemLinkHistory is associated with the following dimension tables:  
   
@@ -43,7 +41,7 @@ You can query for links between bugs, tasks, and other types of work items by us
   
 - total story points for each user story in a team project under a specified area path  
   
-  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=178080).  
+  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql).  
   
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  

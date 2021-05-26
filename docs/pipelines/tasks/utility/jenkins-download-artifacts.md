@@ -2,10 +2,7 @@
 title: Jenkins Download Artifacts task
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,13 +12,13 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Download Artifacts task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
+Use this task to download artifacts produced by a Jenkins job.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +26,7 @@ Use this task in a build or release pipeline to download artifacts produced by a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/JenkinsDownloadArtifactsV1.md)]
+[!INCLUDE [temp](../includes/yaml/JenkinsDownloadArtifactsV1.md)]
 
 ::: moniker-end
 
@@ -42,7 +39,7 @@ Use this task in a build or release pipeline to download artifacts produced by a
 <tr><td>Save to</td><td>(Required) Jenkins artifacts will be downloaded and saved to this directory.  This directory will be created if it does not exist.</td></tr>
 <tr><td>Download artifacts produced by</td><td>(Required) Download artifacts produced by the last successful build, or from a specific build instance.</td></tr>
 <tr><td>Jenkins build number</td><td>(Required) Download artifacts produced by this build.</td></tr>
-<tr><td>Item Pattern</td><td>(Optional) Specify files to be downloaded as multi line minimatch pattern. <a href="https://aka.ms/minimatchexamples" data-raw-source="[More Information](https://aka.ms/minimatchexamples)">More Information</a> <p>The default pattern (<strong>) will download all files across all artifacts produced by the Jenkins job. To download all files within artifact drop use drop/</strong>.</p></td></tr>
+<tr><td>Item Pattern</td><td>(Optional) Specify files to be downloaded as multi line minimatch pattern. <a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[More Information](../file-matching-patterns.md)">More Information</a> <p>The default pattern (<strong>) will download all files across all artifacts produced by the Jenkins job. To download all files within artifact drop use drop/</strong>.</p></td></tr>
 <tr><td>Download Commits and WorkItems</td><td>(Optional) Enables downloading the commits and workitem details associated with the Jenkins Job</td></tr>
 <tr><td>Download commits and workitems from</td><td>(Optional) Optional start build number for downloading commits and work items. If provided, all commits and work items between start build number and build number given as input to download artifacts will be downloaded.</td></tr>
 <tr><td>Commit and WorkItem FileName</td><td>(Optional) Optional file name suffix for commits and workitem attachment. Attachment will be created with commits_{suffix}.json and workitem_{suffix}.json. If this input is not provided attachments will be create with the name commits.json and workitems.json</td></tr>

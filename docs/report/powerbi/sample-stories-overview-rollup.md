@@ -1,35 +1,33 @@
 ---
 title: Requirements tracking, Stories overview rollup report 
 titleSuffix: Azure DevOps
-description: Power BI query to generate a report that tracks work progress and status of tests and bugs
-ms.prod: devops
+description: Use sample Power BI and OData queries to generate a one level roll-up report of aggregated metrics for work progress and status of tests and bugs.
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '> azure-devops-2019'
-ms.date: 12/16/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 06/22/2020
 ---
 
 # Requirements tracking rollup sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
+> ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
 
-[!INCLUDE [stories-overview-info](_shared/sample-stories-overview-info.md)]
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 
-[!INCLUDE [stories-overview-prereqs](_shared/sample-stories-overview-prereqs.md)]
+[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]
 
 
 ## Sample queries
@@ -45,7 +43,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -78,7 +76,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
@@ -110,7 +108,7 @@ $filter=(
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -141,7 +139,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
@@ -169,6 +167,13 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 
 ***
 
+  
+
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
+
+
+
+
 ### Query for status of bugs linked to the requirements
 
 > [!NOTE]   
@@ -176,7 +181,7 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -206,7 +211,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -230,7 +235,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](_shared/sample-stories-overview-sub-breakdown.md)]
+[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
 
 
 ## Power BI transforms
@@ -252,13 +257,13 @@ To create the report, perform the following steps:
 1. Add the columns you are interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
+    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
 
 Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
+> ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

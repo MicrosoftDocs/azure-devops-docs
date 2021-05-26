@@ -3,11 +3,7 @@ title: Associate a file type with a file-comparison tool
 titleSuffix: Azure Repos
 description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Associate a file type with a file-comparison tool
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can compare text files by using the default file-comparison tool integrated with Visual Studio, the [Diff window](compare-files.md). However, you can, for file types that you specify, enable the file-comparison tool that you prefer to use. You can use any comparison tool that supports, as command-line arguments, the full paths of the two files that you want to compare.
 
@@ -29,7 +25,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     1.  In Visual Studio, on the menu bar, choose **Tools**, **Options**.  
     2.  In the **Options** dialog box, expand **Source Control**, choose **Visual Studio Team Foundation Server**, and then choose **Configure User Tools**.  
     --or--  
-    1.  In Windows, choose **Start**, **All Programs**, **Microsoft Visual Studio 2012**, **Visual Studio Tools**, **Developer Command Prompt **.  
+    1.  In Windows, choose **Start**, **All Programs**, **Microsoft Visual Studio 2012**, **Visual Studio Tools**, **Developer Command Prompt**.  
     2.  Type **tf diff /configure**.  
 2.  In the **Configure User Tools** dialog box, choose **Add**.
 
@@ -55,7 +51,7 @@ To perform this procedure, you must be a member of the **Administrators** or **U
     -   **%7**: Label ("friendly name") of the target file.
 
     > [!TIP]
-    > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](https://go.microsoft.com/fwlink/?LinkID=200171).
+    > For information about frequently used external tools and the arguments that they require, see the following page on the Microsoft website: [diff/merge configuration in Team Foundation - common Command and Argument values](https://devblogs.microsoft.com/buckh/configuring-different-diffmerge-tools-for-team-foundation-version-control/).
 
     **Use white space to delimit the arguments.**  
     For example, you might specify the following syntax to compare two files:

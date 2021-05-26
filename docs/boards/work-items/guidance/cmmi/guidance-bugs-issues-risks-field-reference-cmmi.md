@@ -1,21 +1,18 @@
 ---
 title: Bugs, issues, & risks field reference (CMMI)
 titleSuffix: Azure Boards
-description: Tracks the information with regards to bugs, issues, and risks - Team Foundation Server  
-ms.prod: devops
+description: Tracks the information with regards to bugs, issues, and risks  
 ms.technology: devops-agile
 ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Bugs, issues, and risks field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
   

@@ -4,20 +4,18 @@ titleSuffix: Azure Boards
 description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -41,30 +39,30 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 > [!NOTE]  
 > A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Product and portfolio Kanban boards 
 
-Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
-![Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
+![Kanban board, Agile template](../work-items/media/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-![Kanban board, Agile template](_img/kanban-basics-intro.png)     
+![Kanban board, Agile template](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
-> ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
+> ![TFS 2015, Kanban board, Agile template](media/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 
 ## Configure and customize your Kanban board
@@ -122,7 +120,7 @@ In addition to these team configurations, you can [customize a project](#customi
 
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 ::: moniker-end
 
@@ -134,10 +132,10 @@ Once you've configured your Kanban board, you can add work items directly to the
 
 The Cumulative Flow Diagram (CFD) is an in-context report available for both product and portfolio backlog levels. Use this chart to monitor key metrics to fine tune your processes. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Open CFD Analytics](../../report/dashboards/_img/cfd/analytics-cfd-azure-devops.png)
+> ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
 The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
 
@@ -145,7 +143,7 @@ The Average work in progress value excludes completed work items. Use the intera
 
 ::: moniker range="<= azure-devops-2019"
 
-<img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
@@ -161,7 +159,7 @@ To learn more, see the following articles:
 
 ## Display of leaf node work items  
 
-[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
+[!INCLUDE [temp](../includes/display-leaf-nodes.md)]
 
 <a id="limits-multi-team" />
 
@@ -170,7 +168,7 @@ To learn more, see the following articles:
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
 Only when the work item state changes does the card column reflect the same on all boards.
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 
 ## Permissions and access
@@ -186,17 +184,20 @@ To add users to a project, see [Add users to a project or team](../../organizati
 
 ## Customize your project and boards 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see <a href="../../organizations/settings/work/customize-process-backlogs-boards.md" data-raw-source="[Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)">Customize your backlogs or boards for a process</a>. 
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
 ::: moniker-end
  
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops-2019" 
+
 If you need more than three board levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 
 You can also add or modify the fields defined for a work item type (WIT), add a custom WIT, or modify the workflow.  To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+
 ::: moniker-end
 
 
@@ -214,8 +215,8 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [What is Agile?](/devops/plan/what-is-agile)   
+- [What is Agile development?](/devops/plan/what-is-agile-development)  
  
 
 

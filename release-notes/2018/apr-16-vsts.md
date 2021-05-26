@@ -2,7 +2,6 @@
 title: Deployment for Azure Database for MySQL, Kubernetes with Helm, and Ruby on Rails – VSTS Sprint 133 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 4/16/2018
 description: In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue to expand on the languages and platforms we support for build and release.
@@ -64,12 +63,12 @@ In this Update, your searches that include special (non-alphanumeric) characters
 Phrases are also recognized better. For example, previously a search for `new List<string>()` would have returned this partial match, without the `>()` ending.
 
 > [!div class="mx-imgBorder"]
-> ![result missing full search term](_img/133_01.png)
+> ![result missing full search term](media/133_01.png)
 
 However, with this Update, the full phrase is returned and highlighted.
 
 > [!div class="mx-imgBorder"]
-> ![result including full search term](_img/133_02.png)
+> ![result including full search term](media/133_02.png)
 
 ## Work
 
@@ -80,7 +79,7 @@ However, with this Update, the full phrase is returned and highlighted.
 In the settings for a Team, you can associate one or more Area Paths, which helps you focus **Backlogs**, **Boards**, **Plans**, even **Dashboards** to just the work for that Team. If you wanted to write a query for a Team though, you had to list out the specific Area Paths for that team in the query clauses. Now, a new <strong>@TeamAreas</strong> macro is available for you to easily reference the Area Paths owned for the specified Team. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![team areas macro in query editor](_img/133_06.png)
+> ![team areas macro in query editor](media/133_06.png)
 
 ## Build and Release
 
@@ -98,10 +97,10 @@ trigger:
 
 If you want to disable the trigger or override the trigger settings in the YAML files you can do so on the definition.
 
-See the [YAML build triggers](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-triggers.md) documentation for more information.
+See the [YAML build triggers](/azure/devops/pipelines/yaml-schema?view=azure-devops&preserve-view=true&tabs=schema%2Cparameter-schema) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![ci triggers from yaml](_img/133_04.png)
+> ![ci triggers from yaml](media/133_04.png)
 
 ### Continuously deploy to Azure Database for MySQL
 
@@ -111,10 +110,10 @@ You can now continuously deploy to [Azure Database for MySQL](https://azure.micr
 
 [Helm](https://github.com/kubernetes/helm/) is a tool that streamlines installing and managing Kubernetes applications. It has also gained a lot of popularity and community support in the last year. A Helm task in **Release** is now available for packaging and deploying Helm charts to [Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) or any other Kubernetes cluster.
 
-VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes?view=azure-devops) documentation for more information.
+VSTS already has support for Kubernetes and Docker containers. With the addition of this Helm task, now you can set up a Helm based CI/CD pipeline for delivering containers into a Kubernetes cluster. See the [Deploy using Kubernetes to Azure Container Service](/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes?view=azure-devops&preserve-view=true) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![helm tasks](_img/133_09.png)
+> ![helm tasks](media/133_09.png)
 
 ### Deploy Ruby on Rails applications
 
@@ -129,14 +128,14 @@ Azure DevOps Projects makes it easy to get started on Azure. It helps you launch
 Continuous deployment triggers create a release on build completion. However, sometimes builds are post-processed and the build should only be released after that processing completes. Now you can leverage build tags, which would be assigned during post-processing, in the trigger filters of the release.
 
 > [!div class="mx-imgBorder"]
-> ![build tag trigger](_img/133_08.png)
+> ![build tag trigger](media/133_08.png)
 
 ### Filter branches for GitHub Enterprise or external Git artifacts
 
 When releasing from GitHub Enterprise or external Git repos, now you can configure the specific branches that will be released. For example, you may want to deploy only builds coming from a specific branch to production.
 
 > [!div class="mx-imgBorder"]
-> ![branch filters](_img/133_07.png)
+> ![branch filters](media/133_07.png)
 
 ## Package
 
@@ -150,16 +149,16 @@ This feature was prioritized based on a suggestion.
 
 ### Use upstream NuGet packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#benefits-of-upstream-sources) documentation for more information.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops&preserve-view=true#benefits-of-upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![NuGet upstreams](_img/133_05.png)
+> ![NuGet upstreams](media/133_05.png)
 
 ### Enable nuget.org upstream sources in more feeds
 
-Previously, only feeds created after the [Sprint 130 Update](/azure/devops/release-notes/2018/feb-14-vsts#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
+Previously, only feeds created after the [Sprint 130 Update](./feb-14-vsts.md#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
 
-Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#saving-packages-from-upstream-sources-continuity) documentation for more information.
+Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops&preserve-view=true#saving-packages-from-upstream-sources-continuity) documentation for more information.
 
 ## Wiki
 
@@ -168,7 +167,7 @@ Upstream sources to public package feeds like nuget.org and npmjs.com keep a sav
 When you want to create a link to another wiki page, you can just type the standard markdown syntax for adding links `[link name](/` and you will get an enlistment of all pages in the current wiki. Earlier you were able to click and drag a wiki page to the markdown editor to create links, but this makes creating links in pages even simpler.
 
 > [!div class="mx-imgBorder"]
-> ![autosuggestion wiki page link](_img/132_07.png)
+> ![autosuggestion wiki page link](media/132_07.png)
 
 This feature was prioritized based on a suggestion.
 
@@ -177,7 +176,7 @@ This feature was prioritized based on a suggestion.
 Publishing markdown files from a Git repository as a Wiki, which we [released last Update](/azure/devops/release-notes/2018/apr-03-vsts#publish-markdown-files-from-a-git-repository-as-a-wiki), will mean you’ll start seeing multiple wikis in the same project. When searching, it may be difficult to wade through similar documents and find what you’re looking for. Now, when you search for your wiki page you will be able to scope down your results by applying the **Wiki** name filter on the search results pages to help you find your content faster.
 
 > [!div class="mx-imgBorder"]
-> ![wiki names in search](_img/133_03.png)
+> ![wiki names in search](media/133_03.png)
 
 ## Administration
 
@@ -196,7 +195,7 @@ Now you’ll be able to move your VSTS account between Azure subscriptions or re
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-> ![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/media/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

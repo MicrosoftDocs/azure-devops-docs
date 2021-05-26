@@ -3,24 +3,23 @@ title: ProcessConfiguration syntax
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '< azure-devops'
 ms.date: 12/15/2017  
 ---
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
-<img src="_img/process-config-xml-element-groups.png" alt="Process configuration XML elements" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process-config-xml-element-groups.png" alt="Process configuration XML elements" style="border: 1px solid #C3C3C3;" /> 
 
 For a summary of what you can configure through the user interface, see [Customize work tracking, Add teams and configure their Scrum and Kanban tools](../customize-work.md).
 
@@ -49,9 +48,9 @@ Areas that you can customize through ProcessConfiguration:
 
 To update the process configuration for a project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../../organizations/settings/work/import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](../witadmin/witadmin-import-export-process-configuration.md).
 
-[![Export ProcessConfig definition file](_img/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](_img/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](_img/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](_img/export-process-step-4.png)  
+[![Export ProcessConfig definition file](media/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](media/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](media/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](media/export-process-step-4.png)  
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]  
+[!INCLUDE [temp](../../includes/process-editor.md)]  
 
 <a id="backlog_page">  </a>
 
@@ -155,17 +154,11 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
-
-::: moniker range="azure-devops"
-- Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
-  ::: moniker-end
-  ::: moniker range=">= tfs-2013 <= azure-devops-2019"
-- By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
-  ::: moniker-end
+- By default, each backlog is restricted to a total of 1000 work items. You can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 - The values assigned to *CategoryName* must correspond to a category group defined for the project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
 - You use [portfolio backlogs](../../boards/backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
 - Your [product backlog](../../boards/backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
-- Your [sprint or iteration backlogs](https://msdn.microsoft.com/library/ee191595) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
+- Your [sprint or iteration backlogs](../../boards/sprints/assign-work-sprint.md) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
 
 <a id="map">  </a>
 
@@ -250,7 +243,7 @@ You can only assign the <strong>Resolved</strong> state category to a workflow s
 
 Specify which fields you want displayed on each backlog within the **Columns** section. Changes you make through the **Column Options** dialog persist until you change them again.
 
-![Default columns and sequence for backlog page](_img/process-configuration-xml-element-reference/IC660915.png)  
+![Default columns and sequence for backlog page](media/process-configuration-xml-element-reference/IC660915.png)  
 
 Here's the default configuration defined by the Scrum process template for the product backlog.
 
@@ -300,7 +293,7 @@ The column headings that appear on the task board correspond to the workflow sta
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.
 
-![Backlog panel with Business Value field added](_img/process-configuration-xml-element-reference/IC660916.png)  
+![Backlog panel with Business Value field added](media/process-configuration-xml-element-reference/IC660916.png)  
 
 The panel only displays fields that are included in the **FIELDS** section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, because Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category as described  in [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).
 
@@ -461,7 +454,7 @@ The following table describes the additional elements used to define the state c
 </table>
 
 > [!NOTE]    
-><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](../new-features-added.md#test-management).  
+><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](/previous-versions/azure/devops/reference/upgrade/new-features-added#test-management).  
 
 
 <a id="fields">  </a>
@@ -529,7 +522,7 @@ You can move items by dragging them up or down the list on a backlog or board. A
 <p><code>format=&quot;{0} hours&quot;</code></p>
 <p><code>format=&quot;hours {0}&quot;</code></p>
 <p><code>format=&quot;time {0}&quot;</code></p></li>
-<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="../use-team-fields-instead-area-paths.md" data-raw-source="[Use team fields instead of area paths to support teams](../use-team-fields-instead-area-paths.md)">Use team fields instead of area paths to support teams</a>.</p></li>
+<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths" data-raw-source="[Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths)">Use team fields instead of area paths to support teams</a>.</p></li>
 </ul>
 <p><strong>For the feedback request form:</strong></p>
 <blockquote><strong>NOTE:</strong><br/>
@@ -571,7 +564,7 @@ You should not have to change the default assignments made for the following <st
 
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../boards/sprints//sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
+Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../report/dashboards/configure-sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -615,7 +608,7 @@ You must specify the day of a week in English, regardless of the installed langu
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
 
-<img src="../_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
@@ -768,7 +761,7 @@ The color you associate with your work item states will appear across the produc
 
 Here we show how it appears in the work item form:  
 
-<img src="_img/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
 
 > [!NOTE]    
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
@@ -790,7 +783,7 @@ Here we show how it appears in the work item form:
 
 The supported set of icons you can specify for a work item type are shown below. 
 
-![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
+![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
 
 > [!NOTE]    
 > Icons noted with an asterisk are supported on Azure DevOps Services and TFS 2017.3 and later versions.
@@ -800,11 +793,11 @@ The system applies the color defined for the work item type to the icon. Colors 
 
 For example, here you see a list view&hellip; 
 
-<img src="_img/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" style="border: 1px solid #C3C3C3;" /> 
 
 and, here the icon is shown within the work item form.
 
-<img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Related articles

@@ -2,7 +2,6 @@
 title:  New Azure Boards and Azure Repos app for Microsoft Teams - Sprint 159 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/14/2019
 description: In the **Sprint 159 Update** of Azure DevOps, we are excited to announce the new Microsoft Teams app for Azure Boards and Azure Repos.
@@ -22,35 +21,35 @@ Check out the [Features](#features) list below for more.
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-159-update-links](_shared/boards/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/boards/sprint-159-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-159-update-links](_shared/repos/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/repos/sprint-159-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-159-update-links](_shared/pipelines/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/pipelines/sprint-159-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-159-update-links](_shared/wiki/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/wiki/sprint-159-update-links.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-159-update](_shared/boards/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/boards/sprint-159-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-159-update](_shared/repos/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/repos/sprint-159-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-159-update](_shared/pipelines/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/pipelines/sprint-159-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-159-update](_shared/wiki/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/wiki/sprint-159-update.md)]
 
 ## Next steps
 
@@ -62,15 +61,15 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/make-a-suggestion.png)
+> ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
 Thanks,
 
-[!INCLUDE [sprint-159](_shared/signer/sprint-159.md)]
+[!INCLUDE [sprint-159](includes/signer/sprint-159.md)]

@@ -2,20 +2,19 @@
 title: Import, export, and manage work item types
 titleSuffix: TFS  
 description: Manage work item types for a project in Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 97d7ea1c-df1f-4999-adc9-b38dd2a6cca6
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
 # Import, export, and manage work item types
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
@@ -25,9 +24,9 @@ You can manage work item types for a project by using the following **witadmin**
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
  
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  
@@ -39,7 +38,7 @@ For the project where the work item types are defined, you must have the followi
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
   
@@ -59,7 +58,7 @@ witadmin renamewitd /collection:CollectionURL /p:Project /n:TypeName /new:NewNam
 |**/collection**:`CollectionURL`|Specifies the URI of the project collection. The format for the URI is the following: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following:<br /><br />**http**://*ServerName:Port/CollectionName*|  
 |**/p:** *Project*|The project for which the types of work items are to be managed. This project must be defined in the project collection specified by the **/collection** parameter.<br /><br /> The **/p** parameter is required unless you run the **importwitd** command with the **/v** option.|  
 |**/n:** `TypeName`|The name of the work item type to destroy, export, import, or rename.|  
-|**/f:** `FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information about registry virtualization, see the Microsoft Web site: [Registry Virtualization](https://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](https://go.microsoft.com/fwlink/?LinkId=92323).|  
+|**/f:** `FileName`|The path and file name of the XML definition file that contains the types of work items to be exported or imported. If you omit this parameter when you use the **exportwitd** command, the XML appears in the Command Prompt window.<br /><br /> **Note:**  If you are using Windows Vista you might not have permissions to certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the [Registry Virtualization](/windows/win32/sysinfo/registry-virtualization) page on the Microsoft web site.|  
 |**/e:** *Encoding*|The name of a .NET Framework 2.0 encoding format. The command uses the specified encoding to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** tries to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/exportgloballists**|Exports the definitions of global lists referenced by the work item type. The definitions for global lists will be embedded into the work item type definition XML. When not specified, the definitions for global lists are omitted.|  
 |**/v**|Validates the XML that defines the work item type, but does not import the XML definition file. **Note:**  You can validate the type definition without specifying a project. References to project-scoped groups is ignored.|  
@@ -135,7 +134,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
@@ -145,7 +144,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 
 **A:** In the web portal, work items appear in query results and on the backlog and board pages of the Agile planning tools. To change the color associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../xml/process-configuration-xml-element.md).  
   
- ![Color assignments to different work item types](_img/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
+ ![Color assignments to different work item types](media/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
   
 ### Q: How do I deactivate or disable a WIT? How do I restrict users from creating work items of a certain type?  
 **A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  
@@ -193,4 +192,4 @@ When you delete a WIT that belongs to a category, you must update the categories
 For more information, see [Import and export categories](witadmin-import-export-categories.md).  
   
 ## Related articles  
--  [Customize your work tracking experience](../customize-work.md)   
+-  [Customize your work tracking experience](../customize-work.md)
