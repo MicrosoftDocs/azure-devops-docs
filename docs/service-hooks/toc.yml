@@ -1,29 +1,41 @@
-- name: Integrate with service hooks
+- name: About service hooks
   href: overview.md
-- name: Quickstarts
+  displayName: integrate, project, tasks, events, publisher, subscription, endpoint, notification
+- name: Create a service hook
   items:
-  - name: Create a service hook with Grafana
-    href: services/grafana.md
-  - name: Create a service hook with Slack
-    href: services/slack.md
-  - name: Create a service hook with Jenkins
-    href: services/jenkins.md
-  - name: Create a service hook with Trello
-    href: services/trello.md
-  - name: Create a service hook with Datadog
-    href: services/datadog.md
-  - name: Create a service hook with Microsoft Teams
-    href: services/teams.md
-- name: How-to Guides
-  items:
-  - name: Create a service hook with WebHooks
-    href: services/webhooks.md
-  - name: Integrate with workplace messaging apps
+  - name: Workplace messaging apps
     href: services/workplace-messaging-apps.md
-  - name: Authorize other services
-    href: authorize.md
-- name: Reference
-  items:
-  - name: Troubleshoot and FAQs
-    href: troubleshoot.md
-
+    displayName: integrate, integration, notification, events, deployment, teams, Slack
+  - name: Grafana
+    href: services/grafana.md
+    displayName: open, source, dashboard, subscription, release, pipelines
+  - name: Slack
+    href: services/slack.md
+    displayName: messages, events, changes, boards, pipelines, repos, app, subscription, webhook
+  - name: Jenkins
+    href: services/jenkins.md
+    displayName: integration, build, subscription, trigger, event
+  - name: Trello
+    href: services/trello.md
+    displayName: cards, lists, events, subscription, project
+  - name: Datadog
+    href: services/datadog.md
+    displayName: integrate, configure, events, metrics, dashboards, monitor, troubleshoot, subscription
+  - name: Microsoft Teams
+    href: services/teams.md
+    displayName: integrate, boards, pipelines, repos, connector, configure, project, activity
+- name: Web Hooks
+  href: services/webhooks.md
+  displayName: JSON, subscription, configure, event, endpoint
+- name: Authorize other services
+  href: authorize.md
+  displayName: oauth, secure, resources, access, credentials, account, approve
+- name: Service hook consumers
+  href: consumers.md
+  displayName: subscription, event, consumer, action, storage, webhooks, bus, campfire, flowdock, hipchat, jenkins, kato, trello, zendesk
+- name: Service hook events
+  href: events.md
+  displayName: build, release, deployment, created, updated, deleted, restored, commented, changed, approval
+- name: Troubleshoot and FAQs
+  href: troubleshoot.md
+  displayName: issue, activity, debug, subscription, terminal, transient, failure

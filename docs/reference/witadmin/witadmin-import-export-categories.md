@@ -2,21 +2,20 @@
 title: Import and export categories
 titleSuffix: TFS  
 description: Import and export categories defined for a project in Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
 
 # Import and export categories
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]  
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]  
 
 You can import and export categories defined for a project by using the following **witadmin** commands:   
 -   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server.   
@@ -24,9 +23,9 @@ You can import and export categories defined for a project by using the followin
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]    
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
   
 ## Prerequisites   
   

@@ -2,10 +2,9 @@
 title: FIELD (Workflow) element reference 
 titleSuffix: TFS
 description: Syntax and usage of the FIELD element used to specify rules and conditions on fields within the workflow of a work item type 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/10/2017
@@ -13,9 +12,9 @@ ms.date: 02/10/2017
 
 # FIELD (Workflow) element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
-You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](https://msdn.microsoft.com/vstudio/ms404857(v=vs.98).aspx)  
+You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](./apply-rule-work-item-field.md?viewFallbackFrom=vsts)  
   
 > [!NOTE]  
 > For information about the **FIELD** (Definition) element, which you use to define fields for a type of work item, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
@@ -95,4 +94,3 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 ## Related articles   
 - [Change the workflow](change-workflow-wit.md)  
 - [Customize your work tracking experience](../customize-work.md)  
-  

@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 21
 description: VSTS release notes for October 21 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 79a305c6-4033-453a-89e8-f957f0f19ad1
@@ -16,9 +15,9 @@ author: yukom
 
 Our account and project pages received a long overdue face lift today. We’ve known for some time that these pages needed some attention and I’m happy to announce that the new bits rolled out to the service this morning. You’ll notice that the new design is more visually appealing and makes better use of screen real estate on wider resolutions. We also took the time to incorporate our news feed directly into your account home page so you stay up to date on the latest updates being made to the service.
 
-![New account home page](_img/10_21_01.png)
+![New account home page](media/10_21_01.png)
 
-![New project home page](_img/10_21_02.png)
+![New project home page](media/10_21_02.png)
 
 ## Remembering your last team room
 

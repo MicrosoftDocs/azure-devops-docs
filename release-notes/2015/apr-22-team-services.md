@@ -1,7 +1,6 @@
 ---
 title: Application Insights – Synthetic Data Filtering, New Usage Experience for ASP.NET, and Daily Active User Calculations – Apr 22
 description: VSTS release notes for April 22 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 40e151ba-193b-4f02-9b66-60d8788b70db
@@ -18,7 +17,7 @@ Search robots or web tests that monitor availability generate some of the traffi
 
 Beginning from this release Application Insights differentiates telemetry collected from real end-users from telemetry originated by various synthetic sources. By using filtering and grouping in Diagnostic Search and Metrics Explorer, you can now choose to see data only from real end-users, only from synthetic traffic, or both:
 
-![Filtering for real user traffic](_img/4_22_01.png)
+![Filtering for real user traffic](media/4_22_01.png)
 
 You’ll now see these labels:
 
@@ -26,7 +25,7 @@ You’ll now see these labels:
 - In Usage analytics: ‘(Excluding synthetic traffic)’
 - In drill-in experiences, the filter is turned on by default:
 
-![Filtering for real traffic turned on by default in drill-in experiences](_img/4_22_02.png)
+![Filtering for real traffic turned on by default in drill-in experiences](media/4_22_02.png)
 
 ## New Usage experience for ASP.NET, Java and other applications
 
@@ -38,11 +37,11 @@ Usage content and drill-in experiences are designed to support two main scenario
 
     The four controls under Usage analytics show counts over 24 hours, and the trend in comparison to the previous 24 hours. Clicking these controls provides more detail:
 
-    ![Daily activity review: usage analytics control panel](_img/4_22_03.png)
+    ![Daily activity review: usage analytics control panel](media/4_22_03.png)
 
 2. Deeper analysis of activity and trends over a longer time period (7 days default). From the Overview blade, click Usage:
 
-    ![Accessing usage analytics for longer time periods](_img/4_22_04.png)
+    ![Accessing usage analytics for longer time periods](media/4_22_04.png)
 
   This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 

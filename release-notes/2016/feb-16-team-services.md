@@ -1,7 +1,6 @@
 ---
 title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Support and more – Feb 16
 description: VSTS release notes for February 16 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 8356f67c-3c1a-4094-a8af-e1c63b3b39aa
@@ -26,13 +25,13 @@ Search has been a highly requested feature for Visual Studio Marketplace. With t
 
 You can now add charts for work item queries to the dashboard from the widget catalog. These charts are configurable. You can choose a query, a chart type, and visualization options while staying in the dashboard context. Chart types include pie, bar, column, stacked bar, line, area, and stacked area. You can also display data in a pivot table. And, you can still add charts from the Charts tab in the Work hub and configure them just like you've always done.
 
-![Configuring a work item query chart for the dashboard](_img/2_16_01.png)
+![Configuring a work item query chart for the dashboard](media/2_16_01.png)
 
 ## Cumulative flow diagram widget
 
 Using a cumulative flow diagram can help visualize your work in progress to diagnose any bottlenecks happening in your software development process. In this sprint, we’ve added a cumulative flow widget to the dashboard to look at the flow of work in your backlog for a rolling period or a specific iteration.
 
-![Cumulative flow diagram widget](_img/2_16_02.png)
+![Cumulative flow diagram widget](media/2_16_02.png)
 
 ## Build retention
 
@@ -52,7 +51,7 @@ The second new option is the ability to provide a window of time in which a succ
 
 When doing a SonarQube analysis with SonarQube 5.3 or later, you can now specify to fail the build if the Quality Gates for the analyzed SonarQube project are not respected.
 
-![Configuring SonarQube quality gates for a build](_img/2_16_03.png)
+![Configuring SonarQube quality gates for a build](media/2_16_03.png)
 
 ## RM: UI extensibility
 
@@ -66,7 +65,7 @@ You can also add new sections or new tabs in Release summary using UI contributi
 
 Using the [SCVMM Integration](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp) extension for System Center Virtual Machine Manager (SCVMM), you can now connect to a SCVMM server and easily provision VMs, and perform actions on them like create snapshot, revert snapshot, start, stop etc. These VMs can then be used in Build/RM workflows just like standard and Azure environments.
 
-![Configuring SCVVMM](_img/2_16_04.png)
+![Configuring SCVVMM](media/2_16_04.png)
 
 ## Exploratory Testing improvements
 
@@ -80,8 +79,8 @@ Avoid duplicate bugs
 
 You can now search and view similar bugs: as you create a bug, the extension will automatically search and list existing bugs based on the Title match. You can optionally update an existing bug with the new information you have collected, thereby avoiding creation of duplicate bugs.
 
-![Finding similar bugs](_img/2_16_05.png)
-![Viewing similar bugs](_img/2_16_06.png)
+![Finding similar bugs](media/2_16_05.png)
+![Viewing similar bugs](media/2_16_06.png)
 
 ## Web-based reports for load tests
 
@@ -91,7 +90,7 @@ You can view key performance metrics such as the Avg. response time, RPS, failed
 
 Important diagnostics information such as test errors and status messages from the load test run is available in the diagnostics tab.
 
-![Viewing a web report for load tests](_img/2_16_07.png)
+![Viewing a web report for load tests](media/2_16_07.png)
 
 ## Other Improvements
 

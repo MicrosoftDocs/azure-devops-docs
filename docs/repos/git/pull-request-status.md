@@ -3,11 +3,7 @@ title: Pull request workflow extensibility
 titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 06/18/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
@@ -24,23 +20,15 @@ These policies enable teams to enforce many best practices related to reviewing 
 
 Integrating into the PR workflow involves a few different concepts:
 
-* [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
 * [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
 * [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
 * [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
 
-## Service hooks
-
-Any service that wants to integrate with pull requests will need to know when a new PR has been created or updated, so that the contents of the PR may be evaluated. 
-[Service hooks](../../service-hooks/overview.md) enable external systems to be alerted when events occur in Azure DevOps Services.
-There are two event triggers for pull requests: - **pull request created** and **pull request updated**. 
-Ensure that there are subscriptions for both of these events to receive notifications any time the code in a PR changes.
-
 ## Pull request status
 
-Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107). 
+Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). 
 A status consists of four key pieces of data:
 
 * **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, `notApplicable`, or `error`.
@@ -72,7 +60,7 @@ For changes that pass the build, a status like this might be posted on the PR:
 
 This status would be displayed to the end user in the PR Details view:
 
-![Pull request status](_img/pull-request-status/pull-request-status.png)
+![Pull request status](media/pull-request-status/pull-request-status.png)
 
 * The `state` is shown to the user using an icon (green check for `succeeded`, red X for `failed`, a clock for `pending`, and a red ! for `error`). 
 * The `description` is displayed next to the icon, and the `context` is available in a tooltip. 
@@ -100,9 +88,9 @@ Conversely, if the status posted applies to the entire PR, independent of the co
 When configuring the status policy, if iteration status is being used, the **Reset conditions** should be set to **Reset status whenever there are new changes**. 
 This further guarantees that the PR will not be able to be merged until the latest iteration has a status of `succeeded`.
 
-![Status policy reset conditions](_img/pull-request-status/pull-request-status-policy-reset-conditions.png)
+![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-pull-request).
+See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create#on-pull-request).
 
 ## Status policy
 
@@ -113,7 +101,7 @@ Like the in-box policies, the **Status policy** provides a way for external serv
 Status policies are configured just like other [branch policies](branch-policies.md). 
 When adding a new status policy, the **name** and **genre** of the status policy must be entered. If the status has been posted previously you can pick it from the list; if it is a new policy you can type in the name of the policy in the format **genre**/**name**.
 
-![Status policy](_img/pull-request-status/pull-request-status-policy.png)
+![Status policy](media/pull-request-status/pull-request-status-policy.png)
 
 When a status policy is specified, it requires that a status of `succeeded` with the `context` matching the selected name be present to in order for this policy to pass.
   
@@ -123,7 +111,7 @@ An **Authorized account** can also be selected to require that a specific accoun
 
 The **Policy applicability** options determine whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
 
-![Policy applicability](_img/pull-request-status/policy-applicability.png)
+![Policy applicability](media/pull-request-status/policy-applicability.png)
 
 1. **Apply by default** - The policy applies as soon as the pull request is created. With this option, the policy does not pass after pull request creation until a `succeeded` status is posted.
 A PR can be marked exempt from the policy by posting a status of `notApplicable`, which will remove the policy requirement. 
@@ -137,13 +125,13 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
 
-![Status menu](_img/pull-request-status/custom-status-menu-entries.png)
+![Status menu](media/pull-request-status/custom-status-menu-entries.png)
 
 ## Next Steps
 
-Learn more about the [PR Status API](https://go.microsoft.com/fwlink/?linkid=854107) and check out the how-to guides:
+Learn more about the [PR Status API](/rest/api/azure/devops/git/pull%20request%20statuses) and check out the how-to guides:
 
 * [Create a pull request status server with Node.js](create-pr-status-server.md)
 * [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)

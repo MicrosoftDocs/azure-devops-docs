@@ -3,18 +3,17 @@ title: Azure Repos Git tutorial
 titleSuffix: Azure Repos
 description: Learn Git with the Azure DevOps Services/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.author: sdanie
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure Repos Git tutorial
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2017 | VS 2015**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
@@ -34,7 +33,7 @@ These steps are:
 
 ---
 
-![The Git feature branch workflow](_img/gitworkflow.png)
+![The Git feature branch workflow](media/gitworkflow.png)
 
 Git has a version of this workflow using terminology and commands unique to Git. Throughout this tutorial you'll learn about repositories, branches, commits, and pull requests. 
 These terms might sound familiar if you've used a version control system like Team Foundation Version Control or Subversion, but they behave differently in Git.
@@ -42,11 +41,11 @@ These terms might sound familiar if you've used a version control system like Te
 ##  Git workflow
 
 ---
-1. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
+1. [Create a branch](./create-branch.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
 2. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
 3. [Push your branch](pushing.md) to the remote repository. 
-4. [Create a pull request](pullrequest.md) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
-5. [Complete your pull request](pullrequest.md) and resolve any merge conflicts from changes other people made after you created your branch.   
+4. [Create a pull request](pull-requests.md#create-a-new-pull-request) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
+5. [Complete your pull request](pull-requests.md#complete-the-pull-request) and resolve any merge conflicts from changes other people made after you created your branch.   
 
 ---
 

@@ -2,20 +2,19 @@
 title: Process template plug-ins index
 titleSuffix: Azure DevOps & TFS
 description: Uses to look up the syntax structure and find examples of how to use each element.
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ea3c836a-438b-4d28-9fa4-e29281a96db6
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/24/2017
 ---
 
 
 # Process template plug-ins: Index to XML element definitions
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema definition for process templates.  
 

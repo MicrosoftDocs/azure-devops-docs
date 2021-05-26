@@ -1,12 +1,7 @@
 ---
 title: Build Java apps
 description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: dastahel
 ms.topic: quickstart
 ms.date: 08/30/2019
@@ -15,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Build Java apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -27,7 +22,7 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
@@ -35,9 +30,9 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ### Get the code
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
 
@@ -57,28 +52,28 @@ Import this repo into your Git repo in TFS:
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ::: moniker-end
 
 ### Create the pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Maven**.
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -110,7 +105,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build Java apps without needing to set up any infrastructure of your own. You can build on Windows, Linux, or MacOS images. The Microsoft-hosted agents in Azure Pipelines have modern JDKs and other tools for Java pre-installed. To know which versions of Java are installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
@@ -118,7 +113,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
@@ -252,7 +247,7 @@ or package the build output into a .war/jar file to be deployed to a web applica
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Next we recommend that you learn more about creating a CI/CD pipeline for the deployment target you choose:
 

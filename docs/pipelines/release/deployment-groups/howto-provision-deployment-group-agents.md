@@ -3,22 +3,19 @@ title: Provision agents for deployment groups
 ms.custom: seodec18
 description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 02/04/2021
 monikerRange: '>= tfs-2018'
 ---
 
 # Provision agents for deployment groups
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
@@ -29,7 +26,7 @@ You can install the agent in any one of these ways:
 
 * [Run the script](#runscript) that is generated automatically when you create a deployment group.
 * [Install the **Azure Pipelines Agent** Azure VM extension](#azureext) on each of the VMs.
-* [Use the **Azure Resource Group Deployment** task](#deploytask) in your release pipeline.
+* [Use the **ARM Template deployment** task](#deploytask) in your release pipeline.
 
 For information about agents and pipelines, see:
 
@@ -47,7 +44,7 @@ For information about agents and pipelines, see:
 
 1. In the **Register machines using command line** section of the next page, select the target machine operating system.
 
-1. Choose **Use a personal access token in the script for authentication**. [Learn more](https://go.microsoft.com/fwlink/?linkid=844181).
+1. Choose **Use a personal access token in the script for authentication**. [Learn more](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 1. Choose **Copy the script to clipboard**.
 
@@ -81,7 +78,7 @@ For information about agents and pipelines, see:
 1. In the Azure portal, for each VM that will be included in the deployment group
    open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Azure Pipelines Agent**.
 
-   ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
+   ![Installing the Azure Pipelines Agent extension](media/howto-provision-azure-vm-agents/azure-vm-create.png)
 
 1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
@@ -89,7 +86,7 @@ For information about agents and pipelines, see:
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against Azure Pipelines.
+1. Enter the [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to use for authentication against Azure Pipelines.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
    Tags are not case-sensitive, and each must no more than 256 characters.
@@ -100,14 +97,18 @@ For information about agents and pipelines, see:
 
 <a name="deploytask"></a>
 
-## Use the Azure Resource Group Deployment task
+## Use the ARM Template deployment task 
 
-You can use the [Azure Resource Group Deployment task](https://aka.ms/argtaskreadme)
+> [!IMPORTANT]
+> These instructions refer to version 2 of the task. Switch your **Task version** from 3 to 2. 
+
+
+You can use the [ARM Template deployment task](https://aka.ms/argtaskreadme)
 to deploy an Azure Resource Manager (ARM) template that installs the Azure Pipelines Agent
 Azure VM extension as you create a virtual machine, or to update the resource group
 to apply the extension after the virtual machine has been created.
 Alternatively, you can use the advanced deployment options of the
-Azure Resource Group Deployment task to deploy the agent to deployment groups.
+ARM Template deployment task to deploy the agent to deployment groups.
 
 ### Install the "Azure Pipelines Agent" Azure VM extension using an ARM template
 
@@ -161,6 +162,16 @@ where:
 > [!NOTE]
 > If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
+### Troubleshoot the extension
+
+These are some known issues with the extension:
+
+* **Status file getting too big**: This issue occurs on Windows VMs; it has not been observed on Linux VMs. The status file contains a JSON object that describes the current status of the extension. The object is a placeholder to list the operations performed so far. Azure reads this status file and passes the status object as response to API requests. The file has a maximum allowed size; if the size exceeds the threshold, Azure cannot read it completely and gives an error for the status. On each machine reboot, some operations are performed by the extension (even though it might be installed successfully earlier), which append the status file. If the machine is rebooted a large number of times, the status file size exceeds the threshold, which causes this error. The error message reads: `Handler Microsoft.VisualStudio.Services.TeamServicesAgent:1.27.0.2 status file 0.status size xxxxxx bytes is too big. Max Limit allowed: 131072 bytes`. Note that extension installation might have succeeded, but this error hides the actual state of the extension.
+
+  We have fixed this issue for machine reboots (version `1.27.0.2` for Windows extension and `1.21.0.1` for Linux extension onward), so on a reboot, nothing will be added to the status file. If you had this issue with your extension before the fix was made (that is, you were having this issue with earlier versions of the extension) and your extension was auto-upadted to the versions with the fix, the issue will still persist. This is because on extension update, the newer version of the extension still works with the earlier status file. Currently, you could still be facing this issue if you are using an earlier version of the extension with the flag to turn off minor version auto-updates, or if a large status file was carried from an earlier exension version to the newer versions that contains the fix, or for any other reason. If that is the case, you can get past this issue by uninstalling and re-installing the extension. Uninstalling the extension cleans up the entire extension directory, so a new status file will be created for fresh install. You need to install latest version of the extension. This solution is a permanemt fix, and after following this, you should not face the issue again.
+
+* **Issue with custom data**: This issue is not with the extension, but some customers have reported confusion regarding the customdata location on the VM on switching OS versions. We suggest the following workaround. Python 2 has been deprecated, so we have made the extension to work with Python 3. If you are still using earlier OS versions that don't have Python 3 installed by default, to run the extension, you should either install Python 3 on the VM  or switch to OS versions that have Python 3 installed by default. On linux VMs, [custom data](/azure/virtual-machines/custom-data#linux) is copied to the file `/var/lib/waagent/ovf-env.xml` for earlier Microsoft Azure Linux Agent versions, and to `/var/lib/waagent/CustomData` for newer Microsoft Azure Linux Agent versions. It appears that customers who have hardcoded only one of these two paths face issues while switching OS versions because the file does not exist on the new OS version, but the other file is present. So, to avoid breaking the VM provisioning, you should consider both the files in the template so that if one fails, the other should succeed. 
+
 For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 
 To use the template:
@@ -169,7 +180,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **ARM Template deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
    location, and template information, then save the release pipeline.
@@ -182,7 +193,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of **Azure Pipelines**, create a release pipeline with a stage that contains the **ARM Template deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:
@@ -192,7 +203,7 @@ To use the template:
    * **Azure Pipelines/TFS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
      to your target. Agent registration for deployment groups requires access to your Visual
      Studio project. If you do not have an existing service connection, choose **Add** and create one now.
-     Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
+     Configure it to use a [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
      with scope restricted to **Deployment Group**.
 
    * **Project**: Specify the project containing the deployment group.
@@ -216,4 +227,4 @@ To use the template:
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

@@ -1,12 +1,10 @@
 ---
 title: Velocity (Scrum)
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the velocity report to forecast release and product completion dates and plan future projects  
 ms.assetid: 4c2c4f98-ca0f-4003-8292-4c50b66a996c
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 
 # Velocity
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 If your team has completed multiple sprints, you can forecast release and product completion dates and plan future projects more accurately by reviewing the velocity report. Based on the velocity of previous sprints that the report illustrates, you can accomplish the following goals:  
   
@@ -23,10 +21,10 @@ If your team has completed multiple sprints, you can forecast release and produc
   
 - Estimate how much backlog effort your team can handle in future sprints if your team composition and sprint duration stay constant.  
   
-  You can access similar information from the [velocity chart](../guidance/team-velocity.md) provided in the web portal.  
+  You can access similar information from the [velocity chart](../dashboards/team-velocity.md) provided in the web portal.  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
  **Required permissions**  
   
@@ -37,7 +35,7 @@ If your team has completed multiple sprints, you can forecast release and produc
   
  The graph also displays a horizontal line that represents the average velocity across all the sprints.  
   
- ![Velocity chart &#40;Scrum process template&#41;](_img/scrum_velocity.png "Scrum_Velocity")  
+ ![Velocity chart &#40;Scrum process template&#41;](media/scrum_velocity.png "Scrum_Velocity")  
   
  You can filter the report by selecting the **Iteration** or **Area**.  
   
@@ -68,4 +66,4 @@ If your team has completed multiple sprints, you can forecast release and produc
 ## Related notes
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
  [Define iteration paths (sprints)](../../organizations/settings/set-iteration-paths-sprints.md)   
- [Velocity chart and widget](../guidance/team-velocity.md)
+ [Velocity chart and widget](../dashboards/team-velocity.md)

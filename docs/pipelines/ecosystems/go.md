@@ -1,16 +1,11 @@
 ---
 title: Build and test Go projects 
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.reviewer: shashankbarsin
+ms.reviewer: azooinmyluggage
 ms.custom: seodec18
-ms.date: 12/16/2019
+ms.date: 01/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -32,20 +27,20 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ## Create the pipeline
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Go**. 
 
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -76,7 +71,44 @@ pool:
 
 Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact versions of Go that are pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
 
-## Set up a Go workspace
+## Set up Go
+
+
+#### [Go 1.11+](#tab/go-current)
+
+Starting with Go 1.11, you no longer need to define a `$GOPATH` environment, set up a workspace layout, or use the `dep` module. Dependency management is now built-in. 
+
+This YAML implements the `go get` command to download Go packages and their dependencies. It then uses `go build` to generate the content that is published with `PublishBuildArtifacts@1` task. 
+
+```yaml
+trigger: 
+ - master
+
+pool:
+   vmImage: 'ubuntu-latest'
+
+steps: 
+- task: GoTool@0
+  inputs:
+    version: '1.13.5'
+- task: Go@0
+  inputs:
+    command: 'get'
+    arguments: '-d'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+- task: Go@0
+  inputs:
+    command: 'build'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+- task: CopyFiles@2
+  inputs:
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+     artifactName: drop
+```
+
+#### [Go < 1.11](#tab/go-older)
 
 As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. Within that directory are standard subdirectories:
 
@@ -127,9 +159,9 @@ This snippet does the following:
 4. Moves code that was fetched from the remote repository into the workspace's `src` directory
 5. Adds the version of Go and the workspace's `bin` directory to the path.
 
-## Install dependencies
+### Install dependencies
 
-### go get
+#### go get
 
 Use `go get` to download the source code for a Go project or to install a tool into the Go workspace. Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -139,9 +171,12 @@ Use `go get` to download the source code for a Go project or to install a tool i
   displayName: 'go get dependencies'
 ```
 
-### dep ensure
+#### dep ensure
 
-Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
+Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. 
+
+> [!NOTE]
+> This script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result cannot work with Windows agents. 
 
 ```yaml
 - script: |
@@ -153,14 +188,17 @@ Use `dep ensure` if your project uses dep to download dependencies imported in y
   displayName: 'Download dep and run `dep ensure`'
 ```
 
+--- 
+
 ## Build
 
 Use `go build` to build your Go project. Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-- script: go build -v .
-  workingDirectory: '$(modulePath)'
-  displayName: 'Build'
+- task: Go@0
+  inputs:
+    command: 'build'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
 ```
 
 ## Test
@@ -168,9 +206,11 @@ Use `go build` to build your Go project. Add the following snippet to your `azur
 Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-- script: go test -v ./...
-  workingDirectory: '$(modulePath)'
-  displayName: 'Run tests'
+- task: Go@0
+  inputs:
+    command: 'test'
+    arguments: '-v'
+    workingDirectory: '$(modulePath)'
 ```
 
 ## Build an image and push to container registry

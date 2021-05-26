@@ -3,11 +3,7 @@ title: History command
 titleSuffix: Azure Repos
 description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # History command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays the revision history of one or more files or folders. The data is displayed in either the History window, or if **/noprompt** option is specified, at the command prompt.
 
@@ -42,7 +38,7 @@ tf hist[ory] itemspec [/version:versionspec]
 <tbody>
 <tr>
 <td><p><strong>/collection</strong>: <i>TeamProjectCollectionUrl</i></p></td>
-<td><p>Specifies the URL of the project collection that contains the items. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p>
+<td><p>Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.</p>
 <p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
 </tr>
 <tr>
@@ -55,7 +51,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/itemmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
@@ -79,7 +75,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/slotmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="https://go.microsoft.com/fwlink/?LinkId=253467">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/sort</strong></p></td>
@@ -291,16 +287,16 @@ Displays the most recent change to the SolutionA folder in the command prompt wi
 
 ## Tips
 
--   ![Tip](_img/history-command/IC572374.png) For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
+-   ![Tip](media/history-command/IC572374.png) For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
 
--   ![Tip](_img/history-command/IC572374.png) To get more detailed information about a changeset (for example, you want to see associated work items):
+-   ![Tip](media/history-command/IC572374.png) To get more detailed information about a changeset (for example, you want to see associated work items):
 
     -   In the History window, double-click the changeset or open its context menu and choose **Changeset Details**.
 
     -   From the command prompt, use the [Changeset Command](changeset-command.md).
 
--   ![Tip](_img/history-command/IC572374.png) For more information about changesets, see [Find and view changesets](find-view-changesets.md).
+-   ![Tip](media/history-command/IC572374.png) For more information about changesets, see [Find and view changesets](find-view-changesets.md).
 
--   ![Tip](_img/history-command/IC572374.png) The **/collection** option is useful for running this command from a machine and user account that does not have a workspace mapped to the Project Collection that contains the items.
+-   ![Tip](media/history-command/IC572374.png) The **/collection** option is useful for running this command from a machine and user account that does not have a workspace mapped to the Project Collection that contains the items.
 
--   ![Tip](_img/history-command/IC572374.png) See [View and manage past versions](view-manage-past-versions.md).
+-   ![Tip](media/history-command/IC572374.png) See [View and manage past versions](view-manage-past-versions.md).

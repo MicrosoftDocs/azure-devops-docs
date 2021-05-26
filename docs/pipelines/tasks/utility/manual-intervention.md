@@ -2,10 +2,7 @@
 title: Manual Intervention task 
 description: Pause an active deployment within a stage in a release pipeline in Azure Pipelines and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -22,9 +19,9 @@ typically to perform some manual steps or actions, and then continue the automat
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This task is supported only in classic release pipelines.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This article refers only to classic pipelines. For YAML usage, see [Manual Validation task](manual-validation.md).
 
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
+![Configuring a Manual Intervention task](media/maninter-use-variables.png)
 
 ## Arguments
 

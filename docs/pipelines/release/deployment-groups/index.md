@@ -3,29 +3,29 @@ title: Use deployment groups in a release pipeline
 ms.custom: seodec18
 description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 12/18/2020
 monikerRange: '>= tfs-2018'
 ---
 
 # Provision deployment groups
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 A deployment group is a logical set of deployment target machines 
 that have agents installed on each one. Deployment groups represent the physical environments;
 for example, "Dev", "Test", "UAT", and "Production". In effect, a
 deployment group is just another grouping of agents, much like an
-[agent pool](../../agents/pools-queues.md).
+[agent pool](../../agents/pools-queues.md). 
+
+Deployment groups are only available with Classic release pipelines. Deployment groups are different from [deployment jobs](../../process/deployment-jobs.md). Deployment jobs are a collection of deployment-related steps used in a YAML pipeline. 
+
 
 When authoring an Azure Pipelines or TFS Release pipeline, you
 can specify the deployment targets for a [job](../../process/phases.md)
@@ -63,8 +63,7 @@ You manage the security for a deployment group by
 
 ## Deploy agents to a deployment group
 
-Every target machine in the deployment group requires the build and release agent
-to be installed. You can do this using the script that is generated in the
+Every target machine in the deployment group requires an installed build and release agent. You can do this using the script in the
 **Deployment Groups** tab of **Azure Pipelines**. You can choose the
 type of agent to suit the target operating system and platform; such as Windows
 and Linux.
@@ -91,33 +90,43 @@ use the links in the **Releases** tab.
 ## Share a deployment group
 
 Each deployment group is a member of a **deployment pool**, and you can share
-the deployment pool and groups across projects provided that:
+the deployment pool and groups across projects if:
 
 * The user sharing the deployment pool has [User permission](../../agents/pools-queues.md#security) for the pool containing the group.
-* The user sharing the deployment pool has permission to create a deployment group in the project where it is being shared.
+* The user sharing the deployment pool has permission to create a deployment group in the project where it is shared.
 * The project does not already contain a deployment group that is a member of the same deployment pool.
 
 The tags you assign to each machine in the pool are scoped at project level,
-so you can specify a different tag for the same machine in each deployment group.
+so you can specify a different tag for the same machine in each deployment group. 
 
 ### Add a deployment pool and group to another project 
 
 To manage a deployment pool, or to add an existing deployment pool and the groups it contains to another project,
 choose the **Manage** link in the **Agent Pool** section of the **Deployment Group** page.
+
+:::image type="content" source="media/manage-deployment-group.png" alt-text="To edit an existing deployment group select Manage.":::
+
 In the **Deployment Pools** page, select the projects for which you
 want the deployment group to be available, then save the changes.
+
 
 When you navigate to the **Deployment Groups** page in the target project(s), you
 will see the deployment group you added and you can assign project-specific machine tags as required.
 
 ### Create a new deployment pool
 
-You can add a new deployment pool, share it amongst your projects, and then add deployment groups to it.
+Add a new deployment pool, share it amongst your projects, and then add deployment groups to it.
 In the **Deployment Pools** page, choose **+ New**. In the **New deployment pool** panel,
 enter a name for the pool and then select the projects for which you want it to be available.
 
 When you navigate to the **Deployment Groups** page in the target project(s), you
 will see the deployment group you added and you can assign project-specific machine tags as required.
+
+### Automatically deploy to new targets in a deployment group
+
+When new targets get added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets. 
+
+:::image type="content" source="../media/deployment-group-add-targets.png" alt-text="Add deployment group targets.":::
 
 ## Related topics
 
@@ -126,5 +135,5 @@ will see the deployment group you added and you can assign project-specific mach
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 

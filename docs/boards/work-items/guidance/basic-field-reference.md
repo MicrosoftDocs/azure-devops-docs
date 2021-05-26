@@ -1,26 +1,24 @@
-﻿---
+---
 title: System or basic work item field reference
 titleSuffix: Azure Boards
 description: Index to those fields used in the Basic process for Azure Boards
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.topic: reference  
-ms.manager: mijacobs
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/20/2018
+ms.date: 07/09/2020
 ---
 
 # Index to system field descriptions 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Use this index to look up a description of a field used to track an issue, task, or epic. This reference includes all fields defined for the Basic process. If you use another process&mdash;such as Agile, CMMI, or Scrum&mdash;see [Work item field index](work-item-field.md) for additional field definitions.
  
-[!INCLUDE [temp](../../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../../includes/basic-process-note.md)] 
 
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 
@@ -69,7 +67,7 @@ To support additional tracking needs, you can [define your own custom work item 
 <li><a href="../../queries/history-and-auditing.md" data-raw-source="[History](../../queries/history-and-auditing.md)">History</a> </li>
 <li><a href="../../queries/linking-attachments.md#hyper-link-count" data-raw-source="[Hyperlink Count](../../queries/linking-attachments.md#hyper-link-count)">Hyperlink Count</a></li>
 <li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[ID](../../queries/titles-ids-descriptions.md)">ID</a> </li>
-<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration Id</a>  (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration ID</a>  (System)</li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Path](../../queries/query-by-area-iteration-path.md)">Iteration Path</a> (System)</li>
 </ul>
 <h3>L-N-P</h3>
@@ -77,6 +75,7 @@ To support additional tracking needs, you can [define your own custom work item 
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Comment](../../queries/linking-attachments.md)">Link Comment</a> </li>
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Description](../../queries/linking-attachments.md)">Link Description</a> </li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Node Name](../../queries/query-by-area-iteration-path.md)">Node Name</a> </li>
+<li><a href="../../queries/linking-attachments.md#parent">Parent</a></li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> </li>
 </ul>
 <h3>R</h3>
@@ -128,5 +127,5 @@ Also, you can [view the list of fields defined for an organization](../../../org
 
 ## Related articles
 
-- [Create managed queries](../../queries/example-queries.md)
+- [About managed queries](../../queries/about-managed-queries.md)
 

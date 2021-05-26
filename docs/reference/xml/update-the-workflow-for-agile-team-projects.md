@@ -2,28 +2,26 @@
 title: Update the Agile process workflow 
 titleSuffix: TFS
 description: Update the workflow for agile projects to manually update the user story and task workflow assignments.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<=tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 12/15/2017
 ---
 
 # Update the workflow for agile projects
 
-**TFS 2015 | TFS 2013** 
+
+[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)]
 
 
 > [!IMPORTANT]  
-> This topic applies to project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).   
-
+> This article applies to a project that was created using a Microsoft Solutions Framework (MSF) version 5.0 process template and is defined on an on-premises Team Foundation Server (TFS).  
 
 After you have configured features for your upgraded project, which was created with a process template based on Microsoft Solutions Framework (MSF) for Agile Software Development v5.0, you should manually update the user story and task workflow assignments. If you don't update the workflow, then the task board provides only two states, **Active** and **Closed**, as shown in the following illustration. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.  
   
-![Task board for non&#45;updated Agile project](_img/alm_vrf_taskboard_agile_v5.png "ALM_VRF_TaskBoard_Agile_V5")  
+![Task board for non&#45;updated Agile project](media/alm_vrf_taskboard_agile_v5.png "ALM_VRF_TaskBoard_Agile_V5")  
 
 
 Task board for an Agile project without the recommended manual updates  
@@ -62,7 +60,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 #### To update the workflow states and transitions for User Story  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
   
 1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   
@@ -366,7 +364,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 2.  Verify that the task board columns now display **New**, **Active**, and **Closed**.  
   
-     ![Agile task board with updated workflow](_img/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
+     ![Agile task board with updated workflow](media/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
 Task board for an Agile project with the updated workflow states  
   
      To learn more about using the task board, see [Sprint planning](../../boards/sprints//assign-work-sprint.md).

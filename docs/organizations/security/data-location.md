@@ -1,54 +1,77 @@
 ---
-title: Azure DevOps - data location
+title: Data locations for Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Learn where your data is stored for Azure DevOps
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.manager: mijacobs
-ms.date: 03/25/2019
+ms.date: 03/05/2020
 monikerRange: 'azure-devops'
 ---
 
 # Data locations for Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
-Azure DevOps operates in the geographical locations (“geos”) listed below. To determine where customer data is stored, you can choose the location of the organization during initial sign up and creation of the organization.
+You can choose the location for your data during initial sign-up and creation of your organization. Azure DevOps operates in the following geographical locations (“geos”). 
 
 ## Data locations
 
-Your data is stored within the following locations:
+Azure DevOps data is available in the following eight geographies across the world: 
 
 - Australia
 - Brazil
 - Canada
-- East Asia
+- Asia Pacific
 - Europe
 - India
 - United Kingdom
 - United States
 
-Azure DevOps stores information that is global in nature, such as user identities and profile information, in a data center located in the United States. All customer data, such as source code, work items, and test results, as well as the geo-redundant mirrors and offsite backups, are maintained within the selected geography.
+We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, you can [migrate your organization to a different geography](../accounts/change-organization-location.md). 
 
-> [!NOTE]
-> Because there is only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
+## Customer data
 
-For builds and releases configured to run on Microsoft-provided macOS agents, Azure DevOps stores associated customer data in the United States in a data center that is owned and managed by a third party with reduced information security certification assurances.
+Except as noted below, Azure DevOps maintains all customer data within your selected geography. Customer data includes the following data types:
+- source code
+- work items
+- test results
+- geo-redundant mirrors and offsite backups
 
-Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
+Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).  
+
+### Profile data 
+
+Azure DevOps stores information that's global in nature, such as user identities and profile information as follows: 
+- EU-based users: profile data is in EU data center  
+- US-based users: profile data is in US data center 
+- Users from all other countries/regions: profile data is in US data center 
 
 ## Transferring your data
 
-Microsoft does not transfer customer data outside the selected region, except when it is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements. In such a case, you configure an organization to enable such transfer of your data using preview, beta, or other pre-release services, which typically store your data in the United States, but may store it globally.
+Except as noted below, Microsoft doesn't transfer customer data outside of your selected geography. 
+
+If needed, you can transfer your data using preview, beta, or other pre-release services. These services typically store your data in the United States, but may store it globally.
 
 > [!NOTE]
-> Microsoft does not control or limit the regions from which you or your users may access your data.
+Microsoft will transfer your data if it needs to do any of the following actions:
+>- provide customer support
+>- troubleshoot the service
+>- comply with legal requirements
+
+> [!NOTE]
+> Microsoft doesn't control or limit the geographies from which you or your users may access your data.
+
+> [!NOTE]
+> Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
+
+> [!NOTE]
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a third-party data center in the US.
+
+These two data center locations are owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 Type II report.
 
 ## Related articles
 
 - [Get started with Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137)
 - [Data protection overview](data-protection.md)
-
-

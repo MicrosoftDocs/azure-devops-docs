@@ -2,7 +2,6 @@
 title: Deployment Groups and Build completion trigger – VSTS Sprint 132 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 4/3/2018
 description: The Sprint 132 Update of Visual Studio Team Services (VSTS) brings a few key features to help you scale your build and release pipeline.
@@ -17,7 +16,7 @@ Other highlights include:
 - [Integrate Power BI with VSTS Analytics using views](#integrate-power-bi-with-vsts-analytics-using-views)
 - [Publish markdown files from a Git repository as a Wiki](#publish-markdown-files-from-a-git-repository-as-a-wiki)
 
-## What’s new in VSTS
+## What's new in VSTS
 
 > [!VIDEO https://www.youtube.com/embed/0y7NO_5mEYM?rel=0]
 
@@ -59,7 +58,7 @@ Writing descriptive commit messages adds value to the history of any Git reposit
 Pull request descriptions will continue to be empty by default, but a new feature will make it easier to incorporate the commit messages from the PR commits into the PR description. To add the commit messages, simply click **Add commit messages** to append the commit messages to the end of the PR description text.
 
 > [!div class="mx-imgBorder"]
-> ![Add commit messages action](_img/132_09.png)
+> ![Add commit messages action](media/132_09.png)
 
 ### Perform TFVC commands right from Windows Explorer
 
@@ -68,7 +67,7 @@ The TFVC Windows Shell Extension, which gives a lightweight version control expe
 Formerly part of the TFS Power tools, the tool has been released as a [standalone tool on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscs-vcw.TfsShellExtention).
 
 > [!div class="mx-imgBorder"]
-> ![Shell extension](_img/132_08.png)
+> ![Shell extension](media/132_08.png)
 
 ## Build and Release
 
@@ -76,12 +75,12 @@ Formerly part of the TFS Power tools, the tool has been released as a [standalon
 
 Large products have several components that are dependent on each other. These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated. Teams typically manage these dependencies manually.
 
-Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/build/triggers#BuildCompletion) documentation for more information.
+Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/process/pipeline-triggers) documentation for more information.
 
 This feature was prioritized based on what is currently the #2 highest voted suggestion with 1,129 votes.
 
 > [!div class="mx-imgBorder"]
-> ![Setup build chaining](_img/132_03.png)
+> ![Setup build chaining](media/132_03.png)
 
 Keep in mind that in some cases, a single [multi-phase build](/azure/devops/pipelines/process/phases) could meet your needs. However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
 
@@ -96,23 +95,23 @@ The agent-based deployment capability relies on the same build and deployment ag
 If you are using the same server to host multiple applications, you can share the server (also known as the deployment target) across team projects using deployment pools.
 
 > [!div class="mx-imgBorder"]
-> ![Deployment Groups targets list](_img/132_10.png)
+> ![Deployment Groups targets list](media/132_10.png)
 
 #### New templates
 
 Deploying to multiple targets is now a breeze with the new release definition templates. Multiple templates for IIS web site, IIS web site with database, and multiple deployment templates for SQL DB are available out of the box.
 
 > [!div class="mx-imgBorder"]
-> ![Release templates for Deployment Groups](_img/132_11.png)
+> ![Release templates for Deployment Groups](media/132_11.png)
 
 #### Provisioning VMs
 
 Use the enhanced **Azure Resource Group** task to dynamically bootstrap agents on the newly provisioned or pre-existing Virtual Machines on Azure.
 
 > [!div class="mx-imgBorder"]
-> ![Azure Resource Group task](_img/132_12.png)
+> ![Azure Resource Group task](media/132_12.png)
 
-When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You’ll now find a more consistent interface that feels like the rest of the product.
+When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You'll now find a more consistent interface that feels like the rest of the product.
 
 See the [Deployment Groups](/azure/devops/pipelines/release/deployment-groups/) documentation for more information about getting started.
 
@@ -136,12 +135,12 @@ See the [authoring gate tasks](https://github.com/Microsoft/azure-pipelines-task
 
 ### Use upstream npm packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project’s configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project's configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
 
-We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) documentation for more information.
+We're also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![Upstream sources list](_img/132_01.png)
+> ![Upstream sources list](media/132_01.png)
 
 ### Maintain feed query speed with retention policies
 
@@ -152,43 +151,43 @@ Now you can enable retention policies on feeds. Retention policies will automati
 To enable retention policies, edit your feed and enter a value in the **Maximum number of versions per package** in the **Retention policies** section.
 
 > [!div class="mx-imgBorder"]
-> ![retention policies setting](_img/132_02.png)
+> ![retention policies setting](media/132_02.png)
 
 ## Wiki
 
 ### Publish markdown files from a Git repository as a Wiki
 
-Developers create documentation for “APIs”, “SDKs”, and “help docs explaining code” in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish markdown files from code repositories and host them in Wiki.
+Developers create documentation for "APIs", "SDKs", and "help docs explaining code" in code repositories. Readers then need to sift through code to find the right documentation. Now you can simply publish markdown files from code repositories and host them in Wiki.
 
 > [!div class="mx-imgBorder"]
-> ![public code as wiki action](_img/132_04.png)
+> ![public code as wiki action](media/132_04.png)
 
 From within Wiki, start by clicking **Publish code as wiki**. Next, you can specify a folder in a Git repository that should be promoted.
 
 > [!div class="mx-imgBorder"]
-> ![publish pages dialog](_img/132_05.png)
+> ![publish pages dialog](media/132_05.png)
 
 Once you click on **Publish**, all the markdown files under the selected folder will be published as a wiki. This will also map the head of the branch to the wiki so that any changes you make to the Git repo will be reflected immediately.
 
 In case you have multiple versions of your product and you want to easily skim through the documentation of these versions, you can also publish new version of the documentation to the wiki using different branches.
 
 > [!div class="mx-imgBorder"]
-> ![publish new version action](_img/132_06.png)
+> ![publish new version action](media/132_06.png)
 
 Once the markdown files are published, the pages will also be searchable in the Wiki search hub.
 
 > [!div class="mx-imgBorder"]
-> ![search results for Azure CLI](_img/132_13.png)
+> ![search results for Azure CLI](media/132_13.png)
 
 If you published the wrong repository, simply unpublish the wiki, which leaves the underlying repository unchanged.
 
 You can also change the ordering of the pages from the repository or even transform a folder to look like a wiki page.
 
-See the [product documentation blog post](https://go.microsoft.com/fwlink/?linkid=866310) for more information. This feature was prioritized based on a suggestion.
+See the [product documentation blog post](/azure/devops/project/wiki/publish-repo-to-wiki) for more information. This feature was prioritized based on a suggestion.
 
 ### Retain special characters in Wiki page titles
 
-You can now create wiki pages with special characters such as `: < > * ? | -`. Now pages with titles like “FAQ?” or “Set-up guide” can be created in Wiki. The following characters are translated to their UTF-8 encoded strings:
+You can now create wiki pages with special characters such as `: < > * ? | -`. Now pages with titles like "FAQ?" or "Set-up guide" can be created in Wiki. The following characters are translated to their UTF-8 encoded strings:
 
 |Character|Encoded String|
 |-------------|--------------------|
@@ -212,7 +211,7 @@ Wiki REST APIs are now public. See the [Wiki functions](/rest/api/vsts/wiki/wiki
 
 Analytics Views work with our VSTS Power BI Data Connector. Together they give an easy way to get your VSTS data into Power BI so you can start creating custom reports.
 
-When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](https://go.microsoft.com/fwlink/?linkid=870159) that you can start using in Power BI. Now you can edit your default views and [create new views](https://go.microsoft.com/fwlink/?linkid=870160) to fine-tune the records, fields, and history returned to Power BI.
+When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) extension we create a set of [default Analytics Views](/azure/devops/report/powerbi/data-connector-connect) that you can start using in Power BI. Now you can edit your default views and [create new views](/azure/devops/report/powerbi/overview) to fine-tune the records, fields, and history returned to Power BI.
 
 ## Next steps and Feedback
 
@@ -222,10 +221,10 @@ When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://azure.microsoft.com/updates/?product=azure-devops)
 
-We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
+We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you'd like to see us prioritize, through the feedback menu.
 
 > [!div class="mx-imgBorder"]
-> ![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/media/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

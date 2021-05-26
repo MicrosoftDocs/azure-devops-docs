@@ -3,11 +3,7 @@ title: Git and TFVC version control
 titleSuffix: Azure Repos
 description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
@@ -17,10 +13,10 @@ monikerRange: '>= tfs-2015'
 
 # Choosing the right version control for your project
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
-and [Team Foundation Version Control](./overview.md) (TFVC).
+and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
 ## Which version control system should I use?
@@ -36,7 +32,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 >[!NOTE]
 >Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
  
-To learn more, see [Git and Azure Repos](../../repos/git/overview.md).
+To learn more, see [Git and Azure Repos](../../repos/git/index.yml).
 
 ### TFVC (centralized)
  
@@ -48,7 +44,7 @@ TFVC has two [workflow models](decide-between-using-local-server-workspace.md):
 
   - **Local workspaces** - Each team member takes a copy of the latest version of the codebase with them and works offline as needed. Developers check in their changes and resolve conflicts as necessary. Another system that works this way is Subversion.
 
-To learn more, see [TFVC overview](./overview.md)
+To learn more, see [TFVC overview](./what-is-tfvc.md)
  
 <a name="tfvc_or_git_details"></a>
 
@@ -86,12 +82,12 @@ Need more help to make a choice? These charts might help.
 <td>
 <p>Path-based branches are used mostly as long-standing constructs to isolate risk of change among feature teams and releases. Team members typically set up an additional workspace for each branch they work on.</p>
 
-<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merging.
+<p>Changes in each branch are independent from each other, so you don&#39;t have to check them in before switching from one branch to another. Merging between sibling branches requires a baseless merge.
 </p>
 
 <p>You can get visualizations of your branch structures and where your changesets have been merged.</p>
 
-<p>See <a href="use-branches-isolate-risk-team-foundation-version-control.md" data-raw-source="[Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md)">Use branches to isolate risk in Team Foundation Version Control</a>.</p>
+<p>See <a href="/azure/devops/repos/tfvc/branching-strategies-with-tfvc" data-raw-source="[Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md)">Use branches to isolate risk in Team Foundation Version Control</a>.</p>
 </td>
 <td><p>Branching is lightweight and path independent. Many developers create a branch for each new feature they are coding, sometimes on a daily basis. You can quickly switch from one branch to another to pivot among different variations of your codebase. You can create branches that exist only on your dev machine and share them if and when you&#39;re ready. </p>
 
@@ -99,7 +95,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
+<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio&preserve-view=true#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/create-branch.md?amp;tabs=visual-studio&preserve-view=true&view=azure-devops#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
 </td>
 </tr>
 <tr>
@@ -110,7 +106,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>File storage</td>
 <td>You can check in large binary files. You might also want to use <a href="https://go.microsoft.com/fwlink/?LinkId=246165" data-raw-source="[NuGet](https://go.microsoft.com/fwlink/?LinkId=246165)">NuGet</a> in combination or as an alternative.</td>
-<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
+<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
 </tr>
 <tr>
 <td>History</td>
@@ -164,11 +160,11 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>Auditability</td>
 <td>Because your team checks in all their work into a centralized system, you can identify which user checked in a <a href="find-view-changesets.md" data-raw-source="[changeset](find-view-changesets.md)">changeset</a> and use <a href="compare-files.md" data-raw-source="[compare](compare-files.md)">compare</a> to see what they changed. Looking at a file, you can <a href="view-file-changes-using-annotate.md" data-raw-source="[annotate](view-file-changes-using-annotate.md)">annotate</a> it to identify who changed a block of code, and when they did it.</td>
-<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made what was changed using history, compare, and annotate.</td>
+<td>You can identify which user pushed a commit. (Anyone can claim any identity as the author or committer.) You can identify when changes were made and what was changed using history, compare, and annotate.</td>
 </tr>
 <tr>
 <td>Builds (automated by TFBuild)</td>
-<td>You can use all <a href="../../pipelines/overview.md" data-raw-source="[TFBuild](../../pipelines/overview.md)">TFBuild</a> capabilities to build any combination of content you want within the project collection.</td>
+<td>You can use all <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[TFBuild](../../pipelines/get-started/what-is-azure-pipelines.md)">TFBuild</a> capabilities to build any combination of content you want within the project collection.</td>
 <td>You can use most TFBuild capabilities to build one project at a time, and one or more repositories at a time.
 </td>
 </tr>
@@ -215,7 +211,7 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>Client software</td>
-<td> Visual Studio, Eclipse (with <a href="https://msdn.microsoft.com/library/gg413285%28v=vs.140%29.aspx" data-raw-source="[Team Explorer Everywhere](https://msdn.microsoft.com/library/gg413285%28v=vs.140%29.aspx)">Team Explorer Everywhere</a>)</td>
+<td> Visual Studio, Eclipse (with <a href="/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120)" data-raw-source="[Team Explorer Everywhere](/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120))">Team Explorer Everywhere</a>)</td>
 <td>Visual Studio, Eclipse, and other third-party tools</td>
 </tr>
 <tr>
@@ -253,7 +249,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Visual Studio compatibility</td>
-<td>You can use all supported <a href="https://docs.microsoft.com/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](https://docs.microsoft.com/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
+<td>You can use all supported <a href="/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
 <p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="https://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
 </tr>

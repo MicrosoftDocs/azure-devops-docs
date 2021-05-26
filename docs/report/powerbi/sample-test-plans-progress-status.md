@@ -2,30 +2,28 @@
 title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate an overall execution state or progress status of manual tests
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '> azure-devops-2019'
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/14/2020
 ---
 
 # Progress status sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
+> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 This report displays two donut charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
 
@@ -46,9 +44,9 @@ The overall execution state report helps you track the team's progress with resp
 - *How much testing is complete?*
 - *What is the current status of tests passing, failing, or being blocked?*
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
-## Prerequisites
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
@@ -64,7 +62,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -88,7 +86,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
@@ -114,7 +112,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
 
 
 
@@ -136,7 +134,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-test-plans-finish-query.md)]
+[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
 
 
 ## Create the report
@@ -148,7 +146,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution - Fields](_img/odatapowerbi-overallexecution-fields.png)
+> ![Sample - Overall Execution - Fields](media/odatapowerbi-overallexecution-fields.png)
 
 To create the report, do the following steps:
 
@@ -162,15 +160,14 @@ To create the report, do the following steps:
 Your report should appear similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
+> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 ## Full list of Test Plans sample reports 
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 
-- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
-
+- [Overview of sample reports using OData queries](./sample-odata-overview.md)
+- [Connect using Power BI and OData queries](./odataquery-connect.md)
+- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)

@@ -1,12 +1,10 @@
 ---
 title: Requirements Progress Report (CMMI) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by product area and iteration in order of importance.
 ms.assetid: c5ecc16d-9645-4b5f-97b9-e92f76a88852
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,14 +12,14 @@ ms.date: 10/17/2017
 
 
 # Requirements Progress Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Requirements Progress report lists all requirements, filtered by product area and iteration in order of importance.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 
 **You can use this report to answer the following questions**:<br /><br /> -   How much progress has the team made toward completing the work for each requirement?<br />-   How much work must the team still perform to implement each requirement?<br />-   How much work did the team perform in the last calendar period?
@@ -33,7 +31,7 @@ The Requirements Progress report lists all requirements, filtered by product are
 ##  <a name="Data"></a> Data in the Report  
  The Requirements Progress report shows the status of completion as determined by the tasks that have been defined to implement the requirement, as the following illustration shows. The data in the report is derived from the data warehouse.  
   
- ![Requirements Progress report](_img/procg_reqprogress.png "ProcG_ReqProgress")  
+ ![Requirements Progress report](media/procg_reqprogress.png "ProcG_ReqProgress")  
   
  This report displays the following information for each requirement that appears in the report:  
   
@@ -83,7 +81,7 @@ The Requirements Progress report lists all requirements, filtered by product are
   
    By default, the value of this field is seven days.  
   
-- Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
+- Click ![Expand](media/icon_expand.gif "Icon_Expand") or ![Collapse](media/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
   
   For more information, see [Filtering the Report and Changing the Display](#Changing) later in this article.  
   
@@ -117,7 +115,7 @@ The Requirements Progress report lists all requirements, filtered by product are
 ### Healthy Version of Report  
  A healthy Requirements Progress report shows that the team recently completed work (light green) on all requirements that are expected to be in progress, as the following illustration shows.  
   
- ![Example of Healthy Stories Progress](_img/procguid_healthy.png "ProcGuid_Healthy")  
+ ![Example of Healthy Stories Progress](media/procguid_healthy.png "ProcGuid_Healthy")  
   
 ### Unhealthy Version of Report  
  An unhealthy Requirements Progress report might show one or more of the following indications:  
@@ -145,7 +143,7 @@ The Requirements Progress report lists all requirements, filtered by product are
   
   The following illustration shows the available filters and display options.  
   
-  ![Filters for Stories Progress report](_img/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
+  ![Filters for Stories Progress report](media/procguid_progressfilters.png "ProcGuid_ProgressFilters")  
   
 #### To filter the requirements that appear in the report  
   

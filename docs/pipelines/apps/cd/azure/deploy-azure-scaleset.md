@@ -2,10 +2,7 @@
 title: Deploy apps to an Azure VM Scale Set
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2017'
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-[!INCLUDE [version-tfs-2017-rtm](../../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The **Build Machine Image** task makes it easy for users who are new to immutable
@@ -42,7 +39,7 @@ A custom **Packer** configuration JSON file can also be used.
 
 Before you begin, you need a CI build that creates your app. To set up CI, see:
 
-* [Build and deploy your app](../../index.md)
+* [Build and deploy your app](/previous-versions/azure/devops/pipelines/apps/)
 
 ## Create the release pipeline
 
@@ -69,7 +66,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. Configure the **Build Machine Image** task as follows:
 
-   ![Build Machine Image](../../../tasks/deploy/_img/build-machine-image.png) [Deploy: Build Machine Image](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/15/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
+   ![Build Machine Image](../../../tasks/deploy/media/build-machine-image.png) [Deploy: Build Machine Image](https://devblogs.microsoft.com/devops/deploying-applications-to-azure-vm-scale-sets/) - Build machine image using Packer.
    
    - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
    
@@ -86,7 +83,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    - **Output - Image URL**: Provide a name for the output variable that will hold the URL of the generated machine image. For example, `bakedImageUrl`<p />
    
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
+   ![Azure PowerShell](../../../tasks/deploy/media/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Run a PowerShell script to update the Virtual Machine Scale Set with the new VHD.
    
    - **Azure Connection Type**: Select `Azure Resource Manager`
    
@@ -122,16 +119,15 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 1. Create a new release, select the latest build, and 
    ensure that the application has been deployed correctly and has generated the VHD.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
-
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

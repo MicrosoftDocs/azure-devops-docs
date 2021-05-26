@@ -1,13 +1,11 @@
-﻿---
+---
 title: Publish, select, or unpublish a wiki version
 titleSuffix: Azure DevOps  
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
@@ -17,7 +15,7 @@ ms.date: 10/11/2019
 
 # Publish, unpublish, and select version of a wiki
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 When you publish a Git repository to a wiki, you can publish new branch of the repo as versions, select a version to view, or unpublish the repo.
 
@@ -25,26 +23,22 @@ When you publish a Git repository to a wiki, you can publish new branch of the r
 
 If your published wiki corresponds to a product version, you can publish new branches as you release new versions of your product. To create a new version, create a new branch of your repo, and then make updates to that new branch.
 
-::: moniker range=">= azure-devops-2019"  
-
-1. To create a new branch from the web portal, open **Repos > Branches**, open the ![ ](../../_img/icons/actions-icon.png) actions icon for the branch you have previously published, and select **New branch**.
+1. To create a new branch from the web portal, select **Repos** > **Branches**, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions** for the branch you previously published, and then select **New branch**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a new branch](_img/wiki/publish-wiki-create-branch-vert.png)
+	> ![Create a new branch](media/wiki/publish-wiki-create-branch-vert.png)
 
 1. To publish the new branch to a wiki, open the **Wiki** page for the currently published branch, open the branch picker, and then choose **Publish new branch**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Publish new version menu option](_img/wiki/publish-new-version-option.png)
+	> ![Publish new version menu option](media/wiki/publish-new-version-option.png)
 
 1. Complete the form, choosing the branch that you previously created.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Publish new version dialog box](_img/wiki/publish-new-version.png)
+	> ![Publish new version dialog box](media/wiki/publish-new-version.png)
 
 1. Select **Update**.
-
-::: moniker-end
 
 
 ## Select a wiki version
@@ -52,7 +46,7 @@ If your published wiki corresponds to a product version, you can publish new bra
 To select a wiki version, choose the version from the branch options from the **Wiki** page.
 
 > [!div class="mx-imgBorder"]
-> ![Select wiki version](_img/wiki/publish-wiki-select-version.png)
+> ![Select wiki version](media/wiki/publish-wiki-select-version.png)
 
 ## Unpublish a published wiki
 
@@ -64,12 +58,12 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 1. Select the wiki you want to unpublish, open the context menu, and select **Unpublish wiki**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Unpublish a wiki confirm dialog](_img/wiki/unpublish-wiki-code-option.png)
+	> ![Unpublish a wiki confirm dialog](media/wiki/unpublish-wiki-code-option.png)
 
 2. Confirm that you want to unpublish the wiki by choosing **Unpublish**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select wiki version](_img/wiki/unpublish-wiki.png)
+	> ![Select your wiki version](media/wiki/unpublish-wiki.png)
 
 ## Related articles
 

@@ -3,9 +3,7 @@ title: Manage new form roll out
 titleSuffix: TFS    
 description: Enable the new work item form for customizing the work tracking experience in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -34,36 +32,36 @@ When you're ready to rollout the new form, you choose the opt-in model which ena
 
 You enable the new form from the project collection admin page.     
 
-1. To start, choose the ![](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the project collection.  
+1. To start, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear Settings icon to open the admin context for the project collection.  
 
-	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
+	<img src="media/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
-	<img src="_img/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" style="border: 2px solid #C3C3C3;" />
+	<img src="media/manage-new-form-enable-new-form.png" alt="TFS 2017, Web portal, Project collection admin context, Enable new form" style="border: 2px solid #C3C3C3;" />
 
 	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md).  
 
 4. Click **Create new layout** to initiate the process of transforming the WIT definitions.  
 
-	<img src="_img/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" style="border: 2px solid #C3C3C3;" />
 
 <!---
 You enable the new form from the project collection admin page.    
 
 1. To start, open the admin context for the project.  
 
-	![Open admin context](../organizations/settings/work/_img/team-services-open-admin-context.png)  
+	![Open admin context](../organizations/settings/work/media/team-services-open-admin-context.png)  
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
-	![Process tab](_img/m-new-form-admin-enable.png)
+	![Process tab](media/m-new-form-admin-enable.png)
 
 	If you don't see the option to enable, you aren't a member of the Project Collection Administrators group. To get added as one, see [Add an administrator](../organizations/security/set-project-collection-level-permissions.md).  
 
 4. Click Create new layout to initiate the process of transforming the WIT definitions.  
 
-	![Process tab](_img/m_new-form-enable.png)  
+	![Process tab](media/m_new-form-enable.png)  
 -->
 
 <a id="review"></a>
@@ -73,11 +71,11 @@ The default opt-in model is to enable the new forms for members of the Project A
 
 Open a work item of each type to review the new form layout. Here, we open a user story. Switch to show the new form. 
 
-![User story, Switch to New form](_img/m-new-form-try-switch.png)
+![User story, Switch to New form](media/m-new-form-try-switch.png)
  
 Once you switch, all work item types for this project will display in the new form (unless you decide to [switch back](process/new-work-item-experience.md#switch-back)).  
 
-![New form, user story](_img/new-form-user-story.png)  
+![New form, user story](media/new-form-user-story.png)  
 
 If the work item is already open, refresh your browser to see the changes. 
 
@@ -91,15 +89,15 @@ Choose the opt-in model that supports your needs.
 - Choose **Enable opt-in for all users** when you want to enable the opt-in feature and allow users to switch back to the old form
 - Choose the **New form only** option when you want all users to begin using the new form immediately.  
 
-<img src="_img/manage-new-form-choose-opt-in-dialog.png" alt="Choose the opt-in mode for the new form dialog" style="border: 2px solid #C3C3C3;" />
+<img src="media/manage-new-form-choose-opt-in-dialog.png" alt="Choose the opt-in mode for the new form dialog" style="border: 2px solid #C3C3C3;" />
 
 If you choose **Enable opt-in for all users**, users will be able to choose when they convert to the new form view. 
 
-![Old web form, user story, Try the new form option](_img/m-new-form-try-switch.png)  
+![Old web form, user story, Try the new form option](media/m-new-form-try-switch.png)  
 
 As this switch is set on a per-user basis, other account users will continue to see the old form until they also choose to switch. After they make the switch, they can switch back.  
 
-![New web form, user story, Back to old form menu option](_img/m-new-form-user-story-switch-to-old-form.png)  
+![New web form, user story, Back to old form menu option](media/m-new-form-user-story-switch-to-old-form.png)  
 
 All work items automatically display using the new web form layout.  
 
@@ -110,7 +108,7 @@ Share the [New work item experience](process/new-work-item-experience.md) topic 
 
 If you find that you need to revert to the old WIT forms, you can do so.  
 
-<img src="_img/manage-new-form-disable-dialog.png" alt="Disable new form dialog" style="border: 2px solid #C3C3C3;" />
+<img src="media/manage-new-form-disable-dialog.png" alt="Disable new form dialog" style="border: 2px solid #C3C3C3;" />
 
 Disabling the new form will remove the **WebLayout** section from the XML definition files for all WITs defined within all projects in the collection.  
 

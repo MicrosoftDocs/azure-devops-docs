@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Dec 10
 description: VSTS release notes for December 10 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: ee451bdd-10c8-44cc-9d26-4b95a07035b2
@@ -16,21 +15,21 @@ As part of our ongoing efforts to make sure that Team Foundation Server is a gre
 
 The first thing that you will notice is purely cosmetic. We’ve renamed the “Source” hub and changed the hub order. It’s now the first thing after the team home page and we’ve called it “Code”, making the top bar read “Code, Work, Build” which I think makes a fine motto to live life by.
 
-![Code, Work, Build in the new web version control experience](_img/12_10_01.png)
+![Code, Work, Build in the new web version control experience](media/12_10_01.png)
 
 Clicking into the Code hub brings you into the updated Code Explorer view. We've been trying to make the explorer much more productive while also cleaning things up a bit. The navigation pane on the left hand side is now a full folder view allowing you to drill into your folder structure. Also you can easily switch between files by simply clicking on them. If you do not want to see the navigation pane then just click on the arrow to collapse it. It will remember your preference next time you come to this page.
 
 As you drill down into the folders you will notice that if you stay in a folder for a while then the details of the last changeset that affected each file are fetched for you along with the check-in comment and the person who made the change. Clicking on the file will show you the contents of it in the [rich code viewer that we've had since August](aug-27-team-services.md). But if you click on the changeset comment it will take you to a fantastic, newly improved changeset summary view showing you exactly what happened in the changeset all from a single page. This even includes inline diffs for files that have been edited and a summary of the total number of files edited, added or deleted.
 
-![Changeset summary view](_img/12_10_02.png)
+![Changeset summary view](media/12_10_02.png)
 
 By default the navigation pane is minimized when looking at the changeset summary, but you can click on the arrow on the left hand side if you want to expand the view to look at the individual files in the changeset. Alternatively, you can just click on the filename in the changeset summary view to see the contents of the file including a full diff view – also allowing you to switch between a side-by-side or inline diff view of the files depending on what you prefer.
 
-![Side-by-side diff view of a file](_img/12_10_03.png)
+![Side-by-side diff view of a file](media/12_10_03.png)
 
 Jumping back to the code explorer, you can easily see the history for the current path you are viewing by selecting the history tab. Here you will see a list of changesets affecting that path (or children of it) and you can quickly drill down into any of the changesets.
 
-![History view in code explorer](_img/12_10_04.png)
+![History view in code explorer](media/12_10_04.png)
 
 If you want to only see changes that you personally made then you can click “my changes”. For more complex changeset filtering, select the “advanced search” link as shown above. For example, you can filter by team member name, a date range or changeset range.
 

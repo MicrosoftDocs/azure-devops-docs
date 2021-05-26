@@ -1,0 +1,46 @@
+### YamlMime:Landing
+
+title: Azure DevOps documentation - what's new?
+summary: "Welcome to what's new in Azure DevOps docs. Use this page to quickly find the latest changes."
+
+metadata:
+  title: Azure DevOps documentation what's new?
+  description: "Learn about new and updated content in Azure DevOps docs."
+  ms.topic: landing-page
+  ms.date: 05/01/2020
+  author: steved0x
+  ms.author: sdanie
+
+landingContent:
+  - title: "Find Azure DevOps docs updates"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: April 2021
+            url: azure-devops-docs-whats-new.md
+          - text: March 2021
+            url: azure-devops-docs-2021-03.md
+          - text: February 2021
+            url: azure-devops-docs-2021-02.md
+          - text: January 2021
+            url: azure-devops-docs-2021-01.md
+          - text: December 2020
+            url: azure-devops-docs-2020-12.md
+          - text: November 2020
+            url: azure-devops-docs-2020-11.md
+
+  - title: "Get involved - contribute to Azure DevOps docs"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Azure DevOps docs repository"
+            url: https://github.com/MicrosoftDocs/azure-devops-docs/blob/master/README.md
+          - text: Microsoft docs contributor guide
+            url: /contribute/
+
+  - title: "Related what's new pages"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: What's new in Azure DevOps
+            url: ../features-timeline.md#current-features

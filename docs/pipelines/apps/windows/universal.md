@@ -2,12 +2,7 @@
 title: Build your Universal Windows Platform app
 ms.custom: seodec18
 description: Define a CI pipeline that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual Azure Pipelines.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/20/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
@@ -18,10 +13,10 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline.
+Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart, you learn how to define your CI pipeline.
 
 ## Prerequisites
 
@@ -31,25 +26,25 @@ Universal Windows Platform (UWP) is a common app platform available on every dev
 
 ## Get sample app code
 
-[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
+[!INCLUDE [include](../includes/get-sample-code-intro.md)]
 
-```
-https://github.com/Microsoft/UWPQuickStart
+```GitHub
+https://github.com/microsoft/Windows-appsample-rssreader
 ```
 
 # [Azure Repos or TFS repo](#tab/vsts)
 
-[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../includes/get-sample-code-vsts-tfs-2017-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
-[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+[!INCLUDE [include](../includes/get-sample-code-github.md)]
 
 ---
 
 ## Set up continuous integration
 
-[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
+[!INCLUDE [include](../../includes/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
@@ -57,11 +52,13 @@ https://github.com/Microsoft/UWPQuickStart
 
    # [Azure Repos or TFS repo](#tab/vsts)
 
-   Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
+   Under the **Build and Release** menu, select **Builds** then **New** to create a new build definition.
 
-   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+   :::image type="content" source="../media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
 
-   You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
+   Select a source and chose your team project, repository, and default branch then select **Continue**.
+    
+   **Select a template** or start with an **Empty process** to create your build pipeline.
 
    # [GitHub repo](#tab/github)
 
@@ -102,14 +99,14 @@ https://github.com/Microsoft/UWPQuickStart
 
 ## View the build summary
 
-[!INCLUDE [include](../_shared/view-build-summary.md)]
+[!INCLUDE [include](../includes/view-build-summary.md)]
 
 ## Next steps
 
 You can now update the build pipeline to generate production builds.
 
  * [Signing UWP package](/windows/uwp/packaging/create-certificate-package-signing)
- * [Associate package with the store](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)
+ * [Associate package with the store](/windows/msix/package/packaging-uwp-apps#configure-your-project)
  
 ## Related topics
 

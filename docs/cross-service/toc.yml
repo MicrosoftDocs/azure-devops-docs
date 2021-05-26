@@ -1,0 +1,8 @@
+- name: Manage requirements 
+  href: manage-requirements.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+- name: Manage change
+  href: manage-change.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+- name: End-to-end traceability
+  href: end-to-end-traceability.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
+- name: Link work items to other objects
+  href: ../notifications/add-links-to-work-items.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 

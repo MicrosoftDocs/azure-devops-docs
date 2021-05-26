@@ -2,12 +2,11 @@
 title: Add the Attachments control
 titleSuffix: TFS
 description: Add a file attachment control to a work item form for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 05/10/2017  
@@ -15,7 +14,7 @@ ms.date: 05/10/2017
 
 # Add the Attachments control
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 > [!NOTE]  
 > This topic applies to project customization for the On-premises XML process model using the old form layout. For the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -32,10 +31,10 @@ If you are designing a work item form from the ground up, you might want to add 
 </Tab>  
 ```  
   
- ![Attach files to a work item](_img/procguid_attachment.png "ProcGuid_Attachment")  
+ ![Attach files to a work item](media/procguid_attachment.png "ProcGuid_Attachment")  
   
   
- You must choose or attach a file before the buttons to open an attachment (![Open Attachment](_img/icon_openattachment.png "Icon_openAttachment")), save a copy (![Save](_img/icon_savewit.png "Icon_saveWIT") Save Copy), and delete an attachment (![Delete Item](_img/icon_deleteredxwit.png "Icon_deleteRedXWIT")) become available. For more information, see [Attachment control and fields](../../boards/queries/linking-attachments.md).  
+ You must choose or attach a file before the buttons to open an attachment (![Open Attachment](media/icon_openattachment.png "Icon_openAttachment")), save a copy (![Save](media/icon_savewit.png "Icon_saveWIT") Save Copy), and delete an attachment (![Delete Item](media/icon_deleteredxwit.png "Icon_deleteRedXWIT")) become available. For more information, see [Attachment control and fields](../../boards/queries/linking-attachments.md).  
   
  You can control the spacing and size of the attachment control by specifying the attributes in the following table.  
   

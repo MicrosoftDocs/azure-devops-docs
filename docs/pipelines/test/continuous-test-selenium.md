@@ -2,24 +2,21 @@
 title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.manager: mijacobs
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -37,8 +34,8 @@ app is deployed (usually to a QA environment).
 
 For more information about Selenium browser automation, see:
 
-* [Selenium HQ](https://www.seleniumhq.org/)
-* [Selenium documentation](https://www.seleniumhq.org/docs/)
+* [Selenium](https://www.selenium.dev/)
+* [Selenium documentation](https://www.selenium.dev/documentation)
 
 <a name="create-project"></a>
 ## Create your test project
@@ -66,7 +63,7 @@ from Visual Studio Test Explorer.
    * Selenium.WebDriver.ChromeDriver
    * Selenium.WebDriver.IEDriver<p />
 
-   ![Adding the browser driver packages to your solution](_img/continuous-test-selenium/continuous-test-selenium-02.png)
+   ![Adding the browser driver packages to your solution](media/continuous-test-selenium/continuous-test-selenium-02.png)
 
 3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
@@ -164,7 +161,7 @@ from Visual Studio Test Explorer.
 ## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
-For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
+For more details, see [Build your .NET desktop app for Windows](../apps/aspnet/build-aspnet-4.md).
 
 ## Create your web app
 
@@ -207,29 +204,29 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you don't have an existing release pipeline that deploys your web app:
 
-   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](_shared/pipelines-hub-include.md)] and choose the **+** icon, then choose
+   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](includes/pipelines-hub-include.md)] and choose the **+** icon, then choose
      **Create release pipeline**.
      
-     ![Creating a new release pipeline](_img/continuous-test-selenium/continuous-test-selenium-06.png)
+     ![Creating a new release pipeline](media/continuous-test-selenium/continuous-test-selenium-06.png)
  
    * Select the **Azure App Service Deployment** template and choose **Apply**.
    
    * In the **Artifacts** section of the **Pipeline** tab, choose **+ Add**. Select your build artifacts
      and choose **Add**.
 
-     ![Selecting the artifacts](_img/continuous-test-selenium/continuous-test-selenium-07.png)
+     ![Selecting the artifacts](media/continuous-test-selenium/continuous-test-selenium-07.png)
 
    * Choose the **Continuous deployment trigger** icon in the **Artifacts** section of the **Pipeline** tab.
      In the Continuous deployment trigger pane, enable the trigger so that a new release is created from every build.
      Add a filter for the default branch.   
 
-     ![Configuring continuous deployment](_img/continuous-test-selenium/continuous-test-selenium-08.png)
+     ![Configuring continuous deployment](media/continuous-test-selenium/continuous-test-selenium-08.png)
 
    * Open the **Tasks** tab, select the **Stage 1** section, and enter your subscription
      information and the name of the web app where you want to deploy the app and tests.
      These settings are applied to the **Deploy Azure App Service** task.
 
-     ![Configuring the variables](_img/continuous-test-selenium/continuous-test-selenium-08a.png)
+     ![Configuring the variables](media/continuous-test-selenium/continuous-test-selenium-08a.png)
 
 2. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
 
@@ -237,27 +234,27 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
      Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
      at the default values.<p />
 
-     ![Adding a Visual Studio Test Platform Installer task](_img/continuous-test-selenium/continuous-test-selenium-09.png)
+     ![Adding a Visual Studio Test Platform Installer task](media/continuous-test-selenium/continuous-test-selenium-09.png)
   
      You can find a task more easily by using the search textbox.
 
 3. In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
    Select the **Visual Studio Test** task and choose **Add**.
 
-   ![Adding a Visual Studio Test task](_img/continuous-test-selenium/continuous-test-selenium-09a.png)
+   ![Adding a Visual Studio Test task](media/continuous-test-selenium/continuous-test-selenium-09a.png)
 
 4. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
    task to **Installed by Tools Installer**.
 
-   ![Setting the test platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
+   ![Setting the test platform version](media/continuous-test-selenium/continuous-test-selenium-10.png)
 
    [How do I pass parameters to my test code from a build pipeline?](../../test/run-automated-tests-from-test-hub.md#pass-params)
 
 5. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
    choosing **Create release** from the **Release** drop-down list in the release pipeline.
 
-   ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
+   ![Creating a new release](media/continuous-test-selenium/continuous-test-selenium-11.png)
 
    <a name="view-results"></a>
 

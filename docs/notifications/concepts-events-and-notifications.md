@@ -1,24 +1,21 @@
 ---
 title: Events, subscriptions, and notifications
 titleSuffix: Azure DevOps 
-description: Learn about events and subscriptions in Azure DevOps and Team Foundation Server (TFS), and how they're used to create notifications to users.
+description: Learn about events and subscriptions in Azure DevOps, and how they're used to create notifications to users.
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 01/14/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Events, subscriptions, and notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-> [!NOTE]
-> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
+This article describes the different actions or operations that generate email notifications. 
 
 ## Events
 
@@ -32,13 +29,13 @@ A notification **subscription** is associated with a [supported event type](oob-
 
 Many useful email subscriptions are pre-defined and enabled by default in the system. They're known as **default subscriptions**. Default subscriptions provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
 
-An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team notifications](manage-team-group-notifications.md) or [manage organization level notifications](manage-organization-notifications.md).
+An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team and organization notifications](manage-team-group-global-organization-notifications.md).
 
 Individual users can choose to opt out of any default subscription while other team members continue to be subscribed. Learn how to [manage personal notification subscriptions](manage-your-personal-notifications.md).
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](manage-team-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md). To learn more about querying with group clauses, see [Create managed queries](../boards/queries/using-queries.md#group-clauses).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 
@@ -48,6 +45,6 @@ Individuals can also create custom subscriptions, which apply only to them. Lear
 
 ## Notifications
 
-When an **event** occurs in Azure DevOps or TFS, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
+When an **event** occurs in Azure DevOps, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
 
 Each notification is then delivered based on the delivery properties defined in the subscription (either as an email or as a service hook). [Learn more about email delivery options](concepts-email-recipients.md).

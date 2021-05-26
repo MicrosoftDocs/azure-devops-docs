@@ -2,8 +2,6 @@
 title: Customize your pipeline
 ms.custom: seodec18
 description: Step-by-step tutorial to customize a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
@@ -15,7 +13,7 @@ monikerRange: ">= azure-devops-2019"
 
 # Customize your pipeline
 
-[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-server-2019-rtm](includes/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
@@ -32,28 +30,28 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
 
    ```yaml
     trigger:
-    - master
+    - main
 
     pool:
       vmImage: 'Ubuntu-16.04'
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx3072m'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-          jdkArchitectureOption: 'x64'
-          publishJUnitResults: false
-          testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'package'
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: false
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
    ```
 
    > [!Note]
    > The contents of your YAML file may be different depending on the sample repo you started with, or upgrades made in Azure Pipelines.
     
-This pipeline runs whenever your team pushes a change to the master branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
+This pipeline runs whenever your team pushes a change to the main branch of your repo. It runs on a Microsoft-hosted Linux machine. The pipeline process has a single step, which is to run the Maven task.
 
 ## Change the platform to build on
 
@@ -77,7 +75,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "macos-10.13"
+      vmImage: "macos-latest"
     ```
     
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
@@ -122,7 +120,7 @@ You can build and test your project on multiple platforms. One way to do it is w
         linux:
           imageName: "ubuntu-16.04"
         mac:
-          imageName: "macos-10.13"
+          imageName: "macos-10.14"
         windows:
           imageName: "vs2017-win2016"
       maxParallel: 3
@@ -169,7 +167,7 @@ To build a project using different versions of that language, you can use a `mat
 
     ```yaml
     trigger:
-    - master
+    - main
 
     strategy:
       matrix:
@@ -185,58 +183,58 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: "pom.xml"
-          mavenOptions: "-Xmx3072m"
-          javaHomeOption: "JDKVersion"
-          jdkVersionOption: $(jdk_version)
-          jdkArchitectureOption: "x64"
-          publishJUnitResults: true
-          testResultsFiles: "**/TEST-*.xml"
-          goals: "package"
+    - task: Maven@3
+      inputs:
+        mavenPomFile: "pom.xml"
+        mavenOptions: "-Xmx3072m"
+        javaHomeOption: "JDKVersion"
+        jdkVersionOption: $(jdk_version)
+        jdkArchitectureOption: "x64"
+        publishJUnitResults: true
+        testResultsFiles: "**/TEST-*.xml"
+        goals: "package"
     ```
 
-* Select **Save** and then confirm the changes to see your build run three jobs on three different platforms and SDKs.
+* Select **Save** and then confirm the changes to see your build run two jobs on two different platforms and SDKs.
 
 ## Customize CI triggers
 
-You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually master). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
+You can use a `trigger:` to specify the events when you want to run the pipeline. YAML pipelines are configured by default with a CI trigger on your default branch (which is usually main). You can set up triggers for specific branches or for pull request validation. For a pull request validation trigger just replace the `trigger:` step with `pr:` as shown in the two examples below.
 
 * If you'd like to set up triggers, add either of the following snippets at the beginning of your `azure-pipelines.yml` file.
 
     ```yaml
     trigger:
-      - master
+      - main
       - releases/*
     ```
 
     ```yaml
     pr:
-      - master
+      - main
       - releases/*
     ```
 
-    You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
+    You can specify the full name of the branch (for example, `main`) or a prefix-matching wildcard (for example, `releases/*`).
 
 ## Customize settings
 
 There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
 1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
 2. Select the pipeline you want to configure settings for from the list of pipelines.
-3. Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
+3. Choose **More actions** :::image type="icon" source="../media/icons/more-actions.png"::: and select **Settings**.
 
 ### Processing of new run requests
 Sometimes you'll want to prevent new runs from starting on your pipeline. 
 
 * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
-* **Paused** pipelines allow run requests to be processed, but those requests queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+* **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
 * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 
 ### Other settings
-* **YAML file path.** If you ever need to direct your pipeline to use a different YAMl file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+* **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
-* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
+* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
@@ -249,6 +247,6 @@ You've just learned the basics of customizing your pipeline. Next we recommend t
 
 Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../pipelines/process/deployment-jobs.md) with steps to deploy your app to an [environment](../pipelines/process/environments.md).
 
-To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
+To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting/troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).

@@ -1,19 +1,19 @@
-﻿---
+---
 title: Edit WIT definition to add web content
 titleSuffix: TFS
 description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 02/14/2017
 ---
 
 # Edit a WIT definition to add web content to a work item form
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can add web content or HTML content to a work item form by exporting the type definition XML file and adding a `WebpageControl` in the `FORM` section. After you modify and import the XML file, you can verify the display of the Web content in the updated work item type.  
   
@@ -28,7 +28,7 @@ The Web content that you display can be specified in one of the following ways:
 For information about the syntax structure of the elements used to add Web content to a work item type (WIT), see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md) and [Link and Param](link-param-xml-elements-reference.md).  
   
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
   
   
 <a name="Export"></a> 
@@ -134,7 +134,7 @@ For information about the syntax structure of the elements used to add Web conte
 <a name="Verify"></a> 
 ## Verify the Web page or HTML content appears in the form  
   
-1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the **Work Items** node is refreshed. Nodes that are still loading display the word **working**.  
   

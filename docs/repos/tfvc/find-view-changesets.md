@@ -3,11 +3,7 @@ title: Find and view changesets
 titleSuffix: Azure Repos
 description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,17 +12,17 @@ monikerRange: '>= tfs-2015'
 
 # Find and view changesets
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 
-![Version Control Changesets](_img/find-view-changesets/IC263819.png)   
+![Version Control Changesets](media/find-view-changesets/IC263819.png)   
 
 You can view a changeset to see what the exact file changes were, discover the owner's comments, find linked work items, and see if any policy warnings were triggered.
 
 **Required Permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Find a changeset by ID
 
@@ -34,7 +30,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
     The **Go to Changeset** dialog box appears.
 
-    ![Go to Changeset dialog box](_img/find-view-changesets/IC612254.png)
+    ![Go to Changeset dialog box](media/find-view-changesets/IC612254.png)
 
     Type the number of the changeset and choose **OK**.
 
@@ -47,7 +43,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 2.  In the [History window](get-history-item.md), select the row that contains the changeset for which you want to view details, open its shortcut menu, and then choose **Changeset Details**.
 
     The **Changeset Details** page appears in Team Explorer.   
-    ![Changeset Details page](_img/find-view-changesets/IC592883.png)
+    ![Changeset Details page](media/find-view-changesets/IC592883.png)
     
 <table>
 <thead>
@@ -58,7 +54,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 <tbody>
 <tr>
 <td><ul>
-<li><p>You can <img src="_img/find-view-changesets/IC667296.png" title="Undock" alt="Undock" /> undock the <strong>Pending Changes</strong> page from Team Explorer and open it in a new window.</p></li>
+<li><p>You can <img src="media/find-view-changesets/IC667296.png" title="Undock" alt="Undock" /> undock the <strong>Pending Changes</strong> page from Team Explorer and open it in a new window.</p></li>
 <li><p>You can toggle between tree and list view from the <strong>Actions</strong> menu (Visual Studio 2013) or <strong>View Options</strong> menu (Visual Studio 2015).</p></li>
 </ul></td>
 </tr>
@@ -73,9 +69,9 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
    The **Find Changesets** dialog box appears.
 
-   ![Find Changesets dialog box](_img/find-view-changesets/IC612255.png)
+   ![Find Changesets dialog box](media/find-view-changesets/IC612255.png)
 
-2. (Optional) Next to the <strong>Containing File **box, choose **Browse</strong>.
+2. (Optional) In **Containing file**, select **Browse**.
 
 3. (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
 
@@ -95,7 +91,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
    The **Details for Changeset** dialog box appears.
 
-   ![Details for Changeset dialog box](_img/find-view-changesets/IC615597.png)
+   ![Details for Changeset dialog box](media/find-view-changesets/IC615597.png)
 
 7. In the **Details for Changeset** dialog box, view the change types that were added and any comments, work items, check-in notes, and policy warnings that are associated with the changeset.
 
@@ -128,6 +124,6 @@ To view or modify changesets and to learn about other options, see [Changeset Co
 
 ## Tips
 
--   ![Tip](_img/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
+-   ![Tip](media/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
 
--   ![Tip](_img/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).
+-   ![Tip](media/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).

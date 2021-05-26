@@ -1,7 +1,0 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Marketplace & extensibility
-    tocHref: /azure/devops/marketplace/
-    topicHref: /azure/devops/marketplace-extensibility/index

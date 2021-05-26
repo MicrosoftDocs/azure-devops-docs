@@ -3,9 +3,8 @@ title: WebLayout XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +14,7 @@ ms.date: 11/28/2017
 
 # WebLayout and Control elements  
 
-[!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../../includes/version-header-hosted-plus-tfs.md)]
 
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
@@ -62,9 +61,9 @@ The **WebLayout** and updated **Control** elements introduce several new element
 
 In the new web form layout, the system manages several header elements within the **SystemControls** element. These include: 
 - **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
-- **Pages**: ![History page icon](../../boards/_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/_img/icons/icon-attachments-tab-wi.png) Attachments.  
+- **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.  
 
-<img src="_img/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
+<img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 
@@ -525,9 +524,9 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <p>Use <code>DateTimeControl</code> to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
-<img src="_img/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
+<img src="media/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](/azure/devops/organizations/settings/set-your-preferences)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
+<blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](../../organizations/settings/set-your-preferences.md)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
 </td>
 </tr>
 
@@ -539,7 +538,7 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 <blockquote>
 <strong>Feature availability:</strong> The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
-<img src="_img/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
+<img src="media/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
 
 </td>
 </tr>
@@ -547,7 +546,7 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 <tr>
 <td><strong>HTMLFieldControl</strong></td>
 <td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of <code>Type=HTML</code>.<br/>
-<img src="_img/html-field-control.png" alt="HTML field shown on work item form"/><br/>
+<img src="media/html-field-control.png" alt="HTML field shown on work item form"/><br/>
 For example:<br/><pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; 
 Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 </code></pre>
@@ -674,5 +673,4 @@ Given the above example, you can add the following code snippet to your work ite
 
 Upon import of the updated WIT definition, the group extension will automatically appear on your work item form.
 
-The next time you export your WIT definition, you'll see that a ```GroupContribution``` element has been added. You can move this element within the ```WebLayout``` section just as you would any other control. 
-
+The next time you export your WIT definition, you'll see that a ```GroupContribution``` element has been added. You can move this element within the ```WebLayout``` section just as you would any other control.

@@ -3,10 +3,8 @@ title: Add built-in charts to a team dashboard
 titleSuffix: Azure DevOps
 description: Add system-generated charts or query-based charts to a team dashboard in Azure DevOps & Team Foundation Server  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 08/30/2019
 
 # Add charts to a dashboard
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 
 ::: moniker range="tfs-2013"
@@ -25,11 +23,11 @@ ms.date: 08/30/2019
 
 <a id="add-charts"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Analytics, Builds, Releases, or Queries. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Builds, Releases, or Queries. 
 ::: moniker-end
 
@@ -39,23 +37,23 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/accounts/set-up-vs). 
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/accounts/set-up-vs.md). 
 - You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.  
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users).
-- Anyone with access to a project, including [stakeholders](/azure/devops/organizations/security/get-started-stakeholder), can view dashboards.
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md).
+- Anyone with access to a project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have [dashboard permissions](./dashboard-permissions.md). In general, you need to be a member of the team to edit a team dashboard.
 
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
+::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.  
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions). In general, you need to be a member of the team to edit a team dashboard.
- Request your current team or project admin to add you as a [team admin](/azure/devops/organizations/settings/add-team-administrator).  
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a team admin, a project admin, or have [dashboard permissions](./dashboard-permissions.md). In general, you need to be a member of the team to edit a team dashboard.
+ Request your current team or project admin to add you as a [team admin](../../organizations/settings/add-team-administrator.md).  
 
 
 ::: moniker-end
@@ -69,10 +67,10 @@ You can add the charts described in this article to a dashboard from their corre
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.  
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](/azure/devops/organizations/settings/add-team-administrator).  
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be added to the [team administrator role for the team](../../organizations/settings/add-team-administrator.md).  
 
 ::: moniker-end
 
@@ -82,34 +80,34 @@ To learn more, see [Default permissions and access for charts and dashboards](ch
 
 ## In-context work tracking reports 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can add each of the in-context Analytics reports to a dashboard. 
 
-1. Simply open the report, choose the ![ ](_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. Simply open the report, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/add-analytics-chart.png)  
+	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart.png)  
 
 	To open a report, see [Cumulate Flow Diagram](cumulative-flow.md#view-the-cfd-in-context-report), [Velocity](team-velocity.md#view-the-velocity-in-context-report), or [Sprint burndown](configure-sprint-burndown.md#view-context-report).
 
 1. Choose the dashboard and choose **OK**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/select-a-dashboard-dialogue.png)  
+	> ![Choose the dashboard and choose OK.](media/add-charts/select-a-dashboard-dialogue.png)  
 
-1. (Optional) Open the dashboard and choose the ![ ](_img/icons/actions-icon.png) actions icon for the widget to configure the size or change other report properties. 
+1. (Optional) Open the dashboard and choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon for the widget to configure the size or change other report properties. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 There are a number of in-context reports that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
-- [Team velocity](../guidance/team-velocity.md)
+- [Team velocity](./team-velocity.md)
 - [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
-- [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md)
+- [Cumulative flow](./cumulative-flow.md), see [CFD widget](widget-catalog.md)
 
 ::: moniker-end
 
@@ -127,13 +125,13 @@ Each time a build is run, it logs information about the build, including the run
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Pipelines>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
-	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
+	![Add a build summary chart to a dashboard](media/add-chart-build-summary.png)  
 
 	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
-	![Add a test plan chart to a dashboard](_img/add-a-dashboard-build-summary.png)  
+	![Build summary chart.](media/add-a-dashboard-build-summary.png)  
 
 	Hover over a bar to view build information and run time. Choose a bar to go to the build summary page.   
 
@@ -155,11 +153,11 @@ Each time a release is deployed, it logs information about the release to each o
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Add a Release pipeline chart to a dashboard, new nav](_img/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
+	> ![Add a Release pipeline chart to a dashboard, new nav](media/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](_img/add-cd-release-definition-tile.png)  
+	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -171,11 +169,11 @@ Each time a release is deployed, it logs information about the release to each o
 
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
 
-    ![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
+    ![Add a Release pipeline chart to a dashboard](media/add-cd-release-definition.png)  
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](_img/add-cd-release-definition-tile.png)  
+	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -193,7 +191,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
-	![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
+	![Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
    ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -220,11 +218,11 @@ Requires TFS 2017.2 or later version.
 
 2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and choose the bar chart for either Test failures or Test duration.    
 
-	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
+	![Add a test plan chart to a dashboard](media/add-chart-test-quality.png)  
 
-3. Open the ![ ](_img/icons/actions-icon.png) actions menu and choose the dashboard to add the chart to.  
+3. Open the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions menu and choose the dashboard to add the chart to.  
 
-	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
+	![Open Actions menu and select dashboard](media/add-chart-test-failures.png)  
 
 	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
@@ -248,7 +246,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 4. From the charts Actions menu, choose the team dashboard.  
 
-	![Chart context menu, add to a dashboard](_img/pin-chart-to-a-dashboard.png)  
+	![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
 
 	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
 ::: moniker-end
@@ -269,7 +267,7 @@ Requires TFS 2015.2 or later version.
 
 ::: moniker range="> tfs-2015 <= tfs-2018"
 <!-- TODO: Update image - I don't think this is supported for latest version-->
-<img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 
 

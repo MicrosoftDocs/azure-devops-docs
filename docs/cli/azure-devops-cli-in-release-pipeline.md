@@ -1,22 +1,21 @@
 ---
 title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps CLI to create a release pipeline
+description: Learn how to to create a release pipeline using Azure DevOps CLI 
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 
 # Azure DevOps CLI in a release pipeline
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 
@@ -25,32 +24,32 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 1. Create a release pipeline.
 
 	> [!div class="mx-imgBorder"]  
-	> ![new release pipeline](_img/new-pipeline.png)
+	> ![new release pipeline](media/new-pipeline.png)
 
 2. Choose **Empty job**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![select template](_img/select-template.png)
+	> ![select template](media/select-template.png)
 
 3. Choose Stage 1 to configure the stage.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Stage 1](_img/stage-1.png)
+	> ![Stage 1](media/stage-1.png)
 
-4. Choose the **Tasks** page, and configure the job to use Hosted Mac OS in Agent Pools.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Agent Job Configuration](_img/job-config.png)
-
-5. Choose the ![ ](../_img/icons/blue-add.png) plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
+4. Choose the **Tasks** page, and configure the job to use Hosted macOS in Agent Pools.
 
 	> [!div class="mx-imgBorder"]  
-	> ![PowerShell](_img/power-shell.png)
+	> ![Agent Job Configuration](media/job-config.png)
+
+5. Choose the :::image type="icon" source="../media/icons/blue-add.png" border="false"::: plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
+
+	> [!div class="mx-imgBorder"]  
+	> ![PowerShell](media/power-shell.png)
 
 6. Add the script, either via file or inline. For the example, the script has been included inline.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add script](_img/script-1.png)
+	> ![Add script](media/script-1.png)
 
 For reference, here is the inline script:
 

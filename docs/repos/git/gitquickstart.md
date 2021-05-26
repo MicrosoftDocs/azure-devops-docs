@@ -3,32 +3,30 @@ title: Get started with Git and Visual Studio 2017
 titleSuffix: Azure Repos
 description: Quickstart with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2017'
 ---
 
 
-# Get Started with Azure Repos and Visual Studio
+# Get started with Azure Repos and Visual Studio
+
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2017**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)   
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  
-
-This guide covers the basics so you can get up and running using Git with code already in Azure Repos or Azure DevOps Server.
-Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line.
-
-Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
+Get up and running using Git with code already in Azure Repos. 
+For more information on how to use Git from Visual Studio or the command line, see [Azure Repos Git tutorial](gitworkflow.md).
 
 If you don't have your code in an Azure Repos or Azure DevOps Server Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Azure Repos.
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 <a name="clone"></a>
 
@@ -39,15 +37,18 @@ To get a copy of the source code, you [clone](clone.md) a Git repository. Clonin
 If you don't have a Git repository yet, you can create one [using your own code](creatingrepo.md). Continue with the steps in this article to commit and share your work.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Connect** to open the **Connect** page, and then choose **Manage Connections** > **Connect to Project**.
 
-   ![Cloning Azure DevOps Server Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png) 
+   ![Cloning Azure DevOps Server Git repositories in Visual Studio](media/gitquickstart-vs2017/manage-connections.png) 
 
 1. In **Connect to a Project**, select the repo you want to clone and select **Clone**. If you don't see your repo, select **Add Azure DevOps Server** to add a server that hosts a repo. You can filter the list to find your repo.
 
-   ![Cloning a Git Repository from a connected organization in Azure Repos](_img/gitquickstart-vs2017/vs2019-connect-add-server.png)
+   ![Cloning a Git Repository from a connected organization in Azure Repos](media/gitquickstart-vs2017/vs2019-connect-add-server.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your computer and select **Clone**.
 
@@ -58,9 +59,9 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 1. Open the Azure DevOps Services web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
 
-   ![Finding the Clone URL for your Git Repository in Azure Repos](_img/gitquickstart-vs2017/clone-url.png)
+   ![Finding the Clone URL for your Git Repository in Azure Repos](media/gitquickstart-vs2017/clone-url.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. At the command prompt, go to the folder where you want the code stored on your local computer.
 
@@ -77,37 +78,40 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work in the project.
+Git [branches](./create-branch.md) isolate your changes from other work in the project.
 The recommended [Git workflow](gitworkflow.md) uses a new branch for every feature or fix you work on.
 You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select the **Home** button and choose **Branches**. 
 
-   ![Branches](_img/gitquickstart-vs2017/branches.png)
+   ![Screenshot showing Branches in Team Explorer.](media/gitquickstart-vs2017/branches.png)
 
-1. Right-click the master branch and choose **New Local Branch From**.
+1. Right-click the main branch and choose **New Local Branch From**.
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](_img/gitquickstart-vs2017/new-local-branch-menu.png)  
+   ![Creating a Local Branch off the Main branch in Visual Studio](media/gitquickstart-vs2017/new-local-branch-menu.png)  
 
 1. Enter a descriptive branch name for your work to remind you and others what kind of work is in the branch. Select **Create Branch**.
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](_img/gitquickstart-vs2017/new-local-branch.png) 
+   ![Enter a descriptive branch name and select Create Branch.](media/gitquickstart-vs2017/new-local-branch.png) 
 
 1. Make changes to your files in the cloned repo. From the Team Explorer **Home** view, you can open Visual Studio solutions in the repo or browse the repo contents using **Show Folder View**. Git keeps track of changes made to your code both inside and outside of Visual Studio.
 
 1. When you're satisfied with the changes, save them in Git using a commit. Open the **Changes** view from Team Explorer by selecting the **Home** button and choosing **Changes**.
 
-   ![Changes](_img/gitquickstart-vs2017/changes.png)
+   ![Screenshot that shows opening the Changes view.](media/gitquickstart-vs2017/changes.png)
 
 1. Enter a message that describes the commit, and select **Commit All**.
 
-   ![Commit All](_img/gitquickstart-vs2017/commit-all.png)
+   ![Commit All](media/gitquickstart-vs2017/commit-all.png)
 
    >[!NOTE]
    >If you have multiple files and you don't want to commit them all, you can right-click each file and choose **Stage**. When you have staged all the files you would like to commit, select **Commit Staged**. **Commit Staged** replaces **Commit All** when you manually stage your changes before the commit.
    >
-   >![Stage files](_img/gitquickstart-vs2017/stage-changes.png)
+   >![Stage files](media/gitquickstart-vs2017/stage-changes.png)
 
 
 #### [Command Line](#tab/command-line/)
@@ -144,36 +148,39 @@ You make [commits](commits.md) in your local Git repository to save your changes
 When you're ready to share your changes with the team, [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch.
 
-Once you push the changes, you can create a [pull request](pullrequest.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the master branch of the code.
+Once you push the changes, you can create a [pull request](pull-requests.md). A pull request lets others know you'd like to have the changes reviewed. After approval, a pull request adds your changes to the main branch of the code.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
-   ![Synchronization](_img/gitquickstart-vs2017/sync.png)
+   ![Synchronization](media/gitquickstart-vs2017/sync.png)
 
    You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](_img/gitquickstart-vs2017/commit-created-locally.png)
+   ![Choose Sync immediately after making a commit.](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 
-   ![Push](_img/gitquickstart-vs2017/push-to-origin.png)
+   ![Push](media/gitquickstart-vs2017/push-to-origin.png)
 
    If this push is your first to the repository, you'll see the following message: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes, you'll see the list of commits.
 
 1. Create a pull request so that others can review your changes. Open **Pull Requests** in Team Explorer by selecting **Home** and choosing **Pull Requests**.
 
-   ![Pull Requests](_img/gitquickstart-vs2017/pull-requests.png)
+   ![Pull Requests](media/gitquickstart-vs2017/pull-requests.png)
 
 1. In **Pull Requests**, you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open a web browser where you can create the new pull request in the Azure Repos web portal.
 
-   ![Pull Requests](_img/gitquickstart-vs2017/new-pull-request.png)
+   ![Select New Pull Request.](media/gitquickstart-vs2017/new-pull-request.png)
 
-1. Verify your branches. In this example, we want to merge the commits from the `ReadMeFix` branch into the `master` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and then select **Create**.
+1. Verify your branches. In this example, we want to merge the commits from the `ReadMeFix` branch into the `main` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and then select **Create**.
 
-   ![Create a Pull Request in the web portal](_img/gitquickstart-vs2017/create-pull-request.png)
+   ![Create a Pull Request in the web portal](media/gitquickstart-vs2017/create-pull-request.png)
 
-   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
+   For more information on pull requests, see the [pull request](pull-requests.md) tutorial.
 
 #### [Command Line](#tab/command-line/)
 1. Push your branch so that others can see the changes you've saved.
@@ -184,16 +191,16 @@ Once you push the changes, you can create a [pull request](pullrequest.md). A pu
 
 1. Open the project in the web portal and browse to your repository under the **Code** tab. Select **Create a pull request** to create a pull request for the branch that you pushed.
 
-   ![Creating a new Pull Request in Azure Repos](_img/gitquickstart-vs2017/create-pull-request-web-portal.png)
+   ![Creating a new Pull Request in Azure Repos](media/gitquickstart-vs2017/create-pull-request-web-portal.png)
 
-1. Verify your branches. In this example, we want to merge the commits from the `ReadMeFix` branch into the `master` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and select **Create**.
+1. Verify your branches. In this example, we want to merge the commits from the `ReadMeFix` branch into the `main` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and select **Create**.
 
-   ![Create a Pull Request in the web portal](_img/gitquickstart-vs2017/create-pull-request.png)
+   ![Create a Pull Request in the web portal](media/gitquickstart-vs2017/create-pull-request.png)
 
 1. Once the changes are approved, complete the pull request.
-   A complete pull request adds your changes from the branch into the master branch of the code.
+   A complete pull request adds your changes from the branch into the main branch of the code.
 
-   For more information on pull requests, see the [pull request](pullrequest.md) tutorial.
+   For more information on pull requests, see the [pull request](pull-requests.md) tutorial.
 
 * * *
 <a name="pull"></a>
@@ -206,13 +213,16 @@ It's a good idea to pull your branches regularly to keep them up to date with th
 Pulling often makes sure that your feature branches from your main branch are using the latest version of the code.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 1. In Team Explorer, select **Home** and choose **Sync** to open **Synchronization**.
 
-   ![Synchronization](_img/gitquickstart-vs2017/sync.png)
+   ![Synchronization with others.](media/gitquickstart-vs2017/sync.png)
 
 1. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
 
-   ![Download changes to your local repo](_img/gitquickstart-vs2017/incoming-commits.png)
+   ![Download changes to your local repo](media/gitquickstart-vs2017/incoming-commits.png)
 
 #### [Command Line](#tab/command-line/)
 1. Switch to the branch where you want to download the changes others have made. 

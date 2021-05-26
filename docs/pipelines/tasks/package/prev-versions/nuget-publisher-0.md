@@ -2,12 +2,8 @@
 title: NuGet Publisher task Version 0.*
 ms.custom: seodec18
 description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
-ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/10/2016
 ---
 
@@ -15,7 +11,7 @@ ms.date: 08/10/2016
 
 **Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-Use this task in a build or release pipeline to publish your NuGet package to a server and update your feed.
+Use this task to publish your NuGet package to a server and update your feed.
 
 ## Demands
 
@@ -25,7 +21,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.md)]
+[!INCLUDE [temp](../../includes/yaml/NuGetPublisherV0.md)]
 
 ::: moniker-end
 
@@ -70,12 +66,12 @@ None
 </td>
 </tr>
 
-[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 </table>
 
 ## Examples
 
-[!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
+[!INCLUDE [temp](../../includes/nuget-create-step-examples.md)]

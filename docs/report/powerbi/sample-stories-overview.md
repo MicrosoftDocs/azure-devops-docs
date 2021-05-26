@@ -2,34 +2,33 @@
 title: Requirements tracking, Stories overview report 
 titleSuffix: Azure DevOps
 description: Power BI query to generate a report that tracks work progress and status of tests and bugs
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '> azure-devops-2019'
+monikerRange: '>= azure-devops-2020'
 ms.date: 12/16/2019
 ---
 
 # Requirements tracking sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)  
 
-[!INCLUDE [stories-overview-info](_shared/sample-stories-overview-info.md)]
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]  
 
-[!INCLUDE [stories-overview-prereqs](_shared/sample-stories-overview-prereqs.md)]
+
+[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]  
 
 
 ## Sample queries
@@ -45,7 +44,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -79,7 +78,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
@@ -114,7 +113,7 @@ $filter=(
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -145,7 +144,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
@@ -173,11 +172,16 @@ $apply=filter(
 
 ***
 
+
+
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
+
+
 ### Query for status of bugs linked to the requirements
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -209,7 +213,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -234,7 +238,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](_shared/sample-stories-overview-sub-breakdown.md)]
+[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
 
 
 ## Power BI transforms
@@ -256,14 +260,14 @@ To create the report, perform the following steps:
 1. Add the columns you are interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
+    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Requirements tracking report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Requirements tracking report](media/odatapowerbi-storiesoverview.png)
 
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

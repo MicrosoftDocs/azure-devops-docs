@@ -3,10 +3,7 @@ title: Jenkins Queue Job build and release task
 ms.custom: seodec18
 description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/17/2019
@@ -15,13 +12,13 @@ monikerRange: '>= tfs-2017'
 
 # Jenkins Queue Job task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to queue a job on a Jenkins server.
+Use this task to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +30,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/JenkinsQueueJobV2.md)]
+[!INCLUDE [temp](../includes/yaml/JenkinsQueueJobV2.md)]
 
 ::: moniker-end
 
@@ -83,7 +80,7 @@ None
       </td>
    </tr>
    <tr>
-      <td><code>parameterizedJob</code><br/>Parameterized job</td>
+      <td><code>isParameterizedJob</code><br/>Parameterized job</td>
       <td>
          <p>(Required) Select if the Jenkins job accepts parameters. This job should be selected even if all default parameter values are used and no parameters are specified.</p><br/>Default value: false
       </td>
@@ -91,18 +88,21 @@ None
    <tr>
       <td><code>jobParameters</code><br/>Job parameters</td>
       <td>
-         <p>(Optional) This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b>
-         <p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, for example, specify <b>parameterName=</b>
-         <p>Variables are supported, for example, to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.
-         <p>Supported Jenkins parameter types are: 
-         <ul>
-            <li>Boolean</li>
-            <li>String</li>
-            <li>Choice</li>
-            <li>Password</li>
-         </ul>
-         </p><br/>Argument aliases: <code>isParameterizedJob</code>
-      </td>
+         <p>This option is available for parameterized jobs. Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b> preceded by | on the first line. Example:
+         <p>jobParameters: | </br>
+            parameter1=value1 </br>
+            parameter2=value2 </br>
+         </p>
+         <p>To set a parameter to an empty value (useful for overriding a default value), omit the parameter value. For example, specify <b>parameterName=</b></p>
+         <p>Variables are supported. For example, to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.</p>
+         <p>Supported Jenkins parameter types are:
+            <ul>
+              <li>Boolean</li>
+              <li>String</li>
+              <li>Choice</li>
+              <li>Password</li></ul>
+              </p>
+       </td>
    </tr>
 </table>
 
@@ -112,7 +112,7 @@ You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatic
 
 To set it up:
 
-1. Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
+1. Install the [Team Foundation Server Plug-in](https://www.jenkins.io/doc/pipeline/steps/tfs/) on the Jenkins server.
 
 2. On the Jenkins server, for each job you would like to collect results from, add the **Collect results for Azure Pipelines/TFS** post-build action and then configure it with one or more pairs of result type and include file pattern.
 
@@ -124,16 +124,16 @@ Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

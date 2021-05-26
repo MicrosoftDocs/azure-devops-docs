@@ -4,12 +4,10 @@ titleSuffix: Azure Boards
 description: Set Work In Progress Limits on the Kanban board in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019
 ---
@@ -17,17 +15,17 @@ ms.date: 02/14/2019
 
 # Work in Progress limits
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
-An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
+An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 
-<img src="_img/WIP_1.png" alt="Kanban board columns with WIP limits" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/WIP_1.png" alt="Kanban board columns with WIP limits" style="border: 1px solid #C3C3C3;" /> 
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 <a id="Initial WIP" />
 
@@ -54,7 +52,7 @@ After you've set your WIP limits, you'll want to track how well your team keeps 
 
 Respecting WIP limits means teams don't pull items into a column if doing so causes the number of items in the column to exceed the column limit. When they do, your Kanban board provides immediate feedback. This feedback should act as a signal to the team to focus immediately on activities to reduce the number of items in the column.
 
-<img src="_img/WIP_2.png" alt="Kanban board showing a column over the WIP limit" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/WIP_2.png" alt="Kanban board showing a column over the WIP limit" style="border: 1px solid #C3C3C3;" /> 
 
 Although simple in theory, keeping within WIP limits can force individuals, teams, and organizations out of their comfort zone. Team members who like to multitask might feel unnecessarily constrained. Others might find themselves without work as they wait for work to complete at an upstream stage. 
 
@@ -76,7 +74,7 @@ The free eBook, [Kanban and Scrum - making the most of both](https://www.infoq.c
 
 Taking periodic snapshots of your Kanban board can visually catalog where work flows smoothly and where bottlenecks appear.
 
-![Snapshots](_img/WIP_3.png)
+![Snapshots](media/WIP_3.png)
 
 Such snapshots can show your team:
 
@@ -113,14 +111,14 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
+	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
 2. Choose **Columns** and then a column tab to set the WIP limit for that column. 
 
-	![Kanban board, Customize columns, default columns, Agile process, set WIP limits](_img/wip-columns-settings.png)  
+	![Kanban board, Customize columns, default columns, Agile process, set WIP limits](media/wip-columns-settings.png)  
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
@@ -132,13 +130,13 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Choose ![settings icon](../../media/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
+	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
 2. Choose **Columns** and then a column tab to set the WIP limit for that column. 
 
-	![Kanban board, Customize columns, default columns, Agile process, set WIP limits](_img/wip-columns-settings.png)  
+	![Kanban board, Customize columns, default columns, Agile process, set WIP limits](media/wip-columns-settings.png)  
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
@@ -150,31 +148,31 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker range="tfs-2015" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
+	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
 	**TFS 2015.1 and later versions**  
 3. Choose **Columns** and then a column tab to set the WIP limit for that column.  
 	
-	![Settings, Columns, set WIP limits](_img/wip-columns-settings.png)  
+	![Settings, Columns, set WIP limits](media/wip-columns-settings.png)  
 
 4. When done with your changes, choose **Save**.  
 
 	**TFS 2015**     
 5. Set the WIP limits for each intermediate column.     
-	![Customize WIP limits](_img/WIP_5.png)    
+	![Customize WIP limits](media/WIP_5.png)    
    ::: moniker-end  
    ::: moniker range="tfs-2013"    
 6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-7. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+7. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
-	![Open configuration settings](_img/columns/open-settings-2013.png)    
+	![Open configuration settings](media/columns/open-settings-2013.png)    
 
 8. Set the WIP limits for each intermediate column.           
 
-	![Customize WIP limits](_img/WIP_5.png)   
+	![Customize WIP limits](media/WIP_5.png)   
 
 	> [!NOTE]   
 	> You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  

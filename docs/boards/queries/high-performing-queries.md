@@ -4,12 +4,10 @@ titleSuffix: Azure Boards
 description: Guidelines for creating high-performing work item queries in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: best-practice
 monikerRange: '>= tfs-2013'
 ms.date: 09/26/2019  
 ---
@@ -17,14 +15,14 @@ ms.date: 09/26/2019
 
 # Guidance to create high-performing queries  
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
 
 > [!NOTE]   
 > Reference to service or resource rate limits only applies to queries run against Azure DevOps Services. To learn more, see [Service limits and rate limits](../../user-guide/service-limits.md). 
 
-This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command.
+This article provides some general guidelines on how to write a high performing query. These guidelines apply to both queries you create through the web portal as well as [REST API queries](/rest/api/azure/devops/wit/queries) and [az boards query](/cli/azure/boards#az_boards_query) command.
 
 
 
@@ -41,7 +39,7 @@ Use [work item tags](add-tags-to-work-items.md) to categorize your work items in
 Unlike matching or partial matching on a custom field, query with a `Tags Contains` predicate won't scan the entire work items tables. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter on tags](_img/high-perf/tag-contains-web.png)  
+> ![Filter on tags](media/high-perf/tag-contains-web.png)  
 
 
 ## Use `Contains words` for string matches
@@ -76,13 +74,13 @@ Queries perform better when fewer `Or` operators are used. Too many `Or` operato
 
 Saved queries have a higher chance of performing better due to internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query by WIQL through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 ## Related articles
 
 - [Service limits and rate limits](../../user-guide/service-limits.md) 
 - [Create managed queries](using-queries.md)
 - [Query fields, operators & macros](query-operators-variables.md)
-- [WIQL syntax](wiql-syntax.md)
+- [WIQL syntax](wiql-syntax.md)  
 - [Query quick reference](query-index-quick-ref.md)
-- [az boards query command](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query)
+- [az boards query command](/cli/azure/boards#az_boards_query)

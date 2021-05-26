@@ -1,46 +1,74 @@
 - name: About projects
   href: about-projects.md
+  displayname: private, public, customize, configure, Agile, connect
+- name: Project & team quick reference
+  href: project-team-quick-reference.md
+  displayname: administrator, users, actions, manage, concepts
+- name: Create a project
+  href: create-project.md
+  displayname: new, connect, list, add, repository
+- name: Connect to a project
+  href: connect-to-projects.md
+  displayname: Azure, Active, Directory, portal, visual, studio, connection
+- name: Connect a project to GitHub
+  href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  displayname: Azure, Boards, connection, authentication, PAT, OAuth, register
+- name: Get started as a Stakeholder
+  href: ../security/get-started-stakeholder.md
+  displayname: understand, work item, Kanban, comment, backlog, query, features, functions, private, public
+- name: When to add a team or project
+  href: about-projects.md
+  displayname: private, public, customize, configure, Agile, connect
 - name: What do I get with a project?
   href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Quickstarts
+  displayname: features, services, dashboards, plan, track
+- name: Project configuration
+  items:
+  - name: "Area & iteration paths"
+    href: ../settings/about-areas-iterations.md
+    displayname: sprint, team, product, feature, group, define, Agile
+  - name: Set area paths
+    href: ../settings/set-area-paths.md?
+    displayname: project, Agile, administrator, settings, team
+  - name: Set iteration paths (sprints) 
+    href: ../settings/set-iteration-paths-sprints.md
+    displayname: scrum, Agile, administrator, define, backlog, team, settings
+- name: Manage projects
   items:
   - name: Share your project vision
     href: project-vision-status.md
-  - name: Connect a project to GitHub  
-    href: ../../boards/github/install-github-app.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: Resources granted to members
-    href: resources-granted-to-project-members.md 
-- name: How-to guides
-  items:
-  - name: Create a project
-    href: create-project.md
+    displayname: readme, wiki, objective, administrator, summary, view, activity, members
   - name: Rename a project
     href: rename-project.md
+    displayname: update, change, work item, query, version control paths
   - name: Delete a project
     href: delete-project.md
+    displayname: remove, permission, allow, administrator
   - name: Restore a project
     href: restore-project.md
+    displayname: deleted, reinstate, settings
   - name: Change service visibility
-    href: ../settings/set-services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../settings/set-services.md
+    displayname: project, settings, disable, pipeline, repository
   - name: Set project visibility
-    href: ../public/make-project-public.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../public/make-project-public.md
+    displayname: make, change, vs, repo, repository,
   - name: Save project data
     href: save-project-data.md
-  - name: Connect a project
-    href: connect-to-projects.md
-- name: Troubleshooting
+    displayname: export, backup, download, source, code, build, work, item
+  - name: Resources granted to project members
+    href: resources-granted-to-project-members.md
+    displayname: scope, group, organization, project, collection
+- name: FAQs
   items:
   - name: Create a project
-    href: faq-create-project.md
+    href: faq-create-project.yml
   - name: Rename a project
-    href: faq-rename-project.md
-  - name: Add administrators
-    href: ../accounts/faq-add-administrators.md
-  - name: Set up Visual Studio
-    href: ../accounts/faq-set-up-vs.md
-  - name: Troubleshoot connection
-    href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: "TF31002: Unable to connect"
-    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: faq-rename-project.yml
+- name: Public projects
+  href: ../public/about-public-projects.md
+  displayname: share, code, continuous, integration, deployment, services, migrate
+
+
+
+ 

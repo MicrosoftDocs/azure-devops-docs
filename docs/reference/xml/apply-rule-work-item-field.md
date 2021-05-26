@@ -3,25 +3,24 @@ title: Apply a field rule
 titleSuffix: Azure DevOps & TFS
 description: Overview of XML elements you can use to modify field settings, such as pick lists, default value, copy value, or conditional rules 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 05/10/2017
 ---
 
 # Add a rule to a work item type  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
 All of these rule elements can be defined within the **FIELD** definition of a work item type (WIT) definition, subject to some [restrictions for System fields](#system). And, with the exception of **HELPTEXT**, you can specify these rules to take affect during a workflow transition or as child elements within a **FIELD** (Global workflow) element.
 
-![Work item tracking XML element field rules](_img/apply-rule-work-item-field/IC757527.png) 
+![Work item tracking XML element field rules](media/apply-rule-work-item-field/IC757527.png) 
 
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 
@@ -36,7 +35,7 @@ Field rules are one component you have to customize work item tracking. To learn
 For information on modifying fields or adding field rules to a WIT definition file, see [Add or modify a field](../add-modify-field.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 <a id="help-text" /> 
 

@@ -3,10 +3,7 @@ title: Visual Studio Build build and release task
 ms.custom: seodec18
 description: Visual Studio Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
@@ -15,15 +12,15 @@ monikerRange: '>= tfs-2015'
 
 # Visual Studio Build task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
-Use this task in a build or release pipeline to build with MSBuild and set the Visual Studio version property.
+Use this task to build with MSBuild and set the Visual Studio version property.
 
 ## Demands
 
@@ -35,7 +32,7 @@ msbuild, visualstudio
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VSBuildV1.md)]
+[!INCLUDE [temp](../includes/yaml/VSBuildV1.md)]
 
 ::: moniker-end
 
@@ -53,7 +50,7 @@ msbuild, visualstudio
       <td>
          <p>(Required) If you want to build a single solution, click the <strong>...</strong> button and select the solution.</p>
          <p>If you want to build multiple solutions, specify search criteria. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**.sln` searches for all <em>.sln</em> files in all subdirectories.</p>
-         <p>Make the sure the solutions you specify are downloaded by this build pipeline. On the Repository tab:</p>
+         <p>Make sure the solutions you specify are downloaded by this build pipeline. On the Repository tab:</p>
          <ul>
             <li>
                If you use TFVC, make sure that the solution is a child of one of the mappings on the Repository tab.
@@ -81,7 +78,7 @@ msbuild, visualstudio
    </tr>
    <tr>
       <td><code>msbuildArgs</code><br/>MSBuild Arguments</td>
-      <td>(Optional) You can pass additional arguments to MSBuild. For syntax, see <a href="https://msdn.microsoft.com/library/ms164311.aspx" data-raw-source="[MSBuild Command-Line Reference](https://msdn.microsoft.com/library/ms164311.aspx)">MSBuild Command-Line Reference</a>.</td>
+      <td>(Optional) You can pass additional arguments to MSBuild. For syntax, see <a href="/visualstudio/msbuild/msbuild-command-line-reference" data-raw-source="[MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)">MSBuild Command-Line Reference</a>.</td>
    </tr>
    <tr>
       <td><code>platform</code><br/>Platform</td>
@@ -157,16 +154,16 @@ msbuild, visualstudio
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/msbuild_qa.md)]
+[!INCLUDE [temp](../includes/msbuild_qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

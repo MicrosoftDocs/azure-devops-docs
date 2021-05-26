@@ -3,22 +3,19 @@ title: File transforms and variable substitution
 ms.custom: seodec18
 description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 02/18/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # File transforms and variable substitution reference
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureRmWebAppDeploymentV3) task
@@ -47,7 +44,7 @@ the **parameters.xml** file to substitute values in the **web.config** file.
 ## XML Transformation
 
 XML transformation supports transforming the configuration files (`*.config` files)
-by following [Web.config Transformation Syntax](https://msdn.microsoft.com/library/dd465326.aspx)
+by following [Web.config Transformation Syntax](/previous-versions/aspnet/dd465326(v=vs.110))
 and is based on the environment to which the web package will be deployed.
 This option is useful when you want to add, remove or modify configurations for different environments.
 Transformation will be applied for other configuration files including Console or Windows service application
@@ -124,13 +121,13 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    * It modifies value of `Webpages:Enabled`  inside the `appSettings` element.
    * It removes the `debug` attribute from the `compilation` element inside the `System.Web` element.
 
-   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
+   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](/previous-versions/aspnet/dd465326(v=vs.110))
 
 2. Create a release pipeline with a stage named **Release**.
 
 3. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
-   ![Release pipeline for XML transformation](_img/release-definition2.png)
+   ![Release pipeline for XML transformation](media/release-definition2.png)
 
 4. Save the release pipeline and start a new release.
 
@@ -232,7 +229,7 @@ As an example, consider the task of changing the following values in `Web.config
 
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
-   ![Release pipeline for XML variable substitution](_img/release-definition.png)
+   ![Release pipeline for XML variable substitution](media/release-definition.png)
 
 1. Define the required values in release pipeline variables:
 
@@ -346,6 +343,8 @@ As an example, consider the task of overriding values in this JSON file:
 The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
+# [Classic](#tab/Classic)
+
 1. Create a release pipeline with a stage named **Release**.
 
 2. Add an **Azure App Service Deploy** task and enter a newline-separated
@@ -354,7 +353,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 
-   ![Release pipeline for JSON variable substitution](_img/json-setting.png)
+   ![Release pipeline for JSON variable substitution](media/json-setting.png)
 
 3. Define the required substitution values in release pipeline or stage variables.
 
@@ -396,6 +395,35 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    }
    '''
 
+# [YAML](#tab/yaml)
+
+Following YAML snippet showcases JSON variable substitution.
+
+```YAML
+variables:
+  Data.DebugMode: disabled
+  Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
+  Data.DBAccess.Users.0: Admin-3
+  Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
+
+# Update appsettings.json via FileTransform task.
+- task: FileTransform@1
+  displayName: 'File transformation: appsettings.json'
+  inputs:
+    folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    targetFiles: '**/appsettings.json'
+    fileType: json
+  
+# Deploy web app
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: <Name of the Azure subscription>
+    appName: <Name of the Azure WebApp>
+    package: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+```
+
+* * *
+
 ### JSON variable substitution notes
 
 * To substitute values in nested levels of the file, concatenate the names with
@@ -404,7 +432,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 * A JSON object may contain an array whose values can be referenced by their index.
   For example, to substitute the first value in the **Users** array shown above,
   use the variable name `DBAccess.Users.0`. To update the value in **NewWelcomeMessage**,
-  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`.
+  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
 
 * Only **String** substitution is supported for JSON variable substitution.
 
@@ -428,4 +456,3 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
   ```
 
   as well as `"first.second.third" : "value"`.
-

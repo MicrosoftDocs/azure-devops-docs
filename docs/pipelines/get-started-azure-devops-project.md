@@ -1,12 +1,9 @@
 ---
 title: Use the Azure portal to create a pipeline
 description: Use the Azure portal to create a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
 ms.custom: "mvc, seodec18"
 ms.date: 05/06/2018
@@ -27,7 +24,7 @@ If you don't have an Azure subscription, you can get one free through [Visual St
 
 1. Choose the **Create a resource** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
 
-   	![Starting Continuous Delivery configuration](_img/azure-devops-project/fullbrowser.png)
+   	![Starting Continuous Delivery configuration](media/azure-devops-project/fullbrowser.png)
 
 ## Select a sample application and Azure service
 
@@ -41,11 +38,11 @@ If you don't have an Azure subscription, you can get one free through [Visual St
 
 1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure DevOps project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
-   	![Enter Azure Pipelines info](_img/azure-devops-project/vstsazureinfo.png)
+   	![Enter Azure Pipelines info](media/azure-devops-project/vstsazureinfo.png)
 
 2. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your Azure DevOps organization, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **Azure Pipelines CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
 
-   	![Dashboard view](_img/azure-devops-project/dashboardnopreview.png) 
+   	![Dashboard view](media/azure-devops-project/dashboardnopreview.png) 
 	
 The Azure DevOps Project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD pipeline that automatically deploys your latest work to your web site.
 
@@ -53,9 +50,9 @@ The Azure DevOps Project automatically configures a CI build and release trigger
 
 The Azure DevOps Project created a Git repository in your Azure Repos or GitHub organization.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
 
-1. On the left-hand side of the DevOps project dashboard, select the link for your **master** branch.  This link opens a opens a view to the newly created Git repository.
+1. On the left-hand side of the DevOps project dashboard, select the link for your **main** branch.  This link opens a opens a view to the newly created Git repository.
 
-1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the master branch.
+1. To view the repository clone URL, select **Clone** from the top right of the browser. You can clone your Git repository in your favorite IDE.  In the next few steps, you can use the web browser to make and commit code changes directly to the main branch.
 
 1. On the left-hand side of the browser, navigate to the **views/index.pug** file.
 
@@ -118,8 +115,13 @@ When you configured your CI/CD pipeline in this quickstart, a build and release 
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| | |
+:::row:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+:::row-end:::

@@ -1,156 +1,75 @@
-- name: About work items
-  href: about-work-items.md
 - name: Quick reference
   href: quick-ref.md
-- name: Quickstarts
-  items:
-  - name: "View & add work items"
-    displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
-    href: view-add-work-items.md 
-  - name: "Add & update a work item"    
-    displayName: follow, update status, Discussion  
-    href: ../backlogs/add-work-items.md?
-  - name: Drive Git development
-    displayName: create branch, new branch 
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md
-- name: Tutorials
+- name: View & add work items
+  displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
+  href: view-add-work-items.md 
+- name: "Add & update a work item" 
+  href: ../backlogs/add-work-items.md
+  displayname: follow, update status, Discussion  
+- name: Filter your work items
+  href: ../backlogs/filter-backlogs-boards-plans.md  
+  displayname: sort, reorder, group, parent, tags  
+- name: Manage bugs
+  href: ../backlogs/manage-bugs.md
+- name: Manage issues
+  href: ../backlogs/manage-issues-impediments.md
+- name: Link work items
+  href: ../backlogs/add-link.md
+- name: Copy/clone 
+  href: ../backlogs/copy-clone-work-items.md
+- name: Go mobile
+  href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Collaborate with others
   items:
   - name: Follow work
     href: follow-work-items.md
-  - name: Manage bugs
-    href: ../backlogs/manage-bugs.md
-  - name: Manage issues
-    href: ../backlogs/manage-issues-impediments.md
-  - name: "Move, change, or delete"
-    href: ../backlogs/remove-delete-work-items.md
-  - name: Link work items
-    href: ../backlogs/add-link.md?
-  - name: Bulk modify (web)
-    href: ../backlogs/bulk-modify-work-items.md
-  - name: Copy/clone 
-    href: ../backlogs/copy-clone-work-items.md
-- name: Concepts
-  items:
-  - name: Choose a process
-    href: guidance/choose-process.md
-  - name: Agile process guidance
-    href: guidance/agile-process.md
-    items:
-    - name: Agile workflow
-      href: guidance/agile-process-workflow.md
-  - name: Basic process guidance
-    href: ../get-started/track-issues-tasks.md
-  - name: Scrum process guidance
-    href: guidance/scrum-process.md
-    items:
-    - name: Scrum workflow
-      href: guidance/scrum-process-workflow.md
-  - name: CMMI process guidance
-    href: guidance/cmmi-process.md
-    items:
-    - name: CMMI workflow
-      href: guidance/cmmi-process-workflow.md
-    - name: CMMI background
-      href: guidance/cmmi/guidance-background-to-cmmi.md
-    - name: Project management
-      href: guidance/cmmi/guidance-project-management.md
-      items:
-      - name: Project activities
-        href: guidance/cmmi/guidance-project-activities.md
-      - name: Project inception
-        href: guidance/cmmi/guidance-project-inception.md
-      - name: Plan a project
-        href: guidance/cmmi/guidance-plan-a-project-cmmi.md
-      - name: Manage change
-        href: guidance/cmmi/guidance-manage-change.md
-      - name: Manage risk
-        href: guidance/cmmi/guidance-manage-risks.md
-      - name: Iteration activities
-        href: guidance/cmmi/guidance-iteration-activities.md?
-      - name: Plan an iteration
-        href: guidance/cmmi/guidance-plan-an-iteration-cmmi.md
-      - name: Manage issues
-        href: guidance/cmmi/guidance-manage-issues-cmmi.md
-    - name: Engineering
-      href: guidance/cmmi/guidance-engineering.md
-      items:
-      - name: Develop requirements
-        href: guidance/cmmi/guidance-develop-requirements.md
-      - name: Arrange requirements into a product plan
-        href: guidance/cmmi/arrange-requirements-into-a-product-plan.md
-      - name: Create a solution architecture
-        href: guidance/cmmi/guidance-create-solution-architecture.md
-      - name: Implement development tasks
-        href: guidance/cmmi/guidance-implement-development-tasks.md
-      - name: Build a product
-        href: guidance/cmmi/guidance-build-product.md
-      - name: Track bugs
-        href: guidance/cmmi/track-bugs.md
-  - name: Work item fields
-    href: work-item-fields.md
-  - name: Agile glossary
-    href: agile-glossary.md
-  - name: Linking & traceability
-    href: ../queries/link-work-items-support-traceability.md
-  - name: "Workflow states & categories"
-    href: workflow-and-state-categories.md
-- name: Samples
-  items:
-  - name: Sample work item templates
-    href: work-item-template-examples.md
-- name: How-to Guides
-  items:
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "Use #ID to link to work items"
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Add tags to work items
-    href: ../queries/add-tags-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Use work item templates
-    href: ../backlogs/work-item-template.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: ../queries/add-tags-to-work-items.md
   - name: Share information  
-    displayname: plan, plans, attachments, link, email, rich text
-    href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    displayName: rich text, attach files, storyboard, social tools
-  - name: Go mobile
-    href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Email/print work items
+    href: ../queries/share-plans.md
+  - name: Copy list
+    href: ../backlogs/copy-list.md 
+  - name: Email or print work items
     href: email-work-items.md  
-    displayName: export, cvs 
-  - name: Delete test artifacts
-    href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Set the Work Items experience (Visual Studio)
-    href: set-work-item-experience-vs.md
-  - name: Manage process templates
-    href: guidance/manage-process-templates.md
+    displayName: cards 
+  - name: Drive Git development
+    displayName: create branch, new branch 
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md
   - name: View deployment stages on work item form
     href: work-item-deployments-control.md
-- name: Reference
+- name: Modify, delete, import, or export 
   items:
-  - name: Work item form controls
-    href: work-item-form-controls.md
-  - name: Keyboard shortcuts 
-    href: work-item-form-keyboard-shortcuts.md
-  - name: Link types 
-    href: ../queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md
+  - name: Bulk add or modify  (Excel)
+    href: ../backlogs/office/bulk-add-modify-work-items-excel.md
+  - name: Bulk import or update  (CSV)
+    href: ../queries/import-work-items-from-csv.md 
+    displayname: import, export, csv
+  - name: Move or change work item type
+    href: ../backlogs/move-change-type.md
+  - name: Remove, delete, or restore
+    href: ../backlogs/remove-delete-work-items.md
+  - name: Delete test artifacts
+    href: ../backlogs/delete-test-artifacts.md
+  - name: Use work item templates
+    href: ../backlogs/work-item-template.md
+- name: Configure & customize
+  items:
+  - name: Change column options
+    href: ../backlogs/set-column-options.md
+    displayName: sort, persistence
+  - name: Set the Work Items experience (Visual Studio)
+    href: set-work-item-experience-vs.md
+- name: Samples
+  items:
+  - name: Sample work item templates
+    href: work-item-template-examples.md
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
-  - name: Field reference
-    items:
-    - name: Work item field index
-      href: guidance/work-item-field.md
-    - name: "Code review & feedback fields"
-      href: guidance/guidance-code-review-feedback-field-reference.md
-    - name: "Bugs, issues, & risks fields"
-      href: guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
-    - name: Change request fields
-      href: guidance/cmmi/guidance-change-request-field-reference-cmmi.md
-    - name: Requirements fields
-      href: guidance/cmmi/guidance-requirements-field-reference-cmmi.md
-    - name: Review meeting fields
-      href: guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-
 
 

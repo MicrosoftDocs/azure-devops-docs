@@ -2,18 +2,16 @@
 title: TF30026-You cannot change file name extension 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when you try to change the file extension on a file stored on a server that hosts SharePoint Products.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobs1-274b-4274-a430-b3ef4b33bb20
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 # TF30026: You cannot change the file name extension using Team Explorer. Do you want to continue?
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when you try to change the file extension on a file stored on a server that hosts SharePoint Products. SharePoint Products does not support changing file extensions after a file has been checked into SharePoint Products. If you continue with the name change, the characters you type will be made a part of the filename instead of the extension.  
   

@@ -1,8 +1,8 @@
 - name: "About Wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
-- name: Provisioned vs published wikis 
+- name: Provisioned versus published wikis 
   href: provisioned-vs-published-wiki.md
-- name: Quickstarts
+- name: Get started
   items:
   - name: Create a wiki for your project
     href: wiki-create-repo.md
@@ -10,12 +10,10 @@
     href: add-edit-wiki.md
   - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
-- name: Concepts
-  items:
   - name: Wiki file structure
     href: wiki-file-structure.md 
   - name: Create a README 
-    href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json 
+    href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
 - name: How-to guides
   items:
   - name: Manage wikis
@@ -51,4 +49,4 @@
   - name: "Default permissions (Security)"
     href: wiki-readme-permissions.md
   - name: Data protection overview
-    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json
+    href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json

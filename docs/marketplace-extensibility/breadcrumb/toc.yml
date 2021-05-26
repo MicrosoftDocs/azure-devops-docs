@@ -5,3 +5,16 @@
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
+    items: 
+    - name: Discover & manage extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace/overview
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/extend/overview
+    - name: Integrate applications
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/integrate/index
+    - name: Service hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/overview

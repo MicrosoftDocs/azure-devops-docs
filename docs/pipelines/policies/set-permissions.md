@@ -3,21 +3,16 @@ title: Add users to Azure Pipelines
 ms.custom: seodec18
 description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 05/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="> tfs-2018"
 
@@ -30,14 +25,17 @@ If your teammates want to edit pipelines, then have an administrator add them to
 3. Invite the teammates to join the project.
 
    > [!div class="mx-imgBorder"]
-   > ![Invite button](_img/project-invite-button.png)
+   > ![Invite button](media/project-invite-button.png)
    > 
    > [!div class="mx-imgBorder"]
-   > ![Add users to project dialog box](_img/project-invite-dialog-box.png)
+   > ![Add users to project dialog box](media/project-invite-dialog-box.png)
 
 4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
 
 ## Confirm that contributors have pipeline permissions 
+
+> [!NOTE]
+> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
 
 If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
 
@@ -46,12 +44,12 @@ If you created your project after about October 2018, then the above procedure i
 2. Open the build security dialog box.
 
    > [!div class="mx-imgBorder"]
-   > ![Security menu item for all builds](_img/security-menu-item.png)
+   > ![Security menu item for all builds](media/security-menu-item.png)
 
 3. On the permissions dialog box, make sure the following permissions are set to Allow.
 
    > [!div class="mx-imgBorder"]
-   > ![Permissions dialog box for all builds in the project](_img/builds-permissions-dialog-box.png)
+   > ![Permissions dialog box for all builds in the project](media/builds-permissions-dialog-box.png)
 
 ::: moniker-end
 
@@ -65,17 +63,17 @@ In addition to permission assignments, you manage security for several resources
 
 1. To set the permissions for all build pipelines, click the Security From the web portal **Build-Release** hub, **Builds** page
 
-   ![Open the Security dialog for all build pipelines](_img/set-build-release-permissions/open-all-build-definitions-security.png)
+   ![Open the Security dialog for all build pipelines](media/set-build-release-permissions/open-all-build-definitions-security.png)
 
    To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
 
-   <img src="_img//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
 2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
 
    For example, here we change the permission for Edit build pipeline for the Contributors group to Allow.
 
-   <img src="_img/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
 3. Save your changes.
 
@@ -83,7 +81,7 @@ In addition to permission assignments, you manage security for several resources
 
 1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
 
-   <img src="_img/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a release pipeline." style="border: 1px solid #C3C3C3;" />
 
    If you want to manage the permissions for a specific release, then open the Security dialog for that release.
 
@@ -91,7 +89,7 @@ In addition to permission assignments, you manage security for several resources
 
    For example, here we deny access to several permissions for the Contributors group.
 
-   <img src="_img/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release pipeline" style="border: 1px solid #C3C3C3;" />
 
 1. Save your changes.
 
@@ -117,17 +115,17 @@ For example, here we show how to set the security for variable groups.
 
 1. **Build-Release** hub, **Library** page, open the Security dialog for all variable groups.
 
-   ![Open the Security dialog for all variable groups](_img/set-build-release-permissions/open-variable-group-all-security.png) 
+   ![Open the Security dialog for all variable groups](media/set-build-release-permissions/open-variable-group-all-security.png) 
 
    If you want to manage the permissions for a specific variable group, then open the Security dialog for that group.
 
-   ![Open the Security dialog for a specific variable group](_img/set-build-release-permissions/open-variable-group-specific-security.png) 
+   ![Open the Security dialog for a specific variable group](media/set-build-release-permissions/open-variable-group-specific-security.png) 
 
 1. Add the user or group and choose the role you want them to have.
 
    For example, here we deny access to several permissions for the Contributors group.
 
-   ![Add user to a Library role](_img/set-build-release-permissions/library-security-role-dialog-add-user.png) 
+   ![Add user to a Library role](media/set-build-release-permissions/library-security-role-dialog-add-user.png) 
 
 1. Click **Add**.  
 
@@ -146,7 +144,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. From the web portal **Build-Release** hub, **Task groups** page, open the Security dialog for all task groups.
 
-   ![Open the Security dialog for all task groups](_img/set-build-release-permissions/open-task-group-all-security.png) 
+   ![Open the Security dialog for all task groups](media/set-build-release-permissions/open-task-group-all-security.png) 
 
    If you want to manage the permissions for a specific task group, then open the Security dialog for that group.
 
@@ -154,7 +152,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
    For example, here we add Raisa and set her permissions to Administer all task groups.
 
-   ![Set task group permissions](_img/set-build-release-permissions/task-group-security-dialog.png) 
+   ![Set task group permissions](media/set-build-release-permissions/task-group-security-dialog.png) 
 
 1. Click **Add**.
 
@@ -166,13 +164,13 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ## Set collection-level permissions to administer build resources
  
-1. From the web portal user context, open the admin context by clicking the ![gear icon](../../_img/icons/gear_icon.png) gear Settings icon and choosing **Organization settings** or **Collection settings**.
+1. From the web portal user context, open the admin context by clicking the ![gear icon](../../media/icons/gear_icon.png) gear Settings icon and choosing **Organization settings** or **Collection settings**.
 
 1. Click **Security**, and then choose the group whose permissions you want to modify.
 
    Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissions](../../organizations/security/permissions.md#collection-level).
 
-   <img src="_img/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
 
 1. Save your changes.
 
@@ -189,17 +187,17 @@ You manage the security for [agent pools](../agents/pools-queues.md) and [servic
 
 For example, here we show how to add a user to the Administrator role for a service connection.  
 
-1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon to open the project settings admin context.
+1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon to open the project settings admin context.
 
 1. Click **Services**, click the service connection that you want to manage, and then click **Roles**.   
 
-   ![Open the Roles tab for a service connection](_img/manage-roles/open-services-roles.png)
+   ![Open the Roles tab for a service connection](media/manage-roles/open-services-roles.png)
 
 1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-endpoint-service.png)  
+   ![On Endpoint: gitConnect, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-endpoint-service.png)  
 
 1. Click **Add**.  
 
@@ -216,11 +214,11 @@ You manage the security for [agent pools](../agents/pools-queues.md) and [deploy
 
 You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
 
-1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon and choose Organization settings or Collection settings to open the collection-level settings admin context.
+1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon and choose Organization settings or Collection settings to open the collection-level settings admin context.
 
 1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
 
-   ![Open the Roles tab for a service connection](_img/manage-roles/open-security-deployment-pools.png) 
+   ![Open the Security dialog for all deployment pools.](media/manage-roles/open-security-deployment-pools.png) 
 
    If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group.
 
@@ -228,7 +226,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
    For example, here we add Raisa to the Administrator role.
 
-   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-deployment-pool.png)  
+   ![On the security dialog, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-deployment-pool.png)  
 
 1. Click **Add**.  
 

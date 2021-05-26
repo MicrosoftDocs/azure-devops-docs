@@ -2,7 +2,6 @@
 title: Pipeline container jobs - Sprint 140 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 9/20/2018
 description: In the Sprint 140 Update of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of container jobs in Azure Pipelines.
@@ -55,7 +54,7 @@ Read about the new features below and head over to Azure DevOps Services to try 
 
 ### Control specific build dependencies using container jobs
 
-By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml) documentation for more information.
+By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=azure-devops&preserve-view=true&tabs=yaml) documentation for more information.
 
 ### Enable code coverage in .NET Core task
 
@@ -65,7 +64,7 @@ The **.NET Core** task in Azure Pipelines now supports code coverage so that you
 
 ### Leverage restructured Process REST APIs
 
-In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/Microsoft/vsts-dotnet-samples/tree/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTrackingProcess) using the C# client libraries.
+In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0&preserve-view=true) documentation for more information. We have also created a [few samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/WorkItemTrackingProcess) using the C# client libraries.
 
 ## Azure Artifacts
 
@@ -94,7 +93,7 @@ Jump over to our [quickstart guide to get started with Universal Packages](/azur
 We have updated the [Index & Publish Symbols task](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) to support compressing symbols when they are published to a file share.
 
 > [!div class="mx-imgBorder"]
-> ![Compress symbols](_img/140_05.png)
+> ![Compress symbols](media/140_05.png)
 
 As a reminder, you can also [publish symbols to Azure DevOps Services](/azure/devops/pipelines/symbols) instead of having to configure and manage a file server.
 
@@ -111,7 +110,7 @@ Now you can embed videos in a wiki page from online services such as Microsoft S
 ```
 
 > [!div class="mx-imgBorder"]
-> ![Embed video in wiki](_img/140_02.png)
+> ![Embed video in wiki](media/140_02.png)
 
 This feature was prioritized based on a suggestion.
 
@@ -120,14 +119,14 @@ This feature was prioritized based on a suggestion.
 Now you can rename your wiki in the wiki user interface and using REST APIs. From the **More** menu, click **Rename wiki** to give your wiki a memorable name. This feature was prioritized based on a [suggestion](https://developercommunity.visualstudio.com/content/problem/280480/renaming-a-team-project-did-not-rename-its-associa.html).
 
 > [!div class="mx-imgBorder"]
-> ![Rename wiki](_img/140_03.png)
+> ![Rename wiki](media/140_03.png)
 
 ### Insert a wiki table of contents from the format pane
 
-Last sprint we shipped the ability to [create table of contents](/azure/devops/release-notes/2018/aug-21-vsts#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
+Last sprint we shipped the ability to [create table of contents](./aug-21-vsts.md#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
 
 > [!div class="mx-imgBorder"]
-> ![Insert wiki TOC](_img/140_04.png)
+> ![Insert wiki TOC](media/140_04.png)
 
 ## Administration
 
@@ -136,14 +135,14 @@ Last sprint we shipped the ability to [create table of contents](/azure/devops/r
 As you've noticed with the new navigation in Azure DevOps, we're focused on bringing a more consistent experience across the service. We've taken this opportunity to help you better manage your personal access tokens (PATs), especially if you have several of them. Some of the new features include filter and paging controls when viewing all your PATs, a cleaner experience when creating a new PAT with grouping and descriptions for scopes, and the ability to edit and extend the expiration of existing PATs.
 
 > [!div class="mx-imgBorder"]
-> ![PAT page](_img/140_01.png)
+> ![PAT page](media/140_01.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

@@ -3,29 +3,28 @@ title: On-premises XML process model
 titleSuffix: TFS 
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 05/06/2019
 ---
 
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
 
+[!INCLUDE [temp](../boards/includes/note-configure-customize.md)]
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019"  
 
-For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model).  
+For Azure DevOps Server 2019 and later versions, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](./customize-work.md?view=azure-devops-2019&preserve-view=true#choose-process-model).  
 
 ::: moniker-end
 
@@ -138,12 +137,12 @@ You can perform the following tasks when you work with the On-premises XML proce
 
 When you manage an on-premises deployment, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
 
-[![Export XML definition file](_img/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export XML definition file](media/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 In addition, you can use the **witadmin** tool to list objects, rename WITs, permanently remove WITs, and more.  
  
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 
 <a id="before-you-customize"></a>
@@ -167,7 +166,7 @@ With the following customizations, you can use the Configure Features Wizard to 
 <li>Office integration: Add or change how Project fields map to TFS fields   </li>
 </ul>
 
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
 
 
 ### Compatible, but may require manual updates
@@ -206,7 +205,7 @@ To learn more about reporting attributes, see [Add or modify work item fields to
 ## Replace team area path with a team field  
 The default configuration for projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-[Use team fields instead of area paths to support teams](use-team-fields-instead-area-paths.md) describes how to change the default configuration.
+[Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) describes how to change the default configuration.
 
 ## Related articles
 

@@ -3,7 +3,6 @@ title: Azure Repos - Sprint 159 Update
 description: See the Sprint 159 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/14/2019
 ---
@@ -12,12 +11,12 @@ ms.date: 10/14/2019
 
 ## Features
 
-[!INCLUDE [sprint-159-update-links](../_shared/repos/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](../includes/repos/sprint-159-update-links.md)]
 
-[!INCLUDE [sprint-159-update](../_shared/repos/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](../includes/repos/sprint-159-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 
-[!INCLUDE [sprint-159](../_shared/signer/sprint-159.md)]
+[!INCLUDE [sprint-159](../includes/signer/sprint-159.md)]

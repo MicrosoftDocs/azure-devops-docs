@@ -1,12 +1,8 @@
 ---
-title: Quickstart guide to customizing your board
+title: Quickstart guide to configure and manage your project  
 titleSuffix: Azure Boards 
-description: Customize your issues board to show fields, add columns, and change card color
+description: Understand how to manage your project
 ms.custom: boards-get-started
-ms.technology: devops-new-user 
-ms.prod: devops
-ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,7 +13,7 @@ ms.date: 07/17/2019
 
 # Configure settings and manage your Azure Boards project
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
 
@@ -69,7 +65,7 @@ If you support several products or feature areas, you can assign issues and task
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |![Default iterations, Basic process](../../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png) | ![A set of sample area paths](../../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png)  | 
+> |![Default iterations, Basic process](../../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png) | ![A set of sample area paths](../../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png)  | 
 
 <a id="customize" />
 
@@ -103,22 +99,22 @@ To learn more, see these articles:
 A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
-- [Team notifications](../../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- [Team notifications](../../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator.
 - Project notifications, managed by a member of the Project Administrators group.
 
-If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/howto-manage-personal-notifications.md). 
+If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/manage-your-personal-notifications.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Personal notifications](../../user-guide/_img/services/personal-notifications.png) 
+> ![Personal notifications](../../user-guide/media/services/personal-notifications.png) 
 
 
 ::: moniker range=">= tfs-2015"
 
 ## Install and manage extensions 
 
-To add new features and capabilities to Azure Boards, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.md#difference) 
+To add new features and capabilities to Azure Boards, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.yml) 
 
-To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](../../extend/overview.md) and [publishing](../../extend/publish/overview.md) extensions.
 
 ::: moniker-end
 
@@ -131,7 +127,7 @@ To simplify the web portal user interface, you can disable select services. If y
 This example shows that **Test Plans** has been disabled:
 
 > [!div class="mx-imgBorder"]  
-> ![Disable a service](../../user-guide/_img/services/set-service-visibility.png)   
+> ![Disable a service](../../user-guide/media/services/set-service-visibility.png)   
 
 ::: moniker-end
 
@@ -142,6 +138,3 @@ This example shows that **Test Plans** has been disabled:
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)  
 - [Enable a preview feature](../../project/navigation/preview-features.md)   
 - [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
-
-
-

@@ -2,19 +2,17 @@
 title: TF30031-Team Explorer can't open a document... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer tries to open a document stored in the document library for a project.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobs9-89ac-41e8-8f6f-21bd4254f863
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
 # TF30031: Team Explorer cannot open the document because the WebClient service is not running.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when Team Explorer tries to open a document stored in the document library for a project. The WebClient service is not running on the local computer. You can use the procedure below to help you correct the problem.  
   

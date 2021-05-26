@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - May 28
 description: VSTS release notes for May 28 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 07422a87-fd33-4a13-a201-5fe9b7bc694f
@@ -30,7 +29,7 @@ There’s no easy way to tell, in this transition period, whether or not your ac
 
 Today we turned on email alerts for Git projects. You can now create email alerts that are triggered when commits are pushed to the service. Push alerts may be filtered by author, committer, pusher, comment, project, and/or repository. If you've never used alerts before, click your name in the page header and select **My Alerts**. From this dialog you can configure which alerts you want to subscribe to and where you want the alerts sent.
 
-![Git alerts for Team Foundation Service](_img/5_28_01.png)
+![Git alerts for Team Foundation Service](media/5_28_01.png)
 
 ## Backlogs 
 
@@ -39,7 +38,7 @@ Finally, we made a few small changes to how your product backlog works.  First, 
 > [!NOTE]
 > This could result in some items re-appearing on your backlog that were never marked as completed/done.  
 
-![Backlog with in progress items](_img/5_28_02.png)
+![Backlog with in progress items](media/5_28_02.png)
 
 That’s it for now. We should have a whole bunch of new stuff next sprint. Stay tuned.
 

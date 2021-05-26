@@ -4,20 +4,15 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 12/06/2019
+ms.date: 09/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 A **task** is the building block for defining automation in a
 pipeline.
@@ -33,6 +28,8 @@ To run the same set of tasks in parallel on multiple agents, or to run some task
 
 By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
 You may optionally use [step targets](#step-target) to control context for an individual task.
+
+Learn more about how to specify properties for a task with the [YAML schema](../yaml-schema.md#task). 
 
 ::: moniker-end
 
@@ -57,13 +54,16 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
 name for the custom task to avoid this risk:
 
 ```yaml
 steps:
-- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1
+- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1 #format example
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
+
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 
@@ -80,6 +80,9 @@ will automatically use the new version. However, if a new major version is relea
 (for example 2.0), your build or release will continue to use the major version you specified
 until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
+
+You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
+
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -147,7 +150,7 @@ steps:
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
-   testResultsFiles: "**/TEST-*.xml"
+    testResultsFiles: "**/TEST-*.xml"
   condition: succeededOrFailed()
 ```
 
@@ -157,7 +160,7 @@ steps:
 
 ### Conditions
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 ### Step target
@@ -217,7 +220,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 
 Select the condition for running this task:
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
@@ -246,9 +249,6 @@ For example, you can set up your build pipeline to run and validate your app for
 
 ### Example: Test and validate your app on multiple versions of Node.js
 
-> [!TIP]
-> Want a visual walkthrough? See [our April 19 news release](../archive/news/2017.md#april-19).
-
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -259,13 +259,13 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-  # Node install
-  - task: NodeTool@0
-    displayName: Node install
-    inputs:
-      versionSpec: '6.x' # The version we're installing
-  # Write the installed version to the command line
-  - script: which node
+# Node install
+- task: NodeTool@0
+  displayName: Node install
+  inputs:
+    versionSpec: '6.x' # The version we're installing
+# Write the installed version to the command line
+- script: which node
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
@@ -299,7 +299,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/_img/node.png) Tool: Node.js Installer
+![node js installer](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -307,7 +307,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/_img/command-line.png) Utility: Command Line
+![CLI](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```
@@ -337,10 +337,20 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
 
+::: moniker range=">= azure-devops-2020"
+
+### Disabling in-box and Marketplace tasks
+
+On the organization settings page, you can disable Marketplace tasks, in-box tasks, or both.
+Disabling Marketplace tasks can help [increase security](../security/misc.md) of your pipelines.
+If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) will be available.
+
+::: moniker-end
+
 ## Related articles
 
-* [Task jobs](phases.md)
+* [Jobs](phases.md)
 * [Task groups](../library/task-groups.md)
 * [Built-in task catalog](../tasks/index.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

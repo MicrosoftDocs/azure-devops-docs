@@ -1,24 +1,22 @@
-﻿---
+---
 title: Share info with a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: overview
-ms.date: 03/11/2019
+ms.date: 07/23/2020  
 monikerRange: '>= tfs-2015'
 ---
 
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= tfs-2018"
 
@@ -39,14 +37,17 @@ To support your team or contributors to your project, use [Markdown](https://en.
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
 
+<br/> 
 
 > [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
+
+<br/> 
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+> The built-in wiki is available with TFS 2018 and later versions. To download Azure DevOps Server, see  [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"

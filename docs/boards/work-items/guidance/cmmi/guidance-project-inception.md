@@ -2,11 +2,9 @@
 title: CMMI process guidance, Project inception
 titleSuffix: Azure Boards
 description: Arrange the basic resources of the project in an initial stage.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 193eee36-7d2a-4652-b905-7759cc60321e
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 01/20/2017
 
 # Project inception
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 You arrange the basic resources of the project in an initial stage that is named Project Inception.  
   

@@ -2,7 +2,6 @@
 title: Ease customization by migrating projects to the Inheritance process model – VSTS Sprint 139 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 8/21/2018
 description: In the Sprint 139 Update of Visual Studio Team Services (VSTS), you can now migrate Hosted XML projects to the Inheritance process model to ease customization.
@@ -48,7 +47,7 @@ Build and release:
 Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a suggestion from UserVoice.
 
 > [!div class="mx-imgBorder"]
-> ![Wiki table of contents](_img/139_03.png)
+> ![Wiki table of contents](media/139_03.png)
 
 ## Work
 
@@ -57,21 +56,21 @@ Sometimes wiki pages can get long, with content organized into several headings.
 Migrating a Hosted XML process model to an Inherited process provides the convenience of customizing your work tracking system through the user interface. If you are using the Hosted XML process model in any of your projects you can now migrate them. Changing the process model for a project can be done in two steps. First, clone the Hosted XML process into the Inheritance model. This adds your customizations, such as work item types, fields, and states, into a newly created Inherited process.
 
 > [!div class="mx-imgBorder"]
-> ![Clone process](_img/139_04.png)
+> ![Clone process](media/139_04.png)
 
 After you validate the process, you can then change projects to use the newly created process.
 
 > [!div class="mx-imgBorder"]
-> ![Change process for project](_img/139_05.png)
+> ![Change process for project](media/139_05.png)
 
-See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=azure-devops&tabs=new-nav) documentation for more information.
+See the [Clone a Hosted XML process to Inheritance](/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited?view=azure-devops&preserve-view=true&tabs=new-nav) documentation for more information.
 
 ### Chat about the latest status using the improved Microsoft Teams integration
 
 In the latest improvement to our [Microsoft Teams integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams), you'll now quickly see the status of an activity with clear icons and colors and start chatting to keep things moving. If a pull request is waiting for author, it shows up in yellow and with a timer icon. If a build succeeded, it shows up in green and with a check-mark icon.
 
 > [!div class="mx-imgBorder"]
-> ![Activity in Team chat](_img/139_01.png)
+> ![Activity in Team chat](media/139_01.png)
 
 ## Code
 
@@ -82,7 +81,7 @@ Writing good pull request descriptions is a great way to help reviewers know wha
 In addition to supporting a default PR description template, teams can add multiple templates, which are presented to you in a menu on the create PR page. Simply click the **Add a template** button to choose from any template in the repository to append it to the PR description.
 
 > [!div class="mx-imgBorder"]
-> ![Add template for PR](_img/139_06.png)
+> ![Add template for PR](media/139_06.png)
 
 Branch-specific templates are also supported if you want to apply a different template for a PR into a specific branch, or branch folder. For example, if you want to have a template specific to all branches that begin with "hotfix/" you can add a template that will be used for all PRs into those branches.  
 
@@ -95,7 +94,7 @@ See the [pull request templates](/azure/devops/repos/git/pull-request-templates)
 You've been able to trigger a build based on a pull request (PR) and get that quick feedback before a merge for a while. Now you can configure a PR trigger for a release as well. The status of the release will be posted back to the code repository and can be directly seen in the PR page. This is helpful if you want to perform additional functional or manual testing as part of your PR workflow.
 
 > [!div class="mx-imgBorder"]
-> ![PR trigger in Release](_img/139_02.png)
+> ![PR trigger in Release](media/139_02.png)
 
 ### Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects
 
@@ -107,12 +106,12 @@ We have now added support for Azure Kubernetes Service (AKS) targeting Go Langua
 
 When VSTS posts the status of a build to GitHub, the status text appears on the associated commit, branch, and pull request check. Until now, each build pipeline's name in the text was prefaced with `VSTS:`. We removed this preface from the status text so that the name of the build pipeline would be easier to see with a glance and not cause confusion about `VSTS:` being in a build pipeline's official name. Unfortunately, this change affects GitHub branch protection rules where GitHub still expects pipeline names to begin with `VSTS:`. This may cause GitHub pull requests to be blocked until repository settings are updated. To resolve this, after running the build at least once, update your repository's branch protection rules under repository Settings > Branches > Branch protection rules.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/media/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

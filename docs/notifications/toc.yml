@@ -1,66 +1,82 @@
 - name: About notifications
   href: about-notifications.md
+  displayName: view, set, see, edit, custom, subscription, team, project, personal, global
 - name: Navigating the UI
-  href: navigating-the-ui.md 
-- name: Concepts
+  href: navigating-the-ui.md
+  displayName: interface, personal, team, project, organization, collection, notification, settings
+- name: Events and notifications
+  href: concepts-events-and-notifications.md
+  displayName: subscriptions, default, email, custom, service, alert
+- name: How email recipients are determined
+  href: concepts-email-recipients.md
+  displayName: subscription, delivery, preference, settings, preferred, team, group, alert
+- name: Add & manage notifications
   items:
-  - name: Events and notifications
-    href: concepts-events-and-notifications.md
-  - name: How email recipients are determined
-    href: concepts-email-recipients.md
-- name: Tutorials
+  - name: Change your preferred email address
+    href: change-email-address.md
+    displayName: organization, user, profile, update
+  - name: Manage personal notifications
+    href: manage-your-personal-notifications.md
+    displayName: change, update, email, alert, set, subscription
+  - name: Unsubscribe from default notification
+    href: unsubscribe-default-notification.md
+    displayName: stop, settings, turn, off, avoid
+  - name: Manage team, group, and Global notifications
+    href: manage-team-group-global-organization-notifications.md
+    displayName: organization, project, collection, administrator, settings, email, alert
+  - name: Exclude yourself from notification of events you initiated
+    href: exclude-self-from-email.md
+    displayName: skip, initiator, trigger, events, subscription, avoid
+- name: Follow work, link work items, use @mentions  
   items:
   - name: "Follow work & pull requests"
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Manage personal notifications
-    href: manage-your-personal-notifications.md
-  - name: Set alerts, get notified when changes occur
-    href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Manage team and group notifications
-    href: manage-team-group-notifications.md
-- name: How-to guides
-  items:
-  - name: Manage organization notifications
-    href: manage-organization-notifications.md
-  - name: Manage organization default delivery settings
-    href: manage-organization-notifications-settings.md
-  - name: View notification statistics for your organization
-    href: view-organization-notification-statistics.md
-  - name: Change your preferred email address
-    href: change-email-address.md
-  - name: Use subscription logging for troubleshooting
-    href: use-subscription-logging.md
-  - name: Exclude yourself from notification of events you initiated
-    href: exclude-self-from-email.md
+    displayName: notification, subscription, subscribe, user, story, automatic
   - name: "Use @mentions to further discussion"
-    href: at-mentions.md
+    href: at-mentions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: add, user, group, conversation, comments, PR, story, directory
   - name: "Use #ID to link to work items"
-    href: add-links-to-work-items.md
+    href: add-links-to-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: build, commit, pull, request, audit, connect, discussion, changeset, shelveset, comment
+- name: Notifications to third parties
+  items:
   - name: Send notifications to third-party services (Slack, Teams, etc.)
     href: integrate-third-party-services.md
-  - name: Collaborate in a Team room
-    href: collaborate-in-a-team-room.md
-  - name: Unsubscribe from default notification
-    href: unsubscribe-default-notification.md
+    displayName: service, hooks, integration, endpoint, webhook
 - name: Troubleshooting
   items:
+  - name: Enable subscription logging for troubleshooting
+    href: use-subscription-logging.md
+    displayName: diagnostic, information, event, matching
+  - name: FAQs 
+    href: faq-notifications.yml
+    displayName: recipients, multiple, activity, organization
   - name: Why am I not getting an email
     href: troubleshoot-not-getting-email.md
+    displayName: event, subscription, filter, initiator, team, group, permission
   - name: Why am I getting this email
     href: troubleshoot-unexpected-email.md
+    displayName: group, trigger, subscription, footer
   - name: Why are my emails delayed
     href: troubleshoot-delayed-email.md
+    displayName: expected, notification, statistics, issue, filter, duplicate, subscription, volume
   - name: Contacting support
     href: troubleshoot-contact-support.md
+    displayName: developer, community, version, platform, event, ID
 - name: Reference
   items:
-  - name: Default notifications
-    href: oob-built-in-notifications.md
-  - name: Events
-    href: oob-supported-event-types.md
   - name: Default permissions (Security)  
     href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: FAQs 
-    href: faq-notifications.md 
-
-
+    displayName: personal, team, project, contributors, access, security, automatic
+  - name: View notification statistics for your organization
+    href: view-organization-notification-statistics.md
+    displayName: active, subscription, event, initiator, administrator, review
+  - name: Default notifications
+    href: oob-built-in-notifications.md
+    displayName: subscription, automatic, alert, role, targeted, trigger
+  - name: Events
+    href: oob-supported-event-types.md
+    displayName: subscription, automatic, alert, trigger, notification
+  - name: Collaborate in a Team room
+    href: /previous-versions/azure/devops/notifications/collaborate-in-a-team-room
+    displayName: chat, status, clarify, issue, productivity, interact, conversation
