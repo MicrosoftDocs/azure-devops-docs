@@ -1,6 +1,6 @@
 ---
 title: Secure files for Azure Pipelines
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy21q4
 description: Understand secure files for Azure Pipelines
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.author: vijayma
