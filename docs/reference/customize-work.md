@@ -97,7 +97,7 @@ Your project determines the objects available to track work and the configuratio
 >- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model.     
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments.        
  
-The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).  
+The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md). For links to all customization articles, see [Quick reference index for Azure Boards settings](quick-reference-index-boards-settings.md). 
 
 ---
 :::row:::
@@ -473,7 +473,7 @@ Here are a few options available to you:
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
 - [witadmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Manage process templates](../boards/work-items/guidance/manage-process-templates.md)
-- [Process templates overview](process-templates.md)
+- [Process templates overview](process-templates/overview-process-template-files.md)
 - [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 

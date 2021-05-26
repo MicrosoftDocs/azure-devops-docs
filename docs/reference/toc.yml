@@ -1,11 +1,12 @@
 - name: Azure Boards Configuration & Customization Documentation
   href: index.yml
-- name: Quick reference index
-  href: quick-reference-index-boards-settings.md
 - name: Get started
+  expanded: true
   items:
   - name: Customize work tracking
     href: customize-work.md
+  - name: Quick reference index
+    href: quick-reference-index-boards-settings.md
   - name: Area & iteration paths
     href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set area paths
