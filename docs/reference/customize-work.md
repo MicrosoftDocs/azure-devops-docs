@@ -162,7 +162,7 @@ The following table summarizes the differences between the three supported proce
 ---
 :::row:::
    :::column span="3":::
-      Updated process changes automatically apply to projects
+      Updated process changes automatically apply to all projects referencing the process
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -177,10 +177,40 @@ The following table summarizes the differences between the three supported proce
 ---
 :::row:::
    :::column span="3":::
-      Support to customize fields, work item types, form layout, workflow, custom rules, backlog levels, custom controls, test management 
+      Support for customizing fields, work item types, form layout, workflow, custom rules, backlog levels, custom controls, test management 
    :::column-end:::
    :::column span="1":::
       ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      Support for customizing link types, team fields, global workflow, and process configuration (see note 3)
+   :::column-end:::
+   :::column span="1":::
+         
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="3":::
+      Initial configuration of Area paths, Iteration Paths, work item queries, security groups, and permissions (see note 3)
+   :::column-end:::
+   :::column span="1":::
+         
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -207,37 +237,7 @@ The following table summarizes the differences between the three supported proce
 ---
 :::row:::
    :::column span="3":::
-      Support to customize link types, team fields, global workflow, and process configuration (see note 3)
-   :::column-end:::
-   :::column span="1":::
-         
-   :::column-end:::
-   :::column span="1":::
-       
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      Initial configuration of permissions and security groups (see note 3)
-   :::column-end:::
-   :::column span="1":::
-         
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
-      Update Microsoft field mappings using the [**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)command-line tool (see note 4)
+      Update Microsoft field mappings using the [**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file) command-line tool (see note 4)
    :::column-end:::
    :::column span="1":::
          
@@ -316,7 +316,7 @@ The following table summarizes the differences between the three supported proce
 
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
-3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal on a project-by-project basis. Or, you can use REST APIs or the [Azure DevOps CLI command tool]((../cli/quick-reference.md).
+3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal on a project-by-project basis. Or, you can use REST APIs or the [Azure DevOps CLI command tool](../cli/quick-reference.md).
 	- Configure areas and iterations  
 	- Work item queries  
 	- Security groups and permissions   
@@ -361,6 +361,8 @@ The following image illustrates the supported link relationships.
 
   ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
+
+::: moniker range="< azure-devops"
 See the following resources for additional usage and customization information:
 
 - [Test configurations and test variables](../test/test-different-configurations.md)  
@@ -368,12 +370,11 @@ See the following resources for additional usage and customization information:
 - [Failure types](witadmin/tcm-customize-manage-test-experience.md)  
 - [Define the initial test management configuration (process template)](process-templates/define-initial-configuration-test-manager.md)
 - [Query based on build and test integration fields](../boards/queries/build-test-integration.md)
-
 ::: moniker-end
 
 ## Less common customizations   
 
-You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to a project.  
+You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. Customizations made to process configuration apply to all teams added to a project.  
 
 <a id="limits">  </a>
 
@@ -413,11 +414,11 @@ The fields you assign are used by the following tools:
 
 ## Grant or restrict access to work tracking tools  
 
-You can grant or restrict access to select features and functions through the web portal. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
+You can grant or restrict access to select features through permission settings. When you add user accounts to your team, they're automatically added to the Contributor group. They then have access to most of the features they'll need to contribute to code, work tracking, builds, and test. However, the Contributor group doesn't allow users to create shared queries or to add area or iteration paths. You have to grant these permissions separately.  
 
-For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../organizations/security/permissions-access.md). If you're new to managing permissions, see [Permissions and groups reference, Inheritance](../organizations/security/about-permissions.md#inheritance).
+For a simplified view of the most common, default permissions and access assignments, see [Permissions and access](../organizations/security/permissions-access.md). If you're new to managing permissions, see [Get started with permissions, access, and security groups, Permission inheritance and security groups](../organizations/security/about-permissions.md#inheritance).
 
-Otherwise, to grant or restrict access to select features or functions, review one of these topics: 
+Otherwise, to grant or restrict access to select features, review one of these topics: 
  
 
 ---
@@ -435,7 +436,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
       - [Process permissions](../organizations/security/set-permissions-access-work-tracking.md)  
       - [Work item query and folder permissions](../boards/queries/set-query-permissions.md)  
       - [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)  
-      - [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md)  
+      - [Delivery Plan permissions](../organizations/security/set-permissions-access-work-tracking.md)  
       - [Tagging permissions](../organizations/security/permissions.md#tags)  
       - [Test permissions](../organizations/security/permissions.md#project_test)   
    :::column-end:::
@@ -471,8 +472,11 @@ Here are a few options available to you:
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
 - [witadmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Manage process templates](../boards/work-items/guidance/manage-process-templates.md)
+- [Process templates overview](process-templates.md)
 - [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
