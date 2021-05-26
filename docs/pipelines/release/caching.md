@@ -34,7 +34,7 @@ Caching is added to a pipeline using the `Cache` pipeline task. This task works 
 When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.   
 
 > [!NOTE]
-> Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
+> Caches are immutable, meaning that once a cache is created, its contents cannot be changed.
 
 ### Configure Cache task
 
