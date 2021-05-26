@@ -55,6 +55,9 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
+> [!NOTE]
+> Please note that there is no support of 'set -x' command being executed before logging command on Linux and macOS.
+
 ## Formatting commands
 
 > [!NOTE]
