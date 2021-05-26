@@ -134,14 +134,7 @@ A: Check these things:
 
 #### Q: Can I grant a regular project user the ability to view and manage service hook subscriptions for a project? 
 
-A: Use tfssecurity.exe from the command line, for example:
-
-```
-    tfssecurity /a+ /collection: https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
-```
-
-> [!NOTE]
-> The GUID represents the project ID, which can be retrieved using the [Projects](/previous-versions/azure/devops/integrate/previous-apis/tfs/projects) REST API.
+A: By default, only project administrators have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
 #### Q: Can I programmatically create subscriptions? 
 
