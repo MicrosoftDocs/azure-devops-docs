@@ -219,11 +219,7 @@ Choose your profile menu and then choose **Preview features**.
 To enable or disable a feature, choose the slider. 
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself](media/preview-features/preview-features-s170a.png) 
-
-> [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself, part 2](media/preview-features/preview-features-s170-3.png) 
-
+> ![Preview features options for yourself](media/preview-features/preview-features-user.png) 
 
 For information on other user settings and preferences, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
@@ -238,8 +234,12 @@ When you enable a feature at the organization level, you essentially turn it on 
 > If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the organization](media/preview-features/organization-settings-1.png)
+> ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Preview features options for the organization, part 2.](media/preview-features/org-features-s187-2.png)
+> 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
