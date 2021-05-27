@@ -18,7 +18,8 @@ ms.date: 05/18/2021
 Use **Copy Dashboard** to create a copy of a team or project dashboard. You can copy a dashboard to a different team, the same team, or a different project. This feature minimizes the work required to build similar dashboards from scratch.  
  
 > [!NOTE]  
-> The **Copy Dashboard** feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience**. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md).
+> The **Copy Dashboard** feature is currently in preview. To access the feature, you must enable the **Copy Dashboard Experience**. To learn how, see [Manage or enable features](../../project/navigation/preview-features.md). 
+> This feature copies the widgets to a new dashboard, but doesn't reconfigure them based on a selected team. Support for that function is planned for a later release. 
 
 To add a team or project, see [Add a team](../../organizations/settings/add-teams.md) or [Create a project](../../organizations/projects/create-project.md) 
 
@@ -66,7 +67,7 @@ All dashboards are associated with either a team or a project. From the **Overvi
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](media/copy-dashboard/dashboard-copy-dashboard-selected.png)  
 
-	If you don't see the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** icon, make sure that you've enabled the Copy Dashboard Experience preview feature. See [Manage or enable features](../../project/navigation/preview-features.md).
+	If you don't see the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **More actions** icon, make sure that you've enabled the **Copy Dashboard Experience** preview feature. See [Manage or enable features](../../project/navigation/preview-features.md).
 
 2. Enter a **Name** and **Description** for the new dashboard. To copy the dashboard as a team dashboard, choose **Team Dashboard** and then select the **Project** and the **Team**. To copy the dashboard as a project dashboard, choose **Project Dashboard** and then the **Project**. 
 
@@ -76,7 +77,9 @@ All dashboards are associated with either a team or a project. From the **Overvi
 
 	Choose **Create**. 
 
-3. Open a team-based widget, such as **Velocity**, and verify that the widget now references the team selected in the previous step. 
+	The page updates to reflect the new dashboard. Only the widgets have been copied. 
+
+3.  Open each widget as needed to configure it to the specific project or team. 
  
 
 ## Try this next 
