@@ -500,7 +500,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Example plans view](../plans/media/plans-move-1.png)  
+![Example plans view](../extensions/media/plans/plans-move-1.png)  
 ::: moniker-end
 
 

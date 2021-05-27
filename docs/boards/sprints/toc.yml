@@ -1,6 +1,6 @@
 - name: About Sprints and Scrum
   href: scrum-overview.md
-- name: Schedule sprints
+- name: Change sprint dates
   href: define-sprints.md 
 - name: Forecast
   displayname: velocity, sprints, iterations  

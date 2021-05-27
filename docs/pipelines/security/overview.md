@@ -16,8 +16,8 @@ You also want to ensure only code you intend to deploy is deployed.
 Security must be balanced with giving teams the flexibility and power they need to run their own pipelines.
 
 > [!NOTE]
-> Azure Pipelines is one among a collection of Azure DevOps services, all built on the same secure infrastructure in Azure.
-> To understand the main concepts around security for all of Azure DevOps services, see [Azure DevOps Data Protection Overview](../../organizations/security/data-protection.md) and [Azure DevOps Security and Identity](../../organizations/security/about-security-identity.md).
+> Azure Pipelines is one among a collection of Azure DevOps Services, all built on the same secure infrastructure in Azure.
+> To understand the main concepts around security for all of Azure DevOps Services, see [Azure DevOps Data Protection Overview](../../organizations/security/data-protection.md) and [Azure DevOps Security and Identity](../../organizations/security/about-security-identity.md).
 
 Traditionally, organizations implemented security through draconian lock-downs.
 Code, pipelines, and production environments had severe restrictions on access and use.

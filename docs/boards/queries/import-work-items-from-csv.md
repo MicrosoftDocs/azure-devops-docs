@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
-ms.date: 03/16/2021
+ms.date: 05/21/2021
 ---
 
 # Bulk import or update work items using CSV files
@@ -38,7 +38,9 @@ All work items you import are created in a new state. This rule means that you c
 
 1. Create a local ***import.csv*** file and open it in Visual Studio Code or Excel.
 
-2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In the following example, we include the Priority field.
+2. The file must contain the **Work Item Type** and the **Title** fields. You can include other fields as needed. For a list of default fields, see [Work item field index](../work-items/guidance/work-item-field.md).  
+
+	In the following example, we include the **Priority** field.
 
    > [!div class="tabbedCodeSnippets"]
    ```CSV
@@ -185,7 +187,7 @@ ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
 ,"Issue",,"Enable feature for customer champs",,"To Do","2",
 ```
 
-Here is a better visual in Excel
+Here is a better visual in Excel.
 
 > [!div class="mx-imgBorder"]  
 > ![Excel view image](media/import-csv/import-add-child-items.png)
@@ -206,5 +208,6 @@ The work items results always lists the data errors found for individual work it
 
 ## Related articles
 
+- [Work item field index](../work-items/guidance/work-item-field.md)
 - [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.yml)

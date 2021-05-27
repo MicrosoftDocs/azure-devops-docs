@@ -1,29 +1,41 @@
 - name: About service hooks
   href: overview.md
+  displayName: integrate, project, tasks, events, publisher, subscription, endpoint, notification
 - name: Create a service hook
   items:
   - name: Workplace messaging apps
     href: services/workplace-messaging-apps.md
+    displayName: integrate, integration, notification, events, deployment, teams, Slack
   - name: Grafana
     href: services/grafana.md
+    displayName: open, source, dashboard, subscription, release, pipelines
   - name: Slack
     href: services/slack.md
+    displayName: messages, events, changes, boards, pipelines, repos, app, subscription, webhook
   - name: Jenkins
     href: services/jenkins.md
+    displayName: integration, build, subscription, trigger, event
   - name: Trello
     href: services/trello.md
+    displayName: cards, lists, events, subscription, project
   - name: Datadog
     href: services/datadog.md
+    displayName: integrate, configure, events, metrics, dashboards, monitor, troubleshoot, subscription
   - name: Microsoft Teams
     href: services/teams.md
+    displayName: integrate, boards, pipelines, repos, connector, configure, project, activity
 - name: Web Hooks
   href: services/webhooks.md
+  displayName: JSON, subscription, configure, event, endpoint
 - name: Authorize other services
   href: authorize.md
+  displayName: oauth, secure, resources, access, credentials, account, approve
 - name: Service hook consumers
   href: consumers.md
+  displayName: subscription, event, consumer, action, storage, webhooks, bus, campfire, flowdock, hipchat, jenkins, kato, trello, zendesk
 - name: Service hook events
   href: events.md
+  displayName: build, release, deployment, created, updated, deleted, restored, commented, changed, approval
 - name: Troubleshoot and FAQs
   href: troubleshoot.md
-
+  displayName: issue, activity, debug, subscription, terminal, transient, failure

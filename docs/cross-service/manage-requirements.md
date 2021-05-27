@@ -132,7 +132,7 @@ You can then link your specifications or attach them to your requirements.
  
 ## Analyze and prioritize requirements
 
-Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Board tools: 
+Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Boards tools: 
 
 - **Product backlog**: Supports drag-and-drop of work items to get them in priority order. Supports bulk-edit of work items to change assignments or update fields. 
 - **Query Results, Triage mode**: Supports review of a list of work items and their forms so that you can quickly update work items and add details. 
@@ -324,11 +324,11 @@ To review features delivered across several teams, configure a delivery plan. De
 **Example of multi-team Delivery Plan** 
 
 ::: moniker range="azure-devops"  
-:::image type="content" source="../boards/plans/media/plans/overview-preview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+:::image type="content" source="../boards/plans/media/plans/overview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
-<img src="../boards/plans/media/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+<img src="../boards/extensions/media/plans/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end 
  
 
@@ -348,7 +348,7 @@ To learn more about any of the concepts introduced in this article, refer to the
  
 #### Agile and Agile culture
 
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [What is Agile?](/devops/plan/agile/what-is-agile)
 - [Agile culture](../boards/plans/agile-culture.md) 
 - [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 

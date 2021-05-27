@@ -6,11 +6,20 @@
   href: configure-hierarchical-teams.md
 - name: Review team Delivery Plans
   href: review-team-plans.md  
+  displayname: filter, roadmap, calendar, multi-team views, cards
+- name: Track dependencies
+  href: track-dependencies.md  
+  displayname: dependency, dependencies, predecessor, successor 
 - name: Filter your Delivery Plans
   href: ../backlogs/filter-backlogs-boards-plans.md 
   displayname: rollup, group, parent, tags 
+- name: Add or edit a Delivery Plan
+  href: add-edit-delivery-plan.md  
+  displayname: calendar, multi-team views, cards
 - name: Edit plan permissions 
   href: edit-delivery-plan-permissions.md
+- name: Delivery Plans FAQs
+  href: faqs.yml
 - name: Scaled Agile Framework®
   items:
   - name: Implement Scaled Agile Framework®
@@ -27,11 +36,11 @@
     href: safe-review-roadmaps-progress.md 
 - name: Best practices, monitoring, & reports
   items:
-  - name: Agile culture
-    href: agile-culture.md
-  - name: Practices that scale
-    href: practices-that-scale.md
-  - name: Visibility across teams
+  - name: Agile culture  
+    href: agile-culture.md  
+  - name: Practices that scale  
+    href: practices-that-scale.md  
+  - name: Visibility across teams  
     href: visibility-across-teams.md
 
 

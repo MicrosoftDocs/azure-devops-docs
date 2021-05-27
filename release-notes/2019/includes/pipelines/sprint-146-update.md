@@ -48,7 +48,7 @@ For example, if your pipeline uses a redis cache for integration tests, you can 
 
 ### Work items linked to GitHub commits in Release Summary
 
-In December we introduced the capability to link GitHub commits to work items.  We are excited to announce that you can now see all Azure Board work items linked to GitHub commits in the release summary page. This will help teams track and retrieve more information about the commits that have been deployed to an environment.
+In December we introduced the capability to link GitHub commits to work items.  We are excited to announce that you can now see all Azure Boards work items linked to GitHub commits in the release summary page. This will help teams track and retrieve more information about the commits that have been deployed to an environment.
 
 ### New Azure App Service tasks optimized for YAML
 

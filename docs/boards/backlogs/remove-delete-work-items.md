@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/30/2020
+ms.date: 05/21/2021 
 ---
 
 # Remove, delete, or restore work items 
@@ -31,6 +31,10 @@ Work items can live forever in your work tracking data store. You never have to 
 ::: moniker-end
 
 The ability to archive work items or projects isn't a supported feature at this time. 
+
+::: moniker range=">= azure-devops-2019"
+To move a work item from one project to another, or to change the work item type, see [Move work items, change work item type](move-change-type.md). 
+::: moniker-end
 
 ::: moniker range=">= tfs-2017"
  

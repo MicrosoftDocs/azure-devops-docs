@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 09/17/2020
+ms.date: 05/03/2021
 ---
 
 # Add or remove a team administrator 
@@ -20,29 +20,14 @@ ms.date: 09/17/2020
 
 Learn how to add or remove an administrator for your team. It's always a good idea to have more than one user with administration permissions for a team. Team administrators can [manage teams and configure team tools](manage-teams.md) and manage projects. You may want to remove a user's administration permissions, for instance if the user is no longer active. 
 
+To add a team, see [Add teams](add-teams.md).
+
 <a name="permissions"></a>
 
 ## Prerequisites
 
-::: moniker range="azure-devops"
-
-- To add a user as a team administrator: 
-	- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
-	- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
-- To be added as a team administrator, you must be granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator.
- 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-- To add a user as a team administrator: 
-	- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
-	- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
-- To be added as a team administrator, you must be granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator. 
-::: moniker-end
-
-
-To add a team, see [Add teams](add-teams.md).
+- To add or remove a user as a team administrator, you must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
+- To be added as a team administrator, you must be a user in the organization and granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator. 
 
 <a id="open-admin-context">  </a>
 
@@ -55,11 +40,7 @@ To get added as a team administrator, ask another team administrator or a member
 > [!NOTE]   
 > To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
-::: moniker-end
-
 #### [New Teams Page](#tab/preview-page) 
-
-::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings**, and then choose **Teams**. 
@@ -77,13 +58,29 @@ To get added as a team administrator, ask another team administrator or a member
 	> [!div class="mx-imgBorder"]
 	> ![Screenshot of Add team administrator dialog on the New Teams page.](media/add-team-admin/add-team-administrator-dialog-preview.png)
 
-::: moniker-end
- 
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
-
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
+1. Choose **Project settings**, and then choose **Teams**. 
+
+	> [!div class="mx-imgBorder"]
+    > ![Screenshot of selected Project settings and Teams buttons.](media/shared/open-project-settings-team-new-nav.png)
+
+2. Select the team to configure, and then select **Settings** > **Add**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Screenshot of the Add button for selection.](media/add-team-admin/settings-add-team-administrator.png)  
+
+3. Enter the user identity that you want to add to the administrator role, and then select **Save**.     
+	    
+	> [!div class="mx-imgBorder"]
+	> ![Screenshot of Add team administrator dialog on current page for Azure DevOps Server 2019 and up.](media/add-team-admin/add-administrators-dialog.png)
+
+***
+
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Choose **Project settings**, and then choose **Teams**. 
 
@@ -151,9 +148,9 @@ Each team must have at least one administrator. To remove an administrator, you 
 
 Open the **Teams** settings page as described in the previous section.
 
-#### [New Teams Page](#tab/preview-page) 
-
 ::: moniker range="azure-devops" 
+
+#### [New Teams Page](#tab/preview-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings**.
@@ -161,13 +158,20 @@ Open the **Teams** settings page as described in the previous section.
 
 ![Screenshot of X selected to remove team administrator.](media/add-team-admin/remove-admin-new-ui-page.png)
 
-::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
+From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
+
+> [!div class="mx-imgBorder"]
+> ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
+
+* * *
+ 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 
@@ -175,6 +179,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 > ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
 
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 < azure-devops-2019"
 
 From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
@@ -183,9 +188,7 @@ From the Administrators section, choose ![delete icon](../../media/icons/delete-
 > ![Screenshot of current UI for Remove a team administrator.](media/add-team-admin/remove-admin-prev-ui.png)
 
 ::: moniker-end
-   
-* * *
- 
+
 ## Next steps  
 
 > [!div class="nextstepaction"]

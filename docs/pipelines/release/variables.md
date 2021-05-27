@@ -78,6 +78,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Release.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
 | Release.DefinitionName | The name of the release pipeline to which the current release belongs.<br/><br />Example: `fabrikam-cd` |
 | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `Mateo Escobedo` |
+| Release.Deployment.RequestedForEmail | The email address of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `mateo@fabrikam.com` |
 | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. Not available in TFS 2015.<br/><br />Example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.DeploymentID | The ID of the deployment. Unique per job.<br/><br />Example: `254` |
 | Release.DeployPhaseID | The ID of the phase where deployment is running.<br/><br />Example: `127` |
@@ -275,10 +276,5 @@ if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
 [!INCLUDE [variable-collision](../includes/variable-collision.md)]
-
-You can use custom variables to prompt for values during the execution of a release.
-For more information, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
-
-[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

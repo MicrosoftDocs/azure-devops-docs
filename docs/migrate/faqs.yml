@@ -19,8 +19,9 @@ summary: |
 
   Find answers to frequently asked questions when using migrating to Azure DevOps Services from on-premises. 
 
+
 sections:
-  - name: FAQs   
+  - name: Single section - ignored 
      
     questions: 
 

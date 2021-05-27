@@ -8,8 +8,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 03/02/2021
+ms.date: 05/06/2021
 ---
+
  
 # Interactively filter backlogs, boards, queries, and plans 
 
@@ -19,13 +20,13 @@ ms.date: 03/02/2021
 
 With filter functions, you can interactively apply one or more filters to an Azure Boards tool. Each tool is already filtered to show a subset of work items according to the tool function. For example, Backlogs and Boards display work items based on the selected Area Paths and Iteration Paths for the team. Query Results list work items based on the query clauses you've defined. 
 
-You enable the filter feature by choosing **Filter** :::image type="icon" source="../../media/icons/filter-icon.png" border="false":::.
+You enable the filter feature by choosing :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter**.
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of choosing Filter function latest versions.](media/filter/filter-backlogs.png)
 
 
-From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Board tools.  
+From these tools, you may still have a large number of work items listed or displayed. Interactive filtering supports your ability to focus on a subset of them. You can apply one or more filter functions to each of the Azure Boards tools.  
 
 ::: moniker range="<= tfs-2015"
 You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Sprint Backlogs, and Queries.   
@@ -35,10 +36,11 @@ You can use the keyword, ID, and tag filter functions with Boards, Backlogs, Spr
 
 Use filters to perform these tasks:  
 - In daily scrum meetings, filter the Kanban board to focus on assigned work for a specific sprint. 
-- Or, if your team uses the Taskboard, filter for a team member's completed assigned work. 
+- Or, if your team uses the Sprints Taskboard, filter for a team member's completed assigned work. 
 - To focus on a group of work items, filter based on the Parent Work Item, by Area Path, or Tags.  
 - To triage work items, create a query and filter to focus on similar work grouped by Area Path or Tags. 
 
+ 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017"
@@ -195,6 +197,7 @@ Supported options are indicated with a ✔️ or listed.
       - Work Item Types
       - Assigned To
       - States
+      - Tags
    :::column-end:::
    :::column span="1.5":::
       Note 1
@@ -208,17 +211,19 @@ Supported options are indicated with a ✔️ or listed.
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1.5":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
    :::column span="2":::
-      - Assigned To
       - Work Item Types
+      - Assigned To
       - States
       - Area Path
       - Iteration Path
+      - Tags
+      - Parent Work Item
    :::column-end:::
    :::column span="1.5":::
       ✔️   
@@ -229,10 +234,10 @@ Supported options are indicated with a ✔️ or listed.
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="1.5":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -240,7 +245,8 @@ Supported options are indicated with a ✔️ or listed.
    :::column span="2":::
       - Work Item Types
       - Assigned To
-      - States 
+      - States
+      - Tags
    :::column-end:::
    :::column span="1.5":::
         
@@ -295,7 +301,9 @@ Supported options are indicated with a ✔️ or listed.
 In addition to the standard filter functions summarized in the previous table, the following table indicates which tools have additional filters you can apply as well as sort, group, reorder, and rollup functions. Some functions, such as reorder, don't work when the filter function is enabled.  
 
 <br/>
+::: moniker-end 
 
+::: moniker range=">= azure-devops-2020"
 ---
 :::row:::
    :::column span="2":::
@@ -448,9 +456,11 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans (Preview)**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -469,9 +479,11 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
           
@@ -490,6 +502,8 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="2":::
      [**Semantic search, Work Items**](../../project/search/functional-work-item-search.md)
@@ -511,11 +525,7 @@ In addition to the standard filter functions summarized in the previous table, t
    :::column-end:::
 :::row-end:::
 ---
-
-
-::: moniker-end  
-
-
+::: moniker-end 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
@@ -670,10 +680,30 @@ In addition to the standard filter functions summarized in the previous table, t
 :::row-end:::
 ---
 ::: moniker-end 
-::: moniker range=">= tfs-2017 < azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
-     [**Plans**](../plans/review-team-plans.md)
+     [**Delivery Plans**](../plans/review-team-plans.md)
+   :::column-end:::
+   :::column span="2":::
+
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      ✔️ (Note 6)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️ 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
+:::row:::
+   :::column span="2":::
+     [**Plans**](../extensions/delivery-plans.md)
    :::column-end:::
    :::column span="2":::
 
@@ -720,7 +750,7 @@ In addition to the standard filter functions summarized in the previous table, t
 3. Backlogs and Sprint Backlogs support reordering. However, when filtering is enabled, reordering isn't supported.
 4. Taskboards provides a **Group by** function based on **People** or **Stories**.  
 5. Query Results supports [multi-column sort](set-column-options.md#sort-on-a-column).
-6. Delivery Plans define the grouping in Settings based on [team selections](../plans/review-team-plans.md#add-a-plan). 
+6. Work items appear in the order defined for the team Sprint backlog, which it inherits from the team product backlog.  
 7. Semantic search supports sorting search results by the following fields&mdash;**Assigned To**, **Changed Date**, **Created Date**, **ID**, **State**, **Tags**, **Title**, and **Work Item Type**&mdash;and Relevance. 
 
 ::: moniker-end  
@@ -1066,6 +1096,7 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 
 ## Related articles  
 
+
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)
 - [About backlogs](backlogs-overview.md#work-with-multi-team-ownership-of-backlog-items)
 - [Change column options](set-column-options.md)
@@ -1073,6 +1104,7 @@ To learn more about tags, see [Add tags to work items to categorize and filter l
 - [Customize cards](../boards/customize-cards.md)
 - [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 - [Tags](../queries/add-tags-to-work-items.md) 
+- [Query work items that you're following](../work-items/follow-work-items.md#query-work-items-that-youre-following)
 - [Reorder cards (Kanban Boards)](../boards/reorder-cards.md)  
 
 

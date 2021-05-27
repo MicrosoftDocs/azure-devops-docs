@@ -33,7 +33,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). 
 
-:::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json":::
+<!-- :::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json"::: -->
 
 The template defines several resources:
 

@@ -37,7 +37,7 @@ ms.date: 06/22/2020
     </configuration>
     ```
 
-1. Run the following command yo publish your NuGet package to your feed.
+1. Run the following command to publish your NuGet package to your feed.
 
     ```Command
     nuget.exe push -Source <orgName> -ApiKey az <packagePath>
