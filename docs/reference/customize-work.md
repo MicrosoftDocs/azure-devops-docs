@@ -250,21 +250,23 @@ The following table summarizes the differences between the three supported proce
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="3":::
       Use [**az boards** command-line tools](../cli/quick-reference.md#azure-boards) to edit projects and teams and list information
    :::column-end:::
    :::column span="1":::
-         
+      ✔️  
    :::column-end:::
    :::column span="1":::
-         
+      ✔️  
    :::column-end:::
    :::column span="1":::
-      ✔️
+      ✔️  
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="3":::
       Use the [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects and list project information
@@ -306,7 +308,7 @@ The following table summarizes the differences between the three supported proce
       ✔️
    :::column-end:::
    :::column span="1":::
-       
+       (see note 5)
    :::column-end:::
 :::row-end:::
 ---
@@ -316,12 +318,19 @@ The following table summarizes the differences between the three supported proce
 
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
-3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal on a project-by-project basis. Or, you can use REST APIs or the [Azure DevOps CLI command tool](../cli/quick-reference.md).
-	- Configure areas and iterations  
+3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal on a project-by-project basis. 
+	- Configure Area Paths and Iteration Paths  
 	- Work item queries  
 	- Security groups and permissions   
-	- Permissions and access to functional areas such as version control and build  
+	- Permissions and access to functional areas such as version control and build 
+	::: moniker range=">= tfs-2017 < azure-devops-2020"
+	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification%20nodes/create%20or%20update). 
+	::: moniker-end
+	::: moniker range=">= azure-devops-2020"
+	Or, you can use [REST APIs](/rest/api/azure/devops/wit/classification%20nodes/create%20or%20update) or the [Azure DevOps CLI command tool](../cli/quick-reference.md). 
+	::: moniker-end
 4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
+5. You can use the REST API to [import and export process templates](rest/api/azure/devops/processadmin/processes/import%20process%20template).
 
 <a id="choose-process-model" />
 
@@ -351,6 +360,7 @@ To learn more about project collections, see [Manage project collections](/azure
 ::: moniker range=">= azure-devops-2019"
 Several work item types support the test experience within the web portal **Test** pages and Test Manager client. For an Inherited process, you can customize Test Plan, Test Suite, and Test Case, work item types as you would any other work item type. For an On-premises XML process, you can customize all test-related work item types&mdash;Test Plan, Test Suite, Test Case, Shared Steps, and Shared Parameters&mdash;as you would any other work item type. 
 ::: moniker-end
+
 
 
 ::: moniker range="<= tfs-2018"
