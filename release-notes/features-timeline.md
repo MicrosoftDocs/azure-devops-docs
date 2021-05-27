@@ -2,13 +2,12 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 05/04/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
-
 # Azure DevOps Feature Timeline
 
 ---
@@ -36,21 +35,18 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
     <tr>
-<td rowspan="1"><strong>2020 Q4</strong></td>
-    <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td><a href="https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/">In Preview</a></td><td>Boards</td><td>Future</td></tr>
-<td rowspan="4"><strong>2021 Q1</strong></td>
+
+<td rowspan="2"><strong>2021 Q1</strong></td>
     <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810" data-raw-source="[Limit user visibility and collaboration for projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808810)">Limit user visibility and collaboration for projects</a></td><td><a href="/azure/devops/release-notes/2021/sprint-182-update">In Preview</a></td><td>Admin</td><td>Future</td>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management API](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management API</a></td><td><a href="/azure/devops/release-notes/2021/sprint-182-update">GA</a></td><td>Admin</td><td>Future</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[PAT and SSH management events in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">PAT and SSH management events in the Audit Log</a></td><td><a href="https://devblogs.microsoft.com/devops/billing-and-token-management-events-now-available-in-auditing/">GA</a></td><td>Admin</td><td>Future</td></tr>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td><a href="/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview">In Preview</a></td><td>Pipelines</td><td>Future</td></tr>
 <td rowspan="6"><strong>2021 Q2</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147 data-raw-source="[Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147)">Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</a>
-    </td><td>Planned</td><td>Admin</td><td>Future</td></tr>
+    </td><td>In Progress</td><td>Admin</td><td>Future</td></tr>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>Proposed</td><td>Admin</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Proposed</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942 data-raw-source="[Delivery Plans 2.0 - Dependency Tracking Visualization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1806942)">Delivery Plans 2.0 - Dependency Tracking Visualization</a></td><td>In Progress</td><td>Boards</td><td>Future</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>In Progress</td><td>Pipelines</td><td>TBD</td></tr>
-    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004 data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>In Progress</td><td>Reporting</td><td>Future</td></tr>
+    <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td><a href="https://review.docs.microsoft.com/azure/devops/release-notes/2021/sprint-187-update?branch=releasenotes%2FSprint187#preview-of-templates-support-in-yaml-editor">In Preview</td><td>Pipelines</td><td>TBD</td></tr>
+    <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>In Preview</td><td>Reporting</td><td>Future</td></tr>
 <td rowspan="10"><strong>Future</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700" data-raw-source="[Conditional Access Policy support for device state](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808700)">Conditional Access Policy support for device state</a></td><td>Planned</td><td>Admin</td><td>Future</td>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678 data-raw-source="[Access events for PAT, SSH will be available in the Auditing Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1808678)">Access events for PAT, SSH will be available in the Auditing Log</a></td><td>Planned</td><td>Admin</td><td>Future</td></tr>
@@ -81,6 +77,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
 <tr>
+    <td rowspan="7"><a href="2021/sprint-187-update.md" data-raw-source="[26 May 2021](2021/sprint-187-update.md)">26 May 2021</a></td>
+    <td>Delivery Plans 2.0 general availability</td><td>Board</td><td>Future</td></tr>
+    <td>New iteration capacity REST API</td><td>Board</td><td>Future</td></tr>
+    <td>Copy Dashboard is now available in public preview</td><td>Board</td><td>Future</td></tr>
+    <td>Change in .NET SDK preinstallation policy on Microsoft hosted Ubuntu agents</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Permissions and checks on variable groups and secure files</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Preview of templates support in YAML editors</td><td>Pipelines</td><td>Future</td></tr>
+    <td>Ubuntu-16.04 will be removed from Microsoft-hosted pools in September 2021</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr>
     <td rowspan="4"><a href="2021/sprint-186-update.md" data-raw-source="[05 May 2021](2021/sprint-186-update.md)">05 May 2021</a></td>
     <td>PAT lifecycle management API general availability</td><td>General</td><td>Future</td></tr>
     <td>Fixed several issues with Delivery Plans 2.0</td><td>Board</td><td>Future</td></tr>
@@ -185,7 +190,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
     <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
     <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
-    <tr><td>Multi-repo triggers for Azure repos</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Multi-repo triggers for Azure Repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
     <td>State transition restriction rules</td><td>Boards</td><td>2020.1</td>

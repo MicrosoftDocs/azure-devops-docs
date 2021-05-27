@@ -142,7 +142,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> Another tool that supports dependency views is the [Delivery Plans (Preview)](../plans/review-team-plans.md#dependencies).
+> Another tool that supports dependency views is [Delivery Plans](../plans/track-dependencies.md).
 ::: moniker-end
 
 ## Related articles

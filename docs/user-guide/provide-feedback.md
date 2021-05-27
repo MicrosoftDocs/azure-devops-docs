@@ -9,7 +9,7 @@ ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 04/23/2019
+ms.date: 05/24/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -112,8 +112,14 @@ A page similar to the following example opens showing the version number.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
-> |On-premises release | Update | Version number |
+> |On-premises release | Update | Version number | 18.181.31202.1
 > |-------------|--------|----------------|
+> |**Azure DevOps Server 2020** | 2020.1 | 18.181.31230.2 |
+> |  | 2020.0.1 Patch 3  | 18.170.31228.1 |
+> |  | 2020.0.1 Patch 2  | 18.170.31123.3  |
+> |  | RTW  | 18.170.30830.2  |
+> |  | RC2  | 18.170.30331.4  |
+> |  | RC1  | 18.170.30308.2  |
 > |**Azure DevOps Server 2019** | 2019.1  | 17.153.29522.3 |
 > |  | RTW  | 17.143.28511.3  |
 > |**Azure DevOps Server 2018** |2018.3 |16.131.28106.2 |

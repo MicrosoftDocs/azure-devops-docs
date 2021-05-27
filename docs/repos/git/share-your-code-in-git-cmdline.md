@@ -148,7 +148,7 @@ git push origin main
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
+> [New to Git repos? Learn more](/devops/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](gitworkflow.md)

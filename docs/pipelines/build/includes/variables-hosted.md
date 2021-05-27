@@ -571,6 +571,16 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 <td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
 </tr>
 
+<tr>
+<td>Strategy.Name</td>
+<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>, or <code>rolling</code>.</td>
+</tr>
+
+<tr>
+<td>Strategy.CycleName</td>
+<td>The current cycle name in a deployment. Options are <code>PreIteration</code>, <code>Iteration</code>, or <code>PostIteration</code>.</td>
+</tr>
+
 </table>
 
 

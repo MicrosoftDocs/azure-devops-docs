@@ -2,7 +2,7 @@
 title: Define, capture, triage, and manage bugs or code defects
 titleSuffix: Azure Boards 
 description: Define, capture, and triage bugs, code defects, and software issues to manage technical debt and maintain software quality 
-ms.custom: "boards-backlogs, seodec18"
+ms.custom: "boards-backlogs, contperf-fy21q4-portal"
 ms.technology: devops-agile
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli

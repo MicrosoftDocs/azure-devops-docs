@@ -1,9 +1,9 @@
 ---
-title: Pipeline resources
+title: Pipeline resource protection
 description: Permissions and approvals on important resources.
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
 ms.reviewer: vijayma
-ms.date: 07/16/2020
+ms.date: 05/18/2021
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -25,6 +25,7 @@ In Azure Pipelines, all of the following are considered *protected* resources:
 - [secure files](../library/secure-files.md)
 - [service connections](../library/service-endpoints.md)
 - [environments](../process/environments.md)
+- [repositories](../process/environments.md)
 
 "Protected" means:
 - They can be made accessible to specific users and specific pipelines within the project.

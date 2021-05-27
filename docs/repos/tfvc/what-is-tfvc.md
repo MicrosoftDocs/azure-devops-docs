@@ -38,7 +38,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks all its work into Team Foundation Server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
 
 ### Quickstarts 
@@ -120,5 +120,5 @@ We are not currently republishing the following sections. However, you can read 
 
 ## Related articles 
 
-- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
+- [What is version control?](/devops/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/devops/git/migrate-from-tfvc-to-git)

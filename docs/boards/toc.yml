@@ -233,15 +233,15 @@
 - name: Azure DevOps Learn
   items:
   - name: What is Agile?
-    href: /azure/devops/learn/agile/what-is-agile
+    href: /devops/plan/what-is-agile
   - name: What is Agile development?
-    href: /azure/devops/learn/agile/what-is-agile-development
+    href: /devops/plan/what-is-agile-development
   - name: Agile culture
     href: ./plans/agile-culture.md
   - name: Creating productive teams
-    href: /azure/devops/learn/agile/productive-teams
+    href: /devops/plan/building-productive-teams
   - name: What is Scrum?
-    href: /azure/devops/learn/agile/what-is-scrum
+    href: /devops/plan/what-is-scrum
 - name: Resources
   items:
   - name: Dashboards, Charts, Reports, & Widgets

@@ -88,6 +88,12 @@
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Naming restrictions
+    href: settings/naming-restrictions.md 
+  - name: Work tracking object limits
+    href: settings/work/object-limits.md 
 - name: REST API reference
   items:
   - name: Notifications

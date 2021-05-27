@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 12/22/2020
+ms.date: 05/13/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -164,6 +164,39 @@ The following built-in functions can be used in expressions.
 > It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
 
 ::: moniker range=">= azure-devops-2019"
+
+### convertToJson
+* Take a complex object and outputs it as JSON.
+* Min parameters: 1. Max parameters: 1.
+
+```yaml
+parameters:
+  - name: listOfValues
+    type: object
+    default:
+      this_is:
+        a_complex: object
+        with:
+          - one
+          - two
+ 
+steps:
+- script: |
+    echo "${{ convertToJson(parameters.listOfValues) }}"
+```
+
+```json
+# Example output
+{
+  this_is: {
+    a_complex: object,
+    with: [
+      one,
+      two
+    ]
+  }
+}
+```
 
 ### counter
 * This function can only be used in an expression that defines a variable. It cannot be used as part of a condition for a step, job, or stage.
@@ -359,7 +392,7 @@ steps:
 
 
 ### startsWith
-* Evaluates `true` if left parameter string starts with right parameter
+* Evaluates `True` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
@@ -732,13 +765,13 @@ This would return:
 Values in an expression may be converted from one type to another as the expression gets evaluated.
 When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings.
 
-For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated.
+For example, in this YAML, the values `True` and `False` are converted  to `1` and `0` when the expression is evaluated.
 The function `lt()` returns `True` when the left parameter is less than the right parameter.
 
 ```yaml
 variables:
-  firstEval: $[lt(false, true)] # 0 vs. 1, True
-  secondEval: $[lt(true, false)] # 1 vs. 0, False
+  firstEval: $[lt(False, True)] # 0 vs. 1, True
+  secondEval: $[lt(True, False)] # 1 vs. 0, False
 
 steps:
 - script: echo $(firstEval)
@@ -775,8 +808,8 @@ To number:
 * `True` &rarr; `1`
 
 To string:
-* `False` &rarr; `'false'`
-* `True` &rarr; `'true'`
+* `False` &rarr; `'False'`
+* `True` &rarr; `'True'`
 
 ### Null
 
