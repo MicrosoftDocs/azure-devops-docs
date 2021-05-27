@@ -195,18 +195,46 @@ For example, the following condition indicates that the Justification field is h
 ::: moniker range=">= azure-devops-2020"
 
 ## Restrict modification of select fields based on a user or group 
+  
+You can customize work item types to restrict who can modify a specific field for a work item type. You restrict modification by adding a custom rule to the work item type. 
+
+Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+
+- `current user is a member of a group...`
+- `current user is not a member of a group...`
+
+> [!TIP]    
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md).
+
+For example, you can make the **Title** or the **State** fields **Read-only** for select users or groups. 
+
+For example, the **Priority** field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a User Story, they are unable to change the value on the Priority field.
+
+:::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-priority-field-read-only-for-not.png" alt-text="Custom rule, Current user is not a member of a group, make Priority field read-only":::
  
+
 ::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+<a id="restrict-modification-closed-wi" />
 
 ::: moniker range="azure-devops"
 
 ## Restrict modification of closed work items
- 
-::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-work-items.md)]
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
+
+For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
+
+:::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-no-open-after-close.png" alt-text="Custom rule, Current user is not a member of a group, disallow transitions to New or Active state from Closed":::
+
+
+> [!NOTE]  
+> The `A work item state moved from ...`  condition is only available for Azure DevOps Services and only to those participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
+
+> [!NOTE]   
+> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
+
+::: moniker-end
 
 
 ## Related articles
