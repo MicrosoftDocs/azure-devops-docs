@@ -228,7 +228,6 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 ::: moniker-end
 
-
 [!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 
 ::: moniker range="< azure-devops"

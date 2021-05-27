@@ -21,7 +21,7 @@ For the Inherited process, you can add a rule that restricts state transition. F
 > [!NOTE]  
 > The `A work item state moved from ...`  condition is only available for Azure DevOps Services and only to those participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
 
-For more information on applying rules to a workflow, see [Apply rules to workflow states (Inheritance process)](../organizations/settings/work/apply-rules-to-workflow-states.md).
+For more information on applying rules to a workflow, see [Apply rules to workflow states (Inheritance process)](/azure/devops/organizations/settings/work/apply-rules-to-workflow-states).
 
 
 > [!NOTE]   
