@@ -120,5 +120,5 @@ We are not currently republishing the following sections. However, you can read 
 
 ## Related articles 
 
-- [What is version control?](/devops/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/devops/git/migrate-from-tfvc-to-git)
+- [What is version control?](/devops/develop/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
