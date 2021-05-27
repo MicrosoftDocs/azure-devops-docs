@@ -17,9 +17,9 @@ ms.date: 05/27/2021
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-Learn about the files and file structure for project wikis and code wikis. This guidance applies to both types of wiki. When you create a team project, a wiki isn't created by default.
+Learn about the files and file structure for project wikis and code wikis. The following guidance might specify code wikis, however it applies to both types of wiki.
 
-For more information about creating project wikis and code wikis, see [Create a wiki for your project](wiki-create-repo.md).
+When you create a team project, a wiki isn't created by default. For more information about creating wikis, see [Create a wiki for your project](wiki-create-repo.md).
 
 Each code wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and sub-pages. You create your wiki via the Azure DevOps user interface, and then you can edit the wiki via your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository). For more information about publishing code wikis, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
 
@@ -53,13 +53,15 @@ Each file requires using dashes instead of spaces in the page title. For example
 
 ## *.order* file
 
-The *.order* file defines the sequence of pages within the wiki. The following visuals show an example of a wiki TOC and it's corresponding *.order* file.
+The *.order* file defines the sequence of pages within the wiki. The following visual shows an example of a wiki TOC and it's corresponding *.order* file.
 
 | **Wiki TOC**     | ***.order* file**                                                                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Wiki TOC example screenshot."::: | :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Wiki example .order file screenshot."::: |
 
-The default hierarchy is in alphabetical sequence, however you can change the hierarchy in the *.order* file. For more information about how to reorder wiki pages, see [Add and edit wiki pages, Reorder a wiki page](add-edit-wiki.md#reorder-a-wiki-page).
+The default hierarchy is in alphabetical sequence, however you can change this hierarchy in the *.order* file. For more information about how to reorder wiki pages, see [Add and edit wiki pages, Reorder a wiki page](add-edit-wiki.md#reorder-a-wiki-page).
+
+### Delete the *.order* file to revert to alphabetical sorting
 
 When there's no *.order* file the pages get sorted alphabetically. To revert to alphabetical sorting, do the following steps:
 
