@@ -17,7 +17,7 @@ ms.date: 02/05/2021
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-You can add a title and content to a page, once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
+You can add a title and content to a page, once the [wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
 Learn how to do the following tasks:  
 
@@ -34,7 +34,7 @@ While you author pages using [Markdown format](./markdown-guidance.md), you can 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
 
-As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For more shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
@@ -86,7 +86,7 @@ Specify a unique title of 235 characters or less. Page titles are case-sensitive
 > [!div class="mx-imgBorder"]  
 > ![Create wiki and first page](media/wiki/add-new-page.png)
 
-You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -154,7 +154,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 #### [Browser](#tab/browser) 
 
-To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly go to the edit of the current page. 
+To edit an existing wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly go to the edit of the current page. 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -282,7 +282,7 @@ To change the parent-child relationship of a page, open its context menu and sel
 > [!div class="mx-imgBorder"]  
 > ![Move wiki page in the hierarchy](media/wiki/wiki-move-page.png)
 
-For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md).
 
 ## Make a page the wiki home page
 
