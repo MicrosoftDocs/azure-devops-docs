@@ -1,7 +1,7 @@
 ﻿---
 title: Wiki files, structure, and conventions
 titleSuffix: Azure DevOps 
-description: Understand the file conventions of the Git repository wiki in Azure DevOps
+description: Understand the file conventions of the Git repository and project wikis in Azure DevOps.
 ms.technology: devops-collab
 ms.custom: wiki
 ms.topic: conceptual
@@ -10,14 +10,18 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 12/12/2019  
+ms.date: 05/27/2021  
 ---
 
-# Wiki Git repository files and file structure
+# Wiki files and file structure
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-When you create a team project, a Wiki Git repo isn't created by default. To start using a Wiki, you must first [provision it](wiki-create-repo.md). Each Wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and subpages.  
+Learn about the files and file structure for project wikis and code wikis. This guidance applies to both types of wiki. When you create a team project, a wiki isn't created by default.
+
+For more information about creating project wikis and code wikis, see [Create a wiki for your project](wiki-create-repo.md).
+
+Each code wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and subpages. You create your wiki via the Azure DevOps user interface, and then you can edit the wiki via your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository). For more information about publishing code wikis, see [Publish a Git repository to a Wiki](publish-repo-to-wiki.md).
 
 ## Wiki file and folder structure
 
@@ -41,7 +45,7 @@ The Wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the Wiki changes over time. 
+Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the Wiki changes over time.
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
@@ -49,35 +53,23 @@ Each file requires using dashes instead of spaces in the page title. For example
 
 ## *.order* file
 
-The *.order* file is used to set the order of the Wiki pages in a particular hierarchy. With *order* files, you can set your own order for the Wiki pages according to the information flow on that hierarchy.
+The *.order* file defines the sequence of pages within the Wiki. With *.order* files, you can set your own sequence for the Wiki pages according to the information flow on that hierarchy.
 
-For example, the images below show the default order for a hierarchy, which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
+The following screenshots show an example of what a wiki TOC and it's corresponding *.order* file look like.
 
-> ![Wiki page hierarchy without .order file](media/wiki/without-order-file.png)
-> ![Wiki page hierarchy with .order file](media/wiki/with-order-file.png)
+|***.order* file**  |**Wiki TOC** |
+|---------|---------|
+| :::image type="content" source="media/wiki/wiki-repo-order-file-example.png" alt-text="Wiki example .order file screenshot.":::   |  :::image type="content" source="media/wiki/wiki-toc-example.png" alt-text="Wiki TOC example screenshot.":::       |
 
-To change the order of the Wiki pages in the hierarchy, the *.order* file is required at the same level of the pages.
 
-> ![Order file in repo](media/wiki/order-file-in-repo.png)
+The default hierarchy is in alphabetical sequence, however you can change the hierarchy in the *.order* file.
 
-The content of the *order* file contains the list of files in the required order (without the ".md" extension).
-In this case, it is as follows:
+When there's no *.order* file the pages get sorted alphabetically. To revert to alphabetical sorting, do the following steps:
 
-```
-Home
-Readme
-Boards
-Pipelines
-Test
-Wiki
-More-Articles
-```
-
-When there's no *.order* file the pages are sorted alphabetically. To revert to alphabetical sorting, do the following steps:
 1. Copy the clone URL for the Wiki and open it in a browser.
-   Doing so opens the Git Repo (Files Hub), which backs the Wiki.
-2. Navigate to the *.order* file and delete it.
-   The .order file is automatically (re)created after deletion, for example, in a drag and drop action on an article.
+   Doing so opens the Git repository (files hub), which backs the Wiki.
+2. Go to the *.order* file and delete it.
+   The *.order* file gets automatically (re)created after deletion, for example, in a drag and drop action on an article.
 
 ## Related articles
 
