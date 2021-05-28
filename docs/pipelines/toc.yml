@@ -616,9 +616,6 @@
         - name: Integrate with Jenkins (Classic)
           href: release/integrate-jenkins-pipelines-cicd.md
           displayName: integrations, jenkins
-        - name: Automate infrastructure deployment with Terraform
-          href: release/automate-terraform.md
-          displayName: integrations, terraform
 - name: Migrate
   items:
     - name: Migrate from Classic pipelines
