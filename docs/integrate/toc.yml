@@ -1,34 +1,49 @@
 - name: Integrate applications
   href: index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+  displayName: build, custom, rest, api, client, libraries
 - name: Get started
   items:
     - name: Create a bug
       href: quickstarts/create-bug-quickstart.md
+      displayName: client, library, code, project, PAT
     - name: Query work items
       href: quickstarts/work-item-quickstart.md
+      displayName: get, fetch, queries, rest, api
     - name: Best practices
       href: ./concepts/integration-bestpractices.md
+      displayName: integrate, procedure, correct, effective
     - name: Service hooks
       href: ./concepts/service-hooks.md
+      displayName: information, what, are
     - name: Create service hooks subscriptions programmatically
       href: ../service-hooks/create-subscription.md
+      displayName: rest, api, build, complete, code
     - name: Call REST API
       href: how-to/call-rest-api.md
+      displayName: integrate, instance, collection
     - name: REST API versioning
       href: ./concepts/rest-api-versioning.md
+      displayName: applications, services, usage
     - name: .NET client libraries
       href: ./concepts/dotnet-client-libraries.md
+      displayName: integrate, developer, package, rest, api
     - name: Cross-origin resource sharing
       href: ./concepts/cross-origin-resource-sharing.md
+      displayName: CORS, JavaScript, code, Oauth, PATs
 - name: Samples
   items:
     - name: .NET
       href: get-started/client-libraries/samples.md
+      displayName: sample, c#, library, REST, authenticate
     - name: .NET (Legacy)
       href: get-started/client-libraries/soapSamples.md
+      displayName: SOAP, authenticate, PAT, Azure, Visual, Studio
     - name: REST API Samples
       href: get-started/rest/samples.md
+      displayName: PATs, personal, access, token, client, libraries
     - name: Create a PR status server
       href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+      displayName: pull, request, web, configure, service, hook
     - name: Use Azure Functions to create custom branch policies
       href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+      displayName: pull, request, PR, Repos, event, service, hook
