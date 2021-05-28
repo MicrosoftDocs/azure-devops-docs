@@ -74,7 +74,7 @@
       displayName: create, contribution, REST, API, configure
     - name: Add a chart
       href: develop/add-chart.md
-      displayName, create, configure, HTML, extension, manifest
+      displayName: create, configure, HTML, extension, manifest
   - name: Call a REST API
     href: develop/call-rest-api.md
     displayName: client, service, API

@@ -36,7 +36,7 @@
       href: get-started/client-libraries/samples.md
       displayName: sample, c#, library, REST, authenticate
     - name: .NET (Legacy)
-      href: get-started/client-libraries/soapSamples.md1832961
+      href: get-started/client-libraries/soapSamples.md
       displayName: SOAP, authenticate, PAT, Azure, Visual, Studio
     - name: REST API Samples
       href: get-started/rest/samples.md
