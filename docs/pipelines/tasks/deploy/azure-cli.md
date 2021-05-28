@@ -4,8 +4,8 @@ description: Azure Pipelines and Team Foundation Server build task to run a shel
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.topic: reference
 ms.custom: seodec18, devx-track-azurecli
-ms.author: N-Usha
-author: UshaN
+ms.author: ushan
+author: N-Usha
 ms.date: 02/17/2020
 monikerRange: '> tfs-2018'
 ---
