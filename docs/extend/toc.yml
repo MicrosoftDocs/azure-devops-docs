@@ -91,7 +91,7 @@
     displayName: extend, enhance, tool, service, product, manifest, publisher
   - name: Make listing public and Top Publisher program
     href: publish/publicize.md
-    displayName; Marketplace, extension, requirements, qualifications
+    displayName: Marketplace, extension, requirements, qualifications
   - name: Publish via command line
     href: publish/command-line.md
     displayName: CLI, Marketplace, share
