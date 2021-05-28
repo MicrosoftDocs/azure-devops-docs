@@ -182,8 +182,6 @@ landingContent:
             url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Set build and release retention policies
             url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Automate infrastructure deployments with Terraform
-            url: ./release/automate-terraform.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
