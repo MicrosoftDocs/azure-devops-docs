@@ -154,7 +154,6 @@
     - name: Add a team
       href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     - name: Add a team administrator
-      displayName: capacity planning, additional permissions, permissions
       href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
       displayName: edit administrator, administrator, permissions
     - name: Add users to a project or team 
