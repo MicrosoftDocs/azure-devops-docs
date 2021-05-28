@@ -88,7 +88,7 @@
     displayName: external, remote, services, jobs, settings, permissions, create, manage, secure
   - name: Deployment pools & groups
     href: ../pipelines/release/deployment-groups/index.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
-    displayName: target, machines, dev, test, UAT, production, agent
+    displayName: target, machine, dev, test, UAT, production, agent
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
@@ -134,19 +134,19 @@
     href: /rest/api/vsts/core/teams
 - name: Resources
   items:
-  - name: Azure Boards settings  
+  - name: Azure Boards settings
     href: ../reference/index.yml
-  - name: Service hooks 
+  - name: Service hooks
     href: ../service-hooks/overview.md
-  - name: Extensions 
+  - name: Extensions
     href: ../marketplace/overview.md
-  - name: Process 
+  - name: Inheritance process
     href: ./settings/work/inheritance-process-model.md
-  - name: Search  
+  - name: Search
     href: ../project/search/get-started-search.md
-  - name: Get started  
+  - name: Get started
     href: ../get-started/index.yml
-  - name: Marketplace & extensibility  
+  - name: Marketplace & extensibility
     href: ../marketplace-extensibility/index.yml
   - name: Get extensions for Visual Studio
     href: /visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019#install-or-uninstall-visual-studio-extensions
