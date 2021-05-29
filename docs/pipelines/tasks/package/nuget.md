@@ -47,10 +47,10 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 | `command`<br/>Command | The NuGet command to run. Select 'Custom' to add arguments or to use a different command.<br/>Options: `restore`, `pack`, `custom`, `push` |
 | `restoreSolution`<br/>Path to solution, packages.config, or project.json | The path to the solution, packages.config, or project.json file that references the packages to be restored. |
 | `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org, or commit a nuget.config file to your source code repository and set its path here. Options: `select`, `config`. |
-| `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed in the generated NuGet.config. You must have Azure Artifacts installed and licensed to select a feed here. |
-| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. Default value is `true`. Required when `feedsToUse` == `Select`.|
-| `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages. Required when `feedsToUse` == `Config`|
-| `externalFeedCredentials`<br/>Credentials for feeds outside this organization/collection | Credentials to use for external registries located in the selected NuGet.config. This is the name of your NuGet service connection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
+| `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed in the generated NuGet.Config. You must have Azure Artifacts installed and licensed to select a feed here. |
+| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.Config. Default value is `true`. Required when `feedsToUse` == `Select`.|
+| `nugetConfigPath`<br/>Path to NuGet.Config | The NuGet.Config in your repository that specifies the feeds from which to restore packages. Required when `feedsToUse` == `Config`|
+| `externalFeedCredentials`<br/>Credentials for feeds outside this organization/collection | Credentials to use for external registries located in the selected NuGet.Config. This is the name of your NuGet service connection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `noCache`<br/>Disable local cache | Prevents NuGet from using packages from local machine caches. |
 | `disableParallelProcessing`<br/>Disable parallel processing | Prevents NuGet from installing multiple packages in parallel. |
 | `restoreDirectory`<br/>Destination directory | Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json. |
@@ -157,7 +157,7 @@ Create a NuGet package in the destination folder.
 > [!NOTE]
 > Pipeline artifacts are downloaded to `System.ArtifactsDirectory` directory. `packagesToPush` value can be set to `$(System.ArtifactsDirectory)/**/*.nupkg` in your release pipeline.
 
-* Push/Publish a package to a feed defined in your NuGet.config.
+* Push/Publish a package to a feed defined in your NuGet.Config.
 
     ```YAML
     # Push a project
@@ -166,7 +166,7 @@ Create a NuGet package in the destination folder.
         command: 'push'
         packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
         feedsToUse: 'config'
-        nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
+        nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.Config'
     ```
 
 * Push/Publish a package to a project scoped
