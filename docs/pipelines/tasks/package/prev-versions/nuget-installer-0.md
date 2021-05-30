@@ -33,9 +33,9 @@ Copy the value from the <strong>Solution</strong> argument in your <a href="../.
 </td>
 </tr>
 <tr>
-<td>Path to NuGet.config</td>
+<td>Path to NuGet.Config</td>
 <td>
-If you are using a package source other than NuGet.org, you must check in a <a href="http://docs.nuget.org/Consume/NuGet-Config-File" data-raw-source="[NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File)">NuGet.config</a> file and specify the path to it here.
+If you are using a package source other than NuGet.org, you must check in a <a href="http://docs.nuget.org/Consume/NuGet-Config-File" data-raw-source="[NuGet.Config](https://docs.nuget.org/Consume/NuGet-Config-File)">NuGet.Config</a> file and specify the path to it here.
 </td>
 </tr>
 <tr>
@@ -67,7 +67,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 ```
 `-- ConsoleApplication1
     |-- ConsoleApplication1.sln
-    |-- NuGet.config
+    |-- NuGet.Config
     `-- ConsoleApplication1
         |-- ConsoleApplication1.csproj
 ```
@@ -86,7 +86,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 <p>Install your NuGet package dependencies.</p>
 <ul>
 <li>Path to Solution: <code><strong>*.sln</code></li>
-<li>Path to NuGet.config: <code>ConsoleApplication1/NuGet.config</code></li>
+<li>Path to NuGet.Config: <code>ConsoleApplication1/NuGet.Config</code></li>
 </ul>
 </td>
 </tr>
