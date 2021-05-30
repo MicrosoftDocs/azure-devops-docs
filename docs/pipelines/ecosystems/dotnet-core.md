@@ -286,7 +286,7 @@ and cache the packages. The credentials of the pipeline are automatically used w
 to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service** 
 account.
 
-If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository. 
+If you want to specify a NuGet repository, put the URLs in a `NuGet.Config` file in your repository. 
 If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
 
 ::: moniker-end
@@ -312,7 +312,7 @@ steps:
     command: restore
     projects: '**/*.csproj'
     feedsToUse: config
-    nugetConfigPath: NuGet.config    # Relative to root of the repository
+    nugetConfigPath: NuGet.Config    # Relative to root of the repository
     externalFeedCredentials: <Name of the NuGet service connection>
 # ...
 ```
@@ -333,7 +333,7 @@ For more information about NuGet service connections, see [publish to NuGet feed
 
 > [!NOTE]
 >
-> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
+> Make sure the custom feed is specified in your `NuGet.Config` file and that credentials are specified in the NuGet service connection.
 
 ::: moniker-end
 
