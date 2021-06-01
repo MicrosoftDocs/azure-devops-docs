@@ -10,17 +10,22 @@ ms.date: 06/01/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Use policies to manage users' personal access tokens (PATs)
+# Use policies to manage users' personal access tokens
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the scope and lifespan of new user PATs created for Azure DevOps. An Azure DevOps Administrator in Azure AD can define the maximum lifespan of PATs.
+Learn how to turn on the Azure Active Directory (Azure AD) policies that restrict the creation, scope, and lifespan of new or renewed personal access tokens (PATs) for users in Azure DevOps.
 
 The following policies can be turned on or off. By default, these policies are set to *off*.
 
-- Restrict creation of global PATs
-- Set maximum lifespan for new PATs
-- Restrict creation of full-scoped PATs
+- [Use policies to manage users' personal access tokens](#use-policies-to-manage-users-personal-access-tokens)
+  - [Prerequisites](#prerequisites)
+  - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
+  - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
+  - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
+  - [Add Azure AD users or groups to the Allow list](#add-azure-ad-users-or-groups-to-the-allow-list)
+  - [Next steps](#next-steps)
+  - [Related articles](#related-articles)
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
@@ -34,7 +39,7 @@ To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#h
 
 ## Restrict creation of global PATs
 
-Global tokens apply to all accessible organizations, rather than a single organization. Enabling this policy means that new PATs must be associated with specific Azure DevOps organizations.
+The Azure DevOps Administrator in Azure AD restricts users from creating global PATs. Global tokens apply to all accessible organizations, rather than a single organization. Enabling this policy means that new PATs must be associated with specific Azure DevOps organizations.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -44,9 +49,11 @@ Global tokens apply to all accessible organizations, rather than a single organi
 
 3. In the Azure Active Directory tab, find the "Restrict global personal access token creation" policy and move the toggle to *on*.
 
-   :::image type="content" source="media/policies/restrict-global-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to On position for Restrict globlal PAT creation.":::
+   :::image type="content" source="media/policies/restrict-global-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Restrict global PAT creation policy.":::
 
 ## Restrict creation of full-scoped PATs
+
+The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs.
 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -57,11 +64,11 @@ Global tokens apply to all accessible organizations, rather than a single organi
 
 3. In the Azure Active Directory tab, find the "Restrict full-scoped personal access token creation" policy and move the toggle to *on*.
 
-   :::image type="content" source="media/policies/restrict-full-scoped-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to On position for Restrict full-scoped PAT creation.":::
+   :::image type="content" source="media/policies/restrict-full-scoped-pat-creation-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for the Restrict full-scoped PAT creation policy.":::
 
 ## Set maximum lifespan for new PATs
 
-The Azure DevOps Administrator in Azure AD defines the maximum lifespan of the PAT.
+The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT. The maximum lifespan for new tokens can be specified in number of days.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -71,7 +78,13 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of the P
 
 3. In the Azure Active Directory tab, find the "Enforce maximum personal access token lifespan" policy and move the toggle to *on*.
 
-   :::image type="content" source="media/policies/enforce-maximum-pat-lifespan-policy-toggle-on.png" alt-text="Screenshot of toggle moved to On position for Enforce maximum PAT lifespan policy.":::
+   :::image type="content" source="media/policies/enforce-maximum-pat-lifespan-policy-toggle-on.png" alt-text="Screenshot of toggle moved to on position for Enforce maximum PAT lifespan policy.":::
+
+4. Enter the number of maximum days, and then select **Save**.
+
+## Add Azure AD users or groups to the Allow list
+
+Users or groups on the Allow list are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**.
 
 ## Next steps
 
