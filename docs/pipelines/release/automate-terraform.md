@@ -3,16 +3,11 @@ title: Automating infrastructure deployments in the Cloud with Terraform and Azu
 description: DevOps CI CD - Use Terraform to manage infrastructure deployment from Azure Pipelines and TFS
 ms.topic: tutorial
 ms.date: 05/18/2020
-monikerRange: '>= tfs-2018'
 ---
 
 # Use Terraform to manage infrastructure deployment
 
 [!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
 
 Terraform is an open-source infrastructure as code (IaC) tool to manage cloud services. Terraform can manage existing and popular cloud service providers as well as custom in-house solutions. Using Terraform you can define and provision your infrastructure components in config files using an easy to learn declarative language: HashiCorp Configuration Language (HCL).
 
