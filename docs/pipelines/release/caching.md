@@ -302,15 +302,21 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: gradle | $(Agent.OS)
-    path: GRADLE_USER_HOME
+    key: 'gradle | "$(Agent.OS)" | **/build.gradle.kts' # Swap build.gradle.kts for build.gradle when using Groovy
     restoreKeys: |
-      gradle | $(Agent.OS) | Gemfile.lock
-      $(Agent.OS)
-  displayName: Gradle caching
+      gradle | "$(Agent.OS)"
+      gradle
+    path: $(GRADLE_USER_HOME)
+  displayName: Configure gradle caching
 
-- script: |
-    ./gradlew --build-cache build    
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
+    tasks: 'build'
+    options: '--build-cache'
+  displayName: Build
+
+- script: |   
     # stop the Gradle daemon to ensure no files are left open (impacting the save cache operation later)
     ./gradlew --stop    
   displayName: Build
