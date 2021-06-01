@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/release/automate-terraform.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/release/automate-terraform",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/migrate/build-deployment-best-practices.md",
       "redirect_url": "/previous-versions/azure/devops/migrate/build-deployment-best-practices",
       "redirect_document_id": false
