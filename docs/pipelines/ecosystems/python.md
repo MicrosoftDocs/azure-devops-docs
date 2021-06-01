@@ -234,10 +234,10 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 
 ```yaml
 - script: |
-    pip install pytest
+    pip install pytest pytest-azurepipelines
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
-  displayName: 'Test with pytest'
+    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
+  displayName: 'pytest'
 ```
 ::: moniker range=">=azure-devops-2020"
 ### Run tests with Tox
@@ -294,7 +294,6 @@ Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
 ## Package and deliver code
