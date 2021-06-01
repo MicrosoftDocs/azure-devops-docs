@@ -1,32 +1,32 @@
 ---
-title: Share your Azure DevOps Services packages with badges
-description: Share your NuGet, npm, or Maven packages from Azure DevOps Services with badges
+title: Share your Azure Artifacts packages with badges
+description: Share your NuGet, npm, Maven, Python, or Universal Packages with package badges
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 02/16/2018
+ms.date: 06/01/2021
 monikerRange: '>= tfs-2018'
 ---
 
-# Share your NuGet, npm, and Maven packages from Azure DevOps Services with badges
+# Share your Artifacts with package badges
 
-**Azure DevOps Services**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-You can share your packages anywhere you can share an image with badges. You can put a badge directly into your project's home page in Azure DevOps Services or in any Markdown/README file so readers can easily discover and consume your package.
+Azure Artifacts offers a way to share your packages anywhere you can share an image by using package badges. You can embed package badges directly into your project's home page or in any Markdown file so your customers can easily discover and consume your packages.
 
-Example NuGet package badge:  
-![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](media/package-badge.png)
-
+:::image type="content" source="media/package-badge.png" alt-text="NuGet package badge":::
+ 
 > [!NOTE]
-> Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Prereleased versions will not be displayed in badges, instead the badge will show the latest release version.
+> Package badges can only be created and shared for released versions. Pre-released packages will not be displayed in badges, instead the badge will show the latest release version.
 
 ## Enable package sharing  
 
-To start sharing your Azure DevOps Services-hosted packages with badges you'll first have to turn on **Package sharing** in your feed settings.
+To start sharing your Artifacts packages using package badges, you'll first have to enable **Package sharing** for you feed.
 
-> Only feed administrators can edit the feed.
+> [!NOTE]
+> Only feed administrators can enable package sharing.
 
-1. Go to your Feed settings page by clicking on the gear icon from your feed page: 
+1. From within your project, select **Artifacts**, and then select the gear icon ![gear icon](../media/icons/gear-icon.png) then select **Feed settings** from the dropdown menu. 
 
    ::: moniker range=">= azure-devops-2019"
 
