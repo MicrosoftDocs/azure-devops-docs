@@ -506,6 +506,15 @@ The data migration tool doesn't support importing multiple copies of the **SAME*
 
 From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you haven't  imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **import.json** file to queue the import.
 
+**VS403379**
+
+Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
+
+```cmdline
+VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
+```
+Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](/azure/devops/organizations/projects/restore-project?view=azure-devops-2020&preserve=true). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
+
 ### Import failures
 
 When an import fails, the individual that queued the import receives an email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 

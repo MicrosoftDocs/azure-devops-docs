@@ -33,6 +33,7 @@ resources:
   repositories: [ repository ]
   containers: [ container ]
   packages: [ package ]
+  webhooks: [ webhook ]
 ```
 
 ### Variables
@@ -613,8 +614,8 @@ Here are the steps to configure the webhook triggers:
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
-    - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
-    - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key 
+    - **HTTP Header** - The name of the HTTP header in the request that contains the payload's HMAC-SHA1 hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
+    - **Secret** - The secret is used to verify the payload's HMAC-SHA1 hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key 
   
 ![Incoming Webhook Service connection](media/incoming-webhook.png)
 

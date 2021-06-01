@@ -23,13 +23,13 @@ NuGet package restore allows you to have all your project's dependencies availab
 
 ### Prerequisites
 
-- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure artifacts feed.
+- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure Artifacts feed.
 - [Created your first pipeline](../create-first-pipeline.md) for your repository.
 - [Set up the build identity permissions](../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for your feed.
 
 ## Restore packages with NuGet restore build task
 
-To build a solution that relies on NuGet packages from Azure artifacts feeds, we will want to add the **NuGet** build task to our pipeline.
+To build a solution that relies on NuGet packages from Azure Artifacts feeds, we will want to add the **NuGet** build task to our pipeline.
 
 1. Navigate to your build pipeline and select **Edit**.
 2. Under **Tasks**, **Agent job**, select the plus sign **"+"** to add a new task. Search for **NuGet** task and add it to your agent job.
