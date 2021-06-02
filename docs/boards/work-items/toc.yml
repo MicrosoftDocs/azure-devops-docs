@@ -1,7 +1,8 @@
 - name: Quick reference
   href: quick-ref.md
+  displayname: index, concepts, tasks, customize
 - name: View & add work items
-  displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
+  displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query 
   href: view-add-work-items.md 
 - name: "Add & update a work item" 
   href: ../backlogs/add-work-items.md
@@ -11,49 +12,62 @@
   displayname: sort, reorder, group, parent, tags  
 - name: Manage bugs
   href: ../backlogs/manage-bugs.md
+  displayname: status, inline tests, monitor, triage, lifecycle, capture
 - name: Manage issues
   href: ../backlogs/manage-issues-impediments.md
+  displayname: impediment
 - name: Link work items
   href: ../backlogs/add-link.md
+  displayname: remote work, bulk modify links, pull request, build
 - name: Copy/clone 
   href: ../backlogs/copy-clone-work-items.md
+  displayname: change type, URL, list 
 - name: Go mobile
   href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Collaborate with others
   items:
   - name: Follow work
     href: follow-work-items.md
+    displayname: query
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: people picker 
   - name: "Use #ID to link to work items"
     href: ../../notifications/add-links-to-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: pull requests, commits, comments, build, wiki
   - name: Add tags to work items
     href: ../queries/add-tags-to-work-items.md
+    displayname: chart, color-code, filter, show, query, bulk modify
   - name: Share information  
     href: ../queries/share-plans.md
+    displayname: rich text, link, attach files, storyboard, email, dashboards, wiki
   - name: Copy list
     href: ../backlogs/copy-list.md 
   - name: Email or print work items
     href: email-work-items.md  
     displayName: cards 
   - name: Drive Git development
-    displayName: create branch, new branch 
+    displayName: create branch, new branch, build 
     href: ../backlogs/connect-work-items-to-git-dev-ops.md
   - name: View deployment stages on work item form
     href: work-item-deployments-control.md
+    displayname: release
 - name: Modify, delete, import, or export 
   items:
   - name: Bulk modify (web)
     href: ../backlogs/bulk-modify-work-items.md
+    displayName: rich text, reassign, sprint, tags
   - name: Bulk add or modify  (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Bulk import or update  (CSV)
     href: ../queries/import-work-items-from-csv.md 
     displayname: import, export, csv
-  - name: Move or change work item type
+  - name: Change work item type, move work items
     href: ../backlogs/move-change-type.md
+    displayname: project
   - name: Remove, delete, or restore
     href: ../backlogs/remove-delete-work-items.md
+    displayname: restore, recycle, bulk delete
   - name: Delete test artifacts
     href: ../backlogs/delete-test-artifacts.md
   - name: Use work item templates
@@ -69,6 +83,7 @@
   items:
   - name: Sample work item templates
     href: work-item-template-examples.md
+    displayname: rich text, tags
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
 
