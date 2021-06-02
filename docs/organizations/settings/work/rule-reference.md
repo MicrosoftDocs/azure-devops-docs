@@ -22,7 +22,9 @@ Rules defined for work item types consist of default system&mdash;auto-generated
 Work Item Rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, deduping identical rules, but not trimming conflicting rules. The dedupe logic is not so smart. Two rules will be considered identical for dedupe if and only if their conditions share the same order. This is usually not an important detail as in almost all cases, having duplicate rules is harmless.
 
 
-## Inherited process vs On-premises XML process rule mapping
+## Supported process rules
+
+The following table summarizes which process rules are supported and how they correspond from the Inherited process model and the On-premises XML process model.
 
 ---
 :::row:::
@@ -46,6 +48,8 @@ Work Item Rules do not exist as a single collection. The rules are actually dyna
    :::column-end:::
    :::column span="2.5":::
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
+   :::column-end:::
+:::row-end:::  
 ---
 :::row:::
    :::column span="1.5":::
@@ -56,6 +60,8 @@ Work Item Rules do not exist as a single collection. The rules are actually dyna
    :::column-end:::
    :::column span="2.5":::
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
+   :::column-end:::
+:::row-end:::  
 ---
 :::row:::
    :::column span="1.5":::
