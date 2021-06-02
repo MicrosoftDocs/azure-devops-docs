@@ -181,7 +181,7 @@ Moving from a centralized version control system to Git is more than just migrat
 ## Reference information
 
 - [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md)
-- [Learn Git](/devops/git/what-is-git)
+- [Learn Git](/devops/develop/git/what-is-git)
 - [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
 - [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
 
