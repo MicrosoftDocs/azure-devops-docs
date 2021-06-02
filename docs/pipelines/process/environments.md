@@ -3,7 +3,7 @@ title: Environment
 description: Collection of deployment targets useful for traceability and recording deployment history
 ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 02/12/2021
+ms.date: 06/02/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -20,7 +20,7 @@ The advantages of using environments include the following.
 - **Diagnose resource health** - Validate whether the application is functioning at its desired state.
 - **Permissions** - Secure environments by specifying which users and pipelines are allowed to target an environment.
 
-## Resources
+## Environment Resources
 
 While an environment is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
