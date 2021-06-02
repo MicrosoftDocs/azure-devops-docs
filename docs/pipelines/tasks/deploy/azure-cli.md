@@ -51,7 +51,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
-  <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script.</br>When running on a <b>Linux agent</b> select on of the following:</br>
+  <td>(Required) Type of script: <b>PowerShell/PowerShell Core/Bat/Shell</b> script.</br>When running on a <b>Linux agent</b> select one of the following:</br>
      <ul>
        <li><code>bash</code></li>
        <li><code>pscore</code></li>
