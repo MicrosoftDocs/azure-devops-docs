@@ -46,7 +46,7 @@ To use the following tools, teams must subscribe to area paths:
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
-- [Boards> all tools](/azure/devops/boards/kanban-overview)  
+- [Boards> all tools](/azure/devops/boards/boards/kanban-overview)  
 - [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
 - [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview)  
 - [Delivery plans](/azure/devops/boards/extensions/delivery-plans), calendar view of team deliverables
@@ -55,7 +55,7 @@ To use the following tools, teams must subscribe to area paths:
 
 ::: moniker range="< tfs-2017"
 
-- [Boards> all tools](/azure/devops/boards/kanban-overview)  
+- [Boards> all tools](/azure/devops/boards/boards/kanban-overview)  
 - [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
 - [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview)  
 
