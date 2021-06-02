@@ -1,7 +1,7 @@
 - name: About Sprints and Scrum
   href: scrum-overview.md
   displayname: capacity, burndown, monitor, forecast, velocity
-- name: Schedule sprints
+- name: Change sprint dates
   href: define-sprints.md 
   displayname: get started, schedule, release
 - name: Forecast
