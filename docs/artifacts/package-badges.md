@@ -40,7 +40,7 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
    ::: moniker-end
 
-2. Find the **Package sharing** section and select the checkbox to **Enable package badges**. This will enable the **Create badge** button for every package in that feed.
+1. Find the **Package sharing** section and select the checkbox to **Enable package badges**. This will enable the **Create badge** button for every package in that feed.
 
    :::image type="content" source="media\enable-package-badges.png" alt-text="Enable package badges":::
 
@@ -58,12 +58,14 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
 ## Create badge
 
-You can create a badge for any package that is in a feed with package sharing enabled. You can only create a badge for the latest version of each package.
+You can create a badge for any package in your feed with package-sharing enabled. You can only create a badge for the latest version of each package.
 
-1. Go to your package in Azure DevOps Services and click the **Create badge** option. 
+1. From within your feed, select your package and then select the **Create badge** button. 
 
-2. Select a *Feed view* for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use `No view`.
+    :::image type="content" source="media/create-badge.png" alt-text="Create a package for a specific package":::
 
-3. You'll see a preview of your badge. You can copy the Markdown version of your badge that includes alt text, or a direct image link. 
+1. Select a **Feed view** for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use *No view*.
 
-Add the markdown or direct image link to your README or any other place you want to share your package!
+    :::image type="content" source="media/package-badge-setup.png" alt-text="package badge configuration":::
+
+1. You can share your package by using the markdown snippet or the direct image link.
