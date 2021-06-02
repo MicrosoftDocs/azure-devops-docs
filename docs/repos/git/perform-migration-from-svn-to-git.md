@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
-When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
+When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/devops/develop/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
 
 SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, and whether you're using regular SVN or close relative like SVK. 
 
@@ -26,7 +26,7 @@ There are several ways to migrate from SVN to Git. The approach outlined in this
 
 > [!NOTE]
 >
-> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](/devops/git/centralized-to-git). After you've prepared, you can begin the migration.
+> Before you try to migrate your source code from a centralized version control system to Git, be sure that you familiarize yourself with the differences between centralized and distributed version control systems, and [plan your team's migration](/devops/develop/git/centralized-to-git). After you've prepared, you can begin the migration.
 
 The high-level workflow for migrating from SVN to Git is as follows:
 
@@ -176,14 +176,14 @@ git for-each-ref --format='%(refname)' refs/remotes | % { $_.Replace('refs/remot
 
 ## Update your workflow
 
-Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/devops/git/centralized-to-git).
+Moving from a centralized version control system to Git is more than just migrating code. Your team needs training to understand how Git is different from your existing version control system and how these differences affect day-to-day work. [Learn more](/devops/develop/git/centralized-to-git).
 
 ## Reference information
 
 - [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md)
 - [Learn Git](/devops/git/what-is-git)
 - [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
-- [Migrate from TFVC to Git](/devops/git/migrate-from-tfvc-to-git)
+- [Migrate from TFVC to Git](/devops/develop/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
 
