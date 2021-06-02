@@ -61,7 +61,7 @@
           displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
         - name: Multiple repositories
           href: repos/multi-repo-checkout.md
-          displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
+          displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, self
     - name: Build history
       href: build/history.md
     - name: Triggers
@@ -77,7 +77,7 @@
           displayName: build completion, completion trigger
         - name: Build completion triggers (classic)
           href: process/pipeline-triggers-classic.md
-          displayName: build completion, completion trigger, pipeline resource
+          displayName: build completion, completion trigger
         - name: Release triggers (classic)
           href: release/triggers.md
           displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
@@ -499,6 +499,7 @@
   items:
     - name: About resources
       href: process/about-resources.md
+      displayName: resource, resources, pipeline resource, resources security, resources traceability
     - name: Add resources to a pipeline
       href: process/resources.md
       displayName: webhook, pipelines resource, repository resource, package resource, troubleshoot
