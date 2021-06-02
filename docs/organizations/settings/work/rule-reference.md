@@ -27,7 +27,7 @@ Work Item Rules do not exist as a single collection. The rules are actually dyna
 All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
 
 > [!NOTE]   
-> Inherited entries specific conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the Inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). 
+> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
 <br/>  
 
 ---
@@ -35,10 +35,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       **Inherited**
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       **XML element**
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       **Description**
    :::column-end:::
 :::row-end:::  
@@ -47,10 +47,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Specify in Edit field dialog, Definition tab for a picklist field  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `ALLOWEDVALUES`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
@@ -59,10 +59,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `ALLOWEXISTINGVALUE`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
    :::column-end:::
 :::row-end:::  
@@ -71,10 +71,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `CANNOTLOSEVALUE`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.
    :::column-end:::
 :::row-end:::  
@@ -83,10 +83,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
        `Copy the value from...` (Action)
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `COPY`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies another field that contains a value to be copied into the current field.
    :::column-end:::
 :::row-end:::  
@@ -95,10 +95,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Specify in Edit field dialog, Options tab
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `DEFAULT`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines a default value for the field.
    :::column-end:::
 :::row-end:::  
@@ -107,10 +107,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       `Clear the value of...` (Action)
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `EMPTY`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines the field as empty.
    :::column-end:::
 :::row-end:::  
@@ -119,10 +119,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `FROZEN`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
    :::column-end:::
 :::row-end:::  
@@ -131,10 +131,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `MATCH`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines a pattern for the field that the field value must match.
    :::column-end:::
 :::row-end:::  
@@ -143,10 +143,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `NOTSAMEAS`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies another field, the value of which cannot be identical to the value of the current field.
    :::column-end:::
 :::row-end:::  
@@ -155,10 +155,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `PROHIBITEDVALUES`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines a list of prohibited values for the field.
    :::column-end:::
 :::row-end:::  
@@ -168,10 +168,10 @@ All rules are optional. The following table provides a mapping of rules supporte
       `Make read-only` (Action)  
       Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `READONLY`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines the field as read-only. 
    :::column-end:::
 :::row-end:::  
@@ -181,10 +181,10 @@ All rules are optional. The following table provides a mapping of rules supporte
       `Make required` (Action)  
       Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `REQUIRED`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies the field is required.
    :::column-end:::
 :::row-end:::  
@@ -193,10 +193,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       `Use the current time to set the value of ...` (Action)  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `SERVERDEFAULT`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies a server component that will provide the value for the field.
    :::column-end:::
 :::row-end:::  
@@ -205,10 +205,10 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
       Check the **Allow users to enter their own values** checkbox within the Edit field dialog, Options tab to allow users to specify their own entries
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `SUGGESTEDVALUES`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
@@ -217,23 +217,23 @@ All rules are optional. The following table provides a mapping of rules supporte
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `VALIDUSER`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies that the list of allowed values must consist only of valid users of the system.
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
    :::column span="1.5":::
-      &#61; `The value of ... (equals)`  
+      `The value of ... (equals)`  
       :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHEN rule actions.":::
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `WHEN`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Specifies one or more rules to apply to the current field when another field has a specific value.
    :::column-end:::
 :::row-end:::  
@@ -243,23 +243,23 @@ All rules are optional. The following table provides a mapping of rules supporte
        `A change was made to the value of ...`  
       :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENCHANGED rule actions.":::
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `WHENCHANGED`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Applies one or more rules to the current field when a specific field's value is changed.
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
    :::column span="1.5":::
-       &NotEqual;`The value of ... (not equals)`  
+       `The value of ... (not equals)`  
       :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENNOT rule actions.":::
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `WHENNOT`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Applies one or more rules to the current field when another field does not have a specific value.
    :::column-end:::
 :::row-end:::  
@@ -269,10 +269,10 @@ All rules are optional. The following table provides a mapping of rules supporte
        `No change was made to the value of ...`  
       :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="No change was made to the value of, WHENNOTCHANGED condition rule actions.":::
    :::column-end:::
-   :::column span="1":::
+   :::column span=".75":::
       `WHENNOTCHANGED`
    :::column-end:::
-   :::column span="2.5":::
+   :::column span="1.5":::
       Applies one or more rules to the current field when a specific field's value is not changed.
    :::column-end:::
 :::row-end:::  
