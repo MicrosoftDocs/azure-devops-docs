@@ -39,7 +39,7 @@ To use the following tools, teams must subscribe to area paths:
 - [Backlogs> all tools](/azure/devops/boards/backlogs/backlogs-overview)  
 - [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
 - [Delivery plans](/azure/devops/boards/plans/review-team-plans), calendar view of team deliverables
-- [Rollup](/azure/devops/configure-customize#rollup)  
+- [Rollup](/azure/devops/boards/configure-customize#rollup-hierarchy-and-portfolio-management)  
 - [Analytics> all](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking)
 
 ::: moniker-end
