@@ -32,49 +32,49 @@ All rules are optional. The following table provides a mapping of rules supporte
 
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       **Inherited**
    :::column-end:::
-   :::column span=".75":::
+   :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="3":::
       **Description**
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       Specify in Edit field dialog, Definition tab for a picklist field  
    :::column-end:::
-   :::column span=".75":::
+   :::column span="1":::
       `ALLOWEDVALUES`
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="3":::
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
       Not supported
    :::column-end:::
-   :::column span=".75":::
+   :::column span="1":::
       `ALLOWEXISTINGVALUE`
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="3":::
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="2":::
        Not supported
    :::column-end:::
-   :::column span=".75":::
+   :::column span="1":::
       `CANNOTLOSEVALUE`
    :::column-end:::
-   :::column span="1.5":::
+   :::column span="3":::
       Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.
    :::column-end:::
 :::row-end:::  
