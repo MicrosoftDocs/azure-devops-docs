@@ -3,8 +3,7 @@
   displayname: product, plan, query, widget, dashboards, command line interface, Excel, Retrospective, calendar, reactivations
 - name: Migration and integration
   href: migrate-integrate.md
-  displayname: export, import, integrate, GitHub, third-party, service hooks, Project
-  displayname: project management, portfolio management, AgileCraft, ConnectAll, TaskTop, Jira, GitHub, service hooks, process model
+  displayname: export, import, integrate, GitHub, third-party, service hooks, Project, project management, portfolio management, ConnectAll, TaskTop, process model
 - name: Delivery Plans
   href: delivery-plans.md 
   displayname: filter, roadmap, calendar, multi-team views, cards   
