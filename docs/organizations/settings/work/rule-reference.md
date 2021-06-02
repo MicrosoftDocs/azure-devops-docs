@@ -24,14 +24,18 @@ Work Item Rules do not exist as a single collection. The rules are actually dyna
 
 ## Supported process rules
 
-The following table summarizes which process rules are supported and how they correspond from the Inherited process model and the On-premises XML process model.
+All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+
+> [!NOTE]   
+> Inherited entries specific conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the Inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). 
+<br/>  
 
 ---
 :::row:::
    :::column span="1.5":::
-      **Inherited rule action**
+      **Inherited**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       **XML element**
    :::column-end:::
    :::column span="2.5":::
@@ -43,8 +47,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Specify in Edit field dialog, Definition tab for a picklist field  
    :::column-end:::
-   :::column span="":::
-      ALLOWEDVALUES
+   :::column span="1":::
+      `ALLOWEDVALUES`
    :::column-end:::
    :::column span="2.5":::
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
@@ -55,8 +59,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="":::
-      ALLOWEXISTINGVALUE
+   :::column span="1":::
+      `ALLOWEXISTINGVALUE`
    :::column-end:::
    :::column span="2.5":::
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
@@ -67,8 +71,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="":::
-      CANNOTLOSEVALUE
+   :::column span="1":::
+      `CANNOTLOSEVALUE`
    :::column-end:::
    :::column span="2.5":::
       Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.
@@ -77,11 +81,10 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-       Copy the value from...
-       Set the value of .... field to xxx
+       `Copy the value from...` (Action)
    :::column-end:::
-   :::column span="":::
-      COPY
+   :::column span="1":::
+      `COPY`
    :::column-end:::
    :::column span="2.5":::
       Specifies another field that contains a value to be copied into the current field.
@@ -92,8 +95,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Specify in Edit field dialog, Options tab
    :::column-end:::
-   :::column span="":::
-      DEFAULT
+   :::column span="1":::
+      `DEFAULT`
    :::column-end:::
    :::column span="2.5":::
       Defines a default value for the field.
@@ -102,10 +105,10 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-      Clear the value of... 
+      `Clear the value of...` (Action)
    :::column-end:::
-   :::column span="":::
-      EMPTY
+   :::column span="1":::
+      `EMPTY`
    :::column-end:::
    :::column span="2.5":::
       Defines the field as empty.
@@ -116,8 +119,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="":::
-      FROZEN
+   :::column span="1":::
+      `FROZEN`
    :::column-end:::
    :::column span="2.5":::
       Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
@@ -128,8 +131,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="":::
-      MATCH
+   :::column span="1":::
+      `MATCH`
    :::column-end:::
    :::column span="2.5":::
       Defines a pattern for the field that the field value must match.
@@ -140,8 +143,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="":::
-      NOTSAMEAS
+   :::column span="1":::
+      `NOTSAMEAS`
    :::column-end:::
    :::column span="2.5":::
       Specifies another field, the value of which cannot be identical to the value of the current field.
@@ -152,8 +155,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
       Not supported
    :::column-end:::
-   :::column span="":::
-      PROHIBITEDVALUES
+   :::column span="1":::
+      `PROHIBITEDVALUES`
    :::column-end:::
    :::column span="2.5":::
       Defines a list of prohibited values for the field.
@@ -162,11 +165,11 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-      Default: Specify in Edit field dialog, Options tab
-      Conditional based on group membership: Make read-only
+      `Make read-only` (Action)  
+      Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
-   :::column span="":::
-      READONLY
+   :::column span="1":::
+      `READONLY`
    :::column-end:::
    :::column span="2.5":::
       Defines the field as read-only. 
@@ -175,11 +178,11 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-      Default: Specify in Edit field dialog, Options tab
-      Conditional based on group membership: Make required
+      `Make required` (Action)  
+      Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
-   :::column span="":::
-      REQUIRED
+   :::column span="1":::
+      `REQUIRED`
    :::column-end:::
    :::column span="2.5":::
       Specifies the field is required.
@@ -188,10 +191,10 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-       
+      `Use the current time to set the value of ...` (Action)  
    :::column-end:::
-   :::column span="":::
-      SERVERDEFAULT
+   :::column span="1":::
+      `SERVERDEFAULT`
    :::column-end:::
    :::column span="2.5":::
       Specifies a server component that will provide the value for the field.
@@ -200,11 +203,10 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-      Not supported
       Check the **Allow users to enter their own values** checkbox within the Edit field dialog, Options tab to allow users to specify their own entries
    :::column-end:::
-   :::column span="":::
-      SUGGESTEDVALUES
+   :::column span="1":::
+      `SUGGESTEDVALUES`
    :::column-end:::
    :::column span="2.5":::
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
@@ -215,8 +217,8 @@ The following table summarizes which process rules are supported and how they co
    :::column span="1.5":::
        Not supported
    :::column-end:::
-   :::column span="":::
-      VALIDUSER
+   :::column span="1":::
+      `VALIDUSER`
    :::column-end:::
    :::column span="2.5":::
       Specifies that the list of allowed values must consist only of valid users of the system.
@@ -225,10 +227,11 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-       
+      &#61; `The value of ... (equals)`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHEN rule actions.":::
    :::column-end:::
-   :::column span="":::
-      WHEN
+   :::column span="1":::
+      `WHEN`
    :::column-end:::
    :::column span="2.5":::
       Specifies one or more rules to apply to the current field when another field has a specific value.
@@ -237,23 +240,24 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-       
+       `A change was made to the value of ...`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENCHANGED rule actions.":::
    :::column-end:::
-   :::column span="":::
-      WHENCHANGED
+   :::column span="1":::
+      `WHENCHANGED`
    :::column-end:::
    :::column span="2.5":::
       Applies one or more rules to the current field when a specific field's value is changed.
-
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
    :::column span="1.5":::
-       
+       &NotEqual;`The value of ... (not equals)`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENNOT rule actions.":::
    :::column-end:::
-   :::column span="":::
-      WHENNOT
+   :::column span="1":::
+      `WHENNOT`
    :::column-end:::
    :::column span="2.5":::
       Applies one or more rules to the current field when another field does not have a specific value.
@@ -262,27 +266,18 @@ The following table summarizes which process rules are supported and how they co
 ---
 :::row:::
    :::column span="1.5":::
-       
+       `No change was made to the value of ...`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="No change was made to the value of, WHENNOTCHANGED condition rule actions.":::
    :::column-end:::
    :::column span="1":::
-      WHENNOTCHANGED
+      `WHENNOTCHANGED`
    :::column-end:::
    :::column span="2.5":::
-      Optional. Applies one or more rules to the current field when a specific field's value is not changed.
+      Applies one or more rules to the current field when a specific field's value is not changed.
    :::column-end:::
 :::row-end:::  
 ---
- 
-
-WHEN				The value of ... (equals)
-					A value is defined for ...
-					A change was made to the value of...
-WHENCHANGED			The value of ... (not equals)
-WHENNOT				The value of ... (not equals)
-					No value is defined for ...
-WHENNOTCHANGED
-
-						Hide the field... 
+  
 
  
 
