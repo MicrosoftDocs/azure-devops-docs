@@ -3,55 +3,78 @@
 - name: Get started
   items:
   - name: About permissions, access, & security groups  
-    href: about-permissions.md 
+    href: about-permissions.md
+    displayName: security, group, membership, inheritance, roles
   - name: Default permissions & access 
     href: permissions-access.md
+    displayName: security, group, role, Basic, administrator
   - name: View permissions 
     href: view-permissions.md
+    displayName: default, project, object, valid, user, group
   - name: Increase permission levels, find an admin
     href: lookup-organization-owner-admin.md
+    displayName: features, security, role, request, default
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
+    displayName: index, reference, manage, roles, groups
   - name: Security key concepts
-    href: security-glossary.md 
+    href: security-glossary.md
+    displayName: definitions, terms, manage, authentication, permission
   - name: Troubleshoot permissions
     href: troubleshoot-permissions.md
+    displayName: security, investigate, access, problem
 - name: Manage user access
   items:
-  - name: About security, authentication, & authorization 
+  - name: About security, authentication, & authorization
     href: about-security-identity.md
-  - name: About access levels 
-    href: access-levels.md 
+    displayName: concepts, understand, credentials, accounts, authorization, policies
+  - name: About access levels
+    href: access-levels.md
+    displayName: security, understand, groups, levels, 
   - name: Add users & manage access (cloud)
     href: ../accounts/add-organization-users.md
+    displayName: create, new, identity, direct, assignment
   - name: Change access levels (on-premises)
     href: change-access-levels.md
+    displayName: update, security, permission, project, collection
   - name: Add users to a project or team
-    href: add-users-team-project.md 
+    href: add-users-team-project.md
+    displayName: create, new, account, default, custom, access, permission
   - name: Remove user accounts
     href: remove-users-prohibit-access.md
+    displayName: delete, revoke, organization, members
   - name: Manage access with Azure Active Directory
     items:
     - name: Connect organization to Azure AD
       href: ../accounts/connect-organization-to-azure-ad.md
+      displayName: link, attach, security
     - name: Add or delete users in Azure AD
       href: /azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+      displayName: create, remove, account
     - name: Add AD/Azure AD security groups to built-in security groups
       href: add-ad-aad-built-in-security-groups.md
+      displayName: update, permission, access, security
     - name: Manage groups
       href: ../accounts/manage-azure-active-directory-groups.md
+      displayName: users, access, authenticate
     - name: Manage group rules
       href: ../accounts/assign-access-levels-by-group-membership.md
+      displayName: update, add, assignment
     - name: Change Azure AD connection
       href: ../accounts/change-azure-ad-connection.md
+      displayName: update, add, remove
     - name: Disconnect from Azure AD
       href: ../accounts/disconnect-organization-from-azure-ad.md
-    - name: Get list of orgs backed by Azure AD
+      displayName: remove, update, detach, unlink
+    - name: Get list of organizations backed by Azure AD
       href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md
+      displayName: record, catalog, inventory, name, owner, URL, ID
   - name: Provide Stakeholders access to edit pipelines
     href: provide-stakeholder-pipeline-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: permission, give, manage, configure, project
   - name: Set up groups for use in Azure DevOps (on-premises)
     href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: server, create, users, permission, deployment
   - name: FAQs
     items:
     - name: User & permissions management
@@ -70,127 +93,176 @@
       href: ../accounts/faq-set-up-vs.yml
     - name: Resolve connection issues
       href: ../../user-guide/troubleshoot-connection.md
+      displayName: problem, project, access, organization
     - name: "TF31002: Unable to connect"
-      href: ../projects/tf31002-unable-connect-tfs.md 
+      href: ../projects/tf31002-unable-connect-tfs.md
+      displayName: error, troubleshoot, permission, credentials, account, license
 - name: Authenticate, secure applications
   items:
   - name: Authentication guidance 
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Authenticate access with personal access tokens  
+    displayName: permission, security, mechanism, type, application
+  - name: Authenticate access with personal access tokens
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: permission, security, credential, sign, in
   - name: Manage personal access tokens via API
     href: ../accounts/manage-personal-access-tokens-via-api.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: lifecycle, authenticate, 
   - name: Authorize access to REST APIs with OAuth 2.0
     href: ../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: authenticate, access, token, app, security
   - name: Use SSH key authentication
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: access, security
   - name: Use Git Credential Manager Core 
     href: ../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: authenticate, access, security
   - name: Revoke users' PATs (for admins)
     href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: delete, remove, token, administrator
 - name: Secure projects
   items:
-  - name: Change individual permissions 
+  - name: Change individual permissions
     href: change-individual-permissions.md
+    displayName: access, update, user, remove
   - name: Set project-level permissions
     href: set-project-collection-level-permissions.md
+    displayName: access, security
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md
+    displayName: give, revoke, access, users
   - name: Set dashboard permissions
     href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: access, users, view, settings
   - name: Set Wiki permissions
     href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: project, access, settings, users
   - name: Set feedback permissions
     href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
-- name: Secure organizations/collections 
+    displayName: users, access, settings, response
+- name: Secure organizations/collections
   items:
-  - name: Set organization/collection-level permissions 
+  - name: Set organization/collection-level permissions
     href: set-project-collection-level-permissions.md
+    displayName: user, group, access, security
   - name: Set permissions to manage extensions
     href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: Marketplace, access, settings, users
   - name: Manage access policies (cloud)
     items:
     - name: Manage security & app access policies
       href: ../accounts/change-application-access-policies.md
+      displayName: application, settings, add, update, remove
     - name: Add external users
-      href: ../accounts/add-external-user.md 
+      href: ../accounts/add-external-user.md
+      displayName: create, outside, new, access, B2B
     - name: Disable Request Access policy
       href: ../accounts/disable-request-access-policy.md
-    - name: Restrict admins from inviting new users 
-      href: ../security/restrict-invitations.md 
+      displayName: administrator, stop, settings, policies
+    - name: Restrict admins from inviting new users
+      href: ../security/restrict-invitations.md
+      displayName: administrators, add, adding, creating, member
 - name: Secure Azure Boards
   items:
   - name: Set work tracking & plan permissions 
-    href: set-permissions-access-work-tracking.md 
+    href: set-permissions-access-work-tracking.md
+    displayName:
 - name: Secure Azure Repos
   items:
   - name: Set Git repository permissions
     href: ../../repos/git/set-git-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: settings, access, security
   - name: Set TFVC repository permissions
     href: ../../repos/tfvc/set-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: settings, access, security
   - name: Set Git branch permissions
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: settings, access, security
   - name: Git permissions prior to TFS 2017 Update 1
     href: /azure/devops/repos/git/set-git-repository-permissions
+    displayName: settings, access, security
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles
     href: about-security-roles.md
+    displayName: access, group, user, role
   - name: Set pipeline permissions
     href: ../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: access, user, group, security
   - name: Pipelines security walkthrough
     href: ../../pipelines/security/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: about, overview, access, permissions
   - name: Approach to securing YAML pipelines
     href: ../../pipelines/security/approach.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: security, access, how, to
   - name: Repository protection
     href: ../../pipelines/security/repos.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: security, repo
   - name: Pipeline resources
     href: ../../pipelines/security/resources.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: permissions, access, information
   - name: Project structure
     href: ../../pipelines/security/projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: about, build, security
   - name: Security through templates
     href: ../../pipelines/security/templates.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: access, permissions
   - name: Variables and parameters
     href: ../../pipelines/security/inputs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: inputs, security
   - name: Shared infrastructure
     href: ../../pipelines/security/infrastructure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: security
   - name: Other security considerations
     href: ../../pipelines/security/misc.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: miscellaneous, secure, details, information
   - name: Add continuous security validation
     href: ../../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: build, release, pipeline, continued, validate
 - name: Secure Azure Test Plans
   items:
   - name: Set permissions & access for testing
     href: set-permissions-access-test.md
+    displayName: create, update, add, user, group, security, settings
 - name: Secure Azure Artifacts
   items:
   - name: Set package feed permissions
     href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: artifact, create, settings
 - name: Secure data and networks 
   items:
   - name: Allowed address lists & network connections
     href: allow-list-ip-url.md
+    displayName: IP, URL, accepted
   - name: Data protection overview (cloud)
     href: data-protection.md
+    displayName: about, information, security
   - name: Data location (cloud)
     href: data-location.md
     displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: Data Subject Requests for the GDPR & CCPA
     href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+    displayName:
   - name: Credential storage (cloud)
     href: credential-storage.md
+    displayName: password, user, name, token, safety
 - name: Secure on-premises deployments 
   items:
   - name: Set up secure sockets layer
     href: /azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: security, administrator, settings
   - name: Web site settings & security (on-premises)
     href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: about, administrators, server, set
   - name: TFSSecurity command (on-premises)
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Set SQL Server report permissions 
+    displayName: secure, server
+  - name: Set SQL Server report permissions
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: create, update, user, group, access, security
   - name: Set SharePoint project portal permissions
     href: set-sharepoint-permissions.md
+    displayName: access, settings
 - name: Reference
   items:
   - name: Permissions & groups 

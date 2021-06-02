@@ -88,14 +88,16 @@ az artifacts universal download --organization https://dev.azure.com/Fabrikam --
 > [!NOTE]
 > Azure DevOps doesn't support direct HTTP/HTTPS download links. 
 
-## Bulk-download universal packages
+## Download specific files
 
-If you want to download a large number of universal packages, you can use the `--file-filter` wildcard filter to bulk-download a group of universal packages.
+If you don't need the entire Universal Package and only need specific files, you can use the `--file-filter` parameter to download a subset of files.
 
-The following example uses wildcards to download all *.exe* and *.dll* files from our feed.
+The following example `*logs/*.log` would match any file ending with *logs* and with the extension *.log*. Example: build123_logs.log
+
+See [File matching patterns reference](../../pipelines/tasks/file-matching-patterns.md) for more details.
 
 ```azurecli
-az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
+az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter *logs/*.log
 ```
 
 ### Downloading the latest version

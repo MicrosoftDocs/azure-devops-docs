@@ -115,7 +115,7 @@ If you need to switch to a different project, choose the :::image type="icon" so
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](media/dashboards/favorite-dashboard.png)  
 
-	Favoriting a dashboard will cause it to appear under **My Favorites dashboards** list on the dashboards directory. Also, it will appear towards the top in the **Dashboards** selector and in your [personal Favorites list](../../project/navigation/set-favorites.md). . 
+	Favoriting a dashboard will cause it to appear under **My Favorites dashboards** list on the dashboards directory. Also, it will appear towards the top in the **Dashboards** selector and in your [personal Favorites list](../../project/navigation/set-favorites.md). 
 
 ::: moniker-end
 
