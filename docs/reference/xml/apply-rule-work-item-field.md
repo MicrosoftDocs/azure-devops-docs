@@ -22,6 +22,9 @@ All of these rule elements can be defined within the **FIELD** definition of a w
 
 ![Work item tracking XML element field rules](media/apply-rule-work-item-field/IC757527.png) 
 
+> [!NOTE]   
+> For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
+
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 
 - [Help text](#help-text): Use to specify tool-tip text to appear in a work item form for a field 
@@ -500,6 +503,39 @@ In the following XML example, SubStatus will be emptied as you type "Approved Ag
 >    </WHEN>
 > </FIELD>
 > ```
+ 
+
+::: moniker range="<= tfs-2015"
+
+<!--- This section is no longer valid for TFS 2017 and later versions. --> 
+
+<a id="valid-user" /> 
+
+## Restrict who can create or modify a work item
+
+You can control who can create or modify a work item by applying the **VALIDUSER** element to person-name fields. When you specify this element, you indicate which user or group of users can be assigned as a value for the field. You can set this element to support the optional **group** attribute, which requires that the person who is assigned to the field must be a direct or indirect member of the group that you specify. By default, all members of the **Team Foundation Valid Users** group can be specified in the field.
+
+The **VALIDUSER** element is valid only for String field types. You can [allow or restrict whether the rule applies to the user who is modifying the work item](#scope) by specifying a user or group for the **for** or **not** attributes, respectively.
+
+    <VALIDUSER group="groupName" for="userName" not="userName" />
+
+You can use the **VALIDUSER** rule only when you refer to person-name fields. The following system fields are examples of person-named fields:
+
+-   Activated By (System.ActivatedBy)  
+-   Assigned To (System.AssignedTo)  
+-   Authorized As (System.AuthorizedAs)  
+-   Changed By (System.ChangedBy)  
+-   Closed By (System.ClosedBy)  
+-   Created By (System.CreatedBy)  
+
+In addition to the system fields, you can create a custom string field and use it as a person-named field. Also, you can synchronize custom person-named fields with Active Directory (specify syncnamechanges="true").
+
+Work item fields do not distinguish between user identities in different domains. Therefore, "Fabrikam\\ctsoapo" and "Contoso\\ctsoapo" are treated as the same user when they are entered into a field that uses the **VALIDUSER** rule.
+
+
+::: moniker-end
+
+
 
 <!--- 
 

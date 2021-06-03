@@ -14,6 +14,13 @@ ms.date: 07/09/2020
 
 # Default rules and the rule engine  
 
+Rules are used to set or restrict value assignments to a work item field. Each rule is defined for a work item type. Within the On-premises XML process models, you specify rules for a field or within the workflow. For the Inherited process model, you specify a rule which consists of a condition plus action. 
+
+ 
+
+ You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
+
+
 
 Rules defined for work item types consist of default system&mdash;auto-generated&mdash;rules and custom rules. 
 
@@ -21,6 +28,472 @@ Rules defined for work item types consist of default system&mdash;auto-generated
 
 Work Item Rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, deduping identical rules, but not trimming conflicting rules. The dedupe logic is not so smart. Two rules will be considered identical for dedupe if and only if their conditions share the same order. This is usually not an important detail as in almost all cases, having duplicate rules is harmless.
 
+
+<a name="system"></a>
+
+## System fields
+
+System fields have System.*Name* reference names, for example **System.Title** and **System.State**. The rule engine restricts setting conditions or actions to system fields except as follows: 
+
+- You can make State and Reason fields read-only. 
+- You can apply most rules to the Title, Assigned To, Description, and Changed By fields. 
+
+If you don't see a field listed in the drop-down menu of the rule user interface, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection.  Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
+ 
+
+<a id="value-rules" /> 
+
+## Assign value rules
+
+Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
+
+All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+
+> [!NOTE]   
+> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
+<br/>  
+
+
+<a id="clear" /> 
+
+### Clear, set defaults, copy, or match a pattern
+
+These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern.
+
+
+For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+
+> [!NOTE]    
+>Field rules don't support assigning values that are the sum of two other fields or performing other mathematical calculations.
+
+
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       `Copy the value from...` (Action)
+   :::column-end:::
+   :::column span="1":::
+      `COPY`
+   :::column-end:::
+   :::column span="3":::
+      Specifies another field that contains a value to be copied into the current field.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Specify in Edit field dialog, Options tab
+   :::column-end:::
+   :::column span="1":::
+      `DEFAULT`
+   :::column-end:::
+   :::column span="3":::
+      Defines a default value for the field.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Clear the value of...` (Action)
+   :::column-end:::
+   :::column span="1":::
+      `EMPTY`
+   :::column-end:::
+   :::column span="3":::
+      Defines the field as empty.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      `MATCH`
+   :::column-end:::
+   :::column span="3":::
+      Defines a pattern for the field that the field value must match.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Use the current time to set the value of ...` (Action)  
+   :::column-end:::
+   :::column span="1":::
+      `SERVERDEFAULT`
+   :::column-end:::
+   :::column span="3":::
+      Specifies a server component that will provide the value for the field.
+   :::column-end:::
+:::row-end:::  
+---
+
+
+
+
+<a id="require" /> 
+
+### Require, read-only, and restrict values  
+
+These rules specify restrictions on specifying or changing the value of a field.
+
+
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       Not supported
+   :::column-end:::
+   :::column span="1":::
+      `CANNOTLOSEVALUE`
+   :::column-end:::
+   :::column span="3":::
+      Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       Not supported
+   :::column-end:::
+   :::column span=".1":::
+      `FROZEN`
+   :::column-end:::
+   :::column span="3":::
+      Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      `NOTSAMEAS`
+   :::column-end:::
+   :::column span="3":::
+      Specifies another field, the value of which cannot be identical to the value of the current field.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Make read-only` (Action)  
+      Default: Specify in Edit field dialog, Options tab 
+   :::column-end:::
+   :::column span="1":::
+      `READONLY`
+   :::column-end:::
+   :::column span="3":::
+      Defines the field as read-only. 
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Make required` (Action)  
+      Default: Specify in Edit field dialog, Options tab 
+   :::column-end:::
+   :::column span="1":::
+      `REQUIRED`
+   :::column-end:::
+   :::column span="3":::
+      Specifies the field is required.
+   :::column-end:::
+:::row-end:::  
+---
+ 
+
+a id="pick-list" /> 
+
+## Pick list rules
+
+Pick list rules define the values that a user can or can't choose for a String field. Values defined in a pick list appear on a work item form and the query editor. You can combine lists, and expand or contract lists. 
+
+
+For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
+
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Specify in Edit field dialog, Definition tab for a picklist field  
+   :::column-end:::
+   :::column span="1":::
+      `ALLOWEDVALUES`
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      `ALLOWEXISTINGVALUE`
+   :::column-end:::
+   :::column span="3":::
+      Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
+      `PROHIBITEDVALUES`
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of prohibited values for the field.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Check the **Allow users to enter their own values** checkbox within the Edit field dialog, Options tab to allow users to specify their own entries
+   :::column-end:::
+   :::column span="1":::
+      `SUGGESTEDVALUES`
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
+   :::column-end:::
+:::row-end:::  
+---
+
+
+<a id="conditional-rules" />
+ 
+
+## Conditional rules
+
+Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.  
+
+Inherited conditions and XML elements map as indicated in the following table. 
+ 
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `The value of ... (equals)`  
+   :::column-end:::
+   :::column span="1":::
+      `WHEN`
+   :::column-end:::
+   :::column span="3":::
+      Specifies one or more rules to apply to the current field when another field has a specific value.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       `A change was made to the value of ...`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENCHANGED rule actions.":::
+   :::column-end:::
+   :::column span="1":::
+      `WHENCHANGED`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when a specific field's value is changed.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       `The value of ... (not equals)`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENNOT rule actions.":::
+   :::column-end:::
+   :::column span="1":::
+      `WHENNOT`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when another field does not have a specific value.
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+       `No change was made to the value of ...`  
+      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="No change was made to the value of, WHENNOTCHANGED condition rule actions.":::
+   :::column-end:::
+   :::column span="1":::
+      `WHENNOTCHANGED`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when a specific field's value is not changed.
+   :::column-end:::
+:::row-end:::  
+---
+
+ 
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
+
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Clear the value of ...`  
+      `Copy the value from ...`  
+      `Make read-only ...`  
+      `Make required ...`  
+      `Set the value of ...`  
+      `Use the current time to set the value of ...`  
+      `Use the current user to set the value of ...`  
+   :::column-end:::
+   :::column span="1":::
+      `EMPTY`  
+      `COPY`  
+      `READONLY`  
+      `REQUIRED`  
+          
+      `SERVERDEFAULT`  
+      `CANNOTLOSEVALUE`
+      `CANNOTLOSEVALUE`  
+      `FROZEN`  
+      `MATCH`  
+      `NOTSAMEAS`  
+      `VALIDUSER`  
+      <br/>For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+   :::column-end:::
+   :::column span="3":::
+      Specifies the action to take on a specific field. Note that the Inherited process doesn't support specification of pick list elements, nor actions that correspond to the following elements: 
+      - `CANNOTLOSEVALUE`  
+      - `FROZEN`  
+      - `MATCH`  
+      - `NOTSAMEAS`  
+      - `VALIDUSER`  
+   :::column-end:::
+:::row-end:::  
+---   
+
+
+ 
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
+
+---
+:::row:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      `Clear the value of ...`  
+      `Copy the value from ...`  
+      `Make read-only ...`  
+      `Make required ...`  
+      `Set the value of ...`  
+      `Use the current time to set the value of ...`  
+      `Use the current user to set the value of ...`  
+   :::column-end:::
+   :::column span="1":::
+      `EMPTY`  
+      `COPY`  
+      `READONLY`  
+      `REQUIRED`  
+          
+      `SERVERDEFAULT`  
+      `CANNOTLOSEVALUE`
+      `CANNOTLOSEVALUE`  
+      `FROZEN`  
+      `MATCH`  
+      `NOTSAMEAS`  
+      `VALIDUSER`  
+      <br/>For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+   :::column-end:::
+   :::column span="3":::
+      Specifies the action to take on a specific field. Note that the Inherited process doesn't support specification of pick list elements, nor actions that correspond to the following elements: 
+      - `CANNOTLOSEVALUE`  
+      - `FROZEN`  
+      - `MATCH`  
+      - `NOTSAMEAS`  
+      - `VALIDUSER`  
+   :::column-end:::
+:::row-end:::  
+---   
+
+
+<!--- 
+
+## Supported process rules
+
+All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+
+> [!NOTE]   
+> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
+<br/>  
+
+
+
+
+<!---
 
 ## Supported process rules
 
@@ -279,7 +752,7 @@ All rules are optional. The following table provides a mapping of rules supporte
 ---
   
 
- 
+-->
 
 
 ## Auto-generated rules 
