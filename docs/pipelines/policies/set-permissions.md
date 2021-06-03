@@ -1,36 +1,32 @@
 ---
-title: Add users to Azure Pipelines
+title: Pipelines user permissions
 ms.custom: seodec18
-description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
+description: Add users to Azure Pipelines
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 06/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
-
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
 ::: moniker range="> tfs-2018"
 
-If your teammates want to edit pipelines, then have an administrator add them to your project:
+Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
 
-1. Make sure you are a member of the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+Project administrator can grant or restrict permissions to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so:
 
-2. Go to your project summary: `https://dev.azure.com/{your-organization}/{your-project}`
+1. Navigate to your project's summary page: `https://dev.azure.com/{your-organization}/{your-project}`
 
-3. Invite the teammates to join the project.
+1. Select the **Invite** button to add a user to your project, and then fill out the required fields. Select **Add** when you are done.
 
-   > [!div class="mx-imgBorder"]
-   > ![Invite button](media/project-invite-button.png)
-   > 
-   > [!div class="mx-imgBorder"]
-   > ![Add users to project dialog box](media/project-invite-dialog-box.png)
+    :::image type="content" source="media/project-invite-button.png" alt-text="Invite button":::
 
-4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
+    :::image type="content" source="media/project-invite-dialog-box.png" alt-text="Add users to your project":::
+
+1. The new user must accept the invitation before they can start creating or modifying pipelines.
 
 ## Confirm that contributors have pipeline permissions 
 
