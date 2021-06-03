@@ -40,19 +40,23 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
    ::: moniker-end
 
-1. Find the **Package sharing** section and select the checkbox to **Enable package badges**. This will enable the **Create badge** button for every package in that feed.
+1. Find the **Package sharing** section and select the checkbox to **Enable package badges**.
 
    :::image type="content" source="media\enable-package-badges.png" alt-text="Enable package badges":::
 
 ::: moniker range=">= azure-devops-2019"
 
-:::image type="content" source="media/pm-create-badge-newnav.png" alt-text="Create a package badge":::
+    This will enable the **Create badge** button for every package in that feed.
+
+    :::image type="content" source="media/pm-create-badge-newnav.png" alt-text="Create a package badge":::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-:::image type="content" source="media/pm-create-badge.png" alt-text="Create a package badge TFS":::
+    This will enable the **Create badge** button for every package in that feed.
+
+    :::image type="content" source="media/pm-create-badge.png" alt-text="Create a package badge TFS":::
 
 ::: moniker-end
 
@@ -68,4 +72,10 @@ You can create a badge for any package in your feed with package-sharing enabled
 
     :::image type="content" source="media/package-badge-setup.png" alt-text="package badge configuration":::
 
-1. You can share your package by using the markdown snippet or the direct image link.
+1. You can now share your package by using the markdown snippet or the direct image link.
+
+## Related articles
+
+- [Limits of package sizes and counts](./reference/limits.md)
+- [Package alerts](./how-to/follow-package-notifications.md)
+- [Use public feeds to share your packages](./tutorials/share-packages-publicly.md)
