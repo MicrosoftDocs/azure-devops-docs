@@ -44,21 +44,21 @@ To start sharing your Artifacts packages using package badges, you'll first have
 
    :::image type="content" source="media\enable-package-badges.png" alt-text="Enable package badges":::
 
-::: moniker range=">= azure-devops-2019"
+    ::: moniker range=">= azure-devops-2019"
 
     This will enable the **Create badge** button for every package in that feed.
 
     :::image type="content" source="media/pm-create-badge-newnav.png" alt-text="Create a package badge":::
 
-::: moniker-end
+    ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+    ::: moniker range="<= tfs-2018"
 
     This will enable the **Create badge** button for every package in that feed.
 
     :::image type="content" source="media/pm-create-badge.png" alt-text="Create a package badge TFS":::
 
-::: moniker-end
+    ::: moniker-end
 
 ## Create badge
 
