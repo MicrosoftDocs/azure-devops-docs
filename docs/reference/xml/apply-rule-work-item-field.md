@@ -260,6 +260,8 @@ Conditional rules let you specify when a set of rules will be applied to a paren
 You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
 
 <a id="apply-ignore" /> 
+<a id="scope" /> 
+
 
 ## Apply or ignore rules based on user or group
 
@@ -365,6 +367,7 @@ To learn more about built-in groups, see [Permissions and groups](../../organiza
 
 
 <a name="system"></a>
+
 ## System field rules
 
 System fields have System.*Name* reference names, for example System.Title and System.State. TFS restricts customization of these fields, except for these instances:
