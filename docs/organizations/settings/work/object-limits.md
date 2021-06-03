@@ -14,7 +14,7 @@ ms.date: 01/19/2021
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 

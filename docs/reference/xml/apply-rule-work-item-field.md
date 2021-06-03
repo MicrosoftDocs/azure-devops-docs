@@ -520,7 +520,7 @@ You can control who can create or modify a work item by applying the **VALIDUSER
 
 The **VALIDUSER** element is valid only for String field types. You can [allow or restrict whether the rule applies to the user who is modifying the work item](#scope) by specifying a user or group for the **for** or **not** attributes, respectively.
 
-    <VALIDUSER group="groupName" for="userName" not="userName" />
+`<VALIDUSER group="groupName" for="userName" not="userName" />`
 
 You can use the **VALIDUSER** rule only when you refer to person-name fields. The following system fields are examples of person-named fields:
 
