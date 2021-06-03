@@ -33,7 +33,7 @@ This article covers:
 <a name="iosfile"></a>
 ## Using a certificate and mobile provisioning file in your Xcode build
 
-You can use the Keychain Access to generate a certificate. To learn more about this option,  [see iOS Signing](http://docs.phonegap.com/phonegap-build/signing/ios/).
+You can use the Keychain Access to generate a certificate. To learn more about this option,  [see iOS Signing](https://github.com/phonegap/phonegap-docs/blob/master/docs/4-phonegap-build/3-signing/2-ios.html.md).
 
 1. Export your signing certificate to a .p12 file using Keychain Access or Xcode. A .p12 file contains the certificates Apple needs to build and publish apps.
    1. Open **Keychain Access** on your computer. 

@@ -176,7 +176,7 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 
 * [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
 * [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
-* [DevOps @ Microsoft](/azure/devops/learn/)
+* [DevOps @ Microsoft](/devops/)
 
 > > [!NOTE]   
 > Authors: Josh Garverick, Willy Schaub 

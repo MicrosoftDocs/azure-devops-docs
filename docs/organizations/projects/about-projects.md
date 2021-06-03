@@ -253,7 +253,7 @@ You can configure and customize most services and applications to support your b
 
 As your organization grows, add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, see the following articles.  
 
-- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scale Agile to large teams](/devops/plan/scaling-agile)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md)
 - Manage a [portfolio of backlogs](../../boards/plans/portfolio-management.md) and gain insight into each team's progress and the progress of all programs.  
 - Use [Delivery plans](../../boards/plans/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.

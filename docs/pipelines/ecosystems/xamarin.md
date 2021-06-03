@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18,contperf-fy21q2
-ms.date: 02/05/2021
+ms.date: 05/24/2021
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Get started with Xamarin and Azure Pipelines by using building a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
+Get started with [Xamarin](https://dotnet.microsoft.com/apps/xamarin) and Azure Pipelines by using building a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Before you begin, you need:
 https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
-This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamarin-forms-samples` repository. For more information on this sample, see [Build your first Xamarin.Forms App](/xamarin/get-started/first-app/?pivots=windows).
+This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamarin-forms-samples` repository. For more information on getting started with Xamarin, see [Build your first Xamarin.Forms App](/xamarin/get-started/first-app/?pivots=windows).
 
 ## Sign in to Azure Pipelines
 
