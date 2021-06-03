@@ -23,7 +23,7 @@ The following policies can be turned on or off. By default, these policies are s
   - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
   - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
   - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
-  - [Add Azure AD users or groups to the Allow list](#add-azure-ad-users-or-groups-to-the-allow-list)
+  - [Add Azure AD users or groups to the allowlist](#add-azure-ad-users-or-groups-to-the-allowlist)
   - [Next steps](#next-steps)
   - [Related articles](#related-articles)
 
@@ -53,7 +53,7 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 
 ## Restrict creation of full-scoped PATs
 
-The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means that new PATs must be limited to a specific, custom defined set of scopes.
+The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -81,9 +81,9 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT
 
 4. Enter the number of maximum days, and then select **Save**.
 
-## Add Azure AD users or groups to the Allow list
+## Add Azure AD users or groups to the allowlist
 
-Users or groups on the Allow list are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own Allow list. If a user is on the Allow list for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each Allow list.
+Users or groups on the allowlist are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each allowlist.
 
 ## Next steps
 
