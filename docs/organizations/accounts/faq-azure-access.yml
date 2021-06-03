@@ -93,7 +93,7 @@ sections:
           
           ## Azure AD users and permissions
 
-          If you don't find an answer to your question here, see [User and permissions management FAQs](/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops).
+          If you don't find an answer to your question here, see [User and permissions management FAQs](./faq-user-and-permissions-management.yml?view=azure-devops).
 
       - question: |
           Q: Why do I have to add users to a directory?
@@ -140,7 +140,7 @@ sections:
           A: Select from the following two options:
           
           * Have the Azure AD administrator(s) remove you from the Azure AD and readd you, making you an Azure AD *member*, rather than a *guest*. For more information, see [Can Azure AD B2B users be added as members instead of guests](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests).
-          * [Change the UserType of the Azure AD guest using Azure AD PowerShell](/azure/devops/organizations/accounts/faq-azure-access#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0) using this advanced process, but it allows the user to query Azure AD from the Azure DevOps organization.
+          * [Change the UserType of the Azure AD guest using Azure AD PowerShell](#convert-azure-ad-usertype-from-guest-to-member-using-azure-ad-powershell). [We don't advise](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Factive-directory%2Fb2b%2Fuser-properties%23convert-usertype&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cf59a62633fb447b1aaaa08d6b3b86e00%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636894002034849797&sdata=flX3JmpUn8m5sqr%2Fxmc%2B9BPEGJEEUcUPcaXRwLub40s%3D&reserved=0) using this advanced process, but it allows the user to query Azure AD from the Azure DevOps organization.
 
           ### Convert Azure AD UserType from guest to member using Azure AD PowerShell
 
