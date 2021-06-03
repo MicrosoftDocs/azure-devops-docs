@@ -185,7 +185,7 @@ As an example, you can make a field required based on the value assigned to the 
  
 ### On-premises XML elements
 
-The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the **FIELD** definition of a work item type definition. And, with the exception of **HELPTEXT**, you can specify these rules to take affect during a workflow transition or as child elements within a **FIELD** (Global workflow) element.
+The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the `FIELD` definition of a work item type definition. And, with the exception of the `HELPTEXT` element, you can specify these rules to take affect during a workflow transition or as child elements within a `FIELD` (Global workflow) element.
 
 ![Work item tracking XML element field rules](../../../reference/xml/media/apply-rule-work-item-field/IC757527.png) 
 
@@ -193,18 +193,63 @@ The On-premises XML process defines rules using XML elements. All of these rule 
 > For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
 
 
+####  Where to apply a field rule  Apply rules to State and Reason fields
+
+When you want a rule to apply to a field throughout the life of the work item, specify it within the `FIELD` section. For example, a field that is required for a bug that is new and active remains required until the bug is closed. Otherwise, if you want it applied based on a change in State, Reason, or transition, specify it within the `WORKFLOW` section.
+
+**State** (System.State) and **Reason** (System.Reason) fields are defined within the `WORKFLOW` section. You can specify most field rules to apply to a field during a change of state, selection of a reason, or for a specific transition. To learn more, see [Change the workflow for a work item type](../../../reference/add-modify-wit.md).
+ 
+ 
+Otherwise, specify a rule to be evaluated only during a change in state. These rules are defined within the `WORKFLOW` section under the `STATE`, `REASON`, or `TRANSITION` elements. All rules, except for `HELPTEXT`, can be applied within a `FIELD` (Workflow) element.
+
+Field rules are additive. That is, you can specify four sets of rules for the same field which will all be evaluated by the rule-engine.
+
+-   **Work item type-specific** rules apply regardless of the location of a work item in its state model. For example, a `<REQUIRED \>` rule performs the following check:
+
+    `"MyField Value" != NULL`
+
+-   **State-specific** rules are scoped to a work item instance when it is in a certain state. A state-specific rule is enforced when the following condition is true:
+
+    `State field value == "MyState" && "MyField Value" != NULL`
+
+-   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
+
+    `State field value == "ToState"  &&`
+
+    `"Previous State Before Edit/New" == "FromState"`
+
+    `&& "MyField Value" != NULL`
+
+-   **Reason-specific** rules that you specify for a specific reason are scoped to a particular reason for a particular transition. They are processed when the following conditions are true:
+
+    `Reason field == "MyReason" &&`
+
+    `State field value == "ToState"  &&`
+
+    `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
+
+The following example restricts modification of the customer severity field when the work item is in the Active state.
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <STATE name="Active">
+>       <FIELDS>
+>       <FIELD refname="MyCorp.Severity" >
+>          <READONLY />
+>       </FIELD>
+>       </FIELDS>
+> </STATE>
+> ```
+
 ## What happens if too many rules are defined
 
 A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an `IF` statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
 
+You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
- You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
+Work item rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, consolidate identical rules, but don't trim conflicting rules.  
 
  
-Work Item Rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, deduping identical rules, but not trimming conflicting rules. The dedupe logic is not so smart. Two rules will be considered identical for dedupe if and only if their conditions share the same order. This is usually not an important detail as in almost all cases, having duplicate rules is harmless.
-
-
-
 <a name="system"></a>
 
 ## System fields and custom rules
@@ -357,14 +402,14 @@ Also, you can restrict application of these rules based on the current user's gr
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="2":::
-       `Hide the field...` 
+       `Hide the field...`   
        *Only available when a group membership condition is selected.* 
    :::column-end:::
    :::column span="1":::
       Not supported
    :::column-end:::
    :::column span="3":::
-      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value. . 
+      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
    :::column-end:::
 :::row-end:::  
 ---
@@ -417,11 +462,10 @@ Also, you can restrict application of these rules based on the current user's gr
  
 For an Inherited process, pick lists are defined through the Edit field dialog. For the On-premises XML process, pick lists are defined using XML elements listed in the following table. 
 
-
 ::: moniker range="< azure-devops"
 For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
-::: moniker-end
- 
+
+
 
 ---
 :::row:::
@@ -484,6 +528,29 @@ For the On-premises XML process, you can combine lists, and expand or contract l
    :::column-end:::
 :::row-end:::  
 ---
+
+
+
+::: moniker range="< azure-devops"
+
+### Person-named fields and validation errors
+
+For the On-premises XML process, to avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <FIELD name="Assigned To" refname="System.AssignedTo" type="String" syncnamechanges="true" reportable="dimension">
+>       <HELPTEXT>The user who is working on this work item</HELPTEXT>
+>       <ALLOWEXISTINGVALUE />
+>       <VALIDUSER />
+>       <ALLOWEDVALUES expanditems="true" filteritems="excludegroups">
+>       <LISTITEM value="Active" />
+>       <LISTITEM value="[project]\Contributors" />
+>       </ALLOWEDVALUES>
+>       <DEFAULT from="field" field="System.CreatedBy" />
+> </FIELD>
+> ```
+::: moniker-end
 
 
 <a id="conditional-rules" />
@@ -720,9 +787,61 @@ To avoid problems with users updating work items from various clients, specify A
 > The WIT Client OM is deprecated. As of January 1, 2020, it not longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
 
 
-## Backlog behaviors
 
 
+## Order in which rules are evaluated 
+
+Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
+
+You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
+
+The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
+
+1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
+
+2.  Fill in field defaults. For all fields, use any **DEFAULT** rules that are outside **WHEN** rules.
+
+3.  Copy field values. For all fields, use any **COPY** rules that are outside **WHEN** clauses.
+
+4.  For all fields with a **WHEN** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
+
+5.  For all fields with a **WHENNOT** rule that matches, first do **DEFAULT** and then **COPY** rules inside.
+
+    The system always processes **WHEN** rules before **WHENNOT** rules.
+
+6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first do **DEFAULT** and then **COPY** rules inside.
+
+7.  Allow the user to start editing.
+
+8.  The user changes a field value and then moves focus from the field.
+
+9.  Raise any **WHEN** rules for that field that match the new value.
+
+10. Raise any **WHENNOT** rules for that field that match the new value.
+
+11. Raise any **WHENCHANGED** rules for that field that match the new value.
+
+12. Return editing ability to the user.
+
+13. The user saves the changes to the database.
+
+14. For all fields, perform **SERVERDEFAULT** operations that are defined for the field either directly or indirectly under a **WHEN** or a **WHENNOT** rule.
+
+### Keystroke entries and rule evaluation 
+
+The system sets a new value for a field every time a user enters a keystroke within a field through the work item form. This means that a conditional rule can occur unexpectedly whenever the rule's prerequisite conditions are met.
+
+In the following XML example, the system empties MyCorp.SubStatus  as you type "Approved Again" into the Status field because the **WHEN** rule occurs as soon as the user types the letter "e" in Approved, even if the intended final value is not "Approve". For this reason, think carefully when you are using conditional rules.
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <FIELD refname="MyCorp.SubStatus" />
+>    <WHEN field="MyCorp.Status" value="Approve" >
+>       <EMPTY />
+>    </WHEN>
+> </FIELD>
+> ```
+ 
 
 ## Related articles
 
