@@ -16,7 +16,17 @@ ms.date: 07/09/2020
 
 Rules are used to set or restrict value assignments to a work item field. Each rule is defined for a work item type. Within the On-premises XML process models, you specify rules for a field or within the workflow. For the Inherited process model, you specify a rule which consists of a condition plus action. 
 
+In addition to custom rules you apply to a process or project, there are a number of auto-generated rules. These rules minimize the need to add custom rules for areas that should work in a standard way.
+
  
+Why read this - 
+
+
+> [!TIP]    
+> Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
+
+Work Item Rules Validation Exceeds SQL Limits: A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
+
 
  You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
@@ -28,6 +38,38 @@ Rules defined for work item types consist of default system&mdash;auto-generated
 
 Work Item Rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, deduping identical rules, but not trimming conflicting rules. The dedupe logic is not so smart. Two rules will be considered identical for dedupe if and only if their conditions share the same order. This is usually not an important detail as in almost all cases, having duplicate rules is harmless.
 
+
+
+## Auto-generated rules 
+
+Auto-generated rules are defined to minimize the need to add custom rules for areas that should work in a standard way. 
+
+
+### State transition rules
+
+Any-to-any state transition rules.  Inherited processes generate the entire set of any-to-any state transition rules dynamically for each custom work item type and custom state added to a workflow. A transition from any state to any state is valid.  
+
+### State transitions and By/Date field rules
+
+"By/Date" fields are automatically set or cleared when you transition a work item from one state to another. These fields correspond to **Created By/Date**, **Activated By/Date**, **Resolved By/Date**, and **Closed By/Date**. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
+
+Default rules and behaviors that govern these fields include: 
+
+1. The *Closed* state is always contained in the *Completed* state category.
+1. The *Completed* state category is not configurable, and is associated with one and only one State.  
+1. This *Closed* state is always *Closed* for Agile and CMMI processes, and always *Done* for Scrum and Basic processes.
+1. Auto-generation of these rules are affected by locale as the rule condition contains the State name, which is localized. The system generates different rules for different locales.
+1. Auto-generated rules for these fields are only specified for work item types that include these fields. It is possible for a work item type to not include one or more of these fields.  
+1. These rules are needed when a work item type has custom states, or the work item type is a custom work item type.
+1. These rules only apply to inherited processes; they are never generated for the Hosted XML or On-premises XML processes. 
+
+Workflow states are associated with state categories to support the workflow on Kanban boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
+ 
+
+### State Change Date rules
+
+These rules are technically a lot simpler than Closed By/Closed Date rules because they are not dependent on any particular state. For any work item type, the same rules will always work. They need to be auto-generated because some OOB work item types do not contain the State Change Date field, so when the user adds this field to a custom work item type, these rules need to be auto-generated as well. The same principles for Closed By/Closed Date rules apply here as well.
+ 
 
 <a name="system"></a>
 
@@ -41,13 +83,13 @@ System fields have System.*Name* reference names, for example **System.Title** a
 If you don't see a field listed in the drop-down menu of the rule user interface, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection.  Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
  
 
-<a id="value-rules" /> 
+<a id="custom-rules" /> 
 
-## Assign value rules
+## Custom rules
 
 Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+All custom rules are optional. The following sections provide a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
 
 > [!NOTE]   
 > Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
@@ -56,7 +98,7 @@ All rules are optional. The following table provides a mapping of rules supporte
 
 <a id="clear" /> 
 
-### Clear, set defaults, copy, or match a pattern
+## Assign a value to a field 
 
 These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern.
 
@@ -64,7 +106,7 @@ These rules support setting defaults, copying values from one field to another, 
 For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
 
 > [!NOTE]    
->Field rules don't support assigning values that are the sum of two other fields or performing other mathematical calculations.
+> Field rules don't support assigning values that are the sum of two other fields or performing other mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 
 
 ---
@@ -146,10 +188,9 @@ For the syntax structure and examples, see [Define a default value or copy a val
 
 <a id="require" /> 
 
-### Require, read-only, and restrict values  
+## Restrict a value to a field  
 
-These rules specify restrictions on specifying or changing the value of a field.
-
+You can apply custom rules to restrict changing the value of a field. Several XML elements don't map to an Inherited process rule action.  
 
 ---
 :::row:::
@@ -180,7 +221,7 @@ These rules specify restrictions on specifying or changing the value of a field.
    :::column span="2":::
        Not supported
    :::column-end:::
-   :::column span=".1":::
+   :::column span="1":::
       `FROZEN`
    :::column-end:::
    :::column span="3":::
@@ -188,6 +229,20 @@ These rules specify restrictions on specifying or changing the value of a field.
    :::column-end:::
 :::row-end:::  
 ---
+::: moniker range=">= azure-devops-2020" 
+:::row:::
+   :::column span="2":::
+       `Hide the field..."
+   :::column-end:::
+   :::column span="1":::
+      Not supported
+   :::column-end:::
+   :::column span="3":::
+      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
+   :::column-end:::
+:::row-end:::  
+---
+::: moniker-end
 :::row:::
    :::column span="2":::
       Not supported
@@ -228,7 +283,7 @@ These rules specify restrictions on specifying or changing the value of a field.
 ---
  
 
-a id="pick-list" /> 
+<a id="pick-list" /> 
 
 ## Pick list rules
 
@@ -303,7 +358,7 @@ For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
 <a id="conditional-rules" />
  
 
-## Conditional rules
+## Conditional settings
 
 Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.  
 
@@ -337,7 +392,6 @@ Inherited conditions and XML elements map as indicated in the following table.
 :::row:::
    :::column span="2":::
        `A change was made to the value of ...`  
-      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENCHANGED rule actions.":::
    :::column-end:::
    :::column span="1":::
       `WHENCHANGED`
@@ -350,7 +404,6 @@ Inherited conditions and XML elements map as indicated in the following table.
 :::row:::
    :::column span="2":::
        `The value of ... (not equals)`  
-      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="WHENNOT rule actions.":::
    :::column-end:::
    :::column span="1":::
       `WHENNOT`
@@ -363,7 +416,6 @@ Inherited conditions and XML elements map as indicated in the following table.
 :::row:::
    :::column span="2":::
        `No change was made to the value of ...`  
-      :::image type="content" source="media/rules/when-when-not-rule-actions.png" alt-text="No change was made to the value of, WHENNOTCHANGED condition rule actions.":::
    :::column-end:::
    :::column span="1":::
       `WHENNOTCHANGED`
@@ -375,7 +427,7 @@ Inherited conditions and XML elements map as indicated in the following table.
 ---
 
  
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
 
 ---
 :::row:::
@@ -407,24 +459,27 @@ You can specify multiple conditional rules per field. However, you can only spec
       `REQUIRED`  
           
       `SERVERDEFAULT`  
-      `CANNOTLOSEVALUE`
+   :::column-end:::
+   :::column span="3":::
+      Specifies the action to take on a specific field.  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="1":::
       `CANNOTLOSEVALUE`  
       `FROZEN`  
       `MATCH`  
       `NOTSAMEAS`  
-      `VALIDUSER`  
-      <br/>For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
    :::column-end:::
    :::column span="3":::
-      Specifies the action to take on a specific field. Note that the Inherited process doesn't support specification of pick list elements, nor actions that correspond to the following elements: 
-      - `CANNOTLOSEVALUE`  
-      - `FROZEN`  
-      - `MATCH`  
-      - `NOTSAMEAS`  
-      - `VALIDUSER`  
+      Specifies the action to take on a specific field.  
    :::column-end:::
 :::row-end:::  
----   
+---    
 
 
  
@@ -489,6 +544,117 @@ All rules are optional. The following table provides a mapping of rules supporte
 > [!NOTE]   
 > Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
 <br/>  
+
+
+
+
+
+
+## User or group membership rule restrictions   
+
+You can make a pick list or assign value rule to apply or not apply to a group of users by using the <strong>for</strong> or <strong>not</strong> attributes. Scope the rule to a group. To have the rule scoped to multiple groups, you must create a parent Azure DevOps group that includes the set of groups that you want to use.  
+
+### Process implementation 
+
+As indicated in the following table, to restrict a rule based on the current user's membership, you specify a condition for the Inherited process and the `for` or `not` attributes to the rule element for the On-Premises XML process. 
+
+---
+:::row:::
+   :::column span="1":::
+      **Applies to**
+   :::column-end:::
+   :::column span="2":::
+      **Inherited**
+   :::column-end:::
+   :::column span="2":::
+      **XML element**
+   :::column-end:::
+:::row-end:::  
+---
+::: moniker range=">= azure-devops-2020" 
+:::row:::
+   :::column span="1":::
+      Condition
+   :::column-end:::
+   :::column span="2":::
+       `Current user is a member of group ...`
+       `Current user is not member of group ...`
+   :::column-end:::
+   :::column span="2":::
+      `for` attribute
+      `not` attribute
+   :::column-end:::
+:::row-end::: 
+---
+:::row:::
+   :::column span="1":::
+      Action
+   :::column-end:::
+   :::column span="2":::
+       `Hide the field ...`
+       `Make read-only ...`
+       `Make required ...`
+       `Restrict the transition to state ...`
+   :::column-end:::
+   :::column span="2":::
+      All XML rule elements
+   :::column-end:::
+:::row-end::: 
+---
+::: moniker-end
+::: moniker range="<= azure-devops-2019" 
+:::row:::
+   :::column span="3":::
+      Condition
+   :::column-end:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="2":::
+      `for` attribute
+      `not` attribute
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="1":::
+      Action
+   :::column-end:::
+   :::column span="2":::
+      Not supported
+   :::column-end:::
+   :::column span="2":::
+      All XML rule elements
+   :::column-end:::
+:::row-end::: 
+---
+::: moniker-end
+ 
+
+
+### Rule evaluation 
+
+Rules that specify a condition based on the user or group membership of the user modifying a work item are evaluated in one of two ways. When the rule is evaluated, the application needs to determine whether the rule applies to the current user by checking if that user is or isn't a member of the specified group. 
+ 
+- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Azure Active Directory or Active Directory is made. No problems occur for this operation.  
+- When modifying the work item from Visual Studio, Team Explorer Everywhere, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
+
+> [!NOTE] 
+> Visual Studio 2019 Team Explorer for projects using GIT has been re-written to use REST APIs.
+
+To avoid problems with users updating work items from various clients, specify Azure DevOps security groups instead of Active Directory groups. You can easily create an Azure DevOps security group to correspond to an Active Directory group. To learn how, see [Add a user or group to a security group](../../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group). 
+
+ 
+<!-- add a tip to custom-rules.md --> 
+
+> [!NOTE] 
+> The WIT Client OM is deprecated. As of January 1, 2020, it not longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
+
+
+## Backlog behaviors
+
+
+
 
 
 
@@ -753,58 +919,3 @@ All rules are optional. The following table provides a mapping of rules supporte
   
 
 -->
-
-
-## Auto-generated rules 
-
-Auto-generated rules are defined to minimize the need to add custom rules for areas that should work in a standard way. 
-
-
-### State transition rules
-
-Any-to-any state transition rules.  Inherited processes generate the entire set of any-to-any state transition rules dynamically for each custom work item type and custom state added to a workflow. A transition from any state to any state is valid.  
-
-### State transitions and By/Date field rules
-
-"By/Date" fields are automatically set or cleared when you transition a work item from one state to another. These fields correspond to **Created By/Date**, **Activated By/Date**, **Resolved By/Date**, and **Closed By/Date**. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
-
-Default rules and behaviors that govern these fields include: 
-
-1. The *Closed* state is always contained in the *Completed* state category.
-1. The *Completed* state category is not configurable, and is associated with one and only one State.  
-1. This *Closed* state is always *Closed* for Agile and CMMI processes, and always *Done* for Scrum and Basic processes.
-1. Auto-generation of these rules are affected by locale as the rule condition contains the State name, which is localized. The system generates different rules for different locales.
-1. Auto-generated rules for these fields are only specified for work item types that include these fields. It is possible for a work item type to not include one or more of these fields.  
-1. These rules are needed when a work item type has custom states, or the work item type is a custom work item type.
-1. These rules only apply to inherited processes; they are never generated for the Hosted XML or On-premises XML processes. 
-
-Workflow states are associated with state categories to support the workflow on Kanban boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
- 
-
-### State Change Date rules
-
-These rules are technically a lot simpler than Closed By/Closed Date rules because they are not dependent on any particular state. For any work item type, the same rules will always work. They need to be auto-generated because some OOB work item types do not contain the State Change Date field, so when the user adds this field to a custom work item type, these rules need to be auto-generated as well. The same principles for Closed By/Closed Date rules apply here as well.
- 
-
-## Rule restrictions based on user or group membership 
-
-Rules that specify a condition based on the user or group membership of the user modifying a work item is evaluated in one of two ways. When the rule is evaluated, the application needs to determine whether the rule applies to the current user by checking if that user is or isn't a member of the specified group. 
- 
-- When modifying the work item from the web portal, REST API, or **azure boards** command, a request to the Azure Active Directory or Active Directory is made. No problems occur for this operation.  
-- When modifying the work item from Visual Studio, Team Explorer Everywhere, Excel or other custom tool using the WIT Client Object Model, the request to evaluate membership is based on a client cache. The client cache is not aware of Active Directory groups. 
-
-> [!NOTE] 
-> Visual Studio 2019 Team Explorer for projects using GIT has been re-written to use REST APIs.
-
-To avoid problems with users updating work items from various clients, specify Azure DevOps security groups instead of Active Directory groups. You can easily create an Azure DevOps security group to correspond to an Active Directory group. To learn how, see [Add a user or group to a security group](../../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group). 
-
- 
-<!-- add a tip to custom-rules.md --> 
-
-> [!NOTE] 
-> The WIT Client OM is deprecated. As of January 1, 2020, it not longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
-
-
-## Backlog behaviors
-
-
