@@ -28,14 +28,12 @@ Project administrator can grant or restrict permissions to project resources. If
 
 1. The new user must accept the invitation before they can start creating or modifying pipelines.
 
-## Confirm that contributors have pipeline permissions 
+## Verify permissions for contributors
 
 > [!NOTE]
-> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
+> A security best practice is to only grant permissions to required users or groups. The **Contributors** group may be too broad in a given project.  
 
-If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
-
-1. Make sure you are a member of the Build Administrators group or the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+To verify the permissions for your project's contributors, make sure you are a member of the *Build Administrators group* or the *Project Administrators group*. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) for more details.
 
 2. Open the build security dialog box.
 
