@@ -31,7 +31,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 ## Review the template
 
-The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). 
+The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/webapp-linux-managed-mysql/). 
 
 <!-- :::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json"::: -->
 
@@ -82,7 +82,7 @@ The template defines several resources:
    :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-8" highlight="1-2":::
 
 
-9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. For more information, see [Build a Web app on Linux with Azure database for MySQL](https://github.com/Azure/azure-quickstart-templates/tree/master/101-webapp-linux-managed-mysql) repo for more details. 
+9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. For more information, see [Build a Web app on Linux with Azure database for MySQL](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.web/webapp-linux-managed-mysql) repo for more details. 
 
    :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-15" highlight="10-15":::
 

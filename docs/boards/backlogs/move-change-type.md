@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 03/15/2021
+ms.date: 05/21/2021 
 ---
 
 # Move work items, change work item type 
@@ -19,6 +19,9 @@ Often you find that someone created a work item of the wrong work item type (WIT
 
 > [!TIP]
 > For TFS 2018 and earlier versions, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
+
+
+To remove, delete, or restore deleted work items, see [Remove, delete, or restore work items](remove-delete-work-items.md). 
 
 
 In this article you'll learn:  

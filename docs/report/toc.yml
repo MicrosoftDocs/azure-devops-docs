@@ -29,6 +29,9 @@
   - name: Add markdown to a dashboard
     displayname: markdown widget 
     href: dashboards/add-markdown-to-dashboard.md
+  - name: Copy a dashboard
+    displayname: project, team 
+    href: dashboards/copy-dashboard.md
   - name: Set dashboard permissions (Security)
     href: dashboards/dashboard-permissions.md
 - name: Work tracking charts

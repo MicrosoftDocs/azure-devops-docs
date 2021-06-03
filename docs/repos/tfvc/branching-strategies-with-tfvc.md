@@ -98,7 +98,7 @@ By keeping branches short-lived,  merge conflicts are kept to as few as possible
 
 ### Why only branch if necessary?
 
-To embrace [DevOps](/azure/devops/learn/), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
+To embrace [DevOps](/devops/), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
 
 ### Why remove branches?
 

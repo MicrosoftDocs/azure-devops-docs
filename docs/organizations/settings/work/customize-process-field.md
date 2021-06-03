@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 04/07/2021 
+ms.date: 05/21/2021 
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -55,8 +55,7 @@ For descriptions and usage of each field, as well as the Reference name for each
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to move its placement within the form. If you have several fields you want to add to a custom page or group, then [add those pages or groups first](customize-process-form.md) and then add your fields. 
 
 > [!NOTE] 
-> You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
-
+> Each process can define up to 1024 fields, including system inherited fields. You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
 
@@ -94,7 +93,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when you are adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you don't specify its layout location, the system adds it to the first group of fields on the form.  
 
@@ -111,11 +110,17 @@ You can add fields and specify the group and page where they should appear. Also
 
 ### Add a picklist  
 
+
+[Work tracking, process, and project limits](object-limits.md)
+
 ::: moniker range=">= azure-devops-2020"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
 ::: moniker-end
+
+> [!NOTE] 
+> Each organization or collection can define up to 1024 picklists. Each picklist can contain up to 2048 items. Picklist items must be 256 or fewer characters. If you want to add dependent picklists, see [Cascading lists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension). 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can add an item and then press **Enter** to add another item. 
 
@@ -351,6 +356,8 @@ Deleting a field deletes all data associated with that field, including historic
 - [Customize a project using an inherited process](customize-process.md)    
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
+- [Work tracking, process, and project limits](object-limits.md)
+
 
 If you're working with test plans or test cases, see these articles: 
 

@@ -215,8 +215,8 @@ Take these tools for a test run by [signing up for free](../get-started/index.md
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [What is Agile?](/devops/plan/what-is-agile)   
+- [What is Agile development?](/devops/plan/what-is-agile-development)  
  
 
 

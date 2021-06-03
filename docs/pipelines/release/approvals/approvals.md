@@ -70,11 +70,9 @@ Use the **Approval policies** to:
      want to require a user to physically approve a deployment to production even though that user has
      previously approved a deployment to a QA stage in the same release pipeline.  
 
-<a name="approve-release"></a>
-
 For information about approving or rejecting deployments, and viewing approval logs, see
 [Create a release](../define-multistage-release-process.md#create-release),
-[View the logs for approvals](../deploy-using-approvals.md#view-approvals), and
+[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation), and
 [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
 
 ### Approval notifications
