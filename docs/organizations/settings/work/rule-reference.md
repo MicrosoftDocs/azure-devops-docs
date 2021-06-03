@@ -9,15 +9,20 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 07/09/2020
+ms.date: 06/03/2021
+
+
+#Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
 ---
 
 # Default rules and the rule engine  
 
-Rules are used to set or restrict value assignments to a work item field. Each rule is defined for a work item type. Within the On-premises XML process models, you specify rules for a field or within the workflow. For the Inherited process model, you specify a rule which consists of a condition plus action. 
+Rules are used to set or restrict value assignments to a work item field. There are two types of rules, auto-generated and custom rules defined for a process or project.  Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way.
 
-In addition to custom rules you apply to a process or project, there are a number of auto-generated rules. These rules minimize the need to add custom rules for areas that should work in a standard way.
+Custom rules are defined for a work item type. For the Inherited process model, you specify a rule which consists of a condition plus action. Within the On-premises XML process models, you specify rules for a field or within the workflow. 
+ 
 
+<!--- what does this build on? what should they read before reading this? --> 
  
 Why read this - 
 
@@ -25,16 +30,14 @@ Why read this -
 > [!TIP]    
 > Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
 
-Work Item Rules Validation Exceeds SQL Limits: A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
+## What happens if too many rules are defined
+
+A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an `IF` statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
 
 
  You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
-
-
-Rules defined for work item types consist of default system&mdash;auto-generated&mdash;rules and custom rules. 
-
-
+  
 
 Work Item Rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, deduping identical rules, but not trimming conflicting rules. The dedupe logic is not so smart. Two rules will be considered identical for dedupe if and only if their conditions share the same order. This is usually not an important detail as in almost all cases, having duplicate rules is harmless.
 
@@ -42,16 +45,16 @@ Work Item Rules do not exist as a single collection. The rules are actually dyna
 
 ## Auto-generated rules 
 
-Auto-generated rules are defined to minimize the need to add custom rules for areas that should work in a standard way. 
+Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way. 
 
 
 ### State transition rules
 
-Any-to-any state transition rules.  Inherited processes generate the entire set of any-to-any state transition rules dynamically for each custom work item type and custom state added to a workflow. A transition from any state to any state is valid.  
+Any-to-any state transition rules.  Inherited processes generate the entire set of any-to-any state transition rules dynamically for each custom work item type and custom state added to a workflow. A transition from any state to any state is valid.  For the On-premises XML process, you must specify the valid transitions within the `WORKFLOW` section of the work item type definition. 
 
 ### State transitions and By/Date field rules
 
-"By/Date" fields are automatically set or cleared when you transition a work item from one state to another. These fields correspond to **Created By/Date**, **Activated By/Date**, **Resolved By/Date**, and **Closed By/Date**. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
+By/Date fields are automatically set or cleared when you transition a work item from one state to another. These fields correspond to **Created By/Date**, **Activated By/Date**, **Resolved By/Date**, and **Closed By/Date**. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
 
 Default rules and behaviors that govern these fields include: 
 
@@ -66,14 +69,27 @@ Default rules and behaviors that govern these fields include:
 Workflow states are associated with state categories to support the workflow on Kanban boards. To learn more, see [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
  
 
-### State Change Date rules
+### State Change Date field rules
 
 These rules are technically a lot simpler than Closed By/Closed Date rules because they are not dependent on any particular state. For any work item type, the same rules will always work. They need to be auto-generated because some OOB work item types do not contain the State Change Date field, so when the user adds this field to a custom work item type, these rules need to be auto-generated as well. The same principles for Closed By/Closed Date rules apply here as well.
  
 
+<a id="custom-rules" /> 
+
+## Custom rules
+
+All custom rules are optional. The following sections provide a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+
+Note the following: 
+
+- Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following tables, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
+- There isn't an overall one-to-one mapping between Inherited entries and XML elements. 
+- Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
+- You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
+
 <a name="system"></a>
 
-## System fields
+## System fields and custom rules
 
 System fields have System.*Name* reference names, for example **System.Title** and **System.State**. The rule engine restricts setting conditions or actions to system fields except as follows: 
 
@@ -83,30 +99,17 @@ System fields have System.*Name* reference names, for example **System.Title** a
 If you don't see a field listed in the drop-down menu of the rule user interface, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection.  Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
  
 
-<a id="custom-rules" /> 
-
-## Custom rules
-
-Assign value rules define runtime behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
-
-All custom rules are optional. The following sections provide a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
-
-> [!NOTE]   
-> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
-<br/>  
-
-
 <a id="clear" /> 
 
 ## Assign a value to a field 
 
-These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern.
+Assign a value to a field rules define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. 
 
+Most of these rule actions can be applied with the selection of any condition.  
 
-For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
-
-> [!NOTE]    
-> Field rules don't support assigning values that are the sum of two other fields or performing other mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
+::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
+Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+::: moniker-end
 
 
 ---
@@ -190,12 +193,16 @@ For the syntax structure and examples, see [Define a default value or copy a val
 
 ## Restrict a value to a field  
 
-You can apply custom rules to restrict changing the value of a field. Several XML elements don't map to an Inherited process rule action.  
-
+You can apply custom rules to restrict changing the value of a field. There isn't a complete one-to-one mapping from Inherited to XML elements. Most of these rule actions can be applied with the selection of any condition.   
+ 
+::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
+Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+::: moniker-end
+ 
 ---
 :::row:::
    :::column span="2":::
-      **Inherited**
+      **Inherited action**
    :::column-end:::
    :::column span="1":::
       **XML element**
@@ -232,13 +239,14 @@ You can apply custom rules to restrict changing the value of a field. Several XM
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="2":::
-       `Hide the field..."
+       `Hide the field...` 
+       *Only available when a group membership condition is selected.* 
    :::column-end:::
    :::column span="1":::
       Not supported
    :::column-end:::
    :::column span="3":::
-      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
+      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value. . 
    :::column-end:::
 :::row-end:::  
 ---
@@ -257,7 +265,7 @@ You can apply custom rules to restrict changing the value of a field. Several XM
 ---
 :::row:::
    :::column span="2":::
-      `Make read-only` (Action)  
+      `Make read-only`    
       Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
    :::column span="1":::
@@ -270,7 +278,7 @@ You can apply custom rules to restrict changing the value of a field. Several XM
 ---
 :::row:::
    :::column span="2":::
-      `Make required` (Action)  
+      `Make required`  
       Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
    :::column span="1":::
@@ -285,12 +293,17 @@ You can apply custom rules to restrict changing the value of a field. Several XM
 
 <a id="pick-list" /> 
 
-## Pick list rules
+## Pick lists
 
-Pick list rules define the values that a user can or can't choose for a String field. Values defined in a pick list appear on a work item form and the query editor. You can combine lists, and expand or contract lists. 
+ Pick lists define the values that a user can or can't choose for a String or Integer field. Values defined in a pick list appear on a work item form and the query editor. 
+ 
+For an Inherited process, pick lists are defined through the Edit field dialog. For the On-premises XML process, pick lists are defined using XML elements listed in the following table. 
 
 
-For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
+::: moniker range="< azure-devops"
+For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+::: moniker-end
+ 
 
 ---
 :::row:::
@@ -358,7 +371,7 @@ For examples of using pick lists, see [Define pick lists](define-pick-lists.md).
 <a id="conditional-rules" />
  
 
-## Conditional settings
+## Conditional settings 
 
 Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.  
 
@@ -367,7 +380,7 @@ Inherited conditions and XML elements map as indicated in the following table.
 ---
 :::row:::
    :::column span="2":::
-      **Inherited**
+      **Inherited condition**
    :::column-end:::
    :::column span="1":::
       **XML element**
@@ -427,12 +440,15 @@ Inherited conditions and XML elements map as indicated in the following table.
 ---
 
  
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
+
+
+<br/> 
 
 ---
 :::row:::
    :::column span="2":::
-      **Inherited**
+      **Inherited action**
    :::column-end:::
    :::column span="1":::
       **XML element**
@@ -480,75 +496,9 @@ You can specify multiple conditional rules per field. However, you can only spec
    :::column-end:::
 :::row-end:::  
 ---    
-
-
  
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
 
----
-:::row:::
-   :::column span="2":::
-      **Inherited**
-   :::column-end:::
-   :::column span="1":::
-      **XML element**
-   :::column-end:::
-   :::column span="3":::
-      **Description**
-   :::column-end:::
-:::row-end:::  
----
-:::row:::
-   :::column span="2":::
-      `Clear the value of ...`  
-      `Copy the value from ...`  
-      `Make read-only ...`  
-      `Make required ...`  
-      `Set the value of ...`  
-      `Use the current time to set the value of ...`  
-      `Use the current user to set the value of ...`  
-   :::column-end:::
-   :::column span="1":::
-      `EMPTY`  
-      `COPY`  
-      `READONLY`  
-      `REQUIRED`  
-          
-      `SERVERDEFAULT`  
-      `CANNOTLOSEVALUE`
-      `CANNOTLOSEVALUE`  
-      `FROZEN`  
-      `MATCH`  
-      `NOTSAMEAS`  
-      `VALIDUSER`  
-      <br/>For the syntax structure and examples, see [Assign conditional-based values and rules](assign-conditional-based-values-and-rules.md).
-   :::column-end:::
-   :::column span="3":::
-      Specifies the action to take on a specific field. Note that the Inherited process doesn't support specification of pick list elements, nor actions that correspond to the following elements: 
-      - `CANNOTLOSEVALUE`  
-      - `FROZEN`  
-      - `MATCH`  
-      - `NOTSAMEAS`  
-      - `VALIDUSER`  
-   :::column-end:::
-:::row-end:::  
----   
-
-
-<!--- 
-
-## Supported process rules
-
-All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
-
-> [!NOTE]   
-> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
-<br/>  
-
-
-
-
-
+<a id="membership" /> 
 
 ## User or group membership rule restrictions   
 
