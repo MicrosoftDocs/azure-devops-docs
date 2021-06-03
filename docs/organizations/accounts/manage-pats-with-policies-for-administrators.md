@@ -35,7 +35,7 @@ The following policies can be turned on or off. By default, these policies are s
 - Your organization must be [linked to Azure AD](connect-organization-to-azure-ad.md).
 - You must be an [Azure DevOps Administrator in Azure AD](/azure/active-directory/roles/permissions-reference) to manage your organization policies.
 
-To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory** > **Roles and administrators**. If you're not an Azure DevOps administrator, talk to your administrator.
+To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory** > **Roles and administrators**. If you're not an Azure DevOps administrator, contact your administrator.
 
 ## Restrict creation of global PATs
 
