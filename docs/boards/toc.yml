@@ -202,8 +202,9 @@
   items:
   - name: Work item field index
     href: work-items/guidance/work-item-field.md
-  - name: Work item fields
+  - name: Work item fields and attributes
     href: work-items/work-item-fields.md
+    displayname: Work Item Field Explorer,  
   - name: "Code review & feedback fields"
     href: work-items/guidance/guidance-code-review-feedback-field-reference.md
   - name: "Bugs, issues, & risks fields"
