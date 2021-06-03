@@ -81,9 +81,9 @@ The Azure DevOps Administrator in Azure AD defines the maximum lifespan of a PAT
 
 4. Enter the number of maximum days, and then select **Save**.
 
-## Add Azure AD users or groups to the Allow list
+## Add Azure AD users or groups to the allowlist
 
-Users or groups on the Allow list are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own Allow list. If a user is on the Allow list for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each Allow list.
+Users or groups on the allowlist are exempt from the restrictions and enforcements created by these policies when they're turned on. Select **Add AAD user or group** to add the user or group to the list, and then select **Add**. Each policy has its own allowlist. If a user is on the allowlist for one policy, any other activated policies still apply. In other words, if you want a user to be exempt from all policies, you should add them to each allowlist.
 
 ## Next steps
 
