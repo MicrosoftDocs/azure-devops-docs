@@ -15,46 +15,46 @@ Define iteration paths and assign them to teams when you want to use the followi
 
 ::: moniker range="azure-devops"
 
-- [Assign work items to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
-- [Query and chart work items based on Iteration Path](/azure/devops/boards/queries/query-by-area-iteration-path)
-- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
-- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
-- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/plans/review-team-plans)  
-- [Velocity chart](/azure/devops/report/dashboards/team-velocity) and [Sprint burndown chart](/azure/devops/report/dashboards/configure-sprint-burndown)  
+- [Assign work items to sprints using the Planning pane](../sprints/assign-work-sprint.md)
+- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
+- [Forecast your product backlog](../sprints/forecast.md)
+- [Sprints> all tools](../sprints/scrum-overview.md) 
+- [Delivery Plans, a calendar view of team deliverables](../plans/review-team-plans.md)  
+- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)  
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- [Assign work to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
-- [Query and chart work items based on Iteration Path](/azure/devops/boards/queries/query-by-area-iteration-path)
-- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
-- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
-- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/extensions/delivery-plans)  
-- [Velocity chart](/azure/devops/report/dashboards/team-velocity) and [Sprint burndown chart](/azure/devops/report/dashboards/configure-sprint-burndown)
+- [Assign work to sprints using the Planning pane](../sprints/assign-work-sprint.md)
+- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
+- [Forecast your product backlog](../sprints/forecast.md)
+- [Sprints> all tools](../sprints/scrum-overview.md) 
+- [Delivery Plans, a calendar view of team deliverables](../extensions/delivery-plans.md)  
+- [Velocity chart](../../report/dashboards/team-velocity.md) and [Sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-- [Assign work to sprints using the Planning pane](/azure/devops/boards/sprints/assign-work-sprint)
-- [Query and chart work items based on Iteration Path](/azure/devops/boards/queries/query-by-area-iteration-path)
-- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
-- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
-- [Delivery Plans, a calendar view of team deliverables](/azure/devops/boards/extensions/delivery-plans)  
-- [Velocity chart](/azure/devops/report/dashboards/team-velocity)  
+- [Assign work to sprints using the Planning pane](../sprints/assign-work-sprint.md)
+- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
+- [Forecast your product backlog](../sprints/forecast.md)
+- [Sprints> all tools](../sprints/scrum-overview.md) 
+- [Delivery Plans, a calendar view of team deliverables](../extensions/delivery-plans.md)  
+- [Velocity chart](../../report/dashboards/team-velocity.md)  
 
 ::: moniker-end
 
 ::: moniker range="< tfs-2017"
 
-- [Assign work to sprints](/azure/devops/boards/sprints/assign-work-sprint)
-- [Query and chart work items based on Iteration Path](/azure/devops/boards/queries/query-by-area-iteration-path)
-- [Forecast your product backlog](/azure/devops/boards/sprints/forecast)
-- [Sprints> all tools](/azure/devops/boards/sprints/scrum-overview) 
-- [Velocity chart](/azure/devops/report/dashboards/team-velocity)
+- [Assign work to sprints](../sprints/assign-work-sprint.md)
+- [Query and chart work items based on Iteration Path](../queries/query-by-area-iteration-path.md)
+- [Forecast your product backlog](../sprints/forecast.md)
+- [Sprints> all tools](../sprints/scrum-overview.md) 
+- [Velocity chart](../../report/dashboards/team-velocity.md)
 
 ::: moniker-end
 
 > [!TIP]    
-> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view or tool.   
+> If a team hasn't subscribed or selected an iteration path, that iteration path won't appear in a team view or tool.
