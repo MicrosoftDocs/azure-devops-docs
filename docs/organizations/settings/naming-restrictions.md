@@ -60,7 +60,7 @@ User accounts that you add must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -69,7 +69,7 @@ User accounts that you add must conform to the following restrictions.
    :::column span="1":::
       Account name length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 256 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -78,7 +78,7 @@ User accounts that you add must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not match any other user account added to the project collection
    :::column-end:::
 :::row-end:::
@@ -87,7 +87,7 @@ User accounts that you add must conform to the following restrictions.
    :::column span="1":::
       Reserved group names
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be named with a $NAMESPACE at either the project or the server level
    :::column-end:::
 :::row-end:::
@@ -96,7 +96,7 @@ User accounts that you add must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not include the following printable characters: `"/ \ [ ] : | < > + = ; ? *`
       - Must not include non-printable characters in the ASCII value range of 1-31
       - Must not end in a period (.)
@@ -122,7 +122,7 @@ Security groups that you add must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -131,7 +131,7 @@ Security groups that you add must conform to the following restrictions.
    :::column span="1":::
       Security group account name length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 256 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -140,7 +140,7 @@ Security groups that you add must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Project-level group accounts must not match any other group name in the same project
       - Collection-level group accounts must not match any other name of a group account in the project collection 
    :::column-end:::
@@ -150,7 +150,7 @@ Security groups that you add must conform to the following restrictions.
    :::column span="1":::
       Reserved group names
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be named with a $NAMESPACE at either the project or the server level
    :::column-end:::
 :::row-end:::
@@ -159,7 +159,7 @@ Security groups that you add must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not include the following printable characters: &quot;/ \ [ ] : | &lt; &gt; + = ; ? *
       - Must not include non-printable characters in the ASCII value range of 1-31
       - Must not end in a period (.)
@@ -185,7 +185,7 @@ Names you assign to project collections must conform to the following restrictio
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -194,7 +194,7 @@ Names you assign to project collections must conform to the following restrictio
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -203,7 +203,7 @@ Names you assign to project collections must conform to the following restrictio
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be identical to any other collection name in your on-premises deployment
       - If your deployment includes SharePoint Products or SQL Server Reporting Services, they can't be identical to the name and full path of an existing SharePoint site, report server, or Reporting Services website
    :::column-end:::
@@ -213,7 +213,7 @@ Names you assign to project collections must conform to the following restrictio
    :::column span="1":::
       Reserved names
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, Web, or WEB
       For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>
    :::column-end:::
@@ -223,7 +223,7 @@ Names you assign to project collections must conform to the following restrictio
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain any Unicode control characters or surrogate characters.
       - Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`
       - Must not contain an ellipsis (&hellip;) or a double period (..)
@@ -249,7 +249,7 @@ Names you assign to projects that you create must conform to the following restr
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -258,7 +258,7 @@ Names you assign to projects that you create must conform to the following restr
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -267,7 +267,7 @@ Names you assign to projects that you create must conform to the following restr
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be identical to any other name in the project collection, the SharePoint Web application that supports the collection, or the instance of SQL Server Reporting Services that supports the collection
    :::column-end:::
 :::row-end:::
@@ -276,7 +276,7 @@ Names you assign to projects that you create must conform to the following restr
    :::column span="1":::
       Reserved names
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, SERVER, SignalR, DefaultCollection, or Web
       - Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.
       For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
@@ -287,7 +287,7 @@ Names you assign to projects that you create must conform to the following restr
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain any Unicode control characters or surrogate characters
       - Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`
       - Must not start with an underscore (&#95;)
@@ -295,6 +295,19 @@ Names you assign to projects that you create must conform to the following restr
    :::column-end:::
 :::row-end:::
 --- 
+
+
+### Area Path and Iteration Path 
+
+Two work item fields, **Area Path** and **Iteration Path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods for addressing those work items.
+
+These multi-node fields use the backslash (&#92;) characters to denote the hierarchy of nodes within the tree structure.  
+
+The names you assign to child nodes to these fields must conform to the following restrictions.  
+
+
+[!INCLUDE [area-iteration-paths](includes/name-restrictions/area-iteration-paths.md)] 
+
 
 <a id="ProcessTemplates">   </a>
 
@@ -311,13 +324,13 @@ Processes you define or customize must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Length
    :::column-end:::
    :::column span="1":::
@@ -329,7 +342,7 @@ Processes you define or customize must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must be unique across Azure DevOps
       - If you upload a template with the same name as an existing template, the existing template is overwritten
    :::column-end:::
@@ -339,7 +352,7 @@ Processes you define or customize must conform to the following restrictions.
    :::column span="1":::
       Process template file size
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not exceed 2 GB (gigabytes)
    :::column-end:::
 :::row-end:::
@@ -359,7 +372,7 @@ Column and swimlane names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -368,7 +381,7 @@ Column and swimlane names must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 256 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -377,7 +390,7 @@ Column and swimlane names must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Column names must not be the same as any other column name on the Kanban board
       - Swimlane names must not be the same as any other swimlane name on the Kanban board
    :::column-end:::
@@ -387,7 +400,7 @@ Column and swimlane names must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain any Unicode control characters or surrogate characters
    :::column-end:::
 :::row-end:::
@@ -492,73 +505,6 @@ Files attached to work items must conform to the following restrictions.
 :::row-end:::
 ---
 
-### Area Path and Iteration Path 
-
-Two work item fields, **Area Path** and **Iteration Path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods for addressing those work items.
-
-These multi-node fields use the backslash (&#92;) characters to denote the hierarchy of nodes within the tree structure.  
-
-The names you assign to child nodes to these fields must conform to the following restrictions.  
-
-:::row:::
-   :::column span="1":::
-      **Restriction type**
-   :::column-end:::
-   :::column span="1":::
-      **Restriction**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Node length
-   :::column-end:::
-   :::column span="1":::
-      - Must not contain more than 255 characters
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Reserved names
-   :::column-end:::
-   :::column span="1":::
-      - Must not consist only of a period (.) or two periods (..)
-      - Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX
-      For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Special characters for nodes
-   :::column-end:::
-   :::column span="1":::
-      - Must not contain Unicode control characters
-      - Must not contain any one of the following characters: `&#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +`
-      - Must not contain characters prohibited by the local file system. 
-      For more information about Windows character restrictions, see <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Path length
-   :::column-end:::
-   :::column span="1":::
-      - Must not contain more than 4,000 Unicode characters
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      Path hierarchy depth
-   :::column-end:::
-   :::column span="1":::
-      - Must be fewer than 14 levels deep
-   :::column-end:::
-:::row-end:::
----
 
 <a id="WorkItemFields">   </a>
 
@@ -742,7 +688,7 @@ Help text that you add must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -751,7 +697,7 @@ Help text that you add must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 255 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -773,7 +719,7 @@ A global list, defined using the ```GLOBALLIST``` element contains one or more l
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -782,7 +728,7 @@ A global list, defined using the ```GLOBALLIST``` element contains one or more l
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 254 Unicode characters
       - Must not be empty
    :::column-end:::
@@ -792,7 +738,7 @@ A global list, defined using the ```GLOBALLIST``` element contains one or more l
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain leading or trailing white space
       - Must not contain two consecutive spaces
       - Must not contain backslash (\) characters
@@ -803,7 +749,7 @@ A global list, defined using the ```GLOBALLIST``` element contains one or more l
    :::column span="1":::
       Scope
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Since global lists are available among all projects, they must not contain elements defined at the project level, such as project-specific group account definitions.
    :::column-end:::
 :::row-end:::
@@ -815,7 +761,7 @@ Global lists must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -824,7 +770,7 @@ Global lists must conform to the following restrictions.
    :::column span="1":::
       Number of items
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Can't be empty. The global list must contain at least one `LISTITEM` element.
    :::column-end:::
 :::row-end:::
@@ -833,7 +779,7 @@ Global lists must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Can't be empty. The global list must contain at least one `LISTITEM` element.
    :::column-end:::
 :::row-end:::
@@ -852,7 +798,7 @@ Tag names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -861,7 +807,7 @@ Tag names must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 400 characters, cannot be null or empty
    :::column-end:::
 :::row-end:::
@@ -870,14 +816,14 @@ Tag names must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain separator characters: `,` or `;`
       - Must not contain Unicode control or format characters, such as a line feed, paragraph separator, carriage return, or other mismatched surrogate characters 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       Scope
    :::column-end:::
    :::column span="1":::
@@ -904,7 +850,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -913,7 +859,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Disk space
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must contain sufficient space for the build (insufficient space leads to failed builds)
    :::column-end:::
 :::row-end:::
@@ -922,7 +868,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Build directory
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must be a local path (for example, <em>C:\BuildDirectory</em>)
    :::column-end:::
 :::row-end:::
@@ -931,7 +877,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Drop location directory
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must be a UNC path (for example, `\server\share`)
    :::column-end:::
 :::row-end:::
@@ -940,7 +886,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Drop location permissions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Each generated build is put in a new directory in the drop folder.
       - The Team Foundation Server Service account (for example, <em>Domain</em>&#92;TFSSERVICE) must have Full Control permission access to the UNC drop location
       - The UNC drop location must be a shared folder
@@ -951,7 +897,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Team Foundation Build Service account
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       If you change the TFS Service account after the initial installation, you must make sure that the following conditions are true
       - The account is a member of the Build Services group
       - The account has read/write permissions to the temporary folders and the ASP.NET temporary folder
@@ -963,7 +909,7 @@ Your on-premises build computer must conform to the following restrictions.
    :::column span="1":::
       Firewall issues
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       If the build computer is firewall enabled, make sure that the program <strong>tfsbuildservice</strong> is in the exceptions list
    :::column-end:::
 :::row-end:::
@@ -979,7 +925,7 @@ Build type names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -988,7 +934,7 @@ Build type names must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be the same as any other build type name in the project
    :::column-end:::
 :::row-end:::
@@ -997,7 +943,7 @@ Build type names must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain the following printable character: `$`
    :::column-end:::
 :::row-end:::
@@ -1013,7 +959,7 @@ Build quality names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1022,7 +968,7 @@ Build quality names must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 256 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -1031,7 +977,7 @@ Build quality names must conform to the following restrictions.
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be the same as any other Build Quality name in the Team Foundation Build computer
    :::column-end:::
 :::row-end:::
@@ -1053,7 +999,7 @@ In the web portal and REST API, certain operations have a more restrictive path 
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1062,7 +1008,7 @@ In the web portal and REST API, certain operations have a more restrictive path 
    :::column span="1":::
       Server source control folder path length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 259 Unicode characters for a single folder or file name
       - Must not contain more than 388 Unicode characters for a directory
       - Must not contain more than 399 Unicode characters for a combined directory and file name
@@ -1073,7 +1019,7 @@ In the web portal and REST API, certain operations have a more restrictive path 
    :::column span="1":::
       Local folder path length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 248 Unicode characters for a directory
       - Must not contain more than 260 Unicode characters for a combined directory and file name
    :::column-end:::
@@ -1083,7 +1029,7 @@ In the web portal and REST API, certain operations have a more restrictive path 
    :::column span="1":::
       Web portal and REST-specific length restrictions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 215 Unicode characters for a combined project name, directory, and file name
    :::column-end:::
 :::row-end:::
@@ -1097,7 +1043,7 @@ A Git repo in Azure Repos establishes a repository for source code. Each project
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1106,7 +1052,7 @@ A Git repo in Azure Repos establishes a repository for source code. Each project
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -1115,7 +1061,7 @@ A Git repo in Azure Repos establishes a repository for source code. Each project
    :::column span="1":::
       Uniqueness
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not be identical to any other Git repo name in the project
    :::column-end:::
 :::row-end:::
@@ -1124,7 +1070,7 @@ A Git repo in Azure Repos establishes a repository for source code. Each project
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain any Unicode control characters or surrogate characters
       - Must not contain the following printable characters: `/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]`
       - Must not start with an underscore (&#95;)
@@ -1148,7 +1094,7 @@ Files and folders you add to Team Foundation version control must conform to the
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1157,7 +1103,7 @@ Files and folders you add to Team Foundation version control must conform to the
    :::column span="1":::
       Files and folders
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Names must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; 
       - Folders must not be outside the mapped directory for the active workspace
    :::column-end:::
@@ -1167,7 +1113,7 @@ Files and folders you add to Team Foundation version control must conform to the
    :::column span="1":::
       Files names
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not begin with a `$`
       - Must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; 
    :::column-end:::
@@ -1182,7 +1128,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1191,7 +1137,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -1200,7 +1146,7 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Can&#39;t end with a space ( ) or period (.)
       - Must not contain the following printable characters: &#92; &#47; &quot; : &lt; &gt; &#42; ? @ | ;
    :::column-end:::
@@ -1217,7 +1163,7 @@ Shelveset names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1226,7 +1172,7 @@ Shelveset names must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -1235,7 +1181,7 @@ Shelveset names must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt; | &#42; ? ;
    :::column-end:::
 :::row-end:::
@@ -1251,7 +1197,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1260,7 +1206,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       Length
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not contain more than 64 Unicode characters
    :::column-end:::
 :::row-end:::
@@ -1269,7 +1215,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       Special characters
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must not end with a space ( )
       - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ;
    :::column-end:::
@@ -1282,7 +1228,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       **Restriction type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Restriction**
    :::column-end:::
 :::row-end:::
@@ -1291,7 +1237,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       Job name
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must only contain alphanumeric characters and `'_'`
       - Must not start with a number
       - Must have a unique name
@@ -1304,7 +1250,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       Stage name
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must only contain alphanumeric characters and `'_'`
       - Must not start with a number
       - Must not contain keywords, for example: "deployment"
@@ -1315,7 +1261,7 @@ Workspace names must conform to the following restrictions.
    :::column span="1":::
       Expressions
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Must start with `a-Z` or `_AND`, followed by `a-Z`, `0-9`, or `_`
    :::column-end:::
 :::row-end:::

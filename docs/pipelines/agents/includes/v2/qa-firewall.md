@@ -51,3 +51,6 @@ To ensure your organization works with any existing firewall or IP restrictions,
 * `2620:1ec:a92::/48`
 * `2620:1ec:21::/48`
 * `2620:1ec:22::/48`
+
+> [!NOTE]
+> For more information about allowed addresses, see [Allowed address lists and network connections](../../../../organizations/security/allow-list-ip-url.md).

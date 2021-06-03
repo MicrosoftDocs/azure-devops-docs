@@ -38,7 +38,7 @@ To publish a Python package to your feed, follow these steps:
       <organizationName>
     
     [<organizationName>]
-    Repository = https://pkgs.dev.azure.com/<organizationName>/_packaging/<organizationName>/pypi/upload
+    Repository = https://pkgs.dev.azure.com/<organizationName>/_packaging/<feedName>/pypi/upload
     ```
 
 1. Create a source and a wheel distributions
@@ -75,7 +75,7 @@ To install a Python package from the command line, follow these steps:
 
     ```Command
     [global]
-    extra-index-url=https://pkgs.dev.azure.com/<organizationName>/_packaging/<organizationName>/pypi/simple/
+    extra-index-url=https://pkgs.dev.azure.com/<organizationName>/_packaging/<feedName>/pypi/simple/
     ```
 
 1. Run the following command in your project directory to install your package

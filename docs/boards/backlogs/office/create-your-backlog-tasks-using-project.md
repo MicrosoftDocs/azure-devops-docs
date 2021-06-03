@@ -61,7 +61,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
 #### [Office Project 365](#tab/office-365/)
 
-1. If you don't have Office Project 2010 or a more recent version, [install it](https://www.microsoft.com/download/details.aspx?id=17920). 
+1. If you don't have Office Project 2010 or a more recent version, [install it](https://www.microsoft.com/microsoft-365/project/project-management-software). 
 
 2. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these to connect to an Azure DevOps project. 
 
@@ -137,7 +137,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
 #### [Office Project 2007](#tab/office-2007/)
 
-1. If you don't have Office Project 2007 or a more recent version, [install it](https://www.microsoft.com/download/details.aspx?id=17920). 
+1. If you don't have Office Project 2007 or a more recent version, [install it](https://www.microsoft.com/microsoft-365/project/project-management-software). 
 
 1. If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to an Azure Boards or TFS project. 
 

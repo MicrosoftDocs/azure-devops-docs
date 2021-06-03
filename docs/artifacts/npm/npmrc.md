@@ -102,7 +102,8 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 [!INCLUDE [npmrc.md](../includes/npm/npmrc.md)]
 
-`vsts-npm-auth` is not supported on on-premises TFS and Azure DevOps Server.
+> [!NOTE]
+> `vsts-npm-auth` is not supported on on-premises TFS and Azure DevOps Server.
 
 ::: moniker-end
 
