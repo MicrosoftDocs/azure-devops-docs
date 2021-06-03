@@ -44,7 +44,7 @@ For details of how to enable gates, see [Configure a gate](../deploy-using-appro
 
 The **Delay before evaluation** is a time delay at the beginning of the gate evaluation 
 process that allows the gates to initialize, stabilize, and begin providing accurate results
-for the current deployment (see [Gate evaluation flows](#eval-examples)). For example:
+for the current deployment (see [Gate evaluation flows](#gate-evaluation-flow-examples)). For example:
 
 * For **pre-deployment gates**, the delay would be the time required for all bugs to be logged
   against the artifacts being deployed.  
@@ -83,10 +83,8 @@ The evaluation options that apply to all the gates you've added are:
  This ensures the approvers have all the information required to approve.
    
 For information about viewing gate results and logs, see
-[View the logs for approvals](../deploy-using-approvals.md#view-approvals) and
+[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation) and
 [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
-
-<a name="eval-examples"></a>
 
 ### Gate evaluation flow examples
 

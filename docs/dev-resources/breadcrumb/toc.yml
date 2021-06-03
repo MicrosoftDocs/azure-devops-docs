@@ -5,3 +5,7 @@
   - name: Developer Resources
     tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index
+    items: 
+    - name: Azure DevOps CLI
+      tocHref: /azure/devops/cli/
+      topicHref: /azure/devops/cli/index

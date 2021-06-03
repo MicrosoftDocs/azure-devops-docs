@@ -513,7 +513,7 @@ Data import will fail as one or more projects found in this collection are in th
 ```cmdline
 VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
 ```
-Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](/azure/devops/organizations/projects/restore-project?view=azure-devops-2020&preserve=true). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
+Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/restore-project.md). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
 
 ### Import failures
 

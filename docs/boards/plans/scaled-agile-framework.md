@@ -354,7 +354,7 @@ Each of the following articles within this suite of tutorials provide details on
 
 ## Related articles
 
-- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 - [Agile culture](agile-culture.md)
 - [Practices that scale](practices-that-scale.md)
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
