@@ -81,7 +81,7 @@ All custom rules are optional. The following sections provide a mapping of rules
 
 Note the following:  
 - Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
-- Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following tables, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
+- Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions.  
 - There isn't an overall one-to-one mapping between inherited entries and XML elements. 
 - Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
@@ -104,7 +104,6 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`
 
 
-<hr>
 :::row:::
    :::column span="2":::
       **Condition**
@@ -113,7 +112,6 @@ As an example, you can make a field required based on the value assigned to the 
       **Supported Actions**
    :::column-end:::
 :::row-end:::  
-<hr> 
 :::row:::  
    :::column span="4":::
       **Set field value or make required or read-only**
@@ -129,7 +127,6 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
    :::column-end:::
 :::row-end:::
-<hr> 
 ::: moniker range=">= azure-devops-2020"
 :::row:::  
    :::column span="4":::
@@ -145,7 +142,6 @@ As an example, you can make a field required based on the value assigned to the 
       > [!div class="mx-imgBorder"]  
       > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
 :::row-end:::
-<hr>
 ::: moniker-end
 ::: moniker range="azure-devops-2020"
 :::row:::  
@@ -163,7 +159,6 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
    :::column-end:::
 :::row-end:::
-<hr>
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::  
@@ -181,7 +176,6 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership.png)
    :::column-end:::
 :::row-end:::
-<hr>
 ::: moniker-end
 
 
@@ -330,7 +324,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       **Usage**
    :::column-end:::
 :::row-end:::  
@@ -338,7 +332,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `COPY`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Copies a specified value to a field when a user creates or modifies a work item.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -352,7 +346,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `DEFAULT`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -372,7 +366,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `EMPTY`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
       `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
       >[!div class="tabbedCodeSnippets"]  
@@ -388,7 +382,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `MATCH`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -402,7 +396,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `SERVERDEFAULT`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Specifies the server clock or the current user to define a field value.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -455,7 +449,6 @@ Also, you can restrict application of these rules based on the current user's gr
       **Description**
    :::column-end:::
 :::row-end:::  
-<hr>
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="2":::
@@ -466,7 +459,6 @@ Also, you can restrict application of these rules based on the current user's gr
       Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="2":::
       `Make read-only`    
@@ -476,7 +468,6 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is read-only, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="2":::
       `Make required`  
@@ -486,26 +477,23 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is required, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
-<hr>
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
-<hr>
 :::row:::
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       **Usage**
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `CANNOTLOSEVALUE`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.   
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -515,12 +503,11 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `FROZEN`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -530,13 +517,12 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-<hr>
 ::: moniker-end
 :::row:::
    :::column span="1":::
       `NOTSAMEAS`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Prevents a field from being assigned the same value as that which was assigned to another field.  
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -546,12 +532,11 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `READONLY`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
       Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
       In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.  
@@ -563,12 +548,11 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `REQUIRED`
    :::column-end:::
-   :::column span="4":::
+   :::column span="3":::
       Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
       >[!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -598,7 +582,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 #### [Inheritance process](#tab/inheritance) 
 
 
-<hr>
 :::row:::
    :::column span="2":::
       **Edit field dialog**
@@ -607,7 +590,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       **Description**
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="2":::
       **Definition** tab for a picklist field  
@@ -616,7 +598,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="2":::
       Check the **Allow users to enter their own values** checkbox within the **Options** tab to allow users to specify their own entries
@@ -625,13 +606,11 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
-</hr>
-
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
-<hr>
+
 :::row:::
    :::column span="1":::
       **XML element**
@@ -640,7 +619,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       **Description**
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `ALLOWEDVALUES`
@@ -649,7 +627,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `ALLOWEXISTINGVALUE`
@@ -658,7 +635,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `PROHIBITEDVALUES`
@@ -667,7 +643,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of prohibited values for the field.
    :::column-end:::
 :::row-end:::  
-<hr>
 :::row:::
    :::column span="1":::
       `SUGGESTEDVALUES`
@@ -676,7 +651,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
-<hr>
 
 * * *
 
@@ -713,13 +687,12 @@ Conditional rules specify an action based on the value of a field equaling or no
 For the On-premises XML process, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
----
+
+#### [Inheritance process](#tab/inheritance)  
+
 :::row:::
    :::column span="2":::
       **Inherited condition**
-   :::column-end:::
-   :::column span="1":::
-      **XML element**
    :::column-end:::
    :::column span="3":::
       **Description**
@@ -730,69 +703,49 @@ For the On-premises XML process, you can restrict application of these rules bas
    :::column span="2":::
       `The value of ... (equals)`  
    :::column-end:::
-   :::column span="1":::
-      `WHEN`
-   :::column-end:::
    :::column span="3":::
       Specifies one or more rules to apply to the current field when another field has a specific value.
    :::column-end:::
 :::row-end:::  
----
 :::row:::
    :::column span="2":::
        `A change was made to the value of ...`  
-   :::column-end:::
-   :::column span="1":::
-      `WHENCHANGED`
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when a specific field's value is changed.
    :::column-end:::
 :::row-end:::  
----
 :::row:::
    :::column span="2":::
        `The value of ... (not equals)`  
-   :::column-end:::
-   :::column span="1":::
-      `WHENNOT`
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when another field does not have a specific value.
    :::column-end:::
 :::row-end:::  
----
 :::row:::
    :::column span="2":::
        `No change was made to the value of ...`  
-   :::column-end:::
-   :::column span="1":::
-      `WHENNOTCHANGED`
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when a specific field's value is not changed.
    :::column-end:::
 :::row-end:::  
----
+
 
 You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
 
 
 <br/> 
 
----
 :::row:::
    :::column span="2":::
       **Inherited action**
-   :::column-end:::
-   :::column span="1":::
-      **XML element**
    :::column-end:::
    :::column span="3":::
       **Description**
    :::column-end:::
 :::row-end:::  
----
 :::row:::
    :::column span="2":::
       `Clear the value of ...`  
@@ -803,35 +756,62 @@ You can specify multiple conditional rules per field. However, you can only spec
       `Use the current time to set the value of ...`  
       `Use the current user to set the value of ...`  
    :::column-end:::
-   :::column span="1":::
-      `EMPTY`  
-      `COPY`  
-      `READONLY`  
-      `REQUIRED`  
-          
-      `SERVERDEFAULT`  
-   :::column-end:::
    :::column span="3":::
       Specifies the action to take on a specific field.  
    :::column-end:::
 :::row-end:::  
----
+
+
+
+#### [On-premises XML process](#tab/on-premises)  
+
+
 :::row:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
    :::column span="1":::
-      `CANNOTLOSEVALUE`  
-      `FROZEN`  
-      `MATCH`  
-      `NOTSAMEAS`  
+      **XML element**
    :::column-end:::
    :::column span="3":::
-      Specifies the action to take on a specific field.  
+      **Usage**
    :::column-end:::
 :::row-end:::  
----    
+:::row:::
+   :::column span="1":::
+      `WHEN`
+   :::column-end:::
+   :::column span="3":::
+      Specifies one or more rules to apply to the current field when another field has a specific value.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `WHENCHANGED`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when a specific field's value is changed.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `WHENNOT`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when another field does not have a specific value.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `WHENNOTCHANGED`
+   :::column-end:::
+   :::column span="3":::
+      Applies one or more rules to the current field when a specific field's value is not changed.
+   :::column-end:::
+:::row-end:::  
+
+
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
  
+
+* * * 
 
 <a id="membership" /> 
 
@@ -844,34 +824,25 @@ You can restrict application of a rule based on the current user's membership. W
 
 As indicated in the following table, to restrict a rule based on the current user's membership, you specify a condition for an Inherited process, and the `for` or `not` attributes to the rule element for an On-Premises XML process. 
 
----
+#### [Inheritance process](#tab/inheritance) 
+
+::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="1":::
       **Applies to**
    :::column-end:::
-   :::column span="2":::
-      **Inherited**
-   :::column-end:::
-   :::column span="2":::
-      **XML element**
-   :::column-end:::
+   :::column span="3":::
+      **Rule**
 :::row-end:::  
----
-::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="1":::
       Condition
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
        `Current user is a member of group ...`
        `Current user is not member of group ...`
    :::column-end:::
-   :::column span="2":::
-      `for` attribute
-      `not` attribute
-   :::column-end:::
 :::row-end::: 
----
 :::row:::
    :::column span="1":::
       Action
@@ -882,40 +853,16 @@ As indicated in the following table, to restrict a rule based on the current use
        `Make required ...`
        `Restrict the transition to state ...`
    :::column-end:::
-   :::column span="2":::
-      All XML rule elements
-   :::column-end:::
 :::row-end::: 
----
 ::: moniker-end
-::: moniker range="<= azure-devops-2019" 
-:::row:::
-   :::column span="3":::
-      Condition
-   :::column-end:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
-   :::column span="2":::
-      `for` attribute
-      `not` attribute
-   :::column-end:::
-:::row-end:::  
----
-:::row:::
-   :::column span="1":::
-      Action
-   :::column-end:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
-   :::column span="2":::
-      All XML rule elements
-   :::column-end:::
-:::row-end::: 
----
-::: moniker-end
- 
+
+
+#### [On-premises XML process](#tab/on-premises) 
+
+ TBD
+
+* * * 
+
 
 <a id="tokens" /> 
 
@@ -931,12 +878,13 @@ Identity or people-picker fields can accept values that reference both users and
 To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
 
-For an inherited process: 
+#### [Inheritance process](#tab/inheritance) 
 
 - [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
 - [*CollectionName*], such as [fabrikam], [myorganization] 
+
+#### [On-premises XML process](#tab/on-premises) 
 
 For an On-premises XML process: 
 
@@ -978,6 +926,8 @@ All users and groups must be qualified by one of these tokens. For example, the 
     <READONLY for="Dev Team"/>
 </FIELD>
 ```
+
+* * * 
 
 To learn more about default security groups, see [Permissions and groups](../../security/permissions.md) 
 
