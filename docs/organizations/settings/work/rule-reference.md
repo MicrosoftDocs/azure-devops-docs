@@ -283,7 +283,7 @@ Also, you can restrict application of these rules based on the current user's gr
 
 Most of these rule actions can be applied with the selection of any condition.  
 
----
+</hr>
 :::row:::
    :::column span="2":::
       **Inherited process action**
@@ -291,8 +291,8 @@ Most of these rule actions can be applied with the selection of any condition.
    :::column span="3":::
       **Description**
    :::column-end:::
-:::row-end:::  
----
+:::row-end::: 
+</hr> 
 :::row:::
    :::column span="2":::
        `Copy the value from...` 
@@ -301,7 +301,7 @@ Most of these rule actions can be applied with the selection of any condition.
       Specifies another field that contains a value to be copied into the current field.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="2":::
       Specify in Edit field dialog, Options tab
@@ -310,7 +310,7 @@ Most of these rule actions can be applied with the selection of any condition.
       Defines a default value for the field.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="2":::
       `Clear the value of...` 
@@ -319,7 +319,7 @@ Most of these rule actions can be applied with the selection of any condition.
       Defines the field as empty.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="2":::
       `Use the current time to set the value of ...`  
@@ -328,15 +328,15 @@ Most of these rule actions can be applied with the selection of any condition.
       Sets the time for a field based on the current user's time setting. <!--- TBD --> 
    :::column-end:::
 :::row-end:::  
----
+</hr>
 
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
-These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md).
 
----
+</hr>
 :::row:::
    :::column span="1":::
       **XML element**
@@ -348,7 +348,7 @@ These rules support setting defaults, copying values from one field to another, 
       **Example**
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `COPY`
@@ -356,7 +356,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="3":::
       Copies a specified value to a field when a user creates or modifies a work item.  
    :::column-end:::
-:::row-end:::  
+
    :::column span="2":::
       [!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -365,7 +365,8 @@ These rules support setting defaults, copying values from one field to another, 
       </FIELD> 
       ```  
    :::column-end:::
----
+:::row-end:::  
+</hr>
 :::row:::
    :::column span="1":::
       `DEFAULT`
@@ -388,7 +389,7 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
 
    :::column span="1":::
@@ -408,7 +409,7 @@ These rules support setting defaults, copying values from one field to another, 
       </FIELD>  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `MATCH`
@@ -425,7 +426,7 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `SERVERDEFAULT`
@@ -460,7 +461,7 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 
 ***
 
@@ -477,7 +478,7 @@ Also, you can restrict application of these rules based on the current user's gr
  
 #### [Inheritance process](#tab/inheritance) 
 
----
+</hr>
 :::row:::
    :::column span="2":::
       **Inherited action**
@@ -487,7 +488,7 @@ Also, you can restrict application of these rules based on the current user's gr
       **Description**
    :::column-end:::
 :::row-end:::  
----
+</hr>
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="2":::
@@ -498,7 +499,7 @@ Also, you can restrict application of these rules based on the current user's gr
       Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="2":::
       `Make read-only`    
@@ -508,7 +509,7 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is read-only, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="2":::
       `Make required`  
@@ -518,12 +519,12 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is required, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
----
+</hr>
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
----
+</hr>
 :::row:::
    :::column span="1":::
       **XML element**
@@ -535,7 +536,7 @@ Also, you can restrict application of these rules based on the current user's gr
       **Example**
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `CANNOTLOSEVALUE`
@@ -552,7 +553,7 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `FROZEN`
@@ -569,7 +570,7 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -587,7 +588,7 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `READONLY`
@@ -606,7 +607,7 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
    :::column span="1":::
       `REQUIRED`
@@ -623,7 +624,7 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
----
+</hr>
 
 *** 
 
