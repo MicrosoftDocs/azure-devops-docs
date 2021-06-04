@@ -91,7 +91,7 @@ Note the following:
 
 <a id="ip-rule-composition" /> 
 
-#### [Inheritance process](#tab/inheritance) 
+#### [Inheritance process](#tab/inheritance)  
 
 For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule, for most rules. All custom rules require all conditions to be met in order to be run. 
 
@@ -210,19 +210,15 @@ Field rules are additive. That is, you can specify four sets of rules for the sa
 
 -   **Transition-specific** rules that you specify for a specific transition are scoped to a work item that is undergoing a certain transition. These rules are enforced when the following conditions are true:
 
-    `State field value == "ToState"  &&`
-
-    `"Previous State Before Edit/New" == "FromState"`
-
-    `&& "MyField Value" != NULL`
+    `State field value == "ToState"  &&`  
+    `"Previous State Before Edit/New" == "FromState"`  
+    `&& "MyField Value" != NULL`  
 
 -   **Reason-specific** rules that you specify for a specific reason are scoped to a particular reason for a particular transition. They are processed when the following conditions are true:
 
-    `Reason field == "MyReason" &&`
-
-    `State field value == "ToState"  &&`
-
-    `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`
+    `Reason field == "MyReason" &&`  
+    `State field value == "ToState"  &&`  
+    `"Previous State Before Edit/New" == "FromState" && "MyField Value" != NULL`  
 
 The following example restricts modification of the customer severity field when the work item is in the Active state.
 
@@ -237,7 +233,10 @@ The following example restricts modification of the customer severity field when
 > </STATE>
 > ```
 
-* * *
+
+
+---  
+
 
 ## What happens if too many rules are defined
 
@@ -398,7 +397,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
    :::column span="3":::
       Specifies the server clock or the current user to define a field value.  
-      >[!div class="tabbedCodeSnippets"]  
+      > [!div class="tabbedCodeSnippets"]  
       ```XML  
       <TRANSITION from="New" to="Active">  
          <ACTIONS>  
@@ -425,7 +424,10 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
 :::row-end:::  
 
-* * *
+
+
+---  
+
 
 
 <a id="require" /> 
@@ -562,9 +564,12 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-<hr>
 
-* * * 
+
+
+
+---  
+
 
 
 <a id="pick-list" /> 
@@ -652,11 +657,10 @@ For the On-premises XML process, you can combine lists, and expand or contract l
    :::column-end:::
 :::row-end:::  
 
-* * *
 
 ::: moniker range="< azure-devops"
 
-### Person-named fields and validation errors
+## Person-named fields and validation errors
 
 For the On-premises XML process, to avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
 
@@ -673,8 +677,13 @@ For the On-premises XML process, to avoid validation errors that would otherwise
 >       <DEFAULT from="field" field="System.CreatedBy" />
 > </FIELD>
 > ```
-> 
+ 
 ::: moniker-end
+
+
+
+---  
+
 
 
 <a id="conditional-rules" />
@@ -811,7 +820,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
  
 
-* * * 
+---  
 
 <a id="membership" /> 
 
@@ -861,7 +870,9 @@ As indicated in the following table, to restrict a rule based on the current use
 
  TBD
 
-* * * 
+
+---  
+
 
 
 <a id="tokens" /> 
@@ -927,7 +938,9 @@ All users and groups must be qualified by one of these tokens. For example, the 
 </FIELD>
 ```
 
-* * * 
+
+---  
+
 
 To learn more about default security groups, see [Permissions and groups](../../security/permissions.md) 
 
