@@ -6,7 +6,7 @@ ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.manager: barbkess
 ms.author: kraigb
 author: kraigb
-ms.date: 04/06/2020
+ms.date: 06/04/2021
 monikerRange: 'azure-devops'
 ms.custom: devx-track-python, devx-track-azurecli
 ---
@@ -27,6 +27,7 @@ If you already have a Python web app to use, make sure it's committed to a GitHu
 If you need an app to work with, you can fork and clone the repository at [https://github.com/Microsoft/python-sample-vscode-flask-tutorial](https://github.com/Microsoft/python-sample-vscode-flask-tutorial). The code is from the tutorial [Flask in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-flask).
 
 To test the example app locally, from the folder containing the code, run the following appropriate commands for your operating system: 
+
 
 ```bash
 # Mac/Linux
@@ -102,7 +103,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
 
    1. From the first line of output from the previous `az webapp up` command, copy the name of your resource group, which is similar to **\<your-name>\_rg\_Linux\_\<your-region>**.
 
-   1. Enter the following command, using your resource group name, your app service name, and your startup file or command: 
+   1. Enter the following command, using your resource group name, your app service name (`<your-appservice>`), and your startup file or command (`startup.txt`).  
 
       ```azurecli
       az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-file-or-command>
