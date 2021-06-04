@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Get started with NuGet packages
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
 Developers can use Azure Artifacts to publish and consume NuGet packages both to and from feeds and public registries. A feed is an organizational construct that hosts packages. You can create public and private feeds, and you can control who can access your packages by modifying feed permissions.
 
@@ -28,7 +28,8 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+> [!NOTE]
+> Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Azure Artifacts Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 

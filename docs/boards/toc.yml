@@ -15,14 +15,17 @@
   items:
   - name: Choose a process
     href: work-items/guidance/choose-process.md
+    displayname: agile, basic, scrum, cmmi, test
   - name: About work items
     href: work-items/about-work-items.md
+    displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cients
   - name: Manage requirements
     href: ../cross-service/manage-requirements.md 
   - name: System fields  
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
     href: backlogs/backlogs-boards-plans.md
+    displayname: In Progress, Rollup, Taskboard
   - name: "About teams & Agile tools"
     href: ../organizations/settings/about-teams-and-settings.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
   - name: "Area & iteration paths"
@@ -36,6 +39,7 @@
     items:
     - name: Agile process guidance
       href: work-items/guidance/agile-process.md
+      displayname: MSF
     - name: Agile workflow
       href: work-items/guidance/agile-process-workflow.md
     - name: Scrum process guidance
@@ -46,8 +50,10 @@
       items:
       - name: CMMI process guidance
         href: work-items/guidance/cmmi-process.md
+        displayname: Capability Maturity Model Integration 
       - name: CMMI workflow
         href: work-items/guidance/cmmi-process-workflow.md
+        displayname: requirements
       - name: CMMI background
         href: work-items/guidance/cmmi/guidance-background-to-cmmi.md
       - name: Project management
@@ -91,23 +97,28 @@
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
   - name: Workflow states & categories
     href: ./work-items/workflow-and-state-categories.md
+    displayName: auto complete, pull requests
   - name: Linking & traceability
     href: ./queries/link-work-items-support-traceability.md
+    displayName: parent, child, git, remote  
   - name: Link types 
     href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
+    displayName: work, hyperlink, external, github, remote    
   - name: Work tracking limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    displayName: customize, migrate, import
 - name: Configure & customize
   items:
   - name: Configure & customize
     href: configure-customize.md
-    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy
+    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team 
     href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Define iteration (sprints) & configure team iterations 
     href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
+    displayname: default, correct, Kanban, custom
   - name: Add & manage teams
     items:
     - name: Add a team
@@ -197,14 +208,14 @@
     displayname: reorder, disable, nest, natural hierarchy, in progress  
   - name: Work item form caching
     href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
-    displayname: IndexDB
+    displayname: IndexDB, rule
 - name: Field reference
   items:
   - name: Work item field index
     href: work-items/guidance/work-item-field.md
-  - name: Work item fields and attributes
+  - name: Work item fields
     href: work-items/work-item-fields.md
-    displayname: Work Item Field Explorer,  
+    displayname: attribute, Work Item Field Explorer
   - name: "Code review & feedback fields"
     href: work-items/guidance/guidance-code-review-feedback-field-reference.md
   - name: "Bugs, issues, & risks fields"
