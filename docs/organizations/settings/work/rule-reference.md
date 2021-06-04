@@ -331,23 +331,17 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="2":::
-      **Description**
-   :::column-end:::
-   :::column span="2":::
-      **Example**
+   :::column span="4":::
+      **Usage**
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `COPY`
    :::column-end:::
-   :::column span="2":::
+   :::column span="4":::
       Copies a specified value to a field when a user creates or modifies a work item.  
-   :::column-end:::
-
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Status" name="Status" type="String">  
           <COPY from="value" value="" />  
@@ -359,11 +353,9 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `DEFAULT`
    :::column-end:::
-   :::column span="2":::
-      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+   :::column span="4":::
+      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
       <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
@@ -381,12 +373,10 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `EMPTY`
    :::column-end:::
-   :::column span="2":::
+   :::column span="4":::
       Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
-      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.SubStatus" />  
          <WHEN field="MyCorp.Status" value="Approve" >  
@@ -399,11 +389,9 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `MATCH`
    :::column-end:::
-   :::column span="2":::
-      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+   :::column span="4":::
+      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
         <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
@@ -415,11 +403,9 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="1":::
       `SERVERDEFAULT`
    :::column-end:::
-   :::column span="2":::
+   :::column span="4":::
       Specifies the server clock or the current user to define a field value.  
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <TRANSITION from="New" to="Active">  
          <ACTIONS>  
@@ -446,7 +432,7 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
 :::row-end:::  
 
-***
+* * *
 
 
 <a id="require" /> 
@@ -461,7 +447,7 @@ Also, you can restrict application of these rules based on the current user's gr
  
 #### [Inheritance process](#tab/inheritance) 
 
-</hr>
+
 :::row:::
    :::column span="2":::
       **Inherited action**
@@ -470,7 +456,7 @@ Also, you can restrict application of these rules based on the current user's gr
       **Description**
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
    :::column span="2":::
@@ -481,7 +467,7 @@ Also, you can restrict application of these rules based on the current user's gr
       Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="2":::
       `Make read-only`    
@@ -491,7 +477,7 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is read-only, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="2":::
       `Make required`  
@@ -501,33 +487,28 @@ Also, you can restrict application of these rules based on the current user's gr
       To specify the field default is required, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="2":::
-      **Description**
-   :::column-end:::
-   :::column span="2":::
-      **Example**
+   :::column span="4":::
+      **Usage**
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `CANNOTLOSEVALUE`
    :::column-end:::
-   :::column span="2":::
-      Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+   :::column span="4":::
+      Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.   
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
           <CANNOTLOSEVALUE /> 
@@ -535,16 +516,14 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `FROZEN`
    :::column-end:::
-   :::column span="2":::
-      Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+   :::column span="4":::
+      Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
           <FROZEN not="[Project]\Management Team" /> 
@@ -552,17 +531,15 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 ::: moniker-end
 :::row:::
    :::column span="1":::
       `NOTSAMEAS`
    :::column-end:::
-   :::column span="2":::
-      Prevents a field from being assigned the same value as that which was assigned to another field.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+   :::column span="4":::
+      Prevents a field from being assigned the same value as that which was assigned to another field.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Status" name="Status" type="String">  
           <NOTSAMEAS field="MyCorp.SubStatus" /> 
@@ -570,18 +547,16 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `READONLY`
    :::column-end:::
-   :::column span="2":::
+   :::column span="4":::
       Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
       Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
-      In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+      In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Status" name="Status" type="String">  
           <READONLY />  
@@ -589,16 +564,14 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `REQUIRED`
    :::column-end:::
-   :::column span="2":::
+   :::column span="4":::
       Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
-   :::column-end:::
-   :::column span="2":::
-      [!div class="tabbedCodeSnippets"]  
+      >[!div class="tabbedCodeSnippets"]  
       ```XML  
       <FIELD refname="MyCorp.Status" name="Status" type="String">  
           <REQUIRED />  
@@ -606,9 +579,9 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 
-*** 
+* * * 
 
 
 <a id="pick-list" /> 
@@ -659,7 +632,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 
 #### [On-premises XML process](#tab/on-premises) 
 
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       **XML element**
@@ -668,7 +641,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       **Description**
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `ALLOWEDVALUES`
@@ -677,7 +650,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `ALLOWEXISTINGVALUE`
@@ -686,7 +659,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `PROHIBITEDVALUES`
@@ -695,7 +668,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of prohibited values for the field.
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="1":::
       `SUGGESTEDVALUES`
@@ -704,9 +677,9 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 
-
+* * *
 
 ::: moniker range="< azure-devops"
 
