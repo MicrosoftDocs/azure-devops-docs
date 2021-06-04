@@ -12,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 **Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
+Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
+
+You can manage security for different types of resources such as variable groups, secure files, and deployment groups by adding users or groups to that role. Project administrator can grant or restrict access to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so.
+
 ::: moniker range="> tfs-2018"
-
-Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
-
-Project administrator can grant or restrict permissions to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so:
 
 1. Navigate to your project's summary page: `https://dev.azure.com/{your-organization}/{your-project}`
 
@@ -35,23 +35,17 @@ Project administrator can grant or restrict permissions to project resources. If
 
 To verify the permissions for your project's contributors, make sure you are a member of the *Build Administrators group* or the *Project Administrators group*. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) for more details.
 
-2. Open the build security dialog box.
+1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu then **Manage security**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Security menu item for all builds](media/security-menu-item.png)
+    :::image type="content" source="media/security-menu-item.png" alt-text="Manage pipeline security":::
 
-3. On the permissions dialog box, make sure the following permissions are set to Allow.
+1. On the permissions dialog box, make sure the following **Contributors** permissions are set to Allow.
 
-   > [!div class="mx-imgBorder"]
-   > ![Permissions dialog box for all builds in the project](media/builds-permissions-dialog-box.png)
+    :::image type="content" source="media/builds-permissions-dialog-box.png" alt-text="Set up the contributors permissions":::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).
-
-In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../../organizations/security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](permissions.md).  
 
 ## Set permissions for build pipelines
 
@@ -226,12 +220,8 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+## Related articles 
 
-## Related notes 
-
-[Default build and release permissions](../policies/permissions.md)
+- [Set pipelines permissions](../policies/permissions.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
-
-::: moniker-end
