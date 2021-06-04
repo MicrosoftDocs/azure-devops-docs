@@ -49,38 +49,39 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ## Set permissions for build pipelines
 
-1. To set the permissions for all build pipelines, click the Security From the web portal **Build-Release** hub, **Builds** page
+1. From within your project, select **Build and Release**, and then select **Builds** to access your build pipelines.
 
-   ![Open the Security dialog for all build pipelines](media/set-build-release-permissions/open-all-build-definitions-security.png)
+    :::image type="content" source="media/build-release-tfs.png" alt-text="Access builds in TFS":::
 
-   To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
+1. Select **Security** to set the permissions for all build pipelines.
 
-   <img src="media//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/open-all-build-definitions-security.png" alt-text="Access all builds security permissions":::
 
-2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+   To set permissions for a specific build pipeline, select the context menu for that build and select **Security**.
 
-   For example, here we change the permission for Edit build pipeline for the Contributors group to Allow.
+    :::image type="content" source="media/set-build-release-permissions/set-build-permission-open-dialog.png" alt-text="Configure build permissions":::
 
-   <img src="media/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+1. Choose the group you want to set permissions for, and then change the permission setting to grant or restrict access. In the following example, we change the contributors permission to allow editing build definitions.
 
-3. Save your changes.
+    :::image type="content" source="media/set-build-release-permissions/set-build-permission-dialog.png" alt-text="Contributors permissions - allow editing build definitions":::
+
+1. Select **Save changes** when you are done.
 
 ## Set permissions for release pipelines
 
-1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
+1. From within your project, select **Build and Release**, and then select **Releases** to access your release pipelines.
 
-   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a release pipeline." style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/release-pipelines-tfs.png" alt-text="Access release pipelines TFS":::
 
-   If you want to manage the permissions for a specific release, then open the Security dialog for that release.
+1. Select the context menu for **All release definitions**, and then select **Security**.
 
-1. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+    :::image type="content" source="media/set-build-release-permissions/all-releases-security.png" alt-text="All security releases":::
 
-   For example, here we deny access to several permissions for the Contributors group.
+1. Choose the group you want to set permissions for, and then change the permission setting to grant or restrict access. In the following example, we change the contributors permission to prohibit the deletion of release definitions.
 
-   <img src="media/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release pipeline" style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/set-release-permission-dialog.png" alt-text="Configure permissions for release pipelines":::
 
-1. Save your changes.
-
+1. Select **Save changes** when you are done.
 
 <a id="deployment-group" />
 <a id="variable-group" />
