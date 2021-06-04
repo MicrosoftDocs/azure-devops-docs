@@ -53,7 +53,7 @@ For On-premises XML processes, you must specify the valid transitions within the
 
 By/Date fields correspond to **Created By/Date**, **Activated By/Date**, **Resolved By/Date**, and **Closed By/Date**. 
 
-For Inherited processes, these fields are automatically set or cleared when you transition a work item from one state to another. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
+For inherited processes, these fields are automatically set or cleared when you transition a work item from one state to another. The Changed By/Date fields aren't included as they are updated with each work item save and are unrelated to state transitions. 
 
 Default rules and behaviors that govern these fields include: 
 
@@ -77,18 +77,21 @@ These rules are technically a lot simpler than Closed By/Closed Date rules becau
 
 ## Custom rules
 
-All custom rules are optional. The following sections provide a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
+All custom rules are optional. The following sections provide a mapping of rules supported by the inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the inherited process.  
 
 Note the following:  
 - Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 - Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following tables, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
-- There isn't an overall one-to-one mapping between Inherited entries and XML elements. 
+- There isn't an overall one-to-one mapping between inherited entries and XML elements. 
 - Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
 
+
+### Rule composition
+
 <a id="ip-rule-composition" /> 
 
-### Inherited process rule composition
+#### [Inheritance process](#tab/inheritance) 
 
 For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule, for most rules. All custom rules require all conditions to be met in order to be run. 
 
@@ -182,8 +185,8 @@ As an example, you can make a field required based on the value assigned to the 
 ::: moniker-end
 
 
- 
-### On-premises XML elements
+#### [On-premises XML process](#tab/on-premises) 
+
 
 The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the `FIELD` definition of a work item type definition. And, with the exception of the `HELPTEXT` element, you can specify these rules to take affect during a workflow transition or as child elements within a `FIELD` (Global workflow) element.
 
@@ -241,6 +244,8 @@ The following example restricts modification of the customer severity field when
 > </STATE>
 > ```
 
+***
+
 ## What happens if too many rules are defined
 
 A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an `IF` statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error.
@@ -266,22 +271,22 @@ If you don't see a field listed in the drop-down menu of the rule user interface
 
 ## Assign a value to a field 
 
-Assign a value to a field rules define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. 
+Assign a value to a field rules define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-Most of these rule actions can be applied with the selection of any condition.  
+
 
 ::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
 Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
+#### [Inheritance process](#tab/inheritance) 
+
+Most of these rule actions can be applied with the selection of any condition.  
 
 ---
 :::row:::
    :::column span="2":::
-      **Inherited**
-   :::column-end:::
-   :::column span="1":::
-      **XML element**
+      **Inherited process action**
    :::column-end:::
    :::column span="3":::
       **Description**
@@ -290,10 +295,7 @@ Also, you can restrict application of these rules based on the current user's gr
 ---
 :::row:::
    :::column span="2":::
-       `Copy the value from...` (Action)
-   :::column-end:::
-   :::column span="1":::
-      `COPY`
+       `Copy the value from...` 
    :::column-end:::
    :::column span="3":::
       Specifies another field that contains a value to be copied into the current field.
@@ -304,9 +306,6 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="2":::
       Specify in Edit field dialog, Options tab
    :::column-end:::
-   :::column span="1":::
-      `DEFAULT`
-   :::column-end:::
    :::column span="3":::
       Defines a default value for the field.
    :::column-end:::
@@ -314,10 +313,7 @@ Also, you can restrict application of these rules based on the current user's gr
 ---
 :::row:::
    :::column span="2":::
-      `Clear the value of...` (Action)
-   :::column-end:::
-   :::column span="1":::
-      `EMPTY`
+      `Clear the value of...` 
    :::column-end:::
    :::column span="3":::
       Defines the field as empty.
@@ -326,30 +322,147 @@ Also, you can restrict application of these rules based on the current user's gr
 ---
 :::row:::
    :::column span="2":::
-      Not supported
-   :::column-end:::
-   :::column span="1":::
-      `MATCH`
+      `Use the current time to set the value of ...`  
    :::column-end:::
    :::column span="3":::
-      Defines a pattern for the field that the field value must match.
+      Sets the time for a field based on the current user's time setting. <!--- TBD --> 
+   :::column-end:::
+:::row-end:::  
+---
+
+
+
+#### [On-premises XML process](#tab/on-premises) 
+
+These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](define-default-copy-value-field.md).
+
+---
+:::row:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+   :::column span="2":::
+      **Example**
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
-   :::column span="2":::
-      `Use the current time to set the value of ...` (Action)  
+   :::column span="1":::
+      `COPY`
    :::column-end:::
+   :::column span="3":::
+      Copies a specified value to a field when a user creates or modifies a work item.  
+   :::column-end:::
+:::row-end:::  
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <COPY from="value" value="" />  
+      </FIELD> 
+      ```  
+   :::column-end:::
+---
+:::row:::
+   :::column span="1":::
+      `DEFAULT`
+   :::column-end:::
+   :::column span="3":::
+      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
+      <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
+       <ALLOWEDVALUES>  
+          <LISTITEM value="P1"/>  
+          <LISTITEM value="P2"/>  
+          <LISTITEM value="P3"/>  
+       </ALLOWEDVALUES>  
+      <DEFAULT from="value" value="P3"/>  
+      </FIELD>  
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+
+   :::column span="1":::
+      `EMPTY`
+   :::column-end:::
+   :::column span="3":::
+      Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
+      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.SubStatus" />  
+         <WHEN field="MyCorp.Status" value="Approve" >  
+            **<EMPTY />**
+         </WHEN>  
+      </FIELD>  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="1":::
+      `MATCH`
+   :::column-end:::
+   :::column span="3":::
+      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple MATCH elements, the value will be valid if it matches any of the patterns that you specify for the field. If at least one element succeeds, the field has a valid value.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
+        <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
+      </FIELD>
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
    :::column span="1":::
       `SERVERDEFAULT`
    :::column-end:::
    :::column span="3":::
-      Specifies a server component that will provide the value for the field.
+      Specifies the server clock or the current user to define a field value.  
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <TRANSITION from="New" to="Active">  
+         <ACTIONS>  
+            <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
+         </ACTIONS>  
+         <REASONS>  
+            <DEFAULTREASON value="Work started" />  
+         </REASONS>  
+         <FIELDS>  
+            <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+                  <COPY from="currentuser" />  
+                  <VALIDUSER />  
+                  <REQUIRED />  
+            </FIELD>  
+            <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+               **<SERVERDEFAULT from="clock" />**  
+            </FIELD>  
+            <FIELD refname="System.AssignedTo">  
+            <DEFAULT from="currentuser" />  
+            </FIELD>  
+         </FIELDS>  
+      </TRANSITION>  
+      ```  
    :::column-end:::
 :::row-end:::  
 ---
 
-
+***
 
 
 <a id="require" /> 
@@ -362,40 +475,16 @@ You can apply custom rules to restrict changing the value of a field.  Most of t
 Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
+#### [Inheritance process](#tab/inheritance) 
+
 ---
 :::row:::
    :::column span="2":::
       **Inherited action**
    :::column-end:::
    :::column span="1":::
-      **XML element**
-   :::column-end:::
    :::column span="3":::
       **Description**
-   :::column-end:::
-:::row-end:::  
----
-:::row:::
-   :::column span="2":::
-       Not supported
-   :::column-end:::
-   :::column span="1":::
-      `CANNOTLOSEVALUE`
-   :::column-end:::
-   :::column span="3":::
-      Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.
-   :::column-end:::
-:::row-end:::  
----
-:::row:::
-   :::column span="2":::
-       Not supported
-   :::column-end:::
-   :::column span="1":::
-      `FROZEN`
-   :::column-end:::
-   :::column span="3":::
-      Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
    :::column-end:::
 :::row-end:::  
 ---
@@ -405,54 +494,139 @@ Also, you can restrict application of these rules based on the current user's gr
        `Hide the field...`   
        *Only available when a group membership condition is selected.* 
    :::column-end:::
-   :::column span="1":::
-      Not supported
-   :::column-end:::
    :::column span="3":::
       Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
-   :::column-end:::
-:::row-end:::  
----
-::: moniker-end
-:::row:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
-   :::column span="1":::
-      `NOTSAMEAS`
-   :::column-end:::
-   :::column span="3":::
-      Specifies another field, the value of which cannot be identical to the value of the current field.
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
    :::column span="2":::
       `Make read-only`    
-      Default: Specify in Edit field dialog, Options tab 
-   :::column-end:::
-   :::column span="1":::
-      `READONLY`
    :::column-end:::
    :::column span="3":::
-      Defines the field as read-only. 
+      Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
+      To specify the field default is read-only, specify in Edit field dialog, **Options** tab. 
    :::column-end:::
 :::row-end:::  
 ---
 :::row:::
    :::column span="2":::
       `Make required`  
-      Default: Specify in Edit field dialog, Options tab 
    :::column-end:::
+   :::column span="3":::
+      Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.  
+      To specify the field default is required, specify in Edit field dialog, **Options** tab. 
+   :::column-end:::
+:::row-end:::  
+---
+
+
+#### [On-premises XML process](#tab/on-premises) 
+
+---
+:::row:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+   :::column span="2":::
+      **Example**
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="1":::
+      `CANNOTLOSEVALUE`
+   :::column-end:::
+   :::column span="3":::
+      Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+          <CANNOTLOSEVALUE /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="1":::
+      `FROZEN`
+   :::column-end:::
+   :::column span="3":::
+      Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+          <FROZEN not="[Project]\Management Team" /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      `NOTSAMEAS`
+   :::column-end:::
+   :::column span="3":::
+      Prevents a field from being assigned the same value as that which was assigned to another field.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <NOTSAMEAS field="MyCorp.SubStatus" /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
+   :::column span="1":::
+      `READONLY`
+   :::column-end:::
+   :::column span="3":::
+      Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
+      Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
+      In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <READONLY />  
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+---
+:::row:::
    :::column span="1":::
       `REQUIRED`
    :::column-end:::
    :::column span="3":::
-      Specifies the field is required.
+      Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
+   :::column-end:::
+   :::column span="2":::
+      [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <REQUIRED />  
+      </FIELD> 
+      ```  
    :::column-end:::
 :::row-end:::  
 ---
- 
+
+*** 
+
 
 <a id="pick-list" /> 
 
@@ -830,7 +1004,7 @@ All users and groups must be qualified by one of these tokens. For example, the 
 </FIELD>
 ```
 
-To learn more about default security groups, see [Permissions and groups](../../organizations/security/permissions.md) 
+To learn more about default security groups, see [Permissions and groups](../../security/permissions.md) 
 
 
 ### Rule evaluation 
