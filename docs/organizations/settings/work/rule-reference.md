@@ -464,7 +464,7 @@ For an Inherited process, pick lists are defined through the Edit field dialog. 
 
 ::: moniker range="< azure-devops"
 For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
-
+::: moniker-end
 
 
 ---
@@ -550,6 +550,7 @@ For the On-premises XML process, to avoid validation errors that would otherwise
 >       <DEFAULT from="field" field="System.CreatedBy" />
 > </FIELD>
 > ```
+> 
 ::: moniker-end
 
 
@@ -767,6 +768,70 @@ As indicated in the following table, to restrict a rule based on the current use
 ::: moniker-end
  
 
+<a id="tokens" /> 
+
+### Use tokens to reference users or groups
+
+Identity or people-picker fields can accept values that reference both users and groups. When you restrict a rule to a group, you indicate the domain or scope of the group. For some values, you can use tokens. Examples of tokens include the following:
+
+::: moniker range="azure-devops"
+
+- [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
+- [*OrganizationName*], such as [fabrikam], [myorganization] 
+
+To learn about the scopes available for your project or organization, go to the **Project Settings>Permissions>Groups** or **Organization Settings>Permissions>Groups** page, you can filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+For an inherited process: 
+
+- [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
+- [*CollectionName*], such as [fabrikam], [myorganization] 
+
+For an On-premises XML process: 
+
+- **[Project]**, such as [Project]\Contributors, [Project]\Fabrikam Team, [Project]\Project Approvers 
+	The [Project] token specifies a group defined for a project. This can correspond to a team, a default or custom security group, or an Active Directory group that's been added to the project. 
+- **[GLOBAL]**, to reference a collection-scoped group, for example, [GLOBAL]\Project Collection Administrators
+	Use [GLOBAL] to reference a collection-scoped security group, such as the Project Collection Administrators group or a Windows group added to a collection. For example:  
+    ```xml
+    <FIELD name="Title">
+        <READONLY for="[GLOBAL]\Project Collection Valid Users"/>
+    </FIELD>
+    ```
+- **[Team Foundation]** to reference a server-scoped group, for example, [Team Foundation]\Team Foundation Administrators
+    Use [Team Foundation] to reference a server-scoped group, such as a built-in group or a Windows group you add to a server-level group. For example:  
+    ```xml
+    <FIELD name="Title">
+        <READONLY for="[Team Foundation]\Team Foundation Valid Users"/>
+    </FIELD>
+    ```
+- **[*DomainName*]** to reference a server-scoped group, for example, [Team Foundation]\Team Foundation Administrators
+	Domain-qualified account name, such as the one shown in the following example, can be used to reference a domain user or group. Some rules only support groups and do not support referencing domain users.  
+    ```xml
+    <LISTITEM value="FABRIKAM\Christie Church's Direct Reports"/>
+    ```
+
+> [!NOTE]    
+> [Project], [GLOBAL], and [Team Foundation] are used as is. You don't replace them with the name of the project, collection, or server name. 
+
+To learn about the scopes available for your project or collection, go to the **Project Settings>Permissions>Groups** or **Collection Settings>Permissions>Groups** page. Filter the list as needed. For example, the following image shows the first four entries to a filtered list based on *Azure DevOps*. To learn more, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md). 
+::: moniker-end
+
+:::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::
+  
+
+All users and groups must be qualified by one of these tokens. For example, the following XML isn't valid because it doesn't qualify the specified group with a valid token.
+
+```xml
+<FIELD name="Title">
+    <READONLY for="Dev Team"/>
+</FIELD>
+```
+
+To learn more about default security groups, see [Permissions and groups](../../organizations/security/permissions.md) 
+
 
 ### Rule evaluation 
 
@@ -848,7 +913,8 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 
 - [Work item field index](../../../boards/work-items/guidance/work-item-field.md)
 - [Work item fields and attributes](../../../boards/work-items/work-item-fields.md)
-
+- [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md)
+- [Permissions and groups](../../security/permissions.md)
 
 - **Inherited process**  
 	- [Add a rule to a work item type](custom-rules.md)
