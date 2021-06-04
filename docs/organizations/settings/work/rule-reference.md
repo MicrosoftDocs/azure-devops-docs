@@ -91,7 +91,7 @@ Note the following:
 
 <a id="ip-rule-composition" /> 
 
-# [Inheritance process](#tab/inheritance)  
+# [Inheritance process](#tab/inheritance)
 
 For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule, for most rules. All custom rules require all conditions to be met in order to be run. 
 
@@ -179,7 +179,7 @@ As an example, you can make a field required based on the value assigned to the 
 ::: moniker-end
 
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
 The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the `FIELD` definition of a work item type definition. And, with the exception of the `HELPTEXT` element, you can specify these rules to take affect during a workflow transition or as child elements within a `FIELD` (Global workflow) element.
 
@@ -267,7 +267,7 @@ Assign a value to a field rules define run-time behavior and constraints, such a
 Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 Most of these rule actions can be applied with the selection of any condition.  
 
@@ -313,7 +313,7 @@ Most of these rule actions can be applied with the selection of any condition.
 :::row-end:::  
 
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
 These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md).
 
@@ -438,7 +438,7 @@ You can apply custom rules to restrict changing the value of a field.  Most of t
 Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 
 :::row:::
@@ -479,7 +479,7 @@ Also, you can restrict application of these rules based on the current user's gr
 :::row-end:::  
 
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
 :::row:::
    :::column span="1":::
@@ -582,7 +582,7 @@ For an Inherited process, pick lists are defined through the Edit field dialog. 
 For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 
 :::row:::
@@ -611,7 +611,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 :::row-end:::  
 
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
 
 :::row:::
@@ -655,7 +655,6 @@ For the On-premises XML process, you can combine lists, and expand or contract l
    :::column-end:::
 :::row-end:::  
 
- 
 
 ## Person-named fields and validation errors
 
@@ -674,8 +673,6 @@ For the On-premises XML process, to avoid validation errors that would otherwise
 >       <DEFAULT from="field" field="System.CreatedBy" />
 > </FIELD>
 > ```
- 
-
 
 ---  
 
@@ -691,7 +688,7 @@ Conditional rules specify an action based on the value of a field equaling or no
 For the On-premises XML process, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
  
 
 :::row:::
@@ -765,9 +762,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 :::row-end:::  
 
 
-
-# [On-premises XML process](#tab/on-premises)  
-
+# [On-premises XML process](#tab/on-premises)
 
 :::row:::
    :::column span="1":::
@@ -827,7 +822,7 @@ You can restrict application of a rule based on the current user's membership. W
 
 As indicated in the following table, to restrict a rule based on the current user's membership, you specify a condition for an Inherited process, and the `for` or `not` attributes to the rule element for an On-Premises XML process. 
 
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
@@ -860,7 +855,7 @@ As indicated in the following table, to restrict a rule based on the current use
 ::: moniker-end
 
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
  TBD
 
@@ -875,7 +870,7 @@ As indicated in the following table, to restrict a rule based on the current use
 
 Identity or people-picker fields can accept values that reference both users and groups. When you restrict a rule to a group, you indicate the domain or scope of the group. For some values, you can use tokens. Examples of tokens include the following:
 
-# [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 - [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
 - [*OrganizationName*], such as [fabrikam], [myorganization] 
@@ -886,7 +881,7 @@ To learn about the scopes available for your project or organization, go to the 
 
 :::image type="content" source="media/rules/permissions-group-scope.png" alt-text="Screenshot of filtered Permissions groups list.":::
 
-# [On-premises XML process](#tab/on-premises) 
+# [On-premises XML process](#tab/on-premises)
 
 For an On-premises XML process: 
 
@@ -955,8 +950,6 @@ To avoid problems with users updating work items from various clients, specify A
 > The WIT Client OM is deprecated. As of January 1, 2020, it not longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
 
 
-
-
 ## Order in which rules are evaluated 
 
 Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
@@ -1009,7 +1002,7 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 >    </WHEN>
 > </FIELD>
 > ```
- 
+
 
 ## Related articles
 
@@ -1028,13 +1021,4 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 	- [Define pick lists](../../../reference/xml/define-pick-lists.md)
 	- [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md)
 
-
-<!---
-
-## Supported process rules
-
-All rules are optional. The following table provides a mapping of rules supported by the Inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the Inherited process.  
-
-> [!NOTE]   
-> Inherited entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions. In the following table, if the inherited entry refers to the action portion of a rule it is noted in parenthesis (Action). Otherwise, it refers to a condition.  
-<br/>  
+ 
