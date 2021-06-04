@@ -2,16 +2,17 @@
   href: index.md
 - name: Sign up and invite some teammates 
   href: sign-up-invite-teammates.md
+  displayName: Microsoft account, create project, 
 - name: Plan and track work
   href: plan-track-work.md 
-  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
+  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow, Agile, Basic, Scrum, CMMI 
 - name: Customize your boards
   href: customize-boards.md 
   displayName: cards, columns, field, swimlanes, settings, backlog levels 
 - name: Track work as a Stakeholder
-  href: ../../organizations/security/get-started-stakeholder.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+  href: ../../organizations/security/get-started-stakeholder.md?bc=/azure/devops/boards/breadcrumb/toc.json&toc=/azure/devops/boards/toc.json
 - name: Manage your project
   href: manage-boards.md
-  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
+  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions, configure, settings, customize,
 - name: Keyboard shortcuts
   href: keyboard-shortcuts.md
