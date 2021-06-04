@@ -104,7 +104,7 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`
 
 
----
+<hr>
 :::row:::
    :::column span="2":::
       **Condition**
@@ -113,7 +113,7 @@ As an example, you can make a field required based on the value assigned to the 
       **Supported Actions**
    :::column-end:::
 :::row-end:::  
----  
+<hr> 
 :::row:::  
    :::column span="4":::
       **Set field value or make required or read-only**
@@ -129,7 +129,7 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, work item is created](media/customize-workflow/actions-basic.png)
    :::column-end:::
 :::row-end:::
----  
+<hr> 
 ::: moniker range=">= azure-devops-2020"
 :::row:::  
    :::column span="4":::
@@ -145,7 +145,7 @@ As an example, you can make a field required based on the value assigned to the 
       > [!div class="mx-imgBorder"]  
       > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
 :::row-end:::
----  
+<hr>
 ::: moniker-end
 ::: moniker range="azure-devops-2020"
 :::row:::  
@@ -163,7 +163,7 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership-2020.png)
    :::column-end:::
 :::row-end:::
---- 
+<hr>
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::  
@@ -181,12 +181,11 @@ As an example, you can make a field required based on the value assigned to the 
       > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-user-group-membership.png)
    :::column-end:::
 :::row-end:::
---- 
+<hr>
 ::: moniker-end
 
 
 #### [On-premises XML process](#tab/on-premises) 
-
 
 The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the `FIELD` definition of a work item type definition. And, with the exception of the `HELPTEXT` element, you can specify these rules to take affect during a workflow transition or as child elements within a `FIELD` (Global workflow) element.
 
@@ -196,7 +195,7 @@ The On-premises XML process defines rules using XML elements. All of these rule 
 > For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
 
 
-####  Where to apply a field rule  Apply rules to State and Reason fields
+### Where to apply a field rule  Apply rules to State and Reason fields
 
 When you want a rule to apply to a field throughout the life of the work item, specify it within the `FIELD` section. For example, a field that is required for a bug that is new and active remains required until the bug is closed. Otherwise, if you want it applied based on a change in State, Reason, or transition, specify it within the `WORKFLOW` section.
 
@@ -244,7 +243,7 @@ The following example restricts modification of the customer severity field when
 > </STATE>
 > ```
 
-***
+* * *
 
 ## What happens if too many rules are defined
 
@@ -599,7 +598,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 #### [Inheritance process](#tab/inheritance) 
 
 
-</hr>
+<hr>
 :::row:::
    :::column span="2":::
       **Edit field dialog**
@@ -608,7 +607,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       **Description**
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="2":::
       **Definition** tab for a picklist field  
@@ -617,7 +616,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
-</hr>
+<hr>
 :::row:::
    :::column span="2":::
       Check the **Allow users to enter their own values** checkbox within the **Options** tab to allow users to specify their own entries
