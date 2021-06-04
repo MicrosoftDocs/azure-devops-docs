@@ -273,8 +273,6 @@ If you don't see a field listed in the drop-down menu of the rule user interface
 
 Assign a value to a field rules define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
-
-
 ::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
 Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
@@ -283,7 +281,6 @@ Also, you can restrict application of these rules based on the current user's gr
 
 Most of these rule actions can be applied with the selection of any condition.  
 
-</hr>
 :::row:::
    :::column span="2":::
       **Inherited process action**
@@ -292,7 +289,6 @@ Most of these rule actions can be applied with the selection of any condition.
       **Description**
    :::column-end:::
 :::row-end::: 
-</hr> 
 :::row:::
    :::column span="2":::
        `Copy the value from...` 
@@ -301,7 +297,6 @@ Most of these rule actions can be applied with the selection of any condition.
       Specifies another field that contains a value to be copied into the current field.
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="2":::
       Specify in Edit field dialog, Options tab
@@ -310,7 +305,6 @@ Most of these rule actions can be applied with the selection of any condition.
       Defines a default value for the field.
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="2":::
       `Clear the value of...` 
@@ -319,7 +313,6 @@ Most of these rule actions can be applied with the selection of any condition.
       Defines the field as empty.
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="2":::
       `Use the current time to set the value of ...`  
@@ -328,32 +321,28 @@ Most of these rule actions can be applied with the selection of any condition.
       Sets the time for a field based on the current user's time setting. <!--- TBD --> 
    :::column-end:::
 :::row-end:::  
-</hr>
-
 
 
 #### [On-premises XML process](#tab/on-premises) 
 
 These rules support setting defaults, copying values from one field to another, or enforcing a field value to match a prescribed pattern. For the syntax structure and examples, see [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md).
 
-</hr>
 :::row:::
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       **Description**
    :::column-end:::
    :::column span="2":::
       **Example**
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="1":::
       `COPY`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Copies a specified value to a field when a user creates or modifies a work item.  
    :::column-end:::
 
@@ -366,12 +355,11 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="1":::
       `DEFAULT`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.
    :::column-end:::
    :::column span="2":::
@@ -389,13 +377,11 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
-
    :::column span="1":::
       `EMPTY`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
       `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.
    :::column-end:::
@@ -409,13 +395,12 @@ These rules support setting defaults, copying values from one field to another, 
       </FIELD>  
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="1":::
       `MATCH`
    :::column-end:::
-   :::column span="3":::
-      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple MATCH elements, the value will be valid if it matches any of the patterns that you specify for the field. If at least one element succeeds, the field has a valid value.
+   :::column span="2":::
+      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.
    :::column-end:::
    :::column span="2":::
       [!div class="tabbedCodeSnippets"]  
@@ -426,12 +411,11 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
 :::row:::
    :::column span="1":::
       `SERVERDEFAULT`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Specifies the server clock or the current user to define a field value.  
    :::column-end:::
    :::column span="2":::
@@ -461,7 +445,6 @@ These rules support setting defaults, copying values from one field to another, 
       ```  
    :::column-end:::
 :::row-end:::  
-</hr>
 
 ***
 
@@ -483,7 +466,6 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="2":::
       **Inherited action**
    :::column-end:::
-   :::column span="1":::
    :::column span="3":::
       **Description**
    :::column-end:::
@@ -529,7 +511,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       **XML element**
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       **Description**
    :::column-end:::
    :::column span="2":::
@@ -541,7 +523,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       `CANNOTLOSEVALUE`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.
    :::column-end:::
    :::column span="2":::
@@ -558,7 +540,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       `FROZEN`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.
    :::column-end:::
    :::column span="2":::
@@ -576,7 +558,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       `NOTSAMEAS`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Prevents a field from being assigned the same value as that which was assigned to another field.
    :::column-end:::
    :::column span="2":::
@@ -593,7 +575,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       `READONLY`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
       Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
       In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.
@@ -612,7 +594,7 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="1":::
       `REQUIRED`
    :::column-end:::
-   :::column span="3":::
+   :::column span="2":::
       Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
    :::column-end:::
    :::column span="2":::
@@ -641,12 +623,44 @@ For an Inherited process, pick lists are defined through the Edit field dialog. 
 For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
+#### [Inheritance process](#tab/inheritance) 
 
----
+
+</hr>
 :::row:::
    :::column span="2":::
-      **Inherited**
+      **Edit field dialog**
    :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+</hr>
+:::row:::
+   :::column span="2":::
+      **Definition** tab for a picklist field  
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
+   :::column-end:::
+:::row-end:::  
+</hr>
+:::row:::
+   :::column span="2":::
+      Check the **Allow users to enter their own values** checkbox within the **Options** tab to allow users to specify their own entries
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
+   :::column-end:::
+:::row-end:::  
+</hr>
+
+
+
+#### [On-premises XML process](#tab/on-premises) 
+
+</hr>
+:::row:::
    :::column span="1":::
       **XML element**
    :::column-end:::
@@ -654,11 +668,8 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       **Description**
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
-   :::column span="2":::
-      Specify in Edit field dialog, Definition tab for a picklist field  
-   :::column-end:::
    :::column span="1":::
       `ALLOWEDVALUES`
    :::column-end:::
@@ -666,11 +677,8 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
    :::column span="1":::
       `ALLOWEXISTINGVALUE`
    :::column-end:::
@@ -678,11 +686,8 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
-   :::column span="2":::
-      Not supported
-   :::column-end:::
    :::column span="1":::
       `PROHIBITEDVALUES`
    :::column-end:::
@@ -690,11 +695,8 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of prohibited values for the field.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 :::row:::
-   :::column span="2":::
-      Check the **Allow users to enter their own values** checkbox within the Edit field dialog, Options tab to allow users to specify their own entries
-   :::column-end:::
    :::column span="1":::
       `SUGGESTEDVALUES`
    :::column-end:::
@@ -702,7 +704,7 @@ For the On-premises XML process, you can combine lists, and expand or contract l
       Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.
    :::column-end:::
 :::row-end:::  
----
+</hr>
 
 
 
