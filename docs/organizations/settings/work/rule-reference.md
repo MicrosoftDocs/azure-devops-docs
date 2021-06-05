@@ -337,17 +337,17 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
    :::column span="3":::
       Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  
-      >[!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Priority" name="Priority" type="String">  
-      <HELPTEXT>Specify the severity of the problem</HELPTEXT>  
-       <ALLOWEDVALUES>  
-          <LISTITEM value="P1"/>  
-          <LISTITEM value="P2"/>  
-          <LISTITEM value="P3"/>  
-       </ALLOWEDVALUES>  
-      <DEFAULT from="value" value="P3"/>  
-      </FIELD>  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.Priority" name="Priority" type="String" 
+      > <HELPTEXT>Specify the severity of the problem</HELPTEXT 
+      >    <ALLOWEDVALUES 
+      >       <LISTITEM value="P1"/ 
+      >       <LISTITEM value="P2"/ 
+      >       <LISTITEM value="P3"/ 
+      >    </ALLOWEDVALUES 
+      > <DEFAULT from="value" value="P3"/ 
+      > </FIELD 
       ```  
    :::column-end:::
 :::row-end:::  
@@ -358,13 +358,13 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="3":::
       Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
       `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
-      >[!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.SubStatus" />  
-         <WHEN field="MyCorp.Status" value="Approve" >  
-            <EMPTY />
-         </WHEN>  
-      </FIELD>  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.SubStatus" />  
+      >    <WHEN field="MyCorp.Status" value="Approve" >  
+      >      <EMPTY />
+      >    </WHEN>  
+      > </FIELD>  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -373,12 +373,12 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
    :::column span="3":::
       Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
-      >[!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
-        <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
-      </FIELD>
-      ```  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
+      >    <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
+      > </FIELD>
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -388,29 +388,29 @@ These rules support setting defaults, copying values from one field to another, 
    :::column span="3":::
       Specifies the server clock or the current user to define a field value.  
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <TRANSITION from="New" to="Active">  
-         <ACTIONS>  
-            <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
-         </ACTIONS>  
-         <REASONS>  
-            <DEFAULTREASON value="Work started" />  
-         </REASONS>  
-         <FIELDS>  
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-                  <COPY from="currentuser" />  
-                  <VALIDUSER />  
-                  <REQUIRED />  
-            </FIELD>  
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-               <SERVERDEFAULT from="clock" />  
-            </FIELD>  
-            <FIELD refname="System.AssignedTo">  
-            <DEFAULT from="currentuser" />  
-            </FIELD>  
-         </FIELDS>  
-      </TRANSITION>  
-      ```  
+      > ```XML  
+      > <TRANSITION from="New" to="Active">  
+      >    <ACTIONS>  
+      >       <ACTION value="Microsoft.VSTS.Actions.StartWork" />  
+      >    </ACTIONS>  
+      >    <REASONS>  
+      >       <DEFAULTREASON value="Work started" />  
+      >    </REASONS>  
+      >    <FIELDS>  
+      >       <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
+      >             <COPY from="currentuser" />  
+      >             <VALIDUSER />  
+      >             <REQUIRED />  
+      >       </FIELD>  
+      >       <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
+      >          <SERVERDEFAULT from="clock" />  
+      >       </FIELD>  
+      >       <FIELD refname="System.AssignedTo">  
+      >       <DEFAULT from="currentuser" />  
+      >       </FIELD>  
+      >    </FIELDS>  
+      > </TRANSITION>  
+      > ```  
    :::column-end:::
 :::row-end:::  
 
@@ -488,11 +488,11 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="3":::
       Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.   
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
-          <CANNOTLOSEVALUE /> 
-      </FIELD> 
-      ```  
+      > ```XML  
+      > <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+      >     <CANNOTLOSEVALUE /> 
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -502,11 +502,11 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="3":::
       Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.  
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
-          <FROZEN not="[Project]\Management Team" /> 
-      </FIELD> 
-      ```  
+      > ```XML  
+      > <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+      >     <FROZEN not="[Project]\Management Team" /> 
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -516,11 +516,11 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="3":::
       Prevents a field from being assigned the same value as that which was assigned to another field.  
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Status" name="Status" type="String">  
-          <NOTSAMEAS field="MyCorp.SubStatus" /> 
-      </FIELD> 
-      ```  
+      > ```XML  
+      > <FIELD refname="MyCorp.Status" name="Status" type="String">  
+      >     <NOTSAMEAS field="MyCorp.SubStatus" /> 
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -532,11 +532,11 @@ Also, you can restrict application of these rules based on the current user's gr
       Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
       In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.  
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Status" name="Status" type="String">  
-          <READONLY />  
-      </FIELD> 
-      ```  
+      > ```XML  
+      > <FIELD refname="MyCorp.Status" name="Status" type="String">  
+      >     <READONLY />  
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -546,11 +546,11 @@ Also, you can restrict application of these rules based on the current user's gr
    :::column span="3":::
       Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
       > [!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Status" name="Status" type="String">  
-          <REQUIRED />  
-      </FIELD> 
-      ```  
+      > ```XML  
+      > <FIELD refname="MyCorp.Status" name="Status" type="String">  
+      >     <REQUIRED />  
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
  
@@ -668,14 +668,12 @@ To avoid validation errors that would otherwise occur when members leave the tea
 
 ## Conditional field values or changes 
 
-Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.   Inherited conditions and XML elements map as indicated in the following table. 
-
-::: moniker range="< azure-devops"
-For the On-premises XML process, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
-::: moniker-end
+Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.  
+ 
  
 # [Inheritance process](#tab/inheritance)
  
+You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. 
 
 :::row:::
    :::column span="2":::
@@ -718,10 +716,6 @@ For the On-premises XML process, you can restrict application of these rules bas
    :::column-end:::
 :::row-end:::  
 
-
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
-
-
 <br/> 
 
 :::row:::
@@ -750,6 +744,10 @@ You can specify multiple conditional rules per field. However, you can only spec
 
 # [On-premises XML process](#tab/on-premises)
 
+The following XML elements are used to set conditions for when other rules are evaluated. You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table.  
+
+For syntax structure and examples, see [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md). You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+
 :::row:::
    :::column span="1":::
       **XML element**
@@ -763,7 +761,8 @@ You can specify multiple conditional rules per field. However, you can only spec
       `WHEN`
    :::column-end:::
    :::column span="3":::
-      Specifies one or more rules to apply to the current field when another field has a specific value.
+      Specifies one or more rules to apply to the current field when another field has a specific value. The parent element defines the current field.  
+      When the specified field has the specified value, the rules in this element are applied to the current field.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -771,7 +770,7 @@ You can specify multiple conditional rules per field. However, you can only spec
       `WHENCHANGED`
    :::column-end:::
    :::column span="3":::
-      Applies one or more rules to the current field when a specific field's value is changed.
+      Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is changed in a revision to a work item. The parent element defines the current field.      
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -779,7 +778,8 @@ You can specify multiple conditional rules per field. However, you can only spec
       `WHENNOT`
    :::column-end:::
    :::column span="3":::
-      Applies one or more rules to the current field when another field does not have a specific value.
+      Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field changes. The parent element defines the current field.  
+      When the specified field does not contain the specified value, the rules in this element are applied to the current field.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -787,12 +787,11 @@ You can specify multiple conditional rules per field. However, you can only spec
       `WHENNOTCHANGED`
    :::column-end:::
    :::column span="3":::
-      Applies one or more rules to the current field when a specific field's value is not changed.
+       Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.
    :::column-end:::
 :::row-end:::  
 
 
-You can specify multiple conditional rules per field. However, you can only specify a single driving field per conditional rule. You can't nest conditional rules. Supported actions for each process model include those listed in the following table. 
  
 
 ---  
@@ -853,14 +852,14 @@ To restrict a rule based on the current user's membership, you specify either th
    :::column span="2":::
       **Scenario**
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       **Usage**
 :::row-end:::  
 :::row:::
    :::column span="2":::
       **Make a field required only for a specified group**
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       Use `for` to apply a rule to a group. This example requires any user in the Junior Analysts group to complete the Second Approver field.
       > [!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -874,7 +873,7 @@ To restrict a rule based on the current user's membership, you specify either th
    :::column span="2":::
       **Restrict modification of a field to a group of users**
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       Use `not` to exclude a group from a rule. This example defines the Triage Description field as read-only for everyone except those users in the Triage Committee group.
       > [!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -888,7 +887,7 @@ To restrict a rule based on the current user's membership, you specify either th
    :::column span="2":::
       **Make a field required for some users and not for others**
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       Use a combination of `for` and `not` to simultaneously apply a rule to some and not for others. This example defines Severity as a required field for users in the Project Members group, but not for those in the Project Admins group. If a user is in both groups, the `for` statement would be enforced, and the field would be required.
       > [!div class="tabbedCodeSnippets"]  
       ```XML  
@@ -908,9 +907,11 @@ To restrict a rule based on the current user's membership, you specify either th
 
 ### Use tokens to reference users or groups
 
-Identity or people-picker fields can accept values that reference both users and groups. When you restrict a rule to a group, you indicate the domain or scope of the group. For some values, you can use tokens. Examples of tokens include the following:
+Identity or people-picker fields can accept values that reference both users and groups. When you restrict a rule to a group, you indicate the domain or scope of the group. For some values, you can use tokens. 
 
 # [Inheritance process](#tab/inheritance)
+
+Examples of tokens include the following:
 
 - [*ProjectName*], such as [Fabrikam], [FabrikamFiber], [MyProject]  
 - [*OrganizationName*], such as [fabrikam], [myorganization] 
@@ -923,7 +924,7 @@ To learn about the scopes available for your project or organization, go to the 
 
 # [On-premises XML process](#tab/on-premises)
 
-For an On-premises XML process: 
+Examples of tokens include the following:
 
 - **[Project]**, such as [Project]\Contributors, [Project]\Fabrikam Team, [Project]\Project Approvers 
 	The [Project] token specifies a group defined for a project. This can correspond to a team, a default or custom security group, or an Active Directory group that's been added to the project. 
@@ -967,9 +968,7 @@ All users and groups must be qualified by one of these tokens. For example, the 
 
 ---  
 
-
 To learn more about default security groups, see [Permissions and groups](../../security/permissions.md) 
-
 
 ### Rule evaluation 
 
