@@ -427,6 +427,144 @@ These rules support setting defaults, copying values from one field to another, 
 ---  
 
 
+<a id="require" /> 
+
+## Restrict a value to a field  
+
+You can apply custom rules to restrict changing the value of a field.  Most of these rule actions can be applied with the selection of any condition.   
+ 
+::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
+Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+::: moniker-end
+ 
+# [Inheritance process](#tab/inheritance)
+
+
+:::row:::
+   :::column span="2":::
+      **Inherited action**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::  
+::: moniker range=">= azure-devops-2020" 
+:::row:::
+   :::column span="2":::
+       `Hide the field...`   
+       *Only available when a group membership condition is selected.* 
+   :::column-end:::
+   :::column span="3":::
+      Specifies to not show the field on the work item form, essentially removing the ability for the current user to change the field's value.  
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
+:::row:::
+   :::column span="2":::
+      `Make read-only`    
+   :::column-end:::
+   :::column span="3":::
+      Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
+      To specify the field default is read-only, specify in Edit field dialog, **Options** tab. 
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="2":::
+      `Make required`  
+   :::column-end:::
+   :::column span="3":::
+      Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.  
+      To specify the field default is required, specify in Edit field dialog, **Options** tab. 
+   :::column-end:::
+:::row-end:::  
+
+
+# [On-premises XML process](#tab/on-premises)
+
+:::row:::
+   :::column span="1":::
+      **XML element**
+   :::column-end:::
+   :::column span="3":::
+      **Usage**
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `CANNOTLOSEVALUE`
+   :::column-end:::
+   :::column span="3":::
+      Prevents users from clearing a field of a value once a value has been specified. This element keeps the current field value and it cannot be cleared or made empty.   
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+          <CANNOTLOSEVALUE /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `FROZEN`
+   :::column-end:::
+   :::column span="3":::
+      Prevents users from changing the value of a field once it contains a value. As soon as a user saves the work item with a value in that field, the value can no longer be modified. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.  
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Priority" name="Management Priority" type="String">  
+          <FROZEN not="[Project]\Management Team" /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      `NOTSAMEAS`
+   :::column-end:::
+   :::column span="3":::
+      Prevents a field from being assigned the same value as that which was assigned to another field.  
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <NOTSAMEAS field="MyCorp.SubStatus" /> 
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `READONLY`
+   :::column-end:::
+   :::column span="3":::
+      Prevents a field from being modified at all. You might want to apply this rule under certain conditions. For example, after a work item is closed, you want to make a field read-only to preserve the data for reporting purposes.  
+      Do not use `READONLY` with the `EMPTY` element because `EMPTY` also makes a field read-only. Combining these elements may yield inconsistent results.  
+      In addition, you can make a field appear as read-only from the work item form using the `Control` element `ReadOnly` attribute. The field can be written to by other clients, but not through the work item form.  
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <READONLY />  
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `REQUIRED`
+   :::column-end:::
+   :::column span="3":::
+      Requires a user to specify a value for the field. Users cannot save a work item until they have assigned values to all required fields.
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD refname="MyCorp.Status" name="Status" type="String">  
+          <REQUIRED />  
+      </FIELD> 
+      ```  
+   :::column-end:::
+:::row-end:::  
+ 
+---  
+
 
 <a id="pick-list" /> 
 
@@ -678,9 +816,13 @@ You can restrict application of a rule based on the current user's membership. W
 
 ### Process implementation 
 
-As indicated in the following table, to restrict a rule based on the current user's membership, you specify a condition for an Inherited process, and the `for` or `not` attributes to the rule element for an On-Premises XML process. 
+
+> [!TIP]    
+> To avoid rule evaluation issues that may arise, specify Azure DevOps security groups and not Azure Active Directory or Active Directory security groups. To learn more, see [Default rules and the rule engine](rule-reference.md). 
 
 # [Inheritance process](#tab/inheritance)
+
+As indicated in the following table, to restrict a rule based on the current user's membership, you specify one of two conditions for an Inherited process. These rules are active for Azure DevOps 2020 and later versions. 
 
 ::: moniker range=">= azure-devops-2020" 
 :::row:::
@@ -695,19 +837,19 @@ As indicated in the following table, to restrict a rule based on the current use
       Condition
    :::column-end:::
    :::column span="3":::
-       `Current user is a member of group ...`
-       `Current user is not member of group ...`
+       `Current user is a member of group ...`  
+       `Current user is not member of group ...`  
    :::column-end:::
 :::row-end::: 
 :::row:::
    :::column span="1":::
       Action
    :::column-end:::
-   :::column span="2":::
-       `Hide the field ...`
-       `Make read-only ...`
-       `Make required ...`
-       `Restrict the transition to state ...`
+   :::column span="3":::
+       `Hide the field ...`  
+       `Make read-only ...`  
+       `Make required ...`  
+       `Restrict the transition to state ...`  
    :::column-end:::
 :::row-end::: 
 ::: moniker-end
@@ -715,8 +857,58 @@ As indicated in the following table, to restrict a rule based on the current use
 
 # [On-premises XML process](#tab/on-premises)
 
- TBD
+To restrict a rule based on the current user's membership, you specify either the `for` or `not` attributes in the rule element. You specify the scope of the rule. To have the rule scoped to multiple groups, you must create a parent Azure DevOps group that includes the set of groups that you want to use.  
 
+:::row:::
+   :::column span="2":::
+      **Scenario**
+   :::column-end:::
+   :::column span="2":::
+      **Usage**
+:::row-end:::  
+:::row:::
+   :::column span="2":::
+      **Make a field required only for a specified group**
+   :::column-end:::
+   :::column span="2":::
+      Use `for` to apply a rule to a group. This example requires any user in the Junior Analysts group to complete the Second Approver field.
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD name="Second Approver">
+        <REQUIRED for="Example1\Junior Analysts"/>
+      </FIELD>
+      ```
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="2":::
+      **Restrict modification of a field to a group of users**
+   :::column-end:::
+   :::column span="2":::
+      Use `not` to exclude a group from a rule. This example defines the Triage Description field as read-only for everyone except those users in the Triage Committee group.
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD name="Triage Description">
+         <READONLY not="[Project]\Triage Committee" />
+      </FIELD>
+      ```
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="2":::
+      **Make a field required for some users and not for others**
+   :::column-end:::
+   :::column span="2":::
+      Use a combination of `for` and `not` to simultaneously apply a rule to some and not for others. This example defines Severity as a required field for users in the Project Members group, but not for those in the Project Admins group. If a user is in both groups, the `for` statement would be enforced, and the field would be required.
+      > [!div class="tabbedCodeSnippets"]  
+      ```XML  
+      <FIELD name="Severity">
+         <REQUIRED for="[Project]\Project Members" not="[Global]\Project Admins"/>
+      </FIELD>
+      ```
+   :::column-end:::
+:::row-end::: 
+ 
 
 ---  
 
