@@ -15,14 +15,14 @@ ms.date: 06/03/2021
 #Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
 ---
 
-# Default rules and the rule engine  
+# Rules and rule evaluation    
 
 
 [!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
-Rules are used to set or restrict value assignments to a work item field. There are two types of rules, auto-generated and custom rules defined for a process or project.  Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way.
+Rules are used to set or restrict value assignments to a work item field. There are two types of rules, auto-generated and custom rules defined for a process or project. Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way.
 
-Custom rules are defined for a work item type. For the Inherited process model, you specify a rule which consists of a condition plus action. Within the On-premises XML process models, you specify rules for a field or within the workflow. 
+Custom rules are defined for a work item type. For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
  
 
 <!--- what does this build on? what should they read before reading this? 
@@ -289,18 +289,10 @@ Most of these rule actions can be applied with the selection of any condition.
 :::row-end:::  
 :::row:::
    :::column span="2":::
-      Specify in Edit field dialog, Options tab
-   :::column-end:::
-   :::column span="3":::
-      Defines a default value for the field.
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="2":::
       `Clear the value of...` 
    :::column-end:::
    :::column span="3":::
-      Defines the field as empty.
+      Clears the field of any value that it contains. 
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -331,12 +323,12 @@ These rules support setting defaults, copying values from one field to another, 
    :::column-end:::
    :::column span="3":::
       Copies a specified value to a field when a user creates or modifies a work item.  
-      >[!div class="tabbedCodeSnippets"]  
-      ```XML  
-      <FIELD refname="MyCorp.Status" name="Status" type="String">  
-          <COPY from="value" value="" />  
-      </FIELD> 
-      ```  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.Status" name="Status" type="String">  
+      >    <COPY from="value" value=" " />  
+      > </FIELD> 
+      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -370,7 +362,7 @@ These rules support setting defaults, copying values from one field to another, 
       ```XML  
       <FIELD refname="MyCorp.SubStatus" />  
          <WHEN field="MyCorp.Status" value="Approve" >  
-            **<EMPTY />**
+            <EMPTY />
          </WHEN>  
       </FIELD>  
    :::column-end:::
@@ -411,7 +403,7 @@ These rules support setting defaults, copying values from one field to another, 
                   <REQUIRED />  
             </FIELD>  
             <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-               **<SERVERDEFAULT from="clock" />**  
+               <SERVERDEFAULT from="clock" />  
             </FIELD>  
             <FIELD refname="System.AssignedTo">  
             <DEFAULT from="currentuser" />  
@@ -517,7 +509,6 @@ Also, you can restrict application of these rules based on the current user's gr
       ```  
    :::column-end:::
 :::row-end:::  
-::: moniker-end
 :::row:::
    :::column span="1":::
       `NOTSAMEAS`
@@ -570,15 +561,11 @@ Also, you can restrict application of these rules based on the current user's gr
 
 ## Pick lists 
 
- Pick lists define the values that a user can or can't choose for a String or Integer field. Values defined in a pick list appear on a work item form and the query editor. 
- 
-For an Inherited process, pick lists are defined through the Edit field dialog. For the On-premises XML process, pick lists are defined using XML elements listed in the following table. 
-
-::: moniker range="< azure-devops"
-For the On-premises XML process, you can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
-::: moniker-end
+Pick lists define the values that a user can or can't choose for a String or Integer field. Values defined in a pick list appear on a work item form and the query editor. 
 
 # [Inheritance process](#tab/inheritance)
+
+For an Inherited process, pick lists are defined through the Edit field dialog. 
 
 
 :::row:::
@@ -609,6 +596,9 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 
 # [On-premises XML process](#tab/on-premises)
 
+You define pick lists using XML elements listed in the following table. For syntax structure and examples, see [Define pick lists](../../../reference/xml/define-pick-lists.md).
+
+You can combine lists, and expand or contract lists. Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 
 :::row:::
    :::column span="1":::
@@ -652,9 +642,9 @@ For the On-premises XML process, you can combine lists, and expand or contract l
 :::row-end:::  
 
 
-## Person-named fields and validation errors
+**Identity fields and validation errors**
 
-For the On-premises XML process, to avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the Assigned To field.
+To avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors, include the **ALLOWEXISTINGVALUE** element for the **Assigned To** field.
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
