@@ -18,6 +18,8 @@ You can manage security for different types of resources such as variable groups
 
 ::: moniker range="> tfs-2018"
 
+## Add users to your project
+
 1. Navigate to your project's summary page: `https://dev.azure.com/{your-organization}/{your-project}`
 
 1. Select the **Invite** button to add a user to your project, and then fill out the required fields. Select **Add** when you are done.
