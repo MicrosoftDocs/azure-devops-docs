@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.author: kaelli
 author: KathrynEE
-monikerRange: ">= azure-devops-2019"
+monikerRange: "<= azure-devops"
 ms.topic: conceptual
 ms.date: 06/07/2021
 
@@ -832,6 +832,7 @@ For syntax structure and examples, see [Assign conditional-based values and rule
 ---  
 
 <a id="membership" /> 
+<a id="apply-or-ignore-rules-based-on-user-or-group" /> 
 
 ## User or group membership rule restrictions   
 
