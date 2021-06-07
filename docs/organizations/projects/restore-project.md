@@ -1,5 +1,5 @@
 ---
-title: Restore a project
+title: Restore project
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Restore a recently deleted project in Azure DevOps.
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/26/2021
+ms.date: 06/02/2021
 ---
 
 # Restore a project
@@ -17,6 +17,7 @@ ms.date: 04/26/2021
 [!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
+
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -29,12 +30,13 @@ To restore a project, you must have the "delete project" permission set to **All
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-To restore a project, you must delete project permissions and have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
+To restore a project, you must have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
 ::: moniker-end
 
 > [!NOTE]
 > A recently deleted project is only viewable when there's a project that's been deleted from an organization within the last 28 days.
+
 ## Restore project
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
@@ -42,6 +44,7 @@ To restore a project, you must delete project permissions and have the "delete p
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
+
 3. Select **Overview**, and then scroll down to "recently deleted projects."
 
    ![Screenshot that shows recently deleted projects.](../accounts/media/shared/organization-settings-select-overview.png)
@@ -49,6 +52,7 @@ To restore a project, you must delete project permissions and have the "delete p
 4. Highlight the project you want to restore, and then select **Restore**.
 
    ![Highlight the project, and then select Restore](media/restore-project/recently-deleted-projects.png)
+
 ### Using REST API
 
 > [!WARNING]
@@ -56,22 +60,26 @@ To restore a project, you must delete project permissions and have the "delete p
 
 1. Open a browser window and enter a URL that uses the following form:  
 
-    <pre><code>http://ServerName:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
+    <pre><code>http://ServerName:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre>
 
    For example, to connect to the server named **FabrikamPrime**, enter: **http://FabrikamPrime:8080/tfs/**.
 
    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 
 2. Get a list of deleted projects using the following request:
+
    ```
    GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
    ```
+
 3. Restore a deleted project using the following request:
+
    ```
    PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?api-version=5.0-preview.3
    ```
 
    Request body
+
    ```
    {
     "state" : "wellFormed"
@@ -81,6 +89,7 @@ To restore a project, you must delete project permissions and have the "delete p
 ### Using PowerShell
 
 1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
+
    ```
    $collectionUrl = "https://localhost/defaultcollection" 
    (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
@@ -90,6 +99,7 @@ To restore a project, you must delete project permissions and have the "delete p
     ![PowerShell script return example for deleted projects](media/restore-project/deleted-projects-powershell-script-2019.png)
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+
    ```
    $collectionUrl = "https://localhost/defaultcollection"
    $projectName = 'Project1'
@@ -98,6 +108,7 @@ To restore a project, you must delete project permissions and have the "delete p
    ```
 
 Your project and associated data are restored.
+
 ## Related articles
 
 * [Save project data](save-project-data.md)
