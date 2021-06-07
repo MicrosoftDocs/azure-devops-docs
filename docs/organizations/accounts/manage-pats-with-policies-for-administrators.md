@@ -20,6 +20,7 @@ The following policies can be turned on or off. By default, these policies are s
   - [Restrict creation of global PATs](#restrict-creation-of-global-pats)
   - [Restrict creation of full-scoped PATs](#restrict-creation-of-full-scoped-pats)
   - [Set maximum lifespan for new PATs](#set-maximum-lifespan-for-new-pats)
+  - [Add Azure AD users or groups to the allowlist](#add-azure-ad-users-or-groups-to-the-allowlist)
 
 > [!IMPORTANT]
 > Existing PATs, created via both the UI and APIs, apply per the remainder of their lifespan. Before these existing PATs can be successfully renewed, they must be updated to comply with the new restriction.
@@ -47,7 +48,7 @@ The Azure DevOps Administrator in Azure AD restricts users from creating global 
 
 ## Restrict creation of full-scoped PATs
 
-The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means that new PATs must be limited to a specific, custom defined set of scopes.
+The Azure DevOps Administrator in Azure AD restricts users from creating full-scoped PATs. Enabling this policy means new PATs must be limited to a specific custom defined set of scopes.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
