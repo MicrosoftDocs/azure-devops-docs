@@ -36,7 +36,7 @@
     displayname: group, column, page, 
   - name: Add a custom control
     href: custom-controls-process.md
-  - name: Default rules and the rule engine
+  - name: Rules and rule evaluation
     href: rule-reference.md
     displayname: auto-generated, by/date fields, state change date, restrictions, 
 - name: Change project process

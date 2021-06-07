@@ -52,7 +52,7 @@ sections:
       - question: Can caching impact rules applied to work items?  
         answer: | 
 
-          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).    
+          **Yes**. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../organizations/settings/work/rule-reference.md#apply-or-ignore-rules-based-on-user-or-group).    
 
 
       - question: What client tools support work tracking with Azure Boards? 

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 06/03/2021
+ms.date: 06/07/2021
 
 
 #Customer intent: As a process designer, I need to understand how rules work and the limits to defining rules for a work item type or process, so I can add the right rules to support my business processes.
@@ -20,19 +20,20 @@ ms.date: 06/03/2021
 
 [!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
-Rules are used to set or restrict value assignments to a work item field. There are two types of rules, auto-generated and custom rules defined for a process or project. Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way.
+Rules are used to set or restrict value assignments to a work item field. There are two main types of rules, auto-generated rules and custom rules defined for a process or project. Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. You define custom rules in order to support your business use cases. Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
-Custom rules are defined for a work item type. For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
- 
+Read this article to understand the following:
 
-<!--- what does this build on? what should they read before reading this? 
-- Moving from On-premises to inherited 
-- Understand differences 
-- How rules are evaluated 
-- --> 
- 
-Why read this - 
+- Auto-generated rules 
+- The different types of custom rules you can apply 
+- Restrictions placed on definition of custom rules on system fields
+- How rules are evaluated
+- Difference between rules defined for an Inheritance process versus an On-premises XML process
+- Why you should minimize the number of custom rules you define 
 
+Prior to defining custom rules, read [Configure and customize Azure Boards](../../../boards/configure-customize.md) to gain a broad understanding of how to customize Azure Boards to meet your business needs. 
+
+For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
 
 > [!TIP]    
 > Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
@@ -40,7 +41,7 @@ Why read this -
 
 ## Auto-generated rules 
 
-Auto-generated rules  minimize the need to add custom rules for areas that should work in a standard way. 
+Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. 
 
 
 ### State transition rules
@@ -183,7 +184,7 @@ As an example, you can make a field required based on the value assigned to the 
 
 The On-premises XML process defines rules using XML elements. All of these rule elements can be defined within the `FIELD` definition of a work item type definition. And, with the exception of the `HELPTEXT` element, you can specify these rules to take affect during a workflow transition or as child elements within a `FIELD` (Global workflow) element.
 
-![Work item tracking XML element field rules](../../../reference/xml/media/apply-rule-work-item-field/IC757527.png) 
+![Work item tracking XML element field rules](media/rules/IC757527.png) 
 
 > [!NOTE]   
 > For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
@@ -249,22 +250,26 @@ Work item rules do not exist as a single collection. The rules are actually dyna
 
 ## System fields and custom rules
 
-System fields have System.*Name* reference names, for example **System.Title** and **System.State**. The rule engine restricts setting conditions or actions to system fields except as follows: 
+System fields have System.*Name* reference names, for example **System.Title** and **System.State**. 
 
-- You can make State and Reason fields read-only. 
-- You can apply most rules to the Title, Assigned To, Description, and Changed By fields. 
+The following system fields are required to have a value: **Area ID**, **Changed Date**, **Created Date**, **Created By**, **State**, and **Reason**. 
 
-If you don't see a field listed in the drop-down menu of the rule user interface, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection.  Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
+The rule engine restricts setting conditions or actions to system fields except as follows: 
+
+- You can make **State** and **Reason** fields read-only. 
+- You can apply most rules to the **Title**, **Assigned To**, **Description**, and **Changed By** fields. 
+
+If you don't see a field listed in the drop-down menu of the rule user interface for the Inheritance process, this is why. For example, if you try to make **Area Path** (System.AreaPath) read-only based on a condition, the Area Path field isn't available for selection. Even if you're able to specify a system field, the rule engine may restrict you from saving the rule. 
  
 
 <a id="clear" /> 
 
-## Assign a value to a field 
+## Default and copy rules 
 
-Assign a value to a field rules define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
+Default and copy rules modify the values of work item fields. They define run-time behavior and constraints, such as specifying default values, clearing fields, requiring fields to be defined, and more. 
 
 ::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
-Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
 
 # [Inheritance process](#tab/inheritance)
@@ -336,7 +341,7 @@ These rules support setting defaults, copying values from one field to another, 
       `DEFAULT`
    :::column-end:::
    :::column span="3":::
-      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  
+      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  Default rules execute only if the `Is` value of the field is currently empty. Supported values include the current time (`from = "clock"`), the current user (`from = "currentuser"`), a literal value (`from = "value"  value = "literal"`), or the value of another field (`from = field ` field = "referenceNameField").
       > [!div class="tabbedCodeSnippets"]  
       > ```XML  
       > <FIELD refname="MyCorp.Priority" name="Priority" type="String" 
@@ -349,36 +354,6 @@ These rules support setting defaults, copying values from one field to another, 
       > <DEFAULT from="value" value="P3"/ 
       > </FIELD 
       ```  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      `EMPTY`
-   :::column-end:::
-   :::column span="3":::
-      Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
-      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
-      > [!div class="tabbedCodeSnippets"]  
-      > ```XML  
-      > <FIELD refname="MyCorp.SubStatus" />  
-      >    <WHEN field="MyCorp.Status" value="Approve" >  
-      >      <EMPTY />
-      >    </WHEN>  
-      > </FIELD>  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      `MATCH`
-   :::column-end:::
-   :::column span="3":::
-      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
-      > [!div class="tabbedCodeSnippets"]  
-      > ```XML  
-      > <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
-      >    <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
-      > </FIELD>
-      > ```  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -421,20 +396,20 @@ These rules support setting defaults, copying values from one field to another, 
 
 <a id="require" /> 
 
-## Restrict a value to a field  
+## Constraint rules
 
-You can apply custom rules to restrict changing the value of a field.  Most of these rule actions can be applied with the selection of any condition.   
+Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field and in general can operate on both the previous and current values of a field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
  
 ::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
-Also, you can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
+You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
 ::: moniker-end
  
 # [Inheritance process](#tab/inheritance)
 
-
+Most of these rule actions can be applied with the selection of any condition.
 :::row:::
    :::column span="2":::
-      **Inherited action**
+      **Inherited process action**
    :::column-end:::
    :::column span="3":::
       **Description**
@@ -483,6 +458,14 @@ Also, you can restrict application of these rules based on the current user's gr
 :::row-end:::  
 :::row:::
    :::column span="1":::
+      `ALLOWEDVALUES`
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       `CANNOTLOSEVALUE`
    :::column-end:::
    :::column span="3":::
@@ -511,6 +494,36 @@ Also, you can restrict application of these rules based on the current user's gr
 :::row-end:::  
 :::row:::
    :::column span="1":::
+      `EMPTY`
+   :::column-end:::
+   :::column span="3":::
+      Clears the field of any value that it contains and then makes the field read-only when a user saves the work item. You shouldn't use `EMPTY` with `READONLY`.  
+      `EMPTY` is primarily used [during state transition](../../../reference/xml/transition-xml-element.md) to clear fields that apply to the state to which the item is transitioning.  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.SubStatus" />  
+      >    <WHEN field="MyCorp.Status" value="Approve" >  
+      >      <EMPTY />
+      >    </WHEN>  
+      > </FIELD>  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `MATCH`
+   :::column-end:::
+   :::column span="3":::
+      Forces entries made to a String field to conform to a [specified pattern of characters or numbers](../../../reference/xml/apply-pattern-matching-to-string-field.md). If you define multiple `MATCH` elements, the value is considered valid if it matches any of the patterns that you specify. If at least one element succeeds, the field has a valid value.  
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.GitHubURL" name="GitHub URL" type="String">  
+      >    <MATCH pattern="https:\/\/github\.com\/\S+[\.md|\.yml]$"/>  
+      > </FIELD>
+      > ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       `NOTSAMEAS`
    :::column-end:::
    :::column span="3":::
@@ -523,6 +536,14 @@ Also, you can restrict application of these rules based on the current user's gr
       > ```  
    :::column-end:::
 :::row-end:::  
+:::row:::
+   :::column span="1":::
+      `PROHIBITEDVALUES`
+   :::column-end:::
+   :::column span="3":::
+      Defines a list of prohibited values for the field. If multiple `ALLOWEDVALUES` and/or `PROHIBITEDVALUES` rules apply to a particular field, the full list of valid values is the intersection of all allowed values lists&mdash;or everything, if there are no allowed values lists&mdash;minus&mdash;that is, set difference&mdash;the union of all prohibited values lists.
+   :::column-end:::
+:::row-end::: 
 :::row:::
    :::column span="1":::
       `READONLY`
@@ -553,7 +574,22 @@ Also, you can restrict application of these rules based on the current user's gr
       > ```  
    :::column-end:::
 :::row-end:::  
- 
+::: moniker range="<= tfs-2015"
+:::row:::
+   :::column span="1":::
+      `VALIDUSER`
+   :::column-end:::
+   :::column span="3":::
+      The value of the field must be a user or group within the specified group, or within the full list of valid users if no group is specified.
+      > [!div class="tabbedCodeSnippets"]  
+      > ```XML  
+      > <FIELD refname="MyCorp.ChangedBy" name="Custom Changed By" type="String">  
+      >     <VALIDUSER group="[Project]\Contributor Leads"/>  
+      > </FIELD> 
+      > ```  
+   :::column-end:::
+:::row-end:::  
+::: moniker-end
 ---  
 
 
@@ -668,8 +704,7 @@ To avoid validation errors that would otherwise occur when members leave the tea
 
 ## Conditional field values or changes 
 
-Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field.  
- 
+Conditional rules specify an action based on the value of a field equaling or not equaling a specific value, or if a change was or wasn't made to the value of a specific field. In general, conditional rules are applied first over unconditional rules. When multiple conditional rules evaluate to true, the order of execution is: When, WhenNot, WhenChanged, WhenNotChanged. 
  
 # [Inheritance process](#tab/inheritance)
  
@@ -685,7 +720,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 :::row-end:::  
 :::row:::
    :::column span="2":::
-      `The value of ... (equals)`  
+      `The value of ... (equals)` [When] 
    :::column-end:::
    :::column span="3":::
       Specifies one or more rules to apply to the current field when another field has a specific value.
@@ -693,7 +728,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 :::row-end:::  
 :::row:::
    :::column span="2":::
-       `A change was made to the value of ...`  
+       `A change was made to the value of ...`  [WhenChanged] 
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when a specific field's value is changed.
@@ -701,7 +736,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 :::row-end:::  
 :::row:::
    :::column span="2":::
-       `The value of ... (not equals)`  
+       `The value of ... (not equals)`  [WhenNot] 
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when another field does not have a specific value.
@@ -709,7 +744,7 @@ You can specify multiple conditional rules per field. However, you can only spec
 :::row-end:::  
 :::row:::
    :::column span="2":::
-       `No change was made to the value of ...`  
+       `No change was made to the value of ...`  [WhenNotChanged] 
    :::column-end:::
    :::column span="3":::
       Applies one or more rules to the current field when a specific field's value is not changed.
@@ -991,6 +1026,9 @@ To avoid problems with users updating work items from various clients, specify A
 
 ## Order in which rules are evaluated 
 
+#### [Inheritance process](#tab/inheritance) 
+
+
 Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
 
 You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
@@ -999,7 +1037,46 @@ The following steps show, in the correct sequence, the interactions that Azure D
 
 1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
-2.  Fill in field defaults. For all fields, use any **DEFAULT** rules that are outside **WHEN** rules.
+2.  Fill in field defaults. For all fields, apply any **DEFAULT** rules that are outside **WHEN** conditional rules.
+
+3.  Copy field values. For all fields, apply any **COPY** rules that are outside **WHEN** conditional clauses.
+
+4.  For all fields with a **WHEN** conditional rule that matches, first apply **DEFAULT** and then **COPY** rules inside.
+
+5.  For all fields with a **WHENNOT** conditional rule that matches, first apply **DEFAULT** and then **COPY** rules inside.
+
+    The system always processes **WHEN** rules before **WHENNOT** rules. 
+
+6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first apply **DEFAULT** and then **COPY** rules inside.
+
+7.  Allow the user to start editing. 
+
+8.  The user changes a field value and then moves focus from the field.
+
+9.  Raise any **WHEN** rules for that field that match the new value.
+
+10. Raise any **WHENNOT** rules for that field that match the new value.
+
+11. Raise any **WHENCHANGED** rules for that field that match the new value.
+
+12. Return editing ability to the user.
+
+13. The user saves the changes to the database.
+
+14. For all fields, perform **SERVERDEFAULT** operations that are defined for the field either directly or indirectly under a **WHEN** or a **WHENNOT** rule.
+
+#### [On-premises XML process](#tab/on-premises)
+
+
+Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
+
+You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
+
+The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
+
+1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
+
+2.  Fill in field defaults. For all fields, apply any **DEFAULT** rules specified outside or **WHEN** rules.
 
 3.  Copy field values. For all fields, use any **COPY** rules that are outside **WHEN** clauses.
 
@@ -1042,6 +1119,11 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 > </FIELD>
 > ```
 
+--- 
+
+## Bypass mode
+
+In general, all work items are validated by the rule engine when users modify the work item. 
 
 ## Related articles
 
@@ -1050,7 +1132,7 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 - [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md)
 - [Permissions and groups](../../security/permissions.md)
 - **Inherited process**  
-	- [Add a rule to a work item type](custom-rules.md)
+	- [Add a custom rule to a work item type](custom-rules.md)
 	- [Apply rules to workflow states](apply-rules-to-workflow-states.md)
 - **On-premises XML process**  
 	- [Define a default value or copy a value to a field](../../../reference/xml/define-default-copy-value-field.md)
