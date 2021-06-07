@@ -10,7 +10,7 @@ ms.topic: include
 
 You may organize your Azure DevOps project to host many sub-projects - each with its own Azure DevOps Git repository and one or more pipelines. In this structure, you may want to control which pipelines can access which repositories. For example, let us say that you have two repositories A and B in the same project and two pipelines X and Y that normally build these repositories. You may want to prevent pipeline Y from accessing repository A. In general, you want the contributors of A to control which pipelines they want to provide access to.
 
-While this was partially possible with Azure Git repositories and pipelines, there was no experience for managing it. This feature addresses that gap. Azure Git repositories can now be treated as [protected resources](https://docs.microsoft.com/azure/devops/pipelines/security/resources?view=azure-devops) in YAML pipelines, just like service connections and agent pools.
+While this was partially possible with Azure Git repositories and pipelines, there was no experience for managing it. This feature addresses that gap. Azure Git repositories can now be treated as [protected resources](/azure/devops/pipelines/security/resources?view=azure-devops) in YAML pipelines, just like service connections and agent pools.
 
 As a contributor of repo A, you can add checks and pipeline permissions to your repository. To do this, navigate to the project settings, select Repositories, and then your repository. You will notice a new menu called "Checks", where you can configure any of the in-the-box or custom checks in the form of Azure functions. 
 
