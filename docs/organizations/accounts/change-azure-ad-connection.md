@@ -57,7 +57,7 @@ Do the following task:
 
 6. Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
 
-7. If some members are disconnected, sign back in to Azure DevOps and map them to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](/azure/devops/organizations/accounts/faq-azure-access#faq-connect).
+7. If some members are disconnected, sign back in to Azure DevOps and map them to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](./faq-azure-access.yml#faq-connect).
 
    ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
@@ -132,4 +132,4 @@ If the UPN used inside your organization changed, adjust your Visual Studio subs
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/azure/devops/organizations/accounts/faq-azure-access#connect-to-disconnect-from-or-change-azure-ad-connection)
+- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](./faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

@@ -97,7 +97,7 @@ sections:
           
           ## Create an organization
 
-          For more information, see [Plan your Azure DevOps organization structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops).
+          For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md?view=azure-devops).
 
       - question: |
           Q: How many organizations can I create?
