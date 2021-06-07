@@ -101,7 +101,7 @@ In the following example, we will configure permissions for variable groups.
 
     :::image type="content" source="media/set-build-release-permissions/open-variable-group-all-security.png" alt-text="Library - variable groups":::
 
-   If you want to manage the permissions for a specific variable group, then select the ellipsis for that variable group and then select **Security**.
+   If you want to manage the permissions for a specific variable group, select the ellipsis for that variable group and then select **Security**.
 
     :::image type="content" source="media/set-build-release-permissions/open-variable-group-specific-security.png" alt-text="Configure permission for one variable group":::
 
@@ -119,24 +119,19 @@ In the following example, we will configure permissions for variable groups.
 
 ## Manage task group permissions
 
-Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of **Azure Pipelines**.
+Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task.
 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.
+1. From within your project, select **Build and Release**, and then select **Task groups**.
 
-1. From the web portal **Build-Release** hub, **Task groups** page, open the Security dialog for all task groups.
+    :::image type="content" source="media/set-build-release-permissions/open-task-group-all-security.png" alt-text="access task groups permissions":::
 
-   ![Open the Security dialog for all task groups](media/set-build-release-permissions/open-task-group-all-security.png) 
-
-   If you want to manage the permissions for a specific task group, then open the Security dialog for that group.
+   If you want to manage the permissions for a specific task group, select the ellipsis for that task group and then select **Security**.
 
 1. Add the user or group and then set the permissions you want them to have.
 
-   For example, here we add Raisa and set her permissions to Administer all task groups.
+    :::image type="content" source="media/set-build-release-permissions/task-group-security-dialog.png" alt-text="Set up task groups permissions":::
 
-   ![Set task group permissions](media/set-build-release-permissions/task-group-security-dialog.png) 
-
-1. Click **Add**.
+1. Select **Save changes** when you are done.
 
 ::: moniker-end
 
@@ -144,17 +139,15 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 <a id="collection-level" /> 
 
-## Set collection-level permissions to administer build resources
+## Manage permissions for build administrators group
  
-1. From the web portal user context, open the admin context by clicking the ![gear icon](../../media/icons/gear_icon.png) gear Settings icon and choosing **Organization settings** or **Collection settings**.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Collection settings**.
 
-1. Click **Security**, and then choose the group whose permissions you want to modify.
+1. Select **Security**, and then select **Project Collection Build Administrators**. In this example, we want to allow the usage of build resources. 
 
-   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissions](../../organizations/security/permissions.md#collection-level).
+    :::image type="content" source="media/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt-text="Configure the build administrators group permissions":::
 
-   <img src="media/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
-
-1. Save your changes.
+1. Select **Save changes** when you are done.
 
 ::: moniker-end
 
