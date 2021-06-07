@@ -1044,7 +1044,7 @@ Rules are typically processed in the sequence in which they are listed. However,
 
 This section describes the expected behavior and interactions when you apply conditional, copy, and default rules. 
 
-#### [Inheritance process](#tab/inheritance) 
+# [Inheritance process](#tab/inheritance)
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
@@ -1078,7 +1078,7 @@ The following steps show, in the correct sequence, the interactions that Azure D
 
 14. For all fields, apply any `Use the current time to set the value of ...` actions that are defined for the field either directly or indirectly under a  conditional rule.
 
-#### [On-premises XML process](#tab/on-premises)
+# [On-premises XML process](#tab/on-premises)
 
 Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply. The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
