@@ -22,7 +22,7 @@ Each new project is configured with a default team with the project name. You ca
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
+> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/devops/plan/scaling-agile) article.
 
 <a id="add-team"> </a>  
 
@@ -333,7 +333,7 @@ az devops team create --name Web --project "Fabrikam Fiber"
   "name": "Web",
   "projectId": "56af920d-393b-4236-9a07-24439ccaa85c",
   "projectName": "Fabrikam Fiber",
-  "url": "https://dev.azure.com/kelliott/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/5385556a-254d-4ad4-bd11-71955e3a7070"
+  "url": "https://dev.azure.com/fabrikam/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/5385556a-254d-4ad4-bd11-71955e3a7070"
 }
 ```
 ::: moniker-end
@@ -455,13 +455,13 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
     "System.AssignedTo": {
       "_links": {
         "avatar": {
-          "href": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw"
+          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw"
         }
       },
       "descriptor": "msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw",
       "displayName": "Raisa Pokrovskaya",
       "id": "bd30c189-db0f-4dd6-9418-5d8b41dc1754",
-      "imageUrl": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw",
+      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw",
       "uniqueName": "fabrikamfiber5@hotmail.com",
       "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/bd30c189-db0f-4dd6-9418-5d8b41dc1754"
     },
@@ -470,13 +470,13 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
     "System.ChangedBy": {
       "_links": {
         "avatar": {
-          "href": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
+          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
         }
       },
       "descriptor": "msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
       "displayName": "Kathryn",
       "id": "a0f9fe47-8a0a-438c-adfb-403c69664618",
-      "imageUrl": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
+      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
       "uniqueName": "kebelliott@msn.com",
       "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/a0f9fe47-8a0a-438c-adfb-403c69664618"
     },
@@ -485,13 +485,13 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
     "System.CreatedBy": {
       "_links": {
         "avatar": {
-          "href": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
+          "href": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk"
         }
       },
       "descriptor": "msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
       "displayName": "Kathryn",
       "id": "a0f9fe47-8a0a-438c-adfb-403c69664618",
-      "imageUrl": "https://dev.azure.com/kelliott/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
+      "imageUrl": "https://dev.azure.com/fabrikam/_apis/GraphProfile/MemberAvatars/msa.MmZhZDE3ZDAtMjRmZi03YjY5LWE5ZTUtMzYxMzQwOTZlNzNk",
       "uniqueName": "kebelliott@msn.com",
       "url": "https://spsprodeus21.vssps.visualstudio.com/A380ed149-33d0-4d78-a7ed-89921802f389/_apis/Identities/a0f9fe47-8a0a-438c-adfb-403c69664618"
     },
@@ -521,7 +521,7 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
         "name": "Parent"
       },
       "rel": "System.LinkTypes.Hierarchy-Reverse",
-      "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/546"
+      "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/546"
     },
     {
       "attributes": {
@@ -529,11 +529,11 @@ az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Emai
         "name": "Child"
       },
       "rel": "System.LinkTypes.Hierarchy-Forward",
-      "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/374"
+      "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/374"
     }
   ],
   "rev": 24,
-  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/487"
+  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/workItems/487"
 }
 
 ```

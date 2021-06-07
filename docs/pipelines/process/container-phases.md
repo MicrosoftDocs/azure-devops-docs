@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 06/02/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -140,7 +140,7 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 container:
-  image: myprivate/registry:ubuntu1604
+  image: registry:ubuntu1604
   endpoint: private_dockerhub_connection
 
 steps:
@@ -233,8 +233,8 @@ bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
 You are responsible for adding a Node binary to your container.
-Node 6 is a safe choice.
-You can start from the `node:6-alpine` image.
+Node 14 is a safe choice.
+You can start from the `node:14-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".

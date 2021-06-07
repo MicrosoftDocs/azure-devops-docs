@@ -237,7 +237,7 @@ For details on supported Markdown features, see the following articles.
 
 - [Agile culture](agile-culture.md)  
 - [Practices that scale](practices-that-scale.md)  
-- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- [Scale Agile to Large Teams](/devops/plan/scaling-agile)
 
 
 

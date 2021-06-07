@@ -182,6 +182,8 @@ In addition to the query filters, you can [interactively apply filters to query 
 :::row-end:::
 ---
 
+In addition to the filters you use from the Query Editor, you can interactively filter a query result using the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **Filter** function. To learn how, see [Interactively filter backlogs, boards, queries, and plans](../backlogs/filter-backlogs-boards-plans.md).
+
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 

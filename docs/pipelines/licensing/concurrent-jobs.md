@@ -38,7 +38,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
 > [!NOTE]
-> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected.
+> We have temporarily disabled the free grant of parallel jobs for public projects and for certain private projects in new organizations. However, you can request this grant by sending an email to azpipelines-freetier@microsoft.com. Existing organizations and projects are not affected. Please note that it takes us 2-3 business days to respond to your free tier requests.
 
 ## What is a parallel job? 
 
@@ -73,6 +73,9 @@ To request the free grant for public or private projects, send an email to azpip
 - Whether you need the free grant for public projects or private projects
 - (Public projects only) Links to public repositories that you plan to build
 - (Public projects only) A brief description of your project
+
+> [!NOTE] 
+> It takes us 2-3 business days to respond to your free tier request.
 
 There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects.
 

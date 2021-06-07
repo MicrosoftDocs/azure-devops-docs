@@ -37,8 +37,8 @@ By using gates, approvals, and manual intervention you can take full control of 
 | A team wants to ensure there are no active issues in the work item or problem management system before deploying a build to a stage.  | [Pre-deployment gates](gates.md) |
 | A team wants to ensure there are no reported incidents after deployment, before triggering a release. | [Post-deployment gates](gates.md) |
 | After deployment, a team wants to wait for a specified time before prompting users to sign out. | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
-| During deployment, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#view-approvals)| 
-| During deployment, a team wants to prompt users to enter a value for a parameter used by the deployment tasks, or allow users to edit the release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#view-approvals) | 
+| During deployment, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation)| 
+| During deployment, a team wants to prompt users to enter a value for a parameter used by the deployment tasks, or allow users to edit the release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../deploy-using-approvals.md#set-up-manual-validation) | 
 | During deployment, a team wants to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.

@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 [!INCLUDE [temp](../includes/version-all.md)]
 
 > [!NOTE] 
-> Are you new to Agile? Learn more about [Agile Culture](/azure/devops/learn/agile/agile-culture) and [Scaling Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams).
+> Are you new to Agile? Learn more about [Agile Culture](/devops/plan/adopting-agile) and [Scaling Agile to Large Teams](/devops/plan/scaling-agile).
 
 As your team grows, you want your tools to grow with it. And, if you're an enterprise adopting Agile methodologies, you want your Agile tools to support the business objectives of your enterprise.  
 
