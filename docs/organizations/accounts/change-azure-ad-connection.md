@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2020
+ms.date: 06/07/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -23,10 +23,14 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 ## Prerequisites
 
 Before you switch your organization directory, make sure the following statements are true:
-- You're in the Project Collection Administrator group (in Organization settings) for the organization 
-- You're a member or a guest in the source Azure AD and in the destination Azure AD
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help changing your Azure AD. 
 
+- You're in the Project Collection Administrator group (in Organization settings) for the organization.
+- You're a member or a guest in the source Azure AD and in the destination Azure AD.
+- There are 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with changing your Azure AD.
+
+Do the following task:
+
+- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/). You can find the steps for how to recreate SSH keys [further in this article](#inform-users-of-the-completed-change).
 
 ## Change the Azure AD connection
 
@@ -63,41 +67,64 @@ Before you switch your organization directory, make sure the following statement
 
 When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
 
-- Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine. 
-- [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
+- [Change your organization connection to another Azure AD](#change-your-organization-connection-to-another-azure-ad)
+  - [Prerequisites](#prerequisites)
+  - [Change the Azure AD connection](#change-the-azure-ad-connection)
+  - [Inform users of the completed change](#inform-users-of-the-completed-change)
+    - [Clear cache for Git Credential Manager](#clear-cache-for-git-credential-manager)
+    - [Regenerate new PATs](#regenerate-new-pats)
+    - [Recreate SSH keys](#recreate-ssh-keys)
+    - [Rename your MSA](#rename-your-msa)
+    - [Adjust your VS subscription](#adjust-your-vs-subscription)
+  - [Related articles](#related-articles)
 
-    a. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
+### Clear cache for Git Credential Manager
 
-     ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
+If you use Visual Studio or the Git command-line too, clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory). Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine.
 
-    b. Select **Personal access tokens**, and then select **New Token**.
-    
-     ![Select New Token to create](media/shared/select-personal-access-tokens-new-token.png)
+### Regenerate new PATs
 
-    c. Complete the form, and then select **Create**.
+Complete the following steps to [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md).
 
-     ![Create new token](media/shared/create-new-personal-access-token.png)
+1. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
 
-    d. When the token is created, copy it, as it can't be viewed again.
+   ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 
-- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
+2. Select **Personal access tokens**, and then select **New Token**.
 
-    a. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
+   ![Select New Token to create](media/shared/select-personal-access-tokens-new-token.png)
 
-     ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
+3. Complete the form, and then select **Create**.
 
-    b. Select **SSH public keys**, and then select **Add**.
+   ![Create new token](media/shared/create-new-personal-access-token.png)
 
-     ![Screenshot that shows adding a SSH public key.](media/shared/user-settings-security-ssh.png)
+4. When the token is created, copy it, as it can't be viewed again.
 
-    c. Enter a description and key data, and then select **Save**.
+### Recreate SSH keys
 
-     ![Add info to create SSH key](media/shared/add-ssh-public-key-info.png)
+Complete the following steps to recreate your SSH keys.
 
-    d. When the token is created, copy it, as it can't be viewed again.
+1. In Azure DevOps, open your **profile**, and then select **Security** from the resulting dropdown menu.
 
-- [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+   ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
+
+2. Select **SSH public keys**, and then select **Add**.
+
+   ![Screenshot that shows adding a SSH public key.](media/shared/user-settings-security-ssh.png)
+
+3. Enter a description and key data, and then select **Save**.
+
+   ![Add info to create SSH key](media/shared/add-ssh-public-key-info.png)
+
+4. Cope your token, as it can't be viewed again.
+
+### Rename your MSA
+
+[Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
+
+### Adjust your VS subscription
+
+If the UPN used inside your organization changed, adjust your Visual Studio subscription. You can reassign the subscription to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 
