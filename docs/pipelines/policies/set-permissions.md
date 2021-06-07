@@ -191,7 +191,7 @@ In the following example, we will add an Administrator role to all deployment po
 
 1. Add the user or group and choose the role you want them to have.
 
-:::image type="content" source="media/manage-roles/add-user-role-deployment-pool.png" alt-text="Add an administrator to all deployment pools":::
+    :::image type="content" source="media/manage-roles/add-user-role-deployment-pool.png" alt-text="Add an administrator to all deployment pools":::
 
 1. Select **Add** when you are done.  
 
