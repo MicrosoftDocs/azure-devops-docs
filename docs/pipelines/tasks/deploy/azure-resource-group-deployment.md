@@ -83,7 +83,7 @@ Besides enabling CORS, ensure that the SAS token specified in the link of the te
 
 #### Azure Pipelines Agent
 
-If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. For more information, see [Specify jobs in your pipeline](/process/phases.md).
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. For more information, see [Specify jobs in your pipeline](../../process/phases.md).
 
 #### Portal Deployment
 
