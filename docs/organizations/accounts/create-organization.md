@@ -8,7 +8,7 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 06-07/2021
+ms.date: 06/07/2021
 monikerRange: '<= azure-devops'
 ---
 
