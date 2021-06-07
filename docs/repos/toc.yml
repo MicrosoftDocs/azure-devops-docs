@@ -40,18 +40,16 @@
     href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
     href: /previous-versions/azure/devops/java/download-intellij-plug-in
-- name: Azure DevOps Learn
+- name: DevOps Resource Center
   items:
-  - name: Learn Git
-    href: /azure/devops/learn/git/learn-git-with-team-services/
-  - name: Git at Scale
-    href: /azure/devops/learn/git/git-at-scale
+  - name: Selecting a development environment
+    href: /devops/develop/selecting-development-environment
   - name: How we use Git at Microsoft
-    href: /azure/devops/learn/devops-at-microsoft/use-git-microsoft
+    href: /devops/develop/how-microsoft-develops-devops
   - name: Plan your migration to Git
-    href: /azure/devops/learn/git/centralized-to-git
+    href: /devops/develop/git/centralized-to-git
   - name: Migrate from TFVC to Git
-    href: /azure/devops/learn/git/migrate-from-tfvc-to-git
+    href: /devops/develop/git/migrate-from-tfvc-to-git
   - name: Migrate from Subversion (SVN) to Git
     href: git/perform-migration-from-svn-to-git.md
 - name: Resources

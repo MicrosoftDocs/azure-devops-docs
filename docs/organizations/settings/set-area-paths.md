@@ -6,9 +6,9 @@ ms.technology: devops-agile
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 10/22/2020
+ms.date: 05/24/2021
 ---
 
 # Define area paths and assign to a team
@@ -18,16 +18,9 @@ ms.date: 10/22/2020
 
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
 
-> [!NOTE] 
-> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/boards/iteration).
-
-Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
-
-New projects contain a single, root area that corresponds to the project name. A team is created with the same project name and the root area path is assigned to that team.  
+[!INCLUDE [temp](../../boards/includes/list-area-dependent-tools-tasks.md)] 
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
-
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Prerequisites
 
@@ -35,8 +28,7 @@ To understand how the system uses area paths, see [About area and iteration path
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
 - Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:
-
+- Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:   
     - **Create child nodes**
     - **Delete this node**
     - **Edit this node**
@@ -50,6 +42,10 @@ For naming restrictions on area paths, see [About areas and iterations, Naming r
 <a id="guidance" />
 
 ## Get started
+
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
+
+New projects contain a single, root area that corresponds to the project name. A team is created with the same project name and the root area path is assigned to that team.  
 
 If you're new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows:
 
@@ -79,6 +75,9 @@ As needed, you can do the following actions at any time:
 <a id="open-project-settings" />
 <a id="open-admin-context" />
 <a id="admin-intro-team-services" />
+
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Open Project Settings, list project areas
 
@@ -285,7 +284,7 @@ az boards area project create --name Voice --project "Fabrikam Fiber"
   "name": "Voice",
   "path": "\\Fabrikam Fiber\\Area\\Voice",
   "structureType": "area",
-  "url": "https://dev.azure.com/kelliott/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Areas/Voice"
+  "url": "https://dev.azure.com/fabrikam/56af920d-393b-4236-9a07-24439ccaa85c/_apis/wit/classificationNodes/Areas/Voice"
 }
 ```
 
@@ -698,6 +697,8 @@ As you can see, area paths play a major role in supporting Agile tools, teams, a
 
 
 ### Programmatic resources
+
+Area paths and iteration paths are also referred to as *Classification Nodes*. 
 
 ::: moniker range=">= azure-devops-2020"
 - [az boards area (Azure DevOps CLI)](/cli/azure/boards/area)

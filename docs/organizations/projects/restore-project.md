@@ -1,5 +1,5 @@
 ---
-title: Restore a project
+title: Restore project
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, contperf-fy21q4
 description: Restore a recently deleted project in Azure DevOps.
@@ -102,7 +102,7 @@ To restore a project, you must have the "delete project" permission set to **All
 
    Request body
    ``
-
+   
    {
     "state" : "wellFormed"
    }
@@ -122,6 +122,7 @@ To restore a project, you must have the "delete project" permission set to **All
    ![PowerShell script return example for deleted projects](media/restore-project/deleted-projects-powershell-script-2019.png)
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
+
 
    ``
 

@@ -73,3 +73,19 @@ If you use multiple publish code coverage tasks in the pipeline, the summary and
 
 [!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]
 
+
+## Known issues
+
+The publish code coverage results task generates and publishes the HTML report, a set of HTML files that are linked from the main *index.html* file. If the code coverage tab fails to show the code coverage report, check whether the size of the *index.html* file is close to or larger than 7 MB. Complete the following steps to check the size of the file. Then, if the file size is close to or larger than 7 MB, you can use the following workaround to view the coverage report:
+
+1. Select the build **Summary** tab, and then select the **published** link:
+
+   ![Screenshot that shows the published link in the Summary pane.](media/publish-code-coverage-result-build-summary.png)
+
+2. Next to the *Code Coverage Report_\** artifact, select **Download artifacts**:
+
+   ![Screenshot that shows the Download artifacts link for the code coverage report under Artifacts.](media/publish-code-coverage-result-build-artifacts.png)
+
+3. When the code coverage report is downloaded, extract the .zip file.
+4. In the code coverage report, check the size of *index.html* to help determine whether the file size is causing the issue described here.
+5. Open *index.html* in a browser to view the code coverage report.

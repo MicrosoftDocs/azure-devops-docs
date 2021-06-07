@@ -3,10 +3,13 @@
   href: index.yml
 - name: About settings
   href: ./settings/about-settings.md
+  displayName: configure, role, administrator, manage
 - name: Search settings
   href: ./settings/search-settings.md
+  displayName: organization, keyword, notification
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  displayName: add, grant, restrict, user, permission, policies, define, customize, review, update
 - name: Time zone settings
   href: ./settings/timezone-settings-usage.md
   displayName: timezone, organization
@@ -18,18 +21,25 @@
   items:
   - name: Set user preferences
     href: ./settings/set-your-preferences.md
+    displayName: profile, settings, picture, display name, email, directory, locale
   - name: Manage or enable features
     href: ../project/navigation/preview-features.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: turn, on, off, organization
   - name: Set personal favorites
     href: ../project/navigation/set-favorites.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: project, team, backlog, dashboard, view, query, repository, pipeline, test plan
   - name: Personal access tokens
     href: ./accounts/use-personal-access-tokens-to-authenticate.md
+    displayName: alternate, password, create, modify, revoke
   - name: SSH public keys
     href: ../repos/git/use-ssh-keys-to-authenticate.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: Git, repo, repository, encription, public, private, configure
   - name: Alternate credentials
     href: ../repos/git/auth-overview.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json#ssh-key-authentication
+    displayName: Git, repository, HTTPS, SSH, OAuth, PATs
   - name: Manage authorizations
     href: ./settings/manage-authorizations.md
+    displayName: OAuth, services, access
 - name: Organizations
   href: ../organizations/accounts/toc.yml
 - name: Projects
@@ -44,56 +54,74 @@
   items:
   - name: Usage & rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: consumption, Pipelines, API, monitor
   - name: Monitor usage
     href: ./accounts/usage-monitoring.md
+    displayName: delayed, exceeded, thresholds, requests, monitoring
   - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
+    displayName: maximum, hard, practical, backlogs, boards, teams, items, queries
 - name: Extensions
   items:
   - name: Install extensions
     href: ../marketplace/install-extension.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: Marketplace, organization, features, private
   - name: Request and approve extensions
     href: ../marketplace/request-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: contributor, administrator, permission, assign
 - name: Pipelines (Build & release)
   items:
   - name: Agent pools & queues
     href: ../pipelines/agents/pools-queues.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: organization, share, configure, settings, security
   - name: Parallel jobs 
     href: ../pipelines/licensing/concurrent-jobs.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: configure, pay, hosted, cost, charge
   - name: Retention & limits
     href: ../pipelines/policies/retention.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: builds, releases, test, settings, store, storage, runs
   - name: Test Management (Flaky tests)   
     href: ../pipelines/test/flaky-test-management.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: detect, report, resolve, enable, reporting
   - name: Service connections (endpoints)
     href: ../pipelines/library/service-endpoints.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: external, remote, services, jobs, settings, permissions, create, manage, secure
   - name: Deployment pools & groups
     href: ../pipelines/release/deployment-groups/index.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    displayName: target, machine, dev, test, UAT, production, agent
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
     href: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: project, repo, clone, add
   - name: Manage Git repository permissions
     href: ../repos/git/set-git-repository-permissions.md
+    displayName: security, grant, restrict, access, enable, disable, change
   - name: Manage Git branch policies
     href: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: settings, access, security, configure, validate
   - name: Manage TFVC repository permissions
     href: ../repos/tfvc/set-tfvc-repository-permissions.md
+    displayName: settings, repo, access, security, configure
   - name: Add TFVC Check-In Policies
     href: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: settings, policies, builds, code, analysis
 - name: Test
   items:
   - name: Set test retention policies
     href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: results, manual, automated, control, build, pipeline
 - name: Artifacts
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    displayName: billing, start, sign, up, artifacts
 - name: Reference
   items:
   - name: Naming restrictions
-    href: settings/naming-restrictions.md 
+    href: settings/naming-restrictions.md
   - name: Work tracking object limits
-    href: settings/work/object-limits.md 
+    href: settings/work/object-limits.md
 - name: REST API reference
   items:
   - name: Notifications
@@ -106,19 +134,19 @@
     href: /rest/api/vsts/core/teams
 - name: Resources
   items:
-  - name: Azure Boards settings  
+  - name: Azure Boards settings
     href: ../reference/index.yml
-  - name: Service hooks 
+  - name: Service hooks
     href: ../service-hooks/overview.md
-  - name: Extensions 
+  - name: Extensions
     href: ../marketplace/overview.md
-  - name: Process 
+  - name: Inheritance process
     href: ./settings/work/inheritance-process-model.md
-  - name: Search  
+  - name: Search
     href: ../project/search/get-started-search.md
-  - name: Get started  
+  - name: Get started
     href: ../get-started/index.yml
-  - name: Marketplace & extensibility  
+  - name: Marketplace & extensibility
     href: ../marketplace-extensibility/index.yml
   - name: Get extensions for Visual Studio
     href: /visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2019#install-or-uninstall-visual-studio-extensions

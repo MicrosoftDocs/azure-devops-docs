@@ -912,6 +912,7 @@ The following table provides descriptions for each of the link type attributes r
 
 - [Link work items to track dependencies](link-work-items-support-traceability.md)    
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Query FAQs](query-faqs.yml)
 - [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
