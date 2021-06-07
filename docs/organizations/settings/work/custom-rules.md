@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 07/09/2020
+ms.date: 06/07/2021
 ---
 
 # Add a rule to a work item type (Inheritance process)
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
-Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values.
+Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values. 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
@@ -144,43 +144,7 @@ For the Inherited process, you can add a rule that restricts state transition. F
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Apply rules to workflow states](apply-rules-to-workflow-states.md)  
+- [Rules and rule evaluation](rule-reference.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
 - [Work item form caching](troubleshoot-work-item-form-caching-issues.md)  
-
-
-<!---
-
-
-
-
-
-
-::: moniker range="azure-devops"
-
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions-cloud.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2020"
-
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-2020.png) | ![list of actions](media/rules/rule-actions-2020.png)
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!div class="mx-tdBreakAll"]  
-> |Supported conditions |Supported actions |
-> |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions-2019.png)
-
-::: moniker-end
-
---> 

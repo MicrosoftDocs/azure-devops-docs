@@ -70,7 +70,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
   
  Additionally, you can optionally use the attributes `for` and `not` in the transition element of workflow to refine who is and who is not able to perform a transition. When you do this, `denies` takes precedence over `allows`. If neither of these attributes is specified, anyone can modify the work item.  
   
- Multiple groups are supported only by creating a parent group and specifying that parent group in the `TRANSITION` element. To learn more about the for and not attributes, see [Apply a field rule](apply-rule-work-item-field.md).  
+ Multiple groups are supported only by creating a parent group and specifying that parent group in the `TRANSITION` element. To learn more about the for and not attributes, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
   
 ## Example, define reasons  
  In the following example, the reasons are defined for the transition from the **Active** to the **Resolved** workflow state.  

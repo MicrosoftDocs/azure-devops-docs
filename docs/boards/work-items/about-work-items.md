@@ -189,7 +189,7 @@ You can grant access to a project by adding security groups that you created in 
 ::: moniker range="<= azure-devops-2019"
 
 > [!NOTE]    
->To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
+>To minimize the list of names that appear in the drop-down menus of person-name fields, you can scope the field to only those groups that you want to appear in the menu. You do this by adding one or more of the following child elements to the **FIELD** definition in the work item type definition: **ALLOWEDVALUES**, **PROHIBITEDVALUES**, and **VALIDUSER**. For details, see [Define pick lists](../../reference/xml/define-pick-lists.md).
 
 ::: moniker-end
 
