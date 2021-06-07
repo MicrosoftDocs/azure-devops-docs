@@ -1,7 +1,7 @@
 ---
 title: Manage wikis via CLI
 titleSuffix: Azure DevOps
-description: Learn how to manage wikis with the command line interface (CLI) in Azure DevOps.
+description: Learn how to manage wikis with the command-line interface (CLI) in Azure DevOps.
 ms.technology: devops-collab
 ms.custom: wiki, devx-track-azurecli
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
-ms.date: 05/26/2021
+ms.date: 06/07/2021
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -18,6 +18,9 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Learn the following CLI commands for managing wikis.
+
+> [!NOTE]
+> You can't delete project wikis with the CLI.
 
 ## Commands
 
@@ -49,7 +52,7 @@ az devops wiki create [--mapped-path]
 
 ### Optional parameters
 
-- **--mapped-path**: [Required for codewiki type] Mapped path of the new wiki e.g. '/' to publish from root of repository.
+- **--mapped-path**: [Required for codewiki type] Mapped path of the new wiki, for example, '/' to publish from root of repository.
 --name: Name of the new wiki.
 - **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **--repository -r**: [Required for codewiki type] Name or ID of the repository to publish the wiki from.
@@ -94,7 +97,7 @@ az devops wiki delete
 - **--wiki**: Required. Name or ID of the wiki to delete.
 - **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-- **--yes -y**: Optional. Do not prompt for confirmation.
+- **--yes -y**: Optional. Don't prompt for confirmation.
 
 ### Example
 
@@ -189,7 +192,7 @@ az devops wiki page create --path
 - **--wiki**: Required. Name or ID of the wiki.
 - **--comment**: Optional. Comment in the commit message of file add operation. Default value: Added a new page using Azure DevOps CLI.
 - **--content**: Optional. Content of the wiki page. Ignored if --file-path is specified.
-- **--encoding**: Optional. Encoding of the file. Used in conjunction with --file-path parameter.
+- **--encoding**: Optional. Encoding of the file. Used with --file-path parameter.
 - **--file-path**: Optional. Path of the file input if content is specified in the file.
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
