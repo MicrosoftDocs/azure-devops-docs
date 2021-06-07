@@ -63,6 +63,8 @@ To restore a project, you must have the "delete project" permission set to **All
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
 
+   :::image type="content" source="../../media/settings/open-admin-settings-server.png" alt-text="Screenshot showing Admin settings button surrounded by red box.":::
+
 3. Select **Projects**, and then scroll down to "recently deleted projects."
 
 4. Highlight the project you want to restore, and then select **Restore**.
