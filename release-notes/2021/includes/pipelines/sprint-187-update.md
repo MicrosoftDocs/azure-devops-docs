@@ -44,7 +44,7 @@ Your build will fail, if the global.json file contains the `rollForward: disable
 
 If the `rollForward` field is not specified in your global.json file, there will be no change for you. The latest installed patch level is used.
 
-If you need to use the exact .NET SDK version that is not the latest patch, please use [`UseDotNet` task](/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) to install it as part of the build:
+If you need to use the exact .NET SDK version that is not the latest patch, please use [`UseDotNet` task](/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer) to install it as part of the build:
 
 ``` YAML
 steps:
@@ -55,7 +55,7 @@ steps:
 ```
 ### Permissions and checks on variable groups and secure files
 
-You can use different types of [shared resources](/azure/devops/pipelines/process/about-resources?view=azure-devops) in YAML pipelines. Examples include service connections, variable groups, secure files, agent pools, environments, or repositories. To protect a pipeline from accessing a resource, the owner of the resource can configure permissions and checks on that resource. Every time a pipeline tries to access the resource, all the configured permissions and checks are evaluated. These protections have been available on service connections, environments, and agent pools for a while. They were recently added to [repositories](/azure/devops/pipelines/process/repository-resource?view=azure-devops). With this release, we are adding the same protections to variable groups and secure files.
+You can use different types of [shared resources](/azure/devops/pipelines/process/about-resources) in YAML pipelines. Examples include service connections, variable groups, secure files, agent pools, environments, or repositories. To protect a pipeline from accessing a resource, the owner of the resource can configure permissions and checks on that resource. Every time a pipeline tries to access the resource, all the configured permissions and checks are evaluated. These protections have been available on service connections, environments, and agent pools for a while. They were recently added to [repositories](/azure/devops/pipelines/process/repository-resource). With this release, we are adding the same protections to variable groups and secure files.
 
 To restrict access to a variable group or a secure file to a small set of pipelines, use the **Pipelines permissions** feature.
 
@@ -69,7 +69,7 @@ To configure checks or approvals that should be evaluated every time a pipeline 
 
 ### Preview of templates support in YAML editor
 
-[Templates](/azure/devops/pipelines/process/templates?view=azure-devops) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](/azure/devops/pipelines/security/templates?view=azure-devops) through your pipeline.
+[Templates](/azure/devops/pipelines/process/templates) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](/azure/devops/pipelines/security/templates) through your pipeline.
 
 Azure Pipelines supports a YAML editor which can be handy when editing your pipeline. Previously, the editor did not support templates. Authors of YAML pipelines could not get intellisense assistance when using a template. With this release, we are previewing support for templates in the YAML editor. To enable this preview, navigate to preview features in your Azure DevOps organization, and enable **YAML templates editor**.
 
