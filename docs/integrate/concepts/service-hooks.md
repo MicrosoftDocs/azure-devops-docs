@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Using the [Subscriptions](/azure/devops/service-hooks/overview#create-a-subscription) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](../../service-hooks/overview.md#create-a-subscription) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 - build completed
