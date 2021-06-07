@@ -218,7 +218,7 @@ For more information about hiding organization settings from users, see [About p
 
 ## View, add, and manage permissions with CLI
 
-You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces).
+You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](./manage-tokens-namespaces.md).
 
 ::: moniker-end
 
