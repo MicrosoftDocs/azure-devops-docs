@@ -4474,7 +4474,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
+          <td><a href="/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
           (15.112.26301.0)](/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
           (15.112.26301.0)<em></a></td>
         </tr>
