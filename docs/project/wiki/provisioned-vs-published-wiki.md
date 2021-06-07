@@ -10,7 +10,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 12/15/2020  
+ms.date: 06/07/2021  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -45,7 +45,10 @@ The unavailable menu options for the wiki pages are shown in the following illus
 
 :::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options":::
 
-For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
+For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki get automatically published to the wiki.
+
+> [!NOTE]
+> Information the user should notice even if skimming
 
 ## Supported features and operational differences
 
@@ -68,10 +71,10 @@ The following table summarizes those operations or features that may differ, dep
 > [!div class="mx-tdCol2BreakAll"]
 > |Operation |    Provisioned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
-> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ✔️|
-> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |✔️ |
+> |[Support multiple wikis, name wiki](publish-repo-to-wiki.md)  |  | ✔️|
+> |[Add or edit pages from **Repos** > **Files** or **Code** > **Files**](publish-repo-to-wiki.md) |  |✔️ |
 > |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |✔️ |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |✔️ |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |✔️ |✔️ |
 > |[Maintain versioned wikis](#versioning) |  | ✔️ |
 > |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ✔️ |
 > |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ✔️ |
@@ -109,7 +112,7 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content, that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
 
