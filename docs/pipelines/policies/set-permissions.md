@@ -1,98 +1,89 @@
 ---
-title: Add users to Azure Pipelines
+title: Pipelines user permissions
 ms.custom: seodec18
-description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
+description: Add users to Azure Pipelines
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 06/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
+Permissions for build and release pipelines are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level.
+
+You can manage security for different types of resources such as variable groups, secure files, and deployment groups by adding users or groups to that role. Project administrator can grant or restrict access to project resources. If you want to allow a team member to edit pipelines, you must be a project administrator in order to do so.
 
 ::: moniker range="> tfs-2018"
 
-If your teammates want to edit pipelines, then have an administrator add them to your project:
+## Add users to your project
 
-1. Make sure you are a member of the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+1. Navigate to your project's summary page: `https://dev.azure.com/{your-organization}/{your-project}`
 
-2. Go to your project summary: `https://dev.azure.com/{your-organization}/{your-project}`
+1. Select the **Invite** button to add a user to your project, and then fill out the required fields. Select **Add** when you are done.
 
-3. Invite the teammates to join the project.
+    :::image type="content" source="media/project-invite-button.png" alt-text="Invite button":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Invite button](media/project-invite-button.png)
-   > 
-   > [!div class="mx-imgBorder"]
-   > ![Add users to project dialog box](media/project-invite-dialog-box.png)
+    :::image type="content" source="media/project-invite-dialog-box.png" alt-text="Add users to your project":::
 
-4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
+1. The new user must accept the invitation before they can start creating or modifying pipelines.
 
-## Confirm that contributors have pipeline permissions 
+## Verify permissions for contributors
 
 > [!NOTE]
-> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
+> A security best practice is to only grant permissions to required users or groups. The **Contributors** group may be too broad in a given project.  
 
-If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
+To verify the permissions for your project's contributors, make sure you are a member of the *Build Administrators group* or the *Project Administrators group*. See [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) for more details.
 
-1. Make sure you are a member of the Build Administrators group or the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+1. From within your project, select **Pipelines** > **Pipelines**. Select the **All** tab, and then select the more actions menu then **Manage security**.
 
-2. Open the build security dialog box.
+    :::image type="content" source="media/security-menu-item.png" alt-text="Manage pipeline security":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Security menu item for all builds](media/security-menu-item.png)
+1. On the permissions dialog box, make sure the following **Contributors** permissions are set to Allow.
 
-3. On the permissions dialog box, make sure the following permissions are set to Allow.
-
-   > [!div class="mx-imgBorder"]
-   > ![Permissions dialog box for all builds in the project](media/builds-permissions-dialog-box.png)
+    :::image type="content" source="media/builds-permissions-dialog-box.png" alt-text="Set up the contributors permissions":::
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).
-
-In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../../organizations/security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](permissions.md).  
-
 ## Set permissions for build pipelines
 
-1. To set the permissions for all build pipelines, click the Security From the web portal **Build-Release** hub, **Builds** page
+1. From within your project, select **Build and Release**, and then select **Builds** to access your build pipelines.
 
-   ![Open the Security dialog for all build pipelines](media/set-build-release-permissions/open-all-build-definitions-security.png)
+    :::image type="content" source="media/build-release-tfs.png" alt-text="Access builds in TFS":::
 
-   To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
+1. Select **Security** to set the permissions for all build pipelines.
 
-   <img src="media//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/open-all-build-definitions-security.png" alt-text="Access all builds security permissions":::
 
-2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+   To set permissions for a specific build pipeline, select the context menu for that build and select **Security**.
 
-   For example, here we change the permission for Edit build pipeline for the Contributors group to Allow.
+    :::image type="content" source="media/set-build-release-permissions/set-build-permission-open-dialog.png" alt-text="Configure build permissions":::
 
-   <img src="media/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+1. Choose the group you want to set permissions for, and then change the permission setting to grant or restrict access. In the following example, we change the contributors permission to allow editing build definitions.
 
-3. Save your changes.
+    :::image type="content" source="media/set-build-release-permissions/set-build-permission-dialog.png" alt-text="Contributors permissions - allow editing build definitions":::
+
+1. Select **Save changes** when you are done.
 
 ## Set permissions for release pipelines
 
-1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
+1. From within your project, select **Build and Release**, and then select **Releases** to access your release pipelines.
 
-   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a release pipeline." style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/release-pipelines-tfs.png" alt-text="Access release pipelines TFS":::
 
-   If you want to manage the permissions for a specific release, then open the Security dialog for that release.
+1. Select the context menu for **All release definitions**, and then select **Security**.
 
-1. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+    :::image type="content" source="media/set-build-release-permissions/all-releases-security.png" alt-text="All security releases":::
 
-   For example, here we deny access to several permissions for the Contributors group.
+1. Choose the group you want to set permissions for, and then change the permission setting to grant or restrict access. In the following example, we change the contributors permission to prohibit the deletion of release definitions.
 
-   <img src="media/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release pipeline" style="border: 1px solid #C3C3C3;" />
+    :::image type="content" source="media/set-build-release-permissions/set-release-permission-dialog.png" alt-text="Configure permissions for release pipelines":::
 
-1. Save your changes.
-
+1. Select **Save changes** when you are done.
 
 <a id="deployment-group" />
 <a id="variable-group" />
@@ -104,30 +95,23 @@ In addition to permission assignments, you manage security for several resources
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
-Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](../release/deployment-groups/index.md) are managed by roles. For a description of the roles, see [About security roles](../../organizations/security/about-security-roles.md).
+Permissions for variable groups, secure files, and deployment groups are managed by roles. Setting up permissions is similar for all the three different types. **Variable groups** and **Secure files** permissions are configured from **Build and Release** > **Library** while **Deployment groups** permissions are set from **Build and Release** > **Deployment groups**.
 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.
+In the following example, we will configure permissions for variable groups. 
 
-You can set the security for all artifacts for a project, as well as set the security for individual artifacts. The method is similar for all three artifact types. You set the security for variable groups and secure files from **Azure Pipelines**, **Library** page, and for deployment groups, from the **Deployment groups** page.
+1. From within your project, select **Build and Release**, and then select **Library** then **Variable groups**.
 
-For example, here we show how to set the security for variable groups.  
+    :::image type="content" source="media/set-build-release-permissions/open-variable-group-all-security.png" alt-text="Library - variable groups":::
 
-1. **Build-Release** hub, **Library** page, open the Security dialog for all variable groups.
+   If you want to manage the permissions for a specific variable group, select the ellipsis for that variable group and then select **Security**.
 
-   ![Open the Security dialog for all variable groups](media/set-build-release-permissions/open-variable-group-all-security.png) 
-
-   If you want to manage the permissions for a specific variable group, then open the Security dialog for that group.
-
-   ![Open the Security dialog for a specific variable group](media/set-build-release-permissions/open-variable-group-specific-security.png) 
+    :::image type="content" source="media/set-build-release-permissions/open-variable-group-specific-security.png" alt-text="Configure permission for one variable group":::
 
 1. Add the user or group and choose the role you want them to have.
 
-   For example, here we deny access to several permissions for the Contributors group.
+    :::image type="content" source="media/set-build-release-permissions/library-security-role-dialog-add-user.png" alt-text="add user or group and set roles":::
 
-   ![Add user to a Library role](media/set-build-release-permissions/library-security-role-dialog-add-user.png) 
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
@@ -137,24 +121,19 @@ For example, here we show how to set the security for variable groups.
 
 ## Manage task group permissions
 
-Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of **Azure Pipelines**.
+Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task.
 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.
+1. From within your project, select **Build and Release**, and then select **Task groups**.
 
-1. From the web portal **Build-Release** hub, **Task groups** page, open the Security dialog for all task groups.
+    :::image type="content" source="media/set-build-release-permissions/open-task-group-all-security.png" alt-text="access task groups permissions":::
 
-   ![Open the Security dialog for all task groups](media/set-build-release-permissions/open-task-group-all-security.png) 
-
-   If you want to manage the permissions for a specific task group, then open the Security dialog for that group.
+   If you want to manage the permissions for a specific task group, select the ellipsis for that task group and then select **Security**.
 
 1. Add the user or group and then set the permissions you want them to have.
 
-   For example, here we add Raisa and set her permissions to Administer all task groups.
+    :::image type="content" source="media/set-build-release-permissions/task-group-security-dialog.png" alt-text="Set up task groups permissions":::
 
-   ![Set task group permissions](media/set-build-release-permissions/task-group-security-dialog.png) 
-
-1. Click **Add**.
+1. Select **Save changes** when you are done.
 
 ::: moniker-end
 
@@ -162,82 +141,66 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 <a id="collection-level" /> 
 
-## Set collection-level permissions to administer build resources
+## Manage permissions for build administrators group
  
-1. From the web portal user context, open the admin context by clicking the ![gear icon](../../media/icons/gear_icon.png) gear Settings icon and choosing **Organization settings** or **Collection settings**.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Collection settings**.
 
-1. Click **Security**, and then choose the group whose permissions you want to modify.
+1. Select **Security**, and then select **Project Collection Build Administrators**. In this example, we want to allow the usage of build resources. 
 
-   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissions](../../organizations/security/permissions.md#collection-level).
+    :::image type="content" source="media/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt-text="Configure the build administrators group permissions":::
 
-   <img src="media/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
-
-1. Save your changes.
+1. Select **Save changes** when you are done.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-## Manage permissions for agent pools and service connections
+## Manage permissions for service connections
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [service connections](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent pools and service connections. You will need to be a member of the Project  Administrator group to manage the security for these resources.
- 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2015 and later versions.
+You can set up permissions for service connections or agent pools by adding users or groups to a specific role. You will need to be a member of the Project Administrator group to manage the permissions for these resources. 
 
-For example, here we show how to add a user to the Administrator role for a service connection.  
+In the following example, we will add an Administrator to a service connection.
 
-1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon to open the project settings admin context.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Project settings**.
 
-1. Click **Services**, click the service connection that you want to manage, and then click **Roles**.   
+1. Select **Services**, and then select the service connection that you want to manage. Select **Roles** to add a new role.   
 
-   ![Open the Roles tab for a service connection](media/manage-roles/open-services-roles.png)
+    :::image type="content" source="media/manage-roles/open-services-roles.png" alt-text="Select service roles":::
 
-1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
+1. Add the user or group and choose the role you want them to have. 
 
-   For example, here we add Raisa to the Administrator role.
+    :::image type="content" source="media/manage-roles/add-user-role-endpoint-service.png" alt-text="Add a new role"::: 
 
-   ![On Endpoint: gitConnect, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-endpoint-service.png)  
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= tfs-2018"
 
-## Manage permissions for agent pools and deployment pools  
+## Manage permissions for deployment pools  
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [deployment pools](../release/deployment-groups/index.md) by adding users or groups to a role. The method is similar for both types of pools.
- 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2018 and later versions.
+You can set up permissions for deployment pools by adding users or groups to a specific role. You will need to be a member of the Project Collection Administrator group to manage the pool's permissions.
 
-You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
+In the following example, we will add an Administrator role to all deployment pools.
 
-1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon and choose Organization settings or Collection settings to open the collection-level settings admin context.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Project settings**.
 
-1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
+1. Select **Deployment Pools**, and then select **Security** to manage permissions for all deployment pools.    
 
-   ![Open the Security dialog for all deployment pools.](media/manage-roles/open-security-deployment-pools.png) 
-
-   If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group.
+    :::image type="content" source="media/manage-roles/open-security-deployment-pools.png" alt-text="Manage permissions for all deployment pools":::
 
 1. Add the user or group and choose the role you want them to have.
 
-   For example, here we add Raisa to the Administrator role.
+    :::image type="content" source="media/manage-roles/add-user-role-deployment-pool.png" alt-text="Add an administrator to all deployment pools":::
 
-   ![On the security dialog, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-deployment-pool.png)  
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+## Related articles 
 
-## Related notes 
-
-[Default build and release permissions](../policies/permissions.md)
+- [Grant version control permissions to the build service](../scripts/git-commands.md)
+- [Set pipelines permissions](../policies/permissions.md)
+- [Set retention policies for builds, releases, and tests](./retention.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
-
-::: moniker-end
