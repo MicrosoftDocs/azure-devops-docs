@@ -153,62 +153,52 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-## Manage permissions for agent pools and service connections
+## Manage permissions for service connections
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [service connections](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent pools and service connections. You will need to be a member of the Project  Administrator group to manage the security for these resources.
- 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2015 and later versions.
+You can set up permissions for service connections or agent pools by adding users or groups to a specific role. You will need to be a member of the Project Administrator group to manage the permissions for these resources. 
 
-For example, here we show how to add a user to the Administrator role for a service connection.  
+In the following example, we will add an Administrator to a service connection.
 
-1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon to open the project settings admin context.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Project settings**.
 
-1. Click **Services**, click the service connection that you want to manage, and then click **Roles**.   
+1. Select **Services**, and then select the service connection that you want to manage. Select **Roles** to add a new role.   
 
-   ![Open the Roles tab for a service connection](media/manage-roles/open-services-roles.png)
+    :::image type="content" source="media/manage-roles/open-services-roles.png" alt-text="Select service roles":::
 
-1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
+1. Add the user or group and choose the role you want them to have. 
 
-   For example, here we add Raisa to the Administrator role.
+    :::image type="content" source="media/manage-roles/add-user-role-endpoint-service.png" alt-text="Add a new role"::: 
 
-   ![On Endpoint: gitConnect, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-endpoint-service.png)  
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= tfs-2018"
 
-## Manage permissions for agent pools and deployment pools  
+## Manage permissions for deployment pools  
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [deployment pools](../release/deployment-groups/index.md) by adding users or groups to a role. The method is similar for both types of pools.
- 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2018 and later versions.
+You can set up permissions for deployment pools by adding users or groups to a specific role. You will need to be a member of the Project Collection Administrator group to manage the pool's permissions.
 
-You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md).
+In the following example, we will add an Administrator role to all deployment pools.
 
-1. From the web portal, click the ![gear settings icon](../../media/icons/gear_icon.png) gear Settings icon and choose Organization settings or Collection settings to open the collection-level settings admin context.
+1. From within your project, select the gear icon button ![gear icon](../../media/icons/gear_icon.png), and then select **Project settings**.
 
-1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
+1. Select **Deployment Pools**, and then select **Security** to manage permissions for all deployment pools.    
 
-   ![Open the Security dialog for all deployment pools.](media/manage-roles/open-security-deployment-pools.png) 
-
-   If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group.
+    :::image type="content" source="media/manage-roles/open-security-deployment-pools.png" alt-text="Manage permissions for all deployment pools":::
 
 1. Add the user or group and choose the role you want them to have.
 
-   For example, here we add Raisa to the Administrator role.
+:::image type="content" source="media/manage-roles/add-user-role-deployment-pool.png" alt-text="Add an administrator to all deployment pools":::
 
-   ![On the security dialog, + Add is highlighted. The Add user dialog box has User or group set to Raisa Pokrovskaya, and Role set to Administrator.](media/manage-roles/add-user-role-deployment-pool.png)  
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
 ## Related articles 
 
+- [Grant version control permissions to the build service](../scripts/git-commands.md)
 - [Set pipelines permissions](../policies/permissions.md)
+- [Set retention policies for builds, releases, and tests](./retention.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
