@@ -20,20 +20,20 @@ ms.date: 06/07/2021
 
 [!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
-Rules are used to set or restrict value assignments to a work item field. There are two main types of rules, auto-generated rules and custom rules defined for a process or project. Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. You define custom rules in order to support your business use cases. Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
+Rules are used to set or restrict value assignments to a work item field. There are two main types of rules, auto-generated rules and custom rules defined for a process or project. Auto-generated rules minimize the need to add custom rules for areas that should work in a standard way. 
+
+You define custom rules in order to support your business use cases. Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
 Read this article to understand the following:
 
-- Auto-generated rules 
-- The different types of custom rules you can apply 
+- How the system applies auto-generated rules 
 - Restrictions placed on definition of custom rules on system fields
+- The different types of custom rules you can apply 
 - How rules are evaluated
 - Difference between rules defined for an Inheritance process versus an On-premises XML process
 - Why you should minimize the number of custom rules you define 
 
 Prior to defining custom rules, read [Configure and customize Azure Boards](../../../boards/configure-customize.md) to gain a broad understanding of how to customize Azure Boards to meet your business needs. 
-
-For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
 
 > [!TIP]    
 > Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.
@@ -78,12 +78,15 @@ These rules are technically a lot simpler than Closed By/Closed Date rules becau
 
 ## Custom rules
 
-All custom rules are optional. The following sections provide a mapping of rules supported by the inherited process model and those supported by the On-premises XML process model. There isn't a one-to-one mapping. In some cases, the XML element rule is defined within the Edit field dialog and not as a rule. Other elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the inherited process.  
+
+
+All custom rules are optional. For an inherited process, you specify a rule which consists of a condition plus action. For an On-premises XML process, you specify rules for a field or within the workflow. 
+
+There isn't a one-to-one mapping between the two processes. In some cases, the XML element rule is defined within the **Edit field** dialog for the inherited process and not as a rule. Other XML elements, such as `FROZEN`, `MATCH`, `NOTSAMEAS`, aren't supported in the inherited process.  
 
 Note the following:  
 - Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 - Inherited process entries specify conditions and actions to make a complete rule. XML elements don't make those distinctions.  
-- There isn't an overall one-to-one mapping between inherited entries and XML elements. 
 - Field rules don't support assigning values that are the sum of two other fields or performing other- mathematical calculations. However, you may find a solution that fits your needs via the [TFS Aggregator (Web Service)](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-web-service) Marketplace extension. See also [Rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).
 - You may find additional solutions to applying custom rules to fields using a Marketplace extensions, such as the [Work item form control library extension](https://marketplace.visualstudio.com/items?itemName=mohitbagra.vsts-wit-control-library&ssr=false#overview). 
 
@@ -94,16 +97,18 @@ Note the following:
 
 # [Inheritance process](#tab/inheritance)
 
-For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule, for most rules. All custom rules require all conditions to be met in order to be run. 
+For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. For most rules, you can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
+
+As an example, you can make a field required based on the value assigned to the state and another field. For example:
+```
+&nbsp;&nbsp;&nbsp;(Condition) When a work item State is *Active*  
+&nbsp;&nbsp;&nbsp;(Condition) And when the value of *Value Area* = *Business*  
+&nbsp;&nbsp;&nbsp;(Action) Then make required *Story Points*  
 
 > [!NOTE]  
 > Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md). 
 
-As an example, you can make a field required based on the value assigned to the state and another field. For example:
-&nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*`
-&nbsp;&nbsp;&nbsp;`(Condition) And when the value of *Value Area* = *Business*`  
-&nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`
-
+The following table summaries the Actions that are available with the selected Conditions.
 
 :::row:::
    :::column span="2":::
@@ -245,7 +250,14 @@ You can specify values for a pick list (drop-down menu), set default values, cle
 
 Work item rules do not exist as a single collection. The rules are actually dynamically generated and merged from different data sources. The merge logic is a simple one, consolidate identical rules, but don't trim conflicting rules.  
 
- 
+
+## Bypass rules
+
+In general, all work items are validated by the rule engine when users modify the work item. However, to support certain scenarios, users assigned the **Bypass rules on work item updates** project-level permission can save work items without rules being evaluated. 
+
+Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).
+
+
 <a name="system"></a>
 
 ## System fields and custom rules
@@ -341,7 +353,7 @@ These rules support setting defaults, copying values from one field to another, 
       `DEFAULT`
    :::column-end:::
    :::column span="3":::
-      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  Default rules execute only if the `Is` value of the field is currently empty. Supported values include the current time (`from = "clock"`), the current user (`from = "currentuser"`), a literal value (`from = "value"  value = "literal"`), or the value of another field (`from = field ` field = "referenceNameField").
+      Specifies a value for a field that is empty when a user creates or modifies a work item. If a field already has a value, the `DEFAULT` rule is ignored.  Default rules execute only if the `Is` value of the field is currently empty. Supported values include the current time (`from = "clock"`), the current user (`from = "currentuser"`), a literal value (`from = "value"  value = "literal"`), or the value of another field (`from = field  field = "referenceNameField"`).
       > [!div class="tabbedCodeSnippets"]  
       > ```XML  
       > <FIELD refname="MyCorp.Priority" name="Priority" type="String" 
@@ -398,7 +410,7 @@ These rules support setting defaults, copying values from one field to another, 
 
 ## Constraint rules
 
-Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field and in general can operate on both the previous and current values of a field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
+Constraint rules restrict changing the value of a field. They define the valid states for a work item. Each constraint operates on a single field. Constraints are evaluated on the server on work item save, and if any constraint is violated the save operation is rejected.  
  
 ::: moniker range="<= tfs-2018 || azure-devops-2020 || azure-devops"
 You can restrict application of these rules based on the current user's group membership as described in [User or group membership rule restrictions](#membership).
@@ -1027,53 +1039,48 @@ To avoid problems with users updating work items from various clients, specify A
 
 ## Order in which rules are evaluated 
 
+
+Rules are typically processed in the sequence in which they are listed. However, the complete sequence for evaluation of all rules isn't fully deterministic. 
+
+This section describes the expected behavior and interactions when you apply conditional, copy, and default rules. 
+
 #### [Inheritance process](#tab/inheritance) 
-
-
-Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
-
-You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
 1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
-2.  Fill in field defaults. For all fields, apply any **DEFAULT** rules that are outside **WHEN** conditional rules.
+2.  Fill in field defaults. For all fields, apply any defaults assigned to the field that aren't part of a conditional clause.
 
-3.  Copy field values. For all fields, apply any **COPY** rules that are outside **WHEN** conditional clauses.
+3.  Copy or set field values. For all fields, apply any rules to copy a value or set the value of a field that aren't part of a conditional clause.
 
-4.  For all fields with a **WHEN** conditional rule that matches, first apply **DEFAULT** and then **COPY** rules inside.
+4.  For all fields with a When conditional rule that matches, apply rules to set or copy a field value.  
 
-5.  For all fields with a **WHENNOT** conditional rule that matches, first apply **DEFAULT** and then **COPY** rules inside.
+5.  For all fields with a When Not conditional rule that matches, apply rules to set or copy a field value.  
 
-    The system always processes **WHEN** rules before **WHENNOT** rules. 
+    The system always processes **When** rules before **When Not** rules. 
 
-6.  For all fields that have had their values changed since step 1 and that contain **WHENCHANGED** rules, first apply **DEFAULT** and then **COPY** rules inside.
+6.  For all fields that have had their values changed since step 1 and that contain **When Changed** rules, apply rules to set or copy a field value.  
 
 7.  Allow the user to start editing. 
 
 8.  The user changes a field value and then moves focus from the field.
 
-9.  Raise any **WHEN** rules for that field that match the new value.
+9.  Process any **When** rules for that field that match the new value.
 
-10. Raise any **WHENNOT** rules for that field that match the new value.
+10. Process any **When Not** rules for that field that match the new value.
 
-11. Raise any **WHENCHANGED** rules for that field that match the new value.
+11. Process any **When Changed** rules for that field that match the new value.
 
 12. Return editing ability to the user.
 
-13. The user saves the changes to the database.
+13. The user saves the changes to the data store.
 
-14. For all fields, perform **SERVERDEFAULT** operations that are defined for the field either directly or indirectly under a **WHEN** or a **WHENNOT** rule.
+14. For all fields, apply any `Use the current time to set the value of ...` actions that are defined for the field either directly or indirectly under a  conditional rule.
 
 #### [On-premises XML process](#tab/on-premises)
 
-
-Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply.
-
-You can gain some idea of how rules are evaluated when you apply multiple rules to a field. How rules are evaluated is not completely deterministic. This section describes the expected behavior and interactions when you are using the **WHEN**, **DEFAULT**, and **COPY** rules.
-
-The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
+Rules are typically processed in the sequence in which they are listed. However, when you use the **WHEN**, **DEFAULT**, and **COPY** elements, additional behaviors may apply. The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
 1.  From an Azure DevOps client&mdash;such as the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere&mdash;a user creates a new work item or edits an existing work item.
 
@@ -1122,9 +1129,6 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 
 --- 
 
-## Bypass mode
-
-In general, all work items are validated by the rule engine when users modify the work item. 
 
 ## Related articles
 
