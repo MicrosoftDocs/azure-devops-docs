@@ -93,30 +93,23 @@ To verify the permissions for your project's contributors, make sure you are a m
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
-Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](../release/deployment-groups/index.md) are managed by roles. For a description of the roles, see [About security roles](../../organizations/security/about-security-roles.md).
+Permissions for variable groups, secure files, and deployment groups are managed by roles. Setting up permissions is similar for all the three different types. **Variable groups** and **Secure files** permissions are configured from **Build and Release** > **Library** while **Deployment groups** permissions are set from **Build and Release** > **Deployment groups**.
 
-> [!NOTE]
-> **Feature availability**: These features are available on Azure Pipelines and TFS 2017 and later versions.
+In the following example, we will configure permissions for variable groups. 
 
-You can set the security for all artifacts for a project, as well as set the security for individual artifacts. The method is similar for all three artifact types. You set the security for variable groups and secure files from **Azure Pipelines**, **Library** page, and for deployment groups, from the **Deployment groups** page.
+1. From within your project, select **Build and Release**, and then select **Library** then **Variable groups**.
 
-For example, here we show how to set the security for variable groups.  
+    :::image type="content" source="media/set-build-release-permissions/open-variable-group-all-security.png" alt-text="Library - variable groups":::
 
-1. **Build-Release** hub, **Library** page, open the Security dialog for all variable groups.
+   If you want to manage the permissions for a specific variable group, then select the ellipsis for that variable group and then select **Security**.
 
-   ![Open the Security dialog for all variable groups](media/set-build-release-permissions/open-variable-group-all-security.png) 
-
-   If you want to manage the permissions for a specific variable group, then open the Security dialog for that group.
-
-   ![Open the Security dialog for a specific variable group](media/set-build-release-permissions/open-variable-group-specific-security.png) 
+    :::image type="content" source="media/set-build-release-permissions/open-variable-group-specific-security.png" alt-text="Configure permission for one variable group":::
 
 1. Add the user or group and choose the role you want them to have.
 
-   For example, here we deny access to several permissions for the Contributors group.
+    :::image type="content" source="media/set-build-release-permissions/library-security-role-dialog-add-user.png" alt-text="add user or group and set roles":::
 
-   ![Add user to a Library role](media/set-build-release-permissions/library-security-role-dialog-add-user.png) 
-
-1. Click **Add**.  
+1. Select **Add** when you are done.  
 
 ::: moniker-end
 
