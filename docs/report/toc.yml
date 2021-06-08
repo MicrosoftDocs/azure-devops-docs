@@ -29,6 +29,9 @@
   - name: Add markdown to a dashboard
     displayname: markdown widget 
     href: dashboards/add-markdown-to-dashboard.md
+  - name: Copy a dashboard
+    displayname: project, team 
+    href: dashboards/copy-dashboard.md
   - name: Set dashboard permissions (Security)
     href: dashboards/dashboard-permissions.md
 - name: Work tracking charts
@@ -37,7 +40,7 @@
     href: dashboards/charts.md
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: Create test tracking charts
-    href: /azure/devops/test/track-test-status#charts?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../test/track-test-status.md?bc=%2fazure%2fdevops%2freport%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2freport%2ftoc.json#charts
     displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: dashboards/cumulative-flow.md

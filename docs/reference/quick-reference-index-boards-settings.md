@@ -176,6 +176,7 @@ The Inheritance process model supports the following customization tasks.
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
+
 ---
 :::row:::
    :::column span="1":::

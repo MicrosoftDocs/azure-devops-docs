@@ -20,11 +20,9 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 
 ### Set up package source
 
-1. Select **Tools** then **Options** in Visual Studio.
-1. Expand the **NuGet Package Manager** and select **Package Sources**.
-1. Select the green (+) sign to add a source.
-1. Enter the feed's name and the source URL (step 1).
-1. Select **Update**.
+1. In Visual Studio, select **Tools**, and then **Options**.
+1. Expand the **NuGet Package Manager** section, and then select **Package Sources**.
+1. Enter the feed's **Name** and the **Source** URL, and then select the green (+) sign to add a source.
 1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
 1. Select **OK**.
 
@@ -54,15 +52,16 @@ To consume NuGet packages from your feed, you need to add the feed's NuGet endpo
 
 You can now find and consume packages from your feed by using Visual Studio.
 
-1. In Visual Studio, find your project in the Solution Explorer.
-1. Right-click on your project, select **References** then **Manage NuGet Packages**
-1. Select your feed from the **Package source** drop-down list.
-1. Use the search bar to look for packages.
-
+1. In Visual Studio, right-click on your project in the Solution Explorer, and then select **Manage NuGet Packages**.
+1. Select **Browse**, and then select your feed from the **Package source** drop-down list
     :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
+1. Use the search bar to look for packages from your feed.
 
-If you're using [upstream sources](../../nuget/upstream-sources.md), any packages from upstream sources that haven't been saved to your feed yet (by using them at least once) won't appear in the Package Manager search result. To install those packages:
+> [!NOTE]
+> If you're using [upstream sources](../../nuget/upstream-sources.md), any packages from upstream sources that haven't been saved to your feed yet (by using them at least once) won't appear in the Package Manager search result. To install those packages:
 
-1. Copy the **Install-Package** command from the public registry (NuGet.org), .
+#### Consume package from NuGet.org
+
+1. Copy the **Install-Package** command from the public registry (NuGet.org).
 1. Select **Tools** then **NuGet Package Manager** to open the NuGet package manager.
 1. Paste the command into the Package Manager Console and select **run**.

@@ -19,7 +19,7 @@ author: vijayma
 
 Secure Files are a way to store files that you can share across pipelines. You can use the Secure Files library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your repository. Secure files are defined and managed in the **Library** tab in **Azure Pipelines**.
 
-The contents of the secure files are encrypted and can only be used when them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library). 
+The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library). 
 
 There's a size limit of 10 MB for each secure file.
 

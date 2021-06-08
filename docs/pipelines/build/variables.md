@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 05/12/2021
+ms.date: 06/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +17,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
-This is the comprehensive list of predefined variables.
+This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they are mostly for internal use.
+
 
 These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
 
