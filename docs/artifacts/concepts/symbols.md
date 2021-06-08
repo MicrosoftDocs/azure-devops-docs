@@ -32,9 +32,9 @@ Symbols contain a set of useful debugging information, including:
 
 You can publish your symbols to different destinations by using the **Index Sources and Publish Symbols** task:  
 
-- [publish to the symbol server](/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops#publish-symbols)
-- [Publish to a file share](/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops#publish-symbols-to-a-file-share)
-- [Publish to Portable PDBs](/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops#portable-pdbs)
+- [publish to the symbol server](../../pipelines/artifacts/symbols.md#publish-symbols)
+- [Publish to a file share](../../pipelines/artifacts/symbols.md#publish-symbols-to-a-file-share)
+- [Publish to Portable PDBs](../../pipelines/artifacts/symbols.md#portable-pdbs)
 
 ## Consuming symbol files
 
