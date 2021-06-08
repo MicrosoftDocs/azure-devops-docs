@@ -153,7 +153,7 @@ Complete the following steps to set an icon for your hub.
 
 When themes like light versus dark get applied, you can specify the icons in your extension manifest as follows.
 
-``
+```json
 
 {
     "id": "hub",
@@ -171,4 +171,4 @@ When themes like light versus dark get applied, you can specify the icons in you
         }
     }
 }
-``
+```
