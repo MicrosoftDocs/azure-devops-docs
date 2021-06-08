@@ -905,9 +905,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo "start" //always runs
+- script: echo "start" # always runs
 - ${{ if eq(variables.foo, 'test') }}:
-  - script: echo "this is a test" //runs when foo=test
+  - script: echo "this is a test" # runs when foo=test
 ```
 
 ### Iterative insertion
