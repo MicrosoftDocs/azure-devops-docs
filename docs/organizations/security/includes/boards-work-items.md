@@ -11,7 +11,7 @@ ms.date: 05/12/2021
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]   
-> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](../../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../../report/admin/disable-data-warehouse.md).
+> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
 
 ::: moniker-end    
 
@@ -217,7 +217,7 @@ ms.date: 05/12/2021
 ::: moniker range="tfs-2013"
 :::row:::
    :::column span="2":::
-      [Provide feedback](../../../project/feedback/give-feedback.md) (through the Microsoft Feedback client)
+      [Provide feedback](/azure/devops/project/feedback/give-feedback) (through the Microsoft Feedback client)
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -236,7 +236,7 @@ ms.date: 05/12/2021
 ::: moniker-end  
 :::row:::
    :::column span="2":::
-      [Request feedback](../../../project/feedback/get-feedback.md) 
+      [Request feedback](/azure/devops/project/feedback/get-feedback) 
    :::column-end:::
    :::column span="1":::
 
@@ -254,4 +254,4 @@ ms.date: 05/12/2021
 ---
 
 > [!NOTE] 
-> Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](../../settings/work/troubleshoot-work-item-form-caching-issues.md). To learn more about conditional rules, see [Add a rule to a work item type (Inheritance process)](../../settings/work/custom-rules.md) or [Apply or ignore rules based on user or group (On-premises XML process](../../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group).
+> Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](/azure/devops/organizations/settings/work/troubleshoot-work-item-form-caching-issues). To learn more about conditional rules, see [Rules and rule evaluation](/azure/devops/organizations/settings/work/rule-reference).   
