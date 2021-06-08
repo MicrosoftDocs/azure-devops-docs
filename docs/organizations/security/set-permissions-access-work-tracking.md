@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 06/08/2021
 --- 
 
 
@@ -20,6 +20,35 @@ You grant or restrict access to various work tracking features by granting users
 
 > [!NOTE]
 > For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+
+<a id="business-workflows" /> 
+
+## Support business workflows through custom rules  
+
+Azure Boards supports the following work tracking customizations that support business workflows. Custom rules don't set permissions, but do impact the effective permissions of a user at run-time to modify a work item or set the value of a work item field.   
+
+- Apply select rules upon work item creation, state change, specified state.
+- Apply select rules when a field value is empty,set to a specific value, or was changed or not changed to a value.  
+- Restrict the transition to a specific state when moving from a specified state.  
+- Apply select rules based on user or group membership of the user modifying a work item.
+
+Common actions set by rules include:  
+- Make a field required or read-only
+- Clear or set the value of a field, or copy a field value to another field 
+- Hide a field. 
+ 
+For example, you can specify rules that effectively restrict a group of users from performing the following tasks: 
+
+- Creating a work item 
+- Transitioning a work item to a closed or completed state
+- Changing the value of a field.  
+
+
+Some restrictions are placed on applying custom rules to system fields. For example, you can't specify rules that set or clear the value for **Area Path** or **Iteration Path** as these are system fields. To learn more about custom rules you can define and system field restrictions, see [Rules and rule evaluation](work/rule-reference.md). For sample scenarios, see [Sample rule scenarios](work/rule-samples.md).   
+
+## Work tracking roles and permission levels
+
+The following table summarizes the different permissions you can set at the object, project, or collection level. The team administrator role provides access to add and modify team resources. 
 
 
 ---
@@ -310,6 +339,7 @@ See [Restrict access, Restrict modification of work items based on a user or gro
 ## Related articles 
 
 - [Grant or restrict access](restrict-access.md)  
+- [Rules and rule evaluation](work/rule-reference.md)  
 - [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
 - [Permissions and access for work tracking](permissions-access-work-tracking.md) 
 - [Permissions and groups reference](permissions.md) 
