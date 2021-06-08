@@ -42,6 +42,8 @@ You can download the report for a select repository or for all repositories defi
 
 	:::image type="content" source="../../repos/git/media/git-permissions/choose-git-repo-security-callouts.png" alt-text="Screenshot showing choosing Project settings>Choose a repository>Security.":::
 
+## Download report  
+
 1. Choose **Download detailed report**. 
 
 	:::image type="content" source="media/download-report/download-detailed-report.png" alt-text="Screenshot of All Repositories, Security page, Download detailed report button.":::
