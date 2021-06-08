@@ -104,6 +104,7 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;(Condition) When a work item State is *Active*  
 &nbsp;&nbsp;&nbsp;(Condition) And when the value of *Value Area* = *Business*  
 &nbsp;&nbsp;&nbsp;(Action) Then make required *Story Points*  
+```
 
 > [!NOTE]  
 > Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md). 
@@ -1044,7 +1045,10 @@ Rules are typically processed in the sequence in which they are listed. However,
 
 This section describes the expected behavior and interactions when you apply conditional, copy, and default rules. 
 
+
+
 # [Inheritance process](#tab/inheritance)
+
 
 The following steps show, in the correct sequence, the interactions that Azure DevOps performs and by the user of a work-item form. Only steps 1, 8, and 13 are performed by the user.
 
