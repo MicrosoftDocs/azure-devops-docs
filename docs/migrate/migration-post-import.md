@@ -32,7 +32,7 @@ After spot checking the organization you will want to consider if you want to re
 
 ## Set up billing
 
-To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](/azure/devops/organizations/billing/billing-faq). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
+To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](../organizations/billing/billing-faq.yml). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
 
 ## Manage users and access
 
@@ -76,4 +76,4 @@ After getting your builds running and license subscription configured, it's reco
 
 Users of TFVC with local workspaces will need to remap their workspaces against the new organization and Git users will have to reconfigure their remotes to be able to pull code. 
 
-If anything is reported as missing from the migrated organization, please reach out to [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). For other functional issues, please reach out to [customer support](https://visualstudio.microsoft.com/support/).  
+If anything is reported as missing from the migrated organization, please reach out to [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). For other functional issues, please reach out to [customer support](https://visualstudio.microsoft.com/support/).
