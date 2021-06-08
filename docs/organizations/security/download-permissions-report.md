@@ -15,9 +15,9 @@ ms.date: 06/08/2021
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
  
-To determine the effective permissions of users and groups for a repository, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report is a json-formatted report that you can open using Power BI or other json reader. The report lists the effective permissions for the repository you select, for each user and group specified at creation time. Inherited permissions come from a parent group which you can view from the web portal.  
+To determine the effective permissions of users and groups for a repository, you can download the permissions report. Requesting the report generates an email with a link to download the report. The report lists the effective permissions for the repository you select, for each user and group specified at creation time. Inherited permissions come from a parent group which you can view from the web portal. The report is a json-formatted report that you can open using Power BI or other json reader.  
 
-You can also use the [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1$preserve=true) to download the report. 
+You can also use the [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true) to download the report. 
 
 ## Prerequisites
 
@@ -30,11 +30,9 @@ You can download the report for a select repository or for all repositories defi
 
 1. Open the web portal and choose the project for the repositories you want to download permissions for. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-To set the permissions for all Git repositories for a project, choose Git Repositories and then choose the security group whose permissions you want to manage.
-
 1. Open **Project settings>Repositories**.  
 
-	To download the permissions for all repositories, choose **Security**. 
+	To download the permissions report for all repositories, choose **Security**. 
 
 	For example, here we choose (1) **Project settings**, (2) **Repositories**, and then (3) **Security**.
 
@@ -54,13 +52,13 @@ To set the permissions for all Git repositories for a project, choose Git Reposi
 
 1. Once you receive the email from Azure DevOps Notifications, open it and choose **Download Report**. 
 
-	A report labeled **PermissionsReport_***GUID*.json appears in your Downloads folder. 
+	A report labeled **PermissionsReport_**<em>GUID</em>.json appears in your Downloads folder. 
  
 
 ## Related articles  
 
 - [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
 - [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md) 
-- [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1$preserve=true)
+- [Permissions Report REST API](/rest/api/azure/devops/permissionsreport/?view=azure-devops-rest-6.1&preserve-view=true)
 - [Manage permissions with command line tool](manage-tokens-namespaces.md) 
 
