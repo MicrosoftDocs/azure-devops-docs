@@ -9,7 +9,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
-ms.date: 06/07/2021
+ms.date: 06/08/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -42,7 +42,7 @@ To open the Security dialog, choose **More > Wiki Security**.
 
 For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md#git-repository).
 
-<img src="media/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #C3C3C3;" />
+:::image type="content" source="media/wiki/security-dialog.png" alt-text="Wiki security dialog/":::
 
 ## Don't have access to create a page?
 
@@ -50,9 +50,17 @@ If you don't have access to create a wiki page, you need to contact an administr
 
 ## Stakeholder wiki access
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read wiki pages and view revisions, however they can't do any edit operations. For example, stakeholders can't create, edit, reorder, or revert changes to pages. These permissions can't be changed. Stakeholders have full access to Wikis in public projects.
+### Private projects
 
-<img src="media/wiki/wiki-stakeholders.png" alt="Wiki stakeholders cannot edit or create pages" style="border: 1px solid #C3C3C3;" />
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read project wiki pages and view revisions, however they can't do any edit operations. For example, Stakeholders can't create, edit, reorder, or revert changes to wiki pages. These permissions can't be changed.
+
+Stakeholders have zero access to read or edit code wiki pages in private projects.
+
+### Public projects
+
+Stakeholders have full access to wikis in public projects.
+
+For more information about Stakeholder access, see [About access levels, Stakeholder access, Public versus private feature access](../../organizations/security/access-levels.md#public-versus-private-feature-access).
 
 ## FAQ
 
