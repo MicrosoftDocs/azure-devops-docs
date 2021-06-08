@@ -140,6 +140,7 @@ At this point, your project should have a package.json file and a .npmrc file in
 
 > [!NOTE]
 > If you are using Yarn, run the following command to set the yarn registry: 
+>
 > `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
 
 

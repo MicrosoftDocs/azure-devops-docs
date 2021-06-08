@@ -316,7 +316,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 ::: moniker range="= tfs-2017 || = tfs-2018 || = azure-devops"
 
 > [!NOTE]
-> If you are using Yarn, run the following command to set the yarn registry: 
+> If you are using Yarn, run the following command to set the yarn registry:
+>
 > `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
 
 ## Troubleshooting `vsts-npm-auth`
