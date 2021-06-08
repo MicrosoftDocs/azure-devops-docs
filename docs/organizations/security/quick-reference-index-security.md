@@ -257,7 +257,7 @@ The primary tasks for administrators to secure Azure DevOps are to assign access
        - [Secure Development Documentation](/azure/security/develop/)
        - [About Microsoft Security Code Analysis](/azure/security/develop/security-code-analysis-overview)
        - [Microsoft Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)
-       - [Security in DevOps (DevSecOps)](/devops/operate/security-in-devop)
+       - [Security in DevOps (DevSecOps)](/devops/operate/security-in-devops)
    :::column-end:::
 :::row-end:::
 ---

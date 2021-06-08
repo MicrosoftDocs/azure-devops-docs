@@ -1,4 +1,4 @@
-- name: "About Wikis, READMes, & Markdown"
+- name: "About wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
 - name: Provisioned versus published wikis 
   href: provisioned-vs-published-wiki.md
@@ -8,7 +8,7 @@
     href: wiki-create-repo.md
   - name: "Add & edit wiki pages"
     href: add-edit-wiki.md
-  - name: Publish code to a Wiki 
+  - name: Publish code to a wiki 
     href: publish-repo-to-wiki.md
   - name: Wiki file structure
     href: wiki-file-structure.md 
@@ -16,13 +16,13 @@
     href: ../../repos/git/create-a-readme.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json 
 - name: How-to guides
   items:
-  - name: Manage wikis
+  - name: Manage wikis with CLI
     href: manage-wikis.md
-  - name: View Wiki history and revert
+  - name: View wiki history and revert
     href: wiki-view-history.md
   - name: Filter or print wiki content 
     href: filter-print-wiki.md
-  - name: Search Wiki content
+  - name: Search wiki content
     href: search-wiki.md
   - name: Follow wiki pages, get notifications
     href: follow-notifications-wiki-pages.md

@@ -27,7 +27,7 @@ The $batch endpoint is located at:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
->  https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+>  https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/$batch
 > ``` 
 > 
 > [!NOTE]
@@ -39,7 +39,7 @@ The $batch endpoint is located at:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
+> https://{servername}:{port}/tfs/{OrganizationName}/_odata/{version}/$batch
 > ```
 > 
 > [!NOTE]

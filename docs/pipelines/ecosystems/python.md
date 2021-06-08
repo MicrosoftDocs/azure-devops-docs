@@ -3,7 +3,7 @@ title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.date: 11/04/2019
+ms.date: 06/01/2021
 monikerRange: '>=azure-devops-2019'
 ms.custom: devx-track-python
 ---
@@ -12,7 +12,7 @@ ms.custom: devx-track-python
 
 **Azure Pipelines**
 
-Use a pipeline to automatically build and test your Python apps or scripts. After those steps are done, you can then deploy or publish your project.
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a simple pipeline. 
 
 If you want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
@@ -234,10 +234,10 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 
 ```yaml
 - script: |
-    pip install pytest
+    pip install pytest pytest-azurepipelines
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
-  displayName: 'Test with pytest'
+    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
+  displayName: 'pytest'
 ```
 ::: moniker range=">=azure-devops-2020"
 ### Run tests with Tox
@@ -294,7 +294,6 @@ Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
 ## Package and deliver code
