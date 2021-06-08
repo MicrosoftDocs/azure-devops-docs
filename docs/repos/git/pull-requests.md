@@ -20,7 +20,7 @@ Pull requests let your team review code and give feedback on changes before merg
 Pull requests can come from either topic branches within the same repository or from a branch in a [fork](forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-New to pull requests? Learn more about how to [get feedback with Git pull requests](/azure/devops/repos/git/pull-requests).
+New to pull requests? Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
 ## Pull request guidelines
 
