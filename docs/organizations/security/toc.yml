@@ -181,6 +181,9 @@
   - name: Git permissions prior to TFS 2017 Update 1
     href: ../../repos/git/set-git-repository-permissions.md
     displayName: settings, access, security
+  - name: Download repository permissions report
+    href: download-permissions-report.md
+    displayName: json
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles
