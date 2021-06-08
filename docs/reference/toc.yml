@@ -58,10 +58,17 @@
   items:
   - name: Naming restrictions
     href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Workflow states & categories
-    href: ../boards/work-items/workflow-and-state-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+ - name: Work item field index
+    href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Work item fields and attributes
+    href: ../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    displayname: attribute, Work Item Field Explorer
+  - name: Workflow states & categories
+    href: ../boards/work-items/workflow-and-state-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Link type reference
+    href: ../boards/queries/link-type-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area & iteration paths
