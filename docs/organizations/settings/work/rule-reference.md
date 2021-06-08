@@ -196,7 +196,7 @@ The On-premises XML process defines rules using XML elements. All of these rule 
 > For TFS 2017 and later versions, the `VALIDUSER` element isn't supported. 
 
 
-### Where to apply a field rule  Apply rules to State and Reason fields
+### Where to apply a field rule   
 
 When you want a rule to apply to a field throughout the life of the work item, specify it within the `FIELD` section. For example, a field that is required for a bug that is new and active remains required until the bug is closed. Otherwise, if you want it applied based on a change in State, Reason, or transition, specify it within the `WORKFLOW` section.
 
@@ -1035,7 +1035,7 @@ To avoid problems with users updating work items from various clients, specify A
 <!-- add a tip to custom-rules.md --> 
 
 > [!NOTE] 
-> The WIT Client OM is deprecated. As of January 1, 2020, it not longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
+> The WIT Client OM is deprecated. As of January 1, 2020, it no longer is supported when working against Azure DevOps Services and Azure DevOps Server 2020.  
 
 
 ## Order in which rules are evaluated 
