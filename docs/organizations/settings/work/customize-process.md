@@ -102,7 +102,7 @@ To add a rule, choose your inherited process, the work item type, and then choos
 > [!div class="mx-imgBorder"]  
 > ![Process, WIT, Bug, Layout, New custom control](media/rules/custom-rule-create-rule.png) 
 
-To learn more, see [Add a rule to a work item type](custom-rules.md).
+To learn more, see [Rules and rule evaluation](custom-rules.md).
 
 ## Add or modify work item types
 

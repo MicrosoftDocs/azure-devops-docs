@@ -259,7 +259,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../reference/add-modify-field.md" data-raw-source="[Azure DevOps Server](../reference/add-modify-field.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Azure DevOps Server](../organizations/settings/work/rule-reference.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -386,15 +386,15 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Add or modify a field </b></p>
-<p><a href="../reference/add-modify-field.md" data-raw-source="[Add or modify a field](../reference/add-modify-field.md)">Add or modify a field</a> to support work tracking and reporting by editing the WIT definition.</p>
+<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Add or modify a field](../organizations/settings/work/rule-reference.md)">Add or modify a field</a> to support work tracking and reporting by editing the WIT definition.</p>
 
 
 <p><b>Add rules to a field </b></p>
-<p>Apply <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[various rules to custom fields](../reference/xml/apply-rule-work-item-field.md)">various rules to custom fields</a> to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
+<p>Apply <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[various rules to custom fields](../organizations/settings/work/rule-reference.md)">various rules to custom fields</a> to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
 
 
 <p><b>Remove a field </b></p>
-<p><a href="../reference/add-modify-field.md" data-raw-source="[Stop tracking a field by removing the field](../reference/add-modify-field.md)">Stop tracking a field by removing the field</a> from the work item form of select work item types. </p>
+<p><a href="../organizations/settings/work/rule-reference.md" data-raw-source="[Stop tracking a field by removing the field](../organizations/settings/work/rule-reference.md)">Stop tracking a field by removing the field</a> from the work item form of select work item types. </p>
 
 
 </td>
@@ -684,11 +684,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (Azure DevOps Server)  </b></p>
-<p>You can define rules that <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[change a field value based on the contents of other fields](../reference/xml/apply-rule-work-item-field.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
+<p>You can define rules that <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[change a field value based on the contents of other fields](../organizations/settings/work/rule-reference.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
 
 
 <p><b>Restrict who can make changes during workflow transitions (Azure DevOps Server)  </b></p>
-<p>Set a condition field rule that applies to a group to <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[restrict who can make changes to a workflow or a field](../reference/xml/apply-rule-work-item-field.md)">restrict who can make changes to a workflow or a field</a>.  </p>
+<p>Set a condition field rule that applies to a group to <a href="../organizations/settings/work/rule-reference.md" data-raw-source="[restrict who can make changes to a workflow or a field](../organizations/settings/work/rule-reference.md)">restrict who can make changes to a workflow or a field</a>.  </p>
 
 
 <p><b>Event-generated workflow changes or field assignments (Azure DevOps Server)</b></p>
