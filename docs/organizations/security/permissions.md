@@ -2408,7 +2408,7 @@ You manage the security of each [Git repository](../../repos/git/set-git-reposit
 ::: moniker range="<= tfs-2017" 
 > [!NOTE] 
 > These permissions have changed in TFS 2017 Update 1 and Azure DevOps.
-> If you are using an earlier version of TFS, see the [previous list of permissions](/azure/devops/repos/git/set-git-repository-permissions).
+> If you are using an earlier version of TFS, see the [previous list of permissions](../../repos/git/set-git-repository-permissions.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops" 
