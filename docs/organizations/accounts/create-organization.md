@@ -8,7 +8,7 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 05/21/2021
+ms.date: 06/07/2021
 monikerRange: '<= azure-devops'
 ---
 
@@ -77,6 +77,7 @@ For more information about how to create a project collection, see [create a pro
 
 ## Related articles
 
+* [Get started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 * [Rename your organization](rename-organization.md)
 * [Change organization time-zone](change-organization-location.md)
 * [Change organization owner](change-organization-ownership.md)

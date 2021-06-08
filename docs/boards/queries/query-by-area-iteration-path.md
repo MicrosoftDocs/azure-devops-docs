@@ -98,7 +98,6 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 
 ## Classification field reference 
 
-
 > [!div class="mx-tdCol2BreakAll"]  
 > |**Field name**|**Description**|**Reference name**|
 > |---|---|---|
@@ -109,7 +108,7 @@ For each field, data path=```TreePath```, reportable type=```Dimension```, index
 
 If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
 
-You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
+You can't apply most field rules to system fields, such as System.AreaPath and System.IterationPath fields. To learn more, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).
 
 The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
@@ -129,15 +128,6 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
-
-::: moniker range="<= azure-devops-2019"
-<a name="field-rules"></a>
-
-### Supported field rules  
-
-For the On-premises XML process model, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 
-
-::: moniker-end
 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
