@@ -37,16 +37,26 @@ You can publish your symbols to different destinations by using the **Index Sour
 - [Publish to Portable PDBs](/azure/devops/pipelines/artifacts/symbols?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops#portable-pdbs)
 
 ## Consuming symbol files
-Once you've published your symbol files, users can use them in the debugging process in [Visual Studio](../symbols/debug-with-symbols-visual-studio.md) or [WinDbg](../symbols/debug-with-symbols-windbg.md). The debugger will find the appropriate symbols using a unique ID that identifies the symbols associated with the binary.
 
+Once the symbol files are published, you can use Visual Studio or WinDbg to consume the symbols to debug your application. The debugger will find the appropriate symbols using a unique ID that identifies the symbols associated with the binary.
+
+- [Use symbols in Visual Studio](../symbols/debug-with-symbols-visual-studio.md)
+- [Use symbols in WinDbg](../symbols/debug-with-symbols-windbg.md) 
+ 
 ## Using symbols with NuGet packages
-If you publish your application's executables via NuGet packages, there are two ways to share symbols with your users. NuGet can make *symbols packages*, which are denoted by a `.snupkg` extension, but these packages are only needed if you're publishing symbols to [SymbolSource.org](http://www.symbolsource.org/) or another external symbol host.
 
-### Sharing private symbols with Symbol Server
-If you're publishing packages to Azure Artifacts, there's no need to use NuGet symbols packages. Instead, configure the [Index Sources and Publish Symbols](../../pipelines/tasks/build/index-sources-publish-symbols.md) task in Team Build [using the walkthrough](../../pipelines/artifacts/symbols.md).
+If your application uses the .NET standard NuGet packages, there are two ways to share your symbols. You can use NuGet to generate *symbol packages* (.snupkg), but these packages are only needed if you're publishing your symbols to SymbolSource.org or another external symbol host, or you can use the *Index Sources and Publish Symbols* task to publish your symbols to Azure Artifact's symbol server.
 
-### Sharing public symbols on SymbolSource.org
-If you're publishing your packages to NuGet.org, you can publish corresponding [symbols packages](/nuget/create-packages/symbol-packages) to [SymbolSource.org](http://www.symbolsource.org/). If you're using the [NuGet](../../pipelines/tasks/package/nuget.md) or [.NET Core](../../pipelines/tasks/build/dotnet-core-cli.md) tasks in Team Build, check **Create symbols package** to create a symbol package when you pack your executables.
+#### Sharing private symbols with Symbol Server
+If you're publishing packages to Azure Artifacts, there's no need to use NuGet symbols packages. Instead, configure the [Index Sources and Publish Symbols](../../pipelines/tasks/build/index-sources-publish-symbols.md) task to publish your symbols to the Artifact's symbols server.
 
-## Learn more
-To learn more about symbols, see [the Windows documentation](/windows-hardware/drivers/debugger/introduction-to-symbols).
+#### Sharing public symbols on SymbolSource.org
+If you're publishing your packages to NuGet.org, you can create [symbol packages](/nuget/create-packages/symbol-packages) and publish them to [SymbolSource.org](http://www.symbolsource.org/).
+
+## Related articles
+
+- [Artifacts feeds overview](./feeds.md)
+- [Feed views](./views.md)
+- [Set up feed permissions](../feeds/feed-permissions.md)
+- [Understand upstream sources](./upstream-sources.md)
+- [Configure upstream behavior](./upstream-behavior.md)
