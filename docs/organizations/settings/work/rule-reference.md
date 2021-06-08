@@ -100,11 +100,11 @@ Note the following:
 For an inherited process, each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. For most rules, you can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
-```
-&nbsp;&nbsp;&nbsp;(Condition) When a work item State is *Active*  
-&nbsp;&nbsp;&nbsp;(Condition) And when the value of *Value Area* = *Business*  
-&nbsp;&nbsp;&nbsp;(Action) Then make required *Story Points*  
-```
+
+&nbsp;&nbsp;&nbsp;```(Condition) When a work item State is``` *Active*  
+&nbsp;&nbsp;&nbsp;```(Condition) And when the value of``` *Value Area* = *Business*  
+&nbsp;&nbsp;&nbsp;```(Action) Then make required``` *Story Points*  
+
 
 > [!NOTE]  
 > Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md). 
