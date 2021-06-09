@@ -590,8 +590,8 @@ When a pipeline is cancelled, the agent sends a sequence of commands to the proc
 
 The commands issued to the process are different based on the agent operating system.
 
-* macoS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
-* Windows - THe commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill
+* macOS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
+* Windows - THe commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.
 
 > [!NOTE]
 > Azure Pipelines Agent is open source on GitHub. Source code reference: https://github.com/microsoft/azure-pipelines-agent
