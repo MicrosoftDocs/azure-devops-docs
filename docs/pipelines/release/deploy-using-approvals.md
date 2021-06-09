@@ -98,8 +98,6 @@ Depending on the scenario, sometimes you may need to add manual intervention to 
 
 1. Select **Save** when you are done.
 
-<a name="view-approvals"></a>
-
 ## Set up manual validation 
 
 You can use the [manual validation](../tasks/utility/manual-validation.md) task in your YAML to pause the pipeline run and wait for manual approval. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build packages before starting a computation-intensive job.

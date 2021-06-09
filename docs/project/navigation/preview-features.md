@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 03/03/2021
+ms.date: 05/18/2021
 ---
 
 
@@ -57,32 +57,17 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-   :::column-end:::
-   :::column span=".5"::: 
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="3":::
+      [Copy Dashboard Experience](../../report/dashboards/copy-dashboard.md)  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
-      [Git Forks](../../repos/git/forks.md)  
-      [Historical graph for agent pools](/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview)  
-      [New account manager](#account-manager)  
+      [Historical graph for agent pools](/azure/devops/release-notes/2020/sprint-179-update#historical-graph-for-agent-pools-preview) 
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
-      &nbsp;  
+       ✔️   
+       ✔️   
       &nbsp;  
        ✔️   
-       ✔️    
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
@@ -95,18 +80,21 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
+      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)
+      [New account manager](#account-manager)  
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
    :::column-end:::
    :::column span=".5"::: 
+      &nbsp;  
        ✔️   
        ✔️   
        ✔️   
-       ✔️  
+       ✔️   
    :::column-end:::
    :::column span=".5"::: 
+       ✔️   
        ✔️   
        ✔️   
        ✔️   
@@ -118,9 +106,9 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="3":::
       [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
       [New Teams page](../../organizations/settings/add-teams.md)  
-      [New Test Plans Page](../../test/new-test-plans-page.md)  
       New TFVC pages   
       New Wiki experience  
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
@@ -140,21 +128,15 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      [Limit user visibility for projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
       Task Insights for Failed Pipeline Runs   
    :::column-end:::
    :::column span=".5":::
        ✔️   
        ✔️   
-       ✔️  
-       ✔️   
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
-       ✔️   
-      &nbsp;  
        ✔️   
    :::column-end:::
 :::row-end:::
@@ -237,11 +219,7 @@ Choose your profile menu and then choose **Preview features**.
 To enable or disable a feature, choose the slider. 
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself](media/preview-features/preview-features-s170a.png) 
-
-> [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself, part 2](media/preview-features/preview-features-s170-3.png) 
-
+> ![Preview features options for yourself](media/preview-features/preview-features-user.png) 
 
 For information on other user settings and preferences, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
 
@@ -256,8 +234,12 @@ When you enable a feature at the organization level, you essentially turn it on 
 > If you don't see the **for this account** menu option, then you aren't a member of the Project Collection Administrators group. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the organization](media/preview-features/organization-settings-1.png)
+> ![Screenshot of Preview features options for the organization, part 1.](media/preview-features/org-features-s187-1.png)
 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Preview features options for the organization, part 2.](media/preview-features/org-features-s187-2.png)
+> 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
@@ -330,12 +312,14 @@ With **Experimental themes** enabled, you can select among a number of additiona
 ### Azure Boards 
 
 - [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
-- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)  
-- [New Queries Experience](../../boards/queries/view-run-query.md)   
+- [Enable group by tags for work item chart widget on dashboard](../../boards/queries/add-tags-to-work-items.md#group-by-tags)  
+- [New Rich Text Editor](../../boards/queries/share-plans.md#rich-text)- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Work Items](../../boards/work-items/view-add-work-items.md)   
 
 ### Azure Repos
 
+- [Git Forks](../../repos/git/forks.md) 
+- [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos)  
 - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
 - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
@@ -348,6 +332,7 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 ### Azure Test Plans
 
+- [New Test Plans Page](../../test/new-test-plans-page.md)  
 - [New Test Plan Experience](/azure/devops/release-notes/2018/jun-19-vsts#test-1)  
 
 ### Dashboards and Analytics 

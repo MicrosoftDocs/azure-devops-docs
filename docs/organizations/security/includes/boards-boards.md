@@ -43,24 +43,6 @@ ms.date: 02/25/2021
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="2":::
-      View boards and open work items
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-   :::column span="1":::
-      ✔️
-   :::column-end:::
-:::row-end:::
----
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="2":::
@@ -207,7 +189,7 @@ ms.date: 02/25/2021
      *(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)*
    :::column-end:::
    :::column span="1":::
-      ✔️
+       
    :::column-end:::
    :::column span="1":::
       

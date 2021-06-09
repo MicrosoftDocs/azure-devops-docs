@@ -61,7 +61,7 @@
           displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
         - name: Multiple repositories
           href: repos/multi-repo-checkout.md
-          displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
+          displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, self
     - name: Build history
       href: build/history.md
     - name: Triggers
@@ -77,7 +77,7 @@
           displayName: build completion, completion trigger
         - name: Build completion triggers (classic)
           href: process/pipeline-triggers-classic.md
-          displayName: build completion, completion trigger, pipeline resource
+          displayName: build completion, completion trigger
         - name: Release triggers (classic)
           href: release/triggers.md
           displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
@@ -233,23 +233,31 @@
   items:
     - name: Build multiple branches
       href: build/ci-build-git.md
+      displayName: build, pipelines build, multiple branches
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
+      displayName: platforms, multiplaform
     - name: Use service containers
       href: process/service-containers.md
+      displayName: containers, service containers
     - name: Cross-platform scripts
       href: scripts/cross-platform-scripting.md
+      displayName: cross platform, scripts
     - name: Run a PowerShell script
       href: scripts/powershell.md
+      displayName: powershell, scripts
     - name: Run Git commands
       href: scripts/git-commands.md
+      displayName: scripts, git, cmd, commands
     - name: Reduce build time using caching
       href: release/caching.md
+      displayName: caching, pipelines caching, cache
     - name: Configure build run numbers
       href: process/run-number.md
       displayName: build number, run number, tokens, variables,
     - name: Classic Build options
       href: build/options.md
+      displayName: classic build, build options
 - name: Run pipeline tests
   items:
     - name: About pipeline tests
@@ -344,46 +352,65 @@
   items:
     - name: Release pipelines
       href: release/index.md
+      displayName: release, deploy, deployment
     - name: Deploy from multiple branches
       href: release/deploy-multiple-branches.md
+      displayName: multiple branches, deployment
     - name: Deploy pull request builds
       href: release/deploy-pull-request-builds.md
+      displayName: pr release, deployment
     - name: Classic CD pipelines
       href: release/define-multistage-release-process.md
+      displayName: classic release, classic deployment
     - name: Pipelines with PowerShell DSC
       href: release/dsc-cicd.md
+      displayName: powershell, dsc
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
+      displayName: environment, templates, stages
     - name: Deploy apps to Azure (Classic)
       items:
         - name: Azure Web App (Classic)
           href: apps/cd/deploy-webdeploy-webapps.md
+          displayName: web app, webdeploy
         - name: Azure Web App for Containers (Classic)
           href: apps/cd/deploy-docker-webapp.md
+          displayName: containers, docker, azure web app
         - name: Azure Kubernetes Service (Classic)
           href: apps/cd/deploy-aks.md
+          displayName: kubernetes, classic release
         - name: Azure IoT Edge (Classic)
           href: release/deploy-iot-using-azure-pipelines.md
+          displayName: iot, edge
         - name: Azure Cosmos DB CI/CD (Classic)
           href: targets/cosmos-db.md
+          displayName: cosmos, db, database
         - name: Azure Policy Compliance (Classic)
           href: policies/azure-policy.md
+          displayName: policy, compliance
         - name: Azure VM using Azure Resource Manager (Classic)
           href: apps/cd/azure/deploy-provision-azure-vm.md
+          displayName: arm, azure vm
     - name: Deploy apps to VMs (Classic)
       items:
         - name: Linux VMs (Classic)
           href: apps/cd/deploy-linuxvm-deploygroups.md
+          displayName: linux, deployment vm
         - name: Windows VMs (Classic)
           href: apps/cd/deploy-webdeploy-iis-deploygroups.md
+          displayName: windows vm, deployment vm
         - name: IIS servers (WinRM) (Classic)
           href: apps/cd/deploy-webdeploy-iis-winrm.md
+          displayName: iis, server, winrm
         - name: Extend IIS Server deployments (Classic)
           href: apps/cd/howto-webdeploy-iis-deploygroups.md
+          displayName: iis, server
         - name: SCVMM (Classic)
           href: targets/scvmm.md
+          displayName: scvmm, targets
         - name: VMware (Classic)
           href: targets/vmware.md
+          displayName: vmware, targets
 - name: Deploy apps using containers
   items:
     #  - name: Orchestration overview (New)
@@ -431,34 +458,48 @@
   items:
     - name: About artifacts
       href: artifacts/artifacts-overview.md
+      displayName: artifacts, artifacts overview
     - name: Publish & download artifacts
       href: artifacts/pipeline-artifacts.md
+      displayName: download artifacts, publish artifacts, packages
     - name: Build artifacts
       href: artifacts/build-artifacts.md
+      displayName: build, artifacts
     - name: Releases in Azure Pipelines
       href: release/releases.md
+      displayName: release artifacts, deployment artifacts
     - name: Release artifacts and artifact sources
       href: release/artifacts.md
+      displayName: artifacts, source, release artifacts
     - name: Maven
       href: artifacts/maven.md
+      displayName: maven, package
     - name: npm
       href: artifacts/npm.md
+      displayName: npm, package
     - name: NuGet
       href: artifacts/nuget.md
+      displayName: nuget, package
     - name: Python
       href: artifacts/pypi.md
+      displayName: python, package
     - name: Symbols
       href: artifacts/symbols.md
-    - name: Universal
+      displayName: symbols, debugging, debugger
+    - name: Universal Packages
       href: artifacts/universal-packages.md
+      displayName: package, universal
     - name: Restore NuGet packages
       href: packages/nuget-restore.md
+      displayName: nuget, package, restore
     - name: Restore & publish NuGet packages (Jenkins)
       href: packages/jenkins.md
+      displayName: nuget, package, restore, publish, jenkins
 - name: Create & use resources
   items:
     - name: About resources
       href: process/about-resources.md
+      displayName: resource, resources, pipeline resource, resources security, resources traceability
     - name: Add resources to a pipeline
       href: process/resources.md
       displayName: webhook, pipelines resource, repository resource, package resource, troubleshoot
@@ -468,7 +509,7 @@
     - name: Add & use variable groups
       href: library/variable-groups.md
       displayName: Azure key vault, link secrets, expansion, expand variables
-    - name: Secure files
+    - name: Use secure files
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
@@ -566,14 +607,16 @@
       items:
         - name: Microsoft Teams
           href: integrations/microsoft-teams.md
+          displayName: integrations, teams
         - name: Slack
           href: integrations/slack.md
+          displayName: integrations, slack
         - name: Integrate with ServiceNow
           href: release/approvals/servicenow.md
+          displayName: integrations, servicenow
         - name: Integrate with Jenkins (Classic)
           href: release/integrate-jenkins-pipelines-cicd.md
-        - name: Automate infrastructure deployment with Terraform
-          href: release/automate-terraform.md
+          displayName: integrations, jenkins
 - name: Migrate
   items:
     - name: Migrate from Classic pipelines
