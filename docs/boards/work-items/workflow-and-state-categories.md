@@ -226,21 +226,27 @@ To learn more about process models, see [Customize your work tracking experience
 
 ## Related articles
 
-::: moniker range="azure-devops"
-- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+::: moniker range=">= azure-devops-2019"
+**Inheritance process model**
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md)
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md) 
+- [Sample custom rule scenarios](../../organizations/settings/work/rule-samples.md)  
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
+**On-premises XML process model **
+
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md) 
+- [Sample custom rule scenarios](../../organizations/settings/work/rule-samples.md)  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+**Dashboard widgets**
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
 ::: moniker-end
 
-
-::: moniker range="<= tfs-2018"
-- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
-::: moniker-end
+ 
