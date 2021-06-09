@@ -594,8 +594,7 @@ The commands issued to the process are different based on the agent operating sy
 * Windows - THe commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill
 
 > [!NOTE]
-> Azure Pipelines Agent is open source on GitHub
-Source code reference: https://github.com/microsoft/azure-pipelines-agent
+> Azure Pipelines Agent is open source on GitHub. Source code reference: https://github.com/microsoft/azure-pipelines-agent
 
 ## Learn more
 
