@@ -56,7 +56,7 @@ Learn about how to [Manage Azure administrators](/azure/active-directory/users-g
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](/azure/devops/organizations/accounts/faq-azure-access#faq-connect).
+For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](./faq-azure-access.yml#faq-connect).
 
 ## Related articles
 
@@ -64,4 +64,4 @@ For answers to frequently asked questions about connecting to, disconnecting fro
 * [About access with Azure AD](access-with-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](/azure/devops/organizations/accounts/faq-azure-access#connect-to-disconnect-from-or-change-azure-ad-connection)
+* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](./faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

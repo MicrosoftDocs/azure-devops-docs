@@ -105,7 +105,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
 -   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
--   **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).    
+-   **Help text**. See [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
 ## Examples  

@@ -240,7 +240,7 @@ You can define rules that update fields whenever the following events occur:
 
 - Assign a field rule under `DEFAULTREASON` or `REASON` when you want the rules to apply only for that specific reason.  
 
-  If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field. To learn more about rule usage, see [Apply a field rule](apply-rule-work-item-field.md).  
+  If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field. To learn more about rule usage, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
 
   You should try to minimize the number of conditions that you define for any one type of work item. With each conditional rule that you add, you increase the complexity of the validation process that occurs every time that a team member saves a work item. Complex rule sets might increase the time that is required to save the work item.  
 
