@@ -167,7 +167,10 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 >        </WHEN>  
 > </FIELD>  
 > ```  
-> <a name="DependentPickList"></a> 
+
+
+
+<a name="DependentPickList"></a> 
 
 ##  Define a conditional pick list  
  The following example demonstrates a conditional pick list in which the allowed values for the Problem Type field are limited, based on whether the value of the ProblemCharacteristic field is set to Documentation.  

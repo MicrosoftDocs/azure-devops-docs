@@ -191,8 +191,7 @@ Before you customize a process, we recommend that you review [Configure and cust
 For more information about work item type rules that apply toward restricting operations, see:
 
 - [Apply rules to workflow states (Inheritance process)](../settings/work/apply-rules-to-workflow-states.md)
-- [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
-- [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
+- [Sample rule scenarios](../settings/work/rule-samples.md)  
 - [Define area paths and assign to a team](../settings/set-area-paths.md)
 
 ## Hide organization settings from users
