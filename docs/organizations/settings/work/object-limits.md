@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: ">= tfs-2013"
-ms.date: 01/19/2021
+ms.date: 06/09/2021
 ---
 
 # Work tracking, process, and project limits
@@ -32,7 +32,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Query execution time  |  2 minutes | 
+| Query execution time  |  30 seconds | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
