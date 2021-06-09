@@ -3,7 +3,7 @@ title: Project scoped feeds
 description: Understand the difference between project-scoped and organization-scoped feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/15/2020
+ms.date: 08/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -38,7 +38,7 @@ Here are the main differences between the two feed types:
     * All new feeds are recommended to be project-scoped. Creating a new feed through the create feed web UI will create a project-scoped feed.
 
 1. **Connection**:
-    * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed.
+    * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed. See [Package permissions](./feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 ## What can I do if I'm concerned about my project-scoped feed's visibility?
 

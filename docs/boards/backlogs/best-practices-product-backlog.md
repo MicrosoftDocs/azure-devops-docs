@@ -118,5 +118,5 @@ As the need to perform this work arises, capture it along with other items on yo
 
 ## Additional resources
 
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)  
-- [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)  
+- [What is Agile?](/devops/plan/what-is-agile)  
+- [Building productive, customer focused teams](/devops/plan/building-productive-teams)  

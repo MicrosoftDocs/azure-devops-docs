@@ -50,10 +50,10 @@ ms.date: 04/14/2021
      *(Stakeholders can only add items to the bottom of the backlog)*
    :::column-end:::
    :::column span="1":::
-      Read only
+      ✔️
    :::column-end:::
    :::column span="1":::
-      ✔️
+      
    :::column-end:::
    :::column span="1":::
       ✔️

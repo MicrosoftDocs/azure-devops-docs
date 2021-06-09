@@ -26,16 +26,16 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 
 ## Table of contents (TOC) for Wiki pages
 
-To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag is added and there's at least one heading on the page.
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
 > ![Table of contents](media/toc_sample.png)
 
 The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
-Only Markdown headings are considered for TOC (HTML heading tags aren't).
+Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
 
-All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
-For example: Adding bold and italics to a heading text renders the TOC as follows.
+All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
+For example, adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
 > ![Tags for TOC](media/toc_tags.png)
@@ -97,7 +97,7 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 ## YAML tags
 
-Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+Any file that contains a YAML block in a Wiki gets processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic data types, lists, and objects as values. The syntax is supported in wiki, code file preview.
 
 Basic example:
 

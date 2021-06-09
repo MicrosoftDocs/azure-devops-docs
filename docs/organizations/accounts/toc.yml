@@ -1,10 +1,10 @@
-- name: About managing organizations 
+- name: About managing organizations
   href: organization-management.md
   displayName:
 - name: Plan your organizational structure
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   displayName: projects, teams, repos, version control, scenarios, quantity, mapping, reporting, structure, data
-- name: Create your organization 
+- name: Create your organization
   href: create-organization.md
   displayName: new, project
 - name: Look up organization owner
@@ -18,6 +18,9 @@
   - name: Add privacy policy URL
     href: add-privacy-policy-url.md
     displayName: GDPR, organization, public project, external guest, data, protection
+  - name: Use policies to manage users' PATs (for admins)
+    href: manage-pats-with-policies-for-administrators.md
+    displayName: restrict, creation, global, full, scope, maximum, lifespan, authentication
   - name: Change time zone
     href: change-time-zone.md
     displayName: update, organization, user profile, settings

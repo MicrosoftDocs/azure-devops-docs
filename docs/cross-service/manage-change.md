@@ -220,7 +220,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Agile and Agile culture
 
-- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [What is Agile?](/devops/plan/what-is-agile)
 - [Agile culture](../boards/plans/agile-culture.md) 
 - [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 
@@ -228,30 +228,29 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Work items and process guidance 
 
-- [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process)
-- [Acceptance criteria](/azure/devops/boards/backlogs/best-practices-product-backlog#acceptance-criteria)
-- [Definition of Done](/azure/devops/boards/boards/definition-of-done)
-- [Manage change using Change request form](/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change)  
-- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items) 
-- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
+- [Capability Maturity Model Integration (CMMI) process](../boards/work-items/guidance/cmmi-process.md)
+- [Acceptance criteria](../boards/backlogs/best-practices-product-backlog.md#acceptance-criteria)
+- [Definition of Done](../boards/boards/definition-of-done.md)
+- [Manage change using Change request form](../boards/work-items/guidance/cmmi/guidance-manage-change.md)  
+- [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md) 
+- [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md)
 
 #### Monitor and report on progress
 
-- [Triage work items](/azure/devops/boards/queries/triage-work-items)
-- [Velocity metrics and usage guidance](/azure/devops/report/dashboards/velocity-guidance)
-- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
-- [Burndown guidance, scope management](/azure/devops/report/dashboards/burndown-guidance)
-- [Cumulative flow, lead time, and cycle time guidance](/azure/devops/report/dashboards/cumulative-flow-cycle-lead-time-guidance)
+- [Triage work items](../boards/queries/triage-work-items.md)
+- [Velocity metrics and usage guidance](../report/dashboards/velocity-guidance.md)
+- [View or configure team velocity](../report/dashboards/team-velocity.md)
+- [Burndown guidance, scope management](../report/dashboards/burndown-guidance.md)
+- [Cumulative flow, lead time, and cycle time guidance](../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md)
 
 #### Notifications
 
-- [Default and supported notifications](/azure/devops/notifications/oob-built-in-notifications) 
-- [Manage personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
-- [Manage notifications for a team or group](/azure/devops/notifications/manage-team-group-notifications)
+- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)
   
  
 #### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
 - [Share information within work items and social tools](../boards/queries/share-plans.md)
- 

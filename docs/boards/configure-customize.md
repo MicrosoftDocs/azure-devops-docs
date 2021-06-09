@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2020
+ms.date: 05/18/2021
 ---
 
 
@@ -310,7 +310,7 @@ Area paths are used to group work items by product, feature, or business areas a
 
 ### Area paths and hierarchical grouping 
 
-The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
+The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early in this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
 
@@ -318,18 +318,7 @@ You can also assign tags to work items to group them for query and filter purpos
 
 ### Area path-dependent tools 
 
-To use the following tools, teams must subscribe to area paths. 
-
-- [Boards> all tools](boards/kanban-overview.md)  
-- [Backlogs> all tools](backlogs/backlogs-overview.md)  
-- [Sprints> all tools](sprints/scrum-overview.md)  
-- [Analytics> all](../report/dashboards/overview.md#in-context-reports-work-tracking) and [Rollup](#rollup)  
-- Portfolio planning tools   
-	- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views  
-	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items  
-	- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of a selected team epic and features with the ability to drill down into child items  
-	- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-	
+[!INCLUDE [temp](includes/list-area-dependent-tools-tasks.md)]
 
 ### Area paths and team assignments 
 
@@ -358,7 +347,6 @@ Recommendations:
 - Define epics and scenarios for large initiatives that will take two or more sprints to complete
 - Define requirements for work that can be accomplished in a single sprint and can be assigned to a single individual  
 - Define tasks to track more granular details or when you want to track time spent working 
-
 
 > [!TIP]    
 > - Work items can only be assigned to a single individual. So when defining work items, consider how many work items are needed to assign the work to those individuals who will be tasked to complete the work.  
@@ -431,24 +419,10 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 > [!div class="mx-imgBorder"]  
 > ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
-
-
 > [!NOTE]   
 > While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](./backlogs/filter-backlogs-boards-plans.md).
 
-
-To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
-
-- [Sprints> all tools](sprints/scrum-overview.md) 
-- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views
-- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team features 
-- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-- And all other timeline or calendar view tools  
-
-
-> [!TIP]    
-> If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view, tool, or portfolio planning tool.   
-
+[!INCLUDE [temp](includes/list-sprint-dependent-tools.md)]
 
 ## Time tracking 
 

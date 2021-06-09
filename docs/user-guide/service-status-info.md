@@ -71,7 +71,7 @@ If you're experiencing an issue with Azure DevOps and see a corresponding event 
 action to notify us. 
 
 However, if you don't see your issue reported on the Azure DevOps Services health page, you can report your issue using 
-the [Report a Service Availability Issue](https://aka.ms/azure-devops-status-support) form. Or, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). 
+the Report a Service Availability Issue form. Or, you can ask a question through the [Azure DevOps Services virtual support agent](https://azure.microsoft.com/support/devops/). 
 
 For issues not related to availability, refer to our [Developer Community portal](https://developercommunity.visualstudio.com/report?space=21&entry=problem). 
 

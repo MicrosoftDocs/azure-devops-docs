@@ -165,7 +165,7 @@ By default, the project-level Readers groups have read-only permissions.
 ---
 :::row:::
    :::column span="2":::
-      **Branch Creation**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](/azure/devops/repos/git/branch-policies). At the branch level, can push their changes to the branch and lock the branch.
+      **Branch Creation**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../../repos/git/branch-policies.md). At the branch level, can push their changes to the branch and lock the branch.
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -180,7 +180,7 @@ By default, the project-level Readers groups have read-only permissions.
 ---
 :::row:::
    :::column span="2":::
-      **Contribute**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](/azure/devops/repos/git/branch-policies). At the branch level, can push their changes to the branch and lock the branch.
+      **Contribute**: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../../repos/git/branch-policies.md). At the branch level, can push their changes to the branch and lock the branch.
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -258,4 +258,4 @@ By default, the project-level Readers groups have read-only permissions.
 
 <a name="pcbs-has-read-by-default"></a>
 
-By default, the Project Collection Build Service can read from all repositories. Any pipeline which runs within the project collection scope can potentially read any repository in the organization or collection. To remove this permission for a repository, change the **Read** permission to **Deny** for the Project Collection Build Service. 
+By default, the Project Collection Build Service can read from all repositories. Any pipeline which runs within the project collection scope can potentially read any repository in the organization or collection. To remove this permission for a repository, change the **Read** permission to **Deny** for the Project Collection Build Service.

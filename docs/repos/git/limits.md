@@ -5,7 +5,7 @@ description: Resource limits applied to Git operations
 ms.assetid: 
 ms.technology: devops-code-git 
 ms.topic: reference
-ms.date: 04/23/2018
+ms.date: 05/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -42,7 +42,7 @@ size-garbage: 0 bytes
 In uncommon circumstances, repositories may be larger than 10GB.
 For instance, the Windows repository is at least 300GB.
 For that reason, we do not have a hard block in place.
-If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [VFS for Git](https://github.com/Microsoft/VFSForGit), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
+If your repository grows beyond 10GB, consider using [Git-LFS](manage-large-files.md), [Scalar](https://github.com/microsoft/Scalar), or [Azure Artifacts](../../artifacts/index.yml) to refactor your development artifacts.
 
 ## Push size
 

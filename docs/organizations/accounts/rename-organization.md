@@ -8,7 +8,7 @@ ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/16/2020
+ms.date: 05/11/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -30,6 +30,8 @@ To change your organization URL, you need at least Basic access and organization
 > You can't rename an organization within one hour of the most recent rename operation.
 
 ## Rename your organization
+
+[!INCLUDE [organization-name-limitation](../../includes/organization-name-limitation.md)]
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 

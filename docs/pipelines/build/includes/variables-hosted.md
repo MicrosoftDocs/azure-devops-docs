@@ -571,6 +571,16 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 <td>ID of the specific resource within the environment targeted in the deployment job to run the deployment steps. For example, <code>4</code>.</td>
 </tr>
 
+<tr>
+<td>Strategy.Name</td>
+<td>The name of the deployment strategy: <code>canary</code>, <code>runOnce</code>, or <code>rolling</code>.</td>
+</tr>
+
+<tr>
+<td>Strategy.CycleName</td>
+<td>The current cycle name in a deployment. Options are <code>PreIteration</code>, <code>Iteration</code>, or <code>PostIteration</code>.</td>
+</tr>
+
 </table>
 
 
@@ -639,7 +649,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.JobId</td>
-<td>A unique identifier for a single attempt of a single job.</td>
+<td>A unique identifier for a single attempt of a single job. The value is unique to the current pipeline.</td>
 <td>No</td>
 </tr>
 
