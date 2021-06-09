@@ -162,9 +162,9 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
 
    ![Selecting Pipelines on the project dashboard](../media/python/select-pipelines.png)
 
-1. Select **New pipeline**:
+1. Select **Create Pipeline**:
 
-   ![New pipeline button on the pipelines list](../media/python/new-pipeline.png)
+    :::image type="content" source="media/create-first-pipeline.png" alt-text="New pipeline button on the pipelines list.":::
 
 1. On the **Where is your code** screen, select **GitHub**. You may be prompted to sign into GitHub.
 
@@ -195,7 +195,7 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
 
 The YAML file contains the following key elements:
 
-- The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
+- The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `main` branch.
 - The `variables` that parameterize the YAML template
    
    > [!TIP]
