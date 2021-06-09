@@ -29,48 +29,54 @@ The following section includes the most common domain URLs to support sign in an
 
 ```CommonDomainURLs
 
-*.dev.azure.com
-*.vsassets.io
-*gallerycdn.vsassets.io
-*vstmrblob.vsassets.io
-aadcdn.msauth.net
-aadcdn.msftauth.net
-aex.dev.azure.com
-aexprodea1.vsaex.visualstudio.com
-amcdn.msftauth.net
-amp.azure.net
-app.vssps.dev.azure.com
-app.vssps.visualstudio.com
-azure.microsoft.com
-azurecomcdn.azureedge.net
-cdn.vsassets.io
-dev.azure.com
-go.microsoft.com
-graph.microsoft.com
-live.com
-login.live.com
-login.microsoftonline.com
-management.azure.com
-management.core.windows.net
-management.core.windows.net
-microsoft.com
-microsoftonline.com
-static2.sharepointonline.com
-visualstudio.com
-vsrm.dev.azure.com
-vstsagentpackage.azureedge.net
-windows.net
+https://*.dev.azure.com
+https://*.vsassets.io
+https://*gallerycdn.vsassets.io
+https://*vstmrblob.vsassets.io
+https://aadcdn.msauth.net
+https://aadcdn.msftauth.net
+https://aex.dev.azure.com
+https://aexprodea1.vsaex.visualstudio.com
+https://amcdn.msftauth.net
+https://amp.azure.net
+https://app.vssps.dev.azure.com
+https://app.vssps.visualstudio.com
+https://azure.microsoft.com
+https://azurecomcdn.azureedge.net
+https://cdn.vsassets.io
+https://dev.azure.com
+https://go.microsoft.com
+https://graph.microsoft.com
+https://live.com
+https://login.live.com
+https://login.microsoftonline.com
+https://management.azure.com
+https://management.core.windows.net
+https://microsoft.com
+https://microsoftonline.com
+https://static2.sharepointonline.com
+https://visualstudio.com
+https://vsrm.dev.azure.com
+https://vstsagentpackage.azureedge.net
+https://windows.net
+https://login.microsoftonline.com
+https://app.vssps.visualstudio.com 
+https://{organization_name}.visualstudio.com
+https://{organization_name}.vsrm.visualstudio.com
+https://{organization_name}.vstmr.visualstudio.com
+https://{organization_name}.pkgs.visualstudio.com
+https://{organization_name}.vssps.visualstudio.com
 ```
 
 <details>
 <summary>Various domain URL descriptions</summary>
 <br>
 <ul>
- <li>*gallerycdn.vsassets.io: hosts Azure DevOps extensions</li>
- <li>*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
- <li>cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
- <li>static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
- <li>vsrm.dev.azure.com: hosts package feeds</li>
+ <li>https://*gallerycdn.vsassets.io: hosts Azure DevOps extensions</li>
+ <li>https://*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
+ <li>https://cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
+ <li>https://static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
+ <li>https://vsrm.dev.azure.com: hosts package feeds</li>
 </ul>
 </details>
 
@@ -80,8 +86,8 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 > Azure DevOps uses Content Delivery Networks (CDNs) to serve static content. Users in China should also add the following domain URLs to an allowlist:
 >
 > ``` NuGetDomainURLs
-> *.vsassetscdn.azure.cn
-> *.gallerycdn.azure.cn
+> https://*.vsassetscdn.azure.cn
+> https://*.gallerycdn.azure.cn
 > ```
 
 ## More domain URLs
@@ -91,8 +97,8 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 Ensure the following domain URLs are allowed for Azure Artifacts:
 
 ```AzureArtifactsDomainURLs
-*.blob.core.windows.net
-*.visualstudio.com
+https://*.blob.core.windows.net
+https://*.visualstudio.com
 ```
 
 Also allow all IP addresses in the "name": "Storage.{your region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
@@ -102,8 +108,8 @@ Also allow all IP addresses in the "name": "Storage.{your region}" section of th
 Ensure the following domain URLs are allowed for NuGet connections:
 
 ``` NuGetDomainURLs
-azurewebsites.net
-nuget.org
+https://azurewebsites.net
+https://nuget.org
 ```
 
 > [!NOTE]
@@ -115,8 +121,8 @@ If you need to connect to Git repositories on Azure DevOps with SSH, allow reque
 
 ```SSHDomainURLs
 
-ssh.dev.azure.com
-vs-ssh.visualstudio.com
+https://ssh.dev.azure.com
+https://vs-ssh.visualstudio.com
 ```
 
 Also allow IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud**
