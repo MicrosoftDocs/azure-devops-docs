@@ -129,25 +129,25 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </td><td data-th="Description"><p>Specifies a condition under which to apply one or more rules to the current field. The rules apply to the current field when the value of another field is not changed in a revision to a work item. The parent element defines the current field.</p></td></tr></table>
 
 
- The following table describes how each optional, conditional-based rule is applied to the parent field when the conditional clause that you specify by using a **WHEN**, **WHENNOT**, **WHENCHANGED**, or **WHENNOTCHANGED** element is true. For more information, see [Apply a field rule](apply-rule-work-item-field.md).  
+ The following table describes how each optional, conditional-based rule is applied to the parent field when the conditional clause that you specify by using a **WHEN**, **WHENNOT**, **WHENCHANGED**, or **WHENNOTCHANGED** element is true. For more information, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
 
 |Element|Description|  
 |-------------|-----------------|  
 |[ALLOWEDVALUES](define-pick-lists.md)|The parent field must have a value that comes from the specified list of values.|  
 |[ALLOWEXISTINGVALUE](define-pick-lists.md)|The value of the parent field that already exists will be allowed, even if it violates other rules. This element is not applicable if the value of the parent field is changed.|  
-|[CANNOTLOSEVALUE](apply-rule-work-item-field.md)|Users can change the value of the parent field to NULL, but they cannot change it to any other value.|  
+|[CANNOTLOSEVALUE](../../organizations/settings/work/rule-reference.md)|Users can change the value of the parent field to NULL, but they cannot change it to any other value.|  
 |[COPY](define-default-copy-value-field.md)|The value of a third field is automatically copied into the parent field. You specify the third field in the **COPY** element.|  
 |[DEFAULT](define-default-copy-value-field.md)|This element specifies the default value of the parent field.|  
-|[EMPTY](apply-rule-work-item-field.md)|The parent field must not contain a value.|  
-|[FROZEN](apply-rule-work-item-field.md)|The parent field is frozen. When a field is frozen, you can change its value to NULL, but you cannot change it to any other value.|  
+|[EMPTY](../../organizations/settings/work/rule-reference.md)|The parent field must not contain a value.|  
+|[FROZEN](../../organizations/settings/work/rule-reference.md)|The parent field is frozen. When a field is frozen, you can change its value to NULL, but you cannot change it to any other value.|  
 |[MATCH](apply-pattern-matching-to-string-field.md)|The value of the parent field must match the pattern that you specify.|  
-|[NOTSAMEAS](apply-rule-work-item-field.md)|The value of the parent field cannot match the value of a third field. You specify the third field in the **NOTSAMEAS** element.|  
+|[NOTSAMEAS](../../organizations/settings/work/rule-reference.md)|The value of the parent field cannot match the value of a third field. You specify the third field in the **NOTSAMEAS** element.|  
 |[PROHIBITEDVALUES](define-pick-lists.md)|The parent field cannot contain any values in the enumerated list.|  
-|[READONLY](apply-rule-work-item-field.md)|The parent field is read-only.|  
-|[REQUIRED](apply-rule-work-item-field.md)|The parent field must contain a value that is not NULL.|  
+|[READONLY](../../organizations/settings/work/rule-reference.md)|The parent field is read-only.|  
+|[REQUIRED](../../organizations/settings/work/rule-reference.md)|The parent field must contain a value that is not NULL.|  
 |[SERVERDEFAULT](define-default-copy-value-field.md)|The parent field takes its value from the specified server component. The valid server components are **clock**, which is the time when the work item is updated, and **currentuser**, which is the identity of the user who updated the work item.|  
 |[SUGGESTEDVALUES](define-pick-lists.md)|The enumerated list contains suggested values for the parent field.|  
-|[VALIDUSER](apply-rule-work-item-field.md)|Only the users whom you specify can modify the parent field.|  
+|[VALIDUSER](../../organizations/settings/work/rule-reference.md)|Only the users whom you specify can modify the parent field.|  
 
 
 <a name="DependentRequired"></a>   
@@ -224,4 +224,4 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > ```  
 
 ## Related articles 
--  [Apply a field rule](apply-rule-work-item-field.md)   
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)   

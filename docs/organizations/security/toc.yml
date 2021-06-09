@@ -179,7 +179,7 @@
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: settings, access, security
   - name: Git permissions prior to TFS 2017 Update 1
-    href: /azure/devops/repos/git/set-git-repository-permissions
+    href: ../../repos/git/set-git-repository-permissions.md
     displayName: settings, access, security
 - name: Secure Azure Pipelines
   items:
