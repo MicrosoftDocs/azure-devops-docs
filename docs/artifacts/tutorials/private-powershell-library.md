@@ -247,6 +247,9 @@ We now have a private repository within Azure Artifacts that we can push our Pow
 
 3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
+    > [!NOTE]
+    > For organization-scoped feeds, omit the `<project_name>` from the PublishLocation and SourceLocation URLs.
+
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
@@ -259,9 +262,6 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     ```powershell
         Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/<project_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
-
-    > [!TIP]
-    > Omit `<project_name>/` from the URLs above if your Feed was created in the 'Organization' scope instead of the 'Project' scope
    
     > [!NOTE]
     > Certain versions of PowerShell requires restarting a new session after executing `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
