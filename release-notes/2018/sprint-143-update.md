@@ -133,7 +133,7 @@ Previously, we required you to declare your container resources in YAML pipeline
 jobs:
 - job: my-container-job
   container:
-    image: microsoft/dotnet:latest
+    image: mcr.microsoft.com/dotnet/core/runtime:latest
 ```
 
 ### Changes to default permissions for new projects

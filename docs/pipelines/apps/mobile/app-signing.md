@@ -72,7 +72,7 @@ After creating your development or distribution signing certificate, export it t
 
     ![Xcode Export Cert](media/secure-certs/secure-certs-1.png)
 
-1. Alternatively, follow a similar process using the **Keychain Access** app on macOS or generate a signing certificate on Windows. Use the procedure [described in this article](http://docs.phonegap.com/phonegap-build/signing/ios/) if you prefer this method.
+1. Alternatively, follow a similar process using the **Keychain Access** app on macOS or generate a signing certificate on Windows. Use the procedure [described in this article](https://github.com/phonegap/phonegap-docs/blob/master/docs/4-phonegap-build/3-signing/2-ios.html.md) if you prefer this method.
 
 ### Obtain your provisioning profile
 

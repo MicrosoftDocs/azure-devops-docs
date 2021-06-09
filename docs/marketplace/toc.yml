@@ -1,14 +1,21 @@
 - name: Install an extension
   href: install-extension.md
+  displayName: Marketplace, publish, get, download, purchase
 - name: Request and approve an extension
   href: request-extensions.md
+  displayName: permission, administrator, contributor, get, collection, Marketplace
 - name: Install an extension on-premises
   href: get-tfs-extensions.md
+  displayName: server, purchase, subscription, Azure, Marketplace, get, download
 - name: Uninstall or disable extensions
   href: uninstall-disable-extensions.md
+  displayName: remove, Marketplace, collection
 - name: Evaluate a Marketplace extension
   href: trust.md
+  displayName: trust, publisher, privacy, license, safe
 - name: Manage extension permissions
   href: how-to/grant-permissions.md
+  displayName: grant, publish, update, settings, admin
 - name: FAQs about extensions
   href: faq-extensions.yml
+  displayName: get, install, request, assign, access
