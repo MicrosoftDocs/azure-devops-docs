@@ -65,11 +65,13 @@ windows.net
 <details>
 <summary>Various domain URL descriptions</summary>
 <br>
+<ul>
 - *gallerycdn.vsassets.io: hosts Azure DevOps extensions
 - *vstmrblob.vsassets.io: hosts Azure DevOps TCM log data
 - cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content
 - static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on
 - vsrm.dev.azure.com: hosts package feeds
+</ul>
 </details>
 
 We recommend you open port 443 to all traffic on these IP addresses and domains. We also recommend you open port 22 to a smaller subset of targeted IP addresses.
