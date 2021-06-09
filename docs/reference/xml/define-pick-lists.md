@@ -188,7 +188,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 
 ## Related articles
 
--  [Apply a field rule](apply-rule-work-item-field.md)
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)
 -  [Modify a field or add a custom field](../add-modify-field.md)  
 -  [Customize a process for import (Hosted XML)](../../organizations/settings/work/import-process/customize-process.md)
 -  [Manage global lists for work item types](../witadmin/manage-global-lists-for-work-item-types.md)

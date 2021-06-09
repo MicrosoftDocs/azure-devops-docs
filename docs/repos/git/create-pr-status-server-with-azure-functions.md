@@ -197,7 +197,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
     string Url = string.Format(
-        @"https://dev.azure.com/{0}/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1-preview.1",
+        @"https://dev.azure.com/{0}/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1",
         organizationName,
         projectName,
         repositoryName,

@@ -185,7 +185,7 @@ The deployment status is displayed in the following sections of Azure Repos:
 If a commit gets deployed to multiple release pipelines, with multiple stages, each has an entry in the badge with status that's shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can select the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
 > [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipeline to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described as follows, to show deployment status within your version control system.
 
 **Report deployment status to Work**
 

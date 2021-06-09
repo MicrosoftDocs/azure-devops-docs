@@ -140,3 +140,7 @@ This example demonstrated how to use the Pipelines task builder to quickly gener
 ## Open-source on GitHub
 
 These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.

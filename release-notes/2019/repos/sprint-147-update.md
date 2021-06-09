@@ -7,7 +7,7 @@ ms.technology: devops-release-notes
 ms.date: 02/13/2019
 ---
 
-# Azure repos - Sprint 147 Update
+# Azure Repos - Sprint 147 Update
 
 ## Features
 

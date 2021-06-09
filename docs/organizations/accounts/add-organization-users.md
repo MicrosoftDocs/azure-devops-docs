@@ -243,7 +243,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![.](../../media/open-organization-settings-users-preview.png)
 
-4. Select a user or group of users. Then, select **Actions ... ** at the end of the **Name** column to open the context menu.
+4. Select a user or group of users. Then, select **Actions ...** at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 

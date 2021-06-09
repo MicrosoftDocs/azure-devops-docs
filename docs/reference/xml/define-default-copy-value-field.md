@@ -117,5 +117,5 @@ You can specify a default value for a field, or you can copy the value from anot
   
 ## Related articles 
 -  [All FIELD elements](all-field-xml-elements-reference.md)   
--  [Apply a field rule](apply-rule-work-item-field.md)   
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)

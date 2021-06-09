@@ -4,7 +4,7 @@ description: The Azure App Service Deploy task is used to update Azure App Servi
 ms.topic: reference
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.manager: dastahel
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
 ms.date: 04/22/2020
@@ -110,6 +110,66 @@ steps:
     DockerRepository: $(DockerRepository)
     DockerImageTag: $(Build.BuildId)
 ```
+
+Here is another example that deploys a web app to a Windows App Service across deployment slots.
+
+```YAML
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+ - stage: DeployDevStage
+    displayName: 'Deploy App to Dev Slot'
+    jobs:
+      - job:  DeployApp
+        displayName: 'Deploy App'
+        steps:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'drop'
+            targetPath: '$(System.DefaultWorkingDirectory)'
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            ConnectionType: 'AzureRM'
+            azureSubscription: 'Fabrikam Azure Subscription - PartsUnlimited'
+            appType: 'webApp'
+            WebAppName: 'partsunlimited'
+            deployToSlotOrASE: true
+            ResourceGroupName: 'rgPartsUnlimited'
+            SlotName: 'Dev'
+            packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
+  - stage: DeployStagingStage
+    displayName: 'Deploy App to Staging Slot'
+    dependsOn: DeployDevStage
+    jobs:
+      - job:  DeployApp
+        displayName: 'Deploy App'
+        steps:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'drop'
+            targetPath: '$(System.DefaultWorkingDirectory)'
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            appType: webApp
+            ConnectionType: AzureRM            
+            ConnectedServiceName: 'Fabrikam Azure Subscription - PartsUnlimited'
+            ResourceGroupName: 'rgPartsUnlimited'
+            WebAppName: 'partsunlimited'
+            Package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+            deployToSlotOrASE: true
+            SlotName: 'staging'
+
+```
+
 * To deploy to a specific app type, set <code>appType</code> to any of the following accepted values:  <code>webApp</code> (Web App on Windows), <code>webAppLinux</code> (Web App on Linux), <code>webAppContainer</code> (Web App for Containers - Linux), <code>functionApp</code> (Function App on Windows), 
 <code>functionAppLinux</code> (Function App on Linux), <code>functionAppContainer</code> (Function App for Containers - Linux), <code>apiApp</code> (API App), <code>mobileApp</code> (Mobile App).
 If not mentioned, <code>webApp</code> is taken as the default value.
