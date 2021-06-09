@@ -36,25 +36,91 @@ Example: show a user story where an "Active" can only move to "Resolved", and "C
 
 - Define a field value based on a user not modifying a field (WHENNOTCHANGED)
 
+ 
+
+<a name="copy-field"></a>  
+
+## Set a field value based on the contents of another field [DONE] 
+
+The following examples illustrate how to map the values of the **Size** field when a value is assigned to the custom field, **Tee-Shirt Size** field.
+
+# [Inheritance process](#tab/inheritance)
+
+ The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules must be defined to assign the Size field when the Tee-Shirt Size field is changed or updated. To simplify usage, the default value of the Tee-Shirt Size is Small. 
+
+
+**Edit field dialog for Tee-Shirt Size field**
+
+:::image type="content" source="media/sample-rules/tee-shirt-size-edit-field-dialog.png" alt-text="Screenshot of Edit field dialog for Tee-Shirt Size field.":::
+
+
+**Custom rule**
+
+:::image type="content" source="media/sample-rules/set-tshirt-size-small-rule.png" alt-text="Screenshot of custom rule to set Size value when Tee-Shirt Size is set to Small.":::
+
+**Four custom rules**
+
+:::image type="content" source="media/sample-rules/four-custom-tee-shirt-size-mapping-rules.png" alt-text="Screenshot of four custom rule to set Size value when Tee-Shirt Size is set.":::
+
+# [On-premises XML process](#tab/on-premises)
+
+You specify the value of the **Size** field in the `FIELDS` section of the work item type definition. You use a series of `WHEN` rule statements to make the mapping, setting the value of the Size field using the `COPY value="value"` rule. 
+ 
+
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <FIELDS>
+>    ...
+>    <FIELD name="Tee-Shirt Size" refname="Fabrikam.TShirt.Size" type="String">
+>         <HELPTEXT>Estimate of overall size for work to be done; Small (2), Medium (6), Large (18), X-Large (30).</HELPTEXT>
+>         <ALLOWEDVALUES expanditems="true">
+>           <LISTITEM value="Large" />
+>           <LISTITEM value="Medium" />
+>           <LISTITEM value="Small" />
+>           <LISTITEM value="X-Large" />
+>         </ALLOWEDVALUES>
+>    </FIELD> 
+>    <FIELD name="Size" refname="Fabrikam.Size" type="Integer">
+>         <HELPTEXT>Integer estimate of overall size for work to be done; Automatically fill in based on Tee-Shirt Size. Allow any value.</HELPTEXT>
+>         <WHEN field="Fabrikam.TShirt.Size" value="Small">
+>           <COPY value="2" />
+>         </WHEN>
+>         <WHEN field="Fabrikam.TShirt.Size" value="Medium">
+>           <COPY value="6" />
+>         </WHEN>
+>         <WHEN field="Fabrikam.TShirt.Size" value="Large">
+>           <COPY value="18" />
+>         </WHEN>
+>         <WHEN field="Fabrikam.TShirt.Size" value="X-Large">
+>           <COPY value="30" />
+>         </WHEN>
+>    </FIELD>
+>    ...
+>  </FIELDS> 
+> ```  
+
+---
 
 
 <a name="DependentRequired"></a>   
 
-###  Define a dependent required field  
+###  Define a dependent required field [DONE] 
 
-You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports a bug, a customer severity must be specified. If the bug was not reported by a customer, a customer severity is not required.  
+You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the **Customer Reported** field is set to True, and the Severity field must be specified. If the issue isn't reported by a customer, a severity value isn't required.  
 
-# [Inheritance process](#tab/inheritance)
+# [Inheritance process](#tab/inheritance) 
 
-TBD 
-
+:::image type="content" source="media/sample-rules/set-severity-customer-reported-true.png" alt-text="Screenshot of custom rule to make Severity required when Customer REported field=true.":::
 
 # [On-premises XML process](#tab/on-premises)
 
+You specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
 
-> [!div class="tabbedCodeSnippets"]
+> [!div class="tabbedCodeSnippets"]  
 > ```XML
-> <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
+> <FIELDS>
+>    ...
+>    <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
 >        <ALLOWEDVALUES>  
 >            <LISTITEM value="Blocking" />  
 >            <LISTITEM value="Major" />  
@@ -63,45 +129,52 @@ TBD
 >        <WHEN field="MyCorp.CustomerReported" value="true">  
 >            <REQUIRED />  
 >        </WHEN>  
-> </FIELD>  
+>    </FIELD> 
+>    ...
+> </FIELDS>     
 > ```  
 
 ---
 
 
 
-<a name="ClearField"></a>
+<a name="clear-field"></a>
 
-###  Clear the value of a field when the value of another field changes  
+###  Clear the value of a field when another field changes [DONE]
 
+The following examples illustrate defining a custom rule to clear the value for Story Points when a change is made to the Start Date. 
 
 # [Inheritance process](#tab/inheritance)
 
-TBD 
 
+:::image type="content" source="media/sample-rules/clear-story-points-start-date-change.png" alt-text="Screenshot of custom rule to clear the value of Story Points when Start Date changes.":::
 
 # [On-premises XML process](#tab/on-premises)
 
-When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
+You specify a `WHENCHANGED` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
 
-```xml
-<STATE value="Active">  
-      <FIELDS>  
-. . .  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
-      </FIELDS>  
-</STATE>  
-```  
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <FIELDS>
+>  ...
+>    <FIELD name="Story Points" refname="Microsoft.VSTS.Scheduling.StoryPoints" type="Double" reportable="measure" formula="sum">
+>        <HELPTEXT>The size of work estimated for implementing this user story</HELPTEXT>
+>        <WHENCHANGED field="Microsoft.VSTS.Scheduling.StartDate">  
+>            <EMPTY />  
+>        </WHENCHANGED>
+>    </FIELD>
+>    ...
+> </FIELDS>     
+> ```  
 
 ---
 
 
 
 
-<a name="WhenChanged"></a>  
+<a name="whenchanged"></a>  
 
-##  Define a field when the user changes another field   
+##  Set a Date/Time field when changing the value of a field    
 
 
 # [Inheritance process](#tab/inheritance)
@@ -110,8 +183,7 @@ TBD
 
 
 # [On-premises XML process](#tab/on-premises)
-
-(WHENCHANGED)
+ 
 In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
 
 > [!div class="tabbedCodeSnippets"]
@@ -225,69 +297,6 @@ TBD
 
 ---
 
-
-<a name="CopyField"></a>  
-
-## Define a field based on the contents of another field  
-
-The following examples illustrate how to map the values of the **Size** field when a value is assigned to the custom field, **Tee-Shirt Size** field.
-
-# [Inheritance process](#tab/inheritance)
-
- The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules must be defined to assign the Size field when the Tee-Shirt Size field is changed or updated. To simplify usage, the default value of the Tee-Shirt Size is Small. 
-
-
-**Edit field dialog for Tee-Shirt Size field**
-
-:::image type="content" source="media/sample-rules/tee-shirt-size-edit-field-dialog.png" alt-text="Screenshot of Edit field dialog for Tee-Shirt Size field.":::
-
-
-**Custom rule**
-
-:::image type="content" source="media/sample-rules/set-tshirt-size-small-rule.png" alt-text="Screenshot of custom rule to set Size value when Tee-Shirt Size is set to Small.":::
-
-**Four custom rules**
-
-:::image type="content" source="media/sample-rules/four-custom-tee-shirt-size-mapping-rules.png" alt-text="Screenshot of four custom rule to set Size value when Tee-Shirt Size is set.":::
-
-# [On-premises XML process](#tab/on-premises)
-
-You specify the value of the **Size** field in the `FIELD` section of the work item type definition. You use a series of `WHEN` rule statements to make the mapping, setting the value of the Size field using the `COPY value="*value*"`  rule. 
-When the value of the **State** field for a work item changes to Resolved and the work item is saved, the value of the **Resolved Reason** field is set to the value that the user specified in the **Reason** field. The following example shows the elements that enforce this rule:  
-
-> [!div class="tabbedCodeSnippets"]  
-> ```XML
-> <FIELDS>
->    ...
->    <FIELD name="Tee-Shirt Size" refname="Fabrikam.TShirt.Size" type="String">
->         <HELPTEXT>Estimate of overall size for work to be done; Small (2), Medium (6), Large (18), X-Large (30).</HELPTEXT>
->         <ALLOWEDVALUES expanditems="true">
->           <LISTITEM value="Large" />
->           <LISTITEM value="Medium" />
->           <LISTITEM value="Small" />
->           <LISTITEM value="X-Large" />
->         </ALLOWEDVALUES>
->    </FIELD> 
->    <FIELD name="Size" refname="Fabrikam.Size" type="Integer">
->         <HELPTEXT>Integer estimate of overall size for work to be done; Automatically fill in based on Tee-Shirt Size. Allow any value.</HELPTEXT>
->         <WHEN field="Fabrikam.TShirt.Size" value="Small">
->           <COPY value="2" />
->         </WHEN>
->         <WHEN field="Fabrikam.TShirt.Size" value="Medium">
->           <COPY value="6" />
->         </WHEN>
->         <WHEN field="Fabrikam.TShirt.Size" value="Large">
->           <COPY value="18" />
->         </WHEN>
->         <WHEN field="Fabrikam.TShirt.Size" value="X-Large">
->           <COPY value="30" />
->         </WHEN>
->    </FIELD>
->    ...
->  </FIELDS> 
-> ```  
-
----
 
 
 ## Restrict creation of work items by a group [DONE]
@@ -493,6 +502,21 @@ For on-premises deployments, you can add rules to a work item type to prevent re
   
 
 <!---
+
+
+
+When the value of the **State** field for a work item is set to Active and the work item is saved, the **Closed Date** and **Closed By** fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
+
+```xml
+<STATE value="Active">  
+      <FIELDS>  
+. . .  
+      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
+      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
+      </FIELDS>  
+</STATE>  
+```  
+
 
 You can define rules that update fields whenever the following events occur:  
 
