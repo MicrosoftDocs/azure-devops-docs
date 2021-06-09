@@ -1149,3 +1149,4 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 	- [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md)
 
  
+<!--- what On-premises rules aren't supported for Inherited? --> 
