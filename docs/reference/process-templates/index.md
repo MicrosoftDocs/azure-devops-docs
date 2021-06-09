@@ -7,7 +7,7 @@ ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 05/06/2019
 ---
 

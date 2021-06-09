@@ -72,4 +72,4 @@ You can use the **MATCH** element to force values in a field of String type to f
  
   
 ## Related articles 
- [Apply a field rule](apply-rule-work-item-field.md)
+ [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)

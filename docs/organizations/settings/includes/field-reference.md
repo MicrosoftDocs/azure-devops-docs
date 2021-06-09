@@ -6,11 +6,11 @@ ms.topic: include
 
 ### What is a field? How are field names used?  
 
-Each [work item type](/azure/devops/boards/backlogs/add-work-items) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
+Each [work item type](../../../boards/backlogs/add-work-items.md) is associated with 31 system fields and several more type-specific fields. You use work items to plan and track your project.  
 
 Each field supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can create queries to determine status and trends.    
 
-For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](/azure/devops/boards/work-items/guidance/choose-process)&mdash;see [Work item field index](/azure/devops/boards/work-items/guidance/work-item-field).  
+For descriptions and usage of each field defined for the core system processes&mdash;[Scrum, Agile, and CMMI system processes](../../../boards/work-items/guidance/choose-process.md)&mdash;see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 #### Field names  
 
