@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2020
+ms.date: 06/09/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -23,9 +23,10 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 ## Prerequisites
 
 Before you switch your organization directory, make sure the following statements are true:
-- You're in the Project Collection Administrator group (in Organization settings) for the organization 
-- You're a member or a guest in the source Azure AD and in the destination Azure AD
-- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help changing your Azure AD. 
+
+- You're in the Project Collection Administrator group (in Organization settings) for the organization.
+- You're a member or a guest in the source Azure AD and a member in the destination Azure AD. For more information, see how to [convert an Azure AD guest into a member](faq-azure-access.yml).
+- You have 100 or fewer users in your organization. If your organization has more than 100 users, [contact Support](https://azure.microsoft.com/support/devops/) for help with changing your Azure AD.
 
 
 ## Change the Azure AD connection
