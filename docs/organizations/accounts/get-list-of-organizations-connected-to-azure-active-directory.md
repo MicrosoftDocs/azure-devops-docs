@@ -25,7 +25,7 @@ On this list, you can find the following information:
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md).
+You must be a member of an Azure DevOps organization [connected to Azure AD.](connect-organization-to-azure-ad.md)
 
 ## Get list of organizations
 

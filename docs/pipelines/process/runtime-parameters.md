@@ -3,7 +3,7 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 06/09/2021
 monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
@@ -22,7 +22,7 @@ Parameters are only available at template parsing time. Parameters are expanded 
 > This guidance does not apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md).
 > 
 
-Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. 
+Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you do not assign a default value or set `default` to `false`, the first available value will be used. 
 
 ## Use parameters in pipelines
 
@@ -70,7 +70,6 @@ This pipeline only runs a step when the boolean parameter `test` is true.
 parameters:
 - name: image
   displayName: Pool Image
-  default: ubuntu-latest
   values:
   - windows-latest
   - vs2017-win2016
