@@ -21,7 +21,7 @@ Learn about the files and file structure for project wikis and code wikis. The f
 
 When you create a team project, a wiki isn't created by default. For more information about creating wikis, see [Create a wiki for your project](wiki-create-repo.md).
 
-Each code wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and sub-pages. You create your wiki via the Azure DevOps user interface, and then you can edit the wiki via your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository). For more information about publishing code wikis, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
+Each code wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and subpages. You create your wiki via the Azure DevOps user interface, and then you can edit the wiki via your [Git repository URL path](wiki-create-repo.md#how-can-i-go-to-the-git-repository). For more information about publishing code wikis, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
 
 ## Wiki file and folder structure
 
@@ -37,19 +37,14 @@ The wiki repository has the following files and folders:
 
 - File for each Markdown page entered at the root level
 - File labeled *.order* at the root and under each folder  
-- Folder for each page that has sub-pages  
+- Folder for each page that has subpages  
 - *.attachments* folder, storing all the attachments of the wiki  
-
-<a id="file-naming" />
-<a id="page-title-names"></a>
 
 ## File naming conventions
 
 Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name gets added to the URL, ensuring that links you share remain intact as the wiki changes over time.
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
-
-<a id="order-file" ></a>
 
 ## *.order* file
 

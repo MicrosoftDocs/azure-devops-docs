@@ -166,7 +166,7 @@ You apply rules to accomplish the following actions:
 
 System fields, whose names all start with the "System" prefix (for example, System.ID), are limited in terms of the rules you can apply to them. For example, you can't copy or set to empty fields used to track who created, changed, or closed a work item, or date-time fields used by the system.
 
-For more information about applying field rules and restrictions, see [Apply a rule to a work item field](xml/apply-rule-work-item-field.md).
+For more information about applying field rules and restrictions, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
 
 <a id="add-custom-field">  </a>
 
