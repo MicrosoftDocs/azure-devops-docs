@@ -90,8 +90,6 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
 
 After you've set up authentication with the *TwineAuthenticate@1* task, you can now use *twine* to publish your Python packages to an Azure Artifacts feed.
 
-# [YAML](#tab/yaml)
-
 ```YAML
 - script: |
      pip install wheel
@@ -108,7 +106,6 @@ After you've set up authentication with the *TwineAuthenticate@1* task, you can 
 - script: |
      python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
 ```
----
 
 > [!WARNING]
 > We strongly recommend **NOT** checking any credentials or tokens into source control.
