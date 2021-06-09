@@ -580,10 +580,21 @@ You might also run into problems if parallel build jobs are using the same singl
 
 ::: moniker range=">= azure-devops-2019"
 
-### What’s the behavior of DevOps agents when the pipeline jobs are cancelled?
+### What’s the behavior of agents when the pipeline jobs are cancelled?
 
-When Azure Devops cancels a pipeline step running on a Linux agent,  a SIGINT is sent first. If the step’s child process does not die 7.5 seconds after receiving the SIGINT a SIGTERM will be sent. If then the process does not die after 2.5 seconds the agent issues a SIGKILL to the process. Hence, a non-responsive child process will run for ten seconds before being killed.
+For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pipelines pool.
 
+For self hosted agents:
+
+When a pipeline is cancelled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
+
+The commands issued to the process are different based on the agent operating system.
+
+* macoS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
+* Windows - THe commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill
+
+> [!NOTE]
+> Azure Pipelines Agent is open source on GitHub
 Source code reference: https://github.com/microsoft/azure-pipelines-agent
 
 ## Learn more
