@@ -294,7 +294,7 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 - [Deleted work items](../../boards/backlogs/remove-delete-work-items.md#delete-work-items)
 - [Azure Boards Team Administrator permissions and access](../../boards/get-started/permissions-access-boards.md)
 - [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
-- [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
+- [Custom fields](../settings/work/rule-samples.md#restrict-modifications-wits)
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 
