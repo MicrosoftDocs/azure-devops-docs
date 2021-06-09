@@ -66,11 +66,11 @@ windows.net
 <summary>Various domain URL descriptions</summary>
 <br>
 <ul>
-- *gallerycdn.vsassets.io: hosts Azure DevOps extensions
-- *vstmrblob.vsassets.io: hosts Azure DevOps TCM log data
-- cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content
-- static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on
-- vsrm.dev.azure.com: hosts package feeds
+ <li>*gallerycdn.vsassets.io: hosts Azure DevOps extensions</li>
+ <li>*vstmrblob.vsassets.io: hosts Azure DevOps TCM log data</li>
+ <li>cdn.vsassets.io: hosts Azure DevOps Content Delivery Networks (CDNs) content</li>
+ <li>static2.sharepointonline.com: hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on</li>
+ <li>vsrm.dev.azure.com: hosts package feeds</li>
 </ul>
 </details>
 
