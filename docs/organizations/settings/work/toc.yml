@@ -38,7 +38,9 @@
     href: custom-controls-process.md
   - name: Rules and rule evaluation
     href: rule-reference.md
-    displayname: auto-generated, by/date fields, state change date, restrictions, 
+    displayname: auto-generated, by/date fields, state change date, restrictions 
+  - name: Sample rule scenarios
+    href: rule-samples.md 
 - name: Change project process
   items:
   - name: From Agile to Scrum
