@@ -247,7 +247,9 @@ You can define rules that update fields whenever the following events occur:
   The following examples show some of the rules that are applied to system fields in the process template for MSF Agile Software Development.  
 
 <a name="DefineField"></a>  
+
 ###  Change the value of a field when the state changes  
+
  When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:  
 
 ```xml
@@ -269,8 +271,10 @@ You can define rules that update fields whenever the following events occur:
 ```  
 
 <a name="ClearField"></a>   
+
 ###  Clear the value of a field when the value of another field changes  
- When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
+
+When the value of the **State** field for a work item is set to Active and the work item is saved, the Closed Date and Closed By fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
 
 ```xml
 <STATE value="Active">  

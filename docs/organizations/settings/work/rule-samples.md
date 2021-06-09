@@ -87,10 +87,10 @@ For the [On-premises XML process model](../../../reference/on-premises-xml-proce
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Rules and rule evaluation, User or group membership rule restrictions](rule-reference.md#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. 
 
-You  restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](../settings/work/rule-reference.md), [a condition-based field rule](../../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+You restrict access to work tracking objects in one of two ways:
+- [Set a condition field rule](rule-reference.md), [a condition-based field rule](../../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
 - By [adding WITs to the Hidden Categories group](../../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 
 ---
@@ -167,6 +167,7 @@ TBD
 > </FIELD>  
 > ```  
 
+---
 
 <a name="fields"></a> 
 
