@@ -258,6 +258,9 @@
     - name: Classic Build options
       href: build/options.md
       displayName: classic build, build options
+    - name: Use tasks to increase run retention
+      href: build/run-retention.md
+      displayName: retention, pipelines, runs
 - name: Run pipeline tests
   items:
     - name: About pipeline tests
