@@ -141,7 +141,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ## Set up Azure Key Vault access policies
 
-In order to access our Azure Key Vault, we must first set up a service principal to give Azure Pipelines access to the Azure Key Vault. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
+In order to access our Azure Key Vault, we must first set up a service principal to give access to Azure Pipelines. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
 
 1. Go to [Azure portal](https://azure.microsoft.com/).
 
@@ -155,7 +155,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select service principal and search for the one you just created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select a service principal and search for the one you created earlier in this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
 1. Select **Add** to create the access policy, then **Save**.
 
@@ -181,6 +181,19 @@ In order to access our Azure Key Vault, we must first set up a service principal
     :::image type="content" border="false" source="media/azure-key-vault/view-artifact.png" alt-text="Viewing the secret in the artifact":::
 
 1. The text file should contain our secret: *mysecretpassword* from earlier.
+
+> [!WARNING]
+> This tutorial is for education purposes only. For security best practices, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+
+If you encounter an error stating that the user or group does not have secrets list permission on key vault, run the following command to authorize your application to access the key or secret in the Azure Key Vault:
+
+```Command
+$ErrorActionPreference="Stop";
+Login-AzureRmAccount -SubscriptionId your-subscription-ID;
+$spn=(Get-AzureRmADServicePrincipal -SPN service-principal-ID);
+$spnObjectId=$spn.Id;
+Set-AzureRmKeyVaultAccessPolicy -VaultName key-vault-tutorial -ObjectId $spnObjectId -PermissionsToSecrets get,list;
+```
 
 ## Clean up resources
 
