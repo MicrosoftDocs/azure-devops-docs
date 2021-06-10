@@ -20,7 +20,8 @@ By default, members of the Contributors, Build Admins, Project Admins, and Relea
 
 In this example, the project is configured to delete pipeline runs after only thirty days.
 
-> [!div class="mx-imgBorder"] > ![Example 1: project settings retention policies](media/retention/example-policies-short.png)
+> [!div class="mx-imgBorder"]
+> ![Example 1: project settings retention policies](media/retention/example-policies-short.png)
 
 If a pipeline in this project is important and runs should be retained for longer than thirty days, this task ensures the run will be valid for two years by [adding a new retention lease](/rest/api/azure/devops/build/leases/add).
 
