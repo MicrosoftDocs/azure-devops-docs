@@ -13,7 +13,7 @@ ms.date: 06/07/2021
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
 ---
 
-# Sample custom rule scenarios 
+# Sample custom rule scenarios  
 
 <!--- automate --> 
 
@@ -26,9 +26,7 @@ Example: show a user story where an "Active" can only move to "Resolved", and "C
 
 <!--- what about custom controls and rules??? --> 
 
-
-
-## Define field values 
+ 
 
 - Define a field based on the contents of another field  
 - Define a field when the user changes another field  
@@ -136,8 +134,6 @@ You specify a `WHEN` rule statement for the field definition within the `FIELDS`
 
 ---
 
-
-
 <a name="clear-field"></a>
 
 ###  Clear the value of a field when another field changes [DONE]
@@ -168,132 +164,74 @@ You specify a `WHENCHANGED` rule statement for the field definition within the `
 > ```  
 
 ---
-
-
-
-
-<a name="whenchanged"></a>  
-
-##  Set a Date/Time field when changing the value of a field    
-
-
-# [Inheritance process](#tab/inheritance)
-
-TBD 
-
-
-# [On-premises XML process](#tab/on-premises)
  
-In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="clock" />  
->        </WHENCHANGED>  
-> </FIELD>   
-> ```  
-
-In the following example, when a user changes the value of the MyCorp.State field, the value of the MyCorp.Status field is cleared.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML  
-> <!-- Clear the status field whenever someone changes the state -->  
-> <FIELD refname="MyCorp.Status" name="Status" type="String">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="value" value="">  
->        </WHENCHANGED>  
-> </FIELD>  
-> ```  
-
----
-
-<a name="WhenNotChanged"></a> 
-
-## Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
 
 
+<a name="require-field-state-change"></a>  
 
+##  Require a field value when the state changes [DONE]
+
+You can require specification of **Remaining Work** field when the task workflow state changes to Active.  
 
 # [Inheritance process](#tab/inheritance)
 
-TBD 
-
-
-# [On-premises XML process](#tab/on-premises)
-
-
-In the following example, when a user does not change the value of the MyCorp.State field, the MyCorp.StateDate field becomes read-only.  
-> 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
-> <!-- Make the StateDate field read-only when the State field is not changed -->  
->        <WHENNOTCHANGED field="MyCorp.State">  
->            <READONLY />  
->        </WHENNOTCHANGED>  
-> </FIELD>  
-> ```  
-
----
-
-
-
-
-
-## Update field values during a workflow change
- - Update a field 
- - Change the value of a field  
-
-
-<a name="DefineField"></a>  
-
-##  Change the value of a field when the state changes
-
-
-# [Inheritance process](#tab/inheritance)
-
-TBD 
-
+:::image type="content" source="media/sample-rules/make-remaining-work-required-for-task.png" alt-text="Screenshot of custom rule to make Remaining Work required when State is changed to Active.":::
 
 # [On-premises XML process](#tab/on-premises)
 
  When the value of the **State** field for a work item is set to Active and the work item is saved, the values of the **Activated By** and **Assigned To** fields are automatically set to the name of the current user. That user must be a member of the Team Foundation Server Valid Users group. The value of the **Activated Date** field is also set automatically. The following example shows the elements that enforce this rule:  
 
-```xml
-<STATE value="Active">  
-<FIELDS>  
-      <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">  
-        <COPY from="currentuser"/>  
-        <REQUIRED/>  
-      </FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">  
-        <SERVERDEFAULT from="clock"/></FIELD>  
-        <FIELD refname="System.AssignedTo">  
-        <DEFAULT from="currentuser"/>  
-      </FIELD>  
-. . .  
-</FIELDS>  
-</STATE>  
-```  
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <WORKFLOW>
+> ... 
+      <STATE value="Active">
+          <FIELDS>
+            <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
+              <REQUIRED />
+            </FIELD>
+          </FIELDS>
+      </STATE>
+> . . .  
+> </FIELDS 
+> </STATE>
+> ...  
+> </WORKFLOW>
+> ```  
 
 ---
 
-
 <a name="fields"></a> 
 
-## Update a field during a workflow change  
+## Clear the value of a field upon close state  [DONE]
 
+You can automate clearing the **Remaining Work** field upon closing a task using a custom rule. 
 
 # [Inheritance process](#tab/inheritance)
 
-TBD 
+:::image type="content" source="media/sample-rules/clear-remaining-work-closed-state.png" alt-text="Screenshot of custom rule to zero out Remaining Work required when State is changed to Closed.":::
 
 
 # [On-premises XML process](#tab/on-premises)
 
 
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <WORKFLOW>
+> ... 
+      <STATE value="Closed">
+          <FIELDS>
+            <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
+              <EMPTY />
+            </FIELD>
+          </FIELDS>
+      </STATE>
+> . . .  
+> </FIELDS 
+> </STATE>
+> ...  
+> </WORKFLOW>
+> ```  
 
 ---
 
@@ -315,12 +253,16 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
+> <WORKFLOW>
+> ... 
 > <TRANSITION from=" " to="New"  
 >    for="[Project]\Developers" 
 >    not="[Project]\Fabrikam Review Team"  
 >    . . .  
-> </TRANSITION 
-> ```
+> </TRANSITION> 
+> ...  
+> </WORKFLOW>
+> ```  
  
 ---
 
@@ -343,9 +285,9 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
-> [!div class="tabbedCodeSnippets"]  
-> ```XML
-> > <STATE value="New">  
+> <WORKFLOW>
+> ... 
+>  <STATE value="New">  
 >    not="[Project]\Fabrikam Review Team"  
 > </STATE>  
 > <STATE value="Active">  
@@ -357,8 +299,9 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 > <STATE value="Closed">  
 >    not="[Project]\Fabrikam Review Team"  
 > </STATE>  
-```  
-
+> ...  
+> </WORKFLOW>
+> ```  
 
 ---
 
@@ -531,6 +474,47 @@ You can define rules that update fields whenever the following events occur:
   You should try to minimize the number of conditions that you define for any one type of work item. With each conditional rule that you add, you increase the complexity of the validation process that occurs every time that a team member saves a work item. Complex rule sets might increase the time that is required to save the work item.  
 
   The following examples show some of the rules that are applied to system fields in the process template for MSF Agile Software Development.  
+
+
+
+
+
+<a name="whenchanged"></a>  
+
+##  Set a Date/Time field when changing the value of a field    
+
+
+# [Inheritance process](#tab/inheritance)
+
+TBD 
+
+
+# [On-premises XML process](#tab/on-premises)
+ 
+In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML
+> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
+>        <WHENCHANGED field="MyCorp.State">  
+>            <COPY from="clock" />  
+>        </WHENCHANGED>  
+> </FIELD>   
+> ```  
+
+In the following example, when a user changes the value of the MyCorp.State field, the value of the MyCorp.Status field is cleared.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```XML  
+> <!-- Clear the status field whenever someone changes the state -->  
+> <FIELD refname="MyCorp.Status" name="Status" type="String">  
+>        <WHENCHANGED field="MyCorp.State">  
+>            <COPY from="value" value="">  
+>        </WHENCHANGED>  
+> </FIELD>  
+> ```  
+
+---
 
 
 -->
