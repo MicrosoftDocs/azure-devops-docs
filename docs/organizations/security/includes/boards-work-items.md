@@ -17,7 +17,6 @@ ms.date: 05/12/2021
 
  
 
----
 :::row:::
    :::column span="2":::
       **Task or permission** 
@@ -35,7 +34,6 @@ ms.date: 05/12/2021
      **Project admins**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       **View work items in this node** 
@@ -54,7 +52,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       **Edit work items in this node** 
@@ -73,7 +70,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       **Create tag definition** 
@@ -92,7 +88,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
@@ -112,7 +107,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       **Move work items out of this project**
@@ -131,7 +125,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 :::row:::
    :::column span="2":::
@@ -150,7 +143,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
@@ -169,7 +161,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -191,7 +182,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -212,7 +202,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end 
 ::: moniker range="tfs-2013"
 :::row:::
@@ -232,7 +221,6 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 :::row:::
    :::column span="2":::
@@ -251,7 +239,7 @@ ms.date: 05/12/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
+
 
 > [!NOTE] 
 > Work items are subject to rules applied to them. Conditional rules based on user or group membership are cached for your web browser. If you find yourself restricted to update a work item, you may have encountered one of these rules. If you believe you've encountered an issue that doesn't apply to you, see [Work item form IndexDB caching issues](/azure/devops/organizations/settings/work/troubleshoot-work-item-form-caching-issues). To learn more about conditional rules, see [Rules and rule evaluation](/azure/devops/organizations/settings/work/rule-reference).   
