@@ -584,18 +584,18 @@ You might also run into problems if parallel build jobs are using the same singl
 
 For Microsoft-hosted agents, the agent is torn down and returned to the Azure Pipelines pool.
 
-For self hosted agents:
+For self-hosted agents:
 
 When a pipeline is cancelled, the agent sends a sequence of commands to the process executing the current step. The first command is sent with a timeout of 7.5 seconds. If the process has not terminated, a second command is sent with a timeout of 2.5 seconds. If the process has not terminated, the agent issues a command to kill the process. If the process does not honor the two initial termination requests, it will be killed. From the initial request to termination takes approximately 10 seconds.
 
 The commands issued to the process are different based on the agent operating system.
 
 * macOS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
-* Windows - THe commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.
+* Windows - The commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.
 
 > [!NOTE]
-> Azure Pipelines Agent is open source on GitHub. Source code reference: https://github.com/microsoft/azure-pipelines-agent
-
+> Azure Pipelines Agent is open source on [GitHub](https://github.com/microsoft/azure-pipelines-agent).
+> 
 ## Learn more
 
 For more information about agents, see the following modules from the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/) learning path.
