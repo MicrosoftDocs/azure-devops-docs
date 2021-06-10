@@ -22,7 +22,6 @@ Each column corresponds to a work item field. You can add and remove columns fro
 Specifically, you can perform the following actions from the following list views:  
 
  
---- 
 :::row:::
    :::column span="2":::
       **Action**
@@ -40,7 +39,6 @@ Specifically, you can perform the following actions from the following list view
       [**Work items**](../work-items/view-add-work-items.md)
    :::column-end:::
 :::row-end::: 
----
 :::row:::
    :::column span="2":::
       Add or remove a column field
@@ -111,7 +109,7 @@ Specifically, you can perform the following actions from the following list view
       Yes
    :::column-end:::
 :::row-end::: 
----
+
 
 
 > [!TIP]    
