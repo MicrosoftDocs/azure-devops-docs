@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use Azure Key Vault secrets in Azure Pipelines
 
-[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
 
 > [!NOTE]
 > This article will guide you through working with Azure key vault in your pipeline. if you want to set secret variables or reference variable groups, see [Define variables](../process/variables.md#secret-variables) for more details.
@@ -141,6 +141,8 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 ## Set up Azure Key Vault access policies
 
+In order to access our Azure Key Vault, we must first set up a service principal to give Azure Pipelines access to the Azure Key Vault. Follow [this guide](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) to create your service principal and then proceed with the next steps in this section.
+
 1. Go to [Azure portal](https://azure.microsoft.com/).
 
 1. Use the search bar to search for the key vault you created earlier.
@@ -153,7 +155,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a [service principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) and search for yours. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select service principal and search for the one you just created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
 1. Select **Add** to create the access policy, then **Save**.
 
