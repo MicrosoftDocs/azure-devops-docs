@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.author: maoswald
 author: moswald
 ms.date: 06/09/2021
-monikerRange: ">= azure-devops-2021"
+monikerRange: ">= azure-devops-2020"
 ---
 
 # Pipeline Run Retention
