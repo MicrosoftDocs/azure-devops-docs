@@ -86,34 +86,26 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
 >
 > If you add multiple Python Twine Authenticate tasks at different times in your pipeline steps, each additional build task execution will extend (not override) the existing `PYPIRC_PATH` environment variable.
 
-## Use a custom twine task to publish
+## Publish Python packages to Azure Artifacts feeds
 
-After you've set up authentication with the preceding snippet, you can use `twine` to publish your Python packages. The following example uses a custom command-line task.
+After you've set up authentication with the *TwineAuthenticate@1* task, you can now use *twine* to publish your Python packages to an Azure Artifacts feed.
 
-# [YAML](#tab/yaml)
-
-```yaml
-- script: 'twine upload -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) {package path to publish}'
+```YAML
+- script: |
+     pip install wheel
+     pip install twine
+  
+- script: |
+     python setup.py bdist_wheel
+   
+- task: TwineAuthenticate@1
+  displayName: 'Twine Authenticate'
+  inputs:
+    artifactFeed: projectName/feedName
+  
+- script: |
+     python -m twine upload -r feedName --config-file $(PYPIRC_PATH) dist/*.whl
 ```
-
-Check out the [YAML schema reference](../yaml-schema.md#script) for more details on the `script` keyword.
-
-# [Classic](#tab/classic)
-
-:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: **Utility: PowerShell**
-
-* Type:
-
-   ```
-   inline
-   ```
-* Script:
-
-   ```
-   twine upload -r {feedName/EndpointName} --config-file $(PYPIRC_PATH) dist/*
-   ```
-
----
 
 > [!WARNING]
 > We strongly recommend **NOT** checking any credentials or tokens into source control.
