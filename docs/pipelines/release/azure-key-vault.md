@@ -134,8 +134,38 @@ We will use YAML to create our pipeline but first we need to create a new repo.
 
     :::image type="content" border="false" source="media/azure-key-vault/configure-azure-key-vault-task.png" alt-text="Configuring the Azure Key Vault task":::
 
-    > [!TIP]
-    > YAML requires a specific spacing and indentation to work. Make sure your YAML file is indented properly.
+1. Your YAML file should look something like the following
+
+    ```YAML
+    trigger:
+    - main
+    
+    pool:
+      vmImage: ubuntu-latest
+    
+    steps:
+    - task: AzureKeyVault@2
+      inputs:
+        azureSubscription: 'Your-Azure-Subscription'
+        KeyVaultName: 'Your-Key-Vault-Name'
+        SecretsFilter: '*'
+        RunAsPreJob: false
+    
+    - task: CmdLine@2
+      inputs:
+        script: 'echo $(Your-Secret-Name) > secret.txt'
+    
+    - task: CopyFiles@2
+      inputs:
+        Contents: secret.txt
+        targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+    ```
 
 1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your working browser tab open, we will resume the remaining steps here once we set up the key vault permissions.
 
@@ -155,7 +185,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a service principal and search for the one you created earlier in this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select a service principal and search for the one you just created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
 1. Select **Add** to create the access policy, then **Save**.
 
@@ -183,9 +213,9 @@ In order to access our Azure Key Vault, we must first set up a service principal
 1. The text file should contain our secret: *mysecretpassword* from earlier.
 
 > [!WARNING]
-> This tutorial is for education purposes only. For security best practices, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> This tutorial is for education purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
-If you encounter an error stating that the user or group does not have secrets list permission on key vault, run the following command to authorize your application to access the key or secret in the Azure Key Vault:
+If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
 
 ```Command
 $ErrorActionPreference="Stop";
