@@ -21,7 +21,7 @@ The Data Connector for Azure DevOps includes Power Query M functions which query
 The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](/powerquery-m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. You can use it to call [AzureDevOps REST APIs](/rest/api/azure/devops).
 
 > [!IMPORTANT]  
-> Use VSTS.AccountContents only to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, it's susceptible to throttling. See the [Supported Subdomains for VSTS.AccountContents section](#) later in this article. For information about other approaches, see the [Power BI integration overview](overview.md). 
+> - Use VSTS.AccountContents only to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, it's susceptible to throttling. See the [Supported Subdomains for VSTS.AccountContents section](#) later in this article. For information about other approaches, see the [Power BI integration overview](overview.md). 
 > - VSTS.AccountContents supports only Azure Boards data (work items). The data connector doesn't support other data types, such as pipelines. Currently, we have no plans to update the connector to support other data types.
 
 
@@ -69,5 +69,5 @@ Currently, the `VSTS.AccountContents()` method only works for the subdomains lis
 
 ## Related articles
 
-* [Power Query (M) Formula Reference](/previous-versions/mt270235(v=msdn.10))
-* [Power Query (M) Formula Reference - Accessing data functions](/powerquery-m/accessing-data-functions)
+* [Power Query M language specification](/powerquery-m/power-query-m-language-specification)
+* [Power Query M formula language - Accessing data functions](/powerquery-m/accessing-data-functions)
