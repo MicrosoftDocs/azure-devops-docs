@@ -172,7 +172,7 @@ The following example returns work items whose **Changed Date** is greater than 
 > ```
 
 
-The following example returns work items whose **Changed Date** occurs during the week of April26 through April 30th, 2021.  
+The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30th, 2021.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
