@@ -236,7 +236,7 @@ For the [On-premises XML process model](../../reference/on-premises-xml-process-
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Rules and rule evaluation, User or group membership rule restrictions](../settings/work/rule-reference.md#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Rules and rule evaluation, User or group membership rule restrictions](../settings/work/rule-reference.md#membership). 
 
 You  restrict access to work tracking objects in one of two ways:
 - [Set a condition field rule](../settings/work/rule-reference.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
