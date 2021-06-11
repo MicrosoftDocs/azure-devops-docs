@@ -5,6 +5,7 @@ ms.topic: tutorial
 ms.date: 02/16/2021
 ms.custom: contperf-fy21q3, devx-track-azurecli
 monikerRange: '>= azure-devops-2019'
+"recommendations": "true"
 ---
 
 # Use Azure Key Vault secrets in Azure Pipelines
@@ -167,7 +168,7 @@ We will use YAML to create our pipeline but first we need to create a new repo.
         publishLocation: 'Container'
     ```
 
-1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your working browser tab open, we will resume the remaining steps here once we set up the key vault permissions.
+1. Do not save or run your pipeline just yet. We must first give our pipeline the right permissions to access Azure Key Vault. Keep your browser tab open, we will resume the remaining steps once we set up the key vault permissions.
 
 ## Set up Azure Key Vault access policies
 
@@ -185,7 +186,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 
 1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a service principal and search for the one you just created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
+1. Select the option to select a service principal and search for the one you created in the beginning of this section. A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources.
     
 1. Select **Add** to create the access policy, then **Save**.
 
@@ -198,7 +199,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
     > [!NOTE]
     > You may be asked to allow the pipeline access to Azure resources, if prompted select **Allow**. You will only have to approve your pipeline once. 
 
-1. Select the **CmdLine** job to view the logs. Note that the actual secret is not part of the logs. 
+1. Select the **CmdLine** job to view the logs.
 
     :::image type="content" border="false" source="media/azure-key-vault/command-line-task.png" alt-text="Reviewing the command-line task":::
 
@@ -213,7 +214,7 @@ In order to access our Azure Key Vault, we must first set up a service principal
 1. The text file should contain our secret: *mysecretpassword* from earlier.
 
 > [!WARNING]
-> This tutorial is for education purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> This tutorial is for For educational purposes only. For security best practices and how to safely work with secrets, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 If you encounter an error indicating that the user or group does not have secrets list permission on key vault, run the following commands to authorize your application to access the key or secret in the Azure Key Vault:
 
