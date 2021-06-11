@@ -193,7 +193,7 @@ For a simple report, do the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration - Report](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
+> ![Screenshot of Pipelines task duration Line chart Report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## Full list of sample reports for Pipelines
