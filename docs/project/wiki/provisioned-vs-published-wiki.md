@@ -47,9 +47,6 @@ The unavailable menu options for the wiki pages are shown in the following illus
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki get automatically published to the wiki.
 
-> [!NOTE]
-> Information the user should notice even if skimming
-
 ## Supported features and operational differences
 
 *Provisioned wikis* and *publish as code wikis* support the following features:
