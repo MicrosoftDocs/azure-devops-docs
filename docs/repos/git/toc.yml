@@ -176,7 +176,7 @@
   - name: "Default Git permissions (Security)"
     href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Frequently asked questions
-    href: howto.md
+    href: howto.yml
   - name: Git limits
     href: limits.md
   - name: Map TFVC actions to Git

@@ -9697,7 +9697,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/git/tutorial/howto.md",
+      "source_path": "docs/git/tutorial/howto.yml",
       "redirect_url": "/azure/devops/repos/git/howto",
       "redirect_document_id": true
     },
