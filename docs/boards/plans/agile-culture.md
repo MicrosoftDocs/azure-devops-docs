@@ -31,8 +31,6 @@ Organizations that aspire to be agile need to consider the twin obligations of c
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.  
 
-![Alignment enables autonomy](media/alignment-enables-autonomy_725.png)
-
 With the right level of alignment across the organization and team autonomy, individuals are empowered to innovate and inspired to collaborate to meet business objectives. 
 
 ## 7 areas to create alignment and support autonomy 
@@ -182,8 +180,8 @@ For additional guidance, see these topics:
 ### Agile culture industry resources
 
 - [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
-- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
-- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
+- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf)
+- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301)  
 - [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)  
 - [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
