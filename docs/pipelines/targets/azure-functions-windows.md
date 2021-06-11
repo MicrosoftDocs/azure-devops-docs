@@ -7,46 +7,47 @@ ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 9/11/2019
+ms.date: 06/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy an Azure Function (Windows)
 
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use DevOps Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
+
 You can automatically deploy your Azure Function after every successful build.
 
-## Before you begin
+## Prerequisites
 
-Based on the desired runtime, [import](../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
+[!INCLUDE [include](../includes/prerequisites.md)]
+
+
+## Create your Function App
+
+This is a step-by-step guide to using Azure Pipelines with Azure Functions.
 
 #### [.NET Core](#tab/dotnet-core/)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/functionApp
+https://github.com/microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/functionApp
 ```
 
 #### [Java](#tab/java)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/MicrosoftDocs/pipelines-java-function
+https://github.com/MicrosoftDocs/pipelines-java-function
 ```
 
 #### [Nodejs](#tab/nodejs)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/microsoft/devops-project-samples/tree/master/node/plain/functionApp
+https://github.com/microsoft/devops-project-samples/tree/master/node/plain/functionApp
 ```
 
 * * *
@@ -57,7 +58,14 @@ However, if you are a new user, then you might get a better start by using our s
 
 ::: moniker range="azure-devops"
  
-Follow the guidance in [Create your first pipeline](../create-first-pipeline.md) to setup the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
+
+1. Sign in to your Azure DevOps organization and navigate to your project.
+2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+5. When the list of repositories appears, select your desired sample app repository.
+6. Azure Pipelines will analyze your repository and recommend a template. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+7. A new run is started. Wait for the run to finish.
 
 ::: moniker-end
 
