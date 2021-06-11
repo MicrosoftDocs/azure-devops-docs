@@ -15,9 +15,15 @@ ms.date: 06/07/2021
 
 # Sample custom rule scenarios  
 
-<!--- automate --> 
 
-This article provides examples of custom rule definitions. All custom rules are defined for a work item type.  Prior to adding custom rules, read [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
+
+This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
+
+ 
+
+
+
+Prior to adding custom rules, read [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
  
 
 Please consider to include an example of a customized workflow with restricted state transitions.
@@ -34,17 +40,87 @@ Example: show a user story where an "Active" can only move to "Resolved", and "C
 
 - Define a field value based on a user not modifying a field (WHENNOTCHANGED)
 
- 
+<!--- automate --> 
 
-<a name="copy-field"></a>  
 
-## Set a field value based on the contents of another field [DONE] 
 
-The following examples illustrate how to map the values of the **Size** field when a value is assigned to the custom field, **Tee-Shirt Size** field.
+<a name="dependent-required"></a>   
+
+##  Define a dependent required field  
+
+You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the **Customer Reported** field is set to *True*, and the **Severity** field becomes required. If the issue isn't reported by a customer, a value for the **Severity** field isn't required.  
+
+# [Inheritance process](#tab/inheritance) 
+
+:::image type="content" source="media/sample-rules/set-severity-customer-reported-true.png" alt-text="Screenshot of custom rule to make Severity required when Customer REported field=true.":::
+
+# [On-premises XML process](#tab/on-premises)
+
+You specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
+
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <FIELDS>
+>    ...
+>    <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
+>        <ALLOWEDVALUES>  
+>            <LISTITEM value="Blocking" />  
+>            <LISTITEM value="Major" />  
+>            <LISTITEM value="Minor" />  
+>        </ALLOWEDVALUES>  
+>        <WHEN field="MyCorp.CustomerReported" value="true">  
+>            <REQUIRED />  
+>        </WHEN>  
+>    </FIELD> 
+>    ...
+> </FIELDS>     
+> ```  
+
+---
+
+
+<a name="clear-field"></a>
+
+###  Clear the value of a dependent field  
+
+The following example illustrates defining a custom rule to clear the value for **Story Points** when a change is made to the **Start Date**. 
 
 # [Inheritance process](#tab/inheritance)
 
- The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules must be defined to assign the Size field when the Tee-Shirt Size field is changed or updated. To simplify usage, the default value of the Tee-Shirt Size is Small. 
+
+:::image type="content" source="media/sample-rules/clear-story-points-start-date-change.png" alt-text="Screenshot of custom rule to clear the value of Story Points when Start Date changes.":::
+
+# [On-premises XML process](#tab/on-premises)
+
+You specify a `WHENCHANGED` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
+
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <FIELDS>
+>  ...
+>    <FIELD name="Story Points" refname="Microsoft.VSTS.Scheduling.StoryPoints" type="Double" reportable="measure" formula="sum">
+>        <HELPTEXT>The size of work estimated for implementing this user story</HELPTEXT>
+>        <WHENCHANGED field="Microsoft.VSTS.Scheduling.StartDate">  
+>            <EMPTY />  
+>        </WHENCHANGED>
+>    </FIELD>
+>    ...
+> </FIELDS>     
+> ```  
+
+---
+ 
+
+
+<a name="copy-field"></a>  
+
+## Set a dependent field value  
+
+The following examples illustrate how to map the values of the **Size** field depending on the value selected for the custom field, **Tee-Shirt Size** field.
+
+# [Inheritance process](#tab/inheritance)
+
+ The **Tee-Shirt Size** pick-list consists of four values *Small*, *Medium*, *Large*, and *X-Large*. Four custom rules are defined to assign the **Size** field when the **Tee-Shirt Size** field is changed to a specific value. To simplify usage, the default value of the **Tee-Shirt Size** is *Small*. 
 
 
 **Edit field dialog for Tee-Shirt Size field**
@@ -62,7 +138,7 @@ The following examples illustrate how to map the values of the **Size** field wh
 
 # [On-premises XML process](#tab/on-premises)
 
-You specify the value of the **Size** field in the `FIELDS` section of the work item type definition. You use a series of `WHEN` rule statements to make the mapping, setting the value of the Size field using the `COPY value="value"` rule. 
+You specify the value of the **Size** field in the `FIELDS` section of the work item type definition. You use a series of `WHEN` rule statements to make the mapping, setting the value of the **Size** field using the `COPY value="value"` rule. 
  
 
 > [!div class="tabbedCodeSnippets"]  
@@ -100,78 +176,12 @@ You specify the value of the **Size** field in the `FIELDS` section of the work 
 ---
 
 
-<a name="DependentRequired"></a>   
-
-###  Define a dependent required field [DONE] 
-
-You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the **Customer Reported** field is set to True, and the Severity field must be specified. If the issue isn't reported by a customer, a severity value isn't required.  
-
-# [Inheritance process](#tab/inheritance) 
-
-:::image type="content" source="media/sample-rules/set-severity-customer-reported-true.png" alt-text="Screenshot of custom rule to make Severity required when Customer REported field=true.":::
-
-# [On-premises XML process](#tab/on-premises)
-
-You specify a `WHEN` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
-
-> [!div class="tabbedCodeSnippets"]  
-> ```XML
-> <FIELDS>
->    ...
->    <FIELD refname="MyCorp.Severity" name="Customer Severity" type="String">  
->        <ALLOWEDVALUES>  
->            <LISTITEM value="Blocking" />  
->            <LISTITEM value="Major" />  
->            <LISTITEM value="Minor" />  
->        </ALLOWEDVALUES>  
->        <WHEN field="MyCorp.CustomerReported" value="true">  
->            <REQUIRED />  
->        </WHEN>  
->    </FIELD> 
->    ...
-> </FIELDS>     
-> ```  
-
----
-
-<a name="clear-field"></a>
-
-###  Clear the value of a field when another field changes [DONE]
-
-The following examples illustrate defining a custom rule to clear the value for Story Points when a change is made to the Start Date. 
-
-# [Inheritance process](#tab/inheritance)
-
-
-:::image type="content" source="media/sample-rules/clear-story-points-start-date-change.png" alt-text="Screenshot of custom rule to clear the value of Story Points when Start Date changes.":::
-
-# [On-premises XML process](#tab/on-premises)
-
-You specify a `WHENCHANGED` rule statement for the field definition within the `FIELDS` section of the work item type definition.  
-
-> [!div class="tabbedCodeSnippets"]  
-> ```XML
-> <FIELDS>
->  ...
->    <FIELD name="Story Points" refname="Microsoft.VSTS.Scheduling.StoryPoints" type="Double" reportable="measure" formula="sum">
->        <HELPTEXT>The size of work estimated for implementing this user story</HELPTEXT>
->        <WHENCHANGED field="Microsoft.VSTS.Scheduling.StartDate">  
->            <EMPTY />  
->        </WHENCHANGED>
->    </FIELD>
->    ...
-> </FIELDS>     
-> ```  
-
----
- 
-
 
 <a name="require-field-state-change"></a>  
 
-##  Require a field value when the state changes [DONE]
+##  Require a field value upon State changes 
 
-You can require specification of **Remaining Work** field when the task workflow state changes to Active.  
+The following example shows how you can require specification of the **Remaining Work** field when the task workflow **State** changes to *Active*.  
 
 # [Inheritance process](#tab/inheritance)
 
@@ -203,9 +213,9 @@ You can require specification of **Remaining Work** field when the task workflow
 
 <a name="fields"></a> 
 
-## Clear the value of a field upon close state  [DONE]
+## Clear the value of a field upon close State  
 
-You can automate clearing the **Remaining Work** field upon closing a task using a custom rule. 
+To automate clearing the **Remaining Work** field upon closing a task, define a custom rule as indicated. 
 
 # [Inheritance process](#tab/inheritance)
 
@@ -237,7 +247,7 @@ You can automate clearing the **Remaining Work** field upon closing a task using
 
 
 
-## Restrict creation of work items by a group [DONE]
+## Restrict creation of work items by a group 
 
 A custom rule that restricts the transition to the *Proposed* state category of a work item type effectively disallows creation of work items of that type. By applying the rule to a specific group, you effectively disallow that group from creating work items of that type.  
 
@@ -267,7 +277,7 @@ The following custom rule restricts the Fabrikam Review Team (*for* attribute) f
 ---
 
 
-## Restrict modification of work items by a group [DONE]  
+## Restrict modification of work items by a group  
 
 For an Inheritance process, you can prevent users from modifying a work item by setting the deny permission for a group on an Area Path. For an On-premises XML process, you can place restrictions on each workflow state for a group that prevents them from saving the work item in any state. 
 
