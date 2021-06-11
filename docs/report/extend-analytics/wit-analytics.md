@@ -168,8 +168,7 @@ The following example returns work items whose **Changed Date** is greater than 
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
-&$filter=ChangedDate ge 2021-01-01Z
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
 > ```
 
 
@@ -177,8 +176,7 @@ The following example returns work items whose **Changed Date** occurs during th
 
 > [!div class="tabbedCodeSnippets"]
 > ```JSON
-> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State
-&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
+> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
 > ```
  
 
