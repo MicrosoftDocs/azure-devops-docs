@@ -63,38 +63,40 @@ Visual Studio code should load your IoT Edge solution workspace now. The solutio
 
 ## Add registry credentials
 
-The environment file stores the credentials for your container registry and shares them with the IoT Edge runtime. The runtime needs these credentials to pull your private images onto the IoT Edge device.
+The **.env** environment file stores the credentials for your container registry and shares them with the IoT Edge runtime. The runtime needs these credentials to pull your private images onto the IoT Edge device.
 
-1. In the VS Code explorer, open the .env file.
+1. In the Visual Studio Code select the **.env** file to open it.
 
 1. Update the fields with the user name and password values that you copied from your Azure container registry.
 
-1. Save this file.
+1. Save the file when you are done.
 
 ## Build your IoT Edge solution
 
-In the previous section, you created an IoT Edge solution using CSharpModule. Now you need to build the solution as a container image and push it to the container registry.
+Now that our IoT Edge solution is set up, let's build it now and generate our Docker image.
 
-1. In the VS Code explorer, right-click on the **deployment.template.json** file and select **Build IoT Edge solution**.
+1. From the Visual Studio Code explorer, right-click on the **deployment.template.json** file and then select **Build IoT Edge solution**.
 
-1. Upon successful build, you should see an image with the following format **registryname.azurecr.io/csharpmodule:0.0.1-amd64.**
+1. Upon successful build, you should see an image with the following format **registryname.azurecr.io/csharpmodule:0.0.1-amd64.** in your local Docker images.
 
 ## Push the code to Azure Repo
 
 If your workspace isn't under Git source control, you can easily create a Git repository with the **Initialize Repository** command.
 
-1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
+1. In the Visual Studio Code, select **View**, and then select  **Command Palette** to open the VS Code command palette.
 
-1. Run the **Git: Initialize Repository** command from the Command Palette. Running Initialize Repository will create the necessary Git repository metadata files and show your workspace files as untracked changes ready to be staged.
+1. Enter and run the **Git: Initialize Repository** command from the Command Palette. Running Initialize Repository will create the necessary Git repository metadata files and show your workspace files as un-tracked changes ready to be staged.
 
-1. Select **View > Terminal** to open the terminal. To **push, pull** and **sync** you need to have a Git origin set up. You can get the required URL from the repo host. Once you have that URL, you need to add it to the Git settings by running a couple of command line actions as shown below.
+1. Select **View > Terminal** to open the terminal window.
+
+1. To push, pull, or sync your code, you must first set up a Git origin. To do so, run the following commands and enter your organization name, project name, and repository name in the placeholders.
 
     ```Git
-    git remote add origin https://<org name@dev.azure.com>/<org name>/<project name>/_git/<repo name>
+    git remote add origin https://dev.azure.com/<org-name>/<project-name>/_git/<repo-name>
     git push -u origin --all
     ```
 
-1. From the browser, navigate to the repo. You should see the code.
+You code should be published now to your repository.
 
 ## Create a build pipeline
 
