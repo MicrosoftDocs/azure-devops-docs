@@ -34,11 +34,11 @@ You can use work items to track anything you need to track. Each work item repre
 
 ::: moniker-end
 
-#### In a nutshell:
+#### Tasks you can perform using work items
 
 ::: moniker range=">= tfs-2018"
 
-- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools 
+- You use different [work item types (WITs)](#wit) to track different types of information. Specific tools include the following:  
 	- [Add backlog items](../backlogs/create-your-backlog.md), such as Issues (Basic process), User Stories (Agile), Product Backlog Items (Scrum), Requirements (CMMI)
 	- [Define Features and Epics](../backlogs/define-features-epics.md)
 	- [Define, triage, and manage Bugs](../backlogs/manage-bugs.md)
@@ -81,29 +81,31 @@ To track different types of work, different WITs are defined. The work item type
 
 Each work item type belongs to a category. Categories are used to group work item types and determine which types appear on backlogs and boards. 
 
-| Category | Work item type | Controls backlogs/boards |
-|----------|----------------|--------------------------|
-|Epic| Epic | Epic portfolio backlogs and boards |
-|Feature| Feature | Feature portfoliobacklogs and boards |
-|Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
-|Task | Sprints Taskboards  |
-|Bug | Bug | Dependent on [how bugs are tracked](#track)  |
+> [!div class="mx-tdBreakAll"]  
+> |Category | Work item type | Controls backlogs/boards |
+> |----------|----------------|--------------------------|
+> |Epic| Epic | Epic portfolio backlogs and boards |
+> |Feature| Feature | Feature portfoliobacklogs and boards |
+> |Requirement| User Story (Agile)<br/>Issue (Basic)<br/>Product Backlog Item (Scrum)<br/>Requirement (CMMI)| Product backlogs and boards and Sprints backlog  |
+> |Task | Task | Sprints Taskboards  |
+> |Bug | Bug | Dependent on [how bugs are tracked](#track)  |
 
  
 In addition to the work items types that appear on backlogs and boards, there are additional work item types used to track testing, reviews, and feedback. These types, listed in the following table according to the category they belong to, are available for all processes. 
 
 
-| Category | Work item type | Description |
-|----------|----------------|--------------------------|
-|Code Review Request | Code Review Request | Track a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). | 
-|Code Review Response | Code Review Response | A code review response is created for each person who's been requested to provide review comments. |  
-|Feedback Request | Feedback Request | Track request for feedback provided through the Microsoft Feedback Client. See [Get feedback](../../../project/feedback/get-feedback.md).  |  
-|Feedback Response | Feedback Response | A feedback response is created for each person and for each item for which feedback is provided.  |
-|Shared Step | Shared Step  | Used to [repeat tests with different data](../../test/repeat-test-with-different-data.md). |  
-|Shared Parameter | Shared Parameter | Used to specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md). |  
-|Test Case | Test Case | [Defines a manual test to run](../../test/create-test-cases.md).|  
-|Test Plan | Test Plan | Used to groups test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/-a-test-plan.md). |  
-|Test Suite | Test Suite | Used to group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/-a-test-plan.md). |
+> [!div class="mx-tdBreakAll"]  
+> |Category | Work item type | Description |
+> |----------|----------------|--------------------------|
+> |Code Review Request | Code Review Request | Track a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). | 
+> |Code Review Response | Code Review Response | A code review response is created for each person who's been requested to provide review comments. |  
+> |Feedback Request | Feedback Request | Track request for feedback provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).  |  
+> |Feedback Response | Feedback Response | A feedback response is created for each person and for each item for which feedback is provided.  |
+> |Shared Step | Shared Step  | Used to [repeat tests with different data](../../test/repeat-test-with-different-data.md). |  
+> |Shared Parameter | Shared Parameter | Used to specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md). |  
+> |Test Case | Test Case | [Defines a manual test to run](../../test/create-test-cases.md).|  
+> |Test Plan | Test Plan | Used to groups test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
+> |Test Suite | Test Suite | Used to group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
 
 To prevent users from creating work items manually which should only be created from the specific tool designed to support their usage, there is a Hidden Types category. All of the categories listed in the previous table are added to the Hidden Types category except for the Test Case category. 
  
