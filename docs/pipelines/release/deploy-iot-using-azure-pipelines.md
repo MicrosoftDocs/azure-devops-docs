@@ -1,6 +1,6 @@
 ---
-title: IoT DevOps using Azure Pipelines
-description: Set up continuous deployment (CD) of an IoT app to IoT Hub in Azure Pipelines or Team Foundation Server (TFS)
+title: deploy to IoT edge devices 
+description: Set up a release pipeline to IoT Hub with Azure Pipelines
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
 ms.author: atulmal
@@ -11,55 +11,55 @@ monikerRange: azure-devops
 
 # Automatically deploy to IoT edge devices 
 
-[!INCLUDE [include](../includes/version-team-services.md)]
-
-In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) solution, push the created module images to your Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT edge devices.
+In this tutorial, we will learn how to build an Azure Internet of Things (IoT) solution, push the created module images to Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT edge devices.
 
 ## Prerequisites
 
-1. **Visual Studio (VS) Code** to create an Iot Edge module. You can download it from [here](https://code.visualstudio.com/?wt.mc_id=DX_841432).
+- An Azure DevOps organization and a project. [Create a new organization](../../organizations/accounts/create-organization.md) and/or a [new project](../../organizations/projects/create-project.md), if you don't already have one.
 
-1. **Azure DevOps Services organization**. If you don't yet have one, you can [get one for free](../../user-guide/sign-up-invite-teammates.md).
+- An Azure account. Sign up for a [free Azure account](https://azure.microsoft.com/free/), if you don't already have one.
 
-1. **Microsoft Azure Account**. If you don't yet have one, you [can create one for free](https://azure.microsoft.com/free/).
+- [Azure IoT tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) for Visual Studio Code.
 
-1. [Azure IoT tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) for VS Code.
+- [Docker CE](https://docs.docker.com/install/).
 
-1. [Docker CE](https://docs.docker.com/install/).
-
-1. Create an [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
+- An Azure Container Registry. Create an [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal), if you don't already have one.
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an IoT Edge module project based on .NET Core SDK by using Visual Studio Code and Azure IoT tools extension.
 
-1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
+1. In the Visual Studio Code, select **View**, and then select  **Command Palette** to open the VS Code command palette.
 
-1. In the command palette, enter and run the command **Azure: Sign in** and follow the instructions to sign in your Azure account. If you're already signed in, you can skip this step.
+    :::image type="content" source="./media/command-palette.png" alt-text="Access command palette":::
 
-1. In the command palette, enter and run the command **Azure IoT Edge: New IoT Edge solution**. Follow the prompts in the command palette to create the solution.
+1. In the command palette, enter and run the **Azure: Sign in** command and follow the instructions to sign in to your Azure account.
 
-    <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
-    <tr><td>Select Folder</td><td>Choose the location on your development machine for VS Code to create the solution files</td></tr>
-    <tr><td>Provide a solution name</td><td>Enter a descriptive name for your solution or accept the default EdgeSolution</td></tr>
-    <tr><td>Select module template</td><td>Choose <b>C# Module</b></td></tr>
-    <tr><td>Provide a module name</td><td>Name your module <b>CSharpModule</b></td></tr>
-    <tr><td>Provide Docker image repository for the module</td><td>An image repository includes the name of your container registry and the name of your container image. Your container image is prepopulated from the name that you have provided in the last step. Replace <b>localhost:5000</b> with the login server value from your Azure container registry. You can retrieve the login server from the Overview page of your container registry in the Azure portal.</td></tr>
-    </table>
+1. In the command palette, enter and run the **Azure IoT Edge: New IoT Edge solution** command and follow the prompts to create your solution.
 
-The VS Code window loads your IoT Edge solution workspace. The solution workspace contains five top-level components.
+    |Field|Values|
+    |--- |--- |
+    | Select Folder | Choose the local path on your machine where you want to create the solution files |
+    | Provide a solution name | Enter a descriptive name for your solution or accept the default EdgeSolution |
+    | Select module template | Select **C# Module** |
+    | Provide a module name | Provide a name for your module: E.g. **CSharpModule** |
+    | Provide Docker image repository for the module | An image repository includes the name of your container registry and the name of your container image. Your container image is pre-populated from the name that you have provided in the last step. Replace the **localhost:5000** with the login server value from your Azure container registry. You can retrieve the login server from the Overview page of your container registry in Azure portal. |
 
-1. **modules** - contains **C#** code for your module as well as Dockerfiles for building your module as a container image
 
-1. **.env** - file stores your container registry credentials
+Visual Studio code should load your IoT Edge solution workspace now. The solution workspace contains five top-level components:
 
-1. **deployment.template.json** - file contains the information that the IoT Edge runtime uses to deploy the modules on a device
+- **modules** - contains the code for your module as well as the Dockerfiles to build your Docker image.
 
-1. **deployment.debug.template.json** - file contains the debug version of modules
+- **.env** - to store your container registry credentials
 
-1. **.vscode** and **.gitignore** - do not edit
+- **deployment.template.json** - a JSON file to build the deployment version of your modules
 
-If you didn't specify a container registry when creating your solution, but accepted the default localhost:5000 value, you won't have a .env file.
+- **deployment.debug.template.json** - a JSON file to build the debug version of your modules
+
+- **.vscode** and **.gitignore** - The workspace settings file and the gitignore to un-track files 
+
+> [!NOTE]
+> If you didn't specify a container registry when you created your solution and accepted the default localhost:5000 value, you won't have a .env file.
 
 ## Add registry credentials
 
