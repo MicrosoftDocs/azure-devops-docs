@@ -23,7 +23,7 @@ From the Visual Studio **View** menu, open Team Explorer or use the **Ctrl+\, Ct
 
 Team Explorer and the Git command-line work great together. When you make updates and run commands through one interface, you'll see those changes reflected in the other.
 
-[Git Installation instructions](/devops/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
+[Git Installation instructions](/devops/develop/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, install[Git for Windows](https://git-scm.com/download/win) to set up the [Git Credential Manager Core](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
