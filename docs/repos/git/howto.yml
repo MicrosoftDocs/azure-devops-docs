@@ -64,7 +64,7 @@ sections:
           - Committing the changes. See [saving your work in Git with commits](commits.md). 
           - [Stashing](howto.yml#stash) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
           ---
-		            
+
       - question: | 
           I've done some work but need to swap to something else. How can I save my work for later without committing the changes?
         answer: |
