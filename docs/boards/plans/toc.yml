@@ -2,8 +2,10 @@
   href: index.md
 - name: Portfolio management
   href: portfolio-management.md
+  displayname: team progress, feature team, Node Name, common backlog, dependencies 
 - name: Configure a hierarchy of teams
   href: configure-hierarchical-teams.md
+  displayname: area paths, sub-area paths, sprint 
 - name: Review team Delivery Plans
   href: review-team-plans.md  
   displayname: filter, roadmap, calendar, multi-team views, cards
@@ -20,27 +22,34 @@
   href: edit-delivery-plan-permissions.md
 - name: Delivery Plans FAQs
   href: faqs.yml
+  displayname: custom work item types  
 - name: Scaled Agile Framework®
   items:
   - name: Implement Scaled Agile Framework®
     href: scaled-agile-framework.md
+    displayname: Essential, Portfolio, Large Solution, release train, capabilities, enablers, epics, features, milestones, portfolio, program, roadmap, solution 
   - name: SAFe® concepts & Azure Boards
     href: safe-concepts.md
+    displayname: release train, timeboxes, goals, objectives, value streams, budgets,  epics, features, milestones, stories, portfolio, program, roadmap, solution, retrospective, review
   - name: Configure Azure Boards
     href: safe-configure-boards.md 
+    displayname: hierarchy, team, area paths
   - name: Customize Azure Boards
     href: safe-customize.md 
   - name: Manage SAFe® programs and portfolios  
     href: safe-plan-track-boards.md 
   - name: View roadmaps and monitor progress 
     href: safe-review-roadmaps-progress.md 
+    displayname: widgets, in-context reports, rollup, Analytic Views
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture  
     href: agile-culture.md  
+    displayname: alignment, autonomy, vision, team structure, quality, risk
   - name: Practices that scale  
     href: practices-that-scale.md  
+    displayname: flow, visibility, productive, organization, culture, release trains
   - name: Visibility across teams  
     href: visibility-across-teams.md
-
-
+    displayname: calendar, timeline, Analytics, Kanban 
+ 

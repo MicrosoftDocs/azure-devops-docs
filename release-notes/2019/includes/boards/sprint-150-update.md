@@ -6,7 +6,7 @@ ms.topic: include
 
 With the increased adoption of Azure Active Directory and prevalence of using groups to manage security, teams have increasingly been looking for ways to leverage those groups in Azure Boards. Now, in addition to querying work items which have been assigned or changed by specific people using the **In Group** or **Not In Group** operators, you can also use Azure Active Directory groups directly.
 
-See the [query operators]( https://docs.microsoft.com/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops&preserve-view=true#team-or-group-membership-queries) documentation for more information.
+See the [query operators](/azure/devops/boards/queries/query-by-workflow-changes?view=azure-devops&preserve-view=true#team-or-group-membership-queries) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Query work based on groups.](../../media/150_04.png "Query for work based")

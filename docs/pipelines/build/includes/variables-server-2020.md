@@ -618,7 +618,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.JobId</td>
-<td>A unique identifier for a single attempt of a single job.</td>
+<td>A unique identifier for a single attempt of a single job. The value is unique to the current pipeline.</td>
 <td>No</td>
 </tr>
 
