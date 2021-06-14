@@ -31,6 +31,8 @@
   items:
     - name: Key concepts
       href: get-started/key-pipelines-concepts.md
+    - name: YAML pipeline editor
+      href: get-started/yaml-pipeline-editor.md
     - name: Repositories
       items:
         - name: Supported repositories
