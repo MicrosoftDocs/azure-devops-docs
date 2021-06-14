@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE
-ms.custom: contperf-fy20q4
+ms.custom: "contperf-fy20q4, linked-from-support"
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020
