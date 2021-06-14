@@ -145,7 +145,6 @@ Add a query and select **Tree of work items** to begin your query. You should se
 
 From there, you can add query clauses or change the filter options for linked work items. 
  
----
 :::row:::
    :::column span="":::
      **Filter for**
@@ -154,7 +153,6 @@ From there, you can add query clauses or change the filter options for linked wo
       **Include these query clauses**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="":::
      View only child items of work item 645
@@ -164,7 +162,6 @@ From there, you can add query clauses or change the filter options for linked wo
       `ID  =  645`
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="":::
      Tasks or bugs
@@ -174,7 +171,6 @@ From there, you can add query clauses or change the filter options for linked wo
       `Work Item Type  In  Task,Bug`
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="":::
      Items assigned to my team (Web)
@@ -184,7 +180,6 @@ From there, you can add query clauses or change the filter options for linked wo
       `Assigned to  In Group  [Fabrikam Fiber]\Web`  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="":::
      Parent items of tasks assigned to me
@@ -195,7 +190,7 @@ From there, you can add query clauses or change the filter options for linked wo
       `Assigned To = @Me`
    :::column-end:::
 :::row-end:::
----
+
   
 
 <a id="dependents" />

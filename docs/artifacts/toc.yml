@@ -25,7 +25,7 @@
   items:
   - name: About
     items:
-    - name: Use badges to share your packages
+    - name: Package badges
       href: package-badges.md
       displayName: packages, badges, sharing 
     - name: Limits on package sizes and counts
@@ -232,5 +232,5 @@
     href: /rest/api/azure/devops/index
     displayName: api, reference 
   - name: Azure DevOps CLI
-    href: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
-    displayName: cli, reference 
+    href: ../cli/index.md?bc=%2fazure%2fdevops%2fdev-resources%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fdev-resources%2ftoc.json
+    displayName: cli, reference

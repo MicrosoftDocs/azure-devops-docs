@@ -196,6 +196,9 @@ Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. 
 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
+> [!NOTE]  
+> You must be a member of at least one team for the **Add to Team Favorites** option to be visible.  If not visible, ask your project administrator or team administrator to add you to a team.
+
 > [!div class="mx-imgBorder"]  
 > ![Work>Queries, Add to favorites](media/favorites/favorite-query.png)
 

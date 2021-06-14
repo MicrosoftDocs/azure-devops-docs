@@ -23,18 +23,22 @@
     href: live-updates.md
   - name: Add or edit columns
     href: add-columns.md
+    displayname: remove, state mapping, rename  
   - name: Customize cards
     href: customize-cards.md  
+    displayname: styles, annotations, tests, tag colors  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Split columns
     href: split-columns.md
+    displayname: doing, done, bottlenecks  
   - name: Definition of done
     href: definition-of-done.md
   - name: Show bugs on backlogs & boards
     href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    displayname: nested, hierarchical
 - name: Best practices, monitoring, & reports
   items:
   - name: Kanban best practices

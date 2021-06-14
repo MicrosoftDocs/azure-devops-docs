@@ -18,10 +18,10 @@
   items:
   - name: Choose a process
     href: work-items/guidance/choose-process.md
-    displayName: process, process template, basic process, scrum, agile, hosted XML, workflow states, product planning, bug backlog, transitions
+    displayname: agile, basic, scrum, cmmi, test
   - name: About work items
     href: work-items/about-work-items.md
-    displayName: work item, backlogs, filter criteria, backog use, plan, item, process, portfolio, assign
+    displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cients
   - name: Manage requirements
     href: ../cross-service/manage-requirements.md 
     displayName: track status, requirements, analyze and prioritize, monitor, report, work item fields, work item types, burndown, team velocity
@@ -30,7 +30,7 @@
     displayName: modify fields, remaining work, state, iteration ID, node, remote link count, effort
   - name: "Backlogs, boards, & plans"
     href: backlogs/backlogs-boards-plans.md
-    displayName: backlog, taskboard, delivery plan, filter, rollup progress
+    displayname: In Progress, Rollup, Taskboard
   - name: "About teams & Agile tools"
     href: ../organizations/settings/about-teams-and-settings.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
     displayName: default team, default area path, iteration path, sprint backlogs, working days, product backlog, task boards, team groups
@@ -47,7 +47,7 @@
     items:
     - name: Agile process guidance
       href: work-items/guidance/agile-process.md
-      displayName: WIT, work item types, list work items, analytics service
+      displayname: MSF
     - name: Agile workflow
       href: work-items/guidance/agile-process-workflow.md
       displayName: discussion, map stories, track progress, kanban, taskboards
@@ -61,10 +61,10 @@
       items:
       - name: CMMI process guidance
         href: work-items/guidance/cmmi-process.md
-        displayName: Define requirements, CMMI, shared queries 
+        displayname: Capability Maturity Model Integration 
       - name: CMMI workflow
         href: work-items/guidance/cmmi-process-workflow.md
-        displayName: TFSFieldMapping, GANTT, impact assessment, UAT
+        displayname: requirements
       - name: CMMI background
         href: work-items/guidance/cmmi/guidance-background-to-cmmi.md
         displayName: Capability Maturity Model Integration, Capability Maturity Model, CMM
@@ -125,21 +125,21 @@
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
   - name: Workflow states & categories
     href: ./work-items/workflow-and-state-categories.md
-    displayName: work item type, workflow states, states, categories
+    displayName: auto complete, pull requests
   - name: Linking & traceability
     href: ./queries/link-work-items-support-traceability.md
-    displayName: link work items, parent-child, test work item
+    displayName: parent, child, git, remote  
   - name: Link types 
     href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
-    displayName: external links, hyperlink, GitHub link
+    displayName: work, hyperlink, external, github, remote    
   - name: Work tracking limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-    displayName: rate limits, import limits
-- name: Configure & customize
+    displayName: customize, migrate, import
+ - name: Configure & customize
   items:
   - name: Configure & customize
     href: configure-customize.md
-    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy
+    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
   - name: Define area paths & assign to a team 
     href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     displayName: levels, rollup, area paths
@@ -148,7 +148,7 @@
     displayName: forecast, team sprints
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
-    displayName: checklist, taskboard, levels
+    displayname: default, correct, Kanban, custom
   - name: Add & manage teams
     items:
     - name: Add a team
@@ -252,13 +252,14 @@
     displayname: reorder, disable, nest, natural hierarchy, in progress  
   - name: Work item form caching
     href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
-    displayname: IndexDB
+    displayname: IndexDB, rule
 - name: Field reference
   items:
   - name: Work item field index
     href: work-items/guidance/work-item-field.md
   - name: Work item fields
     href: work-items/work-item-fields.md
+    displayname: attribute, Work Item Field Explorer
   - name: "Code review & feedback fields"
     href: work-items/guidance/guidance-code-review-feedback-field-reference.md
   - name: "Bugs, issues, & risks fields"
