@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 06/09/2021
+ms.date: 06/14/2021
 ---
 
 # Allowed IP addresses and domain URLs
@@ -287,4 +287,5 @@ During the import process, we highly recommend that you restrict access to your 
 - [Available service tags](/azure/virtual-network/service-tags-overview)
 - [Microsoft-hosted agents Agent IP address ranges](../../pipelines/agents/hosted.md#agent-ip-ranges)
 - [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md)
+- [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security?toc=%2Fazure%2Fvirtual-network%2Ftoc.json&tabs=azure-portal)
 - [Install and use Visual Studio behind a firewall or proxy server](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services)
