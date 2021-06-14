@@ -17,17 +17,42 @@ Also mention the files can be edited in any other editor of choice and checked i
 
 If you use YAML to define your pipelines, you can now take advantage of the new editor features introduced with this release. Whether you are creating a new YAML pipeline or editing an existing YAML pipeline, you will be able to edit the YAML file within the pipeline web editor. Use Ctrl+Space for IntelliSense support as you edit the YAML file. You will see the syntax errors highlighted and also get help on correcting those errors.
 
-TOTO images here, check for version differences
+:::moniker range="azure-devops-2019"
 
-## Keyboard shortcuts
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor for Azure DevOps Server 2019.1":::
 
+:::moniker-end
+
+:::moniker range=">= azure-devops-2020"
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor":::
+
+:::moniker-end
+
+### Keyboard shortcuts
+
+Press Ctrl+Space for Intellisense support while you are editing the YAML pipeline.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-intellisense.png" alt-text="YAML pipeline editor intellisense.":::
+
+Press F1 to display the command palette and view the available Keyboard shortcuts.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-command-palette.png" alt-text="YAML pipeline editor command palette.":::
+
+:::moniker range=">= azure-devops-2020"
 ## Validate the pipeline
 
 For 2020 and higher, the More actions->Validate
 
+:::moniker-end
+
+:::moniker range=">= azure-devops-2020"
+
 ## Download full YAML
 
 For 2020 and higher, download the processed version of the YAML (with "compile time" variable/template expansions?)
+
+:::moniker-end
 
 :::moniker range=">= azure-devops-2019"
 
