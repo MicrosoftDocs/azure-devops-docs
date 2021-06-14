@@ -135,8 +135,8 @@
   - name: Work tracking limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     displayName: customize, migrate, import
- - name: Configure & customize
-  items:
+  - name: Configure & customize
+    items:
   - name: Configure & customize
     href: configure-customize.md
     displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, rollup, calendar, time
