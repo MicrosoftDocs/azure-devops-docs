@@ -432,7 +432,7 @@ variables:
 * A JSON object may contain an array whose values can be referenced by their index.
   For example, to substitute the first value in the **Users** array shown above,
   use the variable name `DBAccess.Users.0`. To update the value in **NewWelcomeMessage**,
-  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
+  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](utility/file-transform.md) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
 
 * Only **String** substitution is supported for JSON variable substitution.
 

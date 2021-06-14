@@ -5403,7 +5403,12 @@
     },
     {
       "source_path": "docs/work/reference/apply-rule-work-item-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-rule-work-item-field",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/reference/xml/apply-rule-work-item-field.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
     {
@@ -10598,7 +10603,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/apply-rule-work-item-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-rule-work-item-field",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
     {

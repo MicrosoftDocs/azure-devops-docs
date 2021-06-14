@@ -481,7 +481,7 @@ To learn more about using these features, see [Add task checklists](../../boards
 	![Kanban board, Settings dialog, Annotations tab.](media/customize-cards/annotate-settings-154.png)
 
 	> [!NOTE]   
-	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Board work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Boards work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
 
 	When done with your changes, choose **Save**.
 

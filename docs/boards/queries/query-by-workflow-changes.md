@@ -409,7 +409,6 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker-end
 
----
 :::row:::
    :::column span="1":::
       **Field name**
@@ -421,7 +420,6 @@ You can use the following fields to filter your queries or build reports. Some o
       **Work item type**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Activated By <sup> 1,&nbsp;2, 3</sup> 
@@ -440,7 +438,6 @@ You can use the following fields to filter your queries or build reports. Some o
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Activated Date <sup> 1, 3</sup> 
@@ -459,7 +456,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -479,7 +475,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Column
@@ -499,7 +494,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Column Done 
@@ -519,7 +513,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Board Lane
@@ -539,7 +532,6 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker-end
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -559,7 +551,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Closed Date 
@@ -574,7 +565,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -594,7 +584,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Created Date 
@@ -609,7 +598,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -631,7 +619,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All (except Test Case and Shared Steps)
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -654,7 +641,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -677,7 +663,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -697,7 +682,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All (Agile, CMMI)
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Reviewed By 
@@ -712,7 +696,6 @@ You can use the following fields to filter your queries or build reports. Some o
       Code Review Response
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
@@ -742,7 +725,6 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       State Changed Date 
@@ -757,7 +739,7 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
----
+
 
 #### Notes:  
 

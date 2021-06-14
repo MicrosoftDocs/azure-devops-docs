@@ -264,7 +264,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
-For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
+For details on defining custom rules, see [Rules and rule evaluation](../../../organizations/settings/work/custom-rules.md). 
 
 ::: moniker range=">= azure-devops-2020"
 
