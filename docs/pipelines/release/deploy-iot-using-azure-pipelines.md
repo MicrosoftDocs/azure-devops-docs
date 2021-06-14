@@ -114,7 +114,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
     :::image type="content" source="./media/empty-job.png" alt-text="Start with an empty job":::
 
-1. From the **Agent job 1**, select the **ubuntu-16.04** Agent Specification from the drop down.
+1. From the **Agent job 1**, select the **ubuntu-20.04** Agent Specification from the drop down.
 
     :::image type="content" source="./media/agent-specification.png" alt-text="Change the agent specification in the agent job":::
 
@@ -127,10 +127,13 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    <tr><td>Location</td><td>(Required) Provide the location for deploying the resource group</td></tr>
    <tr><td>Template location</td><td>(Required) Set the template location to <b>URL of the file</b></td></tr>
    <tr><td>Template link</td><td>(Required) <a href="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json" data-raw-source="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json">https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json</a></td></tr>
-   <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku &quot;Basic&quot; -registryLocation &quot;YOUR LOCATION&quot;</td></tr>
+   <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku Basic -registryLocation YOUR_REGISTRY_LOCATION</td></tr>
    </table>
 
     :::image type="content" source="./media/arm-template-deployment-task.png" alt-text="Configure the arm template deployment task":::
+
+> [!TIP]
+> You must use quotation marks when overriding the template parameters to avoid getting the "One of the deployment parameters has an empty key..." error. Example: *-registryName "iotDemoContainerRegistry" -registrySku "Standard" -registryLocation "West US"*
 
 1. Select your pipeline, and then select **Edit** to edit your pipeline. Select **+** in the **Agent job 1**, and then search for the **Azure IoT Edge** task. Select **Add** to add the step to build the module images.  
 
