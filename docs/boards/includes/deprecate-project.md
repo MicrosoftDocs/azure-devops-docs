@@ -11,9 +11,5 @@ ms.date: 03/25/2021
 > - Azure DevOps Server 2019 and later versions, including Azure DevOps Services.  
 > 
 > However, full support for Microsoft Excel integration is maintained and supports bulk import and update of work items. Alternatives to using Microsoft Project include the following: 
-> - [Delivery plans](/azure/devops/boards/plans/review-team-plans)
-> - A Marketplace extension such as [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO) or [GANTT chart](https://marketplace.visualstudio.com/search?term=gantt&target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Relevance). 
-
-
-
-
+> - [Delivery plans](../plans/review-team-plans.md)
+> - A Marketplace extension such as [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO) or [GANTT chart](https://marketplace.visualstudio.com/search?term=gantt&target=AzureDevOps&category=Azure%20Boards&visibilityQuery=all&sortBy=Relevance).

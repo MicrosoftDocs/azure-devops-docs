@@ -8,7 +8,7 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/14/2020
+ms.date: 06/11/2021
 ---
 
 # Query your work tracking data using OData Analytics
@@ -98,6 +98,8 @@ For example, you query Areas by adding `/Areas`. The full URL is:
 > ```
 
 This is equivalent to performing a select statement on the entity set and returning everything, all columns and all rows. If you have a large number of work items, this may take several seconds. If you have more than 10000 work items [server-side paging will be enforced](#server-force-paging).
+
+
  
 <a id="select-columns" />
 
@@ -157,6 +159,28 @@ With the full OData query:
 > ```
 
 Additionally, you can apply various functions such as `contains`, `startswith`, `endswith` and more. See the [Supported OData features and clauses, Supported functions](odata-supported-features.md#supported-functions). 
+
+<a id="date-range-queries" /> 
+
+## Date range queries
+
+The following example returns work items whose **Changed Date** is greater than equal to January 1, 2021. 
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-01-01Z
+> ```
+
+
+The following example returns work items whose **Changed Date** occurs during the week of April 26 through April 30th, 2021.  
+
+> [!div class="tabbedCodeSnippets"]
+> ```JSON
+> https://analytics.dev.azure.com{OrganizationName}/{ProjectName}/_odata/{version}/WorkItems?$select=WorkItemId,WorkItemType,Title,State&$filter=ChangedDate ge 2021-04-26Z&ChangedDate le 2021-04-30Z
+> ```
+ 
+
+
 
 <a id="filter-related-entities" />
 
@@ -404,6 +428,7 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 > 
 > [!NOTE]
 > When pulling data into client tools such as Power BI Desktop or Excel, tools will automatically follow next link and load all required records. 
+
 
 
 ## Try this next
