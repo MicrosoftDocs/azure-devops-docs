@@ -111,13 +111,13 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
 
 Now you use the authorization code to request an access token (and refresh token) for the user. Your service must make a service-to-service HTTP request to Azure DevOps Services.
 
-### URL
+### URL - authorize app
 
 ```no-highlight
 POST https://app.vssps.visualstudio.com/oauth2/token
 ```
 
-### HTTP request headers
+### HTTP request headers - authorize app
 
 |  Header           | Value
 |-------------------|------------------------------------------------------------------
@@ -129,7 +129,7 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 1322
 ```
 
-### HTTP request body
+### HTTP request body - authorize app
 
 ```no-highlight
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={1}&redirect_uri={2}
@@ -141,7 +141,7 @@ Replace the placeholder values in the previous sample request body:
 * **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
 * **{2}**: callback URL registered with the app
 
-#### C# example to form the request body
+#### C# example to form the request body - authorize app
 
 ```no-highlight
 public string GenerateRequestPostData(string appSecret, string authCode, string callbackUrl)
@@ -154,7 +154,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 
-### Response
+### Response - authorize app
 
 ```json
 {
@@ -187,13 +187,13 @@ Authorization: Bearer {access_token}
 
 If a user's access token expires, you can use the refresh token that they acquired in the authorization flow to get a new access token. It's like the original process for exchanging the authorization code for an access and refresh token.
 
-### URL
+### URL - refresh token
 
 ```no-highlight
 POST https://app.vssps.visualstudio.com/oauth2/token
 ```
 
-### HTTP request headers
+### HTTP request headers - refresh token
 
 |  Header           | Value
 |-------------------|------------------------------------------------------------------
@@ -205,7 +205,7 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 1654
 ```
 
-### HTTP request body
+### HTTP request body - refresh token
 
 ```no-highlight
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=refresh_token&assertion={1}&redirect_uri={2}
@@ -218,7 +218,7 @@ Replace the placeholder values in the previous sample request body:
 * **{1}**: URL encoded refresh token for the user
 * **{2}**: callback URL registered with the app
 
-### Response
+### Response - refresh token
 
 ```json
 {
@@ -245,11 +245,11 @@ Replace the placeholder values in the previous sample request body:
 When your users authorize your app to access their organization, they authorize it for those scopes.
 [Requesting the authorization](#authorize-your-app) passes the same scopes that you registered.
 
+For information about work item tracking attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0) and the FAQ, How can I get attachments detail for my work item?
+
 ## Samples
 
 You can find a C# sample that implements OAuth to call Azure DevOps Services REST APIs in our [C# OAuth GitHub Sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
-
-For information about creating attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0).
 
 ## Frequently asked questions (FAQs)
 
@@ -278,6 +278,34 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 ### Q: Can I use OAuth with the SOAP endpoints and REST APIs?
 
 A: No. OAuth is only supported in the REST APIs at this point.
+
+### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
+
+A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-6.0) REST API:
+
+```REST
+GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
+```
+
+To get the attachments details you need to add the following parameter to the URL:
+
+```REST
+$expand=all
+```
+
+With the results you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
+
+```REST API
+$url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0
+
+$workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
+
+$split = ($workitem.relations.url).Split('/')
+
+$attachmentId = $split[$split.count - 1]
+
+# Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
+```
 
 <!-- ENDSECTION -->
 
