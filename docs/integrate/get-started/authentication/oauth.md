@@ -20,14 +20,6 @@ ms.date: 06/14/2021
 Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token. Use this token when you call the REST APIs from your application.
 
-In this article, we cover the following processes:
-
-1. [Register your app](#register-your-app)
-2. [Authorize your app](#authorize-your-app)
-3. [Get an access and refresh token for the user](#get-an-access-and-refresh-token-for-the-user)
-4. [Use the access token](#use-the-access-token)
-5. [Refresh an expired access token](#refresh-an-expired-access-token)
-
 When you call Azure DevOps Services APIs for that user, use that user's access token.
 Access tokens expire, so refresh the access token if it's expired.
 
