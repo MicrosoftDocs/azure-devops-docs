@@ -24,10 +24,10 @@ ms.date: 04/30/2021
       - Prioritize (stack rank) bugs along with requirements 
       - Estimate Bug effort for forecasting 
       - Update bug status on Kanban board 
-      - Include Bugs in [Velocity charts](/azure/devops/report/dashboards/team-velocity) and [Cumulative Flow Diagrams](/azure/devops/report/dashboards/cumulative-flow) 
-      - Can use the [**Forecast** tool](/azure/devops/boards/sprints/forecast) to support sprint planning
-      - Can drag and drop bugs onto [**Planning**](/azure/devops/boards/sprints/assign-work-sprint#assign-work-from-your-backlog-to-a-sprint) pane to assign bugs to a sprint 
-      - Can view Bugs on [Delivery Plans](/azure/devops/boards/plans/review-team-plans) 
+      - Include Bugs in [Velocity charts](../../report/dashboards/team-velocity.md) and [Cumulative Flow Diagrams](../../report/dashboards/cumulative-flow.md) 
+      - Can use the [**Forecast** tool](../sprints/forecast.md) to support sprint planning
+      - Can drag and drop bugs onto [**Planning**](../sprints/assign-work-sprint.md#assign-work-from-your-backlog-to-a-sprint) pane to assign bugs to a sprint 
+      - Can view Bugs on [Delivery Plans](../plans/review-team-plans.md) 
       > [!NOTE]   
       > - Bugs are assigned to the Requirements Category 
 
@@ -63,4 +63,3 @@ ms.date: 04/30/2021
    :::column-end:::
 :::row-end:::
 ---
- 
