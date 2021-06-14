@@ -48,13 +48,13 @@ Azure key vaults can be created and managed through the Azure portal or Azure CL
 1. Run the following command to set your default Azure region. You can use `az account list-locations` to generate a list of available regions.
 
     ```Command
-    az configure --defaults location=<your_region>
+    az config set defaults.location=<your_region>
     ```
 
     For example, this command will select the westus2 region:
 
     ```Command
-    az configure --defaults location=westus2
+    az config set defaults.location=westus2
     ```
 
 1. Run the following command to create a new resource group. A resource group is a container that holds related resources for an Azure solution.
