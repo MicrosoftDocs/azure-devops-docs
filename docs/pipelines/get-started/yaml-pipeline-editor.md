@@ -35,7 +35,7 @@ Press Ctrl+Space for Intellisense support while you are editing the YAML pipelin
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-intellisense.png" alt-text="YAML pipeline editor intellisense.":::
 
-Press F1 to display the command palette and view the available Keyboard shortcuts.
+Press F1 to display the command palette and view the available keyboard shortcuts.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-command-palette.png" alt-text="YAML pipeline editor command palette.":::
 
