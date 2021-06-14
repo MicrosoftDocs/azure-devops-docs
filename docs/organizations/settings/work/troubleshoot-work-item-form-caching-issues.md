@@ -55,5 +55,5 @@ If your cache stores outdated rules, you can wait for the client cache to expire
 - [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md) 
 - [Apply rules to workflow states (Inheritance process)](apply-rules-to-workflow-states.md) 
 - [Add a rule to a work item type (Inheritance process)](custom-rules.md) 
-- [Apply or ignore rules based on user or group (On-premises XML process)](../../../reference/xml/apply-rule-work-item-field.md#apply-or-ignore-rules-based-on-user-or-group)  
+- [Apply or ignore rules based on user or group (On-premises XML process)](../../../organizations/settings/work/rule-reference.md)#apply-or-ignore-rules-based-on-user-or-group)  
  

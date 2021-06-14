@@ -2,89 +2,128 @@
   items:
   - name: Develop a web extension
     href: get-started/node.md
+    displayName: package, publish, install, debug, dashboard, widget, build, task
   - name: Contribution model
     href: develop/contributions-overview.md
+    displayName: plug, hub, action, build, task
   - name: Create a custom pipelines task
     href: develop/add-build-task.md
+    displayName: extension, manifest, package, publish, install, Marketplace
   - name: Author a pipeline decorator
     href: develop/add-pipeline-decorator.md
+    displayName: YAML, install, debug, job, create, add
 - name: Samples
   items:
   - name: Extension samples
     href: develop/samples-overview.md
+    displayName: contributions, source, description, framework
   - name: Vertical navigation guidance
     href: develop/web-navigation.md
+    displayName: extension, team, context
   - name: Work with URLs
-    href: develop/work-with-urls.md 
+    href: develop/work-with-urls.md
+    displayName: API, organization, REST
   - name: Store data and settings
     href: develop/data-storage.md 
+    displayName: data, preferences, REST, API, settings, documents
   - name: Add a hub
     href: develop/add-hub.md
+    displayName: create, work, SDK, contribute
   - name: Add a hub group
     href: develop/add-hub-group.md
+    displayName: create, SDK, install, extension
   - name: Add a menu action
     href: develop/add-action.md
+    displayName: query, queries, extension, manifest, HTML, JavaScript
   - name: Add a new service endpoint
     href: develop/service-endpoints.md
+    displayName: connect, external, service, build, task, manifest
   - name: Add a service hook
     href: develop/add-service-hook.md
+    displayName: subscription, publish, extension, manifest, package, install
   - name: Create a PR status server
     href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+    displayName: configure, event, create, validate, PR
   - name: Use Azure Functions to create custom branch policies
     href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+    displayName: pull, request, PR, Repos, configure, create, post
   - name: Add Azure Boards extensions
     items:
-    - name: Add a tab to a Backlog  
+    - name: Add a tab to a Backlog
       href: develop/add-backlog-tabs.md
+      displayName: iframe, update, manifest, create
     - name: Add a panel to a Backlog  
       href: develop/add-backlog-panel.md
+      displayName: create, extension, portfolio, product, iteration, selection
     - name: Extend the work item form
       href: develop/add-workitem-extension.md
+      displayName: add, group, page, configure, contributions, action, custom
     - name: Add a custom control to a work item form
       href: develop/custom-control.md
+      displayName: contribution, input, JavaScript, create
     - name: Configure work item form extensions (on-premises) 
       href: develop/configure-workitemform-extensions.md
+      displayName: xml, witadmin, tool, add, page, group, control
     - name: Add query result tabs
       href: develop/add-query-result-tabs.md
+      displayName: iframe, create, update, extension, manifest, web, page
   - name: Add dashboard extensions
     items:
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
+      displayName: create, contribution, REST, API, configure
     - name: Add a chart
       href: develop/add-chart.md
+      displayName: create, configure, HTML, extension, manifest
   - name: Call a REST API
     href: develop/call-rest-api.md
+    displayName: client, service, API
   - name: Public project extensions
     href: develop/public-project.md
+    displayName: permission, dashboard, widget, build, release, tracking, contribution, visibility
 - name: Package and publish
   items:
   - name: Package and publish extensions
     href: publish/overview.md
+    displayName: install, Marketplace, public
   - name: Package and publish integrations
     href: publish/integration.md
+    displayName: extend, enhance, tool, service, product, manifest, publisher
   - name: Make listing public and Top Publisher program
     href: publish/publicize.md
+    displayName: Marketplace, extension, requirements, qualifications
   - name: Publish via command line
     href: publish/command-line.md
+    displayName: CLI, Marketplace, share
   - name: Respond to Marketplace reviews
     href: publish/manage-ratings-reviews.md
+    displayName: owner, creator, contributor, reply, appeal
 - name: Reference
   items:
   - name: Manifest reference
     href: develop/manifest.md
+    displayName: JSON, extend, enhance, required, attributes, targets, demands, contributions, example
   - name: Integrate a Pipelines task into an extension
     href: develop/integrate-build-task.md
+    displayName: JSON, build, release, custom
   - name: Pipeline decorator context
     href: develop/pipeline-decorator-context.md
+    displayName: GUID, resources, job, variable
   - name: Endpoint authentication schemes
     href: develop/auth-schemes.md
+    displayName: service, HTTP, token, certificate 
   - name: Content hosting
     href: develop/static-content.md
+    displayName: static, host, public, endpoint
   - name: Modal dialog
     href: develop/using-host-dialog.md
+    displayName: enable, customize, disable, pass, , show, values
   - name: Host page navigation
     href: develop/host-navigation.md
+    displayName: API, hash, notification, refresh
   - name: Basic styles for widgets
     href: develop/styles-from-widget-sdk.md
+    displayName: SDK, JavaScript, stylesheet, dashboard
   - name: Deploy web content to Azure
     href: publish/publish-azure.md
+    displayName: publish, extension, install, subscription

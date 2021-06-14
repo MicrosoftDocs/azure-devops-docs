@@ -78,7 +78,7 @@ For this sample you will need to configure 2 service hooks. The first will be fo
 
     ![Copy function url](media/create-pr-status-server-with-azure-functions/copy-function-url.png)
 
-2. Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your account>/<your project name>`
+2. Browse to your project in Azure DevOps, e.g. `https://dev.azure.com/<your organization>/<your project name>`
 
 3. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
@@ -131,7 +131,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function to look like the following example.
 
-Make sure to update the code with your account name, project name, repository name and [PAT token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). In order to have permission to change PR status, the PAT requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your organization name, project name, repository name and [PAT token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). In order to have permission to change PR status, the PAT requires [vso.code_status](../../integrate/get-started/authentication/oauth.md#scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
 >[!Important]
 >This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
@@ -147,9 +147,9 @@ using System.Net.Http.Headers;
 using System.Text;
 using Newtonsoft.Json;
 
-private static string accountName = "[Account Name]";   // Account name
-private static string projectName = "[Project Name]";   // Project name
-private static string repositoryName = "[Repo Name]";   // Repository name
+private static string organizationName = "[Organization Name]";  // Organization name
+private static string projectName      = "[Project Name]";       // Project name
+private static string repositoryName   = "[Repo Name]";          // Repository name
 
 /*
     This is here just to simplify the sample, it is recommended to store
@@ -198,7 +198,7 @@ private static void PostStatusOnPullRequest(int pullRequestId, string status)
 {
     string Url = string.Format(
         @"https://dev.azure.com/{0}/{1}/_apis/git/repositories/{2}/pullrequests/{3}/statuses?api-version=4.1",
-        accountName,
+        organizationName,
         projectName,
         repositoryName,
         pullRequestId);

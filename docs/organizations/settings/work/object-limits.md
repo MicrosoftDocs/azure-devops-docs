@@ -9,21 +9,21 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: ">= tfs-2013"
-ms.date: 01/19/2021
+ms.date: 06/09/2021
 ---
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
 
 ## Work items and queries 
 
-::: moniker range="azure-devops"
-
 When defining work items or running queries, the following operational limits apply. 
+
+::: moniker range="azure-devops"
 
 | Object | Limit |
 |--------|-------|
@@ -32,19 +32,14 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Query execution time  |  2 minutes | 
+| Query execution time  |  30 seconds | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
 
-To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
-
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops" 
-
-When defining work items, the following operational limits apply. 
 
 | Object | Limit |
 |--------|-------|
@@ -53,11 +48,15 @@ When defining work items, the following operational limits apply.
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 4 MB to 2 GB | 
+| Query execution time  |  6 minutes | 
+| Query results | 20,000 items | 
+| Query length | 32,000 characters |
+| Shared queries under a folder | 999 queries |
 
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
-
-
 ::: moniker-end
+
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ## Backlogs, boards, and teams
 
@@ -284,7 +283,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
+- [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
@@ -294,7 +293,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
+- [Rules and rule evaluation](../../../organizations/settings/work/rule-reference.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end

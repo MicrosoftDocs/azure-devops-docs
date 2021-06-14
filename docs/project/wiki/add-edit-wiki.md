@@ -81,7 +81,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 To add another page, choose **New page**. Or, to add a subpage, open the context menu of an existing page and select **Add subpage**.
 
-Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming).
+Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming-conventions).
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki and first page](media/wiki/add-new-page.png)

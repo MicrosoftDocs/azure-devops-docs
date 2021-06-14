@@ -2,7 +2,7 @@
   href: backlogs-overview.md
 - name: Create your backlog
   href: create-your-backlog.md
-  displayname: product backlog, reorder, details, description, acceptance criteria, effort, story points, size, business value,    
+  displayname: product backlog, reorder, details, description, acceptance criteria, effort, story points, size, business value,  
 - name: Define features & epics
   href: define-features-epics.md
   displayname: portfolio backlog, critical path, value area, business value, time criticality, target date 
@@ -32,8 +32,10 @@
   items:
   - name: Refine your backlog
     href: best-practices-product-backlog.md
+    displayname: product owner, role, acceptance criteria, spikes
   - name: Rollup of work & other fields
     href: ../../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayname: native, Planning pane, tools, query charts, Excel
   - name: View/configure velocity
     href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 

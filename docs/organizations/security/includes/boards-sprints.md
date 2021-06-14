@@ -153,7 +153,7 @@ ms.topic: include
 </tr>
 <tr>
 <td align="left">Customize a sprint backlog or taskboard, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td>✔️</td>
+<td> </td>
 <td> </td>
 <td> </td>
 <td>✔️</td>

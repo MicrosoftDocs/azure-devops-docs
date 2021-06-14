@@ -64,7 +64,7 @@ sections:
       - question: |
           How can I pay only once per user across multiple organizations?
         answer: |
-          Multi-organization billing/licensing is available. For more information, see [multi-organization billing](/azure/devops/organizations/billing/billing-faq).
+          Multi-organization billing/licensing is available. For more information, see [multi-organization billing]().
           
       - question: |
           What's the difference between daily pro-rated charges instead of monthly committed purchases?

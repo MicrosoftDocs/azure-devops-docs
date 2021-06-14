@@ -7,7 +7,7 @@ ms.date: 03/11/2021
 ---
  
 
----
+
 :::row:::
    :::column span="2":::
       **Task** 
@@ -25,7 +25,6 @@ ms.date: 03/11/2021
      **Project Admins**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Access Azure Test Plans (formerly Test Manager, purchased separately)
@@ -43,7 +42,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Create and delete test runs
@@ -61,7 +59,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Provide feedback using the Test & Feedback extension
@@ -79,7 +76,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Request feedback using the Test & Feedback extension
@@ -97,7 +93,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Exploratory testing, view test runs 
@@ -115,7 +110,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Manage test plans and test suites  
@@ -134,7 +128,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Exploratory testing 
@@ -152,7 +145,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="2":::
@@ -171,7 +163,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -191,7 +182,6 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range=">= tfs-2015"
 :::row:::
@@ -211,6 +201,5 @@ ms.date: 03/11/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end 
 
