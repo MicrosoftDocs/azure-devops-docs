@@ -17,7 +17,6 @@ ms.date: 05/20/2021
       **Restriction**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Node length
@@ -26,7 +25,6 @@ ms.date: 05/20/2021
       - Must not contain more than 255 characters
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Reserved names
@@ -37,7 +35,6 @@ ms.date: 05/20/2021
       For more information about reserved names, see <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Special characters for nodes
@@ -49,7 +46,6 @@ ms.date: 05/20/2021
       For more information about Windows character restrictions, see <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Path length
@@ -58,7 +54,6 @@ ms.date: 05/20/2021
       - Must not contain more than 4,000 Unicode characters
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Path hierarchy depth
@@ -67,4 +62,3 @@ ms.date: 05/20/2021
       - Must be fewer than 14 levels deep
    :::column-end:::
 :::row-end:::
----

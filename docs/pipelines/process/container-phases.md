@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 06/02/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -140,7 +140,7 @@ private registry. Then you can reference it in a container spec:
 
 ```yaml
 container:
-  image: myprivate/registry:ubuntu1604
+  image: registry:ubuntu1604
   endpoint: private_dockerhub_connection
 
 steps:

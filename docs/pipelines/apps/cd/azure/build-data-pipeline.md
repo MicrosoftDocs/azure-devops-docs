@@ -50,16 +50,16 @@ To make commands easier to run, start by selecting a default region. After you s
 
 1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
 
-1. Run `az configure` to set your default region. In the following example, replace `<REGION>` with the name of the region you chose.
+1. Run `az config` to set your default region. In the following example, replace `<REGION>` with the name of the region you chose.
 
     ```azurecli
-    az configure --defaults location=<REGION>
+    az config set defaults.location=<REGION>
     ```
 
     The following example sets `westus2` as the default region.
 
     ```azurecli
-    az configure --defaults location=westus2
+    az config set defaults.location=westus2
     ```
 
 ### Create Bash variables

@@ -225,7 +225,7 @@ The following fields are specified in the ProcessConfiguration.xml file:
 
 #### Rule restrictions
 
-In addition to the standard [field-rule restrictions](../../../../reference/xml/apply-rule-work-item-field.md), the following restrictions are enforced:
+In addition to the standard [field-rule restrictions](../../../../organizations/settings/work/rule-reference.md), the following restrictions are enforced:
 
 * Field-rule elements can't specify the **for** and **not** attributes.
 * **FIELD** elements can't contain the child-rule elements **CANNOTLOSEVALUE**, **NOTSAMEAS**, **MATCH**, and **PROHIBITEDVALUES**.
@@ -333,6 +333,7 @@ A **Control** element can't specify a custom control. Custom controls aren't sup
 ## Related articles
 
 - [Import and export a Hosted XML process](import-process.md)
+- [Rules and rule evaluation](../rule-reference.md)
 - [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
 - [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
 - [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)

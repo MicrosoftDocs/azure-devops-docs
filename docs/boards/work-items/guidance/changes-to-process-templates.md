@@ -24,7 +24,7 @@ To support the addition of new features, changes are introduced periodically to 
 If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](/previous-versions/azure/devops/reference/upgrade/new-features-added) for a description of each feature added with the updates. 
 
 
----
+
 :::row:::
    :::column span="1":::
       **Version**
@@ -33,7 +33,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       **Changes introduced**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1#removing-assigned-to-rule-on-bug-work-item-type)   
@@ -46,7 +45,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       **When** `A work item state changes to` *Resolved* **Then** `Copy the value from ` *Specify field*.
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       [Azure DevOps Server 2020.1](/azure/devops/server/release-notes/azuredevops2020u1#improved-rules-for-activated-and-resolved-fields)   
@@ -56,7 +54,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       The logic managing the **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** fields has changed. The values assigned to these fields are now governed based on the state categories of *Proposed* and *Resolved*. To learn more, see [Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields).
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## Azure DevOps Server 2019  
@@ -65,7 +62,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in [Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md).  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2017 
@@ -76,7 +72,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       > When you upgrade an on-premises Azure DevOps to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an administrator is required to [enable the new form](../../../reference/manage-new-form-rollout.md). The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2015  
@@ -131,7 +126,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - **Task:** Added rule to require **Remaining Work** when **State=In Progress**; removed **Backlog Priority** field from work item form. 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2013.4 
@@ -147,7 +141,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
           - Removed the **Stack Rank** field from the Requirement form. 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2013.3  
@@ -160,7 +153,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Category updates: Added  Test Plan and Test Suite to the Hidden Types Category.  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2013.2  
@@ -173,7 +165,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Category updates: Added  Shared Parameter to the Hidden Types Category.  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2013 RTM  
@@ -188,7 +179,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Reporting Services updates: To update your project with the latest reports, see [Upload reports to a project](../../../Report/admin/upload-reports.md).  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2012.1 
@@ -207,7 +197,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
       To apply the changes to your existing projects, you need to replace the **WORKFLOW** sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See [Design the Workflow](../../../reference/xml/change-workflow-wit.md)and [Import, export, and manage Work Item Types](../../../reference/witadmin/witadmin-import-export-manage-wits.md). 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       ## TFS 2012 RTM  
@@ -243,7 +232,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
       - Shared queries: Added **Corrective Action** and **Mitigation Action**.  
    :::column-end:::
 :::row-end:::
----
+
 
 
 ## Related upgrade notes
