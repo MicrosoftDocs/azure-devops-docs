@@ -21,9 +21,9 @@ This article defines operational and object limits placed on work tracking opera
 
 ## Work items and queries 
 
-::: moniker range="azure-devops"
-
 When defining work items or running queries, the following operational limits apply. 
+
+::: moniker range="azure-devops"
 
 | Object | Limit |
 |--------|-------|
@@ -37,14 +37,9 @@ When defining work items or running queries, the following operational limits ap
 | Query length | 32,000 characters |
 | Shared queries under a folder | 999 queries |
 
-To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
-
 ::: moniker-end
 
-
 ::: moniker range="< azure-devops" 
-
-When defining work items, the following operational limits apply. 
 
 | Object | Limit |
 |--------|-------|
@@ -53,11 +48,15 @@ When defining work items, the following operational limits apply.
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 4 MB to 2 GB | 
+| Query execution time  |  6 minutes | 
+| Query results | 20,000 items | 
+| Query length | 32,000 characters |
+| Shared queries under a folder | 999 queries |
 
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
-
-
 ::: moniker-end
+
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ## Backlogs, boards, and teams
 
