@@ -70,7 +70,7 @@ We continue to receive a lot of feedback asking to make it easier to edit YAML f
 
 We updated the experience for managing pipeline variables in the YAML editor. You no longer have to go to the classic editor to add or update variables in your YAML pipelines.
 
-:::image type="content" source="(media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
 :::moniker-end
 
@@ -85,7 +85,7 @@ Azure Pipelines supports a YAML editor which can be handy when editing your pipe
 
 As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. When you type in the name of your template, you will be prompted to validate your template. Once validated, the YAML editor understands the schema of the template including the input parameters.
 
-:::image type="content" source="(media/yaml-pipeline-editor/yaml-pipeline-editor-templates.png" alt-text="YAML template.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-templates.png" alt-text="YAML template.":::
 
 Post validation, you can choose to navigate into the template. You will be able to make changes to the template using all the features of the YAML editor.
 
