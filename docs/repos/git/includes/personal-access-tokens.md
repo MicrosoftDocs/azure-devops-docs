@@ -86,7 +86,7 @@ ms.topic: include
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate,limit your token's scope to **Agent Pools (read, manage)**.
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, limit your token's scope to **Agent Pools (read, manage)**.
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
 
