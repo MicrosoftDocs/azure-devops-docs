@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Function (Windows)
 
-Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use DevOps Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use Azure Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
 
 You can automatically deploy your Azure Function after every successful build.
 
@@ -103,8 +103,7 @@ To get started:
 
 3. Save the pipeline and queue a build to see it in action.
 
-4. Create a release pipeline and select the **Deploy a function app to Azure Functions** template for your stage.
-   This automatically adds the necessary tasks. 
+4. Create a release pipeline and select the **Deploy a function app to Azure Functions** template for your stage. 
 
 5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
@@ -116,7 +115,7 @@ Now you're ready to read through the rest of this topic to learn some of the mor
 
 ## Azure service connection
 
-The [**Azure Function App Deploy**](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppV1/README.md) task, similar to other built-in Azure tasks, requires an Azure service connection as an
+The [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md) requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
 #### [YAML](#tab/yaml)
@@ -141,7 +140,7 @@ variables:
     package: $(System.ArtifactsDirectory)/**/*.zip
 ```
 
-The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The **Azure Function App Deploy** task will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
+The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md) will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
 
 ::: moniker-end
 
@@ -173,7 +172,7 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Function is to use the [**Azure Function App Deploy**](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppV1/README.md) task.
+The simplest way to deploy to an Azure Function is to use the [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md).
 
 To deploy to Azure Function, add the following snippet at the end of your **azure-pipelines.yml** file:
 
