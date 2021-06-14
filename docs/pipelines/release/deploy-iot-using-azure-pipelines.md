@@ -102,19 +102,23 @@ You code should be published now to your repository.
 
 You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../agents/hosted.md?tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
-1. Navigate to your team project on Azure DevOps.
+1. From within your project, select **Pipelines** > **Pipelines**. Select **Create pipeline** to create a new one.
 
-2. Navigate to **Pipelines | Builds**. From the **New** drop-down menu, select **New build pipeline** to create a new one.
+1. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
 
-3. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
+1. Select the **Source** and then select the **Team project**, **Repository**, and **Default branch**. Select **Continue** when you are done.
 
-4. The first thing you’ll need to do is to configure the source repository. This build will use the **main** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
+    :::image type="content" source="./media/select-source.png" alt-text="Select your repository":::
 
-5. Select **Empty job**.
+1. Select **Empty job**.
 
-6. Select the Agent pool **Hosted Ubuntu 1604** from the drop down.
+    :::image type="content" source="./media/empty-job.png" alt-text="Start with an empty job":::
 
-7. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below -
+1. From the **Agent job 1**, select the **ubuntu-16.04** Agent Specification from the drop down.
+
+    :::image type="content" source="./media/agent-specification.png" alt-text="Change the agent specification in the agent job":::
+
+7. Select **+** and search for **ARM template Deployment** task. Select **Add** and fill out the required fields as shown below. Select **Save & queue** when you are done. 
 
    <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
@@ -126,27 +130,22 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku &quot;Basic&quot; -registryLocation &quot;YOUR LOCATION&quot;</td></tr>
    </table>
 
-   > [!NOTE]
-   > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
+    :::image type="content" source="./media/arm-template-deployment-task.png" alt-text="Configure the arm template deployment task":::
 
-   ![Screenshot showing the Azure deployment task.](media/Iot-devops-using-azure-pipelines/arm.png)
+1. Select your pipeline, and then select **Edit** to edit your pipeline. Select **+** in the **Agent job 1**, and then search for the **Azure IoT Edge** task. Select **Add** to add the step to build the module images.  
 
-8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
-
-9. Select **+** and search for the **Azure IoT Edge** task. Select **add**. Configure the task as shown below -
+1. Select **+** one more time, and search for the **Azure IoT Edge** task. Select **Add** and configure the task as shown below -
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
-   <tr><td>Action</td><td>Select an Azure IoT Edge action to <b>Push module images</b></td></tr>
-   <tr><td>Container registry type</td><td>Select the Container registry type <b>Azure Container Registry</b></td></tr>
-   <tr><td>Azure subscription</td><td>Select the Azure Resource Manager subscription for the deployment</td></tr>
-   <tr><td>Azure Container Registry</td><td>Select an Azure Container Registry from the dropdown which was created in the step 5</td></tr>
-   </table>
+    <tr><td>Action</td><td>Select an Azure IoT Edge action to <b>Push module images</b></td></tr>
+    <tr><td>Container registry type</td><td>Select the Container registry type <b>Azure Container Registry</b></td></tr>
+    <tr><td>Azure subscription</td><td>Select the Azure Resource Manager subscription for the deployment</td></tr>
+    <tr><td>Azure Container Registry</td><td>Select an Azure Container Registry from the dropdown which was created in the step 5</td></tr>
+    </table>
 
-10. Select **+** and search for **Publish Build Artifacts** task. Select **add**. Set the path to publish to **$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
+1. Select **+** and search for **Publish Build Artifacts** task. Select **Add** and then set the **Path to publish** to **$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
 
-11. Save the pipeline and queue the build.
-
-     ![Build Pipeline](media/Iot-devops-using-azure-pipelines/build-pipeline.png)
+1. Select **Save & queue** when you are done.
 
 ## Create a release pipeline
 
