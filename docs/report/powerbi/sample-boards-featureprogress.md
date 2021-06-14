@@ -39,7 +39,7 @@ let
         &"$filter=WorkItemType eq 'Feature' "
             &"and State ne 'Cut' "
             &"and startswith(Area/AreaPath,'{areapath}') "
-            &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
+            &"&$select=WorkItemId,Title,Area,Iteration,AssignedTo,WorkItemType,State,AreaSK"
             &"&$expand=Descendants( "
             &"$apply=filter(WorkItemType eq 'User Story') "
                 &"/groupby((StateCategory), "
@@ -60,7 +60,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
             and State ne 'Cut'
             and startswith(Area/AreaPath,'{areapath}')
             and Descendants/any()
-        &$select=WorkItemId,Title,WorkItemType,State,AreaSK
+        &$select=WorkItemId,Title,Area,Iteration,AssignedTo,WorkItemType,State,AreaSK
         &$expand=Descendants(
             $apply=filter(WorkItemType eq 'User Story')
                 /groupby((StateCategory),

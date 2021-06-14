@@ -191,15 +191,15 @@ You can customize your bug work item type or create another work item types to t
 Before you customize your process, we recommend you review [Configure and customize Azure Boards](../configure-customize.md). 
 
 ::: moniker range="azure-devops"
-To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model).  
+To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model) or [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model). 
+To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-To customize your particular process, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model). 
+To customize your particular process, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 
@@ -570,4 +570,3 @@ For additional information on extensions, see [Azure Boards extensions developed
 - [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg  
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
 
- 
