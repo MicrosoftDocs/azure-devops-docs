@@ -15,9 +15,13 @@ ms.date: 06/14/2021
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-If your organization is secured with a firewall or proxy server, you need to add certain (internet protocol) IP addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding them to the allowlist helps to ensure that you have the best experiences with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network.
+If your organization's secured with a firewall or proxy server, you must add certain internet protocol (IP) addresses and domain uniform resource locators (URLs) to the **allowlist**. Adding these to the allowlist helps to ensure that you have the best experience with Azure DevOps. You know that you need to update your allowlist if you can't access Azure DevOps on your network. See the following sections in this article:
 
-For Visual Studio and Azure Services to work well with no network issues, you open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
+- [Domain URLs to allow](#domain-urls-to-allow)
+- [IP addresses and range restrictions](#ip-addresses-and-range-restrictions)
+
+> [!TIP]
+> So that Visual Studio and Azure Services work well with no network issues, you should open select ports and protocols. For more information, see [Install and use Visual Studio behind a firewall or proxy server, Use Visual Studio and Azure Services](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services).
 
 ## Domain URLs to allow
 
@@ -80,10 +84,10 @@ https://{organization_name}.vssps.visualstudio.com
 </ul>
 </details>
 
-We recommend you open port 443 to all traffic on these IP addresses and domains. We also recommend you open port 22 to a smaller subset of targeted IP addresses.
+We recommend you open port `443` to all traffic on these IP addresses and domains. We also recommend you open port `22` to a smaller subset of targeted IP addresses.
 
 > [!NOTE]
-> Azure DevOps uses Content Delivery Networks (CDNs) to serve static content. Users in China should also add the following domain URLs to an allowlist:
+> Azure DevOps uses Content Delivery Networks (CDNs) to serve static content. Users in **China** should also add the following domain URLs to an allowlist:
 >
 > ``` NuGetDomainURLs
 > https://*.vsassetscdn.azure.cn
