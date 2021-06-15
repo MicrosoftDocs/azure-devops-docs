@@ -96,18 +96,118 @@ Each work item type belongs to a category. Categories are used to group work ite
 In addition to the work items types that appear on backlogs and boards, there are additional work item types used to track testing, reviews, and feedback. These types, listed in the following table according to the category they belong to, are available for all processes. 
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Category | Work item type | Used to track specified types of work |
-> |----------|----------------|--------------------------|
-> |Code Review Request | Code Review Request | Track a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). | 
-> |Code Review Response | Code Review Response | A code review response is created for each person who's been requested to provide review comments. |  
-> |Feedback Request | Feedback Request | Track request for feedback provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).  |  
-> |Feedback Response | Feedback Response | A feedback response is created for each person and for each item for which feedback is provided.  |
-> |Shared Step | Shared Step  | Used to [repeat tests with different data](../../test/repeat-test-with-different-data.md). |  
-> |Shared Parameter | Shared Parameter | Used to specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md). |  
-> |Test Case | Test Case | [Defines a manual test to run](../../test/create-test-cases.md).|  
-> |Test Plan | Test Plan | Used to groups test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). |  
-> |Test Suite | Test Suite | Used to group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). |
+:::row:::
+   :::column span="1":::
+      **Category**
+   :::column-end:::
+   :::column span="1":::
+      **Work item type**
+   :::column-end:::
+   :::column span="2":::
+       **Used to track specified types of work**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Code Review Request
+   :::column-end:::
+   :::column span="1":::
+      Code Review Request
+   :::column-end:::
+   :::column span="2":::
+       Tracks a code review request against code maintained in a [Team Foundation version control (TFVC) repository](../../repos/tfvc/index.yml). To learn more, see [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Code Review Response
+   :::column-end:::
+   :::column span="1":::
+      Code Review Response
+   :::column-end:::
+   :::column span="2":::
+       A code review response is created for each person who's been requested to provide review comments.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Feedback Request
+   :::column-end:::
+   :::column span="1":::
+      Feedback Request
+   :::column-end:::
+   :::column span="2":::
+       Feedback requests track requests for feedback generated through the feedback request form. See [Get feedback](../../project/feedback/get-feedback.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Feedback Response
+   :::column-end:::
+   :::column span="1":::
+      Feedback Response
+   :::column-end:::
+   :::column span="2":::
+       A feedback response is created for each person and for each item for which feedback is provided through the Microsoft Feedback Client. See [Get feedback](../../project/feedback/get-feedback.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Shared Step
+   :::column-end:::
+   :::column span="1":::
+      Shared Step
+   :::column-end:::
+   :::column span="2":::
+       Shared steps are used to [repeat tests with different data](../../test/repeat-test-with-different-data.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Shared Parameter
+   :::column-end:::
+   :::column span="1":::
+      Shared Parameter
+   :::column-end:::
+   :::column span="2":::
+       Shared Parameters specify different data and parameters for running manual test cases. See [Repeat a test with different data](../../test/repeat-test-with-different-data.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Case
+   :::column-end:::
+   :::column span="1":::
+      Test Case
+   :::column-end:::
+   :::column span="2":::
+       Each test case [defines a manual test](../../test/create-test-cases.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Plan
+   :::column-end:::
+   :::column span="1":::
+      Test Plan
+   :::column-end:::
+   :::column span="2":::
+       Test plan group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Test Suite
+   :::column-end:::
+   :::column span="1":::
+      Test Suite
+   :::column-end:::
+   :::column span="2":::
+       Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+
 
 To prevent users from creating work items manually which should only be created from the specific tool designed to support their usage, there is a Hidden Types category. All of the categories listed in the previous table are added to the Hidden Types category except for the Test Case category. 
  
@@ -251,7 +351,7 @@ As shown in the following image, you can link work items to other work items. De
 In addition, several tools support linking to other objects, such as builds, releases, commits, pull requests, and more as shown in the following image. 
 
 ::: moniker range=">= azure-devops-2019"
-![Artifact-to-artifact link types](media/link-tracking-artifact-to-artifact-link-types.png)  
+![Artifact-to-artifact link types](../queries/media/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  

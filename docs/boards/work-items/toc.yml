@@ -1,5 +1,5 @@
 - name: About work items
-  href: work-items/about-work-items.md
+  href: about-work-items.md
   displayname: user stories, issues, bugs, features, epics, backlog items, requirements, assign, web portal, cients
 - name: Quick reference
   href: quick-ref.md
