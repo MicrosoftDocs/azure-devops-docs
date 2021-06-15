@@ -304,7 +304,7 @@ steps:
 
 ## FAQ
 
-### Can parameters be set based on variables?
+### How can I use variables inside of templates?
 
 There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
