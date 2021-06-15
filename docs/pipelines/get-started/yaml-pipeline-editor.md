@@ -19,9 +19,17 @@ Azure Pipelines provides a YAML pipeline editor that you can use to author and e
 :::moniker-end
 ## Edit a YAML pipeline
 
-To access the YAML pipeline editor, navigate to your YAML pipeline and choose **Edit**.
+:::moniker range="= azure-devops-2019"
 
-:::moniker range="azure-devops-2019"
+To access the YAML pipeline editor, navigate to your YAML pipeline.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019.1.png" alt-text="Azure Pipelines builds in Azure DevOps Server 2019 Update 1.":::
+
+Choose **Edit** to edit your pipeline in the YAML pipeline editor.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019.1.png" alt-text="Azure Pipelines YAML editor in Azure DevOps Server 2019 Update 1.":::
+
+Edit your pipeline using Intellisense and the task assistant for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor for Azure DevOps Server 2019.1":::
 
