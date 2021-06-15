@@ -9,7 +9,7 @@ monikerRange: '>=azure-devops-2019'
 
 # YAML pipeline editor
 
-Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and the task assistant to provide guidance when editing a pipeline.
+Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and a task assistant to provide guidance when editing a pipeline.
 
 :::moniker range="azure-devops-2019"
 
@@ -31,13 +31,13 @@ Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
 Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
 
 :::moniker-end
 
 :::moniker range=">= azure-devops-2020"
 
-To access the YAML pipeline editor, choose **Pipelines**, **Pipelines**, and select the pipeline to edit.
+To access the YAML pipeline editor, choose **Pipelines** and select the pipeline to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](#multi-stage-pipelines-experience.md#pipelines-landing-page).
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
 
@@ -47,9 +47,13 @@ Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
 Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor.":::
 
 :::moniker-end
+
+Choose **Save** to save your pipeline. You can commit directly to your branch, or create a new branch and optionally start a pull request.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-save.png" alt-text="YAML pipeline editor save window.":::
 
 :::moniker range=">= azure-devops-2019"
 
