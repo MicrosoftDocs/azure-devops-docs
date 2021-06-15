@@ -55,8 +55,6 @@ Choose **Save** to save your pipeline. You can commit directly to your branch, o
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-save.png" alt-text="YAML pipeline editor save window.":::
 
-:::moniker range=">= azure-devops-2019"
-
 ### Keyboard shortcuts
 
 The YAML pipeline provides several types of keyboard shortcuts.
@@ -71,13 +69,41 @@ Press F1 to display the command palette and view the available keyboard shortcut
 
 ## Task assistant
 
-The task assistant supports most of the common task input types such as pick lists and service connections. To use the new task assistant, select **Edit** on a YAML-based pipeline, and search for tasks in the **Tasks** pane. Configure the desired task and choose **Add** to insert the task YAML into your pipeline.
+The task assistant supports most of the common task input types such as pick lists and service connections.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-task-assistant.gif" alt-text="Task assistant for editing YAML pipelines.":::
+To display the task assistant, edit your YAML pipeline and choose **Show assistant**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-show.png" alt-text="Show ask assistant for editing YAML pipelines.":::
+
+To hide the task assistant, choose **Hide assistant**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-hide.png" alt-text="Hide task assistant for editing YAML pipelines.":::
+
+To use the task assistant, browse or search for tasks in the **Tasks** pane. 
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-search.png" alt-text="Task assistant search.":::
+
+Select the desired task and configure its inputs.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-add.png" alt-text="Task assistant add.":::
+
+Choose **Add** to insert the task YAML into your pipeline.
+
+:::moniker range="= azure-devops-2019"
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-added-2019.1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
+
+Edit the inserted YAML to make additional configuration changes to the task.
 
 :::moniker-end
 
+:::moniker range=">= azure-devops-2020"
 
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-added.png" alt-text="Task assistant added.":::
+
+You can edit the YAML to make additional configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
+
+:::moniker-end
 
 ## Manage pipeline variables
 
