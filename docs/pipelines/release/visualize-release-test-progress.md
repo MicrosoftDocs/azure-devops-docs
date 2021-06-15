@@ -21,3 +21,14 @@ The release progress view provides live updates of deployment progress and one-c
 
 ::: moniker-end
 
+
+::: moniker range="= tfs-2015"
+
+## View build results
+
+The build results view provides insights into the multiple components that make up your build. The user interface gives a snapshot view of the status of your current and previous builds. You can also view your logs, issues, commits, and all the work items related to your build.
+
+:::image type="content" source="media/build-status-view.png" alt-text="View your build results TFS 2015":::
+
+::: moniker-end
+
