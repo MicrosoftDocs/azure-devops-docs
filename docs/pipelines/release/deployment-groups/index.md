@@ -1,51 +1,30 @@
 ---
 title: Use deployment groups in a release pipeline
 ms.custom: seodec18
-description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
+description: Work with deployment Groups in Azure Pipelines
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/18/2020
+ms.date: 06/15/2021
 monikerRange: '>= tfs-2018'
 ---
 
 # Provision deployment groups
 
-[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
+A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments; for example, "Dev", "Test", or "Production" environment. In effect, a deployment group is just another grouping of agents, much like an [agent pool](../../agents/pools-queues.md). 
 
-A deployment group is a logical set of deployment target machines 
-that have agents installed on each one. Deployment groups represent the physical environments;
-for example, "Dev", "Test", "UAT", and "Production". In effect, a
-deployment group is just another grouping of agents, much like an
-[agent pool](../../agents/pools-queues.md). 
+Deployment groups are only available with Classic release pipelines and are different from [deployment jobs](../../process/deployment-jobs.md). A deployment job is a collection of deployment-related steps defined in a YAML file to accomplish a specific task. 
 
-Deployment groups are only available with Classic release pipelines. Deployment groups are different from [deployment jobs](../../process/deployment-jobs.md). Deployment jobs are a collection of deployment-related steps used in a YAML pipeline. 
+With deployment groups you can:
 
+* Specify the security context and runtime targets for the agents. As you create a deployment group, you add users and give them appropriate permissions to administer, manage, view, and use the group.
 
-When authoring an Azure Pipelines or TFS Release pipeline, you
-can specify the deployment targets for a [job](../../process/phases.md)
-using a deployment group. This makes it easy to define
-[parallel execution](../../process/phases.md#parallelexec)
-of deployment tasks.
+* Let you view live logs for each server as a deployment takes place, and download logs for all servers to track your deployments down to individual machines.
 
-Deployment groups:
-
-* Specify the security context and runtime
-  targets for the agents. As you create a deployment group, you
-  add users and give them appropriate permissions to administer,
-  manage, view, and use the group.
-
-* Let you view live logs for each server as a
-  deployment takes place, and download logs for all servers to
-  track your deployments down to individual machines.
-
-* Enable you to use machine tags to limit deployment to specific
-  sets of target servers.
+* Enable you to use machine tags to limit deployment to specific sets of target servers.
 
 ## Create a deployment group
 
