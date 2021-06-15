@@ -21,21 +21,31 @@ Azure Pipelines provides a YAML pipeline editor that you can use to author and e
 
 :::moniker range="= azure-devops-2019"
 
-To access the YAML pipeline editor, navigate to your YAML pipeline.
+To access the YAML pipeline editor, choose **Pipelines**, **Builds**, and select the pipeline to edit.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019.1.png" alt-text="Azure Pipelines builds in Azure DevOps Server 2019 Update 1.":::
 
 Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019.1.png" alt-text="Azure Pipelines YAML editor in Azure DevOps Server 2019 Update 1.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019.1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
 
 Edit your pipeline using Intellisense and the task assistant for guidance.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor for Azure DevOps Server 2019.1":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1":::
 
 :::moniker-end
 
 :::moniker range=">= azure-devops-2020"
+
+To access the YAML pipeline editor, choose **Pipelines**, **Pipelines**, and select the pipeline to edit.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
+
+Choose **Edit** to edit your pipeline in the YAML pipeline editor.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit.png" alt-text="Azure Pipelines YAML edit button.":::
+
+Edit your pipeline using Intellisense and the task assistant for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor":::
 
