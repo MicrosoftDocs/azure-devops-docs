@@ -482,7 +482,7 @@ Note: This variable yields a value that is invalid for build use in a build numb
 <td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the BuildID of the triggering build. In Classic pipelines, this variable is triggered by a build completion trigger.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br />
-If you are triggering a YAML pipeline using `resources`, you should use the <a href="./../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+If you are triggering a YAML pipeline using `resources`, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 
 <td>No</td>
@@ -493,7 +493,7 @@ If you are triggering a YAML pipeline using `resources`, you should use the <a h
 <td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the DefinitionID of the triggering build. In Classic pipelines, this variable is triggered by a build completion trigger.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. 
-<br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="./../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+<br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 
 </td>
 <td>No</td>
@@ -503,7 +503,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.TriggeredBy.DefinitionName</td>
 <td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the name of the triggering build pipeline. In Classic pipelines, this variable is triggered by a build completion trigger.
 <br/><br/>
-This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="./../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -512,7 +512,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.TriggeredBy.BuildNumber</td>
 <td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the number of the triggering build. In Classic pipelines, this variable is triggered by a build completion trigger.
 <br/><br/>
-This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="./../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
@@ -521,7 +521,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.TriggeredBy.ProjectID</td>
 <td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to ID of the project that contains the triggering build. In Classic pipelines, this variable is triggered by a build completion trigger.
 <br/><br/>
-This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="./../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
+This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag. <br /> If you are triggering a YAML pipeline using `resources`, you should use the <a href="../../yaml-schema.md#the-pipeline-resource-metadata-as-predefined-variables">resources variables</a> instead. 
 </td>
 <td>No</td>
 </tr>
