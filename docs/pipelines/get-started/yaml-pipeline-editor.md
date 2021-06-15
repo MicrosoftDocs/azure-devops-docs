@@ -29,7 +29,7 @@ Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019.1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
 
-Edit your pipeline using Intellisense and the task assistant for guidance.
+Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1":::
 
@@ -45,7 +45,7 @@ Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit.png" alt-text="Azure Pipelines YAML edit button.":::
 
-Edit your pipeline using Intellisense and the task assistant for guidance.
+Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor.png" alt-text="YAML pipeline editor":::
 
