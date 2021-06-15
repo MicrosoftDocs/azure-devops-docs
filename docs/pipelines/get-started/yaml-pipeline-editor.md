@@ -87,6 +87,8 @@ Choose **Variables** to manage your pipeline variables.
 
 :::moniker-end
 
+For more information on working with pipeline variables, see [Define variables](../process/variables.md).
+
 :::moniker range="= azure-devops"
 
 ## Templates support
