@@ -77,7 +77,7 @@ To connect to Azure Boards or TFS, go to the Team ribbon and choose **New List**
 This error is typically caused when you install Visual Studio before you install Office Excel or Project. In this instance, the Visual Studio Tools for Office Run Time are not correctly configured. To correct this error, you must repair Visual Studio.
 
 > [!NOTE]
-> For authentication issues, such as `TF31003` and `TF30063`, please refer to [User account does not have permission](../../../reference/error/tf31003-user-account-no-permission-connect-tfs.md).
+> For authentication issues, such as `TF31003` and `TF30063`, please refer to [User account does not have permission](/previous-versions/azure/devops/reference/error/tf31003-user-account-no-permission-connect-tfs).
 
 ### Prerequisites 
 
