@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2020
+ms.date: 06/15/2021
 ---
 
 
@@ -56,7 +56,7 @@ If you're adding a user to Azure DevOps for the first time, see [Add account use
 
 ::: moniker-end
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -122,55 +122,6 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 #### [Current page](#tab/current-page) 
 
-1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
-
-2. Choose **Project Settings** and then **Security**.
-
-	*To see the full image, select to expand*.
-
-	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
-
-3. Under **Groups**, choose one of the following options:
-   - **Readers**: To add users who require read-only access to the project, choose.
-   - **Contributors**: To add users who contribute fully to this project or who have been granted Stakeholder access.
-   - **Project Administrators**: To add users who need to administrate the project. To learn more, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
-
-4. Next, choose the **Members** tab.
-
-   Here we choose the **Contributors** group.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
-
-   The default team group, and any other teams you add to the project, get included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
-
-    > [!TIP]
-    > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
-
-5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
-
-6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meets your requirements.
-
-	![Add users and group dialog, add a user](media/project-level-permissions-add-a-user.png)  
-
-   > [!NOTE]
-   > The first time you add a user or group to Azure DevOps,
-   > you can't browse to it or check the friendly name.
-   > After the identity has been added, you can just enter the friendly name.
-
-	Choose **Save changes** when complete. 
-
-7. (Optional) You can customize a user's permission for other functionality in the project. For example, in [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
-
-   > [!NOTE]
-   > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
-
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-Azure DevOps CLI commands aren't supported for adding a user to a project, currently.  
-
-* * *
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -261,6 +212,14 @@ Azure DevOps CLI commands aren't supported for adding a user to a project, curre
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 ::: moniker-end
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+Azure DevOps CLI commands aren't supported for adding a user to a project, currently.  
+
+---
+
 
 <a id="add-team-members"> </a>
 
@@ -476,7 +435,7 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
-* * *
+---
 
 
 
@@ -497,6 +456,7 @@ If your on-premises deployment is integrated with SQL Server Reports, you need t
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
+
 ## Add users or groups to SharePoint or SQL Server Reports 
 
 If your on-premises deployment is integrated with a SharePoint product or SQL Server Reports, you need to manage membership for those products separately from their websites.
