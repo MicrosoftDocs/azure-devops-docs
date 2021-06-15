@@ -2,7 +2,7 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms.custom: inherited-process
+ms.custom: "inherited-process, linked-from-support"
 ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
@@ -56,7 +56,7 @@ When defining work items or running queries, the following operational limits ap
 The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
 ::: moniker-end
 
-To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+To improve query performance, see [ Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md). 
 
 ## Backlogs, boards, and teams
 
