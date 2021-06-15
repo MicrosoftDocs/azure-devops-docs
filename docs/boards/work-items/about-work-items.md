@@ -205,8 +205,7 @@ In addition to the work items types that appear on backlogs and boards, there ar
    :::column span="2":::
        Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete. See [Create test plans and test suites](../../test/create-a-test-plan.md). 
    :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end::: 
 
 
 To prevent users from creating work items manually which should only be created from the specific tool designed to support their usage, there is a Hidden Types category. All of the categories listed in the previous table are added to the Hidden Types category except for the Test Case category. 
