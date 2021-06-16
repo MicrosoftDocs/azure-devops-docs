@@ -173,27 +173,10 @@ Now that we built a Docker image and pushed it to Azure Container Registry. we m
    <tr><td>Location</td><td>(Required) Provide the location for deploying the resource group</td></tr>
    <tr><td>Template location</td><td>(Required) Set the template location to <b>URL of the file</b></td></tr>
    <tr><td>Template link</td><td>(Required) <a href="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json" data-raw-source="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json">https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json</a></td></tr>
-   <tr><td>Override template parameters</td><td><b>-iotHubName IoTEdge -iotHubSku &quot;S1&quot;</td></tr>
+   <tr><td>Override template parameters</td><td><b>-iotHubName "Your_IoT_HubName" -iotHubSku "F1"</td></tr>
    </table>
 
-5. Select **+** and search for the **Azure CLI** task. Select **Add** and configure the task as shown below. 
-
-   - **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
-   
-   - **Script Type**: Set the value to PowerShell
-
-   - **Script Location**: Set the value to **Inline script**. Paste the following script in the text box and replace the placeholders with your hubName amd deviceID. 
-    
-     ```azurecli
-     (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
-     ```
-
-     > [!NOTE]
-     > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
-
-     ![Release Pipeline](media/Iot-devops-using-azure-pipelines/release-pipeline.png)
-
-6. Edit the pipeline and select **+** and search for the **Azure IoT Edge** task. Select **add**. This step will Deploy the module images to IoT Edge devices. Configure the task as shown below.
+1. Select **+** and search for the **Azure IoT Edge** task. Select **Add** and configure the task as shown below. This step will Deploy the module images to IoT Edge device. 
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Action</td><td>Select an Azure IoT Edge action to <b>Deploy to IoT Edge devices</b></td></tr>
@@ -204,7 +187,7 @@ Now that we built a Docker image and pushed it to Azure Container Registry. we m
    <tr><td>IoT Edge device ID</td><td>Input the IoT Edge device ID</td></tr>
    </table>
 
-7. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below.
+1. Select **+** and search for **Azure Resource Group Deployment** task. Select **Add** and configure the task as shown below.
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
@@ -216,8 +199,11 @@ Now that we built a Docker image and pushed it to Azure Container Registry. we m
    <tr><td>Override template parameters</td><td><b>-edgeDeviceConnectionString $(CS_OUTPUT) -virtualMachineName &quot;YOUR_VM_NAME&quot; -adminUsername &quot;devops&quot; -adminPassword &quot;$(vmPassword)&quot; -appInsightsLocation &quot;&quot; -virtualMachineSize &quot;Standard_A0&quot; -location &quot;YOUR_LOCATION&quot; </td></tr>
    </table>
 
-8. Disable the first 2 tasks in the pipeline. Save and queue.
+1. Once the release is complete, go to IoT hub in the Azure portal to view more information about your latest deployment.
 
-    ![Edit Pipeline](media/Iot-devops-using-azure-pipelines/edit-release-pipeline.png)
 
-9. Once the release is complete, go to IoT hub in the Azure portal to view more information.
+## Related article
+
+- [Deploy a web app to Azure App Services](../apps/cd/deploy-webdeploy-webapps.md)
+- [Deploy to Azure Web App for Containers](../apps/cd/deploy-docker-webapp.md)
+- [Deploy a Docker container app to Azure Kubernetes Service](../apps/cd/deploy-aks.md)
