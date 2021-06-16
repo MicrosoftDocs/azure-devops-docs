@@ -89,13 +89,15 @@ To restore a project, you must have the "delete project" permission set to **All
 2. Get a list of deleted projects using the following request:
 
    ```
-   GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3
+   GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3
    ```
 
 3. Restore a deleted project using the following request:
 
    ```
-   PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?api-version=5.0-preview.3
+   PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?
+   api-version=5.0-preview.3
    ```
    Request body
 
@@ -111,7 +113,8 @@ To restore a project, you must have the "delete project" permission set to **All
 
    ```
    $collectionUrl = "https://localhost/defaultcollection"
-   (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+   (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
    ```
 
    Something similar to the following screenshot appears:
@@ -123,8 +126,11 @@ To restore a project, you must have the "delete project" permission set to **All
    ```
    $collectionUrl = "https://localhost/defaultcollection"
    $projectName = 'Project1'
-   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where {$_.name -eq $projectName}
-   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
+   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+    | where {$_.name -eq $projectName}
+   irm -Uri ($project.url + "?api-version=5.0-preview.3") 
+   -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
    ```
 
 Your project and associated data are restored.
