@@ -20,10 +20,10 @@ You add users to a project or team who you want to provide access to a project o
 
 If you're new to Azure DevOps, you may want to familiarize yourself with the information provided in these articles: 
 
-- [Get started with permissions, access levels, and security groups](about-permissions.md) 
-- [About projects and scaling your organization](../projects/about-projects.md) 
-- [Default permissions and access quick reference](permissions-access.md) 
-- [About teams and Azure Boards tools](../settings/about-teams-and-setting.md) 
+- [Get started with permissions, access levels, and security groups](about-permissions.md)  
+- [About projects and scaling your organization](../projects/about-projects.md)  
+- [Default permissions and access quick reference](permissions-access.md)  
+- [About teams and Azure Boards tools](../settings/about-teams-and-settings.md) 
 
 You add projects to an organization or project collection and you add teams to projects. To learn more, see: 
 - [Create a project](../projects/create-project.md) 
@@ -90,31 +90,67 @@ Team administrators can add users to their team from the Team Members widget add
 
 	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
 
-2. Enter the user account name or address.   
+2. Enter the user account name or address. You can add several email addresses by separating them with a semicolon (;).   
 	:::row:::
 	   :::column span="":::
-	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). Choose the entry listed under **Add users** to complete the entry.   
-	      :::image type="content" source="media/add-users/invite-members-dialog.png" alt-text="Invite members to a team dialog, enter an unknown user email address.":::
+	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. Choose the entry listed under **Add users** to complete the entry.   
 	   :::column-end:::
 	   :::column span="":::
 	      If you're adding a user known by the organization or collection, simply type the name or email address and then choose the name that appears to complete the entry.   
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/invite-members-dialog.png" alt-text="Invite members to a team dialog, enter an unknown user email address.":::
+	   :::column-end:::
+	   :::column span="":::
 	      :::image type="content" source="media/add-users/invite-members-known-user.png" alt-text="Invite members to a team dialog, enter a known user account.":::
 	   :::column-end:::
 	:::row-end:::
-
 2. Complete the invitation. 
-
 	:::row:::
 	   :::column span="":::
 	      When the user is unknown, you'll get a notification that an access level must be assigned. To complete the invitation, choose **Add**.    
-	      :::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Invite members to a team dialog, Add new user account. ":::
 	   :::column-end:::
 	   :::column span="":::
 	      Choose **Add** to complete the invitation.     
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Invite members to a team dialog, Add new user account. ":::
+	   :::column-end:::
+	   :::column span="":::
 	      :::image type="content" source="media/add-users/invite-members-dialog-complete-add.png" alt-text="Invite members to a team dialog, Add buttom.":::
 	   :::column-end:::
 	:::row-end:::
 
+1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure.png" alt-text="Screenshot of notification failure message. ":::  
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	     A success message indicates the status of adding the user to the system. 
+	   :::column-end:::
+	   :::column span="":::
+	      A failure message indicates why the addition of the user failed. 
+	   :::column-end:::
+	:::row-end:::
+
+	:::row:::
+	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
+	   :::column-end:::
+	:::row-end:::
+ 
 #### [Security group, Preview page](#tab/preview-page)
 
 ::: moniker range="azure-devops"
@@ -240,7 +276,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ## Add users to a project
 
-As a member of the Project Administrators group, you can add members from the **Project Summary** page or the **Project settings> Permissions** page by adding them to a group.  
+As a member of the Project Administrators group, you can add members to a project from the **Summary** page or the **Project settings> Permissions** page by adding them to a security group. From the project **Summary** page, you can choose to add the user account to one or more teams. 
 
 ::: moniker range="azure-devops"
 
@@ -252,7 +288,59 @@ As a member of the Project Administrators group, you can add members from the **
 
 #### [Summary or Widget](#tab/summary-widget)
 
-From the **Project>Summary** page, you can invite new or existing members to a project.  
+1. Open the **Project>Summary** page, and choose **Invite**.  
+
+	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
+
+1. To invite someone to your team, choose the plus button of the Team Members widget. 
+
+	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
+
+2. Enter the user account name or address. You can add several email addresses by separating them with a semicolon (;).   
+	:::row:::
+	   :::column span="":::
+	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. Choose the entry listed under **Add users** to complete the entry. Optionally, you can select one or more teams to add the user to. To complete the invitation, choose **Add**.       
+	   :::column-end:::
+	   :::column span="":::
+	      If you're adding a user known by the organization or collection, simply type the name or email address and then choose the name that appears to complete the entry. Optionally, you can select one or more teams to add the user to.  To complete the invitation, choose **Add**.    
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/summary-invite-dialog-new-user-selected-team.png" alt-text="Invite members to a project dialog, unknown user, select teams to add.":::
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/summary-page-invite-project-members.png" alt-text="Invite members to a project dialog, known user, select teams to add.":::
+	   :::column-end:::
+	:::row-end:::
+
+1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure.png" alt-text="Screenshot of notification failure message. ":::  
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	     A success message indicates the status of adding the user to the system. 
+	   :::column-end:::
+	   :::column span="":::
+	      A failure message indicates why the addition of the user failed. 
+	   :::column-end:::
+	:::row-end:::
+
+	:::row:::
+	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
+	   :::column-end:::
+	:::row-end:::
+ 
+ 
 
 
 #### [Security group, Preview page](#tab/preview-page)
