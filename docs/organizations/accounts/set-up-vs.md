@@ -59,7 +59,7 @@ if you don't have the version you want already.
 
     ![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)
 
-    [Can't sign in?](/azure/devops/organizations/accounts/faq-set-up-vs.yml#t-i-assign-azure-devops-permissions-directly-to-an-azure-ad-group-)
+    [Can't sign in?](/azure/devops/organizations/accounts/faq-set-up-vs#t-i-assign-azure-devops-permissions-directly-to-an-azure-ad-group-)
 
 3. Enter your sign in address, 
 and then enter your password.
