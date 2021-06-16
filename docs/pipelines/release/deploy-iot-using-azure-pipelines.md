@@ -98,7 +98,7 @@ If your workspace isn't under Git source control, you can easily create a Git re
 
 You code should be published now to your repository.
 
-## Create a build pipeline
+## Create a pipeline
 
 You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../agents/hosted.md?tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
@@ -152,15 +152,19 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 ## Create a release pipeline
 
-The build pipeline has already built a Docker image and pushed it to an Azure Container Registry. In the release pipeline we will create an IoT hub, IoT Edge device in that hub, deploy the sample module from the build pipeline, and provision a virtual machine to run as your IoT Edge device.
+Now that we built a Docker image and pushed it to Azure Container Registry. we must first create an IoT hub and an IoT Edge device in that hub. We will then deploy the sample module, and provision a virtual machine to run as our IoT Edge device.
 
-1. Navigate to the **Pipelines | Releases**.
+1. [Create an IoT hub using the Azure portal](/azure/iot-hub/iot-hub-create-through-portal.md)
 
-2. From the **New** drop-down menu, select **New release pipeline** to create a new release pipeline. 
+1. [Register an IoT Edge device in IoT Hub](/azure/iot-edge/how-to-register-device.md)
 
-3. Select **Empty job** to create the pipeline.
+1. From within your project, navigate to the **Pipelines** > **Releases**.
 
-4. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below. 
+1. Select **New pipeline** to create a new release pipeline. 
+
+1. Select **Empty job** to start with an empty pipeline.
+
+1. Select **Tasks** and then select **+** in the **Agent job**. Search for the **ARM template deployment** task. and select **Add**. Configure the task as shown below: 
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
@@ -172,21 +176,17 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
    <tr><td>Override template parameters</td><td><b>-iotHubName IoTEdge -iotHubSku &quot;S1&quot;</td></tr>
    </table>
 
-5. Select **+** and search for **Azure CLI** task. Select **add** and configure the task as shown below. 
+5. Select **+** and search for the **Azure CLI** task. Select **Add** and configure the task as shown below. 
 
    - **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
+   
+   - **Script Type**: Set the value to PowerShell
 
-   - **Script Location**: Set the type to **Inline script** and copy paste the below script
+   - **Script Location**: Set the value to **Inline script**. Paste the following script in the text box and replace the placeholders with your hubName amd deviceID. 
     
      ```azurecli
      (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
      ```
-
-     In the above script, replace the following with your details -
-
-   - hub name
-
-   - device id
 
      > [!NOTE]
      > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
