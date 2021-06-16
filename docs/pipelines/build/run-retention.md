@@ -61,7 +61,7 @@ This is similar to above, only the condition needs to change:
     script: |
       $contentType = "application/json";
       $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-      $rawRequest = @{ daysValid = 365 * 2; definitionId = 1; ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+      $rawRequest = @{ daysValid = 365 * 2; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
       $request = ConvertTo-Json @($rawRequest);
       $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
       Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
@@ -84,7 +84,7 @@ The `Build` stage can retain the pipeline as in the above examples, but with one
   script: |
     $contentType = "application/json";
     $headers = @{ Authorization = 'Bearer $(System.AccessToken)' };
-    $rawRequest = @{ daysValid = 3; definitionId = 1; ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
+    $rawRequest = @{ daysValid = 3; definitionId = $(System.DefinitionId); ownerId = 'User:$(Build.RequestedForId)'; protectPipeline = $false; runId = $(Build.BuildId) };
     $request = ConvertTo-Json @($rawRequest);
     $uri = "$(System.CollectionUri)$(System.TeamProject)/_apis/build/retention/leases?api-version=6.0-preview.1";
     $newLease = Invoke-RestMethod -uri $uri -method POST -Headers $headers -ContentType $contentType -Body $request;
