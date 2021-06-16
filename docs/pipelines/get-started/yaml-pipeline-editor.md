@@ -14,7 +14,7 @@ Azure Pipelines provides a YAML pipeline editor that you can use to author and e
 :::moniker range="azure-devops-2019"
 
 > [!IMPORTANT]
-> The YAML pipeline editor was introduced in Azure DevOps Server 2019 Update 1. If you are using Azure DevOps Server 2019 RTW you can edit your YAML using the text editor of your choice and check it into your pipeline's repository.
+> The YAML pipeline editor was introduced in Azure DevOps Server 2019 Update 1. If you are using Azure DevOps Server 2019 RTW, the YAML pipeline editor described in this article is not available, but you can edit your YAML using the text editor of your choice and check it into your pipeline's repository.
 
 :::moniker-end
 ## Edit a YAML pipeline
@@ -69,7 +69,7 @@ Press F1 to display the command palette and view the available keyboard shortcut
 
 ## Task assistant
 
-The task assistant supports most of the common task input types such as pick lists and service connections.
+The task assistant provides a method for adding tasks to your YAML pipeline.
 
 To display the task assistant, edit your YAML pipeline and choose **Show assistant**.
 
@@ -107,9 +107,15 @@ You can edit the YAML to make additional configuration changes to the task, or y
 
 ## Manage pipeline variables
 
+Use variables to store values or encrypted secrets separately from your repository.
+
 :::moniker range=">= azure-devops-2020"
 
 To manage pipeline variables, edit your YAML pipeline and choose **Variables**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-variables-button.png" alt-text="Manage pipeline variables button.":::
+
+Add, edit, or delete variables from the **Variables** pane.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
