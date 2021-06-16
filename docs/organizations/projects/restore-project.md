@@ -130,7 +130,8 @@ To restore a project, you must have the "delete project" permission set to **All
    deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
     | where {$_.name -eq $projectName}
    irm -Uri ($project.url + "?api-version=5.0-preview.3") 
-   -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
+   -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}'
+    -ContentType 'application/json'
    ```
 
 Your project and associated data are restored.
