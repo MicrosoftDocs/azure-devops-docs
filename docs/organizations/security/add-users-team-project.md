@@ -17,18 +17,34 @@ ms.date: 06/15/2021
 
 You add users to a project or team who you want to provide access to a project or team. You add them to specific projects to automate permission assignments based on default or custom security groups. Typically, you add contributors to the project Contributors group. You add them to specific teams to support team-specific tools, such as the Team Members widget and sprint capacity planning tools. 
 
-When you add them to a team, they automatically become members of the Contributors group for that project. When you add them to a team or project, they automatically become members of the organization or collection where the team or project resides.  
 
 If you're new to Azure DevOps, you may want to familiarize yourself with the information provided in these articles: 
 
 - [Get started with permissions, access levels, and security groups](about-permissions.md) 
 - [About projects and scaling your organization](../projects/about-projects.md) 
 - [Default permissions and access quick reference](permissions-access.md) 
-- [About teams & Agile tools](../settings/about-teams-and-setting.md) 
+- [About teams and Azure Boards tools](../settings/about-teams-and-setting.md) 
+
+You add projects to an organization or project collection and you add teams to projects. To learn more, see: 
+- [Create a project](../projects/create-project.md) 
+- [Add team, go from one default team to others](../settings/add-teams.md)
+
+## Supported options for adding users to a team or project 
+
+You can add users in one of the following ways: 
+- Invite new users or existing users to a team or project  
+- Add new users or existing users to a project-level security group 
+- Add new users to an organization and optionally specify the projects they belong to. To learn how, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md). 
+
+When you invite new users&mdash;ones not recognized by your organization or collection&mdash;using the first two methods, they automatically become members of the Contributors group for the project they were added to. They also automatically become members of the organization or collection that hosts the project. The system automatically assigns an access level to the user. To modify the access level, you can change it from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).
 
 
-You add users to a project or team. You add projects to project collections, and you add teams to projects. 
+::: moniker range="= azure-devops"
 
+> [!NOTE]   
+> When the organization policy, **Allow team and project administrators to invite new users**, is disabled, Team and Project Administrators can't add users who are not already in the organization to a team or project. Project Collection Administrators can add users whether this policy is on or off. For more information, see [Restrict invitations from Project and Team Administrators](restrict-invitations.md). For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../accounts/organization-management.md#add-users). 
+
+::: moniker-end
 
 Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 
@@ -39,11 +55,10 @@ Once users have been added to a project, you can browse for their display name o
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
-> [!NOTE]   
-> When the organization policy, **Allow team and project administrators to invite new users**, is disabled, Team and Project Administrators can't add users who are not already in the organization to a team or project. Project Collection Administrators can add users whether this policy is on or off. For more information, see [Restrict invitations from Project and Team Administrators](../organizations/security/restrict-invitations.md). For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../organizations/accounts/organization-management.md#add-users). 
+
 
 ::: moniker range=">= azure-devops-2020"
-If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md).
 ::: moniker-end
 
 
@@ -66,7 +81,12 @@ As a team administrator, you can add members from the **Team Members** dashboard
 
 ::: moniker-end
 
-#### [Preview page](#tab/preview-page)
+
+#### [Summary or Widget](#tab/summary-widget)
+
+
+
+#### [Security group, Preview page](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -112,7 +132,7 @@ As a team administrator, you can add members from the **Team Members** dashboard
 Choose the **Current page** tab for information on adding a user to a team. 
 ::: moniker-end
 
-#### [Current page](#tab/current-page)
+#### [Security group, Current page](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -200,7 +220,13 @@ As a member of the Project Administrators group, you can add members from the **
 
 ::: moniker-end
 
-#### [Preview page](#tab/preview-page)
+
+#### [Summary or Widget](#tab/summary-widget)
+
+From the **Project>Summary** page, you can invite new or existing members to a project.  
+
+
+#### [Security group, Preview page](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -256,9 +282,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
-
-#### [Current page](#tab/current-page) 
-
+#### [Security group, Current page](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019"
 
