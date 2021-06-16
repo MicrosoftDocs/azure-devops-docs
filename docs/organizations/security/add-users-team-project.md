@@ -15,27 +15,23 @@ ms.date: 06/15/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
+You add users to a project or team who you want to provide access to a project or team. You add them to specific projects to automate permission assignments based on default or custom security groups. Typically, you add contributors to the project Contributors group. You add them to specific teams to support team-specific tools, such as the Team Members widget and sprint capacity planning tools. 
 
-The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](about-permissions.md#aad).
+When you add them to a team, they automatically become members of the Contributors group for that project. When you add them to a team or project, they automatically become members of the organization or collection where the team or project resides.  
 
-::: moniker range="azure-devops"  
+If you're new to Azure DevOps, you may want to familiarize yourself with the information provided in these articles: 
 
-> [!IMPORTANT]
-> If you're adding users to an organization in Azure DevOps Services and you don't use Azure AD, then you need to first [add their "personal" Microsoft accounts to your organization or project](../../user-guide/sign-up-invite-teammates.md#invite-others).  
-> 
-> Once you've added a user to an organization or project, their user identity becomes searchable from an identity field, such as the Assigned To field, or from the security and permission dialogs. After you've added them to one project or team, you can add them to additional projects or teams using the procedures provided in this article. For more information about managing users and organization access, see [About permissions, access, and security groups, Active Directory and Azure Active Directory security groups](about-permissions.md#aad). 
+- [Get started with permissions, access levels, and security groups](about-permissions.md) 
+- [About projects and scaling your organization](../projects/about-projects.md) 
+- [Default permissions and access quick reference](permissions-access.md) 
+- [About teams & Agile tools](../settings/about-teams-and-setting.md) 
 
-::: moniker-end  
 
-::: moniker range="< azure-devops"  
+You add users to a project or team. You add projects to project collections, and you add teams to projects. 
 
-> [!IMPORTANT]
-> On-premises Azure DevOps instances automatically reference user identities defined in the Active Directory or Windows workgroup of the local network. You can add security groups defined in Active Directory or a workgroup to a collection. For more information, [About permissions, access, and security groups, Active Directory and Azure Active Directory security groups](about-permissions.md#aad). 
-> 
-> Once you've added security groups to a collection or project, user identities defined with that group become searchable from an identity field, such as the Assigned To field, or from the security and permission dialogs. After you've added them to one project, you can add them to additional projects and teams using the procedures provided in this article.
 
-::: moniker-end  
+Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
+
 
 ## Prerequisites
 
@@ -43,23 +39,164 @@ The easiest way to add a number of users to a project is to add groups defined i
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
-Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
+> [!NOTE]   
+> When the organization policy, **Allow team and project administrators to invite new users**, is disabled, Team and Project Administrators can't add users who are not already in the organization to a team or project. Project Collection Administrators can add users whether this policy is on or off. For more information, see [Restrict invitations from Project and Team Administrators](../organizations/security/restrict-invitations.md). For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../organizations/accounts/organization-management.md#add-users). 
 
+::: moniker range=">= azure-devops-2020"
+If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
+::: moniker-end
+
+
+
+
+<a id="add-team-members"> </a>
+
+## Add users to a team
+
+Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md). 
+
+As a team administrator, you can add members from the **Team Members** dashboard widget or the **Project settings> Teams** page for the team.  
+
+<a id="add-team-members-team-services" />
+
+::: moniker range="= azure-devops"
+
+> [!NOTE]   
+> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+
+::: moniker-end
+
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="azure-devops"
+
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
+
+   Here we open the Board for the Web team and from there the team profile.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
+
+2. If you need to switch the team context, use the team selector within the breadcrumbs.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
+
+3. Choose **Add**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Profile, choose Add, preview page](media/add-users/team-profile-choose-add-preview.png)   
+
+4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+
+	![Add users and group dialog, project-level](media/project-level-permissions-add-a-user.png)
+
+   > [!TIP]
+   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
+
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
+
+5. To remove members, return to this page, highlight the user name and choose **Remove**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-preview.png)   
+
+   > [!NOTE]
+   > To remove a team administrator as a team member, you must first remove them as an administrator. 
+
+6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Choose the **Current page** tab for information on adding a user to a team. 
+::: moniker-end
+
+#### [Current page](#tab/current-page)
+
+::: moniker range=">= azure-devops-2019"
+
+You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+
+1. Open a backlog or board for a team and choose the **Show Team Profile** :::image type="icon" source="../../media/icons/team.png" border="false":::. Then choose **Team Settings**. 
+
+   Here we open the Board for the Web team and from there the team profile.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
+
+2. If you need to switch the team context, use the team selector within the breadcrumbs.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
+
+3. Choose **Add**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Profile, choose Add, currect page](media/add-users/team-profile-choose-add.png)   
+
+4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+
+	![Add users and group dialog, current page](media/project-level-permissions-add-a-user.png)
+
+   > [!TIP]
+   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
+
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
+
+5. To remove members, return to this page, highlight the user name and choose **Remove**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
+
+   > [!NOTE]
+   > To remove a team administrator as a team member, you must first remove them as an administrator. 
+
+6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+
+1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
+
+	![Project Settings, Overview page, Choose team](media/add-users/overview-page-select-team.png) 
+
+2. Choose the ![plus icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
+
+3. Enter the sign-in addresses or display name for each user you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+
+	![Add users and group dialog, 2018 and earlier](media/project-level-permissions-add-a-user.png)
+
+   > [!TIP]
+   > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
+
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
+
+4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
+
+	![Team profile page, remove a team member, highlight and remove](media/add-users/team-page-remove-team-member.png)
+
+   > [!NOTE]
+   > To remove a team administrator as a team member, you must first remove them as an administrator. 
+
+5. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
+
+::: moniker-end
+
+---
 
 <a name="add-users-team-project"></a>
 
 ## Add users to a project
 
-::: moniker range=">= azure-devops-2020"
-
-If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
-
-::: moniker-end
+As a member of the Project Administrators group, you can add members from the **Project Summary** page or the **Project settings> Permissions** page by adding them to a group.  
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 
@@ -213,151 +350,9 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-Azure DevOps CLI commands aren't supported for adding a user to a project, currently.  
-
----
-
-
-<a id="add-team-members"> </a>
-
-## Add users to a team
-
-Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md).
-
-<a id="add-team-members-team-services" />
-
-::: moniker range="= azure-devops"
-
-> [!NOTE]   
-> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-#### [Preview page](#tab/preview-page)
-
-::: moniker range="azure-devops"
-
-1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
-
-   Here we open the Board for the Web team and from there the team profile.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
-
-2. If you need to switch the team context, use the team selector within the breadcrumbs.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
-
-3. Choose **Add**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add, preview page](media/add-users/team-profile-choose-add-preview.png)   
-
-4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
-
-	![Add users and group dialog, project-level](media/project-level-permissions-add-a-user.png)
-
-   > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
-
-	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
-
-5. To remove members, return to this page, highlight the user name and choose **Remove**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-preview.png)   
-
-   > [!NOTE]
-   > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
-6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-Choose the **Current page** tab for information on adding a user to a team. 
-::: moniker-end
-
-#### [Current page](#tab/current-page)
-
-::: moniker range=">= azure-devops-2019"
-
-You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
-
-1. Open a backlog or board for a team and choose the **Show Team Profile** :::image type="icon" source="../../media/icons/team.png" border="false":::. Then choose **Team Settings**. 
-
-   Here we open the Board for the Web team and from there the team profile.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
-
-2. If you need to switch the team context, use the team selector within the breadcrumbs.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
-
-3. Choose **Add**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add, currect page](media/add-users/team-profile-choose-add.png)   
-
-4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
-
-	![Add users and group dialog, current page](media/project-level-permissions-add-a-user.png)
-
-   > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
-
-	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
-
-5. To remove members, return to this page, highlight the user name and choose **Remove**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
-
-   > [!NOTE]
-   > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
-6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-
-1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
-
-	![Project Settings, Overview page, Choose team](media/add-users/overview-page-select-team.png) 
-
-2. Choose the ![plus icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
-
-3. Enter the sign-in addresses or display name for each user you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
-
-	![Add users and group dialog, 2018 and earlier](media/project-level-permissions-add-a-user.png)
-
-   > [!TIP]
-   > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
-
-	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
-
-4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
-
-	![Team profile page, remove a team member, highlight and remove](media/add-users/team-page-remove-team-member.png)
-
-   > [!NOTE]
-   > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
-5. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
-
-::: moniker-end
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
-
 ::: moniker range=">= azure-devops-2020"
+
+## List team members or team details  
 
 From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list) command.
 
@@ -432,11 +427,8 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 ``` 
 
 ::: moniker-end 
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
----
-
+ 
+ 
 
 
 ::: moniker range="< azure-devops"
@@ -479,3 +471,30 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
+
+
+
+
+By default, users added to an organization or collection can view all organization and project information and settings. 
+
+Learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
+
+The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](about-permissions.md#aad).
+
+::: moniker range="azure-devops"  
+
+> [!IMPORTANT]
+> If you're adding users to an organization in Azure DevOps Services and you don't use Azure AD, then you need to first [add their "personal" Microsoft accounts to your organization or project](../../user-guide/sign-up-invite-teammates.md#invite-others).  
+> 
+> Once you've added a user to an organization or project, their user identity becomes searchable from an identity field, such as the Assigned To field, or from the security and permission dialogs. After you've added them to one project or team, you can add them to additional projects or teams using the procedures provided in this article. For more information about managing users and organization access, see [About permissions, access, and security groups, Active Directory and Azure Active Directory security groups](about-permissions.md#aad). 
+
+::: moniker-end  
+
+::: moniker range="< azure-devops"  
+
+> [!IMPORTANT]
+> On-premises Azure DevOps instances automatically reference user identities defined in the Active Directory or Windows workgroup of the local network. You can add security groups defined in Active Directory or a workgroup to a collection. For more information, [About permissions, access, and security groups, Active Directory and Azure Active Directory security groups](about-permissions.md#aad). 
+> 
+> Once you've added security groups to a collection or project, user identities defined with that group become searchable from an identity field, such as the Assigned To field, or from the security and permission dialogs. After you've added them to one project, you can add them to additional projects and teams using the procedures provided in this article.
+
+::: moniker-end  
