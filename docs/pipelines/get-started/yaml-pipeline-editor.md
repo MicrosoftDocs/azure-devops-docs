@@ -57,7 +57,7 @@ Choose **Save** to save your pipeline. You can commit directly to your branch, o
 
 ### Keyboard shortcuts
 
-The YAML pipeline provides several types of keyboard shortcuts.
+The YAML pipeline editor provides several types of keyboard shortcuts.
 
 Press Ctrl+Space for Intellisense support while you are editing the YAML pipeline.
 
@@ -113,9 +113,10 @@ Use variables to store values or encrypted secrets separately from your reposito
 
 To manage pipeline variables, edit your YAML pipeline and choose **Variables**.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-variables-button.png" alt-text="Manage pipeline variables button.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-variables-button.png" alt-text="Manage pipeline variables button.":::
 
-Add, edit, or delete variables from the **Variables** pane.
+Choose **New variable** to add your first variable and **Add** :::image type="icon" source="../../icons/add-dark-icon.png"::: to add subsequent variables. Choose the variable name to edit the variable, and hover the mouse over the variable and choose **Delete** :::image type="icon" source="../../icons/delete-icon-bin.png"::: to delete a variable.
+
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
