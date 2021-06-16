@@ -137,7 +137,7 @@ To manage YAML pipeline variables in the pipeline settings UI, edit the pipeline
 
 Choose **Variables** to manage your pipeline variables.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-variables-2019.1.png" alt-text="Pipeline settings UI for variables.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-settings-ui-variables.png" alt-text="Pipeline settings UI for variables.":::
 
 :::moniker-end
 
