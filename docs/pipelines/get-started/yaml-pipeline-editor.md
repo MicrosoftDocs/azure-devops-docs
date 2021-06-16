@@ -117,7 +117,6 @@ To manage pipeline variables, edit your YAML pipeline and choose **Variables**.
 
 Choose **New variable** to add your first variable and **Add** :::image type="icon" source="../../icons/add-dark-icon.png"::: to add subsequent variables. Choose the variable name to edit the variable, and hover the mouse over the variable and choose **Delete** :::image type="icon" source="../../icons/delete-icon-bin.png"::: to delete a variable.
 
-
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-manage-variables.png" alt-text="Manage pipeline variables in the YAML editor.":::
 
 In addition to managing your variables directly from the YAML pipeline editor, you can also manage them in the pipeline settings UI.
