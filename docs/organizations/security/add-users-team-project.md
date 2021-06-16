@@ -29,7 +29,7 @@ You add projects to an organization or project collection and you add teams to p
 - [Create a project](../projects/create-project.md) 
 - [Add team, go from one default team to others](../settings/add-teams.md)
 
-## Supported options for adding users to a team or project 
+## Supported options for adding users
 
 You can add users in one of the following ways: 
 - Invite new users or existing users to a team or project  
@@ -46,7 +46,7 @@ When you invite new users&mdash;ones not recognized by your organization or coll
 
 ::: moniker-end
 
-Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
+Once users have been added to a project, you can browse for their display name or user name (email alias). 
 
 
 ## Prerequisites
@@ -68,7 +68,7 @@ If you're adding a user to Azure DevOps for the first time, see [Add account use
 
 ## Add users to a team
 
-Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md). 
+Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. Also, you can create a query to list work items based on assignment to a Team Group. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md). 
 
 As a team administrator, you can add members from the **Team Members** dashboard widget or the **Project settings> Teams** page for the team.  
 
@@ -84,7 +84,36 @@ As a team administrator, you can add members from the **Team Members** dashboard
 
 #### [Summary or Widget](#tab/summary-widget)
 
+Team administrators can add users to their team from the Team Members widget added to a dashboard. To add a widget to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).  
 
+1. To invite someone to your team, choose the plus button of the Team Members widget. 
+
+	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
+
+2. Enter the user account name or address.   
+	:::row:::
+	   :::column span="":::
+	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). Choose the entry listed under **Add users** to complete the entry.   
+	      :::image type="content" source="media/add-users/invite-members-dialog.png" alt-text="Invite members to a team dialog, enter an unknown user email address.":::
+	   :::column-end:::
+	   :::column span="":::
+	      If you're adding a user known by the organization or collection, simply type the name or email address and then choose the name that appears to complete the entry.   
+	      :::image type="content" source="media/add-users/invite-members-known-user.png" alt-text="Invite members to a team dialog, enter a known user account.":::
+	   :::column-end:::
+	:::row-end:::
+
+2. Complete the invitation. 
+
+	:::row:::
+	   :::column span="":::
+	      When the user is unknown, you'll get a notification that an access level must be assigned. To complete the invitation, choose **Add**.    
+	      :::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Invite members to a team dialog, Add new user account. ":::
+	   :::column-end:::
+	   :::column span="":::
+	      Choose **Add** to complete the invitation.     
+	      :::image type="content" source="media/add-users/invite-members-dialog-complete-add.png" alt-text="Invite members to a team dialog, Add buttom.":::
+	   :::column-end:::
+	:::row-end:::
 
 #### [Security group, Preview page](#tab/preview-page)
 
