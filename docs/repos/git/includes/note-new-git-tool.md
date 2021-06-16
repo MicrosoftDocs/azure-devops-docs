@@ -1,12 +1,12 @@
 ---
-ms.technology: devops-code-git 
+ms.technology: devops-code-git
 ms.prod: devops
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 11/04/2020
+ms.date: 06/15/2021
 ---
 
-> [!NOTE]   
-> Visual Studio 2019 now includes a new Git tool that provides an improved experience when connecting to a Git repository. When you enable this tool, the Team Explorer tool is effectively disabled when connected to a Git repository. You can acquire the new tool by downloading [Visual Studio 2019 version 16.6](/visualstudio/releases/2019/release-notes-v16.6). To enable and use the new tool, see [Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+> [!NOTE]
+> If you're using Visual Studio 2019 [**version 16.8**](/visualstudio/releases/2019/release-notes-history) or later, we encourage you to try the Git version control experience. Learn more about how the Git experience compares with Team Explorer on this [**Side-by-side comparison*](/visualstudio/version-control/git-team-explorer-feature-comparison/) page.
