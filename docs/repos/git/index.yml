@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
 title: Azure Repos Git Documentation
-summary: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
+summary: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
 
 metadata:
   title: Azure Repos Git Documentation
-  description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
-  ms.prod: devops 
+  description: Collaborate on code development using free Git public and private repositories, pull requests, and code review.
+  ms.prod: devops
   ms.technology: devops-code-git
   ms.topic: landing-page
   ms.author: sdanie
   author: steved0x
-  ms.date: 11/10/2020 
+  ms.date: 11/10/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -35,7 +35,7 @@ landingContent:
             url: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
           - text: Authentication
             url: ./auth-overview.md
-  - title: Get started with Git or GitHub and Visual Studio
+  - title: Get started with Git or GitHub and Visual Studio 2017
     linkLists:
       - linkListType: tutorial
         links:
@@ -53,9 +53,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: New Git experience in Visual Studio (Preview)
-            url: /visualstudio/ide/git-with-visual-studio?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-          - text: Create repo - Visual Studio
+          - text: New Git experience in Visual Studio 2019
+            url: /visualstudio/version-control/git-with-visual-studio/
+          - text: Create repo - Visual Studio 2017
             url: ./share-your-code-in-git-vs-2017.md
           - text: Create repo - IntelliJ
             url: ./create-repo-intellij.md
@@ -73,7 +73,7 @@ landingContent:
             url: ./git-branching-guidance.md
           - text: Forks
             url: ./forks.md
-          - text: History 
+          - text: History
             url: ./history.md
           - text: Pull requests
             url: ./pull-requests.md
@@ -94,10 +94,10 @@ landingContent:
           - text: Configure repository settings
             url: ./repository-settings.md
           - text: Manage Git branch policies
-            url: ./branch-policies.md 
+            url: ./branch-policies.md
           - text: Manage repository permissions
-            url: ./set-git-repository-permissions.md 
-          - text: Set branch permissions 
+            url: ./set-git-repository-permissions.md
+          - text: Set branch permissions
             url: ./branch-permissions.md
   - title: Reference
     linkLists:
