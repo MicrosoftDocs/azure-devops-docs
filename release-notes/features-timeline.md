@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 06/16/2021
+ms.date: 06/17/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -82,8 +82,9 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
 <tr>
-    <td rowspan="5"><a href="2021/sprint-188-update.md" data-raw-source="[16 June 2021](2021/sprint-188-update.md)">16 June 2021</a></td>
+    <td rowspan="6"><a href="2021/sprint-188-update.md" data-raw-source="[17 June 2021](2021/sprint-188-update.md)">17 June 2021</a></td>
     <td>Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</td><td>General</td><td>Future</td></tr>
+    <td>Conditional access policy support for IPv6 traffic</td><td>General</td><td>Future</td></tr>
     <td>Retain pipelines that are consumed in other pipelines</td><td>Pipelines</td><td>Future</td></tr>
     <td>Changes in the automatic creation of environments</td><td>Pipelines</td><td>Future</td></tr>
     <td>Remove Insights dialogue from Build Pipeline</td><td>Pipelines</td><td>Future</td></tr>

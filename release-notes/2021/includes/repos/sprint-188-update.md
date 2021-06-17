@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.topic: include
 ---
 

@@ -2,7 +2,7 @@
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 06/16/2021
+ms.date: 06/17/2021
 ms.topic: include
 ---
 
@@ -26,3 +26,7 @@ There, administrators can:
 These policies will apply to all new PATs created by users for Azure DevOps organizations linked to the Azure AD tenant. Each of the policies have an allow list for users and groups who should be exempt from the policy. The list of users and groups in the Allow list will not have access to manage policy configuration.
 
 These policies only apply to new PATs, and will not affect existing PATs that have already been created and are in use. After the policies have been enabled however, any existing, now non-compliant PATs must be updated to be within the restrictions before they can be renewed.
+
+### Conditional access policy support for IPv6 traffic
+
+We are now extending conditional access policy (CAP) support to include IPv6 fencing policies. As we see people increasingly access Azure DevOps resources on devices from IPv6 addresses, we want to ensure that your teams are equipped to grant and remove access from any IP address, including those coming from IPv6 traffic.
