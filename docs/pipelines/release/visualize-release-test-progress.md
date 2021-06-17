@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides a quick and easy way to check the status of your deployment and test results right from your pipeline definition page. The user interface provides a live update of deployment progress and easy access to logs for more details.
 
-## Visualize release progress
-
 ::: moniker range=">= azure-devops-2019"
+
+## Visualize release progress
 
 The user interface provides a visual representation of the current status of the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the deployment.
 
@@ -23,6 +23,8 @@ The user interface provides a visual representation of the current status of the
 ::: moniker-end
 
 ::: moniker range="= tfs-2018"
+
+## Visualize release progress
 
 The release progress view provides live updates of deployment progress and one-click access to further details. The user interface provides a visual representation of the current status of the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the deployment.
 
@@ -56,8 +58,7 @@ You can also click into the logs to enter a focused view for each of the tasks.
 
 ::: moniker-end
 
-
-::: moniker range="= tfs-2015"
+::: moniker range="= tfs-2015 || tfs-2017 "
 
 ## View build results
 
