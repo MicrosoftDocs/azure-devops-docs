@@ -35,17 +35,137 @@ You add projects to an organization or project collection and you add teams to p
  
 Here are all the ways you can add to Azure DevOps and the options they support. 
 
-> [!div class="mx-tdBreakAll"]  
-> | Level | Required permissions | Interface | Notes and options |
-> |-------|-----------|-----------|-------------------| 
-> | Organization | Azure Active Directory Administrators |Azure Active Directory | Users you add to Azure Active Directory connected to Azure DevOps are added as members of the Project Collection Valid Users group. |  
-> | Collection | Active Directory Administrators | Active Directory or Windows Group | Users you add to Azure Active Directory connected to Azure DevOps are added as members of the Project Collection Valid Users group. |  
-> | Organization | Project Collection Administrators |**Organization Settings>Users page** | Add new users and optionally add them to select projects. Must specify the access level. Can use Group rules to further manage groups being added. |  
-> | Organization | Project Collection Administrators | `az devops user` CLI | Add new users and send an invite.   |  
-> | Project | Project Administrators | Project **Summary** page, **Invite** feature | Add new or existing users and send an invite. Optionally add to one or more teams.   |
-> | Project | Project Administrators | **Project Settings>Permissions>Groups>Group** **Members** page | Add new or existing users to a security group. By adding to a Team group, you effectively add them to a team. No invitation is sent.   |  
-> | Team | Team Administrators | Team Members dashboard widget | Add new or existing users to a team. Send new users an invite.    |  
-> | Team | Team Administrators | **Project Settings>Teams>Team>Members** page | Add new or existing users to a team. Send new users an invite.    |  
+
+:::row:::
+   :::column span="1":::
+      **Level**
+   :::column-end:::
+   :::column span="1":::
+      **Required permissions**
+   :::column-end:::
+   :::column span="1":::
+      **Interface**
+   :::column-end:::
+   :::column span="2":::
+      **Supported tasks**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Team
+   :::column-end:::
+   :::column span="1":::
+      Team Administrators
+   :::column-end:::
+   :::column span="1":::
+      Team Members dashboard widget
+   :::column-end:::
+   :::column span="2":::
+      Add new or existing users to a team. Send new users an invite.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Team
+   :::column-end:::
+   :::column span="1":::
+      Team Administrators
+   :::column-end:::
+   :::column span="1":::
+      **Project Settings>Teams>Team>Members** page
+   :::column-end:::
+   :::column span="2":::
+      Add new or existing users to a team, or remove a member. Send new users an invite. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Project
+   :::column-end:::
+   :::column span="1":::
+      Project Administrators
+   :::column-end:::
+   :::column span="1":::
+      Project **Summary** page, **Invite** feature
+   :::column-end:::
+   :::column span="2":::
+      Add new or existing users and send an invite. Optionally add to one or more teams.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Project
+   :::column-end:::
+   :::column span="1":::
+      Project Administrators
+   :::column-end:::
+   :::column span="1":::
+      **Project Settings>Permissions>Groups>Group** **Members** page
+   :::column-end:::
+   :::column span="2":::
+      Add new or existing users to a security group, or remove a user. By adding to a Team group, you effectively add them to a team.   
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      Organization
+   :::column-end:::
+   :::column span="1":::
+      Project Collection Administrators
+   :::column-end:::
+   :::column span="1":::
+      **Organization Settings>Users**   
+   :::column-end:::
+   :::column span="2":::
+      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects.  Can use Group rules to further manage groups being added. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Organization
+   :::column-end:::
+   :::column span="1":::
+      Project Collection Administrators
+   :::column-end:::
+   :::column span="1":::
+      `az devops user` CLI
+   :::column-end:::
+   :::column span="2":::
+      Add new users to an organization and and send an invite. Must specify the access level.  
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      Organization
+   :::column-end:::
+   :::column span="1":::
+      Azure Active Directory Administrators
+   :::column-end:::
+   :::column span="1":::
+      Azure Active Directory
+   :::column-end:::
+   :::column span="2":::
+      Users you add to Azure Active Directory connected to Azure DevOps are added as members of the Project Collection Valid Users group.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Collection
+   :::column-end:::
+   :::column span="1":::
+      Active Directory Administrators
+   :::column-end:::
+   :::column span="1":::
+      Active Directory or Windows Group
+   :::column-end:::
+   :::column span="2":::
+      Users you add to Active Directory or Windows Group connected to Azure DevOps are added as members of the Project Collection Valid Users group. 
+   :::column-end:::
+:::row-end:::
+
+ 
  
 
 You can add users in one of the following ways: 
