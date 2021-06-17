@@ -30,20 +30,27 @@ You add projects to an organization or project collection and you add teams to p
 
 ## Supported options for adding users 
 
-Depending on the interface you use, you can specify different options for adding new or existing users to teams or projects. Team and project administrators are able to add new and existing users to a team or project, unless prohibited by the 
+::: moniker range="azure-devops"
+
+Depending on the interface you use, you can specify different options for adding new or existing users to teams or projects. When you invite new users&mdash;ones not recognized by your organization or collection&mdash;the system automatically assigns an access level to the user. To modify the access level, a Project Collection Administrator can change it from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).
+
+If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md). 
 
 
+> [!NOTE]  
+> Team and project administrators are able to add new and existing users to a team or project, unless the policy [Allow team and project administrators to invite new users](restrict-invitations.md) is disabled.  For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../accounts/organization-management.md#add-users).
+
+Once users have been added to a project or organization, you can browse for their display name or user name (email alias). 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Team and project administrators can add existing users to their team or project. Existing users are ones that are known to a project collection through the Active Directory or Windows Group created for the server that hosts the on-premises Azure DevOps Server. Once users have been added to a collection, you can browse for their display name or user account (email alias). 
  
-
-You can add users in one of the following ways: 
-- Invite new users or existing users to a team or project  
-- Add new users or existing users to a project-level security group 
-- Add new users to an organization and optionally specify the projects they belong to. 
-
-When you invite new users&mdash;ones not recognized by your organization or collection&mdash;using the first two methods, they automatically become members of the Contributors group for the project they were added to. They also automatically become members of the organization or collection that hosts the project. The system automatically assigns an access level to the user. To modify the access level, you can change it from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).
-
-
-
+::: moniker-end
+ 
+ 
 :::row:::
    :::column span=".75":::
       **Level**
@@ -58,6 +65,7 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       **Supported tasks**
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span=".75":::
       Team
@@ -72,6 +80,7 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       Add new or existing users to a team. Send new users an invite.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span=".75":::
       Team
@@ -83,9 +92,15 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       **Project Settings>Teams>Team>Members**  
    :::column-end:::
    :::column span="2":::
+      ::: moniker range="azure-devops"
       Add new or existing users to a team, or remove a member. Send new users an invite. 
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
+      Add new or existing users to a team, or remove a member.  
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span=".75":::
       Project
@@ -100,6 +115,7 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       Add new or existing users and send an invite. Optionally add to one or more teams.   
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span=".75":::
       Project
@@ -111,7 +127,12 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       **Project Settings>Permissions>Groups>Group** **Members**  
    :::column-end:::
    :::column span="2":::
+      ::: moniker range="azure-devops"
       Add new or existing users to a security group, or remove a user. By adding to a Team group, you effectively add them to a team.   
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
+      Add new or existing users to a team, or remove a member.  
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ::: moniker range="azure-devops"
@@ -176,14 +197,6 @@ When you invite new users&mdash;ones not recognized by your organization or coll
 ::: moniker-end
  
 
-::: moniker range="= azure-devops"
-
-> [!NOTE]   
-> When the organization policy, **Allow team and project administrators to invite new users**, is disabled, Team and Project Administrators can't add users who are not already in the organization to a team or project. Project Collection Administrators can add users whether this policy is on or off. For more information, see [Restrict invitations from Project and Team Administrators](restrict-invitations.md). For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../accounts/organization-management.md#add-users). 
-
-::: moniker-end
-
-Once users have been added to a project, you can browse for their display name or user name (email alias). 
 
 
 ## Prerequisites
@@ -191,12 +204,6 @@ Once users have been added to a project, you can browse for their display name o
 [!INCLUDE [temp](../../includes/prerequisites-add-users-org.md)]
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
-
-
-
-::: moniker range=">= azure-devops-2020"
-If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md).
-::: moniker-end
 
 
 
@@ -455,35 +462,6 @@ As a member of the Project Administrators group, you can add members to a projec
 	      :::image type="content" source="media/add-users/summary-page-invite-project-members.png" alt-text="Invite members to a project dialog, known user, select teams to add.":::
 	   :::column-end:::
 	:::row-end:::
-
-1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
-
-	:::row:::
-	   :::column span="":::
-	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
-	   :::column-end:::
-	   :::column span="":::
-	      :::image type="content" source="media/add-users/notification-failure.png" alt-text="Screenshot of notification failure message. ":::  
-	   :::column-end:::
-	:::row-end:::
-	:::row:::
-	   :::column span="":::
-	      A success message indicates the status of adding the user to the system. 
-	   :::column-end:::
-	   :::column span="":::
-	      A failure message indicates why the addition of the user failed. 
-	   :::column-end:::
-	:::row-end:::
-	:::row:::
-	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
-	   :::column-end:::
-	   :::column span="":::
-	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
-	   :::column-end:::
-	:::row-end:::
- 
-1. Finishing up --- TBD. 
 
 
 #### [Security group, Preview page](#tab/preview-page)
