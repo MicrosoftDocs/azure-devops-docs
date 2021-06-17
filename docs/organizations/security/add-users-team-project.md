@@ -159,7 +159,6 @@ Team administrators can add users to their team from the Team Members widget add
 	      A failure message indicates why the addition of the user failed. 
 	   :::column-end:::
 	:::row-end:::
-
 	:::row:::
 	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
 	   :::column-end:::
