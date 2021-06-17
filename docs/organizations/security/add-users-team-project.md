@@ -15,7 +15,7 @@ ms.date: 06/15/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-You add users to a team or project so they can contribute to the project or team. Adding them to a team or project automatically adds them to the Contributors group for the project. As a member of the Contributors group, they automatically are granted permissions to most features needed to contribute. By adding them to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
+You add users to a team or project so they can contribute to the team and project. Adding them to a team or project automatically adds them to the Contributors group for the project. As a member of the Contributors group, they automatically are granted permissions to most features needed to contribute. By adding them to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
 
 
 If you're new to Azure DevOps, you may want to familiarize yourself with the information provided in these articles: 
@@ -31,9 +31,18 @@ You add projects to an organization or project collection and you add teams to p
 
 ## Supported options for adding users 
 
+Depending on the interface you use, you can specify different options for adding new or existing users to teams or projects.  
+
 
  
-Here are all the ways you can add to Azure DevOps and the options they support. 
+
+You can add users in one of the following ways: 
+- Invite new users or existing users to a team or project  
+- Add new users or existing users to a project-level security group 
+- Add new users to an organization and optionally specify the projects they belong to. 
+
+When you invite new users&mdash;ones not recognized by your organization or collection&mdash;using the first two methods, they automatically become members of the Contributors group for the project they were added to. They also automatically become members of the organization or collection that hosts the project. The system automatically assigns an access level to the user. To modify the access level, you can change it from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).
+
 
 
 :::row:::
@@ -118,7 +127,7 @@ Here are all the ways you can add to Azure DevOps and the options they support.
       **Organization Settings>Users**   
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects.  Can use Group rules to further manage groups being added. 
+      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects.  Can use Group rules to further manage groups being added. To learn how, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -132,7 +141,7 @@ Here are all the ways you can add to Azure DevOps and the options they support.
       `az devops user` CLI
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and and send an invite. Must specify the access level.  
+      Add new users to an organization and and send an invite. Must specify the access level. To learn more, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md#add-users-to-your-organization&tabs=azure-devops-cli).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -150,6 +159,7 @@ Here are all the ways you can add to Azure DevOps and the options they support.
       Users you add to Azure Active Directory connected to Azure DevOps are added as members of the Project Collection Valid Users group.  
    :::column-end:::
 :::row-end:::
+::: moniker range="azure-devops"
 :::row:::
    :::column span=".75":::
       Collection
@@ -161,20 +171,11 @@ Here are all the ways you can add to Azure DevOps and the options they support.
       Active Directory or Windows Group
    :::column-end:::
    :::column span="2":::
-      Users you add to Active Directory or Windows Group connected to Azure DevOps are added as members of the Project Collection Valid Users group. 
+      Users you add to Active Directory or Windows Group connected to Azure DevOps are added as members of the Project Collection Valid Users group. They have access to all projects within a project collection. To learn more, see [Set up groups for use in Azure DevOps on-premises](/azure/devops/server/admin/setup-ad-groups?view=azure-devops-2020&preserve). 
    :::column-end:::
 :::row-end:::
-
+::: moniker-end
  
- 
-
-You can add users in one of the following ways: 
-- Invite new users or existing users to a team or project  
-- Add new users or existing users to a project-level security group 
-- Add new users to an organization and optionally specify the projects they belong to. To learn how, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md). 
-
-When you invite new users&mdash;ones not recognized by your organization or collection&mdash;using the first two methods, they automatically become members of the Contributors group for the project they were added to. They also automatically become members of the organization or collection that hosts the project. The system automatically assigns an access level to the user. To modify the access level, you can change it from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).
-
 
 ::: moniker range="= azure-devops"
 
