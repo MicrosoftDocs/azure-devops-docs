@@ -15,8 +15,7 @@ ms.date: 06/15/2021
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-You add users to a team or project so they can contribute to the team and project. Adding them to a team or project automatically adds them to the Contributors group for the project. As a member of the Contributors group, they automatically are granted permissions to most features needed to contribute. By adding them to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
-
+You add users to a team or project so they can contribute to the team and project. Adding them to a team or project automatically adds them to the Contributors group for the project. Members of the Contributors group have permissions to most features needed to contribute. By adding them to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
 
 If you're new to Azure DevOps, you may want to familiarize yourself with the information provided in these articles: 
 
@@ -31,7 +30,7 @@ You add projects to an organization or project collection and you add teams to p
 
 ## Supported options for adding users 
 
-Depending on the interface you use, you can specify different options for adding new or existing users to teams or projects.  
+Depending on the interface you use, you can specify different options for adding new or existing users to teams or projects. Team and project administrators are able to add new and existing users to a team or project, unless prohibited by the 
 
 
  
@@ -141,7 +140,7 @@ When you invite new users&mdash;ones not recognized by your organization or coll
       `az devops user` CLI
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and and send an invite. Must specify the access level. To learn more, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md#add-users-to-your-organization&tabs=azure-devops-cli).  
+      Add new users to an organization and and send an invite. Must specify the access level. To learn more, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md#add-users-to-your-organization).  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -229,6 +228,7 @@ Team administrators can add users to their team from the Team Members widget add
 	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
 
 2. Enter the user account name or address. You can add several email addresses by separating them with a semicolon (;).   
+
 	:::row:::
 	   :::column span="":::
 	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. Choose the entry listed under **Add users** to complete the entry.   
@@ -245,7 +245,9 @@ Team administrators can add users to their team from the Team Members widget add
 	      :::image type="content" source="media/add-users/invite-members-known-user.png" alt-text="Invite members to a team dialog, enter a known user account.":::
 	   :::column-end:::
 	:::row-end:::
-2. Complete the invitation. 
+
+2. Complete the invitation.  
+
 	:::row:::
 	   :::column span="":::
 	      When the user is unknown, you'll get a notification that an access level must be assigned. To complete the invitation, choose **Add**.    
@@ -264,6 +266,7 @@ Team administrators can add users to their team from the Team Members widget add
 	:::row-end:::
 
 1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+
 	:::row:::
 	   :::column span="":::
 	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
@@ -281,6 +284,7 @@ Team administrators can add users to their team from the Team Members widget add
 	   :::column-end:::
 	:::row-end:::
 	:::row:::
+	   :::column span="":::
 	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
 	   :::column-end:::
 	   :::column span="":::
@@ -434,6 +438,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
 
 2. Enter the user account name or address. You can add several email addresses by separating them with a semicolon (;).   
+
 	:::row:::
 	   :::column span="":::
 	      If you're adding a new user not known by the organization or collection, enter the email addresses (Microsoft accounts) or GitHub IDs for the users. Choose the entry listed under **Add users** to complete the entry. Optionally, you can select one or more teams to add the user to. To complete the invitation, choose **Add**.       
@@ -452,6 +457,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 
 1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+
 	:::row:::
 	   :::column span="":::
 	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
