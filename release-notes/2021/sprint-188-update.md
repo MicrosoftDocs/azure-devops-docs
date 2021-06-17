@@ -3,7 +3,7 @@ title: New policies for personal access tokens
 author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
-ms.date: 06/16/2021
+ms.date: 06/17/2021
 description: In this sprint, we added new policies to restrict scope and lifespan of personal access tokens (PAT). 
 ---
 
