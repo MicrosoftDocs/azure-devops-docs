@@ -144,6 +144,7 @@ Team and project administrators can add existing users to their team or project.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
       Azure Active Directory Administrators
@@ -155,7 +156,8 @@ Team and project administrators can add existing users to their team or project.
       Users you add to Azure Active Directory that is connected to Azure DevOps are added as members of the Project Collection Valid Users group. To learn more, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md). 
    :::column-end:::
 :::row-end:::
-::: moniker range="azure-devops"
+::: moniker-end
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="1":::
       Active Directory Administrators
@@ -430,9 +432,41 @@ As a member of the Project Administrators group, you can add members to a projec
 	   :::column-end:::
 	:::row-end:::
 
+1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-success.png" alt-text="Screenshot of notification success message. ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure.png" alt-text="Screenshot of notification failure message. ":::  
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	      A success message indicates the status of adding the user to the system. 
+	   :::column-end:::
+	   :::column span="":::
+	      A failure message indicates why the addition of the user failed. 
+	   :::column-end:::
+	:::row-end:::
+	:::row:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
+	   :::column-end:::
+	   :::column span="":::
+	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
+	   :::column-end:::
+	:::row-end:::
+ 
+1. Finishing up, TBD. 
+
+<a id="project-permissions" />
+
+### Add users to a project security group
+
 
 #### [Preview page](#tab/preview-page)
-
 
 ::: moniker range="azure-devops"
 
