@@ -1,5 +1,5 @@
 ---
-title: deploy to IoT edge devices 
+title: Deploy to IoT Edge devices 
 description: Set up a release pipeline to IoT Hub with Azure Pipelines
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.topic: quickstart
@@ -11,7 +11,7 @@ monikerRange: azure-devops
 
 # Automatically deploy to IoT edge devices 
 
-In this tutorial, we will learn how to build an Azure Internet of Things (IoT) solution, push the created module images to Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT edge devices.
+In this tutorial, we will learn how to build an Azure Internet of Things (IoT) solution, push the created module images to Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT Edge devices.
 
 ## Prerequisites
 
@@ -130,10 +130,10 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku Basic -registryLocation YOUR_REGISTRY_LOCATION</td></tr>
    </table>
 
-    :::image type="content" source="./media/arm-template-deployment-task.png" alt-text="Configure the arm template deployment task":::
+    :::image type="content" source="./media/arm-template-deployment-task.png" alt-text="Configure the ARM template deployment task":::
 
-> [!TIP]
-> You must use quotation marks when overriding the template parameters to avoid getting the "One of the deployment parameters has an empty key..." error. Example: *-registryName "iotDemoContainerRegistry" -registrySku "Standard" -registryLocation "West US"*
+   > [!TIP]
+   > You must use quotation marks when overriding the template parameters to avoid getting the "One of the deployment parameters has an empty key..." error. Example: *-registryName "iotDemoContainerRegistry" -registrySku "Standard" -registryLocation "West US"*
 
 1. Select your pipeline, and then select **Edit** to edit your pipeline. Select **+** in the **Agent job 1**, and then search for the **Azure IoT Edge** task. Select **Add** to add the step to build the module images.  
 
