@@ -10,6 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # View release progress and test summary
 
+Azure Pipelines provides a quick and easy way to check the status of your deployment and test results right from your pipeline definition page. The user interface provides a live update of deployment progress and easy access to logs for more details.
 
 ## Visualize release progress
 
@@ -70,7 +71,7 @@ The build results view provides insights into the multiple components that make 
 
 ## Review test summary
 
-During test execution, a test might spawn multiple instances of tests that contribute to the overall outcome. A few examples include: tests that rerun due to failures, tests composed of an ordered combination of other tests (e.g. ordered test), or tests having different instances based on provided input parameter (data-driven tests). Since these tests are related they need to be reported together with the overall outcome derived based on the individual test outcomes. The summary page provides insights on the result of the test runs related to your pipeline.
+During test execution, a test might spawn multiple instances of tests that contribute to the overall outcome. A few examples include: tests that rerun due to failures, tests composed of an ordered combination of other tests (for example, ordered test), or tests having different instances based on provided input parameter (data-driven tests). Since these tests are related, they need to be reported together with the overall outcome derived based on the individual test outcomes. The summary page provides insights on the result of the test runs related to your pipeline.
 
 :::image type="content" source="media/test-results.png" alt-text="Test results summary":::
 
