@@ -348,7 +348,6 @@ As a member of the Project Administrators group, you can add members to a projec
 	      A failure message indicates why the addition of the user failed. 
 	   :::column-end:::
 	:::row-end:::
-
 	:::row:::
 	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
 	   :::column-end:::
@@ -357,7 +356,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	   :::column-end:::
 	:::row-end:::
  
- 
+1. Finishing up --- TBD. 
 
 
 #### [Security group, Preview page](#tab/preview-page)
