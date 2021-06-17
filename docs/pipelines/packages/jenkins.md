@@ -3,7 +3,7 @@ title: Publish Packages with Jenkins & Azure Artifacts
 ms.custom: seodec18
 description: Working with feeds in Jenkins-CI
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
-ms.date: 08/10/2016
+ms.date: 06/17/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -69,7 +69,7 @@ The easiest way to use the Azure Artifacts NuGet service is by adding the [Micro
   * Commit this change to your repo.
 
 ![Add your feed URL to nuget.config](media/nugetconfig.png)
-* [Generate a PAT (personal access token)](/azure/devops/release-notes/index) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
+* [Generate a PAT (personal access token)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page#create-a-pat) for your user account. This PAT will allow the Jenkins job to authenticate to Azure Artifacts as you, so be sure to protect your PAT like a password.
 * Save your feed URL and PAT to a text file for use later in the walkthrough.
 
 
