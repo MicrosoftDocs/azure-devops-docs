@@ -37,13 +37,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
 
 
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       **Level**
    :::column-end:::
    :::column span="1":::
       **Required permissions**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       **Interface**
    :::column-end:::
    :::column span="2":::
@@ -51,13 +51,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Team
    :::column-end:::
    :::column span="1":::
       Team Administrators
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       Team Members dashboard widget
    :::column-end:::
    :::column span="2":::
@@ -65,42 +65,42 @@ Here are all the ways you can add to Azure DevOps and the options they support.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Team
    :::column-end:::
    :::column span="1":::
       Team Administrators
    :::column-end:::
-   :::column span="1":::
-      **Project Settings>Teams>Team>Members** page
+   :::column span="1.25":::
+      **Project Settings>Teams>Team>Members**  
    :::column-end:::
    :::column span="2":::
       Add new or existing users to a team, or remove a member. Send new users an invite. 
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Project
    :::column-end:::
    :::column span="1":::
       Project Administrators
    :::column-end:::
-   :::column span="1":::
-      Project **Summary** page, **Invite** feature
+   :::column span="1.25":::
+      Project **Summary** page, **Invite**  
    :::column-end:::
    :::column span="2":::
       Add new or existing users and send an invite. Optionally add to one or more teams.   
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Project
    :::column-end:::
    :::column span="1":::
       Project Administrators
    :::column-end:::
-   :::column span="1":::
-      **Project Settings>Permissions>Groups>Group** **Members** page
+   :::column span="1.25":::
+      **Project Settings>Permissions>Groups>Group** **Members**  
    :::column-end:::
    :::column span="2":::
       Add new or existing users to a security group, or remove a user. By adding to a Team group, you effectively add them to a team.   
@@ -108,13 +108,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Organization
    :::column-end:::
    :::column span="1":::
       Project Collection Administrators
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       **Organization Settings>Users**   
    :::column-end:::
    :::column span="2":::
@@ -122,13 +122,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Organization
    :::column-end:::
    :::column span="1":::
       Project Collection Administrators
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       `az devops user` CLI
    :::column-end:::
    :::column span="2":::
@@ -137,13 +137,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
 :::row-end:::
 ::: moniker-end
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Organization
    :::column-end:::
    :::column span="1":::
       Azure Active Directory Administrators
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       Azure Active Directory
    :::column-end:::
    :::column span="2":::
@@ -151,13 +151,13 @@ Here are all the ways you can add to Azure DevOps and the options they support.
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="1":::
+   :::column span=".75":::
       Collection
    :::column-end:::
    :::column span="1":::
       Active Directory Administrators
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.25":::
       Active Directory or Windows Group
    :::column-end:::
    :::column span="2":::
@@ -461,13 +461,14 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 	:::row:::
 	   :::column span="":::
-	     A success message indicates the status of adding the user to the system. 
+	      A success message indicates the status of adding the user to the system. 
 	   :::column-end:::
 	   :::column span="":::
 	      A failure message indicates why the addition of the user failed. 
 	   :::column-end:::
 	:::row-end:::
 	:::row:::
+	   :::column span="":::
 	      :::image type="content" source="media/add-users/summary-invite-notifications-success.png" alt-text="Notification dialog of Success. "::: ":::  
 	   :::column-end:::
 	   :::column span="":::
