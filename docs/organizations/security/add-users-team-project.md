@@ -52,13 +52,10 @@ Team and project administrators can add existing users to their team or project.
  
  
 :::row:::
-   :::column span=".75":::
-      **Level**
-   :::column-end:::
    :::column span="1":::
-      **Required permissions**
+      **Administrator level**
    :::column-end:::
-   :::column span="1.25":::
+   :::column span="2":::
       **Interface**
    :::column-end:::
    :::column span="2":::
@@ -67,14 +64,11 @@ Team and project administrators can add existing users to their team or project.
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span=".75":::
-      Team
-   :::column-end:::
    :::column span="1":::
-      Team Administrators
+      Team administrators
    :::column-end:::
-   :::column span="1.25":::
-      Team Members dashboard widget
+   :::column span="2":::
+      [Team Members dashboard widget](#widget)
    :::column-end:::
    :::column span="2":::
       Add new or existing users to a team. Send new users an invite.
@@ -82,14 +76,11 @@ Team and project administrators can add existing users to their team or project.
 :::row-end:::
 ::: moniker-end
 :::row:::
-   :::column span=".75":::
-      Team
-   :::column-end:::
    :::column span="1":::
       Team Administrators
    :::column-end:::
-   :::column span="1.25":::
-      **Project Settings>Teams>Team>Members**  
+   :::column span="2":::
+      [**Project Settings>Teams>Team>Members**](#teams-page)  
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -102,14 +93,11 @@ Team and project administrators can add existing users to their team or project.
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span=".75":::
-      Project
-   :::column-end:::
    :::column span="1":::
       Project Administrators
    :::column-end:::
-   :::column span="1.25":::
-      Project **Summary** page, **Invite**  
+   :::column span="2":::
+      [Project **Summary** page, **Invite**](#summary-page)  
    :::column-end:::
    :::column span="2":::
       Add new or existing users and send an invite. Optionally add to one or more teams.   
@@ -117,77 +105,62 @@ Team and project administrators can add existing users to their team or project.
 :::row-end:::
 ::: moniker-end
 :::row:::
-   :::column span=".75":::
-      Project
-   :::column-end:::
    :::column span="1":::
       Project Administrators
    :::column-end:::
-   :::column span="1.25":::
-      **Project Settings>Permissions>Groups>Group** **Members**  
+   :::column span="2":::
+      [**Project Settings>Permissions>Groups>Group** **Members**](#project-permissions)  
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
       Add new or existing users to a security group, or remove a user. By adding to a Team group, you effectively add them to a team.   
       ::: moniker-end
       ::: moniker range="< azure-devops"
-      Add new or existing users to a team, or remove a member.  
+      Add existing users to a project, or remove a user from a project.  
       ::: moniker-end
    :::column-end:::
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span=".75":::
-      Organization
-   :::column-end:::
    :::column span="1":::
       Project Collection Administrators
    :::column-end:::
-   :::column span="1.25":::
-      **Organization Settings>Users**   
+   :::column span="2":::
+      [**Organization Settings>Users**](../accounts/add-organization-users.md)   
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects.  Can use Group rules to further manage groups being added. To learn how, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md). 
+      Add new users to an organization and send an invite. Must specify the access level. Optionally add them to select projects. Can use Group rules to further manage groups being added.  
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span=".75":::
-      Organization
-   :::column-end:::
    :::column span="1":::
       Project Collection Administrators
    :::column-end:::
-   :::column span="1.25":::
-      `az devops user` CLI
+   :::column span="2":::
+      [`az devops user` CLI]((../accounts/add-organization-users.md#add-users-to-your-organization))
    :::column-end:::
    :::column span="2":::
-      Add new users to an organization and and send an invite. Must specify the access level. To learn more, see [Add users and manage access in Azure DevOps](../accounts/add-organization-users.md#add-users-to-your-organization).  
+      Add new users to an organization and and send an invite. Must specify the access level.  
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 :::row:::
-   :::column span=".75":::
-      Organization
-   :::column-end:::
    :::column span="1":::
       Azure Active Directory Administrators
    :::column-end:::
-   :::column span="1.25":::
+   :::column span="2":::
       Azure Active Directory
    :::column-end:::
    :::column span="2":::
-      Users you add to Azure Active Directory connected to Azure DevOps are added as members of the Project Collection Valid Users group.  
+      Users you add to Azure Active Directory that is connected to Azure DevOps are added as members of the Project Collection Valid Users group. To learn more, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span=".75":::
-      Collection
-   :::column-end:::
    :::column span="1":::
       Active Directory Administrators
    :::column-end:::
-   :::column span="1.25":::
+   :::column span="2":::
       Active Directory or Windows Group
    :::column-end:::
    :::column span="2":::
@@ -195,8 +168,6 @@ Team and project administrators can add existing users to their team or project.
    :::column-end:::
 :::row-end:::
 ::: moniker-end
- 
-
 
 
 ## Prerequisites
@@ -206,8 +177,6 @@ Team and project administrators can add existing users to their team or project.
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
 
-
-
 <a id="add-team-members"> </a>
 
 ## Add users to a team
@@ -215,18 +184,11 @@ Team and project administrators can add existing users to their team or project.
 Several Agile tools, like capacity planning, team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts added as members of a team to support planning activities or sending alerts. Also, you can create a query to list work items based on assignment to a Team Group. To learn more, see [About teams and Agile tools](../settings/about-teams-and-settings.md). 
 
 As a team administrator, you can add members from the **Team Members** dashboard widget or the **Project settings> Teams** page for the team.  
+ 
 
-<a id="add-team-members-team-services" />
+<a id="widget"> </a>
 
-::: moniker range="= azure-devops"
-
-> [!NOTE]   
-> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-
-#### [Summary or Widget](#tab/summary-widget)
+### Add users from the Team Members widget  
 
 Team administrators can add users to their team from the Team Members widget added to a dashboard. To add a widget to a dashboard, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md).  
 
@@ -298,8 +260,20 @@ Team administrators can add users to their team from the Team Members widget add
 	      :::image type="content" source="media/add-users/notification-failure-outside-directory.png" alt-text="Notification dialog of failure. ":::
 	   :::column-end:::
 	:::row-end:::
- 
-#### [Security group, Preview page](#tab/preview-page)
+
+<a id="teams-page"> </a>
+<a id="add-team-members-team-services" />
+
+### Add users from the Project Settings> Teams > Members page  
+
+::: moniker range="= azure-devops"
+
+> [!NOTE]   
+> To enable the preview feature, **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+
+::: moniker-end
+
+#### [Preview page](#tab/preview-page)
 
 ::: moniker range="azure-devops"
 
@@ -342,10 +316,10 @@ Team administrators can add users to their team from the Team Members widget add
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-Choose the **Current page** tab for information on adding a user to a team. 
+Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
 ::: moniker-end
 
-#### [Security group, Current page](#tab/current-page)
+#### [Current page](#tab/current-page)
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -389,7 +363,6 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-
 ::: moniker range="<= tfs-2018"
 
 1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
@@ -426,15 +399,9 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 As a member of the Project Administrators group, you can add members to a project from the **Summary** page or the **Project settings> Permissions** page by adding them to a security group. From the project **Summary** page, you can choose to add the user account to one or more teams. 
 
-::: moniker range="azure-devops"
+<a name="summary-page"></a>
 
-> [!NOTE]   
-> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
-::: moniker-end
-
-
-#### [Summary or Widget](#tab/summary-widget)
+### Add users from the Summary page 
 
 1. Open the **Project>Summary** page, and choose **Invite**.  
 
@@ -464,7 +431,15 @@ As a member of the Project Administrators group, you can add members to a projec
 	:::row-end:::
 
 
-#### [Security group, Preview page](#tab/preview-page)
+#### [Preview page](#tab/preview-page)
+
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -516,11 +491,11 @@ As a member of the Project Administrators group, you can add members to a projec
 
 ::: moniker range="< azure-devops"
 
-Choose the **Current page** tab for information on adding a user to a project. 
+Choose the **Current page** tab for information on adding a user to a project. The Project Permissions Settings Page preview feature is only available for Azure DevOps Services at this time. 
 
 ::: moniker-end
 
-#### [Security group, Current page](#tab/current-page) 
+#### [Current page](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -612,13 +587,15 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
+---
+
 ::: moniker range=">= azure-devops-2020"
 
 ## List team members or team details  
 
 From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list) command.
 
-| [List team members](#list-members) | [Show team details](#show-details)
+[List team members](#list-members) &#124; [Show team details](#show-details)
 
 <a id="list-members" /> 
 
@@ -727,7 +704,7 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 ## Related articles
 
-* To view permissions for yourself or another user, see [View permissions](view-permissions.md).
+* [View permissions for yourself or others](view-permissions.md).
 * [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
 * [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
