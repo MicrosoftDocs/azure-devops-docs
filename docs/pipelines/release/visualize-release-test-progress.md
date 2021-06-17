@@ -48,4 +48,13 @@ During test execution, a test might spawn multiple instances of tests that contr
 
 :::image type="content" source="media/test-results.png" alt-text="Test results summary":::
 
+> [!NOTE]
+> Metrics in the test summary section (e.g. Total tests, Passed, etc.), are computed using the root level of the hierarchy rather than each individual iteration of the tests.
+
 ::: moniker-end
+
+## Related articles
+
+- [Release pipelines overview](./index.md)
+- [Classic release pipelines](./define-multistage-release-process.md)
+- [Stage templates in Azure Pipelines](./env-templates.md)
