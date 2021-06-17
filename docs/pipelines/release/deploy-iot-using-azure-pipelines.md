@@ -9,7 +9,7 @@ ms.date: 04/25/2019
 monikerRange: azure-devops
 ---
 
-# Automatically deploy to IoT edge devices 
+# Automatically deploy to IoT Edge devices 
 
 In this tutorial, we will learn how to build an Azure Internet of Things (IoT) solution, push the created module images to Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT Edge devices.
 
