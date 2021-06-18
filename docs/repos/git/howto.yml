@@ -59,11 +59,10 @@ sections:
           I've made changes to some files and now I can't checkout to a different branch or rebase my work.
         answer: |
           Checking out to a different branch in Git will affect the state of files on your filesystem as Git uses the commit history to make sure you are working with the files that represent the state of your branch. If you attempt to change branches while you have uncommitted changes, those changes would be overwritten during the checkout. Git doesn't want you to accidentally lose your changes, so it prevents the checkout from happening. You can resolve this by:
-          ---
+          
           - Abandoning the changes and return to the most recent commit. See [undoing changes in Git](undo.md) for instructions on how to roll back to the most recent commit.  
           - Committing the changes. See [saving your work in Git with commits](commits.md). 
           - [Stashing](howto.yml#faq) your current work, saving the changes for later and cleaning up the workspace to the last commit.    
-          ---
 
       - question: | 
           I've done some work but need to swap to something else. How can I save my work for later without committing the changes?
