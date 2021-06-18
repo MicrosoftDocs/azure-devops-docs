@@ -1,9 +1,10 @@
 ---
 title: Azure Pipelines YAML pipeline editor guide
-ms.custom: seodec18
 description: Learn how to author and edit pipelines with the YAML pipeline editor
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2021
+author: steved0x
+ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
 ---
 
