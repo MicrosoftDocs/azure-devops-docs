@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2018'
 
 **Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments; for example, "Dev", "Test", or "Production" environment. In effect, a deployment group is just another grouping of agents, much like an [agent pool](../../agents/pools-queues.md). 
+A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments; for example, "Dev", "Test", or "Production" environment. In effect, a deployment group is just another grouping of agents, much like an agent pool.
 
-Deployment groups are only available with Classic release pipelines and are different from [deployment jobs](../../process/deployment-jobs.md). A deployment job is a collection of deployment-related steps defined in a YAML file to accomplish a specific task. 
+Deployment groups are only available with Classic release pipelines and are different from deployment jobs. A deployment job is a collection of deployment-related steps defined in a YAML file to accomplish a specific task. 
 
 With deployment groups you can:
 
@@ -28,17 +28,23 @@ With deployment groups you can:
 
 ## Create a deployment group
 
-You define groups on the **Deployment Groups** tab of the **Azure Pipelines**
-section, and install the agent on each server in the group. After you prepare your
-target servers, they appear in the **Deployment Groups** tab. The list indicates if a
-server is available, the tags you assigned to each server, and the latest
-deployment to each server.
+A deployment group is a set of virtual machines with deployment agents. Every VM of the deployment group interacts with Azure Pipelines to coordinate the deployment tasks. 
 
-The tags you assign allow you to limit deployment to specific servers when 
-the deployment group is used in a [Deployment group job](../../process/deployment-group-phases.md).
-Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
-You manage the security for a deployment group by
-[assigning security roles](../../agents/pools-queues.md#security).
+1. From with your project, select **Pipelines** > **Deployment groups**.
+
+    :::image type="content" source="media/pipelines-deployment-groups.png" alt-text="Access deployment groups":::
+
+1. Select **Add a deployment group**
+
+    :::image type="content" source="media/add-deployment-groups.png" alt-text="Add new deployment groups":::
+ 
+1. Enter a **Deployment group name** and then select **Create**. A registration script will be generated. Select the **Type of target to register** and then select **Copy script to the clipboard**.
+
+    :::image type="content" source="media/generated-script.png" alt-text="Create a deployment group - generated script":::
+
+1. Run the script from an elevated Powershell command prompt to register your target servers.
+
+    :::image type="content" source="media/register-servers.png" alt-text="Register deployment groups servers":::
 
 ## Deploy agents to a deployment group
 
