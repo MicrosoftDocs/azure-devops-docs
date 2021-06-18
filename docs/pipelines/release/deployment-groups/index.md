@@ -63,39 +63,29 @@ Every target server in the deployment group requires a deployment agent. You can
 
 You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut menu for a deployment group.  
  
-## Monitor releases for deployment groups
+## Monitor release status for deployment groups
 
-When release is executing, you see an entry in the live logs page
-for each server in the deployment group. After a release has completed,
-you can download the log files for every server to examine the deployments
-and resolve issues. To navigate quickly to a release pipeline or a release,
-use the links in the **Releases** tab.
+When a release pipeline is executing, you can view the live logs for each target server in your deployment group. After a release has completed, you can download the log files for every server to examine the deployments and debug any issues.
 
-## Share a deployment group
+:::image type="content" source="media/deployment-groups-release-summary.png" alt-text="Deployment groups release logs":::
 
-Each deployment group is a member of a **deployment pool**, and you can share
-the deployment pool and groups across projects if:
+## Share a deployment group with another project
 
-* The user sharing the deployment pool has [User permission](../../agents/pools-queues.md#security) for the pool containing the group.
-* The user sharing the deployment pool has permission to create a deployment group in the project where it is shared.
-* The project does not already contain a deployment group that is a member of the same deployment pool.
+Deployment groups can be shared with other projects in the same organization. 
 
-The tags you assign to each machine in the pool are scoped at project level,
-so you can specify a different tag for the same machine in each deployment group. 
+1. From within your project, select **Pipelines** > **Deployment groups**.
 
-### Add a deployment pool and group to another project 
+1. Select your deployment group and then select **Manage**.
 
-To manage a deployment pool, or to add an existing deployment pool and the groups it contains to another project,
-choose the **Manage** link in the **Agent Pool** section of the **Deployment Group** page.
+    :::image type="content" source="media/manage-deployment-groups.png" alt-text="Manage deployment groups":::
 
-:::image type="content" source="media/manage-deployment-group.png" alt-text="To edit an existing deployment group select Manage.":::
+1. Select a project from the list and then select **Save**.
 
-In the **Deployment Pools** page, select the projects for which you
-want the deployment group to be available, then save the changes.
+    :::image type="content" source="media/deployment-group-share-with-project.png" alt-text="Share a deployment group with a project":::
 
+1. You will now notice that there is a new Deployment Group in the project you just included.
 
-When you navigate to the **Deployment Groups** page in the target project(s), you
-will see the deployment group you added and you can assign project-specific machine tags as required.
+    :::image type="content" source="media/shared-deployment-group.png" alt-text="Shared new deployment group":::
 
 ### Create a new deployment pool
 
