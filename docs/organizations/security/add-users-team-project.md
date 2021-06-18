@@ -1,13 +1,13 @@
 ---
-title: Add users to a team or project
-description: Quickstart guide to add users to a group, project, or team 
+title: Add users or groups to a team or project
+description: How to guide to add users or groups to a team or project 
 ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: how-to
 monikerRange: '<= azure-devops'
-ms.date: 06/15/2021
+ms.date: 06/18/2021
 ---
 
 
@@ -277,8 +277,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 ## Add users or groups to a team 
 
-Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can only add existing users or security groups. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
-
+Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can view, add, or remove users and security groups to/from a team. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
 
 ::: moniker range="= azure-devops"
 
@@ -368,14 +367,6 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
-5. To remove members, return to this page, highlight the user name and choose **Remove**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
-
-   > [!NOTE]
-   > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
 6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
 ::: moniker-end
@@ -397,14 +388,65 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
-4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
+5. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
+
+::: moniker-end
+
+---
+
+
+## Remove users or groups to a team 
+
+From the team's **Members** page, you can remove members. 
+ 
+#### [Preview page](#tab/preview-page)
+
+::: moniker range="azure-devops"
+
+You can toggle between direct or expanded membership views. The **Direct Members** view displays users and groups that have been added to the team. The **Expanded Members** view replaces any Azure DevOps groups with the members that belong to those groups. Azure Active Directory or Active Directory groups aren't expanded.   
+
+1. To remove members, open the team's **Members** page, choose **Direct Members**, check the checkbox of the user you want to remove, choose :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options**, and then choose **Remove**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile page, remove a team member, new nav](media/add-users/direct-members-remove.png)   
+
+   > [!TIP]
+   > To remove a team administrator as a team member, you must first remove them as an administrator. 
+
+1. Confirm the removal by choosing **Delete** in the confirmation message.  
+
+	:::image type="content" source="media/add-users/remove-user-confirmation.png" alt-text="Delete member dialog confirmation.":::
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+Choose the **Current page** tab for information on adding a user to a team. The **New Teams Page** preview feature is only available for Azure DevOps Services at this time. 
+::: moniker-end
+
+#### [Current page](#tab/current-page)
+
+::: moniker range=">= azure-devops-2019"
+
+You can toggle between direct or expanded membership views. The **direct** view displays users and groups that have been added to the team. The **expanded** view replaces any Azure DevOps groups with the members that belong to those groups. Azure Active Directory or Active Directory groups aren't expanded.   
+
+5. To remove members, open the team's **Members** page, choose **direct** membership, return to this page, highlight the user name and choose **Remove**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
+
+   > [!NOTE]
+   > To remove a team administrator as a team member, you must first remove them as an administrator. 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+ 
+1. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
 	![Team profile page, remove a team member, highlight and remove](media/add-users/team-page-remove-team-member.png)
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
-
-5. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
 
 ::: moniker-end
 
