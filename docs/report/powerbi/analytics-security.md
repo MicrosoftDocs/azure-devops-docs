@@ -60,6 +60,8 @@ You grant or restrict permissions to a user by setting one or more permissions f
 
 	:::image type="content" source="media/permissions/set-analytics-permissions.png" alt-text="Screenshot of user project-level permissions, Analytics permissions changed.":::
 
+1. Navigate away from the permissions page when done. Changes you made are automatically saved.  
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -82,7 +84,7 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 	To learn more about working with permissions, see [Security & identity](../../organizations/security/about-security-identity.md).
 
-
+1. Choose **Save changes** when done. 
 --- 
 
 

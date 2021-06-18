@@ -28,6 +28,6 @@ All members of the Contributors group for your project can use **Shared** views 
    > [!div class="mx-imgBorder"]
    > ![Manage permissions](/azure/devops/report/powerbi/media/editable-views/view-permissions.png)
 
-	Choose **Save changes ** when done. 
+	Choose **Save changes** when done. 
 	::: moniker-end
  
