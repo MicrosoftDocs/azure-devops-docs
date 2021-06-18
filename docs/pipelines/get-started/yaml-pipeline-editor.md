@@ -3,13 +3,13 @@ title: Azure Pipelines YAML pipeline editor guide
 ms.custom: seodec18
 description: Learn how to author and edit pipelines with the YAML pipeline editor
 ms.topic: conceptual
-ms.date: 06/15/2021
+ms.date: 06/18/2021
 monikerRange: '>=azure-devops-2019'
 ---
 
 # YAML pipeline editor
 
-Azure Pipelines provides a YAML pipeline editor that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and a task assistant to provide guidance when editing a pipeline.
+Azure Pipelines provides a YAML pipeline editor based on the [Monaco Editor](https://github.com/microsoft/monaco-editor) that you can use to author and edit your pipelines from the Azure DevOps portal. The editor provides tools like Intellisense support and a task assistant to provide guidance when editing a pipeline.
 
 :::moniker range="azure-devops-2019"
 
@@ -102,6 +102,20 @@ Edit the inserted YAML to make additional configuration changes to the task.
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added.png" alt-text="Task assistant added.":::
 
 You can edit the YAML to make additional configuration changes to the task, or you can choose **Settings** above the task in the YAML pipeline editor to configure the inserted task in the task assistant.
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2020"
+
+### Validate and Download full YAML
+
+When editing a YAML pipeline, you can validate your changes by choosing **More actions**, **Validate**. You can use this feature to catch syntax errors in your pipeline that will prevent it from starting.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
+
+You can also [preview the fully parsed YAML document without committing or running the pipeline](/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline) by choosing **More actions**, **Download full YAML**.
+
+**Download full YAML** calls the [Runs](/rest/api/azure/devops/pipelines/runs/run%20pipeline?view=azure-devops-rest-6.1&preserve-view=true) Azure DevOps REST API for Azure Pipelines, and initiates a download of the rendered YAML from the editor.
 
 :::moniker-end
 
