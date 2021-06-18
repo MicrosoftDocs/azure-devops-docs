@@ -106,7 +106,7 @@ https://*.blob.core.windows.net
 https://*.visualstudio.com
 ```
 
-Also allow all IP addresses in the "name": "Storage.{your region}" section of the following file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
+Also allow all IP addresses in the "name": "Storage.{region}" section of the following file (updated weekly) : [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519). {region} is the same Azure Geography as your organization.
 
 ### NuGet connections
 
