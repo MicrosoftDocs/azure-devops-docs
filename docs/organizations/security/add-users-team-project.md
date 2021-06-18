@@ -89,7 +89,7 @@ Team and project administrators can add existing users to their team or project.
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
-      Add new or existing users to a team, or remove a member. Send new users an invite. 
+      Add new or existing users to a team, or remove a member. 
       ::: moniker-end
       ::: moniker range="< azure-devops"
       Add new or existing users to a team, or remove a member.  
@@ -105,7 +105,7 @@ Team and project administrators can add existing users to their team or project.
       [Project **Summary** page, **Invite**](#summary-page)  
    :::column-end:::
    :::column span="2":::
-      Add new or existing users and send an invite. Optionally add to one or more teams.   
+      Add new or existing users. Send new users an invite. Optionally add users to one or more teams.   
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -652,6 +652,24 @@ Choose the **Current page** tab for information on adding a user to a project. T
 ::: moniker-end
 
 ---
+
+::: moniker range="azure-devops"
+
+##  Manage user or reissue an invitation 
+
+Project Collection Administrators can update user assignments and reissue an invitation. The various options they have are:
+- Change the access level
+- Manage user - add them to select projects 
+- Resend invite
+- Remove direct assignments
+- Remove from organization  
+
+:::image type="content" source="media/add-users/users-page-manage-options.png" alt-text="Screenshot of Organization Settings>Users page, Manage user options. ":::
+
+To learn more, see [Add account users for Azure DevOps](../accounts/add-organization-users.md).
+
+::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2020"
 
