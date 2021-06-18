@@ -34,7 +34,7 @@
   - name: Add users & manage access 
     href: ../accounts/add-organization-users.md
     displayName: create, new, identity, direct, assignment
-  - name: Add users to a project or team
+  - name: Add users or groups to a team or project
     href: add-users-team-project.md
     displayName: create, new, account, default, custom, access, permission
   - name: Remove user accounts
@@ -102,7 +102,7 @@
   - name: Change access levels 
     href: change-access-levels.md
     displayName: update, security, permission, project, collection
-  - name: Add users to a project or team
+  - name: Add users or groups to a team or project
     href: add-users-team-project.md
     displayName: create, new, account, default, custom, access, permission
   - name: Remove user accounts
