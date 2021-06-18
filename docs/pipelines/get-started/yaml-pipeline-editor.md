@@ -166,11 +166,11 @@ For more information on working with pipeline variables, see [Define variables](
 
 Azure Pipelines supports a YAML editor which can be handy when editing your pipeline. Previously, the editor did not support templates. Authors of YAML pipelines could not get intellisense assistance when using a template. With this release, we are previewing support for templates in the YAML editor. To enable this preview, [navigate to preview features](../../project/navigation/preview-features.md) in your Azure DevOps organization, and enable **YAML templates editor**.
 
-As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. When you type in the name of your template, you will be prompted to validate your template. Once validated, the YAML editor understands the schema of the template including the input parameters.
+As you edit your main Azure Pipelines YAML file, you can either _include_ or _extend_ a template. As you type in the name of your template, you may be prompted to validate your template. Once validated, the YAML editor understands the schema of the template including the input parameters.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-templates.png" alt-text="YAML template.":::
 
-Post validation, you can choose to navigate into the template. You will be able to make changes to the template using all the features of the YAML editor.
+Post validation, you can navigate into the template by choosing **View template**, which opens the template in a new browser tab. You will be able to make changes to the template using all the features of the YAML editor.
 
 > [!IMPORTANT]
 > This feature is in preview. There are known limitations. If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In addition, you cannot create a new template from the editor. You can only use or edit existing templates.
