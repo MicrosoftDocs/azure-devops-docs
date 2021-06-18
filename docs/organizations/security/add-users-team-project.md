@@ -157,7 +157,7 @@ Team and project administrators can add existing users to their team or project.
       Active Directory or Windows Group
    :::column-end:::
    :::column span="2":::
-      Users you add to Active Directory or Windows Group connected to Azure DevOps are added as members of the Project Collection Valid Users group. They have access to all projects within a project collection. To learn more, see [Set up groups for use in Azure DevOps on-premises](/azure/devops/server/admin/setup-ad-groups?view=azure-devops-2020&preserve). 
+      Users you add to Active Directory or Windows Group connected to Azure DevOps are added as members of the Project Collection Valid Users group. They have access to all projects within a project collection. To learn more, see [Set up groups for use in Azure DevOps on-premises](/azure/devops/server/admin/setup-ad-groups?view=azure-devops-2020&preserve-view=true). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -267,6 +267,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 ::: moniker-end
 
 <a id="teams-page"> </a>
+<a id="add-team-members"> </a>
 <a id="add-team-members-team-services" />
 <a id="add-users-to-a-team"> </a>
 
