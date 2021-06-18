@@ -196,7 +196,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
 
-2. For new users, enter their email address. For existing users, simply type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
+2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 	:::row:::
 	   :::column span="":::
 	      Choose the entry listed under **Add users** to complete the entry.  
@@ -230,7 +230,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	      :::image type="content" source="media/add-users/invite-members-dialog-add-info.png" alt-text="Invite members to a team dialog, Add new user account. ":::
 	   :::column-end:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/invite-members-dialog-complete-add.png" alt-text="Invite members to a team dialog, Add buttom.":::
+	      :::image type="content" source="media/add-users/invite-members-dialog-complete-add.png" alt-text="Invite members to a team dialog, Add button.":::
 	   :::column-end:::
 	:::row-end:::
 
@@ -266,7 +266,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	   :::column-end:::
 	:::row-end:::
 
-1. New users receive an email inviting them to sign into the project. Existing users don't receive any formal notification. 
+1. New users receive an email inviting them to sign in to the project. Existing users don't receive any formal notification. 
 
 ::: moniker-end
 
@@ -307,7 +307,7 @@ Add existing users or security groups to a team from the **Project settings> Tea
 	> [!div class="mx-imgBorder"]  
 	> ![Team Profile, choose Add, preview page](media/add-users/new-teams-page-add-member.png)   
 
-4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security groups, such as another team group or custom group, or Azure Active Directory group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
+4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security group&mdash;such as another team group, custom group, or Azure Active Directory group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
 	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Invite members to team dialog, choose user account.  ":::
 
@@ -424,19 +424,19 @@ As a member of the Project Administrators group, you can add members to a projec
 
 	:::image type="content" source="media/add-users/summary-invite-users.png" alt-text="Screenshot of Summary page, Invite button.":::
 
-2. For new users, enter their email address. For existing users, simply type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
+2. For new users, enter their email address. For existing users, type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
 
 	:::row:::
 	   :::column span="":::
 	      Choose the entry listed under **Add users** to complete the entry.   
 	   :::column-end:::
 	   :::column span="":::
-	      If you're adding a user known by the organization or collection, simply type the name or email address and then choose the name that appears to complete the entry.   
+	      If you're adding a user known by the organization or collection, type the name or email address and then choose the name that appears to complete the entry.   
 	   :::column-end:::
 	:::row-end:::
 	:::row:::
 	   :::column span="":::
-	      :::image type="content" source="media/add-users/summary-page-invite-dialog-new-unknown-user.png" alt-text="Invite members to a project dialog, unknown user, select teams to add.":::
+	      :::image type="content" source="media/add-users/summary-page-invite-dialog-new-unknown-user.png" alt-text="Invite members to a project dialog, unknown user.":::
 	   :::column-end:::
 	   :::column span="":::
 	      :::image type="content" source="media/add-users/summary-invite-known-user.png" alt-text="Invite members to a project dialog, enter a known user account.":::
@@ -498,7 +498,7 @@ As a member of the Project Administrators group, you can add members to a projec
 	   :::column-end:::
 	:::row-end:::
  
-1. New users receive an email inviting them to sign into the project. Existing users don't receive any formal notification. 
+1. New users receive an email inviting them to sign in to the project. Existing users don't receive any formal notification. 
 
 ::: moniker-end
 
