@@ -176,7 +176,8 @@ Post validation, you can choose to navigate into the template. You will be able 
 
 :::moniker-end
 
+## Next steps
 
-
-
-
+* [Learn how to navigate and view your pipelines](multi-stage-pipelines-experience.md)
+* [Create your first pipeline](../create-first-pipeline.md)
+* [Customize your pipeline](customize-pipeline.md)
