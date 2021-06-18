@@ -37,7 +37,7 @@ Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assis
 
 :::moniker range=">= azure-devops-2020"
 
-To access the YAML pipeline editor, choose **Pipelines** and select the pipeline to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](#multi-stage-pipelines-experience.md#pipelines-landing-page).
+To access the YAML pipeline editor, choose **Pipelines** and select the pipeline to edit. You can browse pipelines by **Recent**, **All**, and **Runs**. For more information, see [Pipelines landing page](multi-stage-pipelines-experience.md#pipelines-landing-page).
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-landing-page.png" alt-text="Azure Pipelines landing page.":::
 
