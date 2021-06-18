@@ -17,37 +17,44 @@ ms.date: 06/15/2021
 
 ::: moniker range="azure-devops"
 
-You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Azure Active Directory to manage users through security groups. However, to enable flexibility for all organization, the following operations are supported: 
+You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Azure Active Directory to add and manage new users through security groups. However, to enable flexibility for all size organizations, the following operations are supported: 
  
-- Team and project administrators can add new users to their team or project, unless the policy [Allow team and project administrators to invite new users](restrict-invitations.md) is disabled. 
+- Team and project administrators can add new users to their team or project, unless the policy [Allow team and project administrators to invite new users](restrict-invitations.md) is disabled. New users are ones that haven't been added to the organization. 
 - When adding new users through the team and project user interfaces, the system automatically assigns an access level to the user. 
 - Adding users to a team or project automatically adds them to the Contributors group for the project. Members of the Contributors group have permissions to most features needed to contribute.
-- By adding users to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
+- By adding users to a team, you make team-specific tools aware of them, such as the team security group, Team Members widget, and sprint capacity planning tools. 
+- Once users have been added to a project or organization, you can browse for their display name or user name (email alias) from any people-picker tool.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Active Directory or Windows Group to manage users through security groups. However, to enable flexibility for all organization, the following operations are supported: 
+You add users to a team or project so they can contribute to the team and project. For enterprise organizations with large user bases, we recommend you use Active Directory or Windows Group to manage users through security groups. However, to enable flexibility for all size organizations, the following operations are supported: 
 
 - Team and project administrators can add existing users to their team or project. Existing users are ones known to the project collection through Active Directory or Windows group. 
 - Adding users to a team or project automatically adds them to the Contributors group for the project. Members of the Contributors group have permissions to most features needed to contribute.
-- By adding users to a team, you also add them to team-specific tools, such as the team security group, Team Members widget, and sprint capacity planning tools. 
+- By adding users to a team, you make team-specific tools aware of them, such as the team security group, Team Members widget, and sprint capacity planning tools. 
+- Once users have been added to a project or organization, you can browse for their display name or user name (email alias) from any people-picker tool.
  
 ::: moniker-end
 
+You add projects to an organization or project collection and you add teams to projects. To learn more, see: 
+- [Create a project](../projects/create-project.md) 
+- [Add team, go from one default team to others](../settings/add-teams.md)
+
 [!INCLUDE [version-all](../../includes/version-selector-minimize.md)]
+
 
 ## Supported options for adding users 
 
 ::: moniker range="azure-devops"
 
-Depending on the interface you use, you can exercise different options for adding new or existing users to teams or projects. New users are ones that haven't been added to the organization. Once users have been added to a project or organization, you can browse for their display name or user name (email alias). 
+Depending on the interface you use, you can exercise different options for adding new or existing users to teams or projects. 
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-Team and project administrators can add existing users to their team or project. Existing users are ones that are known to a project collection through the Active Directory or Windows Group created for the server that hosts the on-premises Azure DevOps Server. Once users have been added to a collection, you can browse for their display name or user account (email alias). 
+Team and project administrators can add existing users to their team or project. Existing users are ones that are known to a project collection through the Active Directory or Windows Group created for the server that hosts the on-premises Azure DevOps Server.  
  
 ::: moniker-end
  
@@ -78,7 +85,7 @@ Team and project administrators can add existing users to their team or project.
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Team Administrators
+      Team administrators
    :::column-end:::
    :::column span="2":::
       [**Project Settings>Teams>Team>Members**](#teams-page)  
@@ -176,9 +183,6 @@ If you're new to Azure DevOps, you may want to familiarize yourself with the inf
 - [Default permissions and access quick reference](permissions-access.md)  
 - [About teams and Azure Boards tools](../settings/about-teams-and-settings.md) 
 
-You add projects to an organization or project collection and you add teams to projects. To learn more, see: 
-- [Create a project](../projects/create-project.md) 
-- [Add team, go from one default team to others](../settings/add-teams.md)
 
 <a id="widget"> </a>
 
@@ -193,13 +197,14 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	:::image type="content" source="media/add-users/team-member-widget.png" alt-text="Screenshot of Team Members widget added to a dashboard, plus icon.":::
 
 2. For new users, enter their email address. For existing users, simply type their name until it resolves as a known name to the system. You can add several email addresses or account names by separating them with a semicolon (;). 
-
 	:::row:::
 	   :::column span="":::
-	      Choose the entry listed under **Add users** to complete the entry.   
+	      Choose the entry listed under **Add users** to complete the entry.  
+	      > [!NOTE]  
+	      > Any valid email address is acceptable. When the user accepts the invitation and signs into Azure DevOps, they register their email address as a Microsoft account and choose a password.   
 	   :::column-end:::
 	   :::column span="":::
-	      If you're adding a user known by the organization or collection, simply type the name or email address and then choose the name that appears to complete the entry.   
+	      Choose the name that appears to complete the entry.   
 	   :::column-end:::
 	:::row-end:::
 	:::row:::
@@ -211,17 +216,13 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	   :::column-end:::
 	:::row-end:::
 
-	> [!NOTE]  
-	> Any valid email address is acceptable. When the user accepts the invitation and signs into Azure DevOps, they register their email address as a Microsoft account and choose a password.  
-
-2. Complete the invitation.  
-
+2. Complete the addition.  
 	:::row:::
 	   :::column span="":::
 	      When the user is unknown, you'll get a notification that an access level must be assigned. To complete the invitation, choose **Add**.    
 	   :::column-end:::
 	   :::column span="":::
-	      Choose **Add** to complete the invitation.     
+	      Choose **Add** to complete adding the user. Known users don't receive an invitation.     
 	   :::column-end:::
 	:::row-end:::
 	:::row:::
@@ -233,9 +234,9 @@ As a team administrator, you can add new or existing members from the **Team Mem
 	   :::column-end:::
 	:::row-end:::
 
-	 The system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level from the [**Organization Settings>Users** page](../accounts/add-organization-users.md).  
+	 When adding a new user, the system assigns Stakeholder as the access level when all free five Basic access levels have been assigned. Active contributors to a project need to have Basic access as a minimum. A Project Collection Administrator can change the access level and resend invitations from the [**Organization Settings>Users** page](#manage-users).  
 
-1. A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
+1. (Optional) A message will briefly display on the screen to indicate success or failure. Choose **Details** to open the notification and review details. 
 
 	:::row:::
 	   :::column span="":::
@@ -273,7 +274,7 @@ As a team administrator, you can add new or existing members from the **Team Mem
 
 ## Add users or groups to a team 
 
-Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can only add existing users or security groups.   
+Add existing users or security groups to a team from the **Project settings> Teams** page. From this interface you can only add existing users or security groups. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).   
 
 
 ::: moniker range="= azure-devops"
@@ -296,8 +297,7 @@ Add existing users or security groups to a team from the **Project settings> Tea
 
 2. If you need to switch the team context, use the team selector within the breadcrumbs.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
+	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Screenshot of Project Settings>Teams>Team and Teams breadcrumb.":::
 
 3. Choose **Add**. 
 
@@ -306,7 +306,7 @@ Add existing users or security groups to a team from the **Project settings> Tea
 
 4. Enter the sign-in addresses or display name for each account you want to add. You can also add a project security groups, such as another team group or custom group, or Azure Active Directory group when used by the organization. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog, project-level](media/project-level-permissions-add-a-user.png)
+	:::image type="content" source="media/add-users/change-team-context.png" alt-text="Invite members to team dialog, choose user account.  ":::
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -325,7 +325,7 @@ Add existing users or security groups to a team from the **Project settings> Tea
 
 	:::image type="content" source="media/add-users/remove-user-confirmation.png" alt-text="Delete member dialog confirmation.":::
 
-6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+6. To add an account as a team administrator, choose the Settings page and then choose **Add** under the Administrators section. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
 ::: moniker-end
 
@@ -503,7 +503,7 @@ As a member of the Project Administrators group, you can add members to a projec
 
 ## Add users or groups to a project
 
-As a member of the Project Administrators group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group.  
+As a member of the Project Administrators group, you can add users or groups to a project from the **Project settings> Permissions** page by adding them to a security group. To add a custom security group, see [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md).    
 
 <a id="project-permissions" />
 
@@ -666,18 +666,22 @@ Choose the **Current page** tab for information on adding a user to a project. T
 
 ::: moniker range="azure-devops"
 
-##  Manage user or reissue an invitation 
+<a id="manage-users" /> 
 
-Project Collection Administrators can update user assignments and reissue an invitation. The various options they have are:
+##  Manage users or resend invitations 
+
+Project Collection Administrators can update user assignments and resend invitations. The various options they have are:
 - Change the access level
 - Manage user - add them to select projects 
 - Resend invite
 - Remove direct assignments
 - Remove from organization  
 
+To learn more, see [Add account users for Azure DevOps](../accounts/add-organization-users.md).
+
 :::image type="content" source="media/add-users/users-page-manage-options.png" alt-text="Screenshot of Organization Settings>Users page, Manage user options. ":::
 
-To learn more, see [Add account users for Azure DevOps](../accounts/add-organization-users.md).
+
 
 ::: moniker-end
 
@@ -687,6 +691,9 @@ To learn more, see [Add account users for Azure DevOps](../accounts/add-organiza
 ## List team members or team details  
 
 From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/devops/team#ext-azure-devops-az-devops-team-list) command.
+
+> [!NOTE]   
+> You can use the [`az devops user`](../accounts/add-organization-users.md#add-users-to-your-organization) command to add users to an organization. There is no comparable command for adding users to a team or project. 
 
 [List team members](#list-members) &#124; [Show team details](#show-details)
 
@@ -797,15 +804,21 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 ## Related articles
 
-* [View permissions for yourself or others](view-permissions.md).
-* [Set Git repository permissions](../../repos/git/set-git-repository-permissions.md)
-* [Set TFVC repository permissions](../../repos/tfvc/set-tfvc-repository-permissions.md)
-* [Set Git branch permissions](../../repos/git/branch-permissions.md)
-* [Set build and release permissions](../../pipelines/policies/set-permissions.md)
-* [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
+ 
 
+::: moniker range="azure-devops"
 
+* [Resources granted to project members](../projects/resources-granted-to-project-members.md)
+* [Limit identity search and selection](../../user-guide/project-admin-tutorial.md#limit-identity-search-and-selection)
+* [Limit user visibility for projects using the Project-Scoped Users group](../../projects/about-projects.md#project-scoped-user-group)
+* [Grant or restrict access using permissions](restrict-access.md).
+::: moniker-end
+ 
 
+::: moniker range="< azure-devops"
+* [Resources granted to project members](../projects/resources-granted-to-project-members.md)
+* [Grant or restrict access using permissions](restrict-access.md).
+::: moniker-end
 
 By default, users added to an organization or collection can view all organization and project information and settings. 
 
