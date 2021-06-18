@@ -38,31 +38,30 @@ A deployment group is a set of virtual machines with deployment agents. Every VM
 
     :::image type="content" source="media/add-deployment-groups.png" alt-text="Add new deployment groups":::
  
-1. Enter a **Deployment group name** and then select **Create**. A registration script will be generated. Select the **Type of target to register** and then select **Copy script to the clipboard**.
+1. Enter a **Deployment group name** and then select **Create**. A registration script will be generated. Select the **Type of target to register** and then select **Use a personal access token in the script for authentication**. Finally, select **Copy script to the clipboard**.
 
     :::image type="content" source="media/generated-script.png" alt-text="Create a deployment group - generated script":::
 
-1. Run the script from an elevated Powershell command prompt to register your target servers.
-
+1. Log onto each of your target machines and run the script from an elevated Powershell command prompt to register it as a target server. When prompted to enter tags for your agent, press *Y* and enter the tag(s) you will use to filter subsets of the servers.
+ 
     :::image type="content" source="media/register-servers.png" alt-text="Register deployment groups servers":::
 
-## Deploy agents to a deployment group
+After setting up your target servers, the script should return the following message: `Service vstsagent.{organization-name}.{computer-name} started successfully`.
 
-Every target machine in the deployment group requires an installed build and release agent. You can do this using the script in the
-**Deployment Groups** tab of **Azure Pipelines**. You can choose the
-type of agent to suit the target operating system and platform; such as Windows
-and Linux.
+The tags you assign to your target servers allow you to limit deployment to specific servers in a [Deployment group job](../../process/deployment-group-phases.md).
+A tag is limited to 256 characters, but there is no limit to the number of tags you can use.
 
-If the target machines are Azure VMs, you can quickly and easily prepare them 
-by installing the **Azure Pipelines Agent** Azure VM extension on each of the VMs,
-or by using the **Azure Resource Group Deployment** task in your release pipeline
-to create a deployment group dynamically.
+## Set up agents on deployment groups
 
-You can force the agents on the target machines to be upgraded to the latest version
-without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut
-menu for a deployment group.  
+Every target server in the deployment group requires a deployment agent. You can install an agent on your target servers in three different ways:
 
-For more information, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
+- By running the generated script from the **Deployment Groups** tab.
+
+- If the target servers are Azure VMs, you can easily set up your servers by installing the **Azure Pipelines Agent** Azure VM extension on each of the VMs. 
+
+- By using the **ARM template deployment Deployment** task in your release pipeline to create a deployment group dynamically.
+
+You can force the agents on the target servers to be upgraded to the latest version without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut menu for a deployment group.  
  
 ## Monitor releases for deployment groups
 
