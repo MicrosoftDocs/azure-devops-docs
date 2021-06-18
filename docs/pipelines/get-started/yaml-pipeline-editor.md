@@ -30,7 +30,7 @@ Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019.1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
 
-Edit your pipeline using [Intellisense](#keyboard-shortcuts) and the [task assistant](#task-assistant) for guidance.
+Edit your pipeline using [Intellisense](#keyboard-shortcuts) keyboard shortcuts and the [task assistant](#task-assistant) for guidance.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
 
@@ -173,7 +173,7 @@ As you edit your main Azure Pipelines YAML file, you can either _include_ or _ex
 Post validation, you can choose to navigate into the template. You will be able to make changes to the template using all the features of the YAML editor.
 
 > [!IMPORTANT]
-> This feature is in preview. There are known limitations, some of which we are working to address. If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In an ideal experience, the validation should not be blocked and you should be able to fill in the input parameters using intellisense. In addition, you cannot create a new template from the editor. You can only use or edit existing templates.
+> This feature is in preview. There are known limitations. If the template has required parameters that are not provided as inputs in the main YAML file, then the validation fails and prompts you to provide those inputs. In addition, you cannot create a new template from the editor. You can only use or edit existing templates.
 
 :::moniker-end
 
