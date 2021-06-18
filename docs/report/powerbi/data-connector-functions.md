@@ -63,8 +63,9 @@ This informs Power BI that these requests are referencing the same data source a
 
 Currently, the `VSTS.AccountContents()` method only works for the subdomains listed below. Other services, such as the Release service, are not yet supported: 
 
-- `http://dev.azure.com/`
-- `http://analytics.dev.azure.com/`
+- `https://dev.azure.com/`
+- `https://analytics.dev.azure.com/`
+- `https://vsrm.dev.azure.com/`
 
 
 ## Related articles
