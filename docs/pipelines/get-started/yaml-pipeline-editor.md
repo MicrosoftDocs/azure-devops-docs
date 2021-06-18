@@ -107,7 +107,7 @@ You can edit the YAML to make additional configuration changes to the task, or y
 
 :::moniker range=">= azure-devops-2020"
 
-### Validate and Download full YAML
+## Validate and Download full YAML
 
 When editing a YAML pipeline, you can validate your changes by choosing **More actions**, **Validate**. You can use this feature to catch syntax errors in your pipeline that will prevent it from starting.
 
