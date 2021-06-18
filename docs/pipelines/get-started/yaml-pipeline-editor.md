@@ -160,7 +160,7 @@ For more information on working with pipeline variables, see [Define variables](
 
 :::moniker range="= azure-devops"
 
-## Templates support
+## View and edit templates
 
 [Templates](../process/templates.md) are a commonly used feature in YAML pipelines. They are an easy way to share pipeline snippets. They are also a powerful mechanism in verifying or enforcing [security and governance](../security/templates.md) through your pipeline.
 
