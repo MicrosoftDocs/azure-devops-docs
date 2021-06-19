@@ -80,43 +80,42 @@ To restore a project, you must have the "delete project" permission set to **All
 
 1. Open a browser window and enter a URL that uses the following form:  
 
-    <http://ServerName:8080/tfs/DefaultCollection/ProjectName>
+    'http://ServerName:8080/tfs/DefaultCollection/ProjectName'
 
-   For example, to connect to the server named **FabrikamPrime**, enter: <http://FabrikamPrime:8080/tfs/>.
+   For example, to connect to the server named **FabrikamPrime**, enter: 'http://FabrikamPrime:8080/tfs/'.
 
    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 
 2. Get a list of deleted projects using the following request:
 
-   ``
-
-   GET <http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3>
-   ``
+   ```
+   GET http://ServerName:8080/tfs/DefaultCollection/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3
+   ```
 
 3. Restore a deleted project using the following request:
 
-   ``
-
-   PATCH <http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?api-version=5.0-preview.3>
-   ``
-
+   ```
+   PATCH http://ServerName:8080/tfs/DefaultCollection/_apis/projects/{projectId}?
+   api-version=5.0-preview.3
+   ```
    Request body
-   ``
-   
+
+   ```   
    {
     "state" : "wellFormed"
    }
-   ``
+   ```
 
 ### Using PowerShell
 
 1. Execute the following PowerShell script to get a list of deleted projects and make sure to update `$collectionUrl`.
 
-   ``
-
+   ```
    $collectionUrl = "https://localhost/defaultcollection"
-   (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
-   ``
+   (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+   ```
 
    Something similar to the following screenshot appears:
    ![PowerShell script return example for deleted projects](media/restore-project/deleted-projects-powershell-script-2019.png)
@@ -124,13 +123,16 @@ To restore a project, you must have the "delete project" permission set to **All
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
 
 
-   ``
-
+   ```
    $collectionUrl = "https://localhost/defaultcollection"
    $projectName = 'Project1'
-   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where {$_.name -eq $projectName}
-   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
-   ``
+   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=
+   deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value
+    | where {$_.name -eq $projectName}
+   irm -Uri ($project.url + "?api-version=5.0-preview.3") 
+   -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}'
+    -ContentType 'application/json'
+   ```
 
 Your project and associated data are restored.
 

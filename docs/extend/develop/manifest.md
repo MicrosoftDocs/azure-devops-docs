@@ -425,7 +425,7 @@ is equivalent to:
 Installation targets and demands are used together to present users with a correct view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps and TFS 2017 RTM and later. 
 
 > [!TIP]
-> For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-6.1).
+> For more information on REST APIs, see the [REST API Reference](/rest/api/azure/devops).
 
 #### Example 8: Extension that uses version 3.0 APIs
 

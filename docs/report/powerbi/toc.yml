@@ -24,6 +24,7 @@
     href: create-quick-report.md
   - name: Create a report using an OData query
     href: create-quick-report-odataq.md
+    displayname: Expand
   - name: Connect using Analytics Views 
     href: data-connector-connect.md
   - name: Connect using OData queries

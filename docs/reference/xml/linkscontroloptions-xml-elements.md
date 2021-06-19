@@ -258,8 +258,6 @@ The following table describes the **LinksControlOptions** element and its child 
 </tr>
 </thead>
 <tbody valign="top" >
-
-
 <tr>
 <td><p> <strong>Column</strong> </p></td>
 <td><p>Required <strong>Columns</strong> element used to specify the work item and link-related fields to display within the links control. </p>
@@ -282,7 +280,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>ExternalLinkFilter</strong> </p></td>
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a>for a complete list. </p>
+<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, <code>Wiki page</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a> for a complete list. </p>
 <blockquote><b>Important: </b>For import purposes, use the name <code>Workitem Hyperlink</code> in place of <code>Hyperlink</code> and <code>Source Code File</code> in place of <code>Versioned item</code>. 
 </blockquote>
 
