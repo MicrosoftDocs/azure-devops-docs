@@ -33,27 +33,40 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 
 ## Sample charts and primary metrics
 
-<table>
-<tbody valign="top">
-<tr >
-<td width="35%">
-<p>The Continuous flow CFD provides the chart most favored by teams that follow a lean process.</p>
-<p>However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.</p> 
-</td>
-<td width="65%"><strong>Continuous flow CFD</strong><br/><img src="media/cfd-metrics.png" alt="CFD metrics"/><br/></td>
-</tr>
-<tr>
-<td>
-<p>The Fixed period CFD shown here is for a completed sprint. </p>
-<p>The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.</p> 
-<p>The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right. </p>
-</td>
-<td><strong>Fixed period CFD for a completed sprint</strong><br/>
-<img src="media/cfd-scope-change.png" alt="CFD metrics, fixed period"/><br/>
-</td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="2":::
+      Content...
+   :::column-end:::
+   :::column span="3":::
+      More content...
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+      The Continuous flow CFD provides the chart most favored by teams that follow a lean process.  
+      However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.
+   :::column-end:::
+   :::column span="3":::
+      **Continuous flow**  
+      ![Conceptual image of CFD metrics.](media/guidance/cfd-metrics.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      The Fixed period CFD shown here is for a completed sprint.  
+      The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.</p> 
+      The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="3":::
+      **Fixed period CFD for a completed sprint**  
+      ![CFD metrics, fixed period.](media/cfd-scope-change.png) 
+   :::column-end:::
+:::row-end:::
+:::row:::
 
 ## Chart metrics  
 
