@@ -36,6 +36,7 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 :::row:::
    :::column span="2":::
       The Continuous flow CFD provides the chart most favored by teams that follow a lean process.  
+      
       However, many teams have begun combining lean practices with Scrum or other methodologies which means they practice lean within the span of an iteration or sprint. In this situation the diagram takes on a slightly different look and provides two additional, and very valuable, pieces of information as shown in the next chart.
    :::column-end:::
    :::column span="3":::
@@ -46,7 +47,9 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 :::row:::
    :::column span="2":::
       The Fixed period CFD shown here is for a completed sprint.  
+      
       The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.  
+      
       The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.  
    :::column-end:::
    :::column span="3":::
