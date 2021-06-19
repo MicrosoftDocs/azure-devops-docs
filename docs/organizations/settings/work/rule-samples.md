@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
 ms.topic: example-scenario
-ms.date: 06/07/2021
+ms.date: 06/18/2021
 
 
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
@@ -15,40 +15,18 @@ ms.date: 06/07/2021
 
 # Sample custom rule scenarios  
 
-
+[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
 This article provides examples of custom rule definitions. All custom rules are defined for a work item type. Examples are provided for both the Inherited and On-premises XML process models. 
 
- 
-
-
-
 Prior to adding custom rules, read [Rules and rule evaluation](rule-reference.md) and [Add a rule to a work item type (Inheritance process)](custom-rules.md). 
  
-
-Please consider to include an example of a customized workflow with restricted state transitions.
-Example: show a user story where an "Active" can only move to "Resolved", and "Closed" can not move to any state.
-
-
-<!--- what about custom controls and rules??? --> 
-
- 
-
-- Define a field based on the contents of another field  
-- Define a field when the user changes another field  
-- Define a dependent required field
-
-- Define a field value based on a user not modifying a field (WHENNOTCHANGED)
-
-<!--- automate --> 
-
-
 
 <a name="dependent-required"></a>   
 
 ##  Define a dependent required field  
 
-You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the **Customer Reported** field is set to *True*, and the **Severity** field becomes required. If the issue isn't reported by a customer, a value for the **Severity** field isn't required.  
+You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports an issue, the custom **Customer Reported** field is set to *True*, and the **Severity** field becomes required. If the issue isn't reported by a customer, a value for the **Severity** field isn't required.  
 
 # [Inheritance process](#tab/inheritance) 
 
@@ -194,18 +172,15 @@ The following example shows how you can require specification of the **Remaining
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
 > <WORKFLOW>
-> ... 
-      <STATE value="Active">
-          <FIELDS>
-            <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
-              <REQUIRED />
-            </FIELD>
-          </FIELDS>
-      </STATE>
 > . . .  
-> </FIELDS 
-> </STATE>
-> ...  
+>     <STATE value="Active">
+>         <FIELDS>
+>             <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
+>               <REQUIRED />
+>             </FIELD>
+>         </FIELDS>
+>     </STATE>
+> . . .  
 > </WORKFLOW>
 > ```  
 
@@ -228,18 +203,15 @@ To automate clearing the **Remaining Work** field upon closing a task, define a 
 > [!div class="tabbedCodeSnippets"]  
 > ```XML
 > <WORKFLOW>
-> ... 
-      <STATE value="Closed">
-          <FIELDS>
-            <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
-              <EMPTY />
-            </FIELD>
-          </FIELDS>
-      </STATE>
 > . . .  
-> </FIELDS 
-> </STATE>
-> ...  
+>       <STATE value="Closed">
+>           <FIELDS>
+>             <FIELD refname="Microsoft.VSTS.Scheduling.RemainingWork">
+>               <EMPTY />
+>             </FIELD>
+>           </FIELDS>
+>       </STATE>
+> . . .  
 > </WORKFLOW>
 > ```  
 
@@ -325,22 +297,46 @@ For inherited processes, any-to-any state transitions are automatically defined.
 
 Before defining state transition rules, review [Rules and rule evaluation, Auto-generated rules](rule-reference.md#auto-generated-rules) and [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md).
 
-### Restrict state transition from Active to New
-
-
-
-
-## Restrict modifications based on user or group membership
-
- - Restrict modification of select fields  
- - Restrict modification of closed work items
- - Hide or restrict modification of a field  
-
-
-
  
+<a id="restrict-modification-closed-wi" />
+
+## Restrict modification of closed work items
+
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items.
+
+# [Inheritance process](#tab/inheritance)
+
+For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
+
+
+> [!NOTE]  
+> The `A work item state moved from ...`  condition is available for Azure DevOps Server 2020 and later versions. 
+
+:::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-no-open-after-close.png" alt-text="Custom rule, Current user is not a member of a group, disallow transitions to New or Active state from Closed":::
+
+> [!NOTE]   
+> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
  
 
+# [On-premises XML process](#tab/on-premises)
+
+For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
+
+```
+<TRANSITION from="Closed" to="New"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+<TRANSITION from="Closed" to="Active"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+```
+
+
+---
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -403,49 +399,6 @@ You restrict access to work tracking objects in one of two ways:
 
 ---
 
- 
-<a id="restrict-modification-closed-wi" />
-
-## Restrict modification of closed work items
-
-Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items.
-
-# [Inheritance process](#tab/inheritance)
-
-For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
-
-
-> [!NOTE]  
-> The `A work item state moved from ...`  condition is available for Azure DevOps Server 2020 and later versions. 
-
-:::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-no-open-after-close.png" alt-text="Custom rule, Current user is not a member of a group, disallow transitions to New or Active state from Closed":::
-
-> [!NOTE]   
-> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
- 
-
-# [On-premises XML process](#tab/on-premises)
-
-For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
-
-```
-<TRANSITION from="Closed" to="New"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-<TRANSITION from="Closed" to="Active"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-```
-
-
----
-
-## Non-rule automation support 
-
 
 
 ## Related articles
@@ -453,78 +406,3 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 - [Apply rules to workflow states (Inheritance process)](apply-rules-to-workflow-states.md)
 - [Rules and rule evaluation](rule-reference.md)
   
-
-<!---
-
-
-
-When the value of the **State** field for a work item is set to Active and the work item is saved, the **Closed Date** and **Closed By** fields are automatically set to null and made read-only if you use the `EMPTY` element, as the following example shows.  
-
-```xml
-<STATE value="Active">  
-      <FIELDS>  
-. . .  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedDate"><EMPTY/></FIELD>  
-      <FIELD refname="Microsoft.VSTS.Common.ClosedBy"><EMPTY/></FIELD>  
-      </FIELDS>  
-</STATE>  
-```  
-
-
-You can define rules that update fields whenever the following events occur:  
-
-- Assign a field rule under `STATE` when you want the rule to apply for all transitions to and reasons for entering that state.  
-
-- Assign a field rule under `TRANSITION` when you want the rule to apply for that transition and all reasons for making that transition.  
-
-- Assign a field rule under `DEFAULTREASON` or `REASON` when you want the rules to apply only for that specific reason.  
-
-  If a field should always contain the same value, you define the rule under the `FIELD` element that defines that field.  
-
-  You should try to minimize the number of conditions that you define for any one type of work item. With each conditional rule that you add, you increase the complexity of the validation process that occurs every time that a team member saves a work item. Complex rule sets might increase the time that is required to save the work item.  
-
-  The following examples show some of the rules that are applied to system fields in the process template for MSF Agile Software Development.  
-
-
-
-
-
-<a name="whenchanged"></a>  
-
-##  Set a Date/Time field when changing the value of a field    
-
-
-# [Inheritance process](#tab/inheritance)
-
-TBD 
-
-
-# [On-premises XML process](#tab/on-premises)
- 
-In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="clock" />  
->        </WHENCHANGED>  
-> </FIELD>   
-> ```  
-
-In the following example, when a user changes the value of the MyCorp.State field, the value of the MyCorp.Status field is cleared.  
-
-> [!div class="tabbedCodeSnippets"]
-> ```XML  
-> <!-- Clear the status field whenever someone changes the state -->  
-> <FIELD refname="MyCorp.Status" name="Status" type="String">  
->        <WHENCHANGED field="MyCorp.State">  
->            <COPY from="value" value="">  
->        </WHENCHANGED>  
-> </FIELD>  
-> ```  
-
----
-
-
--->
