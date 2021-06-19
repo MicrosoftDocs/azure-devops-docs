@@ -10,7 +10,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2018
+ms.date: 06/18/2021
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
@@ -33,16 +33,6 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 
 ## Sample charts and primary metrics
 
-
-:::row:::
-   :::column span="2":::
-      Content...
-   :::column-end:::
-   :::column span="3":::
-      More content...
-   :::column-end:::
-:::row-end:::
-
 :::row:::
    :::column span="2":::
       The Continuous flow CFD provides the chart most favored by teams that follow a lean process.  
@@ -56,8 +46,8 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 :::row:::
    :::column span="2":::
       The Fixed period CFD shown here is for a completed sprint.  
-      The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.</p> 
-      The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.
+      The top line represents the scope set for the sprint. And, because the work must be completed by the last day of the sprint, the slope of the Closed state indicates whether or not a team is on track to complete the sprint. The easiest way to think of this view is as a burnup chart.  
+      The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,7 +56,7 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
       ![CFD metrics, fixed period.](media/cfd-scope-change.png) 
    :::column-end:::
 :::row-end:::
-:::row:::
+ 
 
 ## Chart metrics  
 
