@@ -7,7 +7,7 @@ ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/11/2020
+ms.date: 06/14/2021
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
@@ -15,19 +15,15 @@ ms.date: 08/11/2020
 [!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
+> The following guidance is intended for Azure DevOps Services users since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
 Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
-Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
-Use this token when you call the REST APIs from your app.
+Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token. Use this token when you call the REST APIs from your application.
 
-First, register your web app and get an app ID from Azure DevOps Services.
-Using that app ID, send your users to Azure DevOps Services to authorize your app to access their organizations.
-Next, use that authorization to get an access token for that user.
 When you call Azure DevOps Services APIs for that user, use that user's access token.
 Access tokens expire, so refresh the access token if it's expired.
 
-![Process to get authorization](./media/oauth-overview.png)
+:::image type="content" source="media/oauth-overview.png" alt-text="Process to get authorization.":::
 
 For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample).
 
@@ -42,7 +38,7 @@ If you registered your app using the preview APIs, re-register because the scope
 When Azure DevOps Services presents the authorization approval page to your user,
 it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-<img alt="Visual Studio Codespaces authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
+:::image type="content" source="media/grant-access.png" alt-text="Visual Studio Codespaces authorization page with your company and app information.":::
 
 When Azure DevOps Services asks for a user's authorization, and the user grants it,
 the user's browser gets redirected to your authorization callback URL with the authorization code.
@@ -51,18 +47,16 @@ If it doesn't, a 400 error page is displayed instead of a page asking the user t
 
 When you register your app, the application settings page displays.
 
-<img alt="Application settings for your app" src="./media/app-settings.png" style="border: 1px solid #CCCCCC" />
+:::image type="content" source="media/app-settings.png" alt-text="Applications settings shown for your app.":::
 
-Call the authorization URL and pass your app ID and authorized scopes
-when you want to have a user authorize your app to access their organization.
+Call the authorization URL and pass your app ID and authorized scopes when you want to have a user authorize your app to access their organization.
 Call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile `https://app.vssps.visualstudio.com/profile/view`.
 
 ## Authorize your app
 
-If your user hasn't yet authorized your app to access their organization,
-call the authorization URL. 
+If your user hasn't yet authorized your app to access their organization, call the authorization URL.
 
 ```no-highlight
 https://app.vssps.visualstudio.com/oauth2/authorize
@@ -94,7 +88,7 @@ https://app.vssps.visualstudio.com/oauth2/authorize
         &scope=vso.work%20vso.code_write
         &redirect_uri=https://fabrikam.azurewebsites.net/myapp/oauth-callback
 ```
-<br>
+
 Azure DevOps Services asks the user to authorize your app.
 
 Assuming the user accepts, Azure DevOps Services redirects the user's browser to your callback URL, including a short-lived authorization code and the state value provided in the authorization URL:
@@ -109,14 +103,15 @@ https://fabrikam.azurewebsites.net/myapp/oauth-callback
 
 Now you use the authorization code to request an access token (and refresh token) for the user. Your service must make a service-to-service HTTP request to Azure DevOps Services.
 
-### URL
+### URL - authorize app
+
 ```no-highlight
 POST https://app.vssps.visualstudio.com/oauth2/token
 ```
 
-### HTTP request headers
+### HTTP request headers - authorize app
 
-|  Header           | Value 
+|  Header           | Value
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
 | Content-Length    | Calculated string length of the request body (see the following example)
@@ -126,18 +121,19 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 1322
 ```
 
-### HTTP request body
+### HTTP request body - authorize app
+
 ```no-highlight
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion={1}&redirect_uri={2}
 ```
-<br>
+
 Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded "code" provided via the `code` query parameter to your callback URL
 * **{2}**: callback URL registered with the app
 
-#### C# example to form the request body
+#### C# example to form the request body - authorize app
 
 ```no-highlight
 public string GenerateRequestPostData(string appSecret, string authCode, string callbackUrl)
@@ -150,7 +146,8 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 
-### Response
+### Response - authorize app
+
 ```json
 {
     "access_token": { access token for the user },
@@ -161,7 +158,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 ```
 
 > [!IMPORTANT]
-> Securely persist the <em>refresh_token</em> so your app doesn't need to prompt the user to authorize again. <em>Access tokens</em> expire relatively quickly and shouldn't be persisted.
+> Securely persist the **refresh_token** so your app doesn't need to prompt the user to authorize again. Access tokens expire relatively quickly and shouldn't be persisted.
 
 ## Use the access token
 
@@ -182,14 +179,15 @@ Authorization: Bearer {access_token}
 
 If a user's access token expires, you can use the refresh token that they acquired in the authorization flow to get a new access token. It's like the original process for exchanging the authorization code for an access and refresh token.
 
-### URL
+### URL - refresh token
+
 ```no-highlight
 POST https://app.vssps.visualstudio.com/oauth2/token
 ```
 
-### HTTP request headers
+### HTTP request headers - refresh token
 
-|  Header           | Value 
+|  Header           | Value
 |-------------------|------------------------------------------------------------------
 | Content-Type      | `application/x-www-form-urlencoded`
 | Content-Length    | Calculated string length of the request body (see the following example)
@@ -199,19 +197,21 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 1654
 ```
 
-### HTTP request body
+### HTTP request body - refresh token
+
 ```no-highlight
 client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer&client_assertion={0}&grant_type=refresh_token&assertion={1}&redirect_uri={2}
+
 ```
-<br>
+
 Replace the placeholder values in the previous sample request body:
 
 * **{0}**: URL encoded client secret acquired when the app was registered
 * **{1}**: URL encoded refresh token for the user
 * **{2}**: callback URL registered with the app
 
+### Response - refresh token
 
-### Response
 ```json
 {
     "access_token": { access token for this user },
@@ -220,6 +220,7 @@ Replace the placeholder values in the previous sample request body:
     "refresh_token": { new refresh token to use when the token has timed out }
 }
 ```
+
 > [!IMPORTANT]
 > A new refresh token gets issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
@@ -235,6 +236,8 @@ Replace the placeholder values in the previous sample request body:
 [Register your app](#register-your-app) and use scopes to indicate which permissions in Azure DevOps Services that your app requires.
 When your users authorize your app to access their organization, they authorize it for those scopes.
 [Requesting the authorization](#authorize-your-app) passes the same scopes that you registered.
+
+For information about work item tracking attachments, see [Work Item Tracking/Attachments - Create](/rest/api/azure/devops/wit/attachments/create?view=azure-devops-rest-6.0) and the FAQ, How can I get attachments detail for my work item?
 
 ## Samples
 
@@ -253,8 +256,8 @@ so there's no way to implement OAuth, as you can't securely store the app secret
 
 A: Make sure that you handle the following conditions:
 
-- If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
-- If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
+* If your user denies your app access, no authorization code gets returned. Don't use the authorization code without checking for denial.
+* If your user revokes your app's authorization, the access token is no longer valid. When your app uses the token to access data, a 401 error returns. Request authorization again.
 
 ### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
@@ -268,9 +271,37 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 
 A: No. OAuth is only supported in the REST APIs at this point.
 
-<!-- ENDSECTION --> 
+### Q: How can I get attachments detail for my work item using Azure DevOps REST APIs?
+
+A: First, get the work item details with [Work items - Get work item](/rest/api/azure/devops/wit/work%20items/get%20work%20item?view=azure-devops-rest-6.0) REST API:
+
+```REST
+GET https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/{id}
+```
+
+To get the attachments details you need to add the following parameter to the URL:
+
+```REST
+$expand=all
+```
+
+With the results you get the relations property. There you can find the attachments URL, and within the URL you can find the ID. For example:
+
+```REST API
+$url = https://dev.azure.com/{organization}/{project}/_apis/wit/workitems/434?$expand=all&api-version=5.0
+
+$workItem = Invoke-RestMethod -Uri $url -Method Get -ContentType application/json
+
+$split = ($workitem.relations.url).Split('/')
+
+$attachmentId = $split[$split.count - 1]
+
+# Result: 1244nhsfs-ff3f-25gg-j64t-fahs23vfs
+```
+
+<!-- ENDSECTION -->
 
 ## Related articles
 
-- [Choosing the right authentication method](authentication-guidance.md)
-- [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
+* [Choosing the right authentication method](authentication-guidance.md)
+* [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)

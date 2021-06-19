@@ -106,6 +106,9 @@
   - name: Add TFVC Check-In Policies
     href: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: settings, policies, builds, code, analysis
+  - name: Download repository permissions report
+    href: security/download-permissions-report.md
+    displayName: json
 - name: Test
   items:
   - name: Set test retention policies

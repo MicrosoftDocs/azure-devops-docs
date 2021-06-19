@@ -6,7 +6,7 @@ ms.technology: devops-accounts
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 01/21/2021
+ms.date: 06/09/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -44,7 +44,7 @@ For information on rate limits, see [Current rate limits](../../integrate/concep
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Usage**.
 
-   <img alt="Usage page for collection administrators" src="media/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
+   :::image type="content" source="media/usage-pca-newnav.png" alt-text="Screenshot of Usage page for collection administrators.":::
 
 3. Use this page to investigate the usage of other users. Usage can occur from regular web portal operations or use of command line or REST API tools.
 
@@ -67,15 +67,15 @@ For information on rate limits, see [Current rate limits](../../integrate/concep
      - Count
      - Usage (TSTUs)
      - Delay(s)
-   
+
    Azure DevOps displays the last hour of requests by default. You can select from other increments of time.
-   
+
    d. Select from the following statuses:
      - All statuses
      - Normal
      - Delayed
      - Blocked
-   
+
    e. The usage page is scoped to the 30 minutes before and after the first delayed request. Review the request history leading up to delayed requests.
 
    :::image type="content" source="media/usage-screenshot-example.png" alt-text="Usage page screenshot example":::

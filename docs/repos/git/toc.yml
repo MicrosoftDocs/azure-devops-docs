@@ -183,6 +183,9 @@
     href: mapping-my-tfvc-actions-to-git.md
   - name: RPC failures & http.postBuffer
     href: rpc-failures-http-postbuffer.md 
+  - name: Download permissions report
+    href: ../../organizations/security/download-permissions-report.md
+    displayName: json
 - name: Resources
   items:
   - name: Pro Git

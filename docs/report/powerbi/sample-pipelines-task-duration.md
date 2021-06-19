@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'      
-ms.date: 07/14/2020
+ms.date: 06/11/2021
 ---
 
 # Pipeline task duration sample report 
@@ -193,7 +193,7 @@ For a simple report, do the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration - Report](media/odatapowerbi-pipelines/taskduration-report.png)
+> ![Screenshot of Pipelines task duration Line chart Report.](media/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## Full list of sample reports for Pipelines
