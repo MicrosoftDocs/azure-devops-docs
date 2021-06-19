@@ -322,18 +322,24 @@ For the Inherited process, you can add a rule that restricts state transition. F
 
 For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
 
-```
-<TRANSITION from="Closed" to="New"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-<TRANSITION from="Closed" to="Active"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-```
+> [!div class="tabbedCodeSnippets"]  
+> ```XML
+> <WORKFLOW>
+> . . .  
+> <TRANSITION from="Closed" to="New"  
+>    for="[Project]\Testers"  
+>    not="[Project]\Developers" 
+>    . . .  
+> </TRANSITION 
+> <TRANSITION from="Closed" to="Active"  
+>    for="[Project]\Testers"  
+>    not="[Project]\Developers" 
+>    . . .  
+> </TRANSITION 
+> . . .  
+> </WORKFLOW>
+> ```  
+ 
 
 
 ---
