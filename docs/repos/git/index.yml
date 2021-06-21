@@ -106,7 +106,7 @@ landingContent:
           - text: Git command reference
             url: ./command-prompt.md
           - text: Azure DevOps CLI
-            url: ../../cli/index.md
+            url: ../../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
           - text: Git REST API
             url: /rest/api/azure/devops/git/
 
