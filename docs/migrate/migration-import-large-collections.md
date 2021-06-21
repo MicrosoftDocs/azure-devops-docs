@@ -28,7 +28,7 @@ Cleaning older, no-longer-relevant artifacts could remove a lot more space than 
 > [!IMPORTANT]
 > After you've deleted older data, it *can't* be recovered unless you restore an older backup of the collection.
 
-If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC]](migration-import.md#dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
+If you're under the DACPAC threshold, follow the instructions to [generate a DACPAC](migration-import.md#dacpac-file) for import. If you still can't get the database under the DACPAC threshold, you need to set up a SQL Azure VM to import to Azure DevOps Services. 
 
 ## Set up a SQL Azure VM to import to Azure DevOps Services
 
