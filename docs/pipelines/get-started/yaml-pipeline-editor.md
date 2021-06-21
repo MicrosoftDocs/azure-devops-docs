@@ -2,7 +2,7 @@
 title: Azure Pipelines YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor
 ms.topic: reference
-ms.date: 06/18/2021
+ms.date: 06/21/2021
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -181,4 +181,4 @@ Post validation, you can navigate into the template by choosing **View template*
 
 * [Learn how to navigate and view your pipelines](multi-stage-pipelines-experience.md)
 * [Create your first pipeline](../create-first-pipeline.md)
-* [Customize your pipeline](customize-pipeline.md)
+* [Customize your pipeline](../customize-pipeline.md)
