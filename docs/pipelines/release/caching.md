@@ -76,7 +76,7 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
     path: $(YARN_CACHE_FOLDER)
@@ -115,7 +115,7 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    key: '"yarn" | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
        yarn | "$(Agent.OS)"
     path: $(YARN_CACHE_FOLDER)
