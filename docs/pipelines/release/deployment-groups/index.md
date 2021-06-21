@@ -1,6 +1,6 @@
 ---
 title: Use deployment groups in a release pipeline
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy21q4
 description: Work with deployment Groups in Azure Pipelines
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.topic: conceptual
