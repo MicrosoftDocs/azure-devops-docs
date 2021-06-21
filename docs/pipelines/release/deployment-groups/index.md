@@ -77,7 +77,7 @@ Deployment groups can be shared with other projects in the same organization.
 
 1. Select your deployment group and then select **Manage**.
 
-    :::image type="content" source="media/manage-deployment-groups.png" alt-text="Manage deployment groups":::
+    :::image type="content" source="media/manage-deployment-group.png" alt-text="Manage deployment groups":::
 
 1. Select a project from the list and then select **Save**.
 
@@ -87,27 +87,20 @@ Deployment groups can be shared with other projects in the same organization.
 
     :::image type="content" source="media/shared-deployment-group.png" alt-text="Shared new deployment group":::
 
-### Create a new deployment pool
+## Automatically deploy to new target servers
 
-Add a new deployment pool, share it amongst your projects, and then add deployment groups to it.
-In the **Deployment Pools** page, choose **+ New**. In the **New deployment pool** panel,
-enter a name for the pool and then select the projects for which you want it to be available.
+When new target servers get added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets. 
 
-When you navigate to the **Deployment Groups** page in the target project(s), you
-will see the deployment group you added and you can assign project-specific machine tags as required.
+From your release pipeline definition, select the post deployment icon, and then enable the **Auto redeploy trigger**. Select the events and action as shown below.
 
-### Automatically deploy to new targets in a deployment group
+:::image type="content" source="../media/deployment-group-add-targets.png" alt-text="Automatically deploy to new target servers":::
 
-When new targets get added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets. 
+## Related articles
 
-:::image type="content" source="../media/deployment-group-add-targets.png" alt-text="Add deployment group targets.":::
-
-## Related topics
-
-* [Run on machine group job](../../process/deployment-group-phases.md)
-* [Deploy an agent on Windows](../../agents/v2-windows.md)
-* [Deploy an agent on macOS](../../agents/v2-osx.md)
-* [Deploy an agent on Linux](../../agents/v2-linux.md)
-
-[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
+- [Deployment group jobs](../../process/deployment-group-phases.md)
+- [Deploy to Azure VMs using deployment groups](./deploying-azure-vms-deployment-groups.md)
+- [Provision agents for deployment groups](./howto-provision-deployment-group-agents.md)
+- [Self-hosted Windows agents](../../agents/v2-windows.md)
+- [Self-hosted macOS agents](../../agents/v2-osx.md)
+- [Self-hosted Linux agents](../../agents/v2-linux.md)
 
