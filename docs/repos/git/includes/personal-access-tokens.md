@@ -6,10 +6,10 @@ ms.topic: include
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Manage or enable features](../../../project/navigation/preview-features.md).
+> [!NOTE]
+> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
@@ -28,8 +28,7 @@ ms.topic: include
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate to Azure DevOps Services, 
-   limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**. 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**.
 
    ![Select scopes for your PAT](/azure/devops/repos/git/media/select-pat-scopes-preview.png)
 
@@ -37,7 +36,7 @@ ms.topic: include
 
    ![Copy the token to your clipboard](/azure/devops/repos/git/media/copy-token-to-clipboard.png)
 
-#### [Current page](#tab/current-page) 
+#### [Current page](#tab/current-page)
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
@@ -56,8 +55,7 @@ ms.topic: include
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate to Azure DevOps Services, 
-   limit your token's scope to **Agent Pools (Read & manage)**, and then select **Create**. 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, limit your token's scope to **Agent Pools (Read & manage)**, and then select **Create**.
 
    ![Select scopes for your PAT](~/repos/git/media/select-pat-scopes.png)
 
@@ -81,16 +79,14 @@ ms.topic: include
 
 4. Name your token. Select a lifespan for your token.
 
-   If you have more than one organization,
-   you can also select the organization where you want to use the token.
+   If you have more than one organization, you can also select the organization where you want to use the token.
 
    ![Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token](/azure/devops/repos/git/media/setup-personal-access-token.png)
 
 5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate, 
-   limit your token's scope to **Agent Pools (read, manage)**. 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, limit your token's scope to **Agent Pools (read, manage)**.
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
 
@@ -100,7 +96,7 @@ ms.topic: include
 
 * * *
 
- Once your PAT is created, you can use it anywhere your user credentials are required for authentication in Azure DevOps. 
+ Once your PAT is created, you can use it anywhere your user credentials are required for authentication in Azure DevOps.
 
 ### Notifications
 
@@ -127,17 +123,29 @@ If you believe that a PAT exists in error, we suggest that you [revoke the PAT](
 
 ## Use a PAT
 
-Your token is your identity and represents you when it's used. Treat and use a PAT like your password. 
+Your token is your identity and represents you when it's used. Treat and use a PAT like your password.
+
 1. Git interactions require a username, which can be anything except the empty string.
 The PAT is used as the password.
 Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
 On Linux or macOS, in Bash, you can enter:
- 
+
 ```bash
-MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
+MY_PAT=yourPAT # replace "yourPAT" with your actual PAT
 B64_PAT=$(printf "%s"":$MY_PAT" | base64)
-git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName 
 ```
+
+> [!TIP]
+> For existing repositories, if you've already added the origin using the username, run the following command first.
+> <br>
+> ``git remote remove origin``
+> </br>
+> Otherwise run the following command:
+> <br>
+> ``git remote add origin https://<PAT>@<company_machineName>.visualstudio.com:/<path-to-git-repo>`` path to git repo = <project name>/_git/<repo_name>
+  </br>
+> ``git push -u origin --all``
 
 On Windows, you can do something similar in PowerShell:
 
@@ -149,23 +157,22 @@ git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.c
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
 
-* [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
+- [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
 
 ### Use a PAT in your code
 
 See the following sample that gets a list of builds using curl.
-<br/>
-```
+
+```curl
+
 curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
-<br/>
 
 If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
-<br/>
-<code>Authorization: Basic BASE64_USERNAME_PAT_STRING</code> 
-<br/>
+
+`Authorization: Basic BASE64_USERNAME_PAT_STRING`
+
 Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
-<br/>
 
 ```cs
 public static async void GetBuilds()
@@ -199,10 +206,9 @@ public static async void GetBuilds()
     }
 }
 ```
-<br/>
 
 > [!TIP]
-> When you're using variables, add a "$" at the beginning of the string, like in the following example.
+> When you're using variables, add a `$` at the beginning of the string, like in the following example.
 
 ```cs
 public static async void GetBuilds()
@@ -249,10 +255,10 @@ For more examples of how to use PATs, see [Git credential managers](../set-up-cr
 
 You can regenerate or extend a PAT, and modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes).
 
-> [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Manage or enable features](../../../project/navigation/preview-features.md).
+> [!NOTE]
+> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
 1. From your home page, open your user settings, and then select **Profile**.
 
@@ -266,7 +272,7 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
    ![Modify and Save PAT](/azure/devops/repos/git/media/modify-pat.png)
 
-#### [Current page](#tab/current-page) 
+#### [Current page](#tab/current-page)
 
 1. From your home page, open your profile. Go to **Security** details.
 
@@ -286,10 +292,10 @@ You can regenerate or extend a PAT, and modify its [scope](../../../integrate/ge
 
 You can revoke a PAT at any time, for various reasons.
 
-> [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Manage or enable features](../../../project/navigation/preview-features.md).
+> [!NOTE]
+> To enable the new user interface for the New account manager page, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
 1. From your home page, open your user settings, and then select **Profile**.
 
