@@ -47,11 +47,11 @@ None
 > [!NOTE]
 > You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an Artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
+::: moniker range=">= tfs-2018"
+
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+::: moniker-end
 
 ## FAQ
 
