@@ -80,5 +80,5 @@ Docker Content Trust (DCT) provides the ability to use digital signatures for da
        DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE: $(DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE)
    ```
 
-   In the previous example, the `DOCKER_CONFIG` variable is set by the login action done by the Docker task. We recommend that you set up `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` as a [secret variable](../../process/variables.md#secret-variables) for your pipeline. The alternative approach of using a pipeline variable in YAML exposes the passphrase in plain text.
+   In the previous example, the `DOCKER_CONFIG` variable is set by the login action done by the Docker task. We recommend that you set up `DOCKER_CONTENT_TRUST_REPOSITORY_PASSPHRASE` as a [secret variable](../../process/variables.md#secret-variables) for your pipeline. The alternative approach of using a pipeline variable in YAML exposes the passphrase in plain text. We only need the repository passphrase in this example because the repository has been initiated already (prerequisites).
 
