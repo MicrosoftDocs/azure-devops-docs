@@ -980,7 +980,7 @@
     - name: REST API reference
       href: /rest/api/azure/devops/
     - name: Azure DevOps CLI
-      href: ../cli/index.md
+      href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
     - name: DevOps Starter to deploy to Azure
       href: /azure/devops-project/
     - name: Azure Lab Services
