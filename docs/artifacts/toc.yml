@@ -232,5 +232,5 @@
     href: /rest/api/azure/devops/index
     displayName: api, reference 
   - name: Azure DevOps CLI
-    href: ../cli/index.md?bc=%2fazure%2fdevops%2fdev-resources%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2fdev-resources%2ftoc.json
+    href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
     displayName: cli, reference
