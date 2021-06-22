@@ -10,7 +10,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/18/2021
+ms.date: 06/21/2021
 ---
 
 # Cumulative flow, lead time, and cycle time guidance 
