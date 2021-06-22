@@ -19,7 +19,7 @@ ms.date: 07/09/2020
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
-All users can create and edit their own queries and save them under **My Queries**. Only you can view queries saved under your **My Queries** space.
+All users, except those assigned to the Readers group, can create and edit their own queries and save them under **My Queries**. Only the signed in user can view queries saved under their **My Queries** space.
 
 By default, only members of the Project Administrators group can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 
