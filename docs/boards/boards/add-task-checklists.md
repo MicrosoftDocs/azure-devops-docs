@@ -93,13 +93,13 @@ In this example, tasks are added to the product Kanban board using the checklist
     :::image type="content" source="media/checklists/open-task.png" alt-text="Screenshot of opening a task.":::
 ::: moniker-end
 ::: moniker range="tfs-2015"
-4.  If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
+4. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
 
-   <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 
-    Double-click the task, or select and press the Enter key, to open it.   
+	Double-click the task, or select and press the Enter key, to open it.   
 
-    <img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
 > [!NOTE]  
