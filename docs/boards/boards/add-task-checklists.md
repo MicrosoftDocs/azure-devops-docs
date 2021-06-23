@@ -18,11 +18,9 @@ ms.date: 06/23/2021
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
 
 
-Many teams find Kanban ideal for tracking work as it supports visualizing the flow of work in progress. And, you can quickly add new items and update status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
+Many teams find Kanban boards ideal for tracking work as it supports visualizing the flow of work in progress, quickly adding new items, and updating status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md).  
 
-With checklists or to do lists, you continue to enjoy lightweight tracking. You gain visibility into which tasks, bugs, or other child items in progress or completed. Any work item type added to the backlog hierarchy is available to add using the checklist feature. 
-
-Here we show several tasks and bugs for work in progress, both yet to do and those marked as completed. Bugs are tracked alongside tasks. Also, the Issue work item type has been added to the Iteration backlog, so issues can be added as checklists. 
+With checklists or to do lists, you continue to enjoy lightweight tracking. You gain visibility into which tasks, bugs, or other child items are in progress or completed. For example, here we show several tasks and bugs for work in progress, both yet to do and those marked as completed. By adding the Issue work item type to the Iteration backlog, issues can be added as checklists. 
 ::: moniker range=">= azure-devops-2019"
 :::image type="content" source="media/checklists/board-checklists.png" alt-text="Screenshot of product-level Kanban board with three work items showing child lists":::
 ::: moniker-end
@@ -43,10 +41,11 @@ In this article, you'll learn:
 > Kanban board checklists are supported from TFS 2015.1 and later versions. 
 ::: moniker-end
 
-
 ## Overview of checklist features 
 
-Checklists are a feature of all Kanban boards, both product and portfolio backlog levels.  
+Checklists are a feature of all Kanban boards, both product and portfolio backlog levels. 
+
+
 
 - All Kanban board levels support checklists. For a view of default backlog hierarchies, see [Plan and track work](../get-started/plan-track-work.md).  
 - Adding a checklist item automatically adds a parent-child link between the parent work item and the checklist item. 
@@ -56,8 +55,8 @@ Checklists are a feature of all Kanban boards, both product and portfolio backlo
 - Marking any checklist item as "done" moves the work item **State** to closed, done, or completed.  
 - Teams can remove select checklist features by disabling them on the [**Annotations** tab of the Board settings](customize-cards.md#annotations).
 - Tasks or other child items that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
-
-To add work item types to track as checklists, add them to the next-lower hierarchical backlog. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md) or [Process configuration XML element reference (On-premises XML process)](../../reference/xml/process-configuration-xml-element.md). 
+- Any work item type added to the backlog hierarchy is available to add using the checklist feature.  
+	To add work item types to track as checklists, add them to the next-lower hierarchical backlog. To learn how, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md) or [Process configuration XML element reference (On-premises XML process)](../../reference/xml/process-configuration-xml-element.md). 
 
 > [!TIP]    
 If you find that you don't use this feature, you can disable it from the [common configurations dialog](customize-cards.md#annotations).  
