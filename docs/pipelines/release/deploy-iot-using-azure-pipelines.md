@@ -154,9 +154,9 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 Now that we built a Docker image and pushed it to Azure Container Registry. we must first create an IoT hub and an IoT Edge device in that hub. We will then deploy the sample module, and provision a virtual machine to run as our IoT Edge device.
 
-1. [Create an IoT hub using the Azure portal](/azure/iot-hub/iot-hub-create-through-portal.md)
+1. [Create an IoT hub using the Azure portal](/azure/iot-hub/iot-hub-create-through-portal)
 
-1. [Register an IoT Edge device in IoT Hub](/azure/iot-edge/how-to-register-device.md)
+1. [Register an IoT Edge device in IoT Hub](/azure/iot-edge/how-to-register-device)
 
 1. From within your project, navigate to the **Pipelines** > **Releases**.
 
