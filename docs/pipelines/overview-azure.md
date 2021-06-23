@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure index to content
-ms.custom: seodec18
+ms.custom: seodec18, contperfq4
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
 ms.author: jukullam
