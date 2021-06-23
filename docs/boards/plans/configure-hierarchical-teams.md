@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 10/28/2019
+ms.date: 06/23/2021
 ---
 
 # Configure a hierarchy of teams
@@ -43,6 +43,7 @@ In this article you'll learn how to:
 
 
 <a id="set_up"></a>
+
 ## Add teams 
 
 The first step is to add a team for each feature team and management area. You can also rename teams that you've already added. When you finish, you'll have a set of teams similar to the ones shown.  
@@ -184,6 +185,9 @@ You do this by opening each area path associated with a feature team and changin
 
 By including sub-area paths for the management teams, you automatically include the backlog items of their feature teams onto the management team's backlog. The default setting for all teams is to exclude sub-area paths. 
 
+> [!NOTE]   
+> Sub-area paths may break a team's ability to reorder or reparent items on the backlog. Also, it can introduce uncertainties with regards to assignments made to the Kanban Board Column, Done, and Lane fields. To learn more, see [Shared area paths and potential operational issues](#op-issues) later in this article. 
+
 ::: moniker range=">= azure-devops-2019"
 You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from **Teams**. 
 
@@ -280,6 +284,11 @@ For teams to be well defined, you'll want to add team administrator(s) and have 
 
 ## Review area paths assigned to teams 
 
+
+::: moniker range="<= tfs-2015" 
+This feature isn't supported for TFS 2015 and earlier versions.
+::: moniker-end 
+
 ::: moniker range=">= azure-devops-2019"  
 
 From **Project Settings>Project configuration>Areas**, you can review which **Area Paths** have been assigned to which teams. To modify the assignments, choose the team and change the team's area path assignments. 
@@ -295,9 +304,22 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 > ![Area Paths and Teams](media/config-teams/review-area-paths-teams.png)   
 ::: moniker-end
 
-::: moniker range="<= tfs-2015" 
-This feature isn't supported for TFS 2015 and earlier versions.
-::: moniker-end 
+<a id="op-issues" />
+
+## Shared area paths and potential operational issues 
+
+When you share area paths across two or more teams, you'll want to understand how Azure Boards manages clashes that can arise when exercising these features: 
+- Reordering work items on a backlog or board
+- Reparenting work items on a backlog or board 
+- Updates made to Kanban Board Column, Done, and Lane fields when dragging items to a different column 
+
+
+
+While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
+Only when the work item state changes does the card column reflect the same on all boards.
+
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
+
 
 ## Related articles
 
