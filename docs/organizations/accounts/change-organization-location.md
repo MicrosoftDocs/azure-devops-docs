@@ -49,7 +49,7 @@ You must be [the organization Owner](../security/lookup-organization-owner-admin
 >
 > We default your organization to your closest geography. Making a change to another data center within your geography isn't possible, for example, changing from EastUS to CentralUS.
 
-To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/).
+To change your organization region, use [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
 
 ## Related articles
 
