@@ -34,7 +34,7 @@ Boards present work items as cards and support quick status updates through drag
 - Define work your team is tasked with by [defining user stories, product backlog items, or requirements](kanban-quickstart.md)
 - Monitor progress and update the status of work items by [drag-and-drop to a column](#update)
 - [Add details and estimates](../backlogs/create-your-backlog.md#estimates) to your backlog items 
-- Quickly [define tasks for backlog items](add-task-checklists.md) 
+- Quickly [define tasks or child items for backlog items](add-task-checklists.md) 
 - [Add, run, and update inline tests](add-run-update-tests.md) 
 
 To get started, you'll want to follow the steps outlined below. 
