@@ -123,7 +123,7 @@ Split columns lets your team implement a pull mechanism within the workflow proc
 
 ## Task checklists
 
-A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add task checklists](add-task-checklists.md). 
+A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
 
 ::: moniker-end  
 

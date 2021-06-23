@@ -126,7 +126,7 @@ If you have a number of items to add, simply keep typing your task titles and cl
 
 If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
 
-For additional guidance on working with a checklist on a Kanban board, see [Add task checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
+For additional guidance on working with a checklist on a Kanban board, see [Add tasks or child items as checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
 
 - Mark an item as done  
 - Reorder and reparent work items  

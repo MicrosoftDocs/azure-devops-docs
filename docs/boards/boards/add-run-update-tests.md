@@ -144,7 +144,7 @@ Use inline tests for lightweight traceability and to manage manual tests for use
 If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
 Additional ways you can quickly add linked items and objects to user stories from the Kanban board:
-- [Add inline tasks](add-task-checklists.md)
+- [Add tasks or child items as checklists](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
 To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
