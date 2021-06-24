@@ -114,7 +114,7 @@ When editing a YAML pipeline, you can validate your changes by choosing **More a
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
-### Download full YAML
+## Download full YAML
 
 You can [preview the fully parsed YAML document without committing or running the pipeline](/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline) by choosing **More actions**, **Download full YAML**.
 
