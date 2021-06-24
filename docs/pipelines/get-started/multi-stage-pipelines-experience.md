@@ -71,7 +71,7 @@ You can view and configure pipeline settings from the **More actions** :::image 
 * **Rename/move** - Edit your pipeline name and folder location.
   :::image type="content" source="media/rename-move-pipeline.png" alt-text="Rename or move pipeline":::
 * **Status badge** - [Add a status badge to your repository](../create-first-pipeline.md?view=azure-devops&preserve-view=true#add-a-status-badge-to-your-repository)
-* **Settings** - [Customize settings](../customize-pipeline.md#customize-settings)
+* **Settings** - [Pipeline settings](../customize-pipeline.md#pipeline-settings)
 * **Delete** - Deletes the pipeline including all builds and associated artifacts.
 * **Scheduled runs** - [Scheduled runs view](../process/scheduled-triggers.md#scheduled-runs-view)
 
