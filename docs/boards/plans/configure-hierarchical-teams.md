@@ -318,12 +318,12 @@ All backlogs and boards support drag-and-drop to reorder and reparent work items
 
 You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it is owned by another team.  
  
-:::image type="content" source="media/configure-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
+:::image type="content" source="media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
 
 
 ### Kanban board column updates  
 
-Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
+Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
 
 By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area shared area paths are of equal depth, the results are non-deterministic.  
  
@@ -337,11 +337,15 @@ By design, the team with the longest area path wins the conflict and determines 
 ::: moniker-end
 
 
+## Next steps
+> [!div class="nextstepaction"]
+> [Review team Delivery Plans](review-team-plans.md)
+
 ## Related articles
 
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban quickstart](../boards/kanban-quickstart.md)
-- [Organize your backlog](../backlogs/organize-backlog.md)
+- [Organize your backlog](../backlogs/organize-backlog.md)  
 - [Work with multi-team ownership of backlog items](../backlogs/backlogs-overview.md#multi-team)
 - [Fix display, reordering, and nesting issues](../backlogs/resolve-backlog-reorder-issues.md)
  
