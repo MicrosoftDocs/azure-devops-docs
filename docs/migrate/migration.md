@@ -39,7 +39,7 @@ A: We do not anticipate that this migration will impact the availability or perf
 
 A: Azure DevOps enables customers to select data locations in one out of eight geographies across the world and commits to maintaining all customer data within your selected geography. Our service may periodically transfer the locations within your selected geography hosting our cloud services, within the scope outlined in our [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). At this stage, Azure DevOps does not offer specific Azure regions (East Asia as an example). If moving the data out of East Asia (Hong Kong) isn’t an option for you, you can choose to remove your data by deleting your Azure DevOps organization currently hosted in East Asia (Hong Kong). 
 
-Alternatively, you can choose to move to any of the seven (7) other geographies where Azure DevOps is available. You can do this by filing a move request via the [Azure DevOps Virtual Support Agent](https://azure.microsoft.com/support/devops/).
+Alternatively, you can choose to move to any of the seven (7) other geographies where Azure DevOps is available. You can do this by filing a move request via the [Azure DevOps Virtual Support Agent](https://go.microsoft.com/fwlink/?linkid=2163146).
 
 As of Feb 2020, Azure DevOps data is available in the following eight geographies across the world:
 
