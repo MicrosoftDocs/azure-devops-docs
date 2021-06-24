@@ -165,7 +165,7 @@ For more information about user access, read [about access levels](../security/a
 > [!NOTE]
 > You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn how to [add members to projects](../security/add-users-team-project.md#add-users-to-a-project).
 >
-> When a user no longer need access to your organization, [delete them](delete-organization-users.md) from your organization.
+> When a user no longer needs access to your organization, [delete them](delete-organization-users.md) from your organization.
 
 ## Manage users
 
