@@ -310,7 +310,7 @@ From **Project Settings>Work>Areas**, you can review which **Area Paths** have b
 
 When you share area paths across two or more teams, you'll want to understand how Azure Boards manages conflicts that can arise when exercising these features: 
 - Reordering or reparenting work items on a backlog or board
-- Updates made to Kanban Board Column, Done, and Lane fields when dragging items to a different column 
+- Updates made to  Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields when dragging items to a different column 
 
 ### Reordering and reparenting work items 
 
