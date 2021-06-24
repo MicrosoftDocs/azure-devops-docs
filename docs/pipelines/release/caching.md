@@ -229,14 +229,12 @@ steps:
   inputs:
     key: 'ccache | "$(Agent.OS)"'
     path: $(CCACHE_DIR)
+    restoreKeys: | 
+      ccache | "$(Agent.OS)"
   displayName: ccache
 ```
 
-> [!NOTE]
-> In this example, the key is a fixed value (the OS name) and because caches are immutable, once a cache with this key is created for a particular scope (branch), the cache cannot be updated. This means subsequent builds for the same branch will not be able to update the cache even if the cache's contents have changed. This problem will be addressed in an upcoming feature: [10842: Enable fallback keys in Pipeline Caching](https://github.com/microsoft/azure-pipelines-tasks/issues/10842)
-
-See [Ccache configuration settings](
-https://ccache.dev/manual/latest.html#_configuration_settings) for more options, including settings to control compression level.
+See [Ccache configuration settings](https://ccache.dev/manual/latest.html#_configuration_settings) for more details.
 
 ## Docker images
 
