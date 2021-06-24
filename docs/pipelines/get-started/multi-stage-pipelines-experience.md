@@ -59,6 +59,8 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](media/pipeline-overview.png)
 
+Choose **Edit** to edit your pipeline. For more information, see [YAML pipeline editor](yaml-pipeline-editor.md).
+
 ### Pipeline settings
 
 You can view and configure pipeline settings from the **More actions** :::image type="icon" source="../../media/icons/more-actions.png"::: menu on the pipeline details page.
