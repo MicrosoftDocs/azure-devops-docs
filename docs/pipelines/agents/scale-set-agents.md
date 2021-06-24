@@ -247,8 +247,8 @@ az vmss extension set \
 --resource-group <resource group> \
 --name CustomScript \
 --version 2.0 \
---publisher Microsoft.Azure.Extensions
---settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash /myScript.sh /myArgs \" }'
+--publisher Microsoft.Azure.Extensions \
+--settings '{ \"fileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash ./myScript.sh /myArgs \" }'
 ```
 
 Here is an example to create a custom script extension for Windows.
