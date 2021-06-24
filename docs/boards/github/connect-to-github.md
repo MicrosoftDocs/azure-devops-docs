@@ -12,19 +12,17 @@ ms.date: 06/24/2021
 
 # Connect Azure Boards to GitHub  
 
-[!INCLUDE[temp](../includes/version-vsts-only.md)] 
+**Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](connect-on-premises-to-github.md)
 
- 
 By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
 
 When you make the connection from Azure Boards, the list of GitHub repositories correspond to ones that you allow Azure Boards to access. You can limit which repositories Azure Boards can access overall, and limit what a particular project can access or split the management of work across different Azure Boards projects.
 
 > [!NOTE]   
-> Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. 
+> Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. If you want to connect from an on-premises Azure DevOps Server, see [Connect Azure DevOps Server to GitHub Enterprise Server](connect-on-premises-to-github.md).
 
 
 ## Prerequisites 
-
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
@@ -36,7 +34,7 @@ When you make the connection from Azure Boards, the list of GitHub repositories 
 
 ## Authentication options
 
-Depending on the platform you work from to connect to GitHub, you have a choice of the credentials you use.  
+The following authentication options are supported based on the GitHub platform you want to connect to.  
 
 :::row:::
    :::column span="":::
@@ -48,7 +46,7 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 :::row-end:::
 :::row:::
    :::column span="":::
-      - [Username plus password (Recommended)](#server-github-ent-username)
+      - [GitHub.com user account (Recommended)](#server-github-ent-username)
       - [Personal access token (PAT)](#github-pat)
    :::column-end:::
    :::column span="":::
@@ -64,14 +62,21 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 
 1. Sign into Azure Boards. 
 
-1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub account</strong>.   
+1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Integrations](media/github/open-project-settings-github-connections-s154.png)   
+	> ![Project Settings>Integrations](media/github/open-project-settings-github-connections.png)   
+
+1.	Choose Connect your GitHub account. 
+
+	:::image type="content" source="media/connect-cloud/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
 	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
 1. 	If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
+
+	:::image type="content" source="media/connect-cloud/choose-github-org.png" alt-text="Screenshot of single sign-on to GitHub organization.":::
+
 
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub sign in dialog](media/github/github-dialog-sign-in.png)  
