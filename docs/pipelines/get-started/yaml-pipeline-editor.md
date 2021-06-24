@@ -2,7 +2,7 @@
 title: Azure Pipelines YAML pipeline editor guide
 description: Learn how to author and edit pipelines with the YAML pipeline editor
 ms.topic: reference
-ms.date: 06/21/2021
+ms.date: 06/24/2021
 author: steved0x
 ms.author: sdanie
 monikerRange: '>=azure-devops-2019'
@@ -24,15 +24,15 @@ Azure Pipelines provides a YAML pipeline editor based on the [Monaco Editor](htt
 
 To access the YAML pipeline editor, choose **Pipelines**, **Builds**, and select the pipeline to edit.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019.1.png" alt-text="Azure Pipelines builds in Azure DevOps Server 2019 Update 1.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-builds-2019-1.png" alt-text="Azure Pipelines builds in Azure DevOps Server 2019 Update 1.":::
 
 Choose **Edit** to edit your pipeline in the YAML pipeline editor.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019.1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-edit-2019-1.png" alt-text="Azure Pipelines YAML edit button in Azure DevOps Server 2019 Update 1.":::
 
 Edit your pipeline using [Intellisense](#keyboard-shortcuts) keyboard shortcuts and the [task assistant](#task-assistant) for guidance.
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019.1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-editor-2019-1.png" alt-text="YAML pipeline editor in Azure DevOps Server 2019.1.":::
 
 :::moniker-end
 
@@ -92,7 +92,7 @@ Choose **Add** to insert the task YAML into your pipeline.
 
 :::moniker range="= azure-devops-2019"
 
-:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019.1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-task-assistant-task-added-2019-1.png" alt-text="Task assistant added in Azure DevOps Server 2019.":::
 
 Edit the inserted YAML to make additional configuration changes to the task.
 
@@ -108,13 +108,17 @@ You can edit the YAML to make additional configuration changes to the task, or y
 
 :::moniker range=">= azure-devops-2020"
 
-## Validate and Download full YAML
+## Validate
 
 When editing a YAML pipeline, you can validate your changes by choosing **More actions**, **Validate**. You can use this feature to catch syntax errors in your pipeline that will prevent it from starting.
 
 :::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
-You can also [preview the fully parsed YAML document without committing or running the pipeline](/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline) by choosing **More actions**, **Download full YAML**.
+### Download full YAML
+
+You can [preview the fully parsed YAML document without committing or running the pipeline](/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline) by choosing **More actions**, **Download full YAML**.
+
+:::image type="content" source="media/yaml-pipeline-editor/yaml-pipeline-validate.png" alt-text="Validate and Download full YAML.":::
 
 **Download full YAML** calls the [Runs](/rest/api/azure/devops/pipelines/runs/run%20pipeline?view=azure-devops-rest-6.1&preserve-view=true) Azure DevOps REST API for Azure Pipelines, and initiates a download of the rendered YAML from the editor.
 
