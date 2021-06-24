@@ -496,7 +496,10 @@ No. Manual test results are not deleted.
 
 ### How do I preserve my version control labels? 
 
-Version control labels created during a build will be deleted when your build is deleted. If you need to preserve version control labels, you'll need to retain any associated builds. 
+Any version control labels that are applied during a build pipeline that arent automatically created from the Sources task will be preserved. However...
+# Version control labels automatically created from the builtin sources task during a build will be deleted when your build is deleted. 
+
+If you need to preserve version control labels, you'll need to either tag or label it manually (or via an additional task/script in the pipeline) or manually retain any associated builds.
 
 ::: moniker-end
 
