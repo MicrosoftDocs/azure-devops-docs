@@ -34,7 +34,7 @@ You can also select if you want to assign the work item to the requestor. For ex
 
 ## Allow scripts to access the OAuth token
 
-Select this check box if you want to enable your script to use the build pipeline OAuth token. This check box is located under the "additional settings" section after selecting the agent job in the pipeline.
+Select this check box in classic build pipelines if you want to enable your script to use the build pipeline OAuth token. This check box is located under the "additional settings" section after selecting the agent job in the pipeline.
 
 For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 
