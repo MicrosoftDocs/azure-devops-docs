@@ -217,7 +217,7 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
     You can specify the full name of the branch (for example, `main`) or a prefix-matching wildcard (for example, `releases/*`).
 
-## Customize settings
+## Pipeline settings
 
 There are some pipeline settings that you don't manage in your YAML file, such as the YAML file path and enabled status of your pipeline. To configure these settings, navigate to the pipeline and choose **More actions**, **settings**. For more information on navigating and browsing your pipelines, see [Learn how to navigate and view your pipelines](get-started/multi-stage-pipelines-experience.md).
 
