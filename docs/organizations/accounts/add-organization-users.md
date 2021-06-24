@@ -31,10 +31,10 @@ The following types of users can join your Azure DevOps Services organization fo
 
 ## Prerequisites
 
-* You must have an organization. If you don't have an organization yet, [create one](../organizations/create-organization.md). 
-* You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Organization owners are automatically members of this group.
+* You must have an organization. If you don't have an organization yet, [create one](create-organization.md).
+* You must be a member of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). Organization owners are automatically members of this group.
 
-For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../organizations/accounts/organization-management.md#add-users).
+For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](organization-management.md#add-users).
 
 ## Add users to your organization
 
