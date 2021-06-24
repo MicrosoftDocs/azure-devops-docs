@@ -162,6 +162,7 @@ To learn more, see the following articles:
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]
 
 <a id="limits-multi-team" /> 
+<a id="limitations-of-multi-team-kanban-board-views" /> 
 
 ## Exercising select features with multi-team ownership 
 
