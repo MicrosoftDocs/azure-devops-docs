@@ -1,5 +1,5 @@
 ---
-title: Fix cannot reorder backlog 
+title: Fix display, reordering, and nesting issues 
 titleSuffix: Azure Boards
 description: How to fix disable reorder messages due to nesting issues that occur in Azure Boards   
 ms.custom: "boards-backlogs, seodec18"  
@@ -9,7 +9,7 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/28/2020
+ms.date: 06/23/2021
 ---
 
 
