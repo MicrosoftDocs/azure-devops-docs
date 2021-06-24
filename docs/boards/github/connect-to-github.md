@@ -18,29 +18,20 @@ ms.date: 06/24/2021
 By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.  
 
 When you make the connection from Azure Boards, the list of GitHub repositories correspond to ones that you allow Azure Boards to access. You can limit which repositories Azure Boards can access overall, and limit what a particular project can access or split the management of work across different Azure Boards projects.
- 
-[!INCLUDE[temp](../includes/github-platform-support.md)]
+
+> [!NOTE]   
+> Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. 
 
 
 ## Prerequisites 
 
-::: moniker range="azure-devops"
+
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
 * You must be an administrator or owner of the GitHub repository you'll be connecting to.  
 
 > [!IMPORTANT]  
 > You can connect to multiple GitHub repositories so long as you are an administrator for those repositories. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-* You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-* You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator of the GitHub Enterprise Server you'll be connecting to. 
-
-::: moniker-end
 
 
 ## Authentication options
@@ -305,8 +296,6 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 
 <!---
 
-::: moniker range="azure-devops"
-
 ## Add a GitHub connection using OAuth 
 
 1. Sign into Azure Boards. 
@@ -346,6 +335,5 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 > [!TIP]   
 > We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected AB# mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
 
-::: moniker-end
 
 -->
