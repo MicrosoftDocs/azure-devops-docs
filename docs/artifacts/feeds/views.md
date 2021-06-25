@@ -86,6 +86,9 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     
     Keep in mind that you cannot publish a package directly to a view. Instead, you should publish the package to your feed then promote it to a view. 
 
+> [!TIP]
+> Check out the [Get started with the REST APIs](/../../integrate/how-to/call-rest-api.md) and the [REST API samples](/../../integrate/get-started/rest/samples.md) to learn how to interact with the REST API.
+
 ## Managing views
 
 You can create your own views or rename and delete existing ones in the feed settings dialog.
