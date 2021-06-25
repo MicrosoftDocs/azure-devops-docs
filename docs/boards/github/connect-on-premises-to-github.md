@@ -130,30 +130,29 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 1. Open the web portal for your Azure DevOps Server.   
 
 1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
-
+::: moniker range="azure-devops-2020"
 1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
 
-	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
+	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
 
-1.	If it is the first time making a connection from the project, choose **Connect your GitHub Enterprise Server account** to use Oauth. 
+1.	If it is the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
+	- **Connect your GitHub Enterprise Server account** to use Oauth. 
+	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
+	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
 
 	:::image type="content" source="media/github-ent/connect-github-account-first-time.png" alt-text="Screenshot of first time connecting with GitHub credentials.":::
 
 	Otherwise, choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false"::: **New connection**, and select your authentication method from the **New Connection** dialog.
+::: moniker-end
+::: moniker range="azure-devops-2019"
 
-	If connecting using PAT, see [Connect using a Personal Access Token](#github-ent-pat). If connecting using a User Name and Password, see [Connect using a Username and Password](#server-github-ent-username).
-
-2. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub Enterprise account</strong>.   
+2. Choose (1) **Project Settings**> (2) **GitHub connections**, and then (3) **Connect your GitHub Enterprise account**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Integrations](media/github-ent/open-project-settings-github-connections.png)   
 
-	Or, choose a <strong>personal access token</strong> or <strong>username and password</strong>, if you are choosing to make your connection with those credentials.
-
-	To create a PAT, see [Creating a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).
-
-	> [!TIP]  
-	> When creating your GitHub PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
+	Or, choose a **personal access token** or **username and password**, if you are using those credentials.
+::: moniker-end
 
 	#### Connect using OAuth  
 
@@ -164,22 +163,28 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 	<a id="server-github-ent-pat" />
 
-	#### Connect using a Personal Access Token  
+#### Connect using a Personal Access Token  
 
-	Enter the URL for your GitHub Enterprise server and the <strong>Personal access token</strong> credentials recognized by that server. And then choose <strong>Connect</strong>.
+1.	To create a PAT, see [Creating a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).
+
+	> [!TIP]  
+	> When creating your GitHub PAT, make sure that you include these scopes: `repo, admin:repo_hook, read:user, user:email`. 
+	
+1.	Enter the URL for your GitHub Enterprise server and the <strong>Personal access token</strong> credentials recognized by that server. And then choose **Connect**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Sign in with personal access token.](media/github-ent/ads-add-ghe-pat.png)  
 
 	<a id="server-github-ent-username" />
-	#### Connect using a Username and Password   
 
-	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose <strong>Connect</strong>.
+#### Connect using a Username and Password   
+
+1.	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose **Connect**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Sign in with username and password.](media/github-ent/ads-add-ghe-user-name.png)  
 
-3. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between <strong>Mine</strong> and <strong>All</strong> to determine if others appear, and then check the ones that you want to add. Choose <strong>Save</strong> when done.
+1. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between **Mine** and **All** to determine if others appear, and then check the ones that you want to add. Choose **Save** when done.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
@@ -188,7 +193,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 ## Add or remove repositories, or remove a connection 
 
-1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
+1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose **Add** repositories or **Remove repositories** from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  

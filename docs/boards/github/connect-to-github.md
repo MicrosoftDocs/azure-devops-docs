@@ -14,9 +14,7 @@ ms.date: 06/24/2021
 
 **Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
 
-
-<!--- Supports https://go.microsoft.com/fwlink/?linkid=2095009 --> 
-
+ 
 
 To support linking of GitHub commits and pull requests to Azure Boards work items, you start by connecting your Azure Boards project to GitHub.com repositories. You can use GitHub for software development while using Azure Boards to plan and track your work.  
 
