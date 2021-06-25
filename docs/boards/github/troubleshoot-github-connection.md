@@ -134,7 +134,10 @@ To resolve the problem, consider the following:
 - **Fix the webhook url**:
   Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
 
-  
+
+## Related articles
+
+- [Add or remove GitHub repositories](add-remove-repositories.md)
 
 
 
