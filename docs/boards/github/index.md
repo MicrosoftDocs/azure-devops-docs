@@ -25,24 +25,11 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 > Azure DevOps only supports integation with GitHub repositories or Azure Repos Git repositories. Integration with other Git repositories is not supported.  
   
 
-[!INCLUDE[temp](../includes/github-platform-support.md)]
-
-::: moniker range="azure-devops"
-
-If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up for free and invite others to collaborate on your project](../get-started/sign-up-invite-teammates.md). You can also sign up and sign in using your GitHub credentials. 
-
-> [!div class="mx-imgBorder"]  
-> ![GitHub signin](media/sign-in.png)   
-
-In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to Xbox.
-
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 To connect Azure Boards to GitHub.com, [connect and configure from Azure Boards](connect-to-github.md). Or, alternatively, [install and configure the Azure Boards app from GitHub](install-github-app.md). Both methods have been streamlined and support authenticating and operating via the app rather than an individual. 
 
-To connect Azure Boards to a GitHub Enterprise Server, see [connect from Azure Boards](connect-to-github.md#server-github-ent-oauth-register) . 
+To connect Azure Boards to a GitHub Enterprise Server, see [connect from Azure Boards](connect-to-github.md#server-github-ent-oauth-register). 
 
 Once you've configured the connection, you can then exercise these features:
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
@@ -56,6 +43,19 @@ Integration steps include:
 - [Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)](connect-on-premises-to-github.md)
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
 - [Configure status badges](configure-status-badges.md)
+
+::: moniker-end
+
+
+
+::: moniker range="azure-devops"
+
+If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up for free and invite others to collaborate on your project](../get-started/sign-up-invite-teammates.md). You can also sign up and sign in using your GitHub credentials. 
+
+> [!div class="mx-imgBorder"]  
+> ![GitHub signin](media/sign-in.png)   
+
+In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to Xbox.
 
 ::: moniker-end
 
