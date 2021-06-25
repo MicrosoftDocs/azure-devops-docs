@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ms.date: 06/24/2021
 ---
 
-# Connect Azure Boards to GitHub  
+# Connect Azure Boards to GitHub (Cloud) 
 
 **Azure Boards** | [**Azure DevOps Server 2020 | Azure DevOps Server 2019**](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
 
@@ -76,7 +76,7 @@ The following authentication options are supported based on the GitHub platform 
 
 	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
-	**Authenticate with GitHub credentials**
+### Authenticate with GitHub credentials 
 
 1. 	If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
 
@@ -93,9 +93,9 @@ The following authentication options are supported based on the GitHub platform 
 
 	Otherwise, the system will automatically recognize your GitHub organization as your GitHub account has previously been associated with your Azure DevOps Services account. 
 
-	**Choose the repositories to connect to**
+### Choose the repositories to connect to 
 
-1. The **Add GitHub Repositories** dialog automatically displays and selects all GitHub.com repositories for which you are an administrator. Unselect any repositories that you don't want to participate in the integration. 
+1. The **Add GitHub Repositories** dialog automatically displays and selects all GitHub.com repositories for which you are an administrator for the organization you selected. Unselect any repositories that you don't want to participate in the integration. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose your GitHub repositories.](media/github/add-github-repos.png)  
@@ -110,6 +110,8 @@ The following authentication options are supported based on the GitHub platform 
 	The GitHub connections feature only allows one repository to be connected an Azure Boards project. 
 
 1. When done, choose **Save**.
+2. 
+### Confirm the connection 
 
 1. Review the GitHub page that displays and then choose **Approve, Install, & Authorize**.
 
@@ -279,9 +281,6 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 1. To add or remove repositories, open  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the connection and choose **Add repositories** or **Remove repositories** from the menu. 
 
 	:::image type="content" source="media/connect-cloud/connection-menu.png" alt-text="Screenshot of GitHub connection menu of More options.":::
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  
 
 1. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose **Remove connection** to confirm.
 

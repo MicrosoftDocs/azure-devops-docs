@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019 < azure-devops'
 ms.date: 06/24/2021
 ---
 
-# Connect Azure DevOps Server to GitHub Enterprise Server 
+# Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)
 
 [**Azure Boards**](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true) | **Azure DevOps Server 2020 | Azure DevOps Server 2019**
 
@@ -154,14 +154,15 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	Or, choose a **personal access token** or **username and password**, if you are using those credentials.
 ::: moniker-end
 
-	#### Connect using OAuth  
+#### Connect using OAuth  
 
 	Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth), and then choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](media/github-ent/new-github-ent-connect-oauth.png)  
 
-	<a id="server-github-ent-pat" />
+<a id="server-github-ent-pat" /> 
+<a id="github-ent-pat" /> 
 
 #### Connect using a Personal Access Token  
 
@@ -189,7 +190,6 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
- 
 
 ## Add or remove repositories, or remove a connection 
 
