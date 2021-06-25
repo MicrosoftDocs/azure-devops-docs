@@ -215,7 +215,7 @@ To create a tag directly from the history view, right-click the desired commit a
 >[!IMPORTANT]
 >Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
 
-To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). Force push permissions for a branch are also automatically inherited by the branch creator.
+To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set). Force push permissions for a tag are also automatically inherited by the tag creator.
 
 #### [Browser](#tab/browser)
 
