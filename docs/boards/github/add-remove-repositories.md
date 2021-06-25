@@ -12,22 +12,38 @@ ms.date: 06/24/2021
 
 # Add or remove GitHub repositories 
 
-
 [!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
+
+Learn how to add or remove GitHub repositories from a GitHub connection made for Azure Boards. Or, remove a connection previously made. 
+
+> [!TIP]    
+> If you encounter a problem with a connection, we recommend that you remove the connection and start over with a new connection.  
+
+
+[!INCLUDE[temp](../includes/github-platform-support.md)]
+
+
+## Prerequisites 
+
+* To add or remove repositories or remove a connection, you must be the person who created the connection or belong to the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md). 
+* To add  repositories, you must be an administrator or owner of the GitHub repository you'll connect to.  
+
+> [!IMPORTANT]  
+> You can connect to multiple GitHub repositories so long as you are an administrator for those repositories. 
+> 
 
 ## Open Project Settings>GitHub Connections
 
 1. Sign into the web portal for your Azure Boards project.  
 
 1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
-
-::: moniker range="azure-devops"
+	::: moniker range="azure-devops"
 	:::image type="content" source="media/connect-cloud/open-project-settings-github-connections.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::
-::: moniker-end
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+	::: moniker-end
+	::: moniker range="azure-devops-2019 || azure-devops-2020"
 	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
-::: moniker-end
+	::: moniker-end
 
 ## Add or remove repositories, or remove a connection 
 
@@ -46,7 +62,6 @@ ms.date: 06/24/2021
 
 	> [!div class="mx-imgBorder"]  
 	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
-
 
 
 ## Related articles

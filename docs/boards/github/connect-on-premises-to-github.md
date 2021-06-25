@@ -26,7 +26,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
  
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator of the GitHub Enterprise Server you'll be connecting to. 
+* You must be an administrator of the GitHub Enterprise Server you'll connect to. 
  
 
 ## Authentication options
@@ -205,6 +205,6 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 
 - [Add or remove GitHub repositories](add-remove-repositories.md)
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
-- [Install and configure the Azure Boards app for GitHub](install-github-app.md)
-- [Configure status badges to add to GitHub README files](configure-status-badges.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
+- [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
+- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
