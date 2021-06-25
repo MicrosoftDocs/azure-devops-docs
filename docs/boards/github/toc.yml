@@ -1,4 +1,4 @@
-- name: Connect to GitHub
+- name: GitHub integration
   href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Connect Azure Boards (Cloud)  
   href: connect-to-github.md

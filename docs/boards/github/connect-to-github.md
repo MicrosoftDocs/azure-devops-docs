@@ -28,7 +28,7 @@ When you make the connection from Azure Boards, the list of GitHub repositories 
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
-* You must be an administrator or owner of the GitHub repository you'll be connecting to.  
+* You must be an administrator or owner of the GitHub repository you'll connect to.  
 
 > [!IMPORTANT]  
 > You can connect to multiple GitHub repositories so long as you are an administrator for those repositories. 
@@ -276,7 +276,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
 	> [!TIP]    
-	> You can only make a connection to repositories defined under one GitHub organization. To connect a project to other repositories defined in another GitHub organization, you must add another connection. 
+	> You can only make a connection to repositories defined under one GitHub organization. To connect a project to other repositories defined in another GitHub organization, you must add another connection.  
 
 ## Resolve connection issues
 
@@ -295,7 +295,9 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
-
+- [Build GitHub repositories](../../pipelines/repos/github.md) 
+- [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
+- [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
 
 
 <!---
