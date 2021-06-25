@@ -52,7 +52,8 @@ Currently, there is no way to work around this issue, so we recommend that you c
 ::: moniker range=">= azure-devops-2020"
 When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X. Hover over the alert and it indicates that the credentials are no longer valid. To correct the problem, remove the connection and recreate a new connection.
 
-	:::image type="content" source="media/troubleshoot/failed-connection.png" alt-text="Screenshot of failed connection.":::
+:::image type="content" source="media/troubleshoot/failed-connection.png" alt-text="Screenshot of failed connection.":::
+
 ::: moniker-end
  
 ::: moniker range="azure-devops-2019"
