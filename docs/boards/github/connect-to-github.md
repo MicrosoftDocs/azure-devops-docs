@@ -60,9 +60,9 @@ The following authentication options are supported based on the GitHub platform 
  
 
  
-## Add a GitHub connection    
+## Open Project Settings>GitHub Connections.
 
-1. Sign into Azure Boards.  
+1. Sign into Azure Boards for the project you want to connect to GitHub repositories.  
 
 1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
 
@@ -76,7 +76,7 @@ The following authentication options are supported based on the GitHub platform 
 
 	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
-### Authenticate with GitHub credentials 
+## Add a GitHub connection with GitHub credentials 
 
 1. 	If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
 
@@ -274,18 +274,9 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
- 
 
-## Add or remove repositories, or remove a connection 
-
-1. To add or remove repositories, open  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the connection and choose **Add repositories** or **Remove repositories** from the menu. 
-
-	:::image type="content" source="media/connect-cloud/connection-menu.png" alt-text="Screenshot of GitHub connection menu of More options.":::
-
-1. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose **Remove connection** to confirm.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
+	> [!TIP]    
+	> You can only make a connection to repositories defined under one GitHub organization. To connect a project to other repositories defined in another GitHub organization, you must add another connection. 
 
 ## Resolve connection issues
 
@@ -299,6 +290,7 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 
 ## Related articles
 
+- [Add or remove GitHub repositories](add-remove-repositories.md)
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)

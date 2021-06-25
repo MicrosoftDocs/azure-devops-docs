@@ -10,6 +10,8 @@
   href: link-to-from-github.md
 - name: Configure status badges
   href: configure-status-badges.md
+- name: Add or remove repositories
+  href: add-remove-repositories.md
 - name: Troubleshoot GitHub connection
   href: troubleshoot-github-connection.md
 

@@ -156,7 +156,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 #### Connect using OAuth  
 
-	Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth), and then choose <strong>Connect</strong>. 
+- Choose the configuration that you set up in [Step 4 of Register your OAuth configuration in Azure DevOps Server](#register-server-github-ent-oauth), and then choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![New GitHub Enterprise connection, OAuth dialog](media/github-ent/new-github-ent-connect-oauth.png)  
@@ -191,18 +191,6 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
 
-## Add or remove repositories, or remove a connection 
-
-1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose **Add** repositories or **Remove repositories** from the menu. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  
-
-1. To remove all repositories and the connection, choose the <strong>Remove connection</strong> option. Then, choose <strong>Remove</strong> to confirm.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
-
 ## Resolve connection issues
 
 See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.md).
@@ -215,6 +203,7 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 
 ## Related articles
 
+- [Add or remove GitHub repositories](add-remove-repositories.md)
 - [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
 - [Install and configure the Azure Boards app for GitHub](install-github-app.md)
 - [Configure status badges to add to GitHub README files](configure-status-badges.md)
