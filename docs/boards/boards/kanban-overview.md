@@ -161,15 +161,39 @@ To learn more, see the following articles:
 
 [!INCLUDE [temp](../includes/display-leaf-nodes.md)]
 
-<a id="limits-multi-team" />
+<a id="limits-multi-team" /> 
+<a id="limitations-of-multi-team-kanban-board-views" /> 
 
-## Limitations of multi-team Kanban board views 
+## Exercising select features with multi-team ownership 
 
-While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
-Only when the work item state changes does the card column reflect the same on all boards.
+When you share area paths across two or more teams, you'll want to understand how Azure Boards manages conflicts that can arise when exercising these features: 
+- Reordering or reparenting work items on a backlog or board
+- Updates made to Kanban Board Column, Done, and Lane fields when dragging items to a different column 
 
-[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
+### Reordering and reparenting work items 
 
+All backlogs and boards support drag-and-drop to reorder and reparent work items. Updates made to one team backlogs and boards are reflected in other team backlogs and boards that share the same area path. You may need to refresh the page to view the changes. 
+
+You can only use drag-and-drop to reorder or reparent work items assigned to area paths selected for your team. When the **Parents** view option is enabled, work items may appear on your backlog that your team doesn't own. Anything that appears with the :::image type="icon" source="../../media/icons/info.png" border="false"::: information icon can't be reordered nor reparented as it is owned by another team.  
+ 
+:::image type="content" source="../plans/media/config-teams/information-message-owned-by-other-team.png" alt-text="Screenshot of information message on team ownership.":::
+
+
+### Kanban board column updates  
+
+Because each team can customize the Kanban board columns and swimlanes, the values assigned to Kanban board fields may differ from what you expect when another team updates the work item from a different board. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating work items on one team's Kanban board won't be reflected on another team's Kanban board. Only when the work item moves to a column that maps to a workflow state does the card column reflect the same on all boards.
+
+By design, the team with the longest area path wins the conflict and determines the values for the Kanban **Board Column**, **Board Column Done**, and **Board Lane** fields. If the shared area shared area paths are of equal depth, the results are non-deterministic.  
+ 
+::: moniker range=">= azure-devops-2019"
+ The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize the workflow (Inheritance process)](../../organizations/settings/work/customize-process-workflow.md). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+ The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+::: moniker-end
+ 
 
 ## Permissions and access
 
