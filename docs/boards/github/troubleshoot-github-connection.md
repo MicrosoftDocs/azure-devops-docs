@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/09/2020
+ms.date: 06/24/2021
 ---
 
 # Troubleshoot GitHub & Azure Boards connection 
@@ -49,8 +49,16 @@ Currently, there is no way to work around this issue, so we recommend that you c
 
 ## Resolve connection issues
 
-When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X that has a tooltip such as, *Unable to connect to GitHub*.
+::: moniker range=">= azure-devops-2020"
+When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X. Hover over the alert and it indicates that the credentials are no longer valid. To correct the problem, remove the connection and recreate a new connection.
+
+	:::image type="content" source="media/troubleshoot/failed-connection.png" alt-text="Screenshot of failed connection.":::
+::: moniker-end
  
+::: moniker range="azure-devops-2019"
+When the Azure Boards connection to GitHub no longer has access, it shows an alert status in the user interface with a red-X that has a tooltip such as, *Unable to connect to GitHub*.
+::: moniker-end
+
 To resolve the problem, consider the following:  
 
 - **If the connection is using OAuth**:
@@ -73,7 +81,7 @@ To resolve the problem, consider the following:
 
 If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 
 
-For example, if you want to link user stories and bugs to GitHub commits and pull requests from the Development section, then you need to update the XML definitions for user stories and bugs. 
+For example, if you want to link user stories and bugs to GitHub commits and pull requests from the **Development** section, you need to update the XML definitions for user stories and bugs. 
 
 Follow the sequence of tasks provided in [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to update the XML definitions. For each work item type, find the `Group Label="Development"` section, and add the following two lines in the following code syntax to support the external links types: **GitHub Commit** and **GitHub Pull Request**.  
 

@@ -2,13 +2,12 @@
 title: Enable Kanban board badge status for GitHub repo
 titleSuffix: Azure Boards
 description: Configure your Kanban board badge status to appear on your GitHub repo  
-ms.assetid: 
 ms.technology: devops-agile
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/09/2020
+ms.date: 06/24/2021
 ---
 
 # Configure status badges to add to GitHub README files 
@@ -18,10 +17,8 @@ ms.date: 07/09/2020
 You can add Markdown syntax to a GitHub repo README.md file to display the status of your Kanban board. You do this by adding the syntax you choose from your Kanban board settings.  
 
 ::: moniker range="azure-devops-2019"
-
 > [!NOTE]   
 > Requires Azure DevOps Server 2019 Update 1 or later version. 
-
 ::: moniker-end
 
 The syntax shown works whether you have or haven't [connected your project to a GitHub.com or GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
@@ -30,8 +27,8 @@ The syntax shown works whether you have or haven't [connected your project to a 
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
 * You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
-* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the <strong>Project Administrators</strong> security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
-* You must be granted <strong>Stakeholder</strong> access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
+* You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
+* You must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
 
 
@@ -46,17 +43,25 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-1. Choose <strong>Status badge</strong> and then check or uncheck the <strong>Allow anonymous users to access the status badge</strong>. When unchecked, users who aren't signed in can still view the status badge.
+1. Choose **Status badge** and then check or uncheck the **Allow anonymous users to access the status badge**. When unchecked, users who aren't signed in can still view the status badge.
 
-	> [!div class="mx-imgBorder"]
-	> ![Settings,Status badge](media/badges/status-badge.png) 
+	::: moniker range=">= azure-devops-2020"
+	:::image type="content" source="media/badges/status-badge-s188.png" alt-text="Kanban Board Settings dialog,Status badge tab.":::
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
+	:::image type="content" source="media/badges/status-badge.png" alt-text="Kanban Board Settings dialog,Status badge tab, Azure DevOps Server 2019.":::
+	::: moniker-end
 
 1. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 
-	In progress items ignores the first and last columns.
-	All columns includes the first and last columns. 
+	**Show "In progress" columns only** ignores the first and last columns.  
+	**Include all columns** includes the first and last columns of the board.  
 	
-	Also, you can customize the set of columns by specifying `2` for the columnOptions and then a comma-delimited list of the board columns to appear. For example, `columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review`, as shown in the following syntax. For column labels that include spaces, you must encode the space with <strong>%20</strong>. For example, <strong>In%20Progress</strong>.
+	Also, you can customize the set of columns by specifying `2` for the columnOptions and then a comma-delimited list of the board columns to appear. For example, `?columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review`, as shown in the following syntax. For column labels that include spaces, you must encode the space with `%20`. For example, `In%20Progress`.
+
+	```
+	[![Board Status](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/_apis/work/boardbadge/6fa7b56f-d27c-4e96-957d-f9e7b0f56705?columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review)](https://dev.azure.com/fabrikam/677da0fb-b067-4f77-b89b-f32c12bb8617/_boards/board/t/cdf5e823-1179-4503-9fb1-a45e2c1bc6d4/Microsoft.RequirementCategory/)
+	```
 
 	> [!div class="mx-imgBorder"]
 	> ![Customize the set of columns that appear.](media/badges/badge-syntax.png) 
