@@ -62,6 +62,22 @@ If you want to manually publish your Artifact, run the following command in an e
 az pipelines runs artifact upload --artifact-name your_artifact_name --path your_path_to_publish --run-id '<artifact_run_id>'
 ```
 
+## View published Artifacts
+
+When your pipeline run is completed you can view or download your published Artifact as follows
+
+1. Select your pipeline run, and then select the **Summary** tab.
+
+1. Select the published Artifact in the related section.
+
+    :::image type="content"  source="./media/published-artifact.png" alt-text="View published Artifact"::: 
+
+1. Expand the drop folder and find your Artifact.
+
+    :::image type="content"  source="./media/drop-artifacts.png" alt-text="View the drop content":::
+
+1. Download your pipeline Artifact and explore its content.
+
 ## Related articles
 
 - [Releases in Azure Pipelines](/release/releases.md)
