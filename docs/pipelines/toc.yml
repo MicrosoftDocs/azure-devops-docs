@@ -239,6 +239,9 @@
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
       displayName: platforms, multiplaform
+    - name: Publish Pipeline Artifacts
+      href: publish-pipeline-artifact.md
+      displayName: publish, artifacts
     - name: Use service containers
       href: process/service-containers.md
       displayName: containers, service containers
