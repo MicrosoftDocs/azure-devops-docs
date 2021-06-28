@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
- Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CI process with most Azure services. 
+ Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to test and build your code and ship it to any target. While you do not have to use Azure services with Pipelines, Pipelines can help you take advantage of Azure. You can use Pipelines to integrate your CI/CD process with most Azure services. 
 
 To learn more about selecting an Azure service for hosting your application code, see [Choose an Azure compute service for your application](/azure/architecture/guide/technology-choices/compute-decision-tree).
 
