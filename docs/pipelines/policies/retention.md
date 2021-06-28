@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 05/14/2021
+ms.date: 06/28/2021
 ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
@@ -230,6 +230,19 @@ configure settings for their definitions beyond the values specified here.
 The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+### Set collection-level retention policies
+
+For on-premises servers, you can also set the collection-level retention policies. These retention policies apply to Classic build pipelines can be configured with custom retention rules. The page at `https://{your_server}/{collection_name}/_settings/buildqueue` governs the maximum values and the defaults. 
+
+You can configure days to keep and minimum to keep for both the maximum and default retention policy. You can also configure the days to keep build record after deletion. 
+
+:::image type="content" source="media/retention-settings-server.png" alt-text="Configure server collection settings":::
+
+::: moniker-end
+
 
 ::: moniker range="<=tfs-2018"
 
