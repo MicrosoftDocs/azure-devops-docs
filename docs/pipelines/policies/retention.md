@@ -235,7 +235,7 @@ The **destruction policy** helps you keep the releases for a certain period of t
 ::: moniker range=">= tfs-2018"
 ## Set collection-level retention policies
 
-For on-premises servers, you can also set the collection-level retention policies with custom retention rules. These retention policies apply to Classic build pipelines. The page at `https://{your_server}/{collection_name}/_settings/buildqueue` governs your maximum values and the default values. 
+For on-premises servers, you can also set the collection-level retention policies with custom retention rules. These retention policies apply to Classic build pipelines. The page at `https://{your_server}/{collection_name}/_settings/buildqueue` governs your maximum values and default values. 
 
 :::image type="content" source="media/retention-settings-server.png" alt-text="Configure server collection settings":::
 
