@@ -4,8 +4,6 @@
   href: get-started/pipelines-get-started.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
-- name: Deploy to Azure
-  href: overview-azure.md
 - name: Get started
   items:
     - name: Sign up for Azure Pipelines
@@ -312,44 +310,6 @@
           href: ecosystems/deploy-linux-vm.md
         - name: Manage a VM in Azure DevTest Labs
           href: apps/cd/azure/deploy-provision-devtest-lab.md
-    - name: Deploy apps to Azure
-      items:
-        - name: Use a Resource Manager template to deploy
-          href: apps/cd/azure/deploy-arm-template.md
-          displayName: Resource Manager, ARM, azure
-        - name: Deploy a data pipeline with Azure
-          items:
-            - name: Data pipeline overview
-              href: apps/cd/azure/cicd-data-overview.md
-              displayName: data science, machine learning
-            - name: Build a data pipeline
-              href: apps/cd/azure/build-data-pipeline.md
-        - name: Deploy a virtual machine scale set
-          href: apps/cd/azure/deploy-virtual-scale-set-java.md
-          displayName: vmss, custom image
-        - name: Azure Government Cloud
-          href: library/government-cloud.md
-        - name: Azure Resource Manager
-          href: library/connect-to-azure.md
-          displayName: resource manager, service connection, service principal
-        - name: Azure SQL database
-          href: targets/azure-sqldb.md
-        - name: Azure App Service
-          href: targets/deploy-to-azure-vscode.md
-        - name: Azure Stack
-          href: targets/azure-stack.md
-        - name: Function App on Container
-          href: targets/function-app-container.md
-        - name: Function App on Linux
-          href: targets/azure-functions.md
-        - name: Function App on Windows
-          href: targets/azure-functions-windows.md
-        - name: Web App on Linux
-          href: targets/webapp-linux.md
-        - name: Web App on Linux Container
-          href: targets/webapp-on-container-linux.md
-        - name: Web App on Windows
-          href: targets/webapp.md
     - name: Deploy mobile apps
       items:
         - name: Manage signing certificates
@@ -379,29 +339,6 @@
     - name: View release progress and test results
       href: release/visualize-release-test-progress.md
       displayName: release status, test summary
-    - name: Deploy apps to Azure (Classic)
-      items:
-        - name: Azure Web App (Classic)
-          href: apps/cd/deploy-webdeploy-webapps.md
-          displayName: web app, webdeploy
-        - name: Azure Web App for Containers (Classic)
-          href: apps/cd/deploy-docker-webapp.md
-          displayName: containers, docker, azure web app
-        - name: Azure Kubernetes Service (Classic)
-          href: apps/cd/deploy-aks.md
-          displayName: kubernetes, classic release
-        - name: Azure IoT Edge (Classic)
-          href: release/deploy-iot-using-azure-pipelines.md
-          displayName: iot, edge
-        - name: Azure Cosmos DB CI/CD (Classic)
-          href: targets/cosmos-db.md
-          displayName: cosmos, db, database
-        - name: Azure Policy Compliance (Classic)
-          href: policies/azure-policy.md
-          displayName: policy, compliance
-        - name: Azure VM using Azure Resource Manager (Classic)
-          href: apps/cd/azure/deploy-provision-azure-vm.md
-          displayName: arm, azure vm
     - name: Deploy apps to VMs (Classic)
       items:
         - name: Linux VMs (Classic)
@@ -422,6 +359,75 @@
         - name: VMware (Classic)
           href: targets/vmware.md
           displayName: vmware, targets
+- name: Deploy to Azure
+  items:
+    - name: Deploy to Azure overview
+      href: overview-azure.md
+    - name: Azure Resource Manager service connection
+      href: library/connect-to-azure.md
+      displayName: resource manager, service connection, service principal
+    - name: Azure App Service (Web Apps)
+      items:
+        - name: Web App on Linux
+          href: targets/webapp-linux.md
+        - name: Web App on Linux Container
+          href: targets/webapp-on-container-linux.md
+        - name: Web App on Windows
+          href: targets/webapp.md
+        - name: Visual Studio Code Deploy to Azure extension
+          href: targets/deploy-to-azure-vscode.md
+        - name: Azure Web App (Classic)
+          href: apps/cd/deploy-webdeploy-webapps.md
+          displayName: web app, webdeploy
+        - name: Azure Web App for Containers (Classic)
+          href: apps/cd/deploy-docker-webapp.md
+          displayName: containers, docker, azure web app
+    - name: Azure Functions
+      items:
+        - name: Function App on Container
+          href: targets/function-app-container.md
+        - name: Function App on Linux
+          href: targets/azure-functions.md
+        - name: Function App on Windows
+          href: targets/azure-functions-windows.md
+    - name: Azure Resource Manager (ARM) templates
+      items:
+        - name: Use a Resource Manager template to deploy
+          href: apps/cd/azure/deploy-arm-template.md
+          displayName: Resource Manager, ARM, azure
+        - name: Azure VM using Azure Resource Manager (Classic)
+          href: apps/cd/azure/deploy-provision-azure-vm.md
+     - name: Azure Databricks
+       items:
+        - name: Data pipeline overview
+          href: apps/cd/azure/cicd-data-overview.md
+          displayName: data science, machine learning
+        - name: Build a data pipeline
+          href: apps/cd/azure/build-data-pipeline.md
+     - name: Azure Databases
+       items:
+       - name: Azure SQL database
+         href: targets/azure-sqldb.md
+       - name: Azure Cosmos DB CI/CD (Classic)
+         href: targets/cosmos-db.md
+         displayName: cosmos, db, database
+     - name: Azure Virtual Machine Scale Set
+        - name: Deploy a virtual machine scale set
+          href: apps/cd/azure/deploy-virtual-scale-set-java.md
+          displayName: vmss, custom image
+     - name: Azure Government Cloud
+       href: library/government-cloud.md
+     - name: Azure Stack
+       href: targets/azure-stack.md
+     - name: Azure Kubernetes Service (Classic)
+       href: apps/cd/deploy-aks.md
+       displayName: kubernetes, classic release
+     - name: Azure IoT Edge (Classic)
+       href: release/deploy-iot-using-azure-pipelines.md
+       displayName: iot, edge
+     - name: Azure Policy Compliance (Classic)
+       href: policies/azure-policy.md
+       displayName: policy, compliance
 - name: Deploy apps using containers
   items:
     #  - name: Orchestration overview (New)
