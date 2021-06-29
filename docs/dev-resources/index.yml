@@ -24,7 +24,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Get Started with Azure DevOps CLI
-            url: ../cli/index.md
+            url: ../cli/index.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json
           - text: Sign in with a Personal Access Token (PAT)
             url: ../cli/log-in-via-pat.md
           - text: Configure policies

@@ -29,7 +29,7 @@ You can use the code review and feedback fields to create queries and reports th
 
 ## Fields used to track code reviews  
 
- The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../repos/tfvc/index.yml). A code review response is created for each person who's been requested to provide review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
+ The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../repos/tfvc/index.yml). A code review response is created for each person who provides review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
 > [!NOTE]   
 > Retrieving code review comments programmatically isn't a supported feature. 
@@ -54,7 +54,7 @@ You can use the code review and feedback fields to create queries and reports th
 <a name="feedback"></a> 
 
 ## Fields used to track feedback  
- The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is requested. See [Get feedback](../../../project/feedback/get-feedback.md).  
+ The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is provided. See [Get feedback](../../../project/feedback/get-feedback.md).  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  

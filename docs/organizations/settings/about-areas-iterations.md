@@ -3,7 +3,7 @@ title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
 description: Understand how areas and iterations are used in Azure DevOps.
 ms.technology: devops-agile
-ms.assetid: 
+ms.custom: linked-from-support
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -159,7 +159,7 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 ### Supported field rules  
 
-You can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
+You can [specify only a small subset of rules](../../organizations/settings/work/rule-reference.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
 <a name="team-field"></a>
 

@@ -1,4 +1,4 @@
-- name: "About wikis, READMes, & Markdown"
+- name: "About wikis, READMEs, & Markdown"
   href: about-readme-wiki.md  
 - name: Provisioned versus published wikis 
   href: provisioned-vs-published-wiki.md

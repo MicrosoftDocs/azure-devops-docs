@@ -2,6 +2,7 @@
 title: Set permissions and access for work tracking
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to work tracking tasks for Azure DevOps & Team Foundation Server
+ms.custom: "boards-permissions, linked-from-support"
 ms.technology: devops-agile
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli

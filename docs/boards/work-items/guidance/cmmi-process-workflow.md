@@ -316,7 +316,7 @@ You can customize the Kanban board to support additional [swim lanes](../../boar
 
 ## Map requirements to features
 
-hen you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
+When you manage a suite of products or user experiences, you might want to view the scope and progress of work across the product portfolio. You can do this by [defining features](../../backlogs/define-features-epics.md) and [mapping requirements to features](../../backlogs/organize-backlog.md).
 
 Using portfolio backlogs, you can [drill down from one backlog to another](../../plans/portfolio-management.md) to view the level of detail you want. Also, you can use portfolio backlogs to view a rollup of work in progress across several teams when you [setup a hierarchy of teams](../../../organizations/settings/add-teams.md).
 

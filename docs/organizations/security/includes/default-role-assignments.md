@@ -1,5 +1,4 @@
  
----
 :::row:::
    :::column span="2":::
       **Task**
@@ -17,7 +16,6 @@
       **Service Accounts**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Agent pools (project-level)
@@ -35,7 +33,6 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Agent pools (organization-level)
@@ -53,7 +50,6 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Deployment pools (organization-level)
@@ -71,7 +67,6 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Deployment groups (project-level)
@@ -89,7 +84,6 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Library assets (project-level)
@@ -107,7 +101,6 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Marketplace extension (organization-level)
@@ -125,7 +118,6 @@
       
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
      Service connections  (project-level)
@@ -143,7 +135,7 @@
       Administrator
    :::column-end:::
 :::row-end:::
----
+
 
 
  

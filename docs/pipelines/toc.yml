@@ -31,6 +31,8 @@
   items:
     - name: Key concepts
       href: get-started/key-pipelines-concepts.md
+    - name: YAML pipeline editor
+      href: get-started/yaml-pipeline-editor.md
     - name: Repositories
       items:
         - name: Supported repositories
@@ -237,6 +239,9 @@
     - name: Build on multiple platforms
       href: get-started-multiplatform.md
       displayName: platforms, multiplaform
+    - name: Publish Pipeline Artifacts
+      href: publish-pipeline-artifact.md
+      displayName: publish, artifacts
     - name: Use service containers
       href: process/service-containers.md
       displayName: containers, service containers
@@ -258,6 +263,9 @@
     - name: Classic Build options
       href: build/options.md
       displayName: classic build, build options
+    - name: Use tasks to increase run retention
+      href: build/run-retention.md
+      displayName: retention, pipelines, runs
 - name: Run pipeline tests
   items:
     - name: About pipeline tests
@@ -350,16 +358,16 @@
           href: apps/mobile/secure-certs.md
 - name: Deploy apps (Classic)
   items:
-    - name: Release pipelines
+    - name: Release pipelines overview
       href: release/index.md
       displayName: release, deploy, deployment
     - name: Deploy from multiple branches
       href: release/deploy-multiple-branches.md
       displayName: multiple branches, deployment
-    - name: Deploy pull request builds
+    - name: Deploy pull request Artifacts
       href: release/deploy-pull-request-builds.md
       displayName: pr release, deployment
-    - name: Classic CD pipelines
+    - name: Classic release pipelines
       href: release/define-multistage-release-process.md
       displayName: classic release, classic deployment
     - name: Pipelines with PowerShell DSC
@@ -368,6 +376,9 @@
     - name: Stage templates in Azure Pipelines
       href: release/env-templates.md
       displayName: environment, templates, stages
+    - name: View release progress and test results
+      href: release/visualize-release-test-progress.md
+      displayName: release status, test summary
     - name: Deploy apps to Azure (Classic)
       items:
         - name: Azure Web App (Classic)
@@ -974,7 +985,7 @@
     - name: REST API reference
       href: /rest/api/azure/devops/
     - name: Azure DevOps CLI
-      href: ../cli/index.md
+      href: /azure/devops/cli # Don't use .md link here because it binds to the artifacts TOC
     - name: DevOps Starter to deploy to Azure
       href: /azure/devops-project/
     - name: Azure Lab Services

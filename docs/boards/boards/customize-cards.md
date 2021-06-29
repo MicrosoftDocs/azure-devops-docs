@@ -462,7 +462,7 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > |-------------|----------|----------|    
 > |![Task annotations enabled.](media/annotate-task.png) | ![Test annotations enabled.](media/annotate-test.png) | ![Annotations disabled.](media/annotate-none.png) | 
 
-To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
+To learn more about using these features, see [Add tasks or child items as checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
 ::: moniker-end
 
@@ -481,7 +481,7 @@ To learn more about using these features, see [Add task checklists](../../boards
 	![Kanban board, Settings dialog, Annotations tab.](media/customize-cards/annotate-settings-154.png)
 
 	> [!NOTE]   
-	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Board work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+	> GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. To learn more about linking Azure Boards work items to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
 
 	When done with your changes, choose **Save**.
 
