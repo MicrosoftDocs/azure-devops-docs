@@ -7,7 +7,7 @@ author: mlearned
 ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
 ms.custom: "mvc, seodec18"
 ms.date: 05/06/2018
-monikerRange: 'azure-devops'
+# monikerRange: 'azure-devops'
 ---
 
 # Use the Azure portal
