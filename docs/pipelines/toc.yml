@@ -416,19 +416,19 @@
       - name: Deploy a virtual machine scale set
         href: apps/cd/azure/deploy-virtual-scale-set-java.md
         displayName: vmss, custom image
-     - name: Azure Government Cloud
-       href: library/government-cloud.md
-     - name: Azure Stack
-       href: targets/azure-stack.md
-     - name: Azure Kubernetes Service (Classic)
-       href: apps/cd/deploy-aks.md
-       displayName: kubernetes, classic release
-     - name: Azure IoT Edge (Classic)
-       href: release/deploy-iot-using-azure-pipelines.md
-       displayName: iot, edge
-     - name: Azure Policy Compliance (Classic)
-       href: policies/azure-policy.md
-       displayName: policy, compliance
+    - name: Azure Government Cloud
+      href: library/government-cloud.md
+    - name: Azure Stack
+      href: targets/azure-stack.md
+    - name: Azure Kubernetes Service (Classic)
+      href: apps/cd/deploy-aks.md
+      displayName: kubernetes, classic release
+    - name: Azure IoT Edge (Classic)
+      href: release/deploy-iot-using-azure-pipelines.md
+      displayName: iot, edge
+    - name: Azure Policy Compliance (Classic)
+      href: policies/azure-policy.md
+      displayName: policy, compliance
 - name: Deploy apps using containers
   items:
     #  - name: Orchestration overview (New)
