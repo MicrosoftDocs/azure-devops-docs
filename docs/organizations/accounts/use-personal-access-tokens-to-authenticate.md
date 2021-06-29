@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 06/14/2021
+ms.date: 06/29/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,10 +22,10 @@ If you're working within Microsoft tools, then your Microsoft account (MSA) or A
 
 PATs are easy to create when you need them and easy to revoke when you don’t. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually. We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, PATs are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
 
-You can create and manage your PATs through one of two ways:
+You can create and manage your PATs through one of the following ways:
 
-* the user interface in your user settings, which is described in detail below, and
-* through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md).
+* the user interface in your user settings, which is described in detail in this article
+* through the [PAT Lifecycle Management API](manage-personal-access-tokens-via-api.md)
 
 > [!IMPORTANT]
 > For organizations backed by Azure Active Directory, you have 90 days to sign in with your new PAT, otherwise it's considered inactive. For more information, see [User sign-in frequency for Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime).
@@ -48,7 +48,7 @@ A: Yes, there's a way to renew, manage, and create PATs using our [PAT Lifecycle
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops/) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
+A: No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops/) only support [OAuth](../../integrate/get-started/authentication/oauth.md). For more information, see [Manage PATs using REST API](manage-personal-access-tokens-via-api.md).
 
 ### Q: What happens if I accidentally check my PAT into a public repository on GitHub?
 
