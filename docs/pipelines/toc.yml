@@ -432,7 +432,7 @@
       items:
       - name: Build and deploy to Azure Kubernetes Service
         href: ecosystems/kubernetes/aks-template.md
-      - name: Azure Kubernetes Service (Classic)
+      - name: Deploy a Docker container app
         href: apps/cd/deploy-aks.md
         displayName: kubernetes, classic release
       - name: Deploy to AKS with Jenkins
