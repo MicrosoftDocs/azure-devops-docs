@@ -2248,12 +2248,12 @@
     },
     {
       "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-      "redirect_url": "/azure/devops-project/overview",
+      "redirect_url": "/azure/devops/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-      "redirect_url": "/azure/devops-project/overview",
+      "redirect_url": "/azure/devops/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
