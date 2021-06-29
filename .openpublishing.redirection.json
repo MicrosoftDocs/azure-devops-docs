@@ -2257,7 +2257,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/pipelines/get-started-azure-devops-project",
+      "source_path": "docs/pipelines/get-started-azure-devops-project.md",
       "redirect_url": "/azure/devops-project/overview",
       "redirect_document_id": false
     },
