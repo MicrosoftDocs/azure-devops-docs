@@ -397,24 +397,25 @@
           displayName: Resource Manager, ARM, azure
         - name: Azure VM using Azure Resource Manager (Classic)
           href: apps/cd/azure/deploy-provision-azure-vm.md
-     - name: Azure Databricks
-       items:
+    - name: Azure Databricks
+      items:
         - name: Data pipeline overview
           href: apps/cd/azure/cicd-data-overview.md
           displayName: data science, machine learning
         - name: Build a data pipeline
           href: apps/cd/azure/build-data-pipeline.md
-     - name: Azure Databases
-       items:
+    - name: Azure Databases
+      items:
        - name: Azure SQL database
          href: targets/azure-sqldb.md
        - name: Azure Cosmos DB CI/CD (Classic)
          href: targets/cosmos-db.md
          displayName: cosmos, db, database
-     - name: Azure Virtual Machine Scale Set
-        - name: Deploy a virtual machine scale set
-          href: apps/cd/azure/deploy-virtual-scale-set-java.md
-          displayName: vmss, custom image
+    - name: Azure Virtual Machine Scale Set
+      items:
+      - name: Deploy a virtual machine scale set
+        href: apps/cd/azure/deploy-virtual-scale-set-java.md
+        displayName: vmss, custom image
      - name: Azure Government Cloud
        href: library/government-cloud.md
      - name: Azure Stack
