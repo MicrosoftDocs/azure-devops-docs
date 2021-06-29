@@ -190,5 +190,5 @@ To integrate a tool with Work Item Tracking, the tool must perform the following
 
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)    
-- [Apply a field rule](apply-rule-work-item-field.md)  
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)  
 - [Change the workflow](change-workflow-wit.md)

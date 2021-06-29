@@ -23,7 +23,7 @@
   - name: Troubleshoot permissions
     href: troubleshoot-permissions.md
     displayName: security, investigate, access, problem
-- name: Manage user access
+- name: Manage user access (cloud)
   items:
   - name: About security, authentication, & authorization
     href: about-security-identity.md
@@ -31,13 +31,10 @@
   - name: About access levels
     href: access-levels.md
     displayName: security, understand, groups, levels, 
-  - name: Add users & manage access (cloud)
+  - name: Add users & manage access 
     href: ../accounts/add-organization-users.md
     displayName: create, new, identity, direct, assignment
-  - name: Change access levels (on-premises)
-    href: change-access-levels.md
-    displayName: update, security, permission, project, collection
-  - name: Add users to a project or team
+  - name: Add users or groups to a team or project
     href: add-users-team-project.md
     displayName: create, new, account, default, custom, access, permission
   - name: Remove user accounts
@@ -72,9 +69,6 @@
   - name: Provide Stakeholders access to edit pipelines
     href: provide-stakeholder-pipeline-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: permission, give, manage, configure, project
-  - name: Set up groups for use in Azure DevOps (on-premises)
-    href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    displayName: server, create, users, permission, deployment
   - name: FAQs
     items:
     - name: User & permissions management
@@ -89,6 +83,39 @@
       href: faq-github-authentication.yml
     - name: Access with Azure AD
       href: ../accounts/faq-azure-access.yml
+    - name: Set up Visual Studio
+      href: ../accounts/faq-set-up-vs.yml
+    - name: Resolve connection issues
+      href: ../../user-guide/troubleshoot-connection.md
+      displayName: problem, project, access, organization
+    - name: "TF31002: Unable to connect"
+      href: ../projects/tf31002-unable-connect-tfs.md
+      displayName: error, troubleshoot, permission, credentials, account, license
+- name: Manage user access (on-premises)
+  items:
+  - name: About security, authentication, & authorization
+    href: about-security-identity.md
+    displayName: concepts, understand, credentials, accounts, authorization, policies
+  - name: About access levels
+    href: access-levels.md
+    displayName: security, understand, groups, levels 
+  - name: Change access levels 
+    href: change-access-levels.md
+    displayName: update, security, permission, project, collection
+  - name: Add users or groups to a team or project
+    href: add-users-team-project.md
+    displayName: create, new, account, default, custom, access, permission
+  - name: Remove user accounts
+    href: remove-users-prohibit-access.md
+    displayName: delete, revoke, organization, members
+  - name: FAQs
+    items:
+    - name: User & permissions management
+      href: ../accounts/faq-user-and-permissions-management.yml
+    - name: Access and permissions FAQ
+      href: faq-permissions.yml
+    - name: Add administrators
+      href: ../accounts/faq-user-and-permissions-management.yml
     - name: Set up Visual Studio
       href: ../accounts/faq-set-up-vs.yml
     - name: Resolve connection issues
@@ -179,8 +206,11 @@
     href: ../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     displayName: settings, access, security
   - name: Git permissions prior to TFS 2017 Update 1
-    href: /azure/devops/repos/git/set-git-repository-permissions
+    href: ../../repos/git/set-git-repository-permissions.md
     displayName: settings, access, security
+  - name: Download repository permissions report
+    href: download-permissions-report.md
+    displayName: json
 - name: Secure Azure Pipelines
   items:
   - name: About pipeline security roles

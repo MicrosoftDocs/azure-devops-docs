@@ -34,9 +34,9 @@ You can create and manage your PATs through one of the following ways:
 
 ## Related articles
 
-- [About security, authentication, and authorization](../security/about-security-identity.md)
-- [Default permissions and access for Azure DevOps](../security/permissions-access.md)
-- [Revoke other users' PATs](admin-revoke-user-pats.md)
+* [About security, authentication, and authorization](../security/about-security-identity.md)
+* [Default permissions and access for Azure DevOps](../security/permissions-access.md)
+* [Revoke other users' PATs](admin-revoke-user-pats.md)
 
 ::: moniker range="azure-devops"
 

@@ -44,24 +44,31 @@
 - name: Troubleshooting 
   items:
   - name: Azure Boards FAQs 
-    href: ../boards/faqs.yml 
+    href: ../boards/faqs.yml?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
   - name: Azure Boards customization FAQs
-    href: ../organizations/settings/work/faqs.yml
+    href: ../organizations/settings/work/faqs.yml?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set up your backlogs & boards
-    href: ../boards/backlogs/set-up-your-backlog.md 
+    href: ../boards/backlogs/set-up-your-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Fix "Ordering backlog items is disabled"
-    href: ../boards/backlogs/resolve-backlog-reorder-issues.md
+    href: ../boards/backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     displayname: reorder, disable, nest, natural hierarchy, in progress  
   - name: Work item form caching
-    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md  
+    href: ../organizations/settings/work/troubleshoot-work-item-form-caching-issues.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json  
 - name: Reference
   items:
   - name: Naming restrictions
     href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Workflow states & categories
-    href: ../boards/work-items/workflow-and-state-categories.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
   - name: Work tracking object limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Work item field index
+    href: ../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Work item fields and attributes
+    href: ../boards/work-items/work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    displayname: attribute, Work Item Field Explorer
+  - name: Workflow states & categories
+    href: ../boards/work-items/workflow-and-state-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Link type reference
+    href: ../boards/queries/link-type-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area & iteration paths

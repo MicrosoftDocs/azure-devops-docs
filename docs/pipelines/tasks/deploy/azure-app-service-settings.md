@@ -73,14 +73,8 @@ steps:
     generalSettings: |
       [
         {
-          "name": "WEBAPP_NAME",
-          "value": "$(WebApp_Name)",
-          "slotSetting": false
-        },
-        {
-          "name": "WEBAPP_PLAN_NAME",
-          "value": "$(WebApp_PlanName)",
-          "slotSetting": false
+          "alwaysOn": true,
+          "webSocketsEnabled": false
         }
       ]
     connectionStrings: |

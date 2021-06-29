@@ -292,7 +292,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 
----
 :::row:::
    :::column span="1":::
       **Field name**
@@ -304,7 +303,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       **Work item types**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Activated Date (Notes 1, and 2)
@@ -317,7 +315,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Change Date 
@@ -330,7 +327,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Closed Date (Note 2)
@@ -343,7 +339,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       All</p>
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Created Date
@@ -356,7 +351,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       All 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Due Date
@@ -369,7 +363,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Issue (Agile) 
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Finish Date (Note 3)
@@ -382,7 +375,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Requirement, Task, Test Plan, User Story
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Iteration Path
@@ -395,7 +387,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       All
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Resolved Date (Notes 1 and 2)
@@ -408,7 +399,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       Start Date (Note 3)
@@ -421,7 +411,6 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Epic, Feature, Requirement, Task, Test Plan, User Story
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="1":::
       State Change Date
@@ -433,9 +422,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
    :::column span="1":::
       All
    :::column-end:::
-:::row-end:::
----
-	
+:::row-end:::	
 :::row:::
    :::column span="1":::
       Target Date
@@ -452,7 +439,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
       Epic, Feature
    :::column-end:::
 :::row-end:::
----
+
 
 
 #### Notes:

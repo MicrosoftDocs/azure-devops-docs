@@ -5,7 +5,7 @@
   - name: Add or modify a field
     href: ../add-modify-field.md
   - name: Apply a field rule
-    href: apply-rule-work-item-field.md
+    href: ../../organizations/settings/work/rule-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Define pick lists
     href: define-pick-lists.md
   - name: Expand list and exclude groups
