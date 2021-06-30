@@ -289,7 +289,7 @@ The final image will be published to Docker or Azure Container Registry
 
    ```Dockerfile
    # Build and run tests inside the docker container
-   FROM microsoft/dotnet:2.1-sdk
+   FROM mcr.microsoft.com/dotnet/sdk:2.1
    WORKDIR /app
    # copy the contents of agent working directory on host to workdir in container
    COPY . ./
@@ -311,7 +311,7 @@ The final image will be published to Docker or Azure Container Registry
    # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
-   FROM microsoft/aspnetcore:2.0
+   FROM dotnet/core/aspnet:2.1
    # Create app directory
    WORKDIR /app
    # Copy only the deployment artifacts
