@@ -28,7 +28,7 @@ This is a step-by-step guide to using Azure Pipelines with Azure Functions for W
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+To use sample code instead, fork this GitHub repo:
 
 ```
     https://github.com/microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/functionApp
@@ -38,8 +38,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
-
+To use sample code instead, fork this GitHub repo:
 ```
     https://github.com/MicrosoftDocs/pipelines-java-function
 ```
@@ -48,8 +47,7 @@ However, if you are a new user, then you might get a better start by using our s
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
-
+To use sample code instead, fork this GitHub repo:
 ```
     https://github.com/microsoft/devops-project-samples/tree/master/node/plain/functionApp
 ```
@@ -61,7 +59,7 @@ However, if you are a new user, then you might get a better start by using our s
 #### [YAML](#tab/yaml)
 ::: moniker range="azure-devops"
  
-Follow the guidance in [Create your first pipeline](../ecosystems/javascript.md) to setup the build pipeline. The CI steps will be similar to any Nodejs or .NET Core apps. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
+Follow the guidance in [Create your first pipeline](../ecosystems/javascript.md) to set up the build pipeline. The CI steps will be similar to any Nodejs or .NET Core apps. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
 
 ::: moniker-end
 
