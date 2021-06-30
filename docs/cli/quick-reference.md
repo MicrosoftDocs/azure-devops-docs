@@ -18,11 +18,11 @@ ms.date: 03/17/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access examples that showcase use of command line tools.  For a list of commands that support Azure DevOps operations, see the following Azure CLI reference articles: 
-- [az artifacts](/cli/azure/artifacts) 
-- [az boards](/cli/azure/boards) 
-- [az devops](/cli/azure/devops) 
-- [az pipelines](/cli/azure/pipelines) 
-- [az repos](/cli/azure/repos) 
+- [az artifacts](/cli/azure/azure-cli-reference-for-devops#azure-artifacts)
+- [az boards](/cli/azure/azure-cli-reference-for-devops#azure-boards)
+- [az devops](/cli/azure/azure-cli-reference-for-devops#azure-devops-organizations)
+- [az pipelines](/cli/azure/azure-cli-reference-for-devops#azure-pipelines)
+- [az repos](/cli/azure/azure-cli-reference-for-devops#azure-repos)
 
 
 
