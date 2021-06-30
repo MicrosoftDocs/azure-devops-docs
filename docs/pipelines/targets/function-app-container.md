@@ -25,7 +25,7 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+To use sample code instead, fork this GitHub repo:
 
 ```
     https://github.com/azooinmyluggage/GHFunctionAppContainer
