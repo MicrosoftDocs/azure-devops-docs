@@ -1,6 +1,6 @@
 ---
 title: Deploy a function app to Azure Functions (Windows)
-description: Deploy to Azure Functions windows from Azure Pipelines or TFS
+description: Deploy to Azure Functions for Windows from Azure Pipelines
 services: vsts
 ms.topic: conceptual
 ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
