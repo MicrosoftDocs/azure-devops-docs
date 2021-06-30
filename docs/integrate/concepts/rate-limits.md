@@ -5,8 +5,8 @@ description: Limits on the resources individual users can consume in Azure DevOp
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
-ms.author: kaelli
-author: roferg
+ms.author: chcomley
+author: chcomley
 ms.date: 06/08/2021
 monikerRange: '>= tfs-2018'
 ---
