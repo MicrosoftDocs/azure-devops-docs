@@ -22,9 +22,9 @@ You can automatically deploy your Azure Function after every successful build.
 [!INCLUDE [include](../includes/prerequisites.md)]
 
 
-## Create your Function App
+## Create your Windows function App
 
-This is a step-by-step guide to using Azure Pipelines with Azure Functions.
+This is a step-by-step guide to using Azure Pipelines with Azure Functions for Windows.
 
 #### [.NET Core](#tab/dotnet-core/)
 

@@ -1,24 +1,29 @@
 ---
 title: Deploy a function app to Azure Functions
-description: Deploy to Azure Functions from Azure Pipelines or TFS
+description: Deploy to Azure Functions from Azure Pipelines
 services: vsts
 ms.topic: conceptual
 ms.assetid: C6709131-D245-4C32-BE62-CD36044A1878
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 9/10/2019
+ms.date: 06/30/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy an Azure Function
 
-You can automatically deploy your Azure Function after every successful build.
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use Azure Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
 
-## Before you begin
+Learn how to deploy to a Linux function app. 
 
-Based on the desired runtime, [import](../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
+## Prerequisites
 
+[!INCLUDE [include](../includes/prerequisites.md)]
+
+## Create your Linux function app
+
+This is a step-by-step guide to using Azure Pipelines with Azure Functions for Windows.
 #### [.NET Core](#tab/dotnet-core/)
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
