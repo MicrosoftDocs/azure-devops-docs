@@ -5,16 +5,13 @@ description: Define a CI pipeline that builds your Universal Windows Platform (U
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
 ms.date: 12/20/2017
 ms.topic: quickstart
-monikerRange: '>= tfs-2017'
 ---
 
 # Build your Universal Windows Platform app
 
 **Azure Pipelines | TFS 2018 | TFS 2017.2**
 
-::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
-::: moniker-end
 
 Universal Windows Platform (UWP) is a common app platform available on every device that runs Windows 10. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your UWP app whenever your team pushes or checks in code. In this quickstart, you learn how to define your CI pipeline.
 
