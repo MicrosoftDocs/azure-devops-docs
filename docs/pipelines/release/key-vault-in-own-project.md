@@ -102,7 +102,7 @@ Before proceeding with the next steps, we must first create a service principal 
 
 ## Query and use secrets in your pipeline
 
-Using the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be mapped explicitly to env variable as shown in the example below.
+Using the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be explicitly mapped to env variable as shown in the example below.
 
 ```YAML
 pool:
@@ -111,7 +111,7 @@ pool:
 steps:
 - task: AzureKeyVault@1
   inputs:
-    azureSubscription: 'XXXX-XXXXX-XXXXX'                ## YOUR_AZURE_SUBSCRIPTION
+    azureSubscription: 'repo-kv-demo'                    ## YOUR_SERVICE_CONNECTION_NAME
     KeyVaultName: 'kv-demo-repo'                         ## YOUR_KEY_VAULT_NAME
     SecretsFilter: 'secretDemo'                          ## YOUR_SECRET_NAME
     RunAsPreJob: false
@@ -127,4 +127,19 @@ steps:
     projects: '**/*.csproj'
   env:
     mySecret: $(secretDemo)
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+        if (-not $Env:secretDemo)
+        {
+            Write-Error "Secret missing!"
+            exit 1
+        }
+        else
+        {
+            Write-Host "Secret Found!"
+            exit 1
+        }
 ```
