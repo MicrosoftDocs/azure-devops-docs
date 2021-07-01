@@ -128,18 +128,20 @@ steps:
   env:
     mySecret: $(secretDemo)
 
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-        if (-not $Env:secretDemo)
-        {
-            Write-Error "Secret missing!"
-            exit 1
-        }
-        else
-        {
-            Write-Host "Secret Found!"
-            exit 1
-        }
+- bash: |
+    echo "Secret Found! $MY_MAPPED_ENV_VAR"        
+  env:
+    MY_MAPPED_ENV_VAR: $(mySecret)
 ```
+
+The output from the bash task should look like this:
+
+```
+Secret Found! ***
+```
+
+## Related articles
+
+- [Manage service connections](../library/service-endpoints.md)
+- [Define variables](../process/variables.md)
+- [Publish Pipeline Artifacts](../publish-pipeline-artifact.md)
