@@ -50,7 +50,7 @@ In the following example, a new resource group and virtual machine scale set are
 > before creating the scale set, by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size). Create a custom image if:
 > * You don't want to use [tool installers](../process/tasks.md#tool-installers) in your pipeline to install required tools.
 > * You don't want to use [custom script extensions](#customizing-virtual-machine-startup-via-the-custom-script-extension) to configure your VM at start up.
-> * You have any other software requirements for your pipeline.
+> * You have any other software requirements for your pipeline that aren't met by a stock VM image.
 
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
 
