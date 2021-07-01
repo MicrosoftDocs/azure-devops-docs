@@ -36,8 +36,10 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 >  The value attribute is case-insensitive. Therefore, if the field reference name holds "YYY", matches include the values "yyy" and "YYY".  
 
 <a name="Syntax"></a>   
+
 ##  Syntax structure for conditional elements  
- The following table describes conditional rules that you can specify as child elements of the `FIELD` (Definition) element or `FIELD` (Workflow) element. These elements accept one or more of the following attributes:  
+
+The following table describes conditional rules that you can specify as child elements of the `FIELD` (Definition) element or `FIELD` (Workflow) element. These elements accept one or more of the following attributes:  
 
 -   `field`: A string that describes the field. Must contain 1 to 255 characters.   
 -   `value`: When the specified field has this value, the rules in the `WHEN` and `WHENNOT` elements are applied to the current field.    
@@ -151,8 +153,10 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 
 
 <a name="DependentRequired"></a>   
+
 ##  Define a dependent required field  
- You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports a bug, a customer severity must be specified. If the bug was not reported by a customer, a customer severity is not required.  
+
+You can specify that a field is required only when another field contains a specific value. In the following example, when a customer reports a bug, a customer severity must be specified. If the bug was not reported by a customer, a customer severity is not required.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -167,10 +171,14 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 >        </WHEN>  
 > </FIELD>  
 > ```  
-> <a name="DependentPickList"></a> 
+
+
+
+<a name="DependentPickList"></a> 
 
 ##  Define a conditional pick list  
- The following example demonstrates a conditional pick list in which the allowed values for the Problem Type field are limited, based on whether the value of the ProblemCharacteristic field is set to Documentation.  
+
+The following example demonstrates a conditional pick list in which the allowed values for the Problem Type field are limited, based on whether the value of the ProblemCharacteristic field is set to Documentation.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -186,8 +194,10 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > ```  
 
 <a name="WhenChanged"></a>  
+
 ##  Define a field when the user changes another field (WHENCHANGED)  
- In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
+
+In the following example, when a user changes the value of the MyCorp.State field, the MyCorp.StateDate field is set to the current date and time, as the server clock shows.  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -210,9 +220,12 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 > </FIELD>  
 > ```  
 >  <a name="WhenNotChanged"></a> 
-> ##   Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
->  In the following example, when a user does not change the value of the MyCorp.State field, the MyCorp.StateDate field becomes read-only.  
-> 
+
+##   Define a field value based on a user not modifying a field (WHENNOTCHANGED)  
+
+In the following example, when a user does not change the value of the MyCorp.State field, the MyCorp.StateDate field becomes read-only.  
+
+
 > [!div class="tabbedCodeSnippets"]
 > ```XML
 > <FIELD refname="MyCorp.StateDate" name="Date Of Last State Change" type="DateTime">  

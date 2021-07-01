@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Default rules and the rule engine  
 ms.custom: inherited-process
 ms.technology: devops-agile
-ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
@@ -1138,6 +1137,7 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 
 ## Related articles
 
+- [Sample rule scenarios](rule-samples.md)  
 - [Work item field index](../../../boards/work-items/guidance/work-item-field.md)
 - [Work item fields and attributes](../../../boards/work-items/work-item-fields.md)
 - [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md)
@@ -1151,3 +1151,4 @@ In the following XML example, the system empties MyCorp.SubStatus  as you type "
 	- [Assign conditional-based values and rules](../../../reference/xml/assign-conditional-based-values-and-rules.md)
 
  
+<!--- what On-premises rules aren't supported for Inherited? --> 

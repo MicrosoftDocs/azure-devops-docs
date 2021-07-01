@@ -35,8 +35,6 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
@@ -110,7 +108,7 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-
+- [Multivalue control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control)
 
 ::: moniker-end
 
@@ -148,7 +146,8 @@ To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 
 ::: moniker-end
 
-
+## DevOps integration
+- [Creates a new work item from a build or release](https://marketplace.visualstudio.com/items?itemName=mspremier.CreateWorkItem#adding-the-task-to-a-yaml-definition)
  
 ## Command line interface
 
