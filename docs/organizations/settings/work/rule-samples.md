@@ -1,13 +1,13 @@
 ---
-title: Sample rule definitions
+title: Sample custom rule scenarios 
 titleSuffix: Azure DevOps 
-description: Examples of rule definitions for inherited and XML processes 
+description: Examples of custom rule definitions for inherited and XML processes 
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops"
 ms.topic: example-scenario
-ms.date: 06/18/2021
+ms.date: 06/30/2021
 
 
 #Customer intent: As a process designer, I need examples that illustrate how to define rules, so I can add the right rules to support my business processes.
@@ -59,7 +59,7 @@ You specify a `WHEN` rule statement for the field definition within the `FIELDS`
 
 <a name="clear-field"></a>
 
-###  Clear the value of a dependent field  
+## Clear the value of a dependent field  
 
 The following example illustrates defining a custom rule to clear the value for **Story Points** when a change is made to the **Start Date**. 
 
@@ -157,7 +157,7 @@ You specify the value of the **Size** field in the `FIELDS` section of the work 
 
 <a name="require-field-state-change"></a>  
 
-##  Require a field value upon State changes 
+## Require a field value upon State changes 
 
 The following example shows how you can require specification of the **Remaining Work** field when the task workflow **State** changes to *Active*.  
 
