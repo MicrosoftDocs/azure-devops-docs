@@ -143,6 +143,20 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. When a package is ingested in the downstream feed, a copy of the package is created, so even when the upstream feed is not available, the package is still available in the downstream feed.
 
+## FAQs
+
+### Q: I can't see my package even though I can see it in one of my feed's upstreams?
+
+A: Packages belonging to an upstream are available downstream soon after they are published, but will only show up in the feed's UI once they have been 'ingested,' which requires installing the package version for the first time in the downstream feed.
+
+### Q: What are feed views?
+
+A: Views enable developers to only share a subset of package versions that have been tested and validated and excluding any packages that are still under development and/or didn't meet the quality bar. See [What are feed views](./views.md) for more details.
+
+### Q: I can't find the feed that I want to configure as an upstream?
+
+A: It could be that the feed's owner has not shared a view to be available as an upstream source.
+
 ## Related articles
 
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
