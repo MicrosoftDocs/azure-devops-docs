@@ -47,7 +47,9 @@ In the following example, a new resource group and virtual machine scale set are
 > [!NOTE]
 > In this example, the UbuntuLTS VM image is used for the scale set. If you require
 > a customized VM image as the basis for your agent, create the customized image
-> before creating the scale set, by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size). Create a custom image if:
+> before creating the scale set, by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size).
+>
+> Create a custom image if:
 > * You don't want to use [tool installers](../process/tasks.md#tool-installers) in your pipeline to install required tools.
 > * You don't want to use [custom script extensions](#customizing-virtual-machine-startup-via-the-custom-script-extension) to configure your VM at start up.
 > * You have any other software requirements for your pipeline that aren't met by a stock VM image.
