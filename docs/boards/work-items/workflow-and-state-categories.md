@@ -235,7 +235,7 @@ To learn more about process models, see [Customize your work tracking experience
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-**On-premises XML process model **
+**On-premises XML process model**
 
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
