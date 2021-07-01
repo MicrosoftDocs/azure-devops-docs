@@ -1,17 +1,19 @@
 - name: GitHub integration
   href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Connect from GitHub 
+  href: install-github-app.md
 - name: Connect Azure Boards (Cloud)  
   href: connect-to-github.md
 - name: Connect Azure Boards (On-premises)  
   href: connect-on-premises-to-github.md
-- name: Connect from GitHub (Cloud)
-  href: install-github-app.md
 - name: Link GitHub commits, pull requests, & issues
   href: link-to-from-github.md
 - name: Configure status badges
   href: configure-status-badges.md
 - name: Add or remove repositories
   href: add-remove-repositories.md
+- name: Change Azure Boards app for GitHub repository access 
+  href: change-azure-boards-app-github-repository-access.md
 - name: Troubleshoot GitHub connection
   href: troubleshoot-github-connection.md
 

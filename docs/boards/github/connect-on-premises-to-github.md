@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019 < azure-devops'
-ms.date: 06/24/2021
+ms.date: 06/30/2021
 ---
 
 # Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)
@@ -24,6 +24,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ## Prerequisites 
  
+* [Install the Azure Boards app for GitHub](install-github-app.md) on the GitHub organizations or account. 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
 * You must be an administrator of the GitHub Enterprise Server you'll connect to. 
@@ -33,11 +34,21 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 The following authentication options are supported. 
 
+::: moniker range="azure-devops-2020"
+- [PAT](#server-github-ent-pat)
+- [Username plus password](#server-github-ent-username)
+
+> [!NOTE]   
+> OAuth is no longer supported for Azure DevOps Server 2020.  
+- 
+::: moniker-end
+
+ 
+::: moniker range="azure-devops-2019"
 - [OAuth (Recommended, registration required)](#server-github-ent-oauth-register) 
 - [PAT](#server-github-ent-pat)
 - [Username plus password](#server-github-ent-username)
- 
-
+::: moniker-end
  
 
 <a id="github-oauth" />
@@ -45,7 +56,7 @@ The following authentication options are supported.
 <a id="server-github-ent-oauth-register" />
 
  
-
+::: moniker range="azure-devops-2019"
 ## Register Azure DevOps in GitHub as an OAuth App
 
 If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterprise Server, you first need to register the application as an OAuth App. For details, see [Creating an OAuth App](https://developer.github.com/apps/buidinlg-oauth-apps/creating-an-oauth-app/).
@@ -124,19 +135,20 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 
 <a id="github-ent-oauth-server" />
  
+::: moniker-end
 
 ## Connect Azure DevOps Server to GitHub Enterprise Server
 
 1. Open the web portal for your Azure DevOps Server.   
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open  **Projects**, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 ::: moniker range="azure-devops-2020"
 1. Choose (1) **Project Settings**> (2) **GitHub connections**.   
 
 	:::image type="content" source="media/github-ent/open-project-settings-github-connections-2020-1.png" alt-text="Screenshot of open Project Settings>GitHub connections.":::  
 
 1.	If it is the first time making a connection from the project, choose the authentication method you want to use to make the connection: 
-	- **Connect your GitHub Enterprise Server account** to use Oauth. 
+
 	- **Personal Access Token**, for details see [Connect using a Personal Access Token](#github-ent-pat). 
 	- **User Name and Password**, see [Connect using a Username and Password](#server-github-ent-username).
 

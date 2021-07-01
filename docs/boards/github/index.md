@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/24/2021
+ms.date: 06/30/2021
 ---
 
 
@@ -27,25 +27,31 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 ::: moniker range="azure-devops"
 
-To connect Azure Boards to GitHub.com, [connect and configure from Azure Boards](connect-to-github.md). Or, alternatively, [install and configure the Azure Boards app from GitHub](install-github-app.md). Both methods have been streamlined and support authenticating and operating via the app rather than an individual. 
+To connect or disconnect Azure Boards to GitHub repositories, perform the following procedures: 
 
-To connect Azure Boards to a GitHub Enterprise Server, see [connect from Azure Boards](connect-to-github.md#server-github-ent-oauth-register). 
-
-Once you've configured the connection, you can then exercise these features:
-- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
-- [Configure status badges](configure-status-badges.md)
-
+1. [Install and configure the Azure Boards app from GitHub](install-github-app.md) 
+	This step installs the application on GitHub and creates an initial connection. Once the application is installed for an account or organization, you can add connections with the second step. you 
+2. [Connect Azure Boards to GitHub (Cloud)](connect-to-github.md). 
+	Use the procedures provided here to add connections to other repositories in the account or organization you installed the Azure Boards app on. 
+3. [Change repository access to Azure Boards](change-azure-boards-app-github-repository-access.md)
+	Use the procedures provided here to change which GitHub repositories can be connected to Azure Boards for the selected GitHub account or organization.  
+4. [Add or remove GitHub repositories](add-remove-repositories.md) 
+	Use the procedures provided here to add or remove GitHub connections to GitHub repositories from Azure Boards.  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Integration steps include: 
-- [Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)](connect-on-premises-to-github.md)
-- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
-- [Configure status badges](configure-status-badges.md)
+To connect Azure DevOps Server to GitHub.com, perform the following procedures: 
+
+1. [Install and configure the Azure Boards app from GitHub](install-github-app.md).
+2. [Connect Azure DevOps Server to GitHub Enterprise Server (On-premises)](connect-on-premises-to-github.md)
 
 ::: moniker-end
 
+ 
+Once you've configured the connection, you can then exercise these features:
+- [Link GitHub commits and pull requests to work items](link-to-from-github.md)
+- [Configure status badges](configure-status-badges.md)
 
 
 ::: moniker range="azure-devops"
@@ -55,7 +61,7 @@ If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up
 > [!div class="mx-imgBorder"]  
 > ![GitHub signin](media/sign-in.png)   
 
-In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to Xbox.
+In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
 
 ::: moniker-end
 
