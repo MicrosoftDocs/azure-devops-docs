@@ -99,3 +99,32 @@ Before proceeding with the next steps, we must first create a service principal 
 1. Under **Select principal** select to add a service principal and choose the one you created earlier.
 
 1. Select **Save** when you are done.
+
+## Query and use secrets in your pipeline
+
+Using the [Azure Key Vault task](../tasks/deploy/azure-key-vault.md) we can fetch the value of our secret and use it in subsequent tasks in our pipeline. One thing to keep in mind is that secrets must be mapped explicitly to env variable as shown in the example below.
+
+```YAML
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'XXXX-XXXXX-XXXXX'                ## YOUR_AZURE_SUBSCRIPTION
+    KeyVaultName: 'kv-demo-repo'                         ## YOUR_KEY_VAULT_NAME
+    SecretsFilter: 'secretDemo'                          ## YOUR_SECRET_NAME
+    RunAsPreJob: false
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'run'
+    projects: '**/*.csproj'
+  env:
+    mySecret: $(secretDemo)
+```
