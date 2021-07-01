@@ -303,7 +303,7 @@ Simply drag tasks to a downstream column to reflect if they are in progress or c
 
 ![taskboard, update task status](media/ALM_TB_Move_To_Done.png)
 
-When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
+When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0 in all processes, except CMMI. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
 
 ### Update remaining work
 
