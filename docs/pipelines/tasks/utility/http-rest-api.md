@@ -44,7 +44,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure managment API or **Generic** for all other APIs. |
+| **Connection type** | Required. Select **Azure Resource Manager** to invoke an Azure management API or **Generic** for all other APIs. |
 | **Generic service connection** | Required. Generic service connection that provides the baseUrl for the call and the authorization to use. |
 | **Azure subscription** | Required. Azure Resource Manager subscription to configure and use for invoking Azure management APIs. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
