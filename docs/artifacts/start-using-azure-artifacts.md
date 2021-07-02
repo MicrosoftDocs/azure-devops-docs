@@ -1,62 +1,37 @@
 ---
-title: Start using Azure Artifacts 
-description: Quickly start hosting NuGet, npm, Python, Maven, or Universal Packages in Azure Artifacts. Find out the prerequisites to start using Azure Artifacts, and details on billing, how to pay for the service, and FAQs. 
+title: Azure Artifacts Overview
+description: Learn about Azure Artifacts and how to set up billing and view your consumption
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 11/04/2020
+ms.date: 07/02/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Start using Azure Artifacts
+# Azure Artifacts Overview
 
-[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]  
-
-> [!NOTE]
-> If you're using a version of TFS, you need to license Azure Artifacts rather than set up billing. 
-
-::: moniker range="azure-devops"
-
-[!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
-
-Learn how to go through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume the following package types:
-
-- Maven
-- npm
-- NuGet
-- Python
-- Universal Packages 
+Azure Artifacts enable developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, Npm, Python, Maven, and Universal Packages.
 
 Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB of storage. If your organization needs more storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
+Azure Artifacts comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019 and 2020, and TFS 2017 and 2018.
+
 ## Prerequisites
 
-- To start using Azure Artifacts, you need to have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
-- Your network connection must be set up to [allow certain IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md).
-- If you plan to use more than the free usage tier of 2 GiB, you must [set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md).
+- A Project Collection Administrator or an Organization Owner [access permissions](../organizations/security/lookup-organization-owner-admin.md).
+- [Whitelist IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
+- If you plan to use more than the free 2 GiB storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
-::: moniker-end
-
-::: moniker range="= azure-devops-2019 || azure-devops-2020"
-
-Users with a Basic license can create and consume Azure Artifacts. So, if you have a Basic license, you don't need to purchase an Azure Artifacts extension.
-
-::: moniker-end
+> [!NOTE]
+> Azure Artifacts license is included with every basic license for TFS 2017, 2018, and Azure DevOps Server 2019 and 2020.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Azure Artifacts is an **extension** to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
-
-Azure Artifacts is required for each user who consumes or publishes packages to and from Azure Artifacts feeds. The service currently supports the following package types: NuGet, npm, Python, Maven, and Universal Packages.
-
 ## Install Azure Artifacts in TFS
 
-Azure Artifacts is installed by default for TFS 2017 customers. Upgrade to TFS 2017 to use Azure Artifacts.
-
-> [!NOTE]
-> If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has been removed, you can install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Assign licenses in TFS
 
