@@ -83,8 +83,8 @@ group by d.DateSK, wi.System_Id, wi.System_Title
   
   
 ## Related notes 
-- [COALESCE (Transact-SQL)](https://msdn.microsoft.com/library/ms190349.aspx)  
+- [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql)  
 -  [Test cases and work items](perspective-test-analyze-report-work.md)    
--  [Burndown](../excel/burndown-excel-report.md)    
--  [Test Team Progress](../excel/test-team-progress-excel-report.md)    
--  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)  
+-  [Burndown](/previous-versions/azure/devops/report/excel/burndown-excel-report)    
+-  [Test Team Progress](/previous-versions/azure/devops/report/excel/test-team-progress-excel-report)    
+-  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

@@ -16,7 +16,7 @@ ms.date: 02/14/2019
 
 # Kanban board features and epics  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -47,7 +47,7 @@ For information on managing features and epics as a list and examples for featur
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [taskboard](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), choose **Stories backlog**. And, to switch to the [taskboard](../sprints/task-board.md), choose **Sprints** and then choose **Taskboard**.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -55,13 +55,13 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open your Kanban board](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
-	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team's board, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
 
 1. Select **Features** or **Epics** from the backlog selector menu . 
 
@@ -77,7 +77,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -99,7 +99,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -115,7 +115,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ## Add epics or features    
 
-Add new items to a feature or epic through the item's ![actions icon](../media/icons/actions-icon.png) Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
+Add new items to a feature or epic through the item's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
 ![Web portal, Feature Kanban board, Open the context menu of a feature to add a story](media/features-epics/add-user-story.png)
 
@@ -126,16 +126,15 @@ If you have a number of items to add, simply keep typing your task titles and cl
 
 If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md)
 
-For additional guidance on working with a checklist on a Kanban board, see [Add task checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
+For additional guidance on working with a checklist on a Kanban board, see [Add tasks or child items as checklists](add-task-checklists.md). You can perform the same operations for the features and epics Kanban boards as you do with the Kanban board for the product backlog. This includes:    
 
 - Mark an item as done  
 - Reorder and reparent work items  
 
-To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![ ](../../media/icons/blue-gear.png) or ![ ](../../media/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
+To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  or :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
 * [Customize cards](../../boards/boards/customize-cards.md)  
 
 ### REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/azure/devops/work/boards).
-

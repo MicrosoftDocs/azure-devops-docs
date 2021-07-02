@@ -4,8 +4,8 @@ description: Test app packages with Visual Studio App Center.
 ms.topic: reference
 ms.assetid: AD5CD22A-BE4E-48BB-ADCE-181A32432DA5
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/20/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -96,7 +96,7 @@ steps:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

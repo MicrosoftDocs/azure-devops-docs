@@ -89,7 +89,7 @@ The registry URL pointing to an Azure Artifacts feed may or may not contain the 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 ### How does this task work?
@@ -136,5 +136,9 @@ If your proxy requires authentication, you may need to add an additional build s
 - script: node -e "let u = url.parse(`$(agent.proxyurl)`); u.auth = `$(agent.proxyusername):$(agent.proxypassword)`; console.log(`##vso[task.setvariable variable=proxyAuthUri;issecret=true]` + url.format(u))"
 - script: npm publish --https-proxy $(proxyAuthUri)
 ```
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

@@ -4,9 +4,9 @@ ms.topic: conceptual
 title: Azure Pipelines with Microsoft Teams
 description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel by subscribing to notifications 
 ms.manager: bijuv
-ms.author: atinb
-author: atinb
-ms.date: 12/17/2019
+ms.author: divais
+author: divais
+ms.date: 07/01/2020
 monikerRange: 'azure-devops'
 ---
  
@@ -87,6 +87,9 @@ To manage the subscriptions for a channel, use the following command:
 
 This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-teams/subscriptions-list-teams.png)
 
@@ -132,7 +135,7 @@ The app supports all of the checks and approval scenarios present in the Azure P
 To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline ID or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/compose-extension.png)
+> ![Compose extension.](./media/integrations-teams/compose-extension.png)
 
 
 ## Previews of pipeline URLs
@@ -140,27 +143,25 @@ To help users search and share information about pipelines, Azure Pipelines app 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate. Users can choose between compact and expanded cards.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/build-url-unfurling-teams.png)
+> ![Build URL unfurling.](./media/integrations-teams/build-url-unfurling-teams.png)
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/release-url-unfurling-teams.png)
+> ![Release URL unfurling.](./media/integrations-teams/release-url-unfurling-teams.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
 
 
 ## Remove subscriptions and pipelines from a channel
 
-If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
+If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.  
+```
+@azure pipelines unsubscribe all [project url]
+```
 
-	```
-	@azure pipelines unsubscribe all [project url]
-	```
-
-	For example:
-
-	```
-	@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
-	```
+For example:  
+```
+@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
+```
 
 This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
 
@@ -203,6 +204,87 @@ Here are all the commands supported by the Azure Pipelines app:
 > * Deployment approvals which have applied the **Revalidate identity of approver before completing the approval** policy are not supported
 > * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
 
+ ## Multi-tenant support
+
+In your organization if you are using a different email or tenant for Microsoft Teams and Azure DevOps, perform the following steps to sign in and connect based on your use case. 
+ 
+ <table>
+  <tr>
+   <td>
+       <strong>Case</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Microsoft Teams</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Azure DevOps</strong>
+   </td>
+   <td>
+        <strong>Steps to take </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        1
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        Sign in using <strong>Sign in</strong> button.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        2
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 2)
+   </td>
+   <td>
+    <ul>
+	<li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com/</li> 
+	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        3
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+        <u>email2@pqr.com</u> (tenant 2) 
+   </td>
+   <td>
+        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        4
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+	   <u>email2@pqr.com</u> (non default tenant 3) 
+   </td>
+   <td>
+    This scenario is not supported today
+   </td>
+  </tr>
+</table>
+
 ## Troubleshooting
 
 If you are experiencing the following errors when using the
@@ -220,5 +302,5 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
-- [Azure Boards with Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
-- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Boards with Microsoft Teams](../../boards/integrations/boards-teams.md)
+- [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)

@@ -6,69 +6,62 @@ author: ramiMSFT
 ms.date: 02/19/2020
 ---
 
-To consume NuGet packages from a feed, add the feed's NuGet endpoint as a package source in Visual Studio.
-
-[!INCLUDE [Azure Artifacts and Visual Studio 2015](vs2015.md)]
+To consume NuGet packages from your feed, you need to add the feed's NuGet endpoint as a package source in Visual Studio, as follows.
 
 <a name="get-nuget-pkg-url"></a>
 
-## Get your feed's NuGet package source information
+### 1. Get the feed's source URL
 
 [!INCLUDE [get a NuGet URL](nuget-consume-endpoint.md)]
 
-### Windows: Add the feed to your NuGet configuration
+### 2. Set up Visual Studio
 
-1. On the **Tools** menu, select **Options**.
-2. Expand **NuGet Package Manager** and select **Package Sources**.
-3. Select the green plus in the upper-right corner.
-4. At the bottom of the dialog box, enter the feed's name and the URL that you got in the last step.
-5. Select **Update**.
-6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-   ![Add new NuGet source](../../media/vs-addsource.png)
-7. Select **OK**.
-8. [Go to the steps for consuming packages](#consume-packages).
+#### [Windows](#tab/windows/)
+
+### Set up package source
+
+1. In Visual Studio, select **Tools**, and then **Options**.
+1. Expand the **NuGet Package Manager** section, and then select **Package Sources**.
+1. Enter the feed's **Name** and the **Source** URL, and then select the green (+) sign to add a source.
+1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
+1. Select **OK**.
+
+    :::image type="content" source="../../media/vs-addsource.png" alt-text="Set up visual studio: Windows":::
 
 <a name="mac-os"></a>
 
-### macOS: Add the feed to your NuGet configuration
+#### [macOS](#tab/macOS/)
 
-1. Get a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
-2. Open the **Preferences** dialog box from the **Visual Studio** menu on the menu bar.
-3. Select **NuGet** > **Sources**.
-4. Select **Add**. Then enter your feed's name, the URL, any username, and your PAT as the password.
-5. Select **OK**.
-6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-7. Select **OK** again.
+### Set up package source
 
-   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../../media/vs-mac-settings.png)
+1. Create a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) PAT.
+1. In visual studio, select **Preferences** from the menu bar.
+1. Select **NuGet** then **Sources**.
+1. Select **Add** and enter your feed's name, the source URL, a userName (any string), and your personal access token.
+1. Select **OK**.
+1. If you enabled upstream sources in your feed, clear the **nuget.org** check box.
+1. Select **OK**.
+
+    :::image type="content" source="../../media/vs-mac-settings.png" alt-text="Set up visual studio: macOS":::
 
 <a name="consume-packages"></a>
 
-## Consume packages
+---
 
-You can now discover and use packages in this feed. To add a package reference to a project:
+### 3. Consume packages
 
-1. Find your project in Solution Explorer.
-2. Right-click **References**.
-3. Select **Manage NuGet Packages**.
-4. In the **Package source** drop-down list, select your feed.
-5. Look for your package in the list.
-   ![Select feed source](../../media/select-pkg-src.png)
+You can now find and consume packages from your feed by using Visual Studio.
 
-If you're using [upstream sources](../../nuget/upstream-sources.md), package versions in the upstream source that haven't yet been saved into your feed (by using them at least once) won't appear in the NuGet Package Manager search. To install these packages:
+1. In Visual Studio, right-click on your project in the Solution Explorer, and then select **Manage NuGet Packages**.
+1. Select **Browse**, and then select your feed from the **Package source** drop-down list
+    :::image type="content" source="../../media/select-pkg-src.png" alt-text="Select feed source":::
+1. Use the search bar to look for packages from your feed.
 
-1. On the upstream source (for example, nuget.org), copy the `Install-Package` command.
-2. In Visual Studio, open the Package Manager Console from **Tools** > **NuGet Package Manager**.
-3. Paste the `Install-Package` command into the Package Manager Console and run it.
+> [!NOTE]
+> If you're using [upstream sources](../../nuget/upstream-sources.md), any packages from upstream sources that haven't been saved to your feed yet (by using them at least once) won't appear in the Package Manager search result. To install those packages:
 
-<a name="use-symbols-to-debug"></a>
+#### Consume package from NuGet.org
 
-## Use symbols to debug
-
-Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers, or package names. If [symbols have been published](/azure/devops/pipelines/artifacts/symbols) for your packages, [connect Visual Studio to the symbol server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
-
-<!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
-
-## Using Visual Studio 2013 or earlier
-
-You'll need to get a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.
+1. Copy the **Install-Package** command from the public registry (NuGet.org).
+1. Select **Tools** then **NuGet Package Manager** to open the NuGet package manager.
+1. Paste the command into the Package Manager Console and select **run**.

@@ -62,7 +62,7 @@ Either choose the context menu for the item that you want to remove and select U
 ## Related notes
 
 - [Define queries](../../boards/queries/using-queries.md) 
-- [Define builds](../../pipelines/overview.md) 
+- [Define builds](../../pipelines/get-started/what-is-azure-pipelines.md) 
 - [Test charts](../../test/track-test-status.md) 
 
 
@@ -72,4 +72,4 @@ Either choose the context menu for the item that you want to remove and select U
  
 You navigate to your team context from the top navigation bar.   
 
-![Choose another team from the project menu](media/switch-team-context.png)  
+![Choose another team from the project menu](media/switch-team-context.png)

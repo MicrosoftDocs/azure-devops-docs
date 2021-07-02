@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Retrieve a file using the TFVC View Command for Azure DevOps Services or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # View Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **view** command retrieves a specific version of a file to a temporary folder on your computer and displays it.
 
@@ -46,7 +44,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 </tr>
 <tr>
 <td><p><em>Itemspec</em></p></td>
-<td><p>Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p>
+<td><p>Identifies the file or folder to retrieve. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -60,7 +58,7 @@ You can specify more than one <em>Itemspec</em> argument.
 </tr>
 <tr>
 <td><p><em>Versionspec</em></p></td>
-<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td>
+<td><p>Provides a value such as C3 for the <strong>/version</strong> option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td>
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
@@ -122,7 +120,7 @@ The **view** command does not retrieve files into your workspace or check them o
 
 You can use the [Difference Command](difference-command.md) to view the differences between two versions of a file.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Output Options
 
@@ -132,22 +130,22 @@ If you include the **/console** option, Team Foundation prints the contents of t
 
 Finally, you can redirect the contents of a file to standard out using **|** or **\>** in order to save it in another file or pass it to another program for post-processing.
 ## Examples
-The following example displays the latest version of the file 314.c.
+The following example displays the latest version of the file 314.cs.
 
 ```
-c:\projects>tf view 314.c
+c:\projects>tf view 314.cs
 ```
 
-The following example displays the version of 314.c that was checked in with changeset 1999.
+The following example displays the version of 314.cs that was checked in with changeset 1999.
 
 ```
-c:\projects>tf view /version:C1999 314.c
+c:\projects>tf view /version:C1999 314.cs
 ```
 
-The following example retrieves version 5 of 314.c and writes it to the file 314.old.
+The following example retrieves version 5 of 314.cs and writes it to the file 314.old.
 
 ```
-c:\projects>tf view /version:5 314.c > 314.old
+c:\projects>tf view /version:5 314.cs > 314.old
 ```
 
 The following example displays the latest version of each file that matches the wildcard "\*.cs".
@@ -160,7 +158,7 @@ c:\projects>tf view *.cs
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Checkout and Edit Commands](checkout-or-edit-command.md)
 
@@ -170,4 +168,4 @@ c:\projects>tf view *.cs
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

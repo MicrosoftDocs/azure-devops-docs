@@ -196,7 +196,7 @@ ConfigMaps allow you to decouple configuration artifacts from image content to m
 <tr><td><code>configMapName</code><br/>ConfigMapName</td><td>(Optional) Name of the ConfigMap.</td></tr>
 <tr><td><code>forceUpdateConfigMap</code><br/>Force update configmap</td><td>(Optional) Delete the configmap if it exists and create a new one with updated values.<br/>Default value: false</td></tr>
 <tr><td><code>useConfigMapFile</code><br/>Use file</td><td>(Optional) Create a ConfigMap from an individual file, or from multiple files by specifying a directory.<br/>Default value: false</td></tr>
-<tr><td><code>configMapFile</code><br/>ConfigMap File</td><td>(Required if useConfigMapFile == true) Specify a file or directory that contains the configMaps.</td></tr>
+<tr><td><code>configMapFile</code><br/>ConfigMap File</td><td>(Required if useConfigMapFile == true) Specify a file or directory that contains the configMaps. Note that this will use the <code>--from-file</code> argument.</td></tr>
 <tr><td><code>configMapArguments</code><br/>Arguments</td><td>(Optional) Specify keys and literal values to insert in configMap.
 For example, <code>--from-literal=key1=value1 --from-literal=key2=&quot;top secret&quot;</code></td></tr>
 </table>
@@ -259,7 +259,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 <tr><td><code>checkLatest</code><br/>Check for latest version</td><td>(Optional) If true, a check for the latest version of kubectl is performed.<br/>Default value: false</td></tr>
 <tr><td><code>specifyLocation</code><br/>Specify location</td><td>(Required) Full path to the kubectl.exe file.</td></tr>
 <tr><td><code>cwd</code><br/>Working directory</td><td>(Optional) Working directory for the Kubectl command.<br/>Default value: $(System.DefaultWorkingDirectory)</td></tr>
-<tr><td><code>outputFormat</code><br/>Output format</td><td>(Optional) Acceptable values: <b>json</b> or <b>YAML</b>.<br/>Default value: json</td></tr>
+<tr><td><code>outputFormat</code><br/>Output format</td><td>(Optional) Acceptable values: <b>json</b> or <b>YAML</b>.<br/>Default value: json. <br> You can leave it blank explicitly like <code>outputFormat: ''</code> to default to the kubectl's outputFormat</td></tr>
 </table>
 
 ::: moniker-end
@@ -268,7 +268,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 
 ### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
 
-You can grant hosted agents access through your firewall by whitelisting the IP addresses for the hosted agents. For more details, see [Agent IP ranges](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops#agent-ip-ranges)
+You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](../../agents/hosted.md#agent-ip-ranges)
 
 ## Open source
 

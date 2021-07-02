@@ -3,11 +3,12 @@ title: Manage work item fields using witadmin
 titleSuffix: TFS  
 description: Change an attribute for a work item field defined for a project in Team Foundation Server
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -44,7 +45,7 @@ For an overview of the fields defined within a default process template, see [Wo
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
 ## Syntax  
   
@@ -104,7 +105,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
 -   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
--   **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).    
+-   **Help text**. See [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
 ## Examples  
@@ -335,7 +336,7 @@ Enter **y** at the confirmation prompt to complete this step.
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
   
 Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
@@ -344,4 +345,3 @@ Changing field attributes is not recommended. To learn about which customization
 -  [Customizing your work tracking experience](../customize-work.md)   
 -  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
-  

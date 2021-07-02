@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 03/24/2020
+ms.date: 07/14/2020
 ---
 
 
@@ -19,7 +19,7 @@ ms.date: 03/24/2020
 
 <a id="set-permissions">  </a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Dashboards are viewable by all members of the Project Valid Users group. Permissions to edit or delete dashboards or manage permissions can be set for both team or project dashboards. 
  
@@ -58,11 +58,11 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md).
 - All members of the Project Valid Users group can view dashboards. 
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
 - To add, edit, or manage project dashboards, you must have **Basic** access or greater, a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
 
 ::: moniker-end
@@ -70,9 +70,9 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 
 ::: moniker range="azure-devops-2019"
 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/security/add-users-team-project).
+- If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md).
 - All members of the Project Valid Users group can view dashboards. 
-- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](/azure/devops/organizations/settings/add-team-administrator), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
+- To add, edit, or manage a team dashboard, you must have **Basic** access or greater and be a [team admin](../../organizations/settings/add-team-administrator.md), a project admin, or have dashboard permissions. In general, you need to be a team member for the currently selected team to edit dashboards.
 
 ::: moniker-end
 
@@ -84,12 +84,12 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/set-permissions/project-setting-permissions-s167.png)
+	> ![Web portal, open Dashboards.](media/set-permissions/project-setting-permissions-s167.png)
 
 1. Slide to enable or disable those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
@@ -100,7 +100,7 @@ By default, all team members have permissions to create and edit dashboards for 
 1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](media/set-permissions/project-setting-permissions.png)
+	> ![Web portal, open Dashboards.](media/set-permissions/project-setting-permissions.png)
 
 1. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
@@ -115,9 +115,9 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
-1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
@@ -136,7 +136,7 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker range="azure-devops-2019"
 
-1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
@@ -198,11 +198,11 @@ By default, all team members have permissions to edit dashboards defined for the
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Set permissions for a project dashboard 
 
-1. To set permissions for a project dashboard, open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. To set permissions for a project dashboard, open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboard security option](media/set-permissions/open-project-dashboard-security.png)
@@ -229,4 +229,3 @@ By default, all team members have permissions to edit dashboards defined for the
 - [Add, rename, and delete dashboards](dashboards.md)
 - [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)
 - [Add a team administrator](../../organizations/settings/add-team-administrator.md) 
- 

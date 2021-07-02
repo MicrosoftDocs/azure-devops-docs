@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
 ms.date: 02/14/2019
 ---
@@ -38,7 +38,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  

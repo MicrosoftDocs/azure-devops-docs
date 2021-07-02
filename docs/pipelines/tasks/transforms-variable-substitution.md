@@ -44,7 +44,7 @@ the **parameters.xml** file to substitute values in the **web.config** file.
 ## XML Transformation
 
 XML transformation supports transforming the configuration files (`*.config` files)
-by following [Web.config Transformation Syntax](https://msdn.microsoft.com/library/dd465326.aspx)
+by following [Web.config Transformation Syntax](/previous-versions/aspnet/dd465326(v=vs.110))
 and is based on the environment to which the web package will be deployed.
 This option is useful when you want to add, remove or modify configurations for different environments.
 Transformation will be applied for other configuration files including Console or Windows service application
@@ -121,7 +121,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    * It modifies value of `Webpages:Enabled`  inside the `appSettings` element.
    * It removes the `debug` attribute from the `compilation` element inside the `System.Web` element.
 
-   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
+   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](/previous-versions/aspnet/dd465326(v=vs.110))
 
 2. Create a release pipeline with a stage named **Release**.
 
@@ -406,18 +406,20 @@ variables:
   Data.DBAccess.Users.0: Admin-3
   Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
-- stage: Deploy
-  jobs:
-  - job: DeployJob
-    steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: Azure Resource Manager
-        azureSubscription: <Name of the Azure subscription>
-        appType: <Name of the App Service type>
-        WebAppName: <Name of the Azure WebApp>
-        package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-        JSONFiles: '**/appsettings.json'
+# Update appsettings.json via FileTransform task.
+- task: FileTransform@1
+  displayName: 'File transformation: appsettings.json'
+  inputs:
+    folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    targetFiles: '**/appsettings.json'
+    fileType: json
+  
+# Deploy web app
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: <Name of the Azure subscription>
+    appName: <Name of the Azure WebApp>
+    package: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
 ```
 
 * * *
@@ -430,7 +432,7 @@ variables:
 * A JSON object may contain an array whose values can be referenced by their index.
   For example, to substitute the first value in the **Users** array shown above,
   use the variable name `DBAccess.Users.0`. To update the value in **NewWelcomeMessage**,
-  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
+  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](utility/file-transform.md) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
 
 * Only **String** substitution is supported for JSON variable substitution.
 
@@ -454,4 +456,3 @@ variables:
   ```
 
   as well as `"first.second.third" : "value"`.
-

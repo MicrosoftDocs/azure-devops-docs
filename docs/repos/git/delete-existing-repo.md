@@ -4,15 +4,13 @@ titleSuffix: Azure Repos
 description: Remove an existing Git repo in an Azure DevOps Services or Team Foundation Server project
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Delete a Git repo from your project
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 Remove unused Git repos from your project when they are no longer needed. 
 
@@ -23,7 +21,7 @@ Remove unused Git repos from your project when they are no longer needed.
 >[!IMPORTANT]
 > You cannot remove a repo if it is the only Git repo in the Project. If you need to delete the only Git repo in a Project, [create a new Git repo](create-new-repo.md) first, then delete the repo.
 >      
-> You must have [Delete Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) to delete a repo from a project. 
+> You must have [Delete Repository permissions](set-git-repository-permissions.md#git-repository) to delete a repo from a project. 
 
 
 >[!NOTE]

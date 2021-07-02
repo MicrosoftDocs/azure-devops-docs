@@ -3,10 +3,12 @@ title: Apply pattern matching to a string field
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the MATCH element to force values in a field of String type to follow specified pattern - Team Foundation Server  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 1134a153-0133-4404-8690-d25e934a45f7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 
@@ -44,7 +46,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### Release Number  
  Pattern: ANN.NN.NN  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|R01.03.04 or V05.08.99|  
 |Fails validation|1.3.4 or V5.8.99 or v1.3|  
@@ -52,7 +54,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### A Flexible Identifier  
  Pattern: XXX-XXX  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|001-abc or a00-b02|  
 |Fails validation|1-abc or 001.abc|  
@@ -60,7 +62,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### Priority  
  Pattern: PN  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|P1 or P5 or P9|  
 |Fails validation|1 or P10|  
@@ -70,4 +72,4 @@ You can use the **MATCH** element to force values in a field of String type to f
  
   
 ## Related articles 
- [Apply a field rule](apply-rule-work-item-field.md)
+ [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)

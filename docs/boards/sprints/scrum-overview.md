@@ -14,11 +14,11 @@ ms.date: 04/23/2020
 
 # About Sprints, Scrum and project management 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 Your Sprints tools includes a filtered backlog based on an Iteration Path, and a similarly filtered Taskboard. These tools are useful for implementing Scrum practices. With Scrum, you can schedule and plan sprints, update your taskboard, and monitor your sprint burndown. 
 
-Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
+Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/devops/plan/what-is-scrum).  
 
 
 [!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
@@ -82,7 +82,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker range=">= azure-devops-2019"
 
-1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Planning**.
+1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Planning pane](media/overview/sprints-new-nav.png)
@@ -249,8 +249,8 @@ If you work with several teams, and each team wants their own backlog view, you 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
-- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development) 
+- [What is Scrum?](/devops/plan/what-is-scrum)
+- [What is Agile development?](/devops/plan/what-is-agile-development) 
  
 
 

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Find and view changesets
 ms.assetid: bf36f78e-231a-46a1-94e4-4b44852f30b0
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Find and view changesets
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you [check in your changes](check-your-work-team-codebase.md), they are stored on the server as a changeset. Changesets contain the history of each item in version control.
 
@@ -24,7 +22,7 @@ You can view a changeset to see what the exact file changes were, discover the o
 
 **Required Permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Find a changeset by ID
 
@@ -73,7 +71,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
    ![Find Changesets dialog box](media/find-view-changesets/IC612255.png)
 
-2. (Optional) Next to the <strong>Containing File **box, choose **Browse</strong>.
+2. (Optional) In **Containing file**, select **Browse**.
 
 3. (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
 

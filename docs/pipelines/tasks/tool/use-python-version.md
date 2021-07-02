@@ -3,11 +3,9 @@ title: Use Python Version task
 description: Select a version of Python to run on an agent and optionally add it to PATH
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
-ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
+ms.custom: seodec18, devx-track-python
 ms.reviewer: dastahel
-ms.date: 04/21/2020
+ms.date: 05/26/2020
 monikerRange: azure-devops
 ---
 
@@ -23,7 +21,7 @@ None
 
 ## Prerequisites
 
-* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Python installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
+* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Python installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [FAQ](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
@@ -74,7 +72,7 @@ Hosted Ubuntu and Hosted macOS run 64-bit operating systems and run only 64-bit 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?
@@ -115,5 +113,7 @@ $AGENT_TOOLSDIRECTORY/
 For more details on the tool cache, look [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
 
 In order that your scripts may work as they would on Microsoft-hosted agents, we recommend following the symlinking structure from [PEP 394](https://www.python.org/dev/peps/pep-0394/) on Unix-like systems.
+
+Also note that the embeddable ZIP release of Python requires [extra effort to configure for installed modules](https://michlstechblog.info/blog/python-install-python-with-pip-on-windows-by-the-embeddable-zip-file/), including `pip`. If possible, we recommend using the [full installer](https://docs.python.org/3/using/windows.html#installing-without-ui) to get a `pip`-compatible Python installation.
 
 <!-- ENDSECTION -->

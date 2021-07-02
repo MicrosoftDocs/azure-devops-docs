@@ -7,6 +7,7 @@ ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
@@ -20,7 +21,7 @@ By using the plug-in file for Groups and Permissions, you can configure the init
   
  For information about how to configure the initial security settings for a project's functional areas, such as Team Foundation Build, Team Foundation version control, and Visual Studio Lab Management, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
- For information about how to customize types of work items to allow or deny access to groups or users, see [Apply a field rule](../xml/apply-rule-work-item-field.md).  
+ For information about how to customize types of work items to allow or deny access to groups or users, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
 
  For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups).  
   
@@ -270,7 +271,6 @@ The following table describes the permissions that you can assign to control acc
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
 - [Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)   
-- [Permission reference](/azure/devops/repos/tfvc/permission-command)
+- [Permission reference](../../repos/tfvc/permission-command.md)
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
 - [tf permission Command](../../repos/tfvc/permission-command.md).  
-  

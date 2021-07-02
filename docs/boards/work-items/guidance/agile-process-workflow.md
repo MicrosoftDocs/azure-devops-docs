@@ -1,7 +1,7 @@
 ---
 title: Agile process work item types & workflow
 titleSuffix: Azure Boards
-description: How to guide for using the Agile process to track work using its work item types working in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: How to guide for using the Agile process to track work using its work item types working in Azure Boards 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
@@ -14,7 +14,7 @@ ms.date: 12/20/2018
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -75,7 +75,7 @@ Use the following guidance and that provided for [fields used in common across w
 </td></tr>
 <tr>
     <td width="20%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Story Points](../../queries/query-numeric.md)">Story Points</a></p></td>
-    <td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p></td></tr>
+    <td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120)" data-raw-source="[Estimating](/previous-versions/visualstudio/visual-studio-2013/hh765979(v=vs.120))">Estimating</a> white paper.</p></td></tr>
 <tr>
     <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a></p>
 </td>
@@ -158,7 +158,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 </tr>
 <tr>
     <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
-    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="https://msdn.microsoft.com/library/dd380678.aspx" data-raw-source="[Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx)">Burndown and Burn Rate</a>, <a href="https://msdn.microsoft.com/library/dd380673.aspx" data-raw-source="[Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx)">Remaining Work</a>, and <a href="https://msdn.microsoft.com/library/dd380706.aspx" data-raw-source="[Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
+    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="/azure/devops/report/sql-reports/burndown-and-burn-rate-report" data-raw-source="[Burndown and Burn Rate](../../../report/sql-reports/burndown-and-burn-rate-report.md)">Burndown and Burn Rate</a>, <a href="/azure/devops/report/sql-reports/remaining-work-report" data-raw-source="[Remaining Work](../../../report/sql-reports/remaining-work-report.md)">Remaining Work</a>, and <a href="/azure/devops/report/sql-reports/status-on-all-iterations-report" data-raw-source="[Status on All Iterations](../../../report/sql-reports/status-on-all-iterations-report.md)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
 <tr>
     <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>
@@ -179,7 +179,7 @@ If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-u
  
 ### Test user stories
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
 ![Test plan web portal](media/IC793453.png)
 
@@ -187,7 +187,7 @@ The test case contains a number of fields, many of which are automated and integ
 
 <img src="media/agile-test-case-form.png" alt="Test case form" style="border: 1px solid #C3C3C3;" /> 
 
-The ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../../report/sql-reports/stories-overview-report-agile.md) report.
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../../report/sql-reports/stories-overview-report-agile.md) report.
 
 ### Track code defects
 
@@ -209,7 +209,7 @@ You can [create bugs from the web portal, Visual Studio, or when testing with Te
 
 ### Track issues 
 
-Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards.md), or from the **New** menu on the Queries page. 
+Issues are used to track events that may block progress or shipping a user story. Bugs, on the other hand, are used to track code defects. You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../report/dashboards/dashboards.md), or from the **New** menu on the Queries page. 
 
 ![Add work item from a New work item widget](../../../user-guide/media/features/alm-feature-new-work-item-widget.png)  
 
@@ -316,4 +316,3 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </table>
 
 ::: moniker-end
-

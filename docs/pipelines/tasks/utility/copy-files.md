@@ -4,9 +4,7 @@ description: Copy files between folders with match patterns when building code i
 ms.topic: reference
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
-ms.date: 02/11/2020
+ms.date: 06/08/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -39,8 +37,8 @@ None
 |Argument|Description|
 |--- |--- |
 |`SourceFolder`<br/>Source Folder|(Optional) Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified [**`$(Build.SourcesDirectory)`**](../../build/variables.md)). <br/> If your build produces artifacts outside of the sources directory, specify `$(Agent.BuildDirectory)` to copy files from the directory created for the pipeline.|
-|`Contents`<br/>Contents|(Required) File paths to include as part of the copy. Supports multiple lines of match patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=708389). <br/>For example: <br/><ul><li><b><code>*</code></b> copies all files in the specified source folder</li><li><b><code>\*\*</code></b> copies all files in the specified source folder and all files in all sub-folders</li><li><b><code>\*\*\bin\*\*</code></b> copies all files recursively from any bin folder <br/><br/>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as \*\*\bin\*\* instead of \*\*\bin.<br/>You must use the path separator that matches your build agent type. **Example,** / must be used for Linux agents. More examples are shown below. <br/>Default value: `\*\*`|
-|`TargetFolder`<br/>Target Folder|(Required) Target folder or UNC path files will copy to. You can use [variables](https://go.microsoft.com/fwlink/?LinkID=550988). <br/>Example: **$(build.artifactstagingdirectory)**|
+|`Contents`<br/>Contents|(Required) File paths to include as part of the copy. Supports multiple lines of match patterns. <br/>For example: <br/><ul><li><b><code>*</code></b> copies all files in the specified source folder</li><li><b><code>\*\*</code></b> copies all files in the specified source folder and all files in all sub-folders</li><li><b><code>\*\*\bin\\\*\*</code></b> copies all files recursively from any bin folder <br/><br/>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as \*\*\bin\\\*\* instead of \*\*\bin.<br/>You must use the path separator that matches your build agent type. **Example,** / must be used for Linux agents. More examples are shown below. <br/>Default value: `**`|
+|`TargetFolder`<br/>Target Folder|(Required) Target folder or UNC path files will copy to. You can use [variables](../../build/variables.md). <br/>Example: **$(build.artifactstagingdirectory)**|
 |`CleanTargetFolder`<br/>Clean Target Folder|(Optional) Delete all existing files in target folder before copy <br/>Default value: `false`|
 |`OverWrite`<br/>Overwrite|(Optional) Replace existing files in target folder <br/>Default value: `false`|
 |`flattenFolders`<br/>Flatten Folders|(Optional) Flatten the folder structure and copy all files into the specified target folder <br/>Default value: `false`|
@@ -122,6 +120,15 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
+**Example with variables in content section**
+
+```yaml
+- task: CopyFiles@2
+  inputs:
+    Contents: '$(Build.Repository.LocalPath)/**' 
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -131,7 +138,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder
 
@@ -213,7 +220,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder
 
@@ -241,7 +248,7 @@ YAML builds are not yet available on TFS.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

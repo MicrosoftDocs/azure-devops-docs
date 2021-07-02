@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # LocalVersions Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays the version of one or more items in a workspace.
 
@@ -105,9 +103,9 @@ When you get or check out a file, you usually download the most current version.
 
 For example, you might have checked out some files and not checked in your work for several weeks. Other people on your team may have checked in changes to the same files during that time. In this case, the versions of these files in your workspace would be older than the current versions on your server for Team Foundation version control. You can use the **localversions** command to get information about which versions of these files are in your workspace.
 
-For information about other Team Foundation commands that provide additional information about items in your server for Team Foundation version control and the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For information about other Team Foundation commands that provide additional information about items in your server for Team Foundation version control and the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information about how to find and use the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find and use the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 The following example displays the version of the `ControllerBase.cs` file in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\controller` folder.
@@ -122,11 +120,8 @@ The following example displays the versions of all files (including those in sub
 c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
 ```
 
-## See Also
 
-#### Concepts
+## Related articles
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

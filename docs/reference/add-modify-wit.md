@@ -3,10 +3,12 @@ title: Add or modify a work item type (WIT)
 titleSuffix: Azure DevOps & TFS 
 description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 01/24/2019
 ---
 
@@ -154,7 +156,7 @@ Apply workflow field rules to accomplish the following actions:
 -   Conditionally apply rules based on values in other fields using **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED**  
 -   Limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.    
 
-For more information about applying workflow field rules, see [FIELD (Workflow) element reference](https://msdn.microsoft.com/library/aa337626.aspx).  
+For more information about applying workflow field rules, see [FIELD (Workflow) element reference](./xml/field-workflow-element-reference.md?viewFallbackFrom=vsts).  
 
 <a id="modify-form">  </a>
 ## Customize the work item form  
@@ -187,7 +189,7 @@ For example, you can add bugs from the product backlog page.
 
 [!INCLUDE [temp](../includes/image-differences.md)]
 
-![](media/add-modify-wit-quick-add-panel.png)
+![This screen shows how to add bugs from the product backlog page.](media/add-modify-wit-quick-add-panel.png)
 
 
 To learn how to add or remove WITs from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new WIT to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
@@ -231,11 +233,11 @@ If you have a WIT that you want to retire, but maintain the work items that have
   </FIELDS>
 </TRANSITION> 
 ```
-If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:
+If you want to restrict creation of a specific work item type to a group of users, you can do so in one of the following two ways: 
 
--   [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+-   [Add the work item type to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
--   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
+-   Add [a field rule to the workflow](xml/change-workflow-wit.md#update-a-field-during-a-workflow-change) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
     ```xml
     <TRANSITION from=" " to="New">
@@ -248,7 +250,8 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
     ```
 
 <a id="delete-wit">  </a>
-## Delete a WIT (On-premises XML) 
+
+## Delete a work item type (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
@@ -297,7 +300,7 @@ For more information, see [Import, export, and manage work item types](witadmin/
 
 What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.
+You can add custom WITs and change the form layout. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.
 
 Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
@@ -324,4 +327,4 @@ If you want to completely remove the fields from the data store, use [**witadmin
 
 When you change the workflow for the test plan or test suite&mdash;and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions&mdash;these WITs became available when you updated your application-tier server to TFS 2013.3. that appears on an Agile planning tool page.
 
-If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md).  
+If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](witadmin/witadmin-import-export-process-configuration.md).

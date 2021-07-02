@@ -4,17 +4,15 @@ titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Azure Repos Plugin for IntelliJ IDEA and Android Studio
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The Azure Repos Plugin for IntelliJ allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
@@ -27,10 +25,10 @@ To complete the steps in this guide you need:
 
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
-* The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
+* The Azure Repos plugin for IntelliJ. See [IntelliJ Plugin download page](/previous-versions/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
-  * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows).
-  * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
+  * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](set-up-credential-managers.md).
+  * To install Git for macOS and Linux, see [git-scm.com](https://git-scm.com/downloads).
 
 ## Create a repo
 1. Navigate to your project in Azure DevOps by browsing to `https://dev.azure.com/{your organization}` and selecting the name of your project. You can select it from the **All** projects list, or from the **Recent** projects list if you have accessed it recently.
@@ -112,7 +110,7 @@ Now that we've got a Git repo with some sample code, let's take a look at how we
    Choose the correct repo, **DeepSpace**, and click the **Clone** button.
    (You may also want to choose where on your hard drive the repo is cloned to by changing the Parent Directory.)
 
-   ![Clone](media/create-repo-intellij/clone.png)
+   ![Screenshot that shows cloning a repo.](media/create-repo-intellij/clone.png)
 
 4. After the clone finishes, IntelliJ will ask you if you want to open the project.
    Click **Yes** and you should end up with the **DeepSpace** project opened in IntelliJ IDEA.
@@ -199,5 +197,4 @@ future traceability purposes.
 > [Check out the entire DeepSpace IntelliJ tutorial](/azure/devops/java/labs/e2eintellij)
 
 > [!div class="nextstepaction"]
-> [View the IntelliJ plugin FAQ](/azure/devops/java/intellij-faq)
-
+> [View the IntelliJ plugin FAQ](/previous-versions/azure/devops/java/intellij-faq)

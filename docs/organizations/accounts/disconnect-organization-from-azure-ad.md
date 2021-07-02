@@ -27,7 +27,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 * Add your Microsoft account to the Project Collection Administrator group in Organization Settings and confirm that you have Global Administrator Permissions in your Azure AD for your Microsoft account. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
 
-Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
+Learn about how to [Manage Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 **What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
 
@@ -56,7 +56,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](faq-azure-access.md#faq-connect).
+For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](./faq-azure-access.yml#faq-connect).
 
 ## Related articles
 
@@ -64,5 +64,4 @@ For answers to frequently asked questions about connecting to, disconnecting fro
 * [About access with Azure AD](access-with-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
-
+* [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](./faq-azure-access.yml#connect-to-disconnect-from-or-change-azure-ad-connection)

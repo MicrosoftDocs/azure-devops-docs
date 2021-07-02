@@ -4,16 +4,14 @@ titleSuffix: Azure Repos
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 11/12/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Save work with commits
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 
@@ -52,12 +50,12 @@ Continue to create commits as you work, [pushing](pushing.md) your changes to th
 Commits include the following information:
 
 - A snapshot of the files saved in the commit. Git snapshots the contents of all files in your repo at the time of the commit&mdash;this makes switching versions very fast and helps Git [merge](merging.md) changes.
-- A reference to the parent commit(s). Commits with multiple parents occur when [branches](branches.md) are merged together.
+- A reference to the parent commit(s). Commits with multiple parents occur when [branches](./create-branch.md) are merged together.
 - A short and to the point message describing the changes in the commit. You enter this message when you create the commit.  
 
 Git uses the references between commits along with the file snapshots to maintain a complete record of development in your repo.
 
-[Learn more about Git history](/azure/devops/learn/git/understand-git-history) and how to [review history](history.md) to investigate changes made to your code.
+[Learn more about Git history](/devops/develop/git/understand-git-history) and how to [review history](history.md) to investigate changes made to your code.
 
 <a name="stage-your-changes-and-commit"></a>
 
@@ -70,6 +68,8 @@ Staging lets you to selectively add files to a commit while excluding changes ma
 [Ignore](ignore-files.md) temp files, logs, and other files that might change on your local machine but you don't want to add to version control.
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 #### Visual Studio 2015 (Update 2) and 2017
 
@@ -112,6 +112,8 @@ Run the `status` command after you stage files to review your changes before mak
 ## Create a commit
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 Open the **Changes** view in Team Explorer.
 
@@ -165,4 +167,4 @@ Amend your last commit to correct small errors without making a new commit.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create work in branches](branches.md).
+> [Create work in branches](./create-branch.md).

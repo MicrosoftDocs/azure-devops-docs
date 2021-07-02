@@ -24,7 +24,7 @@ ms.date: 11/13/2017
 
 ## Install or enable Analytics 
 
-When you [enable or install Analytics](../dashboards/analytics-extension.md) for a project collection, you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](/azure/devops/user-guide/provide-feedback?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json).
+When you [enable or install Analytics](../dashboards/analytics-extension.md) for a project collection, you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](../../user-guide/provide-feedback.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json).
 
 ::: moniker-end
 
@@ -39,5 +39,3 @@ Because the data is copied, Analytics is **not a real-time time store**.  Copyin
 Using the [recommended query patterns](../extend-analytics/odata-query-guidelines.md), Analytics will respond to any [aggregation](../extend-analytics/aggregated-data-analytics.md) or [non-aggregated query](../extend-analytics/analytics-recipes.md) query within 3 to 5 seconds. The query response will be paged if it exceeds 10,000 results. 
 
 Some of the entity sets available in Analytics are designed for aggregations.  The service will limit the results from these Entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md).
-
-

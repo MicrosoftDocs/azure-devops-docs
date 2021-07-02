@@ -3,9 +3,11 @@ title: Expand list items and exclude groups from lists
 titleSuffix: TFS
 description: Examples for expanding pick list items and restricting items using expanditems and filteritems attributes - Team Foundation Server (TFS)
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 05/10/2017
 ---
 
@@ -237,4 +239,4 @@ In this example, the field contains a string value, one group, and a global list
 ## Related articles 
 -  [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)   
 -  [GLOBALLIST XML element reference](define-global-lists.md)   
--  [Apply a field rule](apply-rule-work-item-field.md)
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)

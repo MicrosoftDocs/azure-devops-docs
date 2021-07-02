@@ -13,7 +13,7 @@ ms.date: 02/06/2020
 
 # Azure Boards migration and integration 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You have a choice of tools to support migration of your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. In addition, you can integrate Azure Boards with a number of third-party tools. 
 
@@ -33,6 +33,19 @@ The [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?it
 
 To learn more, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/).
 
+[OpsHub Visual Studio Migration Utility](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OpsHubVisualStudioOnlineMigrationUtility) (OVSMU) enables a seamless migration between Azure DevOps Server(TFS) and Azure DevOps Services(VSTS) or Azure DevOps and Azure DevOps.  Migrate projects from DevOps Services to a collection on DevOps server including:  
+
+- All version control information and history
+- All work items and history
+- All test cases and test results
+- Supports the 2010, 2012, 2013, 2015, 2018, and 2019 versions of Azure DevOps Server
+- Supports all versions of Azure DevOps Services
+
+[OVSMU](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) covers the following scenarios:
+
+Supports data migration from Azure DevOps Server (TFS) to Azure DevOps Server (TFS), Azure DevOps Services (VSTS) to Azure DevOps Server (TFS) and Azure DevOps Services (VSTS) to Azure DevOps Services (VSTS).
+
+
 ## Migrate process models between Azure DevOps organizations
 
 The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate) marketplace extension provides support to perform the following tasks:  
@@ -40,6 +53,14 @@ The [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?
 - Upload an On-premises XML process model from an export 
 
 For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
+
+## Migrate between legacy tools and Azure DevOps
+
+The [OpsHub Migration Manager](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1455028.OMM) marketplace extension supports full fidelity, large scale data migration projects out of the box between legacy or ALM tools and Azure DevOps.  OMM offers the following:
+
+- Zero downtime migration or non-disruptive migration 
+- Factory approach for large scale migration projects
+- Full fidelity migration with history preservation for all artifacts, comments, attachments and relationships  
 
 ## Export and import work tracking data
 
@@ -66,12 +87,12 @@ You can integrate Azure Boards with other third-party tools such as Jenkins and 
 
 ## Project and portfolio management  
 
-The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. The last three tools support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
+The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. These tools also support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
 
-- [AgileCraft](https://marketplace.visualstudio.com/items?itemName=agilecraft.AgileCraft) enables organizations scaling Agile to the enterprise by connecting business strategy to technical execution.
-- [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
+- [OpsHub Integration Manager(OIM)](https://www.opshub.com/products/opshub-integration-manager/) is an enterprise class integration platform that enables bi-directional synchronization for Azure DevOps(Server and Services) with 50+ ALM, DevOps, Project and Portfolio Management tools out of the box. It enables synchronization of all work items including test artifacts with an easy to use mapping UI and is scalable for any number of projects and teams.  
+-  [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
 - [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
-- [Tasktop](https://www.tasktop.com/product-overview) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
+- [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
 ## Related articles

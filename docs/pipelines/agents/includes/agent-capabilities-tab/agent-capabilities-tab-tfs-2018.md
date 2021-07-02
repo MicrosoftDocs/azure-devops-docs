@@ -9,4 +9,4 @@ ms.date: 02/12/2020
 
 Select the desired agent, and choose the **Capabilities** tab.
 
-![Agent capabilities tab](../../media/agent-capabilities-tab/capabilities-2018.png)
+![Agent capabilities tab, 2018.](../../media/agent-capabilities-tab/capabilities-2018.png)

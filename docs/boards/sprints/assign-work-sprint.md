@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # 1. Assign backlog items to a sprint 
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 The first step in planning your sprint is to assign work from your backlog to a sprint. 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 
@@ -57,7 +57,7 @@ some or all of the items based on these estimates.
 
 
 > [!NOTE]    
-> Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).
+> Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/devops/plan/what-is-scrum).
 >  
 > When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
@@ -71,7 +71,7 @@ some or all of the items based on these estimates.
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 From your web browser, open your product backlog. 
 
@@ -86,14 +86,14 @@ From your web browser, open your product backlog.
 	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -106,20 +106,20 @@ From your web browser, open your product backlog.
 
 	![Open Work, Backlogs, for a team](media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -157,7 +157,7 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 ::: moniker range=">=azure-devops-2019"
 
-1. The next step is to open the Planning pane. Choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
+1. The next step is to open the Planning pane. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Open view options and choose Planning](media/define-sprints/view-options-planning-menu.png)
@@ -221,7 +221,7 @@ Multi-select of backlog work items requires TFS 2015.1 or later version.
 
 ::: moniker range=">= tfs-2015"  
 
-To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (![actions icon](../media/icons/actions-icon.png)) menu of one of the items. 
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
 

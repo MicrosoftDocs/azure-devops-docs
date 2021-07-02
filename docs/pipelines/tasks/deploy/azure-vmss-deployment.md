@@ -46,6 +46,27 @@ Use this task to deploy a virtual machine scale set image.
 
 </table>
 
+
+## Troubleshooting
+
+### Error: 'Permission denied: Script is not executable'
+
+This issue occurs if you try to run a custom script, but the script isn't executable. 
+
+To resolve the issue, first make sure that the `customScript` input doesn't have `./` or anything else before the script name `'test.sh'`:
+
+```yml
+    customScript: 'test.sh'
+```
+
+Next, try adding a command line task before the virtual machine scale set task:
+
+```yml
+    - task: CmdLine@2
+      inputs:
+        script: 'chmod 777 $(System.DefaultWorkingDirectory)/test.sh' 
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

@@ -54,7 +54,7 @@ Read about the new features below and head over to Azure DevOps Services to try 
 
 ### Control specific build dependencies using container jobs
 
-By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml) documentation for more information.
+By default, jobs run on the host machine where the agent is installed. Container jobs, using the lightweight abstraction over the host operating system that containers provide, let you isolate your tools and dependencies inside a container instead. The agent will launch an instance of your specified container, then run steps inside it. You can select the exact versions of operating systems, tools, and dependencies that your build requires. See the [Container jobs](/azure/devops/pipelines/process/container-phases?view=azure-devops&preserve-view=true&tabs=yaml) documentation for more information.
 
 ### Enable code coverage in .NET Core task
 
@@ -64,7 +64,7 @@ The **.NET Core** task in Azure Pipelines now supports code coverage so that you
 
 ### Leverage restructured Process REST APIs
 
-In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/WorkItemTrackingProcess) using the C# client libraries.
+In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0&preserve-view=true) documentation for more information. We have also created a [few samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/WorkItemTrackingProcess) using the C# client libraries.
 
 ## Azure Artifacts
 
@@ -123,7 +123,7 @@ Now you can rename your wiki in the wiki user interface and using REST APIs. Fro
 
 ### Insert a wiki table of contents from the format pane
 
-Last sprint we shipped the ability to [create table of contents](/azure/devops/release-notes/2018/aug-21-vsts#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
+Last sprint we shipped the ability to [create table of contents](./aug-21-vsts.md#create-table-of-contents-for-wiki-pages) in wiki pages. You can now insert table of contents by clicking the appropriate button in the format pane when editing page.
 
 > [!div class="mx-imgBorder"]
 > ![Insert wiki TOC](media/140_04.png)
@@ -137,7 +137,7 @@ As you've noticed with the new navigation in Azure DevOps, we're focused on brin
 > [!div class="mx-imgBorder"]
 > ![PAT page](media/140_01.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

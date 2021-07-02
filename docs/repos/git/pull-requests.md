@@ -1,28 +1,79 @@
 ---
 title: Review and merge code with pull requests
 titleSuffix: Azure Repos
-description:  Conduct a code review in a Git with Azure Repos or Azure DevOps Server, create a pull request.
+description:  Learn how to conduct a code review in a Git with Azure Repos or Azure DevOps Server, and then create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+ms.author: vijayma
+author: vijayma
+ms.date: 08/28/2020
+monikerRange: '<= azure-devops'
 ---
 
-# Review code with pull requests
+# Create, view, and manage pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
-Pull requests let your team review code and give feedback on changes before merging it into the master branch.
+Pull requests let your team review code and give feedback on changes before merging it into the main branch.
 Pull requests can come from either topic branches within the same repository or from a branch in a [fork](forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-New to pull requests? Learn more about how to [get feedback with Git pull requests](/azure/devops/learn/git/git-pull-requests).
+New to pull requests? Learn more about how to [get feedback with Git pull requests](/devops/develop/git/git-pull-requests).
 
-## View and manage your pull requests
+## Pull request guidelines
+
+### Give great feedback
+
+High quality reviews start with high quality feedback.
+The keys to great feedback in a pull request are:
+
+- Have the right people review the pull request
+- Make sure that reviewers know what the code does
+- Give actionable, constructive feedback
+- Reply to comments in a timely manner
+
+When assigning reviewers to your pull request, make sure you select the right set of reviewers.
+You want reviewers that know how your code works, but try to also include developers working in other areas so they can share their ideas.
+Provide a clear description of your changes and provide a build of your code that has your fix or feature running in it.
+
+Reviewers should make an effort to provide feedback on changes they don't agree with.
+Identify the issue and give a specific suggestions on what you would do differently.
+This feedback has clear intent and is easy for the owner of the pull request to understand.
+The pull request owner should reply to the comments, accepting the suggestion or explaining why the suggested change isn't ideal.
+Sometimes a suggestion is good, but the changes are outside the scope of the pull request.
+Take these suggestions and create new work items and feature branches separate from the pull request to make those changes.
+
+- [Provide reviewer guidance with pull request templates](pull-request-templates.md)
+- [Leave comments](#leave-comments)
+- [Vote on the changes](#vote-on-the-changes)
+
+### Protect branches with policies
+
+There are a few critical branches in your repo that the team relies on always being in good shape, such as your `master` branch.
+[Require pull requests](branch-policies.md) to make any changes on these branches.
+Developers pushing changes directly to the protected branches will have their pushes rejected.
+
+Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches.
+A clean build of the merged code and approval from multiple reviewers are some extra requirements you can set to protect your key branches.
+
+- [Branch policies overview](branch-policies-overview.md)
+- [How to configure branch policies](branch-policies.md)
+- [Branch permissions](branch-permissions.md)
+
+### Extend pull request workflows with pull request status
+
+Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
+
+- [Pull request status overview](pull-request-status.md)
+- [Create a PR status server with Node.js](create-pr-status-server.md)
+- [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
+- [Configure a branch policy for an external service](pr-status-policy.md)
+
+> [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
+
+## View your pull requests
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -30,15 +81,15 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
    ![View your pull requests](media/repos-navigation/repos-pull-requests.png)
 
-1. Verify that you selected the correct repository.
+2. Verify that you selected the correct repository.
 
    ![Choose your repo](media/repos-navigation/pull-requests-breadcrumb.png)
 
-1. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
+3. Select **Active** to show all active pull requests for the current repository. Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
    ![Viewing completed and abandoned pull requests in Azure Repos](media/pull-requests/pr_status_widget.png)
 
-1. You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
+4. You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
    ![View all your pull requests](media/pull-requests/view-all-my-pull-requests.png)
 
@@ -48,7 +99,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/repos-navigation/repos-code-pull-requests.png)
+![Viewing completed and abandoned pull requests in Azure Repos 1](media/repos-navigation/repos-code-pull-requests.png)
 
 ::: moniker-end 
 
@@ -58,7 +109,7 @@ Select **Active** to show all active pull requests for the current repo.
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/pull-requests/pr_status_widget.png)
+![Viewing completed and abandoned pull requests in Azure Repos 2](media/pull-requests/pr_status_widget.png)
 
 You can view all of your pull requests in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
 
@@ -84,7 +135,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-new-nav.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -96,7 +147,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -107,7 +158,7 @@ Select **Create a pull request** to go to a page where you can [enter your pull 
 Create a pull request directly from a work item linked to the branch.
 
 1. From **Backlogs** or **Queries** in the **Work** view, open the work item with the linked branch.
-1. In the **Development** area of the work item, select **Create a pull request**.
+2. In the **Development** area of the work item, select **Create a pull request**.
 
    ![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](media/pull-requests/create-pr-from-work-item.png)
 
@@ -120,35 +171,37 @@ Create pull requests from any branch from the **Pull Request** page on the web.
 ![New pull request](media/pull-requests/new-pr-button.png)
 
 Select **New pull request** in the upper right. You can [enter your pull request details](pull-requests.md#finish) and create the pull request.
-Pick the branch you want to have reviewed and the branch you want to merge the changes into, such as the master branch.  
+Pick the branch you want to have reviewed and the branch you want to merge the changes into, such as the main branch.  
 
 ![Choosing source and target branches for a pull request in Azure Repos](media/pull-requests/pr-branch-targets.png)
 
 ### From Visual Studio
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Initiate pull requests directly from Visual Studio.
 
 1. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).
 
-1. Select **View** > **Team Explorer** to open Team Explorer. You can also select Ctrl+\ then Ctrl+m.
+2. Select **View** > **Team Explorer** to open Team Explorer. You can also select Ctrl+\ then Ctrl+m.
 
-1. Select **Home**, then choose **Pull Requests**.
+3. Select **Home**, then choose **Pull Requests**.
 
    ![Pull Requests](media/pull-requests/pull-requests.png)
 
-1. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
+4. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
-   ![Pull Requests](media/pull-requests/new-pull-request.png)
+   ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
    In **Pull Requests**, you can also view pull requests opened by you or assigned to you.
 
    You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your project.
 
-   ![Pull Requests](media/pull-requests/new-pr-from-branch.png)
+   ![Initiate pull request from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
 ### From the Azure DevOps Services CLI
 
-You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/ext/azure-devops/?view=azure-cli-latest). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
+You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
 
 For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
@@ -156,11 +209,22 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 <a name="finish"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Draft pull requests
 
-Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
+::: moniker-end
+
+:::moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Draft pull requests were added in the Azure DevOps Server 2019.1 update.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+Sometimes you might want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
 
 - [Draft pull request differences](#draft-pull-request-differences)
 - [Create a draft pull request](#create-a-draft-pull-request)
@@ -187,7 +251,7 @@ To create a draft pull request, choose **Create as draft** when creating the pul
 
 If you start your pull request title with WIP, **Create as draft** is selected as the default.
 
-![Create as draft](media/pull-requests/create-draft-pr-wip.png)
+![Start your pull request title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
 
 ### Publish a draft pull request
 
@@ -208,13 +272,39 @@ To mark an active pull request as a draft, choose **Mark as draft**. Marking a p
 ## Add detail to your pull request
 
 Link work items and describe the changes in the branch to make it easier for others to see what problem your changes solve.
-Change the pull request title, add a detailed description, add reviewers, link work items, and make comments to explain your changes. When you're ready to create the pull request and have your changes reviewed, select **Create**.
+Change the pull request title, add a detailed description, add reviewers, add attachments, link work items, and make comments to explain your changes. When you're ready to create the pull request and have your changes reviewed, select **Create**.
 
-![Adding details to a new pull request](media/pull-requests/add-detail-to-pr.png)
+:::moniker range="azure-devops"
+
+:::image type="content" source="media/pull-requests/create-new-pull-request-2020.png" alt-text="Screenshot that shows creating a new pull request.":::
+
+:::moniker-end
+
+:::moniker range="<= azure-devops-2020"
+
+:::image type="content" source="media/pull-requests/add-detail-to-pr.png" alt-text="Adding details to a new pull request.":::
+
+:::moniker-end
 
 Don't worry if you don't have all of the work items, reviewers, or details ready when you create your pull request.
 You can add them now when you create the pull request.
 You can also add or update all of these items after you create the pull request.
+
+::: moniker range="azure-devops"
+
+### Help reviewers using pull request tags
+
+Sometimes it's important to communicate extra information about a pull request to the reviewers. Maybe the pull request is still a work in progress, or it's a hotfix for an upcoming release. You can append some extra text in the title, perhaps a "[WIP]" prefix or "DO NOT MERGE". Tags provide a way to give pull requests extra information. Use tags to communicate important details and help organize pull requests.
+
+![PR request labels](media/pull-requests/pull-request-labels.png)
+
+To add a tag when creating a pull request, type a tag name in the **Tags** section. After you create a pull request, you can manage its tags in the **Tags** section.
+
+:::image type="content" source="media/pull-requests/pull-request-tags-section.png" alt-text="Screenshot that shows the pull request Tags section highlighted.":::
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
 
 ### Help reviewers using pull request labels
 
@@ -226,27 +316,45 @@ To add a label when creating a pull request, choose **Add label**. After you cre
 
 ![Add pull request label](media/pull-requests/add-pull-request-label.png)
 
-In a future release, we'll make labels even more useful by making it easier to filter pull requests using labels.
+::: moniker-end
 
 ### Add and remove reviewers
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 Add reviewers to your pull request:
 
 1. Select **Overview** in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-reviewers-new-nav.png)
+   :::image type="content" source="media/pull-requests/pull-request-add-reviewer-v2.png" alt-text="Pull request overview":::    
 
-1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
+2. Select the **Add** button in the **Reviewers** area, and then select **Required** or **Optional**.
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
-   ![Add pull request reviewer](media/pull-requests/add-pr-reviewer.png)
+   :::image type="content" source="media/pull-requests/pull-request-add-reviewer.png" alt-text="Add pull request reviewer.":::
 
 ::: moniker-end
+
+:::moniker range="<= azure-devops-2020"
+
+Add reviewers to your pull request:
+
+1. Select **Overview** in the pull request.
+
+   :::image type="content" source="media/pull-requests/pull-request-overview-reviewers-new-nav.png" alt-text="Screenshot that shows the pull request Overview tab":::    
+
+2. Select the **Add** button in the **Reviewers** area.
+
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
+
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+
+   :::image type="content" source="media/pull-requests/add-pr-reviewer.png" alt-text="Add pull request reviewer.":::
+
+:::moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -256,11 +364,11 @@ Add reviewers to your pull request:
 
    ![Pull request overview](media/pull-requests/pull-request-overview-reviewers.png)
 
-1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
+2. Select the add button in the **Reviewers** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+3. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
-1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
+4. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
    ![Add pull request reviewer](media/pull-requests/add-pr-reviewer.png)
 
@@ -271,22 +379,39 @@ Add reviewers to your pull request:
 
 ### Link work items
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items-new-nav.png)
+   :::image type="content" source="media/pull-requests/pull-request-link-work-items-2020.png" alt-text="Screenshot that shows selecting the Overview tab and the work items section.":::
 
-1. Select the add button in the **Work Items** area. ![Add icon in pull requests](media/pull-requests/pr_add_icon.png)
+2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove button](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between a work item to a pull request. Links created in the branch or from commits stay in the work item.
 
 ::: moniker-end
+
+:::moniker range="<= azure-devops-2020"
+
+Link work items to your pull request:
+
+1. Select the **Overview** tab in the pull request.
+
+   :::image type="content" source="media/pull-requests/pull-request-overview-work-items-new-nav.png" alt-text="Screenshot that shows selecting the Overview tab and the link items button.":::
+
+2. Select the add button in the **Work Items** area. ![Add icon in pull requests](media/pull-requests/pr_add_icon.png)
+
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+
+Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove button](media/pull-requests/pr_remove_icon.png)
+Removing a link only removes the link between a work item to a pull request. Links created in the branch or from commits stay in the work item.
+
+:::moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -294,11 +419,11 @@ Link work items to your pull request:
 
 1. Select **Overview** in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items.png)
+   ![Select Overview in the pull request.](media/pull-requests/pull-request-overview-work-items.png)
 
-1. Select the add button in the **Work Items** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
+2. Select the add button in the **Work Items** area. :::image type="icon" source="media/pull-requests/pull-request-add-button.png":::
 
-1. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
+3. Enter the ID of the work item or search for work items with titles that match your text. Select the work item from the list that appears.
 
 Remove work item links by selecting the remove button that appears when you hover over the work item. ![remove icon](media/pull-requests/pr_remove_icon.png)
 Removing a link only removes the link between a work item to a pull request. Links created in the branch or from commits stay in the work item.
@@ -309,50 +434,110 @@ Removing a link only removes the link between a work item to a pull request. Lin
 
 Update the title of a pull request by clicking the current title and updating the text. Choose the save button to save changes or select undo to discard your changes.
 
-![Editing details in an existing Azure Repos pull request](media/pull-requests/edit_pr_information.png)
+:::image type="content" source="media/pull-requests/pull-request-edit-title-description-2020.png" alt-text="Screenshot that shows editing the pull request title and selecting the description Edit button.":::
 
-Edit the pull request description by selecting the edit link that appears when you hover over the existing description.
+Edit the pull request description by selecting the edit icon in the description section.
 
 ![Editing pull request description](media/pull-requests/edit-pr-description.png)
 
-Keep these fields up to date so reviewers know what the changes in the pull request are trying to accomplish.
+Keep these fields up to date so that reviewers know what the changes in the pull request are trying to accomplish.
 
 ## Review a pull request
 
 The **Overview** tab shows the current state of the pull request at a glance.
 Review the title, description, and discussion to understand proposed changes and see issues brought up by other reviewers.  
 
-![Pull request overview](media/pull-requests/pull-request-overview.png)
+:::image type="content" source="media/pull-requests/pull-request-overview-2020.png" alt-text="Screenshot that shows the pull request overview tab.":::
 
 Starting with Visual Studio 2017 Update 6, you can check out the source branch from a pull request directly from **Pull Requests** in **Team Explorer**. Right-click the pull request and choose **Checkout Source Branch**.
 
 ![Check out source branch](./media/pull-requests/checkout-pr-source-branch.png)
+
+### Filter pull requests
+
+Filtering allows you to find and organize your pull requests, enabling you to prioritize the most important files in your workflow.
+
+::: moniker range=">= azure-devops-2020"
+
+#### Create custom queries
+
+You can create multiple custom queries on the pull request page with additional filters, such as draft state. These queries create separate and collapsible sections to enable better pull request actionability. The queries work across repositories on the **My pull requests** tab of the organization home page.
+
+#### Filter by comments
+
+Use comment-related filters on the pull request details page for faster reviews:
+
+- Comment status: **Active** (default), **All**, **Pending**, **Resolved**, **As designed**, **Won't fix**, and **Closed**.
+- Commented by: Filter for comments left by a specific person.
+- File types: **Show all files** (default), and **Show only the files that have been commented on**.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+#### Filter by target branch
+
+On the **Pull requests** page, click the **Filter** icon, and then select **Target branch**. Select the branch you want from the drop-down.
+
+::: moniker-end
 
 ### Browse code changes
 
 Select **Files** to view the changes made to the source branch next to the target branch of the pull request.
 
 >[!NOTE]
->The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool.
+>When viewing the difference for a _single selected file_, there is a size limit of 5 MB for the file. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a _collection of files_ in the Files view, the size limit for each file is 0.5 MB for performance reasons.
+
+::: moniker range="azure-devops"
+
+:::image type="content" source="media/pull-requests/pull-request-browse-changes-2020.png" alt-text="Screenshot that shows a side-by-side diff view of file changes in a pull request.":::
+
+Review previous versions of the code from the **All changes** drop-down list.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
 
 ![Pull request files](media/pull-requests/pull-request-files.png)
 
 Review previous versions of the code from the **All updates** drop-down list.
+
+::: moniker-end
+
 Every time Azure Repos updates the branch, it adds a new version to the list and on the **Updates** tab.
 
 The diff view updates as you select different changes.
 It shows the differences between the files in the selected and previous version in the pull request.
+
+::: moniker range=">= azure-devops-2019"
+
+View code coverage metrics for changes within the pull request view. This ensures that you have adequately tested your changes through automated tests. Coverage status appears as a comment in the pull request overview. You can view details of coverage information for every code line that is changed in the file diff view.
+
+::: moniker-end
+
 Catch up with a pull request after being away from it by stepping through changes made since your last review.
+
+:::moniker range="= azure-devops"
+
+:::image type="content" source="media/pull-requests/pull-request-all-changes-dropdown.png" alt-text="Screenshot that shows the All changes drop-down.":::
+
+:::moniker-end
+
+::: moniker range="<= azure-devops-2020"
 
 ![Pull request updates](media/pull-requests/pull-request-file-updates.png)
 
+::: moniker-end
+
 Browse a list of changes from the author using **Updates**.
 
-![Pull request updates](media/pull-requests/pull-request-updates.png)
+![Browse a list of changes from the author.](media/pull-requests/pull-request-updates.png)
 
 You can select and view changes made in commits on the branch in **Commits**.
 
 ![Pull request commits](media/pull-requests/pull-request-commits.png)
+
+You can see a preview of how a markdown file will look by selecting the **View** button on the file, and then selecting **Preview** from the drop-down.
 
 ### Leave comments
 
@@ -365,17 +550,25 @@ Reply directly to the author or other reviewers by using `@username` and referen
 
 Update comment status to let reviewers know what you are doing to address the concerns brought up in their review. New comments start in **Active** status. Select **Resolve** or **Reply &amp; resolve** to update comments in the conversation.
 
-![Reviewing comments in Azure Repos pull requests](./media/pull-requests/pr-comments-reply-and-resolve.png)
+![Update comments in Azure Repos pull requests.](./media/pull-requests/pr-comments-reply-and-resolve.png)
 
 Additional options are available in the comment resolution drop-down list.
 
-![Reviewing comments in Azure Repos pull requests](./media/pull-requests/pr-comment-resolution.png)
+![Additional options in Azure Repos pull requests.](./media/pull-requests/pr-comment-resolution.png)
 
 - **Active**: Comment is still under review.
 - **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
 - **Resolved**: The issue brought up in this comment has been fixed.
 - **Won't Fix**: The suggestion in the comment is noted, but won't make changes in this pull request to address it.
 - **Closed**: Discussion for this comment is closed.
+
+:::moniker range=">= azure-devops-2019"
+
+### Mark files as reviewed
+
+To keep track of files that have already been reviewed, select the ellipsis icon next to a file in your pull request, and then select **Mark as reviewed** from the drop-down.
+
+:::moniker-end
 
 ### Vote on the changes
 
@@ -403,15 +596,17 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ![Updating code directly during a pull request in Azure Repos](./media/pull-requests/pr_editing_changes.png)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of a pull request
 
-For most teams, nearly all pull requests target the same branch, such as `master` or `develop`. You may need to target a different branch, but it's easy to forget to change the target branch from the default. To change the target branch of an active pull request, see [Change the target branch of a pull request](/azure/devops/release-notes/2018/sprint-141-update#azure-repos).
+For most teams, nearly all pull requests target the same branch, such as `main` or `develop`. You may need to target a different branch, but it's easy to forget to change the target branch from the default. To change the target branch of an active pull request, see [Change the target branch of a pull request](/azure/devops/release-notes/2018/sprint-141-update#azure-repos).
 
 ::: moniker-end
 
 ## Complete the pull request
+
+::: moniker range="azure-devops"
 
 1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
 
@@ -421,22 +616,114 @@ For most teams, nearly all pull requests target the same branch, such as `master
    - **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once it meets all branch policies.
    - **Abandon**: Close the pull request without merging the changes.
 
-1. In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the pull request description.
+2. In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the pull request description.
+
+   :::image type="content" source="media/pull-requests/pull-request-complete-merge-2020.png" alt-text="Screenshot that shows the complete pull request dialog.":::
+
+3. Select your **Merge type**:
+    - **Merge (no fast forward)**: Non-linear history preserving all commits.
+    - **Squash commit**: Linear history with only a single commit on the target ([squash merge](merging-with-squash.md) your pull request).
+    - **Rebase and fast-forward**: Rebase source commits onto target and fast-forward.
+    - **Semi-linear merge**: Rebase source commits onto target and create a two-parent merge.
+   
+   > [!NOTE]
+   > Existing policies are still enforced. For example, if your branch currently has a “squash merge only” policy in place, you will have to edit that policy in order to use the new merge types.  
+    
+4. Select any of the following post-completion options (some options are not available depending on the merge type):
+
+   - **Complete associated work items after merging** to complete any linked work items.
+   - **Delete `<branch name>` after merging** to delete the source branch from the pull request.
+   - **Customize merge commit message** to add a custom merge commit message.
+   - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
+
+5. Select **Complete merge**.
+
+Linked work items are also updated showing the pull request completion.
+
+There are a few situations when rebasing during pull request completion is not possible:
+
+- If a policy on the target branch prohibits using rebase strategies, you will need “Override branch policies” permission.
+- If the source branch of the pull request has policies, you won’t be able to rebase it. Rebasing will modify the source branch without going through the policy approval process.
+- If you’ve used the Merge Conflict Extension to resolve merge conflicts. Conflict resolutions applied to a three-way merge are seldom successful (or even valid) when rebasing all the commits in a pull request one at a time.
+
+In all these cases, you still have the option of rebasing your branch locally and pushing to the server, or squash-merging your changes when completing the pull request.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+
+1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
+
+   ![Complete button for the pull request with its drop-down options](./media/pull-requests/complete_pr_options.png)
+
+   - **Complete**: Complete the pull request now and merge the changes to the target branch.
+   - **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once it meets all branch policies.
+   - **Abandon**: Close the pull request without merging the changes.
+
+2. In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the pull request description.
 
    ![Complete pull request dialog](./media/pull-requests/complete-pr-dialog.png)
 
-1. Select any of the following options:
+3. Select any of the following options:
+    - **Complete linked work items after merging** to complete any linked work items.
+    - **Delete `<branch name>` after merging** to delete the source branch from the pull request.
+    - **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
+    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
+    
+   
+   > [!NOTE]
+   > Existing policies are still enforced. For example, if your branch currently has a “squash merge only” policy in place, you will have to edit that policy in order to use the new merge types.  
+
+5. Select **Complete merge**.
+
+Linked work items are also updated showing the pull request completion.
+
+![Linked Work Items showing completed pull requests](./media/pull-requests/pr_workitem_complete.png)
+
+There are a few situations when rebasing during pull request completion is not possible:
+
+- If a policy on the target branch prohibits using rebase strategies, you will need “Override branch policies” permission.
+- If the source branch of the pull request has policies, you won’t be able to rebase it. Rebasing will modify the source branch without going through the policy approval process.
+- If you’ve used the Merge Conflict Extension to resolve merge conflicts. Conflict resolutions applied to a three-way merge are seldom successful (or even valid) when rebasing all the commits in a pull request one at a time.
+
+In all these cases, you still have the option of rebasing your branch locally and pushing to the server, or squash-merging your changes when completing the pull request.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+1. Select **Complete** in the upper right of the pull request view to complete your pull request after the reviewers approve of the changes.
+
+   ![Complete button for the pull request with its drop-down options](./media/pull-requests/complete_pr_options.png)
+
+   - **Complete**: Complete the pull request now and merge the changes to the target branch.
+   - **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once it meets all branch policies.
+   - **Abandon**: Close the pull request without merging the changes.
+
+2. In **Complete pull request**, enter the message for the [merge commit](merging.md) and update the pull request description.
+
+   ![Complete pull request dialog](./media/pull-requests/complete-pr-dialog.png)
+
+3. Select any of the following post-completion options:
 
    - **Complete linked work items after merging** to complete any linked work items.
    - **Delete `<branch name>` after merging** to delete the source branch from the pull request.
    - **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
-1. Select **Complete merge**.
+4. Select **Complete merge**.
 
 Linked work items are also updated showing the pull request completion.
 
 ![Linked Work Items showing completed pull requests](./media/pull-requests/pr_workitem_complete.png)
+
+::: moniker-end
+
+### Resolve merge conflicts
+
+You must resolve any [merge conflicts](merging.md) between the pull request branch and the target branch. Git adds
+a new commit (the *merge commit*) to the end of the main branch. This merge commit links the earlier history of both the main branch and the commits for the branch
+that was merged as part of the pull request.
 
 ::: moniker range=">= tfs-2017" 
 
@@ -547,38 +834,7 @@ To copy changes made in a pull request to another branch in your repo, follow th
 
 ## Set a new default branch
 
->[!NOTE]
->This step requires [Edit Policies permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+[!INCLUDE [](includes/change-default-branch-instructions.md)]
 
-Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
-You can use a branch other than `master` for new changes or change your main line of development in your repo.
-
-::: moniker range=">= azure-devops-2019"
-
-1. [Go to your project](../../project/navigation/go-to-project-repo.md) and select **Project settings**.
-
-1. Scroll down and select **Repositories** from the **Code** section.
-
-1. Select your repository and expand the branches.
-
-1. Select **...** next to a branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Select the settings button in your project open to open the project administration page.
-
-   ![Open the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png)
-
-1. Select **Version Control**.
-
-1. Select your Git repository. Your branches are displayed under your repo.
-
-1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
-
-   ![Set a default branch for a Git repo](media/pull-requests/set_default_branch.png)
-
-::: moniker-end
+There are other aspects you should consider before making this change.
+Learn about them in the topic on [changing your default branch](change-default-branch.md).

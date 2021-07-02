@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 05/06/2019
 ---
 
@@ -22,9 +22,9 @@ You customize your work tracking experience to support your business and reporti
 
 [!INCLUDE [temp](../boards/includes/note-configure-customize.md)]
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019"  
 
-For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model).  
+For Azure DevOps Server 2019 and later versions, you have a choice of process models. When you create a project collection, you'll need to choose between On-premises XML process model and Inheritance process model. To learn more, see [Customize work tracking, Choose the process model for your project collection](./customize-work.md?view=azure-devops-2019&preserve-view=true#choose-process-model).  
 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ With the following customizations, you can use the Configure Features Wizard to 
 <li>Office integration: Add or change how Project fields map to TFS fields   </li>
 </ul>
 
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
 
 
 ### Compatible, but may require manual updates
@@ -205,7 +205,7 @@ To learn more about reporting attributes, see [Add or modify work item fields to
 ## Replace team area path with a team field  
 The default configuration for projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-[Use team fields instead of area paths to support teams](use-team-fields-instead-area-paths.md) describes how to change the default configuration.
+[Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) describes how to change the default configuration.
 
 ## Related articles
 

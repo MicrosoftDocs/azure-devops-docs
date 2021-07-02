@@ -1,84 +1,81 @@
 ﻿---
-title: Set up upstream sources for packages
-description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
+title: Set up upstream sources for your feed
+description: Find out how to configure upstream sources for your Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Configure upstream sources for Azure DevOps Services and TFS packages
+# Configure upstream sources
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
-
-For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from both public packages managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed and your feed will save a copy.
 
 ## Create a new feed that uses upstream sources
 
-Navigate to the **Packages** page and select "New Feed".
+Follow the steps in [this guide](../concepts/feeds.md#create-a-feed) to create a new feed.
 
-Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
+Under **Upstream sources** make sure you check the box to **Include packages from common public sources**.
 
-Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
+Selecting this option will allow your feed to use packages from public packages hosts (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
+
+> [!IMPORTANT]
+> Maven snapshot artifacts are not currently supported in upstream sources.
 
 ## Add public upstream sources to an existing feed
 
-1. From your feed page, go to **Feed settings** by clicking the gear icon
-2. On the **Upstream sources** tab, if you don't have any upstream sources you'll see a dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, choose _Public source_
-
-    > [!NOTE]
-    > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, Select **Public source**. Note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
 4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
 
-    > [!NOTE]
-    > You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
+> [!NOTE]
+> You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
 
 ## Add an Azure Artifacts feed in your organization as an upstream source
 
-1. From your feed page, go to **Feed settings** by clicking the gear icon
-2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in this organization_
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in this organization**.
 4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
-5. Select the package types you want to use and click _Add_.
+5. Select the package types you want to use and select **Add**.
 
-## Add an Azure Artifacts feed in a different organization within your AAD tenant as an upstream source
+## Add an Azure Artifacts feed in a different organization within your Azure AD tenant as an upstream source
 
-1. From your feed page, go to **Feed settings** by clicking the gear icon
-2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in another organization_
-4. Enter the **Azure DevOps Services feed locator**, this is just `azure-feed://` followed by the organization name, project name, feed name, and the view that is shared. For example: `azure-feed://myOrg/myProject/myFeed@local`
-5. Select the package types you want to use and click _Add_.
+> [!IMPORTANT]
+> Universal Packages only supports upstream sources in the same organization.
 
-## Consuming NuGet packages from upstream sources
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in another organization**.
+4. Enter the **Azure DevOps Services feed locator**, this is the `azure-feed://` prefix, followed by the organization name, project name, feed name, and your shared view. For example: `azure-feed://myOrg/myProject/myFeed@local`
+5. Select the package types you want to use and your upstream source's name and select **Add**.
 
-Now you can open Visual Studio and install packages from the upstream sources you've configured. As covered already on the [consume NuGet packages documentation](../nuget/consume.md), You'll need to use these instructions to install packages from the upstream:
+## Consume NuGet packages from upstream sources
 
-1.	On the upstream source (e.g. nuget.org), copy the Install-Package command
-2.	In Visual Studio, open the Package Manager Console from Tools > NuGet Package Manager
-3.	Paste the Install-Package command into the Package Manager Console and run it
+Now you can open Visual Studio and install packages from the upstream sources you just configured:
 
-Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+1.	On the packages host website (e.g. nuget.org), copy the `Install-Package` command.
+2.	In Visual Studio, open the Package Manager Console from Tools > NuGet Package Manager.
+3.	Paste the `Install-Package` command into the Package Manager Console and run it.
 
-## Consuming npm packages from upstream sources
+Remember that you must be a collaborator, a contributor, or an owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+
+See [Consume NuGet packages in Visual Studio](../nuget/consume.md) for more details.
+
+## Consume npm packages from upstream sources
 
 Now you can open your favorite shell and install packages from the upstream sources you’ve configured. Just run:
 
-```
+```cmd
 npm install --save <package>
 ```
 
-See the [npm install docs](../get-started-npm.md) for more details.
+Remember that you must be a collaborator, a contributor, or an owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
 
-Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+See the [Get started with npm packages in Azure Artifacts](../get-started-npm.md) for more details.
 
-## FAQs
+## What's next?
 
-### What are views?
-
-Views are covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default. 
-
-### Why can't I see the feed I want to configure as an upstream?
-
-It could be the case that the feed owner has not shared a view to be available for upstreaming.
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)

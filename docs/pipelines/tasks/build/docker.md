@@ -6,7 +6,7 @@ ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/28/2020
+ms.date: 08/26/2020
 ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
 ---
@@ -22,54 +22,32 @@ Following are the key benefits of using Docker task as compared to directly usin
 - **Integration with Docker registry service connection** - The task makes it easy to use a Docker registry service connection for connecting to any container registry. Once logged in, the user can author follow up tasks to execute any tasks/scripts by leveraging the login already done by the Docker task. For example, you can use the Docker task to sign in to any Azure Container Registry and then use a subsequent task/script to build and push an image to this registry. 
 
 - **Metadata added as labels** - The task adds traceability-related metadata to the image in the form of the following labels -  
-  - com.azure.dev.image.build.repository.uri
+  - com.azure.dev.image.build.buildnumber
+  - com.azure.dev.image.build.builduri
+  - com.azure.dev.image.build.definitionname
   - com.azure.dev.image.build.repository.name
+  - com.azure.dev.image.build.repository.uri
   - com.azure.dev.image.build.sourcebranchname
   - com.azure.dev.image.build.sourceversion
+  - com.azure.dev.image.release.definitionname
+  - com.azure.dev.image.release.releaseid
+  - com.azure.dev.image.release.releaseweburl
   - com.azure.dev.image.system.teamfoundationcollectionuri
   - com.azure.dev.image.system.teamproject
-  - com.azure.dev.image.build.definitionname
-  - com.azure.dev.image.build.buildnumber
-  - com.azure.dev.image.build.requestedfor
 
 ## Task Inputs
 
-<table>
-  <thead>
-    <tr>
-      <th>Parameters</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tr>
-    <td><code>command</code><br/>Command</td>
-    <td>(Required) Acceptable values: buildAndPush/build/push/login/logout<br/>Default value: buildAndPush</td>
-  </tr>
-  <tr>
-    <td><code>containerRegistry</code><br/>Container registry</td>
-    <td>(Optional) Name of the <a href="../../library/service-endpoints.md#sep-docreg" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md#sep-docreg)">Docker registry service connection</a></td>
-  </tr>
-  <tr>
-    <td><code>repository</code><br/>Repository</td>
-    <td>(Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for containerRegistry</td>
-  </tr>
-  <tr>
-    <td><code>tags</code><br/>Tags</td>
-    <td>(Optional) Multiline input where each line contains a tag to be used in build, push or buildAndPush commands<br/>Default value: $(Build.BuildId)</td>
-  </tr>
-  <tr>
-    <td><code>Dockerfile</code><br/>Dockerfile</td>
-    <td>(Optional) Path to the Dockerfile<br/>Default value: **/Dockerfile</td>
-  </tr>
-  <tr>
-    <td><code>buildContext</code><br/>Build context</td>
-    <td>(Optional) Path to the build context<br/>Default value: **</td>
-  </tr>
-  <tr>
-    <td><code>arguments</code><br/>Arguments</td>
-    <td>(Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value 'buildandPush' for the command parameter, then the arguments property will be ignored.</td>
-  </tr>
-</table>
+| Parameters | Description |
+|------------|-------------|
+| `command`<br/>Command | (Required) Possible values: `buildAndPush`, `build`, `push`, `login`, `logout`<br/>Added in version 2.173.0: `start`, `stop`<br/>Default value: `buildAndPush` |
+| `containerRegistry`<br/>Container registry | (Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg) |
+| `repository`<br/>Repository | (Optional) Name of repository within the container registry corresponding to the Docker registry service connection specified as input for `containerRegistry` |
+| `container`<br/>Container | (Required for commands `start` and `stop`) The container resource to start or stop |
+| `tags`<br/>Tags | (Optional) Multiline input where each line contains a tag to be used in `build`, `push` or `buildAndPush` commands<br/>Default value: `$(Build.BuildId)` |
+| `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile. The task will use the **first** dockerfile it finds to build the image.<br/>Default value: `**/Dockerfile` |
+| `buildContext`<br/>Build context | (Optional) Path to the build context<br/>Default value: `**` |
+| `arguments`<br/>Arguments | (Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value `buildAndPush` for the `command` parameter, then the `arguments` property will be ignored.
+| `addPipelineData` <br/>Add Pipeline Data | (Optional) Adds the above mentioned metadata as labels to the image <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 
 ## Login
 Following YAML snippet showcases container registry login using a Docker registry service connection - 
@@ -101,7 +79,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: someUser/contoso
+    repository: contosoRepository
     tags: |
       tag1
       tag2
@@ -136,6 +114,26 @@ Following YAML snippet showcases container registry logout using a Docker regist
     containerRegistry: dockerRegistryServiceConnection1
 ```
 
+## Start/stop
+This task can also be used to control job and service containers.
+This usage is uncommon, but occasionally used for unique circumstances.
+```yaml
+resources:
+  containers:
+  - container: builder
+    image: ubuntu:18.04
+steps:
+- script: echo "I can run inside the container (it starts by default)"
+  target:
+    container: builder
+- task: Docker@2
+  inputs:
+    command: stop
+    container: builder
+# any task beyond this point would not be able to target the builder container
+# because it's been stopped
+```
+
 ## Other commands and arguments
 The command and argument inputs can be used to pass additional arguments for build or push commands using docker client binary as shown below - 
 
@@ -156,7 +154,7 @@ steps:
 ```
 
 > [!NOTE]
-> The arguments input is evaluated for all commands except buildAndPush. As buildAndPush is a convenience command (build followed by push), arguments input is ignored for this command.
+> The arguments input is evaluated for all commands except `buildAndPush`. As `buildAndPush` is a convenience command (`build` followed by `push`), `arguments` input is ignored for this command.
 
 ## Troubleshooting
 

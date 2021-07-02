@@ -1,4 +1,4 @@
-To create a publisher using the TFS Cross Platform Command Line Interface, simply run the following command, replacing each argument with the necessary value.
+To create a publisher using the Cross-platform CLI for Azure DevOps, run the following command, replacing each argument with the necessary value.
 
 <pre>tfx extension publisher create</pre>
 

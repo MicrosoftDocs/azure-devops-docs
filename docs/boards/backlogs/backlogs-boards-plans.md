@@ -1,22 +1,22 @@
 ---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
-description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
+description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps   
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.assetid: 00D09790-63C3-4E3F-91BA-122CE2779A70
 ms.author: kaelli
 author: KathrynEE
-ms.topic: overview
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/17/2019
+ms.date: 01/21/2021
 ---
 
 
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -76,7 +76,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
@@ -85,7 +85,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 	[!INCLUDE [temp](../includes/note-basic-process.md)]
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -99,20 +99,20 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 	![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![The drop-down list for Fabrikam Fiber Team shows a search box, a list of team backlogs titled My Team Backlogs, and a Browse all backlogs button.](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -130,7 +130,7 @@ From your web browser, open your team's product backlog. (1) Select the team fro
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![The drop-down list for Fabrikam Fiber / Phone shows a Fabrikam Fiber Home button, a list titled Recent project/teams, a Browse button, and a New team button.](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -463,7 +463,24 @@ On your [backlog](create-your-backlog.md), set **In progress items** to **Show**
 
 ## Delivery plans display team deliverables  
 
-With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
+With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.    
+ 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
+> - Epics can be added to a delivery plan 
+> - Work item cards can span iteration boundaries 
+> - Drag and drop borders show when a work item starts and ends 
+> - You can add backlog items to a team from a plan
+> - You can view work item dependencies 
+> - Stakeholders can view plans
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
 
 You install Delivery Plans from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), in the Azure DevOps tab.
 
@@ -476,8 +493,14 @@ Delivery Plans is available for TFS 2017.2 and later versions.
 
 ::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../plans/review-team-plans.md). 
+::: moniker-end
 
-<img src="media/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="azure-devops"
+![Example plans preview](../plans/media/plans/features-span-iterations-preview.png)  
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+![Example plans view](../extensions/media/plans/plans-move-1.png)  
 ::: moniker-end
 
 
@@ -513,7 +536,7 @@ These reasons can cause work items that belong to the Task Category to not appea
 If you need more than three backlog and board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 If you need more than three backlog levels and board levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project:  
 

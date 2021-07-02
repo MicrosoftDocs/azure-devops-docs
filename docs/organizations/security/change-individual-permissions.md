@@ -1,20 +1,20 @@
 ---
 title: Change individual or group permissions
 titleSuffix: Azure DevOps
-description: Add custom security groups, change permissions for groups or individuals tutorial
+description: Learn how to add custom security groups, change permissions for groups or individuals tutorial
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 11/20/2019
+monikerRange: '<= azure-devops'
+ms.date: 06/22/2020
 ---
 
 
 # Change individual or group permissions
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 The standard way to set permissions is by adding them to one or more built-in security groups. However, sometimes you may want to grant additional permissions to select users, where not all permissions are assigned to the security group. For example, if you want to give some users the ability to add or edit area and iteration paths, but don't want them to have all permissions available to members of the Project Administrators group.
 
@@ -31,7 +31,13 @@ In this article you learn how to do the following tasks:
 > * Add members to a custom security group 
 > * Change the permission assignments for an individual user 
 
-If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to managing permissions and groups, review [Get started with permissions, access, and security groups](about-permissions.md)to learn about permission states and inheritance.
+
+
+## Prerequisites
+
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
 
 [!INCLUDE [temp](../../includes/image-differences.md)]
 
@@ -66,7 +72,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
@@ -87,11 +93,11 @@ To create a project-level security group, open the web portal and choose the pro
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
@@ -172,7 +178,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 2. Change the permission, setting a permission as **Allow** or **Deny**.
 
-    ![Set permissions for a single user account](media/change-individual-permissions/set-individual-permissions.png)  
+    ![Change the permission for a single user account.](media/change-individual-permissions/set-individual-permissions.png)  
 
     For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
@@ -209,8 +215,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
 <li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
@@ -251,8 +257,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Related articles
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [About permissions and groups](about-permissions.md)
+- [Get started with permissions, access, and security groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-
+- [Troubleshoot permissions](troubleshoot-permissions.md)
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 04/22/2020
+ms.date: 06/17/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -44,7 +44,9 @@ Add secrets to a key vault:
 
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
-  `az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'`
+  ```azurecli
+  az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'
+  ```
 
 When you want to access secrets:
 
@@ -58,7 +60,11 @@ When you want to access secrets:
   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
 
   - Choose **OK** to save the changes.<p />
-
+  
+> [!NOTE]
+> If you're using a Microsoft-hosted agent, you must add the IP range of the Microsoft-hosted agent to your firewall. Get the weekly list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519), which is published every Wednesday. The new IP ranges become effective the following Monday. For more information, see [Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#networking).
+> To find the IP ranges that are required for your Azure DevOps organization, learn how to [identify the possible IP ranges for Microsoft-hosted agents](../../agents/hosted.md?tabs=yaml&view=azure-devops&preserve-view=true#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents).
+    
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -69,11 +75,27 @@ When you want to access secrets:
 
 ## Arguments
 
+:::moniker range="azure-devops"
+
 | Parameter | Description |
 | --------- | ----------- |
 |`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 |`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 |`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+|`RunAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
+
+:::moniker-end
+
+:::moniker range="< azure-devops"
+
+| Parameter | Description |
+| --------- | ----------- |
+|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+
+:::moniker-end
+
 
 > [!NOTE]
 > Values are retrieved as strings. For example, if there is a secret named **connectionString**,
@@ -101,7 +123,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 [System.IO.File]::WriteAllBytes($pfxPath, $protectedCertificateBytes)
 ```
 
-For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
+For more details, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
 
 ## Contact Information
 
@@ -112,10 +134,17 @@ or to suggest new features that you would like to see.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
+
+### I get a `forbidden` error on pipelines at the point of getting credentials from Azure Key Vault
+
+This occurs if the required permissions are missing in the Azure key vault. To resolve the issue, [add an access policy with the correct permissions](/azure/key-vault/general/assign-access-policy-portal).
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
-<!-- ENDSECTION -->
+### I can't connect with Key Vault from Azure DevOps.
 
+This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allow listed.
+
+<!-- ENDSECTION -->
