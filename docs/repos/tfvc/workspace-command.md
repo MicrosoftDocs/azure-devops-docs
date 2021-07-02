@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Workspace Command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Workspace Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Lets you create, delete, view, or modify properties and mappings associated with a workspace.
 
@@ -69,15 +67,15 @@ tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comme
 
 ## Remarks
 
-A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace where you can make and test your changes. Your [pending changes](https://msdn.microsoft.com/library/ms181409) are committed to the server and become available to other users outside your workspace when you perform a check-in.
+A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace where you can make and test your changes. Your [pending changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100)) are committed to the server and become available to other users outside your workspace when you perform a check-in.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Creating a Workspace
 
 Before you can add files to the version control server or check out items on the server in order to edit them, you must create a workspace or associate an existing one with the current directory. For more information, see [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md).
 
-To make the current directory a working folder for an existing workspace on your computer, type `tf workspace` *workspacename*, where *workspacename* is the name of the existing workspace. The **Edit Workspace** dialog box appears. Click **click here to enter a new working folder**, type the server path for which you want to map the current directory in the <strong>Source Control Folder <strong>box, type the current directory in the **Local Folder</strong> box, and click **OK</strong>.
+To make the current directory a working folder for an existing workspace on your computer, type `tf workspace` *workspacename*, where *workspacename* is the name of the existing workspace. The **Edit Workspace** dialog box appears. Click **click here to enter a new working folder**, type the server path for which you want to map the current directory in the **Source Control Folder** box, type the current directory in the **Local Folder** box, and click **OK**.
 
 When you create a new workspace, you can specify a *template workspace* as part of the **/new** option. When you specify a template workspace, Team Foundation creates a new workspace on the current computer, sets the owner to the current owner, and replicates the following workspace properties into the new workspace from the template workspace: mappings and comment. If no name is specified, the system uses a name based on the current computer name. When you create a workspace using a template, Team Foundation does not retrieve the files to which it maps from the server. Use the [Get Command](get-command.md) to synchronize the new workspace with the latest version on the server.
 
@@ -148,12 +146,12 @@ c:\projects> tf workspace Beta1;jenh
 [Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md)  
 ### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
 [Workspaces Command](workspaces-command.md)  
 ### Concepts
 
 [Create a Workspace to Work with your Project](create-work-workspaces.md)  
 ### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)   
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)  
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))   
+[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

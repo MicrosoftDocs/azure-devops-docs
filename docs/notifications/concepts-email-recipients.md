@@ -1,13 +1,13 @@
 ---
 title: How notification email recipients are determined
 titleSuffix: Azure DevOps 
-description: Describes how email recipients are determined for notifications and events in Azure DevOps and Team Foundation Server (TFS)
+description: Describes how email recipients are determined for notifications and events in Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,12 +29,12 @@ The recipients for a custom personal subscription is the easiest to understand: 
 **Preferred email address on a personal subscription (the default)**
 
 > [!div class="mx-imgBorder"]  
->![email-personal-preferred](media/email-personal-preferred.png)
+>![Screenshot of preferred email address.](media/email-personal-preferred.png)
 
 **Custom email address on a personal subscription**
 
 > [!div class="mx-imgBorder"]  
->![email-personal-other](media/email-personal-other.png)
+>![Screenshot of custom email address.](media/email-personal-other.png)
 
 ## Delivery settings for teams and Azure DevOps groups
 
@@ -55,23 +55,23 @@ Within Organization settings, select **Global notifications** > **Subscribers** 
 
 ::: moniker range="<= tfs-2018"
 
-**Team delivery settings button under organization level settings**
+**Team delivery settings in organization-level settings**
 
-![email-team-subscribers-view](media/email-team-subscribers-view.png)
+![Screenshot showing organization level settings.](media/email-team-subscribers-view.png)
 
 ::: moniker-end
 
 **Team Delivery settings dialog**
 
-![email-team-delivery-settings](media/email-team-delivery-settings.png)
+![Screenshot showing Team Delivery settings dialog.](media/email-team-delivery-settings.png)
 
 The following delivery settings are available for a group or team:
 
 * **Deliver to email address:** notifications are delivered to a specific email address.
-* **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
+* **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the following section on [team expansion](#team-and-group-expansion-for-email-recipients) for more details on how this option works.
 * **Do not deliver:** notifications are not delivered by default.
 
-If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_. 
+If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-team-group-global-organization-notifications.md) and is either _Deliver to individual members_ or _Do not deliver_. 
 > [!NOTE]
 > The delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
 
@@ -97,7 +97,7 @@ The following delivery options are available for a group or team subscription:
 
 ::: moniker range="<= tfs-2018"
 
-![email-team-delivery-options](media/email-team-delivery-options.png)
+![Screenshot showing email team delivery options.](media/email-team-delivery-options.png)
 
 The following delivery options are available for a group or team subscription:
 
@@ -115,7 +115,7 @@ The following delivery options are available for a group or team subscription:
 
 The email recipient list is determined by members that had a role in the event. For example, the user assigned the work item has the role _Assigned to (new)_ while the identity that was previously assigned the work item has the role _Assigned to (previous)_. The full list of roles for each event type are shown in the [supported event types](oob-supported-event-types.md).
 
-![email-team-delivery-option-role](media/email-team-delivery-option-role.png)
+![Screenshot showing email team delivery option role.](media/email-team-delivery-option-role.png)
 
 The option _Skip initiator_, which appears for most event types, controls whether the user or group that initiated (caused) the event should be explicitly excluded from the set of recipients. In general, this option should be "on" since most users do not want to receive a notification about something they did.
 
@@ -123,22 +123,22 @@ The option _Skip initiator_, which appears for most event types, controls whethe
 The delivery option is taken from the team's delivery setting. It can be one of the following:
 
 * **Deliver to email address:** The email is delivered to the team's preferred email address.
-* **Deliver to individual members:** See section below for details of _Members of team_.
+* **Deliver to individual members:** See the following [_Members of team_](#option-members-of-team) section.
 * **Do not deliver:** No email is delivered.
 
-![email-team-delivery-option-preference](media/email-team-delivery-option-preference.png)
+![Screenshot showing email team delivery option preference.](media/email-team-delivery-option-preference.png)
 
-The team's delivery setting value is displayed under the _Address_ label and can't be changed.
+The team's delivery setting value is displayed following the _Address_ label and can't be changed.
 
-### Option: Custom email address
-The email is sent to the email address chosen for the subscription.
+### Option: Custom email addresses
+The email gets sent to multiple custom email addresses, which are separated by semicolons.
 
-![email-team-delivery-option-custom](media/email-team-delivery-option-custom.png)
+![Screenshot showing custom email team delivery options.](media/email-team-delivery-option-custom.png)
 
 ### Option: Members of team
 The team or group membership is expanded to determine the email recipients. In the simple case a team or group expands to a list of individuals and each is included on the **To:** line of the resulting email. However, the results of this expansion can be complicated and are explained in more detail in the [team and group expansion](#team-and-group-expansion-for-email-recipients) section.
 
-![email-team-delivery-option-members](media/email-team-delivery-option-members.png)
+![Screenshot showing the name of a team for email delivery.](media/email-team-delivery-option-members.png)
 
 ## Recipients for default subscriptions
 
@@ -147,7 +147,7 @@ The delivery option for a default subscription is usually one or more roles. Whe
 > [!NOTE]
 > The _Skip initiator_ option is not available for all event types.
 
-![email-delivery-default-subscription](media/email-delivery-default-subscription.png)
+![Screenshot showing recipients for default subscriptions.](media/email-delivery-default-subscription.png)
 
 ## Team and group expansion for email recipients
 

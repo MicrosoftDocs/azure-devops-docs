@@ -6,14 +6,14 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 08/16/2019  
 ---
 
 # Query by field value comparisons   
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can create queries based on how one field's value compares to another using the comparison field operators. This is useful to filter work items based on: 
 - Is the person who created the work item the same as or different than the person assigned to it, or who closed it

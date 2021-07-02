@@ -5,14 +5,13 @@ ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.topic: article
 ms.technology: devops-code-tfvc
 ms.date: 04/25/2018
-ms.author: apawast
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
-# Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
+# Choose a branching strategies with a DevOps mindset  
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](overview.md)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Azure DevOps Services or Azure DevOps Server? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
@@ -39,7 +38,7 @@ To embrace DevOps, it's important to keep your branch strategy simple and strive
 - Frequently reverse integrate (RI) and merge into your main branch
 - Encourage consistent code reviews - garbage in, garbage out
 - Implement a CI/CD pipeline, using:
-	- [Gated](/azure/devops/repos/tfvc/check-folder-controlled-by-gated-check-build-process) checkins
+	- [Gated](./check-folder-controlled-by-gated-check-build-process.md) checkins
 	- Automated testing
 
 ## Start with a simple branching strategy
@@ -118,9 +117,9 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 - Do not attempt to solve **people** or **process** problems with tools
 
 ## Reference information
-- [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
+- [Continuous Integration](/devops/develop/what-is-continuous-integration)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
-- [Team Foundation Version Control (TFVC)](overview.md)
+- [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
 - [What is DevOps - Definition](http://donovanbrown.com/post/what-is-devops)
 - [What is DevOps - Sticker](https://www.stickermule.com/marketplace/9107-devops-donovan-brown)
 

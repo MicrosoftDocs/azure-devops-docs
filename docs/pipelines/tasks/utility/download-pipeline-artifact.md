@@ -7,7 +7,7 @@ ms.manager: hdixon
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/23/2020
+ms.date: 12/15/2020
 monikerRange: azure-devops
 ---
 
@@ -15,11 +15,17 @@ monikerRange: azure-devops
 
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
+> [!NOTE]
+> For more information, including Azure CLI commands, see [downloading artifacts](../../artifacts/pipeline-artifacts.md?tabs=yaml#download-artifacts).
+
 ::: moniker range="azure-devops"
 
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
+
+> [!NOTE]
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
 
 ::: moniker-end
 
@@ -28,7 +34,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 | Argument | Description |
 | -------- | ----------- |
 | `source`<br/>Download artifacts produced by | (Required) Download artifacts produced by the current pipeline run, or from a specific pipeline run.<br/>Options: `current`, `specific` <br/>Default value: `current` <br/>Argument aliases: `buildType` |
-| `project`<br/>Project | (Required) The project GUID from which to download the pipeline artifacts. |
+| `project`<br/>Project | (Required) The project name or GUID from which to download the pipeline artifacts. |
 | `pipeline`<br/>Build Pipeline | (Required) The definition ID of the build pipeline.<br/>Argument aliases: `definition` |
 | `preferTriggeringPipeline`<br/>When appropriate, download artifacts from the triggering build | (Optional) A boolean specifying whether to download artifacts from a triggering build.<br/>Default value: `false` <br/>Argument aliases: `specificBuildWithTriggering` |
 | `runVersion`<br/>Build version to download | (Required) Specifies which build version to download. Options: `latest`, `latestFromBranch`, `specific` <br/>Default value: `latest`<br/>Argument aliases: `buildVersionToDownload` |
@@ -38,7 +44,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 | `allowPartiallySucceededBuilds`<br/>Download artifacts from partially succeeded builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded <br/>Default value: false |
 | `allowFailedBuilds`<br/>Download artifacts from failed builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or failed <br/>Default value: false |
 | `artifact`<br/>Artifact Name | (Optional) The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded. <br/>Argument aliases: `artifactName` |
-| `patterns`<br/>Matching Patterns | (Optional) One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) <br/>Default value: * *<br/>Argument aliases: `itemPattern` |
+| `patterns`<br/>Matching Patterns | (Optional) One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) <br/>Default value: *\*<br/>Argument aliases: `itemPattern` |
 | `path`<br/>Destination Directory | (Required) Directory to download the artifact files. Can be relative to the pipeline workspace directory or absolute. If multi-download option is applied (by leaving an empty artifact name), a sub-directory will be created for each. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). <br/>Default value: $(Pipeline.Workspace) <br/>Argument aliases: `targetPath`, `downloadPath` |
 
 > [!NOTE]
@@ -97,11 +103,11 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
     runId: 40
 ```
 
-## Q&A
+## FAQ
 
 ### How can I find the ID of the Pipeline I want to download an artifact from? 
 
-You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables) variable. 
+You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](../../build/variables.md?tabs=yaml#system-variables) variable. 
 
 ## Open source
 

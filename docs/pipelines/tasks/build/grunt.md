@@ -55,7 +55,7 @@ See [Sample Gruntfile](https://gruntjs.com/sample-gruntfile).
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

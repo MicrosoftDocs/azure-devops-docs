@@ -57,22 +57,22 @@ fetchImage(uri) = img {
 }
 ```
 
-### Check whitelisted registries
+### Check allowed registries
 
-This policy checks if the images are from whitelisted registries only.
+This policy checks if the images are from allowed registries only.
 
 ```
-whitelist = {
+allowlist = {
  "gcr.io/myrepo",
  "raireg1.azurecr.io"
 }
 
 checkregistries[errors] {
-    trace(sprintf("Whitelisted registries: %s", [concat(", ", whitelist)]))
+    trace(sprintf("Allowed registries: %s", [concat(", ", allowlist)]))
     resourceUri := values[index].image.resourceUri
     registry := fetchRegistry(resourceUri)
     image := fetchImage(resourceUri)
-    not whitelist[registry]
+    not allowlist[registry]
     errors := sprintf("%s: source registry not permitted", [image]) 
 }
 

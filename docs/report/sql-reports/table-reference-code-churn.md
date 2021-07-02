@@ -32,6 +32,6 @@ You can query for data about the changes in the code that is under version contr
   
 ## Related notes
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
--  [Code Churn](../excel/code-churn-excel-report.md)   
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

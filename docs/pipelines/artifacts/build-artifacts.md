@@ -1,30 +1,25 @@
 ---
-title: Publish and consume build artifacts in builds
-titleSuffix: Azure Pipelines and TFS
+title: Publish and consume build artifacts
+description: How to use Artifacts in Azure pipelines
 ms.custom: seodec18
-description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 04/10/2020
+ms.date: 02/19/2021
 monikerRange: '>= tfs-2015'
 ---
 
 # Artifacts in Azure Pipelines
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
 > [!NOTE]
-> We recommend upgrading from build artifacts to [pipeline artifacts](pipeline-artifacts.md) for faster output storage speeds. 
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
 
-Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
+Azure Artifacts is a service that enables teams to use feeds and upstream sources to manage their dependencies. You can use Azure Pipelines to publish and consume different types of artifacts as part of your CI/CD workflow.
 
 ## How do I publish artifacts?
 
-Artifacts can be published at any stage of pipeline. You can use two methods for configuring what to publish as an artifact and when to publish it: alongside your code with **YAML**, or in the Azure Pipelines UI with the **classic editor**.
+Artifacts can be published at any stage of your pipeline. You can use YAML or the classic Azure DevOps editor to publish your packages.
 
-## Example: Publish a text file as an artifact
+### Publish a text file
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -37,8 +32,11 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     artifactName: drop
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **artifactName**: the name of your artifact.
+
+> [!NOTE]
+> Make sure you are not using one of the reserved folder names when publishing your artifact. See [Application Folders](/previous-versions/ex526337(v=vs.140)#application-folders) for more details.
 
 ::: moniker-end
 
@@ -47,29 +45,23 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-> [!TIP]
-> If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
 
+If you don't have a Git repository yet, you can follow this article to [Create a new Git repo in your project](../../repos/git/create-new-repo.md).
 
+Add the **Publish Build Artifacts** task to your pipeline and fill out the required fields.
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="media/publish-task.png" border="false"::: 
 
-* Path to publish:
+The text file should be at the root of your repository.
 
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
+- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
 
-* Artifact name:
+- Artifact name: drop
 
-   ```
-   drop
-   ```
-
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines
 
 * * *
-## Example: Publish two sets of artifacts
+### Publish two sets of artifacts
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -86,8 +78,8 @@ YAML is not supported in TFS.
     artifactName: drop2
 ```
 
-* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
-* **artifactName**: the name of the artifact that you want to create.
+* **pathToPublish**: the path of your artifact. This can be an absolute or a relative path. Wildcards are not supported.
+* **artifactName**: the name of your artifact.
 
 ::: moniker-end
 
@@ -96,45 +88,20 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can create multiple artifact items. For example:
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+You can add multiple **Publish Build Artifacts** tasks to your pipelines.
 
-* Path to publish:
+:::image type="icon" source="media/multiple-publish-tasks.png" border="false"::: 
 
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
+Your package should be at the root of your repository.
 
-* Artifact name:
+- Path to publish: $(Build.SourcesDirectory)/environment-variables.txt
 
-   ```
-   drop1
-   ```
+- Artifact name: drop
 
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+- Artifact publish location: Azure Pipelines
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
-
-* Path to publish:
-
-   ```
-   $(Build.SourcesDirectory)/environment-variables.txt
-   ```
-
-* Artifact name:
-
-   ```
-   drop2
-   ```
-
-* Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
-
-The completed build delivers two sets of artifacts.
-
-![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
-
-> You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
+In a real world scenario, you probably won't need to publish two copies of the same files. This example was an illustration to show how a user can publish multiple artifacts that can be independently managed and consumed by the deployment pipeline.
 
 * * *
 ## Example: Assemble C++ artifacts into one location and publish as an artifact
@@ -160,6 +127,9 @@ The completed build delivers two sets of artifacts.
 * **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
 * **artifactName**: the name of the artifact that you want to create.
 
+> [!NOTE]
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -167,7 +137,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder:
 
@@ -187,7 +157,7 @@ YAML is not supported in TFS.
    $(Build.ArtifactStagingDirectory)
    ```
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -206,9 +176,11 @@ YAML is not supported in TFS.
 * * *
 ## How do I consume artifacts?
 
+You can consume your artifacts in different ways: you can use it in your release pipeline, pass it between your pipeline jobs, download it directly from your pipeline and even download it from feeds and upstream sources.
+
 ### Consume artifacts in release pipelines
 
-You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice. At present, you cannot download artifact produced by a YAML pipeline in another YAML pipeline.
+You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice.
 
 ### Consume an artifact in the next job of your pipeline
 
@@ -242,7 +214,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/media/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/downloadbuildartifacts.png" border="false"::: **Utility: Download Build Artifacts**
 
 * Download artifacts produced by: Current build
 
@@ -277,15 +249,17 @@ YAML is not supported in TFS.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
+* Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
+
 * You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
 
 ## Related tasks for publishing artifacts
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
+* :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+* :::image type="icon" source="../tasks/utility/media/delete-files.png" border="false"::: [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+* :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
@@ -293,7 +267,8 @@ Use these tasks to publish artifacts:
 
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
-![Artifacts tab of a build with one artifact](media/build-artifact-tab-current.png)
+> [!div class="mx-imgBorder"]
+> ![Published build artifact](media/published-build-artifact.png)
 
 ::: moniker-end
 
@@ -301,7 +276,8 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
-![Artifacts tab of a build with one artifact](media/build-artifact-tab.png)
+> [!div class="mx-imgBorder"]
+> ![Published build artifact TFS](media/build-artifact-tab.png)
 
 ::: moniker-end
 
@@ -334,3 +310,9 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 If you're using TFS 2015 RTM, the steps in the preceding examples are not available. Instead, you copy and publish your artifacts by using a single task: [Build: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md).
 
 ::: moniker-end
+
+## Related articles
+
+- [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
+- [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
+- [How to mitigate risk when using private package feeds](https://azure.microsoft.com/en-us/resources/3-ways-to-mitigate-risk-using-private-package-feeds/)

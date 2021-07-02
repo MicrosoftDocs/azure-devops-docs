@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm
-ms.date: 01/30/2020
+ms.date: 06/03/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,13 +17,20 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
-This is the comprehensive list of predefined variables.
+This is a list of predefined variables that are available for your use. There may be a few other predefined variables, but they are mostly for internal use.
 
-These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.)
+
+These variables are automatically set by the system and read-only. (The exceptions are Build.Clean and System.Debug.) 
+
+::: moniker range=">=azure-devops-2020"
+
+In YAML pipelines, you can reference predefined variables as environment variables. For example, the variable `Build.ArtifactStagingDirectory` becomes the variable `BUILD_ARTIFACTSTAGINGDIRECTORY`.
+
+For classic pipelines, you can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc).
+
+::: moniker-end
+
 Learn more about [working with variables](../process/variables.md).
-
-> [!NOTE]
-> You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
 
 ## Build.Clean 
 
@@ -60,7 +67,7 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
 
@@ -77,11 +84,27 @@ pushes and pulls in your scripts.
 
 ## System.Debug
 
-For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
+For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
+
+
+1. Edit your pipeline. 
+1. Select **Variables**. 
+1. Add a new variable with the name  `System.Debug` and value `true`.
+
+    :::image type="content" source="media/options/system-debug.png" alt-text="Set System Debug to true":::
+
+1. Save the new variable. 
+
 
 ::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+[!INCLUDE [include](includes/variables-server-2020.md)]
 
 ::: moniker-end
 

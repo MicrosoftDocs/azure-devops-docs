@@ -4,9 +4,7 @@ description: Execute PowerShell scripts in Azure Pipelines and Team Foundation S
 ms.topic: reference
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.custom: seodec18
-ms.author: macoope
-author: vtbassmatt
-ms.date: 03/05/2020
+ms.date: 08/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -32,7 +30,7 @@ Use this task to run a PowerShell script.
 
 [!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
-The Powershell task also has two shortcuts in YAML:
+The PowerShell task also has two shortcuts in YAML:
 
 ```yaml
 - powershell:  # inline script
@@ -58,6 +56,9 @@ Both of these resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
 `pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
+
 ::: moniker-end
 
 ## Arguments
@@ -68,7 +69,7 @@ Both of these resolve to the `PowerShell@2` task.
 <tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
   Note: unused when Type is <code>inline</code>.</td></tr>
-<tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>.<br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
+<tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>. <br/>The maximum supported inline script length is 32766 characters. If you need more than that, use the script from file. <br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
 <tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
 <tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
 <tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
@@ -90,9 +91,9 @@ Both of these resolve to the `PowerShell@2` task.
 
 ### Hello World
 
-Create ```test.ps1``` at the root of your repo:
+Create `test.ps1` at the root of your repo:
 
-```ps
+```powershell
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -108,13 +109,13 @@ On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
+| :::image type="icon" source="media/powershell.png" border="false":::<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
@@ -123,33 +124,57 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
->  ```ps
+>
+>  ```powershell
 > exit 1
-> ``` 
+> ```
 
 ### ApplyVersionToAssemblies.ps1
 
 [Use a script to customize your build pipeline](../../scripts/powershell.md)
 
+### Call PowerShell script with multiple arguments
+
+Create PowerShell script `test2.ps1`:
+
+```powershell
+param ($input1, $input2)
+Write-Host "$input1 $input2"
+```
+
+In your YAML pipeline, call:
+
+```yaml
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\test2.ps1
+    arguments: > # Use this to avoid newline characters in multiline string
+      -input1 "Hello"
+      -input2 "World"
+  displayName: 'Print Hello World'
+```
+
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+[Scripting with Windows PowerShell](/powershell/scripting/overview)
 
 [Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 

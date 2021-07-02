@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.author: pbora
-author: PBoraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -23,7 +23,7 @@ Use this task to index your source code and optionally publish symbols to the Pa
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/artifacts/symbols).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../../../artifacts/concepts/symbols.md); to publish symbols, use this task and see [the walkthrough](../../artifacts/symbols.md).
 
 > [!NOTE]
 > This build task works only:
@@ -54,7 +54,7 @@ None
     <tr>
         <td><code>SymbolsFolder</code><br/>Path to symbols folder</td>
         <td>
-            <p>(Optional) The path to the folder that is searched for symbol files. The default is $(Build.SourcesDirectory), Otherwise specify a rooted path. <br/>For example: $(Build.BinariesDirectory)/MyProject</p>
+            <p>(Optional) The path to the folder that is searched for symbol files. The default is $(Build.SourcesDirectory), Otherwise specify a rooted path. Note that UNC paths aren't supported if you select the Azure Artifacts symbol server as the server type.<br/>For example: $(Build.BinariesDirectory)/MyProject</p>
         </td>
     </tr>
     <tr>
@@ -154,7 +154,7 @@ For more information about the different types of tasks and their uses, see [Tas
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How does indexing work?
@@ -172,15 +172,15 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### Where can I learn more about symbol stores and debugging?
 
-[Symbol Server and Symbol Stores](https://msdn.microsoft.com/library/ms680693%28VS.85%29.aspx)
+[Symbol Server and Symbol Stores](/windows/win32/debug/symbol-servers-and-symbol-stores)
 
-[SymStore](https://msdn.microsoft.com/library/ff558848%28VS.85%29.aspx)
+[SymStore](/windows-hardware/drivers/debugger/symstore)
 
-[Use the Microsoft Symbol Server to obtain debug symbol files](https://msdn.microsoft.com/library/windows/desktop/ee416588%28v=vs.85%29.aspx)
+[Use the Microsoft Symbol Server to obtain debug symbol files](/windows/win32/dxtecharts/debugging-with-symbols)
 
-[The Srcsrv.ini File](https://msdn.microsoft.com/library/windows/hardware/ff558876%28v=vs.85%29.aspx)
+[The Srcsrv.ini File](/windows-hardware/drivers/debugger/the-srcsrv-ini-file)
 
-[Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
+[Source Server](/windows/win32/debug/source-server-and-source-indexing)
 
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 

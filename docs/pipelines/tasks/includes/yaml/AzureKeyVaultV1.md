@@ -15,4 +15,5 @@ ms.technology: devops-cicd-tasks
     azureSubscription: 
     keyVaultName: 
     secretsFilter: '*'
+    runAsPreJob: false # Azure DevOps Services only
 ```

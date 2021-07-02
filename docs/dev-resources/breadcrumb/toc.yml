@@ -9,6 +9,3 @@
     - name: Azure DevOps CLI
       tocHref: /azure/devops/cli/
       topicHref: /azure/devops/cli/index
-    - name: Demo Generator
-      tocHref: /azure/devops//demo-gen
-      topicHref: /azure/devops/demo-gen/index

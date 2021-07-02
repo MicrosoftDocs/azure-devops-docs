@@ -1,43 +1,64 @@
 ---
 title: Artifacts in Azure Pipelines
-titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
+description: Supported Artifacts in Azure Pipelines 
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 02/26/2020
+ms.date: 03/05/2021
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Azure Pipelines
+# Artifacts in Azure Pipelines overview
 
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
-
-You can publish and consume many different types of packages and artifacts with Azure Pipelines. Your continuous integration/continuous deployment (CI/CD) pipeline can publish specific package types to their respective package repositories (NuGet, npm, Python, and so on). Or you can use build artifacts and pipeline artifacts to help store build outputs and intermediate files between build steps. You can then add onto, build, test, or even deploy those artifacts.
-
-> [!NOTE]
-> Aside from being published, Build and Release artifacts will be available as long as that Build or Release is retained unless otherwise specified. For more information on retaining Build and Release artifacts, see the [Retention Policy](../policies/retention.md) documentation.
+Azure Artifacts enable developers to consume and publish different types of packages to Artifacts feeds and public registries such as NuGet.org and npmjs.com. You can use Azure Artifacts in conjunction with Azure Pipelines to deploy packages, publish build artifacts, or integrate files between your pipeline stages to build, test, or deploy your application.
 
 ## Supported artifact types
 
 The following table describes supported artifact types in Azure Pipelines.
 
-| Supported artifact types                              | Description                                                                                                              |
-|------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| [Build artifacts](build-artifacts.md)                 | Build artifacts are the files that you want your build to produce. Build artifacts can be nearly anything that your team needs to test or deploy your app. For example, you've got .dll and .exe executable files and a .PDB symbols file of a .NET or C++ Windows app. |
-| [Pipeline artifacts](pipeline-artifacts.md) | You can use pipeline artifacts to help store build outputs and move intermediate files between jobs in your pipeline. Pipeline artifacts are tied to the pipeline that they're created in. You can use them within the pipeline and download them from the build, as long as the build is retained. Pipeline artifacts are the new generation of build artifacts. They take advantage of existing services to dramatically reduce the time it takes to store outputs in your pipelines. **Only available in Azure DevOps Services**. |
-| [Maven](maven.md)                         | You can publish Maven artifacts to Azure Artifacts feeds or Maven repositories.                                          |
-| [npm](npm.md)                              | You can publish npm packages to Azure Artifacts or npm registries.                                                       |
-| [NuGet](nuget.md)                          | You can publish NuGet packages to Azure Artifacts, other NuGet services (like NuGet.org), or internal NuGet repositories. |
-| [PyPI](pypi.md)                            | You can publish Python packages to Azure Artifacts or PyPI repositories. |
-| [Symbols](symbols.md)                        | [Symbol files](/azure/devops/artifacts/concepts/symbols) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing specific product, package, or build information. |
-| [Universal](universal-packages.md)         | Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts. |
-
-> [!NOTE]
-> Build and Release artifacts will be available as long as that Build or Release run is retained, unless you specify how long to retain the artifacts. For more information on retaining Build and Release artifacts, see the [Retention Policy](../policies/retention.md) documentation.                    
+|         Supported artifact type            |                                                 Description                                                            |
+|    ----------------------------------------|--------------------------------------------------------------------------------------------------------------------    |
+| [Build artifacts](build-artifacts.md)      | The files produced by a build such as .dll, .exe, or .PDB files.                                                       |
+| [Maven](maven.md)                          | Publish Maven packages to Azure Artifacts feeds or Maven central repository.                                           |
+| [npm](npm.md)                              | Publish npm packages to Azure Artifacts feeds or npm registry.                                                         |
+| [NuGet](nuget.md)                          | Publish NuGet packages to Azure Artifacts feeds or NuGet public repository.                                            |
+| [PyPI](pypi.md)                            | Publish Python packages to Azure Artifacts feeds or PyPI registry.                                                     |
+| [Universal packages](universal-packages.md)| Publish Universal Packages to Azure Artifacts feeds.                                                                   |
+| [Symbols](symbols.md)                      | Symbol files contain debugging information about the compiled executables. You can publish symbols to a symbol server in Azure Artifacts to debug your application. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
 
 ## How do I publish and consume artifacts?
 
-Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Java. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages. Refer to the earlier table for specific guidance on each kind of artifact that we support.
+Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Maven. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages.
+
+#### [NuGet](#tab/nuget/)
+
+- [Publish a NuGet package using the command line](../../artifacts/nuget/publish.md)
+- [Publish to NuGet feeds (YAML/Classic)](nuget.md)
+- [Consume NuGet packages](../../artifacts/nuget/consume.md)
+ 
+#### [Npm](#tab/npm/)
+
+- [Publish an npm package from the command line](../../artifacts/npm/publish.md)
+- [Publish npm packages (YAML/Classic)](../tasks/package/npm.md#publish-npm-packages)
+- [Consume npm packages](../../artifacts/get-started-npm.md)
+
+#### [Python](#tab/python/)
+
+- [Publish Python packages](pypi.md)
+- [Consume Python packages](../../artifacts/quickstarts/python-cli.md)
+
+#### [Maven](#tab/maven/)
+
+- [Maven quickstart](../../artifacts/get-started-maven.md)
+- [Install Maven Artifacts](../../artifacts/maven/install.md)
+- [Publish a Maven artifact using Gradle](../../artifacts/gradle/publish-package-gradle.md)
+- [Install a Maven artifact using Gradle](../../artifacts/gradle/pull-package-gradle.md)
+
+* * * 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
+> [Releases in Azure Pipelines](../release/releases.md)
+> [Build Artifacts](build-artifacts.md)

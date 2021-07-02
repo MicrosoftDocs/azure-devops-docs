@@ -112,7 +112,7 @@ You can now view all associated pull requests for a commit on the __commit detai
 ## Release views in Package Management
 We’ve added a new feature to Package Management called __release views.__ Release views represent a subset of package-versions in your feed that you’ve __promoted__ into that release view. Creating a release view and sharing it with your package’s consumers enables you to control which versions they take a dependency on. This is particularly useful in continuous integration scenarios where you’re frequently publishing updated package versions, but may not want to announce or support each published version.
 
-[Check out the docs](/azure/devops/artifacts/feeds/views?view=azure-devops) to get started.
+[Check out the docs](/azure/devops/artifacts/feeds/views?view=azure-devops&preserve-view=true) to get started.
 
 ## npmjs.com upstream now caches packages
 npm feeds in Package Management now support npmjs.com as an __upstream source with caching.__ By enabling this option, your feed will transparently proxy and cache packages from npmjs.com, which means that you’ll only need to get a particular package@version from npmjs.com once. Future requests for that package will be served directly from your Team Services account. If a package is removed from npmjs.com, you’ll still be able to get the cached version of it from Team Services. See [Use packages from npmjs.com](https://visualstudio.microsoft.com/docs/package/npm/upstream-sources) for more information.

@@ -1,13 +1,14 @@
 ---
 title: Why am I not receiving notification emails?
 titleSuffix: Azure DevOps
-description: Discover why you aren't receiving emails from your Azure DevOps or TFS notification subscriptions and fix it.
+description: Discover why you aren't receiving emails from your Azure DevOps notification subscriptions and fix it.
 ms.technology: devops-collab
+ms.custom: quarterly-update
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 06/16/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
-In this article, learn why you may not be receiving an expected subscription or notification email.
+Learn why you may not be receiving an expected subscription or notification email.
 
 If you're not receiving an expected notification email, it could be for one of the following reasons.
 
@@ -39,14 +40,14 @@ Ensure the email wasn't delivered to a different email folder, including the jun
 
 ## Locate the subscription and ensure it's enabled
 
-Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#open-person-level).
+Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to access to your personal subscriptions](navigating-the-ui.md#open-person-level).
 
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
 > [!div class="mx-imgBorder"] 
 >![subscription disabled](media/subscription-disabled.png)
 
-A default subscription is disabled when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
+A default subscription disables when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
 
 ## Closely inspect subscription filter conditions
 
@@ -58,7 +59,7 @@ The `Skip initiator` checkbox option on a subscription causes the initiator of t
 
 ## Check "Do not deliver" setting for organization
 
-Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
+Go to the organization-level notifications page and select **Settings**. [See how to manage notification settings](manage-team-group-global-organization-notifications.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
 
 ## Check "Do not deliver" setting for your team or group
 
@@ -66,7 +67,7 @@ If the team or group defines a delivery setting for **Deliver to individual memb
 
 ## Check your configured email address
 
-Check if your preferred email address is set to the address you're expecting the email, which is a user profile setting. Hover over profile icon to view your preferred email address. [Learn how to view the configured email address.](../organizations/settings/set-your-preferences.md).
+Check if your preferred email address is set to the address you're expecting the email, which is a user profile setting. Hover over :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **your profile** to view your preferred email address. [Learn how to view the configured email address.](../organizations/settings/set-your-preferences.md).
 
 ## Is this a team subscription, which contains a "@Me" filter clause?
 
@@ -75,6 +76,10 @@ If a team or group subscription has an @Me filter clause and the target email re
 ## Do you have permission to see the event artifact?
 
 Recipients who don't have permission to view the artifact, don't receive an email, which contains event artifact data, such as a work item. The only way to know if an email was _filtered_ is to view notification delivery logs. Learn more about [enabling and retrieving subscription and delivery logging](use-subscription-logging.md).
+
+## Known issue
+
+If a subscription was created or last modified by a user who lost permissions to the project, then the notifications for that subscription won't be delivered and will be filtered silently.
 
 ## Contact customer support
 

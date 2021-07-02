@@ -3,6 +3,7 @@ title: Design the work item form
 titleSuffix: TFS
 description: Place and group fields on the form so that they can support the data entry and workflow processes that will be followed by team members - Team Foundation Server (TFS)
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 51acfaa1-3c2c-4371-b5da-e43d458bb1f7
 ms.author: kaelli
 author: KathrynEE
@@ -105,7 +106,7 @@ Custom Form with Three Tabs in a Two Column Layout
 
 ##  Work with tabs  
 
-You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](https://msdn.microsoft.com/d16d04fd-c073-45c0-b1b9-3724f0a7519b) or [Work Items and Workflow (CMMI)](https://msdn.microsoft.com/b5b7b488-3248-485c-b896-a2c6f824a219).  
+You use tabs to cluster a group of fields or to support one or more special controls, such as the controls that link work items, link work item history, or attach files. Several definitions of work item types for the Microsoft Solutions Framework (MSF) process templates use several tabs to control the types of links that can be created, based on the link type. For more information, see [Work Items and Workflow (Agile)](../../boards/work-items/guidance/agile-process-workflow.md?viewFallbackFrom=vsts) or [Work Items and Workflow (CMMI)](../../boards/work-items/guidance/cmmi-process-workflow.md?viewFallbackFrom=vsts).  
 
 For more information about how to use special controls, see the following topics:  
 - [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md)  
@@ -371,4 +372,4 @@ You can specify different layouts for different targets by using the <code>Layou
 - [Specify work item form controls](specify-work-item-form-controls.md)  
 - [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md)  
 - [Link and Param](link-param-xml-elements-reference.md)  
-- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)  
+- [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md)

@@ -1,11 +1,9 @@
 ---
 title: Rename a Git repo in your project
 titleSuffix: Azure Repos
-description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
+description: You can rename a Git repository in a few steps. Your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
@@ -13,9 +11,9 @@ monikerRange: '>= tfs-2017'
 
 
 #  Rename a Git repository in your project
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | VS 2017 | VS 2015**
 
-You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team will have to take a few steps to re-enable their dev machines to connect to the repo on the server.
+You can rename a Git repository in a project from your web browser. After you rename the repo, each member of your team should take a few steps to re-enable their dev machines to connect to the repo on the server.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4sVSK]
 
@@ -25,7 +23,7 @@ You can rename a Git repository in a project from your web browser. After you re
 ## Rename the repo in the web
 
 > [!IMPORTANT]
-> This step requires [Rename Repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+> This step requires [Rename Repository permissions](set-git-repository-permissions.md#git-repository) on your Git repo.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -70,7 +68,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Update the Git remotes on your dev machines
 
-Git uses remote references to fetch and push changes between your local copy of a repository and the remote version stored on the server. After a Git repository or project has been renamed, your remote references need to updated. This is due to the fact that the remote repository URL contains the project and the repository name. 
+Git uses remote references to fetch and push changes between your local copy of a repository and the remote version that is stored on the server. After a Git repository or project has been renamed, you should update your remote references. Update your references to that the remote repository URL contains the project and the repository name. 
 
 Each member of your team must update their local Git repos to continue connecting from their dev machines to the repo in the project. The instructions below show how to update the remotes for the **Fabrikam Mobile** repo that was renamed to **Fabrikam**.
 
@@ -85,7 +83,7 @@ Each member of your team must update their local Git repos to continue connectin
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Retrieve the clone URL](../get-started/media/clone-repo/clone-repo.png)
+   ![Retrieve the clone URL](./media/clone-repo/clone-repo.png)
 
 ::: moniker-end
 
@@ -139,13 +137,13 @@ If you use an older version of Visual Studio or work with Git from the command p
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-#### Q: Can I rename my repo again? Can I re-use an old repo name?
+#### Q: Can I rename my repo again? Can I reuse an old repo name?
 
 A: Yes
 
 #### Q: What if I named my remote something other than the default origin?
 
-A: If you are using:
+A: If you're using:
 
  * Visual Studio 2015, then edit the remote with the name you used. 
 

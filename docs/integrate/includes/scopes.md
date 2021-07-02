@@ -2,6 +2,9 @@
 | -------- | ----- | ---- | ----------- |
 | **Agent Pools** | `vso.agentpools` | Agent Pools (read) | Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents. |
 | | `vso.agentpools_manage` | Agent Pools (read, manage) | Grants the ability to manage pools, queues, and agents. |
+| | `vso.environment_manage` | Enviroment (read, manage) | Grants the ability to manage pools, queues, agents, and environments. |
+| **Analytics** | `vso.analytics` | Analytics (read) | Grants the ability to query analytics data. |
+| **Audit Log** | `vso.auditlog` | Audit Log (read) | Grants the ability to read the auditing log to users. |
 | **Build** | `vso.build` | Build (read) | Grants the ability to access build artifacts, including build results, definitions, and requests, and the ability to receive notifications about build events via service hooks. |
 | | `vso.build_execute` | Build (read and execute) | Grants the ability to access build artifacts, including build results, definitions, and requests, and the ability to queue a build, update build properties, and the ability to receive notifications about build events via service hooks. |
 | **Code** | `vso.code` | Code (read) | Grants the ability to read source code and metadata about commits, changesets, branches, and other version control artifacts. Also grants the ability to search code and get notified about version control events via service hooks. |
@@ -44,6 +47,8 @@
 | **Service Connections** | `vso.serviceendpoint` | Service Endpoints (read) | Grants the ability to read service endpoints. |
 | | `vso.serviceendpoint_query` | Service Endpoints (read and query) | Grants the ability to read and query service endpoints. |
 | | `vso.serviceendpoint_manage` | Service Endpoints (read, query and manage) | Grants the ability to read, query, and manage service endpoints. |
+| **Settings** | `vso.settings` | Settings (read) | Grants the ability to read settings. |
+| | `vso.settings_write` | Settings (read and write) | Grants the ability to create and read settings. |
 | **Symbols** | `vso.symbols` | Symbols (read) | Grants the ability to read symbols. |
 | | `vso.symbols_write` | Symbols (read and write) | Grants the ability to read and write symbols. |
 | | `vso.symbols_manage` | Symbols (read, write and manage) | Grants the ability to read, write, and manage symbols. |

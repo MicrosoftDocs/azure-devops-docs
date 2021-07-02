@@ -1,12 +1,13 @@
 ﻿---
 title: View subscribed notifications
 titleSuffix: Azure DevOps
-description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps or Team Foundation Server
+description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps.
 ms.technology: devops-collab
+ms.custom: quarterly-update
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/20/2020
+ms.date: 12/07/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -14,15 +15,15 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
+If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md).  
 
-Start by opening your personal notification settings from your home page. Select the user settings icon ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
+Start by opening your personal notification settings from your home page. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
 
 ## View subscriptions
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: **Settings**, and then select **Profile**.
 
    ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
 
@@ -46,7 +47,7 @@ Start by opening your personal notification settings from your home page. Select
 
 ::: moniker range="<= tfs-2018" 
 
-1. From the web portal, select the icon with your initials or picture, and select **Notification settings** from the drop-down menu.
+1. From the web portal, select your initials or picture, and select **Notification settings** from the drop-down menu.
 
     <img src="media/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
 

@@ -19,19 +19,19 @@ ms.topic: include
 <td align="left">View builds
 </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">View build definition 
 </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Administer build permissions
@@ -39,17 +39,17 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Delete or Edit build definitions 
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Delete or Destroy builds
@@ -57,17 +57,17 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Edit build quality 
 </td>
 <td>  </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Manage build qualities
@@ -75,8 +75,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Manage build queue
@@ -84,8 +84,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Override check-in validation by build
@@ -94,16 +94,16 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Queue builds
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Retain indefinitely
@@ -111,8 +111,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Stop builds
@@ -120,8 +120,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Update build information
@@ -130,7 +130,7 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 </tbody>
 </table>

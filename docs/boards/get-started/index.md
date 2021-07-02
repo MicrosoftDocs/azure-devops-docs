@@ -4,18 +4,17 @@ titleSuffix: Azure Boards & TFS
 description: Sign up and get started using Azure Boards 
 ms.custom: boards-get-started 
 ms.technology: devops-new-user
-ms.topic: landing-page
-ms.assetid:  
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ms.date: 10/14/2019
 ---
 
 
 # Start using Azure Boards    
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this guide to sign up and start using Azure Boards. Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 

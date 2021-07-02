@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Kanban key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also: 
 - [Agile glossary](../work-items/agile-glossary.md) 
@@ -123,7 +123,7 @@ Split columns lets your team implement a pull mechanism within the workflow proc
 
 ## Task checklists
 
-A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add task checklists](add-task-checklists.md). 
+A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
 
 ::: moniker-end  
 
@@ -153,13 +153,13 @@ The State and Reason fields differ depending on the work item type and process s
 
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You can customize your workflow states, adding states or renaming states. Learn more: [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops-2019"  
 
 You can customize your workflow states, adding states, renaming states, and changing state transitions and reasons. Learn more: [Customize the workflow](../../reference/xml/change-workflow-wit.md). 
 

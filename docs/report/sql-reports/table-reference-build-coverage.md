@@ -7,7 +7,7 @@ description: Query for data about how thoroughly source code was covered by the 
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
@@ -38,7 +38,7 @@ For information about the measures and dimensions that are associated with these
   
 ## Related notes
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
--  [Code Churn](../excel/code-coverage-excel-report.md)   
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)    
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md) 
+- [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md)

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Control Access to Team Foundation Version Control
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Control Access to Team Foundation Version Control
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Team Foundation version control supports granting access control permissions to Windows Groups, Windows Users, and Team Foundation Groups. Permissions can be inherited from the containing folder, or you can declare permissions explicitly.
 
@@ -56,4 +54,4 @@ To complete this task, you must have the **Manipulate security settings** permis
 
 #### Other Resources
 
-[Administering Team Foundation Version Control](administering-team-foundation-version-control.md)
+[Administering Team Foundation Version Control](./configure-check-out-settings.md)

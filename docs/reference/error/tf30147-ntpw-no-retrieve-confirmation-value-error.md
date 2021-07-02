@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 10/23/2017
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Work across projects 
 titleSuffix: Azure DevOps
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps
+description: How to access work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
@@ -9,8 +9,8 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
----
+ms.date: 11/16/2020
+--- 
 
 
 # Work across projects
@@ -52,12 +52,22 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
+For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.yml). 
+
+## Prerequisites 
+ 
+* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+ 
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped Users group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+  ::: moniker-end  
 
 ## View and open work items
 
 ::: moniker range=">= azure-devops-2019"
 
-To view work items assigned to you across projects, choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
+To view work items assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](media/projects-page/view-work-across-projects.png) 
@@ -69,10 +79,10 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
+> ![Screenshot of Open Projects page, TFS-2018 and TFS-2017 versions.](../../media/settings/open-project-hub-horz.png)   
 
 ::: moniker-end
 
@@ -81,7 +91,7 @@ Choose **Work items** to access the set of work items assigned to you or followe
 
 The **Assigned to me** page lists all work items assigned to you in the order they were last updated. To open or update a work item, choose its title.
 
-![Account home, Work, Assigned to me page](media/org-hub-tfs/account-home-work-assigned-to-me.png) 
+![Screenshot of Projects> Work, Assigned to me page, TFS-2018 and TFS-2017 versions.](media/org-hub-tfs/account-home-work-assigned-to-me.png) 
 
 ::: moniker-end
 
@@ -91,11 +101,11 @@ Choose **Following** to open the page that lists all the work items [you've mark
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Account home, Work, Following page](media/projects-page/account-home-work-following.png)  
+> ![Screenshot of Inbox > Work items pane > Following.](media/projects-page/account-home-work-following.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-![Account home, Work, Assigned to me page](media/org-hub-tfs/account-home-work-followed.png) 
+![Screenshot of Projects > My work items > Following page. ](media/org-hub-tfs/account-home-work-followed.png) 
 ::: moniker-end
 
 
@@ -105,7 +115,7 @@ Choose **Following** to open the page that lists all the work items [you've mark
 Choose **My activity** to open the page that lists all work items that you have recently viewed or updated.  
 
 > [!div class="mx-imgBorder"]  
-> ![Account home, Work items, My Activity page](media/projects-page/account-work-my-activity.png) 
+> ![Screenshot of Inbox > Work items pane > My activity.](media/projects-page/account-work-my-activity.png) 
 
 ::: moniker-end 
 
@@ -117,10 +127,10 @@ Similar to the Favorites page, you can filter the work pages by typing a keyword
 
 ::: moniker range=">= azure-devops-2019"
 
-To view pull requests you created  or that are assigned to you across projects, choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
+To view pull requests you created  or that are assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Pull requests**. 
 
 > [!div class="mx-imgBorder"]  
-> ![View pull requests assigned to you across projects](media/projects-page/view-pull-requests-vert.png) 
+> ![Screenshot of pull requests assigned to you across projects.](media/projects-page/view-pull-requests-vert.png) 
 
 ::: moniker-end  
 
@@ -128,7 +138,7 @@ To view pull requests you created  or that are assigned to you across projects, 
 
 Open the **Projects>Pull requests** page to access any pull request that's relevant to you across all projects you work in. Choose **Active** or **Completed** to pivot between the active or completed set of pull requests. To initiate a pull request, choose **New pull request**.
 
-![Account home, Pull requests, Active](media/org-hub-tfs/account-home-pull-requests.png) 
+![Screenshot of pull requests assigned to you across projects, TFS-2017 and TFS-2018 versions.](media/org-hub-tfs/account-home-pull-requests.png) 
 
 From each page, you're one choice away from navigating to the branch or repository for a pull request. This mirrors capabilities on the  project **Code>Pull Requests** page.
 
@@ -145,10 +155,10 @@ You can view favorites you've set across projects. To learn more about working w
 
 ::: moniker range=">= azure-devops-2019" 
 
-Choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
+Choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
-> ![View your favorited items](media/favorites/open-favorites-page-vnav.png) 
+> ![Screenshot of items you've favorited across projects.](media/favorites/open-favorites-page-vnav.png) 
 
 ::: moniker-end  
 
@@ -157,17 +167,17 @@ Choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Fav
 Open the **Favorites** page to quickly access any object or item that you've marked as a favorite.
 
 > [!div class="mx-imgBorder"]  
-> ![Account home favorites page](media/projects-page/account-home-favorites.png)
+> ![Screenshot of items you've favorited across projects, TFS-2017 and TFS-2018 versions.](media/projects-page/account-home-favorites.png)
 
 To learn more about working with favorites, see [Set personal and team favorites](set-favorites.md). 
 
 ### Favorite and unfavorite an item
 
-To mark any item as a favorite, choose the ![ ](../../media/icons/icon-favorite-star.png) star icon next to the object. 
+To mark any item as a favorite, choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the object. 
 
 To remove an item from your favorites list, choose the favorited icon.
 
-![Account home favorites page](media/projects-page/account-home-remove-from-favorites.png)
+![Favorite and unfavorite an item.](media/projects-page/account-home-remove-from-favorites.png)
 
 ### Filter the list of favorites
 
@@ -184,7 +194,7 @@ To open a team room, choose **Projects>Rooms**. You'll see all the team rooms de
 
 ![Account home, Rooms, selected team room](media/projects-page/account-home-rooms.png)  
 
-To learn more about team rooms, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).
+To learn more about team rooms, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).
 
 > [!NOTE]  
 > Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
@@ -194,7 +204,6 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 ## Related articles
 
-- [Enable preview features](preview-features.md)  
+- [Work across projects FAQs](../work-across-projects-faqs.yml)
+- [Manage or enable features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
-  
-

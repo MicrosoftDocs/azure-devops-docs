@@ -3,18 +3,18 @@ title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.date: 04/01/2020
+ms.date: 02/16/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Pipeline run sequence
 
-Runs represent one execution of a pipeline. During a run, the pipeline is processed, and agents process one or more job. A pipeline run includes [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md). Runs power both continuous integration (CI) and continuous delivery (CD) pipelines. 
+Runs represent one execution of a pipeline. During a run, the pipeline is processed, and agents process one or more jobs. A pipeline run includes [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md). Runs power both continuous integration (CI) and continuous delivery (CD) pipelines.
 
 ![Pipeline overview](media/run-overview.svg)
 
-When you run a pipeline, a lot of things happen under the covers.
-While you often won't need to know about them, once in a while it's useful to have the big picture.
+When you run a pipeline, many things happen under the covers.
+While you often won't need to know about them, occasionally it's useful to have the big picture.
 At a high level, Azure Pipelines will:
 - [Process the pipeline](#process-the-pipeline)
 - [Request one or more agents to run jobs](#request-an-agent)
@@ -39,8 +39,8 @@ To turn a pipeline into a run, Azure Pipelines goes through several steps in thi
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, two things happen:
-  a. All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
-  b. Evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
+    * All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
+    * Evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#parallelexec) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
@@ -52,9 +52,9 @@ Similarly, as stages complete, steps 2 - 6 will be repeated for any new stages.
 This ordering helps answer a common question: why can't I use certain variables in my template parameters?
 Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
-After step 1, template parameters have been completely resolved and no longer exist.
+After step 1, template parameters have been resolved and no longer exist.
 
-It also answers another common issue: why can't I use variables to resolve service connection / environment names?
+It also answers another common issue: why can't I use [variables](variables.md) to resolve service connection / environment names?
 Resources are authorized before a stage can start running, so stage- and job-level variables aren't available.
 Pipeline-level variables can be used, but only those explicitly included in the pipeline.
 Variable groups are themselves a resource subject to authorization, so their data is likewise not available when checking resource authorization.
@@ -73,12 +73,12 @@ If there are no available parallel slots, the job has to wait on a slot to free 
 
 Once a parallel slot is available, the job is routed to the requested agent type.
 Conceptually, the Microsoft-hosted pool is one giant, global pool of machines.
-(In reality, it's a number of different physical pools split by geography and operating system type.)
+(In reality, it's many different physical pools split by geography and operating system type.)
 Based on the `vmImage` (in YAML) or pool name (in the classic editor) requested, an agent is selected.
 
 ![Pool selection](media/run-select-pool.svg)
 
-All agents in the Microsoft pool are fresh, new virtual machines which haven't run any pipelines before.
+All agents in the Microsoft pool are fresh, new virtual machines that haven't run any pipelines before.
 When the job completes, the agent VM will be discarded.
 
 ### Self-hosted agent pool requests
@@ -93,7 +93,7 @@ The pipeline has [demands](demands.md), which are the capabilities required to r
 If a free agent whose capabilities match the pipeline's demands cannot be found, the job will continue waiting.
 If there are no agents in the pool whose capabilities match the demands, the job will fail.
 
-Self-hosted agents are typically re-used from run to run.
+Self-hosted agents are typically reused from run to run.
 This means that a pipeline job can have side effects: warming up caches, having most commits already available in the local repo, and so on.
 
 ## Prepare to run a job
@@ -156,7 +156,7 @@ The job always reflects the "worst" outcome from each of its steps: if a step fa
 
 Before running a step, the agent will check that step's [condition](conditions.md) to determine whether it should run.
 By default, a step will only run when the job's status is succeeded or succeeded with issues.
-Many jobs have cleanup steps which need to run no matter what else happened, so they can specify a condition of "always()".
+Many jobs have cleanup steps that need to run no matter what else happened, so they can specify a condition of "always()".
 Cleanup steps might also be set to run only on [cancellation](#timeouts-and-disconnects).
 A succeeding cleanup step cannot save the job from failing; jobs can never go back to success after entering failure.
 
@@ -175,22 +175,23 @@ Because Azure Pipelines distributes work to agent machines, from time to time, a
 This can happen if the agent's host machine goes away (power loss, VM turned off) or if there's a network failure.
 To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent will not come back.
-The job is marked as a failure, letting the user know they should re-try the pipeline.
+The job is marked as a failure, letting the user know they should retry the pipeline.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
+
 ## Manage runs through the CLI
 
 Using the Azure DevOps CLI, you can list the pipeline runs in your project and view details about a specific run. You can also add and delete tags in your pipeline run. 
 
 ### Prerequisites
 
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
 ### List pipeline runs
 
-List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/pipelines/runs#ext-azure-devops-az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs list [--branch]
@@ -222,7 +223,7 @@ az pipelines runs list [--branch]
 
 #### Example 
 
-The following command lists the first three pipeline runs which have a status of **completed** and a result of **succeeded**, and returns the result in table format.  
+The following command lists the first three pipeline runs that have a status of **completed** and a result of **succeeded**, and returns the result in table format.  
 
 ```azurecli 
 az pipelines runs list --status completed --result succeeded --top 3 --output table
@@ -237,7 +238,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 ### Show pipeline run details
 
-Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/pipelines/runs#ext-azure-devops-az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs show --id
@@ -267,7 +268,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 ### Add tag to pipeline run
 
-Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag add --run-id
@@ -297,7 +298,7 @@ az pipelines runs tag add --run-id 123 --tags YAML --output json
 
 ### List pipeline run tags
 
-List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag list --run-id
@@ -325,7 +326,7 @@ YAML
 
 ### Delete tag from pipeline run
 
-Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ```azurecli 
 az pipelines runs tag delete --run-id

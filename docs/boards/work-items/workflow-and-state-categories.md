@@ -8,12 +8,12 @@ ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # How workflow states and state categories are used in Backlogs and Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 All workflows consist of states, transitions, and reasons. Workflows are defined for a work item type (WIT). A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
@@ -98,7 +98,7 @@ Here's how the default, inherited states map to the state categories for all thr
 </tr>
 <tr valign="top" >
 <td><strong>Resolved:</strong> Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>Resolved (Bug, Epic, Feature)</td> 
+<td>Resolved (Bug)</td> 
 <td>n/a </td> 
 </tr>
 <tr valign="top" >
@@ -190,6 +190,9 @@ Here's how the default, inherited states map to the state categories for all thr
 
 * * *
 
+[!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
+
+
 <a id="add-state-vs-kanban-column" />
 
 ## When to add a State versus a Kanban column
@@ -223,21 +226,27 @@ To learn more about process models, see [Customize your work tracking experience
 
 ## Related articles
 
-::: moniker range="azure-devops"
-- [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
+::: moniker range=">= azure-devops-2019"
+**Inheritance process model**
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Apply rules to workflow states (Inheritance process)](../../organizations/settings/work/apply-rules-to-workflow-states.md)
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md) 
+- [Sample custom rule scenarios](../../organizations/settings/work/rule-samples.md)  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
+**On-premises XML process model**
+
+- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
+- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
+- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
+- [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md) 
+- [Sample custom rule scenarios](../../organizations/settings/work/rule-samples.md)  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+**Dashboard widgets**
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-- [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
-- [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
-- [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
-::: moniker-end
+ 

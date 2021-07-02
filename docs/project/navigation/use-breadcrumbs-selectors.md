@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
+ms.date: 07/30/2020 
 ---
 
 
@@ -134,7 +134,7 @@ For example, when working in the **Queries** pages, you can navigate to a subfol
 Also, you can choose a query that you've favorited from the selector menu, Or, you can choose to browse all queries which returns you to the **All Queries** page. 
   
 > [!div class="mx-imgBorder"]  
-> ![Queries, Query selector](media/breadcrumbs/query-bd-and-selector.png) 
+> ![Screenshot of Queries, Query selector.](media/breadcrumbs/query-bd-and-selector.png) 
 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Queries, Query selector](media/breadcrumbs/build-bc-selector.png) 
+> ![Screenshot of Build Definitions, Query selector.](media/breadcrumbs/build-bc-selector.png) 
 
 ::: moniker-end
 
@@ -163,7 +163,7 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 
 ## Directories 
 
-Directories provide a filterable list of all artifacts defined for a service area. Often times when you navigate to an application, it will open the application's directory. 
+Directories provide a filterable list of all artifacts defined for a service area. Often when you navigate to an application, it will open the application's directory. 
 
 For example, here is the **Boards>Boards** directory. 
 
@@ -176,14 +176,26 @@ It lists boards in the following order:
 - All boards of teams that you belong to
 - All boards defined for the project in alphabetical order. 
 
-Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list as described in [Filter basics](filter-basics.md).
 
 From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Open from breadcrumb | Open from selector |
-> |------|---------|
-> | ![Open Boards directory from breadcrumb](media/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](media/breadcrumbs/open-directory-boards.png)|
+:::row:::
+   :::column span="2":::
+      **Open from breadcrumb**
+   :::column-end:::
+   :::column span="":::
+      **Open from selector**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      :::image type="content" source="media/breadcrumbs/open-directory-boards.png" alt-text="Open Boards directory from selector":::
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="media/breadcrumbs/open-directory-boards-from-breadcrumbs.png" alt-text="Open Boards directory from breadcrumb":::
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 
@@ -212,7 +224,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/howto-manage-team-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
 
@@ -224,4 +236,4 @@ See also [Manage and configure team tools](../../organizations/settings/manage-t
 - [Add an artifact or team](add-artifact-team.md) 
 - [Set favorites](set-favorites.md) 
 - [Open a service or page](go-to-service-page.md) 
-- [Filter basics](filter-basics.md) 
+- [Filter basics](filter-basics.md)

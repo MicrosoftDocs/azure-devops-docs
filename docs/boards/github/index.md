@@ -2,14 +2,13 @@
 title: Learn how to connect/integrate GitHub with Azure Boards
 titleSuffix: Azure Boards
 description: Manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards
-ms.custom: boards-get-started 
-ms.custom: seodec18
+ms.custom: boards-get-started, seodec18 
 ms.technology: devops-agile
-ms.topic: landing-page
+ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/28/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -32,7 +31,7 @@ In addition to accessing developer services such as Azure DevOps and Azure, you 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
 
@@ -53,7 +52,7 @@ Once you've configured the connection, you can then exercise these features:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 Integration steps include: 
 - [Connect Azure Boards to GitHub Enterprise Server](connect-to-github.md)

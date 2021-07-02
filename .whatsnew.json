@@ -1,0 +1,118 @@
+{
+    "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+    "docSetProductName": "Azure DevOps",
+    "rootDirectory": "docs/",
+    "docLinkSettings": {
+      "linkFormat": "relative",
+      "relativeLinkPrefix": "/azure/devops/"
+    },
+    "inclusionCriteria": {
+      "additionalMicrosoftOrgs": [
+        "GitHub"
+      ],
+      "minAdditionsToFile": 62
+    },
+    "areas": [
+      {
+        "names": ["."],
+        "heading": "Miscellaneous"
+      },
+      {
+        "names": ["artifacts"],
+        "heading": "Artifacts"
+      },
+      {
+        "names": ["boards"],
+        "heading": "Azure Boards"
+      },
+      {
+        "names": ["cli"],
+        "heading": "CLI"
+      },
+      {
+        "names": ["demo-gen"],
+        "heading": "Demo-gen"
+      },
+      {
+        "names": ["deploy-azure"],
+        "heading": "Deploy-azure"
+      },
+      {
+        "names": ["dev-resources"],
+        "heading": "Dev-resources"
+      },
+      {
+        "names": ["extend"],
+        "heading": "Extend"
+      },
+      {
+        "names": ["get-started"],
+        "heading": "Get started"
+      },
+      {
+        "names": ["integrate"],
+        "heading": "Integrate"
+      },
+      {
+        "names": ["java"],
+        "heading": "Java"
+      },
+      {
+        "names": ["marketplace"],
+        "heading": "Marketplace"
+      },
+      {
+        "names": ["marketplace-extensibility"],
+        "heading": "Marketplace extensibility"
+      },
+      {
+        "names": ["migrate"],
+        "heading": "Migrate"
+      },
+      {
+        "names": ["notifications"],
+        "heading": "Notifications"
+      },
+      {
+        "names": ["organizations"],
+        "heading": "Administration"
+      },
+      {
+        "names": ["pipelines"],
+        "heading": "Azure Pipelines"
+      },
+      {
+        "names": ["project"],
+        "heading": "Project"
+      },
+      {
+        "names": ["reference"],
+        "heading": "Reference"
+      },
+      {
+        "names": ["report"],
+        "heading": "Azure DevOps Reporting and Analytics service"
+      },
+      {
+        "names": ["repos"],
+        "heading": "Azure Repos"
+      },
+      {
+        "names": ["security-access-billing"],
+        "heading": "Security-access-billing"
+      },
+      {
+        "names": ["service-hooks"],
+        "heading": "Service-hooks"
+      },
+      {
+        "names": ["test"],
+        "heading": "Azure Test Plans"
+      },
+      {
+        "names": ["user-guide"],
+        "heading": "User guide"
+      }
+    ]
+  }
+  

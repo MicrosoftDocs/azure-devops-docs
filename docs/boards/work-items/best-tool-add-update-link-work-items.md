@@ -1,11 +1,11 @@
-﻿---
+---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
-description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
+description: Learn which tool is best to add or update user stories, bugs, issues, and other work items 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: 
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 10/17/2019
@@ -14,7 +14,7 @@ ms.date: 10/17/2019
 
 # Best tool to add, update, and link work items 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 Azure Boards provides you several tools&mdash;many designed to perform a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 
@@ -77,8 +77,8 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Viewing the flow of work from inception to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
-- Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
-- [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md) 
+- Adding linked child items ([checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
+- [Focusing the view based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
 
@@ -111,7 +111,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Planning a sprint](../sprints/assign-work-sprint.md) 
 - [Forecasting work](../sprints/forecast.md) 
 - [Emailing a list of backlog items](email-work-items.md)
-- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md) 
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 
@@ -356,9 +356,9 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <td><strong>Notifications</strong></td>
 <td> 
 <ul>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Manage team and project notifications](../../notifications/howto-manage-team-notifications.md)">Manage team and project notifications</a></li>
-<li><a href="../../notifications/howto-manage-organization-notifications.md" data-raw-source="[Manage organization notifications](../../notifications/howto-manage-organization-notifications.md)">Manage organization notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Manage personal notifications](../../notifications/manage-your-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team and project notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage organization notifications</a></li>
 </ul>
 </td>
 </tr>
@@ -378,16 +378,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
 
-### [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power)
-
-Provides you access to these additional tools through the Team Explorer plug-in for Visual Studio. Additional requirements may apply.
-
--   Process Template Editor
--   Additional check-in policies for Team Foundation Version Control
--   Team Explorer enhancements including Team Members
--   Team Foundation Power Tool Command Line
--   Test Attachment Cleaner
--   Work Item Templates
+See also [Azure Boards extensions developed by Microsoft](../extensions/index.md).
 
 ## Related articles 
 
@@ -395,4 +386,3 @@ Provides you access to these additional tools through the Team Explorer plug-in 
 - [Navigate in the web portal](../../project/navigation/index.md)
 - [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
 - [Why use Azure Boards?](../get-started/why-use-azure-boards.md)
-

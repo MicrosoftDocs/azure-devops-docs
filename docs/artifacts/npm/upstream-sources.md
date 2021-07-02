@@ -1,6 +1,6 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
+description: Use packages from npmjs.com using scopes or upstream sources
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -23,7 +23,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 
 ### On a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 
 ### On an existing feed
 
@@ -38,11 +38,11 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops) and consider upgrading it, if needed.
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](/previous-versions/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops&preserve-view=true) and consider upgrading it, if needed.
 
 ::: moniker range=">= azure-devops-2019"  
 
-![Viewing your cached packages](media/view-cached-packages-newnav.png)
+![On Fabrikam, the Source drop-down list is highlighted, and npmjs is selected. The packages for npmjs are listed.](media/view-cached-packages-newnav.png)
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-![Viewing your cached packages](media/view-cached-packages.png)
+![Filtering is on the npmjs source.](media/view-cached-packages.png)
 
 ::: moniker-end
 

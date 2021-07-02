@@ -23,10 +23,10 @@ The task works for ASP.NET, ASP.NET Core, PHP, Java, Python, Go and Node.js base
 |--- |--- |
 |`ConnectedServiceName`<br/>Azure subscription|(Required) Name of the Azure Resource Manager service connection <br/>Argument aliases: `ConnectedServiceName`|
 |`appName`<br/>App name|(Required) Name of an existing App Service|
-|`resourceGroupName`<br/>Resource group|(Required) Name of the resource group|
+|`resourceGroupName`<br/>Resource group|(Optional) Name of the resource group|
 |`slotName`<br/>Slot|(Optional) Name of the slot<br/>Default value: `production`|
 |`appSettings`<br/>App settings|(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
-|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
+|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. See the [App Service SiteConfig object documentation](/azure/templates/microsoft.web/sites#siteconfig-object) for the available properties.|
 |`connectionStrings`<br/>Connection settings|(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
 
 Following is an example YAML snippet to deploy web application to the Azure Web App service running on windows.
@@ -50,7 +50,7 @@ steps:
     appName: $(WebApp_Name)
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 
-- task: AzureAppServiceSettings@0
+- task: AzureAppServiceSettings@1
   displayName: Azure App Service Settings
   inputs:
     azureSubscription: $(azureSubscription)
@@ -73,14 +73,8 @@ steps:
     generalSettings: |
       [
         {
-          "name": "WEBAPP_NAME",
-          "value": "$(WebApp_Name)",
-          "slotSetting": false
-        },
-        {
-          "name": "WEBAPP_PLAN_NAME",
-          "value": "$(WebApp_PlanName)",
-          "slotSetting": false
+          "alwaysOn": true,
+          "webSocketsEnabled": false
         }
       ]
     connectionStrings: |

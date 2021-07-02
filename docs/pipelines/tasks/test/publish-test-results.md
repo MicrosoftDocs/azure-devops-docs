@@ -4,9 +4,9 @@ description: Publish Test Results to integrate test reporting into your build an
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
-ms.date: 04/20/2020
+ms.author: shashban
+author: shashban
+ms.date: 09/30/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,14 +25,15 @@ to provide a comprehensive test reporting and analytics experience.
 You can use the test runner of your choice that supports the results format
 you require. Supported results formats include [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html),
 [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd)
-(including [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging)),
-[NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
-Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
+(including [PHPUnit](https://phpunit.readthedocs.io/en/9.5/configuration.html#the-logging-element)),
+[NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
+Visual Studio Test (TRX), and [xUnit 2](https://xunit.net/docs/format-xml-v2).
 
 Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
 test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
-[Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.Net Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
-provide publishing results as an option within the task.
+[Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.NET Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
+provide publishing results as an option within the task, or build libraries such as [Cobertura](https://cobertura.github.io/cobertura/)
+and [JaCoCo](https://www.eclemma.org/jacoco/).
 If you are using any of these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
 The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
@@ -45,14 +46,12 @@ The following example shows the task configured to publish test results.
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
-The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
-and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## Check prerequisites
 
 If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
 
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+- [.NET Framework](/dotnet/framework/install/) 4.6.2 or a later version
 
 <a name="demands"></a>
 
@@ -91,8 +90,8 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 | Argument | Description |
 | -------- | ----------- |
-|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
-|`testResultsFiles` <br/>Test results files| (Required) Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). <br/>For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. <br/>Default value: `**/TEST-*.xml`|
+|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.net/docs/format-xml-v2) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
+|`testResultsFiles` <br/>Test results files| (Required) Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a newline.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). <br/>For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. <br/>Default value: `**/TEST-*.xml`|
 |`searchFolder`<br/>Search folder| (Optional) Folder to search for the test result files. <br/>Default value: `$(System.DefaultWorkingDirectory)`|
 |`mergeTestResults`<br/>Merge test results| When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly. <br/>Default value: `false`|
 |`failTaskOnFailedTests`<br/>Fail if there are test failures| (Optional) When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. <br/>Default value: `false`|
@@ -108,34 +107,155 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 This table lists the fields reported in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
 in a build or release summary, and the corresponding mapping with the attributes in the supported test result formats. 
 
-| Scope | Field | Visual Studio Test (TRX) | JUnit | NUnit 2 | NUnit 3 | xUnit 2 | CTest |
-| ----------------- | ----- | ------------------------ | ----- | ------- | ------- | ------- | ------- |
-| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task | **Test run title** specified in the task |
-| | Date started | /TestRun/Times.Attributes["**start**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-run/**start-time** | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** | /Site/Testing/**StartTestTime.InnerText** |
-| | Date completed | /TestRun/Times.Attributes["**finish**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value + SUM(/testsuites/testsuite/testcase.Attributes["**time**"].Value) for all test cases in the test suite | Date started + /test-results/results/test-case.Attributes["**time**"].Value for all test cases  | /test-run/**end-time** | Date started + /assemblies/assembly/**time** | /Site/Testing/**EndTestTime.InnerText** |
-| | Duration | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started | Date completed - Date started |
-| | Attachments | Refer to **Attachments support** section below | Results file, used to publish test results | Results file used to publish test results | Refer to **Attachments support** section below | Results file used to publish test results | Results file, used to publish test results |
-| [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value | /testsuites/testsuite/testcase/Attributes["**name**"].Value | /test-results/results/test-case.Attributes["**name**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**name**"].Value | /assemblies/assembly/collection/test.Attributes["**method**"].Value | /Site/Testing/Test/**Name.InnerText** |
-| | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**start-time**"].Value | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** | /Site/Testing/**StartTestTime.InnerText** |
-| | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"].Value | Date started + /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value | Date Started + /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
-| | Duration (See note 1) | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value | /testsuites/testsuite/testcase/.Attributes["**time**"].Value | /test-results/results/test-case.Attributes["**time**"].Value | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value | /assemblies/assembly/collection/test.Attributes["**time**"].Value | /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
-| | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value | /testsuites/testsuite/testcase/Attributes["**owner**"].Value | build or release requested for user | build or release requested for user | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value | Build or release requested for user |
-| | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error** <br/>**Not Executed**: if exists Testsuites/testsuite/testcase/**skipped** <br/>**Passed**: for all other cases | **Failed**: if exists /test-results/results/test-case/**failure** <br/>**Not Executed**: if exists /test-results/results/test-case.Attributes["**result**"].Value=="Ignored" <br/>**Passed**: for all other cases | /test-results/test-suite/results/test-case.Attributes["**result**"].Value | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value | /Site/Testing/**Test.Attributes["Status"].Value** |
-| | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** | /Testsuites/testsuite/testcase/failure.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/error.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/skipped.Attributes["**message**"].Value | /test-results/results/test-casefailure/**message.InnerText** | /test-suite[@type='Assembly']/test-case/failure/**message** | /assemblies/assembly/collection/test/failure/**message** | - |
-| | Stack trace | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**StackTrace.InnerText** | /Testsuites/testsuite/testcase/failure.**InnerText** Or /Testsuites/testsuite/testcase/error.**InnerText** | /test-results/results/test-case/failure/**stack-trace.InnerText** | /test-suite[@type='Assembly']//test-case/failure/**stack-trace** | /assemblies/assembly/collection/test/failure/**stack-trace** | /Site/Testing/Test/Results/Measurement/**Value.InnerText** |
-| | Attachments | Refer to **Attachments support** section below | - | - | Refer to **Attachments support** section below | - | - |
-| | Console log | /TestRun/Results/UnitTestResult/Output/**StdOut.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdOut.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdOut.InnerText** | /Testsuites/testsuite/testcase/**system-out** | /test-results/results/test-case/failure/**message.InnerText** | /test-suite[@type='Assembly']/test-case/failure/**output** | /assemblies/assembly/collection/test/failure/**output** | - |
-| | Console error log | /TestRun/Results/UnitTestResult/Output/**StdErr.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdErr.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdErr.InnerText** | /Testsuites/testsuite/testcase/**system-err** | /test-results/results/test-case/**output.InnerText** | - | - | - |
-| | Agent name | /TestRun/Results/UnitTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**computerName**"].Value | /testsuites/testsuite.Attributes["**hostname**"].Value | /test-results/environment.Attributes["**machine-name**"].Value | /test-suite[@type='Assembly']/environment.Attributes["**machine-name**"].Value  | - | - |
-| | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value | /testsuites/testsuite/testcase/Attributes["**classname**"].Value | /test-results/test-suite.Attributes["**name**"].Value | /test-suite[@type='Assembly'].Attributes["**name**"].Value | /assemblies/assembly.Attributes["**name**"].Value | /Site/Testing/Test/**Path.InnerText** |
-| | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value | - | - | - | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value | - |
+#### [Visual Studio Test (TRX)](#tab/trx)
 
+| Scope | Field | Visual Studio Test (TRX) |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /TestRun/Times.Attributes["**start**"].Value |
+|  | Date completed | /TestRun/Times.Attributes["**finish**"].Value |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Refer to **Attachments support** section below |
+| [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value |
+|  | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value |
+|  | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
+|  | Duration<sup>1</sup> | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
+|  | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value |
+|  | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value |
+|  | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** |
+|  | Stack trace | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**StackTrace.InnerText** |
+|  | Attachments | Refer to **Attachments support** section below |
+|  | Console log | /TestRun/Results/UnitTestResult/Output/**StdOut.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdOut.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdOut.InnerText** |
+|  | Console error log | /TestRun/Results/UnitTestResult/Output/**StdErr.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdErr.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdErr.InnerText** |
+|  | Agent name | /TestRun/Results/UnitTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**computerName**"].Value |
+|  | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value |
+|  | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value |
 
-**Note** 
+#### [JUnit](#tab/junit)
 
-(1): **Duration** is used only when **Date started** and **Date completed** are not available.
+| Scope | Field | JUnit |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /testsuites/testsuite.Attributes["**timestamp**"].Value |
+|  | Date completed | /testsuites/testsuite.Attributes["**timestamp**"].Value + SUM(/testsuites/testsuite/testcase.Attributes["**time**"].Value) for all test cases in the test suite |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Results file, used to publish test results |
+| [**Test result**](../../test/test-glossary.md) | Title | /testsuites/testsuite/testcase/Attributes["**name**"].Value |
+|  | Date started | /testsuites/testsuite.Attributes["**timestamp**"].Value |
+|  | Date completed | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /testsuites/testsuite/testcase/.Attributes["**time**"].Value |
+|  | Owner | /testsuites/testsuite/testcase/Attributes["**owner**"].Value |
+|  | Outcome | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error**  **Not Executed**: if exists Testsuites/testsuite/testcase/**skipped**  **Passed**: for all other cases |
+|  | Error message | /Testsuites/testsuite/testcase/failure.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/error.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/skipped.Attributes["**message**"].Value |
+|  | Stack trace | /Testsuites/testsuite/testcase/failure.**InnerText** Or /Testsuites/testsuite/testcase/error.**InnerText** |
+|  | Attachments | - |
+|  | Console log | /Testsuites/testsuite/testcase/**system-out** |
+|  | Console error log | /Testsuites/testsuite/testcase/**system-err** |
+|  | Agent name | /testsuites/testsuite.Attributes["**hostname**"].Value |
+|  | Test file | /testsuites/testsuite/testcase/Attributes["**classname**"].Value |
+|  | Priority | - |
 
-(2): Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
+#### [NUnit 2](#tab/nunit2)
+
+| Scope | Field | NUnit 2 |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value |
+|  | Date completed | Date started + /test-results/results/test-case.Attributes["**time**"].Value for all test cases |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Results file used to publish test results |
+| [**Test result**](../../test/test-glossary.md) | Title | /test-results/results/test-case.Attributes["**name**"].Value |
+|  | Date started | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value |
+|  | Date completed | Date started + /test-results/results/test-case.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /test-results/results/test-case.Attributes["**time**"].Value |
+|  | Owner | build or release requested for user |
+|  | Outcome | **Failed**: if exists /test-results/results/test-case/**failure**  **Not Executed**: if exists /test-results/results/test-case.Attributes["**result**"].Value=="Ignored"  **Passed**: for all other cases |
+|  | Error message | /test-results/results/test-casefailure/**message.InnerText** |
+|  | Stack trace | /test-results/results/test-case/failure/**stack-trace.InnerText** |
+|  | Attachments | - |
+|  | Console log | /test-results/results/test-case/failure/**message.InnerText** |
+|  | Console error log | /test-results/results/test-case/**output.InnerText** |
+|  | Agent name | /test-results/environment.Attributes["**machine-name**"].Value |
+|  | Test file | /test-results/test-suite.Attributes["**name**"].Value |
+|  | Priority | - |
+
+#### [NUnit 3](#tab/nunit3)
+
+| Scope | Field | NUnit 3 |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /test-run/**start-time** |
+|  | Date completed | /test-run/**end-time** |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Refer to **Attachments support** section below |
+| [**Test result**](../../test/test-glossary.md) | Title | /test-suite[@type='Assembly']/test-case.Attributes["**name**"].Value |
+|  | Date started | /test-suite[@type='Assembly']/test-case.Attributes["**start-time**"].Value |
+|  | Date completed | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value |
+|  | Duration<sup>1</sup> | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value |
+|  | Owner | build or release requested for user |
+|  | Outcome | /test-results/test-suite/results/test-case.Attributes["**result**"].Value |
+|  | Error message | /test-suite[@type='Assembly']/test-case/failure/**message** |
+|  | Stack trace | /test-suite[@type='Assembly']//test-case/failure/**stack-trace** |
+|  | Attachments | Refer to **Attachments support** section below |
+|  | Console log | /test-suite[@type='Assembly']/test-case/failure/**output** |
+|  | Console error log | - |
+|  | Agent name | /test-suite[@type='Assembly']/environment.Attributes["**machine-name**"].Value |
+|  | Test file | /test-suite[@type='Assembly'].Attributes["**name**"].Value |
+|  | Priority | - |
+
+#### [xUnit 2](#tab/xunit2)
+
+| Scope | Field | xUnit 2 |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
+|  | Date completed | Date started + /assemblies/assembly/**time** |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Results file used to publish test results |
+| [**Test result**](../../test/test-glossary.md) | Title | /assemblies/assembly/collection/test.Attributes["**method**"].Value |
+|  | Date started | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
+|  | Date completed | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
+|  | Owner | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value |
+|  | Outcome | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value |
+|  | Error message | /assemblies/assembly/collection/test/failure/**message** |
+|  | Stack trace | /assemblies/assembly/collection/test/failure/**stack-trace** |
+|  | Attachments | - |
+|  | Console log | /assemblies/assembly/collection/test/failure/**output** |
+|  | Console error log | - |
+|  | Agent name | - |
+|  | Test file | /assemblies/assembly.Attributes["**name**"].Value |
+|  | Priority | /testcaseNode/traits/trait[@name='priority'].Attributes["**value**"].Value |
+
+#### [CTest](#tab/ctest)
+
+| Scope | Field | CTest |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /Site/Testing/**StartTestTime.InnerText** |
+|  | Date completed | /Site/Testing/**EndTestTime.InnerText** |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Results file, used to publish test results |
+| [**Test result**](../../test/test-glossary.md) | Title | /Site/Testing/Test/**Name.InnerText** |
+|  | Date started | /Site/Testing/**StartTestTime.InnerText** |
+|  | Date completed | Date Started + /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
+|  | Duration<sup>1</sup> | /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
+|  | Owner | Build or release requested for user |
+|  | Outcome | /Site/Testing/**Test.Attributes["Status"].Value** |
+|  | Error message | - |
+|  | Stack trace | /Site/Testing/Test/Results/Measurement/**Value.InnerText** |
+|  | Attachments | - |
+|  | Console log | - |
+|  | Console error log | - |
+|  | Agent name | - |
+|  | Test file | /Site/Testing/Test/**Path.InnerText** |
+|  | Priority | - |
+
+* * *
+
+<sup>1</sup> **Duration** is used only when **Date started** and **Date completed** are not available.
+
+<sup>2</sup> The fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 
@@ -169,7 +289,7 @@ The final image will be published to Docker or Azure Container Registry
 
    ```Dockerfile
    # Build and run tests inside the docker container
-   FROM microsoft/dotnet:2.1-sdk
+   FROM mcr.microsoft.com/dotnet/sdk:2.1
    WORKDIR /app
    # copy the contents of agent working directory on host to workdir in container
    COPY . ./
@@ -191,7 +311,7 @@ The final image will be published to Docker or Azure Container Registry
    # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
-   FROM microsoft/aspnetcore:2.0
+   FROM dotnet/core/aspnet:2.1
    # Create app directory
    WORKDIR /app
    # Copy only the deployment artifacts
@@ -267,7 +387,7 @@ The final image will be published to Docker or Azure Container Registry
        pswd: $(dockerPassword)
    ```
 
-1. Push the change to the master branch in your repository. 
+1. Push the change to the main branch in your repository. 
 
 1. If you use Azure Container Registry, ensure you have
    [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
@@ -308,12 +428,12 @@ YAML builds are not yet available on TFS.
      docker stop dotnetcoreapp
      ```
 
-1. Add a **Publish Test Results** task to publish results to the pipeline, and edit the its properties as follows:
+1. Add a **Publish Test Results** task to publish results to the pipeline, and edit its properties as follows:
 
    * **Test result format**: `VSTest`
    * **Test results files**: `**/*.trx`
 
-1. Add a [Bash task](../utility/bash.md) to publish the final image to the repository, and edit the its properties as follows:
+1. Add a [Bash task](../utility/bash.md) to publish the final image to the repository, and edit its properties as follows:
 
    * **Type**: `Inline`
    * **Script**:
@@ -334,7 +454,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
@@ -376,9 +496,9 @@ The Publish Test Results task provides support for attachments for both test run
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
-## Frequently Asked Questions
+## FAQ
 
-#### What is the maximum permittable limit of FQN?
+#### What is the maximum permissible limit of FQN?
 
 The maximum FQN limit is 512 characters.
 

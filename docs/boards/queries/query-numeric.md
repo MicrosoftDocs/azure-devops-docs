@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
 ms.date: 10/03/2019
 ---
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -151,7 +151,7 @@ Then, add a stacked bar chart that sums the Story Points.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/query-effort-config-chart-sum-story-points-iteration.png" alt="Configure chart, sum of story points per iteration, stacked bar chart." style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -310,7 +310,7 @@ The following table describes the activity-based and numeric fields that you can
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-<p>Reference name=&quot;Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
+<p>Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
@@ -347,7 +347,7 @@ For more information on using work items and queries, see:
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Create managed queries](example-queries.md)  
+- [About managed queries](about-managed-queries.md)  
 
 <a id="show-bugs"/>
 
@@ -358,7 +358,7 @@ For more information on using work items and queries, see:
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 - [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
-- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)  
+- [Create rollup charts with Power BI](../../report/powerbi/data-connector-connect.md)  
 
 <a id="category"/>
 

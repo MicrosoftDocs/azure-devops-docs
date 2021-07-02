@@ -15,6 +15,9 @@ monikerRange: '> tfs-2018'
 Use this task to apply file transformations and variable substitutions on configuration and parameters files. 
 For details of how translations are processed, see [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 
+> [!IMPORTANT]
+> This task is intended for web packages and requires a web package file, and does not work on standalone json files.
+
 **File transformations**
 
 * At present file transformations are supported for only XML files.
@@ -25,7 +28,7 @@ For details of how translations are processed, see [File transforms and variable
 
 * File transformations are useful in many scenarios, particularly when you are deploying to an App service and want to add,
   remove or modify configurations for different environments (such as Dev, Test, or Prod) by following the standard
-  [Web.config Transformation Syntax](https://docs.microsoft.com/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations).
+  [Web.config Transformation Syntax](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations).
 
 * You can also use this functionality to transform other files, including Console or Windows service application configuration files
   (for example, FabrikamService.exe.config).
@@ -69,7 +72,17 @@ as `Data.DefaultConnection.ConnectionString` in the build or release pipeline (o
 
 > [!NOTE]
 > Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded.
-> If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
+>
+> Here's a list of currently excluded prefixes: 
+> * 'agent.'
+> * 'azure_http_user_agent'
+> * 'build.'
+> * 'common.'
+> * 'release.'
+> * 'system.'
+> * 'tf_'
+> 
+> If the same variables are defined in both the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
 
 See also: [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 
@@ -105,7 +118,7 @@ XML transformations are supported only for the Windows platform.
 <tr>
 <td>Transformation rules<br />xmlTransformationRules</td>
 <td>Provide a newline-separated list of transformation file rules using the syntax<br /> 
-<code>-transform &lt;path to=&quot;&quot; the transform file&gt; -xml &lt;path to the source configuration file&gt; -result &lt;path to the result file&gt;</code><br />
+<code>-transform &lt;path to the transform file&gt; -xml &lt;path to the source configuration file&gt; -result &lt;path to the result file&gt;</code><br />
 The result file path is optional and, if not specified, the source configuration file will be replaced with the transformed result file.
 </td>
 </tr>
@@ -125,4 +138,3 @@ For XML, Variables defined in the build or release pipelines will be matched aga
 ## Open source
 
 This task is open source on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-

@@ -7,8 +7,6 @@ ms.date: 03/16/2020
 description: In the **Sprint 166 Update** of Azure DevOps, you can now pay for users once across multiple organizations.
 ---
 
-> [!Important]
-> In light of the COVID-19 global health pandemic, and in recognition of the critical role hosted services like Azure DevOps can play in key workloads for our customers, we are pausing our normal sprintly deployments to better focus on stability and reliability. Deployments will be limited for now to critical updates needed to fix bugs or address stability, reliability, or security issues. See the [Optimizing for stability during the global health pandemic blog post](https://devblogs.microsoft.com/devops/optimizing-for-stability-during-the-global-health-pandemic/) for more information.
 
 
 # Pay for users once across organizations
@@ -45,7 +43,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 

@@ -7,19 +7,25 @@ ms.assetid: CFFC2B0F-D4A8-4C0B-B485-823CE6C0E63C
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 9/18/2019
+ms.date: 06/30/2021
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy a Function App Container
 
-You can automatically deploy your functions to Azure Function App for Linux Container after every successful build.
+You can automatically deploy an Azure Functions function app using a custom container after every successful build.
 
-## Before you begin
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use Azure Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
+
+## Prerequisites
+
+[!INCLUDE [include](../includes/prerequisites.md)]
+
+## Create your Function App for Containers
 
 If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
 
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+To use sample code instead, fork this GitHub repo:
 
 ```
     https://github.com/azooinmyluggage/GHFunctionAppContainer
@@ -79,7 +85,7 @@ Now that the build pipeline is in place, you will learn a few more common config
 
 <a name="endpoint"></a>
 
-## Azure service connection
+## Add a service connection
 
 The **[Azure Function App on Container Deploy](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppContainerV1/README.md)** task, similar to other built-in Azure tasks, requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
@@ -128,9 +134,9 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to your **Function App --> Platform features --> All settings**. Select **Container settings** from the app service and update the **Image source, Registry** and save.
 
-![container-settings](media/functionapp-container/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](media/functionapp-container/container-settings.png)
 
-## Deploy with Azure Function App for Container
+## Deploy with the Azure Function App for Container task
 
 #### [YAML](#tab/yaml/)
 
@@ -142,7 +148,7 @@ To deploy to an Azure Function App container, add the following snippet at the e
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation

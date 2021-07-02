@@ -35,6 +35,6 @@ You can query for data about how thoroughly a particular test run covered the co
   
 ## Related notes
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
--  [Code Churn](../excel/code-coverage-excel-report.md)  
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)  
 -  [Build](/visualstudio/ide/walkthrough-building-an-application)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

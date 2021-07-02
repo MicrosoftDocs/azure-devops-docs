@@ -6,15 +6,15 @@ ms.technology: devops-agile
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ---
 
 
 # Link type reference 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="link-type-guidance"></a>
 
@@ -35,7 +35,7 @@ A specific field maintains a count of links for the first four link types, such 
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 
 - [**Work link types**](#work-link-types): links work items including select test case management work items
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
@@ -73,7 +73,7 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 
@@ -120,15 +120,15 @@ System.LinkTypes.Hierarchy-Reverse</p>
 <p>Topology type: Tree<br/>
 Link category: System-defined</p></td>
 <td>
-Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the <a href="../backlogs/organize-backlog.md" data-raw-source="[mapping function](../backlogs/organize-backlog.md)">mapping function</a> or among backlog items and tasks using the <a href="../sprints/assign-work-sprint.md" data-raw-source="[sprint backlog](../sprints/assign-work-sprint.md)">sprint backlog</a> or <a href="../sprints/task-board.md" data-raw-source="[task board](../sprints/task-board.md)">task board</a>.
+Use this directional link to create one-to-many relationships between a single parent to one or more child items. Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the <a href="../backlogs/organize-backlog.md" data-raw-source="[mapping function](../backlogs/organize-backlog.md)">mapping function</a> or among backlog items and tasks using the <a href="../sprints/assign-work-sprint.md" data-raw-source="[sprint backlog](../sprints/assign-work-sprint.md)">sprint backlog</a> or <a href="../sprints/task-board.md" data-raw-source="[Taskboard](../sprints/task-board.md)">Taskboard</a>.
 <p>Typical uses include:</p> 
 <ul>
 <li><p>Create a work breakdown structure (WBS). See <a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Schedule tasks and assign resources using Microsoft Project](../backlogs/office/create-your-backlog-tasks-using-project.md)">Schedule tasks and assign resources using Microsoft Project</a>.</p></li><li><p>Map backlog items to portfolio backlog items. Mapping items automatically creates parent-child links between the items. To learn about mapping, see <a href="../backlogs/organize-backlog.md" data-raw-source="[Organize your backlog](../backlogs/organize-backlog.md)">Organize your backlog</a>.</p></li><li><p>Maintain task summary relationships. Parent-child links are created for summary tasks and their subordinate tasks.</p></li><li><p>Link tasks to PBIs, user stories, or requirements. Supports Backlog Overview, Stories Overview, and Requirements Overview reports.</p></li></ul>Restrictions and recommendations:<ul><li><p>Use Excel to bulk edit both work items and parent-child links. See <a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)">Bulk add or modify work items with Excel</a>.</p></li><li><p>A work item can have only one Parent. A parent work item can have many children.</p></li><li><p>Only use parent-child links to link work items in the same project. This action is recommended if you plan to use Excel or Project to modify or update work item data.</p></li></ul> </td>
 </tr>
 <tr>
 <td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
-<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
-<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate of tree forward."/> 
+<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of tree reverse."/> 
 </td>
 <td><p>System.LinkTypes.Duplicate-Forward<br/>
 System.LinkTypes.Duplicate-Reverse</p>
@@ -165,8 +165,8 @@ Link category: System-defined</p></td>
 </tr>
 <tr>
 <td><strong>Successor-Predecessor</strong><br/>
-<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
-<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Successor dependency, forward."/> 
+<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Predecessor dependency, reverse."/> 
 </td>
 <td><p>System.LinkTypes.Dependency</p>
 <p>Topology type: Dependency<br/>
@@ -199,7 +199,7 @@ Link category: Process-defined</p></td>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
+<p>Use to link test cases with shared steps. You <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">Share steps between test cases</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -251,7 +251,7 @@ External link types are system-defined link types. They support linking work ite
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 ::: moniker-end  
 
@@ -510,10 +510,10 @@ GitHub link types are system-defined link types. They support linking work items
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types.png) 
+> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types.png)  
 
 ::: moniker-end
 
@@ -524,27 +524,12 @@ GitHub link types are system-defined link types. They support linking work items
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops"
-> [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-> [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
 
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Connect Azure Boards to GitHub](../github/connect-to-github.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+
 The following table describes the GitHub link types you can choose when adding a link type from a work item. 
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
 
 :::row:::
    :::column span="":::
@@ -568,6 +553,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub commit.
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       GitHub Issue
@@ -579,6 +566,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub issue.
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       GitHub Pull Request
@@ -590,48 +579,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub pull request.
    :::column-end:::
 :::row-end:::
-
+ 
 ::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-:::row:::
-   :::column span="":::
-      **Link name**
-   :::column-end:::
-   :::column span="":::
-      **Artifact type**
-   :::column-end:::
-   :::column span="":::
-      **Usage**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      GitHub Commit
-   :::column-end:::
-   :::column span="":::
-      GitHub repository commit
-   :::column-end:::
-   :::column span="":::
-      Used to link a work item to a GitHub commit.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      GitHub Pull Request
-   :::column-end:::
-   :::column span="":::
-      GitHub repository pull request
-   :::column-end:::
-   :::column span="":::
-      Used to link a work item to a GitHub pull request.
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
-
 
 ::: moniker range="azure-devops"   
 
@@ -663,8 +612,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       ![Produced For topology conceptual image](media/link-work-items-support-traceability/affects-cmmi.png)
    :::column-end:::
    :::column span="":::
-      Microsoft.VSTS.Common.ProducedFor.Forward  
-      Microsoft.VSTS.Common.ConsumesFrom.Reverse  
+      System.LinkTypes.Remote.Dependency-Forward  
+      System.LinkTypes.Remote.Dependency-Reverse  
       Topology type: Dependency  
       Link category: System-defined  
    :::column-end:::
@@ -690,7 +639,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops" 
 
 ## Custom link types
 
@@ -704,12 +653,15 @@ You can create custom link types; export and import definitions of link types; a
 
 ## List link types
 
+To get a list of link types, you can use one of the supported command line tools. 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
+### az boards work-item relation list-type  
 
-```CLI
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
+
+```azurecli
 az boards work-item relation list-type [--org]
 ```
 
@@ -722,7 +674,7 @@ az boards work-item relation list-type [--org]
 
 The following command lists the work item link types in table format that are defined for the fabrikam organization. For additional formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).  
 
-```CLI
+```azurecli
 az boards work-item relation list-type --org fabrikam --output table
 Name                  ReferenceName                                                Enabled    Usage
 --------------------  -----------------------------------------------------------  ---------  ------------
@@ -749,7 +701,7 @@ Artifact Link         ArtifactLink                                              
 
 The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types *Produces For* and *Consumes From* are listed as follows. 
 
-```CLI
+```output
   {
     "attributes": {
       "acyclic": true,
@@ -790,6 +742,8 @@ The default json format provides additional information about the attributes def
 ::: moniker-end
 
 ::: moniker range="< azure-devops" 
+
+### witadmin listlinktypes 
 
 You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. 
 
@@ -839,7 +793,7 @@ Is Active: True
 
 ### Link type attributes
 
-The following table provides descriptions for each of the link type attributes returned by **azure boards** CLI or the REST API.  
+The following table provides descriptions for each of the link type attributes returned by **Azure Boards** CLI or the REST API.  
 
 
 :::row:::
@@ -958,8 +912,9 @@ The following table provides descriptions for each of the link type attributes r
 
 - [Link work items to track dependencies](link-work-items-support-traceability.md)    
 - [Add link to multiple work items](../backlogs/add-link.md)  
+- [Query FAQs](query-faqs.yml)
+- [Track dependencies using Delivery Plans](../plans/track-dependencies.md)
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)
-

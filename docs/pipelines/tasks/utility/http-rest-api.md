@@ -69,7 +69,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
 
-## Q&A
+## FAQ
 
 ### What base URLs are used when invoking Azure Management APIs?
 
@@ -87,9 +87,10 @@ To signal completion, the external service should POST completion data to the fo
  
 See [this simple cmdline application](https://github.com/Microsoft/azure-pipelines-extensions/tree/master/ServerTaskHelper/HttpRequestSampleWithoutHandler) for specifics. 
  
-In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
- 
+In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](/archive/blogs/aseemb/async-http-agentless-task) 
 
 ### Can I use the response body as the input for another task?
 
 No, as this task is an agentless task and uses TFS's internal HttpRequest, which doesn't return the content of the HTTP request.
+
+

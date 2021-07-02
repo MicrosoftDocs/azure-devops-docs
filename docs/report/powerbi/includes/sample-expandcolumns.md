@@ -11,16 +11,16 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn.png)
+    > ![Expand an entity column, Power BI + OData](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn.png)
 
 1. Select the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn2.png)
+    > ![Select the fields to flatten.](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn2.png)
 
 1. The table now contains entity field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn3.png)
+    > ![The table now contains entity field(s).](/azure/devops/report/powerbi/media/odatapowerbi/expandcolumn3.png)
 
 1. Repeat steps 1 through 3 for all fields representing entities: Area, Iteration, AssignedTo.

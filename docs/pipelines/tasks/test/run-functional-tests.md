@@ -4,8 +4,8 @@ description: Run Coded UI/Selenium/Functional tests on a set of machines using t
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -27,7 +27,7 @@ This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2
 task together with [jobs](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
-For more details, see [Testing with unified agents and jobs](../../test/test-with-unified-agent-and-phases.md).
+For more details, see [Testing with unified agents and jobs](../../ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -52,11 +52,11 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 | Argument | Description |
 | -------- | ----------- |
-| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
+| **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="/azure/azure-resource-manager/management/overview">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Test Drop Location** | Required. The location on the test machine(s) where the test binaries have been copied by a <a href="../deploy/windows-machine-file-copy.md">Windows Machine File Copy</a> or <a href="../deploy/azure-file-copy.md">Azure File Copy</a> task. System stage variables from the test agent machines can be used to specify the drop location. Examples: `c:\tests` and `%systemdrive%\Tests` |
 | **Test Selection** | Required. Whether the tests are to be selected from test assemblies or from a test plan. |
 | **Test Assembly** | Required when **Test Selection** is set to **Test Assembly**. The test assemblies from which the tests should be executed. Paths are relative to the sources directory.<br />- Separate multiple paths with a semicolon.<br />- Default is `**\*test*.dll`<br />- For JavaScript tests, enter the path and name of the **.js** files containing the tests.<br />- Wildcards can be used. Example: `**\commontests\*test*.dll; **\frontendtests\*test*.dll` |
-| **Test Filter criteria** | Optional when **Test Selection** is set to **Test Assembly**. A filter to specify the tests to execute within the test assembly files. Works the same way as the `/TestCaseFilter` option of <a href="https://msdn.microsoft.com/library/jj155796.aspx">vstest.console.exe</a>. Example: **Priority=1 \| Name=MyTestMethod** |
+| **Test Filter criteria** | Optional when **Test Selection** is set to **Test Assembly**. A filter to specify the tests to execute within the test assembly files. Works the same way as the `/TestCaseFilter` option of <a href="/previous-versions/jj155796(v=vs.140)">vstest.console.exe</a>. Example: **Priority=1 \| Name=MyTestMethod** |
 | **Test Plan** | Required if **Test Suite** is not specified when **Test Selection** is set to **Test Plan**. Select a test plan already configured for this organization. |
 | **Test Suite** | Required if **Test Plan** is not specified when **Test Selection** is set to **Test Plan**. Select a test suite from the selected test plan. |
 | **Test Configuration** | Optional when **Test Selection** is set to **Test Plan**. Select a test configuration from the selected test plan. |
@@ -90,7 +90,7 @@ Use this task to:
 
 You can run unit tests, integration tests, functional tests -
 in fact any test that you can execute using the Visual Studio
-test runner ([vstest](https://msdn.microsoft.com/library/jj155800.aspx)).
+test runner ([vstest](/previous-versions/jj155800(v=vs.140))).
 
 Using multiple machines in a Machine Group enables
 the task to run parallel distributed execution of tests.
@@ -153,7 +153,7 @@ These scenarios are supported for:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]

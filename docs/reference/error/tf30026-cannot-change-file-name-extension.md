@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.manager: mijacobs1-274b-4274-a430-b3ef4b33bb20
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 # TF30026: You cannot change the file name extension using Team Explorer. Do you want to continue?

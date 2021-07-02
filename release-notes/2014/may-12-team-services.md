@@ -24,7 +24,7 @@ You can find more information about the types of scenarios now possible at our [
 
 Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
 
-[Learn the basics](/rest/api/vsts/?view=vsts-rest-4.1)
+[Learn the basics](/rest/api/vsts/?view=vsts-rest-4.1&preserve-view=true)
 
 [Explore the APIs](/azure/devops/integrate/)
 
@@ -32,7 +32,7 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 With OAuth 2.0 support in Visual Studio Online, now you can safely access information and perform operations on Visual Studio Online on behalf of a user. OAuth enables users to safely grant your app or service access to their resources.
 
-[Authorizing with OAuth](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops)
+[Authorizing with OAuth](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops&preserve-view=true)
 
 [Registering your app](https://app.vssps.visualstudio.com/app/register?_ga=1.9631093.1191187031.1470846728)
 
@@ -53,11 +53,11 @@ Services hooks can be found as a new hub in project administration.
 
 [Creating subscriptions programmatically](/azure/devops/integrate/)
 
-[Supported events](/azure/devops/service-hooks/events?view=azure-devops)
+[Supported events](/azure/devops/service-hooks/events?view=azure-devops&preserve-view=true)
 
 ### Extensibility Preview
 
-re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](https://msdn.microsoft.com/library/bb165336.aspx).
+re anxious to get your feedback and officially release them. While in preview, the REST APIs may change. You can protect yourself by ensuring you pass the appropriate version as part of your requests. As these features evolve in preview, you will have time to migrate forward. For more information, see [Get started with the REST APIs](/previous-versions/visualstudio/visual-studio-2015/extensibility/visual-studio-sdk).
 
 Give it a try. We can’t wait to see what you come up with.
 

@@ -4,10 +4,14 @@
   href: kanban-quickstart.md
 - name: Reorder cards
   href: reorder-cards.md
-- name: Add task checklists
+- name: Add tasks or child items as checklists
   href: add-task-checklists.md
+  displayname: tasks, subtasks, todo lists, bugs, tests, features, epics, user stories, product backlog items, requirements, annotations, parent
 - name: Define features & epics
   href: kanban-epics-features-stories.md
+- name: Filter your Kanban board
+  href: ../backlogs/filter-backlogs-boards-plans.md 
+  displayname: reorder, group, parent, tags  
 - name: Kanban board basics
   href: kanban-basics.md
 - name: Add, run, & update inline tests
@@ -16,24 +20,26 @@
   items:
   - name: Kanban board controls
     href: kanban-board-controls.md
-  - name: Filter your Kanban board
-    href: filter-kanban-board.md 
   - name: Enable live updates
     href: live-updates.md
   - name: Add or edit columns
     href: add-columns.md
+    displayname: remove, state mapping, rename  
   - name: Customize cards
     href: customize-cards.md  
+    displayname: styles, annotations, tests, tag colors  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Split columns
     href: split-columns.md
+    displayname: doing, done, bottlenecks  
   - name: Definition of done
     href: definition-of-done.md
   - name: Show bugs on backlogs & boards
-    href: /azure/devops/organizations/settings/show-bugs-on-backlog?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    displayname: nested, hierarchical
 - name: Best practices, monitoring, & reports
   items:
   - name: Kanban best practices
@@ -43,5 +49,4 @@
   - name: View/configure CFD
     href: ../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Configure Lead/Cycle time widget
-    href: ../../report/dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-
+    href: ../../report/dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json

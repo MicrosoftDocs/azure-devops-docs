@@ -7,16 +7,16 @@ ms.technology: devops-agile
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
-ms.date: 03/10/2020  
+ms.date: 03/24/2021
 ---
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
-The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
+The **\@Today** and **\@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **\@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
 
 For example, you can find work items that were modified in the last 3 days with the following query.
 
@@ -88,7 +88,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 1. The <strong>@StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear</strong> macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
 2. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+2. The **\@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
 ## Date based queries  
@@ -97,8 +97,7 @@ You can filter for work items by the date on which they were changed or for a sp
 
 Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. 
 
-> [!IMPORTANT]  
-> Enter dates in the **Date Pattern** you set for your personal profile. See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.   
+
 
 <table valign="top">
 <tbody valign="top">
@@ -166,19 +165,18 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Start of Day, Week, Month, or Year date-based queries
 
 The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For additional examples for using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-
 > [!NOTE]   
 > Requires Azure DevOps Server 2019 Update 1 or later version. 
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
@@ -267,6 +265,7 @@ Prior to creating or updating a query to use the <strong>@CurrentIteration</stro
 ::: moniker range=">= azure-devops-2019"
 
 <a id="current-iteration-plus-minus-n">  </a>
+
 ## Sliding window of team iterations query 
 
 Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the work a team has planned for upcoming sprints and for understanding work that wasn't completed in previous sprints. 
@@ -292,134 +291,156 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
-<table>
-<tbody valign="top">
-<tr>
-  <th width="20%">Field name</th>
-  <th width="55%">Description</th>
-  <th width="25%">Work item type</th>
-</tr>
-<tr>
-  <td>
-    <p>Activated Date <sup>1, 2</sup>  </p>
-  </td>
-  <td>
-    <p>The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.  </p>
-	<p>Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
-  </td>
-  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
-</tr>
-<tr>
-  <td>
-    <p>Change Date</p>
-  </td>
-  <td>
-    <p>The date and time when a work item was modified.</p>
-	<p>Reference name=System.ChangedDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>All</p>
-  </td>
-</tr>
-<tr>
-  <td>
-   <p>Closed Date <sup>2</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when a work item was closed.</p>
-	<p>Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>All</p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Created Date</p>
-  </td>
-  <td>
-    <p>The date and time when a work item was created.</p>
-	<p>Reference name=System.CreatedDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>All</p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Due Date</p>
-  </td>
-  <td>
-    <p>The forecasted due date for an issue to be resolved.</p>
-<p>Reference name=Microsoft.VSTS.Scheduling.DueDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>Issue (Agile)</p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Finish Date <sup>3</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when the schedule indicates that the task will be completed. </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime</p>
-  </td>
-  <td>Requirement, Task, Test Plan, User Story </td>
-</tr>
-<tr>
-  <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md)">define iteration paths for a project and select iteration paths for a team</a>. 
-<p>Reference name=System.IterationPath, Data type=TreePath</p>
-  </td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>
-    <p>Resolved Date <sup>1, 2</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when the work item was moved into a Resolved state. </p>
-	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
-  </td>
-  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
-</tr>
-<tr>
-  <td>
-    <p>Start Date <sup>3</sup> </p>
-  </td>
-  <td>
-    <p>The date and time when the schedule indicates that the task will start.  </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime</p>
-  </td>
-  <td>Epic, Feature, Requirement, Task, Test Plan, User Story </td>
-</tr>
-<tr>
-  <td>
-    <p>State Change Date</p>
-  </td>
-  <td>
-    <p>The date and time when the value of the State field changed.</p>
-	<p>Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>All</p>
-  </td>
-</tr>
-<tr>
-  <td>
-    <p>Target Date</p>
-  </td>
-  <td>
-    <p>The date by which a feature should be completed. </p>
-<p>Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime</p>
-  </td>
-  <td>
-    <p>Epic, Feature</p>
-  </td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="1":::
+      **Field name**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+   :::column span="1":::
+      **Work item types**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Activated Date (Notes 1, and 2)
+   :::column-end:::
+   :::column span="2":::
+      The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.   
+      Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
+   :::column-end:::
+   :::column span="1":::
+      Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Change Date 
+   :::column-end:::
+   :::column span="2":::
+      The date and time when a work item was modified.  
+      Reference name=System.ChangedDate, Data type=DateTime  
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Closed Date (Note 2)
+    :::column-end:::
+    :::column span="2":::
+      The date and time when a work item was closed.  
+      Reference name=Microsoft.VSTS.Common.ClosedDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      All</p>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Created Date
+    :::column-end:::
+    :::column span="2":::
+      The date and time when a work item was created.  
+      Reference name=System.CreatedDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      All 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Due Date
+    :::column-end:::
+    :::column span="2":::
+      The forecasted due date for an issue to be resolved.  
+      Reference name=Microsoft.VSTS.Scheduling.DueDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      Issue (Agile) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Finish Date (Note 3)
+    :::column-end:::
+    :::column span="2":::
+      The date and time when the schedule indicates that the task will be completed.  
+      Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      Requirement, Task, Test Plan, User Story
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Iteration Path
+    :::column-end:::
+    :::column span="2":::
+      Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project and select iteration paths for a team](../../organizations/settings/set-iteration-paths-sprints.md) define iteration paths for a project and select iteration paths for a team.   
+      Reference name=System.IterationPath, Data type=TreePath
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Resolved Date (Notes 1 and 2)
+    :::column-end:::
+    :::column span="2":::
+      The date and time when the work item was moved into a Resolved state.  
+      Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Start Date (Note 3)
+    :::column-end:::
+    :::column span="2":::
+      The date and time when the schedule indicates that the task will start.  </p>
+<p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      Epic, Feature, Requirement, Task, Test Plan, User Story
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      State Change Date
+    :::column-end:::
+    :::column span="2":::
+      The date and time when the value of the State field changed.  
+      Reference name=Microsoft.VSTS.Common.StateChangeDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::	
+:::row:::
+   :::column span="1":::
+      Target Date
+    :::column-end:::
+    :::column span="2":::
+      The date by which a feature or work item is expected to be completed.  
+      ::: moniker range="azure-devops"
+      > [!NOTE]   
+      > [Delivery Plans](../plans/review-team-plans.md) uses the Start Date and Target Date to show the span of Features, Epics, and other portfolio backlog items. 
+      ::: moniker-end
+      Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime
+   :::column-end:::
+   :::column span="1":::
+      Epic, Feature
+   :::column-end:::
+:::row-end:::
+
+
 
 #### Notes:
  
@@ -432,7 +453,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 	</FIELD >  
     ```
 
-2. Start and Finish Date fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields do not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+2. **Start Date** and **Finish Date** fields are calculated if you create a project plan in Microsoft Project and then synchronize that plan with tasks that are stored in Azure Boards. These fields may not appear on the work item form, but they are calculated for those backlog items and tasks that are linked to backlog items. You can view their read-only values in results from a query or from Microsoft Excel or Project. For more information, see [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).
+
+	[!INCLUDE [temp](../includes/deprecate-project.md)]
 
 <a id="team_view">  </a>
 <a id="current_sprint_restrict"> </a> 
@@ -449,7 +472,7 @@ You can use the <strong>@CurrentIteration</strong> in a query from the following
 You can use the <b>@CurrentIteration +/- <i>n</i></b> macro in a query against Azure Boards, Azure DevOps Server 2019 and later versions, and with a REST API which includes the team as a parameter, for example, `@CurrentIteration('[Project]/Team')`.
   
 
-An error occurs if you open a query that contains the <strong>@CurrentIteration</strong> macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).
+An error occurs if you open a query that contains the <strong>@CurrentIteration</strong> macro in earlier versions of Visual Studio, or from Excel or Project. Also, you can't use the macro when [copying or cloning test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases), [defining alerts](../../notifications/about-notifications.md), or with [REST APIs](/rest/api/azure/devops/).
 
 
 ## Related articles
@@ -467,4 +490,3 @@ To query for items based on text entered in the History field, see [History and 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
- 

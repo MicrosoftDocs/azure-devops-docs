@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: How Git interacts with case-insensitive filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.technology: devops-code-git
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2018'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2018'
 
 
 # Git case sensitivity
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 The Windows and macOS file systems are case-insensitive (but case-preserving) by default.
 Most Linux filesystems are case-sensitive.

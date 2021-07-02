@@ -43,7 +43,7 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
   
  ![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR")  
   
- The process templates for [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](../excel/bug-reactivations-excel-report.md).  
+ The process templates for [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](/previous-versions/azure/devops/report/excel/bug-reactivations-excel-report).  
   
 ### Select and filter pivot fields  
  ![Pivot Fields for Bug Reactivations Report](media/alm_rpt_pivot_bugreactivations.png "ALM_RPT_Pivot_BugReactivations")  

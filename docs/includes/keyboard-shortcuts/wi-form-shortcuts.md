@@ -6,7 +6,7 @@ ms.topic: include
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use the following keyboard shortcuts when [interacting with a work item form](/azure/devops/boards/work-items/work-item-form-controls). To view the valid shortcuts, enter **?** from within the form.
+You can use the following keyboard shortcuts when [interacting with a work item form](../../boards/work-items/work-item-form-controls.md). To view the valid shortcuts, enter **?** from within the form.
 
 
 ::: moniker-end
@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 :::row:::
@@ -58,16 +58,22 @@ You can use the following keyboard shortcuts when [interacting with a work item 
  
 ::: moniker-end
 
-::: moniker range="azure-devops"  
 
+::: moniker range=">= tfs-2017"
+  
 ## Rich text field shortcuts
+
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2020"
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within the each text box that can be formatted. 
 
 > [!div class="mx-imgBorder"]  
 > ![New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/new-rich-text-editor-toolbar.png) 
 
-You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=![ ](/azure/devops/media/icons/mac-command-symbol.png))
+You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="/azure/devops/media/icons/mac-command-symbol.png" border="false":::)
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
@@ -80,7 +86,6 @@ You can use the following keyboard shortcuts when working in a web browser on on
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 
-## Rich text field shortcuts
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
@@ -90,4 +95,4 @@ You can use the following keyboard shortcuts when working in the editor from a w
 
 **Ctrl + b** = Bold<br/>**Ctrl + c** = Copy text<br/>**Ctrl + i** = Italics<br/>**Ctrl + k** = Insert hyperlink<br/>**Ctrl + s** = Save<br/>**Ctrl + u** = Underline<br/>**Ctrl + v** = Paste text<br/>**Ctrl + y** = Redo<br/>**Ctrl + z** = Undo<br/>**Ctrl + .** = Bullet list<br/>**Ctrl + /** = Numbered list<br/> **CTRL+Spacebar** = Remove formatting  
 
-::: moniker-end  
+::: moniker-end

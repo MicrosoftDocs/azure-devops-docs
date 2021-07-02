@@ -18,7 +18,7 @@ ms.date: 04/16/2020
 
 <a id="set-capacity">  </a>
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="set-capacity">  </a>
 
@@ -37,9 +37,10 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
-* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity.
+* To set capacity, you must be a member of the team.  For details, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team). 
 
 <a id="customize-activity-list">  </a> 
 
@@ -72,17 +73,17 @@ Most teams specify capacity in terms of hours. However, you can also specify it 
 1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work, Sprints, for a team](media/capacity/open-capacity-agile.png)
+	> ![Screenshot showing Open Sprints for a team.](media/capacity/open-capacity-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png) 
+	> ![Screenshot of Choose another team.](media/add-tasks/team-selector-sprints-agile.png) 
 
 1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
+	> ![Screenshot of Choose another sprint.](media/add-tasks/select-specific-sprint-agile.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
@@ -95,19 +96,19 @@ Most teams specify capacity in terms of hours. However, you can also specify it 
 1. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Screenshot of Open the Backlogs page, earlier versions](media/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png) 
+	> ![Screenshot of Choose another team, earlier versions.](media/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
 1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
+	> ![Screenshot of Choose another sprint, earlier versions](media/add-tasks/choose-sprint-standard.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
@@ -121,20 +122,20 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you don't see your team members listed, add them. Choose the ![ ](../../media/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members](media/capacity/add-team-members.png) 
+	> ![Screenshot of Capacity page, Add team members.](media/capacity/add-team-members.png) 
 
 	> [!NOTE]  
 	> The **Add all team members** action retrieved a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing **Add user**.
 
-1. If you need to add other contributors to your project, choose the ![ ](../../media/icons/blue-add-icon.png) **Add user**.  
+1. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
 2. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members](media/capacity/team-members-added-set-team-days-off.png) 
+	> ![Screenshot of setting time off](media/capacity/team-members-added-set-team-days-off.png) 
 
 	In the **Days off for** dialog, select the start and end days during the sprint that the team member or team will take off. 
 
@@ -146,23 +147,23 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Set team capacity, vertical nav](media/capacity/set-team-capacity-agile.png)
+	> ![Screenshot of Set team capacity](media/capacity/set-team-capacity-agile.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. If you don't see your team members listed, add them. Choose the ![ ](media/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members](media/capacity/add-team-members-standard.png)  
+	> ![Screenshot of Add team members, earlier versions](media/capacity/add-team-members-standard.png)  
 
-2. If you need to add other contributors to your project, choose the ![ ](../media/icons/add-light-icon.png) **Add user** icon.  
+2. If you need to add other contributors to your project, choose the :::image type="icon" source="../media/icons/add-light-icon.png" border="false"::: **Add user** icon.  
 
 3. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members](media/capacity/set-team-days-off-standard.png) 
+	> ![Screenshot of Set team days off, earlier versions.](media/capacity/set-team-days-off-standard.png) 
 
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
@@ -174,14 +175,14 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Set team capacity, standard, TFS 2017 and later versions](media/capacity/capacity-planning-set-capacity-tfs-15.png)
+	> ![Screenshot of Set individual capacity, TFS 2017 and later versions.](media/capacity/capacity-planning-set-capacity-tfs-15.png)
 
 	#### TFS 2015.1  
-	![TFS 2015.1, Set Capacity](media/capacity/capacity-planning-set-capacity-tfs-2015.1.png)
+	![Screenshot of Set individual capacity, TFS 2015.1 version.](media/capacity/capacity-planning-set-capacity-tfs-2015.1.png)
 
 	#### TFS 2015, TFS 2013  
 
-	![TFS 2015, Set Capacity](media/capacity/set-sprint1-capacity.png)"   
+	![Screenshot of Set individual capacity, TFS 2015 version.y](media/capacity/set-sprint1-capacity.png)"   
 
 ::: moniker-end  
 
@@ -204,14 +205,14 @@ Notice that only the capacity per day and activity are copied over. Individual a
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Copy capacity, vertical nav](media/capacity/copy-capacity-from-previous-sprint-vert.png)
+> ![Screenshot of Copy capacity.](media/capacity/copy-capacity-from-previous-sprint-vert.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
-![Copy capacity from the previous iteration](media/capacity/copy-capacity-from-previous-sprint.png)
+![Screenshot of Copy capacity from the previous iteration, earlier versions.](media/capacity/copy-capacity-from-previous-sprint.png)
 
 ::: moniker-end
 
@@ -222,7 +223,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![ ](../../media/icons/actions-icon.png) action menu. This will not remove the user from the team.
+To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This will not remove the user from the team.
 
 ::: moniker-end
 
@@ -236,12 +237,12 @@ To remove a user, choose the option from the users ![ ](../../media/icons/action
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Remove user from capacity list](media/capacity/remove-user-agile.png)
+> ![Screenshot of Copy capacity Remove user from capacity list.](media/capacity/remove-user-agile.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-![Capacity planning, Remove a user](media/capacity/capacity-planning-remove-user.png) 
+![Screenshot of Copy capacity Capacity planning, Remove a user, earlier versions.](media/capacity/capacity-planning-remove-user.png) 
 
 ::: moniker-end
 
@@ -255,13 +256,13 @@ You'll also see a roll-up of the remaining work required to complete each requir
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](media/capacity/work-details.png)   
+> ![Screenshot of work details.](media/capacity/work-details.png)   
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Capacity charts](media/capacity/review-capacity.png)  
+![Screenshot of Capacity charts.](media/capacity/review-capacity.png)  
 
 ::: moniker-end
 
@@ -296,7 +297,7 @@ Because individual team members have different sets of skills and duties, you ca
 Here, Jamal divides his time between Deployment and Development. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add activity to capacity tracking for an individual](media/capacity/add-activity-to-capacity-planning.png) 
+> ![Screenshot of Add activity to capacity tracking for an individual.](media/capacity/add-activity-to-capacity-planning.png) 
 
 ::: moniker-end
 
@@ -315,10 +316,10 @@ Here, Jamal divides his time between Deployment and Development.
 If you work on more than one team, you'll want to specify your sprint capacity for each team. For example, both Christie and Raisa split their time between the Web and Phone teams. They therefore allocate 3 hours a day to the Web team, and 3 hours a day to the Phone team.  
 
 > [!div class="mx-imgBorder"]  
-> ![Allocate capacity for team Web](media/capacity/set-capacity-web-team.png)
+> ![Screenshot of Allocate capacity for team Web.](media/capacity/set-capacity-web-team.png)
 <br/>
 > [!div class="mx-imgBorder"]  
-> ![Allocate capacity for team Phone](media/capacity/set-capacity-phone-team.png)
+> ![Screenshot of Allocate capacity for team Phone.](media/capacity/set-capacity-phone-team.png)
  
 If your name isn't listed in the capacity view, you need to be added as a team member. 
 
@@ -337,4 +338,3 @@ Setting capacity and [estimating remaining work for each task](assign-work-sprin
 - [Velocity](../../report/dashboards/team-velocity.md)  
 - [Forecasting](../sprints/forecast.md)    
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-

@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Host Page Navigation | Extensions for Azure DevOps Services
-description: Use host navigation to modify host url hash or reload page
+title: Host Page Navigation | Extensions for Azure DevOps
+description: Use host navigation to modify host URL hash or reload page for Azure DevOps.
 ms.assetid: 9B188838-55FD-98A6-9062-2652C06BF381
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -11,6 +11,8 @@ ms.date: 08/04/2016
 ---
 
 # Host page navigation
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 The HostNavigationService provides APIs for interacting with the parent host frame, including refreshing it and accessing the hash of the URL:
 

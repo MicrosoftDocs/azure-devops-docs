@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.author: kaelli
 author: KathrynEE
-ms.topic: sample
+ms.topic: example-scenario
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/09/2020
 ---
 
 # Query by picklist value
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -64,6 +64,10 @@ Features and stories that address Architectural areas<br/>
 
 </tbody>
 </table>  
+
+
+<a id="fields-table" />
+
 
 ## Fields used to plan and prioritize work  
 
@@ -162,32 +166,29 @@ The following table describes the fields that you can use to plan and prioritize
 1. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
+## More on Backlog Priority or Stack Rank fields
+
+The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
+
+To add the field to the form:
+
+- For an Inherited process, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
+- For an On-premises XML process, add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
+
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
+
+    or, for Scrum:
+
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
+
+
 ## Related articles 
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Work item fields and attributes](../work-items/work-item-fields.md).  
 
-### More on Backlog Priority or Stack Rank fields
-
-The Backlog Priority and Stack Rank fields don't appear on the work item forms. (To learn why, see [Where is the field on the work item form to order the backlog?](https://devblogs.microsoft.com/devops/where-is-the-field-on-the-work-item-form-to-order-the-backlog).
-
-::: moniker range="azure-devops"  
-To add the field to the form, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
-
-::: moniker-end  
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-To add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
-
-```xml
-<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
-```
-
-or, for Scrum
-
-```xml
-<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
-```
-
-::: moniker-end  

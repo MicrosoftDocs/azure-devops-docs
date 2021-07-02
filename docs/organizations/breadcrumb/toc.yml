@@ -7,7 +7,7 @@
     topicHref: /azure/devops/organizations/index
     items:
     - name: User preferences
-      tocHref: /azure/devops/organizations/user-guide/
+      tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/set-your-preferences
     - name: Notifications
       tocHref: /azure/devops/notifications/

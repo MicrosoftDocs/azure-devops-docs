@@ -21,7 +21,7 @@ In this quickstart, you learn how to search the code base of a public projects. 
 
 ## Start a search
 
-To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/shared/start-search-icon.png) start search icon.
+To start your search, choose **Repos** > **Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose ![start search icon](../../project/search/media/shared/start-search-icon.png) **start search**.
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](media/search/code-search-vert.png)
@@ -29,7 +29,7 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
 ## View and work with search results  
 
 1. The search page shows a list of the matching code files. The selected file has all
-   instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
+   instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the upper left.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Code search results example](media/search/code-search-example.png)
@@ -39,7 +39,7 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
 	> [!div class="mx-imgBorder"]  
 	> ![Search from the title bar](media/search/code-search-filters.png)
 
-   * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+   * You can find all instances of "ToDo" comments in your code by selecting `comment:` and typing `todo`.
 
    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
@@ -55,7 +55,7 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
 
 ## Fine-tune your search
 
-1. Narrow your search to a specific repo, branch, file path, or code type by selecting from the drop-down lists at the top of the page.
+1. Narrow your search to a specific repo, branch, file path, or code type by selecting from the drop-down lists at the upper portion of the page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Use drop-down lists to narrow your search](media/search/code-search-code-types.png)
@@ -66,12 +66,12 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
    > ![Use tabs to view history and compare files](media/search/code-search-contents-history-views.png)
    > 
    > Open the search results in a new browser tab from either search box by
-   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   > ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
+   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting
+   > ![start search icon](../../project/search/media/shared/start-search-icon.png) **start search**.
    > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    > to the new browser tab.
 
-3. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+3. Choose the filename link at the upper portion of this column to open the file in a new Code Explorer window.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the file in Code Explorer](media/search/code-search-open-file.png)

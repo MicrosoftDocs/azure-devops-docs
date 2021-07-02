@@ -7,4 +7,5 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-**Azure Pipelines | Azure DevOps Server 2019**
+**Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
+ 

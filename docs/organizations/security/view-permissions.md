@@ -7,33 +7,35 @@ ms.technology: devops-security
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/22/2019
 ---
 
 
 # View permissions for yourself or others
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this quickstart, you learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
+Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [Get started with permissions, access, and security groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+
+
+> [!NOTE]
+> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## Prerequisites
 
 * You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
-> [!NOTE]
-> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## View project-level permissions
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the preview feature, for the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -44,7 +46,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Find a user or group name](media/view-permissions/search-user-name-s154.png) 
+	> ![Screenshot of find a user or group name, preview page.](media/view-permissions/search-user-name-s154.png) 
 
 3. Choose the name you want. The project-level permissions for that user displays. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
 	> [!div class="mx-imgBorder"]  
@@ -70,7 +72,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
     > [!div class="mx-imgBorder"]
-    > ![Find a user or group name](media/view-permissions/search-user-name-vert-nav.png)  
+    > ![Screenshot of find a user or group name, current page.](media/view-permissions/search-user-name-vert-nav.png)  
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
 
@@ -88,7 +90,7 @@ Permissions are set at the collection, project, and object level as described in
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 1. Open **Project Settings**. Choose the ![gear icon](media/icons/gear_icon.png) gear settings icon, and choose **Security**. 
 
@@ -123,27 +125,22 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops"
 
-
-> [!NOTE]   
-> To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
-
-
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
 
-1. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
+2. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Permissions, Project Collection Administrators group, Members tab](media/view-permissions/project-collection-admin-users-s154.png)  
-2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+3. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
@@ -159,7 +156,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-1. Choose the ![ ](/azure/devops/media/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
@@ -199,8 +196,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 <td>
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch](../../repos/git/branch-permissions.md)">Git branch</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Git repository](set-git-tfvc-repository-permissions.md)">Git repository</a></li>
-<li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](set-git-tfvc-repository-permissions.md)">TFVC</a></li>
+<li><a href="../../repos/git/set-git-repository-permissions.md" data-raw-source="[Git repository](../../repos/git/set-git-repository-permissions.md)">Git repository</a></li>
+<li><a href="../../repos/tfvc/set-tfvc-repository-permissions.md" data-raw-source="[TFVC](../../repos/tfvc/set-tfvc-repository-permissions.md)">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Builds](../../pipelines/policies/set-permissions.md)">Builds</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Release pipeline security](../../pipelines/policies/set-permissions.md)">Release pipeline security</a></li>
 <li><a href="../../pipelines/release/approvals/index.md" data-raw-source="[Approvals and approvers](../../pipelines/release/approvals/index.md)">Approvals and approvers</a></li> 
@@ -223,4 +220,9 @@ From the web portal, open the Security dialog for the object whose permissions y
 
 > [!div class="nextstepaction"]
 > [Look up the organization owner or a Project Administrator](lookup-organization-owner-admin.md) 
+
+## Related articles
+
+- [Troubleshoot permissions](troubleshoot-permissions.md)
+- [Permissions and role lookup guide](permissions-lookup-guide.md)
 

@@ -9,7 +9,7 @@ description: In the Sprint 135 Update of Visual Studio Team Services (VSTS), we 
 
 # Visualize release progress – VSTS Sprint 135 Update
 
-In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](/azure/devops/release-notes/2017/jul-14-team-services#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
+In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](../2017/jul-14-team-services.md#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
 
 There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Read about the new features below and head over to VSTS to try them for yourself.
 
@@ -49,11 +49,11 @@ There are a number of other features across Work, Code, Build, Release, and even
 
 ### Import and export Inherited Processes
 
-A new tool to help you import and export an **Inherited Process** is [now available on GitHub](https://github.com/Microsoft/process-migrator). You can now more easily share configurations with others and gain confidence when making more complicated changes by staging them in a test account before making them in your primary account. We decided to open source this tool, which was developed out of one of our Agile teams, because it serves as an example for how to implement some of our newer APIs plus we want to see how it could be extended to better integrate into real workflows. See the [inheritance process model](/azure/devops/work/customize/inheritance-process-model?view=azure-devops) documentation for more information.
+A new tool to help you import and export an **Inherited Process** is [now available on GitHub](https://github.com/Microsoft/process-migrator). You can now more easily share configurations with others and gain confidence when making more complicated changes by staging them in a test account before making them in your primary account. We decided to open source this tool, which was developed out of one of our Agile teams, because it serves as an example for how to implement some of our newer APIs plus we want to see how it could be extended to better integrate into real workflows. See the [inheritance process model](/azure/devops/work/customize/inheritance-process-model?view=azure-devops&preserve-view=true) documentation for more information.
 
 ### Customize column options in the Work Items hub
 
-Column Options, like those in Queries, are now available in the Work Items hub to make organizing your most important work items even more personal. This also enables multi-column sorting if you’d like to sort on more than one column. See the [Work Items hub](/azure/devops/work/work-items/view-add-work-items?view=azure-devops) documentation for more information.
+Column Options, like those in Queries, are now available in the Work Items hub to make organizing your most important work items even more personal. This also enables multi-column sorting if you’d like to sort on more than one column. See the [Work Items hub](/azure/devops/work/work-items/view-add-work-items?view=azure-devops&preserve-view=true) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Column Options in the Work Items hub](media/135_01.png)
@@ -69,7 +69,7 @@ For teams that use pull requests (PRs) and [branch policies](/azure/devops/git/b
 
 ### Favorite a branch from within a pull request
 
-When a viewing a pull request, it’s now easy to mark the source branch as a favorite. Simply click on the star to add it to your list of favorite branches. The branch will then appear under **Mine** on the pull requests screen, saving you the time of searching through the list of **All** branches. See the [manage your branches](/azure/devops/git/manage-your-branches?view=azure-devops) documentation for more information.
+When a viewing a pull request, it’s now easy to mark the source branch as a favorite. Simply click on the star to add it to your list of favorite branches. The branch will then appear under **Mine** on the pull requests screen, saving you the time of searching through the list of **All** branches. See the [manage your branches](/azure/devops/git/manage-your-branches?view=azure-devops&preserve-view=true) documentation for more information.
 
 ## Build and Release
 
@@ -78,7 +78,7 @@ When a viewing a pull request, it’s now easy to mark the source branch as a fa
 > [!IMPORTANT]
 > To use this capability, you must have the **New release progress views** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
-A [new release progress view](https://go.microsoft.com/fwlink/?linkid=874485) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
+A [new release progress view](/azure/devops/pipelines/) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
 
 > [!div class="mx-imgBorder"]
 > ![Release Pipeline view](media/135_03.png)
@@ -94,7 +94,7 @@ Environments are modeled in a way to help understand their status, along with de
 
 #### Pre-deployment and post-deployment
 
-If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon hanging off the right or left side of the environment.
+If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon displayed on the right or left side of the environment.
 
 > [!div class="mx-imgBorder"]
 > ![Release environment actions](media/135_05.png)
@@ -102,7 +102,7 @@ If pre-deployment or post-deployment conditions have been set for an environment
 Graphical views of the gates and a quick action to view logs helps to keep releases moving.
 
 > [!div class="mx-imgBorder"]
-> ![Release environment actions](media/135_05b.png)
+> ![Graphical view and quick actions.](media/135_05b.png)
 
 #### Commits and work items
 
@@ -130,7 +130,7 @@ Results from test execution are also surfaced for each environment. Clicking on 
 > [!div class="mx-imgBorder"]
 > ![Release test results](media/135_08.png)
 
-Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](https://go.microsoft.com/fwlink/?linkid=874486) documentation for more information.
+Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](/azure/devops/pipelines/) documentation for more information.
 
 ### Run inline or file-based Python scripts in your pipeline
 
@@ -144,7 +144,7 @@ The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/package/cond
 
 ### Simplify definitions with multiple agentless tasks
 
-Tasks in an agentless phase are orchestrated by and executed on the server. Agentless phases do not require an agent or any target computers. Unlike agent phases, only one task could be added to each agentless phase in the definitions. This meant multiple phases had to be added when there were more than one agentless task in the process, making the definition bulky. We have relaxed this restriction, which allows you to maintain multiple tasks in an agentless phases. The tasks in the same phase would execute sequentially, just as they do for agent phases. See the [server phases](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml) documentation for more information.
+Tasks in an agentless phase are orchestrated by and executed on the server. Agentless phases do not require an agent or any target computers. Unlike agent phases, only one task could be added to each agentless phase in the definitions. This meant multiple phases had to be added when there were more than one agentless task in the process, making the definition bulky. We have relaxed this restriction, which allows you to maintain multiple tasks in an agentless phases. The tasks in the same phase would execute sequentially, just as they do for agent phases. See the [server phases](/azure/devops/pipelines/process/phases?view=azure-devops&preserve-view=true&tabs=yaml) documentation for more information.
 
 ### Manage limits on self-hosted, concurrent CI/CD jobs
 
@@ -178,12 +178,12 @@ When alternative authentication is setup for your user account, you'll now recei
 2. Registering an SSH key
 3. Enabling basic authentication
 
-See the [authentication](/azure/devops/organizations/security/about-security-identity?view=azure-devops#authentication) documentation for more information.
+See the [authentication](/azure/devops/organizations/security/about-security-identity?view=azure-devops&preserve-view=true#authentication) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![VSTS PAT added email](media/135_02.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

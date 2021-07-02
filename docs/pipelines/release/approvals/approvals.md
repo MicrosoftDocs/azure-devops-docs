@@ -37,7 +37,7 @@ how to define and use approvals, see [Add approvals within a release pipeline](.
 
 You can add multiple approvers for both pre-deployment and post-deployment settings.
 These approvers can be individual users or groups of users. These users must have the
-[View releases](../../policies/permissions.md#release-permissions) permission.
+[View releases](../../policies/permissions.md#set-release-permissions) permission.
 
 
 When a group is specified as an approver, only one of the users in that group needs to approve
@@ -53,7 +53,7 @@ for the deployment to occur or the release to move forward.
 
 The creator of a deployment is considered to be a separate user
 role for deployments. For more details,
-see [Release permissions](../../policies/permissions.md#release-permissions).
+see [Release permissions](../../policies/permissions.md#set-release-permissions).
 Either the release creator or the deployment creator can be restricted from approving deployments.
 
 If no approval is granted within the **Timeout** specified for the approval, the deployment is rejected.
@@ -70,11 +70,9 @@ Use the **Approval policies** to:
      want to require a user to physically approve a deployment to production even though that user has
      previously approved a deployment to a QA stage in the same release pipeline.  
 
-<a name="approve-release"></a>
-
 For information about approving or rejecting deployments, and viewing approval logs, see
 [Create a release](../define-multistage-release-process.md#create-release),
-[View the logs for approvals](../deploy-using-approvals.md#view-approvals), and
+[View the logs for approvals](../deploy-using-approvals.md#set-up-manual-validation), and
 [Monitor and track deployments](../define-multistage-release-process.md#monitor-track).
 
 ### Approval notifications

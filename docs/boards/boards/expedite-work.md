@@ -1,16 +1,16 @@
 ---
-title: Expedite work with swimlanes, use swimlanes to differentiate work items on your Kanban board
+title: Expedite work with swimlanes
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
-description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Use swimlanes to differentiate different types of work you track on the Kanban board in Azure Boards 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 03/15/2019
+ms.date: 09/24/2020
 ---
 
 # Expedite work with swimlanes
@@ -21,10 +21,10 @@ Your Kanban board supports your ability to visualize the flow of work as it move
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
-![Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
+![Conceptual image of Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
 
 > [!TIP]
-> Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../media/icons/Arrow_Up.png)![ ](../media/icons/Arrow_Down.png) up/down arrows. For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
+> Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ↑↓ up/down arrows. For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
@@ -42,16 +42,19 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
 
+> [!TIP]  
+> When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
+
 ::: moniker range=">= tfs-2018"  
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
+> ![Screenshot of Kanban board, Drag items into a swimlane. ](media/expedite/swimlanes-move-item.png)  
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
 
-![Kanban board, Drag items into a swimlane](media/ALM_EW_MoveToNewLane.png) 
+![Screenshot of Kanban board, Drag items into a swimlane, TFS 2017 and earlier versions.](media/ALM_EW_MoveToNewLane.png) 
 
 ::: moniker-end   
 
@@ -60,13 +63,13 @@ You can also focus on a single swimlane by collapsing all other lanes.
 ::: moniker range=">= tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Collapsed swimlanes](media/expedite/collapse-lanes.png)  
+> ![Screenshot of Kanban board, Collapsed swimlanes.](media/expedite/collapse-lanes.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
 
-![Kanban board, Collapsed swimlanes](media/ALM_EW_CollapseLanes.png)
+![Screenshot of Kanban board, Collapsed swimlanes, TFS 2017 and earlier versions.](media/ALM_EW_CollapseLanes.png)
 
 ::: moniker-end   
 
@@ -82,12 +85,12 @@ Once you've identified one or two, add them to your Kanban board.
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
+	> ![Screenshot of gear icon to open board settings for a team.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
-2. Choose **Swimlanes** and then choose the ![](../media/icons/green_plus_icon.png) plus icon and enter the name of the swimlane you want to add.  
+2. Choose **Swimlanes** and then choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of the swimlane you want to add.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board settings dialog, Add a swimlane](media/expedite/settings-swimlanes-add.png)  
@@ -99,7 +102,7 @@ Once you've identified one or two, add them to your Kanban board.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
 
-4. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Remove**. 
+4. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
@@ -113,11 +116,11 @@ Once you've identified one or two, add them to your Kanban board.
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-2. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
+	![Screenshot of Kanban board, open common configuration settings.](media/add-columns-open-settings-ts.png)  
 
-3. Choose **Swimlanes** and then choose the ![](../media/icons/green_plus_icon.png) plus icon and enter the name of the swimlane you want to add.  
+3. Choose **Swimlanes** and then choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of the swimlane you want to add.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board settings dialog, Add a swimlane](media/expedite/settings-swimlanes-add.png)  
@@ -129,7 +132,7 @@ Once you've identified one or two, add them to your Kanban board.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
 
-5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Remove**. 
+5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
@@ -142,11 +145,11 @@ Once you've identified one or two, add them to your Kanban board.
 
 7. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-8. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+8. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png) 
+	![Kanban board, open common configuration settings, TFS 2015 version.](../../boards/boards/media/kanban-card-customize-open-settings.png) 
 
-9. Choose **Swimlanes**, and then choose the ![](../media/icons/add_icon.png) plus icon, and enter the name of the swimlane you want to add.       
+9. Choose **Swimlanes**, and then choose the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus icon, and enter the name of the swimlane you want to add.       
 
    **For TFS 2015.1 and later versions**       
    <img src="media/kanban-board-add-swimlane.png" alt="Kanban board, Add a swimlane" style="border: 1px solid #C3C3C3;" />     
@@ -159,7 +162,7 @@ Once you've identified one or two, add them to your Kanban board.
 10. To reorder your swimlanes, simply grab the lane and move it up or down.   
      <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
 
-11. If you need to delete a lane, first move all items out of the lane. Then, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Delete**.      
+11. If you need to delete a lane, first move all items out of the lane. Then, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete**.      
 
      ![Kanban board settings, Delete a swimlane](media/ALM_EW_DeleteLane.png)
 

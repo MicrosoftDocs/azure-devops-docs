@@ -23,7 +23,7 @@ And below you’ll see the new Test Suite work item opened directly from this vi
 
 ![Test Suite work item opened directly from this view](media/10_14_02.png)
 
-Do note that any changes you make to these work items, including destroy, will be reflected across all the associated test artifacts. You can read more about how these artifacts work together at our Get Started topic [Create a test plan](/azure/devops/manual-test/getting-started/create-a-test-plan?view=azure-devops).
+Do note that any changes you make to these work items, including destroy, will be reflected across all the associated test artifacts. You can read more about how these artifacts work together at our Get Started topic [Create a test plan](/azure/devops/manual-test/getting-started/create-a-test-plan?view=azure-devops&preserve-view=true).
 
 ## Copy and paste query results
 

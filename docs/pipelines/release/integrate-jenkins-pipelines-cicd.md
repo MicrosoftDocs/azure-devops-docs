@@ -57,7 +57,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](../../project/navigation/go-to-service-page.md#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -155,7 +155,7 @@ to your Jenkins Server, you can trigger a release for an Azure pipeline from a J
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) in your Azure DevOps or TFS organization. Jenkins requires this information to access your organization.
    Ensure you keep a copy of the token information for upcoming steps in this section.
 
-1. Install the [Team Foundation Server plugin](https://plugins.jenkins.io/tfs) on your Jenkins server.
+1. Install the [Team Foundation Server plugin](https://www.jenkins.io/doc/pipeline/steps/tfs/) on your Jenkins server.
 
 1. Within your Jenkins project, you will find a new post build action named **Trigger release in TFS/Team Services**.
    Add this action to your project.
@@ -174,4 +174,3 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](../yaml-schema.md)
-

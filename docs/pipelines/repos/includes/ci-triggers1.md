@@ -90,7 +90,6 @@ To clarify this example, let us say that a push `A` to master caused the above p
 ### Paths
 
 You can specify file paths to include or exclude.
-Note that the [wildcard syntax](#wildcards) is different between branches/tags and file paths.
 
 ```yaml
 # specific path build
@@ -101,7 +100,7 @@ trigger:
     - releases/*
   paths:
     include:
-    - docs/*
+    - docs
     exclude:
     - docs/README.md
 ```
@@ -109,12 +108,10 @@ trigger:
 When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
 
 > **Tips:**
+>  * Wild cards are not supported with path filters.
 >  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
 >  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
 >  * The order of path filters doesn't matter.
->  * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
-
-> [!NOTE]
-> You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
-
+>  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+>  * You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
