@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Suspend your work and manage your shelvesets
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 For a variety of reasons, sometimes you need to set aside some or all of your work in progress. Shelvesets are useful when you want to stop work for:
 
@@ -37,7 +35,7 @@ You can move your [pending changes](develop-code-manage-pending-changes.md) to a
 
 **Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Suspend and resume your work from the My Work page
 
@@ -97,7 +95,7 @@ When you are ready to resume the work, go the **Suspended & Shelved Work** secti
     ![Find shelvesets](media/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
 	> [!TIP]
-	> If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
+	> If you don't know the name of the owner, you can type **\*** to list shelvesets for all users.
 
 4.  A list of shelvesets appears in the **Results** list. You can type a filter to reduce the size of the list.
 

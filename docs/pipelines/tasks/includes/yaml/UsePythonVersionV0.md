@@ -1,7 +1,5 @@
 ---
 ms.topic: include
-author: vtbassmatt
-ms.author: macoope
 ms.date: 04/25/2019
 ms.prod: devops
 ms.technology: devops-cicd-tasks

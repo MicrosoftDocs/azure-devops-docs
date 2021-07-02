@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-*Library* is a collection of includes_ build and release assets for a project.
+*Library* is a collection of build and release assets for a project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.
 The **Library** tab can be accessed directly in Azure Pipelines and Team Foundation Server (TFS).
 

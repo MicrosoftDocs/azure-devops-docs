@@ -47,7 +47,7 @@ You will:
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest).
+* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest&preserve-view=true).
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
@@ -56,7 +56,7 @@ You will:
 * An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
-  see [Create a Jenkins master on an Azure Virtual Machine](/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
+  see [Create a Jenkins main on an Azure Virtual Machine](/azure/developer/jenkins/configure-on-linux-vm).  Also, the following Jenkins plugins must be installed:
     * **VS Team Services Continuous Deployment** plugin.  You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
     * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
@@ -117,7 +117,7 @@ You will find the **pom.xml** file in your repository in the folder named **comp
     </plugin>
     ```
 
-1. Select **Commit** and choose to commit these changes to the **master** branch.
+1. Select **Commit** and choose to commit these changes to the **main** branch.
 
 ## Configure the sample app to include a YAML file used for deploying to your AKS cluster
 The YAML file contains deployment settings for pulling the docker image from the ACR.  Update this file to include the name of your ACR:
@@ -167,7 +167,7 @@ The YAML file contains deployment settings for pulling the docker image from the
       type: LoadBalancer
     ```
 
-1. Select **Commit** and choose to commit these changes to the **master** branch.
+1. Select **Commit** and choose to commit these changes to the **main** branch.
 
 ## Configure Jenkins credentials to connect to Azure Pipelines
 
@@ -372,17 +372,17 @@ The second task deploys to the AKS cluster:
 
 ## Test the CI/CD pipeline with a pull request
 
-You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your master branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to the Azure App Service.
+You can initiate the CI build and the subsequent CD deployment to Azure by completing a pull request into your main branch.  The Jenkins build will initiate due to the service hook you set up earlier, and the Jenkins post build action will initiate an Azure Pipelines release which will deploy your app to the Azure App Service.
 
 1. Navigate to **Code** in Azure Repos, then select your **repository**.
 
-1. Select **New branch** to create a branch from the master branch.  Enter a **name** for your new branch, and then select **Create branch**.
+1. Select **New branch** to create a branch from the main branch.  Enter a **name** for your new branch, and then select **Create branch**.
 
 1. Select your new branch, then navigate to the **complete/src/main/java/hello/Application.java** file.
 
 1. Select **Edit**, then make a change to the message displayed in the **home()** method and **Commit** your changes.
 
-1. Select **Pull Requests**, then select **New Pull Request**.  Select **Create** to issue a pull request from your branch to master.
+1. Select **Pull Requests**, then select **New Pull Request**.  Select **Create** to issue a pull request from your branch to main.
 
 1. Select **Approve**, then select **Complete**, then **Complete Merge**.  This code change will initiate a CI build in Jenkins.
 

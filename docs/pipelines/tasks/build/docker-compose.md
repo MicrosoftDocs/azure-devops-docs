@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/06/2020
+ms.date: 04/09/2021
 monikerRange: '> tfs-2018'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
+Use this task to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
 
 ::: moniker range="> tfs-2018"
@@ -26,7 +26,7 @@ This task can be used with a Docker registry or an Azure Container Registry.
 |--- |--- |
 |`containerregistrytype` <br/>(Container registry type)|(Optional) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection. <br/>Argument aliases: `azureSubscription`|
-|`azureContainerRegistry` <br/>(Azure container registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
+|`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
 
 This YAML example specifies the inputs for Azure Container Registry:
 
@@ -71,7 +71,7 @@ is the name of the Docker registry service connection for the container registry
 |`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry.|
 |`dockerComposeFile` <br/>(Docker Compose File)|(Required) Path to the primary Docker Compose file to use. <br/>Default value: **/docker-compose.yml|
 |`additionalDockerComposeFiles` <br/>(Additional Docker Compose Files)|(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.|
-|`dockerComposeFileArgs` <br/>(Environment Variables) | (Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the \| operator in YAML to indicate that newlines should be preserved. <br/>Example:  dockerComposeFileArgs: |
+|`dockerComposeFileArgs` <br/>(Environment Variables) | (Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the \| operator in YAML to indicate that newlines should be preserved. <br/>Example:  `dockerComposeFileArgs: DOCKER_BUILD_SOURCE=$(CustomVar)` |
 | `projectName` <br/>(Project Name) |(Optional) Project name used for default naming of images and containers. <br/>Default value: $(Build.Repository.Name)|
 |`qualifyImageNames` <br/>(Qualify Image Names) | (Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified. <br/>Default value: true|
 |`action` <br/>(Action)|(Required) Select a Docker Compose action. <br/>Default value: Run a Docker Compose command|
@@ -92,6 +92,10 @@ This YAML example builds the image where the image name is qualified on the basi
     projectName: $(Build.Repository.Name)
     qualifyImageNames: true
     additionalImageTags: $(Build.BuildId)
+    dockerComposeFileArgs: |
+      firstArg=$(firstArg)
+      secondArg=$(secondArg)
+
 ```
 
 ## Push service images
@@ -187,7 +191,7 @@ This YAML example runs a specific service:
     projectName: $(Build.Repository.Name)
     qualifyImageNames: true
     serviceName: myhealth.web
-    ports: 80
+    ports: 80:80
     detached: true
 ```
 
@@ -309,7 +313,7 @@ This YAML example runs a docker Compose command:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

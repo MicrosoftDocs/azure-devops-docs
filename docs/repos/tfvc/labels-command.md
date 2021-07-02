@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Labels Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays the list of labels in the server for Team Foundation version control.
 
@@ -48,9 +46,9 @@ The **labels** command displays information about labels in the Team Foundation 
 
 By default, the results display the label name, owner and creation date for each label. If the format is changed to "detailed," comments and the list of files and folders associated with each label are also displayed.
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all of the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all of the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays the list of labels created by user "jasonj."
 
@@ -70,20 +68,10 @@ The following example displays all labels in the Team Foundation version control
 c:\projects> tf labels build*
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
-
-[Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
-
-[Unlabel Command](unlabel-command.md)
-
-#### Concepts
-
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Label Command (Team Foundation Version Control)](label-command-team-foundation-version-control.md)
+- [Unlabel Command](unlabel-command.md)
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

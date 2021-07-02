@@ -7,17 +7,17 @@ ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 05/06/2019
 ---
 
-# Process templates  
+# Process templates overview  
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A process template defines the objects and processes available to you when you create a project. It contains a structured set of XML definition files. Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  
 
-For an overview of the default process templates available to you, see [Choose a process](/azure/devops/boards/work-items/guidance/choose-process?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference//breadcrumb/toc.json).
+For an overview of the default process templates available to you, see [Choose a process](../../boards/work-items/guidance/choose-process.md?bc=%252fazure%252fdevops%252freference%252f%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json).
 
 For on-premises deployments and Azure DevOps Services, you can [upload/download process templates](../../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json). 
 

@@ -17,16 +17,13 @@ monikerRange: 'azure-devops'
 
 Create a public project, make an existing project public, or work in a public project to support your development of software applications.  
 
-An Azure DevOps Services public project provides support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open source software. Users aren't required to sign in to gain read-only access to many of the services.  
-
-> [!NOTE]
-> Azure DevOps Services public projects is in preview. To learn more about the road map, see the [Azure DevOps Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/) blog post.
+An Azure DevOps Services public project provides support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open-source software. Users aren't required to sign in to gain read-only access to many of the services.  
 
 ## Public versus private projects
 
-Projects in Azure DevOps provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within an organization in Azure DevOps.  
+Projects provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within an organization in Azure DevOps.  
 
-Users that aren't signed into the service have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services.
+Users that aren't signed into the service have read-only access to public projects on Azure DevOps. Private projects require users to be granted access to the project and signed in to access the services.
 
 ## Supported services  
 
@@ -36,11 +33,11 @@ Non-members of a public project have read-only access to a limited set of servic
 * [View and filter work items](view-filter-work-items-public.md)
 * [View a project page or dashboard](view-project-dashboard-public.md)
 * [View the project Wiki](view-wiki-public.md) 
-* Perform semantic search of the [code](code-search-public.md) or [work items](work-item-search-public.md) 
+* Do semantic search of the [code](code-search-public.md) or [work items](work-item-search-public.md) 
 
-For additional information, see [Differences and limitations for non-members of a public project](feature-differences.md).
+For more information, see [Differences and limitations for non-members of a public project](feature-differences.md).
 
-To contribute to a project by adding or modifying code, work items, pipelines, or more, a user must be [added as a member of the project](invite-users-public.md). For an overview of services contributors have access to, see [What do I get with Azure DevOps?](../../user-guide/services.md)
+To add or modify code, work items, pipelines, or more, [add the user as a member of the project](invite-users-public.md). For an overview of services contributors have access to, see [What do I get with Azure DevOps?](../../user-guide/services.md)
 
 ## Get started with a public project  
 
@@ -53,17 +50,15 @@ To contribute to a project by adding or modifying code, work items, pipelines, o
 * [Share your code](../../repos/git/gitquickstart.md)
 
 **To define pipelines:** 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+* [Build OSS repositories](../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252forganizations%252fpublic%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fpublic%252ftoc.json)
 
 ## Migrate a private project to public
 
-As the creator of a project, you can [change your project's visibility from public to private and vice-versa](make-project-public.md). When you choose to make a project public, all of its contents are included. You cannot choose specific repositories, area paths, or build folders to keep private. 
+As the creator of a project, you can [change your project's visibility from public to private and the other way around](make-project-public.md). When you choose to make a project public, all of its contents are included. You can't choose specific repositories, area paths, or build folders to keep private. 
 
-Prior to changing the visibility of your private project, we recommend you review [Private-to-public migration checklist](migration-checklist.md).
+Before you change the visibility of your private project, we recommend you review [Private-to-public migration checklist](migration-checklist.md).
 
 ## Related articles
 
 - [Differences and limitations for non-members of a public project](feature-differences.md)
 - [Public projects glossary](glossary-public.md)
-
-

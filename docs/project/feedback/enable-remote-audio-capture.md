@@ -15,13 +15,14 @@ ms.date: 02/22/2017
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To record audio, you must have an audio recording device configured on your computer, or on a remote machine if you access Microsoft Feedback Client, Test Runner, or Exploratory Testing from a remote device.  
-  
-To record audio as part of a feedback or testing session on a remote machine that is running Microsoft Feedback Client, Test Runner, or Exploratory Testing window, you must configure audio redirection settings on the remote machine. You must also enable record from this computer when you connect to the remote machine. You can perform this procedure only if your local computer is running Windows 7 or Windows Server 2008 R2.  
+
+To record audio as part of a feedback or testing session on a remote machine that is running Microsoft Feedback Client, Test Runner, or Exploratory Testing window, you must configure audio redirection settings on the remote machine. You must also enable record from this computer when you connect to the remote machine. 
   
 > [!IMPORTANT]  
 >  We recommend that you open Microsoft Feedback Client on your local computer. Redirection will decrease audio quality. Microsoft Feedback Client does not require you to record audio as part of the feedback session.  
   
 ## To set a default microphone on your local computer  
+
  To record audio from your local computer, you must set a microphone device as the default device.  
   
 1.  Choose **Start, Control Panel**.  
@@ -41,7 +42,7 @@ To record audio as part of a feedback or testing session on a remote machine tha
   
      `HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\fDisableAudioCapture`  
   
-     For more information about how to set values of registry keys, see the following page on the Microsoft website: [How to add, modify, or delete registry subkeys and values by using a registration entries (.reg) file](https://go.microsoft.com/fwlink/?LinkId=227171).  
+     For more information about how to set values of registry keys, see the following page on the Microsoft website: [How to add, modify, or delete registry subkeys and values by using a registration entries (.reg) file](/project/add-user-accounts-in-project-server).  
   
 2.  To connect to the remote machine, choose **Start**, choose **Run**, enter `mstsc`, and then choose the **OK** button.  
   
@@ -62,6 +63,7 @@ To record audio as part of a feedback or testing session on a remote machine tha
      You must restart you client in order for it to register the audio settings.  
   
 ## Related articles
- [Exploratory testing](../../test/perform-exploratory-tests.md)   
- [Run your tests](../../test/run-manual-tests.md)   
- [Provide feedback using the Microsoft Feedback Manager](give-feedback.md)
+
+- [Exploratory testing](../../test/perform-exploratory-tests.md)   
+- [Run your tests](../../test/run-manual-tests.md)   
+- [Provide feedback using the Microsoft Feedback Manager](give-feedback.md)

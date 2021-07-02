@@ -3,9 +3,11 @@ title: FIELD (Definition) element reference
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 06/16/2017
 ---
 
@@ -74,20 +76,20 @@ You use the **FIELD** (Definition) element to define a work item field and speci
 |-------------|-----------------|  
 |[ALLOWEDVALUES](define-pick-lists.md)|Optional. Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.|  
 |[ALLOWEXISTINGVALUE](define-pick-lists.md)|Optional. Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.|  
-|[CANNOTLOSEVALUE](apply-rule-work-item-field.md)|Optional. Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.|  
+|[CANNOTLOSEVALUE](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.|  
 |[COPY](define-default-copy-value-field.md)|Optional. Specifies another field that contains a value to be copied into the current field.|  
 |[DEFAULT](define-default-copy-value-field.md)|Optional. Defines a default value for the field.|  
-|[EMPTY](apply-rule-work-item-field.md)|Optional. Defines the field as empty.|  
-|[FROZEN](apply-rule-work-item-field.md)|Optional. Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.|  
-|[HELPTEXT](apply-rule-work-item-field.md)|Optional. Defines the text displayed in the ToolTip for the field.|  
+|[EMPTY](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as empty.|  
+|[FROZEN](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.|  
+|[HELPTEXT](../../organizations/settings/work/rule-reference.md)|Optional. Defines the text displayed in the ToolTip for the field.|  
 |[MATCH](apply-pattern-matching-to-string-field.md)|Optional. Defines a pattern for the field that the field value must match.|  
-|[NOTSAMEAS](apply-rule-work-item-field.md)|Optional. Specifies another field, the value of which cannot be identical to the value of the current field.|  
+|[NOTSAMEAS](../../organizations/settings/work/rule-reference.md)|Optional. Specifies another field, the value of which cannot be identical to the value of the current field.|  
 |[PROHIBITEDVALUES](define-pick-lists.md)|Optional. Defines a list of prohibited values for the field.|  
-|[READONLY](apply-rule-work-item-field.md)|Optional. Defines the field as read-only.|  
-|[REQUIRED](apply-rule-work-item-field.md)|Optional. Defines the field as required.|  
+|[READONLY](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as read-only.|  
+|[REQUIRED](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as required.|  
 |[SERVERDEFAULT](define-default-copy-value-field.md)|Optional. Specifies a server component that will provide the value for the field.|  
 |[SUGGESTEDVALUES](define-pick-lists.md)|Optional. Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.|  
-|[VALIDUSER](apply-rule-work-item-field.md)|Optional. Specifies that the list of allowed values must consist only of valid users of the system.|  
+|[VALIDUSER](../../organizations/settings/work/rule-reference.md)|Optional. Specifies that the list of allowed values must consist only of valid users of the system.|  
 |[WHEN](assign-conditional-based-values-and-rules.md)|Optional. Specifies one or more rules to apply to the current field when another field has a specific value.|  
 |[WHENCHANGED](assign-conditional-based-values-and-rules.md)|Optional. Applies one or more rules to the current field when a specific field's value is changed.|  
 |[WHENNOT](assign-conditional-based-values-and-rules.md)|Optional. Applies one or more rules to the current field when another field does not have a specific value.|  
@@ -123,7 +125,7 @@ You use the **FIELD** (Definition) element to define a work item field and speci
   
 8.  To understand how fields are used to support queries, reports, and work item tracking, see [Modify a field or add a custom field](../add-modify-field.md).  
   
-9. For an overview of how to apply constraints or conditions on a `FIELD` by using child elements, see [Apply a field rule](apply-rule-work-item-field.md).  
+9. For an overview of how to apply constraints or conditions on a `FIELD` by using child elements, see [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md).  
   
 ## Example  
   

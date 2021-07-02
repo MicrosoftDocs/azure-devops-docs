@@ -1,14 +1,14 @@
 ---
 title: Add and share storyboard shapes
 titleSuffix: TFS
-description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to Microsoft PowerPoint
+description: Add and share storyboard shapes with members of your team  using the  PowerPoint Storyboarding add-in to Microsoft PowerPoint
 ms.technology: devops-agile
 ms.assetid: c8f3136e-a560-4ea5-83fd-602f89c74155
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= tfs-2018'
-ms.date: 09/06/2019
+ms.date: 05/18/2020
 ---
 
 # Add and share storyboard shapes
@@ -20,8 +20,8 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 > [!IMPORTANT]  
 > The Visual Studio Gallery for PowerPoint Storyboarding is deprecated. You can still create your own shapes and share them, however there is no longer a central place to upload or download storyboard shapes. Also, starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Office Project and Storyboarding with PowerPoint.  
 
-
 ## Share shapes that you create with your team  
+
  At any time, you can export custom storyboard shapes that you've created and share them with your team. You can create storyboard shapes with any combination of PowerPoint shapes, screenshots, inserted images, or storyboard shapes.  
   
 1.  Add each of your storyboard shapes to the **My Shapes** category and name it. If you don't see the Storyboarding tab, you don't have the Team Foundation add-in for PowerPoint Storyboarding. See step 2 in the previous procedure.   
@@ -33,22 +33,7 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
   
 2.  Export your shapes to a storyboard shapes file (.sbsx) and share it with other team members who use PowerPoint Storyboarding.  
      ![Export your custom shapes](media/alm_sb_shp_export.png "ALM_SB_SHP_Export")  
- 
-<!--- 
-## You can share your shapes with the Visual Studio community, too  
- Sell or share your custom storyboard shapes through the Visual Studio gallery.  
-  
-1.  Open the [Visual Studio Extensions Upload](https://visualstudiogallery.msdn.microsoft.com/site/upload) page.  
-  
-     ![Agree to contribution terms and contribute](media/alm_sb_shp_contribute.png "ALM_SB_SHP_Contribute")  
-  
-2.  Specify the storyboard shapes extension type.  
-  
-     ![Upload a storyboard shapes file](media/alm_sb_shp_upload.png "ALM_SB_SHP_Upload")  
-  
-3.  Complete the next two steps and add your contribution.  
 
- In addition, you can author storyboard shapes with custom resize logic using the Storyboard Shapes Authoring Tool. To get this tool, download [Visual Studio Team Foundation Server Power Tools](https://go.microsoft.com/fwlink/?LinkId=248625).  
--->  
 ## Related articles  
+
 - [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).

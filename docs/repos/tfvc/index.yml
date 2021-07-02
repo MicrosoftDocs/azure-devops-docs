@@ -1,0 +1,57 @@
+### YamlMime:Landing
+
+title: Team Foundation Version Control (TFVC) Documentation
+summary: Collaborate on code development using TFVC centralized version control
+
+metadata:
+  title: Team Foundation Version Control (TFVC) Documentation
+  description: Collaborate on code development using TFVC centralized version control.
+  ms.prod: devops 
+  ms.technology: azure-repos
+  ms.topic: landing-page 
+  ms.author: sdanie
+  author: steved0x
+  ms.date: 06/02/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About TFVC
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is TFVC?
+            url: ./what-is-tfvc.md
+          - text: Compare Git and TFVC
+            url: ./comparison-git-tfvc.md
+  - title: Get started with TFVC
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Share your code using Visual Studio
+            url: ./share-your-code-in-tfvc-vs.md
+      - linkListType: how-to-guide
+        links:
+          - text: Suspend work and manage shelvesets
+            url: ./suspend-your-work-manage-your-shelvesets.md
+          - text: Use Source Control Explorer to manage files
+            url: ./use-source-control-explorer-manage-files-under-version-control.md
+          - text: Get code reviewed
+            url: ./get-code-reviewed-vs.md
+          - text: Create work spaces
+            url: ./create-work-workspaces.md
+          - text: Branch folders and files
+            url: ./branch-folders-files.md
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: TFVC command reference
+            url: ./use-team-foundation-version-control-commands.md
+          - text: Azure DevOps CLI
+            url: /cli/azure/repos
+          - text: TFVC REST API
+            url: /rest/api/azure/devops/tfvc/

@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download build artifacts.
+Use this task to download build artifacts.
 
 ::: moniker range="> tfs-2018"
 
@@ -39,7 +39,7 @@ Use this task in a build or release pipeline to download build artifacts.
 |`tags`<br/>Build tags|(Optional) A comma-delimited list of tags. Only builds with these tags will be returned.|
 |`downloadType`<br/>Download type|(Required) Choose whether to download a single artifact or all artifacts of a specific build. <br/>Default value: `single`|
 |`artifactName`<br/>Artifact name|(Required) The name of the artifact to download|
-|`itemPattern`<br/>Matching pattern|(Optional) Specify files to be downloaded as multi-line minimatch pattern. [More Information](https://aka.ms/minimatchexamples).<br/> The default pattern  will download all files across all artifacts in the build if the **`Specific files`** option is selected. To download all files within an artifact drop use **`drop/`** <br/>Default value: `\*\*`|
+|`itemPattern`<br/>Matching pattern|(Optional) Specify files to be downloaded as multi-line minimatch pattern. [More Information](../file-matching-patterns.md).<br/> The default pattern  will download all files across all artifacts in the build if the **`Specific files`** option is selected. To download all files within an artifact drop use **`drop/`** <br/>Default value: `\*\*`|
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
 

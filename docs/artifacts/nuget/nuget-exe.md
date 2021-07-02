@@ -13,14 +13,14 @@ monikerRange: '>= tfs-2018'
 **Azure DevOps Services**
 
 > [!NOTE]
-> This page covers interactive scenarios. In Azure Pipelines, use the NuGet step to [restore](/azure/devops/pipelines/packages/nuget-restore) and [publish](/azure/devops/pipelines/artifacts/nuget) packages. 
+> This page covers interactive scenarios. In Azure Pipelines, use the NuGet step to [restore](../../pipelines/packages/nuget-restore.md) and [publish](../../pipelines/artifacts/nuget.md) packages. 
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
 ## Add a feed to NuGet 4.8.2 or later
 NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which automatically acquires feed credentials when needed. For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 2. Select **Connect to feed**:
 
@@ -59,14 +59,19 @@ NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which au
 
 Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
-::: moniker range="azure-devops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 ## Add a feed to NuGet 2
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 2. Select **Connect to feed**:
    
@@ -95,12 +100,11 @@ Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
 ::: moniker range="<= tfs-2018"
 
-## Add a feed to NuGet 2
 NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 2. Select **Connect to feed**:
 

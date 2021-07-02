@@ -81,7 +81,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
    ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
 
@@ -103,7 +103,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 [!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

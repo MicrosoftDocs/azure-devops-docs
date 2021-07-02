@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Permission Command
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Permission Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Modifies the user access control list (ACL) and displays authorization settings for an item under version control.
 
@@ -54,11 +52,11 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>Itemspec</em></p></td>
-<td><p>Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses <em>itemspecs</em> to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -120,10 +118,10 @@ You can specify more than one <em>Itemspec</em> argument.
 </tr>
 <tr>
 <td><p><strong>/global</strong></p></td>
-<td><p>Used to view or assign any Team Foundation server permission.</p>
+<td><p>Used to view or assign a TFVC collection-level permission.</p>
 <p>To assign permissions, use the <strong>/allow</strong>, <strong>/deny</strong>, or <strong>/remove</strong> options.</p>
 <p>The argument <em>itemspec</em> is not required. If it is listed, it is ignored.</p>
-<p>When used to view the Team Foundation server permissions, the five permissions listed are as follows:</p>
+<p>When used to view a TFVC collection-level, the five permissions listed are as follows:</p>
 <ul>
 <li><p>tf: AdminShelvesets</p></li>
 <li><p>tf: AdminWorkspaces</p></li>
@@ -131,7 +129,7 @@ You can specify more than one <em>Itemspec</em> argument.
 <li><p>tf: AdminConfiguration</p></li>
 <li><p>tf: AdminConnections</p></li>
 </ul>
-<p>For more information about permissions, see <a href="../../organizations/security/permissions.md">Team Foundation Server Permissions</a>.</p></td>
+<p>For more information about permissions, see <a href="../../organizations/security/permissions.md#administer-shelved-changes">Permissions and groups, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/login</strong></p></td>
@@ -139,11 +137,16 @@ You can specify more than one <em>Itemspec</em> argument.
 </tr>
 </tbody>
 </table>
+
+
 ## Remarks
+
 You can use the <strong>permission</strong> command (or alternatively its shortcut, <strong>perm</strong>) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+
 ## Examples
+
 The following example displays the Team Foundation access control lists (ACLs) for 314.cs.
 
 ```
@@ -186,12 +189,7 @@ The following example denies user somealias the ability to make pending changes 
 c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs
 ```
 
-## See Also
+## Related articles 
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+- [Command-Line Syntax (version control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Tf Command-Line utility commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

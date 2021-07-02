@@ -3,7 +3,7 @@ title: Share Packages Publicly
 description: Use Azure Artifacts to share NuGet, npm, Maven, or Python packages with anonymous users in with public feeds
 ms.technology: devops-artifacts
 ms.reviewer: amullans
-ms.date: 07/07/2019
+ms.date: 04/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -88,6 +88,9 @@ As long as your project is public, anonymous and guest users will be greeted by 
 You can also [share individual packages with badges](../package-badges.md) which look like the example below. 
 
 ![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](../media/package-badge.png)
+
+> [!IMPORTANT]
+> Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Pre-released versions will not be displayed in badges, instead the badge will show the latest release version.
 
 
 

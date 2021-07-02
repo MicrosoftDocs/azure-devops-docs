@@ -117,7 +117,7 @@ See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) 
 
 ### New software updates available on hosted VS2017 agents
 
-Software updates added to the Hosted VS2017 pool includes: Visual Studio 2017 version 15.3.5, Azure Service Fabric SDK 2.7, and Docker version 17.10.0. See the [VSTS Hosted VS2017 image page](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md) for more information.
+Software updates added to the Hosted VS2017 pool includes: Visual Studio 2017 version 15.3.5, Azure Service Fabric SDK 2.7, and Docker version 17.10.0. See the [VSTS Hosted VS2017 image page](https://github.com/20shivangi/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md) for more information.
 
 ## Release
 

@@ -2,13 +2,13 @@
 title: Restore organization after it's removed, deleted
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization Owner permissions.
+description: Learn how to recover your organization and data up to 90 days after being deleted, done with organization Owner permissions.
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2019
+ms.date: 04/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -20,16 +20,16 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 ## Prerequisites
 
-* An organization deleted within the last 28 days.[
-* Organization Owner permissions to restore your organization. ](../security/lookup-organization-owner-admin.md)How do I find the organization Owner?
+* An organization deleted within the last 28 days.
+* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
 ## Recover organization
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.yml#ChooseOrgAcctMSAcct)
 
-2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom, and then select **Restore**.
+2. On your profile page, go to the lower *Organizations Pending Deletion* section, and then select **Restore**.
 
    ![Restore your deleted organization](media/shared/visual-studio-profile-page.png)
 
@@ -41,13 +41,14 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 
-4. After you restore your organization, do the following:
+4. After you restore your organization, do the following tasks:
 
-   * If billing was set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
+   * If billing was previously set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
    * If your organization was connected to Azure Active Directory for authenticating user access, you don't have to reconnect it.
 
 ## Related articles
 
-* [Need help?](faq-configure-customize-organization.md#get-support)
 * [Delete your organization from Azure DevOps](delete-your-organization.md)
-
+* [Create a new organization](create-organization.md)
+* [Change organization owner](change-organization-ownership.md)
+* [Change organization data region](change-organization-location.md)

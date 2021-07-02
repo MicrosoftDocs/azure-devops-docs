@@ -9,12 +9,12 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2019
+ms.date: 04/26/2021 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -26,16 +26,16 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 
 ## Table of contents (TOC) for Wiki pages
 
-To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag is added and there's at least one heading on the page.
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag gets added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
 > ![Table of contents](media/toc_sample.png)
 
 The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
-Only Markdown headings are considered for TOC (HTML heading tags aren't).
+Only Markdown headings are considered for TOC (HTML heading tags aren't considered).
 
-All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
-For example: Adding bold and italics to a heading text renders the TOC as follows.
+All HTML and Markdown tags get stripped from the headings while adding it inside the TOC block.
+For example, adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
 > ![Tags for TOC](media/toc_tags.png)
@@ -47,15 +47,15 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add Mermaid diagrams to a Wiki page
 
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
-2.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+- [Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+- [Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -70,14 +70,15 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
-> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
-> Current version of Mermaid used is 8.2.6 
+> Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> 
+> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-## Embed Videos in a Wiki page
+## Embed videos in a Wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
 
@@ -96,7 +97,7 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 ## YAML tags
 
-Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
+Any file that contains a YAML block in a Wiki gets processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic data types, lists, and objects as values. The syntax is supported in wiki, code file preview.
 
 Basic example:
 
@@ -131,7 +132,7 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
-You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+You can also use the **toolbar** and the **query selector** to embed the query results in a wiki page.
 
 > ![Query Results Icon](media/query_selector_icon.png)
 >
@@ -149,7 +150,7 @@ You can also select "@mention" from the edit toolbar.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Page visits for wiki pages
 
@@ -188,10 +189,22 @@ Enter the pound sign (`#`), and then enter a work item ID.
 
 In wiki pages, you can also create rich content using HTML tags.
 
+> [!TIP]
+> You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.
+
+
+ ```HTML
+<p>
+  
+  [A markdown link](https://microsoft.com) 
+</p>
+```
+
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+
 
 **Example - Embedded video**
 

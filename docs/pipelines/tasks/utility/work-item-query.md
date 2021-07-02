@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
 
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 

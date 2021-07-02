@@ -17,7 +17,7 @@ ms.date: 08/31/2017
 
 You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
 
-The Microsoft Feedback Client is installed automatically with the latest versions of Visual Studio, or you can download for free from the following page on the Microsoft website: [Microsoft Feedback Client Download](https://www.microsoft.com/download/details.aspx?id=48142). 
+You can install the install the Test & Feedback extension from the Marketplace, [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). 
 
 ## Initiate a feedback session
 
@@ -58,7 +58,7 @@ The feedback tool opens to the Start page. Launch the application by following t
 
 1. From the Start page, choose the **Application** link to open, start, or install the application for which you have been requested to provide feedback.
 
-3. Follow any additional instructions provided to login or access the application.
+3. Follow any additional instructions provided to sign in or access the application.
 
 	For example, you would choose the `http://staging.fabrikamfiber.com/customer.aspx` link and then enter the user name and password provided. 
 
@@ -85,7 +85,7 @@ On the **Provide** page, one or more items appear for you to provide feedback. F
 
 You can change settings defined for the audio device and annotation tool at any time. For more information, see Change the audio device or annotation tool.  
 
-1. **To start recording:** Choose one of the icons:**  Screen & Voice<strong>, **Screen only**, or  **Voice only</strong>.   
+1. **To start recording:** Choose one of the icons:  **Screen & Voice**, **Screen only**, or  **Voice only**.   
 
 	> [!IMPORTANT]   
 	> **Security Note:** Unless you stop recording, all steps that you take and remarks that you make while recording screen and voice will be recorded. If you provide sensitive data such as user names and passwords, you will capture this information in the recording. However, you can always delete a recording by deleting the image for the recording session that appears in the feedback tool's text box. 

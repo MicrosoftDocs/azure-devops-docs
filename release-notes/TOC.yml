@@ -3,539 +3,810 @@
 - name: Azure DevOps Services
   expanded: true
   items:
-  - name: 2020
-    expanded: true
-    items:
-    - name: March 16
-      href: 2020/sprint-166-update.md
-    - name: February 17
-      href: 2020/sprint-165-update.md
-    - name: January 28
-      href: 2020/sprint-164-update.md
-    - name: January 13
-      href: 2020/sprint-163-update.md 
-  - name: 2019
-    expanded: true
-    items:
-    - name: December 16
-      href: 2019/sprint-162-update.md 
-    - name: December 2
-      href: 2019/sprint-161-update.md 
-    - name: November 4
-      href: 2019/sprint-160-update.md 
-    - name: October 14
-      href: 2019/sprint-159-update.md 
-    - name: September 23
-      href: 2019/sprint-158-update.md 
-    - name: September 3
-      href: 2019/sprint-157-update.md 
-    - name: August 12
-      href: 2019/sprint-156-update.md  
-    - name: July 22
-      href: 2019/sprint-155-update.md  
-    - name: July 1
-      href: 2019/sprint-154-update.md      
-    - name: June 10
-      href: 2019/sprint-153-update.md
-    - name: May 20
-      href: 2019/sprint-152-update.md
-    - name: May 13
-      href: 2019/build-may.md
-    - name: April 30
-      href: 2019/sprint-151-update.md
-    - name: April 8
-      href: 2019/sprint-150-update.md
-    - name: March 19
-      href: 2019/sprint-149-update.md
-    - name: February 25
-      href: 2019/sprint-148-update.md
-    - name: February 4
-      href: 2019/sprint-147-update.md
-    - name: January 14
-      href: 2019/sprint-146-update.md
-  - name:  Archive
-    items:
-    - name:  2018
+    - name: 2021
+      expanded: true
       items:
-      - name: December 4
-        href: 2018/sprint-144-update.md
-      - name: November 12  
-        href: 2018/sprint-143-update.md
-      - name: October 22  
-        href: 2018/sprint-142-update.md
-      - name: October 1  
-        href: 2018/sprint-141-update.md
-      - name: September 20  
-        href: 2018/sprint-140-update.md
-      - name: September 10  
-        href: 2018/sep-10-azure-devops-launch.md
-      - name: August 21  
-        href: 2018/aug-21-vsts.md
-      - name: August 3  
-        href: 2018/aug-03-vsts.md
-      - name: July 10  
-        href: 2018/jul-10-vsts.md
-      - name: June 19  
-        href: 2018/jun-19-vsts.md
-      - name: May 30  
-        href: 2018/may-30-vsts.md
-      - name: May 7  
-        href: 2018/may-07-vsts.md
-      - name: April 16  
-        href: 2018/apr-16-vsts.md
-      - name: April 3  
-        href: 2018/apr-03-vsts.md
-      - name: March 5  
-        href: 2018/mar-05-vsts.md
-      - name: February 14  
-        href: 2018/feb-14-vsts.md
-      - name: January 24  
-        href: 2018/jan-24-vsts.md
-    - name: 2017
+        - name: June 17
+          href: 2021/sprint-188-update.md
+        - name: May 26
+          href: 2021/sprint-187-update.md
+        - name: May 4
+          href: 2021/sprint-186-update.md
+        - name: April 13
+          href: 2021/sprint-185-update.md
+        - name: March 23
+          href: 2021/sprint-184-update.md
+        - name: March 03
+          href: 2021/sprint-183-update.md
+        - name: February 04
+          href: 2021/sprint-182-update.md
+        - name: January 14
+          href: 2021/sprint-181-update.md
+    - name: 2020
+      expanded: false
       items:
-        - name: December 11  
-          href: 2017/dec-11-vsts.md
-        - name: November 28  
-          href: 2017/nov-28-vsts.md
-        - name: October 30  
-          href: 2017/oct-30-vsts.md
-        - name: October 6  
-          href: 2017/oct-06-vsts.md
-        - name: September 15  
-          href: 2017/sep-15-team-services.md
-        - name: August 28  
-          href: 2017/aug-28-team-services.md
-        - name: August 4  
-          href: 2017/aug-04-team-services.md
-        - name: July 14  
-          href: 2017/jul-14-team-services.md
-        - name: June 22  
-          href: 2017/jun-22-team-services.md
-        - name: June 1  
-          href: 2017/jun-01-team-services.md
-        - name: May 11  
-          href: 2017/may-11-team-services.md
-        - name: April 19  
-          href: 2017/apr-19-team-services.md
-        - name: March 29  
-          href: 2017/mar-29-team-services.md
-        - name: March 8  
-          href: 2017/mar-08-team-services.md
-        - name: February 15  
-          href: 2017/feb-15-team-services.md
-        - name: January 25  
-          href: 2017/jan-25-team-services.md
-        - name: January 5  
-          href: 2017/jan-05-team-services.md
-    - name: 2016
+        - name: December 03
+          href: 2020/sprint-179-update.md
+        - name: November 12
+          href: 2020/sprint-178-update.md
+        - name: October 21
+          href: 2020/sprint-177-update.md
+        - name: October 01
+          href: 2020/sprint-176-update.md
+        - name: September 10
+          href: 2020/sprint-175-update.md
+        - name: August 24
+          href: 2020/sprint-174-update.md
+        - name: August 03
+          href: 2020/sprint-173-update.md
+        - name: July 09
+          href: 2020/sprint-172-update.md
+        - name: June 18
+          href: 2020/sprint-171-update.md
+        - name: June 01
+          href: 2020/sprint-170-update.md
+        - name: May 11
+          href: 2020/sprint-169-update.md
+        - name: May 4
+          href: 2020/sprint-168-update.md
+        - name: April 13
+          href: 2020/sprint-167-update.md
+        - name: March 16
+          href: 2020/sprint-166-update.md
+        - name: February 17
+          href: 2020/sprint-165-update.md
+        - name: January 28
+          href: 2020/sprint-164-update.md
+        - name: January 13
+          href: 2020/sprint-163-update.md
+    - name: 2019
+      expanded: false
       items:
-        - name: November 23  
-          href: 2016/nov-23-team-services.md
-        - name: November 16  
-          href: 2016/nov-16-team-services.md
-        - name: November 2  
-          href: 2016/nov-02-team-services.md
-        - name: October 12  
-          href: 2016/oct-12-team-services.md
-        - name: September 21  
-          href: 2016/sep-21-team-services.md
-        - name: September 2  
-          href: 2016/sep-02-team-services.md
-        - name: August 17  
-          href: 2016/aug-17-team-services.md
-        - name: July 29  
-          href: 2016/jul-29-team-services.md
-        - name: July 7  
-          href: 2016/jul-07-team-services.md
-        - name: June 17  
-          href: 2016/jun-17-team-services.md
-        - name: June 1  
-          href: 2016/jun-01-team-services.md
-        - name: May 6  
-          href: 2016/may-06-team-services.md
-        - name: April 13  
-          href: 2016/apr-13-team-services.md
-        - name: March 24  
-          href: 2016/mar-24-team-services.md
-        - name: March 3  
-          href: 2016/mar-03-team-services.md
-        - name: February 16  
-          href: 2016/feb-16-team-services.md
-        - name: January 25  
-          href: 2016/jan-25-team-services.md
-    - name: 2015
+        - name: December 16
+          href: 2019/sprint-162-update.md
+        - name: December 2
+          href: 2019/sprint-161-update.md
+        - name: November 4
+          href: 2019/sprint-160-update.md
+        - name: October 14
+          href: 2019/sprint-159-update.md
+        - name: September 23
+          href: 2019/sprint-158-update.md
+        - name: September 3
+          href: 2019/sprint-157-update.md
+        - name: August 12
+          href: 2019/sprint-156-update.md
+        - name: July 22
+          href: 2019/sprint-155-update.md
+        - name: July 1
+          href: 2019/sprint-154-update.md
+        - name: June 10
+          href: 2019/sprint-153-update.md
+        - name: May 20
+          href: 2019/sprint-152-update.md
+        - name: May 13
+          href: 2019/build-may.md
+        - name: April 30
+          href: 2019/sprint-151-update.md
+        - name: April 8
+          href: 2019/sprint-150-update.md
+        - name: March 19
+          href: 2019/sprint-149-update.md
+        - name: February 25
+          href: 2019/sprint-148-update.md
+        - name: February 4
+          href: 2019/sprint-147-update.md
+        - name: January 14
+          href: 2019/sprint-146-update.md
+    - name: Archive
       items:
-        - name: December 10  
-          href: 2015/dec-10-team-services.md
-        - name: November 24  
-          href: 2015/nov-24-team-services.md
-        - name: November 18  
-          href: 2015/nov-18-team-services.md
-        - name: October 30  
-          href: 2015/oct-30-team-services.md
-        - name: October 8  
-          href: 2015/oct-08-team-services.md
-        - name: September 18  
-          href: 2015/sep-18-team-services.md
-        - name: August 26  
-          href: 2015/aug-26-team-services.md
-        - name: August 7  
-          href: 2015/aug-07-team-services.md
-        - name: July 17  
-          href: 2015/jul-17-team-services.md
-        - name: July 7  
-          href: 2015/jul-07-team-services.md
-        - name: June 3  
-          href: 2015/jun-03-team-services.md
-        - name: May 15  
-          href: 2015/may-15-team-services.md
-        - name: May 11  
-          href: 2015/may-11-team-services.md
-        - name: April 27  
-          href: 2015/apr-27-team-services.md
-        - name: April 24  
-          href: 2015/apr-24-team-services.md
-        - name: April 22  
-          href: 2015/apr-22-team-services.md
-        - name: April 10  
-          href: 2015/apr-10-team-services.md
-        - name: March 27  
-          href: 2015/mar-27-team-services.md
-        - name: March 10  
-          href: 2015/mar-10-team-services.md
-        - name: February 18  
-          href: 2015/feb-18-team-services.md
-        - name: January 27  
-          href: 2015/jan-27-team-services.md
-    - name: 2014
+        - name: 2018
+          items:
+            - name: December 4
+              href: 2018/sprint-144-update.md
+            - name: November 12
+              href: 2018/sprint-143-update.md
+            - name: October 21
+              href: 2018/sprint-142-update.md
+            - name: October 1
+              href: 2018/sprint-141-update.md
+            - name: September 20
+              href: 2018/sprint-140-update.md
+            - name: September 10
+              href: 2018/sep-10-azure-devops-launch.md
+            - name: August 21
+              href: 2018/aug-21-vsts.md
+            - name: August 3
+              href: 2018/aug-03-vsts.md
+            - name: July 10
+              href: 2018/jul-10-vsts.md
+            - name: June 19
+              href: 2018/jun-19-vsts.md
+            - name: May 30
+              href: 2018/may-30-vsts.md
+            - name: May 7
+              href: 2018/may-07-vsts.md
+            - name: April 16
+              href: 2018/apr-16-vsts.md
+            - name: April 3
+              href: 2018/apr-03-vsts.md
+            - name: March 5
+              href: 2018/mar-05-vsts.md
+            - name: February 14
+              href: 2018/feb-14-vsts.md
+            - name: January 24
+              href: 2018/jan-24-vsts.md
+        - name: 2017
+          items:
+            - name: December 11
+              href: 2017/dec-11-vsts.md
+            - name: November 28
+              href: 2017/nov-28-vsts.md
+            - name: October 30
+              href: 2017/oct-30-vsts.md
+            - name: October 6
+              href: 2017/oct-06-vsts.md
+            - name: September 15
+              href: 2017/sep-15-team-services.md
+            - name: August 28
+              href: 2017/aug-28-team-services.md
+            - name: August 4
+              href: 2017/aug-04-team-services.md
+            - name: July 14
+              href: 2017/jul-14-team-services.md
+            - name: June 22
+              href: 2017/jun-22-team-services.md
+            - name: June 1
+              href: 2017/jun-01-team-services.md
+            - name: May 11
+              href: 2017/may-11-team-services.md
+            - name: April 19
+              href: 2017/apr-19-team-services.md
+            - name: March 29
+              href: 2017/mar-29-team-services.md
+            - name: March 8
+              href: 2017/mar-08-team-services.md
+            - name: February 15
+              href: 2017/feb-15-team-services.md
+            - name: January 25
+              href: 2017/jan-25-team-services.md
+            - name: January 5
+              href: 2017/jan-05-team-services.md
+        - name: 2016
+          items:
+            - name: November 23
+              href: 2016/nov-23-team-services.md
+            - name: November 16
+              href: 2016/nov-16-team-services.md
+            - name: November 2
+              href: 2016/nov-02-team-services.md
+            - name: October 12
+              href: 2016/oct-12-team-services.md
+            - name: September 21
+              href: 2016/sep-21-team-services.md
+            - name: September 2
+              href: 2016/sep-02-team-services.md
+            - name: August 17
+              href: 2016/aug-17-team-services.md
+            - name: July 29
+              href: 2016/jul-29-team-services.md
+            - name: July 7
+              href: 2016/jul-07-team-services.md
+            - name: June 17
+              href: 2016/jun-17-team-services.md
+            - name: June 1
+              href: 2016/jun-01-team-services.md
+            - name: May 6
+              href: 2016/may-06-team-services.md
+            - name: April 13
+              href: 2016/apr-13-team-services.md
+            - name: March 24
+              href: 2016/mar-24-team-services.md
+            - name: March 3
+              href: 2016/mar-03-team-services.md
+            - name: February 16
+              href: 2016/feb-16-team-services.md
+            - name: January 25
+              href: 2016/jan-25-team-services.md
+        - name: 2015
+          items:
+            - name: December 10
+              href: 2015/dec-10-team-services.md
+            - name: November 24
+              href: 2015/nov-24-team-services.md
+            - name: November 18
+              href: 2015/nov-18-team-services.md
+            - name: October 30
+              href: 2015/oct-30-team-services.md
+            - name: October 8
+              href: 2015/oct-08-team-services.md
+            - name: September 18
+              href: 2015/sep-18-team-services.md
+            - name: August 26
+              href: 2015/aug-26-team-services.md
+            - name: August 7
+              href: 2015/aug-07-team-services.md
+            - name: July 17
+              href: 2015/jul-17-team-services.md
+            - name: July 7
+              href: 2015/jul-07-team-services.md
+            - name: June 3
+              href: 2015/jun-03-team-services.md
+            - name: May 15
+              href: 2015/may-15-team-services.md
+            - name: May 11
+              href: 2015/may-11-team-services.md
+            - name: April 27
+              href: 2015/apr-27-team-services.md
+            - name: April 24
+              href: 2015/apr-24-team-services.md
+            - name: April 22
+              href: 2015/apr-22-team-services.md
+            - name: April 10
+              href: 2015/apr-10-team-services.md
+            - name: March 27
+              href: 2015/mar-27-team-services.md
+            - name: March 10
+              href: 2015/mar-10-team-services.md
+            - name: February 18
+              href: 2015/feb-18-team-services.md
+            - name: January 27
+              href: 2015/jan-27-team-services.md
+        - name: 2014
+          items:
+            - name: December 17
+              href: 2014/dec-17-team-services.md
+            - name: December 2
+              href: 2014/dec-02-team-services.md
+            - name: November 4
+              href: 2014/nov-04-team-services.md
+            - name: October 28
+              href: 2014/oct-28-team-services.md
+            - name: October 14
+              href: 2014/oct-14-team-services.md
+            - name: September 23
+              href: 2014/sep-23-team-services.md
+            - name: September 4
+              href: 2014/sep-04-team-services.md
+            - name: August 27
+              href: 2014/aug-27-team-services.md
+            - name: August 18
+              href: 2014/aug-18-team-services.md
+            - name: July 21
+              href: 2014/jul-21-team-services.md
+            - name: July 1
+              href: 2014/jul-01-team-services.md
+            - name: June 10
+              href: 2014/jun-10-team-services.md
+            - name: May 20
+              href: 2014/may-20-team-services.md
+            - name: May 12
+              href: 2014/may-12-team-services.md
+            - name: April 3
+              href: 2014/apr-03-team-services.md
+            - name: March 18
+              href: 2014/mar-18-team-services.md
+            - name: February 28
+              href: 2014/feb-28-team-services.md
+            - name: February 10
+              href: 2014/feb-10-team-services.md
+            - name: January 22
+              href: 2014/jan-22-team-services.md
+        - name: 2013
+          items:
+            - name: December 11
+              href: 2013/dec-11-team-services.md
+            - name: November 13
+              href: 2013/nov-13-team-services.md
+            - name: November 8
+              href: 2013/nov-08-team-services.md
+            - name: October 21
+              href: 2013/oct-21-team-services.md
+            - name: October 17
+              href: 2013/oct-17-team-services.md
+            - name: September 30
+              href: 2013/sep-30-team-services.md
+            - name: September 9
+              href: 2013/sep-09-team-services.md
+            - name: August 19
+              href: 2013/aug-19-team-services.md
+            - name: July 29
+              href: 2013/jul-29-team-services.md
+            - name: July 10
+              href: 2013/jul-10-team-services.md
+            - name: June 26
+              href: 2013/jun-26-team-services.md
+            - name: June 19
+              href: 2013/jun-19-team-services.md
+            - name: June 3
+              href: 2013/jun-03-team-services.md
+            - name: May 28
+              href: 2013/may-28-team-services.md
+            - name: May 13
+              href: 2013/may-13-team-services.md
+            - name: April 25
+              href: 2013/apr-25-team-services.md
+            - name: March 22
+              href: 2013/mar-22-team-services.md
+            - name: March 4
+              href: 2013/mar-04-team-services.md
+            - name: February 11
+              href: 2013/feb-11-team-services.md
+            - name: January 30
+              href: 2013/jan-30-team-services.md
+            - name: January 21
+              href: 2013/jan-21-team-services.md
+            - name: January 9
+              href: 2013/jan-09-team-services.md
+            - name: January 7
+              href: 2013/jan-07-team-services.md
+        - name: 2012
+          items:
+            - name: December 10
+              href: 2012/dec-10-team-services.md
+            - name: November 19
+              href: 2012/nov-19-team-services.md
+            - name: October 31
+              href: 2012/oct-31-team-services.md
+            - name: October 29
+              href: 2012/oct-29-team-services.md
+            - name: October 8
+              href: 2012/oct-08-team-services.md
+            - name: September 17
+              href: 2012/sep-17-team-services.md
+            - name: August 27
+              href: 2012/aug-27-team-services.md
+            - name: August 13
+              href: 2012/aug-13-team-services.md
+            - name: August 6
+              href: 2012/aug-06-team-services.md
+- name: Azure DevOps Server
+  href: /azure/devops/server/release-notes/azuredevops2020?view=azure-devops
+- name: Documentation updates
+  items:
+    - name: What's new
+      href: docswhatsnew/index.yml
+    - name: 2021
+      expanded: true
       items:
-        - name: December 17  
-          href: 2014/dec-17-team-services.md
-        - name: December 2  
-          href: 2014/dec-02-team-services.md
-        - name: November 4  
-          href: 2014/nov-04-team-services.md
-        - name: October 28  
-          href: 2014/oct-28-team-services.md
-        - name: October 14  
-          href: 2014/oct-14-team-services.md
-        - name: September 23  
-          href: 2014/sep-23-team-services.md
-        - name: September 4  
-          href: 2014/sep-04-team-services.md
-        - name: August 27  
-          href: 2014/aug-27-team-services.md
-        - name: August 18  
-          href: 2014/aug-18-team-services.md
-        - name: July 21  
-          href: 2014/jul-21-team-services.md
-        - name: July 1  
-          href: 2014/jul-01-team-services.md
-        - name: June 10  
-          href: 2014/jun-10-team-services.md
-        - name: May 20  
-          href: 2014/may-20-team-services.md
-        - name: May 12  
-          href: 2014/may-12-team-services.md
-        - name: April 3  
-          href: 2014/apr-03-team-services.md
-        - name: March 18  
-          href: 2014/mar-18-team-services.md
-        - name: February 28  
-          href: 2014/feb-28-team-services.md
-        - name: February 10  
-          href: 2014/feb-10-team-services.md
-        - name: January 22  
-          href: 2014/jan-22-team-services.md
-    - name: 2013
+      - name: May 2021
+        href: docswhatsnew/azure-devops-docs-whats-new.md
+      - name: April 2021
+        href: docswhatsnew/azure-devops-docs-2021-04.md
+      - name: March 2021
+        href: docswhatsnew/azure-devops-docs-2021-03.md
+      - name: February 2021
+        href: docswhatsnew/azure-devops-docs-2021-02.md
+      - name: January 2021
+        href: docswhatsnew/azure-devops-docs-2021-01.md
+    - name: 2020
       items:
-        - name: December 11  
-          href: 2013/dec-11-team-services.md
-        - name: November 13  
-          href: 2013/nov-13-team-services.md
-        - name: November 8  
-          href: 2013/nov-08-team-services.md
-        - name: October 21  
-          href: 2013/oct-21-team-services.md
-        - name: October 17  
-          href: 2013/oct-17-team-services.md
-        - name: September 30  
-          href: 2013/sep-30-team-services.md
-        - name: September 9  
-          href: 2013/sep-09-team-services.md
-        - name: August 19  
-          href: 2013/aug-19-team-services.md
-        - name: July 29  
-          href: 2013/jul-29-team-services.md
-        - name: July 10  
-          href: 2013/jul-10-team-services.md
-        - name: June 26  
-          href: 2013/jun-26-team-services.md
-        - name: June 19  
-          href: 2013/jun-19-team-services.md
-        - name: June 3  
-          href: 2013/jun-03-team-services.md
-        - name: May 28  
-          href: 2013/may-28-team-services.md
-        - name: May 13  
-          href: 2013/may-13-team-services.md
-        - name: April 25  
-          href: 2013/apr-25-team-services.md
-        - name: March 22  
-          href: 2013/mar-22-team-services.md
-        - name: March 4  
-          href: 2013/mar-04-team-services.md
-        - name: February 11  
-          href: 2013/feb-11-team-services.md
-        - name: January 30  
-          href: 2013/jan-30-team-services.md
-        - name: January 21  
-          href: 2013/jan-21-team-services.md
-        - name: January 9  
-          href: 2013/jan-09-team-services.md
-        - name: January 7  
-          href: 2013/jan-07-team-services.md
-    - name: 2012
-      items:
-        - name: December 10  
-          href: 2012/dec-10-team-services.md
-        - name: November 19  
-          href: 2012/nov-19-team-services.md
-        - name: October 31  
-          href: 2012/oct-31-team-services.md
-        - name: October 29  
-          href: 2012/oct-29-team-services.md
-        - name: October 8  
-          href: 2012/oct-08-team-services.md
-        - name: September 17  
-          href: 2012/sep-17-team-services.md
-        - name: August 27  
-          href: 2012/aug-27-team-services.md
-        - name: August 13  
-          href: 2012/aug-13-team-services.md
-        - name: August 6  
-          href: 2012/aug-06-team-services.md
-- name: Azure DevOps Server  
-  href: https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019?view=azure-devops
+      - name: December
+        href: docswhatsnew/azure-devops-docs-2020-12.md
+      - name: November
+        href: docswhatsnew/azure-devops-docs-2020-11.md
+      - name: October
+        href: docswhatsnew/azure-devops-docs-2020-10.md
+      - name: September
+        href: docswhatsnew/azure-devops-docs-2020-09.md
+      - name: August
+        href: docswhatsnew/azure-devops-docs-2020-08.md
+      - name: July
+        href: docswhatsnew/azure-devops-docs-2020-07.md
+      - name: June
+        href: docswhatsnew/azure-devops-docs-2020-06.md
+      - name: May
+        href: docswhatsnew/azure-devops-docs-2020-05.md
+      - name: April
+        href: docswhatsnew/azure-devops-docs-2020-04.md
+      - name: March
+        href: docswhatsnew/azure-devops-docs-2020-03.md
+      - name: February
+        href: docswhatsnew/azure-devops-docs-2020-02.md
+      - name: January
+        href: docswhatsnew/azure-devops-docs-2020-01.md
 - name: Azure Boards
+  expanded: false
   items:
-    - name: October 14
-      href: 2019/boards/sprint-159-update.md
-    - name: September 23
-      href: 2019/boards/sprint-158-update.md
-    - name: September 3
-      href: 2019/boards/sprint-157-update.md
-    - name: August 12
-      href: 2019/boards/sprint-156-update.md
-    - name: July 22
-      href: 2019/boards/sprint-155-update.md
-    - name: July 1 
-      href: 2019/boards/sprint-154-update.md
-    - name: June 10  
-      href: 2019/boards/sprint-153-update.md
-    - name: April 30  
-      href: 2019/boards/sprint-151-update.md
-    - name: April 8  
-      href: 2019/boards/sprint-150-update.md
-    - name: March 19  
-      href: 2019/boards/sprint-149-update.md
-    - name: February 25  
-      href: 2019/boards/sprint-148-update.md
-    - name: February 4  
-      href: 2019/boards/sprint-147-update.md
-    - name: January 14  
-      href: 2019/boards/sprint-146-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: May 26
+          href: 2021/boards/sprint-187-update.md
+        - name: May 5
+          href: 2021/boards/sprint-186-update.md
+        - name: April 13
+          href: 2021/boards/sprint-185-update.md
+        - name: February 04
+          href: 2021/boards/sprint-182-update.md
+        - name: January 14
+          href: 2021/boards/sprint-181-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: November 12
+          href: 2020/boards/sprint-178-update.md
+        - name: October 21
+          href: 2020/boards/sprint-177-update.md
+        - name: October 01
+          href: 2020/boards/sprint-176-update.md
+        - name: September 10
+          href: 2020/boards/sprint-175-update.md
+        - name: August 24
+          href: 2020/boards/sprint-174-update.md
+        - name: August 03
+          href: 2020/boards/sprint-173-update.md
+        - name: July 09
+          href: 2020/boards/sprint-172-update.md
+        - name: June 18
+          href: 2020/boards/sprint-171-update.md
+        - name: June 01
+          href: 2020/boards/sprint-170-update.md
+        - name: April 13
+          href: 2020/boards/sprint-167-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: October 14
+          href: 2019/boards/sprint-159-update.md
+        - name: September 23
+          href: 2019/boards/sprint-158-update.md
+        - name: September 3
+          href: 2019/boards/sprint-157-update.md
+        - name: August 12
+          href: 2019/boards/sprint-156-update.md
+        - name: July 22
+          href: 2019/boards/sprint-155-update.md
+        - name: July 1
+          href: 2019/boards/sprint-154-update.md
+        - name: June 10
+          href: 2019/boards/sprint-153-update.md
+        - name: April 30
+          href: 2019/boards/sprint-151-update.md
+        - name: April 8
+          href: 2019/boards/sprint-150-update.md
+        - name: March 19
+          href: 2019/boards/sprint-149-update.md
+        - name: February 25
+          href: 2019/boards/sprint-148-update.md
+        - name: February 4
+          href: 2019/boards/sprint-147-update.md
+        - name: January 14
+          href: 2019/boards/sprint-146-update.md
 - name: Azure Repos
+  expanded: false
   items:
-    - name: February 17
-      href: 2020/repos/sprint-165-update.md 
-    - name: December 16
-      href: 2019/repos/sprint-162-update.md 
-    - name: December 2
-      href: 2019/repos/sprint-161-update.md 
-    - name: November 4
-      href: 2019/repos/sprint-160-update.md 
-    - name: October 14
-      href: 2019/repos/sprint-159-update.md 
-    - name: September 23
-      href: 2019/repos/sprint-158-update.md 
-    - name: September 3
-      href: 2019/repos/sprint-157-update.md 
-    - name: August 12
-      href: 2019/repos/sprint-156-update.md 
-    - name: July 22
-      href: 2019/repos/sprint-155-update.md  
-    - name: July 1
-      href: 2019/repos/sprint-154-update.md
-    - name: June 10  
-      href: 2019/repos/sprint-153-update.md
-    - name: May 20  
-      href: 2019/repos/sprint-152-update.md
-    - name: April 30  
-      href: 2019/repos/sprint-151-update.md
-    - name: April 8  
-      href: 2019/repos/sprint-150-update.md
-    - name: February 4  
-      href: 2019/repos/sprint-147-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: June 17
+          href: 2021/repos/sprint-188-update.md
+        - name: March 23
+          href: 2021/repos/sprint-184-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: December 03
+          href: 2020/repos/sprint-179-update.md
+        - name: October 21
+          href: 2020/repos/sprint-177-update.md      
+        - name: August 03
+          href: 2020/repos/sprint-173-update.md
+        - name: May 4
+          href: 2020/repos/sprint-168-update.md
+        - name: April 13
+          href: 2020/repos/sprint-167-update.md
+        - name: February 17
+          href: 2020/repos/sprint-165-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: December 16
+          href: 2019/repos/sprint-162-update.md
+        - name: December 2
+          href: 2019/repos/sprint-161-update.md
+        - name: November 4
+          href: 2019/repos/sprint-160-update.md
+        - name: October 14
+          href: 2019/repos/sprint-159-update.md
+        - name: September 23
+          href: 2019/repos/sprint-158-update.md
+        - name: September 3
+          href: 2019/repos/sprint-157-update.md
+        - name: August 12
+          href: 2019/repos/sprint-156-update.md
+        - name: July 22
+          href: 2019/repos/sprint-155-update.md
+        - name: July 1
+          href: 2019/repos/sprint-154-update.md
+        - name: June 10
+          href: 2019/repos/sprint-153-update.md
+        - name: May 20
+          href: 2019/repos/sprint-152-update.md
+        - name: April 30
+          href: 2019/repos/sprint-151-update.md
+        - name: April 8 
+          href: 2019/repos/sprint-150-update.md
+        - name: February 4
+          href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
+  expanded: false
   items:
-    - name: March 16
-      href: 2020/pipelines/sprint-166-update.md
-    - name: February 17
-      href: 2020/pipelines/sprint-165-update.md
-    - name: January 27
-      href: 2020/pipelines/sprint-164-update.md
-    - name: January 13
-      href: 2020/pipelines/sprint-163-update.md
-    - name: December 16
-      href: 2019/pipelines/sprint-162-update.md
-    - name: December 2
-      href: 2019/pipelines/sprint-161-update.md
-    - name: November 4
-      href: 2019/pipelines/sprint-160-update.md
-    - name: October 14
-      href: 2019/pipelines/sprint-159-update.md
-    - name: September 23
-      href: 2019/pipelines/sprint-158-update.md
-    - name: September 3
-      href: 2019/pipelines/sprint-157-update.md
-    - name: August 12
-      href: 2019/pipelines/sprint-156-update.md
-    - name: July 22
-      href: 2019/pipelines/sprint-155-update.md
-    - name: July 1
-      href: 2019/pipelines/sprint-154-update.md
-    - name: June 10  
-      href: 2019/pipelines/sprint-153-update.md
-    - name: May 20  
-      href: 2019/pipelines/sprint-152-update.md
-    - name: May 13  
-      href: 2019/pipelines/build-may.md
-    - name: April 30  
-      href: 2019/pipelines/sprint-151-update.md
-    - name: April 8  
-      href: 2019/pipelines/sprint-150-update.md
-    - name: March 19  
-      href: 2019/pipelines/sprint-149-update.md
-    - name: February 25  
-      href: 2019/pipelines/sprint-148-update.md
-    - name: February 4  
-      href: 2019/pipelines/sprint-147-update.md
-    - name: January 14  
-      href: 2019/pipelines/sprint-146-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: June 17
+          href: 2021/pipelines/sprint-188-update.md
+        - name: May 26
+          href: 2021/pipelines/sprint-187-update.md
+        - name: May 5
+          href: 2021/pipelines/sprint-186-update.md
+        - name: March 23
+          href: 2021/pipelines/sprint-184-update.md
+        - name: March 03
+          href: 2021/pipelines/sprint-183-update.md
+        - name: February 04
+          href: 2021/pipelines/sprint-182-update.md
+        - name: January 14
+          href: 2021/pipelines/sprint-181-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: December 03
+          href: 2020/pipelines/sprint-179-update.md
+        - name: November 12
+          href: 2020/pipelines/sprint-178-update.md
+        - name: October 21
+          href: 2020/pipelines/sprint-177-update.md
+        - name: October 01
+          href: 2020/pipelines/sprint-176-update.md
+        - name: September 10
+          href: 2020/pipelines/sprint-175-update.md
+        - name: August 24
+          href: 2020/pipelines/sprint-174-update.md
+        - name: August 03
+          href: 2020/pipelines/sprint-173-update.md
+        - name: July 09
+          href: 2020/pipelines/sprint-172-update.md
+        - name: June 18
+          href: 2020/pipelines/sprint-171-update.md
+        - name: June 01
+          href: 2020/pipelines/sprint-170-update.md
+        - name: May 11
+          href: 2020/pipelines/sprint-169-update.md
+        - name: May 4
+          href: 2020/pipelines/sprint-168-update.md
+        - name: April 13
+          href: 2020/pipelines/sprint-167-update.md
+        - name: March 16
+          href: 2020/pipelines/sprint-166-update.md
+        - name: February 17
+          href: 2020/pipelines/sprint-165-update.md
+        - name: January 27
+          href: 2020/pipelines/sprint-164-update.md
+        - name: January 13
+          href: 2020/pipelines/sprint-163-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: December 16
+          href: 2019/pipelines/sprint-162-update.md
+        - name: December 2
+          href: 2019/pipelines/sprint-161-update.md
+        - name: November 4
+          href: 2019/pipelines/sprint-160-update.md
+        - name: October 14
+          href: 2019/pipelines/sprint-159-update.md
+        - name: September 23
+          href: 2019/pipelines/sprint-158-update.md
+        - name: September 3
+          href: 2019/pipelines/sprint-157-update.md
+        - name: August 12
+          href: 2019/pipelines/sprint-156-update.md
+        - name: July 22
+          href: 2019/pipelines/sprint-155-update.md
+        - name: July 1
+          href: 2019/pipelines/sprint-154-update.md
+        - name: June 10
+          href: 2019/pipelines/sprint-153-update.md
+        - name: May 20
+          href: 2019/pipelines/sprint-152-update.md
+        - name: May 13
+          href: 2019/pipelines/build-may.md
+        - name: April 30
+          href: 2019/pipelines/sprint-151-update.md
+        - name: April 8
+          href: 2019/pipelines/sprint-150-update.md
+        - name: March 19
+          href: 2019/pipelines/sprint-149-update.md
+        - name: February 25
+          href: 2019/pipelines/sprint-148-update.md
+        - name: February 4
+          href: 2019/pipelines/sprint-147-update.md
+        - name: January 14
+          href: 2019/pipelines/sprint-146-update.md
 - name: Azure Test Plans
+  expanded: false
   items:
-    - name: September 23
-      href: 2019/testplans/sprint-158-update.md
-    - name: August 12
-      href: 2019/testplans/sprint-156-update.md
-    - name: July 1
-      href: 2019/testplans/sprint-154-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: November 12
+          href: 2020/testplans/sprint-178-update.md
+        - name: September 10
+          href: 2020/testplans/sprint-175-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: September 23
+          href: 2019/testplans/sprint-158-update.md
+        - name: August 12
+          href: 2019/testplans/sprint-156-update.md
+        - name: July 1
+          href: 2019/testplans/sprint-154-update.md
 - name: Azure Artifacts
+  expanded: false
   items:
-    - name: November 4
-      href: 2019/artifacts/sprint-160-update.md
-    - name: September 3
-      href: 2019/artifacts/sprint-157-update.md
-    - name: August 12
-      href: 2019/artifacts/sprint-156-update.md
-    - name: July 22
-      href: 2019/artifacts/sprint-155-update.md
-    - name: July 1
-      href: 2019/artifacts/sprint-154-update.md
-    - name: June 10  
-      href: 2019/artifacts/sprint-153-update.md
-    - name: May 20  
-      href: 2019/artifacts/sprint-152-update.md
-    - name: May 13  
-      href: 2019/artifacts/build-may.md
-    - name: March 19  
-      href: 2019/artifacts/sprint-149-update.md
-    - name: February 25  
-      href: 2019/artifacts/sprint-148-update.md
-    - name: February 4  
-      href: 2019/artifacts/sprint-147-update.md
-    - name: January 14  
-      href: 2019/artifacts/sprint-146-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: May 5
+          href: 2021/artifacts/sprint-186-update.md
+        - name: March 03
+          href: 2021/artifacts/sprint-183-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: August 24
+          href: 2020/artifacts/sprint-174-update.md
+        - name: July 09
+          href: 2020/artifacts/sprint-172-update.md
+        - name: June 01
+          href: 2020/artifacts/sprint-170-update.md
+        - name: April 13
+          href: 2020/artifacts/sprint-167-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: November 4
+          href: 2019/artifacts/sprint-160-update.md
+        - name: September 3
+          href: 2019/artifacts/sprint-157-update.md
+        - name: August 12
+          href: 2019/artifacts/sprint-156-update.md
+        - name: July 22
+          href: 2019/artifacts/sprint-155-update.md
+        - name: July 1
+          href: 2019/artifacts/sprint-154-update.md
+        - name: June 10
+          href: 2019/artifacts/sprint-153-update.md
+        - name: May 20
+          href: 2019/artifacts/sprint-152-update.md
+        - name: May 13
+          href: 2019/artifacts/build-may.md
+        - name: March 19
+          href: 2019/artifacts/sprint-149-update.md
+        - name: February 25
+          href: 2019/artifacts/sprint-148-update.md
+        - name: February 4
+          href: 2019/artifacts/sprint-147-update.md
+        - name: January 14
+          href: 2019/artifacts/sprint-146-update.md
 - name: General
+  expanded: false
   items:
-    - name: March 16
-      href: 2020/general/sprint-166-update.md
-    - name: February 17
-      href: 2020/general/sprint-165-update.md
-    - name: January 28
-      href: 2020/general/sprint-164-update.md
-    - name: January 13
-      href: 2020/general/sprint-163-update.md
-    - name: December 2
-      href: 2019/general/sprint-161-update.md
-    - name: September 23
-      href: 2019/general/sprint-158-update.md
-    - name: September 3
-      href: 2019/general/sprint-157-update.md
-    - name: August 12
-      href: 2019/general/sprint-156-update.md
-    - name: July 22
-      href: 2019/general/sprint-155-update.md
-    - name: July 1
-      href: 2019/general/sprint-154-update.md
-    - name: June 10  
-      href: 2019/general/sprint-153-update.md
-    - name: May 20  
-      href: 2019/general/sprint-152-update.md
-    - name: May 13  
-      href: 2019/general/build-may.md
-    - name: April 8  
-      href: 2019/general/sprint-150-update.md
-    - name: March 19  
-      href: 2019/general/sprint-149-update.md
-    - name: February 25  
-      href: 2019/general/sprint-148-update.md
-    - name: February 4  
-      href: 2019/general/sprint-147-update.md
-    - name: January 14  
-      href: 2019/general/sprint-146-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: June 17
+          href: 2021/general/sprint-188-update.md
+        - name: May 5 
+          href: 2021/general/sprint-186-update.md
+        - name: March 03
+          href: 2021/general/sprint-183-update.md
+        - name: February 04
+          href: 2021/general/sprint-182-update.md
+    - name: 2020
+      expanded: false
+      items:
+        - name: June 18
+          href: 2020/general/sprint-171-update.md
+        - name: May 4
+          href: 2020/general/sprint-168-update.md
+        - name: April 13
+          href: 2020/general/sprint-167-update.md
+        - name: March 16
+          href: 2020/general/sprint-166-update.md
+        - name: February 17
+          href: 2020/general/sprint-165-update.md
+        - name: January 28
+          href: 2020/general/sprint-164-update.md
+        - name: January 13
+          href: 2020/general/sprint-163-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: December 2
+          href: 2019/general/sprint-161-update.md
+        - name: September 23
+          href: 2019/general/sprint-158-update.md
+        - name: September 3
+          href: 2019/general/sprint-157-update.md
+        - name: August 12
+          href: 2019/general/sprint-156-update.md
+        - name: July 22
+          href: 2019/general/sprint-155-update.md
+        - name: July 1
+          href: 2019/general/sprint-154-update.md
+        - name: June 10
+          href: 2019/general/sprint-153-update.md
+        - name: May 20
+          href: 2019/general/sprint-152-update.md
+        - name: May 13
+          href: 2019/general/build-may.md
+        - name: April 8
+          href: 2019/general/sprint-150-update.md
+        - name: March 19
+          href: 2019/general/sprint-149-update.md
+        - name: February 25
+          href: 2019/general/sprint-148-update.md
+        - name: February 4
+          href: 2019/general/sprint-147-update.md
+        - name: January 14
+          href: 2019/general/sprint-146-update.md
 - name: Reporting
+  expanded: false
   items:
-    - name: December 16
-      href: 2019/reporting/sprint-162-update.md
-    - name: November 4
-      href: 2019/reporting/sprint-160-update.md
-    - name: September 23 
-      href: 2019/reporting/sprint-158-update.md
-    - name: September 3 
-      href: 2019/reporting/sprint-157-update.md
-    - name: August 12 
-      href: 2019/reporting/sprint-156-update.md
-    - name: April 8  
-      href: 2019/reporting/sprint-150-update.md
-    - name: March 19  
-      href: 2019/reporting/sprint-149-update.md
-    - name: February 4  
-      href: 2019/reporting/sprint-147-update.md
+    - name: 2021
+      expanded: false
+      items:
+        - name: April 13
+          href: 2021/reporting/sprint-185-update.md
+        - name: February 04
+          href: 2021/reporting/sprint-182-update.md
+    - name: 2019
+      expanded: false
+      items:
+        - name: December 16
+          href: 2019/reporting/sprint-162-update.md
+        - name: November 4
+          href: 2019/reporting/sprint-160-update.md
+        - name: September 23
+          href: 2019/reporting/sprint-158-update.md
+        - name: September 3
+          href: 2019/reporting/sprint-157-update.md
+        - name: August 12
+          href: 2019/reporting/sprint-156-update.md
+        - name: April 8
+          href: 2019/reporting/sprint-150-update.md
+        - name: March 19
+          href: 2019/reporting/sprint-149-update.md
+        - name: February 4
+          href: 2019/reporting/sprint-147-update.md
 - name: Wiki
+  expanded: false
   items:
     - name: November 4
-      href: 2019/wiki/sprint-160-update.md  
+      href: 2019/wiki/sprint-160-update.md
     - name: October 14
-      href: 2019/wiki/sprint-159-update.md  
+      href: 2019/wiki/sprint-159-update.md
     - name: September 23
-      href: 2019/wiki/sprint-158-update.md  
+      href: 2019/wiki/sprint-158-update.md
     - name: August 12
       href: 2019/wiki/sprint-156-update.md
     - name: July 1
       href: 2019/wiki/sprint-154-update.md
-    - name: June 10  
+    - name: June 10
       href: 2019/wiki/sprint-153-update.md
-    - name: May 20    
+    - name: May 20
       href: 2019/wiki/sprint-152-update.md
-    - name: April 8  
+    - name: April 8
       href: 2019/wiki/sprint-150-update.md
-    - name: February 25  
+    - name: February 25
       href: 2019/wiki/sprint-148-update.md
-    - name: February 4  
+    - name: February 4
       href: 2019/wiki/sprint-147-update.md
-    - name: January 14  
+    - name: January 14
       href: 2019/wiki/sprint-146-update.md
-- name: Subscribe to updates  
+- name: Subscribe to updates
   href: https://azure.microsoft.com/updates/?product=azure-devops

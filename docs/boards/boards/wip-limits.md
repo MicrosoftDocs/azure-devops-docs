@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019
 ---
@@ -15,9 +15,9 @@ ms.date: 02/14/2019
 
 # Work in Progress limits
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
-An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
+An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 
@@ -111,7 +111,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -148,7 +148,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker range="tfs-2015" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
@@ -166,7 +166,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
    ::: moniker range="tfs-2013"    
 6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-7. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+7. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Open configuration settings](media/columns/open-settings-2013.png)    
 

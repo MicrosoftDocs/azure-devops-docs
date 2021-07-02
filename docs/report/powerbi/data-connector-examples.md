@@ -5,26 +5,27 @@ description: Guidance on developing reports based on examples when using the Pow
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.reviewer: stansw
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/17/2017
+ms.date: 12/18/2020
 ---
 
-# Example reports for Power BI Data Connector
+# Example reports for Power BI data connector
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-This document provides guidance on how to generate the following example reports in Power BI: 
+Learn how to generate the following example reports in Power BI: 
 
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
 
-Prior to generating these reports, you must first [connect to Analyticss using the Power BI data connector](data-connector-connect.md). 
+Prior to generating these reports, you must first [connect to Analytics using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
+
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 <a id="number-of-work-items" />
 

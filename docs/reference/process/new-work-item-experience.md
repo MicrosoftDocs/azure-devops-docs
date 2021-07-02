@@ -74,7 +74,7 @@ Within the discussion section, you can use the [<strong>@mention</strong> contro
 
 ### Access to other tasks
 
-Looking for the toolbar task options? You access them now through the ![](../../media/icons/actions-icon.png) actions icon.  
+Looking for the toolbar task options? You access them now through the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon.  
 
 <img src="../../boards/backlogs/media/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
 
@@ -92,7 +92,7 @@ As this switch is set on a per-user basis, other users will continue to see the 
 <a id="switch-back">  </a> 
 ### Switch back to the old form 
 
-If your admin has enabled opt-in to support switch back. Simply choose the ![](../../media/icons/actions-icon.png) actions icon to open the context menu to switch back to the old layouts.  
+If your admin has enabled opt-in to support switch back. Simply choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu to switch back to the old layouts.  
 
 ![New web form, user story, Back to old form menu option](../media/m-new-form-user-story-switch-to-old-form.png)
 
@@ -114,7 +114,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [Azure DevOps Services Features Timeline](/azure/devops/release-notes/index)  
-- [REST API, Work Item Types](/rest/api/azure/devops/processdefinitions/work%20item%20types)  
+- [REST API, Work Item Types](/rest/api/azure/devops/wit/work%20item%20types)  
 
 
 ### Will this impact Visual Studio work item forms?  

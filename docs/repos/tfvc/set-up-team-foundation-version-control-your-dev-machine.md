@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Set up Team Foundation Version Control on your dev machine
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 To set up Team Foundation Version Control (TFVC) on your dev machine, you just need to create a workspace and then add your code.
 
@@ -43,7 +41,7 @@ Map the workspace and get your code.
 
 ## Work in a "Main" parent folder
 
-Do you want to prepare for when your team grows large enough to need [branches](use-branches-isolate-risk-team-foundation-version-control.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
+Do you want to prepare for when your team grows large enough to need [branches](./branching-strategies-with-tfvc.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
 
 1.  Go to the Team Explorer Home page (Keyboard: Ctrl + 0, H), and then open **Source Control Explorer**.
 
@@ -113,4 +111,4 @@ You've already got an app in progress and you want to begin working on it under 
 
 ## Dig deeper
 
- [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md) 
+ [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)

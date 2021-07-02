@@ -2,11 +2,11 @@
 title: Demands
 ms.custom: seodec18
 description: Configure custom demands for your pipeline in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.author: sdanie
 author: steved0x
-ms.date: 07/30/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -19,7 +19,11 @@ monikerRange: '>= tfs-2015'
 Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
 
 > [!NOTE]
-> Demands are only applicable when your pipeline runs on self-hosted agents.
+>
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 ## Task demands
 
@@ -38,15 +42,6 @@ pool:
 ```
 
 Or if you need to add multiple demands, add one per line.
-```yaml
-pool:
-  name: Default
-  demands:
-  - SpecialSoftware # Check if SpecialSoftware capability exists
-  - Agent.OS -equals Linux # Check if Agent.OS == Linux
-```
-
-For multiple demands:
 
 ```yaml
 pool:
@@ -55,6 +50,9 @@ pool:
   - myCustomCapability   # check for existence of capability
   - agent.os -equals Darwin  # check for specific string in capability
 ```
+
+> [!NOTE]
+> Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the only two supported operations for demands.
 
 For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
 
@@ -86,4 +84,6 @@ Register each agent that has the capability.
 | SpecialSoftware | C:\Program Files (x86)\SpecialSoftware |
 
 > [!TIP]
-> When you manually queue a build you can change the demands for that run.
+> For classic non-YAML build definitions, when you manually queue a build you can change the demands on that run.
+
+* * *

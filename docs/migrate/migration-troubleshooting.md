@@ -1,12 +1,13 @@
 ---
 title: Troubleshoot migration import to Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Resolve common DataMigratorTool validation errors 
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.technology: devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 12/16/2019
 ---
 
@@ -364,7 +365,7 @@ VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
 VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -385,7 +386,7 @@ VS403260: The database is not detached.
 VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
-[Detach](migration-import.md#detach-your-collection) your collection database and retry the import queue.  
+[Detach](migration-import.md#step-1-detach-your-collection) your collection database and retry the import queue.  
 
 **VS403261**
 
@@ -419,7 +420,7 @@ VS403263: The User ID {0} must be member of the database role {1}.
 Make sure the user account for sign in is assigned the ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) role. 
 
 > [!NOTE]   
-> There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Validate and import processes, Import large collections](migration-import.md#import-large-collections).
+> There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership isn't applied until all open connections using that identity are closed. If you receive the VS403263 error and have confirmed your identity has the role, we recommend that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at [Import large collections](migration-import-large-collections.md).
 
 **VS403264**
 
@@ -497,13 +498,22 @@ List of Azure DevOps Services IPs:
 
 Verify that you've entered the information correctly in your connection string and that you can connect to the VM. 
 
-The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Add them to your firewall exceptions and try queuing the import again. For a list of IP addresses, see [Validate and import processes, Azure DevOps Services IPs](migration-import.md#ips)
+The IPs that the error message lists are for Azure DevOps Services. Azure DevOps Services IPs can change temporarily during deployments. Add them to your firewall exceptions and try queuing the import again. For a list of IP addresses, see [Import large collections, Restrict access to Azure DevOps Services IPs only](migration-import-large-collections.md#ips)
 
 **VS403373**
 
 The data migration tool doesn't support importing multiple copies of the **SAME** collection. However, it **DOES** support importing **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
 
 From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you haven't  imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **import.json** file to queue the import.
+
+**VS403379**
+
+Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
+
+```cmdline
+VS403379: Data import will fail as one or more projects found in this collection are in the soft-deleted stage. Please restore the soft-deleted project(s) or delete them permanently before running the data import.
+```
+Verify the collection against which you are running the data migration tool has projects in the soft-deleted stage. Once a project is deleted, it remains in a soft-delete state for 28 days during which the deleted project can be restored. You can read about how to restore a deleted project in [Restore a project](../organizations/projects/restore-project.md). If you have projects in the soft-deleted stage, remove them completely or restore them back before running data import.
 
 ### Import failures
 

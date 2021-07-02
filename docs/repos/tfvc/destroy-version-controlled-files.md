@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Destroy Version Controlled Files
 ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Destroy Version Controlled Files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Over time, a version control server acquires a growing number of files and folders. This can cause problems as you try to manage disk space requirements. You might be forced to remove all the projects and their hierarchies from version control. For example, a project might be created for learning purposes only, or perhaps some files are contaminated with a virus. Therefore, as a Team Foundation administrator, occasionally you may have to destroy files and folders that are under version control.
 
@@ -61,9 +59,9 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
         > [!NOTE]
         > **/preview** cannot be specified with **/keephistory**.
 
-        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](https://msdn.microsoft.com/library/ms181415).
+        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](/previous-versions/visualstudio/visual-studio-2010/ms181415(v=vs.100)).
 
-    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).
+    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
         To destroy all the files in the project MyTeamProject and, at the same time, retain the history for the files up to and including 10/23/2005, type:
 
@@ -91,7 +89,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
 #### Concepts
 
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](https://msdn.microsoft.com/library/ms194957)
+[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
 
 #### Other Resources
 

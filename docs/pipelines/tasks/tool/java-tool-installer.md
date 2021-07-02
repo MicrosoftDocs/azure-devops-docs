@@ -6,7 +6,7 @@ ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 04/21/2020
 monikerRange: azure-devops
 ---
 
@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to acquire a specific version of Java from a user supplied Azure blob,
+Use this task to acquire a specific version of Java from a user supplied Azure blob,
 from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment variable.
 Use this task to change the version of Java used in Java tasks.
 
@@ -34,17 +34,25 @@ None
 
 | Argument | Description |
 |----------|-------------|
-| JDK Version | Specify which JDK version to download and use. |
-| JDK Architecture | Specify the bit version of the JDK. |
-| JDK source | Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository. |
-| JDK file | Applicable when JDK is located in a local directory. Specify the path to the folder that contains the compressed JDK. The path could be in your source repository or a local path on the agent.|
-| Azure Subscription | Applicable when the JDK is located in Azure Blob storage. Specify the Azure Resource Manager subscription for the JDK.|
-| Storage Account Name | Applicable when the JDK is located in Azure Blob storage. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
-| Container Name | Applicable when the JDK is located in Azure Blob storage. Specify the name of the container in the storage account in which the JDK is located.|
-| Common Virtual Path | Applicable when the JDK is located in Azure Blob storage. Specify the path to the JDK inside the Azure storage container. |
-| Destination directory | Specify the destination directory into which the JDK should be extracted. |
-| Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
-| Control options | See [Control options](../../process/tasks.md#controloptions). |
+| `versionSpec`<br/>JDK Version | (Required) Specify which JDK version to download and use. <br/>Default value: `8` |
+|`jdkArchitectureOption`<br/> JDK Architecture | (Required) Specify the bit version of the JDK. <br/>Options: `x64, x86`|
+| `jdkSourceOption`<br/>JDK source | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository or use the pre-installed version of Java (available for Microsoft-hosted agents). Please see example below about how to use pre-installed version of Java |
+| `jdkFile` <br/>JDK file | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the jdk archive file that contains the compressed JDK. The path could be in your source repository or a local path on the agent. The file should be an archive (.zip, .tar.gz, .7z), containing bin folder either on the root level or inside a single directory. For macOS - there's support of .pkg and .dmg files containing only one .pkg file inside.|
+|`azureResourceManagerEndpoint`<br/> Azure Subscription | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Azure Resource Manager subscription for the JDK.|
+|`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
+|`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
+|`azureCommonVirtualFile`<br/> Common Virtual Path | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container. |
+|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is used as a temporary folder for extracting of .dmg's since macOS doesn't support installing of JDK to specific directory. |
+|`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
+
+> [!NOTE]
+>
+> To run **Java Tool Installer** task on macOS it is required for user under which agent is running to have permission to execute **sudo** command without a password. 
+> You can follow the next steps to enable this permission:
+> 1) Run *sudo visudo* command, it will open sudoers file for editing.
+> 2) Go to the bottom of the file and add the following line: *user ALL=NOPASSWD: /usr/sbin/installer* (Replace 'user' by the actual user alias)
+> 3) Save and close the file.
+>
 
 ## Examples
 
@@ -79,11 +87,21 @@ The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that i
     cleanDestinationDirectory: false
 ```
 
+Here's an example of using "pre-installed" feature. This feature allows you to use Java versions that are pre-installed on the Microsoft-hosted agent. You can find available pre-installed versions of Java in [Software section](../../agents/hosted.md#software).
+
+```yaml
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x86'
+    jdkSourceOption: 'PreInstalled'
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

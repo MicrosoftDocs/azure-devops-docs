@@ -3,18 +3,16 @@ title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.author: macoope
-ms.reviewer: vtbassmatt
-ms.date: 11/04/2019
+ms.date: 06/01/2021
 monikerRange: '>=azure-devops-2019'
-author: vtbassmatt
+ms.custom: devx-track-python
 ---
 
 # Build Python apps
 
 **Azure Pipelines**
 
-Use a pipeline to automatically build and test your Python apps or scripts. After those steps are done, you can then deploy or publish your project.
+You can use Azure Pipelines to build, test, and deploy Python apps and scripts as part of your CI/CD system. This article focuses on creating a simple pipeline. 
 
 If you want an end-to-end walkthrough, see [Use CI/CD to deploy a Python web app to Azure App Service on Linux](python-webapp.md).
 
@@ -22,7 +20,7 @@ To create and activate an Anaconda environment and install Anaconda packages wit
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
@@ -35,7 +33,7 @@ Import this repo into your Git repo in Azure DevOps Server 2019:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Import this repo into your Git repo:
 
@@ -46,7 +44,7 @@ Import this repo into your Git repo:
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Sign in to Azure Pipelines
 
@@ -58,7 +56,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ### Create the pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
@@ -114,7 +112,7 @@ steps:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Build environment
 
@@ -236,12 +234,12 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 
 ```yaml
 - script: |
-    pip install pytest
+    pip install pytest pytest-azurepipelines
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
-  displayName: 'Test with pytest'
+    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
+  displayName: 'pytest'
 ```
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 ### Run tests with Tox
 
 Azure Pipelines can run parallel Tox test jobs to split up the work. On a development computer, you have to run your test environments in series. This sample uses `tox -e py` to run whichever version of Python is active for the current job.
@@ -296,7 +294,6 @@ Add the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
 ## Package and deliver code

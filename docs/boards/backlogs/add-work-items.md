@@ -2,19 +2,19 @@
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 # Add and update a work item
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
@@ -33,7 +33,7 @@ You can start adding work items once you connect to a project.
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](../../project/navigation/media/add-artifact/add-work-item-query-vert.png)
@@ -72,7 +72,7 @@ Create as many work items as you need of the type you need to track the work you
     >
     > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
-    Choose the ![pin icon](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+    Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -159,34 +159,26 @@ The following image shows the work flow states for a user story. If you want to 
 
 ::: moniker-end
 
-
-<table>
-<tbody valign="top">
-<tr>
-<td>
-<p><b>Typical workflow progression:</b></p>
-<ul>
-<li>The product owner creates a user story in the <strong>New</strong> state with the default reason, <strong>New user story</strong> </li>
-<li>The team updates the status to <strong>Active</strong> when they decide to complete the work during the sprint</li>
-<li>A user story is moved to <strong>Resolved</strong> when the team has completed all its associated tasks and unit tests for the story pass.</li>
-<li>A user story is moved to the <strong>Closed</strong> state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.</li>
-</ul>
-<p><b>Atypical transitions:</b></p>
-<ul>
-<li>Change the State from <strong>Active</strong> to <strong>New</strong>.</li>
-<li>Change the State from <strong>Resolved</strong> to <strong>Active</strong>.</li>
-<li>Change the State from <strong>Resolved</strong> to <strong>New</strong>.</li>
-<li>Change the State from <strong>Closed</strong> to <strong>Active</strong>.</li>
-<li>Change the State from <strong>New</strong> to <strong>Removed</strong>.</li>
-<li>Change the State from <strong>Removed</strong> to <strong>New</strong>.</li>
-</ul>
-</td>
-<td>
-<img src="../work-items/guidance/media/alm_pt_agile_wf_userstory.png" alt="User story workflow, Agile process"/>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="2":::
+      **Typical workflow progression:**
+      - The product owner creates a user story in the **New** state with the default reason, **New user story**   
+      - The team updates the status to **Active** when they decide to complete the work during the sprint  
+      - A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass.  
+      - A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.  
+    
+**Atypical transitions**: 
+      - Change the State from **Active** to **New**.  
+      - Change the State from **Resolved** to **Active**.  
+      - Change the State from **Resolved** to **New**.  
+      - Change the State from **Closed** to **Active**.  
+      - Change the State from **New** to **Removed**.  
+      - Change the State from **Removed** to **New**.  
+   :::column-end:::
+   :::column span="2":::
+      ![User story workflow, Agile process](../work-items/guidance/media/alm_pt_agile_wf_userstory.png)  
+   :::column-end:::
+:::row-end:::
 
 Removed work items remain in the data store and can be reactivated by changing the State.   
 
@@ -219,9 +211,9 @@ There is no way to use Visual Studio 2019 to update a work item at this time.
 
 ### Update a work item
 
-You can make updates to your work items with the [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can make updates to your work items with the [az boards work-item update](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards work-item update --id
                            [--area]
                            [--assigned-to]
@@ -258,7 +250,7 @@ az boards work-item update --id
 
 The following command updates the title of the bug with the ID 864 and displays the results in the Azure DevOps CLI in table format.
 
-```CLI 
+```azurecli 
 az boards work-item update --id 864  --title "Fix security issues" --output table
 
 ID    Type    Title                Assigned To          State
@@ -272,15 +264,15 @@ ID    Type    Title                Assigned To          State
 
 You can use the **discussion** parameter to add comments to the **Discussion** section of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
 
-```CLI 
+```azurecli 
 az boards work-item update --id 864  --discussion  "This work item is about 50% complete" --open
 ```
 
 ### Show details for a work item
 
-You can show the details for a work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can show the details for a work item with the [az boards work-item show](/cli/azure/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards work-item show --id
                          [--open]
                          [--org] 
@@ -296,7 +288,7 @@ az boards work-item show --id
 
 The following command shows details for the bug with the ID 864. It opens in your default web browser and also displays the results in the Azure DevOps CLI in table format.
 
-```CLI 
+```azurecli 
 az boards work-item show --id 864  --open --output table
 
 ID    Type    Title       Assigned To          State
@@ -315,7 +307,7 @@ ID    Type    Title       Assigned To          State
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.   
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 
@@ -324,11 +316,11 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
+To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 > [!IMPORTANT]
 > To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
@@ -346,7 +338,6 @@ To quickly add backlog items, such as user stories, requirements or bugs, see th
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/howto-manage-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
 For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
-

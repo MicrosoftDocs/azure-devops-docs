@@ -1,48 +1,49 @@
 ---
 title: Link work items to deployments
 titleSuffix: Azure Boards
-description: Link your work item to releases to visualize which deployments include your work items
+description: Visualize the deployments which include your work items by linking them to releases
 ms.custom: boards-work-items  
 ms.technology: devops-agile
-ms.assetid: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 10/14/2018
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/06/2020
 --- 
 
 # Link work items to deployments
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
-The release deployments control shows release information for those work items that have been associated to a commit which is part of a build being released. To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
+The release deployments control shows release information for those work items that have been associated to a Git commit which is part of a build being released. To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
 > [!NOTE]  
-> The release deployments control currently works with classic release pipelines and with Azure DevOps Services (cloud) only. If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
+> The release deployments control currently works with classic release pipelines and with Azure DevOps Server 2020 and Azure DevOps Services (cloud). If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
 
 ## Configure release
 
-First thing you must do is configure the release definition to post deployment information back to Azure Boards. 
+Configure your release definition to post deployment information to Azure Boards. 
 
-1. Open Release definition, Options and Integrations
+1. Open Pipelines>Releases, choose to edit your release pipeline, then choose **Options>Integrations**.
 
    > [!div class="mx-imgBorder"]  
    > ![Release Settings](media/deployments-control/release-settings-1.png)
 
-2. Select the "Preview: Report deployment status to Boards" option and configure the stages and deployment types
+2. Check the **Report deployment status to Boards** checkbox and choose the stages and deployment types to report. 
 
    > [!div class="mx-imgBorder"]  
-   > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)
+   > ![Check the Report deployment status to Boards checkbox and choose the stages and deployment types to report.](media/deployments-control/release-settings-stages-1.png)
 
 ## Deployment control
 
-Once the release has been configured to send deployment information to Azure Boards, and you have work items associated to the commits in the build, you can now go to the work item and see the status of the release. In the below example we have multiple environments that the release is targeting.
+The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
+
+The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
-> ![Release Settings Stages](media/deployments-control/releases-stages-1.png)
+> ![Example showing multiple environments that the release is targeting.](media/deployments-control/releases-stages-1.png)
 
-When opening the work item, you can see the stages the release is being deployed, in real time.
+When you open the work item, you can see the stages the release is being deployed, in real time.
 
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/deployments-control-1.png)

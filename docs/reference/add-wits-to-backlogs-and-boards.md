@@ -1,12 +1,14 @@
-﻿---
+---
 title: Add work item types to backlogs and boards   
 titleSuffix: Azure DevOps & TFS
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
@@ -44,7 +46,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 ### Hosted XML process model customization sequence  
 
 > [!NOTE]    
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-work-item-type.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project. 
 
@@ -57,10 +59,9 @@ You'll make your changes to your process definition files, and then import that 
 
 You'll first export your work tracking definition files, update them, and then import them to your project.  
 -  If you aren't a member of the Project Administrator or Project Collection Administrator's group, [get added](../organizations/security/set-project-collection-level-permissions.md). 
--  Update your project to [enable the latest features](configure-features-after-upgrade.md)
+-  Update your project to [enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 -  [Export the following objects from your project](#import-export): 
 	- WIT you want to add to backlogs and boards (if you haven't created it, [do that now](customize-work.md))
-	- [Categories definition](xml/apply-rule-work-item-field.md#apply-ignore)  
 	- ProcessConfiguration  
 -  If you're new to customizing work tracking objects, familiarize yourself with the following resources:  
 	- [Add or modify a field](add-modify-field.md)  
@@ -69,6 +70,7 @@ You'll first export your work tracking definition files, update them, and then i
 
 
 <a id="wits-as-requirements">  </a>
+
 ## Add a WIT to track it like a requirement   
 
 WITs that you add to the Requirement Category show up on the product backlog and Kanban board. You must make sure that the WIT definition contains required fields to support the Agile planning tools.  
@@ -152,7 +154,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
    <li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
    <li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
    </ul>
-   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](add-features-manually.md#update-processconfiguration). </p>
+   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `RequirementBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration). </p>
    </td>
    </tr>
    <tr>
@@ -334,7 +336,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
    <li>Agile, User Story: Add transitions from `Active` to `Removed` and `Resolved` to `Removed`; remove rules that populate  `Activated By` and `Activated Date` fields when state=`Resolved`  </li>
    <li>Scrum, Product backlog item: Add transition from `Committed` to `Removed` </li>
    </ul>
-   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](add-features-manually.md#update-processconfiguration). </p>
+   <p>If you've customized the `WORKFLOW`, make sure to define the required state-to-metastate mappings in the [ProcessConfiguration `TestBacklog` section](/previous-versions/azure/devops/reference/upgrade/add-features-manually#update-processconfiguration). </p>
    </td>
    </tr>
    <tr>

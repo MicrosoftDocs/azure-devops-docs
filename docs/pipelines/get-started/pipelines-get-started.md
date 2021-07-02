@@ -38,7 +38,7 @@ using the user interface, also referred to as _Classic_.
 
 Continuous integration automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
-Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
+Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
@@ -99,7 +99,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 | Feature | YAML | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) | Yes | No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Supports publishing or consuming different package types. |
@@ -110,9 +110,9 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Dependencies](../process/stages.md) |  Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | Yes | No | Yes | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)|No | No | Yes | Specifies a job to release to a deployment group. | 
-| [Deployment jobs](../process/deployment-group-phases.md) | Yes | No |  No | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
+| [Deployment jobs](../process/deployment-jobs.md) | Yes | No |  No | Defines the deployment steps. | 
 | [Environment](../process/environments.md) | Yes | No | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
-| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
+| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Classic Release only. |
 | [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
 | [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
 | [Service containers](../process/service-containers.md) | Yes |No | No  |Enables you to manage the lifecycle of a containerized service.   |
@@ -133,7 +133,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
 
 | Feature | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes |  Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) |  No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Supports publishing or consuming different package types. |

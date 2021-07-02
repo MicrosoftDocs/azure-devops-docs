@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Checkin command
 ms.assetid: 90b18c7c-b0ae-4f46-829f-3a4471614086
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 10/31/2017
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Checkin command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Checks in your pending changes to files or folders to the server.
 
@@ -53,7 +51,7 @@ tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/log
 </tr>
 <tr>
 <td><p><strong>/collection</strong>:<i>TeamProjectCollectionUrl</i></p></td>
-<td><p>If you use the <strong>shelveset</strong> option, the <strong>/collection</strong> option specifies the URL of the project collection that contains the shelveset. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p>
+<td><p>If you use the <strong>shelveset</strong> option, the <strong>/collection</strong> option specifies the URL of the project collection that contains the shelveset. For example:`http://myserver:8080/tfs/DefaultCollection`.</p>
 <p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
 </tr>
 <tr>

@@ -25,7 +25,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 1. To view the revision history of a page, select the **Revisions** link provided on each page. You can also select **View revisions** in the context menu of a page.
 
-	<img src="media/wiki/click-revision.png" alt="Open revision history" style="border: 1px solid #C3C3C3;" />
+   :::image type="content" source="media/wiki/click-revision.png" alt-text="The context menu shows Print, Link work items, View revisions, and Delete options. View revisions is highlighted.":::
 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
@@ -38,17 +38,17 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
    ::: moniker range="tfs-2018"
 
-   ![Open revision history](media/wiki/revision-history.png) 
+   ![Home | Revisions lists revisions. The columns are Author, Message, Last Updated, and Version.](media/wiki/revision-history.png) 
 
    ::: moniker-end
 
 3. Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
 
-   ![Wiki revision details for a page](media/wiki/wiki-revision-details-2.png)  
+   ![Two revisions of an article are compared side-by-side. The article is in Markdown, and is titled Welcome to the Fabrikam Fiber wiki.](media/wiki/wiki-revision-details-2.png)  
 
    ::: moniker range=">= azure-devops-2019"
 
-   For a *publish as code wiki* page, you see similar information, but the **Revert** button isn't active.
+   For a *publish as code wiki* page, you see similar information, but **Revert** isn't active.
 
    > [!div class="mx-imgBorder"]  
    > ![Revision page for a publish as code wiki page](media/wiki/view-history-publish-as-code.png)
@@ -64,7 +64,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 ## Revert a commit to a *provisioned wiki* page
 
-Select the **Revert** button on the revision details page to revert a change on a wiki page.
+Select **Revert** on the revision details page to revert a change on a wiki page.
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 ::: moniker range=">= tfs-2018"
 
-![Wiki revision details for a page](media/wiki/wiki-revert.png) 
+![Dialog box Revert revision 701b5a9f has the Revert and Cancel options. Revert is selected.](media/wiki/wiki-revert.png) 
 
 ::: moniker-end
 
@@ -96,17 +96,17 @@ If you need to revert to an earlier revision for a page that you have published 
 
 1. Preview any version by choosing the commit id from the **Revisions** page for the selected file.
 
-2. Copy the full ID of the commit by selecting the ![ ](../../media/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
+2. Copy the full ID of the commit by selecting :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: **Copy-clone**.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-copy-commit-id.png)
 
-3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose the ![ ](../../media/icons/search-icon.png) search icon.
+3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: Search.
  
 	> [!div class="mx-imgBorder"]  
-	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-paste-commit-id.png)
+	> ![Paste the commit id for an earlier commit.](media/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-4. From the commit page, open the ![ ](../../media/icons/actions-icon.png) actions icon and choose the **Revert** option.  
+4. From the commit page, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose **Revert**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](media/wiki/revert-publish-as-code-option.png)
@@ -121,7 +121,7 @@ If you need to revert to an earlier revision for a page that you have published 
 6. Select **Create Pull Request**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Revert commit dialog](media/wiki/revert-publish-as-code-commit-confirm.png)
+	> ![Select Create Pull Request.](media/wiki/revert-publish-as-code-commit-confirm.png)
 		
 	If instead, you receive an error message as shown, it indicates that you must create a local branch and make your changes manually as described in the next section.
 
@@ -130,7 +130,7 @@ If you need to revert to an earlier revision for a page that you have published 
 
 7. Select **Create** in the New Pull Request form.
 
-8. Select **Complete** to merge the changes into the master wiki branch. Optionally, check the **Delete** checkbox to delete the intermediate branch.
+8. Select **Complete** to merge the changes into the main wiki branch. Optionally, check the **Delete** checkbox to delete the intermediate branch.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Revert publish code as wiki, complete pull request](media/wiki/revert-complete-pull-request-dialog.png)
@@ -139,15 +139,15 @@ Return to the wiki, refresh the browser, and you should see the reverted content
 
 ### Revert from earlier revisions using a different branch
 
-To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the master branch for the wiki, and then create a pull request to the master branch.
+To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
 
-1. Create a local branch of the master wiki branch.
+1. Create a local branch of the main wiki branch.
 1. View the commit history and locate the commit that contains the changes you want to undo.
 2. Use the revert command to revert the desired commit.
 3. When a conflict arises, use the conflict resolution tools to resolve the issues.
 4. Commit the changes locally to your local branch.
 5. Push the local branch to the remote server.
-6. Create a pull request for your local branch into master.
+6. Create a pull request for your local branch into main.
 7. Complete the pull request.
 
 You can use the following steps to identify the commit that contains the content you want to revert to. Then, use standard Git operations to revert the content.
@@ -155,7 +155,7 @@ You can use the following steps to identify the commit that contains the content
 For more information, see the following articles:
 
 - [Clone an existing Git repo](../../repos/git/clone.md)  
-- [Create work in branches](../../repos/git/branches.md)  
+- [Create work in branches](../../repos/git/create-branch.md)  
 - [Review history](../../repos/git/review-history.md)  
 - [Undo (revert) changes](../../repos/git/undo.md)
 - [Resolve merge conflicts](../../repos/git/merging.md)

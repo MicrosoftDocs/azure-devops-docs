@@ -6,7 +6,7 @@ ms.topic: include
 <a id="global-shortcuts"></a>
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can use the following keyboard shortcuts from the web portal.
 
@@ -17,14 +17,14 @@ You can use the following keyboard shortcuts from the web portal.
    :::column span="2":::
       <br/><br/>
       &nbsp;&nbsp;&nbsp;**?**&nbsp;&nbsp;&nbsp;Show keyboard shortcuts  
-      &nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Go to [**Projects and teams**](/azure/devops/project/navigation/go-to-project-repo)  
+      &nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Go to [**Projects and teams**](../../project/navigation/go-to-project-repo.md)  
       <br/>
-      **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](/azure/devops/project/navigation/go-to-project-repo)  
-      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines**](/azure/devops/pipelines/overview)  
-      **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos**](/azure/devops/repos/git/overview)  
-      **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans**](/azure/devops/test/index)  
-      **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](/azure/devops/organizations/settings/about-settings)  
-      **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards**](/azure/devops/boards/get-started/what-is-azure-boards)   
+      **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](../../project/navigation/go-to-project-repo.md)  
+      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines**](../../pipelines/get-started/what-is-azure-pipelines.md)  
+      **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos**](../../repos/git/index.yml)  
+      **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans**](../../test/index.yml)  
+      **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](../../organizations/settings/about-settings.md)  
+      **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards**](../../boards/get-started/what-is-azure-boards.md)   
       <br/>
       **/** or **s**&nbsp;&nbsp;&nbsp;Move focus to search<br/>
       **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>
@@ -46,14 +46,14 @@ You can use the following keyboard shortcuts from the web portal.
    :::column span="2":::
       <br/><br/>
       &nbsp;&nbsp;&nbsp;**?**&nbsp;&nbsp;&nbsp;Show keyboard shortcuts   
-      &nbsp;&nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Go to [**Projects and teams**](/azure/devops/project/navigation/go-to-project-repo)   
+      &nbsp;&nbsp;&nbsp;**p**&nbsp;&nbsp;&nbsp;Go to [**Projects and teams**](../../project/navigation/go-to-project-repo.md)   
       <br/>
-      **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](/azure/devops/project/navigation/go-to-project-repo)   
-      **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](/azure/devops/boards/get-started/what-is-azure-boards)   
-      **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos** or **Code**](/azure/devops/repos/git/overview)   
-      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](/azure/devops/pipelines/overview)   
-      **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans** or **Test**](/azure/devops/test/index)   
-      **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](/azure/devops/organizations/settings/about-settings)   
+      **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](../../project/navigation/go-to-project-repo.md)   
+      **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](../../boards/get-started/what-is-azure-boards.md)   
+      **g,c**&nbsp;&nbsp;&nbsp;Go to [**Repos** or **Code**](../../repos/git/index.yml)   
+      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](../../pipelines/get-started/what-is-azure-pipelines.md)   
+      **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans** or **Test**](../../test/index.yml)   
+      **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](../../organizations/settings/about-settings.md)   
       <br/>
       **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>
       **f,p**&nbsp;&nbsp;&nbsp;Focus previous section<br/>

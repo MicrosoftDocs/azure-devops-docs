@@ -3,7 +3,7 @@ title: Maven Authenticate task (for task runners)
 ms.custom: seodec18
 description: Provides credentials for Azure Artifacts feeds and external Maven repositories.
 ms.topic: reference
-ms.date: 08/06/2019
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,11 +17,10 @@ Provides credentials for Azure Artifacts feeds and external Maven repositories i
 
 ## Arguments
 
-| Argument                                                                                           | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `artifactsFeeds`<br/>My feeds (select below)                                                        | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
-| `mavenServiceConnections`<br/>Feeds from external organizations                           | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank. |
-| [!INCLUDE [temp](../includes/control-options-arguments.md)] |
+| Argument | Description |
+| ---------| ----------- |
+| `artifactsFeeds`<br/>My feeds (select below) | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
+| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
 
 ## Examples
 
@@ -144,7 +143,7 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -154,7 +153,7 @@ The Maven Authenticate task searches for the settings.xml in the current user's 
 
 ### We use the `mvn -s` switch to specify our own `settings.xml` file, how do we authenticate Azure Artifacts feeds there?
 
-The Maven Authenticate task doesn't have access to the custom settings.xml file specified using a -m switch. To add Azure Artifacts authentication for your custom settings.xml, add a server element inside your settings.xml like this:
+The Maven Authenticate task doesn't have access to the custom settings.xml file that's specified by using an `-s` switch. To add Azure Artifacts authentication to your custom settings.xml, add a server element inside your settings.xml file:
 
 ```XML
 <server>
@@ -164,6 +163,10 @@ The Maven Authenticate task doesn't have access to the custom settings.xml file 
 </server>
 ```
 
-The access token variable can be set in your pipelines using these [instructions](https://go.microsoft.com/fwlink/?linkid=2100801).
+The access token variable can be set in your pipelines using these [instructions](../../build/variables.md#systemaccesstoken).
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

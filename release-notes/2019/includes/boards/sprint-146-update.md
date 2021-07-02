@@ -12,6 +12,6 @@ Historically, Agile has been the default process for new projects, offering a ro
 The new Basic process provides three work item types (Epics, Issues, and Tasks) to plan and track your work. We recommend that you use Issues to track things like user stories, bugs, and features while using Epics to group Issues together into larger units of work. As you make progress on your work, move items along a simple state workflow of To Do, Doing, and Done.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/146_20.png)
+> ![Organize work using the Basic process.](../../media/146_20.png)
 
-See the [track issues and tasks](https://docs.microsoft.com/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops) documentation to help you get started with your new project.
+See the [track issues and tasks](/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops&preserve-view=true) documentation to help you get started with your new project.

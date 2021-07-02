@@ -33,7 +33,7 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 4. Notice that the status badge appears in the description of your repository.
 
-To configure anonymous access to badges:
+To configure anonymous access to badges for private projects:
 
 1. Navigate to **Project Settings**
 

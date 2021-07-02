@@ -43,7 +43,7 @@ Azure using Azure Pipelines.
 * You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
   Bitbucket Cloud, or any another source control provider that Jenkins can interact with.
 * You'll need a Jenkins server where you run your CI builds. You can quickly
-  [set up a Jenkins server on Azure](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template). 
+  [set up a Jenkins server on Azure](/azure/developer/jenkins/configure-on-linux-vm). 
 * You'll need a Jenkins project that builds you app. For example, 
   you can [build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/) on Jenkins.
 
@@ -57,7 +57,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](../../project/navigation/go-to-service-page.md#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -66,7 +66,7 @@ and [Creating and using a service connection](../library/service-endpoints.md).
 Create a new release pipeline and add a Jenkins artifact to it.
 After you select the Jenkins service connection, you can select an existing Jenkins job to deploy. 
 
-It's possible to [store the output from a Jenkins build in Azure blob storage](https://docs.microsoft.com/azure/storage/common/storage-java-jenkins-continuous-integration-solution?toc=%2Fen-us%2Fazure%2Fjenkins%2Ftoc.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json).
+It's possible to [store the output from a Jenkins build in Azure blob storage](/azure/developer/jenkins/azure-storage-blobs-as-build-artifact-repository).
 If you have configured this in your Jenkins project, choose **Download artifacts from Azure storage**
 and select the default version and source alias.
 
@@ -155,7 +155,7 @@ to your Jenkins Server, you can trigger a release for an Azure pipeline from a J
 1. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) in your Azure DevOps or TFS organization. Jenkins requires this information to access your organization.
    Ensure you keep a copy of the token information for upcoming steps in this section.
 
-1. Install the [Team Foundation Server plugin](https://plugins.jenkins.io/tfs) on your Jenkins server.
+1. Install the [Team Foundation Server plugin](https://www.jenkins.io/doc/pipeline/steps/tfs/) on your Jenkins server.
 
 1. Within your Jenkins project, you will find a new post build action named **Trigger release in TFS/Team Services**.
    Add this action to your project.
@@ -174,4 +174,3 @@ Now a new CD release will be triggered every time your Jenkins CI job is complet
 * [Stages](../process/stages.md)
 * [Triggers](triggers.md)
 * [YAML schema reference](../yaml-schema.md)
-

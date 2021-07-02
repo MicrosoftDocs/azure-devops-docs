@@ -33,4 +33,4 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 
 9. On the **Deployment groups** page of Azure Pipelines, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
 
-   ![Screenshot showing update to code](../../../apps/media/windows-deployment-group.png)
+   ![Screenshot showing verification of update to code.](../../../apps/media/windows-deployment-group.png)

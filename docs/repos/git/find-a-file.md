@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.technology: devops-code-git 
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Find a file or folder in your Git repository
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Files** page.
 

@@ -7,7 +7,7 @@ ms.technology: devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/21/2019
 ---
 
@@ -15,12 +15,14 @@ ms.date: 10/21/2019
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
+
+An organization is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the organization up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
+
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
 > With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-An organization is ready for use once an import has completed successfully. However, there are common tasks that you should perform before opening the organization up to all of your users. Below is a list of the most common after import tasks that should be completed. Tasks are listed in recommended order of completion. 
 
 ## Immediately after import
 
@@ -30,13 +32,13 @@ After spot checking the organization you will want to consider if you want to re
 
 ## Set up billing
 
-To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](../organizations/billing/billing-faq.md#multi-organization-billing). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
+To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](../organizations/billing/billing-faq.yml). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
 
 ## Manage users and access
 
 Your organization includes 5 free users with [Basic](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) access. Basic includes features like Git and Team Foundation version control, tools for Agile planning and Java teams, and more. Also, you can add [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) for free&mdash;they get basic features plus additional features&mdash;based on their subscription level. Also, you can add [Stakeholder](../organizations/security/get-started-stakeholder.md) for free, which allows them to have partial access to Agile tools, create work items, and view backlogs and boards.
 
-As Visual Studio subscribers log in to the organization, they are  automatically detected. For all other users, you need to [assign paid access](../organizations/billing/buy-basic-access-add-users.md). Keep in mind, if you automate access using [group rules](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md), the rules only apply to existing users if you [remove direct assignments](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md#remove-direct-assignments), which were applied to users during import. 
+As Visual Studio subscribers log in to the organization, they are  automatically detected. For all other users, you need to [assign paid access](../organizations/billing/buy-basic-access-add-users.md). Keep in mind, if you automate access using [group rules](../organizations/accounts/assign-access-levels-by-group-membership.md), the rules only apply to existing users if you [remove direct assignments](../organizations/accounts/assign-access-levels-by-group-membership.md#remove-direct-assignments), which were applied to users during import. 
 
 **Behavior change**&mdash;Starting between Monday, November 11th and Wednesday, November 13th, the default access behavior for imports will change. Previously, all imports tried to give users an equivalent access level post import. This means that users that had **_Basic_** received Basic access, and other users started with **_Stakeholder_** access. Once this change happens, all users will start out with free **_Stakeholder_** access. **You will continue to be able to assign Basic access to any users who need it at no cost, until the end of the calendar month during which your import is run.** If you have any questions or concerns about this change, feel free to [contact us](mailto:AzureDevOpsImport@microsoft.com?subject=Default%20access%20level%20change).
 
@@ -63,7 +65,7 @@ If you have an existing GitHub Enterprise Server connection associated with your
 To resolve the problem, consider the following:
 
 - **Remove and re-create the connection**:
-  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md?view=azure-devops#connect-azure-devops-services-to-github-enterprise-server) documentation.
+  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md#connect-azure-devops-services-to-github-enterprise-server) documentation.
 
 - **Fix the webhook url**:
   Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
@@ -74,4 +76,4 @@ After getting your builds running and license subscription configured, it's reco
 
 Users of TFVC with local workspaces will need to remap their workspaces against the new organization and Git users will have to reconfigure their remotes to be able to pull code. 
 
-If anything is reported as missing from the migrated organization, please reach out to [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). For other functional issues, please reach out to [customer support](https://visualstudio.microsoft.com/support/).  
+If anything is reported as missing from the migrated organization, please reach out to [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). For other functional issues, please reach out to [customer support](https://visualstudio.microsoft.com/support/).

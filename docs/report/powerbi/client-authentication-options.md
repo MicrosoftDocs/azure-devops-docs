@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 
@@ -18,13 +18,13 @@ ms.date: 04/05/2019
 
 ::: moniker range="azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Azure Active Directory (<strong>Azure AD</strong>) for the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Azure Active Directory (**Azure AD**) for the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (<strong>PAT</strong>s).
+When connecting from Power BI or Excel to Analytics using the OData feed, choose Windows credentials as the most secure option. The next secure option is the use of Personal Access Tokens (**PATs**).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ To change an existing URL to use Azure AD instead of a PAT or AAC, see [Change a
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Windows
 
@@ -116,7 +116,7 @@ authentication screens are identical. This walkthrough is done using Power BI De
 	
 	::: moniker-end  
 
-	::: moniker range="azure-devops-2019"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 
 	<img src="media/authentication-6-onprem.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
 
@@ -132,13 +132,14 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
      ::: moniker-end
 
-     ::: moniker range="azure-devops-2019"
+     ::: moniker range=">= azure-devops-2019 < azure-devops"
 
      <img src="media/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
      ::: moniker-end
 
 <a id="update-credentials">  </a>
+
 ## Change authentication credentials
 
 If you receive an access denied message, you may need to change your authentication credentials. Power Query caches your credential information so you only have to enter it once. However, Personal Access Tokens expire and you may need to update or change your authentication information. 
@@ -155,7 +156,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range="azure-devops-2019"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 
 	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
@@ -169,7 +170,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker-end
 
-	::: moniker range="azure-devops-2019"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 
 	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
 
@@ -189,13 +190,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Select the correct URL to the OData Feed and click Edit." style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
-	::: moniker range="azure-devops-2019"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit, on-premises version." style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
@@ -203,13 +204,13 @@ If you receive an access denied message, you may need to change your authenticat
  
 	::: moniker range="azure-devops"
 
-	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" />
 
 	::: moniker-end
 
-	::: moniker range="azure-devops-2019"
+	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, next dialog." style="border: 2px solid #C3C3C3;" /> 
 
 	::: moniker-end
 

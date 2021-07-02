@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -20,18 +20,18 @@ The reporting warehouse is a traditional data warehouse that consists of a relat
 
 ![Data Warehouse Architecture](media/IC777266.png)
 
-All reportable data from all team projects that are defined in all project collections for a TFS deployment is written to a single relational database (Tfs_Warehouse). Data from that warehouse is then processed and written to the Analysis Services cube (Tfs_Analysis). Collecting data into a single data warehouse supports reporting across team projects and project collections. To learn more, see [Components of the TFS data warehouse](https://msdn.microsoft.com/library/ms244687.aspx). 
+All reportable data from all team projects that are defined in all project collections for a TFS deployment is written to a single relational database (Tfs_Warehouse). Data from that warehouse is then processed and written to the Analysis Services cube (Tfs_Analysis). Collecting data into a single data warehouse supports reporting across team projects and project collections. To learn more, see [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md?viewFallbackFrom=vsts). 
 
-With SQL Server Reporting Services, you gain access to many default Excel and SQL Server Reporting Services reports. These reports aggregate metrics from work items, version control, test results, and builds. See [Dashboards and reports](../overview.md).
+With SQL Server Reporting Services, you gain access to many default Excel and SQL Server Reporting Services reports. These reports aggregate metrics from work items, version control, test results, and builds. See [Dashboards and reports](../dashboards/overview.md).
 
-Without these services, you can [create status and trend charts from work item queries](../charts.md) directly from the operational data stores.
+Without these services, you can [create status and trend charts from work item queries](../dashboards/charts.md) directly from the operational data stores.
 
 ## View, add, update, or customize reports or report functionality
 You use work item fields to track data for a work item type, to define the filter criteria for queries, and to design reports. To support reporting, you can add fields or change the attributes of existing fields. When you add or modify fields, you will want to apply systematic naming conventions to make sure that data is logically grouped into folders in the cube. To learn more, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 
-To bulk add or update reports for a team project, see [Upload reports to a team project](upload-reports.md). To manage Reporting Services Reports, see [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) .
+To bulk add or update reports for a team project, see [Upload reports to a team project](upload-reports.md). To manage Reporting Services Reports, see [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs) .
 
-Depending on the process template that you use to create your team project, you may have several reports already defined. You can customize these reports additionally or create new reports. These reports may contain new data fields that you added to work item types. See [Create, customize, and manage reports for Visual Studio devops](../overview.md).
+Depending on the process template that you use to create your team project, you may have several reports already defined. You can customize these reports additionally or create new reports. These reports may contain new data fields that you added to work item types. See [Create, customize, and manage reports for Visual Studio devops](../dashboards/overview.md).
 
 ## Manage permissions to view and create reports
 To create reports that access data in the cube, you must add team members to the **TFSWarehouseDataReader** role. To view or refresh data within a report, you must add team members to one or more of the Report Server roles. See [Grant permissions to view or create reports in TFS](grant-permissions-to-reports.md). 
@@ -78,4 +78,4 @@ You can manage the warehouse and analysis services cube to address the following
 [Understanding SQL Server and SQL Server Reporting Services](/azure/devops/server/architecture/sql-server-databases) describes the relationships and dependencies between SQL Server and TFS.
 - [Manage team project collections](/azure/devops/server/admin/manage-project-collections) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
 
-- [Data Warehouse extensibility](https://msdn.microsoft.com/library/bb130342.aspx) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor. 
+- [Data Warehouse extensibility](/previous-versions/visualstudio/visual-studio-2008/bb130342(v=vs.90)) describes how you can add new data types to the data warehouse by implementing a warehouse adaptor.

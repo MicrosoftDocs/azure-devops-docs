@@ -1,51 +1,52 @@
-- name: About Boards & Kanban
+- name: About Boards and Kanban
   href: kanban-overview.md
-- name: Quickstarts
+- name: Kanban board quickstart
+  href: kanban-quickstart.md
+- name: Reorder cards
+  href: reorder-cards.md
+- name: Add tasks or child items as checklists
+  href: add-task-checklists.md
+  displayname: tasks, subtasks, todo lists, bugs, tests, features, epics, user stories, product backlog items, requirements, annotations, parent
+- name: Define features & epics
+  href: kanban-epics-features-stories.md
+- name: Filter your Kanban board
+  href: ../backlogs/filter-backlogs-boards-plans.md 
+  displayname: reorder, group, parent, tags  
+- name: Kanban board basics
+  href: kanban-basics.md
+- name: Add, run, & update inline tests
+  href: add-run-update-tests.md
+- name: Customize your boards
   items:
-  - name: Kanban board quickstart
-    href: kanban-quickstart.md
+  - name: Kanban board controls
+    href: kanban-board-controls.md
   - name: Enable live updates
     href: live-updates.md
-  - name: Drive Git development
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
-- name: Tutorials
-  items:
-  - name: Kanban board basics
-    href: kanban-basics.md
-  - name: Add task checklists
-    href: add-task-checklists.md
-  - name: "Add, run, & update inline tests"
-    href: add-run-update-tests.md
-  - name: "Define features & epics"
-    href: kanban-epics-features-stories.md
-- name: Concepts
-  items:
-  - name: Kanban best practices
-    href: best-practices-kanban.md
-  - name: Kanban key concepts
-    href: kanban-key-concepts.md
-- name: How-to guides 
-  items:
   - name: Add or edit columns
     href: add-columns.md
+    displayname: remove, state mapping, rename  
   - name: Customize cards
-    href: ../../boards/boards/customize-cards.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: customize-cards.md  
+    displayname: styles, annotations, tests, tag colors  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work (swimlanes)
     href: expedite-work.md
   - name: Split columns
     href: split-columns.md
+    displayname: doing, done, bottlenecks  
   - name: Definition of done
     href: definition-of-done.md
-  - name: Reorder cards
-    href: reorder-cards.md
-  - name: Filter your Kanban board
-    href: filter-kanban-board.md 
-- name: Reference
+  - name: Show bugs on backlogs & boards
+    href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
+    displayname: nested, hierarchical
+- name: Best practices, monitoring, & reports
   items:
-  - name: Kanban board controls
-    href: kanban-board-controls.md
-  - name: Kanban board keyboard shortcuts
-    href: kanban-board-keyboard-shortcuts.md
-
+  - name: Kanban best practices
+    href: best-practices-kanban.md
+  - name: Kanban concepts
+    href: kanban-key-concepts.md
+  - name: View/configure CFD
+    href: ../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Configure Lead/Cycle time widget
+    href: ../../report/dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json

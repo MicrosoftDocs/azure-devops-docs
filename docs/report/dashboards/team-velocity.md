@@ -10,7 +10,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 
-ms.date: 07/22/2019
+ms.date: 07/14/2020
 ---
 
 
@@ -34,6 +34,10 @@ Teams track their velocity to help them determine how much work they can perform
 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
+> [!NOTE]
+> For TFS 2018 and earlier versions, you can only view team velocity. There is no configuration of this report.  
+
+
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
 **Example Velocity chart from the work tracking data store**  
@@ -41,13 +45,16 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 ::: moniker-end  
 
-Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. If your team have not completed any sprint or if you are working on items before any sprint start date, Velocity would have no data to analyze and forecast. Therefore you might see the message: "Set iteration dates to use this widget". To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+
+**Example: Velocity showing Set iteration dates to use this widget**  
+![Set iteration dates](media/team-velocity-set-iteration-dates.png)
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
 Use this article to learn: 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 > [!div class="checklist"]
 > * How to configure the Velocity widget (Analytics)
@@ -73,12 +80,20 @@ Use this article to learn:
 
 ::: moniker-end
 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ## Open your backlog from the web portal
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
@@ -103,7 +118,7 @@ Use this article to learn:
 
 	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![home icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -142,7 +157,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 ## View the Velocity in-context report   
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 Velocity reports are available for each backlog level, both product and portfolio backlogs. Each report provides interactive controls to provide each user the view of interest to them.  
 
@@ -163,23 +178,24 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
 
-	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration. 
-
-	- **Planned:** Number of work items defined at the start of the sprint  
-	- **Completed:** Number of work items completed within the sprint start and end dates  
-	- **Completed Late:** Number of work items completed after the end of the sprint date  
-	- **Incomplete:** Number of work items which as yet aren't  completed.  
+	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
+	- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+		> [!TIP]   
+		> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+	- **Completed** - calculated based on the amount of work  assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+	- **Completed Late**  - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.  
+	- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed. 
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
-1. To add the report to a dashboard, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
 	
 	Select the dashboard and choose **OK**.  
 
-1. To return to the Analytics summary, choose the ![ ](../../media/icons/back-arrow.png) back arrow.
+1. To return to the Analytics summary, choose the :::image type="icon" source="../../media/icons/back-arrow.png" border="false"::: back arrow.
 
 ::: moniker-end
 
@@ -191,18 +207,18 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	![Open Boards, Backlogs, for a team](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. Open the velocity chart.  
 
@@ -223,8 +239,6 @@ Velocity reports are available for each backlog level, both product and portfoli
    > [!NOTE]  
    > Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
    ::: moniker-end
-
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -256,9 +270,9 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
-- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+- If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
@@ -266,7 +280,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 
-1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+1. If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 

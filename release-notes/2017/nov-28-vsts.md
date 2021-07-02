@@ -118,7 +118,7 @@ Here are just some of the things you can do with VSTS CLI:
 - Create a new project or Git repo
 - Update a work item
 
-To learn more, see the [VSTS CLI docs](https://aka.ms/vsts-cli). To view the source, visit the [vsts-cli repo](https://aka.ms/vsts-cli-source).
+To learn more, see the [VSTS CLI docs](/cli/vsts/). To view the source, visit the [vsts-cli repo](https://aka.ms/vsts-cli-source).
 
 ## Work
 
@@ -214,7 +214,7 @@ Whenever a topic branch is updated in a repository, a “suggestion” to create
 
 ### Editor settings
 
-Last Update we exposed [new editor settings for word wrap and white space](/azure/devops/release-notes/2017/oct-30-vsts#toggle-word-wrap-and-white-space-in-diff-views). This Update we’re making it easier to manage those settings and persist them with other editor preferences. Click on the editor preferences gear in the pull request editor or diff view. In the Files view, select the User Preferences option on the right-click menu.
+Last Update we exposed [new editor settings for word wrap and white space](./oct-30-vsts.md#toggle-word-wrap-and-white-space-in-diff-views). This Update we’re making it easier to manage those settings and persist them with other editor preferences. Click on the editor preferences gear in the pull request editor or diff view. In the Files view, select the User Preferences option on the right-click menu.
 
 > [!div class="mx-imgBorder"]
 > ![Editor gear](media/126_08.png)
@@ -370,7 +370,7 @@ NuGet.org as an upstream source is now available, which enables you to use packa
 
 ### Maven support now generally available
 
-Maven packages enable Java developers to easily share code and components. Check out our [getting started guide](https://go.microsoft.com/fwlink/?linkid=848427) for how to share Maven artifacts using Package Management.
+Maven packages enable Java developers to easily share code and components. Check out our [getting started guide](/azure/devops/artifacts/get-started-maven) for how to share Maven artifacts using Package Management.
 
 > [!div class="mx-imgBorder"]
 > ![Maven feed connect](media/126_39.png)
@@ -433,7 +433,7 @@ This feature was prioritized based on a suggestion.
 
 ### Link work items and Wiki pages
 
-Earlier you were able to [reference work items to a wiki page](/azure/devops/release-notes/2017/oct-06-vsts#reference-work-items-in-wiki). Now you can link a work item to a wiki and vice versa. You can link work items to wiki to create epic pages, release notes, and planning content that will help you track the work items associated with a wiki page and validate what % of your epic page is complete.
+Earlier you were able to [reference work items to a wiki page](./oct-06-vsts.md#reference-work-items-in-wiki). Now you can link a work item to a wiki and vice versa. You can link work items to wiki to create epic pages, release notes, and planning content that will help you track the work items associated with a wiki page and validate what % of your epic page is complete.
 
 > [!div class="mx-imgBorder"]
 > ![Link work items from a wiki](media/126_13.png)
@@ -450,7 +450,7 @@ Add a link to a wiki page from a work item through the new “Wiki page” link 
 
 ### Rich markdown rendering in code repo markdown
 
-You can now create rich README.MD files in the code repositories. The markdown rendering of the MD files in code repositories now supports HTML tags, Block quotes, Emojis, image resizing, and mathematical formulas. There is parity in [markdown rendering](https://go.microsoft.com/fwlink/?linkid=851652) in Wiki and MD files in code.
+You can now create rich README.MD files in the code repositories. The markdown rendering of the MD files in code repositories now supports HTML tags, Block quotes, Emojis, image resizing, and mathematical formulas. There is parity in [markdown rendering](/azure/devops/project/wiki/markdown-guidance) in Wiki and MD files in code.
 
 ### Wiki supports mathematical formulas
 

@@ -1,8 +1,9 @@
 ---
 title: Rollup estimated and actual work using Project
 titleSuffix: Azure Boards 
-description: Provides summed values of select fields for all child work items of a parent.
+description: Use Microsoft Project to automatically generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.
 ms.technology: devops-agile
+ms.topic: conceptual
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
 ms.author: kaelli
 author: KathrynEE
@@ -61,7 +62,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ##  Update the Microsoft Project Mapping file  
   
-1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).  
+1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file).  
   
      Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
@@ -90,7 +91,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  Link all work items that should support rollup using parent-child links.  For example, create tasks that link to user stories.  
   
-     You can do this easily by [creating tasks from the taskboard](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
+     You can do this easily by [creating tasks from the taskboard](../../sprints/assign-work-sprint.md), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
   
 2.  Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.  
   
@@ -100,7 +101,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 4.  If you want to roll up to a feature level, link user stories, or other backlog items, to features using parent-child links.  
   
-     You can quickly link items [using the mapping pane](https://msdn.microsoft.com/658f5e1c-ccdd-48da-bd88-4637273c666d).  
+     You can quickly link items [using the mapping pane](../organize-backlog.md).  
   
 ## Create a query of the work items you want to rollup  
  If you've created your work items in Project, then you can proceed to creating your schedule in Project.  
@@ -109,7 +110,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  ![Create query from backlog page](media/alm_rup_createquery.png "ALM_RUP_CreateQuery")  
   
- For more information, about tree queries, see [Use the query editor to list and manage queries](https://msdn.microsoft.com/c9b6d41c-47ce-4a29-8a1c-ba44d8c4809a)  
+ For more information, about tree queries, see [Use the query editor to list and manage queries](../../queries/using-queries.md)  
   
 ## Create your schedule in Project  
   
@@ -157,7 +158,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file? 
  
- **A:** See [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md).  
+ **A:** See [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).  
   
 ### Q: What's the difference between manual and automated task scheduling? 
  
@@ -168,7 +169,8 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
  By using manually scheduled tasks, which are indicated by the ![Pinned task icon](media/tfs_oiproj_pintask_icon.png "TFS_OIProj_PinTask_Icon") icon, you can manually schedule the duration and the start and finish dates for a task. Team members can place a manually scheduled task anywhere in their schedules, and Project will not move it.  
   
  Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](media/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
-  
-### Q: Can I get a rollup of team capacity?
-  
- **A:** No. The data entered for team capacity isn't stored in the regular data stores.
+
+## Related articles
+
+-  [Azure Boards FAQs](../../faqs.yml) 
+-  [Excel FAQs](faqs.yml)  

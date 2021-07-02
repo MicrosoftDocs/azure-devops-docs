@@ -8,7 +8,7 @@ ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/13/2020
+ms.date: 12/18/2020
 ---
 
 # Connect to Analytics data by using the Power BI OData feed
@@ -19,6 +19,8 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
 > [!IMPORTANT]  
 > The method demonstrated in this article works for small organizations, because it always pulls in all the data into Power BI. Most of the filtering that's specified in the Power Query Editor is done client-side. For information about other approaches, see [Power BI integration Overview](overview.md). 
+
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Access the Analytics OData feed
 
@@ -88,7 +90,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
     d. Replace `[Implementation="2.0"]` with the following string:  
         `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
     
-    ![The Advanced Editor Query pane](media/odataquery-powerbi-advancededitor2.png)
+    ![Replaced string.](media/odataquery-powerbi-advancededitor2.png)
     
 1. Select **Close & Apply**. 
 

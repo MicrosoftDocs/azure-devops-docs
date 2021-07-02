@@ -1,4 +1,4 @@
-﻿---
+---
 title: Storyboard your ideas with Microsoft PowerPoint
 titleSuffix: TFS 
 description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '<= tfs-2018'
 ms.date: 09/06/2019
 ---
@@ -37,9 +37,12 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 
     <img src="media/IC652012.png" alt="Start PowerPoint Storyboarding from work item" style="border: 1px solid #C3C3C3;" /> 
 
-    Or, from the web portal and the new work item form, click the **Start storyboarding** menu option from any valid work item.     
+    Or, from the web portal and the new work item form, choose the **Start storyboarding** menu option from any valid work item.     
 
 	<img src="../media/add-work-item-start-storyboarding.png" alt="Work item form, Start storyboarding menu option" style="border: 1px solid #C3C3C3;" /> 
+
+	> [!NOTE]  
+	> Becuase this feature has been deprecated, the **Start storyboarding** menu option is no longer available from the web form for Azure DevOps Services or Azure DevOps Server 2019 and later versions.    
 
 4.  Add a background shape that's appropriate for your app. To add a shape, just drag it onto the slide.
 
@@ -58,6 +61,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 >- Take screenshots of your apps. For example, add a screenshot as the background of a master slide.   
 
 <a id="link-storyboard">  </a>
+
 ## Link your storyboard to a backlog item
 
 When you share your storyboards to a shared network location, you can link the storyboards to a backlog item. That way, your team members will be able to open the storyboards from the work items and annotate them with their suggestions.

@@ -1,21 +1,20 @@
-﻿---
+---
 title: Quickstart guide to customizing your Kanban boards
 titleSuffix: Azure Boards 
 description: Customize your issues board to show fields, add columns, and change card color
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2019
+ms.date: 07/09/2020
 ---
 
 
 # Customize your boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 
@@ -36,9 +35,9 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board setting settings.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](media/customize-boards/open-settings-s155.png)  
 	::: moniker-end
@@ -76,9 +75,9 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board setting settings.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](media/customize-boards/open-settings-agile-s155.png)  
 	::: moniker-end
@@ -133,7 +132,7 @@ To quickly assign fields from the card without having to open the work item, add
 	> [!div class="mx-imgBorder"]
 	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
@@ -148,9 +147,9 @@ To quickly assign fields from the card without having to open the work item, add
 	For example, here we uncheck **Show ID**, remove the **State** field, and add the **Priority** field. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-agile-change-priority.png) 
+	> ![Add the Priority field.](media/customize-boards/settings-fields-agile-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
@@ -233,7 +232,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 * * *
 
 > [!NOTE]   
-> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-wit.md#enable-disable).
+> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable).
 
 ## Review your changes 
 
@@ -244,28 +243,28 @@ After you close the settings dialog, refresh (F5) your board to view your change
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
+> ![The priority 1 items are colored, the others are not.](media/customize-boards/boards-customized-view.png) 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view-s155.png) 
+> ![The priority 1 items are colored, the others are not](media/customize-boards/boards-customized-view-s155.png) 
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-customized-view.png) 
 ::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
 
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view-s155.png)  
+> ![Customizations made in this article.](media/customize-boards/boards-agile-customized-view-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-agile-customized-view.png) 
 ::: moniker-end
 
 * * *

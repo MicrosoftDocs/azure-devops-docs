@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Remove Access to Version Control Files
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Remove Access to Version Control Files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 As a Team Foundation administrator, you may have to remove access to a file that is under version control. For example, someone may check in a file infected with a virus. You can also permanently destroy version controlled files. For more information, see [Destroy Version Controlled Files](destroy-version-controlled-files.md).
 
@@ -42,7 +40,7 @@ To remove access to Team Foundation version control files, you must belong to th
 
 4.  Create a new file and save the file in the same location and with the same name and extension as the latest version of the file that you want to overwrite.
 
-5.  Check in the file. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+5.  Check in the file. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
     > [!NOTE]
     > You might want to make sure that any client user who has a local copy of the file on their computer, removes any reference to the file in Solution Explorer and manually removes any copy of the file on their client computer.

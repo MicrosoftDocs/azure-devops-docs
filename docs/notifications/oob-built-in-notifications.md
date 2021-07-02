@@ -1,7 +1,7 @@
 ---
 title: Default and supported notifications
 titleSuffix: Azure DevOps
-description: Learn about out of the box or default notifications set in Azure DevOps or Team Foundation Server 
+description: Learn about out of the box or default notifications set in Azure DevOps.
 ms.technology: devops-collab
 ms.topic: conceptual
 toc: show
@@ -79,11 +79,5 @@ You can create subscriptions using the following templates for yourself, a team,
 ## Related articles
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md)
+- [Manage personal notifications](./manage-team-group-global-organization-notifications.md)
 - [Unsubscribe from a notification](unsubscribe-default-notification.md)
-
-
-
-
-
-

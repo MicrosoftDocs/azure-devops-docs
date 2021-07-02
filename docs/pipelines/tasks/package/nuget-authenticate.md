@@ -3,7 +3,7 @@ title: NuGet Authenticate
 ms.custom: seodec18
 description: Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories
 ms.topic: reference
-ms.date: 08/27/2019
+ms.date: 01/13/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -51,6 +51,7 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 </configuration>
 ```
 
+To use a service connection, specify the service connection in the `nuGetServiceConnections` input for the NuGet Authenticate task. You can then reference the service connection with `-ApiKey AzureArtifacts` in a task. 
 #### nuget.exe
 ```YAML
 - task: NuGetAuthenticate@0
@@ -131,13 +132,13 @@ The package source URL pointing to an Azure Artifacts feed may or may not contai
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### What tools are compatible with this task?
 
-This task will configure tools that support [NuGet cross platform plugins](https://docs.microsoft.com/nuget/reference/extensibility/nuget-cross-platform-plugins). Today, that includes nuget.exe, dotnet, and recent versions of MSBuild with built-in support for restoring NuGet packages.
+This task will configure tools that support [NuGet cross platform plugins](/nuget/reference/extensibility/nuget-cross-platform-plugins). Today, that includes nuget.exe, dotnet, and recent versions of MSBuild with built-in support for restoring NuGet packages.
 
 Specifically, this task will configure:
 * nuget.exe, version 4.8.5385 or higher
@@ -150,7 +151,7 @@ However, upgrading to the latest stable version is recommended if you encounter 
 
 Known issues in NuGet and in the Azure Artifacts Credential Provider can cause this type of error and updating to the latest nuget may help.  
 
-A [known issue](https://github.com/NuGet/Home/issues/8198) in some versions of nuget/dotnet can cause this error, especially during large restores on resource constrained machines. This issue is fixed in [NuGet 5.2](https://docs.microsoft.com/nuget/release-notes/nuget-5.2-rtm), as well as .NET Core SDK 2.1.80X and 2.2.40X. If you are using an older version, try upgrading your version of NuGet or dotnet. The [.NET Core Tool Installer](~/pipelines/tasks/tool/dotnet-core-tool-installer.md) task can be used to install a newer version of the .NET Core SDK.  
+A [known issue](https://github.com/NuGet/Home/issues/8198) in some versions of nuget/dotnet can cause this error, especially during large restores on resource constrained machines. This issue is fixed in [NuGet 5.2](/nuget/release-notes/nuget-5.2-rtm), as well as .NET Core SDK 2.1.80X and 2.2.40X. If you are using an older version, try upgrading your version of NuGet or dotnet. The [.NET Core Tool Installer](~/pipelines/tasks/tool/dotnet-core-tool-installer.md) task can be used to install a newer version of the .NET Core SDK.  
 
 There are also known issues with the Azure Artifacts Credential Provider (installed by this task), including [artifacts-credprovider/#77](https://github.com/microsoft/artifacts-credprovider/issues/77) and [artifacts-credprovider/#108](https://github.com/microsoft/artifacts-credprovider/issues/108). If you experience these issues, ensure you have the latest credential provider by setting the input `forceReinstallCredentialProvider` to `true` in the NuGet Authenticate task. This will also ensure your credential provider is automatically updated as issues are resolved.  
 
@@ -183,11 +184,11 @@ Instead:
 No. While this task itself will work behind a web proxy [your agent has been configured to use](~/pipelines/agents/proxy.md), it does not configure NuGet tools to use the proxy.
 
 To do so, you can either:
-* Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Please understand that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
+* Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Please understand that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
   >**Caution:**  
   >The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
 
-* Add the proxy settings to the [user-level nuget.config](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) file, either manually or using `nuget config -set` as described in the [nuget.config reference](https://docs.microsoft.com/nuget/reference/nuget-config-file#config-section) documentation.
+* Add the proxy settings to the [user-level nuget.config](/nuget/consume-packages/configuring-nuget-behavior) file, either manually or using `nuget config -set` as described in the [nuget.config reference](/nuget/reference/nuget-config-file#config-section) documentation.
   >**Caution:**  
   >The proxy settings (such as `http_proxy`) must be added to the user-level config. They will be ignored if specified in a different nuget.config file.
 
@@ -202,5 +203,9 @@ It then sets environment variables such as `VSS_NUGET_URI_PREFIXES`, `VSS_NUGET_
 When restoring or pushing packages, a NuGet tool executes the credential provider, which uses the above variables to determine if it should return credentials back to the tool.
 
 See the credential provider documentation for more details.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project hosting the feed, you must set up the other project to grant read/write access to the build service. See [Package permissions in Azure Pipelines](../../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for more details.
 
 <!-- ENDSECTION -->

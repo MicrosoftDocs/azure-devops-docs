@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Create and work with workspaces
 ms.assetid: 1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
 monikerRange: '>= tfs-2015'
@@ -14,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # Create and work with workspaces
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 
-In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you are making in different [branches](use-branches-isolate-risk-team-foundation-version-control.md).
+In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you are making in different [branches](./branching-strategies-with-tfvc.md).
 
 ## Add, edit, or remove a workspace
 
@@ -50,7 +48,7 @@ When you switch from one workspace to another, to avoid confusing yourself, make
 
     ![Switching workspaces from Team Explorer Home page](media/create-work-workspaces/IC720119.png)
 
-3.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), choose the workspace the workspace you want to work in.
+3.  In [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md), choose the workspace you want to work in.
 
     ![Switching workspace in Source Control Explorer](media/create-work-workspaces/IC700907.png)
 
@@ -76,7 +74,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: Can I reuse and share folder mappings?
 
-**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../../pipelines/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
+**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../../pipelines/repos/index.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
 
 #### Q: What does "Cloaked" mean?
 

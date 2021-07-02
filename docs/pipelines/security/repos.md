@@ -1,16 +1,17 @@
 ---
-title: Repository protection
-description: Securing repos and forks.
+title: Secure repositories
+description: Securing repos and forks
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
-ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.reviewer: vijayma
+ms.date: 05/18/2021
 monikerRange: '> azure-devops-2019'
 ---
 
 # Repository protection
 
 Source code, the pipeline's YAML file, and necessary scripts & tools are all stored in a version control repository.
-Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe.
+Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe. You can also [add pipeline permissions and checks to repositories](../process/repository-resource.md).  
+
 Also, you should review [default access control](../../organizations/security/default-git-permissions.md) for repositories.
 
 Because of Git's design, protection at a branch level will only carry you so far.
@@ -29,7 +30,7 @@ To protect your products from contributed code, consider the following recommend
 
 ### Don't provide secrets to fork builds
 
-By default, the pipelines you create do not build forks.
+By default, your pipelines do not build forks.
 If you decide to build forks, secrets and protected resources are not made available to the jobs in those pipelines by default.
 Don't turn off this latter protection.
 
@@ -58,6 +59,9 @@ That code can run through the same pipeline as your protected branches.
 Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline.
 While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
 
+If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model](../../organizations/security/permissions.md#git-repository-object-level).
+In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
+
 <!-- Coming Q1 CY20
 One way to solve this problem is by keeping the YAML file for your pipeline in a different repository than your source code.
 By keeping the YAML file in a separate repository, you can prevent unapproved contributors from making changes to the YAML file.
@@ -66,4 +70,4 @@ This can apply to a public project (with a separate private repo) as well as a n
 
 ## Next steps
 
-Next, learn about the additional protection offered by checks on [protected resources](resources.md).
+Next, learn about the more protection offered by checks on [protected resources](resources.md).

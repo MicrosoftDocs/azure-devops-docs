@@ -3,6 +3,7 @@ title: FIELD (Workflow) element reference
 titleSuffix: TFS
 description: Syntax and usage of the FIELD element used to specify rules and conditions on fields within the workflow of a work item type 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +14,7 @@ ms.date: 02/10/2017
 
 [!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
-You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](https://msdn.microsoft.com/vstudio/ms404857(v=vs.98).aspx)  
+You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](./../../organizations/settings/work/rule-reference.md?viewFallbackFrom=vsts)  
   
 > [!NOTE]  
 > For information about the **FIELD** (Definition) element, which you use to define fields for a type of work item, see [FIELD (Definition) element reference](field-definition-element-reference.md).  
@@ -60,19 +61,19 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 |-------------|-----------------|  
 |[ALLOWEDVALUES](define-pick-lists.md)|Optional. Defines a list of allowed values for the field. Allowed values are values that are available for selection in a field list on work item forms and in the query builder. You must select from one of these values.|  
 |[ALLOWEXISTINGVALUE](define-pick-lists.md)|Optional. Defines the field to allow existing values. This element allows the field values that already exist to be used, even if they are not valid. All new field values must be valid.|  
-|[CANNOTLOSEVALUE](apply-rule-work-item-field.md)|Optional. Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.|  
+|[CANNOTLOSEVALUE](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as cannot lose value. This element keeps the current field value and it cannot be cleared or made empty.|  
 |[COPY](define-default-copy-value-field.md)|Optional. Specifies another field that contains a value to be copied into the current field.|  
 |[DEFAULT](define-default-copy-value-field.md)|Optional. Defines a default value for the field.|  
-|[EMPTY](apply-rule-work-item-field.md)|Optional. Defines the field as empty.|  
-|[FROZEN](apply-rule-work-item-field.md)|Optional. Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.|  
+|[EMPTY](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as empty.|  
+|[FROZEN](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as frozen. A frozen field cannot be changed to any non-empty value after changes are committed. However, you can manually clear the field, save the work item, and then specify a different value.|  
 |[MATCH](apply-pattern-matching-to-string-field.md)|Optional. Defines a pattern for the field that the field value must match.|  
-|[NOTSAMEAS](apply-rule-work-item-field.md)|Optional. Specifies another field, the value of which cannot be identical to the value of the current field.|  
+|[NOTSAMEAS](../../organizations/settings/work/rule-reference.md)|Optional. Specifies another field, the value of which cannot be identical to the value of the current field.|  
 |[PROHIBITEDVALUES](define-pick-lists.md)|Optional. Defines a list of prohibited values for the field.|  
-|[READONLY](apply-rule-work-item-field.md)|Optional. Defines the field as read-only.|  
-|[REQUIRED](apply-rule-work-item-field.md)|Optional. Defines the field as required.|  
+|[READONLY](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as read-only.|  
+|[REQUIRED](../../organizations/settings/work/rule-reference.md)|Optional. Defines the field as required.|  
 |[SERVERDEFAULT](define-default-copy-value-field.md)|Optional. Specifies a server component that will provide the value for the field.|  
 |[SUGGESTEDVALUES](define-pick-lists.md)|Optional. Defines a list of suggested values for the field. Suggested values are values that are available for selection in a field list on work item forms and in the query builder. You can enter other values additionally to the ones in the list.|  
-|[VALIDUSER](apply-rule-work-item-field.md)|Optional. Specifies that the list of allowed values must consist only of valid users of the system.|  
+|[VALIDUSER](../../organizations/settings/work/rule-reference.md)|Optional. Specifies that the list of allowed values must consist only of valid users of the system.|  
 |[WHEN](assign-conditional-based-values-and-rules.md)|Optional. Specifies one or more rules to apply to the current field when another field has a specific value.|  
 |[WHENCHANGED](assign-conditional-based-values-and-rules.md)|Optional. Applies one or more rules to the current field when a specific field's value is changed.|  
 |[WHENNOT](assign-conditional-based-values-and-rules.md)|Optional. Applies one or more rules to the current field when another field does not have a specific value.|  
@@ -93,4 +94,3 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 ## Related articles   
 - [Change the workflow](change-workflow-wit.md)  
 - [Customize your work tracking experience](../customize-work.md)  
-  

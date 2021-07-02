@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download fileshare artifacts.
+Use this task to download fileshare artifacts.
 
 ::: moniker range="azure-devops"
 
@@ -28,7 +28,7 @@ Use this task in a build or release pipeline to download fileshare artifacts.
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Fileshare path</td><td>(Required) Example <code>\server\folder</code></td></tr>
 <tr><td>Artifact name</td><td>(Required) The name of the artifact to download.</td></tr>
-<tr><td>Matching pattern</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="https://aka.ms/minimatchexamples" data-raw-source="[More Information](https://aka.ms/minimatchexamples)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
+<tr><td>Matching pattern</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[More Information](../file-matching-patterns.md)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
 <tr><td>Download path</td><td>(Required) Path on the agent machine where the artifacts will be downloaded.</td></tr>
 <tr><td>Parallelization limit</td><td>(Optional) Number of files to download simultaneously.</td></tr>
 
@@ -42,4 +42,3 @@ Use this task in a build or release pipeline to download fileshare artifacts.
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-

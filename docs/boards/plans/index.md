@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: landing-page
+ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 10/14/2018
 ---
 
 # Plans (Agile at scale) 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 As your organization grows, you want your tools to scale to support your growing business needs. Azure Boards tools scale primarily by supporting the addition of teams. Each team provides configurable tools that allow teams to focus on their set of work. 
 
@@ -60,6 +60,6 @@ To learn more, see [Add and manage dashboards](../../report/dashboards/dashboard
 - [Visibility across teams](visibility-across-teams.md)   
 - [Agile culture and scale](agile-culture.md)   
 - [Practices that scale](practices-that-scale.md)
-- [Agile culture](/azure/devops/learn/agile/agile-culture)  
-- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)  
-- [Creating productive teams](/azure/devops/learn/agile/productive-teams)    
+- [Agile culture](/devops/plan/adopting-agile)  
+- [Scale Agile to large teams](/devops/plan/scaling-agile)  
+- [Creating productive teams](/devops/plan/building-productive-teams)    

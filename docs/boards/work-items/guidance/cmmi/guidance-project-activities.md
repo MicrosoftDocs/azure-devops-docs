@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Project activities
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 To make the most effective use of MSF for [CMMI Process Improvement](guidance-background-to-cmmi.md), you should organize your project into a series of iterations, typically between four and eight weeks long. This helps you reduce the risks to your project that stem from shifting requirements and implementation costs. Iterative project structure is an important contribution to meeting the risk management requirements of CMMI.  
   
@@ -48,7 +48,7 @@ To make the most effective use of MSF for [CMMI Process Improvement](guidance-ba
 ### Exploring an existing product  
  The goal of your project might be to update a product that already exists. In this case, if the team is unfamiliar with the product, exploration of the code is an activity for Iteration 0. Each development task in subsequent iterations will also involve understanding the code in a particular locality and tracing the consequences of changing it.  
   
- For more information, see [Visualize code](https://msdn.microsoft.com/library/dd409365).  
+ For more information, see [Visualize code](/visualstudio/modeling/visualize-code).  
   
 ## During the project  
  The plan is reviewed and subject to change throughout the project.  

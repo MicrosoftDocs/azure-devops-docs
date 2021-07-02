@@ -27,7 +27,7 @@ If you don't have a project yet, [create one](../../user-guide/sign-up-invite-te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.  
 
@@ -39,7 +39,7 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 
 Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -98,7 +98,7 @@ Select configurations are made to teams through the team settings pages. For an 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../media/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
+You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](../../organizations/settings/media/team-defaults/open-team-settings-horz.png)  
@@ -133,7 +133,7 @@ Administrators configure resources for a project and manage project-level permis
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From a user context, open **Project settings** by choosing the ![ ](../../media/icons/gear_icon.png) gear icon. 
+From a user context, open **Project settings** by choosing the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -141,7 +141,7 @@ From a user context, open **Project settings** by choosing the ![ ](../../media/
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
  
-Open any admin page by choosing it's name. Choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 ![Project Settings](../../media/settings/open-project-settings-horz.png) 
 
@@ -151,7 +151,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../m
 
 <a id="admin-intro-tfs-2017-1" />
 
-Open any admin page by choosing it's name. Choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 **TFS 2017.2**
 
@@ -173,6 +173,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../m
 <a id="collection-admin-context" /> 
 
 ::: moniker range="azure-devops"
+
 ## Open Organization settings 
 
 Organization owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Organization settings pages. This includes managing permissions at the organization-level. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
@@ -180,16 +181,17 @@ Organization owners and members of the Project Collection Administrators group c
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
+
 ## Open Collection settings 
 
 Members of the Project Collection Administrators group configure resources for all projects or the entire project collection from the Collection settings pages. This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
@@ -204,7 +206,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
+1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../media/settings/open-organization-settings.png) 
@@ -218,11 +220,12 @@ Members of the Project Collection Administrators group configure resources for a
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 ## Open Server settings 
 
-Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. <!---This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin). -->
+Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. 
 
-1. From the web portal home page for a project, choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon and select **Server settings**. 
+1. From the web portal home page for a project, choose or hover over the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon and select **Server settings**. 
 
 	<img src="../../organizations/security/media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
@@ -235,5 +238,5 @@ Members of the Team Foundation Server Administrators group configure resources f
 
 ## Related articles 
 
-- [Manage projects](../../organizations/projects/index.md)
+- [Manage projects](../../organizations/projects/about-projects.md)
 - [About team, project, and admin settings](../../organizations/settings/about-settings.md)
