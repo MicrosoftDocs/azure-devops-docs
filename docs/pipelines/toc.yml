@@ -140,6 +140,9 @@
         - name: Use secrets from Azure Key Vault
           href: release/azure-key-vault.md
           displayName: secrets, access policies, key vault
+        - name: Use Azure Key Vault in your YAML Pipeline
+          href: release/key-vault-in-own-project.md
+          displayName: key vault, secrets, YAML pipeline
     - name: Approvals, checks, & gates
       items:
         - name: Release approval and gates overview
