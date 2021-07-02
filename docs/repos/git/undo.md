@@ -35,7 +35,7 @@ In this tutorial you learn how to:
 Restore file contents back to a known good version, removing unwanted changes.
 
 > [!WARNING]
-> These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
+> These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.yml#faq) them instead.
 
 #### [Visual Studio](#tab/visual-studio/)
 
