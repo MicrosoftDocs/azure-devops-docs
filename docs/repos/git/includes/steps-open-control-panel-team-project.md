@@ -6,4 +6,4 @@ ms.topic: include
 
 2. Go to the control panel.
 
-   ![Administer account](../media/control-panel-launch-icon.png)
+   ![Administer account](/azure/devops/repos/git/media/control-panel-launch-icon.png)

@@ -9,20 +9,18 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Kanban key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also: 
 - [Agile glossary](../work-items/agile-glossary.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md)  
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
-
-[!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
 ## Blocker
 
@@ -32,15 +30,13 @@ An issue that prevents work from progressing. You can highlight work that is blo
 
 A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their impact and provides a mechanism for controlling work flowing through the process. Learn more: [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).
 
-[!INCLUDE [temp](../../includes/glossary-terms/bugs.md)] 
-
 ::: moniker range=">= tfs-2015" 
  
 ## Card reordering 
 
 Card reordering is a configurable setting for a team's Kanban board that either forces cards to maintain the backlog priority when dragged and dropped on the board, or allows the priority order to change. Learn more: [Reorder cards](reorder-cards.md). 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 ::: moniker-end  
 
@@ -91,8 +87,6 @@ Live updates is a Kanban board view option which when enabled automatically refr
 
 ::: moniker-end   
 
-[!INCLUDE [temp](../../includes/glossary-terms/issues.md)] 
-
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog-item.md)] 
@@ -129,7 +123,7 @@ Split columns lets your team implement a pull mechanism within the workflow proc
 
 ## Task checklists
 
-A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add task checklists](add-task-checklists.md). 
+A task is a type of work item used to track work required to complete a user story or product backlog item. You can add tasks from your Kanban board which appear as a checklist of work to be done. As you complete a task, you can update it's status by checking the checkbox for the task.  Learn more: [Add tasks or child items as checklists](add-task-checklists.md). 
 
 ::: moniker-end  
 
@@ -159,13 +153,13 @@ The State and Reason fields differ depending on the work item type and process s
 
 [!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You can customize your workflow states, adding states or renaming states. Learn more: [Customize the workflow](../../organizations/settings/work/customize-process-workflow.md). 
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops-2019"  
 
 You can customize your workflow states, adding states, renaming states, and changing state transitions and reasons. Learn more: [Customize the workflow](../../reference/xml/change-workflow-wit.md). 
 

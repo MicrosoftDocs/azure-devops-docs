@@ -1,4 +1,4 @@
-﻿---
+---
 title: Copy list of stories, issues, or other work items
 titleSuffix: Azure Boards   
 description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018
 ---
 
 # Copy a list of work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="html"></a>
 
@@ -23,14 +23,14 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 ::: moniker range="azure-devops"
 
 > [!TIP]  
->The data copied with **Copy to clipboard** is the same as that copied when you select **Email ...**.  
+> The data copied with **Copy to clipboard** is the same as that copied when you select **Email ...**.  
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="<= azure-devops-2020"  
 
 > [!TIP]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
+> The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 
 ::: moniker-end  
 
@@ -43,7 +43,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 	Here we multi-select from the product backlog and choose **Copy to clipboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-wi-copy-to-clipboard-ts-1.png)
+	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-work-item-copy-to-clipboard-ts-1.png)
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 	Here we multi-select from the backlog page.
 
-	![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-wi-copy-as-html-2015.png)
+	![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-work-item-copy-as-html-2015.png)
  
 ::: moniker-end 
 

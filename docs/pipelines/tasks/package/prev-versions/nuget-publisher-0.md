@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 **Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-Use this task in a build or release pipeline to publish your NuGet package to a server and update your feed.
+Use this task to publish your NuGet package to a server and update your feed.
 
 ## Demands
 

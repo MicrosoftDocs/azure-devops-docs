@@ -8,11 +8,9 @@ ms.technology: devops-agile
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.author: kaelli
 author: KathrynEE
-ms.author: kaelli
-author: KathrynEE
-ms.topic: conceptual
+ms.topic: how-to
 monikerRange: '>= tfs-2015'
-ms.date: 02/14/2019
+ms.date: 03/24/2021
 ---
 
 # Split columns
@@ -22,7 +20,7 @@ You use your Kanban board to visualize the flow of work, and monitor how items a
 
 However, a lag often exists between when work gets moved into a column and when work actually starts. To counter that lag and reveal the actual state of work in progress, you can turn on split columns.  
 
-When split, each column contains two sub-columns, Doing and Done.
+When split, each column contains two sub-columns, **Doing** and **Done**.
 
 ![Kanban with split columns](media/kanban-board-split-columns-example-chart.png)  
 
@@ -64,7 +62,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -88,7 +86,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
@@ -109,7 +107,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 ::: moniker range="tfs-2015"  
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
@@ -130,10 +128,28 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
    
 ::: moniker-end
 
+::: moniker range=">= tfs-2015"  
+
+## List work items in a Doing or Done column 
+
+You can query for work items in a split column using the **Board Column Done** field. This field takes of a value of False when in the Doing column and True when in the Done column. 
+
+For examples on querying Board columns, see [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md#kanban_query_fields)  
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+> [!NOTE]   
+> Kanban query fields are available with TFS 2015.1 or later versions. 
+::: moniker-end
+
+
+
 
 ## Related articles   
 
 - [Add columns](add-columns.md)  
+- [Query by assignment or workflow changes](../queries/query-by-workflow-changes.md)
 - [Work in Progress limits](wip-limits.md)  
 - [Add swimlanes, expedite work](expedite-work.md)   
 - [Definition of Done](definition-of-done.md)  

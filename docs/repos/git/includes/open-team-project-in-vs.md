@@ -13,6 +13,6 @@ ms.topic: include
    (```https://dev.azure.com/{yourorganization}/{yourteamproject}```)
    and then open Visual Studio to connect to your project.
 
-	![On your project overview page, click Open in Visual Studio](../../../media/GoHomeOpenInVisualStudio.png)
+	![On your project overview page, click Open in Visual Studio](/azure/devops/media/GoHomeOpenInVisualStudio.png)
 
-3. Sign in to Azure DevOps Services from Visual Studio. 
+3. Sign in to Azure DevOps Services from Visual Studio.

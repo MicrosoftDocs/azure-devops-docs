@@ -108,7 +108,7 @@
     },
     "instanceNameFormat": {
       "type": "string",
-      "description": "This is how the task will be displayed within the build step list - you can use variable values by using $(variablename)"
+      "description": "This is how the task gets displayed within the build step list - you can use variable values by using $(variablename)"
     },
     "inputs": {
       "type": "array",
@@ -167,11 +167,11 @@
           },
           "groupName": {
             "type": "string",
-            "description": "Setting this to the name of a group defined in 'groups' will place the input into that group."
+            "description": "Setting this to the name of a group defined in 'groups' places the input into that group."
           },
           "visibleRule": {
             "type": "string",
-            "description": "Allows you to define a rule which dictates when the input will be visible to a user, for example \"variableName = value\""
+            "description": "Allows you to define a rule which dictates when the input becomes visible to a user, for example \"variableName = value\""
           },
           "properties": {
             "type": "object",

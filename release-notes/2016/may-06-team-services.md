@@ -21,7 +21,7 @@ First, we’ve significantly improved the formatting and usability of emails sen
 
 ## Checkbox control
 
-Moving on to another long overdue item… with this deployment, you can now add a checkbox control to your work items. This new field type (Boolean) has all the properties of normal fields and can be added to any type in your process. When displayed on cards or in a query result, the value is shown as True/False. For guidance on how to add a Boolean field to your process, please see [Customize a field for a process](https://msdn.microsoft.com/Library/vs/alm/Work/process/customize-process-field) in our documentation.
+Moving on to another long overdue item… with this deployment, you can now add a checkbox control to your work items. This new field type (Boolean) has all the properties of normal fields and can be added to any type in your process. When displayed on cards or in a query result, the value is shown as True/False. For guidance on how to add a Boolean field to your process, please see [Customize a field for a process](/azure/devops/organizations/settings/work/customize-process-field) in our documentation.
 
 ![Checkbox control added to a work item](media/5_06_02.png)
 
@@ -90,7 +90,7 @@ Additionally, you’ll find these new features:
 
 -**Schedule Based Deployment Condition.** You can now configure a condition on an environment to pick up the successful deployments (or the latest one) from another environment and promote them at the selected time. This capability allows you to have time-based deployments that happen on a repeatable schedule. Chose the Deployment Condition tab in your environment to configure the schedule.
 
--**Release Management REST APIs.** You can now use the REST APIs for Release Management service. They are published at: [/azure/devops/integrate/](/azure/devops/integrate/). Most of these APIs work with the on-premises releases of RM features in TFS 2015 Update 2 as well (changes between TFS and Team Services versions are indicated in the API docs). You can find some basic examples on how to use these APIs in this [blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+-**Release Management REST APIs.** You can now use the REST APIs for Release Management service. They are published at: [/azure/devops/integrate/](/azure/devops/integrate/). Most of these APIs work with the on-premises releases of RM features in TFS 2015 Update 2 as well (changes between TFS and Team Services versions are indicated in the API docs). You can find some basic examples on how to use these APIs in this [blog post](/archive/blogs/chandananjani/using-releasemanagement-rest-apis).
 
 -**Simplified Release Definition Wizard.** We’ve simplified the wizard to create release definitions. You can enter most of the inputs to setup a definition with a single environment in this wizard. We have also simplified the process for adding more environments into a definition or to clone an environment. 
  

@@ -1,52 +1,53 @@
 ---
-title: Deploy a function app to Azure Functions windows
-description: Deploy to Azure Functions windows from Azure Pipelines or TFS
+title: Deploy a function app to Azure Functions (Windows)
+description: Deploy to Azure Functions for Windows from Azure Pipelines
 services: vsts
 ms.topic: conceptual
 ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 9/11/2019
+ms.date: 06/10/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Azure Function
+# Deploy an Azure Function (Windows)
+
+Azure Functions is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. You can use Azure Pipelines to deploy to Azure Functions and quickly get your code up-and-running.  
 
 You can automatically deploy your Azure Function after every successful build.
 
-## Before you begin
+## Prerequisites
 
-Based on the desired runtime, [import](../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository.
+[!INCLUDE [include](../includes/prerequisites.md)]
+
+
+## Create your Windows function App
+
+This is a step-by-step guide to using Azure Pipelines with Azure Functions for Windows.
 
 #### [.NET Core](#tab/dotnet-core/)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/functionApp
+https://github.com/microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/functionApp
 ```
 
 #### [Java](#tab/java)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/MicrosoftDocs/pipelines-java-function
+https://github.com/MicrosoftDocs/pipelines-java-function
 ```
 
 #### [Nodejs](#tab/nodejs)
 
-If you already have an app in GitHub that you want to deploy, you can try creating a pipeline for that code.
-
-However, if you are a new user, then you might get a better start by using our sample code. In that case, fork this repo in GitHub:
+Fork this repo in GitHub:
 
 ```
-    https://github.com/microsoft/devops-project-samples/tree/master/node/plain/functionApp
+https://github.com/microsoft/devops-project-samples/tree/master/node/plain/functionApp
 ```
 
 * * *
@@ -57,7 +58,14 @@ However, if you are a new user, then you might get a better start by using our s
 
 ::: moniker range="azure-devops"
  
-Follow the guidance in [Create your first pipeline](../create-first-pipeline.md) to setup the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and publish the source as an artifact.
+
+1. Sign in to your Azure DevOps organization and navigate to your project.
+2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+5. When the list of repositories appears, select your desired sample app repository.
+6. Azure Pipelines will analyze your repository and recommend a template. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
+7. A new run is started. Wait for the run to finish.
 
 ::: moniker-end
 
@@ -95,8 +103,7 @@ To get started:
 
 3. Save the pipeline and queue a build to see it in action.
 
-4. Create a release pipeline and select the **Deploy a function app to Azure Functions** template for your stage.
-   This automatically adds the necessary tasks. 
+4. Create a release pipeline and select the **Deploy a function app to Azure Functions** template for your stage. 
 
 5. Link the build pipeline as an artifact for this release pipeline. Save the release pipeline and create a release to see it in action.
 
@@ -108,7 +115,7 @@ Now you're ready to read through the rest of this topic to learn some of the mor
 
 ## Azure service connection
 
-The [**Azure Function App Deploy**](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppV1/README.md) task, similar to other built-in Azure tasks, requires an Azure service connection as an
+The [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md) requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from Azure Pipelines or Azure DevOps Server to Azure.
 
 #### [YAML](#tab/yaml)
@@ -133,7 +140,7 @@ variables:
     package: $(System.ArtifactsDirectory)/**/*.zip
 ```
 
-The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The **Azure Function App Deploy** task will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
+The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md) will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
 
 ::: moniker-end
 
@@ -165,13 +172,13 @@ Otherwise, to learn how to create an Azure service connection, see [Create an Az
 
 ::: moniker range=">= azure-devops-2019"
 
-The simplest way to deploy to an Azure Function is to use the [**Azure Function App Deploy**](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureFunctionAppV1/README.md) task.
+The simplest way to deploy to an Azure Function is to use the [Azure Function App Deploy task](../tasks/deploy/azure-function-app.md).
 
 To deploy to Azure Function, add the following snippet at the end of your **azure-pipelines.yml** file:
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

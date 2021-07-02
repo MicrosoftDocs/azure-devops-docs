@@ -59,7 +59,7 @@ For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
 Similarly, do not use an IP address to access the target server(s) when you use HTTP.
 Instead, in both scenarios, use HTTPS.
 
-> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](https://msdn.microsoft.com/library/aa384372.aspx).
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management).
 
 Follow these steps to configure each target server.
 
@@ -76,7 +76,7 @@ Follow these steps to configure each target server.
 
 1. Check your .NET Framework version. You need version 4.5
    or higher installed on every target machine. See
-   [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/library/hh925568(v=vs.110).aspx).
+   [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed).
 
 1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
    for Windows 10 and Windows Server 2016, or
@@ -151,7 +151,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    ![Selecting the build artifact](../media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
    ![Checking or setting the Continuous deployment trigger](../media/confirm-or-set-cd-trigger.png)
 
@@ -191,7 +191,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 [!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

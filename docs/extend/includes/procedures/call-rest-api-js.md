@@ -1,4 +1,4 @@
-1. Get the REST client. In this case, we're getting the [work item tracking client](../../reference/client/api/tfs/workitemtracking/restclient/workitemtrackinghttpclient2_2.md).
+1. Get the REST client. In this case, we're getting the [work item tracking client](/previous-versions/azure/devops/extend/reference/client/api/TFS/WorkItemTracking/RestClient/WorkItemTrackingHttpClient2_2).
 
 	``` javascript
     VSS.require(["VSS/Service", "TFS/WorkItemTracking/RestClient"], function (VSS_Service, TFS_Wit_WebApi) {

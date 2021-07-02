@@ -7,19 +7,19 @@ ms.topic: include
 Previously, when updating a work item, and a second team member was making changes to the same work item, the second user would lose their changes. Now, as long as you are both editing different fields, you will see live updates of the changes made to the work item.  
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_01.gif "Live reload")
+> ![Work item live reload.](../../media/154_01.gif "Live reload")
 
 
 ### Manage iteration and area paths from the command line
 
-You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](https://docs.microsoft.com/cli/azure/ext/azure-devops/boards?view=azure-cli-latest).
+You can now manage iteration and area paths from the command line by using the `az boards iteration` and `az boards area` commands. For example, you can setup and manage iteration and area paths interactively from the CLI, or automate the entire setup using a script. For more details about the commands and the syntax, see the documentation [here](/cli/azure/boards?view=azure-cli-latest&preserve-view=true).
 
 ### Work item parent column as column option
 
 You now have the option to see the parent of every work item in your product backlog or sprint backlog. To enable this feature, go to **Column Options** on the desired backlog, then add the **Parent** column.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_10.png "Add parent column as a column to a backlog")
+> ![Add parent column as a column to a backlog.](../../media/154_10.png "Add parent column as a column to a backlog")
 
 ### Instant search for work items
 
@@ -29,30 +29,30 @@ We've made it easy for you to find recently visited work items, boards, backlogs
 > You can invoke the search box by typing the keyboard shortcut "/".   
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_03.png "Navigate to recently viewed work items and board items from search")
+> ![Navigate to recently viewed work items and board items from search.](../../media/154_03.png "Navigate to recently viewed work items and board items from search")
 
 ### Search for a work item as you type
 
 Now you can view the work item search results as you type in the search box. This will help you quickly navigate to the work item of your choice.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_04.png "View search results as you type")
+> ![View search results as you type.](../../media/154_04.png "View search results as you type")
 
 In addition, you can navigate to code and wiki search results without having to switch tabs by landing on work items search and then changing tabs to view code wiki or package search results.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_05.png "Navigate to code and wiki search results from Azure Boards")
+> ![Navigate to code and wiki search results from Azure Boards.](../../media/154_05.png "Navigate to code and wiki search results from Azure Boards")
 
 ### Change the process used by a project
 
-Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](https://docs.microsoft.com/azure/devops/organizations/settings/work/manage-process?view=azure-devops#change-the-process-used-by-a-project). 
+Your tools should change as your team does, you can now switch your projects from any out-of-the-box process template to any other out-of-the-box process. For example, you can change your project from using Agile to Scrum, or Basic to Agile. You can find full step-by-step documentation [here](/azure/devops/organizations/settings/work/manage-process?view=azure-devops&preserve-view=true#change-the-process-used-by-a-project). 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_28.png "Change the process used by a project")
+> ![Change the process used by a project.](../../media/154_28.png "Change the process used by a project")
 
 ### Hide custom fields from layout
 
 You can now hide custom fields from the form layout when customizing your process. The field will still be available from queries and REST APIs. This comes in handy for tracking extra fields when you are integrating with other systems.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_29.png "Hide a custom field from a work item layout")
+> ![Hide a custom field from a work item layout.](../../media/154_29.png "Hide a custom field from a work item layout")

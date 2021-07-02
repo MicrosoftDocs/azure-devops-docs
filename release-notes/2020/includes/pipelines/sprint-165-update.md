@@ -22,13 +22,13 @@ The response will contain the rendered YAML.
 Currently, pipelines agents will automatically update to the latest version when required. This typically happens when there is a new feature or task which requires a newer agent version to function correctly. With this update, we're adding the ability to disable automatic upgrades at a pool level. In this mode, if no agent of the correct version is connected to the pool, pipelines will fail with a clear error message instead of requesting agents to update. This feature is mostly of interest for customers with self-hosted pools and very strict change-control requirements. Automatic updates are enabled by default, and we don’t recommend most customers disable them.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/165_02.png)
+> ![Disable automatic agents upgrades at a pool level.](../../media/165_02.png)
 
 ### Azure File Copy Task now supports AzCopy V10
 
-The Azure file copy task can be used in a build or release pipeline to copy files to Microsoft storage blobs or virtual machines (VMs). The task uses **AzCopy**, the command-line utility build for fast copying of data from and into Azure storage accounts. With this update, we've added support for AzCopy V10 which is the [latest version of AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
+The Azure file copy task can be used in a build or release pipeline to copy files to Microsoft storage blobs or virtual machines (VMs). The task uses **AzCopy**, the command-line utility build for fast copying of data from and into Azure storage accounts. With this update, we've added support for AzCopy V10 which is the [latest version of AzCopy](/azure/storage/common/storage-use-azcopy-v10).
 
-The `azcopy copy` command supports only the [arguments](https://docs.microsoft.com/azure/storage/common/storage-ref-azcopy-copy?toc=/azure/storage/blobs/toc.json#options) associated with it. Because of the change in syntax of AzCopy, some of the existing capabilities are not available in AzCopy V10. These include:
+The `azcopy copy` command supports only the [arguments](/azure/storage/common/storage-ref-azcopy-copy?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#options) associated with it. Because of the change in syntax of AzCopy, some of the existing capabilities are not available in AzCopy V10. These include:
 
   * Specifying log location
   * Cleaning log and plan files after the copy

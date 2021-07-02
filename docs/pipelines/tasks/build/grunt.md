@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
  
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to run Grunt tasks using the JavaScript Task Runner.
+Use this task to run Grunt tasks using the JavaScript Task Runner.
 
 ## Demands
 
@@ -55,7 +55,7 @@ See [Sample Gruntfile](https://gruntjs.com/sample-gruntfile).
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

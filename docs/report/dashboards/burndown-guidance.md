@@ -31,16 +31,17 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 
 ## Scope management  
 
-By estimating remaining work of tasks for each product backlog item, teams have a good understanding of what they can accomplish within a sprint. Because the sprint tasks represent the overall sprint scope, the sprint scope is well defined. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
+By estimating remaining work of tasks for each backlog item, teams better understand what they can accomplish within a sprint. Because the sprint tasks define the overall sprint scope, defining the remaining work leads to a well-defined sprint scope. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
 
 > [!div class="mx-imgBorder"]  
 > ![Choose another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
 
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 Increases instead of decreases within the blue graph may indicate:
 
@@ -86,11 +87,11 @@ As the team makes progress, divergences from the ideal trend line help the team 
 ## Mitigate risk through daily inspection
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
-For example, when the actual remaining work (blue area) goes flat for a period of time, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
+For example, when the actual remaining work (blue area) goes flat for a while, or remains high above the ideal trend line, the team is at risk of not meeting their sprint commitments.
 
 > [!div class="mx-imgBorder"]  
 > ![Burndown trend based on Remaining Work](media/burndown/analytics-burndown-remaining-work-s159.png)

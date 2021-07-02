@@ -3,19 +3,20 @@ title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Write and test OData queries for use in Power BI integration
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/13/2020
+ms.date: 12/18/2020
 ---
 
 # Connect with data by using Power BI and OData queries
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Using OData queries is the recommended approach for pulling data into Power BI. To get started quickly, check out the [Overview of sample reports that use OData queries](sample-odata-overview.md). For information about other approaches, see [Power BI integration overview](overview.md). 
+Using OData queries is the recommended approach for pulling data into Power BI. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard which defines best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/).
+
+To get started quickly, check out the [Overview of sample reports that use OData queries](sample-odata-overview.md). For information about other approaches, see [Power BI integration overview](overview.md). 
 
 Power BI can run OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages: 
 * All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
@@ -27,7 +28,7 @@ In this article, you learn how to:
 > * Write and test OData queries.
 > * Run an OData query from Power BI.
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Use Visual Studio Code to write and test OData queries
 
@@ -58,6 +59,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
     &$orderby=CreatedDate desc
     &$top=10
 ``` 
+To query across projects, omit `/{project}` entirely. 
 
 For more information about how to write OData queries against Analytics, see [OData query quick reference](../extend-analytics/quick-ref.md). 
 
@@ -133,7 +135,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor2.png)
+![Replace the string.](media/odataquery-powerbi-advancededitor2.png)
 
 > [!NOTE]
 > The following actions help accomplish this preventative measure: 

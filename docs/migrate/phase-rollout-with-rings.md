@@ -66,7 +66,7 @@ At the application level, the composition of Azure DevOps extensions is innocuou
 
 ![Progressive exposure of the application layer](./media/phase-rollout-with-rings/phase-rollout-with-rings-app-layer.png)
 
-At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in organization, they are hosted by the Azure DevOps service portal, with state persisted to Azure storage and/or the extension [data storage](/azure/devops/extend/develop/data-storage).
+At the infrastructure level, the extensions are published to the [Visual Studio marketplace](https://marketplace.visualstudio.com). Once installed in organization, they are hosted by the Azure DevOps service portal, with state persisted to Azure storage and/or the extension [data storage](../extend/develop/data-storage.md).
 
 ![Progressive exposure of the infrastructure layer](./media/phase-rollout-with-rings/phase-rollout-with-rings-inf-layer.png)
 
@@ -105,7 +105,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
+> Review [CI/CD Pipelines](../pipelines/get-started/pipelines-get-started.md) and [Approvals](../pipelines/release/approvals/index.md) for detailed documentation of pipelines and the approval features for releases.
 
 ## Dealing with monitoring and noise
 
@@ -124,7 +124,7 @@ Using a ring-deployment strategy you can gather feedback to validate your hypoth
 
 Here's a summary of how the ALM | DevOps Ranger engineering process evolved with ring deployment models.
 
-| Before using Rings |   | With Rings |
+| Before using Rings | Impacted area  | With Rings |
 |--------------------|:-:|-----------:|
 |Manual and error prone|Build|Automated and consistent|
 |Manual and error prone|Release|Automated and consistent|
@@ -154,7 +154,7 @@ Now that you've covered the concepts of rings, you should be confident to explor
 
 ### How do you know that a change can be deployed to the next ring?
 
-Your goal should be to have a consistent checklist for the users approving a release. See [aka.ms/vsarDoD](https://aka.ms/vsarDoD) for an example definition of done checklist.
+Your goal should be to have a consistent checklist for the users approving a release. See [aka.ms/vsarDoD](/archive/blogs/visualstudioalmrangers/?p=2395) for an example definition of done checklist.
 
 ### How long do you wait before you push a change to the next ring?
 
@@ -166,7 +166,7 @@ The ring deployment model allows you to process a hotfix like any other change. 
 
 ### How do you deal with variables that span (shared) release environments?
 
-Refer to [Default and custom release variables](/azure/devops/pipelines/release/variables).
+Refer to [Default and custom release variables](../pipelines/release/variables.md).
 
 ### How can you manage secrets used by the pipeline?
 
@@ -176,9 +176,11 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 
 * [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
 * [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
-* [DevOps @ Microsoft](https://aka.ms/devops)
+* [DevOps @ Microsoft](/devops/)
 
-> Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> > [!NOTE]   
+> Authors: Josh Garverick, Willy Schaub 
+> Find the origin of this article and connect with the ALM DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

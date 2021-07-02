@@ -33,7 +33,7 @@ Another useful update in this sprint is ability to collapse the left panel on in
 
 ## Continued UX updates
 
-Earlier this summer we pushed a fairly [big update](https://blogs.msdn.com/b/bharry/archive/2012/07/16/team-foundation-service-updates-7-16.aspx) to the navigation of the site. As we continue to update the service we’ll be refining the UI to ensure it’s easy to use and visually appealing. In this update we removed the more traditional tabs from the UI and replaced them with a colored hyperlink. It’s subtle, but another step towards reducing chrome in the UI and making it easier to focus on your data.
+Earlier this summer we pushed a fairly [big update](https://devblogs.microsoft.com/bharry/team-foundation-service-updatemar-22/) to the navigation of the site. As we continue to update the service we’ll be refining the UI to ensure it’s easy to use and visually appealing. In this update we removed the more traditional tabs from the UI and replaced them with a colored hyperlink. It’s subtle, but another step towards reducing chrome in the UI and making it easier to focus on your data.
 
 ## Process templates
 
@@ -45,11 +45,11 @@ In a move to reduce our storage footprint, we’ve removed diagnostic informatio
 
 ## Xcode with Git-tf
 
-If you’re using Xcode in your environment, we published a [new article](/azure/devops/git/share-your-code-in-git-xcode?view=azure-devops) describing how to use Git and Xcode with Team Foundation Service.
+If you’re using Xcode in your environment, we published a [new article](/azure/devops/git/share-your-code-in-git-xcode?view=azure-devops&preserve-view=true) describing how to use Git and Xcode with Team Foundation Service.
 
 ## News RSS feed
 
-Finally, as [promised](https://blogs.msdn.com/b/bharry/archive/2012/08/27/team-foundation-service-updates-8-27.aspx) we’ve enabled an [RSS feed](https://azure.microsoft.com/updates/?product=azure-devops) on our news section so you can more easily keep track of what we’re doing.
+Finally, as [promised](https://devblogs.microsoft.com/bharry/team-foundation-service-updates-827/) we’ve enabled an [RSS feed](https://azure.microsoft.com/updates/?product=azure-devops) on our news section so you can more easily keep track of what we’re doing.
 
 That’s the list for sprint 36. We’ll have another update for you in 3 more weeks. Remember to visit our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) site to give us feedback on our priorities and investments.
 

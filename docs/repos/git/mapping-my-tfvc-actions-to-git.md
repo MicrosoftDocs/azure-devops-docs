@@ -4,17 +4,15 @@ titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.author: sdanie
-author: wpschaub
 ms.topic: conceptual
 ms.date: 04/25/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 # Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
 
-Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.md) actions, and wondering how they map to [Git](index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
+Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
 This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
@@ -45,6 +43,8 @@ git clone https://dev.azure.com/demo-fabrikam/Fabrikam/_git/Mapping-TFVC-actions
 ```
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 ![Connect to a Git repo in Azure Repos from Visual Studio](./media/mapping-my-tfvc-actions-to-git/actionmap-clone.png)
 
@@ -80,6 +80,8 @@ git checkout -b francis/demo-feature
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Branches > right-click on branch > New Local Branch From...**
 
 ![Creating a new branch from Visual Studio Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-createbranch.png)
@@ -107,6 +109,8 @@ git add --all
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Untracked Files > add individual files or add all**
 
 ![Viewing Tracked and Untracked Changes in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-untracked.png)
@@ -130,6 +134,8 @@ git status
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Included Changes**
 
 ![Using Visual Studio Team Explorer to show staged changes](./media/mapping-my-tfvc-actions-to-git/actionmap-status-vs2.png)
@@ -151,6 +157,8 @@ git commit
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 In Visual Studio, choose **Team Explorer > Changes > Commit**
  
 ![Creating a Git commit in Team Explorer](./media/mapping-my-tfvc-actions-to-git/actionmap-commit.png)
@@ -169,6 +177,8 @@ git push --set-upstream origin francis/demo-feature
 
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 In Visual Studio, choose **Team Explorer > Branches > right-click on local branch > Publish Branch**
 
@@ -205,6 +215,8 @@ git log
 As shown above, `git log` lists the author, email, date written, and the commit SHA-1 checksum. As a TFVC user you may want to use the `--stat` option to include more information, such as file name and change statistics. 
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 You can retrieve a history view of the **local** repository in the Visual Studio IDE.
 

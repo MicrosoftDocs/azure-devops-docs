@@ -4,16 +4,14 @@ titleSuffix: Azure Repos
 description: Undoing Changes with Git in Azure Repos using reset and revert 
 ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.technology: devops-code-git 
-ms.author: sdanie
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Undo changes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 
@@ -40,6 +38,9 @@ Restore file contents back to a known good version, removing unwanted changes.
 > These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Visual Studio 2015 &amp; 2017
 
 1. Open up the **Changes** view in Team Explorer.
@@ -61,7 +62,7 @@ You can revert the file to the version in a specific commit by providing the com
 &gt; git checkout <font color="#b5bd68">38035acd2 approuter.js</font>
 </pre>
 
-This differs from the earlier use of the `checkout` command used to swap to a different [branch](branches.md). 
+This differs from the earlier use of the `checkout` command used to swap to a different [branch](./create-branch.md). 
 Git will tell you if it is changing a file or swapping between branches in the output, and complain if it's not clear which one you are trying to do.
 
 * * *
@@ -74,10 +75,12 @@ in a `revert`, making it safe to use when working with others.
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
+
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
 
-![Reset a branch from Visual Studio](media/vs_revert_changes.png)
+![Revert changes from Visual Studio.](media/vs_revert_changes.png)
 
 # [Command Line](#tab/command-line)
 
@@ -126,4 +129,3 @@ been committed yet.
 
 > [!div class="nextstepaction"]
 > [Ignore files](ignore-files.md)
-

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Check in your work to the team's codebase
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Check in your work to the team's codebase
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Use the **Pending Changes** page (Keyboard: Ctrl + 0, P) in Team Explorer to check in your code into a new changeset.
 
@@ -52,7 +50,7 @@ When you check in changes, you should associate such work items with the changes
 
 -   A team member who looks at the work item can [link directly to the changeset](../../boards/queries/link-work-items-support-traceability.md) to see the work that you did.
 -   A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
--   If you build your changes in your automated build system (for example with a [CI Build](../../pipelines/build/triggers.md) or a [Gated Check-in Build](../../pipelines/build/repository.md) your team members can see in which completed build the task was completed or the bug was fixed.
+-   If you build your changes in your automated build system (for example with a [CI Build](../../pipelines/build/triggers.md) or a [Gated Check-in Build](../../pipelines/repos/index.md) your team members can see in which completed build the task was completed or the bug was fixed.
 
 To associate work items with your check-in:
 
@@ -92,11 +90,11 @@ In the **Reason** box, explain why you chose to override the policy.
 ### Check in changes to a folder that is controlled by a gated check-in build process
 
  ![Gated Check-in dialog box](media/check-your-work-team-codebase/IC572351.png)
-If you are checking in changes into version control folders that are controlled by a [gated check-in build process](../../pipelines/build/repository.md), the **Gated Check-in** dialog box appears. For information about how to complete your check-in operation, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
+If you are checking in changes into version control folders that are controlled by a [gated check-in build process](../../pipelines/repos/index.md), the **Gated Check-in** dialog box appears. For information about how to complete your check-in operation, see [Check in to a folder that is controlled by a gated check-in build process](check-folder-controlled-by-gated-check-build-process.md).
 
 ## Subscribe to alerts
 
-If you want to be notified when someone checks in code in your TFVC project, you can [subscribe](https://msdn.microsoft.com/library/ms181334) to receive email alerts. [Here's how]
+If you want to be notified when someone checks in code in your TFVC project, you can [subscribe](../../notifications/manage-your-personal-notifications.md) to receive email alerts. [Here's how]
 
 ![Alerts page for TFVC project in web portal](media/check-your-work-team-codebase/IC720120.png)
 
@@ -117,6 +115,6 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 -   ![Tip](media/check-your-work-team-codebase/IC572374.png) If you need to set aside your changes, see [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md).
 
--   ![Tip](media/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes cannot be submitted to your Team Foundation server, none of the changes is committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
+-   ![Tip](media/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes can't be submitted to Team Foundation Server, none of the changes are committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
 
     The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).

@@ -1,10 +1,11 @@
 - name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
-  items:
-  - name: Developer resources
+  items: 
+  - name: Developer Resources
+    tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index
-    items:
-    - name: Demo generator
-      tocHref: /azure/devops/demo-gen/
+    items: 
+    - name: Demo Generator
+      tocHref: /azure/devops//demo-gen
       topicHref: /azure/devops/demo-gen/index

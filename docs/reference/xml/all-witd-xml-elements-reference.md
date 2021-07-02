@@ -3,10 +3,12 @@ title: All WITD XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Index to XML syntax elements and main attributes for work item tracking for Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d125917c-9e67-49e6-8274-8b169e76639a
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 

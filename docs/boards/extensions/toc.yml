@@ -1,19 +1,23 @@
 - name: Overview
   href: index.md
+  displayname: product, plan, query, widget, dashboards, command line interface, Excel, Retrospective, calendar, reactivations
 - name: Migration and integration
   href: migrate-integrate.md
-  displayname: project management, portfolio management, AgileCraft, ConnectAll, TaskTop, Jira, GitHub, service hooks, process model
+  displayname: export, import, integrate, GitHub, third-party, service hooks, Project, project management, portfolio management, ConnectAll, TaskTop, process model
+- name: Delivery Plans
+  href: delivery-plans.md 
+  displayname: filter, roadmap, calendar, multi-team views, cards   
 - name: Feature Timeline
   href: feature-timeline.md      
+- name: Epic Roadmap
+  href: epic-roadmap.md      
 - name: Dependency Tracker
-  href: dependency-tracker.md 
-- name: WIQL Editor 
-  href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
-- name: Enhanced Export 
-  href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export     
+  href: dependency-tracker.md  
 - name: Azure Boards with Slack
   href: ../integrations/boards-slack.md
 - name: Azure Boards with Teams
   href: ../integrations/boards-teams.md
-- name: Project Server Integration (Deprecated)
-  href: ../../reference/tfs-ps-sync/toc.yml
+- name: Project Server Integration (Deprecated)>>
+  href: /previous-versions/azure/devops/reference/tfs-ps-sync/
+- name: TFS-SharePoint Integration (Deprecated)>>
+  href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration

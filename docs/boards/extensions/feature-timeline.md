@@ -4,19 +4,27 @@ titleSuffix: Azure DevOps
 description: Learn how to manage portfolios with a calendar view of features and epics  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2020
+ms.date: 07/09/2020
 ---
-
+ 
 # View portfolio progress with the Feature Timeline 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 
-The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
+The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level. 
+
+[!INCLUDE [temp](../../includes/lightbox-image.md)] 
+
+[![Feature Timeline initial view](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+
+
+> [!NOTE]   
+> The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page. 
 
 Use the Feature Timeline to support the following tasks: 
 
@@ -27,9 +35,7 @@ Use the Feature Timeline to support the following tasks:
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is available on TFS 2017 Update 2 and later versions. You can install it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
-[!INCLUDE [temp](../../includes/lightbox-image.md)]
-
-[![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+[!INCLUDE [section-portfolio-backlog-requirements](../includes/section-portfolio-backlog-requirements.md)]
 
 
 ## Prerequisites
@@ -42,34 +48,41 @@ Use the Feature Timeline to support the following tasks:
  
 The Feature Timeline is designed to display features and the progress made to their child requirements. The Feature Timeline displays features grouped under epics when they are linked to parent epics. Ungrouped features appear at the bottom of the view. 
 
+[!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
+
 To gain the most from the Feature Timeline view, make the following definitions:
 
 - Define teams and area paths to support the rollup of the team's work into features and epics. 
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
-	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
-- For work to be performed in some future iteration, you can leave the dates unset and it will appear as the last sprint in the roadmap. 
+	> Make sure you assign work items to a **flat set of sprints**. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
+- For work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
 - Make sure the team is subscribed to the sprints of interest. 
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
 - When child work items are defined, assign the child items to sprints. 
 - To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
-- Once all child requirements are completed, set the State of the parent feature to Done or Completed.  
-
+- Once all child requirements are completed, set the State of the parent feature or epic to Done or Completed. Closed epics and features no longer appear in the Feature Timeline.  
 
 > [!TIP]   
 > To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
 To learn more, review the following articles:  
-- [Configuration and customization of Azure Boards](../configure-customize.md)  
+- [Create your backlog (Requirements)](../backlogs/create-your-backlog.md) 
+- [Define features and epics](../backlogs/define-features-epics.md) 
+- [Configure a hierarchy of teams](../plans/configure-hierarchical-teams.md) 
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
+
+<a id="open-boards" />
+
 
 ## Open Boards or Backlogs 
 
 You can access the Feature Timeline from either your team's Kanban board or backlog. 
+
 Here we open Boards. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
@@ -105,7 +118,7 @@ Here we open Boards.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
@@ -157,7 +170,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 ## Drill-down and change Start and End iterations 
  
-1. To view the requirements linked to a feature, choose the ![info icon](../media/icons/info.png) info icon for that feature. 
+1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
@@ -165,14 +178,14 @@ You can customize your view of the Feature Timeline with the controls shown in t
 	A dialog opens showing the child items of the feature. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature Timeline controls](media/feature-timeline/drill-down-2.png)
+	> ![Dialog showing the child items of the feature.](media/feature-timeline/drill-down-2.png)
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
 
 1.	Or, you can also drag and drop a child item to a new iteration. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Feature Timeline controls](media/feature-timeline/drill-down-3.png)
+	> ![Drag and drop a child item to a new iteration.](media/feature-timeline/drill-down-3.png)
 
 
 ## Q & A
@@ -184,11 +197,9 @@ A: Make sure you enter sufficient number of sprints to display the next three sp
 
 ## Related articles
 
-- [Review team delivery plans](../plans/review-team-plans.md)
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
-- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
-
+- [Configure and customize Azure Boards](../configure-customize.md) 
+- [Review team delivery plans](../plans/review-team-plans.md)  
+- [View progress using the Epic Roadmap](epic-roadmap.md)  
 
 ## Related Marketplace extensions
 

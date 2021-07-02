@@ -1,12 +1,10 @@
-﻿---
+---
 title: Share your code with Git using Visual Studio 2017
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
 ms.technology: devops-code-git 
 toc: show
-ms.author: sdanie
-author: apawast
 ms.topic: quickstart
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
@@ -15,18 +13,16 @@ monikerRange: '>= tfs-2015'
 
 # Share your code with Visual Studio 2017 and Azure Repos Git
 
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](share-your-code-in-git-vs-2017.md)
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
-   
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 
 
-Share your Visual Studio solution in a new Azure DevOps Services or Team Foundation Server Git repo.
+This article walks you through the steps to get a Visual Studio solution on your PC into an Azure DevOps Git repo you can share with others. If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
 
-This article walks you through the steps to get a Visual Studio solution on your PC into a Git repo you can share with others. 
-
-If you want to work with a Visual Studio solution hosted in an existing repo, see the [Git tutorial](gitquickstart.md).
+[!INCLUDE [temp](includes/note-new-git-tool.md)]
 
 ## Prerequisites
 
@@ -142,7 +138,7 @@ See [the Azure Repos Git tutorial](gitworkflow.md) and the [command reference](c
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](/azure/devops/learn/git/set-up-a-git-repository)
+> [New to Git repos? Learn more](/devops/develop/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Checkout more steps in the Git workflow](gitquickstart.md)

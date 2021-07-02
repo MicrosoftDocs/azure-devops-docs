@@ -1,46 +1,72 @@
 ---
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
-description: Guide to adding and configuring teams in Azure DevOps
+description: Overview for adding and configuring teams in Azure DevOps.
 ms.technology: devops-settings
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 10/25/2019
+monikerRange: '<= azure-devops'
+ms.date: 09/09/2020
 ---
 
 # About teams and Agile tools
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 <a id="teams"></a>
 
-Adding a team is the #1 way in which Agile tools support a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
+Learn how you can structure and use your teams and Agile tools to support your growing organization. When your team grows beyond its intended size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two-team structure. You can then set up a hierarchical team structure, which provides several advantages to managers for tracking progress across teams. For the step-by-step procedure to add a team, see [Add another team](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
-
-Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do so by defining teams and their associated area path(s). 
+Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the following image shown. Do so by defining teams and their associated area path(s). 
 
 ![Each team has its own view of the work](../../boards/plans/media/pm-team-structure.png) 
 
-For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](../../boards/plans/portfolio-management.md). 
+The following scenarios apply:
+- each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths
+- each management team, which focuses on a set of features, can choose several area paths to monitor
+- each feature team has its distinct backlog to plan, determine priority, and track work
+- portfolio or product owners can create their idea, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md)
+
+## About area paths, feature teams, and management teams 
+
+Area paths serve the following purposes in Azure Boards:  
+1. Filter the work items that appear on a team backlog or board.
+2. Apply additional filtering to the work items that appear on a backlog or board, for details, see [Interactively filter backlogs, boards, queries, and plans](../../boards/backlogs/filter-backlogs-boards-plans.md).
+3. Group work that shares some relationship, such as belonging to the same product, feature, or other work-level grouping. 
+4. Restrict access to work by setting permissions. Permissions can be set for security groups to restrict modification of work items based on area path. 
+
+Teams make their selections as follows: 
+- Feature teams can choose one or more area paths to specify which work items will appear on their backlogs and boards. 
+- Management teams typically choose all area paths that their feature teams work on.
+- Additionally, management teams may only focus on Features and Epics, while Feature teams may focus only on product backlog items such as User Stories (Agile), Product Backlog Items (Scrum), and Requirements (CMMI).
+
+For steps to define area paths and assign them to a team, see [Define area paths and assign to a team](set-area-paths.md). 
+
+## The default team
+
+Each new project is configured with a default team with the project name. For example, the *Fabrikam* project is automatically configured with the *Fabrikam* team. 
+
+Backlogs, boards, and dashboards are automatically configured for this default team so that you can start defining work items and your backlog. 
+
+You can rename the default team and reassign a new team as the default. 
 
 ## Each team gets their own set of tools 
 
-Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
+Each team you create gets access to a suite of Agile tools and team assets. These tools let teams work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
 ::: moniker range=">= tfs-2018"
 ![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE] 
-> In addition to team dashboards, you can add a project dashboard which isn't specific to any one team. To learn how, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
+> In addition to team dashboards, you can add a project dashboard, which isn't specific to any one team. For more information, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
 
 ::: moniker-end
 
@@ -53,12 +79,17 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-2013.png)
 ::: moniker-end
 
-These tools reference the team's default area path, iteration path, and selected sprints to filter automatically the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
+These tools automatically filter the set of work items they display by referencing the following items:
+- default area path
+- iteration path
+- selected sprints
+
+For more information about each tool and the configuration settings for each tool, see the following corresponding articles.
 
 [!INCLUDE [team-configuration](../../boards/includes/team-configuration.md)]
 
 
-Many of these tools are built from system queries that reference the team area path. For example, a team's default area path filters the work items that appear on a team's backlog. Also, work items that you create using an Agile tool auto-assign the areas and iterations based on team defaults.  
+Many of these tools are built from system queries that reference the team area path. For instance, a team's default area path filters the work items that appear on a team's backlog. Work items created using an Agile tool auto-assign the areas and iterations based on team defaults.  
 
 <a id="team-defaults" />
 
@@ -66,7 +97,7 @@ Many of these tools are built from system queries that reference the team area p
 
 What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
 
-Teams are associated with one or more area paths and a backlog iteration path, which determines what items appear on their backlogs and boards. 
+Teams are associated with one or more area paths and a backlog iteration path. These paths determine what items appear on their backlogs and boards. 
 
 When you define a team, you define the team's: 
 - Selected area path(s) 
@@ -77,7 +108,7 @@ When you define a team, you define the team's:
 
 All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or its parent-child status.   
 
-Several tools reference the team's default iteration and selected iteration paths or sprints, also. Such as, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
+Several tools also reference the team's default and selected iteration paths or sprints. When you add a new work item, the system assigns the team's default area and iteration paths to it. Work items can be added from a backlog, board view, or team dashboard. 
 
 
 <table valign="top" width="100%" > 
@@ -154,7 +185,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ::: moniker range=">= tfs-2017"
 
-You can also use the <strong>@mention</strong> control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
 
 ::: moniker-end
 
@@ -162,18 +193,18 @@ You can also use the <strong>@mention</strong> control within discussions and pu
 
 Can a user account belong to more than one team?  
 
-Yes. When you add user accounts to a project, you can add them as members of the project, or you can add them to one or more teams added to the project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../../boards/sprints/set-capacity.md). 
+Yes. You can add user accounts as members of the project or to one or more teams added to the project. If you work on two or more Scrum teams, make sure you [specify your sprint capacity for each team you work on](../../boards/sprints/set-capacity.md). 
 
 ## Team member permissions 
 
-By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. Team members can [collaborate on a Git project](../../repos/git/gitquickstart.md) or  [check in work to the team's code base](../../repos/tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
-You can choose to limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
-
+Limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For more information, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
 
 ## Summary 
+
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
 - The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
@@ -195,4 +226,3 @@ You can choose to limit access to select features by making a user a [Stakeholde
 <!---
 You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
 -->
-

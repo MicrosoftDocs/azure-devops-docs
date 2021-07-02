@@ -7,7 +7,9 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Agent variables
+<a id="agent-variables"></a>
+
+## Agent variables (DevOps Server 2019)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -119,7 +121,9 @@ This directory is not guaranteed to be writable by pipeline tasks (eg. when mapp
 
 </table>
 
-## Build variables
+## Build variables (DevOps Server 2019)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -135,7 +139,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -225,7 +229,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <li><code>ValidateShelveset</code>: A user manually queued the build of a specific TFVC shelveset.</li>
 <li><code>CheckInShelveset</code>: <strong>Gated check-in</strong> trigger.</li>
 <li><code>PullRequest</code>: The build was triggered by a Git branch policy that requires a build.</li>
-<li><code>BuildCompletion</code>: The build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a></li>
+<li><code>BuildCompletion</code>: The build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a></li>
 </ul>
 See <a href="/azure/devops/pipelines/build/triggers" data-raw-source="[Build pipeline triggers](../triggers.md)">Build pipeline triggers</a>, <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
 </td>
@@ -261,8 +265,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository you selected](../repos/index.md)">repository you selected</a>.
 <ul>
-<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/overview.md)">TFS Git repository</a>
-<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](/azure/devops/repos/tfvc/overview)">Team Foundation Version Control</a>
+<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
+<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](../../../repos/tfvc/what-is-tfvc.md)">Team Foundation Version Control</a>
 <li><code>Git</code>: Git repository hosted on an external server
 <li><code>GitHub</code>
 <li><code>Svn</code>: Subversion
@@ -366,7 +370,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset.
+<td>The comment of the commit or changeset. We truncate the message to the first line or 200 characters, whichever is shorter. 
 
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -385,7 +389,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -402,7 +406,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <tr>
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control.
-<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
+<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/repos/tfvc#gated" data-raw-source="[gated build](../../repos/tfvc.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>
@@ -410,35 +414,35 @@ Note: This variable yields a value that is invalid for build use in a build numb
 
 <tr>
 <td>Build.TriggeredBy.BuildId</td>
-<td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the BuildID of the triggering build.
+<td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the BuildID of the triggering build.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.DefinitionId</td>
-<td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the DefinitionID of the triggering build.
+<td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the DefinitionID of the triggering build.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.DefinitionName</td>
-<td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the name of the triggering build pipeline.
+<td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the name of the triggering build pipeline.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.BuildNumber</td>
-<td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to the number of the triggering build.
+<td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to the number of the triggering build.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
 <tr>
 <td>Build.TriggeredBy.ProjectID</td>
-<td>If the build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../triggers.md#BuildCompletion)">triggered by another build</a>, then this variable is set to ID of the project that contains the triggering build.
+<td>If the build was <a href="/azure/devops/pipelines/process/pipeline-triggers" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a>, then this variable is set to ID of the project that contains the triggering build.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
@@ -452,14 +456,16 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 </table>
 
-## System variables
+## System variables (DevOps Server 2019)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
 
 <tr>
 <td>System.AccessToken</td>
-<td><a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](/azure/devops/pipelines/scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
+<td><a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
 <br/><br/>
 <a href="/azure/devops/pipelines/build/variables#systemaccesstoken" data-raw-source="[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken)">Use System.AccessToken from YAML scripts</a>.
 <br/><br/>
@@ -508,7 +514,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>

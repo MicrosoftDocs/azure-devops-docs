@@ -7,15 +7,15 @@ ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.topic: how-to
+monikerRange: '<= azure-devops'
+ms.date: 01/15/2021
 ---
 
 
-# Organize queries, add a query folder    
+# Manage and organize queries   
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -30,6 +30,90 @@ Organize your personal or shared queries by adding a query folder. You can then 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
 
+
+<a id="flat-list-query"/>
+<a id="save" />
+
+## Open, edit, and save a query  
+
+The easiest way to define a query is to start with an existing shared query. 
+The following example shows how to find all closed bugs by modifying the 
+*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+
+::: moniker range=">= azure-devops-2019"  
+
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+
+   > [!div class="mx-imgBorder"]  
+   > ![Run Active bugs query](media/view-run-queries/run-active-bugs.png)  
+
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
+
+   > [!div class="mx-imgBorder"]
+   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png) 
+
+2. Save the query to your **My Queries** folder.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
+
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+
+   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)  
+
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
+	
+   ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)  
+
+2. Save the query to your **My Queries** folder.  
+	
+   ![Save Query As](media/6.png)  
+
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+
+::: moniker-end  
+
+
+<a id="view-rename-delete" />
+
+## Rename or delete a query
+
+::: moniker range=">= azure-devops-2019"
+
+From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
+
+![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
+
+For shared queries, you can also choose to perform one of these tasks: 
+- **Add to team queries**: Select the team to add the query as a team favorite
+- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+
+Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
+
+![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
+
+::: moniker-end
+
+
 ## Add a query folder, move items into a folder 
 
 > [!TIP]   
@@ -41,18 +125,18 @@ You add query folders from the **Boards>Queries>All** page.
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-1. To add a folder, choose the ![ ](../media/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
 
 2. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-	<img src="media/organize-queries/new-folder-dialog.png" alt="Open Actions menu, choose New folder" style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." style="border: 2px solid #C3C3C3;" />
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can click the ![Actions icon](../media/icons/actions-icon.png)  for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
+	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
 	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
   
@@ -63,7 +147,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 You add query folders from the **Boards>Queries** page.
 
-1. To add a folder, choose the ![ ](../media/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
+1. To add a folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
@@ -71,7 +155,7 @@ You add query folders from the **Boards>Queries** page.
 
 1. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can choose the ![ ](../media/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
+	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
 	![Rename query dialog](media/organize-queries/rename-query-old-experience.png) 
 
@@ -84,7 +168,7 @@ You add query folders from the **Boards>Queries** page.
 
 ## Add a query to the dashboard or share it with your team 
 
-To add a query to the home page or a dashboard, open the ![ ](../media/icons/actions-icon.png) actions icon (or ![ ](media/22.png) context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
+To add a query to the home page or a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
 Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
@@ -92,38 +176,11 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 ::: moniker-end
 
-## Q & A   
-<!-- BEGINSECTION class="md-qanda" -->
-
-### Q: Can I change the owner of a query or folder?
-
-::: moniker range=">= tfs-2017"
-**A:** No. You can only enable permissions for users and groups from the permissions window for the query or folder.
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-**A:** Yes. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
-::: moniker-end
-
-### Q: Can I add folders to My Favorites or Team Favorites?
-
-**A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
-
-### Q: Are the queries and folders I create from the web portal the same as in Team Explorer?
-
-**A:** Yes. You might have to refresh your browser or client to see changes you make in another client.
-
-### Q: Can I move a query or a folder?  
-
-**A:** Yes. In the web portal, choose **Rename** from the context menu. In Visual Studio Team Explorer, simply drag the folder to the new location.  
-
-In Team Explorer Everywhere (a plugin for Eclipse), choose **Move** from the context menu and select the folder to which you want to move the item.
-
-<!-- ENDSECTION --> 
 
 ## Related articles
 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
-- [Set query permissions](set-query-permissions.md)
+- [Query FAQs](query-faqs.yml)  
+- [Set query permissions](set-query-permissions.md)  
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
 

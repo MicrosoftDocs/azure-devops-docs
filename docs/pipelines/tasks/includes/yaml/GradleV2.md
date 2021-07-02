@@ -13,7 +13,7 @@ ms.technology: devops-cicd-tasks
 - task: Gradle@2
   inputs:
     #gradleWrapperFile: 'gradlew' 
-    #workingDirectory: # Optional
+    #cwd: # Optional
     #options: # Optional
     #tasks: 'build' # A list of tasks separated by spaces, such as 'build test'
     #publishJUnitResults: true 

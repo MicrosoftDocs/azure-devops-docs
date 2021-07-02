@@ -7,7 +7,6 @@ ms.author: egeaney
 author: egeaney
 ms.date: 02/15/2017
 ---
----
 
 # PR usability improvements & richer GitHub build integration – Feb 15
 
@@ -44,7 +43,7 @@ In a PR with more than a few comments, it can be hard to keep track of all of th
  
 * In the header for every PR, you’ll now see a count of the comments that have been resolved.
 
-![pr header](media/02_15_13.png)
+![PR header with comments count.](media/02_15_13.png)
 
 * When a comment has been addressed, you can resolve it with a single click. 
 

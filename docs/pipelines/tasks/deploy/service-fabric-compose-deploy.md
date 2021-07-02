@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy a Docker-compose application to a Service Fabric cluster.
+Use this task to deploy a Docker-compose application to a Service Fabric cluster.
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.
 
 ## Prerequisites
@@ -55,7 +55,7 @@ Also see: [Service Fabric PowerShell Utility](../utility/service-fabric-powershe
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

@@ -23,7 +23,7 @@ With Kubernetes having a standard interface and running the same way on all clou
 
 To set up multi-cloud deployment, [create an environment](../../process/environments.md#creation) and subsequently add Kubernetes resources associated with namespaces of Kubernetes clusters. Follow the steps under the linked sections based on the cloud provider of your Kubernetes cluster - 
 - [Azure Kubernetes Service](../../process/environments-kubernetes.md#azure-kubernetes-service)
-- [Generic provider using existing service account](../../process/environments-kubernetes.md#using-existing-service-account) (For GKE/EKS/...)
+- [Generic provider using existing service account](../../process/environments-kubernetes.md#using-an-existing-service-account) (For GKE/EKS/...)
 
 > [!TIP]
 > The generic provider approach based on existing service account works with clusters from any cloud provider, including Azure. The incremental benefit of using the Azure Kubernetes Service option instead is that it involves creation of new [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects (instead of reusing an existing ServiceAccount) so that the newly created RoleBinding object limits the operations of the ServiceAccount to the chosen namespace only.

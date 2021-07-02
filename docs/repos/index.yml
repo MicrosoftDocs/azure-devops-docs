@@ -7,11 +7,11 @@ metadata:
   title: Azure Repos Documentation
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.prod: devops 
-  ms.technology: azure-repos
+  ms.technology: devops-code-git
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/30/2019 
+  ms.date: 03/18/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -33,26 +33,66 @@ landingContent:
             url: ./get-started/what-is-repos.md
           - text: Compare Git and TFVC
             url: ./tfvc/comparison-git-tfvc.md
+  - title: Connect & authentication
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Authentication overview
+            url: ./git/set-up-credential-managers.md
+          - text: Connect to an Azure DevOps project 
+            url: ../organizations/projects/connect-to-projects.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use SSH key authentication
+            url: ./git/use-ssh-keys-to-authenticate.md
+          - text: Use Git Credential Manager
+            url: ./git/set-up-credential-managers.md
   - title: Get started with Git or GitHub
     linkLists:
-      - linkListType: tutorial
+      - linkListType: get-started
         links:
           - text: Commit, share, and sync your code
             url: ./git/gitquickstart.md
           - text: Clone a repository
             url: ./git/clone.md
+          - text: Import a Git repo into your project
+            url: ./git/import-git-repository.md
           - text: Update code with fetch and pull
             url: ./git/pulling.md
+          - text: Undo changes in your Git repo
+            url: ./git/undo.md
+      - linkListType: tutorial
+        links:
+          - text: Save changes with Git commits
+            url: ./git/commits.md
+          - text: Sync changes to a remote Git repo
+            url: ./git/pushing.md
+          - text: Resolve Git merge conflicts
+            url: ./git/merging.md
+  - title: Manage Git repos & branches 
+    linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Create & manage Git repositories
+            url: ./git/create-new-repo.md
+          - text: Set Git repository permissions
+            url: ./git/set-git-repository-permissions.md 
+          - text: Create a new branch
+            url: ./git/create-branch.md
           - text: Improve code quality with branch policies
             url: ./git/branch-policies.md
-          - text: Set up credential manager
-            url: ./git/set-up-credential-managers.md
-          - text: Use SSH key authentication
-            url: ./git/use-ssh-keys-to-authenticate.md
+          - text: Manage branches  
+            url: ./git/manage-your-branches.md
+          - text: Change the default branch
+            url: ./git/change-default-branch.md
+          - text: Ignore files 
+            url: ./git/ignore-files.md
+          - text: Set Git branch security and permissions
+            url: ./git/branch-permissions.md
       - linkListType: reference
         links:
+          - text: Default permissions
+            url: ../organizations/security/default-git-permissions.md?bc=%2fazure%2fdevops%2frepos%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fdevops%2frepos%2ftoc.json
           - text: Git command reference
             url: ./git/command-prompt.md
   - title: Get started with TFVC
@@ -77,26 +117,21 @@ landingContent:
         links:
           - text: TFVC command reference
             url: ./tfvc/use-team-foundation-version-control-commands.md
-  - title: Configure resources
+  - title: Configure TFVC resources
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create & manage Git repositories
-            url: ./git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage Git branch policies
-            url: ./git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage repository permissions
-            url: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage TFVC repository permissions
+            url: ./tfvc/set-tfvc-repository-permissions.md 
           - text: Add TFVC check-in policies
-            url: ./tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Reference
+            url: ./tfvc/add-check-policies.md 
+  - title: Developer resources
     linkLists:
       - linkListType: reference
         links:
           - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/repos
+            url: /cli/azure/repos
           - text: Git REST API
             url: /rest/api/azure/devops/git/
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/
-

@@ -16,22 +16,22 @@ ms.topic: include
 <tr>
 <td align="left">View Analytics 
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">View a shared Analytics view</td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Edit and delete Analytics views 
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 </tbody>
 </table>

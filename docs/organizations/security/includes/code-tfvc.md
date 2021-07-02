@@ -2,39 +2,59 @@
 ms.topic: include
 ---
 
+> [!NOTE]  
+> Tasks such as create, delete, or rename a TFVC repository are not supported. Once a TFVC repository is created you can't delete it. Also, you can only have one TFVC repository per project. This is different from Git repositories which allow for adding, renaming, and deleting multiple repositories. 
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th width="16%">Build Admins</th>
-<th width="16%">Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Contribute to a centralized version control, including Code Review (Check in, label, lock, merge, pend a change)
-</td>
-<td>Read only</td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Check in, revise, undo, or unlock other users&#39; changes
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Manage branches, manage permissions 
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="2":::
+      **Permission** 
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Build Admins**
+   :::column-end:::
+   :::column span="1":::
+     **Project Admins**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      **Check in**, **Label**, **Lock**, **Merge**, **Pend a change in a server workspace**, **Read**
+   :::column-end:::
+   :::column span="1":::
+      Read only
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      **Administer labels**, **Manage branches**, **Manage permissions**, **Revise other users' changes**, **Undo other users' changes**, **Unlock other users' changes** 
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+

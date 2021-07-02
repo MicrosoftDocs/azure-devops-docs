@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build with the CMake cross-platform build system.
+Use this task to build with the CMake cross-platform build system.
 
 ## Demands
 
@@ -67,7 +67,7 @@ cmake
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I enable CMake for Microsoft-hosted agents?

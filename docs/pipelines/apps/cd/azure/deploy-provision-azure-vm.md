@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 In just a few steps, you can provision Azure virtual machines (VMs)
-using [Resource Manager (RM) templates](https://azure.microsoft.com/documentation/articles/resource-group-template-deploy/).
+using [Resource Manager (RM) templates](/azure/azure-resource-manager/templates/deploy-powershell).
 Managing the pipelines for virtual machines in this
 way is considered **Infrastructure as code** and is
 a good DevOps practice.

@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 7cc17cb2-d854-469b-b45f-060e94baca71
 ms.author: kaelli
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019' 
+monikerRange: '< azure-devops' 
 ms.date: 04/13/2017
 ---
 

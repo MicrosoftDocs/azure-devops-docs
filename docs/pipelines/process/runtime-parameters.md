@@ -3,14 +3,11 @@ title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
-ms.date: 02/27/2020
-monikerRange: '>= azure-devops-2019'
+ms.date: 06/09/2021
+monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
 # Runtime parameters
-
-> [!IMPORTANT]
-> This new feature is rolling out now and may not be available in your organization. 
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime
@@ -21,7 +18,11 @@ You can specify [parameters in templates](templates.md) and in the pipeline. Par
 
 Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
 
-Parameters must contain a name and data type. 
+> [!NOTE]
+> This guidance does not apply to classic pipelines. For parameters in classic pipelines, see [Process parameters (classic)](parameters.md).
+> 
+
+Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. If you do not assign a default value or set `default` to `false`, the first available value will be used. 
 
 ## Use parameters in pipelines
 
@@ -69,7 +70,6 @@ This pipeline only runs a step when the boolean parameter `test` is true.
 parameters:
 - name: image
   displayName: Pool Image
-  default: ubuntu-latest
   values:
   - windows-latest
   - vs2017-win2016
@@ -170,6 +170,164 @@ stages:
     steps:
     - script: echo running UnitTest
 ```
+
+### Loop through parameters
+
+
+You can also loop through your string, number, and boolean parameters. 
+
+#### [Script](#tab/script)
+
+In this example, you loop through parameters and print out each parameter name and value. 
+
+```yaml
+# start.yaml
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+- ${{ each parameter in parameters }}:
+  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Value }}
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+#### [PowerShell](#tab/powershell)
+
+You can loop through parameters in a PowerShell task and set each parameter as an environment variable. 
+
+```yaml
+# start.yaml
+
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+  - task: PowerShell@2
+    env:
+      ${{ each parameter in parameters }}:
+        ${{ parameter.Key }}: ${{ parameter.Value }}
+    inputs:
+      filePath: test_script.ps1
+      pwsh: true
+
+
+
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+```powershell
+# test_script.ps1
+
+Write-Host "Hello, World!"
+Write-Host $env:myStringName
+
+```
+
+---
+
+### Check for an empty parameter object
+
+You can use the `length()` [expression](expressions.md) to check whether an object parameter has no value. 
+
+```yaml
+parameters:
+- name: foo
+  type: object
+  default: []
+
+steps:
+- checkout: none
+- ${{ if eq(length(parameters.foo), 0) }}:
+  - script: echo Foo is empty
+    displayName: Foo is empty
+```
+
+
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
+
+## FAQ
+
+### How can I use variables inside of templates?
+
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+
+In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
+
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- main
+
+extends:
+  template: template.yml
+```
+
+```yaml
+# File: template.yml
+steps:
+- script: echo Build.SourceBranch = $(Build.SourceBranch) # outputs refs/heads/main
+- script: echo Build.Reason = $(Build.Reason) # outputs IndividualCI
+- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
+  - script: echo I run only if Build.SourceBranch = refs/heads/main 
+- ${{ if eq(variables['Build.Reason'], 'IndividualCI') }}: 
+  - script: echo I run only if Build.Reason = IndividualCI 
+- script: echo I run after the conditions
+```

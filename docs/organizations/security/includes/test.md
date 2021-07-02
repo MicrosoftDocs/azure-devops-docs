@@ -1,58 +1,205 @@
+---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
+ms.topic: include
+ms.date: 03/11/2021
+---
+ 
 
-<table>
-<tr valign="bottom">
-<th width="310px">Task</th>
-<th>Stakeholders</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th width="20%">Project Admins</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left">Provide feedback using the Test &amp; Feedback extension
-</td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Exploratory testing, view test runs 
-</td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Manage test plans and test suites 
-<p>Manage test configurations and test environments </p></td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td><p>Exploratory testing, create and delete test runs </p></td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td><p>Request feedback using the Test &amp; Feedback extension</p></td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Azure Test Plans (formerly Test Manager, purchased separately)
-</td>
-<td>  </td>
-<td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="2":::
+      **Task** 
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+     **Readers**
+   :::column-end:::
+   :::column span="1":::
+     **Contributors**
+   :::column-end:::
+   :::column span="1":::
+     **Project Admins**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Access Azure Test Plans (formerly Test Manager, purchased separately)
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Create and delete test runs
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Provide feedback using the Test & Feedback extension
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Request feedback using the Test & Feedback extension
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Exploratory testing, view test runs 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Manage test plans and test suites  
+      Manage test configurations and test environments 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      Exploratory testing 
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="2":::
+      Apply a work item template to a test case
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end  
+::: moniker range=">= tfs-2015"
+:::row:::
+   :::column span="2":::
+      Delete delete test plans, test cases, and other test related work items (able to restore from the Recycle bin)
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end  
+::: moniker range=">= tfs-2015"
+:::row:::
+   :::column span="2":::
+      Permanently delete test plans, test cases, and other test related work items (same as Permanently delete work items)
+   :::column-end:::
+   :::column span="1":::
+
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end 
+

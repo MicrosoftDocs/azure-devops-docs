@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 Use this task to deploy Web Apps, Azure Functions, and WebJobs to Azure App Services
-using a [custom Docker image](https://docs.microsoft.com/azure/app-service/containers/tutorial-custom-docker-image).
+using a [custom Docker image](/azure/app-service/containers/tutorial-custom-docker-image).
 
 ## Task Inputs
 

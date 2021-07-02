@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
 ms.author: kaelli
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 04/05/2019
 ---
 
@@ -38,7 +38,7 @@ For more information about how you can create reports that access the three sour
 |Authoring tool|Source of data|Related topic|
 |---|---|---|
 |Excel|Work item query results|[Use the query editor to list and manage queries](../../boards/queries/using-queries.md)|
-|Excel|OLAP data cube|[Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)|
+|Excel|OLAP data cube|[Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)|
 |Report Designer|OLAP data cube|[Create an aggregate report using Report Designer and the Analysis Services Cube](../sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md) </li></ul>|
 |Report Designer|Warehouse database|[Create a Detailed Report using Report Designer](../sql-reports/create-a-detailed-report-using-report-designer.md)|
 
@@ -52,7 +52,7 @@ The analysis services database organizes data in a cube structure. The cube cont
 > Some measures, such as **Work Item.Work Item Count**, are not pre-aggregated. They are calculated when the query is performed.
 
 
-You can easily build PivotTable and PivotChart reports in Excel by using the analysis services database. For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).
+You can easily build PivotTable and PivotChart reports in Excel by using the analysis services database. For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).
 
 For more information about this source of data, see [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](../sql-reports/perspective-measure-groups-cube.md).
 
@@ -68,8 +68,7 @@ For more information about the warehouse database, see [Table reference for the 
 
 ## Related articles
 
-- [Create Excel status and trend charts from a query](../excel/create-status-and-trend-excel-reports.md)
+- [Create Excel status and trend charts from a query](../create-status-and-trend-excel-reports.md)
 - [Dashboards and reports](overview.md)
-- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](https://msdn.microsoft.com/library/ms156280.aspx) 
-- [Report Builder in SQL Server 2016](https://msdn.microsoft.com/library/dd220460.aspx)
-
+- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs) 
+- [Report Builder in SQL Server 2016](/sql/reporting-services/report-builder/report-builder-in-sql-server-2016)

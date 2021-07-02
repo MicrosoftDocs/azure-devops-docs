@@ -3,12 +3,13 @@ title: Add or modify a work tracking field
 titleSuffix: Azure DevOps & TFS
 description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: ">= tfs-2013 < azure-devops"  
-ms.date: 01/24/2019
+monikerRange: "< azure-devops"  
+ms.date: 07/20/2020
 ---
 
 # Add or modify a field to track work 
@@ -33,6 +34,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 
 
 ## Methods by which work item fields get added 
+
 You use work item fields to track data for a work item type and to define the filter criteria for queries as well as to generate reports. Any data element, except for system  fields, that you want to track must be defined as a work item field. You can define work item fields within the definition of a work item type or global workflow.
 
 Work item fields are maintained for a project collection. You add fields when you perform one of the following tasks:
@@ -44,7 +46,7 @@ Work item fields are maintained for a project collection. You add fields when yo
 -   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
 
 ::: moniker range="< tfs-2017"
--   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
+-   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](/previous-versions/azure/devops/reference/tfs-ps-sync/project-server-fields-added-to-tfs).
 ::: moniker-end 
 
 All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting. 
@@ -101,6 +103,7 @@ The field will appear as a checkbox on the form.
 
 
 <a id="picklist">  </a>
+
 ## Customize a pick list
 
 Pick lists are the enumerated values that appear within a drop-down menu in a work item form and the **Value** column within the query editor. The method you use to customize a pick list varies depending on the field.
@@ -135,6 +138,7 @@ Rules support combining lists, restricting to whom a list applies, and setting c
 When you use a list in several WITs or across several projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or projects, you can define a global list for part of a pick list. See see [Define pick lists](xml/define-pick-lists.md) and [Define global lists](xml/define-global-lists.md).
 
 <a id="add-rules">  </a>
+
 ### Add rules to a field
 
 To add a custom field or add rules to a field, edit the WIT definition. You can limit rules to apply to specific users or groups. Most rules support the **for** or **not** attributes to focus who the rule does and doesn't apply to.
@@ -162,10 +166,12 @@ You apply rules to accomplish the following actions:
 
 System fields, whose names all start with the "System" prefix (for example, System.ID), are limited in terms of the rules you can apply to them. For example, you can't copy or set to empty fields used to track who created, changed, or closed a work item, or date-time fields used by the system.
 
-For more information about applying field rules and restrictions, see [Apply a rule to a work item field](xml/apply-rule-work-item-field.md).
+For more information about applying field rules and restrictions, see [Rules and rule evaluation](../organizations/settings/work/rule-reference.md).
 
 <a id="add-custom-field">  </a>
+
 ## To add a custom field
+
 To add a custom field, edit the WIT definition to add a **FIELD** element within the **FIELDS** section and a **Control** element within the **FORM** section. 
 
 1. Export the WIT definition file [based on the process model you use](customize-work.md).   
@@ -225,6 +231,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 <a id="change-label">  </a>
 
 ## To change the field label on a work item form
+
 To modify the field label, change the value assigned to the ```Control``` element ```Label``` attribute. To remove a field from the work item form, delete the ```Control``` element associated with the field. 
 
 1. Export the WIT definition file according to your process model.
@@ -249,11 +256,12 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 
 <a id="custom-control">  </a>
+
 ## Add a custom control  
 
 Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017"
 
 Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
@@ -268,8 +276,9 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019"
+
 <a id="change-attribute">  </a>
+
 ## Change an attribute of an existing field 
 
 You use **witadmin changefield** to change the attributes of an existing field. For example, the following command changes the friendly name defined for MyCompany.Type to Evaluation Method.  
@@ -290,13 +299,13 @@ The following table summarizes the attributes you can change using [witadmin cha
 > | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
 <a id="index-field">  </a>
+
 ## Change the index attribute of a field
  
 You can enable indexing for a field to improve query response times when filtering on the field. By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type.  
 
 To enable or disable indexing for a field, use the [**witadmin indexfield** command](witadmin/manage-work-item-fields.md). 
 
-::: moniker-end
 
 ## Related articles
 
@@ -310,7 +319,6 @@ Other related topics or resources:
 - [WebLayout and Control elements](xml/weblayout-xml-elements.md)
 - [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
 - [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
-  
 
 
 ### Required permissions
@@ -326,6 +334,7 @@ To get added as an administrator, [Add administrators](../organizations/security
 [!INCLUDE [temp](../includes/field-reference.md)]
 
 <a id="list-fields"></a> 
+
 ### List or review fields  
 
 To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
@@ -342,23 +351,23 @@ To list or review fields, you can use one of the following tools, depending on t
 
 <tr>
 <td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/><sup>1</sup></td>
+<td>✔️</td>
+<td>✔️<sup>1</sup></td>
 <td> </td>
 </tr>
 
 <tr>
-<td align="left"><a href="#wi-explorer" data-raw-source="[Work item field explorer](#wi-explorer)">Work item field explorer</a> <sup>2</sup> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td align="left"><a href="#wi-explorer" data-raw-source="[Work Item Field Explorer](#wi-explorer)">Work item field explorer</a></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 <tr>
 <td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 </tbody>
@@ -367,21 +376,26 @@ To list or review fields, you can use one of the following tools, depending on t
  
 **Notes:** 
 1. Only supported for default processes (Agile, CMMI, Scrum). 
-2. For TFS 2017 and later versions, install the [TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor).   
-	For TFS 2015 and earlier versions, you access this tool from the Process Editor after installing the [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
 
 <a id="wi-explorer">  </a>
+
 **Work Item Field Explorer**
 
 In addition to the attributes that you can change for a work item field, there are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
 
 ![Work Item Field Explorer](media/IC633020.png)
 
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
+For a description of each attribute, see [Work item fields and attributes](../boards/work-items/work-item-fields.md).
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019"
+To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
+
+[!INCLUDE [temp](../includes/process-editor-tool.md)]
+
+
 <a id="integration-fields">  </a>
+
+
 ### Test, build, and version control fields
 
 Several WITs contain fields that provide information that is generated by automated processes that integrate with Team Foundation Build, Microsoft Test Manager, and Team Foundation version control. To add one of these fields to your custom WITs, you [edit the WIT definition](#edit) according to the steps outlined previously in this topic.
@@ -405,6 +419,7 @@ For more information, see [Query based on build and test integration fields](../
 You can add fields or change the attributes of existing fields to support reporting. When you add or change fields, you should name them systematically so that you can find the field in the Analysis Services cube because the fields are logically grouped into folders. To learn more, see [Add or modify work item fields to support reporting](xml/add-or-modify-work-item-fields-to-support-reporting.md).
 
 <a id="delete-field">  </a>
+
 ### Delete a field
 
 When you remove a field from a specific type of work item, that field is not removed from the collection or the database server, even if it is no longer referenced by any WIT. To remove a field, follow these steps.

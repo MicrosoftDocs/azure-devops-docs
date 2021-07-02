@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Data model for Analytics  
@@ -38,7 +38,7 @@ Analytics data model for Azure DevOps consists of entity sets, whose members (en
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -72,6 +72,7 @@ The following EntitySets are supported with the indicated API versions. For the 
 > |WorkItemBoardSnapshot | (Composite) The state of each work item on each calendar date, including Kanban board location - used for trend reporting| ✔️|✔️|✔️ | 
 > |WorkItemTypeFields | The work item properties for each work item type and process - used for report building| ✔️|✔️|✔️ | 
 
+::: moniker range=">= azure-devops-2020"
 
 ## Branch, Pipelines, and Test EntitySets
 
@@ -90,7 +91,7 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 > |Tests | Properties for a test | ✔️ |
 > |TestResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
 
-
+::: moniker-end
 
 
 ## Composite entities
@@ -113,7 +114,7 @@ Some navigation properties result in a single entity, while others result in a c
 
  Entity relationships are also represented as foreign keys so that external tools can join entities. These properties have the suffix "SK", and are either integer or GUID data types. Date properties have corresponding integer date key properties with the following format: YYYYMMDD.
 
-## Entity Properties
+## Entity properties
 
 The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties&mdash;CreatedDate, CreatedDateSK, CreatedOn&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
@@ -131,7 +132,7 @@ The following table provides a partial list of the WorkItemRevision entity prope
 |CreatedOn | Navigation | Navigation property to the Date entity for the date the work item was created, in the time zone defined for the organization. Commonly used to reference properties from the Date entity in ```groupby``` statements.
 
 > [!NOTE]
->Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of the new field. 
+> Changes to custom work item fields will affect the shape of your data model and will affect all work item revisions. For instance, if you add a new field, queries on pre-existing revision data will reflect the presence of the new field. 
 
 
 ## Related articles 

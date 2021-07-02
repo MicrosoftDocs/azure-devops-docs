@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Folder comparison filters
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.technology: devops-code-tfvc
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/26/2018
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Folder comparison filters
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The folder comparison filter is an ordered list of name filters that is used to match the names of files or folders that you are comparing. You can use **Compare** to evaluate the file or folder names against the name filters. Once **Compare** finds a match or exclusion, the comparison stops.
 

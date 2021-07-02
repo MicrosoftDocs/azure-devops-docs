@@ -4,7 +4,7 @@ description: Download a package from a Package Management feed in Azure Artifact
 ms.topic: reference
 ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
 ms.custom: seodec18
-ms.date: 12/07/2018
+ms.date: 07/23/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download a package from a package management feed in Azure Artifacts or TFS.
+Use this task to download a package from a package management feed in Azure Artifacts or TFS.
 Requires the Package Management extension.
 
 ::: moniker range="> tfs-2018"
@@ -25,26 +25,20 @@ Requires the Package Management extension.
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Package type</td><td>(Required) Select the type of package to download</td></tr>
-<tr><td>Feed</td><td>(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our <a href="#qa">Q&As</a> below for information on how to get a feed or project ID, or information on using project and feed name instead.</td></tr>
-<tr><td>View</td><td>(Optional) Select a view to see package versions only promoted to that view.</td></tr>
-<tr><td>Package</td><td>(Required) Select the package to download</td></tr>
-<tr><td>Version</td><td>(Required) Version of the package</td></tr>
-<tr><td>Destination directory</td><td>(Required) Path on the agent machine where the package will be downloaded</td></tr>
-<tr><td>Extract</td><td>(Optional) Specify whether to extract the package contents at the destination directory</td></tr>
-<tr><td>Files</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="https://aka.ms/minimatchexamples" data-raw-source="[More Information](https://aka.ms/minimatchexamples)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|PackageType|(Required) Select the type of package to download.|
+|Feed|(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our [FAQ](#faq) below for information on how to get a feed or project ID, or information on using project and feed name instead.|
+|View|(Optional) Select a view to see package versions only promoted to that view.|
+|Definition|(Required) Select the package to download. This can be the artifact ID or the package name.|
+|Version|(Required) Version of the package.|
+|Files|(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](../file-matching-patterns.md). The default pattern (**) will download all files within the artifact.|
+|Extract|(Optional) Specify whether to extract the package contents at the destination directory.|
+|DownloadPath|(Required) Path on the agent machine where the package will be downloaded.|
 
 ## Examples
 
-### Download a nuget package from an organization-scoped feed and extract to destination directory
+### Download a NuGet package from an organization-scoped feed and extract to destination directory
 
 ```YAML
 # Download an artifact with id 'cfe01b64-ded4-47b7-a569-2ac17cbcedbd' to $(System.ArtifactsDirectory)
@@ -72,16 +66,16 @@ Requires the Package Management extension.
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
 
-## Q&A
+## FAQ
 
-### How do I find the id of the feed (or project) I want to download my artifact from
+### How do I find the ID of the feed (or project) I want to download my artifact from
 
-The get feed api can be used to retrieve the feed and project id for your feed. The api is documented [here](https://go.microsoft.com/fwlink/?linkid=2099537).
+The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed).
 
-### Can I use the project or feed name instead of ids
+### Can I use the project or feed name instead of IDs
 
 Yes, you can use the project or feed name in your definition, however if your project or feed is renamed in the future, your task will also have to be updated or it might fail.
 
-## Open source
+## Open-source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

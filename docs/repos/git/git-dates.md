@@ -4,11 +4,9 @@ titleSuffix: Azure Repos
 description: How dates work in Git
 ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
 ms.technology: devops-code-git 
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
@@ -47,7 +45,6 @@ If we look at our regular log history we would see something like the following:
 git log
 
 commit 17232459f0ae25adeff21c9e21742ba22b7f3499
-Author: Ross Brodbeck <robrodbe@microsoft.com>
 Date:   Thu Feb 25 19:38:54 2016 -0500
 
     An amended commit
@@ -59,7 +56,6 @@ Now let's view the same commit with the author date:
 git log --pretty=fuller
 
 commit 17232459f0ae25adeff21c9e21742ba22b7f3499
-Author:     Ross Brodbeck <robrodbe@microsoft.com>
 AuthorDate: Thu Feb 25 19:38:54 2016 -0500
 Commit:     Ross Brodbeck <robrodbe@microsoft.com>
 CommitDate: Thu Feb 25 19:39:36 2016 -0500

@@ -1,17 +1,17 @@
 ---
 title: Environment
 description: Collection of deployment targets useful for traceability and recording deployment history
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.date: 02/10/2020
-monikerRange: azure-devops
+ms.date: 06/02/2021
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
-An environment is a collection of resources that can be targeted by deployments from a pipeline. Environments can include Kubernetes clusters, Azure web apps, virtual machines, databases. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
+An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
 The advantages of using environments include the following.
 
@@ -20,9 +20,9 @@ The advantages of using environments include the following.
 - **Diagnose resource health** - Validate whether the application is functioning at its desired state.
 - **Permissions** - Secure environments by specifying which users and pipelines are allowed to target an environment.
 
-## Resources
+## Environment Resources
 
-While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
+While an environment is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
 <a name="creation"></a>
 
@@ -41,7 +41,7 @@ While environment at its core is a grouping of resources, the resources themselv
 > It is possible to create an empty environment and reference it from deployment jobs. This will let you record the deployment history against the environment.
 
 > [!NOTE]
-> You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
+> You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md).
 
 <a name="target-from-deployment-job"></a>
 
@@ -72,7 +72,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 
 ## Target a specific resource within an environment from deployment job
 
-You can scope the target of deployment to a particular resource within the environment. This allows you to record deployment history on a specific resource within the environment. The steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job. 
+You can scope the target of deployment to a particular resource within the environment. This allows you to record deployment history on a specific resource within the environment. The steps of the deployment job **automatically inherit** the service connection details from the resource targeted by the deployment job. 
 
 ```YAML
 environment: 'smarthotel-dev.bookings'
@@ -99,13 +99,17 @@ All  environments targeted by deployment jobs of a specific run of a pipeline ca
 
   > [!div class="mx-imgBorder"]
   > ![Environments in run details](media/environments-run.png)
+  
+If you're using an AKS private cluster, the **Environments** tab isn't available.
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. You can use approval checks to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline consumes resource. As the owner of a resource, such as an environment, you can [define approvals and checks](approvals.md) that must be satisfied before a stage consuming that resource starts. 
+You can manually control when a stage should run using approval checks. You can use approval checks to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline consumes a resource. As the owner of a resource, such as an environment, you can [define approvals and checks](approvals.md) that must be satisfied before a stage consuming that resource starts. 
 
 Currently, manual approval checks are supported on environments. 
 For more information, see [Approvals](approvals.md).
+
+The creator, administrator, and user roles can manage approvals and checks. The reader role cannot manage approvals and checks. 
 
 <a name="deployment-history"></a>
 
@@ -131,14 +135,9 @@ You can control who can create, view, use, and manage the environments with user
 
 -  Navigate to the specific **Environment** that you would like to authorize. 
 -  Click on overflow menu button located at the top-right part of the page next to "Add resource" and choose **Security** to view the settings.
--  In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**. 
+-  In the **User permissions** panel, click on **+Add** to add a **User or group** and select a suitable **Role**. 
 
-| Role on an environment | Purpose |
-|------------------------------------|---------|
-| Creator | Global role, available from environments hub security option. Members of this role can create the environment in the project. Contributors are added as members by default. Not applicable for environments auto created from YAML pipeline.|
-| Reader | Members of this role can view the environment. |
-| User | Members of this role can use the environment when authoring yaml pipelines. |
-| Administrator | In addition to using the environment, members of this role can manage membership of all other roles for the environment. Creators are added as members by default. |
+[!INCLUDE [temp](../../organizations/security/includes/environment-roles.md)]
 
 > [!NOTE]
 > - If you create an environment within a YAML, contributors and project administrators will be granted **Administrator** role. This is typically used in provisioning Dev/Test environments.
@@ -150,3 +149,9 @@ Pipeline permissions can be used to authorize all or selected pipelines for depl
 
 - To remove **Open access** on the environment or resource, click the **Restrict permission** in **Pipeline permissions**.
 - To allow specific pipelines to deploy to an environment or a specific resource, click **+** and choose from the list of pipelines.
+
+## FAQ 
+
+### I get an error message when I try to create an environment
+
+If you see the message "Access denied: {User} needs Create permissions to perform the action", you need to check your organization-level permissions. Go to **Organization Settings** > **Users** and check if you have the stakeholder role. The stakeholder role cannot create environments. Change your access level and check to see if you can now create environments. See [Troubleshoot user and permissions management](../../organizations/accounts/faq-user-and-permissions-management.yml) to learn more about user permissions.

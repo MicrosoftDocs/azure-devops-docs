@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.manager: mijacobs2-bbb2-4821-b5a4-dd5eb215d18a
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 

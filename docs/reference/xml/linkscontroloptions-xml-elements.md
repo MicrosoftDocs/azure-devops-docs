@@ -1,25 +1,25 @@
-﻿---
+---
 title: LinksControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2017 < azure-devops'
 ms.date: 06/25/2019
 ---
 
 # LinksControlOptions XML elements (Web form) 
 
-**Azure DevOps Services (Hosted XML) | TFS 2018 | TFS 2017 | [Previous versions](linkscontroloptions-elements.md)**
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
+By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.   
 
 > [!IMPORTANT]  
-> This article applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
+> This article applies to project customization for On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015)](linkscontroloptions-elements.md). <br/><br/>
 > Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
-
-By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.    
 
 The **LinksControlOptions** element is a child element of the **Control** element. With a scoped links control, you can specify filters that restrict the types of links that users can add and the types of work items to which users can create links. Specifically, you use the following child elements to scope the control:
 
@@ -33,7 +33,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 
 ## Summary of what's changed
 
-The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](https://msdn.microsoft.com/library/aa337625.aspx). Overall, it's a much simpler syntax structure than its predecessor. 
+The updated **LinksControlOptions** element introduces several new elements and deprecates several elements that are still in use with the [client **LinksControlOptions** element version](./control-xml-element-reference.md?viewFallbackFrom=vsts). Overall, it's a much simpler syntax structure than its predecessor. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -258,8 +258,6 @@ The following table describes the **LinksControlOptions** element and its child 
 </tr>
 </thead>
 <tbody valign="top" >
-
-
 <tr>
 <td><p> <strong>Column</strong> </p></td>
 <td><p>Required <strong>Columns</strong> element used to specify the work item and link-related fields to display within the links control. </p>
@@ -282,7 +280,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>ExternalLinkFilter</strong> </p></td>
 <td><p>Optional <strong>LinkFilters</strong> element used to specify an external link type. With an external link type, users can create a link relationship to objects that are not work items, such as changesets, hyperlinks, and files under version control. </p>
 <pre><code>&lt;ExternalLinkFilter Type=&quot;ExternalLinkName&quot; /&gt;</code></pre>
-<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a>for a complete list. </p>
+<p>Examples of external link types you can specify include: <code>Fixed in Changeset</code>, <code>Fixed in Commit</code>, <code>Source Code File</code>, <code>Pull Request</code>, <code>Wiki page</code>, and <code>Hyperlink</code>. See <a href="../../boards/queries/link-type-reference.md#external-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#external-link-types)">Link type reference</a> for a complete list. </p>
 <blockquote><b>Important: </b>For import purposes, use the name <code>Workitem Hyperlink</code> in place of <code>Hyperlink</code> and <code>Source Code File</code> in place of <code>Versioned item</code>. 
 </blockquote>
 
