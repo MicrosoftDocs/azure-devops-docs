@@ -1,5 +1,5 @@
 ---
-title: Use Azure Key Vault in your project
+title: Query and use Azure Key Vault secrets in your Pipeline
 description: How to set up Azure Key vaults in your project and use it in your Azure Pipelines
 ms.topic: tutorial
 ms.date: 06/30/2021
@@ -7,11 +7,11 @@ monikerRange: '>= azure-devops-2019'
 "recommendations": "true"
 ---
 
-# Use Azure Key Vault with your project
+# Use Azure Key Vault secrets in your Pipeline
 
 **Azure Pipelines | Azure DevOps Server 2020 | Azure DevOps Server 2019**
 
-With Azure Key Vault you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
+With Azure Key Vault, you can securely store and manage your sensitive information such as passwords, API keys, certificates, etc. using Azure Key Vault, you can easily create and manage encryption keys to encrypt your data. Azure Key Vault can also be used to manage certificates for all your resources.
 
 ## Prerequisites
 
@@ -23,9 +23,9 @@ With Azure Key Vault you can securely store and manage your sensitive informatio
 ## Create an Azure Key Vault
 
 
-### [Azure Portal](#tab/portal/)
+### [Azure portal](#tab/portal/)
 
-1. Navigate to [Azure Portal](https://portal.azure.com/).
+1. Navigate to [Azure portal](https://portal.azure.com/).
 
 1. Select **Create a resource** in the left navigation pane.
 
@@ -82,7 +82,7 @@ With Azure Key Vault you can securely store and manage your sensitive informatio
 
 Before proceeding with the next steps, we must first create a service principal to be able to query our Azure Key Vault from Azure Pipelines. Follow the steps in the following how-to to [Create a service principal](azure/active-directory/develop/howto-create-service-principal-portal.md#register-an-application-with-azure-ad-and-create-a-service-principal) and then continue with the next steps.
 
-1. Navigate to [Azure Portal](https://portal.azure.com/).
+1. Navigate to [Azure portal](https://portal.azure.com/).
 
 1. Select the key vault you created in the previous step.
 
@@ -96,7 +96,7 @@ Before proceeding with the next steps, we must first create a service principal 
 
     :::image type="content" source="media/get-list-permissions.png" alt-text="Add get and list permissions":::
 
-1. Under **Select principal** select to add a service principal and choose the one you created earlier.
+1. Under **Select principal**, select to add a service principal and choose the one you created earlier.
 
 1. Select **Save** when you are done.
 
@@ -134,7 +134,7 @@ steps:
     MY_MAPPED_ENV_VAR: $(mySecret)
 ```
 
-The output from the bash task should look like this:
+The output from the last bash command should look like this:
 
 ```
 Secret Found! ***
