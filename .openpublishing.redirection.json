@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/apps/windows/universal.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/windows/universal",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/release/automate-terraform.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/release/automate-terraform",
       "redirect_document_id": false
