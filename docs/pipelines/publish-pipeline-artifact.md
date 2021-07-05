@@ -80,6 +80,6 @@ When your pipeline run is completed you can view or download your published Arti
 
 ## Related articles
 
-- [Releases in Azure Pipelines](/release/releases.md)
-- [Multi-stage release pipeline](/release/define-multistage-release-process.md)
-- [Deploy from multiple branches](/release/deploy-multiple-branches.md)
+- [Releases in Azure Pipelines](/rest/api/azure/devops/release/releases)
+- [Multi-stage release pipeline](/azure/devops/pipelines/release/define-multistage-release-process)
+- [Deploy from multiple branches](/azure/devops/pipelines/release/deploy-multiple-branches)
