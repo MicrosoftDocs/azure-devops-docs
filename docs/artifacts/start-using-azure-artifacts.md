@@ -21,7 +21,7 @@ Azure Artifacts comes pre-installed in Azure DevOps Services, Azure DevOps Serve
 ## Prerequisites
 
 - A Project Collection Administrator or an Organization Owner [access permissions](../organizations/security/lookup-organization-owner-admin.md).
-- [Whitelist IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
+- [Allow IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 - If you plan to use more than the free 2 GiB storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
 > [!NOTE]
@@ -37,53 +37,38 @@ Azure Artifacts comes pre-installed in TFS 2017 and 2018. If the extension has b
 
 1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then, select **Azure Artifacts**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Users page in TFS](media/users-hub-tfs.png)
+    :::image type="content" source="media/users-hub-tfs.png" alt-text="Assign user licenses in TFS":::
 
 2. Select **Assign**, enter the user to assign licenses, and then select **Ok.**
 
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
-   * Ensure that your Visual Studio Enterprise subscribers are assigned **VS Enterprise** [Access level](../organizations/security/change-access-levels.md).
+   * Ensure that your Visual Studio Enterprise subscribers are assigned [VS Enterprise Access level](../organizations/security/change-access-levels.md).
 
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
 
-## Billing and free monthly usage
+## Artifacts free tier and upgrade
 
-Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts and will need to either reduce your artifact storage, or increase your usage limit. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). For Microsoft-internal customers, please refer to internal documentation on Microsoft pricing. 
+Azure Artifacts is free for every organization up to 2 GiB of storage. Once you reach the maximum storage limit, you can no longer upload new artifacts and will need to either delete some of your existing artifacts, or [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) to increase your storage limit. See the [Pricing Calculator](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) to learn more about Azure DevOps billing.
 
-> [!NOTE]
-> Organizations created before May 6, 2019 will remain on the per-user billing model, and will be switched over to storage-based charging as soon as November 1, 2020. More details on billing changes can be found on [the Azure DevOps blog](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/). 
+## Organization billing
 
-## View artifact and billed storage
-
-To see your storage bill for Azure Artifacts:
+Follow the steps outlined below to view your billing settings for your organization 
  
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
+1. Sign in to your Azure DevOps organization 
  
-2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
-   > [!div class="mx-imgBorder"]
-   > ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
+1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
+
+    :::image type="content" source="../media/settings/open-admin-settings-vert.png" alt-text="Access organization settings":::
+
+1. Select **Billing**. 
+
+    :::image type="content" source="../organizations/billing/media/shared/select-billing-organization-settings.png" alt-text="Organization settings - billing":::
  
-3. Select **Billing**. 
- 
-   > [!div class="mx-imgBorder"]
-   > ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
- 
-4. Find Artifacts and see your current billed usage from Azure Artifacts, or review a breakdown of the different types of storage your organization is currently using. See the [FAQs](#faqs) further in this article for information on which artifacts count towards your storage total. 
+1. View your Artifacts consumption and usage limit.
 
-   > [!div class="mx-imgBorder"]
-   > ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
-
-> [!NOTE]
-> Based on community feedback, we're working on more granular drilldowns and views into your artifact storage. More information to come. 
-
-## Pay for Azure Artifacts
-
-Each organization gets Azure Artifacts for free, up until 2 GiB of storage is used. If you need more than 2 GiB, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
-
-If you've reached your storage limit, you'll be blocked from making additional uploads. It can take up to 1 hour after increasing your limit for uploads to be re-enabled. 
+    :::image type="content" source="media/billing-settings.png" alt-text="Artifacts billing settings":::
 
 ## FAQs
 
