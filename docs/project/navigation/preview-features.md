@@ -129,7 +129,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      Task Insights for Failed Pipeline Runs   
+      [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)    
    :::column-end:::
    :::column span=".5":::
        ✔️   
