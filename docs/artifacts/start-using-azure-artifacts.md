@@ -74,31 +74,32 @@ Follow the steps outlined below to view your billing settings for your organizat
 
 ### Q: Which artifacts count toward my total billed storage?
 
-A: Currently, the following get counted in your Azure Artifacts billed cost: 
-* All packages (npm, NuGet, Python, Maven, and Universal Packages), including those packages stored from upstream sources.
+A: Currently, you get billed for all package types (npm, NuGet, Python, Maven, and Universal Packages) including packages stored from upstream sources.
 
-You're not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching.
+You don't get billed for the storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching.
 
 > [!NOTE]
 > Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
 
-### Q: Why do I see 0 GiB of storage, even though I'm storing artifacts?
+### Q: I'm storing Artifacts but my storage consumption shows 0 GiB?
 
 A: 1 GiB is currently our lowest granularity, so you most likely haven't reached 1 GiB yet. 
 
-### Q: How can I control how long artifacts are stored?
+### Q: How can I control how many days Artifacts are kept?
 
-A: Retention for stored packages can be set via the feed retention policy. See how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
+A: You can set up the retention policies to delete packages automatically. See [how to use retention policies to delete old packages](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies) for more details.
 
-### Q: How can I delete my artifacts? 
+### Q: How can I delete my Artifacts? 
 
-A: To delete packages within your feeds, see [delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md). 
+A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for details. 
 
-### Q: How long does it take for deleted artifacts to affect the amount of billed storage?
+### Q: How long does it take for deleted Artifacts to affect the amount of billed storage?
 
-A: Deletion of artifacts doesn't register immediately. Storage usage should be updated within 24 hours, but in some cases it may take up to 48 hours maximum. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts. Then, reduce the level once the storage metrics are updated.
+A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, you can temporarily increase your usage level as a workaround to continue publishing Artifacts, then reduce the level back once the storage metrics are updated.
 
-The `used` value on the Billing tab of your Organization Settings page gets updated once per day. When you delete artifacts, it may not reflect immediately on your billing page. The Artifact Storage tab gets updated more frequently, so you may see a small discrepancy between the two.  
+The `used` column on the Billing page of your Organization gets updated once per day. When you delete an Artifact, it may not reflect immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you may see a small discrepancy between the two.  
+
+:::image type="content" source="media/settings-vs-storage.png" alt-text="Artifacts billing settings vs Artifacts storage data":::
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
