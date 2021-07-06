@@ -14,8 +14,10 @@ ms.date: 06/24/2021
 
 [!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
+Once you make a connection to a GitHub repository from Azure Boards, you can add or remove repositories under the same GitHub account or organization. Or, you can completely remove the connection to all repositories. 
 
-Learn how to add or remove GitHub repositories from a GitHub connection made for Azure Boards. Or, remove a connection previously made. 
+To manage which GitHub repositories can participate in Azure Boards integration, see [Change GitHub repository access](change-azure-boards-app-github-repository-access.md). 
+ 
 
 > [!TIP]    
 > If you encounter a problem with a connection, we recommend that you remove the connection and start over with a new connection.  
@@ -25,9 +27,9 @@ Learn how to add or remove GitHub repositories from a GitHub connection made for
 
 
 ## Prerequisites 
-
-* To add or remove repositories or remove a connection, you must be the person who created the connection or belong to the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md). 
-* To add  repositories, you must be an administrator or owner of the GitHub repository you'll connect to.  
+ 
+* To add or remove repositories or remove a connection, you must be the person who created the connection or belong to the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md).  
+* To add repositories, you must be an administrator or owner of the GitHub repository you'll connect to.  
 
 > [!IMPORTANT]  
 > You can connect to multiple GitHub repositories so long as you are an administrator for those repositories. 
