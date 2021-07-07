@@ -307,12 +307,6 @@ See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.m
 - [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)
 
 
-<!---
-> [!NOTE]   
-> We recommend that you use the [Azure Boards app for GitHub](install-github-app.md) to configure and manage your connections to GitHub.com. The app provides a more streamlined configuration experience and has the advantage of authenticating and operating as the app rather than an individual. Once you have configured your connection, you can manage the connected repositories either from Azure Boards or GitHub.com. 
-
--->
-
 
 <!---
 
