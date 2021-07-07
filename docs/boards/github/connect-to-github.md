@@ -83,13 +83,11 @@ The following authentication options are supported based on the GitHub platform 
 
 	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
-	A GitHub repository can only be connected to one Azure Boards project. 
-
 1. 	When asked, enter your GitHub credentials.
 
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub sign in dialog](media/github/github-dialog-sign-in.png)  
-	If you have enabled two-factor authentication, enter the authentication code that GitHub sent you and choose <strong>Verify</strong>. 
+	If you have enabled two-factor authentication, enter the authentication code that GitHub sent you and choose **Verify**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![GitHub two-factor authentication dialog](media/github/github-dialog-two-factor.png)  
@@ -112,9 +110,7 @@ Once you've been authenticated, you'll be able to select the repositories you wa
 
 	If all repositories have been connected already to the current or other organization, then the following message displays. 
 
-	:::image type="content" source="media/connect-cloud/message-repos-already-added.png" alt-text="Screenshot of message indicating all repositories are connected.":::
-
-	The GitHub connections feature only allows one repository to be connected an Azure Boards project. 
+	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
 
 1. When done, choose **Save**.
 

@@ -25,10 +25,10 @@ The syntax shown works whether you have or haven't [connected your project to a 
 
 ## Prerequisites 
 
-* You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+
+* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration overview](index.md).  
 * You must have a Kanban board you want to configure. When you add a team, you add a Kanban board for that team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 * You must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
-* You must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To add the status badge to the GitHub.com repository, you must be a contributor of the repository.  
 
 
@@ -82,7 +82,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 
 ## Related articles
 
-- [What is Azure Boards?](../get-started/what-is-azure-boards.md)
+- [Add columns to your Kanban board](../boards/add-columns.md)
 - [Customize cards](../boards/customize-cards.md)
 - [Configure team settings](../../organizations/settings/manage-teams.md) 
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

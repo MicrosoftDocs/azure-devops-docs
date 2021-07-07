@@ -65,8 +65,13 @@ To manage which GitHub repositories can participate in Azure Boards integration,
 	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
 
 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)
+
+
 ## Related articles
-- [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github?view=azure-devops&preserve-view=true)
-- [Connect Azure DevOps Server to GitHub Enterprise Server](/azure/devops/boards/github/connect-on-premises-to-github?view=azure-devops-2020&preserve-view=true)
-- [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)
+- [Azure Boards-GitHub integration overview](index.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
