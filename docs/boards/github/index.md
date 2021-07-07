@@ -12,7 +12,7 @@ ms.date: 07/06/2021
 ---
 
 
-# GitHub integration overview
+# Azure Boards-GitHub integration overview
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
@@ -20,12 +20,8 @@ Use this guide to connect Azure Boards with one or more GitHub repositories. Thi
 
 By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow.  
 
-
 > [!NOTE]   
 > Azure DevOps only supports integation with GitHub repositories or Azure Repos Git repositories. Integration with other Git repositories is not supported.  
- 
-
-> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
 
 
 ::: moniker range="azure-devops"
@@ -38,6 +34,11 @@ If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up
 In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to XBox.
 
 ::: moniker-end
+
+<br/> 
+
+> [!VIDEO https://channel9.msdn.com/Shows/DevOps-Lab/Introducing-Azure-Boards-to-the-GitHub-Marketplace/player]
+ 
 
 ## Connect Azure Boards to GitHub repositories 
 
@@ -85,11 +86,9 @@ You can start from Azure Boards or from GitHub to make the connection.
 
 ## Exercise Azure Boards-GitHub integration features
 
-Once you've configured the connection, you can then exercise these features:
+Once you've configured the connection, you can perform the following tasks. 
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
 - [Configure status badges](configure-status-badges.md)
-- [Change GitHub repository access, or suspend or uninstall the integration](change-azure-boards-app-github-repository-access.md)
-
  
 ## Add or remove connections, suspend operations, or uninstall the app  
  
@@ -101,16 +100,18 @@ Once you've configured the connection, you can then exercise these features:
  
 ## Restrictions 
 
-- You can only connect a GitHub repository to one Azure DevOps organization and project
-	Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected AB# mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
+- You should only connect a GitHub repository to one Azure DevOps organization and project
+	Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
   
 ## Additional resources
 
-- [Add or remove GitHub repositories](add-remove-repositories.md)
+- [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md)
+- [Link work items](../backlogs/add-link.md)
+- [About work items](../work-items/about-work-items.md)  
+- [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 - [Build GitHub repositories](../../pipelines/repos/github.md) 
 - [Build GitHub Enterprise Server repositories](../../pipelines/repos/github-enterprise.md)
 - [Trigger an Azure Pipelines run from GitHub Actions](../../pipelines/ecosystems/github-actions.md)  
-- [Link work items](../backlogs/add-link.md)
-- [About work items](../work-items/about-work-items.md)
+
  
 
