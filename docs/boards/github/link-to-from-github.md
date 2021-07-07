@@ -8,22 +8,20 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/09/2020
+ms.date: 07/06/2021
 ---
-
-
 
 # Link GitHub commits, pull requests, and issues to work items
 
 [!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
- When using GitHub with Azure Boards, it's easy to keep all of your work connected. Links can be added using the **#mention** syntax familiar to GitHub users or from the Azure Boards work item.
+Once you've connected your Azure Boards project with a GitHub repository, you can link work items to your GitHub commits and pull requests. You can add links using the **#mention** syntax familiar to GitHub users or by adding a GitHub Commit or GitHub Pull Request link type from the Azure Boards work item.
 
 [!INCLUDE[temp](../includes/github-platform-support.md)]
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Connect Azure Boards to GitHub](connect-to-github.md).  
+* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration overview](index.md).  
 * You must be a Contributor to Azure Boards.  
 * You must be a  Contributor to the GitHub repository.  
 * If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
@@ -122,7 +120,7 @@ Choose the link provided to open the commit or pull request in GitHub.
 
 ## View GitHub objects on Kanban board
 
-With GitHub annotations enabled on the Kanban board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. 
+With GitHub annotations enabled on the Kanban board, you can quickly open linked GitHub commits, pull requests, or issues for more detail. For details on enabling annotations, see [Customize cards](../boards/customize-cards.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board shows GitHub links](media/link/board-view-github-links.png)  
@@ -130,9 +128,7 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 > [!NOTE]   
 > GitHub annotations requires Azure DevOps Server 2019 Update 1 or later version. 
 
-For details on enabling annotations, see [Customize cards](../boards/customize-cards.md).
-
-
+ 
 
 ## Try this next
 
@@ -141,7 +137,7 @@ For details on enabling annotations, see [Customize cards](../boards/customize-c
 
 ## Related articles
 
-- [Connect Azure Boards to GitHub](connect-to-github.md)  
+- [Azure Boards-GitHub integration overview](index.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 
