@@ -14,8 +14,6 @@
   href: add-remove-repositories.md
 - name: Change GitHub repository access
   href: change-azure-boards-app-github-repository-access.md
-- name: Change Azure Boards app for GitHub repository access 
-  href: change-azure-boards-app-github-repository-access.md
 - name: Troubleshoot GitHub connection
   href: troubleshoot-github-connection.md
 

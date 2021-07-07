@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/30/2021
+ms.date: 07/06/2021
 ---
 
 # Install and configure the Azure Boards app for GitHub  
@@ -17,21 +17,11 @@ ms.date: 06/30/2021
 
 Installing the Azure Boards app for GitHub is the first step in connecting Azure Boards to your GitHub repositories. By connecting your Azure Boards projects with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
  
-
-This article walks you through the following 5 minute installation and configure process: 
-
-1. **Install and configure**
-	- Choose the GitHub.com repositories you want to connect 
-	- Choose the Azure DevOps Services organization and Azure Boards project you want to connect
-	- Authorize connection to Azure Boards 
-	- Confirm the repositories you want to connect
-
-
-You can learn more about the Azure Boards app from the [GitHub Marketplace](https://github.com/marketplace/azure-boards), and Azure Boards from [Azure DevOps Services>Azure Boards](https://azure.microsoft.com/services/devops/boards/).
+For an overview of the integration that the Azure Boards app for GitHub supports, see [GitHub integration overview](index.md). 
 
 ## Prerequisites 
 
-* To install the Azure Boards app, you must be an administrator or owner of the GitHub repository or GitHub organization.
+* To install the Azure Boards app, you must be an administrator or owner of the GitHub organization.
 * To connect to the Azure Boards project, you must have read permission to the GitHub repository.
 
 > [!IMPORTANT]  
@@ -43,7 +33,7 @@ You can learn more about the Azure Boards app from the [GitHub Marketplace](http
 
 ## Install and configure the Azure Boards app 
 
-1. Go to the Azure Boards app in the GitHub Marketplace. 
+1. Go to the Azure Boards app in the GitHub Marketplace, `https://github.com/marketplace/azure-boards`. 
 
 	> [!div class="nextstepaction"]
 	> [Azure Boards app](https://github.com/marketplace/azure-boards) 
