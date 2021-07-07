@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 06/17/2021
+ms.date: 07/07/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -42,7 +42,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 </tr>
 <tr><td rowspan="5"><strong>2021 Q2</strong></td>
     <td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147 data-raw-source="[Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1827147)">Restrict personal access token (PAT) scope and lifespan via Azure AD tenant policy</a></td><td>In Progress</td><td>Admin</td><td>Future</td>
-    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>Proposed</td><td>Admin</td><td>In Preview</td>
+    <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202" data-raw-source="[IPv6 conditional access policy support](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1837202)">IPv6 conditional access policy support</a></td><td>In Preview</td><td>Admin</td><td>Future</td>
     <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924" data-raw-source="[Accessibility and UX Modernization](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1810924)">Accessibility and UX Modernization</a></td><td>Proposed</td><td>Boards</td><td>Future</td>
     <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td><a href="2021/sprint-187-update.md#preview-of-templates-support-in-yaml-editor">In Preview</td><td>Pipelines</td><td>TBD</td>
     <tr><td><a href=https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/ data-raw-source="[Copy Dashboard](https://devblogs.microsoft.com/devops/copy-dashboard-public-preview/)">Copy Dashboard</a></td><td>In Preview</td><td>Reporting</td><td>Future</td></tr>
