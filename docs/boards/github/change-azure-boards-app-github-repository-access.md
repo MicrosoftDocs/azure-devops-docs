@@ -65,7 +65,7 @@ The procedures provided in this article only apply when you've installed the Azu
 
 ## Update Azure Boards GitHub connections
  
-If you change the repositories that the Azure Boards app for GitHub supports, you may be redirected to Azure Boards GitHub connections. A good practice is to remove the respositories in Azure Boards that can no longer connect to GitHub. For details, see [Add or remove GitHub repositories](add-remove-repositories.md).
+If you change the repositories that the Azure Boards app for GitHub supports, you may be redirected to Azure Boards GitHub connections. A good practice is to remove the repositories in Azure Boards that can no longer connect to GitHub. For details, see [Add or remove GitHub repositories](add-remove-repositories.md).
 
 If you uninstall the Azure Boards app for GitHub, you'll see the following message in Azure Boards, **Project Settings>GitHub** Connections. Choose **Remove connection** to remove all GitHub connections that have been previously made. See also, [Add or remove GitHub repositories](add-remove-repositories.md). 
 
