@@ -4,7 +4,7 @@ description: Learn about Azure Artifacts and how to set up billing and view your
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
-ms.author: chcomley
+ms.author: rabououn
 author: chcomley
 ms.date: 07/02/2021
 monikerRange: '>= tfs-2017'
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Azure Artifacts Overview
 
-Azure Artifacts enable developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, Npm, Python, Maven, and Universal Packages.
+Azure Artifacts enables developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, Npm, Python, Maven, and Universal Packages.
 
 Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB of storage. If your organization needs more storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
@@ -20,7 +20,6 @@ Azure Artifacts comes pre-installed in Azure DevOps Services, Azure DevOps Serve
 
 ## Prerequisites
 
-- A Project Collection Administrator or an Organization Owner [access permissions](../organizations/security/lookup-organization-owner-admin.md).
 - [Allow IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md) if your organization is using a firewall or a proxy server.
 - If you plan to use more than the free 2 GiB storage, you must [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization.
 
@@ -56,7 +55,7 @@ Azure Artifacts is free for every organization up to 2 GiB of storage. Once you 
 
 Follow the steps outlined below to view your billing settings for your organization 
  
-1. Sign in to your Azure DevOps organization 
+1. Sign in to your Azure DevOps organization.
  
 1. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
 
@@ -95,7 +94,7 @@ A: See [Delete and recover packages](how-to/delete-and-recover-packages.md) for 
 
 ### Q: How long does it take for deleted Artifacts to affect the amount of billed storage?
 
-A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, you can temporarily increase your usage level as a workaround to continue publishing Artifacts, then reduce the level back once the storage metrics are updated.
+A: Deletion of artifacts doesn't register immediately. Storage consumption should be updated within 24 hours, but in some cases it may take up to 48 hours. If you're blocked from uploading Artifacts, as a workaround you can temporarily increase your usage level, then reduce the level back once the storage metrics are updated.
 
 The `used` column on the Billing page of your Organization gets updated once per day. When you delete an Artifact, it may not reflect immediately on your billing page. The Artifact Storage page however gets updated more frequently, so you may see a small discrepancy between the two.  
 
@@ -103,14 +102,13 @@ The `used` column on the Billing page of your Organization gets updated once per
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier of storage (< 2 GiB). If you have above 2 GiB of used storage, you can only read packages. You can't push packages until you lower your usage below 2 GiB, or you can reconnect an Azure subscription to your organization and increase your storage tier appropriately.
-
-### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
-
-A: Customers from before May 6, 2019 aren't charged for Artifacts storage until November 1, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. If you opt in, your Azure bill will include the storage cost calculated from November 1 onward. 
+A: When you remove your Azure Subscription from your Azure DevOps organization, you only have access to the free tier of storage (< 2 GiB). If you have above 2 GiB of used storage, you can only read packages. You can't publish new packages until you delete some of your older packages to lower your usage below 2 GiB, or you can reconnect an Azure subscription to your organization and set up billing to increase your storage tier.
 
 ::: moniker-end
 
-## What's next?
+## Related articles
 
-* [Artifacts Storage breakdown](artifact-storage.md)
+- [Artifacts storage consumption](./artifact-storage.md)
+- [Feeds overview](./concepts/feeds.md)
+- [Manage permissions](./feeds/feed-permissions.md)
+- [Feed views](./concepts/views.md)
