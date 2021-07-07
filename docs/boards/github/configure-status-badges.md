@@ -7,7 +7,7 @@ ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/24/2021
+ms.date: 07/06/2021
 ---
 
 # Configure status badges to add to GitHub README files 

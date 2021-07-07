@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 06/30/2021
+ms.date: 07/06/2021
 ---
 
 # Connect Azure Boards to GitHub (Cloud) 
@@ -73,13 +73,21 @@ The following authentication options are supported based on the GitHub platform 
 
 	Otherwise, choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false"::: **New connection**, and select your authentication method from the **New Connection** dialog.
 
-	If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
+	When you connect using your GitHub account, you use your GitHub account credentials to authenticate. If connecting using PAT, see [Add a GitHub connection using PAT](#github-pat). If connecting to a GitHub Enterprise Server, see [Register Azure DevOps in GitHub as an OAuth App](#server-github-ent-oauth-register).
 
 ## Add a GitHub connection with GitHub credentials 
 
 1. 	If this is your first time connecting to GitHub from Azure Boards, you will be asked to sign in using your GitHub credentials. Choose an account for which you are an administrator for the repositories you want to connect to. 
 
-	:::image type="content" source="media/connect-cloud/choose-github-org.png" alt-text="Screenshot of single sign-on to GitHub organization.":::
+1. If you belong to more than one gitHub organization, choose the organization whose repositories you want to connect. Only those organizations that your own or are an administrator, and where the Azure Boards app for GitHub have been installed are listed.  
+
+	:::image type="content" source="media/connect-cloud/multiple-github-orgs.png" alt-text="Screenshot of choosing from multiple GitHub organizations to connect to."::: 
+
+	If all repositories for an organization have already been connected to Azure Boards, you'll see the following message. 
+
+	:::image type="content" source="media/connect-cloud/message-all-repositories-already-connected.png" alt-text="Screenshot of message where no more repositories exist to connect."::: 
+
+	A GitHub repository can only be connected to one Azure Boards project. 
 
 1. 	When asked, enter your GitHub credentials.
 
