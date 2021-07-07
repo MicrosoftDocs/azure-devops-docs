@@ -80,7 +80,7 @@ The follow table indicates which preview features can be enabled per user or tea
 ---
 :::row:::
    :::column span="3":::
-      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)
+      [Limit user visibility and collaboration to specific projects](../../organizations/projects/about-projects.md#project-scoped-user-group)  
       [New account manager](#account-manager)  
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
@@ -129,7 +129,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      Task Insights for Failed Pipeline Runs   
+      [Task Insights for Failed Pipeline Runs](../../pipelines/get-started/multi-stage-pipelines-experience.md#task-insights-for-failed-pipeline-runs)    
    :::column-end:::
    :::column span=".5":::
        ✔️   
@@ -197,11 +197,11 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 <a id="account-manager" />
 
-To access the Preview features options, open your profile menu. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
+To access the Preview features options, open your profile menu. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not. The **New Account Manager** preview feature turns on enhanced user interface options for managing account information. The menu options move under the **User settings** icon from where they were previously under the **Account manager for your account** icon. 
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
-Choose the :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile icon, and then choose **Preview features**. 
+Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open User settings](media/preview-features/open-profile-menu-s170.png)   
@@ -209,7 +209,7 @@ Choose the :::image type="icon" source="../../media/icons/user-settings-gear.png
 
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
 
-Choose your profile menu and then choose **Preview features**. 
+Choose **Account manager for your account** and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Preview Features](media/preview-features/open-preview-features-old-account-manager.png)
