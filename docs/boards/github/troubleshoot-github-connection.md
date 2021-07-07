@@ -24,53 +24,53 @@ For an overview of the integration that the Azure Boards app for GitHub supports
 The following authentication options are supported based on the GitHub platform you want to connect to.  
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Platform**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       **GitHub.com**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       **GitHub Enterprise Server**
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Azure DevOps Services**
    :::column-end:::
-   :::column span="":::
-      - [GitHub.com user account (Recommended)](#server-github-ent-username)
-      - [Personal access token (PAT)](#github-pat)
+   :::column span="1":::
+      - GitHub.com user account 
+      - Personal access token (PAT)
    :::column-end:::
-   :::column span="":::
-      - [OAuth (preferred, registration required)](#server-github-ent-oauth-register) 
-      - [PAT](#server-github-ent-pat) 
-      - [Username plus password](#server-github-ent-username) 
+   :::column span="1":::
+      - OAuth  
+      - PAT
+      - Username plus password
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Azure DevOps Server 2020**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       Not applicable
    :::column-end:::
-   :::column span="":::
-      - [PAT](#server-github-ent-pat) 
-      - [Username plus password](#server-github-ent-username) 
+   :::column span="1":::
+      - PAT 
+      - Username plus password
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Azure DevOps Server 2019**
    :::column-end:::
-   :::column span="":::
+   :::column span="1":::
       Not applicable
    :::column-end:::
-   :::column span="":::
-      - [OAuth (preferred, registration required)](#server-github-ent-oauth-register) 
-      - [PAT](#server-github-ent-pat) 
-      - [Username plus password](#server-github-ent-username) 
+   :::column span="1":::
+      - OAuth  
+      - PAT
+      - Username plus password
    :::column-end:::
 :::row-end:::
  
@@ -108,6 +108,7 @@ To resolve the problem, consider the following:
 
 	To resolve, recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
 
+<a id="ghe-dataimport" />
 
 ## Resolve broken GitHub Enterprise Server connection after data import
 
