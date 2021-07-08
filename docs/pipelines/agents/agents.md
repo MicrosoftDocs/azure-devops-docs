@@ -605,12 +605,14 @@ POST https://dev.azure.com/{organization}/_apis/distributedtask/pools/{poolId}/m
 
 #### URI Parameters
 
-| Name | In | Required | Type | Description |
-|------|---------|
-| `agentId` |  query | False | string | The agent to update. If not specified - update will be triggered for all agents. |
-| `organization` |  path | True | string | The name of the Azure DevOps organization. |
-| `poolId` |  path | True | integer int32 | The agent pool to use |
-| `api-version` |  query | False | string | Version of the API to use. This should be set to '6.0' to use this version of the api. |
+| Name           | In    | Required | Type          | Description                                                                            |
+| -------------- | ----- | -------- | ------------- | -------------------------------------------------------------------------------------- |
+| `agentId`      | query | False    | string        | The agent to update. If not specified - update will be triggered for all agents.       |
+| `organization` | path  | True     | string        | The name of the Azure DevOps organization.                                             |
+| `poolId`       | path  | True     | integer int32 | The agent pool to use                                                                  |
+| `api-version`  | query | False    | string        | Version of the API to use. This should be set to '6.0' to use this version of the api. |
+
+
 
 To trigger agent update - request body should be empty.
 
