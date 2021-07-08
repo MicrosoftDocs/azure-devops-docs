@@ -121,7 +121,7 @@ Once you've configured the connection, you can perform the following tasks.
 - [Link GitHub commits and pull requests to work items](link-to-from-github.md)
 - [Configure status badges](configure-status-badges.md)
  
-## Add or remove connections, suspend operations, or uninstall the app  
+## Add or remove connections 
  
 - [Add or remove GitHub repositories, remove connection](add-remove-repositories.md)  
 	Use the procedures provided here to add or remove GitHub connections to GitHub repositories from Azure Boards.  
