@@ -829,9 +829,7 @@ jobs:
 The output from the preceding pipeline.
 
 ```text
-# Job A
 this is the value
-# Job B
 this is the value
 
 ```
