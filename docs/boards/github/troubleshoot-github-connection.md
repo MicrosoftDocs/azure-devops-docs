@@ -110,7 +110,7 @@ To resolve the problem, consider the following:
 
 <a id="ghe-dataimport" />
 
-## Resolve broken GitHub Enterprise Server connection after data import
+## Resolve broken GitHub Enterprise Server connection  
 
 If you have migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
 
@@ -127,7 +127,7 @@ To resolve the problem, consider the following:
 
 <a id="integrate-repo-to-several-organizations" />
 
-## Unexpected results when linking to projects defined in two or more Azure DevOps organizations
+## Connecting to multiple Azure DevOps organizations 
 
 If you connect your GitHub repository to two or more projects that are defined in more than one Azure DevOps organization, such as dev.azure.com/Contoso and dev.azure.com/Fabrikam, you may get unexpected results when using **AB#** mentions to link to work items. This problem occurs because work item IDs are not unique across Azure DevOps organizations, so **AB#12** can refer to a work item in either the Contoso or Fabrikam organization. So, when a work item is mentioned in a commit message or pull request, both organizations will attempt to create a link to a work item with a matching ID (if one exists). 
 

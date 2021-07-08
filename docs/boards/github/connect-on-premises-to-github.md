@@ -208,7 +208,7 @@ If you plan to use OAuth to connect Azure DevOps Server with your GitHub Enterpr
 	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
 1. If this is the first time connecting to a GitHub account or organization from Azure Boards, you'll also be installing the Azure Boards app for GitHub. Complete the integration by following the procedures outlined in [Confirm the connection](connect-to-github.md#confirm-connection). 
-2. 
+
 ## Resolve connection issues
 
 See [Troubleshoot GitHub repository connection](troubleshoot-github-connection.md).

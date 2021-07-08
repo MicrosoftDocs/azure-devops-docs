@@ -52,18 +52,23 @@ To manage which GitHub repositories can participate in Azure Boards integration,
 1. To add or remove repositories, choose  :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More options** for the connection and choose **Add repositories** or **Remove repositories** from the menu. 
 
 	:::image type="content" source="media/connect-cloud/connection-menu.png" alt-text="Screenshot of GitHub connection menu of More options.":::
+
+1. To remove all repositories and the connection, choose the **Remove connection** option. Then, choose **Remove** to confirm.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose **Add** repositories or **Remove repositories** from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  
-::: moniker-end
+	
 1. To remove all repositories and the connection, choose the **Remove connection** option. Then, choose **Remove** to confirm.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Confirm remove GitHub connection dialog](media/github/remove-connection-confirmation.png)  
-
+::: moniker-end
 
 
 ## Try this next
