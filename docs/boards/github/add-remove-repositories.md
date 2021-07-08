@@ -73,5 +73,5 @@ To manage which GitHub repositories can participate in Azure Boards integration,
 
 
 ## Related articles
-- [Azure Boards-GitHub integration overview](index.md)
+- [Azure Boards-GitHub integration](index.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)

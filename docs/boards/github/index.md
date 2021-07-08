@@ -1,5 +1,5 @@
 ---
-title: Learn how to integrate GitHub with Azure Boards
+title: Azure Boards-GitHub integration 
 titleSuffix: Azure Boards
 description: Manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards
 ms.custom: boards-get-started 
@@ -12,7 +12,7 @@ ms.date: 07/06/2021
 ---
 
 
-# Azure Boards-GitHub integration overview
+# Azure Boards-GitHub integration 
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
@@ -41,6 +41,35 @@ In addition to accessing developer services such as Azure DevOps and Azure, you 
 
 ::: moniker-end
 
+## Supported integration scenarios 
+
+Azure Boards and Azure DevOps Services support integration with GitHub.com and GitHub Enterprise Server repositories. On-premises Azure DevOps Servers support integration with GitHub Enterprise Server repositories.  
+
+Azure Boards-GitHub integration supports the following connections:  
+
+- **From GitHub**: 
+	- Support integration for all repositories for a GitHub account or organization, or select repositories. 
+	- Add or remove GitHub repositories that participate in the integration and configure the project they connect to. 
+	- Suspend Azure Boards-GitHub integration or uninstall the app.
+
+- **From Azure Boards**: 
+	- Connect one or more GitHub repositories to an Azure Boards project.
+	- Add or remove GitHub repositories from a GitHub connection within an Azure Boards project. 
+	- Completely remove a GitHub connection for a project.
+	- Allow a GitHub repository to connect to one or more Azure Boards projects within the same Azure DevOps organization or collection. 
+
+Azure Boards-GitHub integration supports the following operational tasks:  
+
+- Create links between work items and GitHub commit, pull requests, and issues based on GitHub mentions 
+- Support state transition of work items to a done or completed state when using GitHub mention by using `fix`, `fixes`, or `fixed` 
+- Support full traceability by posting a discussion comment to GitHub when linking from a work item to a GitHub commit, pull requests, or issue 
+- Show linked to GitHub code artifacts within the work item Development section
+- Show linked to GitHub artifacts as annotations on Kanban board cards 
+- Support status badges of Kanban board columns added to GitHub repositories.
+
+The following tasks aren't supported at this time: 
+- Query for work items with links to GitHub artifacts. However, you can query for work items with an `External Link Count > 0`. 
+ 
 
 ## Connect Azure Boards to GitHub repositories 
 

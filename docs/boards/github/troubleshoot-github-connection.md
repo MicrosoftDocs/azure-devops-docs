@@ -17,7 +17,7 @@ ms.date: 07/06/2021
 
 The Azure Boards-GitHub integration relies on various authentication protocols to support the connection. Changes to a user's permission scope or authentication credentials can cause revocation of the GitHub repositories connected to Azure Boards. 
  
-For an overview of the integration that the Azure Boards app for GitHub supports, see [Azure Boards-GitHub integration overview](index.md).  
+For an overview of the integration that the Azure Boards app for GitHub supports, see [Azure Boards-GitHub integration](index.md).  
 
 ## Supported authentication options
 
