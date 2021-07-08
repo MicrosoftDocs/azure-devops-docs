@@ -827,7 +827,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-      - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
+      - [Enable Conditional Access or Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
    :::column span="2":::
       Set policies to allow or disallow access by other applications or services to the organization.
@@ -925,7 +925,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
    :::column span="2":::
       - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
-      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#artifacts-free-tier-and-upgrade)
+      - [Artifacts storage consumption](../../artifacts/artifact-storage)
+   :::column-end:::
+   :::column span="2":::
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Artifacts free tier and upgrade](../../artifacts/start-using-azure-artifacts.md#artifacts-free-tier-and-upgrade). 
    :::column-end:::
 :::row-end:::
 ---

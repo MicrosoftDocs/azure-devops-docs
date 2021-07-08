@@ -1,5 +1,5 @@
 ---
-title: Azure Artifacts Overview
+title: Azure Artifacts overview
 description: Learn about Azure Artifacts and how to set up billing and view your consumption
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -10,7 +10,7 @@ ms.date: 07/02/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Artifacts Overview
+# Azure Artifacts overview
 
 Azure Artifacts enables developers to share and consume packages from different feeds and public registries. Packages can be shared within the same team, the same organization, and even publicly. Azure Artifacts supports multiple package types such as NuGet, Npm, Python, Maven, and Universal Packages.
 
