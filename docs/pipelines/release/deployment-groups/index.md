@@ -8,6 +8,7 @@ ms.author: ronai
 author: RoopeshNair
 ms.date: 06/15/2021
 monikerRange: '>= tfs-2018'
+"recommendations": "true"
 ---
 
 # Provision deployment groups
@@ -103,4 +104,3 @@ From your release pipeline definition, select the post deployment icon, and then
 - [Self-hosted Windows agents](../../agents/v2-windows.md)
 - [Self-hosted macOS agents](../../agents/v2-osx.md)
 - [Self-hosted Linux agents](../../agents/v2-linux.md)
-
