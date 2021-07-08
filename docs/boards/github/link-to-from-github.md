@@ -21,7 +21,7 @@ Once you've connected your Azure Boards project with a GitHub repository, you ca
 
 ## Prerequisites 
 
-* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration overview](index.md).  
+* Your Azure Boards project must be connected to the GitHub repository where the commits and pull requests you want to link to/from exist. For details, see [Azure Boards-GitHub integration](index.md).  
 * You must be a Contributor to Azure Boards.  
 * You must be a  Contributor to the GitHub repository.  
 * If your organization uses the Hosted XML process model to customize the work tracking experience, you'll need to update the work item types to link to and view the GitHub link types from the Development section in the work item form. For details, see [Update XML definitions for select work item types](troubleshoot-github-connection.md#update-wits). 
@@ -137,7 +137,7 @@ With GitHub annotations enabled on the Kanban board, you can quickly open linked
 
 ## Related articles
 
-- [Azure Boards-GitHub integration overview](index.md)
+- [Azure Boards-GitHub integration](index.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 - [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md)
 
