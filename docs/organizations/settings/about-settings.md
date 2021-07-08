@@ -925,7 +925,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column-end:::
    :::column span="2":::
       - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
-      - [Artifacts storage consumption](../../artifacts/artifact-storage)
+      - [Artifacts storage consumption](../../artifacts/artifact-storage.md)
    :::column-end:::
    :::column span="2":::
      Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Artifacts free tier and upgrade](../../artifacts/start-using-azure-artifacts.md#artifacts-free-tier-and-upgrade). 
