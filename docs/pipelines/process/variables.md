@@ -674,7 +674,7 @@ stages:
           echo $(StageSauce) 
 ```
 
-The output from the preceding YAML would look like this:
+The output from stages in the preceding pipeline looks like this:
 
 ```text
 Hello inline version
@@ -782,7 +782,7 @@ steps:
     Write-Host "my environment variable is $env:SAUCE"
 ```
 
-Output from the preceding pipeline.
+The output from the preceding pipeline.
 
 ```text
 my environment variable is crushed tomatoes
