@@ -204,7 +204,7 @@ jobs:
 
 The output from both jobs looks like this:
 
-```dotnetcli
+```text
 # job1
 value 
 value1
@@ -674,6 +674,13 @@ stages:
           echo $(StageSauce) 
 ```
 
+The output from the preceding YAML would look like this:
+
+```text
+Hello inline version
+true
+crushed tomatoes
+```
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -775,6 +782,12 @@ steps:
     Write-Host "my environment variable is $env:SAUCE"
 ```
 
+Output from the preceding pipeline.
+
+```text
+my environment variable is crushed tomatoes
+my environment variable is crushed tomatoes
+```
 
 ### Set a multi-job output variable
 
@@ -812,6 +825,16 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+
+The output from the preceding pipeline.
+
+```text
+# Job A
+this is the value
+# Job B
+this is the value
+
+```
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
@@ -836,6 +859,8 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
