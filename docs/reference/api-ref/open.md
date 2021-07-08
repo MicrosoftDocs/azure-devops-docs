@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 # WorkItem.Open Method
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+**TFS 2018 | TFS 2017 | TFS 2015**
 
 Opens a work item for modification. This method is [rate limited](../../integrate/concepts/rate-limits.md) for Azure DevOps Services. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
 
