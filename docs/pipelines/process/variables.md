@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 05/07/2021
+ms.date: 07/08/2021
 
 monikerRange: '>= tfs-2015'
 ---
@@ -183,7 +183,7 @@ variables:
 jobs:
 - job: job1
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     job_variable1: value1    # this is only available in job1
   steps:
@@ -193,7 +193,7 @@ jobs:
 
 - job: job2
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-latest'
   variables:
     job_variable2: value2    # this is only available in job2
   steps:
@@ -201,6 +201,21 @@ jobs:
   - bash: echo $(job_variable2)
   - bash: echo $GLOBAL_VARIABLE
 ```
+
+The output from both jobs looks like this:
+
+```text
+# job1
+value 
+value1
+value1
+
+# job2
+value
+value2
+value
+```
+
 
 ### Specify variables
 
@@ -659,6 +674,13 @@ stages:
           echo $(StageSauce) 
 ```
 
+The output from stages in the preceding pipeline looks like this:
+
+```text
+Hello inline version
+true
+crushed tomatoes
+```
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -760,6 +782,12 @@ steps:
     Write-Host "my environment variable is $env:SAUCE"
 ```
 
+The output from the preceding pipeline.
+
+```text
+my environment variable is crushed tomatoes
+my environment variable is crushed tomatoes
+```
 
 ### Set a multi-job output variable
 
@@ -797,6 +825,14 @@ jobs:
   - script: echo $(myVarFromJobA)
     name: echovar
 ```
+
+The output from the preceding pipeline.
+
+```text
+this is the value
+this is the value
+
+```
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
@@ -821,6 +857,8 @@ stages:
     steps:
     - script: echo $(myVarfromStageA)
 ```
+
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
