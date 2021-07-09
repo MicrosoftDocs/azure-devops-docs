@@ -1,5 +1,5 @@
 ---
-title: Deploy to Azure MySQL Database
+title: Deploy to Azure MySQL
 description: Deploy to an Azure MySQL database from Azure Pipelines
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.topic: quickstart
