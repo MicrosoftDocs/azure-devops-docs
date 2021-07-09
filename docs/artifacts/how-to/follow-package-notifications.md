@@ -1,21 +1,22 @@
 ﻿---
-title: Follow a package to receive notifications
-description: How to follow packages and get notified every time a new version is published
+title: Receive package notifications
+description: How to follow a package and get notified every time a new version is published
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 07/9/2021
 monikerRange: '>= tfs-2017'
 ---
 
-# Receive notifications when a new package version is published
+# Package notification
 
-When you follow a package, you’ll be notified every time a new version of that package is published. Notifications are sent to your preferred email address, which you can [change from your organization preferences](../../notifications/change-email-address.md).
+Notifications is a great tool to stay informed about specific changes within your project. In Azure Artifacts, when you follow a package you’ll be notified every time a new version of that package is published. A notifications will be sent to your preferred email address with details about the new published version. The preferred email address is usually the email address you signed into Azure DevOps with, but you can change it from your profile page. [change from your organization preferences](../../notifications/change-email-address.md).
 
 
-## Steps
+## Follow a package
 
-1. From the feed page, select the package you want to follow
-2. Click the **Follow** button
+1. From within your project, select **Artifacts** and then select the feed hosting your package.
+1. Find and select the package you want to follow.
+1. Select the **Follow** button to start getting notified whenever a new version is published.
 
 ## Follow a package with views
 
