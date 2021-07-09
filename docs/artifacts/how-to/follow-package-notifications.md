@@ -9,23 +9,35 @@ monikerRange: '>= tfs-2017'
 
 # Package notification
 
-Notifications is a great tool to stay informed about specific changes within your project. In Azure Artifacts, when you follow a package you’ll be notified every time a new version of that package is published. A notifications will be sent to your preferred email address with details about the new published version. The preferred email address is usually the email address you signed into Azure DevOps with, but you can change it from your profile page. [change from your organization preferences](../../notifications/change-email-address.md).
-
+Notifications is a great tool to stay informed about specific changes within your project. In Azure Artifacts, when you follow a package you’ll be notified every time a new version of that package is published. A notifications will be sent to your preferred email address with details about the new published version. The preferred email address is usually the email address you signed into Azure DevOps with, but you can change it from your profile page.
 
 ## Follow a package
 
 1. From within your project, select **Artifacts** and then select the feed hosting your package.
+
 1. Find and select the package you want to follow.
+
 1. Select the **Follow** button to start getting notified whenever a new version is published.
 
-## Follow a package with views
+    :::image type="content" source="../media/follow-package.png" alt-text="Follow a package":::
 
-If you’re using release views, you can get notifications when new version of a package is promoted to a view. This can reduce the notification spam if a lot of packages are being published, but only a few are being promoted to a view.
+## View notifications
 
-1. Go to the feed page
-2. Filter to a view (e.g. @release)
-3. Go to the package you want to follow
-4. Click the **Follow** button
+Aside from getting notifications when a new package version is published, you can also set up alerts to be notified when a package is promoted to a view. This can be helpful to filter alerts and only receive specific notifications especially in a busy development cycle when a lot of packages are being published.
+
+1. From within your project, select **Artifacts** and then select the feed hosting your package.
+
+1. Filter to a specific view (e.g. @Prerelease, @Release)
+
+    :::image type="content" source="../media/filter-by-view.png" alt-text="Filter packages by a specific view":::
+
+1. Select the package you want to follow.
+
+1. Click the **Follow** button
+
+1. Select the **Follow** button to start getting notified whenever a new version is published.
+
+    :::image type="content" source="../media/follow-package.png" alt-text="Follow a package":::
 
 ## Follow a package from the notification settings page
 
