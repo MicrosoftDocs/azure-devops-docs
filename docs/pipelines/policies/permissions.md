@@ -298,7 +298,7 @@ Select **Security** to configure security settings for all agent pools.
 
 ## Set library permissions
 
-Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#security). You can configure these roles hierarchically.
+Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You can use a variable group to store values that you want to make available across multiple build and release pipelines. Roles are also defined to help you configure security on shared [library entities](../library/index.md) such as [variable groups](../library/index.md#library-security). You can configure these roles hierarchically.
 
 ::: moniker range=">=azure-devops-2020"
 
