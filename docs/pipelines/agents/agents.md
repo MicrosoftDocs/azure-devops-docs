@@ -555,6 +555,8 @@ Your pipelines won't run until they can target a compatible agent.
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Configure agent capabilities](#configure-agent-capabilities).
 
+To trigger agent update programmatically you can use Agent update API as described in section [How can I trigger agent updates programmatically for specific agent pool?](#how-can-i-trigger-agent-updates-programmatically-for-specific-agent-pool).
+
 > [!NOTE]
 > For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
 
@@ -592,6 +594,27 @@ The commands issued to the process are different based on the agent operating sy
 
 * macOS and Linux - The commands sent are SIGINT, followed by SIGTERM, followed by SIGKILL.
 * Windows - The commands sent to the process are Ctrl+C, followed by Ctrl+Break, followed by Process.Kill.
+
+### How can I trigger agent updates programmatically for specific agent pool?
+
+You can trigger agent updates for the pool by using next API:
+
+```
+POST https://dev.azure.com/{organization}/_apis/distributedtask/pools/{poolId}/messages?agentId={agentId}&api-version=6.0
+```
+
+#### URI Parameters
+
+| Name           | In    | Required | Type          | Description                                                                            |
+| -------------- | ----- | -------- | ------------- | -------------------------------------------------------------------------------------- |
+| `agentId`      | query | False    | string        | The agent to update. If not specified - update will be triggered for all agents.       |
+| `organization` | path  | True     | string        | The name of the Azure DevOps organization.                                             |
+| `poolId`       | path  | True     | integer int32 | The agent pool to use                                                                  |
+| `api-version`  | query | False    | string        | Version of the API to use. This should be set to '6.0' to use this version of the api. |
+
+
+
+To trigger agent update - request body should be empty.
 
 > [!NOTE]
 > Azure Pipelines Agent is open source on [GitHub](https://github.com/microsoft/azure-pipelines-agent).
