@@ -40,7 +40,7 @@ We support the following subset of .NET Core supported distributions:
   - Linux Mint 18, 17
   - openSUSE 42.3 or later
   - Oracle Linux 7
-  - Red Hat Enterprise Linux 7, 6 (see note 1)
+  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
   - SUSE Enterprise Linux 12 SP2 or later
   - Ubuntu 18.04, 16.04
 - ARM32 (see note 2)
