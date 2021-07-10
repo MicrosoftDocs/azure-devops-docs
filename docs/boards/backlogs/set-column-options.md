@@ -152,8 +152,20 @@ Once you set the column options for a specific view, your settings  persist unti
 - Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings. 
 ::: moniker-end
 
+
+::: moniker range="azure-devops"
 > [!NOTE]    
-> You can't set default column options, nor set column options for other members in your team. 
+> You can't set column options for other members of your team, nor can you set default column options.  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+> [!NOTE]    
+> You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
+::: moniker range="<= tfs-2018"
+> [!NOTE]    
+> You can't set column options for other members of your team. For projects that use the On-premises XML process model, you can set the default column options for product and portfolio backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
 
 ## Open Column options
 
