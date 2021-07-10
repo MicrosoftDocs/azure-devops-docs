@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 04/21/2021
+ms.date: 07/09/2021
 ---
 
 # Change column options 
@@ -152,6 +152,8 @@ Once you set the column options for a specific view, your settings  persist unti
 - Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings. 
 ::: moniker-end
 
+> [!NOTE]    
+> You can't set default column options, nor set column options for other members in your team. 
 
 ## Open Column options
 
@@ -251,7 +253,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
-
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
