@@ -8,7 +8,7 @@
   displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
 - name: Best practices for Agile project management
   href: best-practices-agile-project-management.md
-  displayName: agile, kanban, scrum, rollup, filtering, deliverables, cadence, sprint cadence, work types, CMMI, product plan, product backlog
+  displayName: agile, kanban, scrum, rollup, filtering, waterfall, deliverables, cadence, sprint cadence, work types, CMMI, product plan, product backlog
 - name: Quick reference
   href: ./work-items/quick-ref.md
   displayName: agile, charts, interitance, work item, scrum, state categories, bulk modify, WIT
