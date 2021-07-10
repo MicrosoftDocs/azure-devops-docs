@@ -28,6 +28,8 @@
     href: set-query-permissions.md
 - name: Additional query operations
   items:
+  - name: Change column options
+    href: ../backlogs/set-column-options.md
   - name: Cross-service and enhanced query operations  
     href: query-support-integration-cross-service-extensions.md 
     displayname: OData, Power BI, WIQL
