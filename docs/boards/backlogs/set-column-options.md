@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: '>= tfs-2013'
-ms.date: 04/21/2021
+ms.date: 07/09/2021
 ---
 
 # Change column options 
@@ -153,6 +153,20 @@ Once you set the column options for a specific view, your settings  persist unti
 ::: moniker-end
 
 
+::: moniker range="azure-devops"
+> [!NOTE]    
+> You can't set column options for other members of your team, nor can you set default column options.  
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+> [!NOTE]    
+> You can't set column options for other members of your team. Also, for projects that use the Inheritance process model, you can't set default column options. For projects that use the On-premises XML process model, you can set the default column options for product, portfolio, and sprint backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
+::: moniker range="<= tfs-2018"
+> [!NOTE]    
+> You can't set column options for other members of your team. For projects that use the On-premises XML process model, you can set the default column options for product and portfolio backlogs. To learn how, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
+::: moniker-end
+
 ## Open Column options
 
 Start by opening the **Column Options** dialog. If you don't see the option, choose the &hellip; and choose from the options provided.   
@@ -251,7 +265,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
 - [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
-
+- [Customize a sprint Taskboard](../sprints/customize-taskboard.md)
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
