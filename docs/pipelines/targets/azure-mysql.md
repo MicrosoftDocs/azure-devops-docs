@@ -19,7 +19,7 @@ You'll use the [Azure Database for MySQL Deployment task](../tasks/deploy/azure-
 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 - A GitHub repository that you can use for your pipeline. If you do not have an existing repository, see [Create your first pipeline](../create-first-pipeline.md). 
 
 This quickstart uses the resources created in either of these guides as a starting point:
