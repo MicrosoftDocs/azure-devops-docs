@@ -413,6 +413,8 @@
       items:
        - name: Azure SQL database
          href: targets/azure-sqldb.md
+       - name: Azure MySQL database
+         href: targets/azure-mysql.md
        - name: Azure Cosmos DB CI/CD (Classic)
          href: targets/cosmos-db.md
          displayName: cosmos, db, database
