@@ -938,7 +938,7 @@ The following table describes the security namespaces and permissions that aren'
       `Moderate`            
    :::column-end:::
    :::column span="2":::
-      Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#setup-review-app).  
+      Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](../../pipelines/process/environments-kubernetes.md#set-up-review-app).  
       <br/>
       **ID:** `0d140cae-8ac1-4f48-b6d1-c93ce0301a128`
    :::column-end:::
