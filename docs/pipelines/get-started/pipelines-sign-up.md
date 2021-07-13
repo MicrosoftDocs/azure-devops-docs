@@ -111,7 +111,7 @@ You can add and invite others to work on your project by adding their email addr
 
 2. Select **Users** > **Add users**.
 
-   :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users":::]
+   :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users":::
 
 3. Complete the form by entering or selecting the following information:
 	
