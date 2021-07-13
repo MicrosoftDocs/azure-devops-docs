@@ -31,7 +31,7 @@ See the following advantages of using Kubernetes resource views within environme
   > [!div class="mx-imgBorder"]
   > ![ImagePullBackOff](media/k8s-imagepullbackoff.png)
 
-- **Review app** - Review app works by deploying every pull request from your Git repository to a dynamic Kubernetes resource under the environment. Reviewers can see how those changes look and work with other dependent services before they're merged into the target branch and deployed to production.
+- **Review App** - Review App works by deploying every pull request from your Git repository to a dynamic Kubernetes resource under the environment. Reviewers can see how those changes look and work with other dependent services before they're merged into the target branch and deployed to production.
 
 ## Use Azure Kubernetes Service
 
@@ -87,15 +87,15 @@ For more information about setting up a Kubernetes service connection outside of
 If you're using Azure Kubernetes Service and building a YAML pipeline, the easiest way to configure your pipeline is to use a template. Connect to your repository and select one of the following two Kubernetes Service options:
 
 - [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md)
-- Deploy to Kubernetes - Review app with Azure DevSpaces
+- Deploy to Kubernetes - Review App with Azure DevSpaces
 
-The templates let you set up review apps without needing to write YAML code from scratch or manually create explicit role bindings.
+The templates let you set up Review App without needing to write YAML code from scratch or manually create explicit role bindings.
 
 :::image type="content" source="media/kubernetes-yaml-templates.png" alt-text="Kubernetes template options.":::
 
-### Set up review app
+### Set up Review App
 
-In the following example, the first deployment job is run for non-PR branches and does deployments against a regular Kubernetes resource under environments. The second job runs only for PR branches and deploys against review app resources (namespaces inside Kubernetes cluster) generated on demand. Resources get labeled with "Review" in the resource listing view of the environment.
+In the following example, the first deployment job is run for non-PR branches and does deployments against a regular Kubernetes resource under environments. The second job runs only for PR branches and deploys against Review App resources (namespaces inside Kubernetes cluster) generated on demand. Resources get labeled with "Review" in the resource listing view of the environment.
 Define variables to use in the pipeline. If you use the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md), these variables get defined for you.
 
 ```YAML
@@ -193,11 +193,12 @@ variables:
                 $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-To use this job in an **existing** pipeline, the service connection backing the regular Kubernetes environment resource must be modified to "Use cluster admin credentials". Otherwise, role bindings must be created for the underlying service account to the review app namespace.
+To use this job in an **existing** pipeline, the service connection backing the regular Kubernetes environment resource must be modified to "Use cluster admin credentials". Otherwise, role bindings must be created for the underlying service account to the Review App namespace.
 
 ## Next steps
 
-- [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)
+> [!div class="nextstepaction"]
+> [Build and deploy to Azure Kubernetes Service](../ecosystems/kubernetes/aks-template.md)
 
 ## Related articles
 
