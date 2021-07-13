@@ -476,7 +476,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 Now your agents will run the AKS cluster.
 
-## Mounting volumes using Docker within a Docker container 
+## Mounting volumes using Docker within a Docker container
 
 If a Docker container runs inside another Docker container, they both use host's daemon, so all mount paths reference the host, not the container.
 
