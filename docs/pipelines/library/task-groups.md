@@ -71,20 +71,19 @@ to change each one individually.
 
    ![Unlinking parameters for all tasks](media/unlink-task-group.png)
 
-1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
-   checkmarks of each one). Then open the shortcut menu and choose **Create task group**.
+2. Select a sequence of tasks in a build or release pipeline, open the shortcut menu, and then choose **Create task group**.
 
    ![Creating a task group from a release pipeline list of tasks](media/create-task-group.png)
 
-2. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
+3. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
 
-3. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
+4. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
-4. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
+5. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
 
    For example, let's say you have a task input $(foobar), which you don't intend to parameterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now, you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures that at runtime, the expanded task gets the same input it's intended to.
 
-5. Save your updated pipeline.
+6. Save your updated pipeline.
 
 ::: moniker range="> tfs-2017"
 

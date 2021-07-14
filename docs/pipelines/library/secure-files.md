@@ -22,7 +22,7 @@ Secure files give you a way to store files that you can share across pipelines. 
 
 These files can be stored on the server without having to commit them to your repository. Define and manage secure files in the **Library** tab in **Azure Pipelines**.
 
-The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library).
+The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#security).
 
 The size limit for each secure file is 10 MB.
 
@@ -36,7 +36,7 @@ You can add secure files from **Pipelines** > **Library**.
 
 1. Go to **Library** and select the **Secure files** tab.
 
-   :::image type="content" source="secure-files-tab.png" alt-text="Select the Secure Files tab.":::
+   :::image type="content" source="media/secure-files-tab.png" alt-text="Select the Secure Files tab.":::
 
 1. Select :::image type="icon" source="../../report/media/icons/blue-plus.png" border="false"::: to upload a new secure file. Browse to upload or drag and drop your file. You can delete this file, but you can't replace it.
 
