@@ -220,7 +220,7 @@ uses:
   - FabrikamTools # Repository reference to FabrikamTools
 
 steps:
-- script: Do something with that repo like clone it
+- script: # Do something with that repo like clone it
 ```
 
 > [!NOTE]
