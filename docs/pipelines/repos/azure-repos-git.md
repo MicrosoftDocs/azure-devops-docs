@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 03/24/2021
+ms.date: 07/14/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -207,19 +207,20 @@ There are a few exceptions where you don't need to explicitly reference an Azure
 
 For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must either reference this repository in a `checkout` step or with a `uses` statement.
 
-If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository, such as checking out different branches.
+If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository.
 
 ```yml
 steps:
 - checkout: git://FabrikamFiber/FabrikamTools # Azure Repos Git repository in the same organization
-- script: Do something with that repo
+- script: # Do something with that repo
 
 # Or you can reference it with a uses statement in the job
 uses:
-- FabrikamTools # Repository reference to FabrikamTools
+  repositories: # List of referenced repositories
+  - FabrikamTools # Repository reference to FabrikamTools
 
 steps:
-- script: Do something with that repo like clone it
+- script: # Do something with that repo like clone it
 ```
 
 > [!NOTE]
