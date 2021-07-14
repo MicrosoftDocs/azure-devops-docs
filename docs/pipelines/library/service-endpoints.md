@@ -72,7 +72,7 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
 ![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
 
-1. To update the service connection, click on **Edit** at the top right corner of the page.
+1. To update the service connection, select **Edit** at the top right corner of the page.
 
 1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
 ![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
