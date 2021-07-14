@@ -29,7 +29,7 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 
 |Argument|Description|
 |--- |--- |
-|`ConnectedServiceName` <br/>Azure subscription|(Required) Select the Azure Resource Manager subscription for the deployment.<br/>Argument aliases: `azureSubscription`|
+|`ConnectedServiceName` <br/>Azure subscription|(Required) Select the Service Connection which contains the Azure subscription for the deployment.<br/>Argument aliases: `azureSubscription`|
 |`action` <br/> Action|(Required) Action to be performed on the Azure resources or resource group.<br/>Default value: `Create Or Update Resource Group`|
 |`resourceGroupName`<br/>Resource group|(Required) Provide the name of a resource group.|
 |`location` <br/> Location|(Required) Location for deploying the resource group. If the resource group already exists in the subscription, then this value will be ignored.|
@@ -77,7 +77,7 @@ If the template file is being referred from a BLOB, while overriding parameters 
 
 `Warning: Failed to download the file from template path.`
 
-This feature requires the CORS rules to be enabled at the source. If templates are in Azure storage blob, see [Cross-origin resource sharing support](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS. 
+This feature requires the CORS rules to be enabled at the source. If templates are in Azure storage blob, see [Cross-origin resource sharing support](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS.
 
 Besides enabling CORS, ensure that the SAS token specified in the link of the template is "srt-sco". This token is required for you to download the file and proceed.
 
@@ -98,7 +98,7 @@ This could also be happening because of transient issues in the system. Keep an 
 This issue happens mostly because of an invalid parameter in the ARM template, such as an unsupported SKU or region. If the validation fails, check the error message. It should point you to the resource and parameter that's invalid.
 
 This issue also might occur because of multiline strings. Currently, the Azure Resource Group Deployment task doesn't support multiline strings in an ARM template or parameter JSON file.
-  
+
 In addition, refer to this article regarding structure and syntax of ARM Templates: [Understand the structure and syntax of ARM templates](/azure/azure-resource-manager/templates/template-syntax).
 
 ## Open source
