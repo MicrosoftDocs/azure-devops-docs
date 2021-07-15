@@ -10,9 +10,9 @@ monikerRange: '>= tfs-2017'
 
 # Publish a NuGet package using the command line
 
-**Azure DevOps Services** | **Team Foundation Server 2018** | **Team Foundation Server 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others, depending on your feed's visibility settings. 
+With Azure Artifacts, you can publish your NuGet packages to public or private feeds, and then share them with others depending on your feed's visibility settings. 
 
 ## Connect to a NuGet feed
 
