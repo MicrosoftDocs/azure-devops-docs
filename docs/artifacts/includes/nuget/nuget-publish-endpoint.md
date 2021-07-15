@@ -18,33 +18,28 @@ ms.date: 07/15/2021
 
     :::image type="content" source="../../media/nuget-connect-feed.png" alt-text="NuGet.exe feed connection":::
 
-1. If this is the first time using Azure Artifacts with Nuget then:
+1. If this is the first time using Azure Artifacts with Nuget.exe, select **Get the tools** button and follow the instructions to install the prerequisites.
 
     1. Download the [latest NuGet version](https://www.nuget.org/downloads).
     1. Download and install the [Azure Artifacts Credential Provider](https://github.com/microsoft/artifacts-credprovider#azure-artifacts-credential-provider).
 
-1. Create a `nuget.config` file in the same folder as your *.csproj* *.sln* and add the following content. Replace the placeholders with your feed and organization names.
+1. Follow the instructions in the **Project setup** to to connect to your feed. 
 
-    ```Command
-    <?xml version="1.0" encoding="utf-8"?>
-    <configuration>
-      <packageSources>
-        <clear />
-        <add key="<FEED_NAME>" value="https://pkgs.dev.azure.com/<ORGANIZATION_NAME>/_packaging/<FEED_NAME>/nuget/v3/index.json" />
-      </packageSources>
-    </configuration>
-    ```
+    :::image type="content" source="../../media/project-setup.png" alt-text="Project setup":::
 
-## Publish packages by using the command line
+## Publish a NuGet package by using the command line
 
-To publish your package by using the NuGet CLI, you will need the following variables:
+If you don't have a NuGet package but you want to try publishing your package to your feed, you can install the *HelloWorld* sample package.
 
-- **SourceName**: the name of your feed.
-- **SourceURL**: the feed's source URL: 
-    ```Command
-    https://pkgs.dev.azure.com/<orgName>/_packaging/<orgName>/nuget/v3/index.json
-    ```
-- **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+```Command
+nuget install HelloWorld -ExcludeVersion
+```
+
+Run the following command to publish your package to your feed:
+
+```Command
+nuget.exe push -Source "<YOUR_FEED_NAME>" -ApiKey <ANY_STRING> <PACKAGE_PATH>
+```
 
 ::: moniker-end
 
@@ -64,6 +59,3 @@ To publish your package by using the NuGet CLI, you will need the following vari
    > ![NuGet publish instructions in the Connect to feed dialog box](../../media/nugeturl.png)
 
 ::: moniker-end
-
-> [!NOTE]
-> Aside from publishing NuGet packages, Azure Artifacts also allow you to publish your symbols to [file shares](../../../pipelines/tasks/build/index-sources-publish-symbols.md) and [symbols server](../../../pipelines/artifacts/symbols.md). Publishing your symbols from the command line is not currently supported.
