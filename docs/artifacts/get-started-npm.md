@@ -138,6 +138,12 @@ If you're developing on Linux or Mac, `vsts-npm-auth` isn't supported. Instead, 
 
 At this point, your project should have a package.json file and a .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm discovers your feed in the .npmrc file in the current working directory. It then fetches the credentials from your home directory's .npmrc file that you configured in the "Create a feed" section.
 
+> [!NOTE]
+> If you are using Yarn, run the following command to set the yarn registry: 
+>
+> `yarn config set registry "https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/"`
+
+
 ## Publish npm packages
 
 You can now publish the npm package:

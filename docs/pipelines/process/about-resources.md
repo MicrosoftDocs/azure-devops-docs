@@ -81,8 +81,6 @@ For YAML pipelines only, set resources as [protected or open](../security/resour
 ## Use resources for traceability
 #### [YAML](#tab/yaml)
 
-For YAML pipelines, you can combine resources with environments to better track resource use. [Environments](environments.md) are collections of resources using in pipelines.
-
 Environments support the following resource types:
 
 * [Kubernetes](environments-kubernetes.md)

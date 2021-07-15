@@ -23,7 +23,6 @@ Supported events:
 - pull request create or updated (for Git projects)
 - code checked in (TFVC projects)
 - work item created, updated, deleted, restored or commented on
-- message posted to a team room
 
 You can configure filters on your subscriptions to control which events trigger an action. For example, you can filter the build completed event based on the build status. For a complete set of supported events and filter options, see the [event reference](./events.md).
 

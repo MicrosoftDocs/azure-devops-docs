@@ -78,7 +78,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Search across all your code, wiki, packages and work items
-            url: /azure/devops/project/search/get-started-search
+            url: ./search/get-started-search.md
       - linkListType: video
         links:
           - text: Code search

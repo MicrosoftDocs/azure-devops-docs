@@ -239,4 +239,4 @@ In this example, the field contains a string value, one group, and a global list
 ## Related articles 
 -  [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](define-pick-lists.md)   
 -  [GLOBALLIST XML element reference](define-global-lists.md)   
--  [Apply a field rule](apply-rule-work-item-field.md)
+-  [Rules and rule evaluation](../../organizations/settings/work/rule-reference.md)

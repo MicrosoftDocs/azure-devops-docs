@@ -25,7 +25,7 @@ to provide a comprehensive test reporting and analytics experience.
 You can use the test runner of your choice that supports the results format
 you require. Supported results formats include [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html),
 [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd)
-(including [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging)),
+(including [PHPUnit](https://phpunit.readthedocs.io/en/9.5/configuration.html#the-logging-element)),
 [NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.net/docs/format-xml-v2).
 
@@ -289,7 +289,7 @@ The final image will be published to Docker or Azure Container Registry
 
    ```Dockerfile
    # Build and run tests inside the docker container
-   FROM microsoft/dotnet:2.1-sdk
+   FROM mcr.microsoft.com/dotnet/sdk:2.1
    WORKDIR /app
    # copy the contents of agent working directory on host to workdir in container
    COPY . ./
@@ -311,7 +311,7 @@ The final image will be published to Docker or Azure Container Registry
    # This Dockerfile creates the final image to be published to Docker or
    # Azure Container Registry
    # Create a container with the compiled asp.net core app
-   FROM microsoft/aspnetcore:2.0
+   FROM dotnet/core/aspnet:2.1
    # Create app directory
    WORKDIR /app
    # Copy only the deployment artifacts

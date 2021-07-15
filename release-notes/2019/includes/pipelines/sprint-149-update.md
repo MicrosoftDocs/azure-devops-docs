@@ -67,4 +67,4 @@ With this update, we’ve added support to publish test results from a [CTest]( 
 > [!div class="mx-imgBorder"]
 > ![Publish CTest and PHPUnit test results.](../../media/149_11.png)
 
-In addition, we included publishing for [PHPUnit]( https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here]( https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&preserve-view=true&tabs=yaml).
+In addition, we included publishing for [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging) test runs. While JUnit results format has always been supported, you can now leverage the specific constructs of PHPUnit. For more details on publishing test results see the documentation [here](/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&preserve-view=true&tabs=yaml).

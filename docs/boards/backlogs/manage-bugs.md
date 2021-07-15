@@ -191,15 +191,15 @@ You can customize your bug work item type or create another work item types to t
 Before you customize your process, we recommend you review [Configure and customize Azure Boards](../configure-customize.md). 
 
 ::: moniker range="azure-devops"
-To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model).  
+To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-To customize your particular process, see [Customize an inheritance process](/azure/devops/organizations/settings/work/inheritance-process-model) or [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model). 
+To customize your particular process, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md) or [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-To customize your particular process, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model). 
+To customize your particular process, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 
@@ -232,7 +232,7 @@ If your team chose to *manage bugs with requirements*, you can define bugs from 
 If your team chose to *manage bugs with tasks*, you can define bugs from your Kanban board, product backlog, Sprint backlog, or Sprint Taskboard. You add a bug as a child to a product backlog work item.  
 
 - **Add a linked child bug from the Kanban board**  
-    You add a bug in the same way you add a task to a backlog item. To learn more, see [Add task checklists](../boards/add-task-checklists.md). 
+    You add a bug in the same way you add a task to a backlog item. To learn more, see [Add tasks or child items as checklists](../boards/add-task-checklists.md). 
 	> [!div class="mx-imgBorder"]  
 	> ![From Kanban board, Add child bug to backlog item.](media/manage-bugs/add-child-bug-from-board.png)  
 
@@ -549,7 +549,7 @@ For additional information on extensions, see [Azure Boards extensions developed
 - [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Kanban board quickstart](../boards/kanban-quickstart.md) 
 - [Reorder cards](../boards/reorder-cards.md) 
-- [Add task checklists](../boards/add-task-checklists.md) 
+- [Add tasks or child items as checklists](../boards/add-task-checklists.md) 
 - [Kanban best practices](../boards/best-practices-kanban.md) 
 
 ### Sprint backlog and Taskboard 
@@ -570,4 +570,3 @@ For additional information on extensions, see [Azure Boards extensions developed
 - [Good and Bad Technical Debt (and how TDD helps)](https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt) by Henrik Kniberg  
 - [Managing Technical Debt](https://www.infoq.com/articles/managing-technical-debt) posted by Sven Johann & Eberhard Wolff  
 
- 

@@ -123,6 +123,9 @@
     href: configure-check-out-settings.md 
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
+  - name: Download permissions report
+    href: ../../organizations/security/download-permissions-report.md
+    displayName: json
 - name: TFVC command reference
   items:
   - name: Use Team Foundation version control commands

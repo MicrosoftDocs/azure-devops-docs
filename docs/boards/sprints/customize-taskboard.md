@@ -152,6 +152,9 @@ If you want bugs to appear on the taskboard, change your team settings for [show
 
 You can add columns or rename columns that appear in your Taskboard. You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
+> [!NOTE] 
+> Additional columns you add to a Taskboard aren't supported with corresponding fields such as the Kanban board columns you add which is supported with Board Column field. 
+
 The changes made apply to all sprint Taskboards for the selected team. 
 
 1. From your web browser, open your team's sprint Taskboard as described in [Update and monitor your Taskboard](task-board.md). Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.

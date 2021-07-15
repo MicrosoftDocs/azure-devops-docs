@@ -7,7 +7,6 @@ ms.date: 04/14/2021
 ---
 
  
----
 :::row:::
    :::column span="2":::
       **Task** 
@@ -25,7 +24,6 @@ ms.date: 04/14/2021
      **Team Admins**
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       View backlogs and open work items
@@ -43,7 +41,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Add work items to a backlog
@@ -62,7 +59,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 :::row:::
    :::column span="2":::
       Use bulk edit features
@@ -80,7 +76,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
@@ -99,7 +94,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 ::: moniker range="<= tfs-2018"
 :::row:::
@@ -119,7 +113,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
 ::: moniker-end  
 :::row:::
    :::column span="2":::
@@ -139,6 +132,6 @@ ms.date: 04/14/2021
       ✔️
    :::column-end:::
 :::row-end:::
----
+
 
  

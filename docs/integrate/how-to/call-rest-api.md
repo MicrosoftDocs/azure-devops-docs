@@ -34,19 +34,19 @@ so the pattern looks like this:
 ```no-highlight
 VERB https://dev.azure.com/{organization}/_apis[/{area}]/{resource}?api-version={version}
 ```
-<br />
-For example, here&#39;s how to get a list of projects in an organization.
+
+For example, here's how to get a list of projects in an organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/projects?api-version=2.0
 ```
-<br />
+
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
 
 ```
 Authorization: Basic BASE64PATSTRING
-``` 
-<br />
+```
+
 Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
@@ -82,8 +82,7 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don&#39;t have an organization,
-you can <a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[set one up for free](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">set one up for free</a>. 
+If you don't have an organization, you can <a href="https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/" data-raw-source="[set one up for free](https://devblogs.microsoft.com/devops/upcoming-changes-to-how-you-log-into-visual-studio-team-services/)">set one up for free</a>.
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
@@ -107,8 +106,8 @@ curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollectio
 
 These examples use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
-
 ## Responses
+
 You should get a response like this.
 
 ```json
@@ -168,7 +167,7 @@ Keep reading to learn more about the general patterns that are used in these API
 Verb   | Used for...
 :------|:-----------------------------------
 GET    | Get a resource or list of resources
-POST   | Create a resource<br/>Get a list of resources using a more advanced query
+POST   | Create a resource, Get a list of resources using a more advanced query
 PUT    | Create a resource if it doesn't exist or, if it does, update it
 PATCH  | Update a resource
 DELETE | Delete a resource
@@ -180,9 +179,11 @@ When you provide request body (usually with the POST, PUT and PATCH verbs), incl
 ```no-highlight
 POST https://dev.azure.com/fabrikam-fiber-inc/_apis/build-release/requests
 ```
+
 ```http
 Content-Type: application/json
 ```
+
 ```json
 {
    "definition": {
@@ -200,13 +201,14 @@ If your calls may pass through one of these proxies, you can send the actual ver
 For example, you may want to [update a work item](/rest/api/azure/devops/wit/work%20items/update) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
-
 ```no-highlight
 POST https://dev.azure.com/fabrikam-fiber-inc/_apis/wit/workitems/3
 ```
+
 ```http
 X-HTTP-Method-Override: PATCH
 ```
+
 ```json
 {
    (PATCH request body)
@@ -247,6 +249,7 @@ Azure DevOps Services supports CORS, which enables JavaScript code served from a
 (replace `myPatToken` with a personal access token) 
 
 <a name="versions"></a>
+
 ## Versioning
 
 Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
@@ -264,23 +267,17 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 API version can be specified either in the header of the HTTP request or as a URL query parameter:
 
 HTTP request header:
+
 ```http
 Accept: application/json;api-version=1.0
 ```
 
 Query parameter:
+
 ```no-highlight
 GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 ```
 
 ### Supported versions
 
-| Product                     | 1.0    | 2.0    | 3.0    |
-|:----------------------------|:------:|:------:|:------:|
-| Azure DevOps Services | X      | X      | X      | 
-| Team Foundation Server 2017 | X      | X      | X      |
-| Team Foundation Server 2015 | X      | X      | -      |
-
-Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
-
-A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.
+For information on supported versions, see [REST API versioning, Supported versions](../concepts/rest-api-versioning.md#supported-versions).

@@ -77,7 +77,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Viewing the flow of work from inception to completion  
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
-- Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
+- Adding linked child items ([checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
 - [Focusing the view based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs-boards-plans.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 

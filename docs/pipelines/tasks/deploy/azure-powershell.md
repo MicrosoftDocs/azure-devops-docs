@@ -31,7 +31,7 @@ Use this task to run a PowerShell script within an Azure environment. The Azure 
 |`ConnectedServiceNameARM`<br/>Azure Subscription|(Required) name of an Azure Resource Manager service connection for authentication. <br/>Argument alias: `azureSubscription`|
 |`ScriptType`<br/>Script Type|(Optional) Type of the script: filePath or inlineScript <br/>Default value: `FilePath`|
 |`ScriptPath`<br/>Script Path|(Optional) Path of the script. Should be fully qualified path or relative to the default working directory.|
-|`Inline`<br/>Inline Script|(Optional) Enter the script to execute. <br/>Default value: <br/># You can write your Azure PowerShell scripts inline here.<br/> # You can also pass predefined and custom variables to this script using arguments|
+|`Inline`<br/>Inline Script|(Optional) Enter the script to execute. <br/>Default value: <br/># You can write your Azure PowerShell scripts inline here.|
 |`ScriptArguments`<br/>Script Arguments|(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters. Not applicable for inline script option.|
 |`errorActionPreference`<br/>ErrorActionPreference|(Optional) Select the value of the ErrorActionPreference variable for executing the script. <br/>Default value: `stop`|
 |`FailOnStandardError`<br/>Fail on Standard Error|(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. <br/>Default value: `false`|

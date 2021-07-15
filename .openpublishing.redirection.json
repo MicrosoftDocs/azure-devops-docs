@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/pipelines/apps/windows/universal.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/windows/universal",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/release/automate-terraform.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/release/automate-terraform",
       "redirect_document_id": false
@@ -2248,12 +2253,17 @@
     },
     {
       "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-azure-devops-project",
+      "redirect_url": "/azure/devops-project/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-      "redirect_url": "/azure/devops/pipelines/get-started-azure-devops-project",
+      "redirect_url": "/azure/devops-project/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/get-started-azure-devops-project.md",
+      "redirect_url": "/azure/devops-project/overview",
       "redirect_document_id": false
     },
     {
@@ -5403,7 +5413,12 @@
     },
     {
       "source_path": "docs/work/reference/apply-rule-work-item-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-rule-work-item-field",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/reference/xml/apply-rule-work-item-field.md",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
     {
@@ -10598,7 +10613,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/apply-rule-work-item-field.md",
-      "redirect_url": "/azure/devops/reference/xml/apply-rule-work-item-field",
+      "redirect_url": "/azure/devops/organizations/settings/work/rule-reference",
       "redirect_document_id": false
     },
     {

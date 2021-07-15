@@ -52,7 +52,7 @@ Choose **+ Variable group**.
 
    ![Saving a variable group](media/save-variable-group.png) 
 
-> Variable groups follow the [library security model](index.md#security).
+Variable groups follow the [library security model](index.md#library-security).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
