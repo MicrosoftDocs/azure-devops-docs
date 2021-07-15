@@ -231,6 +231,7 @@ From the **Pipeline settings** pane you can configure the following settings.
   * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 * **YAML file path** - If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run** - The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When **Automatically link work items included in this run** is selected, you must specify a either a specific branch, or `*` for all branches, which is the default. If you specify a branch, work items are only associated with runs of that branch. If you specify `*`, work items are associated for all runs. 
+
   :::image type="content" source="media/customize-pipeline/link-work-items.png" alt-text="Automatically link work items included in this run.":::
   * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
 
