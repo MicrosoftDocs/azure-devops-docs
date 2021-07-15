@@ -10,6 +10,7 @@ monikerRange: azure-devops
 # About resources for Azure Pipelines
 
 A [resource](resources.md) is anything used by a pipeline that lives outside the pipeline.
+
 Resources offer the following benefits:
 
 * Ways to [share](#share-resources-across-pipelines) something such as a secure file or password across pipelines.
