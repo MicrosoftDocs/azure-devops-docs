@@ -1214,7 +1214,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <a name="version-control"></a>
 
-### What kinds of version control can I use?
+### What version control system can I use?
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 

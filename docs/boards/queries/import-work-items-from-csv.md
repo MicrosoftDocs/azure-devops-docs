@@ -2,13 +2,13 @@
 title: Bulk import or update work items using CSV files
 titleSuffix: Azure Boards
 description: Bulk import or update work items from a CSV formatted file 
-ms.custom: boards-queries
+ms.custom: "boards-queries, linked-from-support"
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: how-to
 monikerRange: ">= azure-devops-2019"
-ms.date: 05/21/2021
+ms.date: 06/11/2021
 ---
 
 # Bulk import or update work items using CSV files
@@ -150,6 +150,29 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 > [!div class="mx-imgBorder"]  
 > ![Export a query as CSV](../work-items/media/email/export.png)   
+
+::: moniker-end 
+
+
+::: moniker range=">= azure-devops-2020"
+
+## Export and import work items to a different project
+
+You can use this feature to export work items from one project and import them to another project. However, before importing them to another project, you must remove the work item ID. You encounter an error if you attempt to import new work items to a project with an ID specified. 
+
+
+## Import or update rich-text fields 
+
+You can update or import rich-text fields such as the **Description** or **Acceptance Criteria** fields. Rich-text fields are HTML formatted fields. Replace lines ending in CRLF by surrounding sentences with `<p>... </p>`. 
+
+For example, you can import the following work item which includes three lines of text in the Description field. 
+
+> [!div class="tabbedCodeSnippets"]
+```CSV
+Work Item Type,Title,Description
+"Product Backlog Item","Hello World Web Site - 8","<p><strong>&nbsp;You can include bold text</strong></p><p><em>&nbsp;And italic text</em></p><p><u>&nbsp;Underline text</u></p>"
+```
+
 
 ::: moniker-end 
 

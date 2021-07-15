@@ -191,8 +191,7 @@ Before you customize a process, we recommend that you review [Configure and cust
 For more information about work item type rules that apply toward restricting operations, see:
 
 - [Apply rules to workflow states (Inheritance process)](../settings/work/apply-rules-to-workflow-states.md)
-- [Restrict modification of select fields based on a user group](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
-- [Restrict modification of closed work items](../settings/work/custom-rules.md#restrict-modification-of-closed-work-items)
+- [Sample rule scenarios](../settings/work/rule-samples.md)  
 - [Define area paths and assign to a team](../settings/set-area-paths.md)
 
 ## Hide organization settings from users
@@ -218,7 +217,7 @@ For more information about hiding organization settings from users, see [About p
 
 ## View, add, and manage permissions with CLI
 
-You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces).
+You can view, add, and manage permissions at a more granular level with the `az devops security permission` commands. For more information, see [Manage permissions with command line tool](./manage-tokens-namespaces.md).
 
 ::: moniker-end
 
@@ -293,9 +292,9 @@ You're likely signed into Azure DevOps with an incorrect identity. Complete the 
 - [Work item tags](../../boards/queries/add-tags-to-work-items.md)
 - [Moved work items out of a project](../../boards/backlogs/move-change-type.md)
 - [Deleted work items](../../boards/backlogs/remove-delete-work-items.md#delete-work-items)
-- [Azure Boards Team Administrator permissions and access](../../boards/get-started/permissions-access-boards.md)
+- [Quick guide to default permissions and access for Azure Boards](../../boards/get-started/permissions-access-boards.md)
 - [Custom rules](../settings/work/custom-rules.md#add-a-custom-rule)
-- [Custom fields](../settings/work/custom-rules.md#restrict-modification-of-select-fields-based-on-a-user-or-group)
+- [Sample custom rule scenarios](../settings/work/rule-samples.md)
 - [Custom backlogs and boards](../settings/work/customize-process-backlogs-boards.md)
 - [Custom controls](../settings/work/custom-controls-process.md)
 

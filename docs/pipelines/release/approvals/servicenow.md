@@ -203,8 +203,8 @@ transform map must be added. See [ServiceNow Change Management Extension](https:
 ### Q: I don't see drop-down values populated for Category, Status, and others. What should I do?
 
 **A**: Change Management Core and Change Management - State Model plugins must be active on your ServiceNow instance for the drop-downs to work.
-See [Upgrade change management](https://docs.servicenow.com/bundle/istanbul-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html)
-and [Update change request states](https://docs.servicenow.com/bundle/istanbul-it-service-management/page/product/change-management/task/state-model-activate-tasks.html) for more details.
+See [Upgrade change management](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/migrate-change-mgmt-pre-geneva.html)
+and [Update change request states](https://docs.servicenow.com/bundle/quebec-it-service-management/page/product/change-management/task/state-model-activate-tasks.html) for more details.
 
 ## Related topics
 

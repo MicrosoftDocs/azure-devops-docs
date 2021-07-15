@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015.3**
 
 > [!NOTE]
-> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md).
+> This task is deprecated. If you're using Team Foundation Server 2017 or newer, we recommend that you use the [Pipeline Artifacts](../../artifacts/pipeline-artifacts.md) task instead.
 
 Use this task in a build pipeline to publish build artifacts to Azure Pipelines, TFS, or a file share.
 
@@ -23,7 +23,7 @@ Use this task in a build pipeline to publish build artifacts to Azure Pipelines,
 
 None
 
-::: moniker range="> tfs-2018"
+::: moniker range=">= tfs-2018"
 
 ## YAML snippet
 
@@ -45,13 +45,13 @@ None
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an Artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+
+::: moniker range=">= tfs-2018"
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+::: moniker-end
 
 ## FAQ
 

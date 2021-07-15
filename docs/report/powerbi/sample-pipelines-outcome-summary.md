@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 12/18/2020
+ms.date: 06/11/2021
 ---
 
 # Pipeline outcome summary sample report 

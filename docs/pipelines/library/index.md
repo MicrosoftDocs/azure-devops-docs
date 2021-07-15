@@ -1,7 +1,7 @@
 ---
 title: Library for Azure Pipelines
 ms.custom: seodec18, pipelinesresourcesrefresh
-description: Understand the library or build and release assets in Azure Pipelines.
+description: Understand the build and release assets for a project in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.topic: conceptual
 ms.author: ronai
@@ -34,14 +34,23 @@ All assets defined in the **Library** share a common security model. You can con
 and who can use an existing item. **Roles** are defined for library items, and membership of these roles governs the
 operations you can perform on those items.
 
-| Library item role | Purpose |
+| Role for library item | Description |
 |-------------------------|---------|
-| Reader | Can view the item. |
-| User | Can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to be able to use it in a release pipeline.  |
-| Administrator | In addition to all the above operations, members of this role can manage membership of all other roles for the item. The user that created an item is automatically added to the Administrator role for that item.
+| **Reader** | Can view the item. |
+| **User** | Can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to use it in a release pipeline.  |
+| **Administrator** | Can also manage membership of all other roles for the item. The user who created an item gets automatically added to the Administrator role for that item. By default, the following groups get added to the Administrator role of the library: Build Administrators, Release Administrators, and Project Administrators.|
+|**Creator** | Can create new items in the library, but this role doesn't include Reader or User permissions. The Creator role can't manage permissions for other users.
 
-The security settings for the library control access for _all_ items in the library. Role memberships for individual items get automatically inherited from those of the **Library** node.
-In addition to the three roles listed above, the **Creator** role on the library defines who can create new items in the library, but it does not include **Reader** and **User** permissions and cannot be used to manage permissions for other users.
-By default, the following groups are added to the **Administrator** role of the library: **Build Administrators**, **Release Administrators**, and **Project Administrators**.
+The security settings for the **Library** tab control access for _all_ items in the library. Role memberships for individual items get automatically inherited from the roles of the Library node.
+
+For more information on pipeline security roles, see [About pipeline security roles](../../organizations/security/about-security-roles.md).
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+
+## Related articles
+
+- [Create and target an environment](../process/environments.md)
+- [Manage service connections](service-endpoints.md)
+- [Add and use variable groups](variable-groups.md)
+- [Resources in YAML](../process/resources.md)
+- [Agents and agent pools](../agents/agents.md)

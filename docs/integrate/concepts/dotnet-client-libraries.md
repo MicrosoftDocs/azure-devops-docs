@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2021
+ms.date: 06/16/2021
 ---
 
 # .NET client libraries
@@ -19,12 +19,13 @@ Client libraries are available for .NET developers who build Windows apps and se
 > [!TIP]
 > For more information, see [Azure DevOps REST API Reference](/rest/api/azure/devops).
 
-### Dependency diagram
+## Dependency diagram
+
 ![Dependency diagram shows the relationship between Services.Client, Services.InteractiveClient, and TeamFoundationServer.Client.](../concepts/media/dotnet-client-libraries-dependancy-diagram.jpg)
 
-### Features
+## Features
 
-* Downloadable from nuget.org and easily importable into your Visual Studio projects
+* Downloadable from [nuget.org](https://www.nuget.org/) and easily importable into your Visual Studio projects
 * Libraries are licensed for redistribution in your apps and services ([view the license](https://go.microsoft.com/fwlink/?LinkId=329770))
 * Access both traditional client object model APIs and [new REST APIs](../rest-api-overview.md)
 
@@ -34,7 +35,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 > To learn more about extending and integrating with  Azure DevOps using the client libraries,
 > see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120))
 
-### Package and Azure DevOps Server version-mapping table
+## Package and Azure DevOps Server version-mapping table
 
 |Package version|Azure DevOps Server Version|
 |---------------|-----------|
@@ -48,7 +49,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 |14.89.x| `versions >= TFS 2015 Update 1`|
 |14.83.x| `versions >= TFS 2015`|
 
-### REST packages
+## REST packages
 
 |Packages and Description  |Binaries  |
 |---------|--------------|
@@ -71,14 +72,13 @@ Client libraries are available for .NET developers who build Windows apps and se
 > [!TIP]
 > If you have an existing Windows application or service that uses the TFS Client Object Model, use Microsoft.TeamFoundationServer.ExtendedClient.
 
-### Soap package
+## Soap package
 
 |**Package  and Description**  |**Binaries**  |  
 |---------|------------|  
 |[Microsoft.TeamFoundationServer.ExtendedClient​](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/)<br/>Work with and manage version control, work items, and build, and other resources from your client application. This package doesn't support Net Standard Client OM. Only use this package when our REST APIs don't offer the functionality you need (for example, creating workspaces in TFVC) |`Microsoft.TeamFoundation.Build.Client.dll`, `Microsoft.TeamFoundation.DeleteTeamProject.dll`, `Microsoft.TeamFoundation.Diff.dll`, `Microsoft.TeamFoundation.Git.Client.dll`, `Microsoft.TeamFoundation.SharePointReporting.Integration.dll`, and so on.    |
 
-
-### Install
+## Install
 
 From a NuGet package manager command prompt:
 
@@ -155,11 +155,17 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [Azure DevOps .NET SDK API Reference browser](/dotnet/api/index?view=azure-devops-dotnet&preserve-view=true).
+You can find detailed, up-to-date reference documentation in the [.NET API browser](https://docs.microsoft.com/dotnet/api/).
 
 ## Samples
 
-You can check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/Microsoft/vsts-dotnet-samples).
+Check out samples on our [.NET Samples Page](../get-started/client-libraries/samples.md) or directly on our [.NET GitHub Repo](https://github.com/microsoft/azure-devops-dotnet-samples).
+
+::: moniker range=">= azure-devops-2019"
+
+For more information on nuget packages, see [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/).
+
+::: moniker-end
 
 ## Known issues
 

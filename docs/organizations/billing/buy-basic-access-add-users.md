@@ -112,7 +112,7 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](/azure/devops/organizations/billing/billing-faq). Complete the following steps.
+If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](./billing-faq.yml). Complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -137,4 +137,3 @@ If you have more than one Azure DevOps organization, you can turn on multi-organ
 
 > [!div class="nextstepaction"]
 > [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
-

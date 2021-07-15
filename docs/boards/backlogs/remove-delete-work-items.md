@@ -2,7 +2,7 @@
 title: Remove, delete, restore work items
 titleSuffix: Azure Boards
 description: How to remove, delete, or restore (from Recycle Bin) work items in Azure Boards 
-ms.custom: "boards-backlogs, seodec18, contperf-fy21q2"
+ms.custom: "boards-backlogs, seodec18, contperf-fy21q2, linked-from-support"  
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.author: kaelli

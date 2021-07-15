@@ -25,7 +25,6 @@ sections:
       - question: What are the main differences between Delivery Plans 2.0 and the Delivery Plans extension?
         answer: | 
 
-          ---
           :::row:::
              :::column span="1":::
                 **Feature**
@@ -37,7 +36,6 @@ sections:
                 [**Delivery Plans Extension**](../extensions/delivery-plans.md) 
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Teams, Backlogs
@@ -49,7 +47,6 @@ sections:
                 10 maximum
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Cross-project team backlogs
@@ -61,7 +58,6 @@ sections:
                 Supported
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Timeframes
@@ -73,7 +69,6 @@ sections:
                 Iterations only
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Varying iteration paths
@@ -85,7 +80,6 @@ sections:
                 Supported
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Card data
@@ -98,7 +92,6 @@ sections:
                 Full card/TItle only 
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Rollup
@@ -110,7 +103,6 @@ sections:
                 Not supported
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Dependency tracking
@@ -122,7 +114,6 @@ sections:
                 Not supported
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Card styles
@@ -134,7 +125,6 @@ sections:
                 Not supported
              :::column-end:::
           :::row-end:::
-          ---
           :::row:::
              :::column span="1":::
                 Keyboard shortcuts
@@ -146,7 +136,6 @@ sections:
                 Supported 
              :::column-end:::
           :::row-end:::
-          ---
 
       - question: Can I use Delivery Plans 2.0 with Azure DevOps Server 2020?
         answer: |
