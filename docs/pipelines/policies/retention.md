@@ -5,7 +5,7 @@ description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 05/14/2021
+ms.date: 06/28/2021
 ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
@@ -145,6 +145,7 @@ The following information is deleted when a run is deleted:
 * Binaries
 * Test results
 * Run metadata
+* Source labels (TFVC) or tags (Git)
 
 Universal packages, NuGet, npm, and other packages are not tied to pipelines retention. 
 
@@ -209,6 +210,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 
 ::: moniker range="<= tfs-2018"
 You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
+
 ::: moniker-end
 
 ### Global release retention policy
@@ -230,6 +232,17 @@ configure settings for their definitions beyond the values specified here.
 The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
 
 The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
+
+
+::: moniker range=">= tfs-2018"
+## Set collection-level retention policies
+
+For on-premises servers, you can also set the collection-level retention policies with custom retention rules. These retention policies apply to Classic build pipelines. The page at `https://{your_server}/{collection_name}/_settings/buildqueue` governs your maximum values and default values. 
+
+:::image type="content" source="media/retention-settings-server.png" alt-text="Configure server collection settings":::
+
+::: moniker-end
+
 
 ::: moniker range="<=tfs-2018"
 
@@ -494,9 +507,13 @@ No. Manual test results are not deleted.
 
 ::: moniker range=">= azure-devops-2019"
 
-### How do I preserve my version control labels? 
+### How do I preserve my version control labels or tags? 
 
-Version control labels created during a build will be deleted when your build is deleted. If you need to preserve version control labels, you'll need to retain any associated builds. 
+> [!CAUTION]
+> Any version control labels or tags that are applied during a build pipeline that arent automatically created from the Sources task will be preserved, even if the build is deleted. 
+> However, any version control labels or tags that are automatically created from the Sources task during a build are considered part of the build artifacts and will be deleted when the build is deleted. 
+
+If version control labels or tags need to be preserved, even when the build is deleted, they will need to be either applied as part of a task in the pipeline, manually labeled outside of the pipeline, or the build will need to be retained indefinitely.
 
 ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: Fix cannot reorder backlog 
+title: Fix display, reordering, and nesting issues 
 titleSuffix: Azure Boards
 description: How to fix disable reorder messages due to nesting issues that occur in Azure Boards   
 ms.custom: "boards-backlogs, seodec18"  
@@ -8,8 +8,8 @@ ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.topic: troubleshooting
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/28/2020
+monikerRange: '<= azure-devops'
+ms.date: 06/23/2021
 ---
 
 
@@ -30,6 +30,9 @@ Use this article to fix the issues that occur and that display one of the follow
 - `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`  
 
 - `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`
+
+> [!NOTE]   
+> This article addresses issues that arise when you create parent-child links that don't obey the natural hierarchy defined for backlogs. For other issues that may occur with multi-team ownership, see [Configure a hierarchy of teams, Exercising select features with shared area paths](../plans/configure-hierarchical-teams.md#op-issues).
 
 
 ## Natural work item type hierarchy

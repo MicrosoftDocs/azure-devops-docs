@@ -676,11 +676,13 @@ The following examples show valid field reference names, in various namespaces. 
 :::row-end:::
 ---
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 < azure-devops"
 
 ### Field help text
 
-You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../reference/xml/apply-rule-work-item-field.md) provides information on adding help text.
+The system displays help text at run time to help users know what to enter into the field. Help text is scoped to a specific work item type in a specific project. 
+
+For the Inheritance process, you specify help text for a field through the **Edit field** dialog, **Definition** tab, **Description**. See [Add a custom field to a work item type](work/add-custom-field.md). For the On-premises XML process, you specify help text by using the ```HELPTEXT``` element. See [Add or modify a field to track work](../../reference/add-modify-field.md#add-rules-to-a-field).
 
 Help text that you add must conform to the following restrictions. 
 

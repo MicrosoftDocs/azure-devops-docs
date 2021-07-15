@@ -1,18 +1,19 @@
 ---
+ms.technology: devops-security
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 06/16/2021
 ---
 
 
+
 ::: moniker range="azure-devops"  
-
-You can add users to a project or team, add projects to organizations, and add teams to projects.
-
-* You must have an organization and project. If you don't have a project yet, [create one](../organizations/projects/create-project.md). 
-* To add users to an organization, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Organization owners are automatically members of this group.
-* To add users to a project, you must be a member of the [Project Administrators or Project Collection Administrators groups](../organizations/security/set-project-collection-level-permissions.md). Any new users added to a project are automatically added to the organization. 
-* To add users to a team, you must be a [Team Administrator](../organizations/settings/add-team-administrator.md), or you must be a member of one of the administrative groups. Any new users added to a team are automatically added to the organization.
-
-> [!NOTE]   
-> When the organization policy, **Allow team and project administrators to invite new users**, is disabled, Team and Project Administrators can't add users who are not already in the organization to a team or project. Project Collection Administrators can add users whether this policy is on or off. For more information, see [Restrict invitations from Project and Team Administrators](../organizations/security/restrict-invitations.md). For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](../organizations/accounts/organization-management.md#add-users). 
+ 
+* You must have an organization and project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+* To add users to or remove users from a team, you must be added as a [team administrator](/azure/devops/organizations/settings/add-team-administrator), or be a member of one of the administrative groups.  
+* To add users to or remove users from a project, you must be a member of the [Project Administrators or Project Collection Administrators groups](/azure/devops/organizations/security/set-project-collection-level-permissions).
+* When the organization is connected to Azure Active Directory, the [Allow team and project administrators to invite new users](/azure/devops/organizations/security/restrict-invitations)  policy must be enabled for team administrators or members of the Project Administrators group to add new users. 
+* To add users or manage users for an organization, you must be a member of the [Project Collection Administrators group](/azure/devops/organizations/security/set-project-collection-level-permissions). Organization owners are automatically members of this group.
 
 ::: moniker-end

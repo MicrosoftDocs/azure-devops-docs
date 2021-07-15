@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 04/29/2021
+ms.date: 06/08/2021
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -894,7 +894,7 @@ steps:
     debug: true
 ```
 
-You can also use conditional insertion for variables:
+You can also use conditional insertion for variables. In this example, `start` always prints and `this is a test` only prints when the `foo` variable equals `test`. 
 
 ```yaml
 variables:
@@ -905,9 +905,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo "start"
+- script: echo "start" # always runs
 - ${{ if eq(variables.foo, 'test') }}:
-  - script: echo "this is a test"
+  - script: echo "this is a test" # runs when foo=test
 ```
 
 ### Iterative insertion

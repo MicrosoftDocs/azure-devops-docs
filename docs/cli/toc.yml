@@ -21,15 +21,15 @@
 - name: Azure CLI Reference
   items:
   - name: az artifacts
-    href: /cli/azure/artifacts
+    href: /cli/azure/azure-cli-reference-for-devops#azure-artifacts
   - name: az boards
-    href: /cli/azure/boards
+    href: /cli/azure/azure-cli-reference-for-devops#azure-boards
   - name: az devops
-    href: /cli/azure/devops
+    href: /cli/azure/azure-cli-reference-for-devops#azure-devops-organizations
   - name: az pipelines
-    href: /cli/azure/pipelines
+    href: /cli/azure/azure-cli-reference-for-devops#azure-pipelines
   - name: az repos
-    href: /cli/azure/repos
+    href: /cli/azure/azure-cli-reference-for-devops#azure-repos
   - name: Output formats
     href: /cli/azure/format-output-azure-cli?view=azure-cli-latest
   - name: Query

@@ -476,6 +476,34 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
 
 Now your agents will run the AKS cluster.
 
+## Mounting volumes using Docker within a Docker container
+
+If a Docker container runs inside another Docker container, they both use host's daemon, so all mount paths reference the host, not the container.
+
+For example, if we want to mount path from host into outer Docker container, we can use this command:
+
+   ```
+   docker run ... -v <path-on-host>:<path-on-outer-container> ...
+   ```
+
+And if we want to mount path from host into inner Docker container, we can use this command:
+
+   ```
+   docker run ... -v <path-on-host>:<path-on-inner-container> ...
+   ```
+
+But we can't mount paths from outer container into the inner one; to work around that, we have to declare an ENV variable:
+
+   ```
+   docker run ... --env DIND_USER_HOME=$HOME ...
+   ```
+
+After this, we can start the inner container from the outer one using this command:
+
+   ```
+   docker run ... -v $DIND_USER_HOME:<path-on-inner-container> ...
+   ```
+
 ## Common errors
 
 If you're using Windows, and you get the following error: 

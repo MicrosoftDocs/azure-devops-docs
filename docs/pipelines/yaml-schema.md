@@ -303,6 +303,8 @@ jobs:
     pools: [ string ] # Pool names, typically when using a matrix strategy for the job
 ```
 
+For more information about `uses`, see [Limit job authorization scope to referenced Azure DevOps repositories](repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories). For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
 :::moniker range="<azure-devops"
@@ -329,9 +331,11 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
 ```
 
+For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 :::moniker-end
 
-For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 
 # [Example](#tab/example)
 
