@@ -23,7 +23,7 @@ Secure files give you a way to store files that you can share across pipelines. 
 
 These files can be stored on the server without having to commit them to your repository.
 
-The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#security).
+The contents of the secure files are encrypted and can only be used when you consume them from a task. Secure files are a [protected resource](../security/resources.md). You can add approvals and checks to them and set pipeline permissions. Secure files also can use the [Library security model](index.md#library-security).
 
 The size limit for each secure file is 10 MB.
 
