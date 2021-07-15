@@ -27,7 +27,7 @@ added to a build or release pipeline, just like any other task. You can
 choose to extract the parameters from the encapsulated tasks as configuration
 variables, and abstract the rest of the task information.
 
-The new task group is automatically added to the task catalogue, ready to be added
+The new task group is automatically added to the task catalog, ready to be added
 to other release and build pipelines. Task groups are stored at the project level,
 and are not accessible outside the project scope.
 
@@ -71,20 +71,19 @@ to change each one individually.
 
    ![Unlinking parameters for all tasks](media/unlink-task-group.png)
 
-1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
-   checkmarks of each one). Then open the shortcut menu and choose **Create task group**.
+2. Select a sequence of tasks in a build or release pipeline, open the shortcut menu, and then choose **Create task group**.
 
    ![Creating a task group from a release pipeline list of tasks](media/create-task-group.png)
 
-2. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
+3. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
 
-3. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
+4. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
-4. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
+5. All the '$(vars)' from the underlying tasks, excluding the [predefined variables](../build/variables.md), will surface as the mandatory parameters for the newly created task group. 
 
    For example, let's say you have a task input $(foobar), which you don't intend to parameterize. However, when you create a task group, the task input is converted into task group parameter 'foobar'. Now, you can provide the default value for the task group parameter 'foobar' as $(foobar). This ensures that at runtime, the expanded task gets the same input it's intended to.
 
-5. Save your updated pipeline.
+6. Save your updated pipeline.
 
 ::: moniker range="> tfs-2017"
 
@@ -160,13 +159,13 @@ task groups so that they behave in the same way and provide the same advantages.
 
 
 
-## Working with taskgroup versions
-Any taskgroup update can be a minor or major version update.
+## Working with task group versions
+Any task group update can be a minor or major version update.
 
 ### Minor version 
 **Action:** You directly save the task group after edit instead of saving it as draft. 
 
-**Effect:** The version number doesn’t change. Let’s say you have a taskgroup of version `1.0`. You can have any number of minor version updates i.e. `1.1`, `1.2`, `1.3` etc. In your pipeline, the taskgroup version shows as `1.*` The latest changes will show up in the pipeline definition automatically.
+**Effect:** The version number doesn’t change. Let’s say you have a task group of version `1.0`. You can have any number of minor version updates i.e. `1.1`, `1.2`, `1.3` etc. In your pipeline, the task group version shows as `1.*` The latest changes will show up in the pipeline definition automatically.
 
 **Reason:** This is supposed to be a small change in the task group and you expect the pipelines to use this new change without editing the version in the pipeline definition. 
  
@@ -174,11 +173,11 @@ Any taskgroup update can be a minor or major version update.
 ### Major version
 **Action:** You save the task group as draft and then create a preview, validate the task group and then publish the preview as a major version.
 
-**Effect:** The task group bumps up to a new version. Let’s say you have a task group of version `1.*`. A new version gets published as `2.*`, `3.*`, `4.*` etc. And a notification about availability of new version shows up in all the pipeline definitions where this task group is used. User has to explicitly update to new version of the taskgroup in pipelines. 
+**Effect:** The task group bumps up to a new version. Let’s say you have a task group of version `1.*`. A new version gets published as `2.*`, `3.*`, `4.*` etc. And a notification about availability of new version shows up in all the pipeline definitions where this task group is used. User has to explicitly update to new version of the task group in pipelines. 
 
 **Reason:** When you have a substantial change which might break the existing pipelines, you would like to test it out and roll out as a new version. Users can choose to upgrade to new version or choose to stay on the same version. This functionality is same as a normal task version update. 
 
-However, if your taskgroup update is not a breaking change but you would like to validate first and then enforce pipelines to consume the latest changes, you can follow below steps.
+However, if your task group update is not a breaking change but you would like to validate first and then enforce pipelines to consume the latest changes, you can follow below steps.
 1.	Update the task group with your desired changes and save it as a draft. A new draft task group ‘<Taskgroupname>-Draft’ will be created which contains the changes you have done. And this draft task group is accessible for you to consume in your pipelines.
 1.	Now, instead of publishing as preview, you can directly consume this draft task group in your test pipeline.
 1.	Validate this new draft task group in your test pipeline and once you are confident, go back to your main task group and do the same changes and save it directly. This will be taken as minor version update.
